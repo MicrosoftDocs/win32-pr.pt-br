@@ -4,12 +4,12 @@ ms.assetid: 7bb3d6c2-afb4-4c8b-9627-562ae3e5521b
 title: Estruturas de gerenciamento de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b1795f5700230a035e39a38e024e222cd0d12a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8463f5ecdae6f781762f7503fa5dd3738036a9314170954dfb5ab51bb32a5ef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068736"
 ---
 # <a name="directory-management-structures"></a>Estruturas de gerenciamento de diretório
 

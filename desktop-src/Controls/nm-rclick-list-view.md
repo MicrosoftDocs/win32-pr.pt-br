@@ -3,7 +3,7 @@ title: Código de notificação de NM_RCLICK (exibição de lista) (commctrl. h)
 description: Enviado por um controle de exibição de lista quando o usuário clica em um item com o botão direito do mouse. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: dc7f97b3-4aec-4a8f-a87c-62cef5ba4c40
 keywords:
-- NM_RCLICK de código de notificação (exibição de lista) controles do Windows
+- NM_RCLICK de código de notificação (exibição de lista) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01c21f1b1e869a909dd41dcfce693bf084f2fa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f58ab6b2496c35bb4b95a3808afb7e58b961584b8b72d086933ad2c3281e6f29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018804"
 ---
 # <a name="nm_rclick-list-view-notification-code"></a>\_Código de notificação nm RCLICK (exibição de lista)
 
@@ -45,7 +45,7 @@ NM_RCLICK
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar zero para não permitir o processamento padrão ou zero para permitir o processamento padrão.
 
@@ -59,9 +59,9 @@ O membro **iItem** de *lParam* só será válido se o ícone ou rótulo de prime
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

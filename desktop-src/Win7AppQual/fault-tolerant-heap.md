@@ -4,18 +4,18 @@ ms.assetid: f1ac375a-3f08-49cd-8752-6f55db24a60c
 title: Heap tolerante a falhas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b17ab2630e6dc28cb84604e48be1aa60bf208a97
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a99d6df576906c82a3c0bc95ca4dc8b8ae54b26433c9fb213da5917d596af947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053164"
 ---
 # <a name="fault-tolerant-heap"></a>Heap tolerante a falhas
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
-**Clientes-** Windows 7  
+**clientes-** Windows 7  
 
 ## <a name="feature-impact"></a>Impacto do recurso
 
@@ -25,7 +25,7 @@ ms.locfileid: "108088394"
 
 ## <a name="description"></a>Descrição
 
-O FTH (heap tolerante a falhas) é um subsistema do Windows 7 responsável por monitorar falhas do aplicativo e aplicar mitigações de forma autônoma para evitar falhas futuras por aplicativo. Para a grande maioria dos usuários, o FTH funcionará sem a necessidade de intervenção ou alteração em sua parte. No entanto, em alguns casos, os desenvolvedores de aplicativos e os testadores de software podem precisar substituir o comportamento padrão desse sistema.
+o FTH (Heap tolerante a falhas) é um subsistema de Windows 7 responsável por monitorar falhas do aplicativo e aplicar mitigações de forma autônoma para evitar falhas futuras por aplicativo. Para a grande maioria dos usuários, o FTH funcionará sem a necessidade de intervenção ou alteração em sua parte. No entanto, em alguns casos, os desenvolvedores de aplicativos e os testadores de software podem precisar substituir o comportamento padrão desse sistema.
 
 ## <a name="solution"></a>Solução
 
@@ -35,7 +35,7 @@ O heap tolerante a falhas registra informações quando o serviço é iniciado, 
 
 1.  Clique no menu Iniciar.
 2.  Clique com o botão direito do mouse em **computador** e clique em **gerenciar**.
-3.  Clique em **Visualizador de eventos**  >  **logs de aplicativos e serviços**  >  **Microsoft**  >  **Windows > tolerância a falhas-heap**
+3.  clique em **Visualizador de Eventos**  >  **Logs de aplicativos e serviços**  >  **Microsoft**  >  **Windows > o Heap tolerante a falhas**
 4.  Exibir eventos de FTH.
 
 Os eventos stop e Start do serviço não contêm dados adicionais. O evento habilitado para FTH contém a ID do processo (PID), o nome da imagem do processo e a hora de início da instância do processo.

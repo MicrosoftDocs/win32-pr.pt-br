@@ -1,9 +1,9 @@
 ---
-title: 'Função RWTexture2DArray:: Operator'
-description: 'Retorna uma variável de recurso. | Função RWTexture2DArray:: Operator'
+title: Função RWTexture2DArray::Operator
+description: Retorna uma variável de recurso. | Função RWTexture2DArray::Operator
 ms.assetid: ae3d0697-ea0a-450d-bdfe-7bc5d8faf11a
 keywords:
-- Função Operator HLSL
+- Função de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: faf49c48fbf5042ce2765005cd8daea4d1227255
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8650b4aed51915591438501fb2c929b846e5be1d4de1219017ec1eb45980d552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104011989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985916"
 ---
-# <a name="rwtexture2darrayoperator--function"></a>Função RWTexture2DArray:: Operator
+# <a name="rwtexture2darrayoperator--function"></a>Função RWTexture2DArray::Operator
 
 Retorna uma variável de recurso.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -45,7 +45,7 @@ A posição do índice. O primeiro e o segundo componentes contêm as coordenada
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **R**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

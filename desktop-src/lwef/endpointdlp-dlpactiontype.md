@@ -1,6 +1,6 @@
 ---
-description: Especifica o tipo de ação de uma operação de DLP (prevenção de perda de dados) de ponto de extremidade.
-title: Enumeração DlpActionType (endpointdlp. h)
+description: Especifica o tipo de ação de uma operação DLP (Prevenção contra Perda de Dados) do ponto de extremidade.
+title: Enumeração DlpActionType (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,18 +12,18 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 7900e79536cc9ac45037e205962a563bcde8878a
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 5b7066eec7832ba0b76dee38e6483e0bfcfcfb05fdb8448ee7b3a91e701069fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976646"
 ---
 # <a name="dlpactiontype-enumeration"></a>Enumeração DlpActionType
 
-Especifica o tipo de ação de uma operação de DLP (prevenção de perda de dados) de ponto de extremidade.
+Especifica o tipo de ação de uma operação DLP (Prevenção contra Perda de Dados) do ponto de extremidade.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -96,7 +96,7 @@ Uma operação de captura de tela.
 *DlpActionTypeAccessByUnallowedApp*
 </dt> <dd>
 
-Uma operação executada por um aplicativo não permitido.
+Uma operação executada por um aplicativo não alotado.
 
 </dd> </dl>
 
@@ -140,7 +140,7 @@ O valor máximo da enumeração.
 
 ## <a name="remarks"></a>Comentários
 
-Os valores dessa enumeração são usados pela estrutura de [DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) .
+Os valores dessa enumeração são usados pela [estrutura DLP_APP_OP_ENLIGHTENED_LEVEL](endpointdlp-dlp_app_op_enlightened_level.md) dados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -148,5 +148,5 @@ Os valores dessa enumeração são usados pela estrutura de [DLP_APP_OP_ENLIGHTE
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
 

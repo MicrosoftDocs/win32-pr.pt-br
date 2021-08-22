@@ -1,6 +1,6 @@
 ---
-title: Constantes de DWM_TNP (dwmapi. h)
-description: Sinalizadores usados pela estrutura de \_ Propriedades de miniatura do DWM \_ para indicar quais dos seus membros contêm informações válidas.
+title: DWM_TNP constantes (Dwmapi.h)
+description: Sinalizadores usados pela estrutura DWM \_ THUMBNAIL PROPERTIES para indicar quais de seus membros \_ contêm informações válidas.
 ms.assetid: 8eee1baf-e24e-40af-92ab-a7acae267ecc
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fe91862ff4a36bc9c501a95c3c8ba21d051ddf4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ee82f8e0384c5523b8656c0ecc6cc40bad959c2c9ad6fa1c7b19486d73b00db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985236"
 ---
-# <a name="dwm_tnp-constants"></a>Constantes do DWM \_ TNP
+# <a name="dwm_tnp-constants"></a>Constantes \_ de TNP de DWM
 
-Sinalizadores usados pela estrutura [**de \_ \_ Propriedades de miniatura do DWM**](/windows/desktop/api/Dwmapi/ns-dwmapi-dwm_thumbnail_properties) para indicar quais dos seus membros contêm informações válidas.
+Sinalizadores usados pela estrutura [**DWM \_ THUMBNAIL \_ PROPERTIES**](/windows/desktop/api/Dwmapi/ns-dwmapi-dwm_thumbnail_properties) para indicar quais de seus membros contêm informações válidas.
 
 <dl> <dt>
 
@@ -37,12 +37,12 @@ Sinalizadores usados pela estrutura [**de \_ \_ Propriedades de miniatura do DWM
 
 
 
-Um valor para o membro **rcDestination** foi especificado.
+Um valor para **o membro rcDestination** foi especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWM_TNP_RECTSOURCE"></span><span id="dwm_tnp_rectsource"></span>**DWM \_ TNP \_ Rect**
+<span id="DWM_TNP_RECTSOURCE"></span><span id="dwm_tnp_rectsource"></span>**DWM \_ TNP \_ RECTSOURCE**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -50,12 +50,12 @@ Um valor para o membro **rcDestination** foi especificado.
 
 
 
-Um valor para o membro **rcSource** foi especificado.
+Um valor para **o membro rcSource** foi especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWM_TNP_OPACITY"></span><span id="dwm_tnp_opacity"></span>**opacidade do DWM \_ TNP \_**
+<span id="DWM_TNP_OPACITY"></span><span id="dwm_tnp_opacity"></span>**\_OPACIDADE de TNP da DWM \_**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -63,12 +63,12 @@ Um valor para o membro **rcSource** foi especificado.
 
 
 
-Um valor para o membro de **opacidade** foi especificado.
+Um valor para **o membro de opacidade** foi especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="DWM_TNP_VISIBLE"></span><span id="dwm_tnp_visible"></span>**DWM \_ TNP \_ visível**
+<span id="DWM_TNP_VISIBLE"></span><span id="dwm_tnp_visible"></span>**DWM \_ TNP \_ VISÍVEL**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -76,7 +76,7 @@ Um valor para o membro de **opacidade** foi especificado.
 
 
 
-Um valor para o membro **fVisible** foi especificado.
+Um valor para **o membro fVisible** foi especificado.
 
 
 </dt> </dl> </dd> <dt>
@@ -89,7 +89,7 @@ Um valor para o membro **fVisible** foi especificado.
 
 
 
-Um valor para o membro **fSourceClientAreaOnly** foi especificado.
+Um valor para **o membro fSourceClientAreaOnly** foi especificado.
 
 
 </dt> </dl> </dd> </dl>
@@ -100,9 +100,9 @@ Um valor para o membro **fSourceClientAreaOnly** foi especificado.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Dwmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Dwmapi.h</dt> </dl> |
 
 
 

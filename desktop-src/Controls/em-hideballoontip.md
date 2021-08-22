@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_HIDEBALLOONTIP (commctrl. h)
+title: EM_HIDEBALLOONTIP mensagem (Commctrl.h)
 description: Oculta qualquer dica de balão associada a um controle de edição.
 ms.assetid: 820b98d6-c2bd-4821-ba44-9d58e23eac81
 keywords:
-- Controles de EM_HIDEBALLOONTIP de mensagens do Windows
+- EM_HIDEBALLOONTIP controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8ecececff3d12ad48cfcfb6353a717e8f8875df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a25b9380738b29a938ff59d2d80ac996747b9996ade2f5acb773ec6c7b93a06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019484"
 ---
-# <a name="em_hideballoontip-message"></a>\_Mensagem em HIDEBALLOONTIP
+# <a name="em_hideballoontip-message"></a>Mensagem EM \_ HIDEBALLTIP
 
 Oculta qualquer dica de balão associada a um controle de edição.
 
@@ -43,14 +43,14 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **false**.
+Se a mensagem for bem-sucedida, ela retornará **TRUE.** Caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -60,9 +60,9 @@ Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ Se a mensagem tiver sucesso, retornará **true**. Caso contrário, retornará **
 
 <dl> <dt>
 
-[**Editar \_ HideBalloonTip**](/windows/desktop/api/Commctrl/nf-commctrl-edit_hideballoontip)
+[**Editar \_ HideBalltip**](/windows/desktop/api/Commctrl/nf-commctrl-edit_hideballoontip)
 </dt> </dl>
 
  

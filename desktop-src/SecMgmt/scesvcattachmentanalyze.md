@@ -1,5 +1,5 @@
 ---
-description: A função SceSvcAttachmentAnalyze é chamada pelo mecanismo de configuração de segurança quando o sistema é analisado.
+description: A função SceSvcAttachmentAnalyze é chamada pelo Mecanismo de Configuração de Segurança quando o sistema é analisado.
 ms.assetid: 8e8a39b9-c4e2-446e-8e0c-eb2113234c1a
 title: Função de retorno de chamada SceSvcAttachmentAnalyze
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 296d755a0b082b46122432936d30614019b8b9a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bb84cc6a8492c729926b644a246b8ee8a03e1de4c2eae6e3de1fd88c5ba339f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004914"
 ---
 # <a name="scesvcattachmentanalyze-callback-function"></a>Função de retorno de chamada SceSvcAttachmentAnalyze
 
-A função **SceSvcAttachmentAnalyze** é chamada pelo mecanismo de configuração de segurança quando o sistema é analisado.
+A **função SceSvcAttachmentAnalyze** é chamada pelo Mecanismo de Configuração de Segurança quando o sistema é analisado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,27 +38,27 @@ SCESTATUS WINAPI SceSvcAttachmentAnalyze(
 
 <dl> <dt>
 
-*pSceCbInfo* \[ no\]
+*pSceCbInfo* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ informações de retorno de chamada SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) que contém um identificador de banco de dados opaco e ponteiros de função de retorno de chamada para consultar, definir e informações gratuitas.
+Ponteiro para uma estrutura DE INFORMAÇÕES DE RETORNO DE CHAMADA [**SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) que contém um ponteiro de função de retorno de chamada e um handle de banco de dados opaco para consultar, definir e liberar informações.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se essa função for bem-sucedida, ela retornará SCESTATUS \_ Success. Caso contrário, ele retorna um código de erro. Para obter mais informações sobre os códigos de erro de configuração de segurança, consulte [valores de retorno de anexo](management-return-values.md).
+Se essa função for bem-sucedida, ela retornará SCESTATUS \_ SUCCESS. Caso contrário, retornará um código de erro. Para obter mais informações sobre os códigos de erro de Configuração de Segurança, consulte [Valores de retorno de anexo.](management-return-values.md)
 
 ## <a name="remarks"></a>Comentários
 
-A função **SceSvcAttachmentAnalyze** deve fazer o seguinte:
+A **função SceSvcAttachmentAnalyze** deve fazer o seguinte:
 
 -   Consulte diretamente as informações de configuração do serviço.
--   Chame a função de retorno de chamada apontada pelo membro **pfQueryInfo** da estrutura de [**\_ \_ informações de retorno de chamada SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar informações do banco de dados de segurança.
--   Computar as diferenças entre as informações com base no tipo e na sintaxe.
--   Chame a função de retorno de chamada apontada pelo membro **pfSetInfo** da estrutura de [**\_ \_ informações de retorno de chamada SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para atualizar o banco de dados de segurança com as informações de serviço recuperadas que são diferentes.
+-   Chame a função de retorno de chamada apontada pelo membro **pfQueryInfo** da estrutura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar informações do banco de dados de segurança.
+-   Compute as diferenças entre as informações com base no tipo e na sintaxe.
+-   Chame a função de retorno de chamada apontada pelo membro **pfSetInfo** da estrutura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para atualizar o banco de dados de segurança com as informações de serviço recuperadas que são diferentes.
 
-Para obter mais informações, consulte [Implementing SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md).
+Para obter mais informações, [consulte Implementando SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,8 +66,8 @@ Para obter mais informações, consulte [Implementing SceSvcAttachmentAnalyze](i
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Para obter mais informações, consulte [Implementing SceSvcAttachmentAnalyze](i
 [Implementando SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md)
 </dt> <dt>
 
-[**informações de retorno de chamada do SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info)
+[**INFORMAÇÕES DE RETORNO DE CHAMADA DO SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info)
 </dt> <dt>
 
 [**SceSvcAttachmentConfig**](scesvcattachmentconfig.md)

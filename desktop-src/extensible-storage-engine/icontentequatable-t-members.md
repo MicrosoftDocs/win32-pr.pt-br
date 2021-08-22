@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do IContentEquatable <T>'
-title: Membros de IContentEquatable (T)
+description: 'Saiba mais sobre: Membros IContentEquatable <T>'
+title: Membros de IContentEquatable(T)
 TOCTitle: IContentEquatable(T) members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.IContentEquatable`1
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh578119(v=EXCHG.10)
 ms:contentKeyID: 39511390
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3566cb7c11ef62a2a2c2f67d287cf3be8bb5be7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fa71240dc3741a96b587cb4706d8a29bbe9954b9932609a5e59d024b128180b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104562421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039524"
 ---
-# <a name="icontentequatablet-members"></a>Membros do IContentEquatable \<T\>
+# <a name="icontentequatablet-members"></a>Membros IContentEquatable \<T\>
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Interface para objetos que podem ter seu conteúdo comparado entre si. Isso deve ser usado para comparações de igualdade em objetos de referência mutáveis em que a substituição de Equals () e GetHashCode () não é uma boa ideia.
+Interface para objetos que podem ter seu conteúdo em comparação entre si. Isso deve ser usado para comparações de igualdade em objetos de referência mutáveis em que a substituição de Equals() e GetHashCode() não é uma boa ideia.
 
-O [tipo \<T\> IContentEquatable](./icontentequatable-t-interface.md) expõe os membros a seguir.
+O [tipo IContentEquatable \<T\> ](./icontentequatable-t-interface.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -49,6 +49,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[\<T\>Interface IContentEquatable](./icontentequatable-t-interface.md)
+[Interface IContentEquatable \<T\>](./icontentequatable-t-interface.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

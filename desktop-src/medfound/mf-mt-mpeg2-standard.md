@@ -4,12 +4,12 @@ ms.assetid: 3D4C1A81-A9BA-427F-93DB-F522A0616EAB
 title: Atributo MF_MT_MPEG2_STANDARD (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0650a68975f449ea938b41872005e11d79922393
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba3c773fbf453bba77cb3f0472894e251e56f48b0cebe2a09cb9bf3ea6288c35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035134"
 ---
 # <a name="mf_mt_mpeg2_standard-attribute"></a>\_ \_ Atributo padrão MF MT MPEG2 \_
 
@@ -38,9 +38,9 @@ Para um tipo de mídia que descreve um fluxo de programa MPEG-2 (PS) ou um fluxo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

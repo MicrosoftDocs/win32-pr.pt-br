@@ -4,12 +4,12 @@ description: Macros do seletor de data e hora
 ms.assetid: 732a20a6-305d-46ff-8e2e-d276b7cb061d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c967b8ac3212114ae8e6378fef18b76750838a91
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 443744a5423e2e0bb7ac14c33a2283a23934b6117db03ecf255fa9ff5555da15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105747490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019994"
 ---
 # <a name="date-and-time-picker-macros"></a>Macros do seletor de data e hora
 

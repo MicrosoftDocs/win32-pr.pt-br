@@ -1,29 +1,29 @@
 ---
 title: Iniciando um executável diariamente
-description: A gravação de uma tarefa que inicia um executável em uma base diária é feita pela definição de um gatilho diário e uma ação executável.
+description: Escrever uma tarefa que inicia um executável diariamente é feita definindo um gatilho diário e uma ação executável.
 ms.assetid: 3ceea4a6-0052-4831-a3b0-76d84ab4e1ed
 keywords:
-- Exemplos de Agendador de Tarefas Agendador de Tarefas, gatilho diário
+- Agendador de Tarefas exemplos Agendador de Tarefas , gatilho diário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebb5b11e1942f342437347f1aa4a510e101c56df
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2f32a5ec9b7eb7c6f6888bec669c422ff5348e97b9c3c0f27ed8b554dc1c0b78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059944"
 ---
 # <a name="starting-an-executable-daily"></a>Iniciando um executável diariamente
 
-A gravação de uma tarefa que inicia um executável em uma base diária é feita pela definição de um gatilho diário e uma ação executável.
+Escrever uma tarefa que inicia um executável diariamente é feita definindo um gatilho diário e uma ação executável.
 
 ## <a name="daily-triggers"></a>Gatilhos diários
 
-Os gatilhos diários usam o limite inicial para ativar o gatilho e para especificar a hora do dia em que a tarefa é executada. Depois que o gatilho é ativado, o intervalo de gatilhos é usado para indicar se a tarefa é executada diariamente, a cada dia, a cada terceiro dia, ou assim por diante.
+Os gatilhos diários usam o limite inicial para ativar o gatilho e especificar a hora do dia em que a tarefa é executado. Depois que o gatilho é ativado, o intervalo de gatilhos é usado para indicar se a tarefa é executado diariamente, todos os outros dias, a cada três dias ou assim por diante.
 
 ## <a name="daily-trigger-examples"></a>Exemplos de gatilho diário
 
-Os exemplos a seguir mostram como criar tarefas que iniciam o bloco de notas em uma base diária.
+Os exemplos a seguir mostram como criar tarefas que começam Bloco de notas diariamente.
 
 -   [Exemplo de gatilho diário (script)](daily-trigger-example--scripting-.md)
 -   [Exemplo de gatilho diário (C++)](daily-trigger-example--c---.md)
@@ -36,9 +36,9 @@ Os exemplos a seguir mostram como criar tarefas que iniciam o bloco de notas em 
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

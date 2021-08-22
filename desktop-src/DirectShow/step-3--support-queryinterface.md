@@ -1,21 +1,21 @@
 ---
-description: Expor as novas interfaces de um filtro aos clientes como parte da criação de uma página de propriedades de filtro para um filtro DirectShow personalizado.
+description: expor as novas interfaces de um filtro para os clientes como parte da criação de uma página de propriedades de filtro para um filtro de DirectShow personalizado.
 ms.assetid: a0e52ba9-9f7c-4cf3-ba5f-b0035ed1794c
 title: Etapa 3. Suporte a QueryInterface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84b62132a6f24c68453ad4e51f72cdd9a2a78c65
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0761a0ecf57bc7769cf40623c6929655a9f757b66b35bb506167d4263a7e02a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072450"
 ---
 # <a name="step-3-support-queryinterface"></a>Etapa 3. Suporte a QueryInterface
 
 Para expor as novas interfaces do filtro aos clientes, faça o seguinte:
 
--   Inclua a [**macro DECLARE \_ IUNKNOWN**](declare-iunknown.md) na seção de declaração pública do filtro:
+-   Inclua a macro [**Declare \_ IUnknown**](declare-iunknown.md) na seção de declaração pública do seu filtro:
     ```C++
     public:
         DECLARE_IUNKNOWN;
@@ -23,7 +23,7 @@ Para expor as novas interfaces do filtro aos clientes, faça o seguinte:
 
     
 
--   Substitua [**CUnknown::NonDeltingQueryInterface**](cunknown-nondelegatingqueryinterface.md) para verificar os IIDs das duas interfaces:
+-   Substitua [**CUnknown:: NonDelegatingQueryInterface**](cunknown-nondelegatingqueryinterface.md) para verificar a IIDs das duas interfaces:
     ```C++
     STDMETHODIMP CGrayFilter::NonDelegatingQueryInterface(REFIID riid, void **ppv)
     {
@@ -51,7 +51,7 @@ Para expor as novas interfaces do filtro aos clientes, faça o seguinte:
 
     
 
-Próximo: [Etapa 4. Crie a página De propriedades](step-4--create-the-property-page.md).
+Em seguida: [etapa 4. Crie a página de propriedades](step-4--create-the-property-page.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

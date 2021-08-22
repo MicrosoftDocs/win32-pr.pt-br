@@ -1,6 +1,6 @@
 ---
-title: Filtrando identificadores de camada (Fwpmu. h)
-description: Constantes de identificador de camada de filtragem de gerenciamento de API WFP.
+title: Filtrando identificadores de camada (Fwpmu.h)
+description: Constantes de identificador de camada de filtragem de gerenciamento de API do WFP.
 ms.assetid: 3b2daef1-558b-4e3a-a98a-f4dfa80a29c0
 topic_type:
 - apiref
@@ -62,52 +62,52 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7766a147939b107ab173d927d90019c23cc6efb5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93d1d6d8e4987fd60d3b3ff0fea73c615f75444e76ed6ebdf3c95110564ef6c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068886"
 ---
 # <a name="filtering-layer-identifiers"></a>Filtrando identificadores de camada
 
-Os identificadores de camada da WFP (plataforma de filtragem do Windows) são representados por um GUID. Esses identificadores são definidos da seguinte maneira.
+Os identificadores de camada Windows WFP (Plataforma de Filtragem de Dados) são representados por um GUID. Esses identificadores são definidos da seguinte forma.
 
-Os sufixos v4 e V6 no final dos identificadores de camada indicam se a camada está localizada na pilha de rede IPv4 ou na pilha de rede IPv6.
+Os sufixos V4 e V6 no final dos identificadores de camada indicam se a camada está localizada na pilha de rede IPv4 ou na pilha de rede IPv6.
 
 <dl> <dt>
 
-<span id="FWPM_LAYER_INBOUND_IPPACKET_V4___FWPM_LAYER_INBOUND_IPPACKET_V6"></span><span id="fwpm_layer_inbound_ippacket_v4___fwpm_layer_inbound_ippacket_v6"></span>**IPPACKET de entrada da camada FWPM \_ \_ \_ \_ v4/ \_ FWPM \_ \_ IPPACKET \_ V6 de entrada da camada**
+<span id="FWPM_LAYER_INBOUND_IPPACKET_V4___FWPM_LAYER_INBOUND_IPPACKET_V6"></span><span id="fwpm_layer_inbound_ippacket_v4___fwpm_layer_inbound_ippacket_v6"></span>**\_IPPACKET \_ \_ \_ V4/FWPM DA CAMADA FWPM \_ \_ \_ IPPACKET \_ V6 DE ENTRADA**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de recebimento logo após o cabeçalho IP de um pacote recebido ter sido analisado, mas antes de qualquer processamento de cabeçalho IP ocorrer. Nenhuma descriptografia ou remontagem de IPsec ocorreu.
+Essa camada de filtragem está localizada no caminho de recebimento logo após o header IP de um pacote recebido ter sido analisado, mas antes de qualquer processamento de header IP ocorrer. Não ocorreu nenhuma descriptografia ou reassembly IPsec.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_IPPACKET_V4_DISCARD___FWPM_LAYER_INBOUND_IPPACKET_V6_DISCARD"></span><span id="fwpm_layer_inbound_ippacket_v4_discard___fwpm_layer_inbound_ippacket_v6_discard"></span>**Descarte de entrada de \_ camada FWPM \_ \_ IPPACKET \_ v4 \_ descarte/FWPM \_ camada de entrada de \_ \_ IPPACKET \_ V6 desligamento \_**
+<span id="FWPM_LAYER_INBOUND_IPPACKET_V4_DISCARD___FWPM_LAYER_INBOUND_IPPACKET_V6_DISCARD"></span><span id="fwpm_layer_inbound_ippacket_v4_discard___fwpm_layer_inbound_ippacket_v6_discard"></span>**DESCARTE DE IPPACKET V4 DE ENTRADA DE CAMADA \_ \_ \_ \_ \_ FWPM/DESCARTE DE \_ \_ \_ IPPACKET \_ V6 \_ DE CAMADA FWPM**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de recebimento para inspecionar os pacotes recebidos que foram descartados na camada de rede.
+Essa camada de filtragem está localizada no caminho de recebimento para inspecionar todos os pacotes recebidos que foram descartados na camada de rede.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_IPPACKET_V4___FWPM_LAYER_OUTBOUND_IPPACKET_V6"></span><span id="fwpm_layer_outbound_ippacket_v4___fwpm_layer_outbound_ippacket_v6"></span>**IPPACKET de saída da camada \_ \_ \_ IPPACKET \_ v4/FWPM \_ \_ \_ \_ de saída da camada do FWPM**
+<span id="FWPM_LAYER_OUTBOUND_IPPACKET_V4___FWPM_LAYER_OUTBOUND_IPPACKET_V6"></span><span id="fwpm_layer_outbound_ippacket_v4___fwpm_layer_outbound_ippacket_v6"></span>**IPPACKET V4 /FWPM DE SAÍDA DA CAMADA \_ \_ \_ \_ FWPM \_ \_ \_ IPPACKET \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de envio logo antes de o pacote enviado ser avaliado para fragmentação. Todo o processamento de cabeçalho IP está concluído e todos os cabeçalhos de extensão estão em vigor. Qualquer autenticação e criptografia IPsec já ocorreu.
+Essa camada de filtragem está localizada no caminho de envio logo antes que o pacote enviado seja avaliado quanto à fragmentação. Todo o processamento de header IP está concluído e todos os headers de extensão estão em posição. Qualquer autenticação e criptografia IPsec já ocorreu.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_IPPACKET_V4_DISCARD___FWPM_LAYER_OUTBOUND_IPPACKET_V6_DISCARD"></span><span id="fwpm_layer_outbound_ippacket_v4_discard___fwpm_layer_outbound_ippacket_v6_discard"></span>**FWPM \_ camada de \_ saída \_ IPPACKET \_ v4 \_ descarte/FWPM camada de saída de \_ \_ \_ IPPACKET \_ V6 \_ descarte**
+<span id="FWPM_LAYER_OUTBOUND_IPPACKET_V4_DISCARD___FWPM_LAYER_OUTBOUND_IPPACKET_V6_DISCARD"></span><span id="fwpm_layer_outbound_ippacket_v4_discard___fwpm_layer_outbound_ippacket_v6_discard"></span>**DESCARTE DE IPPACKET V4 DE SAÍDA DA CAMADA \_ \_ \_ \_ \_ FWPM/DESCARTE DE \_ \_ \_ IPPACKET \_ V6 \_ DE SAÍDA DA CAMADA FWPM**
 </dt> <dd> <dl> <dt>
 
 
@@ -117,7 +117,7 @@ Essa camada de filtragem está localizada no caminho de envio para inspecionar t
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_IPFORWARD_V4___FWPM_LAYER_IPFORWARD_V6"></span><span id="fwpm_layer_ipforward_v4___fwpm_layer_ipforward_v6"></span>**Camada \_ FWPM \_ IPFORWARD \_ v4/FWPM \_ \_ IPFORWARD \_ V6**
+<span id="FWPM_LAYER_IPFORWARD_V4___FWPM_LAYER_IPFORWARD_V6"></span><span id="fwpm_layer_ipforward_v4___fwpm_layer_ipforward_v6"></span>**IPFORWARD \_ \_ \_ V4/FWPM LAYER \_ \_ IPFORWARD \_ V6 DA CAMADA FWPM**
 </dt> <dd> <dl> <dt>
 
 
@@ -127,7 +127,7 @@ Essa camada de filtragem está localizada no caminho de encaminhamento no ponto 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_IPFORWARD_V4_DISCARD___FWPM_LAYER_IPFORWARD_V6_DISCARD"></span><span id="fwpm_layer_ipforward_v4_discard___fwpm_layer_ipforward_v6_discard"></span>**FWPM \_ camada \_ IPFORWARD \_ v4 \_ descarte/FWPM \_ camada \_ IPFORWARD \_ \_ descarte V6 descartar**
+<span id="FWPM_LAYER_IPFORWARD_V4_DISCARD___FWPM_LAYER_IPFORWARD_V6_DISCARD"></span><span id="fwpm_layer_ipforward_v4_discard___fwpm_layer_ipforward_v6_discard"></span>**DESCARTE DE CAMADA DE FWPM \_ \_ IPFORWARD \_ \_ V4/FWPM \_ LAYER \_ IPFORWARD \_ V6 \_ DISCARD**
 </dt> <dd> <dl> <dt>
 
 
@@ -137,37 +137,37 @@ Essa camada de filtragem está localizada no caminho de encaminhamento para insp
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_TRANSPORT_V4___FWPM_LAYER_INBOUND_TRANSPORT_V6"></span><span id="fwpm_layer_inbound_transport_v4___fwpm_layer_inbound_transport_v6"></span>**Transporte de entrada da camada \_ \_ \_ \_ v4/FWPM \_ de \_ entrada \_ \_ V6 de transporte da camada FWPM**
+<span id="FWPM_LAYER_INBOUND_TRANSPORT_V4___FWPM_LAYER_INBOUND_TRANSPORT_V6"></span><span id="fwpm_layer_inbound_transport_v4___fwpm_layer_inbound_transport_v6"></span>**TRANSPORTE DE ENTRADA DE CAMADA FWPM \_ \_ \_ \_ V4/FWPM \_ LAYER \_ INBOUND \_ TRANSPORT \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de recebimento logo após o cabeçalho de transporte de um pacote recebido ter sido analisado pela pilha de rede na camada de transporte, mas antes de qualquer processamento da camada de transporte ocorrer.
+Essa camada de filtragem está localizada no caminho de recebimento logo após o cabeamento de transporte de um pacote recebido ter sido analisado pela pilha de rede na camada de transporte, mas antes de qualquer processamento de camada de transporte ocorrer.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_TRANSPORT_V4_DISCARD___FWPM_LAYER_INBOUND_TRANSPORT_V6_DISCARD"></span><span id="fwpm_layer_inbound_transport_v4_discard___fwpm_layer_inbound_transport_v6_discard"></span>**Descarte v4 de transporte de entrada da camada do FWPM \_ \_ \_ \_ \_ /FWPM \_ \_ \_ \_ \_ de transporte de entrada do protocolo v6 descarte**
+<span id="FWPM_LAYER_INBOUND_TRANSPORT_V4_DISCARD___FWPM_LAYER_INBOUND_TRANSPORT_V6_DISCARD"></span><span id="fwpm_layer_inbound_transport_v4_discard___fwpm_layer_inbound_transport_v6_discard"></span>**DESCARTE V4 DE TRANSPORTE DE ENTRADA DE \_ \_ CAMADA \_ \_ \_ FWPM/DESCARTE DE TRANSPORTE DE ENTRADA DA CAMADA DO FWPM \_ \_ \_ \_ V6 \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de recebimento para inspecionar os pacotes recebidos que foram descartados na camada de transporte.
+Essa camada de filtragem está localizada no caminho de recebimento para inspecionar todos os pacotes recebidos que foram descartados na camada de transporte.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_TRANSPORT_V4___FWPM_LAYER_OUTBOUND_TRANSPORT_V6"></span><span id="fwpm_layer_outbound_transport_v4___fwpm_layer_outbound_transport_v6"></span>**Transporte de saída da camada \_ \_ \_ \_ v4/ \_ FWPM \_ \_ \_ do transporte de saída da camada FWPM**
+<span id="FWPM_LAYER_OUTBOUND_TRANSPORT_V4___FWPM_LAYER_OUTBOUND_TRANSPORT_V6"></span><span id="fwpm_layer_outbound_transport_v4___fwpm_layer_outbound_transport_v6"></span>**TRANSPORTE DE SAÍDA DE CAMADA FWPM \_ \_ \_ \_ V4/FWPM \_ LAYER \_ OUTBOUND \_ TRANSPORT \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de envio logo após a passagem de um pacote enviado para a camada de rede para processamento, mas antes de qualquer processamento de camada de rede ocorrer. Essa camada de filtragem está localizada na parte superior da camada de rede, em vez de na parte inferior da camada de transporte, para que todos os pacotes enviados por transportes de terceiros ou como pacotes brutos sejam filtrados nessa camada.
+Essa camada de filtragem está localizada no caminho de envio logo após um pacote enviado ter sido passado para a camada de rede para processamento, mas antes de qualquer processamento de camada de rede ocorrer. Essa camada de filtragem está localizada na parte superior da camada de rede em vez de na parte inferior da camada de transporte para que todos os pacotes enviados por transporte de terceiros ou como pacotes brutos sejam filtrados nessa camada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_TRANSPORT_V4_DISCARD___FWPM_LAYER_OUTBOUND_TRANSPORT_V6_DISCARD"></span><span id="fwpm_layer_outbound_transport_v4_discard___fwpm_layer_outbound_transport_v6_discard"></span>**Descartar \_ \_ V6 de \_ \_ transporte de saída da camada v4 de transporte \_ /descartar \_ \_ \_ \_ \_ do FWPM de saída**
+<span id="FWPM_LAYER_OUTBOUND_TRANSPORT_V4_DISCARD___FWPM_LAYER_OUTBOUND_TRANSPORT_V6_DISCARD"></span><span id="fwpm_layer_outbound_transport_v4_discard___fwpm_layer_outbound_transport_v6_discard"></span>**DESCARTE V4 DO TRANSPORTE DE SAÍDA DA CAMADA \_ \_ \_ \_ \_ FWPM/DESCARTE DE TRANSPORTE \_ \_ \_ \_ \_ DE SAÍDA DA CAMADA DO FWPM V6**
 </dt> <dd> <dl> <dt>
 
 
@@ -177,7 +177,7 @@ Essa camada de filtragem está localizada no caminho de envio para inspecionar t
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_STREAM_V4___FWPM_LAYER_STREAM_V6"></span><span id="fwpm_layer_stream_v4___fwpm_layer_stream_v6"></span>**Fluxo de camada \_ \_ \_ v4/FWPM de fluxo de camada FWPM \_ \_ \_ V6**
+<span id="FWPM_LAYER_STREAM_V4___FWPM_LAYER_STREAM_V6"></span><span id="fwpm_layer_stream_v4___fwpm_layer_stream_v6"></span>**FWPM \_ LAYER \_ STREAM \_ V4/FWPM \_ LAYER STREAM \_ \_ V6**
 </dt> <dd> <dl> <dt>
 
 
@@ -187,17 +187,17 @@ Essa camada de filtragem está localizada no caminho de dados do fluxo. Essa cam
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_STREAM_V4_DISCARD___FWPM_LAYER_STREAM_V6_DISCARD"></span><span id="fwpm_layer_stream_v4_discard___fwpm_layer_stream_v6_discard"></span>**Descarte/descarte do fluxo de camada do FWPM do fluxo de camada \_ \_ \_ v4 \_ /FWPM \_ \_ \_ \_**
+<span id="FWPM_LAYER_STREAM_V4_DISCARD___FWPM_LAYER_STREAM_V6_DISCARD"></span><span id="fwpm_layer_stream_v4_discard___fwpm_layer_stream_v6_discard"></span>**DESCARTE DE FLUXO \_ DE CAMADA V4 DO FWPM/DESCARTE DE FLUXO DE CAMADA V6 DO \_ \_ \_ \_ \_ \_ \_ FWPM**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de dados de fluxo para inspecionar todos os dados de fluxo que foram descartados.
+Essa camada de filtragem está localizada no caminho de dados do fluxo para inspecionar todos os dados de fluxo que foram descartados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_DATAGRAM_DATA_V4___FWPM_LAYER_DATAGRAM_DATA_V6"></span><span id="fwpm_layer_datagram_data_v4___fwpm_layer_datagram_data_v6"></span>**Dados de datagrama de \_ camada FWPM \_ \_ \_ v4/FWPM de \_ \_ Datagram data \_ \_ V6**
+<span id="FWPM_LAYER_DATAGRAM_DATA_V4___FWPM_LAYER_DATAGRAM_DATA_V6"></span><span id="fwpm_layer_datagram_data_v4___fwpm_layer_datagram_data_v6"></span>**DADOS DE DATAGRAMA DE CAMADA DO FWPM \_ \_ \_ \_ V4/FWPM \_ LAYER \_ \_ DATAGRAM \_ V6**
 </dt> <dd> <dl> <dt>
 
 
@@ -207,17 +207,17 @@ Essa camada de filtragem está localizada no caminho de dados do datagrama. Essa
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_DATAGRAM_DATA_V4_DISCARD___FWPM_LAYER_DATAGRAM_DATA_V6_DISCARD"></span><span id="fwpm_layer_datagram_data_v4_discard___fwpm_layer_datagram_data_v6_discard"></span>**\_ \_ Descarte v4 de datagrama de camada FWPM dados de datagrama de \_ \_ \_ \_ camada \_ \_ \_ \_**
+<span id="FWPM_LAYER_DATAGRAM_DATA_V4_DISCARD___FWPM_LAYER_DATAGRAM_DATA_V6_DISCARD"></span><span id="fwpm_layer_datagram_data_v4_discard___fwpm_layer_datagram_data_v6_discard"></span>**DESCARTE DE DADOS DE DATAGRAMA DE CAMADA DO FWPM \_ \_ \_ \_ \_ V4/DESCARTE DE DADOS DE DATAGRAMA DE CAMADA DO FWPM \_ \_ \_ \_ V6 \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de dados do datagrama para inspecionar os datagramas que foram descartados.
+Essa camada de filtragem está localizada no caminho de dados do datagrama para inspecionar todos os datagramas que foram descartados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_ICMP_ERROR_V4___FWPM_LAYER_INBOUND_ICMP_ERROR_V6"></span><span id="fwpm_layer_inbound_icmp_error_v4___fwpm_layer_inbound_icmp_error_v6"></span>**Erro de ICMP de entrada de entrada de FWPM de camada \_ \_ \_ \_ \_ v4/FWPM de \_ \_ saída \_ ICMP \_ \_ V6**
+<span id="FWPM_LAYER_INBOUND_ICMP_ERROR_V4___FWPM_LAYER_INBOUND_ICMP_ERROR_V6"></span><span id="fwpm_layer_inbound_icmp_error_v4___fwpm_layer_inbound_icmp_error_v6"></span>**ERRO ICMP DE ENTRADA DE CAMADA FWPM \_ \_ \_ \_ \_ V4/FWPM \_ LAYER \_ INBOUND \_ ICMP \_ ERROR \_ V6**
 </dt> <dd> <dl> <dt>
 
 
@@ -227,7 +227,7 @@ Essa camada de filtragem está localizada no caminho de recebimento para inspeci
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_ICMP_ERROR_V4_DISCARD___FWPM_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD"></span><span id="fwpm_layer_inbound_icmp_error_v4_discard___fwpm_layer_inbound_icmp_error_v6_discard"></span>**Erro de ICMP de entrada de camada de FWPM, descarte \_ \_ \_ \_ \_ \_ /FWPM de \_ entrada de saída de \_ \_ ICMP \_ \_ \_**
+<span id="FWPM_LAYER_INBOUND_ICMP_ERROR_V4_DISCARD___FWPM_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD"></span><span id="fwpm_layer_inbound_icmp_error_v4_discard___fwpm_layer_inbound_icmp_error_v6_discard"></span>**ERRO ICMP DE ENTRADA DA CAMADA FWPM \_ \_ \_ \_ \_ V4 \_ DISCARD/FWPM \_ LAYER \_ INBOUND \_ ICMP \_ ERROR \_ V6 \_ DISCARD**
 </dt> <dd> <dl> <dt>
 
 
@@ -237,7 +237,7 @@ Essa camada de filtragem está localizada no caminho de recebimento para inspeci
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4___FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6"></span><span id="fwpm_layer_outbound_icmp_error_v4___fwpm_layer_outbound_icmp_error_v6"></span>**Erro de ICMP de saída da camada do FWPM \_ \_ \_ \_ \_ v4/FWPM de \_ saída do \_ \_ ICMP \_ \_**
+<span id="FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4___FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6"></span><span id="fwpm_layer_outbound_icmp_error_v4___fwpm_layer_outbound_icmp_error_v6"></span>**ERRO ICMP DE SAÍDA DA CAMADA FWPM \_ \_ \_ \_ \_ V4/FWPM \_ \_ LAYER OUTBOUND \_ ICMP ERROR \_ \_ V6**
 </dt> <dd> <dl> <dt>
 
 
@@ -247,7 +247,7 @@ Essa camada de filtragem está localizada no caminho de envio para inspecionar m
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD___FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD"></span><span id="fwpm_layer_outbound_icmp_error_v4_discard___fwpm_layer_outbound_icmp_error_v6_discard"></span>**\_Erro de ICMP de saída de camada FWPM \_ \_ protocolo \_ \_ v4 \_ descartar/FWPM \_ \_ saída \_ ICMP \_ \_ V6 \_ descarte**
+<span id="FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD___FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD"></span><span id="fwpm_layer_outbound_icmp_error_v4_discard___fwpm_layer_outbound_icmp_error_v6_discard"></span>**ERRO ICMP DE SAÍDA DA CAMADA FWPM \_ \_ \_ \_ \_ V4 \_ DISCARD/FWPM \_ \_ LAYER OUTBOUND \_ ICMP ERROR \_ \_ V6 \_ DISCARD**
 </dt> <dd> <dl> <dt>
 
 
@@ -257,41 +257,41 @@ Essa camada de filtragem está localizada no caminho de envio para inspecionar m
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4___FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6"></span><span id="fwpm_layer_ale_resource_assignment_v4___fwpm_layer_ale_resource_assignment_v6"></span>**Atribuição de recurso Ale de camada de FWPM \_ \_ \_ \_ \_ /FWPM \_ \_ \_ \_ \_ atribuição de recursos de camada de Ale**
+<span id="FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4___FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6"></span><span id="fwpm_layer_ale_resource_assignment_v4___fwpm_layer_ale_resource_assignment_v6"></span>**FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V4/FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem permite autorizar atribuições de porta de transporte, solicitações de ligação, solicitações de modo promíscuo e solicitações de modo bruto.
+Essa camada de filtragem permite autorizar atribuições de porta de transporte, solicitações de vinculação, solicitações de modo promiscuo e solicitações de modo bruto.
 
-Consulte [camadas Ale](ale-layers.md) para obter mais informações.
+Consulte [Camadas ALE](ale-layers.md) para obter mais informações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4_DISCARD___FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD"></span><span id="fwpm_layer_ale_resource_assignment_v4_discard___fwpm_layer_ale_resource_assignment_v6_discard"></span>**Descarte v4 de atribuição de recursos Ale de camada de FWPM/FWPM de atribuição de recursos da \_ \_ \_ \_ \_ \_ \_ camada \_ \_ \_ \_ V6 \_ descarte**
+<span id="FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4_DISCARD___FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD"></span><span id="fwpm_layer_ale_resource_assignment_v4_discard___fwpm_layer_ale_resource_assignment_v6_discard"></span>**DESCARTE V4 DE ATRIBUIÇÃO DE RECURSOS ALE DE CAMADA \_ \_ \_ \_ \_ \_ FWPM/DESCARTE DE ATRIBUIÇÃO DE RECURSOS DE CAMADA FWPM \_ \_ \_ \_ \_ V6 \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem permite inspecionar os seguintes itens descartados: atribuições de porta de transporte, solicitações de associação, solicitações de modo promíscuo e solicitações de modo bruto.
+Essa camada de filtragem permite inspecionar os seguintes itens descartados: atribuições de porta de transporte, solicitações de vinculação, solicitações de modo promiscuo e solicitações de modo bruto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_AUTH_LISTEN_V4___FWPM_LAYER_ALE_AUTH_LISTEN_V6"></span><span id="fwpm_layer_ale_auth_listen_v4___fwpm_layer_ale_auth_listen_v6"></span>**V6 de escuta de autenticação Ale de camada \_ \_ \_ \_ \_ v4/FWPM \_ \_ \_ \_ \_ de FWPM**
+<span id="FWPM_LAYER_ALE_AUTH_LISTEN_V4___FWPM_LAYER_ALE_AUTH_LISTEN_V6"></span><span id="fwpm_layer_ale_auth_listen_v4___fwpm_layer_ale_auth_listen_v6"></span>**FWPM \_ LAYER \_ ALE \_ AUTH \_ LISTEN \_ V4/FWPM \_ LAYER \_ \_ ALE AUTH \_ LISTEN \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
 Essa camada de filtragem permite autorizar solicitações de escuta TCP.
 
-Consulte [camadas Ale](ale-layers.md) para obter mais informações.
+Consulte [Camadas ALE](ale-layers.md) para obter mais informações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_AUTH_LISTEN_V4_DISCARD___FWPM_LAYER_ALE_AUTH_LISTEN_V6_DISCARD"></span><span id="fwpm_layer_ale_auth_listen_v4_discard___fwpm_layer_ale_auth_listen_v6_discard"></span>**Descarte v4 de autenticação Ale de camada de FWPM de \_ \_ escuta de \_ \_ \_ \_ \_ camada \_ \_ \_ \_ \_**
+<span id="FWPM_LAYER_ALE_AUTH_LISTEN_V4_DISCARD___FWPM_LAYER_ALE_AUTH_LISTEN_V6_DISCARD"></span><span id="fwpm_layer_ale_auth_listen_v4_discard___fwpm_layer_ale_auth_listen_v6_discard"></span>**DESCARTE DA \_ \_ ALE AUTH LISTEN V4 DA CAMADA \_ \_ \_ \_ FWPM/DESCARTE DE \_ \_ ALE \_ AUTH \_ LISTEN \_ V6 \_ DA CAMADA FWPM**
 </dt> <dd> <dl> <dt>
 
 
@@ -301,19 +301,19 @@ Essa camada de filtragem permite inspecionar solicitações de escuta TCP que fo
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4___FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6"></span><span id="fwpm_layer_ale_auth_recv_accept_v4___fwpm_layer_ale_auth_recv_accept_v6"></span>**Aceitação de autenticação Ale de camada de FWPM de \_ \_ \_ \_ \_ aceitação \_ v4/FWPM \_ camada de \_ autenticação de Ale \_ \_ \_ \_**
+<span id="FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4___FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6"></span><span id="fwpm_layer_ale_auth_recv_accept_v4___fwpm_layer_ale_auth_recv_accept_v6"></span>**FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V4/FWPM \_ LAYER \_ \_ ALE AUTH \_ RECV ACCEPT \_ \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem permite autorizar solicitações de aceitação para conexões TCP de entrada, bem como autorizar o tráfego de entrada não TCP com base no primeiro pacote recebido.
+Essa camada de filtragem permite autorizar solicitações de aceitação para conexões TCP de entrada, bem como autorizar o tráfego não TCP de entrada com base no primeiro pacote recebido.
 
-Consulte [camadas Ale](ale-layers.md) para obter mais informações.
+Consulte [Camadas ALE](ale-layers.md) para obter mais informações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4_DISCARD___FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6_DISCARD"></span><span id="fwpm_layer_ale_auth_recv_accept_v4_discard___fwpm_layer_ale_auth_recv_accept_v6_discard"></span>**Autenticação Ale da camada FWPM de aceitação de recepção \_ \_ \_ \_ \_ \_ v4 \_ descartar/FWPM da \_ camada de autenticação Ale do nível de \_ aceitação do \_ \_ \_ \_ \_ descarte V6**
+<span id="FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4_DISCARD___FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6_DISCARD"></span><span id="fwpm_layer_ale_auth_recv_accept_v4_discard___fwpm_layer_ale_auth_recv_accept_v6_discard"></span>**FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V4 \_ DISCARD/FWPM \_ LAYER \_ \_ ALE AUTH \_ RECV ACCEPT \_ \_ V6 \_ DISCARD**
 </dt> <dd> <dl> <dt>
 
 
@@ -323,19 +323,19 @@ Essa camada de filtragem permite inspecionar solicitações de aceitação para 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_AUTH_CONNECT_V4___FWPM_LAYER_ALE_AUTH_CONNECT_V6"></span><span id="fwpm_layer_ale_auth_connect_v4___fwpm_layer_ale_auth_connect_v6"></span>**Autenticação Ale de camada FWPM \_ \_ \_ \_ Connect \_ v4/FWPM \_ camada de \_ \_ autenticação Ale \_ \_**
+<span id="FWPM_LAYER_ALE_AUTH_CONNECT_V4___FWPM_LAYER_ALE_AUTH_CONNECT_V6"></span><span id="fwpm_layer_ale_auth_connect_v4___fwpm_layer_ale_auth_connect_v6"></span>**FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V4/FWPM \_ LAYER \_ \_ ALE AUTH \_ CONNECT \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem permite autorizar solicitações de conexão para conexões TCP de saída, bem como autorizar o tráfego de saída não TCP com base no primeiro pacote enviado.
+Essa camada de filtragem permite autorizar solicitações de conexão para conexões TCP de saída, bem como autorizar o tráfego não TCP de saída com base no primeiro pacote enviado.
 
-Consulte [camadas Ale](ale-layers.md) para obter mais informações.
+Consulte [Camadas ALE](ale-layers.md) para obter mais informações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_AUTH_CONNECT_V4_DISCARD___FWPM_LAYER_ALE_AUTH_CONNECT_V6_DISCARD"></span><span id="fwpm_layer_ale_auth_connect_v4_discard___fwpm_layer_ale_auth_connect_v6_discard"></span>**FWPM \_ Layer \_ Ale \_ auth \_ Connect \_ v4 \_ descartar/FWPM \_ camada \_ Ale \_ auth \_ Connect \_ V6 \_ descarte**
+<span id="FWPM_LAYER_ALE_AUTH_CONNECT_V4_DISCARD___FWPM_LAYER_ALE_AUTH_CONNECT_V6_DISCARD"></span><span id="fwpm_layer_ale_auth_connect_v4_discard___fwpm_layer_ale_auth_connect_v6_discard"></span>**DESCARTE DE \_ \_ ALE AUTH CONNECT V4 DA CAMADA \_ \_ \_ \_ FWPM/DESCARTE DE \_ \_ ALE \_ AUTH \_ CONNECT \_ V6 \_ DA CAMADA FWPM**
 </dt> <dd> <dl> <dt>
 
 
@@ -345,131 +345,131 @@ Essa camada de filtragem permite inspecionar solicitações de conexão para con
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4___FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6"></span><span id="fwpm_layer_ale_flow_established_v4___fwpm_layer_ale_flow_established_v6"></span>**O \_ fluxo Ale de camada FWPM \_ \_ \_ estabeleceu o \_ fluxo Ale de camada v4/FWPM \_ \_ \_ \_ estabelecido \_ V6**
+<span id="FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4___FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6"></span><span id="fwpm_layer_ale_flow_established_v4___fwpm_layer_ale_flow_established_v6"></span>**FLUXO ALE DE CAMADA FWPM \_ \_ ESTABELECIDO \_ \_ \_ V4/FWPM \_ LAYER \_ ALE FLOW ESTABLISHED \_ \_ \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem permite a notificação de quando uma conexão TCP foi estabelecida ou quando o tráfego não-TCP foi autorizado.
+Essa camada de filtragem permite a notificação de quando uma conexão TCP foi estabelecida ou quando o tráfego não TCP foi autorizado.
 
-Consulte [camadas Ale](ale-layers.md) para obter mais informações.
+Consulte [Camadas ALE](ale-layers.md) para obter mais informações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4_DISCARD___FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6_DISCARD"></span><span id="fwpm_layer_ale_flow_established_v4_discard___fwpm_layer_ale_flow_established_v6_discard"></span>**Fluxo de Ale de camada de FWPM estabelecido fluxo de \_ \_ Ale de camada de \_ \_ \_ \_ descarte/FWPM de \_ camadas de \_ \_ entrada \_ \_ \_**
+<span id="FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4_DISCARD___FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6_DISCARD"></span><span id="fwpm_layer_ale_flow_established_v4_discard___fwpm_layer_ale_flow_established_v6_discard"></span>**DESCARTE DE FLUXO DE ALE DE CAMADA DO FWPM ESTABELECIDO \_ \_ \_ \_ \_ \_ V4/DESCARTE DE FLUXO DE CAMADA FWPM \_ ESTABELECIDO \_ \_ \_ \_ V6 \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem permite inspecionar quando uma conexão TCP estabelecida foi descartada na camada estabelecida pelo fluxo, bem como quando o tráfego não TCP autorizado foi Descartado na camada estabelecida do fluxo.
+Essa camada de filtragem permite inspecionar quando uma conexão TCP estabelecida foi descartada na camada estabelecida do fluxo, bem como quando o tráfego não TCP autorizado foi descartado na camada estabelecida do fluxo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_MAC_FRAME_ETHERNET"></span><span id="fwpm_layer_inbound_mac_frame_ethernet"></span>**\_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM**
+<span id="FWPM_LAYER_INBOUND_MAC_FRAME_ETHERNET"></span><span id="fwpm_layer_inbound_mac_frame_ethernet"></span>**ETHERNET DE QUADRO \_ \_ MAC DE ENTRADA \_ \_ DA CAMADA FWPM \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de recebimento após a ocorrência do processamento da camada MAC (802,3), mas antes de o quadro ser processado pela camada de enquadramento. Essa é a camada após a nativa na qual todos os quadros se parecem com quadros Ethernet.
+Essa camada de filtragem está localizada no caminho de recebimento após o processamento da camada MAC (802.3), mas antes que o quadro seja processado pela camada de enquadramento. Essa é a camada após a nativa na qual todos os quadros se parecem com quadros Ethernet.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_MAC_FRAME_ETHERNET"></span><span id="fwpm_layer_outbound_mac_frame_ethernet"></span>**quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet**
+<span id="FWPM_LAYER_OUTBOUND_MAC_FRAME_ETHERNET"></span><span id="fwpm_layer_outbound_mac_frame_ethernet"></span>**ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de envio após a ocorrência do processamento da camada de enquadramento, mas antes de o quadro ser processado pela camada MAC (802,3). Essa é a camada após a nativa na qual todos os quadros se parecem com quadros Ethernet.
+Essa camada de filtragem está localizada no caminho de envio após o processamento da camada de enquadramento ter ocorrido, mas antes que o quadro seja processado pela camada MAC (802.3). Essa é a camada após a nativa na qual todos os quadros se parecem com quadros Ethernet.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INBOUND_MAC_FRAME_NATIVE"></span><span id="fwpm_layer_inbound_mac_frame_native"></span>**\_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa**
+<span id="FWPM_LAYER_INBOUND_MAC_FRAME_NATIVE"></span><span id="fwpm_layer_inbound_mac_frame_native"></span>**FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de recebimento após a ocorrência do processamento da camada MAC, mas antes que o quadro seja processado pela camada de enquadramento. É a primeira camada após a miniporta entregar o quadro ao NDIS.
+Essa camada de filtragem está localizada no caminho de recebimento após o processamento da camada MAC ter ocorrido, mas antes que o quadro seja processado pela camada de enquadramento. É a primeira camada depois que o Miniport entrega o quadro para NDIS.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_OUTBOUND_MAC_FRAME_NATIVE"></span><span id="fwpm_layer_outbound_mac_frame_native"></span>**\_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa**
+<span id="FWPM_LAYER_OUTBOUND_MAC_FRAME_NATIVE"></span><span id="fwpm_layer_outbound_mac_frame_native"></span>**FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de envio após a ocorrência do processamento da camada de enquadramento, mas antes de o quadro ser processado pela camada MAC (Native 802,11). É a primeira camada após a miniporta entregar o quadro ao NDIS.
+Essa camada de filtragem está localizada no caminho de envio após o processamento da camada de enquadramento ter ocorrido, mas antes que o quadro seja processado pela camada MAC (Nativa 802.11). É a primeira camada depois que o Miniport entrega o quadro para NDIS.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INGRESS_VSWITCH_ETHERNET"></span><span id="fwpm_layer_ingress_vswitch_ethernet"></span>**\_ \_ Ethernet VSWITCH de entrada de camada \_ FWPM \_**
+<span id="FWPM_LAYER_INGRESS_VSWITCH_ETHERNET"></span><span id="fwpm_layer_ingress_vswitch_ethernet"></span>**FWPM \_ LAYER \_ INGRESS \_ VSWITCH \_ ETHERNET**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de entrada do vSwitch logo após o cabeçalho MAC ter sido analisado, mas antes de qualquer processamento de cabeçalho MAC ocorrer.
+Essa camada de filtragem está localizada no caminho de entrada vSwitch logo após o header MAC ter sido analisado, mas antes de qualquer processamento de header MAC ocorrer.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_EGRESS_VSWITCH_ETHERNET"></span><span id="fwpm_layer_egress_vswitch_ethernet"></span>**\_ \_ Ethernet VSWITCH de egresso de camada FWPM \_ \_**
+<span id="FWPM_LAYER_EGRESS_VSWITCH_ETHERNET"></span><span id="fwpm_layer_egress_vswitch_ethernet"></span>**FWPM \_ LAYER \_ EGRESS \_ VSWITCH \_ ETHERNET**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de saída do vSwitch logo após o cabeçalho MAC ter sido analisado, mas antes de qualquer processamento de cabeçalho MAC ocorrer.
+Essa camada de filtragem está localizada no caminho de saída do vSwitch logo após o header MAC ter sido analisado, mas antes de qualquer processamento de header MAC ocorrer.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V4___FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V6"></span><span id="fwpm_layer_ingress_vswitch_transport_v4___fwpm_layer_ingress_vswitch_transport_v6"></span>**Transporte de \_ vSwitch de entrada de camada \_ \_ \_ \_ v4/FWPM de \_ entrada da camada \_ \_ \_ \_ do FWPM de ingresso do vSwitch V6**
+<span id="FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V4___FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V6"></span><span id="fwpm_layer_ingress_vswitch_transport_v4___fwpm_layer_ingress_vswitch_transport_v6"></span>**FWPM \_ LAYER \_ INGRESS \_ VSWITCH \_ TRANSPORT \_ V4/FWPM \_ LAYER \_ INGRESS \_ VSWITCH \_ TRANSPORT \_ V6**
 </dt> <dd> <dl> <dt>
 
 
 
-Essa camada de filtragem está localizada no caminho de entrada do vSwitch logo após o cabeçalho MAC ter sido analisado, mas antes de qualquer processamento de cabeçalho MAC ocorrer. Essa camada permite que as condições de filtragem de nível de transporte auxiliem na filtragem do tráfego.
+Essa camada de filtragem está localizada no caminho de entrada vSwitch logo após o header MAC ter sido analisado, mas antes de qualquer processamento de header MAC ocorrer. Essa camada permite que as condições de filtragem no nível de TRANSPORTE auviem na filtragem do tráfego.
 
 Se um vSwitchPort estiver no modo PVLAN ou tronco, os filtros nessa camada serão ignorados, permitindo que o fluxo de tráfego seja sem nenhuma filtragem.
 
 Se o IPv4 for desinstalado no host, os filtros nessa camada farão com que os pacotes sejam removidos.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> disponível somente em Windows 8 e Windows Server 2012.
 
  
 
@@ -488,7 +488,7 @@ Se um vSwitchPort estiver no modo PVLAN ou tronco, os filtros nessa camada serã
 Se o IPv4 for desinstalado no host, os filtros nessa camada farão com que os pacotes sejam removidos.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> disponível somente em Windows 8 e Windows Server 2012.
 
  
 
@@ -665,7 +665,7 @@ Consulte [camadas Ale](ale-layers.md) para obter mais informações.
 
 ## <a name="remarks"></a>Comentários
 
-Esses identificadores de camada de filtragem também são chamados de identificadores de camada de filtragem de gerenciamento. A API WFP também contém um conjunto de [identificadores de camada de filtragem de tempo de execução](/windows-hardware/drivers/network/management-filtering-layer-identifiers), documentados no WDK (Kit de driver do Windows). Os identificadores de camada de filtragem de tempo de execução são LUIDs e, portanto, são menores, com apenas 64 bits de tamanho, em comparação com os identificadores de camada de filtragem de gerenciamento, que têm 128 bits de tamanho.
+Esses identificadores de camada de filtragem também são chamados de identificadores de camada de filtragem de gerenciamento. a API WFP também contém um conjunto de [identificadores de camada de filtragem de tempo de execução](/windows-hardware/drivers/network/management-filtering-layer-identifiers), documentados no WDK (Kit de Driver Windows). Os identificadores de camada de filtragem de tempo de execução são LUIDs e, portanto, são menores, com apenas 64 bits de tamanho, em comparação com os identificadores de camada de filtragem de gerenciamento, que têm 128 bits de tamanho.
 
 Os identificadores da camada de filtragem de gerenciamento e os identificadores da camada de filtragem de tempo de execução apontam para as mesmas camadas.
 
@@ -679,9 +679,9 @@ Os identificadores de camada de filtragem de tempo de execução são usados por
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
 
 
 

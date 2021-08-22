@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. itemSelectedColor
-description: O atributo itemSelectedColor especifica ou recupera um valor que indica a cor do texto de um item selecionado na lista de reprodução.
+title: PLAYLIST.itemSelectedColor
+description: O atributo itemSelectedColor especifica ou recupera um valor que indica a cor do texto de um item selecionado na playlist.
 ms.assetid: b7da5874-b8eb-46b3-8455-23bf146773cf
 keywords:
-- PLAYLIST. itemSelectedColor Windows Media Player
+- PLAYLIST.itemSelectedColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca82e9e8e68daefc746b5bb4a68a20452a584fdc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51cddc80450f7051c4bdaacb78ecce62ed72a4f94f9b10ee583cae89209f027c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054214"
 ---
-# <a name="playlistitemselectedcolor"></a>PLAYLIST. itemSelectedColor
+# <a name="playlistitemselectedcolor"></a>PLAYLIST.itemSelectedColor
 
-O atributo **itemSelectedColor** especifica ou recupera um valor que indica a cor do texto de um item selecionado na lista de reprodução.
+O **atributo itemSelectedColor** especifica ou recupera um valor que indica a cor do texto de um item selecionado na playlist.
 
 ``` syntax
         elementID.itemSelectedColor
@@ -29,7 +29,7 @@ O atributo **itemSelectedColor** especifica ou recupera um valor que indica a co
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que representa uma cor. O valor padrão é a cor do texto de realce do Windows.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação** que representa uma cor. O valor padrão é a Windows realçada da cor do texto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que represen
 
 <dl> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)

@@ -4,12 +4,12 @@ description: Sinaliza condicionalmente os resultados do sombreador de pixel a se
 ms.assetid: 566C4A9A-B32A-4AA6-A888-70F6965B1B5A
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57d98365ae6d80710f15cf7204f98d810be30a13
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ba6b5744ee8cf8d2953247711d95fe5d5ec6f96c36c700e1a38ce4e0cb1e1ff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103916871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986596"
 ---
 # <a name="discard-sm4---asm"></a>descartar (sm4-ASM)
 

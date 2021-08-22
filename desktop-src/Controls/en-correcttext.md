@@ -1,9 +1,9 @@
 ---
-title: EN_CORRECTTEXT código de notificação (RichEdit. h)
-description: Notifica uma janela pai do controle de edição rico que ocorreu um gesto de SYV \_ correto, dando à janela pai a oportunidade de cancelar a correção do texto. Um controle de edição rico envia esse código de notificação na forma de uma \_ mensagem de notificação do WM.
+title: EN_CORRECTTEXT de notificação (Richedit.h)
+description: Notifica uma janela pai de controle de edição rica de que ocorreu um gesto SYV CORRECT, dando à janela pai a oportunidade de cancelar a \_ correção do texto. Um controle de edição rich envia esse código de notificação na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: d6f6278f-ff63-4f6a-a352-2b4d70df3e1a
 keywords:
-- EN_CORRECTTEXT de código de notificação controles do Windows
+- EN_CORRECTTEXT código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5d1339513a94967ab60bdab2b9ee39172b19e76
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48f03bf0d1bd31cc1f4139c24c6b0efa904f013231af4e108b0f97ef7f308bbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019414"
 ---
-# <a name="en_correcttext-notification-code"></a>\_Código de notificação en CORRECTTEXT
+# <a name="en_correcttext-notification-code"></a>Código de notificação EN \_ CORRECTTEXT
 
-Notifica uma janela pai do controle de edição rico que ocorreu um gesto de SYV \_ correto, dando à janela pai a oportunidade de cancelar a correção do texto. Um controle de edição rico envia esse código de notificação na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica uma janela pai de controle de edição rica de que ocorreu um gesto SYV CORRECT, dando à janela pai a oportunidade de cancelar a \_ correção do texto. Um controle de edição rich envia esse código de notificação na forma de uma [**mensagem WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,24 +41,24 @@ EN_CORRECTTEXT
 *lParam* 
 </dt> <dd>
 
-Uma estrutura [**ENCORRECTTEXT**](/windows/desktop/api/Richedit/ns-richedit-encorrecttext) que especifica a seleção a ser corrigida.
+Uma [**estrutura ENCORRECTTEXT**](/windows/desktop/api/Richedit/ns-richedit-encorrecttext) que especifica a seleção a ser corrigida.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar zero para ignorar a ação.
+Retorne zero para ignorar a ação.
 
-Retorna um valor diferente de zero para processar a ação.
+Retorna um valor não zero para processar a ação.
 
 ## <a name="remarks"></a>Comentários
 
-Esse código de notificação será enviado somente se os recursos de caneta estiverem disponíveis.
+Esse código de notificação será enviado somente se os recursos de caneta estão disponíveis.
 
-Para receber \_ códigos de notificação do en CORRECTTEXT, especifique [**enm \_ CORRECTTEXT**](rich-edit-control-event-mask-flags.md) na máscara enviada com a mensagem em [**\_ SETEVENTMASK**](em-seteventmask.md) .
+Para receber códigos de notificação EN \_ CORRECTTEXT, especifique [**ENM \_ CORRECTTEXT**](rich-edit-control-event-mask-flags.md) na máscara enviada com a [**mensagem EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 > [!Note]  
-> O \_ código de notificação en CORRECTTEXT só tem suporte na versão de edição avançada 1,0. Não há suporte para ele em versões posteriores do rich edit. Para obter informações sobre a compatibilidade das versões de edição rica com as várias versões do sistema, consulte [sobre controles de edição avançados](about-rich-edit-controls.md).
+> O código de notificação EN \_ CORRECTTEXT só tem suporte na versão 1.0 de edição rich. Não há suporte para ele em versões posteriores do rich edit. Para obter informações sobre a compatibilidade de versões de edição rich com as várias versões do sistema, consulte [Sobre controles de edição rich](about-rich-edit-controls.md).
 
  
 
@@ -68,9 +68,9 @@ Para receber \_ códigos de notificação do en CORRECTTEXT, especifique [**enm 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

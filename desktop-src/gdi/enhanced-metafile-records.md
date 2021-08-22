@@ -1,32 +1,32 @@
 ---
-description: Um metarquivo avançado é uma matriz de registros.
+description: Um metadado aprimorado é uma matriz de registros.
 ms.assetid: af3261c7-2113-4777-97c0-504f23022550
-title: Registros de metarquivo avançados
+title: Registros de metadados aprimorados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2097fd59497838c2a77a0209f6ae715dff2e1cf9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 506ca77dda1bd90fc04b692dbbd98bc06f4da44c5fc6f8edb0fd17cbd3e94c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038014"
 ---
-# <a name="enhanced-metafile-records"></a>Registros de metarquivo avançados
+# <a name="enhanced-metafile-records"></a>Registros de metadados aprimorados
 
-Um metarquivo avançado é uma matriz de registros. Um registro de metarquivo é uma estrutura de [**ENHMETARECORD**](/windows/win32/api/wingdi/ns-wingdi-enhmetarecord) de comprimento variável. No início de cada registro de metarquivo avançado está uma estrutura [**EMR**](/windows/win32/api/wingdi/ns-wingdi-emr) , que contém dois membros. O primeiro membro, iType, identifica o tipo de registro que é, a função GDI cujos parâmetros estão contidos no registro. Como as estruturas são variáveis de comprimento, o outro membro, nSize, contém o tamanho do registro. Imediatamente após o membro nSize estão os parâmetros restantes, se houver, da função GDI. O restante da estrutura contém dados adicionais que dependem do tipo de registro.
+Um metadado aprimorado é uma matriz de registros. Um registro de metadados é uma estrutura [**EN FOCALARECORD**](/windows/win32/api/wingdi/ns-wingdi-enhmetarecord) de comprimento variável. No início de cada registro de metadados aprimorado há uma [**estrutura EMR,**](/windows/win32/api/wingdi/ns-wingdi-emr) que contém dois membros. O primeiro membro, iType, identifica o tipo de registro, ou seja, a função GDI cujos parâmetros estão contidos no registro. Como as estruturas são variáveis de comprimento, o outro membro, nSize, contém o tamanho do registro. Imediatamente após o membro nSize estão os parâmetros restantes, se for o caso, da função GDI. O restante da estrutura contém dados adicionais que dependem do tipo de registro.
 
-O primeiro registro em um metarquivo avançado é sempre a estrutura [**ENHMETAHEADER**](/windows/win32/api/wingdi/ns-wingdi-enhmetaheader) , que é o cabeçalho Enhanced-Metafile. O cabeçalho especifica as seguintes informações:
+O primeiro registro em um metadado aprimorado é sempre a estrutura [**EN LTDAHEADER,**](/windows/win32/api/wingdi/ns-wingdi-enhmetaheader) que é o header enhanced-metafile. O header especifica as seguintes informações:
 
--   Tamanho do metarquivo, em bytes
+-   Tamanho do metadado, em bytes
 -   Dimensões do quadro de imagem, em unidades de dispositivo
--   Dimensões do quadro de imagem, em unidades de 01 a milímetros
--   Número de registros no metarquivo
+-   Dimensões do quadro de imagem, em unidades de milímetros .01
+-   Número de registros no metadado
 -   Deslocamento para uma descrição de texto opcional
 -   Tamanho da paleta opcional
 -   Resolução do dispositivo original, em pixels
 -   Resolução do dispositivo original, em milímetros
 
-Uma descrição de texto opcional pode seguir o registro de cabeçalho. A descrição do texto descreve a imagem e o nome do autor. A paleta opcional especifica as cores usadas para criar o metarquivo avançado. Os registros restantes identificam as funções GDI usadas para criar a imagem. A seguinte saída hexadecimal corresponde a um registro gerado para uma chamada para a função [**SetMapMode**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode) .
+Uma descrição de texto opcional pode seguir o registro de header. A descrição do texto descreve a imagem e o nome do autor. A paleta opcional especifica as cores usadas para criar o metadado aprimorado. Os registros restantes identificam as funções GDI usadas para criar a imagem. A saída hexadecimal a seguir corresponde a um registro gerado para uma chamada à [**função SetMapMode.**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode)
 
 
 ```C++
@@ -35,9 +35,9 @@ Uma descrição de texto opcional pode seguir o registro de cabeçalho. A descri
 
 
 
-O valor 0x00000011 especifica o tipo de registro (corresponde à \_ constante EMR SETMAPMODE definida no arquivo WinGDI. h). O valor 0x0000000C especifica o comprimento do registro, em bytes. O valor 0x00000004 identifica o modo de mapeamento (corresponde à \_ constante mm LOENGLISH definida na função [**SetMapMode**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode) ).
+O valor 0x00000011 especifica o tipo de registro (corresponde à constante EMR SETMAPMODE definida no arquivo \_ Wingdi.h). O valor 0x0000000C especifica o comprimento do registro, em bytes. O valor 0x00000004 identifica o modo de mapeamento (corresponde à constante MM \_ LOENGLISH definida na [**função SetMapMode).**](/windows/desktop/api/Wingdi/nf-wingdi-setmapmode)
 
-Para obter uma lista de tipos de registro adicionais, consulte [estruturas de metarquivo](metafile-structures.md).
+Para obter uma lista de tipos de registro adicionais, consulte [Estruturas de metadados](metafile-structures.md).
 
  
 

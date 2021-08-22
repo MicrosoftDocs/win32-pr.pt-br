@@ -4,12 +4,12 @@ ms.assetid: 3444d022-8225-4956-89a1-721b4662d557
 title: Constantes de LINETERMDEV_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 661bf56cd7a81fb73e7f8e8fd2ebfe0983ac3cda
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c4c47e9b00d2c3281189ab5eae6bea79b422a86b263a7a33dbcd7d8d6785884
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002934"
 ---
 # <a name="linetermdev_-constants"></a>\_Constantes LINETERMDEV
 
@@ -60,7 +60,7 @@ Essas constantes são usadas para caracterizar o dispositivo de terminal de uma 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

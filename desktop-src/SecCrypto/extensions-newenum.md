@@ -1,7 +1,7 @@
 ---
-description: A \_ Propriedade NewEnum de extensões recupera uma interface IEnumVARIANT em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).
+description: A propriedade NewEnum de Extensions recupera uma interface IEnumVARIANT em um objeto que pode ser usado \_ para enumerar a coleção. Essa propriedade está oculta no Visual Basic Scripting Edition (VBScript).
 ms.assetid: 0e461683-bb48-4961-91ef-36af1c3f863e
-title: Propriedade Extensions._NewEnum
+title: Extensions._NewEnum propriedade
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 5b605241e8173b8a41779fa00b661a9e2f383ac7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 86d5c42d7eff36d526b10244e968aabe63871b26bde181e7976731921ac7cc2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006814"
 ---
 # <a name="extensions_newenum-property"></a>Extensões. \_ Propriedade NewEnum
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509ExtensionCollection**](/dotnet/api/system.security.cryptography.x509certificates.x509extensioncollection?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, [**use a Classe X509ExtensionCollection**](/dotnet/api/system.security.cryptography.x509certificates.x509extensioncollection?view=netcore-3.1) no namespace [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-A propriedade **\_ NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).
+A **\_ propriedade NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade está oculta no Visual Basic Scripting Edition (VBScript).
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,11 +37,11 @@ Extensions._NewEnum As IUnknown
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção.
+Uma [**interface IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada automaticamente internamente quando você usa a `For Each In` construção em Visual Basic Scripting Edition (VBScript).
+Essa propriedade é usada automaticamente internamente quando você usa o `For Each In` constructo no Visual Basic Scripting Edition (VBScript).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Essa propriedade é usada automaticamente internamente quando você usa a `For E
 
 | Requisito | Valor |
 |----------------------------------|----------------------------------------------------------------------------------------|
-| Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
-| Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Fim do suporte ao cliente<br/> | Windows Vista<br/>                                                               |
+| Fim do suporte ao servidor<br/> | Windows Server 2008<br/>                                                         |
+| Redistribuível<br/>       | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

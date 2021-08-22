@@ -1,19 +1,19 @@
 ---
-description: Obtendo os ponteiros de interface de DVD
+description: Obtendo os ponteiros da interface de DVD
 ms.assetid: 3d9315fc-dcfb-483a-9437-55c440813dc2
-title: Obtendo os ponteiros de interface de DVD
+title: Obtendo os ponteiros da interface de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24825b2d24ffae70e3def131e8aa522a987c11d0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 70d965dff48813800fa76821c72fa06a2d2f652e623c8aaeb7c0b44f9f9fafc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105780139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072931"
 ---
-# <a name="obtaining-the-dvd-interface-pointers"></a>Obtendo os ponteiros de interface de DVD
+# <a name="obtaining-the-dvd-interface-pointers"></a>Obtendo os ponteiros da interface de DVD
 
-Depois que o gráfico de filtro é criado, seu aplicativo pode obter os ponteiros necessários para controlar o navegador de DVD, o Gerenciador de gráficos de filtro e a janela de vídeo. As etapas básicas, com verificação de erros e outros códigos deixados para simplificar, são ilustradas no exemplo de código a seguir. O código completo é encontrado no aplicativo de exemplo de DVD no método CDvdCore:: BuildGraph. (Para obter mais informações, consulte [amostras do DirectShow](directshow-samples.md).)
+Depois que o grafo de filtro é criado, seu aplicativo pode obter os ponteiros necessários para controlar o Navegador de DVD, o Gerenciador Graph Filtro e a janela de vídeo. As etapas básicas, com verificação de erros e outros códigos deixados para simplificar, são ilustradas no exemplo de código a seguir. O código completo é encontrado no aplicativo de Exemplo de DVD no método CDvdCore::BuildGraph. (Para obter mais informações, [consulte DirectShow exemplos](directshow-samples.md).)
 
 
 ```C++

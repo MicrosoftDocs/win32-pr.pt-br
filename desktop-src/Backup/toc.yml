@@ -1,7 +1,7 @@
 - name: Backup
   href: backup.md
   items:
-    - name: Chaves e valores do registro para backup e restauração
+    - name: Chaves e valores do Registro para backup e restauração
       href: registry-keys-for-backup-and-restore.md
     - name: Srdelayed.exe
       href: srdelayed-exe.md
@@ -14,16 +14,16 @@
           href: tape-input-and-output.md
         - name: Criando um aplicativo de backup
           href: creating-a-backup-application.md
-        - name: Fazendo backup e restaurando links físicos
+        - name: Fazer o back-up e restaurar links rígidos
           href: backing-up-and-restoring-hard-links.md
-    - name: Backup do Single-Instance Store e do SIS
+    - name: Single-Instance Store e Backup do SIS
       href: single-instance-store-and-sis-backup.md
       items:
-        - name: Links do SIS e pontos de nova análise
+        - name: Links e pontos de reparse do SIS
           href: sis-links-and-reparse-points.md
-        - name: Os arquivos de armazenamento e Common-Store comuns do SIS
+        - name: O Armazenamento Comum do SIS e Common-Store arquivos
           href: the-sis-common-store-and-common-store-files.md
-        - name: Vantagens do uso do SIS
+        - name: Vantagens de usar o SIS
           href: advantages-of-using-sis.md
     - name: Referência de backup
       href: backup-reference.md
@@ -41,7 +41,7 @@
               href: /windows/desktop/api/Winbase/nf-winbase-createtapepartition
             - name: EraseTape
               href: /windows/desktop/api/Winbase/nf-winbase-erasetape
-            - name: Gettapeparameters
+            - name: GetTapeParameters
               href: /windows/desktop/api/Winbase/nf-winbase-gettapeparameters
             - name: GetTapePosition
               href: /windows/desktop/api/Winbase/nf-winbase-gettapeposition
@@ -49,7 +49,7 @@
               href: /windows/desktop/api/Winbase/nf-winbase-gettapestatus
             - name: PrepareTape
               href: /windows/desktop/api/Winbase/nf-winbase-preparetape
-            - name: Setfitaparameters
+            - name: SetTapeParameters
               href: /windows/desktop/api/Winbase/nf-winbase-settapeparameters
             - name: SetTapePosition
               href: /windows/desktop/api/Winbase/nf-winbase-settapeposition

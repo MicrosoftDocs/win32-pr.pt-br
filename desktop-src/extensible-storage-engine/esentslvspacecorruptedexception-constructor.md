@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f2ba50ee36ce42fc44fac68a468936ce95725d56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13a5b02b24eecc294eb1486c02680f831e4ffb7cb93d4bcbbde342947d3ab63d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105802145"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039814"
 ---
 # <a name="esentslvspacecorruptedexception-constructor"></a>Construtor EsentSLVSpaceCorruptedException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVSpaceCorruptedException()
 
 [Classe EsentSLVSpaceCorruptedException](./esentslvspacecorruptedexception-class.md)
 
-[Membros do EsentSLVSpaceCorruptedException](./esentslvspacecorruptedexception-members.md)
+[Membros EsentSLVSpaceCorruptedException](./esentslvspacecorruptedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

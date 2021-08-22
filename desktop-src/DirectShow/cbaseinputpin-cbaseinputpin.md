@@ -1,7 +1,7 @@
 ---
-description: Construtor de CBaseInputPin. CBaseInputPin-método de construtor.
+description: Construtor CBaseInputPin.CBaseInputPin – Método de construtor.
 ms.assetid: a853813d-cdf6-4cb4-8288-62685a883b56
-title: Construtor CBaseInputPin. CBaseInputPin (Amfilter. h)
+title: Construtor CBaseInputPin.CBaseInputPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 95a6dca29a9bdcaf978a54587035b34959d81719
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 526c10dc0cda2f9b4d4cee6a955620f2aa1aae697522aaf3e14e57c3317ca325
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017064"
 ---
-# <a name="cbaseinputpincbaseinputpin-constructor"></a>Construtor CBaseInputPin. CBaseInputPin
+# <a name="cbaseinputpincbaseinputpin-constructor"></a>Construtor CBaseInputPin.CBaseInputPin
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,41 +49,41 @@ CBaseInputPin(
 *pObjectName* 
 </dt> <dd>
 
-Cadeia de caracteres que contém o nome de depuração do objeto. Para obter mais informações, consulte [**CBaseObject**](cbaseobject.md).
+Cadeia de caracteres que contém o nome de depuração do objeto. Para obter mais informações, [**consulte CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *pFilter* 
 </dt> <dd>
 
-Ponteiro para o filtro que criou este pin.
+Ponteiro para o filtro que criou esse pino.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Ponteiro para um bloqueio de [**CCritSec**](ccritsec.md) , usado para serializar alterações de estado. Essa pode ser a mesma seção crítica que o bloqueio de filtro, [**CBaseFilter:: m \_ pLock**](cbasefilter-m-plock.md).
+Ponteiro para um [**bloqueio CCritSec,**](ccritsec.md) usado para serializar alterações de estado. Essa pode ser a mesma seção crítica que o bloqueio de filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um valor **HRESULT** que indica o êxito ou a falha do método.
+Ponteiro para uma variável que recebe um **valor HRESULT** que indica o êxito ou a falha do método.
 
 </dd> <dt>
 
 *pPinName* 
 </dt> <dd>
 
-Cadeia de caracteres largos contendo o nome do PIN (também usado como o identificador do PIN).
+Cadeia de caracteres largos que contém o nome do pino (também usado como o identificador de pino).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Todos os parâmetros são passados diretamente para o construtor [**CBasePin**](cbasepin-cbasepin.md) .
+Todos os parâmetros são passados diretamente para o construtor [**CBasePin.**](cbasepin-cbasepin.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,12 +91,12 @@ Todos os parâmetros são passados diretamente para o construtor [**CBasePin**](
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

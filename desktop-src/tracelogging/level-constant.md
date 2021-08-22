@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0350aadc74eaf16a6dbe493d64e941453a67a145
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d9b87db1e3c12f23d0df959664638f707388d0458895d755879ed69a9fefddd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091344"
 ---
 # <a name="level-constant"></a>Constante de nível
 
@@ -46,7 +46,7 @@ O valor do nível que será usado nos eventos iniciar e parar da atividade.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                                   |
-| parâmetro<br/>                   | <dl> <dt>ADOMD. h (incluir Traceloggingactivity. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>ADOMD. h (incluir Traceloggingactivity. h)</dt> </dl> |
 
 
 

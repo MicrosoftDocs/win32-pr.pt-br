@@ -4,12 +4,12 @@ description: Na inicialização, o AP (ponto de acesso) consulta o registro em b
 ms.assetid: e230e01f-27df-4f61-8755-262ec11af660
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 185557c4b908780c09714aa9cc7fa4c80399812f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b4ff650df29a446527224d8160b4080a252d525d26d32efedae254755ac9514a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104366022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984426"
 ---
 # <a name="access-point-initialization-of-eap"></a>Inicialização do ponto de acesso do EAP
 
@@ -17,6 +17,6 @@ Na inicialização, o AP (ponto de acesso) consulta o registro em busca de proto
 
 Em retorno de [**RasEapGetInfo**](/previous-versions/windows/desktop/api/Raseapif/nf-raseapif-raseapgetinfo) , a estrutura de [**\_ \_ informações de EAP do PPP**](/windows/desktop/api/Raseapif/ns-raseapif-ppp_eap_info) contém ponteiros para as funções [**RasEapInitialize**](/previous-versions/windows/desktop/legacy/aa363527(v=vs.85)), [**RasEapBegin**](/previous-versions/windows/desktop/legacy/aa363520(v=vs.85)), [**RasEapMakeMessage**](/previous-versions/windows/desktop/legacy/aa363532(v=vs.85))e [**RasEapEnd**](/previous-versions/windows/desktop/legacy/aa363521(v=vs.85)) na DLL de EAP. O serviço AP usa essas funções para interoperar com o protocolo de autenticação. O AP chama imediatamente **RasEapInitialize** para cada protocolo de autenticação, para inicializá-lo. Quando o serviço é desligado, ele chama **RasEapInitialize** novamente, desta vez com o parâmetro *FInitialize* definido como **false** para indicar que o protocolo de autenticação deve desligar.
 
- 
+ 
 
- 
+ 

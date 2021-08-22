@@ -1,21 +1,21 @@
 ---
-description: Pacote de controle do código-fonte (VSC) VAUX
+description: Pacote VSC (controle do código-fonte) V LTD
 ms.assetid: 9d5dd89e-9084-409d-86c0-30b57645d33d
-title: Pacote de controle do código-fonte (VSC) VAUX
+title: Pacote VSC (controle do código-fonte) V LTD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed51363a15c0024dcaf3edca5d21217cb29396d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcdc91d5c4b2cea460c85b696c59bfce7799d39aed0a6bfcbc03f3d3c522a6ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072070"
 ---
-# <a name="vaux-source-control-vsc-pack"></a>Pacote de controle do código-fonte (VSC) VAUX
+# <a name="vaux-source-control-vsc-pack"></a>Pacote VSC (controle do código-fonte) V LTD
 
-As tabelas a seguir listam os valores usados pelo driver MSDV para preencher o membro **dwDVVAuxCtl** da estrutura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Para obter mais informações, consulte [configurações de campo DVINFO no driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+As tabelas a seguir listam os valores usados pelo driver MSDV para preencher o membro **dwDVVVpCtl** da estrutura [**DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obter mais informações, [consulte Campo DVINFO Configurações no Driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-**Configurações de DVCR**
+**DVCR Configurações**
 
 
 
@@ -99,7 +99,7 @@ Reservado (1)
 
 1
 
-MODO DE REC (2)
+MODO REC (2)
 
 00
 
@@ -233,7 +233,7 @@ Pacote de VSC
 
  
 
-**Configurações do DVCPRO 25 e DVCPRO 50 (planejadas)**
+**DVCPRO 25 e DVCPRO 50 Configurações (planejado)**
 
 
 
@@ -401,7 +401,7 @@ Pacote de VSC
 
  
 
-**Configurações do DVCPRO 100 (planejadas)**
+**Configurações DVCPRO 100 (planejado)**
 
 
 
@@ -525,7 +525,7 @@ Reservado (8)
 
 1111:1111
 
-Pacote de VSC
+Pacote VSC
 
 0xFFFCCA3F
 
@@ -539,17 +539,17 @@ Pacote de VSC
 
 ## <a name="remarks"></a>Comentários
 
-Os códigos de campo a seguir são de interesse:
+Os seguintes códigos de campo são de interesse:
 
--   **CGMS**: sistema de gerenciamento de geração de cópia. 0 = cópia permitida sem restrição.
+-   **CGMS:** copiar o sistema de gerenciamento de geração. 0 = cópia permitida sem restrição.
 
-    Os pacotes de VSC reais no fluxo de DV podem conter valores diferentes.
+    Os pacotes VSC reais no fluxo DV podem conter valores diferentes.
 
 <!-- -->
 
--   **Modo** de registro: modo de gravação. 1 = original.
--   **DISP**: exibe o modo de seleção. 000 = taxa de proporção 4:3, formato completo; 010 = taxa de proporção de 16:9.
--   **BCSYS**: sistema de difusão. Este campo define o tipo de informações de sinalização de tela larga.
+-   **MODO REC:** modo de gravação. 1 = Original.
+-   **DISP:** exibe o modo de seleção. 000 = taxa de proporção 4:3, formato completo; 010 = taxa de proporção de 16:9.
+-   **BCSYS:** sistema de difusão. Esse campo define o tipo de informações de sinalização de tela larga.
     -   0 = tipo 0 (consulte IEC 61880)
     -   1 = tipo 1 (consulte ETSI EN 300 294)
 
@@ -560,7 +560,7 @@ Os códigos de campo a seguir são de interesse:
 [Vídeo digital no DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Configurações de campo DVINFO no driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campo DVINFO Configurações no Driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

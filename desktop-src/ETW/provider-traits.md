@@ -4,12 +4,12 @@ ms.assetid: 97755D64-BF57-4C0D-8ED4-040FC375C4AF
 title: Características do provedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c67b25857070edb6419be9a2898d2667f3a179d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2131ee4900fca40b26e8675b3eb4aade4e740fd49d1ed06098a21682ed55ff25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069886"
 ---
 # <a name="provider-traits"></a>Características do provedor
 

@@ -1,6 +1,6 @@
 ---
 title: Elemento ServerValidation (EapType) (PEAP)
-description: Saiba mais sobre o elemento ServerValidation (EapType). Este elemento contém informações sobre como executar a validação do servidor. | Elemento ServerValidation (EapType) (PEAP)
+description: Saiba mais sobre o elemento ServerValidation (EapType). Esse elemento contém informações sobre como executar a validação do servidor. | Elemento ServerValidation (EapType) (PEAP)
 ms.assetid: 5b213853-7161-456c-bbba-d3b1118f1786
 keywords:
 - Elemento ServerValidation EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1495da3f1a1f5e69e7a6af9c64e69aa1ea354abc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 194057a8769f32902388e733731fb1e3d987ecafd0eff26ea62c15d4fc8555d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105764996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984016"
 ---
 # <a name="servervalidation-eaptype-element-peap"></a>Elemento ServerValidation (EapType) (PEAP)
 
-O elemento **ServerValidation (EapType)** contém informações sobre como executar a validação do servidor.
+O **elemento ServerValidation (EapType)** contém informações sobre como executar a validação do servidor.
 
 ``` syntax
 <xs:element name="ServerValidation"
@@ -31,11 +31,11 @@ O elemento **ServerValidation (EapType)** contém informações sobre como execu
  />
 ```
 
-O elemento **ServerValidation** é definido pelo elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+O **elemento ServerValidation** é definido pelo [**elemento EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **ServerValidation** é opcional.
+O **elemento ServerValidation** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ O elemento **ServerValidation** é opcional.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ O elemento **ServerValidation** é opcional.
 [Esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos do esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
+[Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
 </dt> </dl>
 
  

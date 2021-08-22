@@ -4,16 +4,16 @@ description: Princípios de animação
 ms.assetid: 3633744c-ddb1-44bb-a390-7114386d265c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3b7468c519b282062c6ef15720b641d40b6f674
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 88477f228d12c68218963d5c12f3354892e45997504497a71622e30fe249c25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976736"
 ---
 # <a name="animation-principles"></a>Princípios de animação
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 O design de animação eficaz requer mais do que simplesmente renderizar um caractere. O Animators bem-sucedido segue uma variedade de princípios e técnicas para criar caracteres "verossímeis".
 
@@ -29,7 +29,7 @@ A previsão define o estágio para uma ação futura. Sem as ações antecipadas
 
 O tempo define a natureza de uma ação. A velocidade que um cabeçalho muda da esquerda para a direita se comunica se um caractere está olhando casualmente ou dando uma resposta negativa. O tempo também ajuda a transmitir o peso e o tamanho de um objeto. Os objetos maiores tendem a levar mais tempo para acelerar e desacelerar o que os menores. Além disso, o ritmo dos movimentos de um caractere afeta a forma como ele chama atenção. Em um cenário normal, o rápido movimento desenha os olhos, enquanto em um ambiente Frenetic, os movimentos estáticos ou lentos podem ter o mesmo efeito.
 
-**Preparo**
+**Staging**
 
 O plano de fundo e as propriedades usadas por um caractere também podem transmitir seu humor ou finalidade. O preparo também inclui o que o caractere Wears, efeitos de iluminação, ângulo de exibição e a presença de outros caracteres. Todos esses elementos contribuem para reforçar a personalidade, os objetivos e as ações de um caractere. O preparo eficaz envolve entender como direcionar o olho para onde você deseja se comunicar.
 
@@ -61,9 +61,9 @@ A criação de um caractere animado envolve mais do que criar uma série de imag
 
 A implementação bem-sucedida depende de quão bem você entende seu público-alvo. A imagem e a personalidade geral do seu caractere devem ser atraentes para o público-alvo; a apelação não requer foto-realm. A personalidade de um caractere pode ser transmitida — não importa quão simples é sua forma — usando gestos, postura e outros mannerisms. Uma atribuição comum do início do Animators é criar uma variedade de expressões para um farinha Sack ou um pequeno tapete. Caracteres com formas simples geralmente são mais eficazes do que aquelas complexas. Considere, por exemplo, que muitos caracteres populares têm apenas três dedos e um Thumb.
 
- 
+ 
 
- 
+ 
 
 
 

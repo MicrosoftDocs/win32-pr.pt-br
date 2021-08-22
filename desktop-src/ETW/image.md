@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 47280a81b882f91ad71c6cd91004d1c0885afddf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7db8595dd09790d875e502e479d14669a6df90b8de38b71fcf9ed58f2b68b53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070106"
 ---
 # <a name="image-class"></a>Classe Image
 
@@ -36,22 +36,22 @@ class Image : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **Image** não define nenhum membro.
+A **classe Image** não define nenhum membro.
 
 ## <a name="remarks"></a>Comentários
 
-Para habilitar eventos de imagem em uma sessão de log de kernel NT, especifique o sinalizador de carregamento de imagem do sinalizador de rastreamento de eventos no membro **EnableFlags** da estrutura [](/windows/win32/api/evntrace/nf-evntrace-starttracea) de [**Propriedades de \_ rastreamento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) ao chamar a função StartTrace. **\_ \_ \_ \_**
+Para habilitar eventos de imagem em uma sessão de registro em log do Kernel NT, especifique o sinalizador **EVENT \_ TRACE IMAGE \_ \_ \_ LOAD** no membro **EnableFlags** da estrutura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) ao chamar a [**função StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea)
 
-Os consumidores de rastreamento de eventos podem implementar processamento especial para eventos de carregamento de imagem chamando a função [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e especificando [**ImageLoadGuid**](nt-kernel-logger-constants.md) como o parâmetro *pGuid* . Use os seguintes tipos de evento para identificar eventos de carga de imagem ao consumir eventos.
+Os consumidores de rastreamento de eventos podem implementar o processamento especial para eventos de carregamento de imagem chamando a função [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e especificando [**ImageLoadGuid**](nt-kernel-logger-constants.md) como o *parâmetro pGuid.* Use os seguintes tipos de evento para identificar eventos de carregamento de imagem ao consumir eventos.
 
 
 
 | Tipo de evento                                                          | Descrição                                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Evento \_ de \_ \_ Carga de tipo de rastreamento**(o valor do tipo de evento é 10)<br/>     | Evento de carregamento de imagem. Gerado quando um arquivo DLL ou executável é carregado. O provedor gera apenas um evento pela primeira vez que uma determinada DLL é carregada. A classe MOF de [**\_ carregamento de imagem**](image-load.md) define os dados do evento para esse evento.      |
-| **Evento \_ de Tipo de rastreamento \_ \_ end**(o valor do tipo de evento é 2)<br/>       | Evento de descarregamento de imagem. Gerado quando um arquivo DLL ou executável é descarregado. O provedor gera apenas um evento para a última vez em que uma determinada DLL é descarregada. A classe MOF de [**\_ carregamento de imagem**](image-load.md) define os dados do evento para esse evento. |
-| **Evento \_ de Tipo de rastreamento \_ \_ DC \_ Iniciar**(o valor do tipo de evento é 3)<br/> | Evento de início de coleta de dados. Enumera todas as imagens carregadas no início do rastreamento. A classe MOF de [**\_ carregamento de imagem**](image-load.md) define os dados do evento para esse evento.                                                                  |
-| **Evento \_ de Tipo de rastreamento \_ \_ DC \_ end**(o valor do tipo de evento é 4)<br/>   | Evento de término da coleta de dados. Enumera todas as imagens carregadas no final do rastreamento. A classe MOF de [**\_ carregamento de imagem**](image-load.md) define os dados do evento para esse evento.                                                                          |
+| **EVENTO \_ TRACE \_ TYPE \_ LOAD**(o valor do tipo de evento é 10)<br/>     | Evento de carregamento de imagem. Gerado quando uma DLL ou arquivo executável é carregado. O provedor gera apenas um evento pela primeira vez em que uma determinada DLL é carregada. A [**classe MOF \_ de**](image-load.md) Carregamento de Imagem define os dados de evento para esse evento.      |
+| **EVENTO \_ TRACE \_ TYPE \_ END**(o valor do tipo de evento é 2)<br/>       | Evento de descarregamento de imagem. Gerado quando uma DLL ou arquivo executável é descarregado. O provedor gera apenas um evento para a última vez que uma determinada DLL é descarregada. A [**classe MOF \_ de**](image-load.md) Carregamento de Imagem define os dados de evento para esse evento. |
+| **EVENTO \_ TRACE \_ TYPE \_ DC \_ START**(o valor do tipo de evento é 3)<br/> | Evento de início da coleta de dados. Enumera todas as imagens carregadas no início do rastreamento. A [**classe MOF \_ de**](image-load.md) Carregamento de Imagem define os dados de evento para esse evento.                                                                  |
+| **EVENTO \_ TRACE \_ TYPE \_ DC \_ END**(o valor do tipo de evento é 4)<br/>   | Evento final da coleta de dados. Enumera todas as imagens carregadas no final do rastreamento. A [**classe MOF \_ de**](image-load.md) Carregamento de Imagem define os dados de evento para esse evento.                                                                          |
 
 
 
@@ -63,8 +63,8 @@ Os consumidores de rastreamento de eventos podem implementar processamento espec
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -72,16 +72,16 @@ Os consumidores de rastreamento de eventos podem implementar processamento espec
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**Carregamento de imagem \_**](image-load.md)
+[**Carregamento de \_ imagem**](image-load.md)
 </dt> <dt>
 
-[**V0 de imagem \_**](image-v0.md)
+[**Imagem \_ V0**](image-v0.md)
 </dt> <dt>
 
-[**Imagem \_ v1**](image-v1.md)
+[**Imagem \_ V1**](image-v1.md)
 </dt> </dl>
 
  

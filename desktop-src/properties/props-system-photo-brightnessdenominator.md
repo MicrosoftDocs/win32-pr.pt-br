@@ -4,12 +4,12 @@ ms.assetid: 20b70981-2437-4f7d-b1b7-ec0e68b8377e
 title: System. Photo. BrightnessDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 984408d272f1ff7a48a11d4863d2331226263831
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5a054035072b3a90547551bf47952c077bb25900431c165183e260fdf800392
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970165"
 ---
 # <a name="systemphotobrightnessdenominator"></a>System. Photo. BrightnessDenominator
 

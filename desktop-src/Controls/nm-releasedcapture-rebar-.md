@@ -3,7 +3,7 @@ title: Código de notificação do NM_RELEASEDCAPTURE (rebar) (commctrl. h)
 description: Notifica uma janela pai do controle rebar que o controle está liberando a captura do mouse. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 1196260f-b9ba-4a9e-80a7-e126196c3beb
 keywords:
-- Controles do Windows de código de notificação de NM_RELEASEDCAPTURE (rebar)
+- Windows controles de código de notificação NM_RELEASEDCAPTURE (rebar)
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2f5367a0a5d5fac0948493ef70e4be1140013c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0601a8daa581b9f3dea477c849d668e222308bdcb991fe4c107470c341ff5661
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018774"
 ---
 # <a name="nm_releasedcapture-rebar-notification-code"></a>\_Código de notificação do RELEASEDCAPTURE nm (rebar)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O controle ignora o valor de retorno deste código de notificação.
 
@@ -55,9 +55,9 @@ O controle ignora o valor de retorno deste código de notificação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

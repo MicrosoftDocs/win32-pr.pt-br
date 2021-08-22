@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RETRIEVECOLUMN. cbActual'
-title: Propriedade JET_RETRIEVECOLUMN. cbActual
+description: 'Saiba mais sobre: JET_RETRIEVECOLUMN.cbActual'
+title: JET_RETRIEVECOLUMN.cbActual
 TOCTitle: 'cbActual property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETRIEVECOLUMN.cbActual
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retrievecolumn.cbactual(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5dc5528a4e1228ec9bb4a09c34cb6581875ad34b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec164a6dba374ae03d00cc336234c47baa0b2ff5621eb21732ad5a96831a7182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038694"
 ---
-# <a name="jet_retrievecolumncbactual-property"></a>Propriedade JET_RETRIEVECOLUMN. cbActual
+# <a name="jet_retrievecolumncbactual-property"></a>JET_RETRIEVECOLUMN.cbActual
 
 Obtém o tamanho, em bytes, dos dados recuperados por uma operação de recuperação de coluna.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public int cbActual { get; private set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RETRIEVECOLUMN](./jet-retrievecolumn-class.md)
+[JET_RETRIEVECOLUMN classe](./jet-retrievecolumn-class.md)
 
-[Membros do JET_RETRIEVECOLUMN](./jet-retrievecolumn-members.md)
+[JET_RETRIEVECOLUMN membros](./jet-retrievecolumn-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

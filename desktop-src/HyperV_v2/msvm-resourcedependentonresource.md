@@ -1,7 +1,7 @@
 ---
-description: Estabelece que uma \_ instância ResourceAllocationSettingData do CIM que representa uma alocação de recursos depende de outra alocação de recursos.
+description: Estabelece que uma instância de \_ ResourceAllocationSettingData do CIM que representa uma alocação de recursos depende de outra alocação de recursos.
 ms.assetid: 567ee36a-d47b-444d-8d2f-425873f95bef
-title: Classe Msvm_ResourceDependentOnResource
+title: Msvm_ResourceDependentOnResource classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 29cf3b607449c6a9145568e3ee858248af3c4248
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87926141a2e14eadeee1881445d522deb83f945b9971abce8a07da8e9d51c344
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068456"
 ---
-# <a name="msvm_resourcedependentonresource-class"></a>\_Classe Msvm ResourceDependentOnResource
+# <a name="msvm_resourcedependentonresource-class"></a>Classe Msvm \_ ResourceDependentOnResource
 
-Estabelece que uma instância [**\_ ResourceAllocationSettingData do CIM**](cim-resourceallocationsettingdata.md) que representa uma alocação de recursos depende de outra alocação de recursos.
+Estabelece que uma instância [**de \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) do CIM que representa uma alocação de recursos depende de outra alocação de recursos.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -41,45 +41,45 @@ class Msvm_ResourceDependentOnResource : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ ResourceDependentOnResource** tem estes tipos de membros:
+A **classe Msvm \_ ResourceDependentOnResource** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ ResourceDependentOnResource** tem essas propriedades.
+A **classe Msvm \_ ResourceDependentOnResource** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ResourceAllocationSettingData**
+Tipo de dados: **Cim \_ ResourceAllocationSettingData**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecessor")
 </dt> </dl>
 
-Um [**\_ ResourceAllocationSettingData CIM**](cim-resourceallocationsettingdata.md) que representa o recurso independente nessa associação.
+Um [**Recurso \_ CIMAllocationSettingData**](cim-resourceallocationsettingdata.md) que representa o recurso independente nessa associação.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ResourceAllocationSettingData**
+Tipo de dados: **Cim \_ ResourceAllocationSettingData**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ ResourceAllocationSettingData CIM**](cim-resourceallocationsettingdata.md) que representa o recurso que depende do antecessor.
+Um [**Recurso \_ CIMAllocationSettingData**](cim-resourceallocationsettingdata.md) que representa o recurso que depende do Antecessor.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Um [**\_ ResourceAllocationSettingData CIM**](cim-resourceallocationsettingdata.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Um [**\_ ResourceAllocationSettingData CIM**](cim-resourceallocationsettingdata.
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  
