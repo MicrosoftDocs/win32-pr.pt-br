@@ -1,6 +1,6 @@
 ---
-title: Configurando a decodificação de áudio (SDK do Windows Media Format 11)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Configurando a decodificação de áudio (SDK do Windows Media Format 11)
+title: Configurando a decodificação de áudio (Windows formato de mídia 11 SDK)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Configurando a decodificação de áudio (Windows formato de mídia 11 SDK)
 ms.assetid: 5c4c2a34-c617-42ed-8028-e7266cbc11dc
 keywords:
 - Configurando o formato de mídia do Windows de decodificação de áudio
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b7b056fad26cd12f641f54f98990174c5731900
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c5a5ec3b8ae0f8b93a07f4b4397f437952d4b907959eb10decaf369ad901c5bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104370870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548035"
 ---
-# <a name="configuring-audio-decoding-windows-media-format-11-sdk"></a>Configurando a decodificação de áudio (SDK do Windows Media Format 11)
+# <a name="configuring-audio-decoding-windows-media-format-11-sdk"></a>Configurando a decodificação de áudio (Windows formato de mídia 11 SDK)
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

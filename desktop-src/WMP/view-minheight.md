@@ -1,9 +1,9 @@
 ---
-title: Exibir. minHeight
-description: O atributo minHeight especifica ou recupera a altura mínima em pixels da exibição ao redimensionar.
+title: VIEW.minHeight
+description: O atributo minHeight especifica ou recupera a altura mínima em pixels do VIEW ao reizing.
 ms.assetid: e9a29642-e09d-40f8-9c2b-86be9f509089
 keywords:
-- Exibir. minHeight Windows Media Player
+- VIEW.minHeight Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 580c263a7def0d98a56190e5e80abc8e6bcb864a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f326ae98cc8bd2970f05096ea167705270e12aabc93b91c7f517adca14ccb14b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119375156"
 ---
-# <a name="viewminheight"></a>Exibir. minHeight
+# <a name="viewminheight"></a>VIEW.minHeight
 
-O atributo **MinHeight** especifica ou recupera a altura mínima em pixels da **exibição** ao redimensionar.
+O **atributo minHeight** especifica ou recupera a altura mínima em pixels do **VIEW** ao reizing.
 
 ``` syntax
         elementID.minHeight
@@ -29,7 +29,7 @@ O atributo **MinHeight** especifica ou recupera a altura mínima em pixels da **
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**) com um valor igual ou maior que zero. Ele tem um valor padrão de zero, o que significa que não há nenhuma restrição na altura mínima da **exibição**.
+Esse atributo é um  número de leitura/gravação (**longo**) com um valor de zero ou maior. Ele tem um valor padrão de zero, o que significa que não há nenhuma restrição na altura mínima da **VIEW.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um **número** de leitura/gravação (**longo**) com um valor i
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -48,7 +48,7 @@ Esse atributo é um **número** de leitura/gravação (**longo**) com um valor i
 [**Elemento VIEW**](view-element.md)
 </dt> <dt>
 
-[**Exibir. maxHeight**](view-maxheight.md)
+[**VIEW.maxHeight**](view-maxheight.md)
 </dt> </dl>
 
  

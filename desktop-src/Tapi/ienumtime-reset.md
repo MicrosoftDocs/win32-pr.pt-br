@@ -4,16 +4,16 @@ ms.assetid: a9131da1-051d-493c-939d-07801fda2d49
 title: 'Método IEnumTime:: Reset'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9615fbc07edfb93c2377a7455d94b5fcd8ccd698
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 210f99d6997d91c9e2b3d68649f4472747923f6706f5f66fc27550f1cea92b52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519196"
 ---
 # <a name="ienumtimereset-method"></a>Método IEnumTime:: Reset
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **Reset** é redefinido para o início da sequência de enumeração.
 
@@ -27,7 +27,7 @@ HRESULT Reset();
 ## <a name="parameters"></a>Parâmetros
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 Esse método pode retornar um desses valores.
 
 | Valor | Significado                                                       |

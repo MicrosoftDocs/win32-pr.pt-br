@@ -3,7 +3,7 @@ title: Código de notificação CBN_SELENDCANCEL (WinUser. h)
 description: Enviado quando o usuário seleciona um item, mas seleciona outro controle ou fecha a caixa de diálogo. Indica que a seleção inicial do usuário deve ser ignorada. A janela pai da caixa de combinação recebe esse código de notificação por meio da mensagem de comando do WM \_ .
 ms.assetid: ac8d6d9f-4455-42d6-b0f1-5aaa55b8ee42
 keywords:
-- CBN_SELENDCANCEL de código de notificação controles do Windows
+- CBN_SELENDCANCEL código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da5b588fbd55af9dfa66a03c7912d4918821168b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 869168bfb970df9afc6399e6b1ec40e02b9ccdeaa2f2fef93fcbd86c16e9c6d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314396"
 ---
 # <a name="cbn_selendcancel-notification-code"></a>Código de notificação do CBN \_ SELENDCANCEL
 
@@ -63,9 +63,9 @@ Em uma caixa de combinação com o estilo [**\_ simples do CBS**](combo-box-styl
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: função gluNurbsCurve (Glu. h)
-description: A função gluNurbsCurve define a forma de uma curva de B-spline racional não uniforme (NURBS).
+title: Função gluNheisCurve (Glu.h)
+description: A função gluN shapesCurve define a forma de uma curva N LTDS (Racional B-Spline) não uniforme.
 ms.assetid: d03064a5-26f5-487f-877f-3748646bcb2f
 keywords:
-- função gluNurbsCurve OpenGL
+- Função gluNagisCurve OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c38e3d5fe35e994afa4b5d8b91c4244573132c5b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d5973ce3cb4d1ac05ea353fd78359f6b3b1bc9a3a0ab3180807b0834cc4bb20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119489036"
 ---
-# <a name="glunurbscurve-function"></a>função gluNurbsCurve
+# <a name="glunurbscurve-function"></a>Função gluNagisCurve
 
-A função **gluNurbsCurve** define a forma de uma curva de B-spline racional não uniforme ([NURBS](using-nurbs-curves-and-surfaces.md)).
+A **função gluN shapesCurve** define a forma de uma curva [N LTDS](using-nurbs-curves-and-surfaces.md)(Não Uniforme Racional B-Spline).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,25 +49,25 @@ void WINAPI gluNurbsCurve(
 *nobj* 
 </dt> <dd>
 
-O objeto NURBS (criado com [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+O objeto N LTDA (criado com [**gluNewNheisRenderer**](glunewnurbsrenderer.md)).
 
 </dd> <dt>
 
 *nknots* 
 </dt> <dd>
 
-O número de nós no *nó*. O parâmetro *nknots* é igual ao número de pontos de controle mais o pedido.
+O número de insomos *no meio de*. O *parâmetro nknots* é igual ao número de pontos de controle mais a ordem.
 
 </dd> <dt>
 
-*crescente* 
+*Nó* 
 </dt> <dd>
 
-Uma matriz de valores de nó *nknots* nondecreasing.
+Uma matriz de *valores nknots* nãondecreasing de aninhamento.
 
 </dd> <dt>
 
-*Stride* 
+*Passo* 
 </dt> <dd>
 
 O deslocamento (como um número de valores de ponto flutuante de precisão simples) entre pontos de controle de curva sucessivos.
@@ -84,14 +84,14 @@ Um ponteiro para uma matriz de pontos de controle. As coordenadas devem concorda
 *order* 
 </dt> <dd>
 
-A ordem da curva NURBS. O parâmetro *Order* é igual a grau + 1; Portanto, uma curva cúbica tem uma ordem de 4.
+A ordem da curva N LTDA. O *parâmetro order* é igual a degree + 1; portanto, uma curva cúbica tem uma ordem de 4.
 
 </dd> <dt>
 
 *tipo* 
 </dt> <dd>
 
-O tipo da curva. Se essa curva for definida em um par [**gluBeginCurve**](glubegincurve.md) / [**gluEndCurve**](gluendcurve.md) , o tipo poderá ser qualquer um dos tipos de avaliadores unidimensionais válidos (como GL \_ MAP1 \_ Vertex \_ 3 ou GL \_ MAP1 \_ Color \_ 4). Entre um par [**gluBeginTrim**](glubegintrim.md) / [**gluEndTrim**](gluendtrim.md) , os únicos tipos válidos são Glu \_ MAP1 \_ Trim \_ 2 e Glu \_ MAP1 \_ Trim \_ 3.
+O tipo da curva. Se essa curva for definida dentro de um par [**gluBeginCurve**](glubegincurve.md)gluEndCurve, o tipo poderá ser qualquer um dos tipos de avaliador unidimensionais válidos / [](gluendcurve.md) (como GL \_ MAP1 \_ VERTEX 3 ou \_ GL \_ MAP1 COLOR \_ \_ 4). Entre um [**par gluBeginTrim**](glubegintrim.md)gluEndTrim, os únicos tipos válidos são / [](gluendtrim.md) GLU \_ MAP1 TRIM \_ \_ 2 e GLU \_ MAP1 TRIM \_ \_ 3.
 
 </dd> </dl>
 
@@ -101,13 +101,13 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando **gluNurbsCurve** aparece entre um  / par de **gluEndCurve** gluBeginCurve, ele descreve uma curva a ser renderizada. Você associa as coordenadas posicionais, de textura e de cores, apresentando cada uma delas como um **gluNurbsCurve** separado entre um par **gluBeginCurve** / **gluEndCurve** . Não faça mais de uma chamada para **gluNurbsCurve** para cor, posição e dados de textura em um único par **gluBeginCurve** / **gluEndCurve** . Faça exatamente uma chamada para descrever a posição da curva (um *tipo* de GL \_ MAP1 \_ Vertex \_ 3 ou GL \_ MAP1 \_ Vertex \_ 4).
+Quando **gluNinasCurve** aparece entre um **par gluBeginCurve** / **gluEndCurve,** ele descreve uma curva a ser renderizada. Você associa coordenadas posicionais, de textura e de cor apresentando cada uma delas como um **gluN gluCurve** separado entre um **par gluBeginCurve** / **gluEndCurve.** Não faça mais de uma chamada para **gluNviesCurve para dados** de cor, posição e textura em um único par **gluBeginCurve** / **gluEndCurve.** Faça exatamente uma chamada para descrever *a* posição da curva (um tipo de GL \_ MAP1 \_ VERTEX 3 ou \_ GL \_ MAP1 \_ VERTEX \_ 4).
 
-Quando **gluNurbsCurve** aparece entre um [](glubegintrim.md) / par de [**gluEndTrim**](gluendtrim.md) gluBeginTrim, ele descreve uma curva de corte em uma superfície NURBS. Se *Type* for Glu \_ MAP1 \_ Trim \_ 2, ele descreve uma curva no espaço de parâmetro bidimensional (*u* e *v*). Se for GLU \_ MAP1 \_ Trim \_ 3, ele descreve uma curva no espaço de parâmetro bidimensional homogêneo (*u*, *v* e *w*). Para obter mais discussões sobre corte de curvas, consulte **gluBeginTrim**.
+Quando **gluNinasCurve** aparece entre um par [**gluBeginTrim**](glubegintrim.md) / [**gluEndTrim,**](gluendtrim.md) ele descreve uma curva de corte em uma superfície NALTERS. Se *o* tipo for GLU MAP1 TRIM 2, ele descreverá uma curva no espaço de parâmetro \_ \_ \_ bidimensional (*u* e *v).* Se for GLU MAP1 TRIM 3, ele descreverá uma curva no espaço de parâmetro homogêneo \_ \_ \_ bidimensional (*u,* *v* e *w).* Para obter mais discussão sobre curvas de corte, consulte **gluBeginTrim**.
 
 ## <a name="examples"></a>Exemplos
 
-As funções a seguir renderizam uma curva NURBS texturizada com Normals:
+As funções a seguir renderizarão uma curva NALTERS texturizada com normais:
 
 ``` syntax
 gluBeginCurve(nobj); 
@@ -125,8 +125,8 @@ gluEndCurve(nobj);
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>GLU. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -147,7 +147,7 @@ gluEndCurve(nobj);
 [**gluEndTrim**](gluendtrim.md)
 </dt> <dt>
 
-[**gluNewNurbsRenderer**](glunewnurbsrenderer.md)
+[**gluNewNagisRenderer**](glunewnurbsrenderer.md)
 </dt> <dt>
 
 [**gluPwlCurve**](glupwlcurve.md)

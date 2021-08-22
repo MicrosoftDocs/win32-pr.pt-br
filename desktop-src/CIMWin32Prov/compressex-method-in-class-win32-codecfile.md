@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4ab2915a4f550c799fed8a58e5573e8264b92f1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ce8e659aba52bc04173aab450be2c6cd03e47ccbf2b9f3476ce55ddbe315ab90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547526"
 ---
 # <a name="compressex-method-of-the-win32_codecfile-class"></a>Método CompressEx da classe de um codec do Win32 \_
 
@@ -65,7 +65,7 @@ Se **for true**, a alteração de propriedade será aplicada recursivamente aos 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o arquivo tiver sido compactado com êxito e qualquer outro número para indicar um erro.
 
@@ -116,7 +116,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 

@@ -1,26 +1,26 @@
 ---
 description: O aplicativo de exemplo descrito neste tópico demonstra a representação de cadeias de caracteres usando a normalização Unicode.
 ms.assetid: f1f789f9-f12b-465c-8c84-33a8efa6fbc5
-title: 'NLS: exemplo de normalização Unicode'
+title: 'NLS: Exemplo de normalização Unicode'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92e825e81b9d42bc3c5066ec5cdfd72e1812cbd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 895a41129bcdad14a89b34b5adce9cf5337ba4a51e108d0f62ee74b6e88a9003
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147109"
 ---
-# <a name="nls-unicode-normalization-sample"></a>NLS: exemplo de normalização Unicode
+# <a name="nls-unicode-normalization-sample"></a>NLS: Exemplo de normalização Unicode
 
-O aplicativo de exemplo descrito neste tópico demonstra a representação de cadeias de caracteres usando a [normalização Unicode](using-unicode-normalization-to-represent-strings.md).
+O aplicativo de exemplo descrito neste tópico demonstra a representação de cadeias de caracteres usando [a normalização Unicode](using-unicode-normalization-to-represent-strings.md).
 
-O aplicativo de exemplo chama todos os quatro formulários de normalização Unicode com a mesma cadeia de caracteres de entrada. Uma chamada é feita com Unicode inválido para demonstrar como o índice do código de caractere inválido funciona. Por fim, o aplicativo passa uma cadeia de caracteres que se expande para ser anormalmente longa, exigindo várias chamadas de normalização de cadeia de caracteres para obter um tamanho de buffer apropriado.
+O aplicativo de exemplo chama todos os quatro formulários de normalização Unicode com a mesma cadeia de caracteres de entrada. Em seguida, uma chamada é feita com Unicode inválido para demonstrar como o índice de código de caractere inválido funciona. Por fim, o aplicativo passa uma cadeia de caracteres que se expande para ser anormalmente longa, exigindo várias chamadas de normalização de cadeia de caracteres para para obter um tamanho de buffer apropriado.
 
 Este exemplo demonstra as seguintes funções de API NLS:
 
 -   [**IsNormalizedString**](/windows/desktop/api/Winnls/nf-winnls-isnormalizedstring)
--   [**Normalizestring**](/windows/desktop/api/Winnls/nf-winnls-normalizestring)
+-   [**NormalizeString**](/windows/desktop/api/Winnls/nf-winnls-normalizestring)
 
 
 ```C++

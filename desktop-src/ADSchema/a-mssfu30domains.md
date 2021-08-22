@@ -1,6 +1,6 @@
 ---
 title: atributo msSFU-30-Domains
-description: Contém a lista de domínios NIS do UNIX que foram migrados para o mesmo domínio do AD NIS.
+description: contém a lista de UNIX domínios nis que foram migrados para o mesmo domínio do AD NIS.
 ms.assetid: 7f9f3994-a46d-49d4-8d99-35762be7bc33
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d344e02f956a1476427c33792b29b016b16a6558
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a117db51b90a5a403077aa4b0bd3efd6622891910cbf9ba1d7f294edff49a456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581976"
 ---
 # <a name="mssfu-30-domains-attribute"></a>atributo msSFU-30-Domains
 
-Contém a lista de domínios NIS do UNIX que foram migrados para o mesmo domínio do AD NIS.
+contém a lista de UNIX domínios nis que foram migrados para o mesmo domínio do AD NIS.
 
 
 
@@ -57,7 +57,7 @@ Contém a lista de domínios NIS do UNIX que foram migrados para o mesmo domíni
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
 | É de valor único       | Falso                                                          |
-| É indexado             | True                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
@@ -78,7 +78,7 @@ Contém a lista de domínios NIS do UNIX que foram migrados para o mesmo domíni
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
 | É de valor único       | Falso                                                          |
-| É indexado             | True                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
@@ -99,7 +99,7 @@ Contém a lista de domínios NIS do UNIX que foram migrados para o mesmo domíni
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
 | É de valor único       | Falso                                                          |
-| É indexado             | True                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
@@ -119,15 +119,15 @@ Contém a lista de domínios NIS do UNIX que foram migrados para o mesmo domíni
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | Falso                                                          |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Falso                                                          |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 

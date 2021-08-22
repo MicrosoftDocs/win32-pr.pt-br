@@ -4,17 +4,17 @@ description: Esta seção descreve as práticas recomendadas para o uso do Micro
 ms.assetid: 49F6E356-90C7-423A-A31A-AEE41F882D3B
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0658a9693567dfd88e9a986893048fa1d0fa1e5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 73606d34fff20c6d48a748d713ee292b36fd791ffde5cddb255ad9c60982cf1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105807154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119484726"
 ---
 # <a name="how-to-use-directcomposition"></a>Como usar o DirectComposition
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Esta seção descreve as práticas recomendadas para usar a API do Microsoft DirectComposition e demonstra como usar a API para realizar várias tarefas comuns.
 

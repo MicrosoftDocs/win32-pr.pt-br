@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b6512dc8aa67b3f4d128be3cd2dcd2b622ba2035
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e84a0f76f360340bb9a4ddffa6ecf5ad72bf8de8d4510b4129e3c6ab618b516a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119406222"
 ---
 # <a name="span-idvspixengineidebugshaderrequest_begindebugshader_ipixerrorcallback_ptr_eventid_dword_dword_point2d_pipelinestages_pixelhistoryoperation_ptr_dword_ptrspanidebugshaderrequestbegindebugshader-method"></a><span id="vspixengine.idebugshaderrequest_begindebugshader_ipixerrorcallback_ptr_eventid_dword_dword_point2d_pipelinestages_pixelhistoryoperation_ptr_dword_ptr"></span>Método IDebugShaderRequest:: BeginDebugShader
 
@@ -70,7 +70,7 @@ O endereço dos resultados do histórico de pixel usado para localizar o pixel a
 *pDevice*   
 O endereço a ser passado para o mecanismo de depuração para comunicação com esta sessão de depuração (ReadProcessMemory do mecanismo de depuração neste endereço).
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

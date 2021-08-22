@@ -4,12 +4,12 @@ description: Esta seção contém informações sobre como usar vinculação e i
 ms.assetid: bfcecbf5-cc35-47b8-a713-7e5fd03f60cc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7868bd62044c87765a25f6033499460ed044e57
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 9d825a9876005cadb20e4fc7717f766582ab12224f4f86995319357875d24230
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104084413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119311676"
 ---
 # <a name="how-to-use-ole-in-rich-edit-controls"></a>Como usar OLE em controles de edição Rich
 
@@ -19,12 +19,12 @@ Esta seção contém informações sobre como usar vinculação e incorporação
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -36,7 +36,7 @@ Outra interface, [**IRichEditOleCallback**](/windows/desktop/api/Richole/nn-rich
 
 ### <a name="insert-an-object-into-a-rich-edit-control"></a>Inserir um objeto em um controle de edição rico
 
-O exemplo de código a seguir insere um objeto File em um controle rich edit. Se um programa estiver associado ao tipo de arquivo no computador do usuário (por exemplo, o Microsoft Excel para um arquivo. xls), o conteúdo do arquivo será exibido no controle; caso contrário, um ícone será exibido.
+O exemplo de código a seguir insere um objeto File em um controle rich edit. se um programa estiver associado ao tipo de arquivo na máquina do usuário (por exemplo, Microsoft Excel para um arquivo de .xls), o conteúdo do arquivo será exibido no controle; caso contrário, um ícone será exibido.
 
 1.  Obtenha a interface [**IRichEditOle**](/windows/desktop/api/Richole/nn-richole-iricheditole) .
 
@@ -333,12 +333,12 @@ BOOL InsertObject(HWND hRichEdit, LPCTSTR pszFileName)
 [Usando controles de edição avançados](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

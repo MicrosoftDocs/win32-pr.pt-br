@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CCM_GETUNICODEFORMAT (commctrl. h)
-description: Obtém o sinalizador de formato de caractere Unicode para o controle.
+title: CCM_GETUNICODEFORMAT mensagem (Commctrl.h)
+description: Obtém o sinalizador de formato de caractere Unicode para o controle .
 ms.assetid: 8a23cd1c-549e-4d48-891a-b37dbf5c524b
 keywords:
-- Controles de CCM_GETUNICODEFORMAT de mensagens do Windows
+- CCM_GETUNICODEFORMAT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 095d49ccc57faa05e86d12df130b12ce3d542bf6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa115ba341478990b46600bc76ee02e4ecf750d5a7ccde9f1110aa8856d30fa7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438276"
 ---
-# <a name="ccm_getunicodeformat-message"></a>CCM \_ GETUNICODEFORMAT mensagem
+# <a name="ccm_getunicodeformat-message"></a>Mensagem \_ GETUNICODEFORMAT do CCM
 
-Obtém o sinalizador de formato de caractere Unicode para o controle.
+Obtém o sinalizador de formato de caractere Unicode para o controle .
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Obtém o sinalizador de formato de caractere Unicode para o controle.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o sinalizador de formato Unicode para o controle. Se esse valor for diferente de zero, o controle estará usando caracteres Unicode. Se esse valor for zero, o controle estará usando caracteres ANSI.
+Retorna o sinalizador de formato Unicode para o controle . Se esse valor for diferentes de zero, o controle está usando caracteres Unicode. Se esse valor for zero, o controle está usando caracteres ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o sinalizador de formato Unicode para o controle. Se esse valor for dife
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

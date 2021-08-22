@@ -1,7 +1,7 @@
 ---
 description: Especifica a relação de herança para um serviço.
 ms.assetid: e7f5314a-75e8-4f36-8e18-d614eda7a097
-title: Enumeração de WPD_SERVICE_INHERITANCE_TYPES (PortableDevice. h)
+title: WPD_SERVICE_INHERITANCE_TYPES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: ad9115bf7bb0912362455986e77d5792cceec3b7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a0e69986e7415a5a12eca7c450b0d7ff064c650d33c35997b9a166b01592c41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105790600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444796"
 ---
-# <a name="wpd_service_inheritance_types-enumeration"></a>\_Enumeração de \_ tipos de herança de serviço WPD \_
+# <a name="wpd_service_inheritance_types-enumeration"></a>Enumeração WPD \_ SERVICE \_ INHERITANCE \_ TYPES
 
-O tipo de enumeração de **\_ tipos de \_ herança \_ de serviço WPD** especifica a relação de herança para um serviço.
+O **tipo de enumeração WPD \_ SERVICE INHERITANCE \_ \_ TYPES** especifica a relação de herança para um serviço.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -39,7 +39,7 @@ typedef enum tagWPD_SERVICE_INHERITANCE_TYPES {
 
 <dl> <dt>
 
-<span id="WPD_SERVICE_INHERITANCE_IMPLEMENTATION"></span><span id="wpd_service_inheritance_implementation"></span>**\_implementação de \_ herança de serviço WPD \_**
+<span id="WPD_SERVICE_INHERITANCE_IMPLEMENTATION"></span><span id="wpd_service_inheritance_implementation"></span>**IMPLEMENTAÇÃO DE HERANÇA \_ \_ DE SERVIÇO WPD \_**
 </dt> <dd>
 
 O serviço herda implementando uma definição de serviço abstrata.
@@ -52,7 +52,7 @@ O serviço herda implementando uma definição de serviço abstrata.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ O serviço herda implementando uma definição de serviço abstrata.
 
 <dl> <dt>
 
-[**IPortableDeviceServiceCapabilities:: getherdservices**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getinheritedservices)
+[**IPortableDeviceServiceCapabilities::GetInheritedServices**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getinheritedservices)
 </dt> </dl>
 
  

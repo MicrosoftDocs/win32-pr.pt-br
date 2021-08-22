@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ IPType (v4)
+description: MBNProfileExt... \/ \/ IPType (v4)
 MS-HAID: WWAN\_profile\_v4.element\_IPType
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -7,26 +7,26 @@ MSHAttr:
 title: IPType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 918355cdfc90863539da5f29aff542654a95f5e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 736e6a72a04c662356b65c331471eea3ec3eb2a5e7b601d1b7ae2eaee12db3c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607376"
 ---
-# <a name="span-idwwan_profile_v4element_iptypespanmbnprofileextiptype-v4"></a><span id="WWAN_profile_v4.element_IPType"></span>MBNProfileExt \/ ... \/ IPType (v4)
+# <a name="span-idwwan_profile_v4element_iptypespanmbnprofileextiptype-v4"></a><span id="WWAN_profile_v4.element_IPType"></span>MBNProfileExt... \/ \/ IPType (v4)
 
 Especifica o tipo de IP a ser usado nessa conexão de dados.
 
-Esse elemento é novo no v4 do esquema. O elemento pode ter um dos valores a seguir.
+Esse elemento é novo na v4 do esquema. O elemento pode ter um dos valores a seguir.
 
 | Valor   | Significado                                       |
 |---------|-----------------------------------------------|
 | Padrão | O tipo de IP deve ser escolhido por camadas inferiores     |
 | IPv4    | Usar IPv4                                      |
 | IPv6    | Use IPv6                                      |
-| IPv4v6  | Use IPv4 e/ou IPv6, como disponível.           |
-| XLAT    | Usar o 464XLAT para encapsular IPv4 em redes IPv6 |
+| IPv4v6  | Use IPv4 e/ou IPv6, conforme disponível.           |
+| XLAT    | Usar 464XLAT para túnel IPv4 em redes IPv6 |
 
  
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce74c9ee0a9a1c75c50d96c90f1612b891eed282
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 433a886ac7094a28e7c936eb02dd55743bf1abe6a94b128fb98b42bb1bad8335
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105789508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490056"
 ---
 # <a name="gltexparameterfv-function"></a>função glTexParameterfv
 
@@ -116,7 +116,7 @@ Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**
 
 
 
-| Name                                                                                                  | Significado                                                                                                                                                                          |
+| Nome                                                                                                  | Significado                                                                                                                                                                          |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**GL \_ \_Enumeração INválida**</dt> </dl>     | *target* ou *pname* não era um dos valores definidos aceitos, ou quando *param* deveria ter um valor constante definido (com base no valor de *pname*) e não.<br/> |
 | <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/>                                            |
@@ -129,9 +129,9 @@ O mapeamento de textura é uma técnica que aplica uma imagem à superfície de 
 
 A função **glTexParameter** atribui o valor ou valores em params para o parâmetro Texture especificado como pname. O parâmetro de destino define a textura de destino, ou seja, GL \_ textura \_ 1D ou GL de \_ textura \_ 2D.
 
-Como mais elementos de textura são amostrados no processo de minificação, menos artefatos de alias serão aparentes. Embora as \_ \_ funções minificação lineares mais próximas e GL possam ser mais rápidas do que as outras quatro, elas amostram apenas um ou quatro elementos de textura para determinar o valor de textura do pixel que está sendo renderizado e podem produzir padrões de moire ou transições irregulares. O valor padrão do filtro GL de \_ textura \_ mínimo \_ é GL \_ \_ MIPMAP linear mais próximo \_ .
+Como mais elementos de textura são amostrados no processo de minificação, menos artefatos de alias serão aparentes. Embora as \_ \_ funções minificação lineares mais próximas e GL possam ser mais rápidas do que as outras quatro, elas amostram apenas um ou quatro elementos de textura para determinar o valor de textura do pixel que está sendo renderizado e podem produzir padrões de moire ou transições irregulares. O valor padrão de GL \_ TEXTURE MIN FILTER é GL \_ \_ \_ NEAREST \_ MIPMAP \_ LINEAR.
 
-Suponha que texturing esteja habilitado (chamando [**glEnable**](glenable.md) com o argumento GL \_ Texture \_ 1D ou GL \_ Texture \_ 2D) e \_ \_ o filtro GL min Texture \_ seja definido como uma das funções que exigem um mipmap. Se as dimensões das imagens de textura definidas no momento (com chamadas anteriores para [**glTexImage1D**](glteximage1d.md) ou [**glTexImage2D**](glteximage2d.md)) não seguirem a sequência correta para mipmaps, ou se houver menos imagens de textura definidas do que o necessário, ou o conjunto de imagens de textura tiver diferentes números de componentes de textura, será como se o mapeamento de textura estivesse desabilitado. A filtragem linear acessa os quatro elementos de textura mais próximos somente em texturas 2D. Em texturas 1D, a filtragem linear acessa os dois elementos de textura mais próximos. A função a seguir recupera informações relacionadas a **glTexParameterf**, **glTexParameteri**, **glTexParameterfv** e **glTexParameteriv**:
+Suponha que a texturing está habilitada (chamando [**glEnable**](glenable.md) com o argumento GL TEXTURE 1D ou GL TEXTURE 2D) e GL TEXTURE MIN FILTER é definido como uma das funções que exigem \_ \_ um \_ \_ \_ \_ \_ mipmap. Se as dimensões das imagens de textura definidas atualmente (com chamadas anteriores para [**glTexImage1D**](glteximage1d.md) ou [**glTexImage2D)**](glteximage2d.md)não seguirem a sequência adequada para mipmaps ou houver menos imagens de textura definidas do que são necessárias ou se o conjunto de imagens de textura tiver números diferentes de componentes de textura, será como se o mapeamento de textura estivesse desabilitado. A filtragem linear acessa os quatro elementos de textura mais próximos somente em texturas 2D. Em texturas 1D, a filtragem linear acessa os dois elementos de textura mais próximos. A função a seguir recupera informações relacionadas a **glTexParameterf**, **glTexParameteri**, **glTexParameterfv** e **glTexParameteriv**:
 
 [**glGetTexParameter**](glgettexparameter.md)
 
@@ -143,8 +143,8 @@ Suponha que texturing esteja habilitado (chamando [**glEnable**](glenable.md) co
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

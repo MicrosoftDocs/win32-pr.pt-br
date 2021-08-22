@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CCM_SETWINDOWTHEME (commctrl. h)
+title: CCM_SETWINDOWTHEME mensagem (Commctrl.h)
 description: Define o estilo visual de um controle.
 ms.assetid: 0200fa11-847f-477c-92e0-790b4d1ca0ef
 keywords:
-- Controles de CCM_SETWINDOWTHEME de mensagens do Windows
+- CCM_SETWINDOWTHEME controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea8996273a0c9d03123ce58f5fbb0dfb099be94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4656290a861247dc474e46cb396314f762f0084f45ae60d32198aa7bb464f8d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320046"
 ---
-# <a name="ccm_setwindowtheme-message"></a>CCM \_ SETWINDOWTHEME mensagem
+# <a name="ccm_setwindowtheme-message"></a>Mensagem CCM \_ SETWINDOWTHEME
 
 Define o estilo visual de um controle.
 
@@ -39,14 +39,14 @@ Um ponteiro para uma cadeia de caracteres Unicode que contém o estilo visual de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

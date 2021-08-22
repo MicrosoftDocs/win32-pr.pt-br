@@ -1,6 +1,6 @@
 ---
-title: WTSLISTENERNAME (WtsApi32. h)
-description: Representa o nome de um ouvinte de Serviços de Área de Trabalho Remota em um servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+title: WTSLISTENERNAME (WtsApi32.h)
+description: Representa o nome de um Serviços de Área de Trabalho Remota ouvintes em um servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
 ms.assetid: 3C41F507-6A67-4244-860F-E89B0F9E33B0
 ms.tgt_platform: multiple
 keywords:
@@ -12,16 +12,16 @@ keywords:
 - PWTSLISTENERNAME
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a82576fc9f4490b133916852441c50dcf77e849d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce0df52229670cd090dd900dda3c2284437297bedc25c69f12c980b9cc40d92c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513836"
 ---
 # <a name="wtslistenername"></a>WTSLISTENERNAME
 
-Representa o nome de um ouvinte de Serviços de Área de Trabalho Remota em um servidor de Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+Representa o nome de um Serviços de Área de Trabalho Remota ouvintes em um servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
 
 
 ```C++
@@ -90,7 +90,7 @@ Um ponteiro para o nome do ouvinte.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>WtsApi32. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WtsApi32.h</dt> </dl> |
 
 
 

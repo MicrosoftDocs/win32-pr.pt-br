@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentDatabaseUnavailableException'
-title: Propriedades de EsentDatabaseUnavailableException
+description: 'Saiba mais sobre: Propriedades EsentDatabaseUnavailableException'
+title: Propriedades EsentDatabaseUnavailableException
 TOCTitle: EsentDatabaseUnavailableException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentDatabaseUnavailableException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabaseunavailableexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55101557
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bd7256221ec1701c5471b4925f3f42b9941354b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70fa4025751fdc60d322e6607d778a537825c3a9d316433e72ba33fed764e9ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119481766"
 ---
-# <a name="esentdatabaseunavailableexception-properties"></a>Propriedades de EsentDatabaseUnavailableException
+# <a name="esentdatabaseunavailableexception-properties"></a>Propriedades EsentDatabaseUnavailableException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentDatabaseUnavailableException](./esentdatabaseunavailableexception-class.md) expõe os membros a seguir.
+O [tipo EsentDatabaseUnavailableException](./esentdatabaseunavailableexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentDatabaseUnavailableException](./esentdatabaseunavailableexception-c
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentDatabaseUnavailableException](./esentdatabaseunavailableexception-c
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentDatabaseUnavailableException](./esentdatabaseunavailableexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

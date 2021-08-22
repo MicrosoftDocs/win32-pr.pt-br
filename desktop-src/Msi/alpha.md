@@ -4,19 +4,19 @@ ms.assetid: f242fd6f-ae73-4ea6-9650-f2661440f61f
 title: Propriedade Alpha
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a699f5d48d7cc21e51862630ebb8c246453cff69
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6827ede2e675253984626849f5e0321ef1f9c8179a1c4a380dcd1cca0866417
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315486"
 ---
 # <a name="alpha-property"></a>Propriedade Alpha
 
 A propriedade **Alpha** só será definida se estiver em execução em um processador Alpha. O instalador o define para o valor do nível numérico do processador.
 
 > [!Note]  
-> A plataforma Alpha não tem suporte pelo Windows Installer.
+> a plataforma Alpha não tem suporte pelo Windows Installer.
 
  
 
@@ -26,7 +26,7 @@ A propriedade **Alpha** só será definida se estiver em execução em um proces
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
 title: Authentication-Options atributo
-description: As opções de autenticação usadas no ADSI para ligar a objetos de serviços de diretório.
+description: As opções de autenticação usadas no ADSI para se vincular a objetos de serviços de diretório.
 ms.assetid: a6dc4591-d825-456a-8f77-78cb3c91af9f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Authentication-Options do atributo AD
-- Esquema de AD do atributo authenticationoptions
+- Authentication-Options atributo AD Schema
+- atributo authenticationOptions Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfa9c422dfe196ab002c02c361759461f43965d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 220438034793c4cae72ab730e8c9116edff69a0524c1dc135185da3ff8b6af73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443006"
 ---
 # <a name="authentication-options-attribute"></a>Authentication-Options atributo
 
-As opções de autenticação usadas no ADSI para ligar a objetos de serviços de diretório.
+As opções de autenticação usadas no ADSI para se vincular a objetos de serviços de diretório.
 
 
 
 | Entrada | Valor |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CN                | Authentication-Options                                                                                                                                                                                                                                                       |
-| LDAP-Display-Name | autenticaçãooptions                                                                                                                                                                                                                                                        |
-| Tamanho              | 4 bytes. Valores definidos em IADS. h: ADS \_ \_ autenticação segura 0x1, os ads \_ usam \_ criptografia 0x2, os ads \_ usam \_ SSL 0x2, \_ servidor AD ReadOnly \_ 0X4, anúncios \_ solicitam \_ credenciais 0x8, anúncios \_ sem \_ autenticação 0x10, ADS \_ Fast \_ BIND 0x20, ADS \_ usam \_ assinatura 0x40, os anúncios \_ usam \_ lacre 0x80 |
+| Ldap-Display-Name | authenticationOptions                                                                                                                                                                                                                                                        |
+| Tamanho              | 4 bytes. Valores definidos em IADS.h: ADS \_ SECURE \_ AUTHENTICATION 0x1, ADS USE ENCRYPTION \_ \_ 0x2, ADS USE \_ \_ SSL 0x2, ADS \_ READONLY \_ SERVER 0x4, ADS PROMPT \_ \_ CREDENTIALS 0x8, ADS \_ NO AUTHENTICATION \_ 0x10, ADS FAST BIND 0x20, \_ ADS \_ \_ \_ \_ \_ USE SIGNING 0X40, ADS USE 0X80 |
 | Privilégio de atualização  | \-                                                                                                                                                                                                                                                                           |
 | Frequência de atualização  | \-                                                                                                                                                                                                                                                                           |
 | Attribute-Id      | 1.2.840.113556.1.4.11                                                                                                                                                                                                                                                        |
-| System-ID-GUID    | bf967928-0de6-11d0-a285-00aa003049e2                                                                                                                                                                                                                                         |
-| Syntax            | [**Enumeração**](s-enumeration.md)                                                                                                                                                                                                                                         |
+| System-Id-Guid    | bf967928-0de6-11d0-a285-00aa003049e2                                                                                                                                                                                                                                         |
+| Sintaxe            | [**Enumeração**](s-enumeration.md)                                                                                                                                                                                                                                         |
 
 
 
@@ -58,10 +58,10 @@ As opções de autenticação usadas no ADSI para ligar a objetos de serviços d
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -79,10 +79,10 @@ As opções de autenticação usadas no ADSI para ligar a objetos de serviços d
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -100,10 +100,10 @@ As opções de autenticação usadas no ADSI para ligar a objetos de serviços d
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -121,10 +121,10 @@ As opções de autenticação usadas no ADSI para ligar a objetos de serviços d
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -142,10 +142,10 @@ As opções de autenticação usadas no ADSI para ligar a objetos de serviços d
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -163,10 +163,10 @@ As opções de autenticação usadas no ADSI para ligar a objetos de serviços d
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | True                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |

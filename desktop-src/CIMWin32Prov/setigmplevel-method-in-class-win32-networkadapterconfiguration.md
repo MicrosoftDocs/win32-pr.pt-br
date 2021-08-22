@@ -1,8 +1,8 @@
 ---
-description: O método estático da classe WMI SetIGMPLevel é usado para definir a extensão à qual o sistema dá suporte a multicast de IP e participa do protocolo de gerenciamento de grupo da Internet.
+description: O método estático da classe WMI SetIGMPLevel é usado para definir a extensão até a qual o sistema dá suporte à multicasting de IP e participa do Protocolo de Gerenciamento de Grupo da Internet.
 ms.assetid: 38877576-aa23-4841-b3ae-1a02bfdd70d8
 ms.tgt_platform: multiple
-title: Método SetIGMPLevel da classe Win32_NetworkAdapterConfiguration
+title: Método SetIGMPLevel da classe Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 97ead4df1d45b110c3d0a91976dc8eca6ffd72c7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 20ca9874447f4d606f7559dc60322f206c4726feb5cbe070b188bb04173427ea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439996"
 ---
-# <a name="setigmplevel-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIGMPLevel da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setigmplevel-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetIGMPLevel da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetIGMPLevel** é usado para definir a extensão à qual o sistema dá suporte a multicast de IP e participa do protocolo de gerenciamento de grupo da Internet.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetIGMPLevel** é usado para definir a extensão até a qual o sistema dá suporte à multicasting de IP e participa do Protocolo de Gerenciamento de Grupo da Internet.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,18 +42,18 @@ uint32 SetIGMPLevel(
 
 <dl> <dt>
 
-*IGMPLevel* \[ no\]
+*IGMPLevel* \[ Em\]
 </dt> <dd>
 
-Tipo de dados: **inteiro**
+Tipo de dados: **Inteiro**
 
-Define o nível no qual o sistema dá suporte a multicast IP e participa do protocolo de gerenciamento de grupo da Internet. No nível 0, o sistema não fornece suporte a multicast. No nível 1, o sistema só pode enviar pacotes multicast de IP. No nível 2, o sistema pode enviar pacotes multicast IP e participar totalmente do IGMP para receber pacotes multicast.
+Define o nível no qual o sistema dá suporte a multicast de IP e participa do Protocolo de Gerenciamento de Grupo da Internet. No nível 0, o sistema não oferece suporte a multicast. No nível 1, o sistema só pode enviar pacotes de multicast IP. No nível 2, o sistema pode enviar pacotes de multicast IP e participar totalmente do IGMP para receber pacotes multicast.
 
 <dt>
 
 <span id="No_Multicast"></span><span id="no_multicast"></span><span id="NO_MULTICAST"></span>
 
-**Sem multicast** (0)
+**Sem Multicast** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -67,14 +67,14 @@ Define o nível no qual o sistema dá suporte a multicast IP e participa do prot
 
 <span id="IP___IGMP_multicast"></span><span id="ip___igmp_multicast"></span><span id="IP___IGMP_MULTICAST"></span>
 
-**IP & multicast IGMP** (2)
+**Multicast IGMP & IP** (2)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -83,7 +83,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -159,7 +159,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -168,12 +168,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -213,12 +213,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -258,21 +258,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -281,7 +281,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -344,7 +344,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 

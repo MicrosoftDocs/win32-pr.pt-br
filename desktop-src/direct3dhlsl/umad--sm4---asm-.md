@@ -4,12 +4,12 @@ description: Número de multiplicação e adição de inteiro não assinado.
 ms.assetid: C0BE31CA-E01D-42C0-A660-E63727CE344F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce52925622cb2f6f7cf53dec0e3f6f65d3fdcb58
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 0b6a6c649a61c78eebee249b9fec5c032a07a8a0761a3d23d6e45da573be122c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119405986"
 ---
 # <a name="umad-sm4---asm"></a>Umad (sm4-ASM)
 

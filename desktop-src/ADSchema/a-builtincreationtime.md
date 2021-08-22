@@ -1,6 +1,6 @@
 ---
 title: Atributo Builtin-Creation-time
-description: O atributo Builtin-Creation-time é usado para dar suporte à replicação em domínios do Windows NT 4,0.
+description: o atributo Builtin-Creation-Time é usado para dar suporte à replicação para Windows NT domínios 4,0.
 ms.assetid: b3da9913-8c7b-481b-ae47-6b124544f1e2
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54d5b6d37ee0242999afd47415cb067abe26e7fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f49db533ad85dc9531a1274687ebe70e728dba6f5c27e952a443344be3d02f12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442736"
 ---
 # <a name="builtin-creation-time-attribute"></a>Atributo Builtin-Creation-time
 
-O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação em domínios do Windows NT 4,0.
+o atributo **Builtin-Creation-Time** é usado para dar suporte à replicação para Windows NT domínios 4,0.
 
 
 
@@ -58,7 +58,7 @@ O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação e
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação e
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação e
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,7 +121,7 @@ O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação e
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação e
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O atributo **BuiltIn-Creation-time** é usado para dar suporte à replicação e
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

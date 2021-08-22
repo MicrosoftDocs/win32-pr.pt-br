@@ -1,8 +1,8 @@
 ---
-description: O método estático da classe WMI SetForwardBufferMemory é usado para especificar a quantidade de memória que o IP aloca para armazenar dados de pacote na fila de pacotes do roteador.
+description: O método estático da classe WMI SetForwardBufferMemory é usado para especificar quanto IP de memória aloca para armazenar dados de pacote na fila de pacotes do roteador.
 ms.assetid: e76452e8-2ee8-4d39-9405-33b0aeeac74d
 ms.tgt_platform: multiple
-title: Método SetForwardBufferMemory da classe Win32_NetworkAdapterConfiguration
+title: Método SetForwardBufferMemory da Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 30179610e6eee121a86119fa347067b40ef04c2f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1672c8d60cfdf8b831cfbcae9a1da1de5a6baa6225f220856ea579f7857c6650
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440046"
 ---
-# <a name="setforwardbuffermemory-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetForwardBufferMemory da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setforwardbuffermemory-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetForwardBufferMemory da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetForwardBufferMemory** é usado para especificar a quantidade de memória que o IP aloca para armazenar dados de pacote na fila de pacotes do roteador.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetForwardBufferMemory** é usado para especificar quanto IP de memória aloca para armazenar dados de pacote na fila de pacotes do roteador.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 SetForwardBufferMemory(
 
 <dl> <dt>
 
-*ForwardBufferMemory* \[ no\]
+*ForwardBufferMemory* \[ Em\]
 </dt> <dd>
 
-Tamanho, em bytes, da fila de pacotes do roteador usada para armazenar dados de pacote. O valor padrão é 74240 (pacotes de 50 1480 bytes, arredondado para um múltiplo de 256).
+Tamanho, em bytes, da fila de pacotes de roteador usada para armazenar dados de pacote. O valor padrão é 74240 (1480 pacotes de 1480 byte, arredondados para um múltiplo de 256).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -136,7 +136,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -235,21 +235,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,13 +406,13 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-Quando esse espaço de buffer é preenchido, o roteador começa a descartar os pacotes aleatoriamente de sua fila.
+Quando esse espaço de buffer é preenchido, o roteador começa a descartar pacotes aleatoriamente de sua fila.
 
-Buffers de dados de fila de pacotes têm 256 bytes de comprimento, portanto, o valor do parâmetro *ForwardBufferMemory* deve ser um múltiplo de 256. Vários buffers são encadeados em pacotes maiores. O cabeçalho IP de um pacote é armazenado separadamente. Esse parâmetro será ignorado e nenhum buffer será alocado se o roteador IP não estiver habilitado. O tamanho do buffer pode variar da unidade máxima de transmissão (MTU) da rede até um valor menor que 0xFFFFFFFF.
+Os buffers de dados da fila de pacotes têm 256 bytes de comprimento, portanto, o valor do parâmetro *ForwardBufferMemory* deve ser um múltiplo de 256. Vários buffers são encadeados para pacotes maiores. O header IP de um pacote é armazenado separadamente. Esse parâmetro será ignorado e nenhum buffer será alocado se o roteador IP não estiver habilitado. O tamanho do buffer pode variar da MTU (Unidade máxima de transmissão) da rede a um valor menor que 0xFFFFFFFF.
 
 ## <a name="examples"></a>Exemplos
 
-A amostra [Modificar a memória do buffer de encaminhamento de todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/da5712dc-f854-4099-98a9-59c0ff20a524) configura a memória do buffer de encaminhamento para todos os adaptadores de rede em um computador.
+O [exemplo Modificar a memória do buffer de encaminhamento](https://Gallery.TechNet.Microsoft.Com/da5712dc-f854-4099-98a9-59c0ff20a524) para todos os adaptadores de rede do VBScript configura a memória do buffer de encaminhamento para todos os adaptadores de rede em um computador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -422,8 +422,8 @@ A amostra [Modificar a memória do buffer de encaminhamento de todos os adaptado
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -435,13 +435,13 @@ A amostra [Modificar a memória do buffer de encaminhamento de todos os adaptado
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

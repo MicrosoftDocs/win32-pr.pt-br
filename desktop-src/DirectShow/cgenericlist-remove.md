@@ -1,7 +1,7 @@
 ---
-description: O método remove remove o item na posição especificada.
+description: O método Remove remove o item na posição especificada.
 ms.assetid: a7b8f6fb-f13a-4c24-aa18-463446602e29
-title: Método CGenericList. Remove (Wxlist. h)
+title: Método CGenericList.Remove (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d5fc3d0cd76cd78c83fa210d8b91ba97b93b92f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40b00d0772f391978fa6e581623446c67c2f37deabb1737e2602d7da7382fbaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317756"
 ---
-# <a name="cgenericlistremove-method"></a>Método CGenericList. Remove
+# <a name="cgenericlistremove-method"></a>Método CGenericList.Remove
 
 O `Remove` método remove o item na posição especificada.
 
@@ -45,19 +45,19 @@ OBJECT* Remove(
 *pos* 
 </dt> <dd>
 
-Valor de posição indicando o item a ser removido.
+Valor POSITION que indica o item a ser removido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para um objeto do tipo **Object** (o tipo de modelo).
+Retorna um ponteiro para um objeto do tipo **OBJECT** (o tipo de modelo).
 
 ## <a name="remarks"></a>Comentários
 
 Esse método exclui o nó da lista, mas não exclui o item contido nesse nó.
 
-Se o *PDV* for **nulo**, o método retornará **NULL**.
+Se *pos* for **NULL,** o método retornará **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Se o *PDV* for **nulo**, o método retornará **NULL**.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

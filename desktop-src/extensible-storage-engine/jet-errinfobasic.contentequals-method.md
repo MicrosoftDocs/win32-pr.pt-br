@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1f527fae20d24e97114afa1f07b427d799c26c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b86417db68b6e538e9a3a5ab4300a5f31fb0a2138d7158490c18d5877009c422
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119362406"
 ---
 # <a name="jet_errinfobasiccontentequals-method"></a>JET_ERRINFOBASIC. Método ContentEquals
 
@@ -66,7 +66,7 @@ public bool ContentEquals(
     
     Uma instância para comparar com esta instância.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se as duas instâncias forem iguais.  

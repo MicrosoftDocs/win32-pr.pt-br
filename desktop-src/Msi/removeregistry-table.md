@@ -1,30 +1,30 @@
 ---
-description: A tabela RemoveRegistry contém as informações de registro que o aplicativo precisa excluir do registro do sistema.
+description: A tabela RemoveRegistry contém as informações do Registro que o aplicativo precisa excluir do registro do sistema.
 ms.assetid: 8be382f1-f5ab-4a9d-bf0e-05275310c5b5
-title: Tabela RemoveRegistry
+title: RemoveRegistry Table
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8de39edd15484ac4bcda675ec8bffaca0540a0ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 170dc727eef47ac214f7a7f42af7f487f53ad0b9a0658182420b28eb5224e38d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314876"
 ---
-# <a name="removeregistry-table"></a>Tabela RemoveRegistry
+# <a name="removeregistry-table"></a>RemoveRegistry Table
 
-A tabela RemoveRegistry contém as informações de registro que o aplicativo precisa excluir do registro do sistema.
+A tabela RemoveRegistry contém as informações do Registro que o aplicativo precisa excluir do registro do sistema.
 
-A tabela RemoveRegistry tem as colunas a seguir.
+A tabela RemoveRegistry tem as seguintes colunas.
 
 
 
 | Coluna         | Tipo                         | Chave | Nullable |
 |----------------|------------------------------|-----|----------|
-| RemoveRegistry | [Identificador](identifier.md) | S   | N        |
+| RemoveRegistry | [Identificador](identifier.md) | Y   | N        |
 | Root           | [Inteiro](integer.md)       | N   | N        |
 | Chave            | [RegPath](regpath.md)       | N   | N        |
-| Nome           | [Binário](formatted.md)   | N   | S        |
+| Name           | [Formatado](formatted.md)   | N   | Y        |
 | Componente\_    | [Identificador](identifier.md) | N   | N        |
 
 
@@ -42,21 +42,21 @@ A chave para esta tabela.
 
 </dd> <dt>
 
-<span id="Root"></span><span id="root"></span><span id="ROOT"></span>Básica
+<span id="Root"></span><span id="root"></span><span id="ROOT"></span>Raiz
 </dt> <dd>
 
-A chave raiz predefinida para o valor do registro.
+A chave raiz predefinida para o valor do Registro.
 
 
 
 | Constante                          | Hexadecimal | Decimal | Chave raiz                                                                                                                                                                                                           |
 |-----------------------------------|-------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (nenhum)                            | \- 0x001    | -1      | **HKEY \_ O instalador do \_ usuário atual** define essa chave enquanto faz uma instalação por usuário.<br/>                                                                                                                    |
-| (nenhum)                            | -0x001      | -1      | **HKEY \_ O instalador do \_ computador local** define essa chave enquanto faz uma instalação de todos os usuários com [**AllUsers**](allusers.md) definido como 1.<br/>                                                                       |
-| **msidbRegistryRootClassesRoot**  | 0x000       | 0       | **HKEY \_ \_Raiz de classes** o instalador remove o valor do hive de **\\ \\ classes de software HKCU** durante instalações no [contexto de instalação](installation-context.md)por usuário e por máquina.<br/> |
-| **msidbRegistryRootCurrentUser**  | 0x001       | 1       | **HKEY \_ Current \_ User**                                                                                                                                                                                            |
-| **msidbRegistryRootLocalMachine** | 0x002       | 2       | **\_máquina local \_ HKEY**                                                                                                                                                                                           |
-| **msidbRegistryRootUsers**        | 0x003       | 3       | **usuários de HKEY \_**                                                                                                                                                                                                    |
+| (nenhum)                            | \- 0x001    | -1      | **HKEY \_ O \_ INSTALADOR DE** USUÁRIO ATUAL define essa chave ao fazer uma instalação por usuário.<br/>                                                                                                                    |
+| (nenhum)                            | -0x001      | -1      | **HKEY \_ O \_ instalador DE** COMPUTADOR LOCAL define essa chave ao fazer uma instalação de todos os usuários com [**ALLUSERS**](allusers.md) definido como 1.<br/>                                                                       |
+| **msidbRegistryRootClassesRoot**  | 0x000       | 0       | **HKEY \_ CLASSES \_ ROOT** O instalador remove o valor do hive classes **de \\ software \\ HKCU** durante instalações no contexto de instalação por usuário e [por computador](installation-context.md).<br/> |
+| **msidbRegistryRootCurrentUser**  | 0x001       | 1       | **USUÁRIO ATUAL DO HKEY \_ \_**                                                                                                                                                                                            |
+| **msidbRegistryRootLocalMachine** | 0x002       | 2       | **COMPUTADOR LOCAL HKEY \_ \_**                                                                                                                                                                                           |
+| **msidbRegistryRootUsers**        | 0x003       | 3       | **USUÁRIOS \_ DO HKEY**                                                                                                                                                                                                    |
 
 
 
@@ -64,46 +64,46 @@ A chave raiz predefinida para o valor do registro.
 
 </dd> <dt>
 
-<span id="Key"></span><span id="key"></span><span id="KEY"></span>Chaves
+<span id="Key"></span><span id="key"></span><span id="KEY"></span>Chave
 </dt> <dd>
 
-A chave localizável para o valor do registro.
+A chave localizável para o valor do Registro.
 
 </dd> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>Nomes
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>Nome
 </dt> <dd>
 
-O nome do valor do registro localizável.
+O nome do valor do Registro localizável.
 
-A cadeia de caracteres a seguir na coluna Name tem um significado especial.
+A cadeia de caracteres a seguir na coluna Nome tem significância especial.
 
 
 
 | String | Significado                                                                                                    |
 |--------|------------------------------------------------------------------------------------------------------------|
-| "-"    | A chave deve ser excluída, se presente, com todos os seus valores e subchaves, quando o componente é instalado. |
+| "-"    | A chave deve ser excluída, se presente, com todos os seus valores e subkeys, quando o componente for instalado. |
 
 
 
  
 
-Observe que a [tabela de registro](registry-table.md) deve ser usada para criar ou remover uma chave do registro quando o componente é removido.
+Observe que a [tabela do Registro](registry-table.md) deve ser usada para criar ou remover uma chave do Registro quando o componente é removido.
 
 </dd> <dt>
 
 <span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Chave externa na primeira coluna da tabela de [componentes](component-table.md) que faz referência ao componente que controla a exclusão do valor do registro.
+Chave externa na primeira coluna da tabela [Componente que](component-table.md) referencia o componente que controla a exclusão do valor do Registro.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-As informações do registro são excluídas do registro do sistema quando o componente correspondente foi selecionado para ser instalado localmente ou executado da origem.
+As informações do Registro são excluídas do registro do sistema quando o componente correspondente foi selecionado para ser instalado localmente ou executado da origem.
 
-Essa tabela é referida quando a [ação RemoveRegistryValues](removeregistryvalues-action.md) é executada.
+Essa tabela é referenciada quando a [ação RemoveRegistryValues](removeregistryvalues-action.md) é executada.
 
 ## <a name="validation"></a>Validação
 

@@ -4,12 +4,12 @@ ms.assetid: ea7941cd-2b3c-42d1-a291-759cbc32db0c
 title: PNRP e WSASetService
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 005a04251a8b038c5895ae5dfafd65be9263edfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2afbc11e65c9d583f91b5070e960435612ad05717b6ccfe087924da133c531b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518096"
 ---
 # <a name="pnrp-and-wsasetservice"></a>PNRP e WSASetService
 
@@ -232,84 +232,84 @@ Especifica um nome de par para cancelar o registro.
 <span id="lpServiceClassID"></span><span id="lpserviceclassid"></span><span id="LPSERVICECLASSID"></span>**lpServiceClassID**
 </dt> <dd>
 
-Deve ser **SVCID \_ pnrpname**.
+Deve ser **SVCID \_ PNRPNAME.**
 
 </dd> <dt>
 
 <span id="lpVersion"></span><span id="lpversion"></span><span id="LPVERSION"></span>**lpVersion**
 </dt> <dd>
 
-Ignorado. Defina como **nulo**.
+Ignorado. Definido como **NULL.**
 
 </dd> <dt>
 
 <span id="lpszComment"></span><span id="lpszcomment"></span><span id="LPSZCOMMENT"></span>**lpszComment**
 </dt> <dd>
 
-Ignorado. Defina como **nulo**.
+Ignorado. Definido como **NULL.**
 
 </dd> <dt>
 
-<span id="dwNameSpace"></span><span id="dwnamespace"></span><span id="DWNAMESPACE"></span>**dwNameSpace**
+<span id="dwNameSpace"></span><span id="dwnamespace"></span><span id="DWNAMESPACE"></span>**Dwnamespace**
 </dt> <dd>
 
-Deve ser **ns \_ pnrpname** ou **ns \_ All**.
+Deve ser **NS \_ PNRPNAME ou** **NS \_ ALL.**
 
 </dd> <dt>
 
 <span id="lpNSProviderID"></span><span id="lpnsproviderid"></span><span id="LPNSPROVIDERID"></span>**lpNSProviderID**
 </dt> <dd>
 
-Deve ser o **\_ provedor NS \_ pnrpname** ou **NULL**.
+Deve ser **NS \_ PROVIDER \_ PNRPNAME ou** **NULL.**
 
 </dd> <dt>
 
 <span id="lpszContext"></span><span id="lpszcontext"></span><span id="LPSZCONTEXT"></span>**lpszContext**
 </dt> <dd>
 
-Deve ser um nome de nuvem, uma cadeia de caracteres vazia ou **NULL**. Se esse valor for **nulo** ou uma cadeia de caracteres vazia, a nuvem padrão, "global", será usada. Caso contrário, ele deve apontar para um nome de nuvem válido.
+Deve ser um nome de nuvem, uma cadeia de caracteres vazia ou **NULL.** Se esse valor for **NULL ou** uma cadeia de caracteres vazia, a nuvem padrão" "Global" será usada. Caso contrário, ele deverá apontar para um nome de nuvem válido.
 
 </dd> <dt>
 
 <span id="dwNumberOfProtocols"></span><span id="dwnumberofprotocols"></span><span id="DWNUMBEROFPROTOCOLS"></span>**dwNumberOfProtocols**
 </dt> <dd>
 
-Ignorado. Defina como zero (0).
+Ignorado. Definido como zero (0).
 
 </dd> <dt>
 
 <span id="lpszQueryString"></span><span id="lpszquerystring"></span><span id="LPSZQUERYSTRING"></span>**lpszQueryString**
 </dt> <dd>
 
-Ignorado. Defina como **nulo**.
+Ignorado. Definido como **NULL.**
 
 </dd> <dt>
 
 <span id="dwNumberOfCsAddrs"></span><span id="dwnumberofcsaddrs"></span><span id="DWNUMBEROFCSADDRS"></span>**dwNumberOfCsAddrs**
 </dt> <dd>
 
-Ignorado. Defina como **nulo**.
+Ignorado. Definido como **NULL.**
 
 </dd> <dt>
 
-<span id="lpcsaBuffer"></span><span id="lpcsabuffer"></span><span id="LPCSABUFFER"></span>**lpcsaBuffer**
+<span id="lpcsaBuffer"></span><span id="lpcsabuffer"></span><span id="LPCSABUFFER"></span>**Lpcsabuffer**
 </dt> <dd>
 
-Ignorado. Defina como **nulo**.
+Ignorado. Definido como **NULL.**
 
 </dd> <dt>
 
 <span id="dwOutputFlags"></span><span id="dwoutputflags"></span><span id="DWOUTPUTFLAGS"></span>**dwOutputFlags**
 </dt> <dd>
 
-Ignorado. Defina como zero (0).
+Ignorado. Definido como zero (0).
 
 </dd> <dt>
 
-<span id="lpBlob"></span><span id="lpblob"></span><span id="LPBLOB"></span>**lpBlob**
+<span id="lpBlob"></span><span id="lpblob"></span><span id="LPBLOB"></span>**Lpblob**
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**blob**](winsock-nsp-reference-links.md) que aponta para uma estrutura [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) . O membro **lpszIdentity** da estrutura **lpBlob** identifica o nome da identidade que é usada para registrar um nome de par. Os membros restantes devem ser definidos com os mesmos valores que são usados ao registrar um nome.
+Ponteiro para uma [**estrutura BLOB**](winsock-nsp-reference-links.md) que aponta para uma [**estrutura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) O **membro lpszIdentity** da estrutura **lpBlob** identifica o nome da identidade usada para registrar um nome de par. Os membros restantes devem ser definidos com os mesmos valores usados ao registrar um nome.
 
 </dd> </dl>
 
@@ -326,13 +326,13 @@ Ponteiro para uma estrutura de [**blob**](winsock-nsp-reference-links.md) que ap
 [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
 </dt> <dt>
 
-[Códigos de erro NSP PNRP](pnrp-nsp-error-codes.md)
+[Códigos de erro de NSP pnrp](pnrp-nsp-error-codes.md)
 </dt> <dt>
 
-[**WSACleanup**](winsock-nsp-reference-links.md)
+[**Wsacleanup**](winsock-nsp-reference-links.md)
 </dt> <dt>
 
-**WSASetService**
+**Wsasetservice**
 </dt> </dl>
 
  
