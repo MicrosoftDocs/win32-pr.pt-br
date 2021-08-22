@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks HSCb (D3DX12. h)
-description: Chama o retorno de chamada do subobjeto do sombreador envoltória de um objeto que implementa essa interface.
+title: Método HSCb ID3DX12PipelineParserCallbacks (D3DX12.h)
+description: Chama o retorno de chamada do subobjeto do sombreador de chassi de um objeto que implementa essa interface.
 ms.assetid: B2967E7F-391F-4A76-A087-E0B925018EE3
 keywords:
 - Método HSCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7d351e0b3827087cb51c38af173badd28d698c8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: abac62d531f995d223fc970b9a228fc653e26f52992f22b52fbea2a69757d276
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105795446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118807271"
 ---
-# <a name="id3dx12pipelineparsercallbackshscb-method"></a>Método ID3DX12PipelineParserCallbacks:: HSCb
+# <a name="id3dx12pipelineparsercallbackshscb-method"></a>Método ID3DX12PipelineParserCallbacks::HSCb
 
-Chama o retorno de chamada do subobjeto do sombreador envoltória de um objeto que implementa essa interface.
+Chama o retorno de chamada do subobjeto do sombreador de chassi de um objeto que implementa essa interface.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ void HSCb(
 
 <dl> <dt>
 
-*HS* \[ referência\]
+*HS* \[ Ref\]
 </dt> <dd>
 
-Tipo: **[**código de \_ \_ bytes do sombreador const D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)**
+Tipo: **const [**D3D12 \_ SHADER \_ BYTECODE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)**
 
-Detalhes do subobjeto do sombreador envoltória analisado de um fluxo de estado do pipeline.
+Detalhes do subobjeto do sombreador de chassi analisado de um fluxo de estado do pipeline.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 
@@ -62,8 +62,8 @@ Não retorna nada.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Não retorna nada.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Código de bytes do sombreador D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
+[**D3D12 \_ SHADER \_ BYTECODE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 </dt> </dl>
 
  

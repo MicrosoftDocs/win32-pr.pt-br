@@ -1,23 +1,23 @@
 ---
-description: O Microsoft Windows Search, com base nos padrões SQL-92 e SQL-99, melhora as pesquisas baseadas em documentos de texto completo em aplicativos de gerenciamento de documentos ou de gerenciamento de conhecimento.
+description: o Microsoft Windows Search, com base nos padrões SQL-92 e SQL-99, melhora as pesquisas baseadas em documentos de texto completo em aplicativos de gerenciamento de documentos ou de gerenciamento de conhecimento.
 ms.assetid: 136af1ea-452a-491b-bec7-8c45fa01f87f
-title: Extensões do SQL no Microsoft Windows Search
+title: SQL extensões no Microsoft Windows Search
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 340766d5db99a749e8f508e2dc0bec6a549adfc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c300b0960e97cba14237bd355e33ae7e42788b1925525e60462d15a5d014e6f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118462448"
 ---
-# <a name="sql-extensions-in-microsoft-windows-search"></a>Extensões do SQL no Microsoft Windows Search
+# <a name="sql-extensions-in-microsoft-windows-search"></a>SQL extensões no Microsoft Windows Search
 
-O Microsoft Windows Search, com base nos padrões SQL-92 e SQL-99, melhora as pesquisas baseadas em documentos de texto completo em aplicativos de gerenciamento de documentos ou de gerenciamento de conhecimento. Os aprimoramentos da pesquisa do Windows incluem o seguinte:
+o Microsoft Windows Search, com base nos padrões SQL-92 e SQL-99, melhora as pesquisas baseadas em documentos de texto completo em aplicativos de gerenciamento de documentos ou de gerenciamento de conhecimento. Windows As melhorias de pesquisa incluem o seguinte:
 
 ## <a name="128-character-identifier-names"></a>128-nomes de identificador de caracteres
 
-Enquanto SQL-92 e SQL-99 restringem colunas e outros identificadores para 18 caracteres, o Windows Search dá suporte a nomes de coluna de 128 caracteres. Para obter mais informações, consulte [Identificadores](-search-sql-identifiers.md).
+embora SQL-92 e SQL-99 restrinjam a coluna e outros identificadores a 18 caracteres, Windows pesquisa oferece suporte a nomes de coluna de 128 caracteres. Para obter mais informações, consulte [Identificadores](-search-sql-identifiers.md).
 
 ## <a name="grouping-results-by-columns"></a>Agrupando resultados por colunas
 
@@ -25,7 +25,7 @@ As consultas podem especificar como agrupar os resultados. Você pode especifica
 
 ## <a name="diacritic-insensitive-searching"></a>Pesquisa de Diacritic-Insensitive
 
-Além de Pesquisar que não diferencia maiúsculas de minúsculas, a pesquisa do Windows dá suporte à pesquisa que não é sensível a diacríticos (sinais de acentuação). Para obter mais informações, consulte [sensibilidade de diacríticos em pesquisas](-search-sql-accentinsensitivitysearches.md).
+além de pesquisar que não diferencia maiúsculas de minúsculas, Windows pesquisa dá suporte à pesquisa que não é sensível a diacríticos (sinais de acentuação). Para obter mais informações, consulte [sensibilidade de diacríticos em pesquisas](-search-sql-accentinsensitivitysearches.md).
 
 ## <a name="column-weighting"></a>Peso da coluna
 

@@ -1,49 +1,49 @@
 ---
-title: Usando os Cursors
-description: Esta seção fornece exemplos de código que mostram como executar tarefas relacionadas a interpolações.
+title: Usando pontos de cuidado
+description: Esta seção fornece exemplos de código que mostram como executar tarefas relacionadas a carets.
 ms.assetid: 82b0a84c-49a9-4d9d-b4c8-7c4511d863eb
 keywords:
-- recursos, Cursors
-- Cursors, criando
-- Cursors, exibindo
-- Cursors, destruindo
-- acento circunflexo, ocultando
-- interpolações, tempos de intermitência
+- recursos, pontos de cuidado
+- carets, criando
+- carets, exibindo
+- carets, destruidor
+- carets, ocultando
+- carets, tempos de piscar
 - linhas piscando
 - blocos piscando
 - bitmaps piscando
-- Criando acento circunflexo
-- exibindo acento circunflexo
-- ocultando acento circunflexo
-- destruindo os interpoladores
-- horários de intermitência
-- entrada do usuário, entrada de teclado
+- criando pontos de cuidado
+- exibindo a caretas
+- ocultando a caretas
+- destruir os pontos de cuidado
+- tempos de piscar
+- entrada do usuário, entrada do teclado
 - capturando entrada do usuário, entrada de teclado
 - entrada do teclado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6450a3169588b3072d1fee271f4890a7cdeafd2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8c930931df8ce401fbed8cc9af16db3cb52de08ebe9cf539109b426497318d5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472642"
 ---
-# <a name="using-carets"></a>Usando os Cursors
+# <a name="using-carets"></a>Usando pontos de cuidado
 
 Esta seção tem exemplos de código para as seguintes tarefas:
 
--   [Criando e exibindo um cursor](#creating-and-displaying-a-caret)
--   [Ocultando um cursor](#hiding-a-caret)
--   [Destruindo um cursor](#destroying-a-caret)
--   [Ajustando o tempo de intermitência](#adjusting-the-blink-time)
--   [Processando entrada de teclado](#processing-keyboard-input)
+-   [Criando e exibindo um a caret](#creating-and-displaying-a-caret)
+-   [Ocultando um caret](#hiding-a-caret)
+-   [Destruir um caret](#destroying-a-caret)
+-   [Ajustando a hora de piscar](#adjusting-the-blink-time)
+-   [Processamento da entrada do teclado](#processing-keyboard-input)
 
-## <a name="creating-and-displaying-a-caret"></a>Criando e exibindo um cursor
+## <a name="creating-and-displaying-a-caret"></a>Criando e exibindo um a caret
 
-Após o recebimento do foco do teclado, a janela deve criar e exibir o cursor. Use a função [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) para criar um cursor na janela especificada. Em seguida, você pode chamar [**SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) para definir a posição atual do cursor e o [**cuidado**](/windows/desktop/api/Winuser/nf-winuser-showcaret) para tornar o cursor visível.
+Ao receber o foco do teclado, a janela deve criar e exibir o a tecla caret. Use a [**função CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) para criar um aro na janela determinada. Em seguida, você [**pode chamar SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) para definir a posição atual do aro e [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) para tornar o sinal de aro visível.
 
-O sistema envia a mensagem do [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus) para a janela que recebe o foco do teclado; portanto, um aplicativo deve criar e exibir o cursor durante o processamento dessa mensagem.
+O sistema envia a [**mensagem WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus) para a janela que recebe o foco do teclado; portanto, um aplicativo deve criar e exibir o acento de acento ao processar essa mensagem.
 
 
 ```
@@ -70,7 +70,7 @@ char *lpszChar;  // pointer to character
 
 
 
-Para criar um cursor baseado em um bitmap, você deve especificar um identificador de bitmap ao usar o [**Createcarent**](/windows/desktop/api/Winuser/nf-winuser-createcaret). Você pode usar um aplicativo de gráficos para criar o bitmap e um compilador de recurso para adicionar o bitmap aos recursos do aplicativo. Em seguida, seu aplicativo pode usar a função [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) para carregar o identificador de bitmap. Por exemplo, você pode substituir a linha **Createcarent** no exemplo anterior pelas linhas a seguir para criar um cursor de bitmap.
+Para criar um acento com base em um bitmap, você deve especificar um alça de bitmap ao usar [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret). Você pode usar um aplicativo gráfico para criar o bitmap e um compilador de recursos para adicionar o bitmap aos recursos do aplicativo. Em seguida, seu aplicativo pode usar [**a função LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) para carregar o alça de bitmap. Por exemplo, você pode substituir a **linha CreateCaret** no exemplo anterior pelas linhas a seguir para criar um bitmap caret.
 
 
 ```
@@ -85,15 +85,15 @@ Para criar um cursor baseado em um bitmap, você deve especificar um identificad
 
 
 
-Como alternativa, você pode usar a função [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) ou [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) para recuperar o identificador do bitmap de cursor. Para obter mais informações sobre bitmaps, consulte [bitmaps](/windows/desktop/gdi/bitmaps).
+Como alternativa, você pode usar a [**função CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) ou [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) para recuperar o handle do bitmap de adição. Para obter mais informações sobre bitmaps, consulte [Bitmaps](/windows/desktop/gdi/bitmaps).
 
-Se o seu aplicativo especificar um identificador de bitmap, o [**Createcareout**](/windows/desktop/api/Winuser/nf-winuser-createcaret) ignorará os parâmetros de largura e altura. O bitmap define o tamanho do cursor.
+Se o aplicativo especificar um alça de bitmap, [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) ignorará os parâmetros de largura e altura. O bitmap define o tamanho do caret.
 
-## <a name="hiding-a-caret"></a>Ocultando um cursor
+## <a name="hiding-a-caret"></a>Ocultando um caret
 
-Sempre que o aplicativo redesenha uma tela durante o processamento de uma mensagem diferente do [**WM \_ Paint**](/windows/desktop/gdi/wm-paint), ele deve tornar o cursor invisível usando a função [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) . Quando seu aplicativo terminar de desenhar, reexiba o cursor usando a função de [**Iscaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) . Se seu aplicativo processa a mensagem do **WM \_ Paint** , não é necessário ocultar e reexibir o cursor, pois essa função faz isso automaticamente.
+Sempre que o aplicativo redesenhar uma tela durante o processamento de uma mensagem diferente de [**WM \_ PAINT,**](/windows/desktop/gdi/wm-paint)ele deverá tornar o aro invisível usando a [**função HideCaret.**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) Quando o aplicativo terminar de desenhar, replay o aro usando a [**função ShowCaret.**](/windows/desktop/api/Winuser/nf-winuser-showcaret) Se seu aplicativo processa **a mensagem WM \_ PAINT,** não é necessário ocultar e repetir o aparato, pois essa função faz isso automaticamente.
 
-O exemplo de código a seguir mostra como fazer com que seu aplicativo oculte o cursor enquanto desenha um caractere na tela e durante o processamento da mensagem do [**WM \_ Char**](/windows/desktop/inputdev/wm-char) .
+O exemplo de código a seguir mostra como fazer com que seu aplicativo o oculta enquanto desenha um caractere na tela e durante o processamento da mensagem [**WM \_ CHAR.**](/windows/desktop/inputdev/wm-char)
 
 
 ```
@@ -156,11 +156,11 @@ HDC hdc;     // device context
 
 
 
-Se seu aplicativo chamar a função [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) várias vezes sem chamar o [**cuidado**](/windows/desktop/api/Winuser/nf-winuser-showcaret), o cursor não será exibido até que o aplicativo **também chame o** mesmo número de vezes.
+Se o aplicativo chamar a [**função HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) várias vezes sem chamar [**ShowCaret,**](/windows/desktop/api/Winuser/nf-winuser-showcaret)o aro não será exibido até que o aplicativo também chamar **ShowCaret** o mesmo número de vezes.
 
-## <a name="destroying-a-caret"></a>Destruindo um cursor
+## <a name="destroying-a-caret"></a>Destruir um caret
 
-Quando uma janela perde o foco do teclado, o sistema envia a mensagem do [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) para a janela. Seu aplicativo deve destruir o cursor durante o processamento dessa mensagem usando a função [**DestroyCaret**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) . O código a seguir mostra como destruir um cursor em uma janela que não tem mais o foco do teclado.
+Quando uma janela perde o foco do teclado, o sistema envia a [**mensagem WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) para a janela. Seu aplicativo deve destruir o aro ao processar essa mensagem usando a [**função DestroyCaret.**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) O código a seguir mostra como destruir um a careta em uma janela que não tem mais o foco do teclado.
 
 
 ```
@@ -175,15 +175,15 @@ case WM_KILLFOCUS:
 
 
 
-## <a name="adjusting-the-blink-time"></a>Ajustando o tempo de intermitência
+## <a name="adjusting-the-blink-time"></a>Ajustando a hora de piscar
 
-No Windows de 16 bits, um aplicativo baseado no Windows poderia chamar a função [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) para salvar o tempo de intermitência atual e, em seguida, chamar a função [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para ajustar o tempo de intermitência durante o processamento da mensagem do [**WM \_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus) . O aplicativo restauraria o tempo de intermitência salvo para o uso de outros aplicativos chamando **SetCaretBlinkTime** durante o processamento da mensagem do [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) . No entanto, essa técnica não funciona em ambientes multi-threaded. Especificamente, a desativação de um aplicativo não é sincronizada com a ativação de outro aplicativo, de modo que, se um aplicativo parar, outro aplicativo ainda poderá ser ativado.
+No Windows de 16 bits, um aplicativo baseado em Windows pode chamar a função [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) para salvar a hora de piscar atual e, em seguida, chamar a função [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para ajustar o tempo de piscar durante o processamento da mensagem [**WM \_ SETFOCUS.**](/windows/desktop/inputdev/wm-setfocus) O aplicativo restauraria o tempo de piscar salvo para o uso de outros aplicativos chamando **SetCaretBlinkTime** durante o processamento da mensagem [**WM \_ KILLFOCUS.**](/windows/desktop/inputdev/wm-killfocus) No entanto, essa técnica não funciona em ambientes multithread. Especificamente, a desativação de um aplicativo não é sincronizada com a ativação de outro aplicativo, para que, se um aplicativo trava, outro aplicativo ainda possa ser ativado.
 
-Os aplicativos devem respeitar o tempo de intermitência escolhido pelo usuário. A função [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) só deve ser chamada por um aplicativo que permita ao usuário definir o tempo de intermitência.
+Os aplicativos devem respeitar o tempo de piscar escolhido pelo usuário. A [**função SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) só deve ser chamada por um aplicativo que permite ao usuário definir a hora de piscar.
 
-## <a name="processing-keyboard-input"></a>Processando entrada de teclado
+## <a name="processing-keyboard-input"></a>Processamento da entrada do teclado
 
-O exemplo a seguir demonstra como usar um cursor em um editor de texto simples. O exemplo atualiza a posição do cursor à medida que o usuário digita caracteres imprimíveis e usa várias chaves para percorrer a área do cliente.
+O exemplo a seguir demonstra como usar um a caret em um editor de texto simples. O exemplo atualiza a posição do cursor à medida que o usuário digita caracteres imprimíveis e usa várias chaves para mover-se pela área do cliente.
 
 
 ```
@@ -495,6 +495,6 @@ LONG APIENTRY MainWndProc(
 
 
 
- 
+ 
 
- 
+ 

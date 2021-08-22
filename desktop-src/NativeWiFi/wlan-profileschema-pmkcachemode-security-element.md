@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 609660d6f3161cbaaa5e0505daf9c6b9180b6c32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e32d7a658e41f80eb2a4d8d743afc2c96f7a5a1b4135e646374b98e6acac26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619252"
 ---
 # <a name="pmkcachemode-security-element"></a>Elemento PMKCacheMode (segurança)
 
-O elemento PMKCacheMode (Security) indica se o cache PMK será usado. Esse elemento é válido somente para redes definidas por WPA2. O cache PMK é descrito na especificação [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+O elemento PMKCacheMode (segurança) indica se o cache PMK será usado. Esse elemento é válido somente para redes definidas pelo WPA2. O cache PMK é descrito na [especificação 802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
+**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.
 
 ``` syntax
 <xs:element name="PMKCacheMode"
@@ -44,7 +44,7 @@ O elemento PMKCacheMode (Security) indica se o cache PMK será usado. Esse eleme
 </xs:element>
 ```
 
-O elemento é definido pelo elemento [**Security**](wlan-profileschema-security-msm-element.md) .
+O elemento é definido pelo [**elemento de**](wlan-profileschema-security-msm-element.md) segurança.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ O elemento é definido pelo elemento [**Security**](wlan-profileschema-security-
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ O elemento é definido pelo elemento [**Security**](wlan-profileschema-security-
 **Contexto de definição do elemento no esquema**
 </dt> <dt>
 
-[**segurança**](wlan-profileschema-security-msm-element.md)
+[**Segurança**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Possível elemento pai imediato na instância de esquema**
 </dt> <dt>
 
-[**segurança (MSM)**](wlan-profileschema-security-msm-element.md)
+[**security (MSM)**](wlan-profileschema-security-msm-element.md)
 </dt> </dl>
 
  

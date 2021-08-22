@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 8074a09f-ad94-4a7a-8c0b-965b0f8f6334
-ms.openlocfilehash: 82ec9130a681bdfd36ff6259392c0608e4cde9cf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 77b9aa668087f0c02042ccb7e5b822f68596404761d53ec682c76ef98d46c18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459043"
 ---
 # <a name="fmevent_initmenu-message"></a>\_Mensagem FMEVENT INITMENU
 
@@ -38,7 +38,7 @@ Um identificador para a barra de menus do Gerenciador de arquivos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma DLL de extensão deve retornar zero se ela processar essa mensagem.
 

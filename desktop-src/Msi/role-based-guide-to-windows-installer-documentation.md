@@ -1,32 +1,32 @@
 ---
-description: Windows Installer é a solução recomendada para a instalação e a instalação de aplicativos no Windows.
+description: Windows O instalador é a solução recomendada para a instalação e instalação de aplicativos no Windows.
 ms.assetid: 13f41020-5275-44cd-b26b-f45483700d8a
-title: Guia baseado em função para Windows Installer documentação
+title: guia baseado em função para Windows Installer documentação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc8a2138e963b6d29bd161df5e09144cf0cfd36b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 029f886050f3bb0256f6f0f993e613be940cee9cd2fe748b2d17b5dc0f0f84a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118625858"
 ---
-# <a name="role-based-guide-to-windows-installer-documentation"></a>Guia baseado em função para Windows Installer documentação
+# <a name="role-based-guide-to-windows-installer-documentation"></a>guia baseado em função para Windows Installer documentação
 
-Windows Installer é a solução recomendada para a instalação e a instalação de aplicativos no Windows. Portanto, algumas das informações contidas neste SDK serão de interesse de uma ampla gama de desenvolvimento de software e profissionais de ti. Esta seção é fornecida como um guia para os leitores que preferem ver links para tópicos organizados por funções profissionais e cenários comuns de tarefas. Como as funções podem diferir muito entre as organizações, o agrupamento a seguir só deve ser considerado um guia para um local para começar a pesquisar as informações necessárias.
+Windows O instalador é a solução recomendada para a instalação e instalação de aplicativos no Windows. Portanto, algumas das informações contidas neste SDK serão de interesse de uma ampla gama de desenvolvimento de software e profissionais de ti. Esta seção é fornecida como um guia para os leitores que preferem ver links para tópicos organizados por funções profissionais e cenários comuns de tarefas. Como as funções podem diferir muito entre as organizações, o agrupamento a seguir só deve ser considerado um guia para um local para começar a pesquisar as informações necessárias.
 
 -   [Desenvolvedores de aplicativos](#application-developers)
 -   [Autores de instalação](#setup-authors)
 -   [Profissionais de TI](#it-professionals)
 -   [Desenvolvedores de infraestrutura](#infrastructure-developers)
 
-Esta documentação destina-se a desenvolvedores de software que desejam criar aplicativos que usam Windows Installer. Como a principal fonte de material de referência para o instalador, o SDK fornece informações sobre pacotes de instalação e o serviço do instalador. Ele contém descrições completas da API (interface de programação de aplicativo) e dos elementos do banco de dados do instalador.
+esta documentação destina-se a desenvolvedores de software que desejam criar aplicativos que usam Windows Installer. Como a principal fonte de material de referência para o instalador, o SDK fornece informações sobre pacotes de instalação e o serviço do instalador. Ele contém descrições completas da API (interface de programação de aplicativo) e dos elementos do banco de dados do instalador.
 
-Para obter mais informações, consulte [outras fontes de Windows Installer informações](other-sources-of-windows-installer-information.md).
+para obter mais informações, consulte [outras fontes de Windows Installer informações](other-sources-of-windows-installer-information.md).
 
 ## <a name="application-developers"></a>Desenvolvedores de aplicativos
 
-Os desenvolvedores de aplicativos criam aplicativos que chamam a interface de programação de aplicativo Windows Installer e instalam pacotes do Windows Installer em tempo de execução. O Windows Installer pode funcionar em um aplicativo como o autoreparo e a instalação sob demanda. Normalmente, os desenvolvedores de aplicativos fazem o seguinte:
+os desenvolvedores de aplicativos criam aplicativos que chamam a interface de programação de aplicativo Windows Installer e instalam Windows pacotes do instalador em tempo de execução. o Windows Installer pode funcionar em um aplicativo como o autoreparo e a instalação sob demanda. Normalmente, os desenvolvedores de aplicativos fazem o seguinte:
 
 -   Habilite a instalação sob demanda de aplicativos em tempo de execução de dentro de outro aplicativo.
 
@@ -51,7 +51,7 @@ Os desenvolvedores de aplicativos criam aplicativos que chamam a interface de pr
     -   [Pesquisando um componente ou recurso desfeito](searching-for-a-broken-feature-or-component.md)
     -   [Substituindo arquivos existentes](replacing-existing-files.md)
 
--   Exiba uma interface do usuário para coletar informações de usuário e preferências de configuração na primeira vez que um aplicativo for instalado ou executado. A interface do usuário deve ser adicionada pelo autor da instalação do pacote de Windows Installer.
+-   Exiba uma interface do usuário para coletar informações de usuário e preferências de configuração na primeira vez que um aplicativo for instalado ou executado. a interface do usuário deve ser adicionada pelo autor da instalação do pacote de Windows Installer.
 
     Para saber mais, consulte o seguinte:
 
@@ -60,7 +60,7 @@ Os desenvolvedores de aplicativos criam aplicativos que chamam a interface de pr
     -   [Caixa de diálogo FirstRun](firstrun-dialog.md)
     -   [Sobre a interface do usuário](about-the-user-interface.md)
 
--   Crie aplicativos que usam um modelo de indireção para se referir a componentes com funcionalidade paralela. As categorias de componentes qualificados devem ser adicionadas pelo autor da instalação do pacote de Windows Installer.
+-   Crie aplicativos que usam um modelo de indireção para se referir a componentes com funcionalidade paralela. as categorias de componentes qualificados devem ser adicionadas pelo autor da instalação do pacote de Windows Installer.
 
     Para saber mais, consulte o seguinte:
 
@@ -72,9 +72,9 @@ Os desenvolvedores de aplicativos criam aplicativos que chamam a interface de pr
     Para saber mais, consulte o seguinte:
 
     -   [Assemblies](assemblies.md)
-    -   [Chaves do registro de assembly gravadas por Windows Installer](assembly-registry-keys-written-by-windows-installer-.md)
-    -   [Instalando assemblies do Win32 para compartilhamento lado a lado no Windows XP](installing-win32-assemblies-for-side-by-side-sharing-on-windows-xp.md)
-    -   [Instalando assemblies do Win32 para o uso particular de um aplicativo no Windows XP](installing-win32-assemblies-for-the-private-use-of-an-application-on-windows-xp.md)
+    -   [chaves do registro de Assembly gravadas por Windows Installer](assembly-registry-keys-written-by-windows-installer-.md)
+    -   [instalando Assemblies do Win32 para compartilhamento lado a lado no Windows XP](installing-win32-assemblies-for-side-by-side-sharing-on-windows-xp.md)
+    -   [instalando Assemblies do Win32 para o uso particular de um aplicativo no Windows XP](installing-win32-assemblies-for-the-private-use-of-an-application-on-windows-xp.md)
     -   [Tabela MsiAssembly](msiassembly-table.md)
     -   [Tabela MsiAssemblyName](msiassemblyname-table.md)
     -   [**MsiProvideAssembly**](/windows/desktop/api/Msi/nf-msi-msiprovideassemblya)
@@ -104,7 +104,7 @@ Os desenvolvedores de aplicativos criam aplicativos que chamam a interface de pr
 
     Para saber mais, consulte o seguinte:
 
-    -   [Componentes do Windows Installer](windows-installer-components.md)
+    -   [Windows Componentes do instalador](windows-installer-components.md)
     -   [Trabalhando com recursos e componentes](working-with-features-and-components.md)
     -   [Usando componentes transitivos](using-transitive-components.md)
     -   [O que acontece se as regras de componente forem interrompidas?](what-happens-if-the-component-rules-are-broken.md)
@@ -114,115 +114,115 @@ Os desenvolvedores de aplicativos criam aplicativos que chamam a interface de pr
 
 ## <a name="setup-authors"></a>Autores de instalação
 
-Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) que contêm a lógica de instalação e as informações necessárias para instalar um aplicativo. Normalmente, eles usam ferramentas de criação como [Orca.exe](orca-exe.md) para popular o banco de dados de Windows Installer com a lógica de instalação e as informações. Normalmente, os autores da instalação fazem o seguinte:
+os autores de instalação criam pacotes de Windows Installer (arquivos de .msi) que contêm a lógica de instalação e as informações necessárias para instalar um aplicativo. normalmente, eles usam ferramentas de criação como [Orca.exe](orca-exe.md) para popular o banco de dados de Windows Installer com a lógica de instalação e as informações. Normalmente, os autores da instalação fazem o seguinte:
 
 -   Determine a funcionalidade disponível com diferentes versões de Windows Installer.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Determinando a versão de Windows Installer](determining-the-windows-installer-version.md)
-    -   [Versões lançadas do Windows Installer](released-versions-of-windows-installer.md)
-    -   [O que há de novo no Windows Installer](what-s-new-in-windows-installer.md)
+    -   [determinando a versão de Windows Installer](determining-the-windows-installer-version.md)
+    -   [versões lançadas do Windows Installer](released-versions-of-windows-installer.md)
+    -   [o que há de novo no Windows Installer](what-s-new-in-windows-installer.md)
 
 -   Organize os recursos do aplicativo em Windows Installer componentes.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Componentes do Windows Installer](windows-installer-components.md)
+    -   [Windows Componentes do instalador](windows-installer-components.md)
     -   [Organizando aplicativos em componentes](organizing-applications-into-components.md)
     -   [Alterando o código do componente](changing-the-component-code.md)
     -   [O que acontece se as regras de componente forem interrompidas?](what-happens-if-the-component-rules-are-broken.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Windows Exemplos de instalador](windows-installer-examples.md)
 
 -   Use ferramentas de criação de pacote Windows Installer de terceiros ou ferramentas de SDK, como [Orca.exe](orca-exe.md) para popular um banco de dados de instalação e criar um pacote de Windows Installer.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Ferramentas de desenvolvimento Windows Installer](windows-installer-development-tools.md)
+    -   [Windows Ferramentas de desenvolvimento do instalador](windows-installer-development-tools.md)
     -   [Pacote de instalação, sobre o banco de dados do instalador](installation-package.md)
-    -   [Extensões de arquivo Windows Installer](windows-installer-file-extensions.md)
+    -   [Windows Extensões de arquivo do instalador](windows-installer-file-extensions.md)
     -   [Tabelas de banco de dados](database-tables.md)
     -   [Códigos de pacote](package-codes.md)
-    -   [Criando um pacote grande](authoring-a-large-package.md)
-    -   [Windows Installer em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md)
+    -   [Como autor de um pacote grande](authoring-a-large-package.md)
+    -   [Windows Instalador em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md)
     -   [Nomeando tabelas, propriedades e ações personalizadas](naming-custom-tables-properties-and-actions.md)
-    -   [Limitações de OLE em fluxos](ole-limitations-on-streams.md)
+    -   [Limitações do OLE Fluxos](ole-limitations-on-streams.md)
     -   [Formato de definição de coluna](column-definition-format.md)
-    -   [Reduzindo o tamanho de um arquivo. msi](reducing-the-size-of-an--msi-file.md)
+    -   [Reduzindo o tamanho de um .msi arquivo](reducing-the-size-of-an--msi-file.md)
 
--   Crie o banco de dados Windows Installer para instalar arquivos.
+-   Autor do banco de Windows instalador para instalar arquivos.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Grupo de tabelas principais](core-tables-group.md)
-    -   [Grupo de tabelas de arquivos](file-tables-group.md)
+    -   [Grupo de Tabelas Principais](core-tables-group.md)
+    -   [Grupo tabelas de arquivos](file-tables-group.md)
     -   [File Table](file-table.md)
     -   [Pesquisa de arquivos](file-searching.md)
     -   [Custo do arquivo](file-costing.md)
     -   [Instalação de arquivo](file-installation.md)
-    -   [Arquivos complementares](companion-files.md)
-    -   [Regras de controle de versão de arquivo](file-versioning-rules.md)
-    -   [Controle de versão de arquivo padrão](default-file-versioning.md)
+    -   [Arquivos de adoção](companion-files.md)
+    -   [Regras de versão de arquivo](file-versioning-rules.md)
+    -   [Versão do arquivo padrão](default-file-versioning.md)
     -   [Substituindo arquivos existentes](replacing-existing-files.md)
     -   [Usando gabinetes e fontes compactadas](using-cabinets-and-compressed-sources.md)
-    -   [Removendo arquivos perdidos](removing-stranded-files.md)
-    -   [Instalando componentes, arquivos, fontes e chaves do registro permanentes](installing-permanent-components-files-fonts-registry-keys.md)
+    -   [Removendo arquivos desaparados](removing-stranded-files.md)
+    -   [Instalando componentes permanentes, arquivos, fontes, chaves do Registro](installing-permanent-components-files-fonts-registry-keys.md)
     -   [Tabela FileSFPCatalog](filesfpcatalog-table.md)
-    -   [Procurando um arquivo e criando uma propriedade que contém o caminho do arquivo](searching-for-a-file-and-creating-a-property-holding-the-file-s-path.md)
-    -   [Procurando um diretório e um arquivo no diretório](searching-for-a-directory-and-a-file-in-the-directory.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Pesquisando um arquivo e criando uma propriedade que mantém o caminho do arquivo](searching-for-a-file-and-creating-a-property-holding-the-file-s-path.md)
+    -   [Pesquisando um diretório e um arquivo no diretório](searching-for-a-directory-and-a-file-in-the-directory.md)
+    -   [Windows Exemplos do instalador](windows-installer-examples.md)
 
--   Crie um banco de dados Windows Installer que instala uma estrutura de diretório e pastas.
+-   Autor de um Windows de dados do Instalador que instala uma estrutura e pastas de diretório.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Grupo de tabelas principais](core-tables-group.md)
-    -   [Grupo de tabelas de arquivos](file-tables-group.md)
+    -   [Grupo de Tabelas Principais](core-tables-group.md)
+    -   [Grupo tabelas de arquivos](file-tables-group.md)
     -   [Tabela de componentes](component-table.md)
     -   [Tabela de diretórios](directory-table.md)
-    -   [Usando a tabela de diretórios](using-the-directory-table.md)
+    -   [Usando a tabela de diretório](using-the-directory-table.md)
     -   [Usando uma propriedade de diretório em um caminho](using-a-directory-property-in-a-path.md)
     -   [Propriedades da pasta do sistema](property-reference.md)
     -   [Tabela CreateFolder](createfolder-table.md)
     -   [Tabela LockPermissions](lockpermissions-table.md)
     -   [Tabela MsiLockPermissionsEx](msilockpermissionsex-table.md)
     -   [Alterando o local de destino de um diretório](changing-the-target-location-for-a-directory.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Windows Exemplos do instalador](windows-installer-examples.md)
 
--   Crie um banco de dados Windows Installer que instala chaves do registro.
+-   Cria um banco Windows instalador de dados que instala chaves do Registro.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Grupo de tabelas principais](core-tables-group.md)
-    -   [Grupo de tabelas do registro](registry-tables-group.md)
-    -   [Tabela do registro](registry-table.md)
-    -   [Modificando o registro](modifying-the-registry.md)
-    -   [Adicionando ou removendo chaves do registro na instalação ou remoção de componentes](adding-or-removing-registry-keys-on-the-installation-or-removal-of-components.md)
-    -   [Adicionando e removendo um aplicativo e não deixando nenhum rastreamento no registro](adding-and-removing-an-application-and-leaving-no-trace-in-the-registry.md)
-    -   [Instalando componentes, arquivos, fontes e chaves do registro permanentes](installing-permanent-components-files-fonts-registry-keys.md)
-    -   [Pesquisando aplicativos, arquivos, entradas de registro ou entradas de arquivo. ini existentes](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
-    -   [Procurando uma entrada de registro e criando uma propriedade que contém o valor do registro](searching-for-a-registry-entry-and-creating-a-property-holding-the-value-of-the-registry.md)
-    -   [Chaves do registro do assembly gravadas pelo Windows Installer](assembly-registry-keys-written-by-windows-installer-.md)
-    -   [Desinstalar chave do registro](uninstall-registry-key.md)
+    -   [Grupo de Tabelas Principais](core-tables-group.md)
+    -   [Grupo de Tabelas do Registro](registry-tables-group.md)
+    -   [Tabela do Registro](registry-table.md)
+    -   [Modificando o Registro](modifying-the-registry.md)
+    -   [Adicionando ou removendo chaves do Registro na instalação ou remoção de componentes](adding-or-removing-registry-keys-on-the-installation-or-removal-of-components.md)
+    -   [Adicionando e removendo um aplicativo e não deixando nenhum rastreamento no Registro](adding-and-removing-an-application-and-leaving-no-trace-in-the-registry.md)
+    -   [Instalando componentes permanentes, arquivos, fontes, chaves do Registro](installing-permanent-components-files-fonts-registry-keys.md)
+    -   [Pesquisando aplicativos, arquivos, entradas do Registro ou .ini de arquivo existentes](searching-for-existing-applications-files-registry-entries-or--ini-file-entries.md)
+    -   [Pesquisando uma entrada do Registro e criando uma propriedade que mantém o valor do Registro](searching-for-a-registry-entry-and-creating-a-property-holding-the-value-of-the-registry.md)
+    -   [Chaves do Registro de Assembly escritas pelo instalador Windows assembly](assembly-registry-keys-written-by-windows-installer-.md)
+    -   [Desinstalar a chave do Registro](uninstall-registry-key.md)
     -   [Tabela SelfReg](selfreg-table.md)
     -   [Especificando a ordem de auto-registro](specifying-the-order-of-self-registration.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Windows Exemplos do instalador](windows-installer-examples.md)
 
--   Crie um banco de dados Windows Installer que instala serviços.
+-   Autor de um Windows instalador de dados que instala serviços.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Tabela de desinstalação](serviceinstall-table.md)
-    -   [Tabela de UserControl](servicecontrol-table.md)
+    -   [Tabela ServiceInstall](serviceinstall-table.md)
+    -   [Tabela ServiceControl](servicecontrol-table.md)
     -   [Tabela de componentes](component-table.md)
 
--   Crie um banco de dados Windows Installer que instala componentes isolados ou componentes COM.
+-   Autor de um Windows instalador que instala componentes isolados ou componentes COM.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Grupo de tabelas do registro](registry-tables-group.md)
+    -   [Grupo de Tabelas do Registro](registry-tables-group.md)
     -   [Tabela de classes](class-table.md)
-    -   [Tabela ComPlus](complus-table.md)
+    -   [Tabela complus](complus-table.md)
     -   [Componentes isolados](isolated-components.md)
     -   [Usando componentes isolados](using-isolated-components.md)
     -   [Instalação de componentes isolados](installation-of-isolated-components.md)
@@ -230,54 +230,54 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
     -   [Remoção de componentes isolados](removal-of-isolated-components.md)
     -   [Instalando um componente COM em um local privado](installing-a-com-component-to-a-private-location.md)
     -   [Tornar um componente COM em um pacote existente privado](make-a-com-component-in-an-existing-package-private.md)
-    -   [Instalando um aplicativo COM+ com o Windows Installer](installing-a-com--application-with-the-windows-installer.md)
+    -   [Instalando um aplicativo COM+ com o Windows Instalador](installing-a-com--application-with-the-windows-installer.md)
     -   [Instalando um componente não COM em um local privado](installing-a-non-com-component-to-a-private-location.md)
-    -   [Tornar um componente não-COM em um pacote particular existente](make-a-non-com-component-in-an-existing-package-private.md)
+    -   [Tornar um componente não COM em um pacote existente privado](make-a-non-com-component-in-an-existing-package-private.md)
 
--   Crie um banco de dados Windows Installer que instala assemblies.
+-   Autor de um Windows instalador de dados que instala assemblies.
 
     Para saber mais, consulte o seguinte:
 
     -   [Tabela MsiAssembly](msiassembly-table.md)
     -   [Tabela MsiAssemblyName](msiassemblyname-table.md)
     -   [Assemblies](assemblies.md)
-    -   [Chaves do registro do assembly gravadas pelo Windows Installer](assembly-registry-keys-written-by-windows-installer-.md)
+    -   [Chaves do Registro de Assembly escritas pelo instalador Windows assembly](assembly-registry-keys-written-by-windows-installer-.md)
     -   [Instalação de assemblies Win32](installation-of-win32-assemblies.md)
 
--   Crie um banco de dados Windows Installer que instala drivers e tradutores ODBC.
+-   Autor de um Windows instalador de dados que instala drivers e tradutores ODBC.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Tabela ODBCattribute](odbcattribute-table.md)
+    -   [Tabela ODBCAttribute](odbcattribute-table.md)
     -   [Tabela ODBCDriver](odbcdriver-table.md)
     -   [Tabela ODBCTranslator](odbctranslator-table.md)
     -   [Tabela ODBCDataSource](odbcdatasource-table.md)
     -   [Tabela ODBCSourceAttribute](odbcsourceattribute-table.md)
 
--   Crie um banco de dados Windows Installer que instala MIME.
+-   Autor de um Windows instalador de dados que instala o MIME.
 
     Para saber mais, consulte o seguinte:
 
     -   [Tabela MIME](mime-table.md)
     -   [Tabela de extensão](extension-table.md)
-    -   [Modificando o registro](modifying-the-registry.md)
+    -   [Modificando o Registro](modifying-the-registry.md)
 
--   Crie um banco de dados Windows Installer que instala variáveis de ambiente.
+-   Autor de um banco Windows instalador que instala variáveis de ambiente.
 
     Para saber mais, consulte o seguinte:
 
     -   [Tabela de ambiente](environment-table.md)
 
--   Crie um banco de dados Windows Installer que instala atalhos.
+-   crie um banco de dados Windows Installer que instala atalhos.
 
     Para saber mais, consulte o seguinte:
 
     -   [Tabela de atalho](shortcut-table.md)
     -   [Tabela MsiShortcutProperty](msishortcutproperty-table.md)
     -   [Editando atalhos do instalador](editing-installer-shortcuts.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Windows Exemplos de instalador](windows-installer-examples.md)
 
--   Crie um banco de dados Windows Installer que instala várias instâncias de aplicativos.
+-   crie um banco de dados Windows Installer que instala várias instâncias de aplicativos.
 
     Para saber mais, consulte o seguinte:
 
@@ -322,7 +322,7 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
     -   [Exemplos de sintaxe de instrução condicional](examples-of-conditional-statement-syntax.md)
     -   [Ações de condicionamento a serem executadas durante a remoção](conditioning-actions-to-run-during-removal.md)
     -   [Ações padrão](standard-actions.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Windows Exemplos de instalador](windows-installer-examples.md)
 
 -   Prepare o pacote de instalação do aplicativo para atualizações futuras do aplicativo pelo serviço de Windows Installer.
 
@@ -336,24 +336,24 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
     -   [Impedindo que um pacote antigo seja instalado em uma versão mais recente](preventing-an-old-package-from-installing-over-a-newer-version.md)
     -   [Alterando o código do produto](changing-the-product-code.md)
     -   [Atualizando assemblies](updating-assemblies.md)
-    -   [Exemplos de Windows Installer](windows-installer-examples.md)
+    -   [Windows Exemplos de instalador](windows-installer-examples.md)
 
--   Solucionar problemas Windows Installer pacotes em desenvolvimento.
+-   solucionar problemas Windows Installer pacotes em desenvolvimento.
 
     Para saber mais, consulte o seguinte:
 
     -   [Validação do pacote](package-validation.md)
     -   [Avaliadores de consistência internos-ICEs](internal-consistency-evaluators-ices.md)
-    -   [Log de Windows Installer](windows-installer-logging.md)
+    -   [Windows Log do instalador](windows-installer-logging.md)
     -   [Verificando a instalação de recursos, componentes, arquivos](checking-the-installation-of-features-components-files.md)
     -   [Criando um pacote grande](authoring-a-large-package.md)
     -   [Wilogutl.exe](wilogutl-exe.md)
-    -   [Ferramentas de desenvolvimento Windows Installer](windows-installer-development-tools.md)
+    -   [Windows Ferramentas de desenvolvimento do instalador](windows-installer-development-tools.md)
     -   [Validando módulos de mesclagem](validating-merge-modules.md)
     -   [Validando um banco de dados de instalação](validating-an-installation-database.md)
     -   [Validando uma atualização de instalação](validating-an-installation-upgrade.md)
     -   [Pesquisando um componente ou recurso desfeito](searching-for-a-broken-feature-or-component.md)
-    -   [Windows Installer mensagens de erro](windows-installer-error-messages.md)
+    -   [Windows Mensagens de erro do instalador](windows-installer-error-messages.md)
     -   [Registro em log de solicitações de reinicialização](logging-of-reboot-requests.md)
 
 -   Garanta uma instalação e instalação seguras do aplicativo.
@@ -367,8 +367,8 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
     -   [Criando uma instalação assinada totalmente verificada usando a automação](authoring-a-fully-verified-signed-installation-using-automation.md)
     -   [Um exemplo de instalação do Windows Installer baseado em URL](a-url-based-windows-installer-installation-example.md)
     -   [Criando a interface do usuário para entrada de senha](authoring-the-user-interface-for-password-input.md)
-    -   [Assinaturas digitais e Windows Installer](digital-signatures-and-windows-installer.md)
-    -   [Usando Windows Installer com o UAC](using-windows-installer-with-uac.md)
+    -   [assinaturas digitais e Windows Installer](digital-signatures-and-windows-installer.md)
+    -   [usando Windows Installer com o UAC](using-windows-installer-with-uac.md)
     -   [Aplicação de patch de UAC (controle de conta de usuário)](user-account-control--uac--patching.md)
     -   [Msicert.exe](msicert-exe.md)
     -   [**Propriedade AdminUser**](adminuser.md)
@@ -394,26 +394,26 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
 
     -   [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia)
     -   [Monitorando uma instalação usando o MsiSetExternalUIRecord](monitoring-an-installation-using-msisetexternaluirecord.md)
-    -   [Analisando mensagens de Windows Installer](parsing-windows-installer-messages.md)
+    -   [analisando mensagens de Windows Installer](parsing-windows-installer-messages.md)
     -   [Retornando valores de um manipulador de interface do usuário externo](returning-values-from-an-external-user-interface-handler.md)
-    -   [manipulador de INSTALLUI \_](/windows/desktop/api/Msi/nc-msi-installui_handlera)
+    -   [MANIPULADOR \_ INSTALLUI](/windows/desktop/api/Msi/nc-msi-installui_handlera)
     -   [Manipulando mensagens de progresso usando MsiSetExternalUI](handling-progress-messages-using-msisetexternalui.md)
-    -   [Monitorando uma instalação usando o MsiSetExternalUI](monitoring-an-installation-using-msisetexternalui.md)
+    -   [Monitorando uma instalação usando MsiSetExternalUI](monitoring-an-installation-using-msisetexternalui.md)
 
--   Definir informações para o aplicativo em **Adicionar/remover programas** (ARP.)
+-   Definir informações para o aplicativo em **Adicionar/Remover Programas** (ARP).)
 
     Para saber mais, consulte o seguinte:
 
-    -   [Configurando adicionar/remover programas com Windows Installer](configuring-add-remove-programs-with-windows-installer.md)
-    -   [Adicionando e removendo um aplicativo e não deixando nenhum rastreamento no registro](adding-and-removing-an-application-and-leaving-no-trace-in-the-registry.md)
-    -   [Desinstalar chave do registro](uninstall-registry-key.md)
+    -   [Configurando Adicionar/Remover Programas com Windows Instalador](configuring-add-remove-programs-with-windows-installer.md)
+    -   [Adicionando e removendo um aplicativo e não deixando nenhum rastreamento no Registro](adding-and-removing-an-application-and-leaving-no-trace-in-the-registry.md)
+    -   [Desinstalar a chave do Registro](uninstall-registry-key.md)
 
--   Grave ações personalizadas para lidar com a lógica de instalação que não tem suporte nativo do Windows Installer.
+-   Escreva ações personalizadas para lidar com a lógica de instalação que não tem suporte nativo do Windows Installer.
 
     Para saber mais, consulte o seguinte:
 
     -   [Ações personalizadas](custom-actions.md)
-    -   [Lista de Resumo de todos os tipos de ação personalizada](summary-list-of-all-custom-action-types.md)
+    -   [Lista resumida de todos os tipos de ação personalizados](summary-list-of-all-custom-action-types.md)
     -   [Diretrizes para proteger ações personalizadas](guidelines-for-securing-custom-actions.md)
     -   [Referência de ação personalizada](custom-action-reference.md)
     -   [Usando uma ação personalizada para criar contas de usuário em um computador local](using-a-custom-action-to-create-user-accounts-on-a-local-computer.md)
@@ -422,7 +422,7 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
     -   [Acessando a sessão do instalador atual de dentro de uma ação personalizada](accessing-the-current-installer-session-from-inside-a-custom-action.md)
     -   [Alterando o estado do sistema usando uma ação personalizada](changing-the-system-state-using-a-custom-action.md)
 
--   Inicialize o Windows Installer no computador de um usuário.
+-   Inicializar o Windows instalador no computador de um usuário.
 
     Para saber mais, consulte o seguinte:
 
@@ -431,55 +431,55 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
     -   [Inicialização de download da Internet](internet-download-bootstrapping.md)
     -   [Msistuff.exe](msistuff-exe.md)
     -   [Um exemplo de instalação do Windows Installer baseado em URL](a-url-based-windows-installer-installation-example.md)
-    -   [Configurando os recursos de Setup.exe](configuring-the-setup-exe-resources.md)
+    -   [Configurando os recursos Setup.exe dados](configuring-the-setup-exe-resources.md)
     -   [Baixando uma instalação da Internet](downloading-an-installation-from-the-internet.md)
 
--   Siga as diretrizes de Acessibilidade Ativa ao gravar Windows Installer pacotes.
+-   Adera Acessibilidade Ativa diretrizes ao escrever Windows do Instalador.
 
     Para saber mais, consulte o seguinte:
 
     -   [Acessibilidade](accessibility.md)
 
--   Prepare-se para a internacionalização de uma instalação de aplicativo.
+-   Prepare-se para a internacionalização de uma configuração de aplicativo.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Preparando um pacote de Windows Installer para localização](preparing-a-windows-installer-package-for-localization.md),
-    -   [Localizando um pacote de Windows Installer](localizing-a-windows-installer-package.md)
-    -   [Manipulação de página de código (Windows Installer)](code-page-handling-windows-installer-.md)
+    -   [Preparando um pacote Windows instalador para localização,](preparing-a-windows-installer-package-for-localization.md)
+    -   [Localizando um Windows instalador de dados](localizing-a-windows-installer-package.md)
+    -   [Tratamento de página de código (Windows instalador)](code-page-handling-windows-installer-.md)
     -   [Adicionando recursos localizados](adding-localized-resources.md)
     -   [Um exemplo de localização](a-localization-example.md)
     -   [Localizando as tabelas Error e ActionText](localizing-the-error-and-actiontext-tables.md)
     -   [Localizando colunas de banco de dados](localizing-database-columns.md)
-    -   [Criando um banco de dados com uma página de código neutra](creating-a-database-with-a-neutral-code-page.md)
+    -   [Criando um banco de dados com uma página de código neutro](creating-a-database-with-a-neutral-code-page.md)
     -   [Manipulação de página de código de tabelas importadas e exportadas](code-page-handling-of-imported-and-exported-tables.md)
-    -   [Localizando o idioma exibido por caixas de diálogo](localizing-the-language-displayed-by-dialogs.md)
-    -   [Importando tabelas de erro e ActionText localizadas](importing-localized-error-and-actiontext-tables.md)
-    -   [Atualizando Propriedades ProductLanguage e ProductCode](updating-productlanguage-and-productcode-properties.md)
+    -   [Localizando o idioma exibido por diálogos](localizing-the-language-displayed-by-dialogs.md)
+    -   [Importando tabelas de Erro Localizado e ActionText](importing-localized-error-and-actiontext-tables.md)
+    -   [Atualizando as propriedades ProductLanguage e ProductCode](updating-productlanguage-and-productcode-properties.md)
     -   [Atualizando um fluxo de informações de resumo](updating-a-summary-information-stream.md)
     -   [Componentes qualificados](qualified-components.md)
     -   [Tabela UIText](uitext-table.md)
     -   [Gerenciar idioma e página de código](manage-language-and-codepage.md)
     -   [Verificando a página de código do banco de dados de instalação](checking-the-installation-database-code-page.md)
 
--   Crie pacotes de Windows Installer para plataformas de 32 bits e 64 bits.
+-   Crie Windows pacotes do Instalador para plataformas de 32 bits e 64 bits.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Windows Installer em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md)
+    -   [Windows Instalador em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md)
     -   [Ações personalizadas de 64 bits](64-bit-custom-actions.md)
     -   [Usando ações personalizadas de 64 bits](using-64-bit-custom-actions.md)
     -   [Usando módulos de mesclagem de 64 bits](using-64-bit-merge-modules.md)
 
--   Redistribua os componentes de Windows Installer compartilhados e a lógica de instalação como módulos de mesclagem.
+-   Redistribua componentes Windows instalador compartilhados e a lógica de instalação como módulos de mesclagem.
 
     Para saber mais, consulte o seguinte:
 
     -   [Mesclar módulos](merge-modules.md)
-    -   [Criando uma transformação de idioma para um módulo de mesclagem de vários idiomas](authoring-a-language-transform-for-a-multiple-language-merge-module.md)
+    -   [Como fazer uma transformação de linguagem para um módulo de mesclagem de vários idiomas](authoring-a-language-transform-for-a-multiple-language-merge-module.md)
     -   [Aplicando um módulo de mesclagem configurável com personalizações](applying-a-configurable-merge-module-with-customizations.md)
 
--   Agendar ou suprimir reinicializações durante uma instalação de Windows Installer.
+-   Agendar ou suprimir reinicializações durante uma Windows instalação do instalador.
 
     Para saber mais, consulte o seguinte:
 
@@ -490,43 +490,43 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
 
     Para saber mais, consulte o seguinte:
 
-    -   [Criando um patch de atualização pequena](creating-a-small-update-patch.md)
-    -   [Um exemplo de aplicação de patch de atualização pequena](a-small-update-patching-example.md)
+    -   [Criando um pequeno patch de atualização](creating-a-small-update-patch.md)
+    -   [Um pequeno exemplo de a patch de atualização](a-small-update-patching-example.md)
 
--   Crie um pacote de uso duplo que seja capaz de instalar um aplicativo somente para o usuário atual ou para todos os usuários do computador.
+-   Autor de um pacote de finalidade dupla capaz de instalar um aplicativo apenas para o usuário atual ou para todos os usuários do computador.
 
     Para saber mais, consulte o seguinte:
 
     -   [Contexto de instalação](installation-context.md)
-    -   [Criação de pacote único](single-package-authoring.md)
-    -   [Exemplo de criação de pacote único](single-package-authoring-example.md)
+    -   [Autorização de pacote único](single-package-authoring.md)
+    -   [Exemplo de autor de pacote único](single-package-authoring-example.md)
 
--   Personalize os serviços no computador usando o Windows Installer.
+-   Personalize os serviços no computador usando o Windows Instalador.
 
     Para saber mais, consulte o seguinte:
 
     -   [Usando a configuração de serviços](using-services-configuration.md)
 
--   Proteja os recursos no computador usando o Windows Installer.
+-   Proteja recursos no computador usando o Windows Instalador.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Diretrizes para a criação de instalações seguras](guidelines-for-authoring-secure-installations.md)
-    -   [Protegendo recursos](securing-resources-.md)
+    -   [Diretrizes para a autorização de instalações seguras](guidelines-for-authoring-secure-installations.md)
+    -   [Proteger recursos](securing-resources-.md)
 
--   Enumere todos os componentes instalados no computador e obtenha o caminho de chave para o componente.
+-   Enumerar todos os componentes instalados no computador e obter o caminho da chave para o componente.
 
     Para saber mais, consulte o seguinte:
 
     -   [Enumerando componentes](enumerating-components-.md)
 
--   Instale vários pacotes usando o [*processamento de transações*](t-gly.md).
+-   Instale vários pacotes usando [*o processamento de transações*](t-gly.md).
 
     Para saber mais, consulte o seguinte:
 
     -   [Instalações de vários pacotes](multiple-package-installations.md)
 
--   Insira uma interface do usuário personalizada no pacote Windows Installer.
+-   Inserir uma interface do usuário personalizada no pacote Windows Instalador.
 
     Para saber mais, consulte o seguinte:
 
@@ -535,16 +535,16 @@ Os autores de instalação criam pacotes de Windows Installer (arquivos. msi) qu
 
 ## <a name="it-professionals"></a>Profissionais de TI
 
-Os profissionais de ti e os administradores personalizam e implantam pacotes de Windows Installer existentes. Esses usuários reempacotam as configurações para aplicativos existentes em Windows Installer pacotes de instalação e instalam e mantêm imagens administrativas de Windows Installer instalações em redes.
+Os profissionais e administradores de TI personalizam e implantam pacotes Windows instalador existentes. Esses usuários reempacodam as configurações para aplicativos existentes em pacotes de instalação Windows Instalador e instalam e mantêm imagens administrativas de instalações do Windows Instalador em redes.
 
--   Personalizar os aplicativos e a instalação gerando e aplicando transformações Windows Installer
+-   Personalizar aplicativos e configuração gerando e aplicando Windows do Instalador
 
     Para saber mais, consulte o seguinte:
 
     -   [Personalização](customization.md)
     -   [Transformações de banco de dados](database-transforms.md)
     -   [Um exemplo de transformação de personalização](a-customization-transform-example.md)
-    -   [Mesclagens e transformações](merges-and-transforms.md)
+    -   [Mesclagem e transformação](merges-and-transforms.md)
     -   [Usando transformações para adicionar recursos](using-transforms-to-add-resources.md)
     -   [Gerar uma transformação](generate-a-transform.md)
     -   [Opções de linha de comando](command-line-options.md)
@@ -554,7 +554,7 @@ Os profissionais de ti e os administradores personalizam e implantam pacotes de 
     -   [Exibir diferenças entre dois bancos de dados](view-differences-between-two-databases.md)
     -   [Aplicação de patch em aplicativos personalizados](patching-customized-applications.md)
 
--   Implante um pacote de instalação Windows Installer, atualização ou patch.
+-   implante um pacote de instalação Windows Installer, atualização ou patch.
 
     Para saber mais, consulte o seguinte:
 
@@ -570,15 +570,15 @@ Os profissionais de ti e os administradores personalizam e implantam pacotes de 
     -   [Aplicação de patch nas instalações iniciais](patching-initial-installations.md)
     -   [Opções de linha de comando](command-line-options.md)
 
--   Solucionar problemas de pacotes Windows Installer.
+-   solucionar problemas de pacotes Windows Installer.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Log de Windows Installer](windows-installer-logging.md)
+    -   [Windows Log do instalador](windows-installer-logging.md)
     -   [Verificando a instalação de recursos, componentes, arquivos](checking-the-installation-of-features-components-files.md)
     -   [Wilogutl.exe](wilogutl-exe.md)
     -   [Pesquisando um componente ou recurso desfeito](searching-for-a-broken-feature-or-component.md)
-    -   [Windows Installer mensagens de erro](windows-installer-error-messages.md)
+    -   [Windows Mensagens de erro do instalador](windows-installer-error-messages.md)
     -   [Msicert.exe](msicert-exe.md)
 
 -   Use scripts para consultar Windows Installer pacotes para obter informações sobre um produto e modificar a instalação.
@@ -586,8 +586,8 @@ Os profissionais de ti e os administradores personalizam e implantam pacotes de 
     Para saber mais, consulte o seguinte:
 
     -   [Interface de automação](automation-interface.md)
-    -   [Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
-    -   [Usando Windows Installer com WMI](using-windows-installer-with-wmi.md)
+    -   [Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
+    -   [usando Windows Installer com WMI](using-windows-installer-with-wmi.md)
 
 -   Crie e mantenha instalações administrativas.
 
@@ -647,7 +647,7 @@ Os profissionais de ti e os administradores personalizam e implantam pacotes de 
 
     -   [Instalações de vários pacotes](multiple-package-installations.md)
 
--   Inserir uma interface do usuário personalizada em um pacote Windows Installer..
+-   inserir uma interface do usuário personalizada em um pacote Windows Installer..
 
     Para saber mais, consulte o seguinte:
 
@@ -656,7 +656,7 @@ Os profissionais de ti e os administradores personalizam e implantam pacotes de 
 
 ## <a name="infrastructure-developers"></a>Desenvolvedores de infraestrutura
 
-Os desenvolvedores de infraestrutura podem criar plataformas unificadas para a implantação e o gerenciamento de software que usa o serviço de Windows Installer. Eles podem usar a interface de programação de Windows Installer para consultar, gerenciar e distribuir aplicativos, patches e fontes em um sistema.
+os desenvolvedores de infraestrutura podem criar plataformas unificadas para a implantação e o gerenciamento de software que usa o serviço de Windows Installer. eles podem usar a interface de programação de Windows Installer para consultar, gerenciar e distribuir aplicativos, patches e fontes em um sistema.
 
 -   Localize, inventaria e consulte o estado, as informações e os clientes dos componentes.
 
@@ -679,48 +679,48 @@ Os desenvolvedores de infraestrutura podem criar plataformas unificadas para a i
     -   [Objeto Product](product-object.md)
     -   [Objeto patch](patch-object.md)
 
--   Melhore a resiliência da origem usando o Windows Installer para inventariar, consultar e modificar a lista de origem de aplicativos, atualizações e patches.
+-   melhore a resiliência da origem usando o Windows Installer para inventariar, consultar e modificar a lista de origem de aplicativos, atualizações e patches.
 
     Para saber mais, consulte o seguinte:
 
-    -   [**Propriedade SOURCElist**](sourcelist.md)
+    -   [**Propriedade SOURCELIST**](sourcelist.md)
     -   [**Resiliência de origem**](source-resiliency.md)
     -   [Funções de instalação e configuração](installer-function-reference.md)
-    -   [Objeto do instalador](installer-object.md)
+    -   [Objeto installer](installer-object.md)
     -   [Objeto Product](product-object.md)
-    -   [Objeto patch](patch-object.md)
+    -   [Objeto Patch](patch-object.md)
 
--   Melhore a resiliência da origem usando o Windows Installer para inventariar, consultar e modificar as fontes de mídia.
+-   Melhore a resiliência de origem usando o instalador Windows para inventariar, consultar e modificar fontes de mídia.
 
     Para saber mais, consulte o seguinte:
 
-    -   [**Propriedade SOURCElist**](sourcelist.md)
+    -   [**Propriedade SOURCELIST**](sourcelist.md)
     -   [Resiliência de origem](source-resiliency.md)
     -   [Funções de instalação e configuração](installer-function-reference.md)
     -   [Objeto Product](product-object.md)
-    -   [Objeto patch](patch-object.md)
+    -   [Objeto Patch](patch-object.md)
 
--   Inventário e consulta de informações e o estado dos patches.
+-   Inventário e consulta para obter informações e o estado dos patches.
 
     Para saber mais, consulte o seguinte:
 
     -   [Produtos e patches de inventário](inventory-products-and-patches-.md)
     -   [Referência de função do instalador](installer-function-reference.md)
-    -   [Objeto patch](patch-object.md)
+    -   [Objeto Patch](patch-object.md)
 
 -   Trabalhe com a política para gerenciar direitos de acesso e permissões.
 
     Para saber mais, consulte o seguinte:
 
-    -   [Políticas do computador](machine-policies.md)
+    -   [Políticas de computador](machine-policies.md)
     -   [Políticas de usuário](user-policies.md)
     -   [Instalando um pacote com privilégios elevados para um não administrador](installing-a-package-with-elevated-privileges-for-a-non-admin.md)
-    -   [Anunciando um aplicativo Per-User para ser instalado com privilégios elevados](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md)
+    -   [Anunciando um Per-User aplicativo a ser instalado com privilégios elevados](advertising-a-per-user-application-to-be-installed-with-elevated-privileges.md)
     -   [Usando uma ação personalizada para criar contas de usuário em um computador local](using-a-custom-action-to-create-user-accounts-on-a-local-computer.md)
     -   [**Propriedade AdminUser**](adminuser.md)
-    -   [**Propriedade privilegiada**](privileged.md)
+    -   [**Propriedade Privileged**](privileged.md)
     -   [**Propriedade EnableUserControl**](enableusercontrol.md)
-    -   [**Propriedade UserID**](usersid.md)
+    -   [**Propriedade UserSID**](usersid.md)
     -   [**Propriedade SecureCustomProperties**](securecustomproperties.md)
 
  

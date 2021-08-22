@@ -3,9 +3,9 @@ title: Método setmode IWMPSettings
 description: O método setmode define o modo de loop ou de ordem aleatória como ativo ou inativo.
 ms.assetid: e9d3765e-6edb-47a5-ac97-5e00b62498c2
 keywords:
-- método setmode do Windows Media Player
+- método setmode Windows Media Player
 - método setmode Windows Media Player, interface IWMPSettings
-- Interface IWMPSettings Windows Media Player, método setmode
+- Windows Media Player de interface IWMPSettings, método setmode
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8dffede5e634c5c4f726cff1631b79781ed5179
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 529aadf412cdae869ae3c308d82dcd08a7dfd581aeb7ecc711052f6acd54b962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568403"
 ---
 # <a name="iwmpsettingssetmode-method"></a>Método IWMPSettings:: setmode
 
@@ -82,13 +82,13 @@ Um valor **System. Boolean** que especifica se o novo modo especificado está at
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o modo de conmoldura está ativo, o Windows Media Player deve acessar o conteúdo de acompanhamento para recuperar o quadro de vídeo. Use esse modo com cuidado ao reproduzir conteúdo que não seja local.
+quando o modo de conquadro é ativo, Windows Media Player deve acessar o conteúdo da faixa para recuperar o quadro de vídeo. Use esse modo com cuidado ao reproduzir conteúdo que não seja local.
 
 ## <a name="requirements"></a>Requisitos
 

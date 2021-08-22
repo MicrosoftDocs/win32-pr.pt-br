@@ -1,9 +1,9 @@
 ---
-title: Network. sourceProtocol
+title: Network.sourceProtocol
 description: A propriedade sourceProtocol recupera o protocolo de origem usado para receber dados.
 ms.assetid: f09bbcd0-9c34-49d1-8080-247aed2548d5
 keywords:
-- Network. sourceProtocol Windows Media Player
+- Network.sourceProtocol Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29e3f0ad63827605eb79a89325877e4bb83bfc62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f23cba2fdd56c1076110c495f7dab2451b7fa103e1dd0e0253e4f74f4f8ab59f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118836201"
 ---
-# <a name="networksourceprotocol"></a>Network. sourceProtocol
+# <a name="networksourceprotocol"></a>Network.sourceProtocol
 
-A propriedade **sourceProtocol** recupera o protocolo de origem usado para receber dados.
+A **propriedade sourceProtocol** recupera o protocolo de origem usado para receber dados.
 
 ## <a name="syntax"></a>Syntax
 
-*Player*. *rede*. **sourceProtocol**
+*player*. *network*. **sourceProtocol**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é definida como "" (cadeia de caracteres vazia) ao reproduzir mídia de um CD ou DVD.
+Essa propriedade é definida como "" (cadeia de caracteres vazia) ao tocar mídia de um CD ou DVD.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **sourceProtocol** para exibir o protocolo de origem usado para receber dados. As informações são exibidas em um DIV HTML criado com ID = "SP". O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Rede*. **sourceProtocol para** exibir o protocolo de origem usado para receber dados. As informações são exibidas em um HTML DIV criado com ID = "SP". O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -60,7 +60,7 @@ O exemplo de JScript a seguir usa a *rede*. **sourceProtocol** para exibir o pro
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

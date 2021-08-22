@@ -1,6 +1,6 @@
 ---
 title: BannerImageURL
-description: O atributo BannerImageURL contém o endereço de um site da Web associado à imagem de faixa.
+description: O atributo BannerImageURL contém o endereço de um site da Web associado à imagem da faixa.
 ms.assetid: 93d532f1-45db-406a-ae0f-441880186679
 keywords:
 - Formato de mídia do Windows BannerImageURL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c4859013b77f2ad7bfafb4ad79327ef0b208544
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0af787dedcbfce4749773fb2000e305032414ef055f9f868b3679e65da529672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118705182"
 ---
 # <a name="bannerimageurl"></a>BannerImageURL
 
-O atributo **BannerImageURL** contém o endereço de um site da Web associado à imagem de faixa.
+O **atributo BannerImageURL** contém o endereço de um site da Web associado à imagem da faixa.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMBannerImageURL
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="see-also"></a>Confira também
 
@@ -38,9 +38,9 @@ g \_ wszWMBannerImageURL
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

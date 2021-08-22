@@ -1,5 +1,5 @@
 ---
-title: Cache de conexão
+title: Caching de conexão
 description: Quando uma conexão com um servidor é feita, o identificador de conexão é armazenado em cache no computador cliente para esse processo até que a conexão seja fechada.
 ms.assetid: 927afd35-8703-4234-b6a8-6320a3667532
 ms.tgt_platform: multiple
@@ -8,16 +8,16 @@ keywords:
 - cache de conexão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 857d102a52be9c7ccf40f9076892a85d5b3b8683
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa0fbf63d65a6941e986069289db201a237deb9ddc7058f291218c1496d0a40e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429023"
 ---
-# <a name="connection-caching"></a>Cache de conexão
+# <a name="connection-caching"></a>Caching de conexão
 
-Quando uma conexão com um servidor é feita, o identificador de conexão é armazenado em cache no computador cliente para esse processo até que a conexão seja fechada. Se o mesmo servidor, porta e credenciais forem usados em uma conexão subsequente e somente os sinalizadores de autenticação de associação do ADS **\_ Fast \_ BIND** ou **ADS \_ Server \_** forem diferentes, a ADSI reutilizará a conexão existente. A ADSI executa esse cache de conexão em cada processo.
+Quando uma conexão com um servidor é feita, o identificador de conexão é armazenado em cache no computador cliente para esse processo até que a conexão seja fechada. se o mesmo servidor, porta e credenciais forem usados em uma conexão subsequente e somente os sinalizadores de autenticação de associação do **ads \_ FAST \_** ou do **ads \_ server \_** forem diferentes, a ADSI reutilizará a conexão existente. A ADSI executa esse cache de conexão em cada processo.
 
 Para aumentar o desempenho, reutilize as conexões existentes quando possível.
 
@@ -64,9 +64,9 @@ Set cachedConn = Nothing
 
 
 
- 
+ 
 
- 
+ 
 
 
 

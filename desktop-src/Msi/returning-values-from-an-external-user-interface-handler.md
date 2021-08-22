@@ -1,19 +1,19 @@
 ---
-description: Um manipulador de interface do usuário externo (IU) pode retornar qualquer número de valores para Windows Installer dependendo do tipo de botão fornecido no parâmetro de tipo de mensagem que o instalador passa para o manipulador.
+description: um manipulador de interface do usuário externo (iu) pode retornar qualquer número de valores para Windows Installer dependendo do tipo de botão fornecido no parâmetro de tipo de mensagem que o instalador passa para o manipulador.
 ms.assetid: a918082d-709d-4b4f-ae3b-5f16ed0ca910
 title: Retornando valores de um manipulador de interface do usuário externo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b466f6bc3cc034551a01bd2b87caa7292824e0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50b4ba5edcd87b0d4f324762f840c117425b322ea03d1dd15e103c05bcf12352
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118626076"
 ---
 # <a name="returning-values-from-an-external-user-interface-handler"></a>Retornando valores de um manipulador de interface do usuário externo
 
-Um manipulador de interface do usuário externo (IU) pode retornar qualquer número de valores para Windows Installer dependendo do tipo de botão fornecido no parâmetro de tipo de mensagem que o instalador passa para o manipulador.
+um manipulador de interface do usuário externo (iu) pode retornar qualquer número de valores para Windows Installer dependendo do tipo de botão fornecido no parâmetro de tipo de mensagem que o instalador passa para o manipulador.
 
 O manipulador de interface do usuário externa pode retornar os valores – 1 e 0 a qualquer momento, pois eles não estão relacionados aos tipos de botão. Um valor de retorno de – 1 indica que ocorreu um erro interno no manipulador de interface do usuário externa. Um valor de retorno de 0 indica que o manipulador de interface do usuário externo não tratou a mensagem do instalador e o instalador deve manipular a mensagem em vez disso.
 

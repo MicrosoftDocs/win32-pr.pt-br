@@ -4,12 +4,12 @@ ms.assetid: bf4b310a-7e63-45c5-a327-2638fb31d676
 title: Política de metadados de fotos do System. ApplicationName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e36fac2a864cabfd7c1521d72357d187a8aea50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3084f21453a82c79925d4a164f5f847c3a24968009b7b8c4236ce3a40872dad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710915"
 ---
 # <a name="systemapplicationname-photo-metadata-policy"></a>Política de metadados de fotos do System. ApplicationName
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -144,7 +144,7 @@ Os valores de esquemas diferentes são reconciliados.
 |       | /IFD/XMP/TIFF: software                     |
 |       | /IFD/XMP/TIFF: software                     |
 |       | Programa/ifd/iptc/Originating              |
-|       | Programa/ifd/irb/8bimiptc/iptc/Originating |
+|       | /ifd/irb/8bimiptc/iptc/Programa de origem |
 
 
 
@@ -156,7 +156,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. ApplicationName](../properties/props-system-applicationname.md)
+[System.ApplicationName](../properties/props-system-applicationname.md)
 </dt> </dl>
 
  

@@ -32,12 +32,12 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: df6f246e5824099d01ab2a42f887464c7177cfa5
-ms.sourcegitcommit: 36610cefb8577d0cf9aa2286c8000d8f31cc4ec2
+ms.openlocfilehash: 53f75d14395388ce22ce86ef73f8819892c3fe7285909b1f38c801af476636a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "104008551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118705782"
 ---
 # <a name="lowlevelmouseproc-function"></a>Função LowLevelMouseProc
 
@@ -111,7 +111,7 @@ O procedimento de gancho deve processar uma mensagem em menos tempo que a entrad
 
 O valor está em milissegundos.
 Se o procedimento de gancho atingir o tempo limite, o sistema passará a mensagem para o próximo gancho.
-No entanto, no Windows 7 e posterior, o gancho é removido silenciosamente sem ser chamado.
+no entanto, no Windows 7 e posterior, o gancho é removido silenciosamente sem ser chamado.
 Não há como o aplicativo saber se o gancho foi removido.
 
 **Observação:**  Os ganchos de depuração não podem controlar esse tipo de gancho de baixo nível do mouse.

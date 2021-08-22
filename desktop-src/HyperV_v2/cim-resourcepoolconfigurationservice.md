@@ -1,7 +1,7 @@
 ---
 description: Gerencia a configuração de pools de recursos usando trabalhos.
 ms.assetid: cc0f0236-2335-4dd9-9132-51b3e6b9fcf4
-title: Classe CIM_ResourcePoolConfigurationService
+title: CIM_ResourcePoolConfigurationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e8dbbce21f7749b7f436e2f49acb7ce6c7340faf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a289c21f4a741778bb88a154f5923cf844f0c78390c50b558d40a5bcc32aff1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647661"
 ---
-# <a name="cim_resourcepoolconfigurationservice-class"></a>\_Classe CIM ResourcePoolConfigurationService
+# <a name="cim_resourcepoolconfigurationservice-class"></a>Classe CIM \_ ResourcePoolConfigurationService
 
 Gerencia a configuração de pools de recursos usando trabalhos.
 
@@ -35,13 +35,13 @@ class CIM_ResourcePoolConfigurationService : CIM_Service
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ResourcePoolConfigurationService** tem estes tipos de membros:
+A **classe CIM \_ ResourcePoolConfigurationService** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ ResourcePoolConfigurationService** tem esses métodos.
+A **classe CIM \_ ResourcePoolConfigurationService** tem esses métodos.
 
 
 
@@ -66,8 +66,8 @@ A classe **CIM \_ ResourcePoolConfigurationService** tem esses métodos.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -76,7 +76,7 @@ A classe **CIM \_ ResourcePoolConfigurationService** tem esses métodos.
 
 <dl> <dt>
 
-[**\_Serviço CIM**](cim-service.md)
+[**Serviço \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

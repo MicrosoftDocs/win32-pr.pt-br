@@ -4,16 +4,16 @@ ms.assetid: c1c17a97-cf4b-45b7-bc32-4bad94c3ddb2
 title: Objeto da unidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7df8501c79f9381dba80a1fe0276014dccdf7a34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d04ec68fab408c4ed6412990296c0ebb265b8c3e4c4c9b05645b1f4bd1e625fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118603416"
 ---
 # <a name="drive-object"></a>Objeto da unidade
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de unidade modela uma unidade de disco físico que está contida em um subsistema. Cada unidade conecta-se a um barramento, ocupa um slot e contém um conjunto de extensões de unidade. Cada unidade pode contribuir com extensões para qualquer número de LUNs. Uma unidade também pode ser designada como um hot spare.
 

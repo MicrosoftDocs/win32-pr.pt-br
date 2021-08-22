@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 4e1ce08f3bf1fef74af0d77ada15716abb4530a6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b832da702942e8f84baee4303b7fa74a7fd74d683d62534cca619e8c7270e88a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118813460"
 ---
 # <a name="localcomputer-collection"></a>Coleção de LocalComputer
 
-Contém um único objeto que corresponde ao computador cujo catálogo você está acessando. Esse objeto contém informações de configurações no nível do computador. Se você chamar o método [**Connect**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-connect) em um objeto criado a partir da classe [**COMAdminCatalog**](comadmincatalog.md) , o objeto na coleção **LocalComputer** conterá informações sobre o computador remoto cujo catálogo você está acessando.
+Contém um único objeto que corresponde ao computador cujo catálogo você está acessando. Esse objeto contém informações de configurações no nível do computador. se você chamar o método [**Conexão**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-connect) em um objeto criado a partir da classe [**COMAdminCatalog**](comadmincatalog.md) , o objeto na coleção **LocalComputer** conterá informações sobre o computador remoto cujo catálogo você está acessando.
 
 Esta coleção não dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
 
@@ -110,7 +110,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Descrição    | Defina como true para habilitar o DCOM no computador. |
 | Access         | ReadWrite                                   |
 | Tipo           | Bool                                        |
-| Padrão        | True                                        |
+| Padrão        | Verdadeiro                                        |
 | Sistema mínimo | Windows 2000                                |
 
 
@@ -146,7 +146,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | Nível de representação para permitir se um não estiver definido.                                                                                                               |
 | Access         | ReadWrite                                                                                                                                                     |
-| Tipo           | Valores longos possíveis: COMAdminImpersonationAnonymous (1) COMAdminImpersonationIdentify (2) COMAdminImpersonationImpersonate (3) COMAdminImpersonationDelegate (4) |
+| Tipo           | Valores long possible:COMAdminImpersonationAnonymous (1)COMAdminImpersonationIdentify (2)COMAdminImpersonationImpersonate (3)COMAdminImpersonationDelegate (4) |
 | Padrão        | COMAdminImpersonationIdentify (2)                                                                                                                             |
 | Sistema mínimo | Windows 2000                                                                                                                                                  |
 
@@ -155,7 +155,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
  
 
 > [!Note]  
-> É recomendável que você use as constantes na enumeração, e não os valores numéricos.
+> É recomendável que você use as constantes na enumeração e não os valores numéricos.
 
  
 
@@ -165,7 +165,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------|
-| Descrição    | Determina se o tipo de porta padrão fornecido deve ser Internet (true) ou intranet (false). |
+| Descrição    | Determina se o tipo padrão de porta fornecido deve ser Internet (True) ou intranet (False). |
 | Access         | ReadWrite                                                                                           |
 | Tipo           | Bool                                                                                                |
 | Padrão        | Falso                                                                                               |
@@ -197,10 +197,10 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|----------------------------------------------------------------------------------------|
-| Descrição    | Indica se o usuário dos mapeamentos de partição é verificado no repositório de domínio. |
+| Descrição    | Indica se o usuário dos mapeamentos de partição é verificado no armazenamento de domínio. |
 | Access         | ReadWrite                                                                              |
 | Tipo           | Bool                                                                                   |
-| Padrão        | True                                                                                   |
+| Padrão        | Verdadeiro                                                                                   |
 | Sistema mínimo | Windows Server 2003                                                                    |
 
 
@@ -213,7 +213,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Determina se as portas listadas na propriedade portas devem ser usadas para Internet (true) ou para intranet (false). |
+| Descrição    | Determina se as portas listadas na propriedade Portas devem ser usadas para Internet (True) ou para intranet (False). |
 | Access         | ReadWrite                                                                                                             |
 | Tipo           | Bool                                                                                                                  |
 | Padrão        | Falso                                                                                                                 |
@@ -223,13 +223,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="isrouter"></a>Isroteador
+### <a name="isrouter"></a>IsRouter
 
 
 
 | Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Defina como true se o computador for um roteador para o serviço CLB (balanceamento de carga do componente). Essa propriedade pode ser definida como true somente se o serviço de balanceamento de carga do componente estiver atualmente instalado no computador; caso contrário, os erros de ti com COMAdmin \_ E \_ exigirão uma \_ \_ plataforma diferente. |
+| Descrição    | Definido como True se o computador for um roteador para o serviço CLB (balanceamento de carga de componente). Essa propriedade poderá ser definida como True somente se o serviço de balanceamento de carga do componente estiver instalado no computador no momento; caso contrário, ele erros com COMADMIN \_ E \_ REQUER PLATAFORMA \_ \_ DIFERENTE. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                           |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                |
 | Padrão        | Falso                                                                                                                                                                                                                                                                               |
@@ -239,7 +239,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-Se essa propriedade for definida como true, o servidor CLB será configurado e começará na inicialização. O servidor será adicionado à coleção ApplicationCluster se ainda não estiver presente.
+Se essa propriedade for definida como True, o servidor CLB será configurado e iniciará na inicialização. O servidor será adicionado à coleção ApplicationCluster se ele ainda não estiver presente.
 
 ### <a name="loadbalancingclsid"></a>LoadBalancingCLSID
 
@@ -263,10 +263,10 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------|
-| Descrição    | Indica se o usuário dos mapeamentos de partição é verificado no repositório local. |
+| Descrição    | Indica se o usuário dos mapeamentos de partição é verificado no armazenamento local. |
 | Access         | ReadWrite                                                                             |
 | Tipo           | Bool                                                                                  |
-| Padrão        | True                                                                                  |
+| Padrão        | Verdadeiro                                                                                  |
 | Sistema mínimo | Windows Server 2003                                                                   |
 
 
@@ -346,7 +346,7 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 | Descrição    | Habilita o uso de dispensadores de recursos. |
 | Access         | ReadWrite                           |
 | Tipo           | Bool                                |
-| Padrão        | True                                |
+| Padrão        | Verdadeiro                                |
 | Sistema mínimo | Windows 2000                        |
 
 
@@ -391,10 +391,10 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------|
-| Descrição    | Defina como verdadeiro se o rastreamento de segurança estiver habilitado em objetos. |
+| Descrição    | Definido como True se o controle de segurança estiver habilitado em objetos. |
 | Access         | ReadWrite                                               |
 | Tipo           | Bool                                                    |
-| Padrão        | True                                                    |
+| Padrão        | Verdadeiro                                                    |
 | Sistema mínimo | Windows 2000                                            |
 
 
@@ -407,10 +407,10 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Determina como a diretiva de restrição de software (SRP) lida com conexões Activate as-Activator. Se definido como true, o nível de confiança SRP configurado para o objeto Server é comparado com o nível de confiança SRP do objeto Client e o nível de confiança superior (mais estrito) é usado para executar o objeto Server. Se definido como false, o objeto Server é executado com o nível de confiança SRP do objeto Client, independentemente do nível de confiança SRP com o qual o servidor está configurado. |
+| Descrição    | Determina como a SRP (política de restrição de software) lida com conexões de ativar como ativador. Se definido como True, o nível de confiança SRP configurado para o objeto de servidor será comparado com o nível de confiança SRP do objeto cliente e o nível de confiança mais alto (mais rigoroso) será usado para executar o objeto de servidor. Se definido como False, o objeto de servidor será executado com o nível de confiança SRP do objeto cliente, independentemente do nível de confiança SRP com o qual o servidor está configurado. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Padrão        | True                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Padrão        | Verdadeiro                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
@@ -423,10 +423,10 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Determina como a política de restrição de software (SRP) trata tentativas de conexões com os processos existentes. Se definido como false, as tentativas de conexão com objetos em execução não serão verificadas em relação aos níveis de confiança do SRP apropriados. Se definido como true, o objeto em execução deverá ter um nível de confiança do SRP igual ou maior (mais estrito) do que o objeto do cliente. Por exemplo, um objeto de cliente com um nível de confiança SRP irrestrito não pode se conectar a um objeto em execução com um nível de confiança SRP não permitido. |
+| Descrição    | Determina como a SRP (política de restrição de software) lida com tentativas de conexões com processos existentes. Se definido como False, as tentativas de se conectar a objetos em execução não serão verificadas em busca de níveis de confiança SRP apropriados. Se definido como True, o objeto em execução deverá ter um nível de confiança SRP igual ou superior (mais rigoroso) do que o objeto cliente. Por exemplo, um objeto cliente com um nível de confiança SRP irrestrito não pode se conectar a um objeto em execução com um nível de confiança SRP não permitido. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Padrão        | True                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Padrão        | Verdadeiro                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
@@ -439,9 +439,9 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Deve ser definido como um valor suficiente em segundos se você estiver fazendo várias operações em uma transação. O período de tempo limite padrão é de 60 segundos e o período de tempo limite máximo é de 3600 segundos (1 hora). A definição dessa propriedade como 0 desabilita o tempo limite da transação. Essa propriedade pode ser substituída por componentes individuais usando a propriedade ComponentTransactionTimeout da coleção [**Components**](components.md) . |
+| Descrição    | Deve ser definido como um valor suficiente em segundos se você estiver fazendo várias operações dentro de uma transação. O período de tempo limite padrão é de 60 segundos e o período de tempo limite máximo é de 3600 segundos (1 hora). Definir essa propriedade como 0 desabilita os tempos de tempo de transação. Essa propriedade pode ser substituído por componentes individuais usando a propriedade ComponentTransactionTimeout da coleção [**Components.**](components.md) |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Tipo           | Longo (0-3600)                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Tipo           | Long (0-3600)                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Padrão        | 60                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
@@ -451,7 +451,7 @@ Se essa propriedade for definida como true, o servidor CLB será configurado e c
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir da Microsoft Visual Basic demonstra como se conectar a um computador remoto e obter sua propriedade SecurityTrackingEnabled usando a coleção **LocalComputer** do computador remoto. Para usar este exemplo, adicione a biblioteca de tipos de administrador do COM+ como uma referência ao seu projeto Visual Basic.
+O exemplo de Visual Basic Microsoft a seguir demonstra como se conectar a um computador remoto e obter sua propriedade SecurityTrackingEnabled usando a coleção **LocalComputer** do computador remoto. Para usar este exemplo, adicione a Biblioteca de Tipos de Administrador COM+ como uma referência ao seu Visual Basic projeto.
 
 
 ```VB
@@ -501,7 +501,7 @@ End Function
 
 
 
-Para usar a função, forneça um valor de cadeia de caracteres para o nome do computador remoto. O código de Visual Basic a seguir mostra como se conectar ao computador chamado "RemoteComputerName".
+Para usar a função , forneça um valor de cadeia de caracteres para o nome do computador remoto. O código Visual Basic a seguir mostra como se conectar ao computador chamado "RemoteComputerName".
 
 
 ```VB

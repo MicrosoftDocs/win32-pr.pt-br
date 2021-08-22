@@ -1,38 +1,38 @@
 ---
-description: Esta seção descreve a interface de programação de aplicativo para o VDS (serviço de disco virtual).
+description: Esta seção descreve a interface de programação do aplicativo para o VDS (Serviço de Disco Virtual).
 ms.assetid: d00fc772-331f-4d71-a418-e34acdfb6652
-title: Referência do VDS
+title: Referência de VDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 369111add0b3f4b7e2742c764a6cbf8b1d8bfdd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a7f952a98d3bb27a58ed048f5fa4d2327055adb98a0d94e386c74a0637e2d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105775654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118846318"
 ---
-# <a name="vds-reference"></a>Referência do VDS
+# <a name="vds-reference"></a>Referência de VDS
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[Começando com Windows 8 e Windows Server 2012, a interface COM do Serviço de Disco [Virtual](virtual-disk-service-portal.md) é superada pelo [Windows Armazenamento API de Gerenciamento](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
-Esta seção descreve a interface de programação de aplicativo para o VDS (serviço de disco virtual).
+Esta seção descreve a interface de programação do aplicativo para o VDS (Serviço de Disco Virtual).
 
-Os desenvolvedores de aplicativos usam interfaces, estruturas, enumerações e constantes simbólicas nessa API para consultar e configurar o armazenamento — de discos a matrizes de armazenamento. Para obter uma visão detalhada da relação entre os tipos do VDS, consulte o [modelo de objeto do VDS](vds-object-model.md).
+Os desenvolvedores de aplicativos usam interfaces, estruturas, enumerações e constantes simbólicas nesta API para consultar e configurar o armazenamento— de discos para matrizes de armazenamento. Para ver uma análise detalhada da relação entre tipos de VDS, consulte o [Modelo de Objeto VDS](vds-object-model.md).
 
-Os fabricantes de armazenamento implementam muitas das interfaces definidas nesta seção.
+Armazenamento fabricantes implementam muitas das interfaces definidas nesta seção.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 <dl> <dt>
 
-[Constantes do VDS](vds-constants.md)
+[Constantes de VDS](vds-constants.md)
 </dt> <dd>
 
 Lista as constantes simbólicas na API do VDS.
 
 </dd> <dt>
 
-[Tipos de dados VDS](vds-data-types.md)
+[Tipos de dados do VDS](vds-data-types.md)
 </dt> <dd>
 
 Lista os tipos de dados usados com o VDS.
@@ -46,28 +46,28 @@ Descreve as enumerações usadas com o VDS.
 
 </dd> <dt>
 
-[Interfaces VDS](vds-interfaces.md)
+[VDS Interfaces](vds-interfaces.md)
 </dt> <dd>
 
-Descreve as interfaces VDS e os métodos que eles expõem.
+Descreve interfaces VDS e os métodos que eles expõem.
 
 </dd> <dt>
 
-[Estruturas VDS](vds-structures.md)
+[Estruturas de VDS](vds-structures.md)
 </dt> <dd>
 
 Descreve as estruturas passadas como parâmetros para métodos VDS.
 
 </dd> <dt>
 
-[Códigos de retorno comuns do serviço de disco virtual](virtual-disk-service-common-return-codes.md)
+[Códigos de retorno comuns do Serviço de Disco Virtual](virtual-disk-service-common-return-codes.md)
 </dt> <dd>
 
 Descreve os códigos de erro mais comuns que são específicos do VDS.
 
 </dd> <dt>
 
-[Glossário do serviço de disco virtual](virtual-disk-service-glossary-all.md)
+[Glossário do Serviço de Disco Virtual](virtual-disk-service-glossary-all.md)
 </dt> <dd>
 
 Glossário de termos técnicos usados na documentação do VDS.

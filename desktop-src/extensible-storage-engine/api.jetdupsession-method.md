@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetDupSession'
-title: Método API. JetDupSession
+description: 'Saiba mais sobre: Método Api.JetDupSession'
+title: Método Api.JetDupSession
 TOCTitle: 'JetDupSession method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetDupSession(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_SESID@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetdupsession(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9013c3c99c1d6c6067386038ec4a51f37f978650
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d94d1225d0bb463345b27bfde1128bf586fbef4f635f29d8d61b80514a0d8db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784311"
 ---
-# <a name="apijetdupsession-method"></a>Método API. JetDupSession
+# <a name="apijetdupsession-method"></a>Método Api.JetDupSession
 
-Inicialize uma nova sessão do ESE na mesma instância do sesid fornecido.
+Inicialize uma nova sessão ESE na mesma instância do sesid determinado.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,14 +61,14 @@ public static void JetDupSession(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser duplicada.
 
 <!-- end list -->
 
   - newSesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     Retorna a nova sessão.
 
@@ -80,4 +80,4 @@ public static void JetDupSession(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

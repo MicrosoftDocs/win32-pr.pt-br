@@ -1,19 +1,19 @@
 ---
-description: Muitos aplicativos precisam usar compactação e descompactação de dados sem perdas. A API de compactação simplifica isso expondo algoritmos de compactação do Windows por meio de uma API pública.
+description: Muitos aplicativos precisam usar compactação e descompactação de dados sem perdas. a api de compactação simplifica isso expondo Windows algoritmos de compactação por meio de uma API pública.
 ms.assetid: D603A7DE-D4A1-4515-9702-B03C81504661
 title: Usando a API de compactação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01eff163f4ea1ccf03e1cd4ac9cb16a26afeb265
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fedc1d57ad48196290500383686b35f557c87c34099aad842b1e8ff18f00d318
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118551380"
 ---
 # <a name="using-the-compression-api"></a>Usando a API de compactação
 
-Muitos aplicativos precisam usar compactação e descompactação de dados sem perdas. A API de compactação simplifica isso expondo algoritmos de compactação do Windows por meio de uma API pública. Cada algoritmo de compactação tem um conjunto de propriedades que controla seu comportamento. A API de compactação expõe uma interface que permite ao desenvolvedor definir ou consultar os valores dessas propriedades. Todas as propriedades dos algoritmos de compactação com suporte têm valores padrão que representam valores comumente usados dessas propriedades. Se uma propriedade for necessária para compactação e descompactação, os valores padrão serão idênticos, garantindo que valores idênticos sejam usados para compactação e descompactação.
+Muitos aplicativos precisam usar compactação e descompactação de dados sem perdas. a api de compactação simplifica isso expondo Windows algoritmos de compactação por meio de uma API pública. Cada algoritmo de compactação tem um conjunto de propriedades que controla seu comportamento. A API de compactação expõe uma interface que permite ao desenvolvedor definir ou consultar os valores dessas propriedades. Todas as propriedades dos algoritmos de compactação com suporte têm valores padrão que representam valores comumente usados dessas propriedades. Se uma propriedade for necessária para compactação e descompactação, os valores padrão serão idênticos, garantindo que valores idênticos sejam usados para compactação e descompactação.
 
 ## <a name="selecting-the-compression-algorithm"></a>Selecionando o algoritmo de compactação
 

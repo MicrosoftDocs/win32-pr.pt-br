@@ -4,20 +4,20 @@ ms.assetid: 80299b1a-09bf-4660-95d3-41a2b0074745
 title: Sobre os mecanismos de renderização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70fe3a9956bee0d167de9e6618187bfd1f2a6e39
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 92a398cbe342ed2e92fc23e7da034dd69cae492208e3201b3419b3999594a135
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118664364"
 ---
 # <a name="about-the-render-engines"></a>Sobre os mecanismos de renderização
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-Este artigo descreve como os [serviços de edição do DirectShow](directshow-editing-services.md) (des) renderizam um projeto de edição de vídeo.
+este artigo descreve como os [serviços de edição de DirectShow](directshow-editing-services.md) (DES) renderizam um projeto de edição de vídeo.
 
-No DES, um projeto é representado como uma linha do tempo. A linha do tempo é útil porque simplifica as tarefas mais comuns na edição de vídeo, como reorganizar os clipes de origem e adicionar efeitos de vídeo. A arquitetura de fluxo do DirectShow, por outro lado, requer um grafo de filtro. Portanto, para renderizar seu projeto, você deve converter uma linha do tempo em um grafo de filtro. O componente que faz isso é chamado de *mecanismo de renderização*. O DirectShow fornece dois mecanismos de renderização:
+No DES, um projeto é representado como uma linha do tempo. A linha do tempo é útil porque simplifica as tarefas mais comuns na edição de vídeo, como reorganizar os clipes de origem e adicionar efeitos de vídeo. a arquitetura de fluxo de DirectShow, por outro lado, requer um grafo de filtro. Portanto, para renderizar seu projeto, você deve converter uma linha do tempo em um grafo de filtro. O componente que faz isso é chamado de *mecanismo de renderização*. o DirectShow fornece dois mecanismos de renderização:
 
 -   Mecanismo de renderização básico: cria um grafo de filtro que fornece saída não compactada.
 -   Mecanismo de processamento inteligente: compila um grafo de filtro que fornece saída compactada.
@@ -27,16 +27,16 @@ O mecanismo de processamento inteligente usa a recompactação inteligente para 
 Para visualização, use o mecanismo de renderização básico. O mecanismo de processamento inteligente também pode visualizar, mas com menos eficiência, porque ele precisa descompactar o fluxo compactado. Para gravar arquivos, use o mecanismo de processamento inteligente se desejar a recompactação inteligente. Caso contrário, use o mecanismo de renderização básico. A recompactação inteligente pode reduzir muito o tempo necessário para gravar o arquivo.
 
 > [!IMPORTANT]
-> Não use o mecanismo de processamento inteligente para ler ou gravar arquivos de mídia do Windows.
+> não use o mecanismo de processamento inteligente para ler ou gravar arquivos de mídia Windows.
 
  
 
 > [!IMPORTANT]
-> Ambos os mecanismos de renderização criam uma janela invisível que processa as mensagens. O thread que cria o mecanismo de renderização deve ter um loop de mensagem para enviar mensagens. Além disso, esse thread não deve ser encerrado até que o mecanismo de renderização e o Gerenciador do grafo de filtro sejam liberados. Caso contrário, o aplicativo poderá ser bloqueado.
+> Ambos os mecanismos de renderização criam uma janela invisível que processa as mensagens. O thread que cria o mecanismo de renderização deve ter um loop de mensagem para enviar mensagens. além disso, esse thread não deve ser encerrado até que o mecanismo de renderização e o filtro Graph Manager sejam liberados. Caso contrário, o aplicativo poderá ser bloqueado.
 
  
 
-Construindo o grafo de filtro
+Construindo o filtro Graph
 
 O grafo de filtro é criado em dois estágios. No primeiro estágio, o mecanismo de renderização constrói um "front-end", que é um grafo de filtro parcial. O diagrama a seguir ilustra um front-end típico:
 
@@ -52,10 +52,10 @@ Na segunda etapa, os Pins de saída são conectados aos filtros de renderizaçã
 
 <dl> <dt>
 
-[Visualizando um projeto](previewing-a-project.md)
+[Visualizando um Project](previewing-a-project.md)
 </dt> <dt>
 
-[Gravando um projeto em um arquivo](writing-a-project-to-a-file.md)
+[gravando um Project em um arquivo](writing-a-project-to-a-file.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
 title: Modified-Count atributo
-description: Número de série do log de alteração do logon de rede.
+description: Número de série do Log de Alterações de Logon Líquido.
 ms.assetid: a0ed57c4-e9e2-40c2-8927-38448e40ee62
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Modified-Count do atributo AD
-- Esquema de AD do atributo modifiedCount
+- Modified-Count atributo AD Schema
+- Esquema do AD do atributo modifiedCount
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a669b735df1b513df0da0c6eee15b34df88960cf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 29d66c58de13398005e4f54a8cb4552b00798d413cc6607d250e08077d886db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118687418"
 ---
 # <a name="modified-count-attribute"></a>Modified-Count atributo
 
-Número de série do log de alteração do logon de rede.
+Número de série do Log de Alterações de Logon Líquido.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Modified-Count                       |
-| LDAP-Display-Name | modifiedCount                        |
+| Ldap-Display-Name | modifiedCount                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.168               |
-| System-ID-GUID    | bf9679c5-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679c5-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,15 +58,15 @@ Número de série do log de alteração do logon de rede.
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Número de série do log de alteração do logon de rede.
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Número de série do log de alteração do logon de rede.
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000011                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Número de série do log de alteração do logon de rede.
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| É de valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
 | No catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
@@ -142,7 +142,7 @@ Número de série do log de alteração do logon de rede.
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| É de valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
 | No catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
@@ -163,7 +163,7 @@ Número de série do log de alteração do logon de rede.
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| É de valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
 | No catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |

@@ -1,7 +1,7 @@
 ---
-description: Função D3DXQuaternionRotationAxis (D3dx9math. h) – gira um Quaternion sobre um eixo arbitrário.
+description: Função D3DXQuaternionRotationAxis (D3dx9math.h) – gira um quatternion sobre um eixo arbitrário.
 ms.assetid: 9ff0fe2c-54d6-482c-84e1-f38e3c57d8dd
-title: Função D3DXQuaternionRotationAxis (D3dx9math. h)
+title: Função D3DXQuaternionRotationAxis (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a5cbbdc3603b5e2eb7a03f592d44fa88f07ef015
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4879cec21f356399d2f98c7c3286da9ae3994c81fa64911177f287c9f0e216b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524598"
 ---
-# <a name="d3dxquaternionrotationaxis-function-d3dx9mathh"></a>Função D3DXQuaternionRotationAxis (D3dx9math. h)
+# <a name="d3dxquaternionrotationaxis-function-d3dx9mathh"></a>Função D3DXQuaternionRotationAxis (D3dx9math.h)
 
-Gira um Quaternion sobre um eixo arbitrário.
+Gira um quaternion sobre um eixo arbitrário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,28 +42,28 @@ D3DXQUATERNION* D3DXQuaternionRotationAxis(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Ponteiro para a estrutura [**D3DXQUATERNION**](d3dxquaternion.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXQUATERNION**](d3dxquaternion.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para a estrutura [**D3DXVECTOR3**](d3dxvector3.md) que identifica o eixo sobre o qual girar o Quaternion.
+Ponteiro para a [**estrutura D3DXVECTOR3**](d3dxvector3.md) que identifica o eixo sobre o qual girar o quaternão.
 
 </dd> <dt>
 
-*Ângulo* \[ no\]
+*Ângulo* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Ângulo de rotação, em radianos. Os ângulos são medidos no sentido horário olhando ao longo do eixo de rotação em direção à origem.
 
@@ -73,13 +73,13 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Ponteiro para uma estrutura [**D3DXQUATERNION**](d3dxquaternion.md) girado em volta do eixo especificado.
+Ponteiro para uma [**estrutura D3DXQUATERNION**](d3dxquaternion.md) girada em torno do eixo especificado.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXQuaternionRotationAxis** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXQuaternionRotationAxis** pode ser usada como um parâmetro para outra função.
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entrada de Quaternion que ainda não esteja normalizada.
+Use [**D3DXQuaternionNormalize para**](d3dxquaternionnormalize.md) qualquer entrada de quatérnion que ainda não tenha sido normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,12 +87,12 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

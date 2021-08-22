@@ -3,9 +3,9 @@ title: Erro. método clearErrorQueue
 description: O método clearErrorQueue limpa os erros da fila de erros. | Erro. método clearErrorQueue
 ms.assetid: 306f0700-88b1-4433-8abb-7d225e82060a
 keywords:
-- método clearErrorQueue Windows Media Player
+- Windows Media Player do método clearErrorQueue
 - método clearErrorQueue Windows Media Player, classe Error
-- Classe de erro do Windows Media Player, método clearErrorQueue
+- classe Error Windows Media Player, método clearErrorQueue
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b756708b8f0643f86489c26dd921e87c408be8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a7a9fb271cab684c1263db4f0c89655855fdcb341dae20d1a828150ab84b81b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118838010"
 ---
 # <a name="errorclearerrorqueue-method"></a>Erro. método clearErrorQueue
 
@@ -40,7 +40,7 @@ Error.clearErrorQueue()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -48,11 +48,11 @@ Esse método não retorna um valor.
 
 Esse método é útil para limpar a fila de erros depois que uma série de erros é processada.
 
-Você deve definir *as configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
+você deve definir *Configurações*. **enableErrorDialogs** como false se você optar por exibir mensagens de erro personalizadas.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *erro*. **clearErrorQueue** em um manipulador de eventos para esvaziar a fila de erros após a exibição de todas as descrições de erro. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *erro*. **clearErrorQueue** em um manipulador de eventos para esvaziar a fila de erros após a exibição de todas as descrições de erro. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

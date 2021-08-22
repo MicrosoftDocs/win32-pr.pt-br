@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cdb22f3abc57fc2331ff87bd05bc05d580d607c
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 9354cc652bfce22183370b1183062d6cf7f27ce60b3681862f150f565d444a6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118704320"
 ---
 # <a name="drm_lasignatureprivkey"></a>\_LASIGNATUREPRIVKEY DRM
 
@@ -42,9 +42,9 @@ Essa propriedade pode ser gerada usando o método [**IWMDRMWriter:: GenerateSign
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c562bb0acd546fd2c8f92a92074e599c8a505dc9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 84a2ea48bc1472d69c2247f227b94193326927481838894e24efbce9e09afc87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105754658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642144"
 ---
 # <a name="ncacn_nb_nb-attribute"></a>\_ \_ atributo NB do ncacn NB
 
@@ -45,7 +45,7 @@ A sintaxe da cadeia de caracteres de porta NetBIOS, como todas as cadeias de por
 > [!Note]  
 > Não há suporte para essa família de protocolos no WindowsÂ XP.
 
- 
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -89,6 +89,6 @@ interface iface
 [**Associação de cadeia de caracteres**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

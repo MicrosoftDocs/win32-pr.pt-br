@@ -1,6 +1,6 @@
 ---
 title: atributo ms-Exch-House-Identifier
-description: Esse atributo contém um endereço para um contato em um catálogo de endereços do Exchange Server.
+description: esse atributo contém um endereço para um contato em um catálogo de endereços do Exchange server.
 ms.assetid: 99a393c7-f36c-4ade-9b14-f339f42225ba
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8d6e0fb0b6a65bc72697b863c8022a861508fdd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18024a765bac019ada8ab2a075fa20e60291abca029c92a3890ead565f794c0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683040"
 ---
 # <a name="ms-exch-house-identifier-attribute"></a>atributo ms-Exch-House-Identifier
 
-Esse atributo contém um endereço para um contato em um catálogo de endereços do Exchange Server.
+esse atributo contém um endereço para um contato em um catálogo de endereços do Exchange server.
 
 
 
@@ -57,7 +57,7 @@ Esse atributo contém um endereço para um contato em um catálogo de endereços
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -78,7 +78,7 @@ Esse atributo contém um endereço para um contato em um catálogo de endereços
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -99,7 +99,7 @@ Esse atributo contém um endereço para um contato em um catálogo de endereços
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -120,10 +120,10 @@ Esse atributo contém um endereço para um contato em um catálogo de endereços
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
@@ -141,10 +141,10 @@ Esse atributo contém um endereço para um contato em um catálogo de endereços
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |

@@ -3,24 +3,24 @@ title: Autenticando o aplicativo
 description: Autenticando o aplicativo
 ms.assetid: 011815fa-d55c-4abc-9ec8-55d754827342
 keywords:
-- Windows Media Gerenciador de Dispositivos, autenticação
+- Windows Gerenciador de Dispositivos de mídia, autenticação
 - Gerenciador de Dispositivos, autenticação
 - Guia de programação, autenticação
 - aplicativos de área de trabalho, autenticação
-- Criando aplicativos de Gerenciador de Dispositivos de mídia do Windows, autenticação
+- criando Windows aplicativos de Gerenciador de Dispositivos de mídia, autenticação
 - autenticação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7779cdbb874278e6b62517cc2c1983dd2ce8fa1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9b67ad7c603bbfd3a56667bfcfe8742775c8ae5683888d72661e0a0974aa5358
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105761501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118586731"
 ---
 # <a name="authenticating-the-application"></a>Autenticando o aplicativo
 
-A primeira etapa que seu aplicativo deve executar é a autenticação. A autenticação verifica a identidade do aplicativo para o Windows Media Gerenciador de Dispositivos. Depois de autenticar seu aplicativo, você pode chamar **QueryInterface** para obter a interface [**IWMDeviceManager**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager) raiz, que pode ser consultada para outras interfaces necessárias, que podem ser consultadas para todas as outras interfaces. A autenticação precisa ocorrer apenas uma vez, na inicialização.
+A primeira etapa que seu aplicativo deve executar é a autenticação. a autenticação verifica a identidade do aplicativo para Windows Gerenciador de Dispositivos de mídia. Depois de autenticar seu aplicativo, você pode chamar **QueryInterface** para obter a interface [**IWMDeviceManager**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdevicemanager) raiz, que pode ser consultada para outras interfaces necessárias, que podem ser consultadas para todas as outras interfaces. A autenticação precisa ocorrer apenas uma vez, na inicialização.
 
 Para autenticar seu aplicativo, execute estas etapas:
 
@@ -91,9 +91,9 @@ HRESULT CWMDMController::Authenticate()
 
 <dl> <dt>
 
-[**Criando um aplicativo de Gerenciador de Dispositivos de mídia do Windows**](creating-a-windows-media-device-manager-application.md)
+[**criando um aplicativo de Gerenciador de Dispositivos de mídia Windows**](creating-a-windows-media-device-manager-application.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

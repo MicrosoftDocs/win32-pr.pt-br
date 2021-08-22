@@ -4,12 +4,12 @@ ms.assetid: b01145c6-76ba-4a81-bca6-59c4ca488dac
 title: Considerações de segurança para solicitantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d3e989793dbf5a5dd1fac3224cf6f06958564de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60d64a5c817a8c45951d56d3fa12e78a03d8bee9dd742f67755f949d1f90a0e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118590947"
 ---
 # <a name="security-considerations-for-requesters"></a>Considerações de segurança para solicitantes
 
@@ -33,7 +33,7 @@ Ao desenvolver um solicitante, defina o sinalizador COM COMGLB \_ exceção \_ n
 
 Os solicitantes precisam estar cientes de que, quando o processo atua como um servidor (por exemplo, permitindo que os gravadores modifiquem o documento de componentes de backup), eles devem permitir chamadas de entrada de outros participantes do VSS, como gravadores ou o serviço VSS.
 
-No entanto, por padrão, um processo do Windows permitirá apenas clientes COM em execução na mesma sessão de logon (o SID próprio) ou em execução na conta sistema local. Esse é um problema potencial porque esses padrões não são adequados para a infraestrutura do VSS. Por exemplo, os gravadores podem ser executados como uma conta de usuário de "operador de backup" que não esteja na mesma sessão de logon que o processo do solicitante nem uma conta do sistema local.
+no entanto, por padrão, um processo de Windows permitirá apenas clientes com em execução na mesma sessão de logon (o SID próprio) ou em execução na conta sistema Local. Esse é um problema potencial porque esses padrões não são adequados para a infraestrutura do VSS. Por exemplo, os gravadores podem ser executados como uma conta de usuário de "operador de backup" que não esteja na mesma sessão de logon que o processo do solicitante nem uma conta do sistema local.
 
 Para lidar com esse tipo de problema, cada processo de servidor COM pode exercer mais controle sobre se um cliente RPC ou COM tem permissão para executar um método COM implementado pelo servidor (um solicitante, nesse caso), usando [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) para definir uma "permissão de verificação de acesso com" padrão de todo o processo.
 
@@ -41,7 +41,7 @@ Os solicitantes podem fazer o seguinte explicitamente:
 
 -   Permitir que todos os processos acessem para chamar o processo do solicitante.
 
-    Essa opção pode ser adequada para a grande maioria dos solicitantes e é usada por outros servidores COM — por exemplo, todos os serviços do Windows baseados em SVCHOST já estão usando essa opção, assim como todos os serviços COM+ por padrão.
+    essa opção pode ser adequada para a grande maioria dos solicitantes e é usada por outros servidores com — por exemplo, todos os serviços de Windows baseados em SVCHOST já estão usando essa opção, assim como todos os serviços COM+ por padrão.
 
     Permitir que todos os processos executem chamadas COM de entrada não é necessariamente uma vulnerabilidade de segurança. Um solicitante atuando como um servidor COM, como todos os outros servidores COM, sempre retém a opção de autorizar seus clientes em cada método COM implementado em seu processo.
 
@@ -49,7 +49,7 @@ Os solicitantes podem fazer o seguinte explicitamente:
 
     Para permitir que todos os processos acessem COM um solicitante, você pode passar um descritor de segurança **nulo** como o primeiro parâmetro de [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). (Observe que **CoInitializeSecurity** deve ser chamado no máximo uma vez para todo o processo. Consulte a documentação COM ou o MSDN para obter mais informações sobre as chamadas **CoInitializeSecurity** .)
 
-    O exemplo de código a seguir mostra como um solicitante deve chamar [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) no Windows 8 e no windows Server 2012 e posterior para ser compatível com o VSS para compartilhamentos de arquivos remotos (RVSS):
+    o exemplo de código a seguir mostra como um solicitante deve chamar [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) em Windows 8 e Windows Server 2012 e posterior para ser compatível com o VSS para compartilhamentos de arquivos remotos (RVSS):
 
     ``` syntax
     // Initialize COM security.
@@ -72,7 +72,7 @@ Os solicitantes podem fazer o seguinte explicitamente:
     -   Defina o nível de representação para a representação do **nível de imp do RPC \_ \_ \_ \_ C**.
     -   Defina os recursos de segurança de encobrimento como **\_ estático EOAC**. Para obter mais informações sobre a segurança de encobrimento, consulte [encobrindo](../com/cloaking.md).
 
-    O exemplo de código a seguir mostra como um solicitante deve chamar [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) no Windows 7 e no windows Server 2008 R2 e versões anteriores (ou no Windows 8 e no windows Server 2012 e posteriores, se a compatibilidade do RVSS não for necessária):
+    o exemplo de código a seguir mostra como um solicitante deve chamar [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity) no Windows 7 e Windows Server 2008 R2 e anterior (ou no Windows 8 e Windows Server 2012 e posterior, se a compatibilidade do RVSS não for necessária):
 
     ``` syntax
     // Initialize COM security.
@@ -103,11 +103,11 @@ Os solicitantes podem fazer o seguinte explicitamente:
     -   Sistema Local
     -   Serviço Local
 
-        **Windows XP:** Não há suporte para esse valor até o Windows Server 2003.
+        **Windows XP:** não há suporte para esse valor até que Windows Server 2003.
 
     -   Serviço de Rede
 
-        **Windows XP:** Não há suporte para esse valor até o Windows Server 2003.
+        **Windows XP:** não há suporte para esse valor até que Windows Server 2003.
 
     -   Membros do grupo Administradores local
     -   Membros do grupo operadores de backup local
@@ -176,12 +176,12 @@ O administrador do ThatDomain do usuário \\ não poderá executar um solicitant
 
 Se um solicitante executar o backup de estado do sistema fazendo backup de arquivos individuais em vez de usar uma imagem de volume para o backup, ele deverá chamar as funções [**FindFirstFileNameW**](/windows/win32/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW**](/windows/win32/api/fileapi/nf-fileapi-findnextfilenamew) para enumerar links físicos em arquivos localizados nos seguintes diretórios:
 
--   Perftrack do Windows \\ System32 \\ WDI \\\\
--   WINSXS do Windows \\\\
+-   Windows \\ \\perftrack WDI do system32 \\\\
+-   Windows \\ WINSXS\\
 
 Esses diretórios só podem ser acessados por membros do grupo Administradores. Por esse motivo, esse solicitante deve ser executado na conta do sistema ou em uma conta de usuário que seja membro do grupo Administradores.
 
-**Windows XP e Windows Server 2003:** As funções [**FindFirstFileNameW**](/windows/win32/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW**](/windows/win32/api/fileapi/nf-fileapi-findnextfilenamew) não têm suporte até o Windows Vista e o Windows Server 2008.
+**Windows XP e Windows Server 2003:** as funções [**FindFirstFileNameW**](/windows/win32/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW**](/windows/win32/api/fileapi/nf-fileapi-findnextfilenamew) não têm suporte até Windows Vista e Windows Server 2008.
 
  
 

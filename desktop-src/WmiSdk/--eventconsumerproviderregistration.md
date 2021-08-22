@@ -16,12 +16,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 38552519221018735c3c7543d9a1f3f2d4b680e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc3acec16b92c375f07836318be0e77c335862aec826c80bb77815865a337a72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557930"
 ---
 # <a name="__eventconsumerproviderregistration-class"></a>\_\_Classe EventConsumerProviderRegistration
 

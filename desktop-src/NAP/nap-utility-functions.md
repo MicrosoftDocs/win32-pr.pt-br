@@ -4,19 +4,19 @@ description: As funções do utilitário a seguir dão suporte à API NAP.
 ms.assetid: 0819067c-cca5-4140-8b4d-f3b996826152
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 260c423909011c81f52ea89ce8d3137b35c55167
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d9b421069804a4047b511b775c7ffafe5b4b987eb0b0ad5105f48df0ed990e22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118620777"
 ---
 # <a name="nap-utility-functions"></a>Funções do utilitário NAP
 
 > [!Note]  
 > A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
 
- 
+ 
 
 As funções do utilitário a seguir dão suporte à API NAP.
 
@@ -45,9 +45,9 @@ Nas funções FreeXxx (), todos os ponteiros inseridos também serão liberados.
 -   [**InitializeNapAgentNotifier**](initializenapagentnotifier.md)
 -   [**UninitializeNapAgentNotifier**](uninitializenapagentnotifier.md)
 
- 
+ 
 
- 
+ 
 
 
 

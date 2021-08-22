@@ -1,6 +1,6 @@
 ---
 title: Atributo LeadPerformer
-description: O atributo LeadPerformer é o nome do executor de Lead associado ao conteúdo de vídeo.
+description: O atributo LeadPerformer é o nome do ator principal associado ao conteúdo do vídeo.
 ms.assetid: cfcd643e-27eb-4556-ba4c-4659694d4bc2
 keywords:
 - Atributo LeadPerformer Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c4e5495e218a5e759d868fbef6561aaf80818a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f0fade2d85a00e60fa17ef095daffe38189620031a512ec19cc5f85d9c8e592d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575116"
 ---
 # <a name="leadperformer-attribute"></a>Atributo LeadPerformer
 
-O atributo **LeadPerformer** é o nome do executor de Lead associado ao conteúdo de vídeo.
+O **atributo LeadPerformer** é o nome do ator principal associado ao conteúdo do vídeo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,7 +31,7 @@ O atributo **LeadPerformer** é o nome do executor de Lead associado ao conteúd
 
 Esse atributo é armazenado somente no cache da biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: b0d701c7-47ef-4034-873f-dd4428efb4c7
 title: Configurando o atributo de transação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c0690a50f79c77a18b089cec1865dfbb9e7f428
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: de6310d2544090d4b551a93782b4756b3d89f2d6d365dfc09aec4658d5d3e1b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118546213"
 ---
 # <a name="setting-the-transaction-attribute"></a>Configurando o atributo de transação
 
@@ -31,7 +31,7 @@ Você deve repetir este procedimento para cada componente.
 
 ## <a name="to-set-the-attribute-value-programmatically"></a>Para definir o valor do atributo programaticamente
 
-Os programadores que usam o Microsoft Visual Basic podem definir o atributo de transação com **MTSTransactionMode**, uma propriedade de módulo de classe para projetos DLL do ActiveX. Visual Basic mapeia sua seleção para o valor equivalente de atributo de transação COM+ e publica o valor na biblioteca de tipos do componente.
+os programadores que usam o Microsoft Visual Basic podem definir o atributo de transação com **MTSTransactionMode**, uma propriedade de módulo de classe para ActiveX projetos DLL. Visual Basic mapeia sua seleção para o valor equivalente de atributo de transação COM+ e publica o valor na biblioteca de tipos do componente.
 
 A tabela a seguir mapeia cada valor constante **MTSTransactionMode** para seu valor de transação com+ equivalente.
 

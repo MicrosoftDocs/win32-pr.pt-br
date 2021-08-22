@@ -3,7 +3,7 @@ title: Player. URL
 description: A propriedade URL especifica ou recupera o nome do item de mídia a ser reproduzido.
 ms.assetid: 74987ffd-c625-4d30-9f5f-5170119158f9
 keywords:
-- Player. URL do Windows Media Player
+- Windows Media Player Player. URL
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62d4f0c75ac0dddeeaced0f1a3a6f1247df4ae36
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a00a6513350ee9c39855aba8168faf9ced788a0686a0fdbe845013dcc521142f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118572035"
 ---
 # <a name="playerurl"></a>Player. URL
 
 A propriedade **URL** especifica ou recupera o nome do item de mídia a ser reproduzido.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 *Player* . **URL** do
 
@@ -43,7 +43,7 @@ Não chame esse método do código do manipulador de eventos. Solicitando *jogad
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um elemento de entrada de texto HTML e um elemento de entrada de botão HTML. O elemento TEXT permite que o usuário digite um caminho para especificar um arquivo de mídia digital a ser reproduzido. O elemento BUTTON executa o JScript que abre o arquivo e inicia o Windows Media Player. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo a seguir cria um elemento de entrada de texto HTML e um elemento de entrada de botão HTML. O elemento TEXT permite que o usuário digite um caminho para especificar um arquivo de mídia digital a ser reproduzido. o elemento BUTTON executa JScript que abre o arquivo e inicia Windows Media Player. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

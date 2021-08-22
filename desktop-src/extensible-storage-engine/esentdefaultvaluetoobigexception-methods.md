@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentDefaultValueTooBigException'
+description: 'Saiba mais sobre: Métodos EsentDefaultValueTooBigException'
 title: 'Métodos EsentDefaultValueTooBigException '
 TOCTitle: EsentDefaultValueTooBigException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentDefaultValueTooBigException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101603
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5224489789e4859504979e742c0c54098780447c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da18a2bb2f2f5503a6fabddbb8dd1d5af56eaa5832292460881fd9156bcf7b9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779870"
 ---
 # <a name="esentdefaultvaluetoobigexception-methods"></a>Métodos EsentDefaultValueTooBigException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentDefaultValueTooBigException](./esentdefaultvaluetoobigexception-class.md) expõe os membros a seguir.
+O [tipo EsentDefaultValueTooBigException](./esentdefaultvaluetoobigexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentDefaultValueTooBigException](./esentdefaultvaluetoobigexception-cla
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentDefaultValueTooBigException](./esentdefaultvaluetoobigexception-cla
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentDefaultValueTooBigException](./esentdefaultvaluetoobigexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

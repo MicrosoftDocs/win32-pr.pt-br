@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST.statusColor
+title: PLAYLIST. statusColor
 description: O atributo statusColor especifica ou recupera a cor da linha de status no elemento PLAYLIST.
 ms.assetid: 31e32a69-1b77-42fe-9edc-45532ee51c27
 keywords:
-- PLAYLIST.statusColor Windows Media Player
+- Windows Media Player de PLAYLIST. statusColor
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118335650"
 ---
-# <a name="playliststatuscolor"></a>PLAYLIST.statusColor
+# <a name="playliststatuscolor"></a>PLAYLIST. statusColor
 
-O **atributo statusColor** especifica ou recupera a cor da linha de status no elemento **PLAYLIST.**
+O atributo **statusColor** especifica ou recupera a cor da linha de status no elemento **playlist** .
 
 ``` syntax
         elementID.statusColor
@@ -29,7 +29,7 @@ O **atributo statusColor** especifica ou recupera a cor da linha de status no el
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém qualquer valor de Internet Explorer da Microsoft. Ele tem um valor padrão igual ao valor do **atributo backgroundColor.**
+Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. Ele tem um valor padrão igual ao valor do atributo **backgroundColor** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
 
 
 
@@ -45,13 +45,13 @@ Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém 
 
 <dl> <dt>
 
-[**Referência de cores**](color-reference.md)
+[**Referência de cor**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST.backgroundImage**](playlist-backgroundimage.md)
+[**PLAYLIST. backgroundImage**](playlist-backgroundimage.md)
 </dt> </dl>
 
  

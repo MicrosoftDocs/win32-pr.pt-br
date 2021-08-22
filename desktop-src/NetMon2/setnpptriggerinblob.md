@@ -1,7 +1,7 @@
 ---
-description: Define o gatilho de BLOB.
+description: Define o gatilho BLOB.
 ms.assetid: 88bfd5cd-f563-4d0c-81a3-54a846805b87
-title: Função SetNPPTriggerInBlob (Netmon. h)
+title: Função SetNPPTriggerInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 05b8bb3f7f95dc3246ef10f3945b9ab0868550cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ed344b3434e8ae53fe88e7ee97b77a6efa5bd3f0941af6cc9cbc6f2ff10304b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363774"
 ---
 # <a name="setnpptriggerinblob-function"></a>Função SetNPPTriggerInBlob
 
-A função **SetNPPTriggerInBlob** define o gatilho de BLOB.
+A **função SetNPPTriggerInBlob** define o gatilho BLOB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,36 +41,36 @@ DWORD SetNPPTriggerInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-O identificador para o BLOB.
+O alça para o BLOB.
 
 </dd> <dt>
 
-*pTrigger* \[ no\]
+*pTrigger* \[ Em\]
 </dt> <dd>
 
 Um ponteiro para o valor do gatilho.
 
 </dd> <dt>
 
-*hErrorBlob* \[ fora\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-O identificador para um BLOB de erro que especifica onde ocorreu o erro (se houver) no BLOB original.
+O handle para um BLOB de erro que especifica onde no BLOB original ocorreu o erro (se algum).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
 ## <a name="remarks"></a>Comentários
 
-Esses dados de gatilho são armazenados na categoria de **gatilho** do blob.
+Esses dados de gatilho são armazenados na **categoria Gatilho** do BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ Esses dados de gatilho são armazenados na categoria de **gatilho** do blob.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

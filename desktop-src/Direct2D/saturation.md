@@ -6,12 +6,12 @@ keywords:
 - efeito de saturação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d6912e64c9297a3554b4785128e1282a3974d36
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf5f9a4bff56ed47a0ca182dab855899d98022252c6f20c250aef693451df4c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118665025"
 ---
 # <a name="saturation-effect"></a>Efeito de saturação
 
@@ -33,7 +33,7 @@ O exemplo aqui mostra as imagens de entrada e saída do efeito de saturação co
 | Antes                                                      |
 |-------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)  |
-| After (após)                                                       |
+| Depois                                                       |
 | ![a imagem após a transformação.](images/16-saturation.png) |
 
 
@@ -82,9 +82,9 @@ Esse efeito consome e gera imagens alfa multiplicadas. O efeito não funcionará
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 
 

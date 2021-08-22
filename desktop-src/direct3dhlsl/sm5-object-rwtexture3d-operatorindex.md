@@ -1,9 +1,9 @@
 ---
-title: Função RWTexture3D::Operator
+title: 'Função RWTexture3D:: Operator'
 description: Retorna uma variável de recurso de um RWTexture3D.
 ms.assetid: 0b4ea895-ac34-49e5-80e6-74229c33bfe9
 keywords:
-- Função de operador HLSL
+- Função Operator HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118509132"
 ---
-# <a name="rwtexture3doperator--function"></a>Função RWTexture3D::Operator
+# <a name="rwtexture3doperator--function"></a>Função RWTexture3D:: Operator
 
-Retorna uma variável de recurso [**de um RWTexture3D.**](sm5-object-rwtexture3d.md)
+Retorna uma variável de recurso de um [**RWTexture3D**](sm5-object-rwtexture3d.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ Em\]
+*pos* \[ no\]
 </dt> <dd>
 
 Tipo: **uint3**
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -1,6 +1,6 @@
 ---
-title: Métodos de Win32_RdvhManagement
-description: A \_ classe de métodos RdvhManagement do Win32 expõe os métodos a seguir.
+title: Métodos Win32_RdvhManagement de Win32_RdvhManagement
+description: A classe Métodos \_ Win32 RdvhManagement expõe os métodos a seguir.
 ms.assetid: 3AAE4833-3BA0-4827-BB11-47D56F37D51A
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0916482d329419d00f01ed9c816f8892dd9d86a2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 940bf16e5dd4e4c5a55b96128610571ca4d0e7ed9d3a290d33bd1457ae80fa5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118848873"
 ---
-# <a name="win32_rdvhmanagement-methods"></a>\_Métodos RdvhManagement do Win32
+# <a name="win32_rdvhmanagement-methods"></a>Métodos Win32 \_ RdvhManagement
 
-A classe de [**\_ métodos RdvhManagement do Win32**](win32-rdvhmanagement.md) expõe os métodos a seguir.
+A [**classe Métodos \_ Win32 RdvhManagement**](win32-rdvhmanagement.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -28,14 +28,14 @@ A classe de [**\_ métodos RdvhManagement do Win32**](win32-rdvhmanagement.md) e
 [**Método RdvMigrateVmToDifferentHost**](rdvmigratevmtodifferenthost-win32-rdvhmanagement.md)
 </dt> <dd>
 
-Inicia uma migração dinâmica de uma máquina virtual para um host especificado.
+Inicia uma migração ao vivo de uma máquina virtual para um host especificado.
 
 </dd> <dt>
 
 [**Método RdvCopyBaseVmLocally**](rdvcopybasevmlocally-win32-rdvhmanagement.md)
 </dt> <dd>
 
-Copia uma máquina virtual de base local para um servidor de host de virtualização de área de trabalho remota (RDV) especificado.
+Copia uma máquina virtual base local para um servidor host de RDV (virtualização de área de trabalho remota) especificado.
 
 </dd> <dt>
 
@@ -49,7 +49,7 @@ Define as permissões em uma máquina virtual para o usuário atual.
 [**Método RdvUndoVMPermissions**](rdvundovmpermissions-win32-rdvhmanagement.md)
 </dt> <dd>
 
-Reverte as permissões definidas por [**RdvSetupVMPermissions**](rdvsetupvmpermissions-win32-rdvhmanagement.md) na máquina virtual especificada.
+Reverte as permissões definidas [**por RdvSetupVMPermissions**](rdvsetupvmpermissions-win32-rdvhmanagement.md) na máquina virtual especificada.
 
 </dd> <dt>
 
@@ -60,9 +60,9 @@ Cria um modelo de disco de usuário, com o tamanho máximo especificado, no loca
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

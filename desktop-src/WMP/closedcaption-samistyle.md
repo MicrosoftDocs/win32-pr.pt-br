@@ -1,9 +1,9 @@
 ---
-title: ClosedCaption. SAMIstyle
-description: A propriedade SAMIstyle especifica ou recupera o estilo de legenda oculta.
+title: ClosedCaption.SAMIStyle
+description: A propriedade SAMIStyle especifica ou recupera o estilo de legenda fechada.
 ms.assetid: 5535fb31-f1c0-49c4-b758-df74964b1e67
 keywords:
-- ClosedCaption. SAMIstyle Windows Media Player
+- ClosedCaption.SAMIStyle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ebe81c2c2c4f4504d6167abe538c52ab769550a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed4a12671877cf0d4d8abdb77d169b0f13000bc564e6c1dc37e65bf6eccdf005
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580761"
 ---
-# <a name="closedcaptionsamistyle"></a>ClosedCaption. SAMIstyle
+# <a name="closedcaptionsamistyle"></a>ClosedCaption.SAMIStyle
 
-A propriedade **samistyle** especifica ou recupera o estilo de legenda oculta.
+A **propriedade SAMIStyle** especifica ou recupera o estilo de legenda fechada.
 
 ``` syntax
 player.closedCaption.SAMIStyle
@@ -31,11 +31,11 @@ player.closedCaption.SAMIStyle
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** de leitura/gravação.
+Essa propriedade é uma Cadeia de Caracteres de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Um arquivo SAMI pode conter várias definições de estilo de formato. Os estilos SAMI são definidos entre as marcas <STYLE> e </STYLE> no arquivo Sami. Um estilo é definido com uma cadeia de caracteres de texto precedida por um \# caractere. Por exemplo:
+Um arquivo SAMI pode conter várias definições de estilo de formato. Os estilos SAMI são definidos entre <STYLE> as marcas e </STYLE> no arquivo SAMI. Um estilo é definido com uma cadeia de caracteres de texto precedida por um \# caractere. Por exemplo:
 
 
 ```
@@ -55,7 +55,7 @@ Se nenhum estilo SAMI for especificado, o primeiro estilo definido no arquivo SA
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir cria um elemento HTML SELECT que usa *closedCaption*. **Samistyle** para alterar a aparência do texto da legenda oculta. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir cria um elemento HTML SELECT que usa *closedCaption*. **SAMIStyle** para alterar a aparência do texto de legenda fechado. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -82,7 +82,7 @@ O exemplo de JScript a seguir cria um elemento HTML SELECT que usa *closedCaptio
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ O exemplo de JScript a seguir cria um elemento HTML SELECT que usa *closedCaptio
 
 <dl> <dt>
 
-[**Adicionando legendas ocultas à mídia digital**](adding-closed-captions-to-digital-media.md)
+[**Adicionando legendas fechadas à mídia digital**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Objeto ClosedCaption**](closedcaption-object.md)
