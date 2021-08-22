@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_GET_AUDIOFORMAT (VFW. h)
 description: A \_ \_ mensagem Get AUDIOFORMAT do WM Cap \_ Obtém o formato de áudio ou o tamanho do formato de áudio. Você pode enviar essa mensagem explicitamente ou usando as macros capGetAudioFormat e capGetAudioFormatSize.
 ms.assetid: 25e58863-2b1e-4ed8-9f34-c39617a15bc1
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_GET_AUDIOFORMAT
+- mensagem de WM_CAP_GET_AUDIOFORMAT Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9508972c173c9e189bdc092a63d849adf3be739
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d247c035f251b387537f8e6c360adf79e6ed479d8d40e4f8fe8180e059dab3cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940734"
 ---
 # <a name="wm_cap_get_audioformat-message"></a>\_Mensagem de \_ Get \_ AUDIOFORMAT do WM Cap
 

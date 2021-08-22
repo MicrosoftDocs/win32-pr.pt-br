@@ -1,27 +1,27 @@
 ---
-description: Saiba mais sobre as várias APIs de tinta de área de trabalho para aplicativos do Windows.
+description: Saiba mais sobre as várias APIs de inking da área de trabalho para Windows aplicativos.
 ms.assetid: 0691afb1-575a-4bb7-8fa5-006b231b8f1f
-title: Entrada à tinta
+title: Entrada de tinta
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: ffb67d452e3bee327195f8ff920bfcab3c0232a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 15f587adea57e55b6a4d90509fec1222b6445c7cec99378c27ac27bfd52fe747
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758377"
 ---
-# <a name="ink-input"></a>Entrada à tinta
+# <a name="ink-input"></a>Entrada de tinta
 
-Saiba mais sobre as várias APIs de tinta de área de trabalho para aplicativos do Windows.
+Saiba mais sobre as várias APIs de inking da área de trabalho para Windows aplicativos.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 | Tópico | Descrição |
 |---|---|
-| [Apresentador de tinta](ink-presenter.md)<br/> | As APIs do apresentador de tinta permitem que os aplicativos Microsoft Win32 gerenciem a entrada, o processamento e a renderização de entrada de tinta (padrão e modificado) por meio de um objeto [**InkPresenter**](/uwp/api/Windows.UI.Input.Inking.InkPresenter) inserido na árvore visual [DirectComposition](../directcomp/directcomposition-portal.md) do aplicativo.<br/> |
-| [Processador de tinta](ink-renderer.md)<br/>   | As APIs do [processador de tinta](ink-renderer.md) permitem a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo universal do Windows, em vez do controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) padrão.<br/>                                                                        |
+| [Apresentador de tinta](ink-presenter.md)<br/> | As APIs do apresentador de tinta permitem que os aplicativos do Microsoft Win32 gerenciem a entrada, o processamento e a renderização de entrada de tinta (padrão e modificada) por meio de um objeto [**InkPresenter**](/uwp/api/Windows.UI.Input.Inking.InkPresenter) inserido na árvore visual [DirectComposition](../directcomp/directcomposition-portal.md) do aplicativo.<br/> |
+| [Renderdor de tinta](ink-renderer.md)<br/>   | As APIs [do renderador](ink-renderer.md) ink permitem a renderização de traços de tinta no contexto do dispositivo Direct2D designado de um aplicativo universal Windows, em vez do controle [**InkCanvas**](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) padrão.<br/>                                                                        |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Interações de caneta e](/windows/uwp/design/input/pen-and-stylus-interactions)caneta, exemplo de [análise de tinta](/samples/microsoft/windows-universal-samples/inkanalysis/), [exemplo de escrita simples](/samples/microsoft/windows-universal-samples/simpleink/), [exemplo de escrita complexa](/samples/microsoft/windows-universal-samples/complexink/)
+[Interações de caneta e caneta,](/windows/uwp/design/input/pen-and-stylus-interactions)exemplo de [Análise de Tinta,](/samples/microsoft/windows-universal-samples/inkanalysis/) [Exemplo de tinta simples,](/samples/microsoft/windows-universal-samples/simpleink/) [Amostra de tinta complexa](/samples/microsoft/windows-universal-samples/complexink/)

@@ -1,34 +1,34 @@
 ---
-title: Sobreposição, underlay e planos principais
-description: Você pode usar planos de camada de hardware (planos de sobreposição e underlay) em seus aplicativos.
+title: Sobreposição, subposição e planos principais
+description: Você pode usar planos de camada de hardware (planos de sobreposição e de sobreposição) em seus aplicativos.
 ms.assetid: fd9401b3-f2a8-4384-92e8-61b346216542
 keywords:
-- OpenGL no Windows, planos de camada de hardware
+- OpenGL em Windows, planos de camada de hardware
 - planos de camada de hardware OpenGL
 - planos de sobreposição OpenGL
-- underlay planos OpenGL
+- planos de sobreposição OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6fe68c4bb57d431151c4d879965fcf7496c8615
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7b968a0ab028fd0a699e31ad3a3601d7140435e2b36d0188bef46c5dca7cbad9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105771831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936485"
 ---
-# <a name="overlay-underlay-and-main-planes"></a>Sobreposição, underlay e planos principais
+# <a name="overlay-underlay-and-main-planes"></a>Sobreposição, subposição e planos principais
 
-Você pode usar planos de camada de hardware (planos de sobreposição e underlay) em seus aplicativos. Com o Windows, os formatos de pixel descrevem as configurações de pixel de um dispositivo de gráficos. Cada formato de pixel descreve a profundidade e outras características dos buffers de cores principais e descreve buffers adicionais (como profundidade, acúmulo, estêncil e auxiliar) que o plano principal usa. Os formatos de pixel agora são estendidos para incluir buffers de sobreposição e Underlay.
+Você pode usar planos de camada de hardware (planos de sobreposição e de sobreposição) em seus aplicativos. Com Windows, os formatos de pixel descrevem as configurações de pixel de um dispositivo gráfico. Cada formato de pixel descreve a profundidade e outras características dos buffers de cores principais e descreve buffers adicionais (como profundidade, acúmulo, estêncil e auxiliar) que o plano principal usa. Os formatos de pixel agora são estendidos para incluir buffers de sobreposição e de sobreposição.
 
-Os planos de camada sempre têm um buffer de cores front-Left e também podem incluir buffers de cor frontal e de fundo. Cada plano de camada tem um contexto de renderização específico para renderizar nos buffers de camada. Você não pode usar funções de desenho GDI em planos de camada.
+Os planos de camada sempre têm um buffer de cores à frente esquerda e também podem incluir buffers de cores de frente para a direita e para trás. Cada plano de camada tem um contexto de renderização específico para renderizar nos buffers de camada. Não é possível usar funções de desenho GDI em planos de camada.
 
-Uma janela gerencia os buffers de cores dos planos de camada da mesma forma que gerencia os buffers de cores do plano principal. Você pode exibir várias janelas com os planos de sobreposição e/ou underlay ao mesmo tempo. Não é possível ter janelas de sobreposição flutuantes livres que podem ser movidas em qualquer janela no plano de desenho principal. Além disso, como ele obscureceria os planos subjacentes em uma janela o tempo todo, não é possível usar planos de pop-up de hardware sem cor transparente.
+Uma janela gerencia os buffers de cores dos planos de camada de forma semelhante à maneira como gerencia buffers de cores do plano principal. Você pode exibir várias janelas com planos de sobreposição e/ou de sobreposição ao mesmo tempo. Você não pode ter janelas de sobreposição flutuante livre que podem se mover sobre qualquer janela no plano de desenho principal. Além disso, como ele ocultaria planos subjacentes em uma janela o tempo todo, você não pode usar planos pop-up de hardware que não têm cor transparente.
 
-Cada plano de camada em uma janela tem uma paleta associada. Você pode definir a paleta de um plano de camada de índice de cor, mas a paleta de um plano de cores RGBA é fixa. Você deve perceber a paleta apropriada quando uma janela estiver em primeiro plano. Os planos de camada têm uma cor de pixel transparente ou um índice que permite que os planos de camada subjacentes sejam mostrados.
+Cada plano de camada em uma janela tem uma paleta associada. Você pode definir a paleta de um plano de camada de índice de cores, mas a paleta de um plano de cores RGBA é fixa. Você deve perceber a paleta apropriada quando uma janela estiver em primeiro plano. Os planos de camada têm uma cor de pixel transparente ou índice que permite que os planos de camada subjacentes mostrem.
 
 Você pode copiar o estado de um contexto de renderização para outro contexto de renderização em um plano de camada separado. Você também pode compartilhar listas de exibição entre contextos de renderização em diferentes planos de camada.
 
-As funções a seguir são usadas com os planos de camada:
+As seguintes funções são usadas com planos de camada:
 
 -   [**wglCopyContext**](/windows/desktop/api/wingdi/nf-wingdi-wglcopycontext)
 -   [**wglCreateLayerContext**](/windows/desktop/api/wingdi/nf-wingdi-wglcreatelayercontext)
@@ -38,9 +38,9 @@ As funções a seguir são usadas com os planos de camada:
 -   [**wglSetLayerPaletteEntries**](/windows/desktop/api/wingdi/nf-wingdi-wglsetlayerpaletteentries)
 -   [**wglSwapLayerBuffers**](/windows/desktop/api/wingdi/nf-wingdi-wglswaplayerbuffers)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,17 +4,17 @@ description: O código de exemplo a seguir mostra como criar extensões de inter
 ms.assetid: b2d5bcdb-ad71-44db-9bea-486ffaad3655
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da87609de9bb8572e9c4c607a7452abbe4eba10
-ms.sourcegitcommit: b9a94cea8f83153214af4c09509e1cc61a1bb616
+ms.openlocfilehash: eb33a63ff49309805a3dcf54a6ec19ecc42c66d3425d5f4e4921e46e7bc29a1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "104365731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753222"
 ---
 # <a name="custom-protocol-handler-user-interface-sample-code"></a>Código de exemplo da interface do usuário do manipulador de protocolo personalizado
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use o [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use [Windows pesquisa](../search/-search-3x-wds-overview.md) em vez disso.
 
 O código de exemplo a seguir mostra como criar extensões de interface do usuário para um manipulador de protocolo personalizado.
 
@@ -26,7 +26,7 @@ O código de exemplo a seguir mostra como criar extensões de interface do usuá
 >
 > Copyright (C) Microsoft. Todos os direitos reservados.
 
- 
+ 
 
 
 ```
@@ -500,9 +500,9 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

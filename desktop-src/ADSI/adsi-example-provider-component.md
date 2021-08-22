@@ -5,12 +5,12 @@ ms.assetid: 1ca73817-7a21-4a39-b496-fc82db26ea4e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f7bf960021df9a3b26f252584cad2ff3374254a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f1ff1d998a9db620c6dc6fb4402f126f556c95a45d589410800ea9c4b335a98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023894"
 ---
 # <a name="adsi-example-provider-component"></a>Componente do provedor de exemplo ADSI
 
@@ -30,9 +30,9 @@ A [associação a um objeto Active Directory](binding-to-an-active-directory-obj
 
 [Detalhes do código](code-details.md) lista os módulos de software e seu conteúdo.
 
- 
+ 
 
- 
+ 
 
 
 

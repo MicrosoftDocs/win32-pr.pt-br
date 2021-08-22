@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102920
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: ec102b4d1f928cdf6ebac58af3327cd2070e32fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5b2abf4684ea57f7267f729b9e75522e8a10406ff7fdefcc242e4973bcfd7a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104558972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118770098"
 ---
 # <a name="esentspownextcorruptedexception-methods"></a>Métodos EsentSPOwnExtCorruptedException 
 

@@ -4,12 +4,12 @@ ms.assetid: 6331033F-7EEB-41B3-B166-29686D4AADB6
 title: Propriedade CODECAPI_AVEncVideoEncodeFrameTypeQP (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76e68e0cb6cbdc076dbf523f3ae9dfd7b5870f47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e9ebd4a25f3779ce1c721eb3cb1188b487be4d313ae5dbeb02dd41e494f4c17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743831"
 ---
 # <a name="codecapi_avencvideoencodeframetypeqp-property"></a>\_Propriedade CODECAPI AVEncVideoEncodeFrameTypeQP
 
@@ -54,8 +54,8 @@ Quando [CODECAPI \_ AVEncVideoSelectLayer](codecapi-avencvideoselectlayer.md) se
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                        |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Aplicativos de aplicativos UWP da área de trabalho R2 \|\]<br/>                        |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

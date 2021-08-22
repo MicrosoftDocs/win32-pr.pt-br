@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd AdviseSoftKeyboardEventSink (Softkbdc. h)
-description: O método ISoftKbd AdviseSoftKeyboardEventSink instala um coletor de eventos de teclado flexível para lidar com notificações OnKeySelection do teclado soft.
+title: Método ISoftKbd AdviseSoftKeyboardEventSink (Softkbdc.h)
+description: O método ISoftKbd AdviseSoftKeyboardEventSink instala um sink de evento de teclado flexível para manipular notificações onKeySelection do teclado flexível.
 ms.assetid: f7a441dc-7bef-4fc0-bc62-c153a55a844c
 keywords:
-- Estrutura de serviços de texto do método AdviseSoftKeyboardEventSink
-- Método AdviseSoftKeyboardEventSink de estrutura de serviços de texto, interface ISoftKbd
-- Estrutura de serviços de texto da interface ISoftKbd, método AdviseSoftKeyboardEventSink
+- Método AdviseSoftKeyboardEventSink Estrutura de Serviços de Texto
+- Método AdviseSoftKeyboardEventSink Estrutura de Serviços de Texto , interface ISoftKbd
+- Interface ISoftKbd Estrutura de Serviços de Texto , método AdviseSoftKeyboardEventSink
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ab17de2104c6104b044f027152cfc45cca968b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73a3a734e66bb319bb7e24b6ca3b27299f984f33b98772c1cc446c40e3f27426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877983"
 ---
-# <a name="isoftkbdadvisesoftkeyboardeventsink-method"></a>Método ISoftKbd:: AdviseSoftKeyboardEventSink
+# <a name="isoftkbdadvisesoftkeyboardeventsink-method"></a>Método ISoftKbd::AdviseSoftKeyboardEventSink
 
-O método **ISoftKbd:: AdviseSoftKeyboardEventSink** instala um coletor de eventos de teclado flexível para lidar com notificações OnKeySelection do teclado soft.
+O **método ISoftKbd::AdviseSoftKeyboardEventSink** instala um sink de evento de teclado flexível para manipular notificações onKeySelection do teclado flexível.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,35 +45,35 @@ HRESULT AdviseSoftKeyboardEventSink(
 
 <dl> <dt>
 
-*dwKeyboardId* \[ no\]
+*dwKeyboardId* \[ Em\]
 </dt> <dd>
 
-Identificador do teclado virtual.
+Identificador do teclado suave.
 
 </dd> <dt>
 
-*riid* \[ no\]
+*riid* \[ Em\]
 </dt> <dd>
 
-Identificador de interface para a interface do coletor.
+Identificador de interface para a interface do sink.
 
 </dd> <dt>
 
-*punk* \[ no\]
+*(201* \[ Em\]
 </dt> <dd>
 
-Ponteiro para [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) para a interface do coletor especificada por *riid*. Este parâmetro não pode ser definido como **nulo**.
+Ponteiro para [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) para a interface de sink especificada por *riid.* Esse parâmetro não pode ser definido como **NULL.**
 
 </dd> <dt>
 
-*pdwCookie* \[ fora\]
+*pdwCookie* \[ out\]
 </dt> <dd>
 
-Ponteiro para o buffer no qual esse método recupera o "cookie" do teclado virtual usado para conexão com o cliente. O cookie deve ser exclusivo para cada conexão.
+Ponteiro para o buffer no qual esse método recupera o "cookie" do teclado suave usado para conexão com o cliente. O cookie deve ser exclusivo para cada conexão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -96,9 +96,9 @@ Esse método pode retornar um desses valores.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| INSERI<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuível<br/>          | TSF 1.0 no Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

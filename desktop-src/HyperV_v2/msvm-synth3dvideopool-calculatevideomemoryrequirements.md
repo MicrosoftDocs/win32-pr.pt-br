@@ -1,5 +1,5 @@
 ---
-description: Calcula a quantidade de memória de vídeo necessária para uma máquina virtual do RemoteFX.
+description: calcula a quantidade de memória de vídeo necessária para uma máquina virtual RemoteFX.
 ms.assetid: F8C30601-EDA3-47F1-A717-9FE7E9DB8F62
 title: Método CalculateVideoMemoryRequirements da classe Msvm_Synth3dVideoPool
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2a9fd80e777a9d166b896c2ce51d03bd91bbabfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fd1485cdd4e96155db6540a5f07344add5f413514a92c420fcac78a008e7aca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950074"
 ---
 # <a name="calculatevideomemoryrequirements-method-of-the-msvm_synth3dvideopool-class"></a>Método CalculateVideoMemoryRequirements da \_ classe Synth3dVideoPool Msvm
 
-Calcula a quantidade de memória de vídeo necessária para uma máquina virtual do RemoteFX.
+calcula a quantidade de memória de vídeo necessária para uma máquina virtual RemoteFX.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -88,7 +88,7 @@ Recebe a quantidade necessária de memória de vídeo, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um código de status, que pode ser um dos valores a seguir.
 
@@ -99,8 +99,8 @@ Retorna um código de status, que pode ser um dos valores a seguir.
 | <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                    | Bem-sucedida.<br/>                                |
 | <dl> <dt>**Parâmetros de método verificados-trabalho iniciado**</dt> <dt>4096</dt> </dl> | Trabalho iniciado.<br/>                               |
 | <dl> <dt>32768</dt> <dt>**com falha**</dt> </dl>                                 | Falhou.<br/>                                    |
-| <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                          | Acesso negado.<br/>                             |
-| <dl> <dt>**Sem suporte**</dt> <dt>32770</dt> </dl>                          | Não há suporte.<br/>                             |
+| <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                          | Acesso negado<br/>                             |
+| <dl> <dt>**Sem suporte**</dt> <dt>32770</dt> </dl>                          | Sem suporte.<br/>                             |
 | <dl> O <dt>**status é desconhecido**</dt> <dt>32771</dt> </dl>                      | O status é desconhecido.<br/>                         |
 | <dl> <dt>**Tempo limite**</dt> <dt>32772</dt> </dl>                                | Tempo limite.<br/>                                   |
 | <dl> <dt>**Parâmetro inválido**</dt> <dt>32773</dt> </dl>                      | Um parâmetro não é válido.<br/>                  |
@@ -116,7 +116,7 @@ Retorna um código de status, que pode ser um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é normalmente chamado no sistema host para determinar se o host tem memória de vídeo disponível suficiente para hospedar uma máquina virtual do RemoteFX. Para fazer isso, você compara a quantidade de memória de vídeo calculada por esse método com a propriedade [**Msvm \_ PhysicalGPUInfo. AvailableVideoMemory**](msvm-physicalgpuinfo.md) para determinar se o computador host tem memória de vídeo disponível suficiente. Você pode usar essas informações para determinar se uma máquina virtual pode ser movida para o sistema host.
+esse método é normalmente chamado no sistema host para determinar se o host tem memória de vídeo disponível suficiente para hospedar um RemoteFX máquina virtual. Para fazer isso, você compara a quantidade de memória de vídeo calculada por esse método com a propriedade [**Msvm \_ PhysicalGPUInfo. AvailableVideoMemory**](msvm-physicalgpuinfo.md) para determinar se o computador host tem memória de vídeo disponível suficiente. Você pode usar essas informações para determinar se uma máquina virtual pode ser movida para o sistema host.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -124,8 +124,8 @@ Esse método é normalmente chamado no sistema host para determinar se o host te
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be5b8bb64dc9e0fc42055cf5e4d4f67caa7654bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 272a4a41f7c7df46a516ece5633a1eb36b3039b225718e0e64324f8f6d8c7c49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118767278"
 ---
 # <a name="jet_columnid"></a>JET_COLUMNID
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_columnid"></a>JET_COLUMNID
 
-O tipo de dados **JET_COLUMNID** identifica uma coluna dentro de uma tabela.
+O **JET_COLUMNID** de dados identifica uma coluna dentro de uma tabela.
 
 ```cpp
     typedef unsigned long JET_COLUMNID;
@@ -43,11 +43,11 @@ Identifica uma coluna dentro de uma tabela.
 
 ### <a name="remarks"></a>Comentários
 
-As IDs de coluna são exclusivas em uma única tabela. Depois que uma coluna tiver uma determinada ID de coluna, ela sempre terá essa ID de coluna. A restauração do backup não alterará o valor de uma ID de coluna. No entanto, se uma ou mais colunas de tabela, antes de uma coluna de tabela específica, forem excluídas, um banco de dados compacto poderá alterar o valor de uma ID de coluna.
+As IDs de coluna são exclusivas em uma única tabela. Depois que uma coluna for conhecida por ter uma determinada ID de coluna, ela sempre terá essa ID de coluna. A restauração do backup não alterará o valor de uma ID de coluna. No entanto, se uma ou mais colunas de tabela, antes de uma coluna de tabela específica, são excluídas, um banco de dados compacto pode alterar o valor de uma ID de coluna.
 
-Em alguns casos, as IDs de coluna são os únicos meios de identificar colunas. Quando uma tabela temporária é criada, suas colunas não têm nomes, mas uma matriz de IDs de coluna é retornada pela função de criação.
+Em alguns casos, as IDs de coluna são o único meio de identificar colunas. Quando uma tabela temporária é criada, suas colunas não têm nomes, mas uma matriz de IDs de coluna é retornada pela função create.
 
-As colunas em tabelas diferentes podem ter a mesma ID de coluna.
+Colunas em tabelas diferentes podem ter a mesma ID de coluna.
 
 ### <a name="requirements"></a>Requisitos
 
@@ -59,15 +59,15 @@ As colunas em tabelas diferentes podem ter a mesma ID de coluna.
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsPathname (IADs. h)
-description: Obter ou definir as propriedades de Escapemode.
+title: Métodos de propriedade IADsPathname (Iads.h)
+description: Obter ou definir as propriedades De EscapeMode.
 ms.assetid: 007ec617-cff2-492a-a62c-50d65fefcd3b
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsPathname
+- Métodos de propriedade IADsPathname ADSI
 topic_type:
 - apiref
 api_name:
@@ -18,32 +18,32 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 949bd41ddb04618d238c0ddf09782e12fb228b26
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11d3321d58065d890d864ed967a4e6a66dad22cde2cc234b5907afab74986898
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023424"
 ---
 # <a name="iadspathname-property-methods"></a>Métodos de propriedade IADsPathname
 
-Os métodos de propriedade da interface [**IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname) obtêm ou definem as propriedades de **escapemode** . Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname) obterão ou definirão as **propriedades EscapedMode.** Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
 <dl> <dt>
 
-**Escapemode**
+**EscapedMode**
 </dt> <dd> <dl>
 
-Examine ou especifique como os caracteres de escape são tratados em um nome de caminho. Para obter mais informações e opções definidas, [**consulte \_ \_ \_ enumeração do modo de escape do ADS**](/windows/win32/api/iads/ne-iads-ads_escape_mode_enum).
+Examine ou especifique como os caracteres de escape são tratados em um nome de caminho. Para obter mais informações e opções definidas, consulte [**ADS \_ ESCAPE MODE \_ \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_escape_mode_enum).
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **Longo**
 </dt> <dt>
 
 
@@ -65,13 +65,13 @@ HRESULT get_EscapedMode(
 
 ## <a name="remarks"></a>Comentários
 
-**Escapemode** representa um estado. Você pode ativá-la ou desligá-la, definindo-a como ADS \_ escapemode \_ on ou ADS outmode \_ /ADS escapemode \_ \_ \_ off \_ ex. Quando ativado ou desativado, todas as recuperações subsequentes produzem cadeias de caracteres de caminho de escape ou sem escape.
+**EscapedMode** representa um estado. Você pode a ligar ou desativar, definindo-o como ADS ESCAPEDMODE ON ou \_ \_ ADS \_ ESCAPEDMODE \_ OFF/ADS \_ ESCAPEDMODE OFF \_ \_ EX. Quando ele é ligado ou desligado, todas as recuperações subsequentes produzem cadeias de caracteres de caminho com escape ou sem escape.
 
-No ADSI, somente o [**IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname) é capaz de refazer a saída de caminhos. Todas as outras interfaces ADSI sempre retornam caminhos com escape. O estado padrão de **escapemode** é ADS \_ de escapemode \_ padrão, conforme definido na [**enumeração do modo de escape do ADS \_ \_ \_**](/windows/win32/api/iads/ne-iads-ads_escape_mode_enum).
+No ADSI, somente [**IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname) é capaz de descapitá-los. Todas as outras interfaces ADSI sempre retornam caminhos de escape. O estado padrão de **EscapedMode** é ADS \_ ESCAPEDMODE \_ DEFAULT conforme definido em ADS ESCAPE MODE [**\_ \_ \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_escape_mode_enum).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra como usar a propriedade **escapemode** ativar/desativar a saída dos três caracteres especiais a seguir: "=", "," e "/".
+O exemplo de código a seguir mostra como usar a propriedade **EscapedMode** para ativar/desativar o escape dos três caracteres especiais a seguir: "=","," e "/".
 
 
 ```VB
@@ -108,7 +108,7 @@ MsgBox path.Retrieve(ADS_FORMAT_WINDOWS)
 
 
 
-O exemplo de código a seguir mostra como usar a propriedade **escapemode** ativar/desativar a saída dos três caracteres especiais a seguir: "=", "," e "/".
+O exemplo de código a seguir mostra como usar a propriedade **EscapedMode** para ativar/desativar o escape dos três caracteres especiais a seguir: "=","," e "/".
 
 
 ```VB
@@ -155,7 +155,7 @@ Response.Write path.Retrieve(ADS_FORMAT_WINDOWS)
 
 
 
-O exemplo de código a seguir mostra como trabalhar com a propriedade **escapemode** . A verificação de erros foi ignorada.
+O exemplo de código a seguir mostra como trabalhar com a **propriedade EscapedMode.** A verificação de erro é ignorada.
 
 
 ```C++
@@ -227,7 +227,7 @@ hr = pPathname->Release();
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsPathname é definido como D592AED4-F420-11D0-A36E-00C04FB950DC<br/>         |
 
@@ -240,7 +240,7 @@ hr = pPathname->Release();
 [**IADsPathname**](/windows/desktop/api/Iads/nn-iads-iadspathname)
 </dt> <dt>
 
-[**\_enumeração do \_ modo de escape do ADS \_**](/windows/win32/api/iads/ne-iads-ads_escape_mode_enum)
+[**\_ \_ ENUM DO \_ MODO DE ESCAPE ADS**](/windows/win32/api/iads/ne-iads-ads_escape_mode_enum)
 </dt> </dl>
 
  

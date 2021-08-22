@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 62c56c59935fb588b4b3b4af23303ee7480fdca3
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8331f3989d6666b2322898208cb1c739990abe9bf78c1a98529e1037578ac3c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105763049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118785039"
 ---
 # <a name="eapuserpropertiesv1-schema-elements"></a>Elementos do esquema eapuserpropertiesv1
 
@@ -32,9 +32,9 @@ O esquema [eapuserpropertiesv1](eapuserpropertiesv1schema-schema.md) consiste no
 [Esquema eapuserpropertiesv1](eapuserpropertiesv1schema-schema.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

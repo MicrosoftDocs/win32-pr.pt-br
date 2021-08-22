@@ -1,64 +1,64 @@
 ---
-description: Um bloco de estado pode ser usado para capturar somente o estado de pixel (consulte estado de salvamento e restauração de blocos de estado (Direct3D 9)).
+description: Um bloco de estado pode ser usado para capturar apenas o estado de pixel (consulte Estado de salvar e restaurar blocos de estado (Direct3D 9)).
 ms.assetid: 30624c0a-e30f-4383-bc0c-b43f42403e72
 title: Salvando o estado de pixel com um StateBlock (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80741d9f17939d5795163a3e84c58bcdb9003c70
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: eebc7cc408fe919b1569d51f5cdd4e3e5916968d05b90557a17a22377673fdfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118797911"
 ---
 # <a name="saving-pixel-state-with-a-stateblock-direct3d-9"></a>Salvando o estado de pixel com um StateBlock (Direct3D 9)
 
-Um bloco de estado pode ser usado para capturar somente o estado de pixel (consulte [estado de salvamento e restauração de blocos de estado (Direct3D 9)](state-blocks-save-and-restore-state.md)). O estado a seguir é o estado de pixel:
+Um bloco de estado pode ser usado para capturar apenas o estado de pixel (consulte Estado de salvar e restaurar blocos de estado [(Direct3D 9)](state-blocks-save-and-restore-state.md)). O estado a seguir é o estado de pixel:
 
--   Estado de renderização de pixel (consulte [pipeline de pixel: renderizar estado](#pixel-pipeline-render-state)).
--   Estado de textura de pixel (consulte [pipeline de pixel: estado de textura](#pixel-pipeline-texture-state)).
--   Estado de amostra de pixel (consulte [pipeline de pixel: estado de amostra](#pixel-pipeline-sampler-state)).
+-   Estado de renderização de pixel (consulte [Pipeline de pixel: estado de renderização).](#pixel-pipeline-render-state)
+-   Estado de textura de pixel (consulte [Pipeline de pixel: estado de textura).](#pixel-pipeline-texture-state)
+-   Estado do exemplo de pixel (consulte [Pipeline de pixel: estado do exemplo).](#pixel-pipeline-sampler-state)
 -   O sombreador de pixel atual e cada uma das constantes do sombreador de pixel.
 
-Para capturar o estado de pixel com um bloco de estado, especifique D3DSBT \_ pixelstate ao chamar [**IDirect3DDevice9:: CreateStateBlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createstateblock).
+Para capturar o estado de pixel com um bloco de estado, especifique D3DSBT PIXELSTATE ao chamar \_ [**IDirect3DDevice9::CreateStateBlock**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createstateblock).
 
 ## <a name="pixel-pipeline-render-state"></a>Pipeline de pixel: estado de renderização
 
-Os Estados de renderização do dispositivo afetam o comportamento de quase todas as partes do pipeline. Os Estados de renderização são definidos chamando [**IDirect3DDevice9:: Setrenderingstate**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate).
+Os estados de renderização do dispositivo afetam o comportamento de quase todas as partes do pipeline. Os estados de renderização são definidos chamando [**IDirect3DDevice9::SetRenderState.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate)
 
-A tabela a seguir inclui todos os Estados de renderização que configuram o estado de pixel:
+A tabela a seguir inclui todos os estados de renderização que configuram o estado de pixel:
 
 
 
-| Processar Estados                              | Valor padrão      |
+| Renderizar estados                              | Valor padrão      |
 |--------------------------------------------|--------------------|
-| D3DRS \_ ZENABLE                             | D3DZB \_ false       |
-| D3DRS \_ SPECULARENABLE                      | **FALSE**          |
-| [**D3DFILLMODE**](./d3dfillmode.md)   | D3DFILL \_ sólido     |
+| D3DRS \_ ZENABLE                             | D3DZB \_ FALSE       |
+| D3DRS \_ SPECUABLE                      | **FALSE**          |
+| [**D3DFILLMODE**](./d3dfillmode.md)   | D3DFILL \_ SOLID     |
 | [**D3DSHADEMODE**](./d3dshademode.md) | D3DSHADE \_ GOURAUD  |
 | D3DRS \_ ZWRITEENABLE                        | **TRUE**           |
-| D3DRS \_ ALPHATESTENABLE                     | **FALSE**          |
+| ALFATESTENABLE D3DRS \_                     | **FALSE**          |
 | D3DRS \_ LASTPIXEL                           | **TRUE**           |
-| D3DRS \_ SRCBLEND                            | D3DBLEND \_ um      |
-| D3DRS \_ DESTBLEND                           | D3DBLEND \_ zero     |
+| D3DRS \_ SRCBLEND                            | D3DBLEND \_ ONE      |
+| D3DRS \_ DESTBLEND                           | D3DBLEND \_ ZERO     |
 | D3DRS \_ ZFUNC                               | D3DCMP \_ LESSEQUAL  |
-| D3DRS \_ ALPHAREF                            | 0                  |
-| D3DRS \_ ALPHAFUNC                           | D3DCMP \_ sempre     |
+| ALFAREF D3DRS \_                            | 0                  |
+| ALFAFUNC D3DRS \_                           | D3DCMP \_ ALWAYS     |
 | D3DRS \_ DITHERENABLE                        | **FALSE**          |
-| D3DRS \_ FOGSTART                            | 0                  |
-| D3DRS \_ FOGEND                              | 1                  |
-| D3DRS \_ FOGDENSITY                          | 1                  |
+| D3DRSSTART \_                            | 0                  |
+| \_D3DRSDISTAND                              | 1                  |
+| DENSIDADE DE \_ D3DRS                          | 1                  |
 | D3DRS \_ ALPHABLENDENABLE                    | **FALSE**          |
 | D3DRS \_ DEPTHBIAS                           | 0                  |
-| D3DRS \_ STENCILENABLE                       | **FALSE**          |
-| D3DRS \_ STENCILFAIL                         | D3DSTENCILOP \_ manter |
-| D3DRS \_ STENCILZFAIL                        | D3DSTENCILOP \_ manter |
-| D3DRS \_ STENCILPASS                         | D3DSTENCILOP \_ manter |
-| D3DRS \_ STENCILFUNC                         | D3DCMP \_ sempre     |
+| \_D3DRSNCILENABLE                       | **FALSE**          |
+| D3DRS \_ STENCILFAIL                         | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ STENCILZFAIL                        | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ STENCILPASS                         | D3DSTENCILOP \_ KEEP |
+| D3DRS \_ STENCILFUNC                         | D3DCMP \_ ALWAYS     |
 | D3DRS \_ STENCILREF                          | 0                  |
-| D3DRS \_ STENCILMASK                         | 0xFFFFFFFF         |
-| D3DRS \_ STENCILWRITEMASK                    | 0xFFFFFFFF         |
-| D3DRS \_ TEXTUREFACTOR                       | 0xFFFFFFFF         |
+| D3DRS \_ STENCILMASK                         | 0xffffffff         |
+| D3DRS \_ STENCILWRITEMASK                    | 0xffffffff         |
+| D3DRS \_ TEXTUREFACTOR                       | 0xffffffff         |
 | D3DRS \_ WRAP0                               | 0                  |
 | D3DRS \_ WRAP1                               | 0                  |
 | D3DRS \_ WRAP2                               | 0                  |
@@ -93,7 +93,7 @@ A tabela a seguir inclui todos os Estados de renderização que configuram o est
 | D3DRS \_ COLORWRITEENABLE1                   | 0x0000000f         |
 | D3DRS \_ COLORWRITEENABLE2                   | 0x0000000f         |
 | D3DRS \_ COLORWRITEENABLE3                   | 0x0000000f         |
-| D3DRS \_ BLENDFACTOR                         | 0xFFFFFFFF         |
+| D3DRS \_ BLENDFACTOR                         | 0xffffffff         |
 | D3DRS \_ SRGBWRITEENABLE                     | 0                  |
 | D3DRS \_ SEPARATEALPHABLENDENABLE            | **FALSE**          |
 | D3DRS \_ SRCBLENDALPHA                       | D3DBLEND \_ um      |

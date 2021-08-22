@@ -4,12 +4,12 @@ ms.assetid: 51FD6E36-9CDF-4005-942F-7A92CA706F38
 title: Propriedade CODECAPI_AVEncVideoUseLTRFrame (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 252933180e8212c94c3c2b2442397c53d0f9c559
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19b4df79755ed03873f0393d93f7e21ab8046af6295309207dc976f87eb0ee99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118743802"
 ---
 # <a name="codecapi_avencvideouseltrframe-property"></a>\_Propriedade CODECAPI AVEncVideoUseLTRFrame
 
@@ -77,8 +77,8 @@ Chamar CODECAPI \_ AVEncVideoUseLTRFrame em um quadro de camada não base é vá
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/>                        |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Aplicativos de aplicativos UWP da área de trabalho R2 \|\]<br/>                        |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

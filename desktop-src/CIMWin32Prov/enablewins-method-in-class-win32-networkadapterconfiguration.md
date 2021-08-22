@@ -1,8 +1,8 @@
 ---
-description: EnableWINS ativa &\# 32; O método estático da classe WMI habilita as configurações do Windows Internet Serviço de Nomenclatura (WINS) específicas para TCP/IP, mas independente do adaptador de rede.
+description: O &EnableWINS \# 32; O método estático de classe WMI Windows configurações wins (Internet Serviço de Nomenclatura) específicas para TCP/IP, mas independentes do adaptador de rede.
 ms.assetid: ce0fb170-978f-4d70-bced-e530e43da719
 ms.tgt_platform: multiple
-title: Método EnableWINS ativa da classe Win32_NetworkAdapterConfiguration
+title: Método EnableWINS da Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 77f5ba32606ff228908e8b7a1559a73ae5139e9c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1ce820e515bb72cbd2521521726f2b6962c49ee1b453781b5d17993c45e0d22d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676499"
 ---
-# <a name="enablewins-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableWINS ativa da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="enablewins-method-of-the-win32_networkadapterconfiguration-class"></a>Método EnableWINS da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableWINS ativa** habilita as configurações WINS (Windows Internet serviço de nomenclatura) específicas para TCP/IP, mas independente do adaptador de rede.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **EnableWINS** habilita Windows configurações wins (Internet Serviço de Nomenclatura) específicas ao TCP/IP, mas independentemente do adaptador de rede.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,41 +45,41 @@ uint32 EnableWINS(
 
 <dl> <dt>
 
-*DNSEnabledForWINSResolution* \[ no\]
+*DNSEnabledForWINSResolution* \[ Em\]
 </dt> <dd>
 
-Se for **true**, o DNS (sistema de nomes de domínio) será habilitado para resolução de nomes sobre a resolução WINS.
+Se **for true,** o DNS (Sistema de Nomes de Domínio) será habilitado para resolução de nomes na resolução WINS.
 
 </dd> <dt>
 
-*WINSEnableLMHostsLookup* \[ no\]
+*WINSEnableLMHostsLookup* \[ Em\]
 </dt> <dd>
 
-Se **for true**, os arquivos de pesquisa local serão usados. Arquivos de pesquisa conterão mapeamentos de endereços IP para nomes de host.
+Se **true**, os arquivos de lookup locais serão usados. Os arquivos de busca conterão mapeamentos de endereços IP para nomes de host.
 
 </dd> <dt>
 
-*WINSHostLookupFile* \[ em, opcional\]
+*WINSHostLookupFile* \[ in, opcional\]
 </dt> <dd>
 
-Arquivos de pesquisa que contêm mapeamentos de endereços IP para nomes de host. Se disponível, os arquivos serão encontrados nos drivers% SystemRoot% \\ System32 \\ \\ .
+Arquivos de busca que contêm mapeamentos de endereços IP para nomes de host. Se disponível, os arquivos serão encontrados em %SystemRoot% \\ system32 \\ drivers \\ .
 
 </dd> <dt>
 
-*WINSScopeID* \[ em, opcional\]
+*WINSScopeID* \[ in, opcional\]
 </dt> <dd>
 
-O valor do identificador de escopo que será anexado ao final do nome NetBIOS do computador. Os sistemas que usam o mesmo identificador de escopo podem se comunicar com este computador.
+Valor do identificador de escopo que será anexado ao final do nome NetBIOS do computador. Sistemas que usam o mesmo identificador de escopo podem se comunicar com este computador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária; 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária; um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária; 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária; um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
-**Conclusão bem-sucedida, nenhuma reinicialização necessária** (0)
+**Conclusão bem-sucedida, sem reinicialização** necessária (0)
 </dt> <dt>
 
 **Conclusão bem-sucedida, reinicialização necessária** (1)
@@ -94,7 +94,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 **Máscara de sub-rede inválida** (66)
 </dt> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada** (67)
+**Ocorreu um erro ao processar uma Instância que foi retornada** (67)
 </dt> <dt>
 
 **Parâmetro de entrada inválido** (68)
@@ -106,10 +106,10 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 **Endereço IP inválido** (70)
 </dt> <dt>
 
-**Endereço IP de gateway inválido** (71)
+**Endereço IP do gateway inválido** (71)
 </dt> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas** (72)
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas** (72)
 </dt> <dt>
 
 **Nome de domínio inválido** (73)
@@ -124,10 +124,10 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 **Arquivo inválido** (76)
 </dt> <dt>
 
-**Caminho de sistema inválido** (77)
+**Caminho do sistema inválido** (77)
 </dt> <dt>
 
-**Falha na cópia do arquivo** (78)
+**Falha na cópia do** arquivo (78)
 </dt> <dt>
 
 **Parâmetro de segurança inválido** (79)
@@ -169,7 +169,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 **Acesso negado** (91)
 </dt> <dt>
 
-**Memória insuficiente** (92)
+**Memória sem memória** (92)
 </dt> <dt>
 
 **Já existe** (93)
@@ -178,7 +178,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 **Caminho, arquivo ou objeto não encontrado** (94)
 </dt> <dt>
 
-**Não é possível notificar o serviço** (95)
+**Não é possível notificar o** serviço (95)
 </dt> <dt>
 
 **Não é possível notificar o serviço DNS** (96)
@@ -187,18 +187,18 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 **Interface não configurável** (97)
 </dt> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas** (98)
+**Nem todas as concessões DHCP podem ser liberadas/renovadas** (98)
 </dt> <dt>
 
 **DHCP não habilitado no adaptador** (100)
 </dt> <dt>
 
-**Outro** (101 4294967295)
+**Outros** (101 4294967295)
 </dt> </dl>
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código [Ativar WINS para todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/64cae6dd-4155-4825-ab25-5727503edf5a) VBScript, na galeria do TechNet, usa **EnableWINS ativa** para habilitar o WINS em todos os adaptadores de rede instalados em um computador.
+O exemplo de código Habilitar [WINS para](https://Gallery.TechNet.Microsoft.Com/64cae6dd-4155-4825-ab25-5727503edf5a) Todos os Adaptadores de Rede VBScript, na Galeria do TechNet, usa **EnableWINS** para Habilitar WINS em todos os adaptadores de rede instalados em um computador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -208,26 +208,26 @@ O exemplo de código [Ativar WINS para todos os adaptadores de rede](https://Gal
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

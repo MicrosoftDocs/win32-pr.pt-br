@@ -4,12 +4,12 @@ description: Declare uma entrada de recurso de sombreador e atribua-a a um t \-u
 ms.assetid: ECBA9DAB-F217-47FB-9588-F35866004E72
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd6ccc5990e34990772a072086d9e080cde67b4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b228ccc8bba795e700135bfe9ba54ea311536745b7e12eea03a8963d16e73285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793081"
 ---
 # <a name="dcl_resource-raw-sm5---asm"></a>\_recurso DCL bruto (SM5-ASM)
 
@@ -48,7 +48,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

@@ -1,15 +1,15 @@
 ---
-description: Implemente a interface ISpecifyPropertyPages em seu filtro como parte da criação de uma página de propriedades de filtro para um filtro personalizado do DirectShow.
+description: Implemente a interface ISpecifyPropertyPages em seu filtro como parte da criação de uma página de propriedades de filtro para um filtro DirectShow personalizado.
 ms.assetid: 8be83564-07ad-47cf-9538-73136f42ba79
 title: Etapa 2. Implementar ISpecifyPropertyPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe37a22c6ba9c14f8656ac41294360569316be1a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1c2d1df86ef6e8b3e59f14a3efe1708a286761c9ba6425a7710a692ed6dcd3bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951845"
 ---
 # <a name="step-2-implement-ispecifypropertypages"></a>Etapa 2. Implementar ISpecifyPropertyPages
 

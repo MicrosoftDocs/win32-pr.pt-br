@@ -1,5 +1,5 @@
 ---
-description: Converte um caminho do Microsoft MS-DOS em uma URL canônica.
+description: Converte um caminho do Microsoft MS-DOS em uma URL canonizada.
 ms.assetid: 1186b970-9ae1-4020-b999-55157cff1741
 title: Função MFCreateURLFromPath
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - mfplat.dll
-ms.openlocfilehash: e43c2d7df299792d8b5be99226e9cfdbd11976a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9da3dd84d54bb514b7dda519db3de376b2ebb2bd2088d8fc8e18b4f2b848231
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739244"
 ---
 # <a name="mfcreateurlfrompath-function"></a>Função MFCreateURLFromPath
 
-\[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro. Em vez disso, os aplicativos devem chamar [UrlCreateFromPath](/windows/desktop/api/shlwapi/nf-shlwapi-urlcreatefrompatha).\]
+\[Essa API não tem suporte e pode ser alterada ou não disponível no futuro. Em vez disso, os aplicativos [devem chamar UrlCreateFromPath.](/windows/desktop/api/shlwapi/nf-shlwapi-urlcreatefrompatha)\]
 
-Converte um caminho do Microsoft MS-DOS em uma URL canônica.
+Converte um caminho do Microsoft MS-DOS em uma URL canonizada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,29 +42,29 @@ HRESULT MFCreateURLFromPath(
 
 <dl> <dt>
 
-*pwszFilePath* \[ em, opcional\]
+*pwszFilePath* \[ in, opcional\]
 </dt> <dd>
 
-Uma cadeia de caracteres terminada em nulo que contém o caminho. O comprimento máximo da cadeia de caracteres é o **\_ \_ \_ comprimento máximo da URL da Internet**.
+Uma cadeia de caracteres terminada em nulo que contém o caminho. O comprimento máximo da cadeia de caracteres é **INTERNET \_ MAX URL \_ \_ LENGTH**.
 
 </dd> <dt>
 
-*ppwszFileURL* \[ fora\]
+*ppwszFileURL* \[ out\]
 </dt> <dd>
 
-Recebe uma cadeia de caracteres terminada em nulo que contém a URL. O chamador deve liberar a cadeia de caracteres chamando [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Recebe uma cadeia de caracteres terminada em nulo que contém a URL. O chamador deve liberar a cadeia de caracteres chamando [**CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+A função retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
-| Código de retorno                                                                             | Description                                                                                                                                                               |
+| Código de retorno                                                                             | Descrição                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | A cadeia de caracteres fornecida no parâmetro *pwszFilePath* já está no formato de URL. Nesse caso, *pszFilePath* é simplesmente copiado para *ppszFileURL* sem modificação.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | A cadeia de caracteres determinada no *parâmetro pwszFilePath* já está no formato de URL. Nesse caso, *pszFilePath é* simplesmente copiado para *ppszFileURL* sem modificação.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | A função foi bem-sucedida. <br/>                                                                                                                                       |
 
 
@@ -73,7 +73,7 @@ A função retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação associada. Para chamar essa função, você deve usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mfplat.dll.
+Essa função não tem nenhuma biblioteca de importação associada. Para chamar essa função, você deve usar as [**funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mfplat.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
 | DLL<br/>                      | <dl> <dt>Mfplat.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 <dl> <dt>
 
-[Funções de Media Foundation](media-foundation-functions.md)
+[Media Foundation funções](media-foundation-functions.md)
 </dt> </dl>
 
  

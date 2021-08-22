@@ -4,12 +4,12 @@ ms.assetid: 3E297366-0863-4E89-A0D5-438CD1FC5AF9
 title: 'Tutorial: usando o gravador de coletor para codificar vídeo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a3e6095355e18db6c8335cadcbc4afc56b35406
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5347a82fd40355c8006b15492a59543018ae5868cb02fcefeeb1812bd26930c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972775"
 ---
 # <a name="tutorial-using-the-sink-writer-to-encode-video"></a>Tutorial: usando o gravador de coletor para codificar vídeo
 
@@ -40,7 +40,7 @@ Essas constantes especificam os seguintes parâmetros do formato de vídeo:
 -   Tamanho do quadro (largura e altura)
 -   Quadros por segundo.
 -   Taxa de bits codificada.
--   Formato de codificação, que é o Windows Media Video 9 (**MFVideoFormat \_ WMV3**).
+-   formato de codificação, que é Windows Media Video 9 (**MFVideoFormat \_ WMV3**).
 -   Formato de entrada, que é RGB de 32 bits.
 -   Duração do arquivo de saída.
 

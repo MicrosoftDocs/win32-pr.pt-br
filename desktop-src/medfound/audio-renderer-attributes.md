@@ -1,29 +1,29 @@
 ---
-description: Atributos do processador de áudio
+description: Atributos do renderador de áudio
 ms.assetid: f0d119fa-8a0a-4650-814e-b3586302ff79
-title: Atributos do processador de áudio
+title: Atributos do renderador de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b01f9f2f3cadd63f31383537fd56cf7020ffef3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ed2d44445311c8ac9f9f29a33106f0bdcd6d395dd83ba1d374eb93f4f82ab1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975015"
 ---
-# <a name="audio-renderer-attributes"></a>Atributos do processador de áudio
+# <a name="audio-renderer-attributes"></a>Atributos do renderador de áudio
 
-Os atributos a seguir podem ser usados para configurar o processador de áudio.
+Os atributos a seguir podem ser usados para configurar o renderador de áudio.
 
 
 
 | Atributo                                                                                                     | Descrição                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [**\_ID do \_ ponto \_ de \_ extremidade do atributo de processamento de áudio MF \_**](mf-audio-renderer-attribute-endpoint-id-attribute.md)     | Especifica o identificador para o dispositivo de ponto de extremidade de áudio.                                                     |
-| [**\_função de \_ ponto \_ de \_ extremidade do atributo de processamento de áudio MF \_**](mf-audio-renderer-attribute-endpoint-role-attribute.md) | Especifica a função de ponto de extremidade de áudio para o processador de áudio.                                                   |
-| [**\_sinalizadores de \_ atributo do processador de áudio MF \_ \_**](mf-audio-renderer-attribute-flags-attribute.md)                  | Contém sinalizadores para configurar o processador de áudio.                                                             |
-| [**\_ID da \_ sessão de atributo do processador de áudio MF \_ \_ \_**](mf-audio-renderer-attribute-session-id-attribute.md)       | Especifica a classe de política de áudio para o processador de áudio.                                                    |
-| [\_categoria do \_ fluxo de atributos do processador de áudio MF \_ \_ \_](mf-audio-renderer-attribute-stream-category.md)           | Especifica a categoria de fluxo de áudio para o [processador de áudio de streaming](streaming-audio-renderer.md) (SAR). |
+| [**ID DO PONTO DE EXTREMIDADE DO ATRIBUTO DO RENDERADOR DE ÁUDIO \_ \_ \_ \_ \_ MF**](mf-audio-renderer-attribute-endpoint-id-attribute.md)     | Especifica o identificador do dispositivo de ponto de extremidade de áudio.                                                     |
+| [**FUNÇÃO DE PONTO DE EXTREMIDADE DE \_ \_ ATRIBUTO DO \_ RENDERADOR DE \_ \_ ÁUDIO MF**](mf-audio-renderer-attribute-endpoint-role-attribute.md) | Especifica a função de ponto de extremidade de áudio para o renderdor de áudio.                                                   |
+| [**SINALIZADORES DE \_ ATRIBUTO \_ DO RENDERADOR DE \_ \_ ÁUDIO MF**](mf-audio-renderer-attribute-flags-attribute.md)                  | Contém sinalizadores para configurar o renderador de áudio.                                                             |
+| [**ID DA SESSÃO DE ATRIBUTO \_ \_ DO \_ RENDERADOR DE ÁUDIO \_ \_ MF**](mf-audio-renderer-attribute-session-id-attribute.md)       | Especifica a classe de política de áudio para o renderador de áudio.                                                    |
+| [CATEGORIA DE FLUXO \_ DE \_ ATRIBUTO DO \_ RENDERADOR DE ÁUDIO \_ \_ MF](mf-audio-renderer-attribute-stream-category.md)           | Especifica a categoria de fluxo de áudio para o SAR [(Streaming Audio Renderer).](streaming-audio-renderer.md) |
 
 
 
@@ -33,10 +33,10 @@ Os atributos a seguir podem ser usados para configurar o processador de áudio.
 
 <dl> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> <dt>
 
-[Processador de streaming de áudio](streaming-audio-renderer.md)
+[Renderização de áudio de streaming](streaming-audio-renderer.md)
 </dt> </dl>
 
  

@@ -1,30 +1,30 @@
 ---
-title: Usando o JScript
-description: Usando o JScript
+title: Usando JScript
+description: Usando JScript
 ms.assetid: c50983d8-aaec-46ff-a8e0-b05e5b75f6d1
 keywords:
-- Capas do Windows Media Player, arquivos JScript
-- capas, arquivos JScript
+- Windows Media Player capas, JScript arquivos
+- skins, JScript arquivos
 - arquivos para capas, JScript
-- Arquivos JScript para capas, sobre
+- JScript arquivos para capas, sobre
 - escrevendo código para capas, JScript
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bf6b031d4a0828138e6c67767918a339b5df243
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f4b642a1af7a4634e04947ee57894886fe9a6899205669f002c18da788630fa0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118830814"
 ---
-# <a name="using-jscript"></a>Usando o JScript
+# <a name="using-jscript"></a>Usando JScript
 
-O Windows Media Player requer o Microsoft Internet Explorer versão 4 ou posterior. Ao escrever código, não assuma que o computador do usuário conterá uma versão do Microsoft JScript posterior a 4,0.
+Windows Media Player requer o Microsoft Internet Explorer versão 4 ou posterior. Ao escrever código, não suponha que o computador do usuário conterá uma versão do Microsoft JScript posterior à 4.0.
 
-As seções a seguir fornecem detalhes sobre como usar o JScript em capas:
+As seções a seguir fornecem detalhes sobre como JScript em capas:
 
--   [Trabalhando com o Player](working-with-the-player.md)
--   [Manipuladores de eventos](event-handlers.md)
+-   [Trabalhando com o player](working-with-the-player.md)
+-   [Manipuladores](event-handlers.md)
 -   [Funções de Chamada](calling-functions.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -34,9 +34,9 @@ As seções a seguir fornecem detalhes sobre como usar o JScript em capas:
 [**Escrevendo código**](writing-code.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -7,12 +7,12 @@ MSHAttr:
 title: tipo simples de guidtype (banda larga móvel)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66b7cc19207ab334694e4b42a49f727070cb385d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9469ff58d15ad51ba53a9975655e9d489c2f3a4fdb9784feb3bd41daeb0d0ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975065"
 ---
 # <a name="span-idwwan_profile_v4simpletype_guidtypespanguidtype-simple-type-mobile-broadband"></a><span id="WWAN_profile_v4.simpleType_guidType"></span>tipo simples de guidtype (banda larga móvel)
 

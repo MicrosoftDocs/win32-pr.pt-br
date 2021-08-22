@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 4c76ffe70a8388e920b5f8576830e31ed23edc81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e26f7ed7f002801d3bbdf60708d83234231fe3333675a1c211488431868a4236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731190"
 ---
 # <a name="printer_notify_info_data-structure"></a>\_Estrutura de \_ dados de informações de notificação de impressora \_
 
@@ -138,7 +138,7 @@ Se o **tipo** membro especificar \_ tipo de notificação de impressora \_ , o m
 <tbody>
 <tr class="odd">
 <td>PRINTER_NOTIFY_FIELD_SERVER_NAME</td>
-<td>Não há suporte.</td>
+<td>Sem suporte.</td>
 <td>0x00</td>
 </tr>
 <tr class="even">
@@ -227,52 +227,52 @@ PRINTER_ATTRIBUTE_SHARED<br />
 </tr>
 <tr class="even">
 <td>PRINTER_NOTIFY_FIELD_UNTIL_TIME</td>
-<td><strong>adwData</strong> [0] Especifica a hora mais recente em que a impressora imprimirá um trabalho. (Esse valor é especificado em minutos decorridos desde 12:00 A.M.)</td>
+<td><strong>adwData</strong> [0] especifica a hora mais recente em que a impressora imprimirá um trabalho. (Esse valor é especificado em minutos decorridos desde 12h)</td>
 <td>0x11</td>
 </tr>
 <tr class="odd">
 <td>PRINTER_NOTIFY_FIELD_STATUS</td>
-<td><strong>adwData</strong> [0] Especifica o status da impressora. Para obter uma lista de valores possíveis, consulte a estrutura de <a href="printer-info-2.md"><strong>PRINTER_INFO_2</strong></a> .</td>
+<td><strong>adwData</strong> [0] especifica o status da impressora. Para ver uma lista de valores possíveis, consulte a <a href="printer-info-2.md"><strong>estrutura PRINTER_INFO_2</strong></a> dados.</td>
 <td>0x12</td>
 </tr>
 <tr class="even">
 <td>PRINTER_NOTIFY_FIELD_STATUS_STRING</td>
-<td>Não há suporte.</td>
+<td>Sem suporte.</td>
 <td>0x13</td>
 </tr>
 <tr class="odd">
 <td>PRINTER_NOTIFY_FIELD_CJOBS</td>
-<td><strong>adwData</strong> [0] Especifica o número de trabalhos de impressão que foram enfileirados para a impressora.</td>
+<td><strong>adwData</strong> [0] especifica o número de trabalhos de impressão na fila da impressora.</td>
 <td>0x14</td>
 </tr>
 <tr class="even">
 <td>PRINTER_NOTIFY_FIELD_AVERAGE_PPM</td>
-<td><strong>adwData</strong> [0] Especifica o número médio de páginas por minuto que foram impressas na impressora.</td>
+<td><strong>adwData</strong> [0] especifica o número médio de páginas por minuto que foram impressas na impressora.</td>
 <td>0x15</td>
 </tr>
 <tr class="odd">
 <td>PRINTER_NOTIFY_FIELD_TOTAL_PAGES</td>
-<td>Não há suporte.</td>
+<td>Sem suporte.</td>
 <td>0x16</td>
 </tr>
 <tr class="even">
 <td>PRINTER_NOTIFY_FIELD_PAGES_PRINTED</td>
-<td>Não há suporte.</td>
+<td>Sem suporte.</td>
 <td>0x17</td>
 </tr>
 <tr class="odd">
 <td>PRINTER_NOTIFY_FIELD_TOTAL_BYTES</td>
-<td>Não há suporte.</td>
+<td>Sem suporte.</td>
 <td>0x18</td>
 </tr>
 <tr class="even">
 <td>PRINTER_NOTIFY_FIELD_BYTES_PRINTED</td>
-<td>Não há suporte.</td>
+<td>Sem suporte.</td>
 <td>0x19</td>
 </tr>
 <tr class="odd">
 <td>PRINTER_NOTIFY_FIELD_OBJECT_GUID</td>
-<td>Isso será definido se o GUID do objeto for alterado.</td>
+<td>Isso será definido se o GUID do objeto for alterações.</td>
 <td>0x1A</td>
 </tr>
 <tr class="even">
@@ -287,31 +287,31 @@ PRINTER_ATTRIBUTE_SHARED<br />
 
  
 
-Se o membro de **tipo** especificar o tipo de notificação de trabalho \_ \_ , o **campo** membro poderá ser um dos valores a seguir.
+Se o **membro Type** especificar JOB \_ NOTIFY \_ TYPE, o membro **Field** poderá ser um dos valores a seguir.
 
 
 
 | Campo                                    | Tipo de dados                                                                                                                                                                                                                                            | Valor |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| \_nome da \_ impressora do campo NOTIFICAr trabalho \_ \_        | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que contém o nome da impressora para a qual o trabalho está no spool.                                                                                                                                      | 0x00  |
-| \_nome da \_ máquina do campo de notificação de trabalho \_ \_        | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do computador que criou o trabalho de impressão.                                                                                                                                    | 0x01  |
-| \_nome da \_ porta do campo NOTIFICAr trabalho \_ \_           | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que identifica as portas usadas para transmitir dados para a impressora. Se uma impressora estiver conectada a mais de uma porta, os nomes das portas serão separados por vírgulas (por exemplo, "LPT1:, LPT2:, LPT3:"). | 0x02  |
-| \_nome de \_ usuário do campo de notificação de trabalho \_ \_           | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do usuário que enviou o trabalho de impressão.                                                                                                                                           | 0x03  |
-| \_nome da \_ notificação do campo de notificação de trabalho \_ \_         | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do usuário que deve ser notificado quando o trabalho tiver sido impresso ou quando ocorrer um erro durante a impressão do trabalho.                                                              | 0x04  |
-| \_tipo de \_ dados do campo de notificação de trabalho \_             | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o tipo de dados usado para registrar o trabalho de impressão.                                                                                                                                         | 0x05  |
-| \_processador de \_ impressão de campo de notificação de trabalho \_ \_     | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do processador de impressão a ser usado para imprimir o trabalho.                                                                                                                           | 0x06  |
-| \_parâmetros de \_ campo de notificação de trabalho \_           | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica os parâmetros do processador de impressão.                                                                                                                                                            | 0x07  |
-| \_nome do \_ Driver do campo NOTIFICAr trabalho \_ \_         | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do driver de impressora que deve ser usado para processar o trabalho de impressão.                                                                                                           | 0x08  |
-| \_DEVMODE do \_ campo de notificação de trabalho \_              | **pBuf** é um ponteiro para uma estrutura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) que contém dados de inicialização de dispositivo e de ambiente para o driver de impressora.                                                                                                        | 0x09  |
-| \_status do \_ campo de notificação de trabalho \_               | **adwData** \[ 0 \] especifica o status do trabalho. Para obter uma lista de valores possíveis, consulte a estrutura [**informações do trabalho \_ \_ 2**](job-info-2.md) .                                                                                                                        | 0x0A  |
-| \_cadeia de \_ status do campo NOTIFICAr trabalho \_ \_       | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o status do trabalho de impressão.                                                                                                                                                           | 0x0B  |
-| \_ \_ \_ descritor de segurança do campo de notificação de trabalho \_ | Não há suporte.                                                                                                                                                                                                                                          | 0x0C  |
-| \_documento de \_ campo de notificação de trabalho \_             | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do trabalho de impressão (por exemplo, "MS-WORD: Review.doc").                                                                                                                        | 0x0D  |
-| \_prioridade do \_ campo de notificação de trabalho \_             | **adwData** \[ 0 \] especifica a prioridade do trabalho.                                                                                                                                                                                                           | 0x0E  |
-| \_posição do \_ campo de notificação de trabalho \_             | **adwData** \[ 0 \] especifica a posição do trabalho na fila de impressão.                                                                                                                                                                                      | 0x0F  |
-| campo de notificação de trabalho \_ \_ \_ enviado            | **pBuf** é um ponteiro para uma estrutura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que especifica a hora em que o trabalho foi enviado.                                                                                                                          | 0x10  |
-| \_hora de \_ início do campo NOTIFICAr trabalho \_ \_          | **adwData** \[ 0 \] especifica a hora mais antiga em que o trabalho pode ser impresso. (Esse valor é especificado em minutos decorridos desde 12:00 A.M.)                                                                                                                | 0x11  |
-| campo de notificação de trabalho \_ \_ até a \_ \_ hora          | **adwData** \[ 0 \] especifica a hora mais recente em que o trabalho pode ser impresso. (Esse valor é especificado em minutos decorridos desde 12:00 A.M.)                                                                                                                  | 0x12  |
+| NOME DA \_ \_ IMPRESSORA DO CAMPO \_ NOTIFICAR \_ TRABALHO        | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que contém o nome da impressora para a qual o trabalho está em spool.                                                                                                                                      | 0x00  |
+| NOME DO \_ COMPUTADOR \_ DO CAMPO \_ NOTIFICAÇÃO DO \_ TRABALHO        | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do computador que criou o trabalho de impressão.                                                                                                                                    | 0x01  |
+| NOME DA \_ PORTA \_ DO CAMPO \_ NOTIFICAÇÃO DO \_ TRABALHO           | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que identifica as portas usadas para transmitir dados para a impressora. Se uma impressora estiver conectada a mais de uma porta, os nomes das portas serão separados por vírgulas (por exemplo, "LPT1:,LPT2:,LPT3:"). | 0x02  |
+| NOME DE \_ USUÁRIO \_ DO CAMPO \_ NOTIFICAÇÃO DE \_ TRABALHO           | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do usuário que enviou o trabalho de impressão.                                                                                                                                           | 0x03  |
+| NOME DA \_ \_ NOTIFICAÇÃO DO \_ CAMPO NOTIFICAÇÃO \_ DO TRABALHO         | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do usuário que deve ser notificado quando o trabalho tiver sido impresso ou quando ocorrer um erro ao imprimir o trabalho.                                                              | 0x04  |
+| TIPO \_ DE DADOS DO CAMPO \_ \_ NOTIFICAÇÃO DE TRABALHO             | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o tipo de dados usado para registrar o trabalho de impressão.                                                                                                                                         | 0x05  |
+| PROCESSADOR DE \_ IMPRESSÃO \_ DO CAMPO \_ NOTIFICAÇÃO DE \_ TRABALHO     | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do processador de impressão a ser usado para imprimir o trabalho.                                                                                                                           | 0x06  |
+| PARÂMETROS \_ DE \_ CAMPO NOTIFICAÇÃO DE \_ TRABALHO           | **pBuf é** um ponteiro para uma cadeia de caracteres terminada em nulo que especifica parâmetros de processador de impressão.                                                                                                                                                            | 0x07  |
+| NOME \_ DO DRIVER DE CAMPO \_ NOTIFICAÇÃO DE \_ \_ TRABALHO         | **pBuf é** um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do driver de impressora que deve ser usado para processar o trabalho de impressão.                                                                                                           | 0x08  |
+| CAMPO \_ NOTIFICAR \_ TRABALHO \_ DEVMODE              | **pBuf é** um ponteiro para uma estrutura [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) que contém dados de ambiente e inicialização do dispositivo para o driver de impressora.                                                                                                        | 0x09  |
+| STATUS \_ DO CAMPO \_ NOTIFICAÇÃO DO \_ TRABALHO               | **adwData** \[ 0 \] especifica o status do trabalho. Para obter uma lista de valores possíveis, consulte a estrutura [**JOB \_ INFO \_ 2.**](job-info-2.md)                                                                                                                        | 0x0A  |
+| CADEIA DE \_ CARACTERES DE \_ STATUS DO CAMPO NOTIFICAÇÃO DE \_ \_ TRABALHO       | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o status do trabalho de impressão.                                                                                                                                                           | 0x0B  |
+| DESCRITOR \_ DE SEGURANÇA DE CAMPO DE \_ \_ \_ NOTIFICAÇÃO DE TRABALHO | Sem suporte.                                                                                                                                                                                                                                          | 0x0C  |
+| DOCUMENTO DO \_ CAMPO \_ NOTIFICAÇÃO \_ DE TRABALHO             | **pBuf** é um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do trabalho de impressão (por exemplo, "MS-WORD: Review.doc").                                                                                                                        | 0x0D  |
+| PRIORIDADE \_ DO CAMPO \_ NOTIFICAÇÃO DE \_ TRABALHO             | **adwData** \[ 0 \] especifica a prioridade do trabalho.                                                                                                                                                                                                           | 0x0E  |
+| POSIÇÃO DO \_ CAMPO \_ NOTIFICAÇÃO \_ DO TRABALHO             | **adwData** \[ 0 \] especifica a posição do trabalho na fila de impressão.                                                                                                                                                                                      | 0x0F  |
+| CAMPO \_ \_ NOTIFICAÇÃO DE \_ TRABALHO ENVIADO            | **pBuf** é um ponteiro para uma [**estrutura SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que especifica a hora em que o trabalho foi enviado.                                                                                                                          | 0x10  |
+| HORA DE \_ INÍCIO \_ DO CAMPO NOTIFICAÇÃO DO \_ \_ TRABALHO          | **adwData** \[ 0 \] especifica a hora mais antiga em que o trabalho pode ser impresso. (Esse valor é especificado em minutos decorridos desde 12h)                                                                                                                | 0x11  |
+| CAMPO \_ NOTIFICAÇÃO \_ DE TRABALHO ATÉ \_ A \_ HORA          | **adwData** \[ 0 \] especifica a hora mais recente em que o trabalho pode ser impresso. (Esse valor é especificado em minutos decorridos desde 12h)                                                                                                                  | 0x12  |
 | \_hora do \_ campo de notificação de trabalho \_                 | **adwData** \[ 0 \] especifica o tempo total, em segundos, decorrido desde que o trabalho começou a ser impresso.                                                                                                                                                  | 0x13  |
 | TOTAL de páginas de notificação de trabalho do \_ \_ campo \_ \_         | **adwData** \[ 0 \] especifica o tamanho, em páginas, do trabalho.                                                                                                                                                                                             | 0x14  |
 | páginas de campo de notificação de trabalho \_ \_ \_ \_ impressas       | **adwData** \[ 0 \] especifica o número de páginas que foram impressas.                                                                                                                                                                                      | 0x15  |

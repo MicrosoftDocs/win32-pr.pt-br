@@ -1,7 +1,7 @@
 ---
 description: Estilos de janela para a janela.
 ms.assetid: 1f8f94aa-94de-4dc9-ac1b-b34442243c3e
-title: 'Membro CBaseWindow:: m_WindowStyles (Winutil. h)'
+title: Membro CBaseWindow::m_WindowStyles (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 62d7f4dc9302e5f0dfff52a2e8c8c69c9557edfc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94bc6355b868f5f0e9c8224f6db2f730a166a65a73a60baa1e0b26cbe99af51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657987"
 ---
-# <a name="cbasewindowm_windowstyles-member"></a>Membro de CBaseWindow:: m \_ WindowStyles
+# <a name="cbasewindowm_windowstyles-member"></a>Membro CBaseWindow::m \_ WindowStyles
 
 Estilos de janela para a janela.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++
@@ -42,8 +42,8 @@ DWORD m_WindowStyles;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

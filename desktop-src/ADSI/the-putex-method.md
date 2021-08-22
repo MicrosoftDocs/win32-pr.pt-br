@@ -1,24 +1,24 @@
 ---
 title: O método PutEx
-description: O método IADs PutEx usa o nome de uma propriedade para salvar uma propriedade com um ou vários valores no cache de propriedades.
+description: O método PutEx de IADs usa o nome de uma propriedade para salvar uma propriedade com valores individuais ou múltiplos no cache de propriedades.
 ms.assetid: fb9a0610-e955-424b-a2b9-da4986d0ba5f
 ms.tgt_platform: multiple
 keywords:
-- PutEx ADSI, sobre
-- ADSI ADSI, código de exemplo Visual Basic, usando o método PutEx
-- Propriedades ADSI, salvando uma propriedade única ou com vários valores no cache de propriedades
+- PUTEx ADSI, sobre
+- ADSI ADSI, exemplo de código Visual Basic , usando o método PutEx
+- propriedades ADSI , salvando uma propriedade única ou com vários valores no cache de propriedade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ea698c2dd14f3ddf8f3ad97459fad598006db22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 646c07fad5d22110d345b71a763add5483d7f0be5f6ae2c36557eb7f1563561c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023164"
 ---
 # <a name="the-putex-method"></a>O método PutEx
 
-O método [**IADs::P utex**](/windows/desktop/api/Iads/nf-iads-iads-putex) usa o nome de uma propriedade para salvar uma propriedade com um ou vários valores no cache de propriedades. Isso substitui qualquer valor atualmente no cache de propriedades. Os valores no cache não são gravados no serviço de diretório subjacente até que ocorra um [**IADs:: setinfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) . O primeiro argumento de **PutEx** indica se você deseja substituir ou adicionar a quaisquer valores existentes para a propriedade. No exemplo a seguir, todos os valores existentes do atributo **Description** são apagados no cache quando **PutEx** é chamado e apagados no servidor quando **setinfo** é chamado.
+O [**método IADs::P utEx**](/windows/desktop/api/Iads/nf-iads-iads-putex) usa o nome de uma propriedade para salvar uma propriedade com valores individuais ou múltiplos no cache de propriedades. Isso substitui qualquer valor atualmente no cache de propriedade. Os valores no cache não são gravados no serviço de diretório subjacente até que ocorra um [**IADs::SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) O primeiro argumento de **PutEx** indica se você deseja substituir ou adicionar a quaisquer valores existentes para a propriedade . No exemplo a seguir, todos os valores existentes do atributo **de** descrição são apagados no cache quando **PutEx** é chamado e apagados no servidor quando **SetInfo** é chamado.
 
 
 ```VB
@@ -41,9 +41,9 @@ x.SetInfo              'Now the property has no value.
 
 
 
- 
+ 
 
- 
+ 
 
 
 

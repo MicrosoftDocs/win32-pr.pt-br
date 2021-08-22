@@ -4,12 +4,12 @@ ms.assetid: f36b7e36-4377-4940-8951-6caba6e3ce8a
 title: Criando um hash com CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 735f95182b63facee687f408ea4a07e09399e562
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f57d56c4be7dc2f947dbb1869e63fb1789f57e9b4fe6b3a7a06e3cce15580ab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907815"
 ---
 # <a name="creating-a-hash-with-cng"></a>Criando um hash com CNG
 
@@ -226,7 +226,7 @@ Cleanup:
 
 ## <a name="creating-a-reusable-hashing-object"></a>Criando um objeto de hash reutilizável
 
-A partir do Windows 8 e do Windows Server 2012, você pode criar um objeto de hash reutilizável para cenários que exigem a computação de vários hashes ou HMACs em uma rápida sucessão. Faça isso especificando o **sinalizador BCRYPT \_ hash \_ reutilizável \_** ao chamar a função [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) . Todos os provedores de algoritmos de hash da Microsoft dão suporte a esse sinalizador. Um objeto de hash criado com esse sinalizador pode ser reutilizado imediatamente após chamar [**BCryptFinishHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfinishhash) , como se ele tivesse sido criado de forma nova, chamando [**BCryptCreateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash). Execute as seguintes etapas para criar um objeto de hash reutilizável:
+começando com Windows 8 e Windows Server 2012, você pode criar um objeto de hash reutilizável para cenários que exigem a computação de vários hashes ou hmacs em uma rápida sucessão. Faça isso especificando o **sinalizador BCRYPT \_ hash \_ reutilizável \_** ao chamar a função [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) . Todos os provedores de algoritmos de hash da Microsoft dão suporte a esse sinalizador. Um objeto de hash criado com esse sinalizador pode ser reutilizado imediatamente após chamar [**BCryptFinishHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptfinishhash) , como se ele tivesse sido criado de forma nova, chamando [**BCryptCreateHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptcreatehash). Execute as seguintes etapas para criar um objeto de hash reutilizável:
 
 1.  Abra um provedor de algoritmo que dê suporte ao algoritmo de hash desejado. Chame a função [**BCryptOpenAlgorithmProvider**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) e especifique o identificador de algoritmo apropriado no parâmetro *pszAlgId* e **no \_ \_ \_ sinalizador BCRYPT hash reutilizável** no parâmetro *dwFlags* . A função retorna um identificador para o provedor.
 2.  Execute as seguintes etapas para criar o objeto de hash:

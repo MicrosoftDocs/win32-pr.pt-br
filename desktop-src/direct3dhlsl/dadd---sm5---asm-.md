@@ -1,23 +1,23 @@
 ---
-title: Dadd (SM5-ASM)
+title: paid (sm5 – asm)
 description: Adição de precisão dupla por componente.
 ms.assetid: 416F1103-E27B-4AFC-9ED1-492FF8A93492
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e217a03a5ba9e4da0d365bbfd15e4283f1a69cb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 4e382ea2660b587a843ecca4c3bae93251a5f9434bd2cdca5899beaf25bb2fd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793524"
 ---
-# <a name="dadd-sm5---asm"></a>Dadd (SM5-ASM)
+# <a name="dadd-sm5---asm"></a>paid (sm5 – asm)
 
 Adição de precisão dupla por componente.
 
 
 
-| Dadd \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle \] , \[ - \] src1 \[ \_ ABS \] \[ . swizzle\] |
+| paid \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle, \] \[ - \] src1 \[ \_ abs \] \[ .swizzle\] |
 |---------------------------------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Adição de precisão dupla por componente.
 
 | Item                                                            | Descrição                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[no \] endereço do resultado da operação.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nos \] componentes a serem adicionados com *src1*.<br/>          |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[nos \] componentes a serem adicionados com *src0*<br/>           |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[em \] O endereço do resultado da operação.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[em \] Os componentes a adicionar com *src1*.<br/>          |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[em \] Os componentes a adicionar com *src0*<br/>           |
 
 
 
@@ -38,15 +38,15 @@ Adição de precisão dupla por componente.
 
 ## <a name="remarks"></a>Comentários
 
-O swizzles válido para os parâmetros de origem são. xyzw,. xyxy,. zwxy,. zwzw. As máscaras de *destino* válidas são. XY,. zw e. xyzw. Os seguintes mapeamentos são swizzle:
+Os swizzles válidos para os parâmetros de origem são .xyzw, .xyxy, .zwxy, .zwzw. As máscaras *de dest* válidas são .xy, .zw e .xyzw. Os seguintes mapeamentos são pós-swizzle:
 
--   *dest* é um vec2 duplo entre (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
--   *src0* é um vec2 duplo entre (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
--   *src1* é um vec2 duplo entre (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *dest* é um vec2 duplo em (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *src0* é um vec2 duplo em (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
+-   *src1* é um vec2 duplo em (x 32LSB, y 32MSB) e (z 32LSB, w 32MSB).
 
-A tabela a seguir mostra os resultados obtidos ao executar a instrução com várias classes de números, supondo que nenhum estouro ou Subfluxo ocorra.
+A tabela a seguir mostra os resultados obtidos ao executar a instrução com várias classes de números, supondo que nenhum estouro ou estouro ocorra.
 
-F significa número real finito.
+F significa número finito real.
 
 
 
@@ -56,16 +56,16 @@ F significa número real finito.
 <td><dl> <strong>src0</strong><br />
 <strong>src1-></strong><br />
 </dl></td>
-<td><strong>-INF</strong></td>
+<td><strong>-inf</strong></td>
 <td><strong>-F</strong></td>
 <td><strong>-0</strong></td>
 <td><strong>+0</strong></td>
-<td><strong>+ F</strong></td>
-<td><strong>+ INF</strong></td>
+<td><strong>+F</strong></td>
+<td><strong>+inf</strong></td>
 <td><strong>NaN</strong></td>
 </tr>
 <tr class="even">
-<td><strong>-INF</strong></td>
+<td><strong>-inf</strong></td>
 <td>-inf</td>
 <td>-inf</td>
 <td>-inf</td>
@@ -105,17 +105,17 @@ F significa número real finito.
 <td>NaN</td>
 </tr>
 <tr class="even">
-<td><strong>+ F</strong></td>
+<td><strong>+F</strong></td>
 <td>-inf</td>
 <td>+-F ou +-0</td>
 <td>src0</td>
 <td>src0</td>
-<td>+ F</td>
+<td>+F</td>
 <td>+inf</td>
 <td>NaN</td>
 </tr>
 <tr class="odd">
-<td><strong>+ INF</strong></td>
+<td><strong>+inf</strong></td>
 <td>NaN</td>
 <td>+inf</td>
 <td>+inf</td>
@@ -141,11 +141,11 @@ F significa número real finito.
 
  
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

@@ -4,12 +4,12 @@ ms.assetid: 83defdc5-79f5-4727-a9b2-fc7422767873
 title: Configurações de computação móvel para o SENS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e04f1844e84efb1b6247e5b9f7026c71d01e68fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56b51dfaf05f8babd85a921517289faa77916ccba5323703b87faa445af4adc8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118890682"
 ---
 # <a name="mobile-computing-configurations-for-sens"></a>Configurações de computação móvel para o SENS
 

@@ -1,26 +1,26 @@
 ---
-description: O design de SSPI permite que os SSPs adicionais sejam gravados e adicionados ao sistema.
+description: O design do SSPI permite que SSPs adicionais sejam gravados e adicionados ao sistema.
 ms.assetid: 0d462340-e485-4746-b627-d823752462d9
-title: Gravando e instalando um provedor de suporte de segurança
+title: Escrevendo e instalando um provedor de suporte de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e19f827ddf2b0352acc889df3ed1d5b3dfff52c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 11ac7125c386314ec7772a5e6079f423af0aaf5c9f7dd820a24c042d99834d74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118914745"
 ---
-# <a name="writing-and-installing-a-security-support-provider"></a>Gravando e instalando um provedor de suporte de segurança
+# <a name="writing-and-installing-a-security-support-provider"></a>Escrevendo e instalando um provedor de suporte de segurança
 
-O design de SSPI permite que os SSPs adicionais sejam gravados e adicionados ao sistema. Um [*SSP*](../secgloss/s-gly.md) específico de um modelo de segurança pode ser desenvolvido com a facilidade relativa ou uma grande complexidade, dependendo do nível de integração com o sistema operacional. Um SSP de cliente que permite conexões com um novo tipo de servidor poderia ser desenvolvido muito rapidamente, enquanto que um SSP completo que fornece representação local exigiria mais esforço.
+O design do SSPI permite que SSPs adicionais sejam gravados e adicionados ao sistema. Um [*SSP específico*](../secgloss/s-gly.md) para um modelo de segurança pode ser desenvolvido com relativa facilidade ou grande complexidade, dependendo do nível de integração com o sistema operacional. Um SSP cliente que permite conexões com um novo tipo de servidor pode ser desenvolvido muito rapidamente, enquanto um SSP completo que fornece representação local exigiria mais esforço.
 
-Os SSPs são instalados atualizando um valor de **\_ sz de reg** no registro, localizado da seguinte maneira:
+Os SSPs são instalados atualizando um **valor REG \_ SZ** no Registro, localizado da seguinte forma:
 
-**HKEY \_ Sistema de \_ máquina local** \\  \\ **CurrentControlSet** \\ **Control** \\ **SecurityProviders**  =  *Provider1.dll, Provider2.dll,*...    <dl> <dt>
+**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **SecurityProviders**  =  *Provider1.dll, Provider2.dll,*...    <dl> <dt>
 
             Data type
-</dt> <dd>            REG \_ sz</dd> </dl>
+</dt> <dd>            REG \_ SZ</dd> </dl>
 
 Uma única DLL pode conter vários SSPs.
 
@@ -28,7 +28,7 @@ Uma única DLL pode conter vários SSPs.
 
 <dl> <dt>
 
-[Restrições sobre o registro e a instalação de um pacote de segurança](restrictions-around-registering-and-installing-a-security-package.md)
+[Restrições em relação ao registro e instalação de um pacote de segurança](restrictions-around-registering-and-installing-a-security-package.md)
 </dt> </dl>
 
  

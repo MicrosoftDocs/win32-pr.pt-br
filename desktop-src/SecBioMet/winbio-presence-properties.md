@@ -1,10 +1,10 @@
 ---
 title: WINBIO_PRESENCE_PROPERTIES Union (tipos de WinBio \_ . h)
-description: Contém valores biométricos que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
+description: contém valores biométricos que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
 ms.assetid: 596CAA7F-35D2-442A-8041-BA1010DF5BAD
 keywords:
-- API de Windows Biometric Framework de União de WINBIO_PRESENCE_PROPERTIES
-- PWINBIO_PRESENCE_PROPERTIES o ponteiro de União Windows Biometric Framework API
+- API de Windows Biometric Framework de união de WINBIO_PRESENCE_PROPERTIES
+- PWINBIO_PRESENCE_PROPERTIES o ponteiro de união Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0568008b870953c34205706acc90cb22a2c0e92
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6a3964883f5dcd5b00c6f3eb6929c9deec99e58db014d18e51a192180a4d11f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909651"
 ---
 # <a name="winbio_presence_properties-union"></a>União de propriedades de \_ presença de WINBIO \_
 
-Contém valores biométricos que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
+contém valores biométricos que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,7 +54,7 @@ typedef union _WINBIO_PRESENCE_PROPERTIES {
 **FacialFeatures**
 </dt> <dd>
 
-Valores para o local dos recursos faciais que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
+valores para o local dos recursos faciais que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
 
 <dl> <dt>
 
@@ -65,17 +65,17 @@ A posição dentro do quadro da câmera da face da pessoa, em pixels. O tamanho 
 
 </dd> <dt>
 
-**Distância**
+**Alcance**
 </dt> <dd>
 
 A distância entre o local real da face e a distância focal ideal para a face. Esse valor varia de-100 a 100. 0 indica a distância ideal, os valores positivos indicam que o local real da face está muito distante, e os valores negativos indicam que o local real está muito próximo.
 
 </dd> </dl> </dd> <dt>
 
-**Íris**
+**Iris**
 </dt> <dd>
 
-Valores para o local da íris que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
+valores para o local da íris que o Windows Biometric Framework usado para determinar se um indivíduo estava presente.
 
 <dl> <dt>
 
@@ -111,7 +111,7 @@ A posição do centro de um dos Pupils do indivíduo a ser registrado. Se o sist
 
 </dd> <dt>
 
-**Distância**
+**Alcance**
 </dt> <dd>
 
 A distância entre o local real da íris e a distância focal ideal para a íris. Esse valor varia de-100 a 100. 0 indica a distância ideal, os valores positivos indicam que o local real da íris está muito distante, e os valores negativos indicam que o local real está muito próximo.
@@ -124,8 +124,8 @@ A distância entre o local real da íris e a distância focal ideal para a íris
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
 
 

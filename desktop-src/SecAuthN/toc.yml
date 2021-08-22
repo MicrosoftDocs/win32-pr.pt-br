@@ -233,50 +233,50 @@
                               href: tls-handshake-protocol.md
                             - name: Protocolo de registro TLS
                               href: tls-record-protocol.md
-                            - name: Conjuntos de codificação TLS
+                            - name: Conjunto de Criptografia TLS
                               href: tls-cipher-suites.md
                             - name: TLS vs. SSL
                               href: tls-versus-ssl.md
-                    - name: Códigos de autenticação de mensagens no Schannel
+                    - name: Códigos de autenticação de mensagem no Schannel
                       href: message-authentication-codes-in-schannel.md
-                    - name: Conjuntos de codificação em TLS/SSL (Schannel SSP)
+                    - name: Pacotes de Criptografia em TLS/SSL (SSP Schannel)
                       href: cipher-suites-in-schannel.md
                       items:
-                        - name: conjuntos de codificação TLS no Windows 10 v21H1
+                        - name: Conjunto de criptografia TLS Windows 10 v21H1
                           href: ./tls-cipher-suites-in-windows-server-2022.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1903
+                        - name: Conjunto de Criptografia TLS Windows 10 v1903
                           href: tls-cipher-suites-in-windows-10-v1903.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1809
+                        - name: Conjunto de Criptografia TLS Windows 10 v1809
                           href: tls-cipher-suites-in-windows-10-v1809.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1803
+                        - name: Conjunto de criptografia TLS Windows 10 v1803
                           href: tls-cipher-suites-in-windows-10-v1803.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1709
+                        - name: Conjunto de Criptografia TLS Windows 10 v1709
                           href: tls-cipher-suites-in-windows-10-v1709.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1703
+                        - name: Conjunto de Criptografia TLS Windows 10 v1703
                           href: tls-cipher-suites-in-windows-10-v1703.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1607
+                        - name: Conjunto de Criptografia TLS Windows 10 v1607
                           href: tls-cipher-suites-in-windows-10-v1607.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1511
+                        - name: Conjunto de Criptografia TLS Windows 10 v1511
                           href: tls-cipher-suites-in-windows-10-v1511.md
-                        - name: conjuntos de codificação TLS no Windows 10 v1507
+                        - name: Conjunto de Criptografia TLS Windows 10 v1507
                           href: tls-cipher-suites-in-windows-10--version-1507.md
-                        - name: Conjuntos de codificação TLS no Windows 8.1
+                        - name: Conjunto de criptografia TLS Windows 8.1
                           href: tls-cipher-suites-in-windows-8-1.md
-                        - name: Conjuntos de codificação TLS no Windows 8
+                        - name: Conjunto de criptografia TLS Windows 8
                           href: tls-cipher-suites-in-windows-8.md
-                        - name: conjuntos de codificação TLS no Windows 7
+                        - name: Conjunto de criptografia TLS no Windows 7
                           href: tls-cipher-suites-in-windows-7.md
                         - name: Pacotes de codificação do TLS no Windows Vista
                           href: schannel-cipher-suites-in-windows-vista.md
-                        - name: Priorizando conjuntos de codificação Schannel
+                        - name: Priorizando os Schannel Cipher Suites
                           href: prioritizing-schannel-cipher-suites.md
-                    - name: Curvas elípticas em TLS (Schannel SSP)
+                    - name: Curvas elípticas no TLS (SSP Schannel)
                       items:
-                        - name: 'curvas elípticas TLS no Windows 10, versões 1607 e posteriores'
+                        - name: 'Curvas elípticas do TLS Windows 10, versões 1607 e posteriores'
                           href: tls-elliptic-curves-in-windows-10-1607-and-later.md
-                        - name: 'curvas elípticas TLS em Windows 10, versões 1507 e 1511'
+                        - name: 'Curvas elípticas TLS Windows 10, versões 1507 e 1511'
                           href: tls-elliptic-curves-in-windows-10-1507-and-1511.md
-                    - name: Credenciais do Schannel
+                    - name: Credenciais Schannel
                       href: schannel-credentials.md
                     - name: Códigos de erro Schannel para alertas TLS e SSL
                       href: schannel-error-codes-for-tls-and-ssl-alerts.md
@@ -292,37 +292,37 @@
               items:
                 - name: SSP/APs versus SSPs
                   href: ssp-aps-versus-ssps.md
-                - name: Modo LSA versus modo de usuário
+                - name: Modo LSA versus Modo de Usuário
                   href: lsa-mode-versus-user-mode.md
-                - name: Restrições sobre o registro e a instalação de um pacote de segurança
+                - name: Restrições em relação ao registro e instalação de um pacote de segurança
                   href: restrictions-around-registering-and-installing-a-security-package.md
             - name: Informações de erro estendidas
               href: extended-error-information.md
         - name: Winlogon e provedores de credenciais
           href: winlogon-and-credential-providers.md
           items:
-            - name: Winlogon e GINA
+            - name: Winlogon e LTD
               href: winlogon-and-gina.md
               items:
                 - name: Winlogon
                   href: winlogon.md
                   items:
-                    - name: Inicializando Winlogon
+                    - name: Inicializando o Winlogon
                       href: initializing-winlogon.md
                     - name: Estados do Winlogon
                       href: winlogon-states.md
-                    - name: Caixa de diálogo com suporte Tempo de Serviço operações de saída
+                    - name: Operações de tempo-out do serviço caixa de diálogo com suporte
                       href: supported-dialog-box-service-time-out-operations.md
-                    - name: Enviando mensagens para a GINA
+                    - name: Enviando mensagens para o LTD
                       href: sending-messages-to-the-gina.md
-                - name: GINA
+                - name: Gina
                   href: gina.md
                   items:
-                    - name: Carregando e executando uma DLL GINA
+                    - name: Carregando e executando uma DLL DE LTD
                       href: loading-and-running-a-gina-dll.md
-                    - name: Criando e testando uma DLL GINA
+                    - name: Como criar e testar uma DLL DE LTD
                       href: building-and-testing-a-gina-dll.md
-                - name: Funções de GINA de serviços de terminal
+                - name: Funções DEIS dos Serviços de Terminal
                   href: terminal-services-gina-functions.md
                 - name: Interação com provedores de rede
                   href: interaction-with-network-providers.md
@@ -331,9 +331,9 @@
                   items:
                     - name: Responsabilidades do Winlogon
                       href: responsibilities-of-winlogon.md
-                    - name: Responsabilidades da GINA
+                    - name: Responsabilidades do LTD
                       href: responsibilities-of-the-gina.md
-                    - name: Recursos de MSGina.dll
+                    - name: MSGina.dll recursos
                       href: msgina-dll-features.md
                 - name: 'Interação entre Winlogon e GINA '
                   href: interaction-between-winlogon-and-gina.md
@@ -370,82 +370,82 @@
               href: user-mode-initialization.md
             - name: Registrando DLLs SSP/AP
               href: registering-ssp-ap-dlls.md
-            - name: Usando nomes principais de três partes
+            - name: Usando três nomes principais de parte
               href: using-three-part-principal-names.md
-        - name: Personalizando o Winlogon
+        - name: Personalização do Winlogon
           href: customizing-winlogon.md
-        - name: Diretrizes de introdução para provedores online integração com as APIs do agente de autenticação da Web
+        - name: Diretrizes de início para provedores online que se integram às APIs do Agente de Autenticação da Web
           href: getting-started-guidance-for-online-providers-integrating-with-the-web-authentication-broker-apis.md
           items:
             - name: Considerações para o desenvolvimento de páginas da Web
               href: considerations-for-the-web-page-development.md
             - name: Como personalizar os elementos da interface do usuário
               href: how-to-customize-the-ui-elements.md
-            - name: Tutorial para autenticação de páginas da Web
+            - name: Tutorial para autenticar páginas da Web
               href: tutorial-for-authenticating-web-pages.md
               items:
                 - name: Autenticação para páginas da Web
                   href: authentication-for-web-pages.md
                 - name: Autorização para páginas da Web
                   href: authorization-for-web-pages.md
-                - name: Práticas recomendadas para a criação de páginas da Web de autenticação
+                - name: Práticas recomendadas para criar páginas da Web de autenticação
                   href: best-practices-for-designing-authentication-web-pages.md
             - name: Problemas de autenticação da Web
               href: web-authentication-problems.md
-            - name: Perguntas frequentes sobre o agente de autenticação da Web
+            - name: Perguntas frequentes sobre o Agente de Autenticação da Web
               href: faq-for-web-authentication-broker.yml
-        - name: Usando a API do provedor de rede
+        - name: Usando a API do Provedor de Rede
           href: using-network-provider-api.md
           items:
             - name: Implementando um provedor de rede
               href: implementing-a-network-provider.md
-            - name: Implementando um Gerenciador de credenciais
+            - name: Implementando um Gerenciador de Credenciais
               href: implementing-a-credential-manager.md
             - name: Registrando provedores de rede e gerenciadores de credenciais
               href: registering-network-providers-and-credential-managers.md
-            - name: Retornando valores para o MPR
+            - name: Retornando valores para a MPR
               href: returning-values-to-the-mpr.md
             - name: Manipulando dados armazenados em buffer
               href: handling-buffered-data.md
             - name: Recebendo notificações de conexão
               href: receiving-connection-notifications.md
-            - name: Registrando para receber notificações de conexão
+            - name: Registrando-se para receber notificações de conexão
               href: registering-to-receive-connection-notifications.md
-            - name: Substituindo o intervalo de tempo limite de MPR padrão
+            - name: Substituindo o intervalo de tempo-out da MPR padrão
               href: overriding-the-default-mpr-time-out-interval.md
         - name: Usando SSPI
           href: using-sspi.md
           items:
-            - name: Procedimentos usados com a maioria dos pacotes de segurança e protocolos
+            - name: Procedimentos usados com a maioria dos pacotes e protocolos de segurança
               href: procedures-used-with-most-security-packages-and-protocols.md
               items:
                 - name: Usando SecBufferDesc e SecBuffer
                   href: using-secbufferdesc-and-secbuffer.md
-                - name: Inicializando SSPI
+                - name: Inicializando o SSPI
                   href: initializing-sspi.md
                   items:
-                    - name: Gravando e instalando um provedor de suporte de segurança
+                    - name: Escrevendo e instalando um provedor de suporte de segurança
                       href: writing-and-installing-a-security-support-provider.md
                     - name: Inicializando o pacote de segurança
                       href: initializing-the-security-package.md
-                    - name: Obtendo informações sobre pacotes de segurança
+                    - name: Obter informações sobre pacotes de segurança
                       href: getting-information-about-security-packages.md
                     - name: Usando pacotes de segurança
                       href: using-security-packages.md
                 - name: Estabelecendo uma conexão segura com autenticação
                   href: establishing-a-secure-connection-with-authentication.md
                   items:
-                    - name: Inicialização do contexto do cliente
+                    - name: Inicialização de contexto do cliente
                       href: client-context-initialization.md
                       items:
                         - name: Continuação do cliente
                           href: client-continuation.md
-                    - name: Inicialização do contexto do servidor
+                    - name: Inicialização de contexto do servidor
                       href: server-context-initialization.md
                       items:
                         - name: Continuação do servidor
                           href: server-continuation.md
-                - name: Garantindo a integridade da comunicação durante a Exchange de mensagens
+                - name: Garantir a integridade da comunicação durante a Exchange
                   href: ensuring-communication-integrity-during-message-exchange.md
                 - name: Encerrando uma sessão SSPI
                   href: ending-an-sspi-session.md
@@ -1073,7 +1073,7 @@
               href: /windows/desktop/api/Winscard/nf-winscard-scardbegintransaction
             - name: SCardCancel
               href: /windows/desktop/api/Winscard/nf-winscard-scardcancel
-            - name: SCardConnect
+            - name: Scardconnect
               href: /windows/desktop/api/Winscard/nf-winscard-scardconnecta
             - name: SCardControl
               href: /windows/desktop/api/Winscard/nf-winscard-scardcontrol
@@ -1081,7 +1081,7 @@
               href: /windows/desktop/api/Winscard/nf-winscard-scarddisconnect
             - name: SCardEndTransaction
               href: /windows/desktop/api/Winscard/nf-winscard-scardendtransaction
-            - name: SCardEstablishContext
+            - name: Scardestablishcontext
               href: /windows/desktop/api/Winscard/nf-winscard-scardestablishcontext
             - name: SCardForgetCardType
               href: /windows/desktop/api/Winscard/nf-winscard-scardforgetcardtypea
@@ -1151,11 +1151,11 @@
               href: /windows/desktop/api/Winscard/nf-winscard-scarduidlgselectcarda
             - name: SCardWriteCache
               href: /windows/desktop/api/Winscard/nf-winscard-scardwritecachea
-            - name: Envios
+            - name: SendSAS
               href: /windows/desktop/api/Sas/nf-sas-sendsas
-            - name: Setcontextattributes
+            - name: SetContextAttributes
               href: /windows/desktop/api/Sspi/nf-sspi-setcontextattributesa
-            - name: Setcredentialattributes
+            - name: SetCredentialsAttributes
               href: /windows/desktop/api/Sspi/nf-sspi-setcredentialsattributesa
             - name: SpAcceptCredentialsFn
               href: /windows/desktop/api/Ntsecpkg/nc-ntsecpkg-spacceptcredentialsfn
@@ -1422,11 +1422,11 @@
                       href: ibytebuffer-lockregion.md
                     - name: Método Read
                       href: ibytebuffer-read.md
-                    - name: Método Revert
+                    - name: Método REVERT
                       href: ibytebuffer-revert.md
                     - name: Método Seek
                       href: ibytebuffer-seek.md
-                    - name: Método SetSize
+                    - name: Método setSize
                       href: ibytebuffer-setsize.md
                     - name: Método Stat
                       href: ibytebuffer-stat.md
@@ -1451,17 +1451,17 @@
                   items:
                     - name: Método IdentityUpdated
                       href: /windows/desktop/api/IdentityProvider/nf-identityprovider-iidentityadvise-identityupdated
-            - name: IIdentityProvider
+            - name: IIdentityprovider
               href: /windows/desktop/api/Identityprovider/nn-identityprovider-iidentityprovider
               items:
-                - name: Métodos IIdentityProvider
+                - name: Métodos IIdentityprovider
                   href: iidentityprovider-methods.md
                   items:
                     - name: Método Advise
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-advise
-                    - name: Método Create
+                    - name: Criar método
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-create
-                    - name: Método Delete
+                    - name: Excluir método
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-delete
                     - name: Método FindByUniqueID
                       href: /windows/desktop/api/Identityprovider/nf-identityprovider-iidentityprovider-findbyuniqueid
@@ -1953,7 +1953,7 @@
               href: /windows/win32/api/Winnetwk/ns-winnetwk-netconnectinfostruct
             - name: NETLOGON_LOGON_IDENTITY_INFO
               href: /windows/win32/api/Subauth/ns-subauth-netlogon_logon_identity_info
-            - name: NETRESOURCE
+            - name: Netresource
               href: /windows/win32/api/Winnetwk/ns-winnetwk-netresourcea
             - name: NOTIFYADD
               href: /windows/win32/api/Npapi/ns-npapi-notifyadd
@@ -1977,13 +1977,13 @@
               href: /windows/win32/api/Ntsecapi/ns-ntsecapi-pku2u_credui_context
             - name: QUOTA_LIMITS
               href: /windows/win32/api/Winnt/ns-winnt-quota_limits
-            - name: REMOTE_NAME_INFO
+            - name: Remote_name_info
               href: /windows/win32/api/Winnetwk/ns-winnetwk-remote_name_infoa
             - name: SCARD_ATRMASK
               href: /windows/win32/api/Winscard/ns-winscard-scard_atrmask
             - name: SCARD_IO_REQUEST
               href: scard-io-request.md
-            - name: SCARD_READERSTATE
+            - name: Scard_readerstate
               href: /windows/desktop/api/Winscard/ns-winscard-scard_readerstatea
             - name: SCH_CRED_PUBLIC_CERTCHAIN
               href: /windows/win32/api/Schannel/ns-schannel-sch_cred_public_certchain
@@ -2013,7 +2013,7 @@
               href: /windows/win32/api/Sspi/ns-sspi-sec_winnt_auth_data
             - name: SEC_WINNT_AUTH_DATA_PASSWORD
               href: /windows/win32/api/Sspi/ns-sspi-sec_winnt_auth_data_password
-            - name: SEC_WINNT_AUTH_IDENTITY
+            - name: Sec_winnt_auth_identity
               href: /windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a
             - name: SEC_WINNT_AUTH_IDENTITY_EX
               href: /windows/desktop/api/Sspi/ns-sspi-_sec_winnt_auth_identity_exa
@@ -2029,9 +2029,9 @@
               href: /windows/win32/api/Sspi/ns-sspi-sec_winnt_credui_context
             - name: SEC_WINNT_CREDUI_CONTEXT_VECTOR
               href: /windows/win32/api/Sspi/ns-sspi-sec_winnt_credui_context_vector
-            - name: SecBuffer
+            - name: Secbuffer
               href: /windows/win32/api/Sspi/ns-sspi-secbuffer
-            - name: SecBufferDesc
+            - name: Secbufferdesc
               href: /windows/win32/api/Sspi/ns-sspi-secbufferdesc
             - name: SECPKG_BYTE_VECTOR
               href: /windows/win32/api/Ntsecpkg/ns-ntsecpkg-secpkg_byte_vector
@@ -2165,7 +2165,7 @@
               href: /windows/win32/api/Sspi/ns-sspi-secpkgcredentials_namesa
             - name: SecPkgCredentials_SSIProvider
               href: /windows/win32/api/Sspi/ns-sspi-secpkgcredentials_ssiprovidera
-            - name: Secpkginfo
+            - name: SecPkgInfo
               href: /windows/win32/api/Sspi/ns-sspi-secpkginfoa
             - name: SECURITY_INTEGER
               href: /windows/win32/api/Sspi/ns-sspi-security_integer

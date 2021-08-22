@@ -1,19 +1,19 @@
 ---
-description: O NTLM (desafio/resposta) do Windows é o protocolo de autenticação usado em redes que incluem sistemas que executam o sistema operacional Windows e sistemas autônomos.
+description: Windows o desafio/resposta (NTLM) é o protocolo de autenticação usado em redes que incluem sistemas que executam o sistema operacional Windows e sistemas autônomos.
 ms.assetid: 35a38858-d36f-45c9-95f4-2541a182f5ac
 title: NTLM da Microsoft
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9723f24d5913adefe70d4e238de0591790a34bfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fcb3d7f272c831c6bf9ac5efd30b8fa67bc7ad27d78d43794e5110fb63d1fe49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118921687"
 ---
 # <a name="microsoft-ntlm"></a>NTLM da Microsoft
 
-O NTLM (desafio/resposta) do Windows é o protocolo de autenticação usado em redes que incluem sistemas que executam o sistema operacional Windows e sistemas autônomos.
+Windows o desafio/resposta (NTLM) é o protocolo de autenticação usado em redes que incluem sistemas que executam o sistema operacional Windows e sistemas autônomos.
 
 O [*pacote de segurança*](../secgloss/s-gly.md) do Microsoft [*Kerberos*](../secgloss/k-gly.md) adiciona mais segurança do que o NTLM aos sistemas em uma rede. Embora o Microsoft *Kerberos* seja o protocolo de sua escolha, o NTLM ainda tem suporte. O NTLM também deve ser usado para autenticação de logon em sistemas autônomos. Para obter mais informações sobre o Kerberos, consulte [Microsoft Kerberos](microsoft-kerberos.md).
 
@@ -29,7 +29,7 @@ As etapas a seguir apresentam uma estrutura de autenticação não interativa de
 4.  O cliente criptografa esse desafio com o hash da senha do usuário e retorna o resultado para o servidor. Isso é chamado de *resposta*.
 5.  O servidor envia os três itens a seguir para o controlador de domínio:
 
-    -   Nome de usuário
+    -   Nome do usuário
     -   Desafio enviado ao cliente
     -   Resposta recebida do cliente
 

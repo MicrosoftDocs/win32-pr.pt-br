@@ -4,16 +4,16 @@ ms.assetid: 535bbb33-01cb-4484-b216-4808e47e4db5
 title: Controles de blob de conferência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bacf13567abd46f56c399cefa732be97b081cfd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1361951fcb830676e36acb4ec397832629dc5745983c654317a457a0d66ac336
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118867984"
 ---
 # <a name="conference-blob-controls"></a>Controles de blob de conferência
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O diagrama a seguir ilustra os principais objetos envolvidos nos controles de blob de conferência TAPI 3. As interfaces mostradas são vinculadas às páginas de referência relevantes.
 

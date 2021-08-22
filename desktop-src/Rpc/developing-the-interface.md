@@ -6,12 +6,12 @@ keywords:
 - Chamada de procedimento remoto RPC, tarefas, desenvolvendo a interface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68b6f720bcd492e784ad07fe20e221ac54951680
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c23829dcf143f63e791984e51194686d193d69cd575fadbc0e29c13a6f2279df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118930584"
 ---
 # <a name="developing-the-interface"></a>Desenvolvendo a interface
 
@@ -34,6 +34,6 @@ Além do compilador MIDL, normalmente você precisará usar o utilitário Uuidge
 -   [Gerando UUIDs de interface](generating-interface-uuids.md)
 -   [Usando MIDL](using-midl.md)
 
- 
+ 
 
- 
+ 

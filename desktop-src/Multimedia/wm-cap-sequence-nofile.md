@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_SEQUENCE_NOFILE (VFW. h)
-description: A \_ \_ mensagem nofile da sequência do WM Cap inicia a \_ captura de vídeo de streaming sem gravar dados em um arquivo. Você pode enviar essa mensagem explicitamente ou usando a macro capCaptureSequenceNoFile.
+title: WM_CAP_SEQUENCE_NOFILE mensagem (Vfw.h)
+description: A mensagem WM \_ CAP \_ SEQUENCE \_ NOFILE inicia a captura de vídeo de streaming sem escrever dados em um arquivo. Você pode enviar essa mensagem explicitamente ou usando a macro capCaptureSequenceNoFile.
 ms.assetid: 60cbcb62-3bfa-4182-a049-1e3cb2ede423
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_SEQUENCE_NOFILE
+- WM_CAP_SEQUENCE_NOFILE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0a08f470989b8000e9757c1cb81924b875b5303
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3d9344b53a52caa2e536483a339439a6d942ff1fea0313767d0e1be520c09b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940724"
 ---
-# <a name="wm_cap_sequence_nofile-message"></a>\_ \_ \_ Mensagem nofile da sequência do WM
+# <a name="wm_cap_sequence_nofile-message"></a>Mensagem WM \_ CAP \_ SEQUENCE \_ NOFILE
 
-A **mensagem \_ \_ \_ nofile da sequência do WM Cap** inicia a captura de vídeo de streaming sem gravar dados em um arquivo. Você pode enviar essa mensagem explicitamente ou usando a macro [**capCaptureSequenceNoFile**](/windows/desktop/api/Vfw/nf-vfw-capcapturesequencenofile) .
+A **mensagem WM CAP SEQUENCE \_ \_ \_ NOFILE** inicia a captura de vídeo de streaming sem escrever dados em um arquivo. Você pode enviar essa mensagem explicitamente ou usando a [**macro capCaptureSequenceNoFile.**](/windows/desktop/api/Vfw/nf-vfw-capcapturesequencenofile)
 
 
 ```C++
@@ -36,23 +36,23 @@ lParam = 0L;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** caso contrário.
+Retornará **TRUE se** for bem-sucedido **ou FALSE** caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem é útil em conjunto com o fluxo de vídeo ou funções de retorno de chamada de fluxo de áudio de forma de onda que permitem que seu aplicativo use os dados de áudio e vídeo diretamente.
+Essa mensagem é útil em conjunto com funções de retorno de chamada de fluxo de vídeo ou waveform-audio stream que permitem que seu aplicativo use os dados de áudio e vídeo diretamente.
 
-Se você quiser alterar os parâmetros que controlam a captura de fluxo, use a mensagem [**configuração de sequência do WM \_ Cap \_ \_ \_ set**](wm-cap-set-sequence-setup.md) antes de iniciar a captura.
+Se você quiser alterar os parâmetros que controlam a captura de streaming, use a mensagem [**WM CAP SET SEQUENCE \_ \_ \_ \_ SETUP**](wm-cap-set-sequence-setup.md) antes de iniciar a captura.
 
-Por padrão, a janela de captura não permite que outros aplicativos continuem em execução durante a captura. Para substituir isso, defina o membro **fYield** da estrutura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) como **true** ou instale uma função yield callback.
+Por padrão, a janela de captura não permite que outros aplicativos continuem em execução durante a captura. Para substituir isso, de definir o **membro fYield** da estrutura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) como **TRUE** ou instalar uma função de retorno de chamada de retorno de chamada de rendimento.
 
-Durante a captura de fluxo, a janela de captura pode, opcionalmente, emitir notificações para seu aplicativo de tipos específicos de condições. Para instalar os procedimentos de retorno de chamada para essas notificações, use as seguintes mensagens:
+Durante a captura de streaming, a janela de captura pode, opcionalmente, emitir notificações para sua aplicação de tipos específicos de condições. Para instalar procedimentos de retorno de chamada para essas notificações, use as seguintes mensagens:
 
--   [**\_erro de \_ retorno de \_ chamada de Set Cap \_ do WM**](wm-cap-set-callback-error.md)
--   [**WM \_ Cap \_ definir \_ status de retorno de chamada \_**](wm-cap-set-callback-status.md)
--   [**o \_ \_ retorno de \_ chamada de Set Cap do WM \_**](wm-cap-set-callback-yield.md)
--   [**WM \_ Cap \_ set \_ callback \_ VIDEOSTREAM**](wm-cap-set-callback-videostream.md)
--   [**\_WAVESTREAM de \_ retorno de \_ chamada de Set Cap \_ do WM**](wm-cap-set-callback-wavestream.md)
+-   [**ERRO DE RETORNO DE CHAMADA DO WM \_ CAP \_ SET \_ \_**](wm-cap-set-callback-error.md)
+-   [**WM \_ CAP \_ SET \_ CALLBACK \_ STATUS**](wm-cap-set-callback-status.md)
+-   [**WM \_ CAP \_ SET \_ CALLBACK \_ YIELD**](wm-cap-set-callback-yield.md)
+-   [**WM \_ CAP \_ SET \_ CALLBACK \_ VIDEOSTREAM**](wm-cap-set-callback-videostream.md)
+-   [**WM \_ CAP \_ SET \_ CALLBACK \_ WAVESTREAM**](wm-cap-set-callback-wavestream.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Durante a captura de fluxo, a janela de captura pode, opcionalmente, emitir noti
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

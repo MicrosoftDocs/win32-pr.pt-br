@@ -1,7 +1,7 @@
 ---
-description: Identificador de thread do thread proprietário.
+description: Identificador de thread do thread de propriedade.
 ms.assetid: 495598db-a0c9-473b-8184-121a1939b55a
-title: 'Membro CCritSec:: m_currentOwner (Wxutil. h)'
+title: Membro CCritSec::m_currentOwner (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b6dcb8d968f1f437087a94c5b08db12d31952d92
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71c88055f5068a5486c1eb6e3ac739235a6b7cde2e8d6b767380160ff12503be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657209"
 ---
-# <a name="ccritsecm_currentowner-member"></a>Membro de CCritSec:: m \_ currentOwner
+# <a name="ccritsecm_currentowner-member"></a>Membro CCritSec::m \_ currentOwner
 
-Identificador de thread do thread proprietário.
+Identificador de thread do thread de propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ DWORD m_currentOwner;
 
 ## <a name="remarks"></a>Comentários
 
-Essa variável de membro é definida somente na versão de depuração da classe base. A [seção crítica Depurando funções](critical-section-debugging-functions.md) usa esse membro.
+Essa variável de membro é definida apenas na versão de depuração da classe base. As [Funções críticas de depuração de seção](critical-section-debugging-functions.md) usam esse membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Essa variável de membro é definida somente na versão de depuração da classe
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

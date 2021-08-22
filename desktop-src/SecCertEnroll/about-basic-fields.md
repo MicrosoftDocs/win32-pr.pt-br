@@ -1,19 +1,19 @@
 ---
-description: Um certificado X. 509 versão 1 contém os campos a seguir. Os campos da versão 2 são discutidos nos campos da versão 2. Os campos da versão 3 são discutidos nas extensões da versão 3.
+description: Um certificado X.509 versão 1 contém os campos a seguir. Os campos da versão 2 são discutidos em Campos da Versão 2. Os campos da versão 3 são discutidos em Extensões da Versão 3.
 ms.assetid: d614130c-cf1b-4580-8903-064982ed738e
 title: Campos básicos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad24afa21787227b3fe47ab187a97c7886c9c9ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3dae9ceaa3ddd1c4ac8a8ce86425ec32eee45e82ca8b437ed0f0c27f44817ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905081"
 ---
 # <a name="basic-fields"></a>Campos básicos
 
-Um certificado X. 509 versão 1 contém os campos a seguir. Os campos da versão 2 são discutidos nos [campos da versão 2](about-version-2-fields.md). Os campos da versão 3 são discutidos nas [extensões da versão 3](about-version-3-extensions.md).
+Um certificado X.509 versão 1 contém os campos a seguir. Os campos da versão 2 são discutidos em [Campos da Versão 2.](about-version-2-fields.md) Os campos da versão 3 são discutidos em [Extensões da Versão 3.](about-version-3-extensions.md)
 
 ## <a name="version"></a>Versão
 
@@ -39,7 +39,7 @@ CertificateSerialNumber ::= INTEGER
 
 ## <a name="signature-algorithm"></a>Algoritmo de assinatura
 
-Contém um OID ( [*identificador de objeto*](/windows/desktop/SecGloss/o-gly) ) que especifica o algoritmo usado pela autoridade de certificação para assinar o certificado. Por exemplo, 1.2.840.113549.1.1.5 especifica um algoritmo de hash SHA-1 combinado com o algoritmo de criptografia RSA da RSA Laboratories.
+Contém um [*OID (identificador de*](/windows/desktop/SecGloss/o-gly) objeto) que especifica o algoritmo usado pela AC para assinar o certificado. Por exemplo, 1.2.840.113549.1.1.5 especifica um algoritmo de hash SHA-1 combinado com o algoritmo de criptografia RSA da RSA Laboratories.
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -56,7 +56,7 @@ AlgorithmIdentifier ::= SEQUENCE
 
 ## <a name="issuer"></a>Emissor
 
-Contém o DN (nome distinto) [*X. 500*](/windows/desktop/SecGloss/x-gly) da autoridade de certificação que criou e assinou o certificado.
+Contém o DN (nome [*diferenciado) X.500*](/windows/desktop/SecGloss/x-gly) da AC que criou e assinou o certificado.
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -75,7 +75,7 @@ AttributeTypeValue ::= SEQUENCE
 
 ## <a name="validity"></a>Validade
 
-Especifica o intervalo de tempo durante o qual o certificado é válido. As datas no final de 2049 usam o formato de tempo universal coordenado (Greenwich Mean Time) (*yymmddhhmmssZ*). As datas que começam com 1º de janeiro de 2050 usam o formato de tempo generalizado (*yyyymmddhhmmssZ*).
+Especifica o intervalo de tempo durante o qual o certificado é válido. As datas até o final de 2049 usam o formato Tempo Universal Coordenado (Greenwich Mean Time) (*aymmddhhmmssz*). Datas que começam em 1º de janeiro de 2050 usam o formato de hora generalizado (*aaaammddhhmmssz*).
 
 ``` syntax
 ---------------------------------------------------------------------
@@ -144,7 +144,7 @@ AlgorithmIdentifier ::= SEQUENCE
 [Extensões da versão 3](about-version-3-extensions.md)
 </dt> <dt>
 
-[Certificados de chave pública X. 509](about-x-509-public-key-certificates.md)
+[Certificados de chave pública X.509](about-x-509-public-key-certificates.md)
 </dt> </dl>
 
  

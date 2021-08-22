@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Ncrypt_provider.h
-ms.openlocfilehash: c45b53e051f021ab3dcce6dab4e2317572338624
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21f9f6c0f6956ffa89da45c9dcd23727c0b3cea2d4f31131713f9ed5a0c3a2fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907596"
 ---
 # <a name="ncrypt_ui_policy_blob-structure"></a>\_Estrutura de \_ blob de política de IU NCRYPT \_
 
@@ -91,7 +91,7 @@ O comprimento, em bytes, da descrição da chave. A descrição da chave é uma 
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura está incluída no cabeçalho NCrypt \_ Provider. h. Para usar a estrutura, você deve baixar o [Kit de desenvolvimento do provedor criptográfico](/collaborate/connect-redirect?InvitationID=CSDK-GYTG-R2PX&ProgramID=7264) do Microsoft Connect.
+Essa estrutura está incluída no cabeçalho NCrypt \_ Provider. h. para usar a estrutura, você deve baixar o [Kit de desenvolvimento do provedor criptográfico](/collaborate/connect-redirect?InvitationID=CSDK-GYTG-R2PX&ProgramID=7264) do Microsoft Conexão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ Essa estrutura está incluída no cabeçalho NCrypt \_ Provider. h. Para usar a 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                          |
 | parâmetro<br/>                   | <dl> <dt>NCrypt \_ Provider. h</dt> </dl> |
 
 

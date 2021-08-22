@@ -1,17 +1,17 @@
 ---
-title: Dicas de desempenho de RPC diversas
+title: Dicas de desempenho de RPC diversos
 description: Esta seção aborda diversas dicas de desempenho para o desenvolvimento de servidores RPC de alto desempenho. Esta seção fornece muitas dicas que se referem ao cliente RPC. Desenvolver um cliente RPC corretamente permite que o servidor RPC execute menos trabalho.
 ms.assetid: 82278f4b-1273-45e8-9078-ad919a4711f0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82b0b43f996cc0a165076f1d7aab1b69e6fb9b73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0946b83aae296f7b908babca9135c35a0afe8dbe7588a8292ad66bc19dc6488
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928065"
 ---
-# <a name="miscellaneous-rpc-performance-tips"></a>Dicas de desempenho de RPC diversas
+# <a name="miscellaneous-rpc-performance-tips"></a>Dicas de desempenho de RPC diversos
 
 Esta seção aborda diversas dicas de desempenho para o desenvolvimento de servidores RPC de alto desempenho. Esta seção fornece muitas dicas que se referem ao cliente RPC. Desenvolver um cliente RPC corretamente permite que o servidor RPC execute menos trabalho.
 
@@ -25,7 +25,7 @@ Se a segurança for usada, tente usar o rastreamento de identidade estático. O 
 
 ## <a name="use-the-rpcgetauthorizationcontextforclient-function"></a>Usar a função RpcGetAuthorizationContextForClient
 
-Se você precisar verificar o acesso no Windows XP, use a função [**RpcGetAuthorizationContextForClient**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcgetauthorizationcontextforclient) . Os contextos de Authz resultantes permitem verificações de acesso muito rápidas, que são armazenadas em cache de forma eficiente pelo tempo de execução de RPC.
+se você precisar verificar o acesso no Windows XP, use a função [**RpcGetAuthorizationContextForClient**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcgetauthorizationcontextforclient) . Os contextos de Authz resultantes permitem verificações de acesso muito rápidas, que são armazenadas em cache de forma eficiente pelo tempo de execução de RPC.
 
 ## <a name="do-not-modify-the-token-unless-necessary"></a>Não modifique o token, a menos que seja necessário
 
@@ -35,9 +35,9 @@ Se o controle de identidade dinâmico for usado, não modifique o token de threa
 
 O modo de serialização padrão para o identificador de contexto é serializado (exclusivo). Considere fazer todas as chamadas que não modificam o estado do identificador de contexto no modo de serialização compartilhado. Consulte [**RpcSsContextLockExclusive**](/windows/desktop/api/Rpcasync/nf-rpcasync-rpcsscontextlockexclusive) para obter mais informações.
 
- 
+ 
 
- 
+ 
 
 
 

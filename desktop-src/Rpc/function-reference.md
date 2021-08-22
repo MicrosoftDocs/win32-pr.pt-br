@@ -4,27 +4,27 @@ description: Esta seção documenta as funções de tempo de execução do RPC (
 ms.assetid: 135bef8d-1794-420e-a111-604d02dbcc06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 163c68f56a483d3eb7f62596c4a3d78ba2b5774a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ba02695198ad29e677f38c01eff75bd8be44976592ee4279df27a6569353b100
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929614"
 ---
 # <a name="function-reference"></a>Referência de função
 
 Esta seção documenta as funções de tempo de execução do RPC (chamada de procedimento remoto) com suporte no Microsoft RPC. Esta seção descreve a finalidade de cada função, a sintaxe, os parâmetros de entrada e os valores de retorno. Ele também fornece informações adicionais para ajudá-lo a usar as funções RPC em um aplicativo.
 
-Todos os ponteiros passados para as funções RPC devem incluir o atributo **\_ \_ \_ distante do RPC** . Por exemplo, o **\_ \_ identificador \* de ligação RPC** do ponteiro torna-se uma **\_ Associação \_ \_ \_ \_ \* RPC para** cima e o **caractere \* \*** *PTR* torna-se um **caractere \_ \_ \_ \* \_ \_ \_ \*** RPC na extremidade do RPC.
+Todos os ponteiros passados para as funções RPC devem incluir o atributo **\_ \_ \_ distante do RPC** . Por exemplo, a associação RPC do ponteiro **\_ \_ identificador \* *_ torna-se _* RPC identificador RPC muito \_ \_ \_ \_ \_ \* *_ e _* Char \* \*** *PTR* torna-se  **Char \_ \_ \_ \* \_ \_ \_ \*** o RPC longe.
 
 Esta seção apresenta as referências de função nos seguintes grupos:
 
 -   [Funções RPC](rpc-functions.md)
 -   [Retorno de chamada RPC e funções de notificação](rpc-callback-and-notification-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

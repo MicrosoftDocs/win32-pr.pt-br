@@ -1,29 +1,29 @@
 ---
-description: Enviado por uma fonte de captura de áudio quando a sessão de captura de áudio é desconectada devido ao desligamento do servidor de áudio.
+description: Enviado por uma fonte de captura de áudio quando a sessão de áudio de captura é desconectada devido ao desligamento do servidor de áudio.
 ms.assetid: 43284B3E-3018-44F3-8D6C-8C3041DCCD3E
-title: Evento MECaptureAudioSessionServerShutdown (Mfobjects. h)
+title: Evento MECaptureAudioSessionServerShutdown (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad934f6d60868c1db7c5b5b7907ff720312ea439
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: beb19d72a207866ceb405baacd11dbb3f91f059abb3d3855feba159040c27760
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974255"
 ---
 # <a name="mecaptureaudiosessionservershutdown-event"></a>Evento MECaptureAudioSessionServerShutdown
 
-Enviado por uma fonte de captura de áudio quando a sessão de captura de áudio é desconectada devido ao desligamento do servidor de áudio.
+Enviado por uma fonte de captura de áudio quando a sessão de áudio de captura é desconectada devido ao desligamento do servidor de áudio.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE               | Descrição                           |
+| Vartype               | Descrição                           |
 |-----------------------|---------------------------------------|
-| VT \_ vazio <br/> | Nenhum dado do evento.<br/> <br/> |
+| VT \_ VAZIO <br/> | Nenhum dado do evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  
