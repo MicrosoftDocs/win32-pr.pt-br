@@ -1,9 +1,9 @@
 ---
 title: Windows Rede (WNet)
-description: As Windows de rede (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física.
+description: as funções de Windows rede (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física.
 ms.assetid: 7668ac55-7104-4ddb-88eb-920cfe4e36fd
 keywords:
-- Windows WNet de rede
+- Windows rede WNet
 - WNet WNet
 ms.topic: article
 ms.date: 05/31/2018
@@ -16,10 +16,10 @@ ms.locfileid: "118566409"
 ---
 # <a name="windows-networking-wnet"></a>Windows Rede (WNet)
 
-As Windows de rede (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física. Isso porque as funções WNet são independentes de rede.
+as funções de Windows rede (WNet) permitem que você implemente recursos de rede em seu aplicativo sem fazer concessões para um provedor de rede específico ou implementação de rede física. Isso ocorre porque as funções WNet são independentes de rede.
 
--   [Sobre Windows rede](about-windows-networking.md)
--   [Usando Windows rede](using-windows-networking.md)
+-   [sobre Windows rede](about-windows-networking.md)
+-   [usando Windows rede](using-windows-networking.md)
 -   [Windows Referência de rede](windows-networking-reference.md)
 
  

@@ -26,7 +26,7 @@ Veja a seguir algumas diretrizes gerais de implementação:
     3.  Chama QueryInterface na interface IWICBitmapFrameDecode para a interface IWICDevelopRaw.
     4.  Chama [**IWICDevelopRaw**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw)::[**GetCurrentParameterSet**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcurrentparameterset), que retorna uma interface IPropertyBag2 com todas as propriedades atuais armazenadas nele.
 
-        Neste ponto do processo, o objetivo é serializar as configurações na interface IPropertyBag2 no arquivo RAW. Para fazer isso, é necessário girar um codificador e assim por diante, que é detalhado nas etapas a seguir.
+        Neste ponto do processo, o objetivo é serializar as configurações na interface IPropertyBag2 no arquivo RAW. Para fazer isso, é necessário a rotação de um codificador e assim por diante, que é detalhado nas etapas a seguir.
 
     5.  Cria um [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) para o arquivo RAW.
     6.  Chama [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)::[**Inicializar**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-initialize), passando um novo fluxo (em branco) para codificar.

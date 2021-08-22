@@ -4,12 +4,12 @@ ms.assetid: 166B55B4-08F9-4B41-B659-FF8D750397F0
 title: Propriedade PKEY_MFX_ProcessingModes_Supported_For_Streaming (Audioenginebaseapo. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 625587484b919fcd47ec7ff2bb9533697358fb31
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 231b3f600076b8eca4036083d1e1bdea4d3b6795009a8d2f9581e2f653407bb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646212"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018304"
 ---
 # <a name="pkey_mfx_processingmodes_supported_for_streaming-property"></a>PKEY \_ MFX \_ ProcessingModes \_ com suporte \_ para a \_ Propriedade streaming
 
@@ -29,9 +29,9 @@ Esta lista não inclui nenhum modo de processamento de sinal com suporte do APO 
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>Audioenginebaseapo. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Audioenginebaseapo. h</dt> </dl> |
 
 
 

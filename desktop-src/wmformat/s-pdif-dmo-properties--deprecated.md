@@ -21,7 +21,7 @@ ms.locfileid: "118699973"
 ---
 # <a name="spdif-dmo-properties"></a>Propriedades de DMO S/PDIF
 
-Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

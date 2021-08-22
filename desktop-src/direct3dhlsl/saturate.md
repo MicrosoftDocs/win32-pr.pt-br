@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 05b6048777ac7b6ecd2c4b59ff3c9e0287380949
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 25e771bd53dbb8a4b0d2eaf8162675cd556c071344b249562defe4a06e715f5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104365325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790739"
 ---
 # <a name="saturate-hlsl-reference"></a>Saturação (referência de HLSL)
 
@@ -27,7 +27,7 @@ Coloca o resultado de uma operação aritmética de ponto flutuante de precisão
 
 
 
- 
+ 
 
 O modificador de resultado de instrução **saturação** executa a seguinte operação nos valores de resultado de uma operação aritmética de ponto flutuante que se comparou \_ com ela:
 
@@ -54,7 +54,7 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -63,9 +63,9 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 [Modificadores de instrução](instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

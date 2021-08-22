@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: fa2e97f21e6c42c58a08eb28a853e6089f5b9bdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1fa8487b9b62689adb268f4daa821b9fab6385ae1514bc7d0d50973326f8b47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104570878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118769722"
 ---
 # <a name="esentstateexception-constructor"></a>Construtor EsentStateException
 

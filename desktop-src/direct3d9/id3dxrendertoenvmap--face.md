@@ -1,7 +1,7 @@
 ---
-description: Inicie o desenho de cada face de um mapa de ambiente.
+description: Inicie o desenho de cada rosto de um mapa de ambiente.
 ms.assetid: c100e138-c5a8-49bb-9a91-e7f70410470f
-title: 'Método ID3DXRenderToEnvMap:: face (D3dx9core. h)'
+title: Método ID3DXRenderToEnvMap::Face (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118801215"
 ---
-# <a name="id3dxrendertoenvmapface-method"></a>Método ID3DXRenderToEnvMap:: face
+# <a name="id3dxrendertoenvmapface-method"></a>Método ID3DXRenderToEnvMap::Face
 
-Inicie o desenho de cada face de um mapa de ambiente.
+Inicie o desenho de cada rosto de um mapa de ambiente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT Face(
 
 <dl> <dt>
 
-*Rosto* \[ no\]
+*Face* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **\_ rostos de D3DCUBEMAP**](./d3dcubemap-faces.md)**
+Tipo: **[ **D3DCUBEMAP \_ FACES**](./d3dcubemap-faces.md)**
 
-A primeira face do mapa do cubo ambiental. Consulte [**D3DCUBEMAP \_ faces**](./d3dcubemap-faces.md).
+A primeira face do mapa do cubo ambiental. Consulte [**D3DCUBEMAP \_ FACES**](./d3dcubemap-faces.md).
 
 </dd> <dt>
 
-*MipFilter* \[ no\]
+*MipFilter* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Uma combinação válida de um ou mais sinalizadores de [ \_ filtro D3DX](d3dx-filter.md) .
+Uma combinação válida de um ou mais sinalizadores [FILTER D3DX. \_ ](d3dx-filter.md)
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Uma combinação válida de um ou mais sinalizadores de [ \_ filtro D3DX](d3dx-f
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método deve ser chamado uma vez para cada tipo de mapa de ambiente. A única exceção é um mapa de ambiente cúbico que exige que esse método seja chamado seis vezes, uma vez para cada face em rostos D3DCUBEMAPs \_ . Para obter mais informações, consulte [mapeamento de ambiente (Direct3D 9)](environment-mapping.md).
+Esse método deve ser chamado uma vez para cada tipo de mapa de ambiente. A única exceção é um mapa de ambiente cúbica que exige que esse método seja chamado seis vezes, uma vez para cada face em D3DCUBEMAP \_ FACES. Para obter mais informações, consulte [Mapeamento de ambiente (Direct3D 9)](environment-mapping.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Esse método deve ser chamado uma vez para cada tipo de mapa de ambiente. A úni
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Determina se um dispositivo de entrada dá suporte a multitoque.
+description: Determina se um dispositivo de entrada dá suporte a multitouch.
 ms.assetid: 4fef7060-2235-4bee-a37b-40d827732b30
-title: 'Método ITablet3:: IsMultiTouch'
+title: Método ITablet3::IsMultiTouch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118717295"
 ---
-# <a name="itablet3ismultitouch-method"></a>Método ITablet3:: IsMultiTouch
+# <a name="itablet3ismultitouch-method"></a>Método ITablet3::IsMultiTouch
 
-Determina se um dispositivo de entrada dá suporte a multitoque.
+Determina se um dispositivo de entrada dá suporte a multitouch.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ HRESULT IsMultiTouch(
 
 <dl> <dt>
 
-*bIsMultiTouch* \[ fora\]
+*bIsMultiTouch* \[ out\]
 </dt> <dd>
 
-Indica se o dispositivo é multitoque.
+Indica se o dispositivo é multitouch.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna **S \_ OK** em caso de êxito; caso contrário, retorna um código de erro como **E \_ falha**.
+Retorna **S \_ OK em** caso de êxito; caso contrário, retorna um código de erro como E **\_ FAIL.**
 
 ## <a name="remarks"></a>Comentários
 
-Depois de determinar por meio de [**IRealTimeStylus3:: MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled) ou **ITablet3:: IsMultiTouch** que multitoque está disponível, um aplicativo pode optar por aceitar as mensagens de entrada de multitoque. Informações adicionais sobre como filtrar métodos multitoque estão disponíveis na seção da propriedade **IRealTimeStylus3:: MultiTouchEnabled** .
+Depois de determinar por [**meio de IRealTimeStylus3::MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled) ou **ITablet3::IsMultiTouch** que o multitouch está disponível, um aplicativo pode optar por optar por mensagens de entrada multitoque. Informações adicionais sobre como filtrar métodos multitouch estão disponíveis na seção de propriedade **IRealTimeStylus3::MultiTouchEnabled.**
 
 ## <a name="examples"></a>Exemplos
 
@@ -72,8 +72,8 @@ spITablet3->get_IsMultiTouch(&b);
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 

@@ -3,7 +3,7 @@ title: Atributo DVDID
 description: O atributo DVDID é o identificador de DVD.
 ms.assetid: b43ddc40-33a7-4f26-8146-1e4e8d3107a8
 keywords:
-- Atributo DVDID Windows Media Player
+- Windows Media Player de atributo DVDID
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55cc68e9a835ef6feacf1f6e16d731b947637b2c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f4aa55f5966519ad969ad03a494519fe49aff89307a31fc01d929ec63552c58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118839347"
 ---
 # <a name="dvdid-attribute"></a>Atributo DVDID
 
@@ -27,7 +27,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [Arquivos de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [arquivos de mídia Windows usados com frequência](commonly-used-windows-media-file-attributes.md)
 -   [Itens de vídeo](video-item-attributes.md)
 
 ## <a name="remarks"></a>Comentários

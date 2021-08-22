@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 591efd87026caeaadb8de7f29a2741dfccd5028a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4ad02e3b80fcbd65c6d423da6b4c990576ba97383447134f1ccd25d509c4fd6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118534070"
 ---
 # <a name="id3dx11effectscalarvariablesetfloatarray-method"></a>Método ID3DX11EffectScalarVariable:: SetFloatArray
 
@@ -72,7 +72,7 @@ O número de elementos da matriz a serem definidos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

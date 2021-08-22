@@ -1,7 +1,7 @@
 ---
-description: Exibe o centro de ajuda e suporte do Windows. Esse método tem o mesmo efeito que clicar no menu iniciar e selecionar ajuda e suporte.
+description: Exibe o Windows Centro de Ajuda e Suporte. Esse método tem o mesmo efeito que clicar no menu Iniciar e selecionar Ajuda e Suporte.
 ms.assetid: fc13fef8-dac8-4c59-936d-8da0e63e06d4
-title: Método Shell. Help (shldisp. h)
+title: Método Shell.Help (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: bfb4e9b3272355c41d13526d2e526515ff65d42b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bd471f4252caaf33edfd5429160b6ff8a2b0bdd901507a7f2074dff95509e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968555"
 ---
-# <a name="shellhelp-method"></a>Método Shell. Help
+# <a name="shellhelp-method"></a>Método Shell.Help
 
-Exibe o centro de ajuda e suporte do Windows. Esse método tem o mesmo efeito que clicar no menu **Iniciar** e selecionar **ajuda e suporte**.
+Exibe o Windows Centro de Ajuda e Suporte. Esse método tem o mesmo efeito que clicar no menu **Iniciar** e selecionar **Ajuda e Suporte.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ Shell.Help()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -57,9 +57,9 @@ Esse método não retorna um valor.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra a **ajuda** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **a Ajuda** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -115,11 +115,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

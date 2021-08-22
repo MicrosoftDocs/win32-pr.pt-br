@@ -8,12 +8,12 @@ keywords:
 - Sinalizador de MCI_TEST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af50e0b19d24d3012d6cb6025ea1ad8ee4b7e822
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5ecb3c8cf1125f199f2c12ffa2749a33f0366b6671f53bf4077585e9ff1a9c73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941173"
 ---
 # <a name="the-wait-notify-and-test-flags"></a>Os sinalizadores de espera, notificação e teste
 
@@ -23,9 +23,9 @@ A maioria dos comandos MCI inclui sinalizadores que modificam o comando. Os sina
 -   [O sinalizador de notificação](the-notify-flag.md)
 -   [O sinalizador de teste](the-test-flag.md)
 
- 
+ 
 
- 
+ 
 
 
 

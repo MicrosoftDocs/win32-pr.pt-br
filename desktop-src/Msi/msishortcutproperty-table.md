@@ -1,21 +1,21 @@
 ---
-description: A tabela MsiShortcutProperty permite que o instalador de janela defina propriedades para atalhos que também são objetos de shell do Windows.
+description: a tabela MsiShortcutProperty permite que o instalador de janela defina propriedades para atalhos que também são Windows objetos Shell.
 ms.assetid: d959769d-113f-4af2-89d4-ad3f5322de33
 title: Tabela MsiShortcutProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f295feabd6ff9b1677fdcf47791959b0fbb8a920
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d7cf51d8016cdc87008a6cc9a20daee1f35131af7ea0f5827c67da7f45a6e46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118944423"
 ---
 # <a name="msishortcutproperty-table"></a>Tabela MsiShortcutProperty
 
-A tabela MsiShortcutProperty permite que o instalador de janela defina propriedades para atalhos que também são objetos de [shell do Windows](/previous-versions/windows/desktop/legacy/bb773177(v=vs.85)) . A partir do Windows Vista e do Windows Server 2008, o Shell do Windows fornece uma interface IPropertyStore para objetos do Shell, como atalhos. Um pacote Windows Installer 5,0 em execução no Windows Server 2008 R2 ou no Windows 7 pode definir essas propriedades quando o atalho é instalado.
+a tabela MsiShortcutProperty permite que o instalador de janela defina propriedades para atalhos que também são [Windows objetos Shell](/previous-versions/windows/desktop/legacy/bb773177(v=vs.85)) . a partir do Windows Vista e do Windows Server 2008, o Shell do Windows fornece uma Interface IPropertyStore para objetos do Shell, como atalhos. um pacote Windows Installer 5,0 em execução no Windows Server 2008 R2 ou Windows 7 pode definir essas propriedades quando o atalho é instalado.
 
-**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Esta tabela está disponível a partir do Windows Installer 5,0.
+**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. esta tabela está disponível a partir do Windows Installer 5,0.
 
 A tabela MsiShortcutProperty tem as colunas a seguir.
 
@@ -23,7 +23,7 @@ A tabela MsiShortcutProperty tem as colunas a seguir.
 
 | Coluna              | Tipo                         | Chave | Nullable |
 |---------------------|------------------------------|-----|----------|
-| MsiShortcutProperty | [Identificador](identifier.md) | S   | N        |
+| MsiShortcutProperty | [Identificador](identifier.md) | Y   | N        |
 | Atalho\_          | [Identificador](identifier.md) | N   | N        |
 | PropertyKey         | [Binário](formatted.md)   | N   | N        |
 | PropVariantValue    | [Binário](formatted.md)   | N   | N        |
@@ -53,7 +53,7 @@ Uma chave na tabela de [atalho](shortcut-table.md) que identifica o atalho com u
 <span id="PropertyKey"></span><span id="propertykey"></span><span id="PROPERTYKEY"></span>PropertyKey
 </dt> <dd>
 
-Um valor de cadeia de caracteres que fornece informações para a estrutura [**PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) . As informações neste campo devem se referir ao nome canônico de uma propriedade registrada com o sistema de propriedades do Windows. Para obter mais informações sobre o sistema de propriedades do Windows, consulte [visão geral do sistema de propriedades](/previous-versions//bb776909(v=vs.85)).
+Um valor de cadeia de caracteres que fornece informações para a estrutura [**PROPERTYKEY**](/windows/win32/api/wtypes/ns-wtypes-propertykey) . as informações neste campo devem se referir ao nome canônico de uma propriedade registrada com o sistema de propriedades Windows. para obter mais informações sobre o sistema de propriedades Windows, consulte [visão geral do sistema de propriedades](/previous-versions//bb776909(v=vs.85)).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Um valor de cadeia de caracteres que fornece informações para a estrutura [**P
 
 Várias propriedades podem ser definidas em um atalho. Se a mesma propriedade for definida várias vezes no mesmo atalho, o valor será definido em uma ordem não especificada.
 
-Windows Installer pode definir propriedades de atalho somente quando o atalho é instalado ou reinstalado. Um patch que não reinstala um atalho que já foi instalado não atualiza as propriedades do atalho. Um patch pode atualizar as propriedades, incluindo uma tabela de [atalho](shortcut-table.md) no pacote de patch e reinstalando o atalho.
+Windows O instalador pode definir propriedades de atalho somente quando o atalho é instalado ou reinstalado. Um patch que não reinstala um atalho que já foi instalado não atualiza as propriedades do atalho. Um patch pode atualizar as propriedades, incluindo uma tabela de [atalho](shortcut-table.md) no pacote de patch e reinstalando o atalho.
 
 ## <a name="remarks"></a>Comentários
 

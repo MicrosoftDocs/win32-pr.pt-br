@@ -4,12 +4,12 @@ ms.assetid: 84da345e-ec03-48fe-8fda-043b706e4e1c
 title: Política de metadados de foto System. title
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b02513f3f566576999e83b09c156d36ac480c17d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26917efc84b3308a039abe3a60b279d080aa023e2e4b5f76be8623a7aaae7bf9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964655"
 ---
 # <a name="systemtitle-photo-metadata-policy"></a>Política de metadados de foto System. title
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

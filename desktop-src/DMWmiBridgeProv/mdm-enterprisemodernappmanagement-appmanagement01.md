@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_EnterpriseModernAppManagement_AppManagement01
-description: A \_ classe MDM EnterpriseModernAppManagement \_ AppManagement01 inicia o Windows Update examina e relata o último erro de verificação.
+description: a \_ classe MDM EnterpriseModernAppManagement \_ AppManagement01 inicia o Windows Update examina e relata o último erro de verificação.
 ms.assetid: f579a7c9-2e98-4e34-b45b-db8a4d553c57
 keywords:
 - Classe MDM_EnterpriseModernAppManagement_AppManagement01
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be1f2a3739fe16d4a13e409d7d152645d4653336
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7ed4c744b9e5a594f0534c6c6ce384203fa4c42cfc91a63249cf1e1f6cdaedf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018144"
 ---
 # <a name="mdm_enterprisemodernappmanagement_appmanagement01-class"></a>\_ \_ Classe APPMANAGEMENT01 do MDM EnterpriseModernAppManagement
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01** inicia o Windows Update examina e relata o último erro de verificação.
+a classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01** inicia o Windows Update examina e relata o último erro de verificação.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -63,7 +63,7 @@ A **classe \_ \_ AppManagement01 do MDM EnterpriseModernAppManagement** tem esse
 | Método                                                                                               | Descrição                                             |
 |:-----------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
 | [**RemovePackageMethod**](mdm-enterprisemodernappmanagement-appmanagement01-removepackagemethod.md) | Método para remover pacotes.<br/>                |
-| [**UpdateScanMethod**](mdm-enterprisemodernappmanagement-appmanagement01-updatescanmethod.md)       | Método para iniciar a verificação de Windows Update.<br/> |
+| [**UpdateScanMethod**](mdm-enterprisemodernappmanagement-appmanagement01-updatescanmethod.md)       | método para iniciar a verificação de Windows Update.<br/> |
 
 
 
@@ -157,7 +157,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

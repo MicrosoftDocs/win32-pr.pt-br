@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bc0c09f802a63a5bfad92b49f76fcbb4ee242d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8321425cf878bd9b3d8702f73fa464ae069420cd0e59f57e2500151fda01b191
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940184"
 ---
 # <a name="inapcomponentconfig2invokeuiformachine-method"></a>Método INapComponentConfig2:: InvokeUIForMachine
 
@@ -62,9 +62,9 @@ Um ponteiro para um [**contadostring**](/windows/win32/api/naptypes/ns-naptypes-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se for bem-sucedido ou um dos códigos de erro padrão do Windows.
+retorna S \_ OK se for bem-sucedido ou um dos Windows códigos de erro padrão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Retorna S \_ OK se for bem-sucedido ou um dos códigos de erro padrão do Window
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
 
 

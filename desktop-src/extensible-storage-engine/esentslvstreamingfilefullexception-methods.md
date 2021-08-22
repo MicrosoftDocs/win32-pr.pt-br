@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentSLVStreamingFileFullException'
+description: 'Saiba mais sobre: Métodos EsentSLVStreamingFileFullException'
 title: 'Métodos EsentSLVStreamingFileFullException '
 TOCTitle: EsentSLVStreamingFileFullException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileFullException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102925
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: da525024d67784831332e6f053be0ae3aa1285b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bda814c6710982a2fda1fab0f9690ab1dcb519100cd18c7f6f56f3dd859ed67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104562411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118771549"
 ---
 # <a name="esentslvstreamingfilefullexception-methods"></a>Métodos EsentSLVStreamingFileFullException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentSLVStreamingFileFullException](./esentslvstreamingfilefullexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

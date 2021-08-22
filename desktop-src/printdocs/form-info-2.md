@@ -1,7 +1,7 @@
 ---
 description: Contém informações sobre um formulário de impressão localizável.
 ms.assetid: 5cc11a77-2b9d-44a4-88de-6ed0b7460bc8
-title: Estrutura de FORM_INFO_2 (winspool. h)
+title: FORM_INFO_2 (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 6e2129f9776706ce331677e75c5d9c81d82393c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd933bf0ace6f394a801ab8dc4ef1fa30344b47966c09865a3aa4b713c6f2ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971515"
 ---
-# <a name="form_info_2-structure"></a>Estrutura de informações de formulário \_ \_ 2
+# <a name="form_info_2-structure"></a>Estrutura FORM \_ INFO \_ 2
 
 Contém informações sobre um formulário de impressão localizável.
 
@@ -53,15 +53,15 @@ typedef struct _FORM_INFO_2 {
 **Sinalizadores**
 </dt> <dd>
 
-As propriedades do formulário. Os valores a seguir são definidos, mas apenas um pode ser definido. Quando o **formulário \_ informações \_ 2** é retornado por [**GetForm**](getform.md) ou [**EnumForms**](enumforms.md), **flags** é definido como o valor atual no banco de dados de formulários.
+As propriedades do formulário. Os valores a seguir são definidos, mas apenas um pode ser definido. Quando o **FORM \_ INFO \_ 2** é retornado por [**GetForm**](getform.md) ou [**EnumForms,**](enumforms.md)os sinalizadores são **definidos** como o valor atual no banco de dados de formulários.
 
 
 
 | Valor         | Significado                                                                                                                                                                                                                                                                                  |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| usuário do formulário \_    | Se esse sinalizador de bit for definido, o formulário terá sido definido pelo usuário. Formulários com esse sinalizador definido são definidos no registro.                                                                                                                                                                    |
-| FORMULÁRIO \_ interno | Se esse sinalizador de bit estiver definido, o formulário será parte do spooler. As definições de formulário com este sinalizador definido não aparecem no registro. Os formulários internos não podem ser modificados, portanto, esse sinalizador não deve ser definido quando a estrutura é passada para [**AddForm**](addform.md) ou [**setform**](setform.md). |
-| impressora de formulário \_ | Se esse sinalizador de bit for definido, o formulário será associado a uma determinada impressora e sua definição aparecerá no registro.                                                                                                                                                                      |
+| FORM \_ USER    | Se esse sinalizador de bit estiver definido, o formulário será definido pelo usuário. Formulários com esse conjunto de sinalizadores são definidos no Registro.                                                                                                                                                                    |
+| FORM \_ BUILTIN | Se esse sinalizador de bit estiver definido, o formulário faz parte do spooler. As definições de formulário com esse sinalizador definido não aparecem no Registro. Formulários integrados não podem ser modificados, portanto, esse sinalizador não deve ser definido quando a estrutura é passada para [**AddForm**](addform.md) ou [**SetForm.**](setform.md) |
+| IMPRESSORA \_ FORM | Se esse sinalizador de bit estiver definido, o formulário será associado a uma determinada impressora e sua definição aparecerá no Registro.                                                                                                                                                                      |
 
 
 
@@ -69,7 +69,7 @@ As propriedades do formulário. Os valores a seguir são definidos, mas apenas u
 
 </dd> <dt>
 
-**pName**
+**Pname**
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do formulário. O nome do formulário não pode exceder 31 caracteres.
@@ -93,22 +93,22 @@ A largura e a altura, em milésimos de milímetros, da área da página na qual 
 **pKeyword**
 </dt> <dd>
 
-Um ponteiro para um identificador de cadeia de caracteres não localizável do formulário. Quando passado para [**AddFormat**](addform.md) ou [**setform**](setform.md), isso fornece ao chamador um meio de identificar o formulário em todas as localidades.
+Um ponteiro para um identificador de cadeia de caracteres não localizável do formulário. Quando passado para [**AddForm**](addform.md) ou [**SetForm**](setform.md), isso fornece ao chamador um meio de identificar o formulário em todas as localidades.
 
 </dd> <dt>
 
 **StringType**
 </dt> <dd>
 
-Especifica como um nome de exibição localizado para o formulário é obtido em tempo de execução. Os valores a seguir são definidos. Apenas um pode ser definido em qualquer chamada fornecida para [**AddForm**](addform.md) ou [**setform**](setform.md). A cadeia de caracteres \_ MUIDLL e a cadeia de caracteres \_ LANGPAIR podem ser definidas no **formato \_ info \_ 2** (s) retornado por [**GetForm**](getform.md) ou [**EnumForms**](enumforms.md). Consulte Observações.
+Especifica como um nome de exibição localizado para o formulário é obtido em runtime. Os valores a seguir são definidos. Somente um pode ser definido em qualquer chamada para [**AddForm**](addform.md) ou [**SetForm.**](setform.md) TANTO STRING MUIDLL quanto STRING LANGPAIR podem ser definidos no \_ \_ FORM INFO **\_ \_ 2** (s) retornado por [**GetForm**](getform.md) [**ou EnumForms**](enumforms.md). Consulte Observações.
 
 
 
 | Valor            | Significado                                                                                                                                                                                        |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cadeia de caracteres \_ nenhum     | Não há nenhum nome de exibição localizado.                                                                                                                                                            |
-| Cadeia de caracteres \_ MUIDLL   | O nome de exibição é extraído da DLL de recursos localizadas da [interface do usuário multilíngüe](/windows/desktop/Intl/mui-resource-management) especificada em **pMuiDll**. A ID está no membro **dwResourceId** . |
-| Cadeia de caracteres \_ LANGPAIR | O nome de exibição e a ID de idioma são fornecidos diretamente pelo **pDisplayName** e o idioma é especificado por **wLangId**.                                                                       |
+| STRING \_ NONE     | Não há nenhum nome de exibição localizado.                                                                                                                                                            |
+| STRING \_ MUIDLL   | O nome de exibição é extraído [da DLL Interface de Usuário Multilíngue](/windows/desktop/Intl/mui-resource-management) recursos localizados especificados em **pMuiDll.** A ID está no **membro dwResourceId.** |
+| STRING \_ LANGPAIR | O nome de exibição e a ID de idioma são fornecidos diretamente por **pDisplayName** e o idioma é especificado por **wLangId**.                                                                       |
 
 
 
@@ -119,44 +119,44 @@ Especifica como um nome de exibição localizado para o formulário é obtido em
 **pMuiDll**
 </dt> <dd>
 
-A DLL de recurso localizada da [interface de usuário multilíngue](/windows/desktop/Intl/mui-resource-management) que contém o nome de exibição localizado.
+A [Interface de Usuário Multilíngue](/windows/desktop/Intl/mui-resource-management) DLL de recurso localizada que contém o nome de exibição localizado.
 
 </dd> <dt>
 
 **dwResourceId**
 </dt> <dd>
 
-A ID de recurso do nome de exibição do formulário em **pMuiDll**.
+A ID do recurso do nome de exibição do formulário em **pMuiDll.**
 
 </dd> <dt>
 
 **pDisplayName**
 </dt> <dd>
 
-O nome de exibição do formulário no idioma especificado por **wLangId**.
+O nome de exibição do formulário no idioma especificado por **wLangId.**
 
 </dd> <dt>
 
 **wLangId**
 </dt> <dd>
 
-O idioma do **pDisplayName**.
+O idioma do **pDisplayName.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Em uma chamada para [**AddForm**](addform.md) ou [**setform**](setform.md):
+Em uma chamada para [**AddForm**](addform.md) ou [**SetForm:**](setform.md)
 
--   Se **StringType** for String \_ None, **pMuiDll** e **PDisplayName** deverão ser **nulos** e **dwResourceId** e **wLangId** deverão ser 0.
--   Se **StringType** for cadeia \_ de caracteres MUIDLL, **pDisplayName** deverá ser **nulo** e **wLangId** deverá ser 0.
--   Se **StringType** for cadeia \_ de caracteres LANGPAIR, **pMuiDll** deverá ser **nulo** e **dwResourceId** deverá ser 0.
+-   Se **StringType** for STRING \_ NONE, **pMuiDll** e **pDisplayName** deverão ser **NULL** e **dwResourceId** e **wLangId** deverão ser 0.
+-   Se **StringType** for STRING \_ MUIDLL, **pDisplayName** deverá ser **NULL** e **wLangId** deverá ser 0.
+-   Se **StringType** for STRING \_ LANGPAIR, **pMuiDll** deverá ser **NULL** e **dwResourceId** deverá ser 0.
 
-Para uma **informação de formulário \_ \_ 2** retornada por uma chamada para [**GetForm**](getform.md) ou [**EnumForms**](enumforms.md):
+Para um **FORM \_ INFO \_ 2** retornado por uma chamada para [**GetForm**](getform.md) ou [**EnumForms**](enumforms.md):
 
--   Se **StringType** for a cadeia \_ de caracteres MUIDLL e a cadeia de caracteres \_ LANGPAIR, **pMuiDll**, **pDisplayName**, **dwResourceId** e **wLangId** terão valores válidos.
--   Se **StringType** for String \_ MUIDLL somente, **pMuiDll** e **dwResourceId** terão valores válidos. **pDisplayName** será **NULL** e **wLangId** será 0.
--   Se **StringType** for String \_ LANGPAIR somente, **pDisplayName** e **wLangId** terão valores válidos. **pMuiDll** será **NULL** e **dwResourceId** será 0.
+-   Se **StringType** for STRING \_ MUIDLL e STRING \_ LANGPAIR, **pMuiDll**, **pDisplayName**, **dwResourceId** e **wLangId** terão valores válidos.
+-   Se **StringType** for apenas STRING \_ MUIDLL, **pMuiDll** e **dwResourceId** terão valores válidos. **pDisplayName** será **NULL** e **wLangId** será 0.
+-   Se **StringType** for somente \_ STRING LANGPAIR, **pDisplayName** e **wLangId** terão valores válidos. **pMuiDll** será **NULL** e **dwResourceId** será 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -164,10 +164,10 @@ Para uma **informação de formulário \_ \_ 2** retornada por uma chamada para 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | Informações de **\_ formulário \_ \_ 2W** (Unicode) e **\_ informações de formulário \_ \_ 2a** (ANSI)<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **\_ FORM \_ INFO \_ 2W** (Unicode) e **\_ FORM INFO \_ \_ 2A** (ANSI)<br/>                                 |
 
 
 
@@ -178,13 +178,13 @@ Para uma **informação de formulário \_ \_ 2** retornada por uma chamada para 
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [Interface do Usuário Multilíngue](/windows/desktop/Intl/mui-resource-management)
 </dt> <dt>
 
-[**AddFormat**](addform.md)
+[**AddForm**](addform.md)
 </dt> <dt>
 
 [**GetForm**](getform.md)
@@ -193,7 +193,7 @@ Para uma **informação de formulário \_ \_ 2** retornada por uma chamada para 
 [**EnumForms**](enumforms.md)
 </dt> <dt>
 
-[**Formulário**](setform.md)
+[**SetForm**](setform.md)
 </dt> </dl>
 
  

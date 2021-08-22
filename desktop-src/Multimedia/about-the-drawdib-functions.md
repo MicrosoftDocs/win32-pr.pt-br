@@ -3,7 +3,7 @@ title: Sobre as funções DrawDib
 description: Sobre as funções DrawDib
 ms.assetid: 0ae993df-8393-479e-aa11-14301384715d
 keywords:
-- Vídeo para Windows (VFW), DrawDib
+- vídeo para Windows (VFW), DrawDib
 - VFW (vídeo para Windows), DrawDib
 - DrawDib, sobre
 - DrawDib, tabelas de cores
@@ -13,12 +13,12 @@ keywords:
 - DrawDib, imagens compactadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 238f3e9ba822e16a7568775378b24f69bbca12de
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 18e03b41d5af776c39f7d100e9478bd408011d61d8e3d661cb80bd9ab52f08c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118942084"
 ---
 # <a name="about-the-drawdib-functions"></a>Sobre as funções DrawDib
 
@@ -34,8 +34,8 @@ Você achará útil usar as funções DrawDib em algumas circunstâncias. Ainda 
     As funções DrawDib também melhoram a velocidade e a qualidade da exibição de imagens em adaptadores de vídeo com recursos mais limitados. Por exemplo, ao usar um adaptador de vídeo de 8 bits, as funções DrawDib pontilham com eficiência imagens true-color para 256 cores. Eles também pontilham imagens de 8 bits ao usar adaptadores de vídeo de 4 bits.
 
 -   Alongamento de imagem. Como [**StretchDIBits**](/windows/desktop/api/wingdi/nf-wingdi-stretchdibits), as funções DrawDib usam retângulos de origem e de destino para controlar a parte de uma imagem exibida. Você pode cortar partes indesejadas de uma imagem ou alongar uma imagem, variando a posição e o tamanho dos retângulos de origem e de destino. Se um driver de vídeo não oferecer suporte ao alongamento de imagem, as funções DrawDib fornecerão recursos de ampliação mais eficientes do que o **StretchDIBits**.
--   Imagens compactadas. As funções DrawDib desenharão qualquer formato para o qual você tenha um descompactador, incluindo a RLE (codificação de comprimento de execução), Cinepak e 411 YUV. O Windows inclui descompactadores de RLE e Cinepak que podem ser instalados opcionalmente.
--   O codec Indeo não é mais suportado no Windows.
+-   Imagens compactadas. As funções DrawDib desenharão qualquer formato para o qual você tenha um descompactador, incluindo a RLE (codificação de comprimento de execução), Cinepak e 411 YUV. Windows inclui descompactadores de RLE e Cinepak que podem ser instalados opcionalmente.
+-   O codec Indeo não tem mais suporte no Windows.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -44,6 +44,6 @@ Você achará útil usar as funções DrawDib em algumas circunstâncias. Ainda 
 [DrawDib](drawdib.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

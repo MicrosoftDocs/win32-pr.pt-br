@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método GetReaderByIndex.
+description: Função proxy para o método GetReaderByIndex.
 ms.assetid: 9d70b339-9772-4c13-949e-109f354f9986
-title: Função IWICMetadataBlockReader_GetReaderByIndex_Proxy
+title: IWICMetadataBlockReader_GetReaderByIndex_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: e2fc967f810b9ac8e43ad7da543bb1723500da48
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1540e6ff0e24125f9381c0dd177dd9dc77ea6fb7f9096d45b88fd7489704f496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965185"
 ---
-# <a name="iwicmetadatablockreader_getreaderbyindex_proxy-function"></a>\_Função de proxy GetReaderByIndex de IWICMetadataBlockReader \_
+# <a name="iwicmetadatablockreader_getreaderbyindex_proxy-function"></a>Função proxy IWICMetadataBlockReader \_ GetReaderByIndex \_
 
-Função de proxy para o método [**GetReaderByIndex**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex) .
+Função proxy para o [**método GetReaderByIndex.**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockreader-getreaderbyindex)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,34 +42,34 @@ HRESULT IWICMetadataBlockReader_GetReaderByIndex_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) \** _
+Tipo: **[ **IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)\***
 
-Ponteiro para este objeto [_ *IWICMetadataBlockReader* *](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) .
+Ponteiro para este [**objeto IWICMetadataBlockReader.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)
 
 </dd> <dt>
 
-*nIndex* \[ no\]
+*nIndex* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dt>
 
-*ppIMetadataReader* \[ fora\]
+*ppIMetadataReader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)\*\***
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -79,9 +79,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

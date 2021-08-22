@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, descrito, digitação de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea859e2d5c160048d79e3c371b47af2bc55e0a65
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ae47746119f4c1b22bc066075ed484ef836fa6a68ee103e06975018a6ae49012
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924842"
 ---
 # <a name="strong-typing"></a>Tipagem forte
 
@@ -37,9 +37,9 @@ Nos tópicos a seguir, esta seção aborda os recursos de linguagem MIDL que imp
 -   [Três tipos de ponteiro](three-pointer-types.md)
 -   [Atributos de tipo](type-attributes.md)
 
- 
+ 
 
- 
+ 
 
 
 

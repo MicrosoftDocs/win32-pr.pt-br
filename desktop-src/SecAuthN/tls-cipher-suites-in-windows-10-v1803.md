@@ -3,12 +3,12 @@ description: Saiba mais sobre os suites de criptografia TLS Windows 10 v1803. Os
 title: Conjunto de Criptografia TLS Windows 10 v1803
 ms.topic: article
 ms.date: 10/09/2018
-ms.openlocfilehash: a86bb7b4d1ab3b104d8336ffab598686efcd99c4
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 3656ae05209b040385b512bf738cc9d01e4a5af2a3c3b0319f40e4c10400f63d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916145"
 ---
 # <a name="tls-cipher-suites-in-windows-10-v1803"></a>Conjunto de Criptografia TLS Windows 10 v1803
 
@@ -113,11 +113,11 @@ Os seguintes pacote de criptografia PSK estão habilitados e, por padrão, nessa
 
 Para adicionar conjunto de criptografias, implante uma política de grupo ou use os cmdlets TLS:
 
--   Para usar a política de grupo, configure o Pedido do Pacote de Criptografia SSL em Configuração do Computador > Modelos Administrativos > Configurações de Rede > SSL com a lista de prioridade para todos os pacote de criptografia que você deseja habilitar.
+-   Para usar a política de grupo, configure o Pedido do Pacote de Criptografia SSL em Configuração do Computador > Modelos Administrativos > Network > Configuração SSL Configurações com a lista de prioridade para todos os pacote de criptografia que você deseja habilitar.
 -   Para usar o PowerShell, consulte [Cmdlets TLS](/powershell/module/tls/?view=win10-ps).
 
 > [!Note]  
-> Antes de Windows 10, as cadeias de caracteres do conjunto de criptografias eram anexadas com a curva elíptica para determinar a prioridade da curva. Windows 10 dá suporte a uma configuração de ordem de prioridade de curva elíptica para que o sufixo de curva elíptica não seja necessário e seja substituído pela nova ordem de prioridade de curva elíptica, quando fornecido, para permitir que as organizações usem a política de grupo para configurar versões diferentes do Windows com os mesmos conjunto de codificação.
+> Antes de Windows 10, as cadeias de caracteres do conjunto de criptografias eram anexadas com a curva elíptica para determinar a prioridade da curva. Windows 10 dá suporte a uma configuração de ordem de prioridade de curva elíptica para que o sufixo de curva elíptica não seja necessário e seja substituído pela nova ordem de prioridade de curva elíptica, quando fornecido, para permitir que as organizações usem a política de grupo para configurar versões diferentes do Windows com os mesmos grupos de criptografia.
 
  
 

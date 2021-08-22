@@ -1,7 +1,7 @@
 ---
-description: 'Método CBaseFilter. FindPin – o método FindPin recupera o PIN com o identificador especificado. Esse método implementa o método IBaseFilter:: FindPin.'
+description: Método CBaseFilter.FindPin – o método FindPin recupera o pino com o identificador especificado. Esse método implementa o método IBaseFilter::FindPin.
 ms.assetid: 152e4ff3-2809-4c57-b9c8-f51fc50b3703
-title: Método CBaseFilter. FindPin (Amfilter. h)
+title: Método CBaseFilter.FindPin (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2bbef9b051a42597b2585a432f544eead4e2e0a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3818ef4356f11a2d003abe4e9442c4de06108aa32e50f480a3d097ea5db0c343
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017184"
 ---
-# <a name="cbasefilterfindpin-method"></a>Método CBaseFilter. FindPin
+# <a name="cbasefilterfindpin-method"></a>Método CBaseFilter.FindPin
 
-O `FindPin` método recupera o PIN com o identificador especificado. Esse método implementa o método [**IBaseFilter:: FindPin**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin) .
+O `FindPin` método recupera o pino com o identificador especificado. Esse método implementa o [**método IBaseFilter::FindPin.**](/windows/desktop/api/Strmif/nf-strmif-ibasefilter-findpin)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,28 +46,28 @@ HRESULT FindPin(
 *Id* 
 </dt> <dd>
 
-Ponteiro para uma constante, Cadeia de caracteres Unicode terminada em nulo que identifica o PIN.
+Ponteiro para uma cadeia de caracteres Unicode com terminação nula constante que identifica o pino.
 
 </dd> <dt>
 
 *ppPin* 
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do PIN.
+Endereço de uma variável que recebe um ponteiro para a interface [**IPin do**](/windows/desktop/api/Strmif/nn-strmif-ipin) pino.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores de **HRESULT** a seguir.
+Retorna um dos seguintes **valores HRESULT.**
 
 
 
 | Código de retorno                                                                                       | Descrição                               |
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>              | Sucesso.<br/>                       |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>         | Argumento de ponteiro **nulo** .<br/>     |
-| <dl> <dt>**VFW \_ E \_ não \_ encontrado**</dt> </dl> | Não foi possível localizar um PIN correspondente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>              | Êxito.<br/>                       |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>         | Argumento de ponteiro **NULL.**<br/>     |
+| <dl> <dt>**VFW \_ E \_ NÃO \_ ENCONTRADO**</dt> </dl> | Não foi possível encontrar um pino correspondente.<br/> |
 
 
 
@@ -75,9 +75,9 @@ Retorna um dos valores de **HRESULT** a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método chama o método [**CBasePin:: Name**](cbasepin-name.md) para comparar o nome de cada PIN com a cadeia de caracteres especificada pelo parâmetro *ID* .
+Esse método chama o [**método CBasePin::Name**](cbasepin-name.md) para comparar o nome de cada pino com a cadeia de caracteres especificada pelo *parâmetro Id.*
 
-Se o método tiver sucesso, a interface **IPin** terá uma contagem de referência pendente. Certifique-se de liberá-lo quando terminar.
+Se o método for bem-sucedido, a interface **IPin** terá uma contagem de referência pendente. Certifique-se de liberá-lo quando terminar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,12 +85,12 @@ Se o método tiver sucesso, a interface **IPin** terá uma contagem de referênc
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

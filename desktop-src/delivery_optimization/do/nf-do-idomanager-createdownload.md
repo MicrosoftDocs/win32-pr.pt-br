@@ -1,8 +1,8 @@
 ---
-title: Método IDOManager::CreateDownload
+title: 'Método IDOManager:: createdownload'
 description: Cria um novo download.
 keywords:
-- Método IDOManager::CreateDownload
+- 'Método IDOManager:: createdownload'
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118543833"
 ---
-# <a name="idomanagercreatedownload-method"></a>Método IDOManager::CreateDownload
+# <a name="idomanagercreatedownload-method"></a>Método IDOManager:: createdownload
 
 Cria um novo download.
 
@@ -37,16 +37,16 @@ HRESULT CreateDownload(
 
 `download`
 
-O endereço de um ponteiro de interface **IDODownload.**
+O endereço de um ponteiro de interface **IDODownload** .
 
 ## <a name="return-value"></a>Valor Retornado
 
-Se a função for bem-sucedida, ela **retornará S_OK**. Caso contrário, retornará um [**código de erro HRESULT**](/windows/desktop/com/structure-of-com-error-codes) [.](/windows/desktop/com/com-error-codes-10)
+Se a função for realizada com sucesso, ela retornará **S_OK**. Caso contrário, ele retorna um [código de erro](/windows/desktop/com/com-error-codes-10) [**HRESULT**](/windows/desktop/com/structure-of-com-error-codes) .
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
-| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
-| **Cabeçalho** | Do.h |
+| **Cliente mínimo com suporte** | Windows 10, versão 1809 \[ Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Somente aplicativos Win32 do servidor versão 1809 \[\] |
+| **Cabeçalho** | Do. h |

@@ -60,7 +60,7 @@ O valor de retorno é **S \_ OK em** caso de êxito ou um valor de erro, caso co
 Essa propriedade retorna os dados de resposta em uma matriz de bytes não assinados. Se a resposta não tiver um corpo de resposta, uma variante vazia será retornada. Essa propriedade só poderá ser invocada depois que [**o método Send**](iwinhttprequest-send.md) tiver sido chamado.
 
 > [!Note]  
-> Para obter mais informações sobre a implementação Windows XP e Windows 2000, consulte [Requisitos de tempo de execução.](winhttp-start-page.md)
+> Para obter mais informações sobre a implementação do Windows XP e Windows 2000, consulte [Requisitos de tempo de execução.](winhttp-start-page.md)
 
  
 

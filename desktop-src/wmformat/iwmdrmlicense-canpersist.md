@@ -1,11 +1,11 @@
 ---
-title: Método canpersist do IWMDRMLicense (wmdrmsdk. h)
-description: O método canpersist consulta se a licença pode persistir em um repositório de licenças local.
+title: Método CanPersist IWMDRMLicense (Wmdrmsdk.h)
+description: O método CanPersist consulta se a licença pode ser persistida em um armazenamento de licenças local.
 ms.assetid: 040b30d8-4e47-44a3-8b09-e81cc30e8a53
 keywords:
-- Método perpersist Windows Media Format
-- Método canpersist Windows Media Format, interface IWMDRMLicense
-- IWMDRMLicense interface formato Windows Media, método perpersist
+- Formato de mídia do windows do método CanPersist
+- Formato de mídia do windows do método CanPersist, interface IWMDRMLicense
+- Formato de mídia da interface IWMDRMLicense , método CanPersist
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118701214"
 ---
-# <a name="iwmdrmlicensecanpersist-method"></a>Método IWMDRMLicense:: perpersist
+# <a name="iwmdrmlicensecanpersist-method"></a>Método IWMDRMLicense::CanPersist
 
-O método **canpersist** consulta se a licença pode persistir em um repositório de licenças local.
+O **método CanPersist** consulta se a licença pode ser persistida em um armazenamento de licenças local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ HRESULT CanPersist(
 
 <dl> <dt>
 
-*pfCanPersist* \[ fora\]
+*pfCanPersist* \[ out\]
 </dt> <dd>
 
-VERDADEIRO indica que a licença pode ser persistida.
+TRUE indica que a licença pode ser persistida.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -73,7 +73,7 @@ Nenhum.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -81,7 +81,7 @@ Nenhum.
 
 <dl> <dt>
 
-[**Interface IWMDRMLicense**](iwmdrmlicense.md)
+[**IWMDRMLicense Interface**](iwmdrmlicense.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray GatherBlue'
-description: 'Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear. | Métodos TextureCubeArray:: TextureCubeArray GatherBlue'
+title: Métodos TextureCubeArray::TextureCubeArray GatherBlue
+description: Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear. | Métodos TextureCubeArray::TextureCubeArray GatherBlue
 ms.assetid: 709EF549-20F6-44E1-8E8C-1FF71C259FC7
 keywords:
 - Métodos GatherBlue HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: ee3946a2a205a679da835b2523da090611372331
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bf6a87e4e4accb6a9c6742d6bb31b5cec36bc14f8120587e45f8979c9a5d3ee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786319"
 ---
-# <a name="texturecubearraygatherblue-methods"></a>Métodos TextureCubeArray:: GatherBlue
+# <a name="texturecubearraygatherblue-methods"></a>Métodos TextureCubeArray::GatherBlue
 
-Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear.
+Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,7 +29,7 @@ Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma o
 
 | Método                                                                  | Descrição                                                                                                                                      |
 |:------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherBlue (S, float, uint)**](tcubearray-gatherblue-s-float-uint-.md)  | Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.<br/> |
+| [**GatherBlue(S,float,uint)**](tcubearray-gatherblue-s-float-uint-.md)  | Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.<br/> |
 
 
 

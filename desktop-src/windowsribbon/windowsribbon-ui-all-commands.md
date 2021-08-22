@@ -35,7 +35,7 @@ Especifica uma constante que identifica a coleção de Comandos declarados no ar
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos da área de trabalho do Vista \[\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma somente para aplicativos da área de trabalho do Windows Server 2008 \[\]<br/> |
-| parâmetro<br/>                   | <dl> <dt>Uiribbon.h</dt> </dl>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>Uiribbon.h</dt> </dl>                                             |
 | Idl<br/>                      | <dl> <dt>Uiribbon.idl</dt> </dl>                                           |
 
 

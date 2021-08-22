@@ -36,7 +36,7 @@ Atributo do objeto ntdsConnection que indica por que (ou se) o KCC mostra que a 
 | Frequência de atualização  | Pode alterar em resposta a alterações na topologia de rede.                                                                                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1408                                                                                                                    |
 | System-Id-Guid    | 0ea12b84-08b3-11d3-91bc-0000f87a57d4                                                                                                       |
-| Sintaxe            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                            |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                            |
 
 
 

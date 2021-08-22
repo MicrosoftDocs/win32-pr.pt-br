@@ -4,12 +4,12 @@ ms.assetid: 3cf7a8a1-66b2-45ca-b53d-29c80f95ff70
 title: Mensagens de erro da função de pacote de fontes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06bcf84f92b60351e8375df682de0c3b01c2aa1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7008707675d9b2ef3eb31229535b07b1af6000e43d1122c2929fd12988fb4ea3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761079"
 ---
 # <a name="font-package-function-error-messages"></a>Mensagens de erro da função de pacote de fontes
 
@@ -17,7 +17,7 @@ Os valores longos a seguir são retornados pelas funções de pacote de fonte ( 
 
 
 
-| Retornar valor                   | Valor | Descrição                                                                                                      |
+| Valor retornado                   | Valor | Descrição                                                                                                      |
 |--------------------------------|-------|------------------------------------------------------------------------------------------------------------------|
 | SEM \_ erros                      | 0     | Não ocorreu nenhum erro.                                                                                               |
 | formato de erro \_                    | 1006  | Ocorreu um erro de formato de dados de entrada.                                                                             |
@@ -48,40 +48,40 @@ Os valores longos a seguir são retornados pelas funções de pacote de fonte ( 
 | ERRO \_ de \_ formatos de mesclagem inválidos \_   | 1010  | Uma tentativa de Mesclar fontes com os formatos de dttf incorretos não foi bem-sucedida.                                          |
 | ERRO \_ de \_ mesclagem inválido \_ NUMGLYPHS | 1012  | Uma tentativa de mesclar o número de glifos para duas fontes de uma fonte de mãe diferente não foi bem-sucedida.            |
 | \_nome inválido de erro \_             | 1067  | O nome do pacote de fontes ou um nome de fonte era inválido.                                                                |
-| ERRO \_ \_ post inválido             | 1068  | A fonte continha uma tabela inválida de informações PostScript (post).                                               |
-| ERRO \_ \_ OS2 inválido              | 1069  | A fonte continha uma tabela inválida de SO/2 e métricas específicas do Windows (SO/2).                                    |
-| ERRO \_ \_ VHEA inválido             | 1070  | A fonte continha uma tabela inválida de cabeçalho de métrica vertical (vhea).                                              |
-| ERRO \_ \_ VMTX inválido             | 1071  | A fonte continha uma tabela vmtx (métrica vertical) inválida.                                                     |
-| ERRO \_ de \_ índice TTC inválido \_       | 1015  | Um índice inválido de base zero (TTC) no arquivo de fonte foi passado.                                                 |
-| ERRO \_ de \_ CMap ausente             | 1030  | A fonte não continha uma tabela de CMap.                                                                           |
-| ERRO \_ \_ EBDT ausente             | 1044  | A fonte não continha uma tabela EBDT.                                                                          |
-| ERRO \_ \_ GLYF ausente             | 1031  | A fonte não continha uma tabela glyf.                                                                           |
-| \_falta a \_ cabeça do erro             | 1032  | A fonte não continha uma tabela de cabeçalho.                                                                           |
-| ERRO \_ \_ HHEA ausente             | 1046  | A fonte não continha uma tabela hhea.                                                                          |
-| ERRO \_ \_ HMTX ausente             | 1034  | A fonte não continha uma tabela hmtx.                                                                          |
-| ERRO \_ \_ localizável ausente             | 1035  | A fonte não continha uma tabela localizável.                                                                           |
-| ERRO \_ \_ MAXP ausente             | 1036  | A fonte não continha uma tabela maxp.                                                                           |
-| ERRO \_ \_ nome ausente             | 1037  | A fonte não continha uma tabela de nomenclatura (nome).                                                                  |
-| ERRO \_ na \_ postagem ausente             | 1038  | A fonte não continha uma tabela post.                                                                           |
-| ERRO \_ \_ OS2 ausente              | 1039  | A fonte não continha uma tabela do sistema operacional/2.                                                                          |
-| ERRO \_ \_ VHEA ausente             | 1040  | A fonte não continha uma tabela vhea.                                                                           |
-| ERRO \_ \_ VMTX ausente             | 1041  | A fonte não continha uma tabela vmtx.                                                                           |
-| ERR \_ ausente \_ HHEA \_ ou \_ VHEA   | 1042  | A fonte não continha uma tabela hhea ou uma tabela vhea.                                                          |
-| ERR \_ ausente \_ HMTX \_ ou \_ VMTX   | 1043  | A fonte não continha uma tabela hmtx ou uma tabela vmtx.                                                          |
-| ERRO \_ não \_ TTC                  | 1014  | O valor fornecido não era um índice para um arquivo TTC.                                                              |
-| PARAMETER0 de erro \_                | 1100  | O parâmetro de função de chamada 0 era inválido.                                                                        |
-| ERRO \_ parâmetro1                | 1101  | A chamada do parâmetro de função 1 era inválida.                                                                        |
-| ERRO \_ parâmetro2                | 1102  | O parâmetro de função de chamada 2 era inválido.                                                                        |
-| ERRO \_ parâmetro3                | 1103  | O parâmetro de função de chamada 3 era inválido.                                                                        |
-| ERRO \_ parâmetro4                | 1104  | O parâmetro de função de chamada 4 era inválido.                                                                        |
-| PARAMETER5 de erro \_                | 1105  | O parâmetro de função de chamada 5 era inválido.                                                                        |
-| PARAMETER6 de erro \_                | 1106  | O parâmetro de função de chamada 6 era inválido.                                                                        |
-| PARAMETER7 de erro \_                | 1107  | A chamada do parâmetro de função 7 era inválida.                                                                        |
-| PARAMETER8 de erro \_                | MaxPrintersPerSession을 마우스 오른쪽 단추로 클릭한 다음 수정을 클릭합니다.  | O parâmetro de função de chamada 8 era inválido.                                                                        |
-| PARAMETER9 de erro \_                | 1109  | O parâmetro de função de chamada 9 era inválido.                                                                        |
-| PARAMETER10 de erro \_               | 1110  | O parâmetro de função de chamada 10 era inválido.                                                                       |
-| PARAMETER11 de erro \_               | 1111  | O parâmetro de função de chamada 11 era inválido.                                                                       |
-| PARAMETER12 de erro \_               | 1112  | O parâmetro de função de chamada 12 era inválido.                                                                       |
+| ERRO \_ \_ post inválido             | 1068  | A fonte continha uma tabela PostScript (postagem) inválida.                                               |
+| ERR \_ INVALID \_ OS2              | 1069  | A fonte continha uma tabela de métricas específicas do sistema operacional/2 Windows (OS/2) inválidas.                                    |
+| ERR \_ \_ VHEA INVÁLIDO             | 1070  | A fonte continha uma tabela vhea (header de métricas verticais) inválida.                                              |
+| ERR \_ \_ VMTX INVÁLIDO             | 1071  | A fonte continha uma tabela de métricas verticais inválidas (vmtx).                                                     |
+| ERR \_ INVALID \_ TTC \_ INDEX       | 1015  | Um índice TTC (baseado em zero) inválido no arquivo de fonte foi passado.                                                 |
+| ERR \_ MISSING \_ CMAP             | 1030  | A fonte não continha uma tabela cmap.                                                                           |
+| ERR \_ MISSING \_ EBDT             | 1044  | A fonte não continha uma tabela EBDT.                                                                          |
+| ERR \_ MISSING \_ GLYF             | 1031  | A fonte não continha uma tabela glif.                                                                           |
+| ERR \_ MISSING \_ HEAD             | 1032  | A fonte não continha uma tabela de cabeça.                                                                           |
+| ERR \_ MISSING \_ HHEA             | 1046  | A fonte não continha uma tabela hhea.                                                                          |
+| ERR \_ MISSING \_ HMTX             | 1034  | A fonte não continha uma tabela hmtx.                                                                          |
+| ERR \_ MISSING \_ LOCA             | 1035  | A fonte não continha uma tabela de localização.                                                                           |
+| ERRO \_ \_ MAXP AUSENTE             | 1036  | A fonte não continha uma tabela maxp.                                                                           |
+| ERR \_ MISSING \_ NAME             | 1037  | A fonte não continha uma tabela de nomeação (nome).                                                                  |
+| ERR \_ MISSING \_ POST             | 1038  | A fonte não continha uma tabela de postagem.                                                                           |
+| ERR \_ MISSING \_ OS2              | 1039  | A fonte não continha uma tabela os/2.                                                                          |
+| ERR \_ MISSING \_ VHEA             | 1040  | A fonte não continha uma tabela vhea.                                                                           |
+| ERR \_ MISSING \_ VMTX             | 1041  | A fonte não continha uma tabela vmtx.                                                                           |
+| ERR \_ MISSING \_ HHEA \_ OR \_ VHEA   | 1042  | A fonte não continha uma tabela hhea ou uma tabela vhea.                                                          |
+| ERR \_ AUSENTE \_ HMTX \_ OU \_ VMTX   | 1043  | A fonte não continha uma tabela hmtx ou uma tabela vmtx.                                                          |
+| ERR \_ NOT \_ TTC                  | 1014  | O valor fornecido não era um índice para um arquivo TTC.                                                              |
+| ERR \_ PARAMETER0                | 1100  | O parâmetro de função de chamada 0 era inválido.                                                                        |
+| ERR \_ PARAMETER1                | 1101  | O parâmetro de função de chamada 1 era inválido.                                                                        |
+| ERR \_ PARAMETER2                | 1102  | O parâmetro de função de chamada 2 era inválido.                                                                        |
+| ERR \_ PARAMETER3                | 1103  | O parâmetro de função de chamada 3 era inválido.                                                                        |
+| ERR \_ PARAMETER4                | 1104  | O parâmetro de função de chamada 4 era inválido.                                                                        |
+| ERR \_ PARAMETER5                | 1105  | O parâmetro de função de chamada 5 era inválido.                                                                        |
+| ERR \_ PARAMETER6                | 1106  | O parâmetro de função de chamada 6 era inválido.                                                                        |
+| ERR \_ PARAMETER7                | 1107  | O parâmetro de função de chamada 7 era inválido.                                                                        |
+| ERR \_ PARAMETER8                | MaxPrintersPerSession을 마우스 오른쪽 단추로 클릭한 다음 수정을 클릭합니다.  | O parâmetro de função de chamada 8 era inválido.                                                                        |
+| ERR \_ PARAMETER9                | 1109  | O parâmetro de função de chamada 9 era inválido.                                                                        |
+| ERR \_ PARAMETER10               | 1110  | O parâmetro de função de chamada 10 era inválido.                                                                       |
+| ERR \_ PARAMETER11               | 1111  | O parâmetro de função de chamada 11 era inválido.                                                                       |
+| ERR \_ PARAMETER12               | 1112  | O parâmetro de função de chamada 12 era inválido.                                                                       |
 | PARAMETER13 de erro \_               | Etapas de resolução para o seguinte evento ID 1113  | O parâmetro de função de chamada 13 era inválido.                                                                       |
 | PARAMETER14 de erro \_               | 1114  | A chamada do parâmetro de função 14 era inválida.                                                                       |
 | PARAMETER15 de erro \_               | 1115  | O parâmetro de função de chamada 15 era inválido.                                                                       |

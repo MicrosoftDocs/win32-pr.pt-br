@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dbd0d5e20040bc2d353287eb4243c9e9d6d21dc8
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8a768acaecaa77a42990b34c50cd8eccb24d61353550751f3ed830e7844d7624
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794310"
 ---
 # <a name="breakp---vs"></a>breakp-vs
 
@@ -29,7 +29,7 @@ Interromper condicionalmente o loop atual no [ENDLOOP-vs](endloop---vs.md) ou [e
 
 
 
- 
+ 
 
 Em que:
 
@@ -47,7 +47,7 @@ Em que:
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,9 +56,9 @@ Em que:
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

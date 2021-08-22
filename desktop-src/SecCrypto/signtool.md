@@ -1,24 +1,24 @@
 ---
 title: SignTool
-description: SignTool é uma ferramenta de linha de comando que assina arquivos digitalmente, verifica as assinaturas em arquivos e arquivos de carimbos de data/hora.
+description: SignTool é uma ferramenta de linha de comando que assina digitalmente arquivos, verifica as assinaturas em arquivos e arquivos de data/hora.
 ms.assetid: aa59cb35-5fba-4ce8-97ea-fc767c83f88e
 ms.topic: article
 ms.date: 10/12/2020
-ms.openlocfilehash: f738eddb6e47da12297bffd13a816398ba2c46c9
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: f7105e81b958e463612a5065003ed04c24b913f87f52d8d72bb7a708917ebbed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897951"
 ---
 # <a name="signtool"></a>SignTool
 
-SignTool é uma ferramenta de linha de comando que assina arquivos digitalmente, verifica as assinaturas em arquivos e arquivos de carimbos de data/hora. Para obter informações sobre por que a assinatura de arquivos é importante, consulte [introdução à assinatura de código](cryptography-tools.md). a ferramenta é instalada na \\ pasta Bin do caminho de instalação do Software Development Kit (SDK) do Microsoft Windows (exemplo: C:\Program files (x86) \ Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe).
+SignTool é uma ferramenta de linha de comando que assina digitalmente arquivos, verifica as assinaturas em arquivos e arquivos de data/hora. Para obter informações sobre por que assinar arquivos é importante, consulte [Introdução à assinatura de código.](cryptography-tools.md) A ferramenta é instalada na pasta Bin do caminho de instalação do \\ SDK (Software Development Kit) do Microsoft Windows (exemplo: C:\Arquivos de Programas (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe).
 
-o SignTool está disponível como parte do SDK do Windows, do qual você pode baixar <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
+O SignTool está disponível como parte do SDK Windows, que você pode baixar do <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
 
 > [!Note]  
-> o SDK Windows 10, Windows 10 HLK, Windows 10 WDK e Windows 10 o ADK **builds 20236 e posteriores** agora exigirão a especificação do algoritmo digest. O comando de sinal de SignTool requer que a `file digest algorithm` opção/FD e/TD `timestamp digest algorithm` seja especificada durante a assinatura e o carimbo de data/hora, respectivamente. Um aviso (código de erro 0, inicialmente) será gerado se/FD não for especificado durante a assinatura e se/TD não for especificado durante o carimbo de data/hora. Em versões posteriores de SignTool, o aviso se tornará um erro. SHA256 é recomendado e considerado mais seguro do que o SHA1 pelo setor.  
+> O SDK do Windows 10, Windows 10 HLK, Windows 10 WDK e Windows 10 ADK **builds 20236** e superiores agora exigirão a especificação do algoritmo digest. O comando signTool requer que as opções /fd e /td sejam especificadas durante a assinatura e o `file digest algorithm` `timestamp digest algorithm` data/hora, respectivamente. Um aviso (código de erro 0, inicialmente) será lançado se /fd não for especificado durante a assinatura e se /td não for especificado durante o data/hora. Em versões posteriores do SignTool, o aviso se tornará um erro. O SHA256 é recomendado e considerado mais seguro do que SHA1 pelo setor.  
 
 
 ## <a name="syntax"></a>Sintaxe  
@@ -36,7 +36,7 @@ signtool [command] [options] [file_name | ...]
 |`file_name`|O caminho para um arquivo a ser assinado.| 
 
 
-Os comandos a seguir têm suporte de SignTool.
+Os comandos a seguir são suportados pelo SignTool.
 
 |Comando|Descrição|  
 |----|----|  
@@ -54,19 +54,19 @@ Os comandos a seguir têm suporte de SignTool.
 |**/debug**|Exibe informações de depuração.|  
 
  
-## <a name="catdb-command-options"></a>Opções de comando CatDB  
+## <a name="catdb-command-options"></a>Opções de comando catdb  
 
  A tabela a seguir lista as opções que podem ser usadas com o comando `Catdb`.
 
 | Opção Catdb | Descrição |
 |----|----| 
-| **/d** | Especifica que o banco de dados de catálogo padrão seja atualizado. Se nem a opção **/d** nem **/g** for usada, o SignTool atualizará o componente do sistema e o banco de dados do driver. |
-|  *GUID* /g | Especifica que o banco de dados do catálogo identificado pelo GUID seja atualizado.|
-| **/r** | Remove o catálogo especificado do banco de dados de catálogo. Se essa opção não for especificada, SignTool adicionará o catálogo especificado ao banco de dados de catálogo.|
-| **/u** | Especifica que um nome exclusivo será gerado automaticamente para os arquivos de catálogo adicionados. Se necessário, os arquivos do catálogo são renomeados para evitar conflitos de nome com os arquivos de catálogo existentes. Se essa opção não for especificada, o SignTool substituirá qualquer catálogo existente que tenha o mesmo nome que o catálogo que está sendo adicionado.|
+| **/d** | Especifica que o banco de dados de catálogo padrão seja atualizado. Se a opção **/d** nem **/g** não for usada, o SignTool atualizará o componente do sistema e o banco de dados do driver. |
+| **/g** *GUID* | Especifica que o banco de dados de catálogo identificado pelo GUID seja atualizado.|
+| **/r** | Remove o catálogo especificado do banco de dados de catálogo. Se essa opção não for especificada, o SignTool adicionará o catálogo especificado ao banco de dados do catálogo.|
+| **/u** | Especifica que um nome exclusivo seja gerado automaticamente para os arquivos de catálogo adicionados. Se necessário, os arquivos do catálogo são renomeados para evitar conflitos de nome com os arquivos de catálogo existentes. Se essa opção não for especificada, o SignTool substituirá qualquer catálogo existente que tenha o mesmo nome que o catálogo que está sendo adicionado.|
 
 > [!Note]  
-> Os bancos de dados de catálogo são usados para pesquisa automática de arquivos de catálogo.
+> Os bancos de dados de catálogo são usados para a busca automática de arquivos de catálogo.
 
 
 ## <a name="sign-command-options"></a>Opções do comando de entrada  
@@ -76,27 +76,27 @@ Os comandos a seguir têm suporte de SignTool.
 |Opções do comando de entrada|Descrição|  
 |----|----| 
 |`/a`|Seleciona automaticamente o melhor certificado de assinatura. A Ferramenta de Assinatura encontrará todos os certificados válidos que atendem às condições especificadas e selecionará aquele válido durante um tempo mais longo. Se essa opção não estiver presente, a Ferramenta de Assinatura deverá localizar apenas um certificado de assinatura válido.|  
-|`/ac`  *Grupo*|Adiciona um certificado adicional de *file* ao bloco de assinatura.|  
+|`/ac`  *Arquivo*|Adiciona um certificado adicional de *file* ao bloco de assinatura.|  
 |`/as`|Acrescenta esta assinatura. Se nenhuma assinatura primária estiver presente, essa assinatura será definida como a assinatura principal.|  
 |`/c`  *CertTemplateName*|Especifica o Nome do Modelo de Certificado (uma extensão da Microsoft) para o certificado de assinatura.|  
 |`/csp`  *CSPName*|Especifica o provedor de serviços de criptografia (CSP) que contém o contêiner de chave privada.|  
-|`/d`  *Crescente*|Especifica uma descrição do conteúdo assinado.|  
-|`/dg`  *Multi-Path*|Gera o resumo a ser assinado e os arquivos PKCS7 não assinados. Os arquivos Digest e PKCS7 de saída serão: *Path\FileName.Dig* e *Path\FileName.p7u*. Para gerar um arquivo XML adicional, consulte <strong>/DXML</strong>.|  
-|`/di`  *Multi-Path*|Cria a assinatura ingerindo o resumo assinado para o arquivo PKCS7 não assinado. O resumo assinado de entrada e os arquivos PKCS7 não assinados devem ser: *Path\FileName.dig.Signed* e *Path\FileName.p7u*.|  
-|`/dlib`  *DLL*|Especifica a DLL que implementa a <code>AuthenticodeDigestSign</code> função com a qual assinar o resumo. Essa opção é equivalente a usar <strong>SignTool</strong> separadamente com os comutadores <strong>/DG</strong>, <strong>/DS</strong>e <strong>/di</strong> , exceto que essa opção invoca todas as três como uma operação atômica.|  
-|`/dmdf`  *Nome de arquivo*|Quando usado com a opção <strong>/DG</strong> , passa o conteúdo do arquivo para a <code>AuthenticodeDigestSign</code> função sem modificação.|  
-|`/ds`  |Assina apenas o resumo. O arquivo de entrada deve ser o resumo gerado pela opção <strong>/DG</strong> . O arquivo de saída será: *File. Signed*.|  
+|`/d`  *Desc*|Especifica uma descrição do conteúdo assinado.|  
+|`/dg`  *Caminho*|Gera o resumo a ser assinado e os arquivos PKCS7 não assinados. O resumo de saída e os arquivos PKCS7 serão: *Path\FileName.dig* e *Path\FileName.p7u.* Para saída de um arquivo XML adicional, <strong>consulte /dxml</strong>.|  
+|`/di`  *Caminho*|Cria a assinatura ingerindo o resumo assinado para o arquivo PKCS7 não assinado. O resumo assinado de entrada e os arquivos PKCS7 não assinados devem ser: *Path\FileName.dig.signed* *e Path\FileName.p7u*.|  
+|`/dlib`  *DLL*|Especifica a DLL que implementa a <code>AuthenticodeDigestSign</code> função com a que assinar o resumo. Essa opção é equivalente a usar <strong>SignTool</strong> separadamente com as opções <strong>/dg</strong>, <strong>/ds</strong>e <strong>/di,</strong> exceto que essa opção invoca todos os três como uma operação atômica.|  
+|`/dmdf`  *Nome de arquivo*|Quando usado com a <strong>opção /dg,</strong> passa o conteúdo do arquivo para a <code>AuthenticodeDigestSign</code> função sem modificação.|  
+|`/ds`  |Assina apenas o resumo. O arquivo de entrada deve ser o resumo gerado pela <strong>opção /dg.</strong> O arquivo de saída será: *File.signed.*|  
 |`/du`  *URL*|Especifica uma URL (Uniform Resource Locator) para obter a descrição expandida do conteúdo assinado.|  
-|`/dxml`  |Quando usado com a opção <strong>/DG</strong> , o produz um arquivo XML. O arquivo de saída será: *Path\FileName.dig.xml*.|  
+|`/dxml`  |Quando usado com a <strong>opção /dg,</strong> produz um arquivo XML. O arquivo de saída será: *Path\FileName.dig.xml*.|  
 |`/f`  *SignCertFile*|Especifica o certificado de assinatura em um arquivo. Se o arquivo estiver no formato PFX (Personal Information Exchange) e protegido por senha, use a opção `/p` para especificar a senha. Se o arquivo não contiver chaves privadas, use as opções `/csp` e `/kc` para especificar o CSP e o nome do contêiner de chave privada.|  
 |`/fd`*alg*|Especifica o algoritmo de resumo do arquivo a ser usado na criação de assinaturas de arquivo. </br> **Observação:** Um aviso será gerado se <strong>a opção /fd</strong> não for fornecida durante a assinatura. A alg padrão é SHA1, mas SHA256 é recomendado.|
-|`/fd`  *certHash*|Especificar a cadeia de caracteres certHash será padrão para o algoritmo usado no certificado de assinatura. </br> **Observação:** Disponível apenas no Windows 10 kit de builds 20236 e superior.|  
+|`/fd`  *certHash*|Especificar a cadeia de caracteres certHash será padrão para o algoritmo usado no certificado de assinatura. </br> **Observação:** Disponível somente no Windows 10 kit de builds 20236 e superior.|  
 |`/i`  *IssuerName*|Especifica o nome do emissor de certificado de assinatura. Esse valor pode ser uma subcadeia de caracteres do nome do emissor inteiro.|  
 |`/kc`  *PrivKeyContainerName*|Especifica o nome do contêiner de chave privada.|  
 |`/n`  *SubjectName*|Especifica o nome do assunto do certificado de assinatura. Esse valor pode ser uma subcadeia de caracteres do nome da entidade inteiro.|  
 |`/nph`|Se compatível, suprime hashes de página para arquivos executáveis. O padrão é determinado pela variável de ambiente SIGNTOOL_PAGE_HASHES e pela versão de wintrust.dll. Essa opção é ignorada para arquivos não PE.|  
 |`/p`  *Senha*|Especifica a senha a ser usada durante a abertura de um arquivo PFX. (Use a opção `/f` para especificar um arquivo PFX).|  
-|`/p7` *Caminho*|Especifica se um arquivo PKCS (Public Key Cryptography Standards) #7 é produzido para cada arquivo de conteúdo especificado. Arquivos PKCS #7 são nomeados *nome* \\ *de arquivo de caminho*.p7.|  
+|`/p7` *Caminho*|Especifica se um arquivo PKCS (Public Key Cryptography Standards) #7 é produzido para cada arquivo de conteúdo especificado. Os arquivos #7 PKCS são nomeados \\ *nome de arquivo de caminho*.p7.|  
 |`/p7ce` *Valor*|Especifica opções para o conteúdo de PKCS #7 assinado. Defina *Value* como “Embedded” para inserir o conteúdo assinado no arquivo PKCS #7 ou como “DetachedSignedData” para produzir a parte de dados assinada de um arquivo PKCS #7 desanexado. Se a opção `/p7ce` não for usada, o conteúdo assinado será inserido por padrão.|  
 |`/p7co` *\<OID>*|Especifica o OID (identificador de objeto) que identifica o conteúdo assinado de PKCS #7.|  
 |`/ph`|Se compatível, gera hashes de página para arquivos executáveis.|  
@@ -155,7 +155,7 @@ O comando signTool **verify** determina se o certificado de assinatura foi emiti
 O comando SignTool **verify** vai dar o status de assinatura inserido, a menos que uma opção seja especificada para pesquisar um catálogo (/a, /ad, /as, /ag, /c). 
 
 
-## <a name="return-value"></a>Retornar valor  
+## <a name="return-value"></a>Valor retornado  
 
  A Ferramenta de Assinatura retorna um dos códigos de saída a seguir quando é encerrada.  
   

@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f15d1bda18d2371f6518da4fa2884fac4df91b4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4d7909e75b44baf5a9efd33d86d01b1c86571c93a181decd6d3b0dd1019a3c38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105796339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118878740"
 ---
 # <a name="ienumtfrenderingmarkupclone-method"></a>Método IEnumTfRenderingMarkup:: clone
 
@@ -48,7 +48,7 @@ HRESULT Clone(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 

@@ -1,23 +1,23 @@
 ---
 title: Compilando e vinculando
-description: O makefile a seguir mostra as dependências entre os arquivos necessários para compilar os aplicativos cliente e servidor e vinculá-los à biblioteca de tempo de execução do RPC e à biblioteca de tempo de execução padrão do C.
+description: O makefile a seguir mostra as dependências entre os arquivos necessários para compilar os aplicativos cliente e servidor e vinculá-los à biblioteca em tempo de run time RPC e à biblioteca de tempo de run time C padrão.
 ms.assetid: 9182baea-7307-4db0-8d66-7fba14227ac9
 keywords:
-- Chamada de procedimento remoto RPC, tarefas, compilação e vinculação
+- RPC de Chamada de Procedimento Remoto , tarefas, compilação e vinculação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1991e39cc028c01066cd8f13344765787374fa08
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e2500a763db149eca914060dd7920548883fa57fbd5642485a41f5a55c65cd2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931709"
 ---
 # <a name="compiling-and-linking"></a>Compilando e vinculando
 
-O makefile a seguir mostra as dependências entre os arquivos necessários para compilar os aplicativos cliente e servidor e vinculá-los à biblioteca de tempo de execução do RPC e à biblioteca de tempo de execução padrão do C.
+O makefile a seguir mostra as dependências entre os arquivos necessários para compilar os aplicativos cliente e servidor e vinculá-los à biblioteca em tempo de run time RPC e à biblioteca de tempo de run time C padrão.
 
-Esse makefile pode ser usado para criar aplicativos de cliente e servidor do código-fonte neste tutorial. Os stubs e cabeçalhos mostrados aqui foram gerados com o MIDL versão 2,0. Os comandos e os argumentos do compilador e do vinculador podem ser diferentes para a configuração do computador. Consulte a documentação do compilador para obter mais informações.
+Esse makefile pode ser usado para criar aplicativos cliente e servidor do código-fonte neste tutorial. Os stubs e os headers mostrados aqui foram gerados com MIDL versão 2.0. Os comandos e os argumentos do compilador e do vinculador podem ser diferentes para a configuração do computador. Confira a documentação do compilador para obter mais informações.
 
 ``` syntax
 #makefile for helloc.exe and hellos.exe
@@ -68,9 +68,9 @@ hello.h hello_c.c hello_s.c : hello.idl hello.acf
     midl hello.idl
 ```
 
- 
+ 
 
- 
+ 
 
 
 

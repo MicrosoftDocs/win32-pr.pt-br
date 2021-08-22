@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, descrito, componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11c715a4f454ef28db20ee527e5e8f33f66200b2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 44b3416589eccf865b70d3da82fa7494631ab7592f172bb46c10eccb1d96fad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118928115"
 ---
 # <a name="rpc-components"></a>Componentes RPC
 
@@ -26,9 +26,9 @@ No modelo de RPC, você pode especificar formalmente uma interface para os proce
 
 Depois de criar uma interface, você deve passá-la por meio do compilador MIDL. Esse compilador gera os stubs que convertem chamadas de procedimento local em chamadas de procedimento remoto. Os stubs são funções de espaço reservado que fazem as chamadas para as funções de biblioteca de tempo de execução, que gerenciam a chamada de procedimento remoto. A vantagem dessa abordagem é que a rede se torna quase completamente transparente para seu aplicativo distribuído. O programa cliente chama o que parece ser procedimentos locais; o trabalho de transformá-los em chamadas remotas é feito automaticamente para você. Todo o código que traduz dados, acessa a rede e recupera os resultados é gerado para você pelo compilador MIDL e é invisível para seu aplicativo.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 97219478b898dc47e385e8e00a5cc9b5484730ce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a7e3dec14876f784bbb4055c483f22552bef80e034798f902196c7b65ff3aa45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118804087"
 ---
 # <a name="d3dxevent_type-enumeration"></a>\_Enumeração de tipo D3DXEVENT
 

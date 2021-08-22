@@ -1,28 +1,28 @@
 ---
-description: As \_ constantes LINECALLPARAMFLAGS descrevem vários sinalizadores de status sobre uma chamada.
+description: As constantes LINECALLPARAMFLAGS \_ descrevem vários sinalizadores de status sobre uma chamada.
 ms.assetid: f323ec9f-5bab-4b5d-93ef-8a552ee0d591
-title: Constantes de LINECALLPARAMFLAGS_ (TAPI. h)
+title: LINECALLPARAMFLAGS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e70fe2721e6fce0ac509b50290b1ec3788f3c89
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00fb33f662357b2e7e4d6b71b90e70aac1d8698a286de9da7f5e6a5b684712dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118863860"
 ---
-# <a name="linecallparamflags_-constants"></a>\_Constantes LINECALLPARAMFLAGS
+# <a name="linecallparamflags_-constants"></a>Constantes LINECALLPARAMFLAGS \_
 
-As **constantes \_ LINECALLPARAMFLAGS** descrevem vários sinalizadores de status sobre uma chamada.
+As **constantes LINECALLPARAMFLAGS \_** descrevem vários sinalizadores de status sobre uma chamada.
 
 <dl> <dt>
 
-<span id="LINECALLPARAMFLAGS_BLOCKID"></span><span id="linecallparamflags_blockid"></span>**LINECALLPARAMFLAGS \_ blockid**
+<span id="LINECALLPARAMFLAGS_BLOCKID"></span><span id="linecallparamflags_blockid"></span>**LINECALLPARAMFLAGS \_ BLOCKID**
 </dt> <dd> <dl> <dt>
 
 
 
-A identidade do originador deve ser ocultada (bloquear ID do chamador).
+A identidade do originador deve ser ocultada (ID do chamador de bloco).
 
 
 </dt> </dl> </dd> <dt>
@@ -32,17 +32,17 @@ A identidade do originador deve ser ocultada (bloquear ID do chamador).
 
 
 
-O telefone da parte chamada deve ser feito automaticamente offhook.
+O telefone da parte chamada deve ser retirado automaticamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLPARAMFLAGS_IDLE"></span><span id="linecallparamflags_idle"></span>**LINECALLPARAMFLAGS \_ ocioso**
+<span id="LINECALLPARAMFLAGS_IDLE"></span><span id="linecallparamflags_idle"></span>**LINECALLPARAMFLAGS \_ OCIOSO**
 </dt> <dd> <dl> <dt>
 
 
 
-A chamada deve ser originada em uma aparência de chamada ociosa e não se associar a uma chamada em andamento. Ao usar a função [**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall) , se o \_ valor ocioso de LINECALLPARAMFLAGS não for definido e houver uma chamada existente na linha, a função será interrompida na chamada existente, se necessário, para fazer a nova chamada. Se não houver nenhuma chamada existente, a função fará a nova chamada como especificado.
+A chamada deve ser originada em uma aparência de chamada ociosa e não ingressar em uma chamada em andamento. Ao usar a função [**lineMakeCall,**](/windows/desktop/api/Tapi/nf-tapi-linemakecall) se o valor IDLE LINECALLPARAMFLAGS não estiver definido e houver uma chamada existente na linha, a função será interrompeda na chamada existente, se necessário, para fazer \_ a nova chamada. Se não houver nenhuma chamada existente, a função fará a nova chamada conforme especificado.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ A chamada deve ser originada em uma aparência de chamada ociosa e não se assoc
 
 
 
-Esse bit é usado somente em conjunto com [**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference) e [**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference). O endereço a ser conferência com a chamada atual é especificado no membro **targetAddress** em [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams). A chamada de consulta não desenha fisicamente o tom de discagem do comutador, mas irá progredir por meio de vários Estados de estabelecimento de chamada (por exemplo, discagem, continuação). Quando a chamada de consulta atinge o estado conectado, a conferência é automaticamente estabelecida; a chamada original, que permanecia no estado conectado, entra no estado de conferência; a chamada de consulta entra no estado de conferência; o hConfCall entra no estado conectado. Se a chamada de consulta falhar (entra no estado desconectado seguido por ociosidade), o hConfCall também entrará no estado ocioso e a chamada original (que pode ter sido uma conferência existente, no caso de **linePrepareAddToConference**) permanecerá no estado conectado. A parte original (ou partes) nunca percebe que a chamada tem ficado em espera. Esse recurso é frequentemente usado para adicionar um supervisor a uma chamada do agente ad quando necessário para monitorar as interações com um chamador irate.
+Esse bit é usado apenas em conjunto com [**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference) e [**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference). O endereço a ser conferênciado com a chamada atual é especificado **no membro TargetAddress** em [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams). A chamada de consulta não desenha fisicamente o tom de discagem da opção, mas progride por vários estados de estabelecimento de chamada (por exemplo, discagem, continuação). Quando a chamada de consultoria atinge o estado conectado, a conferência é estabelecida automaticamente; a chamada original, que permanecera no estado conectado, entra no estado conferênciado; a chamada de consultoria entra no estado conferência; o hConfCall entra no estado conectado. Se a chamada de consulta falhar (entra no estado desconectado seguido por ocioso), hConfCall também entra no estado ocioso e a chamada original (que pode ter sido uma conferência existente, no caso de **linePrepareAddToConference**) permanece no estado conectado. A parte original (ou partes) nunca percebe que a chamada foi reter. Esse recurso geralmente é usado para adicionar um supervisor a uma chamada de agente ACD quando necessário para monitorar interações com um chamador de taxa de iterações.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Esse bit é usado somente em conjunto com [**lineSetupConference**](/windows/des
 
 
 
-Esse bit é usado somente em conjunto com [**lineSetupTransfer**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer). Ele combina a operação de **lineSetupTransfer** seguida por [**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial) na chamada de consulta em uma única etapa. O endereço a ser discado é especificado no membro **targetAddress** em [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams). A chamada original é colocada no estado *onHoldPendingTransfer* , assim como se **lineSetupTransfer** fosse chamado normalmente, e a chamada de consulta é estabelecida normalmente. O aplicativo ainda deve chamar [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) para efetivar a transferência. Esse recurso é geralmente usado ao invocar uma transferência de um servidor por meio de um link de controle de chamada de terceiros, pois esses links geralmente não dão suporte ao processo normal de duas etapas.
+Esse bit é usado apenas em conjunto com [**lineSetupTransfer.**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer) Ele combina a operação de **lineSetupTransfer** seguida por [**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial) na chamada de consulta em uma única etapa. O endereço a ser discado é especificado no **membro TargetAddress** em [**LINECALLPARAMS.**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) A chamada original é colocada no estado *onholdpendingtransfer,* assim como se **lineSetupTransfer** fosse chamada normalmente e a chamada de consulta fosse estabelecida normalmente. O aplicativo ainda deve chamar [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) para efetuar a transferência. Esse recurso geralmente é usado ao invocar uma transferência de um servidor por um link de controle de chamada de terceiros, pois esses links geralmente não são suportados pelo processo normal de duas etapas.
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Esse bit é usado somente em conjunto com [**lineSetupTransfer**](/windows/deskt
 
 
 
-O telefone do originador deve ser feito automaticamente offhook.
+O telefone do originador deve ser retirado automaticamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,12 +82,12 @@ O telefone do originador deve ser feito automaticamente offhook.
 
 
 
-Esse bit é usado somente quando se faz uma chamada em um endereço com capacidade de discagem preditiva (LINEADDRCAPFLAGS \_ PREDICTIVEDIALER está on no membro **DwAddrCapFlags** no [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)). O bit deve estar ativado para habilitar o andamento da chamada avançada e/ou os recursos de monitoramento do dispositivo de mídia do dispositivo. Se esse bit não estiver ativado, a chamada será colocada sem um progresso de chamada avançado ou monitoramento de tipo de mídia, e nenhuma transferência automática será iniciada com base no estado da chamada.
+Esse bit é usado somente ao fazer uma chamada em um endereço com a funcionalidade de discagem preditiva (LINEADDRCAPFLAGS PREDICTIVEDIALER está em no membro \_ **dwAddrCapFlags** [**em LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)). O bit deve estar ativado para habilitar o progresso da chamada aprimorado e/ou recursos de monitoramento de dispositivo de mídia do dispositivo. Se esse bit não estiver, a chamada será feita sem o progresso da chamada ou o monitoramento de tipo de mídia aprimorado e nenhuma transferência automática será iniciada com base no estado da chamada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINECALLPARAMFLAGS_SECURE"></span><span id="linecallparamflags_secure"></span>**LINECALLPARAMFLAGS \_ seguro**
+<span id="LINECALLPARAMFLAGS_SECURE"></span><span id="linecallparamflags_secure"></span>**LINECALLPARAMFLAGS \_ SECURE**
 </dt> <dd> <dl> <dt>
 
 
@@ -99,7 +99,7 @@ A chamada deve ser configurada como segura.
 
 ## <a name="remarks"></a>Comentários
 
-Sem extensibilidade. Todos os 32 bits são reservados.
+Nenhuma extensibilidade. Todos os 32 bits são reservados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,8 +107,8 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -116,28 +116,28 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 
 <dl> <dt>
 
-[**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)
+[**Lineaddresscaps**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)
 </dt> <dt>
 
-[**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams)
+[**Linecallparams**](/windows/desktop/api/Tapi/ns-tapi-linecallparams)
 </dt> <dt>
 
-[**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer)
+[**Linecompletetransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer)
 </dt> <dt>
 
-[**lineDial**](/windows/desktop/api/Tapi/nf-tapi-linedial)
+[**Linedial**](/windows/desktop/api/Tapi/nf-tapi-linedial)
 </dt> <dt>
 
-[**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)
+[**Linemakecall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)
 </dt> <dt>
 
-[**linePrepareAddToConference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference)
+[**Lineprepareaddtoconference**](/windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference)
 </dt> <dt>
 
-[**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference)
+[**Linesetupconference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference)
 </dt> <dt>
 
-[**lineSetupTransfer**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer)
+[**Linesetuptransfer**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer)
 </dt> </dl>
 
  

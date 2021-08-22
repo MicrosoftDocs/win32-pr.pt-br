@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c04479a58eed0aa94616f0ffc092f17d52d9af4
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3684192d7fd70207a06eb5f4d6196c4414cd4c2b2fc45073230ea5912385c3b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118535004"
 ---
 # <a name="id3dx11effectpassgetpixelshaderdesc-method"></a>Método ID3DX11EffectPass:: GetPixelShaderDesc
 
@@ -52,7 +52,7 @@ Um ponteiro para uma descrição do sombreador de pixel (consulte [**D3DX11 \_ P
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

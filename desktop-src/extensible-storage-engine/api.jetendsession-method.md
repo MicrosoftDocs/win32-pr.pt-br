@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetEndSession'
-title: Método API. JetEndSession
+description: 'Saiba mais sobre: Método Api.JetEndSession'
+title: Método Api.JetEndSession
 TOCTitle: 'JetEndSession method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetEndSession(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.EndSessionGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetendsession(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 10412f6b01b14d63557bf024d65975c271bbe31b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5209c27a6c1e19ed35aad9caf8a0b419335f81f4054401b1165dc20f7d959044
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784301"
 ---
-# <a name="apijetendsession-method"></a>Método API. JetEndSession
+# <a name="apijetendsession-method"></a>Método Api.JetEndSession
 
 Encerra uma sessão.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,14 +61,14 @@ public static void JetEndSession(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    A sessão a ser encerrada.
+    A sessão a ser terminada.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. EndSessionGrbit](./endsessiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.EndSessionGrbit](./endsessiongrbit-enumeration.md)  
     
     Este parâmetro não é usado.
 
@@ -80,4 +80,4 @@ public static void JetEndSession(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -6,12 +6,12 @@ keywords:
 - named_type_to_local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 746cbdd01ea657408b1bf355f41b3b9dfba673a9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 59fc1d45545c920ef19eb4c230045e62322833d3ef38e765357c29b20a48589c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924056"
 ---
 # <a name="the-named_type_to_local-function"></a>O \_ tipo nomeado \_ para \_ função local
 
@@ -27,9 +27,9 @@ O primeiro parâmetro aponta para os dados transmitidos. A função define o seg
 
 O **\_ tipo nomeado \_ para função \_ local** deve gerenciar memória para o tipo apresentado. A função deve alocar memória para toda a estrutura de dados iniciada no endereço indicado pelo segundo parâmetro, exceto pelo próprio parâmetro (o stub aloca memória para o nó raiz e a transmite para a função). O valor do segundo parâmetro não pode ser alterado durante a chamada. A função pode alterar o conteúdo nesse endereço.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Acessibilidade de controle ActiveX janela
-description: Esta seção descreve como usar o Windows API de Acessibilidade para garantir que os controles microsoft ActiveX sem janelas sejam acessíveis.
+title: acessibilidade de controle de ActiveX sem janelas
+description: esta seção descreve como usar a API de acessibilidade do Windows para garantir que os controles do Microsoft ActiveX sem janelas sejam acessíveis.
 ms.assetid: 93CBCF20-DADF-4A63-BE60-F2A0D8810C62
 ms.topic: reference
 ms.date: 05/31/2018
@@ -11,24 +11,24 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118563451"
 ---
-# <a name="windowless-activex-control-accessibility"></a>Acessibilidade de controle ActiveX janela
+# <a name="windowless-activex-control-accessibility"></a>acessibilidade de controle de ActiveX sem janelas
 
-Esta seção descreve como usar o Windows API de Acessibilidade para garantir que os controles microsoft ActiveX sem janelas sejam acessíveis.
+esta seção descreve como usar a API de acessibilidade do Windows para garantir que os controles do Microsoft ActiveX sem janelas sejam acessíveis.
 
-Windows 8 inclui novas interfaces Windows API de Acessibilidade que simplificam a tarefa de implementar a acessibilidade para controles ActiveX janela. A API inclui interfaces implementadas em um controle sem janela e no contêiner de controle, permitindo que o controle sem janelas e seu contêiner trabalhem juntos para fornecer informações de acessibilidade sobre o controle sem janela. A API dá suporte aos seguintes cenários:
+Windows 8 inclui novas interfaces de API de acessibilidade do Windows que simplificam a tarefa de implementar a acessibilidade para controles de ActiveX sem janelas. A API inclui interfaces que são implementadas em um controle sem janela e no contêiner de controle, permitindo que o controle sem janela e seu contêiner funcionem juntos para fornecer informações de acessibilidade sobre o controle sem janela. A API dá suporte aos seguintes cenários:
 
--   Microsoft Active Accessibility controles sem janela hospedados em um contêiner de Microsoft Active Accessibility controle.
--   Microsoft Active Accessibility sem janela hospedados em um contêiner de controle Automação da Interface do Usuário Microsoft.
--   Automação da Interface do Usuário sem janela hospedados em um contêiner Microsoft Active Accessibility controle.
--   Automação da Interface do Usuário controles sem janela hospedados em um contêiner Automação da Interface do Usuário controle.
+-   Controles do Microsoft Acessibilidade Ativa sem janela hospedados em um contêiner de controle do Microsoft Acessibilidade Ativa.
+-   Controles do Microsoft Acessibilidade Ativa sem janela hospedados em um contêiner de controle de automação da interface do usuário da Microsoft.
+-   Controles sem janela de automação da interface do usuário hospedados em um contêiner de controle do Microsoft Acessibilidade Ativa.
+-   Controles sem janela de automação da interface do usuário hospedados em um contêiner de controle de automação de interface
 
-A tabela a seguir lista as interfaces que suportam controles sem janela ActiveX e identifica os objetos que implementam as interfaces.
+a tabela a seguir lista as interfaces que dão suporte a controles de ActiveX sem janelas e identifica os objetos que implementam as interfaces.
 
 
 
-| Objeto              | Msaa                                                                             | Automação de Interface de Usuário                                                                                     |
+| Objeto              | MSAA                                                                             | Automação de Interface de Usuário                                                                                     |
 |---------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Objeto de controle      | [**Iaccessiblehandler**](/windows/desktop/api/oleacc/nn-oleacc-iaccessiblehandler)                                 |                                                                                                   |
+| Objeto de controle      | [**IAccessibleHandler**](/windows/desktop/api/oleacc/nn-oleacc-iaccessiblehandler)                                 |                                                                                                   |
 | Site de controle        | [**IAccessibleWindowlessSite**](/windows/desktop/api/oleacc/nn-oleacc-iaccessiblewindowlesssite)        | [**IRawElementProviderWindowlessSite**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-irawelementproviderwindowlesssite)         |
 | Raiz da janela do host | [**IAccessibleHostingElementProviders**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessiblehostingelementproviders) | [**IRawElementProviderHostingAccessibles**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-irawelementproviderhostingaccessibles) |
 
@@ -38,10 +38,10 @@ A tabela a seguir lista as interfaces que suportam controles sem janela ActiveX 
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Como usar o Automação da Interface do Usuário tornar um controle de ActiveX sem janelas acessível](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
--   [Como usar a MSAA para tornar um controle de ActiveX sem janelas acessível](use-msaa-to-make-an-windowless-activex-control-accessible.md)
--   [Como hospedar um controle Automação da Interface do Usuário sem ActiveX janela](host-a-ui-automation-windowless-activex-control.md)
--   [Como hospedar um controle de ActiveX MSAA](host-an-msaa-windowless-activex-control.md)
+-   [como usar a automação da interface do usuário para tornar um controle de ActiveX sem janelas acessível](use-ui-automation-to-make-an-windowless-activex-control-accessible.md)
+-   [como usar a MSAA para tornar um controle de ActiveX sem janelas acessível](use-msaa-to-make-an-windowless-activex-control-accessible.md)
+-   [como hospedar um controle de ActiveX sem janela de automação da interface do usuário](host-a-ui-automation-windowless-activex-control.md)
+-   [como hospedar um controle de ActiveX sem janela MSAA](host-an-msaa-windowless-activex-control.md)
 
  
 

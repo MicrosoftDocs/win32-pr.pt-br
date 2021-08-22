@@ -4,30 +4,30 @@ ms.assetid: 0de49670-d828-4af9-b4bd-dd93a9c21516
 description: 'Saiba mais sobre: monitor do sistema'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723c214e9a326a6c769b02d8a3079f3049d14b35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28a50b6a7041927d9c1af35a2eaceecdc13e3117ccb145f6c9664ff4b91aa9be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883114"
 ---
 # <a name="system-monitor"></a>Monitor do Sistema
 
 ## <a name="purpose"></a>Finalidade
 
-O monitor do sistema (SYSMON) é a API (interface de programação de aplicativo) que você usa para configurar o controle ActiveX do Microsoft System monitor. O controle do monitor do sistema permite exibir dados do contador de desempenho em tempo real e registrados anteriormente, como memória, disco e dados do contador do processador.
+o monitor do sistema (SYSMON) é a API (interface de programação de aplicativo) que você usa para configurar o controle de ActiveX do Microsoft System monitor. O controle do monitor do sistema permite exibir dados do contador de desempenho em tempo real e registrados anteriormente, como memória, disco e dados do contador do processador.
 
 ## <a name="where-applicable"></a>Quando aplicável
 
-Use a API SYSMON quando adicionar o controle do monitor do sistema a qualquer contêiner habilitado para ActiveX, como um documento do Microsoft Word, ou uma página da Web exibida pelo Internet Explorer, e você quiser modificar seu comportamento padrão. Por exemplo, você pode criar um monitor de desempenho que exibirá apenas um conjunto predefinido de contadores do sistema ou com configurações de exibição predefinidas.
+Use a API SYSMON ao adicionar o controle do Monitor do sistema a qualquer contêiner habilitado para ActiveX, como um documento Microsoft Word, ou uma página da web exibida pelo Internet Explorer, e você deseja modificar seu comportamento padrão. Por exemplo, você pode criar um monitor de desempenho que exibirá apenas um conjunto predefinido de contadores do sistema ou com configurações de exibição predefinidas.
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-O SYSMON foi projetado para ser usado por C, C++, Visual Basic e desenvolvedores de scripts.
+o SYSMON foi projetado para ser usado por C, C++, Visual Basic e desenvolvedores de scripts.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-O SYSMON está disponível a partir do Microsoft Windows 2000.
+o SYSMON está disponível a partir do Microsoft Windows 2000.
 
 Para obter informações sobre os requisitos de tempo de execução para um determinado elemento de programação, consulte a seção requisitos da página de referência para esse elemento.
 

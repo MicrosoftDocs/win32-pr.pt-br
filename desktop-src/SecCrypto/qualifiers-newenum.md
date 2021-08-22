@@ -26,7 +26,7 @@ ms.locfileid: "118900972"
 
 A propriedade **\_ NewEnum** recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

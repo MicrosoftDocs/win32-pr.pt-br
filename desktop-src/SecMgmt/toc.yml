@@ -1,28 +1,28 @@
 - name: Gerenciamento de Segurança
   href: management-portal.md
   items:
-    - name: Sobre gerenciamento de segurança
+    - name: Sobre o Gerenciamento de Segurança
       href: about-management.md
       items:
-        - name: Política de LSA
+        - name: Política LSA
           href: lsa-policy.md
           items:
             - name: Política de Segurança Local
               href: local-security-policy.md
-            - name: Domínios internos e de conta
+            - name: Domínios de conta e integrados
               href: built-in-and-account-domains.md
             - name: Domínios primários e confiáveis
               href: primary-and-trusted-domains.md
             - name: Objetos de política LSA
               href: lsa-policy-objects.md
               items:
-                - name: Objeto de política
+                - name: Objeto Policy
                   href: policy-object.md
                 - name: Objeto TrustedDomain
                   href: trusteddomain-object.md
-                - name: Objeto de conta
+                - name: Objeto Account
                   href: account-object.md
-                - name: Objeto de dados particulares
+                - name: Objeto dados privados
                   href: private-data-object.md
         - name: Filtros de senha
           href: password-filters.md
@@ -31,12 +31,12 @@
               href: password-filter-programming-considerations.md
             - name: Imposição de senha forte e Passfilt.dll
               href: strong-password-enforcement-and-passfilt-dll.md
-        - name: Mais seguro
+        - name: Seguro
           href: safer.md
         - name: Anexos de segurança de serviço
           href: service-security-attachments.md
           items:
-            - name: Extensões de snap-in de anexos
+            - name: Extensões de snap-in de anexo
               href: attachment-snap-in-extensions.md
             - name: Mecanismos de anexo
               href: attachment-engines.md
@@ -44,13 +44,13 @@
               href: security-templates.md
             - name: Configuração e análise de segurança
               href: security-configuration-and-analysis.md
-    - name: Usando o gerenciamento de segurança
+    - name: Usando o Gerenciamento de Segurança
       href: using-management.md
       items:
         - name: Usando a política LSA
           href: using-lsa-policy.md
           items:
-            - name: Usando cadeias de caracteres de Unicode LSA
+            - name: Usando cadeias de caracteres Unicode LSA
               href: using-lsa-unicode-strings.md
             - name: Abrindo um identificador de objeto de política
               href: opening-a-policy-object-handle.md
@@ -62,11 +62,11 @@
               href: managing-account-permissions.md
             - name: Gerenciando informações de domínio confiável
               href: managing-trusted-domain-information.md
-            - name: Convertendo entre nomes e SIDs
+            - name: Traduzindo entre nomes e SIDs
               href: translating-between-names-and-sids.md
-            - name: Mapeando identificadores POSIX
+            - name: Mapeando identificadores Posix
               href: mapping-posix-identifiers.md
-            - name: Armazenando dados privados
+            - name: Armazenar dados privados
               href: storing-private-data.md
         - name: Usando filtros de senha
           href: using-password-filters.md
@@ -87,9 +87,9 @@
                   href: adding-an-attachment-snap-in-extension-node.md
                 - name: Estabelecendo a comunicação com snap-ins de configuração
                   href: establishing-communication-with-configuration-snap-ins.md
-                - name: Obtendo dados dos snap-ins de configuração
+                - name: Obter dados dos snap-ins de configuração
                   href: getting-data-from-the-configuration-snap-ins.md
-                - name: Modificando informações de configuração na interface do usuário
+                - name: Modificando informações de configuração no Interface do Usuário
                   href: modifying-configuration-information-in-the-user-interface.md
                 - name: Modificando informações de configuração no banco de dados
                   href: modifying-configuration-information-in-the-database.md

@@ -1,7 +1,7 @@
 ---
-description: O exemplo a seguir contém uma solicitação de arquivamento de chave CMC mostrada no formato ASN. 1. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe. O arquivo. inf usado como entrada para Certreq.exe contém a configuração a seguir.
+description: O exemplo a seguir contém uma solicitação de arquivamento de chave CMC mostrada no formato ASN.1. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe dados. O arquivo .inf usado como entrada para Certreq.exe contém a configuração a seguir.
 ms.assetid: 3bc81495-97c7-4ec0-91cd-4f70409b4762
-title: ASN codificado para arquivamento de chave CMC. 1
+title: ASN.1 codificado em arquivamento de chave do CMC
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e5993be3829068c9bef5bb7ebc2551077a98f028574cfd9ff47c9988cae7faa3
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118901711"
 ---
-# <a name="cmc-key-archival-encoded-asn1"></a>ASN codificado para arquivamento de chave CMC. 1
+# <a name="cmc-key-archival-encoded-asn1"></a>ASN.1 codificado em arquivamento de chave do CMC
 
-O exemplo a seguir contém uma solicitação de arquivamento de chave CMC mostrada no formato ASN. 1. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe. O arquivo. inf usado como entrada para Certreq.exe contém a configuração a seguir.
+O exemplo a seguir contém uma solicitação de arquivamento de chave CMC mostrada no formato ASN.1. O exemplo foi gerado usando as ferramentas Certreq.exe e Certutil.exe dados. O arquivo .inf usado como entrada para Certreq.exe contém a configuração a seguir.
 
 ``` syntax
 [NewRequest]
@@ -25,11 +25,11 @@ PrivateKeyArchive=true
 CertificateTemplate=User
 ```
 
-Essa configuração gera a seguinte saída de exemplo. A configuração especifica o assunto, o tipo de solicitação (CMC) e o nome do modelo. O modelo de usuário especifica que:
+Essa configuração gera a saída de exemplo a seguir. A configuração especifica o assunto, o tipo de solicitação (CMC) e o nome do modelo. O modelo Usuário especifica que:
 
--   A solicitação deve usar o provedor criptográfico 1,0 da Microsoft ou o provedor de criptografia avançada da Microsoft 1,0.
--   O nome da entidade deve ser criado a partir de Active Directory.
--   A solicitação inclui o nome do modelo de certificado, EKU (uso avançado de chave) e extensões de uso de chave. A extensão EKU especifica que o certificado emitido pode ser usado para sistema de arquivos com criptografia (EFS), email seguro e autenticação de cliente.
+-   A solicitação deve usar o Microsoft Base Cryptographic Provider 1.0 ou o Microsoft Enhanced Cryptographic Provider 1.0.
+-   O nome da assunto deve ser criado do Active Directory.
+-   A solicitação inclui as extensões Nome do Modelo de Certificado, Uso Aprimorado de Chave (EKU) e Uso de Chave. A extensão EKU especifica que o certificado emitido pode ser usado para Encrypting File System (EFS), email seguro e autenticação de cliente.
 
 ``` syntax
 0000: 30 82 08 a9               ; SEQUENCE (8a9 Bytes)
@@ -418,7 +418,7 @@ CertUtil: -asn command completed successfully.
 
 <dl> <dt>
 
-[Solicitações de amostra](sample-requests.md)
+[Solicitações de exemplo](sample-requests.md)
 </dt> </dl>
 
  

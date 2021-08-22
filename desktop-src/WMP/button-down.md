@@ -1,9 +1,9 @@
 ---
-title: BOTÃO. para baixo
-description: O atributo down especifica ou recupera um valor que indica se o botão está na posição para cima ou para baixo.
+title: BUTTON.down
+description: O atributo down especifica ou recupera um valor que indica se o BUTTON está na posição para cima ou para baixo.
 ms.assetid: 75398e8c-b13e-4836-b487-ed880da753ea
 keywords:
-- BOTÃO. abaixar o Windows Media Player
+- BUTTON.down Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29a0e2c7f97f782b51c145f3974f1490d0286fbe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c169def4940af3c3123e9f211a404c2926192a4d6676f3233a23bceb664e5521
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118840628"
 ---
-# <a name="buttondown"></a>BOTÃO. para baixo
+# <a name="buttondown"></a>BUTTON.down
 
-O atributo **down** especifica ou recupera um valor que indica se o **botão** está na posição para cima ou para baixo.
+O **atributo down** especifica ou recupera um valor que indica se o **BUTTON** está na posição para cima ou para baixo.
 
 ``` syntax
         elementID.down
@@ -29,14 +29,14 @@ O atributo **down** especifica ou recupera um valor que indica se o **botão** e
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                                   |
 |-------|---------------------------------------------------------------|
-| true  | Indica que o **botão** está na posição para baixo.        |
-| false | Padrão. Indica que o **botão** está na posição para cima. |
+| true  | Indica que o **BUTTON** está na posição para baixo.        |
+| false | Padrão. Indica que o **BUTTON** está na posição para cima. |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Para que um **botão** permaneça na posição inativa, **adesivo** deve ser definido como true. Por padrão, **adesivo** é false e qualquer tentativa **de definir como** true será ignorada.
+Para que **um BUTTON** permaneça na posição para baixo, **sticky** deve ser definido como true. Por padrão, **sticky** é false e qualquer tentativa de **definir como** true será ignorada.
 
 Se um valor inválido for especificado, o estado anterior será mantido.
 
@@ -54,7 +54,7 @@ Se um valor inválido for especificado, o estado anterior será mantido.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -65,10 +65,10 @@ Se um valor inválido for especificado, o estado anterior será mantido.
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BUTTON. downImage**](button-downimage.md)
+[**BUTTON.downImage**](button-downimage.md)
 </dt> <dt>
 
-[**BUTTON. downToolTip**](button-downtooltip.md)
+[**BUTTON.downToolTip**](button-downtooltip.md)
 </dt> </dl>
 
  

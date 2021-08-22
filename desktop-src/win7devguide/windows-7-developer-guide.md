@@ -1,5 +1,5 @@
 ---
-title: Windows guia do desenvolvedor do Windows 7
+title: Guia do desenvolvedor Windows 7
 description: Criar aplicativos fáceis de usar, visualmente atraentes e oferecer alto desempenho é um desafio que os desenvolvedores enfrentam todos os dias.
 ms.assetid: 0266d4bd-9793-4cc0-8253-c9376dac40b8
 ms.topic: article
@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118708788"
 ---
-# <a name="windows-7-developer-guide"></a>Windows guia do desenvolvedor do Windows 7
+# <a name="windows-7-developer-guide"></a>Guia do desenvolvedor Windows 7
 
 Criar aplicativos fáceis de usar, visualmente atraentes e oferecer alto desempenho é um desafio que os desenvolvedores enfrentam todos os dias. Aplicativos inovadores podem melhorar muito a experiência do usuário, capacitando as empresas a diferenciar seus serviços e soluções. No entanto, os desenvolvedores são cada vez mais solicitados a fazer mais em menos tempo, otimizando também os requisitos de energia e desempenho de seus aplicativos.
 
-A plataforma Windows 7 facilita para os desenvolvedores criarem aplicativos interessantes e amigáveis, fornecendo ferramentas familiares e recursos de desenvolvimento avançados que permitem que eles aproveitem os recursos mais recentes do pc.
+A plataforma Windows 7 facilita para os desenvolvedores criar aplicativos interessantes e amigáveis, fornecendo ferramentas familiares e recursos de desenvolvimento avançados que permitem que eles aproveitem os recursos mais recentes do computador.
 
-Para uma versão baixável do Guia do Desenvolvedor Windows 7, visite Galeria [de Códigos](/samples/browse/?redirectedfrom=MSDN-samples) no MSDN.
+Para uma versão baixável do Guia do Desenvolvedor do Windows 7, visite Galeria [de Códigos](/samples/browse/?redirectedfrom=MSDN-samples) no MSDN.
 
-No Guia do desenvolvedor Windows 7:
+No guia do desenvolvedor Windows 7:
 
 -   [Solid Foundation](solid-foundation.md)
 -   [Experiências de aplicativo mais ricas](richer-application-experiences.md)

@@ -318,7 +318,7 @@
                   href: isoftkbd-showsoftkeyboard.md
                 - name: Método UnadviseSoftKeyboardEventSink
                   href: isoftkbd-unadvisesoftkeyboardeventsink.md
-            - name: ITextStoreACP
+            - name: Itextstoreacp
               href: /windows/desktop/api/Textstor/nn-textstor-itextstoreacp
               items:
                 - name: AdviseSink
@@ -327,17 +327,17 @@
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-findnextattrtransition
                 - name: GetACPFromPoint
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getacpfrompoint
-                - name: GetActiveView
+                - name: Getactiveview
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getactiveview
-                - name: Getembedded
+                - name: GetEmbedded
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getembedded
                 - name: GetEndACP
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getendacp
-                - name: Getformattedtext
+                - name: GetFormattedText
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getformattedtext
                 - name: GetScreenExt
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getscreenext
-                - name: Getseleções
+                - name: Getselection
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getselection
                 - name: GetStatus
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-getstatus
@@ -361,15 +361,15 @@
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestattrsatposition
                 - name: RequestAttrsTransitioningAtPosition
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestattrstransitioningatposition
-                - name: RequestLock
+                - name: Requestlock
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestlock
                 - name: RequestSupportedAttrs
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-requestsupportedattrs
                 - name: RetrieveRequestedAttrs
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-retrieverequestedattrs
-                - name: Setseleções
+                - name: SetSelection
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-setselection
-                - name: SetText
+                - name: Settext
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-settext
                 - name: UnadviseSink
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp-unadvisesink
@@ -384,15 +384,15 @@
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getacpfrompoint
                 - name: Método GetActiveView
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getactiveview
-                - name: Método getembedded
+                - name: Método GetEmbedded
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getembedded
                 - name: Método GetEndACP
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getendacp
-                - name: Método getformattedtext
+                - name: Método GetFormattedText
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getformattedtext
                 - name: Método GetScreenExt
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getscreenext
-                - name: Método getseleções
+                - name: Método GetSelection
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getselection
                 - name: Método GetStatus
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-getstatus
@@ -420,7 +420,7 @@
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-requestsupportedattrs
                 - name: Método RetrieveRequestedAttrs
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-retrieverequestedattrs
-                - name: Método setselecting
+                - name: Método SetSelection
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-setselection
                 - name: Método SetText
                   href: /windows/desktop/api/Textstor/nf-textstor-itextstoreacp2-settext
@@ -1104,11 +1104,11 @@
               items:
                 - name: Método FinalizeExactCompositionString
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-itfintegratablecandidatelistuielement-finalizeexactcompositionstring
-                - name: Método getselectionstyle
+                - name: Método GetSelectionStyle
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-itfintegratablecandidatelistuielement-getselectionstyle
                 - name: Método OnKeyDown
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-itfintegratablecandidatelistuielement-onkeydown
-                - name: Método setintegrationstyle
+                - name: Método SetIntegrationStyle
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-itfintegratablecandidatelistuielement-setintegrationstyle
                 - name: Método ShowCandidateNumbers
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-itfintegratablecandidatelistuielement-showcandidatenumbers
@@ -1127,7 +1127,7 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfkeyeventsink-ontestkeydown
                 - name: OnTestKeyUp
                   href: /windows/desktop/api/Msctf/nf-msctf-itfkeyeventsink-ontestkeyup
-            - name: ITfKeystrokeMgr
+            - name: ITfKeystrakeMgr
               href: /windows/desktop/api/Msctf/nn-msctf-itfkeystrokemgr
               items:
                 - name: AdviseKeyEventSink
@@ -1178,7 +1178,7 @@
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbareventsink-onthreaditemchange
                 - name: OnThreadTerminate
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbareventsink-onthreadterminate
-                - name: Ficar flutuante
+                - name: ShowFloating
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbareventsink-showfloating
             - name: ITfLangBarItem
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritem
@@ -1187,60 +1187,60 @@
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritem-getinfo
                 - name: GetStatus
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritem-getstatus
-                - name: Gettooltipstring
+                - name: GetTooltipString
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritem-gettooltipstring
                 - name: Mostrar
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritem-show
             - name: ITfLangBarItemBalloon
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritemballoon
               items:
-                - name: GetBalloonInfo
+                - name: GetBallinfo
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemballoon-getballooninfo
-                - name: GetPreferredSize
+                - name: Getpreferredsize
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemballoon-getpreferredsize
-                - name: OnClick
+                - name: Onclick
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemballoon-onclick
             - name: ITfLangBarItemBitmap
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritembitmap
               items:
                 - name: DrawBitmap
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmap-drawbitmap
-                - name: GetPreferredSize
+                - name: Getpreferredsize
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmap-getpreferredsize
-                - name: OnClick
+                - name: Onclick
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmap-onclick
             - name: ITfLangBarItemBitmapButton
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritembitmapbutton
               items:
                 - name: DrawBitmap
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmapbutton-drawbitmap
-                - name: GetPreferredSize
+                - name: Getpreferredsize
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmapbutton-getpreferredsize
                 - name: GetText
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmapbutton-gettext
                 - name: InitMenu
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmapbutton-initmenu
-                - name: OnClick
+                - name: Onclick
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmapbutton-onclick
                 - name: OnMenuSelect
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembitmapbutton-onmenuselect
             - name: ITfLangBarItemButton
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritembutton
               items:
-                - name: GetIcon
+                - name: Geticon
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembutton-geticon
                 - name: GetText
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembutton-gettext
                 - name: InitMenu
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembutton-initmenu
-                - name: OnClick
+                - name: Onclick
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembutton-onclick
                 - name: OnMenuSelect
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritembutton-onmenuselect
             - name: ITfLangBarItemMgr
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritemmgr
               items:
-                - name: Item
+                - name: Additem
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-additem
                 - name: AdviseItemSink
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-adviseitemsink
@@ -1254,11 +1254,11 @@
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-getitemfloatingrect
                 - name: GetItemNum
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-getitemnum
-                - name: GetItems
+                - name: Getitems
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-getitems
                 - name: GetItemsStatus
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-getitemsstatus
-                - name: RemoveItem
+                - name: Removeitem
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-removeitem
                 - name: UnadviseItemSink
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemmgr-unadviseitemsink
@@ -1267,7 +1267,7 @@
             - name: ITfLangBarItemSink
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbaritemsink
               items:
-                - name: OnUpdate
+                - name: Onupdate
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbaritemsink-onupdate
             - name: ITfLangBarMgr
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itflangbarmgr
@@ -1286,7 +1286,7 @@
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbarmgr-restorelastfocus
                 - name: SetModalInput
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbarmgr-setmodalinput
-                - name: Ficar flutuante
+                - name: ShowFloating
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbarmgr-showfloating
                 - name: UnadviseEventSink
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itflangbarmgr-unadviseeventsink
@@ -1295,7 +1295,7 @@
               items:
                 - name: OnLanguageChange
                   href: /windows/desktop/api/Msctf/nf-msctf-itflanguageprofilenotifysink-onlanguagechange
-                - name: Onlanguagechanged
+                - name: OnLanguageChanged
                   href: /windows/desktop/api/Msctf/nf-msctf-itflanguageprofilenotifysink-onlanguagechanged
             - name: ITfLMLattice
               href: /windows/desktop/api/Ctffunc/nn-ctffunc-itflmlattice
@@ -1312,7 +1312,7 @@
             - name: ITfMessagePump
               href: /windows/desktop/api/Msctf/nn-msctf-itfmessagepump
               items:
-                - name: Getmessagea
+                - name: GetMessageA
                   href: /windows/desktop/api/Msctf/nf-msctf-itfmessagepump-getmessagea
                 - name: GetMessageW
                   href: /windows/desktop/api/Msctf/nf-msctf-itfmessagepump-getmessagew
@@ -1354,7 +1354,7 @@
             - name: ITfPreservedKeyNotifySink
               href: /windows/desktop/api/Msctf/nn-msctf-itfpreservedkeynotifysink
               items:
-                - name: Onupdateed
+                - name: Onupdated
                   href: /windows/desktop/api/Msctf/nf-msctf-itfpreservedkeynotifysink-onupdated
             - name: ITfProperty
               href: /windows/desktop/api/Msctf/nn-msctf-itfproperty
@@ -1376,7 +1376,7 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfpropertystore-divide
                 - name: GetData
                   href: /windows/desktop/api/Msctf/nf-msctf-itfpropertystore-getdata
-                - name: Getdatatype
+                - name: GetDataType
                   href: /windows/desktop/api/Msctf/nf-msctf-itfpropertystore-getdatatype
                 - name: GetPropertyRangeCreator
                   href: /windows/desktop/api/Msctf/nf-msctf-itfpropertystore-getpropertyrangecreator
@@ -1406,13 +1406,13 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-compareend
                 - name: CompareStart
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-comparestart
-                - name: GetContext
+                - name: Getcontext
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-getcontext
-                - name: Getembedded
+                - name: GetEmbedded
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-getembedded
-                - name: Getformattedtext
+                - name: GetFormattedText
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-getformattedtext
-                - name: Getgravidade
+                - name: GetGravity
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-getgravity
                 - name: GetText
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-gettext
@@ -1424,9 +1424,9 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-isequalend
                 - name: IsEqualStart
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-isequalstart
-                - name: Setgravidade
+                - name: SetGravity
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-setgravity
-                - name: SetText
+                - name: Settext
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-settext
                 - name: ShiftEnd
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrange-shiftend
@@ -1443,9 +1443,9 @@
             - name: ITfRangeACP
               href: /windows/desktop/api/Msctf/nn-msctf-itfrangeacp
               items:
-                - name: Getextensão
+                - name: Getextent
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrangeacp-getextent
-                - name: SetExtent
+                - name: Setextent
                   href: /windows/desktop/api/Msctf/nf-msctf-itfrangeacp-setextent
             - name: ITfRangeBackup
               href: /windows/desktop/api/Msctf/nn-msctf-itfrangebackup
@@ -1457,7 +1457,7 @@
               items:
                 - name: GetUpdatedFlags
                   href: /windows/desktop/api/Msctf/nf-msctf-itfreadinginformationuielement-getupdatedflags
-                - name: GetContext
+                - name: Getcontext
                   href: /windows/desktop/api/Msctf/nf-msctf-itfreadinginformationuielement-getcontext
                 - name: GetString
                   href: /windows/desktop/api/Msctf/nf-msctf-itfreadinginformationuielement-getstring
@@ -1472,7 +1472,7 @@
               items:
                 - name: EnumRanges
                   href: /windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-enumranges
-                - name: GetContext
+                - name: Getcontext
                   href: /windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-getcontext
                 - name: GetType
                   href: /windows/desktop/api/Msctf/nf-msctf-itfreadonlyproperty-gettype
@@ -1514,9 +1514,9 @@
               items:
                 - name: Inicializar
                   href: /windows/desktop/api/ctfspui/nf-ctfspui-itfspeechuiserver-initialize
-                - name: ShowUI
+                - name: Showui
                   href: /windows/desktop/api/ctfspui/nf-ctfspui-itfspeechuiserver-showui
-                - name: UpdateBalloon
+                - name: UpdateBallball
                   href: /windows/desktop/api/ctfspui/nf-ctfspui-itfspeechuiserver-updateballoon
             - name: ITfStatusSink
               href: /windows/desktop/api/Msctf/nn-msctf-itfstatussink
@@ -1526,16 +1526,16 @@
             - name: ITfSystemDeviceTypeLangBarItem
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itfsystemdevicetypelangbaritem
               items:
-                - name: Geticonmode
+                - name: GetIconMode
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itfsystemdevicetypelangbaritem-geticonmode
-                - name: Seticonmode
+                - name: SetIconMode
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itfsystemdevicetypelangbaritem-seticonmode
             - name: ITfSystemLangBarItem
               href: /windows/desktop/api/Ctfutb/nn-ctfutb-itfsystemlangbaritem
               items:
-                - name: SetIcon
+                - name: Seticon
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itfsystemlangbaritem-seticon
-                - name: Settooltipstring
+                - name: SetTooltipString
                   href: /windows/desktop/api/Ctfutb/nf-ctfutb-itfsystemlangbaritem-settooltipstring
             - name: ITfSystemLangBarItemText
               href: /windows/desktop/api/ctfutb/nn-ctfutb-itfsystemlangbaritemtext
@@ -1554,7 +1554,7 @@
             - name: ITfTextEditSink
               href: /windows/desktop/api/Msctf/nn-msctf-itftexteditsink
               items:
-                - name: Onendedit
+                - name: OnEndEdit
                   href: /windows/desktop/api/Msctf/nf-msctf-itftexteditsink-onendedit
             - name: ITfTextInputProcessor
               href: /windows/desktop/api/Msctf/nn-msctf-itftextinputprocessor
@@ -1592,7 +1592,7 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-enumfunctionproviders
                 - name: GetFocus
                   href: /windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getfocus
-                - name: Getfunctionprovider
+                - name: GetFunctionProvider
                   href: /windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getfunctionprovider
                 - name: GetGlobalCompartment
                   href: /windows/desktop/api/Msctf/nf-msctf-itfthreadmgr-getglobalcompartment
@@ -1619,7 +1619,7 @@
                   href: /windows/desktop/api/msctf/nf-msctf-itfthreadmgr2-getactiveflags
                 - name: Método GetFocus
                   href: /windows/desktop/api/msctf/nf-msctf-itfthreadmgr2-getfocus
-                - name: Método getfunctionprovider
+                - name: Método GetFunctionProvider
                   href: /windows/desktop/api/msctf/nf-msctf-itfthreadmgr2-getfunctionprovider
                 - name: Método GetGlobalCompartment
                   href: /windows/desktop/api/msctf/nf-msctf-itfthreadmgr2-getglobalcompartment
@@ -1675,7 +1675,7 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielement-getguid
                 - name: Mostrar
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielement-show
-                - name: Ismostred
+                - name: IsShown
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielement-isshown
             - name: ITfUIElementMgr
               href: /windows/desktop/api/Msctf/nn-msctf-itfuielementmgr
@@ -1684,7 +1684,7 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementmgr-beginuielement
                 - name: UpdateUIElement
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementmgr-updateuielement
-                - name: Enduielement
+                - name: EndUIElement
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementmgr-enduielement
                 - name: GetUIElement
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementmgr-getuielement
@@ -1697,7 +1697,7 @@
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementsink-beginuielement
                 - name: UpdateUIElement
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementsink-updateuielement
-                - name: Enduielement
+                - name: EndUIElement
                   href: /windows/desktop/api/Msctf/nf-msctf-itfuielementsink-enduielement
             - name: IUIManagerEventSink
               href: /windows/desktop/api/Ctffunc/nn-ctffunc-iuimanagereventsink
@@ -1714,7 +1714,7 @@
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-iuimanagereventsink-onwindowupdated
                 - name: Método OnWindowUpdating
                   href: /windows/desktop/api/Ctffunc/nf-ctffunc-iuimanagereventsink-onwindowupdating
-        - name: Funções de TSF
+        - name: Funções TSF
           href: text-services-framework-functions.md
           items:
             - name: EnumEnabledLayoutOrTip
@@ -1767,7 +1767,7 @@
               href: tf-invalidassemblylistcacheifexist.md
             - name: UninitLocalMsCtfMonitor
               href: /windows/desktop/api/MsCtfMonitorApi/nf-msctfmonitorapi-uninitlocalmsctfmonitor
-        - name: Estruturas de TSF
+        - name: Estruturas TSF
           href: text-services-framework-structures.md
           items:
             - name: TF_DA_COLOR
@@ -1839,7 +1839,7 @@
               href: /windows/win32/api/ctffunc/ne-ctffunc-tfintegratablecandidatelistselectionstyle
             - name: TfLayoutCode
               href: /windows/win32/api/Msctf/ne-msctf-tflayoutcode
-            - name: TfLBBalloonStyle
+            - name: TfLBBallstyle
               href: /windows/win32/api/Ctfutb/ne-ctfutb-tflbballoonstyle
             - name: TfLBIClick
               href: /windows/win32/api/Ctfutb/ne-ctfutb-tflbiclick
@@ -1861,7 +1861,7 @@
               href: /windows/win32/api/Textstor/ne-textstor-tsruntype
             - name: TsShiftDir
               href: /windows/win32/api/Textstor/ne-textstor-tsshiftdir
-            - name: TIPO de
+            - name: TYPEMODE
               href: typemode.md
         - name: Tipos de dados TSF
           href: text-services-framework-data-types.md
@@ -1876,15 +1876,15 @@
               href: ts-attrid.md
             - name: TsViewCookie
               href: tsviewcookie.md
-        - name: Constantes do TSF
+        - name: Constantes TSF
           href: text-services-framework-constants.md
           items:
-            - name: Constantes de serviço de texto do TSF
+            - name: Constantes do serviço de texto TSF
               href: tsf-text-service-constants.md
               items:
-                - name: Tipos de malha
+                - name: Tipos de lattice
                   href: lattice-types.md
-                - name: Constantes de serviço de texto de TSF diversas
+                - name: Constantes diversas do serviço de texto TSF
                   href: miscellaneous-tsf-text-service-constants.md
                 - name: Valores de categoria predefinidos
                   href: predefined-category-values.md
@@ -1909,78 +1909,78 @@
               items:
                 - name: Itens da barra de idiomas predefinidos
                   href: predefined-lang-bar-items.md
-                - name: Constantes da barra de idiomas diversos
+                - name: Constantes de barra de idiomas diversos
                   href: miscellaneous-language-bar-constants.md
-                - name: Constantes TF_FLOATINGLANGBAR_ *
+                - name: constantes TF_FLOATINGLANGBAR_*
                   href: tf-floatinglangbar--constants.md
-                - name: Constantes TF_LBI_ *
+                - name: constantes TF_LBI_*
                   href: tf-lbi--constants.md
-                - name: Constantes TF_LBI_STATUS_ *
+                - name: constantes TF_LBI_STATUS_*
                   href: tf-lbi-status--constants.md
-                - name: Constantes TF_LBI_STYLE_ *
+                - name: constantes TF_LBI_STYLE_*
                   href: tf-lbi-style--constants.md
-                - name: Constantes TF_LBMENUF_ *
+                - name: constantes TF_LBMENUF_*
                   href: tf-lbmenuf--constants.md
-                - name: Constantes TF_SFT_ *
+                - name: constantes TF_SFT_*
                   href: tf-sft--constants.md
-            - name: Constantes do Framework
+            - name: Constantes de estrutura
               href: framework-constants.md
               items:
                 - name: Constantes de estrutura diversas
                   href: miscellaneous-framework-constants.md
-                - name: Valores de tendência do modo
+                - name: Valores de desvio de modo
                   href: mode-bias-values.md
-                - name: Propriedades predefinidas
+                - name: Propriedades predefinidos
                   href: predefined-properties.md
-                - name: Constantes TF_ *
+                - name: constantes TF_*
                   href: tf--constants.md
-                - name: Constantes TF_ES_ *
+                - name: constantes TF_ES_*
                   href: tf-es--constants.md
-                - name: Constantes TF_IAS_ *
+                - name: constantes TF_IAS_*
                   href: tf-ias--constants.md
-                - name: Constantes TF_MOD_ *
+                - name: constantes TF_MOD_*
                   href: tf-mod--constants.md
-                - name: Constantes TF_SD_ *
+                - name: constantes TF_SD_*
                   href: tf-sd--constants.md
-                - name: Constantes TF_SS_ *
+                - name: constantes TF_SS_*
                   href: tf-ss--constants.md
-                - name: Constantes TF_TF_ *
+                - name: constantes TF_TF_*
                   href: tf-tf--constants.md
             - name: Constantes de armazenamento de texto
               href: text-store-constants.md
               items:
-                - name: Constantes GXFPF_ *
+                - name: constantes GXFPF_*
                   href: gxfpf--constants.md
                 - name: Constantes de armazenamento de texto diversos
                   href: miscellaneous-text-store-constants.md
-                - name: Constantes TS_AS_ *
+                - name: constantes TS_AS_*
                   href: ts-as--constants.md
-                - name: Constantes TS_ATTR_ *
+                - name: constantes TS_ATTR_*
                   href: ts-attr--constants.md
-                - name: Constantes TS_CH_ *
+                - name: constantes TS_CH_*
                   href: ts-ch--constants.md
-                - name: Constantes TS_CHAR_ *
+                - name: constantes TS_CHAR_*
                   href: ts-char--constants.md
-                - name: Constantes TS_IAS_ *
+                - name: constantes TS_IAS_*
                   href: ts-ias--constants.md
-                - name: Constantes TS_IE_ *
+                - name: constantes TS_IE_*
                   href: ts-ie--constants.md
-                - name: Constantes TS_LF_ *
+                - name: constantes TS_LF_*
                   href: ts-lf--constants.md
-                - name: Constantes TS_SD_ *
+                - name: constantes TS_SD_*
                   href: ts-sd--constants.md
-                - name: Constantes TS_SHIFT_ *
+                - name: constantes TS_SHIFT_*
                   href: ts-shift--constants.md
-                - name: Constantes TS_SS_ *
+                - name: constantes TS_SS_*
                   href: ts-ss--constants.md
-        - name: Valores de retorno de TSF
+        - name: Valores de retorno do TSF
           href: text-services-framework-return-values.md
           items:
             - name: Valores de retorno do serviço de texto
               href: text-service-return-values.md
             - name: Valores de retorno do gerente
               href: manager-return-values.md
-            - name: Valores de retorno do repositório de texto
+            - name: Valores de retorno do armazenamento de texto
               href: text-store-return-values.md
         - name: Protótipos
           href: prototypes.md
