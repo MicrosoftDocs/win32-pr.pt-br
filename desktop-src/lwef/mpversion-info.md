@@ -3,8 +3,8 @@ title: Estrutura de MPVERSION_INFO (MpClient. h)
 description: Informações de versão dos componentes do Malware Protection Manager.
 ms.assetid: C18EE6FE-57E1-4814-85CA-19C3ACE275D2
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPVERSION_INFO
-- Ponteiro de estrutura de PMPVERSION_INFO recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPVERSION_INFO
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPVERSION_INFO
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f30153c427b880600a3d8aeb3c411a8679cd64b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50a89b03b8b310416f9b0b496c055f732f4e83859bb7eba50b7891abebc27d26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608696"
 ---
 # <a name="mpversion_info-structure"></a>Estrutura de informações do MPVERSION \_
 
@@ -154,9 +154,9 @@ Campos reservados.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

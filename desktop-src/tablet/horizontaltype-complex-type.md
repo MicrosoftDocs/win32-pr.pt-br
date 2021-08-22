@@ -1,7 +1,7 @@
 ---
-description: Define o tipo que contém informações sobre linhas horizontais usadas pelo papel de carta em uma nota do diário.
+description: Define o tipo que contém informações sobre linhas horizontais usadas pela papelaria em uma nota de Diário.
 ms.assetid: a2ef99fe-c7c4-4bce-80f5-509adb3917bb
-title: Tipo complexo de horizontaltype
+title: Tipo complexo HorizontalType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119709336"
 ---
-# <a name="horizontaltype-complex-type"></a>Tipo complexo de horizontaltype
+# <a name="horizontaltype-complex-type"></a>Tipo complexo HorizontalType
 
-Define o tipo que contém informações sobre linhas horizontais usadas pelo papel de carta em uma nota do diário.
+Define o tipo que contém informações sobre linhas horizontais usadas pela papelaria em uma nota de Diário.
 
 ``` syntax
 <xs:complexType name="HorizontalType" />
@@ -33,7 +33,7 @@ Define o tipo que contém informações sobre linhas horizontais usadas pelo pap
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 3df3d974-629e-4d78-b97d-b8121b185309
 title: Inicialização TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 973d67931fb9f33751fedc638ab77021d3d3d34c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 35f9062f8440cdec6597d21a2141a24b12f69bc9e940e189965d9e73880c54c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659896"
 ---
 # <a name="tapi-initialization"></a>Inicialização TAPI
 

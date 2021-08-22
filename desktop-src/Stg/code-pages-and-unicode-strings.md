@@ -6,12 +6,12 @@ keywords:
 - Páginas de código e cadeias de caracteres Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 508d508ec21e7e763a683e534cf485ebbeec018d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 65a1d5a830d3d4e2fccbb61563e7a8a0447d74e7c427e5e2e0434e7194a2ad3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663596"
 ---
 # <a name="code-pages-and-unicode-strings"></a>Páginas de código e cadeias de caracteres Unicode
 
@@ -27,9 +27,9 @@ Definir o **sinalizador \_ ANSI PROPSETFLAG** como relatado por meio de uma cham
 
 Você pode acessar a ID de propriedade 1 por meio de uma chamada para [**IPropertyStorage:: ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple). No entanto, ele é somente leitura e não pode ser atualizado com [**WriteMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writemultiple). Além disso, ele não pode ser excluído com [**DeleteMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-deletemultiple).
 
- 
+ 
 
- 
+ 
 
 
 

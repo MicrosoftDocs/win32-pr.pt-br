@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: e491bf693bb71fcda9a07dde4509828acd20e784
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4cd8282b960ce5b52b488628ff716c5d8a467f65f3d65add77739926bbb7f8db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104555984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727866"
 ---
 # <a name="sessiondispose-method"></a>Método Session. Dispose
 

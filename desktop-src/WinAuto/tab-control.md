@@ -4,12 +4,12 @@ description: Um controle guia define várias páginas para a mesma área de uma 
 ms.assetid: 664dd109-3c4a-4106-9b92-e10ec5a33463
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cc8381a668701446e06df81694941ece9f5f259
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 78fe3216194da590b0c0802343afc41b1f7765c13d194e533163f9af2c22b287
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105814396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505656"
 ---
 # <a name="tab-control-msaa-ui-element-reference"></a>Controle guia (referência de elemento de interface do usuário do MSAA)
 
@@ -18,7 +18,7 @@ ms.locfileid: "105814396"
 
  
 
-Um controle guia define várias páginas para a mesma área de uma janela ou caixa de diálogo. Cada página consiste em um conjunto de informações ou um grupo de controles que um aplicativo exibe quando o usuário seleciona a guia correspondente. O sistema operacional Windows usa controles guia para exibir os botões da barra de tarefas, com exceção do botão **Iniciar** .
+Um controle guia define várias páginas para a mesma área de uma janela ou caixa de diálogo. Cada página consiste em um conjunto de informações ou um grupo de controles que um aplicativo exibe quando o usuário seleciona a guia correspondente. o sistema operacional Windows usa controles guia para exibir os botões da barra de tarefas, com exceção do botão **iniciar** .
 
 O nome de classe da janela para um controle guia é WC \_ TABCONTROL, que é definido como "SysTabControl" em commctrl. h.
 

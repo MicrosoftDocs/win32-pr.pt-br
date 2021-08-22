@@ -4,12 +4,12 @@ ms.assetid: 7e435787-afdc-42cc-bdbc-9b8b81d23ebd
 title: Glossário para entender o MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9984dcc7f87e5237c48646ad29bd8af6dc14f104
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6473ef3128d5a08707622e65d35222a6603a3b888c3a957ddb7854235e29b2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530396"
 ---
 # <a name="glossary-for-understanding-mui"></a>Glossário para entender o MUI
 
@@ -20,7 +20,7 @@ ms.locfileid: "103829195"
 
 ## <a name="globalization"></a>Globalização
 
-O termo *globalização* indica a necessidade da plataforma para trabalhar em qualquer lugar do box. Na prática, essa visão é realizada no Windows com um único binário mundial para o sistema operacional Windows, começando com a versão do Windows Vista, dando suporte à implantação de imagem única em um contexto multilíngue e fornecendo APIs NLS para recuperar dados específicos de localidade.
+O termo *globalização* indica a necessidade da plataforma para trabalhar em qualquer lugar do box. na prática, essa visão é realizada em Windows com um único binário mundial para o sistema operacional Windows a partir da versão Windows Vista, dando suporte à implantação de imagem única em um contexto multilíngue e fornecendo APIs NLS para recuperar dados específicos de localidade.
 
 ## <a name="localizability"></a>Possibilidade de localização
 

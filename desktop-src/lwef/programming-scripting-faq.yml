@@ -5,12 +5,12 @@ metadata:
   ms.assetid: 84078c5b-7b04-48fa-9d0a-d95393c323eb
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: f3e9604bdc6bcd3871cbd931fb22b16400764dbd
-  ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+  ms.openlocfilehash: 2465e4a347a82ec892b5f22e32cc11809a6d9c86ba1162212ae82e04294e4fef
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "113483639"
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "119555856"
 title: Perguntas frequentes sobre programação de scripts
 summary: >
   \[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
@@ -23,7 +23,7 @@ sections:
       A maioria dos eventos, métodos e propriedades com suporte pelo controle do Microsoft Agent é exposta somente em tempo de execução. Consulte [programação do controle do Microsoft Agent](programming-the-microsoft-agent-control.md) para obter mais informações.
   - question: >
       A marca de mapa (ou alguma outra marca) não parece funcionar.
-    answer: "Algumas marcas incluem cadeias de caracteres entre aspas. para algumas linguagens de programação, como Microsoft Visual Basic e Visual Basic scripting Edition, talvez seja necessário usar duas aspas para designar o parâmetro da marca ou concatenar um caractere de aspas duplas como parte da cadeia de caracteres. o último é mostrado neste Visual Basic exemplo:\n\nAgent1. Characters (\"gênio\"). Fale \"é \\\\ map =\" + Chr (34) + \"texto falado\" \\_ + Chr (34) + \"=\" + Chr (34) + \"texto de balão\" + Chr (34) + \" \\\\ .\"\n\nPara a programação C, C++ e Java, preceda as barras invertidas e aspas duplas com uma barra invertida. Por exemplo: \n\nBSTR bszSpeak = SysAllocString (L \"é \\\\ \\\\ map = \\\\ \" texto falado \\\\ \"= \\\\ \" texto de balão \\\\ \" \\\\ \\\\ \");\n\npCharacter->falar (bszSpeak,......);\n\n> [!Note]  \n> O Microsoft Agent não oferece suporte a todas as marcas especificadas no Microsoft Speech API. Além disso, o suporte para alguns parâmetros pode depender do mecanismo de conversão de texto em fala instalado. Para obter mais informações, consulte [marcas de saída de fala do Microsoft Agent](microsoft-agent-speech-output-tags.md).\n\n \n"
+    answer: "Algumas marcas incluem cadeias de caracteres entre aspas. para algumas linguagens de programação, como Microsoft Visual Basic e Visual Basic scripting Edition, talvez seja necessário usar duas aspas para designar o parâmetro da marca ou concatenar um caractere de aspas duplas como parte da cadeia de caracteres. o último é mostrado neste Visual Basic exemplo:\n\nAgent1. Characters (\"gênio\"). Fale \"é \\\\ map =\" + Chr (34) + \"texto falado\" \\_ + Chr (34) + \"=\" + Chr (34) + \"texto de balão\" + Chr (34) + \" \\\\ .\"\n\nPara a programação C, C++ e Java, preceda as barras invertidas e aspas duplas com uma barra invertida. Por exemplo:\n\nBSTR bszSpeak = SysAllocString (L \"é \\\\ \\\\ map = \\\\ \" texto falado \\\\ \"= \\\\ \" texto de balão \\\\ \" \\\\ \\\\ \");\n\npCharacter->falar (bszSpeak,......);\n\n> [!Note]  \n> O Microsoft Agent não oferece suporte a todas as marcas especificadas no Microsoft Speech API. Além disso, o suporte para alguns parâmetros pode depender do mecanismo de conversão de texto em fala instalado. Para obter mais informações, consulte [marcas de saída de fala do Microsoft Agent](microsoft-agent-speech-output-tags.md).\n\n \n"
   - question: >
       Não parece obter eventos RequestStart e RequestComplete em meu script (ou programa).
     answer: >
@@ -109,7 +109,7 @@ sections:
   - question: >
       Quando uso o símbolo de "&" e comercial, o texto em volta do símbolo nos balões de palavras do caractere é truncado.
     answer: >
-      Este é um problema conhecido. Você pode contornar isso usando a marca de mapa. Por exemplo, para exibir "A & B" no balão de palavras do caractere, use "A \\ map =" e "=" && " \\ B" na instrução Speak.
+      Esse é um problema conhecido. Você pode contornar isso usando a marca de mapa. Por exemplo, para exibir "A & B" no balão de palavras do caractere, use "A \\ map =" e "=" && " \\ B" na instrução Speak.
   - question: >
       Meu aplicativo permite que os usuários alterem o caractere padrão e, quando fazem isso, o programa falha.
     answer: >

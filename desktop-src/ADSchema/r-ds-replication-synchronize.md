@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 429bce8708fac9e7ed7142a79ebaec99a1b6899b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ae1cebc1d3940f2d54f97b7b07ece3549125d3148c06e42eccc542cce3f80250
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532016"
 ---
 # <a name="ds-replication-synchronize-extended-right"></a>DS-Replication-sincronizar à direita estendida
 

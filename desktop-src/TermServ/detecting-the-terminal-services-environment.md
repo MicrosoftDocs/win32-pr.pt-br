@@ -5,12 +5,12 @@ ms.assetid: 9ba03801-8471-43a9-8e24-114a082d5776
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fde3263925a3b8bf4921dd0dfc95842a5dc5b4c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1f54634112b4a6ac3cc1e981421e4a3e33af5e32bae8ab63ec8690f2df12c7a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657986"
 ---
 # <a name="detecting-the-remote-desktop-services-environment"></a>Detectando o ambiente de Serviços de Área de Trabalho Remota
 
@@ -33,13 +33,13 @@ BOOL IsRemoteSession(void)
 
 Para obter mais informações, consulte [vinculação de tempo de execução para Wtsapi32.dll](run-time-linking-to-wtsapi32-dll.md).
 
-Você não deve usar o **GetSystemMetrics (SM \_ REMOTESESSION)** para determinar se seu aplicativo está sendo executado em uma sessão remota no Windows 8 e posterior ou no Windows Server 2012 e posterior se a sessão remota também pode usar os aprimoramentos de vGPU do RemoteFX para o protocolo RDP. Nesse caso, **GetSystemMetrics (SM \_ REMOTESESSION)** identificará a sessão remota como uma sessão local.
+você não deve usar **GetSystemMetrics (SM \_ REMOTESESSION)** para determinar se o aplicativo está sendo executado em uma sessão remota no Windows 8 e posterior ou Windows Server 2012 e posterior se a sessão remota também pode usar as melhorias RemoteFX vGPU no protocolo RDP. Nesse caso, **GetSystemMetrics (SM \_ REMOTESESSION)** identificará a sessão remota como uma sessão local.
 
-Seu aplicativo pode verificar a seguinte chave do registro para determinar se a sessão é uma sessão remota que usa vGPU RemoteFX. Se existir uma sessão local, essa chave do registro fornecerá a ID da sessão local.
+seu aplicativo pode verificar a seguinte chave do registro para determinar se a sessão é uma sessão remota que usa RemoteFX vGPU. Se existir uma sessão local, essa chave do registro fornecerá a ID da sessão local.
 
 **HKEY \_ local \_ \\ System sistema \\ CurrentControlSet \\ Control \\ Terminal Server \\ GlassSessionId**
 
-Se a ID da sessão atual na qual o aplicativo está sendo executado for a mesma da chave do registro, o aplicativo será executado em uma sessão local. As sessões identificadas como sessão remota dessa maneira incluem sessões remotas que usam vGPU RemoteFX. O código de exemplo a seguir demonstra isso.
+Se a ID da sessão atual na qual o aplicativo está sendo executado for a mesma da chave do registro, o aplicativo será executado em uma sessão local. as sessões identificadas como sessão remota dessa maneira incluem sessões remotas que usam RemoteFX vGPU. O código de exemplo a seguir demonstra isso.
 
 
 ```C++
@@ -106,9 +106,9 @@ IsCurrentSessionRemoteable()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

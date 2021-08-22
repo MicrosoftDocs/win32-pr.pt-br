@@ -1,7 +1,7 @@
 ---
-description: 'Método IAMTimelineGroup:: ClearRecompressFormatDirty-sem suporte.'
+description: Método IAMTimelineGroup::ClearRecompressFormatDirty – sem suporte.
 ms.assetid: 43f422ff-d46f-403a-a343-7cd247129159
-title: 'Método IAMTimelineGroup:: ClearRecompressFormatDirty (QEdit. h)'
+title: Método IAMTimelineGroup::ClearRecompressFormatDirty (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 8b0ee5499bd86094c91a3a8bacc6d25b67e027cc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ba753b23d7325d2e4c1d7792127ddbf80719840c99fde8c508026255fe5dd2c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536256"
 ---
-# <a name="iamtimelinegroupclearrecompressformatdirty-method"></a>Método IAMTimelineGroup:: ClearRecompressFormatDirty
+# <a name="iamtimelinegroupclearrecompressformatdirty-method"></a>Método IAMTimelineGroup::ClearRecompressFormatDirty
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-Não há suporte.
+Sem suporte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -65,16 +65,16 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IAMTimelineGroup**](iamtimelinegroup.md)
+[**IAMTimelineGroup Interface**](iamtimelinegroup.md)
 </dt> </dl>
 
  

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: baf773d7607aa575bd575339bde072b3dc04b224
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3977e77c685adb3a181804c0db5b281ae3e54c6f085586023855259f532dde8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119484226"
 ---
 # <a name="vs"></a>vs
 
@@ -43,7 +43,7 @@ Os argumentos de entrada contêm um único número de versão principal com um �
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -55,7 +55,7 @@ Os argumentos de entrada contêm um único número de versão principal com um �
 
 
 
- 
+ 
 
 Essa instrução deve ser a primeira instrução que não seja de comentário em um sombreador de vértice.
 
@@ -90,9 +90,9 @@ vs_2_sw
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

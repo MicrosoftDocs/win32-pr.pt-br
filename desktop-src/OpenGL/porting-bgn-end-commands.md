@@ -11,12 +11,12 @@ keywords:
 - comandos BGN/end
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c25118d4e5050ea22d4b18fab596dfb9c92f562e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c63084b1f05d984fdc19254edaadaca9098d13f974a433f5c6ff7c5d370ec223
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485966"
 ---
 # <a name="porting-bgnend-commands"></a>Portando comandos BGN/end
 
@@ -64,7 +64,7 @@ Com o OpenGL, você desenha diferentes objetos geométricos especificando parâm
 
 
 
- 
+ 
 
 Para obter uma discussão detalhada das diferenças entre malhas de triângulo, faixas e ventiladores, confira [triângulos de portabilidade](porting-triangles.md).
 
@@ -88,17 +88,17 @@ Além de especificar vértices dentro de um par **glBegin**  /  **glEnd** , voc�
 
 
 
- 
+ 
 
 > [!Note]
 >
 > Se você usar qualquer função OpenGL diferente daquelas listadas na tabela anterior dentro de um par [**glBegin**](glbegin.md)  /  [**glEnd**](glend.md) , você obterá resultados imprevisíveis ou possivelmente um erro.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

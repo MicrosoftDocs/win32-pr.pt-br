@@ -1,26 +1,26 @@
 ---
-title: Capturar sem usar Armazenamento em Disco
-description: Capturar sem usar Armazenamento em Disco
+title: Capturar sem usar o disco Armazenamento
+description: Capturar sem usar o disco Armazenamento
 ms.assetid: 2e2f1b67-69be-424c-8a6f-d9db5eeb6088
 keywords:
 - WM_CAP_SEQUENCE_NOFILE mensagem
 - macro capCaptureSequenceNoFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f76fa69fa8a827117dbc110a410cb40084614559
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1ea708bd99cc2c325623eb53d734fadb2acdd0112e3a727fae9bfa741b8d301e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105752628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691616"
 ---
-# <a name="capture-without-using-disk-storage"></a>Capturar sem usar Armazenamento em Disco
+# <a name="capture-without-using-disk-storage"></a>Capturar sem usar o disco Armazenamento
 
-Você pode usar os serviços de captura sem gravar os dados em um arquivo de disco usando a mensagem [**\_ \_ \_ nofile da sequência do WM Cap**](wm-cap-sequence-nofile.md) (ou a macro [**capCaptureSequenceNoFile**](/windows/desktop/api/Vfw/nf-vfw-capcapturesequencenofile) ). Essa mensagem é útil somente em conjunto com funções de retorno de chamada que permitem que seu aplicativo use os dados de vídeo e áudio diretamente. Por exemplo, aplicativos de videoconferência podem usar essa mensagem para obter quadros de vídeo de streaming. As funções de retorno de chamada transferirão as imagens capturadas para o computador remoto.
+Você pode usar serviços de captura sem escrever os dados em um arquivo de disco usando a mensagem [**WM \_ CAP SEQUENCE \_ \_ NOFILE**](wm-cap-sequence-nofile.md) (ou a [**macro capCaptureSequenceNoFile).**](/windows/desktop/api/Vfw/nf-vfw-capcapturesequencenofile) Essa mensagem é útil apenas em conjunto com funções de retorno de chamada que permitem que seu aplicativo use os dados de áudio e vídeo diretamente. Por exemplo, aplicativos de videoconferência podem usar essa mensagem para obter quadros de vídeo de streaming. As funções de retorno de chamada transfeririam as imagens capturadas para o computador remoto.
 
- 
+ 
 
- 
+ 
 
 
 

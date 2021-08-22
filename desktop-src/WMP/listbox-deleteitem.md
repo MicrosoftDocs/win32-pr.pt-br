@@ -3,7 +3,7 @@ title: LISTBOX. deleteItem
 description: O método deleteItem exclui o item de controle de caixa de listagem no índice especificado.
 ms.assetid: b7ed38b7-8495-426f-b799-e62cd149b397
 keywords:
-- LISTBOX. deleteItem Windows Media Player
+- Windows Media Player LISTBOX. deleteItem
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 45f4df09c608500e9a618b310b6296febaf073c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: caa0a8aa74536692f188df4117a41c69af8ead4c510f315125ac0100e690fb1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054774"
 ---
 # <a name="listboxdeleteitem"></a>LISTBOX. deleteItem
 

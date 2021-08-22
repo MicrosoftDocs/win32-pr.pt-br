@@ -1,6 +1,6 @@
 ---
 title: Usando o objeto Active Desktop
-description: Este artigo contém informações sobre o objeto ActiveDesktop que faz parte da API do shell do Windows. Esse objeto, por meio de sua interface IActiveDesktop, permite que você adicione, remova e altere itens na área de trabalho.
+description: este artigo contém informações sobre o objeto ActiveDesktop que faz parte da API do Shell do Windows. Esse objeto, por meio de sua interface IActiveDesktop, permite que você adicione, remova e altere itens na área de trabalho.
 ms.assetid: 68d72b0f-f5e9-4fff-bb13-4c60d1dd7009
 keywords:
 - Objeto ActiveDesktop
@@ -8,18 +8,18 @@ keywords:
 - Enumeração, itens da área de trabalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7e61a4a9145386fc4c84a454aa79558b8d5df79
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e6daf1b5fbc73286619f07c8af76fbbce53bcaa8962cc88cf20f5af74bbdec82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104453987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610656"
 ---
 # <a name="using-the-active-desktop-object"></a>Usando o objeto Active Desktop
 
-\[Esse recurso tem suporte apenas no Windows XP ou anterior. \]
+\[esse recurso tem suporte apenas no Windows XP ou anterior. \]
 
-Este artigo contém informações sobre o objeto **ActiveDesktop** que faz parte da API do shell do Windows. Esse objeto, por meio de sua interface [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop) , permite que você adicione, remova e altere itens na área de trabalho.
+este artigo contém informações sobre o objeto **ActiveDesktop** que faz parte da API do Shell do Windows. Esse objeto, por meio de sua interface [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop) , permite que você adicione, remova e altere itens na área de trabalho.
 
 ## <a name="overview-of-the-active-desktop-interface"></a>Visão geral da interface de área de trabalho ativa
 
@@ -27,7 +27,7 @@ Este artigo contém informações sobre o objeto **ActiveDesktop** que faz parte
 -   [Adicionando um item da área de trabalho](#adding-a-desktop-item)
 -   [Enumerando os itens da área de trabalho](#enumerating-the-desktop-items)
 
-O Active Desktop é um recurso introduzido com o Microsoft Internet Explorer 4,0 que permite incluir documentos e itens HTML (como controles ActiveX da Microsoft e miniaplicativos Java) diretamente em sua área de trabalho. A interface [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop) , que faz parte da API do shell do Windows, é usada para adicionar, remover e modificar programaticamente os itens na área de trabalho. Itens de área de trabalho ativas também podem ser adicionados usando um arquivo de formato de definição de canal (CDF).
+o Active Desktop é um recurso introduzido com o microsoft Internet Explorer 4,0 que permite incluir documentos e itens HTML (como controles do microsoft ActiveX e miniaplicativos Java) diretamente em sua área de trabalho. a interface [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop) , que faz parte da API do Shell do Windows, é usada para adicionar, remover e modificar programaticamente os itens na área de trabalho. Itens de área de trabalho ativas também podem ser adicionados usando um arquivo de formato de definição de canal (CDF).
 
 ### <a name="accessing-the-active-desktop"></a>Acessando o Active Desktop
 
@@ -128,6 +128,6 @@ pActiveDesktop->Release();
 
 
 
- 
+ 
 
- 
+ 

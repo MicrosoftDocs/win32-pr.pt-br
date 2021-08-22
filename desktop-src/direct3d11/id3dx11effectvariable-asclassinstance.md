@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17dc9124f4b9a24ead503694c10a4a2d2205ed3b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7d0f54ba1225fc7559c131d99c1fcde5ea9f1edf7fea0869af775c64fb017dc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729146"
 ---
 # <a name="id3dx11effectvariableasclassinstance-method"></a>Método ID3DX11EffectVariable:: AsClassInstance
 
@@ -41,7 +41,7 @@ ID3DX11EffectClassInstanceVariable* AsClassInstance();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **ID3DX11EffectClassInstanceVariable**](id3dx11effectclassinstancevariable.md)\***
 

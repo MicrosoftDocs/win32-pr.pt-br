@@ -4,12 +4,12 @@ description: Os recursos de acessibilidade internos são extensões para o siste
 ms.assetid: cb2a6e26-9698-4917-8799-71fb1be91072
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98db87a5c9e54ce0baa74e97e648a82dd4a18e26
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 63a129baf6b3117c3504a11ea5ff026d8dd3b7db08e91bda276f2e2038674c5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645086"
 ---
 # <a name="built-in-accessibility-features"></a>Recursos de acessibilidade internos
 
@@ -31,7 +31,7 @@ O Win32 dá suporte aos seguintes recursos internos de acessibilidade.
 
 
 
- 
+ 
 
 A função [**SystemParametersInfo**](/windows/desktop/api/winuser/nf-winuser-systemparametersinfoa) fornece a interface de programação para os recursos de acessibilidade internos. Essa função é útil em aplicativos do painel de controle ou outros programas que permitem que o usuário personalize o ambiente. A função **SystemParametersInfo** pode executar as seguintes tarefas:
 
@@ -56,8 +56,8 @@ Um aplicativo pode usar o [**SystemParametersInfo**](/windows/desktop/api/winuse
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

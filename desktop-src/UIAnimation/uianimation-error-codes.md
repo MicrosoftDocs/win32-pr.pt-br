@@ -1,6 +1,6 @@
 ---
-title: Códigos de erro de animação do Windows (Winerror. h)
-description: Se ocorrer um erro, a animação do Windows retornará um código como um valor HRESULT. Esta seção fornece uma lista de códigos de erro específicos da animação do Windows. Para obter uma lista de códigos de erro COM gerais, consulte códigos de erro COM.
+title: Windows Códigos de erro de animação (Winerror. h)
+description: se ocorrer um erro, Windows animação retornará um código como um valor HRESULT. esta seção fornece uma lista de códigos de erro específicos para Windows animação. Para obter uma lista de códigos de erro COM gerais, consulte códigos de erro COM.
 ms.assetid: 38f15d61-d415-4c7d-b454-5144fc7c9b1e
 topic_type:
 - apiref
@@ -33,16 +33,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb7c63066690b15ec8fad8ef5b9f74ed5cf2fbc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 44d725874de9c511558cef6ebbe8652905a7f5dac6372230385eaa3253ba3454
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105788856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513656"
 ---
-# <a name="windows-animation-error-codes"></a>Códigos de erro de animação do Windows
+# <a name="windows-animation-error-codes"></a>Windows Códigos de erro de animação
 
-Se ocorrer um erro, a animação do Windows retornará um código como um valor **HRESULT** . Esta seção fornece uma lista de códigos de erro específicos da animação do Windows. Para obter uma lista de códigos de erro COM gerais, consulte [códigos de erro com](/windows/desktop/com/com-error-codes).
+se ocorrer um erro, Windows animação retornará um código como um valor **HRESULT** . esta seção fornece uma lista de códigos de erro específicos para Windows animação. Para obter uma lista de códigos de erro COM gerais, consulte [códigos de erro com](/windows/desktop/com/com-error-codes).
 
 <dl> <dt>
 
@@ -343,9 +343,9 @@ Este cliente já está conectado a um temporizador.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista e atualização de plataforma para aplicativos de área de trabalho do Windows Vista \[ somente\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista e atualização de plataforma para \[ aplicativos da área de trabalho do Windows Vista somente\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| parâmetro<br/>                   | <dl> <dt>Winerror. h</dt> </dl>           |
+| Cabeçalho<br/>                   | <dl> <dt>Winerror. h</dt> </dl>           |
 
 
 
@@ -353,7 +353,7 @@ Este cliente já está conectado a um temporizador.
 
 <dl> <dt>
 
-[Referência de animação do Windows](windows-animation-reference.md)
+[Windows Referência de animação](windows-animation-reference.md)
 </dt> </dl>
 
  

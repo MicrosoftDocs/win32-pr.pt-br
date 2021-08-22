@@ -1,19 +1,19 @@
 ---
-description: A versão 2 do provedor WMI do Hyper-V é novidade para o Windows 8 e o Windows Server 2012.
+description: a versão 2 do provedor WMI do Hyper-V é nova para Windows 8 e Windows Server 2012.
 ms.assetid: A91ACF7A-AFE6-45B6-960C-C4AAA0083735
 title: O que há de novo no provedor WMI do Hyper-V
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce222fd18955e88b9e33e1b706cf81ef5a806917
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbaab65c08031c291eb11e8f865b77e256e5600deba060e0f8176ec8d13c3714
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754926"
 ---
 # <a name="whats-new-in-hyper-v-wmi-provider"></a>O que há de novo no provedor WMI do Hyper-V
 
-A versão 2 do provedor WMI do Hyper-V é novidade para o Windows 8 e o Windows Server 2012.
+a versão 2 do provedor WMI do Hyper-V é nova para Windows 8 e Windows Server 2012.
 
 ## <a name="windows-10-version-1709"></a>Windows 10, versão 1709
 
@@ -190,7 +190,7 @@ Novos métodos:
 
 ## <a name="windows-81-and-windows-server-2012-r2"></a>Windows 8.1 e Windows Server 2012 R2
 
-O Windows 8.1 e o Windows Server 2012 R2 incluem uma nova funcionalidade para a versão 2 do provedor WMI do Hyper-V.
+Windows 8.1 e Windows Server 2012 R2 incluem uma nova funcionalidade para a versão 2 do provedor WMI do Hyper-V.
 
 -   As propriedades **IOPSAllocationUnits**, **IOPSLimit**, **IOPSReservation** e **PersistentReservationsSupported** foram adicionadas na classe Msvm [**\_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md) .
 -   A propriedade **VirtualDiskId** foi adicionada à classe [**\_ VirtualHardDiskSettingData Msvm**](msvm-virtualharddisksettingdata.md) .
@@ -218,7 +218,7 @@ O Windows 8.1 e o Windows Server 2012 R2 incluem uma nova funcionalidade para a 
 -   A propriedade **PnpDevicePath** foi adicionada à classe [**\_ MountedStorageImage Msvm**](msvm-mountedstorageimage.md) .
 -   As propriedades **AllowedHashAlgorithms** e **TrustedIssuerCertificateHashes** foram adicionadas à classe [**Msvm \_ TerminalServiceSettingData**](msvm-terminalservicesettingdata.md) .
 
-O Windows 8.1 e o Windows Server 2012 R2 incluem novas funcionalidades para replicação de máquina virtual e recuperação de failover.
+Windows 8.1 e Windows Server 2012 R2 incluem novas funcionalidades para replicação de máquina virtual e recuperação de failover.
 
 -   [**Msvm \_ Classe replicationprovider**](msvm-replicationprovider.md)
 -   [**Msvm \_ Classe ReplicationRelationship**](msvm-replicationrelationship.md)
@@ -238,24 +238,24 @@ O Windows 8.1 e o Windows Server 2012 R2 incluem novas funcionalidades para repl
 
      
 
--   [**Msvm \_ ReplicationSettingData**](msvm-replicationsettingdata.md) pode diferenciar entre instâncias de configuração para relação de replicação com base na propriedade **InstanceId** ou **ReplicationRelationship** . Portanto, esses métodos que lidam com uma única relação não alteraram sua assinatura:
+-   [**Msvm \_ ReplicationSettingData**](msvm-replicationsettingdata.md) pode diferenciar entre instâncias de configuração para relação de replicação com base na propriedade **InstanceId** ou **ReplicationRelationship** . Portanto, esses métodos que lidam com uma relação única não alteraram sua assinatura:
 
-    -   [**Msvm \_ ReplicationService:: CreateReplicationRelationship**](createreplicationrelationship-msvm-replicationservice.md)
-    -   [**Msvm \_ ReplicationService:: ModifyReplicationSettings**](modifyreplicationsettings-msvm-replicationservice.md)
-    -   [**Msvm \_ ReplicationService:: ressincronização**](resynchronize-msvm-replicationservice.md)
-    -   [**Msvm \_ ReplicationService:: StartReplication**](startreplication-msvm-replicationservice.md)
+    -   [**Msvm \_ ReplicationService::CreateReplicationRelationship**](createreplicationrelationship-msvm-replicationservice.md)
+    -   [**Msvm \_ ReplicationService::ModifyReplicationSettings**](modifyreplicationsettings-msvm-replicationservice.md)
+    -   [**Msvm \_ ReplicationService::Resync**](resynchronize-msvm-replicationservice.md)
+    -   [**Msvm \_ ReplicationService::StartReplication**](startreplication-msvm-replicationservice.md)
 
--   Embora você possa usar [**GetReplicationStatistics**](getreplicationstatistics-msvm-replicationservice.md), [**RemoveReplicationRelationship**](removereplicationrelationship-msvm-replicationservice.md)e [**RequestReplicationStateChange**](msvm-computersystem-requestreplicationstatechange.md) sempre para a relação primária, recomendamos que você use [**GetReplicationStatisticsEx**](getreplicationstatisticsex-msvm-replicationservice.md), [**RemoveReplicationRelationshipEx**](removereplicationrelationshipex-msvm-replicationservice.md)e [**RequestReplicationStateChangeEx**](msvm-requestreplicationstatechangeex-computersystem.md) porque eles podem processar a relação de replicação primária e estendida. Para obter mais informações sobre a replicação estendida, consulte [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md).
--   Embora essas propriedades da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) continuem indicando o status da relação de replicação primária, use essas propriedades de um objeto [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md) para determinar o status atual da relação de replicação primária e estendida.
+-   Embora você possa usar [**GetReplicationStatistics,**](getreplicationstatistics-msvm-replicationservice.md) [**RemoveReplicationRelationship**](removereplicationrelationship-msvm-replicationservice.md)e [**RequestReplicationStateChange**](msvm-computersystem-requestreplicationstatechange.md) sempre para a relação primária, recomendamos que você use [**GetReplicationStatisticsEx,**](getreplicationstatisticsex-msvm-replicationservice.md) [**RemoveReplicationRelationshipEx**](removereplicationrelationshipex-msvm-replicationservice.md)e [**RequestReplicationStateChangeEx**](msvm-requestreplicationstatechangeex-computersystem.md) porque eles podem processar a relação de replicação primária e estendida. Para obter mais informações sobre a replicação estendida, consulte [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md).
+-   Embora essas propriedades da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) continuem indicando o status da relação de replicação primária, em vez disso, use essas propriedades de um objeto [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md) para determinar o status atual da relação de replicação primária e estendida.
 
     | Nome da propriedade                                | Type        |
     |----------------------------------------------|-------------|
-    | **ReplicationState**                         | UInt16 (RO) |
-    | **ReplicationHealth**                        | UInt16 (RO) |
+    | **ReplicationState**                         | Uint16 (RO) |
+    | **Replicationhealth**                        | Uint16 (RO) |
     | **LastReplicationTime**                      | Datetime    |
-    | **FailedOverReplicationType**                | UInt16      |
+    | **FailedOverReplicationType**                | Uint16      |
     | **LastApplicationConsistentReplicationTime** | Datetime    |
-    | **LastReplicationType**                      | UInt16      |
+    | **LastReplicationType**                      | Uint16      |
 
     
 

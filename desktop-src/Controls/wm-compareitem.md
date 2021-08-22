@@ -3,7 +3,7 @@ title: Mensagem de WM_COMPAREITEM (WinUser. h)
 description: Enviado para determinar a posição relativa de um novo item na lista classificada de uma caixa de combinação ou caixa de listagem desenhada pelo proprietário.
 ms.assetid: 22882730-9fd6-4b45-a563-d7b00ed26564
 keywords:
-- Controles de WM_COMPAREITEM de mensagens do Windows
+- controles de Windows de mensagem de WM_COMPAREITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f269b90f00e69cce2fb84e6b4efa76e554ad96f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 819df3c4dd36c784ef5747d4aa4cdf688b3a48dbd052254192a7c98574bbfa94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655766"
 ---
 # <a name="wm_compareitem-message"></a>Mensagem do WM \_ COMPAREITEM
 
@@ -53,7 +53,7 @@ Ponteiro para uma estrutura [**COMPAREITEMSTRUCT**](/windows/win32/api/winuser/n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno indica a posição relativa dos dois itens. Pode ser qualquer um dos valores mostrados na tabela a seguir.
 
@@ -82,9 +82,9 @@ Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá conver
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

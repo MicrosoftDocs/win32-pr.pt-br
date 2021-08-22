@@ -1,17 +1,17 @@
 ---
 description: Especifica uma versão localizada do nome do dispositivo.
 ms.assetid: 67ebbca0-bdb2-4a6e-98d8-3d8d1029884f
-title: elemento modelNameLS
+title: Elemento modelNameLS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e47d2f83d1b636efc30e98dff8c46600bcee555d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: f627ad930bc89590c0ce87b577a934b3313e3950971e0a110342f8c55ca2c09c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757026"
 ---
-# <a name="modelnamels-element"></a>elemento modelNameLS
+# <a name="modelnamels-element"></a>Elemento modelNameLS
 
 Especifica uma versão localizada do nome do dispositivo.
 
@@ -29,8 +29,8 @@ Especifica uma versão localizada do nome do dispositivo.
 
 | Atributo               | Type                                   | Obrigatório       | Descrição                                                      |
 |-------------------------|----------------------------------------|----------------|------------------------------------------------------------------|
-| **Dados**<br/>     | Cadeia de caracteres de nome de modelo localizado<br/> | Sim<br/> | O nome do modelo localizado.<br/> <br/>                 |
-| **Linguagem**<br/> | Cadeia de caracteres do identificador de idioma<br/>  | Sim<br/> | O idioma do nome do modelo localizado.<br/> <br/> |
+| **Dados**<br/>     | cadeia de caracteres de nome do modelo localizado<br/> | Sim<br/> | O nome do modelo localizado.<br/> <br/>                 |
+| **Idioma**<br/> | cadeia de caracteres do identificador de idioma<br/>  | Sim<br/> | O idioma do nome do modelo localizado.<br/> <br/> |
 
 
 
@@ -44,7 +44,7 @@ Não há elementos filho.
 
 | Elemento                                                   | Descrição                                                                                          |
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Define os metadados de modelo e fabricante para o dispositivo a ser implementado.<br/> <br/> |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/> | Define o fabricante e os metadados do modelo para o dispositivo a ser implementado.<br/> <br/> |
 
 
 
@@ -52,7 +52,7 @@ Não há elementos filho.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

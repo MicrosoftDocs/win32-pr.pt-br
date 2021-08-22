@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 74113fca944e79e9ecba8f822f73769775631821
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 99ed42acb94f260e229abfe9df428aaa61d3658cb887892b84bb73fd6e7e63e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105811969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635716"
 ---
 # <a name="ideliveryoptimizationfile2setproperty-method"></a>Método IDeliveryOptimizationFile2:: SetProperty
 
@@ -54,13 +54,13 @@ O valor da propriedade a ser definido, do tipo VARIANT.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna os valores de HRESULT a seguir.
 
-| Código de retorno                  | Description                                                        |
+| Código de retorno                  | Descrição                                                        |
 |------------------------------|--------------------------------------------------------------------|
-| **S_OK**                     | Sucesso                                                            |
+| **S_OK**                     | Êxito                                                            |
 | **DO_E_UNKNOWN_PROPERTY_ID** | ID de propriedade desconhecida                                                |
 | **DO_E_INVALID_STATE**       | O trabalho não está atualmente em um estado que permita uma configuração de propriedade |
 
@@ -68,9 +68,9 @@ Esse método retorna os valores de HRESULT a seguir.
 
 | Requisito | Valor |
 |---------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte  | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]                                   |
-| Servidor mínimo com suporte  | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]                               |
-| parâmetro                    | Deliveryoptimization. h                                                           |
+| Cliente mínimo com suporte  | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]                                   |
+| Servidor mínimo com suporte  | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]                               |
+| Cabeçalho                    | Deliveryoptimization. h                                                           |
 | INSERI                       | DeliveryOptimization. idl                                                         |
 | Biblioteca                   | Dosvc. lib                                                                        |
 | DLL                       | Dosvc.dll                                                                        |

@@ -11,12 +11,12 @@ keywords:
 - Assistente de ordenação de impressão online, design do lado do cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f92f794ee5f576077e0523f9a21101205ec789d4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c40aafc7a08820125df222c1c6d911b0d2b4d0a1fb625b7c62fc6d4be8bebd7c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665076"
 ---
 # <a name="client-side-design"></a>Design de Client-Side
 
@@ -64,6 +64,6 @@ Cada página HTML também deve fornecer um manipulador para eventos **OnDelete**
 [Design do lado do servidor](pubwiz-server.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: Obtém a ID da interface de uma referência ágil a um objeto.
+description: Obtém a ID da interface de uma referência agile a um objeto .
 ms.assetid: 627A7EE4-CFEF-47F6-BA99-51BEB78C5D55
-title: 'Método IAgileReference:: resolve'
+title: Método IAgileReference::Resolve
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - objidl.h
-ms.openlocfilehash: 1c3ac95802a44f4305abb24566744ad98c67b174
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b58013ba81bb394715a0042f3f3d7435a381fa01f5b985bd9ad81d12122441e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758767"
 ---
-# <a name="iagilereferenceresolve-method"></a>Método IAgileReference:: resolve
+# <a name="iagilereferenceresolve-method"></a>Método IAgileReference::Resolve
 
-Obtém a ID da interface de uma referência ágil a um objeto.
+Obtém a ID da interface de uma referência agile a um objeto .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ HRESULT Resolve(
 
 <dl> <dt>
 
-*riid* \[ no\]
+*riid* \[ Em\]
 </dt> <dd>
 
-A ID da interface a ser recuperada da referência ágil. Não é necessário ser o mesmo que a interface registrada.
+A ID da interface a ser recuperada da referência agile. Não é necessário ser o mesmo que a interface registrada.
 
 </dd> <dt>
 
 *ppvObjectReference* \[ out, retval\]
 </dt> <dd>
 
-Após a conclusão bem-sucedida, \* *ppvObjectReference* é um ponteiro para a interface especificada por *riid*.
+Após a conclusão \* *bem-sucedida, ppvObjectReference é* um ponteiro para a interface especificada por *riid.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -63,7 +63,7 @@ Esse método pode retornar um desses valores.
 | Valor retornado                                                                              | Descrição                                                                    |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> </dl>          | O método foi concluído com êxito.<br/>                                  |
-| <dl> <dt>E \_ NOinterface</dt> </dl> | A interface solicitada não está implementada no objeto registrado.<br/> |
+| <dl> <dt>E \_ NOINTERFACE</dt> </dl> | A interface solicitada não é implementada no objeto registrado.<br/> |
 
 
 
@@ -71,7 +71,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Chame a função [**RoGetAgileReference**](/windows/desktop/api/ComBaseApi/nf-combaseapi-rogetagilereference) para criar uma referência ágil a um objeto. Chame o método **resolve** para localizar o objeto no apartamento no qual **resolve** é chamado.
+Chame a [**função RoGetAgileReference**](/windows/desktop/api/ComBaseApi/nf-combaseapi-rogetagilereference) para criar uma referência agile a um objeto . Chame o **método Resolve** para localizador o objeto no apartment no qual **Resolve** é chamado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Chame a função [**RoGetAgileReference**](/windows/desktop/api/ComBaseApi/nf-co
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos Windows 8.1 aplicativos de \[ área de trabalho \| UWP\]<br/>            |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2012 R2 \|\]<br/> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Aplicativos UWP de aplicativos da área \[ de trabalho \| R2\]<br/> |
 
 
 

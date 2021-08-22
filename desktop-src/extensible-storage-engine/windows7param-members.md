@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104286
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a0af5c50dd702bc97a6e228cf12429cae471fab3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d94a394eb5befffe46199dcc04a24b83c3a484fa8552a4ac5db40d1ba0d1d13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104560434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667426"
 ---
 # <a name="windows7param-members"></a>Membros do Windows7Param
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Parâmetros do sistema que foram adicionados à versão do Windows 7 do ESENT.
+parâmetros do sistema que foram adicionados à versão Windows 7 de ESENT.
 
 O tipo [Windows7Param](./windows7param-class.md) expõe os membros a seguir.
 

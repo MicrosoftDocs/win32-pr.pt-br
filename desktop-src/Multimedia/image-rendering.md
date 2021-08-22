@@ -10,12 +10,12 @@ keywords:
 - Função DrawDibUpdate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e0d3f4d770a3acc290273b14ec14ff4b6efa30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3e7be73fbe37a28ab44116d2fb2e68acb6a9a3a385603af23dca0e14aa2de4d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690746"
 ---
 # <a name="image-rendering"></a>Renderização de imagem
 
@@ -32,9 +32,9 @@ Você pode atualizar uma imagem ou uma parte de uma imagem exibida pelo seu apli
 [Sobre as funções DrawDib](about-the-drawdib-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

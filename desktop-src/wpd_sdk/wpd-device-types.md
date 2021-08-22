@@ -1,5 +1,5 @@
 ---
-description: O \_ tipo de enumeração de tipos de dispositivos WPD \_ descreve os diferentes tipos de dispositivo portátil do Windows (wpd) comumente usados para determinar a classificação básica e a aparência visual de um dispositivo portátil.
+description: o \_ tipo de enumeração de tipos de dispositivos wpd \_ descreve os diferentes tipos de Windows dispositivos portáteis (WPD) comumente usados para determinar a classificação básica e a aparência visual de um dispositivo portátil.
 ms.assetid: 51714e0f-e9b7-4474-a8bb-da3875ef5399
 title: Enumeração de WPD_DEVICE_TYPES (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3e71acf200a95bba05b7298a5824bfa353e4a90b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 747c4631bc2c24a6550904e36e58a6fc02547bc010da7fa1d08b896c6c17489c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657456"
 ---
 # <a name="wpd_device_types-enumeration"></a>Enumeração de tipos de \_ dispositivos WPD \_
 
-O tipo de enumeração de **\_ \_ tipos de dispositivos WPD** descreve os diferentes tipos de dispositivo portátil do Windows (wpd) comumente usados para determinar a classificação básica e a aparência visual de um dispositivo portátil.
+o tipo de enumeração de **\_ \_ tipos de dispositivos wpd** descreve os diferentes tipos de Windows dispositivos portáteis (WPD) comumente usados para determinar a classificação básica e a aparência visual de um dispositivo portátil.
 
 ## <a name="syntax"></a>Syntax
 

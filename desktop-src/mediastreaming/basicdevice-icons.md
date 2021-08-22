@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdd0235a2b07ea86cbace87defb92f44d6b42315
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9807c41680c042ee74b2ddc659ad1558dd13ff8b4000d08cfa0591768c301bb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554656"
 ---
 # <a name="basicdeviceicons-property"></a>Propriedade BasicDevice. ícones
 
@@ -33,7 +33,7 @@ Esta propriedade é somente para leitura.
 
 ```C++
 HRESULT get_Icons(
-  [out] IVector< IDeviceIcon > **value
+  [out] IVector< IDeviceIcon > **value
 );
 ```
 
@@ -50,6 +50,6 @@ Uma coleção enumerável de ponteiros de interface [**IDeviceIcon**](/previous-
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

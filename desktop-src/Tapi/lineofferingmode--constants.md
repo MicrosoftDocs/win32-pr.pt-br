@@ -1,38 +1,38 @@
 ---
-description: As \_ constantes de sinalizador de bit LINEOFFERINGMODE (TAPI versões 1,4 e posteriores) descrevem subestados diferentes de uma chamada de oferta.
+description: As constantes de sinalizador de bits LINEOFFERINGMODE \_ (versões TAPI 1.4 e posteriores) descrevem diferentes substates de uma chamada de oferta.
 ms.assetid: a6c6d30f-fdc4-4ba5-b1a2-3c709445aedc
-title: Constantes de LINEOFFERINGMODE_ (TAPI. h)
+title: LINEOFFERINGMODE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b9e04720b4ea79f5b169e4a279a3af2e0cdda39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 68c2c36d18d006cdc1e2d9fc79095d58b6f56f1e58f4939c4e08ec6936af6855
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518906"
 ---
-# <a name="lineofferingmode_-constants"></a>\_Constantes LINEOFFERINGMODE
+# <a name="lineofferingmode_-constants"></a>Constantes LINEOFFERINGMODE \_
 
-As constantes de sinalizador de bit **LINEOFFERINGMODE \_** (TAPI versões 1,4 e posteriores) descrevem subestados diferentes de uma chamada de oferta. Um modo está disponível como o status de chamada para o aplicativo após o estado de chamada trdansitions para oferta e dentro da mensagem [**\_ callstate de linha**](line-callstate.md) que indica que a chamada está na \_ oferta LINECALLSTATE. Esses valores são usados quando a chamada está em um endereço compartilhado (com ponte) com outras estações (consulte [**\_ constantes LINEADDRESSSHARING**](lineaddresssharing--constants.md)), principalmente os sistemas de chaves eletrônicas.
+As constantes de sinalizador de bits **LINEOFFERINGMODE \_** (versões TAPI 1.4 e posteriores) descrevem diferentes substates de uma chamada de oferta. Um modo está disponível como status de chamada para o aplicativo após o estado de chamada trdansitions para oferta e dentro da mensagem [**LINE \_ CALLSTATE**](line-callstate.md) indicando que a chamada está em LINECALLSTATE \_ OFFERING. Esses valores são usados quando a chamada está em um endereço compartilhado (ponte) com outras estações (consulte [**\_ Constantes LINEADDRESSSHARING**](lineaddresssharing--constants.md)), principalmente sistemas de chave eletrônica.
 
 <dl> <dt>
 
-<span id="LINEOFFERINGMODE_ACTIVE"></span><span id="lineofferingmode_active"></span>**LINEOFFERINGMODE \_ ativo**
+<span id="LINEOFFERINGMODE_ACTIVE"></span><span id="lineofferingmode_active"></span>**LINEOFFERINGMODE \_ ATIVO**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que a chamada é um alerta na estação atual (será acompanhado por \_ mensagens de toque LINEDEVSTATE) e, se algum aplicativo for configurado para responder automaticamente, ele poderá fazer isso. Se o modo de estado de chamada for ZERO, o aplicativo deverá assumir que o valor está ativo (que seria a situação em um endereço não-ponte). (TAPI versões 1,4 e posteriores)
+Indica que a chamada está alertando na estação atual (será acompanhada por mensagens LINEDEVSTATE TAMBÉM) e se qualquer aplicativo estiver definido para responder automaticamente, isso poderá \_ ser feito. Se o modo de estado de chamada for ZERO, o aplicativo deverá assumir que o valor está ativo (que seria a situação em um endereço não ponte). (TAPI versões 1.4 e posteriores)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEOFFERINGMODE_INACTIVE"></span><span id="lineofferingmode_inactive"></span>**LINEOFFERINGMODE \_ INativo**
+<span id="LINEOFFERINGMODE_INACTIVE"></span><span id="lineofferingmode_inactive"></span>**LINEOFFERINGMODE \_ INACTIVE**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que a chamada está sendo oferecida em mais de uma estação, mas a estação atual não é um alerta (por exemplo, pode ser uma estação de atendente em que o status da oferta é consultoria, como piscando uma luz); o software na estação definido para resposta automática deve, preferencialmente, não responder à chamada, pois deve ser o prerrogativa na estação primária (alerta), mas [**lineAnswer**](/windows/desktop/api/Tapi/nf-tapi-lineanswer) pode ser usado para conectar a chamada. (TAPI versões 1,4 e posteriores)
+Indica que a chamada está sendo oferecida em mais de uma estação, mas a estação atual não está alertando (por exemplo, pode ser uma estação de emprego em que o status da oferta é de consultoria, como piscar uma luz); O software na estação definida para resposta automática deve, preferencialmente, não responder à chamada, pois essa deve ser a prerativa na estação primária (alertas), mas [**lineAnswer**](/windows/desktop/api/Tapi/nf-tapi-lineanswer) pode ser usada para conectar a chamada. (TAPI versões 1.4 e posteriores)
 
 
 </dt> </dl> </dd> </dl>
@@ -41,9 +41,9 @@ Indica que a chamada está sendo oferecida em mais de uma estação, mas a esta�
 
 Não extensível. Todos os 32 bits são reservados.
 
-Para compatibilidade com versões anteriores, é responsabilidade do provedor de serviços examinar a versão da API negociada na linha e não usar esses valores de LINEOFFERINGMODE \_ se eles não tiverem suporte na versão negociada. Aplicativos que não são Cognizant de LINEOFFERINGMODE \_ provavelmente supõem que uma chamada que está na oferta LINECALLSTATE \_ está em LINEOFFERINGMODE \_ ativa.
+Para compatibilidade com versões regressivas, é responsabilidade do provedor de serviços examinar a versão da API negociada na linha e não usar esses valores LINEOFFERINGMODE se eles não têm suporte na versão \_ negociada. Aplicativos que não são reconhecíveis de LINEOFFERINGMODE provavelmente presumirão que uma chamada que está em \_ LINECALLSTATE OFFERING está \_ em LINEOFFERINGMODE \_ ACTIVE.
 
-Os \_ \_ valores inativos LINEOFFERINGMODE ativo e LINEOFFERINGMODE são usados quando a chamada está em um endereço que é compartilhado com outras estações (com ponte; [consulte \_ constantes do LINEADDRESSSHARING](lineaddresssharing--constants.md)), principalmente os sistemas de chaves eletrônicas. Se o modo de estado de chamada de oferta for "ativo", significa que a chamada é um alerta na estação atual (será acompanhado por \_ mensagens de toque LINEDEVSTATE) e, se algum aplicativo for configurado para responder automaticamente, ele poderá fazer isso. Se o modo de estado de chamada for "inativo", a chamada será oferecida em mais de uma estação, mas a estação atual não será um alerta (por exemplo, pode ser uma estação de atendente em que o status da oferta é consultoria, como piscando uma luz); o software na estação definido para resposta automática deve, preferencialmente, não responder à chamada, pois deve ser o prerrogativa na estação primária (alerta), mas [**lineAnswer**](/windows/desktop/api/Tapi/nf-tapi-lineanswer) pode ser usado para conectar a chamada. Se o modo de estado de chamada for ZERO, o aplicativo deverá assumir que o valor está ativo (que seria a situação em um endereço não-ponte).
+Os valores LINEOFFERINGMODE ACTIVE e LINEOFFERINGMODE INACTIVE são usados quando a chamada está em um endereço compartilhado com outras estações \_ \_ (ponte; consulte [Constantes LINEADDRESSSHARING \_ ](lineaddresssharing--constants.md)), principalmente sistemas de chaves eletrônicas. Se o modo de estado de chamada de oferta estiver "ativo", isso significa que a chamada está alertando na estação atual (será acompanhada por mensagens LINEDEVSTATESTATE TAMBÉM) e, se qualquer aplicativo estiver definido para responder automaticamente, isso poderá \_ ser feito. Se o modo de estado de chamada for "inativo", a chamada está sendo oferecida em mais de uma estação, mas a estação atual não está alertando (por exemplo, pode ser uma estação de emprego em que o status da oferta é de consultoria, como piscar uma luz); O software na estação definida para resposta automática deve, preferencialmente, não responder à chamada, pois essa deve ser a prerativa na estação primária (alertas), mas [**lineAnswer**](/windows/desktop/api/Tapi/nf-tapi-lineanswer) pode ser usada para conectar a chamada. Se o modo de estado de chamada for ZERO, o aplicativo deverá assumir que o valor está ativo (que seria a situação em um endereço não ponte).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,8 +51,8 @@ Os \_ \_ valores inativos LINEOFFERINGMODE ativo e LINEOFFERINGMODE são usados 
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

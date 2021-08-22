@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método ColumnStream. SetLength'
-title: Método ColumnStream. SetLength
+description: 'Saiba mais sobre: Método ColumnStream.SetLength'
+title: Método ColumnStream.SetLength
 TOCTitle: 'SetLength method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.SetLength(System.Int64)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.setlength(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fccf32d6494427811c3db8a2d2f4b71a2909a733
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5394341f097ad142398afa9ef40b848ee1ac5a33ecbe3d12bcf26b06e8022dfe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670006"
 ---
-# <a name="columnstreamsetlength-method"></a>Método ColumnStream. SetLength
+# <a name="columnstreamsetlength-method"></a>Método ColumnStream.SetLength
 
 Define o comprimento do fluxo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,8 +60,8 @@ public override void SetLength(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - value  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+  - valor  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
     O comprimento desejado, em bytes.
 
@@ -71,6 +71,6 @@ public override void SetLength(
 
 [Classe ColumnStream](./columnstream-class.md)
 
-[Membros do ColumnStream](./columnstream-members.md)
+[Membros de ColumnStream](./columnstream-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

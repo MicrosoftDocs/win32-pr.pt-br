@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 57688edab7421f939e03322b8b244219b00d31fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b72f21d47001e2060c3b27daa80a584dcad77b55fd1df289a5bdb5476549cf38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119677226"
 ---
 # <a name="lookupdwordsetstring-function"></a>Função LookupDwordSetString
 
@@ -54,7 +54,7 @@ Valor de um conjunto rotulado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será a cadeia de caracteres que corresponde ao valor especificado.
 

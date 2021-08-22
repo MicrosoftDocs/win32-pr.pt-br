@@ -3,7 +3,7 @@ title: HDN_OVERFLOWCLICK código de notificação (commctrl. h)
 description: Enviado por um controle de cabeçalho para seu pai quando o botão de estouro do cabeçalho é clicado. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 770ae00a-b87f-4de2-b869-2a233f2c493e
 keywords:
-- HDN_OVERFLOWCLICK de código de notificação controles do Windows
+- HDN_OVERFLOWCLICK código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 911953fcbea785cb7024bc9d0670c8ed33239524
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 61cee31369bfa1574ba4690f952bc60fb0dde1e5a9bf2f41e98b659356a79625
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576216"
 ---
 # <a name="hdn_overflowclick-notification-code"></a>Código de notificação do HDN \_ OVERFLOWCLICK
 
@@ -47,7 +47,7 @@ Defina o membro **iItem** da estrutura [**NMHEADER**](/windows/win32/api/commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -63,9 +63,9 @@ Esta mensagem é enviada somente quando o estilo de [**\_ estouro HDS**](header-
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

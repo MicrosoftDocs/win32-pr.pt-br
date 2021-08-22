@@ -7,12 +7,12 @@ keywords:
 - transferir BITS de trabalho, criando
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 8dddb2427fde43014a31e81f72711ca74e69de34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0241d855d60178e87f28820f14b39e497f200fe5770933f293257e62b2d1b601
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528884"
 ---
 # <a name="creating-a-job"></a>Criando um trabalho
 
@@ -63,9 +63,9 @@ Para obter a interface [**método ibackgroundcopyjob**](/windows/desktop/api/Bit
 
 
 
- 
+ 
 
- 
+ 
 
 
 

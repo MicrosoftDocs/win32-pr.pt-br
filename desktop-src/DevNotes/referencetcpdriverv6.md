@@ -13,12 +13,12 @@ api_type:
 - LibDef
 api_location:
 - Drvref.lib
-ms.openlocfilehash: d0a3f56ea59eb753dc7a49d6f6b1d0c48be8abca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c8fc1a24b812608db74fa16b8dafc323fe48442d61d7d7b35c0d371c0828ad3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571766"
 ---
 # <a name="referencetcpdriverv6-function"></a>Função ReferenceTcpDriverV6
 
@@ -39,22 +39,22 @@ NTSTATUS WINAPI ReferenceTcpDriverV6(
 
 <dl> <dt>
 
-*ppDriverObject* \[ fora\]
+*ppDriverObject* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de **\_ objeto de driver** . Para obter mais informações, consulte a documentação do WDK.
+Um ponteiro para uma estrutura **DRIVER \_ OBJECT.** Para obter mais informações, consulte a documentação do WDK.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, ela retornará o **status \_ êxito**. Se falhar, ele retornará o código de status apropriado.
+Se a função for bem-sucedida, ela **retornará STATUS \_ SUCCESS.** Se falhar, ele retornará o código de status apropriado.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função pode ser chamada somente do modo kernel. O chamador deve decrementar a contagem de referência chamando a função **ObDereferenceObject** quando terminar com o objeto.
+Essa função só pode ser chamada no modo kernel. O chamador deve decrementar a contagem de referência chamando a **função ObDereferenceObject** quando terminar com o objeto .
 
-Essa função é implementada em Drvref. lib, que está disponível para download. Consulte [biblioteca de API de referência do driver de rede do Windows](https://www.microsoft.com/downloads/details.aspx?FamilyID=85037e05-f8f8-46b4-a013-3aa6248396c0).
+Essa função é implementada em Driblef.lib, que está disponível para download. Consulte [Windows API de Referência de Driver de Rede](https://www.microsoft.com/downloads/details.aspx?FamilyID=85037e05-f8f8-46b4-a013-3aa6248396c0).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Essa função é implementada em Drvref. lib, que está disponível para downloa
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Drvref. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Driblef.lib</dt> </dl> |
 
 
 

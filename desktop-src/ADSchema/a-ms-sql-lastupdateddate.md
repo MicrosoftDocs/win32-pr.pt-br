@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-LastUpdatedDate
-description: Esse valor representa a hora em que a última atualização do SQL Active Directory.
+title: atributo MS-SQL-LastUpdatedDate
+description: esse valor representa a hora em que SQL última atualização Active Directory.
 ms.assetid: 74b7a14b-3e6b-49c8-9ce8-78579a77a5fd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-LastUpdatedDate
-- Esquema de AD do atributo mS-SQL-LastUpdatedDate
+- esquema de AD do atributo MS-SQL-LastUpdatedDate
+- esquema de AD do atributo mS-SQL-LastUpdatedDate
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa2d0272967d9d7b7a4ed49d9d1efe657ed684f4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 44aba3985380b1996dcf0cec71234b01198dfb65268aabd31c8b7705971c52dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705276"
 ---
-# <a name="ms-sql-lastupdateddate-attribute"></a>Atributo MS-SQL-LastUpdatedDate
+# <a name="ms-sql-lastupdateddate-attribute"></a>atributo MS-SQL-LastUpdatedDate
 
-Esse valor representa a hora em que a última atualização do SQL Active Directory.
+esse valor representa a hora em que SQL última atualização Active Directory.
 
 
 
@@ -58,7 +58,7 @@ Esse valor representa a hora em que a última atualização do SQL Active Direct
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
@@ -79,7 +79,7 @@ Esse valor representa a hora em que a última atualização do SQL Active Direct
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
@@ -100,7 +100,7 @@ Esse valor representa a hora em que a última atualização do SQL Active Direct
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
@@ -121,10 +121,10 @@ Esse valor representa a hora em que a última atualização do SQL Active Direct
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -142,10 +142,10 @@ Esse valor representa a hora em que a última atualização do SQL Active Direct
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -163,10 +163,10 @@ Esse valor representa a hora em que a última atualização do SQL Active Direct
 | ID do link                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |

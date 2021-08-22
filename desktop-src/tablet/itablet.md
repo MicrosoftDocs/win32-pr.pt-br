@@ -1,5 +1,5 @@
 ---
-description: Representa um Tablet anexado ao computador.
+description: Representa um tablet anexado ao computador.
 ms.assetid: 31e11f7d-5610-4c49-9203-2dc322fbef95
 title: Interface ITablet
 ms.topic: reference
@@ -23,31 +23,31 @@ ms.locfileid: "119712246"
 ---
 # <a name="itablet-interface"></a>Interface ITablet
 
-Representa um Tablet anexado ao computador.
+Representa um tablet anexado ao computador.
 
 ## <a name="members"></a>Membros
 
-A interface **ITablet** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ITablet** também tem estes tipos de membros:
+A interface **ITablet** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **O ITablet** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A interface **ITablet** tem esses métodos.
+A **interface ITablet** tem esses métodos.
 
 
 
 | Método                                                                 | Descrição                                                                           |
 |:-----------------------------------------------------------------------|:--------------------------------------------------------------------------------------|
-| [**CreateContext**](itablet-createcontext.md)                         | Cria um objeto de contexto que descreve o dispositivo tablet especificado.<br/>       |
+| [**CreateContext**](itablet-createcontext.md)                         | Cria um objeto de contexto que descreve o dispositivo de tablet especificado.<br/>       |
 | [**GetCursor**](/previous-versions/windows/desktop/legacy/aa373535(v=vs.85))                                 | Recupera o objeto [**ITabletCursor**](itabletcursor.md) especificado.<br/>     |
-| [**GetCursorCount**](itablet-getcursorcount.md)                       | Recupera o número de objetos de cursor associados ao Tablet.<br/>         |
-| [**GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md) | Recupera as configurações de contexto padrão para o Tablet.<br/>                     |
-| [**GetHardwareCaps**](itablet-gethardwarecaps.md)                     | Recupera um valor que representa os recursos do hardware do Tablet.<br/> |
-| [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera um retângulo que representa a área de entrada máxima do Tablet.<br/>    |
-| [**GetName**](itablet-getname.md)                                     | Recupera uma cadeia de caracteres que contém o nome do dispositivo tablet.<br/>               |
-| [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera uma cadeia de caracteres que contém a ID de Plug and Play para o dispositivo tablet.<br/>  |
-| [**GetPropertyMetrics**](/previous-versions/windows/desktop/legacy/aa367722(v=vs.85))               | Recupera os dados de métricas para uma propriedade especificada.<br/>                       |
+| [**GetCursorCount**](itablet-getcursorcount.md)                       | Recupera o número de objetos de cursor associados ao tablet.<br/>         |
+| [**GetDefaultContextSettings**](itablet-getdefaultcontextsettings.md) | Recupera as configurações de contexto padrão para o tablet.<br/>                     |
+| [**GetHardwareCaps**](itablet-gethardwarecaps.md)                     | Recupera um valor que representa os recursos do hardware do tablet.<br/> |
+| [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera um retângulo que representa a área de entrada máxima do tablet.<br/>    |
+| [**GetName**](itablet-getname.md)                                     | Recupera uma cadeia de caracteres que contém o nome do dispositivo de tablet.<br/>               |
+| [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera uma cadeia de caracteres que contém Plug and Play ID do dispositivo de tablet.<br/>  |
+| [**GetPropertyMetrics**](/previous-versions/windows/desktop/legacy/aa367722(v=vs.85))               | Recupera os dados de métricas de uma propriedade especificada.<br/>                       |
 
 
 
@@ -112,7 +112,7 @@ interface ITablet : IUnknown
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

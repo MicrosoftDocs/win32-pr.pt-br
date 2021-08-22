@@ -1,9 +1,9 @@
 ---
-title: Função UtilLoadStringWithAlloc (Ndattributils. h)
+title: Função UtilLoadStringWithAlloc (Ndattributils.h)
 description: Aloca e carrega uma cadeia de caracteres da tabela de recursos.
 ms.assetid: 34bf0b93-2bec-49c3-9441-c83686c4abdb
 keywords:
-- NDF da função UtilLoadStringWithAlloc
+- Função UtilLoadStringWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e13930fe9bb11ae9c9456152c823491eabc462
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ca649599e2a8a29ecdab2dbbfe2c188947b40487ceb82ab4937622ce82c701a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685606"
 ---
 # <a name="utilloadstringwithalloc-function"></a>Função UtilLoadStringWithAlloc
 
-A função **UtilLoadStringWithAlloc** aloca e carrega uma cadeia de caracteres da tabela de recursos.
+A **função UtilLoadStringWithAlloc** aloca e carrega uma cadeia de caracteres da tabela de recursos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,43 +42,43 @@ HRESULT UtilLoadStringWithAlloc(
 
 <dl> <dt>
 
-*UID* \[ no\]
+*uID* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 Identificador da cadeia de caracteres a ser carregada.
 
 </dd> <dt>
 
-*ppwzBuffer* \[ fora\]
+*ppwzBuffer* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-O local onde a cadeia de caracteres alocada recentemente será colocada. A cadeia de caracteres deve ser liberada usando [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) quando não for mais necessária.
+O local em que a cadeia de caracteres recém-alocada será colocada. A cadeia de caracteres deve ser liberada [**usando CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) quando ela não for mais necessária.
 
 </dd> <dt>
 
-*cchBufferMax* \[ no\]
+*cchBufferMax* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O número máximo de caracteres a serem carregados da tabela de recursos. Se a cadeia de caracteres do recurso for maior que o número de caracteres especificados, ela será truncada e terminada em nulo.
+O número máximo de caracteres a carregar da tabela de recursos. Se a cadeia de caracteres de recurso for maior que o número de caracteres especificado, ela será truncada e terminada em nulo.
 
 > [!Note]  
-> Este parâmetro não pode ser definido como zero.
+> Esse parâmetro pode não ser definido como zero.
 
  
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os valores de retorno possíveis incluem, mas não estão limitados a, o seguinte.
 
 
 
@@ -97,9 +97,9 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 
@@ -113,7 +113,7 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 [**UtilAssembleStringsWithAlloc**](utilassemblestringswithalloc.md)
 </dt> <dt>
 
-[**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
+[**Cotaskmemfree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 </dt> </dl>
 
  

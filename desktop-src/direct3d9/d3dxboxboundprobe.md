@@ -1,5 +1,5 @@
 ---
-description: Determina se um raio intersecciona o volume da caixa delimitadora de uma caixa.
+description: Determina se um raio intersecção do volume da caixa delimitada de uma caixa.
 ms.assetid: 45ff8540-ed5c-4f54-b3b7-3385087a6863
 title: Função D3DXBoxBoundProbe (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 707ab21a3babe7d9a93f776f438cbaab7137849b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 197582c2f404124edd5a49c9d7780ce35cac61b15438a81d120839f283b82373
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676386"
 ---
 # <a name="d3dxboxboundprobe-function"></a>Função D3DXBoxBoundProbe
 
-Determina se um raio intersecciona o volume da caixa delimitadora de uma caixa.
+Determina se um raio intersecção do volume da caixa delimitada de uma caixa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,53 +43,53 @@ BOOL D3DXBoxBoundProbe(
 
 <dl> <dt>
 
-*pMin* \[ no\]
+*pMin* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , descrevendo o canto inferior esquerdo da caixa delimitadora. Consulte Observações.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) descrevendo o canto inferior esquerdo da caixa delimitada. Consulte Observações.
 
 </dd> <dt>
 
-*pMax* \[ no\]
+*pMax* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , descrevendo o canto superior direito da caixa delimitadora. Consulte Observações.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) descrevendo o canto superior direito da caixa delimitada. Consulte Observações.
 
 </dd> <dt>
 
-*pRayPosition* \[ no\]
+*pRayPosition* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a coordenada de origem do raio.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando a coordenada de origem do raio.
 
 </dd> <dt>
 
-*pRayDirection* \[ no\]
+*pRayDirection* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a direção do raio. Esse vetor não deve ser (0, 0, 0), mas não precisa ser normalizado.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando a direção do raio. Esse vetor não deve ser (0,0,0), mas não precisa ser normalizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Retornará **true** se Ray Interseccionar o volume da caixa delimitadora da caixa. Caso contrário, retornará **false**.
+Retornará **TRUE** se o raio intersecção do volume da caixa delimitada da caixa. Caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-**D3DXboxBoundProbe** determina se o raio intersecciona o volume da caixa delimitadora da caixa, não apenas a superfície da caixa.
+**D3DXboxBoundProbe** determina se o raio intersecção do volume da caixa delimitada da caixa, não apenas a superfície da caixa.
 
-Os valores passados para **D3DXboxBoundProbe** são xmin, xMax, ymin, ymax, zmin e Zmax. Portanto, o seguinte define os cantos da caixa delimitadora.
+Os valores passados **para D3DXboxBoundProbe** são xmin, xmax, ymin, ymax, zmin e zmax. Assim, o seguinte define os cantos da caixa delimitada.
 
 
 ```
@@ -105,7 +105,7 @@ xmin, ymin, zmin
 
 
 
-A profundidade da caixa delimitadora na direção z é Zmax-zmin, na direção y, ymax-ymin e, na direção x, é xmax-xmin. Por exemplo, com os seguintes vetores mínimo e máximo, min (-1,-1,-1) e Max (1, 1, 1), a caixa delimitadora é definida da maneira a seguir.
+A profundidade da caixa delimitada na direção z é zmax - zmin, na direção y é ymax - ymin e na direção x é xmax - xmin. Por exemplo, com os seguintes vetores mínimo e máximo, mínimo (-1, -1, -1) e máximo (1, 1, 1), a caixa delimitadora é definida da seguinte maneira.
 
 
 ```
@@ -127,8 +127,8 @@ A profundidade da caixa delimitadora na direção z é Zmax-zmin, na direção y
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -4,12 +4,12 @@ description: Formatos de dados e mídia de transferência
 ms.assetid: c6023c42-ce20-40e4-9d88-55fa1d2a4d38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6893fabd776d196cbc7354dde7c330f9caffb0a
-ms.sourcegitcommit: 89f99926f946dc6c5ea600fb7c41f6b19ceac516
+ms.openlocfilehash: 3ccbab96fbaca83330737521f253b3c625e67ea9a024d87d35276da2826a3964
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "104008587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501426"
 ---
 # <a name="data-formats-and-transfer-media"></a>Formatos de dados e mídia de transferência
 
@@ -19,7 +19,7 @@ Primeiro, as descrições de dados usam apenas um identificador de formato, como
 
 Em segundo lugar, todas as transferências de dados que usam a área de transferência geralmente ocorrem por meio da memória global. O uso da memória global é razoavelmente eficiente para pequenas quantidades de dados, mas terrivelmente ineficiente para grandes quantidades, como um objeto multimídia de 20 MB. A memória global está lenta para um objeto de dados grande, cujo tamanho requer uma troca considerável na memória virtual no disco. Nos casos em que os dados que estão sendo trocados vão residir principalmente no disco de qualquer forma, forçá-lo por meio desse afunilamento de memória virtual é altamente ineficiente. Uma maneira melhor seria ignorar totalmente a memória global e simplesmente transferir os dados diretamente para o disco.
 
-Para aliviar esses problemas, o COM fornece duas estruturas de dados: [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) e [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1). Para mais informações, consulte os seguintes tópicos:
+Para aliviar esses problemas, o COM fornece duas estruturas de dados: [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) e [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1). Para obter mais informações, consulte estes tópicos:
 
 -   [A estrutura FORMATETC](the-formatetc-structure.md)
 -   [A estrutura STGMEDIUM](the-stgmedium-structure.md)
@@ -28,7 +28,7 @@ Para aliviar esses problemas, o COM fornece duas estruturas de dados: [**FORMATE
 
 <dl> <dt>
 
-[Transferência de Dados](data-transfer.md)
+[Transferência de dados](data-transfer.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Atributo WM/BeatsPerMinute
-description: O atributo WM/BeatsPerMinute é o batida por minuto do conteúdo.
+description: O atributo WM/BeatsPerMinute é o ritmo por minuto do conteúdo.
 ms.assetid: 657adf62-7217-451d-b797-feda6f44d78d
 keywords:
-- Atributo WM/BeatsPerMinute do Windows Media Player
+- Atributo WM/BeatsPerMinute Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f5cf4f2717bf881c1c5ba6ca7a49e34ceec6eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7946becb0b76d847b0aacfa4318ae0464fc6e6c46d8a3136b88a344cdb71030c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506622"
 ---
 # <a name="wmbeatsperminute-attribute"></a>Atributo WM/BeatsPerMinute
 
-O atributo **WM/BeatsPerMinute** é o batida por minuto do conteúdo.
+O **atributo WM/BeatsPerMinute** é o ritmo por minuto do conteúdo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,11 +29,11 @@ O atributo **WM/BeatsPerMinute** é o batida por minuto do conteúdo.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente em um arquivo de música que não está na biblioteca do.
+Esse atributo é armazenado somente em um arquivo de música que não está na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
-A constante do Windows Media Format SDK para este atributo é g \_ wszWMBeatsPerMinute
+A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMBeatsPerMinute
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ A constante do Windows Media Format SDK para este atributo é g \_ wszWMBeatsPer
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

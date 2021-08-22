@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b26be2ccda41d998ed2b2b2c5dcddb1fcd2dcb2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: afead405b98047dfc0cd6182b9a5af288f0a4df298ebf35697b7459df0cd2378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706706"
 ---
 # <a name="current-parent-ca-attribute"></a>Atributo Current-Parent-CA
 
@@ -121,15 +121,15 @@ Referência às autoridades de certificação que emitiram os certificados atuai
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Referência às autoridades de certificação que emitiram os certificados atuai
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Referência às autoridades de certificação que emitiram os certificados atuai
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
