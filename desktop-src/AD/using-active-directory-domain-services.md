@@ -12,12 +12,12 @@ keywords:
 - Active Directory Active Directory, exemplos consulte Active Directory Domain Services exemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 540b9004311db320decbd15c4f0a29e52ec1302a
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 3e1ef5428242e6d83fcb0c517c91abaee24de8181689a3aa1922eafea4d76703
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "103642911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024534"
 ---
 # <a name="using-active-directory-domain-services"></a>Usar o Active Directory Domain Services
 
@@ -26,9 +26,9 @@ Esta seção fornece diretrizes para a gravação de aplicativos que usam ou pub
 > [!Note]  
 > A documentação a seguir destina-se a programadores de computadores. Se você estiver tentando resolver um erro de impressão Active Directory Home, consulte a [seguinte sugestão](https://answers.microsoft.com/windows/forum/all/clicking-find-printer-shows-error-the-active/52bfd961-ff62-4397-b8cf-a0708f0cb3d2) nas páginas da Comunidade da Microsoft; Se isso não ajudar, tente essas recomendações no [TechNet](https://social.technet.microsoft.com/Forums/windowsserver/d6212275-24d6-4168-830a-9441f861cb76/error-message-when-attempting-to-print-active-directory-domain-service-is-currently-unavailable?forum=winserverprint).
 
- 
+ 
 
-Active Directory Domain Services estão em conformidade com o Lightweight Directory Access Protocol 3,0, que é definido pela RFC 2251 e por outras RFCs. Qualquer um dos seguintes conjuntos de API pode ser usado para acessar Active Directory Domain Services. Cada conjunto de API tem vantagens e desvantagens que dependem da linguagem de programação, do ambiente de programação e do método pretendido de execução. A maioria dos exemplos neste guia usa ADSI, que é compatível com linguagens como C e C++, bem como linguagens em conformidade com a automação, como Microsoft Visual Basic e Visual Basic Scripting Edition.
+Active Directory Domain Services estão em conformidade com o Lightweight Directory Access Protocol 3,0, que é definido pela RFC 2251 e por outras RFCs. Qualquer um dos seguintes conjuntos de API pode ser usado para acessar Active Directory Domain Services. Cada conjunto de API tem vantagens e desvantagens que dependem da linguagem de programação, do ambiente de programação e do método pretendido de execução. a maioria dos exemplos neste guia usa ADSI, que é compatível com linguagens como C e C++, bem como linguagens em conformidade com a automação, como o Microsoft Visual Basic e Visual Basic scripting Edition.
 
 Para obter mais informações sobre tecnologias de Active Directory Domain Services específicas, consulte:
 
@@ -57,6 +57,6 @@ Esta seção aborda os seguintes tópicos:
 -   [Partições de diretório de aplicativos](application-directory-partitions.md)
 -   [Detectando o modo de operação de um domínio](detecting-the-operation-mode-of-a-domain.md)
 
- 
+ 
 
- 
+ 

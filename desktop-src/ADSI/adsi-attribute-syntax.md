@@ -7,12 +7,12 @@ keywords:
 - atributos ADSI, sintaxe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b23d58b48b27fa88077f388b47535afd1dbd0a4f
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 310a678c48051909e4a3e7555b9d8ff0a508c339cfcd41ed6c66286529cadde1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023924"
 ---
 # <a name="adsi-attribute-syntax"></a>Sintaxe de atributo ADSI
 
@@ -60,7 +60,7 @@ A cadeia exata de maiúsculas e minúsculas é uma cadeia de caracteres que dife
 > [!Note]  
 > O diretório pode ou não armazenar isso como uma cadeia de caracteres Unicode. No entanto, a ADSI aceita e retorna cadeias de caracteres Unicode.
 
- 
+ 
 
 Exemplo:
 
@@ -113,7 +113,7 @@ Essa sintaxe armazena a data e a hora em uma única cadeia de caracteres. O form
 > [!Note]  
 > Os dois primeiros dígitos do ano não são armazenados nessa cadeia de caracteres.
 
- 
+ 
 
 Alguns exemplos de valores válidos são "9101311455Z", "910131145503Z", "9101314455-0500", "910131145503 + 0130". Essa cadeia de caracteres é armazenada como caracteres ASCII de byte único e nenhum número de página de código é armazenado com ele.
 
@@ -257,6 +257,6 @@ Set sacl = sd.SystemAcl
 [Como especificar valores de comparação](/windows/desktop/AD/how-to-specify-comparison-values)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

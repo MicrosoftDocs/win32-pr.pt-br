@@ -11,12 +11,12 @@ keywords:
 - Aplicativos habilitados para TSF, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa79f9ba539a9d8997b515821799bf66a293915
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f8bebda3e8cc8d6e5648ea3ee2861a1e35183833ff00227c87cde11531ffb43e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874805"
 ---
 # <a name="text-services-framework-structures"></a>Estruturas de estrutura de serviços de texto
 
@@ -45,6 +45,6 @@ Essas são as estruturas de estrutura de serviços de texto.
 -   [**STATUS de TS \_**](/windows/desktop/api/Textstor/ns-textstor-ts_status)
 -   [**TS \_ TEXTchange**](/windows/desktop/api/Textstor/ns-textstor-ts_textchange)
 
- 
+ 
 
- 
+ 

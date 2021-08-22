@@ -1,22 +1,22 @@
 ---
-description: Quando os serviços de terminal são habilitados, a GINA deve chamar funções de suporte do Winlogon para concluir a configuração de cada usuário, consultar as credenciais de uma sessão de cliente dos serviços de terminal e desconectar-se de uma sessão de rede dos serviços de terminal. Observe que as DLLs GINAs são ignoradas no Windows Vista.
+description: Quando os serviços de terminal são habilitados, a GINA deve chamar funções de suporte do Winlogon para concluir a configuração de cada usuário, consultar as credenciais de uma sessão de cliente dos serviços de terminal e desconectar-se de uma sessão de rede dos serviços de terminal. observe que as DLLs ginas são ignoradas no Windows Vista.
 ms.assetid: 70b55b99-b350-4638-84ba-e5580d9d992f
 title: Funções de GINA de serviços de terminal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19452fb73f00ef4ace0dd85083578334b6fb1038
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0bdd81d66d88ae280c14d71d7d65385c0d5580b3e28cef9d0f26ed1963bded1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916388"
 ---
 # <a name="terminal-services-gina-functions"></a>Funções de GINA de serviços de terminal
 
 Quando os serviços de terminal são habilitados, a [*Gina*](../secgloss/g-gly.md) deve chamar funções de suporte do [*Winlogon*](../secgloss/w-gly.md) para concluir a configuração de cada usuário, consultar as [*credenciais*](../secgloss/c-gly.md) de uma sessão de cliente dos serviços de terminal e desconectar-se de uma sessão de rede dos serviços de terminal.
 
 > [!Note]  
-> As DLLs GINAs são ignoradas no Windows Vista.
+> as DLLs ginas são ignoradas no Windows Vista.
 
  
 

@@ -1,28 +1,28 @@
 ---
 title: O usuário deve alterar a senha no próximo logon (provedor WinNT)
-description: Para habilitar essa opção, defina o atributo PasswordExpired do usuário como um (1). Definir esse atributo como zero (0) permite que o usuário faça logon sem alterar a senha.
+description: Para habilitar essa opção, de definido o atributo PasswordExpired do usuário como um (1). Definir esse atributo como zero (0) permite que o usuário faça logoff sem alterar a senha.
 ms.assetid: 97dd4232-dcd3-44bd-8a2a-1dcb0f85d53c
 ms.tgt_platform: multiple
 keywords:
-- O usuário deve alterar a senha no próximo logon (provedor WinNT) ADSI
-- O usuário deve alterar a senha no próximo logon ADSI, provedor de WinNT
-- ADSI do provedor WinNT, exemplos de gerenciamento de usuário, o usuário deve alterar a senha no próximo logon
+- O usuário deve alterar a senha no próximo logon (Provedor WinNT) ADSI
+- O usuário deve alterar a senha no próximo logon ADSI, provedor WinNT
+- ADSI do provedor WinNT, exemplos de gerenciamento de usuário, Usuário deve alterar senha no próximo logon
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 787be5f5f4e1534574a68c179bb699ac68c61e3e
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: be50e5cdccb4969e59a5b32516a35278b867062e8cced2e80d96b26c56c6173b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "105749156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023034"
 ---
 # <a name="user-must-change-password-at-next-logon-winnt-provider"></a>O usuário deve alterar a senha no próximo logon (provedor WinNT)
 
-Para habilitar essa opção, defina o atributo **PasswordExpired** do usuário como um (1). Definir esse atributo como zero (0) permite que o usuário faça logon sem alterar a senha.
+Para habilitar essa opção, de definido o atributo **PasswordExpired** do usuário como um (1). Definir esse atributo como zero (0) permite que o usuário faça logoff sem alterar a senha.
 
 ## <a name="example-1"></a>Exemplo 1
 
-O exemplo de código a seguir mostra como definir a opção Alterar senha no próximo logon usando Visual Basic com ADSI.
+O exemplo de código a seguir mostra como definir a opção alterar senha na próxima opção de logon usando Visual Basic ADSI.
 
 
 ```VB
@@ -35,7 +35,7 @@ usr.SetInfo
 
 ## <a name="example-2"></a>Exemplo 2
 
-O exemplo de código a seguir mostra como definir a senha de alteração na próxima opção de logon usando C++ com ADSI.
+O exemplo de código a seguir mostra como definir a opção alterar senha na próxima opção de logon usando C++ com ADSI.
 
 
 ```C++

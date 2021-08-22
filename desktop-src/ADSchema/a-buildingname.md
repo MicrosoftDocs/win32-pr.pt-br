@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0745997a562360301cceef7d04b5fb862b048a9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 91a667566292f7a698db98aa683e9470f63f30687a96a30b6062cb0999858ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022674"
 ---
 # <a name="buildingname-attribute"></a>atributo buildName
 
@@ -119,10 +119,10 @@ O nome da compilação em que uma organização ou unidade organizacional é bas
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
@@ -140,10 +140,10 @@ O nome da compilação em que uma organização ou unidade organizacional é bas
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |

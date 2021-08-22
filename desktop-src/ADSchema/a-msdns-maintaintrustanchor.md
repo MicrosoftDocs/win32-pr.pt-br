@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 962000aad2c9aad80147c742a4c811321bd31d42
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dd0159fec89eb2898311338c0ffebd5de25c37a788fd4540101ae603ae5f7881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022614"
 ---
 # <a name="ms-dns-maintain-trust-anchor-attribute"></a>atributo ms-DNS-mantenham-Trust-Anchor
 
@@ -53,7 +53,7 @@ Um atributo usado para definir o tipo de âncora de confiança a ser publicado a
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

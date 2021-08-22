@@ -17,12 +17,12 @@ api_location:
 - API-MS-Win-Service-Private-L1-1-1.dll
 - Advapi32.dll
 - API-MS-Win-Service-Private-L1-1-2.dll
-ms.openlocfilehash: ebecfb133172c9c7a56ed6d28f7ad6b395d8afce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e37f2b786d32ab9f42738e6a8522c6f4593aa6b21a490a6fdd969233b4a6dff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888165"
 ---
 # <a name="unsubscribeservicechangenotifications-function"></a>Função UnsubscribeServiceChangeNotifications
 
@@ -64,9 +64,9 @@ Essa função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Winsvcp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winsvcp. h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>SecHost.dll</dt> </dl> |
 
 

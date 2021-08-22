@@ -1,11 +1,11 @@
 ---
 title: ServiceMonikerSample
-description: Este exemplo mostra um cliente que pode ser usado com o exemplo de MetadataExchange TCP. Ele utiliza o moniker do serviço WCF.
+description: Este exemplo mostra um cliente que pode ser usado com a amostra TCP MetadataExchange. Ele utiliza o moniker de serviço WCF.
 ms.assetid: cfcff5ee-c0e1-4694-831e-fed0bd0e9855
 keywords:
-- API de serviços Web do Windows ServiceMonikerSample
+- ServiceMonikerSample Windows API de Serviços Web
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3188b41df830f55e77e151c5be9413a986a5dcf5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dffac8b7eb4c9bdb92d4622452c15d56f53a514ba94fa908d38e1232dfec95f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026164"
 ---
 # <a name="servicemonikersample"></a>ServiceMonikerSample
 
-Este exemplo mostra um cliente que pode ser usado com o exemplo de MetadataExchange TCP. Ele utiliza o moniker do serviço WCF.
+Este exemplo mostra um cliente que pode ser usado com a amostra TCP MetadataExchange. Ele utiliza o moniker de serviço WCF.
 
 -   [PurchaseOrderClient.vbs](#purchaseorderclientvbs)
 
@@ -41,9 +41,9 @@ Next
 
 
 
- 
+ 
 
- 
+ 
 
 
 

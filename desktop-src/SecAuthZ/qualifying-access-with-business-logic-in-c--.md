@@ -4,18 +4,18 @@ ms.assetid: 058086ab-8ebd-4ff6-b552-8d3c19ae5d38
 title: Qualificando o acesso com a lógica de negócios em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e176fb9cbb221fb52404e22c7ba61d272897082c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c187ebf5e7e532d0d807e470e4383ddfc9c31c80e8e97198b579a1a488bece7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118912112"
 ---
 # <a name="qualifying-access-with-business-logic-in-c"></a>Qualificando o acesso com a lógica de negócios em C++
 
 Use scripts de regra de negócio para fornecer lógica de tempo de execução para verificar o acesso. Para obter mais informações sobre regras de negócio, consulte [regras de negócio](business-rules.md).
 
-Para atribuir uma regra de negócio a uma tarefa, primeiro defina a propriedade [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) do objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) que representa a tarefa. O script deve estar em Visual Basic Scripting Edition ou JScript. Depois de especificar a linguagem de script, defina a propriedade [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) do objeto **IAzTask** com uma representação de cadeia de caracteres do script.
+Para atribuir uma regra de negócio a uma tarefa, primeiro defina a propriedade [**BizRuleLanguage**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrulelanguage) do objeto [**IAzTask**](/windows/desktop/api/Azroles/nn-azroles-iaztask) que representa a tarefa. o script deve estar no Visual Basic scripting Edition ou JScript. Depois de especificar a linguagem de script, defina a propriedade [**BizRule**](/windows/desktop/api/Azroles/nf-azroles-iaztask-get_bizrule) do objeto **IAzTask** com uma representação de cadeia de caracteres do script.
 
 Ao verificar o acesso de uma operação contida em uma tarefa que tem uma regra de negócio associada, o aplicativo deve criar duas matrizes do mesmo tamanho a serem passadas como os parâmetros *varParameterNames* e *VarParameterValues* do método [**IAzClientContext:: AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck) . Para obter informações sobre como criar um contexto de cliente, consulte [estabelecendo um contexto de cliente com o Gerenciador de autorização em C++](establishing-a-client-context-with-authorization-manager-in-c--.md).
 

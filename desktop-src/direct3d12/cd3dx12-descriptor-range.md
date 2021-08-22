@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b511af1766daaefa7f92d33b71841b3a69c99927
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 641afe973c89d66257a8fc7b46defe2e77d8a8667094448ef58ab4beb2839b8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105752152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989936"
 ---
 # <a name="cd3dx12_descriptor_range-structure"></a>\_Estrutura do intervalo do descritor CD3DX12 \_
 

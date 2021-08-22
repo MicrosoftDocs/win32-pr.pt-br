@@ -4,12 +4,12 @@ description: Esta seção descreve como a rede lida com a consulta quando um cli
 ms.assetid: a8a88743-a245-4258-af05-9261c214ab50
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6e26fb9aaef0aac2ff66260d51f756725566dee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e7377df4ced562bc166fedbf489724a2a4a042855391db45841b5de5cf5af906
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010424"
 ---
 # <a name="what-happens-during-a-query"></a>O que acontece durante uma consulta
 
@@ -33,7 +33,7 @@ Essas diretrizes são válidas para nomes no domínio do cliente, como nomes de 
 > [!Note]  
 > Lembre-se do seguinte ao trabalhar com entradas no serviço de nome:
 
- 
+ 
 
 -   Um cliente não pode usar a sintaxe "/.../DOMAIN/entryname" para localizar uma entrada em seu próprio domínio. Use a sintaxe "/.:/ entryname ". No entanto, você pode usar "/.../DOMAIN/entryname" para localizar uma entrada em outro domínio.
 -   O nome de domínio em "/.../DOMAIN/entryname" deve estar em letras maiúsculas. Ao procurar uma correspondência, o localizador diferencia maiúsculas de minúsculas.
@@ -41,9 +41,9 @@ Essas diretrizes são válidas para nomes no domínio do cliente, como nomes de 
 -   Quando o cliente usa o "/.:/ entryname ", o localizador não pesquisará entradas em outros domínios, mesmo que tenham uma relação de confiança com o domínio de logon.
 -   Difusões não cruzam segmentos de LAN (por exemplo, sub-redes). Portanto, a utilidade do localizador é limitada em uma organização com várias sub-redes.
 
- 
+ 
 
- 
+ 
 
 
 

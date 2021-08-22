@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 109d0a6e44ef73652bd563099929ce601670610b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73025a352ba3ec2e9ed113c59a7e04f98084495da834f83bf052c697833dd13f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118881723"
 ---
 # <a name="systemmonitorrelog-method"></a>Método SystemMonitor. relog
 
@@ -47,7 +47,7 @@ SystemMonitor.Relog( _
 *nome do arquivo* \[ no\]
 </dt> <dd>
 
-Caminho do arquivo de log. Você pode especificar o caminho como um caminho absoluto, relativo ou UNC. A extensão do nome do arquivo de log deve ser. blg,. tsv ou. csv. Se uma pasta no caminho não existir, o SYSMON a criará. Se o arquivo existir, o arquivo será substituído. O SYSMON aplica as ACLs padrão do diretório pai.
+Caminho do arquivo de log. Você pode especificar o caminho como um caminho absoluto, relativo ou UNC. A extensão do nome do arquivo de log deve ser. blg,. tsv ou .csv. Se uma pasta no caminho não existir, o SYSMON a criará. Se o arquivo existir, o arquivo será substituído. O SYSMON aplica as ACLs padrão do diretório pai.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Número de amostras dos arquivos de log antigos a serem salvos no novo arquivo d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -79,8 +79,8 @@ Esse método usa os arquivos de log contidos na coleção [**SystemMonitor. LogF
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
 
 

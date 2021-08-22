@@ -1,25 +1,25 @@
 ---
-description: 'Cryptography API: próxima geração (CNG) define as constantes a seguir.'
+description: 'API de Criptografia: CNG (Próxima Geração) define as seguintes constantes.'
 ms.assetid: 8bbd6c95-82ed-492e-86b7-4cd55252be94
 title: Constantes CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e2b7f3e838c284a0dec4fc369371dd5d910e8f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23023679047b9abb5209e06532ef4185b8e87cf325a9c5b8e9c6c4d80346536e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908814"
 ---
 # <a name="cng-constants"></a>Constantes CNG
 
-Cryptography API: próxima geração (CNG) define as constantes a seguir.
+API de Criptografia: CNG (Próxima Geração) define as seguintes constantes.
 
 -   [**Identificadores de algoritmo CNG**](cng-algorithm-identifiers.md)
--   [**Constantes CNG DPAPI**](cng-dpapi-constants.md)
+-   [**Constantes DPAPI de CNG**](cng-dpapi-constants.md)
 -   [**Identificadores de interface CNG**](cng-interface-identifiers.md)
 -   [**Identificadores de propriedade primitiva de criptografia**](cng-property-identifiers.md)
--   [**Identificadores de propriedade de armazenamento de chave**](key-storage-property-identifiers.md)
+-   [**Identificadores de Armazenamento chave**](key-storage-property-identifiers.md)
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Depois que um contexto de segurança é estabelecido, o aplicativo pode usar as funções de suporte a mensagens para transmitir mensagens resistentes a adulterações.
 ms.assetid: 43d7b940-1816-429f-be6e-40978efed278
-title: Garantindo a integridade da comunicação durante a troca de mensagens
+title: Garantindo a integridade da comunicação durante a Exchange de mensagens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70545abf11a933cd3bb6d0c32f3312637fcccbe2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 394f78fcc1e5becf4bdfc7c67db52e1af177a7f3aa427d1c6182a080f0ae87bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008254"
 ---
-# <a name="ensuring-communication-integrity-during-message-exchange"></a>Garantindo a integridade da comunicação durante a troca de mensagens
+# <a name="ensuring-communication-integrity-during-message-exchange"></a>Garantindo a integridade da comunicação durante a Exchange de mensagens
 
 Depois que um [*contexto de segurança*](/windows/desktop/SecGloss/s-gly) é estabelecido, o aplicativo pode usar as funções de suporte a [mensagens](authentication-functions.md) para transmitir mensagens resistentes a adulterações.
 

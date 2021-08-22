@@ -15,12 +15,12 @@ keywords:
 - alterando a onda-densidade de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99eec4e29ec1c38cddb5a5f92f27643e2c9c3e6c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 006788c286476434a7ca2a3d5b79dbd6c4d8af431d74ffb4a00e03a7357777f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941274"
 ---
 # <a name="changing-pitch-and-playback-rate"></a>Alterando a taxa de densidade e reprodução
 
@@ -31,7 +31,7 @@ As diferenças entre a alteração da taxa de densidade e de reprodução são a
 -   A alteração da taxa de reprodução é executada pelo driver de dispositivo e não requer hardware especializado. A taxa de amostra não é alterada, mas o driver interpola-se ignorando ou sintetizando amostras. Por exemplo, se a taxa de reprodução for alterada por um fator de dois, o driver ignorará todas as outras amostras.
 -   A alteração da densidade exige hardware especializado. A taxa de reprodução e a taxa de amostragem não são alteradas.
 
-O Windows fornece as seguintes funções para consultar e definir o tom de onda-áudio e as taxas de reprodução.
+Windows fornece as funções a seguir para consultar e definir as taxas de tom de onda e reprodução de áudio.
 
 
 
@@ -44,10 +44,10 @@ O Windows fornece as seguintes funções para consultar e definir o tom de onda-
 
 
 
- 
+ 
 
 As taxas de densidade e reprodução são alteradas por um fator especificado com um número de ponto fixo empacotado em um valor de doubleword. Os 16 bits superiores especificam a parte inteira do número; os 16 bits inferiores especificam a parte fracionária. Por exemplo, o valor 1,5 é representado como 0x00018000L. O valor 0,75 é representado como 0x0000C000L. Um valor de 1,0 (0x00010000) significa que a taxa de densidade ou reprodução não foi alterada.
 
- 
+ 
 
- 
+ 

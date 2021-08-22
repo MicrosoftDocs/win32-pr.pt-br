@@ -5,12 +5,12 @@ ms.assetid: 28dba6ef-939f-4789-9789-ee6e0fef0177
 title: X (Glossário de segurança)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74fe26b24b757e74293bff0d4679d4ad1f6a4b98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d977b5d3fe2c0625f28ccbc2ffd3cd8abf0050eff8c53f7b7f9370e60722da13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105796361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118895147"
 ---
 # <a name="x-security-glossary"></a>X (Glossário de segurança)
 

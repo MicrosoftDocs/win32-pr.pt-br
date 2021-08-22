@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5191257ee15859708a2221e41824ad7e3e1b2d3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f534f8d6c69731c9108f2b883bc266749e5a483a1112bef8af1bdac388b86ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118776548"
 ---
 # <a name="esentlogsequenceenddatabasesconsistentexception-constructor"></a>Construtor EsentLogSequenceEndDatabasesConsistentException
 
 Inicializa uma nova instância da classe EsentLogSequenceEndDatabasesConsistentException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogSequenceEndDatabasesConsistentException()
 
 [Classe EsentLogSequenceEndDatabasesConsistentException](./esentlogsequenceenddatabasesconsistentexception-class.md)
 
-[Membros do EsentLogSequenceEndDatabasesConsistentException](./esentlogsequenceenddatabasesconsistentexception-members.md)
+[Membros EsentLogSequenceEndDatabasesConsistentException](./esentlogsequenceenddatabasesconsistentexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

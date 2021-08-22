@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd ShowKeysForKeyScanMode (Softkbdc. h)
-description: O método ISoftKbd ShowKeysForKeyScanMode exibe as chaves usadas para o modo de verificação de chave para um teclado virtual.
+title: Método ISoftKbd ShowKeysForKeyScanMode (Softkbdc.h)
+description: O método ISoftKbd ShowKeysForKeyScanMode exibe as chaves usadas para o modo de verificação de tecla para um teclado suave.
 ms.assetid: bfa76e5b-6f6e-470a-ba3a-7ecff9f67f7b
 keywords:
-- Estrutura de serviços de texto do método ShowKeysForKeyScanMode
-- Método ShowKeysForKeyScanMode de estrutura de serviços de texto, interface ISoftKbd
-- Estrutura de serviços de texto da interface ISoftKbd, método ShowKeysForKeyScanMode
+- Método ShowKeysForKeyScanMode Estrutura de Serviços de Texto
+- Método ShowKeysForKeyScanMode Estrutura de Serviços de Texto interface , ISoftKbd
+- Interface ISoftKbd Estrutura de Serviços de Texto , método ShowKeysForKeyScanMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7c46fbfc103c0ba40294e4c149d5fd427296765
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 844c9f39529e1a66437c83672acc8b2d3ad2a3e3ff3a1ad31c4d9bd97248d010
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877268"
 ---
-# <a name="isoftkbdshowkeysforkeyscanmode-method"></a>Método ISoftKbd:: ShowKeysForKeyScanMode
+# <a name="isoftkbdshowkeysforkeyscanmode-method"></a>Método ISoftKbd::ShowKeysForKeyScanMode
 
-O método **ISoftKbd:: ShowKeysForKeyScanMode** exibe as chaves usadas para o modo de verificação de chave para um teclado virtual.
+O **método ISoftKbd::ShowKeysForKeyScanMode** exibe as chaves usadas para o modo de verificação de tecla para um teclado soft.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,28 +44,28 @@ HRESULT ShowKeysForKeyScanMode(
 
 <dl> <dt>
 
-*lpKeyID* \[ no\]
+*lpKeyID* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma matriz de elementos KEYID que indica os identificadores de chaves a serem exibidos.
+Ponteiro para uma matriz de elementos KEYID indicando os identificadores de chaves a exibir.
 
 </dd> <dt>
 
-*iKeyNum* \[ no\]
+*iKeyNum* \[ Em\]
 </dt> <dd>
 
-O número de chaves a serem exibidas.
+O número de chaves a exibir.
 
 </dd> <dt>
 
-*fHighL* \[ no\]
+*fHighL* \[ Em\]
 </dt> <dd>
 
-TRUE se o método for realçar as chaves; caso contrário, **false** .
+TRUE se o método for realçar as chaves e **FALSE** caso contrário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -88,9 +88,9 @@ Esse método pode retornar um desses valores.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| INSERI<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuível<br/>          | TSF 1.0 no Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

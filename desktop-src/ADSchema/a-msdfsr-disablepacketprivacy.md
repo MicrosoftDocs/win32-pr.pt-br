@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4b562acf05219684b754381d3e1d4747f6011e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8a544bea1277c174b5c46b5ce0e45ecee9382ce66b6c073a8ab611515a4ffa65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960945"
 ---
 # <a name="ms-dfsr-disablepacketprivacy-attribute"></a>atributo ms-DFSR-DisablePacketPrivacy
 
@@ -55,7 +55,7 @@ Desabilitar a privacidade de pacotes em uma conexão.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
@@ -76,7 +76,7 @@ Desabilitar a privacidade de pacotes em uma conexão.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
@@ -97,7 +97,7 @@ Desabilitar a privacidade de pacotes em uma conexão.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |

@@ -4,12 +4,12 @@ description: O TBS recebe eventos de gerenciamento de energia.
 ms.assetid: 21f76bea-a313-46b7-99b3-422f17376a5a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71e21f2c6a2292b7d49fae3b15691703fa34667a
-ms.sourcegitcommit: 8ea1a82717bd3dbb3457be0697329aa37fb13f08
+ms.openlocfilehash: ece75e95065ca21d81ce7a3447cead33b6e3b8ae6693617fcb16bb27a30dd94d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "105756343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118880690"
 ---
 # <a name="power-management-tpm-base-services"></a>Gerenciamento de energia (serviços base do TPM)
 
@@ -17,9 +17,9 @@ O TBS recebe eventos de gerenciamento de energia. Quando é recebida uma indica�
 
 Quando um computador entra nos Estados de suspensão, incluindo S3 (suspensão) e S4 (hibernação), o TPM é desligado. Assim, todos os Estados de TPM não persistentes são perdidos. Antes de entrar nesses Estados, espera-se que o software de aplicativo se prepare para a perda de Estados do TPM volátil. Quando o sistema retorna de um estado de suspensão, o TBS sincroniza com o TPM para que o estado TBS seja consistente com o estado do TPM. O software de aplicativo pode precisar emitir comandos que foram interrompidos.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 632379e42fa6c64e44018173b9d40340add4ee61
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7fd8745c5983eca67a02506b6cdeeabaca0a61a4c3f8b2a6993a73359d87adba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028154"
 ---
 # <a name="averagelevel"></a>AverageLevel
 
@@ -33,9 +33,9 @@ g \_ wszAverageLevel
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é definido pelo objeto do gravador com base nas informações do codec. Somente os fluxos compactados com um dos codecs de áudio do Windows Media têm um valor definido automaticamente.
+Esse atributo é definido pelo objeto do gravador com base nas informações do codec. somente os fluxos compactados com um dos Windows codecs de áudio de mídia têm um valor definido automaticamente.
 
-**AverageLevel** não é somente leitura. No entanto, se o arquivo for reproduzido pelo Windows Media Player, você não deverá alterar esse valor. O Windows Media Player usa isso para normalizar os níveis de arquivos em uma lista de reprodução.
+**AverageLevel** não é somente leitura. no entanto, se o arquivo for reproduzido pelo Windows Media Player, você não deverá alterar esse valor. o Windows Media Player usa isso para normalizar os níveis de arquivos em uma lista de reprodução.
 
 ## <a name="see-also"></a>Confira também
 
@@ -44,9 +44,9 @@ Esse atributo é definido pelo objeto do gravador com base nas informações do 
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,26 +1,26 @@
 ---
-description: Permitem acompanhar os cartões dentro dos leitores. Essas rotinas normalmente usam a \_ estrutura do scartar ReaderState dentro de uma matriz.
+description: Permitir que você acompanhe cartões em leitores. Essas rotinas normalmente usam a estrutura SCARD \_ READERSTATE dentro de uma matriz.
 ms.assetid: b26b26bf-85ff-435f-a679-7529f19b1c1b
-title: Funções de controle de cartão inteligente
+title: Funções de rastreamento de cartão inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fde9bebfeea2718ce634d585c2740cb510500ce3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 581b81ce357cf683d29c1a86d48993c16b7f363635b8e6e3c7e0f2a6ad0900f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118917336"
 ---
-# <a name="smart-card-tracking-functions"></a>Funções de controle de cartão inteligente
+# <a name="smart-card-tracking-functions"></a>Funções de rastreamento de cartão inteligente
 
-As funções a seguir permitem acompanhar os cartões dentro dos leitores. Essas rotinas normalmente usam a estrutura do [**scartar \_ ReaderState**](/windows/desktop/api/Winscard/ns-winscard-scard_readerstatea) dentro de uma matriz.
+As funções a seguir permitem que você acompanhe cartões em leitores. Essas rotinas normalmente usam a estrutura [**SCARD \_ READERSTATE**](/windows/desktop/api/Winscard/ns-winscard-scard_readerstatea) dentro de uma matriz.
 
 
 
 | Tópico                                                | Descrição                                                                                                                            |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [**SCardLocateCards**](/windows/desktop/api/Winscard/nf-winscard-scardlocatecardsa)         | Pesquise um cartão cuja [*cadeia de caracteres ATR*](../secgloss/a-gly.md) corresponda a um nome de cartão fornecido. |
-| [**SCardGetStatusChange**](/windows/desktop/api/Winscard/nf-winscard-scardgetstatuschangea) | Bloquear a execução até que a disponibilidade atual dos cartões seja alterada.                                                                       |
+| [**SCardLocateCards**](/windows/desktop/api/Winscard/nf-winscard-scardlocatecardsa)         | Pesquise um cartão cuja [*cadeia de caracteres ATR*](../secgloss/a-gly.md) corresponde a um nome de cartão fornecido. |
+| [**SCardGetStatusChange**](/windows/desktop/api/Winscard/nf-winscard-scardgetstatuschangea) | Bloqueie a execução até que a disponibilidade atual dos cartões seja mudada.                                                                       |
 | [**SCardCancel**](/windows/desktop/api/Winscard/nf-winscard-scardcancel)                   | Encerrar ações pendentes.                                                                                                         |
 
 

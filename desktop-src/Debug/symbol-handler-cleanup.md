@@ -4,12 +4,12 @@ ms.assetid: d442b2f2-9225-43fd-bd25-274322857834
 title: Limpeza do manipulador de símbolos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0daea96e780f7e3a685b408c7c774e91b2795b84
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6db42f1fedfe68af4ab6eab885aefff0e8eb56e4ac9262f79adef8733f7ee7d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956955"
 ---
 # <a name="symbol-handler-cleanup"></a>Limpeza do manipulador de símbolos
 

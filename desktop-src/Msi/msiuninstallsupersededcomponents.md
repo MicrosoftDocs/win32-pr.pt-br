@@ -4,12 +4,12 @@ ms.assetid: ba9b1b2d-1667-48c8-8f1a-9958a1d170da
 title: Propriedade MSIUNINSTALLSUPERSEDEDCOMPONENTS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc930a258d8faebe71480f466f2b097fe1eda68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae30e142167e2d080fa4c74c046625338fbf92fd4476b0339d60f77e321ab54a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943937"
 ---
 # <a name="msiuninstallsupersededcomponents-property"></a>Propriedade MSIUNINSTALLSUPERSEDEDCOMPONENTS
 
@@ -17,7 +17,7 @@ Defina a propriedade **MSIUNINSTALLSUPERSEDEDCOMPONENTS** como 1 na [tabela de p
 
 A definição dessa propriedade afeta os componentes em todos os patches que estão sendo substituídos. Para habilitar essa funcionalidade para componentes únicos, use o atributo **msidbComponentAttributesUninstallOnSupersedence** na [tabela de componentes](component-table.md).
 
-**[Windows Installer 4,0 e anteriores](not-supported-in-windows-installer-4-0.md):** Sem suporte. Versões anteriores a Windows Installer 4,5 ignoram a propriedade **MSIUNINSTALLSUPERSEDEDCOMPONENTS** .
+**[Windows Installer 4,0 e anteriores](not-supported-in-windows-installer-4-0.md):** Sem suporte. versões anteriores a Windows Installer 4,5 ignoram a propriedade **MSIUNINSTALLSUPERSEDEDCOMPONENTS** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ A definição dessa propriedade afeta os componentes em todos os patches que est
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,5 ou Windows Installer 4,5 no Windows Vista, no Windows XP, no Windows Server 2003 e no Windows Server 2008. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,5 ou Windows Installer 4,5 no Windows Vista, Windows XP, Windows server 2003 e Windows server 2008. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

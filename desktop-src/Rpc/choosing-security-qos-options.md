@@ -4,12 +4,12 @@ description: As opções de QOS de segurança são passadas como parte do parâm
 ms.assetid: 43befe3d-079a-4389-a1ff-6bda90935769
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c286b516438eae78117ef8d73939c3b4bed396d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 44c943fd9e2b4104de87a24c6078499fa38acdf1b6d1ea2122bf9d3063cd80f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105759346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932192"
 ---
 # <a name="choosing-security-qos-options"></a>Escolhendo as opções de QOS de segurança
 
@@ -23,7 +23,7 @@ Por exemplo, se o software cliente deve chamar apenas um servidor em execução 
 
 Se o software cliente deve chamar um serviço em execução apenas na conta de Joe, redija diretamente o nome principal do servidor de Joe e faça a chamada. Se o servidor não for Joe, a chamada simplesmente falhará.
 
-Muitas vezes, os serviços são executados como serviços de sistema do Windows, o que significa que eles são executados na conta do computador. A autenticação mútua e a criação de um nome principal de servidor ainda são recomendadas.
+muitas vezes, os serviços são executados como Windows serviços do sistema, o que significa que eles são executados na conta do computador. A autenticação mútua e a criação de um nome principal de servidor ainda são recomendadas.
 
 ## <a name="use-the-lowest-impersonationtype-that-allows-the-call-to-go-through"></a>Use o Impersonationtype mais baixo que permite que a chamada passe por
 
@@ -31,6 +31,6 @@ Essa prática recomendada é bastante auto-explicativa. Mesmo que a autenticaç�
 
 Por fim, alguns provedores de segurança ou transportes podem aumentar de forma transparente um nível mais alto do que o especificado. Ao desenvolver um programa, certifique-se de tentar fazer chamadas com o Impersonationtype pretendido e verificar se você está obtendo um Impersonationtype maior no servidor.
 
- 
+ 
 
- 
+ 

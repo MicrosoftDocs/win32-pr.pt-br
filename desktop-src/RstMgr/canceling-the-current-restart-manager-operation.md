@@ -1,27 +1,27 @@
 ---
-title: Cancelando a operação atual do Gerenciador de reinicialização
-description: Quando uma ação do usuário direciona o instalador para executar uma ação diferente, o método a seguir pode ser usado para cancelar a operação atual do Gerenciador de reinicialização.
+title: Cancelando a operação atual do Gerenciador de Reinicialização
+description: Quando uma ação do usuário direciona o instalador para executar uma ação diferente, o método a seguir pode ser usado para cancelar a operação atual do Gerenciador de Reinicialização.
 ms.assetid: 87c8cf27-cd77-46fb-8298-cccbf4b1071a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 633882cc723f19823c6b832ee6927c5a3aacaab7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6c745a76ab8c72acaff0b9f1ae85ded380e1113c3687822e916b422cad9ef51f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010244"
 ---
-# <a name="canceling-the-current-restart-manager-operation"></a>Cancelando a operação atual do Gerenciador de reinicialização
+# <a name="canceling-the-current-restart-manager-operation"></a>Cancelando a operação atual do Gerenciador de Reinicialização
 
-Quando uma ação do usuário direciona o instalador para executar uma ação diferente, o método a seguir pode ser usado para cancelar a operação atual do Gerenciador de reinicialização.
+Quando uma ação do usuário direciona o instalador para executar uma ação diferente, o método a seguir pode ser usado para cancelar a operação atual do Gerenciador de Reinicialização.
 
-**Para cancelar a operação atual do Gerenciador de reinicialização**
+**Para cancelar a operação atual do Gerenciador de Reinicialização**
 
--   O instalador pode chamar a função [**RMCancelCurrentTask**](/windows/desktop/api/RestartManager/nf-restartmanager-rmcancelcurrenttask) de outro thread para cancelar a operação atual de [**RmShutdown**](/windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown) ou [**RmRestart**](/windows/desktop/api/RestartManager/nf-restartmanager-rmrestart) . O Gerenciador de reinicialização pode cancelar a operação dependendo da extensão até a qual a operação foi concluída quando a função **RMCancelCurrentTask** é chamada.
+-   O instalador pode chamar a [**função RMCancelCurrentTask**](/windows/desktop/api/RestartManager/nf-restartmanager-rmcancelcurrenttask) de outro thread para cancelar a operação [**RmShutdown**](/windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown) ou [**RmRestart**](/windows/desktop/api/RestartManager/nf-restartmanager-rmrestart) atual. O Gerenciador de Reinicialização pode cancelar a operação dependendo da extensão em que a operação foi concluída quando a **função RMCancelCurrentTask** é chamada.
 
- 
+ 
 
- 
+ 
 
 
 

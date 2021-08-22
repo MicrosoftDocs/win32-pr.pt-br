@@ -1,7 +1,7 @@
 ---
-description: Executa uma operação de troca de chaves do protocolo SSL (protocolo SSL do servidor).
+description: Executa uma operação de troca de protocolo SSL protocolo SSL.
 ms.assetid: 052e38ee-658c-47dc-8098-c9a1fd359e1c
-title: Função SslImportMasterKey (Sslprovider. h)
+title: Função SslImportMasterKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: e21c4cd0f6e51662124e02881b82c905dba68c9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 546cfeb39ac413b99b5b8021dc7dd6f0f57a89dbfb87880a63b0db2324cda0d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906057"
 ---
 # <a name="sslimportmasterkey-function"></a>Função SslImportMasterKey
 
-A função **SslImportMasterKey** executa uma operação de troca de chaves de protocolo SSL ( [*protocolo SSL*](/windows/desktop/SecGloss/s-gly) do servidor).
+A **função SslImportMaster** [*protocolo SSL Key*](/windows/desktop/SecGloss/s-gly) executa uma operação de troca de chaves SSL (protocolo S) do lado do servidor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,84 +47,84 @@ SECURITY_STATUS WINAPI SslImportMasterKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ no\]
+*hSslProvider* \[ Em\]
 </dt> <dd>
 
-O identificador para a instância do provedor de protocolo SSL.
+O handle para a instância do provedor de protocolo SSL.
 
 </dd> <dt>
 
-*hPrivateKey* \[ no\]
+*hPrivateKey* \[ Em\]
 </dt> <dd>
 
-O identificador para a [*chave privada*](/windows/desktop/SecGloss/p-gly) usada na troca.
+O alça para a [*chave privada*](/windows/desktop/SecGloss/p-gly) usada na troca.
 
 </dd> <dt>
 
-*phMasterKey* \[ fora\]
+*phMasterKey* \[ out\]
 </dt> <dd>
 
-Um ponteiro para o identificador para receber a [*chave mestra*](/windows/desktop/SecGloss/m-gly).
+Um ponteiro para o handle para receber a [*chave mestra*](/windows/desktop/SecGloss/m-gly).
 
 </dd> <dt>
 
-*dwProtocol* \[ no\]
+*dwProtocol* \[ Em\]
 </dt> <dd>
 
-Um dos valores do [**identificador do protocolo do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Um dos valores [**do Identificador de Protocolo do Provedor SSL CNG.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ no\]
+*dwCipherSuite* \[ Em\]
 </dt> <dd>
 
-Um dos valores dos [**identificadores do pacote de codificação do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Um dos valores de Identificadores do Pacote de [**Criptografia do Provedor SSL CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*pParameterList* \[ no\]
+*pParameterList* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de buffers [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) que contém informações usadas como parte da operação de troca de chaves. O conjunto preciso de buffers depende do protocolo e do pacote de codificação usado. No mínimo, a lista conterá buffers que contêm os valores aleatórios de cliente e servidor fornecidos.
+Um ponteiro para uma matriz de buffers [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) que contêm informações usadas como parte da operação de troca de chaves. O conjunto preciso de buffers depende do protocolo e do conjunto de criptografia que é usado. No mínimo, a lista conterá buffers que contêm os valores aleatórios fornecidos pelo cliente e pelo servidor.
 
 </dd> <dt>
 
-*pbEncryptedKey* \[ no\]
+*pbEncryptedKey* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém a chave secreta criptografada do mestre criptografada com a [*chave pública*](/windows/desktop/SecGloss/p-gly) do servidor.
+Um ponteiro para um buffer que contém a chave secreta pré-mestre criptografada criptografada com a [*chave pública*](/windows/desktop/SecGloss/p-gly) do servidor.
 
 </dd> <dt>
 
-*cbEncryptedKey* \[ no\]
+*cbEncryptedKey* \[ Em\]
 </dt> <dd>
 
-O tamanho, em bytes, do buffer *pbEncryptedKey* .
+O tamanho, em bytes, do *buffer pbEncryptedKey.*
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Defina esse parâmetro como **o \_ \_ \_ sinalizador de servidor SSL NCRYPT** para indicar que esta é uma chamada de servidor.
+Defina esse parâmetro como **NCRYPT \_ SSL \_ SERVER \_ FLAG** para indicar que esta é uma chamada de servidor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
-Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os possíveis códigos de retorno incluem, mas não estão limitados a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                       | Descrição                                                              |
+| Valor/código de retorno                                                                                                                                                       | Descrição                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**Nte \_ SEM \_**</dt> <dt>0x8009000EL</dt> de memória </dl>         | Não há memória suficiente disponível para alocar os buffers necessários.<br/> |
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl>    | Um dos identificadores fornecidos não é válido.<br/>                     |
-| <dl> <dt>**Nte \_ \_Parâmetro inválido**</dt> <dt>0x80090027L</dt> </dl> | O parâmetro *phMasterKey* é **nulo**.<br/>                      |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Não há memória suficiente disponível para alocar buffers necessários.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Um dos alças fornecidos não é válido.<br/>                     |
+| <dl> <dt>**NTE \_ PARÂMETRO \_ INVÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | O *parâmetro phMasterKey* é **NULL.**<br/>                      |
 
 
 
@@ -132,10 +132,10 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função descriptografa o segredo de mestre, computa o segredo mestre do SSL e retorna um identificador para esse objeto para o chamador. Essa chave mestra pode então ser usada para derivar a chave de sessão SSL e concluir o handshake de SSL.
+Essa função descriptografa o segredo do pré-mestre, calcula o segredo mestre SSL e retorna um identificador para esse objeto para o chamador. Essa chave mestra pode ser usada para derivar a chave de sessão SSL e concluir o handshake SSL.
 
 > [!Note]  
-> Essa função é usada quando o algoritmo de troca de chave [*RSA*](/windows/desktop/SecGloss/r-gly) está sendo usado. Quando [*DH*](/windows/desktop/SecGloss/d-gly) é usado, o código do servidor chama [**SslGenerateMasterKey**](sslgeneratemasterkey.md) em vez disso.
+> Essa função é usada quando o algoritmo de troca de chaves [*RSA*](/windows/desktop/SecGloss/r-gly) está sendo usado. Quando [*o DH*](/windows/desktop/SecGloss/d-gly) é usado, o código do servidor chama [**SslGenerateMasterKey.**](sslgeneratemasterkey.md)
 
  
 
@@ -145,9 +145,9 @@ Essa função descriptografa o segredo de mestre, computa o segredo mestre do SS
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

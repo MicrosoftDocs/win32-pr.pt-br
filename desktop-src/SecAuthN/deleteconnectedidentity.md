@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Indentitystore.h
-ms.openlocfilehash: 8079985f916e996a56b4203ad6ad065c1b7664e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e59beeb17f7d6d0cced96daaceef7440523c3ce603d759f18cc69a93c0ab05c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008464"
 ---
 # <a name="deleteconnectedidentity-function"></a>Função DeleteConnectedIdentity
 
@@ -70,7 +70,7 @@ O nome de usuário da identidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará s \_ E \_ OK.
 
@@ -94,9 +94,9 @@ Se a função falhar, a função poderá retornar um dos seguintes códigos de e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Indentitystore. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                  |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Indentitystore. h</dt> </dl> |
 
 
 

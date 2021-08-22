@@ -1,46 +1,46 @@
 ---
-title: Gravador de XML
-description: O gravador de XML é uma API para emitir XML. Essencialmente, um gravador de XML grava um nó XML por vez, mas há APIs auxiliares adicionais para facilitar a gravação de uma seqüência de nós.
+title: XML Writer
+description: O Xml Writer é uma API para emitir XML. Em seu núcleo, um Xml Writer grava um Nó XML por vez, mas há APIs auxiliares adicionais para facilitar a escrita de uma sequência de nós.
 ms.assetid: 69d50793-1d5b-4fc7-bf69-128f8e23a98d
 keywords:
-- Serviços Web de gravador XML para Windows
+- Serviços Web do Xml Writer para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085a02b3aca33ffa3b31e4579d47068a683ee4d8
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: a75b7937ac6d8f6e9daff40289dd34729eaf235f203a02b91b5d1af3632049b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105771421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026054"
 ---
-# <a name="xml-writer"></a>Gravador de XML
+# <a name="xml-writer"></a>XML Writer
 
-O gravador de XML é uma API para emitir XML. Essencialmente, um gravador de XML grava um [nó XML](xml-node.md) por vez, mas há APIs auxiliares adicionais para facilitar a gravação de uma seqüência de nós.
+O Xml Writer é uma API para emitir XML. Em seu núcleo, um Xml Writer grava um Nó [XML](xml-node.md) por vez, mas há APIs auxiliares adicionais para facilitar a escrita de uma sequência de nós.
 
 
-Há suporte para os seguintes tipos de saída do gravador:
+Há suporte para os seguintes tipos de saída do writer:
 
 -   [**Um buffer na memória de bytes codificados**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_buffer_output)
 -   [**Um fluxo**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
 -   Um [buffer XML](xml-buffer.md)
 
-Os seguintes retornos de chamada são usados com o gravador de XML:
+Os retornos de chamada a seguir são usados com o autor xml:
 
--   [**\_retorno de \_ chamada de cadeia de caracteres dinâmica WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_dynamic_string_callback)
--   [**\_retorno de \_ chamada de bytes WS pull \_**](/windows/desktop/api/WebServices/nc-webservices-ws_pull_bytes_callback)
--   [**\_retorno de \_ chamada de bytes do WS Push \_**](/windows/desktop/api/WebServices/nc-webservices-ws_push_bytes_callback)
--   [**\_retorno de \_ chamada WS Write**](/windows/desktop/api/WebServices/nc-webservices-ws_write_callback)
+-   [**RETORNO DE CHAMADA \_ DE CADEIA DE \_ \_ CARACTERES DINÂMICA DO WS**](/windows/desktop/api/WebServices/nc-webservices-ws_dynamic_string_callback)
+-   [**RETORNO DE \_ CHAMADA DE BYTES DE PULL \_ \_ DO WS**](/windows/desktop/api/WebServices/nc-webservices-ws_pull_bytes_callback)
+-   [**WS \_ PUSH \_ BYTES \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_push_bytes_callback)
+-   [**WS \_ WRITE \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_write_callback)
 
-As seguintes enumerações são usadas com o gravador de XML:
+As enumerações a seguir são usadas com o autor XML:
 
--   [**conjunto de \_ caracteres WS**](/windows/desktop/api/WebServices/ne-webservices-ws_charset)
--   [**\_tipo de \_ codificação de gravador \_ \_ do WS XML**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_encoding_type)
--   [**\_tipo de \_ saída do gravador \_ \_ do WS XML**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_output_type)
--   [**\_ID da \_ Propriedade do gravador XML \_ do WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id)
+-   [**CHARSET do WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_charset)
+-   [**TIPO DE CODIFICAÇÃO DO WS \_ XML \_ \_ \_ WRITER**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_encoding_type)
+-   [**TIPO DE SAÍDA \_ DO WS XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_output_type)
+-   [**ID DA PROPRIEDADE \_ DO WS XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id)
 
-As funções a seguir são usadas com o gravador de XML:
+As seguintes funções são usadas com o autor XML:
 
 -   [**WsCopyNode**](/windows/desktop/api/WebServices/nf-webservices-wscopynode)
 -   [**WsCreateWriter**](/windows/desktop/api/WebServices/nf-webservices-wscreatewriter)
@@ -71,21 +71,21 @@ As funções a seguir são usadas com o gravador de XML:
 -   [**WsWriteValue**](/windows/desktop/api/WebServices/nf-webservices-wswritevalue)
 -   [**WsWriteXmlnsAttribute**](/windows/desktop/api/WebServices/nf-webservices-wswritexmlnsattribute)
 
-O identificador a seguir é usado com o gravador de XML:
+O seguinte handle é usado com o autor XML:
 
--   [gravador do WS \_ XML \_](ws-xml-writer.md)
+-   [WS \_ XML \_ WRITER](ws-xml-writer.md)
 
-As seguintes estruturas são usadas com o gravador de XML:
+As seguintes estruturas são usadas com o autor XML:
 
--   [**\_ \_ \_ codificação binária de gravador \_ do WS XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_binary_encoding)
--   [**\_saída do \_ buffer do gravador \_ \_ do WS XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_buffer_output)
--   [**\_codificação de \_ gravador de XML do WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_encoding)
--   [**\_codificação de \_ MTOM do gravador de XML do WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_mtom_encoding)
--   [**\_saída do \_ gravador de XML do WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_output)
--   [**\_Propriedades do \_ gravador \_ XML WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_properties)
--   [**\_Propriedade do \_ gravador de XML do WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_property)
--   [**\_saída de \_ fluxo do gravador XML \_ WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
--   [**\_codificação de \_ texto de gravador \_ \_ do WS XML**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_text_encoding)
+-   [**CODIFICAÇÃO BINÁRIA DO WS \_ XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_binary_encoding)
+-   [**SAÍDA DO \_ \_ BUFFER DO \_ WS XML WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_buffer_output)
+-   [**CODIFICAÇÃO \_ \_ DO WS XML WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_encoding)
+-   [**CODIFICAÇÃO \_ \_ \_ MTOM DO \_ WS XML WRITER**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_mtom_encoding)
+-   [**SAÍDA DO \_ WS XML \_ WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_output)
+-   [**PROPRIEDADES DO \_ WS XML \_ WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_properties)
+-   [**PROPRIEDADE DO \_ WS XML \_ \_ WRITER**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_property)
+-   [**SAÍDA DE \_ FLUXO DO WS XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
+-   [**CODIFICAÇÃO DE TEXTO DO WS \_ XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_text_encoding)
 
  
 

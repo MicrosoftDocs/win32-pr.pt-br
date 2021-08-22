@@ -1,7 +1,7 @@
 ---
 description: Cadeia de caracteres estática que contém o nome da classe de janela.
 ms.assetid: a1edf252-23d1-4ee2-96b0-643b80259f38
-title: 'Membro CBaseWindow:: m_pClassName (Winutil. h)'
+title: Membro CBaseWindow::m_pClassName (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4265c2289e517dc0b677c9a25a3727d5683856f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13cc59e79a230f51b02f10433225ae9672f2c6df10d37ed9ef18c1eb2a2557cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954555"
 ---
-# <a name="cbasewindowm_pclassname-member"></a>Membro de CBaseWindow:: m \_ pClassName
+# <a name="cbasewindowm_pclassname-member"></a>Membro CBaseWindow::m \_ pClassName
 
 Cadeia de caracteres estática que contém o nome da classe de janela.
 
@@ -42,8 +42,8 @@ LPTSTR m_pClassName;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

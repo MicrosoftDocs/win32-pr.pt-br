@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f53260a07e544d5f69a9575851614f694b778619
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bfc9c400f3596d380f5e671eaa04f4e4340bde385230f331e3e2fdc7ee1a92f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045824"
 ---
 # <a name="id3dx11effectsamplervariablegetsampler-method"></a>Método ID3DX11EffectSamplerVariable:: getsampler
 
@@ -62,7 +62,7 @@ O endereço de um ponteiro para uma interface de amostra (consulte [**ID3D11Samp
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

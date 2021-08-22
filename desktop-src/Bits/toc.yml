@@ -14,7 +14,7 @@
           href: life-cycle-of-a-bits-job.md
         - name: Largura de Banda de Rede
           href: network-bandwidth.md
-        - name: Cache de pares
+        - name: Caching par
           href: peer-caching.md
         - name: Requisitos de HTTP para downloads de BITS
           href: http-requirements-for-bits-downloads.md
@@ -91,9 +91,9 @@
               href: preventing-multiple-uploads.md
             - name: Limpeza do diretório virtual
               href: virtual-directory-cleanup.md
-            - name: Práticas recomendadas de upload
+            - name: Upload Práticas recomendadas
               href: upload-best-practices.md
-            - name: Limites de carregamento
+            - name: Upload Aos
               href: upload-limits.md
         - name: Usando cabeçalhos de solicitação/resposta de notificação do BITS
           href: using-bits-notification-request-response-headers.md
@@ -103,7 +103,7 @@
           href: using-windows-powershell-to-create-bits-transfer-jobs.md
         - name: Usar os cmdlets do Windows PowerShell do WinRM para gerenciar trabalhos de transferência do BITS
           href: using-winrm-windows-powershell-cmdlets-to-manage-bits-transfer-jobs.md
-        - name: Usando os cmdlets WMI do Windows PowerShell para gerenciar o BITS Compact Server
+        - name: usando cmdlets WMI Windows PowerShell para gerenciar o BITS Compact Server
           href: using-wmi-windows-powershell-cmdlets-to-manage-the-bits-compact-server.md
     - name: Referência BITS
       href: bits-reference.md
@@ -218,16 +218,16 @@
                   href: /windows/win32/api/Bits10_1/nf-bits10_1-ibackgroundcopyfile6-requestfileranges
                 - name: Método GetFilledFileRanges
                   href: /windows/win32/api/Bits10_1/nf-bits10_1-ibackgroundcopyfile6-getfilledfileranges
-            - name: Método ibackgroundcopyjob
+            - name: IBackgroundCopyJob
               href: /windows/win32/api/Bits/nn-bits-ibackgroundcopyjob
               items:
                 - name: Método AddFile
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-addfile
-                - name: Método addfileset
+                - name: Método AddFileSet
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-addfileset
                 - name: Método Cancel
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-cancel
-                - name: Método Complete
+                - name: Método completo
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-complete
                 - name: Método EnumFiles
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-enumfiles
@@ -251,7 +251,7 @@
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-getnotifyinterface
                 - name: Método GetOwner
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-getowner
-                - name: Método getanteriority
+                - name: Método GetPriority
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-getpriority
                 - name: Método GetProgress
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-getprogress
@@ -259,7 +259,7 @@
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-getproxysettings
                 - name: Método GetState
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-getstate
-                - name: Método gettimeies
+                - name: Método GetTimes
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-gettimes
                 - name: Método GetType
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-gettype
@@ -277,7 +277,7 @@
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyflags
                 - name: Método SetNotifyInterface
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-setnotifyinterface
-                - name: Método setanteriority
+                - name: Método SetPriority
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-setpriority
                 - name: Método SetProxySettings
                   href: /windows/win32/api/Bits/nf-bits-ibackgroundcopyjob-setproxysettings
@@ -389,7 +389,7 @@
             - name: IBitsPeer
               href: /windows/win32/api/Bits3_0/nn-bits3_0-ibitspeer
               items:
-                - name: Método getpeername
+                - name: Método GetPeerName
                   href: /windows/win32/api/Bits3_0/nf-bits3_0-ibitspeer-getpeername
                 - name: Método IsAuthenticated
                   href: /windows/win32/api/Bits3_0/nf-bits3_0-ibitspeer-isauthenticated
@@ -418,7 +418,7 @@
                   href: /windows/win32/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-getmaximumcachesize
                 - name: Método GetMaximumContentAge
                   href: /windows/win32/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-getmaximumcontentage
-                - name: Método getRecord
+                - name: Método GetRecord
                   href: /windows/win32/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-getrecord
                 - name: Método SetConfigurationFlags
                   href: /windows/win32/api/Bits3_0/nf-bits3_0-ibitspeercacheadministration-setconfigurationflags
@@ -526,7 +526,7 @@
                   href: example-adding-a-helper-token-to-a-bits-transfer-job-.md
             - name: Ferramenta BITSAdmin
               href: bitsadmin-tool.md
-        - name: Configurações do servidor BITS para trabalhos de carregamento
+        - name: Configurações do servidor BITS para trabalhos do Upload
           href: bits-server-settings-for-upload-jobs.md
           items:
             - name: Propriedades de extensão do IIS do BITS
@@ -577,7 +577,7 @@
               href: /windows/win32/api/Bits5_0/ns-bits5_0-bits_file_property_value
             - name: BITS_JOB_PROPERTY_VALUE
               href: /windows/win32/api/Bits5_0/ns-bits5_0-bits_job_property_value
-        - name: Protocolo de carregamento de BITS
+        - name: protocolo Upload BITS
           href: bits-upload-protocol.md
           items:
             - name: Pacotes de solicitação do BITS
@@ -664,16 +664,16 @@
                       href: /windows/win32/api/Qmgr/nf-qmgr-ibackgroundcopyjob1-getprogress
                     - name: Método GetStatus
                       href: /windows/win32/api/Qmgr/nf-qmgr-ibackgroundcopyjob1-getstatus
-                    - name: método de get_JobID
+                    - name: get_JobID método
                       href: /windows/win32/api/Qmgr/nf-qmgr-ibackgroundcopyjob1-get_jobid
                 - name: IBackgroundCopyQMgr
                   href: /windows/win32/api/Qmgr/nn-qmgr-ibackgroundcopyqmgr
                   items:
-                    - name: Método CreateObject
+                    - name: Método CreateGroup
                       href: /windows/win32/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-creategroup
                     - name: Método EnumGroups
                       href: /windows/win32/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-enumgroups
-                    - name: Método getgroup
+                    - name: Método GetGroup
                       href: /windows/win32/api/Qmgr/nf-qmgr-ibackgroundcopyqmgr-getgroup
                 - name: IEnumBackgroundCopyGroups
                   href: /windows/win32/api/Qmgr/nn-qmgr-ienumbackgroundcopygroups

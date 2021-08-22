@@ -1,7 +1,7 @@
 ---
-description: Cria uma chave efêmera para uso durante a autenticação que ocorre durante o handshake do protocolo de protocolo SSL (SSL).
+description: Cria uma chave efêmera para uso durante a autenticação que ocorre durante o handshake protocolo SSL protocolo SSL.
 ms.assetid: faad9b3b-e476-4e61-b978-bcb517ecaeb7
-title: Função SslCreateEphemeralKey (Sslprovider. h)
+title: Função SslCreateEphemeralKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 452b0166da367bb6b1530f5669e55b7ca909e13e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6a54de2865df805af51b054c22d455d52914a5b00514767d432ceda28c16a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907093"
 ---
 # <a name="sslcreateephemeralkey-function"></a>Função SslCreateEphemeralKey
 
-A função **SslCreateEphemeralKey** cria uma chave efêmera para uso durante a autenticação que ocorre durante o handshake do [*protocolo de protocolo SSL*](/windows/desktop/SecGloss/s-gly) (SSL).
+A **função SslCreateEphemeralKey** cria uma chave efêmera para uso durante [*protocolo SSL*](/windows/desktop/SecGloss/s-gly) a autenticação que ocorre durante o handshake do protocolo SSL.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,82 +47,82 @@ SECURITY_STATUS WINAPI SslCreateEphemeralKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ no\]
+*hSslProvider* \[ Em\]
 </dt> <dd>
 
-O identificador da instância do provedor de protocolo SSL.
+O handle da instância do provedor de protocolo SSL.
 
 </dd> <dt>
 
-*phEphemeralKey* \[ fora\]
+*phEphemeralKey* \[ out\]
 </dt> <dd>
 
-O identificador da chave efêmera.
+O alça da chave efêmera.
 
 </dd> <dt>
 
-*dwProtocol* \[ no\]
+*dwProtocol* \[ Em\]
 </dt> <dd>
 
-Um dos valores do [**identificador do protocolo do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Um dos valores [**do Identificador de Protocolo do Provedor SSL CNG.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ no\]
+*dwCipherSuite* \[ Em\]
 </dt> <dd>
 
-Um dos valores do [**identificador do pacote de codificação do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Um dos valores do Identificador do Conjunto de Criptografia do Provedor [**SSL CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwKeyType* \[ no\]
+*dwKeyType* \[ Em\]
 </dt> <dd>
 
-Um dos valores do [**identificador do tipo de chave do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) . Defina esse parâmetro como zero para os tipos de chave que não são ECC ( [*criptografia de curva elíptica*](/windows/desktop/SecGloss/e-gly) ).
+Um dos valores do Identificador de Tipo de [**Chave do Provedor SSL CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) De definir esse parâmetro como zero [](/windows/desktop/SecGloss/e-gly) para tipos de chave que não são criptografia de curva elíptica (ECC).
 
 </dd> <dt>
 
-*dwKeyBitLen* \[ no\]
+*dwKeyBitLen* \[ Em\]
 </dt> <dd>
 
 O comprimento, em bits, da chave.
 
 </dd> <dt>
 
-*pbParams* \[ no\]
+*pbParams* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para um buffer que contém parâmetros para a chave a ser criada. Se um conjunto de codificação de DHE [*(algoritmo de troca de chaves) Diffie-Hellman (efêmero)*](/windows/desktop/SecGloss/d-gly) não for usado, defina o parâmetro *pbParams* como **nulo** e o parâmetro *cbParams* como zero.
+Um ponteiro para um buffer para conter parâmetros para a chave a ser criada. Se um conjunto de criptografias DHE (algoritmo de troca de [*chaves) Diffie-Hellman (efêmero)*](/windows/desktop/SecGloss/d-gly) não for usado, de definir o parâmetro *pbParams* como **NULL** e o parâmetro *cbParams* como zero.
 
 </dd> <dt>
 
-*cbParams* \[ no\]
+*cbParams* \[ Em\]
 </dt> <dd>
 
-O comprimento, em bytes, dos dados no buffer *pbParams* .
+O comprimento, em bytes, dos dados no buffer *pbParams.*
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
 
 
-| Código/valor de retorno                                                                                                                                                       | Descrição                                                     |
+| Valor/código de retorno                                                                                                                                                       | Descrição                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**Nte \_ SEM \_**</dt> <dt>0x8009000EL</dt> de memória </dl>         | Memória insuficiente para alocar o buffer.<br/> |
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl>    | O identificador *hSslProvider* não é válido.<br/>              |
-| <dl> <dt>**Nte \_ \_Parâmetro inválido**</dt> <dt>0x80090027L</dt> </dl> | Um dos parâmetros fornecidos não é válido.<br/>         |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | Não há memória suficiente para alocar o buffer.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | O *alça hSslProvider* não é válido.<br/>              |
+| <dl> <dt>**NTE \_ PARÂMETRO \_ INVÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | Um dos parâmetros fornecidos não é válido.<br/>         |
 
 
 
@@ -130,9 +130,9 @@ Se a função falhar, ela retornará um valor de erro diferente de zero.
 
 ## <a name="remarks"></a>Comentários
 
-Ao usar um DHE Cipher Suite, a implementação SSL interna passa os parâmetros *p* e *g* do servidor para a função **SslCreateEphemeralKey** nos parâmetros *pbParams* e *cbParams* .
+Ao usar um conjunto de criptografias DHE, a implementação SSL interna passa os parâmetros *de servidor p* e *g* para a função **SslCreateEphemeralKey** nos parâmetros *pbParams* e *cbParams.*
 
-O formato dos dados no buffer *pbParams* é o mesmo usado ao definir a propriedade de parâmetros de [**\_ DH BCrypt \_**](cng-property-identifiers.md) e começa com uma estrutura de cabeçalho de [**\_ parâmetro BCrypt \_ DH \_**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header) .
+O formato dos dados no buffer *pbParams* é o mesmo usado ao definir a propriedade [**BCRYPT \_ DH \_ PARAMETERS**](cng-property-identifiers.md) e começa com uma estrutura [**BCRYPT \_ DH \_ PARAMETER \_ HEADER.**](/windows/desktop/api/Bcrypt/ns-bcrypt-bcrypt_dh_parameter_header)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -140,9 +140,9 @@ O formato dos dados no buffer *pbParams* é o mesmo usado ao definir a proprieda
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fdf1cc03f60259c395ca8c459ddd5a308e3dcd6c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 356ddf6ea86980ee882ad7544096811db420ae0cf8224f315801b708b95ae98d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045444"
 ---
 # <a name="id3dx12pipelineparsercallbacksnodemaskcb-method"></a>Método ID3DX12PipelineParserCallbacks:: NodemaskCb
 
@@ -54,7 +54,7 @@ Detalhes do subobjeto nodemask analisado de um fluxo de estado do pipeline.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 

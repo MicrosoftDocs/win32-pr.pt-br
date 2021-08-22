@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, descrito, segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a257b67fad90fe568615eb5731fc60dc9706d5ae
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 82b85a0c0f219899ad9bd3410bfeb8b4cedc19401ee2350286a5c63fded85c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925693"
 ---
 # <a name="security-rpc"></a>Segurança (RPC)
 

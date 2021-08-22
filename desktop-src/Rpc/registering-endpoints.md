@@ -6,12 +6,12 @@ keywords:
 - Chamada de procedimento remoto RPC, tarefas, registrando pontos de extremidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f23e02aaae18a9d28b989d16850693a8a8f0678e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6674d20eefa9ebd690f618c36f1dfe69f37dcf7743a0830e06cb38bc85ccfd56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118926850"
 ---
 # <a name="registering-endpoints"></a>Registrando pontos de extremidade
 
@@ -38,9 +38,9 @@ Além de registrar nomes de interface, o aplicativo de servidor também pode reg
 
 O último parâmetro é uma cadeia de caracteres de comentário. Embora a biblioteca de tempo de execução RPC não use essa cadeia de caracteres, é recomendável definir a cadeia de caracteres, pois ela melhora a capacidade de gerenciamento do sistema. Um administrador do sistema pode usar a cadeia de caracteres para detectar quais portas são usadas por quais aplicativos, que podem ser usados para determinar quais portas serão gerenciadas por firewalls.
 
- 
+ 
 
- 
+ 
 
 
 

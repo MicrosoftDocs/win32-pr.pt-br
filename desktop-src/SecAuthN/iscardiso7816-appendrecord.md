@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 28d1b6762e0a350bb87b673f21fa063ae2478e64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de2b6ac4bfded1612713272111f3ef21f21cf4b7b8ac9cedae769531fee26c05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118923057"
 ---
 # <a name="iscardiso7816appendrecord-method"></a>Método ISCardISO7816:: AppendRecord
 
-\[O método **AppendRecord** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **AppendRecord** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método **AppendRecord** constrói um comando de APDU ( [*unidade de dados de protocolo de aplicativo*](../secgloss/a-gly.md) ) que acrescenta um registro ao final de um arquivo elementar estruturado linear (EF) ou grava o número de registro 1 em um arquivo elementares estruturado em cíclica.
 
@@ -90,13 +90,13 @@ No retorno, ele é preenchido com o comando APDU construído por essa operação
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
 
 
-| Código de retorno                                                                                   | Descrição                                  |
+| Código de retorno                                                                                   | Description                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operação concluída com sucesso.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parâmetro inválido.<br/>                |
@@ -125,8 +125,8 @@ Além dos códigos de erro COM listados acima, essa interface pode retornar um c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |

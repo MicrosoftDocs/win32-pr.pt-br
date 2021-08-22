@@ -4,12 +4,12 @@ description: Um aplicativo WinSNMP pode usar cadeias de estilo C com terminaçã
 ms.assetid: df04071c-df46-410b-ad92-6adecbfcd454
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 878398b6d8691982aa90b9f1376a38214030e52e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6449514d4c08baae638d950a42f7f553e0037efe6bdc45b8045dbd315c1a2c65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009744"
 ---
 # <a name="c-style-strings"></a>Cadeias de caracteres C-Style
 
@@ -20,11 +20,11 @@ As funções WinSNMP que manipulam cadeias de caracteres em estilo C incluem [**
 > [!Note]  
 > O parâmetro de *contexto* das funções [**SnmpStrToContext**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstrtocontext) e [**SnmpContextToStr**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpcontexttostr) deve ser uma estrutura de cadeia de caracteres de octeto, ou seja, uma estrutura [**smiOCTETS**](/windows/desktop/api/Winsnmp/ns-winsnmp-smioctets) . O parâmetro de *contexto* não pode ser uma cadeia de caracteres em estilo C. A cadeia de caracteres contida em uma estrutura **smiOCTETS** não requer um byte de terminação **nula**.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

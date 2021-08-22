@@ -4,12 +4,12 @@ ms.assetid: 9c40a397-19ea-4600-97ee-987dd10f4ef8
 title: Usando SignTool para verificar uma assinatura de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85e91df7a64a8db48d04ceba9df5fbc3fd358058
-ms.sourcegitcommit: 7024106e3420607420bb04c3f88d9bb4827038c8
+ms.openlocfilehash: 137a4117b64ca5d62ee2ffe5fb80a7e0751d91f840ce1270482d9e114f4dd61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "107954919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118896689"
 ---
 # <a name="using-signtool-to-verify-a-file-signature"></a>Usando SignTool para verificar uma assinatura de arquivo
 
@@ -17,7 +17,7 @@ O comando a seguir verifica a assinatura de um arquivo chamado *MyControl.exe*:
 
 **Verificação de SignTool** *MyControl.exe*
 
-Se o exemplo anterior falhar, pode ser que a assinatura usou um certificado de assinatura de código. O padrão de [SignTool](signtool.md) é a política de driver do Windows para verificação.
+Se o exemplo anterior falhar, pode ser que a assinatura usou um certificado de assinatura de código. o padrão de [SignTool](signtool.md) é a política de driver de Windows para verificação.
 
 O comando a seguir verifica a assinatura, usando a política de verificação de autenticação padrão:
 

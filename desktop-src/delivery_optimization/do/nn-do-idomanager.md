@@ -1,6 +1,6 @@
 ---
 title: Interface IDOManager
-description: Usado para criar um novo download e para enumerar downloads existentes.
+description: Usado para criar um novo download e enumerar downloads existentes.
 keywords:
 - Interface IDOManager
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: a8755615e4d2f0fd074117438f8f305dce0cb681
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5fff72067c69345a9852718c377b179d16f398c0eb3b84c73ca82c3af1b08a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105773918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047084"
 ---
 # <a name="idomanager-interface"></a>Interface IDOManager
 
-A interface **IDOManager** é usada para criar um novo download e para enumerar downloads existentes.
+A interface **IDOManager** é usada para criar um novo download e enumerar downloads existentes.
 
 ## <a name="methods"></a>Métodos
 
@@ -31,13 +31,13 @@ A interface **IDOManager** tem esses métodos.
 
 | Método | Descrição |
 | ---- |:---- |
-| [IDOManager:: createdownload](./nf-do-idomanager-createdownload.md) | Cria um novo download. |
-| [IDOManager::EnumDownloads](./nf-do-idomanager-enumdownloads.md) | Recupera um ponteiro de interface para um objeto enumerador que é usado para enumerar os downloads existentes. |
+| [IDOManager::CreateDownload](./nf-do-idomanager-createdownload.md) | Cria um novo download. |
+| [IDOManager::EnumDownloads](./nf-do-idomanager-enumdownloads.md) | Recupera um ponteiro de interface para um objeto enumerador usado para enumerar downloads existentes. |
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Somente aplicativos do Windows 10, versão 1809 \[ Win32\] |
-| **Servidor mínimo com suporte** | Somente aplicativos do Windows Server, versão 1809 \[ Win32\] |
-| **Cabeçalho** | Do. h |
+| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
+| **Cabeçalho** | Do.h |

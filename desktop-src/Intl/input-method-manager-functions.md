@@ -4,12 +4,12 @@ ms.assetid: 833c07eb-0ecf-41e2-9e01-8d83e51ffcef
 title: Funções do Gerenciador de métodos de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 516a83e207434f5d8c2e073e770c878198bc98e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2c0f03c2e6d29b262bd97729b92f9eea5fbf99d09f52ea3fe2b3579646a6fa8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118948715"
 ---
 # <a name="input-method-manager-functions"></a>Funções do Gerenciador de métodos de entrada
 
@@ -30,7 +30,7 @@ Esta seção descreve as funções do IMM.
 | [**ImmCreateContext**](/windows/desktop/api/Imm/nf-imm-immcreatecontext)                       | Cria um novo contexto de entrada, Alocando memória para o contexto e inicializando-o.                                        |
 | [**ImmDestroyContext**](/windows/desktop/api/Imm/nf-imm-immdestroycontext)                     | Libera o contexto de entrada e libera a memória associada.                                                                    |
 | [**ImmDisableIME**](/windows/desktop/api/Imm/nf-imm-immdisableime)                             | Desabilita o IME para um thread ou para todos os threads em um processo.                                                             |
-| [**ImmDisableLegacyIME**](/windows/desktop/api/Imm/nf-imm-immdisablelegacyime)                 | Indica que esse thread é um thread de interface do usuário do aplicativo da Windows Store.                                                               |
+| [**ImmDisableLegacyIME**](/windows/desktop/api/Imm/nf-imm-immdisablelegacyime)                 | indica que esse thread é um thread de interface do usuário do aplicativo Windows Store.                                                               |
 | [**ImmDisableTextFrameService**](/windows/desktop/api/Imm/nf-imm-immdisabletextframeservice)   | Preterido. Desabilita o serviço de texto para o thread especificado.                                                            |
 | [**ImmEnumInputContext**](/windows/desktop/api/Imm/nf-imm-immenuminputcontext)                 | Recupera o contexto de entrada para o thread especificado.                                                                      |
 | [**ImmEnumRegisterWord**](/windows/desktop/api/Imm/nf-imm-immenumregisterworda)                 | Enumera as cadeias de caracteres de registro que têm a cadeia de leitura, o estilo e a cadeia de registro especificadas.                           |

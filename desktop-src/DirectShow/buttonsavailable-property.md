@@ -4,12 +4,12 @@ ms.assetid: 4df3a7e7-1be4-4cc7-ad61-567f7f45811e
 title: Propriedade ButtonsAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72cab4afdd9f6e23a376bb72885810b8464f180d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a16e14675238711ef0b572477334fecba0311ca2bb54d67fc3fe012ae6d1ede9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955555"
 ---
 # <a name="buttonsavailable-property"></a>Propriedade ButtonsAvailable
 
@@ -30,9 +30,9 @@ Retorna um valor inteiro que representa o número de botões.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é somente leitura sem valor padrão. Use esse método ao implementar a manipulação de mouse personalizada depois de definir [**DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) como **true**.
+Essa propriedade é somente leitura sem valor padrão. Use esse método ao implementar a manipulação personalizada do mouse depois de [**definir DisableAutoMouseProcessing**](disableautomouseprocessing-property.md) como **true.**
 
-Chame esse método para recuperar o limite superior do intervalo de números de botões válidos.
+Chame esse método para recuperar o limite superior para o intervalo de números de botão válidos.
 
 ## <a name="see-also"></a>Confira também
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: bc7e3e41efc4b44c00c23f0910b8b696940fc1df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 332f123756d1340352524852aa5bcb38fce09612f52554facaf6e5c8c2398e73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047474"
 ---
 # <a name="ieventsubscription2-interface"></a>Interface IEventSubscription2
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de417b03385e51d6a97fd68097f81bcc0cb6b9db
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8467a038db4f5c263253d31c33cb7dc01bb548712918d654b27b7778079d5c20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960525"
 ---
 # <a name="ms-frs-topology-pref-attribute"></a>atributo ms-FRS-Topology-pref
 
@@ -70,7 +70,7 @@ Os valores válidos para esse atributo são os seguintes.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -91,7 +91,7 @@ Os valores válidos para esse atributo são os seguintes.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -112,15 +112,15 @@ Os valores válidos para esse atributo são os seguintes.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -133,15 +133,15 @@ Os valores válidos para esse atributo são os seguintes.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -154,15 +154,15 @@ Os valores válidos para esse atributo são os seguintes.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 

@@ -4,12 +4,12 @@ description: Ao usar a serialização de estilo incremental, você fornece três
 ms.assetid: c7383b4d-94d1-4edd-ac29-c11fb5343156
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 409f8da0881719ec9273f4dd12cc99e3d36c35a3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9bf559e94b4476d5dfabdfbb8f040ce8323bc202f4111e9eae95aa257f8e2b0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929044"
 ---
 # <a name="incremental-serialization"></a>Serialização incremental
 
@@ -52,9 +52,9 @@ O aplicativo pode chamar [**MesDecodeIncrementalHandleCreate**](/windows/desktop
 
 Os parâmetros UserState, Alloc, Write e Read de [**MesIncrementalHandleReset**](/windows/desktop/api/Midles/nf-midles-mesincrementalhandlereset) podem ser **nulos** para não indicar nenhuma alteração.
 
- 
+ 
 
- 
+ 
 
 
 

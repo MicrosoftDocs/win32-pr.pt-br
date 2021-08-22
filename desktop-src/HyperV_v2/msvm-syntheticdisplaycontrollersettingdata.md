@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 52935800eda641eb9015247e9320f33f22b40251
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3adb39294af6dab153338aff17d16d8e44e3f4977617e9ee34e1686534bc35c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949835"
 ---
 # <a name="msvm_syntheticdisplaycontrollersettingdata-class"></a>\_Classe Msvm SyntheticDisplayControllerSettingData
 
@@ -115,7 +115,7 @@ O tipo de resolução.
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1703.
+> adicionado em Windows 10, versão 1703.
 
  
 
@@ -142,7 +142,7 @@ A resolução vertical.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |

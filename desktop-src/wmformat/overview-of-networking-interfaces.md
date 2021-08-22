@@ -3,20 +3,20 @@ title: Visão geral das interfaces de rede
 description: Visão geral das interfaces de rede
 ms.assetid: 7aa7ff1b-9c81-4fee-afa9-2a9eed457360
 keywords:
-- SDK do Windows Media Format, interfaces de rede
-- SDK do Windows Media Format, interfaces
+- Windows SDK do formato de mídia, interfaces de rede
+- Windows SDK do formato de mídia, interfaces
 - ASF (Advanced Systems Format), interfaces de rede
 - ASF (formato de sistemas avançados), interfaces de rede
 - Formato de sistema avançado (ASF), lista de interface para recursos de rede
 - ASF (formato de sistemas avançados), lista de interface para recursos de rede
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebd1c235e7e8b36964993bb24ce30977446d9af8
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 0b87da220f5ac61b7b722e79939a1fd617af46ab6608d4d92e8905f466bb98e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "103640306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118700258"
 ---
 # <a name="overview-of-networking-interfaces"></a>Visão geral das interfaces de rede
 
@@ -39,7 +39,7 @@ Os recursos de rede desse SDK têm suporte por meio de métodos das interfaces a
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -48,9 +48,9 @@ Os recursos de rede desse SDK têm suporte por meio de métodos das interfaces a
 [**Implementando a funcionalidade de rede**](implementing-network-functionality.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

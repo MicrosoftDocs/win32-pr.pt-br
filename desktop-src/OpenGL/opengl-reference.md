@@ -6,12 +6,12 @@ keywords:
 - OpenGL, referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c848ea6aa274ecd2a6b233a37a52c9195c620f51
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 87f6dddf98053cae7d5c15141bb17cd402bff46cab7c01763fcc274cb99b124d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936755"
 ---
 # <a name="opengl-reference"></a>Referência OpenGL
 
@@ -21,9 +21,9 @@ Os elementos de API que o OpenGL fornece se enquadram nas três seções a segui
 -   [Funções GL](gl-functions.md)
 -   [Funções GLU](glu-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 
