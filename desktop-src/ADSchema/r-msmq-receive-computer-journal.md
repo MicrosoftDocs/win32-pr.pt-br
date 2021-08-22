@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Receive-Computer-Journal Extended Right
-description: Permite receber mensagens da fila de diário do computador.
+title: msmq-Receive-computer-Journal estendido direito
+description: Permite o recebimento de mensagens da fila do Diário do Computador.
 ms.assetid: bf8892dc-bb24-4b9b-b46c-8f532e879638
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-recebimento-computador-diário esquema do AD estendido
+- msmq-Receive-computer-Journal estendido direito esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace96b13e6c080a3ebcbe66993d0ec4da025f077
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0cc36d8d6dca0562166339d8228d23561021a0835784669a9638244be965ee0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081140"
 ---
-# <a name="msmq-receive-computer-journal-extended-right"></a>MSMQ-Receive-Computer-Journal Extended Right
+# <a name="msmq-receive-computer-journal-extended-right"></a>msmq-Receive-computer-Journal estendido direito
 
-Permite receber mensagens da fila de diário do computador.
+Permite o recebimento de mensagens da fila do Diário do Computador.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-Receive-Computer-Journal        |
-| Display-Name | Receber diário do computador             |
-| GUID de direitos  | 4b6e08c2-df3c-11d1-9c86-006008764d0e |
+| CN           | msmq-Receive-computer-Journal        |
+| Display-Name | Receber Diário do Computador             |
+| RIGHTS-GUID  | 4b6e08c2-df3c-11d1-9c86-006008764d0e |
 
 
 
@@ -49,8 +49,8 @@ Permite receber mensagens da fila de diário do computador.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite receber mensagens da fila de diário do computador.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -71,8 +71,8 @@ Permite receber mensagens da fila de diário do computador.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite receber mensagens da fila de diário do computador.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite receber mensagens da fila de diário do computador.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite receber mensagens da fila de diário do computador.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
-| Localização-exibição-ID | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 

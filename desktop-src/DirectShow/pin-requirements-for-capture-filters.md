@@ -1,29 +1,29 @@
 ---
-description: Este tópico descreve os requisitos para implementar um PIN de saída em um filtro de captura do DirectShow.
+description: Este tópico descreve os requisitos para implementar um pino de saída em um DirectShow de captura.
 ms.assetid: cb9cda1c-efa2-4abb-934b-21ba8cb80f30
-title: Requisitos de PIN para filtros de captura
+title: Fixar requisitos para filtros de captura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2a97d3e5c0f7fe0f5a9a341899651685df1cdd3
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7e72c74f06970bf6124d0e5dffea458bb41bcd0a19db44acc71a51615aa2fee8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105761979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119316106"
 ---
-# <a name="pin-requirements-for-capture-filters"></a>Requisitos de PIN para filtros de captura
+# <a name="pin-requirements-for-capture-filters"></a>Fixar requisitos para filtros de captura
 
-Este tópico descreve os requisitos para implementar um PIN de saída em um filtro de captura do DirectShow.
+Este tópico descreve os requisitos para implementar um pino de saída em um DirectShow de captura.
 
 ## <a name="pin-name"></a>Nome do pino
 
-Você pode dar um PIN a qualquer nome. Se o nome do PIN começar com o caractere de til (~), o Gerenciador do grafo de filtro não renderizará automaticamente esse PIN quando um aplicativo chamar [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile). Por exemplo, se o filtro tiver um PIN de captura e um PIN de visualização, você poderá nomeá-los como "~ Capture" e "Preview", respectivamente. Se um aplicativo renderizar esse filtro em um grafo, o pino de visualização se conectará ao seu renderizador padrão e nada se conectará ao PIN de captura, que é um comportamento padrão razoável. Isso também pode se aplicar a Pins que fornecem dados informativos que não devem ser renderizados ou Pins que precisam de propriedades personalizadas definidas. Observe que os Pins com o prefixo til (~) ainda podem ser conectados manualmente pelo aplicativo.
+Você pode dar a um pin qualquer nome. Se o nome do pino começar com o caractere til (~), o Gerenciador de Graph do Filtro não renderizará automaticamente esse pin quando um aplicativo chamar [**IGraphBuilder::RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile). Por exemplo, se o filtro tiver um pin de captura e um pin de visualização, você poderá nomeá-los como "~Capture" e "Preview", respectivamente. Se um aplicativo renderizar esse filtro em um grafo, o pino de visualização se conectará ao renderdor padrão e nada se conectará ao pino de captura, que é um comportamento padrão razoável. Isso também pode se aplicar a pinos que entregam dados informacionais que não devem ser renderizados ou a pinos que precisam de propriedades personalizadas definidas. Observe que os pinos com o prefixo til (~) ainda podem ser conectados manualmente pelo aplicativo.
 
-## <a name="pin-category"></a>Fixar categoria
+## <a name="pin-category"></a>Categoria de pino
 
-Um filtro de captura sempre tem um PIN de captura e pode ter um PIN de visualização. Alguns filtros de captura podem ter outros Pins de saída para fornecer outros tipos de dados, como informações de controle. Cada pino de saída deve expor a interface [**IKsPropertySet**](ikspropertyset.md) . Os aplicativos usam essa interface para determinar a categoria do PIN. O PIN normalmente retorna a \_ captura de categoria de PIN \_ ou a visualização de categoria de PIN \_ \_ . Para obter mais informações, consulte [Pin Property Set](pin-property-set.md).
+Um filtro de captura sempre tem um pino de captura e pode ter um pino de visualização. Alguns filtros de captura podem ter outros pinos de saída para fornecer outros tipos de dados, como informações de controle. Cada pino de saída deve expor a interface [**IKsPropertySet.**](ikspropertyset.md) Os aplicativos usam essa interface para determinar a categoria de pino. O pino normalmente retorna PIN \_ CATEGORY CAPTURE ou PIN CATEGORY \_ \_ \_ PREVIEW. Para obter mais informações, consulte [Fixar conjunto de propriedades](pin-property-set.md).
 
-O exemplo a seguir mostra como implementar [**IKsPropertySet**](ikspropertyset.md) para retornar a categoria de PIN em um PIN de captura:
+O exemplo a seguir mostra como implementar [**IKsPropertySet para**](ikspropertyset.md) retornar a categoria de pino em um pin de captura:
 
 
 ```C++
@@ -83,7 +83,7 @@ HRESULT CMyCapturePin::QuerySupported(REFGUID guidPropSet, DWORD dwPropID,
 
 <dl> <dt>
 
-[Gravando filtros de captura](writing-capture-filters.md)
+[Escrevendo filtros de captura](writing-capture-filters.md)
 </dt> </dl>
 
  

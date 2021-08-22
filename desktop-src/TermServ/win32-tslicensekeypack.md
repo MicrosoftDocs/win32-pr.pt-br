@@ -28,12 +28,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d78af398ebf7c137be5b31c9db427691a66a7a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7927270f262d0a66722660bf4b2c8f15cf75f49bb807abcff604af9edf58d99b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137809"
 ---
 # <a name="win32_tslicensekeypack-class"></a>\_Classe Win32 TSLicenseKeyPack
 
@@ -205,7 +205,7 @@ Tipo de pacote de chaves para o servidor de licença Área de Trabalho Remota.
 | 3 | O tipo de pacote de chaves de licença Serviços de Área de Trabalho Remota é uma licença simultânea. |
 | 4 | O tipo de pacote de chaves de licença Serviços de Área de Trabalho Remota é temporário. |
 | 5 | O tipo de pacote de chaves de licença Serviços de Área de Trabalho Remota é uma licença aberta. |
-| 6 | Não há suporte. |
+| 6 | Sem suporte. |
 
 **ProductType**
 </dt> <dd> <dl> <dt>
@@ -220,11 +220,11 @@ Tipo de produto do Serviços de Área de Trabalho Remota pacote de chaves de lic
 
 | Valor | Descrição |
 |-------|-------------|
-| 0 | O tipo de produto do pacote de chaves de licença Serviços de Área de Trabalho Remota é por dispositivo. Portanto, cada dispositivo que se conecta ao servidor de Host da Sessão RD deve ter uma licença. |
-| 1 | O tipo de produto do pacote de chaves de licença Serviços de Área de Trabalho Remota é por usuário. Portanto, cada usuário que se conecta ao servidor de Host da Sessão RD deve ter uma licença. |
-| 2 | Este tipo de produto não é válido. |
+| 0 | O Serviços de Área de Trabalho Remota tipo de produto do pacote de chaves de licença é por dispositivo. Portanto, cada dispositivo que se conecta ao servidor Host da Sessão RD deve ter uma licença. |
+| 1 | O Serviços de Área de Trabalho Remota tipo de produto do pacote de chaves de licença é por usuário. Portanto, cada usuário que se conecta ao servidor Host da Sessão RD deve ter uma licença. |
+| 2 | Esse tipo de produto não é válido. |
 
-**ProductVersion**
+**Productversion**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -233,24 +233,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Versão do produto para o pacote de chaves de licença Serviços de Área de Trabalho Remota.
+Versão do produto para o pacote Serviços de Área de Trabalho Remota chave de licença.
 
 | Valor | Descrição |
 |-------|-------------|
-| "Windows Server 2012" | Somente os servidores que executam o Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com esta licença. |
-| "Windows Server 7" | Somente os servidores que executam o Windows Server 2008 R2 ou o Windows Server 2008 têm suporte com esta licença. |
-| "Windows Server 2008" | Somente os servidores que executam o Windows Server 2008 têm suporte neste pacote de chaves. |
+| "Windows Server 2012" | Somente servidores que executam Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com essa licença. |
+| "Windows Server 7" | Somente servidores que executam Windows Server 2008 R2 ou Windows Server 2008 têm suporte com essa licença. |
+| "Windows Server 2008" | Somente os servidores que executam Windows Server 2008 têm suporte neste pacote de chaves. |
 
-**ProductVersionid**
+**ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identificador de versão do produto para o pacote de chaves de licença Serviços de Área de Trabalho Remota.
+Identificador de versão do produto para Serviços de Área de Trabalho Remota pacote de chaves de licença.
 
 | Valor | Descrição |
 |-------|-------------|
@@ -265,13 +265,13 @@ Identificador de versão do produto para o pacote de chaves de licença Serviço
 **TotalLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número total de licenças no pacote de chaves de licença Serviços de Área de Trabalho Remota.
+Número total de licenças no pacote Serviços de Área de Trabalho Remota chave de licença.
 
 </dd> <dt>
 
@@ -284,7 +284,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Qualificador para tipo e modelo de pacote de chaves de Licenciamento TS. Exemplos: licença de assinatura de VDI por dispositivo, TS CAL por usuário
+Qualificador para o modelo e o tipo de pacote de chaves do Licenciamento do TS. Exemplos: licença de assinatura de VDI por dispositivo, CAL de TS por usuário
 
 </dd> </dl>
 
@@ -292,7 +292,7 @@ Qualificador para tipo e modelo de pacote de chaves de Licenciamento TS. Exemplo
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -303,7 +303,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -312,16 +312,16 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSIssuedLicense Win32**](win32-tsissuedlicense.md)
+[**Win32 \_ TSIssuedLicense**](win32-tsissuedlicense.md)
 </dt> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSLicenseReportEntry Win32**](win32-tslicensereportentry.md)
+[**Win32 \_ TSLicenseReportEntry**](win32-tslicensereportentry.md)
 </dt> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

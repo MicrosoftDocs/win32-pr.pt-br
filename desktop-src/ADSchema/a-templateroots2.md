@@ -1,6 +1,6 @@
 ---
 title: Template-Roots2 atributo
-description: Esse atributo é usado no contêiner de configuração do Exchange para indicar onde os contêineres de modelo são armazenados.
+description: esse atributo é usado no contêiner Exchange config para indicar onde os contêineres de modelo são armazenados.
 ms.assetid: ad9607c7-fd7b-48b3-abdb-1340ef357bd0
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c8e47b2b7ff9bd4a37b0a0ab86976a6515e4e2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e4cebe83ba530d4b620f8d46449d0168b99bd8b2b8e040a4c1e6cad8eba33342
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022053"
 ---
 # <a name="template-roots2-attribute"></a>Template-Roots2 atributo
 
-Esse atributo é usado no contêiner de configuração do Exchange para indicar onde os contêineres de modelo são armazenados. Essas informações são usadas pelo provedor de Active Directory MAPI
+esse atributo é usado no contêiner Exchange config para indicar onde os contêineres de modelo são armazenados. Essas informações são usadas pelo provedor de Active Directory MAPI
 
 
 

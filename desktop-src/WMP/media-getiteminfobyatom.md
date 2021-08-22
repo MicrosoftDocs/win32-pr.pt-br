@@ -1,11 +1,11 @@
 ---
-title: Método Media. getItemInfoByAtom
+title: Método Media.getItemInfoByAtom
 description: O método getItemInfoByAtom recupera o valor do atributo com o número de índice especificado.
 ms.assetid: 6e2dea0c-c722-4737-9e8e-f5cb74156cea
 keywords:
-- método getItemInfoByAtom Windows Media Player
-- método getItemInfoByAtom Windows Media Player, classe de mídia
-- Classe de mídia Windows Media Player, método getItemInfoByAtom
+- Método getItemInfoByAtom Windows Media Player
+- Método getItemInfoByAtom Windows Media Player classe , Media
+- Classe de mídia Windows Media Player método , getItemInfoByAtom
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf54d2ae177a65e1a71b5726090bba90f4ee4e5e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26db8e87a52c0d8c8236b5e4b8b5e7325fb3bb0a995dcbd81da668ea760df660
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135129"
 ---
-# <a name="mediagetiteminfobyatom-method"></a>Método Media. getItemInfoByAtom
+# <a name="mediagetiteminfobyatom-method"></a>Método Media.getItemInfoByAtom
 
-O método **getItemInfoByAtom** recupera o valor do atributo com o número de índice especificado.
+O **método getItemInfoByAtom** recupera o valor do atributo com o número de índice especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,28 +42,28 @@ strRetVal = Media.getItemInfoByAtom(
 
 <dl> <dt>
 
-*índice* \[ do no\]
+*índice* \[ Em\]
 </dt> <dd>
 
-**Número** (**longo**) que especifica o índice no qual um determinado atributo reside no conjunto de atributos disponíveis.
+**Number** (**long**) especificando o índice no qual um determinado atributo reside dentro do conjunto de atributos disponíveis.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna uma **cadeia de caracteres** que representa o valor do atributo especificado. Para atributos cujo valor subjacente é **booliano**, ele retorna a cadeia de caracteres "true" ou "false".
+Esse método retorna uma **Cadeia de** Caracteres que representa o valor do atributo especificado. Para atributos cujo valor subjacente é **booliana,** ele retorna a cadeia de caracteres "true" ou "false".
 
 ## <a name="remarks"></a>Comentários
 
-Esse método pode ser usado para recuperar metadados para um item de mídia digital específico usando um número de índice de atributo. A propriedade **attributeCount** pode ser usada para determinar o número de atributos disponíveis para o item de mídia.
+Esse método pode ser usado para recuperar metadados para um item de mídia digital específico usando um número de índice de atributo. A **propriedade attributeCount** pode ser usada para determinar o número de atributos disponíveis para o item de mídia.
 
-O método **getMediaAtom** do objeto **mediacollection** também pode ser usado para recuperar o índice de um atributo específico. Essa técnica geralmente é mais eficiente do que os métodos **getItemInfo** ou **getItemInfoByType** ao trabalhar com listas de reprodução grandes.
+O **método getMediaAtom** do **objeto MediaCollection** também pode ser usado para recuperar o índice de um atributo específico. Essa técnica geralmente é mais eficiente do que os **métodos getItemInfo** ou **getItemInfoByType** ao trabalhar com playlists grandes.
 
-Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
-Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player..
+Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a referência Windows Media Player [atributo](attribute-reference.md)..
 
-**Windows Media Player 10 Mobile:** Os atributos de um item de mídia estão disponíveis somente durante a reprodução, a menos que sejam recuperados do item por meio da coleção de mídia.
+**Windows Media Player 10 Mobile:** Os atributos de um item de mídia estão disponíveis somente durante a reprodução, a menos que sejam recuperados do item por meio da coleção de mídias.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ Para obter informações sobre os atributos com suporte do Windows Media Player,
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -83,28 +83,28 @@ Para obter informações sobre os atributos com suporte do Windows Media Player,
 [**Objeto de mídia**](media-object.md)
 </dt> <dt>
 
-[**Media. attributeCount**](media-attributecount.md)
+[**Media.attributeCount**](media-attributecount.md)
 </dt> <dt>
 
-[**Media. getItemInfo**](media-getiteminfo.md)
+[**Media.getItemInfo**](media-getiteminfo.md)
 </dt> <dt>
 
-[**Media. getItemInfoByType**](media-getiteminfobytype.md)
+[**Media.getItemInfoByType**](media-getiteminfobytype.md)
 </dt> <dt>
 
-[**Media. setItemInfo**](media-setiteminfo.md)
+[**Media.setItemInfo**](media-setiteminfo.md)
 </dt> <dt>
 
-[**Mediacollection. getMediaAtom**](mediacollection-getmediaatom.md)
+[**MediaCollection.getMediaAtom**](mediacollection-getmediaatom.md)
 </dt> <dt>
 
 [**Lendo valores de atributo**](reading-attribute-values.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

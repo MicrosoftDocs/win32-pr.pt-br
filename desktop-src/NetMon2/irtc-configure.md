@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 702a3883acdbb7509d79e76d8fcc73af1e167e4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f70674d8e570a2640fe301179b21a9f48ec612a17de69e43bdf5c38db4e65af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063906"
 ---
 # <a name="irtcconfigure-method"></a>Método IRTC:: Configure
 
@@ -55,7 +55,7 @@ Um identificador para um BLOB de erro que contém dados de erro adicionais.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -63,7 +63,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 
 
-| Código de retorno                                                                                                         | Description                                                                                                                                                                                               |
+| Código de retorno                                                                                                         | Descrição                                                                                                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**\_blob NMERR \_ não \_ inicializado**</dt> </dl>        | O método **createBlob** não foi chamado.<br/>                                                                                                                                                 |
 | <dl> <dt>**NMERR \_ \_ blob inválido**</dt> </dl>                 | O objeto apontado não é um BLOB.<br/>                                                                                                                                                           |
@@ -109,7 +109,7 @@ O BLOB de erro retornado por *hErrorBlob* contém entradas que monitor de rede n
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: conectar](irtc-connect.md)
+[IRTC:: Conexão](irtc-connect.md)
 </dt> <dt>
 
 [BLOBs de Monitor de Rede](network-monitor-blobs.md)

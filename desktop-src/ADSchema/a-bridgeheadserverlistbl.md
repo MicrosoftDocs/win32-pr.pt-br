@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5df941f323916682158c6c1c3ac59856b31da03f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a84974f099e037d20b349c674a71df9b376ec040e89416dbe42e18e3341f6780
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119307416"
 ---
 # <a name="bridgehead-server-list-bl-attribute"></a>Atributo bridgehead-Server-List-BL
 
@@ -58,7 +58,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -79,7 +79,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -100,7 +100,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -121,7 +121,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -142,7 +142,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -163,7 +163,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -184,7 +184,7 @@ A lista de servidores que são bridgeheads para replicação.
 |------------------------|---------------------------------|
 | ID do link                | 99                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

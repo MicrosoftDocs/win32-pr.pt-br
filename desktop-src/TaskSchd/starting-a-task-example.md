@@ -4,12 +4,12 @@ description: Para iniciar uma tarefa, chame o método Run da interface ITask. Ru
 ms.assetid: 90f197de-7a32-4e4b-b4c0-d3f706e47de1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 325d8d990367a810351ec4eea8b03b7dc0240cd5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f4176bf793e72acd3930d6e1e5cbc3d73e91c1d558e342a5a9804aa8f87526cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105779287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139329"
 ---
 # <a name="starting-a-task-example"></a>Iniciando um exemplo de tarefa
 
@@ -33,7 +33,7 @@ O procedimento a seguir descreve como iniciar uma tarefa.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -42,6 +42,6 @@ O procedimento a seguir descreve como iniciar uma tarefa.
 [Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

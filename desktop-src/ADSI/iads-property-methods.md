@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADs (IADs. h)
-description: Os métodos de propriedade da interface IADs obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações sobre métodos de propriedade, consulte interface Property Methods.
+title: Métodos de propriedade IADs (Iads.h)
+description: Os métodos de propriedade da interface IADs obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações sobre métodos de propriedade, consulte Métodos de propriedade de interface.
 ms.assetid: d2f6f686-a35a-4a9a-9b57-2ceb2f26ef12
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propriedade IADs ADSI
+- ADSI (métodos de propriedade IADs)
 topic_type:
 - apiref
 api_name:
@@ -27,25 +27,25 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1134260c780958bcdba8d1f14eac535ddbf4ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3326bbbf5ea7c2d2a98a6224f9b0a83a738c76a206d343a8629138d4d45e73b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082520"
 ---
 # <a name="iads-property-methods"></a>Métodos de propriedade IADs
 
-Os métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações sobre métodos de propriedade, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações sobre métodos de propriedade, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
 <dl> <dt>
 
-**ADsPath**
+**Adspath**
 </dt> <dd> <dl>
 
-A cadeia de caracteres ADsPath deste objeto. A cadeia de caracteres identifica exclusivamente esse objeto em um ambiente de rede. O objeto sempre pode ser recuperado usando esse caminho.
+A cadeia de caracteres ADsPath desse objeto. A cadeia de caracteres identifica exclusivamente esse objeto em um ambiente de rede. O objeto sempre pode ser recuperado usando esse caminho.
 
 <dt>
 
@@ -95,7 +95,7 @@ HRESULT get_Class(
 **GUID**
 </dt> <dd> <dl>
 
-O identificador global exclusivo do objeto de diretório. A interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) converte o **GUID** de uma cadeia de caracteres de octeto, como armazenado em um servidor de diretório, em um formato de cadeia de caracteres.
+O identificador global exclusivo do objeto de diretório. A [**interface IADs**](/windows/desktop/api/Iads/nn-iads-iads) converte o **GUID** de uma cadeia de caracteres de octeto, conforme armazenado em um servidor de diretório, em um formato de cadeia de caracteres.
 
 <dt>
 
@@ -120,7 +120,7 @@ HRESULT get_GUID(
 **Nome**
 </dt> <dd> <dl>
 
-O nome relativo do objeto como nomeado no serviço de diretório subjacente. Esse nome distingue esse objeto de seus irmãos.
+O nome relativo do objeto conforme nomeado dentro do serviço de diretório subjacente. Esse nome distingue esse objeto de seus irmãos.
 
 <dt>
 
@@ -145,7 +145,7 @@ HRESULT get_Name(
 **Pai**
 </dt> <dd> <dl>
 
-A cadeia de caracteres ADsPath do contêiner pai. Active Directory não permite a formação do ADsPath de um determinado objeto concatenando as propriedades **pai** e **nome** . Embora essa operação possa funcionar em alguns provedores, não há garantia de que ele funcione para todas as implementações. É garantido que o ADsPath seja válido e sempre deve ser usado para recuperar o ponteiro de interface de um objeto.
+A cadeia de caracteres ADsPath do contêiner pai. O Active Directory não permite a formação do ADsPath de um determinado objeto concatenando as **propriedades Pai** **e** Nome. Embora essa operação possa funcionar em alguns provedores, não há garantia de que ela funcione para todas as implementações. O ADsPath é garantido como válido e sempre deve ser usado para recuperar o ponteiro de interface de um objeto.
 
 <dt>
 
@@ -170,7 +170,7 @@ HRESULT get_Parent(
 **Esquema**
 </dt> <dd> <dl>
 
-A cadeia de caracteres ADsPath do objeto de classe de esquema deste objeto.
+A cadeia de caracteres ADsPath do objeto de classe Schema deste objeto .
 
 <dt>
 
@@ -196,7 +196,7 @@ HRESULT get_Schema(
 
 ## <a name="remarks"></a>Comentários
 
-Em Active Directory, o **GUID** RETORNADO de GUID é uma cadeia de caracteres hexadecimais. Use o **GUID** resultante para associar diretamente ao objeto.
+No Active Directory, o **GUID retornado** do GUID é uma cadeia de caracteres hexadecimals. Use o **GUID resultante** para se vincular ao objeto diretamente.
 
 
 ```VB
@@ -206,28 +206,28 @@ Set x = GetObject("LDAP://servername/<GUID=xxx>")
 
 
 
-em que xxx é o valor retornado da propriedade GUID. Para obter mais informações, consulte [usando objectGUID para associar a um objeto](/windows/desktop/AD/using-objectguid-to-bind-to-an-object). Lembre-se de que, se você usar um GUID para associar a um objeto, o método de propriedade **ADsPath** retornará valores diferentes dos valores normais que seriam retornados se você usava um DN (nome distinto) para ligar ao mesmo objeto. Por exemplo, a tabela a seguir lista os valores retornados ao usar os dois métodos de associação diferentes para associar ao mesmo objeto de usuário.
+em que xxx é o valor retornado da propriedade GUID. Para obter mais informações, [consulte Usando objectGUID para se vincular a um objeto](/windows/desktop/AD/using-objectguid-to-bind-to-an-object). Esteja ciente de que se você usar um GUID para se vincular a um objeto, o método de propriedade **ADsPath** retornará valores diferentes dos valores normais que seriam retornados se você tivesse usado um DN (nome diferenciado) para se vincular ao mesmo objeto. Por exemplo, a tabela a seguir lista os valores retornados ao usar os dois métodos de associação diferentes para se vincular ao mesmo objeto de usuário.
 
 
 
-|             | Associar usando DN                                           | Associar usando GUID                                             |
+|             | Vincular usando DN                                           | Vincular usando GUID                                             |
 |-------------|---------------------------------------------------------|-------------------------------------------------------------|
-| **Nome**    | CN = Jeff Smith                                           | CN = Jeff Smith                                               |
+| **Nome**    | CN=Jeff Smith                                           | CN=Jeff Smith                                               |
 | **Pai**  | LDAP://server/CN=Users,DC=Fabrikam,DC=com               | LDAP://server/CN=Users,DC=Fabrikam,DC=com                   |
-| **ADsPath** | LDAP://server/CN=Jeff Smith, CN = Users, DC = Fabrikam, DC = com | LDAP://server/<GUID = c0f59dfcf507d311a99e0000f879f7c7> |
+| **Adspath** | LDAP://server/CN=Jeff Smith,CN=Users,DC=Fabrikam,DC=com | LDAP://server/<GUID=c0f59dfcf507d311a99e0000f879f7c7> |
 
 
 
  
 
 > [!Note]  
-> O provedor WinNT não dá suporte à vinculação usando o **GUID** do objeto e retorna a propriedade **GUID** em um formato de cadeia de caracteres ligeiramente diferente.
+> O provedor WinNT não dá suporte à associação usando o **GUID** do objeto e retorna a **propriedade GUID** em um formato de cadeia de caracteres ligeiramente diferente.
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra como recuperar dados de objeto usando métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) .
+O exemplo de código a seguir mostra como recuperar dados de objeto usando métodos de propriedade da interface [**IADs.**](/windows/desktop/api/Iads/nn-iads-iads)
 
 
 ```VB
@@ -261,7 +261,7 @@ Cleanup:
 
 
 
-O exemplo de código a seguir mostra como recuperar dados de objeto usando métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) .
+O exemplo de código a seguir mostra como recuperar dados de objeto usando métodos de propriedade da interface [**IADs.**](/windows/desktop/api/Iads/nn-iads-iads)
 
 
 ```VB
@@ -292,7 +292,7 @@ Next op
 
 
 
-O exemplo de código a seguir mostra como trabalhar com os métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) .
+O exemplo de código a seguir mostra como trabalhar com os métodos de propriedade da interface [**IADs.**](/windows/desktop/api/Iads/nn-iads-iads)
 
 
 ```C++
@@ -373,9 +373,9 @@ int main(int argc, char* argv[])
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADs é definido como FD8256D0-FD15-11CE-ABC4-02608C9E7553<br/>                 |
+| IID<br/>                      | As IADs de IID são definidas como \_ FD8256D0-FD15-11CE-ABC4-02608C9E7553<br/>                 |
 
 
 
@@ -383,7 +383,7 @@ int main(int argc, char* argv[])
 
 <dl> <dt>
 
-[**IADs**](/windows/desktop/api/Iads/nn-iads-iads)
+[**Iads**](/windows/desktop/api/Iads/nn-iads-iads)
 </dt> <dt>
 
 [**IADsContainer**](/windows/desktop/api/Iads/nn-iads-iadscontainer)

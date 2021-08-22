@@ -1,48 +1,48 @@
 ---
 title: Exemplo de gatilho diário (C++)
-description: Este exemplo de C++ mostra como criar uma tarefa que está agendada para executar o bloco de notas diariamente.
+description: Este exemplo do C++ mostra como criar uma tarefa agendada para execução Bloco de notas diariamente.
 ms.assetid: f1038142-b83e-4159-9a7b-db2ae4ed3bd2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05778de5740b30f3a7593873e3c9d09c209b807a
-ms.sourcegitcommit: 4834b022f93dae550cfc43068fe9e2c63d86e364
+ms.openlocfilehash: 251ef89dec6955f7a205748589f506635565ce6bf876a3d204e66ebcba37bca6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "105754177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139549"
 ---
 # <a name="daily-trigger-example-c"></a>Exemplo de gatilho diário (C++)
 
-Este exemplo de C++ mostra como criar uma tarefa que está agendada para executar o bloco de notas diariamente. A tarefa contém um gatilho diário que especifica um limite inicial e um intervalo de dias para a tarefa ser iniciada. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa. A tarefa também contém uma ação que especifica a tarefa para executar o bloco de notas.
+Este exemplo do C++ mostra como criar uma tarefa agendada para execução Bloco de notas diariamente. A tarefa contém um gatilho diário que especifica um limite inicial e um intervalo de dia para a tarefa iniciar. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa. A tarefa também contém uma ação que especifica a tarefa a ser executada Bloco de notas.
 
 O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável diariamente.
 
-**Para agendar o bloco de notas para iniciar diariamente**
+**Para agendar Bloco de notas iniciar diariamente**
 
-1.  Inicialize COM e defina a segurança COM geral.
-2.  Crie o objeto [**o ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+1.  Inicializar COM e definir a segurança COM geral.
+2.  Crie o [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Esse objeto permite que você crie tarefas em uma pasta especificada.
 
-3.  Obtenha uma pasta de tarefas na qual criar uma tarefa.
+3.  Obter uma pasta de tarefas na onde criar uma tarefa.
 
-    Use o método [**o ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obter a pasta e o método [**O ITaskService:: NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para criar o objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Use o [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obter a pasta e o método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para criar o objeto [**ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Defina informações sobre a tarefa usando o objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como as informações de registro para a tarefa.
+4.  Defina informações sobre a tarefa usando [**o objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como as informações de registro da tarefa.
 
-    Use a [**Propriedade RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e outras propriedades da interface [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir as informações da tarefa.
+    Use a [**propriedade RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) e outras propriedades da interface [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir as informações da tarefa.
 
-5.  Crie um gatilho diário usando a [**Propriedade Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acessar a interface [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) da tarefa.
+5.  Crie um gatilho diário usando a propriedade [**Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acessar a interface [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) da tarefa.
 
-    Use o método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que você deseja criar um gatilho diário. Você pode definir o limite inicial e o intervalo de dias para o gatilho para que as ações da tarefa sejam agendadas para serem executadas em um horário especificado em determinados dias. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa.
+    Use o [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que você deseja criar um gatilho diário. Você pode definir o limite inicial e o intervalo de dias para o gatilho para que as ações da tarefa sejam agendadas para serem executadas em um horário especificado em determinados dias. O exemplo também mostra como definir um padrão de repetição para o gatilho repetir a tarefa.
 
-6.  Crie uma ação para a tarefa Executar usando a [**Propriedade Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acessar a interface [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) para a tarefa.
+6.  Crie uma ação para a tarefa a ser executada usando a propriedade Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para acessar a interface [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) da tarefa.
 
-    Use o método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar o tipo de ação que você deseja criar. Este exemplo usa um objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa uma ação que executa uma operação de linha de comando.
+    Use o [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar o tipo de ação que você deseja criar. Este exemplo usa um [**objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa uma ação que executa uma operação de linha de comando.
 
-7.  Registre a tarefa usando o método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+7.  Registre a tarefa usando [**o método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-O exemplo de C++ a seguir mostra como agendar uma tarefa para executar o bloco de notas diariamente.
+O exemplo de C++ a seguir mostra como agendar uma tarefa para executar Bloco de notas diariamente.
 
 
 ```C++
@@ -432,9 +432,9 @@ int __cdecl wmain()
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

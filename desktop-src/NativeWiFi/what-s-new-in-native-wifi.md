@@ -4,12 +4,12 @@ ms.assetid: 76d60b95-a34a-4747-b0fa-9230aa60bd63
 title: Novidades no Wi-Fi nativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2126627f4cf6431fbac2bf4d1f6ec58561bfd8bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4a9430fa2c1645d574f8b4ab851a8cf5ce1407139cfe63a6aabeb3ebfd57abd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064856"
 ---
 # <a name="whats-new-in-native-wifi"></a>Novidades no Wi-Fi nativo
 
@@ -23,7 +23,7 @@ O suporte para hotspot 2,0 foi adicionado ao [esquema de \_ perfil WLAN](wlan-pr
 
 ## <a name="windows-8-and-windows-server-2012"></a>Windows 8 e Windows Server 2012
 
-Os recursos a seguir foram adicionados às APIs nativas do wifi no Windows 8 e no Windows Server 2012.
+os recursos a seguir foram adicionados às APIs nativas do Wifi em Windows 8 e Windows Server 2012.
 
 Um Wi-Fi recurso direto com base no desenvolvimento do Wi-Fi especificação técnica ponto a ponto v 1.1 pela Aliança de Wi-Fi (consulte [especificações publicadas da Wi-Fi Alliance](https://www.wi-fi.org/)). O objetivo do Wi-Fi especificação técnica ponto a ponto é fornecer uma solução para Wi-Fi conectividade de dispositivo para dispositivo sem a necessidade de um ponto de acesso sem fio (AP sem fio) configurar a conexão ou o uso do mecanismo existente Wi-Fi adhoc (IBSS).
 
@@ -40,7 +40,7 @@ As funções a seguir dão suporte ao recurso direto Wi-Fi.
 
 ## <a name="windows-7-and-windows-server-2008-r2"></a>Windows 7 e Windows Server 2008 R2
 
-Os recursos a seguir foram adicionados às APIs nativas do wifi no Windows 7 e no Windows Server 2008 R2.
+os recursos a seguir foram adicionados às APIs nativas do Wifi no Windows 7 e Windows Server 2008 R2.
 
 A rede hospedada sem fio permite que um único adaptador sem fio físico se conecte como um cliente a um ponto de acesso de hardware (AP), ao mesmo tempo que atua como um AP de software, permitindo que outros dispositivos com capacidade de conexão sem fio se conectem a ele.
 

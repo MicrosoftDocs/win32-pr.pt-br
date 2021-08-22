@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks IBStripCutValueCb (D3DX12. h)
-description: Chama o retorno de chamada da faixa do buffer de índice-recortar valor do subobjeto de um objeto que implementa essa interface.
+title: Método ID3DX12PipelineParserCallbacks IBStripCutValueCb (D3DX12.h)
+description: Chama o subobjeto de subobjeto de valor de recortar buffer de índice de um objeto que implementa essa interface.
 ms.assetid: 702CA90A-FF20-4554-9469-C86428C203BC
 keywords:
 - Método IBStripCutValueCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f79fca93e76f43b97ffc8e133594805214fe84cc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fbdbbe2d66ae38a3bcd04ee84e6db15841d8f74a3b0d311552a51a892445b38f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124064"
 ---
-# <a name="id3dx12pipelineparsercallbacksibstripcutvaluecb-method"></a>Método ID3DX12PipelineParserCallbacks:: IBStripCutValueCb
+# <a name="id3dx12pipelineparsercallbacksibstripcutvaluecb-method"></a>Método ID3DX12PipelineParserCallbacks::IBStripCutValueCb
 
-Chama o retorno de chamada da faixa do buffer de índice-recortar valor do subobjeto de um objeto que implementa essa interface.
+Chama o subobjeto de subobjeto de valor de recortar buffer de índice de um objeto que implementa essa interface.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,13 +46,13 @@ void IBStripCutValueCb(
 *IBStripCutValue* 
 </dt> <dd>
 
-Tipo: **[ **\_ valor de \_ \_ \_ recorte \_ da faixa de buffer do índice D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_index_buffer_strip_cut_value)**
+Tipo: **[ **D3D12 \_ INDEX BUFFER STRIP CUT \_ \_ \_ \_ VALUE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_index_buffer_strip_cut_value)**
 
-Detalhes da faixa do buffer de índice – recortar valor do subobjeto analisado de um fluxo de estado do pipeline.
+Detalhes do subobjeto de valor de recortar de buffer de índice analisado de um fluxo de estado do pipeline.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 
@@ -62,8 +62,8 @@ Não retorna nada.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Não retorna nada.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Valor de \_ \_ \_ recorte de faixa de buffer de índice D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_index_buffer_strip_cut_value)
+[**VALOR DE RECORTAR FAIXA DE \_ \_ BUFFER \_ DE \_ \_ ÍNDICE D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_index_buffer_strip_cut_value)
 </dt> </dl>
 
  

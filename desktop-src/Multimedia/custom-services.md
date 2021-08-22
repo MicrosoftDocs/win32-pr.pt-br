@@ -12,12 +12,12 @@ keywords:
 - função mmioOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e41e3c5974fee9903c0864b1cfefccc8354b26a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c8c2418d3a87669527feda37547674bee83175dd6e4533312e8b89c346048c04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144569"
 ---
 # <a name="custom-services"></a>Serviços personalizados
 
@@ -48,6 +48,6 @@ Você também pode criar mensagens personalizadas e enviá-las para o procedimen
 
 Além de processar mensagens, um procedimento de e/s deve manter o membro **lDiskOffset** da estrutura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) (apontado pelo parâmetro *lpmmioinfo* da função **mmioOpen** ). O membro **lDiskOffset** sempre deve conter o deslocamento do arquivo para o local que a próxima MMIOM \_ leitura ou a mensagem de gravação de MMIOM \_ será acessada. O deslocamento é especificado em bytes e é relativo ao início do arquivo. O procedimento de e/s pode usar o membro **adwInfo** para manter qualquer informação de estado necessária. O procedimento de e/s não deve modificar nenhum outro membro na estrutura **MMIOINFO** .
 
- 
+ 
 
- 
+ 

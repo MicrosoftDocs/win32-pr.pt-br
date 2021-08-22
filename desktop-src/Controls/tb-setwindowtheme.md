@@ -3,7 +3,7 @@ title: Mensagem de TB_SETWINDOWTHEME (commctrl. h)
 description: Define o estilo visual de um controle ToolBar.
 ms.assetid: 8b05c561-af66-47e7-8ef3-7f9f81da4840
 keywords:
-- Controles de TB_SETWINDOWTHEME de mensagens do Windows
+- controles de Windows de mensagem de TB_SETWINDOWTHEME
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0c293e974eee2e7827225efb06cc439fdf2c39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d1f3f4ae5f6e7a3a05670a8ba9bfe533156e1ef3e6043ff2a039744da705da39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078120"
 ---
 # <a name="tb_setwindowtheme-message"></a>TB de \_ mensagem SETWINDOWTHEME
 
@@ -39,7 +39,7 @@ Ponteiro para uma cadeia de caracteres Unicode que contém o estilo visual da ba
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -58,9 +58,9 @@ O envio dessa mensagem é equivalente a chamar [**SetWindowTheme**](/windows/des
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

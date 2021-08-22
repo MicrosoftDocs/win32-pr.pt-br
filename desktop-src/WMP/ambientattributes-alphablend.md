@@ -3,7 +3,7 @@ title: Ambienteattributes. alphaBlend
 description: O atributo alphaBlend especifica ou recupera um valor para a mistura alfa de qualquer exibição, subexibição ou widget de interface do usuário.
 ms.assetid: a6c47d32-a497-4bfa-8fa3-ef94e267d94b
 keywords:
-- AlphaBlend do Windows Media Player de ambiente.
+- Windows Media Player ambientalattributes. alphaBlend
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c0f0cb9d885f643b39acfbc5148403a5c8b788
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 84b7170931c8fc266fdc335076dbc6dc687795f9bb432518b62a39d1f610b601
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119391706"
 ---
 # <a name="ambientattributesalphablend"></a>Ambienteattributes. alphaBlend
 
@@ -38,7 +38,7 @@ Esse atributo permite que um elemento apareça semitransparente, dependendo da q
 Quando você usa **alphaBlend** com um elemento de **texto** que não tem o **backgroundColor** especificado, uma cor de plano de fundo de preto será usada. Se a cor de primeiro plano também for preta (que é o valor padrão para *texto*.**foregroundColor**), seu texto pode se tornar ilegível. Para evitar isso, sempre especifique o atributo **backgroundColor** ou defina **foregroundColor** como uma cor diferente de preto.
 
 > [!Note]  
-> Não há suporte para esse atributo no Windows 98.
+> não há suporte para esse atributo no Windows 98.
 
  
 

@@ -4,12 +4,12 @@ description: Tabelas do acelerador
 ms.assetid: 4F2CFD7C-90D3-4C3F-9A42-05B915914EF6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2951ee99a31a977e0909de5639fa3110cea10e0b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 504749b6fad794f5f587e035f0dbc81662aa8b5faaf9b9eb13de365dd9a8d312
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146439"
 ---
 # <a name="accelerator-tables"></a>Tabelas do acelerador
 
@@ -23,10 +23,10 @@ Os aplicativos geralmente definem atalhos de teclado, como CTRL + O para o coman
 Uma *tabela de acelerador* é um recurso de dados que mapeia combinações de teclado, como CTRL + O, para comandos de aplicativo. Antes de veremos como usar uma tabela de acelerador, precisaremos de uma rápida introdução aos recursos. Um *recurso* é um blob de dados que é compilado em um binário de aplicativo (exe ou dll). Os recursos armazenam dados que são necessários para o aplicativo, como menus, cursores, ícones, imagens, cadeias de caracteres de texto ou qualquer dado de aplicativo personalizado. O aplicativo carrega os dados do recurso do binário em tempo de execução. Para incluir recursos em um binário, faça o seguinte:
 
 1.  Crie um arquivo de definição de recurso (. rc). Esse arquivo define os tipos de recursos e seus identificadores. O arquivo de definição de recurso pode incluir referências a outros arquivos. Por exemplo, um recurso de ícone é declarado no arquivo. rc, mas a imagem de ícone é armazenada em um arquivo separado.
-2.  Use o compilador de recursos do Microsoft Windows (RC) para compilar o arquivo de definição de recurso em um arquivo de recurso compilado (. res). O compilador RC é fornecido com o Visual Studio e também o SDK do Windows.
+2.  Use o compilador de recursos do Microsoft Windows (RC) para compilar o arquivo de definição de recurso em um arquivo de recurso compilado (. res). o compilador RC é fornecido com Visual Studio e também o SDK do Windows.
 3.  Vincule o arquivo de recurso compilado ao arquivo binário.
 
-Essas etapas são aproximadamente equivalentes ao processo de compilação/vínculo para arquivos de código. O Visual Studio fornece um conjunto de editores de recursos que facilitam a criação e a modificação de recursos. (Essas ferramentas não estão disponíveis nas Express Editions do Visual Studio.) Mas um arquivo. rc é simplesmente um arquivo de texto, e a sintaxe é documentada no MSDN, portanto, é possível criar um arquivo. rc usando qualquer editor de texto. Para obter mais informações, consulte [About Resource files](/windows/desktop/menurc/about-resource-files).
+Essas etapas são aproximadamente equivalentes ao processo de compilação/vínculo para arquivos de código. Visual Studio fornece um conjunto de editores de recursos que facilitam a criação e a modificação de recursos. (Essas ferramentas não estão disponíveis nas edições Express do Visual Studio.) Mas um arquivo. rc é simplesmente um arquivo de texto, e a sintaxe é documentada no MSDN, portanto, é possível criar um arquivo. rc usando qualquer editor de texto. Para obter mais informações, consulte [About Resource files](/windows/desktop/menurc/about-resource-files).
 
 ## <a name="defining-an-accelerator-table"></a>Definindo uma tabela de acelerador
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4d3a113be935f77dbd62b2f3fac4c16c7cac9881
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 079c5f1b437c2755bf7125dee6be10baed1a91b4a37276997e70543c72904036
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128338"
 ---
 # <a name="d3dx10unsetalldeviceobjects-function"></a>Função D3DX10UnsetAllDeviceObjects
 
@@ -49,7 +49,7 @@ Ponteiro para o dispositivo. Consulte a [**interface ID3D10Device**](/windows/de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

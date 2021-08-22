@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 0cb9697315a6f9dd2436cd7a64d54fa6b44e00f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16edb529cb5a1cf6e2badd19c3ac37f1e7ec69649fb854f98ff0b515c573f874
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141079"
 ---
 # <a name="iscardiso7816readrecord-method"></a>Método ISCardISO7816:: ReadRecord
 
-\[O método **ReadRecord** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **ReadRecord** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método **ReadRecord** constrói um comando APDU ( [*unidade de dados de protocolo de aplicativo*](../secgloss/a-gly.md) ) que lê o conteúdo dos registros especificados ou a parte inicial de um registro de um arquivo elementar.
 
@@ -73,7 +73,7 @@ Codificação do controle de referência.
 | <span id="Last_Occur"></span><span id="last_occur"></span><span id="LAST_OCCUR"></span><dl> <dt>**Última ocorrência**</dt> </dl>     | Posição do bit:-----001<br/> Leia a última ocorrência. <br/>                    |
 | <span id="Next_Occur"></span><span id="next_occur"></span><span id="NEXT_OCCUR"></span><dl> <dt>**Na próxima ocorrência**</dt> </dl>     | Posição do bit:-----010<br/> Leia a próxima ocorrência. <br/>                    |
 | <span id="Previous"></span><span id="previous"></span><span id="PREVIOUS"></span><dl> <dt>**Anterior**</dt> </dl>             | Posição do bit:-----011<br/> Ler ocorrência anterior. <br/>                |
-| <span id="Secret"></span><span id="secret"></span><span id="SECRET"></span><dl> <dt>**RADIUS**</dt> </dl>                     | Posição do bit:---xxxxx<br/>                                                      |
+| <span id="Secret"></span><span id="secret"></span><span id="SECRET"></span><dl> <dt>**Segredo**</dt> </dl>                     | Posição do bit:---xxxxx<br/>                                                      |
 
 
 
@@ -99,13 +99,13 @@ No retorno, ele é preenchido com o comando APDU construído por essa operação
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
 
 
-| Código de retorno                                                                                   | Description                                  |
+| Código de retorno                                                                                   | Descrição                                  |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operação concluída com sucesso.<br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Parâmetro inválido.<br/>                |
@@ -136,11 +136,11 @@ Além dos códigos de erro COM listados acima, essa interface pode retornar um c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Scardssp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scardsrv. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardISO7816 é definido como 53B6AA68-3F56-11D0-916B-00AA00C18068<br/>        |
@@ -157,7 +157,7 @@ Além dos códigos de erro COM listados acima, essa interface pode retornar um c
 [**ISCardISO7816**](iscardiso7816.md)
 </dt> <dt>
 
-[**Atualizarregistro**](iscardiso7816-updaterecord.md)
+[**UpdateRecord**](iscardiso7816-updaterecord.md)
 </dt> <dt>
 
 [**WriteRecord**](iscardiso7816-writerecord.md)

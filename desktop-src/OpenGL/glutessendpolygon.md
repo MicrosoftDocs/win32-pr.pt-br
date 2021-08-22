@@ -1,9 +1,9 @@
 ---
-title: função gluTessEndPolygon (Glu. h)
-description: As funções gluTessBeginPolygon e gluTessEndPolygon delimitam uma descrição de polígono. | função gluTessEndPolygon (Glu. h)
+title: Função gluTessEndPolygon (Glu.h)
+description: As funções gluTessBeginPolygon e gluTessEndPolygon delimitam uma descrição de polígono. | Função gluTessEndPolygon (Glu.h)
 ms.assetid: c9ae2075-59d7-4c1a-b720-0aa05954525c
 keywords:
-- função gluTessEndPolygon OpenGL
+- Função gluTessEndPolygon OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8353f9176e5bdb64dc0e3cd21bd42735e57b541b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 65102f1627df682508725d46fc5fa299244e767c318382eacaf3585aa4a471e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105780185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061544"
 ---
-# <a name="glutessendpolygon-function"></a>função gluTessEndPolygon
+# <a name="glutessendpolygon-function"></a>Função gluTessEndPolygon
 
-As funções [**gluTessBeginPolygon**](glutessbeginpolygon.md) e **gluTessEndPolygon** delimitam uma descrição de polígono.
+As [**funções gluTessBeginPolygon**](glutessbeginpolygon.md) e **gluTessEndPolygon** delimitam uma descrição de polígono.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ void WINAPI gluTessEndPolygon(
 
 <dl> <dt>
 
-*tess* 
+*Tess* 
 </dt> <dd>
 
 O objeto de mosaico (criado com [**gluNewTess**](glunewtess.md)).
@@ -53,15 +53,15 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-As funções [**gluTessBeginPolygon**](glutessbeginpolygon.md) e **gluTessEndPolygon** delimitam a definição de um polígono nonconvex. Em cada par **gluTessBeginPolygon**  /  **gluTessEndPolygon** , inclua uma ou mais chamadas para [**gluTessBeginContour**](glutessbegincontour.md). Dentro de cada contorno, há zero ou mais chamadas para [**gluTessVertex**](glutessvertex.md). Os vértices especificam uma delimitação fechada (o último vértice de cada contorno é automaticamente vinculado ao primeiro).
+As [**funções gluTessBeginPolygon**](glutessbeginpolygon.md) e **gluTessEndPolygon** delimitam a definição de um polígono nãoconvex. Dentro de **cada par gluTessBeginPolygon**  /  **gluTessEndPolygon,** inclua uma ou mais chamadas para [**gluTessBeginContour.**](glutessbegincontour.md) Em cada contorno, há zero ou mais chamadas para [**gluTessVertex.**](glutessvertex.md) Os vértices especificam um contorno fechado (o último vértice de cada contorno é vinculado automaticamente ao primeiro).
 
-O parâmetro de *\_ dados Polygon* é um ponteiro para uma estrutura de dados definida pelo programador. Se os retornos de chamada apropriados forem especificados (consulte [*gluTessCallback*](glutess.md)), esse ponteiro será retornado para a função ou funções de retorno de chamada, tornando-o uma maneira conveniente de armazenar informações por polígono.
+O *parâmetro de dados de \_ polígono* é um ponteiro para uma estrutura de dados definida pelo programador. Se os retornos de chamada apropriados são especificados (consulte [*gluTessCallback*](glutess.md)), esse ponteiro é retornado para a função ou funções de retorno de chamada, tornando-o uma maneira conveniente de armazenar informações por polígono.
 
-Quando você chama **gluTessEndPolygon**, o polígono é mosaico e os triângulos resultantes são descritos por meio de retornos de chamada. Para obter descrições das funções de retorno de chamada, consulte [*gluTessCallback*](glutess.md).
+Quando você chama **gluTessEndPolygon**, o polígono é mosaico e os triângulos resultantes são descritos por meio de retornos de chamada. Para ver descrições das funções de retorno de chamada, [*consulte gluTessCallback*](glutess.md).
 
 ## <a name="examples"></a>Exemplos
 
-O seguinte descreve um diamante com um buraco triangular:
+O seguinte descreve um quedasateral com um orifício triangular:
 
 ``` syntax
 gluTessBeginPolygon(tobj, NULL); 
@@ -87,8 +87,8 @@ gluTessEndPolygon(tobj);
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>GLU. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

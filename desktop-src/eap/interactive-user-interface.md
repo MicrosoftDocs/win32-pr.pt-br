@@ -4,12 +4,12 @@ description: O fornecedor que implementa o protocolo de autenticação também p
 ms.assetid: 4f8ba0a4-3b52-4e7c-9e67-748f8d81d7a2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 761799969f4e439a65534ab551f09b3788e95ba7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 811f35ac3492e45e80721f800925a003edbb8116ac8c199a1b633e08a28de675
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105764981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117776"
 ---
 # <a name="interactive-user-interface"></a>Interface do usuário interativa
 
@@ -29,6 +29,6 @@ Para exibir a interface do usuário interativa, o protocolo de autenticação de
 
 O serviço de autenticação invoca a interface do usuário interativa chamando [**RasEapInvokeInteractiveUI**](/previous-versions/windows/desktop/api/Raseapif/nf-raseapif-raseapinvokeinteractiveui). Em seguida, o serviço passa o protocolo de autenticação um ponteiro para os dados retornados pela interface do usuário interativa na chamada subsequente para [**RasEapMakeMessage**](/previous-versions/windows/desktop/legacy/aa363532(v=vs.85)). O ponteiro é passado como um membro de uma estrutura de [**\_ \_ entrada PPP EAP**](/windows/desktop/api/Raseapif/ns-raseapif-ppp_eap_input) . Depois que **RasEapMakeMessage** retorna, o serviço chama [**RasEapFreeMemory**](/previous-versions/windows/desktop/api/Raseapif/nf-raseapif-raseapfreememory) para liberar a memória ocupada pelas informações. Portanto, o protocolo de autenticação deve copiar as informações em um buffer de memória privada durante a chamada para **RasEapMakeMessage**.
 
- 
+ 
 
- 
+ 

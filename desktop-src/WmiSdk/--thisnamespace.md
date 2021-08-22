@@ -15,12 +15,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 440ccdf0eda794b5d648cae756f9a9c808eb2db6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02e92bd8cb1c1827af86d23320e7347baa08c395d32def8c9b8adea2fcfd35bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132019"
 ---
 # <a name="__thisnamespace-class"></a>\_\_classe thisNAMESPACE
 
@@ -59,7 +59,7 @@ Tipo de dados: matriz **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descritor de segurança que descreve quem pode acessar o namespace e quem pode ler ou gravar no namespace. Esta propriedade é herdada do [**\_ \_ evento**](--event.md). Para obter mais informações sobre o formato dos descritores de segurança, consulte [descritores de segurança](/windows/desktop/SecAuthZ/security-descriptors) na seção segurança do SDK do Windows.
+Descritor de segurança que descreve quem pode acessar o namespace e quem pode ler ou gravar no namespace. Esta propriedade é herdada do [**\_ \_ evento**](--event.md). para obter mais informações sobre o formato dos descritores de segurança, consulte [descritores de segurança](/windows/desktop/SecAuthZ/security-descriptors) na seção segurança do SDK do Windows.
 
 </dd> </dl>
 

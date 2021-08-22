@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - mxdc.h
-ms.openlocfilehash: 7c1a8370d2cfa1ada9fda2d2d99b9fe500b79d31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8e0a46766f38aec16758a1efc9c0cbc775c2131b1279dcc47f92ed41e77c0e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099050"
 ---
 # <a name="mxdc_s0page_passthrough_escape_t-structure"></a>\_ \_ \_ Estrutura T de escape de passagem MXDC S0PAGE \_
 
@@ -90,9 +90,9 @@ O consumo de streaming será mais eficiente se você chamar [**ExtEscape**](/win
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mxdc. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mxdc. h</dt> </dl> |
 
 
 

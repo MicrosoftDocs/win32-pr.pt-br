@@ -4,16 +4,16 @@ ms.assetid: b65a6874-fffb-41af-8620-27d4036cc7b2
 title: Cálculo de valores de contador
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: c37c5cf128d31011f184baaa6b8543ecfa8c48c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 466c4e4066b0e45fa36a2822ef1439617be545585fd56a5cba8fb664e91f5cc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061244"
 ---
 # <a name="calculating-counter-values"></a>Cálculo de valores de contador
 
-A maioria dos tipos de contador usa uma fórmula para calcular um valor de exibição para o contador. Para obter uma lista de tipos de contadores e suas fórmulas, consulte a seção tipos de contadores do [Kit de implantação do Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)). Se o contador exigir dois exemplos para calcular o valor de exibição, o sinalizador do tipo de contador `PERF_DELTA_COUNTER` será definido.
+A maioria dos tipos de contador usa uma fórmula para calcular um valor de exibição para o contador. para obter uma lista de tipos de contadores e suas fórmulas, consulte a seção tipos de contadores do [Kit de implantação do Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)). Se o contador exigir dois exemplos para calcular o valor de exibição, o sinalizador do tipo de contador `PERF_DELTA_COUNTER` será definido.
 
 O exemplo a seguir mostra como usar os dados brutos para calcular um valor de exibição para cada tipo de contador. Este exemplo baseia-se no exemplo em [recuperando dados do contador](retrieving-counter-data.md).
 

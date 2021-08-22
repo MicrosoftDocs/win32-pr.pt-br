@@ -4,12 +4,12 @@ ms.assetid: 1f5c3458-70ca-45ba-ac33-5c7b9f092320
 title: Recuperando de um erro de Invalid-Device
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca20c32be46367f53a14ce26c39f980e3649b652
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9a9f56972aeeae5cfb370a656a621c6b6e206f8caa115bec33203cab7eded3e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318556"
 ---
 # <a name="recovering-from-an-invalid-device-error"></a>Recuperando de um erro de Invalid-Device
 
@@ -41,13 +41,13 @@ Um aplicativo que seleciona um dispositivo específico pode tentar se recuperar 
 
 A etapa 2 pode ter êxito se o dispositivo que está sendo usado pelo aplicativo tiver sido reconfigurado, mas não estiver desabilitado ou removido. Se for bem-sucedido, a etapa 2 permitirá que o aplicativo continue a usar automaticamente o mesmo dispositivo sem exigir a intervenção do usuário. A etapa 3 é apropriada se o aplicativo permitir que o usuário selecione explicitamente outro dispositivo depois que o usuário tiver desabilitado ou removido o dispositivo usado anteriormente.
 
-Um aplicativo pode determinar mais precisamente a causa de um erro de dispositivo inválido ao se registrar para receber uma notificação quando uma sessão perde sua conexão com um dispositivo. Para habilitar essa notificação, o aplicativo implementa uma interface [**IAudioSessionEvents**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) e chama o método [**IAudioSessionControl:: RegisterAudioSessionNotification**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-registeraudiosessionnotification) para registrar a interface. Quando um erro de dispositivo inválido faz com que a sessão seja desconectada, WASAPI chama o método [**IAudioSessionEvents:: OnSessionDisconnected**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) na interface registrada. Com esse método, o WASAPI informa o aplicativo do motivo da desconexão. No Windows Vista, a chamada **OnSessionDisconnected** identifica os seguintes motivos:
+Um aplicativo pode determinar mais precisamente a causa de um erro de dispositivo inválido ao se registrar para receber uma notificação quando uma sessão perde sua conexão com um dispositivo. Para habilitar essa notificação, o aplicativo implementa uma interface [**IAudioSessionEvents**](/windows/desktop/api/Audiopolicy/nn-audiopolicy-iaudiosessionevents) e chama o método [**IAudioSessionControl:: RegisterAudioSessionNotification**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessioncontrol-registeraudiosessionnotification) para registrar a interface. Quando um erro de dispositivo inválido faz com que a sessão seja desconectada, WASAPI chama o método [**IAudioSessionEvents:: OnSessionDisconnected**](/windows/desktop/api/Audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) na interface registrada. Com esse método, o WASAPI informa o aplicativo do motivo da desconexão. no Windows Vista, a chamada **OnSessionDisconnected** identifica os seguintes motivos:
 
 -   O usuário removeu o dispositivo de ponto de extremidade de áudio.
--   O serviço de áudio do Windows foi desligado.
+-   o serviço de áudio Windows foi desligado.
 -   O formato de fluxo preferencial foi alterado para o dispositivo ao qual a sessão de áudio está conectada.
--   O usuário fez logoff na sessão dos serviços de terminal do Windows (WTS) em que a sessão de áudio estava sendo executada. Para obter mais informações sobre sessões do WTS, consulte a documentação do SDK do Windows.
--   A sessão WTS em que a sessão de áudio estava sendo executada foi desconectada.
+-   o usuário fez logoff da sessão de serviços de Terminal do Windows (WTS) na qual a sessão de áudio estava sendo executada. para obter mais informações sobre WTS sessões, consulte a documentação do SDK do Windows.
+-   a sessão de WTS em que a sessão de áudio estava sendo executada foi desconectada.
 -   A sessão de áudio (modo compartilhado) foi desconectada para tornar o dispositivo de ponto de extremidade de áudio disponível para uma conexão de modo exclusivo.
 
 Em resposta ao evento de desconexão, WASAPI fecha todos os fluxos que pertencem à sessão. Se, posteriormente, um aplicativo tentar acessar um fluxo fechado por meio de um método WASAPI, como [**IAudioClient:: GetCurrentPadding**](/windows/desktop/api/Audioclient/nf-audioclient-iaudioclient-getcurrentpadding), o método falhará e retornará o código de erro AUDCLNT \_ E o \_ dispositivo \_ invalidado.

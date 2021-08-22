@@ -4,12 +4,12 @@ ms.assetid: f2a4c4cf-55e9-4129-8067-256552af49d2
 title: Sobre contextos de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3b686ec8b48492658f19531cb42161c043f178d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9439e3091b3138917e24ab4a49ff89c21a1e1b53480d4a138bd2bbad3288fcd0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105871"
 ---
 # <a name="about-device-contexts"></a>Sobre contextos de dispositivo
 
@@ -23,7 +23,7 @@ Esta visão geral fornece informações sobre os seguintes tópicos:
 -   [Modos gráficos](graphic-modes.md)
 -   [Tipos de contexto do dispositivo](device-context-types.md)
 -   [Operações de contexto do dispositivo](device-context-operations.md)
--   [Funções de contexto de dispositivo habilitadas para ICM](icm-enabled-device-context-functions.md)
+-   [funções de contexto de dispositivo habilitadas para ICM](icm-enabled-device-context-functions.md)
 
 Um conceito importante é o layout de um controlador de domínio ou de uma janela, que descreve a ordem na qual os objetos GDI e o texto são revelados (da esquerda para a direita ou da direita para a esquerda). Para obter mais informações, consulte "layout e espelhamento de janela" em [**recursos de janela**](../winmsg/window-features.md) e as funções [**GetLayout**](/windows/desktop/api/Wingdi/nf-wingdi-getlayout) e [**SetLayout**](/windows/desktop/api/Wingdi/nf-wingdi-setlayout) .
 

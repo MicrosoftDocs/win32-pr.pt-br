@@ -3,7 +3,7 @@ title: Evento MediaCollectionMediaRemoved do objeto AxWindowsMediaPlayer
 description: O evento MediaCollectionMediaRemoved ocorre quando um item de mídia é removido da biblioteca local. | Evento MediaCollectionMediaRemoved do objeto AxWindowsMediaPlayer
 ms.assetid: 66dae2be-2a71-4d53-b2e2-f106426d4eea
 keywords:
-- Evento MediaCollectionMediaRemoved do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MediaCollectionMediaRemoved do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea15ff63fb913cd399a152913a27ffda1090d9a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ee9555b3efc4cb95b164fc8922b1ce4253613fbd2c45c0624a3d61d0fa7a9f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135979"
 ---
 # <a name="mediacollectionmediaremoved-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionMediaRemoved do objeto AxWindowsMediaPlayer
 

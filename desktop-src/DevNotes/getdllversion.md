@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Cabinet.dll
-ms.openlocfilehash: 1b1142bd2ece965a3f2fc58b6bb2f90586a8b391
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14f2da8c6f8c786042c2abd5f41e02bdfab6f33d9b8aa42a5b5f90a6c4357103
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390706"
 ---
 # <a name="getdllversion-function"></a>Função GetDllVersion
 
-\[Essa função não é mais suportada, portanto, seu comportamento não pode ser garantido. \]
+\[Essa função não tem mais suporte, portanto, seu comportamento não pode ser garantido. \]
 
-A função **GetDllVersion** recupera o número de versão de Cabinet.dll.
+A **função GetDllVersion** recupera o número de versão de Cabinet.dll.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,11 +41,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-O número de versão do arquivo (consulte o [recurso VERSIONINFO](../menurc/versioninfo-resource.md)).
+O número de versão do arquivo (consulte [Recurso VERSIONINFO](../menurc/versioninfo-resource.md)).
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

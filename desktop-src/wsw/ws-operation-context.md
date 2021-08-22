@@ -6,12 +6,12 @@ keywords:
 - WS_OPERATION_CONTEXT
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5454146bac2941f76df646bb58e71ca2cdfd6e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1fc355a3c594cb89d26f4f4312af93474e3bd2c2fd948cdadfab790fa6e6ee92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082990"
 ---
 # <a name="ws_operation_context"></a>\_contexto de operação WS \_
 
@@ -34,9 +34,9 @@ Este objeto não é thread-safe. Para obter mais informações, consulte [segura
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
 
 
 

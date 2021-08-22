@@ -1,8 +1,8 @@
 ---
 title: palavra-chave sh_process
-description: A \_ palavra-chave \ sh Process \ especifica que o objeto do sistema é um identificador para um processo.
+description: A palavra-chave \ sh \_ process\ especifica que o objeto do sistema é um identificador para um processo.
 keywords:
-- MIDL de palavra-chave sh_process
+- sh_process palavra-chave MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: 3652c6889c687173bbf7b397cddff4659c0329f1
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 3dc11f2980e5124bbc76d0b57fce21d8007b0c09905ca47707d5be6fbb112d41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "105793781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146269"
 ---
-# <a name="sh_process-keyword"></a>\_palavra-chave sh Process
+# <a name="sh_process-keyword"></a>\_Palavra-chave de processo sh
 
-A palavra-chave **sh \_ process** especifica que um `system_handle` tem um identificador para um processo.
+A **\_ palavra-chave de** processo sh especifica que um `system_handle` contém um handle para um processo.
 
 ``` syntax
 [system_handle(sh_process)]
@@ -30,13 +30,13 @@ A palavra-chave **sh \_ process** especifica que um `system_handle` tem um ident
 
 ## <a name="parameters"></a>Parâmetros
 
-Essa palavra-chave é um parâmetro para [**system_handle**](system-handle.md).
+Essa palavra-chave é um parâmetro [**para system_handle**](system-handle.md).
 
-A documentação [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do parâmetro *Access-Rights* . O comportamento padrão é de acordo com as `DUPLICATE_SAME_ACCESS` especificações de [função **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+A [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do *parâmetro access-rights.* O comportamento padrão é `DUPLICATE_SAME_ACCESS` de acordo com as [especificações de função **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Comentários
 
-Para usar essa palavra-chave com o `system_handle` atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) durante a execução de midl.exe.
+Para usar essa palavra-chave com o `system_handle` atributo , o sinalizador deve ser definido como `-target` `NT100` (ou superior) ao executar midl.exe.
 
 ## <a name="examples"></a>Exemplos
 
@@ -53,8 +53,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Atualização de aniversário do Windows 10 (versão 1607, Build 14393) |
-| Servidor mínimo com suporte | Windows Server 2016 (Build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, build 14393) |
+| Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
 
@@ -66,11 +66,11 @@ interface MyInterface : IUnknown
 [Sobre Processos e Threads](../procthread/about-processes-and-threads.md)
 </dt> <dt>
 
-[Direitos de acesso e segurança do processo](../procthread/process-security-and-access-rights.md)
+[Processar direitos de acesso e segurança](../procthread/process-security-and-access-rights.md)
 </dt> <dt>
 
-[Função **CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)
+[**Função CreateProcess**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)
 </dt> <dt>
 
-[Função **OpenProcess**](/win32/api/processthreadsapi/nf-processthreadsapi-openprocess)
+[**Função OpenProcess**](/win32/api/processthreadsapi/nf-processthreadsapi-openprocess)
 </dt> </dl>

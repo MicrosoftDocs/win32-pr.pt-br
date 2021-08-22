@@ -1,7 +1,7 @@
 ---
-description: A função RemoveFromBlob exclui qualquer nível de entrada de BLOB (proprietário, categoria ou marca).
+description: A função RemoveFromBlob exclui qualquer nível de entrada BLOB (Proprietário, Categoria ou Marca).
 ms.assetid: b8bb01e0-8b97-4c95-96f5-f2a30c8700e9
-title: Função RemoveFromBlob (Netmon. h)
+title: Função RemoveFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: a23e4e7e6e6d5c85b1284f8aaba49c1f8eae728d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09c9c7f5ada320f33d38cd9e935add7e47721c554fbeed11c35a1b73248d963c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063686"
 ---
 # <a name="removefromblob-function"></a>Função RemoveFromBlob
 
-A função **RemoveFromBlob** exclui qualquer nível de entrada de BLOB (**proprietário**, **categoria** ou **marca**).
+A **função RemoveFromBlob** exclui qualquer nível de entrada BLOB (**Proprietário,** **Categoria** ou **Marca**).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,37 +42,37 @@ DWORD RemoveFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB do qual uma entrada é excluída.
+Lidar com o BLOB do qual uma entrada é excluída.
 
 </dd> <dt>
 
-*pOwnerName* \[ no\]
+*pOwnerName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome do **proprietário** .
+Ponteiro para o **nome do** proprietário.
 
 </dd> <dt>
 
-*pCategoryName* \[ no\]
+*pCategoryName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome da **categoria** . Um valor de parâmetro **nulo** indica que o chamador está tentando excluir as informações de **proprietário** fornecidas e todas as suas entradas filhas. Observe que, se o valor do parâmetro *pCategoryName* for **NULL**, o parâmetro *pTagName* também deverá ser **nulo**.
+Ponteiro para o **Nome da** categoria. Um **valor de** parâmetro NULL indica que o chamador está tentando excluir as informações de **Proprietário** determinadas e todas as suas entradas filho. Observe que, se *o valor do parâmetro pCategoryName* for **NULL,** o *parâmetro pTagName* também deverá ser **NULL.**
 
 </dd> <dt>
 
-*pTagName* \[ no\]
+*pTagName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome da **marca** . Um valor **nulo** de _pTagName_ indica que o chamador está tentando excluir a **categoria** determinada e todas as suas entradas filhas. Se o valor do parâmetro não for **nulo**, o chamador solicitará que apenas as entradas de **marca** especificadas sejam excluídas.
+Ponteiro para o **Nome da** marca. Um **valor null**_pTagName_ indica que o chamador está tentando excluir a **Categoria** determinada e todas as suas entradas filho. Se o valor do parâmetro não for **NULL,** o chamador pedirá que apenas as entradas de **Marca** especificadas sejam excluídas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
@@ -84,8 +84,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

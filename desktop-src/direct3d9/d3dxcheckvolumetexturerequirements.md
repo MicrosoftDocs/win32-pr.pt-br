@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4940cab936ed14c847e7224c9f619244c6e422a9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3fb285df29400ce71c439454f96e984f4fa5f53bb9c24e897d1d687778bb2044
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988826"
 ---
 # <a name="d3dxcheckvolumetexturerequirements-function"></a>Função D3DXCheckVolumeTextureRequirements
 
@@ -119,7 +119,7 @@ Membro do tipo enumerado [**D3DPOOL**](./d3dpool.md) , descrevendo a classe de m
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

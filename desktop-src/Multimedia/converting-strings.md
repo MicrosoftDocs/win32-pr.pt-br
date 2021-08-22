@@ -6,12 +6,12 @@ keywords:
 - função mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1db4cb4b3d02a93adecc82d6ce95de436fb2e7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4efeb5801c46d89686ed3fe9fcf25b311d57d4d553c220902907ac0e70a5b7e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144789"
 ---
 # <a name="converting-strings"></a>converter cadeias de caracteres
 
@@ -87,8 +87,8 @@ BOOL GetSourceRect(LPTSTR lpstrAlias, LPRECT lprc)
 > [!Note]  
 > As estruturas **Rect** são tratadas de forma diferente no MCI do que em outras partes do Windows; no MCI, o membro **correto** contém a largura do retângulo e o membro **inferior** contém sua altura. Na interface de cadeia de caracteres, um retângulo é especificado como *X1*, *Y1*, *X2* e *Y2*. As coordenadas *X1* e *Y1* especificam o canto superior esquerdo do retângulo, e as coordenadas *X2* e *Y2* especificam a largura e a altura.
 
- 
+ 
 
- 
+ 
 
- 
+ 
