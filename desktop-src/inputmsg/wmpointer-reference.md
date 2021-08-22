@@ -1,19 +1,19 @@
 ---
-title: Referência de mensagem de entrada do ponteiro
-description: Os tópicos nesta seção fornecem as especificações de referência para notificações e mensagens de entrada do ponteiro.
+title: Referência da mensagem de entrada do ponteiro
+description: Os tópicos nesta seção fornecem as especificações de referência para Notificações e Mensagens de Entrada de Ponteiro.
 ms.assetid: B3FAE463-3B1D-412C-9698-8366D6A63806
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 165121acceb974bbfcf46e81a0d11135022df8f4
-ms.sourcegitcommit: f2fe9d9bd65333b74f2af8e30eddbb1643b40c8f
+ms.openlocfilehash: f1de34d28ab2d25ea0875a1c1eac2a5c7d558ff415889fda254403d69909a820
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "104365447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119231386"
 ---
-# <a name="pointer-input-message-reference"></a>Referência de mensagem de entrada do ponteiro
+# <a name="pointer-input-message-reference"></a>Referência da mensagem de entrada do ponteiro
 
-Os tópicos nesta seção fornecem as especificações de referência para [notificações e mensagens de entrada do ponteiro](messages-and-notifications-portal.md).
+Os tópicos nesta seção fornecem as especificações de referência para Mensagens [de Entrada de Ponteiro e Notificações](messages-and-notifications-portal.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,12 +21,12 @@ Os tópicos nesta seção fornecem as especificações de referência para [noti
 
 | Tópico                                   | Descrição                                                                                                                                                                                                                        |
 |-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Constantes](constants.md)<br/>   | Os tópicos nesta seção fornecem as especificações de referência para [as mensagens de entrada do ponteiro e as](messages-and-notifications-portal.md) constantes de notificações. <br/>                                                              |
-| [Enumerações](enums.md)<br/>    | Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada de ponteiro e](messages-and-notifications-portal.md) enumerações de notificações. <br/>                                                           |
-| [Funções](functions.md)<br/>   | Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada de ponteiro e](messages-and-notifications-portal.md) funções de notificações.<br/>                                                               |
-| [Macros](macros.md)<br/>         | Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada de ponteiro e](messages-and-notifications-portal.md) macros de notificações para recuperar informações de parâmetros de mensagem de entrada de ponteiro.<br/> |
-| [Mensagens](messages.md)<br/>     | Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada e notificações](messages-and-notifications-portal.md)específicas do ponteiro.<br/>                                                                |
-| [Estruturas](structures.md)<br/> | Os tópicos nesta seção fornecem as especificações de referência para [mensagens de entrada de ponteiro e](messages-and-notifications-portal.md) estruturas de notificações.<br/>                                                              |
+| [Constantes](constants.md)<br/>   | Os tópicos nesta seção fornecem as especificações de referência para [constantes](messages-and-notifications-portal.md) de Mensagens de Entrada de Ponteiro e Notificações. <br/>                                                              |
+| [Enumerações](enums.md)<br/>    | Os tópicos nesta seção fornecem as especificações de referência para [enumerações mensagens de](messages-and-notifications-portal.md) entrada de ponteiro e notificações. <br/>                                                           |
+| [Funções](functions.md)<br/>   | Os tópicos nesta seção fornecem as especificações de referência para as funções [Mensagens de Entrada](messages-and-notifications-portal.md) de Ponteiro e Notificações.<br/>                                                               |
+| [Macros](macros.md)<br/>         | Os tópicos nesta seção fornecem as especificações de referência para as [macros](messages-and-notifications-portal.md) Mensagens de Entrada de Ponteiro e Notificações para recuperar informações de parâmetros de mensagem de entrada de ponteiro.<br/> |
+| [Mensagens](messages.md)<br/>     | Os tópicos nesta seção fornecem as especificações de referência para notificações e mensagens de entrada de ponteiro [específicas.](messages-and-notifications-portal.md)<br/>                                                                |
+| [Estruturas](structures.md)<br/> | Os tópicos nesta seção fornecem as especificações de referência para estruturas [de Notificações](messages-and-notifications-portal.md) e Mensagens de Entrada de Ponteiro.<br/>                                                              |
 
 
 
@@ -36,7 +36,7 @@ Os tópicos nesta seção fornecem as especificações de referência para [noti
 
 <dl> <dt>
 
-[Notificações e mensagens de entrada do ponteiro](messages-and-notifications-portal.md)
+[Mensagens de entrada de ponteiro e notificações](messages-and-notifications-portal.md)
 </dt> </dl>
 
  

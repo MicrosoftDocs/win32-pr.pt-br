@@ -3,7 +3,7 @@ title: Evento LibraryDisconnect do objeto AxWindowsMediaPlayer
 description: O evento LibraryDisconnect ocorre quando uma biblioteca não está mais disponível.
 ms.assetid: 053d914a-dcd9-4fd6-a789-10c26147d08a
 keywords:
-- Evento LibraryDisconnect do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento LibraryDisconnect do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 058c75ed0d1173661b16baa6e4b4394ba4d0c38f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a032dc95a68430768b0f2aa109a56dae80cdaecb14b67eb5dbf6b2657cdd5107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135999"
 ---
 # <a name="librarydisconnect-event-of-the-axwindowsmediaplayer-object"></a>Evento LibraryDisconnect do objeto AxWindowsMediaPlayer
 
@@ -41,13 +41,13 @@ Private Sub player_LibraryDisconnect(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryDisconnectEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryDisconnectEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ Biblioteca \_ WMPOCXEventsDisconnectEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryDisconnectEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade | Descrição                                                                                   |
 |----------|-----------------------------------------------------------------------------------------------|
-| pLibrary | **WMPLib. IWMPLibrary** A interface que representa a biblioteca desconectada.<br/> |
+| pLibrary | **WMPLib.IWMPLibrary** A interface que representa a biblioteca desconectada.<br/> |
 
 
 

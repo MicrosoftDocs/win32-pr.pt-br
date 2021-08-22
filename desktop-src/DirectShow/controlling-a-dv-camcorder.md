@@ -4,16 +4,16 @@ ms.assetid: 3b17b28a-cac8-4753-8c4e-3e57f372d8e5
 title: Controlando uma camcorder DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68d1c84edcd4738745bdd695fe41cf735d6df1a5
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 33636d073ec86fb6a6eb03afd211a1b170e4668c32b6ba3b3b5e78dfb54ec036
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105757310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119214056"
 ---
 # <a name="controlling-a-dv-camcorder"></a>Controlando uma camcorder DV
 
-Este artigo descreve como controlar uma camcorder DV (Digital Video) usando o DirectShow. Ele contém as seções a seguir:
+Este artigo descreve como controlar uma camcorder DV (vídeo digital) usando o DirectShow. Ele contém as seções a seguir:
 
 -   [Interfaces de dispositivo externo para camcorders DV](external-device-interfaces-for-dv-camcorders.md)
 -   [Modo de dispositivo](device-mode.md)

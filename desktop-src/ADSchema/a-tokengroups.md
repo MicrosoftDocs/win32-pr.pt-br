@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5342d1ff2bf549796340532b0514d5c5b060c2c1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b8971f9ba5baead73b7704760dcc86430f5ce1a318ac6bcbd9dfaf4125a21af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022064"
 ---
 # <a name="token-groups-attribute"></a>Token-Groups atributo
 
@@ -109,7 +109,7 @@ Um atributo computado que contém a lista de SIDs devido a uma operação de exp
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Um atributo computado que contém a lista de SIDs devido a uma operação de exp
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Um atributo computado que contém a lista de SIDs devido a uma operação de exp
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Um atributo computado que contém a lista de SIDs devido a uma operação de exp
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Um atributo computado que contém a lista de SIDs devido a uma operação de exp
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x08000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 

@@ -1,12 +1,12 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable5 AllowPromptingForCredentials
-description: Especifica se o controle ActiveX Área de Trabalho Remota pode solicitar credenciais ao usuário.
+description: Especifica se o controle Área de Trabalho Remota ActiveX pode solicitar credenciais ao usuário.
 ms.assetid: 9a780886-39ee-4d3b-9a54-fa209708d9f8
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AllowPromptingForCredentials
-- Propriedade AllowPromptingForCredentials Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade AllowPromptingForCredentials
+- Propriedade AllowPromptingForCredentials Serviços de Área de Trabalho Remota
+- A propriedade AllowPromptingForCredentials Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade AllowPromptingForCredentials
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c326a83a46b41d3578c958e24fd901beb7c7b321
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eea0fb854b5bb12533032cd6608228d81584cd8d9f4e99bccd8a5ba76b624f77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138749"
 ---
-# <a name="imsrdpclientnonscriptable5allowpromptingforcredentials-property"></a>Propriedade IMsRdpClientNonScriptable5:: AllowPromptingForCredentials
+# <a name="imsrdpclientnonscriptable5allowpromptingforcredentials-property"></a>Propriedade IMsRdpClientNonScriptable5::AllowPromptingForCredentials
 
-Especifica se o controle ActiveX Área de Trabalho Remota pode solicitar credenciais ao usuário. Se essa propriedade contiver a **variante \_ true**, as credenciais do usuário poderão ser solicitadas. Se essa propriedade contiver a **variante \_ false**, o usuário não poderá ser solicitado a fornecer credenciais.
+Especifica se o controle Área de Trabalho Remota ActiveX pode solicitar credenciais ao usuário. Se essa propriedade **contiver VARIANT \_ TRUE**, o usuário poderá ser solicitado a solicitar credenciais. Se essa propriedade **\_ contiver VARIANT FALSE**, o usuário não poderá ser solicitado a solicitar credenciais.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -61,7 +61,7 @@ Especifica o novo valor da propriedade.
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 é definido como 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 é definido como 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

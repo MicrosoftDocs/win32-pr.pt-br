@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor de JET_INDEXCREATE'
-title: Construtor de JET_INDEXCREATE
+description: 'Saiba mais sobre: JET_INDEXCREATE construtor'
+title: JET_INDEXCREATE construtor
 TOCTitle: 'JET_INDEXCREATE constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.jet_indexcreate(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2ac7ae10c146af3819fe4ab364c1d55ab61330c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97207bf2a6ac8e98c819d0c0e198fd2681a4d1ce6dcb0da3a1fe10151bd0103f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039084"
 ---
-# <a name="jet_indexcreate-constructor"></a>Construtor de JET_INDEXCREATE
+# <a name="jet_indexcreate-constructor"></a>JET_INDEXCREATE construtor
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,8 +54,8 @@ public JET_INDEXCREATE()
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Membros do JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membros](./jet-indexcreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

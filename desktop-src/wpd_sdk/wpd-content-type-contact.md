@@ -4,12 +4,12 @@ ms.assetid: 3ff6191f-d3c0-4bd3-946e-c3fbf68f368c
 title: WPD_CONTENT_TYPE_CONTACT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3fed10e0abb36a482141e5c796f5494b00b99f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a8354aa444f476e7c0b64d2e3d14d474c6eea02f90e8313c20073db2d0368fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083330"
 ---
 # <a name="wpd_content_type_contact"></a>\_contato de \_ tipo de conteúdo WPD \_
 
@@ -67,47 +67,47 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 | [\_região de \_ \_ Endereço postal \_ de negócios de contato WPD \_](contact-properties.md)            | Opcional.                                                                      |
 | [\_ \_ \_ \_ \_ código postal da empresa \_ de contato WPD](contact-properties.md) | Opcional.                                                                      |
 | [\_país de \_ \_ Endereço postal \_ da empresa de contato WPD \_](contact-properties.md)          | Opcional.                                                                      |
-| [\_contato com \_ outros \_ \_ endereços postais completos \_](contact-properties.md)                      | Opcional.                                                                      |
-| [\_Contato WPD \_ com \_ outro \_ Endereço postal \_ linha1](contact-properties.md)                    | Opcional.                                                                      |
-| [Contato de WPD \_ com \_ outro \_ \_ Endereço postal \_ Linha2](contact-properties.md)                    | Opcional.                                                                      |
-| [contato de WPD \_ com \_ outra \_ \_ cidade de endereço postal \_](contact-properties.md)                      | Opcional.                                                                      |
-| [\_ \_ outra região de \_ \_ Endereço postal \_ de contato WPD](contact-properties.md)                  | Opcional.                                                                      |
-| [\_ \_ \_ \_ \_ código postal de outro endereço \_ postal de contato WPD](contact-properties.md)       | Opcional.                                                                      |
-| [contato de WPD \_ \_ outro \_ \_ Endereço postal \_ postal \_](contact-properties.md) | Opcional.                                                                      |
-| [\_endereço de \_ \_ email principal do contato \_ WPD](contact-properties.md)                               | Recomendável.                                                                   |
-| [\_ \_ email pessoal de contato WPD \_](contact-properties.md)                                              | Opcional.                                                                      |
-| [\_ \_ EMAIL2 pessoal de contato WPD \_](contact-properties.md)                                            | Opcional.                                                                      |
-| [\_ \_ email comercial de contato WPD \_](contact-properties.md)                                              | Opcional.                                                                      |
-| [\_EMAIL2 de \_ negócios de contato WPD \_](contact-properties.md)                                            | Opcional.                                                                      |
-| [\_ \_ outros \_ emails de contato WPD](contact-properties.md)                                                  | Opcional.                                                                      |
-| [\_ \_ telefone principal de contato WPD \_](contact-properties.md)                                                | Recomendável.                                                                   |
-| [\_ \_ telefone pessoal de contato WPD \_](contact-properties.md)                                              | Opcional.                                                                      |
-| [\_ \_ PHONE2 pessoal de contato WPD \_](contact-properties.md)                                            | Opcional.                                                                      |
-| [\_ \_ telefone comercial de contato WPD \_](contact-properties.md)                                              | Opcional.                                                                      |
-| [\_PHONE2 de \_ negócios de contato WPD \_](contact-properties.md)                                            | Opcional.                                                                      |
-| [\_contato com \_ o \_ telefone celular da WPD](contact-properties.md)                                                  | Opcional.                                                                      |
-| [\_PHONE2 de contato para \_ dispositivos móveis \_](contact-properties.md)                                                | Opcional.                                                                      |
-| [\_ \_ fax pessoal de contato WPD \_](contact-properties.md)                                                  | Opcional.                                                                      |
-| [\_fax de \_ negócios de contato WPD \_](contact-properties.md)                                                  | Opcional.                                                                      |
-| [\_pager de contato WPD \_](contact-properties.md)                                                                 | Opcional.                                                                      |
-| [\_ \_ outros telefones em contato com WPD \_](contact-properties.md)                                                  | Opcional.                                                                      |
-| [\_ \_ \_ endereço da Web primário de contato WPD \_](contact-properties.md)                                   | Recomendável.                                                                   |
-| [\_ \_ \_ endereço da Web pessoal de contato WPD \_](contact-properties.md)                                 | Opcional.                                                                      |
-| [\_ \_ \_ endereço da Web comercial de contato WPD \_](contact-properties.md)                                 | Opcional.                                                                      |
-| [WPD \_ em contato com o \_ Instant \_ Messenger](contact-properties.md)                                        | Recomendadas                                                                    |
-| [\_MESSENGER2 de contato WPD \_ \_](contact-properties.md)                                      | Opcional.                                                                      |
-| [\_MESSENGER3 de contato WPD \_ \_](contact-properties.md)                                      | Opcional.                                                                      |
-| [\_ \_ nome da empresa de contato WPD \_](contact-properties.md)                                                  | Opcional.                                                                      |
-| [\_ \_ \_ nome da empresa fonética do contato WPD \_](contact-properties.md)                               | Opcional                                                                       |
-| [\_função de contato WPD \_](contact-properties.md)                                                                   | Opcional.                                                                      |
-| [\_DataDeNascimento de contato WPD \_](contact-properties.md)                                                         | Opcional.                                                                      |
-| [\_ \_ fax principal de contato do WPD \_](contact-properties.md)                                                                            | Opcional.                                                                      |
-| [\_cônjuge de contato WPD \_](contact-properties.md)                                                                                  | Opcional.                                                                      |
-| [\_filhos de contato WPD \_](contact-properties.md)                                                                                | Opcional.                                                                      |
-| [\_Assistente de contato WPD \_](contact-properties.md)                                                                               | Opcional.                                                                      |
-| [\_data de \_ aniversário do contato WPD \_](contact-properties.md)                                                                       | Opcional.                                                                      |
-| [\_toque de contato WPD \_](contact-properties.md)                                                                                | Opcional.                                                                      |
-| [\_observações de \_ informações \_ comuns do WPD](object-properties.md)                                                                        | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRO ENDEREÇO POSTAL \_ \_ \_ \_ COMPLETO](contact-properties.md)                      | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRO ENDEREÇO POSTAL \_ \_ \_ \_ LINE1](contact-properties.md)                    | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRO ENDEREÇO POSTAL \_ \_ \_ \_ LINE2](contact-properties.md)                    | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRA CIDADE DE ENDEREÇO \_ \_ \_ \_ POSTAL](contact-properties.md)                      | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRA REGIÃO DE ENDEREÇO \_ \_ \_ \_ POSTAL](contact-properties.md)                  | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRO CEP DE ENDEREÇO \_ \_ \_ \_ \_ POSTAL](contact-properties.md)       | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTRO PAÍS POSTAL DE ENDEREÇO \_ \_ \_ \_ \_ POSTAL](contact-properties.md) | Opcional.                                                                      |
+| [ENDEREÇO DE \_ EMAIL PRIMÁRIO \_ DE CONTATO \_ WPD \_](contact-properties.md)                               | Recomendável.                                                                   |
+| [EMAIL PESSOAL \_ DO WPD CONTACT \_ \_](contact-properties.md)                                              | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ PERSONAL \_ EMAIL2](contact-properties.md)                                            | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ BUSINESS \_ EMAIL](contact-properties.md)                                              | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ BUSINESS \_ EMAIL2](contact-properties.md)                                            | Opcional.                                                                      |
+| [ENTRE EM \_ CONTATO COM WPD \_ OUTROS \_ EMAILS](contact-properties.md)                                                  | Opcional.                                                                      |
+| [TELEFONE PRIMÁRIO \_ DE \_ CONTATO WPD \_](contact-properties.md)                                                | Recomendável.                                                                   |
+| [WPD \_ CONTACT \_ PERSONAL \_ PHONE](contact-properties.md)                                              | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ PERSONAL \_ PHONE2](contact-properties.md)                                            | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ BUSINESS \_ PHONE](contact-properties.md)                                              | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ BUSINESS \_ PHONE2](contact-properties.md)                                            | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ MOBILE \_ PHONE](contact-properties.md)                                                  | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ MOBILE \_ PHONE2](contact-properties.md)                                                | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ PERSONAL \_ FAX](contact-properties.md)                                                  | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ BUSINESS \_ FAX](contact-properties.md)                                                  | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ PAGER](contact-properties.md)                                                                 | Opcional.                                                                      |
+| [WPD \_ ENTRE EM CONTATO COM OUTROS \_ \_ TELEFONES](contact-properties.md)                                                  | Opcional.                                                                      |
+| [ENDEREÇO WEB \_ \_ PRIMÁRIO DO CONTATO \_ WPD \_](contact-properties.md)                                   | Recomendável.                                                                   |
+| [ENDEREÇO WEB \_ \_ PESSOAL DO WPD CONTACT \_ \_](contact-properties.md)                                 | Opcional.                                                                      |
+| [ENDEREÇO WEB DO WPD \_ \_ CONTACT BUSINESS \_ \_](contact-properties.md)                                 | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ INSTANT \_ MESSENGER](contact-properties.md)                                        | Recomendado                                                                    |
+| [WPD \_ CONTACT \_ INSTANT \_ MESSENGER2](contact-properties.md)                                      | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ INSTANT \_ MESSENGER3](contact-properties.md)                                      | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ COMPANY \_ NAME](contact-properties.md)                                                  | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ PHONETIC \_ COMPANY \_ NAME](contact-properties.md)                               | Opcional                                                                       |
+| [FUNÇÃO DE \_ CONTATO WPD \_](contact-properties.md)                                                                   | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ BIRTHDATE](contact-properties.md)                                                         | Opcional.                                                                      |
+| [FAX PRIMÁRIO \_ DE \_ CONTATO WPD \_](contact-properties.md)                                                                            | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ SPOUSE](contact-properties.md)                                                                                  | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ CHILDREN](contact-properties.md)                                                                                | Opcional.                                                                      |
+| [ASSISTENTE DE \_ CONTATO \_ WPD](contact-properties.md)                                                                               | Opcional.                                                                      |
+| [DATA DE \_ ANIVERSÁRIO DO CONTATO \_ WPD \_](contact-properties.md)                                                                       | Opcional.                                                                      |
+| [WPD \_ CONTACT \_ RINGTONE](contact-properties.md)                                                                                | Opcional.                                                                      |
+| [NOTAS DE \_ INFORMAÇÕES \_ COMUNS DO \_ WPD](object-properties.md)                                                                        | Opcional.                                                                      |
 
 
 
@@ -115,14 +115,14 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 
 ## <a name="typical-resources"></a>Recursos típicos
 
-Esses objetos normalmente incluem os seguintes recursos.
+Esses objetos normalmente incluem os recursos a seguir.
 
 
 
-| Nome do Recurso                                                       | Obrigatório ou opcional       | Descrição                        |
+| Nome do Recurso                                                       | Obrigatório ou Opcional       | Descrição                        |
 |---------------------------------------------------------------------|----------------------------|------------------------------------|
-| [**\_padrão de recursos WPD \_**](wpd-resource-default.md)              | Opcional.                  | Contém os dados de contato.         |
-| [**\_foto de \_ contato de recursos WPD \_**](wpd-resource-contact-photo.md) | Recomendado, se disponível. | Contém uma imagem do contato. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md)              | Opcional.                  | Contém os dados de contato.         |
+| [**WPD \_ RESOURCE \_ CONTACT \_ PHOTO**](wpd-resource-contact-photo.md) | Recomendado, se disponível. | Contém uma imagem do contato. |
 
 
 

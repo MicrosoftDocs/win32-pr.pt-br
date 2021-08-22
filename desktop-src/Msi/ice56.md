@@ -1,27 +1,27 @@
 ---
-description: ICE56 valida que a estrutura de diretório do arquivo. msi tem um único diretório raiz, que a raiz é a propriedade TARGETDIR e que o valor da propriedade SourceDir está na coluna DefaultDir da tabela de diretórios.
+description: ICE56 valida que a estrutura de diretório do arquivo de .msi tem um único diretório raiz, que a raiz é a propriedade TARGETDIR e que o valor da propriedade SourceDir está na coluna DefaultDir da tabela de diretórios.
 ms.assetid: 6fbb51ff-64fc-40b7-852f-490c93e592c0
 title: ICE56
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c0b83dc20c8463b80375d325dd9225de8524742
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 70c1feb3e3dbab84a58809496b28a60d3a2436c3041d3a2d58f0ac8f2b5e47a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528216"
 ---
 # <a name="ice56"></a>ICE56
 
-ICE56 valida que a estrutura de diretório do arquivo. msi tem um único diretório raiz, que a raiz é a propriedade [**TARGETDIR**](targetdir.md) e que o valor da propriedade [**SourceDir**](sourcedir.md) está na coluna DefaultDir da [tabela de diretórios](directory-table.md).
+ICE56 valida que a estrutura de diretório do arquivo de .msi tem um único diretório raiz, que a raiz é a propriedade [**TARGETDIR**](targetdir.md) e que o valor da propriedade [**SourceDir**](sourcedir.md) está na coluna DefaultDir da tabela de [diretórios](directory-table.md).
 
-Se um arquivo. msi tiver várias raízes ou especificar uma raiz diferente de [**TARGETDIR**](targetdir.md), uma [instalação administrativa](administrative-installation.md) não criará uma imagem administrativa correta.
+Se um arquivo de .msi tiver várias raízes ou especificar uma raiz diferente de [**TARGETDIR**](targetdir.md), uma [instalação administrativa](administrative-installation.md) não criará uma imagem administrativa correta.
 
 Observe que os diretórios vazios não são verificados por ICE56. A estrutura de diretório passa a validação com vários diretórios raiz se os diretórios extras estiverem vazios.
 
 ## <a name="result"></a>Resultado
 
-ICE56 lançará um erro se o. msi não tiver uma única raiz, [**TARGETDIR**](targetdir.md)ou se [**SourceDir**](sourcedir.md) não estiver especificado na coluna DefaultDir da [tabela de diretórios](directory-table.md).
+ICE56 lançará um erro se o .msi não tiver uma única raiz, [**TARGETDIR**](targetdir.md)ou se [**SourceDir**](sourcedir.md) não estiver especificado na coluna DefaultDir da [tabela de diretórios](directory-table.md).
 
 ## <a name="example"></a>Exemplo
 

@@ -4,12 +4,12 @@ ms.assetid: fe87ccb8-16a3-443d-93df-0df02b8787f6
 title: Estendendo o CryptoAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62417f66b8a8bb2d06d145543f944f91868d366d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0538e15f49e61dc26cacd4e81c42dd462aec092877428ebe865ab97c7729f0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007014"
 ---
 # <a name="extending-cryptoapi"></a>Estendendo o CryptoAPI
 
@@ -24,7 +24,7 @@ O [*CryptoAPI*](../secgloss/c-gly.md) foi projetado para ser facilmente extensí
 | Identificadores de algoritmo<br/>                                                                                 | Os recursos de enumeração do [**CPGetProvParam**](https://www.bing.com/search?q=**CPGetProvParam**) permitem que os aplicativos listem identificadores de algoritmo dinamicamente. Novos algoritmos [*simétricos*](../secgloss/s-gly.md), de [*chave pública*](../secgloss/p-gly.md)e de [*hash*](../secgloss/h-gly.md) podem ser definidos a qualquer momento.<br/> |
 | Tipos de par de chaves pública/[*privada*](../secgloss/p-gly.md)<br/> | Embora os novos tipos de pares de chaves possam ser definidos conforme necessário, no momento apenas os pares assinatura e chave de [*troca*](../secgloss/e-gly.md) de chaves são usados.<br/>                                                                                                                                                                                                                                           |
 | Tipos de BLOB de chave<br/>                                                                                        | Novos tipos de [*blob*](../secgloss/b-gly.md) de chave podem permitir que chaves de sessão, chaves públicas e pares de chaves públicas/privadas sejam trocados de maneira flexível usando as funções [**CPExportKey**](https://www.bing.com/search?q=**CPExportKey**) e [**CPImportKey**](https://www.bing.com/search?q=**CPImportKey**) .<br/>                                                                                                                                            |
-| Parâmetros de chave<br/>                                                                                        | Os parâmetros de chave são enviados e recuperados usando [**CPSetKeyParam**](https://www.bing.com/search?q=**CPSetKeyParam**) e [**CPGetKeyParam**](https://www.bing.com/search?q=**CPGetKeyParam**). Novos parâmetros de chave podem habilitar o suporte para vários tipos diferentes de chaves.<br/>                                                                                                                                                                                                                         |
+| Parâmetros chave<br/>                                                                                        | Os parâmetros de chave são enviados e recuperados usando [**CPSetKeyParam**](https://www.bing.com/search?q=**CPSetKeyParam**) e [**CPGetKeyParam**](https://www.bing.com/search?q=**CPGetKeyParam**). Novos parâmetros de chave podem habilitar o suporte para vários tipos diferentes de chaves.<br/>                                                                                                                                                                                                                         |
 | Parâmetros de objeto de hash<br/>                                                                                | Os parâmetros de objeto de hash são enviados e recuperados usando [**CPSetHashParam**](https://www.bing.com/search?q=**CPSetHashParam**) e [**CPGetHashParam**](https://www.bing.com/search?q=**CPGetHashParam**). Novos parâmetros de objeto de hash podem habilitar o suporte para muitos tipos diferentes de [*hashes*](../secgloss/h-gly.md).<br/>                                                                                                                                         |
 | Valores de sinalizador<br/>                                                                                           | A maioria das funções CryptoAPI/CryptoSPI tem um parâmetro *dwFlags* . Os novos valores *dwFlags* podem modificar o comportamento das funções conforme necessário.<br/>                                                                                                                                                                                                                                                                                                       |
 

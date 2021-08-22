@@ -1,7 +1,7 @@
 ---
-description: Projeta uma função representada em um mapa de cubo em harmônicas esféricas (SH).
+description: Projeta uma função representada em um mapa de cubo em shs (harmônicos esféricos).
 ms.assetid: da5a3195-801e-4f1c-b52c-9eafc6e2e7b4
-title: Função D3DXSHProjectCubeMap (D3dx9math. h)
+title: Função D3DXSHProjectCubeMap (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d0e3e45b42907c47d8c7f1b9e5294738b8997cd6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7372eef528b90582d3aec64facb7c1aefffdfc479e97e1a5291f1a6d2feacc56
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105802111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279466"
 ---
 # <a name="d3dxshprojectcubemap-function"></a>Função D3DXSHProjectCubeMap
 
-Projeta uma função representada em um mapa de cubo em harmônicas esféricas (SH).
+Projeta uma função representada em um mapa de cubo em shs (harmônicos esféricos).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,16 +44,16 @@ HRESULT D3DXSHProjectCubeMap(
 
 <dl> <dt>
 
-*Ordem* \[ no\]
+*Ordem* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordem da avaliação harmônica esférica (SH). Deve estar no intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes do Order ². O grau da avaliação é a ordem 1.
+Ordem da avaliação de SH (avaliação esférica). Deve estar no intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes orderâmicos. O grau da avaliação é Order - 1.
 
 </dd> <dt>
 
-*pCubeMap* \[ no\]
+*pCubeMap* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DCUBETEXTURE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dcubetexture9)**
@@ -62,38 +62,38 @@ Ponteiro para uma textura de cubo de origem. Consulte [**IDirect3DCubeTexture9**
 
 </dd> <dt>
 
-*pROut* \[ no\]
+*pROut* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o vetor SH de saída para o componente vermelho.
+Ponteiro para o vetor sh de saída para o componente vermelho.
 
 </dd> <dt>
 
-*pGOut* \[ no\]
+*pGOut* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o vetor SH de saída para o componente verde.
+Ponteiro para o vetor sh de saída para o componente verde.
 
 </dd> <dt>
 
-*pBOut* \[ no\]
+*pBOut* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o vetor SH de saída para o componente azul.
+Ponteiro para o vetor sh de saída para o componente azul.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser: D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -113,7 +113,7 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 [Funções matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferência radiante de computação (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferência de Radiance pré-comutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

@@ -19,12 +19,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1eadc8ce59e5a2bd50a4e61ad75b5124b24c21b8
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 7deeb0e4d6d0f393bae09bacc9ff6709defe51bf6ca6128cbeb64e2f4f6e35cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "103645612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138499"
 ---
 # <a name="imsrdpextendedsettingsproperty-property"></a>IMsRdpExtendedSettings: Propriedade roperty de:P
 
@@ -61,7 +61,7 @@ O valor da propriedade nomeada.
 | EnableHardwareMode | **BOOL do VT \_**  | Somente gravação | Não | Se for **true**, será feita uma tentativa de assistência de hardware com a decodificação de gráficos. |
 | IgnoreCursors | **BOOL do VT \_** | Somente gravação | Não | Se **for true**, os cursores enviados pelo servidor remoto serão ignorados. |
 | ManualClipboardSyncEnabled | **BOOL do VT \_** | Leitura/Gravação | Sim | Definir essa propriedade como **true** significa que as áreas de transferência locais e remotas não serão mantidas automaticamente em sincronia. Em vez disso, a interface [**IMsRdpClipboard**](imsrdpclipboard.md) deve ser usada para sincronizar formatos de área de transferência da área de transferência local para a área de transferência remota e a área de transferência remota para a área de transferência local. |
-| ZoomLevel | **_\_UI4 VT_* | Leitura/Gravação | Sim | Implementa o recurso de zoom usando o controle ActiveX RDP. O recurso de zoom está disponível no menu do **sistema** do RDP. A propriedade **ZoomLevel** não tem nenhum efeito no modo RemoteApp e no modo de tela inteira. [**IMsRdpClientAdvancedSettings:: SmartSizing**](imsrdpclientadvancedsettings-smartsizing.md) e **ZoomLevel** são mutuamente exclusivos. |
+| ZoomLevel | ***\_UI4 VT** | Leitura/Gravação | Sim | implementa o recurso de Zoom usando o controle de ActiveX de RDP. O recurso de zoom está disponível no menu do **sistema** do RDP. A propriedade **ZoomLevel** não tem nenhum efeito no modo RemoteApp e no modo de tela inteira. [**IMsRdpClientAdvancedSettings:: SmartSizing**](imsrdpclientadvancedsettings-smartsizing.md) e **ZoomLevel** são mutuamente exclusivos. |
 
 ## <a name="requirements"></a>Requisitos
 

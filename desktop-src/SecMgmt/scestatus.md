@@ -4,12 +4,12 @@ ms.assetid: b3facb0f-384c-41c7-90fc-56fca2f1c9ab
 title: SCESTATUS (Scesvc. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e7f22baf13cb82a281bcff83b9d9f2548ed9c9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 626a4c3006ea7d8abb6e5824305d3a193b18999a9df5c4bf979cc3943de5e78c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004944"
 ---
 # <a name="scestatus"></a>SCESTATUS
 
@@ -28,9 +28,9 @@ typedef DWORD SCESTATUS;
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Scesvc. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Scesvc. h</dt> </dl> |
 
 
 

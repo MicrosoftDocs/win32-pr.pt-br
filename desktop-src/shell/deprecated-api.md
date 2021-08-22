@@ -9,222 +9,222 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 30d7c5c275317a4330836cecf67a5fbed4f8747b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e375c3df67ab377ee81c0b120975ea34d84b182077b5282e1e5af13112be7fc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032844"
 ---
 # <a name="deprecated-shell-apis"></a>APIs de Shell preteridas 
 
 \[[**FOLDERSETDATA**](/windows/win32/api/shdeprecated/ns-shdeprecated-foldersetdata) pode ser alterado ou não estar disponível nas versões subsequentes do sistema operacional ou produto.\]
 
-\[Essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. \]
+\[essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. \]
 
-\[Essa função está disponível no Windows 2000 e no Windows XP Service Pack 2 (SP2). Ele não está mais disponível a partir do Windows Vista.\]
+\[essa função está disponível no Windows 2000 e por meio do Windows XP Service Pack 2 (SP2). ele não está mais disponível a partir do Windows Vista.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[O [**CharLowerWrapW**](charlowerwrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Você deve usar [**CharLowerW**](/windows/win32/api/winuser/nf-winuser-charlowera) em seu lugar.\]
+\[o [**CharLowerWrapW**](charlowerwrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Você deve usar [**CharLowerW**](/windows/win32/api/winuser/nf-winuser-charlowera) em seu lugar.\]
 
-\[O [**CharUpperBuffWrapW**](charupperbuffwrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Você deve usar [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) em seu lugar.\]
+\[o [**CharUpperBuffWrapW**](charupperbuffwrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Você deve usar [**CharUpperBuffW**](/windows/win32/api/winuser/nf-winuser-charupperbuffa) em seu lugar.\]
 
-\[O [**CompareStringWrapW**](comparestringwrapw.md) está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**CompareStringW**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw) em seu lugar.\]
+\[o [**CompareStringWrapW**](comparestringwrapw.md) está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**CompareStringW**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw) em seu lugar.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função não está disponível no Windows Vista.\]
+\[essa função não está disponível a partir do Windows Vista.\]
 
 \[Essa função foi preterida e pode ser alterada ou indisponível nas versões subsequentes.\]
 
-\[[**Dad \_ O AutoScroll**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_autoscroll) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes.\]
+\[[**Dad \_ o AutoScroll**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_autoscroll) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes.\]
 
-\[[**Dad \_ O DragEnterEx**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragEnter**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragenter) em vez disso. \]
+\[[**Dad \_ o DragEnterEx**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragEnter**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragenter) em vez disso. \]
 
-\[[**Dad \_ O DragEnterEx2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex2) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragEnter**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragenter) em vez disso.\]
+\[[**Dad \_ o DragEnterEx2**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex2) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragEnter**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragenter) em vez disso.\]
 
-\[[**Dad \_ O DragLeave**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragleave) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragLeave**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragleave) em vez disso.\]
+\[[**Dad \_ o DragLeave**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragleave) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragLeave**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragleave) em vez disso.\]
 
-\[[**Dad \_ O DragMove**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragmove) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragMove**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragmove) em vez disso. \]
+\[[**Dad \_ o DragMove**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragmove) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragMove**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragmove) em vez disso. \]
 
-\[[**Dad \_ O SetDragImage**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_setdragimage) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ BeginDrag**](/windows/win32/api/commctrl/nf-commctrl-imagelist_begindrag) em vez disso.\]
+\[[**Dad \_ o SetDragImage**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_setdragimage) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ BeginDrag**](/windows/win32/api/commctrl/nf-commctrl-imagelist_begindrag) em vez disso.\]
 
-\[[**Dad \_ O ShowDragImage**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_showdragimage) está disponível no windows 2000 e no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragShowNolock**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragshownolock) em vez disso. \]
+\[[**Dad \_ o ShowDragImage**](/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_showdragimage) está disponível em Windows 2000 e Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes. Use [**ImageList \_ DragShowNolock**](/windows/win32/api/commctrl/nf-commctrl-imagelist_dragshownolock) em vez disso. \]
 
 \[Essa função é mantida somente para compatibilidade com versões anteriores. Use [**ExpandEnvironmentStrings**](/windows/win32/api/processenv/nf-processenv-expandenvironmentstringsa) em vez disso.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. \]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. \]
 
-\[Essa função está disponível no Windows XP com SP2 por meio do Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Em vez disso, os aplicativos cliente devem usar o [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) para apresentar um ambiente de usuário que fornece download seguro e troca de arquivos por email e anexos de mensagens.\]
+\[essa função está disponível no Windows XP com SP2 por meio do Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Em vez disso, os aplicativos cliente devem usar o [**IAttachmentExecute**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iattachmentexecute) para apresentar um ambiente de usuário que fornece download seguro e troca de arquivos por email e anexos de mensagens.\]
 
-\[O [**FindResourceWrapW**](findresourcewrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Em vez disso, você deve usar [**FindResourceW**](/windows/win32/api/winbase/nf-winbase-findresourcea) .\]
+\[o [**FindResourceWrapW**](findresourcewrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Em vez disso, você deve usar [**FindResourceW**](/windows/win32/api/winbase/nf-winbase-findresourcea) .\]
 
-\[O [**GetDateFormatWrapW**](getdateformatwrapw.md) está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**GetDateFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformata) em seu lugar.\]
+\[o [**GetDateFormatWrapW**](getdateformatwrapw.md) está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**GetDateFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformata) em seu lugar.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[O [**GetTimeFormatWrapW**](gettimeformatwrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Você deve usar [**GetTimeFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) em seu lugar.\]
+\[o [**GetTimeFormatWrapW**](gettimeformatwrapw.md) está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Você deve usar [**GetTimeFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) em seu lugar.\]
 
-\[O [**GUIDFromString**](guidfromstring.md) está disponível por meio do Windows XP com SP2 ou Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes. Os aplicativos devem usar [**CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) ou [**falha em IIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-iidfromstring) no lugar dessa função.\]
+\[o [**GUIDFromString**](guidfromstring.md) está disponível por meio do Windows XP com SP2 ou Windows Vista. Ele pode ser alterado ou indisponível nas versões subsequentes. Os aplicativos devem usar [**CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) ou [**falha em IIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-iidfromstring) no lugar dessa função.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[O [**IsCharAlphaNumericWrapW**](ischaralphanumericwrapw.md) está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) em seu lugar.\]
+\[o [**IsCharAlphaNumericWrapW**](ischaralphanumericwrapw.md) está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**IsCharAlphaNumericW**](/windows/win32/api/winuser/nf-winuser-ischaralphanumerica) em seu lugar.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Em vez disso, use [**GetDriveType**](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea) ou [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) .\]
+\[essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Em vez disso, use [**GetDriveType**](/windows/win32/api/fileapi/nf-fileapi-getdrivetypea) ou [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona) .\]
 
-\[Essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Use [**InitCommonControlsEx**](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) em vez disso.\]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Use [**InitCommonControlsEx**](/windows/win32/api/commctrl/nf-commctrl-initcommoncontrolsex) em vez disso.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função não está disponível para uso a partir do Windows 7.\]
+\[esta função não está disponível para uso a partir do Windows 7.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função não está disponível para uso a partir do Windows 7.\]
+\[esta função não está disponível para uso a partir do Windows 7.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Use [**OutputDebugStringWna**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) em seu lugar.\]
+\[essa função está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Use [**OutputDebugStringWna**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringa) em seu lugar.\]
 
-\[A função [**parsefield**](parsefield.md) , no momento, deve estar disponível para uso na próxima versão do sistema operacional Microsoft Windows. Ele pode ser alterado ou indisponível nas versões subsequentes.\]
+\[a função [**parsefield**](parsefield.md) , no momento, deve estar disponível para uso na próxima versão do sistema operacional Microsoft Windows. Ele pode ser alterado ou indisponível nas versões subsequentes.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Não há suporte para essa função no Windows Vista.\]
+\[essa função não tem suporte a partir do Windows Vista.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Use [**CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) em vez disso.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows. Em vez disso, use [**CoTaskMemAlloc.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
 \[Não há suporte para essa estrutura.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Use [**CLSIDFromString**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring) em vez disso.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows. Em [**vez disso, use CLSIDFromString.**](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring)\]
 
-\[O [**SHCreateProcessAsUserW**](/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw) não é implementado no Windows XP ou em sistemas posteriores.\]
+\[[**SHCreateProcessAsUserW**](/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw) não é implementado no Windows XP ou sistemas posteriores.\]
 
-\[O [**SHCreateProcessAsUserW**](/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw) não é mais implementado no Windows XP ou em versões posteriores.\]
+\[[**SHCreateProcessAsUserW**](/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw) não é mais implementado Windows XP ou versões posteriores.\]
 
-\[Esta função é preterida. Use [**CreateClassMoniker**](/windows/win32/api/objbase/nf-objbase-createclassmoniker) em vez disso. Observe que o CLSID usado na chamada para **CreateClassMoniker** deve ser definido pelo aplicativo. Não chame **CreateClassMoniker** com um CLSID definido pelo sistema.\]
+\[Esta função é preterida. Em vez disso, use [**CreateClassMoniker.**](/windows/win32/api/objbase/nf-objbase-createclassmoniker) Observe que o CLSID usado na chamada para **CreateClassMoniker** deve ser definido pelo aplicativo. Não chame **CreateClassMoniker com** uma CLSID definida pelo sistema.\]
 
-\[O [**SHDestroyPropSheetExtArray**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shdestroypropsheetextarray) está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.\]
+\[[**SHDestroyPropSheetExtArray**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shdestroypropsheetextarray) está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[O [**SHExtractIconsW**](shextracticonsw.md) está disponível por meio do Windows XP SP2. Ele pode ser alterado ou indisponível nas versões subsequentes.\]
+\[[**SHExtractIconsW**](shextracticonsw.md) está disponível por meio Windows XP SP2. Ele pode ser alterado ou não disponível nas versões subsequentes.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Não há suporte para ele no Windows Vista e posterior. Use [**OleFlushClipboard**](/windows/win32/api/ole2/nf-ole2-oleflushclipboard) em vez disso.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Não há suporte para ele no Windows Vista e posterior. Em vez disso, use [**OleFlushClipboard.**](/windows/win32/api/ole2/nf-ole2-oleflushclipboard)\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows. Use [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) em vez disso.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows. Em vez disso, use [**CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[O [**SHGetMalloc**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetmalloc) está disponível por meio do Windows Vista e do windows Server 2003, mas pode ser alterado ou indisponível nas versões subsequentes do sistema operacional ou produto. Consulte a seção comentários para obter recomendações alternativas.\]
+\[[**SHGetMalloc**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetmalloc) está disponível por meio do Windows Vista e Windows Server 2003, mas pode ser alterado ou não disponível em versões subsequentes do sistema operacional ou produto. Consulte a seção Comentários para ver recomendações alternativas.\]
 
-\[O [**SHGetShellStyleHInstance**](/previous-versions/windows/desktop/legacy/bb762202(v=vs.85)) está disponível para uso no sistema operacional Windows XP até e incluindo o SP2. Ele não está disponível em versões posteriores do Windows, como o Windows Vista.\]
+\[[**SHGetShellStyleHInstance**](/previous-versions/windows/desktop/legacy/bb762202(v=vs.85)) está disponível para uso no sistema operacional Windows XP até e incluindo o SP2. Ele não está disponível em versões posteriores do Windows, como Windows Vista.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Não há suporte para ele no Windows Vista.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Não há suporte para ele a partir Windows Vista.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele não está disponível no Windows Vista.\]
-
-\[Não há mais suporte para essa função.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele não está disponível a partir do Windows Vista.\]
 
 \[Não há mais suporte para essa função.\]
 
-\[Essa função está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Não há mais suporte para essa função.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Esse objeto está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio do Windows XP com SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Esse objeto está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Esse objeto está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Esse objeto está disponível por meio do Windows XP SP2 e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Esse objeto está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Esse objeto está disponível por meio do Windows XP Service Pack 2 (SP2) e do Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Esse objeto está disponível por meio Windows XP SP2 e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Esse objeto tem suporte por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Esse objeto está disponível por meio Windows XP Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-\[Esse objeto tem suporte por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Esse objeto tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Esse objeto tem suporte por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Esse objeto tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Esse objeto tem suporte por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Esse objeto tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Esse objeto tem suporte por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Esse objeto tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Esse objeto tem suporte por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Esse objeto tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[O único método, [**DoContextMenuPopup**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenusite-docontextmenupopup), não está mais disponível para uso a partir do Windows Server 2003.\]
+\[Esse objeto tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Essa interface foi substituída. Há suporte para o Windows XP SP2 e o Windows Server 2003. Não há suporte para ele no Windows Vista.\]
+\[O único método, [**DoContextMenuPopup,**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-icontextmenusite-docontextmenupopup)não está mais disponível para uso Windows Server 2003.\]
 
-\[[**IDeskBandInfo**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ideskbandinfo) pode ser alterado ou não estar disponível nas versões subsequentes do sistema operacional ou produto.\]
+\[Essa interface foi substituída. Ele tem suporte por meio Windows XP SP2 e Windows Server 2003. Não há suporte para ele a partir Windows Vista.\]
 
-\[Essa interface é suportada por meio do Windows XPSP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[[**IDeskBandInfo**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ideskbandinfo) pode ser alterado ou não disponível em versões subsequentes do sistema operacional ou produto.\]
 
-\[Essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Essa interface tem suporte por meio Windows XPSP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Não há suporte para ele no Windows Vista.\]
+\[Essa interface tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[A interface [**IEnumSyncItems**](/previous-versions/windows/desktop/legacy/bb761957(v=vs.85)) está disponível para uso por meio do Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
+\[Essa interface tem suporte por meio Windows XP SP2 e Windows Server 2003. Não há suporte para ele a partir Windows Vista.\]
 
-\[A interface [**IEnumSyncSchedules**](/previous-versions/windows/desktop/legacy/bb761937(v=vs.85)) está disponível para uso por meio do Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
+\[A interface [**IEnumSyncItems**](/previous-versions/windows/desktop/legacy/bb761957(v=vs.85)) está disponível para uso por meio Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
 
-\[A interface [**IIdentityChangeNotify**](iidentitychangenotify.md) está disponível para uso no Windows 2000. No Windows XP, essa funcionalidade foi substituída por [contas de usuário com troca rápida de usuário e área de trabalho remota](fastuserswitching.md)e pode ser alterada ou indisponível nas versões subsequentes.\]
+\[A interface [**IEnumSyncSchedules**](/previous-versions/windows/desktop/legacy/bb761937(v=vs.85)) está disponível para uso por meio Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
 
-\[Essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[A interface [**IIdentityChangeNotify**](iidentitychangenotify.md) está disponível para uso no Windows 2000. No Windows XP, essa funcionalidade foi superada por Contas de Usuário com o Fast [User Switching](fastuserswitching.md)e Área de Trabalho Remota e pode ser alterada ou não disponível nas versões subsequentes.\]
 
-\[Não há suporte para essa interface no Windows Vista. Ele foi removido dos cabeçalhos públicos.\]
+\[Essa interface tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Não há suporte para ele no Windows Vista.\]
+\[Não há suporte para essa interface a partir Windows Vista. Ele foi removido dos headers públicos.\]
 
-\[Essa interface é suportada por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Essa interface tem suporte por meio Windows XP SP2 e Windows Server 2003. Não há suporte para ele desde Windows Vista.\]
 
-\[O [**IShellFolderView**](/windows/win32/api/shlobj_core/nn-shlobj_core-ishellfolderview) não está mais disponível para uso a partir do Windows 7. Em vez disso, use [**IFolderView2**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifolderview2) e [**IFolderView**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifolderview).\]
+\[Essa interface tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-\[Essa interface eventualmente não terá suporte. É recomendável que as APIs do Windows GDI+ sejam usadas no lugar de métodos [**IShellImageData**](/windows/desktop/api/Shimgdata/nn-shimgdata-ishellimagedata) .\]
+\[[**IShellFolderView**](/windows/win32/api/shlobj_core/nn-shlobj_core-ishellfolderview) não está mais disponível para uso a partir Windows 7. Em vez disso, [**use IFolderView2**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifolderview2) [**e IFolderView.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifolderview)\]
 
-\[O [**IShellTaskScheduler2**](/previous-versions/windows/desktop/legacy/bb774852(v=vs.85)) está disponível no Windows XP. Ele pode ser alterado ou indisponível nas versões subsequentes.\]
+\[Essa interface eventualmente não terá suporte. É recomendável que Windows GDI+ APIs sejam usadas no lugar dos [**métodos IShellImageData.**](/windows/desktop/api/Shimgdata/nn-shimgdata-ishellimagedata)\]
 
-\[A interface [**ISyncSchedule**](/previous-versions/windows/desktop/isync-schedule/bb774693(v=vs.85)) está disponível para uso por meio do Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
+\[[**IShellTaskScheduler2**](/previous-versions/windows/desktop/legacy/bb774852(v=vs.85)) está disponível no Windows XP. Ele pode ser alterado ou não disponível nas versões subsequentes.\]
 
-\[A interface [**ISyncScheduleMgr**](/previous-versions/windows/desktop/isync-schedule-mgr/bb774672(v=vs.85)) está disponível para uso por meio do Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
+\[A interface [**ISyncSchedule**](/previous-versions/windows/desktop/isync-schedule/bb774693(v=vs.85)) está disponível para uso por meio Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
 
-\[[**ITravelEntry**](/windows/desktop/api/Shdeprecated/nn-shdeprecated-itravelentry) pode não ter suporte em versões do Windows posteriores ao Windows XP.\]
+\[A interface [**ISyncScheduleMgr**](/previous-versions/windows/desktop/isync-schedule-mgr/bb774672(v=vs.85)) está disponível para uso por meio Windows XP. Ele não está disponível nas versões subsequentes do Windows.\]
 
-\[Há suporte para essa notificação por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[[**O ITravelEntry**](/windows/desktop/api/Shdeprecated/nn-shdeprecated-itravelentry) pode não ter suporte em versões do Windows posteriores Windows XP.\]
 
-\[Há suporte para essa notificação por meio do Windows XP SP2 e do Windows Server 2003. Ele pode não ter suporte em versões subsequentes do Windows.\]
+\[Essa notificação tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
 
-As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
+\[Essa notificação tem suporte por meio Windows XP SP2 e Windows Server 2003. Pode não ter suporte em versões subsequentes do Windows.\]
+
+As APIs a seguir são preterida ou superadas por APIs mais novas.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -244,15 +244,15 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 <tbody>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-auto_scroll_data"><strong>AUTO_SCROLL_DATA</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-auto_scroll_data"><strong>AUTO_SCROLL_DATA</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-auto_scroll_data"><strong>AUTO_SCROLL_DATA</strong></a> podem ser alterados ou não disponíveis.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-cabinetstate"><strong>GABINETEstate</strong></a><br/></td>
-<td>O <a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-cabinetstate"><strong>cabinetstate</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-cabinetstate"><strong>CABINETSTATE</strong></a><br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-cabinetstate"><strong>CABINETSTATE</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shobjidl_core/ns-shobjidl_core-deskbandinfo"><strong>DESKBANDINFO</strong></a><br/></td>
-<td>Recebe informações sobre um objeto Band. Essa estrutura é usada com o método <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ideskband-getbandinfo"><strong>IDeskBand:: GetBandInfo</strong></a> preterido.<br/></td>
+<td>Recebe informações sobre um objeto de banda. Essa estrutura é usada com o método <a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ideskband-getbandinfo"><strong>IDeskBand::GetBandInfo</strong></a> preterido.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shdeprecated/ne-shdeprecated-securelockcode"><strong>SECURELOCK</strong></a><br/></td>
@@ -260,15 +260,15 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/win32/api/shdeprecated/ns-shdeprecated-foldersetdata"><strong>FOLDERSETDATA</strong></a><br/></td>
-<td>Preterido. Dados usados em <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-getfoldersetdata"><strong>IBrowserService2:: GetFolderSetData</strong></a>.<br/></td>
+<td>Preterido. Dados usados em <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-getfoldersetdata"><strong>IBrowserService2::GetFolderSetData.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/shdeprecated/ns-shdeprecated-toolbaritem"><strong>TOOLBARITEM</strong></a><br/></td>
-<td>Preterido. Dados usados em <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-_gettoolbaritem"><strong>IBrowserService2:: _GetToolbarItem</strong></a>, <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-v_maygetnexttoolbarfocus"><strong>IBrowserService2:: v_MayGetNextToolbarFocus</strong></a>e <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-_setfocus"><strong>IBrowserService2:: _SetFocus</strong></a> para definir um item da barra de ferramentas.<br/></td>
+<td>Preterido. Dados usados <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-_gettoolbaritem"><strong>em IBrowserService2::_GetToolbarItem</strong></a>, <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-v_maygetnexttoolbarfocus"><strong>IBrowserService2::v_MayGetNextToolbarFocus</strong></a>e <a href="/windows/desktop/api/Shdeprecated/nf-shdeprecated-ibrowserservice2-_setfocus"><strong>IBrowserService2::_SetFocus</strong></a> para definir um item da barra de ferramentas.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="addmrustring.md"><strong>AddMRUStringW</strong></a><br/></td>
-<td>Adiciona uma cadeia de caracteres à parte superior da lista MRU (usada mais recentemente).<br/></td>
+<td>Adiciona uma cadeia de caracteres à parte superior da lista de MRU (usados mais recentemente).<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/legacy/bb776387(v=vs.85)"><strong>CallCPLEntry16</strong></a><br/></td>
@@ -276,46 +276,46 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="cansharefolderw.md"><strong>CanShareFolderW</strong></a><br/></td>
-<td>Usado para determinar se a opção <strong>compartilhar esta pasta</strong> deve ser mostrada na exibição da Web.<br/></td>
+<td>Usado para determinar se a opção <strong>Compartilhar esta pasta deve ser</strong> mostrada na exibição da Web.<br/></td>
 </tr>
 <tr class="even">
 <td> <a href="charlowerwrapw.md"><strong>CharLowerWrapW</strong></a><br/></td>
-<td>Converte uma cadeia de caracteres Unicode ou um único caractere em minúsculas. Se o operando for uma cadeia de caracteres, a função converterá os caracteres em vigor. <br/>
+<td>Converte uma cadeia de caracteres Unicode ou um único caractere em minúsculas. Se o operand for uma cadeia de caracteres, a função converterá os caracteres no local. <br/>
 <blockquote>
 [!Note]<br />
- <a href="charlowerwrapw.md"><strong>CharLowerWrapW</strong></a> é um wrapper para a função <strong>CharLowerW</strong> . Consulte a página <a href="/windows/desktop/api/winuser/nf-winuser-charlowera"><strong>CharLower</strong></a> para ver mais observações de uso.
+ <a href="charlowerwrapw.md"><strong>CharLowerWrapW</strong></a> é um wrapper para a <strong>função CharLowerW.</strong> Consulte a <a href="/windows/desktop/api/winuser/nf-winuser-charlowera"><strong>página CharLower</strong></a> para ver mais observações de uso.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td> <a href="charupperbuffwrapw.md"><strong>CharUpperBuffWrapW</strong></a><br/></td>
-<td>Converte caracteres minúsculos em um buffer em caracteres maiúsculos. A função converte os caracteres em vigor. <br/>
+<td>Converte caracteres minúsculos em um buffer em caracteres maiúsculas. A função converte os caracteres no local. <br/>
 <blockquote>
 [!Note]<br />
- <a href="charupperbuffwrapw.md"><strong>CharUpperBuffWrapW</strong></a> é um wrapper para a função <strong>CharUpperBuffW</strong> . Consulte a página <a href="/windows/desktop/api/winuser/nf-winuser-charupperbuffa"><strong>CharUpperBuff</strong></a> para ver mais observações de uso.
+ <a href="charupperbuffwrapw.md"><strong>CharUpperBuffWrapW</strong></a> é um wrapper para a <strong>função CharUpperBuffW.</strong> Consulte a <a href="/windows/desktop/api/winuser/nf-winuser-charupperbuffa"><strong>página CharUpperBuff</strong></a> para ver mais observações de uso.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-cidldata_createfromidarray"><strong>CIDLData_CreateFromIDArray</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-cidldata_createfromidarray"><strong>CIDLData_CreateFromIDArray</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-cidldata_createfromidarray"><strong>CIDLData_CreateFromIDArray</strong></a> podem ser alterados ou não disponíveis.<br/></td>
 </tr>
 <tr class="odd">
 <td> <a href="comparestringwrapw.md"><strong>CompareStringWrapW</strong></a><br/></td>
-<td>Compara duas cadeias de caracteres Unicode, usando uma localidade especificada. <br/>
+<td>Compara duas cadeias de caracteres Unicode usando uma localidade especificada. <br/>
 <blockquote>
 [!Note]<br />
- <a href="comparestringwrapw.md"><strong>CompareStringWrapW</strong></a> é um wrapper para a função <strong>CompareStringW</strong> . Consulte a página <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringw"><strong>CompareString</strong></a> para ver mais observações de uso.
+ <a href="comparestringwrapw.md"><strong>CompareStringWrapW</strong></a> é um wrapper para a <strong>função CompareStringW.</strong> Consulte a <a href="/windows/desktop/api/stringapiset/nf-stringapiset-comparestringw"><strong>página CompareString</strong></a> para ver mais observações de uso.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-connecttoconnectionpoint"><strong>ConnectToConnectionPoint</strong></a><br/></td>
-<td>Estabelece ou encerra uma conexão entre o coletor de um cliente e um contêiner de ponto de conexão.<br/></td>
+<td>Estabelece ou encerra uma conexão entre o sink de um cliente e um contêiner de ponto de conexão.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="createhardwareeventmoniker.md"><strong>CreateHardwareEventMoniker</strong></a><br/></td>
-<td>Cria um moniker que representa um componente de hardware e seu manipulador de eventos associado. A reprodução automática usa essa função para permitir que os aplicativos usem eventos de reprodução automática.<br/></td>
+<td>Cria um moniker que representa um componente de hardware e seu manipulador de eventos associado. O AutoPlay usa essa função para permitir que os aplicativos usem eventos de Reprodução Automática.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="createuserprofileex.md"><strong>CreateUserProfileEx</strong></a><br/></td>
@@ -323,7 +323,7 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/legacy/cc448310(v=vs.85)"><strong>CscSearchApiGetInterface</strong></a><br/></td>
-<td>Cria uma instância de um objeto <a href="/previous-versions/windows/desktop/legacy/cc448312(v=vs.85)"><strong>CCscSearchApiInterface</strong></a> .<br/></td>
+<td>Cria uma instância de um <a href="/previous-versions/windows/desktop/legacy/cc448312(v=vs.85)"><strong>objeto CCscSearchApiInterface.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_autoscroll"><strong>DAD_AutoScroll</strong></a><br/></td>
@@ -331,19 +331,19 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex"><strong>DAD_DragEnterEx</strong></a><br/></td>
-<td>Bloqueia atualizações na janela especificada durante uma operação de arrastar e exibe a imagem de arrastar na posição especificada dentro da janela.<br/></td>
+<td>Bloqueia as atualizações na janela especificada durante uma operação de arrastar e exibe a imagem de arrastar na posição especificada dentro da janela.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex2"><strong>DAD_DragEnterEx2</strong></a><br/></td>
-<td>Bloqueia atualizações na janela especificada durante uma operação de arrastar e soltar e exibe a imagem de arrastar na posição especificada dentro da janela.<br/></td>
+<td>Bloqueia as atualizações na janela especificada durante uma operação do tipo "arrastar e soltar" e exibe a imagem de arrastar na posição especificada dentro da janela.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragleave"><strong>DAD_DragLeave</strong></a><br/></td>
-<td>Desbloqueia a janela bloqueada pela função <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex"><strong>DAD_DragEnterEx</strong></a> . <br/></td>
+<td>Desbloqueia a janela bloqueada pela <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragenterex"><strong>DAD_DragEnterEx</strong></a> função. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_dragmove"><strong>DAD_DragMove</strong></a><br/></td>
-<td>Move a imagem que está sendo arrastada durante uma operação de arrastar e soltar.<br/></td>
+<td>Move a imagem que está sendo arrastada durante uma operação do tipo "arrastar e soltar".<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-dad_setdragimage"><strong>DAD_SetDragImage</strong></a><br/></td>
@@ -355,23 +355,23 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/nf-shellapi-doenvironmentsubsta"><strong>DoEnvironmentSubst</strong></a><br/></td>
-<td>Analisa uma cadeia de caracteres de entrada que contém referências a uma ou mais variáveis de ambiente e as substitui pelos valores totalmente expandidos. <br/></td>
+<td>Análise de uma cadeia de caracteres de entrada que contém referências a uma ou mais variáveis de ambiente e as substitui por seus valores totalmente expandidos. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj/nf-shlobj-drivetype"><strong>DriveType</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj/nf-shlobj-drivetype"><strong>DriveType</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj/nf-shlobj-drivetype"><strong>DriveType</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="enummrulist.md"><strong>EnumMRUListW</strong></a><br/></td>
-<td>Enumera o conteúdo da lista MRU. Opcionalmente, recupera um item da enumeração.<br/></td>
+<td>Enumera o conteúdo da lista mru. Opcionalmente, recupera um item da enumeração .<br/></td>
 </tr>
 <tr class="even">
 <td><a href="estimatefilerisklevel.md"><strong>EstimateFileRiskLevel</strong></a><br/></td>
-<td>Estima o risco de executar um código desconhecido quando um manipulador é chamado em um determinado arquivo. Esse risco se baseia em uma compreensão do manipulador e do conteúdo do código do arquivo.<br/></td>
+<td>Estima o risco de execução de código desconhecido quando um manipulador é chamado em um determinado arquivo. Esse risco se baseia em uma compreensão do manipulador e do conteúdo de código do arquivo.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/nf-shellapi-extractassociatediconexa"><strong>ExtractAssociatedIconEx</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-extractassociatediconexa"><strong>ExtractAssociatedIconEx</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-extractassociatediconexa"><strong>ExtractAssociatedIconEx</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="findresourcewrapw.md"><strong>FindResourceWrapW</strong></a><br/></td>
@@ -471,11 +471,11 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/shell/callbacks"><strong>MLLoadLibrary</strong></a><br/></td>
-<td>Mapeia uma DLL de recurso apropriada para o espaço de endereço da função de chamada, com base no idioma padrão da interface do usuário. <br/></td>
+<td>Mapas uma DLL de recurso apropriada no espaço de endereço da função de chamada, com base no idioma padrão da interface do usuário. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="mlwinhelp.md"><strong>MLWinHelp</strong></a><br/></td>
-<td>Inicia a ajuda do Windows (Winhelp.exe) e passa dados adicionais que indicam a natureza da ajuda solicitada pelo aplicativo.<br/></td>
+<td>inicia Windows ajuda (Winhelp.exe) e passa dados adicionais que indicam a natureza da ajuda solicitada pelo aplicativo.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-openregstream"><strong>OpenRegStream</strong></a><br/></td>
@@ -544,11 +544,11 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-restartdialog"><strong>RestartDialog</strong></a><br/></td>
-<td>Exibe uma caixa de diálogo que solicita que o usuário reinicie o Windows. Quando o usuário clica no botão, a função chama o <a href="/windows/desktop/api/winuser/nf-winuser-exitwindowsex"><strong>ExitWindowsEx</strong></a> para tentar reiniciar o Windows.<br/></td>
+<td>Exibe uma caixa de diálogo que solicita que o usuário reinicie Windows. Quando o usuário clica no botão, a função chama o <a href="/windows/desktop/api/winuser/nf-winuser-exitwindowsex"><strong>ExitWindowsEx</strong></a> para tentar reiniciar Windows.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-restartdialogex"><strong>RestartDialogEx</strong></a><br/></td>
-<td>Exibe uma caixa de diálogo que solicita que o usuário reinicie o Windows. Quando o usuário clica no botão, a função chama o <a href="/windows/desktop/api/winuser/nf-winuser-exitwindowsex"><strong>ExitWindowsEx</strong></a> para tentar reiniciar o Windows.<br/></td>
+<td>Exibe uma caixa de diálogo que solicita que o usuário reinicie Windows. Quando o usuário clica no botão, a função chama o <a href="/windows/desktop/api/winuser/nf-winuser-exitwindowsex"><strong>ExitWindowsEx</strong></a> para tentar reiniciar Windows.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shaddfrompropsheetextarray"><strong>SHAddFromPropSheetExtArray</strong></a><br/></td>
@@ -568,11 +568,11 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shansitounicode"><strong>SHAnsiToUnicode</strong></a><br/></td>
-<td>Converte uma cadeia de caracteres da página de código ANSI para a página de código Unicode.<br/></td>
+<td>Converte uma cadeia de caracteres da página de código ANSI na página de código Unicode.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangedwordasidlist"><strong>SHChangeDWORDAsIDList</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangedwordasidlist"><strong>SHChangeDWORDAsIDList</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangedwordasidlist"><strong>SHChangeDWORDAsIDList</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj/ns-shlobj-shchangeproductkeyasidlist"><strong>SHChangeProductKeyAsIDList</strong></a><br/></td>
@@ -580,19 +580,19 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangeupdateimageidlist"><strong>SHChangeUpdateImageIDList</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangeupdateimageidlist"><strong>SHChangeUpdateImageIDList</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/ns-shlobj_core-shchangeupdateimageidlist"><strong>SHChangeUpdateImageIDList</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shclonespecialidlist"><strong>SHCloneSpecialIDList</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shclonespecialidlist"><strong>SHCloneSpecialIDList</strong></a> pode ser alterado ou indisponível. Em vez disso, use <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation"><strong>SHGetSpecialFolderLocation</strong></a>.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shclonespecialidlist"><strong>SHCloneSpecialIDList</strong></a> pode ser alterado ou não disponível. Em vez disso, <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation"><strong>use SHGetSpecialFolderLocation</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shclsidfromstring"><strong>SHCLSIDFromString</strong></a><br/></td>
-<td>Usa a forma de cadeia de caracteres de um identificador de classe (CLSID) e cria o CLSID correspondente.<br/></td>
+<td>Assume a forma de cadeia de caracteres de um CLSID (identificador de classe) e cria o CLSID correspondente.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcocreateinstance"><strong>SHCoCreateInstance</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcocreateinstance"><strong>SHCoCreateInstance</strong></a> pode ser alterado ou indisponível. Em vez disso, use <a href="/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance"><strong>CoCreateInstance</strong></a>.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcocreateinstance"><strong>SHCoCreateInstance</strong></a> pode ser alterado ou não disponível. Em vez disso, <a href="/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance"><strong>use CoCreateInstance</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatedirectory"><strong>SHCreateDirectory</strong></a><br/></td>
@@ -604,31 +604,31 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatefileextracticonw"><strong>SHCreateFileExtractIcon</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatefileextracticonw"><strong>SHCreateFileExtractIcon</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatefileextracticonw"><strong>SHCreateFileExtractIcon</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw"><strong>SHCreateProcessAsUserW</strong></a><br/></td>
-<td>Cria um novo processo de modo de usuário e seu thread principal para executar um arquivo executável especificado. <br/></td>
+<td>Cria um novo processo de modo de usuário e seu thread primário para executar um arquivo executável especificado. <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/ns-shellapi-shcreateprocessinfow"><strong>SHCREATEPROCESSINFOW</strong></a><br/></td>
-<td>Contém as informações necessárias para o <a href="/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw"><strong>SHCreateProcessAsUserW</strong></a> criar um processo. <br/></td>
+<td>Contém as informações necessárias para <a href="/windows/desktop/api/Shellapi/nf-shellapi-shcreateprocessasuserw"><strong>SHCreateProcessAsUserW</strong></a> para criar um processo. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shcreatepropsheetextarray"><strong>SHCreatePropSheetExtArray</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shcreatepropsheetextarray"><strong>SHCreatePropSheetExtArray</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shcreatepropsheetextarray"><strong>SHCreatePropSheetExtArray</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shcreatequerycancelautoplaymoniker"><strong>SHCreateQueryCancelAutoPlayMoniker</strong></a><br/></td>
-<td>Preterido. Cria um moniker de classe <strong>QueryCancelAutoPlay</strong> , que pode ser usado para registrar o manipulador <a href="/windows/desktop/api/Shobjidl/nn-shobjidl-iquerycancelautoplay"><strong>IQueryCancelAutoPlay</strong></a> na tabela de objetos em execução (corrompidos).<br/></td>
+<td>Preterido. Cria um moniker de classe <strong>QueryCancelAutoPlay,</strong> que pode ser usado para registrar o manipulador <a href="/windows/desktop/api/Shobjidl/nn-shobjidl-iquerycancelautoplay"><strong>IQueryCancelAutoPlay</strong></a> na ROT (tabela de objetos em execução).<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatestdenumfmtetc"><strong>SHCreateStdEnumFmtEtc</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatestdenumfmtetc"><strong>SHCreateStdEnumFmtEtc</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shcreatestdenumfmtetc"><strong>SHCreateStdEnumFmtEtc</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shcreatestreamonfilea"><strong>SHCreateStreamOnFile</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shcreatestreamonfilea"><strong>SHCreateStreamOnFile</strong></a> pode ser alterado ou indisponível. Em vez disso, use <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shcreatestreamonfileex"><strong>SHCreateStreamOnFileEx</strong></a>.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shcreatestreamonfilea"><strong>SHCreateStreamOnFile pode</strong></a> estar alterado ou não disponível. Em vez disso, <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shcreatestreamonfileex"><strong>use SHCreateStreamOnFileEx.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shdestroypropsheetextarray"><strong>SHDestroyPropSheetExtArray</strong></a><br/></td>
@@ -636,70 +636,70 @@ As APIs a seguir são preteridas ou substituídas por APIs mais recentes.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_getcachedimageindex"><strong>Shell_GetCachedImageIndex</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_getcachedimageindex"><strong>Shell_GetCachedImageIndex</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_getcachedimageindex"><strong>Shell_GetCachedImageIndex</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_getimagelists"><strong>Shell_GetImageLists</strong></a><br/></td>
-<td>Recupera as listas de imagens do sistema para ícones grandes e pequenos.<br/></td>
+<td>Recupera listas de imagens do sistema para ícones grandes e pequenos.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_mergemenus"><strong>Shell_MergeMenus</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_mergemenus"><strong>Shell_MergeMenus</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shell_mergemenus"><strong>Shell_MergeMenus</strong></a> podem ser alterados ou não disponíveis.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shellmessageboxa"><strong>ShellMessageBox</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shellmessageboxa"><strong>ShellMessageBox</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shellmessageboxa"><strong>ShellMessageBox</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="shextracticonsw.md"><strong>SHExtractIconsW</strong></a><br/></td>
-<td>Cria uma matriz de identificadores para ícones extraídos de um arquivo especificado.<br/></td>
+<td>Cria uma matriz de alças para ícones extraídos de um arquivo especificado.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfind_initmenupopup"><strong>SHFind_InitMenuPopup</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfind_initmenupopup"><strong>SHFind_InitMenuPopup</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfind_initmenupopup"><strong>SHFind_InitMenuPopup</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfindfiles"><strong>SHFindFiles</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfindfiles"><strong>SHFindFiles</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfindfiles"><strong>SHFindFiles</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/legacy/bb762167(v=vs.85)"><strong>SHFlushClipboard</strong></a><br/></td>
-<td>Executa a sequência de desligamento da área de transferência. Ele também libera o ponteiro <a href="/windows/desktop/api/objidl/nn-objidl-idataobject"><strong>IDataObject</strong></a> colocado na área de transferência pela função <a href="/windows/desktop/api/ole2/nf-ole2-olesetclipboard"><strong>OleSetClipboard</strong></a> . <br/></td>
+<td>Executa a sequência de desligamento da área de transferência. Ele também libera o ponteiro <a href="/windows/desktop/api/objidl/nn-objidl-idataobject"><strong>IDataObject</strong></a> colocado na área de transferência pela <a href="/windows/desktop/api/ole2/nf-ole2-olesetclipboard"><strong>função OleSetClipboard.</strong></a> <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shflushsfcache"><strong>SHFlushSFCache</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shflushsfcache"><strong>SHFlushSFCache</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shflushsfcache"><strong>SHFlushSFCache</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shformatdatetimea"><strong>SHFormatDateTime</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shformatdatetimea"><strong>SHFormatDateTime</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shformatdatetimea"><strong>SHFormatDateTime</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shformatdrive"><strong>SHFormatDrive</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shformatdrive"><strong>SHFormatDrive</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shformatdrive"><strong>SHFormatDrive</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shfree"><strong>SHFree</strong></a><br/></td>
-<td>Libera a memória alocada por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shalloc"><strong>SHAlloc</strong></a>. <br/></td>
+<td>Libera a memória alocada por <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shalloc"><strong>SHAlloc.</strong></a> <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shfreeshared"><strong>SHFreeShared</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shfreeshared"><strong>SHFreeShared</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shfreeshared"><strong>SHFreeShared</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetattributesfromdataobject"><strong>SHGetAttributesFromDataObject</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetattributesfromdataobject"><strong>SHGetAttributesFromDataObject</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetattributesfromdataobject"><strong>SHGetAttributesFromDataObject</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation"><strong>SHGetFolderLocation</strong></a><br/></td>
-<td>Preterido. Recupera o caminho de uma pasta como uma estrutura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> .<br/></td>
+<td>Preterido. Recupera o caminho de uma pasta como uma <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>estrutura ITEMIDLIST.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha"><strong>SHGetFolderPath</strong></a><br/></td>
-<td>Preterido. Obtém o caminho de uma pasta identificada por um valor <a href="csidl.md"><strong>CSIDL</strong></a> . <br/>
+<td>Preterido. Obtém o caminho de uma pasta identificada por <a href="csidl.md"><strong>um valor CSIDL.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
-A partir do Windows Vista, essa função é meramente um wrapper para <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath"><strong>SHGetKnownFolderPath</strong></a>. O valor de CSIDl é convertido em seu <a href="knownfolderid.md"><strong>KNOWNFOLDERID</strong></a> associado e, em seguida, <strong>SHGetKnownFolderPath</strong> é chamado. Os novos aplicativos devem usar o sistema de pastas conhecido em vez do sistema CSIDl mais antigo, que tem suporte apenas para compatibilidade com versões anteriores.
+A partir Windows Vista, essa função é meramente um wrapper para <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath"><strong>SHGetKnownFolderPath.</strong></a> O valor CSIDL é convertido em <a href="knownfolderid.md"><strong>seu KNOWNFOLDERID</strong></a> associado e, em seguida, <strong>SHGetKnownFolderPath</strong> é chamado. Novos aplicativos devem usar o sistema de pastas conhecido em vez do sistema CSIDL mais antigo, que tem suporte apenas para compatibilidade com versões atrás.
 </blockquote>
 <br/></td>
 </tr>
@@ -709,60 +709,60 @@ A partir do Windows Vista, essa função é meramente um wrapper para <a href="/
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shgetinversecmap"><strong>SHGetInverseCMAP</strong></a><br/></td>
-<td>Recupera o mapeamento de tabela de cores inversa para a paleta de meio-tom.<br/></td>
+<td>Recupera o mapeamento de tabela de cores inversas para a paleta de meio-tom.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetmalloc"><strong>SHGetMalloc</strong></a><br/></td>
-<td>Recupera um ponteiro para a interface <a href="/windows/desktop/api/objidl/nn-objidl-imalloc"><strong>IMalloc</strong></a> do Shell. <br/></td>
+<td>Recupera um ponteiro para a interface <a href="/windows/desktop/api/objidl/nn-objidl-imalloc"><strong>IMalloc do</strong></a> Shell. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetrealidl"><strong>SHGetRealIDL</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetrealidl"><strong>SHGetRealIDL</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetrealidl"><strong>SHGetRealIDL</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetfoldercustomsettings"><strong>SHGetSetFolderCustomSettings</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetfoldercustomsettings"><strong>SHGetSetFolderCustomSettings</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetfoldercustomsettings"><strong>SHGetSetFolderCustomSettings</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings"><strong>SHGetSetSettings</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings"><strong>SHGetSetSettings</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings"><strong>SHGetSetSetSettings</strong></a><br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings"><strong>SHGetSetSetSettings</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/legacy/bb762202(v=vs.85)"><strong>SHGetShellStyleHInstance</strong></a><br/></td>
-<td>Preterido. Tenta obter um identificador para o arquivo de Shellstyle.dll.<br/></td>
+<td>Preterido. Tenta obter um alça para o arquivo Shellstyle.dll.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation"><strong>SHGetSpecialFolderLocation</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation"><strong>SHGetSpecialFolderLocation</strong></a> não tem suporte e pode ser alterado ou indisponível no futuro. Em vez disso, use <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation"><strong>SHGetFolderLocation</strong></a>.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderlocation"><strong>SHGetSpecialFolderLocation</strong></a> não tem suporte e pode ser alterado ou não disponível no futuro. Em vez disso, <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderlocation"><strong>use SHGetFolderLocation</strong></a>.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderpatha"><strong>SHGetSpecialFolderPath</strong></a><br/></td>
-<td>Não há suporte para <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderpatha"><strong>SHGetSpecialFolderPath</strong></a> . Em vez disso, use <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha"><strong>ShGetFolderPath</strong></a>.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderpatha"><strong>Shgetspecialfolderpath</strong></a><br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetspecialfolderpatha"><strong>NÃO há suporte para SHGetSpecialFolderPath.</strong></a> Em vez disso, <a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetfolderpatha"><strong>use ShGetFolderPath</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shgetviewstatepropertybag"><strong>SHGetViewStatePropertyBag</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shgetviewstatepropertybag"><strong>SHGetViewStatePropertyBag</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shgetviewstatepropertybag"><strong>SHGetViewStatePropertyBag</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shhandleupdateimage"><strong>SHHandleUpdateImage</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shhandleupdateimage"><strong>SHHandleUpdateImage</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shhandleupdateimage"><strong>SHHandleUpdateImage</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shilcreatefrompath"><strong>SHILCreateFromPath</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shilcreatefrompath"><strong>SHILCreateFromPath</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shilcreatefrompath"><strong>VESLCreateFromPath</strong></a><br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shilcreatefrompath"><strong>O SRLCreateFromPath</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda"><strong>SHInvokePrinterCommand</strong></a><br/></td>
 <td>Executa um comando em um objeto de impressora. <br/>
 <blockquote>
 [!Note]<br />
-Essa função foi preterida a partir do Windows Vista. É recomendável que, em seu lugar, você invoque verbos em impressoras por meio de <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-icontextmenu"><strong>IContextMenu</strong></a> ou <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a>.
+Essa função foi preterida a partir Windows Vista. É recomendável que, em seu lugar, você invoque verbos em impressoras por meio de <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-icontextmenu"><strong>IContextMenu</strong></a> ou <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a>.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/shell/common-file-dialog"><strong>SHIsChildOrSelf</strong></a><br/></td>
-<td>Compara se uma janela é igual a, um filho de ou um descendente de uma segunda janela.<br/></td>
+<td>Compara se uma janela é igual a, um filho de ou um descendente de, uma segunda janela.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shlimitinputedit"><strong>SHLimitInputEdit</strong></a><br/></td>
@@ -774,60 +774,60 @@ Essa função foi preterida a partir do Windows Vista. É recomendável que, em 
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shlockshared"><strong>SHLockShared</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shlockshared"><strong>SHLockShared</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shlockshared"><strong>SHLockShared</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/legacy/bb762218(v=vs.85)"><strong>SHMapIDListToImageListIndexAsync</strong></a><br/></td>
-<td>Recupera um índice na lista de imagens do sistema ao receber um <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder"><strong>IShellFolder</strong></a> e um <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> que está contido nele. Essa função também obtém o ícone final do retorno de chamada, se necessário.<br/></td>
+<td>Recupera um índice na lista de imagens do sistema quando recebe <a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellfolder"><strong>um IShellFolder</strong></a> e um <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> contidos nele. Essa função também obtém o ícone final do retorno de chamada, se necessário.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shmappidltosystemimagelistindex"><strong>SHMapPIDLToSystemImageListIndex</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shmappidltosystemimagelistindex"><strong>SHMapPIDLToSystemImageListIndex</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shmappidltosystemimagelistindex"><strong>SHMapPIDLToSystemImageListIndex</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shmessageboxchecka"><strong>SHMessageBoxCheck</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shmessageboxchecka"><strong>SHMessageBoxCheck</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shmessageboxchecka"><strong>SHMessageBoxCheck</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shobjectproperties"><strong>SHObjectProperties</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shobjectproperties"><strong>SHObjectProperties</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shobjectproperties"><strong>SHObjectProperties</strong></a> podem ser alterados ou não estão disponíveis.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shopenpropsheeta"><strong>SHOpenPropSheet</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shopenpropsheeta"><strong>SHOpenPropSheet</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlobj/nf-shlobj-shopenpropsheeta"><strong>SHOpenPropSheet</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shopenregstreama"><strong>SHOpenRegStream</strong></a><br/></td>
-<td>Preterido. Abre um valor de registro e fornece um fluxo que pode ser usado para ler ou gravar no valor. <br/>
+<td>Preterido. Abre um valor do Registro e fornece um fluxo que pode ser usado para ler ou gravar no valor. <br/>
 <blockquote>
 [!Note]<br />
-Essa função foi substituída por <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shopenregstream2a"><strong>SHOpenRegStream2</strong></a>. É recomendável que você use o <strong>SHOpenRegStream2</strong> em todos os momentos.
+Essa função foi substituída por <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shopenregstream2a"><strong>SHOpenRegStream2.</strong></a> É recomendável que você use <strong>SHOpenRegStream2</strong> o tempo todo.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shreggetboolvaluefromhkcuhklm"><strong>SHRegGetBoolValueFromHKCUHKLM</strong></a><br/></td>
-<td>Avalia um valor de chave do registro e retorna um valor booliano que reflete se o valor existe e se o estado esperado corresponde ao estado real. Essa função primeiro verificará HKEY_CURRENT_USER das informações solicitadas na subchave especificada. Se as informações não existirem na subárvore HKEY_CURRENT_USER, ela verificará a subárvore HKEY_LOCAL_MACHINE para obter as mesmas informações. <br/></td>
+<td>Avalia um valor de chave do Registro e retorna um valor booliana que reflete se o valor existe e se o estado esperado corresponde ao estado real. Essa função primeiro verificará HKEY_CURRENT_USER as informações solicitadas na sub-chave especificada. Se as informações não existirem na subárvore HKEY_CURRENT_USER, ela verificará HKEY_LOCAL_MACHINE subárvore para obter as mesmas informações. <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shreggetvaluea"><strong>SHRegGetValue</strong></a><br/></td>
-<td>Recupera um valor de registro.<br/></td>
+<td>Recupera um valor do Registro.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shreggetvaluefromhkcuhklm"><strong>SHRegGetValueFromHKCUHKLM</strong></a><br/></td>
-<td>Obtém as informações especificadas do registro. Essa função verificará HKEY_CURRENT_USER das informações solicitadas na subchave especificada. Se as informações não existirem na subárvore HKEY_CURRENT_USER, a função verificará a subárvore de HKEY_LOCAL_MACHINE para obter as mesmas informações. <br/></td>
+<td>Obtém informações especificadas do Registro. Essa função verificará HKEY_CURRENT_USER as informações solicitadas na sub-chave especificada. Se as informações não existirem na subárvore HKEY_CURRENT_USER, a função verificará HKEY_LOCAL_MACHINE subárvore para obter as mesmas informações. <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shreplacefrompropsheetextarray"><strong>SHReplaceFromPropSheetExtArray</strong></a><br/></td>
-<td>Solicita cada folha de propriedades em uma matriz de extensão de folha de propriedades para substituir páginas. Cada página é permitida até uma única substituição.<br/></td>
+<td>Solicita que cada folha de propriedades em uma matriz de extensão de folha de propriedades substitua páginas. Cada página tem permissão para até uma substituição.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shrestricted"><strong>SHRestricted</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shrestricted"><strong>SHRestricted</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shrestricted"><strong>SHRestricted</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shsetfolderpatha"><strong>SHSetFolderPath</strong></a><br/></td>
-<td>Preterido. Atribui um novo caminho a uma pasta do sistema identificada por seu CSIDl.<br/></td>
+<td>Preterido. Atribui um novo caminho a uma pasta do sistema identificada por seu CSIDL.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shsendmessagebroadcasta"><strong>SHSendMessageBroadcast</strong></a><br/></td>
@@ -835,15 +835,15 @@ Essa função foi substituída por <a href="/windows/desktop/api/Shlwapi/nf-shlw
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message"><strong>SHShellFolderView_Message</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message"><strong>SHShellFolderView_Message</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shshellfolderview_message"><strong>SHShellFolderView_Message</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shobjidl_core/nf-shobjidl_core-shsimpleidlistfrompath"><strong>SHSimpleIDListFromPath</strong></a><br/></td>
-<td>Preterido. Retorna um ponteiro para uma estrutura <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>ITEMIDLIST</strong></a> quando passado um caminho.<br/></td>
+<td>Preterido. Retorna um ponteiro para uma <a href="/windows/desktop/api/Shtypes/ns-shtypes-itemidlist"><strong>estrutura ITEMIDLIST</strong></a> quando passado um caminho.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shstartnetconnectiondialoga"><strong>SHStartNetConnectionDialog</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shstartnetconnectiondialoga"><strong>SHStartNetConnectionDialog</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shstartnetconnectiondialoga"><strong>SHStartNetConnectionDialog</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shstripmneumonica"><strong>SHStripMneumonic</strong></a><br/></td>
@@ -851,7 +851,7 @@ Essa função foi substituída por <a href="/windows/desktop/api/Shlwapi/nf-shlw
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shunicodetoansi"><strong>SHUnicodeToAnsi</strong></a><br/></td>
-<td>Converte uma cadeia de caracteres da página de código Unicode para a página de código ANSI.<br/></td>
+<td>Converte uma cadeia de caracteres da página de código Unicode na página de código ANSI.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shunicodetounicode"><strong>SHUnicodeToUnicode</strong></a><br/></td>
@@ -859,63 +859,63 @@ Essa função foi substituída por <a href="/windows/desktop/api/Shlwapi/nf-shlw
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shunlockshared"><strong>SHUnlockShared</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shunlockshared"><strong>SHUnlockShared</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-shunlockshared"><strong>SHUnlockShared</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shvalidateunc"><strong>SHValidateUNC</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shvalidateunc"><strong>SHValidateUNC</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-shvalidateunc"><strong>SHValidateUNC</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-signalfileopen"><strong>SignalFileOpen</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-signalfileopen"><strong>SignalFileOpen</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-signalfileopen"><strong>SignalFileOpen pode</strong></a> ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchflush"><strong>StopWatchFlush</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchflush"><strong>StopWatchFlush</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchflush"><strong>StopWatchFlush pode</strong></a> ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchmode"><strong>Cronômetromode</strong></a><br/></td>
-<td>O <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchmode"><strong>cronômetromode</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchmode"><strong>StopWatchMode</strong></a><br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-stopwatchmode"><strong>StopWatchMode pode</strong></a> ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/win32/api/shlobj/nf-shlobj-iadesktopp2-updatealldesktopsubscriptions"><strong>UpdateAllDesktopSubscriptions</strong></a><br/></td>
-<td>Preterido. Enumera as URLs de todos os componentes da área de trabalho e, em seguida, testa para ver se eles foram assinados. Se eles forem assinados, as assinaturas serão entregues.<br/></td>
+<td>Preterido. Enumera as URLs de todos os componentes da Área de Trabalho e, em seguida, testa se eles estão inscritos. Se eles são inscritos, as assinaturas são entregues.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlfixupw"><strong>UrlFixupW</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlfixupw"><strong>UrlFixupW</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlfixupw"><strong>UrlFixupW</strong></a> pode ser alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-whichplatform"><strong>WhichPlatform</strong></a><br/></td>
-<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-whichplatform"><strong>WhichPlatform</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/Shlwapi/nf-shlwapi-whichplatform"><strong>WhichPlatform pode</strong></a> ser alterado ou indisponível.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-win32deletefile"><strong>Win32DeleteFile</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-win32deletefile"><strong>Win32DeleteFile</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-win32deletefile"><strong>Win32DeleteFile</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="wowshellexecute.md"><strong>WOWShellExecute</strong></a><br/></td>
-<td>Executa uma operação em um arquivo especificado. <a href="wowshellexecute.md"><strong>WOWShellExecute</strong></a> existe apenas para uso com o computador virtual dos do Microsoft Windows NT (Ntvdm.exe), que permite que o sistema operacional de disco (dos) e o software de 16 bits sejam executados em um sistema Windows e não deve ser usado por outras pessoas. Em vez disso, use <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a> .<br/></td>
+<td>Executa uma operação em um arquivo especificado. <a href="wowshellexecute.md"><strong>WOWShellExecute</strong></a> existe apenas para uso com a Máquina Virtual DOS (Ntvdm.exe) do Microsoft Windows NT, que permite que o DOS (sistema operacional de disco) e o software de 16 bits sejam executados em um sistema Windows e não devem ser usados por mais ninguém. Em vez disso, use <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-writecabinetstate"><strong>WriteCabinetState</strong></a><br/></td>
-<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-writecabinetstate"><strong>WriteCabinetState</strong></a> pode ser alterado ou indisponível.<br/></td>
+<td><a href="/windows/desktop/api/shlobj_core/nf-shlobj_core-writecabinetstate"><strong>WriteCabinetState</strong></a> pode estar alterado ou não disponível.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="shlwapi-wrappers.md"><strong>Funções de wrapper SHLWAPI</strong></a><br/></td>
-<td>As tabelas neste documento listam invólucros de Shlwapi.dll que fornecem funcionalidade Unicode limitada ao Windows 95, Windows 98 e Windows Millennium Edition (Windows me).<br/></td>
+<td>As tabelas neste documento listam funções de wrapper do Shlwapi.dll que fornecem funcionalidade Unicode limitada para Windows 95, Windows 98 e Windows Millennium Edition (Windows Me).<br/></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/shell/samples-namespacetreecontrol"><strong>FileOpen</strong></a><br/></td>
-<td>Dá suporte à caixa de diálogo comum <strong>Abrir arquivo</strong> .<br/></td>
+<td><a href="/windows/desktop/shell/samples-namespacetreecontrol"><strong>Fileopen</strong></a><br/></td>
+<td>Dá suporte à <strong>caixa de diálogo</strong> Comum Abrir Arquivo.<br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/shell/samples-nondefaultdropmenuverb"><strong>Arquivo</strong></a><br/></td>
-<td>Cria a <strong>página tipos de arquivo</strong> da folha de propriedades opções de <strong>pasta</strong> que o usuário exibe clicando em <strong>Opções de pasta</strong> no menu <strong>ferramentas</strong> do Windows Explorer. <br/></td>
+<td><a href="/windows/desktop/shell/samples-nondefaultdropmenuverb"><strong>Filetypes</strong></a><br/></td>
+<td>Cria a página <strong>Tipos de</strong> Arquivo da folha de propriedades <strong></strong> Opções de Pasta que o usuário exibe clicando em Opções de Pasta no menu Ferramentas Windows <strong>Explorer.</strong> <strong></strong> <br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/shell/functions"><strong>FolderItemsFDF</strong></a><br/></td>
-<td>Representa uma pasta do Shell e todos os seus filhos.<br/></td>
+<td>Representa uma pasta shell e todos os seus filhos.<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/shell/known-folders"><strong>ImageRecompress</strong></a><br/></td>
@@ -967,10 +967,10 @@ Essa função foi substituída por <a href="/windows/desktop/api/Shlwapi/nf-shlw
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider"><strong>IColumnProvider</strong></a><br/></td>
-<td>Expõe métodos que habilitam a adição de colunas personalizadas no modo de exibição detalhes do Windows Explorer. <br/>
+<td>expõe métodos que habilitam a adição de colunas personalizadas na exibição de detalhes do Windows Explorer. <br/>
 <blockquote>
 [!Note]<br />
-O suporte para <a href="/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider"><strong>IColumnProvider</strong></a> foi removido do Windows Vista. O sistema de propriedades do Windows é usado em seu lugar. Consulte <a href="/windows/desktop/properties/windows-properties-system">sistema de propriedades do Windows</a> para obter materiais conceituais que explicam o uso do novo sistema.
+o suporte para <a href="/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider"><strong>IColumnProvider</strong></a> foi removido a partir do Windows Vista. o sistema de propriedades de Windows é usado em seu lugar. consulte <a href="/windows/desktop/properties/windows-properties-system">Windows sistema de propriedades</a> para obter materiais conceituais que explicam o uso do novo sistema.
 </blockquote>
 <br/></td>
 </tr>
@@ -995,7 +995,7 @@ O suporte para <a href="/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider"><
 <td>Usado para obter informações sobre um objeto Band.<br/>
 <blockquote>
 [!Important]<br />
-Você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em miniatura</a> no novo desenvolvimento em vez de faixas de escrivaninha, que não têm suporte no Windows 7.
+você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em miniatura</a> no novo desenvolvimento em vez de faixas de escrivaninha, que não têm suporte a partir do Windows 7.
 </blockquote>
 <br/></td>
 </tr>
@@ -1004,7 +1004,7 @@ Você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em mini
 <td>Expõe métodos para habilitar e consultar efeitos de Translucency em um objeto Deskband.<br/>
 <blockquote>
 [!Important]<br />
-Você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em miniatura</a> no novo desenvolvimento em vez de faixas de escrivaninha, que não têm suporte no Windows 7.
+você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em miniatura</a> no novo desenvolvimento em vez de faixas de escrivaninha, que não têm suporte a partir do Windows 7.
 </blockquote>
 <br/></td>
 </tr>
@@ -1062,11 +1062,11 @@ Você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em mini
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/shell/syncmgr-using-from-a-program"><strong>IPassportClientServices</strong></a><br/></td>
-<td>A interface <a href="/windows/desktop/shell/syncmgr-using-from-a-program"><strong>IPassportClientServices</strong></a> expõe um método para determinar se existe um Windows Live ID.<br/></td>
+<td>a interface <a href="/windows/desktop/shell/syncmgr-using-from-a-program"><strong>IPassportClientServices</strong></a> expõe um método para determinar se existe um Windows Live ID.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/shell/thumbnail-providers"><strong>IPassportWizard</strong></a><br/></td>
-<td>Expõe um método que invoca o assistente do Windows XP Passport. <br/></td>
+<td>expõe um método que invoca o assistente do Windows XP Passport. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iregtreeitem"><strong>IRegTreeItem</strong></a><br/></td>
@@ -1076,9 +1076,9 @@ Você deve usar as <a href="taskbar-extensions.md">barras de ferramentas em mini
 <td><a href="/windows/desktop/shell/how-to-register-and-implement-a-property-sheet-handler-for-a-control-panel-application"><strong>IShellExecuteHook</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Os ganchos de execução do shell são preteridos a partir do Windows Vista.
+os ganchos de execução do Shell são preteridos a partir do Windows Vista.
 </blockquote>
-<br/> Expõe um método que estende o comportamento das funções <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a> ou <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a> . Normalmente, ele é implementado por subsistemas que expõem os nomes de objetos que o usuário pode especificar na caixa de diálogo <strong>executar</strong> depois de clicar no botão <strong>Iniciar</strong> do Windows.<br/></td>
+<br/> Expõe um método que estende o comportamento das funções <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea"><strong>ShellExecute</strong></a> ou <a href="/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa"><strong>ShellExecuteEx</strong></a> . normalmente, ele é implementado por subsistemas que expõem os nomes de objetos que o usuário pode especificar na caixa de diálogo <strong>executar</strong> depois de clicar no botão Windows <strong>iniciar</strong> .<br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shlobj/nn-shlobj-ishellfolderband"><strong>IShellFolderBand</strong></a><br/></td>
@@ -1102,7 +1102,7 @@ Os ganchos de execução do shell são preteridos a partir do Windows Vista.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Shdeprecated/nn-shdeprecated-ishellservice"><strong>IShellService</strong></a><br/></td>
-<td>Preterido. <a href="/windows/desktop/api/Shdeprecated/nn-shdeprecated-ishellservice"><strong>IShellService</strong></a> Expõe um método que declara a propriedade quando um componente de serviço que implementa uma determinada interface é compartilhado entre vários clientes, como o Windows Internet Explorer e o Windows Explorer. <br/></td>
+<td>Preterido. <a href="/windows/desktop/api/Shdeprecated/nn-shdeprecated-ishellservice"><strong>IShellService</strong></a> expõe um método que declara a propriedade quando um componente de serviço que implementa uma determinada interface é compartilhado entre vários clientes, como Windows Internet explorer e Windows Explorer. <br/></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelltaskscheduler"><strong>IShellTaskScheduler</strong></a><br/></td>
@@ -1125,7 +1125,7 @@ Os ganchos de execução do shell são preteridos a partir do Windows Vista.
 <td>Expõe um método que obtém uma representação em miniatura de um papel de parede HTML. <br/>
 <blockquote>
 [!Note]<br />
-Essa interface foi preterida a partir do Windows 7. O recurso com suporte não está mais presente no Windows.
+esta interface foi preterida a partir do Windows 7. O recurso com suporte não está mais presente em Windows.
 </blockquote>
 <br/></td>
 </tr>

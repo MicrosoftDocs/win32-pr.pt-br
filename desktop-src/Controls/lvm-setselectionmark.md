@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_SETSELECTIONMARK (commctrl. h)
-description: Define a marca de seleção em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetSelectionMark do ListView.
+title: LVM_SETSELECTIONMARK mensagem (Commctrl.h)
+description: Define a marca de seleção em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a macro ListView \_ SetSelectionMark.
 ms.assetid: 3218f1b3-b934-4083-aaaa-e10ef1dbb6bd
 keywords:
-- Controles de LVM_SETSELECTIONMARK de mensagens do Windows
+- LVM_SETSELECTIONMARK controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3efc01068f22585061cae5a6f2c5c0c841810f52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c80f1392b5bb8b8ae49eaefb639a60213b5d4a7deaf153b99262bf608a770e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217356"
 ---
-# <a name="lvm_setselectionmark-message"></a>\_Mensagem SETSELECTIONMARK LVM
+# <a name="lvm_setselectionmark-message"></a>Mensagem LVM \_ SETSELECTIONMARK
 
-Define a marca de seleção em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ SetSelectionMark do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectionmark) .
+Define a marca de seleção em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a macro [**ListView \_ SetSelectionMark.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setselectionmark)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,17 +35,17 @@ Define a marca de seleção em um controle de exibição de lista. Você pode en
 *lParam* 
 </dt> <dd>
 
-Índice de base zero da nova marca de seleção. Se definido como-1, a marca de seleção será removida.
+Índice baseado em zero da nova marca de seleção. Se definido como -1, a marca de seleção será removida.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna a marca de seleção anterior ou-1 se não houver marca de seleção anterior.
+Retorna a marca de seleção anterior ou -1 se não houver nenhuma marca de seleção anterior.
 
 ## <a name="remarks"></a>Comentários
 
-A *marca de seleção* é o índice de item do qual uma seleção múltipla é iniciada. Esta mensagem não afeta o estado de seleção do item.
+A *marca de seleção* é o índice de item do qual uma seleção múltipla é iniciada. Essa mensagem não afeta o estado de seleção do item.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ A *marca de seleção* é o índice de item do qual uma seleção múltipla é i
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ A *marca de seleção* é o índice de item do qual uma seleção múltipla é i
 
 <dl> <dt>
 
-[**\_GETSELECTIONMARK LVM**](lvm-getselectionmark.md)
+[**LVM \_ GETSELECTIONMARK**](lvm-getselectionmark.md)
 </dt> </dl>
 
  

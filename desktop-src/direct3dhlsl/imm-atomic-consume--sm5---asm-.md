@@ -4,12 +4,12 @@ description: Decrementar atomicamente o contador de 32 bits oculto armazenado co
 ms.assetid: 1115C318-2F86-4161-AC5C-2A61A262DC28
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a1c6fe01ddb92b2ce870b16254f75c52cadd341
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 0244b885d9d2c46b734994d5e101f79147839d0cf76e2bab5669e52700cf59e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119310"
 ---
 # <a name="imm_atomic_consume-sm5---asm"></a>\_consume atômico \_ do IMM (SM5-ASM)
 
@@ -49,7 +49,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -61,7 +61,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

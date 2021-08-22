@@ -3,7 +3,7 @@ title: THEME. openDialog
 description: O método openDialog abre uma caixa de diálogo de arquivo.
 ms.assetid: d7f4549c-a5c3-4902-b13b-51f3d4444ea9
 keywords:
-- THEME. openDialog Windows Media Player
+- Windows Media Player THEME. openDialog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 79b9478b6b970b1d8d18b6f40975479e4755fa6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d57218105aa081ddebcb98fadbdb40b4bbd42511de9df94e204320ce78cf03c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134549"
 ---
 # <a name="themeopendialog"></a>THEME. openDialog
 

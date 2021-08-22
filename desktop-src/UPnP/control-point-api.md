@@ -1,27 +1,27 @@
 ---
-title: API de ponto de controle
-description: Esta seção contém informações sobre a API do ponto de controle com tecnologia UPnP.
+title: API do Ponto de Controle
+description: Esta seção contém informações sobre a API do Ponto de Controle com a tecnologia UPnP.
 ms.assetid: f915c3af-4124-4d67-a739-dc7f39688c9c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61302025b48cf44f4ef0269acd2a30839d4ff518
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fb016fcc8879c415fd9ae04d8388bc42839a0cb93d662c6cb559f2279d852dbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105751164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119418206"
 ---
-# <a name="control-point-api"></a>API de ponto de controle
+# <a name="control-point-api"></a>API do Ponto de Controle
 
-Esta seção contém informações sobre a API do ponto de controle com tecnologia UPnP. A API do ponto de controle com tecnologia UPnP fornece um conjunto de interfaces COM que permitem que os aplicativos encontrem e controlem dispositivos baseados em UPnP. As seções a seguir fornecem mais informações sobre a API do ponto de controle com tecnologia UPnP:
+Esta seção contém informações sobre a API do Ponto de Controle com a tecnologia UPnP. A API do Ponto de Controle com tecnologia UPnP fornece um conjunto de interfaces COM que permitem que os aplicativos encontrem e controlem dispositivos baseados em UPnP. As seções a seguir fornecem mais informações sobre a API do Ponto de Controle com a tecnologia UPnP:
 
--   [Sobre a API do ponto de controle](about-the-control-point-api-with-upnp-technology.md)
+-   [Sobre a API do Ponto de Controle](about-the-control-point-api-with-upnp-technology.md)
 -   [Usando a API do ponto de controle](using-the-control-point-api-with-upnp-technology.md)
--   [Referência de API de ponto de controle](control-point-api-with-upnp-technology-reference.md)
+-   [Referência da API do Ponto de Controle](control-point-api-with-upnp-technology-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

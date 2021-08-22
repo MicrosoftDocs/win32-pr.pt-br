@@ -1,140 +1,140 @@
 ---
-title: Atributos do Apêndice E de texto para Acessibilidade Ativa dicionário de serviços de texto
-description: Este apêndice fornece informações sobre atributos de texto que são definidos em IAccDictionary.
+title: Apêndice E Atributos de Texto Acessibilidade Ativa Dicionário de Serviços de Texto
+description: Este apêndice fornece informações sobre atributos de texto definidos em IAccDictionary.
 ms.assetid: 9e405140-c151-4f00-91c5-777c84c41806
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 588c827764d17c2576efaa5e3117527e23d1da26
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 539583f05e5140d96594490b0038b1a629f7760b13e4de223f6a8a3304c3901b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134059"
 ---
-# <a name="appendix-e-text-attributes-for-active-accessibility-text-services-dictionary"></a>Apêndice E: atributos de texto para Acessibilidade Ativa dicionário de serviços de texto
+# <a name="appendix-e-text-attributes-for-active-accessibility-text-services-dictionary"></a>Apêndice E: Atributos de texto para Acessibilidade Ativa dicionário de serviços de texto
 
-Este apêndice fornece informações sobre atributos de texto que são definidos em [**IAccDictionary**](/windows/desktop/api/msaatext/nn-msaatext-iaccdictionary). Ele é organizado como uma série de tabelas. Cada tabela inclui informações sobre uma categoria específica de atributos. Essas categorias são realmente aninhadas, mas são separadas abaixo para que você possa ver os atributos.
+Este apêndice fornece informações sobre atributos de texto definidos [**em IAccDictionary.**](/windows/desktop/api/msaatext/nn-msaatext-iaccdictionary) Ele é organizado como uma série de tabelas. Cada tabela inclui informações sobre uma categoria específica de atributos. Essas categorias são realmente aninhadas, mas são separadas abaixo para que você possa ver os atributos.
 
 > [!Note]  
-> Os serviços de texto Acessibilidade Ativa são preteridos. Consulte a [estrutura de serviços de texto do Microsoft Windows](../tsf/text-services-framework.md) para obter mais informações sobre as tecnologias avançadas de entrada de texto e linguagem natural.
+> Acessibilidade Ativa Text Services foi preterido. Consulte [Microsoft Windows Estrutura de Serviços de Texto](../tsf/text-services-framework.md) para obter mais informações sobre a entrada de texto avançada e as tecnologias de linguagem natural.
 
  
 
-Cada entrada em uma tabela fornece um nome de atributo e nome amigável, tipo, folhas de estilos em cascata (CSS) equivalente, equivalente a TOM (modelo de objeto de texto) e quaisquer comentários adicionais, quando apropriado. A coluna TOM equivalente fornece informações sobre o método TOM usado com o atributo (parte das interfaces [**ITextFont**](/windows/desktop/api/tom/nn-tom-itextfont), [**ITextRange**](/windows/desktop/api/tom/nn-tom-itextrange)ou [**ITextPara**](/windows/desktop/api/tom/nn-tom-itextpara) ). As informações antes de cada tabela indicam qual interface oferece suporte aos atributos; as informações na tabela TOM equivalente indicam o nome do método. Cada entrada na coluna equivalente de TOM é associada a dois métodos. Por exemplo, a entrada de nome está associada aos métodos **GetName** e **SetName** .
+Cada entrada em uma tabela fornece um nome de atributo e um nome amigável, tipo, folhas de estilos em cascata (CSS) equivalente, equivalente a TOM (Modelo de Objeto de Texto) e quaisquer comentários adicionais quando apropriado. A coluna equivalente tom fornece informações sobre o método TOM usado com o atributo (parte das interfaces [**ITextFont,**](/windows/desktop/api/tom/nn-tom-itextfont) [**ITextRange**](/windows/desktop/api/tom/nn-tom-itextrange)ou [**ITextPara).**](/windows/desktop/api/tom/nn-tom-itextpara) As informações anteriores a cada tabela indicam qual interface dá suporte aos atributos; as informações na tabela equivalente do TOM indicam o nome do método. Cada entrada na coluna equivalente tom é associada a dois métodos. Por exemplo, a entrada Name está associada aos métodos **GetName** e **SetName.**
 
-Para obter mais informações sobre essas interfaces, consulte a documentação do [modelo de objeto de texto](../controls/text-object-model.md) no SDK (Software Development Kit) do Windows.
+Para obter mais informações sobre essas interfaces, consulte a [documentação](../controls/text-object-model.md) do Modelo de Objeto de Texto no SDK (Software Development Kit) do Windows.
 
 ## <a name="font"></a>Fonte
 
-Os atributos na tabela a seguir são associados a atributos de fonte geral. O TOM equivalente é a interface [**ITextFont**](/windows/desktop/api/tom/nn-tom-itextfont) .
+Os atributos na tabela a seguir são associados a atributos de fonte gerais. O equivalente tom é a interface [**ITextFont.**](/windows/desktop/api/tom/nn-tom-itextfont)
 
 
 
-| Nome do atributo, nome amigável       | Tipo     | Equivalente de CSS       | TOM equivalente | Comentário           |
+| Nome do atributo, Nome amigável       | Tipo     | Equivalente de CSS       | Equivalente a TOM | Comentário           |
 |-------------------------------------|----------|----------------------|----------------|-------------------|
-| Face da fonte \_ , facename<br/> | VT \_ BSTR | Fonte-família: Verdana | Nome           |                   |
-| Fonte \_ SizePts, SizePts<br/>   | \_I4 VT   | Fonte-tamanho: xpt       | Tamanho           | O tamanho está em pontos |
+| Font \_ FaceName, facename<br/> | VT \_ BSTR | Família de fontes: Verdana | Nome           |                   |
+| Font \_ SizePts, sizePts<br/>   | VT \_ I4   | Tamanho da fonte: Xpt       | Tamanho           | O tamanho está em pontos |
 
 
 
  
 
-## <a name="font_style"></a>Estilo da fonte \_
+## <a name="font_style"></a>Estilo da \_ fonte
 
-Os atributos nos atributos de estilo da fonte de endereço da tabela a seguir (por exemplo, se o texto está definido em negrito ou itálico). O TOM equivalente é a interface [**ITextFont**](/windows/desktop/api/tom/nn-tom-itextfont) .
+Os atributos na tabela a seguir abordam atributos de estilo de fonte (por exemplo, se o texto está definido em negrito ou em itálico). O equivalente tom é a interface [**ITextFont.**](/windows/desktop/api/tom/nn-tom-itextfont)
 
 
 
-| Nome do atributo, nome amigável                             | Tipo     | Equivalente de CSS              | TOM equivalente                                            | Comentário                   |
+| Nome do atributo, Nome amigável                             | Tipo     | Equivalente de CSS              | Equivalente a TOM                                            | Comentário                   |
 |-----------------------------------------------------------|----------|-----------------------------|-----------------------------------------------------------|---------------------------|
-| Estilo da fonte em \_ \_ negrito, negrito<br/>                        | BOOL do VT \_ | Fonte-peso: negrito           | Negrito                                                      |                           |
-| Estilo da fonte \_ \_ itálico, itálico<br/>                    | BOOL do VT \_ | Fonte-estilo: itálico          | Itálico                                                    |                           |
-| Estilo da fonte \_ \_ SmallCaps, SmallCaps<br/>              | BOOL do VT \_ | Font-variant: versalete    | SmallCaps                                                 |                           |
-| Estilo da fonte \_ \_ capitalizar, colocar em maiúsculas<br/>             | BOOL do VT \_ | Transformação de texto: colocar em maiúsculas  | Sem suporte                                             |                           |
-| Estilo da fonte \_ \_ maiúsculo, maiúsculo<br/>               | BOOL do VT \_ | Texto-transformação: maiúsculas   | AllCaps                                                   |                           |
-| Estilo da fonte em \_ \_ minúsculas, minúsculas<br/>               | BOOL do VT \_ | Texto-transformação: minúsculas   | Sem suporte                                             |                           |
-| Estilo da fonte \_ \_ entalhe, entalhe<br/>                     | BOOL do VT \_ | Sem suporte               | Emboss                                                    |                           |
-| Estilo da fonte \_ \_ engrave, baixo que<br/>                   | BOOL do VT \_ | Sem suporte               | Baixo relevo                                                   |                           |
-| Estilo de fonte \_ \_ oculto                                       | BOOL do VT \_ | Sem suporte               | Hidden                                                    |                           |
-| \_ \_ Kerning de estilo de fonte, kerning<br/>                   | VT \_ R4   | Sem suporte               | Kerning                                                   | Mesmos valores que o getkerning |
-| Estilo da fonte \_ \_ destacado, contornado<br/>                 | BOOL do VT \_ | Sem suporte               | Descritas                                                  |                           |
-| Posição do estilo da fonte \_ \_ , posição<br/>                 | VT \_ R4   | Sem suporte               | Posição                                                  |                           |
-| Estilo de fonte \_ \_ protegido                                    | BOOL do VT \_ | Sem suporte               | Protegido                                                 |                           |
-| Sombra do estilo da fonte \_ \_ , sombra<br/>                     | BOOL do VT \_ | Altura da linha (menos números) | Shadow                                                    |                           |
-| \_Espaçamento do estilo da fonte \_ , espaçamento<br/>                   | VT \_ R4   | Espaçamento de letras              | Espaçamento                                                   | Em pontos                 |
-| Peso do estilo da fonte \_ \_ , peso<br/>                     | \_I4 VT   | Espessura da fonte                 | Valores de WeightSame como font-weight e getweight<br/> |                           |
-| Altura do estilo da fonte \_ \_ , altura<br/>                     | VT \_ R4   | Line-height                 | Sem suporte                                             | Em pontos                 |
-| Estilo da fonte \_ \_ piscando, piscando<br/>                       | BOOL do VT \_ | Decoração de texto: piscar      | Sem suporte                                             |                           |
-| Subscript \_ \_ de estilo de fonte, subscrito<br/>               | BOOL do VT \_ | Vertical-align: sub         | Subscrito (também posição)                                 |                           |
-| \_Sobrescript \_ de estilo de fonte, sobrescrito<br/>           | BOOL do VT \_ | Vertical-align: super       | Sobrescrito (também posição)                               |                           |
-| Cor do estilo da fonte \_ \_ , cor<br/>                       | \_I4 VT   | Cor                       | ForeColor                                                 | Estilo RGB COLORREF        |
-| Estilo da fonte \_ \_ BackgroundColor, cor do plano de fundo \_<br/> | \_I4 VT   | Plano de fundo-cor            | BackColor                                                 | Estilo RGB COLORREF        |
+| Estilo \_ da fonte \_ negrito, negrito<br/>                        | BOOL da VT \_ | Peso da fonte: negrito           | Negrito                                                      |                           |
+| Itálico \_ \_ de estilo de fonte, itálico<br/>                    | BOOL da VT \_ | Estilo de fonte: itálico          | Itálico                                                    |                           |
+| \_SmallCaps de estilo de \_ fonte, smallcaps<br/>              | BOOL da VT \_ | Variante de fonte: small-caps    | SmallCaps                                                 |                           |
+| Maiúsculas \_ e \_ maiúsculas de estilo da fonte, maiúsculas<br/>             | BOOL da VT \_ | Transformação de texto: capitalizar  | Sem suporte                                             |                           |
+| Letras \_ \_ maiúsculas e maiúsculas do estilo da fonte<br/>               | BOOL da VT \_ | Transformação de texto: maiúsculas   | AllCaps                                                   |                           |
+| Estilo \_ da \_ fonte minúscula, minúscula<br/>               | BOOL da VT \_ | Transformação de texto: minúsculas   | Sem suporte                                             |                           |
+| \_ \_ Emboss de estilo de fonte, emboss<br/>                     | BOOL da VT \_ | Sem suporte               | Emboss                                                    |                           |
+| Font \_ Style \_ Desaqueia,<br/>                   | BOOL da VT \_ | Sem suporte               | Gravar                                                   |                           |
+| Estilo \_ de fonte \_ oculto                                       | BOOL da VT \_ | Sem suporte               | Hidden                                                    |                           |
+| Coloração \_ \_ de estilo de fonte, com a coloração<br/>                   | VT \_ R4   | Sem suporte               | Kerning                                                   | Mesmos valores que GetKerning |
+| Estilo \_ de \_ fonte descrito, descrito<br/>                 | BOOL da VT \_ | Sem suporte               | Descrito                                                  |                           |
+| Posição \_ do estilo da \_ fonte, posição<br/>                 | VT \_ R4   | Sem suporte               | Posição                                                  |                           |
+| Estilo \_ de \_ fonte protegido                                    | BOOL da VT \_ | Sem suporte               | Protegido                                                 |                           |
+| Sombra \_ de estilo de \_ fonte, sombra<br/>                     | BOOL da VT \_ | Altura da linha (números de menos) | Shadow                                                    |                           |
+| \_Espaçamento de estilo de \_ fonte, espaçamento<br/>                   | VT \_ R4   | Espaçamento de letra              | Espaçamento                                                   | Em pontos                 |
+| Peso \_ do estilo da \_ fonte, peso<br/>                     | VT \_ I4   | Peso da fonte                 | Valores weightSame como font-weight e GetWeight<br/> |                           |
+| Altura \_ do estilo da \_ fonte, altura<br/>                     | VT \_ R4   | Line-height                 | Sem suporte                                             | Em pontos                 |
+| Estilo \_ da \_ fonte Piscar, piscar<br/>                       | BOOL da VT \_ | Decoração de texto: piscar      | Sem suporte                                             |                           |
+| \_ \_ Subscrito de estilo de fonte, subscrito<br/>               | BOOL da VT \_ | Alinhamento vertical: sub         | Subscrito (também Posição)                                 |                           |
+| Superscript \_ de estilo de \_ fonte, superscrito<br/>           | BOOL da VT \_ | Alinhamento vertical: super       | Sobrescrito (também Posição)                               |                           |
+| Cor \_ do estilo da \_ fonte, cor<br/>                       | VT \_ I4   | Color                       | ForeColor                                                 | Estilo COLORREF do RBG        |
+| BackgroundColor \_ do \_ Estilo da Fonte, cor da tela de \_ fundo<br/> | VT \_ I4   | Cor da tela de fundo            | BackColor                                                 | Estilo COLORREF do RBG        |
 
 
 
  
 
-## <a name="font_style_animation"></a>\_Animação de estilo da fonte \_
+## <a name="font_style_animation"></a>Animação \_ de estilo \_ de fonte
 
-Os atributos na seguinte animação de fonte de endereço de tabela. O TOM equivalente é a interface [**ITextFont**](/windows/desktop/api/tom/nn-tom-itextfont) .
+Os atributos na seguinte animação de fonte de endereço de tabela. O equivalente tom é a interface [**ITextFont.**](/windows/desktop/api/tom/nn-tom-itextfont)
 
 
 
-| Nome do atributo, nome amigável                                              | Tipo     | Equivalente de CSS | TOM equivalente |
+| Nome do atributo, Nome amigável                                              | Tipo     | Equivalente de CSS | Equivalente a TOM |
 |----------------------------------------------------------------------------|----------|----------------|----------------|
-| \_ \_ Animação de estilo \_ de fonte LasVegasLights, \_ luzes LasVegas<br/>         | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ \_ BlinkingBackground de animação de estilo de fonte, plano de fundo piscando \_<br/> | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ Animação de estilo \_ de fonte SparkleText, \_ texto Sparkle<br/>               | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ \_ MarchingBlackAnts de animação de estilo de fonte, \_ Ants em preto de março \_<br/> | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ Animação de estilo \_ de fonte MarchingRedAnts, Ants de março em \_ vermelho \_<br/>     | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ Animação de estilo \_ de fonte shimmer, shimmer<br/>                         | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ Animação de estilo \_ de fonte WipeDown, WipeDown<br/>                       | BOOL do VT \_ | Sem suporte  | Animação      |
-| \_ \_ Animação de estilo \_ de fonte WipeRight, WipeRight<br/>                     | BOOL do VT \_ | Sem suporte  | Animação      |
+| Animação \_ de estilo de fonte \_ \_ LasVegaLights, luzes LasVega \_<br/>         | BOOL da VT \_ | Sem suporte  | Animação      |
+| Animação \_ de estilo de fonte \_ \_ BlinkingBackground, plano de fundo \_ piscando<br/> | BOOL da VT \_ | Sem suporte  | Animação      |
+| Animação \_ de \_ estilo de \_ fonteTextotexto de \_ texto de texto de texto<br/>               | BOOL da VT \_ | Sem suporte  | Animação      |
+| Animação \_ de \_ estilo de \_ fonte, AnimationBlackAnts, \_ 400000001 \_<br/> | BOOL da VT \_ | Sem suporte  | Animação      |
+| Animação \_ de estilo de fonte \_ \_ AnimationRedAnts, vermelho \_ vermelho \_ retrito<br/>     | BOOL da VT \_ | Sem suporte  | Animação      |
+| Animação \_ \_ de estilo de \_ fonte, Gaemmer<br/>                         | BOOL da VT \_ | Sem suporte  | Animação      |
+| Apagamento \_ de \_ \_ animação de estilo de fonte, wipeDown<br/>                       | BOOL da VT \_ | Sem suporte  | Animação      |
+| Animação \_ de estilo de fonte \_ \_ WipeRight,wipeRight<br/>                     | BOOL da VT \_ | Sem suporte  | Animação      |
 
 
 
  
 
-## <a name="font_style_underline"></a>Sublinhado do estilo da fonte \_ \_
+## <a name="font_style_underline"></a>\_ \_ Sublinhado de estilo de fonte
 
-Os atributos na tabela a seguir abordam os estilos de sublinhado para fontes. O TOM equivalente é a interface [**ITextFont**](/windows/desktop/api/tom/nn-tom-itextfont) .
+Os atributos na tabela a seguir abordam estilos sublinhados para fontes. O equivalente tom é a interface [**ITextFont.**](/windows/desktop/api/tom/nn-tom-itextfont)
 
 
 
-| Nome do atributo, nome amigável                     | Tipo     | Equivalente de CSS                | TOM equivalente |
+| Nome do atributo, Nome amigável                     | Tipo     | Equivalente de CSS                | Equivalente a TOM |
 |---------------------------------------------------|----------|-------------------------------|----------------|
-| Estilo da fonte \_ \_ sublinhado \_ simples, único<br/>  | BOOL do VT \_ | Decoração de texto: sublinhado    | Underline      |
-| Estilo da fonte \_ \_ sublinhado \_ duplo, duplo<br/> | BOOL do VT \_ | Decoração de texto: linha | StrikeThrough  |
+| \_ \_ Sublinhado de \_ estilo de fonte único, único<br/>  | BOOL da VT \_ | Decoração de texto: sublinhado    | Underline      |
+| \_ \_ Sublinhado de estilo \_ de fonte double, double<br/> | BOOL da VT \_ | Decoração de texto: passagem de linha | StrikeThrough  |
 
 
 
  
 
-## <a name="font_style_strikethrough"></a>Estilo de fonte \_ \_ tachado
+## <a name="font_style_strikethrough"></a>\_Tachado de estilo de \_ fonte
 
-Os atributos na tabela a seguir abordam os estilos de tachado das fontes.
+Os atributos na tabela a seguir abordam estilos tachados para fontes.
 
 
 
-| Nome do atributo, nome amigável                                         | Tipo     | Equivalente de CSS | TOM equivalente |
+| Nome do atributo, Nome amigável                                         | Tipo     | Equivalente de CSS | Equivalente a TOM |
 |-----------------------------------------------------------------------|----------|----------------|----------------|
-| \_Estilo \_ de fonte tachado \_ único, tachado \_ \_ único<br/> | BOOL do VT \_ | Sem suporte  | Sem suporte  |
-| Estilo da fonte \_ \_ tachado \_ duplo, tachado \_ \_ duplo<br/> | BOOL do VT \_ | Sem suporte  | Sem suporte  |
+| Estilo \_ de \_ fonte \_ tachado único, \_ tachado \_ por meio de um único<br/> | BOOL da VT \_ | Sem suporte  | Sem suporte  |
+| Estilo \_ de \_ fonte tachado \_ double, \_ tachado \_ em double<br/> | BOOL da VT \_ | Sem suporte  | Sem suporte  |
 
 
 
  
 
-## <a name="font_style_overline"></a>Estilo da fonte \_ \_ sobreposta
+## <a name="font_style_overline"></a>\_Sobrelinhado \_ de estilo de fonte
 
-Os atributos na tabela a seguir redirecionam os estilos de linha para as fontes.
+Os atributos na tabela a seguir abordam estilos sobrelinhados para fontes.
 
 
 
-| Nome do atributo, nome amigável                             | Tipo     | Equivalente de CSS            | TOM equivalente |
+| Nome do atributo, Nome amigável                             | Tipo     | Equivalente de CSS            | Equivalente a TOM |
 |-----------------------------------------------------------|----------|---------------------------|----------------|
-| Estilo da fonte \_ \_ linha sobreposta \_ única, linha sobreposta \_ única<br/> | BOOL do VT \_ | Decoração de texto: linha sobreposta | Sem suporte  |
-| Estilo da fonte \_ \_ sobreposta \_ dupla, linha sobreposta \_ dupla<br/> | BOOL do VT \_ | Decoração de texto: linha sobreposta | Sem suporte  |
+| \_ \_ Sobrelinhado \_ de estilo de fonte único, sobrelinhado \_ único<br/> | BOOL da VT \_ | Decoração de texto: sobrelinhado | Sem suporte  |
+| Estilo \_ de fonte Duplo \_ \_ sobrelinhado, duplo \_ sobrelinhado<br/> | BOOL da VT \_ | Decoração de texto: sobrelinhado | Sem suporte  |
 
 
 
@@ -142,52 +142,52 @@ Os atributos na tabela a seguir redirecionam os estilos de linha para as fontes.
 
 ## <a name="text"></a>Texto
 
-Os atributos na tabela a seguir abordam os atributos gerais de formatação de texto.
+Os atributos na tabela a seguir abordam atributos gerais de formatação de texto.
 
 
 
-| Nome do atributo, nome amigável                     | Tipo        | Equivalente de CSS | TOM equivalente                                       | Comentário                                                                               |
+| Nome do atributo, Nome amigável                     | Tipo        | Equivalente de CSS | Equivalente a TOM                                       | Comentário                                                                               |
 |---------------------------------------------------|-------------|----------------|------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Texto \_ VerticalWriting, escrita vertical<br/> | BOOL do VT \_    | Sem suporte  | sem suporte                                        | Conforme usado por chinês/japonês                                                           |
-| \_RightToLeft de texto, RightToLeft<br/>          | BOOL do VT \_    | Direção      | Sem suporte                                        |                                                                                       |
-| Texto \_ ReadOnly, somente leitura<br/>               | BOOL do VT \_    | Sem suporte  | ITextFont:: canchange, ITextRange:: CanEdit            | A propriedade editável do documento tem precedência                                     |
-| Idioma do texto \_ , idioma<br/>                | \_I4 VT      | Sem suporte  | ITextFont:: getlanguageid, ITextFont:: setlanguageid   | LANGID                                                                                |
-| Orientação do texto \_ , orientação<br/>          | \_I4 VT      | Sem suporte  | Sem suporte                                        | 10??? de um grau                                                                     |
-| Text \_ incorporadoobject, \_ objeto inserido<br/>  | BOOL do VT \_    | Sem suporte  | Sem suporte                                        | Permite pesquisar objetos inseridos                                                 |
-| \_Link de texto, link<br/>                        | VT \_ desconhecido | Link           | Sem suporte                                        | Um ponteiro de interface para o objeto; chamar QueryInterface para qualquer interface de interesse |
-| \_Hifenização de texto, hifenização<br/>          | BOOL do VT \_    | Sem suporte  | ITextPara:: gethifenization, ITextPara:: sethifenization |                                                                                       |
+| \_VerticalEscrita de texto, escrita vertical<br/> | BOOL da VT \_    | Sem suporte  | sem suporte                                        | Conforme usado por chinês/japonês                                                           |
+| Text \_ RightToLeft, righttoleft<br/>          | BOOL da VT \_    | Direção      | Sem suporte                                        |                                                                                       |
+| Somente \_ leitura de texto, somente leitura<br/>               | BOOL da VT \_    | Sem suporte  | ITextFont::CanChange, ITextRange::CanEdit            | A propriedade editável do documento tem precedência                                     |
+| Idioma \_ do Texto, idioma<br/>                | VT \_ I4      | Sem suporte  | ITextFont::GetLanguageID, ITextFont::SetLanguageID   | Langid                                                                                |
+| Orientação \_ de texto, orientação<br/>          | VT \_ I4      | Sem suporte  | Sem suporte                                        | 10??? de um grau                                                                     |
+| Text \_ EmbeddedObject, objeto \_ inserido<br/>  | BOOL da VT \_    | Sem suporte  | Sem suporte                                        | Permite pesquisar objetos inseridos                                                 |
+| Link \_ de texto,link<br/>                        | VT \_ UNKNOWN | Link           | Sem suporte                                        | Um ponteiro de interface para o objeto ; chame QueryInterface para qualquer interface de interesse |
+| \_Hifenização de texto, hifenização<br/>          | BOOL da VT \_    | Sem suporte  | ITextPara::GetHyphenation, ITextPara::SetHyphenation |                                                                                       |
 
 
 
  
 
-## <a name="text_alignment"></a>Alinhamento de texto \_
+## <a name="text_alignment"></a>Alinhamento \_ de texto
 
-Os atributos na tabela a seguir estão no alinhamento de texto do endereço. O TOM equivalente é a interface [**ITextPara**](/windows/desktop/api/tom/nn-tom-itextpara) .
+Os atributos no alinhamento de texto de endereço da tabela a seguir. O equivalente tom é a interface [**ITextPara.**](/windows/desktop/api/tom/nn-tom-itextpara)
 
 
 
-| Nome do atributo, nome amigável               | Tipo     | Equivalente de CSS | TOM equivalente |
+| Nome do atributo, Nome amigável               | Tipo     | Equivalente de CSS | Equivalente a TOM |
 |---------------------------------------------|----------|----------------|----------------|
-| \_Alinhamento \_ de texto à esquerda, à esquerda<br/>       | BOOL do VT \_ | Alinhamento de texto     | Alinhamento      |
-| \_Alinhamento \_ de texto à direita, à direita<br/>     | BOOL do VT \_ | Alinhamento de texto     | Alinhamento      |
-| \_ \_ Centro de alinhamento de texto, centro<br/>   | BOOL do VT \_ | Alinhamento de texto     | Alinhamento      |
-| \_Justificar alinhamento \_ de texto, justificar<br/> | BOOL do VT \_ | Alinhamento de texto     | Alinhamento      |
+| Alinhamento \_ de texto à \_ esquerda, à esquerda<br/>       | BOOL da VT \_ | Alinhamento de texto     | Alinhamento      |
+| Alinhamento \_ de texto à \_ direita, direita<br/>     | BOOL da VT \_ | Alinhamento de texto     | Alinhamento      |
+| Centro \_ de Alinhamento de \_ Texto, centro<br/>   | BOOL da VT \_ | Alinhamento de texto     | Alinhamento      |
+| Justificativa \_ de alinhamento de \_ texto,justificativa<br/> | BOOL da VT \_ | Alinhamento de texto     | Alinhamento      |
 
 
 
  
 
-## <a name="text_para"></a>Texto \_ para
+## <a name="text_para"></a>Para \_ texto
 
-Os atributos na seguinte formatação de endereço de tabela para parágrafos. O TOM equivalente é a interface [**ITextPara**](/windows/desktop/api/tom/nn-tom-itextpara) .
+Os atributos na seguinte formatação de endereço de tabela para parágrafos. O equivalente tom é a interface [**ITextPara.**](/windows/desktop/api/tom/nn-tom-itextpara)
 
 
 
-| Nome do atributo, nome amigável                              | Tipo   | Equivalente de CSS | TOM equivalente  | Comentário |
+| Nome do atributo, Nome amigável                              | Tipo   | Equivalente de CSS | Equivalente a TOM  | Comentário |
 |------------------------------------------------------------|--------|----------------|-----------------|---------|
-| Texto \_ para \_ FirstLineIndent, recuo da primeira \_ linha \_<br/> | VT \_ R4 | Sem suporte  | FirstLineIndent | Em pts  |
-| Texto \_ para \_ LeftIndent, recuo à esquerda \_<br/>             | VT \_ R4 | Sem suporte  | LeftIndent      | Em pts  |
+| Texto \_ Para \_ FirstLineIndent, recuo \_ da primeira \_ linha<br/> | VT \_ R4 | Sem suporte  | FirstLineIndent | Em pts  |
+| Texto \_ Para \_ LeftIndent, \_ recuo à esquerda<br/>             | VT \_ R4 | Sem suporte  | LeftIndent      | Em pts  |
 | Texto \_ para \_ RightIndent, recuo à direita \_<br/>           | VT \_ R4 | Sem suporte  | RightIndent     | Em pts  |
 | Texto \_ para \_ SpaceAfter, espaço \_ após<br/>             | VT \_ R4 | Sem suporte  | SpaceAfter      | Em pts  |
 | Texto \_ para \_ SpaceBefore, espaço \_ após<br/>            | VT \_ R4 | Sem suporte  | SpaceAfter      | Em pts  |
@@ -252,10 +252,10 @@ Os atributos nos seguintes estilos de lista de endereços de tabela para texto. 
 
 
 
-| Nome do atributo, nome amigável                         | Tipo     | Equivalente de CSS | TOM equivalente |
+| Nome do atributo, nome amigável                         | Tipo     | Equivalente de CSS | Equivalente a TOM |
 |-------------------------------------------------------|----------|----------------|----------------|
-| IncorrectSpelling do aplicativo \_ , \_ ortografia incorreta<br/> | BOOL do VT \_ |                | Sem suporte  |
-| IncorrectGrammar do aplicativo \_ , \_ gramática incorreta<br/>   | BOOL do VT \_ |                | Sem suporte  |
+| Erro \_ de ortografia do aplicativo, \_ ortografia incorreta<br/> | BOOL da VT \_ |                | Sem suporte  |
+| Aplicativo \_ IncorrectGrammar, gramática \_ incorreta<br/>   | BOOL da VT \_ |                | Sem suporte  |
 
 
 

@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: fbbf0c53fc1b26002d1b46a9a6a6f67cd15e3ead
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 822f2554f51adfb99b1b4b2ad9d61fe064f802def3c8804371639ec20563b54b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119223706"
 ---
 # <a name="using-autocomplete"></a>Usando o preenchimento automático
 
-O preenchimento automático expande as cadeias de caracteres que foram inseridas parcialmente em um [controle de edição](/windows/desktop/Controls/edit-controls) em cadeias de caracteres completas. Por exemplo, quando um usuário começa a inserir uma URL no controle de edição de endereço inserido na barra de ferramentas do Windows Internet Explorer, o preenchimento automático expande a cadeia de caracteres em uma ou mais opções de URL completas que são consistentes com a cadeia de caracteres parcial existente. Uma cadeia de caracteres de URL parcial, como "MIC", pode ser expandida para " https://www.microsoft.com " ou " https://www.microsoft.com/windows ". O preenchimento automático normalmente é usado com controles de edição ou com controles que têm um controle de edição inserido, como o controle [ComboBoxEx](/windows/desktop/Controls/comboboxex-control-reference) .
+O preenchimento automático expande as cadeias de caracteres que foram inseridas parcialmente em um [controle de edição](/windows/desktop/Controls/edit-controls) em cadeias de caracteres completas. por exemplo, quando um usuário começa a inserir uma URL no controle de edição de endereço inserido na barra de ferramentas Windows Internet Explorer, o preenchimento automático expande a cadeia de caracteres em uma ou mais opções de URL completas que são consistentes com a cadeia de caracteres parcial existente. Uma cadeia de caracteres de URL parcial, como "MIC", pode ser expandida para " https://www.microsoft.com " ou " https://www.microsoft.com/windows ". O preenchimento automático normalmente é usado com controles de edição ou com controles que têm um controle de edição inserido, como o controle [ComboBoxEx](/windows/desktop/Controls/comboboxex-control-reference) .
 
 ## <a name="adding-autocomplete-functionality-to-your-application"></a>Adicionando a funcionalidade de preenchimento automático ao seu aplicativo
 

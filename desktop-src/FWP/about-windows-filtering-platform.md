@@ -1,25 +1,25 @@
 ---
-title: Sobre a plataforma de filtragem do Windows
-description: A WFP (Windows Filtering Platform) é uma plataforma de processamento de tráfego de rede projetada para substituir as interfaces de filtragem de tráfego de rede do Windows XP e do Windows Server 2003.
+title: sobre a plataforma de filtragem de Windows
+description: Windows a WFP (plataforma de filtragem) é uma plataforma de processamento de tráfego de rede projetada para substituir as interfaces de filtragem de tráfego de rede Windows XP e Windows Server 2003.
 ms.assetid: 6faad008-b2f6-4f45-89c7-ae98c2f58ce1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab259eca1da714bbeb8d4ea556e69513f33514c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 01a81f4f67c2f3281a6fa6b5d3220f9e2157643dfd7cf3bac34ea55743024946
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105753486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069486"
 ---
-# <a name="about-windows-filtering-platform"></a>Sobre a plataforma de filtragem do Windows
+# <a name="about-windows-filtering-platform"></a>sobre a plataforma de filtragem de Windows
 
-A WFP (Windows Filtering Platform) é uma plataforma de processamento de tráfego de rede projetada para substituir as interfaces de filtragem de tráfego de rede do Windows XP e do Windows Server 2003. A WFP consiste em um conjunto de ganchos na pilha de rede e em um mecanismo de filtragem que coordena as interações de pilha de rede.
+Windows a WFP (plataforma de filtragem) é uma plataforma de processamento de tráfego de rede projetada para substituir as interfaces de filtragem de tráfego de rede Windows XP e Windows Server 2003. A WFP consiste em um conjunto de ganchos na pilha de rede e em um mecanismo de filtragem que coordena as interações de pilha de rede.
 
 ## <a name="the-wfp-components"></a>Os componentes de WFP
 
 ### <a name="filter-engine"></a>Mecanismo de filtro
 
-A principal infraestrutura de filtragem de várias camadas, hospedada no modo kernel e no modo de usuário, que substitui os vários módulos de filtragem no subsistema de rede do Windows XP e do Windows Server 2003.
+a principal infraestrutura de filtragem de várias camadas, hospedada no modo kernel e no modo de usuário, que substitui os vários módulos de filtragem no subsistema de rede Windows XP e Windows Server 2003.
 
 -   Filtra o tráfego de rede em qualquer camada do sistema em qualquer campo de dados que um Shim possa fornecer.
 -   Implementa os filtros de "texto explicativo" invocando os textos explicativos durante a classificação.
@@ -28,7 +28,7 @@ A principal infraestrutura de filtragem de várias camadas, hospedada no modo ke
 
 ### <a name="base-filtering-engine-bfe"></a>Mecanismo de filtragem base (BFE)
 
-Um serviço que controla a operação da plataforma de filtragem do Windows. Ele executa as seguintes tarefas.
+um serviço que controla a operação da plataforma de filtragem de Windows. Ele executa as seguintes tarefas.
 
 -   Aceita filtros e outras definições de configuração para a plataforma.
 -   Relata o estado atual do sistema, incluindo estatísticas.
@@ -48,7 +48,7 @@ Componentes do modo kernel que residem entre a pilha de rede e o mecanismo de fi
 
 ### <a name="callouts"></a>Textos explicativos
 
-Conjunto de funções expostas por um driver e usadas para filtragem especializada. Além das ações básicas de "permitir" e "bloquear", os textos explicativos podem modificar e proteger o tráfego de rede de entrada e saída. Consulte o tópico [drivers de texto explicativo da plataforma de filtragem do Windows](/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2) na documentação do Windows Driver Kit (WDK) para obter mais informações sobre textos explicativos. A WFP fornece textos explicativos internos que realizam as seguintes tarefas.<br/>
+Conjunto de funções expostas por um driver e usadas para filtragem especializada. Além das ações básicas de "permitir" e "bloquear", os textos explicativos podem modificar e proteger o tráfego de rede de entrada e saída. consulte o tópico [Windows Drivers da plataforma de filtragem de texto explicativos](/windows-hardware/drivers/network/windows-filtering-platform-callout-drivers2) na documentação do Windows Driver Kit (WDK) para obter mais informações sobre textos explicativos. A WFP fornece textos explicativos internos que realizam as seguintes tarefas.<br/>
 
 -   Execute o processamento IPsec.
 -   Ajuste o comportamento de filtragem com estado.

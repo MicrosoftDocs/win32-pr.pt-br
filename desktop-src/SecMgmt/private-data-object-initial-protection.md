@@ -1,23 +1,23 @@
 ---
-description: Quando um objeto de dados particular é criado, ele recebe uma proteção padrão.
+description: Quando um objeto dados privados é criado, ele recebe uma proteção padrão.
 ms.assetid: 7aed8c42-ffa8-43ea-b36e-d894c2ed6bf9
-title: Proteção inicial do objeto de dados particulares
+title: Proteção inicial do objeto de dados privado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4324a0e147eaa36d2bf42b90b2597a91852183f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf1c3db244251b6e75988f46a8f416e24dca89d667e9a0fdbcc3d61a2b475ea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005034"
 ---
-# <a name="private-data-object-initial-protection"></a>Proteção inicial do objeto de dados particulares
+# <a name="private-data-object-initial-protection"></a>Proteção inicial do objeto de dados privado
 
-Quando um objeto de dados particular é criado, ele recebe uma proteção padrão da seguinte maneira:
+Quando um objeto dados privados é criado, ele recebe uma proteção padrão da seguinte forma:
 
--   O grupo local mundial recebe acesso genérico de \_ execução.
--   O \_ grupo local de administração local recebe exclusão, \_ leitura genérica, \_ gravação genérica e acesso genérico de \_ execução.
--   O \_ grupo local de administração local é atribuído como proprietário e grupo primário do objeto.
+-   O grupo local WORLD tem acesso GENERIC \_ EXECUTE.
+-   O grupo local \_ ADMINISTRADOR LOCAL tem acesso DELETE, GENERIC \_ READ, GENERIC WRITE e GENERIC \_ \_ EXECUTE.
+-   O grupo \_ local ADMINISTRADOR LOCAL é atribuído como proprietário e grupo primário do objeto .
 
  
 

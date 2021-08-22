@@ -4,12 +4,12 @@ description: A interface IEnumBackgroundCopyJobs1 expõe os métodos a seguir.
 ms.assetid: 780E4356-019B-4ECD-BF09-02558B2F4DA8
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 447334192fb3d99acbd04d99f89f61a0405df476
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f258f44124a5559dc734fb1b993ec61f03138b023660640f78ce76a6deccd3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105756468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021104"
 ---
 # <a name="ienumbackgroundcopyjobs1-methods"></a>Métodos IEnumBackgroundCopyJobs1
 
@@ -23,9 +23,9 @@ A interface [**IEnumBackgroundCopyJobs1**](/windows/desktop/api/Qmgr/nn-qmgr-ien
 -   [**Método Reset**](/windows/desktop/api/Qmgr/nf-qmgr-ienumbackgroundcopyjobs1-reset)
 -   [**Método Skip**](/windows/desktop/api/Qmgr/nf-qmgr-ienumbackgroundcopyjobs1-skip)
 
- 
+ 
 
- 
+ 
 
 
 

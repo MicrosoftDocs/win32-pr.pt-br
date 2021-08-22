@@ -4,12 +4,12 @@ ms.assetid: 815d4bf5-3f11-4d45-8f92-b01e12d7dcc3
 title: Propriedade AVEncVideoOutputColorNominalRange (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c1059d781da1d40efdad5463d47f1ec1c0d9a79
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d3f2d6cdadf48acd1635de0705a4cd66afc1d53da9544599903a4826376eda60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105792563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342056"
 ---
 # <a name="avencvideooutputcolornominalrange-property"></a>Propriedade AVEncVideoOutputColorNominalRange
 
@@ -35,8 +35,8 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoColorNomina
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

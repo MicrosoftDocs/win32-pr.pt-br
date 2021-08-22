@@ -1,7 +1,7 @@
 ---
 description: Verifica os parâmetros de criação de textura.
 ms.assetid: f8e788f3-02a9-4ee7-b74d-9e781a2fb39f
-title: Função D3DXCheckTextureRequirements (D3dx9tex. h)
+title: Função D3DXCheckTextureRequirements (D3dx9tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d4fdc0998bfda2144e900c099919bc75c01e8ee3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4c7166f981c0351054a2a6c359127a4ce1959b45a6e71c44db9e2546825bc5f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496096"
 ---
 # <a name="d3dxchecktexturerequirements-function"></a>Função D3DXCheckTextureRequirements
 
@@ -46,83 +46,83 @@ HRESULT D3DXCheckTextureRequirements(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , representando o dispositivo a ser associado à textura.
+Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa o dispositivo a ser associado à textura.
 
 </dd> <dt>
 
-*pWidth* \[ entrada, saída\]
+*pWidth* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para a largura solicitada em pixels ou **nulo**. Retorna o tamanho corrigido.
+Ponteiro para a largura solicitada em pixels ou **NULL.** Retorna o tamanho corrigido.
 
 </dd> <dt>
 
-*pHeight* \[ entrada, saída\]
+*pHeight* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para a altura solicitada em pixels, ou **NULL**. Retorna o tamanho corrigido.
+Ponteiro para a altura solicitada em pixels ou **NULL.** Retorna o tamanho corrigido.
 
 </dd> <dt>
 
-*pNumMipLevels* \[ entrada, saída\]
+*pNumMipLevels* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o número de níveis de mipmap solicitados ou **NULL**. Retorna o número corrigido de níveis de mipmap.
+Ponteiro para o número de níveis de mipmap solicitados ou **NULL.** Retorna o número corrigido de níveis de mipmap.
 
 </dd> <dt>
 
-*Uso* \[ do no\]
+*Uso* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-0 ou [**D3DUSAGE \_ RENDERTARGET**](d3dusage.md). Definir esse sinalizador como D3DUSAGE \_ RENDERTARGET indica que a superfície deve ser usada como um destino de renderização. O recurso pode então ser passado para o parâmetro pNewRenderTarget do método [**SetRenderTarget**](/windows/desktop/api) . Se **D3DUSAGE \_ RENDERTARGET** for especificado, o aplicativo deverá verificar se o dispositivo dá suporte a essa operação chamando [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat).
+0 ou [**D3DUSAGE \_ RENDERTARGET.**](d3dusage.md) Definir esse sinalizador como D3DUSAGE RENDERTARGET indica que a superfície \_ deve ser usada como um destino de renderização. O recurso pode ser passado para o parâmetro pNewRenderTarget do [**método SetRenderTarget.**](/windows/desktop/api) Se **D3DUSAGE \_ RENDERTARGET** for especificado, o aplicativo deverá verificar se o dispositivo dá suporte a essa operação chamando [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat).
 
 </dd> <dt>
 
-*pFormat* \[ entrada, saída\]
+*pFormat* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[D3DFORMAT](d3dformat.md)\***
 
-Ponteiro para um membro do tipo enumerado [D3DFORMAT](d3dformat.md) . Especifica o formato de pixel desejado ou **nulo**. Retorna o formato corrigido.
+Ponteiro para um membro do tipo enumerado [D3DFORMAT.](d3dformat.md) Especifica o formato de pixel desejado ou **NULL.** Retorna o formato corrigido.
 
 </dd> <dt>
 
-*Pool* \[ de no\]
+*Pool* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DPOOL**](./d3dpool.md)**
 
-Membro do tipo enumerado [**D3DPOOL**](./d3dpool.md) , que descreve a classe de memória na qual a textura deve ser colocada.
+Membro do tipo [**enumerado D3DPOOL,**](./d3dpool.md) descrevendo a classe de memória na qual a textura deve ser colocada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DERR \_ não disponível.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DERR \_ NOTAVAILABLE.
 
 ## <a name="remarks"></a>Comentários
 
-Se os parâmetros para essa função forem inválidos, essa função retornará parâmetros corrigidos.
+Se os parâmetros para essa função são inválidos, essa função retorna parâmetros corrigidos.
 
-Essa função usa a heurística a seguir ao comparar os requisitos solicitados com os formatos disponíveis:
+Essa função usa a seguinte heurística ao comparar os requisitos solicitados em relação aos formatos disponíveis:
 
 -   Não escolha um formato que tenha menos canais.
--   Evite formatos [FOURCC](d3dformat.md) e de 24 bits, a menos que solicitado explicitamente.
+-   Evite [formatos FOURCC](d3dformat.md) e de 24 bits, a menos que explicitamente solicitado.
 -   Tente não adicionar novos canais.
 -   Tente não alterar o número de bits por canal.
 -   Tente evitar a conversão entre tipos de formatos. Por exemplo, evite converter um formato ARGB em um formato de profundidade.
@@ -133,8 +133,8 @@ Essa função usa a heurística a seguir ao comparar os requisitos solicitados c
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9tex. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3dx9tex.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
 
 
 

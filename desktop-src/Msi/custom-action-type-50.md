@@ -1,15 +1,15 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 50 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 50 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: fc8a875d-21e3-452a-8455-80835b52b256
 title: Tipo de ação personalizada 50
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c5f3a80de730eb727c40c871070ab9e5b2470f98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4b17c6b512e53bb085c23f6ad0e8af412f6f9de44da3cc70c7153dbef7fb99e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119263246"
 ---
 # <a name="custom-action-type-50"></a>Tipo de ação personalizada 50
 

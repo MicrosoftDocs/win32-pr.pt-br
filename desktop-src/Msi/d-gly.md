@@ -1,15 +1,15 @@
 ---
-description: Saiba mais sobre os conceitos de Windows Installer que começam com a letra D, como a função de banco de dados e o patch Delta.
+description: saiba mais sobre os conceitos de Windows Installer que começam com a letra D, como a função de banco de dados e o patch delta.
 ms.assetid: d6dd73e7-657f-4f71-8e9b-70369cb21972
 title: D (Windows Installer)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d76378d636c8ae14acdc9cb882c31840e3f1550f
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: c9a2e1099386a2da176eb899c7974c60244636f6da1384543bde4975ba3a18c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119289666"
 ---
 # <a name="d-windows-installer"></a>D (Windows Installer)
 
@@ -34,7 +34,7 @@ Necessário para trabalhar com um banco de dados. Para obter mais informações,
 <span id="setup.delta_patch_gly"></span><span id="SETUP.DELTA_PATCH_GLY"></span>**patch Delta**
 </dt> <dd>
 
-Um patch Delta é um patch de Windows Installer compactado por Delta criado usando uma ferramenta, como Patchwiz.dll, que dá suporte à compactação Delta. Os patches que usam a compactação Delta podem reduzir o tamanho de uma atualização fornecendo apenas as diferenças (deltas) entre os arquivos existentes em um computador de destino e os arquivos novos desejados. Os arquivos novos desejados são então sintetizados a partir dos arquivos existentes e dos deltas baixados. Para obter mais informações sobre a tecnologia de compactação Delta, consulte a [interface de programação de aplicativo de compactação Delta](https://msdn.microsoft.com/library/ms811406.aspx).
+um patch delta é um patch de Windows Installer compactado por delta criado usando uma ferramenta, como Patchwiz.dll, que dá suporte à compactação delta. Os patches que usam a compactação Delta podem reduzir o tamanho de uma atualização fornecendo apenas as diferenças (deltas) entre os arquivos existentes em um computador de destino e os arquivos novos desejados. Os arquivos novos desejados são então sintetizados a partir dos arquivos existentes e dos deltas baixados. Para obter mais informações sobre a tecnologia de compactação Delta, consulte a [interface de programação de aplicativo de compactação Delta](https://msdn.microsoft.com/library/ms811406.aspx).
 
 </dd> </dl>
 

@@ -4,23 +4,23 @@ description: Atributo VML MSO-Wrap-Mode
 ms.assetid: 51c4e90d-62cc-4646-9c71-8a6bf3366b2f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5657192fcf9da72ff99dc25cff7930b6d2d9b6b9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 88e3743522b9286da8a7f30e9100e06205430b1b18fa3c62def60b57f54b65d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136979"
 ---
 # <a name="vml-mso-wrap-mode-attribute"></a>Atributo VML MSO-Wrap-Mode
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define o modo de disposição para texto. Leitura/gravação. **Cadeia de caracteres**.
+Define o modo de quebra de texto. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
@@ -28,7 +28,7 @@ Define o modo de disposição para texto. Leitura/gravação. **Cadeia de caract
 
 **Sintaxe de marca**
 
-<v: *Element* Style = "Die-Wrap-Mode: *expression* " >
+<v: *element* style="mso-wrap-mode: *expression* ">
 
 **Comentários**
 
@@ -38,23 +38,23 @@ Os valores são:
 
 | Valor          | Descrição                          |
 |----------------|--------------------------------------|
-| square         | Quebra o texto em uma forma em um quadrado. |
-| rigida          | O texto é ajustado próximo à forma.  |
-| de cima para baixo | O texto salta de cima para baixo.       |
-| ao        | O texto é exibido por meio da forma.     |
-| none           | O texto não quebra.                   |
+| square         | Envolve o texto em torno da forma em um quadrado. |
+| Apertado          | O texto é envolvido próximo à forma.  |
+| superior e inferior | O texto salta de cima para baixo.       |
+| ao        | O texto é exibido pela forma.     |
+| nenhum           | O texto não é wrap.                   |
 
 
 
- 
+ 
 
-Usado pelo Microsoft PowerPoint para salvar em HTML para indicar se a quebra automática de texto dentro de uma AutoForma está ativada (**quadrado**) ou desativada (**nenhuma**).
+Usado pelo Microsoft PowerPoint para salvar em HTML para indicar se o quebra-cabeça de palavra dentro de um AutoShape está em (**quadrado**) ou desligado (**nenhum**).
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
-O código a seguir indica que a WordWrap dentro de uma AutoForma está ativada no PowerPoint.
+O código a seguir indica que wordwrap dentro de um AutoShape está ligado em PowerPoint.
 
 
 ```HTML
@@ -68,6 +68,6 @@ O código a seguir indica que a WordWrap dentro de uma AutoForma está ativada n
 
 
 
- 
+ 
 
- 
+ 

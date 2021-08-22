@@ -15,12 +15,12 @@ keywords:
 - interfaces, IItemContainerProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55246abde51e7053bf0c3266ccbe9c2b080b2fe7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f69c0407a8f167a3a89b908c1b5555a9d32363b38b3ce5ab4d1794e726666a8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413446"
 ---
 # <a name="itemcontainer-control-pattern"></a>Padrão de controle de IsContainer
 
@@ -91,7 +91,7 @@ O método a seguir é necessário para implementar a interface [**IItemContainer
 
 
 
- 
+ 
 
 O padrão de controle de **contêiner** não tem propriedades ou eventos associados.
 
@@ -111,9 +111,9 @@ O padrão de controle de **contêiner** não tem propriedades ou eventos associa
 [Padrão de controle VirtualizedItem](uiauto-implementingvirtualizeditem.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

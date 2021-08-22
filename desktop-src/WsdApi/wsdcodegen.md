@@ -4,12 +4,12 @@ ms.assetid: 3d40172b-6ba1-4e42-9a1a-519c8e88c2b1
 title: elemento wsdCodeGen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9861617854e0e75575f2993717f5b2a86515fb0f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 67ffac9696371f53b073fa71c0b1903c826544a6f695b9b741b48936c0250d2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049534"
 ---
 # <a name="wsdcodegen-element"></a>elemento wsdCodeGen
 
@@ -45,7 +45,7 @@ ms.locfileid: "107994673"
 | [**hostMetadata**](hostmetadata.md)<br/>                 | Os metadados de hospedagem para o dispositivo a ser implementado. Este elemento é usado apenas para implementações de dispositivo (hosts).<br/> <br/>                                                                                 |
 | [**layerNumber**](layernumber.md)<br/>                   | O número da camada de código a ser gerada. Os números de camada são usados em tabelas de tempo de execução para distinguir uma camada de código para outra. O WSDAPI usa o código gerado que tem um número de camada de 0.<br/> <br/> |
 | [**layerPrefix**](layerprefix.md)<br/>                   | O prefixo a ser usado no código gerado para garantir a exclusividade dos símbolos gerados. O WSDAPI usa o prefixo "WSD".<br/> <br/>                                                                                     |
-| [**Ela**](macro.md)<br/>                               | Define o texto ou CDATA a ser reutilizado pelo elemento [**include**](include.md) .<br/> <br/>                                                                                                                        |
+| [**Macro**](macro.md)<br/>                               | Define o texto ou CDATA a ser reutilizado pelo elemento [**include**](include.md) .<br/> <br/>                                                                                                                        |
 | [**nameSpace**](namespace.md)<br/>                       | Descreve um namespace a ser usado para geração de código.<br/> <br/>                                                                                                                                                |
 | [**relationshipMetadata**](relationshipmetadata.md)<br/> | Descreve o host e os metadados hospedados para o dispositivo.<br/> <br/>                                                                                                                                               |
 | [**thisModelMetadata**](thismodelmetadata.md)<br/>       | Os metadados de modelo e fabricante para o dispositivo a ser implementado. Este elemento é usado apenas para implementações de dispositivo (hosts).<br/> <br/>                                                                  |
@@ -84,7 +84,7 @@ Em geral, os elementos de [**arquivo**](file.md) devem ocorrer por último porqu
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

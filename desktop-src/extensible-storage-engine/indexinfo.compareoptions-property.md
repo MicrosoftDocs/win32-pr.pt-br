@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae4e9f77a8e899c4874e18c8faaa079a7d2cf83d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bb3ba11f462d29d3298d344d3230c7aef0539f94cd65c4bb3441c6d5d5fb824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039474"
 ---
 # <a name="indexinfocompareoptions-property"></a>Propriedade IndexInfo. CompareOptions
 
@@ -39,7 +39,7 @@ Obtém o CompareOptions para o índice.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

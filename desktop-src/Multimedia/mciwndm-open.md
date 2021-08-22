@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_OPEN (VFW. h)
 description: A mensagem de abertura do MCIWNDM \_ abre um dispositivo MCI e o associa a uma janela MCIWnd.
 ms.assetid: ad1dfe0f-015b-45a9-ab88-cc0bdf0aa057
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_OPEN
+- mensagem de MCIWNDM_OPEN Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2f232ea9076a1e0ff8c105d8c5cf94104e455c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 03bebf9573303e3560b385425e7642106120c41456a21c1c4b80bc158328a864
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428896"
 ---
 # <a name="mciwndm_open-message"></a>MCIWNDM \_ Abrir mensagem
 

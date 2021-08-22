@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, TreeItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c837428a0aeef900779cfccf0a28b46aa276369
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0075b4559ed79815f3fc9b46c850fd8dcbc455c8fb30bfed5dbeda1f6f1763f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105793358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119413336"
 ---
 # <a name="treeitem-control-type"></a>Tipo de controle TreeItem
 
@@ -85,7 +85,7 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
- 
+ 
 
 Os controles de item de árvore podem ter zero ou mais filhos de item de árvore na exibição de conteúdo da árvore de automação da interface do usuário. Se o controle de item de árvore tiver funcionalidade além do que é exposto nos padrões de controle listados abaixo, o controle deverá ser baseado no tipo de controle [DataItem](uiauto-supportdataitemcontroltype.md) .
 
@@ -119,7 +119,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -138,7 +138,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -166,7 +166,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -185,9 +185,9 @@ Se um item de árvore tiver subelementos diferentes de nós de estrutura de tóp
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

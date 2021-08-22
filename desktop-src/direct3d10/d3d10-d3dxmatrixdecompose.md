@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixDecompose (D3DX10Math. h) – divide uma matriz de transformação 3D geral em seus componentes escalares, de rotação e de tradução.
+description: Função D3DXMatrixDecompose (D3DX10Math.h) – divide uma matriz de transformação 3D geral em seus componentes escalares, rotacionais e translacionais.
 ms.assetid: 3694769f-56e7-4983-924e-021c129462a2
-title: Função D3DXMatrixDecompose (D3DX10Math. h)
+title: Função D3DXMatrixDecompose (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cc87de99d72283c20f25b15ea8d0e5864e2550d9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: be91b4b8ef6b0a18dc7691eb230ae755db31173ab8e42ab8ef0fb105d23630c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498136"
 ---
-# <a name="d3dxmatrixdecompose-function-d3dx10mathh"></a>Função D3DXMatrixDecompose (D3DX10Math. h)
+# <a name="d3dxmatrixdecompose-function-d3dx10mathh"></a>Função D3DXMatrixDecompose (D3DX10Math.h)
 
-Divide uma matriz de transformação 3D geral em seus componentes escalares, de rotação e de tradução.
+Divide uma matriz de transformação 3D geral em seus componentes escalares, rotacionais e translacionais.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ HRESULT D3DXMatrixDecompose(
 
 <dl> <dt>
 
-*pOutScale* \[ no\]
+*pOutScale* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
@@ -52,16 +52,16 @@ Ponteiro para a saída [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que contém fator
 
 </dd> <dt>
 
-*pOutRotation* \[ no\]
+*pOutRotation* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Ponteiro para o [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que descreve a rotação.
+Ponteiro para [**o D3DXQUATERNION**](d3d10-d3dxquaternion.md) que descreve a rotação.
 
 </dd> <dt>
 
-*pOutTranslation* \[ no\]
+*pOutTranslation* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
@@ -70,12 +70,12 @@ Ponteiro para o vetor D3DXVECTOR3 que descreve a tradução.
 
 </dd> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Ponteiro para uma matriz [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de entrada para decompor.
+Ponteiro para uma matriz [**D3DXMATRIX de**](d3d10-d3dxmatrix.md) entrada para decompor.
 
 </dd> </dl>
 
@@ -83,7 +83,7 @@ Ponteiro para uma matriz [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de entrada para d
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será S \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte: D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será S \_ OK. Se a função falhar, o valor de retorno poderá ser o seguinte: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,12 +91,12 @@ Se a função for bem sucedido, o valor de retorno será S \_ OK. Se a função 
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

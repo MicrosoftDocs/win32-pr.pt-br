@@ -4,12 +4,12 @@ ms.assetid: 481fdc45-82db-4128-93de-388562f636e9
 title: Ordenando números de sequência de arquivos em um gabinete, tabela de arquivos e tabelas de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07f9cd530d90fb0ef4d805b8ff2c96398cd97e55
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 87f64558a570c7184da36feba8aeea6d2a7dc32c0d8add4c6963dece131c4849
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105751643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119327862"
 ---
 # <a name="ordering-file-sequence-numbers-in-a-cabinet-file-table-and-media-table"></a>Ordenando números de sequência de arquivos em um gabinete, tabela de arquivos e tabelas de mídia
 
@@ -17,7 +17,7 @@ A [tabela de arquivos](file-table.md) contém uma lista completa de todos os arq
 
 Por exemplo, suponha que um arquivo tenha um número de sequência de 92 inserido na coluna sequência da tabela de arquivos. Para determinar em qual disco de origem esse arquivo reside, o instalador verifica o registro da tabela de mídia para a entrada com o menor valor de LastSequence maior que 92. A coluna DiskId é a chave primária para a tabela de mídia e esse campo identifica exclusivamente o disco na tabela.
 
-O limite máximo do número de arquivos que podem ser listados na tabela de arquivos de um pacote de Windows Installer é 32767 arquivos. Para criar um pacote de Windows Installer que contém mais arquivos, consulte [criando um pacote grande](authoring-a-large-package.md).
+o limite máximo do número de arquivos que podem ser listados na tabela de arquivos de um pacote de Windows Installer é 32767 arquivos. para criar um pacote de Windows Installer que contém mais arquivos, consulte [criando um pacote grande](authoring-a-large-package.md).
 
 Os autores de pacotes podem reduzir o tamanho de seus pacotes de instalação compactando os arquivos de origem e incluindo-os em arquivos de gabinete. A imagem do arquivo de origem pode ser compactada, descompactada ou uma mistura de ambos os tipos. Para obter mais informações sobre fontes compactadas e não compactadas [, consulte fontes compactadas e descompactadas](compressed-and-uncompressed-sources.md). Os arquivos de origem compactados devem ser armazenados dentro de um arquivo de gabinete. Os arquivos compactados dentro de um gabinete têm seus próprios números de sequência internos. Os valores desses números de sequência interna não precisam corresponder ao valor dos números de sequência dentro da tabela de arquivos. No entanto, a sequência dos arquivos especificados na tabela de arquivos deve ser idêntica à sequência real dos arquivos dentro dos gabinetes. Os números de sequência de arquivos descompactados não precisam ser exclusivos. Por exemplo, se todos os arquivos forem descompactados e residirem em um disco, todos os arquivos poderão ter o mesmo número de sequência na tabela de arquivos.
 

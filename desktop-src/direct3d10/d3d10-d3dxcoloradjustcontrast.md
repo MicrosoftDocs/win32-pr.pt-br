@@ -1,7 +1,7 @@
 ---
-description: Função D3DXColorAdjustContrast (D3DX10Math. h) – ajusta o valor de contraste de uma cor.
+description: Função D3DXColorAdjustContrast (D3DX10Math.h) – ajusta o valor de contraste de uma cor.
 ms.assetid: c111d3c7-19c6-4a6b-af0d-a9e1bc0bb7d9
-title: Função D3DXColorAdjustContrast (D3DX10Math. h)
+title: Função D3DXColorAdjustContrast (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 09781c5c11560c3497a5af57528cf478f6259816
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 90c36ee9c414b6ae34058b255ad2e7a642f13ef49ee91b586ca974009d4e6b7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498486"
 ---
-# <a name="d3dxcoloradjustcontrast-function-d3dx10mathh"></a>Função D3DXColorAdjustContrast (D3DX10Math. h)
+# <a name="d3dxcoloradjustcontrast-function-d3dx10mathh"></a>Função D3DXColorAdjustContrast (D3DX10Math.h)
 
 Ajusta o valor de contraste de uma cor.
 
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorAdjustContrast(
 
 <dl> <dt>
 
-*pout* \[ no\]
+*pOut* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](../direct3d9/d3dxcolor.md)\***
 
-\[ponteiro de entrada \] para um [**D3DXCOLOR**](d3d10-d3dxcolor.md) que é o resultado da operação.
+\[in, out \] Ponteiro para [**um D3DXCOLOR**](d3d10-d3dxcolor.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*PC* \[ no\]
+*pC* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](../direct3d9/d3dxcolor.md) \***
 
-Ponteiro para uma estrutura de D3DXCOLOR de origem.
+Ponteiro para uma estrutura D3DXCOLOR de origem.
 
 </dd> <dt>
 
 *c* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de contraste. Esse parâmetro interpola linearmente entre 50% de cinza e a cor, pC. Não há nenhum limite no valor de c. Se esse parâmetro for zero, a cor retornada será de 50% de cinza. Se esse parâmetro for 1, a cor retornada será a cor original.
+Valor de contraste. Esse parâmetro interpola linearmente entre 50% de cinza e a cor, pC. Não há limites no valor de c. Se esse parâmetro for zero, a cor retornada será 50% cinza. Se esse parâmetro for 1, a cor retornada será a cor original.
 
 </dd> </dl>
 
@@ -77,9 +77,9 @@ Essa função retorna um ponteiro para uma estrutura D3DXCOLOR que é o resultad
 
 ## <a name="remarks"></a>Comentários
 
-O canal alfa de entrada é copiado, não modificado, para o canal alfa de saída.
+O canal alfa de entrada é copiado, sem modificação, para o canal alfa de saída.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, essa função pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, essa função pode ser usada como um parâmetro para outra função.
 
 Essa função interpola os componentes de cor vermelho, verde e azul de uma estrutura D3DXCOLOR entre 50% de cinza e um valor de contraste especificado, conforme mostrado no exemplo a seguir.
 
@@ -90,7 +90,7 @@ pOut->r = 0.5f + c * (pC->r - 0.5f);
 
 
 
-Se c for maior que 0 e menor que 1, o contraste será diminuído. Se c for maior que 1, o contraste será aumentado.
+Se c for maior que 0 e menor que 1, o contraste será reduzido. Se c for maior que 1, o contraste será aumentado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,12 +98,12 @@ Se c for maior que 0 e menor que 1, o contraste será diminuído. Se c for maior
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

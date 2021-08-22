@@ -4,12 +4,12 @@ ms.assetid: 59aeb20a-5e8b-4e27-8e69-9f373ff45b27
 title: Propriedade AVEncVideoForceSourceScanType (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f16a5ee35aca1c4279052c5af2ad04d7dbbffbd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6d52cb3c7d0c6144fb918cdd27105163666b98aa9bde44071126d3f59dba442a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275726"
 ---
 # <a name="avencvideoforcesourcescantype-property"></a>Propriedade AVEncVideoForceSourceScanType
 
@@ -35,8 +35,8 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoSourceScanT
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

@@ -6,12 +6,12 @@ keywords:
 - Agendador de Tarefas de informações de registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6c5048e9cbb9b41abcd9052a02371cd575b57c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b12e3dc9163b1074eff12be6b872780184b112b6c8a2512e3a68901d083f9c85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139279"
 ---
 # <a name="task-registration-information"></a>Informações de registro da tarefa
 
@@ -83,9 +83,9 @@ Nos métodos mencionados acima, você pode especificar o contexto de segurança 
 [Agendador de Tarefas](task-scheduler-start-page.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
