@@ -1,10 +1,10 @@
 ---
-title: Sintaxe da cadeia de caracteres (IA5)
-description: Uma cadeia de caracteres que diferencia maiúsculas de minúsculas que contém caracteres do conjunto de caracteres IA5.
+title: Sintaxe string(IA5)
+description: Uma cadeia de caracteres que contém caracteres do conjunto de caracteres IA5.
 ms.assetid: 79f34fa0-50ce-4bc8-9d12-c003ac43d7a0
 ms.tgt_platform: multiple
 keywords:
-- Cadeia de caracteres (IA5) sintaxe do AD Schema
+- Esquema do AD de sintaxe string(IA5)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2466bb0a5161ae3c21c48a31962f2324543a8692
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 30da7f784ec795e57bb4842315f92832c25f5c5bc53b3836df3c98828c896cd9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530266"
 ---
-# <a name="stringia5-syntax"></a>Sintaxe da cadeia de caracteres (IA5)
+# <a name="stringia5-syntax"></a>Sintaxe string(IA5)
 
-Uma cadeia de caracteres que diferencia maiúsculas de minúsculas que contém caracteres do conjunto de caracteres IA5.
+Uma cadeia de caracteres que contém caracteres do conjunto de caracteres IA5.
 
 
 
 | Entrada | Valor |
 |--------------|------------------------------------------------------------------------|
-| Nome         | Cadeia de caracteres (IA5)                                                            |
+| Nome         | String(IA5)                                                            |
 | ID da sintaxe    | 2.5.5.5                                                                |
-| ID DO OM        | 22                                                                     |
-| Tipo de MAPI    | TSTRING                                                                |
-| Tipo de ADS     | \_cadeia de caracteres imprimível do ADSTYPE \_                                             |
+| OM ID        | 22                                                                     |
+| Tipo MAPI    | TSTRING                                                                |
+| Tipo ADS     | CADEIA DE \_ CARACTERES IMPRIMÍVEL ADSTYPE \_                                             |
 | Tipo de variante | VT \_ BSTR                                                               |
-| Tipo SDS     | [System.String](/dotnet/api/system.string) |
+| Tipo de SDS     | [System.String](/dotnet/api/system.string) |
 
 
 

@@ -1,23 +1,23 @@
 ---
-description: Windows Installer os desenvolvedores podem usar as diretrizes neste tópico para criar Windows Installer pacotes que contêm assemblies.
+description: Windows os desenvolvedores de instalador podem usar as diretrizes neste tópico para criar Windows Installer pacotes que contêm assemblies.
 ms.assetid: 60687a4f-aaa4-4264-a3f7-0a16eb1fb336
 title: Adicionando assemblies a um pacote
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ded0795003ae8faf1b7bb945671990767d3eefb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 68a96c1b8c8d9b73fedf03fceeb82be62b8457556da02334ed7a224aefc2202a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119534866"
 ---
 # <a name="adding-assemblies-to-a-package"></a>Adicionando assemblies a um pacote
 
-Windows Installer os desenvolvedores podem usar as diretrizes neste tópico para criar Windows Installer pacotes que contêm assemblies.
+Windows os desenvolvedores de instalador podem usar as diretrizes neste tópico para criar Windows Installer pacotes que contêm assemblies.
 
-As diretrizes a seguir se aplicam a assemblies do Win32 e assemblies que o Common Language Runtime do Microsoft .NET Framework usa.
+as diretrizes a seguir se aplicam a assemblies do Win32 e assemblies que o Common Language Runtime do Microsoft .NET Framework usa.
 
--   Um componente Windows Installer não deve conter mais de um assembly.
+-   um componente Windows Installer não deve conter mais de um assembly.
 -   Todos os arquivos no assembly devem estar em um único componente.
 -   Cada componente que contém um assembly deve ter uma entrada na tabela [MsiAssembly](msiassembly-table.md) .
 -   O nome de cache de assembly forte de cada assembly deve ser criado na tabela [MsiAssemblyName](msiassemblyname-table.md) .

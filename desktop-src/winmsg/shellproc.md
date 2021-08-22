@@ -32,12 +32,12 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 4add84011745aeb61659c39775b94fed91028d83
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: 3776748994b44b3a870fd4689fa9f4019bff99ae8d6f7dd7b13edbf2c98054d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "105807845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449096"
 ---
 # <a name="shellproc-function"></a>Função ShellProc
 
@@ -75,7 +75,7 @@ Esse parâmetro pode usar um dos valores a seguir.
 | **HSHELL_GETMINRECT** 5 | Uma janela está sendo minimizada ou maximizada. O sistema precisa das coordenadas do retângulo minimizado para a janela. |
 | **HSHELL_LANGUAGE** 8 | O idioma do teclado foi alterado ou um novo layout de teclado foi carregado. |
 | **HSHELL_REDRAW** 6 | O título de uma janela na barra de tarefas foi redesenhado. |
-| **HSHELL_TASKMAN** 7 | O usuário selecionou a lista de tarefas. Um aplicativo de shell que fornece uma lista de tarefas deve retornar **true** para impedir que o Windows inicie sua lista de tarefas. |
+| **HSHELL_TASKMAN** 7 | O usuário selecionou a lista de tarefas. um aplicativo de shell que fornece uma lista de tarefas deve retornar **TRUE** para impedir Windows de iniciar sua lista de tarefas. |
 | **HSHELL_WINDOWACTIVATED** 4 | A ativação foi alterada para uma janela diferente de nível superior e sem proprietário. |
 | **HSHELL_WINDOWCREATED** 1 | Uma janela de nível superior e sem proprietário foi criada. A janela existe quando o sistema chama esse gancho. |
 | **HSHELL_WINDOWDESTROYED** 2 | Uma janela sem proprietário de nível superior está prestes a ser destruída. A janela ainda existe quando o sistema chama esse gancho. |

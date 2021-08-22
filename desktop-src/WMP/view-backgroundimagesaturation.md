@@ -3,7 +3,7 @@ title: Exibir. backgroundImageSaturation
 description: O atributo backgroundImageSaturation especifica ou recupera o valor de saturação da imagem de plano de fundo.
 ms.assetid: 9e1f205b-6366-4816-9430-1153f57d686c
 keywords:
-- Exibir. backgroundImageSaturation Windows Media Player
+- VIEW. backgroundImageSaturation Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c9d7f5807bcb5fd90dae211d80faf78006b6b35
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 934c10ee090f99d456c38a5eb56512d3adb9b748d45b166167b49f3249d819e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506856"
 ---
 # <a name="viewbackgroundimagesaturation"></a>Exibir. backgroundImageSaturation
 

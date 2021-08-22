@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c20aea0851c542fd0d2c81de26da21a692fdb5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e73ba20941894cf82c1d15fe680fd984ba0110790b6aefdf5897a8383fee0b0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493106"
 ---
 # <a name="gllightmodelfv-function"></a>função glLightModelfv
 

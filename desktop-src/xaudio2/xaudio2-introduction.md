@@ -4,12 +4,12 @@ ms.assetid: c87be63a-58b5-9cd1-1f03-f32b5a858b2e
 title: Introdução ao XAudio2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7cde958256d9126746a07764dc0c792e88289c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4a966e9682a7f605864c0374a588d4b7eb3724036fe284bd6d92c64080e9225
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589896"
 ---
 # <a name="xaudio2-introduction"></a>Introdução ao XAudio2
 
@@ -31,7 +31,7 @@ Veja a seguir uma lista de recursos do XAudio2 e novas funcionalidades que permi
 
     A submistura combina vários sons em um único fluxo de áudio — por exemplo, um som de mecanismo composto por partes compostas, todos que estão sendo reproduzidos simultaneamente. Além disso, você pode usar a subcombinação para processar e combinar partes semelhantes de um jogo. Por exemplo, você pode combinar todos os efeitos de som do jogo para permitir que uma configuração de volume do usuário seja aplicada enquanto uma configuração separada controla o volume de música. Combinado com o DSP, a submixagem fornece o tipo de roteamento e processamento de dados necessários para os jogos de hoje. O XAudio2 permite níveis arbitrários de submistura, permitindo a criação de sons complexos e combinações de jogos.
 
-    Consulte [grafo de áudio XAudio2](xaudio2-audio-graph.md) e [vozes XAudio2](xaudio2-voices.md) para obter mais informações sobre a subcombinação.
+    consulte [XAudio2 Audio Graph](xaudio2-audio-graph.md) e [XAudio2 vozes](xaudio2-voices.md) para obter mais informações sobre a subcombinação.
 
 -   Suporte a áudio compactado
 

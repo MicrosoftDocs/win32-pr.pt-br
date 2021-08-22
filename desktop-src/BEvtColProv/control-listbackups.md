@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 858fb7ee38b7875426ae31172618ad8ac60510ed
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ba6a3f042a6bd8f01e4bede00e22bda95ca28ebe7cc2beb33a12c6b49deba6bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589116"
 ---
 # <a name="listbackups-method-of-the-control-class"></a>Método ListBackups da classe Control
 
@@ -44,42 +44,42 @@ void ListBackups(
 
 <dl> <dt>
 
-*OriginalTimestampLow* \[ fora\]
+*OriginalTimestampLow* \[ out\]
 </dt> <dd>
 
-O carimbo de data/hora de quando a configuração atual foi definida (se restaurada do backup, conterá o carimbo de data/hora original). Essa é a parte inferior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O timestamp de quando a configuração atual foi definida (se restaurada do backup, conterá o timestamp original). Essa é a parte baixa de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OriginalTimestampHigh* \[ fora\]
+*OriginalTimestampHigh* \[ out\]
 </dt> <dd>
 
-O carimbo de data/hora de quando a configuração atual foi definida (se restaurada do backup, conterá o carimbo de data/hora original). Essa é a parte superior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O timestamp de quando a configuração atual foi definida (se restaurada do backup, conterá o timestamp original). Essa é a parte alta do [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*Arquivos* \[ do fora\]
+*Arquivos* \[ out\]
 </dt> <dd>
 
-A lista de arquivos de backup disponíveis, na ordem do mais recente ao mais antigo.
+A lista de arquivos de backup disponíveis, na ordem dos mais novos para os mais antigos.
 
 </dd> <dt>
 
-*FilesTimestampLow* \[ fora\]
+*FilesTimestampLow* \[ out\]
 </dt> <dd>
 
-Para cada arquivo de backup, o carimbo de data/hora de quando sua configuração foi definida. Essa é a parte inferior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Para cada arquivo de backup, o timestamp de quando sua configuração foi definida. Essa é a parte baixa de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*FilesTimestampHigh* \[ fora\]
+*FilesTimestampHigh* \[ out\]
 </dt> <dd>
 
-Para cada arquivo de backup, o carimbo de data/hora de quando sua configuração foi definida. Essa é a parte superior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+Para cada arquivo de backup, o timestamp de quando sua configuração foi definida. Essa é a parte alta do [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -89,10 +89,10 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                       |
-| Namespace<br/>                | Raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Namespace<br/>                | Root \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 
@@ -101,7 +101,7 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**Controlo**](control.md)
+[**Control**](control.md)
 </dt> </dl>
 
  

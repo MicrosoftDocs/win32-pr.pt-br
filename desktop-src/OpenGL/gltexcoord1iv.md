@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 317b8d9168e9b3c7fe22adc7aae728e6cd3bdc3c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6e12b7aa7b1c0498a295f692a4daa2610aaa39def3e7297929adb95ab4a7ed21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105754311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491376"
 ---
 # <a name="gltexcoord1iv-function"></a>função glTexCoord1iv
 
@@ -40,7 +40,7 @@ void WINAPI glTexCoord1iv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de coordenadas de textura.

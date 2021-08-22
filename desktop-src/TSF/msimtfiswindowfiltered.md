@@ -1,9 +1,9 @@
 ---
 title: Função MsimtfIsWindowFiltered
-description: A função MsimtfIsWindowFiltered testa se a janela especificada é filtrada por AIMM (Active Input Method Manager).
+description: A função MsimtfIsWindowFiltered testa se a janela determinada é filtrada pelo AIMM (Active Input Method Manager).
 ms.assetid: 1f5e98f1-3626-4aa5-b2da-b6bc48d02184
 keywords:
-- Estrutura de serviços de texto da função MsimtfIsWindowFiltered
+- Função MsimtfIsWindowFiltered Estrutura de Serviços de Texto
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70ad9bd9fb61c546ec3e2f1d96d5fc9cf932613a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06f3841ed5c0436d991d02291c1e395f42d6b31b66f442a3caac0b2062fc27db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476746"
 ---
 # <a name="msimtfiswindowfiltered-function"></a>Função MsimtfIsWindowFiltered
 
-A função **MsimtfIsWindowFiltered** testa se a janela especificada é filtrada por AIMM (Active Input Method Manager).
+A **função MsimtfIsWindowFiltered** testa se a janela determinada é filtrada pelo AIMM (Active Input Method Manager).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ BOOL CALLBACK MsimtfIsWindowFiltered(
 
 <dl> <dt>
 
-*HWND* \[ no\]
+*hwnd* \[ Em\]
 </dt> <dd>
 
-Um identificador de janela a ser testado.
+Um alça de janela a ser testado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 
 
 | Código de retorno                                                                          | Descrição                                                               |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>  | Se esta janela for filtrada pelo Gerenciador de método de entrada ativo.<br/>     |
-| <dl> <dt>**FOR**</dt> </dl> | Se essa janela não for filtrada pelo Gerenciador de método de entrada ativo.<br/> |
+| <dl> <dt>**Verdade**</dt> </dl>  | Se essa janela for filtrada pelo Gerenciador de Métodos de Entrada Ativo.<br/>     |
+| <dl> <dt>**False**</dt> </dl> | Se essa janela não for filtrada pelo Gerenciador de Métodos de Entrada Ativo.<br/> |
 
 
 
@@ -62,7 +62,7 @@ Um identificador de janela a ser testado.
 
 ## <a name="remarks"></a>Comentários
 
-Uma janela pode ser filtrada por IActiveIMMApp:: FilterClientWindows.
+Uma janela pode ser filtrada por IActiveIMMApp::FilterClientWindows.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ Uma janela pode ser filtrada por IActiveIMMApp:: FilterClientWindows.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
 | DLL<br/>                      | <dl> <dt>Msimtf.dll</dt> </dl> |
 
 

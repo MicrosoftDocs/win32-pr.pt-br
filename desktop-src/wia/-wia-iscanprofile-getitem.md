@@ -1,7 +1,7 @@
 ---
-description: Obtém o GUID da categoria do item de aquisição de imagem do Windows (WIA) 2,0 ao qual o perfil está associado.
+description: Obtém o GUID da categoria do item WIA (Aquisição de Imagem Windows) 2.0 ao que o perfil está associado.
 ms.assetid: 2c816789-ad66-4b06-9160-7a86289ff373
-title: 'Método IScanProfile:: GetItem (ScanProfile. h)'
+title: Método IScanProfile::GetItem (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 888a3bb5bcb6e6c4fc2fefff2d976eb7fc1c7f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a7f52a2d89bbd35b59febb25528fe493c4b5646afc70251fc19978d6d6265db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451036"
 ---
-# <a name="iscanprofilegetitem-method"></a>Método IScanProfile:: GetItem
+# <a name="iscanprofilegetitem-method"></a>Método IScanProfile::GetItem
 
-Obtém o GUID da categoria do item de aquisição de imagem do Windows (WIA) 2,0 ao qual o perfil está associado.
+Obtém o GUID da categoria do item WIA (Aquisição de Imagem Windows) 2.0 ao que o perfil está associado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ HRESULT GetItem(
 
 <dl> <dt>
 
-*pguidCategory* \[ fora\]
+*pguidCategory* \[ out\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
-Um ponteiro para o GUID da categoria do item WIA 2,0. Essa é sempre uma das constantes da \_ categoria de item IPA do WIA \_ \_ .
+Um ponteiro para o GUID da categoria do item WIA 2.0. Essa é sempre uma das constantes DE CATEGORIA DE \_ ITEM IPA do \_ WIA. \_
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,10 +60,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
-| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
+| parâmetro<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

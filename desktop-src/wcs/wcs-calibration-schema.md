@@ -3,8 +3,8 @@ title: Esquema de calibração do WCS
 description: Este tópico descreve o esquema de calibração do WCS que expande o perfil de modelo de dispositivo de cores WCS.
 ms.assetid: 99f3e9e3-15b7-4bca-87cc-a3bf3b6d0112
 keywords:
-- WCS (sistema de cores do Windows), calibragem
-- WCS (sistema de cores do Windows), calibragem
+- Windows Sistema de cores (WCS), calibragem
+- WCS (Windows sistema de cores), calibragem
 - gerenciamento de cores de imagem, calibragem
 - gerenciamento de cores, calibragem
 - cores, calibragem
@@ -14,12 +14,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e859ab9d2b47355db063961004f17a8cc1537694
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 3744f8aa0190f09acf80b469ae01fddb035c48deda73d53871094ef9ece8e88b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105769670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451416"
 ---
 # <a name="wcs-calibration-schema"></a>Esquema de calibração do WCS
 
@@ -27,7 +27,7 @@ Este tópico descreve o esquema de calibração do WCS que expande o [perfil de 
 
 ## <a name="the-wcs-calibration-schema"></a>O esquema de calibração do WCS
 
-A definição de esquema a seguir é usada para especificar as novas definições do Windows 7 que dão suporte à calibragem de [perfil de modelo de dispositivo de cores WCS](wcs-color-device-model-profile-schema-and-algorithms.md) .
+a definição de esquema a seguir é usada para especificar as novas definições de Windows 7 que dão suporte à calibragem de [perfil de modelo de dispositivo de cores WCS](wcs-color-device-model-profile-schema-and-algorithms.md) .
 
 
 ```C++
@@ -74,7 +74,7 @@ A definição de esquema a seguir é usada para especificar as novas definiçõe
 
 
 
-Para compatibilidade com o Windows Vista, os perfis que contêm marcas de calibragem devem incluir o atributo `mc:Ignoreable="cdm_calibration"` .
+para compatibilidade com o Windows Vista, os perfis que contêm marcas de calibragem devem incluir o atributo `mc:Ignoreable="cdm_calibration"` .
 
  
 

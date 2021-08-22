@@ -1,7 +1,7 @@
 ---
-description: Verifica se o processo de chamada tem acesso de leitura a um bloco de memória. Caso contrário, a macro chamará a macro DbgBreak.
+description: Verifica se o processo de chamada tem acesso de leitura a um bloco de memória. Caso não seja, a macro chamará a macro DbgBreak.
 ms.assetid: 1a70e4e5-e144-4cfe-b6be-c0a70aac9ada
-title: Macro ValidateReadPtr (Wxdebug. h)
+title: Macro ValidateReadPtr (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - HeaderDef
 api_location:
 - Wxdebug.h
-ms.openlocfilehash: aa8093ecbd428cafbf1266179b1489cac0d69c4d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: caf429437d284a27e4cda830b51e4512375310f2d466a597e58c394a2fea551f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501626"
 ---
 # <a name="validatereadptr-macro"></a>Macro ValidateReadPtr
 
-Verifica se o processo de chamada tem acesso de leitura a um bloco de memória. Caso contrário, a macro chamará a macro [**DbgBreak**](dbgbreak.md) .
+Verifica se o processo de chamada tem acesso de leitura a um bloco de memória. Caso não seja, a macro chamará a macro [**DbgBreak.**](dbgbreak.md)
 
 > [!Note]  
-> Esta macro foi preterida. No SDK do Windows para Windows Vista (e posterior), essa macro não faz nada.
+> Essa macro foi preterida. No SDK Windows para Windows Vista (e posterior), essa macro não faz nada.
 
  
 
@@ -45,27 +45,27 @@ void ValidateReadPtr(
 
 <dl> <dt>
 
-*DTI* 
+*P* 
 </dt> <dd>
 
 Ponteiro para um bloco de memória.
 
 </dd> <dt>
 
-*CB* 
+*Cb* 
 </dt> <dd>
 
 Tamanho do bloco de memória, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa macro não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa macro é ignorada a menos que DEBUG, \_ debug ou VFWROBUST seja definido quando o arquivo de cabeçalho da classe base do DirectShow for incluído. Essa macro pode ter um custo de desempenho significativo.
+Essa macro é ignorada, a menos que DEBUG, DEBUG ou VFWROBUST seja definido quando o arquivo de DirectShow de classe \_ base for incluído. Essa macro pode ter um custo de desempenho significativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,7 +73,7 @@ Essa macro é ignorada a menos que DEBUG, \_ debug ou VFWROBUST seja definido qu
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl> |
 
 
 

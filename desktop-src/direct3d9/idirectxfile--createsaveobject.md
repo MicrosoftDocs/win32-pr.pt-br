@@ -1,7 +1,7 @@
 ---
-description: Cria um objeto salvar. Preterido.
+description: Cria um objeto save. Preterido.
 ms.assetid: 50a7dbde-1dd4-4aae-a9ab-97d6f99618c0
-title: 'Método IDirectXFile:: createsaveobject (DXFile. h)'
+title: Método IDirectXFile::CreateSaveObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 848010a1f701b39f5cc77a126272bc019ed01f4f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c3646f54b1f232c6eec3e1b3d06441a8e6a7c090f784e3c4c016f7f1bcfc3b03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105749418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491846"
 ---
-# <a name="idirectxfilecreatesaveobject-method"></a>Método IDirectXFile:: createsaveobject
+# <a name="idirectxfilecreatesaveobject-method"></a>Método IDirectXFile::CreateSaveObject
 
-Cria um objeto salvar. Preterido.
+Cria um objeto save. Preterido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ HRESULT CreateSaveObject(
 
 <dl> <dt>
 
-*szFileName* \[ no\]
+*szFileName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -51,12 +51,12 @@ Ponteiro para o nome do arquivo a ser usado para salvar dados.
 
 </dd> <dt>
 
-*dwFileFormat* \[ no\]
+*dwFileFormat* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DXFILEFORMAT**](dxfile.md)**
 
-Indica o formato a ser usado ao salvar o arquivo do DirectX. Esse valor pode ser um dos sinalizadores DXFILEFORMAT \_ XXX em [constantes DXFILE](dxfile.md). Para obter mais informações, consulte Comentários.
+Indica o formato a ser usado ao salvar o arquivo DirectX. Esse valor pode ser um dos sinalizadores DXFILEFORMAT \_ xxx em [constantes DXFILE](dxfile.md). Para obter mais informações, consulte Comentários.
 
 </dd> <dt>
 
@@ -65,21 +65,21 @@ Indica o formato a ser usado ao salvar o arquivo do DirectX. Esse valor pode ser
 
 Tipo: **[ **LPDIRECTXFILESAVEOBJECT**](idirectxfilesaveobject.md)\***
 
-Endereço de um ponteiro para uma interface [**IDirectXFileSaveObject**](idirectxfilesaveobject.md) , que representa o objeto salvar criado.
+Endereço de um ponteiro para uma interface [**IDirectXFileSaveObject,**](idirectxfilesaveobject.md) representando o objeto save criado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADFILE, DXFILEERR \_ BADVALUE.
+Se o método for bem-sucedido, o valor de retorno será DXFILE \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADFILE, DXFILEERR \_ BADVALUE.
 
 ## <a name="remarks"></a>Comentários
 
-Depois de usar esse método, use métodos da interface [**IDirectXFileSaveObject**](idirectxfilesaveobject.md) para criar objetos de dados e para salvar modelos ou dados.
+Depois de usar esse método, use métodos da interface [**IDirectXFileSaveObject**](idirectxfilesaveobject.md) para criar objetos de dados e salvar modelos ou dados.
 
-O valor padrão para o formato de arquivo é DXFILEFORMAT \_ binário. Os valores de formato de arquivo podem ser combinados em uma lógica ou para criar texto compactado ou arquivos binários compactados. Se um arquivo for especificado como binário (0) e texto (1), ele será salvo como um arquivo de texto porque o valor será indistinguíveis do valor de formato de arquivo de texto (0 + 1 = 1). Se você indicar que o formato de arquivo deve ser texto e compactado, o arquivo será gravado primeiro como texto e, em seguida, compactado. No entanto, arquivos de texto compactados não são tão eficientes quanto arquivos de texto binários, portanto, na maioria dos casos, você desejará indicar binário e compactado. Definir um arquivo a ser compactado sem especificar um formato resultará em um arquivo binário e compactado.
+O valor padrão para o formato de arquivo é DXFILEFORMAT \_ BINARY. Os valores de formato de arquivo podem ser combinados em um OR lógico para criar texto compactado ou arquivos binários compactados. Se um arquivo for especificado como binário (0) e texto (1), ele será salvo como um arquivo de texto porque o valor será indistinguível do valor de formato de arquivo de texto (0 + 1 = 1). Se você indicar que o formato de arquivo deve ser texto e compactado, o arquivo será gravado primeiro como texto e compactado. No entanto, os arquivos de texto compactados não são tão eficientes quanto os arquivos de texto binário, portanto, na maioria dos casos, você deseja indicar binário e compactado. Definir um arquivo a ser compactado sem especificar um formato resultará em um arquivo binário compactado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ O valor padrão para o formato de arquivo é DXFILEFORMAT \_ binário. Os valore
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: Add-GUID estendido à direita
+title: Adicionar GUID à direita estendida
 description: Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID específico.
 ms.assetid: 33b3580f-6a3c-416d-9a64-c1d91a262641
 ms.tgt_platform: multiple
 keywords:
-- Add-GUID estendido esquema do AD
+- Esquema do AD estendido direito add-GUID
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 97b398d611cc832154898386e6faf547bd7b695c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad0aa987f9c7b539da3332b89b672f181b7f41da6ebca64aaf22f33fc3503fb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532826"
 ---
-# <a name="add-guid-extended-right"></a>Add-GUID estendido à direita
+# <a name="add-guid-extended-right"></a>Adicionar GUID à direita estendida
 
 Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID específico.
 
@@ -28,9 +28,9 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Adicionar GUID                             |
+| CN           | Add-GUID                             |
 | Display-Name | Adicionar GUID                             |
-| GUID de direitos  | 440820ad-65b4-11d1-a3da-0000f875ae0d |
+| RIGHTS-GUID  | 440820ad-65b4-11d1-a3da-0000f875ae0d |
 
 
 
@@ -49,8 +49,8 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 35                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -60,8 +60,8 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 35                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -71,8 +71,8 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 35                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -82,8 +82,8 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 35                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -93,8 +93,8 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 35                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 
@@ -104,8 +104,8 @@ Direito estendido necessário na raiz do NC para adicionar um objeto com um GUID
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 35                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 35                                           |
 
 
 

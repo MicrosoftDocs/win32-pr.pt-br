@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-CreationDate
+title: Atributo ms-WMI-CreationDate
 description: O carimbo de data e hora da criação de uma instância de objeto.
 ms.assetid: c331a872-73c4-45cc-a4f7-6e48e0ea3f74
 ms.tgt_platform: multiple
 keywords:
 - Esquema do AD do atributo ms-WMI-CreationDate
-- Esquema de AD do atributo msWMI-CreationDate
+- Esquema do AD do atributo msWMI-CreationDate
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7ca684740b1fc1ab654f4b164abbcb48907551
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ab80004d42fde736db9b9aa9d52506d26057da6d5598730083a6c84880c45924
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507713"
 ---
-# <a name="ms-wmi-creationdate-attribute"></a>atributo ms-WMI-CreationDate
+# <a name="ms-wmi-creationdate-attribute"></a>Atributo ms-WMI-CreationDate
 
 O carimbo de data e hora da criação de uma instância de objeto.
 
@@ -29,14 +29,14 @@ O carimbo de data e hora da criação de uma instância de objeto.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------|
-| CN                | MS-WMI-CreationDate                               |
-| LDAP-Display-Name | msWMI-CreationDate                                |
-| Tamanho              | Representação de tipo de dados de DateTime do WMI-26 caracteres. |
+| CN                | ms-WMI-CreationDate                               |
+| Ldap-Display-Name | msWMI-CreationDate                                |
+| Tamanho              | Representação de tipo de dados datetime WMI – 26 caracteres. |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                  |
 | Frequência de atualização  | \-                                                |
 | Attribute-Id      | 1.2.840.113556.1.4.1626                           |
-| System-ID-GUID    | 748b0a2e-3351-4b3f-b171-2f17414ea779              |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)       |
+| System-Id-Guid    | 748b0a2e-3351-4b3f-b171-2f17414ea779              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)       |
 
 
 
@@ -57,15 +57,15 @@ O carimbo de data e hora da criação de uma instância de objeto.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ O carimbo de data e hora da criação de uma instância de objeto.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ O carimbo de data e hora da criação de uma instância de objeto.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ O carimbo de data e hora da criação de uma instância de objeto.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ O carimbo de data e hora da criação de uma instância de objeto.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

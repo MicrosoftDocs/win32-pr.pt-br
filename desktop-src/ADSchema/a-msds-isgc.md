@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-isGC
-description: Identifica o estado do catálogo global no controlador de domínio.
+title: Atributo ms-DS-isGC
+description: Identifica o estado do Catálogo Global no DC.
 ms.assetid: 96caecc8-35f7-4a1b-a6c5-11d339d644bb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-isGC
-- atributo msDS-isGC do AD Schema
+- Esquema do AD do atributo ms-DS-isGC
+- Esquema do AD do atributo msDS-isGC
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9cda7fc857f8a39b36c51a1cb8e47cc543fc511
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f2f2f5e4a75bbbf458db9114a1aae47a655130cfec8d7f1c4013a29e170fb45f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119295616"
 ---
-# <a name="ms-ds-isgc-attribute"></a>atributo ms-DS-isGC
+# <a name="ms-ds-isgc-attribute"></a>Atributo ms-DS-isGC
 
-Identifica o estado do catálogo global no controlador de domínio.
+Identifica o estado do Catálogo Global no DC.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-isGC                           |
-| LDAP-Display-Name | msDS-isGC                            |
+| Ldap-Display-Name | msDS-isGC                            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1959              |
-| System-ID-GUID    | 1df5cf33-0fe5-499e-90e1-e94b42718a46 |
+| System-Id-Guid    | 1df5cf33-0fe5-499e-90e1-e94b42718a46 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -55,10 +55,10 @@ Identifica o estado do catálogo global no controlador de domínio.
 | ID do link                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| É de valor único       | True                                                                                                                     |
+| Tem valor único       | True                                                                                                                     |
 | É indexado             | Falso                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
@@ -76,10 +76,10 @@ Identifica o estado do catálogo global no controlador de domínio.
 | ID do link                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| É de valor único       | True                                                                                                                     |
+| Tem valor único       | True                                                                                                                     |
 | É indexado             | Falso                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
@@ -97,10 +97,10 @@ Identifica o estado do catálogo global no controlador de domínio.
 | ID do link                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| É de valor único       | True                                                                                                                     |
+| Tem valor único       | True                                                                                                                     |
 | É indexado             | Falso                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |

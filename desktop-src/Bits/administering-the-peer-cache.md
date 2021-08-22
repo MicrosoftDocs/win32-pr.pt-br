@@ -1,22 +1,22 @@
 ---
 title: Administrando o cache de pares
-description: Observação a partir do Windows 7, o modelo de cache de pares de Serviço de Transferência Inteligente em Segundo Plano (BITS) 3,0 é preterido.
+description: observação a partir do Windows 7, o modelo de cache de pares do Serviço de Transferência Inteligente em Segundo Plano (BITS) 3,0 é preterido.
 ms.assetid: a33a43e5-02f9-4902-ad3a-ec65b0d80520
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40b3ea1dd19c9aca855ffd73e174dcb3b588a54d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2f3821cc0894754b8dbc2ee9f9a189381ac69030d39938c8f6cb4bc52625ef03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588746"
 ---
 # <a name="administering-the-peer-cache"></a>Administrando o cache de pares
 
 > [!Note]  
-> A partir do Windows 7, o modelo de cache de pares Serviço de Transferência Inteligente em Segundo Plano (BITS) 3,0 é preterido. Se o BITS 4,0 estiver instalado, o modelo de cache de pares de BITS 3,0 estará indisponível.
+> a partir do Windows 7, o modelo de cache de pares do Serviço de Transferência Inteligente em Segundo Plano (BITS) 3,0 é preterido. Se o BITS 4,0 estiver instalado, o modelo de cache de pares de BITS 3,0 estará indisponível.
 
- 
+ 
 
 Para melhorar o desempenho do download, o BITS permite que você baixe o conteúdo de computadores pares. Para habilitar esse recurso, o administrador deve habilitar a configuração da política de grupo EnablePeerCaching. Se habilitada, o par pode baixar conteúdo de pares e fornecer conteúdo a pares. O administrador também pode usar as configurações de política DisablePeerCachingClient e DisablePeerCachingServer para evitar o download de conteúdo de um par ou o fornecimento de conteúdo a pares, respectivamente.
 
@@ -32,9 +32,9 @@ Para listar os arquivos no cache que o BITS vai atender aos pares, chame o méto
 
 Você nunca deve gerenciar o cache de sistemas pares com relação à descoberta de pares ou exclusão de registros de cache. Essa funcionalidade foi incluída na interface [**IBitsPeerCacheAdministration**](/windows/desktop/api/Bits3_0/nn-bits3_0-ibitspeercacheadministration) para fins de integridade.
 
- 
+ 
 
- 
+ 
 
 
 

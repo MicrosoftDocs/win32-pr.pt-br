@@ -1,27 +1,27 @@
 ---
-title: Como localizar elementos da interface do usuário
-description: Este tópico contém um código de exemplo que mostra como localizar elementos de interface do usuário na árvore de automação da interface do usuário.
+title: Como encontrar elementos da interface do usuário
+description: Este tópico contém um código de exemplo que mostra como encontrar elementos de interface do usuário na árvore Automação da Interface do Usuário dados.
 ms.assetid: b613eb18-e14d-468e-833d-072bad29ba06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 887ef914d7abcf5ed6dfc546f0930334f53215d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52998ad92fe1912a5159443642d95bbc14a28da595ddd2b2a255ebecaed8c74d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505266"
 ---
-# <a name="how-to-find-ui-elements"></a>Como localizar elementos da interface do usuário
+# <a name="how-to-find-ui-elements"></a>Como encontrar elementos da interface do usuário
 
-Este tópico contém um código de exemplo que mostra como localizar elementos de interface do usuário na árvore de automação da interface do usuário.
+Este tópico contém um código de exemplo que mostra como encontrar elementos de interface do usuário na árvore Automação da Interface do Usuário dados.
 
--   [Localizando um elemento por nome](#finding-an-element-by-name)
--   [Localizando elementos relacionados](#finding-related-elements)
+-   [Encontrando um elemento por nome](#finding-an-element-by-name)
+-   [Localizar elementos relacionados](#finding-related-elements)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="finding-an-element-by-name"></a>Localizando um elemento por nome
+## <a name="finding-an-element-by-name"></a>Encontrando um elemento por nome
 
-O exemplo a seguir localiza o elemento de automação da interface do usuário da Microsoft que tem o nome especificado e é um filho da janela da área de trabalho.
+O exemplo a seguir localiza o elemento microsoft Automação da Interface do Usuário que tem o nome especificado e é um filho da janela da área de trabalho.
 
 
 ```C++
@@ -70,7 +70,7 @@ cleanup:
 
 
 
-## <a name="finding-related-elements"></a>Localizando elementos relacionados
+## <a name="finding-related-elements"></a>Localizar elementos relacionados
 
 A função de exemplo a seguir retorna uma coleção de todos os botões habilitados que são filhos do elemento especificado.
 
@@ -131,18 +131,18 @@ cleanup:
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Obtendo elementos da automação interface do usuário](uiauto-obtainingelements.md)
 </dt> <dt>
 
-[Tópicos de instruções para clientes de automação da interface do usuário](uiauto-howto-topics-for-uiautomation-clients.md)
+[Tópicos de ida e Automação da Interface do Usuário clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

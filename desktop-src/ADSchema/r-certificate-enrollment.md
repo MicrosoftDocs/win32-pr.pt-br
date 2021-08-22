@@ -1,10 +1,10 @@
 ---
-title: Certificate-Enrollment estendido à direita
+title: Certificate-Enrollment direito estendido
 description: Direito estendido necessário para causar o registro de certificado.
 ms.assetid: 12b8bab8-3b52-46a7-887a-28f6645311cc
 ms.tgt_platform: multiple
 keywords:
-- Certificate-Enrollment esquema do AD estendido à direita
+- Certificate-Enrollment esquema do AD estendido direito
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c42d7c39cecc9796dddfebd981bb27353ed9594e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 626892db9421d6c5cdf27e5085c13b2b80b4079e2c540c474dfd657e2a8442af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532756"
 ---
-# <a name="certificate-enrollment-extended-right"></a>Certificate-Enrollment estendido à direita
+# <a name="certificate-enrollment-extended-right"></a>Certificate-Enrollment direito estendido
 
 Direito estendido necessário para causar o registro de certificado.
 
@@ -30,7 +30,7 @@ Direito estendido necessário para causar o registro de certificado.
 |--------------|--------------------------------------|
 | CN           | Certificate-Enrollment               |
 | Display-Name | Registrar                               |
-| GUID de direitos  | 0e10c968-78fb-11d2-90d4-00c04f79dc55 |
+| RIGHTS-GUID  | 0e10c968-78fb-11d2-90d4-00c04f79dc55 |
 
 
 
@@ -49,8 +49,8 @@ Direito estendido necessário para causar o registro de certificado.
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
-| Localização-exibição-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -60,8 +60,8 @@ Direito estendido necessário para causar o registro de certificado.
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
-| Localização-exibição-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -71,8 +71,8 @@ Direito estendido necessário para causar o registro de certificado.
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
-| Localização-exibição-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -82,8 +82,8 @@ Direito estendido necessário para causar o registro de certificado.
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
-| Localização-exibição-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -93,8 +93,8 @@ Direito estendido necessário para causar o registro de certificado.
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
-| Localização-exibição-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -104,8 +104,8 @@ Direito estendido necessário para causar o registro de certificado.
 
 | Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
-| Localização-exibição-ID | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 

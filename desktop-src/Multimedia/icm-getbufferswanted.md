@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_GETBUFFERSWANTED (VFW. h)
-description: A \_ mensagem ICM GETBUFFERSWANTED consulta um driver para o número de buffers a serem alocados. Você pode enviar essa mensagem explicitamente ou usando a macro ICGetBuffersWanted.
+description: a \_ mensagem ICM GETBUFFERSWANTED consulta um driver para o número de buffers a serem alocados. Você pode enviar essa mensagem explicitamente ou usando a macro ICGetBuffersWanted.
 ms.assetid: 109e8627-7ed4-4f17-bf7f-e77f42dfc8c7
 keywords:
-- Multimídia do Windows de mensagem ICM_GETBUFFERSWANTED
+- mensagem de ICM_GETBUFFERSWANTED Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06de8cc3bcfe463d0318651c8e2d51b269504769
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4bd5fae6e9f008649366cf922ef117f5b6f7560a7764c4f8d81552a255de48a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495866"
 ---
-# <a name="icm_getbufferswanted-message"></a>\_Mensagem GETBUFFERSWANTED de ICM
+# <a name="icm_getbufferswanted-message"></a>ICM \_ Mensagem GETBUFFERSWANTED
 
-A mensagem **ICM \_ GETBUFFERSWANTED** consulta um driver para o número de buffers a serem alocados. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetBuffersWanted**](/windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted) .
+a mensagem **ICM \_ GETBUFFERSWANTED** consulta um driver para o número de buffers a serem alocados. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetBuffersWanted**](/windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted) .
 
 
 ```C++

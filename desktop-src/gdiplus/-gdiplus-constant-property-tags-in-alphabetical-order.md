@@ -1,19 +1,19 @@
 ---
-description: A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em ordem alfabética.
+description: A tabela a seguir lista as Windows GDI+ de propriedade da imagem em ordem alfabética.
 ms.assetid: c6d196a8-b10f-4e09-bf43-0198d96e5f40
 title: Marcas de propriedade em ordem alfabética
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7179fa936d5e0e934ea1d317c1d14c25c189ed8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73ef09cbc65d1e52dbe466f0d151ecd6a17b7becedc3bc8c80e1b293a775cf43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612506"
 ---
 # <a name="property-tags-in-alphabetical-order"></a>Marcas de propriedade em ordem alfabética
 
-A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em ordem alfabética.
+A tabela a seguir lista as Windows GDI+ de propriedade da imagem em ordem alfabética.
 
 
 
@@ -40,9 +40,9 @@ A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em or
 | [PropertyTagExifCompBPP](-gdiplus-constant-property-item-descriptions.md)                                       | 0x9102 |
 | [PropertyTagExifCompConfig](-gdiplus-constant-property-item-descriptions.md)                                 | 0x9101 |
 | [PropertyTagExifDTDigitized](-gdiplus-constant-property-item-descriptions.md)                               | 0x9004 |
-| [PropertyTagExifDTDigSS](-gdiplus-constant-property-item-descriptions.md)                                       | 0x9292 |
+| [PropertyTagExifdTDigss](-gdiplus-constant-property-item-descriptions.md)                                       | 0x9292 |
 | [PropertyTagExifDTOrig](-gdiplus-constant-property-item-descriptions.md)                                         | 0x9003 |
-| [PropertyTagExifDTOrigSS](-gdiplus-constant-property-item-descriptions.md)                                     | 0x9291 |
+| [PropertyTagExifdTOrigSS](-gdiplus-constant-property-item-descriptions.md)                                     | 0x9291 |
 | [PropertyTagExifDTSubsec](-gdiplus-constant-property-item-descriptions.md)                                     | 0x9290 |
 | [PropertyTagExifExposureBias](-gdiplus-constant-property-item-descriptions.md)                             | 0x9204 |
 | [PropertyTagExifExposureIndex](-gdiplus-constant-property-item-descriptions.md)                           | 0xA215 |
@@ -50,7 +50,7 @@ A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em or
 | [PropertyTagExifExposureTime](-gdiplus-constant-property-item-descriptions.md)                             | 0x829A |
 | [PropertyTagExifFileSource](-gdiplus-constant-property-item-descriptions.md)                                 | 0xA300 |
 | [PropertyTagExifFlash](-gdiplus-constant-property-item-descriptions.md)                                           | 0x9209 |
-| [PropertyTagExifFlashEnergy](-gdiplus-constant-property-item-descriptions.md)                               | 0xA20B |
+| [PropertyTagExifFlashEnash](-gdiplus-constant-property-item-descriptions.md)                               | 0xA20B |
 | [PropertyTagExifFNumber](-gdiplus-constant-property-item-descriptions.md)                                       | 0x829D |
 | [PropertyTagExifFocalLength](-gdiplus-constant-property-item-descriptions.md)                               | 0x920A |
 | [PropertyTagExifFocalResUnit](-gdiplus-constant-property-item-descriptions.md)                             | 0xA210 |
@@ -155,7 +155,7 @@ A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em or
 | [PropertyTagPaletteHistogram](-gdiplus-constant-property-item-descriptions.md)                             | 0x5113 |
 | [PropertyTagPhotometricInterp](-gdiplus-constant-property-item-descriptions.md)                           | 0x0106 |
 | [PropertyTagPixelPerUnitX](-gdiplus-constant-property-item-descriptions.md)                                   | 0x5111 |
-| [PropertyTagPixelPerUnitY](-gdiplus-constant-property-item-descriptions.md)                                   | 0x5112 |
+| [PropertyTagPixelPerUnity](-gdiplus-constant-property-item-descriptions.md)                                   | 0x5112 |
 | [PropertyTagPixelUnit](-gdiplus-constant-property-item-descriptions.md)                                           | 0x5110 |
 | [PropertyTagPlanarConfig](-gdiplus-constant-property-item-descriptions.md)                                     | 0x011C |
 | [PropertyTagPredictor](-gdiplus-constant-property-item-descriptions.md)                                           | 0x013D |
@@ -232,9 +232,9 @@ A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em or
 | [PropertyTagXPosition](-gdiplus-constant-property-item-descriptions.md)                                           | 0x011E |
 | [PropertyTagXResolution](-gdiplus-constant-property-item-descriptions.md)                                       | 0x011A |
 | [PropertyTagYCbCrCoefficients](-gdiplus-constant-property-item-descriptions.md)                           | 0x0211 |
-| [PropertyTagYCbCrPositioning](-gdiplus-constant-property-item-descriptions.md)                             | 0x0213 |
+| [PropertyTagyCbCrPositioning](-gdiplus-constant-property-item-descriptions.md)                             | 0x0213 |
 | [PropertyTagYCbCrSubsampling](-gdiplus-constant-property-item-descriptions.md)                             | 0x0212 |
-| [PropertyTagYPosition](-gdiplus-constant-property-item-descriptions.md)                                           | 0x011F |
+| [PropertyTagyPosition](-gdiplus-constant-property-item-descriptions.md)                                           | 0x011F |
 | [PropertyTagYResolution](-gdiplus-constant-property-item-descriptions.md)                                       | 0x011B |
 
 
@@ -248,16 +248,16 @@ A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em or
 [Constantes de marca de propriedade de imagem](-gdiplus-constant-image-property-tag-constants.md)
 </dt> <dt>
 
-[**Constantes de tipo de marca de propriedade de imagem**](-gdiplus-constant-image-property-tag-type-constants.md)
+[**Constantes de tipo de marca de propriedade image**](-gdiplus-constant-image-property-tag-type-constants.md)
 </dt> <dt>
 
-[Descrições de item de propriedade](-gdiplus-constant-property-item-descriptions.md)
+[Descrições do item de propriedade](-gdiplus-constant-property-item-descriptions.md)
 </dt> <dt>
 
 [Marcas de propriedade em ordem numérica](-gdiplus-constant-property-tags-in-numerical-order.md)
 </dt> <dt>
 
-[Lendo e gravando metadados](-gdiplus-reading-and-writing-metadata-use.md)
+[Lendo e escrevendo metadados](-gdiplus-reading-and-writing-metadata-use.md)
 </dt> </dl>
 
  

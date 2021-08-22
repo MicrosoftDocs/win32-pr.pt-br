@@ -4,8 +4,8 @@ description: A lista de atributos opcionais para uma classe.
 ms.assetid: 474206ca-068a-470d-bc8c-470021106095
 ms.tgt_platform: multiple
 keywords:
-- Esquema de May-Contain do atributo AD
-- Esquema de AD do atributo mayContain
+- May-Contain atributo AD Schema
+- Esquema do AD do atributo mayContain
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 95ff2491f8eeb3d46fd945c411e7b7544f4cf300
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 75a57b2a6a86665255556a2bcc0effa75a3a173adde03d9a4f3c11c1af6af0d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300996"
 ---
 # <a name="may-contain-attribute"></a>May-Contain atributo
 
@@ -30,13 +30,13 @@ A lista de atributos opcionais para uma classe.
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
 | CN                | May-Contain                                                     |
-| LDAP-Display-Name | mayContain                                                      |
+| Ldap-Display-Name | mayContain                                                      |
 | Tamanho              | \-                                                              |
 | Privilégio de atualização  | Administrador de esquema                                            |
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.25                                           |
-| System-ID-GUID    | bf9679bf-0de6-11d0-a285-00aa003049e2                            |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| System-Id-Guid    | bf9679bf-0de6-11d0-a285-00aa003049e2                            |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ A lista de atributos opcionais para uma classe.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ A lista de atributos opcionais para uma classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -80,10 +80,10 @@ A lista de atributos opcionais para uma classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -92,7 +92,7 @@ A lista de atributos opcionais para uma classe.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ A lista de atributos opcionais para uma classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

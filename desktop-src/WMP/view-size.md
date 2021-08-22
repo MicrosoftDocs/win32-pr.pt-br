@@ -3,7 +3,7 @@ title: Exibir. tamanho
 description: O método de tamanho redimensiona a exibição em uma borda especificada.
 ms.assetid: c15a33b2-3618-41a7-bff1-9d48a566ed4f
 keywords:
-- Exibir. dimensionar o Windows Media Player
+- Windows Media Player de exibição. tamanho
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: def9b416dfe5eda052ef430b587fa1c6017b4e5f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e0d9bd583b280f39bee38f0e109e6bb2bba6ce08ec0e7cea4c082b4a6db55739
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615306"
 ---
 # <a name="viewsize"></a>Exibir. tamanho
 

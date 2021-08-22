@@ -4,8 +4,8 @@ description: O número de tentativas de logon inválidas permitidas antes que a 
 ms.assetid: c4dcbbb6-0680-45f3-9b0b-f9c4bbf2b349
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Lockout-Threshold do atributo AD
-- Esquema de AD do atributo lockoutThreshold
+- Lockout-Threshold atributo AD Schema
+- Esquema do AD do atributo lockoutThreshold
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 345977055597c48d70e30a20ce9bfbc9f07f3929
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cbc16d010425c89b24fd77994f215b0baab929a702c42f57e5aa81e6c0046a38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301706"
 ---
 # <a name="lockout-threshold-attribute"></a>Lockout-Threshold atributo
 
@@ -30,12 +30,12 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Lockout-Threshold                    |
-| LDAP-Display-Name | lockoutThreshold                     |
+| Ldap-Display-Name | lockoutThreshold                     |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Administrador de domínio                 |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.73                |
-| System-ID-GUID    | bf9679a6-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679a6-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
@@ -121,7 +121,7 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -142,7 +142,7 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -163,7 +163,7 @@ O número de tentativas de logon inválidas permitidas antes que a conta seja bl
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |

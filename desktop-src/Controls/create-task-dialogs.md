@@ -4,12 +4,12 @@ description: Uma caixa de diálogo de tarefa é criada e mostrada usando a funç
 ms.assetid: CCEFF52F-D501-4145-9799-0A9C529017E1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76ea8e3097454505acccf60c7cba3ef56c637af0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7f6f74f1922330cae1550fda1a9ad6d451221452017f3856ae5e859948019828
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504016"
 ---
 # <a name="how-to-create-task-dialogs"></a>Como criar caixas de diálogo de tarefas
 
@@ -19,12 +19,12 @@ Uma caixa de diálogo de tarefa é criada e mostrada usando a função [**TaskDi
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -43,9 +43,9 @@ A função **TaskDialogIndirect** é mais potente, dando suporte a todos os elem
 [Usando caixas de diálogo de tarefas](using-task-dialogs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

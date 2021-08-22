@@ -4,12 +4,12 @@ ms.assetid: 4359ec30-920a-4b34-8e27-4cf1d9452aa8
 title: Propriedade AudioStreamsAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb68020b30f4349fcbbb464150624d75250a0dbf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 07025a3a3bf54ad98d32c54ee3c147bc36489822ef451965e1e0e0da8fe586c8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586726"
 ---
 # <a name="audiostreamsavailable-property"></a>Propriedade AudioStreamsAvailable
 
@@ -30,9 +30,9 @@ Retorna um valor inteiro de 1 a 8 que representa o número de fluxos de áudio d
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é somente leitura sem valor padrão. O uso principal de vários fluxos de áudio é fornecer as trilhas sonoras do filme em mais de um idioma. Normalmente, nem todos os títulos em um disco têm todos os fluxos de áudio habilitados. Por exemplo, o filme de recursos pode ter trilhas sonoras em três idiomas diferentes, mas os trailers podem ter apenas uma trilha sonora em inglês. Antes que um usuário possa selecionar um fluxo, o aplicativo deve determinar quais fluxos estão disponíveis no título atual. Observe que os fluxos específicos são identificados por um índice de zero a 7.
+Essa propriedade é somente leitura sem valor padrão. O principal uso de vários fluxos de áudio é fornecer filmes de filmes em mais de um idioma. Normalmente, nem todos os títulos em um disco têm todos os fluxos de áudio habilitados. Por exemplo, o filme de recurso pode ter músicas em três idiomas diferentes, mas os trailers podem ter apenas um idioma inglês. Antes que um usuário possa selecionar um fluxo, o aplicativo deve determinar quais fluxos estão disponíveis no título atual. Observe que fluxos específicos são identificados por um índice de zero a 7.
 
-Os discos geralmente apresentam um menu mostrando as trilhas sonoras disponíveis, permitindo que o usuário selecione o fluxo de áudio a ser habilitado.
+Os discos geralmente apresentam um menu mostrando as trilhas disponíveis, permitindo que o usuário selecione o fluxo de áudio a ser habilitado.
 
 ## <a name="see-also"></a>Confira também
 

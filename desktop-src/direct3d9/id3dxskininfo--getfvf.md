@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXSkinInfo:: GetFVF – Obtém o valor de vértice da função fixa.'
+description: Método ID3DXSkinInfo::GetFVF – Obtém o valor de vértice de função fixa.
 ms.assetid: 9b80c4b9-2e5b-4965-99b9-ad6c459ef413
-title: 'Método ID3DXSkinInfo:: GetFVF (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::GetFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3415f86f778fbb6fb3592927277e399584bc49a9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e7419e116cddd20aebfc61d7813ea2bd403ce04b897aa821f03a2ad48eae6965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492286"
 ---
-# <a name="id3dxskininfogetfvf-method"></a>Método ID3DXSkinInfo:: GetFVF
+# <a name="id3dxskininfogetfvf-method"></a>Método ID3DXSkinInfo::GetFVF
 
-Obtém o valor de vértice da função fixa.
+Obtém o valor de vértice de função fixa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,11 +42,11 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Retorna os códigos de formato de vértice flexível (FVF).
+Retorna os códigos FVF (formato de vértice flexível).
 
 ## <a name="remarks"></a>Comentários
 
-Esse método pode retornar 0 se o formato de vértice não puder ser mapeado diretamente para um código FVF. Isso ocorrerá para uma malha criada a partir de uma declaração de vértice que não tenha a mesma ordem e elementos suportados pelos códigos FVF.
+Esse método poderá retornar 0 se o formato de vértice não puder ser mapeado diretamente para um código FVF. Isso ocorrerá para uma malha criada de uma declaração de vértice que não tem a mesma ordem e elementos com suporte pelos códigos FVF.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,12 +54,12 @@ Esse método pode retornar 0 se o formato de vértice não puder ser mapeado dir
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

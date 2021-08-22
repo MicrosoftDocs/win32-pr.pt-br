@@ -4,12 +4,12 @@ description: Float16 de componente para conversão de float32. | f16tof32 (SM5-A
 ms.assetid: CFAA1350-DA7F-4105-A90A-72052C5E2FB3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d53af1f2eab1f50dfded820bf27b2cda8f23e6b4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0cc4456737d5ddaaed351ae2a1cc76418c33af9c498e725099e1912d8fabe7ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562647"
 ---
 # <a name="f16tof32-sm5---asm"></a>f16tof32 (SM5-ASM)
 
@@ -47,7 +47,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

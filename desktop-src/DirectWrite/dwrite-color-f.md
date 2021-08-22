@@ -6,12 +6,12 @@ keywords:
 - DWRITE_COLOR_F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ccb62b26bc0b11639e82833d923668cf9a2ed38
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ad82caae100e4d7ee9e91765e05d719abf5797b05fb0b0631ab7ca1cf1b8efa9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290726"
 ---
 # <a name="dwrite_color_f"></a>DWRITE \_ cor \_ F
 
@@ -34,10 +34,10 @@ Para obter mais informações, consulte [**D3DCOLORVALUE**](../direct3d9/d3dcolo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\]<br/> |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>Dwrite \_ 2. h</dt> </dl>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Dwrite \_ 2. h</dt> </dl>                                                   |
 
 
 

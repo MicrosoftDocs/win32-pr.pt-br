@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f193d0a918dea09e5ca8fa65f20c1bd4a49084d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2c41d010dd5ed3a770516a22e1e2c20df6a54cfa7e33413e1e5e69cf90da9399
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103837845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490926"
 ---
 # <a name="gltexcoord3sv-function"></a>função glTexCoord3sv
 
@@ -40,7 +40,7 @@ void WINAPI glTexCoord3sv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de três elementos que, por sua vez, especifica as coordenadas de textura s, t e r.

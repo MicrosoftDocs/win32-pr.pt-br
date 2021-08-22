@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87dc1912937e9726209e2871e7b365e9f37cfe14
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c3dcfe6833c7ff7e2a5a11425a3ada7deac006ec93224673a6a496b22680d297
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532646"
 ---
 # <a name="change-pdc-extended-right"></a>Change-PDC estendido à direita
 

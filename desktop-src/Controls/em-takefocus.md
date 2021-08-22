@@ -3,7 +3,7 @@ title: Mensagem de EM_TAKEFOCUS (commctrl. h)
 description: Força um controle de edição de linha única a receber o foco do teclado. Você pode enviar essa mensagem explicitamente ou usando a macro Edit \_ TakeFocus.
 ms.assetid: 27470857-4219-4426-bc69-e1271afc6ffb
 keywords:
-- Controles de EM_TAKEFOCUS de mensagens do Windows
+- controles de Windows de mensagem de EM_TAKEFOCUS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e4abdf926cdd337760b5cf151c3f8ee08cb418b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8283f2f9ea033439ef9ad7ec0ce40b08bb6396db8f5ebc7a9b1d513f29c209a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437136"
 ---
 # <a name="em_takefocus-message"></a>\_Mensagem em TAKEFOCUS
 
@@ -45,7 +45,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -65,8 +65,8 @@ Se o controle de edição tiver recebido anteriormente uma mensagem em [**\_ nos
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

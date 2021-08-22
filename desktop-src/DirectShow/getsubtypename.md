@@ -1,7 +1,7 @@
 ---
-description: A função GetSubtypeName recupera o nome legível por humanos de um subtipo de vídeo.
+description: A função GetSubtypeName recupera o nome acessível por humanos de um subtipo de vídeo.
 ms.assetid: 493b434e-2d36-4897-a5b2-7be0eb0a560f
-title: Função GetSubtypeName (Wxutil. h)
+title: Função GetSubtypeName (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f5cae835a3a7f1b5510d85ecf3f2ae9d15251a45
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c676f3e08f55bd010e761853b777e0eb4b28933536ab7af09bd94e457032b583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564844"
 ---
 # <a name="getsubtypename-function"></a>Função GetSubtypeName
 
-A `GetSubtypeName` função recupera o nome legível por humanos de um subtipo de vídeo.
+A `GetSubtypeName` função recupera o nome acessível por humanos de um subtipo de vídeo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,11 +45,11 @@ TCHAR* GetSubtypeName(
 *pSubtype* 
 </dt> <dd>
 
-Ponteiro para um **GUID** de subtipo de vídeo.
+Ponteiro para um GUID de subtipo **de vídeo.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna uma cadeia de caracteres que contém o nome.
 
@@ -59,8 +59,8 @@ Retorna uma cadeia de caracteres que contém o nome.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

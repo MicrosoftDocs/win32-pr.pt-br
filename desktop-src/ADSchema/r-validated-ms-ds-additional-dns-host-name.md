@@ -1,10 +1,10 @@
 ---
-title: Validações-MS-DS-Additional-DNS-Host-Name valided writes
-description: Gravação validada no nome de host DNS adicional do MS DS.
+title: Gravações validadas validadas-MS-DS-Additional-DNS-Host-Name
+description: Gravação validada no Nome do Host DNS Adicional do MS DS.
 ms.assetid: cbd09a3c-d1dc-4db4-b586-53d8a43d3588
 ms.tgt_platform: multiple
 keywords:
-- Validado-MS-DS-Additional-DNS-Host-Name validado gravar esquema do AD
+- Validated-MS-DS-Additional-DNS-Host-Name validado grava o esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d7333a7e740121a1591bd9721064745d6c1096
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ff58a2b11b26e43cf8e0d123461d5725fd5c53c038dc7a5d147754ceea76526
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530876"
 ---
-# <a name="validated-ms-ds-additional-dns-host-name-validated-writes"></a>Validações-MS-DS-Additional-DNS-Host-Name valided writes
+# <a name="validated-ms-ds-additional-dns-host-name-validated-writes"></a>Gravações validadas validadas-MS-DS-Additional-DNS-Host-Name
 
-Gravação validada no nome de host DNS adicional do MS DS.
+Gravação validada no Nome do Host DNS Adicional do MS DS.
 
 
 
 | Entrada | Valor |
 |--------------|---------------------------------------------------|
-| CN           | Validado-MS-DS-adicional-DNS-Host-Name          |
-| Display-Name | Gravação validada no nome de host DNS adicional do MS DS |
-| GUID de direitos  | 80863791-dbe9-4eb8-837E-7f0ab55d9ac7              |
+| CN           | Validated-MS-DS-Additional-DNS-Host-Name          |
+| Display-Name | Gravação validada no nome do host DNS adicional do MS DS |
+| RIGHTS-GUID  | 80863791-dbe9-4eb8-837e-7f0ab55d9ac7              |
 
 
 
@@ -45,7 +45,7 @@ Gravação validada no nome de host DNS adicional do MS DS.
 | Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computador**](c-computer.md)<br/> |
-| Localização-exibição-ID | 82                                        |
+| Localization-Display-ID | 82                                        |
 
 
 

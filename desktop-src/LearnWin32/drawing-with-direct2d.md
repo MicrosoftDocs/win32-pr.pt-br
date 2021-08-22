@@ -4,12 +4,12 @@ description: Depois de criar seus recursos gráficos, você estará pronto para 
 ms.assetid: a73f7043-dffc-4688-adfc-16ed9a9e12d2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40f8f3cf82d3ce6f485a7c54700c32c9eb65d054
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a2d8a346300b32fe1c716e51efe6bfb8fdbf6220fb2ff17df6de617de27ba1a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535067"
 ---
 # <a name="drawing-with-direct2d"></a>Desenhar com Direct2D
 
@@ -77,13 +77,13 @@ A interface [**ID2D1RenderTarget**](/windows/desktop/api/d2d1/nn-d2d1-id2d1rende
 3.  O método [**ID2D1RenderTarget:: FillEllipse**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillellipse(constd2d1_ellipse__id2d1brush)) desenha uma elipse preenchida, usando o pincel especificado para o preenchimento. Uma elipse é especificada por um ponto central e o raios x e y. Se o raios x e y forem os mesmos, o resultado será um círculo.
 4.  O método [**ID2D1RenderTarget:: EndDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) sinaliza a conclusão do desenho para este quadro. Todas as operações de desenho devem ser colocadas entre as chamadas para [**BeginDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw) e **EndDraw**.
 
-Todos os métodos [**BeginDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw), [**Clear**](/windows/desktop/Direct2D/id2d1rendertarget-clear)e [**FillEllipse**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillellipse(constd2d1_ellipse__id2d1brush)) têm um tipo de retorno **void** . Se ocorrer um erro durante a execução de qualquer um desses métodos, o erro será sinalizado pelo valor de retorno do método [**EndDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) . O `CreateGraphicsResources` método é mostrado no tópico [criando recursos Direct2D](render-targets--devices--and-resources.md). Esse método cria o destino de renderização e o pincel de cor sólida.
+Todos os métodos [**BeginDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-begindraw), [**Clear**](/windows/desktop/Direct2D/id2d1rendertarget-clear)e [**FillEllipse**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillellipse(constd2d1_ellipse__id2d1brush)) têm um tipo de retorno **void** . Se ocorrer um erro durante a execução de qualquer um desses métodos, o erro será sinalizado pelo valor de retorno do método [**EndDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) . o `CreateGraphicsResources` método é mostrado no tópico [criando Direct2D recursos](render-targets--devices--and-resources.md). Esse método cria o destino de renderização e o pincel de cor sólida.
 
 O dispositivo pode armazenar em buffer os comandos de desenho e adiar sua execução até que o [**EndDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) seja chamado. Você pode forçar o dispositivo a executar qualquer comando de desenho pendente chamando [**ID2D1RenderTarget:: flush**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-flush). No entanto, a liberação pode reduzir o desempenho.
 
 ## <a name="handling-device-loss"></a>Lidando com a perda de dispositivo
 
-Enquanto o programa está em execução, o dispositivo de gráficos que você está usando pode se tornar indisponível. Por exemplo, o dispositivo poderá ser perdido se a resolução de vídeo for alterada ou se o usuário remover o adaptador de vídeo. Se o dispositivo for perdido, o destino de renderização também se tornará inválido, juntamente com todos os recursos dependentes do dispositivo que foram associados ao dispositivo. Direct2D sinaliza um dispositivo perdido retornando o código de erro **D2DERR \_ recriar \_ destino** do método [**EndDraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) . Se você receber esse código de erro, deverá recriar o destino de renderização e todos os recursos dependentes do dispositivo.
+Enquanto o programa está em execução, o dispositivo de gráficos que você está usando pode se tornar indisponível. Por exemplo, o dispositivo poderá ser perdido se a resolução de vídeo for alterada ou se o usuário remover o adaptador de vídeo. Se o dispositivo for perdido, o destino de renderização também se tornará inválido, juntamente com todos os recursos dependentes do dispositivo que foram associados ao dispositivo. Direct2D sinaliza um dispositivo perdido retornando o código de erro **D2DERR \_ recriar \_ destino** do método [**enddraw**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) . Se você receber esse código de erro, deverá recriar o destino de renderização e todos os recursos dependentes do dispositivo.
 
 Para descartar um recurso, basta liberar a interface para esse recurso.
 
@@ -100,7 +100,7 @@ void MainWindow::DiscardGraphicsResources()
 
 A criação de um recurso pode ser uma operação cara, portanto, não recrie seus recursos para todas as mensagens do [**WM \_ Paint**](/windows/desktop/gdi/wm-paint) . Crie um recurso uma vez e armazene o ponteiro do recurso em cache até que o recurso se torne inválido devido à perda do dispositivo ou até que você não precise mais desse recurso.
 
-## <a name="the-direct2d-render-loop"></a>O loop de renderização Direct2D
+## <a name="the-direct2d-render-loop"></a>o Loop de renderização de Direct2D
 
 Independentemente do que você desenhar, o programa deve executar um loop semelhante ao seguinte.
 
@@ -121,6 +121,6 @@ O loop mostrado aqui lida com a perda do dispositivo descartando os recursos dep
 
 [DPI e Device-Independent pixels](dpi-and-device-independent-pixels.md)
 
- 
+ 
 
- 
+ 

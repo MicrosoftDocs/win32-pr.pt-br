@@ -1,21 +1,21 @@
 ---
 description: O exemplo a seguir demonstra como preencher a tabela MsiDigitalCertificate e a tabela MsiDigitalSignature usando uma sub-rotina Visual Basic for Applications (VBA).
 ms.assetid: 3a23a721-0672-4eac-bdf2-434282b92590
-title: Criando uma instalação assinada totalmente verificada usando a automação
+title: Como autor de uma instalação assinada totalmente verificada usando a automação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e99267feffac71401f36635c08fa7f9f6598a0c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e27f1b0b90296ad92e471449213e86721482a545ff1932458b2ad6b21d47b665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119559096"
 ---
-# <a name="authoring-a-fully-verified-signed-installation-using-automation"></a>Criando uma instalação assinada totalmente verificada usando a automação
+# <a name="authoring-a-fully-verified-signed-installation-using-automation"></a>Como autor de uma instalação assinada totalmente verificada usando a automação
 
-O exemplo a seguir demonstra como preencher a [tabela MsiDigitalCertificate](msidigitalcertificate-table.md) e a [tabela MsiDigitalSignature](msidigitalsignature-table.md) usando uma sub-rotina Visual Basic for Applications (VBA). Para obter mais informações sobre como proteger Windows Installer pacotes, consulte [diretrizes para a criação de instalações seguras](guidelines-for-authoring-secure-installations.md).
+O exemplo a seguir demonstra como popular a tabela [MsiDigitalCertificate](msidigitalcertificate-table.md) e a tabela [MsiDigitalSignature](msidigitalsignature-table.md) usando uma sub-rotina Visual Basic for Applications (VBA). Para obter mais informações sobre como proteger Windows do Instalador, consulte [Diretrizes para a autorização de instalações seguras.](guidelines-for-authoring-secure-installations.md)
 
-O [**método FileSignatureInfo**](installer-filesignatureinfo.md) retorna um SafeArray de bytes. Para obter mais informações, consulte o [**tipo de dados SafeArray**](/windows/win32/api/oaidl/ns-oaidl-safearray). Os dados dessa matriz devem ser convertidos em Unicode porque Visual Basic não tem uma maneira de gravar bytes diretamente em um arquivo. O [**método SetStream**](record-setstream.md) pode usar o arquivo de dados convertidos para gravar dados de fluxo em um campo de registro especificado de um [**objeto de registro**](record-object.md). Observe que a conversão dos dados de byte em Unicode pode potencialmente alterar os dados e que os dados convertidos devem corresponder aos dados originais para a verificação de assinatura correta. O autor do pacote deve garantir que a correspondência de dados original e convertida.
+O [**método FileSignatureInfo**](installer-filesignatureinfo.md) retorna um SAFEARRAY de bytes. Para obter mais informações, consulte [**SafeARRAY Data Type**](/windows/win32/api/oaidl/ns-oaidl-safearray). Os dados dessa matriz devem ser convertidos em Unicode porque Visual Basic não tem uma maneira de gravar bytes diretamente em um arquivo. O [**método SetStream pode**](record-setstream.md) usar o arquivo de dados convertidos para gravar dados de fluxo em um campo de registro especificado de um objeto [**Record**](record-object.md). Observe que a conversão dos dados de byte em Unicode pode potencialmente alterar os dados e que os dados convertidos devem corresponder aos dados originais para verificação de assinatura correta. O autor do pacote deve garantir que os dados originais e convertidos corresponderem.
 
 
 ```VB

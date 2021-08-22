@@ -4,12 +4,12 @@ ms.assetid: 948ce3d3-e463-40de-8b5f-21ef18b1a0ce
 title: Atributos de controle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d026e84dadefa67ce9d6e00146c6e1c2017cb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb9d7412ce3893b785dccf067287c191f033bdf5a100628577260ff10f74ce1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500716"
 ---
 # <a name="control-attributes"></a>Atributos de controle
 
@@ -30,7 +30,7 @@ Os valores iniciais de alguns atributos de controle podem ser definidos com bits
 | Atributo                                          | Decimal | Hexadecimal | Constante                               |
 |----------------------------------------------------|---------|-------------|----------------------------------------|
 | [BiDi](bidi-control-attribute.md)                 | 224     | 0x000000E0  | **msidbControlAttributesBiDi**         |
-| [Enabled](enabled-control-attribute.md)           | 2       | 0x00000002  | **msidbControlAttributesEnabled**      |
+| [Habilitada](enabled-control-attribute.md)           | 2       | 0x00000002  | **msidbControlAttributesEnabled**      |
 | [Indireto.](indirect-control-attribute.md)         | 8       | 0x00000008  | **msidbControlAttributesIndirect**     |
 | [Controle de inteiro](integer-control-attribute.md)   | 16      | 0x00000010  | **msidbControlAttributesInteger**      |
 | [LeftScroll](leftscroll-control-attribute.md)     | 128     | 0x00000080  | **msidbControlAttributesLeftScroll**   |
@@ -168,9 +168,9 @@ Esse atributo do controle VolumeCostList é definido com um bit.
 
  
 
-Os atributos de controle a seguir não estão definidos com bits. Esses atributos são criados nas tabelas de interface do usuário ou são definidos usando [eventos de controle](control-events.md).
+Os atributos de controle a seguir não são definidos com bits. Esses atributos são criado nas tabelas de interface do usuário ou são definidos usando [Eventos de Controle](control-events.md).
 
-[Muralname](billboardname-control-attribute.md)
+[NomedoMál](billboardname-control-attribute.md)
 
  
 
@@ -200,7 +200,7 @@ Os atributos de controle a seguir não estão definidos com bits. Esses atributo
 
 [TimeRemaining](timeremaining-control-attribute.md)
 
-Consulte [adicionando controles e texto](adding-controls-and-text.md).
+Consulte [Adicionando controles e texto.](adding-controls-and-text.md)
 
  
 

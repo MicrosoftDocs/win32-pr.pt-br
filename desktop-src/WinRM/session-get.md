@@ -4,9 +4,9 @@ description: Recupera o recurso especificado pelo URI e retorna uma representaç
 ms.assetid: 873242fd-9da3-42f4-a18e-258fedba77ec
 ms.tgt_platform: multiple
 keywords:
-- Método Get Gerenciamento Remoto do Windows
-- Método Get Gerenciamento Remoto do Windows, objeto Session
-- Objeto de sessão Gerenciamento Remoto do Windows, método Get
+- método Get Gerenciamento Remoto do Windows
+- método Get Gerenciamento Remoto do Windows, objeto Session
+- objeto de sessão Gerenciamento Remoto do Windows, método Get
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e4ee84cc711db312389151d1dd95fb890474dcd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9c983c5f95ddfa3acc88b85b383ec85ddf85f885293031fe9bc4e4e07c90850a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642556"
 ---
 # <a name="sessionget-method"></a>Método Session. Get
 
@@ -51,7 +51,7 @@ O identificador do recurso a ser recuperado.
 
 Esse parâmetro pode conter um dos seguintes:
 
--   Um URI com ou sem [*seletores*](windows-remote-management-glossary.md). Ao chamar o método **Get** com um seletor para obter um recurso WMI, use a propriedade de chave ou as propriedades do objeto. Por exemplo, no exemplo de código a seguir Visual Basic Scripting Edition (VBScript), a chave é especificada por `Win32_Service?Name=winmgmt` . Para classes singleton, como [**Win32 \_ localtime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime), você não pode usar um seletor.
+-   Um URI com ou sem [*seletores*](windows-remote-management-glossary.md). Ao chamar o método **Get** com um seletor para obter um recurso WMI, use a propriedade de chave ou as propriedades do objeto. por exemplo, no exemplo de código a seguir Visual Basic scripting Edition (VBScript), a chave é especificada por `Win32_Service?Name=winmgmt` . Para classes singleton, como [**Win32 \_ localtime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime), você não pode usar um seletor.
 
     ```VB
     strResourceUri = "http://schemas.microsoft.com/" _ 
@@ -75,7 +75,7 @@ Reservado. Deve ser definido como 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma representação XML do recurso.
 
@@ -187,7 +187,7 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -198,7 +198,7 @@ End Sub
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

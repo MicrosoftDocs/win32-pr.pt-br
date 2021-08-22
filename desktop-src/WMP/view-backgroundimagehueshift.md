@@ -3,7 +3,7 @@ title: Exibir. backgroundImageHueShift
 description: O atributo backgroundImageHueShift especifica ou recupera a quantidade pela qual o matiz da imagem de plano de fundo é deslocado.
 ms.assetid: 13cedc87-f43a-4d33-9339-f317ea7b8d3b
 keywords:
-- Exibir. backgroundImageHueShift Windows Media Player
+- VIEW. backgroundImageHueShift Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72dcbf1dcb06939ab74398c39bb89bc512dbb47b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f9cb69321fe3ac2456c71024270ddf508ff6eac0a76b336cc3115f4882b3d35a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506886"
 ---
 # <a name="viewbackgroundimagehueshift"></a>Exibir. backgroundImageHueShift
 

@@ -4,12 +4,12 @@ ms.assetid: 689dbda1-0692-411d-9727-2fdf1df960ec
 title: Modo de endereço de textura de cor da borda (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b42b18d88f3b9305d0602e43a9528357a9397d6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 19e0685359227f80a847174157117e90116cffe8e61a48e172451a83aa8ec5fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496307"
 ---
 # <a name="border-color-texture-address-mode-direct3d-9"></a>Modo de endereço de textura de cor da borda (Direct3D 9)
 

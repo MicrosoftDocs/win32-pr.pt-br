@@ -3,7 +3,7 @@ title: Exibir. OnTimer
 description: O evento OnTimer manipula eventos de temporizador.
 ms.assetid: 038bd483-9029-4de6-b40e-de3e615a4c04
 keywords:
-- Exibir. OnTimer Windows Media Player
+- EXIBIR Windows Media Player. OnTimer
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 91c93919c152bfa2f42b872ac5aa624f42de2b11
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c6355f94775a22fca9ff309b0207e2b3e5256cd060327a23f34f75099e50f862
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615426"
 ---
 # <a name="viewontimer"></a>Exibir. OnTimer
 
