@@ -1,17 +1,17 @@
 ---
 description: Você pode usar o buffer de estêncil para efeitos mais abstratos, como contornos e silhuetas.
 ms.assetid: 8b9cd2b3-c1bf-4ac9-aae5-7fc0c9e049ff
-title: Contornos e silhuetas (Direct3D 9)
+title: Contornos e silhouettes (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46a282b650b96cdbb36dc252e1f31cb81d91f0bb
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 45b5fcf26b3f3cbbe6e051e1a7d8517cc6d69044beb6eaed7f54baef3509a748
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119563406"
 ---
-# <a name="outlines-and-silhouettes-direct3d-9"></a>Contornos e silhuetas (Direct3D 9)
+# <a name="outlines-and-silhouettes-direct3d-9"></a>Contornos e silhouettes (Direct3D 9)
 
 Você pode usar o buffer de estêncil para efeitos mais abstratos, como contornos e silhuetas.
 

@@ -1,10 +1,10 @@
 ---
-title: msmq-Peek estendido à direita
-description: Permite espiar mensagens na fila.
+title: MSMQ-inspeção estendida à direita
+description: Permite exibir mensagens na fila.
 ms.assetid: bcf23dbe-79bf-441d-a795-f1a57451bba3
 ms.tgt_platform: multiple
 keywords:
-- Esquema estendido do AD msmq-Peek
+- MSMQ-inspecionar esquema do AD estendido à direita
 topic_type:
 - apiref
 api_name:
@@ -20,17 +20,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119081150"
 ---
-# <a name="msmq-peek-extended-right"></a>msmq-Peek estendido à direita
+# <a name="msmq-peek-extended-right"></a>MSMQ-inspeção estendida à direita
 
-Permite espiar mensagens na fila.
+Permite exibir mensagens na fila.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | msmq-Peek                            |
+| CN           | MSMQ-Peek                            |
 | Display-Name | Espiar mensagem                         |
-| RIGHTS-GUID  | 06bd3201-df3e-11d1-9c86-006008764d0e |
+| GUID de direitos  | 06bd3201-df3e-11d1-9c86-006008764d0e |
 
 
 
@@ -50,7 +50,7 @@ Permite espiar mensagens na fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-Display-ID | 43                                           |
+| Localização-exibição-ID | 43                                           |
 
 
 
@@ -61,7 +61,7 @@ Permite espiar mensagens na fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-Display-ID | 43                                           |
+| Localização-exibição-ID | 43                                           |
 
 
 
@@ -72,7 +72,7 @@ Permite espiar mensagens na fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-Display-ID | 43                                           |
+| Localização-exibição-ID | 43                                           |
 
 
 
@@ -83,7 +83,7 @@ Permite espiar mensagens na fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-Display-ID | 43                                           |
+| Localização-exibição-ID | 43                                           |
 
 
 
@@ -94,7 +94,7 @@ Permite espiar mensagens na fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-Display-ID | 43                                           |
+| Localização-exibição-ID | 43                                           |
 
 
 
@@ -105,7 +105,7 @@ Permite espiar mensagens na fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localization-Display-ID | 43                                           |
+| Localização-exibição-ID | 43                                           |
 
 
 

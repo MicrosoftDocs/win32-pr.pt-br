@@ -1,11 +1,11 @@
 ---
-title: Propriedade IWMPControls currentPosition
-description: A propriedade currentPosition Obtém ou define a posição atual no item de mídia em segundos desde o início.
+title: Propriedade currentPosition de IWMPControls
+description: A propriedade currentPosition obtém ou define a posição atual no item de mídia em segundos desde o início.
 ms.assetid: 48f5241e-7528-485e-bf47-d655ba842af2
 keywords:
-- Windows Media Player da propriedade currentPosition
-- propriedade currentPosition Windows Media Player, interface IWMPControls
-- Windows Media Player de interface IWMPControls, propriedade currentPosition
+- propriedade currentPosition Windows Media Player
+- propriedade currentPosition Windows Media Player , interface IWMPControls
+- Interface IWMPControls Windows Media Player , propriedade currentPosition
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119053663"
 ---
-# <a name="iwmpcontrolscurrentposition-property"></a>Propriedade IWMPControls:: currentPosition
+# <a name="iwmpcontrolscurrentposition-property"></a>Propriedade IWMPControls::currentPosition
 
-A propriedade **CurrentPosition** Obtém ou define a posição atual no item de mídia em segundos desde o início.
+A **propriedade currentPosition** obtém ou define a posição atual no item de mídia em segundos desde o início.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,11 +46,11 @@ Public Property currentPosition As System.Double
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **sistema. Double** que é a posição atual.
+Um **System.Double** que é a posição atual.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **CurrentPosition** para buscar uma posição fornecida pelo usuário. Em resposta a um clique de botão, **CurrentPosition** é definido como o valor inserido em uma caixa de texto chamada NewPosition. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir **usa currentPosition** para buscar uma posição fornecida pelo usuário. Em resposta a um clique de botão, **currentPosition** é definido como o valor inserido em uma caixa de texto chamada newPosition. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -86,7 +86,7 @@ End Sub
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -99,7 +99,7 @@ End Sub
 [**Interface IWMPControls (VB e C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls. currentPositionString (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentpositionstring--vb-and-c.md)
+[**IWMPControls.currentPositionString (VB e C#)**](wmplibiwmpcontrols-iwmpcontrols-currentpositionstring--vb-and-c.md)
 </dt> </dl>
 
  

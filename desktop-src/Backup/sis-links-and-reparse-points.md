@@ -8,12 +8,12 @@ keywords:
 - Backup de repositório de instância única (SIS), pontos de nova análise
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4987e7c64a83e7d0b02ed91899a182616be7943
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 00f89901df6ce1fea1635d4250f2884ec9baf68fb1552766564909486c8ed00a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588856"
 ---
 # <a name="sis-links-and-reparse-points"></a>Links do SIS e pontos de nova análise
 
@@ -29,6 +29,6 @@ Ao restaurar um link do SIS, o aplicativo de restauração deve executar as segu
 
 A única sobrecarga adicional necessária para backups assistidos por SIS é que seu aplicativo de backup deve fazer backup do link do SIS e dos dados associados aos arquivos de backup. Todas as operações de backup e restauração do SIS são locais para um volume específico.
 
- 
+ 
 
- 
+ 

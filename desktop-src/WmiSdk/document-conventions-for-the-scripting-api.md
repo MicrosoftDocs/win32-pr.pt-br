@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 33335982672472fa9924a6e250305a3630628b21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b595a1886d339fbe30afa3c87d08c26882eb72868841c1a7c6120f374f08c2e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374596"
 ---
 # <a name="document-conventions-for-the-scripting-api"></a>Convenções de documento para a API de script
 

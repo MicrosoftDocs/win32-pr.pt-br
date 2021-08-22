@@ -3,7 +3,7 @@ title: Mensagem de TTM_SETTIPTEXTCOLOR (commctrl. h)
 description: Define a cor do texto em uma janela de dica de ferramenta.
 ms.assetid: a6c6eb31-e6c4-47e2-b112-48e7cd21b778
 keywords:
-- Controles de TTM_SETTIPTEXTCOLOR de mensagens do Windows
+- controles de Windows de mensagem de TTM_SETTIPTEXTCOLOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fb4ead5374015c014a105056b63077779272535
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a593be5bc9bb3ba8d04b1a657785afb86824119fa8bbd5e027003f296230e99e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642506"
 ---
 # <a name="ttm_settiptextcolor-message"></a>\_Mensagem TTM SETTIPTEXTCOLOR
 
@@ -39,7 +39,7 @@ Nova cor do texto.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor retornado para esta mensagem não é usado.
 
@@ -53,9 +53,9 @@ Quando os estilos visuais são habilitados, essa mensagem não tem nenhum efeito
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

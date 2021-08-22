@@ -65,7 +65,7 @@ O provedor de eventos indica que o WMI verifica a propriedade do **\_ descritor 
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                                                                         |
-| parâmetro<br/>                   | <dl> <dt>Wbemcli. h; </dt> <dt>Wbemprov. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemcli. h; </dt> <dt>Wbemprov. h</dt> </dl> |
 
 
 

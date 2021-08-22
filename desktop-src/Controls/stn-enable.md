@@ -1,9 +1,9 @@
 ---
-title: Código de notificação STN_ENABLE (WinUser. h)
-description: O \_ código de notificação STN Enable é enviado quando um controle estático é habilitado.
+title: STN_ENABLE de notificação (Winuser.h)
+description: O código de \_ notificação STN ENABLE é enviado quando um controle estático está habilitado.
 ms.assetid: daac2ed3-c7cd-46f8-abfa-78754b277ef4
 keywords:
-- STN_ENABLE de código de notificação controles do Windows
+- STN_ENABLE código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc9cc21e884a8a7e907054daa48a21678efa65e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c1ffea3e3bf4deda67a0ea950ded7e4f16718ace502d16922e50d3750d90bc8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642536"
 ---
-# <a name="stn_enable-notification-code"></a>STN \_ habilitar código de notificação
+# <a name="stn_enable-notification-code"></a>Código de \_ notificação STN ENABLE
 
-O \_ código de notificação STN Enable é enviado quando um controle estático é habilitado. O controle estático deve ter o [**estilo \_ de notificação SS**](static-control-styles.md) para receber esse código de notificação. A janela pai do controle recebe esse código de notificação por meio da mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+O código de \_ notificação STN ENABLE é enviado quando um controle estático está habilitado. O controle estático deve ter o estilo [**NOTIFY do SS \_**](static-control-styles.md) para receber esse código de notificação. A janela pai do controle recebe esse código de notificação por meio da [**mensagem WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -49,7 +49,7 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Identificador para o controle estático.
+Lidar com o controle estático.
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Identificador para o controle estático.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Identificador para o controle estático.
 **Referência**
 </dt> <dt>
 
-[STN \_ desabilitar](stn-disable.md)
+[STN \_ DISABLE](stn-disable.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Controles estáticos](static-controls.md)
@@ -84,13 +84,13 @@ Identificador para o controle estático.
 **Outros recursos**
 </dt> <dt>
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
+[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando do WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

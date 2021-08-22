@@ -1,7 +1,7 @@
 ---
-description: 'O método Aconselhetime cria uma solicitação de aviso de uma amostra. Esse método implementa o método IReferenceClock:: Aconselhetime.'
+description: O método AdviseTime cria uma solicitação de consultoria única. Esse método implementa o método IReferenceClock::AdviseTime.
 ms.assetid: 4849a04d-35f2-4a24-bf5d-f20e541f5e99
-title: Método CBaseReferenceClock. AdviseTime (Refclock. h)
+title: Método CBaseReferenceClock.AdviseTime (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 326fc5e0939803ab66e0466fbf32351387977019
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e50b864a63cdd021d82c0a2a73f4f9c3acb68d1afb1f6a2dcd8d8d575966a5fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502786"
 ---
-# <a name="cbasereferenceclockadvisetime-method"></a>Método CBaseReferenceClock. AdviseTime
+# <a name="cbasereferenceclockadvisetime-method"></a>Método CBaseReferenceClock.AdviseTime
 
-O `AdviseTime` método cria uma solicitação de aviso de uma imagem. Esse método implementa o método [**IReferenceClock:: aconselhetime**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime) .
+O `AdviseTime` método cria uma solicitação de consultoria única. Esse método implementa o [**método IReferenceClock::AdviseTime.**](/windows/desktop/api/Strmif/nf-strmif-ireferenceclock-advisetime)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,43 +48,43 @@ HRESULT AdviseTime(
 *baseTime* 
 </dt> <dd>
 
-Tempo de referência base, em unidades de 100 a nanossegundos.
+Tempo de referência base, em unidades de 100 nanossegundos.
 
 </dd> <dt>
 
-*fluxo de transmissão* 
+*streamTime* 
 </dt> <dd>
 
-Tempo de deslocamento de fluxo, em unidades de 100 a nanossegundos.
+Tempo de deslocamento de fluxo, em unidades de 100 nanossegundos.
 
 </dd> <dt>
 
-*hEvent* 
+*Hevent* 
 </dt> <dd>
 
-Identificador para um evento, criado pelo chamador.
+Manipular para um evento, criado pelo chamador.
 
 </dd> <dt>
 
 *pdwAdviseToken* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um identificador para a solicitação de aviso.
+Ponteiro para uma variável que recebe um identificador para a solicitação de consultoria.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                   | Descrição                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito<br/>                   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Valores de tempo inválidos<br/>       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Falha<br/>                   |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo**<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | **Argumento de** ponteiro NULL<br/> |
 
 
 
@@ -92,9 +92,9 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método cria uma solicitação de aviso de uma imagem para o tempo de referência de *baseTime*  +  *streamtime*. A soma deve ser maior que zero e menor que \_ o tempo máximo, ou o método retorna E \_ INVALIDARG. Na hora solicitada, o relógio sinaliza o evento especificado no parâmetro *hEvent* .
+Esse método cria uma solicitação de consultoria única para a hora de referência *baseTime*  +  *streamTime*. A soma deve ser maior que zero e menor que MAX \_ TIME ou o método retorna E \_ INVALIDARG. No momento solicitado, o relógio sinaliza o evento especificado no *parâmetro hEvent.*
 
-Para cancelar a notificação antes da hora ser atingida, chame o método [**CBaseReferenceClock:: Unadvise**](cbasereferenceclock-unadvise.md) e passe o valor de *pdwAdviseToken* retornado dessa chamada. Depois que a notificação tiver ocorrido, o relógio a limpará automaticamente, portanto, não é necessário chamar **Unadvise**. No entanto, não é um erro fazer isso.
+Para cancelar a notificação antes que a hora seja atingida, chame o método [**CBaseReferenceClock::Unadvise**](cbasereferenceclock-unadvise.md) e passe o *valor pdwAdviseToken* retornado dessa chamada. Depois que a notificação ocorreu, o relógio a limpa automaticamente, portanto, não é necessário **chamar Unadvise**. No entanto, não é um erro fazer isso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Para cancelar a notificação antes da hora ser atingida, chame o método [**CBa
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Refclock. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Refclock.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

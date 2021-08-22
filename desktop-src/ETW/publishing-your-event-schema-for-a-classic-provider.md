@@ -4,12 +4,12 @@ ms.assetid: eb3d8422-2352-47cf-9825-cba9916791a9
 title: Publicando seu esquema de evento para um provedor clássico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21f51cfd30d0c9d73841ca906fb81e9d544dec88
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6607e2e9b940df5afd6e8070e9235fe40566ef2b6d2b31b3c14656756835bab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069816"
 ---
 # <a name="publishing-your-event-schema-for-a-classic-provider"></a>Publicando seu esquema de evento para um provedor clássico
 
@@ -97,7 +97,7 @@ class MyCategory_MyEvent : MyCategory
 
 Observe que os nomes de classe MOF do provedor, do evento e do tipo de evento devem ser exclusivos em todo o namespace. Para evitar conflitos de nomenclatura, você deve usar um nome exclusivo e descritivo para todos os nomes de classe. As propriedades de classe também devem ser descritivas e exclusivas em sua hierarquia de classe — uma classe filha que contém o mesmo nome de propriedade que uma classe pai substitui a propriedade da classe pai.
 
-Depois de definir suas classes MOF, use o compilador MOF para gerar seu esquema de evento e adicioná-lo ao repositório CIM. Os consumidores podem ler o esquema do repositório e ler programaticamente os dados do evento. Para obter uma descrição completa da sintaxe do MOF e usar o compilador MOF (Mofcomp.exe) para adicionar suas classes MOF ao repositório CIM, consulte [formato MOF](../wmisdk/managed-object-format--mof-.md). Para obter informações sobre como usar Wbemtest.exe para acessar o repositório CIM, consulte [Instrumentação de gerenciamento do Windows](../wmisdk/wmi-start-page.md) (WMI).
+Depois de definir suas classes MOF, use o compilador MOF para gerar seu esquema de evento e adicioná-lo ao repositório CIM. Os consumidores podem ler o esquema do repositório e ler programaticamente os dados do evento. Para obter uma descrição completa da sintaxe do MOF e usar o compilador MOF (Mofcomp.exe) para adicionar suas classes MOF ao repositório CIM, consulte [formato MOF](../wmisdk/managed-object-format--mof-.md). para obter informações sobre como usar Wbemtest.exe para acessar o repositório CIM, consulte [Instrumentação de Gerenciamento do Windows](../wmisdk/wmi-start-page.md) (WMI).
 
 ## <a name="versioning-mof-class"></a>Classe MOF de controle de versão
 

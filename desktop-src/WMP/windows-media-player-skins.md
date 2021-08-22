@@ -17,7 +17,7 @@ ms.locfileid: "119053974"
 ---
 # <a name="windows-media-player-skins"></a>Windows Media Player Peles
 
-Windows Media Player fornece uma plataforma de programação para criar capas personalizadas. As capas são conjuntos de scripts, arte, mídia e arquivos de texto que podem ser combinados para criar uma nova aparência para Windows Media Player. Usando capas, você pode alterar não apenas a Windows Media Player aparência, mas como ela funciona. Não apenas onde os botões estão e como são, mas o que eles fazem, considerando os limites da tecnologia Windows Media Player núcleo subjacente.
+Windows Media Player fornece uma plataforma de programação para criar capas personalizadas. As capas são conjuntos de scripts, arte, mídia e arquivos de texto que podem ser combinados para criar uma nova aparência para Windows Media Player. Usando capas, você pode alterar não apenas a aparência Windows Media Player, mas como ela funciona. Não apenas onde os botões estão e como são, mas o que eles fazem, considerando os limites da tecnologia Windows Media Player núcleo subjacente.
 
 A tecnologia de capa é muito diferente de outros tipos de programação; essencialmente, você misturará programação e arte em partes iguais. Você não precisa ser um programador especialista (não muito mais do que já sabe se criou páginas da Web e fez alguns scripts simples), nem precisa ser um artista (desde que você possa usar um aplicativo de edição de gráficos). Você estará usando XML (semelhante a HTML), Microsoft JScript e quaisquer programas de arte escolhidos.
 

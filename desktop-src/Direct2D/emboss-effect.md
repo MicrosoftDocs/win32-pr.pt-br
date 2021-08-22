@@ -4,12 +4,12 @@ description: Cria uma versão em tons de cinza da imagem que aparece como se ela
 ms.assetid: 74f63875-35cd-f335-62cd-410a953e53ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dde087eb7f85fcd68615c39730bf6208024fc43
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d0fe9b779cbad2b73b877338871f7adff3a36fb4bfb1c291be6de94f736088f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586956"
 ---
 # <a name="emboss-effect"></a>Efeito de entalhe
 
@@ -52,9 +52,9 @@ As propriedades do efeito de entalhe são definidas pela enumeração [**\_ \_ p
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| Servidor mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
+| Cliente mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects \_ 2. h                                  |
 | Biblioteca                  | d2d1. lib, dxguid. lib                              |
 
 ## <a name="related-topics"></a>Tópicos relacionados

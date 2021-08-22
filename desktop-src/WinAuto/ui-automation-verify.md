@@ -1,6 +1,6 @@
 ---
 title: Automação da Interface do Usuário (Verificação de UIA)
-description: Automação da Interface do Usuário (Verificação de UIA) é uma estrutura de teste para testes manuais e automatizados da implementação do controle ou do aplicativo da Microsoft Automação da Interface do Usuário.
+description: Automação da Interface do Usuário (Verificação de UIA) é uma estrutura de teste para testes manuais e automatizados da implementação de um controle ou aplicativo da Microsoft Automação da Interface do Usuário.
 ms.assetid: C66AF411-2746-4695-A893-1552B3ED1066
 keywords:
 - Verificação da Automação da Interface do Usuário
@@ -22,9 +22,9 @@ ms.locfileid: "119052384"
 
 **Automação da Interface do Usuário (Verificação de UIA)** é uma estrutura de teste para testes manuais e automatizados da implementação de um controle ou aplicativo do Microsoft Automação da Interface do Usuário. A maioria das funcionalidades da estrutura de teste vem de uma DLL chamada WUIATestLibrary.dll. Essa DLL contém o código para testar Automação da Interface do Usuário funcionalidade específica e também dá suporte ao registro em log dos resultados do teste. Você pode integrar seu aplicativo ao código de teste e realizar testes regulares automatizados ou verificações spot de seus cenários Automação da Interface do Usuário dados.
 
-**A UIA Verify** está instalada com o SDK (Software Development Kit) do Windows. Ele está localizado na pasta UIAVerify da plataforma de versão bin do caminho de instalação \\ \\ <  > \\ <  > \\ do SDK (VisualUIAVerifyNative.exe).
+**A UIA Verify** está instalada com o Windows SDK (Software Development Kit). Ele está localizado na pasta UIAVerify da plataforma de versão bin do caminho de instalação \\ \\ <  > \\ <  > \\ do SDK (VisualUIAVerifyNative.exe).
 
-**A UIA Verify** consiste em uma API chamada biblioteca Automação da Interface do Usuário de teste e uma interface gui chamada Visual **Automação da Interface do Usuário Verify**. Eles são descritos nos tópicos a seguir.
+**A UIA Verify** consiste em uma API chamada biblioteca de Automação da Interface do Usuário teste e uma interface gui chamada Visual **Automação da Interface do Usuário Verify**. Eles são descritos nos tópicos a seguir.
 
 > [!NOTE]
 > **Automação da Interface do Usuário Verificar** é uma ferramenta herdado. Em vez disso, [recomendamos o uso Insights](https://accessibilityinsights.io/) acessibilidade.

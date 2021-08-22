@@ -1,9 +1,9 @@
 ---
 title: WM/WMADRCAverageTarget
-description: O atributo WM/WMADRCAverageTarget contém o nível médio de volume solicitado pelo usuário. Esse valor é usado pelo Windows Media Player para controle de intervalo dinâmico.
+description: O atributo WM/WMADRCAverageTarget contém o nível de volume médio solicitado pelo usuário. Esse valor é usado por Windows Media Player controle de intervalo dinâmico.
 ms.assetid: 8173b5ab-27e4-4af9-aea8-6c1310f065f5
 keywords:
-- Formato de mídia do Windows do WM/WMADRCAverageTarget
+- Formato de mídia do Windows WM/WMADRCAverageTarget
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 387eed9112e8e0d79943b99bf326b07f42f425d1
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2bd08dd09b6db671a0af1d816162923624cb781148f557ce4bee21fe2dc9a933
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105797589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083910"
 ---
 # <a name="wmwmadrcaveragetarget"></a>WM/WMADRCAverageTarget
 
-O atributo **WM/WMADRCAverageTarget** contém o nível médio de volume solicitado pelo usuário. Esse valor é usado pelo Windows Media Player para controle de intervalo dinâmico.
+O **atributo WM/WMADRCAverageTarget** contém o nível de volume médio solicitado pelo usuário. Esse valor é usado por Windows Media Player controle de intervalo dinâmico.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMWMADRCAverageTarget
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ DWORD**
+**WMT \_ TYPE \_ DWORD**
 
 ## <a name="remarks"></a>Comentários
 
-Há quatro atributos usados pelo Windows Media Player para o controle de intervalo dinâmico: **WM/WMADRCAverageReference**, **WM/WMADRCPeakReference**, **WM/WMADRCAverageTarget** e **WM/WMADRCPeakTarget**. Todos esses valores são definidos pelo gravador com base nas informações do codec ao gravar fluxos com o codec do Windows Media Audio 9 ou o Windows Media Audio 9 Professional. Os valores médios são definidos como o nível médio de volume do fluxo e os valores de pico são definidos para o nível máximo do volume no fluxo. Os valores de referência são somente leitura. Os valores de destino são definidos pelo Windows Media Player quando o arquivo está sendo reproduzido para registrar as preferências de controle de intervalo dinâmico do usuário.
+Há quatro atributos usados pelo Windows Media Player para controle de intervalo dinâmico: **WM/WMADRCAverageReference**, **WM/WMADRCPeakReference**, **WM/WMADRCAverageTarget** e **WM/WMADRCPeakTarget**. Todos esses valores são definidos pelo autor com base nas informações do codec ao escrever fluxos com o codec Windows Media Audio 9 ou o codec Windows Media Audio 9 Professional. Os valores médios são definidos como o nível médio de volume do fluxo e os valores de pico são definidos para o nível máximo de volume no fluxo. Os valores de referência são somente leitura. Os valores de destino são definidos Windows Media Player quando o arquivo está sendo tocado para registrar as preferências de controle de intervalo dinâmico do usuário.
 
 ## <a name="see-also"></a>Confira também
 
@@ -51,9 +51,9 @@ Há quatro atributos usados pelo Windows Media Player para o controle de interva
 [**WM/WMADRCPeakTarget**](wm-wmadrcpeaktarget.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Contém informações de formato para a recompactação inteligente.
+description: Contém informações de formato para recompactação inteligente.
 ms.assetid: 471a7b4a-e639-443b-a30e-870b747e072c
-title: Estrutura SCompFmt0 (QEdit. h)
+title: Estrutura SCompFmt0 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: ad5a5277718e8d414d64a86b9c31739cf576736a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f02c9cda80acdd42d0687502834a9b2e66f1cf773d02b88eadabdd346850061e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072700"
 ---
 # <a name="scompfmt0-structure"></a>Estrutura SCompFmt0
 
@@ -27,7 +27,7 @@ ms.locfileid: "105758428"
 
  
 
-Contém informações de formato para a recompactação inteligente.
+Contém informações de formato para recompactação inteligente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ typedef struct _SCompFmt0 {
 
 <dl> <dt>
 
-**nFormatId**
+**Nformatid**
 </dt> <dd>
 
-Reservado deve ser zero.
+Reservado; deve ser zero.
 
 </dd> <dt>
 
 **MediaType**
 </dt> <dd>
 
-[**Am \_ Estrutura do \_ tipo de mídia**](/windows/win32/api/strmif/ns-strmif-am_media_type) que descreve o formato de compactação.
+[**AM \_ Estrutura \_ MEDIA TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que descreve o formato de compactação.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Reservado deve ser zero.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>QEdit. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Qedit.h</dt> </dl> |
 
 
 

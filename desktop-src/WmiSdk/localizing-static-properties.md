@@ -1,5 +1,5 @@
 ---
-description: Você pode localizar propriedades estáticas usando mapas de valor parcial.
+description: Você pode localizar propriedades estáticas usando mapas de valores parciais.
 ms.assetid: 67e91454-c065-4ab2-a373-245c9392c71c
 ms.tgt_platform: multiple
 title: Localizando propriedades estáticas
@@ -14,15 +14,15 @@ ms.locfileid: "119050724"
 ---
 # <a name="localizing-static-properties"></a>Localizando propriedades estáticas
 
-Você pode localizar propriedades estáticas usando mapas de valor parcial.
+Você pode localizar propriedades estáticas usando mapas de valores parciais.
 
-O procedimento a seguir descreve como as propriedades estáticas podem ser localizadas usando mapas de valor parcial com expressões regulares.
+O procedimento a seguir descreve como as propriedades estáticas podem ser localizadas usando mapas de valores parciais com expressões regulares.
 
-**Para usar mapas de valor para localização de propriedades estáticas**
+**Para usar mapas de valor para localizar propriedades estáticas**
 
-1.  Crie um arquivo MOF mestre (Mastervm.mof).
+1.  Crie um arquivo MOF mestre (Mastervm. MOF).
 
-    O exemplo de código a seguir pode ser usado para criar um arquivo MOF mestre (Mastervm.mof).
+    O exemplo de código a seguir pode ser usado para criar um arquivo MOF mestre (Mastervm. MOF).
 
     ```syntax
     [Locale(0x409)]
@@ -36,17 +36,17 @@ O procedimento a seguir descreve como as propriedades estáticas podem ser local
     };
     ```
 
-2.  Crie as versões específicas de idioma e neutras ao idioma do arquivo MOF.
+2.  Crie as versões de linguagem neutra e específica do idioma do arquivo MOF.
 
-    Digite o comando a seguir em um prompt de comando para criar as versões específicas de idioma e neutras ao idioma do arquivo MOF.
+    Digite o comando a seguir em um prompt de comando para criar as versões de idioma neutro e específico do idioma do arquivo MOF.
 
     ```syntax
     mofcomp -MOF:LnVm.mof -MFL:LsVm.mfl -Amendment:MS_409 MasterVm.mof
     ```
 
-    O compilador MOF gera os arquivos MOF específicos à linguagem e neutros na linguagem, LnVm.mof e LsVm.mfl. Os valores em inglês americano para [a propriedade Numbers](numbers.md) são colocados no arquivo .mfl para o namespace inglês americano.
+    O compilador MOF gera os arquivos MOF específicos de linguagem e neutros de idioma, LnVm. mof e LsVm. MFL. Os valores em inglês americano para a propriedade [Numbers](numbers.md) são colocados no arquivo. MFL para o namespace American Inglês.
 
-    O exemplo de código a seguir mostra o conteúdo do arquivo LsVm.mfl.
+    O exemplo de código a seguir mostra o conteúdo do arquivo LsVm. MFL.
 
     ```syntax
     #pragma namespace("\\\\.\\root\\default")
@@ -64,7 +64,7 @@ O procedimento a seguir descreve como as propriedades estáticas podem ser local
 
 3.  Compile os dois arquivos MOF e armazene as informações de classe no repositório CIM.
 
-    Digite o comando a seguir em um prompt de comando para compilar os dois arquivos MOF.
+    Digite o seguinte comando em um prompt de comando para compilar os dois arquivos MOF.
 
     ```syntax
     Mofcomp LnVm.mof 
@@ -73,7 +73,7 @@ O procedimento a seguir descreve como as propriedades estáticas podem ser local
 
 4.  Localize o arquivo MFL para outras localidades.
 
-    O exemplo de código a seguir mostra o conteúdo de um arquivo MFL para o namespace francês.
+    O exemplo de código a seguir mostra o conteúdo de um arquivo MFL para o namespace em francês.
 
     ```syntax
     #pragma namespace("\\\\.\\root\\default")
@@ -90,12 +90,12 @@ O procedimento a seguir descreve como as propriedades estáticas podem ser local
     };
     ```
 
-O resultado líquido é que o nome de exibição e o valor da propriedade [Numbers](numbers.md) dependem da localidade do usuário conectado. Se o usuário especificar uma localidade que não foi fornecida, os dados do qualificador padrão serão fornecidos do namespace inglês (ms \_ 409).
+O resultado líquido é que o nome de exibição e o valor da propriedade [Numbers](numbers.md) dependem da localidade do usuário conectado. Se o usuário especificar uma localidade que não foi fornecida, os dados do qualificador padrão vêm do namespace em inglês (MS \_ 409).
 
-A implicação desse design é que cada valor de cadeia de caracteres é usado como um identificador de lookup, que não pode ser localizado. Ao definir esse esquema, você deve garantir que o valor que o provedor coloca seja independente de localidade.
+A implicação desse design é que cada valor de cadeia de caracteres é usado como um identificador de pesquisa, que não pode ser localizado. Ao definir esse esquema, você deve garantir que o valor que o provedor coloca é independente de localidade.
 
 > [!Note]  
-> Atualmente, o WMI não oferece suporte em tempo de run time para mapear valores para cadeias de caracteres definidas por qualificadores. A interpretação da sintaxe sugerida é responsabilidade do aplicativo.
+> No momento, o WMI não fornece suporte de tempo de execução para mapear valores para cadeias de caracteres definidas por qualificadores. A interpretação da sintaxe sugerida é a responsabilidade do aplicativo.
 
  
 

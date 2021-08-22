@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: enumeração de JET_ErrorInfo'
-title: Enumeração de JET_ErrorInfo (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: JET_ErrorInfo enumeração'
+title: JET_ErrorInfo enumeração (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ErrorInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_ErrorInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errorinfo(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62d953bff6847e38269b7361ac705934642f99e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6ac5967e2326652063893d9a5910382ef02cc3701d01ed55b6f4028cf78a01f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617176"
 ---
-# <a name="jet_errorinfo-enumeration"></a>Enumeração de JET_ErrorInfo
+# <a name="jet_errorinfo-enumeration"></a>JET_ErrorInfo enumeração
 
 Os valores válidos de InfoLevel para JetGetErrorInfo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -77,4 +77,4 @@ public enum JET_ErrorInfo
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

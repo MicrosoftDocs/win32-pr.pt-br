@@ -81,7 +81,7 @@ O formato de *vdate* não é válido.
 
 Após uma chamada bem-sucedida para **SetVarDate**, o valor [**DATETIME**](datetime.md) é interpretado como um valor de datetime absoluto em vez de um intervalo e a [**propriedade IsInterval**](swbemdatetime-isinterval.md) é definida como **FALSE.**
 
-A função Visual Basic ou VBScript [CDate](/previous-versions//2dt118h2(v=vs.85)) fornece um valor [**datetime**](datetime.md) no formato **DATE da VT \_** para entrada **em SetVarDate.**
+A função Visual Basic ou VBScript [CDate](/previous-versions//2dt118h2(v=vs.85)) fornece um valor [**datetime**](datetime.md) no formato **DATE da \_ VT** para entrada **em SetVarDate.**
 
 ## <a name="examples"></a>Exemplos
 

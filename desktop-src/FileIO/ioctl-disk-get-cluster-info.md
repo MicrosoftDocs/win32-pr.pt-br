@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Ntdddisk.h
-ms.openlocfilehash: 613c73c2fd82e76768b0fc692b63b0761938a342
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3acf923a9f0288bd3fe3a0b12d4c61b71437f61c1c4f96a3a3bef1af5f05fd95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068676"
 ---
 # <a name="ioctl_disk_get_cluster_info-control-code"></a>\_Código de \_ controle de informações do \_ cluster Get do disco do IOCTL \_
 
@@ -112,7 +112,7 @@ Para operações sobrepostas, [**DeviceIoControl**](/windows/desktop/api/ioapise
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, indicando que todos os volumes no disco estão prontos para uso, [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) retornará um valor diferente de zero.
 
@@ -125,8 +125,8 @@ Se a operação falhar ou estiver pendente, [**DeviceIoControl**](/windows/deskt
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Ntdddisk. h</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdddisk. h</dt> </dl> |
 
 
 

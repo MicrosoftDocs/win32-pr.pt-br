@@ -1,21 +1,21 @@
 ---
 description: Especifica o formato de saída para o decodificador.
 ms.assetid: fdccdbfa-2814-4d21-9a7f-4121b79718e6
-title: Propriedade AVDecCommonOutputFormat (Codecapi. h)
+title: Propriedade AVDecCommonOutputFormat (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b69c536b3c9f1bf75e2a5741d0cdd16569b3dd8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 129f9a1171c5870eab243108fc0ed6992be4993b886cbd36d72fe91988f321b5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586746"
 ---
 # <a name="avdeccommonoutputformat-property"></a>Propriedade AVDecCommonOutputFormat
 
 Especifica o formato de saída para o decodificador.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -32,11 +32,11 @@ Esta propriedade é de leitura/gravação.
 | GUID                                                               | Descrição                                                                                                                                                                                                         |
 |--------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ PCM                        | Áudio PCM, usando qualquer número de canais                                                                                                                                                                             |
-| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ PCM \_ fone de ouvido            | Áudio PCM estéreo, usando somente à esquerda/à direita (lo/ro) downmix                                                                                                                                                        |
-| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ PCM \_ estéreo \_ auto          | Áudio PCM estéreo, usando a seleção automática do modo estéreo downmix (lo/ro ou lt/RT). Você pode usar esse valor para formatos de áudio nos quais o fluxo de entrada define o modo downmix preferencial, como Dolby AC-3. |
-| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ PCM \_ estéreo \_ MatrixEncoded | Áudio PCM estéreo, usando estéreo downmix codificado em matriz (LT/RT)                                                                                                                                                       |
-| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ SPDIF \_ fragmentado           | S/PDIF (formato de interface digital Sony/Philips) fragmentado compactados, conforme definido pelo IEC-60958                                                                                                                        |
-| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ SPDIF \_ PCM                 | Estéreo PCM S/PDIF, conforme definido por IEC-60958                                                                                                                                                                          |
+| CodeCAPI \_ GUID \_ AVDecAudioOutputFormat \_ PcM \_ Headsets            | Áudio PCM estéreo, usando downmix somente para a esquerda/direita (Lo/Ro)                                                                                                                                                        |
+| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ PCM \_ Estéreo \_ Auto          | Áudio PCM estéreo, usando a seleção automática do modo downmix estéreo (Lo/Ro ou Lt/Rt). Você pode usar esse valor para formatos de áudio nos quais o fluxo de entrada define o modo downmix preferencial, como Dolby AC-3. |
+| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ Matriz Estéreo do \_ PCMEncodificado \_ | Áudio PCM estéreo, usando downmix estéreo codificado em matriz (Lt/Rt)                                                                                                                                                       |
+| BITstream \_ \_ DO CODECAPI GUID AVDecAudioOutputFormat \_ SPDIF \_           | Bitstream compactado S/PDIF (Formato de Interface Digital Da Chicago/Philips), conforme definido por IEC-60958                                                                                                                        |
+| CODECAPI \_ GUID \_ AVDecAudioOutputFormat \_ SPDIF \_ PCM                 | S/PDIF PCM estéreo, conforme definido por IEC-60958                                                                                                                                                                          |
 
 
 
@@ -48,9 +48,9 @@ Esta propriedade é de leitura/gravação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -58,10 +58,10 @@ Esta propriedade é de leitura/gravação.
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

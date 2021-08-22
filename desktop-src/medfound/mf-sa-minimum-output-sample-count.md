@@ -4,12 +4,12 @@ ms.assetid: 53D393B4-BFF1-430F-9CD1-5071336E6F04
 title: Atributo MF_SA_MINIMUM_OUTPUT_SAMPLE_COUNT (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cf168158fd6a5f9a173d4d5d25dda3fa5b16d2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79a7d00fcb5a11d756ed4848e3e600a6fd1cca32203ff7234cb01963dfcb5149
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663906"
 ---
 # <a name="mf_sa_minimum_output_sample_count-attribute"></a>\_Atributo de \_ \_ contagem de amostras de saída mínima \_ \_ de
 
@@ -34,9 +34,9 @@ Para definir este atributo:
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 
 

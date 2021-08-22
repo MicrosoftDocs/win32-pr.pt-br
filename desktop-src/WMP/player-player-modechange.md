@@ -1,11 +1,11 @@
 ---
 title: Evento Player. ModeChange
-description: O evento ModeChange ocorre quando um modo do Windows Media Player é alterado. | Evento Player. ModeChange
+description: o evento ModeChange ocorre quando um modo de Windows Media Player é alterado. | Evento Player. ModeChange
 ms.assetid: 45b57660-b186-4c0f-8735-61134058b8c9
 keywords:
-- Evento ModeChange do Windows Media Player
-- Evento ModeChange Windows Media Player, classe Player
-- Classe de jogador Windows Media Player, evento ModeChange
+- Windows Media Player de eventos ModeChange
+- Windows Media Player de eventos ModeChange, classe Player
+- classe de jogador Windows Media Player, evento ModeChange
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb202672c7fce6705b8e86889c0ca44d7004a19e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4a1102d49064c602d04915f77eda7ecfa1c748d4aea000cef1271679da1ec62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054354"
 ---
 # <a name="playermodechange-event"></a>Evento Player. ModeChange
 
-O evento **ModeChange** ocorre quando um modo do Windows Media Player é alterado.
+o evento **ModeChange** ocorre quando um modo de Windows Media Player é alterado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,13 +68,13 @@ Player.ModeChange(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,10 +94,10 @@ O valor dos parâmetros de evento é especificado pelo Windows Media Player e po
 [**Objeto de jogador**](player-object.md)
 </dt> <dt>
 
-[**Settings. GetMode**](settings-getmode.md)
+[**Configurações. getmode**](settings-getmode.md)
 </dt> <dt>
 
-[**Settings. setmode**](settings-setmode.md)
+[**Configurações. setmode**](settings-setmode.md)
 </dt> </dl>
 
  

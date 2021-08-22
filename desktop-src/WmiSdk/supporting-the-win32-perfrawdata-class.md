@@ -5,19 +5,19 @@ ms.tgt_platform: multiple
 title: Dando suporte à classe Win32_PerfRawData
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 835815c9171097bfe088d22e4154ac668d790c0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e70c9899c88849c70265b019c1d73021c61cae4758c41f462349537bd2e806ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050114"
 ---
 # <a name="supporting-the-win32_perfrawdata-class"></a>Dando suporte à \_ classe Win32 PerfRawData
 
 Ao escrever um provedor de alto desempenho que deriva classes do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata), você deve seguir convenções específicas para que o WMI possa fornecer dados aos valores de propriedade.
 
 > [!Note]  
-> Não é recomendável gravar um provedor WMI de alto desempenho para criar contadores de desempenho em nenhuma versão do sistema operacional Windows. Para obter mais informações, consulte [tornando um provedor de instância em um provedor de High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)e [bibliotecas de desempenho e WMI](performance-libraries-and-wmi.md).
+> não é recomendável gravar um provedor WMI de alto desempenho para criar contadores de desempenho em nenhuma versão do sistema operacional Windows. Para obter mais informações, consulte [tornando um provedor de instância em um provedor de High-Performance](making-an-instance-provider-into-a-high-performance-provider.md)e [bibliotecas de desempenho e WMI](performance-libraries-and-wmi.md).
 
  
 

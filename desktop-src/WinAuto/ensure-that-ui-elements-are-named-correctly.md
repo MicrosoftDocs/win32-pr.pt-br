@@ -1,80 +1,80 @@
 ---
-title: Garantindo que os elementos da interface do usuário sejam nomeados corretamente
-description: Este tópico descreve a maneira correta de especificar os nomes dos elementos da interface do usuário em seus aplicativos Microsoft Win32 para que o Microsoft Acessibilidade Ativa possa expor com precisão os nomes para aplicativos cliente por meio do IAccessible \ 32; Propriedade Name.
+title: Garantir que os elementos da interface do usuário sejam nomeados corretamente
+description: Este tópico descreve a maneira correta de especificar os nomes dos elementos da interface do usuário em seus aplicativos do Microsoft Win32 para que o Microsoft Active Accessibility possa expor com precisão os nomes aos aplicativos cliente por meio do IAccessible \ 32; Propriedade name.
 ms.assetid: 5b8f23cb-9906-4cc4-83d4-73fdf96ed681
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4db3c4f1fc129aea9b793bac1935d678645b28fc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 98c047228159e011ffa9a0842f1748ee07e6af4a49ff296ae8ed65b494b8c53f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052748"
 ---
-# <a name="ensuring-that-ui-elements-are-correctly-named"></a>Garantindo que os elementos da interface do usuário sejam nomeados corretamente
+# <a name="ensuring-that-ui-elements-are-correctly-named"></a>Garantir que os elementos da interface do usuário sejam nomeados corretamente
 
-Este tópico descreve a maneira correta de especificar os nomes dos elementos da interface do usuário em seus aplicativos do Microsoft Win32 para que o Microsoft Acessibilidade Ativa possa expor com precisão os nomes aos aplicativos cliente por meio da [propriedade nome](name-property.md)do [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .
+Este tópico descreve a maneira correta de especificar os nomes dos elementos da interface do usuário em seus aplicativos do Microsoft Win32 para que o Microsoft Active Accessibility possa expor com precisão os nomes aos aplicativos cliente por meio da propriedade [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) [Name](name-property.md).
 
-As informações nesta seção aplicam-se somente ao Microsoft Acessibilidade Ativa. Ele não se aplica a aplicativos que usam a automação da interface do usuário da Microsoft ou aqueles baseados em linguagens de marcação, como HTML, HTML dinâmico (DHTML) ou XML.
+As informações nesta seção se Microsoft Active Accessibility somente. Ele não se aplica a aplicativos que usam o Microsoft Automação da Interface do Usuário ou aqueles baseados em linguagens de marcação, como HTML, HTML dinâmico (DHTML) ou XML.
 
 -   [Visão geral](#overview)
--   [Como a nomenclatura incorreta causa problemas](#how-incorrect-naming-causes-problems)
--   [Como a MSAA Obtém a propriedade Name](#how-msaa-gets-the-name-property)
--   [Como localizar e corrigir problemas de nomenclatura](#how-to-find-and-correct-naming-problems)
--   [Como nomear corretamente um TrackBar](#how-to-correctly-name-a-trackbar)
--   [Como usar rótulos invisíveis em controles de nome](#how-to-use-invisible-labels-to-name-controls)
--   [Como usar a anotação direta para especificar a propriedade Name](#how-to-use-direct-annotation-to-specify-the-name-property)
-    -   [Etapas para anotar a propriedade Name](#steps-for-annotating-the-name-property)
+-   [Como a nomeação incorreta causa problemas](#how-incorrect-naming-causes-problems)
+-   [Como a MSAA obtém a propriedade name](#how-msaa-gets-the-name-property)
+-   [Como encontrar e corrigir problemas de nomeação](#how-to-find-and-correct-naming-problems)
+-   [Como nomear corretamente uma barra de faixa](#how-to-correctly-name-a-trackbar)
+-   [Como usar rótulos invisíveis para nomear controles](#how-to-use-invisible-labels-to-name-controls)
+-   [Como usar anotação direta para especificar a propriedade name](#how-to-use-direct-annotation-to-specify-the-name-property)
+    -   [Etapas para anotação da propriedade Name](#steps-for-annotating-the-name-property)
     -   [Exemplo de anotação da propriedade Name](#example-of-annotating-the-name-property)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="overview"></a>Visão geral
 
-No Microsoft Acessibilidade Ativa, cada elemento da interface do usuário em um aplicativo é representado por um objeto que expõe a interface [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) . Os aplicativos cliente usam as propriedades e os métodos da interface **IAccessible** para interagir com o elemento de interface do usuário e para recuperar informações sobre ele. Uma das propriedades mais importantes expostas pela interface **IAccessible** é a [Propriedade Name](name-property.md). Os aplicativos cliente contam com a propriedade Name para localizar, identificar ou anunciar um elemento de interface do usuário para ele. Se o Microsoft Acessibilidade Ativa não puder expor corretamente a propriedade Name de um determinado elemento de interface do usuário, os aplicativos cliente não poderão apresentar esse elemento de interface do usuário e o elemento de interface do usuário ficará inacessível aos usuários com deficiências.
+No Microsoft Active Accessibility, cada elemento de interface do usuário em um aplicativo é representado por um objeto que expõe a interface [**IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) Os aplicativos cliente usam as propriedades e os métodos da interface **IAccessible** para interagir com o elemento de interface do usuário e recuperar informações sobre ele. Uma das propriedades mais importantes expostas pela interface **IAccessible** é a [propriedade Name](name-property.md). Os aplicativos cliente dependem da propriedade Name para encontrar, identificar ou anunciar um elemento de interface do usuário para o usuário. Se Microsoft Active Accessibility puder expor corretamente a propriedade Name de um elemento de interface do usuário específico, os aplicativos cliente não poderão apresentar esse elemento de interface do usuário ao usuário e o elemento de interface do usuário estará inacessível a usuários com deficiências.
 
-## <a name="how-incorrect-naming-causes-problems"></a>Como a nomenclatura incorreta causa problemas
+## <a name="how-incorrect-naming-causes-problems"></a>Como a nomeação incorreta causa problemas
 
-Para ilustrar os problemas causados pela nomenclatura incorreta de elementos da interface do usuário, considere o formulário de entrada de nome mostrado na ilustração a seguir.
+Para ilustrar os problemas causados pela nomeação incorreta de elementos da interface do usuário, considere o formulário de entrada de nome mostrado na ilustração a seguir.
 
 ![ilustração de um formulário simples para inserir o nome e o sobrenome](images/incorrect-form.png)
 
-Embora os elementos da interface do usuário no formulário pareçam Ok, a implementação programática está incorreta. Para um cliente Microsoft Acessibilidade Ativa, como um leitor de tela, a [Propriedade Name](name-property.md) do controle de edição superior é "Last Name:", e a propriedade Name do controle de edição inferior é uma cadeia de caracteres vazia (""). O leitor de tela lerá o controle de edição superior como "Last Name", embora o usuário deva digitar o nome. O leitor de tela lerá o segundo controle de edição como "sem nome", de modo que o usuário não terá idéia do que digitar no segundo controle de edição. O leitor de tela não pode ajudar o usuário a inserir dados nesse formulário simples.
+Embora os elementos da interface do usuário no formulário pareçam ok, a implementação programática está incorreta. Para um Microsoft Active Accessibility, como um leitor de [](name-property.md) tela, a propriedade Name do controle de edição superior é "Sobrenome:" e a propriedade Name do controle de edição inferior é uma cadeia de caracteres vazia (""). O leitor de tela lerá o controle de edição superior como "Sobrenome", embora se espera que o usuário digite o nome. O leitor de tela lerá o segundo controle de edição como "sem nome", portanto, o usuário não terá ideia do que digitar no segundo controle de edição. O leitor de tela não pode ajudar o usuário a inserir dados nesse formulário simples.
 
-Outro problema com o formulário é que nenhuma tecla de atalho é atribuída a nenhum dos controles de edição. O usuário é forçado a fazer uma tabulação para os controles ou usar o mouse.
+Outro problema com o formulário é que nenhuma tecla de atalho é atribuída a nenhum dos controles de edição. O usuário é forçado a tabular para os controles ou usar o mouse.
 
 As seções a seguir explicam a origem desses problemas e fornecem diretrizes para corrigi-los.
 
-## <a name="how-msaa-gets-the-name-property"></a>Como a MSAA Obtém a propriedade Name
+## <a name="how-msaa-gets-the-name-property"></a>Como a MSAA obtém a propriedade name
 
-O Microsoft Acessibilidade Ativa Obtém a cadeia de caracteres de [propriedade de nome](name-property.md) de diferentes locais, dependendo do tipo do elemento de interface do usuário. Para a maioria dos elementos da interface do usuário que têm texto de janela associado, o Microsoft Acessibilidade Ativa usa o texto da janela como a cadeia de caracteres de propriedade de nome. Exemplos desse tipo de elemento de interface do usuário incluem controles como botões, itens de menu e dicas de ferramenta.
+Microsoft Active Accessibility obtém a [cadeia de](name-property.md) caracteres de propriedade Name de locais diferentes, dependendo do tipo do elemento de interface do usuário. Para a maioria dos elementos da interface do usuário que têm texto de janela associado, Microsoft Active Accessibility o texto da janela como a cadeia de caracteres da propriedade Name. Exemplos desse tipo de elemento de interface do usuário incluem controles como botões, itens de menu e dicas de ferramenta.
 
-Para os seguintes controles, o Microsoft Acessibilidade Ativa ignora o texto da janela e, em vez disso, procura um rótulo de texto estático (ou rótulo da caixa de grupo) imediatamente antes do controle na ordem de tabulação.
+Para os controles a seguir, Microsoft Active Accessibility ignora o texto da janela e, em vez disso, procura um rótulo de texto estático (ou rótulo de caixa de grupo) imediatamente antes do controle na ordem de tabulação.
 
 -   Caixas de combinação
--   Seletores de data e hora
--   Editar e elaborar controles de edição
+-   Seladores de data e hora
+-   Editar e editar controles rich edit
 -   Controles de endereço IP
 -   Caixas de listagem
 -   Listar exibições
 -   Barras de progresso
--   Rolagem
--   Controles estáticos que têm o \_ ícone SS ou o \_ estilo de bitmap SS
+-   Scrollbars
+-   Controles estáticos que têm o \_ estilo SS ICON ou SS \_ BITMAP
 -   Trackbars
 -   Exibições de árvore
 
-Se os controles anteriores não forem acompanhados por rótulos de texto estáticos ou se os rótulos não forem implementados corretamente, o Microsoft Acessibilidade Ativa não poderá fornecer a [propriedade de nome](name-property.md) correta para aplicativos cliente.
+Se os controles anteriores não são acompanhados por rótulos de texto estático ou se os rótulos não são implementados corretamente, Microsoft Active Accessibility não poderá fornecer a propriedade [Name](name-property.md) correta para aplicativos cliente.
 
-A maioria dos controles anteriores realmente tem texto de janela associado. O editor de recursos gera automaticamente o texto da janela, que consiste em uma cadeia de caracteres genérica, como "Edit1" ou "listbox3". Embora os desenvolvedores possam substituir o texto da janela gerada por texto mais significativo, a maioria nunca faz. Como o texto da janela gerado não tem significado para o usuário, o Microsoft Acessibilidade Ativa o ignora e usa o rótulo de texto estático que o acompanha.
+A maioria dos controles anteriores realmente tem texto de janela associado. O editor de recursos gera automaticamente o texto da janela, que consiste em uma cadeia de caracteres genérica, como "edit1" ou "listbox3". Embora os desenvolvedores possam substituir o texto da janela gerado por um texto mais significativo, a maioria nunca substitui. Como o texto da janela gerado não tem nenhum significado para o usuário, Microsoft Active Accessibility o ignora e usa o rótulo de texto estático que o acompanha.
 
-## <a name="how-to-find-and-correct-naming-problems"></a>Como localizar e corrigir problemas de nomenclatura
+## <a name="how-to-find-and-correct-naming-problems"></a>Como encontrar e corrigir problemas de nomeação
 
-No formulário de entrada de nome mostrado em como a nomenclatura incorreta causa problemas, a causa dos problemas é que a ordem de tabulação dos controles está incorreta. Examinar a interface do usuário com uma ferramenta de teste como [inspecionar](inspect-objects.md) revelaria os problemas com a hierarquia de objetos. A captura de tela a seguir mostra a hierarquia de objetos desfeitos do formulário de entrada de nome como ele aparece na inspeção.
+No formulário de entrada de nome mostrado em How Incorrect Noming Cause Problems, a causa dos problemas é que a ordem de tabulação dos controles está incorreta. Examinar a interface do usuário com uma ferramenta de teste como [Inspecionar](inspect-objects.md) revelaria os problemas com a hierarquia de objetos. A captura de tela a seguir mostra a hierarquia de objetos quebrada do formulário de entrada de nome como aparece em Inspecionar.
 
-![captura de tela da ferramenta inspecionar mostrando uma hierarquia de objeto incorreta do formulário de entrada de nome](images/incorrect-object-hierarchy.png)
+![captura de tela da ferramenta de inspeção mostrando uma hierarquia de objetos incorreta do formulário de entrada de nome](images/incorrect-object-hierarchy.png)
 
-Na captura de tela anterior, observe que a hierarquia de objetos não corresponde à estrutura dos controles conforme eles aparecem na interface do usuário do formulário de entrada de nome. Observe também que a [inspeção](inspect-objects.md) atribuiu o nome incorreto ao próximo item (é o controle de edição para inserir o nome e deve ser um "nome:". Por fim, observe que inspecionar não pôde localizar um nome para o último item (é o controle de edição para inserir o sobrenome e deve ter o nome "Last Name:".
+Na captura de tela anterior, observe que a hierarquia de objetos não combina com a estrutura dos controles conforme eles aparecem na interface do usuário do formulário de entrada de nome. Observe também que [Inspecionar](inspect-objects.md) atribuiu o nome incorreto ao próximo ao último item (é o controle de edição para inserir o primeiro nome e deve ser um chamado "Nome:". Por fim, observe que Inspecionar não pôde encontrar um nome para o último item (é o controle de edição para inserir o sobrenome e deve ter um nome de "Sobrenome:".
 
-O exemplo a seguir mostra o conteúdo do arquivo de recurso para o formulário de entrada de nome. Observe que a ordem de tabulação não é consistente com a estrutura lógica dos controles conforme eles aparecem na interface do usuário. Observe também que nenhuma tecla de atalho foi especificada para os dois controles de edição.
+O exemplo a seguir mostra o conteúdo do arquivo de recurso para o formulário de entrada de nome. Observe que a ordem de tabulação não é consistente com a estrutura lógica dos controles conforme eles aparecem na interface do usuário. Observe também que nenhuma tecla de atalho é especificada para os dois controles de edição.
 
 ``` syntax
 IDD_INPUTNAME DIALOGEX 22, 17, 312, 118
@@ -90,13 +90,13 @@ BEGIN
 END
 ```
 
-Para corrigir os problemas com o formulário de entrada de nome, o arquivo de recurso (. rc) deve ser editado para especificar atalhos de teclado e os controles devem ser colocados na seguinte ordem:
+Para corrigir os problemas com o formulário de entrada de nome, o arquivo de recurso (.rc) deve ser editado para especificar atalhos de teclado e os controles devem ser colocados na seguinte ordem:
 
-1.  O rótulo de texto estático "&primeiro nome:".
-2.  O controle de edição para inserir o primeiro nome (IDC \_ EDIT1).
-3.  O rótulo de texto estático "&sobrenome:".
-4.  O controle de edição para inserir o sobrenome (IDC \_ Edit2).
-5.  O botão de ação padrão "OK".
+1.  O rótulo de texto estático "&Nome:".
+2.  O controle de edição para inserir o nome (IDC \_ EDIT1).
+3.  O rótulo de texto estático "&Sobrenome:".
+4.  O controle de edição para inserir o sobrenome (IDC \_ EDIT2).
+5.  O botão de push padrão "OK".
 
 O exemplo a seguir mostra o arquivo de recurso corrigido para o formulário de entrada de nome:
 
@@ -114,21 +114,21 @@ BEGIN
 END
 ```
 
-Para fazer correções em um arquivo de recurso, você pode editar o arquivo diretamente ou pode usar a ferramenta de ordem de tabulação no Microsoft Visual Studio. Você pode acessar a ferramenta de ordem de tabulação no Visual Studio pressionando CTRL + D ou selecionando **ordem de tabulação** no menu **Formatar** .
+Para fazer correções em um arquivo de recurso, você pode editar o arquivo diretamente ou pode usar a ferramenta Ordem de Tabulação Microsoft Visual Studio. Você pode acessar a ferramenta Ordem de Tabulação Visual Studio pressionando CTRL+D ou selecionando **Ordem** de Tabulação **no** menu Formatar.
 
-Depois de corrigir e recompilar o aplicativo, a interface do usuário do formulário de entrada de nomes terá a mesma aparência anterior. No entanto, o Microsoft Acessibilidade Ativa agora fornecerá as propriedades de nome corretas para aplicativos cliente e definirá o foco corretamente quando o usuário pressionar os atalhos de teclado ALT + F ou ALT + L. Além disso, [Inspecione](inspect-objects.md) mostrará a hierarquia de objetos correta, como mostra a captura de tela a seguir.
+Depois de corrigir e recriar o aplicativo, a interface do usuário do formulário de entrada de nomes terá a mesma aparência de antes. No entanto, Microsoft Active Accessibility agora fornecerá as propriedades de Nome corretas para aplicativos cliente e definirá o foco corretamente quando o usuário pressionar os atalhos de teclado ALT+F ou ALT+L. Além disso, [Inspecionar](inspect-objects.md) mostrará a hierarquia de objetos correta, como mostra a captura de tela a seguir.
 
-![captura de tela da ferramenta Gerenciador acessível mostrando uma hierarquia de objeto correta do formulário de entrada de nome](images/correct-object-hierarchy.png)
+![captura de tela da ferramenta de explorador acessível mostrando uma hierarquia de objetos correta do formulário de entrada de nome](images/correct-object-hierarchy.png)
 
-## <a name="how-to-correctly-name-a-trackbar"></a>Como nomear corretamente um TrackBar
+## <a name="how-to-correctly-name-a-trackbar"></a>Como nomear corretamente uma barra de faixa
 
-Ao definir um TrackBar (ou controle deslizante), verifique se o rótulo de texto estático principal para o TrackBar aparece antes do TrackBar e se os rótulos de texto estáticos para os intervalos mínimo e máximo aparecem após o TrackBar. Lembre-se de que o Microsoft Acessibilidade Ativa usa o rótulo de texto estático que precede imediatamente um controle como a [Propriedade Name](name-property.md) para o controle. Colocar o rótulo de texto estático principal imediatamente antes do TrackBar e os outros rótulos depois dele garante que o Microsoft Acessibilidade Ativa forneça a propriedade Name correta para um cliente.
+Ao definir uma barra de faixa (ou controle deslizante), verifique se o rótulo de texto estático principal para a barra de faixa aparece antes da barra de faixa e se os rótulos de texto estático para os intervalos mínimo e máximo aparecem após a barra de faixa. Lembre-se Microsoft Active Accessibility usa o rótulo de texto estático que precede imediatamente um controle como a [propriedade Name](name-property.md) para o controle. Colocar o rótulo de texto estático principal imediatamente antes da barra de faixa e os outros rótulos depois dela garante que Microsoft Active Accessibility a propriedade Name correta para um cliente.
 
-A ilustração a seguir mostra um TrackBar típico com um rótulo de texto estático principal chamado "velocidade" e rótulos de texto estáticos para os intervalos mínimo ("min") e máximo ("Max").
+A ilustração a seguir mostra uma barra de faixa típica com um rótulo de texto estático principal chamado "Velocidade" e rótulos de texto estático para os intervalos mínimo ("min") e máximo ("max").
 
-![ilustração de um controle TrackBar que tem um rótulo principal e rótulos para os intervalos mínimo e máximo](images/speed-trackbar.png)
+![ilustração de um controle de barra de faixa que tem um rótulo principal e rótulos para os intervalos mínimo e máximo](images/speed-trackbar.png)
 
-O exemplo a seguir mostra a maneira correta de definir um TrackBar e seus rótulos de texto estáticos no arquivo de recurso:
+O exemplo a seguir mostra a maneira correta de definir uma barra de faixa e seus rótulos de texto estático no arquivo de recurso:
 
 ``` syntax
 BEGIN
@@ -145,17 +145,17 @@ BEGIN
 END
 ```
 
-## <a name="how-to-use-invisible-labels-to-name-controls"></a>Como usar rótulos invisíveis em controles de nome
+## <a name="how-to-use-invisible-labels-to-name-controls"></a>Como usar rótulos invisíveis para nomear controles
 
-Nem sempre é possível ou desejável ter um rótulo visível para cada controle. Por exemplo, às vezes, a adição de rótulos pode causar alterações indesejáveis na aparência da interface do usuário. Nesse caso, você pode usar rótulos invisíveis. O Microsoft Acessibilidade Ativa ainda coletará o texto associado a um rótulo invisível, mas o rótulo não aparecerá ou interferirá com a interface do usuário visual.
+Nem sempre é possível ou desejável ter um rótulo visível para cada controle. Por exemplo, às vezes, adicionar rótulos pode causar alterações indesejáveis na aparência da interface do usuário. Nesse caso, você pode usar rótulos invisíveis. Microsoft Active Accessibility ainda escolherá o texto associado a um rótulo invisível, mas o rótulo não aparecerá nem interferirá na interface do usuário visual.
 
-Assim como acontece com rótulos visíveis, um rótulo invisível deve preceder imediatamente o controle na ordem de tabulação. Para tornar um rótulo invisível em um arquivo de recurso (. rc), adicione `NOT WS_VISIBLE` ou `|~WS_VISIBLE` à parte do estilo do controle de texto estático. Se você estiver usando o editor de recursos no Visual Studio, poderá definir a propriedade Visible como false.
+Assim como com rótulos visíveis, um rótulo invisível deve preceder imediatamente o controle na ordem de tabulação. Para tornar um rótulo invisível em um arquivo de recurso (.rc), adicione ou à parte de estilo `NOT WS_VISIBLE` do controle de texto `|~WS_VISIBLE` estático. Se você estiver usando o Editor de Recursos Visual Studio, poderá definir a propriedade Visible como False.
 
-## <a name="how-to-use-direct-annotation-to-specify-the-name-property"></a>Como usar a anotação direta para especificar a propriedade Name
+## <a name="how-to-use-direct-annotation-to-specify-the-name-property"></a>Como usar anotação direta para especificar a propriedade name
 
-Os proxies padrão incluídos no componente Microsoft Acessibilidade Ativa Runtime, Oleacc.dll, fornecem automaticamente um objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para todos os controles padrão do Windows. Se você personalizar um controle padrão do Windows, os proxies padrão farão seu melhor para fornecer com precisão todas as propriedades de **IAccessible** para seu controle personalizado. Você deve testar exaustivamente um controle personalizado para garantir que os proxies padrão estejam fornecendo valores de propriedade precisos e completos. Se o teste revelar valores de propriedade imprecisos ou incompletos, você poderá usar a técnica de anotação dinâmica chamada anotação direta para fornecer valores de propriedade corretos e adicionar os que estão ausentes.
+Os proxies padrão incluídos no componente Microsoft Active Accessibility runtime do Oleacc.dll, Oleacc.dll, fornecem automaticamente um objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para todos os controles Windows padrão. Se você personalizar um controle Windows padrão, os proxies padrão fazem o melhor para fornecer com precisão todas as propriedades **IAccessible** para seu controle personalizado. Você deve testar completamente um controle personalizado para garantir que os proxies padrão estão fornecendo valores de propriedade precisos e completos. Se o teste revelar valores de propriedade imprecisos ou incompletos, você poderá usar a técnica de Anotação Dinâmica chamada anotação direta para fornecer valores de propriedade corretos e adicionar os que estão ausentes.
 
-Observe que a anotação dinâmica não é apenas para controles suportados pelos proxies do Microsoft Acessibilidade Ativa. Você também pode usá-lo para modificar ou fornecer propriedades para qualquer controle que forneça sua própria implementação de [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) .
+Observe que a Anotação Dinâmica não é apenas para controles com suporte pelos Microsoft Active Accessibility proxies. Você também pode usá-lo para modificar ou fornecer propriedades para qualquer controle que forneça sua própria implementação [**de IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 Esta seção se concentra em usar a anotação direta para fornecer um valor correto para a [Propriedade Name](name-property.md) do objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para um controle. Você também pode usar a anotação direta para fornecer outros valores de propriedades. Além disso, outras técnicas de anotação dinâmica ao lado da anotação direta estão disponíveis, e os recursos e funcionalidades da API de anotação dinâmica se estendem muito além do que é descrito nesta seção. Para obter mais informações sobre a anotação dinâmica, consulte [API de anotação dinâmica](dynamic-annotation-api.md).
 
@@ -170,7 +170,7 @@ Usar a anotação direta para alterar a [Propriedade Name](name-property.md) de 
     > [!Note]  
     > Para definir GUIDs, você deve incluir Initguid. h antes de OleAcc. h no mesmo arquivo.
 
-     
+     
 
 2.  Inicialize a biblioteca de Component Object Model (COM) chamando a função [CoInitializeEx](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) , normalmente durante o processo de inicialização do aplicativo.
 3.  Logo após a criação do controle de destino (normalmente durante a mensagem [ \_ INITDIALOG do WM](../dlgbox/wm-initdialog.md) ), crie uma instância do Gerenciador de anotações e obtenha um ponteiro para o ponteiro [**IAccPropServices**](/windows/desktop/api/oleacc/nn-oleacc-iaccpropservices) .
@@ -272,6 +272,6 @@ HRESULT RemoveAnnotatedNameFromControl(HWND hDlg, HWND hwndCtl)
 [Ferramentas de teste](testing-tools.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

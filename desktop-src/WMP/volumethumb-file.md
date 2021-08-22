@@ -3,22 +3,22 @@ title: Arquivo VolumeThumb
 description: Arquivo VolumeThumb
 ms.assetid: de6abfed-a811-44c4-8db2-f3b55ea38756
 keywords:
-- Capas móveis do Windows Media Player, arquivos de arte
+- Windows Media Player Capas móveis, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, arquivos VolumeThumb
-- Capas móveis do Windows Media Player, arquivos VolumeThumb
+- Windows Media Player Capas móveis, arquivos VolumeThumb
 - capas, arquivos VolumeThumb
 - Arquivos VolumeThumb em capas
 - Thumb, arquivos VolumeThumb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9b7ba87723025c91b3bdfb5af5fd233197dedb8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e9d06f10c5c35b0381faf28df3e8f311dfb3496845482c522f124db6bd69c0e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615177"
 ---
 # <a name="volumethumb-file"></a>Arquivo VolumeThumb
 
@@ -39,9 +39,9 @@ Talvez você queira tornar as áreas de imagens de polegar transparentes. Isso p
 [**Arquivos de arte**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

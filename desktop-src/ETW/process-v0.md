@@ -1,7 +1,7 @@
 ---
-description: Classe Process_V0-essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Process_V0 classe - essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 29ecf04c-4be1-451e-b140-4ffed337cfed
-title: Classe Process_V0
+title: Process_V0 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0e284840a078b2dac782aecaacae5490f4a06b27
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bb6cf5a36bc25763dd2bb05d57b3d6b9186b9dec95c903de40b58700f5859127
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070016"
 ---
-# <a name="process_v0-class"></a>\_Classe Process V0
+# <a name="process_v0-class"></a>Classe \_ Process V0
 
 Essa classe é a classe pai para eventos de processo.
 
@@ -36,7 +36,7 @@ class Process_V0 : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **process \_ V0** não define nenhum membro.
+A **classe \_ Process V0** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,20 +49,20 @@ A classe **process \_ V0** não define nenhum membro.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Processar**](process.md)
 </dt> <dt>
 
-[**Process \_ V0 \_ TypeGroup1**](process-v0-typegroup1.md)
+[**Processo \_ V0 \_ TypeGroup1**](process-v0-typegroup1.md)
 </dt> <dt>
 
-[**Processo \_ v1**](process-v1.md)
+[**Processo \_ V1**](process-v1.md)
 </dt> </dl>
 
  

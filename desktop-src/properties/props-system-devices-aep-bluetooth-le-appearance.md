@@ -1,19 +1,19 @@
 ---
-description: Saiba mais sobre a aparência do dispositivo LE Bluetooth. Esta página de referência descreve a propriedade System. Devices. AEP. Bluetooth. Le. Appearance.
+description: saiba mais sobre a aparência do dispositivo Bluetooth LE. Esta página de referência descreve o System. Devices. AEP. Bluetooth. Propriedade Le. Appearance.
 ms.assetid: 03c10b03-5821-476c-a1f3-3387ee4d6318
 title: System. Devices. AEP. Bluetooth. Le. Appearance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd9bc2362c361f4e44d81a304d3fa0e49a4f5eec
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: f877f1d4b1cabbe9da282c476c491f8459d710145a72d86646abc662c257ca39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340846"
 ---
 # <a name="systemdevicesaepbluetoothleappearance"></a>System. Devices. AEP. Bluetooth. Le. Appearance
 
-Aparência do dispositivo LE Bluetooth.
+Bluetooth Aparência do dispositivo LE.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 

@@ -6,12 +6,12 @@ keywords:
 - Criar e executar exemplo de StoClien
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f00274293c05e21e660dc8e9448ca95946cab8a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4d3d9526e81fc3fb2d6a0cfb03e8943ccf68688096588122da87861d8c88e531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105750422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663456"
 ---
 # <a name="create-and-run-stoclien-sample"></a>Criar e executar exemplo de StoClien
 
@@ -49,23 +49,23 @@ A tabela a seguir lista os arquivos pertinentes ao exemplo de **StoClien** .
 | PAPFILE. CPP  | Arquivo de implementação para a classe **CPapFile** C++.                                                                              |
 | GUIPAPER. T   | A declaração de classe para a classe **CGuiPaper** C++.                                                                           |
 | GUIPAPER. CPP | Arquivo de implementação para a classe **CGuiPaper** C++.                                                                             |
-| STOCLIEN. DSP | Microsoft Visual Studio arquivo de projeto.                                                                                            |
+| STOCLIEN. DSP | Microsoft Visual Studio Project arquivo.                                                                                            |
 
 
 
- 
+ 
 
 ## <a name="compound-files"></a>arquivos compostos
 
 O **StoClien** se baseia em copapel para gravar dados de desenho. Ele também se baseia em copapel para armazenar os dados em um arquivo composto. No entanto, em uma divisão típica de trabalho entre o cliente COM e o servidor, o **StoClien** compartilha parte da responsabilidade pelo armazenamento de arquivos. Essa divisão de trabalho é importante em aplicativos COM em que o cliente é um contêiner e o servidor é um objeto incorporado. Nesse arranjo, o cliente é responsável por criar ou abrir um arquivo de armazenamento estruturado, enquanto o objeto de servidor é responsável por usar esse armazenamento para suas próprias finalidades de armazenamento de dados. Isso pode envolver o objeto de servidor que cria subarmazenamentos no armazenamento que é fornecido a ele. Em geral, ele envolve o objeto Server criando objetos Stream no armazenamento. O uso de fluxos de armazenamento do copaper é detalhado no exemplo de **StoClien** .
 
-A interface [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) é usada pelo objeto de cliente e de servidor para executar operações de arquivo. A implementação dos arquivos compostos da arquitetura de armazenamento estruturado é usada. As funções de serviço padrão são usadas para operações em arquivos compostos. Por exemplo, a função [**StgCreateDocfile**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile) inicialmente cria um arquivo composto e retorna um ponteiro **IStorage** que pode ser usado para manipular o arquivo. Essa função específica é chamada em **StoClien**. A interface **IStorage** obtida é passada como um parâmetro para o copapel para seu uso. O objeto de copapel não cria ou abre arquivos compostos por conta própria: ele usa as interfaces **IStorage** e [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) para trabalhar em arquivos compostos que são fornecidos a ele.
+A interface [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) é usada pelo objeto de cliente e de servidor para executar operações de arquivo. a implementação dos arquivos compostos da arquitetura de Armazenamento estruturada é usada. As funções de serviço padrão são usadas para operações em arquivos compostos. Por exemplo, a função [**StgCreateDocfile**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile) inicialmente cria um arquivo composto e retorna um ponteiro **IStorage** que pode ser usado para manipular o arquivo. Essa função específica é chamada em **StoClien**. A interface **IStorage** obtida é passada como um parâmetro para o copapel para seu uso. O objeto de copapel não cria ou abre arquivos compostos por conta própria: ele usa as interfaces **IStorage** e [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) para trabalhar em arquivos compostos que são fornecidos a ele.
 
 Essas interfaces [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) e [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) não são implementadas em **StoClien** ou **StoServe**. Eles são implementados nas bibliotecas COM. Quando um ponteiro para uma dessas interfaces é obtido, seus métodos são essencialmente usados como um conjunto de serviços para operar em um arquivo composto.
 
- 
+ 
 
- 
+ 
 
 
 

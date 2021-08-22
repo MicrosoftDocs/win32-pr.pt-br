@@ -1,15 +1,15 @@
 ---
-description: Usando NSPStartup e NSPCleanup para inicialização e limpeza do provedor de namespace no SPI do Windows Sockets (Winsock).
+description: usando NSPStartup e NSPCleanup para inicialização e limpeza do provedor de namespace no SPI do Windows sockets (Winsock).
 ms.assetid: c9f55845-190d-440f-8b27-1be9585137e2
 title: Inicialização e limpeza do provedor de namespace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fedd7b40d79e755262df581c92e1fe3bdbfb06b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc4007533bb1456268ee3a1110da4681a7041a56ed80c0d9a522790c8a0c9a94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612976"
 ---
 # <a name="namespace-provider-initialization-and-cleanup"></a>Inicialização e limpeza do provedor de namespace
 

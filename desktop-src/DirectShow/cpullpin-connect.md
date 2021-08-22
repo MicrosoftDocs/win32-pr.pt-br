@@ -1,7 +1,7 @@
 ---
-description: O método Connect conclui uma conexão com o pino de saída.
+description: o método Conexão conclui uma conexão com o pino de saída.
 ms.assetid: fb20ef5d-e00a-4154-a6da-25bef663c0e7
-title: Método CPullPin. Connect (Pullpin. h)
+title: CPullPin. método de Conexão (Pullpin. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 97e3b0b676e02dee0e3ebd82de9def56edc2ea28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37240be1b732410d1e91974922f8ed7dc464b57b2596faa381c646a7513daf26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073500"
 ---
-# <a name="cpullpinconnect-method"></a>Método CPullPin. Connect
+# <a name="cpullpinconnect-method"></a>CPullPin. método de Conexão
 
 O `Connect` método conclui uma conexão com o pino de saída.
 
@@ -65,7 +65,7 @@ Valor booliano que especifica se as leituras síncronas devem ser usadas. Se **f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um **HRESULT**. Os possíveis valores incluem os seguintes.
 

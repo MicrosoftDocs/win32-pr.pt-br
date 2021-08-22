@@ -20,7 +20,7 @@ Você pode usar os seguintes métodos para especificar um caminho de objeto:
 
 -   Um caminho de objeto completo para uma classe anexa o nome da classe a um caminho de namespace.
 
-    O exemplo a seguir mostra o local da classe [**\_ LogicalDisk win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) dentro do \\ \\ namespace raiz cimv2 no servidor chamado Admin.
+    O exemplo a seguir mostra o local da classe [**\_ LogicalDisk win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) no \\ \\ namespace raiz cimv2 no servidor chamado Admin.
 
     ``` syntax
     \\Admin\Root\CimV2:Win32_LogicalDisk

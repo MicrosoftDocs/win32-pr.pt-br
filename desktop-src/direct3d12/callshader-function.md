@@ -37,20 +37,20 @@ void CallShader(uint ShaderIndex, inout param_t Parameter);
 
 `ShaderIndex`
 
-Um inteiro sem sinal representando o índice na tabela de [sombreador callable](callable-shader.md) especificada na chamada para [**DispatchRays**] (/Windows/Desktop/API/d3d12/NF-d3d12-id3d12graphicscommandlist4-dispatchrays.
+Um inteiro sem sinal que [](callable-shader.md) representa o índice na tabela de sombreador que pode ser chamada especificada na chamada para [**DispatchRays**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist4-dispatchrays.
 
 `Parameter`
 
-Os parâmetros definidos pelo usuário a serem passados para o sombreador que possa ser chamado.  Essa estrutura de parâmetro deve corresponder à estrutura de parâmetro usada no sombreador callable apontado na tabela de sombreador.
+Os parâmetros definidos pelo usuário a passar para o sombreador que pode ser chamado.  Essa estrutura de parâmetros deve corresponder à estrutura de parâmetro usada no sombreador que pode ser chamado apontado na tabela do sombreador.
 
 
 ## <a name="return-value"></a>Valor Retornado
 
-**livre**
+**Vazio**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função pode ser chamada nos seguintes tipos de sombreador raytracing:
+Essa função pode ser chamada dos seguintes tipos de sombreador de raio:
 
 * [**Sombreador resgatável**](callable-shader.md)
 * [**Sombreador do clique mais próximo**](closest-hit-shader.md)

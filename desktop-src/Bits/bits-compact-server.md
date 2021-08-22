@@ -4,12 +4,12 @@ description: O Serviço de Transferência Inteligente em Segundo Plano (BITS) Co
 ms.assetid: ab4cf901-6d93-433c-b1b2-ffa54d10725c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b40e2840c24e15379fac11a5a12ed76c225e7be5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 41cfbc18a8dc06bb474ab8df9df85fb7b8a96838db14bbc18aee4d94881985d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529186"
 ---
 # <a name="bits-compact-server"></a>BITS Compact Server
 
@@ -27,7 +27,7 @@ O BITS Compact Server é um componente de servidor opcional. Você pode usar uma
 
 -   Gerenciador do Servidor
 
--   Windows PowerShell
+-   Usando o Windows PowerShell
 
 -   Gerenciador de Pacotes
 
@@ -39,12 +39,12 @@ O BITS Compact Server é um componente de servidor opcional. Você pode usar uma
 
 Para obter mais informações, consulte a ajuda online do **Gerenciador do servidor** .
 
-**Para instalar o BITS Compact Server usando o Windows PowerShell**
+**Para instalar o BITS Compact Server usando Windows PowerShell**
 
-1.  Em um prompt de comando do Windows PowerShell, digite o seguinte comando: **Import-Module ServerManager**. Em seguida, pressione Enter.
+1.  em um prompt de comando Windows PowerShell, digite o seguinte comando: **Import-Module servermanager**. Em seguida, pressione Enter.
 2.  Digite o seguinte comando: **Add-WINDOWSFEATURE bits-Compact-Server**. Em seguida, pressione Enter.
 
-O exemplo com base em texto a seguir demonstra como instalar o BITS Compact Server usando cmdlets do Windows PowerShell.
+o exemplo de baseado em texto a seguir demonstra como instalar o BITS Compact Server usando cmdlets Windows PowerShell.
 
 ``` syntax
 PS C:\> Import-Module ServerManager
@@ -58,24 +58,24 @@ True    No             Success   {Compact Server}
 PS C:\>
 ```
 
-Para obter informações sobre como usar cmdlets, consulte a documentação do [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx) .
+para obter informações sobre como usar cmdlets, consulte a documentação do [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx) .
 
 Para obter mais informações sobre o cmdlet Import-Module, consulte [Import-Module](/previous-versions//dd347701(v=technet.10)) na biblioteca do Microsoft TechNet. Para obter ajuda na linha de comando, digite **Get-Help Import-Module**.
 
 Para obter mais informações sobre o cmdlet Add-WindowsFeature, consulte [Add-WindowsFeature](/previous-versions//dd347701(v=technet.10)) na biblioteca do Microsoft TechNet. Para obter ajuda na linha de comando, digite **Get-Help Add-WindowsFeature**.
 
-**Para instalar o BITS Compact Server usando o Gerenciador de pacotes**
+**para instalar o BITS Compact Server usando Gerenciador de Pacotes**
 
 -   Digite o seguinte comando: **PkgMgr.exe/IU: LightweightServer**.
 
 > [!Note]  
 > As configurações serão perdidas se o serviço do Compact Server for reiniciado ou se o computador for reinicializado.
 
- 
+ 
 
 ## <a name="bits-compact-server-remote-management"></a>Gerenciamento remoto do BITS Compact Server
 
-O BITS Compact Server com gerenciamento remoto de BITS permite transferências de arquivos remotas mais seguras. O gerenciamento remoto de BITS usa um provedor de Instrumentação de Gerenciamento do Windows (WMI) para permitir que um administrador de sistema ou um aplicativo de controlador crie remotamente trabalhos de transferência de BITS nos clientes e publique arquivos para hospedagem no BITS Compact Server. O provedor BITS também pode ser usado para permitir que um aplicativo use remotamente o cliente BITS em conjunto com o BITS Compact Server para transferir arquivos de um computador remoto para outro computador remoto.
+O BITS Compact Server com gerenciamento remoto de BITS permite transferências de arquivos remotas mais seguras. o gerenciamento remoto de bits usa um provedor de Instrumentação de Gerenciamento do Windows (WMI) para permitir que um administrador de sistema ou um aplicativo de controlador crie remotamente trabalhos de transferência de BITS nos clientes e publique arquivos para hospedagem no BITS Compact Server. O provedor BITS também pode ser usado para permitir que um aplicativo use remotamente o cliente BITS em conjunto com o BITS Compact Server para transferir arquivos de um computador remoto para outro computador remoto.
 
 Para obter mais informações, consulte a documentação do [provedor bits](/previous-versions/windows/desktop/bitsprov/bits-provider) .
 
@@ -86,6 +86,6 @@ Para obter mais informações, consulte a documentação do [provedor bits](/pre
 [Provedor de BITS](/previous-versions/windows/desktop/bitsprov/bits-provider)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -122,10 +122,10 @@ A lista de atributos opcionais para uma classe. A lista de atributos só pode se
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -143,10 +143,10 @@ A lista de atributos opcionais para uma classe. A lista de atributos só pode se
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -164,10 +164,10 @@ A lista de atributos opcionais para uma classe. A lista de atributos só pode se
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -185,10 +185,10 @@ A lista de atributos opcionais para uma classe. A lista de atributos só pode se
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
