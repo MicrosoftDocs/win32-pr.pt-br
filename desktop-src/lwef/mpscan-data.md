@@ -3,8 +3,8 @@ title: Estrutura de MPSCAN_DATA (MpClient. h)
 description: Verifique os dados passados para o retorno de chamada.
 ms.assetid: 6C9AAF1E-7566-43EE-A100-5112E9B8878C
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPSCAN_DATA
-- Ponteiro de estrutura de PMPSCAN_DATA recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPSCAN_DATA
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPSCAN_DATA
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e78508313f102e2baad19cf359a5c3a7c172db0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b7c00357b8f104fff42b94de552d52979c364dee64a82bb8e438946319c8c13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975986"
 ---
 # <a name="mpscan_data-structure"></a>\_Estrutura de dados MPSCAN
 
@@ -96,9 +96,9 @@ Estatísticas de ameaças com conclusões de verificação bem-sucedidas.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

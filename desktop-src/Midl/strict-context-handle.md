@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e66fd0754ec82de2354983e10e23ffc6329569
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0db19c74efa323fa7e3abc4bfd17c14a471cbb9c81414ae78064f84bfc19fa7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013574"
 ---
 # <a name="strict_context_handle-attribute"></a>atributo de identificador de \_ contexto estrito \_
 
@@ -97,6 +97,6 @@ Normalmente, quando uma chamada para um método de interface gera um identificad
 [tipo \_ de \_ identificador de contexto estrito \_](type-strict-context-handle.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

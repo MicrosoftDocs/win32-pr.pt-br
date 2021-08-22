@@ -16,12 +16,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dddf2a73673e886456eb43bfbd2cefc72250cc3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40c6db0223a18c2fa43de8eed38e670aea36c024f1e66509005bb74f0a8f1cd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118849277"
 ---
 # <a name="win32_rdmsmanagementdata-class"></a>\_Classe Win32 RDMSManagementData
 

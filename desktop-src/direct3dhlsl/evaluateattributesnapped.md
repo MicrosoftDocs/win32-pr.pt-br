@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 70a9389ed9e9f4fff16f82610cb611bc4da2c7a3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 5408b2c8133947b948bc42eb6ff0c725584b0cf2c60ccf0731a9d584d3c898a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104988537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118512013"
 ---
 # <a name="evaluateattributesnapped-function"></a>Função EvaluateAttributeSnapped
 
@@ -28,8 +28,8 @@ Avalia no pixel centróide com um deslocamento.
 
 ``` syntax
 numeric EvaluateAttributeSnapped(
-  in attrib numeric value,
-  in 
+  in attrib numeric value,
+  in 
             int2 offset
 );
 ```
@@ -82,7 +82,7 @@ Somente os 4 bits menos significativos dos primeiros dois componentes (U, V) do 
 > [!Note]  
 > As bordas esquerda e superior de um pixel são incluídas no deslocamento; no entanto, as bordas inferior e direita não são incluídas. Todos os outros bits no inteiro de 32 bits você e os valores de deslocamento V são ignorados.
 
- 
+ 
 
 Uma implementação pode assumir o deslocamento fornecido pelo sombreador e obter um valor completo de ponto fixo de 32 bits (28,4), que abrange o intervalo válido, executando o seguinte cálculo:
 
@@ -114,19 +114,19 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -138,9 +138,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,16 +4,16 @@ description: Saiba mais sobre a Propriedade Visível do objeto Commands, que det
 ms.assetid: 0178a789-141b-4d4c-ba7c-05c7995f13bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6ea780ed5f19dbe732b18de741f9d7ee376df67
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: c742733d06f0a4c7ae2d10c7fb97a20e735b59370c61efa5f7204003f1cd81bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975466"
 ---
 # <a name="visible-property-commands-object"></a>Propriedade Visible (objeto Commands)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

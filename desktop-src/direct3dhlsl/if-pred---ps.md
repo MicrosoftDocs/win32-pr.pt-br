@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ead7c5936550715d48ee1ef6a3938b6219558823
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a1a9e1c531e5dc6cd76bdd220a94730f2fb7b859eb99d9bba217a008fb02b4c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511912"
 ---
 # <a name="if-pred---ps"></a>se Pred-PS
 
@@ -29,7 +29,7 @@ Início de um [booliano-PS](if-bool---ps.md)... [else-PS](else---ps.md)... [endi
 
 
 
- 
+ 
 
 Em que:
 
@@ -47,7 +47,7 @@ Em que:
 
 
 
- 
+ 
 
 Essa instrução é usada para ignorar um bloco de código, com base em um canal do registro de predicado. Cada \_ bloco If Pred deve terminar com uma instrução [else-PS](else---ps.md) ou [endif-PS](endif---ps.md) .
 
@@ -64,9 +64,9 @@ Um \_ bloco If Pred não pode ampliar um bloco de loops; ele deve estar completa
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

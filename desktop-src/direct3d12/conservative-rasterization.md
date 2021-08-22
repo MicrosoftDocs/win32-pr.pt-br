@@ -5,12 +5,12 @@ ms.assetid: 081199AD-1702-4EC8-95AD-B1148C676199
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e4fae3489d54ab7b6b7abfda56f54dd8d970962
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 15bb5893e944c5d495cf91fdb334bd6ab5f755b7f1e200648242cb46b281f695
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104548323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045747"
 ---
 # <a name="direct3d-12-conservative-rasterization"></a>Rasterização de Direct3D 12 conservador
 
@@ -35,7 +35,7 @@ A rasterização conservadora adiciona alguma certeza à renderização de pixel
     -   [Seleção de interação de estado](#cull-state-interaction)
     -   [Interação IsFrontFace](#isfrontface-interaction)
     -   [Interação dos modos de preenchimento](#fill-modes-interaction)
--   [Detalhes da implementação](#implementation-details)
+-   [Detalhes de implementação](#implementation-details)
 -   [Resumo da API](#api-summary)
 -   [Tópicos relacionados](#related-topics)
 
@@ -209,15 +209,15 @@ Os seguintes métodos, estruturas, enumerações e classes auxiliares referencia
 [Tutoriais de vídeo do DirectX Advanced Learning: rasterização conservadora](https://www.youtube.com/watch?v=zL0oSY_YmDY)
 </dt> <dt>
 
-[Exibições ordenadas do rasterizador](rasterizer-order-views.md)
+[Modos de exibição ordenados do rasterizador](rasterizer-order-views.md)
 </dt> <dt>
 
 [Renderização](rendering.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

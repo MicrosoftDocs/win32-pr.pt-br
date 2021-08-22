@@ -4,26 +4,26 @@ ms.assetid: 0F2DB9A7-64ED-4952-BCB3-F2B15BA37D2A
 title: MF_MEDIA_ENGINE_AUDIO_CATEGORY atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d22cd3795886b78afae03ba4b592d4657857f76b
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 2939c5ac839544acb8dd65c2ecae1769c7dd79bb78b19fe40c1f8ae27865ca03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103930123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104782"
 ---
-# <a name="mf_media_engine_audio_category-attribute"></a>\_Atributo de \_ categoria de áudio do mecanismo de mídia MF \_ \_
+# <a name="mf_media_engine_audio_category-attribute"></a>Atributo MF \_ MEDIA \_ ENGINE AUDIO \_ \_ CATEGORY
 
 Especifica a categoria do fluxo de áudio.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**[**\_categoria de fluxo de áudio \_**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)**
+**[**CATEGORIA DE \_ FLUXO DE \_ ÁUDIO**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)**
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é um membro da enumeração de [**\_ \_ categoria de fluxo de áudio**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) .
+O valor desse atributo é um membro da [**enumeração AUDIO \_ STREAM \_ CATEGORY.**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)
 
-Esse atributo é usado com o método [**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) para inicializar o mecanismo de mídia. O atributo é opcional.
+Esse atributo é usado com o [**método IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) para inicializar o Mecanismo de Mídia. O atributo é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ Esse atributo é usado com o método [**IMFMediaEngineClassFactory:: CreateInsta
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Esse atributo é usado com o método [**IMFMediaEngineClassFactory:: CreateInsta
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

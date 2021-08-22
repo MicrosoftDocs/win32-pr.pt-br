@@ -1,6 +1,6 @@
 ---
-title: Condições de filtragem disponíveis em cada camada de filtragem (Fwpmu. h)
-description: O mecanismo de filtro da WFP (plataforma de filtragem do Windows) dá suporte a um conjunto diferente de condições de filtragem em cada uma de suas camadas de filtragem.
+title: Condições de filtragem disponíveis em cada camada de filtragem (Fwpmu.h)
+description: O mecanismo de filtro Windows WFP (Plataforma de Filtragem de Dados) dá suporte a um conjunto diferente de condições de filtragem em cada uma de suas camadas de filtragem.
 ms.assetid: 6faace21-44ec-49dd-8e77-e403c258c14a
 topic_type:
 - apiref
@@ -44,18 +44,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd0c3806c7c3c7a5fa7f10af0e5e11c212bd93e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c66aaceadec9a04e926806cf95859ffff2e4fa542b592edb4a11608a621a3338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951195"
 ---
 # <a name="filtering-conditions-available-at-each-filtering-layer"></a>Condições de filtragem disponíveis em cada camada de filtragem
 
-O mecanismo de filtro da WFP (plataforma de filtragem do Windows) dá suporte a um conjunto diferente de condições de filtragem em cada uma de suas camadas de filtragem.
+O mecanismo de filtro Windows WFP (Plataforma de Filtragem de Dados) dá suporte a um conjunto diferente de condições de filtragem em cada uma de suas camadas de filtragem.
 
-A lista de condições de filtragem que estão disponíveis em cada camada são as seguintes.
+A lista de condições de filtragem disponíveis em cada camada é a seguinte.
 
 ## <a name="fwpm_layer_inbound_ippacket_v4--fwpm_layer_inbound_ippacket_v4_discard--fwpm_layer_inbound_ippacket_v6--fwpm_layer_inbound_ippacket_v6_discard"></a>FWPM_LAYER_INBOUND_IPPACKET_V4/FWPM_LAYER_INBOUND_IPPACKET_V4_DISCARD/FWPM_LAYER_INBOUND_IPPACKET_V6/FWPM_LAYER_INBOUND_IPPACKET_V6_DISCARD
 - FWPM_CONDITION_FLAGS
@@ -162,7 +162,7 @@ A lista de condições de filtragem que estão disponíveis em cada camada são 
 ## <a name="fwpm_layer_inbound_icmp_error_v4--fwpm_layer_inbound_icmp_error_v4_discard--fwpm_layer_inbound_icmp_error_v6--fwpm_layer_inbound_icmp_error_v6_discard"></a>FWPM_LAYER_INBOUND_ICMP_ERROR_V4/FWPM_LAYER_INBOUND_ICMP_ERROR_V4_DISCARD/FWPM_LAYER_INBOUND_ICMP_ERROR_V6/FWPM_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD
 - FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX
 - FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE
-- FWPM_CONDITION_ARRIVAL_SUB_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_SUB_INTERFACE_INDEX
+- FWPM_CONDITION_ARRIVAL_SUB_INTERFACE_INDEX Windows **Vista/Windows 7:** FWPM_CONDITION_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_ICMP_CODE
@@ -177,9 +177,9 @@ A lista de condições de filtragem que estão disponíveis em cada camada são 
 - FWPM_CONDITION_IP_LOCAL_ADDRESS
 - FWPM_CONDITION_IP_LOCAL_INTERFACE
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
-- FWPM_CONDITION_LOCAL_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_INDEX
-- FWPM_CONDITION_LOCAL_INTERFACE_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
-- FWPM_CONDITION_LOCAL_TUNNEL_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
+- FWPM_CONDITION_LOCAL_INTERFACE_INDEX Windows **Vista/Windows 7:** FWPM_CONDITION_INTERFACE_INDEX
+- FWPM_CONDITION_LOCAL_INTERFACE_TYPE Windows **Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
+- FWPM_CONDITION_LOCAL_TUNNEL_TYPE Windows **Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 e posterior
 - FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID
 ## <a name="fwpm_layer_outbound_icmp_error_v4--fwpm_layer_outbound_icmp_error_v4_discard--fwpm_layer_outbound_icmp_error_v6--fwpm_layer_outbound_icmp_error_v6_discard"></a>FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD
@@ -514,7 +514,7 @@ A lista de condições de filtragem que estão disponíveis em cada camada são 
 
 ## <a name="remarks"></a>Comentários
 
-Os sufixos v4 e V6 no final dos identificadores de camada indicam se a camada está localizada na pilha de rede IPv4 ou na pilha de rede IPv6.
+Os sufixos V4 e V6 no final dos identificadores de camada indicam se a camada está localizada na pilha de rede IPv4 ou na pilha de rede IPv6.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -522,9 +522,9 @@ Os sufixos v4 e V6 no final dos identificadores de camada indicam se a camada es
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

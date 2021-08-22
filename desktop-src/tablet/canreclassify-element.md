@@ -1,19 +1,19 @@
 ---
-description: Quando true, indica que a tinta pode ser re analisada. Esse elemento será false se o usuário tiver definido explicitamente o tipo da tinta usando os recursos Converter Manuscrito em Texto ou Alterar Forma para de Diário.
+description: Quando true, indica que a tinta pode ser analisada novamente. Esse elemento será false se o usuário tiver definido explicitamente o tipo de tinta usando converter manuscrito em texto ou alterar forma para recursos do diário.
 ms.assetid: d1b9bd7f-e420-4290-a542-f1216b6ef203
 title: Elemento CanReClassify
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f243b4237e0dd9195a2a254a06cd86dceb31b63
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 6ffe64efef37f30c0bdcaebc2b20fb7637fb60da5acb1d771ede3b6bee6e23cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967735"
 ---
 # <a name="canreclassify-element"></a>Elemento CanReClassify
 
-Quando **true**, indica que a tinta pode ser re analisada. Esse elemento será **false** se o usuário tiver definido explicitamente o tipo da tinta usando os recursos Converter Manuscrito em Texto ou Alterar Forma para de Diário.
+Quando **true**, indica que a tinta pode ser analisada novamente. Esse elemento será **false** se o usuário tiver definido explicitamente o tipo de tinta usando converter manuscrito em texto ou alterar forma para recursos do diário.
 
 ## <a name="definition"></a>Definição
 
@@ -40,8 +40,8 @@ Nenhum.
 |                  | Valor                                      |
 |------------------|--------------------------------------------|
 | **Tipo de elemento** | xs:boolean                                 |
-| **Namespace**    | urn:schemas-microsoft-com:tabletpc:richink |
-| **Nome do esquema**  | Leitor de Diário                             |
+| **Namespace**    | urn: esquemas-Microsoft-com: Tablet: RichInk |
+| **Nome do esquema**  | Leitor de diário                             |
 
 
 

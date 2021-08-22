@@ -1,7 +1,7 @@
 ---
 description: Especifica o nível de proteção para conteúdo de vídeo.
 ms.assetid: 681c6ad9-cf55-47e4-bbb9-e7fdc499a709
-title: Estrutura de D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 2d3111d01f178be3128dcb79f65d2155195c2e4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d1b76a6fea0dd6b966bd72001efb187a7a3a14e75b4d41d631e5a1ea163fe94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974705"
 ---
-# <a name="d3dauthenticatedchannel_protection_flags-structure"></a>Estrutura de sinalizadores de \_ proteção do D3DAUTHENTICATEDCHANNEL \_
+# <a name="d3dauthenticatedchannel_protection_flags-structure"></a>Estrutura DE SINALIZADORES DE PROTEÇÃO D3DAUTHENTICATEDCHANNEL \_ \_
 
 Especifica o nível de proteção para conteúdo de vídeo.
 
@@ -49,28 +49,28 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_PROTECTION_FLAGS {
 **ProtectionEnabled**
 </dt> <dd>
 
-Se 1, a proteção de conteúdo de vídeo está habilitada.
+Se 1, a proteção de conteúdo de vídeo será habilitada.
 
 </dd> <dt>
 
 **OverlayOrFullscreenRequired**
 </dt> <dd>
 
-Se for 1, o aplicativo exigirá que o vídeo seja exibido usando uma sobreposição de hardware ou o modo exclusivo de tela inteira.
+Se 1, o aplicativo exigirá que o vídeo seja exibido usando uma sobreposição de hardware ou um modo exclusivo de tela inteira.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd>
 
-Reservado. Definir todos os bits como zero.
+Reservado. De definir todos os bits como zero.
 
 </dd> <dt>
 
 **Valor**
 </dt> <dd>
 
-Use esse membro para acessar todos os bits na União.
+Use esse membro para acessar todos os bits na união.
 
 </dd> </dl>
 
@@ -80,9 +80,9 @@ Use esse membro para acessar todos os bits na União.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

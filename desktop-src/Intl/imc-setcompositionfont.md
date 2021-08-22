@@ -4,12 +4,12 @@ ms.assetid: 17b222e7-bf57-4cdd-8475-d9a8be03ab7f
 title: Comando IMC_SETCOMPOSITIONFONT (IMM. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbb84c9e05ab19206064988a71b0ffc39b21a44b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ebc9f435371d4ae08b12191419c95fd53c69256064f0e90bb654e75fab922f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949267"
 ---
 # <a name="imc_setcompositionfont-command"></a>\_Comando SETCOMPOSITIONFONT do IMC
 
@@ -56,7 +56,7 @@ Ao processar esse comando, a janela do IME altera a fonte selecionada atualmente
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Atributo AlbumTitleSortOrder
 description: O atributo AlbumTitleSortOrder é o valor a ser usado para classificar a coluna título do álbum na biblioteca.
 ms.assetid: be84b65d-c635-4ca9-86a6-32011853a5d1
 keywords:
-- Atributo AlbumTitleSortOrder Windows Media Player
+- Windows Media Player de atributo AlbumTitleSortOrder
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b870b719c6884f520f6d4389dcbd5918bfd316a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea671ca999d26200a04bec2ef066ee9782b00022eccaf3153bd5d6a7d2b48487
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055354"
 ---
 # <a name="albumtitlesortorder-attribute"></a>Atributo AlbumTitleSortOrder
 
@@ -39,7 +39,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versão<br/> | Somente Windows Media Player 9 Series<br/> |
+| Versão<br/> | somente Windows Media Player 9 Series<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: função glListBase (GL. h)
+title: Função glListBase (Gl.h)
 description: A função glListBase define a base da lista de exibição para glCallLists.
 ms.assetid: df82f699-b2af-471a-83f3-5620857ba45d
 keywords:
-- função glListBase OpenGL
+- Função glListBase OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c46af03477afc1b656df3a321fd8aa652b034b35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ba7cbe7b179184efa739ac3492f4e74b36f56abe0f02498a0e1a688b85183a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118938513"
 ---
-# <a name="gllistbase-function"></a>função glListBase
+# <a name="gllistbase-function"></a>Função glListBase
 
-A função **glListBase** define a base da lista de exibição para **glCallLists**.
+A **função glListBase** define a base da lista de exibição **para glCallLists.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void WINAPI glListBase(
 *base* 
 </dt> <dd>
 
-Um deslocamento de inteiro que será adicionado a deslocamentos [**glCallLists**](glcalllists.md) para gerar nomes de lista de exibição. O valor inicial é zero.
+Um deslocamento inteiro que será adicionado a [**deslocamentos glCallLists**](glcalllists.md) para gerar nomes de lista de exibição. O valor inicial é zero.
 
 </dd> </dl>
 
@@ -53,23 +53,23 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O código de erro a seguir pode ser recuperado pela função [**glGetError**](glgeterror.md) .
+O código de erro a seguir pode ser recuperado pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glListBase** especifica uma matriz de deslocamentos. Nomes de lista de exibição são gerados adicionando *base* a cada deslocamento. Os nomes que fazem referência a listas de exibição válidas são executados; outras são ignoradas.
+A **função glListBase** especifica uma matriz de deslocamentos. Os nomes de lista de exibição são gerados *adicionando base* a cada deslocamento. Os nomes que referenciam listas de exibição válidas são executados; outros são ignorados.
 
-A função a seguir recupera informações relacionadas a **glListBase**:
+A função a seguir recupera informações relacionadas a **glListBase:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com base de lista de argumentos GL \_ \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ LIST \_ BASE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ A função a seguir recupera informações relacionadas a **glListBase**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: a21dd25a-ac3c-483b-b270-6d86f10ae0a0
 title: 'Programa C de exemplo: Criptografando um arquivo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4f20d05b1456c6b38783bc9ec10d4c26633c2d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5b67729c5b6068d1c85b3ecdf1b345b89c9554166d1942f266966f5c3702499
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007654"
 ---
 # <a name="example-c-program-encrypting-a-file"></a>Programa C de exemplo: Criptografando um arquivo
 

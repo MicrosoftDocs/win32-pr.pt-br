@@ -1,7 +1,7 @@
 ---
-description: O método IsConnected determina se o PIN está conectado a outro PIN.
+description: O método IsConnected determina se o pino está conectado a outro pino.
 ms.assetid: d8b9b43b-6f8d-4d75-9688-f0cee3794a78
-title: Método CBasePin. IsConnected (Amfilter. h)
+title: Método CBasePin.IsConnected (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b857e1ceff4844d66c55cf729a3d2b9771d48846
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 95bfbe3613482d879bde4945d32e3df590c9bd5491b9f274442f3315771f9f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955175"
 ---
-# <a name="cbasepinisconnected-method"></a>Método CBasePin. IsConnected
+# <a name="cbasepinisconnected-method"></a>Método CBasePin.IsConnected
 
-O `IsConnected` método determina se o PIN está conectado a outro PIN.
+O `IsConnected` método determina se o pino está conectado a outro pino.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ BOOL IsConnected();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se o PIN estiver conectado. Caso contrário, retornará **false**.
+Retornará **TRUE** se o pino estiver conectado. Caso contrário, **retornará FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará **true** se o PIN estiver conectado. Caso contrário, retornará **fa
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

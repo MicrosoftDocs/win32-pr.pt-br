@@ -8,12 +8,12 @@ keywords:
 - Active Directory, usando, segurança, definindo direitos para propriedades específicas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79bfa24b574639e64fbb17c33fabee1185cc014c
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 86c01070b5c5b23e7524bd3b54293576e578861e0120b431e6dc95b7a5b4cc4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024734"
 ---
 # <a name="setting-rights-to-specific-properties-of-specific-types-of-objects"></a>Definindo direitos para propriedades específicas de tipos específicos de objetos
 
@@ -30,10 +30,10 @@ Permissões específicas de propriedade podem ser usadas em combinação com her
 > [!IMPORTANT]
 > Defina ADS \_ ACEFLAG \_ INHERIT \_ Ace para fazer com que a Ace seja herdada. Além disso, Set ADS \_ ACEFLAG \_ herdará \_ somente \_ Ace se o tipo de objeto ao qual essa Ace se aplica não corresponder ao tipo de objeto do contêiner onde a ACE é especificada. Se isso não for feito, a ACE também entrará em vigor no contêiner e poderá conceder direitos inesperados.
 
- 
+ 
 
 Para obter mais informações e exemplos de código que podem ser usados para definir esse tipo de ACE, consulte [código de exemplo para definir uma ACE em um objeto de diretório](example-code-for-setting-an-ace-on-a-directory-object.md).
 
- 
+ 
 
- 
+ 

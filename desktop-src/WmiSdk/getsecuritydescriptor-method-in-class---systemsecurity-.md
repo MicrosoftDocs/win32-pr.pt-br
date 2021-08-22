@@ -1,8 +1,8 @@
 ---
-description: Obtém o descritor de segurança que controla o acesso ao namespace do WMI ao qual você está conectado. O descritor de segurança é retornado como uma instância de \_ \_ SecurityDescriptor.
+description: Obtém o descritor de segurança que controla o acesso ao namespace WMI ao qual você está conectado. O descritor de segurança é retornado como uma instância de \_ \_ SecurityDescriptor.
 ms.assetid: b031af45-9237-434d-91db-69222306c615
 ms.tgt_platform: multiple
-title: Método GetSecurityDescriptor da classe __SystemSecurity
+title: Método GetSecurityDescriptor da __SystemSecurity classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: 7aece0a50678689141de9b9a38a014414578de3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77053174878db77409c525510acb54740ac8ad5c5c0505af5bf6ff8421cdf737
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050854"
 ---
 # <a name="getsecuritydescriptor-method-of-the-__systemsecurity-class"></a>Método GetSecurityDescriptor da \_ \_ classe SystemSecurity
 
-O método **GetSecurityDescriptor** Obtém o descritor de segurança que controla o acesso ao namespace do WMI ao qual você está conectado. O descritor de segurança é retornado como uma instância de [**\_ \_ SecurityDescriptor**](--securitydescriptor.md). Para obter mais informações, consulte [alterando a segurança de acesso em objetos protegíveis](changing-access-security-on-securable-objects.md).
+O **método GetSecurityDescriptor** obtém o descritor de segurança que controla o acesso ao namespace WMI ao qual você está conectado. O descritor de segurança é retornado como uma instância de [**\_ \_ SecurityDescriptor**](--securitydescriptor.md). Para obter mais informações, consulte [Alterando a segurança de acesso em objetos securáveis.](changing-access-security-on-securable-objects.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ uint32 GetSecurityDescriptor(
 
 <dl> <dt>
 
-*Descritor* \[ fora\]
+*Descritor* \[ out\]
 </dt> <dd>
 
 O descritor de segurança associado ao namespace WMI.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter mais informações, consulte [códigos de retorno do WMI](wmi-return-codes.md) ou [**WbemErrorEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum).
+Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter mais informações, [consulte Códigos de retorno WMI](wmi-return-codes.md) ou [**WbemErrorEnum**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 <dl> <dt>
 
@@ -81,18 +81,18 @@ O usuário não tem privilégios adequados para executar o método.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
-Um parâmetro especificado na chamada do método não é válido.
+Um parâmetro especificado na chamada de método não é válido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A instância do [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa um tipo de dados de [**\_ \_ controle do descritor de segurança**](/windows/desktop/SecAuthZ/security-descriptor-control) e contém uma DACL ( [*lista de controle de acesso discricionário*](/windows/desktop/SecGloss/d-gly) ) e uma SACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/s-gly) ) do sistema. Para obter mais informações, consulte [listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists).
+A [**instância \_ securityDescriptor do Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa um tipo de dados [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) e contém uma DACL [*(lista*](/windows/desktop/SecGloss/d-gly) de controle de acesso discricionário) e uma SACL [*(lista*](/windows/desktop/SecGloss/s-gly) de controle de acesso do sistema). Para obter mais informações, consulte [Listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists).
 
-Se **SeSecurityPrivilege** não for concedido ou habilitado ao obter um descritor de segurança, somente a DACL será retornada no descritor de segurança retornado. Para obter mais informações, consulte [**constantes de privilégio**](privilege-constants.md) e [executando operações privilegiadas](executing-privileged-operations.md).
+Se **o SeSecurityPrivilege** não for concedido ou habilitado ao obter um descritor de segurança, somente a DACL será retornada no descritor de segurança retornado. Para obter mais informações, consulte [**Constantes de privilégio**](privilege-constants.md) [e Executando operações privilegiadas](executing-privileged-operations.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ Se **SeSecurityPrivilege** não for concedido ou habilitado ao obter um descrito
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 
@@ -113,7 +113,7 @@ Se **SeSecurityPrivilege** não for concedido ou habilitado ao obter um descrito
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[Configurando descritores de segurança namepace](setting-namespace-security-descriptors.md)
+[Definindo Descritores de Segurança namepace](setting-namespace-security-descriptors.md)
 </dt> </dl>
 
  

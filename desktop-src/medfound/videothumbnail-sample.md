@@ -4,12 +4,12 @@ ms.assetid: 2c941f57-cd22-4462-bc47-347c383705fd
 title: Exemplo de VideoThumbnail
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caebe2e096ee45361dfe98b19071a5f1e388019e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96fc361f443e870ffe7c3fadf3c4cdadf5b0c15d59819df02369597742d74a32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104564189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972575"
 ---
 # <a name="videothumbnail-sample"></a>Exemplo de VideoThumbnail
 
@@ -37,7 +37,7 @@ Este exemplo demonstra as seguintes interfaces de Media Foundation:
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/VideoThumbnail).
+este exemplo está disponível no [repositório github de amostras clássicas do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/VideoThumbnail).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,9 +1,9 @@
 ---
-title: 'SampleGrad:: SampleGrad (S, float, float, float, int, float, uint) function para Texture1DArray'
+title: Função SampleGrad::SampleGrad(S,float,float,float,int,float,uint) para Texture1DArray
 description: Saiba como essa função amostra uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado.
 ms.assetid: 8F0D2A4E-37A9-4141-9EE7-2AACBB29E3C2
 keywords:
-- HLSL da função SampleGrad
+- Função SampleGrad HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7a0feca232f09da4dc99ff97f68eaab881f1e9ee
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 17e01e987e7d15c33d9d1221499d448ef6567a785f8754274831f3969ed650ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103664128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043704"
 ---
-# <a name="samplegradsamplegradsfloatfloatfloatintfloatuint-function-for-texture1darray"></a>SampleGrad:: SampleGrad (S, float, float, float, int, float, uint) function para Texture1DArray
+# <a name="samplegradsamplegradsfloatfloatfloatintfloatuint-function-for-texture1darray"></a>Função SampleGrad::SampleGrad(S,float,float,float,int,float,uint) para Texture1DArray
 
-Exemplifica uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado, com um valor opcional para fixe os valores de nível de detalhe (LOD) de exemplo para. Retorna o status sobre a operação.
+Amostra uma textura, usando um gradiente para influenciar a maneira como o local de exemplo é calculado, com um valor opcional para fixar valores lod (nível de detalhes) de exemplo. Retorna o status sobre a operação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,22 +48,22 @@ DXGI_FORMAT SampleGrad(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **samplestate**
+Tipo: **SamplerState**
 
-Um [estado de amostra](dx-graphics-hlsl-sampler.md). Este é um objeto declarado em um arquivo de efeito que contém atribuições de estado.
+Um [estado sampler](dx-graphics-hlsl-sampler.md). Esse é um objeto declarado em um arquivo de efeito que contém atribuições de estado.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de textura. O tipo de argumento é dependente do tipo de objeto Texture.
+As coordenadas de textura. O tipo de argumento depende do tipo de objeto de textura.
 
 
 
-| Tipo de Texture-Object                    | Tipo de parâmetro |
+| Texture-Object tipo                    | Tipo de parâmetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -76,16 +76,16 @@ As coordenadas de textura. O tipo de argumento é dependente do tipo de objeto T
 
 </dd> <dt>
 
-*Campo DDX* \[ em\]
+*DDX* \[ em\]
 </dt> <dd>
 
 Tipo: **float**
 
-A taxa de alteração da geometria da superfície na direção x. O tipo de argumento é dependente do tipo de objeto Texture.
+A taxa de alteração da geometria da superfície na direção x. O tipo de argumento depende do tipo de objeto de textura.
 
 
 
-| Tipo de Texture-Object                      | Tipo de parâmetro |
+| Texture-Object tipo                      | Tipo de parâmetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -98,16 +98,16 @@ A taxa de alteração da geometria da superfície na direção x. O tipo de argu
 
 </dd> <dt>
 
-*Ddy* \[ no\]
+*DDY* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-A taxa de alteração da geometria da superfície na direção y. O tipo de argumento é dependente do tipo de objeto Texture.
+A taxa de alteração da geometria da superfície na direção y. O tipo de argumento depende do tipo de objeto de textura.
 
 
 
-| Tipo de Texture-Object                      | Tipo de parâmetro |
+| Texture-Object tipo                      | Tipo de parâmetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -120,20 +120,20 @@ A taxa de alteração da geometria da superfície na direção y. O tipo de argu
 
 </dd> <dt>
 
-*Deslocamento* \[ no\]
+*Deslocamento* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
 
-Um deslocamento de coordenadas de textura opcional, que pode ser usado para qualquer tipo de objeto de textura; o deslocamento é aplicado ao local antes da amostragem. Use um deslocamento somente em um inteiro MipLevel; caso contrário, você poderá obter resultados que não se traduzem bem em hardware. O tipo de argumento é dependente do tipo de objeto Texture. Para obter mais informações, consulte [aplicando deslocamentos de inteiro](dx-graphics-hlsl-to-sample.md).
+Um deslocamento de coordenada de textura opcional, que pode ser usado para qualquer tipo de objeto de textura; o deslocamento é aplicado ao local antes da amostragem. Use um deslocamento somente em um miplevel inteiro; caso contrário, você poderá obter resultados que não são bem traduzidos para hardware. O tipo de argumento depende do tipo de objeto de textura. Para obter mais informações, consulte [Aplicando deslocamentos inteiros.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Tipo de Texture-Object           | Tipo de parâmetro |
+| Texture-Object tipo           | Tipo de parâmetro |
 |-------------------------------|----------------|
 | Texture1D, Texture1DArray     | INT            |
 | Texture2D, Texture2DArray     | int2           |
-| Texture3D                     | Int3           |
+| Texture3D                     | int3           |
 | TextureCube, TextureCubeArray | sem suporte  |
 
 
@@ -142,29 +142,29 @@ Um deslocamento de coordenadas de textura opcional, que pode ser usado para qual
 
 </dd> <dt>
 
-*Fixe* \[ no\]
+*Fixação* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se você passar 2.0 f para o valor fixe, certifique-se de que nenhum exemplo individual acessa um nível de MIP menor que 2,0 f.
+Um valor opcional para fixar valores LOD de exemplo. Por exemplo, se você passar 2,0f para o valor de fixação, garantirá que nenhuma amostra individual acesse um nível de mip menor que 2,0f.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
+Tipo: **[ **FORMATO \_ DXGI**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-O formato de textura, que é um dos valores tipados listados [**no \_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+O formato de textura, que é um dos valores digitados listados em [**FORMATO DXGI. \_**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="see-also"></a>Confira também
 

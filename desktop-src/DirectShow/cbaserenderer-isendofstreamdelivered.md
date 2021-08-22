@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f60216afc6481411010fb2f2b0618c36a7d7acf4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f15c2bca14e6c0f55f46441bbb4de362e6375d0b67f3012a4ad234a9366b188
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954875"
 ---
 # <a name="cbaserendererisendofstreamdelivered-method"></a>Método CBaseRenderer. IsEndOfStreamDelivered
 
@@ -40,7 +40,7 @@ BOOL IsEndOfStreamDelivered();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o sinalizador [**\_ bEOSDelivered CBaseRenderer:: m**](cbaserenderer-m-beosdelivered.md) .
 
@@ -50,7 +50,7 @@ Retorna o sinalizador [**\_ bEOSDelivered CBaseRenderer:: m**](cbaserenderer-m-b
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

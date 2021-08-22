@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2ddb205c1201281a04977df42c094d40b4792572
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: b3dd02691f335a246e694b667181ed73814326b52b9e58f8c11ac13595f9eaf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515014"
 ---
 # <a name="d3dcompiler-reference"></a>Referência de D3DCompiler
 
@@ -32,9 +32,9 @@ A API do Direct3D define vários elementos de API para compilar o código de som
 [Referência para HLSL](dx-graphics-hlsl-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

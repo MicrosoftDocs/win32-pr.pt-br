@@ -4,12 +4,12 @@ ms.assetid: 3923c570-47a4-4b53-a097-731981380ae0
 title: Faixas de triângulo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2766529a37b994e5fe30815ca6300476f06c7d4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cf229883fa156afc93ca2889a0a97f4f2c3eabbb344fb7551476c98f33905f8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104566234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044094"
 ---
 # <a name="triangle-strips"></a>Faixas de triângulo
 
@@ -47,7 +47,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-O exemplo de código abaixo mostra como renderizar essa faixa de triângulo no Direct3D 9 usando [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
+O exemplo de código abaixo mostra como renderizar essa faixa de triângulo no Direct3D 9 usando [**IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
 
 
 ```
@@ -60,7 +60,7 @@ d3dDevice->DrawPrimitive( D3DPT_TRIANGLESTRIP, 0, 4);
 
 
 
-Use uma faixa de triângulo para renderizar triângulos que não estão conectados entre si. Para fazer isso, especifique um triângulo degenerado (ou seja, um triângulo cuja área seja zero) na lista de triângulos. Isso cria uma linha entre os dois triângulos que não serão renderizados. Para renderizar apenas o primeiro e o último triângulos do exemplo anterior, modifique o buffer de vértice conforme mostrado aqui:
+Use uma faixa de triângulo para renderizar triângulos que não estão conectados entre si. Para fazer isso, especifique um triângulo degeneramento (ou seja, um triângulo cuja área é zero) na lista de triângulos. Isso cria uma linha entre os dois triângulos que não serão renderizar. Para renderizar apenas o primeiro e o último triângulos do exemplo anterior, modifique o buffer de vértice, conforme mostrado aqui:
 
 
 ```

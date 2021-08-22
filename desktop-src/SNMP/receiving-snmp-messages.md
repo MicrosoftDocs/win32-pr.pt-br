@@ -4,12 +4,12 @@ description: O aplicativo WinSNMP deve chamar a função SnmpRecvMsg para recupe
 ms.assetid: 323a5565-a8a5-4efd-aa4e-e4623b581d09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 529420deaf637cec8598a8e8becc87ab514b40b4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3bd341e71aa6b8387b82f6576599fb6cb7d3545f34e01f80267f19a73edb7cba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009174"
 ---
 # <a name="receiving-snmp-messages"></a>Recebendo mensagens SNMP
 
@@ -21,9 +21,9 @@ A função [**SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg
 
 Para obter informações adicionais sobre como gerenciar o tempo entre uma chamada para a função [**SnmpSendMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsendmsg) e o recebimento da resposta correspondente, consulte [sobre retransmissão](about-retransmission.md). Para obter informações adicionais sobre como usar o campo PDU da **\_ ID de solicitação** para corresponder a uma PDU de resposta com sua PDU de solicitação, consulte [resposta correspondente e PDUs de solicitação](matching-response-and-request-pdus.md).
 
- 
+ 
 
- 
+ 
 
 
 

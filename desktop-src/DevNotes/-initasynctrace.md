@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Exstrace.dll
-ms.openlocfilehash: f79137fe4e832a193bafa59a573e5eb541884a2c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d64fcf9f787587165c12e675d79cfca641b0ab5086a5cce6b13029da46def974
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956295"
 ---
 # <a name="initasynctrace-function"></a>Função InitAsyncTrace
 
@@ -39,13 +39,13 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Essa função retornará **true** se a função tiver sucesso; caso contrário, retornará **false**.
+Essa função retornará **TRUE** se a função for bem-sucedida; caso contrário, retornará **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Exstrace.dll é um componente opcional que é instalado com o protocolo SMTP e o protocolo NNTP (Network News Transfer Protocol).
+Exstrace.dll é um componente opcional que é instalado com o protocolo SMTP e o protocolo NNTP.
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

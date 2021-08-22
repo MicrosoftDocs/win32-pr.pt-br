@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e1e509ea4695f143bd5399cbda004bcba53f514c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa5d1a8dedd9620a3111a1973a26c62c69f138325a19b58632d978f25415b268
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990837"
 ---
 # <a name="d3dxshevalsphericallight-function-d3dx10h"></a>Função D3DXSHEvalSphericalLight (D3DX10. h)
 
@@ -158,7 +158,7 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

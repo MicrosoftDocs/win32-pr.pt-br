@@ -1,19 +1,19 @@
 ---
-description: Os recursos do Shell podem ser estendidos com entradas de registro e arquivos. ini.
+description: Os recursos do Shell podem ser estendidos com entradas de registro e arquivos de .ini.
 ms.assetid: 74a81e4f-7357-4901-a118-ba44e8892f25
 title: Criar Manipuladores de Extensão de Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 991f3c1684b7491e2ad29fae29f48164ffdd47cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 729fad22eb86e9c32e43c459d7a30b11f68d8d06360b60cee373bb3f74d3749f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032554"
 ---
 # <a name="creating-shell-extension-handlers"></a>Criar Manipuladores de Extensão de Shell
 
-Os recursos do Shell podem ser estendidos com entradas de registro e arquivos. ini. Embora essa abordagem para estender o shell seja simples e adequada para muitas finalidades, ela é limitada. Por exemplo, se você usar o registro para especificar um ícone personalizado para um tipo de arquivo, o mesmo ícone será exibido para cada arquivo desse tipo. Estender o shell com o registro não permite que você varie o ícone para arquivos diferentes do mesmo tipo. Outros aspectos do Shell, como a folha de propriedades **Propriedades** que podem ser exibidas quando um arquivo é clicado com o botão direito do mouse, não podem ser modificados com o registro.
+Os recursos do Shell podem ser estendidos com entradas de registro e arquivos de .ini. Embora essa abordagem para estender o shell seja simples e adequada para muitas finalidades, ela é limitada. Por exemplo, se você usar o registro para especificar um ícone personalizado para um tipo de arquivo, o mesmo ícone será exibido para cada arquivo desse tipo. Estender o shell com o registro não permite que você varie o ícone para arquivos diferentes do mesmo tipo. Outros aspectos do Shell, como a folha de propriedades **Propriedades** que podem ser exibidas quando um arquivo é clicado com o botão direito do mouse, não podem ser modificados com o registro.
 
 Uma abordagem mais poderosa e flexível para estender o Shell é implementar *manipuladores de extensão de shell*. Esses manipuladores podem ser implementados para uma variedade de ações que o Shell pode executar. Antes de executar a ação, o Shell consulta o manipulador de extensão, dando a ele a oportunidade de modificar a ação. Um exemplo comum é um manipulador de extensão de menu de atalho. Se um for implementado para um tipo de arquivo, ele será consultado toda vez que um dos arquivos for clicado com o botão direito do mouse. O manipulador pode, então, especificar itens de menu adicionais de acordo com o arquivo, em vez de ter o mesmo conjunto para todo o tipo de arquivo.
 
@@ -42,11 +42,11 @@ Outros manipuladores não estão associados a um tipo de arquivo específico, ma
 
 | Manipulador                                                            | Descrição                                                                                                                                  |
 |--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Manipulador de coluna](../lwef/column-handlers.md)                             | Chamado pelo Windows Explorer antes de exibir a exibição de detalhes de uma pasta. Ele permite que você adicione colunas personalizadas à exibição de detalhes.        |
+| [Manipulador de coluna](../lwef/column-handlers.md)                             | chamado pelo Windows Explorer antes de exibir a exibição de detalhes de uma pasta. Ele permite que você adicione colunas personalizadas à exibição de detalhes.        |
 | [Copiar manipulador de gancho](how-to-create-copy-hook-handlers.md)          | Chamado quando um objeto de pasta ou de impressora está prestes a ser movido, copiado, excluído ou renomeado. Ele permite que você aprove ou veta a operação.   |
 | [Manipulador do tipo "arrastar e soltar"](context-menu-handlers.md)                 | Chamado quando um arquivo é arrastado com o botão direito do mouse. Ele permite que você modifique o menu de atalho que é exibido.                     |
 | [Manipulador de sobreposição de ícone](how-to-implement-icon-overlay-handlers.md) | Chamado antes do ícone de um arquivo ser exibido. Ele permite que você especifique uma sobreposição para o ícone do arquivo.                                          |
-| [Manipulador de pesquisa](../lwef/search-handlers.md)                             | Chamado para iniciar um mecanismo de pesquisa. Ele permite que você implemente um mecanismo de pesquisa personalizado acessível no menu **Iniciar** ou no Windows Explorer. |
+| [Manipulador de pesquisa](../lwef/search-handlers.md)                             | Chamado para iniciar um mecanismo de pesquisa. ele permite que você implemente um mecanismo de pesquisa personalizado acessível no menu **iniciar** ou no Windows Explorer. |
 
 
 
@@ -58,7 +58,7 @@ Os detalhes de como implementar manipuladores de extensão específicos são abo
     -   [Implementando IPersistFile](#implementing-ipersistfile)
     -   [Implementando IShellExtInit](#implementing-ishellextinit)
     -   [Personalização de InfoTip](#infotip-customization)
--   [Aprimorando o Windows Search com manipuladores de extensão de Shell](#enhancing-windows-search-with-shell-extension-handlers)
+-   [aprimorando a pesquisa de Windows com manipuladores de extensão de Shell](#enhancing-windows-search-with-shell-extension-handlers)
 -   [Registrando manipuladores de extensão do Shell](#registering-shell-extension-handlers)
     -   [Nomes de manipuladores](#handler-names)
     -   [Objetos de shell predefinidos](#predefined-shell-objects)
@@ -75,7 +75,7 @@ Muitos manipuladores de extensão de shell são objetos COM (Component Object Mo
 -   [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject). Expõe a fábrica de classes do objeto.
 -   [**DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow). COM chama essa função para determinar se o objeto está atendendo a clientes. Caso contrário, o sistema pode descarregar a DLL e liberar a memória associada.
 
-Como todos os objetos COM, os manipuladores de extensão do Shell devem implementar uma interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e uma [fábrica de classes](../com/implementing-iclassfactory.md). A maioria dos manipuladores de extensão também deve implementar uma interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) ou [**ISHELLEXTINIT**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) no Windows XP ou anterior. Elas foram substituídas por [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) e [**IInitializeWithFile**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithfile) no Windows Vista. O Shell usa essas interfaces para inicializar o manipulador.
+Como todos os objetos COM, os manipuladores de extensão do Shell devem implementar uma interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) e uma [fábrica de classes](../com/implementing-iclassfactory.md). a maioria dos manipuladores de extensão também deve implementar uma interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) ou [**IShellExtInit**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit) no Windows XP ou anterior. elas foram substituídas por [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) e [**IInitializeWithFile**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithfile) no Windows Vista. O Shell usa essas interfaces para inicializar o manipulador.
 
 A interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) deve ser implementada pelo seguinte:
 
@@ -232,7 +232,7 @@ Os seguintes nomes de propriedade podem ser usados:
 | Assunto          | Resumo do assunto               | [**assunto do PIDSI \_**](../stg/the-summary-information-property-set.md)                             |
 | Comentário          | Comentários do documento             | [**PIDSI \_**](../stg/the-summary-information-property-set.md) Propriedades de comentário ou pasta/driver |
 | PageCount        | Número de páginas               | [**PIDSI \_ PageCount**](../stg/the-summary-information-property-set.md)                           |
-| Name             | Nome amigável                 | Exibição de pasta padrão                                                                       |
+| Nome             | Nome amigável                 | Exibição de pasta padrão                                                                       |
 | OriginalLocation | Local do arquivo original     | Pasta do porta-arquivos e pasta lixeira                                                    |
 | DateDeleted      | O arquivo de data foi excluído         | Pasta da lixeira                                                                         |
 | Tipo             | Tipo de arquivo                  | Exibição de detalhes da pasta padrão                                                               |
@@ -255,9 +255,9 @@ Os seguintes nomes de propriedade podem ser usados:
 
  
 
-## <a name="enhancing-windows-search-with-shell-extension-handlers"></a>Aprimorando o Windows Search com manipuladores de extensão de Shell
+## <a name="enhancing-windows-search-with-shell-extension-handlers"></a>aprimorando a pesquisa de Windows com manipuladores de extensão de Shell
 
-Os manipuladores de extensão do Shell podem ser usados para aprimorar a experiência do usuário fornecida por um manipulador de protocolo de pesquisa do Windows. Para habilitar esses aprimoramentos, o manipulador de extensão do Shell de suporte deve ser projetado para integrar com o manipulador de protocolo de pesquisa como uma fonte de dados. Para obter informações sobre como aprimorar um manipulador de protocolo de pesquisa do Windows por meio da integração com um manipulador de extensão de Shell, consulte [adicionando ícones, visualizações e menus de atalho](../search/-search-3x-wds-ph-ui-extensions.md). Para obter mais informações sobre os manipuladores de protocolo de pesquisa do Windows, consulte [desenvolvendo manipuladores de protocolo](../search/-search-3x-wds-phaddins.md).
+os manipuladores de extensão do Shell podem ser usados para aprimorar a experiência do usuário fornecida por um manipulador de protocolo de pesquisa Windows. Para habilitar esses aprimoramentos, o manipulador de extensão do Shell de suporte deve ser projetado para integrar com o manipulador de protocolo de pesquisa como uma fonte de dados. para obter informações sobre como aprimorar um manipulador de protocolo de pesquisa Windows por meio da integração com um manipulador de extensão de Shell, consulte [adicionando ícones, visualizações e Menus de atalho](../search/-search-3x-wds-ph-ui-extensions.md). para obter mais informações sobre Windows manipuladores de protocolo de pesquisa, consulte [desenvolvendo manipuladores de protocolo](../search/-search-3x-wds-phaddins.md).
 
 ## <a name="registering-shell-extension-handlers"></a>Registrando manipuladores de extensão do Shell
 
@@ -292,7 +292,7 @@ Para os seguintes manipuladores, crie uma subchave sob a chave "nome da subchave
 | Manipulador de Copyhook                                      | ICopyHook          | **CopyHookHandlers**      |
 | Manipulador do tipo "arrastar e soltar"                                 | IContextMenu       | **DragDropHandlers**      |
 | Manipulador de folha de propriedades                                | IShellPropSheetExt | **PropertySheetHandlers** |
-| Manipulador de provedor de coluna (preterido no Windows Vista) | IColumnProvider    | **ColumnHandlers**        |
+| manipulador de provedor de coluna (preterido no Windows Vista) | IColumnProvider    | **ColumnHandlers**        |
 
 
 
@@ -322,15 +322,15 @@ Para os seguintes manipuladores, o valor padrão da chave "nome da subchave do m
 
  
 
-As subchaves especificadas para adicionar **Pin ao menu iniciar** e **fixar à barra de tarefas** no menu de atalho de um item só são necessárias para tipos de arquivo que incluem a entrada [IsShortcut](./links.md) .
+As sub-chaves especificadas para adicionar  Fixar ao Menu Iniciar e Fixar na Barra de Tarefas ao **menu** de atalho de um item só são necessárias para tipos de arquivo que incluem a [entrada IsShortCut.](./links.md)
 
-O suporte para manipuladores de provedor de coluna foi removido no Windows Vista. Além disso, a partir do Windows Vista, o [**IPropertySetStorage**](/windows/win32/api/propidl/nn-propidl-ipropertysetstorage) foi preterido em favor do [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+O suporte para manipuladores de provedores de colunas foi removido Windows Vista. Além disso, Windows Vista, [**IPropertySetStorage**](/windows/win32/api/propidl/nn-propidl-ipropertysetstorage) foi preterido em favor de [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
-Embora o [**IExtractImage**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage) permaneça com suporte, o [**manipuladordeminiaturai**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) é preferencial para o Windows Vista e posterior.
+Embora [**IExtractImage**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage) permaneça com suporte, [**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) é preferencial para Windows Vista e posterior.
 
-### <a name="predefined-shell-objects"></a>Objetos de shell predefinidos
+### <a name="predefined-shell-objects"></a>Objetos shell predefinidos
 
-O Shell define objetos adicionais na **\_ \_ raiz de classes hKey** que podem ser estendidas da mesma maneira que os tipos de arquivo. Por exemplo, para adicionar um manipulador de folha de propriedades para todos os arquivos, você pode registrar sob a chave **PropertySheetHandlers** .
+O Shell define objetos adicionais em **HKEY \_ CLASSES \_ ROOT,** que podem ser estendidos da mesma maneira que os tipos de arquivo. Por exemplo, para adicionar um manipulador de folha de propriedades para todos os arquivos, você pode se registrar na **chave PropertySheetHandlers.**
 
 ```
 HKEY_CLASSES_ROOT
@@ -339,26 +339,26 @@ HKEY_CLASSES_ROOT
          PropertySheetHandlers
 ```
 
-A tabela a seguir fornece as várias subchaves da **\_ \_ raiz de classes hKey** em que os manipuladores de extensão podem ser registrados. Observe que muitos manipuladores de extensão não podem ser registrados em todas as subchaves listadas. Para obter mais detalhes, consulte a documentação do manipulador específico.
+A tabela a seguir fornece as várias sub-chaves de **HKEY \_ CLASSES \_ ROOT** nas quais os manipuladores de extensão podem ser registrados. Observe que muitos manipuladores de extensão não podem ser registrados em todas as sub-chaves listadas. Para obter mais detalhes, consulte a documentação do manipulador específico.
 
 
 
-| Subchave                    | Description                                                          | Possíveis manipuladores                                | Versão |
+| Subchave                    | Descrição                                                          | Manipuladores possíveis                                | Versão |
 |---------------------------|----------------------------------------------------------------------|--------------------------------------------------|---------|
-| **\** _                    | Todos os arquivos                                                            | Menu de atalho, folha de propriedades, verbos (veja abaixo) | Tudo     |
-| _ *AllFileSystemObjects**  | Todos os arquivos e pastas de arquivos                                           | Menu de atalho, folha de propriedades, verbos             | 4,71    |
-| **Pasta**                | Todas as pastas                                                          | Menu de atalho, folha de propriedades, verbos             | Tudo     |
-| **Active**             | Pastas de arquivos                                                         | Menu de atalho, folha de propriedades, verbos             | Tudo     |
-| **Plano de fundo do diretório \\** | Plano de fundo da pasta de arquivos                                               | Somente menu de atalho                               | 4,71    |
-| **Unidade**                 | Todas as unidades em MyComputer, como "C: \\ "                             | Menu de atalho, folha de propriedades, verbos             | Tudo     |
-| **Rede**               | Rede inteira (em meus locais de rede)                             | Menu de atalho, folha de propriedades, verbos             | Tudo     |
-| **Tipo de rede \\\\\#**     | Todos os objetos do tipo \# (veja abaixo)                                   | Menu de atalho, folha de propriedades, verbos             | 4,71    |
-| **NetShare**              | Todos os compartilhamentos de rede                                                   | Menu de atalho, folha de propriedades, verbos             | 4,71    |
-| **NetServer**             | Todos os servidores de rede                                                  | Menu de atalho, folha de propriedades, verbos             | 4,71    |
-| *\_nome do provedor de rede \_* | Todos os objetos fornecidos pelo "*nome do \_ provedor \_ de rede*" do provedor de rede | Menu de atalho, folha de propriedades, verbos             | Tudo     |
-| **Impressoras**              | Todas as impressoras                                                         | Menu de atalho, folha de propriedades                    | Tudo     |
-| **AudioCD**               | CD de áudio na unidade de CD                                                 | Somente verbos                                       | Tudo     |
-| **DVD**                   | Unidade de DVD (Windows 2000)                                             | Menu de atalho, folha de propriedades, verbos             | 4,71    |
+| **\***                    | Todos os arquivos                                                            | Menu de Atalho, Folha de Propriedades, Verbos (veja abaixo) | Tudo     |
+| **AllFileSystemObjects**  | Todos os arquivos e pastas de arquivos                                           | Menu de Atalho, Folha de Propriedades, Verbos             | 4,71    |
+| **Pasta**                | Todas as pastas                                                          | Menu de Atalho, Folha de Propriedades, Verbos             | Tudo     |
+| **Diretório**             | Pastas de arquivo                                                         | Menu de Atalho, Folha de Propriedades, Verbos             | Tudo     |
+| **Plano de \\ fundo do diretório** | Plano de fundo da pasta de arquivos                                               | Somente menu de atalho                               | 4,71    |
+| **Unidade**                 | Todas as unidades no MyComputer, como "C: \\ "                             | Menu de Atalho, Folha de Propriedades, Verbos             | Tudo     |
+| **Rede**               | Rede inteira (em Meus Locais de Rede)                             | Menu de Atalho, Folha de Propriedades, Verbos             | Tudo     |
+| **Tipo de \\ rede\\\#**     | Todos os objetos do \# tipo (veja abaixo)                                   | Menu de atalho, Folha de Propriedades, Verbos             | 4,71    |
+| **Netshare**              | Todos os compartilhamentos de rede                                                   | Menu de atalho, Folha de Propriedades, Verbos             | 4,71    |
+| **NetServer**             | Todos os servidores de rede                                                  | Menu de atalho, Folha de Propriedades, Verbos             | 4,71    |
+| *nome \_ do provedor de \_ rede* | Todos os objetos fornecidos pelo provedor de rede "*nome do provedor de \_ \_ rede*" | Menu de atalho, Folha de Propriedades, Verbos             | Tudo     |
+| **Impressoras**              | Todas as impressoras                                                         | Menu de Atalho, Folha de Propriedades                    | Tudo     |
+| **Audiocd**               | CD de áudio na unidade de CD                                                 | Somente verbos                                       | Tudo     |
+| **Dvd**                   | Unidade de DVD (Windows 2000)                                             | Menu de Atalho, Folha de Propriedades, Verbos             | 4,71    |
 
 
 
@@ -366,16 +366,16 @@ A tabela a seguir fornece as várias subchaves da **\_ \_ raiz de classes hKey**
 
 Observações:
 
--   O menu de atalho de segundo plano da pasta de arquivo é acessado clicando com o botão direito do mouse em uma pasta de arquivo, mas não em qualquer conteúdo da pasta.
--   "Verbos" são comandos especiais registrados sob o verbo do Shell de subchave do **HKEY \_ classes \_ raiz** \\  \\  \\  .
--   Para o tipo de **rede** \\  \\ **\#** , " \# " é um código de tipo de provedor de rede em decimal. O código do tipo de provedor de rede é a palavra alta de um tipo de rede. A lista de tipos de rede é fornecida no arquivo de cabeçalho Winnetwk. h (WNNC \_ net \_ \* Values). Por exemplo, WNNC \_ net \_ Shiva é 0x00330000, portanto, a chave de tipo correspondente seria tipo de rede **\_ \_ raiz de classe HKEY** \\  \\  \\ **51** .
--   "*\_ \_ nome do provedor de rede*" é um nome de provedor de rede, conforme especificado por [**WNetGetProviderName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetprovidernamea), com os espaços convertidos em sublinhados. Por exemplo, se o provedor de rede de rede da Microsoft estiver instalado, o nome do provedor será "rede do Microsoft Windows" e o *\_ \_ nome do provedor de rede* correspondente será a **\_ \_ rede do Microsoft Windows**.
+-   O menu de atalho em segundo plano da pasta de arquivos é acessado clicando com o botão direito do mouse em uma pasta de arquivos, mas não sobre qualquer conteúdo da pasta.
+-   "Verbos" são comandos especiais registrados em **HKEY \_ CLASSES \_ ROOT** \\ *Subkey* \\  \\ **Shell Verb** .
+-   Para **Tipo** \\ **de Rede** , " " é um código de tipo de provedor de rede em \\ **\#** \# decimal. O código de tipo de provedor de rede é a palavra alta de um tipo de rede. A lista de tipos de rede é dada no arquivo de título Winnetwk.h (valores WNNC \_ \_ \* NET). Por exemplo, WNNC NET LTD é 0x00330000, portanto, a chave de tipo correspondente seria \_ \_ **HKEY \_ CLASSES \_ ROOT** \\  \\ **Network Type** \\ **51** .
+-   "*nome \_ do \_ provedor* de rede " é um nome de provedor de rede conforme especificado por [**WNetGetProviderName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetprovidernamea), com os espaços convertidos em sublinhados. Por exemplo, se o provedor de rede de Rede da Microsoft estiver instalado, seu nome de provedor será "Microsoft Windows Network" e o nome do provedor de rede correspondente será **Microsoft \_ Windows \_ Network**. *\_ \_*
 
 ### <a name="example-of-an-extension-handler-registration"></a>Exemplo de um registro de manipulador de extensão
 
-Para habilitar um manipulador específico, crie uma subchave sob a chave do tipo de manipulador de extensão com o nome do manipulador. O shell não usa o nome do manipulador, mas ele deve ser diferente de todos os outros nomes nessa subchave de tipo. Defina o valor padrão da subchave Name para a forma de cadeia de caracteres do GUID do manipulador.
+Para habilitar um manipulador específico, crie uma sub-chave na chave de tipo de manipulador de extensão com o nome do manipulador. O Shell não usa o nome do manipulador, mas deve ser diferente de todos os outros nomes nessa sub-chave de tipo. De definir o valor padrão da sub-chave de nome para a forma de cadeia de caracteres do GUID do manipulador.
 
-O exemplo a seguir ilustra as entradas do registro que habilitam manipuladores de extensão de folha de propriedades e menu de atalho, usando um tipo de arquivo de exemplo. MYP:
+O exemplo a seguir ilustra as entradas do Registro que habilitam manipuladores de extensão de menu de atalho e folha de propriedades, usando um tipo de arquivo .myp de exemplo:
 
 ```
 HKEY_CLASSES_ROOT
@@ -401,13 +401,13 @@ HKEY_CLASSES_ROOT
                (Default) = {11111111-2222-3333-4444-555555555555}
 ```
 
-O procedimento de registro discutido nesta seção deve ser seguido para todos os sistemas Windows.
+O procedimento de registro discutido nesta seção deve ser seguido para todos os Windows sistemas.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Diretrizes para implementar extensões de In-Process](shell-and-managed-code.md)
+[Diretrizes para implementar extensões In-Process dados](shell-and-managed-code.md)
 </dt> </dl>
 
  

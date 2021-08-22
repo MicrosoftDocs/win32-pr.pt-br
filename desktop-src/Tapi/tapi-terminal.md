@@ -4,12 +4,12 @@ ms.assetid: 466ed2cd-f737-4df4-8633-4fb5c95b4b6c
 title: TAPI/terminal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dce64da984f766e8ca3c0c47f1b60db6e9d7d8ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b1026087415e09e38c9b8af903145f13f56ccf426f2355e46bd0bb5f5ddadc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118860668"
 ---
 # <a name="tapiterminal"></a>TAPI/terminal
 

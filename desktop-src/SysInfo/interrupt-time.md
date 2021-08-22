@@ -4,27 +4,27 @@ ms.assetid: 56fe322e-53ea-4186-9b5e-352f69b09109
 title: Tempo de interrupção
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6018d97ab0eecd1182c02b734357ca13fbe12632
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e0da8fa92fc51cdceef6f0052dda7a2cd27d7b21b24d11bd8ec7b1ea4aff18b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118885506"
 ---
 # <a name="interrupt-time"></a>Tempo de interrupção
 
 O *tempo de interrupção* é a quantidade de tempo desde que o sistema foi iniciado pela última vez, em intervalos de 100 a nanossegundos. A contagem de tempo de interrupção começa em zero quando o sistema é iniciado e incrementado a cada interrupção de relógio pelo comprimento de um tique de relógio. O comprimento exato de um tique de relógio depende do hardware subjacente e pode variar entre os sistemas.
 
-Ao contrário do [tempo do sistema](system-time.md), a contagem de tempo de interrupção não está sujeita a ajustes por usuários ou serviço de tempo do Windows, o que o torna uma opção melhor para medir durações curtas. Os aplicativos que exigem maior precisão do que a contagem de tempo de interrupção devem usar um [temporizador de alta resolução](../winmsg/about-timers.md). Use a função [**QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency) para recuperar a frequência do temporizador de alta resolução e da função [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) para recuperar o valor do contador.
+ao contrário do [tempo do sistema](system-time.md), a contagem de tempo de interrupção não está sujeita a ajustes por usuários ou ao serviço de tempo de Windows, o que o torna uma opção melhor para medir durações curtas. Os aplicativos que exigem maior precisão do que a contagem de tempo de interrupção devem usar um [temporizador de alta resolução](../winmsg/about-timers.md). Use a função [**QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency) para recuperar a frequência do temporizador de alta resolução e da função [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) para recuperar o valor do contador.
 
 As funções [**QueryInterruptTime**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime), [**QueryInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttimeprecise), [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime)e [**QueryUnbiasedInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise) podem ser usadas para recuperar a contagem de tempo de interrupção. Tempo de interrupção não polarizado significa que apenas a hora em que o sistema está no estado de trabalho é contado – portanto, a contagem de tempo de interrupção não é "polarizada" por tempo que o sistema gasta em suspensão ou hibernação.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP/2000:** A função [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime) está disponível a partir do Windows 7 e do windows Server 2008 R2.
+**Windows server 2008, Windows Vista, Windows Server 2003 e Windows XP/2000:** a função [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime) está disponível a partir do Windows 7 e do Windows Server 2008 R2.
 
 A resolução do temporizador definida pelas funções [**timeBeginPeriod**](/windows/desktop/api/timeapi/nf-timeapi-timebeginperiod) e [**timeEndPeriod**](/windows/desktop/api/timeapi/nf-timeapi-timeendperiod) afeta a resolução das funções [**QueryInterruptTime**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime) e [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime) . No entanto, o aumento da resolução do temporizador não é recomendado porque pode reduzir o desempenho geral do sistema e aumentar o consumo de energia, impedindo o processador de entrar nos Estados de economia de energia. Em vez disso, os aplicativos devem usar um temporizador de alta resolução.
 
 > [!Note]  
-> As funções [**QueryInterruptTime**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime), [**QueryInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttimeprecise), [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime)e [**QueryUnbiasedInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise) produzem resultados diferentes nas compilações de depuração ("marcadas") do Windows, pois a contagem de tempo de interrupção e a contagem de tiques são avançadas por aproximadamente 49 dias. Isso ajuda a identificar bugs que podem não ocorrer até que o sistema esteja em execução por um longo tempo. A compilação verificada está disponível para assinantes do MSDN por meio do site do [Microsoft Developer Network (MSDN)](https://msdn.microsoft.com/default.aspx) .
+> as funções [**QueryInterruptTime**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttime), [**QueryInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryinterrupttimeprecise), [**QueryUnbiasedInterruptTime**](/windows/win32/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttime)e [**QueryUnbiasedInterruptTimePrecise**](/windows/desktop/api/realtimeapiset/nf-realtimeapiset-queryunbiasedinterrupttimeprecise) produzem resultados diferentes em compilações ("marcadas") de Windows, porque a contagem de tempo de interrupção e a contagem de tiques são avançadas por aproximadamente 49 dias. Isso ajuda a identificar bugs que podem não ocorrer até que o sistema esteja em execução por um longo tempo. A compilação verificada está disponível para assinantes do MSDN por meio do site do [Microsoft Developer Network (MSDN)](https://msdn.microsoft.com/default.aspx) .
 
  
 

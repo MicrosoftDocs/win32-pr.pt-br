@@ -4,16 +4,16 @@ ms.assetid: D84772C8-902F-4302-8288-0430892A1896
 title: Atributo MF_CAPTURE_METADATA_FRAME_ILLUMINATION (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb9aa60b5e921e99ac4f4c56cb4643af8389aa91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a23658f8f396a81180a074badc43e98d0f392fc355c1a81a4d1e731d132de12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973945"
 ---
 # <a name="mf_capture_metadata_frame_illumination-attribute"></a>\_Atributo de \_ iluminação de quadro de metadados de captura MF \_ \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Um valor que indica se um quadro foi capturado usando a iluminação de infravermelho ativo (IR).
 
@@ -33,9 +33,9 @@ A iluminação ativa é quando um dispositivo tem um emissor de luz próximo à 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                      |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                      |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

@@ -1,25 +1,25 @@
 ---
-description: Um aplicativo pode definir um comentário durante a inicialização de uma sessão. Os comentários são geralmente usados para fins de log.
+description: Um aplicativo pode definir um comentário durante o início de uma sessão. Os comentários geralmente são usados para fins de registro em log.
 ms.assetid: 46201166-de07-47b8-8d9a-c8edb7fb6926
 title: Comentário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a12b9530e2fbb0c08b928607a71ee6b14cbdf6ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 757570651315e0d4e9b313af9e926daf12cd25f3a6415037aaf92079bff5b824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118868074"
 ---
 # <a name="comment"></a>Comentário
 
-Um aplicativo pode definir um comentário durante a inicialização de uma sessão. Os comentários são geralmente usados para fins de log.
+Um aplicativo pode definir um comentário durante o início de uma sessão. Os comentários geralmente são usados para fins de registro em log.
 
-Nem todos os provedores de serviços dão suporte ao uso dessas informações.
+Nem todos os provedores de serviços suportam o uso dessas informações.
 
-**TAPI 2. x:** Consulte [**lineGetCallInfo**](/windows/win32/api/tapi/nf-tapi-linegetcallinfo) (Membros **dwCommentSize** e **dwCommentOffset** de *lpCallInfo*).
+**TAPI 2.x:** Consulte [**os membros lineGetCallInfo**](/windows/win32/api/tapi/nf-tapi-linegetcallinfo) (**dwCommentSize** e **dwCommentOffset** de *lpCallInfo*).
 
-**TAPI 3. x:** Consulte [**ITCallInfo:: get \_ CallInfoString**](/windows/desktop/api/tapi3if/nf-tapi3if-itcallinfo-get_callinfostring) (membro de **\_ Comentário cil** da [**cadeia de \_ caracteres CALLINFO**](/windows/desktop/api/Tapi3if/ne-tapi3if-callinfo_string)).
+**TAPI 3.x:** Consulte [**ITCallInfo::get \_ CallInfoString**](/windows/desktop/api/tapi3if/nf-tapi3if-itcallinfo-get_callinfostring) (**CIL \_ COMMENT member** of [**CALLINFO \_ STRING**](/windows/desktop/api/Tapi3if/ne-tapi3if-callinfo_string)).
 
  
 

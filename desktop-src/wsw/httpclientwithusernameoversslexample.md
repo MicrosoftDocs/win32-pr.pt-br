@@ -3,27 +3,27 @@ title: HttpClientWithUsernameOverSslExample
 description: Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta, com nome de usuário sobre segurança de modo misto SSL.
 ms.assetid: aaaad584-d861-4abd-9d76-95aba5090676
 keywords:
-- HttpClientWithUsernameOverSslExample nativo – Web-Services
+- HttpClientWithUsernameOverSslExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ede0ff3f22ff4c12703d68d978269fd4360e9a20
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac268dba6b81765d4e126a4985433ea720dc750c932a6e349d48d77bff3b6331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963325"
 ---
 # <a name="httpclientwithusernameoversslexample"></a>HttpClientWithUsernameOverSslExample
 
-Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta, com nome de usuário sobre segurança de modo misto SSL. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor. A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.
+Este exemplo mostra um cliente HTTP que envia mensagens de solicitação-resposta, com nome de usuário sobre segurança de modo misto SSL. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL, que também fornece autenticação de servidor. A autenticação do cliente é fornecida por um par nome de usuário/senha em um WS-Security na mensagem.
 
--   [HttpClientWithUsernameOverSsl. cpp](#httpclientwithusernameoversslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpClientWithUsernameOverSsl.cpp](#httpclientwithusernameoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpclientwithusernameoversslcpp"></a>HttpClientWithUsernameOverSsl. cpp
+## <a name="httpclientwithusernameoversslcpp"></a>HttpClientWithUsernameOverSsl.cpp
 
 
 ```C++
@@ -436,7 +436,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -580,9 +580,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

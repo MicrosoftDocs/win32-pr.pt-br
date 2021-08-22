@@ -8,18 +8,18 @@ keywords:
 - USNChanged AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8e062c84fae575f837f45d78be7c92e5e284c1e
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 1c665d536eb3dcb0e3265a2e3abb87808ddf630510e5d0600f6185007c72bc28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025524"
 ---
 # <a name="polling-for-changes-using-usnchanged"></a>Sondando alterações usando USNChanged
 
 O controle DirSync é poderoso e eficiente, mas tem duas limitações significativas:
 
--   Somente para aplicativos altamente privilegiados: para usar o controle DirSync, um aplicativo deve ser executado em uma conta que tenha o privilégio de **\_ nome do \_ agente \_ de sincronização se** no controlador de domínio. Algumas contas são tão privilegiadas, portanto, um aplicativo que usa o controle DirSync não pode ser executado por usuários comuns.
+-   somente para aplicativos altamente privilegiados: para usar o controle dirsync, um aplicativo deve ser executado em uma conta que tenha o privilégio de **\_ nome do \_ agente \_ de sincronização ES** no controlador de domínio. Algumas contas são tão privilegiadas, portanto, um aplicativo que usa o controle DirSync não pode ser executado por usuários comuns.
 -   Nenhum escopo de subárvore: o controle DirSync retorna todas as alterações que ocorrem dentro de um contexto de nomenclatura. Um aplicativo interessado apenas em alterações que ocorrem em uma subárvore pequena de um contexto de nomenclatura deve ser alterado por meio de muitas alterações irrelevantes, o que é ineficiente para o aplicativo e para o controlador de domínio.
 
 As alterações de Active Directory também podem ser obtidas consultando o atributo [**uSNChanged**](/windows/desktop/ADSchema/a-usnchanged) , que evita as limitações do controle DirSync. Essa alternativa não é melhor do que o controle DirSync em todos os aspectos porque envolve a transmissão de todos os atributos quando qualquer atributo é alterado e requer mais trabalho do desenvolvedor de aplicativos para lidar corretamente com determinados cenários de falha. Atualmente, é a melhor maneira de escrever determinados aplicativos de controle de alterações.
@@ -52,6 +52,6 @@ As sutilezas da implementação de um aplicativo de sincronização [**uSNChange
 
 Para obter mais informações e um exemplo de código que mostra os conceitos básicos de um aplicativo de sincronização USNChanged, consulte [código de exemplo para recuperar alterações usando USNChanged](example-code-to-retrieve-changes-using-usnchanged.md).
 
- 
+ 
 
- 
+ 

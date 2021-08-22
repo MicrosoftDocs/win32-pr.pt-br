@@ -1,28 +1,28 @@
 ---
-title: Pesquisando o nome completo de um usuário
-description: Os computadores podem ser organizados em um domínio, que é um conjunto de redes de computadores. O administrador de domínio mantém informações de conta de usuário e grupo centralizadas.
+title: Procurando o nome completo de um usuário
+description: Os computadores podem ser organizados em um domínio, que é uma coleção de rede de computadores. O administrador de domínio mantém informações centralizadas de conta de usuário e grupo.
 ms.assetid: 296ecfd0-1b65-482c-bee1-eff2130cc14e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cb2daa6bc2bc7d7255e961537c641a999d5a0bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 434bdff00483b38ef12355af4dcda4a48d60bf849a8fd5d6829640ae8907e426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105764647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012514"
 ---
-# <a name="looking-up-a-users-full-name"></a>Pesquisando o nome completo de um usuário
+# <a name="looking-up-a-users-full-name"></a>Procurando o nome completo de um usuário
 
-Os computadores podem ser organizados em um *domínio*, que é um conjunto de redes de computadores. O administrador de domínio mantém informações de conta de usuário e grupo centralizadas.
+Os computadores podem ser organizados em *um domínio*, que é uma coleção de rede de computadores. O administrador de domínio mantém informações centralizadas de conta de usuário e grupo.
 
-Para localizar o nome completo de um usuário, dado o nome de usuário e o nome de domínio:
+Para encontrar o nome completo de um usuário, considerando o nome de usuário e o nome de domínio:
 
--   Converta o nome de usuário e o nome de domínio para Unicode, se eles ainda não forem cadeias de caracteres Unicode.
--   Pesquise o nome do computador do controlador de domínio (DC) chamando [**NetGetDCName**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdcname).
--   Procure o nome de usuário no computador DC chamando [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo).
--   Converta o nome de usuário completo para ANSI, a menos que o programa esteja esperando trabalhar com cadeias de caracteres Unicode.
+-   Converta o nome de usuário e o nome de domínio em Unicode, se eles ainda não são cadeias de caracteres Unicode.
+-   Procure o nome do computador do controlador de domínio (DC) chamando [**NetGetDCName.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdcname)
+-   Procure o nome de usuário no computador DC chamando [**NetUserGetInfo.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo)
+-   Converta o nome de usuário completo em ANSI, a menos que o programa esteja esperando trabalhar com cadeias de caracteres Unicode.
 
-O código de exemplo a seguir é uma função (getcompletaname) que usa um nome de usuário e um nome de domínio nos dois primeiros argumentos e retorna o nome completo do usuário no terceiro argumento.
+O código de exemplo a seguir é uma função (GetFullName) que recebe um nome de usuário e um nome de domínio nos dois primeiros argumentos e retorna o nome completo do usuário no terceiro argumento.
 
 
 ```C++
@@ -75,9 +75,9 @@ BOOL GetFullName( char *UserName, char *Domain, char *dest )
 
 
 
- 
+ 
 
- 
+ 
 
 
 
