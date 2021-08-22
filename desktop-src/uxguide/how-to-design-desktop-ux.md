@@ -1,94 +1,94 @@
 ---
-title: Como projetar UX para aplicativos de área de trabalho
-description: Um ótimo aplicativo de área de trabalho é poderoso e, ao mesmo tempo, simples. Por meio da seleção e apresentação de recursos cuidadosamente balanceadas, você pode alcançar tanto a potência quanto a simplicidade.
+title: Como projetar o UX para aplicativos da área de trabalho
+description: Um ótimo aplicativo de área de trabalho é poderoso e, ao mesmo tempo, simples. Por meio da seleção e apresentação de recursos cuidadosamente equilibradas, você pode obter potência e simplicidade.
 ms.assetid: 0039a3ee-95bc-457f-a1a8-6a036ce22fd2
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 74433514f61b37ba1c9941c8134767be5458ebc8
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: a9c191a92ccf6147d37deca191a861220c4a925035bf39c92e7e7d062fa14184
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104297862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119221718"
 ---
-# <a name="how-to-design-a-great-user-experience-for-desktop-applications"></a>Como criar uma excelente experiência de usuário para aplicativos de área de trabalho
+# <a name="how-to-design-a-great-user-experience-for-desktop-applications"></a>Como criar uma ótima experiência do usuário para aplicativos da área de trabalho
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
-Um ótimo aplicativo de área de trabalho é poderoso e, ao mesmo tempo, simples. Por meio da seleção e apresentação de recursos cuidadosamente balanceadas, você pode alcançar tanto a potência quanto a simplicidade.
+Um ótimo aplicativo de área de trabalho é poderoso e, ao mesmo tempo, simples. Por meio da seleção e apresentação de recursos cuidadosamente equilibradas, você pode obter potência e simplicidade.
 
-**Dota**
+**Poderoso:**
 
 ![captura de tela da caixa de diálogo ortografia e gramática ](images/powerful-simple-image1.png)
 
-**Potente e simples:**
+**Poderoso e simples:**
 
-![captura de tela da lista de possíveis revisões de ortografia ](images/powerful-simple-image2.png)
+![captura de tela da lista de possíveis revisões ortográficas ](images/powerful-simple-image2.png)
 
-O aplicativo ideal baseado no Windows é poderoso e simples. É claro que você deseja que seu aplicativo seja poderoso e é claro que você deseja que ele seja simples, mas pode conseguir ambos? Há uma tensão natural entre essas metas, mas essa tensão está longe de Irreconcilable. Você pode atingir a potência e a simplicidade por meio da seleção e apresentação de recursos cuidadosamente equilibrados.
+O aplicativo Windows baseado em dados ideal é poderoso e simples. É claro que você deseja que seu aplicativo seja poderoso e, é claro, você deseja que ele seja simples, mas você pode obter ambos? Há uma tensão natural entre essas metas, mas essa tensão está longe de ser irreconcilável. Você pode obter potência e simplicidade por meio da seleção e apresentação de recursos cuidadosamente equilibradas.
 
 ## <a name="what-makes-an-application-powerful"></a>O que torna um aplicativo poderoso?
 
-O que significa "potência" realmente em termos de software? Um aplicativo pode ser considerado poderoso se estiver repleto de recursos, tendo uma grande variedade de funcionalidades em uma tentativa de ser tudo para todos os usuários. Esse design não é provavelmente bem-sucedido, pois um conjunto de recursos não-direcionados é improvável de atender às necessidades de qualquer pessoa. Esse não é o tipo de potência que estamos depois.
+O que "energia" realmente significa em termos de software? Um aplicativo pode ser considerado poderoso se estiver cheio de recursos, tendo uma enorme amplitude de funcionalidade em uma tentativa de ser tudo para todos os usuários. Esse design provavelmente não será bem-sucedido porque é improvável que um conjunto de recursos sem-alvo atenda às necessidades de qualquer pessoa. Esse não é o tipo de energia que estamos atrás.
 
 Um aplicativo é poderoso quando tem a combinação certa dessas características:
 
--   **Habilita.** O aplicativo atende às necessidades de seus usuários de destino, permitindo que eles executem tarefas que não podiam fazer de outra forma e atinjam suas metas com eficiência.
+-   **Permitindo.** O aplicativo atende às necessidades de seus usuários de destino, permitindo que eles executem tarefas que, de outra forma, não poderiam fazer e atingir suas metas com eficiência.
 -   **Eficiente.** O aplicativo permite que os usuários executem tarefas com um nível de produtividade e escala que não era possível antes.
--   **Versátil.** O aplicativo permite que os usuários executem uma ampla gama de tarefas com eficiência em várias circunstâncias.
--   **Encaminhe.** O aplicativo parece que ele está ajudando diretamente os usuários a atingir suas metas, em vez de entrar no caminho ou exigir etapas desnecessárias. Recursos como atalhos, acesso ao teclado e macros melhoram a sensação de direção.
--   **Flexível.** O aplicativo permite que os usuários concluam o controle refinado sobre seu trabalho.
--   **Totalmente.** O aplicativo é bem integrado ao Microsoft Windows, permitindo que ele compartilhe dados com outros aplicativos.
--   **Avançado.** O aplicativo tem recursos extraordinários, inovadores e de ponta que não são encontrados nas soluções concorrentes.
+-   **Versátil.** O aplicativo permite que os usuários executem uma ampla variedade de tarefas efetivamente em uma variedade de circunstâncias.
+-   **Direto.** O aplicativo parece estar ajudando diretamente os usuários a atingir suas metas, em vez de ficar no caminho ou exigir etapas desnecessárias. Recursos como atalhos, acesso ao teclado e macros melhoram a noção de direcionamento.
+-   **Flexível.** O aplicativo permite que os usuários concluam um controle fino sobre seu trabalho.
+-   **Integrado.** O aplicativo é bem integrado ao Microsoft Windows, permitindo que ele compartilhe dados com outros aplicativos.
+-   **Avançado.** O aplicativo tem recursos inovadores, inovadores e de última geração que não são encontrados em soluções concorrentes.
 
 Algumas dessas características dependem da percepção do usuário e são relativas aos recursos atuais dos usuários. O que é considerado poderoso pode mudar ao longo do tempo, portanto, o recurso de pesquisa avançada de hoje pode ser comum amanhã.
 
-Todas essas características podem ser combinadas em nossa definição de energia:
+Todas essas características podem ser combinadas em nossa definição de poder:
 
-**Um aplicativo é poderoso quando permite que os usuários de destino percebam todo o potencial com eficiência.**
+**Um aplicativo é poderoso quando permite que seus usuários de destino realizem todo o potencial com eficiência.**
 
-Assim, a medida final do poder é a produtividade, não o número de recursos.
+Portanto, a medida final de poder é a produtividade, não o número de recursos.
 
-Usuários diferentes precisam de ajuda para atingir seu potencial completo de maneiras diferentes. O que está sendo habilitado para alguns usuários pode prejudicar a versatilidade, a direção e o controle para outras pessoas. O software bem projetado deve balancear essas características adequadamente. Por exemplo, um sistema de publicação de área de trabalho projetado para não profissionais pode usar assistentes para orientar os usuários por meio de tarefas complexas. Esses assistentes permitem que os usuários de destino executem tarefas que, de outra forma, não poderiam executar. Por outro lado, um sistema de publicação de área de trabalho para profissionais pode se concentrar na direção, na eficiência e no controle total. Para usuários desse aplicativo, os assistentes podem estar limitando e frustrantes.
+Usuários diferentes precisam de ajuda para alcançar todo o potencial de maneiras diferentes. O que está habilitando para alguns usuários pode prejudicar a versatilidade, a direcionamento e o controle para outros. O software bem projetado deve equilibrar essas características adequadamente. Por exemplo, um sistema de publicação de área de trabalho projetado para não profissionales pode usar assistentes para ajudar os usuários a realizar tarefas complexas. Esses assistentes permitem que os usuários de destino executem tarefas que, de outra forma, não seriam capazes de executar. Por outro lado, um sistema de publicação de área de trabalho para profissionais pode se concentrar na direcionamento, na eficiência e no controle completo. Para usuários desse aplicativo, os assistentes podem ser limitados e frustrantes.
 
 **Se você fizer apenas uma coisa...**
 
-Entenda os objetivos dos usuários de destino e crie um conjunto de recursos que permita atingir essas metas de forma produtiva.
+Entenda as metas dos usuários de destino e crie um conjunto de recursos que permite que eles alcancem essas metas de maneira produtiva.
 
-## <a name="what-makes-a-user-experience-simple"></a>O que torna uma experiência do usuário simples?
+## <a name="what-makes-a-user-experience-simple"></a>O que torna a experiência do usuário simples?
 
-Definimos a simplicidade da seguinte maneira:
+Definimos a simplicidade da seguinte forma:
 
-**Simplicidade é a redução ou a eliminação de um atributo de um design para o qual os usuários de destino estão cientes e consideram indispensável.**
+**Simplicidade é a redução ou eliminação de um atributo de um design que os usuários de destino estão cientes e consideram unessential.**
 
-Na prática, a simplicidade é obtida selecionando-se o conjunto de recursos correto e apresentando os recursos da maneira correta. Isso reduz os não essenciais, tanto reais quanto percebidos.
+Na prática, a simplicidade é alcançada selecionando o conjunto de recursos correto e apresentando os recursos da maneira correta. Isso reduz o unessential, real e percebido.
 
 A simplicidade depende da percepção dos usuários. Considere como o efeito de uma transmissão automática depende da perspectiva de um usuário:
 
--   Para o driver típico (o usuário de destino), uma transmissão automática elimina a necessidade de um turno de engrenagem manual e uma embreagem, tornando um carro muito mais fácil de impulsionar. Uma mudança e uma embreagem manual de engrenagem não são essenciais para a tarefa de condução, portanto, elas são removidas para obter simplicidade.
--   Para um driver de carro de corrida profissional, ter controle direto sobre a transmissão é essencial para ser competitivo. Uma transmissão automática afeta negativamente o desempenho do carro e, portanto, não é considerada como resultado em simplicidade.
--   Para um mecânico, uma transmissão automática é um mecanismo mais complexo e, portanto, não é mais fácil de reparar ou manter do que uma transmissão manual. Diferentemente do mecânico, o usuário de destino está tranqüilamente ciente dessa complexidade interna.
+-   Para o driver típico (o usuário de destino), uma transmissão automática elimina a necessidade de uma mudança de engrenagem manual e de um motor, facilitando muito a direção de um carro. Um deslocamento de engrenagem manual e uma engrenagem não são essenciais para a tarefa de condução, portanto, eles são removidos para obter simplicidade.
+-   Para um piloto de carro de corrida profissional, ter controle direto sobre a transmissão é essencial para ser competitivo. Uma transmissão automática afeta negativamente o desempenho do carro, portanto, ela não é considerada como resultado de simplicidade.
+-   Para um aprendiz, uma transmissão automática é um mecanismo mais complexo e, portanto, não é mais fácil de reparar ou manter do que uma transmissão manual. Ao contrário do público-alvo, o usuário de destino não está ciente dessa complexidade interna.
 
-Embora diferentes usuários considerem a transmissão automática de forma diferente, ele é bem-sucedido porque elimina a necessidade de conhecimento, habilidades e esforço indispensável dos usuários de destino. Para o driver típico, a transmissão automática é um ótimo recurso porque simplesmente funciona.
+Embora usuários diferentes consideram a transmissão automática de forma diferente, ela é bem-sucedida porque elimina a necessidade de conhecimento, habilidade e esforço unessential de seus usuários de destino. Para o driver típico, a transmissão automática é um ótimo recurso porque funciona.
 
 ### <a name="simplicity-vs-ease-of-use"></a>Simplicidade versus facilidade de uso
 
-A simplicidade, quando aplicada corretamente, resulta em facilidade de uso. Mas a simplicidade e a facilidade de uso não são os mesmos conceitos. A facilidade de uso é obtida quando os usuários podem executar uma tarefa com êxito por conta própria sem dificuldade ou confusão dentro de um período adequado. Há várias maneiras de obter facilidade de uso e simplicidade — a redução do indispensável — é apenas uma delas.
+A simplicidade, quando aplicada corretamente, resulta em facilidade de uso. Mas a simplicidade e a facilidade de uso não são os mesmos conceitos. A facilidade de uso é alcançada quando os usuários podem executar uma tarefa com êxito por conta própria sem dificuldade ou confusão em um período de tempo adequado. Há muitas maneiras de obter facilidade de uso e a simplicidade, a redução do unessential, é apenas uma delas.
 
-Todos os usuários, não importa a sofisticação, desejam realizar seu trabalho com uma quantidade mínima de esforço desnecessário. Todos os usuários, até mesmo usuários avançados, são motivados principalmente para realizar seu trabalho, não para aprender sobre computadores ou seu aplicativo.
+Todos os usuários, independentemente de quão sofisticados, querem fazer seu trabalho com uma quantidade mínima de esforço desnecessário. Todos os usuários, até mesmo usuários avançados, são principalmente incentivados a fazer seu trabalho, não para saber mais sobre computadores ou seu aplicativo.
 
-A simplicidade é a maneira mais eficaz de se obter facilidade de uso e a facilidade de uso é igual ao uso. Os recursos complexos e difíceis de usar simplesmente não são usados. Por outro lado, designs simples e elegantes que executam sua função bem são uma alegria de usar. Elas chamam uma resposta positiva e emocional.
+A simplicidade é a maneira mais eficaz de obter facilidade de uso e a facilidade de uso é igual ao uso. Recursos complexos e difíceis de usar não são usados. Por outro lado, designs simples e elegantes que executam bem sua função são uma moda a ser usada. Eles invocam uma resposta positiva e emocional.
 
-Por exemplo, considere o suporte de rede sem fio no Microsoft Windows XP. A Microsoft pode ter adicionado um assistente para orientar os usuários pelo processo de configuração. Essa abordagem teria resultado na facilidade de uso, mas não na simplicidade, porque um recurso indispensável (o assistente) teria sido adicionado. Em vez disso, a Microsoft projetou a rede sem fio para se configurar automaticamente. Por fim, os usuários não se preocupam com os detalhes da configuração, desde que "simplesmente funcione" de forma confiável e segura. Essa combinação de potência e simplicidade em tecnologia de rede sem fio levou à sua popularidade e adoção rápida.
+Por exemplo, considere o suporte à rede sem fio no Microsoft Windows XP. A Microsoft poderia ter adicionado um assistente para passar os usuários pelo processo de configuração. Essa abordagem teria resultado na facilidade de uso, mas não na simplicidade, porque um recurso unessential (o assistente) teria sido adicionado. Em vez disso, a Microsoft criou uma rede sem fio para se configurar automaticamente. Os usuários, em última análise, não se importam com os detalhes de configuração, desde que "funcionem apenas" de forma confiável e segura. Essa combinação de poder e simplicidade na tecnologia de rede sem fio levou à sua popularidade e à rápida adoção.
 
 **Se você fizer apenas uma coisa...**
 
 Inicie seu processo de design com os designs mais simples que fazem o trabalho bem.
 
-Se você não estiver satisfeito com o design atual, comece removendo todos os elementos indispensávels. Você verá que o que resta é geralmente muito bom.
+Se você não estiver satisfeito com seu design atual, comece retirando todos os elementos unessential. Você encontrará que o que permanece geralmente é muito bom.
 
-## <a name="obtaining-simplicity-while-maintaining-power"></a>Obtendo simplicidade ao manter o poder
+## <a name="obtaining-simplicity-while-maintaining-power"></a>Obtendo simplicidade ao manter a potência
 
 ### <a name="design-principles"></a>Princípios de design
 
@@ -96,21 +96,21 @@ Para obter simplicidade, sempre projete para o provável, não o possível.
 
 O possível
 
-Decisões de design com base no que é possível para interfaces de usuário complexas como o editor do registro, em que o design pressupõe que todas as ações são igualmente possíveis e, como resultado, exigem um esforço igual. Como tudo é possível, as metas de usuário não são consideradas em decisões de design.
+Decisões de design baseadas no que é possível levam a interfaces de usuário complexas, como o Editor do Registro, em que o design pressuém que todas as ações são igualmente possíveis e, como resultado, exigem esforço igual. Como tudo é possível, as metas do usuário não são consideradas em decisões de design.
 
 O provável
 
-Decisões de design com base na provável liderança em soluções simplificadas, de metas e baseadas em tarefas, nas quais os cenários prováveis recebem foco e exigem um mínimo de esforço para serem executados.
+Decisões de design baseadas no potencial potencial para soluções simplificadas, baseadas em meta e tarefa, em que os cenários prováveis recebem foco e exigem esforço mínimo para executar.
 
 O princípio de design de simplicidade
 
-**Para obter simplicidade, concentre-se no que é provável; reduzir, ocultar ou remover o que é improvável; e elimine o que é impossível.**
+**Para obter simplicidade, concentre-se no que é provável; reduzir, ocultar ou remover o que é improvável; e eliminam o que é impossível.**
 
-O que os usuários farão é muito mais relevante para o design do que eles podem fazer.
+O que os usuários fazerão é muito mais relevante para o design do que o que eles podem fazer.
 
 ### <a name="design-techniques"></a>Técnicas de design
 
-Para obter simplicidade enquanto mantém a energia, escolha o **conjunto certo de recursos**, localize os recursos **nos locais certos** e **reduza o esforço** para usá-los. Esta seção fornece algumas técnicas comuns para atingir essas metas.
+Para obter simplicidade enquanto mantém o poder, escolha o conjunto certo de **recursos,** localize os recursos nos locais certos e reduza o esforço **para** usá-los. Esta seção fornece algumas técnicas comuns para atingir essas metas.
 
 Escolhendo o conjunto de recursos correto
 
@@ -139,7 +139,7 @@ Use as seguintes técnicas de design para preservar a energia, oferecendo, ao me
 -   A consistência, a capacidade de configurabilidade e a generalização são geralmente qualidades desejáveis, mas podem levar à complexidade desnecessária. Examine o design de esforços com orientação inadequada em consistência (como com texto redundante), generalização (como ter qualquer número de fusos horários quando dois é suficiente) e a capacidade de configurabilidade (como opções que os usuários não têm probabilidade de alterar) e elimine o que pode ser eliminado.
 -   **Coloque os elementos no lugar certo.** Dentro de uma janela, o local de um elemento deve seguir seu utilitário. Os controles, as instruções e as explicações essenciais devem estar no contexto em ordem lógica. Se mais opções forem necessárias, expor-as no contexto clicando em uma divisa ou mecanismo semelhante; se mais informações forem necessárias, exiba uma InfoTip ao focalizar o mouse. Coloque tarefas, opções e informações de ajuda menos importantes fora do fluxo principal em uma janela ou página separada. A técnica de exibir detalhes adicionais conforme necessário é chamada de divulgação progressiva.
 -   **Use combinações significativas de alto nível.** Geralmente, é mais simples e mais escalonável selecionar e manipular grupos de elementos relacionados do que elementos individuais. Exemplos de combinações de alto nível incluem pastas, temas, estilos e grupos de usuários. Essas combinações geralmente são mapeadas para uma meta ou intenção de usuário que não é aparente dos elementos individuais. Por exemplo, a intenção por trás do Alto Contraste esquema de cor preta é muito mais aparente do que a de um plano de fundo de janela preta.
--   **Selecione os controles certos.** Os elementos de design são incorporados pelos controles que você usa para representá-los, portanto, selecionar o controle certo é crucial para uma apresentação eficiente. Por exemplo, a caixa de seleção de fontes usada pelo Microsoft Word mostra uma visualização da fonte, bem como as fontes usadas mais recentemente. Da mesma forma, a maneira como o Word mostra possíveis erros de ortografia e gramática é muito mais simples do que a alternativa da caixa de diálogo, conforme mostrado no início deste artigo.
+-   **Selecione os controles certos.** Os elementos de design são incorporados pelos controles que você usa para representá-los, portanto, selecionar o controle certo é crucial para uma apresentação eficiente. por exemplo, a caixa de seleção de fonte usada pelo Microsoft Word mostra uma visualização da fonte, bem como as fontes usadas mais recentemente. Da mesma forma, a maneira como o Word mostra possíveis erros de ortografia e gramática é muito mais simples do que a alternativa da caixa de diálogo, conforme mostrado no início deste artigo.
 
 Reduzindo o esforço
 
@@ -174,7 +174,7 @@ A obtenção de simplicidade enquanto preserva a energia geralmente exige uma co
 
 ## <a name="powerful-and-simple"></a>Potente e simples
 
-O poder é para habilitar seus usuários e torná-los produtivos. A simplicidade é a remoção dos recursos não essenciais e de apresentação da maneira correta. Ao compreender os usuários de destino e obter o equilíbrio certo dos recursos e da apresentação, você pode criar aplicativos baseados no Windows que fazem ambos.
+O poder é para habilitar seus usuários e torná-los produtivos. A simplicidade é a remoção dos recursos não essenciais e de apresentação da maneira correta. ao compreender os usuários de destino e obter o equilíbrio certo dos recursos e da apresentação, você pode projetar aplicativos baseados em Windows que fazem ambos.
 
  
 

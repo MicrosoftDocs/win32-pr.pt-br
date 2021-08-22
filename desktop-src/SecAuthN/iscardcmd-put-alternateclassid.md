@@ -1,7 +1,7 @@
 ---
 description: Especifica um novo identificador de classe alternativo na APDU (unidade de dados do protocolo de aplicativo).
 ms.assetid: 45a49699-41ce-439c-b896-e663a290b188
-title: 'ISCardCmd: método de ut_AlternateClassId de:p (Scarddat. h)'
+title: Método ISCardCmd::p ut_AlternateClassId (Scarddat.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: ee1ee5da5875ec2fa1f4f7f6e474f551befdaf8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd1f74dee017cb72a67ecb4a9fc42da85153966336b25e54819be13464b3b7e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119481556"
 ---
-# <a name="iscardcmdput_alternateclassid-method"></a>ISCardCmd: método UT \_ AlternateClassId:p
+# <a name="iscardcmdput_alternateclassid-method"></a>Método AlternateClassId ISCardCmd::p ut \_
 
-\[O método **Put \_ AlternateClassId** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O **método \_ alternateClassId** put está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [Módulos de Cartão Inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
-O método **Put \_ AlternateClassId** especifica um novo identificador de classe alternativo na APDU ( [*unidade de dados do protocolo de aplicativo*](../secgloss/a-gly.md) ).
+O **método \_ alternateClassId** put especifica um novo identificador de classe alternativo na APDU (unidade de dados [*do*](../secgloss/a-gly.md) protocolo de aplicativo).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,14 +41,14 @@ HRESULT put_AlternateClassId(
 
 <dl> <dt>
 
-*byClass* \[ no\]
+*byClass* \[ Em\]
 </dt> <dd>
 
 Identificador de classe alternativo. O valor padrão é zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -57,7 +57,7 @@ O método retorna um dos seguintes valores possíveis.
 | Código de retorno                                                                                  | Descrição                                      |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Operação concluída com sucesso.<br/>     |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O parâmetro *byClass* não é válido.<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O *parâmetro byClass* não é válido.<br/> |
 
 
 
@@ -65,11 +65,11 @@ O método retorna um dos seguintes valores possíveis.
 
 ## <a name="remarks"></a>Comentários
 
-Com as comunicações usando o [*protocolo T = 0*](../secgloss/t-gly.md), comandos de cartão adicionais podem ser gerados automaticamente pelo APDU e enviados para a unidade de dados do protocolo de transmissão (TPDU). Os comandos adicionais normalmente usam a mesma ID de classe que o comando original; a especificação de uma nova ID de classe por meio desse método permite que comandos gerados automaticamente usem a nova ID de classe.
+Com as comunicações usando o protocolo [*T=0*](../secgloss/t-gly.md), comandos de cartão adicionais podem ser gerados automaticamente pelo APDU e enviados para a TPDU (unidade de dados do protocolo de transmissão). Os comandos adicionais normalmente usam a mesma ID de classe que o comando original; especificar uma nova ID de classe por meio desse método permite que comandos gerados automaticamente usem a nova ID de classe.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como definir um novo identificador de classe alternativo na APDU ( [*unidade de dados do protocolo de aplicativo*](../secgloss/a-gly.md) ). O exemplo supõe que pISCardCmd é um ponteiro válido para uma instância da interface [**ISCardCmd**](iscardcmd.md) .
+O exemplo a seguir mostra como definir um novo identificador de classe alternativo na APDU (unidade de dados do protocolo [*de*](../secgloss/a-gly.md) aplicativo). O exemplo supõe que pISCardCmd é um ponteiro válido para uma instância da interface [**ISCardCmd.**](iscardcmd.md)
 
 
 ```C++
@@ -92,14 +92,14 @@ if (FAILED(hr))
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Scarddat. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                   |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                          |
+| parâmetro<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCardCmd é definido como D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |
+| IID<br/>                      | IID ISCardCmd é definido como \_ D5778AE3-43DE-11D0-9171-00AAA00C18068<br/>            |
 
 
 
@@ -110,7 +110,7 @@ if (FAILED(hr))
 [**ISCardCmd**](iscardcmd.md)
 </dt> <dt>
 
-[**obter \_ AlternateClassId**](iscardcmd-get-alternateclassid.md)
+[**get \_ AlternateClassId**](iscardcmd-get-alternateclassid.md)
 </dt> </dl>
 
  

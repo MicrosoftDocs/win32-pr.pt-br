@@ -3,7 +3,7 @@ title: LISTBOX. findItem
 description: O método findItem pesquisa uma determinada cadeia de caracteres começando com o item após o índice de item especificado.
 ms.assetid: 8d112d99-1866-45e5-b0ef-5d4a3c8b388d
 keywords:
-- LISTBOX. findItem Windows Media Player
+- Windows Media Player LISTBOX. findItem
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 161f4dd8b93fe4fed6a794dffde3e58e840c74e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e3625c8d8e9993d09e7b5b41911ead8df857c257a7a2354d71c8d81c1fecc645
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135319"
 ---
 # <a name="listboxfinditem"></a>LISTBOX. findItem
 

@@ -1,7 +1,7 @@
 ---
-description: Função D3DXQuaternionRotationYawPitchRoll (D3dx9math. h) – compila um Quaternion com a guinada, a densidade e o rolo fornecidos.
+description: Função D3DXQuaternionRotationYawPitchRoll (D3dx9math.h) – cria um quaternion com o yaw, a apresentação e o lançamento determinados.
 ms.assetid: be4a3bd5-114b-4652-8e0a-e51338317c16
-title: Função D3DXQuaternionRotationYawPitchRoll (D3dx9math. h)
+title: Função D3DXQuaternionRotationYawPitchRoll (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 541e181425782662c6d40affc22c829b4ba343ab
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 954fee40015b558b10ba83ef12b1555d06896413c6396ca12ed6e4374131caeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988426"
 ---
-# <a name="d3dxquaternionrotationyawpitchroll-function-d3dx9mathh"></a>Função D3DXQuaternionRotationYawPitchRoll (D3dx9math. h)
+# <a name="d3dxquaternionrotationyawpitchroll-function-d3dx9mathh"></a>Função D3DXQuaternionRotationYawPitchRoll (D3dx9math.h)
 
-Cria um Quaternion com uma determinada guinada, pitch e roll.
+Cria um quatrion com o yaw, a apresentação e o lançamento determinados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,39 +43,39 @@ D3DXQUATERNION* D3DXQuaternionRotationYawPitchRoll(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Ponteiro para a estrutura [**D3DXQUATERNION**](d3dxquaternion.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXQUATERNION**](d3dxquaternion.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*Guinada* \[ no\]
+*Yaw* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Desvio em volta do eixo y, em radianos.
+Yaw em torno do eixo y, em radianos.
 
 </dd> <dt>
 
-*Pitch* \[ no\]
+*Apresentação* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Inclinação em relação ao eixo x, em radianos.
+Lançar ao redor do eixo x, em radianos.
 
 </dd> <dt>
 
-*Rolar* \[ no\]
+*Roll* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Sobreponha-se ao eixo z, em radianos.
+Role em torno do eixo z, em radianos.
 
 </dd> </dl>
 
@@ -83,13 +83,13 @@ Sobreponha-se ao eixo z, em radianos.
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 
-Ponteiro para uma estrutura [**D3DXQUATERNION**](d3dxquaternion.md) com a guinada, a densidade e o rolo especificados.
+Ponteiro para uma [**estrutura D3DXQUATERNION**](d3dxquaternion.md) com o yaw, o tom e o roll especificados.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXQuaternionRotationYawPitchRoll** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXQuaternionRotationYawPitchRoll** pode ser usada como um parâmetro para outra função.
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entrada de Quaternion que ainda não esteja normalizada.
+Use [**D3DXQuaternionNormalize para**](d3dxquaternionnormalize.md) qualquer entrada de quatérnion que ainda não tenha sido normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,12 +97,12 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

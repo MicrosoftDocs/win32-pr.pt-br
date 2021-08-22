@@ -4,12 +4,12 @@ description: Esta seção descreve as interfaces e funções para clientes de au
 ms.assetid: f73acd55-2276-493a-93f7-35367ad8b3d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21c0af5dea08921f7e205bb5a8507ddc515b12c2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b94f8e5eabf890674fcaeb5329db1bafb8bc0d03dcec44b8e0f373da00a134ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133399"
 ---
 # <a name="ui-automation-clients"></a>Clientes de automação da interface do usuário
 
@@ -18,7 +18,7 @@ Esta seção descreve as interfaces e funções para clientes de automação de 
 > [!Note]  
 > As interfaces de cliente de automação da interface do usuário substituem completamente a funcionalidade fornecida anteriormente pelas funções de padrão de controle e funções de nó de automação da interface do usuário, que são obsoletas e não devem ser usadas.
 
- 
+ 
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -38,9 +38,9 @@ Esta seção descreve as interfaces e funções para clientes de automação de 
 [Guia do programador do cliente de automação da interface do usuário](uiauto-clientportal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

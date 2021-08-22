@@ -4,12 +4,12 @@ ms.assetid: a45d281e-3fc5-44f0-b7cb-266e288007ca
 title: System. propy. Image
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2ee76fb6d8ee90c233778603d6f274897bb112e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24c6d87e7f673885d54a0407387ef546009a53fecc350f7f36ca015a4086ac1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095818"
 ---
 # <a name="systempropgroupimage"></a>System. propy. Image
 

@@ -4,12 +4,12 @@ ms.assetid: 4034f479-ad29-4c6f-82c6-977f420c4d4d
 title: 'Considerações sobre segurança: recursos internacionais'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aeb9f8b849e9fb1a07f01031832449b9c9027ae5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2e61566fdf51b80a76e5c8997018f35ce421dee6dd0e1b9e290888d96576249
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147039"
 ---
 # <a name="security-considerations-international-features"></a>Considerações sobre segurança: recursos internacionais
 
@@ -38,7 +38,7 @@ Comparações de cadeia de caracteres podem potencialmente apresentar problemas 
 
 -   [lstrcmpi](/windows/win32/api/winbase/nf-winbase-lstrcmpia). Compara duas cadeias de caracteres de caractere de acordo com as regras da localidade, sem diferenciação de maiúsculas e minúsculas. A função compara as cadeias de caracteres, verificando os primeiros e assim por diante, os segundo caracteres entre si e assim por diante, até encontrar uma desigualdade ou atingir as extremidades das cadeias de caracteres.
 -   [lstrcmp](/windows/win32/api/winbase/nf-winbase-lstrcmpa). Compara Cadeias de caracteres usando técnicas semelhantes às de [lstrcmpi](/windows/win32/api/winbase/nf-winbase-lstrcmpia). A única diferença é que o [lstrcmp](/windows/win32/api/winbase/nf-winbase-lstrcmpa) executa uma comparação de cadeia de caracteres que diferencia maiúsculas de minúsculas.
--   [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw), [**CompareStringEx**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex) (Windows Vista e posterior). Execute uma comparação de cadeia de caracteres em uma localidade fornecida pelo aplicativo. [**CompareStringEx**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex) é semelhante a [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw), mas identifica uma localidade por [nome de localidade](locale-names.md) em vez de [identificador de localidade](locale-identifiers.md). Essas funções são semelhantes a [lstrcmpi](/windows/win32/api/winbase/nf-winbase-lstrcmpia) e [lstrcmp](/windows/win32/api/winbase/nf-winbase-lstrcmpa) , exceto que operam em uma localidade específica, em vez de uma localidade selecionada pelo usuário.
+-   [**comparestring**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw), [**CompareStringEx**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex) (Windows Vista e posterior). Execute uma comparação de cadeia de caracteres em uma localidade fornecida pelo aplicativo. [**CompareStringEx**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex) é semelhante a [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw), mas identifica uma localidade por [nome de localidade](locale-names.md) em vez de [identificador de localidade](locale-identifiers.md). Essas funções são semelhantes a [lstrcmpi](/windows/win32/api/winbase/nf-winbase-lstrcmpia) e [lstrcmp](/windows/win32/api/winbase/nf-winbase-lstrcmpa) , exceto que operam em uma localidade específica, em vez de uma localidade selecionada pelo usuário.
 -   [**CompareStringOrdinal**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringordinal) (Windows Vista e posterior). Compara duas cadeias de caracteres Unicode para testar a equivalência binária. Exceto pela opção de diferenciar maiúsculas de minúsculas, essa função desconsidera todas as equivalências não binárias e testa todos os pontos de código para igualdade, incluindo pontos de código que não recebem nenhum peso nos esquemas de [classificação](sorting.md) linguística. Observe que as outras funções de comparação mencionadas neste tópico não testam todos os pontos de código para igualdade.
 -   [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring), [**FindNLSStringEx**](/windows/desktop/api/Winnls/nf-winnls-findnlsstringex) (Windows Vista e posterior). Localize uma cadeia de caracteres Unicode em outra cadeia de caracteres Unicode. [**FindNLSStringEx**](/windows/desktop/api/Winnls/nf-winnls-findnlsstringex) é semelhante a [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring), exceto que identifica uma localidade por nome de localidade em vez de identificador de localidade.
 -   [**FindStringOrdinal**](/windows/desktop/api/Libloaderapi/nf-libloaderapi-findstringordinal) (Windows 7 e posterior). Localiza uma cadeia de caracteres Unicode em outra cadeia de caracteres Unicode. O aplicativo deve usar essa função em vez de [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring) para todas as comparações não linguísticas.
@@ -48,20 +48,20 @@ Como [lstrcmpi](/windows/win32/api/winbase/nf-winbase-lstrcmpia) e [lstrcmp](/wi
 O [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw) ignora os caracteres indefinidos e, portanto, retorna zero (indicando cadeias iguais) para muitos pares de cadeias de caracteres que são bastante distintos. Uma cadeia de caracteres pode conter valores que não são mapeados para qualquer caractere ou pode conter caracteres com semântica fora do domínio do aplicativo, como caracteres de controle em uma URL. Os aplicativos que usam essa função devem fornecer manipuladores de erro e cadeias de caracteres de teste para certificar-se de que eles são válidos antes de usá-los.
 
 > [!Note]  
-> Para o Windows Vista e posterior, o [**CompareStringEx**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex) é semelhante a [**CompareString**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw). Os problemas de segurança são idênticos para essas funções.
+> para Windows Vista e posterior, [**CompareStringEx**](/windows/desktop/api/Stringapiset/nf-stringapiset-comparestringex) é semelhante a [**comparestring**](/windows/win32/api/stringapiset/nf-stringapiset-comparestringw). Os problemas de segurança são idênticos para essas funções.
 
  
 
 Problemas de segurança semelhantes se aplicam a funções, como [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring), que fazem comparações implícitas. Dependendo dos sinalizadores definidos, os resultados da chamada de [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring) para pesquisar uma cadeia de caracteres dentro de outra cadeia de caracteres podem ser consideravelmente diferentes.
 
 > [!Note]  
-> Para o Windows Vista e posterior, o [**FindNLSStringEx**](/windows/desktop/api/Winnls/nf-winnls-findnlsstringex) é semelhante ao [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring). Os problemas de segurança são idênticos para essas funções.
+> para o Windows Vista e posterior, o [**FindNLSStringEx**](/windows/desktop/api/Winnls/nf-winnls-findnlsstringex) é semelhante ao [**FindNLSString**](/windows/desktop/api/Winnls/nf-winnls-findnlsstring). Os problemas de segurança são idênticos para essas funções.
 
  
 
 ## <a name="security-considerations-for-character-sets-in-file-names"></a>Considerações de segurança para conjuntos de caracteres em nomes de arquivos
 
-A página de código do Windows e os conjuntos de caracteres OEM usados em sistemas de idioma japonês contêm o símbolo de Iene (¥) em vez de uma barra invertida ( \\ ). Portanto, o caractere de Iene é um caractere proibido para sistemas de arquivos NTFS e FAT. Ao mapear o Unicode para uma página de código de idioma japonês, as funções de conversão mapeiam ambas as barras invertidas (U + 005C) e o símbolo de iene Unicode normal (U + 00A5) para esse mesmo caractere. Por motivos de segurança, os aplicativos normalmente não devem permitir o caractere U + 00A5 em uma cadeia de caracteres Unicode que pode ser convertida para uso como um nome de arquivo FAT.
+Windows página de código e conjuntos de caracteres OEM usados em sistemas de idioma japonês contêm o símbolo de iene (¥) em vez de uma barra invertida ( \\ ). Portanto, o caractere de Iene é um caractere proibido para sistemas de arquivos NTFS e FAT. Ao mapear o Unicode para uma página de código de idioma japonês, as funções de conversão mapeiam ambas as barras invertidas (U + 005C) e o símbolo de iene Unicode normal (U + 00A5) para esse mesmo caractere. Por motivos de segurança, os aplicativos normalmente não devem permitir o caractere U + 00A5 em uma cadeia de caracteres Unicode que pode ser convertida para uso como um nome de arquivo FAT.
 
 ## <a name="security-considerations-for-internationalized-domain-names"></a>Considerações de segurança para nomes de domínio internacionalizados
 
@@ -86,7 +86,7 @@ Para obter mais informações sobre os problemas de segurança mencionados aqui,
 
  
 
-Muitas funções NLS (suporte a idioma nacional), como [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) e [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa), têm versões ANSI específicas, nesse caso, **getlocaleinfoa** e **GetCalendarInfoA**, respectivamente. Quando seu aplicativo usa a versão ANSI de uma função com um sistema operacional baseado em Unicode, como o Windows NT, o Windows 2000, o Windows XP ou o Windows Vista, a função pode falhar ou produzir resultados indefinidos. Se você tiver um motivo convincente para usar funções ANSI com um sistema operacional como esse, verifique se os dados passados pelo seu aplicativo são válidos para ANSI.
+Muitas funções NLS (suporte a idioma nacional), como [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) e [**GetCalendarInfo**](/windows/desktop/api/Winnls/nf-winnls-getcalendarinfoa), têm versões ANSI específicas, nesse caso, **getlocaleinfoa** e **GetCalendarInfoA**, respectivamente. quando seu aplicativo usa a versão ANSI de uma função com um sistema operacional baseado em Unicode, como Windows NT, Windows 2000, Windows XP ou Windows Vista, a função pode falhar ou produzir resultados indefinidos. Se você tiver um motivo convincente para usar funções ANSI com um sistema operacional como esse, verifique se os dados passados pelo seu aplicativo são válidos para ANSI.
 
 ## <a name="security-considerations-for-unicode-normalization"></a>Considerações de segurança para normalização de Unicode
 

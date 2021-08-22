@@ -4,12 +4,12 @@ ms.assetid: edbdd2c7-da04-49fb-a0f8-31a7df88f8ef
 title: PageWatermarkTextColor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db7cb7b893ec9a2ecf774173cf2a9f2410549087
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 6055a1b1cbea289b8cbb1b27aa174b9d6ec4f539c85b5fbb0edd6835e9f131c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034074"
 ---
 # <a name="pagewatermarktextcolor"></a>PageWatermarkTextColor
 
@@ -24,7 +24,7 @@ Define a cor sRGB para o texto da marca d' água. O formato é ARGB: \# AARRGGBB
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefixo de escopo <br/> | ?<br/>                            |

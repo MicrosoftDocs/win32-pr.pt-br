@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 67232bf1081f9c9ea088968cb6c5d02667b00eeb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8999f6dbb42c55c036ee3d7fcd02dc34def4bd0a036cf0b5d908d3c280e297e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317786"
 ---
 # <a name="cdynamicoutputpinasynchronousblockoutputpin-method"></a>Método CDynamicOutputPin. AsynchronousBlockOutputPin
 
@@ -49,13 +49,13 @@ Identificador para um evento. O evento é sinalizado quando o pino de saída é 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
 
 
-| Código de retorno                                                                                                                    | Descrição                                              |
+| Código de retorno                                                                                                                    | Description                                              |
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                           | Êxito.<br/>                                      |
 | <dl> <dt>**VFW \_ E \_ PIN \_ já \_ bloqueados**</dt> </dl>                   | O PIN já está bloqueado em outro thread.<br/>     |
@@ -77,7 +77,7 @@ Se nenhum thread de streaming estiver usando o PIN, esse método bloqueará imed
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

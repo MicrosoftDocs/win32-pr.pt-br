@@ -1,6 +1,6 @@
 ---
-title: se bool-PS
-description: Início de um bloco If.
+title: se bool - ps
+description: Início de um bloco if.
 ms.assetid: cff53072-1c73-4cf8-9ecd-11032a9c4bbb
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 92c3158a09aeb871ef367133c07278b0f3b87390
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 611ec04a5c3a53bbb8c6c35380bd0d9f824dc697a7d27a3656b262d885fb4eac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103638853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457506"
 ---
-# <a name="if-bool---ps"></a>se bool-PS
+# <a name="if-bool---ps"></a>se bool - ps
 
-Início de um bloco If.
+Início de um bloco if.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 
@@ -29,31 +29,31 @@ Início de um bloco If.
 
 
 
- 
+ 
 
 Em que:
 
--   bool é um número de registro bool (booliano). Consulte [constante de registro booliano](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   bool é um número de registro bool (booliana). Consulte [Constant Boolean Register](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | se bool               |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Se o registro booliano de origem na instrução If for true, o código incluído na instrução If e o [endif-PS](endif---ps.md) ou [else-PS](else---ps.md) correspondente serão executados. Caso contrário, o código incluído pelo else-PS... endif-instruções PS são executadas. Essa instrução consome um slot de instrução.
+Se o registro booliana de origem na instrução if for true, o código incluído pela instrução if e o endif correspondente [– ps](endif---ps.md) ou , [ps](else---ps.md) será executado. Caso contrário, o código incluído pelo outro – ps... endif – as instruções ps são executadas. Essa instrução consome um slot de instrução.
 
-Um bloco If pode ser aninhado.
+Um bloco if pode ser aninhado.
 
-Um bloco If não pode ampliar um bloco de loop.
+Um bloco if não pode bloquear um bloco de loop.
 
-Um bloco If pode ser seguido por um bloco de instruções e/ou uma instrução [else-PS](else---ps.md) e/ou uma instrução [endif-PS](endif---ps.md) .
+Um bloco if pode ser seguido por um bloco de instrução e/ou outro [- instrução ps](else---ps.md) e/ou [uma instrução endif - ps.](endif---ps.md)
 
 ## <a name="example"></a>Exemplo
 
@@ -79,15 +79,15 @@ endif
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> <dt>
 
-[else-PS](else---ps.md)
+[else - ps](else---ps.md)
 </dt> <dt>
 
-[endif-PS](endif---ps.md)
+[endif - ps](endif---ps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

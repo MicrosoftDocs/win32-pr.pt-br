@@ -1,11 +1,11 @@
 ---
-title: Atributo de versão do sistema operacional
-description: A cadeia de caracteres da versão do sistema operacional, por exemplo, 4,0.
+title: Atributo Operating-System-Version
+description: A cadeia de caracteres de versão do sistema operacional, por exemplo, 4.0.
 ms.assetid: 54ad009e-4cf9-4aa7-b1a7-3823d96f7b0e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo de versão do sistema operacional
-- Esquema de AD do atributo operatingSystemVersion
+- Esquema do AD do atributo Operating-System-Version
+- Esquema do AD do atributo operatingSystemVersion
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a13aa131a482cad2c36345ddb742e82620d24cd8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8782bb25fe073e6591e7d9edcac44a80c7255a359c5f6a8a16017325a49f11d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442156"
 ---
-# <a name="operating-system-version-attribute"></a>Atributo de versão do sistema operacional
+# <a name="operating-system-version-attribute"></a>Atributo Operating-System-Version
 
-A cadeia de caracteres da versão do sistema operacional, por exemplo, 4,0.
+A cadeia de caracteres de versão do sistema operacional, por exemplo, 4.0.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Versão do sistema operacional                    |
-| LDAP-Display-Name | operatingSystemVersion                      |
+| Ldap-Display-Name | operatingSystemVersion                      |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.364                      |
-| System-ID-GUID    | 3e978926-8c01-11d0-afda-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 3e978926-8c01-11d0-afda-00c04fd930c9        |
+| Sintaxe            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ A cadeia de caracteres da versão do sistema operacional, por exemplo, 4,0.
 | ID do link                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| É de valor único       | True                                                                                     |
+| Tem valor único       | True                                                                                     |
 | É indexado             | Falso                                                                                    |
-| No catálogo global      | Falso                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                             |
+| No Catálogo Global      | Falso                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A cadeia de caracteres da versão do sistema operacional, por exemplo, 4,0.
 | ID do link                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| É de valor único       | True                                                                                     |
+| Tem valor único       | True                                                                                     |
 | É indexado             | Falso                                                                                    |
-| No catálogo global      | Falso                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                             |
+| No Catálogo Global      | Falso                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A cadeia de caracteres da versão do sistema operacional, por exemplo, 4,0.
 | ID do link                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| É de valor único       | True                                                                                     |
+| Tem valor único       | True                                                                                     |
 | É indexado             | Falso                                                                                    |
-| No catálogo global      | Falso                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                             |
+| No Catálogo Global      | Falso                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

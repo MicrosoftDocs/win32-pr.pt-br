@@ -1,5 +1,5 @@
 ---
-description: O método estático da classe WMI SetPMTUBHDetect é usado para habilitar a detecção de roteadores buraco negro durante a descoberta do caminho MTU.
+description: O método estático da classe WMI SetPMTUBHDetect é usado para habilitar a detecção de roteadores de Black Hole ao fazer a Descoberta de MTU de Caminho.
 ms.assetid: a1e45ed9-85a9-4fdd-890a-d578c3f94b72
 ms.tgt_platform: multiple
 title: Método SetPMTUBHDetect da classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 098652c6ea0a53f9d3b1f616def3dd8b5e7228af
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c9b97e7c55c03dc2fe0e899f9878310eebbf395e3ff15631cea6db8c98546e3a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439826"
 ---
-# <a name="setpmtubhdetect-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetPMTUBHDetect da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setpmtubhdetect-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetPMTUBHDetect da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetPMTUBHDetect** é usado para habilitar a detecção de roteadores buraco negro durante a descoberta do caminho MTU.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetPMTUBHDetect** é usado para habilitar a detecção de roteadores de Black Hole ao fazer a Descoberta de MTU de Caminho.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 SetPMTUBHDetect(
 
 <dl> <dt>
 
-*PMTUBHDetectEnabled* \[ no\]
+*PMTUBHDetectEnabled* \[ Em\]
 </dt> <dd>
 
-Se **for true**, o TCP tentará descobrir o buraco negro e rotear pacotes em caminhos de rede diferentes.
+Se **for true,** o TCP tentará descobrir o Black Hole e rotear pacotes em caminhos de rede diferentes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -136,7 +136,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -235,21 +235,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,13 +406,13 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-Um roteador buraco negro não retorna as mensagens de destino inacessíveis do protocolo ICMP quando precisa fragmentar um datagrama IP com o conjunto de bits não fragmentar. O TCP depende do recebimento dessas mensagens para executar a descoberta de MTU de caminho.
+Um roteador de Black Hole não retorna as mensagens de destino icmp (protocolo ICMP) inacessível quando precisa fragmentar um datagrama IP com o conjunto de bits Não Fragmentar. O TCP depende do recebimento dessas mensagens para executar a Descoberta de MTU de Caminho.
 
-Com esse recurso habilitado, o TCP tentará enviar segmentos sem o bit não fragmentar definido se várias retransmissões de um segmento não forem confirmadas. Se o segmento for confirmado como resultado, o MSS (tamanho máximo do segmento) será reduzido e o bit não fragmentar será definido em pacotes futuros na conexão. A habilitação da detecção de buraco negro aumenta o número máximo de retransmissões executadas para um determinado segmento.
+Com esse recurso habilitado, o TCP tentará enviar segmentos sem o conjunto de bits Não Fragmentar se várias retransmissões de um segmento não são conhecidas. Se o segmento for confirmado como resultado, o MSS (tamanho máximo do segmento) será reduzido e o bit Não Fragmentar será definido em pacotes futuros na conexão. A habilitação da detecção de orifícios pretos aumenta o número máximo de retransmissões executadas para um determinado segmento.
 
 ## <a name="examples"></a>Exemplos
 
-A [detecção de modificação de PMTUBH em todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/a576d97b-38fe-437e-a632-d2f7e122301c) permite a descoberta automática de roteadores de buraco negro ao determinar a unidade de transmissão máxima em uma rede.
+A [opção Modificar Detecção de PMTUBH](https://Gallery.TechNet.Microsoft.Com/a576d97b-38fe-437e-a632-d2f7e122301c) em Todos os Adaptadores de Rede permite a descoberta automática de roteadores de orifício preto ao determinar a unidade de transmissão máxima em uma rede.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -422,8 +422,8 @@ A [detecção de modificação de PMTUBH em todos os adaptadores de rede](https:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -435,13 +435,13 @@ A [detecção de modificação de PMTUBH em todos os adaptadores de rede](https:
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

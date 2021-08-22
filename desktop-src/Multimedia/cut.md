@@ -1,9 +1,9 @@
 ---
-title: comando Recortar
-description: O comando Recortar remove dados do espaço de trabalho e os copia para a área de transferência. Dispositivos de vídeo digital reconhecem este comando.
+title: comando cut
+description: O comando cut remove dados do workspace e os copia para a área de transferência. Os dispositivos de vídeo digital reconhecem esse comando.
 ms.assetid: f42c7364-49cb-41be-b601-bda6e97d1e76
 keywords:
-- comando Recortar multimídia do Windows
+- comando cut Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33571309e1dd249f20e577c97b8c6e1b950eda09
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d5a39010ad7dd07ccff38291441bb0aa05a54ee65da1b865d7ac82ed77fbfdd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144559"
 ---
-# <a name="cut-command"></a>comando Recortar
+# <a name="cut-command"></a>comando cut
 
-O comando Recortar remove dados do espaço de trabalho e os copia para a área de transferência. Dispositivos de vídeo digital reconhecem este comando.
+O comando cut remove dados do workspace e os copia para a área de transferência. Os dispositivos de vídeo digital reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -46,20 +46,20 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 
 </dd> <dt>
 
-<span id="lpszItem"></span><span id="lpszitem"></span><span id="LPSZITEM"></span>*lpszItem*
+<span id="lpszItem"></span><span id="lpszitem"></span><span id="LPSZITEM"></span>*Lpszitem*
 </dt> <dd>
 
-Um dos sinalizadores a seguir que identificam o item a ser recortado.
+Um dos sinalizadores a seguir identificando o item a ser cortado.
 
 
 
 | Valor                 | Significado                                                                                                                                                                                                                               |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| no *retângulo*        | Especifica a parte de cada corte de quadro. Se for omitido, o padrão será o quadro inteiro. Quando esse item é especificado, os quadros não são excluídos. Em vez disso, a área dentro do retângulo se torna preta.                                       |
-| *fluxo* de fluxo de áudio | Especifica o fluxo de áudio no espaço de trabalho afetado pelo comando. Se você usar esse sinalizador e também quiser recortar o vídeo, também deverá usar o sinalizador "fluxo de vídeo". (Se nenhum sinalizador for especificado, todos os fluxos de áudio e vídeo serão recortados.) |
-| da *posição*       | Especifica o início do intervalo de recorte. Se for omitido, o padrão será a posição atual.                                                                                                                                                |
-| para a *posição*         | Especifica o fim do intervalo de recorte. Os dados de áudio e vídeo recortados são exclusivos dessa posição. Se omitido, o padrão será o final do espaço de trabalho.                                                                                  |
-| *fluxo* de fluxo de vídeo | Especifica o fluxo de vídeo no espaço de trabalho afetado pelo comando. Se você usar esse sinalizador e também quiser cortar o áudio, também deverá usar o sinalizador "fluxo de áudio". (Se nenhum sinalizador for especificado, todos os fluxos de áudio e vídeo serão recortados.) |
+| retângulo *em*        | Especifica a parte de cada corte de quadro. Se omitido, ele assume como padrão todo o quadro. Quando esse item é especificado, os quadros não são excluídos. Em vez disso, a área dentro do retângulo se torna preta.                                       |
+| fluxo de fluxo de *áudio* | Especifica o fluxo de áudio no workspace afetado pelo comando. Se você usar esse sinalizador e também quiser recortar vídeo, também deverá usar o sinalizador "fluxo de vídeo". (Se nenhum sinalizador for especificado, todos os fluxos de áudio e vídeo serão cortados.) |
+| da *posição*       | Especifica o início do corte de intervalo. Se omitido, ele assume como padrão a posição atual.                                                                                                                                                |
+| para *posicionar*         | Especifica o final do corte de intervalo. O corte de dados de áudio e vídeo é exclusivo dessa posição. Se omitido, o padrão será o final do workspace.                                                                                  |
+| fluxo de fluxo de *vídeo* | Especifica o fluxo de vídeo no workspace afetado pelo comando. Se você usar esse sinalizador e também quiser cortar áudio, também deverá usar o sinalizador "fluxo de áudio". (Se nenhum sinalizador for especificado, todos os fluxos de áudio e vídeo serão cortados.) |
 
 
 
@@ -70,17 +70,17 @@ Um dos sinalizadores a seguir que identificam o item a ser recortado.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "Notify", "Test" ou uma combinação desses. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify", "test" ou uma combinação deles. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-A alteração se torna permanente somente quando os dados são explicitamente salvos; no entanto, a reprodução funciona como se os dados tiverem sido removidos.
+A alteração se torna permanente somente quando os dados são salvos explicitamente; no entanto, a reprodução age como se os dados tivesse sido removidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,7 +97,7 @@ A alteração se torna permanente somente quando os dados são explicitamente sa
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

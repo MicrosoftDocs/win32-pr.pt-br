@@ -304,7 +304,7 @@
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getpertcpconnectionestats
             - name: GetRTTAndHopCount
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-getrttandhopcount
-            - name: GetTcpStatistics
+            - name: Gettcpstatistics
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatistics
             - name: GetTcpStatisticsEx
               href: /windows/win32/api/Iphlpapi/nf-iphlpapi-gettcpstatisticsex
@@ -344,7 +344,7 @@
               href: /windows/win32/api/Icmpapi/nf-icmpapi-icmp6sendecho2
             - name: IcmpCloseHandle
               href: /windows/win32/api/Icmpapi/nf-icmpapi-icmpclosehandle
-            - name: IcmpCreateFile
+            - name: Icmpcreatefile
               href: /windows/win32/api/Icmpapi/nf-icmpapi-icmpcreatefile
             - name: IcmpParseReplies
               href: /windows/win32/api/Icmpapi/nf-icmpapi-icmpparsereplies

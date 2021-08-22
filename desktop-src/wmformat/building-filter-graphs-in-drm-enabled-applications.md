@@ -3,9 +3,9 @@ title: Criando gráficos de filtro em aplicativos DRM-Enabled
 description: Criando gráficos de filtro em aplicativos DRM-Enabled
 ms.assetid: 447bec2a-0982-4a05-87bb-aed6db684b36
 keywords:
-- SDK do Windows Media Format, criando gráficos de filtro
-- SDK do Windows Media Format, DirectShow
-- SDK do Windows Media Format, aplicativos habilitados para DRM
+- Windows SDK do formato de mídia, criando gráficos de filtro
+- Windows SDK do formato de mídia, DirectShow
+- Windows SDK do formato de mídia, aplicativos habilitados para DRM
 - ASF (Advanced Systems Format), criando gráficos de filtro
 - ASF (formato de sistemas avançados), criando gráficos de filtro
 - ASF (Advanced Systems Format), DirectShow
@@ -13,25 +13,25 @@ keywords:
 - ASF (Advanced Systems Format), aplicativos habilitados para DRM
 - ASF (formato de sistemas avançados), aplicativos habilitados para DRM
 - DirectShow, criando gráficos de filtro
-- Aplicativos habilitados para DRM e DirectShow
+- DirectShow, aplicativos habilitados para DRM
 - DRM (gerenciamento de direitos digitais), DirectShow
 - DRM (gerenciamento de direitos digitais), DirectShow
 - DRM (gerenciamento de direitos digitais), criando gráficos de filtro
 - DRM (gerenciamento de direitos digitais), criando gráficos de filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 944037a00c208e1427d3d19aa6c9dc0a352ec5fc
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 19e7f411a52c0ce7c42410c7a901787c7f6d9d7089921019639cb3f5e708dff6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447946"
 ---
 # <a name="building-filter-graphs-in-drm-enabled-applications"></a>Criando gráficos de filtro em aplicativos DRM-Enabled
 
-Se seu aplicativo do DirectShow der suporte à reprodução de arquivos protegidos por DRM, em geral, você não deve usar o **RenderFile** para criar o grafo de filtro porque não há como especificar quais direitos de DRM você está solicitando antes de o arquivo ser aberto. O leitor ASF do WM, por padrão, solicita apenas direitos de reprodução. O filtro não é adicionado ao grafo e, portanto, não é detectável por aplicativos, até que um arquivo seja aberto com êxito.
+se seu aplicativo DirectShow dá suporte à reprodução de arquivos protegidos por DRM, em geral, você não deve usar o **renderfile** para criar o grafo de filtro porque não há como especificar quais direitos de DRM você está solicitando antes de o arquivo ser aberto. O leitor ASF do WM, por padrão, solicita apenas direitos de reprodução. O filtro não é adicionado ao grafo e, portanto, não é detectável por aplicativos, até que um arquivo seja aberto com êxito.
 
-Para criar um grafo de reprodução habilitado para DRM usando o [leitor ASF do WM](wm-asf-reader-filter.md), você deve criar uma instância do filtro usando **CoCreateInstance**, adicioná-lo ao grafo de filtro usando **IGraphBuilder:: AddFilter**, configurá-lo e renderizar seus PINs de saída. Essa técnica é demonstrada no exemplo de PlayWndASF. Ao criar o grafo dessa forma, você já tem o ponteiro **IBaseFilter** que pode ser usado para chamar o **QueryService** para obter o **IWMDRMWriter**. No entanto, essa interface não estará disponível até que o objeto leitor do Windows Media Format SDK seja criado internamente pelo leitor ASF do WM. A primeira oportunidade que o aplicativo tem para definir direitos de DRM está em seu \_ manipulador de eventos WMT no \_ Rights \_ ex, como mostrado neste trecho de código:
+Para criar um grafo de reprodução habilitado para DRM usando o [leitor ASF do WM](wm-asf-reader-filter.md), você deve criar uma instância do filtro usando **CoCreateInstance**, adicioná-lo ao grafo de filtro usando **IGraphBuilder:: AddFilter**, configurá-lo e renderizar seus PINs de saída. Essa técnica é demonstrada no exemplo de PlayWndASF. Ao criar o grafo dessa forma, você já tem o ponteiro **IBaseFilter** que pode ser usado para chamar o **QueryService** para obter o **IWMDRMWriter**. no entanto, essa interface não estará disponível até que o Windows objeto de leitor do media Format SDK seja criado internamente pelo leitor ASF do WM. A primeira oportunidade que o aplicativo tem para definir direitos de DRM está em seu \_ manipulador de eventos WMT no \_ Rights \_ ex, como mostrado neste trecho de código:
 
 
 ```C++
@@ -93,9 +93,9 @@ case WMT_NO_RIGHTS_EX:
 [**IWMDRMWriter**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

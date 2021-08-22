@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8b46e74e4009f6767788fa120984eca0e89fb551
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c57d08c77c9c420cdc45b158a19fa610231f53f6b409d8b650953de0de8381a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317896"
 ---
 # <a name="cbasefilterunregister-method"></a>Método CBaseFilter. Unregister
 
 O `Unregister` método remove o filtro do registro.
 
 > [!Note]  
-> Esse método é obsoleto. Novos filtros devem ter o registro cancelado usando a função [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) . Para obter mais informações, consulte [como registrar filtros do DirectShow](how-to-register-directshow-filters.md).
+> Esse método é obsoleto. Novos filtros devem ter o registro cancelado usando a função [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) . para obter mais informações, consulte [como registrar filtros de DirectShow](how-to-register-directshow-filters.md).
 
  
 
@@ -45,7 +45,7 @@ HRESULT Unregister();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se bem-sucedido ou um valor **HRESULT** que indica a causa do erro.
 
@@ -55,7 +55,7 @@ Retorna S \_ OK se bem-sucedido ou um valor **HRESULT** que indica a causa do er
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

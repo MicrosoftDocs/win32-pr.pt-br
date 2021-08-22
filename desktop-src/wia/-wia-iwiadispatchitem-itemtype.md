@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 9b70f7a1698ecdb4de023786f21a6ef9d55f681d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3cbf60c935a88a62786c7c516ec0e768d65019c02d4419c44d928cee704a67b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450776"
 ---
 # <a name="itemitemtype-property"></a>Propriedade Item. ItemType
 
@@ -45,7 +45,7 @@ Os seguintes valores são possíveis:
 |--------|-------------------------------------------------|
 | dispositivo | O item é um dispositivo de hardware WIA.              |
 | folder | O item é uma pasta que contém outros itens. |
-| arquivo   | O item é um arquivo de imagem ou áudio.             |
+| file   | O item é um arquivo de imagem ou áudio.             |
 | áudio  | O item é um clipe de áudio.                      |
 | image  | O item é uma imagem.                           |
 
@@ -63,8 +63,8 @@ Um item pode ter mais de um tipo. Por exemplo, cada imagem é dos tipos "imagem"
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
 
 

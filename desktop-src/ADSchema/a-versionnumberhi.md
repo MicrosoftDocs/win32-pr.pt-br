@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 352e4e659a08d7ab9885969d3dd14d9cd03ad47e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7fa755fafdd63a2e366edfa8fc03a80d97bf029f9a3d5f5141578f2c80d2acb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081270"
 ---
 # <a name="version-number-hi-attribute"></a>Número de versão – atributo Hi
 
@@ -58,7 +58,7 @@ Um número de versão principal de uso geral.
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
@@ -79,7 +79,7 @@ Um número de versão principal de uso geral.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
@@ -100,7 +100,7 @@ Um número de versão principal de uso geral.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
@@ -121,7 +121,7 @@ Um número de versão principal de uso geral.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
@@ -142,7 +142,7 @@ Um número de versão principal de uso geral.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
@@ -163,7 +163,7 @@ Um número de versão principal de uso geral.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |

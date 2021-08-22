@@ -1,12 +1,12 @@
 ---
 title: Propriedade IMsRdpClientTransportSettings GatewayProfileUsageMethod
-description: Especifica se as configurações padrão de gateway de Área de Trabalho Remota (Gateway RD) devem ser usadas.
+description: Especifica se as configurações padrão Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 ms.assetid: ce774790-31ad-40ba-ba8f-e81b0dbda175
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade GatewayProfileUsageMethod
-- Propriedade GatewayProfileUsageMethod Serviços de Área de Trabalho Remota, interface IMsRdpClientTransportSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientTransportSettings, Propriedade GatewayProfileUsageMethod
+- Propriedade GatewayProfileUsageMethod Serviços de Área de Trabalho Remota
+- Propriedade GatewayProfileUsageMethod Serviços de Área de Trabalho Remota , interface IMsRdpClientTransportSettings
+- Interface IMsRdpClientTransportSettings Serviços de Área de Trabalho Remota , propriedade GatewayProfileUsageMethod
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05a12a9836e89348d1eb7ccdf680b23e2695c938
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3386e6a38c99539aebb84280dc8250b2d779f5d81229763d2d926ae499e144e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138619"
 ---
-# <a name="imsrdpclienttransportsettingsgatewayprofileusagemethod-property"></a>Propriedade IMsRdpClientTransportSettings:: GatewayProfileUsageMethod
+# <a name="imsrdpclienttransportsettingsgatewayprofileusagemethod-property"></a>Propriedade IMsRdpClientTransportSettings::GatewayProfileUsageMethod
 
-Especifica se as configurações padrão de gateway de Área de Trabalho Remota (Gateway RD) devem ser usadas.
+Especifica se as configurações padrão Área de Trabalho Remota Gateway de Área de Trabalho Remota (Gateway de RD).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,13 +49,13 @@ HRESULT get_GatewayProfileUsageMethod(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O método de uso de perfil de gateway de área de trabalho remota. Esse parâmetro pode usar um dos valores a seguir.
+O método de uso do perfil do Gateway de RD. Esse parâmetro pode usar um dos valores a seguir.
 
 <dt>
 
 <span id="TSC_PROXY_PROFILE_MODE_DEFAULT"></span><span id="tsc_proxy_profile_mode_default"></span>
 
-<span id="TSC_PROXY_PROFILE_MODE_DEFAULT"></span><span id="tsc_proxy_profile_mode_default"></span>**TSC \_ Modo de perfil de PROXY \_ \_ \_ padrão** (0 (0x0))
+<span id="TSC_PROXY_PROFILE_MODE_DEFAULT"></span><span id="tsc_proxy_profile_mode_default"></span>**TSC \_ PADRÃO \_ DO MODO DE PERFIL \_ \_ DE PROXY** (0 (0x0))
 
 
 </dt> <dd>
@@ -66,7 +66,7 @@ Use o modo de perfil padrão, conforme especificado pelo administrador.
 
 <span id="TSC_PROXY_PROFILE_MODE_EXPLICIT"></span><span id="tsc_proxy_profile_mode_explicit"></span>
 
-<span id="TSC_PROXY_PROFILE_MODE_EXPLICIT"></span><span id="tsc_proxy_profile_mode_explicit"></span>**TSC \_ Modo de perfil de PROXY \_ \_ \_ explícito** (1 (0x1))
+<span id="TSC_PROXY_PROFILE_MODE_EXPLICIT"></span><span id="tsc_proxy_profile_mode_explicit"></span>**TSC \_ MODO \_ DE PERFIL PROXY \_ \_ EXPLÍCITO** (1 (0x1))
 
 
 </dt> <dd>

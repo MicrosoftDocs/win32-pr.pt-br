@@ -3,9 +3,9 @@ title: Evento Player. KeyDown
 description: O evento KeyDown ocorre quando uma tecla é pressionada. | Evento Player. KeyDown
 ms.assetid: a34dafca-5db2-4065-bcfe-d66e633b26fb
 keywords:
-- Evento KeyDown Windows Media Player
-- Evento KeyDown Windows Media Player, classe Player
-- Classe Player Windows Media Player, evento KeyDown
+- Windows Media Player de evento KeyDown
+- Windows Media Player de evento KeyDown, classe Player
+- Windows Media Player de classe do Player, evento KeyDown
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 226430421977a58eca02b7a42cf0349f2a5ff520
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a067e0125bea6bcabec591d6c1f3ec6fc5a2ee1b0d649a02009690c89d68952e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134769"
 ---
 # <a name="playerkeydown-event"></a>Evento Player. KeyDown
 
@@ -57,7 +57,7 @@ Player.KeyDown(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -83,8 +83,8 @@ Valores para as chaves principais.
 | SPACE                   | 32      |
 | BACKSPACE               | 8       |
 | Enter                   | 13      |
-| Tecla com o logotipo do Windows, esquerda  | 91      |
-| Tecla com o logotipo do Windows, direita | 92      |
+| Windows tecla de logotipo, esquerda  | 91      |
+| tecla de logotipo Windows, direita | 92      |
 | Chave do aplicativo         | 93      |
 
 
@@ -117,7 +117,7 @@ Valores para as chaves de navegação.
 | Chave         | Valor |
 |-------------|-------|
 | INSERT      | 45    |
-| Delete (excluir)      | 46    |
+| DELETE      | 46    |
 | HOME        | 36    |
 | END         | 35    |
 | PAGE UP     | 33    |
@@ -131,7 +131,7 @@ Valores para as chaves de navegação.
 
  
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

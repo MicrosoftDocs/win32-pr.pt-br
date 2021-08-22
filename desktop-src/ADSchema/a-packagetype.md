@@ -1,11 +1,11 @@
 ---
 title: Package-Type atributo
-description: Esse atributo descreve o tipo de instalação necessário para um pacote de aplicativo, por exemplo, MSI, EXE, CAB.
+description: Esse atributo descreve o tipo de instalação necessária para um pacote de aplicativos, por exemplo, MSI, EXE, CAB.
 ms.assetid: 76505575-a2c9-4113-84ac-1d0689d9e0e4
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Package-Type do atributo AD
-- Esquema do atributo do ADtype
+- Package-Type atributo AD Schema
+- Esquema do AD do atributo packageType
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 325bb00484a3ee44cd23b98931c40fb440cdb3b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af751efa64072c098fa1bf34174f4cf14a71454d0cfc3a6c716b31d31881a9ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081500"
 ---
 # <a name="package-type-attribute"></a>Package-Type atributo
 
-Esse atributo descreve o tipo de instalação necessário para um pacote de aplicativo, por exemplo, MSI, EXE, CAB.
+Esse atributo descreve o tipo de instalação necessária para um pacote de aplicativos, por exemplo, MSI, EXE, CAB.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Package-Type                         |
-| LDAP-Display-Name | packageType                          |
+| Ldap-Display-Name | packageType                          |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.324               |
-| System-ID-GUID    | 7d6c0e96-7e20-11d0-afd6-00c04fd930c9 |
+| System-Id-Guid    | 7d6c0e96-7e20-11d0-afd6-00c04fd930c9 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ Esse atributo descreve o tipo de instalação necessário para um pacote de apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -79,10 +79,10 @@ Esse atributo descreve o tipo de instalação necessário para um pacote de apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -100,10 +100,10 @@ Esse atributo descreve o tipo de instalação necessário para um pacote de apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -121,10 +121,10 @@ Esse atributo descreve o tipo de instalação necessário para um pacote de apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -142,10 +142,10 @@ Esse atributo descreve o tipo de instalação necessário para um pacote de apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -163,10 +163,10 @@ Esse atributo descreve o tipo de instalação necessário para um pacote de apli
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| Tem valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |

@@ -1,47 +1,47 @@
 ---
-title: Como exibir dicas de ferramentas para botões
-description: Quando você especifica o \_ estilo de dicas de ferramenta TBSTYLE, a barra de ferramentas cria e gerencia um controle ToolTip. O controle ToolTip é ocultado e aparece somente quando os usuários movem o ponteiro sobre um botão da barra de ferramentas e deixam-o lá por aproximadamente um segundo.
+title: Como exibir dicas de ferramenta para botões
+description: Quando você especifica o estilo TBSTYLE \_ TOOLTIPS, a barra de ferramentas cria e gerencia um controle de dica de ferramenta. O controle de dica de ferramenta fica oculto e aparece somente quando os usuários movem o ponteiro sobre um botão de barra de ferramentas e o deixam lá por aproximadamente um segundo.
 ms.assetid: 0383DB63-A10E-4235-A974-AB21551E086B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb37de7c21c904673a1f656533497130d50bd8f7
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: f169c6cc9324c98ed085b38f14802fcaa3c5cfbc8bd7ee9aa29af62ef41a6adc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103823613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319996"
 ---
-# <a name="how-to-display-tooltips-for-buttons"></a>Como exibir dicas de ferramentas para botões
+# <a name="how-to-display-tooltips-for-buttons"></a>Como exibir dicas de ferramenta para botões
 
-Quando você especifica o estilo de [**\_ dicas de ferramenta TBSTYLE**](toolbar-control-and-button-styles.md) , a barra de ferramentas cria e gerencia um controle ToolTip. O controle ToolTip é ocultado e aparece somente quando os usuários movem o ponteiro sobre um botão da barra de ferramentas e deixam-o lá por aproximadamente um segundo.
+Quando você especifica o [**estilo TBSTYLE \_ TOOLTIPS,**](toolbar-control-and-button-styles.md) a barra de ferramentas cria e gerencia um controle de dica de ferramenta. O controle de dica de ferramenta fica oculto e aparece somente quando os usuários movem o ponteiro sobre um botão de barra de ferramentas e o deixam lá por aproximadamente um segundo.
 
-Seu aplicativo pode fornecer texto ao controle ToolTip em qualquer uma das seguintes maneiras:
+Seu aplicativo pode fornecer texto para o controle de dica de ferramenta de qualquer uma das seguintes maneiras:
 
--   Defina o texto da dica de ferramenta como o membro **isastring** da estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) para cada botão. Você também deve enviar uma [**mensagem \_ SETMAXTEXTROWS TB**](tb-setmaxtextrows.md) e definir o máximo de linhas de texto como 0, para que o texto não apareça como o rótulo do botão, e não como uma dica de ferramenta.
--   Crie a barra de ferramentas com o estilo de [**\_ lista TBSTYLE**](toolbar-control-and-button-styles.md) e defina o estilo estendido [**TBSTYLE \_ ex \_ MIXEDBUTTONS**](toolbar-extended-styles.md) . Os rótulos são mostrados apenas para botões que têm o estilo de [**\_ texto BTNS**](toolbar-control-and-button-styles.md) . Para botões que não têm esse estilo, é mostrada uma dica de ferramenta que contém o texto do botão.
--   Responda ao código de notificação [TTN \_ GETDISPINFO](ttn-getdispinfo.md) .
--   Responda ao código de notificação [tbn \_ GETINFOTIP](tbn-getinfotip.md) .
+-   De definir o texto da dica de ferramenta como o **membro iString** da estrutura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) para cada botão. Você também deve enviar uma mensagem [**TB \_ SETMAXTEXTROWS**](tb-setmaxtextrows.md) e definir o máximo de linhas de texto como 0, para que o texto não apareça como o rótulo do botão em vez de como uma dica de ferramenta.
+-   Crie a barra de ferramentas com o [**estilo TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) e, em seguida, de definir o estilo estendido [**TBSTYLE \_ EX \_ MIXEDBUTTONS.**](toolbar-extended-styles.md) Os rótulos são mostrados somente para botões que têm o estilo [**BTNS \_ SHOWTEXT.**](toolbar-control-and-button-styles.md) Para botões que não têm esse estilo, é mostrada uma dica de ferramenta que contém o texto do botão.
+-   Responda ao código [de notificação \_ GETDISPINFO do TTN.](ttn-getdispinfo.md)
+-   Responda ao código [de notificação \_ GETINFOTIP do TBN.](tbn-getinfotip.md)
 
-Um aplicativo que precisa enviar mensagens diretamente para o controle ToolTip pode recuperar o identificador para o controle usando a mensagem [**TB \_ GetToolTips**](tb-gettooltips.md) . Um aplicativo pode substituir o controle ToolTip de uma barra de ferramentas por outro controle ToolTip usando a mensagem [**TB \_ SetToolTips**](tb-settooltips.md) .
+Um aplicativo que precisa enviar mensagens diretamente para o controle de dica de ferramenta pode recuperar o controle usando a [**mensagem \_ GETTOOLTIPS**](tb-gettooltips.md) do TB. Um aplicativo pode substituir o controle de dica de ferramenta de uma barra de ferramentas por outro controle de dica de ferramenta usando a [**mensagem TB \_ SETTOOLTIPS.**](tb-settooltips.md)
 
-A maneira mais flexível de fornecer texto de dica de ferramenta é responder ao código de notificação [TTN \_ GETDISPINFO](ttn-getdispinfo.md) ou [tbn \_ GETINFOTIP](tbn-getinfotip.md) enviado pelo controle Toolbar para seu pai na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) . Para [TTN \_ GETDISPINFO](ttn-getdispinfo.md), o parâmetro *lParam* inclui um ponteiro para uma estrutura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) (também definida como **LPTOOLTIPTEXT**) que especifica o identificador de comando do botão para o qual o texto de ajuda é necessário. Esse identificador está no membro **NMTTDISPINFO. HDR. idFrom** . Um aplicativo pode copiar o texto de ajuda para a estrutura, especificar o endereço de uma cadeia de caracteres que contém o texto da ajuda ou especificar o identificador de instância e o manipulador de recursos de um recurso de cadeia de caracteres.
+A maneira mais flexível de fornecer texto de dica de ferramenta é responder ao código de notificação [ \_ TTN GETDISPINFO](ttn-getdispinfo.md) ou [TBN \_ GETINFOTIP](tbn-getinfotip.md) enviado pelo controle da barra de ferramentas para seu pai na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md) Para [TTN \_ GETDISPINFO](ttn-getdispinfo.md), o parâmetro *lParam* inclui um ponteiro para uma estrutura [**NMTTDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmttdispinfoa) (também definida como **LPTOOLTIPTEXT**) que especifica o identificador de comando do botão para o qual o texto da Ajuda é necessário. Esse identificador está no **membro NMTTDISPINFO.hdr.idFrom.** Um aplicativo pode copiar o texto da Ajuda para a estrutura, especificar o endereço de uma cadeia de caracteres que contém o texto da Ajuda ou especificar o identificador de instância e o identificador de recurso de um recurso de cadeia de caracteres.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="display-a-tooltip-for-a-button"></a>Exibir uma dica de ferramenta para um botão
 
-O código de exemplo a seguir manipula o código de notificação da dica de ferramenta [TTN \_ GETDISPINFO](ttn-getdispinfo.md) fornecendo texto de identificadores de recurso.
+O código de exemplo a seguir trata o código de notificação da dica de ferramenta [ \_ TTN GETDISPINFO](ttn-getdispinfo.md) fornecendo texto de identificadores de recurso.
 
 
 ```C++
@@ -89,12 +89,12 @@ case WM_NOTIFY:
 [Usando controles da barra de ferramentas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

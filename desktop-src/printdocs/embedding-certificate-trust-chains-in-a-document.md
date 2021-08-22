@@ -4,12 +4,12 @@ ms.assetid: c6aae8ff-2e1e-43de-9105-171e4187d193
 title: Inserir cadeias de certificados em um documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ee6476e0c187cf1a62915f0a3ab2b7949586baa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e23e47b4cd0d140d7200fb8aa01642ea5fbb731e49dcc289f596a054b0accbf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447576"
 ---
 # <a name="embed-certificate-chains-in-a-document"></a>Inserir cadeias de certificados em um documento
 

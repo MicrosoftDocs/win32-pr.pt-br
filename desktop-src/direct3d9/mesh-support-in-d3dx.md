@@ -4,12 +4,12 @@ ms.assetid: 7892370f-0807-4ab7-b7cd-a7e1182e3f9c
 title: Suporte a malha no D3DX (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1600b372432d59357a7431c70ce70ce2958002c
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 310f9888a2231f781fabe0820357241318cf5e6d486e688ba9c4a786305a6b9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119240756"
 ---
 # <a name="mesh-support-in-d3dx-direct3d-9"></a>Suporte a malha no D3DX (Direct3D 9)
 
@@ -84,7 +84,7 @@ Para áreas de alta visibilidade, a resolução pode ser aumentada usando o nív
 
 ### <a name="patch-meshes"></a>Malhas de patch
 
-Dois tipos especializados de malhas de patch também são suportados: patches retângulo e triângulo. A malha de patch do retângulo é uma malha de patch cujos pontos de controle são colocados em uma sequência sinunta e retangular. Patches de retângulo e triângulo são usados para criar superfícies de ordem alta. Elas não são tão comumente usadas como malhas de triângulo.
+Também há suporte para dois tipos especializados de malhas de patch: patches retângulo e triângulo. A malha de patch do retângulo é uma malha de patch cujos pontos de controle são colocados em uma sequência sinunta e retangular. Patches de retângulo e triângulo são usados para criar superfícies de ordem alta. Elas não são tão comumente usadas como malhas de triângulo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

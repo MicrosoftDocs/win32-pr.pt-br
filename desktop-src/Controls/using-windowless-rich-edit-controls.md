@@ -4,12 +4,12 @@ description: Esta seção fornece código de exemplo e informações sobre como 
 ms.assetid: BEC29152-05A0-498C-9B62-1D3868B62674
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eaec4c23289ece038b97bd6b643cb201081f0571
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bfff63cb4a7fadb1f9b17fbbedd34980b5ec659f289c2180951955a9969aa17e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077740"
 ---
 # <a name="using-windowless-rich-edit-controls"></a>Usando controles de edição avançados sem janela
 

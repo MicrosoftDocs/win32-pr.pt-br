@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18be8901a58715e3bd8aaaa49ae40be07e7e9dc8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5bd04bf43869f23bfec38db34be1b83b2c4f3953c7017120ebe2f0c985504b53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124501"
 ---
 # <a name="id3dx11effectisoptimized-method"></a>Método ID3DX11Effect:: isoptimized
 
@@ -41,7 +41,7 @@ BOOL IsOptimized();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](/windows/desktop/WinProg/windows-data-types)**
 

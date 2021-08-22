@@ -1,7 +1,7 @@
 ---
 description: Representa o serviço de migração do sistema virtual. Ele é usado para migrar um sistema virtual ou para migrar o armazenamento de um sistema virtual de uma plataforma de virtualização para outra.
 ms.assetid: af25e405-4498-40a8-ba8e-4b3873c56097
-title: Classe Msvm_VirtualSystemMigrationService
+title: Msvm_VirtualSystemMigrationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,18 +44,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1e80cb12e6e6767b49670a1aff68c9791f224068
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87fa9fe2b15c7ed013e5e8cb8687c4d3ccb02193b48ee037c55273a50a7f84e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147959"
 ---
-# <a name="msvm_virtualsystemmigrationservice-class"></a>\_Classe Msvm VirtualSystemMigrationService
+# <a name="msvm_virtualsystemmigrationservice-class"></a>Classe Msvm \_ VirtualSystemMigrationService
 
 Representa o serviço de migração do sistema virtual. Ele é usado para migrar um sistema virtual ou para migrar o armazenamento de um sistema virtual de uma plataforma de virtualização para outra.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -99,32 +99,32 @@ class Msvm_VirtualSystemMigrationService : CIM_VirtualSystemMigrationService
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VirtualSystemMigrationService** tem estes tipos de membros:
+A **classe \_ VirtualSystemMigrationService Msvm** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Msvm \_ VirtualSystemMigrationService** tem esses métodos.
+A **classe \_ VirtualSystemMigrationService Msvm** tem esses métodos.
 
 
 
 | Método                                                                                                                  | Descrição                                                                                                                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AddNetworkSettings**](addnetworksettings-msvm-virtualsystemmigrationservice.md)                                     | Adiciona sub-redes de rede de migração para o serviço de migração de sistema virtual.<br/>                                                                                          |
-| [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                 | Verifica a compatibilidade das informações de compatibilidade com o sistema de computador de hospedagem.<br/>                                                                          |
+| [**AddNetworkSettings**](addnetworksettings-msvm-virtualsystemmigrationservice.md)                                     | Adiciona sub-redes de rede de migração para o serviço de migração do sistema virtual.<br/>                                                                                          |
+| [**CheckSystemCompatibilityInfo**](checksystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                 | Verifica as informações de compatibilidade quanto à compatibilidade com o sistema de computador de hospedagem.<br/>                                                                          |
 | [**CheckVirtualSystemIsMigratable**](checkvirtualsystemismigratable-msvm-virtualsystemmigrationservice.md)             | Método para migrar um sistema virtual ou o armazenamento de um sistema virtual para um host de destino especificado por um nome de host.<br/>                                              |
 | [**CheckVirtualSystemIsMigratableToHost**](checkvirtualsystemismigratabletohost-msvm-virtualsystemmigrationservice.md) | Determina se o sistema virtual especificado pode ser migrado para um host de destino especificado por um nome de rede ou endereço IP.<br/>                                       |
 | [**GetSystemCompatibilityInfo**](getsystemcompatibilityinfo-msvm-virtualsystemmigrationservice.md)                     | Gera um blob opaco de dados que contém informações de compatibilidade para o sistema especificado.<br/>                                                                |
-| [**GetSystemCompatibilityVectors**](getsystemcompatibilityvectors-msvm-virtualsystemmigrationservice.md)               | Obtém vetores de compatibilidade para uma máquina virtual ou um host.<br/> **Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.<br/> |
+| [**GetSystemCompatibilityVectors**](getsystemcompatibilityvectors-msvm-virtualsystemmigrationservice.md)               | Obtém vetores de compatibilidade para uma máquina virtual ou um host.<br/> **Windows 8.1:** Esse valor não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/> |
 | [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md)                     | Migra um sistema virtual ou o armazenamento de um sistema virtual para um host de destino especificado por um nome de host.<br/>                                                       |
 | [**MigrateVirtualSystemToSystem**](migratevirtualsystemtosystem-msvm-virtualsystemmigrationservice.md)                 | Move, migra ou realoca um sistema virtual para um sistema de destino.<br/>                                                                                                |
-| [**ModifyNetworkSettings**](modifynetworksettings-msvm-virtualsystemmigrationservice.md)                               | Modifica as sub-redes da rede de migração do serviço de migração do sistema virtual.<br/>                                                                                       |
+| [**ModifyNetworkSettings**](modifynetworksettings-msvm-virtualsystemmigrationservice.md)                               | Modifica as sub-redes de rede de migração do serviço de migração do sistema virtual.<br/>                                                                                       |
 | [**ModifyServiceSettings**](modifyservicesettings-msvm-virtualsystemmigrationservice.md)                               | Modifica os dados de configuração para o serviço de migração.<br/>                                                                                                              |
-| [**RemoveNetworkSettings**](removenetworksettings-msvm-virtualsystemmigrationservice.md)                               | Remove as sub-redes da rede de migração do serviço de migração do sistema virtual.<br/>                                                                                      |
+| [**RemoveNetworkSettings**](removenetworksettings-msvm-virtualsystemmigrationservice.md)                               | Remove sub-redes de rede de migração do serviço de migração do sistema virtual.<br/>                                                                                      |
 | [**RequestStateChange**](msvm-virtualsystemmigrationservice-requeststatechange.md)                                     | Solicita uma alteração de estado<br/>                                                                                                                                           |
-| [**StartService**](msvm-virtualsystemmigrationservice-startservice.md)                                                 | Inicia o serviço.<br/>                                                                                                                                               |
+| [**Startservice**](msvm-virtualsystemmigrationservice-startservice.md)                                                 | Inicia o serviço.<br/>                                                                                                                                               |
 | [**StopService**](msvm-virtualsystemmigrationservice-stopservice.md)                                                   | Interrompe o serviço.<br/>                                                                                                                                                |
 
 
@@ -133,14 +133,14 @@ A classe **Msvm \_ VirtualSystemMigrationService** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ VirtualSystemMigrationService** tem essas propriedades.
+A **classe \_ VirtualSystemMigrationService Msvm** tem essas propriedades.
 
 <dl> <dt>
 
 **ActiveStorageMigrationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -153,7 +153,7 @@ O número de migrações de armazenamento atuais em andamento.
 **ActiveVirtualSystemMigrationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -166,13 +166,13 @@ O número de migrações de sistema virtual atuais em andamento.
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método **RequestStateChange** . Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Indica os valores possíveis para o *parâmetro RequestedState* do **método RequestStateChange.** Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
@@ -185,20 +185,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "serviço de migração do Hyper-V".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "Serviço de Migração do Hyper-V".
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada [**do \_ serviço CIM**](/windows/desktop/CIMWin32Prov/cim-service)e é sempre definida como "Msvm \_ VirtualSystemMigrationService".
+O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada [**do \_ Serviço CIM**](/windows/desktop/CIMWin32Prov/cim-service)e sempre é definida como "Msvm \_ VirtualSystemMigrationService".
 
 </dd> <dt>
 
@@ -224,20 +224,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "serviço de migração do Hyper-V".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "Serviço de Migração do Hyper-V".
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -250,20 +250,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "serviço de migração do Hyper-V".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "Serviço de Migração do Hyper-V".
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A configuração de inicialização ou padrão de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como 2 (habilitado).
+Configuração padrão ou de inicialização de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como 2 (Habilitada).
 
 </dd> <dt>
 
@@ -549,8 +549,8 @@ Indica o estado de destino para o qual a instância está em transição. Essa p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

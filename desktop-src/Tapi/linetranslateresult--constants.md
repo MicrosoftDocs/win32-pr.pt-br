@@ -4,12 +4,12 @@ ms.assetid: 7b834c57-d862-4fe6-828c-9e8fa20f3ec7
 title: Constantes de LINETRANSLATERESULT_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aad10c3da2b4250ded5706e4aaa10b9b61f8739b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ba28c04bc52d3857d76bffefed5fe07803954e72f4a5e7e05ffa22d4ee6c646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518776"
 ---
 # <a name="linetranslateresult_-constants"></a>\_Constantes LINETRANSLATERESULT
 
@@ -153,7 +153,7 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

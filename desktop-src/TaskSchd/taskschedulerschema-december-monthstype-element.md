@@ -1,9 +1,9 @@
 ---
-title: Elemento dezembro (monthtype)
-description: Especifica que a tarefa é executada em dezembro.
+title: Elemento December (monthsType)
+description: Especifica que a tarefa é executado em dezembro.
 ms.assetid: 42f3cfb2-8e82-46a0-b3ef-42e83d329124
 keywords:
-- Agendador de Tarefas de elemento de dezembro
+- Elemento December Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5c907262fe67a0529917d085583465eb97f94c73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9212641956abc4e52f455a83ac6d5e58a8560fa44cd68068dc809280b30e5faf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105781033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516916"
 ---
-# <a name="december-monthstype-element"></a>Elemento dezembro (monthtype)
+# <a name="december-monthstype-element"></a>Elemento December (monthsType)
 
-Especifica que a tarefa é executada em dezembro.
+Especifica que a tarefa é executado em dezembro.
 
 ``` syntax
 <xs:element name="December">
@@ -30,7 +30,7 @@ Especifica que a tarefa é executada em dezembro.
 </xs:element>
 ```
 
-O elemento **dezembro** é definido pelo tipo complexo [**monthtype**](taskschedulerschema-monthstype-complextype.md) .
+O **elemento December** é definido pelo tipo complexo [**monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,8 +38,8 @@ O elemento **dezembro** é definido pelo tipo complexo [**monthtype**](tasksched
 
 | Elemento                                                                                                          | Derivado de                                                     | Descrição                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Meses (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthtype**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executada para uma agenda mensal de dia da semana.<br/> |
-| [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthtype**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executada por um agendamento mensal.<br/>             |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executado para um agendamento mensal do dia da semana.<br/> |
+| [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executado para um agendamento mensal.<br/>             |
 
 
 
@@ -62,8 +62,8 @@ O XML a seguir define um calendário de meses que executa a tarefa em dezembro.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ O XML a seguir define um calendário de meses que executa a tarefa em dezembro.
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

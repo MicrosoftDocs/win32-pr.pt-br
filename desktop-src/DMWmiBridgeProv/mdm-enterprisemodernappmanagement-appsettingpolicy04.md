@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc9003ea7c9106f177958f7a15def3c60393346b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bba82be4653266c94465917857eb47b014399594525a6f0f18264e4f73651684
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077250"
 ---
 # <a name="mdm_enterprisemodernappmanagement_appsettingpolicy04-class"></a>\_ \_ Classe APPSETTINGPOLICY04 do MDM EnterpriseModernAppManagement
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A classe **MDM \_ EnterpriseModernAppManagement \_ AppSettingPolicy04** especifica todos os valores de configuração de aplicativo gerenciado.
 
@@ -82,7 +82,7 @@ Tipo de dados: **booliano**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Adicionado no Windows 10, versão 1511. O **configurador** e os dados representam um par chave-valor a ser configurado para o aplicativo. O nó representa o nome da chave e os dados representam o valor. Você pode encontrar esse valor em LocalSettings no contêiner Managed. app. Settings.
+adicionado em Windows 10, versão 1511. O **configurador** e os dados representam um par chave-valor a ser configurado para o aplicativo. O nó representa o nome da chave e os dados representam o valor. Você pode encontrar esse valor em LocalSettings no Managed.App. Configurações contêiner.
 
 Essa configuração só funciona para aplicativos que dão suporte ao recurso e só tem suporte no contexto do usuário.
 
@@ -121,7 +121,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

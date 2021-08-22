@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo Restart
+title: tipo complexo restartType
 description: Define os elementos filho e as informações de sequência para o elemento RestartOnFailure.
 ms.assetid: 3a192955-8a33-42b9-a974-faa9a3789f58
 keywords:
-- Restart tipo complexo Agendador de Tarefas
+- tipo complexo restartType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7f83dcac376fcdd8d2059649350502111f5a732f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 996debc2c8e3d7d00ca7b42facde582f918d72736426ed326691461d800f8562
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516473"
 ---
-# <a name="restarttype-complex-type"></a>Tipo complexo Restart
+# <a name="restarttype-complex-type"></a>tipo complexo restartType
 
-Define os elementos filho e as informações de sequência para o elemento [RestartOnFailure](taskschedulerschema-restartonfailure-settingstype-element.md) .
+Define os elementos filho e as informações de sequência para o [elemento RestartOnFailure.](taskschedulerschema-restartonfailure-settingstype-element.md)
 
 ``` syntax
 <xs:complexType name="restartType">
@@ -62,7 +62,7 @@ Define os elementos filho e as informações de sequência para o elemento [Rest
 
 | Elemento                                                              | Type | Descrição                                        |
 |----------------------------------------------------------------------|------|----------------------------------------------------|
-| [**Contar**](taskschedulerschema-count-restarttype-element.md)       |      | Número de tentativas para reiniciar a tarefa.<br/> |
+| [**Contagem**](taskschedulerschema-count-restarttype-element.md)       |      | Número de tentativas de reiniciar a tarefa.<br/> |
 | [**Intervalo**](taskschedulerschema-interval-restarttype-element.md) |      | Por quanto tempo tentar iniciar a tarefa.<br/>      |
 
 
@@ -73,8 +73,8 @@ Define os elementos filho e as informações de sequência para o elemento [Rest
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -82,7 +82,7 @@ Define os elementos filho e as informações de sequência para o elemento [Rest
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

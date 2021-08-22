@@ -1,7 +1,7 @@
 ---
 description: Salva as alterações em um perfil no disco.
 ms.assetid: e844bd4c-93c3-44a3-b7d5-0beb71c9fa17
-title: 'Método IScanProfile:: Save (ScanProfile. h)'
+title: Método IScanProfile::Save (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 6d4787380344a7bf8adb70f4cb5a3eaacdea403a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cf4201a0d149c7b529e595d7f2c2ea92a6010f6cffd3e6c5c74fb3cdc040651
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450916"
 ---
-# <a name="iscanprofilesave-method"></a>Método IScanProfile:: Save
+# <a name="iscanprofilesave-method"></a>Método IScanProfile::Save
 
 Salva as alterações em um perfil no disco.
 
@@ -37,31 +37,31 @@ HRESULT Save();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Um perfil de verificação salvo é um arquivo XML armazenado em% USERPROFILE% \\ dados de aplicativo \\ Microsoft \\ Document Center \\ UserScanProfiles.
+Um perfil de verificação salvo é um arquivo XML armazenado em %USERPROFILE% Dados do \\ Aplicativo Microsoft Document Center \\ \\ \\ UserScanProfiles.
 
-Se mais de um processo gravar no objeto [**IScanProfile**](-wia-iscanprofile.md) , aquele que chama **IScanProfile:: Save** Last será o único processo cujas alterações são salvas.
+Se mais de um processo grava no objeto [**IScanProfile,**](-wia-iscanprofile.md) aquele que chama **IScanProfile::Save** last é o único processo cujas alterações são salvas.
 
-O método **IScanProfile:: Save** valida o perfil antes de salvar. O perfil é sempre considerado válido, a menos que a categoria do item de aquisição de imagem do Windows (WIA) 2,0 associado ao perfil seja o \_ \_ feed de categoria WIA ou o \_ alimentador de categoria WIA \_ . Se a categoria for o \_ feed de categoria WIA \_ ou o \_ \_ alimentador de categoria WIA, as propriedades a seguir deverão ser válidas para o item, se as propriedades estiverem contidas no perfil:
+O **método IScanProfile::Save** valida o perfil antes de salvar. O perfil sempre é considerado válido, a menos que a categoria do item WIA (Aquisição de Imagem) 2.0 do Windows associado ao perfil seja WIA CATEGORY FLATBED ou \_ \_ WIA \_ CATEGORY \_ FEEDER. Se a categoria for WIA CATEGORY FLATBED ou \_ \_ WIA \_ CATEGORY FEEDER, as seguintes propriedades deverão ser válidas para o item, se as propriedades estão contidas \_ no perfil:
 
-\_brilho de IPS WIA \_
+BRILHO \_ DE IPS DO WIA \_
 
-\_contraste de IPS WIA \_
+CONTRASTE \_ DE IPS DO WIA \_
 
-\_tipo de \_ dados IPA WIA
+WIA \_ IPA \_ DATATYPE
 
-\_XRES IPS \_ WIA
+WIA \_ IPS \_ XRES
 
-\_formato IPA \_ WIA
+FORMATO \_ IPA DO WIA \_
 
-Além disso, se a categoria for o \_ alimentador de categorias WIA \_ , \_ a \_ Propriedade tamanho da página IPS WIA \_ deverá ser válida, se estiver presente no perfil. Para obter mais informações sobre essas propriedades, consulte [**constantes de Propriedade do item WIA do scanner**](-wia-wiaitempropscanneritem.md).
+Além disso, se a categoria for WIA CATEGORY FEEDER, a propriedade TAMANHO DA PÁGINA IPS do WIA deverá ser válida, se ela estiver \_ \_ presente no \_ \_ \_ perfil. Para obter mais informações sobre essas propriedades, consulte [**Constantes de propriedade de item WIA do scanner**](-wia-wiaitempropscanneritem.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,10 +69,10 @@ Além disso, se a categoria for o \_ alimentador de categorias WIA \_ , \_ a \_ 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
-| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Além disso, se a categoria for o \_ alimentador de categorias WIA \_ , \_ a \_ 
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

@@ -5,18 +5,18 @@ ms.assetid: 52094AE3-3B44-4689-9EE7-1BA1B3A779CB
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/27/2018
-ms.openlocfilehash: e554001c88e3027f5a199eaf6572242b5a73f09c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c841227dfc74331e177d99676183489826f9c2fc57e41b81621ed90617d72857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74104515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989676"
 ---
 # <a name="direct3d-12-graphics"></a>Gráficos do Direct3D 12
 
 Este guia de programação contém informações sobre como usar o pipeline programável do Direct3D 12 para criar um mecanismo de gráficos personalizado.
 
-Os cabeçalhos e as bibliotecas do Direct3D 12 fazem parte do SDK do Windows 10. Não há nenhum download ou instalação separado necessário para usar o Direct3D 12.
+os cabeçalhos e as bibliotecas do Direct3D 12 fazem parte do SDK do Windows 10. Não há nenhum download ou instalação separado necessário para usar o Direct3D 12.
 
 ## <a name="in-this-section"></a>Nesta seção
 

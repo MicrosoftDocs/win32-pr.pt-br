@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXMATRIXStack:: MultMatrixLocal (D3dx9math. h) – determina o produto da matriz e da matriz atual.'
+description: Método ID3DXMATRIXStack::MultMatrixLocal (D3dx9math.h) – determina o produto da matriz determinada e a matriz atual.
 ms.assetid: 6f909b38-821c-4173-aba9-fd4392f70551
-title: 'Método ID3DXMATRIXStack:: MultMatrixLocal (D3dx9math. h)'
+title: Método ID3DXMATRIXStack::MultMatrixLocal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 509aff4dd21f62033dc1e4672d29aad57445f9ee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b08a50f6477be6106ce6eaf82c0111f805ed00472259283429e1f638579c91a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120810"
 ---
-# <a name="id3dxmatrixstackmultmatrixlocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack:: MultMatrixLocal (D3dx9math. h)
+# <a name="id3dxmatrixstackmultmatrixlocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::MultMatrixLocal (D3dx9math.h)
 
-Determina o produto da matriz e da matriz atual.
+Determina o produto da matriz determinada e a matriz atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ HRESULT MultMatrixLocal(
 
 <dl> <dt>
 
-*pMat* \[ no\]
+*pMat* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) a ser multiplicado com a matriz atual.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3dxmatrix.md) a ser multiplicada pela matriz atual.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) a ser multiplicado com
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método multiplica a matriz específica à matriz atual (a transformação é sobre a origem local do objeto).
+Esse método multiplica à esquerda a matriz determinada para a matriz atual (a transformação é sobre a origem local do objeto).
 
 
 ```
@@ -66,7 +66,7 @@ m_pstack[m_currentPos] = (*pMat) * m_pstack[m_currentPos];
 
 
 
-Esse método não adiciona um item à pilha, ele substitui a matriz atual pelo produto da matriz especificada e a matriz atual.
+Esse método não adiciona um item à pilha, ele substitui a matriz atual pelo produto da matriz determinada e a matriz atual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,12 +74,12 @@ Esse método não adiciona um item à pilha, ele substitui a matriz atual pelo p
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

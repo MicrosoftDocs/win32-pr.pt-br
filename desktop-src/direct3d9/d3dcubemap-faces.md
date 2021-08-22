@@ -1,7 +1,7 @@
 ---
-description: Define as faces de um cubemap.
+description: Define os rostos de um cubemap.
 ms.assetid: 6d18b410-6f22-4202-86ae-6b3ef85e6f69
-title: Enumeração de D3DCUBEMAP_FACES (D3D9Types. h)
+title: D3DCUBEMAP_FACES enumeração (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: eaf482f6f98d695f3aea3198948616c05ed01f72
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd7222fcb561f23f742bfe689eb8323f2f5b70ed67d5c23c7dee4943e2642167
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989036"
 ---
-# <a name="d3dcubemap_faces-enumeration"></a>Enumeração de rostos de D3DCUBEMAP \_
+# <a name="d3dcubemap_faces-enumeration"></a>Enumeração D3DCUBEMAP \_ FACES
 
-Define as faces de um cubemap.
+Define os rostos de um cubemap.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,52 +45,52 @@ typedef enum D3DCUBEMAP_FACES {
 
 <dl> <dt>
 
-<span id="D3DCUBEMAP_FACE_POSITIVE_X"></span><span id="d3dcubemap_face_positive_x"></span>**\_ \_ X positivo de face D3DCUBEMAP \_**
+<span id="D3DCUBEMAP_FACE_POSITIVE_X"></span><span id="d3dcubemap_face_positive_x"></span>**D3DCUBEMAP \_ FACE \_ POSITIVE \_ X**
 </dt> <dd>
 
-X-face positiva do cubemap.
+Face X positiva do cubemap.
 
 </dd> <dt>
 
-<span id="D3DCUBEMAP_FACE_NEGATIVE_X"></span><span id="d3dcubemap_face_negative_x"></span>**\_ \_ X negativo de face D3DCUBEMAP \_**
+<span id="D3DCUBEMAP_FACE_NEGATIVE_X"></span><span id="d3dcubemap_face_negative_x"></span>**D3DCUBEMAP \_ FACE \_ NEGATIVE \_ X**
 </dt> <dd>
 
-X-face negativa de cubemap.
+X-face negativa do cubemap.
 
 </dd> <dt>
 
-<span id="D3DCUBEMAP_FACE_POSITIVE_Y"></span><span id="d3dcubemap_face_positive_y"></span>**D3DCUBEMAP \_ \_ positivo \_ Y**
+<span id="D3DCUBEMAP_FACE_POSITIVE_Y"></span><span id="d3dcubemap_face_positive_y"></span>**D3DCUBEMAP \_ FACE \_ POSITIVE \_ Y**
 </dt> <dd>
 
 Face y positiva do cubemap.
 
 </dd> <dt>
 
-<span id="D3DCUBEMAP_FACE_NEGATIVE_Y"></span><span id="d3dcubemap_face_negative_y"></span>**Y D3DCUBEMAP de \_ rosto \_ negativo \_**
+<span id="D3DCUBEMAP_FACE_NEGATIVE_Y"></span><span id="d3dcubemap_face_negative_y"></span>**D3DCUBEMAP \_ FACE \_ NEGATIVE \_ Y**
 </dt> <dd>
 
-A face y negativa do cubemap.
+Face y negativa do cubemap.
 
 </dd> <dt>
 
-<span id="D3DCUBEMAP_FACE_POSITIVE_Z"></span><span id="d3dcubemap_face_positive_z"></span>**D3DCUBEMAP de \_ rosto \_ positivo \_ Z**
+<span id="D3DCUBEMAP_FACE_POSITIVE_Z"></span><span id="d3dcubemap_face_positive_z"></span>**D3DCUBEMAP \_ FACE \_ POSITIVE \_ Z**
 </dt> <dd>
 
-Uma face z positiva do cubemap.
+Face z positiva do cubemap.
 
 </dd> <dt>
 
-<span id="D3DCUBEMAP_FACE_NEGATIVE_Z"></span><span id="d3dcubemap_face_negative_z"></span>**D3DCUBEMAP de \_ rosto \_ negativo \_ Z**
+<span id="D3DCUBEMAP_FACE_NEGATIVE_Z"></span><span id="d3dcubemap_face_negative_z"></span>**D3DCUBEMAP \_ FACE \_ NEGATIVE \_ Z**
 </dt> <dd>
 
-Z-face negativa de cubemap.
+Z-face negativa do cubemap.
 
 </dd> <dt>
 
-<span id="D3DCUBEMAP_FACE_FORCE_DWORD"></span><span id="d3dcubemap_face_force_dword"></span>**\_DWORD de \_ força \_ facial do D3DCUBEMAP**
+<span id="D3DCUBEMAP_FACE_FORCE_DWORD"></span><span id="d3dcubemap_face_force_dword"></span>**D3DCUBEMAP \_ FACE \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns
 
 <dl> <dt>
 
-[Enumerações do Direct3D](dx9-graphics-reference-d3d-enums.md)
+[Enumerações direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
 [**IDirect3DCubeTexture9::AddDirtyRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-adddirtyrect)

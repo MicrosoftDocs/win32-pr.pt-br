@@ -3,7 +3,7 @@ title: Mensagem de TB_GETIMAGELISTCOUNT (commctrl. h)
 description: Obtém o número de listas de imagens associadas à barra de ferramentas.
 ms.assetid: ecabbecf-dfd1-4a34-b03b-d6137e852021
 keywords:
-- Controles de TB_GETIMAGELISTCOUNT de mensagens do Windows
+- controles de Windows de mensagem de TB_GETIMAGELISTCOUNT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebdd520c2eba063b85be860a77791bb364650eab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fa28b951d5a886529cef8c263ddba34043f624974109264d279cd1264b76df0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078350"
 ---
 # <a name="tb_getimagelistcount-message"></a>TB de \_ mensagem GETIMAGELISTCOUNT
 
@@ -35,7 +35,7 @@ Obtém o número de listas de imagens associadas à barra de ferramentas.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de listas de imagens.
 
@@ -45,9 +45,9 @@ Retorna o número de listas de imagens.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -3,19 +3,19 @@ title: Implementando CEcho DoProcessOutput
 description: Implementando CEcho DoProcessOutput
 ms.assetid: afd91022-4e2d-46a2-a0f4-cd2b558536d6
 keywords:
-- Plug-ins do Windows Media Player, método Echo DoProcessOutput de exemplo
+- plug-ins de Windows Media Player, método Echo de exemplo DoProcessOutput
 - plug-ins, exemplo de método Echo DoProcessOutput
 - plug-ins de processamento de sinal digital, Echo Sample DoProcessOutput Method
 - Plug-ins do DSP, método Echo de exemplo DoProcessOutput
 - Exemplo de plug-in do DSP de eco, método DoProcessOutput
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ff40246a6a0ccda2b3f17b12924c44cb79fa4d9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 07054950cabadbc835c9904d48cdb4e6ddf5f05c0822c997558381958a9857d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135639"
 ---
 # <a name="implementing-cechodoprocessoutput"></a>Implementando CEcho::D oProcessOutput
 
@@ -37,9 +37,9 @@ As seções a seguir detalham as alterações que você precisa fazer no código
 [**O exemplo de eco**](the-echo-sample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

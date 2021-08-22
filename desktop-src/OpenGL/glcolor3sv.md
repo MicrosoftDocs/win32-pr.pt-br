@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc8b66ac84fca9bbaea6361d4291885c5f45a17b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9cd76121885dfe5dba3bdb794caa86bb6d539e2af1638208ae0ec374100630a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105810528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061864"
 ---
 # <a name="glcolor3sv-function"></a>função glColor3sv
 
@@ -40,7 +40,7 @@ void WINAPI glColor3sv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz que contém valores vermelho, verde e azul.

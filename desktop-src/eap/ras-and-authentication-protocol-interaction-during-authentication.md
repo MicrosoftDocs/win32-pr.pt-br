@@ -4,12 +4,12 @@ description: A função RasEapMakeMessage controla a maioria da interação entr
 ms.assetid: edc128e0-3104-4df9-80f4-b2aebcfe1087
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e486e3a10e323f28bc2f6fef4c131acfc095b48
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3aea18883225a2a34e592b73e0cdc93b019c1bf466124976f01851febb2a17d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117766"
 ---
 # <a name="access-point-and-authentication-protocol-interaction-during-authentication"></a>Interação do protocolo de autenticação e ponto de acesso durante a autenticação
 
@@ -41,7 +41,7 @@ No caso em que **Action** é **EAPACTION \_ Done** ou **EAPACTION \_ SendAndDone
 
 O protocolo de autenticação no servidor pode solicitar que o serviço de autenticação invoque o provedor de autenticação atual retornando **EAPACTION \_ Authenticate** no membro de **ação** na [**\_ \_ saída PPP EAP**](/windows/desktop/api/Raseapif/ns-raseapif-ppp_eap_output). Nesse caso, o ponteiro **pUserAttributes** na **saída PPP \_ EAP \_** aponta apenas para atributos que foram gerados pelo protocolo de autenticação no servidor. Ele não inclui nenhum dos atributos que foram passados para o servidor na chamada para [**RasEapBegin**](/previous-versions/windows/desktop/legacy/aa363520(v=vs.85)). O provedor de autenticação não requer esses atributos iniciais porque as credenciais de autenticação estão dentro da mensagem EAP em si, não em um atributo RADIUS separado. Quando o serviço de autenticação responde à ação de autenticação **EAPACTION \_** , **pUserAttributes** na [**\_ \_ entrada EAP do PPP**](/windows/desktop/api/Raseapif/ns-raseapif-ppp_eap_input), aponta para todos os atributos gerados durante a autenticação. Esses atributos são retornados para o protocolo de autenticação no cliente.
 
-Se o protocolo de autenticação usar **EAPACTION \_ autenticar**, o provedor de autenticação executará o PAP ou o MD5-CHAP. Esse método de autenticação pode ser usado somente com clientes Windows.
+Se o protocolo de autenticação usar **EAPACTION \_ autenticar**, o provedor de autenticação executará o PAP ou o MD5-CHAP. esse método de autenticação pode ser usado somente com clientes Windows.
 
 Se o protocolo de autenticação autenticar o usuário sem depender de um provedor de autenticação, não será necessário que o protocolo defina a **ação** como **EAPACTION \_ autenticar**. Um exemplo desse caso é o TLS (segurança de camada) EAP-Transport.
 
@@ -53,6 +53,6 @@ O protocolo de autenticação deve exibir uma interface do usuário somente por 
 
 Se, durante o processo de autenticação, [**RasEapMakeMessage**](/previous-versions/windows/desktop/legacy/aa363532(v=vs.85)) retornar qualquer valor diferente de **sem \_ erro ou um** **pacote de erro \_ PPP \_ inválido \_**, a sessão será desconectada e o erro será registrado (no servidor) ou exibido para o usuário (no cliente).
 
- 
+ 
 
- 
+ 

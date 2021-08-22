@@ -1,6 +1,6 @@
 ---
 title: Função D3DX11CreateShaderResourceViewFromResource (D3DX11tex. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Observação em vez de usar essa função, recomendamos que você use funções de recurso, então essa biblioteca DirectXTK (tempo de execução), CreateXXXTextureFromMemory (em que XXX é DDS ou WIC) DirectXTex library (Tools), LoadFromXXXMemory (em que XXX é WIC, DDS ou TGA; O WIC não oferece suporte a DDS e TGA; D3DX 9 o TGA com suporte como um formato de origem de arte comum para jogos), então, CreateShaderResourceView criar uma exibição de recurso de sombreador de um recurso.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Observação em vez de usar essa função, recomendamos que você use funções de recurso, então essa biblioteca DirectXTK (tempo de execução), CreateXXXTextureFromMemory (em que XXX é DDS ou WIC) DirectXTex library (Tools), LoadFromXXXMemory (em que XXX é WIC, DDS ou TGA; O WIC não oferece suporte a DDS e TGA; D3DX 9 o TGA com suporte como um formato de origem de arte comum para jogos), então, CreateShaderResourceView criar uma exibição de recurso de sombreador de um recurso.
 ms.assetid: 64620e6d-fc0d-4411-8744-d9d8ffe6ccb8
 keywords:
 - Função D3DX11CreateShaderResourceViewFromResource Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb374bd569cb58451461a7fe269c58c200895b7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b60eb6cf54dc32b3bb860b9ef963101428cc0cc2a7e4dacd1a24781c604b2ea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124721"
 ---
 # <a name="d3dx11createshaderresourceviewfromresource-function"></a>Função D3DX11CreateShaderResourceViewFromResource
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -123,7 +123,7 @@ Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 086f9cb4cff7666fc3977551e2c9fd4a61150d46
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 555c4b1f3615639d9da01fb7a2a96aa5cb15f697235c918d5130ffcd4d43baa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988656"
 ---
 # <a name="d3dxcreatefontindirect-function"></a>Função D3DXCreateFontIndirect
 
@@ -69,7 +69,7 @@ Retorna um ponteiro para uma interface [**ID3DXFont**](id3dxfont.md) , represent
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

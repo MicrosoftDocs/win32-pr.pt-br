@@ -1,29 +1,29 @@
 ---
-description: Transmitir do arquivo do tipo-1
+description: Transmitir do arquivo type-1
 ms.assetid: 5be2248b-7917-4c1b-9ae7-29e06779eac6
-title: Transmitir do arquivo do tipo-1
+title: Transmitir do arquivo type-1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74e38ed3e549b6cd671248ba1df9b24df8fbfe3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e62ce67627c350c24de1bf1ee96ba7804ac3f164264e167498c597e8136ea138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015524"
 ---
-# <a name="transmit-from-type-1-file"></a>Transmitir do arquivo do tipo-1
+# <a name="transmit-from-type-1-file"></a>Transmitir do arquivo type-1
 
-Para transmitir um arquivo do tipo 1 durante a visualização do arquivo, use o gráfico de filtro mostrado no diagrama a seguir.
+Para transmitir um arquivo type-1 durante a visualização do arquivo, use o grafo de filtro mostrado no diagrama a seguir.
 
-![tipo-1 transmissão com visualização](images/dv1-transmit.png)
+![type-1 transmit with preview](images/dv1-transmit.png)
 
 Os filtros neste grafo incluem:
 
--   O [divisor AVI](avi-splitter-filter.md) analisa o arquivo avi. Para um arquivo DV tipo-1, o pino de saída entrega exemplos de DV intercalados.
--   O filtro de [t de PIN infinito](infinite-pin-tee-filter.md) divide o DV intercalado em um fluxo de transmissão e um fluxo de visualização. Ambos os fluxos contêm os mesmos dados intercalados. (Esse grafo usa o "t" de PIN infinito, em vez do ativo [inteligente](smart-tee-filter.md), porque não há nenhum risco de descartar quadros ao ler de um arquivo, pois há com a captura dinâmica.)
--   O [divisor de DV](dv-splitter-filter.md) divide o fluxo intercalado em um fluxo de vídeo DV, que é decodificado pelo [codificador de vídeo DV](dv-video-decoder-filter.md)e um fluxo de áudio. Ambos os fluxos são renderizados para visualização.
+-   O [divisor AVI](avi-splitter-filter.md) analisará o arquivo AVI. Para um arquivo DV type-1, o pino de saída fornece exemplos de DV intercalados.
+-   O [filtro Infinite Pin Tee](infinite-pin-tee-filter.md) divide o DV intercalado em um fluxo de transmissão e em um fluxo de visualização. Ambos os fluxos contêm os mesmos dados intercalados. (Esse grafo usa o Pin Infinito Tee em vez do [Smart Tee,](smart-tee-filter.md)porque não há nenhum risco de soltar quadros ao ler de um arquivo, como há com a captura ao vivo.)
+-   O [Divisor](dv-splitter-filter.md) de DV divide o fluxo intercalado em um fluxo de vídeo DV, que é decodificado pelo [Decodificador](dv-video-decoder-filter.md)de Vídeo DV e um fluxo de áudio. Ambos os fluxos são renderados para visualização.
 
-Compile este grafo da seguinte maneira:
+Crie este grafo da seguinte forma:
 
 
 ```C++
@@ -75,14 +75,14 @@ hr = pBuilder->RenderStream(0, 0, pTee, 0, 0);
 
 
 
-1.  Chame [**IGraphBuilder:: AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter) para adicionar o filtro de origem ao grafo de filtro.
-2.  Crie o separador AVI e o "t" de PIN infinito e adicione-os ao grafo.
-3.  Chame [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) para conectar o filtro de origem ao divisor avi. Especificar MEDIATYPE \_ intercalado para garantir que o método falhe se o arquivo de origem não for um arquivo DV tipo-1. Nesse caso, você pode fazer backup e tentar criar um grafo de transmissão tipo 2 em vez disso.
-4.  Chame **RenderStream** novamente para rotear o fluxo intercalado do separador AVI para o "t" de PIN infinito
-5.  Chame o RenderStream uma terceira vez para rotear um fluxo do "t" de PIN infinito para o filtro MSDV, para transmitir para o dispositivo.
+1.  Chame [**IGraphBuilder::AddSourceFilter para**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter) adicionar o filtro de origem ao grafo de filtro.
+2.  Crie o Divisor AVI e o Pin Infinito Tee e adicione-os ao grafo.
+3.  Chame [**ICaptureGraphBuilder2::RenderStream para**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) conectar o filtro de origem ao Divisor AVI. Especificando MEDIATYPE Intercalado para garantir que o método falhe se o arquivo de origem não for um arquivo DV do tipo \_ 1. Nesse caso, você pode fazer o back-out e tentar criar um grafo de transmissão do tipo 2.
+4.  Chame **RenderStream novamente** para rotear o fluxo intercalado do divisor AVI para o Pin Infinito
+5.  Chame RenderStream uma terceira vez para rotear um fluxo do Pin Infinito Tee para o filtro MSDV, para transmissão para o dispositivo.
 6.  Chame **RenderStream** uma última vez para criar a seção de visualização do grafo.
 
-Se você não quiser a visualização, basta conectar a origem do arquivo ao filtro MSDV:
+Se você não quiser visualizar, basta conectar a origem do arquivo ao filtro MSDV:
 
 
 ```C++

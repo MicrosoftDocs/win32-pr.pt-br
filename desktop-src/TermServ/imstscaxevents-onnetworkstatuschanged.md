@@ -1,12 +1,12 @@
 ---
 title: Método IMsTscAxEvents OnNetworkStatusChanged
-description: Chamado quando o status da rede é alterado. | Método IMsTscAxEvents OnNetworkStatusChanged
+description: Chamado quando o status da rede foi alterado. | Método IMsTscAxEvents OnNetworkStatusChanged
 ms.assetid: 177A410E-2449-4FC7-8DE5-21F83A6DD028
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnNetworkStatusChanged
-- Método OnNetworkStatusChanged Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnNetworkStatusChanged
+- Método OnNetworkStatusChanged Serviços de Área de Trabalho Remota
+- Método OnNetworkStatusChanged Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota , método OnNetworkStatusChanged
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b9bdcd7774493fcc54e1390ad199a6a56a7c51
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8c139dc314453d6ad921471857410285813afc9c9b48691bcc9c82bf33c8b517
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105756808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138399"
 ---
-# <a name="imstscaxeventsonnetworkstatuschanged-method"></a>Método IMsTscAxEvents:: OnNetworkStatusChanged
+# <a name="imstscaxeventsonnetworkstatuschanged-method"></a>Método IMsTscAxEvents::OnNetworkStatusChanged
 
-Chamado quando o status da rede é alterado.
+Chamado quando o status da rede foi alterado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ void OnNetworkStatusChanged(
 
 <dl> <dt>
 
-*qualityLevel* \[ no\]
+*qualityLevel* \[ Em\]
 </dt> <dd>
 
 Especifica a nova velocidade de conexão. Esse será um dos valores a seguir.
@@ -80,21 +80,21 @@ Maior ou igual a 10.000 KBps.
 
 </dd> </dl> </dd> <dt>
 
-*largura de banda* \[ no\]
+*largura de banda* \[ Em\]
 </dt> <dd>
 
 Especifica a largura de banda da conexão.
 
 </dd> <dt>
 
-*RTT* \[ no\]
+*rtt* \[ Em\]
 </dt> <dd>
 
 Especifica a latência de conexão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -116,7 +116,7 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

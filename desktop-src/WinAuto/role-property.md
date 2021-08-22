@@ -4,12 +4,12 @@ description: A propriedade Role descreve o elemento de interface do usuário de 
 ms.assetid: f6abf95b-a77a-406d-9ca0-4663adc8245f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f2b285d9242542f83c6b4478df93e888a7a23cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2881b301537e9a25dabb260b84bc889cef4e4a6f9f6a5a2c8fab540d78daf8c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105798394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133719"
 ---
 # <a name="role-property"></a>Propriedade de função
 
@@ -27,9 +27,9 @@ Para controles de animação, como o controle de animação exibido ao copiar ar
 
 Observe que algumas funções não são fáceis de descrever. Por exemplo, a exibição de ícones grandes de uma pasta permite a disposição arbitrária de ícones, de modo que sua função poderia ser descrita como [**\_ \_ agrupamento do sistema de funções**](object-roles.md). Ou, um controle que fornece itens em linhas e colunas fixas pode ter a função de [**\_ \_ tabela do sistema de função**](object-roles.md) . Como uma função é usada para comunicar o modelo de uso para um usuário final, é importante usar a função apropriada. Por exemplo, se o seu controle atua como um botão, use a ação do [**sistema de função \_ \_**](object-roles.md).
 
- 
+ 
 
- 
+ 
 
 
 

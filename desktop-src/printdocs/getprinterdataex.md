@@ -18,12 +18,12 @@ api_location:
 - Ext-MS-Win-printer-Winspool-l1-1-1.dll
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: bdadf2e1259445ca5285e5b12bc906140a137cf9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 146c4f650b646e5b2be9e0ec809221beebe9f596fcb591fe148be615417faa04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034174"
 ---
 # <a name="getprinterdataex-function"></a>Função GetPrinterDataEx
 
@@ -107,7 +107,7 @@ Um ponteiro para uma variável que recebe o tamanho, em bytes, dos dados de conf
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno **será \_ êxito no erro**.
 
@@ -140,8 +140,8 @@ Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiq
 | **\_log de eventos do SPLREG \_**                                              |                                                                                                                                                                                                                                 |
 | **\_versão principal do SPLREG \_**                                          |                                                                                                                                                                                                                                 |
 | **SPLREG \_ \_ versão secundária**                                          |                                                                                                                                                                                                                                 |
-| **\_ \_ pop-up do SPLREG net**                                              | Sem suporte no Windows Server 2003 e posterior<br/>                                                                                                                                                                       |
-| **\_ \_ pop-up do SPLREG net para o \_ \_ computador**                                | Após o retorno bem-sucedido, o *pData* conterá 1 se as notificações de trabalho devem ser enviadas para o computador cliente ou 0 se as notificações de trabalho forem enviadas ao usuário.<br/> Sem suporte no Windows Server 2003 e posterior<br/> |
+| **\_ \_ pop-up do SPLREG net**                                              | sem suporte no Windows Server 2003 e posterior<br/>                                                                                                                                                                       |
+| **\_ \_ pop-up do SPLREG net para o \_ \_ computador**                                | Após o retorno bem-sucedido, o *pData* conterá 1 se as notificações de trabalho devem ser enviadas para o computador cliente ou 0 se as notificações de trabalho forem enviadas ao usuário.<br/> sem suporte no Windows Server 2003 e posterior<br/> |
 | **\_versão do so SPLREG \_**                                             | Windows XP e posterior<br/>                                                                                                                                                                                                 |
 | **SPLREG \_ os \_ VERSIONEX**                                           |                                                                                                                                                                                                                                 |
 | **\_padrão de \_ prioridade de thread de porta SPLREG \_ \_**                         |                                                                                                                                                                                                                                 |
@@ -153,7 +153,7 @@ Se *hPrinter* for um identificador para um *servidor de impressão, o* especifiq
 | **\_política de \_ execução de isolamento do driver de impressão SPLREG \_ \_ \_**             | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
 | **\_política de \_ substituição de isolamento do driver de impressão SPLREG \_ \_ \_**              | Windows 7 e posterior<br/>                                                                                                                                                                                                  |
 | **\_fax remoto do SPLREG \_**                                             | Após o retorno bem-sucedido, o *pData* conterá 0x0001 se o serviço de fax der suporte a clientes remotos. caso contrário, 0.<br/>                                                                                                               |
-| **\_ \_ pop-up de repetição do SPLREG**                                            | Após o retorno bem-sucedido, o *pData* conterá 1 se o servidor estiver definido para repetir janelas pop-up para todos os trabalhos ou 0 se o servidor não tentar novamente janelas pop-up para todos os trabalhos.<br/> Sem suporte no Windows Server 2003 e posterior<br/> |
+| **\_ \_ pop-up de repetição do SPLREG**                                            | Após o retorno bem-sucedido, o *pData* conterá 1 se o servidor estiver definido para repetir janelas pop-up para todos os trabalhos ou 0 se o servidor não tentar novamente janelas pop-up para todos os trabalhos.<br/> sem suporte no Windows Server 2003 e posterior<br/> |
 | **\_prioridade de thread do Agendador SPLREG \_ \_**                             |                                                                                                                                                                                                                                 |
 | **\_padrão de prioridade de thread do Agendador SPLREG \_ \_ \_**                    |                                                                                                                                                                                                                                 |
 | **SPLREG \_ WEBSHAREMGMT**                                            | Windows Server 2003 e posterior<br/>                                                                                                                                                                                        |
@@ -179,29 +179,29 @@ O tempo especificado em **SPLREG \_ reiniciar o \_ trabalho \_ no \_ pool \_** �
 
 **HKLM \\ sistema \\ CurrentControlSet \\ controle \\ Imprimir \\ monitores \\ <  > \\ portas monitor**
 
-Chame a função [**RegQueryValueEx**](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) para consultar esses valores.
+Chame a [**função RegQueryValueEx**](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) para consultar esses valores.
 
 
 
 | Configuração do monitor de porta     | Tipo de dados      | Significado                                                                                                        |
 |--------------------------|----------------|----------------------------------------------------------------------------------------------------------------|
-| **StatusUpdateEnabled**  | **REG \_ DWORD** | Se um valor diferente de zero, permite que o monitor de porta atualize o spooler com o status da porta.<br/>            |
+| **StatusUpdateEnabled**  | **REG \_ DWORD** | Se um valor não zero, habilita o monitor de porta a atualizar o spooler com o status da porta.<br/>            |
 | **StatusUpdateInterval** | **REG \_ DWORD** | Especifica o intervalo, em minutos, quando o monitor de porta atualiza o spooler com o status da porta.<br/> |
 
 
 
  
 
-Se *pKeyName* for uma das chaves de DS (serviço de diretório predefinidas) (Confira [**setprinter**](setprinter.md) *) e o* nome da chave contiver uma vírgula (', '), a parte de namename antes da vírgula será a do valor Value e a *parte de* NAMEname *à direita* da vírgula será a OID da propriedade DS. Uma subchave chamada OID é criada e um novo valor que consiste no nome do valor e no OID é inserido sob a chave de OID. [**SetPrinterDataEx**](setprinterdataex.md) também adiciona o nome de valor e os dados sob a chave DS.
+Se *pKeyName* for uma das chaves do DS (Serviço de Diretório) predefinida (consulte [**SetPrinter**](setprinter.md)) e *pValueName* contiver uma vírgula (','), a parte de *pValueName* antes da vírgula será o nome do valor e a parte de *pValueName* à direita da vírgula será o OID da propriedade DS. Uma sub-chave chamada OID é criada e um novo valor que consiste no nome do valor e OID é inserido sob a chave OID. [**SetPrinterDataEx**](setprinterdataex.md) também adiciona o nome do valor e os dados sob a chave DS.
 
-No Windows 7 e versões posteriores do Windows, os trabalhos de impressão enviados a um servidor de impressão são renderizados no cliente por padrão. A configuração do processamento do lado do cliente para uma impressora pode ser lida com a definição de *pKeyName* como "PrinterDriverData" e o *valores* de configuração na tabela a seguir.
+No Windows 7 e versões posteriores do Windows, os trabalhos de impressão enviados a um servidor de impressão são renderizados no cliente por padrão. A configuração da renderização do lado do cliente para uma impressora pode ser lida definindo *pKeyName* como "PrinterDriverData" e *pValueName* como o valor de configuração na tabela a seguir.
 
 
 
 | Configuração                      | Tipo de dados      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                       |
 |------------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EMFDespoolingSetting**     | **REG \_ DWORD** | Um valor de 0, ou se esse valor não estiver presente no registro, habilitará a renderização padrão do lado do cliente de trabalhos de impressão.<br/> Um valor de 1 desabilita a renderização do lado do cliente de trabalhos de impressão.<br/>                                                                                                                                                                                                          |
-| **ForceClientSideRendering** | **REG \_ DWORD** | Um valor de 0 ou, se esse valor não estiver presente no registro, fará com que os trabalhos de impressão sejam renderizados no cliente. Se um trabalho de impressão não puder ser processado no cliente, ele será renderizado no servidor. Se não for possível renderizar um trabalho de impressão no servidor, ele falhará.<br/> Um valor de 1 processará trabalhos de impressão no cliente. Se não for possível renderizar um trabalho de impressão no cliente, ele falhará.<br/> |
+| **EMFDespoolingSetting**     | **REG \_ DWORD** | Um valor de 0 ou se esse valor não estiver presente no Registro, habilita a renderização padrão do lado do cliente de trabalhos de impressão.<br/> Um valor de 1 desabilita a renderização do lado do cliente de trabalhos de impressão.<br/>                                                                                                                                                                                                          |
+| **ForceClientSideRendering** | **REG \_ DWORD** | Um valor de 0 ou se esse valor não estiver presente no Registro fará com que os trabalhos de impressão sejam renderizados no cliente. Se um trabalho de impressão não puder ser renderizado no cliente, ele será renderizado no servidor. Se um trabalho de impressão não puder ser renderizado no servidor, ele falhará.<br/> Um valor de 1 renderizará trabalhos de impressão no cliente. Se um trabalho de impressão não puder ser renderizado no cliente, ele falhará.<br/> |
 
 
 
@@ -215,9 +215,9 @@ No Windows 7 e versões posteriores do Windows, os trabalhos de impressão envia
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nomes Unicode e ANSI<br/>   | **GetPrinterDataExW** (Unicode) e **GetPrinterDataExA** (ANSI)<br/>                               |
 
 

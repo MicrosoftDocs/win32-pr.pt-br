@@ -1,6 +1,6 @@
 ---
-title: Instruções ps_1_1, ps_1_2, ps_1_3, ps_1_4
-description: Esta seção contém informações de referência para as instruções da versão 1 X do sombreador de pixel \_ .
+title: ps_1_1, ps_1_2, ps_1_3, ps_1_4 instruções
+description: Esta seção contém informações de referência para instruções do sombreador de pixel versão 1 \_ X.
 ms.assetid: cb496887-6755-4f29-b465-a36548b88722
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: cc624c3f3b64d41f428f68fcf2643f4600dcdec1
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 217e207d2f60d39979c7117cb48e0cb033fd98c6fbfb419642ff43e59759d510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119730"
 ---
-# <a name="ps_1_1-ps_1_2-ps_1_3-ps_1_4-instructions"></a>PS \_ 1 \_ 1, PS \_ 1 \_ 2, PS \_ 1 \_ 3, PS \_ 1 \_ 4 instruções
+# <a name="ps_1_1-ps_1_2-ps_1_3-ps_1_4-instructions"></a>ps \_ 1 \_ 1, ps \_ 1 \_ 2, ps \_ 1 \_ 3, ps \_ 1 \_ 4 Instruções
 
-Esta seção contém informações de referência para as instruções da versão 1 X do sombreador de pixels \_ .
+Esta seção contém informações de referência para as instruções do sombreador de pixel versão 1 \_ X.
 
 Há vários tipos de instruções de sombreador de pixel, conforme mostrado na tabela a seguir.
 
@@ -28,21 +28,21 @@ Há vários tipos de instruções de sombreador de pixel, conforme mostrado na t
 
 | Versão                                    | Descrição                                                                   | Slots de instrução | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 |
 |--------------------------------------------|-------------------------------------------------------------------------------|-------------------|------|------|------|------|
-| [profissionais](ps---ps.md)                          | Número de versão                                                                | 0                 | x    | x    | x    | x    |
+| [ps](ps---ps.md)                          | Número de versão                                                                | 0                 | x    | x    | x    | x    |
 | Instruções constantes                      |                                                                               |                   | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 |
-| [def-PS](def---ps.md)                   | Definir constantes                                                              | 0                 | x    | x    | x    | x    |
-| Instruções da fase                         |                                                                               |                   | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 |
-| [fase-PS](phase---ps.md)               | Transição entre a fase 1 e a fase 2                                        | 0                 |      |      |      | x    |
+| [def - ps](def---ps.md)                   | Definir constantes                                                              | 0                 | x    | x    | x    | x    |
+| Instruções de fase                         |                                                                               |                   | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 |
+| [phase - ps](phase---ps.md)               | Transição entre a fase 1 e a fase 2                                        | 0                 |      |      |      | x    |
 | Instruções aritméticas                    |                                                                               |                   | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 |
-| [Adicionar-PS](add---ps.md)                   | Adicionar dois vetores                                                               | 1                 | x    | x    | x    | x    |
-| [Bem-PS](bem---ps.md)                   | Aplicar um ambiente de relevo falso – transformação de mapa                                   | 2                 |      |      |      | x    |
-| [CMP-PS](cmp---ps.md)                   | Comparar origem com 0                                                           | 1 ¹                |      | x    | x    | x    |
-| [CND-PS](cnd---ps.md)                   | Comparar origem com 0,5                                                         | 1                 | x    | x    | x    | x    |
-| [DP3-PS](dp3---ps.md)                   | Produto de três componentes do ponto                                                   | 1                 | x    | x    | x    | x    |
-| [DP4-PS](dp4---ps.md)                   | Produto de quatro componentes do ponto                                                    | 1 ¹                |      | x    | x    | x    |
-| [LRP-PS](lrp---ps.md)                   | Interpolação linear                                                            | 1                 | x    | x    | x    | x    |
-| [Mad-PS](mad---ps.md)                   | Multiplicar e adicionar                                                              | 1                 | x    | x    | x    | x    |
-| [MOV-PS](mov---ps.md)                   | Mover                                                                          | 1                 | x    | x    | x    | x    |
+| [add - ps](add---ps.md)                   | Adicionar dois vetores                                                               | 1                 | x    | x    | x    | x    |
+| [bem - ps](bem---ps.md)                   | Aplicar uma transformação de mapa de ambiente de aumento falso                                   | 2                 |      |      |      | x    |
+| [cmp - ps](cmp---ps.md)                   | Comparar a origem com 0                                                           | 1º                |      | x    | x    | x    |
+| [cnd - ps](cnd---ps.md)                   | Comparar a origem com 0,5                                                         | 1                 | x    | x    | x    | x    |
+| [dp3 – ps](dp3---ps.md)                   | Produto de ponto de três componentes                                                   | 1                 | x    | x    | x    | x    |
+| [dp4 – ps](dp4---ps.md)                   | Produto de ponto de quatro componentes                                                    | 1º                |      | x    | x    | x    |
+| [lrp – ps](lrp---ps.md)                   | Interpolação linear                                                            | 1                 | x    | x    | x    | x    |
+| [mad - ps](mad---ps.md)                   | Multiplicar e adicionar                                                              | 1                 | x    | x    | x    | x    |
+| [mov - ps](mov---ps.md)                   | Mover                                                                          | 1                 | x    | x    | x    | x    |
 | [mul - ps](mul---ps.md)                   | Multiplicar                                                                      | 1                 | x    | x    | x    | x    |
 | [nop – ps](nop---ps.md)                   | Nenhuma operação                                                                  | 0                 | x    | x    | x    | x    |
 | [sub - ps](sub---ps.md)                   | Subtrair                                                                      | 1                 | x    | x    | x    | x    |

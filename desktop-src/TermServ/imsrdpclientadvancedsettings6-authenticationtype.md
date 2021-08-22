@@ -1,16 +1,16 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings6 AuthenticationType
+title: Propriedade AuthenticationType IMsRdpClientAdvancedSettings6
 description: Especifica o tipo de autenticação usado para essa conexão.
 ms.assetid: A6DAAE0A-5045-4C2C-B065-AB5BFB39F955
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AuthenticationType
-- Propriedade AuthenticationType Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade AuthenticationType
-- Propriedade AuthenticationType Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade AuthenticationType
-- Propriedade AuthenticationType Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade AuthenticationType
+- Propriedade AuthenticationType Serviços de Área de Trabalho Remota
+- A propriedade AuthenticationType Serviços de Área de Trabalho Remota interface , IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade AuthenticationType
+- A propriedade AuthenticationType Serviços de Área de Trabalho Remota interface , IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade AuthenticationType
+- A propriedade AuthenticationType Serviços de Área de Trabalho Remota interface , IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade AuthenticationType
 topic_type:
 - apiref
 api_name:
@@ -26,14 +26,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08c59239570538b690866e499ee942b6635055c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f35fe580ce780a51c3a203ff22b4043bbbe423dc4e821de1aaa2ba378485e719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138839"
 ---
-# <a name="imsrdpclientadvancedsettings6authenticationtype-property"></a>Propriedade IMsRdpClientAdvancedSettings6:: AuthenticationType
+# <a name="imsrdpclientadvancedsettings6authenticationtype-property"></a>Propriedade IMsRdpClientAdvancedSettings6::AuthenticationType
 
 Especifica o tipo de autenticação usado para essa conexão.
 
@@ -52,7 +52,7 @@ HRESULT get_AuthenticationType(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Recebe um valor que especifica o tipo de autenticação usado para essa conexão. Isso pode ser um dos valores a seguir.
+Recebe um valor que especifica o tipo de autenticação usado para essa conexão. Esse pode ser um dos valores a seguir.
 
 <dt>
 
@@ -80,7 +80,7 @@ A autenticação Kerberos é usada.
 3
 </dt> <dd>
 
-O certificado e a autenticação Kerberos são usados.
+Tanto o certificado quanto a autenticação Kerberos são usados.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ O certificado e a autenticação Kerberos são usados.
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                   |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 é definido como 222c4b5d-45D9-4df0-a7c6-60cf9089d285<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings6 é definido como 222c4b5d-45d9-4df0-a7c6-60cf9089d285<br/> |
 
 
 

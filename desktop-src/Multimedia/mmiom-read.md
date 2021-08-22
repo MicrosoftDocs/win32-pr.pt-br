@@ -3,7 +3,7 @@ title: Mensagem de MMIOM_READ (mmsystem. h)
 description: A \_ mensagem de leitura MMIOM é enviada a um procedimento de e/s pela função mmioRead para solicitar que um número especificado de bytes seja lido a partir de um arquivo aberto.
 ms.assetid: db769a68-f0ac-4a79-931e-6174e438439d
 keywords:
-- Multimídia do Windows de mensagem MMIOM_READ
+- mensagem de MMIOM_READ Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5715bf8db51017c16997530256c6dfb83b3b3fc5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fcf5bbdbb20e2bc168f93857a7d59016197ccc4142d4ba18a2e6fd80842ff06c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065346"
 ---
 # <a name="mmiom_read-message"></a>MMIOM \_ ler mensagem
 

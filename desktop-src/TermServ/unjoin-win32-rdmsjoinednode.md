@@ -1,12 +1,12 @@
 ---
-title: Método Unjoin da classe Win32_RDMSJoinedNode
-description: Remove um nó de serviços de gerenciamento de Área de Trabalho Remota (RDMS).
+title: Método unjoin da Win32_RDMSJoinedNode classe
+description: Remove um nó do RDMS (Área de Trabalho Remota Management Services).
 ms.assetid: 37c462f4-a19d-4b85-8fac-2735deb7c04f
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método Unjoin
-- Método Unjoin Serviços de Área de Trabalho Remota, classe Win32_RDMSJoinedNode
-- Classe Win32_RDMSJoinedNode Serviços de Área de Trabalho Remota, método Unjoin
+- Método unjoin Serviços de Área de Trabalho Remota
+- Método unjoin Serviços de Área de Trabalho Remota , Win32_RDMSJoinedNode classe
+- Win32_RDMSJoinedNode classe Serviços de Área de Trabalho Remota , método Unjoin
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 234f7cc3ad8a797fff51661528f4545ed9fea3a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5d2fae16ecb31326ae16bc08efd1fbc56ae2585140d63ce360783226101d4a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424096"
 ---
-# <a name="unjoin-method-of-the-win32_rdmsjoinednode-class"></a>Método Unjoin da classe Win32 \_ RDMSJoinedNode
+# <a name="unjoin-method-of-the-win32_rdmsjoinednode-class"></a>Método unjoin da classe \_ Win32 RDMSJoinedNode
 
-Remove um nó de serviços de gerenciamento de Área de Trabalho Remota (RDMS).
+Remove um nó do RDMS (Área de Trabalho Remota Management Services).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,7 +41,7 @@ uint32 Unjoin();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
@@ -53,8 +53,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -63,7 +63,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**\_RDMSJoinedNode Win32**](win32-rdmsjoinednode.md)
+[**Win32 \_ RDMSJoinedNode**](win32-rdmsjoinednode.md)
 </dt> </dl>
 
  

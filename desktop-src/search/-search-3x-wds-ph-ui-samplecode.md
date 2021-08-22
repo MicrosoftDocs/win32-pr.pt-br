@@ -4,12 +4,12 @@ ms.assetid: 4b65ced8-8dc9-43f6-bfe1-3703aea3459f
 title: 'Exemplo de código: extensões de Shell para manipuladores de protocolo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e436f1d7ad746181be8cb3c43375abe3656c544b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1f2a29fb75ee6838b207648e2b58d634e19eb977f6d0abedb01ba450968756e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033104"
 ---
 # <a name="code-sample-shell-extensions-for-protocol-handlers"></a>Exemplo de código: extensões de Shell para manipuladores de protocolo
 
@@ -21,7 +21,7 @@ O código de exemplo a seguir mostra como criar extensões de Shell para um mani
 >
 > **ESSE CÓDIGO E AS INFORMAÇÕES SÃO FORNECIDOS "NO ESTADO EM QUE SE ENCONTRAM", SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO E/OU ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA.**
 >
-> Copyright (c) Microsoft Corporation. Todos os direitos reservados.
+> Copyright (c) Microsoft Corporation. All rights reserved.
 
  
 
@@ -499,7 +499,7 @@ STDMETHODIMP CSampleShellFolder::SetNameOf(
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
--   Para obter exemplos de código de pesquisa, consulte [exemplos do SDK do Windows Search](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
+-   para obter exemplos de código de pesquisa, consulte [exemplos de SDK de pesquisa Windows](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
 -   Para obter exemplos de código de Shell, consulte [shell SDK Samples](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85)).
 
 ## <a name="related-topics"></a>Tópicos relacionados

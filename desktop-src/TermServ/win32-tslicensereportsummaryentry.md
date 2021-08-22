@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseReportSummaryEntry
-description: Fornece um resumo das licenças de acesso para cliente de Serviços de Área de Trabalho Remota instaladas e emitidas por usuário (RDS \ 160; CALs por usuário).
+title: Win32_TSLicenseReportSummaryEntry classe
+description: Fornece um resumo das licenças de acesso do cliente Serviços de Área de Trabalho Remota por usuário instaladas e emitidas (RDS \ 160; CALs por usuário).
 ms.assetid: 0FD3BFFE-58B9-4037-969F-8C2323136C9D
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSLicenseReportSummaryEntry Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSLicenseReportSummaryEntry classe, descrita
+- Win32_TSLicenseReportSummaryEntry classe Serviços de Área de Trabalho Remota
+- Win32_TSLicenseReportSummaryEntry classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -22,16 +22,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f34482e9c6199ef6586024d43d586421a54071ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 58efc2c70019037219d8eca986fa8afd81e4dc2d06cd638ee24fc59947e3bf3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137789"
 ---
-# <a name="win32_tslicensereportsummaryentry-class"></a>\_Classe Win32 TSLicenseReportSummaryEntry
+# <a name="win32_tslicensereportsummaryentry-class"></a>Classe Win32 \_ TSLicenseReportSummaryEntry
 
-Fornece um resumo das licenças de acesso para cliente de Serviços de Área de Trabalho Remota instaladas e emitidas por usuário (RDS CALs por usuário).
+Fornece um resumo das licenças de acesso do cliente Serviços de Área de Trabalho Remota por usuário instaladas e emitidas (CALs de RDS por usuário).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,43 +50,43 @@ class Win32_TSLicenseReportSummaryEntry
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSLicenseReportSummaryEntry** tem estes tipos de membros:
+A **classe Win32 \_ TSLicenseReportSummaryEntry** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSLicenseReportSummaryEntry** tem essas propriedades.
+A **classe Win32 \_ TSLicenseReportSummaryEntry** tem essas propriedades.
 
 <dl> <dt>
 
 **InstalledLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de CALs por usuário do RDS que estão instaladas.
+Número de CALs de RDS por usuário instaladas.
 
 </dd> <dt>
 
 **IssuedLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de CALs de RDS por usuário que são emitidas.
+Número de CALs de RDS por usuário emitidas.
 
 </dd> <dt>
 
-**ProductVersion**
+**Productversion**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -95,43 +95,43 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Versão do Serviços de Área de Trabalho Remota para a qual a CAL RDS por usuário foi emitida.
+Versão do Serviços de Área de Trabalho Remota para a qual a CAL de RDS por usuário foi emitida.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-Somente os servidores que executam o Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com esta licença.
+Somente servidores que executam Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com essa licença.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Somente os servidores que executam o Windows Server 2008 R2 ou o Windows Server 2008 têm suporte com esta licença.
+Somente servidores que executam Windows Server 2008 R2 ou Windows Server 2008 têm suporte com essa licença.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Somente servidores que executam o Windows Server 2008 têm suporte com esta licença.
+Somente servidores que executam Windows Server 2008 têm suporte com essa licença.
 
 </dd> </dl>
 
 </dd> <dt>
 
-**ProductVersionid**
+**ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identificador de versão do produto para o pacote de chaves de licença Serviços de Área de Trabalho Remota.
+Identificador de versão do produto para Serviços de Área de Trabalho Remota pacote de chaves de licença.
 
 <dt>
 
@@ -159,14 +159,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> </dl>
 
@@ -185,14 +185,14 @@ A disponibilidade das CALs de RDS por usuário. Esse será um dos valores a segu
 
 <dt>
 
-Há
+"Disponível"
 </dt> <dd>
 
-As CALs do RDS por usuário estão disponíveis.
+As CALs de RDS por usuário estão disponíveis.
 
 </dd> <dt>
 
-Certo
+"Limitado"
 </dt> <dd>
 
 A disponibilidade das CALs de RDS por usuário é limitada.
@@ -202,14 +202,14 @@ A disponibilidade das CALs de RDS por usuário é limitada.
 "None"
 </dt> <dd>
 
-As CALs do RDS por usuário não estão disponíveis.
+As CALs de RDS por usuário não estão disponíveis.
 
 </dd> <dt>
 
-"Sem rastreamento"
+"Não acompanhando"
 </dt> <dd>
 
-A disponibilidade das CALs de RDS por usuário não está sendo acompanhada.
+A disponibilidade das CALs de RDS por usuário não está sendo controlada.
 
 </dd> </dl>
 
@@ -224,28 +224,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de RDS CALs por usuário. Esse será um dos valores a seguir.
+O tipo de CALs de RDS por usuário. Esse será um dos valores a seguir.
 
 <dt>
 
-"Por dispositivo"
+"Por Dispositivo"
 </dt> <dd>
 
-As CALs do RDS por usuário são emitidas por dispositivo.
+As CALs de RDS por usuário são emitidas por dispositivo.
 
 </dd> <dt>
 
-"Por usuário"
+"Por Usuário"
 </dt> <dd>
 
-As CALs do RDS por usuário são emitidas por usuário.
+As CALs de RDS por usuário são emitidas por usuário.
 
 </dd> <dt>
 
-Conhecidos
+"Desconhecido"
 </dt> <dd>
 
-O tipo de RDS CALs por usuário é desconhecido.
+O tipo de CALs de RDS por usuário é desconhecido.
 
 </dd> </dl>
 
@@ -260,7 +260,7 @@ O tipo de RDS CALs por usuário é desconhecido.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

@@ -10,12 +10,12 @@ keywords:
 - MSAA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce653adb2602b8fdd46bebb72d3a7607185ffd84
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2fcd5d8b0777eb80cf5b2935cc8652d328dfc219cb56bc654c1eeae0761bbd89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133589"
 ---
 # <a name="testing-tools"></a>Ferramentas de teste
 
@@ -29,20 +29,20 @@ Esta seção descreve as ferramentas disponíveis para testar as implementaçõe
 
 ## <a name="tools"></a>Ferramentas
 
-[Informações de acessibilidade](https://accessibilityinsights.io/) – ajuda os desenvolvedores a localizar e corrigir problemas de acessibilidade em sites e aplicativos do Windows.
+[acessibilidade Insights](https://accessibilityinsights.io/) -ajuda os desenvolvedores a localizar e corrigir problemas de acessibilidade em sites e Windows aplicativos.
 
-- O [insights de acessibilidade para a Web](https://accessibilityinsights.io/docs/web/overview) é uma extensão para o Chrome e [o Microsoft Edge Insider](https://www.microsoftedgeinsider.com) que ajuda os desenvolvedores a localizar e corrigir problemas de acessibilidade em sites e aplicativos Web. Ele dá suporte a dois cenários principais:
+- o [Insights de acessibilidade para Web](https://accessibilityinsights.io/docs/web/overview) é uma extensão para o Chrome e [Microsoft Edge insider](https://www.microsoftedgeinsider.com) que ajuda os desenvolvedores a localizar e corrigir problemas de acessibilidade em sites e aplicativos Web. Ele dá suporte a dois cenários principais:
   - **FastPass** – um processo leve de duas etapas que ajuda os desenvolvedores a identificar problemas de acessibilidade comuns e de alto impacto em menos de cinco minutos.  
-  - **Avaliação** – permite que qualquer pessoa Verifique se um site tem 100% em conformidade com os padrões e as diretrizes de acessibilidade. O [insights de acessibilidade](https://accessibilityinsights.io/) também permite que você revise elementos de automação da interface do usuário, propriedades, padrões de controle e eventos (semelhante às ferramentas herdadas [inspecionar](/windows/desktop/winauto/inspect-objects) e [AccEvent](/windows/desktop/winauto/accessible-event-watcher) descritas na seção a seguir).
+  - **Avaliação** – permite que qualquer pessoa Verifique se um site tem 100% em conformidade com os padrões e as diretrizes de acessibilidade. a [acessibilidade Insights](https://accessibilityinsights.io/) também permite que você revise elementos de automação da interface do usuário, propriedades, padrões de controle e eventos (semelhante às ferramentas herdadas [inspecionar](/windows/desktop/winauto/inspect-objects) e [AccEvent](/windows/desktop/winauto/accessible-event-watcher) descritas na seção a seguir).
 
-- O [insights de acessibilidade para Windows](https://accessibilityinsights.io/docs/windows/overview) ajuda os desenvolvedores a localizar e corrigir problemas de acessibilidade em aplicativos do Windows. A ferramenta dá suporte a três cenários principais:
+- o [Insights de acessibilidade para Windows](https://accessibilityinsights.io/docs/windows/overview) ajuda os desenvolvedores a localizar e corrigir problemas de acessibilidade em aplicativos Windows. A ferramenta dá suporte a três cenários principais:
   - A **inspeção ao vivo** permite que os desenvolvedores verifiquem se um elemento em um aplicativo tem as propriedades de automação da interface do usuário corretas simplesmente passando o mouse sobre o elemento ou configurando o foco do teclado nele.
   - **FastPass** – um processo leve de duas etapas que ajuda os desenvolvedores a identificar problemas de acessibilidade comuns e de alto impacto em menos de cinco minutos.
   - A **solução de problemas** permite diagnosticar e corrigir problemas de acessibilidade específicos.
 
 ### <a name="legacy-testing-tools"></a>Ferramentas de teste herdadas
 
-As ferramentas a seguir ainda estão disponíveis na SDK do Windows e estão documentadas aqui para obter suporte contínuo, mas é recomendável fazer a transição para [informações de acessibilidade](https://accessibilityinsights.io/).
+as ferramentas a seguir ainda estão disponíveis na SDK do Windows e estão documentadas aqui para obter suporte contínuo, mas é recomendável fazer a transição para a [Insights de acessibilidade](https://accessibilityinsights.io/).
 
 - [**Inspetor de eventos acessível**](accessible-event-watcher.md): a ferramenta AccEvent (Inspetor de eventos acessível) examina os dados de acessibilidade para ajudar a validar os elementos da interface do usuário do aplicativo, para garantir que os elementos da interface do usuário gerem eventos adequados de automação da interface do usuário e acessibilidade ativa da Microsoft quando ocorrem alterações na interface AccEvent geralmente é usado para depurar problemas e para validar que os controles personalizados e estendidos estão funcionando corretamente.
 

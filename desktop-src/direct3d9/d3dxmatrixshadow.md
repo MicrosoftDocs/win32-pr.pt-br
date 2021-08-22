@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixShadow (D3dx9math. h) – compila uma matriz que achata a geometria em um plano.
+description: Função D3DXMatrixShadow (D3dx9math.h) – cria uma matriz que nivela a geometria em um plano.
 ms.assetid: 8f283ff9-c879-476c-8057-f4fe77a7a9e7
-title: Função D3DXMatrixShadow (D3dx9math. h)
+title: Função D3DXMatrixShadow (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 111a1448f62cae3f782917de76d92e88aa5a3356
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0e8d2b476d57306261d9261215a1e5053827a972412fa78b76cf0d136fbf97e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119460296"
 ---
-# <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Função D3DXMatrixShadow (D3dx9math. h)
+# <a name="d3dxmatrixshadow-function-d3dx9mathh"></a>Função D3DXMatrixShadow (D3dx9math.h)
 
-Cria uma matriz que achata a geometria em um plano.
+Cria uma matriz que nivela a geometria em um plano.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,30 +42,30 @@ D3DXMATRIX* D3DXMatrixShadow(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*plight* \[ no\]
+*pLight* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR4**](d3dxvector4.md) que descreve a posição da luz.
+Ponteiro para uma [**estrutura D3DXVECTOR4**](d3dxvector4.md) que descreve a posição da luz.
 
 </dd> <dt>
 
-*pPlane* \[ no\]
+*pPlane* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXPLANE**](d3dxplane.md) \***
 
-Ponteiro para a estrutura de [**D3DXPLANE**](d3dxplane.md) de origem.
+Ponteiro para a estrutura [**D3DXPLANE de origem.**](d3dxplane.md)
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Ponteiro para a estrutura de [**D3DXPLANE**](d3dxplane.md) de origem.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) que achata a geometria em um plano.
+Ponteiro para uma [**estrutura D3DXMATRIX**](d3dxmatrix.md) que nivela a geometria em um plano.
 
 ## <a name="remarks"></a>Comentários
 
-A função **D3DXMatrixShadow** nivela a geometria em um plano, como se estiver convertendo uma sombra de uma luz.
+A **função D3DXMatrixShadow** nivela a geometria em um plano, como se estivesse lançando uma sombra de uma luz.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXMatrixShadow** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXMatrixShadow** pode ser usada como um parâmetro para outra função.
 
 Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
@@ -97,7 +97,7 @@ P.d * L.x      P.d * L.y      P.d * L.z      P.d * L.w + d
 
 
 
-Se o componente w da luz for 0, o raio da origem para a luz representará uma luz direcional. Se for 1, a luz será uma luz pontual.
+Se o componente w da luz for 0, o raio da origem para a luz representará uma luz direcional. Se for 1, a luz será uma luz de ponto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,12 +105,12 @@ Se o componente w da luz for 0, o raio da origem para a luz representará uma lu
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
