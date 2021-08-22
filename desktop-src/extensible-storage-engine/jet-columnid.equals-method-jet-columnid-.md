@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cb0cc59a465f48474e2fe63f5ef78f1fea85f37c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 227cf1dcf58e5aa0bbc06305928244dd0955188c04f0d89acbd14f7433a69db8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780726"
 ---
 # <a name="jet_columnidequals-method-jet_columnid"></a>JET_COLUMNID. Método Equals (JET_COLUMNID)
 
 Retorna um valor que indica se essa instância é igual a outra instância.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,27 +58,27 @@ public bool Equals(
 #### <a name="parameters"></a>Parâmetros
 
   - outros  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Uma instância para comparar com esta instância.
+    Uma instância a ser comparada com essa instância.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias forem iguais.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias são iguais.  
 
 #### <a name="implements"></a>Implementações
 
-[IEquatable \<T\> . Equals (T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
+[IEquatable. \<T\> Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_COLUMNID](./jet-columnid-structure.md)
+[JET_COLUMNID estrutura](./jet-columnid-structure.md)
 
-[Membros do JET_COLUMNID](./jet-columnid-members.md)
+[JET_COLUMNID membros](./jet-columnid-members.md)
 
-[Sobrecarga de Equals](./jet-columnid.equals-method.md)
+[Sobrecarga igual a](./jet-columnid.equals-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

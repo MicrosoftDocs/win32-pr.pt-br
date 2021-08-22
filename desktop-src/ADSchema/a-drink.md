@@ -1,10 +1,10 @@
 ---
-title: atributo bebida
-description: O tipo de atributo bebida (bebida favorita) especifica a bebida favorita de um objeto (ou pessoa).
+title: atributo de bebida
+description: O tipo de atributo de bebida (Bebida Favorita) especifica a bebida favorita de um objeto (ou pessoa).
 ms.assetid: 1d3f6301-1bb3-4ff9-8be9-5a5590636d16
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo bebida
+- atributo de bebida Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -20,22 +20,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119656659"
 ---
-# <a name="drink-attribute"></a>atributo bebida
+# <a name="drink-attribute"></a>atributo de bebida
 
-O tipo de atributo bebida (bebida favorita) especifica a bebida favorita de um objeto (ou pessoa).
+O tipo de atributo de bebida (Bebida Favorita) especifica a bebida favorita de um objeto (ou pessoa).
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | bebida                                       |
-| LDAP-Display-Name | bebida                                       |
+| CN                | Bebida                                       |
+| Ldap-Display-Name | Bebida                                       |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.5                   |
-| System-ID-GUID    | 1a1aa5b5-262e-4df6-af04-2cf6b0d80048        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 1a1aa5b5-262e-4df6-af04-2cf6b0d80048        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -56,10 +56,10 @@ O tipo de atributo bebida (bebida favorita) especifica a bebida favorita de um o
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
@@ -77,10 +77,10 @@ O tipo de atributo bebida (bebida favorita) especifica a bebida favorita de um o
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |
@@ -98,10 +98,10 @@ O tipo de atributo bebida (bebida favorita) especifica a bebida favorita de um o
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | 1            |
 | Range-Upper            | 256          |
 | Search-Flags           | 0x00000000   |

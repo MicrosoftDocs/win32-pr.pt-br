@@ -4,12 +4,12 @@ ms.assetid: ea778eaa-6460-4a93-bd6a-1857ea8b6230
 title: Métodos de retorno de chamada assíncrono
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0064873a5b026b6910597ebc9911f56f00584b03
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e59fec2423d6bc1b02a3f5ce05855419596bc92ea54062303ebd1315d087e489
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606706"
 ---
 # <a name="asynchronous-callback-methods"></a>Métodos de retorno de chamada assíncrono
 

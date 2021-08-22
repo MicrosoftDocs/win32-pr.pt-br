@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMSecurity PerformSecurityUpdate (wmdrmsdk. h)
+title: Método IWMDRMSecurity PerformSecurityUpdate (Wmdrmsdk.h)
 description: O método PerformSecurityUpdate inicia uma atualização de segurança para o subsistema DRM no computador local.
 ms.assetid: e450a1e3-6024-4c00-9978-fbc88fde2101
 keywords:
-- Formato de mídia do Windows do método PerformSecurityUpdate
-- Método PerformSecurityUpdate Windows Media Format, interface IWMDRMSecurity
-- Formato de mídia do Windows de interface IWMDRMSecurity, método PerformSecurityUpdate
+- Formato de mídia do windows do método PerformSecurityUpdate
+- Método PerformSecurityUpdate windows Formato de mídia, interface IWMDRMSecurity
+- Formato de mídia da interface IWMDRMSecurity , método PerformSecurityUpdate
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119707896"
 ---
-# <a name="iwmdrmsecurityperformsecurityupdate-method"></a>IWMDRMSecurity: método erformSecurityUpdate de:P
+# <a name="iwmdrmsecurityperformsecurityupdate-method"></a>Método IWMDRMSecurity::P erformSecurityUpdate
 
-O método **PerformSecurityUpdate** inicia uma atualização de segurança para o subsistema DRM no computador local.
+O **método PerformSecurityUpdate** inicia uma atualização de segurança para o subsistema DRM no computador local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ HRESULT PerformSecurityUpdate(
 
 <dl> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Opção de atualização expressa como um dos sinalizadores a seguir.
@@ -53,9 +53,9 @@ Opção de atualização expressa como um dos sinalizadores a seguir.
 
 | Sinalizador                                          | Descrição                                                                                     |
 |-----------------------------------------------|-------------------------------------------------------------------------------------------------|
-| segurança do WMDRM \_ \_ executar \_ indiv               | Faz com que o componente DRM seja individualizado somente se a versão do cliente estiver desatualizada. |
-| segurança do WMDRM \_ \_ executar \_ atualização de revogação \_ | Faz com que as listas de revogação no computador cliente sejam atualizadas.                               |
-| segurança do WMDRM \_ \_ executar \_ forçar \_ indiv        | Faz com que o componente DRM seja individualizado mesmo que a versão do cliente esteja atualizada.  |
+| SEGURANÇA WMDRM \_ \_ EXECUTAR \_ INDIV               | Faz com que o componente DRM seja individualizado somente se a versão do cliente estiver desa datada. |
+| ATUALIZAÇÃO DE REVOGAÇÃO DE EXECUÇÃO DE SEGURANÇA DO WMDRM \_ \_ \_ \_ | Faz com que as listas de revogação no computador cliente sejam atualizadas.                               |
+| SEGURANÇA WMDRM \_ \_ EXECUTAR FORCE \_ \_ INDIV        | Faz com que o componente DRM seja individualizado mesmo se a versão do cliente estiver atualizada.  |
 
 
 
@@ -63,16 +63,16 @@ Opção de atualização expressa como um dos sinalizadores a seguir.
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ fora\]
+*ppunkCancelationCookie* \[ out\]
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para um objeto que pode ser usado para cancelar esta operação.
+Endereço de uma variável que recebe um ponteiro para um objeto que pode ser usado para cancelar essa operação.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -86,18 +86,18 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é executado de forma assíncrona. Ele retorna imediatamente depois de ser chamado e, em seguida, gera eventos dependendo do sinalizador definido no parâmetro *dwFlags* .
+Esse método é executado de forma assíncrona. Ele retorna imediatamente após ser chamado e gera eventos dependendo do sinalizador definido no *parâmetro dwFlags.*
 
-Para individualização (sinalizador definido como \_ segurança WMDRM \_ Execute \_ indiv ou WMDRM \_ Security \_ Execute \_ Force \_ indiv), uma série de eventos **MEWMDRMIndividualizationProgress** é gerada seguida por um evento **MEWMDRMIndividualizationCompleted** quando o processamento é concluído. O valor de cada um dos eventos **MEWMDRMIndividualizationProgress** obtidos chamando **IMFMediaEvent:: GetValue** é um ponteiro **IUnknown** . Você pode chamar o método **QueryInterface** da interface **IUnknown** recuperada para obter uma instância da interface [**IWMDRMIndividualizationStatus**](iwmdrmindividualizationstatus.md) .
+Para individualização (sinalizador definido como WMDRM SECURITY PERFORM INDIV ou WMDRM SECURITY PERFORM FORCE INDIV), uma série de eventos \_ \_ \_ \_ \_ \_ \_ **MEWMDRMIndividualizationProgress** é gerada seguida por um evento **MEWMDRMIndividualizationCompleted** quando o processamento é concluído. O valor de cada um dos **eventos MEWMDRMIndividualizationProgress obtidos** chamando **IMFMediaEvent::GetValue** é um ponteiro **IUnknown.** Você pode chamar o método **QueryInterface** da interface **IUnknown** recuperada para obter uma instância da interface [**IWMDRMIndividualizationStatus.**](iwmdrmindividualizationstatus.md)
 
-Para atualizar as listas de revogação (sinalizador definido como WMDRM \_ Security \_ perform \_ Revocation \_ Refresh), um evento **MEWMDRMREvocationDownloadCompleted** é gerado quando o processamento é concluído.
+Para atualizar as listas de revogação (sinalizador definido como WMDRM SECURITY PERFORM REVOCATION REFRESH), um evento \_ \_ \_ \_ **MEWMDRMREvocationDownloadCompleted** é gerado quando o processamento é concluído.
 
 > [!Note]  
-> Quando o **PerformSecurityUpdate** conclui a individualização, os únicos objetos existentes que refletirão o novo estado individual são aqueles que herdam de **IWMDRMSecurity**. Todos os outros objetos existentes não serão atualizados. Você deve liberar e recriar outros objetos para que eles reflitam o novo estado individual.
+> Quando **PerformSecurityUpdate** conclui a individualização, os únicos objetos existentes que refletirão o novo estado individualizado são aqueles que herdam de **IWMDRMSecurity.** Todos os outros objetos existentes não serão atualizados. Você deve liberar e re-criar quaisquer outros objetos para que eles reflitam o novo estado individualizado.
 
  
 
-para obter mais informações sobre como usar os métodos assíncronos das APIs estendidas do cliente DRM de mídia Windows, consulte [usando o modelo de evento Media Foundation](using-the-media-foundation-model.md).
+Para obter mais informações sobre como usar os métodos assíncronos das APIs estendidas do cliente drm de Windows mídia, consulte Usando o modelo de evento [Media Foundation .](using-the-media-foundation-model.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ para obter mais informações sobre como usar os métodos assíncronos das APIs 
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -120,10 +120,10 @@ para obter mais informações sobre como usar os métodos assíncronos das APIs 
 [**Exemplo de individualização de DRM**](drm-individualization-example.md)
 </dt> <dt>
 
-[**Interface IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity Interface**](iwmdrmsecurity.md)
 </dt> <dt>
 
-[**Executando individualização de DRM**](performing-drm-individualization.md)
+[**Executando a individualização de DRM**](performing-drm-individualization.md)
 </dt> </dl>
 
  

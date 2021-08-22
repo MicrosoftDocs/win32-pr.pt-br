@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código do C/C++ recuperando a tarefa ocioso – tempo de espera
-description: Este exemplo recupera o tempo de espera de ociosidade da tarefa e a exibe na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+title: Exemplo de código C/C++ Recuperando o tempo de espera ocioso da tarefa
+description: Este exemplo recupera o tempo de espera ocioso da tarefa e o exibe na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 ms.assetid: 2784b925-678c-422c-ae78-84d2982c2b02
 keywords:
-- Recuperando a tarefa ociosa-tempo de espera Agendador de Tarefas
-- Recuperando propriedades do item de trabalho Agendador de Tarefas, ociosidade da tarefa-tempo de espera
+- recuperando o tempo de espera de ociosidade da tarefa Agendador de Tarefas
+- recuperando propriedades de item de trabalho Agendador de Tarefas tempo de espera ocioso da tarefa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24c109faf55be8039c2c39652f8c513b6b38bd17
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7946d4a8b80dd49db2b8c5291f8d382a9e3b40b4de8a759f10f4057905593f97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738766"
 ---
-# <a name="cc-code-example-retrieving-task-idle-wait-time"></a>Exemplo de código do C/C++: Recuperando a tarefa ocioso – tempo de espera
+# <a name="cc-code-example-retrieving-task-idle-wait-time"></a>Exemplo de código C/C++: Recuperando o tempo de espera ocioso da tarefa
 
-Este exemplo recupera o tempo de espera de ociosidade da tarefa e a exibe na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+Este exemplo recupera o tempo de espera ocioso da tarefa e o exibe na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 
 
 ```C++
@@ -116,12 +116,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,8 +3,8 @@ title: Enumeração de MPTHREAT_DETECTION (MpClient. h)
 description: Possíveis tipos conhecidos de detecção de ameaças inválidas.
 ms.assetid: 14FCA9BD-A9A1-488B-B8E8-88DE0DF18F27
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPTHREAT_DETECTION
-- PMPTHREAT_DETECTION recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MPTHREAT_DETECTION
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMPTHREAT_DETECTION
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86edc0e1ca4ee130f2a2a4a678447771f1ae40ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d362edbb7257f8be5577880a4390c5a2f5f5703504a5f7447154bebe5ada500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601176"
 ---
 # <a name="mpthreat_detection-enumeration"></a>Enumeração de detecção de MPTHREAT \_
 
@@ -86,9 +86,9 @@ A ameaça foi detectada via FastPath.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

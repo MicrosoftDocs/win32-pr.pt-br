@@ -1,15 +1,15 @@
 ---
-description: A propriedade PreferredSubpictureStream recupera o fluxo de subimagem preferencial para a sessão de exibição atual.
+description: A propriedade PreferredSubpictureStream recupera o fluxo de subpicture preferencial para a sessão de exibição atual.
 ms.assetid: 9c15dc6f-c016-41bf-b03d-e8e5415215ae
 title: Propriedade PreferredSubpictureStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23377d74d3632c665b001ae415dc151ca73bd148
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e28b98163607e31a207bffb3974fee3b32505ff60ba3700b452b2dff2625f421
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583536"
 ---
 # <a name="preferredsubpicturestream-property"></a>Propriedade PreferredSubpictureStream
 
@@ -18,7 +18,7 @@ ms.locfileid: "103825766"
 
  
 
-A `PreferredSubpictureStream` propriedade recupera o fluxo de subimagem preferencial para a sessão de exibição atual.
+A `PreferredSubpictureStream` propriedade recupera o fluxo de subtípico preferencial para a sessão de exibição atual.
 
 ``` syntax
 [iStream = ] MSWebDVD.PreferredSubpictureStream
@@ -26,11 +26,11 @@ A `PreferredSubpictureStream` propriedade recupera o fluxo de subimagem preferen
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor inteiro que representa o fluxo de subimagem preferencial atual no registro do sistema.
+Retorna um valor Inteiro que representa o fluxo de subspícone preferencial atual no registro do sistema.
 
 ## <a name="remarks"></a>Comentários
 
-O fluxo de subimagem preferencial é definido com [**DefaultSubpictureLCID**](defaultsubpicturelcid-property.md)do objeto [MSDVDAdm](msdvdadm-object.md) .
+O fluxo de subpicture preferencial é definido com [**DefaultSubpictureLCID**](defaultsubpicturelcid-property.md)do objeto [MSDVDAdm.](msdvdadm-object.md)
 
  
 

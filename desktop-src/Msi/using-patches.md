@@ -4,12 +4,12 @@ ms.assetid: 04e78ab5-4d24-4717-ae7b-88f7d0e734b5
 title: Usando patches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07227d48a8c6ba1fc2ca4c471e017b79f0b08c7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 996e4313928ab971ab3c5bbbe2838aa6d0abec94d26353005bdc36bc5dbb4d5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527066"
 ---
 # <a name="using-patches"></a>Usando patches
 

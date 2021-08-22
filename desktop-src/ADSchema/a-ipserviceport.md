@@ -1,6 +1,6 @@
 ---
 title: atributo ipServicePort
-description: Contém a seção do mapa de serviços que especifica a porta na qual o serviço UNIX está disponível.
+description: contém a seção do mapa de serviços que especifica a porta na qual o serviço de UNIX está disponível.
 ms.assetid: b3bb0bc6-b99f-4873-b1b0-da887468df09
 ms.tgt_platform: multiple
 keywords:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa8bf801fc33d2c8ab29fd1f41185f60b965ebd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8670c8da9dc47340c7beda9b4e3f7f9eec380e6c5465d8400c7a695378b8f0e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924896"
 ---
 # <a name="ipserviceport-attribute"></a>atributo ipServicePort
 
-Contém a seção do mapa de serviços que especifica a porta na qual o serviço UNIX está disponível.
+contém a seção do mapa de serviços que especifica a porta na qual o serviço de UNIX está disponível.
 
 
 
@@ -55,7 +55,7 @@ Contém a seção do mapa de serviços que especifica a porta na qual o serviço
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| É de valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
 | No catálogo global      | Falso                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
@@ -76,7 +76,7 @@ Contém a seção do mapa de serviços que especifica a porta na qual o serviço
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| É de valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
 | No catálogo global      | Falso                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
@@ -97,7 +97,7 @@ Contém a seção do mapa de serviços que especifica a porta na qual o serviço
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| É de valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
 | No catálogo global      | Falso                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
@@ -118,10 +118,10 @@ Contém a seção do mapa de serviços que especifica a porta na qual o serviço
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

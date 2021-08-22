@@ -1,6 +1,6 @@
 ---
-title: Função D2DGetScenePosition (D2d1effecthelpers.h)
-description: Retorna o valor da SCENE \_ POSITION de entrada. Disponível somente quando D2D \_ REQUER SCENE POSITION é declarado no arquivo de \_ \_ origem.
+title: Função D2DGetScenePosition (D2d1effecthelpers. h)
+description: Retorna o valor da posição da cena de entrada \_ . Disponível somente quando D2D \_ requer \_ que \_ a posição da cena seja declarada no arquivo de origem.
 ms.assetid: 451E4C31-D93D-44B6-81D1-AC5FD986ACBD
 keywords:
 - Função D2DGetScenePosition Direct2D
@@ -23,7 +23,7 @@ ms.locfileid: "119641636"
 ---
 # <a name="d2dgetsceneposition-function"></a>Função D2DGetScenePosition
 
-Retorna o valor da SCENE \_ POSITION de entrada. Disponível somente quando D2D \_ REQUER SCENE POSITION é declarado no arquivo de \_ \_ origem.
+Retorna o valor da posição da cena de entrada \_ . Disponível somente quando D2D \_ requer \_ que \_ a posição da cena seja declarada no arquivo de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,11 +37,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-A função retorna um **float4** no formato SCENE \_ POSITION.
+A função retorna um **FLOAT4** no formato posição da cena \_ .
 
 ## <a name="remarks"></a>Comentários
 
-O exemplo a seguir mostra o uso da função na geração de um padrão de sempre.
+O exemplo a seguir mostra o uso da função na geração de um padrão de dissolução.
 
 ``` syntax
 D2D_PS_ENTRY(BlendDissolve)  
@@ -66,7 +66,7 @@ D2D_PS_ENTRY(BlendDissolve)
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D2d1effecthelpers.hlsli</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D2d1effecthelpers. hlsli</dt> </dl> |
 | DLL<br/>    | <dl> <dt>D2d1.dll</dt> </dl>                |
 
 
@@ -78,7 +78,7 @@ D2D_PS_ENTRY(BlendDissolve)
 [Vinculação de Sombreador de Efeito](effect-shader-linking.md)
 </dt> <dt>
 
-[Auxiliares HLSL](hlsl-helpers.md)
+[Auxiliares de HLSL](hlsl-helpers.md)
 </dt> </dl>
 
  

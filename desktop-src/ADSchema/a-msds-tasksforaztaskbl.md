@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b77f6300b729e67d17447f6f5dd43e31c4fe0875
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a21d475952d1f20f389d7585f0bd97edaf7241829b257e8a7f8bd03cdb7a0d72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544206"
 ---
 # <a name="ms-ds-tasks-for-az-task-bl-attribute"></a>ms-DS-Tasks-for-AZ-Task-BL atributo
 
@@ -56,7 +56,7 @@ Link regressivo de Az-Task para os objetos Az-Task vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2021                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -77,7 +77,7 @@ Link regressivo de Az-Task para os objetos Az-Task vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2021                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -98,7 +98,7 @@ Link regressivo de Az-Task para os objetos Az-Task vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2021                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -119,7 +119,7 @@ Link regressivo de Az-Task para os objetos Az-Task vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2021                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -140,7 +140,7 @@ Link regressivo de Az-Task para os objetos Az-Task vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2021                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

@@ -1,5 +1,5 @@
 ---
-description: Associa uma ação de DLP (prevenção de perda de dados) de ponto de extremidade com um nível de imposição.
+description: Associa uma ação DLP (Prevenção contra Perda de Dados) do ponto de extremidade a um nível de imposição.
 title: Estrutura DLP_APP_OP_ENLIGHTENED_LEVEL (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119610476"
 ---
-# <a name="dlp_app_op_enlightened_level-structure"></a>Estrutura de DLP_APP_OP_ENLIGHTENED_LEVEL
+# <a name="dlp_app_op_enlightened_level-structure"></a>DLP_APP_OP_ENLIGHTENED_LEVEL estrutura
 
-Associa uma ação de DLP (prevenção de perda de dados) de ponto de extremidade com um nível de imposição.
+Associa uma ação DLP (Prevenção contra Perda de Dados) do ponto de extremidade a um nível de imposição.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,19 +38,19 @@ typedef struct _DLP_APP_OP_ENLIGHTENED_LEVEL{
 
 <dl> <dt>
 
-*Operação* \[ do no\]
+*Operação* \[ Em\]
 </dt> <dd>
 
-Um valor da enumeração [DlpActionType](endpointdlp-dlpactiontype.md) especificando o tipo de ação de DLP do ponto de extremidade.
+Um valor da [enumeração DlpActionType que](endpointdlp-dlpactiontype.md) especifica o tipo de ação DLP do ponto de extremidade.
 
 </dd> </dl>
 
 <dl> <dt>
 
-*AppEnforcementLevel* \[ no\]
+*AppEnforcementLevel* \[ Em\]
 </dt> <dd>
 
-Um valor de [DlpAppEnforceLevel](endpointdlp-dlpappenforcelevel.md) que especifica o nível de imposição para o tipo de ação de DLP de ponto de extremidade associado.
+Um valor do [DlpAppEnforceLevel que](endpointdlp-dlpappenforcelevel.md) especifica o nível de imposição para o tipo de ação DLP do ponto de extremidade associado.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Um valor de [DlpAppEnforceLevel](endpointdlp-dlpappenforcelevel.md) que especifi
 
 ## <a name="remarks"></a>Comentários
 
-Passe uma matriz dessas estruturas em [DlpInitializeEnforcementMode](endpointdlp-dlpinitializeenforcementmode.md) para definir o modo de imposição para um conjunto de operações de DLP de ponto de extremidade.
+Passe uma matriz dessas estruturas para [DlpInitializeEnforcementMode](endpointdlp-dlpinitializeenforcementmode.md) para definir o modo de imposição para um conjunto de operações DLP de ponto de extremidade.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,5 +68,5 @@ Passe uma matriz dessas estruturas em [DlpInitializeEnforcementMode](endpointdlp
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
 

@@ -4,17 +4,17 @@ description: Grupos de atributos
 ms.assetid: 9fd7dc6e-6749-4e32-b795-21b63b64c291
 keywords:
 - OpenGL, grupos de atributos
-- Referência OpenGL, grupos de atributos
+- Referência do OpenGL, grupos de atributos
 - referência para OpenGL, grupos de atributos
 - grupos de atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d93582c8996438ad99d7bf896cf83bdf6fbf72d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9501ea7ea2c924a6e89d93cb995cbef4f789cba587d4a1f3fa03dbb798eafd8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105783376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554696"
 ---
 # <a name="attribute-groups"></a>Grupos de atributos
 
@@ -22,35 +22,35 @@ ms.locfileid: "105783376"
 
 | Bit de máscara                  | Grupo de atributos |
 |---------------------------|-----------------|
-| BIT de buffer do GL \_ Accum \_ \_    | Accum-buffer    |
-| GL \_ todos \_ os \_ bits de Atrib.     |                 |
-| \_bit do \_ buffer de cores GL \_    | buffer de cores    |
-| BIT do GL \_ atual \_          | atual         |
-| \_bit de \_ buffer de profundidade GL \_    | profundidade-buffer    |
-| \_bit de habilitação GL \_           | enable          |
-| \_bit de avaliação GL \_             | eval            |
-| \_bit de neblina GL \_              | neblina             |
-| \_bit de dica GL \_             | Dica de            |
-| \_bit de iluminação GL \_         | iluminação        |
-| \_bit de linha gl \_             | line            |
-| \_bit da lista GL \_             | list            |
-| \_bit do \_ modo de pixel GL \_      | pixel           |
-| \_bit de ponto GL \_            | point           |
-| \_bit do polígono GL \_          | polygon         |
-| \_STIPPLE de polígono do GL \_ \_ | polígono-Stipple |
-| BIT GL de \_ tesoura \_          | tesoura         |
-| \_bit de \_ buffer do estêncil GL \_  | estêncil-buffer  |
-| \_bit de textura GL \_          | textura         |
-| \_bit de transformação GL \_        | transformação       |
-| \_bit GL viewport \_         | visor        |
+| BIT DE \_ BUFFER GL ACCUM \_ \_    | accum-buffer    |
+| GL \_ ALL \_ ATTRIB \_ BITS     |                 |
+| BIT DE \_ BUFFER DE \_ COR \_ GL    | color-buffer    |
+| GL \_ CURRENT \_ BIT          | atual         |
+| BIT DE \_ BUFFER DE PROFUNDIDADE \_ \_ GL    | buffer de profundidade    |
+| GL \_ ENABLE \_ BIT           | enable          |
+| GL \_ EVAL \_ BIT             | eval            |
+| BIT \_ GL BP \_              | Nevoeiro             |
+| BIT DE \_ DICA DE \_ GL             | Dica de            |
+| BIT DE \_ ILUMINAÇÃO \_ GL         | iluminação        |
+| GL \_ LINE \_ BIT             | line            |
+| GL \_ LIST \_ BIT             | list            |
+| BIT DE \_ MODO DE PIXEL \_ \_ GL      | pixel           |
+| GL \_ POINT \_ BIT            | point           |
+| BIT DE \_ POLÍGONO \_ GL          | polygon         |
+| BIT GL \_ \_ POLYGONPPLE \_ | polygon-pple |
+| BIT \_ DE TESOURA \_ GL          | Tesoura         |
+| BIT DE BUFFER DE \_ ESTÊNCIL GL \_ \_  | stencil-buffer  |
+| BIT \_ DE TEXTURA \_ GL          | textura         |
+| GL \_ TRANSFORM \_ BIT        | transformação       |
+| GL \_ VIEWPORT \_ BIT         | Viewport        |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: Revise as notas de linguagem de esquema de impressão. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
+description: Examine as observações do idioma do esquema de impressão. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
 ms.assetid: a14462de-19bd-472d-a073-3a9810c0aee9
-title: Imprimir notas de linguagem de esquema
+title: Imprimir observações do idioma do esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69bd25354860abe1fe7cd92600482398a03d7e39
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 36a38fe5dfb1bd40546afa727acea09c7b0819be24d09b72cb4c4c8c0b627e6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600786"
 ---
-# <a name="print-schema-language-notes"></a>Imprimir notas de linguagem de esquema
+# <a name="print-schema-language-notes"></a>Imprimir observações do idioma do esquema
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Nessa especificação, as palavras usadas para definir a significância de cada requisito são escritas em letras maiúsculas. Essas palavras são usadas de acordo com suas definições no RFC 2119 e seus respectivos significados são reproduzidos abaixo:
+Nessa especificação, as palavras usadas para definir a significância de cada requisito são escritas em letras maiúsculas. Essas palavras são usadas de acordo com suas definições no RFC 2119, e seus respectivos significados são reproduzidos abaixo:
 
 
 
 | Termo                                                                | Descrição                                                                                                                                                                                                                                                                                         |
 |---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="MUST"></span><span id="must"></span>Deve<br/>       | Essa palavra ou o adjetivo REQUIRED significa que o item é um requisito absoluto da especificação.<br/>                                                                                                                                                                               |
-| <span id="SHOULD"></span><span id="should"></span>Deve<br/> | Essa palavra ou o adjetivo RECOMMENDED significa que pode haver motivos válidos em circunstâncias específicas para ignorar esse item, mas as implicações completas devem ser compreendidas e o caso cuidadosamente ponderado antes de escolher um curso diferente.<br/>                                     |
-| <span id="MAY"></span><span id="may"></span>Pode<br/>          | Essa palavra, ou o adjetivo OPTIONAL, significa que esse item é realmente opcional. Por exemplo, uma implementação pode optar por incluir o item porque um marketplace ou cenário específico exige ou porque ele aprimora o produto. Outra implementação pode omitir o mesmo item.<br/> |
+| <span id="MUST"></span><span id="must"></span>DEVE<br/>       | Esta palavra, ou o adjetivo necessário, significa que o item é um requisito absoluto da especificação.<br/>                                                                                                                                                                               |
+| <span id="SHOULD"></span><span id="should"></span>CASO<br/> | Esta palavra, ou o adjetivo recomendado, significa que pode haver motivos válidos em determinadas circunstâncias para ignorar esse item, mas as implicações completas devem ser compreendidas e o caso ponderado cuidadosamente antes de escolher um curso diferente.<br/>                                     |
+| <span id="MAY"></span><span id="may"></span>Talvez<br/>          | Esta palavra, ou o adjetivo opcional, significa que esse item é verdadeiramente opcional. Por exemplo, uma implementação pode optar por incluir o item porque um determinado Marketplace ou cenário exige isso ou porque ele aprimora o produto. Outra implementação pode omitir o mesmo item.<br/> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 2720d309224def5f368babf4f9ace85955907347
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17b472bbdead74612ccc6d76f1059443ce6f62dd122f7933ae31c99fb82900a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743756"
 ---
 # <a name="getpreviousprotocoloffsetbyname-function"></a>Função GetPreviousProtocolOffsetByName
 
@@ -70,7 +70,7 @@ Ponteiro para um **DWORD** que contém o deslocamento para o protocolo anterior 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
 

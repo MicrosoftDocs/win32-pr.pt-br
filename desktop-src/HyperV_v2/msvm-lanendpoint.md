@@ -1,7 +1,7 @@
 ---
-description: Representa o ponto de conexão lógica para um adaptador de rede. Quando o ponto de extremidade da LAN está conectado a uma porta de comutador, o adaptador de rede conectado ao ponto de extremidade da LAN tem conectividade de rede.
+description: Representa o ponto de conexão lógica para um adaptador de rede. Quando o ponto de extremidade de LAN está conectado a uma porta switch, o adaptador de rede conectado ao ponto de extremidade de LAN tem conectividade de rede.
 ms.assetid: 68aad05e-64b5-44dc-ab5b-8f3051fa77ca
-title: Classe Msvm_LANEndpoint
+title: Msvm_LANEndpoint classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -49,18 +49,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7585b92461b435b99a05ed198c4c501e10703439
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aef7c0a1aa3182caa4d466a76972294f306a4227fcd63d27c1cdb7acbce1f809
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521926"
 ---
-# <a name="msvm_lanendpoint-class"></a>\_Classe Msvm LANEndpoint
+# <a name="msvm_lanendpoint-class"></a>Classe Msvm \_ LANEndpoint
 
-Representa o ponto de conexão lógica para um adaptador de rede. Quando o ponto de extremidade da LAN está conectado a uma porta de comutador, o adaptador de rede conectado ao ponto de extremidade da LAN tem conectividade de rede.
+Representa o ponto de conexão lógica para um adaptador de rede. Quando o ponto de extremidade de LAN está conectado a uma porta switch, o adaptador de rede conectado ao ponto de extremidade de LAN tem conectividade de rede.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -109,14 +109,14 @@ class Msvm_LANEndpoint : CIM_LANEndpoint
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ LANEndpoint** tem estes tipos de membros:
+A **classe Msvm \_ LANEndpoint** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Msvm \_ LANEndpoint** tem esses métodos.
+A **classe Msvm \_ LANEndpoint** tem esses métodos.
 
 
 
@@ -130,35 +130,35 @@ A classe **Msvm \_ LANEndpoint** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ LANEndpoint** tem essas propriedades.
+A **classe Msvm \_ LANEndpoint** tem essas propriedades.
 
 <dl> <dt>
 
 **AliasAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Outros endereços unicast que podem ser usados para se comunicar com o ponto de extremidade da LAN. Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+Outros endereços unicast que podem ser usados para se comunicar com o ponto de extremidade da LAN. Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada do **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do [**\_ EnabledLogicalElement do CIM**](/previous-versions//cc136818(v=vs.85)). Essa propriedade pode ser não **nula** se uma implementação for capaz de anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **nula** se uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
+Indica os valores possíveis para o *parâmetro RequestedState* do [**método RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada de **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)). Essa propriedade poderá ser não nula **se** uma implementação puder anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **Null se** uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
 
-Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 <dl> <dt>
 
@@ -177,10 +177,10 @@ Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-vers
 <span id="Test"></span><span id="test"></span><span id="TEST"></span>**Teste** (7)
 </dt> <dt>
 
-<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Defer** (8)
+<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Adiar** (8)
 </dt> <dt>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Desativar** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Quiesce** (9)
 </dt> <dt>
 
 <span id="Reboot"></span><span id="reboot"></span><span id="REBOOT"></span>**Reinicializar** (10)
@@ -189,7 +189,7 @@ Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-vers
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Redefinir** (11)
 </dt> <dt>
 
-<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF reservado** (.. )
+<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF Reservado** (.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -203,33 +203,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "ponto de extremidade de LAN".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Ponto de Extremidade de LAN".
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **Conectado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade será definida como **true** se o ponto de extremidade de LAN estiver conectado a uma porta de comutador.
+Essa propriedade será definida como **True se** o ponto de extremidade lan estiver conectado a uma porta switch.
 
 </dd> <dt>
 
@@ -242,10 +242,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada do [**CIM \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)e é sempre definida como "Msvm \_ LANEndpoint".
+O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada [**de Cim \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)e sempre é definida como "Msvm \_ LANEndpoint".
 
 </dd> <dt>
 
@@ -258,20 +258,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "ponto de extremidade de LAN virtual da Microsoft".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Ponto de Extremidade da LAN Virtual da Microsoft".
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -284,20 +284,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A configuração de inicialização ou padrão de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) e será um dos valores a seguir.
+Configuração padrão ou de inicialização de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) e será um dos valores a seguir.
 
 <dl> <dt>
 
@@ -315,21 +315,21 @@ A configuração de inicialização ou padrão de um administrador para o estado
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o estado habilitado do sistema planejado. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e pode ser um dos valores a seguir.
+Especifica o estado habilitado do sistema planejado. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e pode ser um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                                                       | Significado                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <span id="Disabled"></span><span id="disabled"></span><span id="DISABLED"></span><dl> <dt>**Desabilitado**</dt> <dt>3</dt> </dl>                                             | O sistema está desligado.<br/>                                             |
-| <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**Não aplicável**</dt> <dt>5</dt> </dl>                     | O elemento não dá suporte a ser habilitado ou desabilitado.<br/>               |
-| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Habilitado, mas offline**</dt> <dt>6</dt> </dl> | O sistema está habilitado, mas offline. Todas as novas solicitações serão descartadas.<br/> |
+| <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span><dl> <dt>**Não aplicável**</dt> <dt>5</dt> </dl>                     | O elemento não dá suporte à habilitação ou desabilitação.<br/>               |
+| <span id="Enabled_but_Offline"></span><span id="enabled_but_offline"></span><span id="ENABLED_BUT_OFFLINE"></span><dl> <dt>**Habilitado, mas offline**</dt> <dt>6</dt> </dl> | O sistema está habilitado, mas offline. Todas as novas solicitações serão descartados.<br/> |
 
 
 
@@ -340,32 +340,32 @@ Especifica o estado habilitado do sistema planejado. Essa propriedade é herdada
 **GroupAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Endereços multicast para os quais o ponto de extremidade de LAN escuta. Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+Endereços multicast aos quais o ponto de extremidade de LAN escuta. Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A integridade atual do elemento. Essa propriedade expressa a integridade desse elemento, mas não necessariamente o de seus subcomponentes. Os valores possíveis são 0 a 30, em que 5 significa que o elemento está totalmente íntegro e 30 significa que o elemento é completamente não funcional. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5 (OK).
+A saúde atual do elemento. Essa propriedade expressa a saúde desse elemento, mas não necessariamente a de seus subcomponentes. Os valores possíveis são de 0 a 30, em que 5 significa que o elemento está totalmente íntegre e 30 significa que o elemento é completamente nãofuncional. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5 (OK).
 
 
 
 | Valor                                                                        | Significado                                 |
 |------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>5</dt> </dl> | O status de integridade é normal.<br/> |
+| <dl> <dt>5</dt> </dl> | O status de saúde é normal.<br/> |
 
 
 
@@ -376,13 +376,13 @@ A integridade atual do elemento. Essa propriedade expressa a integridade desse e
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -395,10 +395,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -411,20 +411,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um rótulo ou identificador para o segmento de LAN ao qual o ponto de extremidade está conectado. Se o ponto de extremidade não estiver ativo/conectado no momento ou se essas informações não forem conhecidas, essa propriedade será **nula**. Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+Um rótulo ou identificador para o segmento de LAN ao qual o ponto de extremidade está conectado. Se o ponto de extremidade não estiver ativo/conectado no momento ou se essas informações não são conhecidas, essa propriedade será **Null.** Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
 **LANType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é preterida no lugar da propriedade **ProtocolType** . Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+Essa propriedade foi preterida no lugar da **propriedade ProtocolType.** Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
@@ -437,26 +437,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (12)
+Qualificadores: **MaxLen** ( 12 )
 </dt> </dl>
 
-O endereço MAC usado na comunicação com o ponto de extremidade da LAN. O endereço MAC é formatado como doze dígitos hexadecimais (por exemplo, "010203040506"), com cada par representando um dos seis octetos do endereço MAC na ordem de bits canônica de acordo com a RFC 2469. Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+O endereço MAC usado na comunicação com o ponto de extremidade da LAN. O endereço MAC é formatado como doze dígitos hexadecimais (por exemplo, "010203040506"), com cada par representando um dos seis octetos do endereço MAC em ordem de bit canônica de acordo com rfc 2469. Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
 **MaxDataSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **unidades** ("bits")
+Qualificadores: **Unidades** ("Bits")
 </dt> </dl>
 
-O maior tamanho, em número de bits, do campo de informações que pode ser enviado ou recebido pelo ponto de extremidade da LAN. Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+O maior tamanho, em número de bits, do campo de informações que pode ser enviado ou recebido pelo ponto de extremidade da LAN. Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
@@ -469,11 +469,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
-**NameFormat**
+**Nameformat**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -482,36 +482,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** ( 256 )
 </dt> </dl>
 
-Contém a heurística de nomenclatura selecionada para garantir que o valor da propriedade **Name** seja exclusivo. Essa propriedade é herdada de [**CIM \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint)e é definida como "ID do dispositivo virtual da Microsoft".
+Contém a heurística de nomeação selecionada para garantir que o valor da **propriedade Name** seja exclusivo. Essa propriedade é herdada do [**Protocolo \_ CIMEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint)e está definida como "ID do Dispositivo Virtual da Microsoft".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como 2 (OK).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como 2 (OK).
 
 </dd> <dt>
 
@@ -524,7 +524,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o estado habilitado ou desabilitado do elemento quando a propriedade **enabledstate** é definida como 1 ("other"). Essa propriedade deve ser definida como **NULL** quando **enabledstate** for qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Uma cadeia de caracteres que descreve o estado habilitado ou desabilitado do elemento quando a propriedade **EnabledState** é definida como 1 ("Outro"). Essa propriedade deve ser definida como **Null quando** **EnabledState** for qualquer valor diferente de 1. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
@@ -537,7 +537,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é preterida no lugar da propriedade **OtherTypeDescription** . Essa propriedade é herdada do [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
+Essa propriedade foi preterida no lugar da **propriedade OtherTypeDescription.** Essa propriedade é herdada de [**CIM \_ LANEndpoint**](/previous-versions//cc136865(v=vs.85)).
 
 </dd> <dt>
 
@@ -550,39 +550,39 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** ( 64 )
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de ponto de extremidade de protocolo quando a propriedade **ProtocolIFType** dessa classe (ou de qualquer uma de suas subclasses) é definida como 1 (outro). Essa propriedade deve ser definida como **NULL** quando a propriedade **ProtocolIFType** é qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint).
+Uma cadeia de caracteres que descreve o tipo de ponto de extremidade de protocolo quando a propriedade **ProtocolIFType** dessa classe (ou qualquer uma de suas subclasses) é definida como 1 (Outra). Essa propriedade deve ser definida como **Null quando** a **propriedade ProtocolIFType** for qualquer valor diferente de 1. Essa propriedade é herdada do [**Protocolo \_ CIMEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint).
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer informações de status de integridade detalhadas e de alto nível para o elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer informações de status de saúde detalhadas e de alto nível para o elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A propriedade é usada para categorizar e classificar instâncias dessa classe. Se **ProtocolIFType** for definido como 1 (outro), as informações de tipo deverão ser fornecidas na propriedade **OtherTypeDescription** . Essa propriedade é herdada do [**CIM \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint).
+A propriedade é usada para categorizar e classificar instâncias dessa classe. Se **ProtocolIFType** for definido como 1 (Outro), as informações de tipo deverão ser fornecidas na **propriedade OtherTypeDescription.** Essa propriedade é herdada do [**Protocolo \_ CIMEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint).
 
 > [!Note]  
-> **ProtocolIFType** é uma enumeração que é sincronizada com a [MIB ifType da IANA](https://www.iana.org/assignments/ianaiftype-mib). Os valores adicionais definidos pela DMTF também estão incluídos.
+> **ProtocolIFType** é uma enumeração sincronizada com o [IANA ifType MIB.](https://www.iana.org/assignments/ianaiftype-mib) Valores adicionais definidos pelo DMTF também são incluídos.
 
  
 
@@ -591,7 +591,7 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
 <span id="Regular_1822"></span><span id="regular_1822"></span><span id="REGULAR_1822"></span>**Regular 1822** (2)
@@ -600,25 +600,25 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="HDH_1822"></span><span id="hdh_1822"></span>**HDH 1822** (3)
 </dt> <dt>
 
-<span id="DDN_X.25"></span><span id="ddn_x.25"></span>**DDN X. 25** (4)
+<span id="DDN_X.25"></span><span id="ddn_x.25"></span>**DDN X.25** (4)
 </dt> <dt>
 
-<span id="RFC877_X.25"></span><span id="rfc877_x.25"></span>**RFC877 X. 25** (5)
+<span id="RFC877_X.25"></span><span id="rfc877_x.25"></span>**RFC877 X.25** (5)
 </dt> <dt>
 
-<span id="Ethernet_CSMA_CD"></span><span id="ethernet_csma_cd"></span><span id="ETHERNET_CSMA_CD"></span>**CSMA/CD de Ethernet** (6)
+<span id="Ethernet_CSMA_CD"></span><span id="ethernet_csma_cd"></span><span id="ETHERNET_CSMA_CD"></span>**Ethernet CSMA/CD** (6)
 </dt> <dt>
 
-<span id="ISO_802.3_CSMA_CD"></span><span id="iso_802.3_csma_cd"></span>**CSMA/CD ISO 802,3** (7)
+<span id="ISO_802.3_CSMA_CD"></span><span id="iso_802.3_csma_cd"></span>**ISO 802.3 CSMA/CD** (7)
 </dt> <dt>
 
-<span id="ISO_802.4_Token_Bus"></span><span id="iso_802.4_token_bus"></span><span id="ISO_802.4_TOKEN_BUS"></span>**Barramento de token ISO 802,4** (8)
+<span id="ISO_802.4_Token_Bus"></span><span id="iso_802.4_token_bus"></span><span id="ISO_802.4_TOKEN_BUS"></span>**Barramento de Token ISO 802.4** (8)
 </dt> <dt>
 
-<span id="ISO_802.5_Token_Ring"></span><span id="iso_802.5_token_ring"></span><span id="ISO_802.5_TOKEN_RING"></span>**Token ring ISO 802,5** (9)
+<span id="ISO_802.5_Token_Ring"></span><span id="iso_802.5_token_ring"></span><span id="ISO_802.5_TOKEN_RING"></span>**Anel de Token ISO 802.5** (9)
 </dt> <dt>
 
-<span id="ISO_802.6_MAN"></span><span id="iso_802.6_man"></span>**ISO 802,6 Man** (10)
+<span id="ISO_802.6_MAN"></span><span id="iso_802.6_man"></span>**ISO 802.6 MAN** (10)
 </dt> <dt>
 
 <span id="StarLAN"></span><span id="starlan"></span><span id="STARLAN"></span>**StarLAN** (11)
@@ -630,7 +630,7 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="Proteon_80Mbit"></span><span id="proteon_80mbit"></span><span id="PROTEON_80MBIT"></span>**Proteon 80Mbit** (13)
 </dt> <dt>
 
-<span id="HyperChannel"></span><span id="hyperchannel"></span><span id="HYPERCHANNEL"></span>**Hiperchannel** (14)
+<span id="HyperChannel"></span><span id="hyperchannel"></span><span id="HYPERCHANNEL"></span>**HyperChannel** (14)
 </dt> <dt>
 
 <span id="FDDI"></span><span id="fddi"></span>**FDDI** (15)
@@ -648,31 +648,31 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="E1"></span><span id="e1"></span>**E1** (19)
 </dt> <dt>
 
-<span id="Basic_ISDN"></span><span id="basic_isdn"></span><span id="BASIC_ISDN"></span>**ISDN básico** (20)
+<span id="Basic_ISDN"></span><span id="basic_isdn"></span><span id="BASIC_ISDN"></span>**ISDN Básico** (20)
 </dt> <dt>
 
 <span id="Primary_ISDN"></span><span id="primary_isdn"></span><span id="PRIMARY_ISDN"></span>**ISDN primário** (21)
 </dt> <dt>
 
-<span id="Proprietary_Point-to-Point_Serial"></span><span id="proprietary_point-to-point_serial"></span><span id="PROPRIETARY_POINT-TO-POINT_SERIAL"></span>**Serial ponto a ponto proprietário** (22)
+<span id="Proprietary_Point-to-Point_Serial"></span><span id="proprietary_point-to-point_serial"></span><span id="PROPRIETARY_POINT-TO-POINT_SERIAL"></span>**Série ponto a ponto proprietária** (22)
 </dt> <dt>
 
 <span id="PPP"></span><span id="ppp"></span>**PPP** (23)
 </dt> <dt>
 
-<span id="Software_Loopback"></span><span id="software_loopback"></span><span id="SOFTWARE_LOOPBACK"></span>**Auto-retorno de software** (24)
+<span id="Software_Loopback"></span><span id="software_loopback"></span><span id="SOFTWARE_LOOPBACK"></span>**Loopback de software** (24)
 </dt> <dt>
 
 <span id="EON"></span><span id="eon"></span>**EON** (25)
 </dt> <dt>
 
-<span id="Ethernet_3Mbit"></span><span id="ethernet_3mbit"></span><span id="ETHERNET_3MBIT"></span>**3Mbit Ethernet** (26)
+<span id="Ethernet_3Mbit"></span><span id="ethernet_3mbit"></span><span id="ETHERNET_3MBIT"></span>**Ethernet 3Mbit** (26)
 </dt> <dt>
 
 <span id="NSIP"></span><span id="nsip"></span>**NSIP** (27)
 </dt> <dt>
 
-<span id="SLIP"></span><span id="slip"></span>**Guia** (28)
+<span id="SLIP"></span><span id="slip"></span>**SLIP** (28)
 </dt> <dt>
 
 <span id="Ultra"></span><span id="ultra"></span><span id="ULTRA"></span>**Ultra** (29)
@@ -684,7 +684,7 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="SIP"></span><span id="sip"></span>**SIP** (31)
 </dt> <dt>
 
-<span id="Frame_Relay"></span><span id="frame_relay"></span><span id="FRAME_RELAY"></span>**Frame Relay** (32)
+<span id="Frame_Relay"></span><span id="frame_relay"></span><span id="FRAME_RELAY"></span>**Retransmissão de** quadro (32)
 </dt> <dt>
 
 <span id="RS-232"></span><span id="rs-232"></span>**RS-232** (33)
@@ -702,28 +702,28 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="ATM"></span><span id="atm"></span>**ATM** (37)
 </dt> <dt>
 
-<span id="MIO_X.25"></span><span id="mio_x.25"></span>**Mio X. 25** (38)
+<span id="MIO_X.25"></span><span id="mio_x.25"></span>**MIO X.25** (38)
 </dt> <dt>
 
 <span id="SONET"></span><span id="sonet"></span>**SONET** (39)
 </dt> <dt>
 
-<span id="X.25_PLE"></span><span id="x.25_ple"></span>**X. 25 PLE** (40)
+<span id="X.25_PLE"></span><span id="x.25_ple"></span>**X.25 PLE** (40)
 </dt> <dt>
 
-<span id="ISO_802.211c"></span><span id="iso_802.211c"></span><span id="ISO_802.211C"></span>**ISO 802.211 c** (41)
+<span id="ISO_802.211c"></span><span id="iso_802.211c"></span><span id="ISO_802.211C"></span>**ISO 802.211c** (41)
 </dt> <dt>
 
 <span id="LocalTalk"></span><span id="localtalk"></span><span id="LOCALTALK"></span>**LocalTalk** (42)
 </dt> <dt>
 
-<span id="SMDS_DXI"></span><span id="smds_dxi"></span>**SMDS DXi** (43)
+<span id="SMDS_DXI"></span><span id="smds_dxi"></span>**SMDS DXI** (43)
 </dt> <dt>
 
-<span id="Frame_Relay_Service"></span><span id="frame_relay_service"></span><span id="FRAME_RELAY_SERVICE"></span>**Serviço de Frame Relay** (44)
+<span id="Frame_Relay_Service"></span><span id="frame_relay_service"></span><span id="FRAME_RELAY_SERVICE"></span>**Serviço de Retransmissão de** Quadro (44)
 </dt> <dt>
 
-<span id="V.35"></span><span id="v.35"></span>**V. 35** (45)
+<span id="V.35"></span><span id="v.35"></span>**V.35** (45)
 </dt> <dt>
 
 <span id="HSSI"></span><span id="hssi"></span>**HSSI** (46)
@@ -738,22 +738,22 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="AAL5"></span><span id="aal5"></span>**AAL5** (49)
 </dt> <dt>
 
-<span id="SONET_Path"></span><span id="sonet_path"></span><span id="SONET_PATH"></span>**Caminho de SONET** (50)
+<span id="SONET_Path"></span><span id="sonet_path"></span><span id="SONET_PATH"></span>**Caminho SONET** (50)
 </dt> <dt>
 
 <span id="SONET_VT"></span><span id="sonet_vt"></span>**SONET VT** (51)
 </dt> <dt>
 
-<span id="SMDS_ICIP"></span><span id="smds_icip"></span>**SMDS ICIP** (52)
+<span id="SMDS_ICIP"></span><span id="smds_icip"></span>**ICIP do SMDS** (52)
 </dt> <dt>
 
-<span id="Proprietary_Virtual_Internal"></span><span id="proprietary_virtual_internal"></span><span id="PROPRIETARY_VIRTUAL_INTERNAL"></span>**Virtual/interna proprietária** (53)
+<span id="Proprietary_Virtual_Internal"></span><span id="proprietary_virtual_internal"></span><span id="PROPRIETARY_VIRTUAL_INTERNAL"></span>**Virtual/Interno proprietário** (53)
 </dt> <dt>
 
 <span id="Proprietary_Multiplexor"></span><span id="proprietary_multiplexor"></span><span id="PROPRIETARY_MULTIPLEXOR"></span>**Multiplexador proprietário** (54)
 </dt> <dt>
 
-<span id="IEEE_802.12"></span><span id="ieee_802.12"></span>**IEEE 802,12** (55)
+<span id="IEEE_802.12"></span><span id="ieee_802.12"></span>**IEEE 802.12** (55)
 </dt> <dt>
 
 <span id="Fibre_Channel"></span><span id="fibre_channel"></span><span id="FIBRE_CHANNEL"></span>**Fibre Channel** (56)
@@ -762,16 +762,16 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="HIPPI_Interface"></span><span id="hippi_interface"></span><span id="HIPPI_INTERFACE"></span>**Interface HIPPI** (57)
 </dt> <dt>
 
-<span id="Frame_Relay_Interconnect"></span><span id="frame_relay_interconnect"></span><span id="FRAME_RELAY_INTERCONNECT"></span>**Interconexão de Frame Relay** (58)
+<span id="Frame_Relay_Interconnect"></span><span id="frame_relay_interconnect"></span><span id="FRAME_RELAY_INTERCONNECT"></span>**Interconexão de Retransmissão de** Quadro (58)
 </dt> <dt>
 
-<span id="ATM_Emulated_LAN_for_802.3"></span><span id="atm_emulated_lan_for_802.3"></span><span id="ATM_EMULATED_LAN_FOR_802.3"></span>**LAN emulada ATM para 802,3** (59)
+<span id="ATM_Emulated_LAN_for_802.3"></span><span id="atm_emulated_lan_for_802.3"></span><span id="ATM_EMULATED_LAN_FOR_802.3"></span>**LAN emulada do ATM para 802.3** (59)
 </dt> <dt>
 
-<span id="ATM_Emulated_LAN_for_802.5"></span><span id="atm_emulated_lan_for_802.5"></span><span id="ATM_EMULATED_LAN_FOR_802.5"></span>**LAN emulada ATM para 802,5** (60)
+<span id="ATM_Emulated_LAN_for_802.5"></span><span id="atm_emulated_lan_for_802.5"></span><span id="ATM_EMULATED_LAN_FOR_802.5"></span>**LAN emulada do ATM para 802.5** (60)
 </dt> <dt>
 
-<span id="ATM_Emulated_Circuit"></span><span id="atm_emulated_circuit"></span><span id="ATM_EMULATED_CIRCUIT"></span>**Circuito emulado ATM** (61)
+<span id="ATM_Emulated_Circuit"></span><span id="atm_emulated_circuit"></span><span id="ATM_EMULATED_CIRCUIT"></span>**Circuito emulado do ATM** (61)
 </dt> <dt>
 
 <span id="Fast_Ethernet__100BaseT_"></span><span id="fast_ethernet__100baset_"></span><span id="FAST_ETHERNET__100BASET_"></span>**Fast Ethernet (100BaseT)** (62)
@@ -780,16 +780,16 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="ISDN"></span><span id="isdn"></span>**ISDN** (63)
 </dt> <dt>
 
-<span id="V.11"></span><span id="v.11"></span>**V. 11** (64)
+<span id="V.11"></span><span id="v.11"></span>**V.11** (64)
 </dt> <dt>
 
-<span id="V.36"></span><span id="v.36"></span>**V. 36** (65)
+<span id="V.36"></span><span id="v.36"></span>**V.36** (65)
 </dt> <dt>
 
-<span id="G703_at_64K"></span><span id="g703_at_64k"></span><span id="G703_AT_64K"></span>**G703 em 64K** (66)
+<span id="G703_at_64K"></span><span id="g703_at_64k"></span><span id="G703_AT_64K"></span>**G703 a 64K** (66)
 </dt> <dt>
 
-<span id="G703_at_2Mb"></span><span id="g703_at_2mb"></span><span id="G703_AT_2MB"></span>**G703 em 2 MB** (67)
+<span id="G703_at_2Mb"></span><span id="g703_at_2mb"></span><span id="G703_AT_2MB"></span>**G703 a 2 Mb** (67)
 </dt> <dt>
 
 <span id="QLLC"></span><span id="qllc"></span>**QLLC** (68)
@@ -801,16 +801,16 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="Channel"></span><span id="channel"></span><span id="CHANNEL"></span>**Canal** (70)
 </dt> <dt>
 
-<span id="IEEE_802.11"></span><span id="ieee_802.11"></span>**IEEE 802,11** (71)
+<span id="IEEE_802.11"></span><span id="ieee_802.11"></span>**IEEE 802.11** (71)
 </dt> <dt>
 
-<span id="IBM_260_370_OEMI_Channel"></span><span id="ibm_260_370_oemi_channel"></span><span id="IBM_260_370_OEMI_CHANNEL"></span>**Canal IBM 260/370 OEMI** (72)
+<span id="IBM_260_370_OEMI_Channel"></span><span id="ibm_260_370_oemi_channel"></span><span id="IBM_260_370_OEMI_CHANNEL"></span>**Canal OEMI do IBM 260/370** (72)
 </dt> <dt>
 
 <span id="ESCON"></span><span id="escon"></span>**ESCON** (73)
 </dt> <dt>
 
-<span id="Data_Link_Switching"></span><span id="data_link_switching"></span><span id="DATA_LINK_SWITCHING"></span>**Alternância de link de dados** (74)
+<span id="Data_Link_Switching"></span><span id="data_link_switching"></span><span id="DATA_LINK_SWITCHING"></span>**Alternação de link de** dados (74)
 </dt> <dt>
 
 <span id="ISDN_S_T_Interface"></span><span id="isdn_s_t_interface"></span><span id="ISDN_S_T_INTERFACE"></span>**Interface ISDN S/T** (75)
@@ -822,52 +822,52 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="LAP-D"></span><span id="lap-d"></span>**LAP-D** (77)
 </dt> <dt>
 
-<span id="IP_Switch"></span><span id="ip_switch"></span><span id="IP_SWITCH"></span>**Opção de IP** (78)
+<span id="IP_Switch"></span><span id="ip_switch"></span><span id="IP_SWITCH"></span>**Opção IP** (78)
 </dt> <dt>
 
 <span id="Remote_Source_Route_Bridging"></span><span id="remote_source_route_bridging"></span><span id="REMOTE_SOURCE_ROUTE_BRIDGING"></span>**Ponte de rota de origem remota** (79)
 </dt> <dt>
 
-<span id="ATM_Logical"></span><span id="atm_logical"></span><span id="ATM_LOGICAL"></span>**ATM lógico** (80)
+<span id="ATM_Logical"></span><span id="atm_logical"></span><span id="ATM_LOGICAL"></span>**Atm Logical** (80)
 </dt> <dt>
 
-<span id="DS0"></span><span id="ds0"></span>**Ds0** (81)
+<span id="DS0"></span><span id="ds0"></span>**DS0** (81)
 </dt> <dt>
 
-<span id="DS0_Bundle"></span><span id="ds0_bundle"></span><span id="DS0_BUNDLE"></span>**Pacote ds0** (82)
+<span id="DS0_Bundle"></span><span id="ds0_bundle"></span><span id="DS0_BUNDLE"></span>**Pacote DS0** (82)
 </dt> <dt>
 
 <span id="BSC"></span><span id="bsc"></span>**BSC** (83)
 </dt> <dt>
 
-<span id="Async"></span><span id="async"></span><span id="ASYNC"></span>**Async** (84)
+<span id="Async"></span><span id="async"></span><span id="ASYNC"></span>**Assíncrono** (84)
 </dt> <dt>
 
-<span id="Combat_Net_Radio"></span><span id="combat_net_radio"></span><span id="COMBAT_NET_RADIO"></span>**Combat net radio** (85)
+<span id="Combat_Net_Radio"></span><span id="combat_net_radio"></span><span id="COMBAT_NET_RADIO"></span>**Rádio Desmutando Rede** (85)
 </dt> <dt>
 
-<span id="ISO_802.5r_DTR"></span><span id="iso_802.5r_dtr"></span><span id="ISO_802.5R_DTR"></span>**DTR r 802.5 ISO** (86)
+<span id="ISO_802.5r_DTR"></span><span id="iso_802.5r_dtr"></span><span id="ISO_802.5R_DTR"></span>**ISO 802.5r DTR** (86)
 </dt> <dt>
 
-<span id="Ext_Pos_Loc_Report_System"></span><span id="ext_pos_loc_report_system"></span><span id="EXT_POS_LOC_REPORT_SYSTEM"></span>**Sistema de relatório Loc do PDV de extensão** (87)
+<span id="Ext_Pos_Loc_Report_System"></span><span id="ext_pos_loc_report_system"></span><span id="EXT_POS_LOC_REPORT_SYSTEM"></span>**Sistema de relatório Ext Pos Loc** (87)
 </dt> <dt>
 
-<span id="AppleTalk_Remote_Access_Protocol"></span><span id="appletalk_remote_access_protocol"></span><span id="APPLETALK_REMOTE_ACCESS_PROTOCOL"></span>**Protocolo de acesso remoto AppleTalk** (88)
+<span id="AppleTalk_Remote_Access_Protocol"></span><span id="appletalk_remote_access_protocol"></span><span id="APPLETALK_REMOTE_ACCESS_PROTOCOL"></span>**Protocolo de Acesso Remoto** do AppleTalk (88)
 </dt> <dt>
 
-<span id="Proprietary_Connectionless"></span><span id="proprietary_connectionless"></span><span id="PROPRIETARY_CONNECTIONLESS"></span>Sem **conexão proprietária** (89)
+<span id="Proprietary_Connectionless"></span><span id="proprietary_connectionless"></span><span id="PROPRIETARY_CONNECTIONLESS"></span>**Sem conexão proprietária** (89)
 </dt> <dt>
 
-<span id="ITU_X.29_Host_PAD"></span><span id="itu_x.29_host_pad"></span><span id="ITU_X.29_HOST_PAD"></span>**Painel de host ITU X. 29** (90)
+<span id="ITU_X.29_Host_PAD"></span><span id="itu_x.29_host_pad"></span><span id="ITU_X.29_HOST_PAD"></span>**PAINEL de Host X.29 da ITU** (90)
 </dt> <dt>
 
-<span id="ITU_X.3_Terminal_PAD"></span><span id="itu_x.3_terminal_pad"></span><span id="ITU_X.3_TERMINAL_PAD"></span>**ITU X. 3 terminal pad** (91)
+<span id="ITU_X.3_Terminal_PAD"></span><span id="itu_x.3_terminal_pad"></span><span id="ITU_X.3_TERMINAL_PAD"></span>**PAINEL de Terminal do ITU X.3** (91)
 </dt> <dt>
 
-<span id="Frame_Relay_MPI"></span><span id="frame_relay_mpi"></span><span id="FRAME_RELAY_MPI"></span>**MPI de Frame Relay** (92)
+<span id="Frame_Relay_MPI"></span><span id="frame_relay_mpi"></span><span id="FRAME_RELAY_MPI"></span>**MPI de Retransmissão de** Quadro (92)
 </dt> <dt>
 
-<span id="ITU_X.213"></span><span id="itu_x.213"></span>**ITU X. 213** (93)
+<span id="ITU_X.213"></span><span id="itu_x.213"></span>**ITU X.213** (93)
 </dt> <dt>
 
 <span id="ADSL"></span><span id="adsl"></span>**ADSL** (94)
@@ -882,46 +882,46 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="VDSL"></span><span id="vdsl"></span>**VDSL** (97)
 </dt> <dt>
 
-<span id="ISO_802.5_CRFP"></span><span id="iso_802.5_crfp"></span>**ISO 802,5 CRFP** (98)
+<span id="ISO_802.5_CRFP"></span><span id="iso_802.5_crfp"></span>**ISO 802.5 CRFP** (98)
 </dt> <dt>
 
-<span id="Myrinet"></span><span id="myrinet"></span><span id="MYRINET"></span>**Myrinet** (99)
+<span id="Myrinet"></span><span id="myrinet"></span><span id="MYRINET"></span>**Myilat** (99)
 </dt> <dt>
 
 <span id="Voice_Receive_and_Transmit"></span><span id="voice_receive_and_transmit"></span><span id="VOICE_RECEIVE_AND_TRANSMIT"></span>**Recebimento e transmissão de voz** (100)
 </dt> <dt>
 
-<span id="Voice_Foreign_Exchange_Office"></span><span id="voice_foreign_exchange_office"></span><span id="VOICE_FOREIGN_EXCHANGE_OFFICE"></span>**Escritório de troca de voz estrangeira** (101)
+<span id="Voice_Foreign_Exchange_Office"></span><span id="voice_foreign_exchange_office"></span><span id="VOICE_FOREIGN_EXCHANGE_OFFICE"></span>**Voz estrangeira Exchange Office** (101)
 </dt> <dt>
 
-<span id="Voice_Foreign_Exchange_Service"></span><span id="voice_foreign_exchange_service"></span><span id="VOICE_FOREIGN_EXCHANGE_SERVICE"></span>**Serviço de troca de voz estrangeira** (102)
+<span id="Voice_Foreign_Exchange_Service"></span><span id="voice_foreign_exchange_service"></span><span id="VOICE_FOREIGN_EXCHANGE_SERVICE"></span>**Serviço de Exchange Voz** (102)
 </dt> <dt>
 
 <span id="Voice_Encapsulation"></span><span id="voice_encapsulation"></span><span id="VOICE_ENCAPSULATION"></span>**Encapsulamento de voz** (103)
 </dt> <dt>
 
-<span id="Voice_over_IP"></span><span id="voice_over_ip"></span><span id="VOICE_OVER_IP"></span>**Voz sobre IP** (104)
+<span id="Voice_over_IP"></span><span id="voice_over_ip"></span><span id="VOICE_OVER_IP"></span>**IP de** voz sobre (104)
 </dt> <dt>
 
-<span id="ATM_DXI"></span><span id="atm_dxi"></span>**DXi ATM** (105)
+<span id="ATM_DXI"></span><span id="atm_dxi"></span>**ATM DXI** (105)
 </dt> <dt>
 
-<span id="ATM_FUNI"></span><span id="atm_funi"></span>**FUNI ATM** (106)
+<span id="ATM_FUNI"></span><span id="atm_funi"></span>**ATM FUNI** (106)
 </dt> <dt>
 
-<span id="ATM_IMA"></span><span id="atm_ima"></span>**IMA ATM** (107)
+<span id="ATM_IMA"></span><span id="atm_ima"></span>**ATM IMA** (107)
 </dt> <dt>
 
-<span id="PPP_Multilink_Bundle"></span><span id="ppp_multilink_bundle"></span><span id="PPP_MULTILINK_BUNDLE"></span>**Pacote PPP Multilink** (108)
+<span id="PPP_Multilink_Bundle"></span><span id="ppp_multilink_bundle"></span><span id="PPP_MULTILINK_BUNDLE"></span>**Pacote multilink PPP** (108)
 </dt> <dt>
 
 <span id="IP_over_CDLC"></span><span id="ip_over_cdlc"></span><span id="IP_OVER_CDLC"></span>**IP sobre CDLC** (109)
 </dt> <dt>
 
-<span id="IP_over_CLAW"></span><span id="ip_over_claw"></span><span id="IP_OVER_CLAW"></span>**IP sobre Claw** (110)
+<span id="IP_over_CLAW"></span><span id="ip_over_claw"></span><span id="IP_OVER_CLAW"></span>**IP sobre O CASO** (110)
 </dt> <dt>
 
-<span id="Stack_to_Stack"></span><span id="stack_to_stack"></span><span id="STACK_TO_STACK"></span>**Pilha para pilha** (111)
+<span id="Stack_to_Stack"></span><span id="stack_to_stack"></span><span id="STACK_TO_STACK"></span>**Stack to Stack** (111)
 </dt> <dt>
 
 <span id="Virtual_IP_Address"></span><span id="virtual_ip_address"></span><span id="VIRTUAL_IP_ADDRESS"></span>**Endereço IP virtual** (112)
@@ -930,10 +930,10 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="MPC"></span><span id="mpc"></span>**MPC** (113)
 </dt> <dt>
 
-<span id="IP_over_ATM"></span><span id="ip_over_atm"></span><span id="IP_OVER_ATM"></span>**IP sobre ATM** (114)
+<span id="IP_over_ATM"></span><span id="ip_over_atm"></span><span id="IP_OVER_ATM"></span>**IP sobre o ATM** (114)
 </dt> <dt>
 
-<span id="ISO_802.5j_Fibre_Token_Ring"></span><span id="iso_802.5j_fibre_token_ring"></span><span id="ISO_802.5J_FIBRE_TOKEN_RING"></span>**Anel de Fibre token do ISO 802.5 j** (115)
+<span id="ISO_802.5j_Fibre_Token_Ring"></span><span id="iso_802.5j_fibre_token_ring"></span><span id="ISO_802.5J_FIBRE_TOKEN_RING"></span>Anel de Token Fibre **ISO 802.5j** (115)
 </dt> <dt>
 
 <span id="TDLC"></span><span id="tdlc"></span>**TDLC** (116)
@@ -948,52 +948,52 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="LAP-F"></span><span id="lap-f"></span>**LAP-F** (119)
 </dt> <dt>
 
-<span id="V.37"></span><span id="v.37"></span>**V. 37** (120)
+<span id="V.37"></span><span id="v.37"></span>**V.37** (120)
 </dt> <dt>
 
-<span id="X.25_MLP"></span><span id="x.25_mlp"></span>**X. 25 MLP** (121)
+<span id="X.25_MLP"></span><span id="x.25_mlp"></span>**X.25 MLP** (121)
 </dt> <dt>
 
-<span id="X.25_Hunt_Group"></span><span id="x.25_hunt_group"></span><span id="X.25_HUNT_GROUP"></span>**Grupo de busca X. 25** (122)
+<span id="X.25_Hunt_Group"></span><span id="x.25_hunt_group"></span><span id="X.25_HUNT_GROUP"></span>**Grupo de busca X.25** (122)
 </dt> <dt>
 
 <span id="Transp_HDLC"></span><span id="transp_hdlc"></span><span id="TRANSP_HDLC"></span>**Transp HDLC** (123)
 </dt> <dt>
 
-<span id="Interleave_Channel"></span><span id="interleave_channel"></span><span id="INTERLEAVE_CHANNEL"></span>**Intercalar canal** (124)
+<span id="Interleave_Channel"></span><span id="interleave_channel"></span><span id="INTERLEAVE_CHANNEL"></span>**Canal intercalar** (124)
 </dt> <dt>
 
-<span id="FAST_Channel"></span><span id="fast_channel"></span><span id="FAST_CHANNEL"></span>**Canal rápido** (125)
+<span id="FAST_Channel"></span><span id="fast_channel"></span><span id="FAST_CHANNEL"></span>**FAST** (125)
 </dt> <dt>
 
-<span id="IP__for_APPN_HPR_in_IP_Networks_"></span><span id="ip__for_appn_hpr_in_ip_networks_"></span><span id="IP__FOR_APPN_HPR_IN_IP_NETWORKS_"></span>**IP (para APPN HPR em redes IP)** (126)
+<span id="IP__for_APPN_HPR_in_IP_Networks_"></span><span id="ip__for_appn_hpr_in_ip_networks_"></span><span id="IP__FOR_APPN_HPR_IN_IP_NETWORKS_"></span>**IP (para o HPR do APPN em redes IP)** (126)
 </dt> <dt>
 
-<span id="CATV_MAC_Layer"></span><span id="catv_mac_layer"></span><span id="CATV_MAC_LAYER"></span>**Camada Mac CATV** (127)
+<span id="CATV_MAC_Layer"></span><span id="catv_mac_layer"></span><span id="CATV_MAC_LAYER"></span>**Camada CATV MAC** (127)
 </dt> <dt>
 
-<span id="CATV_Downstream"></span><span id="catv_downstream"></span><span id="CATV_DOWNSTREAM"></span>**CATV downstream** (128)
+<span id="CATV_Downstream"></span><span id="catv_downstream"></span><span id="CATV_DOWNSTREAM"></span>**CatV Downstream** (128)
 </dt> <dt>
 
-<span id="CATV_Upstream"></span><span id="catv_upstream"></span><span id="CATV_UPSTREAM"></span>**CATV upstream** (129)
+<span id="CATV_Upstream"></span><span id="catv_upstream"></span><span id="CATV_UPSTREAM"></span>**Upstream catv** (129)
 </dt> <dt>
 
-<span id="Avalon_12MPP_Switch"></span><span id="avalon_12mpp_switch"></span><span id="AVALON_12MPP_SWITCH"></span>**Opção Avalon 12MPP** (130)
+<span id="Avalon_12MPP_Switch"></span><span id="avalon_12mpp_switch"></span><span id="AVALON_12MPP_SWITCH"></span>**Switch De 12MPP** (130)
 </dt> <dt>
 
-<span id="Tunnel"></span><span id="tunnel"></span><span id="TUNNEL"></span>**Túnel** (131)
+<span id="Tunnel"></span><span id="tunnel"></span><span id="TUNNEL"></span>**Tunnel** (131)
 </dt> <dt>
 
 <span id="Coffee"></span><span id="coffee"></span><span id="COFFEE"></span>**Café** (132)
 </dt> <dt>
 
-<span id="Circuit_Emulation_Service"></span><span id="circuit_emulation_service"></span><span id="CIRCUIT_EMULATION_SERVICE"></span>**Serviço de emulação de circuito** (133)
+<span id="Circuit_Emulation_Service"></span><span id="circuit_emulation_service"></span><span id="CIRCUIT_EMULATION_SERVICE"></span>**Serviço de Emulação de Circuito** (133)
 </dt> <dt>
 
-<span id="ATM_SubInterface"></span><span id="atm_subinterface"></span><span id="ATM_SUBINTERFACE"></span>**Subinterface ATM** (134)
+<span id="ATM_SubInterface"></span><span id="atm_subinterface"></span><span id="ATM_SUBINTERFACE"></span>**SubInterface do ATM** (134)
 </dt> <dt>
 
-<span id="Layer_2_VLAN_using_802.1Q"></span><span id="layer_2_vlan_using_802.1q"></span><span id="LAYER_2_VLAN_USING_802.1Q"></span>**VLAN de camada 2 usando 802.1 q** (135)
+<span id="Layer_2_VLAN_using_802.1Q"></span><span id="layer_2_vlan_using_802.1q"></span><span id="LAYER_2_VLAN_USING_802.1Q"></span>**VLAN de Camada 2 usando 802.1Q** (135)
 </dt> <dt>
 
 <span id="Layer_3_VLAN_using_IP"></span><span id="layer_3_vlan_using_ip"></span><span id="LAYER_3_VLAN_USING_IP"></span>**VLAN de camada 3 usando IP** (136)
@@ -1002,7 +1002,7 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="Layer_3_VLAN_using_IPX"></span><span id="layer_3_vlan_using_ipx"></span><span id="LAYER_3_VLAN_USING_IPX"></span>**VLAN de camada 3 usando IPX** (137)
 </dt> <dt>
 
-<span id="Digital_Power_Line"></span><span id="digital_power_line"></span><span id="DIGITAL_POWER_LINE"></span>**Linha de alimentação digital** (138)
+<span id="Digital_Power_Line"></span><span id="digital_power_line"></span><span id="DIGITAL_POWER_LINE"></span>**Power Line digital** (138)
 </dt> <dt>
 
 <span id="Multimedia_Mail_over_IP"></span><span id="multimedia_mail_over_ip"></span><span id="MULTIMEDIA_MAIL_OVER_IP"></span>**Email multimídia sobre IP** (139)
@@ -1014,7 +1014,7 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="DCN"></span><span id="dcn"></span>**DCN** (141)
 </dt> <dt>
 
-<span id="IP_Forwarding"></span><span id="ip_forwarding"></span><span id="IP_FORWARDING"></span>**Encaminhamento de IP** (142)
+<span id="IP_Forwarding"></span><span id="ip_forwarding"></span><span id="IP_FORWARDING"></span>**Encaminhamento IP** (142)
 </dt> <dt>
 
 <span id="MSDSL"></span><span id="msdsl"></span>**MSDSL** (143)
@@ -1023,31 +1023,31 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="IEEE_1394"></span><span id="ieee_1394"></span>**IEEE 1394** (144)
 </dt> <dt>
 
-<span id="IF-GSN_HIPPI-6400"></span><span id="if-gsn_hippi-6400"></span>**If-GSN/HIPPI-6400** (145)
+<span id="IF-GSN_HIPPI-6400"></span><span id="if-gsn_hippi-6400"></span>**IF-GSN/HIPPI-6400** (145)
 </dt> <dt>
 
-<span id="DVB-RCC_MAC_Layer"></span><span id="dvb-rcc_mac_layer"></span><span id="DVB-RCC_MAC_LAYER"></span>**Camada Mac de RCC de DVB** (146)
+<span id="DVB-RCC_MAC_Layer"></span><span id="dvb-rcc_mac_layer"></span><span id="DVB-RCC_MAC_LAYER"></span>**Camada MAC DVB-RCC** (146)
 </dt> <dt>
 
-<span id="DVB-RCC_Downstream"></span><span id="dvb-rcc_downstream"></span><span id="DVB-RCC_DOWNSTREAM"></span>**DVB-RCC downstream** (147)
+<span id="DVB-RCC_Downstream"></span><span id="dvb-rcc_downstream"></span><span id="DVB-RCC_DOWNSTREAM"></span>**DvB-RCC Downstream** (147)
 </dt> <dt>
 
-<span id="DVB-RCC_Upstream"></span><span id="dvb-rcc_upstream"></span><span id="DVB-RCC_UPSTREAM"></span>**DVB-RCC upstream** (148)
+<span id="DVB-RCC_Upstream"></span><span id="dvb-rcc_upstream"></span><span id="DVB-RCC_UPSTREAM"></span>**DvB-RCC Upstream** (148)
 </dt> <dt>
 
-<span id="ATM_Virtual"></span><span id="atm_virtual"></span><span id="ATM_VIRTUAL"></span>**ATM virtual** (149)
+<span id="ATM_Virtual"></span><span id="atm_virtual"></span><span id="ATM_VIRTUAL"></span>**ATM Virtual** (149)
 </dt> <dt>
 
-<span id="MPLS_Tunnel"></span><span id="mpls_tunnel"></span><span id="MPLS_TUNNEL"></span>**Túnel MPLS** (150)
+<span id="MPLS_Tunnel"></span><span id="mpls_tunnel"></span><span id="MPLS_TUNNEL"></span>**MPLS Tunnel** (150)
 </dt> <dt>
 
 <span id="SRP"></span><span id="srp"></span>**SRP** (151)
 </dt> <dt>
 
-<span id="Voice_over_ATM"></span><span id="voice_over_atm"></span><span id="VOICE_OVER_ATM"></span>**Voz sobre ATM** (152)
+<span id="Voice_over_ATM"></span><span id="voice_over_atm"></span><span id="VOICE_OVER_ATM"></span>**Voice over ATM** (152)
 </dt> <dt>
 
-<span id="Voice_over_Frame_Relay"></span><span id="voice_over_frame_relay"></span><span id="VOICE_OVER_FRAME_RELAY"></span>**Retransmissão de quadros de voz sobre** (153)
+<span id="Voice_over_Frame_Relay"></span><span id="voice_over_frame_relay"></span><span id="VOICE_OVER_FRAME_RELAY"></span>**Retransmissão de voz sobre quadro** (153)
 </dt> <dt>
 
 <span id="ISDL"></span><span id="isdl"></span>**ISDL** (154)
@@ -1059,31 +1059,31 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="SS7_Signaling_Link"></span><span id="ss7_signaling_link"></span><span id="SS7_SIGNALING_LINK"></span>**Link de sinalização do SS7** (156)
 </dt> <dt>
 
-<span id="Proprietary_P2P_Wireless"></span><span id="proprietary_p2p_wireless"></span><span id="PROPRIETARY_P2P_WIRELESS"></span>**Sem fio P2P proprietário** (157)
+<span id="Proprietary_P2P_Wireless"></span><span id="proprietary_p2p_wireless"></span><span id="PROPRIETARY_P2P_WIRELESS"></span>**P2P sem fio** proprietário (157)
 </dt> <dt>
 
-<span id="Frame_Forward"></span><span id="frame_forward"></span><span id="FRAME_FORWARD"></span>**Encaminhar quadro** (158)
+<span id="Frame_Forward"></span><span id="frame_forward"></span><span id="FRAME_FORWARD"></span>**Frame Forward** (158)
 </dt> <dt>
 
-<span id="RFC1483_Multiprotocol_over_ATM"></span><span id="rfc1483_multiprotocol_over_atm"></span><span id="RFC1483_MULTIPROTOCOL_OVER_ATM"></span>**RFC1483 multiprotocolo sobre ATM** (159)
+<span id="RFC1483_Multiprotocol_over_ATM"></span><span id="rfc1483_multiprotocol_over_atm"></span><span id="RFC1483_MULTIPROTOCOL_OVER_ATM"></span>**RFC1483 Multiprotocol sobre ATM** (159)
 </dt> <dt>
 
 <span id="USB"></span><span id="usb"></span>**USB** (160)
 </dt> <dt>
 
-<span id="IEEE_802.3ad_Link_Aggregate"></span><span id="ieee_802.3ad_link_aggregate"></span><span id="IEEE_802.3AD_LINK_AGGREGATE"></span>**Agregação de link do AD 802.3 IEEE** (161)
+<span id="IEEE_802.3ad_Link_Aggregate"></span><span id="ieee_802.3ad_link_aggregate"></span><span id="IEEE_802.3AD_LINK_AGGREGATE"></span>**IEEE 802.3ad Link Aggregate** (161)
 </dt> <dt>
 
-<span id="BGP_Policy_Accounting"></span><span id="bgp_policy_accounting"></span><span id="BGP_POLICY_ACCOUNTING"></span>**Contabilização de política BGP** (162)
+<span id="BGP_Policy_Accounting"></span><span id="bgp_policy_accounting"></span><span id="BGP_POLICY_ACCOUNTING"></span>**Contabilidade de política BGP** (162)
 </dt> <dt>
 
-<span id="FRF_.16_Multilink_FR"></span><span id="frf_.16_multilink_fr"></span><span id="FRF_.16_MULTILINK_FR"></span>**Multilink fr .16 do FRF** (163)
+<span id="FRF_.16_Multilink_FR"></span><span id="frf_.16_multilink_fr"></span><span id="FRF_.16_MULTILINK_FR"></span>**FRF .16 Multilink FR** (163)
 </dt> <dt>
 
-<span id="H.323_Gatekeeper"></span><span id="h.323_gatekeeper"></span><span id="H.323_GATEKEEPER"></span>**Gatekeeper H. 323** (164)
+<span id="H.323_Gatekeeper"></span><span id="h.323_gatekeeper"></span><span id="H.323_GATEKEEPER"></span>**H.323 Gatekeeper** (164)
 </dt> <dt>
 
-<span id="H.323_Proxy"></span><span id="h.323_proxy"></span><span id="H.323_PROXY"></span>**Proxy H. 323** (165)
+<span id="H.323_Proxy"></span><span id="h.323_proxy"></span><span id="H.323_PROXY"></span>**Proxy H.323** (165)
 </dt> <dt>
 
 <span id="MPLS"></span><span id="mpls"></span>**MPLS** (166)
@@ -1098,22 +1098,22 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="S-HDSL"></span><span id="s-hdsl"></span>**S-HDSL** (169)
 </dt> <dt>
 
-<span id="DS1_Facility_Data_Link"></span><span id="ds1_facility_data_link"></span><span id="DS1_FACILITY_DATA_LINK"></span>**Link de dados de recursos do DS1** (170)
+<span id="DS1_Facility_Data_Link"></span><span id="ds1_facility_data_link"></span><span id="DS1_FACILITY_DATA_LINK"></span>**Link de dados do Recurso DS1** (170)
 </dt> <dt>
 
 <span id="Packet_over_SONET_SDH"></span><span id="packet_over_sonet_sdh"></span><span id="PACKET_OVER_SONET_SDH"></span>**Pacote sobre SONET/SDH** (171)
 </dt> <dt>
 
-<span id="DVB-ASI_Input"></span><span id="dvb-asi_input"></span><span id="DVB-ASI_INPUT"></span>**Entrada de DVB-ASI** (172)
+<span id="DVB-ASI_Input"></span><span id="dvb-asi_input"></span><span id="DVB-ASI_INPUT"></span>**Entrada DVB-ASI** (172)
 </dt> <dt>
 
-<span id="DVB-ASI_Output"></span><span id="dvb-asi_output"></span><span id="DVB-ASI_OUTPUT"></span>**Saída de DVB-ASI** (173)
+<span id="DVB-ASI_Output"></span><span id="dvb-asi_output"></span><span id="DVB-ASI_OUTPUT"></span>**Saída DVB-ASI** (173)
 </dt> <dt>
 
-<span id="Power_Line"></span><span id="power_line"></span><span id="POWER_LINE"></span>**Linha de alimentação** (174)
+<span id="Power_Line"></span><span id="power_line"></span><span id="POWER_LINE"></span>**Power Line** (174)
 </dt> <dt>
 
-<span id="Non_Facility_Associated_Signaling"></span><span id="non_facility_associated_signaling"></span><span id="NON_FACILITY_ASSOCIATED_SIGNALING"></span>**Sinalização associada ao não recurso** (175)
+<span id="Non_Facility_Associated_Signaling"></span><span id="non_facility_associated_signaling"></span><span id="NON_FACILITY_ASSOCIATED_SIGNALING"></span>**Sinalização não associada à instalação** (175)
 </dt> <dt>
 
 <span id="TR008"></span><span id="tr008"></span>**TR008** (176)
@@ -1122,43 +1122,43 @@ A propriedade é usada para categorizar e classificar instâncias dessa classe. 
 <span id="GR303_RDT"></span><span id="gr303_rdt"></span>**GR303 RDT** (177)
 </dt> <dt>
 
-<span id="GR303_IDT"></span><span id="gr303_idt"></span>**GR303 IDT** (178)
+<span id="GR303_IDT"></span><span id="gr303_idt"></span>**IDT GR303** (178)
 </dt> <dt>
 
-<span id="ISUP"></span><span id="isup"></span>**IsUp** (179)
+<span id="ISUP"></span><span id="isup"></span>**ISUP** (179)
 </dt> <dt>
 
-<span id="Proprietary_Wireless_MAC_Layer"></span><span id="proprietary_wireless_mac_layer"></span><span id="PROPRIETARY_WIRELESS_MAC_LAYER"></span>**Camada Mac sem fio proprietária** (180)
+<span id="Proprietary_Wireless_MAC_Layer"></span><span id="proprietary_wireless_mac_layer"></span><span id="PROPRIETARY_WIRELESS_MAC_LAYER"></span>**Camada MAC sem fio proprietária** (180)
 </dt> <dt>
 
-<span id="Proprietary_Wireless_Downstream"></span><span id="proprietary_wireless_downstream"></span><span id="PROPRIETARY_WIRELESS_DOWNSTREAM"></span>**Downstream sem fio patenteado** (181)
+<span id="Proprietary_Wireless_Downstream"></span><span id="proprietary_wireless_downstream"></span><span id="PROPRIETARY_WIRELESS_DOWNSTREAM"></span>**Downstream sem fio proprietário** (181)
 </dt> <dt>
 
-<span id="Proprietary_Wireless_Upstream"></span><span id="proprietary_wireless_upstream"></span><span id="PROPRIETARY_WIRELESS_UPSTREAM"></span>**Upstream sem fio patenteado** (182)
+<span id="Proprietary_Wireless_Upstream"></span><span id="proprietary_wireless_upstream"></span><span id="PROPRIETARY_WIRELESS_UPSTREAM"></span>**Upstream sem fio proprietário** (182)
 </dt> <dt>
 
-<span id="HIPERLAN_Type_2"></span><span id="hiperlan_type_2"></span><span id="HIPERLAN_TYPE_2"></span>**HIPERLAN tipo 2** (183)
+<span id="HIPERLAN_Type_2"></span><span id="hiperlan_type_2"></span><span id="HIPERLAN_TYPE_2"></span>**TIPO HIPERLAN 2** (183)
 </dt> <dt>
 
-<span id="Proprietary_Broadband_Wireless_Access_Point_to_Multipoint"></span><span id="proprietary_broadband_wireless_access_point_to_multipoint"></span><span id="PROPRIETARY_BROADBAND_WIRELESS_ACCESS_POINT_TO_MULTIPOINT"></span>**Ponto de acesso sem fio de banda larga proprietária para MultiPoint** (184)
+<span id="Proprietary_Broadband_Wireless_Access_Point_to_Multipoint"></span><span id="proprietary_broadband_wireless_access_point_to_multipoint"></span><span id="PROPRIETARY_BROADBAND_WIRELESS_ACCESS_POINT_TO_MULTIPOINT"></span>**Ponto de acesso sem fio de banda larga proprietário para multiponto** (184)
 </dt> <dt>
 
-<span id="SONET_Overhead_Channel"></span><span id="sonet_overhead_channel"></span><span id="SONET_OVERHEAD_CHANNEL"></span>**Canal de sobrecarga de SONET** (185)
+<span id="SONET_Overhead_Channel"></span><span id="sonet_overhead_channel"></span><span id="SONET_OVERHEAD_CHANNEL"></span>**Canal de sobrecarga sonet** (185)
 </dt> <dt>
 
-<span id="Digital_Wrapper_Overhead_Channel"></span><span id="digital_wrapper_overhead_channel"></span><span id="DIGITAL_WRAPPER_OVERHEAD_CHANNEL"></span>**Canal de sobrecarga de wrapper digital** (186)
+<span id="Digital_Wrapper_Overhead_Channel"></span><span id="digital_wrapper_overhead_channel"></span><span id="DIGITAL_WRAPPER_OVERHEAD_CHANNEL"></span>**Canal de Sobrecarga do Wrapper Digital** (186)
 </dt> <dt>
 
-<span id="ATM_Adaptation_Layer_2"></span><span id="atm_adaptation_layer_2"></span><span id="ATM_ADAPTATION_LAYER_2"></span>**Camada de adaptação ATM 2** (187)
+<span id="ATM_Adaptation_Layer_2"></span><span id="atm_adaptation_layer_2"></span><span id="ATM_ADAPTATION_LAYER_2"></span>**Camada 2 de adaptação do ATM** (187)
 </dt> <dt>
 
-<span id="Radio_MAC"></span><span id="radio_mac"></span><span id="RADIO_MAC"></span>**Mac de rádio** (188)
+<span id="Radio_MAC"></span><span id="radio_mac"></span><span id="RADIO_MAC"></span>**Radio MAC** (188)
 </dt> <dt>
 
-<span id="ATM_Radio"></span><span id="atm_radio"></span><span id="ATM_RADIO"></span>**Rádio ATM** (189)
+<span id="ATM_Radio"></span><span id="atm_radio"></span><span id="ATM_RADIO"></span>**AtM Radio** (189)
 </dt> <dt>
 
-<span id="Inter_Machine_Trunk"></span><span id="inter_machine_trunk"></span><span id="INTER_MACHINE_TRUNK"></span>**Tronco entre máquinas** (190)
+<span id="Inter_Machine_Trunk"></span><span id="inter_machine_trunk"></span><span id="INTER_MACHINE_TRUNK"></span>**Inter Machine Trunk** (190)
 </dt> <dt>
 
 <span id="MVL_DSL"></span><span id="mvl_dsl"></span>**MVL DSL** (191)
@@ -1523,8 +1523,8 @@ Indica o estado de destino para o qual a instância está em transição. Essa p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

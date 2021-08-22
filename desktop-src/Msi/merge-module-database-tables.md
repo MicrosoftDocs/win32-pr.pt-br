@@ -4,12 +4,12 @@ ms.assetid: 2af6cea0-6d93-4aa5-a708-d305f11986ef
 title: Mesclar tabelas do banco de dados do módulo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a58240c589297cf2540625bc12180252efa42d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 201b4af776ae0b68fd4330dca8240390e5731950fdaba5a734f48d887db5be84
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580636"
 ---
 # <a name="merge-module-database-tables"></a>Mesclar tabelas do banco de dados do módulo
 
@@ -53,7 +53,7 @@ As tabelas ModuleSequence a seguir só ocorrem em módulos de mesclagem.
 | [ModuleAdminExecuteSequence](moduleadminexecutesequence-table.md)     | Mescla ações na [tabela AdminExecuteSequence](adminexecutesequence-table.md).     |
 | [ModuleAdvtUISequence](moduleadvtuisequence-table.md)                 | Não use esta tabela. Para obter detalhes, consulte [tabela AdvtUISequence](advtuisequence-table.md). |
 | [ModuleAdvtExecuteSequence](moduleadvtexecutesequence-table.md)       | Mescla ações na [tabela AdvtExecuteSequence](advtexecutesequence-table.md).       |
-| [ModuleIgnoreTable](moduleignoretable-table.md)                       | Lista as tabelas no módulo que não são mescladas no arquivo. msi.                        |
+| [ModuleIgnoreTable](moduleignoretable-table.md)                       | Lista as tabelas no módulo que não são mescladas no arquivo de .msi.                        |
 | [ModuleInstallUISequence](moduleinstalluisequence-table.md)           | Mescla ações na [tabela InstallUISequence](installuisequence-table.md).           |
 | [ModuleInstallExecuteSequence](moduleinstallexecutesequence-table.md) | Mescla ações na [tabela InstallExecuteSequence](installexecutesequence-table.md). |
 

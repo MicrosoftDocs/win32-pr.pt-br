@@ -1,40 +1,40 @@
 ---
 title: Efeito composto aritmético
-description: Use o efeito de composição aritmética para combinar 2 imagens usando uma soma ponderada de pixels das imagens de entrada.
+description: Use o efeito composto aritmético para combinar duas imagens usando uma soma ponderada de pixels das imagens de entrada.
 ms.assetid: 6EC8CD61-5B51-4A8E-8A61-B291ABB5C5E0
 keywords:
 - efeito composto aritmético
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04c235ecb024c6b9e7adbce31c9f0cd65bc36cdf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e45976d577299bda7dfcef9bf20eff4980cc67ac105cb14fa793065d7ce1857f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641947"
 ---
 # <a name="arithmetic-composite-effect"></a>Efeito composto aritmético
 
-Use o efeito de composição aritmética para combinar 2 imagens usando uma soma ponderada de pixels das imagens de entrada.
+Use o efeito composto aritmético para combinar duas imagens usando uma soma ponderada de pixels das imagens de entrada.
 
 O CLSID para esse efeito é CLSID \_ D2D1ArithmeticComposite.
 
 -   [Fórmula](#formula)
 -   [Imagem de exemplo](#example-image)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Bitmap de saída](#output-bitmap)
 -   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="formula"></a>Fórmula
 
-A fórmula aqui é usada para computar esse efeito.
+A fórmula aqui é usada para calcular esse efeito.
 
-Saída<sub>RGBA</sub> = destino \* de<sub>RGBA</sub> de origem de fonte de software \* <sub>RGBA</sub> + C2 \* origem<sub>RGBA</sub> + C3 \* Destination<sub>RGBA</sub> + C4
+Output<sub>rgba</sub> = C1 \* Source<sub>rgba</sub> \* Destination<sub>rgba</sub> + C2 \* Source<sub>rgba</sub> + C3 \* Destination<sub>rgba</sub> + C4
 
-Onde C1, C2, C3, C4 são os coeficientes que você define.
+Em que C1, C2, C3, C4 são coeficientes definidos.
 
-Os coeficientes mapeiam os valores em um \_ vetor d2d1 \_ 4F (x, y, z, w):
+Os coeficientes são mapeados para os valores em um VECTOR 4F D2D1 \_ \_ (x, y, z, w):
 
 -   x = C1
 -   y = C2
@@ -43,9 +43,9 @@ Os coeficientes mapeiam os valores em um \_ vetor d2d1 \_ 4F (x, y, z, w):
 
 ## <a name="example-image"></a>Imagem de exemplo
 
-Um exemplo simples é adicionar os pixels de origem e de destino. No exemplo, 2 retângulos arredondados são compostos juntos. O retângulo de origem é azul e o destino é vermelho.
+Um exemplo simples é adicionar os pixels de origem e de destino. No exemplo, dois retângulos arredondados são compostos juntos. O retângulo de origem é azul e o destino é vermelho.
 
-A imagem aqui é a saída do efeito composto aritmético com os coeficientes da equação definida com os valores aqui.
+A imagem aqui é a saída do efeito Composição Aritmética com os coeficientes da equação definidos para os valores aqui.
 
 -   C1 = 0
 -   C2 = 1
@@ -54,9 +54,9 @@ A imagem aqui é a saída do efeito composto aritmético com os coeficientes da 
 
 ![uma imagem de exemplo mostrando dois retângulos arredondados do mesmo tamanho que se sobrepõem usando o efeito composto aritmético.](images/arithmetic-50-percent.png)
 
-O resultado é que os valores de pixel para a origem e o destino são adicionados. As regiões onde os retângulos não se sobrepõem aos valores RGBA são todos 0. O local em que os retângulos se sobrepõem a cor é magenta porque os valores R e B estão no máximo.
+O resultado é que os valores de pixel para a origem e o destino são adicionados. As regiões em que os retângulos não se sobrepõem aos valores RGBA são todas 0. Em que os retângulos sobrepõem a cor é magenta porque os valores de R e B estão no máximo.
 
-Aqui está outra imagem de exemplo com código.
+Aqui está outro exemplo de imagem com código.
 
 
 
@@ -65,7 +65,7 @@ Aqui está outra imagem de exemplo com código.
 | ![a primeira imagem de origem antes do efeito.](images/default-before.jpg)    |
 | Antes da imagem 2                                                             |
 | ![a segunda imagem antes do efeito.](images/4-arthimetic-composite2.jpg) |
-| After (após)                                                                      |
+| Depois                                                                      |
 | ![a imagem após a transformação.](images/4-arithmeticcomposite.png)        |
 
 
@@ -88,14 +88,14 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
 
 
 | Nome de exibição e enumeração de índice                                               | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Coeficientes<br/> Coeficientes de prop D2D1 \_ ARITHMETICCOMPOSITE \_ \_<br/> | Os coeficientes da equação usados para compor as duas imagens de entrada. Os coeficientes são sem limite e sem limites. Type é D2D1 \_ vector \_ 4F.<br/> O valor padrão é {1,0 f, 0,0 f, 0,0 f, 0,0 f}.<br/>                                                                                                                                                                                                                                 |
-| ClampOutput<br/> \_Saída d2d1 ARITHMETICCOMPOSITE \_ prop \_ fixe \_<br/> | O efeito coloca valores de cor entre 0 e 1 antes que o efeito passe os valores para o próximo efeito no grafo. <br/> Se você definir isso como verdadeiro, o efeito irá fixe os valores. Se você definir isso como FALSE, o efeito não fixe os valores de cor, mas outros efeitos e a superfície de saída poderão fixe os valores se não forem de precisão alta o suficiente.<br/> O tipo é BOOL.<br/> O valor padrão é FALSE.<br/> |
+| Coeficientes<br/> D2D1 \_ ARITHMETICCOMPOSITE \_ PROP \_ COEFFICIENTS<br/> | Os coeficientes da equação usada para compor as duas imagens de entrada. Os coeficientes são sem unidade e sem limites. O tipo é D2D1 \_ VECTOR \_ 4F.<br/> O valor padrão é {1.0f, 0.0f, 0.0f, 0.0f}.<br/>                                                                                                                                                                                                                                 |
+| ClampOutput<br/> D2D1 \_ ARITHMETICCOMPOSITE \_ PROP FIX \_ \_ OUTPUT<br/> | O efeito fixa valores de cor entre 0 e 1 antes que o efeito passe os valores para o próximo efeito no grafo. <br/> Se você definir isso como TRUE, o efeito fixará os valores. Se você definir isso como FALSE, o efeito não fixará os valores de cor, mas outros efeitos e a superfície de saída poderão fixar os valores se eles não são de precisão suficiente.<br/> O tipo é BOOL.<br/> O valor padrão é FALSE.<br/> |
 
 
 
@@ -105,11 +105,11 @@ m_d2dContext->EndDraw();
 
 O bitmap de saída depende dos valores de coeficiente. Esses são os tamanhos de bitmap de saída possíveis.
 
--   Se C1 for o único coeficiente diferente de zero, o tamanho de saída será a interseção dos retângulos de entrada.
--   Se C2 for o único coeficiente diferente de zero, o tamanho de saída será o tamanho do retângulo de origem.
--   Se C3 for o único coeficiente diferente de zero, o tamanho de saída será o tamanho do retângulo de destino.
--   Se todos os coeficientes forem zero, o tamanho de saída será um retângulo vazio.
--   Para todos os outros valores de coeficiente, o tamanho de saída é a União dos retângulos de entrada.
+-   Se C1 for o único coeficiente não zero, o tamanho da saída será a interseção dos retângulos de entrada.
+-   Se C2 for o único coeficiente não zero, o tamanho da saída será o tamanho do retângulo De origem.
+-   Se C3 for o único coeficiente não zero, o tamanho da saída será o tamanho do retângulo Destino..
+-   Se todos os coeficientes são zero, o tamanho da saída é um retângulo vazio.
+-   Para todos os outros valores de coeficiente, o tamanho da saída é a união dos retângulos de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -117,10 +117,10 @@ O bitmap de saída depende dos valores de coeficiente. Esses são os tamanhos de
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

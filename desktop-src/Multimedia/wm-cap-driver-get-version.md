@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_DRIVER_GET_VERSION (VFW. h)
-description: A \_ \_ mensagem obter versão do driver do WM Cap \_ \_ retorna as informações de versão do driver de captura conectado a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverGetVersion.
+title: WM_CAP_DRIVER_GET_VERSION mensagem (Vfw.h)
+description: A mensagem WM \_ CAP DRIVER GET VERSION retorna as informações de versão do driver de captura conectado a uma \_ janela de \_ \_ captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverGetVersion.
 ms.assetid: 762ebe7e-0d09-46ea-ab17-86061f0bd8f9
 keywords:
-- mensagem de WM_CAP_DRIVER_GET_VERSION Windows multimídia
+- WM_CAP_DRIVER_GET_VERSION mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119687086"
 ---
-# <a name="wm_cap_driver_get_version-message"></a>\_Mensagem de \_ obtenção \_ de \_ versão do driver do WM Cap
+# <a name="wm_cap_driver_get_version-message"></a>Mensagem WM \_ CAP \_ DRIVER GET \_ \_ VERSION
 
-A **mensagem \_ \_ \_ obter \_ versão do driver do WM Cap** retorna as informações de versão do driver de captura conectado a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro [**capDriverGetVersion**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetversion) .
+A **mensagem WM CAP DRIVER GET \_ \_ \_ \_ VERSION** retorna as informações de versão do driver de captura conectado a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a [**macro capDriverGetVersion.**](/windows/desktop/api/Vfw/nf-vfw-capdrivergetversion)
 
 
 ```C++
@@ -38,10 +38,10 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szVer);
 
 <dl> <dt>
 
-<span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
+<span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*Wsize*
 </dt> <dd>
 
-Tamanho, em bytes, do buffer definido pelo aplicativo referenciado por **szVer**.
+Tamanho, em bytes, do buffer definido pelo aplicativo referenciado **por szVer**.
 
 </dd> <dt>
 
@@ -54,11 +54,11 @@ Ponteiro para um buffer definido pelo aplicativo usado para retornar as informa�
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** se a janela de captura não estiver conectada a um driver de captura.
+Retornará **TRUE** se for bem-sucedido **ou FALSE** se a janela de captura não estiver conectada a um driver de captura.
 
 ## <a name="remarks"></a>Comentários
 
-As informações de versão são uma cadeia de texto recuperada da área de recursos do driver. Os aplicativos devem alocar aproximadamente 40 bytes para essa cadeia de caracteres. Se as informações de versão não estiverem disponíveis, uma cadeia de caracteres **nula** será retornada.
+As informações de versão são uma cadeia de caracteres de texto recuperada da área de recursos do driver. Os aplicativos devem alocar aproximadamente 40 bytes para essa cadeia de caracteres. Se as informações de versão não estão disponíveis, uma **cadeia de caracteres NULL** é retornada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ As informações de versão são uma cadeia de texto recuperada da área de recu
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

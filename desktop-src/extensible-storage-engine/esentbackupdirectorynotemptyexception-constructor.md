@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 202761c708e96ac28fb705ad19e53bad60cfe041
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10608d07dae0478a9e79d6813d2a7409bda746df7f917b05b2aed9ea86923055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737416"
 ---
 # <a name="esentbackupdirectorynotemptyexception-constructor"></a>Construtor EsentBackupDirectoryNotEmptyException
 
 Inicializa uma nova instância da classe EsentBackupDirectoryNotEmptyException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentBackupDirectoryNotEmptyException()
 
 [Classe EsentBackupDirectoryNotEmptyException](./esentbackupdirectorynotemptyexception-class.md)
 
-[Membros do EsentBackupDirectoryNotEmptyException](./esentbackupdirectorynotemptyexception-members.md)
+[Membros EsentBackupDirectoryNotEmptyException](./esentbackupdirectorynotemptyexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

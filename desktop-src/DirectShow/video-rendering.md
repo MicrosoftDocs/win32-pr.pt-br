@@ -13,21 +13,21 @@ ms.locfileid: "119650576"
 ---
 # <a name="video-rendering"></a>Renderização de vídeo
 
-Esta seção fornece uma visão geral da renderização de vídeo no DirectShow. Ela contém os seguintes tópicos:
+Esta seção fornece uma visão geral da renderização de vídeo DirectShow. Ela contém os seguintes tópicos:
 
--   [Sobre a renderização de vídeo no DirectShow](about-video-rendering-in-directshow.md)
--   [Escolhendo o processador de vídeo correto](choosing-the-right-renderer.md)
--   [Usando o modo de janela](using-windowed-mode.md)
--   [Usando o modo sem janela](using-windowless-mode.md)
+-   [Sobre a renderização de vídeo DirectShow](about-video-rendering-in-directshow.md)
+-   [Escolhendo o renderador de vídeo certo](choosing-the-right-renderer.md)
+-   [Usando o modo em janelas](using-windowed-mode.md)
+-   [Usando o modo sem janelas](using-windowless-mode.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[tarefas básicas de DirectShow](basic-directshow-tasks.md)
+[Tarefas DirectShow básicas](basic-directshow-tasks.md)
 </dt> <dt>
 
-[Usando o processador de mixagem de vídeo](using-the-video-mixing-renderer.md)
+[Usando o renderador de combinação de vídeo](using-the-video-mixing-renderer.md)
 </dt> </dl>
 
  

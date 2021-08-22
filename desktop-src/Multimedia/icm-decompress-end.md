@@ -1,9 +1,9 @@
 ---
-title: ICM_DECOMPRESS_END mensagem (Vfw.h)
-description: A ICM DECOMPRESS END notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para \_ \_ descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro ICDecompressEnd.
+title: Mensagem de ICM_DECOMPRESS_END (VFW. h)
+description: o ICM \_ descompactar \_ mensagem de término notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro ICDecompressEnd.
 ms.assetid: 16ce2424-9606-455f-afbd-84326457538e
 keywords:
-- ICM_DECOMPRESS_END mensagem Windows Multimídia
+- mensagem de ICM_DECOMPRESS_END Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119691156"
 ---
-# <a name="icm_decompress_end-message"></a>\_ICM Mensagem DECOMPRESS \_ END
+# <a name="icm_decompress_end-message"></a>ICM \_ Descompactar \_ mensagem de término
 
-A **ICM \_ DECOMPRESS \_ END** notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
+o **ICM \_ descompactar \_** mensagem de término notifica um driver de descompactação de vídeo para encerrar a descompactação e liberar recursos alocados para descompactação. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .
 
 
 ```C++
@@ -36,13 +36,13 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará ICERR \_ OK se for bem-sucedido ou se um erro for o contrário.
+Retornará ICERR \_ OK se for bem-sucedido ou um erro de outra forma.
 
 ## <a name="remarks"></a>Comentários
 
-O driver deve liberar todos os recursos alocados para a [**ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
+o driver deve liberar todos os recursos alocados para a [**ICM \_ descompactar \_**](icm-decompress-begin.md) a mensagem de início.
 
-[**ICM \_ DECOMPRESS \_ BEGIN**](icm-decompress-begin.md) e **ICM \_ DECOMPRESS \_ END não** aninham. Se o driver receber ICM **\_ DECOMPRESS \_ BEGIN** antes que a descompactação seja interrompida com **ICM \_ DECOMPRESS \_ END**, ele deverá reiniciar a descompactação com novos parâmetros.
+[**ICM \_ descompactar \_ início**](icm-decompress-begin.md) e **ICM \_ descompactar \_ fim** não aninhar. se o driver receber **ICM \_ descompactar \_ começar** antes que a descompactação seja interrompida com **ICM \_ \_ término da descompactação**, ela deverá reiniciar a descompactação com novos parâmetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ O driver deve liberar todos os recursos alocados para a [**ICM \_ DECOMPRESS \_ 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ O driver deve liberar todos os recursos alocados para a [**ICM \_ DECOMPRESS \_ 
 
 <dl> <dt>
 
-[Gerenciador de Compactação de Vídeo](video-compression-manager.md)
+[Gerenciador de compactação de vídeo](video-compression-manager.md)
 </dt> <dt>
 
 [Mensagens de compactação de vídeo](video-compression-messages.md)

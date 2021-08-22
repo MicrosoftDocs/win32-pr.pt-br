@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f07300f1fe0696e3f53b5db9380126f280dd1fb3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c9b0eead66ec13ca1f003f64eb0ffb0238b430c8c74576884bd54dd8896596e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552986"
 ---
 # <a name="ms-dns-rfc5011-key-rollovers-attribute"></a>atributo ms-DNS-RFC5011-Key-sobreposições
 
@@ -53,7 +53,7 @@ Um atributo que define se a zona DNS deve ou não ser mantida usando os procedim
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

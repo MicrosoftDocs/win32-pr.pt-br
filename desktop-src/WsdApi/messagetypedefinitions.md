@@ -1,7 +1,7 @@
 ---
 description: Gera constantes C para tabelas de esquema XML para tipos de mensagem.
 ms.assetid: 0b322acb-3326-42a2-a852-07251585b314
-title: elemento messageTypeDefinitions
+title: Elemento messageTypeDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7a94fabdd2ceb2d32052a692f6daa1abba0a52f16d5d1b7dd0a4cef07d33de09
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119757076"
 ---
-# <a name="messagetypedefinitions-element"></a>elemento messageTypeDefinitions
+# <a name="messagetypedefinitions-element"></a>Elemento messageTypeDefinitions
 
 Gera constantes C para tabelas de esquema XML para tipos de mensagem.
 
@@ -33,8 +33,8 @@ Não há atributos.
 
 | Elemento                                   | Descrição                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------|
-| [**operacional**](operation.md)<br/> | Especifica uma operação para a qual o código deve ser gerado.<br/> <br/>  |
-| [**portType**](porttype.md)<br/>   | Especifica o tipo de porta para o qual o código deve ser gerado.<br/> <br/> |
+| [**Operação**](operation.md)<br/> | Especifica uma operação para a qual o código deve ser gerado.<br/> <br/>  |
+| [**Porttype**](porttype.md)<br/>   | Especifica o tipo de porta para o qual o código deve ser gerado.<br/> <br/> |
 
 
 
@@ -53,13 +53,13 @@ Não há atributos.
 
 | Elemento                         | Descrição                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Grupo**](file.md)<br/> | Gera um arquivo do gerador de código.<br/> <br/> |
+| [**Arquivo**](file.md)<br/> | Saída de um arquivo do gerador de código.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento é geralmente usado em arquivos de origem C para fornecer as tabelas de esquema declaradas por [**messageTypeDeclarations**](messagetypedeclarations.md).
+Esse elemento geralmente é usado em arquivos de origem C para fornecer as tabelas de esquema declaradas por [**messageTypeDeclarations**](messagetypedeclarations.md).
 
 ## <a name="element-information"></a>Informações do elemento
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7fcb7a3dffd5626bcf8bfc926103951747ee07e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e56b68f893f0669733efc620d4b9fc68446d0f120ae0fa4dfdc4d2a5bc947e86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736026"
 ---
 # <a name="esentdatabasedirtyshutdownexception-class"></a>Classe EsentDatabaseDirtyShutdownException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. DatabaseDirtyShutdown exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  

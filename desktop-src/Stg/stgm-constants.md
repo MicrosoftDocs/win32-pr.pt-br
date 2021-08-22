@@ -29,12 +29,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd283c2dfeddc48b6bd12f8317ec352cb62e4973
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 18248e862c3d5981e9c34b29522b1cd75d2b61cf78a52613b3d28a1d2c98b4fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661966"
 ---
 # <a name="stgm-constants"></a>Constantes STGM
 
@@ -187,20 +187,20 @@ Abre o objeto de armazenamento com acesso exclusivo à versão confirmada mais r
 
 
 
-Indica que um fluxo ou objeto de armazenamento existente deve ser removido antes que o novo objeto o substitua. Um novo objeto será criado quando esse sinalizador for especificado somente se o objeto existente tiver sido removido com êxito.
+Indica que um objeto de armazenamento ou fluxo existente deve ser removido antes que o novo objeto o substitua. Um novo objeto será criado quando esse sinalizador for especificado somente se o objeto existente tiver sido removido com êxito.
 
 Esse sinalizador é usado ao tentar criar:
 
 -   Um objeto de armazenamento em um disco, mas existe um arquivo com esse nome.
 -   Um objeto dentro de um objeto de armazenamento, mas existe um objeto com o nome especificado.
--   Um objeto de matriz de bytes, mas existe um com o nome especificado.
+-   Um objeto de matriz de byte, mas um com o nome especificado existe.
 
-Esse sinalizador não pode ser usado com operações abertas, como [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) ou [**IStorage:: OpenStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream).
+Esse sinalizador não pode ser usado com operações abertas, como [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) [**ou IStorage::OpenStream.**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstream)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_CONVERT"></span><span id="stgm_convert"></span>**STGM \_ converter**
+<span id="STGM_CONVERT"></span><span id="stgm_convert"></span>**STGM \_ CONVERT**
 </dt> <dd> <dl> <dt>
 
 0x00020000L
@@ -208,7 +208,7 @@ Esse sinalizador não pode ser usado com operações abertas, como [**StgOpenSto
 
 
 
-Cria o novo objeto enquanto preserva os dados existentes em um fluxo denominado "conteúdo". No caso de um objeto de armazenamento ou de uma matriz de bytes, os dados antigos são formatados em um fluxo, independentemente de o arquivo ou a matriz de bytes existente atualmente conter um objeto de armazenamento em camadas. Esse sinalizador só pode ser usado ao criar um objeto de armazenamento raiz. Ele não pode ser usado em um objeto de armazenamento; por exemplo, em [**IStorage:: CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream). Também não é válido usar esse sinalizador e o sinalizador **STGM \_ DELETEONRELEASE** simultaneamente.
+Cria o novo objeto preservando os dados existentes em um fluxo chamado "Conteúdo". No caso de um objeto de armazenamento ou uma matriz de byte, os dados antigos são formatados em um fluxo, independentemente de o arquivo ou matriz de byte existente atualmente conter um objeto de armazenamento em camadas. Esse sinalizador só pode ser usado ao criar um objeto de armazenamento raiz. Ele não pode ser usado em um objeto de armazenamento; por exemplo, em [**IStorage::CreateStream.**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream) Também não é válido usar esse sinalizador e o sinalizador **STGM \_ DELETEONRELEASE** simultaneamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -216,30 +216,30 @@ Cria o novo objeto enquanto preserva os dados existentes em um fluxo denominado 
 <span id="STGM_FAILIFTHERE"></span><span id="stgm_failifthere"></span>**STGM \_ FAILIFTHERE**
 </dt> <dd> <dl> <dt>
 
-0x00000000l
+0x0000000L
 </dt> <dt>
 
 
 
-Faz com que a operação de criação falhe se um objeto existente com o nome especificado existir. Nesse caso, **STG \_ E \_ FILEALREADYEXISTS** são retornados. Este é o modo de criação padrão; ou seja, se nenhum outro sinalizador de criação for especificado, **STGM \_ FAILIFTHERE** será implícito.
+Faz com que a operação de criação falhe se houver um objeto existente com o nome especificado. Nesse caso, **STG \_ E \_ FILEALREADYEXISTS** é retornado. Esse é o modo de criação padrão; ou seja, se nenhum outro sinalizador de criação for especificado, **STGM \_ FAILIFTHERE** será implícito.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_DIRECT"></span><span id="stgm_direct"></span>**STGM \_ Direct**
+<span id="STGM_DIRECT"></span><span id="stgm_direct"></span>**STGM \_ DIRECT**
 </dt> <dd> <dl> <dt>
 
-0x00000000l
+0x0000000L
 </dt> <dt>
 
 
 
-Indica que, no modo direto, cada alteração em um elemento de armazenamento ou de fluxo é gravada como ocorre. Esse será o padrão se nem **STGM \_ Direct** nem **STGM \_ transacionado** for especificado.
+Indica que, no modo direto, cada alteração em um elemento de armazenamento ou fluxo é escrita conforme ela ocorre. Esse será o padrão se **STGM \_ DIRECT** nem **STGM \_ TRANSACTED** for especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_TRANSACTED"></span><span id="stgm_transacted"></span>**STGM \_ transacionado**
+<span id="STGM_TRANSACTED"></span><span id="stgm_transacted"></span>**STGM \_ TRANSACTED**
 </dt> <dd> <dl> <dt>
 
 0x00010000L
@@ -247,12 +247,12 @@ Indica que, no modo direto, cada alteração em um elemento de armazenamento ou 
 
 
 
-Indica que, no modo transacionado, as alterações serão armazenadas em buffer e gravadas somente se uma operação de confirmação explícita for chamada. Para ignorar as alterações, chame o método [**REVERT**](/windows/desktop/api/Objidl/nf-objidl-istream-revert) na interface [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream), [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)ou [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) . A implementação do arquivo composto COM do **IStorage** não oferece suporte a fluxos transacionados, o que significa que os fluxos podem ser abertos somente no modo direto, e você não pode reverter alterações para eles, no entanto, há suporte para armazenamentos transacionados. As implementações do sistema de arquivos composto, autônomo e NTFS do [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) da mesma forma não dão suporte a conjuntos de propriedades transacionais e simples porque esses conjuntos de propriedades são armazenados em fluxos. No entanto, a transacção de conjuntos de propriedades não simples, que podem ser criados pela especificação do sinalizador **PROPSETFLAG não \_ simples** no parâmetro *grfFlags* de [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create), tem suporte.
+Indica que, no modo transacionado, as alterações serão armazenados em buffer e gravados somente se uma operação de commit explícita for chamada. Para ignorar as alterações, chame o método [**Revert**](/windows/desktop/api/Objidl/nf-objidl-istream-revert) na interface [**IStream,**](/windows/desktop/api/Objidl/nn-objidl-istream) [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage)ou [**IPropertyStorage.**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) A implementação de arquivo composto COM do **IStorage** não dá suporte a fluxos transacionados, o que significa que os fluxos podem ser abertos somente no modo direto e você não pode reverter alterações neles, no entanto, há suporte para armazenamentos transacionados. O arquivo composto, as implementações do sistema de arquivos autônomo e NTFS [**de IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) da mesma forma não são suportados por conjuntos de propriedades simples transacionados porque esses conjuntos de propriedades são armazenados em fluxos. No entanto, há suporte para a transação de conjuntos de propriedades não simples, que podem ser criados especificando o sinalizador **PROPSETFLAG \_ NONSIMPLE** no parâmetro *grfFlags* [**de IPropertySetStorage::Create.**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_NOSCRATCH"></span><span id="stgm_noscratch"></span>**STGM do \_ zero**
+<span id="STGM_NOSCRATCH"></span><span id="stgm_noscratch"></span>**STGM \_ NOS PIG**
 </dt> <dd> <dl> <dt>
 
 0x00100000L
@@ -260,12 +260,12 @@ Indica que, no modo transacionado, as alterações serão armazenadas em buffer 
 
 
 
-Indica que, no modo transacionado, um arquivo de rascunho temporário geralmente é usado para salvar as modificações até que o método **Commit** seja chamado. Especificar **STGM \_ noscratch** permite que a parte não utilizada do arquivo original seja usada como espaço de trabalho em vez de criar um novo arquivo para essa finalidade. Isso não afeta os dados no arquivo original e, em determinados casos, pode resultar em um desempenho aprimorado. Não é válido especificar esse sinalizador sem especificar também **STGM \_ transacionado**, e esse sinalizador só pode ser usado em uma raiz aberta. Para obter mais informações sobre o modo noscratch, consulte a seção comentários.
+Indica que, no modo transacionado, um arquivo temporário de rascunho geralmente é usado para salvar modificações até que o **método Commit** seja chamado. Especificar **STGM \_ NOSCNCH** permite que a parte não utilizada do arquivo original seja usada como espaço de trabalho em vez de criar um novo arquivo para essa finalidade. Isso não afeta os dados no arquivo original e, em determinados casos, pode resultar em um desempenho aprimorado. Não é válido especificar esse sinalizador sem especificar **também STGM \_ TRANSACTED** e esse sinalizador só pode ser usado em uma raiz aberta. Para obter mais informações sobre o modo NoScrach, consulte a seção Comentários.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_NOSNAPSHOT"></span><span id="stgm_nosnapshot"></span>**STGM \_ NOsnapshot**
+<span id="STGM_NOSNAPSHOT"></span><span id="stgm_nosnapshot"></span>**STGM \_ NOSNAPSHOT**
 </dt> <dd> <dl> <dt>
 
 0x00200000L
@@ -273,12 +273,12 @@ Indica que, no modo transacionado, um arquivo de rascunho temporário geralmente
 
 
 
-Esse sinalizador é usado ao abrir um objeto de armazenamento com **STGM \_ transacionado** e sem **STGM \_ compartilhamento \_ exclusivo** ou **STGM \_ compartilhamento \_ negar \_ gravação**. Nesse caso, especificar **STGM \_ nosnapshot** impede que a implementação fornecida pelo sistema crie uma cópia de instantâneo do arquivo. Em vez disso, as alterações no arquivo são gravadas no final do arquivo. O espaço não utilizado não é recuperado a menos que a consolidação seja executada durante a confirmação, e há apenas um gravador atual no arquivo. Quando o arquivo é aberto no modo sem instantâneo, não é possível executar outra operação aberta sem especificar **STGM \_ nosnapshot**. Esse sinalizador só pode ser usado em uma operação de abertura de raiz. Para obter mais informações sobre o modo nosnapshot, consulte a seção comentários.
+Esse sinalizador é usado ao abrir um objeto de armazenamento **com STGM \_ TRANSACTED** e sem **STGM \_ SHARE \_ EXCLUSIVE** ou **STGM \_ SHARE DENY \_ \_ WRITE**. Nesse caso, especificar **STGM \_ NOSNAPSHOT** impede que a implementação fornecida pelo sistema criar uma cópia de instantâneo do arquivo. Em vez disso, as alterações no arquivo são escritas no final do arquivo. O espaço nãoutilado não é recuperado, a menos que a consolidação seja executada durante a confirmação e haja apenas um autor atual no arquivo. Quando o arquivo é aberto em nenhum modo de instantâneo, outra operação aberta não pode ser executada sem especificar **STGM \_ NOSNAPSHOT**. Esse sinalizador só pode ser usado em uma operação aberta raiz. Para obter mais informações sobre o modo NoSnapshot, consulte a seção Comentários.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_SIMPLE"></span><span id="stgm_simple"></span>**STGM \_ simples**
+<span id="STGM_SIMPLE"></span><span id="stgm_simple"></span>**STGM \_ SIMPLE**
 </dt> <dd> <dl> <dt>
 
 0x08000000L
@@ -291,7 +291,7 @@ Fornece uma implementação mais rápida de um arquivo composto em um caso limit
 
 </dt> </dl> </dd> <dt>
 
-<span id="STGM_DIRECT_SWMR"></span><span id="stgm_direct_swmr"></span>**STGM \_ direto \_ SWMR**
+<span id="STGM_DIRECT_SWMR"></span><span id="stgm_direct_swmr"></span>**STGM \_ DIRECT \_ SWMR**
 </dt> <dd> <dl> <dt>
 
 0x00400000L
@@ -299,7 +299,7 @@ Fornece uma implementação mais rápida de um arquivo composto em um caso limit
 
 
 
-Dá suporte ao modo direto para operações de arquivo de gravador único e multileitura. Para obter mais informações, consulte a seção Comentários.
+Dá suporte ao modo direto para operações de arquivo multireader e single-writer. Para obter mais informações, consulte a seção Comentários.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,18 +312,18 @@ Dá suporte ao modo direto para operações de arquivo de gravador único e mult
 
 
 
-Indica que o arquivo subjacente deve ser destruído automaticamente quando o objeto de armazenamento raiz for liberado. Esse recurso é mais útil para a criação de arquivos temporários. Esse sinalizador só pode ser usado ao criar um objeto raiz, como com [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex). Ele não é válido ao abrir um objeto raiz, como with [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex), ou ao criar ou abrir um subelemento, como com [**IStorage:: CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream). Também não é válido usar esse sinalizador e o \_ sinalizador STGM Convert simultaneamente.
+Indica que o arquivo subjacente deve ser destruído automaticamente quando o objeto de armazenamento raiz for liberado. Esse recurso é mais útil para criar arquivos temporários. Esse sinalizador só pode ser usado ao criar um objeto raiz, como [**com StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex). Ele não é válido ao abrir um objeto raiz, como [**com StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex)ou ao criar ou abrir um subelemento, como com [**IStorage::CreateStream**](/windows/desktop/api/Objidl/nf-objidl-istorage-createstream). Também não é válido usar esse sinalizador e o sinalizador STGM \_ CONVERT simultaneamente.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Você pode combinar esses sinalizadores, mas só pode escolher um sinalizador de cada grupo de sinalizadores relacionados. Normalmente, um sinalizador de cada um dos grupos de acesso e compartilhamento deve ser especificado para todas as funções e métodos que usam essas constantes. Os sinalizadores de outros grupos são opcionais.
+Você pode combinar esses sinalizadores, mas só pode escolher um sinalizador de cada grupo de sinalizadores relacionados. Normalmente, um sinalizador de cada um dos grupos de acesso e compartilhamento deve ser especificado para todas as funções e métodos que usam essas constantes. Sinalizadores de outros grupos são opcionais.
 
-### <a name="transacted-mode"></a>Modo transacionado
+### <a name="transacted-mode"></a>Modo Transacionado
 
-Quando o **sinalizador \_ direto STGM** é especificado, somente uma das seguintes combinações de sinalizadores pode ser especificada nos grupos de acesso e compartilhamento.
+Quando o **sinalizador STGM \_ DIRECT** é especificado, apenas uma das seguintes combinações de sinalizadores pode ser especificada dos grupos de acesso e compartilhamento.
 
 ``` syntax
     STGM_READ      | STGM_SHARE_DENY_WRITE
@@ -337,23 +337,23 @@ Quando o **sinalizador \_ direto STGM** é especificado, somente uma das seguint
     STGM_READ      | STGM_PRIORITY
 ```
 
-Lembre-se de que o modo direto é implícito pela ausência de **STGM \_ transacionada**. Ou seja, se nem **STGM \_ Direct** nem **STGM \_ transacionado** for especificado, **STGM \_ Direct** será assumido.
+Esteja ciente de que o modo direto está implícito pela ausência **de STGM \_ TRANSACTED.** Ou seja, se **STGM \_ DIRECT** nem **STGM \_ TRANSACTED** for especificado, **STGM \_ DIRECT** será presumido.
 
-Quando o **sinalizador \_ transacionado STGM** é especificado, os objetos são criados ou abertos no modo transacionado. Nesse modo, as alterações em um objeto não são mantidas até que sejam confirmadas. Por exemplo, as alterações em um objeto de armazenamento transacionado não são mantidas até que o método [**IStorage:: Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) seja chamado. As alterações nesse objeto de armazenamento serão perdidas se o objeto de armazenamento for liberado (versão final) antes de o método **Commit** ser chamado ou se o método [**IStorage:: Revert**](/windows/desktop/api/Objidl/nf-objidl-istorage-revert) for chamado.
+Quando o **sinalizador \_ TRANSACTED STGM** é especificado, os objetos são criados ou abertos no modo transacionado. Nesse modo, as alterações em um objeto não persistem até que sejam confirmados. Por exemplo, as alterações em um objeto de armazenamento transacionado não são persistentes até que o [**método IStorage::Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) seja chamado. As alterações em tal objeto de armazenamento serão perdidas se o objeto de armazenamento for liberado (versão final) antes que o método **Commit** seja chamado ou se o método [**IStorage::Revert**](/windows/desktop/api/Objidl/nf-objidl-istorage-revert) for chamado.
 
-Quando um objeto é criado ou aberto no modo transacionado, a implementação deve manter os dados originais e as atualizações para esses dados, para que as atualizações possam ser revertidas, se necessário. Normalmente, isso é realizado por meio da gravação de alterações em uma área de rascunho até que elas sejam confirmadas ou pela criação de uma cópia, chamada de instantâneo, dos dados confirmados mais recentemente.
+Quando um objeto é criado ou aberto no modo transacionado, a implementação deve manter os dados originais e as atualizações para esses dados, para que as atualizações possam ser revertidas, se necessário. Normalmente, isso é executado escrevendo alterações em uma área de rascunho até que elas sejam confirmadas ou criando uma cópia, chamada de instantâneo, dos dados confirmados mais recentemente.
 
-Quando um objeto de armazenamento raiz é aberto no modo transacionado, o local e o comportamento dos dados de rascunho e das cópias de instantâneo podem ser controlados para otimizar o desempenho com os sinalizadores **NoSTGMnt \_ noscratch** e **STGM \_ nosnapshot** . (Um objeto de armazenamento raiz é obtido de, por exemplo, a função [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) ; um objeto de armazenamento obtido do método [**IStorage:: OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage) é um objeto de subarmazenamento.) Normalmente, os dados de rascunho e os instantâneos são armazenados em arquivos temporários, separados do armazenamento.
+Quando um objeto de armazenamento raiz é aberto no modo transacionado, o local e o comportamento dos dados de rascunho e as cópias de instantâneo podem ser controlados para otimizar o desempenho com os sinalizadores **STGM \_ NOS PIGCH** e **STGM \_ NOSNAPSHOT.** (Um objeto de armazenamento raiz é obtido de, por exemplo, a função [**StgOpenStorageEx;**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) um objeto de armazenamento obtido do método [**IStorage::OpenStorage**](/windows/desktop/api/Objidl/nf-objidl-istorage-openstorage) é um objeto de substorage.) Normalmente, os dados e instantâneos de rascunho são armazenados em arquivos temporários, separados do armazenamento.
 
-O efeito desses sinalizadores depende do número de leitores e/ou gravadores que acessam o armazenamento raiz.
+O efeito desses sinalizadores depende do número de leitores e/ou de autores que acessam o armazenamento raiz.
 
-No caso de "gravador único", um objeto de armazenamento de modo transacionado é aberto para acesso de gravação e não pode haver nenhum outro acesso ao arquivo. Ou seja, o arquivo é aberto com **STGM \_ transacionado**, acesso de **STGM \_ Write** ou **STGM \_ ReadWrite** e compartilhamento de **STGM \_ compartilhamento \_ exclusivo**. Nesse caso, as alterações no objeto de armazenamento são gravadas na área de rascunho. Quando essas alterações são confirmadas, elas são copiadas para o armazenamento original. Portanto, se nenhuma alteração for realmente feita no objeto de armazenamento, não haverá transferência de dados desnecessária.
+No caso de "single-writer", um objeto de armazenamento de modo transacionado é aberto para acesso de gravação e não pode haver nenhum outro acesso ao arquivo. Ou seja, o arquivo é aberto com **STGM \_ TRANSACTED**, acesso de **STGM \_ WRITE** ou **STGM \_ READWRITE** e compartilhamento de **STGM \_ SHARE \_ EXCLUSIVE.** Nesse caso, as alterações no objeto de armazenamento são escritas na área de rascunho. Quando essas alterações são comprometidas, elas são copiadas para o armazenamento original. Portanto, se nenhuma alteração for realmente feita no objeto de armazenamento, não haverá transferência de dados desnecessária.
 
-No caso de "vários autores", um objeto de armazenamento transacionado é aberto para acesso de gravação, mas é compartilhado no asway como para permitir outros gravadores. Ou seja, o objeto de armazenamento é aberto **com \_ STGM transacionado**, acesso de **STGM \_ Write** ou **STGM \_ ReadWrite** e compartilhamento de **\_ \_ \_ leitura de negação de compartilhamento de STGM**. Se o compartilhamento **de \_ STGM \_ compartilhamento \_** não for especificado, o caso será "vários gravadores, vários leitores". Nesses casos, um instantâneo dos dados originais será feito durante a operação de abertura. Portanto, mesmo que nenhuma alteração seja feita no armazenamento e/ou não seja realmente aberta por outro gravador simultaneamente, a transferência de dados ainda é necessária durante a abertura. Como resultado, o melhor desempenho em tempo de execução pode ser obtido abrindo o objeto de armazenamento nos modos **STGM \_ compartilhamento \_ Deny \_ Write** ou **STGM \_ share \_ exclusivo** . Para obter mais informações sobre como as alterações são confirmadas quando há vários gravadores, consulte [**IStorage:: Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit).
+No caso "multiple-writer", um objeto de armazenamento transacionado é aberto para acesso de gravação, mas é compartilhado de modo a permitir outros autores. Ou seja, o objeto de armazenamento é aberto com **STGM \_ TRANSACTED**, acesso de **STGM \_ WRITE** ou **STGM \_ READWRITE** e compartilhamento de **STGM \_ SHARE DENY \_ \_ READ**. Se o compartilhamento **de STGM \_ SHARE DENY \_ \_ NONE** for especificado, o caso será "multiple-writer, multiple-reader". Nesses casos, um instantâneo dos dados originais será feito durante a operação aberta. Portanto, mesmo que nenhuma alteração seja realmente feita no armazenamento e/ou não seja realmente aberta por outro autor simultaneamente, a transferência de dados ainda será necessária durante a abertura. Como resultado, o melhor desempenho em tempo aberto pode ser obtido abrindo o objeto de armazenamento nos modos **STGM \_ SHARE \_ DENY \_ WRITE** ou **STGM \_ SHARE \_ EXCLUSIVE.** Para obter mais informações sobre como as alterações são comprometidas quando há vários autores, consulte [**IStorage::Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit).
 
-No caso de "gravador único, vários leitores", um objeto de armazenamento transacionado é aberto para acesso de gravação, mas é compartilhado com leitores. Ou seja, o objeto de armazenamento é aberto pelo gravador com **STGM \_ transacionado**, acesso de **STGM \_ ReadWrite** ou **STGM \_ Write** e compartilhamento **de \_ \_ \_ gravação de negação de compartilhamento de STGM**. O armazenamento é aberto por leitores com **STGM \_ transacionado**, acesso de **STGM \_ Read** e compartilhamento de **STGM \_ share \_ Deny \_ None**. Nesse caso, o gravador usa a área de rascunho para armazenar alterações não confirmadas. Como nos casos acima, o leitor incorre em uma penalidade de desempenho em tempo de aberto enquanto uma cópia de instantâneo dos dados é criada.
+No caso "single-writer, multiple-reader", um objeto de armazenamento transacionado é aberto para acesso de gravação, mas é compartilhado com leitores. Ou seja, o objeto de armazenamento é aberto pelo autor com **STGM \_ TRANSACTED**, acesso de **STGM \_ READWRITE** ou **STGM \_ WRITE** e compartilhamento de **STGM \_ SHARE DENY \_ \_ WRITE**. O armazenamento é aberto por leitores com **STGM \_ TRANSACTED**, acesso de **STGM \_ READ** e compartilhamento de **STGM \_ SHARE DENY \_ \_ NONE**. Nesse caso, o autor usa a área de rascunho para armazenar alterações não comprometidas. Como nos casos acima, o leitor incorre em uma penalidade de desempenho em tempo aberto enquanto uma cópia de instantâneo dos dados é criada.
 
-Normalmente, a área de rascunho é um arquivo temporário, separado dos dados originais. Quando as alterações são confirmadas no arquivo original, os dados devem ser transferidos do arquivo temporário. Para evitar essa transferência de dados, o sinalizador **\_ noscratch STGM** pode ser especificado. Quando esse sinalizador é especificado, partes do arquivo de objeto de armazenamento são usadas para a área de rascunho, em vez de um arquivo temporário separado. Como resultado, as alterações de confirmação podem ser executadas rapidamente, pois pouca transferência de dados é necessária. A desvantagem é que o arquivo de armazenamento pode se tornar maior do que seria, pois ele deve ser aumentado para ser grande o suficiente para os dados originais e para a área de rascunho. Para consolidar os dados e remover essa área desnecessária, reabra o armazenamento raiz no modo transacionado, mas sem definir o sinalizador **\_ noscratch STGM** . Em seguida, chame [**IStorage:: Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) com o sinalizador de **\_ consolidação de STGC** definido.
+Normalmente, a área de rascunho é um arquivo temporário, separado dos dados originais. Quando as alterações são comprometidas no arquivo original, os dados devem ser transferidos do arquivo temporário. Para evitar essa transferência de dados, o **sinalizador \_ NOSCNCH STGM** pode ser especificado. Quando esse sinalizador é especificado, partes do arquivo de objeto de armazenamento são usadas para a área de rascunho, em vez de um arquivo temporário separado. Como resultado, as alterações de confirmação podem ser executadas rapidamente, pois pouca transferência de dados é necessária. A desvantagem é que o arquivo de armazenamento pode se tornar maior do que seria, pois ele deve ser aumentado para ser grande o suficiente para os dados originais e para a área de rascunho. Para consolidar os dados e remover essa área desnecessária, reabra o armazenamento raiz no modo transacionado, mas sem definir o sinalizador **\_ noscratch STGM** . Em seguida, chame [**IStorage:: Commit**](/windows/desktop/api/Objidl/nf-objidl-istorage-commit) com o sinalizador de **\_ consolidação de STGC** definido.
 
 A área de instantâneo, como a área de rascunho, também é, normalmente, um arquivo temporário, e isso também pode ser afetado com um sinalizador STGM. Ao especificar o **sinalizador \_ nosnapshot STGM** , um arquivo de instantâneo temporário separado não é criado. Em vez disso, os dados originais nunca são modificados, mesmo se houver um ou mais gravadores por objeto. Quando as alterações são confirmadas, elas são adicionadas ao arquivo, mas os dados originais permanecem intactos. Esse modo aumenta a eficiência, pois reduz o tempo de execução eliminando a necessidade de criar um instantâneo durante a operação de abertura. No entanto, o uso desse modo pode resultar em um arquivo de armazenamento muito grande porque os dados no arquivo nunca podem ser substituídos. Esse não é um limite para o tamanho dos arquivos abertos no modo nosnapshot.
 

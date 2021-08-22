@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a036ba5db5b86ab7c186b25e4d858b1badc60bd0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a5c773379e3b7fa52e2095d8db676dddc081e51806fd8f615d2b3a4b744fea95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706746"
 ---
 # <a name="third-party-security-support-providers-with-credential-guard"></a>Provedores de suporte de segurança de terceiros com o Credential Guard
 
@@ -24,6 +24,6 @@ O Credential Guard não permite que SSPs terceirizados solicitem hashes de senha
 
 Veja [Este artigo](/windows/security/identity-protection/credential-guard/credential-guard) para obter a descrição completa e as atenuações recomendadas.
 
- 
+ 
 
- 
+ 

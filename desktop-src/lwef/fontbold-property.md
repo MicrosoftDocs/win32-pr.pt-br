@@ -4,16 +4,16 @@ description: Propriedade FontBold
 ms.assetid: abf735f9-fea2-4d02-a821-e28583a8bc39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6439a7f6b7d6e3bf67620f27c77ce59f8402ce49
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c58706730c44a90729cb0d2d9f83eb16398b54ddc1072c66fef583d104073164
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105772675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778206"
 ---
 # <a name="fontbold-property"></a>Propriedade FontBold
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna o estilo de fonte exibido atualmente na janela de balão do texto do car
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *"). Balloon. FontBold**
+*agente ***. Caracteres ("**_characterid_*_"). Balloon. FontBold_*
 
 
 
@@ -38,7 +38,7 @@ Retorna o estilo de fonte exibido atualmente na janela de balão do texto do car
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -46,9 +46,9 @@ Retorna o estilo de fonte exibido atualmente na janela de balão do texto do car
 
 O valor padrão das configurações de fonte do balão de palavras de um caractere é definido no editor de caracteres do Microsoft Agent. Além disso, o usuário pode substituir as configurações de fonte para todos os caracteres na folha de propriedades do Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

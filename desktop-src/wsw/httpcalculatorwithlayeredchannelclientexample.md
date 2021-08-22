@@ -1,31 +1,31 @@
 ---
 title: HttpCalculatorWithLayeredChannelClientExample
-description: Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço de calculadora baseado em HTTP usando um canal personalizado. O canal personalizado é um canal em camadas que simplesmente Delega toda a funcionalidade ao canal HTTP existente.
+description: Este exemplo mostra como usar o proxy de serviço para se falar com um serviço de calculadora baseado em HTTP usando um canal personalizado. O canal personalizado é um canal em camadas que simplesmente delega todas as funcionalidades para o canal HTTP existente.
 ms.assetid: 897673df-f3a3-4b38-8b79-c9f1119be6d5
 keywords:
-- HttpCalculatorWithLayeredChannelClientExample nativo – Web-Services
+- HttpCalculatorWithLayeredChannelClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39ad52294b86db729e858564fca557ebb44dc54c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2f5dcd9596eaff10d9415f6ffc1d6ba7a057aa47cc66b5ca2e63fca90ba8675f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105798485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545996"
 ---
 # <a name="httpcalculatorwithlayeredchannelclientexample"></a>HttpCalculatorWithLayeredChannelClientExample
 
-Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço de calculadora baseado em HTTP usando um canal personalizado. O canal personalizado é um canal em camadas que simplesmente Delega toda a funcionalidade ao canal HTTP existente.
+Este exemplo mostra como usar o proxy de serviço para se falar com um serviço de calculadora baseado em HTTP usando um canal personalizado. O canal personalizado é um canal em camadas que simplesmente delega todas as funcionalidades para o canal HTTP existente.
 
--   [HttpCalculatorWithLayeredChannelClient. cpp](#httpcalculatorwithlayeredchannelclientcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
--   [LayeredChannel. h](#layeredchannelh)
--   [LayeredChannel. cpp](#layeredchannelcpp)
+-   [HttpCalculatorWithLayeredChannelClient.cpp](#httpcalculatorwithlayeredchannelclientcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
+-   [LayeredChannel.h](#layeredchannelh)
+-   [LayeredChannel.cpp](#layeredchannelcpp)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorwithlayeredchannelclientcpp"></a>HttpCalculatorWithLayeredChannelClient. cpp
+## <a name="httpcalculatorwithlayeredchannelclientcpp"></a>HttpCalculatorWithLayeredChannelClient.cpp
 
 
 ```C++
@@ -238,7 +238,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -335,7 +335,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="layeredchannelh"></a>LayeredChannel. h
+## <a name="layeredchannelh"></a>LayeredChannel.h
 
 
 ```C++
@@ -368,7 +368,7 @@ extern WS_CUSTOM_CHANNEL_CALLBACKS layeredChannelCallbacks;
 
 
 
-## <a name="layeredchannelcpp"></a>LayeredChannel. cpp
+## <a name="layeredchannelcpp"></a>LayeredChannel.cpp
 
 
 ```C++
@@ -657,9 +657,9 @@ clean:
 
 ```
 
- 
+ 
 
- 
+ 
 
 
 

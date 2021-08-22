@@ -18,9 +18,9 @@ ms.locfileid: "119755956"
 -   [Reinicialização e recuperação de aplicativos](/windows/desktop/Recovery/application-recovery-and-restart-portal)
 -   [Tratamento de erro](/windows/desktop/Debug/error-handling)
 -   [Depuração básica](/windows/desktop/Debug/basic-debugging)
--   [Biblioteca de Ajuda de Depuração](/windows/desktop/Debug/debug-help-library)
+-   [Depurar biblioteca de ajuda](/windows/desktop/Debug/debug-help-library)
 -   [Tratamento de exceções estruturado](/windows/desktop/Debug/structured-exception-handling)
--   [Travessia da cadeia de espera](/windows/desktop/Debug/wait-chain-traversal)
+-   [Passagem de cadeia de espera](/windows/desktop/Debug/wait-chain-traversal)
 -   [Intel AVX](/windows/desktop/Debug/avx-support-portal)
 
  

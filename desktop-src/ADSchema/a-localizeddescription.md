@@ -1,11 +1,11 @@
 ---
 title: Localized-Description atributo
-description: A ID de localização e o nome de exibição de um objeto.
+description: A ID de localização e o Nome de Exibição de um objeto.
 ms.assetid: 22c0df15-8245-49c6-b5ca-57ac48b57c3a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Localized-Description do atributo AD
-- Esquema de AD do atributo localizedDescription
+- Localized-Description atributo AD Schema
+- esquema do AD do atributo localizedDescription
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "119705826"
 ---
 # <a name="localized-description-attribute"></a>Localized-Description atributo
 
-A ID de localização e o nome de exibição de um objeto.
+A ID de localização e o Nome de Exibição de um objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Localized-Description                       |
-| LDAP-Display-Name | localizedDescription                        |
+| Ldap-Display-Name | localizedDescription                        |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.817                      |
-| System-ID-GUID    | d9e18316-8939-11d1-aebc-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | d9e18316-8939-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ A ID de localização e o nome de exibição de um objeto.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A ID de localização e o nome de exibição de um objeto.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A ID de localização e o nome de exibição de um objeto.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 

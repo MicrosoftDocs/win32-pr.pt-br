@@ -18,7 +18,7 @@ A interface [**IBackgroundCopyFile2**](ibackgroundcopyfile2.md) expõe os métod
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [**Método GetFileRanges**](ibackgroundcopyfile2-getfileranges-method.md)
--   [**Método setremotename**](ibackgroundcopyfile2-setremotename-method.md)
+-   [**Método SetRemoteName**](ibackgroundcopyfile2-setremotename-method.md)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PSM_APPLY (Prsht. h)
-description: Simula a seleção do botão aplicar, indicando que uma ou mais páginas foram alteradas e que as alterações precisam ser validadas e registradas.
+title: PSM_APPLY mensagem (Prsht.h)
+description: Simula a seleção do botão Aplicar, indicando que uma ou mais páginas foram alteradas e as alterações precisam ser validadas e registradas.
 ms.assetid: 2948fb66-ad77-4552-88b6-455418515e4c
 keywords:
-- Controles de PSM_APPLY de mensagens do Windows
+- PSM_APPLY controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67d798d4a9a2f780ac81cc84c90a57d0efd4e299
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f753eb2465ec835f467493bdbd83d10b8ba174b11c83abffcb91d20f8beba002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544156"
 ---
-# <a name="psm_apply-message"></a>Mensagem de aplicação de PSM \_
+# <a name="psm_apply-message"></a>Mensagem APPLY do PSM \_
 
-Simula a seleção do botão **aplicar** , indicando que uma ou mais páginas foram alteradas e que as alterações precisam ser validadas e registradas.
+Simula a seleção do botão **Aplicar,** indicando que uma ou mais páginas foram alteradas e as alterações precisam ser validadas e registradas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,16 +43,16 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se todas as páginas forem aplicadas com êxito às alterações ou **false** caso contrário.
+Retornará **TRUE** se todas as páginas aplicarem as alterações com êxito, caso **contrário, FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-A folha de propriedades envia o código de notificação [PSN \_ KILLACTIVE](psn-killactive.md) para a página atual. Se a página atual retornar **false**, a folha de propriedades enviará o código de notificação [PSN \_ aplicar](psn-apply.md) a todas as páginas ativas. Você pode enviar a mensagem de PSM \_ Apply explicitamente ou usando a macro [**PropSheet \_ Apply**](/windows/desktop/api/Prsht/nf-prsht-propsheet_apply) .
+A folha de propriedades envia o [código de notificação \_ KILLACTIVE PSN](psn-killactive.md) para a página atual. Se a página atual retornar **FALSE,** a folha de propriedades enviará o código de notificação [ \_ PSN APPLY](psn-apply.md) para todas as páginas ativas. Você pode enviar a mensagem APPLY do PSM \_ explicitamente ou usando a [**macro PropSheet \_ Apply.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_apply)
 
 > [!Note]  
-> Não há suporte para esta mensagem ao usar o estilo de assistente Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
+> Não há suporte para essa mensagem ao usar o estilo do assistente do Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
 
  
 
@@ -62,9 +62,9 @@ A folha de propriedades envia o código de notificação [PSN \_ KILLACTIVE](psn
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

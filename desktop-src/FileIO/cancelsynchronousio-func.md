@@ -1,7 +1,7 @@
 ---
-description: Marca as operações de e/s síncronas pendentes emitidas pelo thread especificado como canceladas.
+description: Marca as operações de E/S síncronas pendentes emitidas pelo thread especificado como canceladas.
 ms.assetid: f362c8b2-2193-443e-bb69-78f8b4147117
-title: Função CancelSynchronousIo (IoAPI. h)
+title: Função CancelSynchronousIo (IoAPI.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_location:
 - KernelBase.dll
 - MinKernelBase.dll
 - api-ms-win-downlevel-kernel32-l1-1-0.dll
-ms.openlocfilehash: 3e0c1596603ef7c0d13362c2608cc59b88d366fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bdae4682bcbabb09778bdf5f5d3421c16af17587eda72813c9103eb16f7037f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582546"
 ---
 # <a name="cancelsynchronousio-function"></a>Função CancelSynchronousIo
 
-Marca as operações de e/s síncronas pendentes emitidas pelo thread especificado como canceladas.
+Marca as operações de E/S síncronas pendentes emitidas pelo thread especificado como canceladas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,10 +43,10 @@ BOOL WINAPI CancelSynchronousIo(
 
 <dl> <dt>
 
-*hThread* \[ no\]
+*hThread* \[ Em\]
 </dt> <dd>
 
-Um identificador para o thread.
+Um alça para o thread.
 
 </dd> </dl>
 
@@ -54,33 +54,33 @@ Um identificador para o thread.
 
 Se a função for bem-sucedida, o valor retornado será diferente de zero.
 
-Se a função falhar, o valor de retorno será 0 (zero). Para obter informações de erro estendidas, chame a função [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
+Se a função falhar, o valor de retorno será 0 (zero). Para obter informações de erro estendidas, chame a [**função GetLastError.**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 
-Se essa função não puder localizar uma solicitação para cancelar, o valor de retorno será 0 (zero) e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retornará o **erro \_ não \_ encontrado**.
+Se essa função não puder encontrar uma solicitação para cancelar, o valor de retorno será 0 (zero) e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) **retornará ERROR \_ NOT \_ FOUND**.
 
 ## <a name="remarks"></a>Comentários
 
-O chamador deve ter o direito de acesso de [ \_ término de thread](/windows/desktop/ProcThread/thread-security-and-access-rights) .
+O chamador deve ter o [direito de acesso THREAD \_ TERMINATE.](/windows/desktop/ProcThread/thread-security-and-access-rights)
 
-Se houver alguma operação de e/s pendente em andamento para o thread especificado, a função **CancelSynchronousIo** as marcará para cancelamento. A maioria dos tipos de operações pode ser cancelada imediatamente; outras operações podem continuar na conclusão antes de serem realmente canceladas e o chamador é notificado. A função **CancelSynchronousIo** não aguarda a conclusão de todas as operações canceladas. Para obter mais informações, consulte [diretrizes de conclusão/cancelamento de e/s](https://www.microsoft.com/whdc/driver/kernel/iocancel.mspx).
+Se houver operações de E/S pendentes em andamento para o thread especificado, a função **CancelSynchronousIo** as marcará para cancelamento. A maioria dos tipos de operações pode ser cancelada imediatamente; outras operações podem continuar até a conclusão antes que elas sejam realmente canceladas e o chamador seja notificado. A **função CancelSynchronousIo** não aguarda a conclusão de todas as operações canceladas. Para obter mais informações, consulte [Diretrizes de conclusão/cancelamento de E/S.](https://www.microsoft.com/whdc/driver/kernel/iocancel.mspx)
 
-A operação que está sendo cancelada é concluída com um dos três status; Você deve verificar o status de conclusão para determinar o estado de conclusão. Os três status são:
+A operação que está sendo cancelada é concluída com um dos três status; você deve verificar o status de conclusão para determinar o estado de conclusão. Os três status são:
 
--   **A operação foi concluída normalmente.** Isso pode ocorrer mesmo que a operação tenha sido cancelada, porque a solicitação de cancelamento pode não ter sido enviada a tempo para cancelar a operação.
--   **A operação foi cancelada.** A função [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorna a **operação de erro \_ \_ anulada**.
--   **A operação falhou com outro erro.** A função [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorna o código de erro relevante.
+-   **A operação foi concluída normalmente.** Isso pode ocorrer mesmo que a operação tenha sido cancelada, porque a solicitação de cancelamento pode não ter sido enviada a tempo de cancelar a operação.
+-   **A operação foi cancelada.** A [**função GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorna **ERROR OPERATION \_ \_ ABORTED**.
+-   **A operação falhou com outro erro.** A [**função GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retorna o código de erro relevante.
 
-No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguintes tecnologias.
+No Windows 8 e Windows Server 2012, essa função é suportada pelas tecnologias a seguir.
 
 
 
 | Tecnologia                                           | Com suporte      |
 |------------------------------------------------------|----------------|
-| Protocolo SMB (Server Message Block) 3,0<br/>   | Yes<br/> |
-| Failover transparente SMB 3,0 (TFO)<br/>        | Yes<br/> |
-| SMB 3,0 com compartilhamentos de arquivos de escalabilidade horizontal (SO)<br/>   | Yes<br/> |
-| Sistema de arquivos Volume Compartilhado Clusterizado (CsvFS)<br/> | Yes<br/> |
-| ReFS (Sistema de Arquivos Resiliente)<br/>              | Yes<br/> |
+| Protocolo SMB 3.0<br/>   | Sim<br/> |
+| TFO (Failover Transparente) do SMB 3.0<br/>        | Sim<br/> |
+| SMB 3.0 com SO (Compartilhamentos de Arquivos de Escalação Out)<br/>   | Sim<br/> |
+| Volume Compartilhado Clusterizado sistema de arquivos (CsvFS)<br/> | Sim<br/> |
+| ReFS (Sistema de Arquivos Resiliente)<br/>              | Sim<br/> |
 
 
 
@@ -92,9 +92,9 @@ No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguinte
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                                                                                                                                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                                                                                                                                    |
-| parâmetro<br/>                   | <dl> <dt>IoAPI. h (incluir Windows. h); </dt> <dt>Winbase. h no Windows server 2008 R2, Windows 7, Windows server 2008 e Windows Vista (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                                                                                                                                                                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                                                                                                                                    |
+| Cabeçalho<br/>                   | <dl> <dt>IoAPI.h (incluir Windows.h);</dt> <dt>WinBase.h no Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista (inclua Windows.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Kernel32.lib</dt> </dl>                                                                                                                                                                                 |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>                                                                                                                                                                                 |
 
@@ -113,7 +113,7 @@ No Windows 8 e no Windows Server 2012, essa função é suportada pelas seguinte
 [Funções de gerenciamento de arquivos](file-management-functions.md)
 </dt> <dt>
 
-[E/s síncrona e síncrona](synchronous-and-asynchronous-i-o.md)
+[E/S síncrona e assíncrona](synchronous-and-asynchronous-i-o.md)
 </dt> </dl>
 
  

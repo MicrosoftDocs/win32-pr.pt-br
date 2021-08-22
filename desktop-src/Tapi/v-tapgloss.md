@@ -5,12 +5,12 @@ ms.assetid: 945c16bf-e835-4759-93d1-4e27080ac873
 title: V (API de telefonia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bf4eb1a3eb23a4afc5e54b36dfaa5c3b3ab2f3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ae00592faede6c5d3a59d5b9f91b728c4d67cebab9e90bb5e7da1f919d93d79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739126"
 ---
 # <a name="v-telephony-api"></a>V (API de telefonia)
 
@@ -21,7 +21,7 @@ ms.locfileid: "105769396"
 <span id="tapi2.vcomm_tapgloss"></span><span id="TAPI2.VCOMM_TAPGLOSS"></span>**VCOMM**
 </dt> <dd>
 
-Um driver de dispositivo de comunicações na TAPI. VCOMM pode atribuir o modo protegido aos serviços TAPI e permite que aplicativos e drivers do Windows usem portas e modems. Consulte [*Unimodem*](u-tapgloss.md).
+Um driver de dispositivo de comunicações na TAPI. o VCOMM pode atribuir o modo protegido aos serviços TAPI e permite que Windows aplicativos e drivers usem portas e modems. Consulte [*Unimodem*](u-tapgloss.md).
 
 </dd> <dt>
 

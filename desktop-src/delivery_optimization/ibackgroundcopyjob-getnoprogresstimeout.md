@@ -1,11 +1,11 @@
 ---
-title: Método GetNoProgressTimeout de IBackgroundCopyJob (Deliveryoptimization.h)
-description: Recupera o período de tempo que o serviço tenta transferir o arquivo depois que ocorre uma condição de erro transitório. Se houver progresso, o temporizador será redefinido.
+title: Método método ibackgroundcopyjob GetNoProgressTimeout (Deliveryoptimization. h)
+description: Recupera o período de tempo que o serviço tenta transferir o arquivo depois que ocorre uma condição de erro transitória. Se houver um progresso, o temporizador será redefinido.
 ms.assetid: 3C31A15B-62EF-4807-8EC3-78BAEA3E23AE
 keywords:
 - Método GetNoProgressTimeout
-- Método GetNoProgressTimeout, interface IBackgroundCopyJob
-- Interface IBackgroundCopyJob, método GetNoProgressTimeout
+- Método GetNoProgressTimeout, interface método ibackgroundcopyjob
+- Interface método ibackgroundcopyjob, método GetNoProgressTimeout
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119755426"
 ---
-# <a name="ibackgroundcopyjobgetnoprogresstimeout-method"></a>Método IBackgroundCopyJob::GetNoProgressTimeout
+# <a name="ibackgroundcopyjobgetnoprogresstimeout-method"></a>Método método ibackgroundcopyjob:: GetNoProgressTimeout
 
-Recupera o período de tempo que o serviço tenta transferir o arquivo depois que ocorre uma condição de erro transitório. Se houver progresso, o temporizador será redefinido.
+Recupera o período de tempo que o serviço tenta transferir o arquivo depois que ocorre uma condição de erro transitória. Se houver um progresso, o temporizador será redefinido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ HRESULT GetNoProgressTimeout(
 
 <dl> <dt>
 
-*pRetryPeriod* \[ Em\]
+*pRetryPeriod* \[ no\]
 </dt> <dd>
 
-Período de tempo, em segundos, em que o serviço tenta transferir o arquivo após um erro transitório.
+Período de tempo, em segundos, que o serviço tenta transferir o arquivo após ocorrer um erro transitório.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Esse método retorna os seguintes **valores HRESULT,** bem como outros.
+Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 
 
 | Código de retorno                                                                              | Descrição                                     |
 |------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>S_OK****</dt> </dl> | O tempo-out foi recuperado com êxito.<br/> |
+| <dl> <dt>S_OK * * * *</dt> </dl> | O tempo limite foi recuperado com êxito.<br/> |
 
 
 
@@ -70,11 +70,11 @@ Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
-| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob é definido como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
@@ -84,10 +84,10 @@ Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 
 <dl> <dt>
 
-[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
+[**Método ibackgroundcopyjob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob::SetNoProgressTimeout**](ibackgroundcopyjob-setnoprogresstimeout.md)
+[**Método ibackgroundcopyjob:: SetNoProgressTimeout**](ibackgroundcopyjob-setnoprogresstimeout.md)
 </dt> </dl>
 
  

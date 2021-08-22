@@ -1,11 +1,11 @@
 ---
-title: Atributo CRL-Partitioned-Revocation-List
-description: Infraestrutura de Chave Pública \ 8211;listas de revogação.
+title: Atributo CRL-Partitiond-Revocation-List
+description: Listas de revogação da infraestrutura de chave pública \ 8211;.
 ms.assetid: ecee7ee6-21e7-4861-a7f5-5e8e3579978a
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo CRL-Partitioned-Revocation-List
-- Esquema do AD do atributo cRLPartitionedRevocationList
+- CRL-particionado – atributo de lista de revogação – esquema do AD
+- Esquema de AD do atributo cRLPartitionedRevocationList
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119706736"
 ---
-# <a name="crl-partitioned-revocation-list-attribute"></a>Atributo CRL-Partitioned-Revocation-List
+# <a name="crl-partitioned-revocation-list-attribute"></a>Atributo CRL-Partitiond-Revocation-List
 
-Listas de revogação da Infraestrutura de Chave Pública.
+Listas de revogação de infraestrutura de chave pública.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | CRL-Partitioned-Revocation-List                       |
-| Ldap-Display-Name | cRLPartitionedRevocationList                          |
+| CN                | CRL-particionado-lista de revogação                       |
+| LDAP-Display-Name | cRLPartitionedRevocationList                          |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.683                                |
-| System-Id-Guid    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
-| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Listas de revogação da Infraestrutura de Chave Pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| Tem valor único       | Verdadeiro                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No Catálogo Global      | Falso                                                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
+| No catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
+| Classes usadas em        | [**CRL-ponto de distribuição**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Listas de revogação da Infraestrutura de Chave Pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| Tem valor único       | Verdadeiro                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No Catálogo Global      | Falso                                                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
+| No catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
+| Classes usadas em        | [**CRL-ponto de distribuição**](c-crldistributionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Listas de revogação da Infraestrutura de Chave Pública.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| Tem valor único       | Verdadeiro                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No Catálogo Global      | Falso                                                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
+| No catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**CRL-Distribution-Point**](c-crldistributionpoint.md)<br/> |
+| Classes usadas em        | [**CRL-ponto de distribuição**](c-crldistributionpoint.md)<br/> |
 
 
 

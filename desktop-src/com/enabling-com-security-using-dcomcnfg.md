@@ -4,12 +4,12 @@ description: Dcomcnfg.exe fornece uma interface do usuário para modificar certa
 ms.assetid: 9aad6b71-47b8-4377-88e5-f463991d9e86
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c01139584b715fccdad923bc5eb3d6a863a63ef8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9d6161cf7418e7eab705203df51710e789ad2ef7d6843051dd35399fb8388f27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105813227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678686"
 ---
 # <a name="enabling-com-security-using-dcomcnfg"></a>Habilitando a segurança COM usando DCOMCNFG
 
@@ -25,7 +25,7 @@ As etapas executadas para realizar essas tarefas dependem se você está habilit
 > [!Note]  
 > Você deve ser um administrador para executar Dcomcnfg.exe.
 
- 
+ 
 
 Os tópicos a seguir fornecem procedimentos passo a passo sobre como definir a segurança com Dcomcnfg.exe:
 
@@ -42,9 +42,9 @@ Os tópicos a seguir fornecem procedimentos passo a passo sobre como definir a s
 [Desativando a segurança](turning-off-security.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

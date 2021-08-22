@@ -15,12 +15,12 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: 0564f758d47e516873b8df5020f3f03a5bcb0727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58d27b97bb6683f32c145b92c1fda65fe0a786d5cb502e644580b57366119840
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708336"
 ---
 # <a name="peninputpanel-class"></a>Classe PenInputPanel
 
@@ -119,7 +119,7 @@ A classe **PenInputPanel** tem essas propriedades.
 | [**Mantida**](/windows/win32/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_left)<br/>                             | Somente leitura<br/>  | Obtém o local horizontal, ou eixo x, da borda esquerda do objeto **PenInputPanel** , em coordenadas da tela.<br/>                                                   |
 | [**Início**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_top)<br/>                               | Somente leitura<br/>  | Obtém o local vertical, ou eixo y, da borda superior do objeto **PenInputPanel** , em coordenadas da tela.<br/>                                                      |
 | [**VerticalOffset**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_verticaloffset)<br/>         | Leitura/gravação<br/> | Obtém ou define o deslocamento entre a borda horizontal mais próxima do objeto **PenInputPanel** e a borda horizontal mais próxima do controle ao qual ele está anexado.<br/> |
-| [**Visible**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_visible)<br/>                       | Leitura/gravação<br/> | Obtém ou define um valor que indica se o objeto **PenInputPanel** está visível.<br/>                                                                                |
+| [**Visível**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_visible)<br/>                       | Leitura/gravação<br/> | Obtém ou define um valor que indica se o objeto **PenInputPanel** está visível.<br/>                                                                                |
 | [**Largura**](/windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_width)<br/>                           | Somente leitura<br/>  | Obtém a largura do objeto **PenInputPanel** nas coordenadas do cliente.<br/>                                                                                               |
 
 
@@ -136,9 +136,9 @@ Esse objeto pode ser instanciado chamando o método [**CoCreateInstance**](/wind
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b0461b27e43066f32c25663e3b38dab9b3b71b9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fcb531a405f66e39f9821e36f10d3e65e1e8b771472d87d0bce9e415dd672a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653026"
 ---
 # <a name="ivmvirtualmachineremoveactivationvalue-method"></a>Método IVMVirtualMachine:: RemoveActivationValue
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Remove o valor da configuração de ativação especificada para esta máquina virtual.
 
@@ -51,7 +51,7 @@ A chave usada para identificar o valor de ativação, como armazenado no \* arqu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -71,7 +71,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método fornece acesso de baixo nível a qualquer valor de ativação. Ele pode ser usado para remover valores de ativação para chaves definidas pelo cliente. Tenha cuidado ao usar esse método para remover valores de ativação do sistema, já que alguns valores não podem ser alterados enquanto a máquina virtual está em execução. Quando uma máquina virtual é iniciada, uma cópia é feita de seus valores de configuração, que se torna seu conjunto de valores de ativação. Os valores de ativação são mantidos até que a máquina virtual seja desligada ou reiniciada. Observe que o Windows Virtual PC pode usar apenas a configuração para armazenar valores para determinadas chaves, ou seja, o valor de ativação pode nunca ser usado.
+Esse método fornece acesso de baixo nível a qualquer valor de ativação. Ele pode ser usado para remover valores de ativação para chaves definidas pelo cliente. Tenha cuidado ao usar esse método para remover valores de ativação do sistema, já que alguns valores não podem ser alterados enquanto a máquina virtual está em execução. Quando uma máquina virtual é iniciada, uma cópia é feita de seus valores de configuração, que se torna seu conjunto de valores de ativação. Os valores de ativação são mantidos até que a máquina virtual seja desligada ou reiniciada. observe que Windows Virtual PC só pode usar a configuração para armazenar valores para determinadas chaves, ou seja, o valor de ativação pode nunca ser usado.
 
 > [!Note]  
 > A sessão da máquina virtual deve estar em execução antes que qualquer valor de ativação possa ser alterado.
@@ -100,11 +100,11 @@ A cadeia de caracteres de caminho *activationKey* seria especificada da seguinte
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualMachine é definido como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 

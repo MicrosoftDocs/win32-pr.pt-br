@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b23ef846c118c8d0698660175e4be700ea892055
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e35f0c6d044abf7e6c2ce520827ccf81118821178da4006fa18457f39795b325
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924906"
 ---
 # <a name="cim_controller-class-cimwin32-wmi-providers"></a>Classe CIM_Controller (provedores WMI CIMWin32)
 
@@ -102,7 +102,7 @@ A classe do **\_ controlador CIM** tem esses métodos.
 
 | Método                                                                | Descrição                                                                                                                              |
 |:----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**Redefinir**](reset-method-in-class-cim-controller.md)                 | Solicita uma redefinição do dispositivo lógico. Não implementado pelo WMI.<br/>                                                               |
+| [**Definido**](reset-method-in-class-cim-controller.md)                 | Solicita uma redefinição do dispositivo lógico. Não implementado pelo WMI.<br/>                                                               |
 | [**SetPowerState**](setpowerstate-method-in-class-cim-controller.md) | Define o estado de energia desejado para um dispositivo lógico e quando um dispositivo deve ser colocado nesse estado. Não implementado pelo WMI.<br/> |
 
 
@@ -366,7 +366,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="Windows_cannot_load_the_driver_for_this_device."></span><span id="windows_cannot_load_the_driver_for_this_device."></span><span id="WINDOWS_CANNOT_LOAD_THE_DRIVER_FOR_THIS_DEVICE."></span>
 
-**O Windows não pode carregar o driver para este dispositivo.** (2)
+**Windows não pode carregar o driver para este dispositivo.** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -387,7 +387,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="The_driver_for_this_device_needs_a_resource_that_Windows_cannot_manage."></span><span id="the_driver_for_this_device_needs_a_resource_that_windows_cannot_manage."></span><span id="THE_DRIVER_FOR_THIS_DEVICE_NEEDS_A_RESOURCE_THAT_WINDOWS_CANNOT_MANAGE."></span>
 
-**O driver para este dispositivo precisa de um recurso que o Windows não possa gerenciar.** (5)
+**o driver para este dispositivo precisa de um recurso que Windows não pode gerenciar.** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -436,42 +436,42 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="This_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="this_device_cannot_find_enough_free_resources_that_it_can_use."></span><span id="THIS_DEVICE_CANNOT_FIND_ENOUGH_FREE_RESOURCES_THAT_IT_CAN_USE."></span>
 
-**Este dispositivo não pode encontrar recursos livres suficientes que podem ser usados.** 12
+**Este dispositivo não pode encontrar recursos livres suficientes que podem ser usados.** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Windows_cannot_verify_this_device_s_resources."></span><span id="windows_cannot_verify_this_device_s_resources."></span><span id="WINDOWS_CANNOT_VERIFY_THIS_DEVICE_S_RESOURCES."></span>
 
-**O Windows não pode verificar os recursos deste dispositivo.** (13)
+**Windows pode verificar os recursos desse dispositivo.** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="this_device_cannot_work_properly_until_you_restart_your_computer."></span><span id="THIS_DEVICE_CANNOT_WORK_PROPERLY_UNTIL_YOU_RESTART_YOUR_COMPUTER."></span>
 
-**Este dispositivo não funcionará corretamente até que você reinicie o computador.** (14)
+**Esse dispositivo não pode funcionar corretamente até que você reinicie o computador.** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="this_device_is_not_working_properly_because_there_is_probably_a_re-enumeration_problem."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_THERE_IS_PROBABLY_A_RE-ENUMERATION_PROBLEM."></span>
 
-**Este dispositivo não está funcionando corretamente porque provavelmente há um problema de nova enumeração.** (15)
+**Esse dispositivo não está funcionando corretamente porque provavelmente há um problema de nova enumeração.** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="windows_cannot_identify_all_the_resources_this_device_uses."></span><span id="WINDOWS_CANNOT_IDENTIFY_ALL_THE_RESOURCES_THIS_DEVICE_USES."></span>
 
-**O Windows não pode identificar todos os recursos que este dispositivo usa.** (16)
+**Windows pode identificar todos os recursos que esse dispositivo usa.** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_is_asking_for_an_unknown_resource_type."></span><span id="this_device_is_asking_for_an_unknown_resource_type."></span><span id="THIS_DEVICE_IS_ASKING_FOR_AN_UNKNOWN_RESOURCE_TYPE."></span>
 
-**Este dispositivo está solicitando um tipo de recurso desconhecido.** (17)
+**Esse dispositivo está solicitando um tipo de recurso desconhecido.** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -492,56 +492,56 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="Your_registry_might_be_corrupted."></span><span id="your_registry_might_be_corrupted."></span><span id="YOUR_REGISTRY_MIGHT_BE_CORRUPTED."></span>
 
-**O registro pode estar corrompido.** (20)
+**Seu registro pode estar corrompido.** (20)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_does_not_work__see_your_hardware_documentation._Windows_is_removing_this_device."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_does_not_work__see_your_hardware_documentation._windows_is_removing_this_device."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOES_NOT_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION._WINDOWS_IS_REMOVING_THIS_DEVICE."></span>
 
-**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware. O Windows está removendo este dispositivo.** (21)
+**Falha do sistema: tente alterar o driver para este dispositivo. Se isso não funcionar, consulte sua documentação de hardware. Windows está removendo esse dispositivo.** (21)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_is_disabled."></span><span id="this_device_is_disabled."></span><span id="THIS_DEVICE_IS_DISABLED."></span>
 
-**Este dispositivo está desabilitado.** (22)
+**Esse dispositivo está desabilitado.** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="System_failure__Try_changing_the_driver_for_this_device._If_that_doesn_t_work__see_your_hardware_documentation."></span><span id="system_failure__try_changing_the_driver_for_this_device._if_that_doesn_t_work__see_your_hardware_documentation."></span><span id="SYSTEM_FAILURE__TRY_CHANGING_THE_DRIVER_FOR_THIS_DEVICE._IF_THAT_DOESN_T_WORK__SEE_YOUR_HARDWARE_DOCUMENTATION."></span>
 
-**Falha do sistema: Tente alterar o driver deste dispositivo. Se isso não funcionar, consulte a documentação do hardware.** (23)
+**Falha do sistema: tente alterar o driver para este dispositivo. Se isso não funcionar, consulte sua documentação de hardware.** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="this_device_is_not_present__is_not_working_properly__or_does_not_have_all_its_drivers_installed."></span><span id="THIS_DEVICE_IS_NOT_PRESENT__IS_NOT_WORKING_PROPERLY__OR_DOES_NOT_HAVE_ALL_ITS_DRIVERS_INSTALLED."></span>
 
-**Este dispositivo não está presente, não está funcionando corretamente ou não tem todos os drivers instalados.** (24)
+**Esse dispositivo não está presente, não está funcionando corretamente ou não tem todos os drivers instalados.** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-**O Windows ainda está configurando este dispositivo.** (25)
+**Windows ainda está configurando esse dispositivo.** (25)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Windows_is_still_setting_up_this_device."></span><span id="windows_is_still_setting_up_this_device."></span><span id="WINDOWS_IS_STILL_SETTING_UP_THIS_DEVICE."></span>
 
-**O Windows ainda está configurando este dispositivo.** (26)
+**Windows ainda está configurando esse dispositivo.** (26)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_does_not_have_valid_log_configuration."></span><span id="this_device_does_not_have_valid_log_configuration."></span><span id="THIS_DEVICE_DOES_NOT_HAVE_VALID_LOG_CONFIGURATION."></span>
 
-**Este dispositivo não tem uma configuração de log válida.** (27)
+**Esse dispositivo não tem configuração de log válida.** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -555,21 +555,21 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 <span id="This_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="this_device_is_disabled_because_the_firmware_of_the_device_did_not_give_it_the_required_resources."></span><span id="THIS_DEVICE_IS_DISABLED_BECAUSE_THE_FIRMWARE_OF_THE_DEVICE_DID_NOT_GIVE_IT_THE_REQUIRED_RESOURCES."></span>
 
-**Este dispositivo está desabilitado porque o firmware do dispositivo não forneceu os recursos necessários.** (29)
+**Esse dispositivo está desabilitado porque o firmware do dispositivo não lhe deu os recursos necessários.** (29)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_is_using_an_Interrupt_Request__IRQ__resource_that_another_device_is_using."></span><span id="this_device_is_using_an_interrupt_request__irq__resource_that_another_device_is_using."></span><span id="THIS_DEVICE_IS_USING_AN_INTERRUPT_REQUEST__IRQ__RESOURCE_THAT_ANOTHER_DEVICE_IS_USING."></span>
 
-**Este dispositivo está usando um recurso de IRQ (solicitação de interrupção) que outro dispositivo está usando.** (30)
+**Esse dispositivo está usando um recurso IRQ (Solicitação de Interrupção) que outro dispositivo está usando.** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="This_device_is_not_working_properly_because_Windows_cannot_load_the_drivers_required_for_this_device."></span><span id="this_device_is_not_working_properly_because_windows_cannot_load_the_drivers_required_for_this_device."></span><span id="THIS_DEVICE_IS_NOT_WORKING_PROPERLY_BECAUSE_WINDOWS_CANNOT_LOAD_THE_DRIVERS_REQUIRED_FOR_THIS_DEVICE."></span>
 
-**Este dispositivo não está funcionando corretamente porque o Windows não pode carregar os drivers necessários para este dispositivo.** (31)
+**Esse dispositivo não está funcionando corretamente porque Windows pode carregar os drivers necessários para esse dispositivo.** (31)
 
 
 </dt> <dd></dd> </dl>
@@ -579,7 +579,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 **ConfigManagerUserConfig**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -588,9 +588,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Se for **true**, o dispositivo estará usando uma configuração definida pelo usuário.
+Se **TRUE**, o dispositivo está usando uma configuração definida pelo usuário.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -603,12 +603,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -624,13 +624,13 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto.
+Uma descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -639,27 +639,27 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **Chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Endereço ou outras informações de identificação para nomear exclusivamente o dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o erro relatado na propriedade **LastErrorCode** será apagado agora.
+Se **TRUE**, o erro relatado na **propriedade LastErrorCode** agora será limpo.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
@@ -672,58 +672,58 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que fornece informações sobre o erro registrado na propriedade **LastErrorCode** e as ações corretivas a serem executadas.
+Cadeia de caracteres de forma livre que fornece informações sobre o erro registrado na propriedade **LastErrorCode** e ações corretivas a executar.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Código do último erro relatado pelo dispositivo lógico.
+Último código de erro relatado pelo dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **MaxNumberControlled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Porta do barramento DMTF \| 1,9 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Porta do Barramento DMTF \| \| 001.9")
 </dt> </dl>
 
-Número máximo de entidades diretamente endereçáveis com suporte por este controlador. Um valor de 0 deve ser usado se o número for desconhecido ou ilimitado.
+Número máximo de entidades diretamente acessível com suporte por esse controlador. Um valor de 0 deverá ser usado se o número for desconhecido ou ilimitado.
 
 </dd> <dt>
 
@@ -736,12 +736,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -757,26 +757,26 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32")
 </dt> </dl>
 
-Indica o identificador do dispositivo de Plug and Play do Win32 do dispositivo lógico.
+Indica o identificador Plug and Play win32 do dispositivo lógico.
 
 Exemplo: " \* PNP030b"
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os recursos específicos relacionados à energia do dispositivo lógico.
+Indica os recursos específicos relacionados a energia do dispositivo lógico.
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 <dt>
 
@@ -787,7 +787,7 @@ Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
 
 </dt> <dd>
 
-As capacidades relacionadas à energia são desconhecidas.
+As capacidades relacionadas a energia são desconhecidas.
 
 </dd> <dt>
 
@@ -809,7 +809,7 @@ Não há suporte para capacidades relacionadas a energia para este dispositivo.
 
 </dt> <dd>
 
-As capacidades relacionadas à energia foram desabilitadas.
+Capacidades relacionadas a energia foram desabilitadas.
 
 </dd> <dt>
 
@@ -837,34 +837,34 @@ O dispositivo pode alterar seu estado de energia com base no uso ou em outros cr
 
 <span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>
 
-<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Estado de energia configurável** (5)
+<span id="Power_State_Settable"></span><span id="power_state_settable"></span><span id="POWER_STATE_SETTABLE"></span>**Power State Settable** (5)
 
 
 </dt> <dd>
 
-Há suporte para o método **SetPowerState** . Esse método é encontrado na classe pai [**de \_ LogicalDevice CIM**](cim-logicaldevice.md) e pode ser implementado. Para obter mais informações, consulte [Designing formato MOF (MOF) classes](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes).
+Há suporte para o método **SetPowerState.** Esse método é encontrado na classe [**\_ LogicalDevice cim**](cim-logicaldevice.md) pai e pode ser implementado. Para obter mais informações, consulte [Designando classes Managed Object Format (MOF).](/windows/desktop/WmiSdk/designing-managed-object-format--mof--classes)
 
 </dd> <dt>
 
 <span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>
 
-<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Ciclo de energia com suporte** (6)
+<span id="Power_Cycling_Supported"></span><span id="power_cycling_supported"></span><span id="POWER_CYCLING_SUPPORTED"></span>**Power Cycling com suporte** (6)
 
 
 </dt> <dd>
 
-O método **SetPowerState** pode ser invocado com o parâmetro *PowerState* definido como 5 ("ciclo de energia").
+O **método SetPowerState** pode ser invocado com o *parâmetro PowerState* definido como 5 ("Power Cycle").
 
 </dd> <dt>
 
 <span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>
 
-<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Energia cronometrada com suporte** (7)
+<span id="Timed_Power_On_Supported"></span><span id="timed_power_on_supported"></span><span id="TIMED_POWER_ON_SUPPORTED"></span>**Energia com tempo de energia com suporte** (7)
 
 
 </dt> <dd>
 
-O método **SetPowerState** pode ser invocado com o parâmetro *PowerState* definido como 5 ("ciclo de energia") e o parâmetro de *hora* definido como uma data e hora e um intervalo específicos para o Power-on.
+O **método SetPowerState** pode ser invocado com o parâmetro *PowerState*  definido como 5 ("Power Cycle") e o parâmetro Time definido como uma data e hora específicas, ou intervalo, para o power-on.
 
 </dd> </dl>
 
@@ -873,39 +873,39 @@ O método **SetPowerState** pode ser invocado com o parâmetro *PowerState* defi
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, o dispositivo poderá ser gerenciado por energia, ou seja, colocado em um estado de economia de energia. Se **for false**, o valor inteiro 1 ("sem suporte") deverá ser a única entrada na matriz **PowerManagementCapabilities** .
+Se **TRUE**, o dispositivo poderá ser gerenciado por energia, ou seja, colocado em um estado de economia de energia. Se **FALSE**, o valor inteiro 1 ("Sem suporte") deverá ser a única entrada na **matriz PowerManagementCapabilities.**
 
-Essa propriedade não indica se os recursos de gerenciamento de energia estão habilitados no momento ou se estão habilitados, quais recursos têm suporte. Para obter mais informações, consulte a matriz **PowerManagementCapabilities** .
+Essa propriedade não indica se os recursos de gerenciamento de energia estão habilitados no momento ou, se habilitados, quais recursos têm suporte. Para obter mais informações, consulte a **matriz PowerManagementCapabilities.**
 
-Essa propriedade é herdada [**de \_ LogicalDevice CIM**](cim-logicaldevice.md).
+Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](cim-logicaldevice.md)
 
 </dd> <dt>
 
-**ProtocolSupported**
+**Protocolo Compatível**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Porta do barramento DMTF \| 1,2 "," MIF. \|Discos DMTF \| 3,3 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Porta do Barramento DMTF \| \| 001.2", "MIF. Discos DMTF \| \| 003.3")
 </dt> </dl>
 
-O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
+O protocolo usado pelo controlador para acessar dispositivos 'controlados'.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -947,7 +947,7 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="Flexible_Diskette"></span><span id="flexible_diskette"></span><span id="FLEXIBLE_DISKETTE"></span>
 
-**Disquete flexível** (7)
+**Diskette Flexível** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -968,28 +968,28 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="SCSI_Fibre_Channel_Protocol"></span><span id="scsi_fibre_channel_protocol"></span><span id="SCSI_FIBRE_CHANNEL_PROTOCOL"></span>
 
-**Protocolo SCSI Fibre Channel** (10)
+**Protocolo Fibre Channel SCSI** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Bus_Protocol"></span><span id="scsi_serial_bus_protocol"></span><span id="SCSI_SERIAL_BUS_PROTOCOL"></span>
 
-**Protocolo de barramento serial SCSI** (11)
+**Protocolo de Barramento Serial SCSI** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Bus_Protocol-2__1394_"></span><span id="scsi_serial_bus_protocol-2__1394_"></span><span id="SCSI_SERIAL_BUS_PROTOCOL-2__1394_"></span>
 
-**Protocolo de barramento serial SCSI-2 (1394)** (12)
+**Protocolo SCSI serial bus-2 (1394)** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Serial_Storage_Architecture"></span><span id="scsi_serial_storage_architecture"></span><span id="SCSI_SERIAL_STORAGE_ARCHITECTURE"></span>
 
-**Arquitetura de armazenamento Serial SCSI** (13)
+**Arquitetura de Armazenamento serial SCSI** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -1010,7 +1010,7 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="Universal_Serial_Bus"></span><span id="universal_serial_bus"></span><span id="UNIVERSAL_SERIAL_BUS"></span>
 
-**Barramento serial universal** (16)
+**Barramento Serial Universal** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -1066,7 +1066,7 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="VME"></span><span id="vme"></span>
 
-**VM** (24)
+**VME** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -1094,49 +1094,49 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="IEEE_802.3_10BASE5"></span><span id="ieee_802.3_10base5"></span>
 
-**IEEE 802,3 10BASE5** (28)
+**IEEE 802.3 10BASE5** (28)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_10BASE2"></span><span id="ieee_802.3_10base2"></span>
 
-**IEEE 802,3 10Base2** (29)
+**IEEE 802.3 10BASE2** (29)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_1BASE5"></span><span id="ieee_802.3_1base5"></span>
 
-**IEEE 802,3 1BASE5** (30)
+**IEEE 802.3 1BASE5** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_10BROAD36"></span><span id="ieee_802.3_10broad36"></span>
 
-**IEEE 802,3 10BROAD36** (31)
+**IEEE 802.3 10BROAD36** (31)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.3_100BASEVG"></span><span id="ieee_802.3_100basevg"></span>
 
-**IEEE 802,3 100BASEVG** (32)
+**IEEE 802.3 100BASEVG** (32)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_802.5_Token-Ring"></span><span id="ieee_802.5_token-ring"></span><span id="IEEE_802.5_TOKEN-RING"></span>
 
-**Token ring do IEEE 802,5** (33)
+**IEEE 802.5 Token-Ring** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ANSI_X3T9.5_FDDI"></span><span id="ansi_x3t9.5_fddi"></span>
 
-**ANSI X3T 9.5 FDDI** (34)
+**ANSI X3T9.5 FDDI** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -1164,7 +1164,7 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="CMD"></span><span id="cmd"></span>
 
-**Cmd** (38)
+**CMD** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -1192,7 +1192,7 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="Enhanced_ATA_IDE"></span><span id="enhanced_ata_ide"></span><span id="ENHANCED_ATA_IDE"></span>
 
-**ATA/IDE avançado** (42)
+**ATA/IDE aprimorado** (42)
 
 
 </dt> <dd></dd> <dt>
@@ -1206,21 +1206,21 @@ O protocolo usado pelo controlador para acessar os dispositivos ' controlados '.
 
 <span id="TWIRP__two-way_infrared_"></span><span id="twirp__two-way_infrared_"></span><span id="TWIRP__TWO-WAY_INFRARED_"></span>
 
-**TWIRP (infravermelho bidirecional)** (44)
+**TWIRP (com dois vias)** (44)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FIR__fast_infrared_"></span><span id="fir__fast_infrared_"></span><span id="FIR__FAST_INFRARED_"></span>
 
-**Fir (infravermelho rápido)** (45)
+**FIR (fast-ind)** (45)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SIR__serial_infrared_"></span><span id="sir__serial_infrared_"></span><span id="SIR__SERIAL_INFRARED_"></span>
 
-**Sir (infravermelho serial)** (46)
+**SIR (serialmente em série)** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -1243,12 +1243,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "degradado" e "Pred falha". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para inteligente).
+Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "Degradado" e "Pred Fail". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para SMART).
 
-O status não operacional pode incluir "erro", "Iniciando", "parando" e "serviço". O "serviço" pode ser aplicado durante o espelhamento de disco – reprateando, recarregando uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+O status não operacional pode incluir "Erro", "Iniciando", "Parando" e "Serviço". O "Serviço" pode ser aplicado durante a resilvering de espelhamento de disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
 Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 

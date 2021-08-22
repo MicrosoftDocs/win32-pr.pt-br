@@ -1,17 +1,17 @@
 ---
 description: Indica o número de pixels por unidade de resolução na altura da imagem.
 ms.assetid: 51d71fa6-8057-46b6-8427-187a5e69f1f4
-title: System. Image. VerticalResolution
+title: System.Image.VerticalResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f213928068d9e935cdbf408c9cedd984d692415b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5fb04ca0cb52f9bf2ada6b1f3e86ca8d5f64975f4f66c6a0eec14006a4c9769
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105797926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553836"
 ---
-# <a name="systemimageverticalresolution"></a>System. Image. VerticalResolution
+# <a name="systemimageverticalresolution"></a>System.Image.VerticalResolution
 
 Indica o número de pixels por unidade de resolução na altura da imagem.
 
@@ -48,13 +48,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -63,19 +63,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -90,7 +90,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

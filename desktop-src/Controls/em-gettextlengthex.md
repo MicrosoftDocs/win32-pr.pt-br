@@ -3,7 +3,7 @@ title: Mensagem de EM_GETTEXTLENGTHEX (RichEdit. h)
 description: Calcula o comprimento do texto de várias maneiras. Ele é geralmente chamado antes de criar um buffer para receber o texto do controle.
 ms.assetid: 42c89b7b-e48d-4517-9993-ce58ff9e4e40
 keywords:
-- Controles de EM_GETTEXTLENGTHEX de mensagens do Windows
+- controles de Windows de mensagem de EM_GETTEXTLENGTHEX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de2d91674e07ef60c2ce95535983a31cf380f9e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba6cf0a094edc2288dbeae6f735e8c10fb72f943f99f9a41b15fc1ef3136168d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540928"
 ---
 # <a name="em_gettextlengthex-message"></a>\_Mensagem em GETTEXTLENGTHEX
 
@@ -43,7 +43,7 @@ Esse parâmetro não é usado; Ele deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A mensagem retorna o número de **TCHAR** s no controle de edição, dependendo da configuração dos sinalizadores na estrutura [**GETTEXTLENGTHEX**](/windows/desktop/api/Richedit/ns-richedit-gettextlengthex) . Se sinalizadores incompatíveis tiverem sido definidos no membro **flags** , a mensagem retornará E \_ INVALIDARG.
 
@@ -57,9 +57,9 @@ Essa mensagem é uma maneira rápida e fácil de determinar o número de caracte
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

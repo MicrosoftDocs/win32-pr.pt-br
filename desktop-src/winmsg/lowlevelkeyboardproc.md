@@ -32,12 +32,12 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: f33acbb6888bad97a03b610c513cbaf9c3750684
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: 5a9a2a0cb5ccf60fe5cfc9f495b621669ba1d85ca04eeb7ecd345cdc60d48bc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "104007270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548566"
 ---
 # <a name="lowlevelkeyboardproc-function"></a>Função LowLevelKeyboardProc
 
@@ -114,7 +114,7 @@ O procedimento de gancho deve processar uma mensagem em menos tempo que a entrad
 
 O valor está em milissegundos.
 Se o procedimento de gancho atingir o tempo limite, o sistema passará a mensagem para o próximo gancho.
-No entanto, no Windows 7 e posterior, o gancho é removido silenciosamente sem ser chamado.
+no entanto, no Windows 7 e posterior, o gancho é removido silenciosamente sem ser chamado.
 Não há como o aplicativo saber se o gancho foi removido.
 
 Observação: os ganchos de depuração não podem controlar esse tipo de ganchos de teclado de nível baixo.

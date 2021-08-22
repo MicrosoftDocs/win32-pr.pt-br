@@ -4,12 +4,12 @@ ms.assetid: D75F2C7F-AFE6-42AF-A8A2-ED7959B14123
 title: Método SapCreateInstance
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0a15f48f6ad5dcbf4fa8fc9d71815e7f7b3ea58
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a0924199bbfdef2e0e0ba5cb99ef4d39b6bd062adf19c90562c6d63317a10e0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119541466"
 ---
 # <a name="sapcreateinstance-method"></a>Método SapCreateInstance
 
@@ -28,9 +28,9 @@ MSSAPDLLObject* SapCreateInstance();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Ponteiro para um **MSSAPDLLObject**.
+Ponteiro para **um MSSAPDLLObject.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ Ponteiro para um **MSSAPDLLObject**.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Drmv2clt.dll</dt> </dl> |
 
 
@@ -48,7 +48,7 @@ Ponteiro para um **MSSAPDLLObject**.
 
 <dl> <dt>
 
-[APIs estendidas do cliente DRM do Windows Media](/windows/desktop/wmformat/windows-media-drm-client-extended-apis)
+[Windows APIs estendidas do cliente DRM de mídia](/windows/desktop/wmformat/windows-media-drm-client-extended-apis)
 </dt> </dl>
 
  

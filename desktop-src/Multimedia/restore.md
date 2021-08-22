@@ -1,9 +1,9 @@
 ---
-title: comando Restore
-description: O comando Restore copia uma imagem ainda de um arquivo para o buffer de quadros. Esse é o inverso do comando Capture. Dispositivos de vídeo digital reconhecem este comando.
+title: Comando restore
+description: O comando restore copia uma imagem still de um arquivo para o buffer de quadro. Esse é o inverso do comando de captura. Os dispositivos de vídeo digital reconhecem esse comando.
 ms.assetid: e84a478a-3e0f-4767-94d7-eb3c79c31b8b
 keywords:
-- comando restore Windows multimídia
+- comando restore Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -19,11 +19,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119689186"
 ---
-# <a name="restore-command"></a>comando Restore
+# <a name="restore-command"></a>Comando restore
 
-O comando Restore copia uma imagem ainda de um arquivo para o buffer de quadros. Esse é o inverso do comando [Capture](capture.md) . Dispositivos de vídeo digital reconhecem este comando.
+O comando restore copia uma imagem still de um arquivo para o buffer de quadro. Esse é o inverso do comando [de](capture.md) captura. Os dispositivos de vídeo digital reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Um ou mais dos sinalizadores a seguir.
 
 | Valor           | Significado                                                                                                                                                                                                                                                                                                                         |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| no *retângulo*  | Especifica um retângulo relativo à origem do buffer do quadro. O *retângulo* é especificado como *X1 Y1 x2 y2*. As coordenadas *X1 Y1* especificam o canto superior esquerdo e as coordenadas *x2 y2* especificam a largura e a altura. Se esse sinalizador não for usado, a imagem será copiada para o canto superior esquerdo do buffer de quadros.<br/> |
-| de *nome de arquivo* | Especifica o nome de arquivo da imagem a ser relembrado. Esse sinalizador é necessário.                                                                                                                                                                                                                                                                  |
+| retângulo *em*  | Especifica um retângulo relativo à origem do buffer de quadro. O *retângulo* é especificado como *X1 Y1 X2 Y2*. As coordenadas *X1 Y1 especificam* o canto superior esquerdo e as coordenadas *X2 Y2* especificam a largura e a altura. Se esse sinalizador não for usado, a imagem será copiada para o canto superior esquerdo do buffer de quadros.<br/> |
+| de *nome de arquivo* | Especifica o nome do arquivo de imagem a ser lembrado. Esse sinalizador é necessário.                                                                                                                                                                                                                                                                  |
 
 
 
@@ -67,17 +67,17 @@ Um ou mais dos sinalizadores a seguir.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "Notify", "Test" ou uma combinação desses. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify", "test" ou uma combinação deles. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Os dispositivos podem reconhecer uma variedade de formatos de imagem; um bitmap independente de dispositivo Windows é sempre reconhecido.
+Os dispositivos podem reconhecer uma variedade de formatos de imagem; um Windows bitmap independente de dispositivo sempre é reconhecido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,13 +94,13 @@ Os dispositivos podem reconhecer uma variedade de formatos de imagem; um bitmap 
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[captura](capture.md)
+[Capturar](capture.md)
 </dt> </dl>
 
  

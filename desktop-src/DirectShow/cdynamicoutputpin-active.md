@@ -1,7 +1,7 @@
 ---
-description: Método CDynamicOutputPin.Active – o método Ativo notifica o pino de que o filtro agora está ativo.
+description: Método CDynamicOutputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora.
 ms.assetid: c2b8eb54-1bae-4f52-8324-dc70e3cac577
-title: Método CDynamicOutputPin.Active (Amfilter.h)
+title: Método CDynamicOutputPin. Active (Amfilter. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119688976"
 ---
-# <a name="cdynamicoutputpinactive-method"></a>Método CDynamicOutputPin.Active
+# <a name="cdynamicoutputpinactive-method"></a>Método CDynamicOutputPin. active
 
-O `Active` método notifica o pino de que o filtro agora está ativo.
+O `Active` método notifica o PIN de que o filtro está ativo agora.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,14 +42,14 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
+Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                            | Descrição                                                                                                     |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                                                                                             |
-| <dl> <dt>**E \_ FAIL**</dt> </dl> | Falha. [**CDynamicOutputPin::SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) não foi chamado.<br/> |
+| <dl> <dt>**E \_ falha**</dt> </dl> | Falha. [**CDynamicOutputPin:: SetConfigInfo**](cdynamicoutputpin-setconfiginfo.md) não foi chamado.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o [**método CBaseOutputPin::Active.**](cbaseoutputpin-active.md) Ele redefine o [**evento CDynamicOutputPin::m \_ hStopEvent.**](cdynamicoutputpin-m-hstopevent.md) Se o filtro de propriedade não tiver chamado **SetConfigInfo**, esse método retornará E \_ FAIL.
+Esse método substitui o método [**CBaseOutputPin:: active**](cbaseoutputpin-active.md) . Ele redefine o evento [**CDynamicOutputPin:: m \_ hStopEvent**](cdynamicoutputpin-m-hstopevent.md) . Se o filtro proprietário não tiver chamado **SetConfigInfo**, esse método retornará E \_ falhará.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Esse método substitui o [**método CBaseOutputPin::Active.**](cbaseoutputpin-ac
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 

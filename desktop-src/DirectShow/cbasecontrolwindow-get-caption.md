@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b8d743c746f833007d91afd4346f7f48c6218dde
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f05501adbd486eaa60e939aacfdd5896c0fbcae059673029f04fcca8aeb742a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640881"
 ---
 # <a name="cbasecontrolwindowget_caption-method"></a>Método de legenda CBaseControlWindow. get \_
 
@@ -49,13 +49,13 @@ Ponteiro para a legenda da janela atual.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
-A maioria das janelas de nível superior em uma área de trabalho baseada no Windows tem um título (legenda) associado a elas. Essa propriedade pode ser consultada e definida por meio da interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Qualquer conjunto de legendas será visível somente se a janela tiver o \_ estilo de legenda WS aplicado. Se não tiver, a legenda ainda poderá ser definida (e recuperada), embora não seja visível para o usuário.
+a maioria das janelas de nível superior em uma área de trabalho baseada em Windows tem um título (legenda) associado a elas. Essa propriedade pode ser consultada e definida por meio da interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Qualquer conjunto de legendas será visível somente se a janela tiver o \_ estilo de legenda WS aplicado. Se não tiver, a legenda ainda poderá ser definida (e recuperada), embora não seja visível para o usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ A maioria das janelas de nível superior em uma área de trabalho baseada no Win
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

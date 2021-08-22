@@ -1,6 +1,6 @@
 ---
 title: Interface IDODownloadInternal
-description: Usado para obter ou definir propriedades de download estendido.
+description: Usado para obter ou definir propriedades de download estendidas.
 keywords:
 - Interface IDODownloadInternal
 topic_type:
@@ -24,9 +24,9 @@ ms.locfileid: "119755776"
 # <a name="idodownloadinternal-interface"></a>Interface IDODownloadInternal
 
 > [!IMPORTANT]
-> A interface **IDODownloadInternal** foi preterida. Em vez disso, use a interface [IDODownload](../do/nn-do-idodownload.md) .
+> A interface **IDODownloadInternal** foi preterida. Em vez disso, use a interface [IDODownload.](../do/nn-do-idodownload.md)
 
-A interface **IDODownloadInternal** é usada para obter ou definir propriedades de download estendido.
+A **interface IDODownloadInternal** é usada para obter ou definir propriedades de download estendidas.
 
 ## <a name="methods"></a>Métodos
 
@@ -34,13 +34,13 @@ A interface **IDODownloadInternal** tem esses métodos.
 
 | Método | Descrição |
 | ---- |:---- |
-| [IDODownloadInternal::GetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-getpropertyex.md) | Recupera um ponteiro para uma **variante** que contém um valor de propriedade de download estendido específico. |
-| [IDODownloadInternal::SetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-setpropertyex.md) | Define uma propriedade de download estendido. O método aceita um ponteiro para uma **variante** que contém um valor de propriedade específico a ser aplicado ao download. |
+| [IDODownloadInternal::GetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-getpropertyex.md) | Recupera um ponteiro para uma **VARIANT que** contém um valor de propriedade de download estendido específico. |
+| [IDODownloadInternal::SetPropertyEx](./nf-dodownloadinternal-idodownloadinternal-setpropertyex.md) | Define uma propriedade de download estendida. O método aceita um ponteiro para uma **VARIANT** que contém um valor de propriedade específico a ser aplicado ao download. |
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Windows 10, versão 1809 \[ Somente aplicativos Win32\] |
-| **Servidor mínimo com suporte** | Windows Somente aplicativos Win32 do servidor versão 1809 \[\] |
-| **Cabeçalho** | DODownloadInternal. h |
+| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
+| **Cabeçalho** | DODownloadInternal.h |

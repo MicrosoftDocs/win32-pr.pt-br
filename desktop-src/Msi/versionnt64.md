@@ -4,12 +4,12 @@ ms.assetid: 190f8251-a377-4490-9de9-98d149185865
 title: Propriedade VersionNT64
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31f6c0f2037891527f17feba92d7e9c8494aa622
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 285f97a6325df65ace9ff6620489697e6eeeb573761437bd0a826dec4dc31e5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526926"
 ---
 # <a name="versionnt64-property"></a>Propriedade VersionNT64
 
@@ -24,7 +24,7 @@ Por motivos de compatibilidade, a propriedade também [](template-summary.md) se
 
 ## <a name="remarks"></a>Comentários
 
-As expressões condicionais testam o Windows de 64 bits simplesmente usando o nome da propriedade ou verificando a versão usando um operador de comparação.
+As expressões condicionais testam para Windows de 64 bits simplesmente usando o nome da propriedade ou verificando a versão usando um operador de comparação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -32,7 +32,7 @@ As expressões condicionais testam o Windows de 64 bits simplesmente usando o no
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4.0 ou Windows Installer 4.5 no Windows Server 2008 ou Windows Vista. Windows Installer windows server 2003 ou Windows XP Consulte os requisitos de [Windows Installer Run-Time](windows-installer-portal.md) para obter informações sobre o windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou no Windows XP Consulte os Requisitos do Run-Time [Installer Windows](windows-installer-portal.md) para obter informações sobre o Windows service pack mínimo exigido por uma versão do Windows Installer.<br/> |
 
 
 

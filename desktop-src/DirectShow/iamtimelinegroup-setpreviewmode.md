@@ -1,7 +1,7 @@
 ---
-description: O método setvisualizemode define o modo de visualização para o grupo.
+description: O método SetPreviewMode define o modo de visualização para o grupo.
 ms.assetid: 40b7e9ac-30b3-454e-82ac-10ac99f1b86f
-title: 'Método IAMTimelineGroup:: setvisualizemode (QEdit. h)'
+title: Método IAMTimelineGroup::SetPreviewMode (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119756306"
 ---
-# <a name="iamtimelinegroupsetpreviewmode-method"></a>Método IAMTimelineGroup:: SetPreviewMode
+# <a name="iamtimelinegroupsetpreviewmode-method"></a>Método IAMTimelineGroup::SetPreviewMode
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O método setvisualizemode define o modo de visualização para o grupo.
+O método SetPreviewMode define o modo de visualização para o grupo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,25 +48,25 @@ HRESULT SetPreviewMode(
 *fPreview* 
 </dt> <dd>
 
-O modo de visualização. Se for **true**, o grupo estará no modo de visualização. Se for **false**, o grupo estará no modo de criação.
+O modo de visualização. Se **TRUE**, o grupo está no modo de visualização. Se **FALSE**, o grupo está no modo de autor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-No modo de visualização, os quadros são removidos durante efeitos lentos ou transições para manter o vídeo sincronizado com o áudio. O vídeo pode parecer instável como resultado. No modo de criação, cada quadro é renderizado. O modo de criação é apropriado para gravar arquivos; para visualização na tela, o vídeo pode estar fora de sincronia com o áudio.
+No modo de visualização, os quadros são descartados durante efeitos lentos ou transições para manter o vídeo sincronizado com o áudio. O vídeo pode parecer muito ruim como resultado. No modo de autor, cada quadro é renderizado. O modo de autor é apropriado para a escrita de arquivos; para a versão prévia na tela, o vídeo pode estar fora de sincronia com o áudio.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ No modo de visualização, os quadros são removidos durante efeitos lentos ou t
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ No modo de visualização, os quadros são removidos durante efeitos lentos ou t
 
 <dl> <dt>
 
-[**Interface IAMTimelineGroup**](iamtimelinegroup.md)
+[**IAMTimelineGroup Interface**](iamtimelinegroup.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

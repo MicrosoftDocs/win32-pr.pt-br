@@ -1,6 +1,6 @@
 ---
 title: Função WMDRMShutdown (wmdrmsdk. h)
-description: A função WMDRMShutdown libera recursos usados pelas APIs estendidas do cliente DRM do Windows Media.
+description: a função WMDRMShutdown libera recursos usados pelo Windows as APIs estendidas do cliente DRM de mídia.
 ms.assetid: fa99a07a-2f07-464b-b7a2-e8f3110389b5
 keywords:
 - Formato de mídia do Windows da função WMDRMShutdown
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eb49049a593699a4071eefea9c5cf7c61571fc3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f80f0f7264cd0962cb642f0877ccd044e777c3e9f269f87fcffc0037dcc0836d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119930357"
 ---
 # <a name="wmdrmshutdown-function"></a>Função WMDRMShutdown
 
-A função **WMDRMShutdown** libera recursos usados pelas APIs estendidas do cliente DRM do Windows Media.
+a função **WMDRMShutdown** libera recursos usados pelo Windows as APIs estendidas do cliente DRM de mídia.
 
 ## <a name="syntax"></a>Sintaxe
 

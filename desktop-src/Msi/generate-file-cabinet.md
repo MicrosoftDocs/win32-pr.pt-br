@@ -1,19 +1,19 @@
 ---
-description: O arquivo VBScript WiMakCab.vbs é fornecido nos componentes SDK do Windows para os desenvolvedores de Windows Installer. Este exemplo mostra como o script é usado para gerar gabinetes de arquivo de um banco de dados Windows Installer.
+description: o arquivo VBScript WiMakCab.vbs é fornecido nos componentes SDK do Windows para os desenvolvedores de Windows Installer. este exemplo mostra como o script é usado para gerar gabinetes de arquivo de um banco de dados Windows Installer.
 ms.assetid: 26671cb9-a200-4520-8b52-4cff3f71a2f2
 title: Gerar gabinete de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3df2355c247ff602d644d2865ec3b9d9a8447ca4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2ca9e30822d0683aa09dc015ec2fd98d1f598c70e0fd63fd00f66a6bcdf3edf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581486"
 ---
 # <a name="generate-file-cabinet"></a>Gerar gabinete de arquivo
 
-O arquivo VBScript WiMakCab.vbs é fornecido nos [componentes SDK do Windows para os desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Este exemplo mostra como o script é usado para gerar gabinetes de arquivo de um banco de dados Windows Installer.
+o arquivo VBScript WiMakCab.vbs é fornecido nos [componentes SDK do Windows para os desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). este exemplo mostra como o script é usado para gerar gabinetes de arquivo de um banco de dados Windows Installer.
 
 Este exemplo demonstra:
 
@@ -23,11 +23,11 @@ Este exemplo demonstra:
 -   [**Propriedade StringData**](record-stringdata.md) e [**Propriedade IntegerData**](record-integerdata.md) do [**objeto Record**](record-object.md)
 -   [**Método DoAction**](session-doaction.md), a [**Propriedade Property (objeto Session)**](session-session.md)e a [**propriedade Mode**](session-mode.md) do [**objeto Session**](session-object.md)
 
-Você precisará da versão CScript.exe ou WScript.exe do Windows Script Host para usar este exemplo. Para usar CScript.exe para executar este exemplo, digite um comando no prompt de comando usando a sintaxe a seguir. A ajuda será exibida se o primeiro argumento for/? ou se poucos argumentos forem especificados. Para redirecionar a saída para um arquivo, termine a linha de comando com VBS > \[ *caminho para o arquivo* \] . O exemplo retorna um valor de 0 para êxito, 1 se a ajuda for invocada e 2 se o script falhar.
+você precisará da versão CScript.exe ou WScript.exe do Host de Script Windows para usar este exemplo. Para usar CScript.exe para executar este exemplo, digite um comando no prompt de comando usando a sintaxe a seguir. A ajuda será exibida se o primeiro argumento for/? ou se poucos argumentos forem especificados. Para redirecionar a saída para um arquivo, termine a linha de comando com VBS > \[ *caminho para o arquivo* \] . O exemplo retorna um valor de 0 para êxito, 1 se a ajuda for invocada e 2 se o script falhar.
 
 **cscript WiMakCab.vbs \[ caminho para o nome base do banco de dados \] \[ \] \[ locais de origem opcionais\]**
 
-Para gerar um gabinete, Makecab.exe deve estar no caminho. O utilitário Makecab.exe está incluído nos [componentes SDK do Windows para os desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Observe que o exemplo não atualiza a [tabela de mídia](media-table.md) para lidar com vários gabinetes. Para substituir um gabinete incorporado, inclua as opções:/R/C/U/E.
+Para gerar um gabinete, Makecab.exe deve estar no caminho. o utilitário Makecab.exe está incluído nos [componentes SDK do Windows para os desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Observe que o exemplo não atualiza a [tabela de mídia](media-table.md) para lidar com vários gabinetes. Para substituir um gabinete incorporado, inclua as opções:/R/C/U/E.
 
 Especifique o caminho para o banco de dados do instalador. Isso deve estar localizado na raiz da árvore de origem. Especifique o nome base que diferencia maiúsculas de minúsculas para os arquivos de gabinete gerados. Se o tipo de origem for compactado, todos os arquivos serão abertos na raiz. As opções a seguir podem ser especificadas em qualquer ponto na linha de comando.
 
@@ -48,7 +48,7 @@ Especifique o caminho para o banco de dados do instalador. Isso deve estar local
 
  
 
-Para obter exemplos de script adicionais, consulte [Windows Installer exemplos de script](windows-installer-scripting-examples.md). Para utilitários de exemplo que não exigem o Windows Script Host, consulte [Windows Installer ferramentas de desenvolvimento](windows-installer-development-tools.md).
+para obter exemplos de script adicionais, consulte [Windows Installer exemplos de script](windows-installer-scripting-examples.md). para utilitários de exemplo que não exigem Windows Host de Script, consulte [Windows Installer ferramentas de desenvolvimento](windows-installer-development-tools.md).
 
  
 

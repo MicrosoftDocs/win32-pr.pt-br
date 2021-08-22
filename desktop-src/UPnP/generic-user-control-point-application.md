@@ -17,7 +17,7 @@ O aplicativo UCP (ponto de controle de usuário genérico) permite que você des
 
 **Para iniciar o aplicativo UCP genérico**
 
-1.  Crie e configure os exemplos \\ netds \\ upnp \\ GenericUCP CPPdevtype.txt arquivo (ou o arquivo \\devtype.txt \\ \\ VisualBasic) \\ com informações do dispositivo. Esse arquivo permite configurar o UCP genérico para as pesquisas "encontrar por tipo" e "encontrar assíncrono". Cada linha do arquivo deve conter um tipo de dispositivo e a descrição relacionada. Por exemplo:
+1.  Crie e configure os exemplos \\ netds \\ upnp \\ GenericUCP CPPdevtype.txt arquivo (ou o arquivo \\ \\ \\ visualBasic \\devtype.txt) com informações do dispositivo. Esse arquivo permite configurar o UCP genérico para as pesquisas "encontrar por tipo" e "encontrar assíncrono". Cada linha do arquivo deve conter um tipo de dispositivo e a descrição relacionada. Por exemplo:
 
     ``` syntax
     upnp:rootdevice All Root Devices
@@ -28,7 +28,7 @@ O aplicativo UCP (ponto de controle de usuário genérico) permite que você des
 
     Adicione uma linha que contém o tipo de dispositivo e a descrição específicos para cada dispositivo.
 
-2.  Crie e configure os exemplos do arquivo deudn.txt \\ \\ netds upnp GenericUCP (ou o arquivo \\udn.txt \\ \\ VisualBasic) com informações \\ \\ de UDN para seus dispositivos. Esse arquivo permite que você configure o UCP genérico para a pesquisa "encontrar por UDN". Cada linha usa o seguinte formulário:
+2.  Crie e configure os exemplos do arquivo deudn.txt \\ \\ netds upnp \\ GenericUCP CPP (ou o arquivo \\udn.txt \\ VisualBasic) com informações \\ de UDN para seus \\ dispositivos. Esse arquivo permite que você configure o UCP genérico para a pesquisa "encontrar por UDN". Cada linha usa o seguinte formulário:
 
     ``` syntax
     uuid:{7d50b574-4213-4b88-84d9-e5c9241fcb3a}
