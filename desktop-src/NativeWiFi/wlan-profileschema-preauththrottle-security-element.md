@@ -1,5 +1,5 @@
 ---
-description: Especifica o número de tentativas de pré-autenticação para tentar em APs vizinhos.
+description: Especifica o número de tentativas de pré-autenticação para experimentar APs vizinhos.
 ms.assetid: 7e89e962-7544-4efb-9e3c-c108bee22aea
 title: Elemento preAuthThrottle (segurança)
 ms.topic: reference
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 499401affb264238a065c0861f1230f23936206e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bc310d19126a0e4bc9a7e6abf2a6ae1d0eb917cb5f425796d10bee66ea6ebed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064596"
 ---
 # <a name="preauththrottle-security-element"></a>Elemento preAuthThrottle (segurança)
 
-O elemento preAuthThrottle (segurança) especifica o número de tentativas de pré-autenticação para tentar em APs vizinhos. Esse elemento é válido somente para redes definidas por WPA2 com [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) definido como "habilitado". Se **PMKCacheMode** estiver habilitado e esse elemento estiver ausente, o número de tentativas padrão será 3.
+O elemento preAuthThrottle (segurança) especifica o número de tentativas de pré-autenticação para tentar em APs vizinhos. Esse elemento é válido somente para redes definidas pelo WPA2 com [**PMKCacheMode**](wlan-profileschema-pmkcachemode-security-element.md) definido como "habilitado". Se **PMKCacheMode** estiver habilitado e esse elemento estiver ausente, o número de tentativas será padrão como 3.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
+**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para esse elemento.
 
 ``` syntax
 <xs:element name="preAuthThrottle"
@@ -44,7 +44,7 @@ O elemento preAuthThrottle (segurança) especifica o número de tentativas de pr
 </xs:element>
 ```
 
-O elemento é definido pelo elemento [**Security**](wlan-profileschema-security-msm-element.md) .
+O elemento é definido pelo [**elemento de**](wlan-profileschema-security-msm-element.md) segurança.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ O elemento é definido pelo elemento [**Security**](wlan-profileschema-security-
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ O elemento é definido pelo elemento [**Security**](wlan-profileschema-security-
 **Contexto de definição do elemento no esquema**
 </dt> <dt>
 
-[**segurança**](wlan-profileschema-security-msm-element.md)
+[**Segurança**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Possível elemento pai imediato na instância de esquema**
 </dt> <dt>
 
-[**segurança (MSM)**](wlan-profileschema-security-msm-element.md)
+[**security (MSM)**](wlan-profileschema-security-msm-element.md)
 </dt> </dl>
 
  

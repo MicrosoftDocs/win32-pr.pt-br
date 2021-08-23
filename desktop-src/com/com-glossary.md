@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 9e2c56a2-0572-48b6-a2ef-650f1cf1b62e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c12f3c021988f0349d9eaf6a2bdbd9505ca8a6
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 9a0c4c1aa78c81484666311dfcdd6bae8b4e6daaa45581af98f50171f48b4b58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105772974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048504"
 ---
 # <a name="com-glossary"></a>Glossário do COM
 
@@ -236,77 +236,77 @@ Um documento que inclui objetos vinculados ou incorporados, bem como seus própr
 <span id="com.compound_file_gloss"></span><span id="COM.COMPOUND_FILE_GLOSS"></span>**arquivo composto**
 </dt> <dd>
 
-Uma implementação de armazenamento estruturado fornecida por OLE.
+Uma implementação estruturada de Armazenamento OLE.
 
 </dd> <dt>
 
 <span id="com.com_object_gloss"></span><span id="COM.COM_OBJECT_GLOSS"></span>**Objeto COM**
 </dt> <dd>
 
-Um objeto que está de acordo com o Component Object Model OLE (COM). Um objeto COM é uma instância de uma definição de objeto, que especifica os dados do objeto e uma ou mais implementações de interfaces no objeto. Os clientes interagem com um objeto COM somente por meio de suas interfaces.
+Um objeto que está em conformidade com o COM (OLE Component Object Model). Um objeto COM é uma instância de uma definição de objeto, que especifica os dados do objeto e uma ou mais implementações de interfaces no objeto . Os clientes interagem com um objeto COM somente por meio de suas interfaces.
 
 </dd> <dt>
 
 <span id="com.connectable_object_gloss"></span><span id="COM.CONNECTABLE_OBJECT_GLOSS"></span>**objeto conectável**
 </dt> <dd>
 
-Um objeto COM que implementa, no mínimo, a interface [**IConnectionPointContainer**](/windows/desktop/api/OCIdl/nn-ocidl-iconnectionpointcontainer) , para o gerenciamento de objetos de ponto de conexão. Os objetos conectáveis dão suporte à comunicação do servidor para o cliente. Um objeto que pôde ser conectado cria e gerencia um ou mais subobjetos de ponto de conexão, que recebem eventos de interfaces implementadas em outros objetos e os enviam para o cliente.
+Um objeto COM que implementa, no mínimo, a interface [**IConnectionPointContainer**](/windows/desktop/api/OCIdl/nn-ocidl-iconnectionpointcontainer) para o gerenciamento de objetos de ponto de conexão. Objetos conectáveis suportam a comunicação do servidor com o cliente. Um objeto conectável cria e gerencia um ou mais subobjetos de ponto de conexão, que recebem eventos de interfaces implementadas em outros objetos e os enviam para o cliente.
 
 </dd> <dt>
 
 <span id="com.connection_point_object_gloss"></span><span id="COM.CONNECTION_POINT_OBJECT_GLOSS"></span>**objeto de ponto de conexão**
 </dt> <dd>
 
-Um objeto COM que é gerenciado por um objeto que pôde ser conectado e que implementa a interface [**IConnectionPoint**](/windows/desktop/api/OCIdl/nn-ocidl-iconnectionpoint) . Um ou mais objetos de ponto de conexão podem ser criados e gerenciados por um objeto que pode ser conectado. Cada objeto de ponto de conexão gerencia eventos de entrada de uma interface específica em outro objeto e envia esses eventos para o cliente.
+Um objeto COM que é gerenciado por um objeto conectável e que implementa a interface [**IConnectionPoint.**](/windows/desktop/api/OCIdl/nn-ocidl-iconnectionpoint) Um ou mais objetos de ponto de conexão podem ser criados e gerenciados por um objeto conectável. Cada objeto de ponto de conexão gerencia eventos de entrada de uma interface específica em outro objeto e envia esses eventos para o cliente.
 
 </dd> <dt>
 
 <span id="com.container_application_gloss"></span><span id="COM.CONTAINER_APPLICATION_GLOSS"></span>**aplicativo de contêiner**
 </dt> <dd>
 
-Um aplicativo que dá suporte a documentos compostos. O aplicativo de contêiner fornece armazenamento para um objeto incorporado ou vinculado, um site para sua exibição, acesso ao site de exibição e um coletor de consultoria para receber notificações de alterações no objeto.
+Um aplicativo que dá suporte a documentos compostos. O aplicativo de contêiner fornece armazenamento para um objeto inserido ou vinculado, um site para exibição, acesso ao site de exibição e um sink de consultoria para receber notificações de alterações no objeto.
 
 </dd> <dt>
 
-<span id="com.containment_gloss"></span><span id="COM.CONTAINMENT_GLOSS"></span>**contenção**
+<span id="com.containment_gloss"></span><span id="COM.CONTAINMENT_GLOSS"></span>**Contenção**
 </dt> <dd>
 
-Uma técnica de composição para implementar objetos COM. Ele permite que um objeto reutilize algumas ou todas as implementações de interface de um ou mais objetos. O objeto externo atua como um cliente para os outros objetos, delegando a implementação quando quiser usar os serviços de um dos objetos contidos.
+Uma técnica de composição para implementar objetos COM. Ele permite que um objeto reutilizar algumas ou todas as implementações de interface de um ou mais objetos. O objeto externo atua como um cliente para os outros objetos, delegando a implementação quando deseja usar os serviços de um dos objetos contidos.
 
 </dd> <dt>
 
-<span id="com.context_gloss"></span><span id="COM.CONTEXT_GLOSS"></span>**noticioso**
+<span id="com.context_gloss"></span><span id="COM.CONTEXT_GLOSS"></span>**Contexto**
 </dt> <dd>
 
-No COM+, um conjunto de propriedades de tempo de execução associadas a um ou mais objetos COM que são usados para fornecer serviços para esses objetos.
+No COM+, um conjunto de propriedades de tempo de run time associadas a um ou mais objetos COM que são usados para fornecer serviços para esses objetos.
 
 </dd> <dt>
 
-<span id="com.control_gloss"></span><span id="COM.CONTROL_GLOSS"></span>**controlo**
+<span id="com.control_gloss"></span><span id="COM.CONTROL_GLOSS"></span>**Controle**
 </dt> <dd>
 
-Um objeto COM que pode ser inserido e reutilizável que dá suporte ao, no mínimo, à interface [**IOleControl**](/windows/desktop/api/OCIdl/nn-ocidl-iolecontrol) . Normalmente, os controles são associados à interface do usuário. Eles também dão suporte à comunicação com um contêiner e podem ser reutilizados por vários clientes, dependendo dos critérios de licenciamento.
+Um objeto COM inbeddable e reutilizável que dá suporte, no mínimo, à interface [**IOleControl.**](/windows/desktop/api/OCIdl/nn-ocidl-iolecontrol) Os controles normalmente são associados à interface do usuário. Eles também suportam a comunicação com um contêiner e podem ser reutilizados por vários clientes, dependendo dos critérios de licenciamento.
 
 </dd> <dt>
 
 <span id="com.control_container_gloss"></span><span id="COM.CONTROL_CONTAINER_GLOSS"></span>**contêiner de controle**
 </dt> <dd>
 
-Um aplicativo que dá suporte à inserção de controles implementando a interface [**IOleControlSite**](/windows/desktop/api/OCIdl/nn-ocidl-iolecontrolsite) .
+Um aplicativo que dá suporte à incorporação de controles implementando a interface [**IOleControlSite.**](/windows/desktop/api/OCIdl/nn-ocidl-iolecontrolsite)
 
 </dd> <dt>
 
-<span id="com.control_property_gloss"></span><span id="COM.CONTROL_PROPERTY_GLOSS"></span>**Propriedade de controle**
+<span id="com.control_property_gloss"></span><span id="COM.CONTROL_PROPERTY_GLOSS"></span>**propriedade control**
 </dt> <dd>
 
-Uma propriedade de tempo de execução que é exposta e gerenciada pelo próprio controle. Por exemplo, a fonte e o tamanho do texto usados pelo controle são propriedades de controle.
+Uma propriedade de tempo de run time que é exposta e gerenciada pelo próprio controle. Por exemplo, a fonte e o tamanho do texto usados pelo controle são propriedades de controle.
 
 </dd> <dt>
 
-<span id="com.controlling_object_gloss"></span><span id="COM.CONTROLLING_OBJECT_GLOSS"></span>**controlando objeto**
+<span id="com.controlling_object_gloss"></span><span id="COM.CONTROLLING_OBJECT_GLOSS"></span>**controlando o objeto**
 </dt> <dd>
 
-O objeto dentro de um objeto de agregação que controla quais interfaces dentro do objeto de agregação são expostos e que são privados. A interface [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) do objeto de controle é chamada de controle **IUnknown**. As chamadas para métodos **IUnknown** de outros objetos na agregação devem ser passadas para o **IUnknown** de controle.
+O objeto dentro de um objeto agregado que controla quais interfaces dentro do objeto de agregação são expostas e que são privadas. A [**interface IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) do objeto de controle é chamada de **IUnknown de controle.** Chamadas para **métodos IUnknown** de outros objetos na agregação devem ser passadas para **o controlador IUnknown.**
 
 </dd> <dt>
 
@@ -320,48 +320,48 @@ Uma estrutura implementada por um contêiner de controle para gerenciar a exibi�
 <span id="com.data_transfer_object_gloss"></span><span id="COM.DATA_TRANSFER_OBJECT_GLOSS"></span>**objeto de transferência de dados**
 </dt> <dd>
 
-Um objeto que implementa a interface [**IDataObject**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) e contém dados a serem transferidos de um objeto para outro por meio das operações de arrastar e soltar da área de transferência.
+Um objeto que implementa a interface [**IDataObject**](/windows/desktop/api/ObjIdl/nn-objidl-idataobject) e contém dados a serem transferidos de um objeto para outro por meio das operações da Área de Transferência ou do tipo "arrastar e soltar".
 
 </dd> <dt>
 
-<span id="com.default_object_handler_gloss"></span><span id="COM.DEFAULT_OBJECT_HANDLER_GLOSS"></span>**manipulador de objeto padrão**
+<span id="com.default_object_handler_gloss"></span><span id="COM.DEFAULT_OBJECT_HANDLER_GLOSS"></span>**manipulador de objetos padrão**
 </dt> <dd>
 
-Uma DLL fornecida com OLE que atua como um substituto no espaço de processamento do aplicativo de contêiner para o objeto real.
+Uma DLL fornecida com o OLE que atua como um substituto no espaço de processamento do aplicativo de contêiner para o objeto real.
 
-Com o manipulador de objeto padrão, é possível examinar os dados armazenados de um objeto sem realmente ativar o objeto. O manipulador de objetos padrão executa outras tarefas, como a renderização de um objeto de seu estado armazenado em cache quando o objeto é carregado na memória.
+Com o manipulador de objetos padrão, é possível observar os dados armazenados de um objeto sem realmente ativar o objeto. O manipulador de objetos padrão executa outras tarefas, como renderizar um objeto de seu estado armazenado em cache quando o objeto é carregado na memória.
 
 </dd> <dt>
 
 <span id="com.dependent_object_gloss"></span><span id="COM.DEPENDENT_OBJECT_GLOSS"></span>**objeto dependente**
 </dt> <dd>
 
-Um objeto COM que é normalmente inicializado por outro objeto (o objeto de host). Embora o tempo de vida do objeto dependente possa fazer sentido apenas durante o tempo de vida do objeto de host, o objeto de host não funciona como o [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) de controle para o objeto dependente. Por outro lado, um objeto é um objeto agregado quando seu tempo de vida (por meio de sua contagem de referência) é totalmente controlado pelo objeto de gerenciamento.
+Um objeto COM que normalmente é inicializado por outro objeto (o objeto de host). Embora o tempo de vida do objeto dependente só possa fazer sentido durante o tempo de vida do objeto host, o objeto host não funciona como o [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) de controle para o objeto dependente. Por outro lado, um objeto é um objeto agregado quando seu tempo de vida (por meio de sua contagem de referência) é completamente controlado pelo objeto de gerenciamento.
 
 </dd> <dt>
 
 <span id="com.direct_access_mode_gloss"></span><span id="COM.DIRECT_ACCESS_MODE_GLOSS"></span>**modo de acesso direto**
 </dt> <dd>
 
-Um dos dois modos de acesso nos quais um objeto de armazenamento pode ser aberto. No modo direto, todas as alterações são imediatamente confirmadas no objeto de armazenamento raiz.
+Um dos dois modos de acesso nos quais um objeto de armazenamento pode ser aberto. No modo direto, todas as alterações são imediatamente comprometidas com o objeto de armazenamento raiz.
 
 </dd> <dt>
 
-<span id="com.document_object_gloss"></span><span id="COM.DOCUMENT_OBJECT_GLOSS"></span>**objeto Document**
+<span id="com.document_object_gloss"></span><span id="COM.DOCUMENT_OBJECT_GLOSS"></span>**objeto document**
 </dt> <dd>
 
-Um documento OLE que pode exibir uma ou mais exibições ativadas no local de seus dados em um quadro nativo ou estrangeiro, como um navegador, mantendo o controle total sobre a interface do usuário. Além de implementar o documento OLE comum e as interfaces de ativação in-loco, um objeto de documento deve implementar [**IOleDocument**](/windows/desktop/api/DocObj/nn-docobj-ioledocument)e cada uma de suas exibições (na forma de um objeto de exibição de documento) deve implementar [**IOleDocumentView**](/windows/desktop/api/DocObj/nn-docobj-ioledocumentview).
+Um documento OLE que pode exibir uma ou mais exibições ativadas in-locar de seus dados em um quadro nativo ou externo, como um navegador, mantendo o controle total sobre sua interface do usuário. Além de implementar o documento OLE comum e as interfaces de ativação in-locar, um objeto de documento deve implementar [**IOleDocument**](/windows/desktop/api/DocObj/nn-docobj-ioledocument)e cada uma de suas exibições (na forma de um objeto de exibição de documento) deve implementar [**IOleDocumentView**](/windows/desktop/api/DocObj/nn-docobj-ioledocumentview).
 
 </dd> <dt>
 
 <span id="com.document_object_container_gloss"></span><span id="COM.DOCUMENT_OBJECT_CONTAINER_GLOSS"></span>**contêiner de objeto de documento**
 </dt> <dd>
 
-Um aplicativo de contêiner capaz de exibir uma ou mais exibições de um ou mais objetos de documento e gerenciar todos os objetos de documento contidos em um arquivo. Cada objeto de documento é associado a um site de documento, e cada site de documento contém um ou mais sites de exibição de documento correspondentes às exibições com suporte pelo objeto Document. Um contêiner de objeto de documento também inclui um quadro de contêiner, que manipula a negociação de menus e barras de ferramentas e a enumeração de objetos contidos.
+Um aplicativo de contêiner capaz de exibir uma ou mais exibições de um ou mais objetos de documento e de gerenciar todos os objetos de documento contidos em um arquivo. Cada objeto de documento é associado a um site de documentos e cada site de documentos contém um ou mais sites de exibição de documento correspondentes às exibições com suporte pelo objeto de documento. Um contêiner de objeto de documento também inclui um quadro de contêiner, que lida com o menu e a negociação da barra de ferramentas e a enumeração de objetos contidos.
 
 </dd> <dt>
 
-<span id="com.document_object_server_gloss"></span><span id="COM.DOCUMENT_OBJECT_SERVER_GLOSS"></span>**servidor de objeto de documento**
+<span id="com.document_object_server_gloss"></span><span id="COM.DOCUMENT_OBJECT_SERVER_GLOSS"></span>**servidor de objetos de documento**
 </dt> <dd>
 
 Um aplicativo de servidor capaz de fornecer objetos de documento.
@@ -371,56 +371,56 @@ Um aplicativo de servidor capaz de fornecer objetos de documento.
 <span id="com.document_site_gloss"></span><span id="COM.DOCUMENT_SITE_GLOSS"></span>**site do documento**
 </dt> <dd>
 
-Um site do cliente implementado por um contêiner de objeto de documento para gerenciar a exibição e o armazenamento de um objeto de documento. Cada objeto de documento em um contêiner tem um site de documento correspondente.
+Um site de cliente implementado por um contêiner de objeto de documento para gerenciar a exibição e o armazenamento de um objeto de documento. Cada objeto de documento em um contêiner tem um site de documento correspondente.
 
 </dd> <dt>
 
 <span id="com.document_site_object_gloss"></span><span id="COM.DOCUMENT_SITE_OBJECT_GLOSS"></span>**objeto do site do documento**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IOleDocumentSite**](/windows/desktop/api/DocObj/nn-docobj-ioledocumentsite) , além das interfaces de cliente-site usuais (como [**IOleClientSite**](/windows/desktop/api/OleIdl/nn-oleidl-ioleclientsite)).
+Um objeto COM que implementa a interface [**IOleDocumentSite,**](/windows/desktop/api/DocObj/nn-docobj-ioledocumentsite) além das interfaces comuns do site do cliente (como [**IOleClientSite).**](/windows/desktop/api/OleIdl/nn-oleidl-ioleclientsite)
 
 </dd> <dt>
 
 <span id="com.document_view_gloss"></span><span id="COM.DOCUMENT_VIEW_GLOSS"></span>**exibição de documento**
 </dt> <dd>
 
-Uma apresentação específica dos dados de um documento. Um único objeto de documento pode ter uma ou mais exibições, mas uma única exibição de documento pode pertencer a um único objeto de documento.
+Uma apresentação específica dos dados de um documento. Um único objeto de documento pode ter uma ou mais exibições, mas uma única exibição de documento pode pertencer a apenas um objeto de documento.
 
 </dd> <dt>
 
 <span id="com.document_view_object_gloss"></span><span id="COM.DOCUMENT_VIEW_OBJECT_GLOSS"></span>**objeto de exibição de documento**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IOleDocumentView**](/windows/desktop/api/DocObj/nn-docobj-ioledocumentview) e corresponde a uma determinada exibição de documento. Um objeto com várias exibições de documento agrega um objeto de exibição de documento separado para cada exibição.
+Um objeto COM que implementa a interface [**IOleDocumentView**](/windows/desktop/api/DocObj/nn-docobj-ioledocumentview) e corresponde a uma exibição de documento específica. Um objeto com várias exibições de documento agrega um objeto de exibição de documento separado para cada exibição.
 
 </dd> <dt>
 
-<span id="com.document_view_site_gloss"></span><span id="COM.DOCUMENT_VIEW_SITE_GLOSS"></span>**site de exibição de documentos**
+<span id="com.document_view_site_gloss"></span><span id="COM.DOCUMENT_VIEW_SITE_GLOSS"></span>**site de exibição de documento**
 </dt> <dd>
 
-Um objeto agregado por um objeto de site de documento para gerenciar o espaço de exibição para uma exibição específica de um objeto de documento. Em um determinado site de documento, cada exibição de documento tem um site de exibição de documento correspondente.
+Um objeto agregado por um objeto de site de documento para gerenciar o espaço de exibição para uma exibição específica de um objeto de documento. Em um determinado site de documentos, cada exibição de documento tem um site de exibição de documento correspondente.
 
 </dd> <dt>
 
-<span id="com.document_view_site_object_gloss"></span><span id="COM.DOCUMENT_VIEW_SITE_OBJECT_GLOSS"></span>**objeto de site de exibição de documento**
+<span id="com.document_view_site_object_gloss"></span><span id="COM.DOCUMENT_VIEW_SITE_OBJECT_GLOSS"></span>**objeto do site de exibição de documento**
 </dt> <dd>
 
-Um objeto COM que é agregado em um objeto de site de documento e implementa a interface [**IOleInPlaceSite**](/windows/desktop/api/OleIdl/nn-oleidl-ioleinplacesite) e, opcionalmente, a interface [**IContinueCallback**](/windows/desktop/api/DocObj/nn-docobj-icontinuecallback) .
+Um objeto COM que é agregado em um objeto de site de documento e implementa a interface [**IOleInPlaceSite**](/windows/desktop/api/OleIdl/nn-oleidl-ioleinplacesite) e, opcionalmente, a interface [**IContinueCallback.**](/windows/desktop/api/DocObj/nn-docobj-icontinuecallback)
 
 </dd> <dt>
 
 <span id="com.drag_and_drop_gloss"></span><span id="COM.DRAG_AND_DROP_GLOSS"></span>**arrastar e soltar**
 </dt> <dd>
 
-Uma operação na qual o usuário final usa o mouse ou outro dispositivo apontador para mover dados para outro local na mesma janela ou em outra janela.
+Uma operação na qual o usuário final usa o mouse ou outro dispositivo que aponta para mover dados para outro local na mesma janela ou outra janela.
 
 </dd> <dt>
 
 <span id="com.embed_gloss"></span><span id="COM.EMBED_GLOSS"></span>**Incorporar**
 </dt> <dd>
 
-Para inserir um objeto em um documento composto de forma a preservar os formatos de dados nativos a esse objeto e habilitá-lo a ser editado de dentro de seu contêiner usando as ferramentas expostas por seu servidor.
+Para inserir um objeto em um documento composto de modo a preservar os formatos de dados nativos desse objeto e permitir que ele seja editado de dentro de seu contêiner usando ferramentas expostas por seu servidor.
 
 </dd> <dt>
 
@@ -431,98 +431,98 @@ Um objeto cujos dados são armazenados em um documento composto, mas o objeto é
 
 </dd> <dt>
 
-<span id="com.extended_property_gloss"></span><span id="COM.EXTENDED_PROPERTY_GLOSS"></span>**Propriedade estendida**
+<span id="com.extended_property_gloss"></span><span id="COM.EXTENDED_PROPERTY_GLOSS"></span>**propriedade estendida**
 </dt> <dd>
 
-Uma propriedade de tempo de execução, como a posição e o tamanho de um controle, que um usuário presumiria ser exposto pelo controle, mas é exposto e gerenciado pelo contêiner.
+Uma propriedade de tempo de run-time, como a posição e o tamanho de um controle, que um usuário supõe que seja exposta pelo controle, mas é exposta e gerenciada pelo contêiner.
 
 </dd> <dt>
 
-<span id="com.file_moniker_gloss"></span><span id="COM.FILE_MONIKER_GLOSS"></span>**moniker do arquivo**
+<span id="com.file_moniker_gloss"></span><span id="COM.FILE_MONIKER_GLOSS"></span>**moniker de arquivo**
 </dt> <dd>
 
-Um moniker com base em um caminho no sistema de arquivos. Os identificadores de arquivo podem ser usados para identificar objetos que são salvos em seus próprios arquivos. Um moniker de arquivo é um objeto COM que dá suporte à implementação fornecida pelo sistema da interface [**IMoniker**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) para a classe File moniker.
+Um moniker baseado em um caminho no sistema de arquivos. Monikers de arquivo podem ser usados para identificar objetos que são salvos em seus próprios arquivos. Um moniker de arquivo é um objeto COM que dá suporte à implementação fornecida pelo sistema da interface [**IMoniker**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) para a classe de moniker de arquivo.
 
 </dd> <dt>
 
-<span id="com.font_object_gloss"></span><span id="COM.FONT_OBJECT_GLOSS"></span>**objeto de fonte**
+<span id="com.font_object_gloss"></span><span id="COM.FONT_OBJECT_GLOSS"></span>**objeto font**
 </dt> <dd>
 
-Um objeto COM que fornece acesso a fontes Graphics Device Interface (GDI) implementando a interface [**IFont**](/windows/desktop/api/OCIdl/nn-ocidl-ifont) .
+Um objeto COM que fornece acesso a Graphics Device Interface (GDI) implementando a interface [**IFont.**](/windows/desktop/api/OCIdl/nn-ocidl-ifont)
 
 </dd> <dt>
 
 <span id="com.format_identifier_gloss"></span><span id="COM.FORMAT_IDENTIFIER_GLOSS"></span>**identificador de formato**
 </dt> <dd>
 
-Um GUID que identifica uma propriedade persistente definida. Também conhecido como FMTID.
+Um GUID que identifica um conjunto de propriedades persistente. Também conhecido como FMTID.
 
 </dd> <dt>
 
-<span id="com.frame_gloss"></span><span id="COM.FRAME_GLOSS"></span>**quadro**
+<span id="com.frame_gloss"></span><span id="COM.FRAME_GLOSS"></span>**Quadro**
 </dt> <dd>
 
-A parte de um aplicativo de contêiner responsável por negociar menus, teclas de aceleração, barras de ferramentas e outros elementos de interface do usuário compartilhados com um objeto COM inserido ou um objeto de documento.
+A parte de um aplicativo de contêiner responsável por negociar menus, teclas de acelerador, barras de ferramentas e outros elementos de interface do usuário compartilhados com um objeto COM inserido ou um objeto de documento.
 
 </dd> <dt>
 
-<span id="com.frame_object_gloss"></span><span id="COM.FRAME_OBJECT_GLOSS"></span>**objeto de quadro**
+<span id="com.frame_object_gloss"></span><span id="COM.FRAME_OBJECT_GLOSS"></span>**objeto frame**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IOleInPlaceFrame**](/windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceframe) e, opcionalmente, a interface [**IOleCommandTarget**](/windows/desktop/api/DocObj/nn-docobj-iolecommandtarget) .
+Um objeto COM que implementa a interface [**IOleInPlaceFrame**](/windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceframe) e, opcionalmente, a interface [**IOleCommandTarget.**](/windows/desktop/api/DocObj/nn-docobj-iolecommandtarget)
 
 </dd> <dt>
 
 <span id="com.generic_composite_moniker_gloss"></span><span id="COM.GENERIC_COMPOSITE_MONIKER_GLOSS"></span>**moniker composto genérico**
 </dt> <dd>
 
-Uma coleção sequenciada de monikers, começando com um moniker de arquivo para fornecer o caminho de nível de documento e continuando com um ou mais monikers de item que, como um todo, identifica exclusivamente um objeto.
+Uma coleção sequenciada de monikers, começando com um moniker de arquivo para fornecer o caminho no nível do documento e continuar com um ou mais monikers de item que, tirados como um todo, identificam exclusivamente um objeto.
 
 </dd> <dt>
 
 <span id="com.helper_function_gloss"></span><span id="COM.HELPER_FUNCTION_GLOSS"></span>**função auxiliar**
 </dt> <dd>
 
-Uma função que encapsula chamadas para outras funções e métodos de interface publicamente disponíveis no SDK do OLE. As funções auxiliares são uma maneira conveniente de chamar sequências usadas com frequência de chamadas de função e de método que realizam tarefas comuns.
+Uma função que encapsula chamadas para outras funções e métodos de interface disponíveis publicamente no SDK do OLE. As funções auxiliares são uma maneira conveniente de chamar sequências usadas com frequência de chamadas de função e método que realizem tarefas comuns.
 
 </dd> <dt>
 
-<span id="com.host_object_gloss"></span><span id="COM.HOST_OBJECT_GLOSS"></span>**objeto de host**
+<span id="com.host_object_gloss"></span><span id="COM.HOST_OBJECT_GLOSS"></span>**objeto host**
 </dt> <dd>
 
-Um objeto COM que forma uma relação hierárquica com um ou mais objetos COM, conhecidos como objetos dependentes. Normalmente, o objeto de host instancia os objetos dependentes e sua existência faz sentido dentro do tempo de vida do objeto de host. No entanto, o objeto de host não funciona como o [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) de controle para os objetos dependentes, nem é delegado diretamente às implementações de interface desses objetos.
+Um objeto COM que forma uma relação hierárquica com um ou mais outros objetos COM, conhecidos como objetos dependentes. Normalmente, o objeto host instancia os objetos dependentes e sua existência só faz sentido dentro do tempo de vida do objeto host. No entanto, o objeto host não atua como o [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) de controle para os objetos dependentes, nem delega diretamente às implementações de interface desses objetos.
 
 </dd> <dt>
 
-<span id="com.hresult_gloss"></span><span id="COM.HRESULT_GLOSS"></span>**RESULTADO**
+<span id="com.hresult_gloss"></span><span id="COM.HRESULT_GLOSS"></span>**Hresult**
 </dt> <dd>
 
-Um identificador de resultado opaco definido como zero para um retorno bem-sucedido de uma função e diferente de zero se as informações de erro ou de status forem retornadas.
+Um handle de resultado opaco definido como zero para um retorno bem-sucedido de uma função e diferente de zero se informações de erro ou status são retornadas.
 
 </dd> <dt>
 
-<span id="com.hyperlink_object_gloss"></span><span id="COM.HYPERLINK_OBJECT_GLOSS"></span>**objeto de hiperlink**
+<span id="com.hyperlink_object_gloss"></span><span id="COM.HYPERLINK_OBJECT_GLOSS"></span>**objeto hyperlink**
 </dt> <dd>
 
-Um objeto COM que implementa, no mínimo, a interface [**IHlink**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767974(v=vs.85)) e atua como um link para um objeto em outro local (o destino). Um hiperlink é composto de quatro partes: um moniker que identifica o local do destino; uma cadeia de caracteres para o local dentro do destino; um nome amigável, ou exibível, para o destino; e uma cadeia de caracteres que pode conter parâmetros adicionais.
+Um objeto COM que implementa, no mínimo, a interface [**IHlink**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767974(v=vs.85)) e atua como um link para um objeto em outro local (o destino). Um hiperlink é feito de quatro partes: um moniker que identifica o local do destino; uma cadeia de caracteres para o local dentro do destino; um nome amigável ou exibivel para o destino; e uma cadeia de caracteres que pode conter parâmetros adicionais.
 
 </dd> <dt>
 
-<span id="com.hyperlink_browse_context_gloss"></span><span id="COM.HYPERLINK_BROWSE_CONTEXT_GLOSS"></span>**contexto de procura de hiperlink**
+<span id="com.hyperlink_browse_context_gloss"></span><span id="COM.HYPERLINK_BROWSE_CONTEXT_GLOSS"></span>**contexto de navegação de hiperlink**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IHlinkBrowseContext**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767949(v=vs.85)) e mantém a pilha de navegação de hiperlink. O objeto de contexto de procura gerencia a janela do quadro do hiperlink e a janela do objeto de destino do hiperlink.
+Um objeto COM que implementa a interface [**IHlinkBrowseContext**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767949(v=vs.85)) e mantém a pilha de navegação de hiperlink. O objeto de contexto procurar gerencia a janela do quadro de hiperlink e a janela do objeto de destino do hiperlink.
 
 </dd> <dt>
 
 <span id="com.hyperlink_container_gloss"></span><span id="COM.HYPERLINK_CONTAINER_GLOSS"></span>**contêiner de hiperlink**
 </dt> <dd>
 
-Um aplicativo de contêiner que dá suporte a hiperlinks implementando a interface [**IHlinkSite**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767933(v=vs.85)) e, se os objetos do contêiner podem ser destinos de outros hiperlinks, a interface [**IHlinkTarget**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767929(v=vs.85)) .
+Um aplicativo de contêiner que dá suporte a hiperlinks implementando a interface [**IHlinkSite**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767933(v=vs.85)) e, se os objetos do contêiner puderem ser destinos de outros hiperlinks, a interface [**IHlinkTarget.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767929(v=vs.85))
 
 </dd> <dt>
 
-<span id="com.hyperlink_frame_object_gloss"></span><span id="COM.HYPERLINK_FRAME_OBJECT_GLOSS"></span>**objeto de moldura de hiperlink**
+<span id="com.hyperlink_frame_object_gloss"></span><span id="COM.HYPERLINK_FRAME_OBJECT_GLOSS"></span>**objeto de quadro de hiperlink**
 </dt> <dd>
 
 Um objeto COM que implementa a interface [**IHlinkFrame**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767938(v=vs.85)) e controla a navegação de nível superior e a exibição de hiperlinks para o contêiner do quadro e o servidor do destino do hiperlink.
@@ -532,35 +532,35 @@ Um objeto COM que implementa a interface [**IHlinkFrame**](/previous-versions/wi
 <span id="com.hyperlink_site_object_gloss"></span><span id="COM.HYPERLINK_SITE_OBJECT_GLOSS"></span>**objeto do site de hiperlink**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IHlinkSite**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767933(v=vs.85)) e fornece o moniker ou o identificador de interface do seu contêiner de hiperlink. Um site de hiperlink pode atender a vários hiperlinks.
+Um objeto COM que implementa a interface [**IHlinkSite**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767933(v=vs.85)) e fornece o moniker ou o identificador de interface de seu contêiner de hiperlink. Um site de hiperlink pode atender a vários hiperlinks.
 
 </dd> <dt>
 
-<span id="com.hyperlink_target_object_gloss"></span><span id="COM.HYPERLINK_TARGET_OBJECT_GLOSS"></span>**objeto de destino do hiperlink**
+<span id="com.hyperlink_target_object_gloss"></span><span id="COM.HYPERLINK_TARGET_OBJECT_GLOSS"></span>**objeto de destino de hiperlink**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IHlinkTarget**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767929(v=vs.85)) e fornece seu moniker, nome amigável e outras informações que outros objetos de hiperlink usarão para navegar até ele.
+Um objeto COM que implementa a interface [**IHlinkTarget**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767929(v=vs.85)) e fornece seu moniker, nome amigável e outras informações que outros objetos de hiperlink usarão para navegar até ela.
 
 </dd> <dt>
 
-<span id="com.in_parameter_gloss"></span><span id="COM.IN_PARAMETER_GLOSS"></span>**parâmetro in**
+<span id="com.in_parameter_gloss"></span><span id="COM.IN_PARAMETER_GLOSS"></span>**no parâmetro**
 </dt> <dd>
 
-Um parâmetro que é alocado, definido e liberado pelo chamador de um método de função ou de interface. Um parâmetro in não é modificado pela função chamada.
+Um parâmetro que é alocado, definido e liberado pelo chamador de uma função ou método de interface. Um parâmetro in não é modificado pela função chamada.
 
 </dd> <dt>
 
 <span id="com.in_out_parameter_gloss"></span><span id="COM.IN_OUT_PARAMETER_GLOSS"></span>**parâmetro in/out**
 </dt> <dd>
 
-Um parâmetro que é inicialmente alocado pelo chamador de um método de função ou de interface e definido, liberado e realocado, se necessário, pelo processo que é chamado.
+Um parâmetro inicialmente alocado pelo chamador de uma função ou método de interface e definido, liberado e realocado, se necessário, pelo processo chamado.
 
 </dd> <dt>
 
-<span id="com.in_place_activation_gloss"></span><span id="COM.IN_PLACE_ACTIVATION_GLOSS"></span>**ativação in-loco**
+<span id="com.in_place_activation_gloss"></span><span id="COM.IN_PLACE_ACTIVATION_GLOSS"></span>**ativação in-place**
 </dt> <dd>
 
-Editar um objeto inserido dentro da janela de seu contêiner, usando as ferramentas fornecidas pelo servidor. Objetos vinculados não dão suporte à ativação in-loco; Eles são sempre editados na janela do servidor.
+Editando um objeto inserido dentro da janela de seu contêiner, usando as ferramentas fornecidas pelo servidor. Objetos vinculados não suportam a ativação in-locar; eles são sempre editados na janela do servidor.
 
 </dd> <dt>
 
@@ -571,143 +571,143 @@ Um servidor implementado como uma DLL que é executada no espaço de processo do
 
 </dd> <dt>
 
-<span id="com.instance_gloss"></span><span id="COM.INSTANCE_GLOSS"></span>**cópia**
+<span id="com.instance_gloss"></span><span id="COM.INSTANCE_GLOSS"></span>**Instância**
 </dt> <dd>
 
 Um objeto para o qual a memória é alocada ou que é persistente.
 
 </dd> <dt>
 
-<span id="com.interface_gloss"></span><span id="COM.INTERFACE_GLOSS"></span>**interface**
+<span id="com.interface_gloss"></span><span id="COM.INTERFACE_GLOSS"></span>**Interface**
 </dt> <dd>
 
-Um grupo de funções relacionadas semanticamente que fornecem acesso a um objeto COM. Cada interface OLE define um contrato que permite que os objetos interajam de acordo com o Component Object Model (COM). Embora o OLE forneça muitas implementações de interface, a maioria das interfaces também pode ser implementada por desenvolvedores que projetam aplicativos OLE.
+Um grupo de funções semanticamente relacionadas que fornecem acesso a um objeto COM. Cada interface OLE define um contrato que permite que os objetos interajam de acordo com Component Object Model (COM). Embora o OLE fornece muitas implementações de interface, a maioria das interfaces também pode ser implementada por desenvolvedores que projetam aplicativos OLE.
 
 </dd> <dt>
 
-<span id="com.interface_identifier_iid_gloss"></span><span id="COM.INTERFACE_IDENTIFIER_IID_GLOSS"></span>**identificador de interface (IID)**
+<span id="com.interface_identifier_iid_gloss"></span><span id="COM.INTERFACE_IDENTIFIER_IID_GLOSS"></span>**IID (identificador de interface)**
 </dt> <dd>
 
-Um GUID (identificador global exclusivo) associado a uma interface. Algumas funções usam IIDs como parâmetros para permitir que o chamador especifique qual ponteiro de interface deve ser retornado.
+Um GUID (identificador global exclusivo) associado a uma interface. Algumas funções levam IIDs como parâmetros para permitir que o chamador especifique qual ponteiro de interface deve ser retornado.
 
 </dd> <dt>
 
-<span id="com.item_moniker_gloss"></span><span id="COM.ITEM_MONIKER_GLOSS"></span>**moniker do item**
+<span id="com.item_moniker_gloss"></span><span id="COM.ITEM_MONIKER_GLOSS"></span>**item moniker**
 </dt> <dd>
 
-Um moniker com base em uma cadeia de caracteres que identifica um objeto em um contêiner. Os monikers de item podem identificar objetos menores do que um arquivo, incluindo objetos incorporados em um documento composto ou um pseudo objeto (como um intervalo de células em uma planilha).
+Um moniker baseado em uma cadeia de caracteres que identifica um objeto em um contêiner. Os monikers de item podem identificar objetos menores que um arquivo, incluindo objetos inseridos em um documento composto ou um pseudo-objeto (como um intervalo de células em uma planilha).
 
 </dd> <dt>
 
-<span id="com.licensing_gloss"></span><span id="COM.LICENSING_GLOSS"></span>**licença**
+<span id="com.licensing_gloss"></span><span id="COM.LICENSING_GLOSS"></span>**Licenciamento**
 </dt> <dd>
 
-Um recurso do COM que fornece controle sobre a criação de objetos. Os objetos licenciados podem ser criados somente por clientes que estão autorizados a usá-los. O licenciamento é implementado em COM por meio da interface [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2) e por suporte para uma chave de licença que pode ser passada em tempo de execução.
+Um recurso do COM que fornece controle sobre a criação de objetos. Objetos licenciados só podem ser criados por clientes autorizados a usá-los. O licenciamento é implementado em COM por meio da interface [**IClassFactory2**](/windows/desktop/api/OCIdl/nn-ocidl-iclassfactory2) e pelo suporte para uma chave de licença que pode ser passada em tempo de execução.
 
 </dd> <dt>
 
-<span id="com.link_object_gloss"></span><span id="COM.LINK_OBJECT_GLOSS"></span>**vincular objeto**
+<span id="com.link_object_gloss"></span><span id="COM.LINK_OBJECT_GLOSS"></span>**objeto link**
 </dt> <dd>
 
-Um objeto COM que é criado quando um objeto COM vinculado é criado ou carregado. O objeto link é fornecido pelo OLE e implementa a interface [**IOleLink**](/windows/desktop/api/OleIdl/nn-oleidl-iolelink) .
+Um objeto COM criado quando um objeto COM vinculado é criado ou carregado. O objeto de link é fornecido pelo OLE e implementa a interface [**IOleLink.**](/windows/desktop/api/OleIdl/nn-oleidl-iolelink)
 
 </dd> <dt>
 
 <span id="com.linked_object_gloss"></span><span id="COM.LINKED_OBJECT_GLOSS"></span>**objeto vinculado**
 </dt> <dd>
 
-Um objeto COM cujos dados de origem residem fisicamente onde ele foi inicialmente criado. Somente um moniker que representa os dados de origem e os dados de apresentação apropriados são mantidos com o documento composto. As alterações feitas na origem do link são refletidas automaticamente no objeto vinculado.
+Um objeto COM cujos dados de origem residem fisicamente onde foram criados inicialmente. Somente um moniker que representa os dados de origem e os dados de apresentação apropriados são mantidos com o documento composto. As alterações feitas na origem do link são refletidas automaticamente no objeto vinculado.
 
 </dd> <dt>
 
-<span id="com.link_source_gloss"></span><span id="COM.LINK_SOURCE_GLOSS"></span>**origem do link**
+<span id="com.link_source_gloss"></span><span id="COM.LINK_SOURCE_GLOSS"></span>**fonte de link**
 </dt> <dd>
 
-Os dados que são a origem de um objeto vinculado. Uma fonte de link pode ser um arquivo ou uma parte de um arquivo, como um intervalo selecionado de células dentro de um arquivo (também chamado de pseudo objeto).
+Os dados que são a origem de um objeto vinculado. Uma fonte de link pode ser um arquivo ou uma parte de um arquivo, como um intervalo selecionado de células dentro de um arquivo (também chamado de pseudo object).
 
 </dd> <dt>
 
 <span id="com.loaded_state_gloss"></span><span id="COM.LOADED_STATE_GLOSS"></span>**estado carregado**
 </dt> <dd>
 
-O estado de um objeto depois que suas estruturas de dados são carregadas na memória e estão acessíveis para o processo do cliente.
+O estado de um objeto depois que suas estruturas de dados foram carregadas na memória e podem ser acessadas pelo processo do cliente.
 
 </dd> <dt>
 
 <span id="com.local_server_gloss"></span><span id="COM.LOCAL_SERVER_GLOSS"></span>**servidor local**
 </dt> <dd>
 
-Um servidor fora do processo implementado como um. Aplicativo EXE em execução no mesmo computador que o aplicativo cliente.
+Um servidor fora do processo implementado como um .EXE em execução no mesmo computador que seu aplicativo cliente.
 
 </dd> <dt>
 
-<span id="com.lock_gloss"></span><span id="COM.LOCK_GLOSS"></span>**proprietário**
+<span id="com.lock_gloss"></span><span id="COM.LOCK_GLOSS"></span>**Bloqueio**
 </dt> <dd>
 
-Um ponteiro mantido para-e, possivelmente, uma contagem de referência incrementada em um objeto em execução. O OLE define dois tipos de bloqueios que podem ser mantidos em um objeto: forte e fraca. Para implementar um bloqueio forte, um servidor deve manter um ponteiro e uma contagem de referência, para que o objeto permaneça "bloqueado" na memória pelo menos até que o servidor chame [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). Para implementar um bloqueio fraco, o servidor mantém apenas um ponteiro para o objeto, para que o objeto possa ser destruído por outro processo.
+Um ponteiro mantido para e, possivelmente, uma contagem de referência incrementada em um objeto em execução. OLE define dois tipos de bloqueios que podem ser mantidos em um objeto: forte e fraco. Para implementar um bloqueio forte, um servidor deve manter um ponteiro e uma contagem de referência, para que o objeto permaneça "bloqueado" na memória pelo menos até que o servidor chama [**IUnknown::Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release). Para implementar um bloqueio fraco, o servidor mantém apenas um ponteiro para o objeto , para que o objeto possa ser destruído por outro processo.
 
 </dd> <dt>
 
-<span id="com.marshaling_gloss"></span><span id="COM.MARSHALING_GLOSS"></span>**marshaling**
+<span id="com.marshaling_gloss"></span><span id="COM.MARSHALING_GLOSS"></span>**Empacotamento**
 </dt> <dd>
 
-Empacotamento e envio de chamadas de método de interface entre limites de thread ou processo.
+Empacotando e enviando chamadas de método de interface entre limites de thread ou processo.
 
 </dd> <dt>
 
 <span id="com.media_type_gloss"></span><span id="COM.MEDIA_TYPE_GLOSS"></span>**tipo de mídia**
 </dt> <dd>
 
-Uma extensão de MIME que permite a negociação de formato de dados entre um cliente e um objeto.
+Uma extensão do MIME que permite a negociação de formato de dados entre um cliente e um objeto .
 
 </dd> <dt>
 
 <span id="com.mime_content_type_gloss"></span><span id="COM.MIME_CONTENT_TYPE_GLOSS"></span>**Tipo de conteúdo MIME**
 </dt> <dd>
 
-Uma extensão de MIME que permite a negociação de formato de dados entre um cliente e um objeto.
+Uma extensão do MIME que permite a negociação de formato de dados entre um cliente e um objeto .
 
 </dd> <dt>
 
-<span id="com.multipurpose_internet_mail_extension_gloss"></span><span id="COM.MULTIPURPOSE_INTERNET_MAIL_EXTENSION_GLOSS"></span>**MIME (Multipurpose Internet Mail Extension)**
+<span id="com.multipurpose_internet_mail_extension_gloss"></span><span id="COM.MULTIPURPOSE_INTERNET_MAIL_EXTENSION_GLOSS"></span>**MIME (Extensão multipropósico do Internet Mail)**
 </dt> <dd>
 
-Um protocolo de Internet originalmente desenvolvido para permitir o intercâmbio de mensagens de email com conteúdo rico em ambientes de rede, computador e email heterogêneos. Na prática, o MIME também foi adotado e estendido por aplicativos que não são de email.
+Um protocolo de Internet originalmente desenvolvido para permitir a troca de mensagens de email eletrônico com conteúdo rico em ambientes heterogêneos de rede, computador e email. Na prática, o MIME também foi adotado e estendido por aplicativos que não são de email.
 
 </dd> <dt>
 
-<span id="com.moniker_gloss"></span><span id="COM.MONIKER_GLOSS"></span>**moniker**
+<span id="com.moniker_gloss"></span><span id="COM.MONIKER_GLOSS"></span>**Moniker**
 </dt> <dd>
 
-Um objeto que implementa a interface [**IMoniker**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) . Um moniker atua como um nome que identifica exclusivamente um objeto COM. Da mesma forma que um caminho identifica um arquivo no sistema de arquivos, um moniker identifica um objeto COM no namespace do diretório.
+Um objeto que implementa a interface [**IMoniker.**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) Um moniker atua como um nome que identifica exclusivamente um objeto COM. Da mesma forma que um caminho identifica um arquivo no sistema de arquivos, um moniker identifica um objeto COM no namespace do diretório.
 
 </dd> <dt>
 
-<span id="com.moniker_class_gloss"></span><span id="COM.MONIKER_CLASS_GLOSS"></span>**classe de moniker**
+<span id="com.moniker_class_gloss"></span><span id="COM.MONIKER_CLASS_GLOSS"></span>**Classe moniker**
 </dt> <dd>
 
-Uma implementação da interface [**IMoniker**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) . As classes de moniker fornecidas pelo sistema incluem moniker de arquivo, monikers de item, monikers compostos genéricos, antimonikers, monikers de ponteiro e identificadores de URL.
+Uma implementação da interface [**IMoniker.**](/windows/desktop/api/ObjIdl/nn-objidl-imoniker) As classes de moniker fornecidas pelo sistema incluem monikers de arquivo, monikers de item, monikers de composição genéricos, anti-monikers, monikers de ponteiro e monikers de URL.
 
 </dd> <dt>
 
-<span id="com.moniker_client_gloss"></span><span id="COM.MONIKER_CLIENT_GLOSS"></span>**cliente de moniker**
+<span id="com.moniker_client_gloss"></span><span id="COM.MONIKER_CLIENT_GLOSS"></span>**cliente moniker**
 </dt> <dd>
 
 Um aplicativo que usa monikers para adquirir ponteiros de interface para objetos gerenciados por outro aplicativo.
 
 </dd> <dt>
 
-<span id="com.moniker_provider_gloss"></span><span id="COM.MONIKER_PROVIDER_GLOSS"></span>**provedor de moniker**
+<span id="com.moniker_provider_gloss"></span><span id="COM.MONIKER_PROVIDER_GLOSS"></span>**provedor moniker**
 </dt> <dd>
 
-Um aplicativo que torna os monikers disponíveis que identificam os objetos que ele gerencia, para que os objetos estejam acessíveis a outros aplicativos.
+Um aplicativo que disponibiliza monikers que identificam os objetos que ele gerencia, para que os objetos sejam acessíveis a outros aplicativos.
 
 </dd> <dt>
 
-<span id="com.namespace_extension_gloss"></span><span id="COM.NAMESPACE_EXTENSION_GLOSS"></span>**extensão do namespace**
+<span id="com.namespace_extension_gloss"></span><span id="COM.NAMESPACE_EXTENSION_GLOSS"></span>**extensão de namespace**
 </dt> <dd>
 
-Um objeto COM em processo que implementa [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder), [**IPersistFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipersistfolder)e [**IShellView**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellview), que às vezes são chamados de interfaces de extensão de namespace. Uma extensão de namespace é usada para estender o namespace do Shell ou para criar um namespace separado. Os usuários primários são as caixas de diálogo do Windows Explorer e arquivo comum.
+Um objeto COM em processo que implementa [**IShellFolder,**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) [**IPersistFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipersistfolder)e [**IShellView**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellview), que às vezes são chamados de interfaces de extensão de namespace. Uma extensão de namespace é usada para estender o namespace do shell ou para criar um namespace separado. Os usuários primários são as Windows Explorer e as caixas de diálogo de arquivo comuns.
 
 </dd> <dt>
 
@@ -718,45 +718,45 @@ Os dados usados por um aplicativo de servidor OLE ao editar um objeto inserido.
 
 </dd> <dt>
 
-<span id="com.object_gloss"></span><span id="COM.OBJECT_GLOSS"></span>**objeto**
+<span id="com.object_gloss"></span><span id="COM.OBJECT_GLOSS"></span>**Objeto**
 </dt> <dd>
 
-No OLE, uma estrutura de programação que encapsula os dados e a funcionalidade que são definidos e alocados como uma única unidade e para o qual o único acesso público é por meio das interfaces da estrutura de programação. Um objeto COM deve dar suporte a, no mínimo, a interface [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) , que mantém a existência do objeto enquanto ele está sendo usado e fornece acesso às outras interfaces do objeto.
+No OLE, uma estrutura de programação encapsulando dados e funcionalidades que são definidos e alocados como uma única unidade e para a qual o único acesso público é por meio das interfaces da estrutura de programação. Um objeto COM deve dar suporte, no mínimo, à interface [**IUnknown,**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) que mantém a existência do objeto enquanto ele está sendo usado e fornece acesso às outras interfaces do objeto.
 
 </dd> <dt>
 
-<span id="com.object_state_gloss"></span><span id="COM.OBJECT_STATE_GLOSS"></span>**Estado do objeto** 
+<span id="com.object_state_gloss"></span><span id="COM.OBJECT_STATE_GLOSS"></span>**estado do objeto** 
 </dt> <dd>
 
-A relação entre um objeto de documento composto em seu contêiner e o aplicativo responsável pela criação do objeto: ativo, passivo, carregado ou em execução. Os objetos passivos são armazenados em disco ou em um banco de dados, e o objeto não é selecionado ou ativo. No estado Loaded, as estruturas de dados do objeto foram carregadas na memória, mas não estão disponíveis para operações como edição. Os objetos em execução são carregados e estão disponíveis para todas as operações. Os objetos ativos estão executando objetos que têm uma interface do usuário visível.
+A relação entre um objeto de documento composto em seu contêiner e o aplicativo responsável pela criação do objeto: ativo, passivo, carregado ou em execução. Objetos passivos são armazenados em disco ou em um banco de dados e o objeto não está selecionado ou ativo. No estado carregado, as estruturas de dados do objeto foram carregadas na memória, mas não estão disponíveis para operações como edição. Os objetos em execução são carregados e estão disponíveis para todas as operações. Objetos ativos estão executando objetos que têm uma interface do usuário visível.
 
 </dd> <dt>
 
 <span id="com.object_type_name_gloss"></span><span id="COM.OBJECT_TYPE_NAME_GLOSS"></span>**nome do tipo de objeto**
 </dt> <dd>
 
-Uma cadeia de caracteres de identificação exclusiva que é armazenada como parte das informações disponíveis para um objeto no banco de dados de registro.
+Uma cadeia de caracteres de identificação exclusiva armazenada como parte das informações disponíveis para um objeto no banco de dados de registro.
 
 </dd> <dt>
 
-<span id="com.ole_gloss"></span><span id="COM.OLE_GLOSS"></span>**OleDb**
+<span id="com.ole_gloss"></span><span id="COM.OLE_GLOSS"></span>**Ole**
 </dt> <dd>
 
-A tecnologia baseada em objeto da Microsoft para compartilhar informações e serviços entre os limites do processo e do computador.
+A tecnologia baseada em objeto da Microsoft para compartilhar informações e serviços entre limites de processo e computador.
 
 </dd> <dt>
 
 <span id="com.out_of_process_server_gloss"></span><span id="COM.OUT_OF_PROCESS_SERVER_GLOSS"></span>**servidor fora do processo**
 </dt> <dd>
 
-Um servidor, implementado como um. EXE, que é executado fora do processo de seu cliente, seja no mesmo computador ou em um computador remoto.
+Um servidor, implementado como um .EXE, que é executado fora do processo de seu cliente, no mesmo computador ou em um computador remoto.
 
 </dd> <dt>
 
 <span id="com.out_parameter_gloss"></span><span id="COM.OUT_PARAMETER_GLOSS"></span>**parâmetro out**
 </dt> <dd>
 
-Um parâmetro out é alocado pela função que está sendo chamada e liberada pelo chamador.
+Um parâmetro out é alocado pela função que está sendo chamada e liberado pelo chamador.
 
 </dd> <dt>
 
@@ -767,37 +767,37 @@ O estado de um objeto COM quando ele é armazenado (em disco ou em um banco de d
 
 </dd> <dt>
 
-<span id="com.persistent_property_gloss"></span><span id="COM.PERSISTENT_PROPERTY_GLOSS"></span>**Propriedade persistente**
+<span id="com.persistent_property_gloss"></span><span id="COM.PERSISTENT_PROPERTY_GLOSS"></span>**propriedade persistente**
 </dt> <dd>
 
-Informações que podem ser armazenadas de forma persistente como parte de um objeto de armazenamento, como um arquivo ou diretório. As propriedades persistentes são agrupadas em conjuntos de propriedades, que podem ser exibidas e editadas.
+Informações que podem ser armazenadas persistentemente como parte de um objeto de armazenamento, como um arquivo ou diretório. As propriedades persistentes são agrupadas em conjuntos de propriedades, que podem ser exibidos e editados.
 
-Uma propriedade persistente é diferente das propriedades de tempo de execução de objetos criados com controles OLE e tecnologias de automação, que podem ser usadas para afetar o comportamento do sistema. A estrutura [**PROPVARIANT**](/windows/win32/api/propidl/ns-propidl-propvariant) define todos os tipos válidos de propriedades persistentes, enquanto a estrutura **variante** define todos os tipos válidos de propriedades de tempo de execução.
+Uma propriedade persistente é diferente das propriedades de tempo de run time de objetos criados com tecnologias de Automação e Controles OLE, que podem ser usadas para afetar o comportamento do sistema. A [**estrutura PROPVARIANT**](/windows/win32/api/propidl/ns-propidl-propvariant) define todos os tipos válidos de propriedades persistentes, enquanto a estrutura **VARIANT** define todos os tipos válidos de propriedades de tempo de run-time.
 
 </dd> <dt>
 
 <span id="com.persistent_storage_gloss"></span><span id="COM.PERSISTENT_STORAGE_GLOSS"></span>**armazenamento persistente**
 </dt> <dd>
 
-Armazenamento de um arquivo ou objeto em uma mídia, como um sistema de arquivos ou um banco de dados, de forma que o objeto e os seus próprios arquivos persistam quando o arquivo é fechado e, em seguida, reaberto posteriormente.
+Armazenamento de um arquivo ou objeto em um meio como um sistema de arquivos ou banco de dados para que o objeto e seus dados persistam quando o arquivo é fechado e, em seguida, reaberto posteriormente.
 
 </dd> <dt>
 
-<span id="com.picture_object_gloss"></span><span id="COM.PICTURE_OBJECT_GLOSS"></span>**objeto de imagem**
+<span id="com.picture_object_gloss"></span><span id="COM.PICTURE_OBJECT_GLOSS"></span>**objeto picture**
 </dt> <dd>
 
-Um objeto COM que fornece acesso a imagens GDI implementando a interface [**IPicture**](/windows/desktop/api/OCIdl/nn-ocidl-ipicture) .
+Um objeto COM que fornece acesso a imagens GDI implementando a interface [**IPicture.**](/windows/desktop/api/OCIdl/nn-ocidl-ipicture)
 
 </dd> <dt>
 
-<span id="com.pointer_moniker_gloss"></span><span id="COM.POINTER_MONIKER_GLOSS"></span>**moniker do ponteiro**
+<span id="com.pointer_moniker_gloss"></span><span id="COM.POINTER_MONIKER_GLOSS"></span>**moniker de ponteiro**
 </dt> <dd>
 
-Um moniker que mapeia um ponteiro de interface para um objeto na memória. Enquanto a maioria dos monikers identifica objetos que podem ser armazenados de forma persistente, os moniker do ponteiro identificam objetos que não podem. Eles permitem que esses objetos participem de uma operação de associação de moniker.
+Um moniker que mapeia um ponteiro de interface para um objeto na memória. Enquanto a maioria dos monikers identifica objetos que podem ser armazenados persistentemente, os monikers de ponteiro identificam objetos que não podem. Eles permitem que esses objetos participem de uma operação de associação de moniker.
 
 </dd> <dt>
 
-<span id="com.presentation_data_gloss"></span><span id="COM.PRESENTATION_DATA_GLOSS"></span>**dados da apresentação**
+<span id="com.presentation_data_gloss"></span><span id="COM.PRESENTATION_DATA_GLOSS"></span>**dados de apresentação**
 </dt> <dd>
 
 Os dados usados por um contêiner para exibir objetos inseridos ou vinculados.
@@ -807,56 +807,56 @@ Os dados usados por um contêiner para exibir objetos inseridos ou vinculados.
 <span id="com.primary_verb_gloss"></span><span id="COM.PRIMARY_VERB_GLOSS"></span>**verbo primário**
 </dt> <dd>
 
-A ação associada aos usuários de operação mais comuns ou preferenciais que o executa em um objeto. O verbo primário é sempre definido como verbo zero no banco de dados de registro do sistema. Um verbo primário do objeto é executado clicando duas vezes no objeto.
+A ação associada à operação mais comum ou preferencial que os usuários executam em um objeto . O verbo primário é sempre definido como o verbo zero no banco de dados de registro do sistema. O verbo primário de um objeto é executado clicando duas vezes no objeto .
 
 </dd> <dt>
 
 <span id="com.property_gloss"></span><span id="COM.PROPERTY_GLOSS"></span>**Propriedade**
 </dt> <dd>
 
-Informações associadas a um objeto. No OLE, as propriedades se enquadram em duas categorias: Propriedades de tempo de execução e propriedades persistentes. As propriedades de tempo de execução geralmente são associadas a objetos de controle ou seus contêineres. Por exemplo, cor do plano de fundo é uma propriedade de tempo de execução definida pelo contêiner de um controle. As propriedades persistentes são associadas a objetos armazenados.
+Informações associadas a um objeto . No OLE, as propriedades se enquadram em duas categorias: propriedades de tempo de run e propriedades persistentes. As propriedades de tempo de executar normalmente são associadas a objetos de controle ou seus contêineres. Por exemplo, a cor da tela de fundo é uma propriedade de tempo de executar definida pelo contêiner de um controle. Propriedades persistentes são associadas a objetos armazenados.
 
 </dd> <dt>
 
 <span id="com.property_frame_gloss"></span><span id="COM.PROPERTY_FRAME_GLOSS"></span>**quadro de propriedade**
 </dt> <dd>
 
-O mecanismo de interface do usuário que exibe uma ou mais páginas de propriedades para um controle. O sistema de tempo de execução dos controles OLE fornece uma implementação padrão de um quadro de propriedade que pode ser acessado usando a função auxiliar [**OleCreatePropertyFrame**](/windows/desktop/api/OleCtl/nf-olectl-olecreatepropertyframe) .
+O mecanismo de interface do usuário que exibe uma ou mais páginas de propriedades para um controle . O sistema de tempo de execução OLE Controls fornece uma implementação padrão de um quadro de propriedade que pode ser acessado usando a função auxiliar [**OleCreatePropertyFrame.**](/windows/desktop/api/OleCtl/nf-olectl-olecreatepropertyframe)
 
 </dd> <dt>
 
 <span id="com.property_identifier_gloss"></span><span id="COM.PROPERTY_IDENTIFIER_GLOSS"></span>**identificador de propriedade**
 </dt> <dd>
 
-Um inteiro assinado de quatro bytes que identifica uma propriedade persistente dentro de um conjunto de propriedades.
+Um inteiro com sinal de quatro byte que identifica uma propriedade persistente dentro de um conjunto de propriedades.
 
 </dd> <dt>
 
 <span id="com.property_page_gloss"></span><span id="COM.PROPERTY_PAGE_GLOSS"></span>**página de propriedades**
 </dt> <dd>
 
-Um objeto com com seu próprio CLSID que faz parte de uma interface do usuário, implementado por um controle e permite que as propriedades do controle sejam exibidas e definidas. Os objetos da página de propriedades implementam a interface [**IPropertyPage**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertypage) .
+Um objeto COM com seu próprio CLSID que faz parte de uma interface do usuário, implementado por um controle e permite que as propriedades do controle sejam exibidas e definidas. Os objetos de página de propriedade implementam a interface [**IPropertyPage.**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertypage)
 
 </dd> <dt>
 
 <span id="com.property_page_site_gloss"></span><span id="COM.PROPERTY_PAGE_SITE_GLOSS"></span>**site da página de propriedades**
 </dt> <dd>
 
-O local dentro de um quadro de propriedades onde uma página de propriedades é exibida. O quadro de propriedades implementa a interface [**IPropertyPageSite**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertypagesite) , que contém métodos para gerenciar os sites de cada uma das páginas de propriedades fornecidas por um controle.
+O local dentro de um quadro de propriedade em que uma página de propriedades é exibida. O quadro de propriedades implementa a interface [**IPropertyPageSite,**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertypagesite) que contém métodos para gerenciar os sites de cada uma das páginas de propriedades fornecidas por um controle .
 
 </dd> <dt>
 
 <span id="com.property_set_gloss"></span><span id="COM.PROPERTY_SET_GLOSS"></span>**conjunto de propriedades**
 </dt> <dd>
 
-Um grupo de propriedades relacionado logicamente que está associado a um objeto armazenado persistente. Para criar, abrir, excluir ou enumerar um ou mais conjuntos de propriedades, implemente a interface [**IPropertySetStorage**](/windows/desktop/api/propidl/nn-propidl-ipropertysetstorage) . Se você estiver usando arquivos compostos, poderá usar a implementação do OLE dessa interface em vez de implementar seu próprio.
+Um grupo de propriedades logicamente relacionado associado a um objeto armazenado persistentemente. Para criar, abrir, excluir ou enumerar um ou mais conjuntos de propriedades, implemente a interface [**IPropertySetStorage.**](/windows/desktop/api/propidl/nn-propidl-ipropertysetstorage) Se você estiver usando arquivos compostos, poderá usar a implementação do OLE dessa interface em vez de implementar sua própria.
 
 </dd> <dt>
 
-<span id="com.property_set_storage_gloss"></span><span id="COM.PROPERTY_SET_STORAGE_GLOSS"></span>**armazenamento de conjunto de propriedades**
+<span id="com.property_set_storage_gloss"></span><span id="COM.PROPERTY_SET_STORAGE_GLOSS"></span>**armazenamento do conjunto de propriedades**
 </dt> <dd>
 
-Um objeto de armazenamento COM que mantém um conjunto de propriedades. Um armazenamento de conjunto de propriedades é um objeto dependente associado e gerenciado por um objeto de armazenamento.
+Um objeto de armazenamento COM que contém um conjunto de propriedades. Um armazenamento de conjunto de propriedades é um objeto dependente associado a e gerenciado por um objeto de armazenamento.
 
 </dd> <dt>
 
@@ -867,28 +867,28 @@ Um conjunto de páginas de propriedades para um ou mais objetos.
 
 </dd> <dt>
 
-<span id="com.proxy_gloss"></span><span id="COM.PROXY_GLOSS"></span>**acionista**
+<span id="com.proxy_gloss"></span><span id="COM.PROXY_GLOSS"></span>**Proxy**
 </dt> <dd>
 
-Um objeto específico de interface que empacota parâmetros para essa interface em preparação para uma chamada de método remoto. Um proxy é executado no espaço de endereço do remetente e se comunica com um stub correspondente no espaço de endereço do destinatário.
+Um objeto específico da interface que pacotes parâmetros para essa interface em preparação para uma chamada de método remoto. Um proxy é executado no espaço de endereço do remetente e se comunica com um stub correspondente no espaço de endereço do destinatário.
 
 </dd> <dt>
 
-<span id="com.proxy_manager_gloss"></span><span id="COM.PROXY_MANAGER_GLOSS"></span>**Gerenciador de proxy**
+<span id="com.proxy_manager_gloss"></span><span id="COM.PROXY_MANAGER_GLOSS"></span>**gerenciador de proxy**
 </dt> <dd>
 
-No empacotamento padrão, um proxy que gerencia todos os proxies de interface para um único objeto.
+No marshaling padrão, um proxy que gerencia todos os proxies de interface para um único objeto.
 
 </dd> <dt>
 
-<span id="com.pseudo_object_gloss"></span><span id="COM.PSEUDO_OBJECT_GLOSS"></span>**pseudo objeto**
+<span id="com.pseudo_object_gloss"></span><span id="COM.PSEUDO_OBJECT_GLOSS"></span>**pseudo object**
 </dt> <dd>
 
 Uma parte de um documento ou objeto inserido, como um intervalo de células em uma planilha, que pode ser a origem de um objeto COM.
 
 </dd> <dt>
 
-<span id="com.reference_counting_gloss"></span><span id="COM.REFERENCE_COUNTING_GLOSS"></span>**contagem de referência**
+<span id="com.reference_counting_gloss"></span><span id="COM.REFERENCE_COUNTING_GLOSS"></span>**contagem de referências**
 </dt> <dd>
 
 Manter uma contagem de cada ponteiro de interface mantido em um objeto para garantir que o objeto não seja destruído antes que todas as referências a ele sejam liberadas.
@@ -898,53 +898,53 @@ Manter uma contagem de cada ponteiro de interface mantido em um objeto para gara
 <span id="com.relative_moniker_gloss"></span><span id="COM.RELATIVE_MONIKER_GLOSS"></span>**moniker relativo**
 </dt> <dd>
 
-Um moniker que especifica o local de um objeto relativo ao local de outro objeto. Um moniker relativo é análogo a um caminho relativo, como.. \\ relatório de backup \\ . old.
+Um moniker que especifica o local de um objeto em relação ao local de outro objeto. Um moniker relativo é análogo a um caminho relativo, como .. \\ backup \\ report.old.
 
 </dd> <dt>
 
 <span id="com.remote_server_gloss"></span><span id="COM.REMOTE_SERVER_GLOSS"></span>**servidor remoto**
 </dt> <dd>
 
-Um aplicativo de servidor, implementado como um EXE, em execução em um computador diferente do aplicativo cliente que o está usando.
+Um aplicativo de servidor, implementado como exe, em execução em um computador diferente do aplicativo cliente usando-o.
 
 </dd> <dt>
 
-<span id="com.revert_gloss"></span><span id="COM.REVERT_GLOSS"></span>**voltar**
+<span id="com.revert_gloss"></span><span id="COM.REVERT_GLOSS"></span>**Reverter**
 </dt> <dd>
 
-Para descartar as alterações feitas em um objeto desde a última vez em que as alterações foram confirmadas ou o armazenamento do objeto foi aberto.
+Para descartar as alterações feitas em um objeto desde a última vez em que as alterações foram feitas ou o armazenamento do objeto foi aberto.
 
 </dd> <dt>
 
 <span id="com.root_storage_object_gloss"></span><span id="COM.ROOT_STORAGE_OBJECT_GLOSS"></span>**objeto de armazenamento raiz**
 </dt> <dd>
 
-O objeto de armazenamento mais externo em um documento. Um objeto de armazenamento raiz pode conter outros objetos de armazenamento e fluxo aninhados. Por exemplo, um documento composto é salvo em disco como uma série de objetos de armazenamento e fluxo dentro de um objeto de armazenamento raiz.
+O objeto de armazenamento mais externo em um documento. Um objeto de armazenamento raiz pode conter outros objetos aninhados de armazenamento e fluxo. Por exemplo, um documento composto é salvo no disco como uma série de objetos de armazenamento e fluxo dentro de um objeto de armazenamento raiz.
 
 </dd> <dt>
 
-<span id="com.running_state_gloss"></span><span id="COM.RUNNING_STATE_GLOSS"></span>**Estado de execução**
+<span id="com.running_state_gloss"></span><span id="COM.RUNNING_STATE_GLOSS"></span>**estado em execução**
 </dt> <dd>
 
-O estado de um objeto COM quando seu aplicativo de servidor está em execução e é possível acessar suas interfaces e receber notificações de alterações.
+O estado de um objeto COM quando seu aplicativo de servidor está em execução e é possível acessar suas interfaces e receber notificação de alterações.
 
 </dd> <dt>
 
-<span id="com.running_object_table_gloss"></span><span id="COM.RUNNING_OBJECT_TABLE_GLOSS"></span>**executando a tabela de objetos (corrompidos)**
+<span id="com.running_object_table_gloss"></span><span id="COM.RUNNING_OBJECT_TABLE_GLOSS"></span>**tabela de objetos em execução (ROT)**
 </dt> <dd>
 
-Uma tabela acessível globalmente em cada computador que controla todos os objetos COM no estado em execução que podem ser identificados por um moniker. Os provedores de moniker registram um objeto na tabela, que incrementa a contagem de referência do objeto. Antes que o objeto possa ser destruído, seu moniker deve ser liberado da tabela.
+Uma tabela globalmente acessível em cada computador que acompanha todos os objetos COM no estado de execução que podem ser identificados por um moniker. Os provedores de Moniker registram um objeto na tabela, o que incrementa a contagem de referência do objeto. Antes que o objeto possa ser destruído, seu moniker deve ser liberado da tabela.
 
 </dd> <dt>
 
-<span id="com.run_time_property_gloss"></span><span id="COM.RUN_TIME_PROPERTY_GLOSS"></span>**Propriedade de tempo de execução**
+<span id="com.run_time_property_gloss"></span><span id="COM.RUN_TIME_PROPERTY_GLOSS"></span>**propriedade de tempo de executar**
 </dt> <dd>
 
-Informações de estado discreta associadas a um objeto de controle ou a seu contêiner. Há três tipos de propriedades de tempo de execução: Propriedades de ambiente, propriedades de controle e propriedades estendidas.
+Informações de estado discreto associadas a um objeto de controle ou seu contêiner. Há três tipos de propriedades de tempo de run time: propriedades de ambiente, propriedades de controle e propriedades estendidas.
 
 </dd> <dt>
 
-<span id="com.self_registration_gloss"></span><span id="COM.SELF_REGISTRATION_GLOSS"></span>**registro automático**
+<span id="com.self_registration_gloss"></span><span id="COM.SELF_REGISTRATION_GLOSS"></span>**auto-registro**
 </dt> <dd>
 
 O processo pelo qual um servidor pode executar suas próprias operações de registro.
@@ -954,23 +954,23 @@ O processo pelo qual um servidor pode executar suas próprias operações de reg
 <span id="com.server_application_gloss"></span><span id="COM.SERVER_APPLICATION_GLOSS"></span>**aplicativo de servidor**
 </dt> <dd>
 
-Um aplicativo que pode criar objetos COM. Os aplicativos de contêiner podem então ser inseridos ou vinculados a esses objetos.
+Um aplicativo que pode criar objetos COM. Os aplicativos de contêiner podem inserir ou vincular a esses objetos.
 
 </dd> <dt>
 
 <span id="com.static_object_gloss"></span><span id="COM.STATIC_OBJECT_GLOSS"></span>**objeto estático**
 </dt> <dd>
 
-Um objeto que contém apenas uma apresentação, sem dados nativos. Um contêiner pode tratar um objeto estático como se fosse um objeto vinculado ou incorporado, exceto que não é possível editar um objeto estático.
+Um objeto que contém apenas uma apresentação, sem dados nativos. Um contêiner pode tratar um objeto estático como se fosse um objeto vinculado ou inserido, exceto que não é possível editar um objeto estático.
 
-Um objeto estático pode resultar, por exemplo, da interrupção de um link em um objeto vinculado, ou seja, o aplicativo do servidor não está disponível ou o usuário não quer que o objeto vinculado seja mais atualizado.
+Um objeto estático pode resultar, por exemplo, da quebra de um link em um objeto vinculado, ou seja, o aplicativo de servidor não está disponível ou o usuário não deseja mais que o objeto vinculado seja atualizado.
 
 </dd> <dt>
 
 <span id="com.storage_object_gloss"></span><span id="COM.STORAGE_OBJECT_GLOSS"></span>**objeto de armazenamento**
 </dt> <dd>
 
-Um objeto COM que implementa a interface [**IStorage**](/windows/desktop/api/objidl/nn-objidl-istorage) . Um objeto de armazenamento contém objetos de armazenamento aninhados ou objetos de fluxo, resultando no equivalente de uma estrutura de diretório/arquivo em um único arquivo.
+Um objeto COM que implementa a interface [**IStorage.**](/windows/desktop/api/objidl/nn-objidl-istorage) Um objeto de armazenamento contém objetos de armazenamento aninhados ou objetos de fluxo, resultando no equivalente de uma estrutura de diretório/arquivo em um único arquivo.
 
 </dd> <dt>
 
@@ -1012,7 +1012,7 @@ Uma chamada de função que não permite que mais instruções no processo de ch
 <span id="com.system_registry_gloss"></span><span id="COM.SYSTEM_REGISTRY_GLOSS"></span>**registro do sistema**
 </dt> <dd>
 
-Um repositório de informações em todo o sistema com suporte no Windows, que contém informações sobre o sistema e seus aplicativos, incluindo clientes e servidores OLE.
+um repositório de informações em todo o sistema com suporte pelo Windows, que contém informações sobre o sistema e seus aplicativos, incluindo clientes e servidores OLE.
 
 </dd> <dt>
 
@@ -1058,6 +1058,6 @@ Um moniker com base em um localizador de recursos universal (URL). Um cliente po
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

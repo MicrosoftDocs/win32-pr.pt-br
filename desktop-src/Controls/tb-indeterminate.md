@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_INDETERMINATE (commctrl. h)
+title: TB_INDETERMINATE mensagem (Commctrl.h)
 description: Define ou limpa o estado indeterminado do botão especificado em uma barra de ferramentas.
 ms.assetid: 6a0f2b82-8241-4c2e-b349-606975ba1a24
 keywords:
-- Controles de TB_INDETERMINATE de mensagens do Windows
+- TB_INDETERMINATE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7f1de35f9621de4f51d371bb50dbda637d720cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 90845f269d0af1e690d5ddeb02f2a8ec2a2f63ff4f698f1dd0f3e2729d98b72c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078260"
 ---
-# <a name="tb_indeterminate-message"></a>TB de \_ mensagem indeterminada
+# <a name="tb_indeterminate-message"></a>Mensagem \_ TB INDETERMINADA
 
 Define ou limpa o estado indeterminado do botão especificado em uma barra de ferramentas.
 
@@ -39,15 +39,15 @@ Identificador de comando do botão cujo estado indeterminado deve ser definido o
 *lParam* 
 </dt> <dd>
 
-O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) é um **bool** que indica se deve ser definido ou limpo o estado indeterminado. Se for **true**, o estado indeterminado será definido. Se for **false**, o estado será limpo.
+O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) é **um BOOL** que indica se deve-se definir ou limpar o estado indeterminado. Se **TRUE**, o estado indeterminado será definido. Se **FALSE**, o estado será limpo.
 
 O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

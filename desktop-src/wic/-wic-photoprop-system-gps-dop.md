@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. DOP.
+description: A política de metadados de foto para a propriedade System.GPS.DOP.
 ms.assetid: 62efd1cc-a2ae-4e53-a0f2-4822b8c91c42
-title: Política de metadados de foto System. GPS. DOP
+title: Política de metadados de foto system.GPS.DOP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c33f3bfc6b958593748396124a8cfd1a7de73fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7c414b7cb8648210175953e4c7b5f51a66f026cb45a06fd4d62918f2f8ac369
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087784"
 ---
-# <a name="systemgpsdop-photo-metadata-policy"></a>Política de metadados de foto System. GPS. DOP
+# <a name="systemgpsdop-photo-metadata-policy"></a>Política de metadados de foto system.GPS.DOP
 
-A política de metadados de foto para a propriedade [System. GPS. DOP](../properties/props-system-gps-dop.md) .
+A política de metadados de foto para a [propriedade System.GPS.DOP.](../properties/props-system-gps-dop.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_DOP de GPS PKEY \_
+PKEY \_ GPS \_ DOP
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,15 +25,15 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor pode ser gravado escrevendo em System. GPS. DOPNumerator e System. GPS. DOPDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor pode ser escrito escrevendo em System.GPS.DOPNumerator e System.GPS.DOPDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="precedence-of-paths-jpeg"></a>Precedência de caminhos (JPEG)
 
@@ -43,8 +43,8 @@ Se o arquivo estiver no formato JPEG, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                          | Formato de disco   | Obrigatório |
 |-------|-------------------------------|---------------|----------|
-| 1     | /xmp/exif:GPSDOP              | Racional de XMP  | Yes      |
-| 2     | /App1/IFD/GPS/ \\ {UShort = 11 \\ } | Racional de EXIF | No       |
+| 1     | /xmp/exif:GPSDOP              | XMP racional  | Sim      |
+| 2     | /app1/ifd/gps/ \\ {ushort=11 \\ } | EXIF racional | Não       |
 
 
 
@@ -58,8 +58,8 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                     | Formato de disco   | Obrigatório |
 |-------|--------------------------|---------------|----------|
-| 1     | /ifd/xmp/exif:GPSDop     | Racional de XMP  | Yes      |
-| 2     | /IFD/GPS/ \\ {UShort = 11 \\ } | Racional de EXIF | Não       |
+| 1     | /ifd/xmp/exif:GPSDop     | XMP racional  | Sim      |
+| 2     | /ifd/gps/ \\ {ushort=11 \\ } | EXIF racional | Não       |
 
 
 
@@ -71,7 +71,7 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 <dl> <dt>
 
-[System. GPS. DOP](../properties/props-system-gps-dop.md)
+[System.GPS.DOP](../properties/props-system-gps-dop.md)
 </dt> </dl>
 
  

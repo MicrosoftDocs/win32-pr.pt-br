@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6aff8ce62cf0358f494d5b3d83872b831e07ec4b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fb80c13ad25bac8a50764cd6e34127217e4476336af4690a519ba7adfc46948f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020674"
 ---
 # <a name="copy-method-of-the-cim_directory-class"></a>Método Copy da classe de \_ diretório CIM
 
@@ -65,14 +65,14 @@ Retorna um valor 0 em caso de êxito e qualquer outro número para indicar um er
 **0**
 </dt> <dd>
 
-Sucesso.
+Êxito.
 
 </dd> <dt>
 
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -173,7 +173,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

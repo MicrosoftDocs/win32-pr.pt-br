@@ -1,10 +1,10 @@
 ---
-title: Abrir-endereço-livro estendido à direita
-description: Direito estendido marcado ao abrir objeto de catálogo de endereços para exibições de catálogo de endereços.
+title: Direito estendido Open-Address-Book
+description: Direito estendido verificado ao abrir o objeto do livro de endereços para exibições do livro de endereços.
 ms.assetid: b5b30fc2-6bf1-4ba8-81c1-86db9413ef24
 ms.tgt_platform: multiple
 keywords:
-- Open-Address-Book estendido esquema do AD
+- Esquema estendido do AD open-Address-Book
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb628760997484051eb219c0b4bcec90a6be7117
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af918007992a9debe2bdef1d02fd559be4b0cdc6cd65d2900293cafdb5fc5382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021604"
 ---
-# <a name="open-address-book-extended-right"></a>Abrir-endereço-livro estendido à direita
+# <a name="open-address-book-extended-right"></a>Direito estendido Open-Address-Book
 
-Direito estendido marcado ao abrir objeto de catálogo de endereços para exibições de catálogo de endereços.
+Direito estendido verificado ao abrir o objeto do livro de endereços para exibições do livro de endereços.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Catálogo de endereços aberto                    |
-| Display-Name | Abrir lista de endereços                    |
-| GUID de direitos  | a1990816-4298-11d1-ade2-00c04fd8d5cd |
+| CN           | Open-Address-Book                    |
+| Display-Name | Abrir Lista de Endereços                    |
+| RIGHTS-GUID  | a1990816-4298-11d1-ade2-00c04fd8d5cd |
 
 
 
@@ -49,8 +49,8 @@ Direito estendido marcado ao abrir objeto de catálogo de endereços para exibi�
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Catálogo de endereços-contêiner**](c-addressbookcontainer.md)<br/> |
-| Localização-exibição-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -60,8 +60,8 @@ Direito estendido marcado ao abrir objeto de catálogo de endereços para exibi�
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Catálogo de endereços-contêiner**](c-addressbookcontainer.md)<br/> |
-| Localização-exibição-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -71,8 +71,8 @@ Direito estendido marcado ao abrir objeto de catálogo de endereços para exibi�
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Catálogo de endereços-contêiner**](c-addressbookcontainer.md)<br/> |
-| Localização-exibição-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -82,8 +82,8 @@ Direito estendido marcado ao abrir objeto de catálogo de endereços para exibi�
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Catálogo de endereços-contêiner**](c-addressbookcontainer.md)<br/> |
-| Localização-exibição-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -93,8 +93,8 @@ Direito estendido marcado ao abrir objeto de catálogo de endereços para exibi�
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Catálogo de endereços-contêiner**](c-addressbookcontainer.md)<br/> |
-| Localização-exibição-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 
@@ -104,8 +104,8 @@ Direito estendido marcado ao abrir objeto de catálogo de endereços para exibi�
 
 | Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------|
-| Applies-To              | [**Catálogo de endereços-contêiner**](c-addressbookcontainer.md)<br/> |
-| Localização-exibição-ID | 21                                                                  |
+| Applies-To              | [**Address-Book-Container**](c-addressbookcontainer.md)<br/> |
+| Localization-Display-ID | 21                                                                  |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de MM_JOY1ZMOVE (mmsystem. h)
 description: A \_ mensagem mm JOY1ZMOVE notifica a janela que capturou o joystick JOYSTICKID1 que a posição do joystick no eixo z foi alterada.
 ms.assetid: 25d98963-03e6-4276-a132-256e8bbfa73b
 keywords:
-- Multimídia do Windows de mensagem MM_JOY1ZMOVE
+- mensagem de MM_JOY1ZMOVE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d4db3db8c1817f0502ce14cc5328ad666b32c9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b6b0efe11870ac822f7fe8aa0f7aa1deb4856bd8f1394bd1533362d78a3aee00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065536"
 ---
 # <a name="mm_joy1zmove-message"></a>\_Mensagem mm JOY1ZMOVE
 

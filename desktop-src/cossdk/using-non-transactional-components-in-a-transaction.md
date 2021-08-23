@@ -4,12 +4,12 @@ ms.assetid: b83b4bab-1851-48dc-b35a-6467a6dff741
 title: Usando componentes não transacionais em uma transação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a75cd8ebc756971a56413e371cf23de2144e5816
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 365cf6f8e5c20f328f4308366e9a98916d9277363bba815fdbc00b5e2d8203d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991346"
 ---
 # <a name="using-non-transactional-components-in-a-transaction"></a>Usando componentes não transacionais em uma transação
 
@@ -19,7 +19,7 @@ O *objeto de contexto de transação* é um objeto genérico que permite que cli
 
 Por padrão, o valor do atributo Transaction do objeto de contexto de transação é definido como Required. O COM+ anulará a transação se o cliente liberar o objeto de contexto de transação sem emitir explicitamente uma chamada Commit ou Abort.
 
-O exemplo a seguir Visual Basic mostra como um cliente não transacional pode compor o trabalho feito por mais de um objeto em uma única transação:
+o exemplo a seguir Visual Basic mostra como um cliente não transacional pode compor o trabalho feito por mais de um objeto em uma única transação:
 
 
 ```VB

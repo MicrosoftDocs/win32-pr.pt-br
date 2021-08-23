@@ -4,22 +4,22 @@ ms.assetid: 8c2afeb3-3e0b-4f8a-a2f4-df7c9ce4b098
 title: Requisitos do método de interface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9cabe02900fa789773f4104cf282ab326bd4930
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8525f7b04fe82247ecd64a38f5f1acc298be5d3ace56303072268fed6a4a3cfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086919"
 ---
 # <a name="interface-method-requirements"></a>Requisitos do método de interface
 
 Nem todo método em cada interface deve ter uma implementação. Por exemplo, alguns codecs têm metadados globais, miniaturas ou contextos de cores, enquanto outros codecs os fornecem apenas em uma base por quadro. Se os autores de codec fornecerem esses somente por quadro, eles precisarão implementar apenas [**Get**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) ou ColorContexts, ou implementar os métodos [**GetMetadataQueryReader**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader) ou [**GetMetadataQueryWriter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-getmetadataquerywriter) em [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) e [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) em vez de em [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) e [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder). Da mesma forma, alguns codecs não usam formatos indexados e, portanto, não são necessários para implementar os métodos [**CopyPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-copypalette) e [**SetPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette) . Portanto, esses métodos são opcionais e são deixados para a critério do criador do codec. A maioria dos outros métodos são necessários.
 
-Para o Windows 7, [**obtenha**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview) / [**SetPreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview) e [**obter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**SetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) são necessários e devem ser implementados nas classes de nível de contêiner ou nas classes de nível de quadro. Se o formato do arquivo de imagem não der suporte a visualizações ou miniaturas em qualquer um desses locais, você deverá revisar o formato do arquivo de imagem para fornecer esse suporte.
+para Windows 7 [**obter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getpreview) / [**setpreview**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview) e [**obter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getthumbnail) / [**setthumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setthumbnail) são necessários e devem ser implementados nas classes de nível de contêiner ou nas classes de nível de quadro. Se o formato do arquivo de imagem não der suporte a visualizações ou miniaturas em qualquer um desses locais, você deverá revisar o formato do arquivo de imagem para fornecer esse suporte.
 
 Quando um método não é implementado, é importante retornar um erro apropriado para que o chamador possa determinar que o recurso solicitado não tem suporte. Por exemplo, se os autores de codec não oferecerem suporte a miniaturas de nível de contêiner, eles deverão retornar [WINCODEC \_ Err \_ CODECNOTHUMBNAIL](-wic-codec-error-codes.md) quando um aplicativo chamar [**GetThumbnail**](-wic-codec-iwicbitmapdecoder-getthumbnail-proxy.md)e, se eles não tiverem uma paleta, deverão retornar [WINCODEC \_ Err \_ PALETTEUNAVAILABLE](-wic-codec-error-codes.md). Se não existir nenhum código de [ \_ erro WINCODEC](-wic-codec-error-codes.md) adequado, o codec deverá retornar E \_ NOTIMPL para métodos não implementados.
 
-As tabelas a seguir listam os métodos obrigatórios e opcionais para cada interface do Windows Imaging Component (WIC).
+as tabelas a seguir listam os métodos obrigatórios e opcionais para cada interface WIC (Windows Imaging Component).
 
 [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 
@@ -145,7 +145,7 @@ Obrigatório
 
 [**CreateNewFrame**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe)
 
-[**Compromisso**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
+[**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
 
 Opcional
 
@@ -189,7 +189,7 @@ Obrigatório
 
 [**Gravação**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource)
 
-[**Compromisso**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
+[**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit)
 
 Opcional
 
@@ -227,16 +227,16 @@ Obrigatório
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Diretrizes do WIC para formatos de imagem bruta de câmera](-wic-rawguidelines.md)
+[Diretrizes do WIC para formatos de imagem RAW da câmera](-wic-rawguidelines.md)
 </dt> <dt>
 
-[Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
+[Como escrever um codec WIC-Enabled código](-wic-howtowriteacodec.md)
 </dt> </dl>
 
  

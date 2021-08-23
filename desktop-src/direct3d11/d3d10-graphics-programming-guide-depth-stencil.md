@@ -4,24 +4,24 @@ description: Esta seção abrange as etapas para configurar o buffer de estênci
 ms.assetid: e8f52d5f-266f-4e2c-b38d-d7fd9e27fe1f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65bf48b0ba9a782be25568ac3fc0569314dae76e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e994c5a11215d245d8101edff410a91ffb788583b07f651fdfbd1f2771d7deab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990186"
 ---
 # <a name="configuring-depth-stencil-functionality"></a>Configurando Depth-Stencil funcionalidade
 
 Esta seção abrange as etapas para configurar o buffer de estêncil de profundidade e o estado de estêncil de profundidade para o estágio de fusão de saída.
 
--   [Criar um recurso de Depth-Stencil](#create-a-depth-stencil-resource)
+-   [Criar um recurso Depth-Stencil dados](#create-a-depth-stencil-resource)
 -   [Criar Depth-Stencil estado](#create-depth-stencil-state)
--   [Associar dados de Depth-Stencil ao estágio de OM](#bind-depth-stencil-data-to-the-om-stage)
+-   [Vincular Depth-Stencil dados ao estágio do OM](#bind-depth-stencil-data-to-the-om-stage)
 
 Assim que você souber como usar o buffer de estêncil de profundidade e o estado de estêncil de profundidade correspondente, consulte [técnicas avançadas de estêncil](#advanced-stencil-techniques).
 
-## <a name="create-a-depth-stencil-resource"></a>Criar um recurso de Depth-Stencil
+## <a name="create-a-depth-stencil-resource"></a>Criar um recurso Depth-Stencil dados
 
 Crie o buffer de estêncil de profundidade usando um recurso de textura.
 
@@ -82,9 +82,9 @@ pd3dDevice->CreateDepthStencilState(&dsDesc, &pDSState);
 
 
 
-DepthEnable e StencilEnable habilitam (e desabilitam) o teste de profundidade e de estêncil. Defina DepthEnable como **false** para desabilitar o teste de profundidade e impedir a gravação no buffer de profundidade. Defina StencilEnable como **false** para desabilitar o teste de estêncil e impedir a gravação no buffer de estêncil (quando DepthEnable for **false** e StencilEnable for **true**, o teste de profundidade sempre passa na operação de estêncil).
+DepthEnable e StencilEnable permitem (e desabilitam) testes de profundidade e estêncil. De definido DepthEnable como **FALSE para** desabilitar o teste de profundidade e impedir a escrita no buffer de profundidade. De definir StencilEnable como **FALSE** para desabilitar o teste de estêncil e impedir a escrita no buffer de estêncil (quando DepthEnable é **FALSE** e StencilEnable **é TRUE**, o teste de profundidade sempre passa na operação de estêncil).
 
-O DepthEnable só afeta o estágio de mesclagem de saída-ele não afeta recorte, tendência de profundidade ou fixação MSS de valores antes que os dados sejam inseridos em um sombreador de pixel.
+DepthEnable afeta apenas o estágio de fusão de saída – não afeta recorte, desvio de profundidade ou fixação de valores antes que os dados são entrada em um sombreador de pixel.
 
 ## <a name="bind-depth-stencil-data-to-the-om-stage"></a>Associar dados de estêncil de profundidade ao estágio de OM
 
@@ -121,14 +121,14 @@ pd3dDeviceContext->OMSetRenderTargets( 1,          // One rendertarget view
 
 
 
-Uma matriz de exibições de destino de renderização pode ser passada em [**ID3D11DeviceContext:: OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets), mas todas as exibições de destino de renderização corresponderão a uma exibição de estêncil de profundidade única. A matriz de destino de renderização no Direct3D 11 é um recurso que permite que um aplicativo seja processado em vários destinos de renderização simultaneamente no nível primitivo. As matrizes de destino de renderização oferecem maior desempenho em relação à configuração individual de destinos de renderização com várias chamadas para **ID3D11DeviceContext:: OMSetRenderTargets** (essencialmente o método empregado no Direct3D 9).
+Uma matriz de exibições de destino de renderização pode ser passada para [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets), no entanto, todas essas exibições de destino de renderização corresponderão a uma única exibição de estêncil de profundidade. A matriz de destino de renderização no Direct3D 11 é um recurso que permite que um aplicativo renderizar em vários destinos de renderização simultaneamente no nível primitivo. As matrizes de destino de renderização oferecem maior desempenho em relação à configuração individual de destinos de renderização com várias chamadas para **ID3D11DeviceContext::OMSetRenderTargets** (essencialmente o método empregado no Direct3D 9).
 
 Os destinos de renderização devem todos ser do mesmo tipo de recurso. Se a suavização de várias amostras for usada, todos os destinos de renderização associados e buffers de profundidade devem ter as mesmas contagens de amostra.
 
 Quando um buffer é usado como um destino de renderização, os testes de estêncil de profundidade e os destinos de renderização múltiplos não são permitidos.
 
 -   Até 8 destinos de renderização podem ser vinculados ao mesmo tempo.
--   Todos os destinos de renderização devem ter o mesmo tamanho em todas as dimensões (largura e altura e profundidade para 3D ou tamanho da matriz para \* tipos de matriz).
+-   Todos os destinos de renderização devem ter o mesmo tamanho em todas as dimensões (largura e altura e profundidade para tamanho 3D ou de matriz para tipos \* de matriz).
 -   Cada destino de renderização pode ter um formato de dados diferente.
 -   As máscaras de gravação controlam quais dados são gravados em um destino de renderização. As máscaras de gravação de saída controlam, a um nível de componente e de destino de renderização, quais dados são gravados nos destinos de renderização.
 
@@ -137,10 +137,10 @@ Quando um buffer é usado como um destino de renderização, os testes de estên
 A parte de estêncil do buffer de estêncil de profundidade pode ser usada para criar efeitos de renderização como composição, decalque e contornos.
 
 -   [Composição](#compositing)
--   [Decaling](#decaling)
+-   [Decalçamento](#decaling)
 -   [Contornos e silhuetas](#outlines-and-silhouettes)
--   [Estêncil de duas pontas](#two-sided-stencil)
--   [Lendo o buffer de Depth-Stencil como uma textura](#reading-the-depth-stencil-buffer-as-a-texture)
+-   [Estêncil de dois lados](#two-sided-stencil)
+-   [Lendo o buffer Depth-Stencil como uma textura](#reading-the-depth-stencil-buffer-as-a-texture)
 
 ### <a name="compositing"></a>Composição
 
@@ -174,33 +174,33 @@ A primeira renderização desenha polígonos voltados para frente e aumenta os v
 
 Isso significa que a geometria de sombra é desenhada duas vezes por fonte de luz, exercendo assim pressão sobre a taxa de transferência de vértice da GPU. O recurso de estêncil de dois lados foi projetado para atenuar essa situação. Nesta abordagem, existem dois conjuntos de estado de estêncil (nomeados abaixo), um conjunto para os triângulos voltados para a frente e outro para os triângulos voltados para trás. Dessa forma, somente uma única passagem é desenhada por volume de sombra, por luz.
 
-Um exemplo de implementação de estêncil de dois lados pode ser encontrado no [exemplo ShadowVolume10](https://msdn.microsoft.com/library/Ee416427(v=VS.85).aspx).
+Um exemplo de implementação de estêncil de dois lados pode ser encontrado no [Exemplo de ShadowVolume10](https://msdn.microsoft.com/library/Ee416427(v=VS.85).aspx).
 
 ### <a name="reading-the-depth-stencil-buffer-as-a-texture"></a>Ler o buffer de estêncil de profundidade como uma textura
 
 Um buffer de estêncil de profundidade inativo pode ser lido por um sombreador como uma textura. Um app que lê um buffer de estêncil de profundidade como uma textura renderiza em duas passagens, a primeira passagem grava o buffer de estêncil de profundidade e a segunda passagem lê do buffer. Isso permite que um sombreador compare os valores de profundidade ou estêncil gravados anteriormente no buffer com o valor do pixel que está sendo renderizado atualmente. O resultado da comparação pode ser usado para criar efeitos, como o mapeamento de sombra ou partículas suaves em um sistema de partículas.
 
-Para criar um buffer de estêncil de profundidade que pode ser usado como um recurso de estêncil de profundidade e um recurso de sombreador, algumas alterações precisam ser feitas para o código de exemplo na seção [criar um Depth-Stencil recurso](#create-a-depth-stencil-resource) .
+Para criar um buffer de estêncil de profundidade que pode ser usado como um recurso de estêncil de profundidade e um recurso de sombreador, algumas alterações precisam ser feitas no código de exemplo na seção Criar um recurso [de](#create-a-depth-stencil-resource) Depth-Stencil.
 
--   O recurso de estêncil de profundidade deve ter um formato não tipado, como o \_ formato dxgi \_ R32 \_ .
+-   O recurso de estêncil de profundidade deve ter um formato sem tipo, como DXGI \_ FORMAT \_ R32 \_ TYPELESS.
     ```
     descDepth.Format = DXGI_FORMAT_R32_TYPELESS;
     ```
 
     
 
--   O recurso de estêncil de profundidade deve usar os sinalizadores de associação de recurso do estêncil de profundidade de D3D10 \_ e do d3d10 BIND \_ \_ \_ \_ Shader \_ .
+-   O recurso de estêncil de profundidade deve usar os sinalizadores de vinculação D3D10 \_ BIND DEPTH DEPTH e \_ \_ D3D10 \_ BIND \_ SHADER \_ RESOURCE.
     ```
     descDepth.BindFlags = D3D10_BIND_DEPTH_STENCIL | D3D10_BIND_SHADER_RESOURCE;
     ```
 
     
 
-Além disso, um modo de exibição de recursos do sombreador precisa ser criado para o buffer de profundidade usando uma estrutura [**desc de exibição de \_ recursos do sombreador \_ \_ \_ D3D11**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_shader_resource_view_desc) e [**ID3D11Device:: CreateShaderResourceView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview). O modo de exibição de recursos do sombreador usará um formato tipado, como o **\_ formato dxgi \_ R32 \_ float** que é equivalente ao formato de tipo informativo especificado quando o recurso de estêncil de profundidade foi criado.
+Além disso, uma exibição de recurso de sombreador precisa ser criada para o buffer de profundidade usando uma estrutura [**D3D11 \_ SHADER \_ RESOURCE VIEW \_ \_ DESC**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_shader_resource_view_desc) e [**ID3D11Device::CreateShaderResourceView**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createshaderresourceview). A exibição de recurso do sombreador usará um formato digitado, como **DXGI \_ FORMAT \_ R32 \_ FLOAT,** que é equivalente ao formato sem tipo especificado quando o recurso de estêncil de profundidade foi criado.
 
-No primeiro processamento, passe o buffer de profundidade associado, conforme descrito na seção [associar dados Depth-Stencil à etapa de OM](#bind-depth-stencil-data-to-the-om-stage) . Observe que o formato passado para [**a \_ exibição de estêncil de profundidade D3D11 \_ \_ \_ desc**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencil_view_desc). O formato usará um formato tipado, como o **\_ formato dxgi \_ D32 \_ float**. Após a primeira passagem de renderização, o buffer de profundidade conterá os valores de profundidade para a cena.
+Na primeira passagem de renderização, o buffer de profundidade é vinculado, conforme descrito na seção Depth-Stencil Dados de Depth-Stencil [para o Estágio do OM.](#bind-depth-stencil-data-to-the-om-stage) Observe que o formato passado para [**D3D11 \_ DEPTH \_ STENCIL \_ VIEW \_ DESC**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_depth_stencil_view_desc). O formato usará um formato digitado, como **DXGI \_ FORMAT \_ D32 \_ FLOAT.** Depois que a primeira renderização passar, o buffer de profundidade conterá os valores de profundidade para a cena.
 
-Na segunda passagem de renderização, a função [**ID3D11DeviceContext:: OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets) é usada para definir a exibição de estêncil de profundidade como **nula** ou um recurso de estêncil de profundidade diferente e a exibição de recurso do sombreador é passada para o sombreador usando [**ID3D11EffectShaderResourceVariable:: setresource**](id3dx11effectshaderresourcevariable-setresource.md). Isso permite que o sombreador pesquise os valores de profundidade calculados na primeira passagem de renderização. Observe que será necessário aplicar uma transformação para recuperar valores de profundidade se o ponto de vista da primeira passagem de renderização for diferente da segunda passagem de renderização. Por exemplo, se uma técnica de mapeamento de sombra estiver sendo usada, a primeira passagem de renderização será da perspectiva de uma fonte de luz enquanto a segunda passagem de renderização irá da perspectiva do visualizador.
+Na segunda passagem de renderização, a função [**ID3D11DeviceContext::OMSetRenderTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-omsetrendertargets) é usada para definir a exibição de estêncil de profundidade como **NULL** ou um recurso de estêncil de profundidade diferente e a exibição de recurso do sombreador é passada para o sombreador usando [**ID3D11EffectShaderResourceVariable::SetResource**](id3dx11effectshaderresourcevariable-setresource.md). Isso permite que o sombreador procure os valores de profundidade calculados na primeira passagem de renderização. Observe que uma transformação precisará ser aplicada para recuperar valores de profundidade se o ponto de exibição da primeira passagem de renderização for diferente da segunda passagem de renderização. Por exemplo, se uma técnica de mapeamento de sombra estiver sendo usada, a primeira passagem de renderização será da perspectiva de uma fonte de luz, enquanto a segunda passagem de renderização será da perspectiva do visualizador.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -212,6 +212,6 @@ Na segunda passagem de renderização, a função [**ID3D11DeviceContext:: OMSet
 [Estágios de pipeline (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-pipeline-stages)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

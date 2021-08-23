@@ -3,7 +3,7 @@ title: Mensagem de LVM_INSERTGROUP (commctrl. h)
 description: Insere um grupo em um controle de exibição de lista.
 ms.assetid: d43e21bc-e212-42dd-af88-48813d40cd50
 keywords:
-- Controles de LVM_INSERTGROUP de mensagens do Windows
+- controles de Windows de mensagem de LVM_INSERTGROUP
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94dbae780f7de26a5c791477e1a7321794054056
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f31504226663b0df91e0297ed29abf784ff239dfcee5f323e8617f73dff65acc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019244"
 ---
 # <a name="lvm_insertgroup-message"></a>Mensagem de inserção do LVM \_
 
@@ -35,7 +35,7 @@ Insere um grupo em um controle de exibição de lista.
 *lParam* 
 </dt> <dd>Ponteiro para uma estrutura <a href="/windows/win32/api/commctrl/ns-commctrl-lvgroup">**LVGROUP**</a> que contém o grupo a ser adicionado.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o índice do item ao qual o grupo foi adicionado ou-1 se a operação falhou.
 
@@ -58,9 +58,9 @@ Certifique-se de definir **iGroupId** no (s) item (ns) ao qual o grupo foi adici
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: O método PossiblyEatMessage permite que uma classe derivada encaminhe mensagens para outra janela.
 ms.assetid: d8775182-44ed-4df2-b4b8-1fdf289e2c1a
-title: Método CBaseWindow. PossiblyEatMessage (Winutil. h)
+title: Método CBaseWindow.PossiblyEatMessage (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f218b62ac5464da27b8596992c34ce7ae5efde46
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 851f46d14f949a49c9422256f9b2bda1ba314e5789773121387e89c011f7a424
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016454"
 ---
-# <a name="cbasewindowpossiblyeatmessage-method"></a>Método CBaseWindow. PossiblyEatMessage
+# <a name="cbasewindowpossiblyeatmessage-method"></a>Método CBaseWindow.PossiblyEatMessage
 
 O `PossiblyEatMessage` método permite que uma classe derivada encaminhe mensagens para outra janela.
 
@@ -44,7 +44,7 @@ virtual BOOL PossiblyEatMessage(
 
 <dl> <dt>
 
-*uMsg* 
+*Umsg* 
 </dt> <dd>
 
 Identificador de mensagem.
@@ -65,13 +65,13 @@ Segundo parâmetro de mensagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **true** se a mensagem foi encaminhada ou **false** caso contrário. A classe base retorna **false**.
+Retornará **TRUE** se a mensagem tiver sido encaminhada ou **FALSE** caso contrário. A classe base retorna **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Antes que o método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onreceivemessage.md) manipule uma mensagem, ele chama `PossiblyEatMessage` . Se `PossiblyEatMessage` retornar **true**, **OnReceiveMessage** ignorará a mensagem. Uma classe derivada pode substituir `PossiblyEatMessage` para que ela encaminhe algumas mensagens para uma janela do proprietário. Por exemplo, a classe [**CBaseControlWindow**](cbasecontrolwindow.md) , que deriva de **CBaseWindow**, encaminha mensagens de teclado e mouse.
+Antes de [**o método CBaseWindow::OnReceiveMessage**](cbasewindow-onreceivemessage.md) manipular uma mensagem, ele chama `PossiblyEatMessage` . Se `PossiblyEatMessage` retornar **TRUE,** **OnReceiveMessage** ignorará a mensagem. Uma classe derivada pode substituir `PossiblyEatMessage` para que ela encaminhe algumas mensagens para uma janela de proprietário. Por exemplo, a [**classe CBaseControlWindow,**](cbasecontrolwindow.md) que deriva de **CBaseWindow,** encaminha mensagens do teclado e do mouse.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Antes que o método [**CBaseWindow:: OnReceiveMessage**](cbasewindow-onreceiveme
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

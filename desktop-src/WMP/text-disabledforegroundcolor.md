@@ -3,7 +3,7 @@ title: TEXT. disabledForegroundColor
 description: O atributo disabledForegroundColor especifica ou recupera a cor de texto usada para o controle de texto quando ele está desabilitado.
 ms.assetid: 0ac2dc0c-817f-4902-b03b-072dbda45c3d
 keywords:
-- TEXT. disabledForegroundColor Windows Media Player
+- Windows Media Player TEXT. disabledForegroundColor
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1af45ae7338ee9084e5345a480006a861a7cc4c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7c5ffca8060c496526c3b5cc9f9229310489bdd5bbfef9467c3e2bb91992ded4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134609"
 ---
 # <a name="textdisabledforegroundcolor"></a>TEXT. disabledForegroundColor
 

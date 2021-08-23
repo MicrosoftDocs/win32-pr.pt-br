@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f558a5fee10d0403eeaacab9dc29ff3ea52b427c
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 28392f7bb9c2f59bd766e42ec21fb87a854b08bedd8336ebb6f7249b7eccb940
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104006940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119570"
 ---
 # <a name="predicate-register-hlsl-vs-reference"></a>Registro de predicado (referência de HLSL VS)
 
@@ -30,7 +30,7 @@ Um registro de predicado tem suporte nas seguintes versões.
 
 
 
- 
+ 
 
 Aqui estão as propriedades do registro.
 
@@ -42,7 +42,7 @@ Aqui estão as propriedades do registro.
 
 
 
- 
+ 
 
 O registro de predicado pode ser modificado com [setp \_ comp-vs](setp-comp---vs.md). Não há valores padrão para esse registro, um aplicativo precisa definir o registro antes de ser usado.
 
@@ -53,9 +53,9 @@ O registro de predicado pode ser modificado com [setp \_ comp-vs](setp-comp---vs
 [Registros de sombreador de vértice](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

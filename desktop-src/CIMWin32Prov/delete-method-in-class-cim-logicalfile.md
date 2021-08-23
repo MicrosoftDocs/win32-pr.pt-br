@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d8462d097834015883d47ec3da0d70e517a4ead0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e8d5457d35f2385136a8280a73f819fcc475f8a86229f045dd00f2b7cf330fcf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020564"
 ---
 # <a name="delete-method-of-the-cim_logicalfile-class"></a>Método Delete da classe de \_ LogicalFile CIM
 
@@ -45,7 +45,7 @@ uint32 Delete();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -65,7 +65,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Sistema de arquivos não NTFS.
 
 </dd> <dt>
 
-**Plataforma não NT/Windows 2000**
+**plataforma não NT/Windows 2000**
 </dt> <dd>
 
 12

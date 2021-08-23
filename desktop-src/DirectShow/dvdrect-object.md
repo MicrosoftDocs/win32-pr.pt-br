@@ -4,22 +4,22 @@ ms.assetid: 8f540ac6-1c1e-43d8-a0dd-bba3b5983b02
 title: Objeto DVDRect
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55d53bd821380ac9078346e99dde92d617359cbc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f796b729d9cb6a57569ed9fc859ec40ce17cf49ecec12f8cdbaf28873387d591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148579"
 ---
 # <a name="dvdrect-object"></a>Objeto DVDRect
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
 > [!Note]  
-> Essa API está preterida. Para obter informações sobre reprodução e navegação em DVD no DirectShow, consulte [aplicativos de DVD](dvd-applications.md).
+> Essa API está preterida. para obter informações sobre reprodução e navegação em dvd no DirectShow, consulte [aplicativos de dvd](dvd-applications.md).
 
  
 
@@ -29,8 +29,8 @@ As propriedades do `DVDRect` objeto permitem que um aplicativo de script especif
 
 | Propriedades                        | Descrição                                                            |
 |-----------------------------------|------------------------------------------------------------------------|
-| [**x**](x-property.md)           | Define ou recupera a posição x do canto superior esquerdo do retângulo. |
-| [**Iar**](y-property.md)           | Define ou recupera a posição y do canto superior esquerdo do retângulo. |
+| [**w.x.y.**](x-property.md)           | Define ou recupera a posição x do canto superior esquerdo do retângulo. |
+| [**a**](y-property.md)           | Define ou recupera a posição y do canto superior esquerdo do retângulo. |
 | [**Largura**](width-property.md)   | Define ou recupera a largura do retângulo, em pixels.               |
 | [**Altura**](height-property.md) | Define ou recupera a altura do retângulo, em pixels.              |
 
@@ -42,7 +42,7 @@ As propriedades do `DVDRect` objeto permitem que um aplicativo de script especif
 
 <dl> <dt>
 
-[Controle ActiveX MSWebDVD](mswebdvd-activex-control.md)
+[controle de ActiveX de MSWebDVD](mswebdvd-activex-control.md)
 </dt> </dl>
 
  

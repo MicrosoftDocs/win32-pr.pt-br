@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 27fbf603fd670cac2a39831114a7f141b17ffd2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 818a7682fed504028ebee1c3a5ff5d35a268e1daad8756b110bcfcb2ca8d9f80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016864"
 ---
 # <a name="cbaserenderershoulddrawsamplenow-method"></a>Método CBaseRenderer. ShouldDrawSampleNow
 
@@ -65,7 +65,7 @@ Ponteiro para uma variável que contém a hora de término da amostra.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ false. Se a classe derivada substituir esse método, retorne um dos valores mostrados na tabela a seguir.
 
@@ -75,7 +75,7 @@ Retorna S \_ false. Se a classe derivada substituir esse método, retorne um dos
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | O exemplo deve ser renderizado imediatamente.<br/>                              |
 | <dl> <dt>**\_falso**</dt> </dl>   | O exemplo deve ser agendado para renderização, com base nos carimbos de data/hora.<br/> |
-| <dl> <dt>**Código de erro**</dt> </dl> | Não processar este exemplo.<br/>                                              |
+| <dl> <dt>**Código do erro**</dt> </dl> | Não processar este exemplo.<br/>                                              |
 
 
 
@@ -91,7 +91,7 @@ O método [**CBaseRenderer:: GetSampleTimes**](cbaserenderer-getsampletimes.md) 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

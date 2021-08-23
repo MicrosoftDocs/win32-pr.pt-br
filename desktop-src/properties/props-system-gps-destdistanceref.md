@@ -4,12 +4,12 @@ ms.assetid: 2251b8ae-635f-450d-a037-a7f893c1f3d9
 title: System. GPS. DestDistanceRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f763dd93bd65d2645143a9ad7b6b5246a9b8ea1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddb775e4fa3710e89156e0b86fe8a43d918964b3f3ef465059e7b8d0a9cf5a75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033524"
 ---
 # <a name="systemgpsdestdistanceref"></a>System. GPS. DestDistanceRef
 

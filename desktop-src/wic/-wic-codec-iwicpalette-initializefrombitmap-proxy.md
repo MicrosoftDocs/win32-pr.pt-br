@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método InitializeFromBitmap.
+description: Função proxy para o método InitializeFromBitmap.
 ms.assetid: 9559a56d-7201-4b39-a3cd-9c0e4eac611a
-title: Função IWICPalette_InitializeFromBitmap_Proxy
+title: IWICPalette_InitializeFromBitmap_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: cf5e119acf1efca948281a02f61d8954f4e08818
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c807e95b980a564096216727315f4a1534e8cd011cc78aa7322f670fff0876c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105765762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088178"
 ---
-# <a name="iwicpalette_initializefrombitmap_proxy-function"></a>\_Função de \_ proxy IWICPalette InitializeFromBitmap
+# <a name="iwicpalette_initializefrombitmap_proxy-function"></a>Função proxy IWICPalette \_ InitializeFromBitmap \_
 
-Função de proxy para o método [**InitializeFromBitmap**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializefrombitmap) .
+Função proxy para o [**método InitializeFromBitmap.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-initializefrombitmap)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,47 +43,47 @@ HRESULT IWICPalette_InitializeFromBitmap_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Ponteiro para este objeto [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
+Ponteiro para este [**objeto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
 
 </dd> <dt>
 
-*pISurface* \[ no\]
+*pISurface* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
 Ponteiro para o bitmap de origem.
 
 </dd> <dt>
 
-_colorCount * \[ in\]
+*colorCount* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O número de cores com as quais inicializar a paleta.
+O número de cores com o que inicializar a paleta.
 
 </dd> <dt>
 
-*fAddTransparentColor* \[ no\]
+*fAddTransparentColor* \[ Em\]
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Um valor para indicar se uma cor transparente deve ser adicionada.
+Um valor para indicar se é preciso adicionar uma cor transparente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -93,9 +93,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

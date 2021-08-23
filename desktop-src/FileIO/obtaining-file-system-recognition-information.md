@@ -1,21 +1,21 @@
 ---
-description: O reconhecimento do sistema de arquivos é a capacidade de reconhecer a mídia de armazenamento que contém um layout de volume/sistema de arquivos válido que ainda não foi definido, mas a mídia é capaz de se identificar por meio da presença da estrutura de reconhecimento definida internamente pelo Windows.
+description: O reconhecimento do sistema de arquivos é a capacidade de reconhecer a mídia de armazenamento que contém um layout válido do sistema de arquivos/volume que ainda não foi definido, mas a mídia é capaz de se identificar por meio da presença da estrutura de reconhecimento definida internamente pelo Windows.
 ms.assetid: 23ed6de0-25ff-4841-91f6-94b487dee613
 title: Obtendo informações de reconhecimento do sistema de arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18cafa9f1c7cf6cbbe11d434aff3db424a1cd0a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c10b538f9e98ecab3f8f8f72784ef658c068f780388dc7b600be68b76380757
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148499"
 ---
 # <a name="obtaining-file-system-recognition-information"></a>Obtendo informações de reconhecimento do sistema de arquivos
 
-O [reconhecimento do sistema de arquivos](file-system-recognition.md) é a capacidade de reconhecer a mídia de armazenamento que contém um layout de volume/sistema de arquivos válido que ainda não foi definido, mas a mídia é capaz de se identificar por meio da presença da estrutura de reconhecimento definida internamente pelo Windows.
+[](file-system-recognition.md) O reconhecimento do sistema de arquivos é a capacidade de reconhecer a mídia de armazenamento que contém um layout válido do sistema de arquivos/volume que ainda não foi definido, mas a mídia é capaz de se identificar por meio da presença da estrutura de reconhecimento definida internamente pelo Windows.
 
-Como nenhum sistema de arquivos existente reconhecerá um novo layout de disco, o sistema de arquivos "bruto" montará o volume e fornecerá acesso direto ao nível de bloco. O sistema de arquivos "bruto", incorporado em *NtosKrnl*, terá a capacidade de ler a estrutura de reconhecimento do sistema de arquivos e fornecer aos aplicativos acesso a tais estruturas por meio da solicitação de controle do sistema de arquivos [**fsctl consulta do \_ \_ sistema de arquivos \_ \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition), mostrada no exemplo a seguir.
+Como nenhum sistema de arquivos existente reconhecerá um novo layout de disco, o sistema de arquivos "RAW" montará o volume e fornecerá acesso direto no nível do bloco. O sistema de arquivos "RAW", incorporado em *NtosKrnl,* terá a capacidade de ler a estrutura de reconhecimento do sistema de arquivos e fornecer aos aplicativos acesso a essas estruturas por meio da solicitação de controle do sistema de arquivos [**FSCTL \_ QUERY \_ FILE SYSTEM \_ \_ RECOGNITION**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition), mostrada no exemplo a seguir.
 
 
 ```C++
@@ -95,10 +95,10 @@ exit:
 [Reconhecimento do sistema de arquivos](file-system-recognition.md)
 </dt> <dt>
 
-[**\_estrutura de \_ reconhecimento do sistema de arquivos \_**](file-system-recognition-structure.md)
+[**ESTRUTURA DE \_ RECONHECIMENTO DO SISTEMA DE \_ \_ ARQUIVOS**](file-system-recognition-structure.md)
 </dt> <dt>
 
-[**\_reconhecimento do \_ sistema de arquivos de consulta fsctl \_ \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition)
+[**RECONHECIMENTO DO SISTEMA DE ARQUIVOS DE CONSULTA FSCTL \_ \_ \_ \_**](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_file_system_recognition)
 </dt> </dl>
 
  

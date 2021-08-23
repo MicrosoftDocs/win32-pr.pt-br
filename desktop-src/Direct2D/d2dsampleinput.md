@@ -3,7 +3,7 @@ title: Função D2DSampleInput (D2d1effecthelpers. h)
 description: Exemplos de entrada N na posição UV. Disponível somente para entradas complexas.
 ms.assetid: 8C1E3B23-D05B-4FCC-B32F-A5870A7C3FEF
 keywords:
-- Direct2D da função D2DSampleInput
+- Função D2DSampleInput Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5929e9c113e5fa9a7c8a72003357b280a810e49e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c887221ade413b63456ecb3c4a91c7a5b480858b04e1f34e89506fdcf071dfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075270"
 ---
 # <a name="d2dsampleinput-function"></a>Função D2DSampleInput
 
@@ -52,7 +52,7 @@ A posição UV.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retorna um **FLOAT4**, no formato TEXCOORDN.
 

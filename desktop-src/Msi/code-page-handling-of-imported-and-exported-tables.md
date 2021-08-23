@@ -4,12 +4,12 @@ ms.assetid: dc52313b-38e7-43cc-abfd-86966c836fce
 title: Manipulação de página de código de tabelas importadas e exportadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b090bead1fa35b451ed12e0e0da0143b98b8918
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f9a64617ccfda25380076d62e6dd4ad8c18c55f68afd0236b3258638c899f29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065996"
 ---
 # <a name="code-page-handling-of-imported-and-exported-tables"></a>Manipulação de página de código de tabelas importadas e exportadas
 
@@ -54,7 +54,7 @@ Para obter mais informações, consulte [determinando uma página de código do 
 
 Os [arquivos mortos de texto](text-archive-files.md) exportados pelo [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta) podem ser usados com sistemas de controle de versão. Use as [funções de banco](database-functions.md) de dados ou um editor de tabela de banco de dados para editar o banco de dados.
 
-Você pode adicionar informações de localização a um banco de dados de instalação usando um editor de tabela de banco de dados ou a API Windows Installer. Para obter mais informações, consulte [manipulação de página de código de cadeias de caracteres de parâmetro](code-page-handling-of-parameter-strings.md).
+você pode adicionar informações de localização a um banco de dados de instalação usando um editor de tabela de banco de dados ou a API Windows Installer. Para obter mais informações, consulte [manipulação de página de código de cadeias de caracteres de parâmetro](code-page-handling-of-parameter-strings.md).
 
  
 

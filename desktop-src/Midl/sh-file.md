@@ -1,8 +1,8 @@
 ---
 title: palavra-chave sh_file
-description: A \_ palavra-chave \ sh File \ especifica que o objeto do sistema é um identificador para um arquivo.
+description: A \_ palavra-chave \ sh file\ especifica que o objeto do sistema é um identificador para um arquivo.
 keywords:
-- MIDL de palavra-chave sh_file
+- sh_file palavra-chave MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,16 +11,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 02/05/2021
-ms.openlocfilehash: f7d2ae0ef4a8166f90700267fa8459525ad4be2f
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 05b76ad772ca628a28677d9b0da06252d0fec70251a4a197d39b50b9760ef931
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104297842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013624"
 ---
-# <a name="sh_file-keyword"></a>\_palavra-chave do arquivo sh
+# <a name="sh_file-keyword"></a>\_Palavra-chave de arquivo sh
 
-A palavra-chave **sh \_ File** especifica que um `system_handle` contém um identificador para um arquivo.
+A **\_ palavra-chave de** arquivo sh especifica que um `system_handle` contém um handle para um arquivo.
 
 ``` syntax
 [system_handle(sh_file)]
@@ -30,13 +30,13 @@ A palavra-chave **sh \_ File** especifica que um `system_handle` contém um iden
 
 ## <a name="parameters"></a>Parâmetros
 
-Essa palavra-chave é um parâmetro para [**system_handle**](system-handle.md).
+Essa palavra-chave é um parâmetro [**para system_handle**](system-handle.md).
 
-A documentação [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do parâmetro *Access-Rights* . O comportamento padrão é de acordo com as `DUPLICATE_SAME_ACCESS` especificações de [função **DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle) .
+A [**system_handle**](system-handle.md) também contém detalhes sobre o uso opcional do *parâmetro access-rights.* O comportamento padrão é `DUPLICATE_SAME_ACCESS` de acordo com as [especificações de função **DuplicateHandle.**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)
 
 ## <a name="remarks"></a>Comentários
 
-Para usar essa palavra-chave com o `system_handle` atributo, o `-target` sinalizador deve ser definido como `NT100` (ou superior) durante a execução de midl.exe.
+Para usar essa palavra-chave com o `system_handle` atributo , o sinalizador deve ser definido como `-target` `NT100` (ou superior) ao executar midl.exe.
 
 ## <a name="examples"></a>Exemplos
 
@@ -53,8 +53,8 @@ interface MyInterface : IUnknown
 
 | &nbsp; | &nbsp; |
 |-|-|
-| Cliente mínimo com suporte | Atualização de aniversário do Windows 10 (versão 1607, Build 14393) |
-| Servidor mínimo com suporte | Windows Server 2016 (Build 14393) |
+| Cliente mínimo com suporte | Windows 10 Atualização de aniversário (versão 1607, build 14393) |
+| Servidor mínimo com suporte | Windows Server 2016 (build 14393) |
 
 ## <a name="see-also"></a>Confira também
 
@@ -63,11 +63,11 @@ interface MyInterface : IUnknown
 [**system_handle**](system-handle.md)
 </dt> <dt>
 
-[Segurança de arquivo e direitos de acesso](../fileio/file-security-and-access-rights.md)
+[Segurança de arquivos e direitos de acesso](../fileio/file-security-and-access-rights.md)
 </dt> <dt>
 
 [DirectComposition](/windows/win32/api/_directcomp/)
 </dt> <dt>
 
-[Função **DCompositionCreateSurfaceHandle**](/windows/win32/api/dcomp/nf-dcomp-dcompositioncreatesurfacehandle)
+[**Função DCompositionCreateSurfaceHandle**](/windows/win32/api/dcomp/nf-dcomp-dcompositioncreatesurfacehandle)
 </dt> <dt>

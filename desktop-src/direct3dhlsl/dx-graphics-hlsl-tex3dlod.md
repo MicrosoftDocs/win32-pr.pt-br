@@ -3,7 +3,7 @@ title: tex3Dlod
 description: Amostras de uma textura 3D com mipmaps. O LOD mipmap é especificado em t.w.
 ms.assetid: 9bdd8fa1-8c02-4765-8f4d-61ceb532354e
 keywords:
-- tex3Dlod HLSL
+- HLSL do tex3Dlod
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bc25af449f7f32e94d4ca344bf5ef3a4d09b376c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 787a9d9fff3fd997fc56a7b5820a81b4b6ab004882f378745a1c044ab6156f26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119900"
 ---
 # <a name="tex3dlod"></a>tex3Dlod
 
@@ -26,7 +26,7 @@ Amostras de uma textura 3D com mipmaps. O LOD mipmap é especificado em t.w.
 
 
 
-| RET tex3Dlod (s, t) |
+| ret tex3Dlod(s, t) |
 |--------------------|
 
 
@@ -39,8 +39,8 @@ Amostras de uma textura 3D com mipmaps. O LOD mipmap é especificado em t.w.
 
 | Item                                                   | Descrição                               |
 |--------------------------------------------------------|-------------------------------------------|
-| <span id="s"></span><span id="S"></span>*&*<br/> | \[no \] estado de amostra.<br/>      |
-| <span id="t"></span><span id="T"></span>*t*<br/> | \[na \] coordenada de textura.<br/> |
+| <span id="s"></span><span id="S"></span>*s*<br/> | \[em \] O estado do exemplo.<br/>      |
+| <span id="t"></span><span id="T"></span>*T*<br/> | \[na \] coordenada de textura.<br/> |
 
 
 
@@ -54,26 +54,26 @@ O valor dos dados de textura.
 
 
 
-| Name | Entrada/saída | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho |
+| Nome | Entrada/saída | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho |
 |------|--------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|------|
-| s    | in     | [**objeto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler3D](dx-graphics-hlsl-sampler.md)                      | 1    |
-| t    | in     | [**vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
-| RET  | out    | [**vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| s    | in     | [**Objeto**](dx-graphics-hlsl-intrinsic-functions.md) | [sampler3D](dx-graphics-hlsl-sampler.md)                      | 1    |
+| t    | in     | [**Vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
+| Ret  | out    | [**Vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | 4    |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                              | Com suporte               |
 |-----------------------------------------------------------|-------------------------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sim (somente sombreador de pixel) |
-| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | Sim (somente sombreador de pixel) |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim (somente sombreador de pixel) |
+| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sim (somente sombreador de pixel) |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não                      |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | não                      |
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ebdb9d19f6c88340fd53162febe694e3566408
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a567242431fc90be3b60d8ae08875b585ff6a81794899a6c9eb69e7a0a03daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012114"
 ---
 # <a name="glinitnames-function"></a>função glInitNames
 
@@ -38,7 +38,7 @@ void WINAPI glInitNames(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 

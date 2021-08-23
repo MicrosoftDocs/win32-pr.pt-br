@@ -1,21 +1,21 @@
 ---
-description: 'Etapa 1: criar o Windows Framework'
+description: 'etapa 1: criar a estrutura de Windows'
 ms.assetid: 678c6261-cbd0-4865-a1dd-03de55eca996
-title: 'Etapa 1: criar o Windows Framework'
+title: 'etapa 1: criar a estrutura de Windows'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91ff1712f631db520ff30065e8943d13b280f3d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: feba710c8df948e34c0da0ca9e7a1de85622bfae462290cbce3f36777854cb6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072510"
 ---
-# <a name="step-1-create-the-windows-framework"></a>Etapa 1: criar o Windows Framework
+# <a name="step-1-create-the-windows-framework"></a>etapa 1: criar a estrutura de Windows
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-Comece criando a estrutura básica de um aplicativo do Windows, incluindo WinMain e um procedimento de janela. A função WinMain não é mostrada aqui; Chame o [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) antes do loop de mensagem para inicializar a biblioteca com e [**CoUninitialize**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) depois que o loop de mensagem for encerrado. Comece com o seguinte procedimento mínimo de janela:
+comece criando a estrutura básica de um aplicativo Windows, incluindo o WinMain e um procedimento de janela. A função WinMain não é mostrada aqui; Chame o [**CoInitialize**](/windows/win32/api/objbase/nf-objbase-coinitialize) antes do loop de mensagem para inicializar a biblioteca com e [**CoUninitialize**](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) depois que o loop de mensagem for encerrado. Comece com o seguinte procedimento mínimo de janela:
 
 
 ```C++

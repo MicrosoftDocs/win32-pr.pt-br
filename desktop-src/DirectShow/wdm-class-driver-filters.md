@@ -4,24 +4,24 @@ ms.assetid: 864fc5ad-5aeb-4dc7-bdd2-2ad2bfb57741
 title: Filtros de driver de classe WDM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 338e4ec4d2aaa58bdac737b58571497cad708876
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ecd93db09c638ed7a8a217bec28a565086dcbfcae2b5702c9e1d07778c338646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071890"
 ---
 # <a name="wdm-class-driver-filters"></a>Filtros de driver de classe WDM
 
-Se um dispositivo de captura usar um driver de Windows Driver Model (WDM), o grafo poderá exigir certos filtros upstream do filtro de captura. Esses filtros são chamados de filtros de driver de classe de fluxo ou filtros WDM. Eles dão suporte a funcionalidades adicionais fornecidas pelo hardware. Por exemplo, um cartão sintonizador de TV tem funções para definir o canal. O filtro correspondente é o filtro de [sintonizador de TV](tv-tuner-filter.md) , que expõe a interface [**IAMTVTuner**](/windows/desktop/api/Strmif/nn-strmif-iamtvtuner) . Para disponibilizar essa funcionalidade para o aplicativo, você deve conectar o filtro de sintonizador de TV ao filtro de captura.
+Se um dispositivo de captura usar Windows driver WDM (Driver Model), o grafo poderá exigir determinados filtros upstream do filtro de captura. Esses filtros são chamados de filtros de driver de classe de fluxo ou filtros WDM. Eles suportam funcionalidades adicionais fornecidas pelo hardware. Por exemplo, uma placa de ajuste de TV tem funções para definir o canal. O filtro correspondente é o [filtro TV Tuner,](tv-tuner-filter.md) que expõe a interface [**IAMTVTuner.**](/windows/desktop/api/Strmif/nn-strmif-iamtvtuner) Para disponibilizar essa funcionalidade para o aplicativo, você deve conectar o filtro Tv Tuner ao filtro de captura.
 
-A interface [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) fornece a maneira mais fácil de adicionar filtros WDM ao grafo. Em algum momento, ao criar o grafo, chame [**FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) ou [**RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream). Qualquer um desses métodos localizará automaticamente os filtros WDM necessários e os conectará ao filtro de captura. O restante desta seção descreve como adicionar filtros WDM manualmente. No entanto, lembre-se de que a abordagem recomendada é simplesmente chamar um desses métodos **ICaptureGraphBuilder2** .
+A interface [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) fornece a maneira mais fácil de adicionar filtros WDM ao grafo. Em algum momento, ao criar o grafo, [**chame FindInterface**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findinterface) ou [**RenderStream.**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) Qualquer um desses métodos localizará automaticamente os filtros de WDM necessários e os conectará ao filtro de captura. O restante desta seção descreve como adicionar filtros WDM manualmente. No entanto, esteja ciente de que a abordagem de recomendação é simplesmente chamar um desses **métodos ICaptureGraphBuilder2.**
 
-Os Pins em um filtro WDM dão suporte a um ou mais meios. Um meio define um método de comunicação, como um barramento. Você deve conectar Pins que dão suporte à mesma mídia. A estrutura [**REGPINMEDIUM**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) , que é equivalente à estrutura **\_ média KSPIN** usada para drivers de streaming de kernel, define um meio no DirectShow. O membro **clsMedium** da estrutura **REGPINMEDIUM** especifica o identificador de classe (CLSID) para a mídia. Para recuperar a mídia de um PIN, chame o método [**IKsPin:: KsQueryMediums**](ikspin-ksquerymediums.md) . Esse método retorna um ponteiro para um bloco de memória que contém uma estrutura de [**\_ Item KSMULTIPLE**](ksmultiple-item.md) , seguida por zero ou mais estruturas **REGPINMEDIUM** . Cada estrutura **REGPINMEDIUM** identifica um meio ao qual o PIN dá suporte.
+Os pinos em um filtro WDM suportam uma ou mais mídias. Uma mídia define um método de comunicação, como um barramento. Você deve conectar pinos que suportam a mesma mídia. A [**estrutura REGPINMEDIUM,**](/windows/desktop/api/strmif/ns-strmif-regpinmedium) que é equivalente à estrutura **KSPIN \_ MEDIUM** usada para drivers de streaming de kernel, define uma mídia em DirectShow. O **membro clsMedium** da estrutura **REGPINMEDIUM** especifica o CLSID (identificador de classe) para o meio. Para recuperar o meio de um pino, chame o [**método IKsPin::KsQueryMediums.**](ikspin-ksquerymediums.md) Esse método retorna um ponteiro para um bloco de memória que contém uma estrutura [**DE \_ ITEM KSMULTIPLE,**](ksmultiple-item.md) seguida por zero ou mais estruturas **REGPINMEDIUM.** Cada **estrutura REGPINMEDIUM** identifica uma mídia compatível com o pino.
 
-Não conecte um PIN se o meio tiver um CLSID de GUID \_ NULL ou KSMEDIUMSETID \_ standard. Esses são valores padrão que indicam que o PIN não oferece suporte a meios.
+Não conecte um pino se a mídia tiver uma CLSID de GUID \_ NULL ou KSMEDIUMSETID \_ Standard. Esses são valores padrão que indicam que o pino não dá suporte a mídias.
 
-Além disso, não conecte um PIN, a menos que o filtro exija exatamente uma instância conectada desse PIN. Caso contrário, seu aplicativo pode tentar conectar vários Pins que não devem ter conexões, o que pode fazer com que o programa pare de responder. Para descobrir o número de instâncias necessárias, recupere o conjunto de \_ Propriedades do KSPROPERTY PIN \_ NECESSARYINSTANCES, conforme mostrado no exemplo de código a seguir. (Para fins de brevidade, este exemplo não testa nenhum código de retorno nem libera interfaces. O aplicativo deve fazer ambos, é claro.)
+Além disso, não conecte um pino, a menos que o filtro exija exatamente uma instância conectada desse pino. Caso contrário, seu aplicativo pode tentar conectar vários pinos que não devem ter conexões, o que pode fazer com que o programa pare de responder. Para descobrir o número de instâncias necessárias, recupere o conjunto de propriedades KSPROPERTY \_ PIN NECESSARYINSTANCES, conforme mostrado no \_ exemplo de código a seguir. (Por brevidade, este exemplo não testa nenhum código de retorno nem libera nenhuma interface. Seu aplicativo deve fazer ambos, é claro.)
 
 
 ```C++
@@ -60,7 +60,7 @@ if (hr == S_OK && bytes == sizeof(ULONG))
 
 
 
-O pseudocódigo a seguir é uma estrutura de tópicos extremamente breve que mostra como localizar e conectar os filtros WDM. Ele omite muitos detalhes e tem o objetivo de mostrar as etapas gerais que seu aplicativo precisaria executar.
+O pseudocódigo a seguir é um contorno extremamente breve mostrando como encontrar e conectar os filtros WDM. Ele omite muitos detalhes e é destinado apenas a mostrar as etapas gerais que seu aplicativo precisaria seguir.
 
 
 ```C++

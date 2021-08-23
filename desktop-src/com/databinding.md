@@ -4,12 +4,12 @@ description: Associação de dados
 ms.assetid: 7fc5f036-8b36-4e0e-a257-173010fe127a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ec6b8e66300834939a2b65fddefe947781350b0
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 7c2040aa29c83615f42c321483c87be378737dcdef47e43873fbe3b8c0902dd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105786228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048364"
 ---
 # <a name="databinding"></a>Associação de dados
 
@@ -19,6 +19,6 @@ O novo atributo, conhecido como ImmediateBind, permite que os controles diferenc
 
 O novo bit ImmediateBind é mapeado para o novo VARFLAG \_ FIMMEDIATEBIND (0x80) e os bits FUNCFLAG FIMMEDIATEBIND \_ (0x80) nas enumerações VARFLAGS e FUNCFLAGS para a interface [ITypeInfo](/windows/win32/api/oaidl/nn-oaidl-itypeinfo) , permitindo que os atributos de propriedades sejam inspecionados.
 
- 
+ 
 
- 
+ 

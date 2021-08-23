@@ -1,7 +1,7 @@
 ---
-description: Define os valores válidos para o atributo style do elemento LineLayout.
+description: Define os valores válidos para o atributo Style do elemento LineLayout.
 ms.assetid: b257f0da-1bee-4d1b-9829-70f91cdcabe0
-title: Tipo simples de LineLayoutStyleType
+title: Tipo simples LineLayoutStyleType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 67b07d9de51e16148905768d7a6f268038bb1afa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d2aa0a42ca2f295cdcccad05931ba651d4018ba377d8d10f09f85b82dcaaea8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031834"
 ---
-# <a name="linelayoutstyletype-simple-type"></a>Tipo simples de LineLayoutStyleType
+# <a name="linelayoutstyletype-simple-type"></a>Tipo simples LineLayoutStyleType
 
-Define os valores válidos para o atributo **Style** do [elemento LineLayout](linelayout-element.md).
+Define os valores válidos para o **atributo Style** do [elemento LineLayout](linelayout-element.md).
 
 ``` syntax
 <xs:simpleType name="LineLayoutStyleType">
@@ -37,13 +37,13 @@ Define os valores válidos para o atributo **Style** do [elemento LineLayout](li
 
 ## <a name="patterns"></a>Padrões
 
-O tipo simples **LineLayoutStyleType** é uma cadeia de caracteres que é restrita pelo seguinte padrão:
+O **tipo simples LineLayoutStyleType** é uma cadeia de caracteres restrita pelo seguinte padrão:
 
 -   `None|Solid|Dash|Dot|DashDot|DashDotDot|Double`
 
 ## <a name="remarks"></a>Comentários
 
-Os valores válidos para o atributo **Style** do [elemento LineLayout](linelayout-element.md) são:
+Os valores válidos **para o** atributo Style do [elemento LineLayout](linelayout-element.md) são:
 
 -   Nenhum
 -   Sólido
@@ -59,7 +59,7 @@ Os valores válidos para o atributo **Style** do [elemento LineLayout](linelayou
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

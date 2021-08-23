@@ -4,12 +4,12 @@ description: Página de navegação do glossário do sistema de nomes de domíni
 ms.assetid: 8677cd12-479d-46c2-9611-6864789feba1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb7c78ebbd7aab97df027ef9dc6d8890791582b3
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 7c1013c02a82e91d55f8b4430cf293bb2e9918ac1ad9d73f436b6fae1e8fa41f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105755641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076850"
 ---
 # <a name="glossary-dns"></a>Glossário (DNS)
 

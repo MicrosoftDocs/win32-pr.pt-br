@@ -4,12 +4,12 @@ description: Esta seção contém informações sobre os elementos de programaç
 ms.assetid: 48c6b4bd-65b4-4388-959e-efffa7658274
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8364eb44ee01e27439c82d1d77e674bfb9e3165
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c2979ac08889761cb7f226b58a9d951d407bc82420957ed9327de1a880d0d9bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018584"
 ---
 # <a name="up-down-control"></a>Controle de Up-Down
 

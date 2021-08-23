@@ -1,19 +1,19 @@
 ---
-description: A distância do próximo plano do BoundingFrustum de sua origem.
+description: A distância do plano próximo do BoundingFrustum de sua origem.
 ms.assetid: e94d30e5-a63a-4dab-8947-d0c77e7db044
-title: BoundingFrustum. Near (DirectXCollision. h)
+title: BoundingFrustum.Near (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2db0c2ff928133df279d018b4abb7ee1d3dd3465
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8d0d7335fbb180ced71ae85f97d128b32df4bd9330c673fa66e72d147098afd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985076"
 ---
-# <a name="boundingfrustumnear"></a>BoundingFrustum. near
+# <a name="boundingfrustumnear"></a>BoundingFrustum.Near
 
-A distância do próximo plano do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) de sua origem.
+A distância do plano próximo do [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum) de sua origem.
 
 
 ```C++
@@ -27,7 +27,7 @@ public:
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos de área de trabalho Win32, aplicativos da Windows Store e aplicativos Windows Phone 8.
+Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Windows para Windows 8. Com suporte para aplicativos da área de trabalho win32, aplicativos Windows Store e Windows Phone 8 aplicativos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ Microsoft Visual Studio 2010 ou Microsoft Visual Studio 2012 com o SDK do Window
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 

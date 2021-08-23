@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: 7697bc7ff1aa42569cf954b3f0b037f66ec67ded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e8169c541535eb2c5adfd0959da47cee4951750687f7d926798534ddc7cbf88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064896"
 ---
 # <a name="wfddisplaysinkclosesession-function"></a>Função WFDDisplaySinkCloseSession
 
@@ -46,13 +46,13 @@ O identificador recebido por meio da invocação de retorno de chamada de notifi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
 ## <a name="remarks"></a>Comentários
 
-Seu aplicativo pode chamar essa função para encerrar a sessão Miracast por qualquer motivo. Seu aplicativo não precisa chamá-lo quando recebe o tipo **DisconnectedNotification** em seu retorno de chamada.
+seu aplicativo pode chamar essa função para encerrar a sessão de Miracast por qualquer motivo. Seu aplicativo não precisa chamá-lo quando recebe o tipo **DisconnectedNotification** em seu retorno de chamada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,11 +60,11 @@ Seu aplicativo pode chamar essa função para encerrar a sessão Miracast por qu
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows 10<br/>                                                                      |
 | Fim do suporte do servidor<br/>    | Windows Server 2016<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl>       |
 | Biblioteca<br/>                  | <dl> <dt>Wifidisplay. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 

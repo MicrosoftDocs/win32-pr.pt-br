@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0240ef40f4c37f6c5528c979b2e89b43b03b3451
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3709a5f487855148b8ad4042f61b74fbe6029ef64e00b751672bf478f1da866e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016364"
 ---
 # <a name="cmediasamplesetmediatime-method"></a>Método CMediaSample. SetMediaTime
 
@@ -57,7 +57,7 @@ Ponteiro para a hora de parada da mídia ou **nulo**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -67,7 +67,7 @@ A hora de parada da mídia deve ser maior que a hora de início da mídia. Use *
 
 O parâmetro *pendente* especifica um tempo de mídia absoluto, mas a variável de membro [**CMediaSample:: m \_ MediaEnd**](cmediasample-m-mediaend.md) é calculada como um deslocamento de *PStart*. Em outras palavras, **m \_ MediaEnd**  =  \* *pTimeEnd* \* *pTimeStart*.  
 
-Para obter informações sobre os tempos de mídia, consulte [tempo e relógios no DirectShow](time-and-clocks-in-directshow.md).
+Para obter informações sobre os tempos de mídia, consulte [tempo e relógios em DirectShow](time-and-clocks-in-directshow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Para obter informações sobre os tempos de mídia, consulte [tempo e relógios 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ description: Este tópico descreve brevemente a arquitetura do Microsoft Acessib
 ms.assetid: 7309819c-7c72-4bb3-ab9c-608a27c56d42
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f318e46a6a0ad833b7aedb114974240fc4e52c08
-ms.sourcegitcommit: 85688bbfbe5b121bc05ddf112d54c23a469dfbc0
+ms.openlocfilehash: a1b146fa2d628ff64d2dcf714a1f860bee28c2f0f816e057f6b411e8344462fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "104084315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052978"
 ---
 # <a name="architecture-and-interoperability"></a>Arquitetura e interoperabilidade
 
@@ -73,7 +73,7 @@ Para obter mais informações, consulte [a interface IAccessibleEx](iaccessiblee
 
 <dl> <dt>
 
-[Visão geral da API de automação do Windows](windows-automation-api-overview.md)
+[Windows Visão geral da API de automação](windows-automation-api-overview.md)
 </dt> <dt>
 
 [A interface IAccessibleEx](iaccessibleex.md)
@@ -82,9 +82,9 @@ Para obter mais informações, consulte [a interface IAccessibleEx](iaccessiblee
 [Considerações de segurança para tecnologias assistenciais](uiauto-securityoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

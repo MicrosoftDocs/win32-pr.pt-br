@@ -1,7 +1,7 @@
 ---
-description: Método CBasePin. CompleteConnect – o método CompleteConnect conclui uma conexão com outro PIN.
+description: Método CBasePin.CompleteConnect – o método CompleteConnect conclui uma conexão com outro pin.
 ms.assetid: 10cbf29c-2e1a-419c-b0c0-c99f9a285810
-title: Método CBasePin. CompleteConnect (Amfilter. h)
+title: Método CBasePin.CompleteConnect (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fee207d7a17f12cc81036fbd4f82ec49a99f4a31
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e31829829a99dc613cfeeeda7ad8a9871c1a3ec4fee99220b804b171bbdcdc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074780"
 ---
-# <a name="cbasepincompleteconnect-method"></a>Método CBasePin. CompleteConnect
+# <a name="cbasepincompleteconnect-method"></a>Método CBasePin.CompleteConnect
 
-O `CompleteConnect` método conclui uma conexão com outro PIN.
+O `CompleteConnect` método conclui uma conexão com outro pin.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ virtual HRESULT CompleteConnect(
 *pReceivePin* 
 </dt> <dd>
 
-Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do outro PIN.
+Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do outro pino.
 
 </dd> </dl>
 
@@ -55,11 +55,11 @@ Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é chamado em ambos os Pins no final do processo de conexão. O PIN de conexão o chama de dentro do método [**CBasePin:: Connect**](cbasepin-connect.md) e o PIN de recebimento o chama de dentro do método [**CBasePin:: ReceiveConnection**](cbasepin-receiveconnection.md) .
+Esse método é chamado em ambos os pinos no final do processo de conexão. O pino de conexão chama-o de dentro do método [**CBasePin::Conexão**](cbasepin-connect.md) e o pin receptor o chama de dentro do [**método CBasePin::ReceiveConnection.**](cbasepin-receiveconnection.md)
 
-Na classe base, esse método simplesmente retorna S \_ OK. Se uma classe derivada tiver quaisquer requisitos para concluir uma conexão, ela deverá substituir esse método. Por exemplo, a classe [**CBaseOutputPin**](cbaseoutputpin.md) usa esse método para decidir o alocador de memória.
+Na classe base, esse método simplesmente retorna S \_ OK. Se uma classe derivada tiver requisitos para concluir uma conexão, ela deverá substituir esse método. Por exemplo, a [**classe CBaseOutputPin**](cbaseoutputpin.md) usa esse método para decidir o alocador de memória.
 
-Se esse método falhar, a tentativa de conexão geral também falhará e o PIN desconectará do PIN de recebimento.
+Se esse método falhar, a tentativa de conexão geral também falhará e o pino se desconecta do pino de recebimento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,12 +67,12 @@ Se esse método falhar, a tentativa de conexão geral também falhará e o PIN d
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

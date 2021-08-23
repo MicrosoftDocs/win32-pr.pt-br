@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd539d1ad6c203441b2bcd469a7d8f2fe8bdfc7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34b330e4c6dfc5324f7041343865ea59885a0aedec01fa9c67014d3709a93834
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021314"
 ---
 # <a name="sisrestoredlink-function"></a>Função SisRestoredLink
 
@@ -89,7 +89,7 @@ Se o valor do parâmetro *countOfCommonStoreFilesToRestore* não for 0, o valor 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retornará **true** se for concluída com êxito e **false** caso contrário. Chame [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter mais informações sobre o motivo da falha na chamada.
 
@@ -113,9 +113,9 @@ Os nomes de arquivos de repositório comuns são globalmente exclusivos para gar
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Sisbkup. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Sisbkup. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Sisbkup. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Sisbkup.dll</dt> </dl> |
 

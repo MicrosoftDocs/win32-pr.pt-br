@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: bd4357485dce3f3d236f31797d8b2df7028f3d65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb12c2273bb22af2df9f76c6606cad69223fa04292e0d556a65d4898bc968c75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093120"
 ---
 # <a name="folderitemislink-property"></a>Propriedade FolderItem. IsLink
 
@@ -41,9 +41,9 @@ Um **booliano** que recebe **true** se o item for um atalho ou **false** se não
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **IsLink** para determinar se um objeto específico é um link. Nesse caso, o objeto é um atalho para o Internet Explorer e, portanto, deve retornar **true**. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir usa **IsLink** para determinar se um objeto específico é um link. Nesse caso, o objeto é um atalho para o Internet Explorer e, portanto, deve retornar **true**. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -148,7 +148,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

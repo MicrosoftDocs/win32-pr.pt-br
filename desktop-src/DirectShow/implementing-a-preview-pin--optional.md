@@ -1,23 +1,23 @@
 ---
-description: Este tópico descreve como implementar um PIN de visualização em um filtro de captura do DirectShow.
+description: este tópico descreve como implementar um pin de visualização em um filtro de captura DirectShow.
 ms.assetid: 60306702-97d4-4627-8fbe-e7c8750f3902
 title: Implementando um PIN de visualização (opcional)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d1e09d070be2aa154428cb8684ff1c405fac959
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7de47b86df70500c83c794fe1074dc927622d571e78ef6175b944702277da492
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015554"
 ---
 # <a name="implementing-a-preview-pin-optional"></a>Implementando um PIN de visualização (opcional)
 
-Este tópico descreve como implementar um PIN de visualização em um filtro de captura do DirectShow.
+este tópico descreve como implementar um pin de visualização em um filtro de captura DirectShow.
 
 Se o filtro tiver um PIN de visualização, o PIN de visualização deverá enviar uma cópia dos dados entregues pelo PIN de captura. Somente envie dados do PIN de visualização ao fazer isso não fará com que o pino de captura descartar os quadros. O PIN de captura sempre tem prioridade sobre o PIN de visualização.
 
-O PIN de captura e o pino de visualização devem enviar dados com o mesmo formato. Portanto, eles devem se conectar usando tipos de mídia idênticos. Se o PIN de captura se conectar primeiro, o PIN de visualização deverá oferecer o mesmo tipo de mídia e rejeitar outros tipos. Se o pino de visualização se conectar primeiro e o PIN de captura se conectar com um tipo de mídia diferente, o PIN de visualização deverá se reconectar usando o novo tipo de mídia. Se o filtro downstream do PIN de visualização rejeitar o novo tipo, o PIN de captura também deverá rejeitar o tipo. Use o método [**IPin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) para consultar o downstream de filtro do PIN de visualização e use o método [**IFilterGraph:: Reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect) para reconectar o PIN. Essas regras também se aplicam se o Gerenciador do grafo de filtro reconectar o PIN de captura.
+O PIN de captura e o pino de visualização devem enviar dados com o mesmo formato. Portanto, eles devem se conectar usando tipos de mídia idênticos. Se o PIN de captura se conectar primeiro, o PIN de visualização deverá oferecer o mesmo tipo de mídia e rejeitar outros tipos. Se o pino de visualização se conectar primeiro e o PIN de captura se conectar com um tipo de mídia diferente, o PIN de visualização deverá se reconectar usando o novo tipo de mídia. Se o filtro downstream do PIN de visualização rejeitar o novo tipo, o PIN de captura também deverá rejeitar o tipo. Use o método [**IPin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) para consultar o downstream de filtro do PIN de visualização e use o método [**IFilterGraph:: Reconnect**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-reconnect) para reconectar o PIN. essas regras também se aplicam se o filtro Graph Manager reconecta o pin de captura.
 
 O exemplo a seguir mostra um contorno desse processo:
 
@@ -88,7 +88,7 @@ CPreviewPin::CheckMediaType(CMediaType *pmt)
 
 <dl> <dt>
 
-[Como os filtros se conectam](how-filters-connect.md)
+[como os filtros Conexão](how-filters-connect.md)
 </dt> <dt>
 
 [Gravando filtros de captura](writing-capture-filters.md)

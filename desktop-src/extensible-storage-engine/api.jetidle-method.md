@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e524a23d5e8fb20b1b6db1fb7e82fbb07bf3df0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98ae40ecc25fabb4fa6054417f30e6e358fc962bb05b192e03d1ea416d255211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117566"
 ---
 # <a name="apijetidle-method"></a>Método API. JetIdle
 
@@ -76,7 +76,7 @@ public static JET_wrn JetIdle(
     
     Uma combinação de sinalizadores JetIdleGrbit.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Um código de erro se a operação falhar.  

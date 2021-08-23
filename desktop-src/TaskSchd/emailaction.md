@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a339a1549b76f61499b7192a48edc7c1b86a6c67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c918065515322696a33114d2d9b09b7b72d12eb6b74e120a7963835a23321fe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002474"
 ---
 # <a name="emailaction-object"></a>Objeto EmailAction
 
@@ -75,8 +75,8 @@ Para obter mais informações e código de exemplo para esse objeto de script, c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                    |
 | Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |

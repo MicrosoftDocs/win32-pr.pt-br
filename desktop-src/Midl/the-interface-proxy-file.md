@@ -6,12 +6,12 @@ keywords:
 - MIDL e MIDL COM, interfaces, arquivos de proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be52b3561af03df0375212d729f64f41e3cdd7b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dedb9de50d00524b1e038f027448be5aaab369aa5d92243d2a3425bf603cd65a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013534"
 ---
 # <a name="the-interface-proxy-file"></a>O arquivo de proxy da interface
 
@@ -31,9 +31,9 @@ Para cada método em uma interface no arquivo IDL atual, o arquivo de proxy cont
 
 O nome padrão de um arquivo de proxy gerado a partir de um arquivo. idl é \_ o arquivo p. c. Use a opção de compilador [**/proxy nomedearquivo**](-proxy.md) MIDL para substituir o nome padrão do arquivo de proxy da interface. As opções [**/env**](-env.md) e [**/out**](-out.md) afetam esse arquivo.
 
- 
+ 
 
- 
+ 
 
 
 

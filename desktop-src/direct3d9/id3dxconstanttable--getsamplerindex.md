@@ -1,7 +1,7 @@
 ---
 description: Retorna o índice de amostra.
 ms.assetid: vs|directx_sdk|~\id3dxconstanttable__getsamplerindex.htm
-title: 'Método ID3DXConstantTable:: GetSamplerIndex (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::GetSamplerIndex (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f803b6e129ac20b8a22ed2393ab941698c02d3d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 65dac22cc15e93198e7d494986b2279ae7e1d11fdb3c8cb65b3caddf9b905595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105762521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987566"
 ---
-# <a name="id3dxconstanttablegetsamplerindex-method"></a>Método ID3DXConstantTable:: GetSamplerIndex
+# <a name="id3dxconstanttablegetsamplerindex-method"></a>Método ID3DXConstantTable::GetSamplerIndex
 
 Retorna o índice de amostra.
 
@@ -40,20 +40,20 @@ UINT GetSamplerIndex(
 
 <dl> <dt>
 
-*hConstant* \[ fora\]
+*hConstant* \[ out\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-O identificador de amostra.
+O alça do sampler.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Retorna o número de índice de amostra da tabela constante.
+Retorna o número do índice de amostra da tabela constante.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Retorna o número de índice de amostra da tabela constante.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

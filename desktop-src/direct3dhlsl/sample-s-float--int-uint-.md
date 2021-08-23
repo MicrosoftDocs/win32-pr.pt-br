@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9b378cb4031acecb8e0018053c7547e1948cc3e6
-ms.sourcegitcommit: 0d6365d4e852b09a9100d9cfb9a5334922ebf478
+ms.openlocfilehash: 648897a4e2250e0b91544676a3469b2d29402c757bcc77b2285d0181ca2fa5f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "103643079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986206"
 ---
 # <a name="samplesfloatintfloatuint-function-hlsl-reference"></a>Função de exemplo (S, float, int, float, uint) (referência de HLSL)
 
@@ -106,7 +106,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O formato de textura, que é um dos valores tipados listados [**no \_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 

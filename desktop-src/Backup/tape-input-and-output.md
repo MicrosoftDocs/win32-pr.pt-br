@@ -6,12 +6,12 @@ keywords:
 - Backup de entrada e saída de fita
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5946659f1ad0246e37981201e4e08611b45b70b1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e281eb6104cb71fbd5e7f0b3d9072cefe562ac7b9cc54e05ede53bece8755178
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021264"
 ---
 # <a name="tape-input-and-output"></a>Entrada e saída de fita
 
@@ -38,6 +38,6 @@ Se um aplicativo precisar acessar apenas os dados do arquivo, ele deverá usar [
 
 Um aplicativo de backup em fita deve usar [**BackupRead**](/windows/desktop/api/Winbase/nf-winbase-backupread) e [**BackupWrite**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) para copiar todas as informações pertencentes a um arquivo. No entanto, essas funções não lêem ou gravam características do arquivo, como atributos, hora de criação do arquivo e assim por diante. Os aplicativos devem usar as funções de entrada e saída de arquivo, como [**GetFileAttributes**](/windows/desktop/api/fileapi/nf-fileapi-getfileattributesa) e [**SetFileAttributes**](/windows/desktop/api/fileapi/nf-fileapi-setfileattributesa), para recuperar e definir esses valores.
 
- 
+ 
 
- 
+ 

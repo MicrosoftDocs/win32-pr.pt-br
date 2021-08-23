@@ -1,11 +1,11 @@
 ---
-title: Método Network. setproxyname
-description: O método setproxyname especifica o nome do servidor proxy a ser usado. | Método Network. setproxyname
+title: Método Network.setProxyName
+description: O método setProxyName especifica o nome do servidor proxy a ser usado. | Método Network.setProxyName
 ms.assetid: dbcb2a00-4387-42af-8055-61d78d021ec7
 keywords:
-- método setproxyname do Windows Media Player
-- método setproxyname Windows Media Player, classe de rede
-- Classe de rede Windows Media Player, método setproxyname
+- Método setProxyName Windows Media Player
+- Método setProxyName Windows Media Player , Classe de rede
+- Classe de Windows Media Player , método setProxyName
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a34546a395d48e939c71a806d8125150fca0ff4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9831b25e37fd6e19b70c1ee2589736394560c97f841b5d18c3a128a82997cc6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134919"
 ---
-# <a name="networksetproxyname-method"></a>Método Network. setproxyname
+# <a name="networksetproxyname-method"></a>Método Network.setProxyName
 
-O método **Setproxyname** especifica o nome do servidor proxy a ser usado.
+O **método setProxyName** especifica o nome do servidor proxy a ser usado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,35 +43,35 @@ Network.setProxyName(
 
 <dl> <dt>
 
-*protocolo* \[ do no\]
+*protocolo* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do protocolo. Para obter uma lista de protocolos com suporte, consulte [protocolos e tipos de arquivos com suporte](supported-protocols-and-file-types.md).
+**Cadeia de** caracteres que especifica o nome do protocolo. Para ver uma lista de protocolos com suporte, consulte [Protocolos com suporte e tipos de arquivo](supported-protocols-and-file-types.md).
 
 </dd> <dt>
 
-*nome* \[ do no\]
+*name* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do servidor proxy a ser usado.
+**Cadeia** de caracteres que especifica o nome do servidor proxy a ser usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não tem efeito, a menos que **getProxySettings** retorne um valor de 2 (use as configurações manuais).
+Esse método não tem efeito, a **menos que getProxySettings** retorne um valor de 2 (use configurações manuais).
 
-Esse método falha a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
+Esse método falha, a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **Setproxyname** para especificar o nome do servidor proxy do Windows Media Player para o protocolo MMS. O novo nome é recuperado de um elemento de texto HTML com ID = "NAME". O objeto de **jogador** foi criado com ID = "Player".
+O exemplo de JScript a seguir usa *Rede*. **setProxyName** para especificar o nome do servidor proxy Windows Media Player para o protocolo MMS. O novo nome é recuperado de um elemento HTML TEXT com ID = "NAME". O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -100,7 +100,7 @@ alert("Proxy settings must be manual!");
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

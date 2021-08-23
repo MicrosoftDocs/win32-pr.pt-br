@@ -3,9 +3,9 @@ title: Método IWMPMediaCollection2 getPlaylistByQuery
 description: O método getPlaylistByQuery retorna uma interface IWMPPlaylist que fornece acesso a itens de mídia que correspondem às condições de consulta.
 ms.assetid: ebbb631f-1faa-4c89-8c1d-cc2b128126b8
 keywords:
-- método getPlaylistByQuery Windows Media Player
+- Windows Media Player do método getPlaylistByQuery
 - método getPlaylistByQuery Windows Media Player, interface IWMPMediaCollection2
-- Interface IWMPMediaCollection2 Windows Media Player, método getPlaylistByQuery
+- Windows Media Player de interface IWMPMediaCollection2, método getPlaylistByQuery
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 109f6e49e77d1cfa8c6d3b45bef1d011faf21a8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: acd80467c78aac832c5ac2784281abcf07975a1956ee304c734b2b45b82901fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053574"
 ---
 # <a name="iwmpmediacollection2getplaylistbyquery-method"></a>Método IWMPMediaCollection2:: getPlaylistByQuery
 
@@ -87,7 +87,7 @@ O valor **System. Boolean** que indica se a playlist deve ser classificada em or
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPPlaylist** para a lista de reprodução recuperada.
 

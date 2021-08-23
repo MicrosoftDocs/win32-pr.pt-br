@@ -16,12 +16,12 @@ api_location:
 - ntoskrnl.exe
 - NTDll.dll
 - wpdupfltr.sys
-ms.openlocfilehash: fc89105a6a68c920fccb123dd95a08ed4ddee696
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c61d14b591f54ea44ba0f33a36a2ca5acecb129ba46b5f45fcc18185f5d9448c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017824"
 ---
 # <a name="__c_specific_handler-function"></a>\_\_Função de manipulador de C \_ específico \_
 

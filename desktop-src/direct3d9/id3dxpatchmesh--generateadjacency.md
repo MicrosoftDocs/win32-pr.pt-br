@@ -1,7 +1,7 @@
 ---
 description: Gere uma lista de bordas de malha e os patches que compartilham cada borda.
 ms.assetid: 024528c0-2c0d-4448-9b38-05cf8d6ffc63
-title: 'Método ID3DXPatchMesh:: GenerateAdjacency (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::GenerateAdjacency (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 68de2a77b9d27391c57ec299ceb87d29166ee248
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 41e821d853a8a8f981f1174d654f17475c0363cdcc97bb537e308ccd72e38190
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987196"
 ---
-# <a name="id3dxpatchmeshgenerateadjacency-method"></a>Método ID3DXPatchMesh:: GenerateAdjacency
+# <a name="id3dxpatchmeshgenerateadjacency-method"></a>Método ID3DXPatchMesh::GenerateAdjacency
 
 Gere uma lista de bordas de malha e os patches que compartilham cada borda.
 
@@ -40,24 +40,24 @@ HRESULT GenerateAdjacency(
 
 <dl> <dt>
 
-*fTolerance* \[ no\]
+*fTolerance* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Especifica que os vértices que diferem na posição por menos que a tolerância devem ser tratados como coincidentes.
+Especifica que os vértices que diferem na posição por menor que a tolerância devem ser tratados como coincidentes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Depois que um aplicativo gera informações de adjacência para uma malha, os dados de malha podem ser otimizados para melhorar o desempenho do desenho. Esse método determina quais patches são adjacentes (dentro da tolerância fornecida). Essas informações são usadas internamente para otimizar o mosaico.
+Depois que um aplicativo gera informações de adjacency para uma malha, os dados de malha podem ser otimizados para um melhor desempenho de desenho. Esse método determina quais patches são adjacentes (dentro da tolerância fornecida). Essas informações são usadas internamente para otimizar o mosaico.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Depois que um aplicativo gera informações de adjacência para uma malha, os da
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -77,7 +77,7 @@ Depois que um aplicativo gera informações de adjacência para uma malha, os da
 [ID3DXPatchMesh](id3dxpatchmesh.md)
 </dt> <dt>
 
-[**ID3DXPatchMesh:: Optimize**](id3dxpatchmesh--optimize.md)
+[**ID3DXPatchMesh::Optimize**](id3dxpatchmesh--optimize.md)
 </dt> </dl>
 
  
