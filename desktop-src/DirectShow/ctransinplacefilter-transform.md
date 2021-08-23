@@ -1,7 +1,7 @@
 ---
-description: O método Transform transforma um exemplo em vigor.
+description: O método Transform transforma um exemplo no local.
 ms.assetid: 2268041b-70d4-48a9-9bb8-4ab921cce649
-title: Método CTransInPlaceFilter. Transform (TRANSip. h)
+title: Método CTransInPlaceFilter.Transform (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d5b84f326807f730745268a217b6066dacb9aaa7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 224052bc882792f57eedf9ea58842b953e5853012d3581ef14cad58467b614b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953395"
 ---
-# <a name="ctransinplacefiltertransform-method"></a>Método CTransInPlaceFilter. Transform
+# <a name="ctransinplacefiltertransform-method"></a>Método CTransInPlaceFilter.Transform
 
-O `Transform` método transforma um exemplo em vigor.
+O `Transform` método transforma um exemplo no local.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,19 +45,19 @@ virtual HRESULT Transform(
 *pSample* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) do exemplo.
+Ponteiro para a interface [**IMediaSample do**](/windows/desktop/api/Strmif/nn-strmif-imediasample) exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                            |
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | Não entregar este exemplo.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | Não entregue este exemplo.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                    |
 
 
@@ -66,9 +66,9 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os mostrados na tab
 
 ## <a name="remarks"></a>Comentários
 
-A classe derivada deve implementar esse método. Transforme os dados de exemplo em vigor. Se o filtro estiver usando dois alocadores, ele copiará os dados do exemplo de entrada para um novo exemplo e passará a cópia para esse método.
+A classe derivada deve implementar esse método. Transforme os dados de exemplo no local. Se o filtro estiver usando dois alocadores, ele copiará os dados do exemplo de entrada para um novo exemplo e passará a cópia para esse método.
 
-Se o filtro não deve entregar este exemplo (por exemplo, para dar suporte ao controle de qualidade), o método deve retornar S \_ false.
+Se o filtro não deve fornecer este exemplo (por exemplo, para dar suporte ao controle de qualidade), o método deve retornar S \_ FALSE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,8 +76,8 @@ Se o filtro não deve entregar este exemplo (por exemplo, para dar suporte ao co
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transip.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

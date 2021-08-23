@@ -1,19 +1,19 @@
 ---
-description: Contém um GUID de formato do DirectShow para um tipo de mídia.
+description: contém um GUID de formato DirectShow para um tipo de mídia.
 ms.assetid: dc532791-39e1-4acb-9e62-21d8f25be870
 title: Atributo MF_MT_AM_FORMAT_TYPE (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18a8faf88128075e5c5b51c1b5ace39329d4e1fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eff59e148f7532cc07e47acf033de91b5eaeb8969f0c39376850738fd54e758e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973625"
 ---
 # <a name="mf_mt_am_format_type-attribute"></a>\_Atributo de \_ \_ tipo de formato MF MT am \_
 
-Contém um GUID de formato do DirectShow para um tipo de mídia.
+contém um GUID de formato DirectShow para um tipo de mídia.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,11 +21,11 @@ Contém um GUID de formato do DirectShow para um tipo de mídia.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo pode ser definido quando um tipo de mídia do DirectShow é convertido em um tipo de mídia Media Foundation. O atributo indica o tipo de formato do DirectShow original. O valor corresponde ao membro formatType da estrutura do [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+esse atributo pode ser definido quando um tipo de mídia DirectShow é convertido em um tipo de mídia Media Foundation. o atributo indica o tipo de formato de DirectShow original. O valor corresponde ao membro formatType da estrutura do [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
 
-Para um formato de áudio, o atributo de [**\_ dados de \_ usuário \_ MF MT**](mf-mt-user-data-attribute.md) pode conter o bloco de formato original, se o tipo de formato do DirectShow não foi reconhecido.
+para um formato de áudio, o atributo de [**\_ dados de \_ usuário \_ MF MT**](mf-mt-user-data-attribute.md) pode conter o bloco de formato original, se o tipo de formato DirectShow não foi reconhecido.
 
-Não defina esse atributo em um tipo de mídia, a menos que você esteja convertendo uma estrutura de formato do DirectShow.
+não defina esse atributo em um tipo de mídia, a menos que você esteja convertendo uma estrutura de formato de DirectShow.
 
 A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
@@ -35,9 +35,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

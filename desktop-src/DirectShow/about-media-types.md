@@ -1,25 +1,25 @@
 ---
-description: Saiba mais sobre os tipos de mídia no DirectShow. O tipo de mídia é uma maneira universal e extensível de descrever formatos de mídia digital.
+description: Saiba mais sobre os tipos de mídia DirectShow. O tipo de mídia é uma maneira universal e extensível de descrever formatos de mídia digital.
 ms.assetid: 9984ba36-4e43-4886-a073-34b330274c9c
 title: Sobre tipos de mídia (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7b1489543b33f5eeb2c288add48148b37f31915
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 9fa3034581e443472f1b73c0bc42ca7b8b532a18120df3e067b02ad16f37930e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074890"
 ---
 # <a name="about-media-types-directshow"></a>Sobre tipos de mídia (DirectShow)
 
-Como o DirectShow é modular, ele requer uma maneira de descrever o formato dos dados em cada ponto no grafo de filtro. Por exemplo, considere a reprodução DE AVI. Os dados entram no grafo como um fluxo de partes DE VALOR. Eles são analisados em fluxos de áudio e vídeo. O fluxo de vídeo consiste em quadros de vídeo, que provavelmente são compactados. Após a decodificação, o fluxo de vídeo é uma série de bitmaps descompactados. O fluxo de áudio passa por um processo semelhante.
+Como DirectShow é modular, ele requer uma maneira de descrever o formato dos dados em cada ponto no grafo de filtro. Por exemplo, considere a reprodução DE AVI. Os dados entram no grafo como um fluxo de partes DE VALOR. Eles são analisados em fluxos de áudio e vídeo. O fluxo de vídeo consiste em quadros de vídeo, que provavelmente são compactados. Após a decodificação, o fluxo de vídeo é uma série de bitmaps descompactados. O fluxo de áudio passa por um processo semelhante.
 
-Tipos de mídia: como o DirectShow representa formatos
+Tipos de mídia: como DirectShow representa formatos
 
 O *tipo de mídia* é uma maneira universal e extensível de descrever formatos de mídia digital. Quando dois filtros se conectam, eles concordam com um tipo de mídia. O tipo de mídia identifica que tipo de dados o filtro upstream fornecerá ao filtro downstream e o layout físico dos dados. Se dois filtros não puderem concordar com um tipo de mídia, eles não se conectarão.
 
-Para alguns aplicativos, você nunca terá que se preocupar com tipos de mídia. Na reprodução de arquivo, por exemplo, o DirectShow trata todos os detalhes. Outros tipos de aplicativos podem precisar trabalhar diretamente com tipos de mídia.
+Para alguns aplicativos, você nunca terá que se preocupar com tipos de mídia. Na reprodução de arquivo, por exemplo, DirectShow lida com todos os detalhes. Outros tipos de aplicativos podem precisar trabalhar diretamente com tipos de mídia.
 
 Os tipos de mídia são definidos usando a [**estrutura AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) Essa estrutura contém as seguintes informações:
 
@@ -80,7 +80,7 @@ A [**estrutura AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_med
 
 <dl> <dt>
 
-[O grafo de filtro e seus componentes](the-filter-graph-and-its-components.md)
+[O filtro Graph e seus componentes](the-filter-graph-and-its-components.md)
 </dt> </dl>
 
  

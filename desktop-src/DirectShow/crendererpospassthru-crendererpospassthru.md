@@ -1,7 +1,7 @@
 ---
-description: Construtor de CRendererPosPassThru. CRendererPosPassThru-método de construtor.
+description: Construtor CRendererPosPassThru.CRendererPosPassThru – método construtor.
 ms.assetid: 9d6f40ee-31bf-4334-bee5-4be834f1f269
-title: Construtor CRendererPosPassThru. CRendererPosPassThru (Ctlutil. h)
+title: Construtor CRendererPosPassThru.CRendererPosPassThru (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 59972f12f0f746ef68c267e3fbd0d071d54193c3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5fc61250f75cc8a49d699a5f3bee97b707c59e134864a23eac9887dfb34618f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953795"
 ---
-# <a name="crendererpospassthrucrendererpospassthru-constructor"></a>Construtor CRendererPosPassThru. CRendererPosPassThru
+# <a name="crendererpospassthrucrendererpospassthru-constructor"></a>Construtor CRendererPosPassThru.CRendererPosPassThru
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,31 +45,31 @@ CRendererPosPassThru(
 
 <dl> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Ponteiro para o nome do objeto, para fins de depuração. Aloque esse parâmetro na memória estática.
+Ponteiro para o nome do objeto, para fins de depuração. Aloce esse parâmetro na memória estática.
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Ponteiro para o proprietário deste objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, defina esse parâmetro como **NULL**.
+Ponteiro para o proprietário desse objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, de definido esse parâmetro como **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para um valor **HRESULT** . Ignorado.
+Ponteiro para um **valor HRESULT.** Ignorado.
 
 </dd> <dt>
 
 *pPin* 
 </dt> <dd>
 
-Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do PIN de entrada do filtro.
+Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) do pino de entrada do filtro.
 
 </dd> </dl>
 
@@ -79,8 +79,8 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

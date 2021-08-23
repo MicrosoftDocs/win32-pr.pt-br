@@ -1,20 +1,20 @@
 ---
-title: Exemplo de código para remover um membro de um grupo
+title: Código de exemplo para remover um membro de um grupo
 description: O exemplo de código a seguir contém uma função que remove um membro de um grupo.
 ms.assetid: 8a9c65bb-1b61-432b-9ef4-1d257c501026
 ms.tgt_platform: multiple
 keywords:
-- Exemplos de Active Directory Active Directory, removendo um membro de um grupo
+- Exemplos do Active Directory do Active Directory, removendo um membro de um grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b31bfdebc7cecc0191652a7ef9052a3578ee48cb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 05d33dd966bb9ef7afb909292c95fd519d154e421b0994527295f41fd60197a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105753667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962165"
 ---
-# <a name="example-code-for-removing-a-member-from-a-group"></a>Exemplo de código para remover um membro de um grupo
+# <a name="example-code-for-removing-a-member-from-a-group"></a>Código de exemplo para remover um membro de um grupo
 
 O exemplo de código a seguir contém uma função que remove um membro de um grupo.
 
@@ -60,9 +60,9 @@ HRESULT RemoveMemberFromGroup(IADsGroup * pGroup, IADs* pIADsNewMember)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

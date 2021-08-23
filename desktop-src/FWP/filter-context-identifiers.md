@@ -1,6 +1,6 @@
 ---
 title: Identificadores de contexto de filtro (Fwpmu. h)
-description: Identificadores para os contextos de filtro que são internos à plataforma de filtragem do Windows.
+description: identificadores para os contextos de filtro que são internos para a plataforma de filtragem de Windows.
 ms.assetid: bcfae832-5386-43c5-b916-89577765ee5d
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c09968f1ab68016405f22460409e83cfd826b716
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fdc7d9914a9b6089ace87e7e9b942499d8e65dc7705bf524f74cddf96ee419d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105787539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951265"
 ---
 # <a name="filter-context-identifiers"></a>Identificadores de contexto de filtro
 
-Os identificadores para os contextos de filtro que são internos à plataforma de filtragem do Windows são definidos da seguinte maneira.
+os identificadores para os contextos de filtro que são internos à plataforma de filtragem de Windows são definidos da seguinte maneira.
 
 <dl> <dt>
 
@@ -48,7 +48,7 @@ Contextos de filtro de transporte IPsec na camada de entrada.
 Contextos de filtro de transporte IPsec na camada de saída.
 
 > [!Note]  
-> Para o Windows 7, use a **\_ negociação de \_ \_ \_ supressão \_ de saída IPSec de contexto FWPM**.
+> para Windows 7, use **a \_ \_ negociação de \_ \_ supressão de \_ saída IPSEC de contexto FWPM**.
 
  
 
@@ -73,7 +73,7 @@ Contextos de filtro usados na camada de conexão ALE.
 Contextos de filtro usados na camada de conexão ou de aceitação ALE.
 
 > [!Note]  
-> Para o Windows 7, use a **\_ Ale de contexto FWPM \_ \_ definir \_ conexão permitir a \_ \_ primeira \_ entrada não \_ \_ criptografada** ou a **Ale de contexto de FWPM \_ \_ \_ permitir \_ autenticação \_ FW**.
+> para Windows 7, use **a \_ ale do contexto FWPM \_ \_ definir \_ conexão \_ permitir a \_ primeira \_ entrada não \_ \_ criptografada** ou a **ale de \_ contexto FWPM \_ \_ permitir \_ autenticação \_ FW**.
 
  
 
@@ -106,9 +106,9 @@ Contextos usados na subcamada de auditoria RPC.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
 
 
 

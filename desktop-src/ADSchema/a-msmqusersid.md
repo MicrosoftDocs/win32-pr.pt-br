@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45dce18d3ad7c153b7484c2f5a815f73005baf2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d521a1f5cdfe49f4e6c030af0d70ef00a326b3382d1f80dd9b71eda977bc417b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960355"
 ---
 # <a name="msmq-user-sid-attribute"></a>Atributo MSMQ-User-Sid
 
@@ -57,10 +57,10 @@ O SID do usuário migrado.
 |------------------------|-------------------------------------------------------------|
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | True                                                        |
-| É de valor único       | True                                                        |
+| System-Only            | Verdadeiro                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | True                                                        |
+| No catálogo global      | Verdadeiro                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
@@ -78,10 +78,10 @@ O SID do usuário migrado.
 |------------------------|-------------------------------------------------------------|
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | True                                                        |
-| É de valor único       | True                                                        |
+| System-Only            | Verdadeiro                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | True                                                        |
+| No catálogo global      | Verdadeiro                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
@@ -99,16 +99,16 @@ O SID do usuário migrado.
 |------------------------|-------------------------------------------------------------|
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | True                                                        |
-| É de valor único       | True                                                        |
+| System-Only            | Verdadeiro                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | True                                                        |
+| No catálogo global      | Verdadeiro                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -120,16 +120,16 @@ O SID do usuário migrado.
 |------------------------|-------------------------------------------------------------|
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | True                                                        |
-| É de valor único       | True                                                        |
+| System-Only            | Verdadeiro                                                        |
+| Tem valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | True                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Verdadeiro                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -141,16 +141,16 @@ O SID do usuário migrado.
 |------------------------|-------------------------------------------------------------|
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | True                                                        |
-| É de valor único       | True                                                        |
+| System-Only            | Verdadeiro                                                        |
+| Tem valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | True                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Verdadeiro                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 
@@ -162,16 +162,16 @@ O SID do usuário migrado.
 |------------------------|-------------------------------------------------------------|
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
-| System-Only            | True                                                        |
-| É de valor único       | True                                                        |
+| System-Only            | Verdadeiro                                                        |
+| Tem valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | True                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Verdadeiro                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | 0                                                           |
 | Range-Upper            | 128                                                         |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000012                                                  |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> |
 
 
 

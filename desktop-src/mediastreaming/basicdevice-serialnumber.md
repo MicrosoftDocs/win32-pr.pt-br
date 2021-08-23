@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 088427411033a71b4c26e27823504d396fcf8930
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 547043d5850af91ae2bdf03783bf4254b3dfc7c543e8c1d045189e2685176e38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105763444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972465"
 ---
 # <a name="basicdeviceserialnumber-property"></a>Propriedade BasicDevice. SerialNumber
 
@@ -33,7 +33,7 @@ Esta propriedade é somente para leitura.
 
 ```C++
 HRESULT get_SerialNumber(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -50,6 +50,6 @@ Um ponteiro para o número de série do dispositivo.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

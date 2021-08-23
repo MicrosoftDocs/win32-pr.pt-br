@@ -4,12 +4,12 @@ ms.assetid: 2fbed651-2fa0-441b-b174-6be6d49430bf
 title: System. Calendar. RequiredAttendeeAddresses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e20df36eb8e7a473afb8cff9c0cbc7087b0b787e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b54cdba67a86b18f5c8656870e78167ccf02b9f866ce229bfaf6cdfce6efcbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098523"
 ---
 # <a name="systemcalendarrequiredattendeeaddresses"></a>System. Calendar. RequiredAttendeeAddresses
 

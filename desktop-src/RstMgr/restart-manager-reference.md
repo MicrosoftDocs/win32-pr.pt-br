@@ -1,30 +1,30 @@
 ---
-title: Referência do Gerenciador de reinicialização
-description: A API do Gerenciador de reinicialização contém as seguintes partes. Restart Manager callback FunctionsRestart Manager EnumerationsRestart Manager FunctionsRestart estruturas do Gerenciador
+title: Referência do Gerenciador de Reinicialização
+description: A API do Gerenciador de Reinicialização contém as partes a seguir. Funções de retorno de chamada do Gerenciador de ReinicializaçãoReinicieções do GerenciadorReinicie Funções do GerenciadorReinicie estruturas do Gerenciador
 ms.assetid: e7d29afc-8180-4d6d-8c99-d4e5fbf85e26
 keywords:
-- Gerente de reinicialização do Gerenciador de reinício, referência
+- Restart Manager Restart Mgr , reference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a30a8030ed69d183a3f5d82dfbac10dafdc0b52
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 863e7f21894fed6d84dca7fd40baaceba39e3250170a909109464c3e0a02538e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010084"
 ---
-# <a name="restart-manager-reference"></a>Referência do Gerenciador de reinicialização
+# <a name="restart-manager-reference"></a>Referência do Gerenciador de Reinicialização
 
-A API do Gerenciador de reinicialização contém as seguintes partes.
+A API do Gerenciador de Reinicialização contém as partes a seguir.
 
--   [Iniciar funções de retorno de chamada do Gerenciador](callback-functions.md)
--   [Enumerações do Gerenciador de reinicialização](enumerations.md)
--   [Funções do Gerenciador de reinicialização](functions.md)
--   [Estruturas do Gerenciador de reinicialização](structures.md)
+-   [Funções de retorno de chamada do Gerenciador de Reinicialização](callback-functions.md)
+-   [Reiniciar enumerações do Gerenciador](enumerations.md)
+-   [Funções do Gerenciador de Reinicialização](functions.md)
+-   [Reiniciar estruturas do Gerenciador](structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

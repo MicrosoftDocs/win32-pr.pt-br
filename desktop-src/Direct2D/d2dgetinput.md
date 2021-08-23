@@ -3,7 +3,7 @@ title: Função D2DGetInput (D2d1effecthelpers. h)
 description: Retorna a cor da entrada N na coordenada de entrada. Disponível somente para entradas simples.
 ms.assetid: 74B6F814-53C7-4C8C-B45C-3CB23B9D8BED
 keywords:
-- Direct2D da função D2DGetInput
+- Função D2DGetInput Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6ec0fe858149ee53da1f8ca8a02c12756d6a90
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37de536eb6ac36af3e8aa1ffca61c3840cf6c84e585466a56a447522c4d628d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075310"
 ---
 # <a name="d2dgetinput-function"></a>Função D2DGetInput
 
@@ -44,7 +44,7 @@ O número de entrada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retorna um **FLOAT4**, contendo a cor RGBA no formato inputn.
 

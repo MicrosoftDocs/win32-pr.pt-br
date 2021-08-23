@@ -1,15 +1,15 @@
 ---
-description: A propriedade ColorKey define ou recupera a chave de cor usada em legendas ocultas.
+description: A propriedade ColorKey define ou recupera a chave de cor usada na legenda fechada.
 ms.assetid: 4d4b38e6-bd29-4e16-8f82-a5da9312d272
 title: Propriedade ColorKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 75620be88a861e02915c27324978382feefc5835
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: abca1dabbdb67f4380dbe32acbf2948862695b7c424dfd08629ec16237bb88c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073730"
 ---
 # <a name="colorkey-property"></a>Propriedade ColorKey
 
@@ -18,7 +18,7 @@ ms.locfileid: "104456489"
 
  
 
-A `ColorKey` propriedade define ou recupera a chave de cor usada em Legendagem oculta.
+A `ColorKey` propriedade define ou recupera a chave de cor usada na legenda fechada.
 
 ``` syntax
 [ iColorKey = ] MSWebDVD.ColorKey
@@ -26,11 +26,11 @@ A `ColorKey` propriedade define ou recupera a chave de cor usada em Legendagem o
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor inteiro que representa a cor a ser usada como um plano de fundo transparente para texto com legenda codificada. O valor padrão em 256 cores é magenta e off-preto em qualquer outra intensidade de cor.
+Retorna um valor inteiro que representa a cor a ser usada como uma tela de fundo transparente para texto com legenda fechada. O valor padrão em 256 cores é magenta e off-black em qualquer outra profundidade de cor.
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é de leitura/gravação. Essa propriedade só se aplica a legendas fechadas, se existir, não ao fluxo de subimagem.
+Essa propriedade é leitura/gravação. Essa propriedade se aplica somente às legendas fechadas, se existirem, não ao fluxo de subtípico.
 
  
 

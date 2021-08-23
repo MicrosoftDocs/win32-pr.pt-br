@@ -19,12 +19,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wbemcli.h
-ms.openlocfilehash: 469e036b7cd385fa2ac2bae23e0da081288b536b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c23bcde9d085a6668fd5c57ee0ff51a7db61784de44d79080e2b2d2d1ee051f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992746"
 ---
 # <a name="namespace-access-rights-constants"></a>Constantes de direitos de acesso de namespace
 
@@ -118,7 +118,7 @@ Permite que uma conta de usuário execute remotamente qualquer operação permit
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Wbemcli. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemcli. h</dt> </dl> |
 
 
 

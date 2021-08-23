@@ -7,12 +7,12 @@ keywords:
 - ANÚNCIOS de objetos, assistentes de criação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bc3dbacaf6eee5670fdacd9a587a497397c4d1b
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b97c5c8f1b521d28c926d53830135dbb1b1fc907758e7047bc91c68856eedc70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104084444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025575"
 ---
 # <a name="object-creation-wizards"></a>Assistentes de criação de objeto
 
@@ -34,8 +34,8 @@ As extensões de criação de objeto primário e secundário são servidores em 
 **Para criar e instalar uma extensão de criação de objeto**
 
 1.  Crie a DLL de extensão de criação de objeto. Uma extensão de criação de objeto é um servidor em processamento COM que, no mínimo, implementa a interface [**IDsAdminNewObjExt**](/windows/desktop/api/DSAdmin/nn-dsadmin-idsadminnewobjext) . Para obter mais informações, consulte [implementando o objeto com da extensão de criação de objetos](implementing-the-object-creation-extension-com-object.md).
-2.  Instale a extensão de criação em computadores em que a extensão de criação deve ser usada. Para fazer isso, crie um pacote de Microsoft Windows Installer para a DLL de extensão de criação e implante o pacote adequadamente usando a política de grupo. Para obter mais informações, consulte [distribuindo componentes da interface do usuário](distributing-user-interface-components.md).
-3.  Registre a extensão de criação no registro do Windows e com Active Directory Domain Services. Para obter mais informações, consulte [registrando a extensão de criação de objeto](registering-the-object-creation-extension.md).
+2.  Instale a extensão de criação em computadores em que a extensão de criação deve ser usada. para fazer isso, crie um pacote de Microsoft Windows Installer para a DLL de extensão de criação e implante o pacote adequadamente usando a política de grupo. Para obter mais informações, consulte [distribuindo componentes da interface do usuário](distributing-user-interface-components.md).
+3.  registre a extensão de criação no registro de Windows e com Active Directory Domain Services. Para obter mais informações, consulte [registrando a extensão de criação de objeto](registering-the-object-creation-extension.md).
 
 ## <a name="using-an-object-creation-wizard"></a>Usando um assistente para criação de objetos
 
@@ -43,6 +43,6 @@ Um assistente de criação de objeto também pode ser invocado de um aplicativo 
 
 Se um assistente de criação não estiver registrado para uma classe de objeto, os snap-ins administrativos fornecerão um assistente de criação genérico. O assistente de criação genérica é criado em tempo de execução na lista de propriedades obrigatórias para a classe de objeto criada. Para cada propriedade obrigatória, uma página é adicionada à interface do usuário. O assistente de criação genérica não é extensível. Se a extensibilidade for necessária, ela deverá ser substituída por uma extensão de criação de objeto primário.
 
- 
+ 
 
- 
+ 

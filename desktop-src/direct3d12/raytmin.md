@@ -1,5 +1,5 @@
 ---
-description: Um float que representa o ponto de partida paramétrica atual para o raio.
+description: Um float que representa o ponto de partida paramétrico atual para o raio.
 ms.assetid: ''
 title: RayTMin
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - RayTMin
 api_type:
 - NA
-ms.openlocfilehash: 00db0eb46e8c011e5b31f773679e19ca6dd4a7a0
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5429574480cfda071dfec93cea771211bab578bdaecb4513c76f43c4d820b22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989476"
 ---
 # <a name="raytmin"></a>RayTMin
 
-Um float que representa o ponto de partida paramétrica atual para o raio. 
+Um float que representa o ponto de partida paramétrico atual para o raio. 
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,14 +32,14 @@ float RayTMin();
 
 ## <a name="remarks"></a>Comentários
 
-**RayTMin** define o ponto de partida do raio de acordo com a seguinte fórmula: origem + (direção * RayTMin).  A *origem* e a *direção* podem estar no espaço do mundo ou do objeto, o que resulta em um ponto de partida do mundo ou do espaço de objeto.
+**RayTMin** define o ponto de partida do raio de acordo com a seguinte fórmula: Origin + (Direction * RayTMin).  *Origin* e *Direction* podem estar no mundo ou no espaço do objeto, o que resulta em um mundo ou um ponto de partida do espaço de objeto.
 
-**RayTMin** é especificado na chamada para [**TraceRay**](traceray-function.md)e é constante para a duração dessa chamada.
-
-
+**RayTMin** é especificado na chamada para [**TraceRay**](traceray-function.md)e é constante durante essa chamada.
 
 
-Essa função pode ser chamada nos seguintes tipos de sombreador raytracing:
+
+
+Essa função pode ser chamada dos seguintes tipos de sombreador de raio:
 
 * [**Sombreador de todos os cliques**](any-hit-shader.md)
 * [**Sombreador do clique mais próximo**](closest-hit-shader.md)

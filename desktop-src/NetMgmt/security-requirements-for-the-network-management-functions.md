@@ -4,12 +4,12 @@ description: Chamar algumas das funções de gerenciamento de rede não requer A
 ms.assetid: 846a5b81-d5bf-4275-a898-38e6ba308b8f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b5b0987509294f03b8737aae5e721abf5dbdd90
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1930fda5e9a4eaf21876415d1a9ee75d1bb3dc63d031716bc462e5b26790a6fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012404"
 ---
 # <a name="network-management-function-security-requirements"></a>Requisitos de segurança da função de gerenciamento de rede
 
@@ -26,6 +26,6 @@ Para obter mais informações sobre como controlar o acesso a objetos protegíve
 
 Para obter mais informações sobre descritores de segurança específicos que são usados durante verificações de acesso, consulte a página de referência de função individual. Para obter mais informações sobre como chamar funções que exigem privilégios de administrador, consulte [executando com privilégios especiais](/windows/desktop/SecBP/running-with-special-privileges).
 
- 
+ 
 
- 
+ 

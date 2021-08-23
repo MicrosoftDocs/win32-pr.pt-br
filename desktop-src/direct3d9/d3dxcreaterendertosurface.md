@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6fc64cbc65d30838db2105e0458d3553247f1ab1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 632225dcad44324f88d8c126eb3f74d7779ff5ec698581514717dc1e0c54d3f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105788752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988626"
 ---
 # <a name="d3dxcreaterendertosurface-function"></a>Função D3DXCreateRenderToSurface
 
@@ -109,7 +109,7 @@ Endereço de um ponteiro para uma interface [**ID3DXRenderToSurface**](id3dxrend
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,23 +1,23 @@
 ---
-title: Cadeias de formato de tipo
-description: Os caracteres de formato denotam objetos de interesse para o mecanismo de NDR.
+title: Cadeias de caracteres de formato de tipo
+description: Caracteres de formato denotam objetos de interesse para o mecanismo NDR.
 ms.assetid: 71117082-07b0-4ba4-a920-09be8d8427ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f618d857e487f86e2d28ed18300d82e94b76e3a7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 42f4aa17494cbef0f3bcc232f89104e3502f94de4a3285a1da6cc0229af0fe26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011114"
 ---
-# <a name="type-format-strings"></a>Cadeias de formato de tipo
+# <a name="type-format-strings"></a>Cadeias de caracteres de formato de tipo
 
-Os caracteres de formato denotam objetos de interesse para o mecanismo de NDR. Há um caractere de formato para cada tipo básico, para vários tipos complexos, e para descrições de ponteiros, embalagens, alinhamento e outros objetos diversos. Para tipos compostos, várias categorias de estruturas e matrizes são reconhecidas com base em suas propriedades de desempenho. Uma cadeia de caracteres de formato para cada categoria começa com um token FC que identifica a cadeia de caracteres de formato específica. Os caracteres de formato para categorias de estruturas e matrizes podem compartilhar os em correções no nome do token FC à esquerda mostrado na tabela a seguir.
+Caracteres de formato denotam objetos de interesse para o mecanismo NDR. Há um caractere de formato para cada tipo básico, para vários tipos complexos e para descrições de ponteiros, empacotamento, alinhamento e outros objetos diversos. Para tipos compostos, várias categorias de estruturas e matrizes são reconhecidas com base em suas propriedades de desempenho. Uma cadeia de caracteres de formato para cada categoria começa com um token FC que identifica a cadeia de caracteres de formato específica. Os caracteres de formato para as categorias de estruturas e matrizes podem compartilhar as correções no nome do token FC principal mostrado na tabela a seguir.
 
 
 
-| Formatar caractere | Descrição                                    |
+| Caractere de formato | Descrição                                    |
 |------------------|------------------------------------------------|
 | C                | Indica informações de conformidade no tipo. |
 | V                | Indica informações de variação no tipo.    |
@@ -25,23 +25,23 @@ Os caracteres de formato denotam objetos de interesse para o mecanismo de NDR. H
 
 
 
- 
+ 
 
-Por exemplo, FC \_ CSTRUCT e FC \_ CARRAY identificam a estrutura de conformidade e os descritores de matriz em conformidade, respectivamente.
+Por exemplo, FC CSTRUCT e FC CARRAY identificam a estrutura compatível e \_ \_ os descritores de matriz compatíveis, respectivamente.
 
-Veja a seguir os caracteres de formato com significados especiais.
+A seguir estão os caracteres de formato com significados especiais.
 
 
 
-| Formatar caractere | Descrição                                                                         |
+| Caractere de formato | Descrição                                                                         |
 |------------------|-------------------------------------------------------------------------------------|
 | FC \_ PP           | Indica o início da seção de descrição do ponteiro de uma estrutura ou matriz. |
 
 
 
- 
+ 
 
-As cadeias de caracteres de formato do tipo NDR RPC são descritas mais detalhadamente nos seguintes tópicos:
+As cadeias de caracteres de formato de tipo NDR RPC são descritas mais detalhadamente nos tópicos a seguir:
 
 -   [Tipos simples](simple-types-tfs.md)
 -   [Ponteiros](pointers-tfs.md)
@@ -51,12 +51,12 @@ As cadeias de caracteres de formato do tipo NDR RPC são descritas mais detalhad
 -   [Estruturas](structures-tfs.md)
 -   [Layout do ponteiro](pointer-layout-tfs.md)
 -   [Uniões](unions-tfs.md)
--   [Transmitir \_ como e representar \_ como](transmit-as-and-represent-as-tfs.md)
+-   [Transmitir \_ como e Representar \_ como](transmit-as-and-represent-as-tfs.md)
 -   [Marshal do usuário](user-marshal-tfs.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 3a8fd734-0761-4b5b-ba04-677c7c040988
 title: Sobre a API do MMDevice
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82843bbecf004d0931575d73ec2459c3e72a3cf3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 23e2f33c6969e00006c12b0bc6dc1ba37b70c5ff38ea2846633d5eb61da03b19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077540"
 ---
 # <a name="about-mmdevice-api"></a>Sobre a API do MMDevice
 
-A API do dispositivo de multimídia do Windows (MMDevice) permite que os clientes de áudio descubram [dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md), determinem seus recursos e criem instâncias de driver para esses dispositivos.
+a API do dispositivo de multimídia Windows (MMDevice) permite que os clientes de áudio descubram [dispositivos de ponto de extremidade de áudio](audio-endpoint-devices.md), determinem seus recursos e criem instâncias de driver para esses dispositivos.
 
 O arquivo de cabeçalho Mmdeviceapi. h define as interfaces na API MMDevice.
 
@@ -31,7 +31,7 @@ A API MMDevice consiste em várias interfaces. A primeira delas é a interface [
 
 
 
-No fragmento de código anterior, CLSID \_ MMDeviceEnumerator e IID \_ IMMDeviceEnumerator são os valores de GUID anexados como atributos ao objeto de classe **MMDeviceEnumerator** e à interface [**IMMDeviceEnumerator**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) . A chamada [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) passa esses valores por referência. Variable `hr` é do tipo **HRESULT**, e Variable `pEnumerator` é um ponteiro para a interface **IMMDeviceEnumerator** de um objeto de enumerador de dispositivo. **IMMDeviceEnumerator** fornece métodos para enumerar dispositivos de ponto de extremidade de áudio. Para obter informações sobre o operador **\_ \_ uuidof** , a função **CoCreateInstance** e as constantes CLSCTX \_ *xxx* , consulte a documentação do SDK do Windows.
+No fragmento de código anterior, CLSID \_ MMDeviceEnumerator e IID \_ IMMDeviceEnumerator são os valores de GUID anexados como atributos ao objeto de classe **MMDeviceEnumerator** e à interface [**IMMDeviceEnumerator**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) . A chamada [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) passa esses valores por referência. Variable `hr` é do tipo **HRESULT**, e Variable `pEnumerator` é um ponteiro para a interface **IMMDeviceEnumerator** de um objeto de enumerador de dispositivo. **IMMDeviceEnumerator** fornece métodos para enumerar dispositivos de ponto de extremidade de áudio. para obter informações sobre o operador **\_ \_ uuidof** , a função **CoCreateInstance** e as constantes CLSCTX \_ *Xxx* , consulte a documentação do SDK do Windows.
 
 Por meio da interface [**IMMDeviceEnumerator**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) , o cliente pode obter referências às outras interfaces na API MMDevice. A API MMDevice implementa as interfaces a seguir.
 

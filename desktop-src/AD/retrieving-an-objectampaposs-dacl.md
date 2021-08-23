@@ -8,12 +8,12 @@ keywords:
 - O AD DACL, recuperando a DACL de um objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3db74cb235b5cb322f0edf3dc4cfb32f50b4c00c
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b515e6c5d28be7003734510300fc7f6d2de776b479b56e62ad521567c76dce4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104293884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025104"
 ---
 # <a name="retrieving-an-objects-dacl"></a>Recuperando a DACL de um objeto
 
@@ -30,6 +30,6 @@ Para obter mais informações sobre DACLs e ACEs, consulte os tópicos a seguir 
 -   [Listas de controle de acesso (ACLs)](/windows/desktop/SecAuthZ/access-control-lists)
 -   [ACEs (entradas de controle de acesso)](/windows/desktop/SecAuthZ/access-control-entries)
 
- 
+ 
 
- 
+ 

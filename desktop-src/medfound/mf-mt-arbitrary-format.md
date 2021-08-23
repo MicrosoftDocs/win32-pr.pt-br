@@ -4,12 +4,12 @@ ms.assetid: fc5b9890-1508-498e-b2ce-ed4fa2052f9c
 title: Atributo MF_MT_ARBITRARY_FORMAT (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cf98da23fbc4631ca67462dfc58f870abe73885
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa7629e92eea07059f562d553985628f2099df1da03bd371617f0eed5183dd69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973605"
 ---
 # <a name="mf_mt_arbitrary_format-attribute"></a>\_Atributo de \_ \_ formato arbitrário do MF MT
 
@@ -32,7 +32,7 @@ Os aplicativos podem usar fluxos binários para manter tipos de dados personaliz
 Essa estrutura corresponde ao campo formatar dados dos dados específicos do tipo no objeto Propriedades do fluxo, em arquivos em que o tipo de fluxo é **\_ \_ mídia binária de ASF**. Para obter mais informações, consulte a especificação do ASF.
 
 > [!Note]  
-> No SDK do Windows Media Format, os fluxos binários são chamados de *fluxos arbitrários* ou *fluxos de dados arbitrários*.
+> no SDK do formato de mídia Windows, os fluxos binários são chamados de *fluxos arbitrários* ou *fluxos de dados arbitrários*.
 
  
 
@@ -44,9 +44,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

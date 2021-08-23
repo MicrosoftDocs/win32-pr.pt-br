@@ -1,9 +1,9 @@
 ---
-title: Mensagem de UDM_SETACCEL (commctrl. h)
+title: UDM_SETACCEL mensagem (Commctrl.h)
 description: Define a aceleração para um controle de cima para baixo.
 ms.assetid: af1d0a34-13ba-4bda-82f5-d7afab6bb1ed
 keywords:
-- Controles de UDM_SETACCEL de mensagens do Windows
+- UDM_SETACCEL controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b43ed290ce1668ffcaa9fb086a99ad52e5129ad6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc746e33c14de0dd177ecc31fc237be7cb8be36280bb2a5ceadff31d2b286ec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957735"
 ---
-# <a name="udm_setaccel-message"></a>\_Mensagem de SETACCEL UDM
+# <a name="udm_setaccel-message"></a>Mensagem UDM \_ SETACCEL
 
 Define a aceleração para um controle de cima para baixo.
 
@@ -32,20 +32,20 @@ Define a aceleração para um controle de cima para baixo.
 *wParam* 
 </dt> <dd>
 
-Número de estruturas [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) especificadas por *aAccels*.
+Número de [**estruturas UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) especificadas por *aAccels.*
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma matriz de estruturas [**UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) que contêm informações de aceleração. Os elementos devem ser classificados em ordem crescente com base no membro **NSEC** .
+Ponteiro para uma matriz de [**estruturas UDACCEL**](/windows/desktop/api/Commctrl/ns-commctrl-udaccel) que contêm informações de aceleração. Os elementos devem ser classificação em ordem crescente com base no **membro nSec.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 <dl> <dt>
 
-[**\_GETACCEL UDM**](udm-getaccel.md)
+[**UDM \_ GETACCEL**](udm-getaccel.md)
 </dt> </dl>
 
  

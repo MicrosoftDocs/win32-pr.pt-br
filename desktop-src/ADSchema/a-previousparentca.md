@@ -1,11 +1,11 @@
 ---
-title: Atributo anterior-Parent-CA
+title: Atributo Previous-Parent-CA
 description: Referência às autoridades de certificação que emitiram o último certificado expirado para uma autoridade de certificação.
 ms.assetid: 9772d6cb-1105-426c-9982-473b4c1bf0d8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo pai anterior-Parent-CA
-- Esquema de AD do atributo previousParentCA
+- Esquema do AD do atributo Previous-Parent-CA
+- Esquema do AD do atributo previousParentCA
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1a4c89652ef7ffffdc731614cfc57572b3edcde
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5aefb2b7862902bebd91aad910fb52656b15d7a3a6ff2b2652a33d6f4a034e16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022454"
 ---
-# <a name="previous-parent-ca-attribute"></a>Atributo anterior-Parent-CA
+# <a name="previous-parent-ca-attribute"></a>Atributo Previous-Parent-CA
 
 Referência às autoridades de certificação que emitiram o último certificado expirado para uma autoridade de certificação.
 
@@ -29,14 +29,14 @@ Referência às autoridades de certificação que emitiram o último certificado
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Anterior-pai-AC                      |
-| LDAP-Display-Name | previousParentCA                        |
+| CN                | Previous-Parent-CA                      |
+| Ldap-Display-Name | previousParentCA                        |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.694                  |
-| System-ID-GUID    | 963d273d-48be-11d1-a9c3-0000f80367c1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 963d273d-48be-11d1-a9c3-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ Referência às autoridades de certificação que emitiram o último certificado
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Referência às autoridades de certificação que emitiram o último certificado
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Referência às autoridades de certificação que emitiram o último certificado
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Referência às autoridades de certificação que emitiram o último certificado
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Referência às autoridades de certificação que emitiram o último certificado
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Referência às autoridades de certificação que emitiram o último certificado
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | Falso                                                                  |
+| Tem valor único       | Falso                                                                  |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 

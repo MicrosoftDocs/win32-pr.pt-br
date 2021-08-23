@@ -1,6 +1,6 @@
 ---
-title: Usando extensões de unidade de dados (SDK do Windows Media Format 11)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Usando extensões de unidade de dados (SDK do Windows Media Format 11)
+title: usando as extensões de unidade de dados (Windows SDK do formato de mídia 11)
+description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | usando as extensões de unidade de dados (Windows SDK do formato de mídia 11)
 ms.assetid: b1650560-2261-427a-ace7-5d7ed0bb3f77
 keywords:
 - Usando extensões de unidade de dados formato do Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9194e204536b8088f1cb29033d93fb2c0f9b397d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6da36a1f0bc8ad7b2ebcbfb6372e7a41d1445e5357fd31e8a3dde71ccfd89e12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105780659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963925"
 ---
-# <a name="using-data-unit-extensions-windows-media-format-11-sdk"></a>Usando extensões de unidade de dados (SDK do Windows Media Format 11)
+# <a name="using-data-unit-extensions-windows-media-format-11-sdk"></a>usando as extensões de unidade de dados (Windows SDK do formato de mídia 11)
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

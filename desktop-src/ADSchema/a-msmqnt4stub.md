@@ -1,11 +1,11 @@
 ---
-title: MSMQ-NT4-atributo stub
-description: O atributo MSMQ-NT4-stub contém informações de modo misto do MSMQ.
+title: Atributo MSMQ-Nt4-Stub
+description: O atributo MSMQ-Nt4-Stub contém informações de modo misto do MSMQ.
 ms.assetid: cdc3c811-c1e3-4501-bf59-39870bfb57e8
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-NT4-esquema de atributo de stub do AD
-- Esquema de AD do atributo mSMQNt4Stub
+- Esquema do AD do atributo MSMQ-Nt4-Stub
+- Esquema do AD do atributo mSMQNt4Stub
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6844d560ef677841c8c142cac8c57a5a8dc4bea
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 82d0fc7e9064c26a70a8a29230882c8e0444eb94406fb268ba9261ab8e4d0cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960445"
 ---
-# <a name="msmq-nt4-stub-attribute"></a>MSMQ-NT4-atributo stub
+# <a name="msmq-nt4-stub-attribute"></a>Atributo MSMQ-Nt4-Stub
 
-O atributo **MSMQ-NT4-stub** contém informações de modo misto do MSMQ.
+O **atributo MSMQ-Nt4-Stub** contém informações de modo misto do MSMQ.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-NT4-stub                        |
-| LDAP-Display-Name | mSMQNt4Stub                          |
+| CN                | MSMQ-Nt4-Stub                        |
+| Ldap-Display-Name | mSMQNt4Stub                          |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.960               |
-| System-ID-GUID    | 6f914be6-d57e-11d1-90a2-00c04fd91ab1 |
+| System-Id-Guid    | 6f914be6-d57e-11d1-90a2-00c04fd91ab1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ O atributo **MSMQ-NT4-stub** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -79,10 +79,10 @@ O atributo **MSMQ-NT4-stub** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -100,10 +100,10 @@ O atributo **MSMQ-NT4-stub** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

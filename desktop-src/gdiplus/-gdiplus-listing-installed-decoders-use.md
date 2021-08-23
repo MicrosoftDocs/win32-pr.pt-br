@@ -1,19 +1,19 @@
 ---
-description: O Windows GDI+ fornece a função GetImageDecoders para que você possa determinar quais decodificadores de imagem estão disponíveis no seu computador.
+description: Windows GDI+ fornece a função GetImageDecoders para que você possa determinar quais decodificadores de imagem estão disponíveis no computador.
 ms.assetid: 793e23de-d959-4feb-8bf6-647a455c85ae
 title: Listando decodificadores instalados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a20a4e8ac88fa884483ebeaf6592b8085fde807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d54548971ff4f4346d32884ff7abc687b901044022ab886f7191d5700b9db98d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977386"
 ---
 # <a name="listing-installed-decoders"></a>Listando decodificadores instalados
 
-O Windows GDI+ fornece a função [**GetImageDecoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoders) para que você possa determinar quais decodificadores de imagem estão disponíveis no seu computador. **GetImageDecoders** retorna uma matriz de objetos [**ImageCodecInfo**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) . Antes de chamar **GetImageDecoders**, você deve alocar um buffer grande o suficiente para receber essa matriz. Você pode chamar [**GetImageDecodersSize**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoderssize) para determinar o tamanho do buffer necessário.
+Windows GDI+ fornece a [**função GetImageDecoders**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoders) para que você possa determinar quais decodificadores de imagem estão disponíveis no computador. **GetImageDecoders retorna** uma matriz de [**objetos ImageCodecInfo.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-imagecodecinfo) Antes de chamar **GetImageDecoders**, você deve alocar um buffer grande o suficiente para receber essa matriz. Você pode chamar [**GetImageDecodersSize**](/windows/desktop/api/Gdiplusimagecodec/nf-gdiplusimagecodec-getimagedecoderssize) para determinar o tamanho do buffer necessário.
 
 O aplicativo de console a seguir lista os decodificadores de imagem disponíveis:
 

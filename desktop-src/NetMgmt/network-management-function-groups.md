@@ -4,12 +4,12 @@ description: As funções de gerenciamento de rede podem ser divididas nos grupo
 ms.assetid: 4b5d3554-f81a-4ecf-bf31-ee4753509f38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bce5c0fb3dd70facb0ebbbb2479b968d428c49e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f3e49a8c45c59031a12653f5cb863fef320a33c93bc60cabdd4cd6fb4aece9dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012504"
 ---
 # <a name="network-management-function-groups"></a>Grupos de funções de gerenciamento de rede
 
@@ -43,6 +43,6 @@ O sistema também fornece um conjunto independente de rede de funções de rede 
 -   As funções WNet são independentes de rede, enquanto as funções de gerenciamento de rede funcionam apenas em redes Microsoft.
 -   Algumas das funções podem não ter suporte em versões futuras dos sistemas operacionais da Microsoft, caso tenham sido substituídas. A Microsoft não planeja remover funções específicas, a menos que a funcionalidade equivalente ou melhor esteja disponível.
 
- 
+ 
 
- 
+ 

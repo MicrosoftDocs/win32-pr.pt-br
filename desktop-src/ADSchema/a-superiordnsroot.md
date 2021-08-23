@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6561839cf5137968adbac628ad6046b8b86dab85
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b4dcb26b12ba36003a82ba093d0049a050f4945ec2f277e4ea9a503a08a9b7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959915"
 ---
 # <a name="superior-dns-root-attribute"></a>Atributo de raiz de DNS superior
 
@@ -36,7 +36,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.532                      |
 | System-ID-GUID    | 5245801d-ca6a-11d0-afff-0000f80367c1        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -59,7 +59,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -80,7 +80,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -101,7 +101,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -122,7 +122,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -143,7 +143,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -164,7 +164,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -185,7 +185,7 @@ Este é um atributo de sistema que é usado para a geração de referências.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |

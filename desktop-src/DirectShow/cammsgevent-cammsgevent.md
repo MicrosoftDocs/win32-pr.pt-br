@@ -1,7 +1,7 @@
 ---
-description: Construtor de CAMMsgEvent. CAMMsgEvent-método de construtor.
+description: Construtor CAMMsgEvent.CAMMsgEvent – método construtor.
 ms.assetid: 7871a624-70c0-4f21-b62a-2c4c2eaa762b
-title: Construtor CAMMsgEvent. CAMMsgEvent (Wxutil. h)
+title: Construtor CAMMsgEvent.CAMMsgEvent (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dac72ecb97a1ea1fd2594af9c11b8a03078cf2cb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0fc2eeaab10134022388e6a57628d1c3c5a87fc0e0a443efab19f016a1e5c27b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955495"
 ---
-# <a name="cammsgeventcammsgevent-constructor"></a>Construtor CAMMsgEvent. CAMMsgEvent
+# <a name="cammsgeventcammsgevent-constructor"></a>Construtor CAMMsgEvent.CAMMsgEvent
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,12 +42,12 @@ CAMMsgEvent(
 
 <dl> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para um valor **HRESULT** . Se o Construtor falhar, esse parâmetro receberá um código de erro. Se isso ocorrer, o objeto não está em um estado válido.
+Ponteiro para um **valor HRESULT.** Se o construtor falhar, esse parâmetro receberá um código de erro. Se isso ocorrer, o objeto não está em um estado válido.
 
-Para compatibilidade com versões anteriores do Strmbase. lib, esse parâmetro assume **nulo** como padrão. No entanto, a passagem de um valor não **nulo** é preferida, para que o chamador possa verificar o status do objeto.
+Para compatibilidade com versões anteriores do strmbase.lib, esse parâmetro assume null como **padrão.** No entanto, é preferível passar **um valor** não NULL para que o chamador possa verificar o status do objeto.
 
 </dd> </dl>
 
@@ -57,12 +57,12 @@ Para compatibilidade com versões anteriores do Strmbase. lib, esse parâmetro a
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

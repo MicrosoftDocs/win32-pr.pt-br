@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8979864151e029abf2731f6f0b4663e078a2c061
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eca3c422083954554db76657a0bb9cc10062fd878a9ebf4b31f4dc88734ac1d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996236"
 ---
 # <a name="mediacontenttypes-attribute"></a>Atributo MediaContentTypes
 
-O atributo **MediaContentTypes** especifica o tipo de conteúdo no item.
+O **atributo MediaContentTypes** especifica o tipo de conteúdo no item.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -35,18 +35,18 @@ Esse atributo pode ser um dos seguintes valores:
 
 | Valor | Significado                                |
 |-------|----------------------------------------|
-| 1     | A lista de reprodução contém o conteúdo de áudio.   |
+| 1     | A playlist contém conteúdo de áudio.   |
 | 2     | A ser fornecido.                        |
-| 3     | A lista de reprodução contém o conteúdo de áudio.   |
-| 4     | A lista de reprodução contém conteúdo de vídeo.   |
-| 5     | A lista de reprodução contém conteúdo de imagem. |
-| 6     | A lista de reprodução contém conteúdo de TV.      |
+| 3     | A playlist contém conteúdo de áudio.   |
+| 4     | A playlist contém conteúdo de vídeo.   |
+| 5     | A playlist contém conteúdo de imagem. |
+| 6     | A playlist contém conteúdo de TV.      |
 
 
 
  
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

@@ -4,18 +4,18 @@ ms.assetid: f6eaea8a-0cc2-4fb6-bec5-7fb12b20c075
 title: Recuperando e alterando atributos de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c980ddd6390f016b2057392f42f6bf645859307
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d2609030d1657b78c266ed6b10841159e0df4d40a2e3b07b0fce42e98b45d54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105767655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015134"
 ---
 # <a name="retrieving-and-changing-file-attributes"></a>Recuperando e alterando atributos de arquivo
 
 Um aplicativo pode recuperar os atributos do arquivo usando a função [**GetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesa) ou [**GetFileAttributesEx**](/windows/desktop/api/FileAPI/nf-fileapi-getfileattributesexa) . As funções [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) e [**SetFileAttributes**](/windows/desktop/api/FileAPI/nf-fileapi-setfileattributesa) podem definir muitos dos atributos. No entanto, os aplicativos não podem definir todos os atributos.
 
-O exemplo de código neste tópico usa a função [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) para copiar todos os arquivos de texto (. txt) no diretório atual para um novo diretório de arquivos somente leitura. Os arquivos no novo diretório são alterados para somente leitura, se necessário.
+O exemplo de código neste tópico usa a função [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile) para copiar todos os arquivos de texto (.txt) no diretório atual para um novo diretório de arquivos somente leitura. Os arquivos no novo diretório são alterados para somente leitura, se necessário.
 
 O aplicativo cria o diretório especificado como um parâmetro usando a função [**CreateDirectory**](/windows/desktop/api/FileAPI/nf-fileapi-createdirectorya) . O diretório já não deve existir.
 

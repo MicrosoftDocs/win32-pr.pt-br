@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Definindo a segurança em IWbemServices e em outros proxies
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d593c52091182b1f0580908624e0b4068ed3f8d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4da997b9d4a8f91cf31e8619af983209d4a07a571932c85304d372379d7f752b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050264"
 ---
 # <a name="setting-the-security-on-iwbemservices-and-other-proxies"></a>Definindo a segurança em IWbemServices e em outros proxies
 
@@ -20,7 +20,7 @@ Scripts e Visual Basic aplicativos apenas definem a segurança em proxies indire
 
 A alteração de níveis de segurança ou serviços é principalmente uma preocupação ao se conectar ao WMI em um computador remoto que esteja executando um sistema operacional diferente. Para obter mais informações, consulte [conectando entre diferentes sistemas operacionais](/windows/desktop/WmiSdk/troubleshooting-a-remote-wmi-connection).
 
-Um aplicativo cliente se conecta a um proxy WMI usando uma identidade. Uma identidade é um objeto de dados que consiste em um nome de usuário, senha e configurações de autoridade. Para um aplicativo cliente WMI, a chamada para a interface [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver) cria a identidade inicial. O método [**ConnectServer**](swbemlocator-connectserver.md) usa a identidade em um conjunto de três parâmetros, que você pode definir como **NULL** para indicar o usuário atual. Você também pode especificar um parâmetro não **nulo** para indicar um usuário e domínio específicos. Se a chamada for bem-sucedida, **ConnectServer** retornará um ponteiro por meio do qual você pode acessar uma variedade de processos remotos, como um serviço WMI ou o sistema operacional Windows diretamente.
+Um aplicativo cliente se conecta a um proxy WMI usando uma identidade. Uma identidade é um objeto de dados que consiste em um nome de usuário, senha e configurações de autoridade. Para um aplicativo cliente WMI, a chamada para a interface [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver) cria a identidade inicial. O método [**ConnectServer**](swbemlocator-connectserver.md) usa a identidade em um conjunto de três parâmetros, que você pode definir como **NULL** para indicar o usuário atual. Você também pode especificar um parâmetro não **nulo** para indicar um usuário e domínio específicos. se a chamada for bem-sucedida, **ConnectServer** retornará um ponteiro por meio do qual você pode acessar uma variedade de processos remotos, como um serviço WMI ou o sistema operacional Windows diretamente.
 
 Como muitas interfaces COM, [**ConnectServer**](swbemlocator-connectserver.md) retorna um ponteiro para um proxy. Um proxy é um objeto de dados que representa um processo remoto, como WMI ou um provedor remoto. O COM usa um proxy para permitir que os desenvolvedores acessem dados remotos como se os dados fossem locais.
 
@@ -35,7 +35,7 @@ As seguintes interfaces WMI usam proxies:
 
 Depois de receber um ponteiro para um processo remoto, você pode fazer uma das duas coisas. Se você souber o que o processo faz, poderá optar por definir a segurança no ponteiro e acessar o processo normalmente. Esse é o caso com a maioria dos ponteiros para um serviço WMI. Para obter mais informações, consulte [definindo os níveis de segurança em uma conexão WMI](setting-the-security-levels-on-a-wmi-connection.md). Como alternativa, você precisa acessar uma interface COM diferente no proxy, como [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release), por meio de uma chamada para a interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) no proxy.
 
-## <a name="defaults-and-recommendations"></a>Padrões e recomendações
+## <a name="defaults-and-recommendations"></a>padrões e Recomendações
 
 A versão distribuída do Component Object Model (DCOM) negocia o serviço de autenticação padrão (Kerberos, NTLM ou Negotiate) e você não pode especificar o serviço de autenticação padrão usando [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). A especificação do **\_ padrão RPC C \_ Authn \_** no parâmetro serviço de autenticação de [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) permite que o DCOM selecione o serviço apropriado. Para conexões remotas, o serviço padrão é Negotiate, que é o serviço recomendado para aplicativos que funcionam em domínios Kerberos e não Kerberos. Para conexões locais, o serviço de autenticação padrão é NT LAN Manager (NTLM).
 

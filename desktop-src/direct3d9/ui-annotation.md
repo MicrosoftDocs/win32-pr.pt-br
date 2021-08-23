@@ -4,12 +4,12 @@ ms.assetid: 6d0b2450-7d90-4a24-b710-faed26969876
 title: Anotação da interface do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eef6af352b7dea25df34ce8a5712ad30143d6426
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 7a9e8816bb34ada52794694a2c6ae63ff663787a5db7419e9bf27a40f5aa0cce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107998583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044064"
 ---
 # <a name="ui-annotation"></a>Anotação da interface do usuário
 
@@ -33,14 +33,14 @@ ControlType
 
 
 
-é um dos seguintes:
+ é um dos seguintes:
 
 
 
 | ControlType | Descrição                                                                                                                                                                     | Tipo de dados interno                                                                                 | Anotações de propriedade de controle                                                                                 |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Nenhum        | Nenhum controle deve ser mostrado. Observe que um controle ficará visível se [SasUiVisible](#sasuivisible) for true e o tipo de controle for qualquer tipo diferente de None.                           | N/D                                                                                                | N/D                                                                                                          |
-| Qualquer         | Isso implica que nenhum controle especial é solicitado. O controle apresentado é o resultado do comportamento definido pelo aplicativo.                                                         | N/D                                                                                                | N/D                                                                                                          |
+| Nenhum        | Nenhum controle deve ser mostrado. Observe que um controle ficará visível se [SasUiVisible](#sasuivisible) for true e o tipo de controle for qualquer tipo diferente de None.                           | n/d                                                                                                | n/d                                                                                                          |
+| Qualquer         | Isso implica que nenhum controle especial é solicitado. O controle apresentado é o resultado do comportamento definido pelo aplicativo.                                                         | n/d                                                                                                | n/d                                                                                                          |
 | ColorPicker | Representa um valor de cor como uma amostra de cor. O valor é empacotado nos componentes XYZ do vetor associado. O componente W do vetor associado sempre é definido como um. | float *n* , em que *n* é de 1 a 4, inclusive.                                                            | [SasUiEnum](#sasuienum)                                                                                      |
 | Direção   | Um vetor de direção.                                                                                                                                                             | float *n* , em que *n* é de 2 a 4, inclusive.                                                            | Nenhum                                                                                                         |
 | FilePicker  | Uma caixa de diálogo que permite ao usuário procurar e selecionar um arquivo.                                                                                                                  | string                                                                                             | Nenhum                                                                                                         |
@@ -198,7 +198,7 @@ O valor padrão é 0.
 
 ### <a name="sasuistepspower"></a>SasUiStepsPower
 
-Esta Anotação especifica o expoente na função Power, que tem o intervalo \[ 0,0 f, 1,0 f \] . Os aplicativos host devem implementar o seguinte método ao calcular os valores de parâmetro:
+Esta Anotação especifica o expoente na função Power, que tem o intervalo \[ 0,0 f, 1,0 f \] . Os aplicativos host devem implementar o seguinte método ao calcular valores de parâmetro:
 
 
 ```
@@ -207,11 +207,11 @@ ParameterValue = ((SasUiMax - SasUiMin) x pow(UI_VALUE, SasUiStepsPower) + SasUi
 
 
 
-O valor padrão é 1,0 f.
+O valor padrão é 1,0f.
 
 ### <a name="sasuistride"></a>SasUiStride
 
-Esta Anotação especifica o incremento que deve ser usado ao incrementar ou decrementar esse valor. Ao contrário de [SasUiSteps](#sasuisteps), [SasUiStride](#sasuistride) é útil com um controle Spinner, por exemplo, onde os dados são desvinculados e o usuário incrementa o valor do parâmetro por Stride em vez de um número predefinido de etapas. Os aplicativos host devem incrementar (ou decrementar dependendo do comportamento do controle) pelo valor de SasUiStride da seguinte maneira:
+Essa anotação especifica o incremento que deve ser usado ao incrementar ou decrementar esse valor. Ao contrário de [SasUiSteps,](#sasuisteps) [SasUiStride](#sasuistride) é útil com um controle de rotação, por exemplo, em que os dados não são unidos e o usuário prefere incrementar o valor do parâmetro por stride em vez de por um número de etapas pré-definido. Os aplicativos host devem incrementar (ou decrementar dependendo do comportamento de controle) pelo valor de SasUiStride da seguinte forma:
 
 
 ```
@@ -220,7 +220,7 @@ ParameterValue = ParameterValue +/- SasUiStride
 
 
 
-O valor padrão é 1,0 f.
+O valor padrão é 1,0f.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

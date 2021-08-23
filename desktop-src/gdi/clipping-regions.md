@@ -4,12 +4,12 @@ ms.assetid: d9238ee5-3305-4e85-aef3-2c5c8b74aacd
 title: Regiões de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a830e05b2a9ce709183f23fad66f937c8c512acd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc0647d44d82e289b702e9111b62c5a138c8a0fa059428a6173af36f4eeca657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105911"
 ---
 # <a name="clipping-regions"></a>Regiões de recorte
 

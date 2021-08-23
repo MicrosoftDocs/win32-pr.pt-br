@@ -4,12 +4,12 @@ description: O design de objeto de proxy e acessível depende do design dos elem
 ms.assetid: 83a9ff66-2fe6-4589-a187-cdaf207b02b8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9578c79f93f91834dec14808a1a1867f40b215a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0cd96056f89e1efc18da3e299a76e92c85166efd7067e54f972a69eb8786d57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118830066"
 ---
 # <a name="design-considerations-for-proxy-objects"></a>Considerações de design para objetos de proxy
 
@@ -28,9 +28,9 @@ Para trackbars verticais sem esse estilo, [**IAccessible:: get \_ accValue**](/w
 
 Para trackbars horizontais sem esse estilo, zero (0) é retornado quando o TrackBar Thumb está na extremidade esquerda do controle; os valores aumentam à medida que você move o TrackBar Thumb para a direita. Com o **estilo \_ revertido TBS** , [**IAccessible:: get \_ accValue**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue) retorna 100 (100) quando o TrackBar Thumb está à esquerda; os valores diminuem à medida que você move o TrackBar Thumb para a direita.
 
- 
+ 
 
- 
+ 
 
 
 

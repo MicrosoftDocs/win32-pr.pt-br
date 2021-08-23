@@ -1,24 +1,24 @@
 ---
 title: Controle de cabeçalho (referência de elemento de interface do usuário do MSAA)
-description: Um controle de cabeçalho exibe os títulos na parte superior das colunas de informações e permite que o usuário classifique as informações clicando nos títulos. O Windows Explorer usa um controle de cabeçalho quando a exibição detalhes é selecionada.
+description: Um controle de cabeçalho exibe os títulos na parte superior das colunas de informações e permite que o usuário classifique as informações clicando nos títulos. Windows O Explorer usa um controle de cabeçalho quando a exibição detalhes é selecionada.
 ms.assetid: 669d6bb8-7bc4-4e6f-bf4f-207887f44b83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6d069770b14ad3ba58022af28ad07fc78cb8c5b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f0c378bb0244e94f4cb95c8b2ba90512d2b17542bdef7428197ee58479dbfde1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994176"
 ---
 # <a name="header-control-msaa-ui-element-reference"></a>Controle de cabeçalho (referência de elemento de interface do usuário do MSAA)
 
 > [!Note]  
 > Este tópico descreve objetos de **controle de cabeçalho** para fins de referência de elemento da interface do usuário do MSAA. Como criar objetos de **controle de cabeçalho** em várias estruturas de interface do usuário não é descrito aqui. Consulte a documentação de referência da API para a estrutura de interface do usuário que você está usando.
 
- 
+ 
 
-Um controle de cabeçalho exibe os títulos na parte superior das colunas de informações e permite que o usuário classifique as informações clicando nos títulos. O Windows Explorer usa um controle de cabeçalho quando a exibição detalhes é selecionada.
+Um controle de cabeçalho exibe os títulos na parte superior das colunas de informações e permite que o usuário classifique as informações clicando nos títulos. Windows O Explorer usa um controle de cabeçalho quando a exibição detalhes é selecionada.
 
 O nome de classe da janela para um controle de cabeçalho é WC \_ header, que é definido como "SysHeader32" em commctrl. h.
 
@@ -38,7 +38,7 @@ Um controle de cabeçalho dá suporte aos seguintes métodos [**IAccessible**](/
 
 
 
- 
+ 
 
 ## <a name="iaccessible-properties"></a>Propriedades de IAccessible
 
@@ -58,7 +58,7 @@ Um controle de cabeçalho dá suporte às seguintes propriedades de [**IAccessib
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -67,9 +67,9 @@ Um controle de cabeçalho dá suporte às seguintes propriedades de [**IAccessib
 [Interface IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

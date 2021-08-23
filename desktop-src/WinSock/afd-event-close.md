@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: fbc6c63a3084db6a9be0a4b4ea7672d84881a29a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9068809c052638e33d45a5affadc23a289fa65ae04e6b1a71af1e40e4b508b15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993746"
 ---
 # <a name="afd_event_close-event"></a>Evento de fechamento de \_ evento de AFD \_
 
@@ -57,7 +57,7 @@ A tabela a seguir lista os possíveis valores para o parâmetro *EnterExit* :
 
 </dd> <dt>
 
-*Localidade* 
+*Localização* 
 </dt> <dd>
 
 Um campo privado usado internamente.
@@ -67,7 +67,7 @@ Um campo privado usado internamente.
 *Processo* 
 </dt> <dd>
 
-O endereço [EPROCESS](/windows-hardware/drivers/kernel/eprocess) do processo que possui o soquete relacionado. Essa é uma estrutura opaca que serve como o objeto de processo para um processo. Para obter mais informações, consulte a documentação do Windows Driver Kit para a estrutura [EPROCESS](/windows-hardware/drivers/kernel/eprocess) .
+O endereço [EPROCESS](/windows-hardware/drivers/kernel/eprocess) do processo que possui o soquete relacionado. Essa é uma estrutura opaca que serve como o objeto de processo para um processo. para obter mais informações, consulte a documentação do Windows Driver Kit para a estrutura [EPROCESS](/windows-hardware/drivers/kernel/eprocess) .
 
 </dd> <dt>
 
@@ -95,8 +95,8 @@ O evento de **\_ \_ fechamento de evento de AFD** é rastreado para uma operaç�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c9ce19c5391541336f52dd872b44bb9f3a447c27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 079b9f1a852ff0b9eb6e1c38cea6e24e3ee00107ac46ca15e738e1ef9e0eb8b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074360"
 ---
 # <a name="cdeferredcommandpostpone-method"></a>Método CDeferredCommand. adie
 
@@ -49,7 +49,7 @@ Nova hora da apresentação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará VFW \_ E \_ hora \_ já \_ passado se *Newtime* já tiver passado. Caso contrário, retorna um **HRESULT** resultante de uma chamada para [**CCmdQueue:: Remove**](ccmdqueue-remove.md) (ao extrair da lista) ou [**CCmdQueue:: Insert**](ccmdqueue-insert.md) (ao reinserir com o tempo alterado).
 
@@ -63,7 +63,7 @@ Essa função de membro implementa o método [**IDeferredCommand::P ostpone**](/
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

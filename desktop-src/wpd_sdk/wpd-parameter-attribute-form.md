@@ -1,7 +1,7 @@
 ---
 description: Descreve como um parâmetro (método ou evento) armazena seu valor.
 ms.assetid: 066196af-7805-4823-8ab7-cb95c17bba2a
-title: Enumeração WpdParameterAttributeForm (PortableDevice. h)
+title: Enumeração WpdParameterAttributeForm (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 528008edbb74d5eda626b9868814ad621e676fa9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f50665768d62d8155bd0ac9001f4ae5029766d7d5b27a942941f8f41b9492e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026744"
 ---
 # <a name="wpdparameterattributeform-enumeration"></a>Enumeração WpdParameterAttributeForm
 
@@ -43,35 +43,35 @@ typedef enum tagWpdParameterAttributeForm {
 
 <dl> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_UNSPECIFIED"></span><span id="wpd_parameter_attribute_form_unspecified"></span>**\_formato de atributo de parâmetro WPD \_ \_ \_ não especificado**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_UNSPECIFIED"></span><span id="wpd_parameter_attribute_form_unspecified"></span>**FORMULÁRIO DE ATRIBUTO DE PARÂMETRO WPD \_ \_ NÃO \_ \_ ESPECIFICADO**
 </dt> <dd>
 
-A forma do parâmetro não foi especificada.
+A forma do parâmetro não é especificada.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_RANGE"></span><span id="wpd_parameter_attribute_form_range"></span>**\_intervalo de \_ formulário de atributo de parâmetro WPD \_ \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_RANGE"></span><span id="wpd_parameter_attribute_form_range"></span>**INTERVALO DE FORMULÁRIO \_ DE \_ ATRIBUTO DE PARÂMETRO \_ WPD \_**
 </dt> <dd>
 
 O parâmetro especifica um intervalo.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_ENUMERATION"></span><span id="wpd_parameter_attribute_form_enumeration"></span>**\_enumeração de \_ formulário de atributo de parâmetro WPD \_ \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_ENUMERATION"></span><span id="wpd_parameter_attribute_form_enumeration"></span>**ENUMERAÇÃO DE \_ FORMULÁRIO DE ATRIBUTO DE \_ \_ PARÂMETRO \_ WPD**
 </dt> <dd>
 
 O parâmetro é uma enumeração.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_FORM_REGULAR_EXPRESSION"></span><span id="wpd_parameter_attribute_form_regular_expression"></span>**\_ \_ \_ expressão regular de formulário de atributo \_ de parâmetro WPD \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_FORM_REGULAR_EXPRESSION"></span><span id="wpd_parameter_attribute_form_regular_expression"></span>**EXPRESSÃO REGULAR \_ DE FORMULÁRIO DE ATRIBUTO \_ \_ DE \_ \_ PARÂMETRO WPD**
 </dt> <dd>
 
 O parâmetro é uma expressão regular.
 
 </dd> <dt>
 
-<span id="WPD_PARAMETER_ATTRIBUTE_OBJECT_IDENTIFIER"></span><span id="wpd_parameter_attribute_object_identifier"></span>**\_identificador de \_ objeto de atributo de parâmetro WPD \_ \_**
+<span id="WPD_PARAMETER_ATTRIBUTE_OBJECT_IDENTIFIER"></span><span id="wpd_parameter_attribute_object_identifier"></span>**IDENTIFICADOR DE \_ OBJETO DE ATRIBUTO DE PARÂMETRO \_ \_ \_ WPD**
 </dt> <dd>
 
 O parâmetro é um identificador de objeto.
@@ -84,7 +84,7 @@ O parâmetro é um identificador de objeto.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

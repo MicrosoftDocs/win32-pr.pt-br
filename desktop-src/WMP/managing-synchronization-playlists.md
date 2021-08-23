@@ -4,42 +4,42 @@ description: Gerenciando listas de reprodução de sincronização
 ms.assetid: 5891ada0-37a6-4256-9885-8aa9dbe98b7c
 keywords:
 - Windows Media Player, dispositivos portáteis
-- Modelo de objeto do Windows Media Player, dispositivos portáteis
+- Windows Media Player de objeto, dispositivos portáteis
 - modelo de objeto, dispositivos portáteis
-- Controle ActiveX do Windows Media Player, dispositivos portáteis
-- Controle ActiveX, dispositivos portáteis
-- Controle ActiveX móvel do Windows Media Player, dispositivos portáteis
-- Windows Media Player Mobile, dispositivos portáteis
-- dispositivos portáteis, Gerenciando listas de reprodução de sincronização
-- sincronização de dispositivo, listas de reprodução
-- Sincronizando dispositivos, listas de reprodução
-- Windows Media Player, listas de reprodução de sincronização
-- Modelo de objeto do Windows Media Player, listas de reprodução de sincronização
+- Windows Media Player ActiveX controle, dispositivos portáteis
+- ActiveX controle, dispositivos portáteis
+- Windows Media Player Controle ActiveX dispositivos móveis, dispositivos portáteis
+- Windows Media Player Dispositivos móveis e portáteis
+- dispositivos portáteis, gerenciando listas de reprodução de sincronização
+- sincronização de dispositivo, playlists
+- sincronizando dispositivos, playlists
+- Windows Media Player, playlists de sincronização
+- Windows Media Player de objeto, listas de reprodução de sincronização
 - modelo de objeto, playlists de sincronização
-- Windows Media Player Mobile, listas de reprodução de sincronização
-- Controle ActiveX do Windows Media Player, listas de reprodução de sincronização
-- Controle ActiveX móvel do Windows Media Player, listas de reprodução de sincronização
-- Controle ActiveX, listas de reprodução de sincronização
-- listas de reprodução, sincronização
-- listas de reprodução de metarquivo, sincronização
-- Listas de reprodução do metarquivo do Windows Media, sincronização
-- listas de reprodução de sincronização, gerenciando
+- Windows Media Player Mobile, synchronization playlists
+- Windows Media Player ActiveX controle, listas de reprodução de sincronização
+- Windows Media Player Controle de ActiveX móvel, listas de reprodução de sincronização
+- ActiveX controle, listas de reprodução de sincronização
+- playlists, sincronização
+- playlists de metafile, sincronização
+- Windows Playlists de metadados de mídia, sincronização
+- playlists de sincronização, gerenciando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be0fe084918c0b69b827dbb941388246cbd177ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 10253d7f08c618d62079ccc1767fdaf85560861eae68d39cd897e7959eaffcad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105811562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996366"
 ---
 # <a name="managing-synchronization-playlists"></a>Gerenciando listas de reprodução de sincronização
 
-O Windows Media Player 10 ou posterior usa listas de reprodução para sincronizar arquivos de mídia digital com dispositivos portáteis. Esta seção explica como trabalhar com listas de reprodução de sincronização.
+Windows Media Player 10 ou posterior usa playlists para sincronizar arquivos de mídia digital com dispositivos portáteis. Esta seção explica como trabalhar com playlists de sincronização.
 
-O código de exemplo nesta seção usa dois controles ListView para exibir informações. O primeiro controle ListView (IDC \_ PLVIEW) exibe todas as listas de reprodução na biblioteca do Windows Media Player, com as playlists de sincronização exibidas primeiro. As playlists de sincronização para o dispositivo selecionado no momento são marcadas com uma marca de seleção e são classificadas em ordem de prioridade de sincronização. Todas as outras listas de reprodução estão desmarcadas. O controle ListView foi configurado para seleção única. A ordem das listas de reprodução no controle ListView determina sua prioridade de sincronização. O estado de verificação de uma lista de reprodução individual determina se é uma lista de reprodução de sincronização para o dispositivo selecionado no momento.
+O código de exemplo nesta seção usa dois controles ListView para exibir informações. O primeiro controle ListView (IDC PLVIEW) exibe todas as playlists na biblioteca Windows Media Player, com listas de reprodução de sincronização \_ aparecendo primeiro. As listas de reprodução de sincronização para o dispositivo selecionado no momento são marcadas com uma marca de seleção e são classificação na ordem de prioridade de sincronização. Todas as outras playlists estão desmarcadas. O controle ListView foi configurado para seleção única. A ordem das listas de reprodução no controle ListView determina sua prioridade de sincronização. O estado verificado de uma playlist individual determina se é uma playlist de sincronização para o dispositivo selecionado no momento.
 
-O segundo controle ListView (IDC \_ MEDIAVIEW) exibe os itens de mídia na lista de reprodução selecionada. Duas colunas adicionais exibem texto indicando se o arquivo de mídia digital foi copiado para o dispositivo e, em caso de falha, se a cópia falhou porque o arquivo de mídia digital não se ajustou.
+O segundo controle ListView (IDC \_ MEDIAVIEW) exibe os itens de mídia na playlist selecionada. Duas colunas adicionais exibem texto que indica se o arquivo de mídia digital foi copiado para o dispositivo e, no caso de uma falha, se a cópia falhou porque o arquivo de mídia digital não se encaixava.
 
 O código de exemplo a seguir mostra como os controles ListView são inicializados:
 
@@ -102,7 +102,7 @@ STDMETHODIMP CSyncSettings::InitListView()
 
 
 
-A matriz de cadeias de caracteres a seguir contém os nomes dos atributos de sincronização usados nos exemplos:
+A seguinte matriz de cadeias de caracteres contém os nomes dos atributos de sincronização usados nos exemplos:
 
 
 ```C++
@@ -128,7 +128,7 @@ static const TCHAR *g_szSyncAttributeNames[17] = {
 
 
 
-A variável de membro a seguir contém uma lista de reprodução que contém todas as listas de reprodução na biblioteca do Windows Media Player. Cada playlist é representada como um item de mídia.
+A variável de membro a seguir contém uma playlist que contém todas as playlists na biblioteca Windows Media Player dados. Cada playlist é representada como um item de mídia.
 
 
 ```C++
@@ -140,7 +140,7 @@ CComPtr<IWMPPlaylist> m_spPlaylist;
 As seções a seguir fornecem código de exemplo:
 
 -   [Enumerando listas de reprodução de sincronização](enumerating-synchronization-playlists.md)
--   [Classificando listas de reprodução por prioridade de sincronização](sorting-playlists-by-synchronization-priority.md)
+-   [Classificação de listas de reprodução por prioridade de sincronização](sorting-playlists-by-synchronization-priority.md)
 -   [Enumerando os itens de mídia](enumerating-the-media-items.md)
 -   [Determinando o estado de sincronização da playlist](determining-playlist-synchronization-state.md)
 -   [Alterando a prioridade de sincronização](changing-synchronization-priority.md)
@@ -152,9 +152,9 @@ As seções a seguir fornecem código de exemplo:
 [**Trabalhando com dispositivos portáteis**](working-with-portable-devices.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

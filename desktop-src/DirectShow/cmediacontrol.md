@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ae3a528263af4bd2fe5e4eccbe28793799c373a0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 119ffb93cb307db1da3bc8c7562851d63c5f9eeb8e0e3b80be62c8110181c32b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074070"
 ---
 # <a name="cmediacontrol-class"></a>Classe CMediaControl
 
@@ -37,10 +37,10 @@ Os métodos [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediaco
 |------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CMediaControl**](cmediacontrol-cmediacontrol.md)       | Constrói um objeto **CMediaControl** .                                                                                                                                                                                                  |
 | Métodos IDispatch                                          | Descrição                                                                                                                                                                                                                             |
-| [**GetIDsOfNames**](cmediacontrol-getidsofnames.md)       | Mapeia um único membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiro (DISPIDs), que podem ser usados durante as chamadas subsequentes para o método [**CMediaControl:: Invoke**](cmediacontrol-invoke.md) . |
+| [**GetIDsOfNames**](cmediacontrol-getidsofnames.md)       | Mapas um único membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiro (dispids), que pode ser usado durante as chamadas subsequentes para o método [**CMediaControl:: Invoke**](cmediacontrol-invoke.md) . |
 | [**GetTypeInfo**](cmediacontrol-gettypeinfo.md)           | Recupera um objeto Type-informations, que pode recuperar as informações de tipo de uma interface.                                                                                                                                          |
 | [**GetTypeInfoCount**](cmediacontrol-gettypeinfocount.md) | Recupera o número de interfaces de informações de tipo fornecidas por um objeto.                                                                                                                                                              |
-| [**Chame**](cmediacontrol-invoke.md)                     | Fornece acesso a propriedades e métodos expostos por um objeto.                                                                                                                                                                         |
+| [**Invoke**](cmediacontrol-invoke.md)                     | Fornece acesso a propriedades e métodos expostos por um objeto.                                                                                                                                                                         |
 
 
 

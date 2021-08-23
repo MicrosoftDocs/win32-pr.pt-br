@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 45ed8683a892b07fa63fbe79b657669e647126cd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5e83dba1dcdc46fb4715fbbdcb6a5ed009f77cf29212e65be9b0270ba01a55e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956705"
 ---
 # <a name="ntgdiddcolorcontrol-function"></a>Função NtGdiDdColorControl
 
@@ -59,7 +59,7 @@ Ponteiro para uma [**estrutura \_ COLORCONTROLDATA do DD**](/windows/win32/api/d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **NtGdiDdColorControl** retorna um dos seguintes códigos de retorno de chamada.
 

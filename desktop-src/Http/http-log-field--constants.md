@@ -1,6 +1,6 @@
 ---
-title: Constantes de HTTP_LOG_FIELD_ (http. h)
-description: Defina os campos no log W3C e nos logs de erros.
+title: HTTP_LOG_FIELD_ constantes (Http.h)
+description: Defina os campos no log do W3C e nos logs de erro.
 ms.assetid: 44307d5a-f413-4ee9-9f9c-586c824d5493
 topic_type:
 - apiref
@@ -39,22 +39,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9ab05a9126cb5ffb81b65a460e6a9d671c268bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 616caaed9829c7f926f95f8982033457e1835a6beccfcad8313f6624d68195db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950825"
 ---
-# <a name="http_log_field_-constants"></a>\_Constantes de \_ campo de log http \_
+# <a name="http_log_field_-constants"></a>Constantes \_ DE \_ CAMPO DE LOG HTTP \_
 
-As constantes de **\_ \_ campo \_ de log http** definem os campos no log W3C e os logs de erros.
+As **constantes \_ HTTP LOG \_ FIELD \_** definem os campos no log do W3C e nos logs de erro.
 
-Essas constantes são usadas na estrutura [**de \_ \_ informações de log http**](/windows/desktop/api/Http/ns-http-http_logging_info) .
+Essas constantes são usadas na estrutura [**HTTP \_ LOGGING \_ INFO.**](/windows/desktop/api/Http/ns-http-http_logging_info)
 
 <dl> <dt>
 
-<span id="HTTP_LOG_FIELD_DATE"></span><span id="http_log_field_date"></span>**\_data do \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_DATE"></span><span id="http_log_field_date"></span>**DATA DO \_ CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -64,17 +64,17 @@ A data em que a atividade ocorreu.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_TIME"></span><span id="http_log_field_time"></span>**\_tempo do \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_TIME"></span><span id="http_log_field_time"></span>**HORA DO \_ CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-A hora, em UTC (tempo Universal Coordenado), na qual a atividade ocorreu.
+A hora, em UTC (tempo universal coordenado), em que a atividade ocorreu.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_CLIENT_IP"></span><span id="http_log_field_client_ip"></span>**\_IP do \_ cliente do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_CLIENT_IP"></span><span id="http_log_field_client_ip"></span>**IP \_ DO CLIENTE DO CAMPO DE LOG \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -84,17 +84,17 @@ Endereço IP do cliente que fez a solicitação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_USER_NAME"></span><span id="http_log_field_user_name"></span>**\_nome de \_ usuário do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_USER_NAME"></span><span id="http_log_field_user_name"></span>**NOME \_ DE USUÁRIO DO CAMPO \_ \_ DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O nome do usuário autenticado que acessou seu servidor. Os usuários anônimos são indicados por um hífen.
+O nome do usuário autenticado que acessou o servidor. Os usuários anônimos são indicados por um hífen.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_SITE_NAME"></span><span id="http_log_field_site_name"></span>**\_nome do \_ site do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_SITE_NAME"></span><span id="http_log_field_site_name"></span>**NOME \_ DO SITE DO CAMPO \_ \_ DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -104,7 +104,7 @@ O nome do site no qual a entrada do arquivo de log foi gerada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="_HTTP_LOG_FIELD_COMPUTER_NAME"></span><span id="_http_log_field_computer_name"></span>**Http \_ \_nome do \_ computador \_ do campo de log**
+<span id="_HTTP_LOG_FIELD_COMPUTER_NAME"></span><span id="_http_log_field_computer_name"></span>**HTTP \_ NOME \_ DO COMPUTADOR DO CAMPO DE \_ \_ LOG**
 </dt> <dd> <dl> <dt>
 
 
@@ -114,7 +114,7 @@ O nome do computador no qual a entrada do arquivo de log foi gerada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_SERVER_IP"></span><span id="http_log_field_server_ip"></span>**\_ \_ \_ IP do servidor de campo de log http \_**
+<span id="HTTP_LOG_FIELD_SERVER_IP"></span><span id="http_log_field_server_ip"></span>**IP \_ DO SERVIDOR DE CAMPO DE LOG \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -124,17 +124,17 @@ O endereço IP do servidor no qual a entrada do arquivo de log foi gerada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_METHOD"></span><span id="http_log_field_method"></span>**\_método de \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_METHOD"></span><span id="http_log_field_method"></span>**MÉTODO DE \_ CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-A ação solicitada, por exemplo, um método Get.
+A ação solicitada, por exemplo, um método get.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_HTTP_LOG_FIELD_URI_STEM"></span><span id="_http_log_field_uri_stem"></span>**Http \_ \_ \_ \_ tronco URI do campo de log**
+<span id="_HTTP_LOG_FIELD_URI_STEM"></span><span id="_http_log_field_uri_stem"></span>**HTTP \_ STEM \_ DO URI DO CAMPO \_ DE \_ LOG**
 </dt> <dd> <dl> <dt>
 
 
@@ -144,17 +144,17 @@ O destino da ação, por exemplo, Default.htm.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_URI_QUERY"></span><span id="http_log_field_uri_query"></span>**\_consulta de \_ URI de campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_URI_QUERY"></span><span id="http_log_field_uri_query"></span>**CONSULTA \_ DE \_ URI DO \_ CAMPO \_ DE LOG HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-A consulta, se houver, que o cliente estava tentando executar. Um URI (Resource Identifier Universal) consulta é necessário apenas para páginas dinâmico.
+A consulta, se alguma, que o cliente estava tentando executar. Um URI (Resource Identifier Universal) consulta é necessário apenas para páginas dinâmico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_STATUS"></span><span id="http_log_field_status"></span>**\_status do \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_STATUS"></span><span id="http_log_field_status"></span>**STATUS \_ DO CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -164,17 +164,17 @@ O código de status HTTP.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_WIN32_STATUS"></span><span id="http_log_field_win32_status"></span>**\_Status do \_ Win32 do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_WIN32_STATUS"></span><span id="http_log_field_win32_status"></span>**STATUS \_ DO \_ \_ WIN32 DO CAMPO DE \_ LOG HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O código de status do Windows.
+O Windows de status.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_BYTES_SENT"></span><span id="http_log_field_bytes_sent"></span>**\_bytes de campo de log http \_ \_ \_ enviados**
+<span id="HTTP_LOG_FIELD_BYTES_SENT"></span><span id="http_log_field_bytes_sent"></span>**BYTES \_ DE CAMPO DE LOG HTTP \_ \_ \_ ENVIADOS**
 </dt> <dd> <dl> <dt>
 
 
@@ -184,7 +184,7 @@ O número, em bytes, enviado pelo servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_BYTES_RECV"></span><span id="http_log_field_bytes_recv"></span>**\_bytes de campo de log http \_ \_ \_ recv**
+<span id="HTTP_LOG_FIELD_BYTES_RECV"></span><span id="http_log_field_bytes_recv"></span>**RECV \_ DE BYTES DO CAMPO \_ \_ \_ DE LOG HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -194,7 +194,7 @@ O número, em bytes, recebido pelo servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_TIME_TAKEN"></span><span id="http_log_field_time_taken"></span>**\_tempo de campo de log http \_ \_ \_ retirado**
+<span id="HTTP_LOG_FIELD_TIME_TAKEN"></span><span id="http_log_field_time_taken"></span>**TEMPO \_ DE USO DO CAMPO \_ \_ DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -204,37 +204,37 @@ O tempo, em milissegundos, da ação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_SERVER_PORT"></span><span id="http_log_field_server_port"></span>**\_ \_ \_ porta do servidor de campo de log http \_**
+<span id="HTTP_LOG_FIELD_SERVER_PORT"></span><span id="http_log_field_server_port"></span>**PORTA \_ DO SERVIDOR DE CAMPO \_ \_ DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O número da porta do servidor que está configurado para o serviço.
+O número da porta do servidor configurado para o serviço.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="_HTTP_LOG_FIELD_USER_AGENT"></span><span id="_http_log_field_user_agent"></span>**Http \_ \_agente do \_ usuário \_ do campo de log**
+<span id="_HTTP_LOG_FIELD_USER_AGENT"></span><span id="_http_log_field_user_agent"></span>**HTTP \_ AGENTE \_ DE USUÁRIO DO CAMPO DE \_ \_ LOG**
 </dt> <dd> <dl> <dt>
 
 
 
-O aplicativo usado pelo cliente.
+O aplicativo que o cliente usou.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_COOKIE"></span><span id="http_log_field_cookie"></span>**\_cookie de \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_COOKIE"></span><span id="http_log_field_cookie"></span>**COOKIE DE \_ CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O conteúdo do cookie enviado ou recebido, se houver.
+O conteúdo do cookie enviado ou recebido, se for o caso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_REFERER"></span><span id="http_log_field_referer"></span>**\_ \_ referenciador de campo de log http \_**
+<span id="HTTP_LOG_FIELD_REFERER"></span><span id="http_log_field_referer"></span>**REFERENCIADOR \_ DE CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -244,7 +244,7 @@ O site que o usuário visitou pela última vez. Esse site fornece um link para o
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_VERSION"></span><span id="http_log_field_version"></span>**\_versão do \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_VERSION"></span><span id="http_log_field_version"></span>**VERSÃO \_ DO CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -254,22 +254,22 @@ A versão do protocolo HTTP que o cliente usou.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_HOST"></span><span id="http_log_field_host"></span>**\_host de \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_HOST"></span><span id="http_log_field_host"></span>**HOST \_ DO CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O nome do cabeçalho de host, se houver.
+O nome do header do host, se for o caso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_SUB_STATUS"></span><span id="http_log_field_sub_status"></span>**substatus de \_ campo de log http \_ \_ \_**
+<span id="HTTP_LOG_FIELD_SUB_STATUS"></span><span id="http_log_field_sub_status"></span>**SUB STATUS \_ DO CAMPO DE LOG \_ \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O código de erro de substatus.
+O código de erro substatus.
 
 
 </dt> </dl> </dd> </dl>
@@ -278,57 +278,57 @@ As constantes a seguir são usadas para o log de erros HTTP.
 
 <dl> <dt>
 
-<span id="HTTP_LOG_FIELD_CLIENT_PORT"></span><span id="http_log_field_client_port"></span>**\_porta do \_ cliente do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_CLIENT_PORT"></span><span id="http_log_field_client_port"></span>**PORTA \_ DO CLIENTE DO CAMPO \_ \_ DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O número da porta do cliente a partir da qual a solicitação é recebida. Este campo de log só é usado para log de erros.
+O número da porta do cliente do qual a solicitação é recebida. Esse campo de log só é usado para registro em log de erros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_URI"></span><span id="http_log_field_uri"></span>**\_URI do \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_URI"></span><span id="http_log_field_uri"></span>**\_URI DO \_ CAMPO DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O URI recebido na solicitação, incluindo a parte de consulta. Este campo de log só é usado para log de erros.
+O URI recebido na solicitação, incluindo a parte da consulta. Esse campo de log só é usado para registro em log de erros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_SITE_ID"></span><span id="http_log_field_site_id"></span>**\_ID do \_ site do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_SITE_ID"></span><span id="http_log_field_site_id"></span>**\_ID DO \_ SITE DO \_ CAMPO \_ DE LOG HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-A ID numérica específica do aplicativo do grupo de URLs na qual a solicitação é roteada. Este campo de log só é usado para log de erros.
+A ID numérica específica do aplicativo do Grupo de URL no qual a solicitação é roteada. Esse campo de log só é usado para registro em log de erros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_REASON"></span><span id="http_log_field_reason"></span>**\_motivo do \_ campo de log http \_**
+<span id="HTTP_LOG_FIELD_REASON"></span><span id="http_log_field_reason"></span>**MOTIVO \_ DO CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-A frase do motivo do erro. Este campo de log só é usado para log de erros.
+A frase de motivo do erro. Esse campo de log só é usado para registro em log de erros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_QUEUE_NAME"></span><span id="http_log_field_queue_name"></span>**\_nome da \_ fila do campo de log http \_ \_**
+<span id="HTTP_LOG_FIELD_QUEUE_NAME"></span><span id="http_log_field_queue_name"></span>**NOME \_ DA FILA DO CAMPO \_ \_ DE LOG \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
 
-O nome da fila de solicitações para a qual a solicitação é expedida. Este campo de log só é usado para log de erros.
+O nome da fila de solicitações para a qual a solicitação é expedida. Esse campo de log só é usado para registro em log de erros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_LOG_FIELD_STREAMID"></span><span id="http_log_field_streamid"></span>**\_campo de log http \_ \_ streamid**
+<span id="HTTP_LOG_FIELD_STREAMID"></span><span id="http_log_field_streamid"></span>**STREAMID \_ DO CAMPO DE LOG \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 
@@ -344,9 +344,9 @@ A ID do fluxo.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Http. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Http.h</dt> </dl> |
 
 
 
@@ -354,10 +354,10 @@ A ID do fluxo.
 
 <dl> <dt>
 
-[Constantes da API do servidor HTTP versão 2,0](http-server-api-version-2-0-constants.md)
+[Constantes da API do Servidor HTTP versão 2.0](http-server-api-version-2-0-constants.md)
 </dt> <dt>
 
-[**\_informações de log http \_**](/windows/desktop/api/Http/ns-http-http_logging_info)
+[**INFORMAÇÕES DE \_ LOG \_ HTTP**](/windows/desktop/api/Http/ns-http-http_logging_info)
 </dt> <dt>
 
 [**HttpSetUrlGroupProperty**](/windows/desktop/api/Http/nf-http-httpseturlgroupproperty)
