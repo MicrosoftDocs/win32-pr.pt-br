@@ -4,12 +4,12 @@ ms.assetid: d0b0f012-ad4f-4bd8-bb97-98f212bcbe81
 title: Log de erros do VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9822035f36f56162fb6836bf7ad4c09cdd31b777
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53c2743fc6c23458a1059287a7731777e92447e3cd57ebf52e40baf7619c5658
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056224"
 ---
 # <a name="vss-error-logging"></a>Log de erros do VSS
 

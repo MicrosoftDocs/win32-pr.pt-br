@@ -4,16 +4,16 @@ ms.assetid: 915ef590-c427-4ac2-a2f7-aed328776cb7
 title: Pacotes de segurança personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a4c447f1a24a3edc2f25a55f83d82c174094c50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3799edb3eb8e0551afe7d7f7bcdc54924228445d6ffb28cb4773af843b5c2d9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008664"
 ---
 # <a name="custom-security-packages"></a>Pacotes de segurança personalizados
 
-Para implementar novos protocolos de segurança integrados com os sistemas operacionais Windows Server e Windows, use a API do pacote de segurança personalizado e as funções de [*autoridade de segurança local*](/windows/desktop/SecGloss/l-gly) (LSA).
+para implementar novos protocolos de segurança que são integrados ao servidor de Windows e Windows sistemas operacionais, use a API do pacote de segurança personalizado e as funções de [*autoridade de segurança Local*](/windows/desktop/SecGloss/l-gly) (LSA).
 
 A API do pacote de segurança personalizado dá suporte ao desenvolvimento combinado de SSPs ( [*provedores de suporte de segurança*](/windows/desktop/SecGloss/s-gly) ) personalizados, que fornecem serviços de autenticação não [interativos](noninteractive-authentication.md) e troca segura de mensagens para aplicativos cliente/servidor, com o desenvolvimento de [*pacotes de autenticação*](/windows/desktop/SecGloss/a-gly)personalizados, que fornecem serviços para aplicativos que executam a [autenticação interativa](interactive-authentication.md). Esses serviços, quando combinados em um único pacote, são chamados de provedor de suporte de segurança/pacote de autenticação (SSP/AP).
 

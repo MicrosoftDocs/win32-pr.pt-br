@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d6b582267afceb01fd7ced7d6d46144664bb9d2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c41ea46f9226990fc28b5c629f3b36785d4bf4b0ee6ecd6e39477251f765b3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971315"
 ---
 # <a name="job_info_2-structure"></a>Estrutura de informações do trabalho \_ \_ 2
 
@@ -178,7 +178,7 @@ O status do trabalho. Esse membro pode ser um ou mais dos valores a seguir.
 
  
 
-No Windows XP e versões posteriores do Windows, os seguintes valores também podem ser usados:
+no Windows XP e versões posteriores do Windows, os seguintes valores também podem ser usados:
 
 | Valor                 | Significado                                                                                       |
 |-----------------------|-----------------------------------------------------------------------------------------------|
@@ -264,13 +264,13 @@ O tempo total, em milissegundos, decorrido desde que o trabalho começou a ser i
 **PagesPrinted**
 </dt> <dd>
 
-O número de páginas que foram impressas. Esse valor pode ser zero se o trabalho de impressão não contiver informações de delimitação de página.
+O número de páginas que foram impressas. Esse valor pode ser zero se o trabalho de impressão não contém informações de delimitação de página.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os monitores de porta que não dão suporte a TrueEndOfJob definirão o trabalho como status de trabalho \_ \_ impresso logo depois que o trabalho for enviado para a impressora.
+Monitores de porta que não suportam TrueEndOfJob definirão o trabalho como STATUS DO TRABALHO IMPRESSO logo após o trabalho \_ ser enviado para a \_ impressora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -280,8 +280,8 @@ Os monitores de porta que não dão suporte a TrueEndOfJob definirão o trabalho
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **\_ Informações do trabalho \_ \_ 2W** (Unicode) e **\_ info do trabalho \_ \_ 2a** (ANSI)<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **\_ INFORMAÇÕES \_ DE TRABALHO \_ 2W** (Unicode) e INFORMAÇÕES DE TRABALHO **\_ \_ \_ 2A** (ANSI)<br/>                                   |
 
 
 
@@ -292,16 +292,16 @@ Os monitores de porta que não dão suporte a TrueEndOfJob definirão o trabalho
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> <dt>
 
 [**EnumJobs**](enumjobs.md)
 </dt> <dt>
 
-[**GetJob**](getjob.md)
+[**Getjob**](getjob.md)
 </dt> <dt>
 
 [**SetJob**](setjob.md)

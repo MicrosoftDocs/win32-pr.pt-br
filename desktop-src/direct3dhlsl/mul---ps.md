@@ -1,6 +1,6 @@
 ---
-title: Mul-PS
-description: Multiplica as fontes no destino. | Mul-PS
+title: mul - ps
+description: Multiplica fontes no destino. | mul - ps
 ms.assetid: 03823c10-9631-4468-8488-4bd17224d16c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fefe89d4fdbe5f75965f2707a5ceb2c1673e1326
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 74ff42065f7b41c1d775a0b1924d732110c31bd3121d2464b33eb8b20ae31e21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986296"
 ---
-# <a name="mul---ps"></a>Mul-PS
+# <a name="mul---ps"></a>mul - ps
 
-Multiplica as fontes no destino.
+Multiplica fontes no destino.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| Mul DST, src0, src1 |
+| mul dst, src0, src1 |
 |---------------------|
 
 
@@ -33,7 +33,7 @@ Multiplica as fontes no destino.
 
 onde
 
--   DST é o registro de destino.
+-   dst é o registro de destino.
 -   src0 é um registro de origem.
 -   src1 é um registro de origem.
 
@@ -41,7 +41,7 @@ onde
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | mul                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ onde
 
  
 
-O trecho de código a seguir mostra as operações executadas.
+O snippet de código a seguir mostra as operações executadas.
 
 
 ```

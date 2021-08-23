@@ -1,6 +1,6 @@
 ---
 title: Usar o elemento Fill
-description: Este artigo descreve como usar o elemento Fill do VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
+description: este artigo descreve como usar o elemento Fill de VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
 ms.assetid: ed36601d-2e90-412e-ac3f-58324fac300d
 keywords:
 - Web Workshop, elemento Fill
@@ -28,19 +28,19 @@ keywords:
 - formas preenchidas por imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecb243e4896443fd36a1b22c2ac3a0ab0bedfb2b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 54f6b3e0c92989e037ebf9b95b7bd726134b9099dd5d3755ff4588f7e970586c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057236"
 ---
 # <a name="using-the-fill-element"></a>Usar o elemento Fill
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
  
 

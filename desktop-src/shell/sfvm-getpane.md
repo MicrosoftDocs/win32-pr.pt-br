@@ -4,12 +4,12 @@ ms.assetid: 9621b921-e97f-4219-953a-7c961a81c379
 title: Mensagem de SFVM_GETPANE (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2800be1b7b427e13014686e587b51fc4bf7d7617
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58ef936d4218c29c8d0574e97b8de73c1a0d54f4d62df7dba4f43f371bfeaf95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968665"
 ---
 # <a name="sfvm_getpane-message"></a>Mensagem do SFVM \_ GETpane
 
@@ -139,11 +139,11 @@ Ponteiro para um **DWORD** que contém o número do painel.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
 | Fim do suporte do cliente<br/>    | Windows XP com SP2<br/>                                                      |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 
 
 

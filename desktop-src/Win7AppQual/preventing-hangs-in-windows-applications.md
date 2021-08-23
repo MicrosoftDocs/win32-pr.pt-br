@@ -1,5 +1,5 @@
 ---
-description: Saiba como evitar travas em aplicativos Windows para plataformas Windows 7 e Windows Server 2008 R2.
+description: Saiba como evitar travas em aplicativos Windows para Windows 7 e Windows Server 2008 R2.
 ms.assetid: 698a046b-1934-49cd-a717-d61e7e1ec534
 title: Prevenção de interrupções em aplicativos do Windows
 ms.topic: article
@@ -104,18 +104,18 @@ A remoção de operações de execução longa ou bloqueio do thread da interfac
 
 -   Use APIs de mensagem de janela assíncronas no thread da interface do usuário, especialmente substituindo SendMessage por um de seus pares sem bloqueio: PostMessage, SendNotifyMessage ou SendMessageCallback
 -   Use threads em segundo plano para executar tarefas de execução longa ou de bloqueio. Usar a nova API do pool de threads para implementar seus threads de trabalho
--   Fornecer suporte ao cancelamento para tarefas em segundo plano de execução longa. Para bloquear operações de e/s, use o cancelamento de e/s, mas somente como último recurso; Não é fácil cancelar a operação ' direita '
--   Implementar um design assíncrono para código gerenciado usando o padrão IAsyncResult ou usando eventos
+-   Forneça suporte de cancelamento para tarefas em segundo plano de execução longa. Para bloquear operações de E/S, use o cancelamento de E/S, mas apenas como último recurso; Não é fácil cancelar a operação "correta"
+-   Implementar um design assíncrono para código gerenciado usando o padrão IAsyncResult ou usando Eventos
 
-**Usar os bloqueios com sabedoria**
+**Usar bloqueios com cuidado**
 
-Seu aplicativo ou DLL precisa de bloqueios para sincronizar o acesso às suas estruturas de dados internas. O uso de vários bloqueios aumenta o paralelismo e torna seu aplicativo mais responsivo. No entanto, o uso de vários bloqueios também aumenta a chance de adquirir esses bloqueios em diferentes ordens e causar o deadlock de seus threads. Se dois threads mantiverem um bloqueio e, em seguida, tentarem adquirir o bloqueio do outro thread, suas operações irão formar uma espera circular que bloqueia qualquer progresso de encaminhamento para esses threads. Você pode evitar esse deadlock somente garantindo que todos os threads no aplicativo sempre adquirem todos os bloqueios na mesma ordem. No entanto, nem sempre é fácil adquirir bloqueios na ordem ' direita '. Os componentes de software podem ser compostos, mas as aquisições de bloqueio não podem. Se o seu código chamar algum outro componente, os bloqueios desse componente agora se tornarão parte de sua ordem de bloqueio implícita, mesmo que você não tenha visibilidade nesses bloqueios.
+Seu aplicativo ou DLL precisa de bloqueios para sincronizar o acesso às estruturas de dados internas. O uso de vários bloqueios aumenta o paralelismo e torna seu aplicativo mais responsivo. No entanto, o uso de vários bloqueios também aumenta a chance de adquirir esses bloqueios em ordens diferentes e fazer com que os threads bloqueem. Se dois threads cada um manterem um bloqueio e tentarem adquirir o bloqueio do outro thread, suas operações formarão uma espera circular que bloqueia qualquer progresso de avanço para esses threads. Você pode evitar esse deadlock apenas garantindo que todos os threads no aplicativo sempre adquira todos os bloqueios na mesma ordem. No entanto, nem sempre é fácil adquirir bloqueios na ordem "correta". Os componentes de software podem ser compostos, mas as aquisições de bloqueio não podem. Se o código chamar algum outro componente, os bloqueios desse componente agora se tornarão parte da ordem de bloqueio implícita, mesmo que você não tenha visibilidade sobre esses bloqueios.
 
-As coisas ficam ainda mais difíceis porque as operações de bloqueio incluem muito mais do que as funções usuais para seções críticas, mutexes e outros bloqueios tradicionais. Qualquer chamada de bloqueio que cruza os limites de thread tem propriedades de sincronização que podem resultar em um deadlock. O thread de chamada executa uma operação com a semântica ' Acquire ' e não pode desbloquear até que o thread de destino seja chamado. Algumas funções user32 (por exemplo, SendMessage), bem como muitas chamadas COM de bloqueio se enquadram nessa categoria.
+As coisas ficam ainda mais difíceis porque as operações de bloqueio incluem muito mais do que as funções comuns para Seções Críticas, Mutexes e outros bloqueios tradicionais. Qualquer chamada de bloqueio que cruze os limites do thread tem propriedades de sincronização que podem resultar em um deadlock. O thread de chamada executa uma operação com semântica 'acquire' e não pode desbloquear até que o thread de destino 'versões' essa chamada. Algumas funções User32 (por exemplo, SendMessage), bem como muitas chamadas COM de bloqueio, se enquadram nessa categoria.
 
-Pior ainda, o sistema operacional tem seu próprio bloqueio específico de processo interno que às vezes é mantido enquanto seu código é executado. Esse bloqueio é adquirido quando as DLLs são carregadas no processo e, portanto, são chamadas de "bloqueio de carregador". A função DllMain sempre é executada sob o bloqueio do carregador; Se você adquirir bloqueios em DllMain (e não deve), será necessário fazer com que o carregador trave a parte da sua ordem de bloqueio. Chamar determinadas APIs do Win32 também pode adquirir o bloqueio de carregador em suas funções de nome, como LoadLibraryEx, GetModuleHandle e especialmente CoCreateInstance.
+Pior ainda, o sistema operacional tem seu próprio bloqueio interno específico do processo que, às vezes, é mantido enquanto o código é executado. Esse bloqueio é adquirido quando as DLLs são carregadas no processo e, portanto, é chamado de 'bloqueio do carregador'. A função DllMain sempre é executada sob o bloqueio do carregador; se você adquirir bloqueios no DllMain (e não deveria), precisará fazer com que o bloqueio do carregador faça parte da ordem de bloqueio. Chamar determinadas APIs win32 também pode adquirir o bloqueio do carregador em seu nome – funções como LoadLibraryEx, GetModuleHandle e, especialmente, CoCreateInstance.
 
-Para reunir tudo isso, examine o código de exemplo abaixo. Essa função adquire vários objetos de sincronização e define implicitamente uma ordem de bloqueio, algo que não é necessariamente óbvio na inspeção de cursores. Na entrada da função, o código adquire uma seção crítica e não a libera até que a função saia, tornando-a o nó superior em nossa hierarquia de bloqueio. Em seguida, o código chama a função do Win32 LoadIcon (), que, nos bastidores, pode chamar o carregador do sistema operacional para carregar esse binário. Essa operação adquiriria o bloqueio de carregador, que agora também se torna parte dessa hierarquia de bloqueio (verifique se a função DllMain não adquire o \_ bloqueio g cs). Em seguida, o código chama SendMessage (), uma operação de bloqueio entre threads, que não será retornada, a menos que o thread da interface do usuário responda. Novamente, verifique se o thread da interface do usuário nunca adquire o g \_ cs.
+Para unir tudo isso, veja o código de exemplo abaixo. Essa função adquire vários objetos de sincronização e define implicitamente uma ordem de bloqueio, algo que não é necessariamente óbvio na inspeção de cursor. Na entrada de função, o código adquire uma Seção Crítica e não a libera até que a função saia, tornando-a o nó superior em nossa hierarquia de bloqueio. Em seguida, o código chama a função Win32 LoadIcon(), que, nos covers, pode chamar o Carregador do Sistema Operacional para carregar esse binário. Essa operação adquiriria o bloqueio do carregador, que agora também se torna parte dessa hierarquia de bloqueio (certifique-se de que a função DllMain não adquire o bloqueio g \_ cs). Em seguida, o código chama SendMessage(), uma operação de bloqueio entre threads, que não retornará, a menos que o thread da interface do usuário responda. Novamente, certifique-se de que o thread da interface do usuário nunca adquire g \_ cs.
 
 ```
 bool foo::bar (char* buffer)  
@@ -130,29 +130,29 @@ bool foo::bar (char* buffer)
 }  
 ```
 
-Observando esse código, parece claro que tornamos implicitamente g \_ cs o bloqueio de nível superior em nossa hierarquia de bloqueio, mesmo se quiséssemos apenas sincronizar o acesso às variáveis de membro de classe.
+Ao ver esse código, parece claro que implicitamente fizemos de g cs o bloqueio de nível superior em nossa hierarquia de bloqueio, mesmo que só quisessemos sincronizar o acesso às variáveis de membro \_ da classe.
 
-**Coincide**
+**Faça:**
 
--   Crie uma hierarquia de bloqueio e obedeça a ela. Adicione todos os bloqueios necessários. Há muito mais primitivos de sincronização do que apenas mutex e CriticalSections; todos eles precisam ser incluídos. Inclua o bloqueio de carregador em sua hierarquia se você usar bloqueios em DllMain ()
+-   Projete uma hierarquia de bloqueio e obedecê-la. Adicione todos os bloqueios necessários. Há muito mais primitivos de sincronização do que apenas Mutex e CriticalSections; todos eles precisam ser incluídos. Inclua o bloqueio do carregador em sua hierarquia se você tiver algum bloqueio em DllMain()
 -   Concorde com o protocolo de bloqueio com suas dependências. Qualquer código que seu aplicativo chama ou que possa chamar seu aplicativo precisa compartilhar a mesma hierarquia de bloqueio
--   Bloquear estruturas de dados não funções. Mova as aquisições de bloqueios para longe dos pontos de entrada de função e proteja apenas o acesso a dados com bloqueios. Se menos código operar sob um bloqueio, haverá menos chances de deadlocks
--   Analise as aquisições e as liberações de bloqueio no código de tratamento de erros. Geralmente, a hierarquia de bloqueio se esqueceu ao tentar se recuperar de uma condição de erro
--   Substituir bloqueios aninhados por contadores de referência-eles não podem deadlock. Elementos bloqueados individualmente em listas e tabelas são bons candidatos
--   Tenha cuidado ao aguardar um identificador de thread de uma DLL. Sempre assuma que seu código pode ser chamado sob o bloqueio do carregador. É melhor fazer referência a seus recursos e permitir que o thread de trabalho faça sua própria limpeza (e, em seguida, use FreeLibraryAndExitThread para terminar de forma limpa)
--   Use a API de passagem da cadeia de espera se desejar diagnosticar seus próprios deadlocks
+-   Bloquear estruturas de dados não funciona. Mova as aquisições de bloqueio para fora dos pontos de entrada de função e proteger apenas o acesso a dados com bloqueios. Se menos código operar em um bloqueio, haverá menos chance de deadlocks
+-   Analise as aquisições de bloqueio e as versões em seu código de tratamento de erro. Geralmente, a hierarquia de bloqueio se esqueceu ao tentar se recuperar de uma condição de erro
+-   Substitua bloqueios aninhados por contadores de referência – eles não podem fazer deadlock. Elementos bloqueados individualmente em listas e tabelas são bons candidatos
+-   Tenha cuidado ao aguardar uma alça de thread de uma DLL. Sempre suponha que seu código possa ser chamado sob o bloqueio do carregador. É melhor contar os recursos com referência e permitir que o thread de trabalho faça sua própria limpeza (e, em seguida, use FreeLibraryAndExitThread para terminar corretamente)
+-   Use a API de Travessia da Cadeia de Espera se quiser diagnosticar seus próprios deadlocks
 
 **Não:**
 
--   Faça algo além do trabalho de inicialização muito simples em sua função DllMain (). Consulte a função de retorno de chamada DllMain para obter mais detalhes. Especialmente não chame LoadLibraryEx ou CoCreateInstance
--   Escreva seus próprios primitivos de bloqueio. O código de sincronização personalizado pode facilmente introduzir Bugs sutis em sua base de código. Use a seleção avançada de objetos de sincronização de sistema operacional em vez disso
--   Fazer qualquer trabalho nos construtores e destruidores para variáveis globais, eles são executados sob o bloqueio do carregador
+-   Faça qualquer coisa que não seja a inicialização muito simples, trabalhe em sua função DllMain(). Consulte Função de retorno de chamada DllMain para obter mais detalhes. Especialmente, não chame LoadLibraryEx ou CoCreateInstance
+-   Escreva seus próprios primitivos de bloqueio. O código de sincronização personalizado pode facilmente introduzir bugs sutis em sua base de código. Em vez disso, use a seleção rica de objetos de sincronização do sistema operacional
+-   Faça qualquer trabalho nos construtores e destruidores para variáveis globais, eles são executados sob o bloqueio do carregador
 
 **Tenha cuidado com exceções**
 
-As exceções permitem a separação do fluxo normal do programa e do tratamento de erros. Por causa dessa separação, pode ser difícil saber o estado preciso do programa antes da exceção, e o manipulador de exceção pode perder etapas cruciais na restauração de um estado válido. Isso é especialmente verdadeiro para aquisições de bloqueio que precisam ser liberadas no manipulador para evitar deadlocks futuros.
+As exceções permitem a separação do fluxo de programa normal e do tratamento de erros. Devido a essa separação, pode ser difícil saber o estado preciso do programa antes da exceção e o manipulador de exceção pode perder etapas cruciais na restauração de um estado válido. Isso é especialmente verdadeiro para aquisições de bloqueio que precisam ser liberadas no manipulador para evitar deadlocks futuros.
 
-O código de exemplo a seguir ilustra esse problema. O acesso não associado à variável "buffer" eventualmente resultará em uma violação de acesso (AV). Esse AV é capturado pelo manipulador de exceção nativa, mas não tem uma maneira fácil de determinar se a seção crítica já foi adquirida no momento da exceção (o AV poderia até mesmo ocorrer em algum lugar no código EnterCriticalSection).
+O código de exemplo abaixo ilustra esse problema. O acesso nãobound à variável "buffer" ocasionalmente resultará em uma AV (violação de acesso). Essa AV é capturada pelo manipulador de exceção nativo, mas não tem nenhuma maneira fácil de determinar se a seção crítica já foi adquirida no momento da exceção (a AV poderia até mesmo ter sido realizada em algum lugar no código EnterCriticalSection).
 
 ```
  BOOL bar (char* buffer)  
@@ -171,34 +171,34 @@ O código de exemplo a seguir ilustra esse problema. O acesso não associado à 
 }  
 ```
 
-**Coincide**
+**Faça:**
 
--   Remover \_ \_ try/ \_ \_ Except sempre que possível; não use SetUnhandledExceptionFilter
--   Empacote seus bloqueios em modelos de PTR automáticos personalizados \_ se você usar exceções de C++. O bloqueio deve ser liberado no destruidor. Para exceções nativas, libere os bloqueios em sua \_ \_ instrução Finally
--   Tenha cuidado com o código em execução em um manipulador de exceção nativa; a exceção pode ter vazado muitos bloqueios, portanto, o manipulador não deve adquirir nenhum
+-   Remover \_ \_ \_ \_ try/except sempre que possível; não use SetUnhandledExceptionFilter
+-   Wrap your locks in custom auto \_ ptr-like templates if you use C++ exceptions.. O bloqueio deve ser liberado no destruidor. Para exceções nativas, libere os bloqueios em sua \_ \_ instrução finally
+-   Tenha cuidado com o código em execução em um manipulador de exceção nativo; a exceção pode ter vazado muitos bloqueios, portanto, o manipulador não deve adquirir nenhum
 
 **Não:**
 
--   Manipule exceções nativas se elas não forem necessárias ou requeridas pelas APIs do Win32. se você usar manipuladores de exceção nativa para relatórios ou recuperação de dados após falhas catastróficas, considere usar o mecanismo do sistema operacional padrão de Relatório de Erros do Windows em vez disso
--   Usar exceções do C++ com qualquer tipo de código de interface do usuário (user32); uma exceção gerada em um retorno de chamada percorrerá as camadas do código C fornecido pelo sistema operacional. Esse código não sabe sobre a semântica de desroll do C++
+-   Tratar exceções nativas se não for necessário ou exigido pelas APIs do Win32. Se você usar manipuladores de exceção nativos para relatórios ou recuperação de dados após falhas catastróficas, considere usar o mecanismo de sistema operacional padrão Relatório de Erros do Windows em vez disso
+-   Use exceções C++ com qualquer tipo de código de interface do usuário (user32). uma exceção lançada em um retorno de chamada percorrerá as camadas de código C fornecidas pelo sistema operacional. Esse código não sabe sobre a semântica de unroll do C++
 
 ## <a name="links-to-resources"></a>Links para recursos
 
 -   [Relatório de Erros do Windows](../wer/windows-error-reporting.md)
 -   [Design assíncrono](https://msdn.microsoft.com/library/ms228969(v=VS.80).aspx)
--   [E/s assíncrona](../fileio/synchronous-and-asynchronous-i-o.md)
+-   [E/S assíncrona](../fileio/synchronous-and-asynchronous-i-o.md)
 -   [**Função AttachThreadInput**](/windows/win32/api/winuser/nf-winuser-attachthreadinput)
--   [**\_classe PTR automaticamente**](https://msdn.microsoft.com/library/ew3fk483(v=VS.71).aspx)
+-   [**Classe \_ auto ptr**](https://msdn.microsoft.com/library/ew3fk483(v=VS.71).aspx)
 -   [**Função DisableProcessWindowsGhosting**](/windows/win32/api/winuser/nf-winuser-disableprocesswindowsghosting)
 -   [**Função de retorno de chamada DllMain**](../dlls/dllmain.md)
 -   [Eventos](https://msdn.microsoft.com/library/wewwczdw(v=VS.80).aspx)
 -   [**Função GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage)
--   [Cancelamento de e/s](../fileio/canceling-pending-i-o-operations.md)
+-   [Cancelamento de E/S](../fileio/canceling-pending-i-o-operations.md)
 -   [**Função IsHungAppWindow**](/windows/win32/api/winuser/nf-winuser-ishungappwindow)
--   [Fila de mensagens](../winmsg/using-messages-and-message-queues.md)
+-   [Fila de Mensagens](../winmsg/using-messages-and-message-queues.md)
 -   [**Função MsgWaitForMultipleObjects**](/windows/win32/api/winuser/nf-winuser-msgwaitformultipleobjects)
--   [Nova API do pool de threads](../procthread/thread-pool-api.md)
--   [**Função de mensagem**](/windows/win32/api/winuser/nf-winuser-postmessagea)
+-   [Nova API do Pool de Threads](../procthread/thread-pool-api.md)
+-   [**Função PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea)
 -   [Reinicialização e recuperação](../recovery/registering-for-application-restart.md)
 -   [**Função SendMessageCallback**](/windows/win32/api/winuser/nf-winuser-sendmessagecallbacka)
 -   [**Função SendNotifyMessage**](/windows/win32/api/winuser/nf-winuser-sendnotifymessagea)

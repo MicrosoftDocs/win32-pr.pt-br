@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualMachineEvents OnEnhancedVideoModeChanged (VPCCOMInterfaces. h)
-description: Recebe a notificação de que o suporte de uma máquina virtual para o modo de vídeo avançado foi alterado.
+title: Método IVMVirtualMachineEvents OnEnhancedVideoModeChanged (VPCCOMInterfaces.h)
+description: Recebe uma notificação de que o suporte de uma máquina virtual para o modo de vídeo aprimorado foi alterado.
 ms.assetid: be22a859-4687-4647-9f53-f79ae8ad52a5
 keywords:
-- OnEnhancedVideoModeChanged do método virtual PC
-- Método OnEnhancedVideoModeChanged Virtual PC, interface IVMVirtualMachineEvents
-- IVMVirtualMachineEvents interface virtual PC, método OnEnhancedVideoModeChanged
+- OnEnhancedVideoModeChanged método Virtual PC
+- OnEnhancedVideoModeChanged método Virtual PC , interface IVMVirtualMachineEvents
+- IVMVirtualMachineEvents interface Virtual PC , método OnEnhancedVideoModeChanged
 topic_type:
 - apiref
 api_name:
@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119056614"
 ---
-# <a name="ivmvirtualmachineeventsonenhancedvideomodechanged-method"></a>Método IVMVirtualMachineEvents:: OnEnhancedVideoModeChanged
+# <a name="ivmvirtualmachineeventsonenhancedvideomodechanged-method"></a>Método IVMVirtualMachineEvents::OnEnhancedVideoModeChanged
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recebe a notificação de que o suporte de uma máquina virtual para o modo de vídeo avançado foi alterado.
+Recebe uma notificação de que o suporte de uma máquina virtual para o modo de vídeo aprimorado foi alterado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,16 +44,16 @@ HRESULT OnEnhancedVideoModeChanged(
 
 <dl> <dt>
 
-*enhancedVideoMode* \[ no\]
+*enhancedVideoMode* \[ Em\]
 </dt> <dd>
 
-Indica se o modo de vídeo avançado está disponível.
+Indica se o modo de vídeo aprimorado está disponível.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,12 +61,12 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | DIID \_ IVMVirtualMachineEvents é definido como 9d84f560-bb67-4961-BD12-a4da780c67e4<br/>   |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | DIID \_ IVMVirtualMachineEvents é definido como 9d84f560-bb67-4961-bd12-a4da780c67e4<br/>   |
 
 
 

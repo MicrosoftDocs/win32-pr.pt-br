@@ -3,8 +3,8 @@ title: Espaços de cores independentes do dispositivo
 description: Reconhecendo a necessidade de medidas de cores padrão, independentes de dispositivo, a Comissão International de l'Eclairage (Comissão Internacional na iluminação) ou CIE, criou um espaço de cores baseado em \ 0034; imaginário \ 0034; cores primárias.
 ms.assetid: 8597dad3-1eb8-49f9-9843-1f9068a65925
 keywords:
-- WCS (sistema de cores do Windows), espaços de cores independentes de dispositivo
-- WCS (sistema de cores do Windows), espaços de cores independentes de dispositivo
+- Windows Sistema de cores (WCS), espaços de cores independentes de dispositivo
+- WCS (Windows sistema de cores), espaços de cores independentes de dispositivo
 - gerenciamento de cores de imagem, espaços de cores independentes de dispositivo
 - gerenciamento de cores, espaços de cores independentes de dispositivo
 - cores, espaços de cores independentes de dispositivo
@@ -23,12 +23,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d044379f8f04467f7be94f09d1eb1fa41816d3e
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: e8c350ca4aa4b046d35926cd7568c4fbdfe030b7d7c13b085b9f3837c5dd8418
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105795514"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028784"
 ---
 # <a name="device-independent-color-spaces"></a>Espaços de cores independentes do dispositivo
 
@@ -42,7 +42,7 @@ Como resultado, a Hewlett-Packard e a Microsoft propuseram a adoção de um espa
 
 Uma versão de arquivo de ajuda de um white paper discutindo os problemas técnicos envolvidos em sRGB, sRGB. HLP, está disponível na \\ pasta de ajuda da referência do programador do WCS 1,0 no SDK da plataforma.
 
-Formatos de arquivo diferentes podem usar ou adicionar um sinalizador para especificar que a imagem está no espaço de cores sRGB. No formato DIB (bitmap independente de dispositivo) do Windows, definir o membro **bV5CSType** da estrutura [BITMAPV5HEADER](using-structures-in-wcs-1-0.md) para LCS \_ sRGB especifica que as cores de DIB estão no espaço de cores sRGB.
+Formatos de arquivo diferentes podem usar ou adicionar um sinalizador para especificar que a imagem está no espaço de cores sRGB. no formato DIB (bitmap independente de dispositivo) Windows, definir o membro **bV5CSType** da estrutura [BITMAPV5HEADER](using-structures-in-wcs-1-0.md) para LCS \_ sRGB especifica que as cores de DIB estão no espaço de cores sRGB.
 
  
 

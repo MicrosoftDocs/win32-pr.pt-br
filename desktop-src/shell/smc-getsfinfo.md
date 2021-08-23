@@ -1,6 +1,6 @@
 ---
-description: Solicita informações sobre um item de menu de pasta do Shell.
-title: Mensagem de SMC_GETSFINFO (shobjidl. h)
+description: Solicita informações sobre um item de menu da pasta Shell.
+title: SMC_GETSFINFO mensagem (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 4459670c-f0fd-4ae8-8a1f-810e1dcac713
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: f3a02b61565eb08f623978900d6ce47e30eea85e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff74e59d0ef445a74d1141950b2b10e79ebce5502a02ec38c446bddc7317a885
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968075"
 ---
-# <a name="smc_getsfinfo-message"></a>Mensagem do SMC \_ GETSFINFO
+# <a name="smc_getsfinfo-message"></a>Mensagem \_ GETSFINFO do SMC
 
-Solicita informações sobre um item de menu de pasta do Shell.
+Solicita informações sobre um item de menu da pasta Shell.
 
 
 ```C++
@@ -40,17 +40,17 @@ SMC_GETINFO
 *psminfo* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**SMINFO**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-sminfo) . Preencha a estrutura com as informações apropriadas e retorne as S \_ OK.
+Ponteiro para uma [**estrutura SMINFO.**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-sminfo) Preencha a estrutura com as informações apropriadas e retorne S \_ OK.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Essa notificação é recebida pelo método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) .
+Essa notificação é recebida pelo [**método IShellMenuCallback::CallbackSM.**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ Essa notificação é recebida pelo método [**IShellMenuCallback:: CallbackSM**
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>ShObjIdl. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

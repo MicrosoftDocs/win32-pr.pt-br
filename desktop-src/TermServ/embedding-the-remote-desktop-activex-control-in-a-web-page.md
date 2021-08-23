@@ -1,20 +1,20 @@
 ---
-title: Inserindo o controle ActiveX Área de Trabalho Remota em uma página da Web
+title: inserindo o controle de ActiveX de Área de Trabalho Remota em uma página da web
 description: Exemplo que demonstra o uso das interfaces programáveis.
 ms.assetid: fad0f81f-bb04-4900-aeb8-0be503efa591
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d180c6ed95bc0f75f2f10305f00dc1d63be25e80
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: c8cb5fffe6bed04d99fcfac7d48f28300c3714affa3ea1df25bda27334988752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103640234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001564"
 ---
-# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>Inserindo o controle ActiveX Área de Trabalho Remota em uma página da Web
+# <a name="embedding-the-remote-desktop-activex-control-in-a-webpage"></a>inserindo o controle de ActiveX de Área de Trabalho Remota em uma página da web
 
-Você pode inserir o controle ActiveX Área de Trabalho Remota em uma página da Web usando um código semelhante ao seguinte.
+você pode inserir o controle de ActiveX de Área de Trabalho Remota em uma página da web usando um código semelhante ao seguinte.
 
 
 ```HTML
@@ -466,18 +466,18 @@ end sub
 
 
 
-O CLSID é para o controle ActiveX hospedado pelo Conexão de Área de Trabalho Remota (RDP) 6,0. Esse controle ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
+o CLSID é para o controle de ActiveX que é hospedado pelo Conexão de Área de Trabalho Remota (RDP) 6,0. esse controle de ActiveX implementa [**IMsRdpClient**](imsrdpclient-interface.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando o controle ActiveX Área de Trabalho Remota](using-remote-desktop-web-connection.md)
+[usando o controle de ActiveX de Área de Trabalho Remota](using-remote-desktop-web-connection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

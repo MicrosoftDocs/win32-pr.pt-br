@@ -1,7 +1,7 @@
 ---
 description: Especifica atributos para uma assinatura Authenticode.
 ms.assetid: 1c1052c3-c5c5-48ae-8266-0b367800a84a
-title: Estrutura de SIGNER_ATTR_AUTHCODE
+title: SIGNER_ATTR_AUTHCODE estrutura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,19 +12,19 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 952ed0f55a185d9a7ef9eeed3366f64c84423ddd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2cce522403e4b4e416bd3d1ecb9d6c4a551ef3bb67407f853f586bd061f3d8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898943"
 ---
-# <a name="signer_attr_authcode-structure"></a>\_Estrutura de fatores attr de signatário \_
+# <a name="signer_attr_authcode-structure"></a>Estrutura \_ SIGNER ATTR \_ AUTHCODE
 
-A **estrutura \_ \_ fatores attr de signatário** especifica atributos para uma assinatura [*Authenticode*](../secgloss/a-gly.md) .
+A **estrutura \_ SIGNER ATTR \_ AUTHCODE** especifica atributos para uma [*assinatura Authenticode.*](../secgloss/a-gly.md)
 
 > [!Note]  
-> Essa estrutura não está definida em nenhum arquivo de cabeçalho. Para usar essa estrutura, você deve defini-la por conta própria, conforme mostrado neste tópico.
+> Essa estrutura não está definida em nenhum arquivo de header. Para usar essa estrutura, você deve defini-la por conta própria, conforme mostrado neste tópico.
 
  
 
@@ -57,28 +57,28 @@ O tamanho, em bytes, da estrutura.
 **fCommercial**
 </dt> <dd>
 
-**True** para assinar o assunto como um editor comercial; caso contrário, **false**.
+**TRUE** para assinar o assunto como um editor comercial; caso contrário, **FALSE.**
 
 </dd> <dt>
 
 **fIndividual**
 </dt> <dd>
 
-**True** para assinar o assunto como um Publicador individual; caso contrário, **false**.
+**TRUE** para assinar o assunto como um publicador individual; caso contrário, **FALSE.**
 
 </dd> <dt>
 
 **pwszName**
 </dt> <dd>
 
-O nome de exibição do arquivo no download.
+O nome de exibição do arquivo após o download.
 
 </dd> <dt>
 
 **pwszInfo**
 </dt> <dd>
 
-O nome de exibição da URL do arquivo durante o download.
+O nome de exibição da URL do arquivo após o download.
 
 </dd> </dl>
 
@@ -88,8 +88,8 @@ O nome de exibição da URL do arquivo durante o download.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ O nome de exibição da URL do arquivo durante o download.
 
 <dl> <dt>
 
-[**\_informações de assinatura do assinante \_**](signer-signature-info.md)
+[**INFORMAÇÕES DE \_ ASSINATURA DO \_ SIGNER**](signer-signature-info.md)
 </dt> </dl>
 
  

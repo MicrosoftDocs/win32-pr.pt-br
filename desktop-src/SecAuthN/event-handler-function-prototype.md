@@ -1,7 +1,7 @@
 ---
-description: As funções de protótipo do manipulador de eventos são usadas para todas as funções que manipulam eventos de notificação do Winlogon.
+description: As funções de Protótipo do Manipulador de Eventos são usadas para todas as funções que lidam com eventos de notificação do Winlogon.
 ms.assetid: 99b91e80-5e4e-4119-89aa-c0a80fce69e3
-title: Função de manipulador de eventos funções de retorno de chamada do protótipo
+title: Função de retorno de chamada Protótipo de Função do Manipulador de Eventos
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 935ddac5660c814b898be17218d879678f2135ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df6670e852ccd12fd2bed1d0c188aa0252c9b3afbcb899cf9480b7011d08625d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008224"
 ---
-# <a name="event-handler-function-prototype-callback-function"></a>Função de manipulador de eventos funções de retorno de chamada do protótipo
+# <a name="event-handler-function-prototype-callback-function"></a>Função de retorno de chamada Protótipo de Função do Manipulador de Eventos
 
-\[As funções de protótipo do manipulador de eventos não estão mais disponíveis para uso a partir do Windows Server 2008 e do Windows Vista. \]
+\[As funções de Protótipo do Manipulador de Eventos não estão mais disponíveis para uso Windows Server 2008 e Windows Vista. \]
 
-As funções de protótipo do manipulador de eventos são usadas para todas as funções que manipulam eventos de notificação do [*Winlogon*](/windows/desktop/SecGloss/w-gly) . O nome da função, representado abaixo do nome da função do *\_ manipulador de \_ \_ eventos* do espaço reservado, normalmente reflete o nome do evento manipulado pela função. Por exemplo, a função que manipula eventos de logon pode ser nomeada: **WLEventLogon**.
+As funções de Protótipo do Manipulador de Eventos são usadas para todas as funções que lidam com [*eventos de notificação do Winlogon.*](/windows/desktop/SecGloss/w-gly) O nome da função, representado abaixo pelo nome da função do manipulador de eventos do espaço reservado, normalmente reflete o nome do evento que a função trata. *\_ \_ \_* Por exemplo, a função que lida com eventos de logon pode ser nomeada: **WLEventLogon**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,24 +40,24 @@ void Event_Handler_Function_Name(
 
 <dl> <dt>
 
-*pInfo* \[ no\]
+*pInfo* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ \_ informações de notificação do WLX**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_notification_info) que contém os detalhes do evento.
+Um ponteiro para uma estrutura [**WLX \_ NOTIFICATION \_ INFO**](/windows/desktop/api/Winwlx/ns-winwlx-wlx_notification_info) que contém os detalhes do evento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função de retorno de chamada não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se o seu manipulador de eventos precisar criar processos filho, ele deverá chamar a função [**CreateProcessAsUser**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) . Caso contrário, o novo processo será criado na área de trabalho do Winlogon, não na área de trabalho do usuário.
+Se o manipulador de eventos precisar criar processos filho, ele deverá chamar a [**função CreateProcessAsUser.**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) Caso contrário, o novo processo será criado na área de trabalho do Winlogon, não na área de trabalho do usuário.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como implementar manipuladores de eventos para eventos do Winlogon. Para simplificar, somente as implementações dos manipuladores de eventos de logon e logoff são mostradas. Você pode implementar manipuladores para o restante dos eventos exatamente da mesma maneira.
+O exemplo a seguir mostra como implementar manipuladores de eventos para eventos winlogon. Para simplificar, apenas as implementações dos manipuladores de eventos Logon e Logoff são mostradas. Você pode implementar manipuladores para o restante dos eventos exatamente da mesma maneira.
 
 
 ```C++
@@ -113,10 +113,10 @@ void WLEventLogoff (PWLX_NOTIFICATION_INFO pInfo)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                       |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                       |
 
 
 

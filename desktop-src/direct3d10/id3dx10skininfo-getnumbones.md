@@ -1,7 +1,7 @@
 ---
-description: Obtenha o número de Bones em ID3DX10SkinInfo.
+description: Obter o número de ursos em ID3DX10SkinInfo.
 ms.assetid: 373c8b42-a745-4c68-a93e-381602ca6e0d
-title: 'Método ID3DX10SkinInfo:: GetNumBones (D3DX10. h)'
+title: Método ID3DX10SkinInfo::GetNumBones (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1cbc39dd0f1a99ff65935c66e22a79a3d1836a7a
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d1e4c761652bff649e9cf1ab8950202430e54d940cec96b7dc62eb8a060b4534
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990316"
 ---
-# <a name="id3dx10skininfogetnumbones-method"></a>Método ID3DX10SkinInfo:: GetNumBones
+# <a name="id3dx10skininfogetnumbones-method"></a>Método ID3DX10SkinInfo::GetNumBones
 
-Obtenha o número de Bones em ID3DX10SkinInfo.
+Obter o número de ursos em ID3DX10SkinInfo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,11 +38,11 @@ UINT GetNumBones();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-O número de Bones em ID3DX10SkinInfo.
+O número de ursos em ID3DX10SkinInfo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ O número de Bones em ID3DX10SkinInfo.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ O número de Bones em ID3DX10SkinInfo.
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Tipo complexo ComplexDataType
 description: Define uma estrutura que contém um ou mais itens de dados.
 ms.assetid: 1495daef-1dfd-4f62-9543-569cc74102f4
 keywords:
-- Log de eventos do tipo complexo ComplexDataType
+- Tipo complexo ComplexDataType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 598f2cc02f1e3675ff0c8fd6eae7f9a5e02b9407
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f86b15defc32469dd1a4abd0f6366e1a93d4b83441b1e1518ff7ac999f30bd59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105794542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055804"
 ---
 # <a name="complexdatatype-complex-type"></a>Tipo complexo ComplexDataType
 
@@ -46,7 +46,7 @@ Define uma estrutura que contém um ou mais itens de dados.
 
 | Elemento                                                  | Type                                                      | Descrição                                                                                                             |
 |----------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**Dados**](eventschema-data-complexdatatype-element.md) | [**Tipo de dados**](eventschema-datafieldtype-complextype.md) | A lista de itens de dados na estrutura. A lista de itens está na mesma ordem definida no modelo.<br/> |
+| [**Dados**](eventschema-data-complexdatatype-element.md) | [**DataType**](eventschema-datafieldtype-complextype.md) | A lista de itens de dados na estrutura. A lista de itens está na mesma ordem definida no modelo.<br/> |
 
 
 
@@ -56,13 +56,13 @@ Define uma estrutura que contém um ou mais itens de dados.
 
 | Nome | Tipo   | Descrição                                                                                                                                                                                                                  |
 |------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome | cadeia de caracteres | O nome da estrutura. Esse é o nome especificado quando você definiu a estrutura no modelo (consulte o tipo complexo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) ).<br/> |
+| Nome | cadeia de caracteres | O nome da estrutura. Esse é o nome especificado quando você definiu a estrutura no modelo (consulte o tipo complexo [**TemplateItemType).**](eventmanifestschema-templateitemtype-complextype.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) processa o conteúdo de uma estrutura como um blob binário; a função não processa os itens de dados individuais da estrutura.
+A [**função EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) renderiza o conteúdo de uma estrutura como um blob binário; a função não renderiza os itens de dados individuais da estrutura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ A função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) proc
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

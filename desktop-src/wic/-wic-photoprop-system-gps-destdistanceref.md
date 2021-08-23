@@ -1,21 +1,21 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. DestDistanceRef.
+description: A política de metadados de foto para a propriedade System.GPS.DestDistanceRef.
 ms.assetid: eb671f34-7366-4182-b72e-0dd7830751e0
-title: Política de metadados de foto System. GPS. DestDistanceRef
+title: Política de metadados de foto System.GPS.DestDistanceRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bba6e04bee00aaed868fcc02059403fe479f8cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d0d7973a3be36f9a7624ed8679f364c898d69b622de067bdd2595f3b919a964f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105794448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964975"
 ---
-# <a name="systemgpsdestdistanceref-photo-metadata-policy"></a>Política de metadados de foto System. GPS. DestDistanceRef
+# <a name="systemgpsdestdistanceref-photo-metadata-policy"></a>Política de metadados de foto System.GPS.DestDistanceRef
 
-A política de metadados de foto para a propriedade [System. GPS. DestDistanceRef](../properties/props-system-gps-destdistanceref.md) .
+A política de metadados de foto [para a propriedade System.GPS.DestDistanceRef.](../properties/props-system-gps-destdistanceref.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ DestDistanceRef
 
@@ -25,29 +25,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
 VT \_ LPWSTR ou VT \_ LPSTR são aceitos.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policies"></a>Políticas JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 25}    | ascii       |
+| 1     | /app1/ifd/gps/{ushort=25}    | ascii       |
 | 2     | /xmp/exif:GPSDestDistanceRef | Unicode     |
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 25}    | ascii       |
+| 1     | /app1/ifd/gps/{ushort=25}    | ascii       |
 | 2     | /xmp/exif:GPSDestDistanceRef | Unicode     |
 
 
@@ -73,7 +73,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                         |
 |-------|------------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 25}    |
+| 1     | /app1/ifd/gps/{ushort=25}    |
 | 2     | /xmp/exif:gpsdestdistanceref |
 
 
@@ -82,13 +82,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                             | Formato de disco |
 |-------|----------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 25}             | ascii       |
+| 1     | /ifd/gps/{ushort=25}             | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestDistanceRef | Unicode     |
 
 
@@ -101,7 +101,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                             | Formato de disco |
 |-------|----------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 25}             | ascii       |
+| 1     | /ifd/gps/{ushort=25}             | ascii       |
 | 2     | /ifd/xmp/exif:GPSDestDistanceRef | Unicode     |
 
 
@@ -114,7 +114,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                             |
 |-------|----------------------------------|
-| 1     | /IFD/GPS/{UShort = 25}             |
+| 1     | /ifd/gps/{ushort=25}             |
 | 2     | /ifd/xmp/exif:gpsdestdistanceref |
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. GPS. DestDistanceRef](../properties/props-system-gps-destdistanceref.md)
+[System.GPS.DestDistanceRef](../properties/props-system-gps-destdistanceref.md)
 </dt> </dl>
 
  

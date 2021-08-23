@@ -3,15 +3,15 @@ title: Ler os valores da variável de animação
 description: Cada vez que seu aplicativo pinta, ele deve ler os valores atuais das variáveis de animação que representam as características visuais a serem animadas.
 ms.assetid: 7abf084a-31f5-4e32-bfd1-e88fbc2bf63d
 keywords:
-- variáveis de animação animação do Windows, lendo
+- variáveis de animação Windows animação, lendo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16187547bb3efd99a2f45a8fcc0668a6b6603efe
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fb2cc164091be9ecca292e26ab1247ba18c61d89f11dad8fc2530a3e45ca7629
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105794580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058163"
 ---
 # <a name="read-the-animation-variable-values"></a>Ler os valores da variável de animação
 
@@ -25,7 +25,7 @@ Em vez de ler os valores de todas as variáveis para cada quadro, um aplicativo 
 
 ## <a name="example-code"></a>Código de exemplo
 
-O código de exemplo a seguir é extraído de miniatura. cpp no [layout de grade](/windows/desktop/UIAnimation/grid-layout-sample)de exemplo de animação do Windows; consulte o método CMainWindow:: render. Ele usa o método [**GetValue**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getvalue) para ler os valores como valores de ponto flutuante.
+o código de exemplo a seguir é extraído de Thumbnail. cpp no [Layout de grade](/windows/desktop/UIAnimation/grid-layout-sample)de exemplo de animação de Windows; consulte o método CMainWindow:: render. Ele usa o método [**GetValue**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getvalue) para ler os valores como valores de ponto flutuante.
 
 
 ```C++
@@ -49,7 +49,7 @@ if (SUCCEEDED(hr))
 
 
 
-O código de exemplo a seguir é extraído de MainWindow. cpp na animação de exemplo de animação [orientada por temporizador](timer-driven-animation-sample.md)do Windows; consulte o método CMainWindow::D rawBackground. Ele usa o método [**Getinteirovalue**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getintegervalue) para ler os valores como valores inteiros.
+o código de exemplo a seguir é extraído de MainWindow. cpp no exemplo de animação Windows [animação orientada por temporizador](timer-driven-animation-sample.md); consulte o método CMainWindow::D rawBackground. Ele usa o método [**Getinteirovalue**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getintegervalue) para ler os valores como valores inteiros.
 
 
 ```C++
@@ -109,9 +109,9 @@ Depois de concluir esta etapa, a próxima etapa é: [criar um storyboard e adici
 [**IUIAnimationVariable:: GetValue**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationvariable-getvalue)
 </dt> <dt>
 
-[Visão geral da animação do Windows](scenic-animation-api-overview.md)
+[Windows Visão geral da animação](scenic-animation-api-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

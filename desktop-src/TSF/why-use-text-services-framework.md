@@ -9,12 +9,12 @@ keywords:
 - Aplicativos habilitados para TSF, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6647981b890bd1fcdf488b18bffad587f49ed9b5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 908f8d61b7eba32fbcad2ada6cce62a65c0721a47a894b0aa399f4e4aa7bdf69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105767776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873156"
 ---
 # <a name="why-use-text-services-framework"></a>Por que usar a estrutura de serviços de texto?
 
@@ -26,9 +26,9 @@ O TSF permite que os serviços de texto forneçam uma conversão de texto precis
 
 O TSF é independente de dispositivo e permite serviços de texto para vários dispositivos de entrada, incluindo teclado, caneta e microfone.
 
- 
+ 
 
- 
+ 
 
 
 

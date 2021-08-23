@@ -4,16 +4,16 @@ description: Evento DragComplete
 ms.assetid: b48e7097-9d9d-4eab-9dfc-68dbc9793382
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7a02fe98e4cf3cdefc1b7734305067550e4923
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: df5ec931a8d5f303dbc1eff5c2f97c018486c4b2fa7326de3e70fbf47a949aef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105781558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976666"
 ---
 # <a name="dragcomplete-event"></a>Evento DragComplete
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -40,7 +40,7 @@ Ocorre quando o usuário termina de arrastar um caractere.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Esse evento é enviado somente para o cliente de entrada-ativo de um caractere. 
 [**Evento DragStart**](dragstart-event.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

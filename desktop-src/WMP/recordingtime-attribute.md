@@ -1,9 +1,9 @@
 ---
-title: Atributo recordtime
-description: O atributo Recordtime é a data e a hora da gravação original, para itens em que essa data é diferente da data de lançamento.
+title: Atributo RecordingTime
+description: O atributo RecordingTime é a data e a hora da gravação original, para itens em que essa data é diferente da data de lançamento.
 ms.assetid: 39f7356b-b4b9-48cd-bd14-1336a2f4736a
 keywords:
-- Windows Media Player de atributo recordtime
+- Atributo RecordingTime Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118995626"
 ---
-# <a name="recordingtime-attribute"></a>Atributo recordtime
+# <a name="recordingtime-attribute"></a>Atributo RecordingTime
 
-O atributo **recordtime** é a data e a hora da gravação original, para itens em que essa data é diferente da data de lançamento.
+O **atributo RecordingTime** é a data e a hora da gravação original, para itens em que essa data é diferente da data de lançamento.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,9 +31,9 @@ O atributo **recordtime** é a data e a hora da gravação original, para itens 
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior (o item de foto tem suporte apenas no Windows Media Player 10 ou posterior)<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior (o item de foto tem suporte apenas no Windows Media Player 10 ou posterior)<br/> |
 
 
 

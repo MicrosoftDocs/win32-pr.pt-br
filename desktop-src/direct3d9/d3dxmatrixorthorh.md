@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d34a8379851d80ae8734c7f32cc0dc5977af2088
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 060a195dfee7457f671177a756e67d1c3953a16aa7d59394f96eb05e43cfc93c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044844"
 ---
 # <a name="d3dxmatrixorthorh-function-d3dx9mathh"></a>Função D3DXMatrixOrthoRH (D3dx9math. h)
 
@@ -124,7 +124,7 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

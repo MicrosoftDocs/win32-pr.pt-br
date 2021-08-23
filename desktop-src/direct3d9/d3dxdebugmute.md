@@ -1,7 +1,7 @@
 ---
-description: Ativa ou desativa a saída de depuração de D3DX.
+description: Liga ou desliga toda a saída de depuração D3DX.
 ms.assetid: e35cbfd2-401e-47ec-9f5b-e2ed63ea1fcd
-title: Função D3DXDebugMute (D3dx9core. h)
+title: Função D3DXDebugMute (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9259fa43a6a64829e42cbaa661aa7223a958f22d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c2bde5446e6e41568c1f9d6aa8408dacc276ab82112a176cf8a038536dd4d992
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045074"
 ---
 # <a name="d3dxdebugmute-function"></a>Função D3DXDebugMute
 
-Ativa ou desativa a saída de depuração de D3DX.
+Liga ou desliga toda a saída de depuração D3DX.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ BOOL D3DXDebugMute(
 
 <dl> <dt>
 
-*Sem áudio* \[ no\]
+*Mute* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se **for true**, a saída do depurador será interrompida; Se for **false**, a saída de depuração será habilitada.
+Se **TRUE**, a saída do depurador será interrompida; se **FALSE**, a saída de depuração está habilitada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Retorna o valor anterior de mudo.
+Retorna o valor anterior de Mute.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Retorna o valor anterior de mudo.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -70,7 +70,7 @@ Retorna o valor anterior de mudo.
 
 <dl> <dt>
 
-[Funções de Uso Geral](dx9-graphics-reference-d3dx-functions-general-purpose.md)
+[Uso Geral funções](dx9-graphics-reference-d3dx-functions-general-purpose.md)
 </dt> </dl>
 
  

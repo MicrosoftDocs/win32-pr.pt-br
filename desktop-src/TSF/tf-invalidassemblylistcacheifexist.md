@@ -1,9 +1,9 @@
 ---
-title: Função TF_InvalidAssemblyListCacheIfExist
-description: A \_ função TF InvalidAssemblyListCacheIfExist invalida o cache de descrição do processador de entrada de texto.
+title: TF_InvalidAssemblyListCacheIfExist função
+description: A função TF \_ InvalidAssemblyListCacheIfExist invalida o cache de descrição do processador de entrada de texto.
 ms.assetid: a0f61b25-598c-417c-8679-7523c041f9ef
 keywords:
-- Estrutura de serviços de texto de função TF_InvalidAssemblyListCacheIfExist
+- TF_InvalidAssemblyListCacheIfExist função Estrutura de Serviços de Texto
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8dd28ab2247fae28af1c5f322832aebe071fab4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce85bab9528ccf0fd91988cc52a1d187ac428c856535ae595d65962b32fcfe9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874543"
 ---
-# <a name="tf_invalidassemblylistcacheifexist-function"></a>\_Função TF InvalidAssemblyListCacheIfExist
+# <a name="tf_invalidassemblylistcacheifexist-function"></a>Função TF \_ InvalidAssemblyListCacheIfExist
 
-A função **TF \_ InvalidAssemblyListCacheIfExist** invalida o cache de descrição do processador de entrada de texto. Não é necessário chamar essa função se o programa de configuração do processador de entrada exigir que você reinicie ou faça logon. O cache é válido até que o usuário faça logoff.
+A **função TF \_ InvalidAssemblyListCacheIfExist** invalida o cache de descrição do processador de entrada de texto. Não é necessário chamar essa função se o programa de instalação do processador de entrada exigir que você reinicie ou faça logoff. O cache é válido até que o usuário seja desligado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ Essa função pode retornar um desses valores.
 | Código de retorno                                                                            | Descrição                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | A função foi bem-sucedida.<br/>   |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -55,10 +55,10 @@ Essa função pode retornar um desses valores.
 
 ## <a name="examples"></a>Exemplos
 
-Não há biblioteca de importação disponível que defina essa função, portanto, é necessário obter um ponteiro para essa função usando [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). O exemplo a seguir demonstra como obter um ponteiro para essa função.
+Não há nenhuma biblioteca de importação disponível que defina essa função, portanto, é necessário obter um ponteiro para essa função usando [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress). O exemplo a seguir demonstra como obter um ponteiro para essa função.
 
 > [!Note]  
-> O uso incorreto de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) pode comprometer a segurança do seu aplicativo carregando a dll errada. Consulte a [ordem de pesquisa da biblioteca de vínculo dinâmico](/windows/desktop/Dlls/dynamic-link-library-search-order) para obter informações sobre como carregar corretamente DLLs com versões diferentes do Microsoft Windows.
+> Usar [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) incorretamente pode comprometer a segurança do seu aplicativo carregando a DLL incorreta. Consulte [Ordem de Pesquisa da Biblioteca de Vínculo](/windows/desktop/Dlls/dynamic-link-library-search-order) Dinâmico para obter informações sobre como carregar DLLs corretamente com versões diferentes do Microsoft Windows.
 
  
 
@@ -99,7 +99,7 @@ else
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                      |
+| Redistribuível<br/>          | TSF 1.0 no Windows 2000 Professional<br/>                                      |
 | DLL<br/>                      | <dl> <dt>Msctf.dll</dt> </dl> |
 
 

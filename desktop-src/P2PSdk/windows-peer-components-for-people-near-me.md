@@ -1,27 +1,27 @@
 ---
-description: Componentes de ponto do Windows para pessoas ao meu redor
+description: Windows Componentes pares para pessoas ao meu redor
 ms.assetid: aa9e7d4d-4131-4578-8bd1-298f04b826f9
-title: Componentes de ponto do Windows para pessoas ao meu redor
+title: Windows Componentes pares para pessoas ao meu redor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc6c780ccad1abd5ce04c1672f66561285831e5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 762ea58aa9738bfe01e23844dd146e4de8a6a5f76433ef969b60b30fb5886db3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011494"
 ---
-# <a name="windows-peer-components-for-people-near-me"></a>Componentes de ponto do Windows para pessoas ao meu redor
+# <a name="windows-peer-components-for-people-near-me"></a>Windows Componentes pares para pessoas ao meu redor
 
-Dentro do executável principal da rede de pares do Windows (P2phost.exe), a [arquitetura pessoas ao meu redor](people-near-me-architecture.md) usa os seguintes componentes:
+no principal Windows executável de rede de pares (P2phost.exe), a [arquitetura pessoas ao meu redor](people-near-me-architecture.md) usa os seguintes componentes:
 
 ### <a name="people-near-me"></a>Pessoas ao meu redor
 
 O componente pessoas ao meu redor (PNM) inicia a descoberta usando a descoberta de serviços da Web na sub-rede local para os nomes de usuário dos computadores compatíveis com o PNM.
 
-### <a name="people-near-me-publisher"></a>Editor de pessoas ao meu redor
+### <a name="people-near-me-publisher"></a>Pessoas ao meu redor Publisher
 
-O componente pessoas ao meu redor do editor publica os apelidos dos usuários conectados para indicar a disponibilidade para outros computadores usando o PNM na sub-rede local. O usuário conectado deve optar por publicar seu apelido antes de ser anunciado. O apelido é publicado na sub-rede usando a descoberta de serviços Web. Além disso, objetos e aplicativos também podem ser publicados. No entanto, o usuário deve especificar a publicação de objeto e aplicativo para os escopos '**pessoas ao meu redor**' ou '**todos**'.
+o componente pessoas ao meu redor Publisher publica os apelidos dos usuários conectados para indicar a disponibilidade para outros computadores usando o PNM na sub-rede local. O usuário conectado deve optar por publicar seu apelido antes de ser anunciado. O apelido é publicado na sub-rede usando a descoberta de serviços Web. Além disso, objetos e aplicativos também podem ser publicados. No entanto, o usuário deve especificar a publicação de objeto e aplicativo para os escopos '**pessoas ao meu redor**' ou '**todos**'.
 
 ### <a name="people-near-me-enumerator"></a>Enumerador pessoas ao meu redor
 

@@ -3,19 +3,19 @@ title: Objeto do restaurador de backup
 description: Objeto do restaurador de backup
 ms.assetid: 83ce28c0-fd17-46ff-94c0-d28124a0e56a
 keywords:
-- SDK do Windows Media Format, objetos do restaurador de backup
+- Windows SDK do formato de mídia, objetos do restaurador de backup
 - ASF (Advanced Systems Format), objetos do restaurador de backup
 - ASF (formato de sistemas avançados), objetos do restaurador de backup
 - objetos, objetos do restaurador de backup
 - restaurador de backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d08e8bec9bb7bbc2a45fbf632e69d230a2536633
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8a7bf14f8afda284d8d0ae3d4f36d37fff0baa63f4f42802a98830038ec2d850
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105759579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028124"
 ---
 # <a name="backup-restorer-object"></a>Objeto do restaurador de backup
 
@@ -35,7 +35,7 @@ As interfaces a seguir têm suporte do objeto restaurador de backup.
 
 
 
- 
+ 
 
 A interface de retorno de chamada a seguir deve ser implementada pelo aplicativo para usar o objeto de restaurador de backup.
 
@@ -47,7 +47,7 @@ A interface de retorno de chamada a seguir deve ser implementada pelo aplicativo
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,12 +56,12 @@ A interface de retorno de chamada a seguir deve ser implementada pelo aplicativo
 [**Fazendo backup e restaurando licenças**](backing-up-and-restoring-licenses.md)
 </dt> <dt>
 
-[**Objetos**](objects.md)
+[**Objeto**](objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

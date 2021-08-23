@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método Api.JetRenameColumn'
-title: Método Api.JetRenameColumn
+description: 'Saiba mais sobre: método API. JetRenameColumn'
+title: Método API. JetRenameColumn
 TOCTitle: 'JetRenameColumn method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetRenameColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,System.String,Microsoft.Isam.Esent.Interop.RenameColumnGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetrenamecolumn(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118983226"
 ---
-# <a name="apijetrenamecolumn-method"></a>Método Api.JetRenameColumn
+# <a name="apijetrenamecolumn-method"></a>Método API. JetRenameColumn
 
 Altera o nome de uma coluna existente.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,37 +71,37 @@ public static void JetRenameColumn(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - Tableid  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - TableID  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     A tabela que contém a coluna.
 
 <!-- end list -->
 
   - name  
-    Tipo: [System.String](/dotnet/api/system.string)  
+    Tipo: [System. String](/dotnet/api/system.string)  
     
     O nome da coluna.
 
 <!-- end list -->
 
-  - Newname  
-    Tipo: [System.String](/dotnet/api/system.string)  
+  - newName  
+    Tipo: [System. String](/dotnet/api/system.string)  
     
     O novo nome da coluna.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft.Isam.Esent.Interop.RenameColumnGrbit](./renamecolumngrbit-enumeration.md)  
+    Tipo: [Microsoft. ISAM. ESENT. Interop. RenameColumnGrbit](./renamecolumngrbit-enumeration.md)  
     
-    Opções de renomear coluna.
+    Opções de renomeação de coluna.
 
 ## <a name="see-also"></a>Confira também
 
@@ -111,4 +111,4 @@ public static void JetRenameColumn(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

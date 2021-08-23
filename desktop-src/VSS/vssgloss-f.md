@@ -5,12 +5,12 @@ ms.assetid: 9d59b2f6-c3d9-40d4-be89-ae7283794eb3
 title: F (Serviço de Cópias de Sombra de Volume)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01f60a456ce6ea795dc8376c0f707d028523cec3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56eef69a16a77fce7f557ae0ff02ff0e5d84d0225d082fd486af629b9804aeb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056194"
 ---
 # <a name="f-volume-shadow-copy-service"></a>F (Serviço de Cópias de Sombra de Volume)
 
@@ -30,7 +30,7 @@ Um grupo de arquivos diferentes daqueles usados como um banco de dados e definid
 
 A combinação de um caminho, uma especificação de arquivo e um sinalizador recursivo que descreve um de um arquivo ou grupo de arquivos. Por exemplo, os arquivos são adicionados aos componentes em conjuntos de arquivos.
 
-Salvo indicação em contrário, os caminhos de um conjunto de arquivos são caminhos padrão do Windows e podem conter variáveis de ambiente (por exemplo,% SystemRoot%) Mas não pode conter caracteres curinga. Não há nenhum requisito de que o caminho termine com uma barra invertida (" \\ "). Cabe a aplicativos que recuperam essas informações para verificá-lo.
+salvo indicação em contrário, os caminhos de um conjunto de arquivos são caminhos de Windows padrão e podem conter variáveis de ambiente (por exemplo,% SystemRoot%), mas não podem conter caracteres curinga. Não há nenhum requisito de que o caminho termine com uma barra invertida (" \\ "). Cabe a aplicativos que recuperam essas informações para verificá-lo.
 
 A especificação de arquivo contida em um conjunto de arquivos indica o nome do arquivo ou dos arquivos que ele inclui. Esta especificação de arquivo não pode conter especificações de diretório (por exemplo, nenhuma barra invertida), mas pode conter o? e \* caracteres curinga.
 

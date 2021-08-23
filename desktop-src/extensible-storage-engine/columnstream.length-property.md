@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: ColumnStream. Length'
-title: Propriedade ColumnStream. Length
+description: 'Saiba mais sobre: propriedade ColumnStream.Length'
+title: Propriedade ColumnStream.Length
 TOCTitle: 'Length property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnStream.Length
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.length(v=EXCHG.10)
@@ -32,12 +32,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118982646"
 ---
-# <a name="columnstreamlength-property"></a>Propriedade ColumnStream. Length
+# <a name="columnstreamlength-property"></a>Propriedade ColumnStream.Length
 
 Obtém o comprimento atual do fluxo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,7 +58,7 @@ public override long Length { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -66,6 +66,6 @@ Tipo: [System. Int64](/dotnet/api/system.int64)
 
 [Classe ColumnStream](./columnstream-class.md)
 
-[Membros do ColumnStream](./columnstream-members.md)
+[Membros de ColumnStream](./columnstream-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

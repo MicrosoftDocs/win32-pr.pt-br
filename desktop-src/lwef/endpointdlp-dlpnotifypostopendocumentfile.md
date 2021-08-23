@@ -1,6 +1,6 @@
 ---
 description: Fornece ao sistema informações sobre um arquivo de documento após a conclusão da operação de abertura.
-title: Função DlpNotifyPostOpenDocumentFile (endpointdlp. h)
+title: Função DlpNotifyPostOpenDocumentFile (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 0aed30cc0eca066b569ad1299392430c4d1adeff
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 2957b09282fe64e41805f09a1761ca75aa3551ca70e9d4aa5b52517374fd9ca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976596"
 ---
 # <a name="dlpnotifypostopendocumentfile-function"></a>Função DlpNotifyPostOpenDocumentFile
 
@@ -51,7 +51,7 @@ Um ponteiro para uma estrutura de [DLP_POSTOP_STATUS](enpointdlp-dlp_postop_stat
 </dd> </dl>
 
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar void.
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3deabf5140d4f3f3bdfc2d6cce52f32385987ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1da075e53aeaa29352a02e191c438d34570c4d5ade52a2b5a424dfc7afaff5ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986816"
 ---
 # <a name="d3dx_saturate_float-function"></a>\_Função float de saturação D3DX \_
 
@@ -44,7 +44,7 @@ O valor a ser saturado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor saturado.
 

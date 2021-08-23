@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 7d331fadbd8abae62ee896caec772d84d079f88d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41a37d1b8f9874bdddd5a9593e0eade8bc0b5b92d30f8ada4ee9c6295af1d632
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968395"
 ---
 # <a name="shellfolderviewocsetfolderview-method"></a>Método ShellFolderViewOC. SetFolderView
 
@@ -42,9 +42,9 @@ iRetVal = ShellFolderViewOC.SetFolderView(
 *oShellFolderView* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) \** _
+Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\***
 
-Um objeto [_ *ShellFolderView* *](shellfolderview.md) . Seus eventos [**EnumDone**](shellfolderviewoc-enumdone.md) e [**SelectionChanged**](shellfolderview-selectionchanged.md) serão encaminhados para o manipulador de eventos [**ShellFolderViewOC**](shellfolderviewoc-object.md) correspondente.
+Um objeto [**ShellFolderView**](shellfolderview.md) . Seus eventos [**EnumDone**](shellfolderviewoc-enumdone.md) e [**SelectionChanged**](shellfolderview-selectionchanged.md) serão encaminhados para o manipulador de eventos [**ShellFolderViewOC**](shellfolderviewoc-object.md) correspondente.
 
 </dd> </dl>
 
@@ -54,9 +54,9 @@ Um objeto [_ *ShellFolderView* *](shellfolderview.md) . Seus eventos [**EnumDone
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
 

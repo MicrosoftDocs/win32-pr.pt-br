@@ -1,6 +1,6 @@
 ---
 title: Função D3DX11FilterTexture (D3DX11tex. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Observação em vez de usar essa função, recomendamos que você use a biblioteca DirectXTex, GenerateMipMaps e GenerateMipMaps3D. Gera cadeia de mipmap usando um filtro de textura específico.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Observação em vez de usar essa função, recomendamos que você use a biblioteca DirectXTex, GenerateMipMaps e GenerateMipMaps3D. Gera cadeia de mipmap usando um filtro de textura específico.
 ms.assetid: 52ae3228-f9d7-4944-b49c-55df1816f1f7
 keywords:
 - Função D3DX11FilterTexture Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71e74e60e9d66e2a5251c161e4df6451266d3fb5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 728f76a28a2d97d3e6789a35c2f375d964d331c607c7570e44aa44a17ccbaa8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124691"
 ---
 # <a name="d3dx11filtertexture-function"></a>Função D3DX11FilterTexture
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -90,7 +90,7 @@ Sinalizadores que controlam como cada MipLevel é filtrado (ou D3DX11 \_ padrão
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

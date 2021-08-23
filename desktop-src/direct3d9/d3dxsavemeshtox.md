@@ -1,7 +1,7 @@
 ---
-description: Salva uma malha em um arquivo. x.
+description: Salva uma malha em um arquivo .x.
 ms.assetid: 6d9cbca8-3847-4e15-95d4-9df3f8269665
-title: Função D3DXSaveMeshToX (D3DX9Mesh. h)
+title: Função D3DXSaveMeshToX (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 504e7ad69b83c67dad52ebbf0f6d1eef8639a9fd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 668131237def6078d775d0002f624b035ad29e21b9a49399b673933dc63e5b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105813308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988427"
 ---
 # <a name="d3dxsavemeshtox-function"></a>Função D3DXSaveMeshToX
 
-Salva uma malha em um arquivo. x.
+Salva uma malha em um arquivo .x.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,80 +46,80 @@ HRESULT D3DXSaveMeshToX(
 
 <dl> <dt>
 
-*pFilename* \[ no\]
+*pFilename* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](../winprog/windows-data-types.md)**
 
-Ponteiro para uma cadeia de caracteres que especifica o nome do arquivo. Se as configurações do compilador exigirem Unicode, o tipo de dados LPCTSTR será resolvido para LPCWSTR. Caso contrário, o tipo de dados String será resolvido para LPCSTR. Consulte Observações.
+Ponteiro para uma cadeia de caracteres que especifica o nome do arquivo. Se as configurações do compilador exigirem Unicode, o tipo de dados LPCTSTR será resolvido para LPCWSTR. Caso contrário, o tipo de dados de cadeia de caracteres será resolvido para LPCSTR. Consulte Observações.
 
 </dd> <dt>
 
-*pMesh* \[ no\]
+*pMesh* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , representando a malha a ser salva em um arquivo. x.
+Ponteiro para uma interface [**ID3DXMesh,**](id3dxmesh.md) que representa a malha a ser salva em um arquivo .x.
 
 </dd> <dt>
 
-*pAdjacency* \[ no\]
+*pAdjacency* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha. Esse parâmetro pode ser **nulo**.
+Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha. Esse parâmetro pode ser **NULL.**
 
 </dd> <dt>
 
-*pMaterials* \[ no\]
+*pMaterials* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATERIAL**](d3dxmaterial.md) \***
 
-Ponteiro para uma matriz de estruturas [**D3DXMATERIAL**](d3dxmaterial.md) , contendo informações de material a serem salvas no arquivo. x.
+Ponteiro para uma matriz de [**estruturas D3DXMATERIAL,**](d3dxmaterial.md) contendo informações de material a serem salvas no arquivo .x.
 
 </dd> <dt>
 
-*pEffectInstances* \[ no\]
+*pEffectInstances* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md) \***
 
-Ponteiro para uma matriz de instâncias de efeito, um por grupo de atributos na malha. Esse parâmetro pode ser **nulo**. Uma instância de efeito é uma instância específica de informações de estado usada para inicializar um efeito. Para obter mais informações, consulte [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md).
+Ponteiro para uma matriz de instâncias de efeito, uma por grupo de atributos na malha. Esse parâmetro pode ser **NULL.** Uma instância de efeito é uma instância específica de informações de estado usadas para inicializar um efeito. Para obter mais informações, [**consulte D3DXEFFECTINSTANCE**](d3dxeffectinstance.md).
 
 </dd> <dt>
 
-*NumMaterials* \[ no\]
+*NumMaterials* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de estruturas [**D3DXMATERIAL**](d3dxmaterial.md) na matriz *pMaterials* .
+Número de [**estruturas D3DXMATERIAL**](d3dxmaterial.md) na *matriz pMaterials.*
 
 </dd> <dt>
 
-*Formato* \[ no\]
+*Formato* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Uma combinação de formato de arquivo e opções de salvamento ao salvar um arquivo. x. Consulte [D3DX X File Constants](dx9-graphics-reference-d3dx-x-file-constants.md).
+Uma combinação de opções de formato de arquivo e salvar ao salvar um arquivo .x. Consulte [Constantes de arquivo D3DX X](dx9-graphics-reference-d3dx-x-file-constants.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-A configuração do compilador também determina a versão da função. Se o Unicode for definido, a chamada de função será resolvida como D3DXSaveMeshToXW. Caso contrário, a chamada de função é resolvida como D3DXSaveMeshToXA porque as cadeias de caracteres ANSI estão sendo usadas.
+A configuração do compilador também determina a versão da função. Se Unicode for definido, a chamada de função será resolvida para D3DXSaveMeshToXW. Caso contrário, a chamada de função será resolvida para D3DXSaveMeshToXA porque as cadeias de caracteres ANSI estão sendo usadas.
 
-O formato de arquivo padrão é binary; no entanto, se um arquivo for especificado como um arquivo binário e de texto, ele será salvo como um arquivo de texto. Independentemente do formato de arquivo, você também pode usar o formato compactado para reduzir o tamanho do arquivo.
+O formato de arquivo padrão é binário; no entanto, se um arquivo for especificado como um binário e um arquivo de texto, ele será salvo como um arquivo de texto. Independentemente do formato de arquivo, você também pode usar o formato compactado para reduzir o tamanho do arquivo.
 
 Veja a seguir um exemplo de código típico de como usar essa função.
 
@@ -155,8 +155,8 @@ D3DXSaveMeshToX(
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
