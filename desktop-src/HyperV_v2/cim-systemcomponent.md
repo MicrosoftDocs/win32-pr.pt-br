@@ -1,7 +1,7 @@
 ---
 description: Representa uma associação entre um sistema e um dos elementos que o compõem.
 ms.assetid: 728f25bf-3d52-4b1c-bf72-51e8ed0a4e72
-title: CIM_SystemComponent classe (gerenciamento do Hyper-V)
+title: Classe CIM_SystemComponent (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118646714"
 ---
-# <a name="cim_systemcomponent-class-hyper-v-management"></a>CIM_SystemComponent classe (gerenciamento do Hyper-V)
+# <a name="cim_systemcomponent-class-hyper-v-management"></a>Classe CIM_SystemComponent (gerenciamento do Hyper-V)
 
 Representa uma associação entre um sistema e um dos elementos que o compõem.
 
@@ -39,45 +39,45 @@ class CIM_SystemComponent : CIM_Component
 
 ## <a name="members"></a>Membros
 
-A **classe Cim \_ SystemComponent** tem estes tipos de membros:
+A classe **CIM \_ Systemcomponent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ Cim SystemComponent** tem essas propriedades.
+A classe **CIM \_ Systemcomponent** tem essas propriedades.
 
 <dl> <dt>
 
-**Groupcomponent**
+**GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **Sistema CIM \_**
+Tipo de dados **: \_ sistema CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificadores: [**agregação**](/windows/desktop/WmiSdk/standard-qualifiers), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-O [**Sistema CIM \_ que**](cim-system.md) contém **o PartComponent.**
+O [**\_ sistema CIM**](cim-system.md) que contém o **PartComponent**.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **Cim \_ ManagedSystemElement**
+Tipo de dados: **CIM \_ ManagedSystemElement**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-O [**\_ ManagedSystemElement cim**](cim-managedsystemelement.md) filho que é um componente do sistema.
+O [**\_ ManagedSystemElement CIM**](cim-managedsystemelement.md) filho que é um componente do sistema.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ O [**\_ ManagedSystemElement cim**](cim-managedsystemelement.md) filho que é um
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
+| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O [**\_ ManagedSystemElement cim**](cim-managedsystemelement.md) filho que é um
 
 <dl> <dt>
 
-[**Componente \_ CIM**](cim-component.md)
+[**\_Componente CIM**](cim-component.md)
 </dt> </dl>
 
  

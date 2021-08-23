@@ -15,12 +15,12 @@ ms.locfileid: "118393867"
 ---
 # <a name="parser-enhancements"></a>Aprimoramentos do analisador
 
-No Windows Server 2003 com Service Pack 1 (SP1), a API do Servidor HTTP permite as seguintes solicitações de clientes HTTP.
+no Windows Server 2003 com Service Pack 1 (SP1), a API do servidor http permite as seguintes solicitações de clientes http.
 
--   Solicitações que usam um único FEED de Linha (LF) como terminadores de linha.
--   Solicitações que contêm LWS (espaço em branco linear) entre a linha de solicitação HTTP e o início dos cabeçalhos.
+-   Solicitações que usam um single line feed (LF) como terminadores de linha.
+-   Solicitações que contêm o LWS (espaço em branco linear) entre a linha de solicitação HTTP e o início dos cabeçalhos.
 
-Esses comportamentos são habilitados por padrão e não são controlados pelas configurações do Registro.
+Esses comportamentos são habilitados por padrão e não são controlados pelas configurações do registro.
 
  
 

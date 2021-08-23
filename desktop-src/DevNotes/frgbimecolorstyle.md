@@ -39,20 +39,20 @@ BOOL __cdecl FRGBIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ Em\]
+*pcolorstyle* \[ no\]
 </dt> <dd>
 
-Uma **estrutura IMECOLORSTY** retornada de [**uma função PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) ou [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
+Uma estrutura **IMECOLORSTY** retornada de uma função [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) ou [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna **TRUE** quando a cor é uma cor RGB.
+Retorna **true** quando a cor é uma cor RGB.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
+Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
 
 ## <a name="requirements"></a>Requisitos
 

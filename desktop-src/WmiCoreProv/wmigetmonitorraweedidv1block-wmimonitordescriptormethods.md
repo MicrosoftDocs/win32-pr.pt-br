@@ -1,5 +1,5 @@
 ---
-description: Obtém os dados brutos de uma estrutura E-EDID (dados de identificação de exibição estendida) avançada da VESA (Standard Electronics data Identification) que define as configurações ideais para configurar um monitor.
+description: Obtém os dados brutos de uma estrutura E-EDID (Video Electronics Standard Association) especificada que define as configurações ideais para configurar um monitor.
 ms.assetid: a787e66e-1b96-4dd5-8646-7aa2d281ac95
 title: Método WmiGetMonitorRawEEdidV1Block da classe WmiMonitorDescriptorMethods
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118558081"
 ---
 # <a name="wmigetmonitorraweedidv1block-method-of-the-wmimonitordescriptormethods-class"></a>Método WmiGetMonitorRawEEdidV1Block da classe WmiMonitorDescriptorMethods
 
-O método **WmiGetMonitorRawEEdidV1Block** Obtém os dados brutos de uma estrutura E-EDID (dados de identificação de exibição estendida) avançada da VESA (Standard Electronics data Identification) que define as configurações ideais para configurar um monitor.
+O **método WmiGetMonitorRawEEdidV1Block** obtém os dados brutos de uma estrutura E-EDID (Video Electronics Standard Association) especificada para configurar um monitor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,14 +41,14 @@ uint32 WmiGetMonitorRawEEdidV1Block(
 
 <dl> <dt>
 
-*Blockid* \[ no\]
+*BlockId* \[ Em\]
 </dt> <dd>
 
 A identidade do bloco de dados.
 
 </dd> <dt>
 
-*BlockType* \[ fora\]
+*BlockType* \[ out\]
 </dt> <dd>
 
 Tipo de bloco de dados. A tabela a seguir lista os possíveis valores de retorno.
@@ -59,8 +59,8 @@ Tipo de bloco de dados. A tabela a seguir lista os possíveis valores de retorno
 |---------------------------------------------------------------------------------------|----------------------------|
 | <dl> <dt>0 (0x0)</dt> </dl>    | Não Inicializado<br/>   |
 | <dl> <dt>1 (0x1)</dt> </dl>    | Bloco base EDID<br/> |
-| <dl> <dt>2 (0x2)</dt> </dl>    | Mapa de bloco EDID<br/>  |
-| <dl> <dt>255 (0xFF)</dt> </dl> | Outros<br/>           |
+| <dl> <dt>2 (0x2)</dt> </dl>    | Mapa de blocos EDID<br/>  |
+| <dl> <dt>255 (0xFF)</dt> </dl> | Outro<br/>           |
 
 
 
@@ -68,20 +68,20 @@ Tipo de bloco de dados. A tabela a seguir lista os possíveis valores de retorno
 
 </dd> <dt>
 
-*BlockContent* \[ fora\]
+*BlockContent* \[ out\]
 </dt> <dd>
 
-Uma matriz de 128 bytes que contém o conteúdo de bloco bruto.
+Uma matriz de 128 byte que contém o conteúdo bruto do bloco.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna zero (0) para indicar êxito. Qualquer outro número indica um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Retorna zero (0) para indicar êxito. Qualquer outro número indica um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de**](/windows/desktop/WmiSdk/wmi-error-constants) erro WMI ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir recupera os blocos EDID de qualquer exibição como matrizes de bits de 128 brutos.
+O exemplo de código a seguir recupera os blocos EDID de qualquer exibição como matrizes brutas de 128 bits.
 
 
 ```CSharp
@@ -126,8 +126,8 @@ static void Main(string[] args)
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

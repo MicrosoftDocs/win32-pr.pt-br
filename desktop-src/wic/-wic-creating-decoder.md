@@ -1,19 +1,19 @@
 ---
-description: O tópico apresenta o decodificador de bitmap, um componente de codec principal do Windows Imaging Component (WIC) usado para decodificar arquivos de imagem de um fluxo.
+description: o tópico apresenta o decodificador de bitmap, um componente de codec do core Windows Imaging component (WIC) usado para decodificar arquivos de imagem de um fluxo.
 ms.assetid: 9dc8d2ec-5cc5-45fa-8a4d-5bdc3072c90c
 title: Visão geral da decodificação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a15e6a9c914cfa220e1aad5bff4badeb8fc8cc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d14300c9857702ceff5f07fcc127a4ef4182f9e77ad46f0598edc12abf91f240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118711390"
 ---
 # <a name="decoding-overview"></a>Visão geral da decodificação
 
-O tópico apresenta o decodificador de bitmap, um componente de codec principal do Windows Imaging Component (WIC) usado para decodificar arquivos de imagem de um fluxo.
+o tópico apresenta o decodificador de bitmap, um componente de codec do core Windows Imaging component (WIC) usado para decodificar arquivos de imagem de um fluxo.
 
 Este tópico inclui as seções a seguir.
 
@@ -95,7 +95,7 @@ Um dos principais recursos do WIC é uma estrutura de extensibilidade que permit
 **Conceitua**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de geração de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Visão geral da codificação](-wic-creating-encoder.md)

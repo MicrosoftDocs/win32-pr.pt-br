@@ -4,12 +4,12 @@ ms.assetid: b6ccf274-a6c5-4b26-8c43-c857c2c24e0f
 title: Iluminação emissiva (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19cb0566d2409fb68e5fbbdca1cc609c31120e95
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: da3200486118e6b44efc3be31f01b3a10e62c876d673c687619a4e6c8445f0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105798569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802918"
 ---
 # <a name="emissive-lighting-direct3d-9"></a>Iluminação emissiva (Direct3D 9)
 

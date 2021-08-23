@@ -3,7 +3,7 @@ title: External. viewparameters
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External. viewparameters
 ms.assetid: 0afabe35-2857-413a-a662-1a76d3fb75fe
 keywords:
-- Windows Media Player externo. viewparameters
+- Windows Media Player external. viewparameters
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea0adec580a68bd3f6b92beef1de814729848179
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b7df2d19998610ca552e06f63a348d9d794bfc471c766f8603f01398026422d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837747"
 ---
 # <a name="externalviewparameters"></a>External. viewparameters
 

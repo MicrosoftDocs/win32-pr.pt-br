@@ -1,6 +1,6 @@
 - name: Recursos de acessibilidade do Windows
   href: about-windows-accessibility-features.md
-- name: Referência de recursos de acessibilidade do Windows
+- name: Windows Referência de recursos de acessibilidade
   items:
     - name: Parâmetros de acessibilidade
       items:
@@ -56,9 +56,9 @@
       href: checking-the-state-of-an-accessibility-parameter.md
     - name: Habilitando um recurso de acessibilidade interno
       href: enabling-a-built-in-accessibility-feature.md
-- name: Referência da API de acessibilidade do Windows
+- name: Windows Referência de API de acessibilidade
   items:
-    - name: Visão geral da API de acessibilidade do Windows
+    - name: Windows Visão geral da API de acessibilidade
       href: windows-automation-api-portal.md
     - name: Microsoft Acessibilidade Ativa e automação da interface do usuário comparada
       href: microsoft-active-accessibility-and-ui-automation-compared.md
@@ -108,7 +108,7 @@
                   href: uiauto-uiautomationtextunits.md
             - name: Suporte à automação da interface do usuário para arrastar e soltar
               href: ui-automation-support-for-drag-and-drop.md
-            - name: Práticas recomendadas para usar matrizes seguras
+            - name: práticas recomendadas para usar matrizes de Cofre
               href: uiauto-workingwithsafearrays.md
             - name: Especificação da automação de interface do usuário e promessa da comunidade
               href: uiauto-specandcommunitypromise.md
@@ -213,7 +213,7 @@
                   href: uiauto-supporteditcontroltype.md
                 - name: Tipo de controle de grupo
                   href: uiauto-supportgroupcontroltype.md
-                - name: Tipo de controle de cabeçalho
+                - name: Tipo de controle de cabeça
                   href: uiauto-supportheadercontroltype.md
                 - name: Tipo de controle HeaderItem
                   href: uiauto-supportheaderitemcontroltype.md
@@ -241,17 +241,17 @@
                   href: uiauto-supportscrollbarcontroltype.md
                 - name: Tipo de controle SemanticZoom
                   href: uiauto-supportsemanticzoomcontroltype.md
-                - name: Tipo de controle Separator
+                - name: Tipo de controle separador
                   href: uiauto-supportseparatorcontroltype.md
-                - name: Tipo de controle Slider
+                - name: Tipo de controle deslizante
                   href: uiauto-supportslidercontroltype.md
-                - name: Tipo de controle Spinner
+                - name: Tipo de controle spinner
                   href: uiauto-supportspinnercontroltype.md
                 - name: Tipo de controle SplitButton
                   href: uiauto-supportsplitbuttoncontroltype.md
                 - name: Tipo de controle StatusBar
                   href: uiauto-supportstatusbarcontroltype.md
-                - name: Tipo de controle da guia
+                - name: Tipo de controle Tab
                   href: uiauto-supporttabcontroltype.md
                 - name: Tipo de controle TabItem
                   href: uiauto-supporttabitemcontroltype.md
@@ -259,7 +259,7 @@
                   href: uiauto-supporttablecontroltype.md
                 - name: Tipo de controle de texto
                   href: uiauto-supporttextcontroltype.md
-                - name: Tipo de controle Thumb
+                - name: Tipo de controle thumb
                   href: uiauto-supportthumbcontroltype.md
                 - name: Tipo de controle TitleBar
                   href: uiauto-supporttitlebarcontroltype.md
@@ -273,44 +273,44 @@
                   href: uiauto-supporttreeitemcontroltype.md
                 - name: Tipo de controle de janela
                   href: uiauto-supportwindowcontroltype.md
-            - name: Tópicos de How-To para provedores de automação de interface do usuário
+            - name: How-To tópicos para provedores Automação da Interface do Usuário dados
               href: uiauto-howto-topics-for-uiautomation-providers.md
               items:
-                - name: Como expor um provedor de automação de interface do usuário Server-Side
+                - name: Como expor um provedor Server-Side Automação da Interface do Usuário dados
                   href: uiauto-howto-expose-serverside-uiautomation-provider.md
-                - name: Como retornar propriedades de um provedor de automação de interface do usuário
+                - name: Como retornar propriedades de um provedor Automação da Interface do Usuário dados
                   href: uiauto-howto-return-properties-from-uiautomation-provider.md
-                - name: Como gerar eventos de um provedor de automação de interface do usuário
+                - name: Como auar eventos de um provedor Automação da Interface do Usuário dados
                   href: uiauto-howto-raise-events-from-uiautomation-provider.md
-                - name: Como habilitar a navegação em um provedor de fragmento de automação de interface do usuário
+                - name: Como habilitar a navegação em um provedor Automação da Interface do Usuário fragmento
                   href: uiauto-howto-enable-navigation-in-fragmentprovider.md
                 - name: Padrões de controle de suporte em um provedor de automação da interface do usuário
                   href: uiauto-howto-support-controlpatterns-in-provider.md
-                - name: Como criar um provedor de automação de interface do usuário Client-Side (proxy)
+                - name: Como criar um provedor de Client-Side (Proxy) Automação da Interface do Usuário
                   href: uiauto-howto-create-clientside-provider.md
-        - name: Guia do programador do cliente de automação da interface do usuário
+        - name: Automação da Interface do Usuário guia do programador cliente
           href: uiauto-clientportal.md
           items:
-            - name: Visão geral de clientes de automação de IU
+            - name: Visão geral Automação da Interface do Usuário clientes do Automação da Interface do Usuário
               href: uiauto-clientsoverview.md
             - name: Criando o objeto CUIAutomation
               href: uiauto-creatingcuiautomation.md
             - name: Obtendo elementos da automação interface do usuário
               href: uiauto-obtainingelements.md
-            - name: Recuperando propriedades de elementos de automação da interface do usuário
+            - name: Recuperando propriedades de elementos Automação da Interface do Usuário dados
               href: uiauto-propertiesforclients.md
-            - name: Cache de propriedades de automação da interface do usuário e padrões de controle
+            - name: Caching Automação da Interface do Usuário propriedades e padrões de controle
               href: uiauto-cachingforclients.md
-            - name: Inscrevendo-se em eventos de automação da interface do usuário
+            - name: Assinando eventos Automação da Interface do Usuário eventos
               href: uiauto-eventsforclients.md
             - name: Trabalhando com controles baseados em texto
               href: uiauto-workingwithtextbasedcontrols.md
               items:
-                - name: Compreendendo o modelo de objeto de texto de automação da interface do usuário
+                - name: Noções básicas Automação da Interface do Usuário modelo de objeto de texto
                   href: uiauto-understandingtheuiautomationtextobjectmodel.md
                 - name: Usando intervalos de texto
                   href: uiauto-usingtextrangeobjects.md
-                - name: Acessando conteúdo da planilha
+                - name: Acessando o conteúdo da planilha
                   href: uiauto-accessingspreadsheetcontent.md
                 - name: Manipulando eventos relacionados a texto
                   href: uiauto-handlingtextrelatedevents.md
@@ -318,20 +318,20 @@
                   href: uiauto-understandingperformanceissues.md
             - name: Trabalhando com itens virtualizados
               href: uiauto-workingwithvirtualizeditems.md
-            - name: Acessando servidores Microsoft Acessibilidade Ativa
+            - name: Acessando Microsoft Active Accessibility servidores
               href: uiauto-accessingmsaaservers.md
             - name: Usando automação de interface do usuário para testes automatizados
               href: uiauto-usefortesting.md
             - name: Noções básicas sobre problemas de dimensionamento de tela
               href: uiauto-screenscaling.md
-            - name: Noções básicas sobre problemas de Threading
+            - name: Noções básicas sobre problemas de threading
               href: uiauto-threading.md
-            - name: Tópicos de How-To para clientes de automação da interface do usuário
+            - name: How-To tópicos para Automação da Interface do Usuário clientes
               href: uiauto-howto-topics-for-uiautomation-clients.md
               items:
-                - name: Como localizar elementos da interface do usuário
+                - name: Como encontrar elementos da interface do usuário
                   href: uiauto-howto-find-ui-elements.md
-                - name: Como percorrer a árvore de automação da interface do usuário
+                - name: Como andar pela árvore Automação da Interface do Usuário dados
                   href: uiauto-howto-walk-uiautomation-tree.md
                 - name: Como usar o armazenamento em cache
                   href: uiauto-howto-use-caching.md
@@ -339,12 +339,12 @@
                   href: uiauto-howto-implement-event-handlers.md
                 - name: Como recuperar um item virtualizado
                   href: uiauto-howto-retrieve-virtualized-item.md
-                - name: Como consultar um item virtualizado no modo de exibição de itens
+                - name: Como consultar um item virtualizado na exibição de itens
                   href: uiauto-howto-query-a-virtualized-item-in-itemsview.md
         - name: Referência
           href: entry-uiautocore-ref.md
           items:
-            - name: Provedores de automação da interface do usuário
+            - name: Automação da Interface do Usuário provedores
               href: uiauto-entry-uiautoprovidersforwin32apps.md
               items:
                 - name: Interfaces para provedores
@@ -389,7 +389,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovideradviseevents-adviseeventadded
                         - name: Método AdviseEventRemoved
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovideradviseevents-adviseeventremoved
-                    - name: IRawElementProviderFragment
+                    - name: Irawelementproviderfragment
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment
                       items:
                         - name: Propriedade BoundingRectangle
@@ -404,7 +404,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate
                         - name: Método SetFocus
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-setfocus
-                    - name: IRawElementProviderFragmentRoot
+                    - name: Irawelementproviderfragmentroot
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot
                       items:
                         - name: Método ElementProviderFromPoint
@@ -421,7 +421,7 @@
                       items:
                         - name: Método GetOverrideProviderForHwnd
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderhwndoverride-getoverrideproviderforhwnd
-                    - name: IRawElementProviderSimple
+                    - name: Irawelementprovidersimple
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple
                       items:
                         - name: Método GetPatternProvider
@@ -435,7 +435,7 @@
                     - name: IRawElementProviderSimple2
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple2
                       items:
-                        - name: Método addcontextmenu
+                        - name: Método ShowContextMenu
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple2-showcontextmenu
                     - name: IRawElementProviderSimple3
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple3
@@ -459,7 +459,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_annotationtypeid
                         - name: Propriedade AnnotationTypeName
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_annotationtypename
-                        - name: Propriedade do autor
+                        - name: Propriedade Author
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_author
                         - name: Propriedade DateTime
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iannotationprovider-get_datetime
@@ -481,7 +481,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_dropeffects
                         - name: Método GetGrabbedItems
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-getgrabbeditems
-                        - name: Propriedade iscapturadod
+                        - name: Propriedade IsGrabbed
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_isgrabbed
                     - name: IDropTargetProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-idroptargetprovider
@@ -493,7 +493,7 @@
                     - name: IExpandCollapseProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider
                       items:
-                        - name: Recolher método
+                        - name: Método Collapse
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse
                         - name: Método Expand
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand
@@ -502,7 +502,7 @@
                     - name: IGridItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider
                       items:
-                        - name: Propriedade da coluna
+                        - name: Propriedade Column
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_column
                         - name: Propriedade ColumnSpan
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-igriditemprovider-get_columnspan
@@ -542,17 +542,17 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_description
                         - name: Método DoDefaultAction
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-dodefaultaction
-                        - name: Método getiaccessible
+                        - name: Método GetIAccessible
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-getiaccessible
-                        - name: Método getseleções
+                        - name: Método GetSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-getselection
-                        - name: Propriedade da ajuda
+                        - name: Propriedade De ajuda
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_help
                         - name: Propriedade KeyboardShortcut
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_keyboardshortcut
                         - name: Propriedade Name
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_name
-                        - name: Propriedade de função
+                        - name: Propriedade role
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-get_role
                         - name: Selecione o método
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ilegacyiaccessibleprovider-select
@@ -565,7 +565,7 @@
                     - name: IMultipleViewProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-imultipleviewprovider
                       items:
-                        - name: Propriedade Modoatual
+                        - name: Propriedade CurrentView
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-imultipleviewprovider-get_currentview
                         - name: Método GetSupportedViews
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-imultipleviewprovider-getsupportedviews
@@ -585,9 +585,9 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_isreadonly
                         - name: Propriedade LargeChange
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange
-                        - name: Propriedade Maximum
+                        - name: Propriedade máxima
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum
-                        - name: Propriedade Minimum
+                        - name: Propriedade mínima
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum
                         - name: Método SetValue
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-setvalue
@@ -609,7 +609,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalscrollpercent
                         - name: Propriedade HorizontalViewSize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-get_horizontalviewsize
-                        - name: Método Scroll
+                        - name: Método scroll
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-scroll
                         - name: Método SetScrollPercent
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iscrollprovider-setscrollpercent
@@ -637,7 +637,7 @@
                       items:
                         - name: Propriedade CanSelectMultiple
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple
-                        - name: Método getseleções
+                        - name: Método GetSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-getselection
                         - name: Propriedade IsSelectionRequired
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_isselectionrequired
@@ -655,7 +655,7 @@
                     - name: ISpreadsheetItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ispreadsheetitemprovider
                       items:
-                        - name: Propriedade de fórmula
+                        - name: Propriedade De fórmula
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ispreadsheetitemprovider-get_formula
                         - name: Método GetAnnotationObjects
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ispreadsheetitemprovider-getannotationobjects
@@ -679,7 +679,7 @@
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_fillpatternstyle
                         - name: Propriedade Shape
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_shape
-                        - name: Propriedade StyleID
+                        - name: Propriedade StyleId
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_styleid
                         - name: Propriedade StyleName
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-istylesprovider-get_stylename
@@ -725,7 +725,7 @@
                       items:
                         - name: Propriedade DocumentRange
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-get_documentrange
-                        - name: Método getseleções
+                        - name: Método GetSelection
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-getselection
                         - name: Método GetVisibleRanges
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextprovider-getvisibleranges
@@ -784,7 +784,7 @@
                     - name: ITextRangeProvider2
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itextrangeprovider2
                       items:
-                        - name: Método addcontextmenu
+                        - name: Método ShowContextMenu
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itextrangeprovider2-showcontextmenu
                     - name: IToggleProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itoggleprovider
@@ -796,24 +796,24 @@
                     - name: ITransformProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider
                       items:
-                        - name: Remover Propriedade
+                        - name: Propriedade CanMove
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-get_canmove
-                        - name: Propriedade redimensionar
+                        - name: Propriedade CanResize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-get_canresize
-                        - name: Cangirar Propriedade
+                        - name: Propriedade CanRotate
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-get_canrotate
                         - name: Método Move
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-move
-                        - name: Redimensionar método
+                        - name: Método Resize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-resize
                         - name: Método Rotate
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider-rotate
                     - name: ITransformProvider2
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itransformprovider2
                       items:
-                        - name: Propriedade canzoom
+                        - name: Propriedade CanZoom
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-get_canzoom
-                        - name: Método de zoom
+                        - name: Método Zoom
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-zoom
                         - name: Método ZoomByUnit
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itransformprovider2-zoombyunit
@@ -835,22 +835,22 @@
                     - name: IVirtualizedItemProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivirtualizeditemprovider
                       items:
-                        - name: Método de concretização
+                        - name: Método Realize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-ivirtualizeditemprovider-realize
                     - name: IWindowProvider
                       href: /windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iwindowprovider
                       items:
-                        - name: Propriedade canmaxim
+                        - name: Propriedade CanMaximize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-get_canmaximize
-                        - name: Desminimizar Propriedade
+                        - name: Propriedade CanMinimize
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-get_canminimize
                         - name: Método Close
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-close
                         - name: Propriedade IsModal
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-get_ismodal
-                        - name: Propriedade issuperior
+                        - name: Propriedade IsTopmost
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-get_istopmost
-                        - name: Método setvisualstate
+                        - name: Método SetVisualState
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-setvisualstate
                         - name: Método WaitForInputIdle
                           href: /windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iwindowprovider-waitforinputidle
@@ -1514,7 +1514,7 @@
                       items:
                         - name: Propriedade CachedExpandCollapseState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-get_cachedexpandcollapsestate
-                        - name: Recolher método
+                        - name: Método Collapse
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-collapse
                         - name: Propriedade CurrentExpandCollapseState
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationexpandcollapsepattern-get_currentexpandcollapsestate
@@ -1611,7 +1611,7 @@
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-getcachedselection
                         - name: Método GetCurrentSelection
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-getcurrentselection
-                        - name: Método getiaccessible
+                        - name: Método GetIAccessible
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-getiaccessible
                         - name: Selecione o método
                           href: /windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationlegacyiaccessiblepattern-select
@@ -2376,22 +2376,22 @@
                   href: /windows/desktop/api/UIAutomationCoreApi/ns-uiautomationcoreapi-uiastructurechangedeventargs
                 - name: UiaWindowClosedEventArgs
                   href: /windows/desktop/api/UIAutomationCoreApi/ns-uiautomationcoreapi-uiawindowclosedeventargs
-            - name: Enumerações de automação da interface do usuário
+            - name: Automação da Interface do Usuário enumerações
               href: uiauto-entry-enumerations.md
               items:
                 - name: ActiveEnd
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-activeend
-                - name: Animaçãostyle
+                - name: Animationstyle
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-animationstyle
                 - name: AsyncContentLoadedState
                   href: /windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-asynccontentloadedstate
-                - name: AutomationElementMode
+                - name: Automationelementmode
                   href: /windows/desktop/api/UIAutomationClient/ne-uiautomationclient-automationelementmode
                 - name: AutomationIdentifierType
                   href: /windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-automationidentifiertype
-                - name: Item de marcador
+                - name: Bulletstyle
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-bulletstyle
-                - name: CapStyle
+                - name: Capstyle
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-capstyle
                 - name: CaretBidiMode
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-caretbidimode
@@ -2399,19 +2399,19 @@
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-caretposition
                 - name: CoalesceEventsOptions
                   href: /windows/desktop/api/uiautomationclient/ne-uiautomationclient-coalesceeventsoptions
-                - name: ConditionType
+                - name: Conditiontype
                   href: /windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-conditiontype
                 - name: ConnectionRecoveryBehaviorOptions
                   href: /windows/desktop/api/uiautomationclient/ne-uiautomationclient-connectionrecoverybehavioroptions
-                - name: DockPosition
+                - name: Dockposition
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-dockposition
-                - name: EventArgstype
+                - name: EventArgsType
                   href: /windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-eventargstype
-                - name: ExpandCollapseState
+                - name: Expandcollapsestate
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-expandcollapsestate
                 - name: FlowDirections
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-flowdirections
-                - name: FillType
+                - name: Filltype
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-filltype
                 - name: HorizontalTextAlignmentEnum
                   href: /previous-versions/windows/desktop/legacy/ee671233(v=vs.85)
@@ -2419,7 +2419,7 @@
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-livesetting
                 - name: NavigateDirection
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-navigatedirection
-                - name: Normalizestate
+                - name: NormalizeState
                   href: /windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-normalizestate
                 - name: NotificationKind
                   href: /windows/desktop/api/uiautomationcore/ne-uiautomationcore-notificationkind
@@ -2427,37 +2427,37 @@
                   href: /windows/desktop/api/uiautomationcore/ne-uiautomationcore-notificationprocessing
                 - name: OrientationType
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-orientationtype
-                - name: OutlineStyles
+                - name: Outlinestyles
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-outlinestyles
                 - name: PropertyConditionFlags
                   href: /windows/desktop/api/UIAutomationClient/ne-uiautomationclient-propertyconditionflags
-                - name: ProviderOptions
+                - name: Provideroptions
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-provideroptions
                 - name: ProviderType
                   href: /windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-providertype
-                - name: RowOrColumnMajor
+                - name: Roworcolumnmajor
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-roworcolumnmajor
                 - name: SayAsInterpretAs
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-sayasinterpretas
-                - name: ScrollAmount
+                - name: Scrollamount
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-scrollamount
-                - name: StructureChangeType
+                - name: Structurechangetype
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-structurechangetype
-                - name: SupportedTextSelection
+                - name: Supportedtextselection
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-supportedtextselection
                 - name: SynchronizedInputType
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-synchronizedinputtype
-                - name: TextDecorationLineStyle
+                - name: Textdecorationlinestyle
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-textdecorationlinestyle
                 - name: TextEditChangeType
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype
                 - name: TextPatternRangeEndpoint
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-textpatternrangeendpoint
-                - name: TextUnit
+                - name: Textunit
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-textunit
-                - name: Alternânciastate
+                - name: Togglestate
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-togglestate
-                - name: TreeScope
+                - name: Treescope
                   href: /windows/desktop/api/UIAutomationClient/ne-uiautomationclient-treescope
                 - name: TreeTraversalOptions
                   href: /windows/desktop/api/uiautomationclient/ne-uiautomationclient-treetraversaloptions
@@ -2471,7 +2471,7 @@
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-windowvisualstate
                 - name: ZoomUnit
                   href: /windows/desktop/api/UIAutomationCore/ne-uiautomationcore-zoomunit
-            - name: Constantes de automação da interface do usuário
+            - name: Automação da Interface do Usuário constantes
               href: uiauto-entry-constants.md
               items:
                 - name: Identificadores de tipo de anotação
@@ -2495,17 +2495,17 @@
                 - name: Identificadores de propriedade
                   href: uiauto-entry-propids.md
                   items:
-                    - name: Identificadores de Propriedade do elemento Automation
+                    - name: Identificadores de propriedade do elemento automation
                       href: uiauto-automation-element-propids.md
-                    - name: Identificadores de propriedade de padrão de controle
+                    - name: Identificadores de propriedade padrão de controle
                       href: uiauto-control-pattern-propids.md
-                    - name: Identificadores de propriedade de disponibilidade de padrão de controle
+                    - name: Identificadores de propriedade de disponibilidade do padrão de controle
                       href: uiauto-control-pattern-availability-propids.md
                 - name: Identificadores de estilo
                   href: uiauto-style-identifiers.md
                 - name: Identificadores de atributo de texto
                   href: uiauto-textattribute-ids.md
-                - name: GUIDs preteridos
+                - name: GUIDs preterido
                   href: uiauto-guids.md
         - name: Exemplos
           href: samples-entry.md
@@ -2516,7 +2516,7 @@
               href: uiauto-controlsupport.md
             - name: Tipos de controle e seus padrões de controle com suporte
               href: uiauto-controlpatternmapping.md
-            - name: Automação da interface do usuário para especificação de aplicativos avançados de Internet acessível W3C
+            - name: Automação da Interface do Usuário especificação de aplicativos de Internet rich do W3C
               href: uiauto-ariaspecification.md
     - name: Acessibilidade Ativa da Microsoft
       href: microsoft-active-accessibility.md
@@ -2526,10 +2526,10 @@
         - name: Introdução
           href: getting-started.md
           items:
-            - name: Componentes do Acessibilidade Ativa
+            - name: Acessibilidade Ativa componentes
               href: sdk-components.md
               items:
-                - name: Arquivos de cabeçalho e lib
+                - name: Arquivos de header e lib
                   href: header-and-lib-files.md
                 - name: Ferramentas
                   href: tools.md
@@ -2538,37 +2538,37 @@
               items:
                 - name: Determinar a versão instalada do Acessibilidade Ativa
                   href: which-version-of-active-accessibility-is-currently-installed.md
-            - name: Automação de Acessibilidade Ativa e interface do usuário
+            - name: Acessibilidade Ativa e Automação da Interface do Usuário
               href: active-accessibility-and-ui-automation.md
         - name: Visão geral técnica
           href: technical-overview.md
           items:
             - name: Como Acessibilidade Ativa funciona
               href: how-active-accessibility-works.md
-            - name: Noções básicas do Acessibilidade Ativa
+            - name: Acessibilidade Ativa noções básicas
               href: active-accessibility-basics.md
               items:
-                - name: Objetos Acessibilidade Ativa
+                - name: Acessibilidade Ativa objetos
                   href: active-accessibility-objects.md
                   items:
                     - name: Objetos acessíveis
                       href: accessible-objects.md
                     - name: Elementos simples
                       href: simple-elements.md
-                    - name: Como as IDs filho são usadas nos parâmetros
+                    - name: Como as IDs filho são usadas em parâmetros
                       href: how-child-ids-are-used-in-parameters.md
-                    - name: Elementos personalizados da interface do usuário
+                    - name: Elementos Interface do Usuário personalizados
                       href: custom-user-interface-elements.md
                     - name: 'Interfaces duplas: IAccessible e IDispatch'
                       href: dual-interfaces--iaccessible-and-idispatch.md
-                    - name: System-Provided elementos da interface do usuário
+                    - name: System-Provided Interface do Usuário elementos
                       href: system-provided-user-interface-elements.md
-                - name: Tipos de suporte do IAccessible
+                - name: Tipos de suporte de IAccessible
                   href: types-of-iaccessible-support.md
                   items:
-                    - name: Implementação de Acessibilidade Ativa nativo
+                    - name: Implementação Acessibilidade Ativa nativa
                       href: native-active-accessibility-implementation.md
-                    - name: Proxies do IAccessible
+                    - name: IAccessible Proxies
                       href: iaccessible-proxies.md
                 - name: Client-Server comunicação
                   href: client-server-communication.md
@@ -2587,24 +2587,24 @@
             - name: Diretrizes do cliente
               href: client-guidelines.md
               items:
-                - name: Como os clientes obtêm IDs filho
+                - name: Como os clientes obtém IDs filho
                   href: how-clients-obtain-child-ids.md
-            - name: Diretrizes de COM e Unicode
+            - name: Diretrizes COM e Unicode
               href: com-and-unicode-guidelines.md
               items:
-                - name: Estrutura de variante
+                - name: Estrutura VARIANT
                   href: variant-structure.md
-                - name: Interface IDispatch
+                - name: IDispatch Interface
                   href: idispatch-interface.md
                 - name: Convertendo cadeias de caracteres Unicode e ANSI
                   href: converting-unicode-and-ansi-strings.md
-        - name: Guia do desenvolvedor de C/C++
+        - name: Guia do desenvolvedor do C/C++
           href: c-c---developer-s-guide.md
           items:
-            - name: Serviços de interface do usuário Acessibilidade Ativa
+            - name: Acessibilidade Ativa Interface do Usuário serviços
               href: active-accessibility-user-interface-services-dev-guide.md
               items:
-                - name: APIs da interface do usuário
+                - name: APIs Interface do Usuário de Interface do Usuário
                   href: user-interface-apis.md
                   items:
                     - name: Usando a interface IAccessible
@@ -2615,7 +2615,7 @@
                           items:
                             - name: Propriedade Name
                               href: name-property.md
-                            - name: Propriedade de função
+                            - name: Propriedade Role
                               href: role-property.md
                             - name: Propriedade State
                               href: state-property.md
@@ -2623,7 +2623,7 @@
                               href: value-property.md
                             - name: Propriedade Description
                               href: description-property.md
-                            - name: Propriedade da ajuda
+                            - name: Propriedade Help
                               href: help-property.md
                             - name: Propriedade HelpTopic
                               href: helptopic-property.md
@@ -2643,14 +2643,14 @@
                               href: hierarchical-navigation.md
                             - name: Navegação espacial e lógica
                               href: spatial-and-logical-navigation.md
-                            - name: Navegação por meio de teste de clique e local da tela
+                            - name: Navegação por meio de testes de acerto e localização da tela
                               href: navigation-through-hit-testing-and-screen-location.md
-                    - name: API de anotação dinâmica
+                    - name: API de Anotação Dinâmica
                       href: dynamic-annotation-api.md
                       items:
                         - name: Informações gerais
                           href: background-information.md
-                        - name: Alternativas para anotação dinâmica
+                        - name: Alternativas à Anotação Dinâmica
                           href: alternatives-to-dynamic-annotation.md
                         - name: Tipos de anotação dinâmica
                           href: types-of-dynamic-annotation.md
@@ -2659,19 +2659,19 @@
                           items:
                             - name: Usando anotação direta
                               href: using-direct-annotation.md
-                        - name: Anotação de mapa de valor
+                        - name: Anotação do mapa de valor
                           href: value-map-annotation.md
                           items:
                             - name: Usando anotação de mapa de valor
                               href: using-value-map-annotation.md
-                            - name: Exemplo de anotação de mapa de valor
+                            - name: Exemplo de anotação do mapa de valor
                               href: value-map-annotation-sample.md
                         - name: Anotação do servidor
                           href: server-annotation.md
                           items:
-                            - name: Usando a anotação do servidor
+                            - name: Usando anotação de servidor
                               href: using-server-annotation.md
-                            - name: Exemplo de anotação do servidor
+                            - name: Exemplo de anotação de servidor
                               href: server-annotation-sample.md
                         - name: Problemas e limitações
                           href: issues-and-limitations.md
@@ -2680,51 +2680,51 @@
                               href: scope-and-longevity-of-identity-string.md
                             - name: Várias anotações em um único elemento acessível
                               href: multiple-annotations-on-a-single-accessible-element.md
-                            - name: Propriedades de anotação que têm WinEvents correspondente
+                            - name: Propriedades de anotação que têm winEvents correspondentes
                               href: annotation-properties-that-have-corresponding-winevents.md
                             - name: Interação com WinEvents
                               href: interaction-with-winevents.md
-                            - name: Suporte a IAccessible nativo
+                            - name: Suporte nativo do IAccessible
                               href: native-iaccessible-support.md
-                            - name: Suporte a In-Process
+                            - name: In-Process suporte
                               href: in-process-support.md
-                - name: Chamando APIs de Acessibilidade Ativa
+                - name: Chamar APIs Acessibilidade Ativa dados
                   href: calling-active-accessibility-apis.md
-                - name: Guia do desenvolvedor para clientes Acessibilidade Ativa
+                - name: Guia do desenvolvedor para Acessibilidade Ativa clientes
                   href: developer-s-guide-for-active-accessibility-clients.md
                   items:
-                    - name: Obtendo um ponteiro de interface de objeto acessível
+                    - name: Obter um ponteiro de interface de objeto acessível
                       href: getting-an-accessible-object-interface-pointer.md
-                    - name: Verificando valores de retorno do IAccessible
+                    - name: Verificando valores de retorno de IAccessible
                       href: checking-iaccessible-return-values.md
                     - name: Recebendo erros para ponteiros de interface IAccessible
                       href: receiving-errors-for-iaccessible-interface-pointers.md
-                    - name: Acessibilidade Ativa e o dimensionamento de tela do Windows Vista
+                    - name: Acessibilidade Ativa e Windows de tela do Vista
                       href: active-accessibility-and-windows-vista-screen-scaling.md
-                - name: Guia do desenvolvedor para servidores de Acessibilidade Ativa
+                - name: Guia do desenvolvedor para Acessibilidade Ativa servidores
                   href: developer-s-guide-for-active-accessibility-servers.md
                   items:
                     - name: Criando objetos de proxy
                       href: creating-proxy-objects.md
                       items:
-                        - name: O que são objetos proxy?
+                        - name: O que são objetos de proxy?
                           href: what-are-proxy-objects.md
-                        - name: Por que os objetos proxy são necessários
+                        - name: Por que os objetos de proxy são necessários
                           href: why-proxy-objects-are-needed.md
                         - name: Considerações de design para objetos de proxy
                           href: design-considerations-for-proxy-objects.md
-                    - name: Considerações de design do IAccessible
+                    - name: Considerações sobre design do IAccessible
                       href: iaccessible-design-considerations.md
                       items:
                         - name: Escolhendo quando criar objetos acessíveis
                           href: choosing-when-to-create-accessible-objects.md
-                        - name: Escolhendo quais propriedades para dar suporte
+                        - name: Escolhendo quais propriedades dar suporte
                           href: choosing-which-properties-to-support.md
                         - name: Escolhendo o conteúdo para propriedades descritivas
                           href: choosing-the-content-for-descriptive-properties.md
-                        - name: Definindo propriedades para objetos animados ou movendo
+                        - name: Definindo propriedades para objetos animados ou móveis
                           href: setting-properties-for-animated-or-moving-objects.md
-                        - name: Gerando WinEvents apropriado
+                        - name: Gerando WinEvents apropriados
                           href: generating-appropriate-winevents.md
                         - name: Expondo informações adicionais não cobertas pela interface IAccessible
                           href: exposing-additional-information-not-covered-by-iaccessible-interface.md
@@ -2742,41 +2742,41 @@
                           href: reuse-existing-pointers-to-objects.md
                         - name: Criar novas interfaces para o mesmo objeto
                           href: create-new-interfaces-to-the-same-object.md
-                    - name: Atalhos para expor elementos personalizados da interface do usuário
+                    - name: Atalhos para expor elementos de Interface do Usuário personalizados
                       href: shortcuts-for-exposing-custom-user-interface-elements.md
                       items:
                         - name: Expondo controles com base em controles do sistema
                           href: exposing-controls-based-on-system-controls.md
-                        - name: Rotulando controles de Owner-Drawn
+                        - name: Rotulagem de Owner-Drawn controles
                           href: labeling-owner-drawn-controls.md
                           items:
                             - name: Expondo Owner-Drawn itens de menu
                               href: exposing-owner-drawn-menu-items.md
                             - name: Expondo Owner-Drawn itens da caixa de listagem
                               href: exposing-owner-drawn-list-box-items.md
-                            - name: Expondo Owner-Drawn itens da caixa de combinação
+                            - name: Expondo Owner-Drawn caixa de combinação
                               href: exposing-owner-drawn-combo-box-items.md
-        - name: Referência de C/C++
+        - name: Referência do C/C++
           href: c-c---reference.md
           items:
-            - name: Serviços de interface do usuário Acessibilidade Ativa
+            - name: Acessibilidade Ativa Interface do Usuário serviços
               href: active-accessibility-user-interface-services-ref.md
               items:
                 - name: Interfaces
                   href: interfaces.md
                   items:
-                    - name: IAccessible
+                    - name: Iaccessible
                       href: /windows/desktop/api/oleacc/nn-oleacc-iaccessible
                       items:
-                        - name: accDoDefaultAction
+                        - name: Accdodefaultaction
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction
-                        - name: accHitTest
+                        - name: Acchittest
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest
-                        - name: accLocation
+                        - name: Acclocation
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation
-                        - name: accNavigate
+                        - name: Accnavigate
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate
-                        - name: accSelect
+                        - name: Accselect
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect
                         - name: get_accChild
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchild
@@ -2786,23 +2786,23 @@
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction
                         - name: get_accDescription
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdescription
-                        - name: get_accFocus
+                        - name: Get_accfocus
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus
                         - name: get_accHelp
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelp
                         - name: get_accHelpTopic
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acchelptopic
-                        - name: get_accKeyboardShortcut
+                        - name: Get_acckeyboardshortcut
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut
-                        - name: get_accName
+                        - name: Get_accname
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname
                         - name: get_accParent
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent
-                        - name: get_accRole
+                        - name: Get_accrole
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole
-                        - name: get_accSelection
+                        - name: Get_accselection
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accselection
-                        - name: get_accState
+                        - name: Get_accstate
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate
                         - name: get_accValue
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue
@@ -2821,17 +2821,17 @@
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessiblewindowlesssite-queryobjectidranges
                         - name: ReleaseObjectIdRange
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessiblewindowlesssite-releaseobjectidrange
-                    - name: IAccIdentity
+                    - name: Iaccidentity
                       href: /windows/desktop/api/oleacc/nn-oleacc-iaccidentity
                       items:
                         - name: GetIdentityString
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccidentity-getidentitystring
-                    - name: IAccPropServer
+                    - name: Iaccpropserver
                       href: /windows/desktop/api/oleacc/nn-oleacc-iaccpropserver
                       items:
                         - name: GetPropValue
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccpropserver-getpropvalue
-                    - name: IAccPropServices
+                    - name: Iaccpropservices
                       href: /windows/desktop/api/oleacc/nn-oleacc-iaccpropservices
                       items:
                         - name: ClearHmenuProps
@@ -2864,10 +2864,10 @@
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-setpropserver
                         - name: SetPropValue
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccpropservices-setpropvalue
-                    - name: IAccessibleHandler
+                    - name: Iaccessiblehandler
                       href: /windows/desktop/api/oleacc/nn-oleacc-iaccessiblehandler
                       items:
-                        - name: AccessibleObjectFromID
+                        - name: Accessibleobjectfromid
                           href: /windows/desktop/api/Oleacc/nf-oleacc-iaccessiblehandler-accessibleobjectfromid
                 - name: Funções de cliente
                   href: client-functions.md
@@ -2905,7 +2905,7 @@
                       href: /windows/desktop/api/Oleacc/nf-oleacc-accsetrunningutilitystate
                     - name: CreateStdAccessibleObject
                       href: /windows/desktop/api/Oleacc/nf-oleacc-createstdaccessibleobject
-                    - name: CreateStdAccessibleProxy
+                    - name: Createstdaccessibleproxy
                       href: /windows/desktop/api/Oleacc/nf-oleacc-createstdaccessibleproxya
                     - name: LresultFromObject
                       href: /windows/desktop/api/Oleacc/nf-oleacc-lresultfromobject
@@ -2924,10 +2924,10 @@
                       href: hwineventhook.md
                     - name: WINEVENTPROC
                       href: /previous-versions/windows/desktop/legacy/dd373882(v=vs.85)
-                - name: WM_GETOBJECT mensagem de janela
+                - name: WM_GETOBJECT de janela
                   href: wm-getobject-window-message.md
                   items:
-                    - name: WM_GETOBJECT
+                    - name: Wm_getobject
                       href: wm-getobject.md
                 - name: Constantes
                   href: constants-and-enumerated-types.md
@@ -2946,13 +2946,13 @@
                       href: selflag.md
                 - name: Valores de retorno
                   href: return-values.md
-            - name: Serviços de texto Acessibilidade Ativa
+            - name: Acessibilidade Ativa de Texto
               href: active-accessibility-text-services.md
               items:
                 - name: IAccServerDocMgr
                   href: /windows/desktop/api/msaatext/nn-msaatext-iaccserverdocmgr
                   items:
-                    - name: NewDocument
+                    - name: Newdocument
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccserverdocmgr-newdocument
                     - name: RevokeDocument
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccserverdocmgr-revokedocument
@@ -2967,16 +2967,16 @@
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccclientdocmgr-lookupbypoint
                     - name: GetDocuments
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccclientdocmgr-getdocuments
-                    - name: Getfocusd
+                    - name: GetFocused
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccclientdocmgr-getfocused
                 - name: IAccDictionary
                   href: /windows/desktop/api/msaatext/nn-msaatext-iaccdictionary
                   items:
-                    - name: Gettraduzistring
+                    - name: Getlocalizedstring
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccdictionary-getlocalizedstring
                     - name: GetParentTerm
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccdictionary-getparentterm
-                    - name: Getmnemônicostring
+                    - name: GetMnemonicString
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccdictionary-getmnemonicstring
                     - name: LookupMnemonicTerm
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iaccdictionary-lookupmnemonicterm
@@ -2997,7 +2997,7 @@
                   items:
                     - name: GetSubcomponentCount
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iversioninfo-getsubcomponentcount
-                    - name: Getimplementationid
+                    - name: GetImplementationID
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iversioninfo-getimplementationid
                     - name: GetBuildVersion
                       href: /windows/desktop/api/Msaatext/nf-msaatext-iversioninfo-getbuildversion
@@ -3013,113 +3013,113 @@
         - name: Apêndices
           href: appendixes.md
           items:
-            - name: 'Apêndice A: referência de elementos da interface do usuário com suporte'
+            - name: 'Apêndice A: Referência de Interface do Usuário elementos com suporte'
               href: appendix-a--supported-user-interface-elements-reference.md
               items:
-                - name: Como Acessibilidade Ativa expõe elementos da interface do usuário
+                - name: Como Acessibilidade Ativa expõe Interface do Usuário elementos
                   href: how-active-accessibility-exposes-user-interface-elements.md
                   items:
                     - name: Triagem de objetos desnecessários
                       href: screening-out-unnecessary-objects.md
                     - name: Fornecendo a propriedade Name
                       href: providing-the-name-property.md
-                    - name: Garantindo que os elementos da interface do usuário sejam nomeados corretamente
+                    - name: Garantir que os elementos da interface do usuário sejam nomeados corretamente
                       href: ensure-that-ui-elements-are-named-correctly.md
-                    - name: Elementos de interface do usuário sem suporte
+                    - name: Elementos de Interface do Usuário sem suporte
                       href: unsupported-user-interface-elements.md
-                - name: Referência de elemento de interface do usuário
+                - name: referência Interface do Usuário elemento
                   href: user-interface-element-reference.md
                   items:
                     - name: Controle de animação
                       href: animation-control.md
-                    - name: Acento
+                    - name: Cursor
                       href: caret.md
                     - name: Caixa de seleção
                       href: check-box.md
-                    - name: Objeto de cliente
+                    - name: Objeto Client
                       href: client-object.md
                     - name: Caixa de Combinação
                       href: combo-box.md
                     - name: Cursor
                       href: cursor.md
-                    - name: Janela da área de trabalho
+                    - name: Janela área de trabalho
                       href: desktop-window.md
                     - name: Caixa de diálogo
                       href: dialog-box.md
-                    - name: Controle de edição
+                    - name: Editar Controle
                       href: edit-control.md
                     - name: Caixa de grupo
                       href: group-box.md
-                    - name: Controle de cabeçalho
+                    - name: Controle de header
                       href: header-control.md
-                    - name: Controle de teclas de acesso
+                    - name: Controle de teclas a quente
                       href: hot-key-control.md
                     - name: Caixa de listagem
                       href: list-box.md
                     - name: Controle de exibição de lista
                       href: list-view-control.md
-                    - name: Janela do cliente MDI
+                    - name: Janela cliente MDI
                       href: mdi-client-window.md
                     - name: Barra de menu
                       href: menu-bar.md
                     - name: Item de menu
                       href: menu-item.md
-                    - name: Controle de calendário mensal
+                    - name: Controle de calendário do mês
                       href: calendar-control.md
-                    - name: Menu pop-up
+                    - name: Pop-up Menu
                       href: pop-up-menu.md
-                    - name: Controle da barra de progresso
+                    - name: Controle de barra de progresso
                       href: progress-bar-control.md
-                    - name: Botão de ação
+                    - name: Botão
                       href: push-button.md
                     - name: Botão de Opção
                       href: radio-button.md
                     - name: Barra de Rolagem
                       href: scroll-bar.md
-                    - name: Alça de tamanho
+                    - name: Controle de tamanho
                       href: size-grip.md
                     - name: Controle deslizante
                       href: slider-control.md
                     - name: Texto estático
                       href: static-text.md
-                    - name: Controle da barra de status
+                    - name: Controle de barra de status
                       href: status-bar-control.md
-                    - name: Alternar janela
+                    - name: Janela Alternar
                       href: switch-window.md
-                    - name: Controle guia
+                    - name: Controle de tabulação
                       href: tab-control.md
                     - name: Barra de Título
                       href: title-bar.md
-                    - name: Controle ToolBar
+                    - name: Controle da barra de ferramentas
                       href: toolbar-control.md
                     - name: Controle ToolTip
                       href: tooltip-control.md
                     - name: Controle de exibição de árvore
                       href: tree-view-control.md
-                    - name: Controle de Up-Down
+                    - name: Up-Down controle
                       href: up-down-control.md
                     - name: Janela
                       href: window.md
                     - name: Outras funções de objeto e métodos com suporte
                       href: other-object-roles-and-supported-methods.md
-            - name: 'Apêndice B: suporte padrão do Gerenciador de diálogo'
+            - name: 'Apêndice B: Suporte do Gerenciador de Caixas de Diálogo Standard'
               href: appendix-b--standard-dialog-manager-support.md
-            - name: 'Apêndice C: DISPIDs do IAccessible'
+            - name: 'Apêndice C: DISPIDs IAccessible'
               href: appendix-c--iaccessible-dispids.md
-            - name: 'Apêndice D: notas para desenvolvedores de Visual Basic'
+            - name: 'Apêndice D: Observações para Visual Basic desenvolvedores'
               href: appendix-d--notes-for-visual-basic-developers.md
               items:
-                - name: 'Visual Basic observações do método: accName'
+                - name: 'Visual Basic Notas de método: accName'
                   href: visual-basic-method-notes--accname.md
-                - name: 'Visual Basic observações do método: accValue'
+                - name: 'Visual Basic Notas de método: accValue'
                   href: visual-basic-method-notes--accvalue.md
-                - name: Visual Basic programas de exemplo
+                - name: Visual Basic Programas de exemplo
                   href: visual-basic-sample-programs.md
-            - name: 'Apêndice E: atributos de texto para Acessibilidade Ativa dicionário de serviços de texto'
+            - name: 'Apêndice E: Atributos de texto para Acessibilidade Ativa dicionário de serviços de texto'
               href: appendix-e--text-attributes-for-active-accessibility-text-services-dictionary.md
-            - name: 'Apêndice F: valores de identificador de objeto para OBJID_QUERYCLASSNAMEIDX'
+            - name: 'Apêndice F: Valores do identificador de objeto para OBJID_QUERYCLASSNAMEIDX'
               href: appendix-f--object-identifier-values-for-objid-queryclassnameidx.md
-            - name: 'Apêndice G: Acessibilidade Ativa ponte à automação da interface do usuário'
+            - name: 'Apêndice G: Acessibilidade Ativa ponte para Automação da Interface do Usuário'
               href: appendix-g--active-accessibility-bridge-to-ui-automation.md
     - name: API de ampliação
       href: magapi/entry-magapi-sdk.md
@@ -3133,31 +3133,31 @@
               href: what-are-winevents.md
             - name: Registrando uma função de gancho
               href: registering-a-hook-function.md
-            - name: Eventos de System-Level e Object-Level
+            - name: System-Level eventos Object-Level eventos
               href: system-level-and-object-level-events.md
-            - name: In-Context e funções de gancho fora de contexto
+            - name: In-Context e funções de gancho fora do contexto
               href: in-context-and-out-of-context-hook-functions.md
               items:
-                - name: Funções de In-Context Hook
+                - name: In-Context funções de gancho
                   href: in-context-hook-functions.md
-                - name: Precauções de função de gancho de In-Context
+                - name: precauções In-Context função de gancho
                   href: in-context-hook-function-precautions.md
                 - name: Funções de gancho fora do contexto
                   href: out-of-context-hook-functions.md
-            - name: Proteção contra reentrância em funções de Hook
+            - name: Proteção contra reentração em funções de gancho
               href: guarding-against-reentrancy-in-hook-functions.md
-            - name: Alocação de IDs WinEvent
+            - name: Alocação de IDs do WinEvent
               href: allocation-of-winevent-ids.md
-        - name: A mensagem de WM_GETOBJECT
+        - name: A WM_GETOBJECT de texto
           href: the-wm-getobject-message.md
           items:
-            - name: Manipulando a mensagem de WM_GETOBJECT
+            - name: Manipulando a WM_GETOBJECT mensagem
               href: handling-the-wm-getobject-message.md
-            - name: Quando responder à mensagem de WM_GETOBJECT
+            - name: Quando responder à mensagem WM_GETOBJECT resposta
               href: when-to-respond-to-the-wm-getobject-message.md
             - name: Expondo uma interface de modelo de objeto nativo
               href: exposing-a-native-object-model-interface.md
-            - name: O identificador do objeto OBJID_QUERYCLASSNAMEIDX
+            - name: O OBJID_QUERYCLASSNAMEIDX identificador de objeto
               href: the-objid-queryclassnameidx-object-identifier.md
         - name: Anotação dinâmica
           href: dynamic-annotation-common.md
@@ -3168,40 +3168,40 @@
               href: iaccessibleex-implementation-guidelines.md
             - name: Implementando IAccessibleEx para provedores
               href: implementing-iaccessibleex-for-providers.md
-            - name: Usando o IAccessibleEx de um cliente
+            - name: Usando IAccessibleEx de um cliente
               href: using-iaccessibleex-from-a-client.md
-        - name: Acessibilidade de controle ActiveX sem janela
+        - name: Acessibilidade de controle ActiveX janela
           href: windowless-activex-control-accessibility.md
           items:
-            - name: Como usar a automação da interface do usuário para tornar um controle ActiveX sem janela acessível
+            - name: Como usar o Automação da Interface do Usuário tornar um controle de ActiveX sem janela acessível
               href: use-ui-automation-to-make-an-windowless-activex-control-accessible.md
-            - name: Usar MSAA para tornar um controle ActiveX sem janela acessível
+            - name: Usar a MSAA para tornar um controle de ActiveX sem janelas acessível
               href: use-msaa-to-make-an-windowless-activex-control-accessible.md
-            - name: Hospedar um controle ActiveX sem janela de automação da interface do usuário
+            - name: Hospedar um controle Automação da Interface do Usuário sem janela ActiveX janela
               href: host-a-ui-automation-windowless-activex-control.md
-            - name: Como hospedar um controle ActiveX sem janela do MSAA
+            - name: Como hospedar um controle de ActiveX MSAA
               href: host-an-msaa-windowless-activex-control.md
 - name: Práticas recomendadas de acessibilidade
   href: accessibility-best-practices.md
 - name: Ferramentas de teste de acessibilidade
   href: testing-tools.md
   items:
-    - name: AccEvent (Inspetor de eventos acessível)
+    - name: AccEvent (Acessador de Eventos)
       href: accessible-event-watcher.md
     - name: Inspecionar
       href: inspect-objects.md
     - name: AccScope
       href: accscope.md
-    - name: AccChecker (verificador de acessibilidade da interface do usuário)
+    - name: AccChecker (Verificador de Acessibilidade da Interface do Usuário)
       href: ui-accessibility-checker.md
       items:
-        - name: Testando com AccChecker
+        - name: Teste com AccChecker
           href: testing-with-accchecker.md
-        - name: A interface gráfica do usuário do AccChecker
+        - name: Os gráficos do AccChecker Interface do Usuário
           href: the-accchecker-graphical-user-interface.md
-        - name: O console do AccChecker
+        - name: O Console do AccChecker
           href: the-accchecker-console.md
-        - name: A API AccChecker
+        - name: A API do AccChecker
           href: the-accchecker-api.md
         - name: Rotinas de verificação
           href: verification-routines.md

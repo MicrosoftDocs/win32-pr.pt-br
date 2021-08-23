@@ -17,44 +17,44 @@ Os mapas de deslocamento são semelhantes aos mapas de textura, mas são acessad
 
 ## <a name="block-diagram"></a>Diagrama de bloco
 
-Um estágio de amostra adicional está presente na parte inicial do pipe de vértice, conforme mostrado no diagrama a seguir, que pode fazer uma amostragem de um mapa de deslocamento para fornecer dados de deslocamento de vértice.
+Um estágio de amostra adicional está presente na parte inicial do pipe de vértice, conforme mostrado no diagrama a seguir, que pode amostrar um mapa de deslocamento para fornecer dados de deslocamento de vértice.
 
 ![diagrama do estágio de amostra no pipe de vértice](images/tessellatordx9.png)
 
-O estado de amostra do mapa de deslocamento pode ser definido pelo [**Setsamplestate**](/windows/desktop/api) usando o número de estágio 256, que é um novo número de estágio. A textura do mapa de deslocamento é definida por [**SetTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture).
+O estado de amostra do mapa de deslocamento pode ser definido pelo [**SetSamplerState**](/windows/desktop/api) usando o número de estágio 256, que é um novo número de estágio. A textura do mapa de deslocamento é definida [**por SetTexture.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settexture)
 
-O mapa pode ser de amostra ou não, o que significa que ele pode ser ordenado de uma maneira que permita a pesquisa dos valores de deslocamento sem filtragem.
+O mapa pode ser pré-prempled ou não, o que significa que ele pode ser ordenado de uma maneira que habilita a procurar os valores de deslocamento sem filtragem.
 
 -   Os mapas de deslocamento são análogos aos mapas de textura, mas são acessados pelo mecanismo de vértice.
--   Um estágio de amostra adicional está presente na parte inicial do pipe de vértice que pode fazer uma amostragem de um mapa de deslocamento. Esse estágio é acessado pela API setsamplestate usual, mas o número do estágio é D3DDMAPSAMPLER = 256.
--   O estado de amostra do mapa de deslocamento pode ser definido pelo setsamplestate (D3DDMAPSAMPLER,...) API.
--   A textura do mapa de deslocamento é definida pela API SetTexture (D3DDMAPSAMPLER, Texture).
--   O mapa pode ser previamente amostrado ou não. Isso significa que ele pode ser ordenado de uma maneira específica que permite a pesquisa dos valores de deslocamento sem filtragem.
--   As alterações na estrutura da declaração permitem a especificação da coordenada de textura usada para pesquisar o mapa de textura. Por exemplo, Stream0, offset, FLOAT2, pesquisa, valor de deslocamento \_ . Isso diz ao Tessellator para usar o vetor float 2D em stream0 em um determinado deslocamento como uma coordenada de textura para pesquisar o mapa de deslocamento e associar a \_ semântica de uso do valor de deslocamento a ele. A declaração de sombreador de vértice contém uma linha semelhante a {DCL \_ Texture0, V0} indicando que a semântica Texture0 deve ser associada ao registro de entrada V0. O valor de deslocamento procurado é copiado para o registro de entrada V0.
--   Há um tipo especial de mapeamento de deslocamento, quando o mapa de textura é previamente amostrado. O índice sequencial dos vértices gerados é usado como uma coordenada de textura para um mapa de textura. Por exemplo, 0, 0, (D3DDECLTYPE) 0, D3DDECLMETHOD \_ LOOKUPPRESAMPLED, Usage, UsageIndex.
--   A saída da pesquisa é 4 floats.
--   Há suporte para o mapeamento de deslocamento apenas com N-patches.
--   Os drivers precisam ignorar D3DDMAPSAMPLER em SetTextureStageState se não tratarem de mapas de substituição.
--   \_Não há suporte para o modo de filtro D3DTEXF ANISOTROPIC.
--   Quando D3DSAMP \_ MIPFILTER na amostra do mapa de deslocamento não for D3DTEXF \_ None, o nível de detalhe será calculado da seguinte maneira (Observe que o estado de mosaico adaptável será usado mesmo se D3DRS \_ ENABLEADAPTIVETESSELLATION for **false**): tmax = Process State D3DRS \_ MAXTESSELLATIONLEVEL
--   O te do nível de mosaico de computação para um vértice vi: (XI, Yi, Zi) da mesma maneira que descrito na seção "mosaico adaptável". Nível de detalhe L = log2 (tmax)-log2 (te).
--   As operações de filtragem e amostragem de textura seguem as mesmas regras que o pipeline de pixel (a tendência de nível de detalhe (LOD) é aplicada, etc.).
--   Nem todos os formatos podem ser usados como mapas de deslocamento, mas apenas aqueles que dão suporte ao D3DUSAGE \_ DMAP. O aplicativo pode consultar isso com o CheckDeviceFormat [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat).
--   D3DUSAGE \_ DMAP deve ser especificado em [**CreateTexture**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture) para notificar o driver de que essa textura deve ser usada como um mapa de deslocamento.
--   D3DUSAGE \_ DMAP só pode ser usado com texturas. Ele não pode ser usado com mapas ou volumes de cubo.
--   As texturas e os destinos de renderização criados com D3DUSAGE \_ DMAP podem ser definidos em estágios de amostra regulares e como destinos de renderização.
--   Os Estados de renderização para definir o modo de encapsulamento das coordenadas de textura são ignorados no mapeamento de deslocamento. Em geral, não há nenhum modo de encapsulamento para o mecanismo Tessellator.
--   Um amostra de mapa de deslocamento tem comportamento idêntico ao dos exemplos de textura de pixel. Se uma textura com menos de quatro canais (como R32f) for pesquisada, os valores de pesquisa irão para os canais apropriados do registro de destino (o registro de entrada do sombreador de vértice marcado com a \_ semântica de exemplo), enquanto os outros canais padrão são (1, 1, 1). Quando pesquisado, \_ o L8 D3DFMT Obtém a difusão nos canais R, G, B e um padrão como 1. O rasterizador de referência tem os detalhes da implementação completa.
+-   Um estágio de amostra adicional está presente na parte inicial do pipe de vértice que pode amostrar um mapa de deslocamento. Esse estágio é acessado pela API SetSamplerState normal, mas o número do estágio é D3DDMAPSAMPLER = 256.
+-   O estado do amostrador do mapa de deslocamento pode ser definido pelo SetSamplerState(D3DDMAPSAMPLER, ...) Api.
+-   A textura do mapa de deslocamento é definida pela API SetTexture(D3DDMAPSAMPLER, textura).
+-   O mapa pode ser previamente amostrado ou não. Isso significa que ele pode ser ordenado de uma maneira específica que habilita a procurar os valores de deslocamento sem filtragem.
+-   As alterações na estrutura de declaração permitem a especificação da coordenada de textura usada para procurar o mapa de textura. Por exemplo, Stream0, Offset, FLOAT2, LOOKUP, Valor de \_ deslocamento. Isso informa ao mosaico para usar o vetor float 2D em stream0 em um determinado deslocamento como uma coordenada de textura para procurar o mapa de deslocamento e associar a semântica uso de valor de deslocamento a \_ ele. A declaração do sombreador de vtex conteria uma linha semelhante a {dcl texture0, v0} indicando que a semântica texture0 deve ser associada ao registro de entrada \_ v0. O valor de deslocamento procurado é copiado para o registro de entrada v0.
+-   Há um tipo especial de mapeamento de deslocamento, quando o mapa de textura é pré-amostrado. O índice sequencial de vértices gerados é usado como uma coordenada de textura para um mapa de textura. Por exemplo, 0,0,(D3DDECLTYPE)0,D3DDECLMETHOD \_ LOOKUPPRESAMPLED, Usage, UsageIndex.
+-   A saída da lookup é 4 floats.
+-   O mapeamento de deslocamento só tem suporte com N patches.
+-   Os drivers precisarão ignorar D3DDMAPSAMPLER em SetTextureStageState se não tratarem mapas de deslocamento.
+-   Não há suporte para o \_ modo de filtro ANIS LTDA D3DTEXF.
+-   Quando D3DSAMP MIPFILTER no amostrador de mapa de deslocamento não é D3DTEXF NONE, o nível de detalhe é calculado da seguinte forma (observe que o estado de mosaico adaptável é usado mesmo se \_ \_ o D3DRS \_ ENABLEADAPTIVETESSELLATION for **FALSE**): Tmax = renderizar estado D3DRS \_ MAXTESSELLATIONLEVEL
+-   Nível de mosaico de computação Te para um vértice Vi: (Xi, Xi, Zi) da mesma maneira descrita na seção "Mosaico adaptável". Nível de detalhes L = log2(Tmax) – log2 (Te).
+-   As operações de filtragem e amostragem de textura seguem as mesmas regras que o desvio de pipeline de pixel (LOD (nível de detalhe) é aplicado etc.).
+-   Nem todos os formatos podem ser usados como mapas de deslocamento, mas apenas aqueles que suportam o \_ DMAP D3DUSAGE. O aplicativo pode consultar isso com CheckDeviceFormat [**CheckDeviceFormat**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdeviceformat).
+-   D3DUSAGE DMAP deve ser especificado em CreateTexture para notificar o driver de que essa textura deve ser usada como \_ um mapa de deslocamento. [](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-createtexture)
+-   D3DUSAGE \_ DMAP só pode ser usado com texturas. Ele não pode ser usado com mapas de cubo ou volumes.
+-   Texturas e destinos de renderização criados com DMAP D3DUSAGE podem ser definidos em estágios regulares de amostra e \_ como destinos de renderização.
+-   Os estados de renderização para definir o modo de quebra para as coordenadas de textura são ignorados no mapeamento de deslocamento. Em geral, não há modos de wrap para o mecanismo de mosaico.
+-   Um exemplo de mapa de deslocamento tem um comportamento idêntico ao dos amostradores de textura de pixel. Se uma textura com menos de quatro canais (como R32f) for procurada, os valores de procura vão para os canais apropriados do registro de destino (o registro de entrada do sombreador de vértice marcado com a semântica de exemplo), enquanto os outros canais assumem \_ como padrão (1, 1, 1). Quando procurado, d3DFMT L8 é transmitido para os canais \_ R, G, B e A assume como padrão 1. O rasterizador de referência tem os detalhes completos da implementação.
 
-## <a name="pre-sampled-displacement-mapping"></a>Mapeamento de deslocamento de amostra
+## <a name="pre-sampled-displacement-mapping"></a>Mapeamento de deslocamento pré-amostrado
 
--   Novo estado de amostra é introduzido: D3DSAMP \_ DMAPOFFSET (DWORD)-offset (em vértices) em um mapa de deslocamento de amostra.
--   O novo método de declaração foi introduzido: D3DDECLMETHOD \_ LOOKUPPRESAMPLED.
+-   O novo estado de amostra foi introduzido: \_ DMAPOFFSET DMAPOFFSET (DMAPOFFSET) D3DSAMP – deslocamento (em vértices) em um mapa de deslocamento pré-amostrado.
+-   Novo método de declaração foi introduzido: D3DDECLMETHOD \_ LOOKUPPRESAMPLED.
 -   O mosaico adaptável deve ser desabilitado.
--   As configurações de filtro de textura são ignoradas. A amostragem de ponto é feita. O filtro de textura MIP é considerado como D3DTEXF \_ nenhum. Todos os outros modos de filtro de textura são assumidos como \_ ponto D3DTEXF.
--   As coordenadas de textura são computadas como: U = (índice% TextureWidthInPixeles)/(float) (TextureWidthInPixeles) V = (index/TextureWidthInPixeles)/(float) (TextureHeightInPixeles), em que index é um índice sequencial de vértices gerados mais TSS D3DSAMP \[ \_ DMAPOFFSET \] . O índice sequencial é definido como zero no início de cada primitivo e aumenta após a geração de um vértice.
+-   As configurações de filtro de textura são ignoradas. A amostragem de ponto é feita. Presume-se que o filtro de textura mip seja D3DTEXF \_ NONE. Todos os outros modos de filtro de textura são presumidos como D3DTEXF \_ POINT.
+-   As coordenadas de textura são computadas como: U = (Index % TextureWidthInPixeles) / (float)(TextureWidthInPixeles) V = (Index /TextureWidthInPixeles) / (float)(TextureHeightInPixeles) em que Index é um índice sequencial de vértices gerados mais TSS \[ D3DSAMP \_ DMAPOFFSET \] . O índice sequencial é definido como zero no início de cada primitivo e é aumentado depois que um vértice é gerado.
 
-Essas são as alterações de API que dão suporte ao mapeamento de deslocamento.
+Essas são as alterações de API que suportam mapeamento de deslocamento.
 
 -   Um único formato de canal adicionado, D3DFMT \_ L16.
 -   Um novo sinalizador de uso, D3DUSAGE \_ DMAP.

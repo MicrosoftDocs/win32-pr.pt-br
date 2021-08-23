@@ -1,9 +1,9 @@
 ---
 title: atributo nonbrowsable
-description: Use o atributo \ nonnavegável \ para marcar uma interface ou um membro de dispinterface que não deve ser exibido em um navegador de propriedades.
+description: Use o atributo \ nonbrowsable\ para marcar uma interface ou membro dispinterface que não deve ser exibido em um navegador de propriedades.
 ms.assetid: 94e868cc-8d9c-4b8a-ac18-1ea513a103da
 keywords:
-- MIDL de atributo não navegável
+- atributo nonbrowsable MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e24c39511df9637c352245b98b237fe8fd451eb
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7b6349683c3a3c591752036d9a5e2995d368460a049a79d2e1cf4123beb2b0ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066946"
 ---
 # <a name="nonbrowsable-attribute"></a>atributo nonbrowsable
 
-Use o atributo **\[ nonnavegável \]** para marcar uma interface ou um membro de dispinterface que não deve ser exibido em um navegador de propriedades.
+Use o **\[ atributo nonbrowsable \]** para marcar uma interface ou membro dispinterface que não deve ser exibido em um navegador de propriedades.
 
 ``` syntax
 [property-attribute-list, nonbrowsable]return-type property-name(prop-param-list)
@@ -31,43 +31,43 @@ Use o atributo **\[ nonnavegável \]** para marcar uma interface ou um membro de
 
 <dl> <dt>
 
-*Propriedade-atributo-lista* 
+*property-attribute-list* 
 </dt> <dd>
 
-Outros atributos que se aplicam à propriedade.
+Outros atributos que se aplicam à propriedade .
 
 </dd> <dt>
 
 *tipo de retorno* 
 </dt> <dd>
 
-O tipo dos dados retornados pelo método.
+O tipo dos dados retornados pelo método .
 
 </dd> <dt>
 
-*nome da propriedade* 
+*property-name* 
 </dt> <dd>
 
-O nome da propriedade ou do método.
+O nome da propriedade ou método.
 
 </dd> <dt>
 
-*prop-param-List* 
+*prop-param-list* 
 </dt> <dd>
 
-Zero ou mais parâmetros a serem passados para o método.
+Zero ou mais parâmetros a serem passados para o método .
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Determinadas propriedades não devem ser exibidas em um navegador de propriedades. Isso pode ser porque a recuperação do valor levaria muito tempo. O exemplo impede que o usuário tente recuperar a propriedade *Count* , que retorna o número de linhas no dynaset. Esse número pode representar os resultados de uma consulta muito grande.
+Determinadas propriedades não devem ser exibidas em um navegador de propriedades. Isso pode ocorrer porque a recuperação do valor levará muito tempo. O exemplo impede que o usuário tentar recuperar a *propriedade Count,* que retorna o número de linhas no dynaset. Esse número pode representar os resultados de uma consulta muito grande.
 
-Outras propriedades podem ter efeitos inesperados no navegador. Por exemplo, considere um controle com a propriedade "IsSelected" para informar se o controle está selecionado. Se "IsSelected" for definido como false, um navegador de propriedades com base em seleção procurará um objeto diferente.
+Outras propriedades podem ter efeitos inesperados no navegador. Por exemplo, considere um controle com a propriedade "IsSelected" para saber se o controle está selecionado. Se "IsSelected" for definido como false, um navegador de propriedades com base em seleção procurará um objeto diferente.
 
-Observe que uma propriedade marcada como não **\[ navegável \]** ainda aparecerá em um pesquisador de objetos, que não mostra valores de propriedade.
+Observe que uma propriedade marcada como **\[ não nbrowsable \]** ainda aparecerá em um navegador de objetos, que não mostra valores de propriedade.
 
-### <a name="typeflag-representation"></a>Representação TYPEFLAG
+### <a name="typeflag-representation"></a>Representação de typeflag
 
 A presença de FUNCFLAG \_ FNONBROWSABLE ou VARFLAG \_ FNONBROWSABLE.
 
@@ -89,7 +89,7 @@ interface IDynaset:IDispatch
 
 <dl> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -98,6 +98,6 @@ interface IDynaset:IDispatch
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

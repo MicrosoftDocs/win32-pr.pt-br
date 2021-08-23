@@ -1,8 +1,8 @@
 ---
-title: Estrutura de DO_DOWNLOAD_ENUM_CATEGORY
-description: 'Usado por **IDOManager:: EnumDownloads** para filtrar a enumeração de downloads pelo valor da propriedade específica.'
+title: DO_DOWNLOAD_ENUM_CATEGORY estrutura
+description: Usado por **IDOManager::EnumDownloads** para filtrar a enumeração downloads pelo valor da propriedade específica.
 keywords:
-- Estrutura de DO_DOWNLOAD_ENUM_CATEGORY
+- DO_DOWNLOAD_ENUM_CATEGORY estrutura
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118543750"
 ---
-# <a name="do_download_enum_category-structure"></a>Estrutura de DO_DOWNLOAD_ENUM_CATEGORY
+# <a name="do_download_enum_category-structure"></a>DO_DOWNLOAD_ENUM_CATEGORY estrutura
 
-A estrutura de **DO_DOWNLOAD_ENUM_CATEGORY** é usada por **IDOManager:: EnumDownloads** para filtrar a enumeração de downloads pelo valor da propriedade específica.
+A **DO_DOWNLOAD_ENUM_CATEGORY** é usada por **IDOManager::EnumDownloads** para filtrar a enumeração downloads pelo valor da propriedade específica.
 
 ## <a name="syntax"></a>Sintaxe
 ```cpp
@@ -38,7 +38,7 @@ typedef struct _DO_DOWNLOAD_ENUM_CATEGORY
 
 `Property`
 
-O nome da propriedade a ser usada para a enumeração de download. Essas propriedades têm suporte para fins de enumeração.
+O nome da propriedade a ser usado para a enumeração de download. Essas propriedades têm suporte para fins de enumeração.
 - **DODownloadProperty_Id**
 - **DODownloadProperty_Uri**
 - **DODownloadProperty_ContentId**
@@ -53,6 +53,6 @@ O valor da propriedade.
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Windows 10, versão 1809 \[ Somente aplicativos Win32\] |
-| **Servidor mínimo com suporte** | Windows Somente aplicativos Win32 do servidor versão 1809 \[\] |
-| **Cabeçalho** | Do. h |
+| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
+| **Cabeçalho** | Do.h |

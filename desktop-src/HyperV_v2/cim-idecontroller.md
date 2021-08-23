@@ -1,7 +1,7 @@
 ---
 description: Descreve os recursos e o gerenciamento de um controlador IDE.
 ms.assetid: c0290a91-4f2c-4759-af3b-8ba89dc723a9
-title: Classe CIM_IDEController
+title: CIM_IDEController classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118648541"
 ---
-# <a name="cim_idecontroller-class"></a>\_Classe CIM IDEController
+# <a name="cim_idecontroller-class"></a>Classe CIM \_ IDEController
 
 Descreve os recursos e o gerenciamento de um controlador IDE.
 
@@ -35,7 +35,7 @@ class CIM_IDEController : CIM_Controller
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ IDEController** não define nenhum membro.
+A **classe CIM \_ IDEController** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,8 +45,8 @@ A classe **CIM \_ IDEController** não define nenhum membro.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -55,7 +55,7 @@ A classe **CIM \_ IDEController** não define nenhum membro.
 
 <dl> <dt>
 
-[**\_Controlador CIM**](cim-controller.md)
+[**Controlador \_ CIM**](cim-controller.md)
 </dt> </dl>
 
  

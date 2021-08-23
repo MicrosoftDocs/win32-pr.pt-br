@@ -1,7 +1,7 @@
 ---
 description: Indica o número de filhos que o contato tem.
 ms.assetid: 44d260a1-ad42-4822-ab4d-205f6999e5aa
-title: System.Contact.Children
+title: Sistema. Contact. filhos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b913df318f1177fd22639d39b4ddafe0606b1c21f3710e0114506d99b73928af
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118730191"
 ---
-# <a name="systemcontactchildren"></a>System.Contact.Children
+# <a name="systemcontactchildren"></a>Sistema. Contact. filhos
 
 Indica o número de filhos que o contato tem.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores PKEY são definidos em Propkey.h.
+Os valores de PKEY são definidos em Propkey. h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Propertydescription](./propdesc-schema-propertydescription.md)
+[propertyDescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores PKEY são definidos em Propkey.h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Typeinfo](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[Stringformat](./propdesc-schema-stringformat.md)
+[stringFormat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numberformat](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores PKEY são definidos em Propkey.h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[Filtercontrol](./propdesc-schema-filtercontrol.md)
+[filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -3,8 +3,8 @@ title: Interface IWMPSettings2 (VB e C) (WMP. h)
 description: Fornece propriedades e um método que complementam a interface IWMPSettings. Além das propriedades e métodos herdados de IWMPSettings, a interface IWMPSettings2 expõe as propriedades a seguir.
 ms.assetid: 6bd0f6dd-df49-4c21-b47c-c8c63f85c2c0
 keywords:
-- IWMPSettings2 (VB e C) interface do Windows Media Player
-- IWMPSettings2 (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPSettings2 (VB e C)
+- Windows Media Player de interface IWMPSettings2 (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb782433085544a94db0eab6b9314f1e4df488e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e227cc255eee625df926031369ef8be0fe270e377b143adff2c3ed2d9ab0aeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135349"
 ---
 # <a name="iwmpsettings2-vb-and-c-interface"></a>Interface IWMPSettings2 (VB e C#)
 
@@ -90,7 +90,7 @@ Obtenha uma interface **IWMPSettings2** convertendo o valor retornado pela propr
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPSettings (VB e C#)**](iwmpsettings--vb-and-c.md)

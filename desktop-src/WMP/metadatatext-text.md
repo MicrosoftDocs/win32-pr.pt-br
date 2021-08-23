@@ -1,9 +1,9 @@
 ---
-title: MetadataText. Text
-description: A propriedade Text recupera o texto de metadados.
+title: MetadataText.text
+description: A propriedade text recupera o texto de metadados.
 ms.assetid: e6963df8-6c83-40c5-a442-5307850d15cf
 keywords:
-- MetadataText. Text Windows Media Player
+- MetadataText.text Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60aebaf8df3328d9263e7416f6fa2dfaae6e7826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e88c6b32742b55e0e4d6988f603130100cedbb2992ce5d2b7600fc29fbbe0a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134989"
 ---
-# <a name="metadatatexttext"></a>MetadataText. Text
+# <a name="metadatatexttext"></a>MetadataText.text
 
-A propriedade **Text** recupera o texto de metadados.
+A **propriedade text** recupera o texto de metadados.
 
 ## <a name="syntax"></a>Syntax
 
-*Player*. *currentMedia*. **getItemInfoByType**( *nome*, *idioma*, *índice*). **texto** de
+*player*. *currentMedia*. **getItemInfoByType**( *nome,* *idioma,* *índice*). **texto**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="remarks"></a>Comentários
 
-Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 **Windows Media Player 10 Mobile:** Não há suporte para essa propriedade.
 
@@ -45,7 +45,7 @@ Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura �
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -57,10 +57,10 @@ Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura �
 [**Objeto MetadataText**](metadatatext-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

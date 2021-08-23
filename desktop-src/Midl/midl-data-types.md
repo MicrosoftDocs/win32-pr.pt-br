@@ -1,35 +1,35 @@
 ---
 title: Tipos de dados MIDL
-description: MIDL fornece uma infinidade de tipos de dados e construções de linguagem para a criação de tipos de dados.
+description: O MIDL fornece uma infinidade de tipos de dados e constructos de linguagem para a criação de tipos de dados.
 ms.assetid: 6bc7db39-84c9-4ec5-8ff6-403635663b1b
 keywords:
-- Linguagem IDL da Microsoft MIDL, descrito, tipos de dados
-- MIDL de MIDL, tipos de dados
+- linguagem IDL da Microsoft midl , descritos, tipos de dados
+- MIDL MIDL, tipos de dados
 - tipos de dados MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bf37703c56beec56dec67055272d4ba25d34e6f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 69f8e1e2b747069b9b07b9292932a8134d7f5c7c9c1456fdf63b725ea700a983
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067156"
 ---
 # <a name="midl-data-types"></a>Tipos de dados MIDL
 
-MIDL fornece uma infinidade de tipos de dados e construções de linguagem para a criação de tipos de dados. Ambos são discutidos nos seguintes tópicos:
+O MIDL fornece uma infinidade de tipos de dados e constructos de linguagem para a criação de tipos de dados. Ambos são discutidos nos tópicos a seguir:
 
--   [Tipos base de MIDL](midl-base-types.md)
--   [Matrizes de MIDL](midl-arrays.md)
--   [Definições de tipo de MIDL](midl-type-definitions.md)
--   [Tipos enumerados de MIDL](midl-enumerated-types.md)
+-   [Tipos base MIDL](midl-base-types.md)
+-   [Matrizes MIDL](midl-arrays.md)
+-   [Definições de tipo MIDL](midl-type-definitions.md)
+-   [Tipos enumerados MIDL](midl-enumerated-types.md)
 -   [Estruturas MIDL](midl-structures.md)
--   [Uniões de MIDL](midl-unions.md)
--   [Identificadores de associação de MIDL](midl-binding-handles.md)
+-   [Uniões MIDL](midl-unions.md)
+-   [Alças de associação MIDL](midl-binding-handles.md)
 
- 
+ 
 
- 
+ 
 
 
 

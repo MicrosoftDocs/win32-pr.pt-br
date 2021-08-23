@@ -13,17 +13,17 @@ ms.locfileid: "118550570"
 ---
 # <a name="using-iprovideclassinfo"></a>Usando IProvideClassInfo
 
-Um objeto conectável pode oferecer as interfaces [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) e [**IProvideClassInfo2**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo2) para que seus clientes possam examinar facilmente suas informações de tipo. Esse recurso é importante ao lidar com interfaces de saída, que, por definição, são definidos por um objeto, mas implementados por um cliente em seu próprio objeto Sink. Em alguns casos, uma interface de saída é conhecida em tempo de compilação tanto para o objeto connectável quanto para o objeto Sink; Esse é o caso com [**IPropertyNotifySink**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertynotifysink).
+Um objeto conectável pode oferecer as interfaces [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) e [**IProvideClassInfo2**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo2) para que seus clientes possam examinar facilmente suas informações de tipo. Essa funcionalidade é importante ao lidar com interfaces de saída, que, por definição, são definidas por um objeto, mas implementadas por um cliente em seu próprio objeto de sink. Em alguns casos, uma interface de saída é conhecida no tempo de compilação para o objeto conectável e o objeto de sink; esse é o caso de [**IPropertyNotifySink.**](/windows/desktop/api/OCIdl/nn-ocidl-ipropertynotifysink)
 
-Em outros casos, no entanto, somente o objeto conectável sabe suas definições de interface de saída no momento da compilação. Nesses casos, o cliente deve obter as informações de tipo da interface de saída para que ela possa fornecer dinamicamente um coletor com suporte aos pontos de entrada certos, da seguinte maneira:
+Em outros casos, no entanto, somente o objeto conectável conhece suas definições de interface de saída no tempo de compilação. Nesses casos, o cliente deve obter as informações de tipo para a interface de saída para que ele possa fornecer dinamicamente um sink que dê suporte aos pontos de entrada certos, da seguinte maneira:
 
-1.  O cliente enumera os pontos de conexão e, em seguida, para obter o IIDs de interfaces de saída com suporte do objeto connectável, chama [**IConnectionPoint:: GetConnectionInterface**](/windows/desktop/api/OCIdl/nf-ocidl-iconnectionpoint-getconnectioninterface) para cada ponto de conexão.
-2.  O cliente consulta o objeto que pôde ser conectado para uma das interfaces [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) .
+1.  O cliente enumera os pontos de conexão e, em seguida, para obter os IIDs de interfaces de saída com suporte pelo objeto conectável, chama [**IConnectionPoint::GetConnectionInterface**](/windows/desktop/api/OCIdl/nf-ocidl-iconnectionpoint-getconnectioninterface) para cada ponto de conexão.
+2.  O cliente consulta o objeto conectável para uma das interfaces [**IProvideClassInfo.**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo)
 3.  O cliente chama métodos nas interfaces [**IProvideClassInfo**](/windows/desktop/api/OCIdl/nn-ocidl-iprovideclassinfo) para obter as informações de tipo para a interface de saída.
-4.  O cliente cria um objeto de coletor que dá suporte à interface de saída.
-5.  O processo continua e o cliente chama [**IConnectionPoint:: Advise**](/windows/desktop/api/OCIdl/nf-ocidl-iconnectionpoint-advise) para conectar seu coletor ao ponto de conexão.
+4.  O cliente cria um objeto de sink que dá suporte à interface de saída.
+5.  O processo continua e o cliente chama [**IConnectionPoint::Advise**](/windows/desktop/api/OCIdl/nf-ocidl-iconnectionpoint-advise) para conectar seu sink ao ponto de conexão.
 
-Nas informações de tipo, a [**origem**](/windows/desktop/Midl/source) do atributo marca uma [**interface**](/windows/desktop/Midl/interface) ou [**dispinterface**](/windows/desktop/Midl/dispinterface) listada em uma [**coclass**](/windows/desktop/Midl/coclass) como uma interface de saída. Aqueles listados sem esse atributo são considerados interfaces de entrada.
+Nas informações de tipo, a origem [**do**](/windows/desktop/Midl/source) atributo marca uma [**interface**](/windows/desktop/Midl/interface) ou [**dispinterface**](/windows/desktop/Midl/dispinterface) listada em uma [**coclasse**](/windows/desktop/Midl/coclass) como uma interface de saída. Aqueles listados sem esse atributo são considerados interfaces de entrada.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

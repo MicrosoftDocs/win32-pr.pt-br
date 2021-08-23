@@ -75,7 +75,7 @@ Quando os usuários finais trabalham com tinta, eles geralmente o tratam como ma
 
 Você pode otimizar o tempo geral gasto analisando essas cinco linhas isolando as áreas que são analisadas conforme elas estão sendo escritas e, em seguida, reanalise apenas as partes dos resultados que foram alteradas. Depois que a primeira linha for analisada, ela nunca será reconhecida novamente, a menos que seja modificada pelo usuário final. O reconhecimento da segunda linha é tratado como uma operação de reconhecimento independente.
 
-Essa abordagem incremental funciona bem no nível de linha para as operações de reconhecimento, mas precisa funcionar em um nível mais alto para a operação de análise de tinta. Como o analisador de tinta pode detectar diferentes classificações de nível superior para essas cinco linhas de tinta (por exemplo, pode ser um parágrafo padrão ou cinco itens em uma lista), a abordagem incremental para o analisador de tinta é que ele precisa analisar essas estruturas superiores. Ou seja, depois que o analisador de tinta classifica a primeira linha de tinta como uma linha, ele verifica duas vezes se ainda é uma linha quando classifica a segunda linha. No entanto, o analisador de tinta isola essa verificação dupla no parágrafo e ignora o primeiro parágrafo ao analisar um segundo parágrafo, tratando o segundo parágrafo como uma operação independente do analisador de tinta. Essa abordagem incremental para análise economiza drasticamente o tempo de processamento quando grandes quantidades de tinta já existem no aplicativo.
+Essa abordagem incremental funciona bem no nível de linha para as operações de reconhecimento, mas precisa funcionar em um nível mais alto para a operação de análise de tinta. Como o analisador de tinta pode detectar diferentes classificações de nível superior para essas cinco linhas de tinta (por exemplo, pode ser um parágrafo padrão ou cinco itens em uma lista), a abordagem incremental para o analisador de tinta é que ele precisa analisar essas estruturas superiores. Ou seja, depois que o analisador de tinta classifica a primeira linha de tinta como uma linha, ele verifica duas vezes se ainda é uma linha quando classifica a segunda linha. No entanto, o analisador de tinta isola essa verificação dupla para o parágrafo e ignora o primeiro parágrafo ao analisar um segundo parágrafo, tratando o segundo parágrafo como uma operação independente do analisador de tinta. Essa abordagem incremental para análise economiza drasticamente o tempo de processamento quando grandes quantidades de tinta já existem no aplicativo.
 
 ### <a name="persistence"></a>Persistência
 
@@ -99,22 +99,22 @@ O diagrama a seguir mostra esse processo. O tempo é expresso linearmente de cim
 
 ![processo para reconciliar alterações de estado do documento durante a operação de análise](images/6323e0b5-b6b3-4adc-8c73-da3fad5b4bc2.jpg)
 
-1.  No tempo 1 (T1), o aplicativo está coletando tinta do usuário final, incluindo qualquer tipo de modificação de tinta, como adicionar, remover ou modificar.
-2.  Em T2, o aplicativo invoca a operação de análise em segundo plano. O [**InkAnalyzer**](inkanalyzer.md) determina qual tinta não tem resultados e qual tinta precisa ser verificada duas vezes. Ele copia os dados de tinta necessários para permitir que o thread em segundo plano seja executado de forma independente.
-3.  No T3, o [**InkAnalyzer**](inkanalyzer.md) retorna a execução do thread da interface do usuário para o aplicativo. O **InkAnalyzer** cria um segundo thread, o thread de análise em segundo plano e os mecanismos de análise e reconhecimento de tinta analisam os dados de tinta copiados.
-4.  Enquanto a operação de análise está ocorrendo no segundo thread em segundo plano, o usuário final continua editando o documento, adicionando e removendo dados de traço, em T4 e T5. Essas edições podem entrar em conflito com o trabalho que está sendo processado em segundo plano.
-5.  Em T6, o thread em segundo plano concluiu a operação de análise e os resultados estão prontos. Antes que o [**InkAnalyzer**](inkanalyzer.md) comunique os resultados para o aplicativo, ele executa um algoritmo de reconciliação para determinar se as edições do usuário foram feitas enquanto a operação de análise estava sendo calculada (T4 e T5) em conflito com os resultados. Se qualquer colisão for detectada, os traços conflitantes serão sinalizados para reanálise, que ocorrerá na próxima vez que o aplicativo invocar a operação de análise em segundo plano.
-6.  Por fim, em T7, com todas as colisões detectadas, o [**InkAnalyzer**](inkanalyzer.md) apresenta os resultados para o aplicativo.
+1.  No momento 1 (t1), o aplicativo está coletando tinta do usuário final, incluindo qualquer tipo de modificação de tinta, como adicionar, remover ou modificar.
+2.  Em t2, o aplicativo invoca a operação de análise em segundo plano. O [**InkAnalyzer**](inkanalyzer.md) determina qual tinta não tem resultados e qual tinta precisa ser verificada duas vezes. Ele copia os dados de tinta necessários para permitir que o thread em segundo plano seja executado independentemente.
+3.  Em t3, o [**InkAnalyzer**](inkanalyzer.md) retorna a execução do thread da interface do usuário para o aplicativo. O **InkAnalyzer cria** um segundo thread, o thread de análise em segundo plano e os mecanismos de análise e reconhecimento de tinta analisam os dados de tinta copiados.
+4.  Enquanto a operação de análise está ocorrendo no segundo thread em segundo plano, o usuário final continua editando o documento, adicionando e removendo dados de traço, em t4 e t5. Essas edições podem entrar em conflito com o trabalho que está sendo processado em segundo plano.
+5.  Em t6, o thread em segundo plano concluiu a operação de análise e os resultados estão prontos. Antes que [**o InkAnalyzer**](inkanalyzer.md) comunique os resultados para o aplicativo, ele executa um algoritmo de reconciliação para determinar se as edições feitas pelo usuário enquanto a operação de análise estava sendo calculada (t4 e t5) estão em conflito com os resultados. Se qualquer colisão for detectada, os traços deslizantes serão sinalizados para releição, o que ocorrerá na próxima vez que o aplicativo invocar a operação de análise em segundo plano.
+6.  Por fim, em t7, com todas as colisões detectadas, [**o InkAnalyzer**](inkanalyzer.md) apresenta os resultados para o aplicativo.
 
 ### <a name="extensibility"></a>Extensibilidade
 
-As APIs InkAnalysis permitem que novos tipos de mecanismos de análise sejam usados por aplicativos, de forma a impedir que o aplicativo precise reescrever todos os benefícios da API InkAnalysis, incluindo reconciliação, proxy de dados, persistência e análise incremental.
+As APIs inkAnalysis permitem que novos tipos de mecanismos de análise sejam usados por aplicativos, de modo a impedir que o aplicativo tenha que reescrever todos os benefícios da API inkAnalysis, incluindo reconciliação, proxy de dados, persistência e análise incremental.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Microsoft. Ink](/previous-versions/dotnet/netframework-3.5/ms581553(v=vs.90))
+[Microsoft.Ink](/previous-versions/dotnet/netframework-3.5/ms581553(v=vs.90))
 </dt> <dt>
 
 [Referência de análise de tinta](ink-analysis-reference.md)

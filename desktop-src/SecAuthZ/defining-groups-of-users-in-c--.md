@@ -4,12 +4,12 @@ ms.assetid: 13950da1-b04f-4346-b216-9713cbdcd5b5
 title: Definindo grupos de usuários em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e1b4931d3b35658539284305e98096d7ecfc891
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fde349dcf5a877490d85917247cf7fba3480143d87d92afb1b8eb2017030e71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118914032"
 ---
 # <a name="defining-groups-of-users-in-c"></a>Definindo grupos de usuários em C++
 

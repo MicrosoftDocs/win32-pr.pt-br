@@ -1,7 +1,7 @@
 ---
-description: A \_ \_ estrutura opções de notificação de impressora especifica opções para um objeto de notificação de alteração que monitora uma impressora ou um servidor de impressão.
+description: A estrutura \_ PRINTER NOTIFY OPTIONS especifica opções para um objeto de \_ notificação de alteração que monitora uma impressora ou servidor de impressão.
 ms.assetid: 712c546d-dbb3-4f78-b14e-fbb8619b57f9
-title: Estrutura de PRINTER_NOTIFY_OPTIONS (winspool. h)
+title: PRINTER_NOTIFY_OPTIONS (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118731128"
 ---
-# <a name="printer_notify_options-structure"></a>Estrutura de opções de \_ notificação de impressora \_
+# <a name="printer_notify_options-structure"></a>Estrutura OPÇÕES \_ DE \_ NOTIFICAÇÃO DA IMPRESSORA
 
-A **estrutura \_ \_ Opções** de notificação de impressora especifica opções para um objeto de notificação de alteração que monitora uma impressora ou um servidor de impressão.
+A **estrutura PRINTER NOTIFY \_ \_ OPTIONS** especifica opções para um objeto de notificação de alteração que monitora uma impressora ou servidor de impressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,36 +45,36 @@ typedef struct _PRINTER_NOTIFY_OPTIONS {
 **Versão**
 </dt> <dd>
 
-A versão desta estrutura. Defina esse membro como 2.
+A versão dessa estrutura. De definir esse membro como 2.
 
 </dd> <dt>
 
 **Sinalizadores**
 </dt> <dd>
 
-Um sinalizador de bits. Se você definir o \_ sinalizador de atualização de opções de notificação de impressora \_ \_ em uma chamada para a função [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md) , a função fornecerá dados atuais para todos os campos de informações de impressora monitorados. A função [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) ignora o membro **flags** .
+Um sinalizador de bits. Se você definir o sinalizador PRINTER NOTIFY OPTIONS REFRESH em uma chamada para a função \_ \_ \_ [**FindNextPrinterChangeNotification,**](findnextprinterchangenotification.md) a função fornece dados atuais para todos os campos de informações da impressora monitorada. A [**função FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) ignora o **membro Flags.**
 
 </dd> <dt>
 
 **Count**
 </dt> <dd>
 
-O número de elementos na matriz **pTypes** .
+O número de elementos na matriz **pTypes.**
 
 </dd> <dt>
 
 **pTypes**
 </dt> <dd>
 
-Um ponteiro para uma matriz de [**Opções de notificação de impressora \_ \_ \_ tipo**](printer-notify-options-type.md) estruturas. Use um elemento dessa matriz para especificar os campos de informações da impressora a serem monitorados e um elemento para especificar os campos de informações do trabalho a serem monitorados. Você pode monitorar as informações da impressora, as informações do trabalho ou ambas.
+Um ponteiro para uma matriz de [**estruturas TIPO \_ PRINTER NOTIFY \_ \_ OPTIONS.**](printer-notify-options-type.md) Use um elemento dessa matriz para especificar os campos de informações da impressora a monitorar e um elemento para especificar os campos de informações de trabalho a monitorar. Você pode monitorar informações de impressora, informações de trabalho ou ambos.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Use essa estrutura com a função [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) para especificar o conjunto de campos de informações da impressora ou do trabalho a ser monitorado para alteração.
+Use essa estrutura com a [**função FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) para especificar o conjunto de campos de informações de impressora ou trabalho a ser monitorado quanto à alteração.
 
-Use essa estrutura com a função [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md) para solicitar os dados atuais de todos os campos de impressora e de informações de trabalho monitorados. Nesse caso, o membro **flags** especifica o sinalizador de \_ atualização de opções de notificação de impressora \_ \_ e a função ignora os outros membros da estrutura.
+Use essa estrutura com a [**função FindNextPrinterChangeNotification**](findnextprinterchangenotification.md) para solicitar os dados atuais para todos os campos monitorados de informações de impressora e trabalho. Nesse caso, o **membro Flags** especifica o sinalizador PRINTER NOTIFY OPTIONS REFRESH e a função \_ ignora os outros membros da \_ \_ estrutura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Use essa estrutura com a função [**FindNextPrinterChangeNotification**](findne
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Use essa estrutura com a função [**FindNextPrinterChangeNotification**](findne
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md)
@@ -104,7 +104,7 @@ Use essa estrutura com a função [**FindNextPrinterChangeNotification**](findne
 [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md)
 </dt> <dt>
 
-[**\_tipo de \_ Opções de notificação de impressora \_**](printer-notify-options-type.md)
+[**TIPO DE \_ OPÇÕES \_ DE NOTIFICAÇÃO DE \_ IMPRESSORA**](printer-notify-options-type.md)
 </dt> </dl>
 
  

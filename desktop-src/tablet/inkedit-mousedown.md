@@ -106,7 +106,7 @@ Esse método de evento é definido na interface **\_ IInkEditEvents** . A interf
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 

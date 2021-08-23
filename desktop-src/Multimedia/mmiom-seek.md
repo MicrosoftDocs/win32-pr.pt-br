@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MMIOM_SEEK (mmsystem. h)
-description: A mensagem de busca do MMIOM \_ é enviada a um procedimento de e/s pela função mmioSeek para solicitar que a posição atual do arquivo seja movida.
+title: MMIOM_SEEK mensagem (Mmsystem.h)
+description: A mensagem MMIOM SEEK é enviada a um procedimento de E/S pela função mmioSeek para solicitar que a posição atual do arquivo \_ seja movida.
 ms.assetid: 428b231a-6e00-4458-9ba2-e9b0b028843a
 keywords:
-- Multimídia do Windows de mensagem MMIOM_SEEK
+- MMIOM_SEEK mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4855ec4e610f1456e1bf26ee05800e31933f05fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ea33db15de3a4617561c437f2d5086afbf4bff2155e657677b171b1413b1c96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065296"
 ---
-# <a name="mmiom_seek-message"></a>Mensagem de busca do MMIOM \_
+# <a name="mmiom_seek-message"></a>Mensagem MMIOM \_ SEEK
 
-A mensagem de **\_ busca do MMIOM** é enviada a um procedimento de e/s pela função [**mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) para solicitar que a posição atual do arquivo seja movida.
+A **mensagem MMIOM \_ SEEK** é enviada a um procedimento de E/S pela [**função mmioSeek**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioseek) para solicitar que a posição atual do arquivo seja movida.
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam2 = (LPARAM) lChangeFlag
 <span id="lNewFilePos"></span><span id="lnewfilepos"></span><span id="LNEWFILEPOS"></span>*lNewFilePos*
 </dt> <dd>
 
-Nova posição do arquivo. O significado desse valor é dependente do sinalizador especificado em **lChangeFlag**.
+Nova posição do arquivo. O significado desse valor depende do sinalizador especificado em **lChangeFlag.**
 
 </dd> <dt>
 
@@ -54,9 +54,9 @@ Sinalizador que especifica como a posição do arquivo é alterada. Os seguintes
 
 | Requisito | Valor |
 |-----------|------------------------------------------------------------------------------------------------------------------------|
-| BUSCAR em \_ cur | Mova a posição do arquivo para ser *lNewFilePos* bytes da posição atual. *lNewFilePos* pode ser positivo ou negativo. |
-| fim da busca \_ | Mova a posição do arquivo para ser *lNewFilePos* bytes do final do arquivo.                                             |
-| conjunto de busca \_ | Mova a posição do arquivo para ser *lNewFilePos* bytes do início do arquivo.                                       |
+| BUSCAR \_ CUR | Mova a posição do arquivo para *que seja lNewFilePos* bytes da posição atual. *lNewFilePos* pode ser positivo ou negativo. |
+| FIM DA \_ BUSCA | Mova a posição do arquivo para *que seja lNewFilePos* bytes do final do arquivo.                                             |
+| SEEK \_ SET | Mova a posição do arquivo para *que seja lNewFilePos* bytes do início do arquivo.                                       |
 
 
 
@@ -70,7 +70,7 @@ Retorna a nova posição do arquivo. Se houver um erro, o valor de retorno será
 
 ## <a name="remarks"></a>Comentários
 
-O procedimento de e/s é responsável por manter a posição atual do arquivo no membro **lDiskOffset** da estrutura [**MMIOINFO**](/previous-versions//dd757322(v=vs.85)) .
+O procedimento de E/S é responsável por manter a posição do arquivo atual no **membro lDiskOffset** da [**estrutura MMIOINFO.**](/previous-versions//dd757322(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ O procedimento de e/s é responsável por manter a posição atual do arquivo no
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: c60badd8-4ffc-4e77-aa42-ff12b5ade68f
 title: Sistema. Subject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df82640ea22947656542a51716aa47f3c5c84c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9280fb847279e04474d681a87e0f75a7981762f6da8e63df9f1f99e8d19cecd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095653"
 ---
 # <a name="systemsubject"></a>Sistema. Subject
 

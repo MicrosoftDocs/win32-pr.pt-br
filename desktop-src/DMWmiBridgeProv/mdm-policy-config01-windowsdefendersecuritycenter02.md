@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_Policy_Config01_WindowsDefenderSecurityCenter02
-description: A \_ classe MDM Policy \_ Config01 \_ WindowsDefenderSecurityCenter02 representa as políticas da central de segurança do Windows Defender.
+description: a \_ classe MDM Policy \_ Config01 \_ WindowsDefenderSecurityCenter02 representa as políticas da central de segurança Windows Defender.
 ms.assetid: 406c3992-e9ed-49c5-a4c4-97d91013d416
 keywords:
 - Classe MDM_Policy_Config01_WindowsDefenderSecurityCenter02
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b341eb66cc5d1186a962278babce536c0050523d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77f5a17517c0c6813c6eee0db3cabdc99013abff2c32fe63146797f0440c7815
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164873"
 ---
 # <a name="mdm_policy_config01_windowsdefendersecuritycenter02-class"></a>\_Classe MDM \_ Config01 \_ WindowsDefenderSecurityCenter02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe MDM Policy \_ Config01 \_ WindowsDefenderSecurityCenter02 representa as políticas da central de segurança do Windows Defender.
+a \_ classe MDM Policy \_ Config01 \_ WindowsDefenderSecurityCenter02 representa as políticas da central de segurança Windows Defender.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -257,7 +257,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

@@ -18,12 +18,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b61e65505b8ef55b0fdc2dc9d8f5312e24856602
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fd528bc9a902379591fb6d9587fa66bda9df50ad74cb5e5723f8646a53609a39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118909955"
 ---
 # <a name="winbio_iris-constants"></a>Constantes da íris de WINBIO \_
 
@@ -49,8 +49,8 @@ As seguintes constantes são valores de **\_ \_ subtipo biométrico WINBIO** que
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: ae7edb4e-f362-49c2-83ab-c2b832d279e5
 title: Sistema. Music. letras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1d2911223f74ed2c6bc7ba9eb536db16cde2ed2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bb3b0fcd3a9d53548a781e16254c6e384361da3049e74ae59d61569d1e0d37b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096785"
 ---
 # <a name="systemmusiclyrics"></a>Sistema. Music. letras
 

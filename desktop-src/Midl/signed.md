@@ -1,9 +1,9 @@
 ---
-title: atributo assinado
-description: A palavra-chave signed indica que o bit mais significativo de uma variável de inteiro representa um bit de sinal em vez de um bit de dados.
+title: atributo signed
+description: A palavra-chave signed indica o bit mais significativo de uma variável de inteiro representa um bit de sinal em vez de um bit de dados.
 ms.assetid: 6116089a-647e-485b-8f79-9c9267aa4810
 keywords:
-- MIDL de atributo assinado
+- atributo assinado MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 500b87c849f31082a036d605db0947650e914bed
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 6f3db15bc46d6d8ab3ec108c648d094ebf706d9286a8c4b0a823fa409e118e3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103823102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118641325"
 ---
-# <a name="signed-attribute"></a>atributo assinado
+# <a name="signed-attribute"></a>atributo signed
 
-A palavra-chave **signed** indica que o bit mais significativo de uma variável de inteiro representa um bit de sinal em vez de um bit de dados.
+A **palavra-chave** signed indica o bit mais significativo de uma variável de inteiro representa um bit de sinal em vez de um bit de dados.
 
 ``` syntax
 [[ signed ]] type-qualifier [[ int ]]identifier-name;
@@ -34,57 +34,57 @@ A palavra-chave **signed** indica que o bit mais significativo de uma variável 
 *type-qualifier* 
 </dt> <dd>
 
-Pode ser qualquer [**Char**](char-idl.md), [**WCHAR \_ t**](wchar-t.md), [**Long**](long.md), [**Short**](short.md)e [**Small**](small.md).
+Pode ser qualquer um [**de char**](char-idl.md), [**wchar \_ t**](wchar-t.md), [**long**](long.md), [**short**](short.md)e [**small.**](small.md)
 
 </dd> <dt>
 
-*nome-do-identificador* 
+*identifier-name* 
 </dt> <dd>
 
-Especifica um identificador MIDL válido. Os identificadores MIDL válidos consistem em até 31 caracteres alfanuméricos e/ou de sublinhado e devem começar com um caractere alfabético ou de sublinhado.
+Especifica um identificador MIDL válido. Os identificadores MIDL válidos consistem em até 31 caracteres alfanuméricos e/ou sublinhados e devem começar com um caractere alfabético ou sublinhado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa palavra-chave é opcional e pode ser usada com qualquer um dos tipos de caractere e inteiro [**Char**](char-idl.md), [**WCHAR \_ t**](wchar-t.md), [**Long**](long.md), [**Short**](short.md)e [**Small**](small.md). Opcionalmente, você pode incluir a palavra-chave [**int**](int.md) após os qualificadores de tipo **longo**, **curto** e **pequeno**.
+Essa palavra-chave é opcional e pode ser usada com qualquer um dos tipos de caractere e inteiro [**char**](char-idl.md), [**wchar \_ t**](wchar-t.md), [**long**](long.md), [**short**](short.md)e [**small**](small.md). Opcionalmente, você pode incluir a palavra-chave [**int**](int.md) após os qualificadores de tipo **long,** **short** e **small.**
 
-Quando você usa os tipos [**Char**](char-idl.md), Character e Integer do compilador MIDL que aparecem no arquivo IDL sem palavras-chave de sinal explícitos podem aparecer com as palavras-chave assinadas ou [**não**](unsigned.md) **assinados** no arquivo de cabeçalho gerado. Para evitar confusão, especifique o sinal dos tipos inteiro e de caractere.
+Quando você usa os tipos char [**,**](char-idl.md)character e integer do com opção do compilador MIDL [](unsigned.md) que aparecem no arquivo IDL sem palavras-chave de sinal explícitas podem aparecer com as palavras-chave assinadas ou não assinadas no arquivo de título gerado.  Para evitar confusão, especifique o sinal dos tipos inteiro e caractere.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base MIDL](midl-base-types.md)
 </dt> <dt>
 
-[**/Char**](-char.md)
+[**/char**](-char.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
 [**INT**](int.md)
 </dt> <dt>
 
-[**Longas**](long.md)
+[**long**](long.md)
 </dt> <dt>
 
 [**short**](short.md)
 </dt> <dt>
 
-[**menores**](small.md)
+[**Pequeno**](small.md)
 </dt> <dt>
 
-[**não assinados**](unsigned.md)
+[**Unsigned**](unsigned.md)
 </dt> <dt>
 
-[**WCHAR \_ t**](wchar-t.md)
+[**wchar \_ t**](wchar-t.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c20a4f08040bdb2c71bdd8f09aa657719228efa5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb1d8d747d88a416792d59af79af41c047cb51aa61688aef9d6b105790bbae8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157193"
 ---
 # <a name="cbasestreamcontrol-class"></a>Classe CBaseStreamControl
 
@@ -60,7 +60,7 @@ Certifique-se de substituir **NonDelegatingQueryInteface** para expor **IAMStrea
 Essa classe requer o PIN e o filtro proprietário para notificar a classe quando vários eventos ocorrem, como o filtro ingressando no grafo ou recebendo um novo relógio de referência. Você deve chamar os seguintes métodos de classe:
 
 -   No método [**IMediaFilter:: Setsincronizate**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) do filtro, chame o método [**CBaseStreamControl:: setsincronizate**](cbasestreamcontrol-setsyncsource.md) . Esse método notifica a classe do relógio de referência atual.
--   No método [**CBaseFilter:: JoinFilterGraph**](cbasefilter-joinfiltergraph.md) do filtro, chame o método [**CBaseStreamControl:: SetFilterGraph**](cbasestreamcontrol-setfiltergraph.md) . Esse método fornece à classe um ponteiro para o Gerenciador do grafo de filtro, para que a classe possa enviar os eventos de controle de fluxo corretos.
+-   No método [**CBaseFilter:: JoinFilterGraph**](cbasefilter-joinfiltergraph.md) do filtro, chame o método [**CBaseStreamControl:: SetFilterGraph**](cbasestreamcontrol-setfiltergraph.md) . esse método fornece à classe um ponteiro para o filtro Graph Manager, para que a classe possa enviar os eventos de controle de fluxo corretos.
 -   Sempre que o filtro muda de estado (para em execução, em pausa ou parado), chame o método [**CBaseStreamControl:: NotifyFilterState**](cbasestreamcontrol-notifyfilterstate.md) .
 -   Nos métodos [**IPin:: BeginFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-beginflush) e [**IPin:: EndFlush**](/windows/desktop/api/Strmif/nf-strmif-ipin-endflush) do PIN, chame o método [**CBaseStreamControl:: flush**](cbasestreamcontrol-flushing.md) .
 
@@ -72,7 +72,7 @@ A `CBaseStreamControl` classe usa o relógio de referência do grafo de filtro p
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Strmctl. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Strmctl. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

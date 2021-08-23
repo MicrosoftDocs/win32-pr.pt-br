@@ -3,7 +3,7 @@ title: EM_RECONVERSION mensagem (Richedit.h)
 description: Invoca a caixa de diálogo Reconversão do IME (Editor de Método de Entrada).
 ms.assetid: 1234905f-cbf2-42a3-b14a-5ade25ad9d75
 keywords:
-- EM_RECONVERSION controles Windows mensagem
+- EM_RECONVERSION controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -56,7 +56,7 @@ Essa mensagem sempre retorna zero.
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
 | Redistribuível<br/>          | Rich Edit 3.0<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

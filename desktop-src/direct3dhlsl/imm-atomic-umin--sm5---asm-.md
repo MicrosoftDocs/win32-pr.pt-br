@@ -4,12 +4,12 @@ description: Mínimo não assinado por Atomic para memória. Retorna o valor na 
 ms.assetid: B4556DA0-EE34-4420-A3AE-B340B4B1EB83
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8c65b2b5a58859e0729f567d9575f889b589821
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: ac2575fd12c8de8f09e7c9ec7afc2a9c883db7466d057ca148d3ee63698d7308
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119270"
 ---
 # <a name="imm_atomic_umin-sm5---asm"></a>\_umin atômico \_ do IMM (SM5-ASM)
 
@@ -61,7 +61,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -73,7 +73,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 

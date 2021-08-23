@@ -1,9 +1,9 @@
 ---
-title: Atributo Location (SDK do Windows Media Player)
-description: O atributo Location é o local geográfico da estação de rádio ou \ 0034; NET only \ 0034;.
+title: Atributo Location (Windows Media Player SDK)
+description: O atributo Location é a localização geográfica da estação de rádio ou \ 0034;Net only \ 0034;.
 ms.assetid: fdc0b68b-56a5-4027-a618-6811e7536766
 keywords:
-- Atributo de local Windows Media Player
+- Atributo location Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bc502bc147c160dd8dd65cc1eb3c26bba0b1e1e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b5955a0f638f9d71557736c5c834978710e36f046ff9b66a9f38d4ddd6e2d171
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135219"
 ---
-# <a name="location-attribute"></a>Atributo de localização
+# <a name="location-attribute"></a>Atributo Location
 
-O atributo **Location** é o local geográfico da estação de rádio ou "NET only".
+O **atributo** Location é a localização geográfica da estação de rádio ou "Somente rede".
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,9 +29,9 @@ O atributo **Location** é o local geográfico da estação de rádio ou "NET on
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versão<br/> | Somente Windows Media Player 9 Series<br/> |
+| Versão<br/> | Windows Media Player série 9<br/> |
 
 
 

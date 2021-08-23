@@ -15,7 +15,7 @@ ms.locfileid: "118549483"
 
 A conversão automática ocorre em duas etapas, da seguinte forma:
 
-1.  Durante Windows configuração. A conversão é manipulada pelo processo Windows configuração por meio do utilitário MTSTOCOM.
+1.  Durante Windows configuração. A conversão é tratada pelo processo Windows configuração por meio do utilitário MTSTOCOM.
     > [!Note]  
     > Se a etapa 1 falhar, alguns ou todos os pacotes MTS poderão realmente ter sido convertidos, mas poderão não ter determinadas propriedades. Nesse caso, use a ferramenta administrativa Serviços de Componentes para verificar todos os atributos. Os atributos do MTS ainda estarão presentes no computador (no registro do sistema em HKEY LOCAL MACHINE Microsoft Transaction Server), mas só estarão acessíveis por meio do utilitário \_ \_ \\ \\ regedit.exe.
 

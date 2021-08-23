@@ -98,9 +98,9 @@ A ID de propriedade necessária de uma das propriedades de resumo.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID ISummaryInfo é definido como \_ 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
+| IID<br/>     | IID \_ ISummaryInfo é definido como 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 
 
 

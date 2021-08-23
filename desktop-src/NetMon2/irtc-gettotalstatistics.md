@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 8ed659efe388f4eb9c9ac8afd6aa2c74fd0af7d3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c2b5187ab0afb432e845c74d29144c02edf94cdb62f291ae69e88ea5a5fdf198
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063866"
 ---
 # <a name="irtcgettotalstatistics-method"></a>Método IRTC:: GetTotalStatistics
 
@@ -65,8 +65,8 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 | Código de retorno                                                                                          | Descrição                                                                                                                   |
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. Chame [IRTC:: Connect](irtc-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ não está em \_ tempo real**</dt> </dl>  | O NPP está conectado à rede, mas não com o método [IRTC:: Connect](irtc-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede. chame [IRTC:: Conexão](irtc-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ não está em \_ tempo real**</dt> </dl>  | o NPP está conectado à rede, mas não com o método [IRTC:: Conexão](irtc-connect.md) .<br/>                     |
 | <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl> | O NPP não está capturando dados. Chame [IRTC:: Start](irtc-start.md) para iniciar a captura de dados.<br/>                         |
 
 
@@ -92,14 +92,14 @@ Monitor de Rede também armazena [*Estatísticas de conversa*](c.md). Para recup
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IRTC](irtc.md)
 </dt> <dt>
 
-[IRTC:: conectar](irtc-connect.md)
+[IRTC:: Conexão](irtc-connect.md)
 </dt> <dt>
 
 [IRTC::GetConversationStatistics](irtc-getconversationstatistics.md)

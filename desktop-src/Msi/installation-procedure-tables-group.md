@@ -4,12 +4,12 @@ ms.assetid: dff7cf4a-89a2-47b0-9038-93b79c0d915a
 title: Grupo de tabelas de procedimento de instalação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbb3c5eb0306941d3cdd02bf7f994270ca0d6490
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98c66cc377fdf36969699f0e150fc30a02363ed24aa1848c4492917bffda7bc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118633581"
 ---
 # <a name="installation-procedure-tables-group"></a>Grupo de tabelas de procedimento de instalação
 
@@ -31,7 +31,7 @@ A [tabela CustomAction](customaction-table.md) fornece os meios de integrar cód
 As tabelas a seguir estendem os recursos do instalador para manipular arquivos e pastas durante a instalação.
 
 -   A [tabela RemoveFile](removefile-table.md) contém uma lista de arquivos que são removidos durante a instalação.
--   A [tabela RemoveIniFile](removeinifile-table.md) contém as informações que um aplicativo precisa remover dos arquivos. ini.
+-   A [tabela RemoveIniFile](removeinifile-table.md) contém as informações que um aplicativo precisa remover de .ini arquivos.
 -   A [tabela RemoveRegistry](removeregistry-table.md) contém as informações que são excluídas do registro do sistema quando o componente correspondente é selecionado para ser instalado.
 -   A [tabela CreateFolder](createfolder-table.md) lista as pastas que devem ser criadas durante a instalação. Embora o instalador Crie pastas conforme necessário, elas são removidas assim que estiverem vazias. A lista de pastas na tabela CreateFolder não é excluída até que o componente seja desinstalado.
 -   A [tabela MoveFile](movefile-table.md) contém uma lista de arquivos a serem movidos ou copiados de um diretório de origem especificado no computador do usuário para um diretório de destino. Não é necessário usar a tabela MoveFile para descrever os arquivos associados aos componentes que você está instalando.

@@ -3,7 +3,7 @@ title: Mensagem de TBM_SETBUDDY (commctrl. h)
 description: Atribui uma janela como a janela Buddy para um controle TrackBar. As janelas TrackBar Buddy são exibidas automaticamente em um local em relação à orientação do controle (horizontal ou vertical).
 ms.assetid: ab35911f-bf81-47f3-98aa-0901aa877dea
 keywords:
-- Controles de TBM_SETBUDDY de mensagens do Windows
+- controles de Windows de mensagem de TBM_SETBUDDY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab33e53117933390d7a34ec75a49724003255108
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4f2586c84740cb2d5e8b1f1aadfb910cd241270d3e18363accf1f166c3c35ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167182"
 ---
 # <a name="tbm_setbuddy-message"></a>Mensagem do TBM \_ SETbuddy
 
@@ -54,7 +54,7 @@ Manipule para a janela que será definida como o colega do controle TrackBar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para a janela que foi atribuída anteriormente ao controle nesse local.
 
@@ -71,9 +71,9 @@ Retorna o identificador para a janela que foi atribuída anteriormente ao contro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

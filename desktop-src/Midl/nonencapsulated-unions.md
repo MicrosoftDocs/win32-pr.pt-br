@@ -6,12 +6,12 @@ keywords:
 - tipos de dados MIDL, uniões não encapsuladas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c69cc4fc06a217fc3dc5dff405bf87268de91c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dab3daee6a4115ebdf53b3ff0133f8d05bc2a6f0325dcc6a04d324f48eeceb17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105752469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066896"
 ---
 # <a name="nonencapsulated-unions"></a>Uniões não encapsuladas
 
@@ -23,9 +23,9 @@ A forma de uniões deve ser a mesma entre plataformas para garantir a interconec
 
 Para obter mais informações, consulte [uniões encapsuladas](encapsulated-unions.md), [**Union**](union.md), **\[** [**switch \_**](switch-is.md) **\]** e **\[** [**\_ Type switch**](switch-type.md) **\]** .
 
- 
+ 
 
- 
+ 
 
 
 

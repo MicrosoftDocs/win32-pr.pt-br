@@ -1,9 +1,9 @@
 ---
-title: Round (Corecrt \_ Math. h)
-description: Arredonda o valor especificado para o número inteiro mais próximo.
+title: round (Corecrt \_ math.h)
+description: Arredoda o valor especificado para o inteiro mais próximo.
 ms.assetid: 258ce717-dca1-4ed2-ad98-1ecfdb58f939
 keywords:
-- arredondar HLSL
+- round HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f00bf845dfe16a92729b523fba62f6fd6dcde2b5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3997e93dbbe7cfda210fea97a2759620f0afb47638d2ec519b9ad56abe3664c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513828"
 ---
 # <a name="round"></a>round
 
-Arredonda o valor especificado para o número inteiro mais próximo. Os casos intermediários são arredondados para o mais próximo mesmo.
+Arredoda o valor especificado para o inteiro mais próximo. Os casos na metade são arredondados para o mais próximo.
 
 
 
-| *ida e* volta (*x*) |
+| *ret* round(*x*) |
 |------------------|
 
 
@@ -40,7 +40,7 @@ Arredonda o valor especificado para o número inteiro mais próximo. Os casos in
 
 | Item                                                   | Descrição                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado.<br/> |
 
 
 
@@ -48,31 +48,31 @@ Arredonda o valor especificado para o número inteiro mais próximo. Os casos in
 
 ## <a name="return-value"></a>Valor Retornado
 
-O parâmetro *x* , arredondado para o número inteiro mais próximo dentro de um tipo de ponto flutuante.
+O *parâmetro x,* arredondado para o inteiro mais próximo dentro de um tipo de ponto flutuante.
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões como entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | mesmo que a entrada *x*                                                                                              | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões que a entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim                 |
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sim ( \_ apenas vs 1 \_ 1) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim                 |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sim (somente \_ versus \_ 1 1) |
 
 
 
@@ -84,7 +84,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 

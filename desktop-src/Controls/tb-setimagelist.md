@@ -3,7 +3,7 @@ title: Mensagem de TB_SETIMAGELIST (commctrl. h)
 description: Define a lista de imagens que a barra de ferramentas usa para exibir botões que estão em seu estado padrão.
 ms.assetid: 432ffdfc-bb63-4405-90da-9392910fdbb6
 keywords:
-- Controles de TB_SETIMAGELIST de mensagens do Windows
+- controles de Windows de mensagem de TB_SETIMAGELIST
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb0b7ad631e8b56824ae65a2b262c5478611e75f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6a7110084f2abe39cbae51815d1e59972cb016ea267275f0481d21e1f8b908a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167456"
 ---
 # <a name="tb_setimagelist-message"></a>Mensagem de TB \_ SETimagelist
 
@@ -43,7 +43,7 @@ Identificador para a lista de imagens a ser definida. Se esse parâmetro for **n
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para a lista de imagens usada anteriormente para exibir botões em seu estado padrão, ou **NULL** se nenhuma lista de imagens tiver sido definida anteriormente.
 
@@ -107,9 +107,9 @@ Por fim, os botões são adicionados ao controle barra de ferramentas com uma me
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

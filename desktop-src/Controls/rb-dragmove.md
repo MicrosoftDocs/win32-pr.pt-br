@@ -55,7 +55,7 @@ O valor de retorno para essa mensagem não é usado.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

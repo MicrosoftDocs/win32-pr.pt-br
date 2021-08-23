@@ -1,11 +1,11 @@
 ---
 title: Product-Code atributo
-description: Esse atributo contém um identificador exclusivo para um aplicativo para uma versão de produto específica, representado como um GUID de cadeia de caracteres, por exemplo \ 0034; 12345678-1234-1234-1234-123456789012 \ 0034;.
+description: Esse atributo contém um identificador exclusivo para um aplicativo para uma versão específica do produto, representado como um GUID de cadeia de caracteres, por exemplo, \ 0034; 12345678-1234-1234-1234-123456789012 \ 0034;.
 ms.assetid: 1fb50a4c-1a6a-4231-a6b2-92f6bc4a1ead
 ms.tgt_platform: multiple
 keywords:
-- Product-Code atributo AD Schema
-- Esquema do AD do atributo productCode
+- Esquema de Product-Code do atributo AD
+- Esquema de AD do atributo productCode
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118681744"
 ---
 # <a name="product-code-attribute"></a>Product-Code atributo
 
-Esse atributo contém um identificador exclusivo para um aplicativo para uma versão de produto específica, representado como um GUID de cadeia de caracteres, por exemplo " {12345678-1234-1234-1234-123456789012} ". As letras usadas neste GUID devem estar em letras maiúsculas. Essa ID deve variar para diferentes versões e idiomas.
+Esse atributo contém um identificador exclusivo para um aplicativo para uma versão específica do produto, representado como um GUID de cadeia de caracteres, por exemplo " {12345678-1234-1234-1234-123456789012} ". As letras usadas neste GUID devem estar em letras maiúsculas. Essa ID deve variar para diferentes versões e idiomas.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Product-Code                                          |
-| Ldap-Display-Name | productCode                                           |
+| LDAP-Display-Name | productCode                                           |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.818                                |
-| System-Id-Guid    | d9e18317-8939-11d1-aebc-0000f80367c1                  |
-| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | d9e18317-8939-11d1-aebc-0000f80367c1                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ Esse atributo contém um identificador exclusivo para um aplicativo para uma ver
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No Catálogo Global      | Falso                                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
+| No catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -79,10 +79,10 @@ Esse atributo contém um identificador exclusivo para um aplicativo para uma ver
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No Catálogo Global      | Falso                                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
+| No catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -100,10 +100,10 @@ Esse atributo contém um identificador exclusivo para um aplicativo para uma ver
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No Catálogo Global      | Falso                                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
+| No catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -121,10 +121,10 @@ Esse atributo contém um identificador exclusivo para um aplicativo para uma ver
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No Catálogo Global      | Falso                                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
+| No catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -142,10 +142,10 @@ Esse atributo contém um identificador exclusivo para um aplicativo para uma ver
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No Catálogo Global      | Falso                                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
+| No catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
@@ -163,10 +163,10 @@ Esse atributo contém um identificador exclusivo para um aplicativo para uma ver
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| Tem valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
-| No Catálogo Global      | Falso                                                            |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
+| No catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
 | Range-Lower            | 0                                                                |
 | Range-Upper            | 16                                                               |
 | Search-Flags           | 0x00000000                                                       |
