@@ -4,12 +4,12 @@ ms.assetid: c85f5994-8005-48c9-8a05-0316f48f4142
 title: Atributo MF_SOURCE_READER_DISCONNECT_MEDIASOURCE_ON_SHUTDOWN (Mfreadwrite. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7a9474e7fb19bb6531baf31a97238bbe6b10e46
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 323340a0b95fd6f52d4ac7e8db2e9ff53bf70edb30442369f1ffd8f2f2c55fa1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663886"
 ---
 # <a name="mf_source_reader_disconnect_mediasource_on_shutdown-attribute"></a>\_ \_ \_ Arquivo de desconexão \_ do leitor \_ de origem MF no \_ atributo de desligamento
 
@@ -41,9 +41,9 @@ Se o aplicativo criar o leitor de origem de uma URL ou de um fluxo de bytes, o l
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
 
 
 

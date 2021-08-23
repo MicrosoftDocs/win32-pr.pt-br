@@ -4,12 +4,12 @@ description: A agregação é o mecanismo de reutilização de objeto no qual o 
 ms.assetid: 6845b114-8f43-47ad-acdf-b63d6008d221
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a4f11f69f5d7b14047a8138cba93bd503b645a3
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 4855b1fa3a614d190b8f192aeee2e7cf3d3d53bbdce589a1363e0398f70430c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104294526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731716"
 ---
 # <a name="aggregation"></a>Agregação
 
@@ -137,7 +137,7 @@ Ao desenvolver um objeto aggregable, as seguintes regras se aplicam:
 
 -   Ao criar o objeto interno, o objeto externo deve solicitar explicitamente seu [**IUnknown**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown).
 -   O objeto externo deve proteger sua implementação de [**versão**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) da reentrância com uma contagem de referência artificial em volta de seu código de destruição.
--   O objeto externo deve chamar seu método de liberação **de controle de** [**versão**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) , caso ele consulte um ponteiro para qualquer uma das interfaces do objeto interno. Para liberar esse ponteiro, o objeto externo chama seu método  [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) de controle IUnknown, seguido por **Release** no ponteiro do objeto interno.
+-   O objeto externo deve chamar seu método de liberação **de controle de** [**versão**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) , caso ele consulte um ponteiro para qualquer uma das interfaces do objeto interno. Para liberar esse ponteiro, o objeto externo chama seu método  [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) de controle IUnknown, seguido por **Release** no ponteiro do objeto interno.
     ```C++
     // Obtaining inner object interface pointer 
     pUnkInner->QueryInterface(IID_ISomeInterface, &pISomeInterface); 
@@ -160,6 +160,6 @@ Ao desenvolver um objeto aggregable, as seguintes regras se aplicam:
 [Contenção/delegação](containment-delegation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

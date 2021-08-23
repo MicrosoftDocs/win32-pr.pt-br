@@ -4,12 +4,12 @@ description: Amostras de dados do elemento/textura especificado usando o endere√
 ms.assetid: D285F63E-1026-45F1-9959-6F5AB2A27C95
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5acd83d81e4648cc9eae5f8e0166013dcca512a8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: dbd65be095476cdac16ee95009994041af0b1812101b1d0d0b9a33a315ed58d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671806"
 ---
 # <a name="sample_l-sm4---asm"></a>exemplo \_ l (sm4-ASM)
 

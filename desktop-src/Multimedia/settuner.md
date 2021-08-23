@@ -1,9 +1,9 @@
 ---
-title: comando setajuster
-description: O comando setajustarr altera o sintonizador atual ou a configuração de canal do sintonizador atual. Os dispositivos VCR reconhecem este comando.
+title: Comando settuner
+description: O comando settuner altera o ajuste atual ou a configuração de canal do ajuste atual. Os dispositivos VCR reconhecem esse comando.
 ms.assetid: 76d05210-3c2a-4d00-b3eb-c912c1deabf7
 keywords:
-- Multimídia do Windows do comando setajuster
+- Comando settuner Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51150043a68f3cd34525eb74a64237fc4dc150e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7075de6ed50c49773a502ba77e093d84e85b079a6b17c462ea8ee65ad1330aa6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688787"
 ---
-# <a name="settuner-command"></a>comando setajuster
+# <a name="settuner-command"></a>Comando settuner
 
-O comando setajustarr altera o sintonizador atual ou a configuração de canal do sintonizador atual. Os dispositivos VCR reconhecem este comando.
+O comando settuner altera o ajuste atual ou a configuração de canal do ajuste atual. Os dispositivos VCR reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -55,10 +55,10 @@ Um dos sinalizadores a seguir.
 
 | Valor                            | Significado                                                                                                                                                                                                                                                                                                     |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *canal* de canal                | Define o sintonizador como *canal*. Talvez você não consiga alterar o canal durante a gravação, dependendo do VCR. Um canal maior do que o máximo define o sintonizador para o canal máximo.                                                                                                                    |
-| busca de upchannel de busca de canal | Procura o próximo canal com um sinal válido. "Procurar" incrementa o número de canal em sua pesquisa. "Busca inativa" Decrementa o número do canal em sua pesquisa. O sintonizador encapsula para o canal 1 quando o número máximo do canal é excedido. Da mesma forma, ao procurar, o sintonizador é ajustado para o canal máximo. |
-| upchannel do canal inativo           | Incrementa ou Decrementa o canal do sintonizador. Talvez você não consiga alterar o canal durante a gravação, dependendo do VCR. O sintonizador encapsula para o canal 1 quando o número máximo do canal é excedido. Da mesma forma, ao procurar, o sintonizador é ajustado para o canal máximo.                              |
-| *número* de número                  | Especifica o sintonizador a ser afetado pelo comando setajuster. Se *núm* não for fornecido, o valor padrão de 1 será assumido.                                                                                                                                                                                    |
+| canal                 | Define o ajuste como *canal*. Talvez você não consiga alterar o canal durante a gravação, dependendo do VCR. Um canal maior que o máximo define o ajuste para o canal máximo.                                                                                                                    |
+| channel seek upchannel seek down | Busca o próximo canal com um sinal válido. "Buscar para cima" incrementa o número do canal em sua pesquisa. "Buscar para baixo" diminui o número do canal em sua pesquisa. O ajuste é fechado para o canal 1 quando o número máximo do canal é excedido. Da mesma forma, ao buscar para baixo, o ajuste é fechado para o canal máximo. |
+| canal upchannel para baixo           | Incrementa ou diminui o canal do ajuste. Talvez você não consiga alterar o canal durante a gravação, dependendo do VCR. O ajuste é fechado para o canal 1 quando o número máximo do canal é excedido. Da mesma forma, ao buscar para baixo, o ajuste é fechado para o canal máximo.                              |
+| número *do número*                  | Especifica o ajuste a ser afetado pelo comando settuner. Se *number* não for determinado, o valor padrão de 1 será assumido.                                                                                                                                                                                    |
 
 
 
@@ -69,13 +69,13 @@ Um dos sinalizadores a seguir.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "Notify", "Test" ou uma combinação desses. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify", "test" ou uma combinação deles. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,7 +92,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

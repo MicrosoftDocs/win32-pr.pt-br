@@ -1,5 +1,5 @@
 ---
-description: Cria um Delta entre o arquivo de origem especificado e o arquivo de destino especificado.
+description: Cria um delta entre o arquivo de origem especificado e o arquivo de destino especificado.
 title: Função CreatePatchFileExA/W
 ms.topic: reference
 ms.date: 04/17/2020
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - mspatchc.dll
-ms.openlocfilehash: c84be2d859a780e46e7e940aa4a7e7da5296f0e7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d73b6f4d10c52e9eca147227fdbfece31cba157af84fdf56dbef5cacda516b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690866"
 ---
 # <a name="createpatchfileexaw-function"></a>Função CreatePatchFileExA/W
 
-As funções **CreatePatchFileExA** e **CreatePatchFileExW** criam um Delta entre o arquivo de origem especificado e o arquivo de destino especificado. Os arquivos de origem e de destino são fornecidos como caminhos. O Delta de saída também é gravado em um caminho fornecido. Essas funções fornecem relatórios de andamento durante o processo de criação.
+As **funções CreatePatchFileExA** e **CreatePatchFileExW** criam um delta entre o arquivo de origem especificado e o arquivo de destino especificado. Os arquivos de origem e de destino são fornecidos como caminhos. O delta de saída também é gravado em um caminho fornecido. Essas funções fornecem relatórios de progresso durante o processo de criação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,13 +62,13 @@ O número total de arquivos de origem. Usado para criar deltas em vários arquiv
 
 Ponteiro para a matriz de informações do arquivo de origem.
 
-*NewFilename*
+*NewFileName*
 
 O nome do arquivo de destino.
 
 *PatchFileName*
 
-O nome do Delta que é criado.
+O nome do delta que é criado.
 
 *OptionFlags*
 
@@ -76,21 +76,21 @@ Sinalizadores de criação.
 
 *ProgressCallback*
 
-Ponteiro para retorno de chamada de progresso definido pelo aplicativo.
+Ponteiro para o retorno de chamada de progresso definido pelo aplicativo.
 
 *CallbackContext*
 
 Ponteiro para contexto definido pelo aplicativo.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa função retornará **true** se tiver sucesso; caso contrário, retornará **false**.
+Essa função **retornará TRUE** se for bem-sucedida; caso contrário, retornará **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |----------------|---------------------------------------------------------------------------------------|
-| parâmetro | patchapi. h |
+| parâmetro | patchapi.h |
 | DLL | mspatchc.dll |
 | Unicode | Implementado como CreatePatchFileExW (Unicode) e CreatePatchFileExA (ANSI) |
 

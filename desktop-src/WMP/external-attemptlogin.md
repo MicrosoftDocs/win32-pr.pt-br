@@ -3,9 +3,9 @@ title: Método external. attemptLogin
 description: O método attemptLogin exibe uma caixa de diálogo para que o usuário possa tentar fazer logon na loja online.
 ms.assetid: 04fe476f-6d0e-4faa-9e4a-f87bed782205
 keywords:
-- método attemptLogin Windows Media Player
+- Windows Media Player do método attemptLogin
 - método attemptLogin Windows Media Player, classe externa
-- Classe externa Windows Media Player, método attemptLogin
+- classe externa Windows Media Player, método attemptLogin
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86958c241f2399efbe342371b8cd4cfd376ff628
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7f967e812ff76dd11dfd9b4ff07a542d2575548519c3a52816fadf6302a719d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649536"
 ---
 # <a name="externalattemptlogin-method"></a>Método external. attemptLogin
 
@@ -40,13 +40,13 @@ External.attemptLogin()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se a tentativa de logon resultar em uma alteração de status de logon, o Windows Media Player gerará o evento [OnLoginChange](external-onloginchange-event.md) .
+se a tentativa de logon resultar em uma alteração de status de logon, Windows Media Player gerará o evento [OnLoginChange](external-onloginchange-event.md) .
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,12 +1,12 @@
 ---
-title: Método WSMan. SessionFlagUseCredSsp (WSManDisp. h)
-description: Retorna o valor do sinalizador de autenticação WSManFlagUseCredSsp para uso no parâmetro flags do método WSMan. CreateSession.
+title: Método WSMan.SessionFlagUseCredSsp (WSManDisp.h)
+description: Retorna o valor do sinalizador de autenticação WSManFlagUseCredSsp para uso no parâmetro flags do método WSMan.CreateSession.
 ms.assetid: bb167445-91d6-4e06-a976-bf869320784a
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows do método SessionFlagUseCredSsp
-- Método SessionFlagUseCredSsp Gerenciamento Remoto do Windows, objeto WSMan
-- Gerenciamento Remoto do Windows de objeto WSMan, método SessionFlagUseCredSsp
+- Método SessionFlagUseCredSsp Windows Gerenciamento Remoto
+- Método SessionFlagUseCredSsp Windows Gerenciamento Remoto , objeto WSMan
+- Objeto WSMan Windows Gerenciamento Remoto, Método SessionFlagUseCredSsp
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed5dfbaba3e705f100cdd373e194174f4654a7d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 27eb96f1de72bbcceafd40c0ccbcfdd3b990ed2134739195bd29e130dbac5a64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642226"
 ---
-# <a name="wsmansessionflagusecredssp-method"></a>Método WSMan. SessionFlagUseCredSsp
+# <a name="wsmansessionflagusecredssp-method"></a>Método WSMan.SessionFlagUseCredSsp
 
-Retorna o valor do sinalizador de autenticação **WSManFlagUseCredSsp** para uso no parâmetro *flags* do método [**WSMan. CreateSession**](wsman-createsession.md) . Esse método fornece uma sintaxe mais eficiente para usar a constante para que os scripts não sejam necessários para definir um valor constante. Para obter mais informações sobre como chamar esse método, consulte [constantes de sessão](session-constants.md).
+Retorna o valor do sinalizador de autenticação **WSManFlagUseCredSsp** para uso no parâmetro *flags* do [**método WSMan.CreateSession.**](wsman-createsession.md) Esse método fornece uma sintaxe mais eficiente para usar a constante para que os scripts não sejam necessários para definir um valor constante. Para obter mais informações sobre como chamar esse método, consulte [Constantes de sessão](session-constants.md).
 
-**WSManFlagUseCredSsp** é uma constante na enumeração **\_ \_ WSManSessionFlags** . Para obter mais informações, consulte [constantes de autenticação](authentication-constants.md).
+**WSManFlagUseCredSsp** é uma constante na enumeração **\_ \_ WSManSessionFlags.** Para obter mais informações, consulte [Constantes de autenticação](authentication-constants.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,16 +45,16 @@ WSMan.SessionFlagUseCredSsp( _
 
 <dl> <dt>
 
-*sinalizadores* \[ de fora\]
+*sinalizadores* \[ out\]
 </dt> <dd>
 
 O valor da constante.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 | Cliente mínimo com suporte<br/> | Windows 7<br/>                                                                                                        |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                                                           |
 | Redistribuível<br/>          | Windows Management Framework no Windows Server 2008 com SP2, Windows Vista com SP1 e Windows Vista com SP2<br/> |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>                                      |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl>                                    |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>                                      |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl>                                    |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl>                                    |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>                                      |
 
 
@@ -76,10 +76,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**WSMan**](wsman.md)
+[**Wsman**](wsman.md)
 </dt> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

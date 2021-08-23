@@ -1,11 +1,11 @@
 ---
-title: Atributo de ID de máquina
-description: A ID do computador em que um objeto link-Track-Vol-entry está localizado.
+title: Atributo Curr-Machine-Id
+description: A ID do computador em que um objeto Link-Track-Vol-Entry está localizado.
 ms.assetid: 6e957744-c778-4112-8308-e9d1a3e01f56
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo de ID de máquina
-- Esquema de AD do atributo currMachineId
+- Esquema do AD do atributo Curr-Machine-Id
+- Esquema do AD do atributo currMachineId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d32b9a9f1e633e5041c3524fe79df5e4b4b26950
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 61c7820ab81f3c5f65fc70738d663bb69d2116e250c854c4a51582898c377d1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706636"
 ---
-# <a name="curr-machine-id-attribute"></a>Atributo de ID de máquina
+# <a name="curr-machine-id-attribute"></a>Atributo Curr-Machine-Id
 
-A ID do computador em que um objeto link-Track-Vol-entry está localizado.
+A ID do computador em que um objeto Link-Track-Vol-Entry está localizado.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | ID da máquina                                       |
-| LDAP-Display-Name | currMachineId                                         |
+| CN                | Curr-Machine-Id                                       |
+| Ldap-Display-Name | currMachineId                                         |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.337                                |
-| System-ID-GUID    | 1f0075fe-7e40-11d0-afd6-00c04fd930c9                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1f0075fe-7e40-11d0-afd6-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ A ID do computador em que um objeto link-Track-Vol-entry está localizado.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 16                                                             |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A ID do computador em que um objeto link-Track-Vol-entry está localizado.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 16                                                             |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ A ID do computador em que um objeto link-Track-Vol-entry está localizado.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 16                                                             |
 | Range-Upper            | 16                                                             |
 | Search-Flags           | 0x00000000                                                     |
@@ -121,7 +121,7 @@ A ID do computador em que um objeto link-Track-Vol-entry está localizado.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -142,7 +142,7 @@ A ID do computador em que um objeto link-Track-Vol-entry está localizado.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -163,7 +163,7 @@ A ID do computador em que um objeto link-Track-Vol-entry está localizado.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |

@@ -1,9 +1,9 @@
 ---
-title: VIDEOSETTINGS. matiz
-description: O atributo matiz especifica ou recupera a configuração de matiz do vídeo.
+title: VIDEOSETTINGS.hue
+description: O atributo hue especifica ou recupera a configuração de matiz do vídeo.
 ms.assetid: b965b05c-6ffc-44bd-8761-366350ff14e3
 keywords:
-- VIDEOSETTINGS. matiz Windows Media Player
+- VIDEOSETTINGS.hue Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8df6e379183693bc072a7b7fccad0954fd6bcb75
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5ca3a5613ff348b6ef725a772f54a527997c7db8b772202ad2085687799ca8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615496"
 ---
-# <a name="videosettingshue"></a>VIDEOSETTINGS. matiz
+# <a name="videosettingshue"></a>VIDEOSETTINGS.hue
 
-O atributo **matiz** especifica ou recupera a configuração de matiz do vídeo.
+O **atributo hue** especifica ou recupera a configuração de matiz do vídeo.
 
 ``` syntax
         elementID.hue
@@ -29,7 +29,7 @@ O atributo **matiz** especifica ou recupera a configuração de matiz do vídeo.
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**) com um valor que varia de-127 a + 127 e um valor padrão de 0.
+Esse atributo é um número de leitura/gravação **(** **longo**) com um valor que varia de -127 a +127 e um valor padrão de 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um **número** de leitura/gravação (**longo**) com um valor q
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------|
-| Versão<br/> | Versão do Windows Media Player para Windows XP ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão do Windows XP ou posterior<br/> |
 
 
 

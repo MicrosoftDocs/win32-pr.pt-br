@@ -1,11 +1,11 @@
 ---
-title: DNS-permitir-atributo dinâmico
-description: O atributo DNS-Allow-Dynamic não está sendo usado no momento.
+title: Atributo Dns-Allow-Dynamic
+description: O atributo Dns-Allow-Dynamic não é usado no momento.
 ms.assetid: a81383dd-0e5b-4423-b140-33071cf80159
 ms.tgt_platform: multiple
 keywords:
-- DNS-Allow-esquema de atributo dinâmico do AD
-- Esquema de AD do atributo dnsAllowDynamic
+- Esquema do AD do atributo DNS-Allow-Dynamic
+- Esquema do AD do atributo dnsAllowDynamic
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a805f997f9dc87de1748718fe7099c42b03f56a7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 86ff03bff6cf61ae9d2737b4c8332337d1db3cc2255e6d7bb1ad34370d0a68c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706286"
 ---
-# <a name="dns-allow-dynamic-attribute"></a>DNS-permitir-atributo dinâmico
+# <a name="dns-allow-dynamic-attribute"></a>Atributo Dns-Allow-Dynamic
 
-O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
+O **atributo Dns-Allow-Dynamic** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | DNS-permitir-dinâmico                    |
-| LDAP-Display-Name | dnsAllowDynamic                      |
+| CN                | Dns-Allow-Dynamic                    |
+| Ldap-Display-Name | dnsAllowDynamic                      |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.378               |
-| System-ID-GUID    | e0fa1e65-9b45-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | e0fa1e65-9b45-11d0-afdd-00c04fd930c9 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,10 +58,10 @@ O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -79,10 +79,10 @@ O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -100,10 +100,10 @@ O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| Tem valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -121,7 +121,7 @@ O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
@@ -142,7 +142,7 @@ O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
@@ -163,7 +163,7 @@ O atributo **DNS-Allow-Dynamic** não está sendo usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

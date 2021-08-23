@@ -4,12 +4,12 @@ ms.assetid: 118154BD-62DD-4592-B047-3F9FDED85256
 title: Propriedades de IAzRoleDefinition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e29bdebda22a7e3c98bb2fac52386fec2a5ce9df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ac70cad6ba313a5c0900538aacb4fdb051f95fe2368f5187d396209f3eb397b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671248"
 ---
 # <a name="iazroledefinition-properties"></a>Propriedades de IAzRoleDefinition
 

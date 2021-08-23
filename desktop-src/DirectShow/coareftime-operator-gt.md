@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7c796bd5194c5bdb2dcbe260b803274962f81347
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd2da8b95345813682994f18a444f090c65c1f906219afb9a64bf5584679b194
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652186"
 ---
 # <a name="coareftimeoperator-method"></a>Método de>. Operator COARefTime
 
@@ -49,7 +49,7 @@ Referência ao objeto **COARefTime** a ser comparado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se esse objeto for estritamente maior que *RT*. Caso contrário, retornará **false**.
 
@@ -59,7 +59,7 @@ Retornará **true** se esse objeto for estritamente maior que *RT*. Caso contrá
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

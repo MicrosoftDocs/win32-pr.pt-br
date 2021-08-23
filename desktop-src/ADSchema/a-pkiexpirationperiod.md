@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6553bbeb23c6b810c5fcb7b82a4ffdee0f303ee2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0b25a2cb65aaa835f124eb7c5441afec40a8127bec1f84f0199e24e317468a63
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647716"
 ---
 # <a name="pki-expiration-period-attribute"></a>Atributo PKI-Expiration-period
 
@@ -58,9 +58,9 @@ O período de validade do modelo de certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -79,9 +79,9 @@ O período de validade do modelo de certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -100,9 +100,9 @@ O período de validade do modelo de certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -121,9 +121,9 @@ O período de validade do modelo de certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -142,9 +142,9 @@ O período de validade do modelo de certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -163,9 +163,9 @@ O período de validade do modelo de certificado.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |

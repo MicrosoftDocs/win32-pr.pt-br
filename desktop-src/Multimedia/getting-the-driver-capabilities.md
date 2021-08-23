@@ -1,21 +1,21 @@
 ---
-title: Obtendo os recursos do driver
-description: Obtendo os recursos do driver
+title: Obter as funcionalidades do driver
+description: Obter as funcionalidades do driver
 ms.assetid: 761886db-b2e5-449c-b526-6e992cc1b42f
 keywords:
-- joysticks, drivers
+- drivers,drivers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1b9f4d54e80dc589a4c730ef891d8f0bd132e52
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bd5bd178b1658ccecd9af26e6729fc00beab95b55fb4c8189feeada92c029d5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691306"
 ---
-# <a name="getting-the-driver-capabilities"></a>Obtendo os recursos do driver
+# <a name="getting-the-driver-capabilities"></a>Obter as funcionalidades do driver
 
-O exemplo a seguir usa [**joyGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs) e [**joyGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) para determinar se os serviços de joystick estão disponíveis e se um joystick está conectado a uma das portas.
+O exemplo a seguir [**usa ogetGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs) e [**ogetGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) para determinar se os serviços do Joystick estão disponíveis e se um conector está anexado a uma das portas.
 
 
 ```C++
@@ -37,6 +37,6 @@ BOOL bDev1Attached, bDev2Attached;
 
 
 
- 
+ 
 
- 
+ 

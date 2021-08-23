@@ -1,35 +1,35 @@
 ---
-description: Especifica o carimbo de data/hora para a etapa de quadro mais recente.
+description: Especifica o carimbo de data/hora da etapa de quadro mais recente.
 ms.assetid: 2c2ef8b8-7bee-4cd8-ad87-b48d6a48aa0e
-title: EC_SCRUB_TIME (DShow. h)
+title: EC_SCRUB_TIME (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 530362520f8e80ef06a769383f82dee1d60d66c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d4d3cc09d286f6955dda30aeb77288b75e90e8c66777a5f9f16246507f64b45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686086"
 ---
-# <a name="ec_scrub_time"></a>\_hora de limpeza do EC \_
+# <a name="ec_scrub_time"></a>TEMPO \_ DE LIMPEZA DE \_ EC
 
-Especifica o carimbo de data/hora para a etapa de quadro mais recente.
+Especifica o carimbo de data/hora da etapa de quadro mais recente.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-(**DWORD**) Menores 32 bits do carimbo de data/hora.
+(**DWORD**) 32 bits inferiores do carimbo de data/hora.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-(**DWORD**) Os bits superiores a 32 do carimbo de data/hora.
+(**DWORD**) 32 bits superiores do carimbo de data/hora.
 
 </dd> </dl>
 
@@ -39,7 +39,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-O apresentador do filtro EVR ( [**processador de vídeo avançado**](enhanced-video-renderer-filter.md) ) envia essa mensagem para o EVR quando ele conclui uma etapa de quadro.
+O apresentador do [**filtro**](enhanced-video-renderer-filter.md) EVR (Renderizador de Vídeo Aprimorado) envia essa mensagem para o EVR quando ele conclui uma etapa de quadro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ O apresentador do filtro EVR ( [**processador de vídeo avançado**](enhanced-vi
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

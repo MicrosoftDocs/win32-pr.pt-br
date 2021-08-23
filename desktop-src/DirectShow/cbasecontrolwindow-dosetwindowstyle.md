@@ -1,7 +1,7 @@
 ---
 description: O método DoSetWindowStyle altera os estilos de janela típicos ou estendidos.
 ms.assetid: 4a9a97fb-b527-44ce-af8c-e5ea832ed4c4
-title: Método CBaseControlWindow. DoSetWindowStyle (Ctlutil. h)
+title: Método CBaseControlWindow.DoSetWindowStyle (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: db88c5818d31d65f361ae1a805bd50c285d4a5c2
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d3b1f72ace792f13f88fbf0ce1e0edaf7b08789ecba88aede0b4094e9e75ae52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640876"
 ---
-# <a name="cbasecontrolwindowdosetwindowstyle-method"></a>Método CBaseControlWindow. DoSetWindowStyle
+# <a name="cbasecontrolwindowdosetwindowstyle-method"></a>Método CBaseControlWindow.DoSetWindowStyle
 
 O `DoSetWindowStyle` método altera os estilos de janela típicos ou estendidos.
 
@@ -57,10 +57,10 @@ Valor que especifica quais estilos definir. Deve ser uma destas opções:
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |--------------|--------------------------------------|
-| estilo de GWL \_   | Recupere os estilos de janela.          |
-| GWL \_ FILEstyle | Recupere os estilos de janela estendida. |
+| ESTILO \_ GWL   | Recupere os estilos de janela.          |
+| GWL \_ EXSTYLE | Recupere os estilos de janela estendidos. |
 
 
 
@@ -68,13 +68,13 @@ Valor que especifica quais estilos definir. Deve ser uma destas opções:
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro chama a função **SetWindowLong** do Win32 para definir o estilo da janela e, em seguida, exibe novamente a janela na posição atual. Essa função de membro é chamada pelas funções de membro [**CBaseControlWindow::p UT \_ WindowStyle**](cbasecontrolwindow-put-windowstyle.md) e [**CBaseControlWindow::p UT \_ WindowStyleEx**](cbasecontrolwindow-put-windowstyleex.md) .
+Essa função membro chama a função **Win32 SetWindowLong** para definir o estilo da janela e, em seguida, reprodução da janela na posição atual. Essa função membro é chamada pelas funções de membro [**CBaseControlWindow::p ut \_ WindowStyle**](cbasecontrolwindow-put-windowstyle.md) e [**CBaseControlWindow::p ut \_ WindowStyleEx.**](cbasecontrolwindow-put-windowstyleex.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ Essa função de membro chama a função **SetWindowLong** do Win32 para definir
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

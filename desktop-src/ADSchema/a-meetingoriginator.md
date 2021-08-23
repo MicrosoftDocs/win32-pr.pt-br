@@ -1,10 +1,10 @@
 ---
-title: atributo meetingOriginator
+title: Atributo meetingOriginator
 description: A pessoa que agendou a reunião.
 ms.assetid: ff83cbd1-d32a-4878-a56d-cb9ad70521ab
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo meetingOriginator
+- esquema do AD do atributo meetingOriginator
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01cbab0798e1d590ef4284ea9011351ca62d9d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7461ce93b4068d75b642dd496e42fe356446e2fb489eb8fb15802a81c2b60343
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705556"
 ---
-# <a name="meetingoriginator-attribute"></a>atributo meetingOriginator
+# <a name="meetingoriginator-attribute"></a>Atributo meetingOriginator
 
 A pessoa que agendou a reunião.
 
@@ -29,13 +29,13 @@ A pessoa que agendou a reunião.
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | meetingOriginator                                                                |
-| LDAP-Display-Name | meetingOriginator                                                                |
+| Ldap-Display-Name | meetingOriginator                                                                |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Qualquer pessoa pode atualizar esse objeto com base na segurança do objeto que está sendo criado. |
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.577                                                           |
-| System-ID-GUID    | 11b6cc86-48c4-11d1-a9c3-0000f80367c1                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | 11b6cc86-48c4-11d1-a9c3-0000f80367c1                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -57,10 +57,10 @@ A pessoa que agendou a reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ A pessoa que agendou a reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ A pessoa que agendou a reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -120,10 +120,10 @@ A pessoa que agendou a reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ A pessoa que agendou a reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ A pessoa que agendou a reunião.
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

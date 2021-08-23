@@ -4,12 +4,12 @@ ms.assetid: 9463EB8C-2CA3-4F8F-8A2A-B1292879DD1B
 title: Atributo MF_SOURCE_READER_ENABLE_TRANSCODE_ONLY_TRANSFORMS (Mfreadwrite. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04a9559254216a102613d97824601c004c71bfd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bc5362c93138ef301ac65ace799ad64d59ac9110af349822e0efa98d410686e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119605013"
 ---
 # <a name="mf_source_reader_enable_transcode_only_transforms-attribute"></a>\_Leitor de origem MF \_ \_ habilitar \_ \_ somente \_ transformações atributo
 
@@ -35,9 +35,9 @@ Internamente, esse atributo faz com que o leitor de origem inclua o sinalizador 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
 
 
 

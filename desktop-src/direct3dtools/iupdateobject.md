@@ -1,5 +1,5 @@
 ---
-description: Solicitação de atualização do conteúdo de um objeto.
+description: Solicitação para atualizar o conteúdo de um objeto .
 MS-HAID: vspixengine.IUpdateObject
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,20 +17,20 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: a995b4edbfe122a6cbfe4a2fa70ea9de24310ddc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 88b25f482e0c7ade78d30dcd1a35c72317ed8c44ed1a4b233dd3fc7e2a46c51d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670986"
 ---
 # <a name="span-idvspixengineiupdateobjectspaniupdateobject-interface"></a><span id="vspixengine.iupdateobject"></span>Interface IUpdateObject
 
-Solicitação de atualização do conteúdo de um objeto.
+Solicitação para atualizar o conteúdo de um objeto .
 
 ## <a name="members"></a>Membros
 
-A interface **IUpdateObject** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IUpdateObject** também tem estes tipos de membros:
+A interface **IUpdateObject** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IUpdateObject** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -44,7 +44,7 @@ A interface **IUpdateObject** tem esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -1,17 +1,17 @@
 ---
 description: Especifica o tamanho da janela de destino para reprodução de vídeo.
 ms.assetid: 46af4c11-042c-4580-ba9d-3aee6172de56
-title: Atributo MF_TOPOLOGY_PLAYBACK_MAX_DIMS (Mfidl. h)
+title: MF_TOPOLOGY_PLAYBACK_MAX_DIMS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1fc6a57c5e031bc6f35f36e688bd44986f541b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e98575a32b1d68414cb4d94a547273aa4986e03dc707023d5c40f9860b77b5a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604776"
 ---
-# <a name="mf_topology_playback_max_dims-attribute"></a>\_Atributo de \_ \_ esmaecimento máximo da reprodução de topologia MF \_
+# <a name="mf_topology_playback_max_dims-attribute"></a>Atributo MF \_ TOPOLOGY \_ PLAYBACK MAX \_ \_ DIMS
 
 Especifica o tamanho da janela de destino para reprodução de vídeo.
 
@@ -31,11 +31,11 @@ Para definir esse atributo, chame [**MFSetAttributeSize**](/windows/desktop/api/
 
 ## <a name="remarks"></a>Comentários
 
-O carregador de topologia usa esse atributo para otimizar o pipeline antes do início da reprodução. Se você definir esse atributo, defina também o atributo de [ \_ \_ \_ \_ otimizações de reprodução estática da topologia MF](mf-topology-static-playback-optimizations.md) como **true**.
+O carregador de topologia usa esse atributo para otimizar o pipeline antes do início da reprodução. Se você definir esse atributo, de definir também o atributo [ \_ MF TOPOLOGY \_ STATIC PLAYBACK \_ \_ OPTIMIZATIONS](mf-topology-static-playback-optimizations.md) como **TRUE.**
 
-Os bits superiores de 32 do valor do atributo contêm a largura e os bits inferiores de 32 contêm a altura, em pixels.
+Os 32 bits superiores do valor do atributo contêm a largura e os 32 bits inferiores contêm a altura, ambos em pixels.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de topologia](topology-attributes.md)

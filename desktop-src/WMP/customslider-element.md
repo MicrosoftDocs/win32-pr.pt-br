@@ -3,19 +3,19 @@ title: Elemento CUSTOMSLIDER
 description: Elemento CUSTOMSLIDER
 ms.assetid: 9cba9bdd-ea5b-4a4a-a61e-e6aff29fc3e0
 keywords:
-- Capas do Windows Media Player, elemento CUSTOMSLIDER
+- Windows Media Player skins, elemento CUSTOMSLIDER
 - Skins, elemento CUSTOMSLIDER
 - Elemento CUSTOMSLIDER
 - referência para capas, elemento CUSTOMSLIDER
 - elementos, CUSTOMSLIDER
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8f49fc6260df295e3266ae9ddf7b5b3eceee43d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8b47a64b57cd785da318bbf1af15667c8d930d06367a93fcfeab5a608cc99d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651426"
 ---
 # <a name="customslider-element"></a>Elemento CUSTOMSLIDER
 
@@ -35,13 +35,13 @@ O elemento **CUSTOMSLIDER** dá suporte aos seguintes atributos.
 | [max](customslider-max.md)                             | Especifica ou recupera o valor máximo do intervalo definido pelo controle deslizante personalizado.                                         |
 | [min](customslider-min.md)                             | Especifica ou recupera o valor mínimo do intervalo definido pelo controle deslizante personalizado.                                         |
 | [positionImage](customslider-positionimage.md)         | Especifica ou recupera o mapa de imagem usado para determinar qual imagem de posição do arquivo de **imagem** a ser exibida.             |
-| [Dessa](customslider-tooltip.md)                     | Especifica ou recupera o texto da dica de ferramenta para o controle deslizante.                                                                     |
+| [toolTip](customslider-tooltip.md)                     | Especifica ou recupera o texto da dica de ferramenta para o controle deslizante.                                                                     |
 | [transparencyColor](customslider-transparencycolor.md) | Especifica ou recupera a cor de transparência das imagens do controle deslizante personalizado.                                                  |
 | [value](customslider-value.md)                         | Especifica ou recupera a posição atual do controle deslizante.                                                                  |
 
 
 
- 
+ 
 
 O elemento **CUSTOMSLIDER** pode implementar os manipuladores de eventos a seguir.
 
@@ -55,7 +55,7 @@ O elemento **CUSTOMSLIDER** pode implementar os manipuladores de eventos a segui
 
 
 
- 
+ 
 
 O elemento **CUSTOMSLIDER** dá suporte aos atributos de ambiente e pode implementar os manipuladores de eventos de ambiente. Para obter mais informações, consulte [atributos de ambiente](ambient-attributes.md) e [manipuladores de eventos de ambiente](ambient-event-handlers.md).
 
@@ -66,9 +66,9 @@ O elemento **CUSTOMSLIDER** dá suporte aos atributos de ambiente e pode impleme
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

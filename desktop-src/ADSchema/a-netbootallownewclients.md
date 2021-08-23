@@ -1,11 +1,11 @@
 ---
-title: atributo netboot – Allow-New-clients
-description: O atributo netboot-Allow-New-clients é reservado para uso interno.
+title: atributo netboot-Allow-New-Clients
+description: O atributo netboot-Allow-New-Clients é reservado para uso interno.
 ms.assetid: cc2c10a1-0ecc-48a0-9632-cc0afa3dcfa6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo netboot-Allow-New-clients
-- Esquema de AD do atributo netbootAllowNewClients
+- Esquema do AD do atributo netboot-Allow-New-Clients
+- Atributo netbootAllowNewClients Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b01c863327b765397ef1a62bdf4dad188aaa4d3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8319dbb3a797173cc2a515569e5414376a657d78d984998a516b5e0ce5ca1bd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648806"
 ---
-# <a name="netboot-allow-new-clients-attribute"></a>atributo netboot – Allow-New-clients
+# <a name="netboot-allow-new-clients-attribute"></a>atributo netboot-Allow-New-Clients
 
-O atributo **netboot-Allow-New-clients** é reservado para uso interno.
+O **atributo netboot-Allow-New-Clients** é reservado para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | netboot-permitir-novos clientes            |
-| LDAP-Display-Name | netbootAllowNewClients               |
+| CN                | netboot-Allow-New-Clients            |
+| Ldap-Display-Name | netbootAllowNewClients               |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.849               |
-| System-ID-GUID    | 07383076-91df-11d1-aebc-0000f80367c1 |
+| System-Id-Guid    | 07383076-91df-11d1-aebc-0000f80367c1 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ O atributo **netboot-Allow-New-clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O atributo **netboot-Allow-New-clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O atributo **netboot-Allow-New-clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O atributo **netboot-Allow-New-clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -142,7 +142,7 @@ O atributo **netboot-Allow-New-clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -163,7 +163,7 @@ O atributo **netboot-Allow-New-clients** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |

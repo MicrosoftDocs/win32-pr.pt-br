@@ -1,7 +1,7 @@
 ---
 description: Chama a biblioteca para validar se um CLSID específico é seguro para ser chamado.
 ms.assetid: 94C8731B-88FD-4240-BF5D-2CD67C41B063
-title: Função WldpIsClassInApprovedList (Wldp. h)
+title: Função WldpIsClassInApprovedList (Wldp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - wldp.dll
-ms.openlocfilehash: 01762c60a3f1aef1574cc218ace9988669175efe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ef4f6a719a1fe5146badbe59239dc16f9031f553ee8bba189c838dddcb641d8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104088890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642036"
 ---
 # <a name="wldpisclassinapprovedlist-function"></a>Função WldpIsClassInApprovedList
 
-Chama a biblioteca para validar se um **CLSID** específico é seguro para ser chamado. A função não tem biblioteca de importação associada. Você deve usar as funções LoadLibrary e GetProcAddress para vincular dinamicamente a wldp.dll.
+Chama a biblioteca para validar se um **CLSID específico** é seguro para ser chamado. A função não tem nenhuma biblioteca de importação associada. Você deve usar as funções LoadLibrary e GetProcAddress para vincular dinamicamente a wldp.dll.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,24 +42,24 @@ HRESULT WINAPI WldpIsClassInApprovedList(
 
 <dl> <dt>
 
-*classID* 
+*Classid* 
 </dt> <dd>
 
-A ID da classe COM para verificar a aprovação.
+A ID da classe COM a ser verificada quanto à aprovação.
 
 </dd> <dt>
 
-*hostInformation* \[ no\]
+*hostInformation* \[ Em\]
 </dt> <dd>
 
-Uma estrutura de [**\_ \_ informações de host WLDP**](wldp-host-information.md) que identifica o host a ser avaliado.
+Uma [**estrutura WLDP \_ HOST \_ INFORMATION**](wldp-host-information.md) que identifica o host a ser avaliado.
 
 </dd> <dt>
 
-*IsApproved* \[ fora\]
+*isApproved* \[ out\]
 </dt> <dd>
 
-Após a conclusão bem-sucedida, conterá **true** se a ID da classe for aprovada; caso contrário, **false**.
+Após a conclusão bem-sucedida, **conterá TRUE** se a ID da classe for aprovada; caso contrário, **FALSE.**
 
 </dd> <dt>
 
@@ -70,9 +70,9 @@ Esse parâmetro é reservado e deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retornará **S \_ OK** , se for bem-sucedido ou um código de falha.
+Esse método retornará **S \_ OK se** for bem-sucedido ou um código de falha, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,9 +80,9 @@ Esse método retornará **S \_ OK** , se for bem-sucedido ou um código de falha
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Wldp. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Wldp.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>Wldp.dll</dt> </dl> |
 
 

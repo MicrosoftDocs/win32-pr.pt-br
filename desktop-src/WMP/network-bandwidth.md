@@ -1,9 +1,9 @@
 ---
-title: Rede. largura de banda
+title: Network.bandWidth
 description: A propriedade bandWidth recupera a largura de banda atual do clipe.
 ms.assetid: 2ef86f2a-98e9-4544-a740-c2237f06c135
 keywords:
-- Rede. largura de banda Windows Media Player
+- Network.bandWidth Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4783d86160070fc61202f97b4cf3882f2cebcfb2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40bd97ae2efe7513bc69d308a29356cfc7b141ecc84b816bdc7fad68d79aa785
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616873"
 ---
-# <a name="networkbandwidth"></a>Rede. largura de banda
+# <a name="networkbandwidth"></a>Network.bandWidth
 
-A propriedade **Bandwidth** recupera a largura de banda atual do clipe.
+A **propriedade bandWidth** recupera a largura de banda atual do clipe.
 
 ## <a name="syntax"></a>Syntax
 
-*Player*. *rede*. **largura de banda**
+*player*. *network*. **bandWidth**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade retornará zero se o *Player*. A propriedade da **URL** não está definida. Esta propriedade só é válida para mídia de streaming.
+Essa propriedade retornará zero se o *Player*. **A propriedade URL** não está definida. Essa propriedade só é válida para mídia de streaming.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo do Microsoft JScript a seguir usa a *rede*. **largura de banda** para exibir a largura de banda de mídia atual. As informações são exibidas em uma DIV HTML criada com ID = "BW". O objeto de **jogador** foi criado com ID = "Player".
+O exemplo de JScript Microsoft a seguir usa *Rede*. **bandWidth para** exibir a largura de banda de mídia atual. As informações são exibidas em um HTML DIV criado com ID = "BW". O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -74,7 +74,7 @@ O exemplo do Microsoft JScript a seguir usa a *rede*. **largura de banda** para 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -86,7 +86,7 @@ O exemplo do Microsoft JScript a seguir usa a *rede*. **largura de banda** para 
 [**Objeto de rede**](network-object.md)
 </dt> <dt>
 
-[**Player. URL**](player-url.md)
+[**Player.URL**](player-url.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 14458bdafa0bbf4421c67db8102491db4e1fe6b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bb466e80070fe1be5cd7af7889fc5727c81f8caad89ad60c48c7a105b688fb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705696"
 ---
 # <a name="wm_userchanged-message"></a>Mensagem do WM \_ USERchanged
 
@@ -27,7 +27,7 @@ Enviado a todas as janelas após o logon ou logoff do usuário. Quando o usuári
 Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
 
 > [!Note]  
-> Não há suporte para essa mensagem no Windows Vista.
+> essa mensagem não tem suporte a partir do Windows Vista.
 
  
 
@@ -56,7 +56,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -68,9 +68,9 @@ Um aplicativo deve retornar zero se ele processar essa mensagem.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                              |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -78,7 +78,7 @@ Um aplicativo deve retornar zero se ele processar essa mensagem.
 
 <dl> <dt>
 
-[Visão geral do Windows](windows.md)
+[Windows Sobre](windows.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetCreateIndex'
-title: Método API. JetCreateIndex
+description: 'Saiba mais sobre: Método Api.JetCreateIndex'
+title: Método Api.JetCreateIndex
 TOCTitle: 'JetCreateIndex method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetCreateIndex(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.CreateIndexGrbit,System.String,System.Int32,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetcreateindex(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a9b3549461324f396408bb7d370531907248e8c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df24e16252ec3aa837b9232859bf56726ee54b09448a57572281fab97a28c5c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670546"
 ---
-# <a name="apijetcreateindex-method"></a>Método API. JetCreateIndex
+# <a name="apijetcreateindex-method"></a>Método Api.JetCreateIndex
 
-Cria um índice sobre os dados em um banco de dado ESE. Um índice pode ser usado para localizar dados específicos rapidamente.
+Cria um índice sobre dados em um banco de dados ESE. Um índice pode ser usado para localizar dados específicos rapidamente.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -78,51 +78,51 @@ public static void JetCreateIndex(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    A tabela na qual criar o índice.
+    A tabela na que o índice será criado.
 
 <!-- end list -->
 
   - indexName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Ponteiro para uma cadeia de caracteres terminada em nulo que especifica o nome do índice a ser criado.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. CreateIndexGrbit](./createindexgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.CreateIndexGrbit](./createindexgrbit-enumeration.md)  
     
     Opções de criação de índice.
 
 <!-- end list -->
 
-  - Descrição da  
-    Tipo: [System. String](/dotnet/api/system.string)  
+  - keyDescription  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    Ponteiro para uma cadeia de caracteres dupla com terminação nula de tokens delimitados por nulo.
+    Ponteiro para uma cadeia de caracteres terminada em nulo dupla de tokens delimitados por nulo.
 
 <!-- end list -->
 
   - keyDescriptionLength  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O comprimento, em caracteres, de szKey, incluindo os dois nulos de terminação.
 
 <!-- end list -->
 
   - densidade  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Densidade inicial da árvore B +.
+    Densidade de árvore B+ inicial.
 
 ## <a name="see-also"></a>Confira também
 
@@ -132,4 +132,4 @@ public static void JetCreateIndex(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

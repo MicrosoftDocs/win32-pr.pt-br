@@ -3,9 +3,9 @@ title: Método mediacollection. getByAttributeAndMediaType
 description: O método getByAttributeAndMediaType recupera um objeto playlist contendo objetos de mídia com o tipo de mídia e o atributo especificados.
 ms.assetid: 75241b38-ae0e-4216-b405-af9a9c71f5ec
 keywords:
-- método getByAttributeAndMediaType Windows Media Player
-- método getByAttributeAndMediaType Windows Media Player, classe Mediacollection
-- Classe mediacollection Windows Media Player, método getByAttributeAndMediaType
+- Windows Media Player do método getByAttributeAndMediaType
+- método getByAttributeAndMediaType Windows Media Player, classe mediacollection
+- classe mediacollection Windows Media Player, método getByAttributeAndMediaType
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e26abbf2f19d50ec6a10ebbafe12afae8576f34
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46dab1bdcb511e4c96374b17bc6a98be95e48fd64d005eb856c9ec247af48f2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647876"
 ---
 # <a name="mediacollectiongetbyattributeandmediatype-method"></a>Método mediacollection. getByAttributeAndMediaType
 
@@ -65,7 +65,7 @@ retVal = MediaCollection.getByAttributeAndMediaType(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um objeto **playlist**
 

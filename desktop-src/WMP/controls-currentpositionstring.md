@@ -1,9 +1,9 @@
 ---
-title: Controls. currentPositionString
-description: A propriedade currentPositionString recupera a posição atual no item de mídia como uma cadeia de caracteres formatada como HH MM SS (horas, minutos e segundos).
+title: Controls.currentPositionString
+description: A propriedade currentPositionString recupera a posição atual no item de mídia como uma Cadeia de caracteres formatada como HH MM SS (horas, minutos e segundos).
 ms.assetid: 2b360cdb-3cf8-4d3c-82c2-7eb621f82f4c
 keywords:
-- Controls. currentPositionString Windows Media Player
+- Controls.currentPositionString Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbf3472d71afc543c596485d10f0d7e59dde90a0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 640f0f97e3fa4c4054df17ea92304ad7721c770d9cb9b56436dcf810b9c083ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651986"
 ---
-# <a name="controlscurrentpositionstring"></a>Controls. currentPositionString
+# <a name="controlscurrentpositionstring"></a>Controls.currentPositionString
 
-A propriedade **currentPositionString** recupera a posição atual no item de mídia como uma **cadeia de caracteres** formatada como hh: mm: SS (horas, minutos e segundos).
+A **propriedade currentPositionString** recupera **a** posição atual no item de mídia como uma Cadeia de caracteres formatada como HH:MM:SS (horas, minutos e segundos).
 
 ``` syntax
 player.controls.currentPositionString
@@ -32,20 +32,20 @@ player.controls.currentPositionString
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="remarks"></a>Comentários
 
 Se o item de mídia tiver menos de uma hora, a parte HH: não será incluída.
 
 > [!Note]  
-> Você deve incluir o código para interromper o timer quando o item de mídia for interrompido ou pausado.
+> Você deve incluir código para interromper o temporizador quando o item de mídia for interrompido ou pausado.
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir inicia um temporizador HTML que exibe a posição atual do arquivo de mídia em intervalos de um segundo. Um elemento de texto HTML chamado mytext foi criado para exibir a posição atual. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir inicia um temporizador HTML que exibe a posição atual do arquivo de mídia em intervalos de um segundo. Um elemento HTML TEXT chamado MyText foi criado para exibir a posição atual. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -60,7 +60,7 @@ var timer = window.setInterval("MyText.value = Player.controls.currentPositionSt
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

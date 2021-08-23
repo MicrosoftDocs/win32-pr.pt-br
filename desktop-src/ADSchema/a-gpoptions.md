@@ -4,8 +4,8 @@ description: Opções que afetam todas as políticas de grupo associadas ao obje
 ms.assetid: 180ada21-7185-4589-a5a2-2cd1bbe64d0c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de GP-Options do atributo AD
-- Esquema de AD do atributo gPOptions
+- GP-Options atributo AD Schema
+- Esquema do AD do atributo gPOptions
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 289537abf29601caf2921b670428defbc494c9f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c82aa5eb16aff76fbae8030e8995b6a7d5592777b11d11602eac3030f3aac84c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705956"
 ---
 # <a name="gp-options-attribute"></a>GP-Options atributo
 
@@ -30,12 +30,12 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | GP-Options                           |
-| LDAP-Display-Name | gPOptions                            |
+| Ldap-Display-Name | gPOptions                            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.892               |
-| System-ID-GUID    | f30e3bbf-9ff0-11d1-b603-0000f80367c1 |
+| System-Id-Guid    | f30e3bbf-9ff0-11d1-b603-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | ID do link                | \-                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                         |
-| É de valor único       | True                                                                                                                                          |
+| Tem valor único       | Verdadeiro                                                                                                                                          |
 | É indexado             | Falso                                                                                                                                         |
-| No catálogo global      | Falso                                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                  |
+| No Catálogo Global      | Falso                                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                  |
 | Range-Lower            | \-                                                                                                                                            |
 | Range-Upper            | \-                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                    |
-| Classes usadas em        | [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | ID do link                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                                                                                                        |
-| Classes usadas em        | [**Configuração**](c-configuration.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Configuração**](c-configuration.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | ID do link                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                                              |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                             |
-| No catálogo global      | Falso                                                                                                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                                        |
@@ -121,7 +121,7 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | ID do link                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                      |
@@ -142,7 +142,7 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | ID do link                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                      |
@@ -163,7 +163,7 @@ Opções que afetam todas as políticas de grupo associadas ao objeto que hosped
 | ID do link                | \-                                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                                |
 | System-Only            | Falso                                                                                                                                                                                             |
-| É de valor único       | True                                                                                                                                                                                              |
+| É de valor único       | Verdadeiro                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                             |
 | No catálogo global      | Falso                                                                                                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                      |

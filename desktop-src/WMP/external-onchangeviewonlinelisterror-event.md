@@ -3,7 +3,7 @@ title: Evento external. OnChangeViewOnlineListError
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | Evento external. OnChangeViewOnlineListError
 ms.assetid: f53dfc80-a7d7-42b1-b390-e90aa108145f
 keywords:
-- Evento external. OnChangeViewOnlineListError do Windows Media Player
+- Windows Media Player de evento external. OnChangeViewOnlineListError
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09e9ff854893268a00cb7b5f2fb35409be2e70e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ed6191de129bffea0e11abb24f1e271fc0b2873d2b306430a4e7eafe39b214d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648796"
 ---
 # <a name="externalonchangeviewonlinelisterror-event"></a>Evento external. OnChangeViewOnlineListError
 
@@ -36,7 +36,7 @@ window.external.OnChangeViewOnlineListError = functionname
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa é uma propriedade somente gravação que especifica o nome da função no script que o Windows Media Player chama quando o evento ocorre.
+essa é uma propriedade somente gravação que especifica o nome da função no script que Windows Media Player chama quando o evento ocorre.
 
 ## <a name="parameters"></a>Parâmetros
 

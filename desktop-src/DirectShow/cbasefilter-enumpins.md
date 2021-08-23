@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66a0f88a9749ba1dabb982e2f275da8a4be2a422
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3cd0be44f768898a530eef20d3e4d5d082d230ff809133c0eb62ceb2308b524b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640576"
 ---
 # <a name="cbasefilterenumpins-method"></a>Método CBaseFilter. EnumPins
 
@@ -49,7 +49,7 @@ Endereço de uma variável que recebe um ponteiro para a interface [**IEnumPins*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores de **HRESULT** a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores de **HRESULT** a seguir.
 
 | Código de retorno                                                                                   | Descrição                          |
 |-----------------------------------------------------------------------------------------------|--------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>          | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente<br/>       |
 | <dl> <dt>**\_ponteiro E**</dt> </dl>     | Argumento de ponteiro **nulo**<br/> |
 
@@ -77,7 +77,7 @@ Se esse método tiver sucesso, a interface **IEnumPins** terá uma contagem de r
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

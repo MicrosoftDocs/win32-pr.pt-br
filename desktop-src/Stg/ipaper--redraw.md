@@ -1,21 +1,21 @@
 ---
 title: Redesenhar IPaper
-description: O método redesenhar do IPaper depende da tecnologia do ponto de conexão.
+description: O método IPaper Redraw depende da tecnologia de ponto de conexão.
 ms.assetid: d0126a47-d616-4cc0-b270-75779a51c843
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 968d2cf545296f8413d613410d9cbb759cb2b897
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4343cc836216706bfe029dfe80c02978240a76317c64cb7de35c9d1acc5220c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662706"
 ---
-# <a name="ipaperredraw"></a>IPaper:: redesenhar
+# <a name="ipaperredraw"></a>IPaper::Redraw
 
-O método **IPaper:: redesenhar** depende da tecnologia de ponto de conexão.
+O **método IPaper::Redraw** depende da tecnologia de ponto de conexão.
 
-O código de exemplo a seguir é o método **redesenhar** do paper. cpp.
+O código de exemplo a seguir é **o método Redraw** de Paper.cpp.
 
 
 ```C++
@@ -106,11 +106,11 @@ STDMETHODIMP COPaper::CImpIPaper::Redraw(
 
 
 
-Para obter mais informações, consulte método [**IPaperSink**](ipapersink-methods.md) .
+Para obter mais informações, consulte [**Método IPaperSink.**](ipapersink-methods.md)
 
- 
+ 
 
- 
+ 
 
 
 

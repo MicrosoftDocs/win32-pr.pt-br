@@ -4,12 +4,12 @@ ms.assetid: 621591d2-74ac-4b1f-b065-247582b05efc
 title: EC_GRAPH_CHANGED (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13637d3a72280dba1db177e7fb1936177fbb299a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bd0289be1f0c44dfb9d5897f3fe8678d4bc98288df4beb677c022d834ec1928
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651636"
 ---
 # <a name="ec_graph_changed"></a>gráfico do EC \_ \_ alterado
 

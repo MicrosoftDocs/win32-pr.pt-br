@@ -1,6 +1,6 @@
 ---
-title: IAgent UnLoad
-description: IAgent UnLoad
+title: Descarregamento de IAgent
+description: Descarregamento de IAgent
 ms.assetid: 560301b3-c038-4c6e-b3f1-1203b618b67d
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119610136"
 ---
-# <a name="iagentunload"></a>IAgent::UnLoad
+# <a name="iagentunload"></a>IAgent:: UnLoad
 
-\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT UnLoad(
@@ -21,7 +21,7 @@ HRESULT UnLoad(
 );
 ```
 
-Descarrega os dados de caractere para o caractere especificado da coleção [**Caracteres.**](/windows/desktop/lwef/the-characters-object)
+Descarrega os dados de caractere do caractere especificado da coleção de [**caracteres**](/windows/desktop/lwef/the-characters-object) .
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -34,11 +34,11 @@ A ID do caractere.
 
 </dd> </dl>
 
-Use esse método quando você não precisar mais de um caractere para liberar a memória usada para armazenar informações sobre o caractere. Se você acessar o caractere novamente, use o [**método**](load-method.md) Load.
+Use esse método quando não precisar mais de um caractere, para liberar memória usada para armazenar informações sobre o caractere. Se você acessar o caractere novamente, use o método [**Load**](load-method.md) .
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgent::Load**](iagent--load.md)
+[**IAgent:: Load**](iagent--load.md)
 
 
  

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5d77c78a78a6cecae0368e8d9192a0dc0efc10e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58e153da2695990f74d1268aa3e861bb9011b108ebdd1ea2d5128ff6f8e40a20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708206"
 ---
 # <a name="system_event_data-structure"></a>Estrutura de dados de \_ evento do sistema \_
 
@@ -93,9 +93,9 @@ Os eventos do sistema a seguir são definidos para uso no membro **bModifier** .
 
 | Valor               | Descrição                  |
 |---------------------|------------------------------|
-| \_modificador de se \_ Ctrl  | A tecla Control foi pressionada. |
-| \_modificador de se \_ ALT   | A tecla Alt foi pressionada.     |
-| \_alternância de modificador se \_ | A tecla Shift foi pressionada.   |
+| ES \_ MODIFICADOr \_ Ctrl  | A tecla Control foi pressionada. |
+| ES \_ MODIFICADOr \_ ALT   | A tecla Alt foi pressionada.     |
+| ES \_ Shift de MODIFICADOr \_ | A tecla Shift foi pressionada.   |
 
 
 
@@ -107,8 +107,8 @@ Os eventos do sistema a seguir são definidos para uso no membro **bCursorMode**
 
 | Valor              | Descrição               |
 |--------------------|---------------------------|
-| \_cursor normal do se \_ | Indica a dica de caneta.    |
-| \_cursor de borracha \_ se | Indica a borracha da caneta. |
+| ES \_ \_cursor normal | Indica a dica de caneta.    |
+| ES \_ CURSOR do APAGAdor \_ | Indica a borracha da caneta. |
 
 
 
@@ -120,7 +120,7 @@ Os eventos do sistema a seguir são definidos para uso no membro **bCursorMode**
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

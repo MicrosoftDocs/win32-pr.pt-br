@@ -1,11 +1,11 @@
 ---
-title: Objeto ResourceLocator (WSManDisp. h)
-description: Fornece o caminho para um recurso. Você pode usar um objeto ResourceLocator em vez de um URI de recurso em operações de objeto de sessão, como Session. Get, Session. Put ou Session. Enumerate.
+title: Objeto ResourceLocator (WSManDisp.h)
+description: Fornece o caminho para um recurso. Você pode usar um objeto ResourceLocator em vez de um URI de recurso em operações de objeto session, como Session.Get, Session.Put ou Session.Enumerate.
 ms.assetid: 0904b7eb-d4ce-46a7-bf58-452e7c0d41e9
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows de objeto ResourceLocator
-- Gerenciamento Remoto do Windows de objeto ResourceLocator, descrito
+- Objeto ResourceLocator Windows Gerenciamento Remoto
+- Objeto ResourceLocator Windows Gerenciamento Remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,44 +16,44 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd110b94d3174134e6410428843de76e809d5e22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26d3287c02949326b672f550271ba3472e6cb16abb6748efb4a80de425c40e57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642866"
 ---
 # <a name="resourcelocator-object"></a>Objeto ResourceLocator
 
-Um objeto que fornece o caminho para um recurso. Você pode usar um objeto **ResourceLocator** em vez de um [*URI de recurso*](windows-remote-management-glossary.md) em operações de objeto de [**sessão**](session.md) , como [**Session. Get**](session-get.md), [**Session. put**](session-put.md)ou [**Session. Enumerate**](session-enumerate.md).
+Um objeto que fornece o caminho para um recurso. Você pode usar um objeto **ResourceLocator** em [](session.md) vez de um [*URI*](windows-remote-management-glossary.md) de recurso em operações de objeto session, como [**Session.Get**](session-get.md), [**Session.Put**](session-put.md)ou [**Session.Enumerate**](session-enumerate.md).
 
-Este objeto permite que você:
+Esse objeto permite que você:
 
--   Adicione um ou mais [*seletores*](windows-remote-management-glossary.md) que identificam uma instância específica de um recurso. Isso é o mesmo que fornecer um valor de chave no URI de recurso para um recurso que usa chaves. Para obter mais informações, consulte [**ResourceLocator. Addseletor**](resourcelocator-addselector.md). Você pode fazer uma operação semelhante usando o parâmetro *Filter* em uma chamada para [**Session. Enumerate**](session-enumerate.md).
--   Especifique um caminho de [*fragmento*](windows-remote-management-glossary.md) e um dialeto para obter apenas uma propriedade de um recurso. Você também pode especificar um ou todos os elementos de uma propriedade de matriz fornecendo o índice de matriz. Para obter mais informações, consulte [**ResourceLocator. FragmentPath**](resourcelocator-fragmentpath.md).
--   Adicione uma ou mais [*Opções*](windows-remote-management-glossary.md) que uma fonte de dados pode exigir para processar uma solicitação. Para obter mais informações, consulte [**ResourceLocator. AddOption**](resourcelocator-addoption.md).
+-   Adicione um ou mais [*seletores que*](windows-remote-management-glossary.md) identificam uma instância específica de um recurso. Isso é o mesmo que fornecer um valor de chave no URI do recurso para um recurso que usa chaves. Para obter mais informações, [**consulte ResourceLocator.AddSelector**](resourcelocator-addselector.md). Você pode fazer uma operação semelhante usando o *parâmetro filter* em uma chamada para [**Session.Enumerate**](session-enumerate.md).
+-   [*Especifique um caminho*](windows-remote-management-glossary.md) de fragmento e um dialeto para obter apenas uma propriedade de um recurso. Você também pode especificar um ou todos os elementos de uma propriedade de matriz fornecendo o índice da matriz. Para obter mais informações, [**consulte ResourceLocator.FragmentPath**](resourcelocator-fragmentpath.md).
+-   Adicione uma ou mais [*opções que*](windows-remote-management-glossary.md) uma fonte de dados pode exigir para processar uma solicitação. Para obter mais informações, [**consulte ResourceLocator.AddOption**](resourcelocator-addoption.md).
 
-Para obter mais informações, consulte [consultando instâncias específicas de um recurso](querying-for-specific-instances-of-a-resource.md).
+Para obter mais informações, [consulte Consultando instâncias específicas de um recurso](querying-for-specific-instances-of-a-resource.md).
 
 ## <a name="members"></a>Membros
 
-O objeto **ResourceLocator** tem estes tipos de membros:
+O **objeto ResourceLocator** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **ResourceLocator** tem esses métodos.
+O **objeto ResourceLocator** tem esses métodos.
 
 
 
 | Método                                                   | Descrição                                                                                                                        |
 |:---------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | [**AddOption**](resourcelocator-addoption.md)           | Adiciona dados adicionais necessários para processar a solicitação.<br/>                                                                   |
-| [**Addseletor**](resourcelocator-addselector.md)       | Adiciona um [*seletor*](windows-remote-management-glossary.md) ao objeto **ResourceLocator** .<br/>     |
-| [**Clearoptions**](resourcelocator-clearoptions.md)     | Remove todas [*as opções*](windows-remote-management-glossary.md) do objeto **ResourceLocator** .<br/> |
-| [**ClearSelectors**](resourcelocator-clearselectors.md) | Remove todos os seletores de um objeto **ResourceLocator** .<br/>                                                            |
+| [**AddSelector**](resourcelocator-addselector.md)       | Adiciona um [*seletor*](windows-remote-management-glossary.md) ao **objeto ResourceLocator.**<br/>     |
+| [**ClearOptions**](resourcelocator-clearoptions.md)     | Remove todas as [*opções*](windows-remote-management-glossary.md) do **objeto ResourceLocator.**<br/> |
+| [**ClearSelectors**](resourcelocator-clearselectors.md) | Remove todos os seletores de um **objeto ResourceLocator.**<br/>                                                            |
 
 
 
@@ -61,16 +61,16 @@ O objeto **ResourceLocator** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **ResourceLocator** tem essas propriedades.
+O **objeto ResourceLocator** tem essas propriedades.
 
 
 
 | Propriedade                                                                          | Tipo de acesso           | Descrição                                                                                                                                                                                             |
 |:----------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**FragmentDialect**](resourcelocator-fragmentdialect.md)<br/>             | Leitura/gravação<br/> | Obtém ou define o dialeto de idioma para um [*fragmento*](windows-remote-management-glossary.md)de [*recurso*](windows-remote-management-glossary.md) .<br/> |
-| [**FragmentPath**](resourcelocator-fragmentpath.md)<br/>                   | Leitura/gravação<br/> | Obtém ou define o caminho para um [](windows-remote-management-glossary.md) [*fragmento*](windows-remote-management-glossary.md) de recurso ou propriedade.<br/> |
-| [**MustUnderstandoptions**](resourcelocator-mustunderstandoptions.md)<br/> | Leitura/gravação<br/> | Obtém ou define o valor **mustunderstandoptions** para o objeto **ResourceLocator** .<br/>                                                                                                         |
-| [**ResourceURI**](resourcelocator-resourceuri.md)<br/>                     | Leitura/gravação<br/> | Obtém ou define o [*URI do recurso*](windows-remote-management-glossary.md) em um objeto **ResourceLocator** .<br/>                                                          |
+| [**FragmentDialect**](resourcelocator-fragmentdialect.md)<br/>             | Leitura/gravação<br/> | Obtém ou define o dialeto de idioma de um [*fragmento de*](windows-remote-management-glossary.md) [*recurso.*](windows-remote-management-glossary.md)<br/> |
+| [**FragmentPath**](resourcelocator-fragmentpath.md)<br/>                   | Leitura/gravação<br/> | Obtém ou define o caminho para um [*fragmento de*](windows-remote-management-glossary.md) [*recurso*](windows-remote-management-glossary.md) ou propriedade.<br/> |
+| [**MustUnderstandOptions**](resourcelocator-mustunderstandoptions.md)<br/> | Leitura/gravação<br/> | Obtém ou define o **valor MustUnderstandOptions** para o **objeto ResourceLocator.**<br/>                                                                                                         |
+| [**Resourceuri**](resourcelocator-resourceuri.md)<br/>                     | Leitura/gravação<br/> | Obtém ou define o [*URI do*](windows-remote-management-glossary.md) recurso em **um objeto ResourceLocator.**<br/>                                                          |
 
 
 
@@ -78,11 +78,11 @@ O objeto **ResourceLocator** tem essas propriedades.
 
 ## <a name="remarks"></a>Comentários
 
-O objeto **ResourceLocator** corresponde à interface **IWSManResourceLocator** .
+O **objeto ResourceLocator** corresponde à interface **IWSManResourceLocator.**
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir obtém as propriedades **NumberOfLogicalProcessors** e **NumberOfCores** de uma instância específica [**do \_ processador Win32**](/windows/desktop/CIMWin32Prov/win32-processor).
+O exemplo de código VBScript a seguir obtém as propriedades **NumberOfLogicalProcessors** e **NumberOfCores** de uma instância específica do [**processador Win32 \_**](/windows/desktop/CIMWin32Prov/win32-processor).
 
 
 ```VB
@@ -141,9 +141,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -152,7 +152,7 @@ End Sub
 
 <dl> <dt>
 
-[API de script do WinRM](winrm-scripting-api.md)
+[API de Script WinRM](winrm-scripting-api.md)
 </dt> </dl>
 
  

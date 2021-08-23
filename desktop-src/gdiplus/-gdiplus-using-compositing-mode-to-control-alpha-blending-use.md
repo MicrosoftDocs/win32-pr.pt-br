@@ -1,7 +1,7 @@
 ---
-description: 'Pode haver ocasiões em que você deseja criar um bitmap fora da tela que tem as seguintes características:'
+description: 'Pode haver ocasiões em que você deseja criar um bitmap fora da tela com as seguintes características:'
 ms.assetid: 2a7590ce-daf4-4892-a838-603e3f89b1bb
-title: Usando o modo de composição para controlar a combinação alfa
+title: Usando o modo de composição para controlar a mesclagem alfa
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2ea2fc9d5be10e3a73bacf7f5a6dc5cbecb8c2992ac8cd961701f55fc2cb524d
@@ -11,19 +11,19 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119611977"
 ---
-# <a name="using-compositing-mode-to-control-alpha-blending"></a>Usando o modo de composição para controlar a combinação alfa
+# <a name="using-compositing-mode-to-control-alpha-blending"></a>Usando o modo de composição para controlar a mesclagem alfa
 
-Pode haver ocasiões em que você deseja criar um bitmap fora da tela que tem as seguintes características:
+Pode haver ocasiões em que você deseja criar um bitmap fora da tela com as seguintes características:
 
 -   Cores com valores alfabéticos inferiores a 255.
 -   As cores não têm combinação alfa umas com as outras ao criar o bitmap.
 -   Ao exibir o bitmap terminado, as cores no bitmap são combinadas em alfo com as cores da tela de fundo no dispositivo de vídeo.
 
-Para criar um bitmap desse tipo, construa um objeto [**Bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) em branco e, em seguida, construa um [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) com base nesse bitmap. De definir o modo de composição do **objeto Graphics** como CompositingModeSourceCopy.
+Para criar um bitmap desse tipo, construa um objeto de [**bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) em branco e, em seguida, construa um objeto [**gráfico**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) com base nesse bitmap. Defina o modo de composição do objeto **gráfico** como CompositingModeSourceCopy.
 
-O exemplo a seguir cria [**um objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) com base em um [**objeto Bitmap.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) O código usa o **objeto Graphics** junto com dois pincéis semitransparentes (alfa = 160) para pintar no bitmap. O código preenche uma elipse vermelha e uma elipse verde usando os pincéis semitransparentes. A elipse verde sobrepõe a elipse vermelha, mas o verde não é mesclado com o vermelho porque o modo de composição do objeto **Graphics** está definido como CompositingModeSourceCopy.
+O exemplo a seguir cria um objeto [**gráfico**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) com base em um objeto [**bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) . O código usa o objeto **Graphics** junto com dois pincéis semitransparentes (alfa = 160) para pintar no bitmap. O código preenche uma elipse vermelha e uma elipse verde usando os pincéis semitransparentes. A elipse verde sobrepõe a elipse vermelha, mas o verde não é mesclado com o vermelho porque o modo de composição do objeto **gráfico** é definido como CompositingModeSourceCopy.
 
-Em seguida, o código se prepara para desenhar na tela chamando [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) e criando um [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) com base em um contexto de dispositivo. O código desenha o bitmap na tela duas vezes: uma vez em uma tela de fundo branca e uma vez em uma tela de fundo multicolorida. Os pixels no bitmap que fazem parte das duas elipses têm um componente alfa de 160, de forma que as elipses são mescladas com as cores da tela de fundo na tela.
+Em seguida, o código se prepara para desenhar na tela chamando [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) e criando um objeto [**gráfico**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) com base em um contexto de dispositivo. O código desenha o bitmap na tela duas vezes: uma vez em uma tela de fundo branca e uma vez em uma tela de fundo multicolorida. Os pixels no bitmap que fazem parte das duas elipses têm um componente alfa de 160, de forma que as elipses são mescladas com as cores da tela de fundo na tela.
 
 
 ```
@@ -67,7 +67,7 @@ EndPaint(hWnd, &ps);
 
 A ilustração a seguir mostra a saída do código anterior. Observe que as elipses são mescladas com a tela de fundo, mas elas não são mescladas uma com a outra.
 
-![ilustração mostrando duas reellipses de cores diferentes, cada uma delas combinando-se com seu plano de fundo multicolorido](images/sourcecopy.png)
+![ilustração mostrando duas elipses com cores diferentes, cada uma misturada com seu plano de fundo multicolorido](images/sourcecopy.png)
 
 O exemplo de código anterior tem a seguinte instrução:
 
@@ -89,7 +89,7 @@ bitmapGraphics.SetCompositingMode(CompositingModeSourceOver);
 
 A ilustração a seguir mostra a saída do código revisado.
 
-![usando o modo de composição para controlar a ilustração de mesclagem alfa](images/sourceover.png)
+![usando o modo de composição para controlar a ilustração de mistura alfa](images/sourceover.png)
 
  
 

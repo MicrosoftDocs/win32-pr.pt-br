@@ -67,7 +67,7 @@
         - name: Gráficos de áudio
           href: audio-graphs.md
           items:
-            - name: Grafo de áudio XAudio2
+            - name: Graph de áudio XAudio2
               href: xaudio2-audio-graph.md
             - name: 'Como: Compilar um gráfico de processamento de áudio básico'
               href: how-to--build-a-basic-audio-processing-graph.md
@@ -219,9 +219,9 @@
               href: /windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createreverb
             - name: XAudio2CreateVolumeMeter
               href: /windows/desktop/api/xaudio2fx/nf-xaudio2fx-xaudio2createvolumemeter
-            - name: XAudio2CutoffFrequencyToOnePoleCoefficient
+            - name: XAudio2CutoffFrequencyToOneOneCoefficient
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2cutofffrequencytoonepolecoefficient
-            - name: XAudio2CutoffFrequencyToRadians
+            - name: XAudio2CutoffFrequencyToRadianos
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2cutofffrequencytoradians
             - name: XAudio2DecibelsToAmplitudeRatio
               href: /windows/desktop/api/xaudio2/nf-xaudio2-xaudio2decibelstoamplituderatio
@@ -274,11 +274,11 @@
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-enableeffect
                 - name: Método GetChannelVolumes
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-getchannelvolumes
-                - name: Método geteffectparameters
+                - name: Método GetEffectParameters
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-geteffectparameters
-                - name: Método geteffectstate
+                - name: Método GetEffectState
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-geteffectstate
-                - name: Método getfilterparameters
+                - name: Método GetFilterParameters
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-getfilterparameters
                 - name: Método GetOutputFilterParameters
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-getoutputfilterparameters
@@ -292,9 +292,9 @@
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-setchannelvolumes
                 - name: Método SetEffectChain
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectchain
-                - name: Método seteffectparameters
+                - name: Método SetEffectParameters
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-seteffectparameters
-                - name: Método setfilterparameters
+                - name: Método SetFilterParameters
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-setfilterparameters
                 - name: Método SetOutputFilterParameters
                   href: /windows/desktop/api/xaudio2/nf-xaudio2-ixaudio2voice-setoutputfilterparameters
@@ -367,7 +367,7 @@
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-calcinputframes
                 - name: Método CalcOutputFrames
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-calcoutputframes
-                - name: Método getregistrationproperties
+                - name: Método GetRegistrationProperties
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-getregistrationproperties
                 - name: Método Initialize
                   href: /windows/desktop/api/xapo/nf-xapo-ixapo-initialize
@@ -386,14 +386,14 @@
             - name: IXAPOParameters
               href: /windows/desktop/api/XAPO/nn-xapo-ixapoparameters
               items:
-                - name: Método Parameters
+                - name: Método GetParameters
                   href: /windows/desktop/api/xapo/nf-xapo-ixapoparameters-getparameters
-                - name: Método Parameters
+                - name: Método SetParameters
                   href: /windows/desktop/api/xapo/nf-xapo-ixapoparameters-setparameters
             - name: IXAPOHrtfParameters
               href: /windows/desktop/api/hrtfapoapi/nn-hrtfapoapi-ixapohrtfparameters
               items:
-                - name: Método setenvironment
+                - name: Método SetEnvironment
                   href: /windows/desktop/api/hrtfapoapi/nf-hrtfapoapi-ixapohrtfparameters-setenvironment
                 - name: Método SetSourceGain
                   href: /windows/desktop/api/hrtfapoapi/nf-hrtfapoapi-ixapohrtfparameters-setsourcegain
@@ -415,7 +415,7 @@
               href: /windows/desktop/api/HrtfApoApi/ns-hrtfapoapi-hrtfapoinit
             - name: HrtfDirectivity
               href: /windows/desktop/api/HrtfApoApi/ns-hrtfapoapi-hrtfdirectivity
-            - name: HrtfDirectivityCardioid
+            - name: HrtfDirectivityCamoid
               href: /windows/desktop/api/HrtfApoApi/ns-hrtfapoapi-hrtfdirectivitycardioid
             - name: HrtfDirectivityCone
               href: /windows/desktop/api/HrtfApoApi/ns-hrtfapoapi-hrtfdirectivitycone

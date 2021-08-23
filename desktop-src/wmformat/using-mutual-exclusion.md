@@ -3,18 +3,18 @@ title: Usando a exclusão mútua
 description: Usando a exclusão mútua
 ms.assetid: 7bb161db-a525-4a5e-bf99-5ebdf91457c7
 keywords:
-- SDK do Windows Media Format, exclusão mútua
+- Windows SDK do formato de mídia, exclusão mútua
 - exclusão mútua, sobre
 - perfis, exclusão mútua
 - fluxos, exclusão mútua
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51c17da913616fd4b31a0fff21784c8839ce8d12
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2de2388ac94c1acde55c81093ff98f8b00f19e4fd395bfa738db326c7b4b53ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585206"
 ---
 # <a name="using-mutual-exclusion"></a>Usando a exclusão mútua
 
@@ -31,7 +31,7 @@ As seções a seguir descrevem como trabalhar com tipos diferentes de exclusão 
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -40,9 +40,9 @@ As seções a seguir descrevem como trabalhar com tipos diferentes de exclusão 
 [**Trabalhando com perfis**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

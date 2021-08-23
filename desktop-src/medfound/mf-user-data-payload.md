@@ -1,29 +1,29 @@
 ---
-description: Define se uma carga de dados do usuário deve ser incluída no exemplo de saída.
+description: Define se um payload de dados do usuário deve ser incluído com o exemplo de saída.
 ms.assetid: 1F2B8275-9D4C-4732-9905-8ADE4CFD7496
-title: Atributo MF_USER_DATA_PAYLOAD (Mfidl. h)
+title: MF_USER_DATA_PAYLOAD atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c01355fd5ca58e174d843652e077fb363522ca8f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f05c962bc0e36cd80a40fbac04606b86d933f7ba0f9286955c28b3fb494307f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119604596"
 ---
-# <a name="mf_user_data_payload-attribute"></a>\_Atributo de \_ carga de dados do usuário MF \_
+# <a name="mf_user_data_payload-attribute"></a>Atributo MF \_ USER \_ DATA \_ PAYLOAD
 
-Define se uma carga de dados do usuário deve ser incluída no exemplo de saída.
+Define se um payload de dados do usuário deve ser incluído com o exemplo de saída.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**BLOB**
+**Blob**
 
 ## <a name="remarks"></a>Comentários
 
 Os dados do usuário podem conter dados como fechar dados de legenda ou dados de barra.
 
-Os dados do usuário são passados sem qualquer decodificação.
+Os dados do usuário são passados sem nenhuma decodificação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ Os dados do usuário são passados sem qualquer decodificação.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Os dados do usuário são passados sem qualquer decodificação.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de tipo de mídia](media-type-attributes.md)

@@ -4,12 +4,12 @@ description: Um conjunto de propriedades é identificado com um identificador de
 ms.assetid: 5f8eba37-c589-413e-9971-7ecb01dc6734
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cef9417f2f5fad7fd17dcc3d431f1d3565a3843
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e17b1125f642d3f24e24fa6040bc5e55ca3d48b2384aac551680b84c1496900f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662376"
 ---
 # <a name="names-in-istorage"></a>Nomes em IStorage
 
@@ -22,14 +22,14 @@ Ao converter de um FMTID para um nome de cadeia de caracteres Unicode correspond
 | FMTID                                                                                | Nome da cadeia de caracteres                       | Semântico                                                         |
 |--------------------------------------------------------------------------------------|-----------------------------------|------------------------------------------------------------------|
 | F29F85E0-4FF9-1068-AB91-08002B27B3D9                                                 | " \\ 005SummaryInformation"         | Informações de resumo da COM2                                         |
-| D5CDD502-2E9C-101B-9397-08002B2CF9AE D5CDD505-2E9C-101B-9397-08002B2CF9AE<br/> | " \\ 005DocumentSummaryInformation" | Informações de resumo do documento do Office e propriedades definidas pelo usuário. |
+| D5CDD502-2E9C-101B-9397-08002B2CF9AE D5CDD505-2E9C-101B-9397-08002B2CF9AE<br/> | " \\ 005DocumentSummaryInformation" | Office informações de resumo do documento e propriedades definidas pelo usuário. |
 
 
 
  
 
 > [!Note]  
-> O conjunto de propriedades **DocumentSummaryInformation** e **UserDefined** é exclusivo, pois ele contém duas seções. Várias seções não são permitidas em nenhum outro conjunto de propriedades. Para obter mais informações, consulte [formato de conjunto de propriedades serializadas de armazenamento estruturado](structured-storage-serialized-property-set-format.md)e [os conjuntos de propriedades DocumentSummaryInformation e UserDefined](the-documentsummaryinformation-and-userdefined-property-sets.md). A primeira seção foi definida como parte de COM; o segundo foi definido por Microsoft Office.
+> O conjunto de propriedades **DocumentSummaryInformation** e **UserDefined** é exclusivo, pois ele contém duas seções. Várias seções não são permitidas em nenhum outro conjunto de propriedades. para obter mais informações, consulte [formato de conjunto de propriedades serializadas Armazenamento estruturadas](structured-storage-serialized-property-set-format.md)e [os conjuntos de propriedades DocumentSummaryInformation e userdefined](the-documentsummaryinformation-and-userdefined-property-sets.md). A primeira seção foi definida como parte de COM; o segundo foi definido por Microsoft Office.
 
  
 

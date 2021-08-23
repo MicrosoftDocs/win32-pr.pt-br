@@ -1,17 +1,17 @@
 ---
-description: Esta seção contém informações sobre as estruturas incluídas na biblioteca do utilitário D3DX em gráficos do Direct3D 9.
+description: Esta seção contém informações sobre as estruturas incluídas na biblioteca de utilitários D3DX nos Gráficos do Direct3D 9.
 ms.assetid: eee684f1-2d79-444b-86cd-322bf53ab756
-title: Estruturas D3DX (gráficos do Direct3D 9)
+title: Estruturas D3DX (elementos gráficos direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 616797f20a75ed7bd9a49e5bf811fff451d69078
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 75d96eae38a8d07d4b89192c255b58fd0f41db0d8c13a3f8d8f0c87c6e477501
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728206"
 ---
-# <a name="d3dx-structures-direct3d-9-graphics"></a>Estruturas D3DX (gráficos do Direct3D 9)
+# <a name="d3dx-structures-direct3d-9-graphics"></a>Estruturas D3DX (elementos gráficos direct3D 9)
 
 Esta seção contém informações sobre as estruturas incluídas na biblioteca do utilitário D3DX.
 
@@ -20,15 +20,15 @@ Esta seção contém informações sobre as estruturas incluídas na biblioteca 
 -   [**D3DXBONECOMBINATION**](d3dxbonecombination.md)
 -   [**D3DXCOLOR**](d3dxcolor.md)
 -   [**Extensões D3DXCOLOR**](d3dxcolor-extensions.md)
--   [**D3DXCONSTANT \_ desc**](d3dxconstant-desc.md)
--   [**D3DXCONSTANTTABLE \_ desc**](d3dxconstanttable-desc.md)
+-   [**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md)
+-   [**D3DXCONSTANTTABLE \_ DESC**](d3dxconstanttable-desc.md)
 -   [**D3DXFLOAT16**](d3dxfloat16.md)
 -   [**Extensões D3DXFLOAT16**](d3dxfloat16-extensions.md)
--   [**D3DXFONT \_ desc**](d3dxfont-desc.md)
+-   [**D3DXFONT \_ DESC**](d3dxfont-desc.md)
 -   [**D3DXFRAME**](d3dxframe.md)
--   [**Informações de D3DXIMAGE \_**](d3dximage-info.md)
+-   [**D3DXIMAGE \_ INFO**](d3dximage-info.md)
 -   [**D3DXINTERSECTINFO**](d3dxintersectinfo.md)
--   [**\_Retorno de chamada D3DXKEY**](d3dxkey-callback.md)
+-   [**RETORNO DE CHAMADA D3DXKEY \_**](d3dxkey-callback.md)
 -   [**D3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md)
 -   [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)
 -   [**D3DXMATERIAL**](d3dxmaterial.md)
@@ -42,16 +42,16 @@ Esta seção contém informações sobre as estruturas incluídas na biblioteca 
 -   [**Extensões D3DXPLANE**](d3dxplane-extensions.md)
 -   [**D3DXQUATERNION**](d3dxquaternion.md)
 -   [**Extensões D3DXQUATERNION**](d3dxquaternion-extensions.md)
--   [**D3DXRTE \_ desc**](d3dxrte-desc.md)
--   [**D3DXRTS \_ desc**](d3dxrts-desc.md)
+-   [**D3DXRTE \_ DESC**](d3dxrte-desc.md)
+-   [**D3DXRTS \_ DESC**](d3dxrts-desc.md)
 -   [**D3DXSHADER \_ CONSTANTINFO**](d3dxshader-constantinfo.md)
--   [**\_Constante D3DXSHADER**](d3dxshader-constanttable.md)
+-   [**D3DXSHADER \_ CONSTANTTABLE**](d3dxshader-constanttable.md)
 -   [**D3DXSHADER \_ STRUCTMEMBERINFO**](d3dxshader-structmemberinfo.md)
 -   [**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md)
 -   [**D3DXSHMATERIAL**](d3dxshmaterial.md)
 -   [**D3DXSHPRTSPLITMESHCLUSTERDATA**](d3dxshprtsplitmeshclusterdata.md)
 -   [**D3DXSHPRTSPLITMESHVERTDATA**](d3dxshprtsplitmeshvertdata.md)
--   [**D3DXTRACK \_ desc**](d3dxtrack-desc.md)
+-   [**D3DXTRACK \_ DESC**](d3dxtrack-desc.md)
 -   [**D3DXVECTOR2**](d3dxvector2.md)
 -   [Extensões D3DXVECTOR2](d3dxvector2-extensions.md)
 -   [**D3DXVECTOR3**](d3dxvector3.md)

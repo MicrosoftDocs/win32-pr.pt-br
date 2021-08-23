@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2a824249fde43de92c65d64d02fbab4097b7dc34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d22427056b126c2fcb49f7e395c4a43161eaee70c9d9ed8b9ac7020be88504fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728906"
 ---
 # <a name="jet_threadstatsadd-method"></a>JET_THREADSTATS. Adicionar método
 
@@ -75,7 +75,7 @@ public static JET_THREADSTATS Add(
     
     A segunda JET_THREADSTATS.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_THREADSTATS](./jet-threadstats-structure2.md)  
 Uma JET_THREADSTATS que contém o resultado da adição das estatísticas em T1 e T2.  

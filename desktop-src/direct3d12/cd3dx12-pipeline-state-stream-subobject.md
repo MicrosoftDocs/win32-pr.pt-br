@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT (D3dx12. h)
-description: Uma estrutura auxiliar de modelo usada para encapsular os pares de dados de tipo de subobjeto e subobjeto como um único objeto adequado para uma descrição de fluxo.
+title: CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT (D3dx12.h)
+description: Uma estrutura auxiliar modelo usada para encapsular pares de dados de subobjeto e tipo de subobjeto como um único objeto adequado para uma descrição de fluxo.
 ms.assetid: 4C59D483-6ED8-49BD-B91B-2A912AFE2409
 keywords:
-- Estrutura de CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT
+- CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11353581dddc2bd0d438b955d1292b667fba39ad
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5d945296ae4ee09710b74b9fdf2259251632d25fb309ede2983858c0c59be72d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105793837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729476"
 ---
-# <a name="cd3dx12_pipeline_state_stream_subobject-structure"></a>\_Estrutura de \_ \_ subobjeto de fluxo do estado do pipeline CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_subobject-structure"></a>Estrutura \_ \_ \_ \_ SUBOBJECT DO FLUXO DE ESTADO DO PIPELINE CD3DX12
 
-Uma estrutura auxiliar de modelo usada para encapsular os pares de dados de tipo de subobjeto e subobjeto como um único objeto adequado para uma descrição de fluxo.
+Uma estrutura auxiliar modelo usada para encapsular pares de dados de subobjeto e tipo de subobjeto como um único objeto adequado para uma descrição de fluxo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT {
 
 <dl> <dt>
 
-**Subobjeto de fluxo do estado do \_ pipeline CD3DX12 \_ \_ \_**
+**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SUBOBJECT**
 </dt> <dd>
 
-Cria uma nova instância, não inicializada, de um \_ subobjeto de fluxo de estado de pipeline CD3DX12 \_ \_ \_ .
+Cria uma nova instância, não reinicializada, de um \_ \_ \_ SUBOBJECT DE FLUXO DE ESTADO DE PIPELINE CD3DX12. \_
 
 </dd> <dt>
 
-**CD3DX12 \_ \_Subobjeto \_ \_ de fluxo do estado do pipeline (** InnerStructType * * const &i) * *
+**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SUBOBJECT(** InnerStructType** const &i)**
 </dt> <dd>
 
-Cria uma nova \_ \_ \_ \_ instância de modelo de subobjeto de fluxo de estado de pipeline do CD3DX12, inicializada com um tipo de subobjeto do tipo de subobjeto do [**estado do \_ pipeline \_ \_ \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type) e dados de subobjeto copiados de i. Tanto o tipo de subobjeto quanto o tipo de dados de subobjeto são fornecidos como parâmetros de modelo, **Type** e **InnerStructType**, respectivamente. Para obter mais informações, consulte os comentários abaixo.
+Cria uma nova instância de modelo SUBOBJECT DE FLUXO DE ESTADO DE PIPELINE CD3DX12, inicializada com um \_ \_ tipo de \_ \_ subobjeto [**D3D12 \_ PIPELINE STATE \_ \_ SUBOBJECT \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type) e dados de subobjeto copiados de i . O tipo de subobjeto e o tipo de dados subobjeto são dados como parâmetros de modelo, **Type** e **InnerStructType,** respectivamente. Para obter mais informações, consulte Comentários abaixo.
 
 </dd> <dt>
 
-**Operator = (** InnerStructType * * const& i) * *
+**operator=(** InnerStructType** const& i)**
 </dt> <dd>
 
 Operador de atribuição de cópia.
 
 </dd> <dt>
 
-**constante **InnerStructType**() de operador**
+**operator **InnerStructType**() const**
 </dt> <dd>
 
-Conversão implícita para o tipo de dados de subobjeto fornecido pelo parâmetro de modelo **InnerStructType** .
+Conversão implícita para o tipo de dados subobjeto dado pelo **parâmetro de modelo InnerStructType.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O \_ \_ subobjeto de fluxo do estado do pipeline CD3DX12 \_ \_ é um modelo definido da seguinte maneira:
+CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT é um modelo definido da seguinte forma:
 
 
 ```C++
@@ -95,34 +95,34 @@ public:
 
 
 
-O parâmetro de modelo **InnerStructType** especifica o tipo de dados de subobjeto; ou seja, os detalhes do subobjeto a serem codificados em um fluxo. O **tipo** de parâmetro de modelo especifica o tipo de subobjeto; ou seja, o tipo da estrutura especificada pelo parâmetro de modelo **InnerStructType**. O parâmetro de modelo **defaultArg** especifica um valor opcional para o qual os dados de subobjeto serão inicializados quando uma instância da instanciação de modelo correspondente é construída por padrão; por exemplo, para construir por padrão um [**fluxo de estado do pipeline do CD3DX12, o \_ \_ \_ Stream \_ Blend \_ desc**](cd3dx12-pipeline-state-stream-blend-desc.md) foi inicializado com padrões de estado de mesclagem comuns usando o [**\_ padrão CD3DX12**](cd3dx12-default.md).
+O parâmetro **de modelo InnerStructType** especifica o tipo de dados subobjeto; ou seja, os detalhes do subobjeto a serem codificados em um fluxo. O parâmetro de **modelo Type** especifica o tipo de subobjeto; ou seja, o tipo da estrutura especificada pelo parâmetro de modelo **InnerStructType**. O parâmetro de modelo **DefaultArg** especifica um valor opcional para o quais os dados de subobjeto serão inicializados quando uma instância da instanciação de modelo correspondente for construída por padrão; por exemplo, para construir um [**CD3DX12 \_ PIPELINE STATE STREAM BLEND \_ \_ \_ \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md) inicializado com padrões comuns de blend-state usando [**CD3DX12 \_ DEFAULT**](cd3dx12-default.md).
 
-Aqui estão as instanciações de modelo que são definidas:
+Aqui estão as instações de modelo definidas:
 
--   [**\_Sinalizadores de \_ fluxo de estado do pipeline CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-flags.md)
--   [**\_Máscara de \_ nó de fluxo de estado de pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-node-mask.md)
--   [**\_ \_ \_ Assinatura raiz do fluxo de estado \_ do pipeline CD3DX12 \_**](cd3dx12-pipeline-state-stream-root-signature.md)
--   [**\_Layout de \_ entrada de fluxo de estado de pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-input-layout.md)
--   [**\_Valor de \_ \_ \_ \_ \_ recorte de faixa \_ do Stream IB do CD3DX12 pipeline**](cd3dx12-pipeline-state-stream-ib-strip-cut-value.md)
--   [**\_ \_ \_ Topologia primitiva de fluxo de estado \_ de pipeline CD3DX12 \_**](cd3dx12-pipeline-state-stream-primitive-topology.md)
--   [**\_Fluxo de estado do pipeline CD3DX12 \_ \_ \_ vs**](cd3dx12-pipeline-state-stream-vs.md)
--   [**\_Fluxo de estado do pipeline CD3DX12 \_ \_ \_ GS**](cd3dx12-pipeline-state-stream-gs.md)
--   [**\_Saída de \_ fluxo de fluxo de estado de pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-stream-output.md)
--   [**Fluxo de estado de pipeline do CD3DX12 \_ \_ \_ \_ HS**](cd3dx12-pipeline-state-stream-hs.md)
--   [**Fluxo de estado do pipeline do CD3DX12 \_ \_ \_ \_ DS**](cd3dx12-pipeline-state-stream-ds.md)
--   [**\_PS de \_ fluxo de estado do pipeline CD3DX12 \_ \_**](cd3dx12-pipeline-state-stream-ps.md)
--   [**\_Fluxo de \_ estado do pipeline \_ do CD3DX12 \_**](cd3dx12-pipeline-state-stream-cs.md)
--   [**\_ \_ \_ Stream \_ Blend de estado \_ do pipeline CD3DX12**](cd3dx12-pipeline-state-stream-blend-desc.md)
--   [**\_Estêncil de \_ profundidade do fluxo de estado do pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-depth-stencil.md)
--   [**\_STENCIL1 de \_ profundidade de fluxo de estado de pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-depth-stencil1.md)
--   [**\_Formato de \_ \_ estêncil de profundidade do fluxo de estado \_ do \_ pipeline CD3DX12 \_**](cd3dx12-pipeline-state-stream-depth-stencil-format.md)
--   [**\_ \_ \_ Rasterizador de fluxo de estado de pipeline CD3DX12 \_**](cd3dx12-pipeline-state-stream-rasterizer.md)
--   [**\_Formatos de \_ \_ destino de renderização de fluxo de estado \_ de \_ pipeline CD3DX12 \_**](cd3dx12-pipeline-state-stream-render-target-formats.md)
--   [**\_Exemplo de fluxo de estado do pipeline CD3DX12 \_ \_ \_ \_ desc**](cd3dx12-pipeline-state-stream-sample-desc.md)
--   [**\_Máscara de \_ exemplo de fluxo de estado de pipeline CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-sample-mask.md)
--   [**PSO do fluxo de estado do pipeline do CD3DX12 \_ \_ \_ \_ em cache \_**](cd3dx12-pipeline-state-stream-cached-pso.md)
+-   [**SINALIZADORES DE FLUXO DE ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-flags.md)
+-   [**MÁSCARA DE NÓ DE FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-node-mask.md)
+-   [**ASSINATURA RAIZ DO FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-root-signature.md)
+-   [**LAYOUT DE ENTRADA DE FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-input-layout.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ IB \_ STRIP \_ CUT \_ VALUE**](cd3dx12-pipeline-state-stream-ib-strip-cut-value.md)
+-   [**TOPOLOGIA PRIMITIVA DO FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-primitive-topology.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ VS**](cd3dx12-pipeline-state-stream-vs.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ GS**](cd3dx12-pipeline-state-stream-gs.md)
+-   [**SAÍDA DE FLUXO DE FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-stream-output.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ HS**](cd3dx12-pipeline-state-stream-hs.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ DS**](cd3dx12-pipeline-state-stream-ds.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ PS**](cd3dx12-pipeline-state-stream-ps.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ CS**](cd3dx12-pipeline-state-stream-cs.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ BLEND \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md)
+-   [**ESTÊNCIL DE PROFUNDIDADE DE FLUXO \_ DE ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-depth-stencil.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ DEPTH \_ STENCIL1**](cd3dx12-pipeline-state-stream-depth-stencil1.md)
+-   [**FORMATO DE \_ \_ \_ \_ \_ ESTÊNCIL DE PROFUNDIDADE DO FLUXO DE ESTADO DO PIPELINE \_ CD3DX12**](cd3dx12-pipeline-state-stream-depth-stencil-format.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ RASTERIZER**](cd3dx12-pipeline-state-stream-rasterizer.md)
+-   [**FORMATOS DE DESTINO DE RENDERIZAÇÃO DO \_ FLUXO DE ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-render-target-formats.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ SAMPLE \_ DESC**](cd3dx12-pipeline-state-stream-sample-desc.md)
+-   [**MÁSCARA DE EXEMPLO DE FLUXO DE \_ ESTADO DO PIPELINE CD3DX12 \_ \_ \_ \_**](cd3dx12-pipeline-state-stream-sample-mask.md)
+-   [**CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_ CACHED \_ PSO**](cd3dx12-pipeline-state-stream-cached-pso.md)
 
-O [**CD3DX12 \_ pipeline \_ State \_ Stream \_ Blend \_**](cd3dx12-pipeline-state-stream-blend-desc.md), o [**\_ \_ \_ \_ \_ estêncil profundidade do fluxo do CD3DX12**](cd3dx12-pipeline-state-stream-depth-stencil.md)do pipeline, o CD3DX12 pipeline de nível de fluxo de perfil [**\_ \_ \_ \_ \_ STENCIL1**](cd3dx12-pipeline-state-stream-depth-stencil1.md)e as estruturas do [**\_ \_ \_ \_ rasterizador de fluxo de perfil CD3DX12**](cd3dx12-pipeline-state-stream-rasterizer.md) são definidas para inicializar seus dados de subobjeto com padrões comuns usando [**CD3DX12 \_ padrão**](cd3dx12-default.md).
+As estruturas CD3DX12 PIPELINE STATE STREAM [**\_ BLEND \_ \_ \_ \_ DESC**](cd3dx12-pipeline-state-stream-blend-desc.md), [**CD3DX12 PIPELINE \_ STATE STREAM DEPTH \_ \_ \_ \_ STENCIL**](cd3dx12-pipeline-state-stream-depth-stencil.md), [**CD3DX12 \_ PIPELINE STATE STREAM DEPTH \_ \_ \_ \_ STENCIL1**](cd3dx12-pipeline-state-stream-depth-stencil1.md)e [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ RASTERIZER**](cd3dx12-pipeline-state-stream-rasterizer.md) são definidas para inicializar seus dados de subobjeto com padrões comuns usando [**CD3DX12 \_ DEFAULT**](cd3dx12-default.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,7 +130,7 @@ O [**CD3DX12 \_ pipeline \_ State \_ Stream \_ Blend \_**](cd3dx12-pipeline-stat
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -141,7 +141,7 @@ O [**CD3DX12 \_ pipeline \_ State \_ Stream \_ Blend \_**](cd3dx12-pipeline-stat
 [Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de pipeline D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ \_ \_ SUBOBJETO DE ESTADO DO PIPELINE D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

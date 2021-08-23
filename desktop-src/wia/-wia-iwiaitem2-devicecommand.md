@@ -1,5 +1,5 @@
 ---
-description: Emite um comando para um dispositivo de hardware de aquisição de imagem do Windows (WIA) 2,0.
+description: emite um comando para um dispositivo de hardware 2,0 WIA (aquisição de imagem Windows).
 ms.assetid: a077448f-2029-4fd3-8bce-c0291afd0b79
 title: 'IWiaItem2: método eviceCommand de:D (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 2961a3c0e0d1b75a487b9bf112e76bee8c937a72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f70fd7b4a987dac3a079651f2cbc04dc50817ba8a43f8da1449a3f605683ba65
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706306"
 ---
 # <a name="iwiaitem2devicecommand-method"></a>IWiaItem2: método eviceCommand de:D
 
-Emite um comando para um dispositivo de hardware de aquisição de imagem do Windows (WIA) 2,0.
+emite um comando para um dispositivo de hardware 2,0 WIA (aquisição de imagem Windows).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,9 +53,9 @@ Atualmente não utilizado. Deve ser definido como zero.
 *pCmdGUID* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
-Especifica o comando a ser enviado para o dispositivo WIA 2,0. Consulte [_ *comandos* * do dispositivo WIA](-wia-wia-device-commands.md).
+Especifica o comando a ser enviado para o dispositivo WIA 2,0. Consulte [**comandos do dispositivo WIA**](-wia-wia-device-commands.md).
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Recebe o endereço de um ponteiro para o item [**IWiaItem2**](-wia-iwiaitem2.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -98,9 +98,9 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

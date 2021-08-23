@@ -4,12 +4,12 @@ ms.assetid: c0dcf305-ec81-45df-891c-8aaacd95f620
 title: Propriedade MFPKEY_RESIZE_PANSCANAPWIDTH (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65040307901bf01fee6c095f32dd4e579b6caad3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f912541eb0ce5f0dab304c83bb90e7f7b0eef36f7d62685801ac5d11be01cf73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603747"
 ---
 # <a name="mfpkey_resize_panscanapwidth-property"></a>MFPKEY \_ redimensionar \_ PANSCANAPWIDTH Propriedade
 
@@ -33,9 +33,9 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

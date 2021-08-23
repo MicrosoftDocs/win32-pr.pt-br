@@ -1,9 +1,9 @@
 ---
-title: Event. x
-description: O atributo x recupera a coordenada x do ponteiro do mouse em relação à janela do aplicativo.
+title: event.x
+description: O atributo x recupera a coordenada X do ponteiro do mouse em relação à janela do aplicativo.
 ms.assetid: aaf3bd56-4617-4e38-9460-834baa27bcc2
 keywords:
-- Event. x Windows Media Player
+- event.x Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd2a00c0b898eaedbcd12827d5407f4783a845a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5e5ad77f05deff7d119c4dd4fe5409d53dba9deee51dd6eff05b73bce3c4c50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650336"
 ---
-# <a name="eventx"></a>Event. x
+# <a name="eventx"></a>event.x
 
-O atributo **x** recupera a coordenada x do ponteiro do mouse em relação à janela do aplicativo.
+O **atributo x** recupera a coordenada X do ponteiro do mouse em relação à janela do aplicativo.
 
 ``` syntax
 event.x
@@ -29,7 +29,7 @@ event.x
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** somente leitura (**Long**).
+Esse atributo é um Número somente **leitura** (**long).**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um **número** somente leitura (**Long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -48,7 +48,7 @@ Esse atributo é um **número** somente leitura (**Long**).
 [**Atributos de evento de ambiente**](ambient-event-attributes.md)
 </dt> <dt>
 
-[**evento. y**](event-y.md)
+[**event.y**](event-y.md)
 </dt> </dl>
 
  

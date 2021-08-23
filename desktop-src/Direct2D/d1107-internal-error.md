@@ -1,9 +1,9 @@
 ---
-title: Erro interno de D1107
-description: Erro interno de D1107
+title: Erro interno D1107
+description: Erro interno D1107
 ms.assetid: 8faafff5-246d-401d-9a28-6d1a26fce73f
 keywords:
-- Erro interno de D1107 Direct2D
+- Erro interno D1107 Direct2D
 topic_type:
 - apiref
 api_name:
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a518968da713416729e8b4d70b4cda5356514e0
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: 396dff22b54cc788386bd6c76f8c0dd4a1b777a5368460ec969d4493f902df22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105769131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641916"
 ---
-# <a name="d1107-internal-error"></a>D1107: erro interno
+# <a name="d1107-internal-error"></a>D1107: Erro interno
 
-Foi encontrado um erro de camada de depuração interna. Código de código \[  \] . \[ *\_ Número do erro* de erro \] .
+Foi encontrado um erro interno da camada de depuração. Código \[ *de código* \] . Número \[ *do \_ erro* \] .
 
 ## <a name="placeholders"></a>Espaços reservados
 
 <dl> <dt>
 
-<span id="code"></span><span id="CODE"></span>*auto-completar*
+<span id="code"></span><span id="CODE"></span>*Código*
 </dt> <dd>
 
 Um código de erro.
 
 </dd> <dt>
 
-<span id="error_number"></span><span id="ERROR_NUMBER"></span>*número do erro \_*
+<span id="error_number"></span><span id="ERROR_NUMBER"></span>*número \_ do erro*
 </dt> <dd>
 
 Um número de erro.

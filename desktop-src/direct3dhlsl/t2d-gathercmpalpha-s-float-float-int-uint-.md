@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: GatherCmpAlpha (S, float, float, int, uint)'
-description: 'Para quatro valores de Texel que seriam usados em uma operação de filtragem de bi linear, o retorna uma comparação de seu componente alfa em relação a um valor de comparação junto com o status de mapeamento de bloco. | Função Texture2D:: GatherCmpAlpha (S, float, float, int, uint)'
+title: Função Texture2D::GatherCmpAlpha(S,float,float,int,uint)
+description: Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente alfa com um valor de comparação junto com o status de mapeamento de peça. | Função Texture2D::GatherCmpAlpha(S,float,float,int,uint)
 ms.assetid: 4E281512-2E0A-49A5-B568-8CE793A854F9
 keywords:
-- HLSL da função GatherCmpAlpha
+- Função GatherCmpAlpha HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2c9a323f0220a593d783de3e87e8dc8bce6f53a1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e5d4cc054d832bcaea7987fda26f8c000a7c6c2bbfe5e2f13366a99fcddb0e01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671176"
 ---
-# <a name="texture2dgathercmpalphasfloatfloatintuint-function"></a>Função Texture2D:: GatherCmpAlpha (S, float, float, int, uint)
+# <a name="texture2dgathercmpalphasfloatfloatintuint-function"></a>Função Texture2D::GatherCmpAlpha(S,float,float,int,uint)
 
-Para quatro valores de Texel que seriam usados em uma operação de filtragem de bi linear, o retorna uma comparação de seu componente alfa em relação a um valor de comparação junto com o status de mapeamento de bloco.
+Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente alfa com um valor de comparação junto com o status de mapeamento de peça.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,31 +46,31 @@ TemplateType GatherCmpAlpha(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **samplestate**
+Tipo: **SamplerState**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*Comparevalue* \[ no\]
+*CompareValue* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-Um valor para comparar cada valor de amostra.
+Um valor para comparar cada um com cada valor amostrado.
 
 </dd> <dt>
 
-*Deslocamento* \[ no\]
+*Deslocamento* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -79,16 +79,16 @@ O deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -96,13 +96,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

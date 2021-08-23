@@ -3,38 +3,38 @@ title: Sobre o sistema de cores do Windows versão 1.0
 description: Sobre o sistema de cores do Windows versão 1.0
 ms.assetid: 2a162840-660e-4a66-ad16-ef3c9b07925e
 keywords:
-- O WCS (sistema de cores do Windows), sobre
-- WCS (sistema de cores do Windows), sobre
-- gerenciamento de cores de imagem, WCS (sistema de cores do Windows)
-- gerenciamento de cores, WCS (sistema de cores do Windows)
-- cores, WCS (sistema de cores do Windows)
+- Windows Sistema de cores (WCS), sobre
+- WCS (Windows sistema de cores), sobre
+- gerenciamento de cores de imagem, WCS (Windows color System)
+- gerenciamento de cores, WCS (Windows color System)
+- cores, WCS (Windows Color System)
 - ICM (Gerenciamento de cores de imagem)
 - ICM (gerenciamento de cores de imagem)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15ad2673f8b0943e16a1fbbacde11c4469d00b4e
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 380614e747144aa679d8e378818c4b6d98ee1790b119d322919265694c0beb4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105791113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706686"
 ---
 # <a name="about-windows-color-system-version-10"></a>Sobre o sistema de cores do Windows versão 1.0
 
-A tecnologia Microsoft Windows Color System (WCS) garante que uma imagem colorida, um elemento gráfico ou um objeto de texto seja renderizado o mais próximo possível de sua intenção original em qualquer dispositivo, apesar das diferenças nas tecnologias de geração de imagens e funcionalidades de cores entre os dispositivos. Quer você esteja verificando uma imagem ou outro gráfico em um scanner de cor, baixando-o pela Internet, exibindo ou editando-o na tela ou gerando-o em papel, filme ou outra mídia, o WCS 1,0 ajuda a manter suas cores consistentes e precisas.
+a tecnologia WCS (Microsoft Windows Color System) garante que uma imagem colorida, um elemento gráfico ou um objeto de texto seja renderizado o mais próximo possível de sua intenção original em qualquer dispositivo, apesar das diferenças nas tecnologias de geração de imagens e funcionalidades de cores entre os dispositivos. Quer você esteja verificando uma imagem ou outro gráfico em um scanner de cor, baixando-o pela Internet, exibindo ou editando-o na tela ou gerando-o em papel, filme ou outra mídia, o WCS 1,0 ajuda a manter suas cores consistentes e precisas.
 
-O WCS 1,0 é parte integrante do Microsoft Windows porque o WCS 1,0 é integrado à família de sistemas operacionais Windows como um conjunto de funções de API do Win32, ele está prontamente disponível para qualquer aplicativo, Driver de dispositivo, ferramenta de calibragem de dispositivo ou módulo de gerenciamento de cores (CMM).
+o wcs 1,0 é parte integrante do Microsoft Windows porque o wcs 1,0 é integrado à família de sistemas operacionais Windows como um conjunto de funções de API do Win32, está prontamente disponível para qualquer aplicativo, driver de dispositivo, ferramenta de calibragem de dispositivo ou módulo de gerenciamento de cores (CMM).
 
-A versão 1,0 do ICM (Image Color Management) foi fornecida no Microsoft Windows 95 e fornece recursos básicos de gerenciamento de cores em contextos de dispositivo do Windows.
+a versão 1,0 do gerenciamento de cores de imagem (ICM) foi fornecida no Microsoft Windows 95 e fornece recursos básicos de gerenciamento de cores em Windows contextos de dispositivo.
 
-O ICM versão 2,0 está incluído no Windows 98, no Windows Millennium Edition, no Windows 2000 e no Windows XP e inclui funções que implementaram o gerenciamento de cores fora dos contextos de dispositivo. Essas funções eram adequadas para requisitos de gerenciamento de cores mais exigentes e oferecem aos aplicativos mais controle sobre o processo de gerenciamento de cores.
+ICM versão 2,0 está incluída em Windows 98, Windows Millennium Edition, Windows 2000 e Windows XP e funções incluídas que implementaram o gerenciamento de cores fora dos contextos de dispositivo. Essas funções eram adequadas para requisitos de gerenciamento de cores mais exigentes e oferecem aos aplicativos mais controle sobre o processo de gerenciamento de cores.
 
-O WCS versão 1,0 está incluído no Windows Vista e inclui uma variedade de novas funções que fornecem melhorias significativas em flexibilidade, transparência, previsibilidade e extensiblity para fornecedores.
+o WCS versão 1,0 está incluído no Windows Vista e inclui uma variedade de novas funções que fornecem melhorias significativas em flexibilidade, transparência, previsibilidade e extensiblity para fornecedores.
 
-Que tipos de aplicativos serão beneficiados com o uso do WCS 1,0? Quase todos os aplicativos executados em um ambiente do Windows Vista atualmente. A capacidade básica de gerenciamento de cores está se tornando um requisito para aplicativos de todos os tipos.
+Que tipos de aplicativos serão beneficiados com o uso do WCS 1,0? quase todos os aplicativos em execução em um ambiente Windows Vista hoje. A capacidade básica de gerenciamento de cores está se tornando um requisito para aplicativos de todos os tipos.
 
-A exibição de cores e a impressão melhoraram nos últimos anos até o ponto em que as imagens coloridas de foto e os gráficos de cores complexos são normalmente usados não apenas na publicação de área de trabalho, mas também em um amplo espectro de aplicativos de dados e de apresentação. As tecnologias de objeto, como COM e ActiveX, possuem objetos coloridos em praticamente todos os tipos de espaço de dados.
+A exibição de cores e a impressão melhoraram nos últimos anos até o ponto em que as imagens coloridas de foto e os gráficos de cores complexos são normalmente usados não apenas na publicação de área de trabalho, mas também em um amplo espectro de aplicativos de dados e de apresentação. tecnologias de objeto, como COM e ActiveX, têm objetos coloridos incorporados em praticamente todos os tipos de espaço de dados.
 
 Catálogos de roupas, arte online, álbuns de fotos da família, logotipos de negócios, gráficos, grafos, apresentações, visualizações de impressão e simulações de cores são apenas alguns exemplos de aplicativos diários nos quais a cor é importante.
 

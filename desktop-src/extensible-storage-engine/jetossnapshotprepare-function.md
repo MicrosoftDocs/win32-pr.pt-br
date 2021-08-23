@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetOSSnapshotPrepare'
+description: 'Saiba mais sobre: Função JetOSSnapshotPrepare'
 title: Função JetOSSnapshotPrepare
 TOCTitle: JetOSSnapshotPrepare Function
 ms:assetid: 364cbcba-7ddb-4748-8417-e885a5984b0d
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 67ccf9a5b21ccb9a4f94ba5aa4f995e4bb9017bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f647a3bac0f69920eb7d0d59825739ae17e9f00748879bd9f54eeef4bcffb899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728136"
 ---
 # <a name="jetossnapshotprepare-function"></a>Função JetOSSnapshotPrepare
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetossnapshotprepare-function"></a>Função JetOSSnapshotPrepare
 
-A função **JetOSSnapshotPrepare** começa a preparação para uma sessão de instantâneo. Uma sessão de instantâneo é um intervalo de tempo curto no qual o mecanismo não emite nenhum IOs de gravação para o disco, para que o mecanismo possa participar de uma sessão de instantâneo de volume (quando controlada por um gravador de instantâneo).
+A **função JetOSSnapshotPrepare** inicia as preparações para uma sessão de instantâneo. Uma sessão de instantâneo é um intervalo de tempo curto no qual o mecanismo não em emitida nenhuma E/S de gravação no disco, para que o mecanismo possa participar de uma sessão de instantâneo de volume (quando controlado por um snapshot writer).
 
-**Windows XP:** o **JetOSSnapshotPrepare** é introduzido no Windows XP.  
+**Windows XP:****JetOSSnapshotPrepare** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotPrepare(
@@ -51,7 +51,7 @@ O identificador da sessão de instantâneo a ser iniciada.
 
 *grbit*
 
-As opções para esta chamada. Esse parâmetro pode ter uma combinação dos valores a seguir.
+As opções para essa chamada. Esse parâmetro pode ter uma combinação dos valores a seguir.
 
 <table>
 <colgroup>
@@ -71,7 +71,7 @@ As opções para esta chamada. Esse parâmetro pode ter uma combinação dos val
 </tr>
 <tr class="even">
 <td><p>JET_bitIncrementalSnapshot</p></td>
-<td><p>Somente os arquivos de log serão criados.</p></td>
+<td><p>Somente arquivos de log serão tirados.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitCopySnapshot</p></td>
@@ -79,7 +79,7 @@ As opções para esta chamada. Esse parâmetro pode ter uma combinação dos val
 </tr>
 <tr class="even">
 <td><p>JET_bitContinueAfterThaw</p></td>
-<td><p>A sessão de instantâneo ocorre após <a href="gg269229(v=exchg.10).md">JetOSSnapshotThaw</a> e exigirá uma chamada de função <a href="gg294136(v=exchg.10).md">JetOSSnapshotEnd</a> .</p></td>
+<td><p>A sessão de instantâneo ocorre após <a href="gg269229(v=exchg.10).md">JetOSSnapshotThaw</a> e exigirá uma chamada de função <a href="gg294136(v=exchg.10).md">JetOSSnapshotEnd.</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_bitExplicitPrepare</p></td>
@@ -92,7 +92,7 @@ As opções para esta chamada. Esse parâmetro pode ter uma combinação dos val
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -112,7 +112,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>O ponteiro da ID do instantâneo é nulo ou o parâmetro <em>grbit</em> é inválido.</p></td>
+<td><p>O ponteiro de ID do instantâneo é NULL ou o <em>parâmetro grbit</em> é inválido.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errOSSnapshotInvalidSequence</p></td>
@@ -122,15 +122,15 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </table>
 
 
-Se essa função for realizada com sucesso, uma sessão de instantâneo será capaz de iniciar a qualquer momento com a fase de congelamento de e/s. O identificador da sessão será retornado e deverá ser usado nas chamadas subsequentes para a sessão de instantâneo.
+Se essa função for bem-sucedida, uma sessão de instantâneo poderá iniciar a qualquer momento com a fase de congelamento de E/S. O identificador da sessão será retornado e deve ser usado nas chamadas subsequentes para a sessão de instantâneo.
 
 As instâncias em execução do mecanismo agora serão consideradas parte da sessão de instantâneo.
 
-**Windows Vista:**  Para especificar um subconjunto diferente de instâncias, o [JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md) pode ser chamado.
+**Windows Vista:**  Para especificar um subconjunto diferente de instâncias, [o JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md) pode ser chamado.
 
-A chamada de sequência de API normal é: **JetOSSnapshotPrepare**, opcionalmente seguido por uma ou mais chamadas para [JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md), seguido por [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md). Quando o congelamento é iniciado, ele pode ser encerrado usando [JetOSSnapshotThaw](./jetossnapshotthaw-function.md). A qualquer momento após a preparação, a sessão de instantâneo pode ser encerrada abruptamente com [JetOSSnapshotAbort](./jetossnapshotabort-function.md).
+A chamada de sequência de API normal é: **JetOSSnapshotPrepare**, opcionalmente seguido por uma ou mais chamadas para [JetOSSnapshotPrepareInstance](./jetossnapshotprepareinstance-function.md), seguido por [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md). Depois que o congelamento for iniciado, ele poderá ser encerrado usando [JetOSSnapshotThaw](./jetossnapshotthaw-function.md). A qualquer momento após a preparação, a sessão de instantâneo pode ser encerrada com [JetOSSnapshotAbort .](./jetossnapshotabort-function.md)
 
-Se JET_bitContinueAfterThaw for especificado após [JetOSSnapshotThaw](./jetossnapshotthaw-function.md), a sessão de instantâneo permanecerá (embora a e/s seja retomada). Isso permitirá uma verificação do instantâneo e, se necessário, habilitará o truncamento de log usando [JetOSSnapshotTruncateLog](./jetossnapshottruncatelog-function.md) e exigirá uma chamada para [JetOSSnapshotEnd](./jetossnapshotend-function.md).
+Se JET_bitContinueAfterThaw for especificado após [JetOSSnapshotThaw,](./jetossnapshotthaw-function.md)a sessão de instantâneo permanecerá (embora a E/S seja retomada). Isso habilitará uma verificação do instantâneo e, se necessário, habilitará o truncamento de log usando [JetOSSnapshotTruncateLog](./jetossnapshottruncatelog-function.md) e exigirá uma chamada para [JetOSSnapshotEnd](./jetossnapshotend-function.md).
 
 Se essa função falhar, nenhuma alteração no estado do mecanismo ocorrerá.
 
@@ -148,19 +148,19 @@ As entradas do log de eventos serão geradas para as diferentes etapas do instan
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>Requer Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

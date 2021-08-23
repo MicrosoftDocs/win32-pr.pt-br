@@ -1,25 +1,25 @@
 ---
 title: StreamingNamedPipesClientExample
-description: Este exemplo mostra um cliente de pipes nomeados que envia mensagens unidirecionais de uma maneira de fluxo.
+description: Este exemplo mostra um cliente de pipes nomeados que envia mensagens de maneira única.
 ms.assetid: 104816C1-532A-4163-81EE-D9F64F9C40AB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc93fbcbb5f549c4cee032a14b035d1bfd534beb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: acd78620c58ba81f21039c3dadd59e822c38906507a8e8fee4227a19d74ee2f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545726"
 ---
 # <a name="streamingnamedpipesclientexample"></a>StreamingNamedPipesClientExample
 
-Este exemplo mostra um cliente de pipes nomeados que envia mensagens unidirecionais de uma maneira de fluxo.
+Este exemplo mostra um cliente de pipes nomeados que envia mensagens de maneira única.
 
--   [StreamingNamedPipesClient. cpp](#streamingnamedpipesclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [StreamingNamedPipesClient.cpp](#streamingnamedpipesclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="streamingnamedpipesclientcpp"></a>StreamingNamedPipesClient. cpp
+## <a name="streamingnamedpipesclientcpp"></a>StreamingNamedPipesClient.cpp
 
 
 ```C++
@@ -266,7 +266,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -410,9 +410,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

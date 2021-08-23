@@ -1,21 +1,21 @@
 ---
 title: Implementação de arquivo de IPropertyStorage-Compound
-description: A implementação COM da arquitetura de armazenamento estruturado é chamada de arquivos compostos.
+description: a implementação COM da arquitetura de Armazenamento estruturada é chamada de arquivos compostos.
 ms.assetid: c4b4f313-de58-44f2-8ce1-a07cc187d8ca
 keywords:
 - IPropertyStorage Strctd STG, implementações, arquivo composto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03d927b0145077f12e5ba508ca65554ca33633a3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fa3c4fffe98c4bfb896f346f25ce988f75bacf1fbb194b9ec27f50e22095c8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662606"
 ---
 # <a name="ipropertystorage-compound-file-implementation"></a>Implementação de arquivo de IPropertyStorage-Compound
 
-A implementação COM da arquitetura de armazenamento estruturado é chamada de [arquivos compostos](istorage-compound-file-implementation.md). Os objetos de armazenamento conforme implementados em arquivos compostos incluem uma implementação de ambos os [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), a interface que gerencia um único conjunto de propriedades persistentes e [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage), a interface que gerencia grupos de conjuntos de propriedades persistentes. Para obter mais informações sobre a interface **IPropertyStorage** , consulte [Considerações sobre](property-storage-considerations.md) **IPropertyStorage** e armazenamento de propriedades.
+a implementação COM da arquitetura de Armazenamento estruturada é chamada de [arquivos compostos](istorage-compound-file-implementation.md). Armazenamento objetos conforme implementados em arquivos compostos incluem uma implementação de ambos os [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), a interface que gerencia um único conjunto de propriedades persistentes e [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage), a interface que gerencia grupos de conjuntos de propriedades persistentes. para obter mais informações sobre a interface **IPropertyStorage** , consulte [considerações de Armazenamento](property-storage-considerations.md)de **IPropertyStorage** e propriedade.
 
 Para obter um ponteiro para a implementação do arquivo composto de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage), chame [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex) para criar um novo objeto de arquivo composto ou [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) para abrir um objeto de arquivo composto criado anteriormente. No caso de **StgCreateStorageEx**, o parâmetro *stgfmt* deve ser definido como armazenamento stgfmt \_ . No caso de **StgOpenStorageEx**, o parâmetro *stgfmt* deve ser definido como stgfmt \_ Storage ou stgfmt \_ any. Em ambos os casos, o parâmetro *riid* deve ser definido como IID \_ IPropertySetStorage. Ambas as funções fornecem um ponteiro para a interface Object [**IPropertySetStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage) . Chamando o método [**Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) ou [**Open**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-open) dessa interface, você receberá um ponteiro para a interface **IPropertyStorage** , que pode ser usada para chamar qualquer um de seus métodos.
 
@@ -28,7 +28,7 @@ Use [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystor
 > [!Note]  
 > Se você obtiver um ponteiro para [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) chamando [**StgCreateDocfile**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatedocfile), [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex), [**StgOpenStorage**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorage) ou [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) em um armazenamento de conjunto de propriedades de modo simples, os métodos **IPropertyStorage** aderirão às regras de fluxos de modo simples. O armazenamento do conjunto de propriedades é o modo simples se ele foi obtido para um arquivo que foi criado ou aberto com o \_ sinalizador simples STGM. Nesse caso, nem sempre é possível tornar o fluxo subjacente maior e não é possível substituir as propriedades existentes por Propriedades maiores. Para obter mais informações, consulte [implementação de arquivo composto IPropertySetStorage](ipropertysetstorage-compound-file-implementation.md).
 
- 
+ 
 
 ## <a name="ipropertystorage-and-caching"></a>IPropertyStorage e Caching
 
@@ -36,13 +36,13 @@ A implementação de arquivo composto de caches [**IPropertyStorage**](/windows/
 
 ## <a name="simple-mode-property-sets"></a>Conjuntos de propriedades de modo simples
 
-Um objeto de armazenamento de propriedade estará no modo simples se for criado a partir de um objeto de armazenamento de conjunto de propriedades de modo simples. Por exemplo, um objeto de armazenamento de conjunto de propriedades estaria no modo simples se ele fosse obtido da função [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) , com o \_ sinalizador simples STGM definido no parâmetro *grfMode* . Observe que "modo simples" não está relacionado a "conjuntos de propriedades simples". Um conjunto de propriedades é simples se for criado chamando [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) com o sinalizador de PROPSETFLAG não \_ simples definido no parâmetro *grfFlags* . Para obter mais informações sobre conjuntos de propriedades simples e não simples, consulte [armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md).
+Um objeto de armazenamento de propriedade estará no modo simples se for criado a partir de um objeto de armazenamento de conjunto de propriedades de modo simples. Por exemplo, um objeto de armazenamento de conjunto de propriedades estaria no modo simples se ele fosse obtido da função [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) , com o \_ sinalizador simples STGM definido no parâmetro *grfMode* . Observe que "modo simples" não está relacionado a "conjuntos de propriedades simples". Um conjunto de propriedades é simples se for criado chamando [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) com o sinalizador de PROPSETFLAG não \_ simples definido no parâmetro *grfFlags* . para obter mais informações sobre conjuntos de propriedades simples e não simples, consulte [Armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md).
 
 Quando um objeto de armazenamento de propriedade de modo simples é criado, não há restrições quanto ao seu uso. Quando um objeto de armazenamento de propriedade de modo simples existente é aberto, o objeto de fluxo subjacente que armazena o conjunto de propriedades não pode ser aumentado. Consequentemente, nem sempre é possível modificar tal objeto de armazenamento de propriedade se a alteração exigir um fluxo maior.
 
 ## <a name="property-set-formats"></a>Formatos de conjunto de propriedades
 
-A implementação do arquivo composto de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) dá suporte aos formatos de serialização da versão 0 e do conjunto de propriedades da versão 1. Há suporte para o formato versão 1 em computadores que executam o Windows 2000. Para obter mais informações, consulte [serialização do conjunto de propriedades](version-0-vs--version-1-property-set-serialization.md). Os conjuntos de propriedades são criados no formato da versão 0 e permanecem nesse formato, a menos que novos recursos sejam solicitados. Quando isso ocorre, o formato é atualizado para a versão 1.
+A implementação do arquivo composto de [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) dá suporte aos formatos de serialização da versão 0 e do conjunto de propriedades da versão 1. há suporte para o formato versão 1 em computadores que executam o Windows 2000. Para obter mais informações, consulte [serialização do conjunto de propriedades](version-0-vs--version-1-property-set-serialization.md). Os conjuntos de propriedades são criados no formato da versão 0 e permanecem nesse formato, a menos que novos recursos sejam solicitados. Quando isso ocorre, o formato é atualizado para a versão 1.
 
 Por exemplo, se um conjunto de Propriedades for criado com o \_ sinalizador padrão PROPSETFLAG, seu formato será a versão 0. Desde que os tipos de propriedade que estejam em conformidade com o formato da versão 0 sejam gravados e lidos a partir desse conjunto de propriedades, o conjunto de propriedades permanecerá no formato da versão 0. Se um tipo de propriedade da versão 1 for gravado no conjunto de propriedades, o conjunto de propriedades será atualizado automaticamente para a versão 1. Subsequentemente, esse conjunto de propriedades não pode mais ser lido por implementações que reconhecem apenas a versão 0.
 
@@ -90,11 +90,11 @@ erro de VT \_
 
 variante do VT \_
 
- 
+ 
 
 
 
- 
+ 
 
 Quando \_ a variante VT é combinada com \_ a matriz VT, o SAFEARRAY em si mantém as estruturas [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) . No entanto, os tipos desses elementos devem ser extraídos da lista anterior, não pode ser VT \_ Variant e não podem incluir os \_ indicadores de vetor VT, VT \_ array ou VT \_ ByRef.
 
@@ -167,7 +167,7 @@ Para os conjuntos de propriedades simples e não simples, o libera a imagem do c
 <span id="IPropertyStorage__Revert"></span><span id="ipropertystorage__revert"></span><span id="IPROPERTYSTORAGE__REVERT"></span>[**IPropertyStorage:: Revert**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert)
 </dt> <dd>
 
-Somente para conjuntos de propriedades não simples, o chama o método [**REVERT**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert) do armazenamento subjacente e reabre o fluxo ' Contents '. Para conjuntos de propriedades simples, essa interface sempre retorna S \_ OK. Os conjuntos de propriedades não simples são aqueles que foram criados usando o sinalizador PROPSETFLAG não \_ simples no método [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) . Para obter mais informações, consulte [armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md) .
+Somente para conjuntos de propriedades não simples, o chama o método [**REVERT**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-revert) do armazenamento subjacente e reabre o fluxo ' Contents '. Para conjuntos de propriedades simples, essa interface sempre retorna S \_ OK. Os conjuntos de propriedades não simples são aqueles que foram criados usando o sinalizador PROPSETFLAG não \_ simples no método [**IPropertySetStorage:: Create**](/windows/desktop/api/Propidl/nf-propidl-ipropertysetstorage-create) . para obter mais informações, consulte [Armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md) .
 
 </dd> <dt>
 
@@ -202,6 +202,6 @@ Somente para conjuntos de propriedades não simples, o define os tempos suportad
 [**IStorage:: SetElementTimes**](/windows/desktop/api/Objidl/nf-objidl-istorage-setelementtimes)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

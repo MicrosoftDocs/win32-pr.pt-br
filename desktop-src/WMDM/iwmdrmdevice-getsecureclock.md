@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDevice GetSecureClock
-description: O método GetSecureClock recupera o relógio seguro, portanto, as licenças baseadas em tempo podem ser impostas.
+title: Método GetSecureClock IWMDRMDevice
+description: O método GetSecureClock recupera o relógio seguro, para que licenças baseadas em tempo possam ser impostas.
 ms.assetid: 6de9b7ce-9c2a-44e5-9de7-40cfbaf4d92c
 keywords:
-- Método GetSecureClock Windows Media Gerenciador de Dispositivos
-- Método GetSecureClock Windows Media Gerenciador de Dispositivos, interface IWMDRMDevice
-- Interface IWMDRMDevice Windows Media Gerenciador de Dispositivos, método GetSecureClock
+- Método GetSecureClock windows Media Gerenciador de Dispositivos
+- Método GetSecureClock windows Media Gerenciador de Dispositivos , interface IWMDRMDevice
+- Interface IWMDRMDevice windows Media Gerenciador de Dispositivos , método GetSecureClock
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaa92c3bc2ee82facf2f2e1043e71467a0c55bd8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa9494a594a396550028f083cc2b646f2093f6369ab27ae5494bf70c13628d4f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619776"
 ---
-# <a name="iwmdrmdevicegetsecureclock-method"></a>Método IWMDRMDevice:: GetSecureClock
+# <a name="iwmdrmdevicegetsecureclock-method"></a>Método IWMDRMDevice::GetSecureClock
 
-O método **GetSecureClock** recupera o relógio seguro, portanto, as licenças baseadas em tempo podem ser impostas.
+O **método GetSecureClock** recupera o relógio seguro, para que licenças baseadas em tempo possam ser impostas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,21 +45,21 @@ HRESULT GetSecureClock(
 
 <dl> <dt>
 
-*ppbSecureClock* \[ fora\]
+*ppbSecureClock* \[ out\]
 </dt> <dd>
 
-Clock seguro recuperado.
+Relógio seguro recuperado.
 
 </dd> <dt>
 
-*pcbSecureClock* \[ fora\]
+*pcbSecureClock* \[ out\]
 </dt> <dd>
 
 Tamanho do relógio seguro, em bytes.
 
 </dd> <dt>
 
-*pdwFlags* \[ fora\]
+*pdwFlags* \[ out\]
 </dt> <dd>
 
 Sinalizadores de status do dispositivo. Esse valor deve ser um dos sinalizadores a seguir.
@@ -68,9 +68,9 @@ Sinalizadores de status do dispositivo. Esse valor deve ser um dos sinalizadores
 
 | Sinalizador                     | Descrição                            |
 |--------------------------|----------------------------------------|
-| \_ISWMDRM de dispositivo WMDRM \_   | O dispositivo dá suporte a DRM do Windows Media. |
-| \_NEEDCLOCK de dispositivo WMDRM \_ | O dispositivo precisa de relógio.                |
-| \_dispositivo WMDRM \_ revogado   | O dispositivo foi revogado.           |
+| \_ \_ ISWMDRM DO DISPOSITIVO WMDRM   | O dispositivo dá suporte Windows DRM de Mídia. |
+| \_NEEDCLOCK DO DISPOSITIVO \_ WMDRM | O dispositivo precisa de relógio.                |
+| DISPOSITIVO WMDRM \_ \_ REVOGADO   | O dispositivo foi revogado.           |
 
 
 
@@ -78,9 +78,9 @@ Sinalizadores de status do dispositivo. Esse valor deve ser um dos sinalizadores
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -98,8 +98,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -110,7 +110,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 [**GetSecureClockChallenge**](iwmdrmdevice-getsecureclockchallenge.md)
 </dt> <dt>
 
-[**Interface IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice Interface**](iwmdrmdevice.md)
 </dt> <dt>
 
 [**SetSecureClockResponse**](iwmdrmdevice-setsecureclockresponse.md)

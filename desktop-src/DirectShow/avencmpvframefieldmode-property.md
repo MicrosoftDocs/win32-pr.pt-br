@@ -1,21 +1,21 @@
 ---
 description: Especifica se o codificador produz campos codificados ou quadros codificados. Essa propriedade se aplica a codificadores de vídeo MPEG.
 ms.assetid: bf21ea55-662f-4a69-8528-67592b8b8645
-title: Propriedade AVEncMPVFrameFieldMode (Codecapi. h)
+title: Propriedade AVEncMPVFrameFieldMode (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bac16a4002cc7bdc074c78d5c3452438f7c3ad91
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8ab8098ee905f2d47c2ff2704e2d2d2c9733f868b90ac92e2afed9ba1fdf9d67
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641236"
 ---
 # <a name="avencmpvframefieldmode-property"></a>Propriedade AVEncMPVFrameFieldMode
 
 Especifica se o codificador produz campos codificados ou quadros codificados. Essa propriedade se aplica a codificadores de vídeo MPEG.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é um membro da enumeração [**eAVEncMPVFrameFieldMode**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvframefieldmode) .
+O valor dessa propriedade é um membro da enumeração [**eAVEncMPVFrameFieldMode.**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvframefieldmode)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncMPVFrameFieldMod
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncMPVFrameFieldMod
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

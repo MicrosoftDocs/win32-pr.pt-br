@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac212205fac02db0ee87d8acbe0b123ffcead921
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: a2b851ad0ab0a6a333fedea13036eebf11e8c727a04603c07d8f7e68e66de5ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105771422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545646"
 ---
 # <a name="xml-node"></a>Nó XML
 

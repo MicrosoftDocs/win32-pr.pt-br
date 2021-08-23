@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8d59a19c58c775ee22d78e17bc09add2825948e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 081a8714d29cb48236bdb9191c15e92db96b18a9f8c1d9c2388c5baee7783296
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104370903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705646"
 ---
 # <a name="drm_individualization_status-enumeration-drmexternalsh"></a>Enumeração de DRM_INDIVIDUALIZATION_STATUS (Drmexternals. h)
 
@@ -108,8 +108,8 @@ Essa enumeração é usada pela estrutura [**de \_ \_ status individual do WM**]
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                      |
-| Versão<br/>                  | SDK do Windows Media Format 7 ou versões posteriores do SDK<br/>                       |
-| parâmetro<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versão<br/>                  | Windows SDK do Media Format 7 ou versões posteriores do SDK<br/>                       |
+| Cabeçalho<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
 
 
 

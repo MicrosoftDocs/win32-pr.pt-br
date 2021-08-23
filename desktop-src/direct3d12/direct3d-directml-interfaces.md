@@ -1,37 +1,37 @@
 ---
 title: Interfaces do DirectML
-description: As interfaces a seguir são declaradas em DirectML. h.
+description: As interfaces a seguir são declaradas em DirectML.h.
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: 64ae11c5b9a4298c340488499a5a309b71a2d48b
-ms.sourcegitcommit: d168355cd7112871f24643b4079c2640b36f4975
+ms.openlocfilehash: deb388962043926afd3868785364df6297b05d78f3997359fc88ea97ab679f33
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111521169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728946"
 ---
 # <a name="directml-interfaces"></a>Interfaces do DirectML
 
-As interfaces a seguir são declaradas em DirectML. h.
+As interfaces a seguir são declaradas em DirectML.h.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 | Tópico | Descrição |
 |-|-|
 | [**IDMLBindingTable**](/windows/desktop/api/directml/nn-directml-idmlbindingtable) | Cria um dispositivo DirectML para um determinado dispositivo Direct3D 12. |
-| [**IDMLCommandRecorder**](/windows/desktop/api/directml/nn-directml-idmlcommandrecorder) | Registra expedis of DirectML work em uma lista de comandos do Direct3D 12. |
+| [**IDMLCommandRecorder**](/windows/desktop/api/directml/nn-directml-idmlcommandrecorder) | Registra expedições de trabalho do DirectML em uma lista de comandos do Direct3D 12. |
 | [**IDMLCompiledOperator**](/windows/desktop/api/directml/nn-directml-idmlcompiledoperator) | Representa uma forma compilada e eficiente de um operador adequado para execução na GPU. |
-| [**IDMLDebugDevice**](/windows/desktop/api/directml/nn-directml-idmldebugdevice) | Controla a camada de depuração DirectML. |
-| [**IDMLDevice**](/windows/desktop/api/directml/nn-directml-idmldevice) | Representa um dispositivo DirectML, que é usado para criar operadores, tabelas de associação, gravadores de comandos e outros objetos. |
-| [**IDMLDevice1**](/windows/desktop/api/directml/nn-directml-idmldevice1) | Representa um dispositivo DirectML, que é usado para criar operadores, tabelas de associação, gravadores de comandos e outros objetos. |
+| [**IDMLDebugDevice**](/windows/desktop/api/directml/nn-directml-idmldebugdevice) | Controla a camada de depuração directML. |
+| [**IDMLDevice**](/windows/desktop/api/directml/nn-directml-idmldevice) | Representa um dispositivo DirectML, que é usado para criar operadores, tabelas de associação, gravadores de comando e outros objetos. |
+| [**IDMLDevice1**](/windows/desktop/api/directml/nn-directml-idmldevice1) | Representa um dispositivo DirectML, que é usado para criar operadores, tabelas de associação, gravadores de comando e outros objetos. |
 | [**IDMLDeviceChild**](/windows/win32/api/directml/nn-directml-idmldevicechild) | Uma interface implementada por todos os objetos criados a partir do dispositivo DirectML. |
-| [**IDMLDispatchable**](/windows/desktop/api/directml/nn-directml-idmldispatchable) | Implementado por objetos que podem ser registrados em uma lista de comandos para expedição na GPU, usando [IDMLCommandRecorder:: RecordDispatch](/windows/desktop/api/directml/nf-directml-idmlcommandrecorder-recorddispatch). |
-| [**IDMLObject**](/windows/desktop/api/directml/nn-directml-idmlobject) | Uma interface da qual [IDMLDevice](/windows/win32/api/directml/nn-directml-idmldevice) e [IDMLDeviceChild](/windows/desktop/api/directml/nn-directml-idmldevicechild) herdam diretamente (e todas as outras interfaces indiretamente). Consequentemente, ele fornece métodos comuns a todas as interfaces DirectML, especificamente métodos para associar dados privados e anotar nomes de objetos. |
+| [**IDMLDispatchable**](/windows/desktop/api/directml/nn-directml-idmldispatchable) | Implementado por objetos que podem ser registrados em uma lista de comandos para expedição na GPU, usando [IDMLCommandRecorder::RecordDispatch](/windows/desktop/api/directml/nf-directml-idmlcommandrecorder-recorddispatch). |
+| [**IDMLObject**](/windows/desktop/api/directml/nn-directml-idmlobject) | Uma interface da qual [IDMLDevice](/windows/win32/api/directml/nn-directml-idmldevice) e [IDMLDeviceChild](/windows/desktop/api/directml/nn-directml-idmldevicechild) herdam diretamente (e todas as outras interfaces, indiretamente). Consequentemente, ele fornece métodos comuns a todas as interfaces DirectML, especificamente métodos para associar dados privados e para anotar nomes de objeto. |
 | [**IDMLOperator**](/windows/desktop/api/directml/nn-directml-idmloperator) | Representa um operador DirectML. |
 | [**IDMLOperatorInitializer**](/windows/desktop/api/directml/nn-directml-idmloperatorinitializer) | Representa um objeto especializado cuja finalidade é inicializar operadores compilados. |
-| [**IDMLPageable**](/windows/desktop/api/directml/nn-directml-idmlpageable) | Implementado por objetos que podem ser removidos da memória GPU e, portanto, podem ser fornecidos para [IDMLDevice:: Remove](/windows/desktop/api/directml/nf-directml-idmldevice-evict) e [IDMLDevice:: MakeResident](/windows/desktop/api/directml/nf-directml-idmldevice-makeresident). |
+| [**IDMLPageable**](/windows/desktop/api/directml/nn-directml-idmlpageable) | Implementado por objetos que podem ser despejados da memória de GPU e, portanto, que podem ser fornecidos para [IDMLDevice::Evict](/windows/desktop/api/directml/nf-directml-idmldevice-evict) e [IDMLDevice::MakeResident](/windows/desktop/api/directml/nf-directml-idmldevice-makeresident). |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -1,29 +1,29 @@
 ---
 description: O conjunto de todas as vozes, com seus efeitos contidos e suas interconexões, é conhecido como grafo de processamento de áudio.
 ms.assetid: 4fa45dbf-3811-c91c-7561-3b896e9e1f03
-title: Grafo de áudio XAudio2
+title: Graph de áudio XAudio2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0eb265bd6bc2547acd04ca41cceb58ad12896fbf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b461b89095152f3f8073a09a230e18f5e30fd7f42ffb60b4c45a32702094f70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707016"
 ---
-# <a name="xaudio2-audio-graph"></a>Grafo de áudio XAudio2
+# <a name="xaudio2-audio-graph"></a>Graph de áudio XAudio2
 
-O conjunto de todas as vozes, com seus efeitos contidos e suas interconexões, é conhecido como grafo de processamento de áudio. O grafo usa um conjunto de fluxos de áudio do cliente como entrada, processa-os e entrega o resultado final a um dispositivo de áudio. Todo o processamento de áudio ocorre em um thread separado com uma periodicidade definida pelo Quantum do grafo (atualmente, 10 milissegundos no Microsoft Windows e 5 1/3 milissegundos no Xbox 360). Todos os milissegundos do Quantum, o thread ativa e distribui milissegundos do quantum de dados de áudio por todo o grafo. Para obter um exemplo de criação de um gráfico de áudio básico, consulte como [compilar um grafo básico de processamento de áudio](how-to--build-a-basic-audio-processing-graph.md).
+O conjunto de todas as vozes, com seus efeitos contidos e suas interconexões, é conhecido como grafo de processamento de áudio. O grafo usa um conjunto de fluxos de áudio do cliente como entrada, processa-os e entrega o resultado final a um dispositivo de áudio. todo o processamento de áudio ocorre em um thread separado com uma periodicidade definida pelo quantum do grafo (atualmente, 10 milissegundos no Microsoft Windows e 5 1/3 milissegundos no Xbox 360). Todos os milissegundos do Quantum, o thread ativa e distribui milissegundos do quantum de dados de áudio por todo o grafo. Para obter um exemplo de criação de um gráfico de áudio básico, consulte como [compilar um processamento de áudio básico Graph](how-to--build-a-basic-audio-processing-graph.md).
 
 Um grafo de áudio simples:
 
 ![um grafo de áudio simples](images/xaudio2-audio-graph.png)
 
-O cliente pode controlar o estado do grafo dinamicamente enquanto ele está em execução. As ações de controle podem incluir adição e remoção de entradas e saídas, alteração dos efeitos internos e interconexões, definição de parâmetros nos efeitos, habilitação e desabilitação de partes do grafo e assim por diante. Para obter um exemplo de alteração dinâmica de um gráfico de áudio, consulte [como: Adicionar ou remover vozes dinamicamente de um grafo de áudio](how-to--dynamically-add-or-remove-voices-from-an-audio-graph.md).
+O cliente pode controlar o estado do grafo dinamicamente enquanto ele está em execução. As ações de controle podem incluir adição e remoção de entradas e saídas, alteração dos efeitos internos e interconexões, definição de parâmetros nos efeitos, habilitação e desabilitação de partes do grafo e assim por diante. Para obter um exemplo de alteração dinâmica de um gráfico de áudio, consulte [como: Adicionar ou remover vozes dinamicamente de um Graph de áudio](how-to--dynamically-add-or-remove-voices-from-an-audio-graph.md).
 
-## <a name="processing-the-graph"></a>Processando o grafo
+## <a name="processing-the-graph"></a>Processando o Graph
 
-Qualquer chamada de método que afete qualquer objeto no grafo é considerada como efeito uma alteração de estado do grafo. As alterações de estado do grafo incluem o seguinte:
+Qualquer chamada de método que afete qualquer objeto no grafo é considerada como efeito uma alteração de estado do grafo. Graph alterações de estado incluem o seguinte:
 
 -   Criando e destruindo vozes
 -   Iniciando ou parando vozes

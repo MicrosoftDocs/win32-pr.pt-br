@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: campo Server2003Grbits. ForwardOnly'
-title: Campo Server2003Grbits. ForwardOnly (Microsoft. ISAM. ESENT. Interop. Server2003)
+description: 'Saiba mais sobre: campo Server2003Grbits.ForwardOnly'
+title: Campo Server2003Grbits.ForwardOnly (Microsoft.Isam.Esent.Interop.Server2003)
 TOCTitle: ForwardOnly field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Server2003.Server2003Grbits.ForwardOnly
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.server2003.server2003grbits.forwardonly(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ec4427628e8d6bfee427fa91c15ed6aee3887314
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f98dca3e85eb5ad3c57ef1203971078035c7191ca3e5358dba701dcd870f8480
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603836"
 ---
-# <a name="server2003grbitsforwardonly-field"></a>Campo Server2003Grbits. ForwardOnly
+# <a name="server2003grbitsforwardonly-field"></a>Campo Server2003Grbits.ForwardOnly
 
-Essa opção solicita que a tabela temporária só seja criada se o Gerenciador de tabelas temporárias puder usar a implementação otimizada para resultados de consulta intermediários. Se qualquer característica da tabela temporária impedir o uso dessa otimização, a operação falhará com JET_errCannotMaterializeForwardOnlySort. Um efeito colateral dessa opção é permitir que a tabela temporária contenha registros com chaves de índice duplicadas. Consulte [exclusivo](./temptablegrbit-enumeration.md) para obter mais informações.
+Essa opção solicita que a tabela temporária seja criada somente se o gerenciador de tabela temporário puder usar a implementação otimizada para resultados intermediários da consulta. Se qualquer característica da tabela temporária impedir o uso dessa otimização, a operação falhará com JET_errCannotMaterializeForwardOnlySort. Um efeito colateral dessa opção é permitir que a tabela temporária contenha registros com chaves de índice duplicadas. Consulte [Exclusivo](./temptablegrbit-enumeration.md) para obter mais informações.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,6 +59,6 @@ public const TempTableGrbit ForwardOnly
 
 [Classe Server2003Grbits](./server2003grbits-class.md)
 
-[Membros do Server2003Grbits](./server2003grbits-members.md)
+[Membros de Server2003Grbits](./server2003grbits-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)

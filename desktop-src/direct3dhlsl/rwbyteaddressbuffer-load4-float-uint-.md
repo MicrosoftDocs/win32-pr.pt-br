@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 14cb5354c21935c22833ea6f4b54b20fedc696f0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0f64fe84f17ee4cc1fed25b870b2142b474e753fa41e82cd0d385c9ef185ee9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119672106"
 ---
 # <a name="load4uintuint-function"></a>Função Load4 (uint, uint)
 
@@ -29,8 +29,8 @@ Obtém quatro valores e retorna o status da operação.
 
 ``` syntax
 uint4 Load4(
-  in  uint Location,
-  out uint Status
+  in  uint Location,
+  out uint Status
 );
 ```
 
@@ -58,7 +58,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **uint4**
 
@@ -70,13 +70,13 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -85,6 +85,6 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 [Métodos Load4](rwbyteaddressbuffer-load4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 0369e44d96a4f1dcacf33dbf1b1da6ad6d37eed2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7e9c2c424ea84436292158753de29294bbce3a5516b5ab0a9149892640963ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667166"
 ---
 # <a name="protectkeywithtpm-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithTPM da classe Win32 \_ EncryptableVolume
 
@@ -65,7 +65,7 @@ Um perfil de validação de plataforma consiste em um conjunto de índices de PC
 
 Se esse parâmetro for especificado enquanto a configuração de Política de Grupo correspondente tiver sido habilitada, ela deverá corresponder à configuração de Política de Grupo.
 
-Se esse parâmetro não for especificado, o padrão 0, 2, 4, 5, 8, 9, 10 e 11 será usado. O perfil de validação de plataforma padrão protege a chave de criptografia contra alterações na raiz principal da CRTM (relação de confiança de medida), BIOS e extensões de plataforma (PCR 0), o código de ROM de opção (PCR 2), o código MBR (registro mestre de inicialização) (PCR 4), a tabela de partição MBR (registro mestre de inicialização) (PCR 5), o setor de inicialização NTFS (PCR 8), o código de inicialização NTFS (PCR 9) e o controle de acesso de Criptografia de Unidade de Disco BitLocker (PCR 11). Para a segurança do seu computador, recomendamos o perfil padrão. Os computadores baseados em Unified Extensible Firmware Interface (UEFI) não usam a PCR 5 por padrão. Para proteção adicional contra alterações de configuração de inicialização antecipada, use um perfil de PCRs 0, 1, 2, 3, 4, 5, 8, 9, 10, 11.
+Se esse parâmetro não for especificado, o padrão 0, 2, 4, 5, 8, 9, 10 e 11 será usado. O perfil de validação de plataforma padrão protege a chave de criptografia contra alterações na raiz principal da CRTM (relação de confiança de medida), BIOS e extensões de plataforma (PCR 0), código de ROM de opção (PCR 2), o código MBR (registro mestre de inicialização) (PCR 4), a tabela de partição MBR (registro mestre de inicialização) (PCR 5), o setor de inicialização NTFS (PCR 8), o código de inicialização NTFS (PCR 9),  o Gerenciador de inicialização (PCR 10) e o Criptografia de Unidade de Disco BitLocker de controle de acesso (PCR 11). Para a segurança do seu computador, recomendamos o perfil padrão. Os computadores baseados em Unified Extensible Firmware Interface (UEFI) não usam a PCR 5 por padrão. Para proteção adicional contra alterações de configuração de inicialização antecipada, use um perfil de PCRs 0, 1, 2, 3, 4, 5, 8, 9, 10, 11.
 
 A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamento do seu computador. A sensibilidade do BitLocker com as modificações de plataforma (maliciosas ou autorizadas) é aumentada ou reduzida, dependendo da inclusão ou exclusão, respectivamente, do PCRs. Para que a proteção do BitLocker seja habilitada, o perfil de validação de plataforma deve incluir o PCR 11.
 
@@ -92,7 +92,7 @@ A alteração do perfil padrão afeta a segurança e a capacidade de gerenciamen
 | <dl> <dt>16</dt> </dl> | Usado para depuração<br/>                                                       |
 | <dl> <dt>17</dt> </dl> | CRTM dinâmico<br/>                                                             |
 | <dl> <dt>anos</dt> </dl> | Definido pela plataforma<br/>                                                         |
-| <dl> <dt>aprimora</dt> </dl> | Usado pelo sistema operacional confiável<br/>                                         |
+| <dl> <dt>19</dt> </dl> | Usado pelo sistema operacional confiável<br/>                                         |
 | <dl> <dt>20</dt> </dl> | Usado pelo sistema operacional confiável<br/>                                         |
 | <dl> <dt>Abril</dt> </dl> | Usado pelo sistema operacional confiável<br/>                                         |
 | <dl> <dt>22</dt> </dl> | Usado pelo sistema operacional confiável<br/>                                         |
@@ -115,7 +115,7 @@ Se a unidade oferecer suporte à criptografia de hardware e o BitLocker não tiv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -138,19 +138,19 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 ## <a name="security-considerations"></a>Considerações de segurança
 
-Para a segurança do seu computador, recomendamos o perfil padrão. Para proteção adicional contra alterações de configuração de inicialização antecipada, use um perfil de PCRs 0, 1, 2, 3, 4, 5, 8, 9, 10, 11.
+Para a segurança do computador, recomendamos o perfil padrão. Para proteção adicional contra alterações de configuração de inicialização antecipada, use um perfil de PCRs 0, 1, 2, 3, 4, 5, 8, 9, 10, 11.
 
-A alteração do perfil padrão afeta a segurança ou a usabilidade do seu computador.
+A alteração do perfil padrão afeta a segurança ou a usabilidade do computador.
 
 ## <a name="remarks"></a>Comentários
 
-No máximo um protetor de chave do tipo "TPM" pode existir para um volume a qualquer momento. Se você quiser alterar o nome de exibição ou o perfil de validação de plataforma usado por um protetor de chave "TPM" existente, primeiro deverá remover o protetor de chave existente e, em seguida, chamar **ProtectKeyWithTPM** para criar um novo.
+No máximo, um protetor de chave do tipo "TPM" pode existir para um volume a qualquer momento. Se você quiser alterar o nome de exibição ou o perfil de validação de plataforma usado por um protetor de chave "TPM" existente, primeiro remova o protetor de chave existente e, em seguida, chame **ProtectKeyWithTPM** para criar um novo.
 
-Para os índices de PCR de 0 a 5, as medidas atuais nos registros são usadas para proteger a chave de criptografia. Para os valores de PCR 8 a 11, as medidas usadas são aquelas que devem existir no próximo ciclo de início.
+Para índices PCR de 0 a 5, as medidas atuais nos registros são usadas para proteger a chave de criptografia. Para valores PCR de 8 a 11, as medidas usadas são aquelas que devem existir no próximo ciclo de início.
 
-Protetores de chave adicionais devem ser especificados para desbloquear o volume em cenários de recuperação em que o acesso à chave de criptografia do volume não pode ser obtido; por exemplo, quando o TPM não pode validar com êxito em relação ao perfil de validação de plataforma. Use [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablevolume.md) ou [**ProtectKeyWithNumericalPassword**](protectkeywithnumericalpassword-win32-encryptablevolume.md) para criar um ou mais protetores de chave para recuperar um volume bloqueado de outra forma.
+Protetores de chave adicionais devem ser especificados para desbloquear o volume em cenários de recuperação em que o acesso à chave de criptografia do volume não pode ser obtido; por exemplo, quando o TPM não pode validar com êxito em relação ao perfil de validação da plataforma. Use [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablevolume.md) ou [**ProtectKeyWithNumericalPassword**](protectkeywithnumericalpassword-win32-encryptablevolume.md) para criar um ou mais protetores de chave para recuperar um volume bloqueado de outra forma.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -158,10 +158,10 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
-| Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows aplicativos da área de trabalho do Vista Ultimate \[\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                    |
+| Namespace<br/>                | Segurança \\ RAIZ CIMV2 \\ \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -169,10 +169,10 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> <dt>
 
-[**TPM do Win32 \_**](win32-tpm.md)
+[**Win32 \_ Tpm**](win32-tpm.md)
 </dt> </dl>
 
  

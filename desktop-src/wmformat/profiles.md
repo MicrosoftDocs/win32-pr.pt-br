@@ -3,27 +3,27 @@ title: Perfis
 description: Perfis
 ms.assetid: 6e70393f-3dab-4036-8d34-a672ef1795c6
 keywords:
-- SDK do Windows Media Format, perfis
+- Windows SDK do formato de mídia, perfis
 - ASF (Advanced Systems Format), perfis
 - ASF (formato de sistemas avançados), perfis
-- SDK do Windows Media Format, arquivos. prx
+- Windows SDK do formato de mídia, arquivos. prx
 - Formato de sistema avançado (ASF), arquivos. prx
 - ASF (formato de sistemas avançados), arquivos. prx
-- SDK do Windows Media Format, editor de perfil
+- Windows SDK do formato de mídia, editor de perfil
 - ASF (Advanced Systems Format), editor de perfil
 - ASF (formato de sistemas avançados), editor de perfil
 - arquivos. prx
 - arquivos PRX
 - Editor de perfil
-- Codificador de mídia do Windows
+- Windows Codificador de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de244445a7c1301c7a14ef273b81ac9fd9cbfb62
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 64a89c06f031c9cf8214888efb35f2986135f88207fc94a631e1e111c94ce16d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105781629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119707406"
 ---
 # <a name="profiles"></a>Perfis
 
@@ -33,11 +33,11 @@ As informações de fluxo em um perfil contêm a taxa de bits, a janela de buffe
 
 Um perfil também contém informações sobre os vários recursos de arquivo ASF que serão usados em arquivos criados com ele. Isso inclui [exclusão mútua](mutual-exclusion.md), [priorização de fluxo](stream-prioritization.md), [compartilhamento de largura de banda](bandwidth-sharing.md)e extensões de unidade de [dados](data-unit-extensions.md).
 
-As versões anteriores do SDK do Windows Media Format forneciam perfis de sistema pré-configurados, que poderiam ser usados para criar tipos comuns de arquivos ou alterados um pouco para atender às necessidades do seu aplicativo. Os perfis do sistema não têm suporte para os codecs da série Windows Media 9. Isso ocorre porque o número de tipos "comuns" de arquivos cresceu exponencialmente com a adição de novos recursos. Espera-se que praticamente todo criador de conteúdo precise que vá além das soluções simples fornecidas por perfis de sistema. Você ainda pode usar os perfis de sistema antigos como um local inicial. Para obter mais informações, consulte [usando perfis de sistema](using-system-profiles.md).
+as versões anteriores do SDK do formato de mídia do Windows forneciam perfis de sistema pré-configurados, que poderiam ser usados para criar tipos comuns de arquivos ou alterados um pouco para atender às necessidades do seu aplicativo. os perfis de sistema não têm suporte para os codecs da série Windows Media 9. Isso ocorre porque o número de tipos "comuns" de arquivos cresceu exponencialmente com a adição de novos recursos. Espera-se que praticamente todo criador de conteúdo precise que vá além das soluções simples fornecidas por perfis de sistema. Você ainda pode usar os perfis de sistema antigos como um local inicial. Para obter mais informações, consulte [usando perfis de sistema](using-system-profiles.md).
 
 Você deve fornecer ao gravador um perfil para cada arquivo que você escrever. Você pode especificar um perfil a ser usado com o gravador chamando [**IWMWriter:: setprofile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile).
 
-Os dados de perfil existem em várias formas diferentes que podem ser usadas pelo Windows Media Format SDK. As informações de perfil também podem ser acessadas de várias maneiras. Isso pode levar à confusão sobre o que é um perfil e como ele é usado.
+os dados de perfil existem em vários formulários diferentes que podem ser usados pelo SDK do formato de mídia Windows. As informações de perfil também podem ser acessadas de várias maneiras. Isso pode levar à confusão sobre o que é um perfil e como ele é usado.
 
 O diagrama a seguir mostra como os dados de perfil são usados no SDK.
 
@@ -53,7 +53,7 @@ A maioria dos dados de perfil deve ser adicionada e manipulada por meio do uso d
 
 ## <a name="data-in-an-xml-file"></a>Dados em um arquivo XML
 
-Os dados de perfil são armazenados em disco na forma de um arquivo XML com a extensão de nome de arquivo. prx. Incluído no Windows Media Format SDK há uma coleção de perfis chamada perfis de sistema que abrangem os tipos mais comuns de arquivos ASF. Os perfis de sistema são armazenados em um arquivo chamado WMSysPr9. prx. (Observe que esse arquivo realmente não contém perfis de sistema para o Windows Media 9 Series porque o conceito de perfis de sistema não é mais usado.) Ao salvar seus próprios perfis personalizados, você deve salvá-los em seus próprios arquivos.
+Os dados de perfil são armazenados em disco na forma de um arquivo XML com a extensão de nome de arquivo. prx. incluído com o SDK do formato de mídia Windows é uma coleção de perfis chamada perfis de sistema que abrangem os tipos mais comuns de arquivos ASF. Os perfis de sistema são armazenados em um arquivo chamado WMSysPr9. prx. (observe que esse arquivo realmente não contém perfis de sistema para Windows Media 9 Series porque o conceito de perfis de sistema não é mais usado.) Ao salvar seus próprios perfis personalizados, você deve salvá-los em seus próprios arquivos.
 
 Você pode usar o objeto do Gerenciador de perfis para salvar os dados de um objeto de perfil em uma cadeia de caracteres de texto XML. Em seguida, você pode usar quaisquer funções de e/s de arquivo que gosta de salvar a cadeia de caracteres em um arquivo no disco.
 
@@ -65,9 +65,9 @@ Ao acessar os dados de perfil usando o leitor (ou leitor síncrono), você pode 
 
 ## <a name="using-profile-editor"></a>Usando o editor de perfil
 
-Em vez de criar perfis usando o Windows Media Format SDK, você pode usar o editor de perfil, um utilitário que está incluído no codificador de mídia do Windows. No seu aplicativo de codificação, use o método **IWMProfileManager:: LoadProfileByData** para carregar o perfil salvo. Em alguns cenários, por exemplo, se você usar um número limitado de perfis que nunca são modificados dinamicamente, talvez seja mais conveniente usar o editor de perfil para criar seus perfis.
+em vez de criar perfis usando o SDK do formato de mídia Windows, você pode usar o Editor de perfil, um utilitário incluído com o codificador de mídia Windows. No seu aplicativo de codificação, use o método **IWMProfileManager:: LoadProfileByData** para carregar o perfil salvo. Em alguns cenários, por exemplo, se você usar um número limitado de perfis que nunca são modificados dinamicamente, talvez seja mais conveniente usar o editor de perfil para criar seus perfis.
 
-No entanto, se você usar o editor de perfil, é recomendável não usar a configuração "tamanho do vídeo: igual à entrada de vídeo". Quando essa caixa de seleção estiver marcada, o editor de perfil criará um perfil com a altura e a largura de saída do vídeo definida como zero. Quando o codificador do Windows Media encontra esses perfis, ele define os valores corretos para corresponder à entrada de vídeo. No entanto, o gravador no Windows Media Format SDK não faz isso automaticamente, portanto, você deve garantir que seu aplicativo defina o tamanho do quadro de vídeo em casos em que o perfil tenha nenhum.
+No entanto, se você usar o editor de perfil, é recomendável não usar a configuração "tamanho do vídeo: igual à entrada de vídeo". Quando essa caixa de seleção estiver marcada, o editor de perfil criará um perfil com a altura e a largura de saída do vídeo definida como zero. quando Windows o codificador de mídia encontra esses perfis, ele define os valores corretos para corresponder à entrada de vídeo. no entanto, o gravador no SDK do formato de mídia Windows não faz isso automaticamente, portanto, você deve garantir que seu aplicativo defina o tamanho do quadro de vídeo em casos em que o perfil tenha nenhum.
 
 **Observação** Alguns itens de configuração de fluxo não são armazenados no perfil. Os dados no perfil descrevem o formato do arquivo ASF concluído. As propriedades de mídia de entrada e outros dados de configuração usados pelo objeto gravador para configurar os codecs não são salvos no perfil. Isso inclui todas as propriedades definidas usando o método [**IWMPropertyVault:: SetProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-setproperty) .
 
@@ -102,9 +102,9 @@ No entanto, se você usar o editor de perfil, é recomendável não usar a confi
 [**Trabalhando com perfis**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

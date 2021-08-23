@@ -3,7 +3,7 @@ title: MCI_UPDATE comando (mmsystem. h)
 description: O comando de atualização do MCI \_ atualiza o retângulo de exibição. Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: 90a8c10f-61b9-49a1-bbcc-e0729aa8c454
 keywords:
-- Multimídia do Windows de comando MCI_UPDATE
+- MCI_UPDATE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 423186096c88a8f1ff74987ff57c6b49dc6c3131
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e58333b108891a8bcd0e0548d4dcd0db2f2606d1259f0934f19b8f6804afab3b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689676"
 ---
 # <a name="mci_update-command"></a>Comando de atualização do MCI \_
 

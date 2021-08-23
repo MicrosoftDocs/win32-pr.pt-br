@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f942998d645217ea3fe336a65ba28a7e6eb6cad6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c64dc15535eae4dfb365d55b59ffe226491b8ef569c33e0cf7ea75d0b9c9ab18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606076"
 ---
 # <a name="boundingbox-constructors"></a>Construtores BoundingBox
 
@@ -30,7 +30,7 @@ Cria uma instância de `BoundingBox` classe.
 |:----------------------------------------------------------------------------|:-----------------------------------------------------------|
 | [**BoundingBox ()**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-boundingbox(boundingbox__))                                | Cria uma instância de `BoundingBox` classe.<br/> |
 | [**BoundingBox (const BoundingBox&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-boundingbox(constboundingbox_))              | Cria uma instância de `BoundingBox` classe.<br/> |
-| [**BoundingBox (const XMFLOAT3&, const XMFLOAT3&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-boundingbox(constxmfloat3__constxmfloat3_)) | Cria uma instância de `BoundingBox` classe.<br/> |
+| [**BoundingBox (const XMFLOAT3&,const XMFLOAT3&)**](/windows/win32/api/directxcollision/nf-directxcollision-boundingbox-boundingbox(constxmfloat3__constxmfloat3_)) | Cria uma instância de `BoundingBox` classe.<br/> |
 
 
 
@@ -41,7 +41,7 @@ Cria uma instância de `BoundingBox` classe.
 **Referência**
 </dt> <dt>
 
-[**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
+[**Boundingbox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)
 </dt> </dl>
 
  
