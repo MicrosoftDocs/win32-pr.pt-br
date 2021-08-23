@@ -1,7 +1,7 @@
 ---
-description: Função IWICBitmapEncoder_Initialize_Proxy function-proxy para o método Initialize.
+description: IWICBitmapEncoder_Initialize_Proxy função - função proxy para o método Initialize.
 ms.assetid: 0db79eb4-dcb2-491a-9bea-a0dec418f80f
-title: Função IWICBitmapEncoder_Initialize_Proxy
+title: IWICBitmapEncoder_Initialize_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: d346d1379ae92f19a530c65daff07cb98b2e0e50
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ef1c51ac9693d81eb7c6cdc88c28431eacda3137a5ad73e4fa20c08c16d32509
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812646"
 ---
-# <a name="iwicbitmapencoder_initialize_proxy-function"></a>A \_ função de proxy IWICBitmapEncoder Initialize \_
+# <a name="iwicbitmapencoder_initialize_proxy-function"></a>Função Inicializar Proxy IWICBitmapEncoder \_ \_
 
-Função de proxy para o método [**Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-initialize) .
+Função proxy para o [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-initialize)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ HRESULT IWICBitmapEncoder_Initialize_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)\***
 
-Ponteiro para este objeto [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) .
+Ponteiro para este [**objeto IWICBitmapEncoder.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)
 
 </dd> <dt>
 
-*pIStream* \[ no\]
+*pIStream* \[ Em\]
 </dt> <dd>
 
 Tipo: **[IStream](/windows/desktop/api/objidl/nn-objidl-istream)\***
@@ -60,7 +60,7 @@ O fluxo de saída.
 
 </dd> <dt>
 
-*cacheOption* \[ no\]
+*cacheOption* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapEncoderCacheOption**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmapencodercacheoption)**
@@ -73,7 +73,7 @@ O [**WICBitmapEncoderCacheOption**](/windows/desktop/api/Wincodec/ne-wincodec-wi
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -83,9 +83,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5992803a04a771aed716251bd25ca2eceb9f94d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 561541f170fbe6dc5342b359e5deae69d0c92469ad2d692ee4ea3b9d59904885
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737236"
 ---
 # <a name="imsrdpclient10-interface"></a>Interface IMsRdpClient10
 
@@ -48,9 +48,9 @@ A interface **IMsRdpClient10** tem esses métodos.
 | [**GetStatusText**](imsrdpclient7-getstatustext.md)                               | Recupera o texto de status do código de status especificado.<br/>                 |
 | [**GetVirtualChannelOptions**](imsrdpclient-getvirtualchanneloptions.md)          | Recupera as opções definidas para um canal virtual.<br/>                         |
 | [**Reconectar**](imsrdpclient8-reconnect.md)                                       | Reconecta-se à sessão remota com a nova largura e altura da área de trabalho.<br/>  |
-| [**RequestClose**](imsrdpclient-requestclose.md)                                  | Solicita um desligamento normal do Área de Trabalho Remota controle ActiveX.<br/>      |
+| [**RequestClose**](imsrdpclient-requestclose.md)                                  | solicita um desligamento normal do controle de ActiveX de Área de Trabalho Remota.<br/>      |
 | [**SendRemoteAction**](imsrdpclient8-sendremoteaction.md)                         | Faz com que uma ação seja executada na sessão remota.<br/>                  |
-| [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md)          | Define as opções de canal virtual para o controle ActiveX Área de Trabalho Remota.<br/> |
+| [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md)          | define as opções de canal virtual para o controle de ActiveX de Área de Trabalho Remota.<br/> |
 | [**SyncSessionDisplaySettings**](imsrdpclient9-syncsessiondisplaysettings.md)     | Sincroniza as configurações de exibição da sessão.<br/>                                   |
 | [**UpdateSessionDisplaySettings**](/previous-versions/windows/desktop/legacy/mt703457(v=vs.85)) | Atualiza as configurações de exibição da sessão.<br/>                                        |
 
@@ -83,11 +83,11 @@ A interface **IMsRdpClient10** tem essas propriedades.
 | [**RemoteProgram2**](imsrdpclient7-remoteprogram2.md)<br/>                    | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**ITSRemoteProgram2**](itsremoteprogram2.md) .<br/>                                                                                                 |
 | [**RemoteProgram3**](imsrdpclient10-remoteprogram3.md)<br/>                   | Somente leitura<br/>  | Um objeto que dá suporte à interface [**ITSRemoteProgram3**](itsremoteprogram3.md) .<br/>                                                                                                           |
 | [**SecuredSettings2**](imsrdpclient-securedsettings2.md)<br/>                 | Somente leitura<br/>  | Recupera um ponteiro para a interface [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) . Essa interface pode ser usada para definir configurações protegidas para o controle de cliente.<br/>   |
-| [**SecuredSettings3**](imsrdpclient7-securedsettings3.md)<br/>                | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) .<br/>                                                                           |
-| [**TransportSettings**](imsrdpclient5-transportsettings.md)<br/>              | Somente leitura<br/>  | Recupera o que passou por um script para a interface [**IMsRdpClientTransportSettings**](imsrdpclienttransportsettings.md) .<br/>                                                             |
-| [**TransportSettings2**](imsrdpclient6-transportsettings2.md)<br/>            | Somente leitura<br/>  | Recupera a interface [**IMsRdpClientTransportSettings2**](imsrdpclienttransportsettings2.md) .<br/>                                                                                               |
-| [**TransportSettings3**](imsrdpclient7-transportsettings3.md)<br/>            | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientTransportSettings3**](imsrdpclienttransportsettings3.md) .<br/>                                                                       |
-| [**TransportSettings4**](imsrdpclient9-transportsettings4.md)<br/>            | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientTransportSettings4**](imsrdpclienttransportsettings4.md) .<br/>                                                                       |
+| [**SecuredSettings3**](imsrdpclient7-securedsettings3.md)<br/>                | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientSecuredSettings2.**](imsrdpclientsecuredsettings2.md)<br/>                                                                           |
+| [**TransportSettings**](imsrdpclient5-transportsettings.md)<br/>              | Somente leitura<br/>  | Recupera o que foi passado por meio de um script para a interface [**IMsRdpClientTransportSettings.**](imsrdpclienttransportsettings.md)<br/>                                                             |
+| [**TransportSettings2**](imsrdpclient6-transportsettings2.md)<br/>            | Somente leitura<br/>  | Recupera a interface [**IMsRdpClientTransportSettings2.**](imsrdpclienttransportsettings2.md)<br/>                                                                                               |
+| [**TransportSettings3**](imsrdpclient7-transportsettings3.md)<br/>            | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientTransportSettings3.**](imsrdpclienttransportsettings3.md)<br/>                                                                       |
+| [**TransportSettings4**](imsrdpclient9-transportsettings4.md)<br/>            | Somente leitura<br/>  | Recupera um objeto que dá suporte à interface [**IMsRdpClientTransportSettings4.**](imsrdpclienttransportsettings4.md)<br/>                                                                       |
 
 
 
@@ -95,7 +95,7 @@ A interface **IMsRdpClient10** tem essas propriedades.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,7 +103,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                                              |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                                                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                                                                                                           |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                   |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                   |
@@ -140,13 +140,13 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClient2**](imsrdpclient2.md)
 </dt> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
-[**IMsTscAx**](imstscax-interface.md)
+[**Imstscax**](imstscax-interface.md)
 </dt> <dt>
 
-[Referência de Conexão Web de Área de Trabalho Remota](remote-desktop-web-connection-reference.md)
+[Conexão Web de Área de Trabalho Remota referência](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

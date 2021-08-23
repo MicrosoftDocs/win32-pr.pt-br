@@ -1,7 +1,7 @@
 ---
-description: Contém uma lista de identificadores básicos do conjunto de serviços (BSS).
+description: Contém uma lista de identificadores BSS (conjunto de serviços básicos).
 ms.assetid: 22907f94-1ae8-4938-a816-b406656256c0
-title: Estrutura de DOT11_BSSID_LIST (Windot11. h)
+title: DOT11_BSSID_LIST estrutura (Windot11.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - windot11.h
-ms.openlocfilehash: 345053a8d39ea37bea2fa2350dcc426420aed422
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8abcd2e711d5598c59bb8d4b7aed0f291364f94d04ec17a5fc80de2fd32939eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801386"
 ---
-# <a name="dot11_bssid_list-structure"></a>Estrutura da lista de DOT11 \_ BSSID \_
+# <a name="dot11_bssid_list-structure"></a>Estrutura DOT11 \_ BSSID \_ LIST
 
-A estrutura de **\_ \_ lista de DOT11 BSSID** contém uma lista de identificadores de BSS (conjunto de serviços básicos).
+A **estrutura DOT11 \_ BSSID \_ LIST** contém uma lista de identificadores BSS (conjunto de serviços básicos).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ typedef struct _DOT11_BSSID_LIST {
 **Cabeçalho**
 </dt> <dd>
 
-Uma estrutura de [**\_ \_ cabeçalho de objeto NDIS**](ndis-object-header.md) que contém o tipo, a versão e as informações de tamanho de uma estrutura de NDIS. Para a maioria das estruturas de **\_ \_ lista de DOT11 BSSID** , defina o membro de **tipo** como padrão de  tipo de objeto de **NDIS \_ \_ \_**, defina o membro de revisão para a **lista de DOT11 \_ BSSID \_ \_ revisão \_ 1** e defina o membro de **tamanho** como **sizeof (lista de DOT11 \_ BSSID \_ )**.
+Uma [**estrutura NDIS \_ OBJECT \_ HEADER**](ndis-object-header.md) que contém as informações de tipo, versão e tamanho de uma estrutura NDIS. Para a maioria das estruturas **DOT11 \_ BSSID \_ LIST,** de definido  o membro Type como **NDIS \_ OBJECT TYPE \_ \_ DEFAULT**, de definir o membro de revisão como **DOT11 \_ BSSID \_ LIST REVISION \_ \_ 1** e de definir o membro Size **como sizeof(DOT11 \_ BSSID \_ LIST)**.  
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ O número total de entradas com suporte.
 **BSSIDs**
 </dt> <dd>
 
-Uma lista de identificadores de BSS. Um identificador de BSS é armazenado como um tipo de [**\_ \_ endereço MAC DOT11**](dot11-mac-address-type.md) .
+Uma lista de identificadores BSS. Um identificador BSS é armazenado como um [**tipo DE \_ \_ ENDEREÇO MAC DOT11.**](dot11-mac-address-type.md)
 
 </dd> </dl>
 
@@ -76,10 +76,10 @@ Uma lista de identificadores de BSS. Um identificador de BSS é armazenado como 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Vista, Windows XP somente com aplicativos da área de trabalho SP3 \[\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                       |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Windot11. h (incluir Windot11. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Windot11.h (inclua Windot11.h)</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Uma lista de identificadores de BSS. Um identificador de BSS é armazenado como 
 
 <dl> <dt>
 
-[**\_parâmetros de conexão WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_parameters)
+[**PARÂMETROS DE \_ CONEXÃO \_ WLAN**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_parameters)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: fc2716a10673cc1178591b14a335b1d8559aa35a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a82594400bebc8a529290e0e0e881603172aa45c111d2d4d83ebcbd5ebfbeb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119779036"
 ---
 # <a name="imonitoronstatus-method"></a>Método IMonitor:: OnStatus
 
@@ -46,7 +46,7 @@ Uma estrutura de [ \_ eventos de atualização](update-event.md) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será S \_ OK (que é o mesmo que NOERROR) e o MCSVC passará o valor retornado de volta para o NPP para processamento.
 

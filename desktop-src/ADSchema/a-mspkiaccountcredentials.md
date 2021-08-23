@@ -1,6 +1,6 @@
 ---
 title: atributo ms-PKI-AccountCredentials
-description: Armazenamento de BLOBs de token de credencial de usuário criptografados para roaming. | atributo ms-PKI-AccountCredentials
+description: Armazenamento de blobs de token de credencial de usuário criptografados para roaming. | atributo ms-PKI-AccountCredentials
 ms.assetid: 08df5c7d-3aae-4cff-97df-25da6995c72e
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76fb96e598b156ba5940bfb75bbfdb628f777353
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: dbba37bf220cb35bfc1aa26d4a59948539ccaec117240387ca6481bbd6388818
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802872"
 ---
 # <a name="ms-pki-accountcredentials-attribute"></a>atributo ms-PKI-AccountCredentials
 
-Armazenamento de BLOBs de token de credencial de usuário criptografados para roaming.
+Armazenamento de blobs de token de credencial de usuário criptografados para roaming.
 
 
 

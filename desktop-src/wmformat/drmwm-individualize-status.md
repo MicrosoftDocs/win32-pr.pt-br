@@ -1,9 +1,9 @@
 ---
-title: Estrutura de WM_INDIVIDUALIZE_STATUS (wmdrmsdk. h)
-description: A \_ estrutura de status de individualização do WM \_ contém informações sobre um processo de individualização pendente.
+title: WM_INDIVIDUALIZE_STATUS estrutura (Wmdrmsdk.h)
+description: A estrutura WM \_ INDIVIDUALIZE \_ STATUS contém informações sobre um processo de individualização pendente.
 ms.assetid: af7e8758-489b-461f-b241-d7e40c8d61da
 keywords:
-- Formato de mídia do Windows de estrutura de WM_INDIVIDUALIZE_STATUS
+- WM_INDIVIDUALIZE_STATUS formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ef7617fe6dcddf3397ab1a123132e843f0b1461
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c139631fe737e07d011e43920ab63c7394f03c3319abb2f7936153ae06c596ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708296"
 ---
-# <a name="wm_individualize_status-structure-wmdrmsdkh"></a>Estrutura de WM_INDIVIDUALIZE_STATUS (wmdrmsdk. h)
+# <a name="wm_individualize_status-structure-wmdrmsdkh"></a>WM_INDIVIDUALIZE_STATUS estrutura (Wmdrmsdk.h)
 
-A estrutura de **\_ \_ status de individualização do WM** contém informações sobre um processo de individualização pendente.
+A **estrutura WM \_ INDIVIDUALIZE \_ STATUS** contém informações sobre um processo de individualização pendente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,14 +49,14 @@ typedef struct _WMIndividualizeStatus {
 **h**
 </dt> <dd>
 
-Código de retorno **HRESULT** .
+**Código de retorno HRESULT.**
 
 </dd> <dt>
 
 **enIndiStatus**
 </dt> <dd>
 
-Valor do tipo de enumeração de [**\_ \_ status de individualização de DRM**](drmdrm-individualization-status.md) que indica o status atual do processo de individualização.
+Valor do tipo [**de enumeração \_ STATUS DE \_ INDIVIDUALIZAÇÃO**](drmdrm-individualization-status.md) DO DRM que indica o status atual do processo de individualização.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ O número de viagens de ida e volta HTTP para o serviço de individualização q
 **enHTTPStatus**
 </dt> <dd>
 
-Valor do tipo de enumeração de [**\_ \_ status http DRM**](drmdrm-http-status.md) .
+Valor do tipo [**de enumeração \_ STATUS HTTP \_ DO DRM.**](drmdrm-http-status.md)
 
 </dd> <dt>
 
@@ -91,13 +91,13 @@ O número de bytes baixados.
 **dwHTTPReadTotal**
 </dt> <dd>
 
-O número total de bytes a serem baixados. Você pode usar esse valor e **dwHTTPReadProgress** para exibir uma interface do usuário que indica a quantidade de download concluída e quanto resta.
+O número total de bytes a serem baixados. Você pode usar esse valor e **dwHTTPReadProgress** para exibir uma interface do usuário que indica quanto do download foi concluído e quanto ainda deve ser feito.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é recebida quando você chama o método [**IWMDRMIndividualizationStatus:: GetStatus**](iwmdrmindividualizationstatus-getstatus.md) . Ele contém o status do processo de individualização pendente no momento da chamada.
+Essa estrutura é recebida quando você chama o [**método IWMDRMIndividualizationStatus::GetStatus.**](iwmdrmindividualizationstatus-getstatus.md) Ele contém o status do processo de individualização pendente no momento da chamada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,7 +105,7 @@ Essa estrutura é recebida quando você chama o método [**IWMDRMIndividualizati
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

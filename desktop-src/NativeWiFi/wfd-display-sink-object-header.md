@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - wfdsink.h
-ms.openlocfilehash: cdefd6b0b91fefb0f42a6e37e7584f7cd966884b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4c9e4d83fbac1cccb2dbc0643acc707176be433dfca7854395a0f97c9c36435
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800466"
 ---
 # <a name="wfd_display_sink_object_header-structure"></a>\_Estrutura de \_ cabeçalho de objeto do coletor de vídeo WFD \_ \_
 
@@ -68,9 +68,9 @@ O comprimento dos dados no resultado da notificação ou da notificação.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl> |
 
 
 

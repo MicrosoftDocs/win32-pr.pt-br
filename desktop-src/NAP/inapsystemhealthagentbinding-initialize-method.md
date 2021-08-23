@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ee4d4f602303ca1943e47c04ba30ab8f6e75e72
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7dbe764d477c5f176fcaebc0825bbbcd02495ec70ee669a02c59258173cfbdd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802706"
 ---
 # <a name="inapsystemhealthagentbindinginitialize-method"></a>Método INapSystemHealthAgentBinding:: Initialize
 
@@ -62,7 +62,7 @@ Um ponteiro COM para uma interface [**INapSystemHealthAgentCallback**](inapsyste
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Outros códigos de erro específicos de COM também podem ser retornados.
 
@@ -70,7 +70,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Código de retorno                                                                                                | Descrição                                                                                                                    |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                      | Operação bem-sucedida.<br/>                                                                                                |
+| <dl> <dt>**S \_ OK**</dt> </dl>                      | Êxito na operação.<br/>                                                                                                |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>            | Erro de permissões, acesso negado.<br/>                                                                                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>             | O limite de recursos do sistema não pôde executar a operação.<br/>                                                             |
 | <dl> <dt>**ERRO \_ já \_ inicializado**</dt> </dl> | Se o SHA tiver sido inicializado anteriormente, esse erro será retornado.<br/>                                                      |
@@ -91,9 +91,9 @@ O NapAgent não dispara uma troca SoH como resultado da inicialização. Um agen
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 

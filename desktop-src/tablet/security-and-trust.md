@@ -1,19 +1,19 @@
 ---
-description: O .NET Framework tem um modelo de segurança que trata aplicativos de forma diferente, dependendo de sua origem.
+description: o .NET Framework tem um modelo de segurança que trata aplicativos de forma diferente, dependendo de sua origem.
 ms.assetid: 37fa870a-6f38-44ae-943e-27697f6b9fba
 title: Segurança e confiança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4e3039f8aa93c2ae563a918177462cd09a217af
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 99806fa3256dfd08d8f4a14c70620c767331fb3cb95b83a7ecd6940b04c155cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "105748061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708196"
 ---
 # <a name="security-and-trust"></a>Segurança e confiança
 
-O .NET Framework tem um modelo de segurança que trata aplicativos de forma diferente, dependendo de sua origem. Os executáveis e assemblies que são do computador de um usuário geralmente são executados com confiança total; os mesmos executáveis e assemblies executados pela Internet geralmente são executados com confiança parcial. Isso é para impedir que códigos mal-intencionados leiam ou modifiquem informações às quais ele não deve ter acesso, como arquivos locais, itens na área de transferência e outros recursos. Se um executável chama um assembly que, por sua vez, chama outro assembly que requer um certo nível de confiança, o nível mais baixo de confiança de todos os componentes na cadeia é aplicado. No entanto, um administrador em um computador pode definir permissões específicas que substituem as permissões padrão.
+o .NET Framework tem um modelo de segurança que trata aplicativos de forma diferente, dependendo de sua origem. Os executáveis e assemblies que são do computador de um usuário geralmente são executados com confiança total; os mesmos executáveis e assemblies executados pela Internet geralmente são executados com confiança parcial. Isso é para impedir que códigos mal-intencionados leiam ou modifiquem informações às quais ele não deve ter acesso, como arquivos locais, itens na área de transferência e outros recursos. Se um executável chama um assembly que, por sua vez, chama outro assembly que requer um certo nível de confiança, o nível mais baixo de confiança de todos os componentes na cadeia é aplicado. No entanto, um administrador em um computador pode definir permissões específicas que substituem as permissões padrão.
 
 Uma visão geral do modelo de segurança é fornecida em [controles seguros, Light-Weight Client-Side](/archive/msdn-magazine/2002/january/dhtml-and-net-host-secure-lightweight-client-side-controls-in-microsoft-internet-explorer)e você pode obter mais detalhes sobre o modelo de segurança na [segurança de acesso ao código na prática](/previous-versions/msp-n-p/ff648663(v=pandp.10)). Uma boa visão geral da segurança das bibliotecas (que é especialmente importante para objetos [**UserControl**](/uwp/api/Windows.UI.Xaml.Controls.UserControl?view=winrt-19041) em uma página da Web) pode ser encontrada em [usando bibliotecas de código parcialmente confiável](/documentation/?url=%2flibrary%2fcpguide%2fhtml%2fcpconusinglibrariesfrompartiallytrustedcode.asp)e outras informações de segurança sobre controles gerenciados podem ser encontradas em [escrevendo controles gerenciados seguros](/documentation/?url=%2flibrary%2fcpguide%2fhtml%2fcpconwritingsecuremanagedcontrols.asp%3fframe%3dtrue).
 
@@ -61,7 +61,7 @@ A tabela a seguir lista as classes e os membros que exigem permissões adicionai
  
 
 > [!Note]  
-> As propriedades [InkCollector. Handle](/previous-versions/ms836504(v=msdn.10)) e [InkOverlay. Handle](/previous-versions/ms833109(v=msdn.10)) não exigem a permissão [SecurityPermissionFlag. UnmanagedCode](/previous-versions/windows/) se o identificador for para um controle de Windows Forms, mas eles fazem para outras janelas.
+> as propriedades [InkCollector. handle](/previous-versions/ms836504(v=msdn.10)) e [InkOverlay. Handle](/previous-versions/ms833109(v=msdn.10)) não exigem a permissão [SecurityPermissionFlag. unmanagedcode](/previous-versions/windows/) se o identificador for para um controle de Windows Forms, mas eles fazem para outras janelas.
 
  
 
@@ -75,7 +75,7 @@ A tabela a seguir lista as classes e os membros que exigem permissões adicionai
 Algumas outras considerações de segurança conhecidas são:
 
 -   O Microsoft Internet Explorer 6 ou superior é necessário para que os controles da Web funcionem corretamente. Com o Internet Explorer 5,5, somente os controles gerenciados iniciais são carregados; Você não pode carregar controles adicionais dinamicamente em tempo de execução.
--   Se você estiver usando o Windows XP Service Pack 2 (SP2) e o CLR 1.0, ter controles da Web no Internet Explorer exigirá a adição do site como um site confiável, mesmo se eles estiverem na zona da intranet. No entanto, quando você fizer isso, eles não serão mais executados na zona do site confiável, embora sejam executados na zona da intranet. Esse problema é corrigido com o CLR 1.1.
+-   se você estiver usando Windows XP Service Pack 2 (SP2) e clr 1.0, ter controles da Web no Internet Explorer exigirá a adição do site como um site confiável, mesmo que eles estejam na zona da Intranet. No entanto, quando você fizer isso, eles não serão mais executados na zona do site confiável, embora sejam executados na zona da intranet. Esse problema é corrigido com o CLR 1.1.
 
  
 

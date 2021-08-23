@@ -1,11 +1,11 @@
 ---
 title: Scope-Flags atributo
-description: O atributo Scope-Flags não é usado no momento.
+description: O Scope-Flags atributo não é usado no momento.
 ms.assetid: c68af2f5-066c-4d15-a116-73f5c7d51d59
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Scope-Flags do atributo AD
-- Esquema de AD do atributo scopeFlags
+- Scope-Flags atributo AD Schema
+- Esquema do AD do atributo scopeFlags
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d4c7b9d173dd53920878f51dacb5dfdc26e66ae
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aae1dcddbbd37dbec281750a17e6ced15b29df32ff7e3cd08569d097a0ce8689
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836986"
 ---
 # <a name="scope-flags-attribute"></a>Scope-Flags atributo
 
-O atributo **Scope-flags** não está sendo usado no momento.
+O **atributo Scope-Flags** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Scope-Flags                          |
-| LDAP-Display-Name | scopeFlags                           |
+| Ldap-Display-Name | scopeFlags                           |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1354              |
-| System-ID-GUID    | 16f3a4c2-7e79-11d2-9921-0000f87a57d4 |
+| System-Id-Guid    | 16f3a4c2-7e79-11d2-9921-0000f87a57d4 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ O atributo **Scope-flags** não está sendo usado no momento.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -79,10 +79,10 @@ O atributo **Scope-flags** não está sendo usado no momento.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -100,10 +100,10 @@ O atributo **Scope-flags** não está sendo usado no momento.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -121,7 +121,7 @@ O atributo **Scope-flags** não está sendo usado no momento.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -142,7 +142,7 @@ O atributo **Scope-flags** não está sendo usado no momento.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -163,7 +163,7 @@ O atributo **Scope-flags** não está sendo usado no momento.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |

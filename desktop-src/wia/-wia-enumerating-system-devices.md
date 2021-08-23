@@ -1,21 +1,21 @@
 ---
-description: 'Use o método IWiaDevMgr:: EnumDeviceInfo (ou IWiaDevMgr2:: EnumDeviceInfo) para enumerar os dispositivos de aquisição de imagem do Windows (WIA) instalados em um sistema.'
+description: Use o método IWiaDevMgr::EnumDeviceInfo (ou IWiaDevMgr2::EnumDeviceInfo) para enumerar os dispositivos WIA (Aquisição de Imagem) do Windows instalados em um sistema.
 ms.assetid: 6465a33e-1b3b-4142-a58f-b27e9c95cd3e
 title: Enumerando dispositivos do sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d2d65879cd1fc8466f4ada638281ef496636b19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60b6587d88b2836e057f0b6d7e31bd7f22d79c6220c51b407b621370d8524b89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814256"
 ---
 # <a name="enumerating-system-devices"></a>Enumerando dispositivos do sistema
 
-Use o método [**IWiaDevMgr:: EnumDeviceInfo**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-enumdeviceinfo) (ou [**IWiaDevMgr2:: EnumDeviceInfo**](-wia-iwiadevmgr2-enumdeviceinfo.md)) para enumerar os dispositivos de aquisição de imagem do Windows (WIA) instalados em um sistema. Esse método cria um objeto de enumeração para as propriedades dos dispositivos e retorna um ponteiro para a interface [**de \_ \_ informações de desenvolvimento IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) que o objeto de enumeração suporta.
+Use o método [**IWiaDevMgr::EnumDeviceInfo**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-enumdeviceinfo) (ou [**IWiaDevMgr2::EnumDeviceInfo**](-wia-iwiadevmgr2-enumdeviceinfo.md)) para enumerar os dispositivos WIA (Aquisição de Imagem) do Windows instalados em um sistema. Esse método cria um objeto de enumeração para as propriedades dos dispositivos e retorna um ponteiro para a interface [**IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) compatível com o objeto de enumeração.
 
-Em seguida, você pode usar os métodos da interface [**IEnumWIA \_ dev \_ info**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) para obter um ponteiro de interface [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) para cada dispositivo instalado no sistema.
+Em seguida, você pode usar os métodos da interface [**IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) para obter um ponteiro de interface [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) para cada dispositivo instalado no sistema.
 
 O código a seguir do aplicativo de exemplo WiaSSamp demonstra como criar um objeto de enumeração para os dispositivos em um sistema e iterar por meio desses dispositivos:
 
@@ -96,15 +96,15 @@ O código a seguir do aplicativo de exemplo WiaSSamp demonstra como criar um obj
 
 
 
-WIA \_ DevInfo de \_ enumeração \_ local é uma constante WIA que representa o único valor válido para esse parâmetro.
+WIA \_ DEVINFO \_ ENUM \_ LOCAL é uma constante WIA que representa o único valor válido para esse parâmetro.
 
 No exemplo, o parâmetro **pWiaDevMgr** aponta para uma instância da interface [**IWiaDevMgr**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadevmgr) (ou [**IWiaDevMgr2**](-wia-iwiadevmgr2.md)) após uma chamada anterior para [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
-O aplicativo chama o [**método IWiaDevMgr:: EnumDeviceInfo**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-enumdeviceinfo) (ou [**IWiaDevMgr2:: EnumDeviceInfo**](-wia-iwiadevmgr2-enumdeviceinfo.md)) do ponteiro [**IWiaDevMgr**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadevmgr) (ou [**IWiaDevMgr2**](-wia-iwiadevmgr2.md)) **pWiaDevMgr** que preenche **pWiaEnumDevInfo** com o endereço de um ponteiro para a interface [**de \_ \_ informações de desenvolvimento IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) .
+O  aplicativo chama o método [**IWiaDevMgr::EnumDeviceInfo**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-enumdeviceinfo) (ou [**IWiaDevMgr2::EnumDeviceInfo**](-wia-iwiadevmgr2-enumdeviceinfo.md)) do ponteiro [**IWiaDevMgr**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadevmgr) (ou [**IWiaDevMgr2**](-wia-iwiadevmgr2.md)) que preenche **pWiaEnumDevInfo** com o endereço de um ponteiro para a interface [**IEnumWIA \_ DEV \_ INFO.**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
 
-Se a chamada for realizada com sucesso, o aplicativo chamará o método [**IEnumWIA \_ dev \_ info:: Reset**](/windows/desktop/api/wia_xp/nf-wia_xp-ienumwia_dev_info-reset) do ponteiro de [**\_ \_ informações de desenvolvimento do IEnumWIA**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) . A variável **pWiaEnumDevInfo** garante que a enumeração comece no início.
+Se a chamada for bem-sucedida, o aplicativo chamará o método [**IEnumWIA \_ DEV \_ INFO::Reset**](/windows/desktop/api/wia_xp/nf-wia_xp-ienumwia_dev_info-reset) do ponteiro [**IEnumWIA \_ DEV \_ INFO.**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) A **variável pWiaEnumDevInfo** garante que a enumeração seja iniciada no início.
 
-Se essa chamada for bem sucedido, o aplicativo itera pelos dispositivos no sistema chamando repetidamente o método [**IEnumWIA \_ dev \_ info:: Next**](/windows/desktop/api/wia_xp/nf-wia_xp-ienumwia_dev_info-next) do ponteiro de [**\_ \_ informações do IEnumWIA dev**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) **pWiaEnumDevInfo** até que o método não retorne S \_ OK, indicando que a enumeração foi concluída.
+Se essa chamada for bem-sucedida, o aplicativo itera pelos dispositivos no sistema chamando repetidamente o método [**IEnumWIA \_ DEV \_ INFO::Next**](/windows/desktop/api/wia_xp/nf-wia_xp-ienumwia_dev_info-next) do ponteiro [**IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info) **pWiaEnumDevInfo** até que o método não retorne mais S OK, indicando que a \_ enumeração foi concluída.
 
 Cada chamada para **pWiaEnumDevInfo->Next** preenche **pWiaPropertyStorage** com um ponteiro para a interface [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) que contém informações de propriedade para um dispositivo específico.
 

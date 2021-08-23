@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_SET_USER_DATA (VFW. h)
 description: A Cap do WM \_ \_ definir a \_ \_ mensagem de dados do usuário associa um \_ valor de dados PTR longo a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capSetUserData.
 ms.assetid: 067502e3-f009-4cf2-b612-4a0b64624416
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_SET_USER_DATA
+- mensagem de WM_CAP_SET_USER_DATA Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 542b8e49f740bfc265824947237841dede1f6065
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea5b4a192b774572ea374b08d4a4128389281e44ee00614806841b0b007d978b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803546"
 ---
 # <a name="wm_cap_set_user_data-message"></a>\_Mensagem de \_ \_ dados do usuário Set Cap do WM \_
 

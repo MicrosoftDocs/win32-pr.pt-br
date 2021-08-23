@@ -1,8 +1,8 @@
 ---
-description: Representa um serviço em um sistema de computador que executa o Windows.
+description: Representa um serviço em um sistema de computador executando Windows.
 ms.assetid: 713402d3-ee73-4a6c-afb9-ad8033a4c580
 ms.tgt_platform: multiple
-title: Classe Win32_Service
+title: Win32_Service classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -40,18 +40,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b342282bfa3b49fe72e62cf79377a0ead11276eb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a33265b3dfc3b114d55b381a229b717e291bbd258716e8305d9995282d29b3f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759256"
 ---
-# <a name="win32_service-class"></a>\_Classe de serviço Win32
+# <a name="win32_service-class"></a>Classe de serviço Win32 \_
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de **\_ serviço do Win32** representa um serviço em um sistema de computador executando o Windows.
+A **classe WMI de \_ Serviço Win32** [representa](../wmisdk/retrieving-a-class.md) um serviço em um sistema de computador executando Windows.
 
-A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -90,14 +90,14 @@ class Win32_Service : Win32_BaseService
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ serviço do Win32** tem estes tipos de membros:
+A **classe \_ Serviço Win32** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ serviço do Win32** tem esses métodos.
+A **classe \_ Serviço Win32** tem esses métodos.
 
 
 
@@ -106,13 +106,13 @@ A classe de **\_ serviço do Win32** tem esses métodos.
 | [**Alteração**](change-method-in-class-win32-service.md)                               | Modifica um serviço.<br/>                                                                       |
 | [**ChangeStartMode**](changestartmode-method-in-class-win32-service.md)             | Modifica o modo de início de um serviço.<br/>                                                     |
 | [**Criar**](create-method-in-class-win32-service.md)                               | Cria um serviço novo.<br/>                                                                    |
-| [**Apagar**](delete-method-in-class-win32-service.md)                               | Exclui um serviço existente.<br/>                                                              |
+| [**Excluir**](delete-method-in-class-win32-service.md)                               | Exclui um serviço existente.<br/>                                                              |
 | [**GetSecurityDescriptor**](getsecuritydescriptor-method-in-class-win32-service.md) | Retorna o descritor de segurança que controla o acesso ao serviço.<br/>                      |
-| [**InterrogateService**](interrogateservice-method-in-class-win32-service.md)       | Solicita que um serviço atualize seu estado para o Service Manager.<br/>                          |
-| [**PauseService**](pauseservice-method-in-class-win32-service.md)                   | Tenta colocar um serviço no estado de pausa.<br/>                                          |
-| [**ResumeService**](resumeservice-method-in-class-win32-service.md)                 | Tenta posicionar um serviço no estado retomado.<br/>                                         |
+| [**Service**](interrogateservice-method-in-class-win32-service.md)       | Solicita que um serviço atualize seu estado para o gerenciador de serviços.<br/>                          |
+| [**PauseService**](pauseservice-method-in-class-win32-service.md)                   | Tenta colocar um serviço no estado pausado.<br/>                                          |
+| [**ResumeService**](resumeservice-method-in-class-win32-service.md)                 | Tenta colocar um serviço no estado retomado.<br/>                                         |
 | [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class-win32-service.md) | Grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.<br/> |
-| [**StartService**](startservice-method-in-class-win32-service.md)                   | Tenta posicionar um serviço no estado de inicialização.<br/>                                       |
+| [**Startservice**](startservice-method-in-class-win32-service.md)                   | Tenta colocar um serviço no estado de inicialização.<br/>                                       |
 | [**StopService**](stopservice-method-in-class-win32-service.md)                     | Coloca um serviço no estado parado.<br/>                                                    |
 | [**UserControlService**](usercontrolservice-method-in-class-win32-service.md)       | Tenta enviar um código de controle definido pelo usuário para um serviço.<br/>                                |
 
@@ -122,43 +122,43 @@ A classe de **\_ serviço do Win32** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ serviço do Win32** tem essas propriedades.
+A **classe \_ Serviço Win32** tem essas propriedades.
 
 <dl> <dt>
 
 **AcceptPause**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Service estruturas \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| DwControlsAccepted \| Service \_ Accept \_ Pause \_ Continue"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("o serviço aceita Pause")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwControlsAccepted \| SERVICE ACCEPT PAUSE \_ \_ \_ CONTINUE"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Service Accepts Pause")
 </dt> </dl>
 
 Indica se o serviço pode ser pausado.
 
-Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
+Essa propriedade é herdada de [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
 **AcceptStop**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Service estruturas \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwControlsAccepted \| Service \_ Accept \_ Stop"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("o serviço aceita Stop")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwControlsAccepted \| SERVICE ACCEPT \_ \_ STOP"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Service Accepts Stop")
 </dt> </dl>
 
 Indica se o serviço pode ser interrompido.
 
-Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
+Essa propriedade é herdada de [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
@@ -171,28 +171,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Legenda")
 </dt> </dl>
 
-Breve descrição do serviço — uma cadeia de caracteres de uma linha.
+Descrição curta do serviço – uma cadeia de caracteres de uma linha.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Verifica**
+**Checkpoint**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Service structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwCheckPoint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("contagem de pontos de verificação")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures SERVICE \| [**\_ STATUS**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwCheckPoint"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Check Point Count")
 </dt> </dl>
 
-Valor que o serviço incrementa periodicamente para relatar seu progresso durante uma longa operação de início, parada, pausa ou continuação. Por exemplo, o serviço incrementa esse valor à medida que ele conclui cada etapa de sua inicialização quando ele está sendo inicializado. O programa de interface do usuário que invoca a operação no serviço usa esse valor para acompanhar o progresso do serviço durante uma operação demorada. Esse valor não é válido e deve ser zero quando o serviço não tem uma operação de início, parada, pausa ou continuação pendente.
+Valor que o serviço incrementa periodicamente para relatar seu progresso durante uma operação de início longo, parada, pausa ou continuação. Por exemplo, o serviço incrementa esse valor à medida que conclui cada etapa de sua inicialização quando está iniciando. O programa de interface do usuário que invoca a operação no serviço usa esse valor para acompanhar o progresso do serviço durante uma operação demorada. Esse valor não é válido e deve ser zero quando o serviço não tem uma operação de início, parada, pausa ou continuação pendente.
 
 </dd> <dt>
 
@@ -205,30 +205,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome da classe")
+Qualificadores: [**\_ Chave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome da Classe")
 </dt> </dl>
 
-Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usado com as outras propriedades de chave da classe, essa propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
+Nome da primeira classe concreta a ser exibida na cadeia de herança usada na criação de uma instância. Quando usada com as outras propriedades de chave da classe , essa propriedade permite que todas as instâncias dessa classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
 **DelayedAutoStart**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("as \| estruturas de serviço win32api \| [**serviço de \_ \_ início automático atrasado de \_ \_ informações**](/windows/win32/api/winsvc/ns-winsvc-service_delayed_auto_start_info) \| fDelayedAutostart"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("início automático atrasado")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service \| [**\_ DELAYED AUTO START \_ \_ \_ INFO**](/windows/win32/api/winsvc/ns-winsvc-service_delayed_auto_start_info) \| fDelayedAutostart"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Início Automático Atrasado")
 </dt> </dl>
 
-Se **for true**, o serviço será iniciado depois que outros serviços de início automático forem iniciados além de um pequeno atraso.
+Se **True**, o serviço será iniciado depois que outros serviços de início automático são iniciados, além de um pequeno atraso.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows Server 2016 e Windows 10.
 
 </dd> <dt>
 
@@ -246,25 +246,25 @@ Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Descriçã
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DesktopInteract**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api do \| serviço de consulta de estruturas de serviços \| [**\_ \_**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType \| processo interativo do serviço \_ \_ "), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("interage com a área de trabalho")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**QUERY SERVICE \_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwServiceType \| SERVICE INTERACTIVE \_ \_ PROCESS"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Interage com a área de trabalho")
 </dt> </dl>
 
-Indica se o serviço pode criar ou se comunicar com o Windows na área de trabalho e, portanto, interagir de alguma maneira com um usuário. Os serviços interativos devem ser executados na conta sistema local. A maioria dos serviços não são interativos; ou seja, eles não se comunicam com o usuário de nenhuma forma.
+Indica se o serviço pode criar ou se comunicar com janelas na área de trabalho e, portanto, interagir de alguma forma com um usuário. Os serviços interativos devem ser executados na conta sistema local. A maioria dos serviços não é interativa; ou seja, eles não se comunicam com o usuário de forma alguma.
 
-Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
+Essa propriedade é herdada de [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 </dd> <dt>
 
@@ -277,10 +277,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api do \| serviço de consulta da \| [**\_ \_ configuração do serviço**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| LpDisplayName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("nome de exibição")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**QUERY SERVICE \_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| lpDisplayName"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome de Exibição")
 </dt> </dl>
 
-Nome do serviço como exibido no snap-in serviços. Essa cadeia de caracteres tem um tamanho máximo de 256 caracteres. Observe que o nome de exibição e o nome do serviço (que é armazenado no registro) nem sempre são os mesmos. Por exemplo, o serviço de cliente DHCP tem o nome de serviço DHCP, mas o nome de exibição cliente DHCP. O nome é, por caso, preservado no Gerenciador de controle de serviço. No entanto, as comparações **DisplayName** sempre diferenciam maiúsculas de minúsculas.
+Nome do serviço conforme exibido no snap-in Serviços. Essa cadeia de caracteres tem um tamanho máximo de 256 caracteres. Observe que o nome de exibição e o nome do serviço (que é armazenado no registro) nem sempre são os mesmos. Por exemplo, o serviço de cliente DHCP tem o nome de serviço DHCP, mas o nome de exibição cliente DHCP. O nome é, por caso, preservado no Gerenciador de controle de serviço. No entanto, as comparações **DisplayName** sempre diferenciam maiúsculas de minúsculas.
 
 Restrição: aceita o mesmo valor que a propriedade **Name** .
 
@@ -377,7 +377,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Service structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("código de saída")
 </dt> </dl>
 
-Código de erro do Windows que define os erros encontrados ao iniciar ou interromper o serviço. Essa propriedade é definida como **\_ \_ \_ erro específico do serviço de erro** (1066) quando o erro é exclusivo para o serviço representado por essa classe e as informações sobre o erro estão disponíveis na propriedade **ServiceSpecificExitCode** . O serviço define esse valor como **sem \_ erros** durante a execução e novamente após o término normal.
+Windows código de erro que define os erros encontrados na inicialização ou na interrupção do serviço. Essa propriedade é definida como **\_ \_ \_ erro específico do serviço de erro** (1066) quando o erro é exclusivo para o serviço representado por essa classe e as informações sobre o erro estão disponíveis na propriedade **ServiceSpecificExitCode** . O serviço define esse valor como **sem \_ erros** durante a execução e novamente após o término normal.
 
 Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
 
@@ -576,7 +576,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("modo de início")
 </dt> </dl>
 
-Modo de início do serviço base do Windows.
+modo de início do serviço base de Windows.
 
 <dt>
 
@@ -733,7 +733,7 @@ Em **pausa** ("pausado")
 
 </dt> <dd></dd> </dl>
 
-**Windows Server 2008 e Windows Vista:** Essa propriedade é somente leitura antes do Windows 7 e do Windows Server 2008 R2.
+**Windows Server 2008 e Windows Vista:** esta propriedade é somente leitura antes de Windows 7 e Windows Server 2008 R2.
 
 Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
 
@@ -925,11 +925,11 @@ A classe de **\_ serviço do Win32** é derivada do [**Win32 \_ BaseService**](w
 
 A maneira como você gerencia um computador específico depende muito da função que o computador desempenha. Por exemplo, você geralmente monitora diferentes aspectos de um servidor DNS do que um servidor DHCP. Embora nenhuma única propriedade possa informar se um computador específico é um servidor de banco de dados, um servidor de email ou um servidor de multimídia, geralmente é possível identificar a função que um computador desempenha identificando os serviços instalados nele.
 
-Em grandes organizações, é provável que apenas um dos principais serviços (como email) seja instalado em um único computador. Seria incomum que um servidor de email também fosse executado como um servidor para os arquivos de player do Microsoft® Windows Media® Technologies. Por isso, a identificação de um serviço instalado em um computador pode ajudar a identificar a função do computador na rede. Se o serviço do Microsoft® Exchange Server estiver instalado e em execução em um computador, geralmente é seguro supor que esse computador funciona como um servidor de email.
+Em grandes organizações, é provável que apenas um dos principais serviços (como email) seja instalado em um único computador. seria incomum que um servidor de email também fosse executado como um servidor para os arquivos de player do Microsoft® Windows Media® technologies. Por isso, a identificação de um serviço instalado em um computador pode ajudar a identificar a função do computador na rede. se o serviço de Exchange Server da Microsoft® estiver instalado e em execução em um computador, geralmente é seguro supor que esse computador funciona como um servidor de email.
 
 Você pode usar a classe **de \_ serviço WMI Win32** para enumerar os serviços instalados em um computador. Além disso, você pode usar essa classe para determinar se esses serviços estão em execução no momento e para retornar outras informações necessárias sobre esse serviço e como ele foi configurado.
 
-Um aplicativo de serviço está em conformidade com as regras de interface do SCM (Gerenciador de controle de serviço) e pode ser iniciado por um usuário automaticamente na inicialização do sistema por meio do utilitário do painel de controle de serviços ou por um aplicativo que usa as funções de serviço incluídas na API do Windows. Os serviços podem ser iniciados quando não há usuários conectados ao computador.
+um aplicativo de serviço está em conformidade com as regras de interface do SCM (gerenciador de controle de serviço) e pode ser iniciado por um usuário automaticamente na inicialização do sistema por meio do utilitário do painel de controle de serviços ou por um aplicativo que usa as funções de serviço incluídas na API de Windows. Os serviços podem ser iniciados quando não há usuários conectados ao computador.
 
 Um usuário que se conecta a partir de um computador remoto deve ter o privilégio do **sc \_ Manager \_ Connect** habilitado para poder enumerar essa classe. Para obter mais informações, consulte [segurança de serviço e direitos de acesso](../services/service-security-and-access-rights.md).
 

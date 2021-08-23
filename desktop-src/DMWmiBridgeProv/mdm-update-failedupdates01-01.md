@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Update_FailedUpdates01_01
-description: A \_ classe MDM update \_ FailedUpdates01 \_ 01 é usada para gerenciar atualizações com falha.
+title: MDM_Update_FailedUpdates01_01 classe
+description: A classe MDM \_ Update \_ FailedUpdates01 \_ 01 é usada para gerenciar atualizações com falha.
 ms.assetid: 3bb7993b-b44b-44d1-84ee-dbdda0093ca0
 keywords:
-- Classe MDM_Update_FailedUpdates01_01
-- Classe MDM_Update_FailedUpdates01_01, descrita
+- MDM_Update_FailedUpdates01_01 classe
+- MDM_Update_FailedUpdates01_01 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e0ba8d42d97b15cd195e87f536abad9610492e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 646f485544e9a51711e55453d79f1a16d0a37d38c8d18d6ed4d2340e3c34fa30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795946"
 ---
-# <a name="mdm_update_failedupdates01_01-class"></a>\_ \_ Classe FailedUpdates01 01 de atualização \_ do MDM
+# <a name="mdm_update_failedupdates01_01-class"></a>Classe \_ \_ FailedUpdates01 \_ 01 da atualização MDM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ Update \_ FailedUpdates01 \_ 01** é usada para gerenciar atualizações com falha.
+A **classe MDM \_ Update \_ FailedUpdates01 \_ 01** é usada para gerenciar atualizações com falha.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,23 +47,23 @@ class MDM_Update_FailedUpdates01_01
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ Update \_ FailedUpdates01 \_ 01** tem estes tipos de membros:
+A **classe MDM \_ Update \_ FailedUpdates01 \_ 01** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ Update \_ FailedUpdates01 \_ 01** tem essas propriedades.
+A **classe MDM \_ Update \_ FailedUpdates01 \_ 01** tem essas propriedades.
 
 <dl> <dt>
 
-[Resultado](/windows/client-management/mdm/update-csp#failedupdates-failed-update-guid-hresult)
+[HResult](/windows/client-management/mdm/update-csp#failedupdates-failed-update-guid-hresult)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -84,7 +84,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é o GUID
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -100,13 +100,13 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 </dd> <dt>
 
-[**Status**](/windows/client-management/mdm/update-csp)
+[**Estado**](/windows/client-management/mdm/update-csp)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,11 +117,11 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOFs</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

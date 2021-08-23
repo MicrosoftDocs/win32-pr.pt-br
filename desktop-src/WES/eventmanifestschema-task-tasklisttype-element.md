@@ -1,9 +1,9 @@
 ---
-title: Elemento Task (TaskListtype)
-description: Define um componente ou subcomponente de um aplicativo. | Elemento Task (TaskListtype)
+title: Elemento task (TaskListType)
+description: Define um componente ou subcomponente de um aplicativo. | Elemento task (TaskListType)
 ms.assetid: 890f11cc-a379-41a5-a35b-08ad5615e18b
 keywords:
-- elemento de tarefa EventLog
+- Elemento task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b828f7b38942927c527ce6e72b143400196b75f9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 90b7abd0d116637b6aa1ad197a6479c86e4745259af4d65c0ed318a009054e68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767255"
 ---
-# <a name="task-tasklisttype-element"></a>Elemento Task (TaskListtype)
+# <a name="task-tasklisttype-element"></a>Elemento task (TaskListType)
 
 Define um componente ou subcomponente de um aplicativo.
 
@@ -30,7 +30,7 @@ Define um componente ou subcomponente de um aplicativo.
  />
 ```
 
-O elemento **Task** é definido pelo tipo complexo [**tasklisttype**](eventmanifestschema-tasklisttype-complextype.md) .
+O **elemento task** é definido pelo tipo complexo [**TaskListType.**](eventmanifestschema-tasklisttype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Task** é definido pelo tipo complexo [**tasklisttype**](eventmanif
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

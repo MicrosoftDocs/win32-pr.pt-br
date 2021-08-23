@@ -8,12 +8,12 @@ keywords:
 - Driver MCIAVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be2e69cf2b0fd9ee71650c56b0d7d9efb50a46e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d4a7a6bc8da314cc5cb891846e46289396fefb6be60d92ddd38f17ab1aff0ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783425"
 ---
 # <a name="mciavi"></a>MCIAVI
 
@@ -27,9 +27,9 @@ O áudio é sincronizado com o vídeo dentro de um thirtieth de um segundo. No e
 
 Seu aplicativo pode usar os serviços de classe de janela MCIWnd em vez da interface de comando MCI para controlar qualquer driver MCI. Essa classe de janela lida com muitos dos detalhes do gerenciamento da janela que oferece suporte ao dispositivo MCI e simplifica a programação necessária para enviar os comandos MCI. Seu aplicativo pode usar os serviços de biblioteca do MCIWnd diretamente para controlar o dispositivo MCI ou pode ter MCIWnd exibir uma barra de ferramentas, barra de rolagem e menus que permitem ao usuário controlar o dispositivo. Para obter mais informações sobre a classe de janela MCIWnd, consulte [classe de janela MCIWnd](mciwnd-window-class.md).
 
- 
+ 
 
- 
+ 
 
 
 

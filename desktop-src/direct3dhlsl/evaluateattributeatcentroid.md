@@ -1,9 +1,9 @@
 ---
-title: Função EvaluateAttributeAtCentroid
-description: Avalia no pixel centróide.
+title: Função EvaluateAttributeAtCentoid
+description: É avaliada no centroide de pixel.
 ms.assetid: 6735b3f4-765f-4cd9-9f38-326a52709021
 keywords:
-- HLSL da função EvaluateAttributeAtCentroid
+- Função EvaluateAttributeAtCentoid HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ee95c7f2f202dfd0065e5e9c30003cc46fd29281
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 867f7dadc2ccf7d86eed602dd9e65d07be7558f0a8a00426e3a45bc1c2c97a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744036"
 ---
-# <a name="evaluateattributeatcentroid-function"></a>Função EvaluateAttributeAtCentroid
+# <a name="evaluateattributeatcentroid-function"></a>Função EvaluateAttributeAtCentoid
 
-Avalia no pixel centróide.
+É avaliada no centroide de pixel.
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 numeric EvaluateAttributeAtCentroid(
-  in attrib numeric value
+  in attrib numeric value
 );
 ```
 
@@ -36,10 +36,10 @@ numeric EvaluateAttributeAtCentroid(
 
 <dl> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
-Tipo: **Atrib. numérico**
+Tipo: **numérico de atrib**
 
 O valor de entrada.
 
@@ -47,33 +47,33 @@ O valor de entrada.
 
 ## <a name="remarks"></a>Comentários
 
-O modo de interpolação pode ser **linear** ou **linear \_ sem nenhuma \_ perspectiva** na variável. O uso de **centróide** ou de **exemplo** é ignorado. Atributos com interpolação de constante também são permitidos; nesse caso, o índice de exemplo é ignorado.
+O modo de interpolação pode **ser linear** ou linear **sem \_ \_ perspectiva** na variável. O uso **de centroide** **ou amostra** é ignorado. Atributos com interpolação constante também são permitidos, caso em que o índice de exemplo é ignorado.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -85,9 +85,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Flat-Name atributo
-description: Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com não-8211; Domínios do Windows NT, o nome simples é o nome de identificação desse domínio ou é nulo.
+description: para domínios Windows NT, o nome simples é o nome NetBIOS. Para links com não-8211; Windows NT domínios, o nome simples é o nome de identificação desse domínio ou é nulo.
 ms.assetid: ec368657-a0e7-4416-ab80-1d18d98bbcfa
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 373ee0736c051932fdb6dd20701f0c5ec353ad3b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 587fd4424c8373427a31e34864c200cc20e78ba4bf36e9fea735c28fd5817384
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804606"
 ---
 # <a name="flat-name-attribute"></a>Flat-Name atributo
 
-Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com domínios não Windows NT, o nome simples é o nome de identificação desse domínio ou é **nulo**.
+para domínios Windows NT, o nome simples é o nome NetBIOS. para links com domínios não Windows NT, o nome simples é o nome de identificação desse domínio ou é **nulo**.
 
 
 
@@ -58,8 +58,8 @@ Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com d
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | \-                                                   |
@@ -79,8 +79,8 @@ Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com d
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | \-                                                   |
@@ -100,8 +100,8 @@ Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com d
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
 | Range-Lower            | \-                                                   |
@@ -121,10 +121,10 @@ Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com d
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| Tem valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000001                                           |
@@ -142,10 +142,10 @@ Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com d
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| Tem valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000001                                           |
@@ -163,10 +163,10 @@ Para domínios do Windows NT, o nome simples é o nome NetBIOS. Para links com d
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| Tem valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000001                                           |

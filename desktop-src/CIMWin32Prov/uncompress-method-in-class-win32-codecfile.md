@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 7d1ffcf99877781c7070b42dac5ffe9ef83af2d5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b87a1cf186eeee3af227e84aad3553386d5a1d8bd33f73f664aeffab4bc1af59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800656"
 ---
 # <a name="uncompress-method-of-the-win32_codecfile-class"></a>Descompactar o método da \_ classe de codecs do Win32
 
@@ -40,7 +40,7 @@ uint32 Uncompress();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor inteiro de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
 
@@ -91,7 +91,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 

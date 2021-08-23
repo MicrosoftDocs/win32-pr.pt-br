@@ -1,5 +1,5 @@
 ---
-description: O método estático da classe WMI SetNumForwardPackets é usado para definir o número de cabeçalhos de pacotes IP alocados para a fila de pacotes do roteador. Quando todos os cabeçalhos estiverem em uso, o roteador começará a descartar os pacotes da fila aleatoriamente.
+description: O método estático da classe WMI SetNumForwardPackets é usado para definir o número de títulos de pacote IP alocados para a fila de pacotes do roteador. Quando todos os headers estão em uso, o roteador começará a descartar pacotes da fila aleatoriamente.
 ms.assetid: cadc7565-4cad-4e0f-a1eb-bf99d333bb28
 ms.tgt_platform: multiple
 title: Método SetNumForwardPackets da classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f46ecd62766b5df642dff1e52614171a513a8fca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1962746cffb64733d6935bb4ef655a96cce051cc67fb1a4f2e730e4ff5ce0d7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759745"
 ---
-# <a name="setnumforwardpackets-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetNumForwardPackets da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="setnumforwardpackets-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetNumForwardPackets da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetNumForwardPackets** é usado para definir o número de cabeçalhos de pacotes IP alocados para a fila de pacotes do roteador. Quando todos os cabeçalhos estiverem em uso, o roteador começará a descartar os pacotes da fila aleatoriamente.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetNumForwardPackets** é usado para definir o número de títulos de pacote IP alocados para a fila de pacotes do roteador. Quando todos os headers estão em uso, o roteador começará a descartar pacotes da fila aleatoriamente.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 SetNumForwardPackets(
 
 <dl> <dt>
 
-*NumForwardPackets* \[ no\]
+*NumForwardPackets* \[ Em\]
 </dt> <dd>
 
-Número de cabeçalhos de pacote IP alocados para a fila de pacotes do roteador. Isso deve ser pelo menos tão grande quanto o valor da propriedade [**ForwardBufferMemory**](win32-networkadapterconfiguration.md) dividido pelo tamanho máximo de dados IP das redes conectadas ao roteador. Não deve ser maior do que o valor de **ForwardBufferMemory** dividido por 256, pois pelo menos 256 bytes de memória de buffer de encaminhamento são necessários para cada pacote. O número ideal de pacotes de encaminhamento para um determinado tamanho de **ForwardBufferMemory** depende do tipo de tráfego que é feito na rede e estará entre esses dois valores. Se o roteador estiver desabilitado, esse parâmetro será ignorado e nenhum cabeçalho será alocado. Intervalo válido: 1-0xFFFFFFFE.
+Número de headers de pacotes IP alocados para a fila de pacotes do roteador. Isso deve ser pelo menos tão grande quanto o valor da propriedade [**ForwardBufferMemory**](win32-networkadapterconfiguration.md) dividida pelo tamanho máximo de dados IP das redes conectadas ao roteador. Ele não deve ser maior que o **valor ForwardBufferMemory** dividido por 256, uma vez que pelo menos 256 bytes de memória de buffer de avanço são exigidos por cada pacote. O número ideal de pacotes de encaminhamento para um determinado tamanho **forwardBufferMemory** depende do tipo de tráfego carregado na rede e estará em algum lugar entre esses dois valores. Se o roteador estiver desabilitado, esse parâmetro será ignorado e nenhum headers será alocado. Intervalo válido: 1 – 0xFFFFFFFE.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -136,7 +136,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -235,21 +235,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,7 +406,7 @@ DHCP não habilitado no adaptador.
 
 ## <a name="examples"></a>Exemplos
 
-A amostra [Modificar o número de pacotes encaminhados permitidos](https://Gallery.TechNet.Microsoft.Com/4123c28e-25c4-444e-818b-67bdbcc0cd4c) do VBScript configura o número de pacotes de encaminhamento alocados para a fila de pacotes do roteador.
+O exemplo Modificar o número de pacotes de encaminhamento [permitidos](https://Gallery.TechNet.Microsoft.Com/4123c28e-25c4-444e-818b-67bdbcc0cd4c) VBScript configura o número de pacotes de encaminhamento alocados para a fila de pacotes do roteador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -416,8 +416,8 @@ A amostra [Modificar o número de pacotes encaminhados permitidos](https://Galle
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -429,13 +429,13 @@ A amostra [Modificar o número de pacotes encaminhados permitidos](https://Galle
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

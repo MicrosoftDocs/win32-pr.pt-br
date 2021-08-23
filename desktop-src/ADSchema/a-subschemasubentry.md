@@ -1,11 +1,11 @@
 ---
 title: Atributo SubSchemaSubEntry
-description: O nome distinto para o local do objeto de subesquema em que uma classe ou atributo é definido.
+description: O nome diferenciado para o local do objeto de subschema em que uma classe ou atributo é definido.
 ms.assetid: 16beeb31-436c-4ae1-b1f7-fa00abb3bcbb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo SubSchemaSubEntry
-- Esquema de AD do atributo subSchemaSubEntry
+- Esquema do AD do atributo SubSchemaSubEntry
+- Esquema do AD do atributo subSchemaSubEntry
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57a0278d63d3a6ed9d0f84ad67df87e248af31f1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 389eaf9a0761633b15bc39d93f8e37b5abb3fdf7b1fbca79530fd14df2d2eab5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836132"
 ---
 # <a name="subschemasubentry-attribute"></a>Atributo SubSchemaSubEntry
 
-O nome distinto para o local do objeto de subesquema em que uma classe ou atributo é definido.
+O nome diferenciado para o local do objeto de subschema em que uma classe ou atributo é definido.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | SubSchemaSubEntry                                                                |
-| LDAP-Display-Name | subSchemaSubEntry                                                                |
+| Ldap-Display-Name | subSchemaSubEntry                                                                |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de esquema                                                             |
-| Frequência de atualização  | Quando a Active Directory é carregada ou quando uma nova classe ou atributo é definido. |
+| Frequência de atualização  | Quando o Active Directory é carregado ou quando uma nova classe ou atributo é definido. |
 | Attribute-Id      | 2.5.18.10                                                                        |
-| System-ID-GUID    | 9a7ad94d-ca53-11d1-bbd0-0080c76670c0                                             |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md)                                          |
+| System-Id-Guid    | 9a7ad94d-ca53-11d1-bbd0-0080c76670c0                                             |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)                                          |
 
 
 
@@ -44,7 +44,7 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -79,11 +79,11 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -121,7 +121,7 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -142,7 +142,7 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -163,7 +163,7 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -184,7 +184,7 @@ O nome distinto para o local do objeto de subesquema em que uma classe ou atribu
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

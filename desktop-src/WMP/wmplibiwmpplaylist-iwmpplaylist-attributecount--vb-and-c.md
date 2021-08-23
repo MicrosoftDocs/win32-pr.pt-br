@@ -3,9 +3,9 @@ title: Propriedade IWMPPlaylist attributeCount
 description: A propriedade attributeCount Obtém o número de atributos associados a uma lista de reprodução.
 ms.assetid: 0713ec4e-7e06-4ad2-8f7c-17ed5a92d5ee
 keywords:
-- Propriedade attributeCount Windows Media Player
-- Propriedade attributeCount Windows Media Player, interface IWMPPlaylist
-- Interface IWMPPlaylist Windows Media Player, Propriedade attributeCount
+- Windows Media Player da propriedade attributeCount
+- propriedade attributeCount Windows Media Player, interface IWMPPlaylist
+- Windows Media Player de interface IWMPPlaylist, propriedade attributeCount
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4107eb1ad302415715b573b55d2dee1d7155128d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b51c621f5a484c23a2f7d0677fe20d1b62bfb4d2ec94228e003adc2ebc841cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760766"
 ---
 # <a name="iwmpplaylistattributecount-property"></a>Propriedade IWMPPlaylist:: attributeCount
 
@@ -54,7 +54,7 @@ Como as listas de reprodução podem vir de várias fontes diferentes, elas pode
 
 Antes de usar essa propriedade, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
-Para obter mais informações sobre atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md).
+para obter mais informações sobre atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md).
 
 ## <a name="examples"></a>Exemplos
 

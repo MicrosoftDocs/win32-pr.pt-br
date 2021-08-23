@@ -1,7 +1,7 @@
 ---
 description: A função WriteBlobToFile grava um BLOB em um arquivo.
 ms.assetid: 0793dced-82c2-4553-90b2-acf594c6749e
-title: Função WriteBlobToFile (Netmon. h)
+title: Função WriteBlobToFile (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5fbf17b76631da6dbff9ef2077776106505a37b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 045762837727308beb9b80a5854258b04cb02c0886cce9c2318032f5395b57fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742176"
 ---
 # <a name="writeblobtofile-function"></a>Função WriteBlobToFile
 
-A função **WriteBlobToFile** grava um blob em um arquivo.
+A **função WriteBlobToFile** grava um BLOB em um arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ DWORD WriteBlobToFile(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB.
+Lidar com o BLOB.
 
 </dd> <dt>
 
-*pFileName* \[ no\]
+*pFileName* \[ Em\]
 </dt> <dd>
 
 Ponteiro para o nome do arquivo, no qual o BLOB é salvo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que indica o erro.
 
@@ -68,8 +68,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

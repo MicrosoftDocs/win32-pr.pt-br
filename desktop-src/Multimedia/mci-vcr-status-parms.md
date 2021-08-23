@@ -3,7 +3,7 @@ title: Estrutura de MCI_VCR_STATUS_PARMS (VCR. h)
 description: A estrutura do parâmetro de \_ status do VCR MCI \_ \_ contém parâmetros para o comando de status do MCI \_ para gravadores de vídeo-fita.
 ms.assetid: 5d7cbb64-a81d-4bdd-8f07-8c20dd7b9ef5
 keywords:
-- Multimídia do Windows da estrutura de MCI_VCR_STATUS_PARMS
+- estrutura de MCI_VCR_STATUS_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0b197acfa0e170a9ab199cd6d6c51a64e14c320
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8569a278f697ed816085c4fc8f313502d2994215519fb2452f82e63ce31a80cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783916"
 ---
 # <a name="mci_vcr_status_parms-structure"></a>\_Estrutura de \_ parâmetros de status do VCR MCI \_
 

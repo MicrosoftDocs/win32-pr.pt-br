@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_DLG_VIDEOSOURCE (VFW. h)
 description: A \_ mensagem WM Cap \_ DLG \_ Exibir vídeo exibe uma caixa de diálogo na qual o usuário pode controlar a fonte de vídeo.
 ms.assetid: 8dc2f271-1f48-4e63-badf-9f3322063018
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DLG_VIDEOSOURCE
+- mensagem de WM_CAP_DLG_VIDEOSOURCE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38e8ae7e3d619964a547fbe0db4517fd1e7d277f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7a1f05d7e3dc421759229adffa4ecc4b78affc26f1b4244887b017614c2ab4d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803876"
 ---
 # <a name="wm_cap_dlg_videosource-message"></a>Mensagem de vídeo do WM \_ Cap \_ DLG \_
 

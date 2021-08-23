@@ -1,7 +1,7 @@
 ---
-description: Descreve os recursos de um \_ objeto CIM MetricService.
+description: Descreve os recursos de um objeto \_ MetricService cim.
 ms.assetid: 3b4da02f-5298-46d4-876c-404baca38c03
-title: Classe CIM_MetricServiceCapabilities
+title: CIM_MetricServiceCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f878cb0e616cb710a33d350df866160fc0eebb83
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c784fc9fac067c0cde07ad3e8911f9e09cd81b5cd3d7c76c16b1dd2407536838
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694953"
 ---
-# <a name="cim_metricservicecapabilities-class"></a>\_Classe CIM MetricServiceCapabilities
+# <a name="cim_metricservicecapabilities-class"></a>Classe CIM \_ MetricServiceCapabilities
 
-Descreve os recursos de um objeto [**CIM \_ MetricService**](cim-metricservice.md) .
+Descreve os recursos de um objeto [**\_ MetricService cim.**](cim-metricservice.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,63 +45,63 @@ class CIM_MetricServiceCapabilities : CIM_EnabledLogicalElementCapabilities
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ MetricServiceCapabilities** tem estes tipos de membros:
+A **classe CIM \_ MetricServiceCapabilities** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ MetricServiceCapabilities** tem essas propriedades.
+A **classe \_ METRICServiceCapabilities cim** tem essas propriedades.
 
 <dl> <dt>
 
 **ControllableManagedElements**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM MetricServiceCapabilities**.**ManagedElementControlTypes**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MetricServiceCapabilities**.**ManagedElementControlTypes**")
 </dt> </dl>
 
-Uma matriz que contém identificadores das instâncias [**\_ gerenciadas CIM**](cim-managedelement.md) que são controladas pelo serviço de métrica. Os identificadores devem ser formatados como URIs WBEM (Web-Based Enterprise Management). Para usar essa propriedade, o serviço de métrica deve dar suporte à habilitação ou desabilitação de pelo menos uma métrica que é definida para a instância de **\_ managedelement CIM** .
+Uma matriz que contém identificadores das instâncias [**\_ managedElement do CIM**](cim-managedelement.md) que são controladas pelo serviço de métrica. Os identificadores devem ser formatados como URIs de gerenciamento Web-Based Enterprise (WBEM). Para usar essa propriedade, o serviço de métrica deve dar suporte à habilitação ou desabilitação de pelo menos uma métrica definida para a **instância do Cim \_ ManagedElement.**
 
 </dd> <dt>
 
 **ControllableMetrics**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM MetricServiceCapabilities**.**MetricControlTypes**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MetricServiceCapabilities**.**MetricControlTypes**")
 </dt> </dl>
 
-Uma matriz que contém identificadores do [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) que define as métricas que são gerenciadas pelo serviço de métrica. Os identificadores devem ser formatados como URIs WBEM (Web-Based Enterprise Management).
+Uma matriz que contém identificadores da [**\_ BaseMetricDefinition cim**](cim-basemetricdefinition.md) que define as métricas gerenciadas pelo serviço de métrica. Os identificadores devem ser formatados como URIs de gerenciamento Web-Based Enterprise (WBEM).
 
-Para usar essa propriedade, uma instância de [**\_ BaseMetricDefinition do CIM**](cim-basemetricdefinition.md) deve ser associada a uma instância de [**\_ MetricService do CIM**](cim-metricservice.md) por meio da classe [**CIM \_ imafetable**](cim-serviceaffectselement.md) . Além disso, o serviço de métrica deve dar suporte à habilitação ou desabilitação de pelo menos uma métrica que é definida pela instância **\_ BaseMetricDefinition do CIM** .
+Para usar essa propriedade, uma instância [**\_ baseMetricDefinition cim**](cim-basemetricdefinition.md) deve ser associada a uma [**instância de \_ MetricService cim**](cim-metricservice.md) por meio da classe CIM [**\_ ServiceAffectsElement.**](cim-serviceaffectselement.md) Além disso, o serviço de métrica deve dar suporte à habilitação ou desabilitação de pelo menos uma métrica definida pela **instância \_ baseMetricDefinition do CIM.**
 
 </dd> <dt>
 
 **ManagedElementControlTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM MetricServiceCapabilities**.**ControllableManagedElements**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MetricServiceCapabilities**.**ControllableManagedElements**")
 </dt> </dl>
 
-Uma matriz que indica os tipos de controle que são suportados pelo serviço de métrica para os elementos gerenciados na matriz **ControllableManagedElements** . Essa matriz corresponde à matriz **ControllableManagedElements** . Os tipos de controle nessa matriz são associados às métricas por meio da matriz **ControllableManagedElements** .
+Uma matriz que indica os tipos de controle com suporte pelo serviço de métrica para os elementos gerenciados na **matriz ControllableManagedElements.** Essa matriz corresponde à **matriz ControllableManagedElements.** Os tipos de controle nessa matriz são associados a métricas por meio da **matriz ControllableManagedElements.**
 
 <dt>
 
@@ -121,7 +121,7 @@ Uma matriz que indica os tipos de controle que são suportados pelo serviço de 
 
 <span id="Bulk"></span><span id="bulk"></span><span id="BULK"></span>
 
-**Em massa** (3)
+**Bulk** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -135,14 +135,14 @@ Uma matriz que indica os tipos de controle que são suportados pelo serviço de 
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -152,16 +152,16 @@ Uma matriz que indica os tipos de controle que são suportados pelo serviço de 
 **MetricsControlTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (**" \_ CIM MetricServiceCapabilities**.**ControllableMetrics**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ MetricServiceCapabilities**.**ControllableMetrics**")
 </dt> </dl>
 
-Uma matriz que indica os tipos de controle que são suportados pelo serviço de métrica. Essa matriz corresponde à matriz **ControllableMetrics** . Os tipos de controle nessa matriz são associados às métricas por meio da matriz **ControllableMetrics** .
+Uma matriz que indica os tipos de controle com suporte pelo serviço de métrica. Essa matriz corresponde à **matriz ControllableMetrics.** Os tipos de controle nessa matriz são associados a métricas por meio da **matriz ControllableMetrics.**
 
 <dt>
 
@@ -181,7 +181,7 @@ Uma matriz que indica os tipos de controle que são suportados pelo serviço de 
 
 <span id="Bulk"></span><span id="bulk"></span><span id="BULK"></span>
 
-**Em massa** (3)
+**Bulk** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -195,14 +195,14 @@ Uma matriz que indica os tipos de controle que são suportados pelo serviço de 
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -212,13 +212,13 @@ Uma matriz que indica os tipos de controle que são suportados pelo serviço de 
 **SupportedMethods**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma matriz que contém nomes de métodos aos quais o serviço de métrica dá suporte.
+Uma matriz que contém nomes de métodos com suporte pelo serviço de métrica.
 
 <dt>
 
@@ -238,7 +238,7 @@ Uma matriz que contém nomes de métodos aos quais o serviço de métrica dá su
 
 <span id="ShowMetrics"></span><span id="showmetrics"></span><span id="SHOWMETRICS"></span>
 
-**Permétricas** (4)
+**ShowMetrics** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -266,14 +266,14 @@ Uma matriz que contém nomes de métodos aos quais o serviço de métrica dá su
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Específico do fornecedor** (0x8000..)
+**Específico do** fornecedor (0x8000..)
 
 
 </dt> <dd></dd> </dl>
@@ -288,8 +288,8 @@ Uma matriz que contém nomes de métodos aos quais o serviço de métrica dá su
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -298,7 +298,7 @@ Uma matriz que contém nomes de métodos aos quais o serviço de métrica dá su
 
 <dl> <dt>
 
-[**\_ENABLEDLOGICALELEMENTCAPABILITIES CIM**](cim-enabledlogicalelementcapabilities.md)
+[**CIM \_ EnabledLogicalElementCapabilities**](cim-enabledlogicalelementcapabilities.md)
 </dt> </dl>
 
  

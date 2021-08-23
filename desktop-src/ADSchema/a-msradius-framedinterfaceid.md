@@ -1,11 +1,11 @@
 ---
-title: atributo MS-RADIUS-FramedInterfaceId
-description: Indica o identificador da interface IPv6 a ser configurado para o usuário. | atributo MS-RADIUS-FramedInterfaceId
+title: Atributo ms-RADIUS-FramedInterfaceId
+description: Indica o identificador da interface IPv6 a ser configurado para o usuário. | Atributo ms-RADIUS-FramedInterfaceId
 ms.assetid: a686f5d6-762b-4477-9fea-0b14288e8c6a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-RADIUS-FramedInterfaceId
-- Esquema de AD do atributo msRADIUS-FramedInterfaceId
+- Esquema do AD do atributo ms-RADIUS-FramedInterfaceId
+- Esquema do AD do atributo msRADIUS-FramedInterfaceId
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3ece0fc360e39bc82cd3f6059e04d2cc2e0cee
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c5e80c16ce79dd54f75920b1b079793b5143546cda0445cd2f3cc0ea05b8972d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105748322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761656"
 ---
-# <a name="ms-radius-framedinterfaceid-attribute"></a>atributo MS-RADIUS-FramedInterfaceId
+# <a name="ms-radius-framedinterfaceid-attribute"></a>Atributo ms-RADIUS-FramedInterfaceId
 
 Indica o identificador da interface IPv6 a ser configurado para o usuário.
 
@@ -29,14 +29,14 @@ Indica o identificador da interface IPv6 a ser configurado para o usuário.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-RADIUS-FramedInterfaceId          |
-| LDAP-Display-Name | msRADIUS-FramedInterfaceId           |
+| CN                | ms-RADIUS-FramedInterfaceId          |
+| Ldap-Display-Name | msRADIUS-FramedInterfaceId           |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1913              |
-| System-ID-GUID    | a6f24a23-d65c-4d65-a64f-35fb6873c2b9 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a6f24a23-d65c-4d65-a64f-35fb6873c2b9 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Indica o identificador da interface IPv6 a ser configurado para o usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -76,10 +76,10 @@ Indica o identificador da interface IPv6 a ser configurado para o usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -97,10 +97,10 @@ Indica o identificador da interface IPv6 a ser configurado para o usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |

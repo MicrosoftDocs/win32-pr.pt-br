@@ -1,7 +1,7 @@
 ---
-description: Construtor de CTransInPlaceFilter. CTransInPlaceFilter-método de construtor.
+description: Construtor CTransInPlaceFilter.CTransInPlaceFilter – Método do construtor.
 ms.assetid: f0d30125-5d16-470c-a5fb-a7df96814dad
-title: Construtor CTransInPlaceFilter. CTransInPlaceFilter (TRANSip. h)
+title: Construtor CTransInPlaceFilter.CTransInPlaceFilter (Transip.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6b14af4b0d1f33933db8ca2fd1835e9711edad9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 98fb678a2df7c79e40c5ecf39b0a059ebc9e44f4f3f603e1d1a6551446204aa1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767576"
 ---
-# <a name="ctransinplacefilterctransinplacefilter-constructor"></a>Construtor CTransInPlaceFilter. CTransInPlaceFilter
+# <a name="ctransinplacefilterctransinplacefilter-constructor"></a>Construtor CTransInPlaceFilter.CTransInPlaceFilter
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,25 +49,25 @@ CTransInPlaceFilter(
 *pObjectName* 
 </dt> <dd>
 
-Cadeia de caracteres que contém o nome de depuração do filtro. Para obter mais informações, consulte [**CBaseObject**](cbaseobject.md).
+Cadeia de caracteres que contém o nome de depuração do filtro. Para obter mais informações, [**consulte CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *lpUnk* 
 </dt> <dd>
 
-Ponteiro para o proprietário deste objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, defina esse parâmetro como **NULL**.
+Ponteiro para o proprietário desse objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, de definido esse parâmetro como **NULL.**
 
 </dd> <dt>
 
-*CLSID* 
+*Clsid* 
 </dt> <dd>
 
 Identificador de classe do filtro.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
 Ignorado.
@@ -77,7 +77,7 @@ Ignorado.
 *bModifiesData* 
 </dt> <dd>
 
-Valor booliano que especifica se o filtro modifica os dados de entrada. Se **for true**, o filtro modificará os dados. Caso contrário, o filtro passará o downstream de dados inalterado.
+Valor booliana que especifica se o filtro modifica os dados de entrada. Se **TRUE**, o filtro modificará os dados. Caso contrário, o filtro passará os dados downstream inalterados.
 
 </dd> </dl>
 
@@ -87,12 +87,12 @@ Valor booliano que especifica se o filtro modifica os dados de entrada. Se **for
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>TRANSip. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transip.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

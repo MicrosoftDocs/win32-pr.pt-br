@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 4d11a0efac2086884e984edae986720ef704cf81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e6c4abe859cd4c307d8ade586b9371b69b5c171681006cf4aa1634ef815d794
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743896"
 ---
 # <a name="getframemacheaderlength-function"></a>Função GetFrameMacHeaderLength
 
@@ -46,7 +46,7 @@ Identificador para o quadro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será o comprimento em bytes do cabeçalho MAC.
 

@@ -17,16 +17,16 @@
     - name: Proteção de Fluxo de Controle
       href: control-flow-guard.md
       items:
-        - name: Metadados do PE
+        - name: Metadados PE
           href: pe-metadata.md
     - name: Criando uma DACL
       href: creating-a-dacl.md
     - name: Manipulando senhas
       href: handling-passwords.md
       items:
-        - name: Avaliação de ameaças de senha
+        - name: Avaliação de Ameaças de Senha
           href: password-threat-assessment.md
         - name: Técnicas de mitigação de ameaças
           href: threat-mitigation-techniques.md
-    - name: Como otimizar a pesquisa da biblioteca MSDN
+    - name: Como otimizar sua pesquisa Biblioteca MSDN dados
       href: how-to-optimize-your-msdn-library-search.md

@@ -3,7 +3,7 @@ title: Mensagem de MOM_DONE (Mciapi. h)
 description: A \_ mensagem Mom Done é enviada para uma função de retorno de chamada de saída de Midi quando o buffer especificado exclusivo pelo sistema ou fluxo foi reproduzido e está sendo retornado para o aplicativo.
 ms.assetid: 0b9bd0e1-c87d-4f21-912e-5ac9f5c04192
 keywords:
-- Multimídia do Windows de mensagem MOM_DONE
+- mensagem de MOM_DONE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8af3f58f7d8f4625971dde5d7ec807c9f963d40f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b4361ef25af7bab629138d4371c852d661373891e9d9513ae30b8ad79e97670
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807026"
 ---
 # <a name="mom_done-message"></a>Mensagem do MOM \_ concluída
 

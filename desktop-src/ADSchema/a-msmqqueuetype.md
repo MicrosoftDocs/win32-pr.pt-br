@@ -1,11 +1,11 @@
 ---
-title: MSMQ-atributo de tipo de fila
+title: Atributo MSMQ-Queue-Type
 description: Um GUID que descreve o tipo de serviço fornecido pela fila.
 ms.assetid: 97804ba5-f42a-44d4-806a-f5974c292528
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-tipo de fila do atributo AD Schema
-- Esquema de AD do atributo mSMQQueueType
+- Esquema do AD do atributo MSMQ-Queue-Type
+- Esquema do AD do atributo mSMQQueueType
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c56db29261be81cae388a089d0768840bb15e28
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5071b78069fd210a4141a27195aaf248f262cf2034d1c97ffe141a8aceaf2fdb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762126"
 ---
-# <a name="msmq-queue-type-attribute"></a>MSMQ-atributo de tipo de fila
+# <a name="msmq-queue-type-attribute"></a>Atributo MSMQ-Queue-Type
 
 Um GUID que descreve o tipo de serviço fornecido pela fila.
 
@@ -29,14 +29,14 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MSMQ-tipo de fila                                       |
-| LDAP-Display-Name | mSMQQueueType                                         |
+| CN                | Tipo de fila MSMQ                                       |
+| Ldap-Display-Name | mSMQQueueType                                         |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.917                                |
-| System-ID-GUID    | 9a0dc320-c100-11d1-bbc5-0080c76670c0                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9a0dc320-c100-11d1-football5-0080c76670c0                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
@@ -79,10 +79,10 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
@@ -100,10 +100,10 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
@@ -121,10 +121,10 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
@@ -142,10 +142,10 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |
@@ -163,10 +163,10 @@ Um GUID que descreve o tipo de serviço fornecido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
-| É indexado             | True                                         |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| Tem valor único       | Verdadeiro                                         |
+| É indexado             | Verdadeiro                                         |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 16                                           |
 | Range-Upper            | 16                                           |
 | Search-Flags           | 0x00000001                                   |

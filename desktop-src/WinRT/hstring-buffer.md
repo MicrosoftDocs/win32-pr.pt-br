@@ -1,19 +1,19 @@
 ---
-description: Um identificador para um buffer de cadeia de caracteres mutável que você pode usar para criar um HSTRING.
+description: Um handle para um buffer de cadeia de caracteres mutável que você pode usar para criar um HSTRING.
 ms.assetid: D173CE70-ABF3-4703-A229-0753F2AF6F70
-title: HSTRING_BUFFER (hstring. h)
+title: HSTRING_BUFFER (Hstring.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d70b961d442739e084e3b17d5666653c103cc35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f115ca18b4bf5b81bbd7004259aa525517c05a3adc0f6376f7d16df3e3ce679
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733816"
 ---
-# <a name="hstring_buffer"></a>\_buffer HSTRING
+# <a name="hstring_buffer"></a>HSTRING \_ BUFFER
 
-Um identificador para um buffer de cadeia de caracteres mutável que você pode usar para criar um [**HSTRING**](hstring.md).
+Um handle para um buffer de cadeia de caracteres mutável que você pode usar para criar um [**HSTRING.**](hstring.md)
 
 
 ```C++
@@ -24,9 +24,9 @@ typedef HANDLE HSTRING_BUFFER;
 
 ## <a name="remarks"></a>Comentários
 
-**HSTRING \_ BUFFER** representa um buffer de cadeia de caracteres que você pode modificar antes de convertê-lo em um [**HSTRING**](hstring.md)imutável.
+**HSTRING \_ BUFFER** representa um buffer de cadeia de caracteres que você pode modificar antes de convertê-lo em um [**HSTRING imutável.**](hstring.md)
 
-Chame a função [**WindowsPreallocateStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspreallocatestringbuffer) para criar um **\_ buffer HSTRING**. Chame o [**WindowsPromoteStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspromotestringbuffer) para converter um **\_ buffer HSTRING** em uma [**HSTRING**](hstring.md)imutável.
+Chame a [**função WindowsPreallocateStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspreallocatestringbuffer) para criar um **\_ BUFFER HSTRING.** Chame [**o WindowsPromoteStringBuffer**](/windows/win32/api/winstring/nf-winstring-windowspromotestringbuffer) para converter um **\_ BUFFER HSTRING** em um [**HSTRING imutável.**](hstring.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -36,7 +36,7 @@ Chame a função [**WindowsPreallocateStringBuffer**](/windows/win32/api/winstri
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Hstring. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Hstring.h</dt> </dl> |
 
 
 

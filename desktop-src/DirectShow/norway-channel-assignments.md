@@ -4,12 +4,12 @@ ms.assetid: 5c274035-79aa-4967-9c1a-79f888fed71e
 title: Atribuições de canal da Noruega
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1911f4212b49784354f36377832af58bf4c46121
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bc95f6531e02bf1c4eec3e736c78d81f0aafabdada32256ab3e22c50072a9619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684576"
 ---
 # <a name="norway-channel-assignments"></a>Atribuições de canal da Noruega
 
@@ -17,7 +17,7 @@ Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica
 
 Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+as seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
 
 ## <a name="cable-assignments"></a>Atribuições de cabo
 

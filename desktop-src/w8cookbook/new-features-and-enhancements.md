@@ -1,19 +1,19 @@
 ---
-title: Novos recursos e aprimoramentos (manual de compatibilidade para Windows)
+title: Novos recursos e aprimoramentos (guia de compatibilidade para Windows)
 description: Novos recursos e aprimoramentos
 ms.assetid: 79E21170-BC2D-4631-AFAC-12A9F40ECC5D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8163cfb02845dcb0bc3b47b06b0cba505058c655
-ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.openlocfilehash: 0fa140bd9e9c3d60fc1fa3dfa27dd6a770242f04d3a62057dfae736051d379fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "104084250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815066"
 ---
 # <a name="new-features-and-enhancements"></a>Novos recursos e aprimoramentos
 
-Esta seção do documento descreve os aprimoramentos e os novos recursos que podem melhorar a experiência dos desenvolvedores e dos usuários. No entanto, algumas delas têm impacto sobre a necessidade dos desenvolvedores em conhecer seus produtos novos e existentes. Abaixo está a lista de novos recursos e aprimoramentos, agrupados por área de recursos:
+Esta seção do documento descreve aprimoramentos e novos recursos que podem melhorar a experiência dos usuários e dos desenvolvedores. Alguns deles, no entanto, têm impactos que os desenvolvedores precisam estar cientes em relação aos seus produtos novos e existentes. Abaixo está a lista de novos recursos e aprimoramentos, agrupados por área de recursos:
 
 ## <a name="security"></a>Segurança
 
@@ -26,7 +26,7 @@ Esta seção do documento descreve os aprimoramentos e os novos recursos que pod
 -   Aplicativos de inicialização
 -   Sistemas de arquivos resilientes
 -   Suporte à API do servidor de arquivos
--   Manutenção automática
+-   Manutenção Automática
 
 ## <a name="usability"></a>Usabilidade
 
@@ -34,21 +34,21 @@ Esta seção do documento descreve os aprimoramentos e os novos recursos que pod
 
 ## <a name="storage-and-file-system"></a>Armazenamento e sistema de arquivos
 
--   Controlando intervalos modificados de um arquivo no Windows 8.1
--   Nova API permite que os aplicativos enviem dicas de "corte e desmapeamento" para mídia de armazenamento
--   O Multipath I/O agora dá suporte a blocos de solicitação de armazenamento estendidos
+-   Acompanhamento de intervalos modificados de um arquivo Windows 8.1
+-   A nova API permite que os aplicativos enviem dicas "TRIM e Unmap" para a mídia de armazenamento
+-   Multipath I/O agora dá suporte a blocos de solicitação de armazenamento estendido
 -   Sistemas de arquivos resilientes
 -   Suporte à API do servidor de arquivos
--   Novo recurso de histórico de arquivo
--   O sistema operacional agora controla a energia em unidades de disco ópticos
+-   Novo Histórico de Arquivos recurso
+-   O sistema operacional agora controla a potência das unidades de disco óptico
 
 ## <a name="usb"></a>USB
 
--   Suporte para USB 3,0
+-   Suporte para USB 3.0
 
- 
+ 
 
- 
+ 
 
 
 

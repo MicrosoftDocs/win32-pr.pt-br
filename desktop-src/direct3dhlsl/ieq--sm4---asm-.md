@@ -4,12 +4,12 @@ description: Comparação de igualdade de inteiro de vetor por componente.
 ms.assetid: AD010554-80DC-4D2D-B04C-2638276DDC34
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 579a47ffe38b8322b748f6ba64ce9bbbc26a5bd9
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 942e45bedd6dd7e920d4c625a4c001d48f6650a47d74e1643eb162c87980de2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743656"
 ---
 # <a name="ieq-sm4---asm"></a>IEQ (sm4-ASM)
 

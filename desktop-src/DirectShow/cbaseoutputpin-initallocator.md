@@ -1,7 +1,7 @@
 ---
 description: O método InitAllocator cria um alocador de memória.
 ms.assetid: a1fa0ffb-ed43-446d-811e-6c3594743592
-title: CBaseOutputPin.Inimétodo tAllocator (Amfilter. h)
+title: CBaseOutputPin.Inimétodo tAllocator (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7e5385671ba4c7fdf1b719f83aafba7d84421bce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce1e8f8097ca88d0434f79c20e855d8b61798b5a1b0e32b6a38077e4c7aa1271
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652456"
 ---
 # <a name="cbaseoutputpininitallocator-method"></a>CBaseOutputPin.Inimétodo tAllocator
 
@@ -45,17 +45,17 @@ virtual HRESULT InitAllocator(
 *ppAlloc* 
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para a interface [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) do alocador.
+Endereço de uma variável que recebe um ponteiro para a interface [**IMemAllocator do**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) alocador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se for bem-sucedido ou um código de erro da função **CoCreateInstance** .
+Retorna S \_ OK se bem-sucedido ou um código de erro da **função CoCreateInstance.**
 
 ## <a name="remarks"></a>Comentários
 
-Se o pino de entrada não fornecer um alocador de memória, o método [**CBaseOutputPin::D ecideallocator**](cbaseoutputpin-decideallocator.md) chamará esse método para criar um alocador.
+Se o pin de entrada não fornecer um alocador de memória, o método [**CBaseOutputPin::D eputaçãoAllocator**](cbaseoutputpin-decideallocator.md) chamará esse método para criar um alocador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Se o pino de entrada não fornecer um alocador de memória, o método [**CBaseOu
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

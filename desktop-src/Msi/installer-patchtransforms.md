@@ -1,7 +1,7 @@
 ---
-description: A propriedade PatchTransforms somente leitura retorna a lista delimitada por ponto e vírgula de transformações que estão no pacote de patch especificado e aplicadas ao produto especificado.
+description: A propriedade PatchTransforms somente leitura retorna a lista delimitada por pontos e vírgulas de transformaçãos que estão no pacote de patch especificado e aplicadas ao produto especificado.
 ms.assetid: 6f5d3d67-30eb-41f3-b878-de61edcf6de3
-title: Propriedade Installer. PatchTransforms
+title: Propriedade Installer.PatchTransforms
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f3a0b851e87478c950c9b117d65223ea5bcb3ab5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3129047a183bc677a4dc19afaf18c5ba6a99ea8ba52abad2de4bed9b16725a09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763666"
 ---
-# <a name="installerpatchtransforms-property"></a>Propriedade Installer. PatchTransforms
+# <a name="installerpatchtransforms-property"></a>Propriedade Installer.PatchTransforms
 
-A propriedade **PatchTransforms** somente leitura retorna a lista delimitada por ponto e vírgula de transformações que estão no pacote de patch especificado e aplicadas ao produto especificado.
+A propriedade **PatchTransforms** somente leitura retorna a lista delimitada por pontos e vírgulas de transformação que estão no pacote de patch especificado e aplicadas ao produto especificado.
 
 Esta propriedade é somente para leitura.
 
@@ -43,9 +43,9 @@ propVal = Installer.PatchTransforms
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

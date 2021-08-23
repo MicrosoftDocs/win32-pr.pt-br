@@ -4,12 +4,12 @@ ms.assetid: 960EF92D-F439-4A84-AAF9-1469E2830573
 title: Usando vários viewports no DirectManipulation
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 627a97a7c9563ca0af9decf79b18340343dda345
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: e422d99d8a71fbf24af5fc60641da7ac808b54215c56e5d81b8c222226ef8452
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104571303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787508"
 ---
 # <a name="using-multiple-viewports-in-directmanipulation"></a>Usando vários viewports no DirectManipulation
 

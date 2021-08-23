@@ -1,6 +1,6 @@
 ---
 title: Estrutura StringTable
-description: Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de formatação de página de código e idioma para as cadeias de caracteres especificadas pelo membro filho. Uma página de código é um conjunto de caracteres ordenados.
+description: Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de formatação de página de código e idioma para as cadeias de caracteres especificadas pelo membro Children. Uma página de código é um conjunto de caracteres ordenado.
 ms.assetid: e8e9d654-b515-434c-ac38-79d333a8d7cb
 keywords:
 - Menus de estrutura StringTable e outros recursos
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dc790baa6484c5b1a8a7d96a0a7bc8e8ad12b0e4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 01ad7a2436c4b32f0f2fa09ab801339903ed55f35be80bbfc43c4542da4e4ce5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720656"
 ---
 # <a name="stringtable-structure"></a>Estrutura StringTable
 
-Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de formatação de página de código e idioma para as cadeias de caracteres especificadas pelo membro **filho** . Uma página de código é um conjunto de caracteres ordenados.
+Representa a organização de dados em um recurso de versão de arquivo. Ele contém informações de formatação de página de código e idioma para as cadeias de caracteres especificadas pelo **membro** Children. Uma página de código é um conjunto de caracteres ordenado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,18 +47,18 @@ typedef struct {
 **wLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O comprimento, em bytes, dessa estrutura **STRINGTABLE** , incluindo todas as estruturas indicadas pelo membro **filho** .
+O comprimento, em bytes, dessa estrutura **StringTable,** incluindo todas as estruturas indicadas pelo **membro** Children.
 
 </dd> <dt>
 
 **wValueLength**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -69,7 +69,7 @@ Esse membro é sempre igual a zero.
 **wType**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -84,41 +84,41 @@ Tipo: **WCHAR**
 
 </dd> <dd>
 
-Um número hexadecimal de 8 dígitos armazenado como uma cadeia de caracteres Unicode. Os quatro dígitos mais significativos representam o identificador de idioma. Os quatro dígitos menos significativos representam a página de código para a qual os dados são formatados. Cada identificador de idioma padrão da Microsoft contém duas partes: os 10 bits de ordem inferior especificam o idioma principal e os 6 bits de ordem superior especificam o subidioma. Para obter uma tabela de identificadores válidos, consulte.
+Um número hexadecimal de 8 dígitos armazenado como uma cadeia de caracteres Unicode. Os quatro dígitos mais significativos representam o identificador de idioma. Os quatro dígitos menos significativos representam a página de código para a qual os dados são formatados. Cada identificador de Linguagem Padrão da Microsoft contém duas partes: os 10 bits de ordem baixa especificam o idioma principal e os 6 bits de ordem alta especificam a sublíngua. Para uma tabela de identificadores válidos, consulte .
 
 </dd> <dt>
 
 **Preenchimento**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Tantas palavras zero quantas forem necessárias para alinhar o membro **filho** em um limite de 32 bits.
+Quantas palavras zero necessárias para alinhar o **membro Children** em um limite de 32 bits.
 
 </dd> <dt>
 
 **Filhos**
 </dt> <dd>
 
-Tipo: **[ **cadeia de caracteres**](string-str.md)**
+Tipo: Cadeia **[ **de caracteres**](string-str.md)**
 
 </dd> <dd>
 
-Uma matriz de uma ou mais estruturas de [**cadeia de caracteres**](string-str.md) .
+Uma matriz de uma ou mais estruturas [**string.**](string-str.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura não é uma estrutura verdadeira de linguagem C porque contém membros de comprimento variável. Essa estrutura foi criada exclusivamente para representar a organização de dados em um recurso de versão e não aparece em nenhum dos arquivos de cabeçalho fornecidos com o SDK (Software Development Kit) do Windows.
+Essa estrutura não é uma estrutura de linguagem C verdadeira porque contém membros de comprimento variável. Essa estrutura foi criada exclusivamente para representar a organização de dados em um recurso de versão e não aparece em nenhum dos arquivos de header fornecidos com o SDK (Software Development Kit) do Windows.
 
-O membro **filho** da estrutura [**StringFileInfo**](stringfileinfo.md) contém pelo menos uma estrutura **STRINGTABLE** .
+O **membro Children** da estrutura [**StringFileInfo**](stringfileinfo.md) contém pelo menos uma estrutura **StringTable.**
 
-Defina a parte da página de código do membro **szKey** como o valor hexadecimal 0x04b0 para indicar a página de código Unicode ou para o valor hexadecimal da página de código apropriada para o componente de linguagem. Depois de escolher o valor para a página de código, você deve continuar a usar o mesmo valor em revisões posteriores para o arquivo.
+De definir a parte da página de código do membro **szKey** como o valor hexadecimal 0x04b0 para indicar a página de código Unicode ou para o valor hexadecimal da página de código apropriado para o componente de linguagem. Depois de escolher o valor para a página de código, você deve continuar a usar o mesmo valor em revisões posteriores para o arquivo.
 
-Um arquivo executável ou DLL que dá suporte a vários idiomas deve ter um recurso de versão para cada idioma, em vez de um único recurso de versão que contém cadeias de caracteres em vários idiomas. No entanto, se você usar a estrutura [**var**](var-str.md) para listar os idiomas aos quais seu aplicativo dá suporte, o número de estruturas **STRINGTABLE** no recurso de versão estará diretamente relacionado ao número de pares de identificador de página de código/idioma no membro de **valor** da estrutura **var** .
+Um arquivo executável ou DLL que dá suporte a vários idiomas deve ter um recurso de versão para cada idioma, em vez de um único recurso de versão que contenha cadeias de caracteres em vários idiomas. No entanto, se você usar a estrutura [**Var**](var-str.md) para listar os idiomas compatíveis com seu aplicativo, o número de estruturas **StringTable** no recurso de versão está diretamente relacionado ao número de pares de identificadores de página de código/idioma no membro **Valor** da estrutura **Var.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -138,7 +138,7 @@ Um arquivo executável ou DLL que dá suporte a vários idiomas deve ter um recu
 **Referência**
 </dt> <dt>
 
-[**Strings**](string-str.md)
+[**String**](string-str.md)
 </dt> <dt>
 
 [**StringFileInfo**](stringfileinfo.md)
@@ -153,7 +153,7 @@ Um arquivo executável ou DLL que dá suporte a vários idiomas deve ter um recu
 [**VS \_ VERSIONINFO**](vs-versioninfo.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Informações sobre versão](version-information.md)

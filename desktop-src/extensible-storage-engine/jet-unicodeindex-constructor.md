@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor de JET_UNICODEINDEX'
-title: Construtor de JET_UNICODEINDEX
+description: 'Saiba mais sobre: JET_UNICODEINDEX construtor'
+title: JET_UNICODEINDEX construtor
 TOCTitle: 'JET_UNICODEINDEX constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_unicodeindex.jet_unicodeindex(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b20fd853f33048c0cc9654a12c3a6aa678df994
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e850698e4f3d1239fe2b5f04cb649f8312d518c8db604966a57ca3c4faa79db1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832436"
 ---
-# <a name="jet_unicodeindex-constructor"></a>Construtor de JET_UNICODEINDEX
+# <a name="jet_unicodeindex-constructor"></a>JET_UNICODEINDEX construtor
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,8 +54,8 @@ public JET_UNICODEINDEX()
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_UNICODEINDEX](./jet-unicodeindex-class.md)
+[JET_UNICODEINDEX classe](./jet-unicodeindex-class.md)
 
-[Membros do JET_UNICODEINDEX](./jet-unicodeindex-members.md)
+[JET_UNICODEINDEX membros](./jet-unicodeindex-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

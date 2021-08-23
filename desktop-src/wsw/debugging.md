@@ -1,21 +1,21 @@
 ---
-title: Depuração (serviços Web do Windows)
+title: depuração (Windows serviços Web)
 description: Um conjunto de funções só está disponível na compilação de depuração e destina-se a testes e depuração.
 ms.assetid: 23c01420-3f51-4c3f-9ee1-2614de3a278f
 keywords:
-- Depuração de serviços Web para Windows
+- Depurando serviços Web para Windows
 - WWSAPI
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cad0abe916e068408cfda48184aa86e40029203
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 135f81ec45028df098679c91d750915005bfc64b3ff7d072b0494badc98159fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105788705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838675"
 ---
-# <a name="debugging-windows-web-services"></a>Depuração (serviços Web do Windows)
+# <a name="debugging-windows-web-services"></a>depuração (Windows serviços Web)
 
 Um conjunto de funções só está disponível na compilação de depuração e destina-se a testes e depuração.
 

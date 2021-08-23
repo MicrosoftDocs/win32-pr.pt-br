@@ -1,5 +1,5 @@
 ---
-description: A interface IWiaImageFilter é uma interface de extensão implementada por desenvolvedores de filtro de processamento de imagens e chamada pelo WIA (Windows Image Acquisition) 2,0.
+description: a interface IWiaImageFilter é uma interface de extensão implementada pelos desenvolvedores de filtro de processamento de imagens e chamada pelo WIA (Windows image Acquisition) 2,0.
 ms.assetid: 2abe913b-bb2b-486d-a3f4-d5932433fc82
 title: Interface IWiaImageFilter (WIA. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 8d859b79d15db627bb09cb60f758791a8b5860f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7c85a25d7478e0ad51a1d427e74b69a743bc4203ed57b8929a3e4ec856d94b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813976"
 ---
 # <a name="iwiaimagefilter-interface"></a>Interface IWiaImageFilter
 
-A interface **IWiaImageFilter** é uma interface de extensão implementada por desenvolvedores de filtro de processamento de imagens e chamada pelo WIA (Windows Image Acquisition) 2,0.
+a interface **IWiaImageFilter** é uma interface de extensão implementada pelos desenvolvedores de filtro de processamento de imagens e chamada pelo WIA (Windows image Acquisition) 2,0.
 
 ## <a name="members"></a>Membros
 
@@ -95,9 +95,9 @@ A interface **IWiaImageFilter** , como todas as interfaces de Component Object M
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

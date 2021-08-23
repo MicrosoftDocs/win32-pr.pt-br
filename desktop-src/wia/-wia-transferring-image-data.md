@@ -1,26 +1,26 @@
 ---
-description: Use os métodos da interface IWiaDataTransfer para transferir dados de um dispositivo de aquisição de imagem do Windows (WIA) 1,0 para um aplicativo.
+description: Use os métodos da interface IWiaDataTransfer para transferir dados de um dispositivo WIA (Aquisição de Imagem) 1.0 do Windows para um aplicativo.
 ms.assetid: 67fbf3d9-6965-4464-b04c-10989b2fd55d
-title: Transferindo dados de imagem no WIA 1,0
+title: Transferindo dados de imagem no WIA 1.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00fc7ff76576b6c140358f9af3a0f9d17d4b180e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5e2c1dfce551f105b0df1627f11e9b4ccb7ee8a420e395f3fd0cc1ba932f136
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813666"
 ---
-# <a name="transferring-image-data-in-wia-10"></a>Transferindo dados de imagem no WIA 1,0
+# <a name="transferring-image-data-in-wia-10"></a>Transferindo dados de imagem no WIA 1.0
 
 > [!Note]  
-> Este tutorial é sobre a transferência de dados de imagem em aplicativos que executarão o Windows XP ou anterior. Consulte [transferindo dados de imagem no WIA 2,0](-wia-transferring-image-data-in-wia2.md) para obter informações sobre como transferir dados de imagem em aplicativos que serão executados no Windows Vista ou posterior.
+> Este tutorial trata da transferência de dados de imagem em aplicativos que serão executados Windows XP ou anterior. Consulte [Transferindo dados de imagem no WIA 2.0](-wia-transferring-image-data-in-wia2.md) para obter informações sobre como transferir dados de imagem em aplicativos que serão executados no Windows Vista ou posterior.
 
  
 
-Use os métodos da interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) para transferir dados de um dispositivo de aquisição de imagem do Windows (WIA) 1,0 para um aplicativo. Essa interface dá suporte a uma janela de memória compartilhada para transferir dados do objeto de dispositivo para o aplicativo e eliminar cópias de dados desnecessárias durante o marshaling.
+Use os métodos da interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) para transferir dados de um dispositivo WIA (Aquisição de Imagem) 1.0 do Windows para um aplicativo. Essa interface dá suporte a uma janela de memória compartilhada para transferir dados do objeto de dispositivo para o aplicativo e eliminar cópias de dados desnecessárias durante o marshalling.
 
-Os aplicativos devem consultar um item de imagem para obter um ponteiro para sua interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) , como no exemplo de código a seguir:
+Os aplicativos devem consultar um item de imagem para obter um ponteiro para sua interface [**IWiaDataTransfer,**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) como no exemplo de código a seguir:
 
 
 ```
@@ -32,9 +32,9 @@ Os aplicativos devem consultar um item de imagem para obter um ponteiro para sua
 
 
 
-No código anterior, supõe-se que **pWiaItem** é um ponteiro válido para a interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) . A chamada para [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) preenche **pWiaDataTransfer** com um ponteiro para a interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) do item referido por **pWiaItem**.
+No código anterior, supõe-se que **pWiaItem seja** um ponteiro válido para a interface [**IWiaItem.**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) A chamada para [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) preenche **pWiaDataTransfer** com um ponteiro para a interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) do item referenciado por **pWiaItem**.
 
-Em seguida, o aplicativo define os membros da estrutura [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) . Para obter informações, consulte STGMEDIUM e [TYMED](/windows/win32/api/objidl/ne-objidl-tymed).
+Em seguida, o aplicativo define [os membros da estrutura STGMEDIUM.](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) Para obter informações, consulte STGMEDIUM e [TYMED](/windows/win32/api/objidl/ne-objidl-tymed).
 
 
 ```
@@ -46,9 +46,9 @@ Em seguida, o aplicativo define os membros da estrutura [STGMEDIUM](/windows/win
 
 
 
-Se você fornecer um FileName, ele deverá incluir a extensão de arquivo apropriada; O WIA 1,0 não fornece extensões de arquivo. Se o membro **lpszFileName** de **StgMedium** for **NULL**, o WIA 1,0 gerará um nome de arquivo aleatório e um caminho para os dados transferidos. Mova ou copie esse arquivo antes de chamar ReleaseStgMedium, pois essa função excluirá o arquivo.
+Se você fornecer um nome de arquivo, ele deverá incluir a extensão de arquivo adequada; O WIA 1.0 não fornece extensões de arquivo. Se o **membro lpszFileName** de **StgMedium** for **NULL,** o WIA 1.0 gerará um nome de arquivo aleatório e um caminho para os dados transferidos. Mova ou copie esse arquivo antes de chamar ReleaseStgMedium, pois essa função excluirá o arquivo.
 
-Em seguida, o aplicativo chama o método [**IWiaDataTransfer:: idtGetData**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatatransfer-idtgetdata) para executar a transferência de dados:
+Em seguida, o aplicativo chama [**o método IWiaDataTransfer::idtGetData**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatatransfer-idtgetdata) para executar a transferência de dados:
 
 
 ```
@@ -59,9 +59,9 @@ Em seguida, o aplicativo chama o método [**IWiaDataTransfer:: idtGetData**](/wi
 
 
 
-Na chamada para [**IWiaDataTransfer:: idtGetData**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatatransfer-idtgetdata), o segundo parâmetro especifica um ponteiro para a interface [**IWiaDataCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatacallback) . Os aplicativos devem implementar essa interface para receber retornos de chamada durante transferências de dados. Para obter informações sobre como implementar essa interface, consulte [**IWiaDataCallback:: BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
+Na chamada para [**IWiaDataTransfer::idtGetData**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatatransfer-idtgetdata), o segundo parâmetro especifica um ponteiro para a interface [**IWiaDataCallback.**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatacallback) Os aplicativos devem implementar essa interface para receber retornos de chamada durante transferências de dados. Para obter informações sobre como implementar essa interface, consulte [**IWiaDataCallback::BandedDataCallback**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadatacallback-bandeddatacallback).
 
-Em seguida, o aplicativo libera os ponteiros para a interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) e libera todos os dados alocados na estrutura [STGMEDIUM](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) .
+Em seguida, o aplicativo libera os ponteiros para a interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) e libera todos os dados alocados na estrutura [STGMEDIUM.](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1)
 
 O aplicativo também pode transferir a imagem usando transferências de dados na memória em vez de transferências de arquivo. Nesse caso, o aplicativo usa o método idtGetBandedData no lugar do método idtGetData.
 

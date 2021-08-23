@@ -3,9 +3,9 @@ title: Método ClosedCaption. getSAMILangID
 description: O método getSAMILangID recupera o identificador de localidade (LCID) de um idioma com suporte do arquivo SAMI atual.
 ms.assetid: 35f8379a-a2f5-4b22-b1ad-3c5cc5bc5e3d
 keywords:
-- método getSAMILangID Windows Media Player
+- Windows Media Player do método getSAMILangID
 - método getSAMILangID Windows Media Player, classe ClosedCaption
-- Classe ClosedCaption Windows Media Player, método getSAMILangID
+- classe ClosedCaption Windows Media Player, método getSAMILangID
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd543c9cb9d884022d78a875a2f8de078c479b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7317bff13b0dcf29157e4a31c1b854fff781d93460633b64485670fab64e6f1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764036"
 ---
 # <a name="closedcaptiongetsamilangid-method"></a>Método ClosedCaption. getSAMILangID
 
@@ -49,7 +49,7 @@ retVal = ClosedCaption.getSAMILangID(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um **número** (**Long**) que contém o LCID do idioma com o índice especificado.
 

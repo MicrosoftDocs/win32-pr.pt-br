@@ -4,21 +4,21 @@ description: Esta seção contém as propriedades da interface IManipulationProc
 ms.assetid: 0f8a3e27-a92f-4086-9573-6c7bbe7efd20
 keywords:
 - Windows Touch, interface IManipulationProcessor
-- Windows Touch, propriedades da interface
-- manipulações, interface IManipulationProcessor
+- Windows Toque, propriedades da interface
+- manipulations,interface IManipulationProcessor
 - Interface IManipulationProcessor, propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b43ab3753753c05d67db3c6351387531be3fb4d
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a0f8e43c5b74ea52d36586f7d6f0bb2ed10e76a579d5f3795c1c53f19fa501e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709536"
 ---
 # <a name="properties-imanipulationprocessor"></a>Propriedades (IManipulationProcessor)
 
-Esta seção contém as propriedades da interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) .
+Esta seção contém as propriedades da interface [**IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor)
 
 As propriedades a seguir são expostas pela interface IManipulationProcessor.
 
@@ -26,11 +26,11 @@ As propriedades a seguir são expostas pela interface IManipulationProcessor.
 
 | Propriedade                                                                            | Descrição                                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**MinimumScaleRotateRadius**](imanipulationprocessor-minimumscalerotateradius.md) | Especifica a grande quantidade de contatos de distância em um gesto de escala ou de giro precisar ser para disparar a manipulação. |
-| [**PivotPointX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx)                           | Essa propriedade é o centro horizontal do objeto.                                                      |
-| [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)                           | Essa propriedade é o centro vertical do objeto.                                                        |
-| [**PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius)                           | Essa propriedade é usada para determinar a quantidade de rotação usada na manipulação de um único dedo.                |
-| [**SupportedManipulations**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_supportedmanipulations)     | Essa propriedade é usada para indicar quais manipulações são suportadas por um objeto.                          |
+| [**MinimumScaleRotateRadius**](imanipulationprocessor-minimumscalerotateradius.md) | Especifica o tamanho que os contatos de distância em uma escala ou gesto de rotação precisam ser para disparar a manipulação. |
+| [**PivotPointX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx)                           | Essa propriedade é o centro horizontal do objeto .                                                      |
+| [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)                           | Essa propriedade é o centro vertical do objeto .                                                        |
+| [**PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius)                           | Essa propriedade é usada para determinar quanto rotação é usada na manipulação de dedo único.                |
+| [**SupportedManipulations**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_supportedmanipulations)     | Essa propriedade é usada para indicar quais manipulações são suportadas por um objeto .                          |
 
 
 

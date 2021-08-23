@@ -4,8 +4,8 @@ description: Especifica um caminho para o perfil do usuário. Esse valor pode se
 ms.assetid: 03891152-52c6-4799-ae79-3be284204391
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Profile-Path do atributo AD
-- Esquema de AD do atributo ProfilePath
+- Profile-Path atributo AD Schema
+- Esquema do AD do atributo profilePath
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89d1c255843cf578301ce330b79f3ca983030952
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89f1033822399a466861df96792d992c569cf017ce1d7d08523691a2650bd4c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837716"
 ---
 # <a name="profile-path-attribute"></a>Profile-Path atributo
 
@@ -30,13 +30,13 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------|
 | CN                | Profile-Path                                                             |
-| LDAP-Display-Name | profilepath                                                              |
+| Ldap-Display-Name | profilePath                                                              |
 | Tamanho              | \-                                                                       |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                   |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o caminho precisa ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.139                                                   |
-| System-ID-GUID    | bf967a05-0de6-11d0-a285-00aa003049e2                                     |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                              |
+| System-Id-Guid    | bf967a05-0de6-11d0-a285-00aa003049e2                                     |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                              |
 
 
 
@@ -58,10 +58,10 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -79,10 +79,10 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -100,10 +100,10 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -121,10 +121,10 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -142,10 +142,10 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -163,10 +163,10 @@ Especifica um caminho para o perfil do usuário. Esse valor pode ser uma cadeia 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |

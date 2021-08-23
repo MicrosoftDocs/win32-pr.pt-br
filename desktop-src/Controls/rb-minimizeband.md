@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_MINIMIZEBAND (commctrl. h)
-description: Redimensiona uma faixa em um controle rebar para seu menor tamanho.
+title: RB_MINIMIZEBAND mensagem (Commctrl.h)
+description: Resize uma banda em um controle de barra de rebar para seu menor tamanho.
 ms.assetid: 4962d90a-2a69-4490-9063-cc2be995df13
 keywords:
-- Controles de RB_MINIMIZEBAND de mensagens do Windows
+- RB_MINIMIZEBAND controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 598f5fc30a9063befff384a8f081027b69fb9512
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46ef08d33903f002e3aaa8975580a770b941cf4330e8d8e2260dc9a0a4947713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798556"
 ---
-# <a name="rb_minimizeband-message"></a>\_Mensagem MINIMIZEBAND RB
+# <a name="rb_minimizeband-message"></a>Mensagem RB \_ MINIMIZEBAND
 
-Redimensiona uma faixa em um controle rebar para seu menor tamanho.
+Resize uma banda em um controle de barra de rebar para seu menor tamanho.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,14 +32,14 @@ Redimensiona uma faixa em um controle rebar para seu menor tamanho.
 *wParam* 
 </dt> <dd>
 
-Índice de base zero da banda a ser minimizada.
+Índice baseado em zero da banda a ser minimizado.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -49,9 +49,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

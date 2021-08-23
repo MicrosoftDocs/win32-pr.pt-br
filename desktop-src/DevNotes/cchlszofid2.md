@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Msjint40.dll
-ms.openlocfilehash: cba2d09f9865c43a5b64a34783c621c783c7aac3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0377b8507507b40c5b17c3d9bb6861e5077f8c7bb763b51c66289ab1819f9cc7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815466"
 ---
 # <a name="cchlszofid2-function"></a>Função CchLszOfId2
 
@@ -51,24 +51,24 @@ O identificador da cadeia de caracteres no arquivo de recurso a ser decodificado
 *lsz* 
 </dt> <dd>
 
-Um ponteiro para um buffer com um comprimento de *cbMax*. Cadeias de caracteres maiores que *cbMax* são truncadas.
+Um ponteiro para um buffer com um comprimento *de cbmax.* Cadeias de caracteres maiores que *cbmax* são truncadas.
 
 </dd> <dt>
 
 *cbmax* 
 </dt> <dd>
 
-O comprimento máximo da cadeia de caracteres a ser armazenada no parâmetro *LSZ* .
+O comprimento máximo da cadeia de caracteres a ser armazenada no *parâmetro lsz.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna a cadeia de caracteres decodificada.
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

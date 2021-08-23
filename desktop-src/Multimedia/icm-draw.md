@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_DRAW (VFW. h)
-description: A \_ mensagem de desenho ICM notifica um driver de renderização para descompactar um quadro de dados e desenhá-lo na tela.
+description: o ICM \_ mensagem de desenho notifica um driver de renderização para descompactar um quadro de dados e desenhá-lo na tela.
 ms.assetid: eceb42c6-d91a-45b7-98dc-e0944df3e558
 keywords:
-- Multimídia do Windows de mensagem ICM_DRAW
+- mensagem de ICM_DRAW Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0840c6df2c69f4d3e45600cf8599c214b36200a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e44216e523da62e0dde22abed8d88b9b8aacd8f68119a88f3177f45ecd910029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784986"
 ---
-# <a name="icm_draw-message"></a>Mensagem de desenho de ICM \_
+# <a name="icm_draw-message"></a>ICM \_ DESENHAR mensagem
 
-A mensagem de **\_ desenho ICM** notifica um driver de renderização para descompactar um quadro de dados e desenhá-lo na tela.
+o **ICM \_** mensagem de desenho notifica um driver de renderização para descompactar um quadro de dados e desenhá-lo na tela.
 
 
 ```C++
@@ -66,7 +66,7 @@ Se o \_ sinalizador ICDRAW HURRYUP for definido em **dwFlags**, o aplicativo de 
 
 Se o \_ sinalizador de PREROLL ICDRAW estiver definido em **dwFlags**, este quadro de vídeo será informações preliminares e não deverá ser exibido, se possível. Por exemplo, se Play for iniciar do quadro 10 e o quadro 0 for o quadro-chave anterior mais próximo, os quadros de 0 a 9 terão o ICDRAW \_ PRErolled set.
 
-Se você quiser que o driver Descompacte dados em um buffer, envie a mensagem de [**\_ descompactação ICM**](icm-decompress.md) .
+se você quiser que o driver descompacte dados em um buffer, envie a mensagem [**ICM \_ descompactar**](icm-decompress.md) .
 
 ## <a name="requirements"></a>Requisitos
 

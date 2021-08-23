@@ -9,12 +9,12 @@ keywords:
 - macro capCaptureSetSetup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1a67f120dc2d2ff956148e5dd4e3992a960641d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7993e3dc89abda520c0f1c5bda90f3eb209aca31e36071a304af01fb420d821e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119692096"
 ---
 # <a name="audio-buffers"></a>Buffers de áudio
 
@@ -28,9 +28,9 @@ Você pode recuperar as configurações para buffers de áudio usando a mensagem
 
 Por padrão, o áudio é incluído na operação de captura e quatro buffers de áudio são alocados. O valor padrão de **fCaptureAudio** é **true**. O tamanho de buffer padrão (o valor de **dwAudioBufferSize**) pode conter 0,5 segundos de dados de áudio ou 10K, o que for maior.
 
- 
+ 
 
- 
+ 
 
 
 

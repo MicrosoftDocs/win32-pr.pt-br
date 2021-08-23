@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código do C/C++ recuperando informações da conta da tarefa
-description: Este exemplo de código recupera as informações da conta de uma tarefa conhecida e exibe o nome da conta na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local e que o Agendador de Tarefas está em execução.
+title: Exemplo de código C/C++ Recuperando informações da conta da tarefa
+description: Este exemplo de código recupera as informações de conta de uma tarefa conhecida e exibe o nome da conta na tela. Este exemplo pressu que a tarefa e a tarefa de teste já existem no computador local e que o Agendador de Tarefas está em execução.
 ms.assetid: ef330276-a063-42c6-a837-fddb4723091b
 keywords:
-- Recuperando informações de conta de tarefa Agendador de Tarefas
-- Recuperando propriedades do item de trabalho Agendador de Tarefas, informações da conta
+- recuperando informações da conta de tarefa Agendador de Tarefas
+- recuperando propriedades de item de trabalho Agendador de Tarefas , informações de conta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1102ce0c2a2a98e66c1ac943eeab0593fe75e189
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ce068589ee1284f4c0b655994c9ea13b6fd63affca8146330e93aef12157cb2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738856"
 ---
-# <a name="cc-code-example-retrieving-task-account-information"></a>Exemplo de código do C/C++: Recuperando Informações da conta da tarefa
+# <a name="cc-code-example-retrieving-task-account-information"></a>Exemplo de código C/C++: Recuperando informações da conta da tarefa
 
-Este exemplo de código recupera as informações da conta de uma tarefa conhecida e exibe o nome da conta na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local e que o Agendador de Tarefas está em execução.
+Este exemplo de código recupera as informações de conta de uma tarefa conhecida e exibe o nome da conta na tela. Este exemplo pressu que a tarefa e a tarefa de teste já existem no computador local e que o Agendador de Tarefas está em execução.
 
 
 ```C++
@@ -124,12 +124,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
