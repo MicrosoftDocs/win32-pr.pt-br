@@ -4,12 +4,12 @@ ms.assetid: b3eb9c48-f4c4-42f1-b189-1fa42670008e
 title: Como recuperar um contexto de dispositivo de impressora
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39fde55450273e42f3429f173150296fdd67a1c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f723ece0e00d58ed684029e0eb3202d637443bd7f0e9d8878024346b9d79ba9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600556"
 ---
 # <a name="how-to-retrieve-a-printer-device-context"></a>Como recuperar um contexto de dispositivo de impressora
 
@@ -112,7 +112,7 @@ Para obter o código de exemplo que ilustra o uso de [**PRINTDLGEX**](/previous-
 
 ### <a name="using-the-printdlg-function"></a>Usando a função PrintDlg
 
-Se seu aplicativo deve ser executado em um sistema que não dá suporte à função [**PRINTDLGEX**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) , como em um sistema que está executando uma versão do Windows anterior ao Windows 2000, ou não precisa da funcionalidade extra que a função **PRINTDLGEX** fornece, use a função [**PRINTDLG**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) . As etapas a seguir descrevem como exibir a caixa de diálogo comum de **impressão** de estilo mais antigo.
+se seu aplicativo deve ser executado em um sistema que não dá suporte à função [**PrintDlgEx**](/previous-versions/windows/desktop/legacy/ms646942(v=vs.85)) , como em um sistema que está executando uma versão do Windows anterior ao Windows 2000 ou não precisa da funcionalidade extra que a função **PrintDlgEx** fornece, use a função [**PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) . As etapas a seguir descrevem como exibir a caixa de diálogo comum de **impressão** de estilo mais antigo.
 
 1.  Inicialize a estrutura de dados [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) .
 2.  Chame [**PRINTDLG**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) para exibir a caixa de diálogo **Imprimir** comum para o usuário.

@@ -3,11 +3,11 @@ title: Referência de áudio de onda
 description: Esta seção lista as funções, as estruturas e as mensagens associadas ao áudio de onda, que estão documentados em referência de multimídia. Esses elementos são agrupados da seguinte maneira.
 ms.assetid: 723953f7-b38e-4f24-8d54-9849e013011d
 keywords:
-- Multimídia do Windows, referência de áudio de onda
+- Windows multimídia, referência de áudio de onda
 - referência de áudio de multimídia, formato de onda
 - áudio de multimídia, referência de Wave
 - referência de áudio, de onda
-- Multimídia do Windows, áudio de onda
+- Windows multimídia, áudio de onda
 - multimídia, áudio de onda
 - áudio de multimídia, onda
 - áudio, onda
@@ -36,12 +36,12 @@ keywords:
 - referência para áudio wavefore, gravação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c74b37984b2d3fab5dad1ea0df4f1f62dfa1855e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4fd83f843de130d247749acfc87a67c60948871bb8cd878f9aa180fcd385fb13
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687416"
 ---
 # <a name="waveform-audio-reference"></a>Referência de áudio de onda
 
@@ -61,7 +61,7 @@ Esta seção lista as funções, as estruturas e as mensagens associadas ao áud
 -   [**PlaySound**](/previous-versions//dd743680(v=vs.85))
 -   [**sndPlaySound**](/previous-versions//dd798676(v=vs.85))
 
-## <a name="errors"></a>Errors
+## <a name="errors"></a>Erros
 
 -   [**waveInGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-waveingeterrortext)
 -   [**waveOutGetErrorText**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutgeterrortext)
@@ -132,7 +132,7 @@ Esta seção lista as funções, as estruturas e as mensagens associadas ao áud
 -   [**waveInStart**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstart)
 -   [**waveInStop**](/windows/win32/api/mmeapi/nf-mmeapi-waveinstop)
 -   [**waveInUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveinunprepareheader)
--   [**\_dados wim**](wim-data.md)
+-   [**DADOS \_ DO WIM**](wim-data.md)
 
 ## <a name="retrieving-device-identifiers"></a>Recuperando identificadores de dispositivo
 
@@ -158,9 +158,9 @@ Esta seção lista as funções, as estruturas e as mensagens associadas ao áud
 
 <dl> <dt>
 
-[Áudio de onda](waveform-audio.md)
+[Waveform Audio](waveform-audio.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

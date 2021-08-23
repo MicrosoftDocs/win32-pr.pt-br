@@ -4,12 +4,12 @@ ms.assetid: 42a1c21c-4b14-114a-d79e-15a61eb2139b
 title: Códigos de erro XAudio2 (Xaudio2. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7011786c3db7f660dee7a3323861abd88c57835
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bbfb29153ca55064c1019e9cfb8fd1019caaa0ffe17dfa103f123faa812f762
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545396"
 ---
 # <a name="xaudio2-error-codes"></a>Códigos de erro XAudio2
 
@@ -30,7 +30,7 @@ Códigos de erro específicos do XAudio2 retornados por métodos XAudio2.
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Windows 10 (XAudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK do DirectX (XAudio 2,7)
+Windows 10 (xaudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK do DirectX (XAudio 2,7)
 
 ## <a name="requirements"></a>Requisitos
 

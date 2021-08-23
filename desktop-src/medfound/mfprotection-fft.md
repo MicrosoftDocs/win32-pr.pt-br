@@ -4,12 +4,12 @@ ms.assetid: 0CFD2A1B-BAE0-4755-9B26-A3D8C3053ABD
 title: Atributo MFPROTECTION_FFT (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c8a2ac17f5b64db7ef70ef9b9d652177f6111831
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b82e4ac67cded51efa4d091c5a6f6dfcb7457c583d2e105c7a34cadf7d00aff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603266"
 ---
 # <a name="mfprotection_fft-attribute"></a>\_Atributo MFPROTECTION FFT
 
@@ -25,9 +25,9 @@ Especifica a proteção de FFT.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

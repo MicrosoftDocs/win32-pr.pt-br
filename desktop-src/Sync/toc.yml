@@ -1,7 +1,7 @@
 - name: Sincronização
   href: synchronization.md
   items:
-    - name: O que há de novo na sincronização
+    - name: Novidades na sincronização
       href: what-s-new-in-synchronization.md
     - name: Sobre a sincronização
       href: about-synchronization.md
@@ -13,13 +13,13 @@
           items:
             - name: Objetos de evento
               href: event-objects.md
-            - name: Objetos mutex
+            - name: Objetos Mutex
               href: mutex-objects.md
             - name: Objetos de semáforo
               href: semaphore-objects.md
-            - name: Objetos de timer que esperam
+            - name: Objetos de temporizador que podem ser aguardados
               href: waitable-timer-objects.md
-            - name: Segurança do objeto de sincronização e direitos de acesso
+            - name: Segurança de objeto de sincronização e direitos de acesso
               href: synchronization-object-security-and-access-rights.md
         - name: Sincronização entre processos
           href: interprocess-synchronization.md
@@ -34,27 +34,27 @@
               href: object-duplication.md
         - name: Sincronização e problemas de multiprocessador
           href: synchronization-and-multiprocessor-issues.md
-        - name: Sincronização e entrada e saída sobrepostas
+        - name: Sincronização e entrada e saída sobrecarradas
           href: synchronization-and-overlapped-input-and-output.md
         - name: Chamadas de procedimento assíncrono
           href: asynchronous-procedure-calls.md
-        - name: Objetos de seção crítica
+        - name: Objetos de seção críticos
           href: critical-section-objects.md
         - name: Variáveis de condição
           href: condition-variables.md
-        - name: Bloqueios de SRW (leitor/gravador) reduzidos
+        - name: Bloqueios srw (leitor/leitor de leitor) de leitor de dados (SRW)
           href: slim-reader-writer--srw--locks.md
-        - name: Inicialização de One-Time
+        - name: One-Time inicialização
           href: one-time-initialization.md
-        - name: Acesso de variável interbloqueada
+        - name: Acesso a variáveis entre bloqueios
           href: interlocked-variable-access.md
-        - name: Listas vinculadas isoladamente interbloqueadas
+        - name: Listas vinculadas intertravadas
           href: interlocked-singly-linked-lists.md
-        - name: Filas de timer
+        - name: Filas de temporizador
           href: timer-queues.md
         - name: Barreiras de sincronização
           href: synchronization-barriers.md
-    - name: Usando a sincronização
+    - name: Usando sincronização
       href: using-synchronization.md
       items:
         - name: Aguardando vários objetos
@@ -63,21 +63,21 @@
           href: using-named-objects.md
         - name: Usando objetos de evento
           href: using-event-objects.md
-        - name: Usando objetos mutex
+        - name: Usando objetos Mutex
           href: using-mutex-objects.md
-        - name: Usando objetos Semaphore
+        - name: Usando objetos semáforos
           href: using-semaphore-objects.md
-        - name: Usando objetos de timer de espera
+        - name: Usando objetos de temporizador que podem ser aguardados
           href: using-waitable-timer-objects.md
         - name: Usando temporizadores de espera com uma chamada de procedimento assíncrono
           href: using-a-waitable-timer-with-an-asynchronous-procedure-call.md
-        - name: Usando objetos de seção crítica
+        - name: Usando objetos de seção críticos
           href: using-critical-section-objects.md
         - name: Usando variáveis de condição
           href: using-condition-variables.md
-        - name: Usando a inicialização do One-Time
+        - name: Usando One-Time inicialização
           href: using-one-time-initialization.md
-        - name: Usando listas vinculadas individualmente
+        - name: Usando listas vinculadas do Singly
           href: using-singly-linked-lists.md
         - name: Usando filas de temporizador
           href: using-timer-queues.md
@@ -105,17 +105,17 @@
               href: /windows/desktop/api/namespaceapi/nf-namespaceapi-closeprivatenamespace
             - name: CreateBoundaryDescriptor
               href: /windows/desktop/api/WinBase/nf-winbase-createboundarydescriptora
-            - name: CreateEvent
+            - name: Createevent
               href: /windows/desktop/api/synchapi/nf-synchapi-createeventa
             - name: CreateEventEx
               href: /windows/desktop/api/synchapi/nf-synchapi-createeventexa
-            - name: CreateMutex
+            - name: Createmutex
               href: /windows/desktop/api/synchapi/nf-synchapi-createmutexa
             - name: CreateMutexEx
               href: /windows/desktop/api/synchapi/nf-synchapi-createmutexexa
             - name: CreatePrivateNamespace
               href: /windows/desktop/api/WinBase/nf-winbase-createprivatenamespacea
-            - name: CreateSemaphore
+            - name: Createsemaphore
               href: /windows/desktop/api/WinBase/nf-winbase-createsemaphorea
             - name: CreateSemaphoreEx
               href: /windows/desktop/api/WinBase/nf-winbase-createsemaphoreexa
@@ -129,9 +129,9 @@
               href: /windows/desktop/api/WinBase/nf-winbase-createwaitabletimerexa
             - name: DeleteBoundaryDescriptor
               href: /windows/desktop/api/namespaceapi/nf-namespaceapi-deleteboundarydescriptor
-            - name: DeleteCriticalSection
+            - name: Deletecriticalsection
               href: /windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection
-            - name: DeleteSynchronizationBarrier
+            - name: DeleteSynchronizationBa facial
               href: /windows/desktop/api/SynchAPI/nf-synchapi-deletesynchronizationbarrier
             - name: DeleteTimerQueue
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueue
@@ -139,9 +139,9 @@
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueueex
             - name: DeleteTimerQueueTimer
               href: /windows/desktop/api/threadpoollegacyapiset/nf-threadpoollegacyapiset-deletetimerqueuetimer
-            - name: EnterCriticalSection
+            - name: Entercriticalsection
               href: /windows/desktop/api/synchapi/nf-synchapi-entercriticalsection
-            - name: EnterSynchronizationBarrier
+            - name: EnterSynchronizationBa facial
               href: /windows/desktop/api/synchapi/nf-synchapi-entersynchronizationbarrier
             - name: GetOverlappedResult
               href: /windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult
@@ -149,7 +149,7 @@
               href: /windows/desktop/api/Ioapiset/nf-ioapiset-getoverlappedresultex
             - name: InitializeConditionVariable
               href: /windows/desktop/api/synchapi/nf-synchapi-initializeconditionvariable
-            - name: InitializeCriticalSection
+            - name: Initializecriticalsection
               href: /windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection
             - name: InitializeCriticalSectionAndSpinCount
               href: /windows/desktop/api/synchapi/nf-synchapi-initializecriticalsectionandspincount
@@ -159,7 +159,7 @@
               href: /windows/desktop/api/interlockedapi/nf-interlockedapi-initializeslisthead
             - name: InitializeSRWLock
               href: /windows/desktop/api/synchapi/nf-synchapi-initializesrwlock
-            - name: InitializeSynchronizationBarrier
+            - name: InitializeSynchronizationBa widget
               href: /windows/desktop/api/SynchAPI/nf-synchapi-initializesynchronizationbarrier
             - name: InitOnceBeginInitialize
               href: /windows/desktop/api/synchapi/nf-synchapi-initoncebegininitialize
@@ -245,7 +245,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683557(v=vs.85)
             - name: InterlockedCompare64ExchangeRelease128
               href: /previous-versions/windows/desktop/legacy/ms683558(v=vs.85)
-            - name: Interlockedcompareexchange
+            - name: InterlockedCompareExchange
               href: /previous-versions/windows/embedded/ms919110(v%3dmsdn.10)
             - name: InterlockedCompareExchangeAcquire
               href: /previous-versions/windows/desktop/legacy/ms683564(v=vs.85)
@@ -279,7 +279,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683571(v=vs.85)
             - name: InterlockedCompareExchangePointerNoFence
               href: /previous-versions/windows/desktop/legacy/hh972647(v=vs.85)
-            - name: Interlockeddecrement
+            - name: InterlockedDecrement
               href: /previous-versions/ms919120(v%3dmsdn.10)
             - name: InterlockedDecrementAcquire
               href: /previous-versions/windows/desktop/legacy/ms683583(v=vs.85)
@@ -331,7 +331,7 @@
               href: /previous-versions/windows/desktop/legacy/hh972661(v=vs.85)
             - name: InterlockedExchangeSubtract
               href: /windows/desktop/api/WinBase/nf-winbase-interlockedexchangesubtract
-            - name: Interlockedexchangeadd
+            - name: InterlockedExchangeAdd
               href: /previous-versions/aa910697(v%3dmsdn.10)
             - name: InterlockedExchangeAddAcquire
               href: /previous-versions/windows/desktop/legacy/ms683601(v=vs.85)
@@ -347,7 +347,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683607(v=vs.85)
             - name: InterlockedExchangeAddNoFence64
               href: /previous-versions/windows/desktop/legacy/hh972658(v=vs.85)
-            - name: Interlockedincrement
+            - name: InterlockedIncrement
               href: /previous-versions/windows/embedded/ms919140(v%3dmsdn.10)
             - name: InterlockedIncrementAcquire
               href: /previous-versions/windows/desktop/legacy/ms683618(v=vs.85)
@@ -371,7 +371,7 @@
               href: /previous-versions/windows/desktop/legacy/ms683624(v=vs.85)
             - name: InterlockedIncrementNoFence64
               href: /previous-versions/windows/desktop/legacy/hh972668(v=vs.85)
-            - name: InterlockedOr
+            - name: Interbloqueador
               href: /windows/desktop/api/WinBase/nf-winbase-interlockedor
             - name: InterlockedOrAcquire
               href: /previous-versions/windows/desktop/legacy/ms683643(v=vs.85)

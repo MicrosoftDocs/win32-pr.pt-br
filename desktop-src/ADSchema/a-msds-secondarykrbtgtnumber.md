@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d68faa9b9ed887b16645c7cc6b16cd73405705
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c31b105c16a474e0beaf24c28371c52aeb93a5cbfc7e2fabcb5268339fa65a02
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544796"
 ---
 # <a name="ms-ds-secondary-krbtgt-number-attribute"></a>ms-DS-Secondary-KrbTgt-atributo Number
 
@@ -54,9 +54,9 @@ Identifica o número de identificação de protocolo associado ao domínio secun
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
-| É indexado             | True                              |
+| System-Only            | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
+| É indexado             | Verdadeiro                              |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 65536                             |
@@ -75,9 +75,9 @@ Identifica o número de identificação de protocolo associado ao domínio secun
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
-| É indexado             | True                              |
+| System-Only            | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
+| É indexado             | Verdadeiro                              |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 65536                             |
@@ -96,9 +96,9 @@ Identifica o número de identificação de protocolo associado ao domínio secun
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
-| É indexado             | True                              |
+| System-Only            | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
+| É indexado             | Verdadeiro                              |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 65536                             |

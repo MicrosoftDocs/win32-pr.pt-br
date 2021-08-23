@@ -1,27 +1,27 @@
 ---
-title: Usando o PlaySound para reproduzir arquivos de Waveform-Audio
-description: Usando o PlaySound para reproduzir arquivos de Waveform-Audio
+title: Usando PlaySound para reproduzir Waveform-Audio arquivos
+description: Usando PlaySound para reproduzir Waveform-Audio arquivos
 ms.assetid: 8b7d191b-6b0c-4dff-84de-cb3a5c314b80
 keywords:
-- áudio de onda, função PlaySound
-- áudio de onda, reproduzindo arquivos
-- áudio de onda, extensão de nome de arquivo WAV
-- Função PlaySound, tocando em formato de onda-arquivos de áudio
-- executando formato de onda-arquivos de áudio, função PlaySound
+- waveform audio, função PlaySound
+- waveform audio, reprodução de arquivos
+- waveform audio, extensão de nome de arquivo WAV
+- Função PlaySound, reproduzindo arquivos waveform-audio
+- reproduzindo arquivos waveform-audio, função PlaySound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9d5dde46827b7892217f760c749e75e19f368f5
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ffa83125665e2a99cc0f47da0893cbc113c0be7a251d62eb66a91e7a1218dac5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687846"
 ---
-# <a name="using-playsound-to-play-waveform-audio-files"></a>Usando o PlaySound para reproduzir arquivos de Waveform-Audio
+# <a name="using-playsound-to-play-waveform-audio-files"></a>Usando PlaySound para reproduzir Waveform-Audio arquivos
 
-A maioria dos arquivos de som de onda usa o. Extensão de nome de arquivo WAV.
+A maioria dos arquivos waveform-audio usa o . Extensão de nome de arquivo WAV.
 
-A instrução a seguir desempenha os \\ sinos C: Sounds \\ . Arquivo WAV:
+A instrução a seguir reproduz o C: \\ SOUNDS \\ BELLS. Arquivo WAV:
 
 
 ```C++
@@ -30,7 +30,7 @@ PlaySound("C:\\SOUNDS\\BELLS.WAV", NULL, SND_SYNC);
 
 
 
-Se o arquivo especificado não existir, ou se o arquivo não couber na memória disponível, o [**PlaySound**](/previous-versions//dd743680(v=vs.85)) reproduzirá o som do sistema padrão. Se nenhum som do sistema padrão tiver sido definido, o **PlaySound** falhará sem produzir nenhum som. Se você não quiser que o som do sistema padrão seja reproduzido, especifique o \_ sinalizador SND nodefault, conforme mostrado no exemplo a seguir:
+Se o arquivo especificado não existir ou se o arquivo não se ajustar à memória disponível, [**o PlaySound**](/previous-versions//dd743680(v=vs.85)) reproduzirá o som padrão do sistema. Se nenhum som padrão do sistema tiver sido definido, **PlaySound** falhará sem produzir nenhum som. Se você não quiser que o som padrão do sistema seja reproduzir, especifique o sinalizador NODEFAULT do SND, conforme \_ mostrado no exemplo a seguir:
 
 
 ```C++
@@ -39,6 +39,6 @@ PlaySound("C:\\SOUNDS\\BELLS.WAV", NULL, SND_SYNC | SND_NODEFAULT);
 
 
 
- 
+ 
 
- 
+ 

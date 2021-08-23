@@ -1,9 +1,9 @@
 ---
-title: Identificadores de tipo de mídia não compactados
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Identificadores de tipo de mídia não compactados
+title: Identificadores de tipo de mídia descompactados
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Identificadores de tipo de mídia descompactados
 ms.assetid: 2ce10bf3-4829-40df-94c4-6cfd5c08208e
 keywords:
-- Identificadores de tipo de mídia descompactados formato de mídia do Windows
+- Formato de mídia descompactado identificadores de tipo de mídia
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff11ab8d7de42fe84ce309f6d0b7edd6fe303086
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ec9c1a20d664a821ac885364e2699588ff5a7f9d0171e9c87d689cd1df65e79f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105808301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585306"
 ---
-# <a name="uncompressed-media-type-identifiers"></a>Identificadores de tipo de mídia não compactados
+# <a name="uncompressed-media-type-identifiers"></a>Identificadores de tipo de mídia descompactados
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

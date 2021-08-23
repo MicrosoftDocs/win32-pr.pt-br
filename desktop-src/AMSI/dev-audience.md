@@ -1,49 +1,49 @@
 ---
-title: Público do desenvolvedor e código de exemplo
-description: Este tópico descreve os grupos de desenvolvedores para os quais a interface de verificação antimalware foi projetada.
+title: Público-alvo do desenvolvedor e código de exemplo
+description: Este tópico descreve os grupos de desenvolvedores para os quais a Interface de Verificação antimalware foi projetada.
 ms.topic: article
 ms.date: 03/20/2019
-ms.openlocfilehash: 22cf1156a8fa0aedc212b2ab70e34b984d13470f
-ms.sourcegitcommit: 272ba17a215d0d27bb7918fee1192d4954ccc576
+ms.openlocfilehash: 4ac11c75d5714d0706bed28264f9fa1bf03432af82107826178007e2c42243c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "104007035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579906"
 ---
-# <a name="developer-audience-and-sample-code"></a>Público do desenvolvedor e código de exemplo
+# <a name="developer-audience-and-sample-code"></a>Público-alvo do desenvolvedor e código de exemplo
 
-A interface de verificação antimalware foi projetada para ser usada por dois grupos de desenvolvedores.
+A Interface de Verificação antimalware foi projetada para uso por dois grupos de desenvolvedores.
 
-- Desenvolvedores de aplicativos que desejam fazer solicitações para produtos antimalware de dentro de seus aplicativos.
-- Criadores de terceiros de produtos antimalware que desejam que seus produtos ofereçam os melhores recursos aos aplicativos.
+- Desenvolvedores de aplicativos que querem fazer solicitações para produtos antimalware de dentro de seus aplicativos.
+- Criadores de produtos antimalware de terceiros que querem que seus produtos ofereçam os melhores recursos para aplicativos.
 
 ## <a name="application-developers"></a>Desenvolvedores de aplicativos
 
-O AMSI é projetado especialmente para combater "malware de arquivo". Os tipos de aplicativos que podem aproveitar a tecnologia AMSI de forma ideal incluem mecanismos de script, aplicativos que precisam de buffers de memória a serem verificados antes de usá-los e aplicativos que processam arquivos que podem conter código executável não PE (como macros do Microsoft Word e Excel ou documentos em PDF). No entanto, a utilidade da tecnologia AMSI não está limitada a esses exemplos.
+O AMSI foi projetado em particular para combater o "malware sem arquivo". Os tipos de aplicativos que podem aproveitar idealmente a tecnologia AMSI incluem mecanismos de script, aplicativos que precisam de buffers de memória a serem verificados antes de usá-los e aplicativos que processam arquivos que podem conter código executável não PE (como macros Microsoft Word e Excel ou documentos PDF). No entanto, a utilidade da tecnologia AMSI não está limitada a esses exemplos.
 
-Há duas maneiras pelas quais você pode interagir com AMSI em seu aplicativo.
+Há duas maneiras pelas quais você pode interagir com o AMSI em seu aplicativo.
 
-- Usando as APIs do Win32 AMSI. Consulte [funções da interface de verificação antimalware (AMSI)](/windows/desktop/amsi/antimalware-scan-interface-functions).
-- Usando as interfaces COM do AMSI. Consulte a [interface **IAmsiStream**](/windows/desktop/api/amsi/nn-amsi-iamsistream).
+- Usando as APIs do AMSI Win32. Consulte [Funções da AMSI (Interface de Verificação antimalware).](/windows/desktop/amsi/antimalware-scan-interface-functions)
+- Usando as interfaces COM AMSI. Consulte [ **Interface IAmsiStream**](/windows/desktop/api/amsi/nn-amsi-iamsistream).
 
-Para obter um exemplo de código que mostra como consumir AMSI em seu aplicativo COM, consulte o [aplicativo de exemplo da interface IAmsiStream](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream).
+Para ver o código de exemplo mostrando como consumir AMSI em seu aplicativo COM, consulte o aplicativo de [exemplo da interface IAmsiStream](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream).
 
-## <a name="third-party-creators-of-antimalware-products"></a>Criadores de terceiros de produtos Antimalware
+## <a name="third-party-creators-of-antimalware-products"></a>Criadores de produtos antimalware de terceiros
 
-Como um criador de produtos Antimalware, você pode optar por criar e registrar seu próprio servidor COM em processo (uma DLL) para funcionar como um provedor AMSI. Esse provedor AMSI deve implementar a [interface **IAntimalwareProvider**](/windows/desktop/api/amsi/nn-amsi-iantimalwareprovider)e deve ser executado em processo.
+Como criador de produtos antimalware, você pode optar por criação e registro de seu próprio servidor COM em processo (uma DLL) para funcionar como um provedor AMSI. Esse provedor AMSI deve implementar a interface [ **IAntimalwareProvider**](/windows/desktop/api/amsi/nn-amsi-iantimalwareprovider)e deve ser executado em processo.
 
-Observe que, após o Windows 10, versão 1709 (a atualização do outono 2017 Creators), sua DLL do provedor AMSI poderá não funcionar se depender de outras DLLs em seu caminho para serem carregadas ao mesmo tempo. Para evitar o seqüestro de DLL, recomendamos que a DLL do provedor carregue suas dependências explicitamente (com um caminho completo) usando chamadas de [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryw) seguras ou equivalentes. Recomendamos isso em vez de depender do comportamento de pesquisa **LoadLibrary** .
+Observe que, após Windows 10 versão 1709 (a Atualização do Fall 2017 Para Criadores), a DLL do provedor AMSI poderá não funcionar se depender de outras DLLs em seu caminho a serem carregadas ao mesmo tempo. Para evitar o sequestro de DLL, recomendamos que a DLL do provedor carregue suas dependências explicitamente (com um caminho completo) usando chamadas [**LoadLibrary seguras**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryw) ou equivalentes. Recomendamos isso em vez de depender do comportamento **de pesquisa loadLibrary.**
 
-A seção a seguir mostra como registrar seu provedor AMSI. Para obter um código de exemplo completo mostrando como criar sua própria DLL do provedor AMSI, consulte o [aplicativo de exemplo da interface IAntimalwareProvider](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiProvider).
+A seção abaixo mostra como registrar seu provedor AMSI. Para ver o código de exemplo completo mostrando como fazer sua própria DLL do provedor AMSI, consulte o aplicativo de exemplo [de interface IAntimalwareProvider](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiProvider).
 
-### <a name="register-your-provider-dll-with-amsi"></a>Registrar sua DLL de provedor com o AMSI
+### <a name="register-your-provider-dll-with-amsi"></a>Registrar a DLL do provedor com AMSI
 
-Para começar, você precisa garantir que essas chaves do registro do Windows existam.
+Para começar, você precisa garantir que essas chaves Windows do Registro existam.
 
 - HKLM\SOFTWARE\Microsoft\AMSI\Providers
 - HKLM\SOFTWARE\Classes\CLSID
 
-Um provedor de AMSI é um servidor COM em processo. Consequentemente, ele precisa se registrar com com. As classes COM são registradas no `HKLM\SOFTWARE\Classes\CLSID` .
+Um provedor AMSI é um servidor COM em processo. Consequentemente, ele precisa se registrar com COM. As classes COM são registradas em `HKLM\SOFTWARE\Classes\CLSID` .
 
 O código a seguir mostra como registrar um provedor AMSI, cujo GUID (para este exemplo) vamos supor que é `2E5D8A62-77F9-4F7B-A90C-2744820139B2` .
 
@@ -100,7 +100,7 @@ STDAPI DllRegisterServer()
 }
 ```
 
-Se a DLL implementar a [função DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), como o exemplo acima, você poderá registrá-la usando o executável fornecido pelo Windows `regsvr32.exe` . Em um prompt de comando com privilégios elevados, emita um comando desse formulário.
+Se a DLL implementar a função [DllRegisterServer](/windows/desktop/api/olectl/nf-olectl-dllregisterserver), como o exemplo acima, você poderá registrá-la usando o executável Windows fornecido pelo `regsvr32.exe` usuário. Em um prompt de comando com elevados, emito um comando deste formulário.
 
 ```cmd
 C:>C:\Windows\System32\regsvr32.exe SampleAmsiProvider.dll
@@ -110,16 +110,16 @@ Neste exemplo, o comando cria as entradas a seguir.
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\\ {2E5D8A62-77F9-4F7B-A90C-2744820139B2}**
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Os    REG_SZ implementação de provedor AMSI de exemplo**
+&nbsp;&nbsp;&nbsp;&nbsp;**(Padrão)    REG_SZ exemplo de implementação do provedor AMSI**
 
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\\ {2E5D8A62-77F9-4F7B-A90C-2744820139B2} \InprocServer32**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\\ {2E5D8A62-77F9-4F7B-A90C-2744820139B2}\InprocServer32**
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Os    REG_EXPAND_SZ% ProgramFiles% \TestProvider\SampleAmsiProvider.dll**
+&nbsp;&nbsp;&nbsp;&nbsp;**(Padrão)    REG_EXPAND_SZ %ProgramFiles%\TestProvider\SampleAmsiProvider.dll**
 
 &nbsp;&nbsp;&nbsp;&nbsp;**ThreadingModel REG_SZ ambos**
 
-Além do registro COM regular, você também precisa registrar o provedor com o AMSI. Você faz isso adicionando uma entrada à chave a seguir.
+Além do registro COM regular, você também precisa registrar o provedor com AMSI. Faça isso adicionando uma entrada à chave a seguir.
 
 **HKLM\SOFTWARE\Microsoft\AMSI\Providers**
 

@@ -1,7 +1,7 @@
 ---
-description: O método SourceListAddSource adiciona uma fonte de rede ou URL. Aceita SourcePath, tipo e índice como parâmetros. Esse método chama MsiSourceListAddSourceEx.
+description: O método SourceListAddSource adiciona uma fonte de rede ou URL. Aceita SourcePath, Type e Index como parâmetros. Esse método chama MsiSourceListAddSourceEx.
 ms.assetid: 87797a8c-f1ba-4bfb-9296-3d3ef2a3c37f
-title: Método patch. SourceListAddSource
+title: Método Patch.SourceListAddSource
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: cc0a3bc0d966ec6836d1523745b296350562aaa7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 712551a31868ad3a97738ce9f49c9b0ff3526cf33cbae0ca5dd284f701869666
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519596"
 ---
-# <a name="patchsourcelistaddsource-method"></a>Método patch. SourceListAddSource
+# <a name="patchsourcelistaddsource-method"></a>Método Patch.SourceListAddSource
 
-O método **SourceListAddSource** adiciona uma fonte de rede ou URL. Aceita *SourcePath*, *tipo* e *índice* como parâmetros. Esse método chama [**MsiSourceListAddSourceEx**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa).
+O **método SourceListAddSource** adiciona uma fonte de rede ou URL. Aceita *SourcePath*, *Tipo* e *Índice* como parâmetros. Esse método chama [**MsiSourceListAddSourceEx.**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,11 +44,11 @@ Patch.SourceListAddSource(
 *Tipo* 
 </dt> <dd>
 
-Tipo de fonte a ser adicionada: MSISOURCETYPE \_ rede ou URL de MSISOURCETYPE \_ .
+Tipo de fonte a ser adicionada: MSISOURCETYPE \_ NETWORK ou URL MSISOURCETYPE. \_
 
 </dd> <dt>
 
-*SourcePath* 
+*Sourcepath* 
 </dt> <dd>
 
 Caminho para a origem a ser adicionada.
@@ -58,19 +58,19 @@ Caminho para a origem a ser adicionada.
 *Index* 
 </dt> <dd>
 
-Se **SourceListAddSource** for chamado com uma nova fonte e um novo *índice* definido como 0, o instalador adicionará a origem ao final da lista de origem.
+Se **SourceListAddSource** for chamado com uma nova fonte e *Index* definido como 0, o instalador adiciona a origem ao final da lista de origem.
 
-Se essa função for chamada com uma fonte já existente na lista de origem e o *índice* estiver definido como 0, o instalador manterá o índice existente da origem.
+Se essa função for chamada com uma origem  já existente na lista de origem e Index for definido como 0, o instalador manterá o índice existente da origem.
 
-Se a função for chamada com uma origem existente na lista de origem e o *índice* for definido como um valor diferente de zero, a origem será removida de seu local atual na lista e inserida na posição especificada pelo *índice*, antes de qualquer fonte que já exista nessa posição.
+Se a função for chamada com uma fonte  existente na lista de origem e Index for definido como um valor diferente de zero, a origem será removida de seu local atual na lista e inserida na posição especificada por *Index*, antes de qualquer fonte que já exista nessa posição.
 
-Se a função for chamada com uma nova origem e um *índice* for definido como um valor diferente de zero, a origem será inserida na posição especificada pelo *índice*, antes de qualquer fonte que já exista nessa posição. O valor de índice para todas as fontes na lista após o índice especificado pelo *índice* é atualizado para garantir que os valores de índice exclusivos e a ordem preexistente permaneçam inalterados.
+Se a função for chamada com uma nova origem e *Index* for definido como um valor não zero, a origem será inserida na posição especificada por *Index*, antes de qualquer fonte que já exista nessa posição. O valor do índice para todas as fontes na lista após o índice especificado por *Índice* é atualizado para garantir que os valores de índice exclusivos e a ordem preexistência permaneçam inalteradas.
 
-Se o *índice* for maior que o número de fontes na lista, a origem será colocada no final da lista com um valor de índice maior do que qualquer origem existente.
+Se *Index* for maior que o número de fontes na lista, a origem será colocada no final da lista com um valor de índice um maior que qualquer fonte existente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -80,9 +80,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer 3,0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador 3.0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IPatch é definido como 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
+| IID<br/>     | IID IPatch é definido como \_ 000C10A1-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                            |
 
 
 
@@ -96,7 +96,7 @@ Esse método não retorna um valor.
 [**MsiSourceListAddSourceEx**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddsourceexa)
 </dt> <dt>
 
-[Sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[Sem suporte no Windows 2.0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

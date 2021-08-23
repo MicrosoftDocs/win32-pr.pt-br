@@ -4,12 +4,12 @@ ms.assetid: F65112FA-B380-45F8-A1FC-3408FE6E49E2
 title: Atributo MFSampleExtension_Encryption_SkipByteBlock (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18003c03df7e65314846d34cb1d1093f5b2507a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c674a7f7762f97a1978bd827795733d01b1dea3053898c5ecd30308373449b17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603126"
 ---
 # <a name="mfsampleextension_encryption_skipbyteblock-attribute"></a>Atributo MFSampleExtension de \_ criptografia \_ SkipByteBlock
 
@@ -31,9 +31,9 @@ Nos casos em que a origem é baseada em MP4, o valor é definido com base nos va
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

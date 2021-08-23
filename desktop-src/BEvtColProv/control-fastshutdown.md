@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 444fe9c94e9fd247e5976fd67a43b0a5eee8b591
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f524cc1ce57ccedf519bf80695a11f75d77eac792088d5f39d3dcf1e29187669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579806"
 ---
 # <a name="fastshutdown-method-of-the-control-class"></a>Método FastShutdown da classe Control
 
@@ -38,7 +38,7 @@ void FastShutdown();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -48,9 +48,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                       |
-| Namespace<br/>                | Raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| Namespace<br/>                | raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
 | MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
@@ -60,7 +60,7 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**Controlo**](control.md)
+[**Control**](control.md)
 </dt> </dl>
 
  

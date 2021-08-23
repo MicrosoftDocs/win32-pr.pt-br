@@ -1,32 +1,32 @@
 ---
-title: Exemplo de código para configuração de redistribuição
-description: Exemplo de código para configuração de redistribuição
+title: Código de exemplo para instalação de redistribuição
+description: Código de exemplo para instalação de redistribuição
 ms.assetid: 480f0da7-68c1-4144-a623-47578ae54acb
 keywords:
-- SDK do Windows Media Format, redistribuição de software
-- Formato de sistema avançado (ASF), redistribuição de software
-- ASF (formato de sistemas avançados), redistribuição de software
-- SDK do Windows Media Format, redistribuição
-- Formato de sistema avançado (ASF), redistribuição
-- ASF (formato de sistemas avançados), redistribuição
+- Windows SDK de formato de mídia, redistribuição de software
+- ASF (Advanced Systems Format), redistribuição de software
+- ASF (Formato de Sistemas Avançados), redistribuição de software
+- Windows SDK de Formato de Mídia, redistribuição
+- ASF (Advanced Systems Format), redistribução
+- ASF (Formato de Sistemas Avançados), redistribuição
 - redistribuição de software, código de exemplo
 - redistribuição de software, exemplos de código
-- redistribuição, código de exemplo
-- redistribuição, exemplos de código
+- redistribução, código de exemplo
+- redistribução, exemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d9990b617ed9c3492c0565b794798412f8e8373
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6a845f6c4ec66f2858756071a3e0260cb812c665a2b5b4effa063369bc894abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586066"
 ---
-# <a name="example-code-for-redistribution-setup"></a>Exemplo de código para configuração de redistribuição
+# <a name="example-code-for-redistribution-setup"></a>Código de exemplo para instalação de redistribuição
 
-Ao incluir o pacote de redistribuição em seu aplicativo, você pode usar o sinalizador/Q: A ao invocar o pacote de redistribuição em sua rotina de instalação. Isso suprime a interface do usuário.
+Ao incluir o pacote de redistribuição em seu aplicativo, você pode usar o sinalizador /P:A ao invocar o pacote de redistribuição em sua rotina de instalação. Isso suprime a interface do usuário.
 
-O código de exemplo a seguir pode ser usado em sua rotina de instalação para executar os pacotes de redistribuição no modo silencioso e notificar sua rotina de instalação quando o computador precisar ser reiniciado.
+O código de exemplo a seguir pode ser usado em sua rotina de instalação para executar os pacotes de redistribuição no modo silencioso e notificar sua rotina de instalação quando o computador deve ser reiniciado.
 
 
 ```C++
@@ -214,9 +214,9 @@ BOOL SystemNeedsReboot( void )
 [**Redistribuição de software**](software-redistribution.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,8 +4,8 @@ description: Esse atributo indica o tipo de algoritmo que deve ser usado para de
 ms.assetid: f602a009-6823-42e7-b5e4-fb433535b4cc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Signature-Algorithms do atributo AD
-- Esquema de AD do atributo signatureAlgorithms
+- Signature-Algorithms atributo AD Schema
+- Atributo AD signatureAlgorithms
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6487155ed8d13735a8201a41c9d1d5b087bb3711
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1d95ca49ca53a40fcad6270e882e27c091b2b06e22199ebdb9e76af83fac1c3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645746"
 ---
 # <a name="signature-algorithms-attribute"></a>Signature-Algorithms atributo
 
@@ -30,13 +30,13 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Signature-Algorithms                        |
-| LDAP-Display-Name | signatureAlgorithms                         |
+| Ldap-Display-Name | signatureAlgorithms                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.824                      |
-| System-ID-GUID    | 2a39c5b2-8960-11d1-aebc-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2a39c5b2-8960-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
+| No Catálogo Global      | Verdadeiro                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
+| No Catálogo Global      | Verdadeiro                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
+| No Catálogo Global      | Verdadeiro                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
+| No Catálogo Global      | Verdadeiro                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
+| No Catálogo Global      | Verdadeiro                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo indica o tipo de algoritmo que deve ser usado para decodificar uma
 | ID do link                | \-                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                      |
-| É de valor único       | True                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                      |
-| No catálogo global      | True                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                               |
+| No Catálogo Global      | Verdadeiro                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                 |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 

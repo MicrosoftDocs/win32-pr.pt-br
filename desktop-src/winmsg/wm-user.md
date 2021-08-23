@@ -1,19 +1,19 @@
 ---
-description: Usado para definir mensagens privadas para uso por classes de janela privada, geralmente do formulário WM \_ User + x, em que x é um valor inteiro.
+description: Usado para definir mensagens privadas para uso por classes de janela privada, geralmente do formato WM \_ USER+x, em que x é um valor inteiro.
 ms.assetid: 4115c587-fcb4-4170-9948-fe33bcb8742a
-title: WM_USER (WinUser. h)
+title: WM_USER (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1efd6f2e79180b7dc627281829539d20f5fa74d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1cb14e8ef69ae35cedd4e246f253aa7b3c16451623eb7043774d1f0940cb64f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010457"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705726"
 ---
-# <a name="wm_user"></a>usuário do WM \_
+# <a name="wm_user"></a>WM \_ USER
 
-Usado para definir mensagens privadas para uso por classes de janela privada, geralmente do formulário **WM \_ User** + *x*, em que *x* é um valor inteiro.
+Usado para definir mensagens privadas para uso por classes de janela privada, geralmente do formato **WM \_ USER** x , em +  *que x* é um valor inteiro.
 
 ``` syntax
 #define WM_USER                         0x0400
@@ -27,9 +27,9 @@ A seguir estão os intervalos de números de mensagem.
 
 | Intervalo                                                        | Significado                                                        |
 |--------------------------------------------------------------|----------------------------------------------------------------|
-| 0 por meio do **\_ usuário do WM** – 1<br/>                         | Mensagens reservadas para uso pelo sistema.<br/>            |
-| **WM \_ USUÁRIO** por meio de 0x7FFF<br/>                       | Mensagens de inteiros para uso por classes de janela privada.<br/> |
-| [**WM \_ APLICATIVO**](wm-app.md) (0x8000) por meio de 0xBFFF<br/> | Mensagens disponíveis para uso por aplicativos.<br/>         |
+| 0 a **WM \_ USER** –1<br/>                         | Mensagens reservadas para uso pelo sistema.<br/>            |
+| **WM \_ USER** por meio 0x7FFF<br/>                       | Mensagens de inteiro para uso por classes de janela privada.<br/> |
+| [**WM \_ APLICATIVO**](wm-app.md) (0x8000) por meio 0xBFFF<br/> | Mensagens disponíveis para uso por aplicativos.<br/>         |
 | 0xC000 a 0xFFFF<br/>                             | Mensagens de cadeia de caracteres para uso por aplicativos.<br/>            |
 | Maior que 0xFFFF<br/>                               | Reservado pelo sistema.<br/>                             |
 
@@ -37,13 +37,13 @@ A seguir estão os intervalos de números de mensagem.
 
  
 
-Os números de mensagem no primeiro intervalo (0 **por \_ usuário do WM** – 1) são definidos pelo sistema. Os valores neste intervalo que não são definidos explicitamente são reservados pelo sistema.
+Os números de mensagem no primeiro intervalo (0 a **WM \_ USER** –1) são definidos pelo sistema. Os valores nesse intervalo que não são definidos explicitamente são reservados pelo sistema.
 
-Os números de mensagem no segundo intervalo **( \_ usuário do WM** por meio de 0x7FFF) podem ser definidos e usados por um aplicativo para enviar mensagens dentro de uma classe de janela privada. Esses valores não podem ser usados para definir mensagens que são significativas em um aplicativo porque algumas classes de janela predefinidas já definem valores nesse intervalo. Por exemplo, classes de controle predefinidas como **Button**, **Edit**, **ListBox** e **ComboBox** podem usar esses valores. As mensagens neste intervalo não devem ser enviadas a outros aplicativos, a menos que os aplicativos tenham sido projetados para trocar mensagens e para anexar o mesmo significado aos números de mensagem.
+Os números de mensagem no segundo intervalo (**WM \_ USER** 0x7FFF) podem ser definidos e usados por um aplicativo para enviar mensagens dentro de uma classe de janela privada. Esses valores não podem ser usados para definir mensagens significativas em um aplicativo porque algumas classes de janela predefinidas já definem valores nesse intervalo. Por exemplo, classes de controle predefinidas como **BUTTON,** **EDIT,** **LISTBOX** e **COMBOBOX** podem usar esses valores. As mensagens nesse intervalo não devem ser enviadas a outros aplicativos, a menos que os aplicativos tenham sido projetados para trocar mensagens e anexar o mesmo significado aos números de mensagem.
 
-Os números de mensagem no terceiro intervalo (0x8000 a 0xBFFF) estão disponíveis para que os aplicativos usem como mensagens privadas. As mensagens neste intervalo não entram em conflito com as mensagens do sistema.
+Os números de mensagem no terceiro intervalo (0x8000 até 0xBFFF) estão disponíveis para que os aplicativos usem como mensagens privadas. As mensagens nesse intervalo não estão em conflito com mensagens do sistema.
 
-Os números de mensagem no quarto intervalo (0xC000 a 0xFFFF) são definidos em tempo de execução quando um aplicativo chama a função [**RegisterWindowMessage**](/windows/win32/api/winuser/nf-winuser-registerwindowmessagea) para recuperar um número de mensagem para uma cadeia de caracteres. Todos os aplicativos que registram a mesma cadeia de caracteres podem usar o número de mensagem associado para troca de mensagens. No entanto, o número da mensagem real não é uma constante e não pode ser considerado o mesmo entre sessões diferentes.
+Os números de mensagem no quarto intervalo (0xC000 a 0xFFFF) são definidos em tempo de executar quando um aplicativo chama a função [**RegisterWindowMessage**](/windows/win32/api/winuser/nf-winuser-registerwindowmessagea) para recuperar um número de mensagem para uma cadeia de caracteres. Todos os aplicativos que registram a mesma cadeia de caracteres podem usar o número de mensagem associado para trocar mensagens. O número real da mensagem, no entanto, não é uma constante e não pode ser presumido como o mesmo entre sessões diferentes.
 
 Os números de mensagem no quinto intervalo (maior que 0xFFFF) são reservados pelo sistema.
 
@@ -55,7 +55,7 @@ Os números de mensagem no quinto intervalo (maior que 0xFFFF) são reservados p
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -66,13 +66,13 @@ Os números de mensagem no quinto intervalo (maior que 0xFFFF) são reservados p
 **Referência**
 </dt> <dt>
 
-[**RegisterWindowMessage**](/windows/win32/api/winuser/nf-winuser-registerwindowmessagea)
+[**Registerwindowmessage**](/windows/win32/api/winuser/nf-winuser-registerwindowmessagea)
 </dt> <dt>
 
-[**aplicativo do WM \_**](wm-app.md)
+[**APLICATIVO \_ WM**](wm-app.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Mensagens e filas de mensagens](messages-and-message-queues.md)

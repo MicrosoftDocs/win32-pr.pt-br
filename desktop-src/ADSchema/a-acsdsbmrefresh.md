@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d662b886a8c97f3d155d3c1b40efcef67f7f1f0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dabca0b181614040891b78855b4134f321693175f66ed350ed8e6f011a9fb093
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545366"
 ---
 # <a name="acs-dsbm-refresh-attribute"></a>ACS-DSBM-atualizar atributo
 
@@ -58,7 +58,7 @@ Esse atributo contém o valor de timer de intervalo que determina quando o DSBM 
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ Esse atributo contém o valor de timer de intervalo que determina quando o DSBM 
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ Esse atributo contém o valor de timer de intervalo que determina quando o DSBM 
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,15 +121,15 @@ Esse atributo contém o valor de timer de intervalo que determina quando o DSBM 
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo contém o valor de timer de intervalo que determina quando o DSBM 
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo contém o valor de timer de intervalo que determina quando o DSBM 
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 

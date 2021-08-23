@@ -1,7 +1,7 @@
 ---
-description: Método Reset da classe Msvm_FcSwitchPort – solicita uma redefinição.
+description: Método reset da classe Msvm_FcSwitchPort - Solicita uma redefinição.
 ms.assetid: c56ed3ae-381e-4359-a0c7-53284b19364f
-title: Método Reset da classe Msvm_FcSwitchPort
+title: Método reset da classe Msvm_FcSwitchPort dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f37de79ab639c8b78a440c5993d951eb79e5deb4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 763d7bff520566bc3117ce22ad83df04f430a470e599c55af1ac5eb6a6cf9052
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523346"
 ---
-# <a name="reset-method-of-the-msvm_fcswitchport-class"></a>Método Reset da classe Msvm \_ FcSwitchPort
+# <a name="reset-method-of-the-msvm_fcswitchport-class"></a>Método reset da classe Msvm \_ FcSwitchPort
 
 Solicita uma redefinição.
 
@@ -57,13 +57,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

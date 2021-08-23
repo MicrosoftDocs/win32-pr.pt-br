@@ -4,12 +4,12 @@ description: Divisão por componente.
 ms.assetid: B086F069-8F43-4746-A6A5-8F4462212648
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d406c5e61b4615990b445abe169619227d22124c
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 0a1df4e40032a2eaa2c4ef89ca5d1e227b4ebc35bbc8b13d7868eda5ea7a5b07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107999093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625766"
 ---
 # <a name="div-sm4---asm"></a>div (sm4-ASM)
 
@@ -57,14 +57,14 @@ Nesta tabela, F significa um número real finito.
 | **+0**              | -inf     | src1       | +0          | +0     | +0     | +0          | src1       | +inf     | NaN     |
 | **+ desnormativo**         | -inf     | src1       | +0          | +0     | +0     | +0          | src1       | +inf     | NaN     |
 | **+ F**              | -inf     | +-F ou +-0 | src0        | src0   | src0   | src0        | + F         | +inf     | NaN     |
-| **+ INF**            | NaN      | +inf       | +inf        | +inf   | +inf   | +inf        | +inf       | +inf     | NaN     |
+| **+inf**            | NaN      | +inf       | +inf        | +inf   | +inf   | +inf        | +inf       | +inf     | NaN     |
 | **NaN**             | NaN      | NaN        | NaN         | NaN    | NaN    | NaN         | NaN        | NaN      | NaN     |
 
 
 
  
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
@@ -76,16 +76,16 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| Modelo de Sombreador                                              | Suportado |
+| Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sim       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -99,7 +99,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 <dl> <dt>
 
-[Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly do modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

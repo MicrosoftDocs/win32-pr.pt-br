@@ -1,7 +1,7 @@
 ---
-description: Usa a função SetThreadPriority do Microsoft Win32 para definir a prioridade do thread para um novo valor.
+description: Usa a função Microsoft Win32 SetThreadPriority para definir a prioridade do thread para um novo valor.
 ms.assetid: 5b8ad024-e651-47e5-b32a-c44d56c086cd
-title: Método CMsgThread. SetThreadPriority (Msgthrd. h)
+title: Método CMsgThread.SetThreadPriority (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0cfa3cd81907a251d2acf7129405e187286df3c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ce293f32f765a89451ecf07b4532afc5fc4a7a132287d5b09b54962f93135215
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119585666"
 ---
-# <a name="cmsgthreadsetthreadpriority-method"></a>Método CMsgThread. SetThreadPriority
+# <a name="cmsgthreadsetthreadpriority-method"></a>Método CMsgThread.SetThreadPriority
 
-Usa a função **SetThreadPriority** do Microsoft Win32 para definir a prioridade do thread para um novo valor.
+Usa a função Microsoft Win32 **SetThreadPriority** para definir a prioridade do thread para um novo valor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ Prioridade do thread.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -57,8 +57,8 @@ Retorna um dos valores a seguir.
 
 | Código de retorno                                                                              | Descrição                               |
 |------------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>VERDADEIRO * * * *</dt> </dl>  | A prioridade foi definida com êxito.<br/> |
-| <dl> <dt>FALSE * * * *</dt> </dl> | A prioridade não foi definida.<br/>          |
+| <dl> <dt>TRUE****</dt> </dl>  | A prioridade foi definida com êxito.<br/> |
+| <dl> <dt>FALSE****</dt> </dl> | A prioridade não foi definida.<br/>          |
 
 
 
@@ -74,8 +74,8 @@ O cliente e o thread de trabalho podem chamar essa função de membro.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Msgthrd. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Msgthrd.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

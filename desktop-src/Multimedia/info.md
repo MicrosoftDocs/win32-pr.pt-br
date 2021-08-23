@@ -131,7 +131,7 @@ info mysound product
 
 <dl> <dt>
 
-[Mci](mci.md)
+[MCI](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

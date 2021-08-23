@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 0724bb6cb9e44dc86699a66da37616050ce54e18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 178b39c67d12473663eb93bc300651341a9c459c19680218fa2c6f7a939c688c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691376"
 ---
 # <a name="finitimeshare-function"></a>Função FInitIMEShare
 

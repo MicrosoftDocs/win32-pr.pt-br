@@ -28,12 +28,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1d7ca8dc3f632e88c250715292a27e18ff36e3af
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c24ce209c51e0ac2d6167ae76d3f8289d73aa0fffa9ce607e51c8566cbb37c36
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582226"
 ---
 # <a name="systemconfig_logdisk-class"></a>\_Classe SystemConfig LogDisk
 
@@ -144,7 +144,7 @@ Tipo de unidade de disco. Os valores possíveis são:
 
 | Valor                                                                        | Significado                                         |
 |------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>1</dt> </dl> | Partição<br/>                            |
+| <dl> <dt>1</dt> </dl> | Partition<br/>                            |
 | <dl> <dt>2</dt> </dl> | Volume<br/>                               |
 | <dl> <dt>3</dt> </dl> | Partição estendida em vários discos<br/> |
 
@@ -154,7 +154,7 @@ Tipo de unidade de disco. Os valores possíveis são:
 
 </dd> <dt>
 
-**WPD**
+**FileSystem**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **char16**
@@ -352,12 +352,12 @@ Reservado.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 072309dcf9ebda1ba4a5669034019582b99105f3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dbeec26f0741ebb77b742ff647e91cb5fd18afe633a1519228b887b4b438bb72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601776"
 ---
 # <a name="mrmdumppridatainmemory-function"></a>Função MrmDumpPriDataInMemory
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Despeja informações de PRI (como um blob na memória, criado por uma chamada anterior para [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md)) para seu equivalente XML (como dados na memória), para torná-la mais fácil de ler. A função aloca memória e retorna um ponteiro para essa memória em *outputXmlData*. Chame [**MrmFreeMemory**](mrmfreememory.md) com o mesmo ponteiro para liberar essa memória. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de [Pri (indexação de recursos de pacote) e sistemas de compilação personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
 
@@ -51,9 +51,9 @@ HRESULT HRESULT MrmDumpPriDataInMemory(
 *inputPriData* \[ no\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **byte \***
 
-Um ponteiro para dados PRI criados por uma chamada anterior para [_ *MrmCreateResourceFileInMemory* *](mrmcreateresourcefileinmemory.md).
+Um ponteiro para dados PRI criados por uma chamada anterior para [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md).
 
 </dd> <dt>
 
@@ -69,9 +69,9 @@ O tamanho dos dados apontados por *inputPriData*.
 *schemaPriData* \[ em, opcional\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **byte \***
 
-Um ponteiro opcional para informações de PRI (como um blob na memória) que representa os dados de esquema criados por uma chamada anterior para [_ *MrmCreateResourceFileInMemory* *](mrmcreateresourcefileinmemory.md). Não libere *schemaPriData* até terminar de usar o indexador de recursos. Consulte também comentários.
+Um ponteiro opcional para informações de PRI (como um blob na memória) que representa dados de esquema criados por uma chamada anterior para [**MrmCreateResourceFileInMemory**](mrmcreateresourcefileinmemory.md). Não libere *schemaPriData* até terminar de usar o indexador de recursos. Consulte também comentários.
 
 </dd> <dt>
 
@@ -105,13 +105,13 @@ O endereço de um ponteiro para BYTE. A função aloca memória e retorna um pon
 *outputXmlSize* \[ fora\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-O endereço de um ULONG. No _outputXmlSize *, a função retorna o tamanho da memória alocada apontada por *outputXmlData*.
+O endereço de um ULONG. No *outputXmlSize*, a função retorna o tamanho da memória alocada apontada por *outputXmlData*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -127,9 +127,9 @@ Um pacote de recursos sem esquema é aquele criado com o argumento [**MrmPackagi
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 

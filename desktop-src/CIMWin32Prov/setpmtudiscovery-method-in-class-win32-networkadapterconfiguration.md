@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ef3bc9ad5d6203077275f3665c4b0efc98265fbe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0ae4c4d7818a0cbd344d95b342fcdccd179b2b2b2b6538a57c451b47bda60306
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119439806"
 ---
 # <a name="setpmtudiscovery-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetPMTUDiscovery da classe Win32 \_ NetworkAdapterConfiguration
 
@@ -49,7 +49,7 @@ Se for **true**, o TCP será habilitado para tentar descobrir a MTU (unidade de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,11 +406,11 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-Ao descobrir a MTU do caminho e limitar os segmentos TCP a esse tamanho, o TCP pode eliminar a fragmentação em roteadores ao longo do caminho que conecta redes com MTUs diferentes. A fragmentação afeta negativamente a taxa de transferência de TCP e o congestionamento da rede. Definir esse parâmetro como **false** faz com que um MTU de 576 bytes seja usado para todas as conexões que não são computadores na sub-rede local
+Ao descobrir o caminho MTU e limitar segmentos TCP a esse tamanho, o TCP pode eliminar a fragmentação em roteadores ao longo do caminho que conectam redes com diferentes MTUs. A fragmentação afeta negativamente a taxa de transferência TCP e o congestionamento de rede. Definir esse parâmetro como **FALSE** faz com que uma MTU de 576 bytes seja usada para todas as conexões que não são para máquinas na sub-rede local
 
 ## <a name="examples"></a>Exemplos
 
-A amostra [habilitar descoberta PMTU em todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/dd68dc8d-d452-484c-add7-2da5c87c3568) do VBScript permite que um computador descubra automaticamente a unidade de transmissão máxima em uma rede.
+O [exemplo Habilitar](https://Gallery.TechNet.Microsoft.Com/dd68dc8d-d452-484c-add7-2da5c87c3568) Descoberta de PMTU em todos os adaptadores de rede VBScript permite que um computador descubra automaticamente a unidade de transmissão máxima em uma rede.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -420,8 +420,8 @@ A amostra [habilitar descoberta PMTU em todos os adaptadores de rede](https://Ga
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -433,13 +433,13 @@ A amostra [habilitar descoberta PMTU em todos os adaptadores de rede](https://Ga
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

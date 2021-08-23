@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_NCMOUSEMOVE (WinUser. h)
-description: Postado em uma janela quando o cursor é movido dentro da área não cliente da janela. Essa mensagem é postada na janela que contém o cursor. Se uma janela tiver capturado o mouse, essa mensagem não será postada.
+title: WM_NCMOUSEMOVE mensagem (Winuser.h)
+description: Postado em uma janela quando o cursor é movido dentro da área não dependente da janela. Essa mensagem é postada na janela que contém o cursor. Se uma janela tiver capturado o mouse, essa mensagem não será postada.
 ms.assetid: 49c7cde9-701c-4821-8d16-31ca3c016ed4
 keywords:
-- Entrada de mouse e teclado de mensagem WM_NCMOUSEMOVE
+- WM_NCMOUSEMOVE entrada do mouse e teclado da mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65461d2e84b6185b95ac05c071f31df680450e7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93bcdd986c6cf521cd7f49fb3224248914b45cd6b25d137c528a516381dee502
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451406"
 ---
-# <a name="wm_ncmousemove-message"></a>Mensagem do WM \_ NCMOUSEMOVE
+# <a name="wm_ncmousemove-message"></a>Mensagem \_ WM NCMOUSEMOVE
 
-Postado em uma janela quando o cursor é movido dentro da área não cliente da janela. Essa mensagem é postada na janela que contém o cursor. Se uma janela tiver capturado o mouse, essa mensagem não será postada.
+Postado em uma janela quando o cursor é movido dentro da área não dependente da janela. Essa mensagem é postada na janela que contém o cursor. Se uma janela tiver capturado o mouse, essa mensagem não será postada.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,26 +41,26 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-O valor de teste de clique retornado pela função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado do processamento da mensagem [**\_ NCHITTEST do WM**](wm-nchittest.md) . Para obter uma lista de valores de teste de clique, consulte **WM \_ NCHITTEST**.
+O valor de teste de acerto retornado pela [**função DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado do processamento da mensagem [**WM \_ NCHITTEST.**](wm-nchittest.md) Para ver uma lista de valores de teste de acerto, consulte **WM \_ NCHITTEST**.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs.85)) que contém as coordenadas x e y do cursor. As coordenadas são relativas ao canto superior esquerdo da tela.
+Uma [**estrutura POINTS**](/previous-versions//dd162808(v=vs.85)) que contém as coordenadas x e y do cursor. As coordenadas são relativas ao canto superior esquerdo da tela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
-Se for apropriado fazer isso, o sistema enviará a mensagem [**\_ SYSCOMMAND do WM**](/windows/desktop/menurc/wm-syscommand) para a janela.
+Se for apropriado fazer isso, o sistema enviará a mensagem [**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) para a janela.
 
-Você também pode usar as macros [**Get \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) e [**Get \_ y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extrair os valores das coordenadas X e y do *lParam*.
+Você também pode usar as [**macros GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) e [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extrair os valores das coordenadas x e y de *lParam*.
 
 
 ```
@@ -71,7 +71,7 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 > [!IMPORTANT]
-> Não use as macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) ou [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extrair as coordenadas x e y da posição do cursor, pois essas macros retornam resultados incorretos em sistemas com vários monitores. Sistemas com vários monitores podem ter coordenadas x e y negativas e **LOWORD** e **HIWORD** tratam as coordenadas como quantidades não assinadas.
+> Não use as macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) ou [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extrair as coordenadas x e y da posição do cursor porque essas macros retornam resultados incorretos em sistemas com vários monitores. Sistemas com vários monitores podem ter coordenadas x e y negativas, e **LOWORD** e **HIWORD** tratam as coordenadas como quantidades sem sinal.
 
  
 
@@ -83,7 +83,7 @@ yPos = GET_Y_LPARAM(lParam);
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windowsx. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (inclua Windowsx.h)</dt> </dl> |
 
 
 
@@ -94,22 +94,22 @@ yPos = GET_Y_LPARAM(lParam);
 **Referência**
 </dt> <dt>
 
-[**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+[**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**OBTER \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OBTER \_ \_ lParam Y**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
-[**NCHITTEST do WM \_**](wm-nchittest.md)
+[**WM \_ NCHITTEST**](wm-nchittest.md)
 </dt> <dt>
 
-[**SYSCOMMAND do WM \_**](/windows/desktop/menurc/wm-syscommand)
+[**WM \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Entrada do mouse](mouse-input.md)
@@ -121,7 +121,7 @@ yPos = GET_Y_LPARAM(lParam);
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**FAIXAS**](/previous-versions//dd162808(v=vs.85))
+[**Pontos**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

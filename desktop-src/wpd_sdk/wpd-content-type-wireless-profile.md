@@ -1,36 +1,36 @@
 ---
-description: '\_ \_ \_ perfil sem fio do tipo de conteúdo WPD \_'
+description: PERFIL SEM FIO DO \_ \_ TIPO DE \_ \_ CONTEÚDO WPD
 ms.assetid: 229f6b65-4904-41b1-bb35-8873477a272b
 title: WPD_CONTENT_TYPE_WIRELESS_PROFILE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 999c8aec77c6ff046690e4c3450c0643d685e1db
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 65a29b02240e6daeb98713a9a58a1332b44464cafafddab1559e07915a4acaf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119445086"
 ---
-# <a name="wpd_content_type_wireless_profile"></a>\_ \_ \_ perfil sem fio do tipo de conteúdo WPD \_
+# <a name="wpd_content_type_wireless_profile"></a>PERFIL SEM FIO DO \_ \_ TIPO DE \_ \_ CONTEÚDO WPD
 
-Um objeto que descreve seu tipo de \_ \_ perfil sem fio do tipo de conteúdo WPD \_ \_ representa informações usadas para acessar uma rede sem fio.
+Um objeto que descreve seu tipo como WPD CONTENT TYPE WIRELESS PROFILE representa as \_ \_ informações \_ \_ usadas para acessar uma rede sem fio.
 
 Esse tipo de objeto dá suporte às propriedades a seguir.
 
 
 
-| Nome da propriedade             | Obrigatório ou opcional                      |
+| Nome da Propriedade             | Obrigatório ou Opcional                      |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [\_ID de objeto WPD \_](object-properties.md)                                                                | Obrigatórios.                                                             |
-| [\_ \_ ID pai do objeto WPD \_](object-properties.md)                                                 | Obrigatórios.                                                             |
-| [\_nome do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                             |
-| [\_ \_ \_ ID exclusiva persistente do objeto WPD \_](object-properties.md)                          | Obrigatórios.                                                             |
-| [\_formato de objeto WPD \_](object-properties.md)                                                        | Obrigatórios.                                                             |
-| [\_tipo de \_ conteúdo de objeto WPD \_](object-properties.md)                                           | Obrigatórios.                                                             |
-| [objeto WPD- \_ \_ oculto](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                     |
-| [IsSystem de \_ objetos WPD \_](object-properties.md)                                                    | Obrigatório se o objeto for um objeto do sistema (representa um arquivo do sistema). |
-| [\_tamanho do objeto WPD \_](object-properties.md)                                                            | Necessário se o objeto tiver pelo menos um recurso.                     |
-| [\_nome de \_ \_ arquivo original do objeto \_ WPD](object-properties.md)                              | Necessário se o objeto representar um arquivo.                             |
+| [ID DO \_ \_ OBJETO WPD](object-properties.md)                                                                | Obrigatórios.                                                             |
+| [ID PAI \_ \_ DO OBJETO \_ WPD](object-properties.md)                                                 | Obrigatórios.                                                             |
+| [NOME DO OBJETO WPD \_ \_](object-properties.md)                                                            | Necessário se o objeto representar um arquivo.                             |
+| [ID EXCLUSIVA \_ \_ PERSISTENTE DO OBJETO \_ \_ WPD](object-properties.md)                          | Obrigatórios.                                                             |
+| [FORMATO DE OBJETO WPD \_ \_](object-properties.md)                                                        | Obrigatórios.                                                             |
+| [TIPO DE CONTEÚDO \_ \_ DO OBJETO \_ WPD](object-properties.md)                                           | Obrigatórios.                                                             |
+| [\_ \_ ISHIDDEN DE OBJETO WPD](object-properties.md)                                                    | Necessário se o objeto estiver oculto.                                     |
+| [ISSYSTEM \_ DO OBJETO WPD \_](object-properties.md)                                                    | Necessário se o objeto for um objeto do sistema (representa um arquivo do sistema). |
+| [TAMANHO DO OBJETO WPD \_ \_](object-properties.md)                                                            | Necessário se o objeto tiver pelo menos um recurso.                     |
+| [NOME DO ARQUIVO \_ \_ ORIGINAL DO OBJETO \_ WPD \_](object-properties.md)                              | Necessário se o objeto representar um arquivo.                             |
 | [OBJETO WPD \_ \_ NÃO \_ CONSUMÍVEL](object-properties.md)                                       | Recomendado se o objeto não for destinado ao consumo pelo dispositivo. |
 | [REFERÊNCIAS DE OBJETO WPD \_ \_](object-properties.md)                                                | Necessário se o objeto tiver referências a outros objetos.               |
 | [PALAVRAS-CHAVE \_ DE OBJETO WPD \_](object-properties.md)                                                    | Opcional.                                                             |
@@ -51,13 +51,13 @@ Esse tipo de objeto dá suporte às propriedades a seguir.
 
 ## <a name="typical-resources"></a>Recursos típicos
 
-Esses objetos normalmente incluem os seguintes recursos.
+Esses objetos normalmente incluem os recursos a seguir.
 
 
 
-| Nome do Recurso                                          | Obrigatório ou opcional                                  | Descrição               |
+| Nome do Recurso                                          | Obrigatório ou Opcional                                  | Descrição               |
 |--------------------------------------------------------|-------------------------------------------------------|---------------------------|
-| [**\_padrão de recursos WPD \_**](wpd-resource-default.md) | Necessário se o objeto for representado por dados binários. | Contém os dados binários. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Necessário se o objeto for representado por dados binários. | Contém os dados binários. |
 
 
 

@@ -3,7 +3,7 @@ title: MCI_REALIZE comando (mmsystem. h)
 description: O \_ comando de concretização do MCI faz com que um dispositivo gráfico perceba sua paleta em um DC (contexto de dispositivo). Dispositivos de vídeo digital reconhecem este comando.
 ms.assetid: cbc9e6ef-a372-4ddb-b7f3-ea99ac14ec95
 keywords:
-- Multimídia do Windows de comando MCI_REALIZE
+- MCI_REALIZE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f2e59bfe9bbe1443f55ae0fbcf8819b932bb1c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e81204fe679d543438a0d0dcc7ec333462cb6a3d0c30212706969dc22a143df1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105751174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689826"
 ---
 # <a name="mci_realize-command"></a>\_Comando de concretização do MCI
 

@@ -1,9 +1,9 @@
 ---
-title: função gluQuadricNormals (Glu. h)
-description: A função gluQuadricNormals especifica que tipo de Normals deve ser usado para quadrics.
+title: Função gluQuadricNormals (Glu.h)
+description: A função gluQuadricNormals especifica que tipo de normal deve ser usado para os quadcs.
 ms.assetid: 945759ec-ed4a-480f-8243-49fc785867c1
 keywords:
-- função gluQuadricNormals OpenGL
+- Função gluQuadricNormals OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f11f9d8cd1884d7a5d1bc4cd03797517ba484126
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d535a90f21b88b26c3afd245b2f6350a443fd8915a4cd806df79236484c36d3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554176"
 ---
-# <a name="gluquadricnormals-function"></a>função gluQuadricNormals
+# <a name="gluquadricnormals-function"></a>Função gluQuadricNormals
 
-A função **gluQuadricNormals** especifica que tipo de Normals deve ser usado para quadrics.
+A **função gluQuadricNormals** especifica que tipo de normal deve ser usado para os quadcs.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,25 +41,25 @@ void WINAPI gluQuadricNormals(
 
 <dl> <dt>
 
-*quádruplo* 
+*quadObject* 
 </dt> <dd>
 
-O objeto Quadric (criado com [**gluNewQuadric**](glunewquadric.md)).
+O objeto quadc (criado com [**gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
-*Normals* 
+*Normais* 
 </dt> <dd>
 
-O tipo desejado de Normals. Os valores a seguir são válidos.
+O tipo desejado de normais. Os valores a seguir são válidos.
 
 
 
 | Valor                                                                                                                                                | Significado                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| <span id="GLU_NONE"></span><span id="glu_none"></span><dl> <dt>**GLU \_ nenhum**</dt> </dl>       | Nenhum normal é gerado.<br/>                                                         |
-| <span id="GLU_FLAT"></span><span id="glu_flat"></span><dl> <dt>**GLU \_ simples**</dt> </dl>       | Um normal é gerado para cada faceta de um Quadric.<br/>                             |
-| <span id="GLU_SMOOTH"></span><span id="glu_smooth"></span><dl> <dt>**\_Smooth Glu**</dt> </dl> | Um normal é gerado para cada vértice de um Quadric. Esse é o valor padrão.<br/> |
+| <span id="GLU_NONE"></span><span id="glu_none"></span><dl> <dt>**GLU \_ NONE**</dt> </dl>       | Nenhuma normal é gerada.<br/>                                                         |
+| <span id="GLU_FLAT"></span><span id="glu_flat"></span><dl> <dt>**GLU \_ FLAT**</dt> </dl>       | Um normal é gerado para cada faceta de um quadric.<br/>                             |
+| <span id="GLU_SMOOTH"></span><span id="glu_smooth"></span><dl> <dt>**GLU \_ SMOOTH**</dt> </dl> | Um normal é gerado para cada vértice de um quadric. Esse é o valor padrão.<br/> |
 
 
 
@@ -73,7 +73,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A função **gluQuadricNormals** especifica que tipo de Normals deve ser usado para quadrics renderizado com o **quadobject**.
+A **função gluQuadricNormals** especifica que tipo de normal deve ser usado para os quadcs renderizados com **quadObject**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,8 +83,8 @@ A função **gluQuadricNormals** especifica que tipo de Normals deve ser usado p
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>GLU. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

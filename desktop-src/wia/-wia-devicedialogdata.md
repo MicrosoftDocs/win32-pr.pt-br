@@ -1,7 +1,7 @@
 ---
-description: Estrutura DEVICEDIALOGDATA – define os dados necessários para chamar uma caixa de diálogo de dispositivo.
+description: Estrutura DEVICEDIALOGDATA – define os dados necessários para chamar uma caixa de diálogo do dispositivo.
 ms.assetid: 424defa6-1452-4a8b-bacc-738209c236c3
-title: Estrutura DEVICEDIALOGDATA (Wiadefd. h)
+title: Estrutura DEVICEDIALOGDATA (Wiadefd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadefd.h
-ms.openlocfilehash: ad7b08f5396a7a6e9b1f74df3dd409303b2d548d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e20b8689e71031024c46451d3079450061e8112acf1052c12129b89ed9e0a23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451196"
 ---
 # <a name="devicedialogdata-structure"></a>Estrutura DEVICEDIALOGDATA
 
-Define os dados necessários para chamar uma caixa de diálogo de dispositivo.
+Define os dados necessários para chamar uma caixa de diálogo do dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,14 +56,14 @@ Especifica o tamanho dessa estrutura em bytes.
 
 </dd> <dt>
 
-**hwndParent**
+**Hwndparent**
 </dt> <dd>
 
 Digite: **HWND**
 
 </dd> <dd>
 
-Especifica o identificador para a janela pai da caixa de diálogo.
+Especifica o alça para a janela pai da caixa de diálogo.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Tipo: **[ **IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)\***
 
 </dd> <dd>
 
-Aponta para uma interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) que representa o item raiz válido na árvore de itens de aplicativo.
+Aponta para uma interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) que representa o item raiz válido na árvore de itens do aplicativo.
 
 </dd> <dt>
 
@@ -92,8 +92,8 @@ Especifica um conjunto de sinalizadores que controlam a operação da caixa de d
 | Sinalizador                                 | Significado                                                                                                                                                                                     |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0                                    | Comportamento padrão.                                                                                                                                                                           |
-| \_ \_ imagem única da caixa de diálogo do dispositivo WIA \_ \_   | Restringir a seleção de imagem a uma única imagem na caixa de diálogo aquisição de imagem de dispositivo.                                                                                                      |
-| \_caixa de \_ diálogo do dispositivo WIA \_ usar \_ \_ interface do usuário comum | Use a interface do usuário do sistema, se disponível, em vez da interface do usuário fornecida pelo fornecedor. Se a interface do usuário do sistema não estiver disponível, a interface do usuário do fornecedor será usada. Se nenhuma interface do usuário estiver disponível, a função retornará E \_ NOTIMPL. |
+| IMAGEM ÚNICA DA CAIXA DE \_ \_ DIÁLOGO \_ DISPOSITIVO \_ WIA   | Restrinja a seleção de imagem a uma única imagem na caixa de diálogo de aquisição de imagem do dispositivo.                                                                                                      |
+| CAIXA DE DIÁLOGO \_ \_ DISPOSITIVO WIA USAR INTERFACE \_ DO USUÁRIO \_ \_ COMUM | Use a interface do usuário do sistema, se disponível, em vez da interface do usuário fornecida pelo fornecedor. Se a interface do usuário do sistema não estiver disponível, a interface do usuário do fornecedor será usada. Se nenhuma das interfaces do usuário estiver disponível, a função retornará E \_ NOTIMPL. |
 
 
 
@@ -104,22 +104,22 @@ Especifica um conjunto de sinalizadores que controlam a operação da caixa de d
 **lIntent**
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
 </dd> <dd>
 
-Especifica o tipo de dados que a imagem deve representar. Para obter uma lista de valores de intenção de imagem, consulte [**constantes de objetivo de imagem**](-wia-imageintentconstants.md).
+Especifica que tipo de dados a imagem deve representar. Para ver uma lista de valores de intenção de imagem, consulte [**Constantes de intenção de imagem**](-wia-imageintentconstants.md).
 
 </dd> <dt>
 
 **lItemCount**
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
 </dd> <dd>
 
-Recebe o número de itens na matriz indicado pelo parâmetro **ppWiaItem** .
+Recebe o número de itens na matriz indicado pelo **parâmetro ppWiaItem.**
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Tipo: **[ **IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)\*\***
 
 </dd> <dd>
 
-Recebe o endereço de uma matriz de ponteiros para interfaces [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) .
+Recebe o endereço de uma matriz de ponteiros para interfaces [**IWiaItem.**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem)
 
 </dd> </dl>
 
@@ -140,9 +140,9 @@ Recebe o endereço de uma matriz de ponteiros para interfaces [**IWiaItem**](/wi
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Wiadefd. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| parâmetro<br/>                   | <dl> <dt>Wiadefd.h</dt> </dl> |
 
 
 

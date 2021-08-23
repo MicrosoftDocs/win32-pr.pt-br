@@ -4,12 +4,12 @@ ms.assetid: ea17d252-61ba-4c87-8568-af06cf64023a
 title: System. PercentFull
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55880f5133b8bf244b93a7212aa2f1de7712be9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b6b2db135b1f27421022e935ef8896a51297ba6b067289dc788f41cf62553b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661863"
 ---
 # <a name="systempercentfull"></a>System. PercentFull
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo Service-Class-info
-description: Informações gerais da classe de serviço.
+title: Atributo Service-Class-Info
+description: Informações da Classe de Serviço Geral.
 ms.assetid: 7efa94d4-b8f9-4eb4-a61b-1532e722c0bd
 ms.tgt_platform: multiple
 keywords:
-- Atributo AD-Class-info-esquema de anúncio
-- Esquema de AD do atributo serviceClassInfo
+- Esquema do AD do atributo Service-Class-Info
+- Esquema do AD do atributo serviceClassInfo
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b3f16270f7fa6da25264a7472432a6d1020261d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4df3d4442dfe465b1252892bf9377505bf95f531bc9919027f52404bd5669371
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645986"
 ---
-# <a name="service-class-info-attribute"></a>Atributo Service-Class-info
+# <a name="service-class-info-attribute"></a>Atributo Service-Class-Info
 
-Informações gerais da classe de serviço.
+Informações da Classe de Serviço Geral.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Informações de classe de serviço                                    |
-| LDAP-Display-Name | serviceClassInfo                                      |
+| CN                | Service-Class-Info                                    |
+| Ldap-Display-Name | serviceClassInfo                                      |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.123                                |
-| System-ID-GUID    | bf967a36-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a36-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ Informações gerais da classe de serviço.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | Falso                                              |
+| Tem valor único       | Falso                                              |
 | É indexado             | Falso                                              |
-| No catálogo global      | True                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Verdadeiro                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -79,10 +79,10 @@ Informações gerais da classe de serviço.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | Falso                                              |
+| Tem valor único       | Falso                                              |
 | É indexado             | Falso                                              |
-| No catálogo global      | True                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Verdadeiro                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -100,10 +100,10 @@ Informações gerais da classe de serviço.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | Falso                                              |
+| Tem valor único       | Falso                                              |
 | É indexado             | Falso                                              |
-| No catálogo global      | True                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Verdadeiro                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
@@ -123,7 +123,7 @@ Informações gerais da classe de serviço.
 | System-Only            | Falso                                              |
 | É de valor único       | Falso                                              |
 | É indexado             | Falso                                              |
-| No catálogo global      | True                                               |
+| No catálogo global      | Verdadeiro                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -144,7 +144,7 @@ Informações gerais da classe de serviço.
 | System-Only            | Falso                                              |
 | É de valor único       | Falso                                              |
 | É indexado             | Falso                                              |
-| No catálogo global      | True                                               |
+| No catálogo global      | Verdadeiro                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
@@ -165,7 +165,7 @@ Informações gerais da classe de serviço.
 | System-Only            | Falso                                              |
 | É de valor único       | Falso                                              |
 | É indexado             | Falso                                              |
-| No catálogo global      | True                                               |
+| No catálogo global      | Verdadeiro                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |

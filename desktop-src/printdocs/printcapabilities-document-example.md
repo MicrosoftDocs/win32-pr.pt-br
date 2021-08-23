@@ -1,21 +1,21 @@
 ---
-description: Este artigo inclui um exemplo de um documento PrintCapabilities. Os nomes de instância no exemplo são apenas para ilustração.
+description: Este artigo inclui um exemplo de um documento de PrintCapabilities. Os nomes de instância no exemplo são apenas para fins ilustrativos.
 ms.assetid: 86577c09-919b-4f07-9388-47879c656f32
-title: Exemplo de documento PrintCapabilities
+title: Exemplo de documento de PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e2bf839e3e88e43a295912966f5b1906ef8f35
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5f9729a3f4ce4799aa4df30b1e8c6393d3c8c7a228015b469985d39714708ce2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600676"
 ---
-# <a name="printcapabilities-document-example"></a>Exemplo de documento PrintCapabilities
+# <a name="printcapabilities-document-example"></a>Exemplo de documento de PrintCapabilities
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Observações: o namespace padrão não se aplica a atributos XML. Eles devem ser explicitamente qualificados para prefixo. Os nomes de instância usados no exemplo a seguir são apenas para ilustração, embora eles geralmente estão em conformidade com os nomes de instância definidos nas Palavras-chave de esquema de impressão.
+Observações: o namespace padrão não se aplica a atributos XML. Eles devem ser qualificados explicitamente por prefixo. Os nomes de instância usados no exemplo a seguir são apenas para ilustração, embora eles geralmente estão em conformidade com os nomes de instância definidos nas palavras-chave do esquema de impressão.
 
 ``` syntax
 <psf:PrintCapabilities xmlns:psf="http://schemas.microsoft.com/windows/2003/08/printing/printschemaframework" 

@@ -6,12 +6,12 @@ keywords:
 - InkDraw
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41973d3f8560f25a81ac1deb782bada51b015239
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6e146093d23fd16d122da1ea81d1c99bdf06ed926d5cb4dba2f1d77b747b2058
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662756"
 ---
 # <a name="inkdraw-method"></a>Método InkDraw
 
@@ -48,9 +48,9 @@ Esse método não fará nada se m \_ bInking for **false**. Essa é a condição
 
 InkDraw claramente tem uma responsabilidade dupla. As chamadas de MoveToEx e Linhato do Win32 são feitas para desenhar imagens de linha na tela da GUI (usando o identificador de contexto do dispositivo mantido em m \_ HDC). Os dados de tinta também são passados para o objeto de copapel para gravação usando o método InkDraw da interface [IPaper](ipaper-methods.md) . Quando m \_ bInkSaving for **false**, InkDraw pintará a imagem de linha, mas não armazenará os dados no copaper. Essa condição é usada durante a repintura.
 
- 
+ 
 
- 
+ 
 
 
 

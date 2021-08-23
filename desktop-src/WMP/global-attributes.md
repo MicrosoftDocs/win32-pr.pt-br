@@ -1,21 +1,21 @@
 ---
-title: Atributos globais (SDK do Windows Media Player)
+title: atributos globais (Windows Media Player SDK)
 description: Atributos globais
 ms.assetid: 2ed09506-990e-4da2-89d6-6ff77dc43eb2
 keywords:
-- Capas do Windows Media Player, atributos globais
+- aparências de Windows Media Player, atributos globais
 - capas, atributos globais
 - referência para capas, atributos globais
 - atributos globais
 - atributos, global
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19c3f7a605b5c277b3207cefbbeaaa641f81f026
-ms.sourcegitcommit: 40a1246849dba8ececf54c716b2794b99c96ad50
+ms.openlocfilehash: 69c2d52b6489a28eff20e3a7e5c7180fc9e2db9309c0fe42880bfc779a23f563
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "104365167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648076"
 ---
 # <a name="global-attributes"></a>Atributos globais
 
@@ -92,9 +92,9 @@ Para obter mais informações, consulte [atributos de evento de ambiente](ambien
 [**Diversos**](miscellaneous.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

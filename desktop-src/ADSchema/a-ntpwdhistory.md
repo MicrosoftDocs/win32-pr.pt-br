@@ -1,11 +1,11 @@
 ---
-title: Atributo NT-pwd-History
-description: O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Windows 2000 usa o Windows NT OWF.
+title: Atributo Nt-Pwd-History
+description: O histórico de senha do usuário Windows NT formato único (OWF). Windows 2000 usa o Windows NT OWF.
 ms.assetid: 7c6a0fe2-561e-43a2-af46-7505e7e13288
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo NT-pwd-History
-- Esquema de AD do atributo ntPwdHistory
+- Esquema do AD do atributo Nt-Pwd-History
+- Esquema do AD do atributo ntPwdHistory
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f41ed3196109d13d4fb6cfae7e23be7ffdfb8c7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2f247358e95b804330f245cf86ba2390c54da17e015060a0ea65a80566383558
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648176"
 ---
-# <a name="nt-pwd-history-attribute"></a>Atributo NT-pwd-History
+# <a name="nt-pwd-history-attribute"></a>Atributo Nt-Pwd-History
 
-O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Windows 2000 usa o Windows NT OWF.
+O histórico de senha do usuário Windows NT formato único (OWF). Windows 2000 usa o Windows NT OWF.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | NT-pwd-History                                        |
-| LDAP-Display-Name | ntPwdHistory                                          |
+| CN                | Nt-Pwd-History                                        |
+| Ldap-Display-Name | ntPwdHistory                                          |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
-| Frequência de atualização  | Cada vez que o usuário altera as senhas.                 |
+| Frequência de atualização  | Cada vez que o usuário altera senhas.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.94                                 |
-| System-ID-GUID    | bf9679e2-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf9679e2-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -80,10 +80,10 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -92,7 +92,7 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | Falso                                                             |
+| Tem valor único       | Falso                                                             |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**ms-DS-Vinculed-Object**](c-msds-bindableobject.md)<br/> |
+| Classes usadas em        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -122,10 +122,10 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -143,10 +143,10 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -164,10 +164,10 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -185,10 +185,10 @@ O histórico de senha do usuário no formato One-Way do Windows NT (OWF). O Wind
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

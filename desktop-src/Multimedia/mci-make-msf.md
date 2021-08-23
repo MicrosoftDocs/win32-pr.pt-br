@@ -1,9 +1,9 @@
 ---
-title: Macro MCI_MAKE_MSF (Mciapi. h)
-description: O MCI \_ criar \_ macro do MSF cria um valor de tempo no formato de minutos/segundos/quadros empacotado a partir dos minutos, segundos e valores de quadro determinados.
+title: MCI_MAKE_MSF macro (Mciapi.h)
+description: A macro MCI MAKE MSF cria um valor temporal no formato \_ MSF (minutos/segundos/quadros) empacotados com base nos valores de minutos, segundos e \_ quadros determinados.
 ms.assetid: 8c981d84-b049-4448-a820-bff30896065e
 keywords:
-- Multimídia MCI_MAKE_MSF macro do Windows
+- MCI_MAKE_MSF macro Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae7e8566986337d6b9b5161c85bcc62cecc52be0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e16f5cfa2b99f7bdbd7eb3029b3f0186904d8b8e94f455614464fadc98cdd20a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690125"
 ---
-# <a name="mci_make_msf-macro"></a>\_Macro do \_ MSF Make MCI
+# <a name="mci_make_msf-macro"></a>Macro MCI \_ MAKE \_ MSF
 
-O **MCI \_ criar \_** macro do MSF cria um valor de tempo no formato de minutos/segundos/quadros empacotado a partir dos minutos, segundos e valores de quadro determinados.
+A macro **MCI \_ MAKE \_ MSF** cria um valor temporal no formato MSF (minutos/segundos/quadros) empacotados com base nos valores de minutos, segundos e quadros determinados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ DWORD MCI_MAKE_MSF(
 
 <dl> <dt>
 
-*alguns* 
+*minutos* 
 </dt> <dd>
 
 Número de minutos.
@@ -63,15 +63,15 @@ Número de quadros.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o tempo no formato empacotado do MSF.
+Retorna a hora no formato MSF empacotado.
 
 ## <a name="remarks"></a>Comentários
 
-O tempo no formato MSF é expresso como um valor **DWORD** com o byte menos significativo contendo minutos, o próximo byte menos significativo que contém segundos e o próximo byte menos significativo que contém quadros. O byte mais significativo não é usado.
+O tempo no formato MSF é expresso como um valor **DWORD** com o byte menos significativo contendo minutos, o próximo byte menos significativo contendo segundos e o próximo byte menos significativo contendo quadros. O byte mais significativo não éusado.
 
-O **MCI \_ criar \_** macro do MSF é definido da seguinte maneira:
+A **macro MCI \_ MAKE \_ MSF** é definida da seguinte forma:
 
 
 ```C++
@@ -90,7 +90,7 @@ O **MCI \_ criar \_** macro do MSF é definido da seguinte maneira:
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ O **MCI \_ criar \_** macro do MSF é definido da seguinte maneira:
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Macros MCI](mci-macros.md)
+[MCI Macros](mci-macros.md)
 </dt> </dl>
 
  

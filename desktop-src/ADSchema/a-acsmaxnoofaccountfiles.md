@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-Max-no-of-Account-files
+title: Atributo ACS-Max-No-Of-Account-Files
 description: O número máximo de arquivos de conta RSVP.
 ms.assetid: b51863c1-a192-4b28-8a8b-392dc5506d8c
 ms.tgt_platform: multiple
 keywords:
-- ACS-Max-no-of-Account-files atributo AD Schema
-- Esquema de AD do atributo aCSMaxNoOfAccountFiles
+- Esquema do AD do atributo ACS-Max-No-Of-Account-Files
+- ACSMaxNoOfAccountFiles atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 344e85d9818681382b639fbc866b8afbaf100cde
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 421ec88ff1bea38251a581fe98cb4a2bd81323f19595d69dd4a3958ce25afe2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545306"
 ---
-# <a name="acs-max-no-of-account-files-attribute"></a>Atributo ACS-Max-no-of-Account-files
+# <a name="acs-max-no-of-account-files-attribute"></a>Atributo ACS-Max-No-Of-Account-Files
 
 O número máximo de arquivos de conta RSVP.
 
@@ -29,13 +29,13 @@ O número máximo de arquivos de conta RSVP.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-no-of-Account-files          |
-| LDAP-Display-Name | aCSMaxNoOfAccountFiles               |
+| CN                | ACS-max-no-of-account-files          |
+| Ldap-Display-Name | aCSMaxNoOfAccountFiles               |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.901               |
-| System-ID-GUID    | f0722310-aef5-11d1-bdcf-0000f80367c1 |
+| System-Id-Guid    | f0722310-aef5-11d1-bdcf-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ O número máximo de arquivos de conta RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O número máximo de arquivos de conta RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O número máximo de arquivos de conta RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O número máximo de arquivos de conta RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ O número máximo de arquivos de conta RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ O número máximo de arquivos de conta RSVP.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

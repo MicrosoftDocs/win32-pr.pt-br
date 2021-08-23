@@ -1,7 +1,7 @@
 ---
 description: A função ModifyFrame altera um quadro existente com novos dados.
 ms.assetid: ebd248e4-b248-4f4a-8b94-a6d1c331d12a
-title: Função ModifyFrame (Netmon. h)
+title: Função ModifyFrame (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: af3ef6c2c5ccae2b6410ac8fc81c815f790b17a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04bc22af11d83078ecf98d0386b061b520fbf9a8dcab6f6beb360c45b1c6fe96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555816"
 ---
 # <a name="modifyframe-function"></a>Função ModifyFrame
 
-A função **ModifyFrame** altera um quadro existente com novos dados.
+A **função ModifyFrame** altera um quadro existente com novos dados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,52 +43,52 @@ HFRAME WINAPI ModifyFrame(
 
 <dl> <dt>
 
-*hCapture* \[ no\]
+*hCapture* \[ Em\]
 </dt> <dd>
 
-Identificador para a captura. Para obter informações sobre como obter o identificador de captura, consulte a seção comentários deste tópico do **ModifyFrame** .
+Lidar com a captura. Para obter informações sobre como obter o alça de captura, consulte a seção Comentários deste tópico **ModifyFrame.**
 
 </dd> <dt>
 
-*FrameNumber* \[ no\]
+*FrameNumber* \[ Em\]
 </dt> <dd>
 
-Número de índice do quadro.
+Número do índice do quadro.
 
 </dd> <dt>
 
-*FrameData* \[ no\]
+*FrameData* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma matriz de bytes que contém os novos dados de quadro.
+Ponteiro para uma matriz de bytes que contêm os novos dados de quadro.
 
 </dd> <dt>
 
-*FrameLength* \[ no\]
+*FrameLength* \[ Em\]
 </dt> <dd>
 
 Comprimento dos novos dados, em bytes.
 
 </dd> <dt>
 
-*Timestamp* \[ fora\]
+*TimeStamp* \[ out\]
 </dt> <dd>
 
 Carimbo de data/hora que indica quando o quadro foi modificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será um identificador para um novo quadro.
+Se a função for bem-sucedida, o valor de retorno será um handle para um novo quadro.
 
-Se a função não for bem-sucedida, o valor de retorno será **nulo**.
+Se a função não for bem-sucedida, o valor de retorno será **NULL.**
 
 ## <a name="remarks"></a>Comentários
 
-Se a chamada for bem-sucedida, a função **ModifyFrame** destruirá o quadro original.
+Se a chamada for bem-sucedida, **a função ModifyFrame** destruirá o quadro original.
 
-Os [*especialistas*](e.md) e os [*analisadores*](p.md) podem chamar a função **ModifyFrame** .
+[*Especialistas*](e.md) e [*analisadores podem*](p.md) chamar a **função ModifyFrame.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ Os [*especialistas*](e.md) e os [*analisadores*](p.md) podem chamar a função *
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

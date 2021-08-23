@@ -1,7 +1,7 @@
 ---
 description: O método OnStopStreaming é chamado no final do streaming para corrigir os tempos para o relatório da página de propriedades.
 ms.assetid: 92174edb-2f6c-4bad-91c5-769aaebcc495
-title: Método CBaseVideoRenderer. OnStopStreaming (Renbase. h)
+title: Método CBaseVideoRenderer.OnStopStreaming (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 08cf23fd2e1a7e854625d8a369d15290591386fe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 38e1e3fef83bab4d598cfd36294c5c405c1eca938372b43f12a6401c4be3c46b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586036"
 ---
-# <a name="cbasevideorendereronstopstreaming-method"></a>Método CBaseVideoRenderer. OnStopStreaming
+# <a name="cbasevideorendereronstopstreaming-method"></a>Método CBaseVideoRenderer.OnStopStreaming
 
-O `OnStopStreaming` método é chamado no final do streaming para corrigir os tempos para o relatório da página de propriedades.
+O método é chamado no final do streaming para corrigir `OnStopStreaming` os tempos para o relatório da página de propriedades.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,15 +40,15 @@ HRESULT OnStopStreaming();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro é chamada duas vezes, uma vez ao pausar e novamente quando o fluxo é realmente interrompido.
+Essa função membro é chamada duas vezes, uma vez ao pausar e novamente quando o fluxo é realmente interrompido.
 
-Essa função de membro substitui [**CBaseRenderer:: OnStopStreaming**](cbaserenderer-onstopstreaming.md).
+Essa função membro substitui [**CBaseRenderer::OnStopStreaming.**](cbaserenderer-onstopstreaming.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Essa função de membro substitui [**CBaseRenderer:: OnStopStreaming**](cbaseren
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

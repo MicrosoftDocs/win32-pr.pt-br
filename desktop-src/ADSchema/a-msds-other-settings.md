@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-Other-Settings
+title: atributo ms-DS-Other-Configurações
 description: Esse atributo de valores múltiplos é usado para armazenar qualquer configuração configurável para o DS armazenado no formato de valor de nome.
 ms.assetid: e7d17c8e-6264-43d1-9010-9d589f93a086
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-Other-Settings
-- atributo msDS-Other-Settings do AD Schema
+- esquema de AD de atributos do ms-DS-Other-Configurações
+- atributo de AD msDS-Other-Configurações
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3699ac7983f33730cb73bb0f1eab0c13e72cbce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d6a4e7a62313d905f5f26281bdc967631658d12eadd17ffbd4f4f3c1100db6ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551936"
 ---
-# <a name="ms-ds-other-settings-attribute"></a>atributo ms-DS-Other-Settings
+# <a name="ms-ds-other-settings-attribute"></a>atributo ms-DS-Other-Configurações
 
 Esse atributo de valores múltiplos é usado para armazenar qualquer configuração configurável para o DS armazenado no formato de nome = valor.
 
@@ -29,8 +29,8 @@ Esse atributo de valores múltiplos é usado para armazenar qualquer configuraç
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-Other-Settings                        |
-| LDAP-Display-Name | msDS-Other-Settings                         |
+| CN                | ms-DS-Other-Configurações                        |
+| LDAP-Display-Name | msDS-outro Configurações                         |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
@@ -121,15 +121,15 @@ Esse atributo de valores múltiplos é usado para armazenar qualquer configuraç
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo de valores múltiplos é usado para armazenar qualquer configuraç
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo de valores múltiplos é usado para armazenar qualquer configuraç
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 

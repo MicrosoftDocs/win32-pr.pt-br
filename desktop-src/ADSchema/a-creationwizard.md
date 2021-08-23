@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f188e7e8caa7106b22fab0f9b0be61034ded0bd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d3352c95cf2cc130506846f2a7241a57bbfe9392166d48750eb673e52f5d9c1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706796"
 ---
 # <a name="creation-wizard-attribute"></a>Creation-Wizard atributo
 
@@ -58,7 +58,7 @@ Assistente para ativar ao criar objetos desta classe.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -79,7 +79,7 @@ Assistente para ativar ao criar objetos desta classe.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -100,7 +100,7 @@ Assistente para ativar ao criar objetos desta classe.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -121,7 +121,7 @@ Assistente para ativar ao criar objetos desta classe.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -142,7 +142,7 @@ Assistente para ativar ao criar objetos desta classe.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -163,7 +163,7 @@ Assistente para ativar ao criar objetos desta classe.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |

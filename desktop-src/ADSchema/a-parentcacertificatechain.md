@@ -1,11 +1,11 @@
 ---
-title: Atributo pai-CA-Certificate-Chain
-description: Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
+title: Atributo Parent-CA-Certificate-Chain
+description: Certificado X.509v3 codificado por DER para a autoridade de certificação pai.
 ms.assetid: 37e04c7b-5350-4e48-b3fd-22f97959d26a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo pai-CA-Certificate-Chain
-- Esquema de AD do atributo parentCACertificateChain
+- Esquema do AD do atributo Parent-CA-Certificate-Chain
+- Esquema do AD do atributo parentCACertificateChain
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62f27bacb77fb7ab3f1ae712920dace7cb525efc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0e70d168bc9a16bffe1a0675c04d335c27ffeff89f53937b1507b01ce41486f5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647816"
 ---
-# <a name="parent-ca-certificate-chain-attribute"></a>Atributo pai-CA-Certificate-Chain
+# <a name="parent-ca-certificate-chain-attribute"></a>Atributo Parent-CA-Certificate-Chain
 
-Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
+Certificado X.509v3 codificado por DER para a autoridade de certificação pai.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Cadeia de certificados pai-CA                           |
-| LDAP-Display-Name | parentCACertificateChain                              |
+| CN                | Parent-CA-Certificate-Chain                           |
+| Ldap-Display-Name | parentCACertificateChain                              |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.685                                |
-| System-ID-GUID    | 963d2733-48be-11d1-a9c3-0000f80367c1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d2733-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| Tem valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
-| No catálogo global      | Falso                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
+| No Catálogo Global      | Falso                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
 | System-Flags           | 0x00000010                                                             |
-| Classes usadas em        | [**Autoridade de certificação**](c-certificationauthority.md)<br/> |
+| Classes usadas em        | [**Autoridade de Certificação**](c-certificationauthority.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -142,7 +142,7 @@ Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -163,7 +163,7 @@ Certificado X. 509v3 codificado em DER para a autoridade de certificação pai.
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |

@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe de instância'
+description: 'Saiba mais sobre: Classe de instância'
 title: Classe de instância
 TOCTitle: Instance class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Instance
@@ -24,27 +24,27 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7b717286a9d07b7eb17b87354cbe0896cf182f5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be11bc87b1a7969b1c0ddca6640979be0aadae3715a4c2e825ca470ee7932ed8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731746"
 ---
 # <a name="instance-class"></a>Classe de instância
 
-Uma classe que encapsula um [JET_INSTANCE](./jet-instance-structure.md) em um objeto descartável. A instância deve ser fechada por último e o fechamento da instância libera todos os outros recursos da instância.
+Uma classe que encapsula [um](./jet-instance-structure.md) JET_INSTANCE em um objeto descartável. A instância deve ser fechada por último e fechar a instância libera todos os outros recursos para a instância.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Runtime. ConstrainedExecution. CriticalFinalizerObject](/dotnet/api/system.runtime.constrainedexecution.criticalfinalizerobject)  
+  [System.Runtime.ConstrainedExecution.CriticalFinalizerObject](/dotnet/api/system.runtime.constrainedexecution.criticalfinalizerobject)  
     [System.Runtime.InteropServices.SafeHandle](/dotnet/api/system.runtime.interopservices.safehandle)  
-      [Microsoft. Win32. SafeHandles. SafeHandleZeroOrMinusOneIsInvalid](/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid)  
-        Microsoft. ISAM. ESENT. Interop. Instance  
+      [Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid](/dotnet/api/microsoft.win32.safehandles.safehandlezeroorminusoneisinvalid)  
+        Microsoft.Isam.Esent.Interop.Instance  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -70,4 +70,4 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 [Membros da Instância ](./instance-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,11 +1,11 @@
 ---
-title: Atributo Name-Service-flags
-description: Sinalizadores de configuração para o serviço de nome RPC.
+title: Atributo Name-Service-Flags
+description: Sinalizadores de configuração para o Serviço de Nome RPC.
 ms.assetid: f32cd2fb-4a0a-4a1b-873b-3e4d893f80cd
 ms.tgt_platform: multiple
 keywords:
-- Nome-Service-flags atributo AD Schema
-- Esquema de AD do atributo nameServiceFlags
+- Esquema do AD do atributo Name-Service-Flags
+- Esquema do AD do atributo nameServiceFlags
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98e0b8bec096a8dce43df7bb71658c90bbfd98a4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cdd2ec0a986a1408ba3631634c6cc85ca8007b9588224a7be65b499766f83558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442666"
 ---
-# <a name="name-service-flags-attribute"></a>Atributo Name-Service-flags
+# <a name="name-service-flags-attribute"></a>Atributo Name-Service-Flags
 
-Sinalizadores de configuração para o serviço de nome RPC.
+Sinalizadores de configuração para o Serviço de Nome RPC.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Nome-sinalizadores de serviço                   |
-| LDAP-Display-Name | nameServiceFlags                     |
+| CN                | Name-Service-Flags                   |
+| Ldap-Display-Name | nameServiceFlags                     |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.753               |
-| System-ID-GUID    | 80212840-4bdc-11d1-a9c4-0000f80367c1 |
+| System-Id-Guid    | 80212840-4bdc-11d1-a9c4-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Sinalizadores de configuração para o serviço de nome RPC.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**RPC-contêiner**](c-rpccontainer.md)<br/> |
+| Classes usadas em        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Sinalizadores de configuração para o serviço de nome RPC.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**RPC-contêiner**](c-rpccontainer.md)<br/> |
+| Classes usadas em        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Sinalizadores de configuração para o serviço de nome RPC.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**RPC-contêiner**](c-rpccontainer.md)<br/> |
+| Classes usadas em        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Sinalizadores de configuração para o serviço de nome RPC.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**RPC-contêiner**](c-rpccontainer.md)<br/> |
+| Classes usadas em        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Sinalizadores de configuração para o serviço de nome RPC.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**RPC-contêiner**](c-rpccontainer.md)<br/> |
+| Classes usadas em        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Sinalizadores de configuração para o serviço de nome RPC.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**RPC-contêiner**](c-rpccontainer.md)<br/> |
+| Classes usadas em        | [**Rpc-Container**](c-rpccontainer.md)<br/> |
 
 
 

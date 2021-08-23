@@ -1,5 +1,5 @@
 ---
-description: Método IShellDispatch. ShutdownWindows – exibe a caixa de diálogo desligar o Windows. Isso é o mesmo que clicar no menu iniciar e selecionar desligar.
+description: método IShellDispatch. ShutdownWindows – exibe a caixa de diálogo desligar Windows. isso é o mesmo que clicar no menu Iniciar e selecionar desligar.
 ms.assetid: 3C4F6579-6398-4af4-8911-FE22555B0ABC
 title: Método IShellDispatch. ShutdownWindows (shldisp. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5146e17d17ba0f082ad2d80f91ae05c176cf44ed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2ba63602dd2603ea2bf4ff2b14346d640800a74082cd89e154ee98a0a0431bd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119661206"
 ---
 # <a name="ishelldispatchshutdownwindows-method"></a>Método IShellDispatch. ShutdownWindows
 
-Exibe a caixa de diálogo **desligar o Windows** . Isso é o mesmo que clicar no menu **Iniciar** e selecionar **desligar**.
+exibe a caixa de diálogo **desligar Windows** . Isso é o mesmo que clicar no menu **Iniciar** e selecionar **desligar**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,9 +61,9 @@ Esse método é implementado e acessado por meio do método [**shell. ShutdownWi
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso de **ShutdownWindows** em JScript, VBScript e Visual Basic.
+o exemplo a seguir mostra o uso de **ShutdownWindows** em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -119,7 +119,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

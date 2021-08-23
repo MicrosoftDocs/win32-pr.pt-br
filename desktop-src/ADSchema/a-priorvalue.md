@@ -1,11 +1,11 @@
 ---
 title: Prior-Value atributo
-description: O valor anterior para um segredo.
+description: O valor anterior de um segredo.
 ms.assetid: 65440276-6337-443c-9ce3-0c18648fac20
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Prior-Value do atributo AD
-- Esquema de AD de atributo anteriorvalue
+- Prior-Value atributo AD Schema
+- Esquema do AD do atributo priorValue
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fa186896a346b580a056f2a4936585d1ef116a6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9fd5f166009e31f1452968513fe1842a90e7e5542a134a0bcf73194338e1aef6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647026"
 ---
 # <a name="prior-value-attribute"></a>Prior-Value atributo
 
-O valor anterior para um segredo.
+O valor anterior de um segredo.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Prior-Value                                           |
-| LDAP-Display-Name | anteriorvalue                                            |
+| Ldap-Display-Name | priorValue                                            |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.100                                |
-| System-ID-GUID    | bf967a02-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a02-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ O valor anterior para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O valor anterior para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O valor anterior para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O valor anterior para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O valor anterior para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O valor anterior para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 

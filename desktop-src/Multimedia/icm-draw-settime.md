@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_DRAW_SETTIME (VFW. h)
-description: O ICM \_ desenha \_ setTime fornece informações de sincronização para um driver de renderização que manipula a temporização de quadros de desenho.
+description: o ICM \_ desenhar \_ settime fornece informações de sincronização para um driver de renderização que manipula a temporização de quadros de desenho.
 ms.assetid: 211e8ecc-ef36-4598-aa1d-cb0a06e64f14
 keywords:
-- Multimídia do Windows de mensagem ICM_DRAW_SETTIME
+- mensagem de ICM_DRAW_SETTIME Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ce1e37709477ba6080219e5225b3fde02dfed75
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62c291b736b0138386c235703c29fffdae470d011f55284e8aaac4c4cfd604a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691136"
 ---
-# <a name="icm_draw_settime-message"></a>\_ \_ Mensagem setTime do ICM Draw
+# <a name="icm_draw_settime-message"></a>ICM \_ DESENHAR \_ mensagem SETtime
 
-O **ICM \_ desenha \_ setTime** fornece informações de sincronização para um driver de renderização que manipula a temporização de quadros de desenho. As informações de sincronização são o número de exemplo do quadro a ser desenhado. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawSetTime**](/windows/desktop/api/Vfw/nf-vfw-icdrawsettime) .
+o **ICM \_ desenhar \_ settime** fornece informações de sincronização para um driver de renderização que manipula a temporização de quadros de desenho. As informações de sincronização são o número de exemplo do quadro a ser desenhado. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawSetTime**](/windows/desktop/api/Vfw/nf-vfw-icdrawsettime) .
 
 
 ```C++

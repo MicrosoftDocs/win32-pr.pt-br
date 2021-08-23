@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Table. Dispose'
-title: Método Table. Dispose
+description: 'Saiba mais sobre: Método Table.Dispose'
+title: Método Table.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Table.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.table.dispose(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 26685e3bb647d72bca5eab6ace6acb3c5b00cb2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a028a6968513e11962d7b358c3790ace9d27741aa2727ab4ba45b23478296b42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370656"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603576"
 ---
-# <a name="tabledispose-method"></a>Método Table. Dispose
+# <a name="tabledispose-method"></a>Método Table.Dispose
 
 Incluir membros protegidos  
 Incluir membros herdados  
@@ -39,13 +39,13 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Descartar este objeto, liberando o recurso ESENT subjacente. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Descarte esse objeto, liberando o recurso Esent subjacente. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (booliano)</a></td>
-<td>Chamado por Dispose e o finalizador. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
+<td>Chamado por Dispose e o finalizador. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -57,8 +57,8 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe de tabela](./table-class.md)
+[Classe Table](./table-class.md)
 
 [Membros da tabela](./table-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

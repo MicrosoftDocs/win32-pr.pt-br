@@ -4,19 +4,19 @@ ms.assetid: 686f9ccf-5040-44c5-8633-83f12dc46586
 title: Sobre a API Wi-Fi nativa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 280d4f656145430e34d79e05b88bc2bdeb54fe5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16fafbe65d162668930470712c79637a41fcd0ee0769441b745e68bca156ada4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685456"
 ---
 # <a name="about-the-native-wifi-api"></a>Sobre a API Wi-Fi nativa
 
 A API Wi-Fi nativa contém funções, estruturas e enumerações que dão suporte à conectividade de rede sem fio e ao gerenciamento de perfil sem fio. A API pode ser usada para redes de infraestrutura e ad hoc. A API ad hoc sem fio é uma interface simplificada orientada a objeto para criar, gerenciar e usar redes ad hoc.
 
 > [!Note]  
-> O modo ad hoc pode não estar disponível em versões futuras do Windows. A partir do Windows 8.1 e do Windows Server 2012 R2, use [Wi-Fi Direct](about-the-wi-fi-direct-api.md) .
+> O modo ad hoc pode não estar disponível em versões futuras do Windows. a partir do Windows 8.1 e do Windows Server 2012 R2, use [Wi-Fi Direct](about-the-wi-fi-direct-api.md) em vez disso.
 
  
 
@@ -31,7 +31,7 @@ Misturar chamadas nativas à API WiFi e chamadas de API ad hoc sem fio não é r
 [Sobre WiFi nativo](about-native-wifi.md)
 </dt> <dt>
 
-[Suporte nativo à API WiFi no Windows XP](about-wireless-lan-api-for-windows-xp-service-pack-2.md)
+[suporte nativo à API Wifi no Windows XP](about-wireless-lan-api-for-windows-xp-service-pack-2.md)
 </dt> <dt>
 
 [Permissões nativas da API WiFi](native-wifi-api-permissions.md)
@@ -40,7 +40,7 @@ Misturar chamadas nativas à API WiFi e chamadas de API ad hoc sem fio não é r
 [Sobre a API ad hoc sem fio](about-the-wireless-ad-hoc-api.md)
 </dt> <dt>
 
-[Baixe o SDK do Windows Vista](https://www.microsoft.com/downloads/details.aspx?FamilyID=f26b1aa4-741a-433a-9be5-fa919850bdbf)
+[baixar o SDK do Windows Vista](https://www.microsoft.com/downloads/details.aspx?FamilyID=f26b1aa4-741a-433a-9be5-fa919850bdbf)
 </dt> </dl>
 
  

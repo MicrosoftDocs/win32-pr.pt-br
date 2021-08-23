@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Version
+title: atributo MS-SQL-Version
 description: A versão da instância atual do SQL Server.
 ms.assetid: 0003892c-906d-429b-bc98-bbc441b2d58b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Version
-- Esquema de AD do atributo mS-SQL-Version
+- esquema de AD do atributo MS-SQL-Version
+- esquema de AD do atributo mS-SQL-Version
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 446a436a30311f5696d8ed63334b0cf796eb2767
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b5c79b760ab72feffc455fc2c40de807b38a15ed3a0a709fcfcb8d0ce79c20c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583226"
 ---
-# <a name="ms-sql-version-attribute"></a>Atributo MS-SQL-Version
+# <a name="ms-sql-version-attribute"></a>atributo MS-SQL-Version
 
 A versão da instância atual do SQL Server.
 
@@ -29,8 +29,8 @@ A versão da instância atual do SQL Server.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Versão do MS-SQL                              |
-| LDAP-Display-Name | Versão do mS-SQL                              |
+| CN                | MS-SQL-Version                              |
+| LDAP-Display-Name | mS-SQL-Version                              |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.            |
 | Frequência de atualização  | Na configuração do sistema.                            |
@@ -58,9 +58,9 @@ A versão da instância atual do SQL Server.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
-| É indexado             | True                                                                                                                          |
-| No catálogo global      | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
+| É indexado             | Verdadeiro                                                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -79,9 +79,9 @@ A versão da instância atual do SQL Server.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
-| É indexado             | True                                                                                                                          |
-| No catálogo global      | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
+| É indexado             | Verdadeiro                                                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
@@ -100,15 +100,15 @@ A versão da instância atual do SQL Server.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
-| É indexado             | True                                                                                                                          |
-| No catálogo global      | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
+| É indexado             | Verdadeiro                                                                                                                          |
+| No catálogo global      | Verdadeiro                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A versão da instância atual do SQL Server.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
-| É indexado             | True                                                                                                                          |
-| No catálogo global      | True                                                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                          |
+| É indexado             | Verdadeiro                                                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A versão da instância atual do SQL Server.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
-| É indexado             | True                                                                                                                          |
-| No catálogo global      | True                                                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                          |
+| É indexado             | Verdadeiro                                                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A versão da instância atual do SQL Server.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
-| É indexado             | True                                                                                                                          |
-| No catálogo global      | True                                                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                          |
+| É indexado             | Verdadeiro                                                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                    |
-| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> |
+| Classes usadas em        | [**MS-SQL-OLAPServer**](c-ms-sql-olapserver.md)<br/> [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> |
 
 
 

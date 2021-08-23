@@ -1,7 +1,7 @@
 ---
-description: Esta estrutura contém dados para relatórios de pressão de memória.
+description: Essa estrutura contém dados para relatórios de pressão de memória.
 ms.assetid: 42cf0922-53cc-48b9-8359-b88583ef5f1c
-title: Estrutura D3DMEMORYPRESSURE (D3d9types. h) para Microsoft Media Foundation
+title: Estrutura D3DMEMORYPRESSURE (D3d9types.h) para Microsoft Media Foundation
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 7400c4822b61a84ab288f0424cfa84e825e69dc9
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: ec6fdf0d27edb5e1cafa575664b07dfe0807c8d124e1b066161734e75247709f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106188027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449416"
 ---
-# <a name="d3dmemorypressure-structure-d3d9typesh-for-microsoft-media-foundation"></a>Estrutura D3DMEMORYPRESSURE (D3d9types. h) para Microsoft Media Foundation
+# <a name="d3dmemorypressure-structure-d3d9typesh-for-microsoft-media-foundation"></a>Estrutura D3DMEMORYPRESSURE (D3d9types.h) para Microsoft Media Foundation
 
-Contém dados para o relatório de pressão de memória.
+Contém dados para relatórios de pressão de memória.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,21 +44,21 @@ typedef struct _D3DMEMORYPRESSURE {
 **BytesEvictedFromProcess**
 </dt> <dd>
 
-O número de bytes que foram removidos pelo processo durante a duração da consulta.
+O número de bytes que foram despejados pelo processo durante a duração da consulta.
 
 </dd> <dt>
 
 **SizeOfInefficientAllocation**
 </dt> <dd>
 
-O número total de bytes colocados em segmentos de memória não ideais, devido a espaço inadequado dentro dos segmentos de memória preferenciais.
+O número total de bytes colocados em segmentos de memória não adequados, devido ao espaço inadequado dentro dos segmentos de memória preferenciais.
 
 </dd> <dt>
 
 **LevelOfEfficiency**
 </dt> <dd>
 
-A eficiência geral das alocações de memória que foram colocadas na memória não ideal. O valor é expresso como uma porcentagem. Por exemplo, o valor 95 indica que as alocações colocadas em segmentos de memória não preferenciais são 95% eficiente. Esse número não deve ser considerado uma medida exata.
+A eficiência geral das alocações de memória que foram colocadas na memória não ideal. O valor é expresso como um percentual. Por exemplo, o valor 95 indica que as alocações colocadas em segmentos de memória não preteridos são 95% eficientes. Esse número não deve ser considerado uma medida exata.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ A eficiência geral das alocações de memória que foram colocadas na memória 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos de área de trabalho do Windows 7\]                                                              |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]                                                 |
-| parâmetro                  | D3d9types. h (incluir D3d9. h) |
+| Cliente mínimo com suporte | Windows 7 \[ aplicativos da área de trabalho\]                                                              |
+| Servidor mínimo com suporte | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]                                                 |
+| Cabeçalho                  | D3d9types.h (inclua D3d9.h) |
 
 
 

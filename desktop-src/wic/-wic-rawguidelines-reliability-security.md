@@ -4,60 +4,60 @@ ms.assetid: 1cbfabce-3d56-4e23-b9a7-02369c67e392
 title: Confiabilidade e segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a0f0e4a244de2c1463cdadb76162c18b041812b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a4704b84d09698fd6fabcf2d190050063ec3b3190904aa669fa78799c5d0158
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105784176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441726"
 ---
 # <a name="reliability-and-security"></a>Confiabilidade e segurança
 
-Como os codecs do Windows Imaging Component (WIC) serão invocados de dentro do shell do Windows e da Galeria de fotos, os autores de codec devem fazer cada esforço para garantir um alto nível de confiabilidade e segurança em seus codecs de WIC.
+Como Windows codecs do WIC (componente de imagens) serão invocados de dentro do shell do Windows e do Galeria de Fotos, os autores de codec devem fazer todos os esforços para garantir um alto nível de confiabilidade e segurança em seus codecs WIC.
 
-Escrever código confiável depende amplamente de práticas recomendadas de codificação, revisões de código eficazes e testes de unidade e testes de cenário completos. Além disso, as diretrizes a seguir ajudarão a garantir que o codec seja compatível com as políticas do Windows Vista relativas à confiabilidade.
+Escrever código confiável depende em grande parte de boas práticas de codificação, revisões de código efetivas e testes de unidade completos e teste de cenário. Além disso, as diretrizes a seguir ajudarão a garantir que o codec está em conformidade com as políticas Windows Vista relacionadas à confiabilidade.
 
--   Habilitar O cancelamento de e/s.
+-   Habilitar o cancelamento de E/S.
 
-    Os autores de codec devem fornecer uma maneira para o usuário final cancelar qualquer operação de execução longa. Os codecs do WIC dão suporte a isso implementando IWICBitmapProgressNotification. Isso permite que um aplicativo de chamada especifique uma função de retorno de chamada para o codec chamar em intervalos especificados para notificar o chamador do progresso da operação atual. Quando um aplicativo retorna um erro \_ cancelado da função de retorno de chamada, o codec deve cancelar qualquer operação em andamento e propagar o HRESULT de volta para o chamador. Isso é especialmente importante para codecs BRUTOs, pois pode levar vários segundos para decodificar uma imagem bruta de tamanho completo e os aplicativos precisam de uma maneira de anular esse processamento.
+    Os autores de codec devem fornecer uma maneira para o usuário final cancelar qualquer operação de execução longa. Os codecs do WIC suportam isso implementando IWICBitmapProgressNotification. Isso permite que um aplicativo de chamada especifique uma função de retorno de chamada para o codec chamar em intervalos especificados para notificar o chamador do progresso da operação atual. Quando um aplicativo retorna ERROR CANCELLED da função de retorno de chamada, o codec deve cancelar qualquer operação em andamento e propagar o HRESULT de volta para \_ o chamador. Isso é especialmente importante para codecs RAW, pois pode levar vários segundos para decodificar uma imagem RAW de tamanho completo e os aplicativos precisam de uma maneira de anular esse processamento.
 
 -   Certifique-se de que o código seja executado no menor escopo necessário para executar sua função.
 
-    Os autores de codecs devem garantir que o codec não consuma mais recursos do que o necessário ou tenha um escopo maior do que o necessário. O escopo de um codec no WIC é um arquivo de imagem única; o codec é criado quando um arquivo de imagem é carregado e o codec é liberado quando a imagem é fechada. Como o WIC é uma plataforma baseada em componente extensível, os codecs do WIC terão cargas e descarregamentos sobrepostos, e serão iniciados e interrompidos no mesmo processo. Se a infraestrutura subjacente de um codec exigir operações de iniciar e parar em um escopo maior que uma única imagem, a confiabilidade será afetada. Os codecs habilitados para WIC serão usados pelo Windows Explorer, bem como por outros aplicativos. Portanto, se um codec permanecer carregado durante o tempo de vida do processo, a memória não será liberada com eficiência e uma falha do codec poderá travar o Windows Explorer e, potencialmente, exigir que o computador seja reinicializado. (Considere que o codec será invocado toda vez que uma imagem for reminiatura pela primeira vez no Windows Explorer: é essencial que essa seja uma operação leve.)
+    Os autores de codec devem garantir que o codec não consuma mais recursos do que o necessário ou tenha um escopo maior do que o necessário. O escopo de um codec no WIC é um único arquivo de imagem; o codec é criado quando um arquivo de imagem é carregado e o codec é liberado quando a imagem é fechada. Como o WIC é uma plataforma extensível baseada em componentes, os codecs do WIC terão cargas e descarregamentos sobrepostos, e inicia e para, tudo dentro do mesmo processo. Se a infraestrutura subjacente de um codec exigir operações de início e parada em um escopo maior que uma única imagem, a confiabilidade será impactada. Codecs habilitados para WIC serão usados pelo Windows Explorer, bem como outros aplicativos. Portanto, se um codec permanecer carregado durante o tempo de vida do processo, a memória não será liberada com eficiência e uma falha do codec poderá desligar o Windows Explorer e, potencialmente, exigir que o computador seja reinicializado. (Considere que o codec será invocado sempre que uma imagem for miniaturada pela primeira vez no Windows Explorer: é essencial que essa seja uma operação leve.)
 
--   Use ferramentas de análise de código estáticos e dinâmicas.
+-   Use ferramentas de análise de código estáticas e dinâmicas.
 
     -   Ferramentas de análise estática:
 
-        Prefixo-para detectar erros no tempo de compilação.
+        PREfix – para detectar erros em tempo de compilação.
 
-        PREfast – para analisar o código de bugs.
+        PREfast – para analisar o código para bugs.
 
     -   Ferramentas de análise dinâmica:
 
-        AppVerifier – que ajuda a tornar os aplicativos mais resilientes, simulando problemas comuns de software real.
+        AppVerifier – que ajuda a tornar os aplicativos mais resilientes simulando problemas comuns de software do mundo real.
 
 -   Verifique todas as entradas nas revisões de código.
 
-    Todos os parâmetros para métodos exportados e todos os dados de arquivo devem ser cuidadosamente verificados quanto à validade e serem rejeitados de forma robusta se houver falha, a fim de se proteger contra estouros de buffer e subexecuções, estouros e estouros aritméticos e tipos inesperados.
+    Todos os parâmetros para métodos exportados e todos os dados de arquivo devem ser verificados cuidadosamente quanto à validade e rejeitados robustamente se houver falhas, a fim de proteger contra estouros e estouros de buffer, estouros aritméticos e subfluxos e tipos inesperados.
 
--   Use técnicas de difusão de arquivos para descobrir possíveis falhas e travamentos.
+-   Use técnicas de difusão de arquivo para descobrir possíveis falhas e travamentos.
 
-    A difusão de arquivos é o processo de testar o codec com entradas permutadas aleatoriamente.
+    A difusão de arquivo é o processo de testar o codec com entradas permutadas aleatoriamente.
 
-    Há duas formas de difusão de arquivos: difusão não direta (aleatória) e difusão direcionada. A difusão não direcionada faz algum bit aleatório se invertendo para ver se a entrada aleatória pode travar o codec. A difusão direcionada permuta a entrada com base em algum conhecimento do formato de arquivo. Por exemplo, se houver uma CRC (verificação de redundância de ciclo) no deslocamento de byte 32, a alteração de qualquer byte sem Atualizar o CRC provavelmente não irá exercitar a maior parte do caminhos. Neste exemplo, um difusor direcionado deve corrigir o CRC quando qualquer byte for modificado.
+    Há duas formas de difusão de arquivo: difusão não direcionada (aleatória) e difusão direcionada. A difusão não direcionada faz uma invertida de bits aleatória para ver se a entrada aleatória pode falhar o codec. A difusão direcionada permuta a entrada com base em algum conhecimento do formato de arquivo. Por exemplo, se houver uma CRC (verificação de redundância de ciclo) no deslocamento de bytes 32, alterar os bytes sem atualizar o CRC provavelmente não fará a maior parte dos caminhos de código. Neste exemplo, um difuso direcionado deve corrigir o CRC quando os bytes são modificados.
 
-    O conjunto de entradas de imagens para difusão de arquivos deve ser criado para que cada combinação de parâmetros que o decodificador dê suporte seja testada. Por exemplo, se o decodificador oferecer suporte a arquivos pequenos e big-endian e três configurações de compactação, o conjunto de entrada de imagem deverá consistir em arquivos little-endian de cada configuração de compactação e em arquivos big endian para cada configuração de compactação. Essa abordagem resultará em um conjunto grande, mas muito robusto de imagens de entrada a ser testada. Mesmo que nenhuma câmera produza cada uma das combinações, mas o decodificador dá suporte a essas combinações teóricas, os autores de codec devem difundir essas entradas.
+    O conjunto de entrada de imagens para difusão de arquivo deve ser criado para que cada combinação de parâmetros compatível com o decodificador seja testada. Por exemplo, se o decodificador for compatível com arquivos pequenos e big-endian e três configurações de compactação, o conjunto de entrada da imagem deverá consistir em arquivos little-endian de cada configuração de compactação e arquivos big-endian para cada configuração de compactação. Essa abordagem produzirá um conjunto grande, mas muito robusto de imagens de entrada a serem testadas. Mesmo que nenhuma câmera produza cada uma das combinações, mas o decodificador dá suporte a essas combinações teóricos, os autores de codec devem difusão essas entradas.
 
-    A segurança pode ser bastante aprimorada executando testes de difusão regulares de arquivos de imagem durante o desenvolvimento do codec. Os codecs sempre devem ser capazes de detectar corrupção de arquivo de imagem e falhar normalmente no caso de uma solicitação malformada ou de dados malformados.
+    A segurança pode ser bastante aprimorada pela execução regular de testes difuso de arquivos de imagem durante o desenvolvimento de codec. Os codecs sempre devem ser capazes de detectar a corrupção do arquivo de imagem e falhar normalmente no caso de uma solicitação malformada ou de dados malformados.
 
--   Enfatize o código.
+-   Enfatizar o código.
 
-    Teste o codec executando-o continuamente em vários processos simultâneos, executando todas as operações com suporte em todas as sequências possíveis, em imagens de tamanhos variados (incluindo imagens muito grandes) de todas as câmeras com suporte.
+    Teste o codec executando-o continuamente em vários processos simultâneos, executando todas as operações com suporte em todas as sequências possíveis, em imagens de tamanhos variados (incluindo imagens muito grandes) de cada câmera com suporte.
 
--   Segurança do thread.
+-   Segurança de thread.
 
-    A partir do Windows 7, o WIC exige que os CODECs BRUTOs sejam do tipo apartment COM "both". Isso significa que você deve fazer o bloqueio apropriado para lidar com chamadores entre apartamento e chamadores em cenários multi-threaded. Os objetos dentro de um MTA (multithreaded apartment) podem ser chamados simultaneamente por qualquer número de threads no MTA, permitindo um melhor desempenho em sistemas de vários núcleos e em certos cenários de servidor. Além disso, os CODECs do WIC que residem em um MTA podem chamar outros objetos que residem no MTA sem o custo de Marshalling associado à chamada entre threads que residem em apartments STA diferentes. No Windows 7, todos os CODECs de WIC na caixa foram atualizados para dar suporte a MTAs, incluindo JPEG, TIFF, PNG, GIF, ICO e BMP. os CODECs de terceiros que não oferecem suporte a MTAs causarão custos de desempenho significativos em aplicativos multithread devido ao marshaling. Habilitar o suporte ao MTA requer que a sincronização adequada seja implementada no CODEC de terceiros. A implementação exata dessas técnicas de sincronização está além do escopo deste documento. Uma referência geral para a sincronização de objetos COM é fornecida abaixo.
+    A partir Windows 7, o WIC exige que os CODECs RAW sejam do tipo de apartment COM "Both". Isso significa que você deve fazer o bloqueio apropriado para lidar com chamadores e chamadores entre apartments em cenários de vários threads. Objetos em um MTA (Multi Threaded Apartment) podem ser chamados simultaneamente por qualquer número de threads dentro do MTA, permitindo um melhor desempenho em sistemas de vários núcleos e em determinados cenários de servidor. Além disso, os CODECs do WIC que residem em um MTA podem chamar outros objetos que residam no MTA sem o custo de marshaling associado à chamada entre threads que residam em diferentes apartments STA. No Windows 7, todos os CODECs WIC in-box foram atualizados para dar suporte a MTAs, incluindo JPEG, TIFF, PNG, GIF, ICO e BMP. CodeCs de terceiros que não deem suporte a MTAs causarão custos significativos de desempenho em aplicativos multithread devido ao marshaling. A habilitação do suporte ao MTA requer que a sincronização adequada seja implementada no CODEC de terceiros. A implementação exata dessas técnicas de sincronização está além do escopo deste artigo. Uma referência geral para sincronizar objetos COM é fornecida abaixo.
 
     https://msdn.microsoft.com/library/ms809971.aspx
 
@@ -65,16 +65,16 @@ Escrever código confiável depende amplamente de práticas recomendadas de codi
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Diretrizes do WIC para formatos de imagem bruta de câmera](-wic-rawguidelines.md)
+[Diretrizes do WIC para formatos de imagem RAW da câmera](-wic-rawguidelines.md)
 </dt> <dt>
 
-[Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
+[Como escrever um codec WIC-Enabled código](-wic-howtowriteacodec.md)
 </dt> </dl>
 
  

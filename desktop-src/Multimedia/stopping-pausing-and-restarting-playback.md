@@ -20,16 +20,16 @@ keywords:
 - Reiniciando a onda-reprodução de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d6a4756a08317923056114259588a95bc62e97f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b04491a676a104e288d274da7dd70eb759e363adc6476805b261a9651444bf1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119688486"
 ---
 # <a name="stopping-pausing-and-restarting-playback"></a>Parando, pausando e reiniciando a reprodução
 
-Você pode parar ou pausar a reprodução enquanto o áudio da onda está sendo tocado. Depois que a reprodução tiver sido pausada, você poderá reiniciá-la. O Windows fornece as seguintes funções para controlar a reprodução de formato wave-áudio.
+Você pode parar ou pausar a reprodução enquanto o áudio da onda está sendo tocado. Depois que a reprodução tiver sido pausada, você poderá reiniciá-la. Windows fornece as seguintes funções para controlar a reprodução de formato wave-áudio.
 
 
 
@@ -41,7 +41,7 @@ Você pode parar ou pausar a reprodução enquanto o áudio da onda está sendo 
 
 
 
- 
+ 
 
 Pausar uma wave-dispositivo de áudio usando [**waveOutPause**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutpause) pode não ser instantâneo; o driver pode terminar de reproduzir o bloco atual antes de pausar a reprodução.
 
@@ -49,6 +49,6 @@ Em geral, assim que o primeiro bloco de dados de wave-áudio é enviado usando a
 
 Não é possível usar **waveOutRestart** para reiniciar um dispositivo que foi interrompido com [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset); Você deve usar **waveOutWrite** para enviar o primeiro bloco de dados para retomar a reprodução no dispositivo.
 
- 
+ 
 
- 
+ 

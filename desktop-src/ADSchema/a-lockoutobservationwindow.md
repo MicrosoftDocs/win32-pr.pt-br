@@ -1,11 +1,11 @@
 ---
-title: Atributo lock-out-observação-Window
-description: O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema incrementa a contagem de logon incorreta.
+title: Atributo Lock-Out-Observation-Window
+description: O intervalo de tempo, em intervalos de 100 nanossegundos, em que o sistema incrementa a contagem de logon incorreta.
 ms.assetid: a1929c32-cd05-43ca-9d4a-554683991696
 ms.tgt_platform: multiple
 keywords:
-- O esquema do AD do atributo lock-out-observação-Window
-- Esquema de AD do atributo lockOutObservationWindow
+- Esquema do AD do atributo Lock-Out-Observation-Window
+- Esquema do AD do atributo lockOutObservationWindow
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa00a71ba504ff4aa772cc43838f95c326db04c5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0850c966b9a6a200779b2c567cecbfd4c68f38af1f45c6196a2f913c9e9e13fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705756"
 ---
-# <a name="lock-out-observation-window-attribute"></a>Atributo lock-out-observação-Window
+# <a name="lock-out-observation-window-attribute"></a>Atributo Lock-Out-Observation-Window
 
-O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema incrementa a contagem de logon incorreta.
+O intervalo de tempo, em intervalos de 100 nanossegundos, em que o sistema incrementa a contagem de logon incorreta.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Bloqueio-saída-janela          |
-| LDAP-Display-Name | lockOutObservationWindow             |
+| CN                | Janela bloqueio-observação          |
+| Ldap-Display-Name | Lockoutobservationwindow             |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Administrador de domínio                 |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.61                |
-| System-ID-GUID    | bf9679a4-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf9679a4-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,15 +58,15 @@ O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema inc
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema inc
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
 | System-Flags           | 0x00000010                                                                                                                                            |
-| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Sam-domínio**](c-samdomain.md)<br/> [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Política de domínio**](c-domainpolicy.md)<br/> [**Domínio Sam**](c-samdomain.md)<br/> [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema inc
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| Tem valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
-| No catálogo global      | Falso                                                                                                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
+| No Catálogo Global      | Falso                                                                                                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                          |
 | Range-Lower            | \-                                                                                                                                                    |
 | Range-Upper            | \-                                                                                                                                                    |
 | Search-Flags           | 0x00000000                                                                                                                                            |
@@ -121,7 +121,7 @@ O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema inc
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -142,7 +142,7 @@ O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema inc
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -163,7 +163,7 @@ O intervalo de tempo, em intervalos de 100 a nanossegundos, em que o sistema inc
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |

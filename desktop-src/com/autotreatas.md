@@ -6,12 +6,12 @@ keywords:
 - A chave do registro de autotratações COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9ff717e17f08e5d37885f3994d03671bddaa9c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 196e389780d75c0e33a20775df6e087b130e11453d5335130003bc2f0611f726
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119731626"
 ---
 # <a name="autotreatas"></a>Tratados autotratações
 
@@ -21,8 +21,8 @@ Define automaticamente o CLSID para a chave [**Treats**](treatas.md) para o valo
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
-   {CLSID}
-      AutoTreatAs = value
+   {CLSID}
+      AutoTreatAs = value
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -36,9 +36,9 @@ Este é um **valor \_ sz de reg** que especifica o identificador de classe.
 [**CoTreatAsClass**](/windows/desktop/api/Objbase/nf-objbase-cotreatasclass)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
