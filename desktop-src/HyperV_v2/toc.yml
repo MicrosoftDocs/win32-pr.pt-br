@@ -229,7 +229,7 @@
             - name: CIM_MetricService
               href: cim-metricservice.md
               items:
-                - name: Método de permétricas
+                - name: Método ShowMetrics
                   href: cim-metricservice-showmetrics.md
                 - name: Método ShowMetricsByClass
                   href: cim-metricservice-showmetricsbyclass.md
@@ -359,7 +359,7 @@
             - name: CIM_USBDevice
               href: cim-usbdevice.md
               items:
-                - name: Método getdescriptor
+                - name: Método GetDescriptor
                   href: cim-usbdevice-getdescriptor.md
             - name: CIM_UserDevice
               href: cim-userdevice.md
@@ -410,7 +410,7 @@
             - name: CIM_VirtualSystemSnapshotService
               href: cim-virtualsystemsnapshotservice.md
               items:
-                - name: Método createsnapshot
+                - name: Método CreateSnapshot
                   href: cim-virtualsystemsnapshotservice-createsnapshot.md
                 - name: Método DestroySnapshot
                   href: cim-virtualsystemsnapshotservice-destroysnapshot.md
@@ -1525,7 +1525,7 @@
               href: msvm-virtualsystemmigrationservicesettingdatacomponent.md
             - name: Msvm_VirtualSystemMigrationSettingData
               href: msvm-virtualsystemmigrationsettingdata.md
-    - name: API de Fibre Channel virtual do Hyper-V
+    - name: Hyper-V virtual Fibre Channel API
       href: hyper-v-virtual-fiber-channels-api.md
       items:
         - name: Referência da API de Fibre Channel virtual do Hyper-V
@@ -1591,11 +1591,11 @@
         - name: Msvm_CollectionManagementService
           href: msvm-collectionmanagementservice.md
           items:
-            - name: Método definocollection
+            - name: Método DefineCollection
               href: msvm-collectionmanagementservice-definecollection.md
-            - name: Método destroycollection
+            - name: Método DestroyCollection
               href: msvm-collectionmanagementservice-destroycollection.md
-            - name: Método renomecollection
+            - name: Método RenameCollection
               href: msvm-collectionmanagementservice-renamecollection.md
             - name: Método AddMember
               href: msvm-collectionmanagementservice-addmember.md
@@ -1629,7 +1629,7 @@
         - name: Msvm_CollectionSnapshotService
           href: msvm-collectionsnapshotservice.md
           items:
-            - name: Método createsnapshot
+            - name: Método CreateSnapshot
               href: msvm-collectionsnapshotservice-createsnapshot.md
             - name: Método DestroySnapshot
               href: msvm-collectionsnapshotservice-destroysnapshot.md
@@ -1732,7 +1732,7 @@
           items:
             - name: Método QueryGuestClusterInformation
               href: msvm-vssservice-queryguestclusterinformation.md
-    - name: Classes RS2
+    - name: RS2 Classes
       href: redstone-classes.md
       items:
         - name: Msvm_AssignableDeviceDismountSettingData
@@ -1782,13 +1782,13 @@
           items:
             - name: Método ModifySecuritySettings
               href: msvm-securityservice-modifysecuritysettings.md
-            - name: Método setsecuritypolicy
+            - name: Método SetSecurityPolicy
               href: msvm-securityservice-setsecuritypolicy.md
             - name: Método SetKeyProtector
               href: msvm-securityservice-setkeyprotector.md
             - name: Método GetKeyProtector
               href: msvm-securityservice-getkeyprotector.md
-            - name: Método RestoreLastKnownGoodKeyProtector
+            - name: Método RestoreLastKnownKnownKeyProtector
               href: msvm-securityservice-restorelastknowngoodkeyprotector.md
             - name: Método StartService
               href: msvm-securityservice-startservice.md
@@ -1811,7 +1811,7 @@
               href: msvm-virtualsystemreferencepointexportjob-geterror.md
             - name: Método GetErrorEx
               href: msvm-virtualsystemreferencepointexportjob-geterrorex.md
-    - name: Classes RS3
+    - name: RS3 Classes
       href: rs3-classes.md
       items:
         - name: Msvm_Battery

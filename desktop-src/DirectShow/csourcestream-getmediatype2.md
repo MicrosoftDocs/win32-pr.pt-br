@@ -1,7 +1,7 @@
 ---
 description: O método GetMediaType recupera um tipo de mídia preferencial.
 ms.assetid: 85605885-adb5-4f13-91af-48bf74684eca
-title: Método CSourceStream. GetMediaType (origem. h)-parâmetro pMediaType
+title: Método CSourceStream.GetMediaType (Source.h) – parâmetro pMediaType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8306da8451d4af7da8ce4f4c7d4d3f6fd367e1ec
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 2850d08726337f1ff43ad09319aea8b0af95d107ad9dad9c0f89ce94474c7261
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073190"
 ---
-# <a name="csourcestreamgetmediatype-method-sourceh"></a>Método CSourceStream. GetMediaType (origem. h)
+# <a name="csourcestreamgetmediatype-method-sourceh"></a>Método CSourceStream.GetMediaType (Source.h)
 
 O `GetMediaType` método recupera um tipo de mídia preferencial.
 
@@ -45,22 +45,22 @@ virtual HRESULT GetMediaType(
 *pMediaType* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mídia.
+Ponteiro para um [**objeto CMediaType**](cmediatype.md) que recebe o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                            | Descrição                      |
 |--------------------------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>              |
-| <dl> <dt>**VFW \_ S \_ não há \_ mais \_ itens**</dt> </dl> | Índice fora do intervalo.<br/>   |
+| <dl> <dt>**VFW \_ NÃO TEM MAIS \_ \_ \_ ITENS**</dt> </dl> | Índice fora do intervalo.<br/>   |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>           | Índice menor que zero.<br/> |
-| <dl> <dt>**E \_ inesperado**</dt> </dl>           | Erro inesperado.<br/>     |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl>           | Erro inesperado.<br/>     |
 
 
 
@@ -68,12 +68,12 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Há duas versões desse método. Uma versão substitui o método [**CBasePin:: GetMediaType**](cbasepin-getmediatype.md) e usa um valor de índice como um parâmetro. A outra versão foi projetada para recuperar um único tipo de mídia, portanto, ele não tem o parâmetro de índice.
+Há duas versões desse método. Uma versão substitui o [**método CBasePin::GetMediaType**](cbasepin-getmediatype.md) e assume um valor de índice como um parâmetro. A outra versão foi projetada para recuperar um único tipo de mídia, portanto, ela não tem o parâmetro de índice.
 
-O método de parâmetro único retorna E \_ inesperado. O método de dois parâmetros verifica se o parâmetro *iPosition* é zero e, em seguida, chama a versão de parâmetro único. Dependendo do número de tipos de mídia aos quais o PIN dá suporte, você deve substituir um destes métodos:
+O método de parâmetro único retorna E \_ UNEXPECTED. O método de dois parâmetros verifica se o *parâmetro iPosition* é zero e, em seguida, chama a versão de parâmetro único. Dependendo do número de tipos de mídia aos quais o pino dá suporte, você deve substituir um destes métodos:
 
--   Se o PIN der suporte a exatamente um tipo de mídia, substitua a versão de parâmetro único. Preencha o tipo de mídia ao qual o PIN dá suporte.
--   Se o PIN der suporte a mais de um tipo de mídia, substitua a versão de dois parâmetros. Substitua também o método [**CSourceStream:: CheckMediaType**](csourcestream-checkmediatype.md) .
+-   Se o pin dá suporte a exatamente um tipo de mídia, substitua a versão de parâmetro único. Preencha o tipo de mídia ao qual o pino dá suporte.
+-   Se o pin for compatível com mais de um tipo de mídia, substitua a versão de dois parâmetros. Substitua também o [**método CSourceStream::CheckMediaType.**](csourcestream-checkmediatype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ O método de parâmetro único retorna E \_ inesperado. O método de dois parâm
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

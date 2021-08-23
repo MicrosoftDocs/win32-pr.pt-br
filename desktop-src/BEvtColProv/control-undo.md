@@ -1,5 +1,5 @@
 ---
-description: Restaure a configuração ativa do coletor a partir do arquivo de backup anterior (determinado voltando do carimbo de data/hora original atual).
+description: Restaure a configuração ativa do coletor do arquivo de backup anterior (determinado voltando do timestamp original atual).
 ms.assetid: 150fa554-9efd-483e-a177-5fc7766a6a6c
 ms.tgt_platform: multiple
 title: Método Undo da classe Control
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 285f1ec39ea52f6c388e324f72745d72f65207e6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e46649473da31fac09c65fcecaf44e91eba049c7ddce089d7f3c5ba9de2f8e19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589036"
 ---
 # <a name="undo-method-of-the-control-class"></a>Método Undo da classe Control
 
-Restaure a configuração ativa do coletor a partir do arquivo de backup anterior (determinado voltando do carimbo de data/hora original atual). Se a configuração tiver sido definida apenas, isso significa desfazer essa alteração. As chamadas consecutivas serão desfeitas para as configurações anteriores e anteriores. Retorna 1 em caso de êxito, 0 em erro.
+Restaure a configuração ativa do coletor do arquivo de backup anterior (determinado voltando do timestamp original atual). Se a configuração tiver sido definida, isso significa desfazer essa alteração. As chamadas consecutivas serão desfazer para as configurações anteriores e anteriores. Retorna 1 em caso de êxito, 0 em caso de erro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,73 +49,73 @@ Uint32 Undo(
 
 <dl> <dt>
 
-*OldTimestampLow* \[ no\]
+*OldTimestampLow* \[ Em\]
 </dt> <dd>
 
-O carimbo de data/hora de quando a configuração anterior foi definida. Se não for 0, habilita a verificação de atomicidade: a nova configuração será aplicada somente se o carimbo de data/hora da configuração antiga for correspondente (ou seja, a configuração não foi alterada entre elas). Essa é a parte inferior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O timestamp de quando a configuração anterior foi definida. Se não for 0, habilita a verificação de atomicidade: a nova configuração será aplicada somente se o timestamp da configuração antiga corresponde (ou seja, a configuração não foi alterada entre elas). Essa é a parte baixa de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OldTimestampHigh* \[ no\]
+*OldTimestampHigh* \[ Em\]
 </dt> <dd>
 
-O carimbo de data/hora de quando a configuração anterior foi definida. Se não for 0, habilita a verificação de atomicidade: a nova configuração será aplicada somente se o carimbo de data/hora da configuração antiga for correspondente (ou seja, a configuração não foi alterada entre elas). Essa é a parte superior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O timestamp de quando a configuração anterior foi definida. Se não for 0, habilita a verificação de atomicidade: a nova configuração será aplicada somente se o timestamp da configuração antiga corresponde (ou seja, a configuração não foi alterada entre elas). Essa é a parte alta do [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*NewTimestampLow* \[ fora\]
+*NewTimestampLow* \[ out\]
 </dt> <dd>
 
-O carimbo de data/hora de quando a nova configuração foi definida, se a chamada tiver êxito. Essa é a parte inferior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O timestamp de quando a nova configuração foi definida, se a chamada for bem-sucedida. Essa é a parte baixa de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*NewTimestampHigh* \[ fora\]
+*NewTimestampHigh* \[ out\]
 </dt> <dd>
 
-O carimbo de data/hora de quando a nova configuração foi definida, se a chamada tiver êxito. Essa é a parte superior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O timestamp de quando a nova configuração foi definida, se a chamada for bem-sucedida. Essa é a parte alta do [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OriginalTimestampLow* \[ fora\]
+*OriginalTimestampLow* \[ out\]
 </dt> <dd>
 
-O carimbo de data/hora original de quando a configuração restaurada foi definida pela primeira vez. Essa é a parte inferior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O data/hora original de quando a configuração restaurada foi definida pela primeira vez. Essa é a parte baixa de [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*OriginalTimestampHigh* \[ fora\]
+*OriginalTimestampHigh* \[ out\]
 </dt> <dd>
 
-O carimbo de data/hora original de quando a configuração restaurada foi definida pela primeira vez. Essa é a parte superior do [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime).
+O data/hora original de quando a configuração restaurada foi definida pela primeira vez. Essa é a parte alta do [**FILETIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)
 
 </dd> <dt>
 
-*Errostring* \[ fora\]
+*ErrorString* \[ out\]
 </dt> <dd>
 
-A cadeia de texto com a explicação do erro.
+A cadeia de caracteres de texto com explicação do erro.
 
 </dd> <dt>
 
-*Aviso de* \[ fora\]
+*WarningString* \[ out\]
 </dt> <dd>
 
-A cadeia de texto com avisos.
+A cadeia de caracteres de texto com avisos.
 
 </dd> <dt>
 
-*Infostring* \[ fora\]
+*InfoString* \[ out\]
 </dt> <dd>
 
-A cadeia de texto com informações sobre a configuração.
+A cadeia de caracteres de texto com informações sobre a configuração.
 
 </dd> <dt>
 
-*ErrorType* \[ fora\]
+*ErrorType* \[ out\]
 </dt> <dd>
 
-O tipo do erro: Observe que 0 ou ausente indica êxito.
+O tipo do erro: observe que 0 ou ausente indica êxito.
 
 <dt>
 
@@ -129,21 +129,21 @@ Sucesso.
 1
 </dt> <dd>
 
-formato de argumento inadequado
+formato de argumento ruim
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-valor de argumento inadequado
+valor do argumento ruim
 
 </dd> <dt>
 
 3
 </dt> <dd>
 
-erro ao abrir o recurso (soquete)
+erro de abertura de recurso (soquete)
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ erro de persistência (gravação de arquivo)
 5
 </dt> <dd>
 
-erro de atomicidade (o carimbo de data/hora antigo não corresponde)
+Erro de atomicidade (o antigo timestamp não foi corresponder)
 
 </dd> </dl> </dd> </dl>
 
@@ -189,10 +189,10 @@ Sucesso
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                       |
-| Namespace<br/>                | Raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Namespace<br/>                | Root \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 
@@ -201,7 +201,7 @@ Sucesso
 
 <dl> <dt>
 
-[**Controlo**](control.md)
+[**Control**](control.md)
 </dt> </dl>
 
  

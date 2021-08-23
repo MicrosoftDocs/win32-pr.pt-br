@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ntdll.dll
-ms.openlocfilehash: 05b9e076041d0cd2298799970670478e9d358d32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35c4001851cc12701152f983c51a800d8f1846e015f5cf4d967c6371d9807578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571356"
 ---
 # <a name="rtlgetunloadeventtraceex-function"></a>Função RtlGetUnloadEventTraceEx
 
@@ -41,24 +41,24 @@ VOID WINAPI RtlGetUnloadEventTraceEx(
 
 <dl> <dt>
 
-*Elementos de* \[ fora\]
+*ElementSize* \[ out\]
 </dt> <dd>
 
 Um ponteiro para uma variável que contém o tamanho de um elemento na lista.
 
 </dd> <dt>
 
-*ElementCount* \[ fora\]
+*ElementCount* \[ out\]
 </dt> <dd>
 
 Um ponteiro para uma variável que contém o número de elementos na lista.
 
 </dd> <dt>
 
-*EventTrace* \[ fora\]
+*EventTrace* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma matriz de estruturas de **\_ rastreamento de \_ eventos \_ de descarga DPE** . Para obter mais informações, consulte Comentários.
+Um ponteiro para uma matriz de estruturas **\_ RTL UNLOAD \_ EVENT \_ TRACE.** Para obter mais informações, consulte Comentários.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O carregador armazena informações de eventos descarregadas em locais que podem ser lidos entre processos aproveitando o fato de que Ntdll.dll é carregado no mesmo endereço base em todos os processos. Quando um depurador precisa consultar informações de módulo descarregadas, ele chama essa função para determinar o endereço no qual as variáveis residem e, em seguida, consulta a memória virtual no processo de destino nesses endereços para ler os valores reais.
+O carregador armazena informações de evento descarregadas em locais que podem ser lidos entre processos, aproveitando o fato de que Ntdll.dll é carregado no mesmo endereço base em todos os processos. Quando um depurador precisa consultar informações de módulo descarregado, ele chama essa função para determinar o endereço no qual residem as variáveis e, em seguida, consulta a memória virtual no processo de destino nesses endereços para ler os valores reais.
 
-Cada elemento na lista é definido da seguinte maneira.
+Cada elemento na lista é definido da seguinte forma.
 
 ``` syntax
 typedef struct _RTL_UNLOAD_EVENT_TRACE {
@@ -83,7 +83,7 @@ typedef struct _RTL_UNLOAD_EVENT_TRACE {
 } RTL_UNLOAD_EVENT_TRACE, *PRTL_UNLOAD_EVENT_TRACE;
 ```
 
-Esta função não tem nenhum arquivo de cabeçalho associado. A biblioteca de importação associada, ntdll. lib, está disponível no Windows Driver Kit (WDK). Você também pode chamar essa função usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhum arquivo de header associado. A biblioteca de importação associada, Ntdll.lib, está disponível no WDK (Kit Windows Driver). Você também pode chamar essa função usando as [**funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

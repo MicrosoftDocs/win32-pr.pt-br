@@ -1,7 +1,7 @@
 ---
-description: Classe Process_V1-essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
+description: Process_V1 classe - essa classe é a classe pai para eventos de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: e517cd2d-5870-4666-93e9-6870b2f4a447
-title: Classe Process_V1
+title: Process_V1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: cc0b72c476890cc81d083208a8ff3489e5609fda
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77369179f0210e00157ffad28c00d5f8a8710556131d482e692027c89c0d6282
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069976"
 ---
-# <a name="process_v1-class"></a>\_Classe Process v1
+# <a name="process_v1-class"></a>Classe \_ Process V1
 
 Essa classe é a classe pai para eventos de processo.
 
@@ -36,7 +36,7 @@ class Process_V1 : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **process \_ v1** não define nenhum membro.
+A **classe \_ Process V1** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,25 +44,25 @@ A classe **process \_ v1** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**MSNT \_ SystemTrace**](msnt-systemtrace.md)
+[**SystemTrace do MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
 [**Processar**](process.md)
 </dt> <dt>
 
-[**V0 de processo \_**](process-v0.md)
+[**Processo \_ V0**](process-v0.md)
 </dt> <dt>
 
-[**Processo \_ v1 \_ TypeGroup1**](process-v1-typegroup1.md)
+[**Processar \_ \_ TypeGroup1 V1**](process-v1-typegroup1.md)
 </dt> </dl>
 
  

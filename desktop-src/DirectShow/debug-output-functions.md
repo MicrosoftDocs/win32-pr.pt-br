@@ -4,16 +4,16 @@ ms.assetid: dfe44c8c-43ec-461f-952f-b87256b82ee6
 title: Funções de saída de depuração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87470b44717bb76c1a029bd885bb9149a4636b5d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 252e1020ca99bd5b4f2f46d7f2169fa6835dea83a25d599dba142f370bb794f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105750031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537736"
 ---
 # <a name="debug-output-functions"></a>Funções de saída de depuração
 
-As [classes base do DirectShow](directshow-base-classes.md) fornecem várias macros para exibir informações de depuração.
+as [Classes Base DirectShow](directshow-base-classes.md) fornecem várias macros para exibir informações de depuração.
 
 
 
@@ -39,23 +39,23 @@ As [classes base do DirectShow](directshow-base-classes.md) fornecem várias mac
 
 **Chaves do registro**
 
-A função Debug Output no DirectShow usa um conjunto de chaves do registro. O local dessas chaves do registro depende da versão do Windows.
+a função debug output no DirectShow usar um conjunto de chaves do registro. O local dessas chaves do registro depende da versão do Windows.
 
-*Antes do Windows Vista*, as chaves de depuração estão localizadas no seguinte caminho:
+*antes do Windows Vista*, as chaves de depuração estão localizadas no seguinte caminho:
 
 **HKEY \_ \_** Depuração de \\ **software** \\  de computador local
 
-No Windows Vista ou posterior, eles estão localizados no seguinte caminho:
+no Windows Vista ou posterior, eles estão localizados no seguinte caminho:
 
-**HKEY \_ \_Computador local** \\ **software** de \\  \\  \\ **depuração** do Microsoft DirectShow
+**HKEY \_ \_computador LOCAL** \\ **SOFTWARE** \\ **Microsoft** \\ **DirectShow** \\ **Debug**
 
-Para filtros de terceiros, o local depende de qual versão das [classes base do DirectShow](directshow-base-classes.md) foi usada para criar o filtro. A versão incluída no SDK do Windows para o Windows Vista usa o caminho mais recente. As versões anteriores usaram o caminho mais antigo.
+para filtros de terceiros, o local depende de qual versão do [DirectShow Classes Base](directshow-base-classes.md) foi usada para criar o filtro. a versão incluída no SDK do Windows para Windows Vista usa o caminho mais recente. As versões anteriores usaram o caminho mais antigo.
 
-Nos comentários a seguir, o rótulo *<DebugRoot>* é usado para indicar esses dois caminhos. Substitua o caminho correto, dependendo da versão do Windows ou da versão das classes base.
+Nos comentários a seguir, o rótulo *<DebugRoot>* é usado para indicar esses dois caminhos. substitua o caminho correto, dependendo da versão do Windows ou da versão das classes base.
 
 **Log de depuração**
 
-O DirectShow define vários tipos de mensagem, mostrados na tabela a seguir.
+DirectShow define vários tipos de mensagem, mostrados na tabela a seguir.
 
 
 
@@ -72,7 +72,7 @@ O DirectShow define vários tipos de mensagem, mostrados na tabela a seguir.
 
  
 
-Cada uma das funções de log de depuração do DirectShow especifica um tipo de mensagem e um nível de log. A mensagem de depuração é exibida somente quando o nível de depuração atual para esse tipo de mensagem é igual ou maior que o nível especificado na função de log. Caso contrário, a mensagem será ignorada.
+cada uma das DirectShow funções de log de depuração especifica um tipo de mensagem e um nível de log. A mensagem de depuração é exibida somente quando o nível de depuração atual para esse tipo de mensagem é igual ou maior que o nível especificado na função de log. Caso contrário, a mensagem será ignorada.
 
 Por exemplo, o código a seguir gera a cadeia de caracteres "esta é uma mensagem de depuração" se o nível de rastreamento de LOG \_ for 3 ou superior:
 
@@ -107,7 +107,7 @@ O local de saída de depuração é determinado por outra chave do registro:
 
 Se o valor dessa chave for `Console` , a saída vai para a janela do console. Se o valor for `Deb` , `Debug` , `Debugger` ou uma cadeia de caracteres vazia, a saída vai para a janela do depurador. Caso contrário, a saída será gravada em um arquivo especificado pela chave do registro.
 
-Antes que um executável use a biblioteca de depuração do DirectShow, ele deve chamar a função [**DbgInitialise**](dbginitialise.md) . Depois disso, ele deve chamar a função [**DbgTerminate**](dbgterminate.md) . As DLLs não precisam chamar essas funções, porque o ponto de entrada de DLL (definido na biblioteca de classes base) as chama automaticamente.
+antes que um executável use a biblioteca de depuração DirectShow, ele deve chamar a função [**DbgInitialise**](dbginitialise.md) . Depois disso, ele deve chamar a função [**DbgTerminate**](dbgterminate.md) . As DLLs não precisam chamar essas funções, porque o ponto de entrada de DLL (definido na biblioteca de classes base) as chama automaticamente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

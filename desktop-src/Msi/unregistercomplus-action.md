@@ -4,12 +4,12 @@ ms.assetid: bcedc436-a048-487e-9a84-e766da57a0b3
 title: Ação UnregisterComPlus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e32d39255229151757f7d6be0ada871f555f77e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc3ed5e8e4afd853294e7f5832662e9aaf1eb122d3573e7c384115c86d994588
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499846"
 ---
 # <a name="unregistercomplus-action"></a>Ação UnregisterComPlus
 
@@ -41,7 +41,7 @@ A [ação RegisterComPlus](registercomplus-action.md) deve seguir a [ação Inst
 [Tabela ComPlus](complus-table.md)
 </dt> <dt>
 
-[Instalando um aplicativo COM+ com o Windows Installer](installing-a-com--application-with-the-windows-installer.md)
+[instalando um aplicativo COM+ com o Windows Installer](installing-a-com--application-with-the-windows-installer.md)
 </dt> </dl>
 
  

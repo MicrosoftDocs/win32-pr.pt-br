@@ -1,7 +1,7 @@
 ---
-description: O método RequestStateChange da classe Msvm_DiskDrive-solicita uma alteração de estado.
+description: Método RequestStateChange da classe Msvm_DiskDrive - Solicita uma alteração de estado.
 ms.assetid: 9dfa96b1-19d4-42ea-b927-80b0d63a9be1
-title: Método RequestStateChange da classe Msvm_DiskDrive
+title: Método RequestStateChange da classe Msvm_DiskDrive classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ca2f9263d29a4412ab505e94268d0d18d28a60b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b6702fefd72a51f1e593f4b775bc4de5e93aed368468557b1f9f9b8edac7fdab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431046"
 ---
 # <a name="requeststatechange-method-of-the-msvm_diskdrive-class"></a>Método RequestStateChange da classe Msvm \_ DiskDrive
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*Requestedstate* \[ no\]
+*RequestedState* \[ Em\]
 </dt> <dd>
 
-O estado solicitado para o elemento. Essas informações serão colocadas na propriedade Requestedstate da instância se o código de retorno do método RequestStateChange for 0 (' concluído sem erro ') ou 4096 (0x1000) (' trabalho iniciado '). Consulte a descrição das propriedades Enabledstate e Requestedstate para obter as explicações detalhadas dos valores Requestedstate.
+O estado solicitado para o elemento. Essas informações serão colocadas na propriedade RequestedState da instância se o código de retorno do método RequestStateChange for 0 ('Completed with No Error') ou 4096 (0x1000) ('Job Started'). Consulte a descrição das propriedades EnabledState e RequestedState para ver as explicações detalhadas dos valores RequestedState.
 
 <dt>
 
@@ -85,14 +85,14 @@ O estado solicitado para o elemento. Essas informações serão colocadas na pro
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Defer** (8)
+**Adiar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-**Desativar** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -113,31 +113,31 @@ O estado solicitado para o elemento. Essas informações serão colocadas na pro
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (32768.. 65535)
+**Fornecedor Reservado** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Pode conter uma referência para o ConcreteJob criado para acompanhar a transição de estado iniciada pela invocação de método.
+Pode conter uma referência ao ConcreteJob criado para acompanhar a transição de estado iniciada pela invocação de método.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ no\]
+*TimeoutPeriod* \[ Em\]
 </dt> <dd>
 
-Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo Estado tenha. O formato do intervalo deve ser usado para especificar o TimeoutPeriod. Um valor 0 ou um parâmetro nulo indica que o cliente não tem requisitos de tempo para a transição.
+Um período de tempo limite que especifica a quantidade máxima de tempo que o cliente espera que a transição para o novo estado leve. O formato de intervalo deve ser usado para especificar o TimeoutPeriod. Um valor de 0 ou um parâmetro nulo indica que o cliente não tem requisitos de tempo para a transição.
 
-Se essa propriedade não contiver 0 ou NULL e a implementação não oferecer suporte a esse parâmetro, um código de retorno de ' uso do parâmetro de tempo limite não suportado ' será retornado.
+Se essa propriedade não contém 0 ou nulo e a implementação não dá suporte a esse parâmetro, um código de retorno de 'Uso do parâmetro de tempoout não suportado' deverá ser retornado.
 
 </dd> </dl>
 
@@ -161,13 +161,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

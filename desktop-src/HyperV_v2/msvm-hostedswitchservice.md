@@ -1,7 +1,7 @@
 ---
-description: Uma associação que conecta um serviço de comutador virtual a um serviço de ponte transparente.
+description: Uma associação que conecta um serviço com opção virtual a um serviço de ponte transparente.
 ms.assetid: 4DFD73CA-38F0-4C06-BEBE-C684590E50E8
-title: Classe Msvm_HostedSwitchService
+title: Msvm_HostedSwitchService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f0b7319dbe58649ac7abce2d36201f3984c1b807
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 634cff066c602cc4eb684bd7e1a016f9f9c925f19db25a0556fd37cc1e27c5f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531266"
 ---
-# <a name="msvm_hostedswitchservice-class"></a>\_Classe Msvm HostedSwitchService
+# <a name="msvm_hostedswitchservice-class"></a>Classe Msvm \_ HostedSwitchService
 
-Uma associação que conecta um serviço de comutador virtual a um serviço de ponte transparente.
+Uma associação que conecta um serviço com opção virtual a um serviço de ponte transparente.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ class Msvm_HostedSwitchService : CIM_HostedService
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ HostedSwitchService** tem estes tipos de membros:
+A **classe Msvm \_ HostedSwitchService** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ HostedSwitchService** tem essas propriedades.
+A **classe Msvm \_ HostedSwitchService** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md)**
@@ -60,32 +60,32 @@ Tipo de dados: **[ **Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Uma referência a uma instância da classe [**Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md) que representa o comutador virtual.
+Uma referência a uma instância da [**classe Msvm \_ VirtualEthernetSwitch**](msvm-virtualethernetswitch.md) que representa o comutadores virtuais.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **\_ serviço CIM**](/windows/desktop/CIMWin32Prov/cim-service)**
+Tipo de dados: **[ **Serviço CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Uma referência a uma instância da classe [**Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md) que representa o serviço de ponte.
+Uma referência a uma instância da [**classe Msvm \_ TransparentBridgingService**](msvm-transparentbridgingservice.md) que representa o serviço de ponte.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ HostedSwitchService** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe \_ HostedSwitchService do Msvm** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,10 +93,10 @@ O acesso à classe **Msvm \_ HostedSwitchService** pode ser restringido pela fil
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -105,10 +105,10 @@ O acesso à classe **Msvm \_ HostedSwitchService** pode ser restringido pela fil
 
 <dl> <dt>
 
-[**HostedService do CIM \_**](cim-hostedservice.md)
+[**CIM \_ HostedService**](cim-hostedservice.md)
 </dt> <dt>
 
-[**HostedService do CIM \_**](/windows/desktop/CIMWin32Prov/cim-hostedservice)
+[**CIM \_ HostedService**](/windows/desktop/CIMWin32Prov/cim-hostedservice)
 </dt> </dl>
 
  

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7c0607f16964feb358f9bb685b8cba55d3c6a4cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb01ce43762216a8f6afb6b863955f7e6b735f31fe98c7f4d7aaa5187f265ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475636"
 ---
 # <a name="jet_columncreatetostring-method"></a>JET_COLUMNCREATE. Método ToString
 
-Gere uma representação de cadeia de caracteres da instância.
+Gere uma representação de cadeia de caracteres da instância .
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 A estrutura como uma cadeia de caracteres.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_COLUMNCREATE](./jet-columncreate-class.md)
+[JET_COLUMNCREATE classe](./jet-columncreate-class.md)
 
-[Membros do JET_COLUMNCREATE](./jet-columncreate-members.md)
+[JET_COLUMNCREATE membros](./jet-columncreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

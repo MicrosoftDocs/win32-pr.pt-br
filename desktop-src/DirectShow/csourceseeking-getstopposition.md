@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d9f61ad26c32cfeec285874edfcc26038d57b117
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 870ddbf77d1a29a34703d4b43ee21d02b676e8fafac9ee688384246339465732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073320"
 ---
 # <a name="csourceseekinggetstopposition-method"></a>Método CSourceSeeking. GetStopPosition
 
@@ -49,7 +49,7 @@ Ponteiro para uma variável que recebe a hora de parada, em unidades do formato 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
@@ -57,7 +57,7 @@ Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
 | Código de retorno                                                                               | Descrição                       |
 |-------------------------------------------------------------------------------------------|-----------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Sucesso<br/>                |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Êxito<br/>                |
 | <dl> <dt>**\_ponteiro E**</dt> </dl> | Valor de ponteiro **nulo**<br/> |
 
 
@@ -74,7 +74,7 @@ A hora de parada é especificada pela variável de membro [**CSourceSeeking:: m 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

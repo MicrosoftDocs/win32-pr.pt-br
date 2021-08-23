@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 0d43bf37-863c-45cc-94ea-5b2aedba5353
-ms.openlocfilehash: 727e098a98ecfe4a4349ebcf9c6f931a8579b70d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: e309b274567ba8d7732e8db0a80bea3a001da34bd076d80c307736c4355672f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094161"
 ---
 # <a name="fm_getselcount-message"></a>\_Mensagem GETSELCOUNT de FM
 
@@ -34,7 +34,7 @@ Enviado por uma extensão do Gerenciador de arquivos para recuperar uma contagem
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de arquivos selecionados.
 

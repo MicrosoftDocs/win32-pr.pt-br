@@ -4,36 +4,36 @@ description: Acessando a biblioteca programaticamente
 ms.assetid: f48fbb49-5b79-4a78-af72-8509c460a149
 keywords:
 - Windows Media Player, biblioteca
-- Modelo de objeto do Windows Media Player, biblioteca
+- modelo de objeto Windows Media Player, biblioteca
 - modelo de objeto, biblioteca
-- Controle ActiveX do Windows Media Player, biblioteca para modelo de objeto
-- Controle ActiveX, biblioteca para modelo de objeto
-- Controle ActiveX móvel do Windows Media Player, biblioteca para modelo de objeto
-- Windows Media Player Mobile, biblioteca para modelo de objeto
-- Biblioteca do Windows Media Player, acessando programaticamente
+- controle de ActiveX de Windows Media Player, biblioteca para modelo de objeto
+- controle de ActiveX, biblioteca para modelo de objeto
+- Windows Media Player controle de ActiveX móvel, biblioteca para modelo de objeto
+- Windows Media Player Móvel, biblioteca para modelo de objeto
+- Windows Media Player biblioteca, acessando programaticamente
 - biblioteca, acessando
-- Acessando a biblioteca do Windows Media Player de forma programática
-- Biblioteca do Windows Media Player, adicionando itens de mídia
+- acessando Windows Media Player biblioteca programaticamente
+- biblioteca de Windows Media Player, adicionando itens de mídia
 - biblioteca, adicionando itens de mídia
-- Biblioteca do Windows Media Player, recuperando itens de mídia
+- Windows Media Player biblioteca, recuperando itens de mídia
 - biblioteca, recuperando itens de mídia
-- Biblioteca do Windows Media Player, removendo itens de mídia
+- biblioteca de Windows Media Player, removendo itens de mídia
 - biblioteca, removendo itens de mídia
-- Adicionando itens de mídia à biblioteca do Windows Media Player
-- Recuperando itens de mídia da biblioteca do Windows Media Player
-- removendo itens de mídia da biblioteca do Windows Media Player
+- adicionando itens de mídia à biblioteca Windows Media Player
+- recuperando itens de mídia da biblioteca Windows Media Player
+- removendo itens de mídia da biblioteca Windows Media Player
 - recuperando metadados
-- Biblioteca do Windows Media Player, Recuperando metadados de itens de mídia
+- Windows Media Player biblioteca, recuperando metadados de itens de mídia
 - biblioteca, Recuperando metadados de itens de mídia
 - metadados, recuperando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d40e03e91b2a67a24cb49b0ac1810ceb7b9544c9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6b575d1ed265d5c8e65beab9cc8e937b3639d8547867dacf473b2db21fe99198
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619426"
 ---
 # <a name="accessing-the-library-programmatically"></a>Acessando a biblioteca programaticamente
 
@@ -47,7 +47,7 @@ Adicionar conteúdo de mídia digital à biblioteca é simples. Basta chamar o m
 
 ## <a name="retrieving-media-items-from-the-library"></a>Recuperando itens de mídia da biblioteca
 
-Quando você recupera itens de mídia da biblioteca, o que você realmente recupera é uma lista de reprodução. Mesmo que você espere recuperar apenas um item de mídia, obterá um objeto de **playlist** contendo um único item, que será associado ao índice zero. Por exemplo, se você quiser recuperar um objeto de **mídia** que representa a música denominada "Jeanne", poderá usar o seguinte código JScript:
+Quando você recupera itens de mídia da biblioteca, o que você realmente recupera é uma lista de reprodução. Mesmo que você espere recuperar apenas um item de mídia, obterá um objeto de **playlist** contendo um único item, que será associado ao índice zero. por exemplo, se você quiser recuperar um objeto de **mídia** que representa a música denominada "Jeanne", poderá usar o seguinte código de JScript:
 
 
 ```C++
@@ -73,7 +73,7 @@ Para obter mais informações sobre como recuperar itens de mídia de listas de 
 
 ## <a name="retrieving-metadata-from-a-media-item"></a>Recuperando metadados de um item de mídia
 
-Depois de recuperar um objeto de **mídia** , você pode ler os valores de atributo associados ao conteúdo. No caso mais simples, você pode simplesmente querer saber um único valor, como o nome do artista que realizou uma faixa de música. O exemplo de JScript a seguir mostra como usar o método [Media. getItemInfo](media-getiteminfo.md) para recuperar o nome do artista da mídia recuperada no exemplo anterior:
+Depois de recuperar um objeto de **mídia** , você pode ler os valores de atributo associados ao conteúdo. No caso mais simples, você pode simplesmente querer saber um único valor, como o nome do artista que realizou uma faixa de música. o exemplo a seguir JScript mostra como usar o método [Media. getItemInfo](media-getiteminfo.md) para recuperar o nome do artista da mídia recuperada no exemplo anterior:
 
 
 ```C++
@@ -88,7 +88,7 @@ Um item de mídia pode ter muitos atributos diferentes, e trabalhar com metadado
 
 ## <a name="removing-media-items-from-the-library"></a>Removendo itens de mídia da biblioteca
 
-A remoção do conteúdo de mídia digital da biblioteca também é simples. Basta chamar **mediacollection. Remove**, fornecendo o objeto de **mídia** que representa o item como o primeiro argumento e o valor **true** como o segundo. O exemplo de JScript a seguir remove o arquivo chamado Jeanne (recuperado no exemplo anterior) da biblioteca:
+A remoção do conteúdo de mídia digital da biblioteca também é simples. Basta chamar **mediacollection. Remove**, fornecendo o objeto de **mídia** que representa o item como o primeiro argumento e o valor **true** como o segundo. o exemplo a seguir JScript remove o arquivo chamado Jeanne (recuperado no exemplo anterior) da biblioteca:
 
 
 ```C++
@@ -115,9 +115,9 @@ playst.mediaCollection.remove(media, true);
 [**Trabalhando com a biblioteca**](working-with-the-library.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

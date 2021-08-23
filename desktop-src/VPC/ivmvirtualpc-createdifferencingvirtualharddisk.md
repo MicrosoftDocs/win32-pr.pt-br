@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2bab178d64008b236988bfb723bd75a09a7edaa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b065d7b1d7a5f5f21aa0120b58d4ca2dc9177d0a48f6b2389365ee37811883c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105770580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119394416"
 ---
 # <a name="ivmvirtualpccreatedifferencingvirtualharddisk-method"></a>Método IVMVirtualPC:: CreateDifferencingVirtualHardDisk
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Cria um disco rígido virtual diferencial.
 
@@ -67,7 +67,7 @@ Um objeto [**IVMTask**](ivmtask.md) que é usado para acompanhar a criação da 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -105,11 +105,11 @@ Embora o *imagePath* ou o *ParentPath* possa ser um caminho relativo, pelo menos
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualPC é definido como 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 

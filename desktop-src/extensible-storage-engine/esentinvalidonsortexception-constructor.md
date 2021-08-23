@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee2d98dd135348bf990e725cfc94920ada740f81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8267deaa4d13b3768690a73f24bd13b0b2b9ccb7c2152039ec1493f1511829de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041034"
 ---
 # <a name="esentinvalidonsortexception-constructor"></a>Construtor EsentInvalidOnSortException
 
 Inicializa uma nova instância da classe EsentInvalidOnSortException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidOnSortException()
 
 [Classe EsentInvalidOnSortException](./esentinvalidonsortexception-class.md)
 
-[Membros do EsentInvalidOnSortException](./esentinvalidonsortexception-members.md)
+[Membros EsentInvalidOnSortException](./esentinvalidonsortexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

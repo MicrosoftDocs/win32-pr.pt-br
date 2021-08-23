@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78197c0f79c6bbe21ae4eb883620b95e6f0bd4c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d3e9575995d80a4c61b5e91be7c5cfc1c802abed892af8cfa653f62c66e602b3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430966"
 ---
 # <a name="n-switch"></a>opção/n
 
@@ -58,18 +58,18 @@ Aqui estão os formatos de valor possíveis que você pode especificar com a op�
 A tabela a seguir mostra os resultados de diferentes combinações da opção **/n** trabalhando nesses namespaces.
 
 -   Windows. Foundation. Collections. IIterable
--   Windows. UI. DirectUI. Controls. Button
--   Windows. UI. DirectUI. Controls. ListView
--   Windows. UI. imersão. Application. Playto. Target
+-   Windows. Conectável. DirectUI. Controls. Button
+-   Windows. Conectável. DirectUI. Controls. ListView
+-   Windows. Conectável. Envolvendo. de aplicativo. Playto. destino
 -   Windows. Web. Syndication. RSS
 
 
 
-| Comutadores                         | Resultado                                                                                                                                                                                                                                                       | Explicação                                                                                                                                                                                                                                                                                                                        |
+| Opções                         | Result                                                                                                                                                                                                                                                       | Explicação                                                                                                                                                                                                                                                                                                                        |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **/n:-1**  / **n:1**               | Windows.winmd                                                                                                                                                                                                                                                | A última opção/n substitui todas as opções-n anteriores.                                                                                                                                                                                                                                                                           |
-| **/n:-1/n: Windows. UI: 2**         | <dl> Windows <dt>. Foundation. winmd</dt> <dt>Windows. UI. Winmd</dt> <dt>Windows. Web. Syndication. winmd</dt> </dl> | <dl> <dt>O **Windows. Foundation** é sempre composto em – n:2.</dt> <dt>Os tipos **Windows. UI** são agrupados.</dt> <dt>O **Windows. Web. Syndication** é composto em n:-1.</dt> </dl>       |
-| **/n: 1/n: Windows. UI. DirectUI: 3** | <dl> Windows <dt>. Foundation. winmd</dt> <dt>Windows. UI. DirectUI. winmd</dt> <dt>Windows. winmd</dt> </dl>       | <dl> <dt>O **Windows. Foundation** é sempre composto em – n:2.</dt> <dt>**Windows. UI. DirectUI** é composto no nível 3.</dt> <dt>Todos os outros tipos são compostos no nível 1.</dt> </dl> |
+| **/n:-1/n: Windows. INTERFACE DO USUÁRIO: 2**         | <dl> <dt>Windows. Windows Foundation. winmd</dt> <dt>. Windows UI. winmd</dt> <dt>. Web. Syndication. winmd</dt> </dl> | <dl> <dt>**Windows. A base** é sempre composta em – n:2.</dt> <dt>**Windows. Os tipos de interface do usuário** são agrupados.</dt> <dt>**Windows. Web. Syndication** é composto em n:-1.</dt> </dl>       |
+| **/n: 1/n: Windows. Conectável. DirectUI: 3** | <dl> <dt>Windows. Windows Foundation. winmd</dt> <dt>. Conectável. DirectUI. winmd</dt> <dt>Windows. winmd</dt> </dl>       | <dl> <dt>**Windows. A base** é sempre composta em – n:2.</dt> <dt>**Windows. Conectável. DirectUI** é composto no nível 3.</dt> <dt>Todos os outros tipos são compostos no nível 1.</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Aqui estão as regras para lidar com várias instâncias da opção **/n** .
 
 ## <a name="examples"></a>Exemplos
 
-**mdmerge.exe-metadados \_ dir $ (caminho de metadados do SDK \_ \_ )-i $ ( \_ caminho de metadados do SDK interno \_ \_ )-o $ (caminho do obj \_ ) \\ $O \\ SystemMetadata-v-n:-1-n:Windows.Foundation: 2**
+**mdmerge.exe-metadados \_ dir $ (caminho de metadados do SDK \_ \_ )-i $ ( \_ caminho de metadados do SDK interno \_ \_ )-o $ (caminho do obj \_ ) \\ $O \\ SystemMetadata-v-n:-1-n: Windows. Fundação: 2**
 
 ## <a name="requirements"></a>Requisitos
 

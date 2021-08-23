@@ -1,7 +1,7 @@
 ---
-description: A \_ classe de CPU HWConfig é a classe de tipo de evento para eventos de configuração de CPU. A sintaxe a seguir é simplificada do código MOF.
+description: A classe de CPU HWConfig \_ é a classe de tipo de evento para eventos de configuração de CPU. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: a94714c6-009c-4300-a0a0-b7b3ce94f91e
-title: Classe HWConfig_CPU
+title: HWConfig_CPU classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 493952e25080d4a64e018477ca1b45033c8747af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9987095c8c2a1e9b9abbb54eb66816277428e2296c98395d36340297cc541bfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070186"
 ---
-# <a name="hwconfig_cpu-class"></a>\_Classe de CPU HWConfig
+# <a name="hwconfig_cpu-class"></a>Classe de CPU HWConfig \_
 
-A classe de **\_ CPU HWConfig** é a classe de tipo de evento para eventos de configuração de CPU.
+A **classe de \_ CPU HWConfig** é a classe de tipo de evento para eventos de configuração de CPU.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -48,26 +48,26 @@ class HWConfig_CPU : HWConfig
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ CPU HWConfig** tem estes tipos de membros:
+A **classe de \_ CPU HWConfig** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ CPU HWConfig** tem essas propriedades.
+A **classe de \_ CPU HWConfig** tem essas propriedades.
 
 <dl> <dt>
 
 AllocationGranularity
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5)
+Qualificadores: WmiDataId(5)
 </dt> </dl>
 
 Granularidade com a qual a memória virtual é alocada.
@@ -83,7 +83,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(6), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
 Nome do computador.
@@ -93,29 +93,29 @@ Nome do computador.
 MemSize
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
 Quantidade total de memória física disponível para o sistema operacional.
 
 </dd> <dt>
 
-GHz
+Mhz
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1)
+Qualificadores: WmiDataId(1)
 </dt> </dl>
 
 Velocidade máxima do processador, em megahertz.
@@ -125,13 +125,13 @@ Velocidade máxima do processador, em megahertz.
 NumberOfProcessors
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
 Número de processadores no computador.
@@ -141,13 +141,13 @@ Número de processadores no computador.
 PageSize
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
 Tamanho de uma página de permuta, em bytes.
@@ -160,7 +160,7 @@ Tamanho de uma página de permuta, em bytes.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 

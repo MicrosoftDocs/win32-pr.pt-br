@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_SessionBrokerFarm
-description: Define a consulta para um farm de agente de sessão.
+title: Win32_SessionBrokerFarm classe
+description: Define a consulta para um farm do agente de sessão.
 ms.assetid: 55a2a7ea-e891-4723-b919-ee3c908eaffb
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_SessionBrokerFarm Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_SessionBrokerFarm classe, descrita
+- Win32_SessionBrokerFarm classe Serviços de Área de Trabalho Remota
+- Win32_SessionBrokerFarm classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e6a3ccbb5e1e08a036fb9973d552db73ee1607c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab65d00cd4be793556929d3049db549ad8ab9729d1e2e2752e550c3e2cf357d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119422506"
 ---
-# <a name="win32_sessionbrokerfarm-class"></a>\_Classe Win32 SessionBrokerFarm
+# <a name="win32_sessionbrokerfarm-class"></a>Classe SessionBrokerFarm do Win32 \_
 
-Define a consulta para um farm de agente de sessão.
+Define a consulta para um farm do agente de sessão.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -44,17 +44,17 @@ class Win32_SessionBrokerFarm
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SessionBrokerFarm** tem estes tipos de membros:
+A **classe \_ SessionBrokerFarm do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SessionBrokerFarm** tem essas propriedades.
+A **classe \_ SessionBrokerFarm do Win32** tem essas propriedades.
 
 <dl> <dt>
 
-**Farmname**
+**FarmName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -66,7 +66,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-O nome do farm de agente de sessão que precisa ser consultado.
+O nome do farm do agente de sessão que precisa ser consultado.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ O nome do plug-in.
 
 ## <a name="examples"></a>Exemplos
 
-A cadeia de caracteres de consulta a seguir demonstra como a classe **\_ SessionBrokerFarm do Win32** é usada em uma consulta.
+A cadeia de caracteres de consulta a seguir demonstra como a **classe \_ SessionBrokerFarm do Win32** é usada em uma consulta.
 
 
 ```CSharp
@@ -105,8 +105,8 @@ queryString = string.Format("SELECT * FROM Win32_SessionBrokerFarm WHERE PluginN
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 

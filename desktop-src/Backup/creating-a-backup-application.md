@@ -8,12 +8,12 @@ keywords:
 - Backup de backup, criando aplicativos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77409a0c74ee61e333b92dad8b22d9c68ed92eba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3086e51bce928b682d3e61518de29118abdc48461a77f79e48a4a4cb4b0f2c3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529476"
 ---
 # <a name="creating-a-backup-application"></a>Criando um aplicativo de backup
 
@@ -42,6 +42,6 @@ Ao restaurar arquivos de fita para disco, um aplicativo deve usar as funções [
 
 Se um dos fluxos no buffer [**BackupWrite**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) tiver um identificador de fluxo de **\_ link de backup** , o aplicativo deverá estabelecer um vínculo físico. Se os dados necessários para estabelecer o link não existirem, o **BackupWrite** falhará. O aplicativo pode usar um catálogo pré-existente para localizar e restaurar os dados originais, ou pode notificar o usuário de que os dados de arquivo a serem restaurados estão em um local diferente.
 
- 
+ 
 
- 
+ 

@@ -4,32 +4,32 @@ description: Mostra como criar um pincel de bitmap usando Direct2D.
 ms.assetid: 8f78b30a-7507-4dd8-b6f4-12d88e3c9a1d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd8f28735368916d1abd0c1c9aa091dec4fd93f4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d274d359b8ad8298a4e45d01014a6e9b19aa58c4b81725c5d8c41ac931e24eec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105779566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569287"
 ---
 # <a name="how-to-create-a-bitmap-brush"></a>Como criar um pincel de bitmap
 
-Para criar um pincel de bitmap, use o método [**ID2D1RenderTarget:: CreateBitmapBrush**](id2d1rendertarget-createbitmapbrush.md) e especifique as propriedades do pincel de bitmap. Algumas sobrecargas permitem que você especifique as propriedades do pincel. O código a seguir mostra como criar um pincel de bitmap para preencher um quadrado e um pincel preto sólido para desenhar o contorno do quadrado. O código produz a saída mostrada na captura de tela a seguir.
+Para criar um pincel de bitmap, use o método [**ID2D1RenderTarget::CreateBitmapBrush**](id2d1rendertarget-createbitmapbrush.md) e especifique as propriedades do pincel de bitmap. Algumas sobrecargas permitem que você especifique as propriedades do pincel. O código a seguir mostra como criar um pincel de bitmap para preencher um quadrado e um pincel preto sólido para desenhar o contorno do quadrado. O código produz a saída mostrada na captura de tela a seguir.
 
 > [!Note]  
-> A partir do Windows 8, você pode usar o método [**CreateBitmapBrush**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties1_constd2d1_brush_properties_id2d1bitmapbrush1)) na interface [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para criar um [**ID2D1BitmapBrush1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1bitmapbrush1) em vez de um **ID2D1BitmapBrush**. **ID2D1BitmapBrush1** adiciona modos de dimensionamento de alta qualidade ao pincel de bitmap.
+> Começando com Windows 8, você pode usar o método [**CreateBitmapBrush**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapbrush(id2d1bitmap_constd2d1_bitmap_brush_properties1_constd2d1_brush_properties_id2d1bitmapbrush1)) na interface [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) para criar um [**ID2D1BitmapBrush1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1bitmapbrush1) em vez de **um ID2D1BitmapBrush**. **ID2D1BitmapBrush1** adiciona modos de dimensionamento de alta qualidade ao pincel de bitmap.
 
- 
+ 
 
 ![captura de tela de um quadrado preenchido com um bitmap de fábrica](images/brushes-ovw-bitmap.png)
 
-1.  Declare uma variável do tipo [**ID2D1BitmapBrush**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush).
+1.  Declare uma variável do tipo [**ID2D1BitmapBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmapbrush)
     ```C++
         ID2D1BitmapBrush *m_pBitmapBrush;
     ```
 
     
 
-2.  Carregar um bitmap de um recurso. Para obter mais informações, consulte [como carregar um bitmap de um recurso](how-to-load-a-bitmap-from-a-resource.md).
+2.  Carregar um bitmap de um recurso. Para obter mais informações, [consulte How to Load a Bitmap from a Resource](how-to-load-a-bitmap-from-a-resource.md).
     ```C++
     // Create the bitmap to be used by the bitmap brush.
     if (SUCCEEDED(hr))
@@ -45,7 +45,7 @@ Para criar um pincel de bitmap, use o método [**ID2D1RenderTarget:: CreateBitma
 
     
 
-3.  Escolha os modos de extensão [**( \_ \_ modo de extensão de d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode)) e modo de interpolação ([**\_ \_ \_ modo de interpolação de bitmap d2d1**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_bitmap_interpolation_mode)) do pincel de bitmap e, em seguida, chame o método [**CreateBitmapBrush**](id2d1rendertarget-createbitmapbrush.md) para criar um pincel, conforme mostrado no código a seguir.
+3.  Escolha os modos de extensão ([**D2D1 \_ EXTEND \_ MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_extend_mode)) e o modo de interpolação ([**D2D1 \_ BITMAP \_ INTERPOLATION \_ MODE**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_bitmap_interpolation_mode)) do pincel de bitmap e, em seguida, chame o [**método CreateBitmapBrush**](id2d1rendertarget-createbitmapbrush.md) para criar um pincel, conforme mostrado no código a seguir.
     ```C++
     hr = m_pRenderTarget->CreateBitmapBrush(
         m_pBitmap,
@@ -59,9 +59,9 @@ Para criar um pincel de bitmap, use o método [**ID2D1RenderTarget:: CreateBitma
 
 <dl> <dt>
 
-[Referência de Direct2D](reference.md)
+[Direct2D Referência](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

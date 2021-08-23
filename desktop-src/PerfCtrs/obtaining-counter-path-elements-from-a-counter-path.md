@@ -4,12 +4,12 @@ ms.assetid: 65c722f9-6f9d-4e3d-abf3-867cf260ef9f
 title: Obtendo elementos do caminho do contador a partir de um caminho do contador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08b8579033ddf7a97aec36b88bd067f9a240506d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 479c8df5c7176684fc439f632a22f829afe5afae202f7595579350450ee30c8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143969"
 ---
 # <a name="obtaining-counter-path-elements-from-a-counter-path"></a>Obtendo elementos do caminho do contador a partir de um caminho do contador
 

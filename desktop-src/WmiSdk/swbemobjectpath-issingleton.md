@@ -1,8 +1,8 @@
 ---
-description: A Propriedade IsSingleton do objeto SWbemObjectPath é um valor booliano que indica se esse caminho representa uma instância singleton. Uma instância singleton é uma instância de uma classe que nunca pode ter mais de uma instância. Esta propriedade é somente para leitura.
+description: A propriedade IsSinglean do objeto SWbemObjectPath é um valor booliana que indica se esse caminho representa uma instância singleton. Uma instância singleton é uma instância de uma classe que nunca pode ter mais de uma instância. Esta propriedade é somente para leitura.
 ms.assetid: 0d0533be-89fe-4ab6-bafa-2da6195ff02c
 ms.tgt_platform: multiple
-title: Propriedade SWbemObjectPath. IsSingleton (Wbemdisp. h)
+title: Propriedade SWbemObjectPath.IsSingbject (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4bd267c3d8ad36459a04b835cb2f130c3e98420a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1563e5d35c77974c056518bd602d1db7e2181e29dfa9d83301ff919635d1d24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119568396"
 ---
-# <a name="swbemobjectpathissingleton-property"></a>Propriedade SWbemObjectPath. IsSingleton
+# <a name="swbemobjectpathissingleton-property"></a>Propriedade SWbemObjectPath.IsSingbject
 
-A propriedade **IsSingleton** do objeto [**SWbemObjectPath**](swbemobjectpath.md) é um valor booliano que indica se esse caminho representa uma instância singleton. Uma instância singleton é uma instância de uma classe que nunca pode ter mais de uma instância. Esta propriedade é somente para leitura.
+A **propriedade IsSinglean** do objeto [**SWbemObjectPath**](swbemobjectpath.md) é um valor booliana que indica se esse caminho representa uma instância singleton. Uma instância singleton é uma instância de uma classe que nunca pode ter mais de uma instância. Esta propriedade é somente para leitura.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 Esta propriedade é somente para leitura.
 
@@ -50,11 +50,11 @@ SWbemObjectPath.IsSingleton As Boolean
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | ISWbemObjectPath de IID \_<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

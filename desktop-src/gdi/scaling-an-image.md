@@ -4,37 +4,37 @@ ms.assetid: ab7d5224-62de-40a8-909f-564f61c45d01
 title: Dimensionando uma imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ce5d1584c905bbf46f10e29e512af95ddbc55c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7445c64bcf7ca4332612de0689e9ebeb55850372a5be2b4fb19c1593bbf339
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119613736"
 ---
 # <a name="scaling-an-image"></a>Dimensionando uma imagem
 
 Alguns aplicativos dimensionam imagens; ou seja, eles exibem exibições ampliadas ou reduzidas de uma imagem. Por exemplo, um aplicativo de desenho pode fornecer um recurso de zoom que permite ao usuário exibir e editar um desenho em uma base pixel a pixel.
 
-Os aplicativos dimensionam imagens chamando a função [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) . Assim como a função [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) , o **StretchBlt** copia dados de bitmap de um bitmap em um [**DC**](/windows/desktop/api/Winuser/nf-winuser-getdcex)(contexto de dispositivo de origem) para um bitmap em um DC de destino. No entanto, ao contrário da função **BitBlt** , o **StretchBlt** dimensiona a imagem com base nas dimensões especificadas dos retângulos de origem e de destino. Se o retângulo de origem for maior que o retângulo de destino, a imagem resultante será reduzida; Se o retângulo de origem for menor do que o retângulo de destino, a imagem resultante parecerá expandida.
+Os aplicativos dimensionam imagens chamando a [**função StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) Como a [**função BitBlt,**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) **o StretchBlt** copia dados de bitmap de um bitmap em um [**DC**](/windows/desktop/api/Winuser/nf-winuser-getdcex)(contexto de dispositivo de origem) em um bitmap em um DC de destino. No entanto, ao contrário da **função BitBlt,** **o StretchBlt** dimensiona a imagem com base nas dimensões especificadas dos retângulos de origem e de destino. Se o retângulo de origem for maior que o retângulo de destino, a imagem resultante parece terá sido reduzida; se o retângulo de origem for menor que o retângulo de destino, a imagem resultante parece que foi expandida.
 
-Se o retângulo de destino for menor do que o retângulo de origem, [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) removerá os dados de cor da imagem de acordo com um modo de ampliação especificado, conforme mostrado na tabela a seguir.
+Se o retângulo de destino for menor que o retângulo de origem, [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) removerá dados de cor da imagem de acordo com um modo de alongamento especificado, conforme mostrado na tabela a seguir.
 
 
 
-| Modo de ampliação | Método                                                                                                                    |
+| Modo de alongamento | Método                                                                                                                    |
 |--------------|---------------------------------------------------------------------------------------------------------------------------|
-| BLACKONWHITE | Executa uma operação AND lógica nos dados de cor para os pixels eliminados e os dados de cor dos pixels restantes. |
-| WHITEONBLACK | Executa uma operação OR lógica nos dados de cor para os pixels eliminados e os dados de cor dos pixels restantes.  |
+| BLACKONWHITE | Executa uma operação AND lógica nos dados de cor para os pixels eliminados e os dados de cor para os pixels restantes. |
+| Whiteonblack | Executa uma operação OR lógica nos dados de cor para os pixels eliminados e os dados de cor para os pixels restantes.  |
 | COLORONCOLOR | Elimina completamente os dados de cor dos pixels excluídos.                                                               |
-| PROJE     | Aproxima os dados de cor originais (origem) no destino.                                                         |
+| Halftone     | Aproxima os dados de cor originais (origem) no destino.                                                         |
 
 
 
  
 
-Você define o modo de ampliação chamando a função [**SetStretchBltMode**](/windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode) .
+Você pode definir o modo de alongamento chamando a [**função SetStretchBltMode.**](/windows/desktop/api/Wingdi/nf-wingdi-setstretchbltmode)
 
-O código de exemplo a seguir é obtido de um aplicativo que demonstra todos os quatro modos de ampliação disponíveis com a função [**StretchBlt**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt) .
+O código de exemplo a seguir é retirado de um aplicativo que demonstra todos os quatro modos de alongamento disponíveis com a [**função StretchBlt.**](/windows/desktop/api/Wingdi/nf-wingdi-stretchblt)
 
 
 ```C++

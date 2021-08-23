@@ -1,11 +1,11 @@
 ---
-title: Método getsincronizalist do IWMDRMDevice
-description: O método getsincronizarlist recupera a lista de sincronização de licenças no dispositivo. A sincronização de licenças permite que o computador host transfira licenças atualizadas para um dispositivo de acordo com os critérios especificados.
+title: Método GetSyncList de IWMDRMDevice
+description: O método GetSyncList recupera a lista de sincronização de licenças no dispositivo. A sincronização de licenças permite que o computador host transfira licenças atualizadas para um dispositivo de acordo com os critérios especificados.
 ms.assetid: 772ac03b-3339-4c5f-a8fc-1c216ec665b7
 keywords:
-- Método getsincronizarlist Windows Media Gerenciador de Dispositivos
-- Método getsincronizarlist Windows Media Gerenciador de Dispositivos, interface IWMDRMDevice
-- Interface IWMDRMDevice Windows Media Gerenciador de Dispositivos, método getsincronizarlist
+- Janelas de mídia do método GetSyncList Gerenciador de Dispositivos
+- Método GetSyncList windows Media Gerenciador de Dispositivos , interface IWMDRMDevice
+- Interface IWMDRMDevice windows Media Gerenciador de Dispositivos , método GetSyncList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 381d410bd938cb90855b182e62354d48e72f16d0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6424daa720f9987228175a7698a29f7056e5d4b4d174d1d635bbcd1ed7f8382
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619576"
 ---
-# <a name="iwmdrmdevicegetsynclist-method"></a>Método IWMDRMDevice:: getsynclist
+# <a name="iwmdrmdevicegetsynclist-method"></a>Método IWMDRMDevice::GetSyncList
 
-O método **Getsincronizarlist** recupera a lista de sincronização de licenças no dispositivo. A sincronização de licenças permite que o computador host transfira licenças atualizadas para um dispositivo de acordo com os critérios especificados.
+O **método GetSyncList** recupera a lista de sincronização de licenças no dispositivo. A sincronização de licenças permite que o computador host transfira licenças atualizadas para um dispositivo de acordo com os critérios especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,37 +46,37 @@ HRESULT GetSyncList(
 
 <dl> <dt>
 
-*cMinCountThreshold* \[ no\]
+*cMinCountThreshold* \[ Em\]
 </dt> <dd>
 
-Limite de contagem mínima.
+Limite mínimo de contagem.
 
 </dd> <dt>
 
-*cMinHoursThreshold* \[ no\]
+*cMinHoursThreshold* \[ Em\]
 </dt> <dd>
 
 Limite mínimo de horas.
 
 </dd> <dt>
 
-*ppbSyncList* \[ fora\]
+*ppbSyncList* \[ out\]
 </dt> <dd>
 
-Lista de sincronização de licenças recuperada.
+Lista de sincronização de licença recuperada.
 
 </dd> <dt>
 
-*pcbSyncList* \[ fora\]
+*pcbSyncList* \[ out\]
 </dt> <dd>
 
 Tamanho da lista de sincronização de licenças, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -94,8 +94,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -103,7 +103,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 <dl> <dt>
 
-[**Interface IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice Interface**](iwmdrmdevice.md)
 </dt> </dl>
 
  

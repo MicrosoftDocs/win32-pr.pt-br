@@ -1,7 +1,7 @@
 ---
 description: Obtém ou define o atalho de teclado para o link.
 ms.assetid: edc65fe8-c7f3-46d0-86ca-1c0c93e7ca64
-title: Propriedade ShellLinkObject. tecla de atalho (shldisp. h)
+title: Propriedade ShellLinkObject.Hotkey (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 23ab8615421eee7289e5f0bb58582bf8e0d48f17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b741b40d0947119109d3496a214ccdd75c59272fd7c5f4d0eac569a5b24c3a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591896"
 ---
-# <a name="shelllinkobjecthotkey-property"></a>Propriedade ShellLinkObject. tecla de atalho
+# <a name="shelllinkobjecthotkey-property"></a>Propriedade ShellLinkObject.Hotkey
 
 Obtém ou define o atalho de teclado para o link.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,7 +38,7 @@ ShellLinkObject.Hotkey(iHotkey) = iHotkey
 
 ## <a name="property-value"></a>Valor da propriedade
 
-o atalho de teclado do link. O atalho de teclado virtual está no byte de ordem inferior e os sinalizadores de modificador estão no byte de ordem superior. Os sinalizadores de modificadores podem ser uma combinação dos valores a seguir.
+o atalho de teclado do link. O atalho de teclado virtual está no byte de ordem baixa e os sinalizadores modificador estão no byte de ordem alta. Os sinalizadores modificador podem ser uma combinação dos valores a seguir.
 
 <dt>
 
@@ -88,9 +88,9 @@ Chave estendida
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado dessa propriedade em JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra o uso adequado dessa propriedade em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -131,7 +131,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -220,11 +220,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

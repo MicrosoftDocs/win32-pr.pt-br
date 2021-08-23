@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Classes do sistema operacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f47df8a949e3ac07bf2099ea708d496bed87298
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cc5cbb168b2a322b5ceae8a2bd73985d14a74b4f1df227fd3e6cce384c554742
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588286"
 ---
 # <a name="operating-system-classes"></a>Classes do sistema operacional
 
@@ -20,7 +20,7 @@ A categoria do sistema operacional é agrupada nas seguintes subcategorias:
 
 -   [INTERFACES](#com)
 -   [Área de trabalho](#desktop)
--   [Seus](#drivers)
+-   [Drivers](#drivers)
 -   [Log de eventos](#windows-event-log)
 -   [Sistema de Arquivos](#file-system)
 -   [Objetos de trabalho](#job-objects)
@@ -35,10 +35,10 @@ A categoria do sistema operacional é agrupada nas seguintes subcategorias:
 -   [Segurança](#security)
 -   [Serviços](#services)
 -   [Compartilhamentos](#shares)
--   [Menu Iniciar](#start-menu)
+-   [menu Iniciar](#start-menu)
 -   [Storage](#storage)
 -   [Usuários](#users)
--   [Ativação do produto Windows](#windows-product-activation)
+-   [ativação do produto Windows](#windows-product-activation)
 
 ## <a name="com"></a>COM
 
@@ -70,7 +70,7 @@ A subcategoria do COM agrupa classes que representam configurações de COM e DC
 
  
 
-## <a name="desktop"></a>Área de trabalho
+## <a name="desktop"></a>Desktop
 
 A subcategoria da área de trabalho agrupa classes que representam objetos que definem uma configuração de área de trabalho específica.
 
@@ -79,8 +79,8 @@ A subcategoria da área de trabalho agrupa classes que representam objetos que d
 | Classe                                           | Descrição                                                                                                                        |
 |-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_Área de trabalho Win32**](win32-desktop.md)         | Classe de instância<br/> Representa as características comuns da área de trabalho de um usuário.<br/>                                    |
-| [**\_Ambiente Win32**](win32-environment.md) | Classe de instância<br/> Representa uma configuração de ambiente do sistema ou ambiente em um sistema de computador executando o Windows.<br/> |
-| [**\_Fuso horário do Win32**](win32-timezone.md)       | Classe de instância<br/> Representa as informações de fuso horário de um sistema de computador executando o Windows.<br/>                   |
+| [**\_Ambiente Win32**](win32-environment.md) | Classe de instância<br/> Representa uma configuração de ambiente do sistema ou ambiente em um sistema de computador que executa o Windows.<br/> |
+| [**\_Fuso horário do Win32**](win32-timezone.md)       | Classe de instância<br/> Representa as informações de fuso horário de um sistema de computador executando Windows.<br/>                   |
 | [**Userdesktop Win32 \_**](win32-userdesktop.md) | Classe de associação<br/> Relaciona uma conta de usuário e as configurações da área de trabalho que são específicas a ela.<br/>                   |
 
 
@@ -113,7 +113,7 @@ A subcategoria sistema de arquivos agrupa classes que representam a maneira como
 | [**\_Diretório Win32**](win32-directory.md)                                         | Classe de instância<br/> Representa uma entrada de diretório em um sistema de computador que executa o Windows.<br/>                                                                              |
 | [**\_DirectorySpecification Win32**](/previous-versions/windows/desktop/msiprov/win32-directoryspecification)               | Classe de instância<br/> Representa o layout do diretório do produto.<br/>                                                                                                |
 | [**\_DiskDriveToDiskPartition Win32**](win32-diskdrivetodiskpartition.md)           | Classe de associação<br/> Relaciona uma unidade de disco e uma partição existente nela.<br/>                                                                                         |
-| [**\_DiskPartition Win32**](win32-diskpartition.md)                                 | Classe de instância<br/> Representa os recursos e a capacidade de gerenciamento de uma área particionada de um disco físico em um sistema de computador executando o Windows.<br/>              |
+| [**\_DiskPartition Win32**](win32-diskpartition.md)                                 | Classe de instância<br/> Representa os recursos e a capacidade de gerenciamento de uma área particionada de um disco físico em um sistema de computador que executa o Windows.<br/>              |
 | [**\_DiskQuota Win32**](/previous-versions/windows/desktop/wmipdskq/win32-diskquota)                                    | Classe de associação<br/> Controla o uso de espaço em disco para volumes do sistema de arquivos NTFS.<br/>                                                                                        |
 | [**Disco \_ lógico do Win32**](win32-logicaldisk.md)                                     | Representa uma fonte de dados que é resolvida para um dispositivo de armazenamento local real em um sistema de computador que executa o Windows.<br/>                                                            |
 | [**\_LogicalDiskRootDirectory Win32**](win32-logicaldiskrootdirectory.md)           | Classe de associação<br/> Relaciona um disco lógico e sua estrutura de diretórios.<br/>                                                                                          |
@@ -151,41 +151,41 @@ A subcategoria objetos de trabalho agrupa classes que representam classes que fo
 | [**\_NamedJobObjectProcess Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-namedjobobjectprocess)                 | Classe de instância<br/> Relaciona um objeto de trabalho e o processo contido no objeto de trabalho.<br/>                                                                                     |
 | [**\_NamedJobObjectSecLimit Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-namedjobobjectseclimit)               | Classe de instância<br/> Relaciona um objeto de trabalho e as configurações de limite de segurança de objeto de trabalho.<br/>                                                                                      |
 | [**\_NamedJobObjectSecLimitSetting Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-namedjobobjectseclimitsetting) | Classe de instância<br/> Representa as configurações de limite de segurança para um objeto de trabalho.<br/>                                                                                              |
-| [**\_NamedJobObjectStatistics Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-namedjobobjectstatistics)           | Classe de instância<br/> Representa uma associação entre um objeto de trabalho e a classe de informações de contabilidade de e/s do objeto de trabalho.<br/>                                                   |
-| [**\_SIDandAttributes Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-sidandattributes)                           | Classe de instância<br/> Representa um SID (identificador de segurança) e seus atributos.<br/>                                                                                            |
-| [**\_TokenGroups Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-tokengroups)                                     | Classe de eventos<br/> Representa informações sobre os SIDs de grupo em um token de acesso.<br/>                                                                                          |
-| [**\_TokenPrivileges Win32**](/previous-versions/windows/desktop/wmipjobobjprov/win32-tokenprivileges)                             | Classe de eventos<br/> Representa informações sobre um conjunto de privilégios para um token de acesso.<br/>                                                                                    |
+| [**Win32 \_ NamedJobObjectStatistics**](/previous-versions/windows/desktop/wmipjobobjprov/win32-namedjobobjectstatistics)           | Classe de instância<br/> Representa uma associação entre um objeto de trabalho e a classe de informações de contabilidade de E/S do objeto de trabalho.<br/>                                                   |
+| [**Win32 \_ SIDandAttributes**](/previous-versions/windows/desktop/wmipjobobjprov/win32-sidandattributes)                           | Classe de instância<br/> Representa um SID (identificador de segurança) e seus atributos.<br/>                                                                                            |
+| [**Win32 \_ TokenGroups**](/previous-versions/windows/desktop/wmipjobobjprov/win32-tokengroups)                                     | Classe de eventos<br/> Representa informações sobre os SIDs de grupo em um token de acesso.<br/>                                                                                          |
+| [**TokenPrivileges do Win32 \_**](/previous-versions/windows/desktop/wmipjobobjprov/win32-tokenprivileges)                             | Classe de eventos<br/> Representa informações sobre um conjunto de privilégios para um token de acesso.<br/>                                                                                    |
 
 
 
  
 
-## <a name="memory-and-page-files"></a>Memória e arquivos de paginação
+## <a name="memory-and-page-files"></a>Arquivos de memória e página
 
-A subcategoria arquivos de memória e de página agrupa as classes que representam as definições de configuração do arquivo de paginação.
+A subcategoria Arquivos de memória e página grupos classes que representam definições de configuração de arquivo de página.
 
 
 
 | Classe                                                                 | Descrição                                                                                                                                   |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_Arquivo de paginação Win32**](win32-pagefile.md)                             | Classe de instância<br/> Representa o arquivo usado para lidar com a permuta de arquivo de memória virtual em um sistema Windows.<br/>                  |
-| [**\_PageFileElementSetting Win32**](win32-pagefileelementsetting.md) | Classe de associação<br/> Relaciona as configurações iniciais de um arquivo de paginação e o estado dessas configurações durante o uso normal.<br/>        |
-| [**\_PageFileSetting Win32**](win32-pagefilesetting.md)               | Classe de instância<br/> Representa as configurações de um arquivo de paginação.<br/>                                                                  |
-| [**\_PageFileUsage Win32**](win32-pagefileusage.md)                   | Classe de instância<br/> Representa o arquivo usado para lidar com a permuta de arquivo de memória virtual em um sistema de computador executando o Windows.<br/> |
+| [**Win32 \_ PageFile**](win32-pagefile.md)                             | Classe de instância<br/> Representa o arquivo usado para lidar com a troca de arquivos de memória virtual em um Windows sistema.<br/>                  |
+| [**Win32 \_ PageFileElementSetting**](win32-pagefileelementsetting.md) | Classe de associação<br/> Relaciona as configurações iniciais de um arquivo de página e o estado dessas configurações durante o uso normal.<br/>        |
+| [**Win32 \_ PageFileSetting**](win32-pagefilesetting.md)               | Classe de instância<br/> Representa as configurações de um arquivo de página.<br/>                                                                  |
+| [**Win32 \_ PageFileUsage**](win32-pagefileusage.md)                   | Classe de instância<br/> Representa o arquivo usado para lidar com a troca de arquivos de memória virtual em um sistema de computador executando Windows.<br/> |
 
 
 
  
 
-## <a name="multimedia-audio-or-visual"></a>Áudio ou Visual de multimídia
+## <a name="multimedia-audio-or-visual"></a>Áudio multimídia ou visual
 
-A classe na subcategoria áudio multimídia ou Visual representa as propriedades do codec de áudio ou vídeo instalado no sistema de computador.
+A classe na subcategoria Audio multimídia ou Visual representa propriedades do codec de áudio ou vídeo instalado no sistema de computador.
 
 
 
 | Classe                                       | Descrição                                                                                                |
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Codec do Win32 \_**](win32-codecfile.md) | Classe de instância<br/> Representa o codec de áudio ou vídeo instalado no sistema de computador.<br/> |
+| [**CodecFile do Win32 \_**](win32-codecfile.md) | Classe de instância<br/> Representa o codec de áudio ou vídeo instalado no sistema de computador.<br/> |
 
 
 
@@ -193,22 +193,22 @@ A classe na subcategoria áudio multimídia ou Visual representa as propriedades
 
 ## <a name="networking"></a>Rede
 
-A subcategoria de rede agrupa classes que representam conexões de rede, clientes de rede e configurações de conexão de rede, como o protocolo usado.
+A subcategoria Rede grupos classes que representam conexões de rede, clientes de rede e configurações de conexão de rede, como o protocolo usado.
 
 
 
 | Classe                                                                            | Descrição                                                                                                                      |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ActiveRoute Win32**](/previous-versions/windows/desktop/wmiiprouteprov/win32-activeroute)                       | Classe de associação<br/> Relaciona a rota IP4 atual à tabela de rotas de IP persistente.<br/>                           |
-| [**\_IP4PersistedRouteTable Win32**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4persistedroutetable) | Classe de instância<br/> Representa as rotas de IP persistentes.<br/>                                                             |
-| [**\_IP4RouteTable Win32**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetable)                   | Classe de instância<br/> Representa informações que regem o roteamento de pacotes de dados de rede.<br/>                    |
-| [**\_IP4RouteTableEvent Win32**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetableevent)         | Classe de eventos<br/> Representa eventos de alteração de rota IP.<br/>                                                             |
-| [**\_Vinculado Win32**](win32-networkclient.md)                              | Classe de instância<br/> Representa um cliente de rede em um sistema de computador que executa o Windows.<br/>                           |
-| [**\_NetworkConnection Win32**](win32-networkconnection.md)                      | Classe de instância<br/> Representa uma conexão de rede ativa em um ambiente do Windows.<br/>                           |
-| [**\_NetworkProtocol Win32**](win32-networkprotocol.md)                          | Classe de instância<br/> Representa um protocolo e suas características de rede em um sistema de computador executando o Windows.<br/> |
-| [**\_Domínio do NT Win32**](/previous-versions/windows/desktop/cimwin32a/win32-ntdomain)                                        | Classe de instância<br/> Representa um domínio do Windows NT.<br/>                                                             |
-| [**\_PingStatus Win32**](/previous-versions/windows/desktop/wmipicmp/win32-pingstatus)                               | Classe de instância<br/> Representa os valores retornados pelo comando **ping** padrão.<br/>                            |
-| [**\_Protocolobinding do Win32**](win32-protocolbinding.md)                          | Classe de associação<br/> Relaciona um driver de nível de sistema, protocolo de rede e adaptador de rede.<br/>                    |
+| [**Win32 \_ ActiveRoute**](/previous-versions/windows/desktop/wmiiprouteprov/win32-activeroute)                       | Classe de associação<br/> Relaciona a rota IP4 atual à tabela de rotas de IP persistente.<br/>                           |
+| [**Win32 \_ IP4PersistedRouteTable**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4persistedroutetable) | Classe de instância<br/> Representa rotas DE IP persistentes.<br/>                                                             |
+| [**Win32 \_ IP4RouteTable**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetable)                   | Classe de instância<br/> Representa informações que regem o roteamento de pacotes de dados de rede.<br/>                    |
+| [**Win32 \_ IP4RouteTableEvent**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetableevent)         | Classe de eventos<br/> Representa eventos de alteração de rota de IP.<br/>                                                             |
+| [**Win32 \_ NetworkClient**](win32-networkclient.md)                              | Classe de instância<br/> Representa um cliente de rede em um sistema de computador executando Windows.<br/>                           |
+| [**Win32 \_ NetworkConnection**](win32-networkconnection.md)                      | Classe de instância<br/> Representa uma conexão de rede ativa em um Windows ambiente.<br/>                           |
+| [**Win32 \_ NetworkProtocol**](win32-networkprotocol.md)                          | Classe de instância<br/> Representa um protocolo e suas características de rede em um sistema de computador executando Windows.<br/> |
+| [**Win32 \_ NTDomain**](/previous-versions/windows/desktop/cimwin32a/win32-ntdomain)                                        | Classe de instância<br/> Representa um Windows NT domínio.<br/>                                                             |
+| [**Win32 \_ PingStatus**](/previous-versions/windows/desktop/wmipicmp/win32-pingstatus)                               | Classe de instância<br/> Representa os valores retornados pelo comando **ping** padrão.<br/>                            |
+| [**Win32 \_ ProtocolBinding**](win32-protocolbinding.md)                          | Classe de associação<br/> Relaciona um driver de nível de sistema, protocolo de rede e adaptador de rede.<br/>                    |
 
 
 
@@ -216,26 +216,26 @@ A subcategoria de rede agrupa classes que representam conexões de rede, cliente
 
 ## <a name="operating-system-events"></a>Eventos do Sistema Operacional
 
-A subcategoria de eventos do sistema operacional agrupa classes que representam eventos no sistema operacional relacionados a processos, threads e desligamento do sistema.
+A subcategoria Eventos do Sistema Operacional grupos classes que representam eventos no sistema operacional relacionados a processos, threads e desligamento do sistema.
 
 
 
 | Classe                                                                                 | Descrição                                                                                                                                                              |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ComputerShutdownEvent Win32**](/previous-versions/windows/desktop/cimwin32a/win32-computershutdownevent)                   | Classe de eventos<br/> Representa os eventos de desligamento do computador.<br/>                                                                                                   |
-| [**\_ComputerSystemEvent Win32**](/previous-versions/windows/desktop/cimwin32a/win32-computersystemevent)                       | Classe de eventos<br/> Representa eventos relacionados a um sistema de computador.<br/>                                                                                        |
-| [**\_DeviceChangeEvent Win32**](win32-devicechangeevent.md)                           | Classe de eventos<br/> Representa eventos de alteração de dispositivo resultantes da adição, remoção ou modificação de dispositivos no sistema de computador.<br/>               |
-| [**\_ModuleLoadTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-moduleloadtrace)                               | Classe de eventos<br/> Indica que um processo carregou um novo módulo.<br/>                                                                                      |
-| [**\_ModuleTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-moduletrace)                                       | Classe de eventos<br/> Evento base para eventos de módulo.<br/>                                                                                                          |
-| [**\_ProcessStartTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-processstarttrace)                           | Classe de eventos<br/> Indica que um novo processo foi iniciado.<br/>                                                                                              |
-| [**\_ProcessStopTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-processstoptrace)                             | Classe de eventos<br/> Indica que um processo foi encerrado.<br/>                                                                                               |
-| [**\_ProcessTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-processtrace)                                     | Classe de eventos<br/> Evento base para eventos de processo.<br/>                                                                                                         |
-| [**\_SystemConfigurationChangeEvent Win32**](win32-systemconfigurationchangeevent.md) | Classe de eventos<br/> Indica que a lista de dispositivos no sistema foi atualizada (um dispositivo foi adicionado ou removido ou a configuração foi alterada).<br/>    |
-| [**\_SystemTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-systemtrace)                                       | Classe de eventos<br/> Classe base para todos os eventos de rastreamento do sistema, incluindo rastreamentos de módulo, processo e thread.<br/>                                                  |
-| [**\_ThreadStartTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-threadstarttrace)                             | Classe de eventos<br/> Indica que um novo thread foi iniciado.<br/>                                                                                                    |
-| [**\_ThreadStopTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-threadstoptrace)                               | Classe de eventos<br/> Indica que um thread foi interrompido.<br/>                                                                                                   |
-| [**\_ThreadTrace Win32**](/previous-versions/windows/desktop/krnlprov/win32-threadtrace)                                       | Classe de eventos<br/> Classe de evento base para eventos de thread.<br/>                                                                                                    |
-| [**\_VolumeChangeEvent Win32**](win32-volumechangeevent.md)                           | Classe de eventos<br/> Representa um evento de unidade mapeada da rede resultante da adição de uma letra de unidade de rede ou unidade montada no sistema de computador.<br/> |
+| [**Win32 \_ ComputerShutdownEvent**](/previous-versions/windows/desktop/cimwin32a/win32-computershutdownevent)                   | Classe de eventos<br/> Representa eventos de desligamento do computador.<br/>                                                                                                   |
+| [**Win32 \_ ComputerSystemEvent**](/previous-versions/windows/desktop/cimwin32a/win32-computersystemevent)                       | Classe de eventos<br/> Representa eventos relacionados a um sistema de computador.<br/>                                                                                        |
+| [**Win32 \_ DeviceChangeEvent**](win32-devicechangeevent.md)                           | Classe de eventos<br/> Representa eventos de alteração de dispositivo resultantes da adição, remoção ou modificação de dispositivos no sistema de computador.<br/>               |
+| [**Win32 \_ ModuleLoadTrace**](/previous-versions/windows/desktop/krnlprov/win32-moduleloadtrace)                               | Classe de eventos<br/> Indica que um processo carregou um novo módulo.<br/>                                                                                      |
+| [**Win32 \_ ModuleTrace**](/previous-versions/windows/desktop/krnlprov/win32-moduletrace)                                       | Classe de eventos<br/> Evento base para eventos de módulo.<br/>                                                                                                          |
+| [**Win32 \_ ProcessStartTrace**](/previous-versions/windows/desktop/krnlprov/win32-processstarttrace)                           | Classe de eventos<br/> Indica que um novo processo foi iniciado.<br/>                                                                                              |
+| [**Win32 \_ ProcessStopTrace**](/previous-versions/windows/desktop/krnlprov/win32-processstoptrace)                             | Classe de eventos<br/> Indica que um processo foi encerrado.<br/>                                                                                               |
+| [**Win32 \_ ProcessTrace**](/previous-versions/windows/desktop/krnlprov/win32-processtrace)                                     | Classe de eventos<br/> Evento base para eventos de processo.<br/>                                                                                                         |
+| [**Win32 \_ SystemConfigurationChangeEvent**](win32-systemconfigurationchangeevent.md) | Classe de eventos<br/> Indica que a lista de dispositivos no sistema foi atualizada (um dispositivo foi adicionado ou removido ou a configuração foi alterada).<br/>    |
+| [**Win32 \_ SystemTrace**](/previous-versions/windows/desktop/krnlprov/win32-systemtrace)                                       | Classe de eventos<br/> Classe base para todos os eventos de rastreamento do sistema, incluindo rastreamentos de módulo, processo e thread.<br/>                                                  |
+| [**Win32 \_ ThreadStartTrace**](/previous-versions/windows/desktop/krnlprov/win32-threadstarttrace)                             | Classe de eventos<br/> Indica que um novo thread foi iniciado.<br/>                                                                                                    |
+| [**Win32 \_ ThreadStopTrace**](/previous-versions/windows/desktop/krnlprov/win32-threadstoptrace)                               | Classe de eventos<br/> Indica que um thread foi interrompido.<br/>                                                                                                   |
+| [**Win32 \_ ThreadTrace**](/previous-versions/windows/desktop/krnlprov/win32-threadtrace)                                       | Classe de eventos<br/> Classe de evento base para eventos de thread.<br/>                                                                                                    |
+| [**Win32 \_ VolumeChangeEvent**](win32-volumechangeevent.md)                           | Classe de eventos<br/> Representa um evento de unidade mapeada em rede resultante da adição de uma letra da unidade de rede ou unidade montada no sistema de computador.<br/> |
 
 
 
@@ -243,39 +243,39 @@ A subcategoria de eventos do sistema operacional agrupa classes que representam 
 
 ## <a name="operating-system-settings"></a>configurações do sistema operacional
 
-A subcategoria configurações do sistema operacional agrupa as classes que representam o sistema operacional e suas configurações.
+O sistema operacional Configurações classes de subcategoria que representam o Sistema Operacional e suas configurações.
 
 
 
 | Classe                                                                                       | Descrição                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_BootConfiguration Win32**](win32-bootconfiguration.md)                                 | Classe de instância<br/> Representa a configuração de inicialização de um sistema de computador que executa o Windows.<br/>                                                                       |
-| [**\_Sistema de ComputerSystem Win32**](win32-computersystem.md)                                       | Classe de instância<br/> Representa um sistema de computador operando em um ambiente do Windows.<br/>                                                                              |
-| [**\_ComputerSystemProcessor Win32**](win32-computersystemprocessor.md)                     | Classe de associação<br/> Relaciona um sistema de computador e um processador em execução nesse sistema.<br/>                                                                          |
-| [**\_ComputerSystemProduct Win32**](win32-computersystemproduct.md)                         | Classe de instância<br/> Representa um produto.<br/>                                                                                                                         |
-| [**\_DependentService Win32**](win32-dependentservice.md)                                   | Classe de associação<br/> Relaciona dois serviços base interdependentes.<br/>                                                                                                  |
-| [**Objectorder do Win32 \_**](win32-loadordergroup.md)                                       | Classe de instância<br/> Representa um grupo de serviços do sistema que definem dependências de execução.<br/>                                                                     |
-| [**\_LoadOrderGroupServiceDependencies Win32**](win32-loadordergroupservicedependencies.md) | Classe de instância<br/> Representa uma associação entre um serviço base e um grupo de ordem de carregamento do qual o serviço depende para iniciar a execução.<br/>                         |
-| [**\_LoadOrderGroupServiceMembers Win32**](win32-loadordergroupservicemembers.md)           | Classe de associação<br/> Relaciona um grupo de ordem de carregamento e um serviço base.<br/>                                                                                             |
-| [**Sistema \_ operacional Win32**](win32-operatingsystem.md)                                     | Classe de instância<br/> Representa um sistema operacional instalado em um sistema de computador executando o Windows.<br/>                                                                |
-| [**\_OperatingSystemQFE Win32**](win32-operatingsystemqfe.md)                               | Classe de associação<br/> Relaciona um sistema operacional e as atualizações do produto aplicadas conforme representado no [**Win32 \_ QuickFixEngineering**](win32-quickfixengineering.md).<br/> |
-| [**\_OSRecoveryConfiguration Win32**](win32-osrecoveryconfiguration.md)                     | Classe de instância<br/> Representa os tipos de informações que serão coletadas da memória quando o sistema operacional falhar.<br/>                                        |
-| [**\_QuickFixEngineering Win32**](win32-quickfixengineering.md)                             | Classe de instância<br/> Representa a QFE (Engenharia de correção rápida) de todo o sistema ou atualizações que foram aplicadas ao sistema operacional atual.<br/>                         |
-| [**\_StartupCommand Win32**](win32-startupcommand.md)                                       | Classe de instância<br/> Representa um comando que é executado automaticamente quando um usuário faz logon no sistema de computador.<br/>                                                       |
-| [**\_SystemBootConfiguration Win32**](win32-systembootconfiguration.md)                     | Classe de associação<br/> Relaciona um sistema de computador e sua configuração de inicialização.<br/>                                                                                      |
-| [**\_SystemDesktop Win32**](win32-systemdesktop.md)                                         | Classe de associação<br/> Relaciona um sistema de computador e sua configuração de desktop.<br/>                                                                                   |
-| [**\_SystemDevices Win32**](win32-systemdevices.md)                                         | Classe de associação<br/> Relaciona um sistema de computador e um dispositivo lógico instalado nesse sistema.<br/>                                                                   |
-| [**\_SystemLoadOrderGroups Win32**](win32-systemloadordergroups.md)                         | Classe de associação<br/> Relaciona um sistema de computador e um grupo de ordem de carregamento.<br/>                                                                                          |
-| [**\_SystemNetworkConnections Win32**](win32-systemnetworkconnections.md)                   | Classe de associação<br/> Relaciona uma conexão de rede e o sistema de computador no qual ele reside.<br/>                                                                  |
-| [**\_SystemOperatingSystem Win32**](win32-systemoperatingsystem.md)                         | Classe de associação<br/> Relaciona um sistema de computador e seu sistema operacional.<br/>                                                                                        |
-| [**\_SystemProcesses Win32**](win32-systemprocesses.md)                                     | Classe de associação <br/> Relaciona um sistema de computador e um processo em execução nesse sistema.<br/>                                                                           |
-| [**\_SystemProgramGroups Win32**](win32-systemprogramgroups.md)                             | Classe de associação<br/> Relaciona um sistema de computador e um grupo de programas lógico.<br/>                                                                                     |
-| [**\_SystemResources Win32**](win32-systemresources.md)                                     | Classe de associação<br/> Relaciona um recurso do sistema e o sistema de computador no qual ele reside.<br/>                                                                           |
-| [**\_Sistema de sistemas Win32**](win32-systemservices.md)                                       | Classe de associação<br/> Relaciona um sistema de computador e um programa de serviço que existe no sistema.<br/>                                                                 |
-| [**\_SystemSetting Win32**](win32-systemsetting.md)                                         | Classe de associação<br/> Relaciona um sistema de computador e uma configuração geral nesse sistema.<br/>                                                                            |
-| [**\_SystemSystemDriver Win32**](win32-systemsystemdriver.md)                               | Classe de associação<br/> Relaciona um sistema de computador e um driver de sistema em execução nesse sistema de computador.<br/>                                                             |
-| [**\_SystemTimeZone Win32**](win32-systemtimezone.md)                                       | Classe de associação<br/> Relaciona um sistema de computador e um fuso horário.<br/>                                                                                                 |
-| [**\_SystemUsers Win32**](win32-systemusers.md)                                             | Classe de associação<br/> Relaciona um sistema de computador e uma conta de usuário nesse sistema.<br/>                                                                               |
+| [**Win32 \_ BootConfiguration**](win32-bootconfiguration.md)                                 | Classe de instância<br/> Representa a configuração de inicialização de um sistema de computador executando Windows.<br/>                                                                       |
+| [**Win32 \_ ComputerSystem**](win32-computersystem.md)                                       | Classe de instância<br/> Representa um sistema de computador que opera em um Windows ambiente.<br/>                                                                              |
+| [**Win32 \_ ComputerSystemProcessor**](win32-computersystemprocessor.md)                     | Classe de associação<br/> Relaciona um sistema de computador e um processador em execução nesse sistema.<br/>                                                                          |
+| [**Win32 \_ ComputerSystemProduct**](win32-computersystemproduct.md)                         | Classe de instância<br/> Representa um produto.<br/>                                                                                                                         |
+| [**Win32 \_ DependentService**](win32-dependentservice.md)                                   | Classe de associação<br/> Relaciona dois serviços base interdependentes.<br/>                                                                                                  |
+| [**Win32 \_ LoadOrderGroup**](win32-loadordergroup.md)                                       | Classe de instância<br/> Representa um grupo de serviços do sistema que definem dependências de execução.<br/>                                                                     |
+| [**Win32 \_ LoadOrderGroupServiceDependencies**](win32-loadordergroupservicedependencies.md) | Classe de instância<br/> Representa uma associação entre um serviço base e um grupo de ordem de carregamento do que o serviço depende para iniciar a execução.<br/>                         |
+| [**Win32 \_ LoadOrderGroupServiceMembers**](win32-loadordergroupservicemembers.md)           | Classe de associação<br/> Relaciona um grupo de ordem de carregamento e um serviço base.<br/>                                                                                             |
+| [**Sistema operacional \_ Win32**](win32-operatingsystem.md)                                     | Classe de instância<br/> Representa um sistema operacional instalado em um sistema de computador executando Windows.<br/>                                                                |
+| [**Win32 \_ OperatingSystemQFE**](win32-operatingsystemqfe.md)                               | Classe de associação<br/> Relaciona um sistema operacional e atualizações de produto aplicadas conforme representado em [**Win32 \_ QuickFixEngineering.**](win32-quickfixengineering.md)<br/> |
+| [**Win32 \_ OSRecoveryConfiguration**](win32-osrecoveryconfiguration.md)                     | Classe de instância<br/> Representa os tipos de informações que serão coletadas da memória quando o sistema operacional falhar.<br/>                                        |
+| [**QuickFixEngineering do Win32 \_**](win32-quickfixengineering.md)                             | Classe de instância<br/> Representa o QFE (engenharia Correção Rápida todo o sistema) ou atualizações que foram aplicadas ao sistema operacional atual.<br/>                         |
+| [**Win32 \_ StartupCommand**](win32-startupcommand.md)                                       | Classe de instância<br/> Representa um comando que é executado automaticamente quando um usuário faz logor no sistema de computador.<br/>                                                       |
+| [**Win32 \_ SystemBootConfiguration**](win32-systembootconfiguration.md)                     | Classe de associação<br/> Relaciona um sistema de computador e sua configuração de inicialização.<br/>                                                                                      |
+| [**Win32 \_ SystemDesktop**](win32-systemdesktop.md)                                         | Classe de associação<br/> Relaciona um sistema de computador e sua configuração de área de trabalho.<br/>                                                                                   |
+| [**Win32 \_ SystemDevices**](win32-systemdevices.md)                                         | Classe de associação<br/> Relaciona um sistema de computador e um dispositivo lógico instalado nesse sistema.<br/>                                                                   |
+| [**Win32 \_ SystemLoadOrderGroups**](win32-systemloadordergroups.md)                         | Classe de associação<br/> Relaciona um sistema de computador e um grupo de ordem de carregamento.<br/>                                                                                          |
+| [**Win32 \_ SystemNetworkConnections**](win32-systemnetworkconnections.md)                   | Classe de associação<br/> Relaciona uma conexão de rede e o sistema de computador no qual ela reside.<br/>                                                                  |
+| [**Sistema \_ Win32OperatingSystem**](win32-systemoperatingsystem.md)                         | Classe de associação<br/> Relaciona um sistema de computador e seu sistema operacional.<br/>                                                                                        |
+| [**Win32 \_ SystemProcesses**](win32-systemprocesses.md)                                     | Classe de associação <br/> Relaciona um sistema de computador e um processo em execução nesse sistema.<br/>                                                                           |
+| [**Win32 \_ SystemProgramGroups**](win32-systemprogramgroups.md)                             | Classe de associação<br/> Relaciona um sistema de computador e um grupo de programas lógicos.<br/>                                                                                     |
+| [**Win32 \_ SystemResources**](win32-systemresources.md)                                     | Classe de associação<br/> Relaciona um recurso do sistema e o sistema de computador em que ele reside.<br/>                                                                           |
+| [**Win32 \_ SystemServices**](win32-systemservices.md)                                       | Classe de associação<br/> Relaciona um sistema de computador e um programa de serviço que existe no sistema.<br/>                                                                 |
+| [**SystemSetting do Win32 \_**](win32-systemsetting.md)                                         | Classe de associação<br/> Relaciona um sistema de computador e uma configuração geral nesse sistema.<br/>                                                                            |
+| [**Win32 \_ SystemSystemDriver**](win32-systemsystemdriver.md)                               | Classe de associação<br/> Relaciona um sistema de computador e um driver do sistema em execução nesse sistema de computador.<br/>                                                             |
+| [**Win32 \_ SystemTimeZone**](win32-systemtimezone.md)                                       | Classe de associação<br/> Relaciona um sistema de computador e um fuso horário.<br/>                                                                                                 |
+| [**Win32 \_ SystemUsers**](win32-systemusers.md)                                             | Classe de associação<br/> Relaciona um sistema de computador e uma conta de usuário nesse sistema.<br/>                                                                               |
 
 
 
@@ -299,13 +299,13 @@ A subcategoria Processes agrupa classes que representam processos e threads do s
 
 ## <a name="registry"></a>Registro
 
-A classe na subcategoria do registro representa o conteúdo do registro do Windows.
+a classe na subcategoria do registro representa o conteúdo do registro de Windows.
 
 
 
 | Classe                                     | Descrição                                                                                               |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [**\_Registro do Win32**](win32-registry.md) | Classe de instância<br/> Representa o registro do sistema em um sistema de computador executando o Windows.<br/> |
+| [**\_Registro do Win32**](win32-registry.md) | Classe de instância<br/> Representa o registro do sistema em um sistema de computador que executa o Windows.<br/> |
 
 
 
@@ -320,7 +320,7 @@ A subcategoria trabalhos do Agendador agrupa as classes que representam as confi
 | Classe                                                | Descrição                                                                                                                                                                                                                                                           |
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_CurrentTime Win32**](/previous-versions/windows/desktop/wmitimepprov/win32-currenttime) | Classe abstrata<br/> Representa uma instância no tempo como segundos de componente, minutos, dia da semana e assim por diante.<br/>                                                                                                                                        |
-| [**\_ScheduledJob Win32**](win32-scheduledjob.md)    | Classe de instância<br/> Representa um trabalho agendado usando o serviço de agendamento do Windows.<br/>                                                                                                                                                                   |
+| [**\_ScheduledJob Win32**](win32-scheduledjob.md)    | Classe de instância<br/> representa um trabalho agendado usando o serviço agendamento de Windows.<br/>                                                                                                                                                                   |
 | [**Local do Win32 \_**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime)     | Classe de instância<br/> Representa um ponto no tempo retornado como [**objetos \_ locais do Win32**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime) que resultam de uma consulta. A propriedade **Hour** é retornada como a hora local em um relógio de 24 horas.<br/>                                |
 | [**\_UTCTime Win32**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime)         | Classe de instância<br/> Representa um ponto no tempo que é retornado como [**objetos \_ UTCTime do Win32**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime) que resultam de uma consulta. A propriedade **Hour** é retornada como a hora UTC (tempo Universal Coordenado) em um relógio de 24 horas.<br/> |
 
@@ -411,9 +411,9 @@ A subcategoria do menu iniciar agrupa as classes que representam grupos de progr
 | Classe                                                                                   | Descrição                                                                                                                                                              |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_LogicalProgramGroup Win32**](win32-logicalprogramgroup.md)                         | Classe de instância<br/> Representa um grupo de programas em um sistema de computador que executa o Windows.<br/>                                                                    |
-| [**\_LogicalProgramGroupDirectory Win32**](win32-logicalprogramgroupdirectory.md)       | Classe de associação<br/> Relaciona grupos de programas lógicos (agrupamentos no menu Iniciar) e os diretórios de arquivos nos quais eles são armazenados.<br/>                 |
+| [**\_LogicalProgramGroupDirectory Win32**](win32-logicalprogramgroupdirectory.md)       | Classe de associação<br/> relaciona grupos de programas lógicos (agrupamentos no menu Iniciar) e os diretórios de arquivos nos quais eles são armazenados.<br/>                 |
 | [**\_LogicalProgramGroupItem Win32**](win32-logicalprogramgroupitem.md)                 | Classe de instância<br/> Representa um elemento contido por uma instância de um do Win32, que não é outra instância de um do **Win32 \_** . **\_**<br/> |
-| [**\_LogicalProgramGroupItemDataFile Win32**](win32-logicalprogramgroupitemdatafile.md) | Classe de associação<br/> Relaciona os itens do grupo de programas do menu iniciar e os arquivos nos quais eles são armazenados.<br/>                                       |
+| [**\_LogicalProgramGroupItemDataFile Win32**](win32-logicalprogramgroupitemdatafile.md) | Classe de associação<br/> relaciona os itens do grupo de programas da menu Iniciar e os arquivos nos quais eles estão armazenados.<br/>                                       |
 | [**\_ProgramGroupContents Win32**](win32-programgroupcontents.md)                       | Classe de associação<br/> Relaciona uma ordem de grupo de programas e um grupo de programas individual ou item contido nele.<br/>                                           |
 | [**\_ProgramGroupOrItem Win32**](win32-programgrouporitem.md)                           | Classe de instância<br/> Representa um agrupamento lógico de programas no menu **Iniciar** \| **programas** do usuário.<br/>                                               |
 
@@ -435,11 +435,11 @@ A subcategoria usuários agrupa as classes que representam informações de arma
 | [**\_ShadowDiffVolumeSupport Win32**](/previous-versions/windows/desktop/vsswmi/win32-shadowdiffvolumesupport) | Classe de associação<br/> Representa uma associação entre um provedor de cópia de sombra e um volume de armazenamento.<br/>                       |
 | [**\_ShadowFor Win32**](/previous-versions/windows/desktop/vsswmi/win32-shadowfor)                             | Classe de associação<br/> Representa uma associação entre uma cópia de sombra e o volume para o qual a cópia de sombra é criada.<br/> |
 | [**\_Sombreamento do Win32**](/previous-versions/windows/desktop/vsswmi/win32-shadowon)                               | Classe de associação<br/> Representa uma associação entre uma cópia de sombra e onde os dados diferenciais são gravados.<br/>          |
-| [**Win32 \_ shadowprovider**](/previous-versions/windows/desktop/vsswmi/win32-shadowprovider)                   | Classe de associação<br/> Representa um componente que cria e representa cópias de sombra de volume.<br/>                             |
-| [**\_ShadowStorage Win32**](/previous-versions/windows/desktop/legacy/aa394433(v=vs.85))                     | Classe de associação<br/> Representa uma associação entre uma cópia de sombra e onde os dados diferenciais são gravados.<br/>          |
-| [**\_ShadowVolumeSupport Win32**](/previous-versions/windows/desktop/vsswmi/win32-shadowvolumesupport)         | Classe de associação<br/> Representa uma associação entre um provedor de cópia de sombra com um volume com suporte.<br/>                    |
-| [**Volume do Win32 \_**](/previous-versions/windows/desktop/legacy/aa394515(v=vs.85))                                   | Classe de instância<br/> Representa uma área de armazenamento em um disco rígido.<br/>                                                           |
-| [**\_VolumeUserQuota Win32**](/previous-versions/windows/desktop/vdswmi/win32-volumeuserquota)                 | Classe de associação<br/> Representa um volume para as configurações de cota por volume.<br/>                                                |
+| [**Win32 \_ ShadowProvider**](/previous-versions/windows/desktop/vsswmi/win32-shadowprovider)                   | Classe de associação<br/> Representa um componente que cria e representa cópias de sombra de volume.<br/>                             |
+| [**Win32 \_ ShadowStorage**](/previous-versions/windows/desktop/legacy/aa394433(v=vs.85))                     | Classe de associação<br/> Representa uma associação entre uma cópia de sombra e onde os dados diferenciais são gravados.<br/>          |
+| [**Win32 \_ ShadowVolumeSupport**](/previous-versions/windows/desktop/vsswmi/win32-shadowvolumesupport)         | Classe de associação<br/> Representa uma associação entre um provedor de cópia de sombra com um volume com suporte.<br/>                    |
+| [**Win32 \_ Volume**](/previous-versions/windows/desktop/legacy/aa394515(v=vs.85))                                   | Classe de instância<br/> Representa uma área de armazenamento em um disco rígido.<br/>                                                           |
+| [**VolumeUserQuota do Win32 \_**](/previous-versions/windows/desktop/vdswmi/win32-volumeuserquota)                 | Classe de associação<br/> Representa um volume para as configurações de cota por volume.<br/>                                                |
 
 
 
@@ -447,22 +447,22 @@ A subcategoria usuários agrupa as classes que representam informações de arma
 
 ## <a name="users"></a>Usuários
 
-A subcategoria usuários agrupa as classes que representam informações de conta de usuário, como detalhes de associação de grupo.
+A subcategoria Usuários agrupa classes que representam informações de conta de usuário, como detalhes de associação de grupo.
 
 
 
 | Classe                                                                 | Descrição                                                                                                                                      |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_Conta Win32**](win32-account.md)                               | Classe de instância<br/> Representa informações sobre contas de usuário e contas de grupo conhecidas pelo sistema de computador que executa o Windows.<br/> |
-| [**\_Grupo Win32**](win32-group.md)                                   | Classe de instância<br/> Representa dados sobre uma conta de grupo.<br/>                                                                      |
-| [**\_GroupInDomain Win32**](/previous-versions/windows/desktop/cimwin32a/win32-groupindomain)                   | Classe de associação<br/> Identifica as contas de grupo associadas a um domínio do Windows NT.<br/>                                       |
-| [**\_GroupUser Win32**](win32-groupuser.md)                           | Classe de associação<br/> Relaciona um grupo e uma conta que é membro desse grupo.<br/>                                           |
-| [**\_LogonSession Win32**](win32-logonsession.md)                     | Classe de instância<br/> Descreve a sessão de logon ou as sessões associadas a um usuário conectado ao Windows.<br/>                        |
-| [**\_LogonSessionMappedDisk Win32**](/windows/desktop/CIMWin32Prov/win32-logonsessionmappeddisk) | Classe de instância<br/> Representa os discos lógicos mapeados associados à sessão.<br/>                                            |
-| [**\_NetworkLoginProfile Win32**](win32-networkloginprofile.md)       | Classe de instância<br/> Representa as informações de logon de rede de um usuário específico em um sistema de computador que executa o Windows.<br/>           |
-| [**\_SystemAccount Win32**](win32-systemaccount.md)                   | Classe de instância<br/> Representa uma conta do sistema.<br/>                                                                                |
-| [**Conta userwin32 \_**](win32-useraccount.md)                       | Classe de instância<br/> Representa informações sobre uma conta de usuário em um sistema de computador que executa o Windows.<br/>                           |
-| [**\_UserInDomain Win32**](/previous-versions/windows/desktop/cimwin32a/win32-userindomain)                     | Classe de associação<br/> Relaciona uma conta de usuário e um domínio do Windows NT.<br/>                                                          |
+| [**Conta do \_ Win32**](win32-account.md)                               | Classe de instância<br/> Representa informações sobre contas de usuário e contas de grupo conhecidas para o sistema de computadores que executa Windows.<br/> |
+| [**Grupo \_ Win32**](win32-group.md)                                   | Classe de instância<br/> Representa dados sobre uma conta de grupo.<br/>                                                                      |
+| [**Win32 \_ GroupInDomain**](/previous-versions/windows/desktop/cimwin32a/win32-groupindomain)                   | Classe de associação<br/> Identifica as contas de grupo associadas a um Windows NT domínio.<br/>                                       |
+| [**Win32 \_ GroupUser**](win32-groupuser.md)                           | Classe de associação<br/> Relaciona um grupo e uma conta que é membro desse grupo.<br/>                                           |
+| [**\_LogonSession do Win32**](win32-logonsession.md)                     | Classe de instância<br/> Descreve a sessão de logon ou as sessões associadas a um usuário conectado ao Windows.<br/>                        |
+| [**Logon \_ do Win32SessionMappedDisk**](/windows/desktop/CIMWin32Prov/win32-logonsessionmappeddisk) | Classe de instância<br/> Representa os discos lógicos mapeados associados à sessão.<br/>                                            |
+| [**Win32 \_ NetworkLoginProfile**](win32-networkloginprofile.md)       | Classe de instância<br/> Representa as informações de logon de rede de um usuário específico em um sistema de computador executando Windows.<br/>           |
+| [**Win32 \_ SystemAccount**](win32-systemaccount.md)                   | Classe de instância<br/> Representa uma conta do sistema.<br/>                                                                                |
+| [**Win32 \_ UserAccount**](win32-useraccount.md)                       | Classe de instância<br/> Representa informações sobre uma conta de usuário em um sistema de computador executando Windows.<br/>                           |
+| [**Win32 \_ UserInDomain**](/previous-versions/windows/desktop/cimwin32a/win32-userindomain)                     | Classe de associação<br/> Relaciona uma conta de usuário e um Windows NT domínio.<br/>                                                          |
 
 
 
@@ -470,33 +470,33 @@ A subcategoria usuários agrupa as classes que representam informações de cont
 
 ## <a name="windows-event-log"></a>Log de eventos do Windows
 
-A subcategoria log de eventos do Windows agrupa classes que representam eventos, entradas de log de eventos, definições de configuração de log de eventos e assim por diante.
+As classes Windows de subcategoria do Log de Eventos que representam eventos, entradas de log de eventos, definições de configuração do log de eventos e assim por diante.
 
 
 
 | Classe                                                         | Descrição                                                                                                                                                                   |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NTEventlogFile Win32**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))         | Classe de instância<br/> Representa os dados armazenados em um arquivo de log de eventos do Windows.<br/>                                                                                      |
-| [**\_NTLogEvent Win32**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent)                 | Classe de instância<br/> Representa os eventos do Windows.<br/>                                                                                                               |
-| [**\_NTLogEventComputer Win32**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogeventcomputer) | Classe de associação<br/> Relaciona as instâncias de [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent) e [**Win32 \_ ComputerSystem**](win32-computersystem.md).<br/>         |
-| [**\_NTLogEventLog Win32**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogeventlog)           | Classe de associação<br/> Relaciona as instâncias das classes [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent) e [**Win32 \_ NTEventlogFile**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)) .<br/> |
-| [**\_NTLogEventUser Win32**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogeventuser)         | Classe de associação<br/> Relaciona as instâncias de [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent) e [**Win32 \_ USERACCOUNT**](win32-useraccount.md).<br/>               |
+| [**Win32 \_ NTEventlogFile**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))         | Classe de instância<br/> Representa os dados armazenados em um arquivo Windows log de eventos.<br/>                                                                                      |
+| [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent)                 | Classe de instância<br/> Representa Windows eventos.<br/>                                                                                                               |
+| [**Win32 \_ NTLogEventComputer**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogeventcomputer) | Classe de associação<br/> Relaciona instâncias de [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent) e [**Win32 \_ ComputerSystem**](win32-computersystem.md).<br/>         |
+| [**Win32 \_ NTLogEventLog**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogeventlog)           | Classe de associação<br/> Relaciona instâncias das [**classes Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent) e [**Win32 \_ NTEventlogFile.**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))<br/> |
+| [**Win32 \_ NTLogEventUser**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogeventuser)         | Classe de associação<br/> Relaciona instâncias de [**Win32 \_ NTLogEvent**](/previous-versions/windows/desktop/eventlogprov/win32-ntlogevent) e [**Win32 \_ UserAccount**](win32-useraccount.md).<br/>               |
 
 
 
  
 
-## <a name="windows-product-activation"></a>Ativação do produto Windows
+## <a name="windows-product-activation"></a>Windows Ativação do produto
 
-A ativação de produto do Windows (WPA) é uma tecnologia antipirataria para reduzir a cópia casual de software.
+Windows A Ativação de Produto (WPA) é uma tecnologia antiespaco para reduzir a cópia casual de software.
 
 
 
 | Classe                                                                                                               | Descrição                                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_ComputerSystemWindowsProductActivationSetting Win32**](/previous-versions/windows/desktop/licwmiprov/win32-computersystemwindowsproductactivationsetting) | Classe de associação<br/> Relaciona as instâncias do [**Win32 \_ ComputerSystem**](win32-computersystem.md) e [**Win32 \_ WindowsProductActivation**](/previous-versions/windows/desktop/legacy/aa394520(v=vs.85)).<br/> |
-| [**\_Proxy Win32**](/previous-versions/windows/desktop/legacy/aa394389(v=vs.85))                                                                                 | Classe de instância<br/> Contém propriedades e métodos para consultar e configurar uma conexão com a Internet relacionada ao WPA.<br/>                                                                |
-| [**\_WindowsProductActivation Win32**](/previous-versions/windows/desktop/legacy/aa394520(v=vs.85))                                           | Classe de instância<br/> Contém propriedades e métodos relacionados ao WPA.<br/>                                                                                                              |
+| [**Win32 \_ ComputerSystemWindowsProductActivationSetting**](/previous-versions/windows/desktop/licwmiprov/win32-computersystemwindowsproductactivationsetting) | Classe de associação<br/> Relaciona instâncias do [**Win32 \_ ComputerSystem e**](win32-computersystem.md) [**Win32 \_ WindowsProductActivation**](/previous-versions/windows/desktop/legacy/aa394520(v=vs.85)).<br/> |
+| [**Win32 \_ Proxy**](/previous-versions/windows/desktop/legacy/aa394389(v=vs.85))                                                                                 | Classe de instância<br/> Contém propriedades e métodos para consultar e configurar uma conexão com a Internet relacionada ao WPA.<br/>                                                                |
+| [**Win32 \_ WindowsProductActivation**](/previous-versions/windows/desktop/legacy/aa394520(v=vs.85))                                           | Classe de instância<br/> Contém propriedades e métodos relacionados ao WPA.<br/>                                                                                                              |
 
 
 
@@ -506,7 +506,7 @@ A ativação de produto do Windows (WPA) é uma tecnologia antipirataria para re
 
 <dl> <dt>
 
-[Classes Win32](/previous-versions//aa394084(v=vs.85))
+[Win32 Classes](/previous-versions//aa394084(v=vs.85))
 </dt> </dl>
 
  

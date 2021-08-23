@@ -8,12 +8,12 @@ keywords:
 - Funções ICDecompressEx
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25614f157436056f7f24c340f6cc6f4dbc62d9ae
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5006a019fd3fcf24a08f620186af8eb09d9516e103722395ed96722b48696cb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495596"
 ---
 # <a name="image-data-decompression"></a>Descompactação de Image-Data
 
@@ -32,11 +32,11 @@ As funções e macros do [**ICDecompressEx**](/windows/desktop/api/Vfw/nf-vfw-ic
 
 Se desejar descompactar dados e seu aplicativo exigir um formato de saída específico, você poderá usar a função [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery) para consultar o descompactador para determinar se ele dá suporte aos formatos de entrada e saída.
 
-Se o formato de saída não for importante em seu aplicativo, você precisará localizar apenas um descompactador que possa manipular o formato de entrada. Para determinar se um descompactador pode manipular o formato de entrada, use [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery) e especifique **NULL** para o parâmetro *lpbiDst* . Seu aplicativo pode determinar o tamanho do buffer necessário para os dados que especificam o formato de descompactação enviando a mensagem [**ICM \_ descompactar \_ Get \_ Format**](icm-decompress-get-format.md) (ou usar a macro [**ICDecompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize) ). Você também pode enviar **o \_ formato de \_ Get \_ do ICM** (ou a macro [**ICDecompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat) ) para recuperar os dados de formato. O descompactador retorna seu formato sugerido em uma estrutura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) . Esse formato normalmente preserva a maioria das informações durante a descompactação. Seu aplicativo deve garantir que o descompactador retorne com êxito antes de descompactar as informações.
+Se o formato de saída não for importante em seu aplicativo, você precisará localizar apenas um descompactador que possa manipular o formato de entrada. Para determinar se um descompactador pode manipular o formato de entrada, use [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery) e especifique **NULL** para o parâmetro *lpbiDst* . seu aplicativo pode determinar o tamanho do buffer necessário para os dados que especificam o formato de descompactação enviando a mensagem [**ICM \_ descompactar \_ GET \_ format**](icm-decompress-get-format.md) (ou usar a macro [**ICDecompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize) ). você também pode enviar **ICM \_ descompactar o \_ \_ formato GET** (ou a macro [**ICDecompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat) ) para recuperar os dados de formato. O descompactador retorna seu formato sugerido em uma estrutura [**BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) . Esse formato normalmente preserva a maioria das informações durante a descompactação. Seu aplicativo deve garantir que o descompactador retorne com êxito antes de descompactar as informações.
 
-Como seu aplicativo aloca a memória necessária para descompactação, ele precisa determinar a memória máxima que o descompactador pode exigir para o formato de saída. A mensagem de **\_ \_ obter \_ formato do ICM descompactar** Obtém o número de bytes que o descompactador usa para o formato padrão.
+Como seu aplicativo aloca a memória necessária para descompactação, ele precisa determinar a memória máxima que o descompactador pode exigir para o formato de saída. a **ICM \_ descompactar \_ obter \_** mensagem de formato obtém o número de bytes que o descompactador usa para o formato padrão.
 
-Se seu aplicativo define seu próprio formato usando [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery), ele também deve obter uma paleta para o bitmap; **ICDecompressExQuery** não fornece definições de paleta. (A maioria dos aplicativos usa formatos padrão e não precisa obter uma paleta.) Seu aplicativo pode obter a paleta enviando a mensagem [**ICM \_ descompactar a \_ \_ paleta**](icm-decompress-get-palette.md) (ou usar a macro [**ICDecompressGetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette) ).
+Se seu aplicativo define seu próprio formato usando [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery), ele também deve obter uma paleta para o bitmap; **ICDecompressExQuery** não fornece definições de paleta. (A maioria dos aplicativos usa formatos padrão e não precisa obter uma paleta.) seu aplicativo pode obter a paleta enviando a mensagem [**ICM \_ descompactar \_ obter a \_ paleta**](icm-decompress-get-palette.md) (ou usar a macro [**ICDecompressGetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette) ).
 
 ## <a name="decompressor-initialization"></a>Inicialização do descompactador
 
@@ -48,7 +48,7 @@ Você pode usar a função [**ICDecompressEx**](/windows/desktop/api/Vfw/nf-vfw-
 
 Se o fluxo de vídeo estiver atrasado atrás de outros componentes (como áudio) durante a reprodução, o aplicativo poderá especificar o sinalizador **ICDECOMPRESS \_ HURRYUP** para acelerar a descompactação. Para fazer isso, um descompactador pode extrair apenas as informações necessárias para descompactar o próximo quadro e não descompactar completamente o quadro atual. Portanto, seu aplicativo não deve tentar desenhar os dados descompactados quando ele usar esse sinalizador.
 
-Depois que o aplicativo tiver descompactado os dados, ele poderá enviar a mensagem de [**\_ \_ final DECOMPRESSEX do ICM**](icm-decompressex-end.md) (ou usar a macro [**ICDecompressExEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexend) ) para notificar o descompactador de que ele foi concluído. Se você quiser reiniciar a descompactação depois de usar essa função, seu aplicativo deverá reinicializar o descompactador usando [**ICDecompressExBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin).
+depois que o aplicativo tiver descompactado os dados, ele poderá enviar a mensagem de [**\_ \_ final ICM DECOMPRESSEX**](icm-decompressex-end.md) (ou usar a macro [**ICDecompressExEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexend) ) para notificar o descompactador de que ele foi concluído. Se você quiser reiniciar a descompactação depois de usar essa função, seu aplicativo deverá reinicializar o descompactador usando [**ICDecompressExBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -57,6 +57,6 @@ Depois que o aplicativo tiver descompactado os dados, ele poderá enviar a mensa
 [Serviços VCMs](vcm-services.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

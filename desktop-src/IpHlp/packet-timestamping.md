@@ -1,24 +1,24 @@
 ---
-title: Carimbo de data/hora do pacote
-description: As APIs de carimbo de data/hora de pacotes auxiliares de IP fornecem a capacidade de determinar o recurso de carimbo de data/hora de um adaptador de rede e consultar carimbos de data/hora do adaptador de rede na forma de carimbos de data/hora cruzado.
+title: Data/hora do pacote
+description: As APIs de data/hora do pacote auxiliar de IP fornecem a capacidade de determinar a capacidade de data/hora de um adaptador de rede e consultar os tempos de data/hora do adaptador de rede na forma de data/hora cruzada.
 ms.topic: article
 ms.date: 01/19/2021
-ms.openlocfilehash: 07743473bcb606ccdb86c55f14a3413adf10d73a
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 12da7189dbae5f38085cdf4ad5f8e9ac1214cff7ddd0b683ecd97b70b2786c51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146629"
 ---
-# <a name="packet-timestamping"></a>Carimbo de data/hora do pacote
+# <a name="packet-timestamping"></a>Data/hora do pacote
 
 ## <a name="introduction"></a>Introdução
 
-Muitas placas de interface de rede (NICs ou adaptadores de rede) podem gerar um carimbo de data/hora em seu hardware sempre que um pacote é recebido ou transmitido. O carimbo de data/hora é gerado usando o próprio relógio de hardware da NIC. Esse recurso é usado em particular pelo protocolo PTP, que é um protocolo de sincronização de tempo. O PTP faz o provisionamento para usar esses carimbos de data/hora de hardware dentro do próprio protocolo.
+Muitas NICs (placas de adaptador de rede ou adaptadores de rede) podem gerar um timestamp em seu hardware sempre que um pacote é recebido ou transmitido. O timestamp é gerado usando o próprio relógio de hardware da NIC. Esse recurso é usado em particular pelo protocolo PTP, que é um protocolo de sincronização de tempo. O PTP faz provisionamento para usar esses tempos de hardware dentro do próprio protocolo.
 
-Os carimbos de data/hora podem, por exemplo, ser usados para calcular o tempo gasto por um pacote dentro da pilha de rede do computador antes de ser enviado ou recebido da conexão. Esses cálculos podem ser usados pelo PTP para melhorar a precisão da sincronização de tempo. O suporte ao carimbo de data/hora de pacotes de adaptadores de rede é direcionado às vezes especificamente para o protocolo PTP. Em outros casos, é fornecido um suporte mais geral.
+Os timestamps podem, por exemplo, ser usados para calcular o tempo gasto por um pacote dentro da pilha de rede do computador antes de serem enviados ou recebidos da transmissão. Esses cálculos podem ser usados pelo PTP para melhorar a precisão da sincronização de tempo. O suporte ao timestamping de pacotes de adaptadores de rede é voltado às vezes especificamente para o protocolo PTP. Em outros casos, um suporte mais geral é fornecido.
 
-As APIs de carimbo de data/hora fornecem ao Windows a capacidade de dar suporte ao recurso de carimbo de data/hora de hardware de adaptadores de rede para o protocolo PTP versão 2. Em geral, os recursos incluem o fornecimento da capacidade de drivers de adaptadores de rede para dar suporte a carimbos de data/hora e os aplicativos de modo de usuário consomem carimbos de data/hora associados a pacotes por meio do [Windows Sockets](/windows/win32/winsock/windows-sockets-start-page-2) (consulte [marcação de hora do Winsock](/windows/win32/winsock/winsock-timestamping)). Além disso, a capacidade de gerar carimbos de data/hora do software também está disponível, o que permite que um driver de rede gere carimbos de data/hora no software. Esses carimbos de data/hora de software são gerados por drivers NIC usando o equivalente em modo kernel de [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (Qpc). No entanto, ter os carimbos de data/hora de hardware *e* software habilitados juntos não tem suporte.
+As APIs de data/hora Windows a capacidade de dar suporte à funcionalidade de data/hora de hardware dos adaptadores de rede para o protocolo PTP versão 2. Em geral, os recursos incluem fornecer a capacidade de drivers de adaptadores de rede para dar suporte a timestamps e para aplicativos de modo de usuário consumirem os timestamps associados a pacotes por meio de soquetes [Windows](/windows/win32/winsock/windows-sockets-start-page-2) (consulte [Winsock timestamping](/windows/win32/winsock/winsock-timestamping)). Além disso, a capacidade de gerar os timestamps de software também está disponível, o que permite que um driver de rede gere os timestamps no software. Esses timestamps de software são gerados por drivers NIC usando o equivalente de modo kernel [**de QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC). No entanto, não há suporte *para* ter osstamps de tempo de hardware e software habilitados juntos.
 
 Em particular, as APIs de data/hora do pacote do Auxiliar de Protocolo IP descritas neste tópico fornecem a capacidade de aplicativos de modo de usuário determinarem a funcionalidade de data/hora de um adaptador de rede e consultarem os tempos de data/hora do adaptador de rede na forma de data/hora cruzada (descrito abaixo).
 
@@ -28,37 +28,37 @@ Conforme mencionado, o principal objetivo do suporte ao timestamping no Windows 
 
 Há suporte para o timestamping para PTPv2 operando no *modo de duas etapas.* *2* etapa refere-se ao modo em que osstamps de data/hora reais nos pacotes PTP não são gerados em tempo real no hardware, mas são recuperados do hardware e transmitidos como mensagens separadas (por exemplo, usando uma mensagem de acompanhamento).
 
-Em resumo, você pode usar as APIs de data/hora do pacote do Auxiliar de Protocolo IP (Auxiliar de IP), juntamente com o suporte de data/hora do Winsock, em um aplicativo PTPv2 para melhorar sua precisão de sincronização de tempo.
+Em resumo, você pode usar as APIs de data/hora do pacote do Auxiliar de Protocolo IP (Auxiliar de Ip), juntamente com o suporte ao timestamping do Winsock, em um aplicativo PTPv2 para melhorar sua precisão de sincronização de tempo.
 
 ## <a name="retrieving-the-timestamping-capabilities-of-a-network-adapter"></a>Recuperando os recursos de data/hora de um adaptador de rede
 
 Um aplicativo como um serviço de sincronização de tempo PTP precisa determinar a capacidade de data/hora de um adaptador de rede. Usando os recursos recuperados, o aplicativo pode decidir se deseja ou não usar os timestamps.
 
-Mesmo se um adaptador de *rede dá* suporte a timestamps, é necessário manter a capacidade desligada por padrão. Um adaptador liga o timestamping quando instruído a fazer isso. O Windows fornece APIs para um aplicativo recuperar a funcionalidade do hardware, bem como quais recursos estão ligado.
+Mesmo se um adaptador de *rede dá* suporte a timestamps, é necessário manter a capacidade desligada por padrão. Um adaptador liga o timestamping quando instruído a fazer isso. Windows fornece APIs para um aplicativo recuperar a funcionalidade do hardware, bem como quais recursos estão ligado.
 
-Para recuperar os recursos de carimbo de data/hora com suporte de um adaptador de rede, chame a função [**GetInterfaceSupportedTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities) , fornecendo o identificador local exclusivo (LUID) do adaptador de rede e, em retornar, recuperando os recursos de carimbo de data/hora com suporte na forma de um objeto de [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) .
+Para recuperar os recursos de timestamp com suporte de um adaptador de rede, chame a função [**GetInterfaceSupportedTimestampCapabilities,**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities) fornecendo o LUID (identificador exclusivo local) do adaptador de rede e, em troca, recuperando os recursos de data/hora com suporte na forma de um [**objeto INTERFACE_TIMESTAMP_CAPABILITIES.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
 
-O código retornado de **GetInterfaceSupportedTimestampCapabilities** indica se a chamada foi bem-sucedida e se um valor de **INTERFACE_TIMESTAMP_CAPABILITIES** populado foi recuperado ou não.
+O código retornado de **GetInterfaceSupportedTimestampCapabilities** indica se a chamada foi bem-sucedida ou não e se um valor INTERFACE_TIMESTAMP_CAPABILITIES foi recuperado ou não. 
 
-Para recuperar os recursos de carimbo de data/hora habilitados no momento de um adaptador de rede, chame a função [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) , fornecendo o identificador local exclusivo (LUID) do adaptador de rede e, em seguida, retorne a recuperação dos recursos de carimbo de data/hora habilitados na forma de um objeto de [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) .
+Para recuperar as funcionalidades de timestamp atualmente habilitadas de um adaptador de rede, chame a função [**GetInterfaceActiveTimestampCapabilities,**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) fornecendo o LUID (identificador exclusivo local) do adaptador de rede e, em troca, recuperando os recursos de data/hora habilitados na forma de um [**objeto INTERFACE_TIMESTAMP_CAPABILITIES.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
 
-Novamente, o código retornado de **GetInterfaceActiveTimestampCapabilities** indica êxito ou falha e se um valor de **INTERFACE_TIMESTAMP_CAPABILITIES** válido foi recuperado ou não.
+Novamente, o código retornado de **GetInterfaceActiveTimestampCapabilities** indica êxito ou falha e se um **valor** INTERFACE_TIMESTAMP_CAPABILITIES válido foi recuperado ou não.
 
-Os adaptadores de rede podem dar suporte a uma variedade de recursos de carimbo de data/hora. Por exemplo, alguns adaptadores podem ter carimbo de data/hora de cada pacote durante o envio e recebimento, enquanto outros dão suporte apenas a pacotes PTPv2. A estrutura de [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) descreve os recursos exatos aos quais um adaptador de rede dá suporte.
+Os adaptadores de rede podem dar suporte a uma variedade de recursos de data/hora. Por exemplo, alguns adaptadores podem fazer o timestamp de cada pacote durante o envio e o recebimento, enquanto outros só suportam pacotes PTPv2. A [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) estrutura descreve as funcionalidades exatas que um adaptador de rede dá suporte.
 
-## <a name="retrieving-cross-timestamps-from-a-network-adapter"></a>Recuperando carimbos de data/hora cruzados de um adaptador de rede
+## <a name="retrieving-cross-timestamps-from-a-network-adapter"></a>Recuperando osstamps de data/hora cruzados de um adaptador de rede
 
-Ao usar carimbos de data/hora de hardware, um aplicativo PTP precisa estabelecer uma relação (por exemplo, usando técnicas matemáticas apropriadas) entre o relógio de hardware do adaptador de rede e um relógio do sistema. Isso é necessário para que um valor que representa uma hora na unidade de um relógio possa ser convertido em outra unidade do relógio. Os carimbos de data/hora cruzado são fornecidos para essa finalidade e seu aplicativo pode fazer amostras de carimbos de data/hora periodicamente para estabelecer essa relação.
+Ao usar os tempos de data/hora de hardware, um aplicativo PTP precisa estabelecer uma relação (por exemplo, usando técnicas matemáticas apropriadas) entre o relógio de hardware do adaptador de rede e um relógio do sistema. Isso é necessário para que um valor que representa uma hora na unidade de um relógio possa ser convertido em outra unidade do relógio. Os tempos de data/hora são fornecidos para essa finalidade e seu aplicativo pode fazer a amostragem de data/hora periodicamente para estabelecer essa relação.
 
-Para fazer isso, chame a função [**CaptureInterfaceHardwareCrossTimestamp,**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) fornecendo o LUID (identificador exclusivo local) do adaptador de rede e, em troca, recuperando o timestamp do adaptador de rede na forma de um [**objeto INTERFACE_HARDWARE_CROSSTIMESTAMP.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp)
+Para fazer isso, chame a função [**CaptureInterfaceHardwareCrossTimestamp,**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) fornecendo o LUID (identificador local exclusivo) do adaptador de rede e, em troca, recuperando o timestamp do adaptador de rede na forma de um [**objeto INTERFACE_HARDWARE_CROSSTIMESTAMP.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp)
 
 ## <a name="timestamp-capability-change-notifications"></a>Notificações de alteração de funcionalidade de data/hora
 
-Para ser notificado se as funcionalidades de data/hora de um adaptador de rede mudarem, chame a função [**RegisterInterfaceTimestampConfigChange,**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange) fornecendo um ponteiro para a função de retorno de chamada que você implementou, juntamente com um contexto alocado pelo chamador opcional.
+Para ser notificado se as funcionalidades de timestamp de um adaptador de rede mudarem, chame a função [**RegisterInterfaceTimestampConfigChange,**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange) fornecendo um ponteiro para a função de retorno de chamada que você implementou, junto com um contexto opcional alocado pelo chamador.
 
 **RegisterInterfaceTimestampConfigChange** retorna um handle que você pode passar subsequentemente para [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-unregisterinterfacetimestampconfigchange) para não registrar sua função de retorno de chamada.
 
-## <a name="code-example-1mdashretrieving-timestamp-capabilities-and-cross-timestamps"></a>Exemplo de código 1 &mdash; recuperando recursos de timestamp e data/hora cruzada
+## <a name="code-example-1mdashretrieving-timestamp-capabilities-and-cross-timestamps"></a>Exemplo de código 1 &mdash; recuperando funcionalidades de timestamp e data/hora cruzada
 
 ```c
 // main.cpp in a Console App project.

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_SETCOUNT (WinUser. h)
-description: Define a contagem de itens em uma caixa de listagem criada com o \_ estilo NOdata de lbs e não é criada com o \_ estilo lbs HASSTRINGS.
+title: LB_SETCOUNT mensagem (Winuser.h)
+description: Define a contagem de itens em uma caixa de listagem criada com o estilo NODATA LBS e não criada com o estilo \_ \_ HASSTRINGS do LBS.
 ms.assetid: 3ebc4237-24d3-443f-86d5-bdcd66a31baf
 keywords:
-- Controles de LB_SETCOUNT de mensagens do Windows
+- LB_SETCOUNT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2042bcf0e0cbe7f5daacfcf7f493a070860ac9a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e1b3f68a67de2b7caa77cfd7c9e6f2a5b164e20af42100882fef1aad04eca14
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433937"
 ---
-# <a name="lb_setcount-message"></a>\_Mensagem do número de contagem lb
+# <a name="lb_setcount-message"></a>Mensagem \_ LB SETCOUNT
 
-Define a contagem de itens em uma caixa de listagem criada com o estilo [**\_ NODATA de lbs**](list-box-styles.md) e não é criada com o estilo [**lbs \_ HASSTRINGS**](list-box-styles.md) .
+Define a contagem de itens em uma caixa de listagem criada com o estilo [**\_ NODATA LBS**](list-box-styles.md) e não criada com o estilo [**\_ HASSTRINGS do LBS.**](list-box-styles.md)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,7 +34,7 @@ Define a contagem de itens em uma caixa de listagem criada com o estilo [**\_ NO
 
 Especifica a nova contagem de itens na caixa de listagem.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows me): o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me) : o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
 
 </dd> <dt>
 
@@ -45,13 +45,13 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se ocorrer um erro, o valor de retorno será um erro de LB \_ . Se não houver memória suficiente para armazenar os itens, o valor de retorno será LB \_ ERRSPACE.
+Se ocorrer um erro, o valor de retorno será LB \_ ERR. Se não houver memória suficiente para armazenar os itens, o valor de retorno será LB \_ ERRSPACE.
 
 ## <a name="remarks"></a>Comentários
 
-Há suporte para a mensagem de **\_ número de lb** somente por caixas de listagem criadas com o estilo do [**lbs \_ NODATA**](list-box-styles.md) e não criadas com o estilo de [**lbs \_ HASSTRINGS**](list-box-styles.md) . Todas as outras caixas de listagem retornam o \_ erro lb.
+A **mensagem \_ LB SETCOUNT** tem suporte apenas por caixas de listagem criadas com o estilo [**\_ NODATA lbS**](list-box-styles.md) e não criadas com o estilo [**\_ HASSTRINGS do LBS.**](list-box-styles.md) Todas as outras caixas de listagem retornam \_ LB ERR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Há suporte para a mensagem de **\_ número de lb** somente por caixas de listag
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Há suporte para a mensagem de **\_ número de lb** somente por caixas de listag
 
 <dl> <dt>
 
-[**GetCount de LB \_**](lb-getcount.md)
+[**LB \_ GETCOUNT**](lb-getcount.md)
 </dt> </dl>
 
  

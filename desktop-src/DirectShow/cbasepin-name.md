@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0294baf2c7a399bf7e75bb69bbb2b46723e5d002
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0bb519e67bf1def3abeb98bcfea1310d9b6fe68f06e891e44f925e267982f2e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429876"
 ---
 # <a name="cbasepinname-method"></a>Método CBasePin.Name
 
@@ -40,7 +40,7 @@ LPWSTR Name();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor da variável de membro [**CBasePin:: m \_ pname**](cbasepin-m-pname.md) .
 
@@ -50,7 +50,7 @@ Retorna o valor da variável de membro [**CBasePin:: m \_ pname**](cbasepin-m-pn
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

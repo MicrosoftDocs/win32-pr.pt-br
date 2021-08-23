@@ -1,9 +1,9 @@
 ---
-title: função glVertex2dv (GL. h)
-description: Especifica um vértice. | função glVertex2dv (GL. h)
+title: Função glVertex2dv (Gl.h)
+description: Especifica um vértice. | Função glVertex2dv (Gl.h)
 ms.assetid: b685d0aa-2874-4ad9-a20c-86823e9ad00b
 keywords:
-- função glVertex2dv OpenGL
+- Função glVertex2dv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4839fa650302a67c98a0aef3d227dfafa8ddb688
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2cbaf49ed5e1b53da7c0c4968acbab48880e6193b5f61f0179a47b40972f8236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488316"
 ---
-# <a name="glvertex2dv-function"></a>função glVertex2dv
+# <a name="glvertex2dv-function"></a>Função glVertex2dv
 
 Especifica um vértice.
 
@@ -40,7 +40,7 @@ void WINAPI glVertex2dv(
 
 <dl> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Um ponteiro para uma matriz de dois elementos. Os elementos são as coordenadas x e y de um vértice.
@@ -59,8 +59,8 @@ Essa função não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

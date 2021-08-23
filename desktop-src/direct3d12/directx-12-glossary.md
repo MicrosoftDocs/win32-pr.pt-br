@@ -6,12 +6,12 @@ ms.assetid: 46B0F055-7E4F-4F8D-9915-3D195FD695B7
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a84b4b2e5a993b33b4c322b91682c8f9b5499bc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c4a7ad8d9c925d4bd3b82a3c7dd177a58afd7f50fb82836bed56fac6a20c8f6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496876"
 ---
 # <a name="direct3d-12-glossary"></a>Glossário do Direct3D 12
 
@@ -211,7 +211,7 @@ A associação de recursos é o processo de vinculação de recursos (texturas, 
 <span id="direct3d12.directx_12_glossary_resource_heaps"></span><span id="DIRECT3D12.DIRECTX_12_GLOSSARY_RESOURCE_HEAPS"></span>**heaps de recursos**
 </dt> <dd>
 
-Heaps de recursos é um termo genérico para os heaps que são buffers de memória separados para manter recursos à medida que são transferidos para e da GPU. Uma transferência para a GPU requer um heap de carregamento, da GPU para a CPU requer um heap readback e um heap persistente para a GPU a ser mantido em vários quadros de renderização é chamado de heap padrão.
+Heaps de recursos é um termo genérico para os heaps que são buffers de memória separados para manter recursos à medida que são transferidos para e da GPU. uma transferência para a GPU requer um heap de Upload, da gpu para a CPU requer um heap Readback e um heap persistente para a GPU a ser mantido em vários quadros de renderização é chamado de heap padrão.
 
 </dd> <dt>
 
@@ -295,7 +295,7 @@ Um heap de modo de usuário que se concentra na transferência de dados da CPU p
 <span id="direct3d12.directx_12_glossary_user_mode_heap"></span><span id="DIRECT3D12.DIRECTX_12_GLOSSARY_USER_MODE_HEAP"></span>**heap de modo de usuário**
 </dt> <dd>
 
-Uma coleção de alocações de memória grandes e contíguas que são recicladas sem reconhecimento de qualquer componente de kernel: os métodos de alocação e destruição não chamam métodos de alocação e destruição de kernel durante o estado Steady. Upload, readback e heaps padrão são variantes de heaps de modo de usuário.
+Uma coleção de alocações de memória grandes e contíguas que são recicladas sem reconhecimento de qualquer componente de kernel: os métodos de alocação e destruição não chamam métodos de alocação e destruição de kernel durante o estado Steady. Upload, Readback e heaps padrão são variantes de heaps de modo de usuário.
 
 </dd> <dt>
 
@@ -306,6 +306,6 @@ Uma coleção de alocações de memória grandes e contíguas que são reciclada
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

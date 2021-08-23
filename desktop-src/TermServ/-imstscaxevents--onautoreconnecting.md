@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3435be46f2bb2c7bcf8ca662b039f3e5ef856d8b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2a26bb57416cd73f6d838ab08167923c4900b7b923a6a6f411239bbacd3fdbac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119309136"
 ---
 # <a name="imstscaxeventsonautoreconnecting-method"></a>Método IMsTscAxEvents:: OnAutoReconnecting
 
@@ -101,7 +101,7 @@ O processo de reconexão está ocorrendo manualmente.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -118,7 +118,7 @@ Quando o estado do processo de reconexão automática for alterado definindo o v
 
  
 
-Quando o estado do processo de reconexão automática for alterado definindo o valor do parâmetro *pArcContinueStatus* como **autoReconnectContinueManual**, o contêiner controlará manualmente o processo de reconexão automática chamando [**Connect**](imstscax-connect.md) para disparar uma tentativa de conexão ou [**Desconectar**](imstscax-disconnect.md) para cancelar o processo de reconexão automática. Uma vez definido com esse valor, o controle irá parar de fazer tentativas de reconexão automática e se tornará a política do contêiner para fazer chamadas **Connect** para disparar tentativas de reconexão automática. Isso é feito quando o contêiner fornece o comportamento da interface do usuário personalizada para reconexão automática, como reiniciar uma conexão RAS ou VPN descartada antes do processo de reconexão automática.
+quando o estado do processo de reconexão automática for alterado definindo o valor do parâmetro *pArcContinueStatus* como **autoReconnectContinueManual**, o contêiner controlará manualmente o processo de reconexão automática chamando [**Conexão**](imstscax-connect.md) para disparar uma tentativa de conexão ou [**desconectar**](imstscax-disconnect.md) para cancelar o processo de reconexão automática. uma vez definido com esse valor, o controle interromperá as tentativas de reconexão automática e se tornará a política do contêiner para fazer chamadas de **Conexão** para disparar tentativas de reconexão automática. Isso é feito quando o contêiner fornece o comportamento da interface do usuário personalizada para reconexão automática, como reiniciar uma conexão RAS ou VPN descartada antes do processo de reconexão automática.
 
 Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 

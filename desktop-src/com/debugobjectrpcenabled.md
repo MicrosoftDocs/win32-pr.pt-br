@@ -4,12 +4,12 @@ description: O DebugObjectRPCEnabled habilita a depuração COM remota via RPC. 
 ms.assetid: 26c9ed13-f7cb-476f-b51e-510448334f92
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b07d8dc6f704b42847ca3041ed46e69d8b0dc05
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2291b83a37f795ce74afcff2a2872ca7aedd52fdf473cb69067f73938b0fb6b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501267"
 ---
 # <a name="debugobjectrpcenabled"></a>DebugObjectRPCEnabled
 
@@ -17,7 +17,7 @@ O **DebugObjectRPCEnabled** habilita a depuração com remota via RPC. Se essa c
 
 ## <a name="registry-key"></a>Chave do Registro
 
-**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ DebugObjectRPCEnabled**
+**HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion \\ DebugObjectRPCEnabled**
 
 
 
@@ -27,7 +27,7 @@ O **DebugObjectRPCEnabled** habilita a depuração com remota via RPC. Se essa c
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -42,9 +42,9 @@ O **DebugObjectRPCEnabled** habilita a depuração com remota via RPC. Se essa c
 [**ORPC \_ DBG \_ All**](orpc-dbg-all.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

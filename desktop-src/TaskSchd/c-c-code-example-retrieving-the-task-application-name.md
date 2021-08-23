@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código C/C++ recuperando o nome do aplicativo da tarefa
-description: Este exemplo recupera o nome do aplicativo associado a uma determinada tarefa e exibe esse nome na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+title: Exemplo de código C/C++ recuperando o nome do aplicativo de tarefa
+description: Este exemplo recupera o nome do aplicativo associado a uma determinada tarefa e exibe esse nome na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 ms.assetid: 7cf20a14-fee3-4507-83a9-4a081a9783fc
 keywords:
-- Recuperando nomes de aplicativos Agendador de Tarefas
-- Recuperando propriedades da tarefa Agendador de Tarefas, nome do aplicativo
+- recuperando nomes de aplicativos Agendador de Tarefas
+- recuperando propriedades da tarefa Agendador de Tarefas , nome do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeb590900cf7b4c6d8821560e91e2f05c21c0f73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dde0d00910ab590e8668e66da3380744a85228e86dafba4d1db7349b24bb80a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105759958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139629"
 ---
-# <a name="cc-code-example-retrieving-the-task-application-name"></a>Exemplo de código do C/C++: Recuperando o nome do aplicativo da tarefa
+# <a name="cc-code-example-retrieving-the-task-application-name"></a>Exemplo de código C/C++: recuperando o nome do aplicativo de tarefa
 
-Este exemplo recupera o nome do aplicativo associado a uma determinada tarefa e exibe esse nome na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+Este exemplo recupera o nome do aplicativo associado a uma determinada tarefa e exibe esse nome na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 
 
 ```C++
@@ -119,12 +119,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

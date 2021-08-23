@@ -1,23 +1,23 @@
 ---
-title: Exemplo de relógio Direct2D
-description: Este aplicativo de exemplo mostra como usar transformações no Direct2D para desenhar as mãos de um relógio.
+title: Direct2D Exemplo de relógio
+description: este aplicativo de exemplo mostra como usar transformações no Direct2D para desenhar as mãos de um relógio.
 ms.assetid: 7A4B0985-977A-4AB2-B8AF-0586C8533F08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cf8e346502cf826fff9053e29dc9d9749e529a6
-ms.sourcegitcommit: 8eac40ea4d87a85e036ed5bbffec7b7a3dab39ec
+ms.openlocfilehash: 8101dc6ed56b3dc38afa4072aee13bc811874653f002cc607f1cc67c57bed2d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "104006216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146409"
 ---
-# <a name="direct2d-clock-sample"></a>Exemplo de relógio Direct2D
+# <a name="direct2d-clock-sample"></a>Direct2D Exemplo de relógio
 
-Este aplicativo de exemplo mostra como usar transformações no Direct2D para desenhar as mãos de um relógio.
+este aplicativo de exemplo mostra como usar transformações no Direct2D para desenhar as mãos de um relógio.
 
 ## <a name="description"></a>Descrição
 
-O aplicativo de exemplo Direct2D Clock desenha um relógio analógico, conforme mostrado na captura de tela a seguir. Este exemplo é abordado na [aplicação de transformações no Direct2D](applying-transforms-in-direct2d.md).
+o aplicativo de exemplo Direct2D relógio desenha um relógio analógico, conforme mostrado na captura de tela a seguir. Este exemplo é discutido em [aplicando transformações no Direct2D](applying-transforms-in-direct2d.md).
 
 ![uma captura de tela do programa de relógio.](images/clock.png)
 
@@ -29,18 +29,18 @@ Este exemplo está disponível [aqui](https://github.com/microsoft/Windows-class
 
 <dl> <dt>
 
-[Aprenda a programar para Windows: código de exemplo](learn-to-program-for-windows--sample-code.md)
+[aprenda a programar para Windows: código de exemplo](learn-to-program-for-windows--sample-code.md)
 </dt> <dt>
 
 [Aplicar transformações em Direct2D](applying-transforms-in-direct2d.md)
 </dt> <dt>
 
-[Módulo 3: gráficos do Windows](module-3---windows-graphics.md)
+[módulo 3: gráficos de Windows](module-3---windows-graphics.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

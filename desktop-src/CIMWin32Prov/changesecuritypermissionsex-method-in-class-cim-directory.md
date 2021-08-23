@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f2d8ddf4c6ffdbd016db1e8c08d89f2dd6476ccf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5711a951167c0bbd3cc086ad409fdc265b8883191071ed541955252a908a3c34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323186"
 ---
 # <a name="changesecuritypermissionsex-method-of-the-cim_directory-class"></a>Método ChangeSecurityPermissionsEx da classe de \_ diretório CIM
 
@@ -141,7 +141,7 @@ Se **for true**, o método também será aplicado recursivamente a arquivos e di
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -161,7 +161,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 

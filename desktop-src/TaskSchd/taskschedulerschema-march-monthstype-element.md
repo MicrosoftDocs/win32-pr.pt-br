@@ -1,9 +1,9 @@
 ---
-title: Elemento de março (monthtype)
-description: Especifica que a tarefa é executada em março.
+title: Elemento March (monthsType)
+description: Especifica que a tarefa é executado em março.
 ms.assetid: 0cd82405-8e17-483d-88ba-32cae590f6b3
 keywords:
-- Elemento de março Agendador de Tarefas
+- Elemento march Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bf6792cf65ab3aecb74bff82282daa0d8fb2bdc6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d90d64e0fd275f57252cd435ae5dc42abfe8ba17613e1b20425fc27c515509e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139179"
 ---
-# <a name="march-monthstype-element"></a>Elemento de março (monthtype)
+# <a name="march-monthstype-element"></a>Elemento March (monthsType)
 
-Especifica que a tarefa é executada em março.
+Especifica que a tarefa é executado em março.
 
 ``` syntax
 <xs:element name="March">
@@ -30,7 +30,7 @@ Especifica que a tarefa é executada em março.
 </xs:element>
 ```
 
-O elemento **março** é definido pelo tipo complexo [**monthtype**](taskschedulerschema-monthstype-complextype.md) .
+O **elemento March** é definido pelo tipo complexo [**monthsType.**](taskschedulerschema-monthstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,8 +38,8 @@ O elemento **março** é definido pelo tipo complexo [**monthtype**](taskschedul
 
 | Elemento                                                                                                          | Derivado de                                                     | Descrição                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Meses (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthtype**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executada para uma agenda mensal de dia da semana.<br/> |
-| [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthtype**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executada por um agendamento mensal.<br/>             |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executado para um agendamento mensal do dia da semana.<br/> |
+| [**Meses (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica os meses do ano durante os quais a tarefa é executado para um agendamento mensal.<br/>             |
 
 
 
@@ -62,8 +62,8 @@ O XML a seguir define um calendário de meses que executa a tarefa em março.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ O XML a seguir define um calendário de meses que executa a tarefa em março.
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

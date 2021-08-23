@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 7ff503758a50437b4b7ff974fe4455d4b92ce978
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60004c56d9d6dec8aa7b5afc9c77e3c5af813020db387172b06a0c802bd9fd8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119481536"
 ---
 # <a name="iscardcmdget_replystatussw2-method"></a>Método ISCardCmd:: get \_ ReplyStatusSW2
 
-\[O método **Get \_ ReplyStatusSW2** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **Get \_ ReplyStatusSW2** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O método **Get \_ ReplyStatusSW2** recupera o byte de status de [*resposta do APDU*](../secgloss/r-gly.md) SW2.
 
@@ -48,7 +48,7 @@ Ponteiro para o byte que contém o valor do byte SW2 no retorno.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -101,11 +101,11 @@ if (FAILED(hr))
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardCmd é definido como D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |

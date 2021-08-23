@@ -1,12 +1,12 @@
 ---
-title: Método IMsTscAxEvents OnLeaveFullScreenMode
-description: Chamado quando o cliente deixa o modo de tela inteira. Por exemplo, esse evento é chamado quando o usuário pressiona a combinação de teclas de atalho no modo de tela inteira (CTRL + ALT + BREAK).
+title: Método OnLeaveFullScreenMode IMsTscAxEvents
+description: Chamado quando o cliente sai do modo de tela inteira. Por exemplo, esse evento é chamado quando o usuário pressiona a combinação de teclas de atalho do modo de tela inteira (CTRL+ALT+BREAK).
 ms.assetid: 95c5d427-b6e2-4a42-9816-b130ab533ac0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnLeaveFullScreenMode
-- Método OnLeaveFullScreenMode Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnLeaveFullScreenMode
+- Método OnLeaveFullScreenMode Serviços de Área de Trabalho Remota
+- Método OnLeaveFullScreenMode Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota , método OnLeaveFullScreenMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b4ee414f2dceba35a17ff86bce03c83d75aab48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: efacca782d771337ffe3419bd9820be268cacc1ae6f7d33f04a4bb8127079c7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138439"
 ---
-# <a name="imstscaxeventsonleavefullscreenmode-method"></a>Método IMsTscAxEvents:: OnLeaveFullScreenMode
+# <a name="imstscaxeventsonleavefullscreenmode-method"></a>Método IMsTscAxEvents::OnLeaveFullScreenMode
 
-Chamado quando o cliente deixa o modo de tela inteira. Por exemplo, esse evento é chamado quando o usuário pressiona a combinação de [teclas de atalho](terminal-services-shortcut-keys.md) no modo de tela inteira (Ctrl + Alt + Break).
+Chamado quando o cliente sai do modo de tela inteira. Por exemplo, esse evento é chamado quando o usuário pressiona a combinação de teclas de atalho do modo de tela [inteira](terminal-services-shortcut-keys.md) (CTRL+ALT+BREAK).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,13 +41,13 @@ void OnLeaveFullScreenMode();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
-description: Layout das chaves do registro
+description: Layout das chaves do Registro
 ms.assetid: c041d094-8165-446f-bf77-0d53b728fe7a
-title: Layout das chaves do registro
+title: Layout das chaves do Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5783a9f083f639912188f418238f46a5d45ed922
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4473027b2612d16b3c6daee4f8e708d90b993397b133db111aa55c58e9c4ceb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105758430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502286"
 ---
-# <a name="layout-of-the-registry-keys"></a>Layout das chaves do registro
+# <a name="layout-of-the-registry-keys"></a>Layout das chaves do Registro
 
-Os filtros do DirectShow são registrados em dois locais:
+DirectShow filtros são registrados em dois locais:
 
--   A DLL que contém o filtro é registrada como o servidor COM do filtro. Quando um aplicativo chama **CoCreateInstance** para criar o filtro, a biblioteca com do Microsoft Windows usa essa entrada de registro para localizar a dll.
--   Informações adicionais sobre o filtro podem ser registradas em uma categoria de filtro. Essas informações permitem que o [enumerador de dispositivo do sistema](system-device-enumerator.md) e o [mapeador de filtro](filter-mapper.md) localizem o filtro.
+-   A DLL que contém o filtro é registrada como o servidor COM do filtro. Quando um aplicativo chama **CoCreateInstance** para criar o filtro, a biblioteca COM do Microsoft Windows usa essa entrada do Registro para localizar a DLL.
+-   Informações adicionais sobre o filtro podem ser registradas em uma categoria de filtro. Essas informações permitem que o [Enumerador de Dispositivo do Sistema](system-device-enumerator.md) e o [Mapeador](filter-mapper.md) de Filtro localizem o filtro.
 
-Os filtros não são necessários para registrar as informações de filtro adicionais. Desde que a DLL seja registrada como o servidor COM, um aplicativo pode criar o filtro e adicioná-lo a um grafo de filtro. No entanto, se você quiser que o filtro seja detectável pelo enumerador de dispositivo do sistema ou pelo mapeador de filtro, deverá registrar as informações adicionais.
+Os filtros não são necessários para registrar as informações de filtro adicionais. Desde que a DLL esteja registrada como o servidor COM, um aplicativo pode criar o filtro e adicioná-lo a um grafo de filtro. No entanto, se você quiser que seu filtro seja descoberto pelo Enumerador de Dispositivo do Sistema ou pelo Mapeador de Filtros, registre as informações adicionais.
 
-A entrada do registro para a DLL tem as seguintes chaves:
+A entrada do Registro para a DLL tem as seguintes chaves:
 
 
 ```
@@ -36,7 +36,7 @@ HKEY_CLASSES_ROOT
 
 
 
-A entrada de registro para as informações de filtro tem as seguintes chaves:
+A entrada do Registro para as informações de filtro tem as seguintes chaves:
 
 
 ```
@@ -59,9 +59,9 @@ Category
 
 
 
-é o GUID de uma categoria de filtro. (Consulte [Filtrar categorias](filter-categories.md).) As informações do filtro são incluídas em um formato binário. A interface [**IFilterMapper2**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) desempacota esses dados quando procura um filtro no registro.
+é o GUID de uma categoria de filtro. (Consulte [Categorias de Filtro](filter-categories.md).) As informações de filtro são empacotadas em um formato binário. A interface [**IFilterMapper2 descompacta**](/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2) esses dados quando pesquisa um filtro no Registro.
 
-Todos os GUIDs de categoria de filtro estão listados no registro na seguinte chave:
+Todos os GUIDs da categoria de filtro são listados no Registro sob a seguinte chave:
 
 
 ```C++

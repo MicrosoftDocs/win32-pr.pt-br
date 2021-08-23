@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00fa4c1f963841d0c1ea0375cdf11913b28d0286
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 47975b2c4586728fc4727044b7340d87c275c5a5f47aac1c68ab3d9fdafbda6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119424406"
 ---
 # <a name="imsrdpclientadvancedsettingshotkeyctrlaltdel-property"></a>Propriedade IMsRdpClientAdvancedSettings:: HotKeyCtrlAltDel
 
@@ -72,7 +72,7 @@ Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determi
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```C++

@@ -1,23 +1,23 @@
 ---
 description: Solicita permissão para suspender o computador. Um aplicativo que concede permissão deve realizar preparações para a suspensão antes de retornar.
 ms.assetid: 83cb0fdc-437e-4d03-87f0-6a416281c0d5
-title: Evento de PBT_APMQUERYSUSPEND (WinUser. h)
+title: PBT_APMQUERYSUSPEND evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 277e4faf7617037b917dedab3193e421a381166a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e8063ce68a88c8a39cb6f9ab8a4f559aed41242eaae25fab616ace8793b16ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143379"
 ---
-# <a name="pbt_apmquerysuspend-event"></a>\_Evento PBT APMQUERYSUSPEND
+# <a name="pbt_apmquerysuspend-event"></a>Evento PBT \_ APMQUERYSUSPEND
 
-\[PBT \_ APMQUERYSUSPEND está disponível para uso nos sistemas operacionais especificados na seção requisitos. O suporte para esse evento foi removido no Windows Vista. Use [**SetThreadExecutionState**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate) em vez disso.\]
+\[PBT APMQUERYSUSPEND está disponível para uso nos sistemas operacionais \_ especificados na seção Requisitos. O suporte para esse evento foi removido no Windows Vista. Em vez disso, use [**SetThreadExecutionState.**](/windows/desktop/api/Winbase/nf-winbase-setthreadexecutionstate)\]
 
 Solicita permissão para suspender o computador. Um aplicativo que concede permissão deve realizar preparações para a suspensão antes de retornar.
 
-Uma janela recebe esse evento por meio da mensagem do [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) . Os parâmetros *wParam* e *lParam* são definidos conforme descrito a seguir.
+Uma janela recebe esse evento por meio da [**mensagem WM \_ POWERBROADCAST.**](wm-powerbroadcast.md) Os *parâmetros wParam* *e lParam* são definidos conforme descrito a seguir.
 
 
 ```C++
@@ -35,10 +35,10 @@ WindowProc( HWND   hwnd,    // handle to window
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Um identificador para a janela.
+Um alça para janela.
 
 </dd> <dt>*uMsg*</dt> <dd> 
 
@@ -65,19 +65,19 @@ Um identificador para a janela.
 *lParam* 
 </dt> <dd>
 
-Os sinalizadores de ação. Se o bit 0 for 1, o aplicativo poderá solicitar instruções ao usuário sobre como se preparar para a suspensão; caso contrário, o aplicativo deve se preparar sem interação com o usuário. Todos os outros valores de bit são reservados.
+Os sinalizadores de ação. Se o bit 0 for 1, o aplicativo poderá solicitar instruções ao usuário sobre como se preparar para a suspensão; caso contrário, o aplicativo deverá se preparar sem interação do usuário. Todos os outros valores de bit são reservados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar **true** para conceder a solicitação para suspender. Para negar a solicitação, retorne a **consulta de difusão \_ \_ negar**.
+Retornar **TRUE** para conceder a solicitação de suspensão. Para negar a solicitação, retorne **BROADCAST \_ QUERY \_ DENY**.
 
 ## <a name="remarks"></a>Comentários
 
-Um aplicativo deve processar esse evento o mais rápido possível. O aplicativo pode solicitar instruções ao usuário sobre como se preparar para a suspensão somente se o bit 0 no parâmetro *flags* estiver definido. No entanto, se essa mensagem for emitida porque o usuário está fechando a tampa do laptop, não será possível solicitar o usuário. Os aplicativos devem respeitar que o usuário espera um determinado comportamento quando fecham a tampa do laptop ou pressionam o botão de energia e permitem que a transição tenha sucesso.
+Um aplicativo deve processar esse evento o mais rápido possível. O aplicativo pode solicitar instruções ao usuário sobre como se preparar para suspensão somente se o bit 0 no *parâmetro Flags* estiver definido. No entanto, se essa mensagem for emitida porque o usuário está fechando a tampa do laptop, não será possível solicitar ao usuário. Os aplicativos devem respeitar que o usuário espere um determinado comportamento ao fechar a tampa do laptop ou pressionar o botão de energia e permitir que a transição seja bem-sucedida.
 
-O sistema permite que aproximadamente 20 segundos para um aplicativo remova a mensagem do [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) que está enviando o \_ evento PBT APMQUERYSUSPEND da fila de mensagens do aplicativo. Se um aplicativo não remover a mensagem de sua fila em menos de 20 segundos, o sistema irá pressupor que o aplicativo está em um estado não responsivo e que o aplicativo concorda com a solicitação de suspensão. Os aplicativos que não processam suas filas de mensagens podem ter suas operações interrompidas. Depois de remover a mensagem da fila de mensagens, um aplicativo pode levar tanto tempo quanto necessário para executar as operações necessárias antes de entrar no estado de suspensão. Qualquer operação que possa demorar mais do que 20 segundos deve ser executada no momento, uma vez que o sistema permite que apenas 20 segundos para que as operações sejam concluídas durante o processamento do [PBT \_ APMSUSPEND](pbt-apmsuspend.md) .
+O sistema permite aproximadamente 20 segundos para um aplicativo remover a mensagem [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) que está enviando o evento PBT APMQUERYSUSPEND da fila de mensagens do \_ aplicativo. Se um aplicativo não remover a mensagem de sua fila em menos de 20 segundos, o sistema assumirá que o aplicativo está em um estado sem resposta e que o aplicativo concorda com a solicitação de espera. Aplicativos que não processam suas filas de mensagens podem ter suas operações interrompidas. Depois de remover a mensagem da fila de mensagens, um aplicativo pode levar o tempo necessário para executar as operações necessárias antes de entrar no estado de espera. Todas as operações que podem levar mais de 20 segundos devem ser executadas neste momento, pois o sistema permite que apenas 20 segundos para que as operações sejam concluídas durante o processamento do [PBT \_ APMSUSPEND.](pbt-apmsuspend.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,11 +85,11 @@ O sistema permite que aproximadamente 20 segundos para um aplicativo remova a me
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                                    |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                                           |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                                    |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                                           |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ O sistema permite que aproximadamente 20 segundos para um aplicativo remova a me
 
 <dl> <dt>
 
-[Eventos de ativação do sistema](system-wake-up-events.md)
+[Eventos de a wake-up do sistema](system-wake-up-events.md)
 </dt> <dt>
 
 [Eventos de gerenciamento de energia](power-management-events.md)
@@ -106,7 +106,7 @@ O sistema permite que aproximadamente 20 segundos para um aplicativo remova a me
 [PBT \_ APMSUSPEND](pbt-apmsuspend.md)
 </dt> <dt>
 
-[**POWERBROADCAST do WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> </dl>
 
  

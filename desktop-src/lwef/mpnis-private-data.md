@@ -3,8 +3,8 @@ title: Estrutura de MPNIS_PRIVATE_DATA (MpClient. h)
 description: Notificações NIS privadas.
 ms.assetid: 19B4928F-BC78-4DEA-A563-1516B6454465
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPNIS_PRIVATE_DATA
-- Ponteiro de estrutura de PMPNIS_PRIVATE_DATA recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPNIS_PRIVATE_DATA
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPNIS_PRIVATE_DATA
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21340665a32b619c42d7909e8cd1b72ca6d09fb7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a50719e4ecc0beff848467023a1c5f941ff06ceb891b05674e199d47a38b8659
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119556136"
 ---
 # <a name="mpnis_private_data-structure"></a>\_Estrutura de dados privada do MPNIS \_
 
@@ -82,9 +82,9 @@ Ponteiro para dados reservados.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

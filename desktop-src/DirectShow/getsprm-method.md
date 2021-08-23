@@ -4,12 +4,12 @@ ms.assetid: c6177f43-2809-4ef2-bc94-ac9a28f94621
 title: Método GetSPRM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc8b6898902eda55e0e877878343a25d82d03660
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e254d23f0d70890516bc5655f6c4ea38133a8a3733360955cabf9040207f3afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536986"
 ---
 # <a name="getsprm-method"></a>Método GetSPRM
 
@@ -28,10 +28,10 @@ O `GetSPRM` método recupera o registro de parâmetro do sistema especificado.
 
 <dl> <dt>
 
-<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*iIndex*
+<span id="iIndex"></span><span id="iindex"></span><span id="IINDEX"></span>*Iindex*
 </dt> <dd>
 
-Especifica o registro cujo valor você deseja recuperar como um inteiro. O número inteiro deve variar de 0 a 23.
+Especifica o registro cujo valor você deseja recuperar como um Inteiro. O inteiro deve variar de 0 a 23.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Retorna um valor inteiro que representa o conteúdo do registro especificado.
 
 ## <a name="remarks"></a>Comentários
 
-O disco controla os registros de parâmetro do sistema (SPRMs). Um aplicativo de Player não precisa acessar esses registros para qualquer funcionalidade de navegação padrão. SPRMs representa o status do Player. Cada um tem um significado, definido por preferências do usuário, comandos de disco e outras ocorrências das quais um aplicativo não tem controle direto. Um aplicativo pode ler esses registros, mas não pode gravar neles. Para usar esses registros com eficiência, você provavelmente precisará de um conhecimento mais detalhado dos comandos de navegação do DVD do que é fornecido nesta documentação. A tabela a seguir mostra o conteúdo de cada registro. Para obter informações mais detalhadas sobre o conteúdo do registro, consulte [ **IDvdInfo2:: GetAllSPRMs**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)
+O disco controla os SPRMs (registros de parâmetro do sistema). Um aplicativo player não precisa acessar esses registros para nenhuma funcionalidade de navegação padrão. Os SPRMs representam o status do player. Cada um tem um significado, definido por preferências do usuário, comandos de disco e outras ocorrências sobre as qual um aplicativo não tem controle direto. Um aplicativo pode ler esses registros, mas não pode gravar neles. Para usar esses registros com eficiência, você provavelmente precisará de um conhecimento mais detalhado dos comandos de navegação de DVD do que é fornecido nesta documentação. A tabela a seguir mostra o conteúdo de cada registro. Para obter informações mais detalhadas sobre o conteúdo do registro, consulte [ **IDvdInfo2::GetAllSPRMs**](/windows/desktop/api/Strmif/nf-strmif-idvdinfo2-getallsprms)
 
 
 
@@ -49,25 +49,25 @@ O disco controla os registros de parâmetro do sistema (SPRMs). Um aplicativo de
 |----------|---------------------------------|
 | 0        | Código de idioma do menu              |
 | 1        | Número do fluxo de áudio             |
-| 2        | Número de fluxo da subimagem        |
+| 2        | Número de fluxo de subspícone        |
 | 3        | Número do ângulo atual            |
 | 4        | Número do título atual            |
 | 5        | Número do título                    |
-| 6        | Número de PGC                      |
+| 6        | Número do PGC                      |
 | 7        | Número do capítulo atual (PTT)    |
-| 8        | Número do botão realçado       |
+| 8        | Número do botão realçada       |
 | 9        | Temporizador de navegação                |
-| 10       | Salto de PGC para navegação. temporizador         |
-| 11       | Modo de apresentação de áudio do karaokê |
-| 12       | Código de país/região do PML         |
-| 13       | PML                             |
+| 10       | Salto do PGC para nav. temporizador         |
+| 11       | Modo de apresentação de áudio Dols |
+| 12       | Código de país/região PML         |
+| 13       | Pml                             |
 | 14       | Configuração de vídeo                   |
 | 15       | Funcionalidade de áudio                |
-| 16       | Idioma do áudio                  |
-| 17       | Extensão de idioma de áudio        |
-| 18       | Idioma da subimagem             |
-| 19       | Extensão da linguagem de subimagem   |
-| 20       | Código de região do Player              |
+| 16       | Linguagem de áudio                  |
+| 17       | Extensão de linguagem de áudio        |
+| 18       | Linguagem de subtípico             |
+| 19       | Extensão da linguagem subpicture   |
+| 20       | Código de região do player              |
 | 21       | Reservado                        |
 | 22       | Reservado                        |
 | 23       | Reservado                        |

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ce78a804c52ed492bd4b2a42332f8eda36b4c3be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4f7391362938502f0c307faab4d7b9166633647b093e5154b3aa56512c6ee4e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620236"
 ---
 # <a name="systempropertiestype-complex-type"></a>Tipo complexo SystemPropertiesType
 
@@ -197,10 +197,10 @@ Define as informações que identificam o provedor e como elas foram habilitadas
 |---------------------------------------------------------------------------------|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Canal**](eventschema-channel-systempropertiestype-element.md)             | anyURI                                                      | O canal no qual o evento foi registrado.<br/>                                                                                                                                                                                                                                                                                        |
 | [**Computador**](eventschema-computer-systempropertiestype-element.md)           | string                                                      | O nome do computador no qual o evento ocorreu.<br/>                                                                                                                                                                                                                                                                             |
-| [**Correlação**](eventschema-correlation-systempropertiestype-element.md)     |                                                             | Os identificadores de atividade que os consumidores podem usar para agrupar eventos relacionados.<br/>                                                                                                                                                                                                                                                 |
+| [**Exata**](eventschema-correlation-systempropertiestype-element.md)     |                                                             | Os identificadores de atividade que os consumidores podem usar para agrupar eventos relacionados.<br/>                                                                                                                                                                                                                                                 |
 | [**1008**](eventschema-eventid-systempropertiestype-element.md)             |                                                             | O identificador que o provedor usou para identificar o evento.<br/>                                                                                                                                                                                                                                                                      |
 | [**EventRecordID**](eventschema-eventrecordid-systempropertiestype-element.md) |                                                             | O número de registro atribuído ao evento quando ele foi registrado.<br/>                                                                                                                                                                                                                                                                       |
-| [**Execução**](eventschema-execution-systempropertiestype-element.md)         |                                                             | Contém informações sobre o processo e o thread que registrou o evento.<br/>                                                                                                                                                                                                                                                          |
+| [**Chão**](eventschema-execution-systempropertiestype-element.md)         |                                                             | Contém informações sobre o processo e o thread que registrou o evento.<br/>                                                                                                                                                                                                                                                          |
 | [**Palavras-chave**](eventschema-keywords-systempropertiestype-element.md)           | [**HexInt64Type**](eventschema-hexint64type-simpletype.md) | Um bitmask das palavras-chave definidas no evento. As palavras-chave são usadas para classificar tipos de eventos (por exemplo, eventos associados à leitura de dados).<br/>                                                                                                                                                                                 |
 | [**Geral**](eventschema-level-systempropertiestype-element.md)                 | unsignedByte                                                | O nível de severidade definido no evento.<br/>                                                                                                                                                                                                                                                                                          |
 | [**Opcode**](eventschema-opcode-systempropertiestype-element.md)               | unsignedByte                                                | O opcode definido no evento. Task e opcode são typcially usados para identificar o local no aplicativo de onde o evento foi registrado.<br/>                                                                                                                                                                                  |
@@ -232,14 +232,14 @@ Define as informações que identificam o provedor e como elas foram habilitadas
 | SessionID         | unsignedInt                                         | O número de identificação da sessão do Terminal Server na qual o evento ocorreu. Disponível somente para eventos registrados em um arquivo de log de rastreamento de eventos (arquivo. ETL).<br/>                                                                                                                            |
 | SystemTime        | dateTime                                            | A hora do sistema de quando o evento foi registrado.<br/>                                                                                                                                                                                                                                                |
 | ThreadID          | unsignedInt                                         | Identifica o thread que gerou o evento.<br/>                                                                                                                                                                                                                                              |
-| UserID            | string                                              | O SID (identificador de segurança) do usuário no formulário de cadeia de caracteres.<br/>                                                                                                                                                                                                                                    |
-| Usertime          | unsignedInt                                         | Tempo de execução decorrido para instruções do modo de usuário, em unidades de tempo de CPU. Se você estiver usando uma sessão particular do ETW, use o valor no membro Processortime em vez disso. Disponível somente para eventos registrados em um arquivo de log de rastreamento de eventos (arquivo. ETL).<br/>                                                 |
+| UserID            | string                                              | O SID (identificador de segurança) do usuário no formato de cadeia de caracteres.<br/>                                                                                                                                                                                                                                    |
+| UserTime          | unsignedInt                                         | Tempo de execução decorrido para instruções de modo de usuário, em unidades de tempo de CPU. Se você estiver usando uma sessão privada ETW, use o valor no membro ProcessorTime. Disponível somente para eventos registrados em um arquivo de log de rastreamento de eventos (arquivo .etl).<br/>                                                 |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, o evento contém o FQDN (nome de domínio totalmente qualificado) de um computador. Para usar o nome NETBIOS em vez do FQDN, você deve criar um valor do Registro DWORD chamado CompatFlags na seguinte chave do registro e definir o valor de CompatFlags como 0x2.
+Por padrão, o evento contém o FQDN (nome de domínio totalmente qualificado) de um computador. Para usar o nome NETBIOS em vez do FQDN, você deve criar um valor do Registro DWORD chamado CompatFlags na chave do Registro a seguir e definir o valor de CompatFlags como 0x2.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -256,8 +256,8 @@ HKEY_LOCAL_MACHINE
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 1839485d-c933-4ca9-a45a-d44cbd29f9b5
 title: System. Photo. FocalLength
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0164a8a7b24783ed0d88b0ce9553c01eb8dcca3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ad4acc78e14fa0ad79e54dce785636771e16c1c86b92b2a8dc585a2e82281d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095928"
 ---
 # <a name="systemphotofocallength"></a>System. Photo. FocalLength
 

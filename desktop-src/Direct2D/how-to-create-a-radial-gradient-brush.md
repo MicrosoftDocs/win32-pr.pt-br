@@ -5,12 +5,12 @@ ms.assetid: 663743c9-16e9-4e3a-90b2-883ef0b8d5cf
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: fe3509a80f80132f4a5e5d65f62476be1cac61d1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1932dc6506c625332d61f4e549ae2dd169060731bfbea344f64c3aa826540ae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569257"
 ---
 # <a name="how-to-create-a-radial-gradient-brush"></a>Como criar um pincel gradiente radial
 
@@ -55,9 +55,9 @@ O código produz a saída mostrada na ilustração a seguir.
 3.  Use o método [**ID2D1RenderTarget:: CreateGradientStopCollection**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_d2d1_gamma_d2d1_extend_mode_id2d1gradientstopcollection)) para criar a coleção [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) de uma matriz declarada anteriormente de estruturas de [**\_ \_ parada de gradiente d2d1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_gradient_stop) . Em seguida, use o [**CreateRadialGradientBrush**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) para criar um pincel de gradiente radial.
 
     > [!Note]  
-    > A partir do Windows 8, você pode usar o método [**ID2D1DeviceContext:: CreateGradientStopCollection**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-creategradientstopcollection) para criar uma coleção [**ID2D1GradientStopCollection1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1gradientstopcollection1) em vez do método [**ID2D1RenderTarget:: CreateGradientStopCollection**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_d2d1_gamma_d2d1_extend_mode_id2d1gradientstopcollection)) . Essa interface adiciona gradientes de alta cor e a interpolação de gradientes em cores retas ou prmultiplieds. Consulte a página **ID2DDeviceContext:: CreateGradientStopCollection** para obter mais informações.
+    > a partir do Windows 8, você pode usar o método [**ID2D1DeviceContext:: CreateGradientStopCollection**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-creategradientstopcollection) para criar uma coleção [**ID2D1GradientStopCollection1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1gradientstopcollection1) em vez do método [**ID2D1RenderTarget:: CreateGradientStopCollection**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_d2d1_gamma_d2d1_extend_mode_id2d1gradientstopcollection)) . Essa interface adiciona gradientes de alta cor e a interpolação de gradientes em cores retas ou prmultiplieds. Consulte a página **ID2DDeviceContext:: CreateGradientStopCollection** para obter mais informações.
 
-     
+     
 
     ```C++
     // The center of the gradient is in the center of the box.
@@ -89,9 +89,9 @@ O código produz a saída mostrada na ilustração a seguir.
 
 <dl> <dt>
 
-[Referência de Direct2D](reference.md)
+[Direct2D Referência](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

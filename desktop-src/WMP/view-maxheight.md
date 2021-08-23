@@ -3,7 +3,7 @@ title: Exibir. maxHeight
 description: O atributo maxHeight especifica ou recupera a altura máxima em pixels da exibição ao redimensionar.
 ms.assetid: 81e919f6-4333-424c-bd65-1155e308a493
 keywords:
-- Exibir. maxHeight Windows Media Player
+- VIEW. maxHeight Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4cc43f9119c24a5a89928c4ffc4e854cee33350
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee1ccc883293d493996b854d572bfbcefd9982ed964088e927f2e23e1df85ec0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571626"
 ---
 # <a name="viewmaxheight"></a>Exibir. maxHeight
 

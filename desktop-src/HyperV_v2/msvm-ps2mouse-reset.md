@@ -1,7 +1,7 @@
 ---
-description: Método Reset da classe Msvm_Ps2Mouse – solicita uma redefinição.
+description: Método de redefinição da classe Msvm_Ps2Mouse - Solicita uma redefinição.
 ms.assetid: e72e4ecc-70a8-4eb6-877c-670857ea9b6d
-title: Método Reset da classe Msvm_Ps2Mouse
+title: Método de redefinição da Msvm_Ps2Mouse classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f875d5b5fe7e5be0f5cac31e87ac2a0007a7a256
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5b05d2999296186445f624c8f69fd72a0924a56b4e88f5edd38b1c6fd959469c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536086"
 ---
-# <a name="reset-method-of-the-msvm_ps2mouse-class"></a>Método Reset da classe Msvm \_ Ps2Mouse
+# <a name="reset-method-of-the-msvm_ps2mouse-class"></a>Método reset da classe Msvm \_ Ps2Mouse
 
 Solicita uma redefinição.
 
@@ -57,13 +57,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

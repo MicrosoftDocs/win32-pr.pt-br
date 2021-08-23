@@ -1,6 +1,6 @@
 ---
 title: GetFormatProp
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | GetFormatProp
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | GetFormatProp
 ms.assetid: b0ff85f2-6819-4047-aba7-b9375df7b87a
 keywords:
 - Formato de mídia do Windows GetFormatProp
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b78d7d56ebc4cfd96855ff6c99f0dae036dae917
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e2213420b62158db7fbf98658f7c124999dc7f929dab04ff6e569096af8ad656
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105766461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591126"
 ---
 # <a name="getformatprop"></a>GetFormatProp
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

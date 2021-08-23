@@ -1,11 +1,11 @@
 ---
-title: Método INapServerInfo GetFailureCategoryMappings (NapServerManagement. h)
+title: Método GetFailureCategoryMappings de INapServerInfo (NapServerManagement.h)
 description: Recupera os mapeamentos de categoria de falha para um SHA ou SHV especificado.
 ms.assetid: 89b89003-40b3-4763-aec8-01cd0c307649
 keywords:
-- Método GetFailureCategoryMappings NAP
-- Método GetFailureCategoryMappings NAP, interface INapServerInfo
-- INapServerInfo interface NAP, método GetFailureCategoryMappings
+- NAP do método GetFailureCategoryMappings
+- Método NAP GetFailureCategoryMappings, interface INapServerInfo
+- Método NAP da interface INapServerInfo, GetFailureCategoryMappings
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7ba830dd8a35a2c60b14c4feec14846125223e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 13fcd87105eace269d3b8f395392c8a0ba275a135c212863ef69e45e597eb752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104456021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144379"
 ---
-# <a name="inapserverinfogetfailurecategorymappings-method"></a>Método INapServerInfo:: GetFailureCategoryMappings
+# <a name="inapserverinfogetfailurecategorymappings-method"></a>Método INapServerInfo::GetFailureCategoryMappings
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapServerInfo:: GetFailureCategoryMappings** recupera os mapeamentos de categoria de falha para um Sha ou SHV especificado.
+O **método INapServerInfo::GetFailureCategoryMappings** recupera os mapeamentos de categoria de falha para um SHA ou SHV especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,24 +55,24 @@ Um [**SystemHealthEntityId**](nap-type-constants.md) que contém o identificador
 
 </dd> <dt>
 
-*mapeamento* \[ de fora\]
+*mapeamento* \[ out\]
 </dt> <dd>
 
 Um ponteiro para um [**FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) que contém os dados de mapeamento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
 | Código de retorno                                                                                     | Descrição                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -85,9 +85,9 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                               |
-| parâmetro<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

@@ -1,25 +1,25 @@
 ---
-description: Especifica se o codificador produz grupos abertos de imagens (GOPS segundos) ou GOPS segundos fechado. Essa propriedade se aplica a codificadores de vídeo MPEG.
+description: Especifica se o codificador produz goPs (grupos abertos de imagens) ou GOPs fechados. Essa propriedade se aplica a codificadores de vídeo MPEG.
 ms.assetid: 424751cd-65d2-4cab-9f7b-cad50c09c767
-title: Propriedade AVEncMPVGOPOpen (Codecapi. h)
+title: Propriedade AVEncMPVGOPOpen (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd971a6cc9926245b97794868f58758af814803
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c6be085bde5588fecd5a2274d442f38d4198702475f3ed13c7bb3a5569687375
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540896"
 ---
 # <a name="avencmpvgopopen-property"></a>Propriedade AVEncMPVGOPOpen
 
-Especifica se o codificador produz grupos abertos de imagens (GOPS segundos) ou GOPS segundos fechado. Essa propriedade se aplica a codificadores de vídeo MPEG.
+Especifica se o codificador produz goPs (grupos abertos de imagens) ou GOPs fechados. Essa propriedade se aplica a codificadores de vídeo MPEG.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Variante \_ BOOL** (**VT \_ bool**)
+**VARIANT \_ BOOL** (**VT \_ BOOL**)
 
 ## <a name="property-guid"></a>GUID da propriedade
 
@@ -31,8 +31,8 @@ Esta propriedade é de leitura/gravação.
 
 | Valor          | Descrição |
 |----------------|-------------|
-| VARIANTE \_ falso | GOPS segundos fechado |
-| VARIANTE \_ true  | Abrir GOPS segundos   |
+| VARIANT \_ FALSE | GOPs fechados |
+| VARIANT \_ TRUE  | Abrir GOPs   |
 
 
 
@@ -40,7 +40,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Um GOP aberto contém quadros Delta que fazem referência a quadros do GOP anterior. Um GOP fechado não contém nenhum quadro Delta que referencie o GOP anterior.
+Um GOP aberto contém quadros delta que referenciam quadros do GOP anterior. Um GOP fechado não contém quadros delta que referenciam o GOP anterior.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,9 +48,9 @@ Um GOP aberto contém quadros Delta que fazem referência a quadros do GOP anter
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional aplicativos \[ UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -58,10 +58,10 @@ Um GOP aberto contém quadros Delta que fazem referência a quadros do GOP anter
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

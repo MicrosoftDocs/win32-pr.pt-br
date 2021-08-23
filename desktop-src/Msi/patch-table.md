@@ -4,12 +4,12 @@ ms.assetid: 1b624702-de25-4b1a-9dac-21f359ee97f7
 title: Tabela de patches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 061b2082f88a8c7c3967652900bb6bf6e1c29802
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9e5f41f206557589bf0b90d9ffb125a80d05d39ce809dc01a8e687a21045475
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558456"
 ---
 # <a name="patch-table"></a>Tabela de patches
 
@@ -21,12 +21,12 @@ A tabela patch tem as seguintes colunas.
 
 | Coluna      | Tipo                               | Chave | Nullable |
 |-------------|------------------------------------|-----|----------|
-| Arquivo\_      | [Identificador](identifier.md)       | S   | N        |
-| Sequência    | [Inteiro](integer.md)             | S   | N        |
+| Arquivo\_      | [Identificador](identifier.md)       | Y   | N        |
+| Sequência    | [Inteiro](integer.md)             | Y   | N        |
 | PatchSize   | [DoubleInteger](doubleinteger.md) | N   | N        |
 | Atributos  | [Inteiro](integer.md)             | N   | N        |
-| parâmetro      | [Binary](binary.md)               | N   | S        |
-| StreamRef\_ | [Identificador](identifier.md)       | N   | S        |
+| Cabeçalho      | [Binary](binary.md)               | N   | Y        |
+| StreamRef\_ | [Identificador](identifier.md)       | N   | Y        |
 
 
 
@@ -46,7 +46,7 @@ O patch é aplicado ao arquivo especificado pelo identificador nesta coluna. Ess
 <span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Ordem
 </dt> <dd>
 
-Essa é a posição do arquivo de patch na ordem de sequência dos arquivos nas imagens de mídia. A ordem de sequência deve corresponder à ordem dos arquivos no arquivo de gabinete do pacote de patch. Esta é uma chave primária para esta tabela. O limite máximo é de 32767 arquivos, para criar um pacote de Windows Installer com mais arquivos, consulte [criando um pacote grande](authoring-a-large-package.md).
+Essa é a posição do arquivo de patch na ordem de sequência dos arquivos nas imagens de mídia. A ordem de sequência deve corresponder à ordem dos arquivos no arquivo de gabinete do pacote de patch. Esta é uma chave primária para esta tabela. o limite máximo é de 32767 arquivos, para criar um pacote de Windows Installer com mais arquivos, consulte [criando um pacote grande](authoring-a-large-package.md).
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Inteiro que contém os sinalizadores de bit que representam os atributos de patc
 <span id="Header"></span><span id="header"></span><span id="HEADER"></span>Verga
 </dt> <dd>
 
-Esta coluna é o cabeçalho de patch de fluxo binário usado para validação de patch. Essa coluna deverá ser nula se a \_ coluna StreamRef não for nula. Nesse caso, o fluxo do cabeçalho de patch é armazenado na [tabela MsiPatchHeaders](msipatchheaders-table.md) para superar a limitação de nome de fluxo descrita em [limitações de OLE em fluxos](ole-limitations-on-streams.md).
+Esta coluna é o cabeçalho de patch de fluxo binário usado para validação de patch. Essa coluna deverá ser nula se a \_ coluna StreamRef não for nula. nesse caso, o fluxo do cabeçalho de patch é armazenado na [tabela MsiPatchHeaders](msipatchheaders-table.md) para superar a limitação de nome de fluxo descrita em [limitações de OLE em Fluxos](ole-limitations-on-streams.md).
 
 </dd> <dt>
 

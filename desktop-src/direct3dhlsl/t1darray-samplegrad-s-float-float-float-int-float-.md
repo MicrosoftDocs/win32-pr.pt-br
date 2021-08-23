@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e4af761ab82492fd49a4f6f048c74016a19aa872
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
-ms.translationtype: HT
+ms.openlocfilehash: fb1115357c4e38c02022a649e8dca1a259dc4d643fc899e26e3f7e23ce51aca4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104968738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119486206"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatintfloat-function-for-texture1darray"></a>SampleGrad:: SampleGrad (S, float, float, float, int, float) function para Texture1DArray
 
@@ -150,7 +150,7 @@ Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 

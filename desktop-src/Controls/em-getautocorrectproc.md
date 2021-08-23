@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETAUTOCORRECTPROC (RichEdit. h)
+title: EM_GETAUTOCORRECTPROC mensagem (Richedit.h)
 description: Obtém um ponteiro para a função AutoCorrectProc definida pelo aplicativo.
 ms.assetid: 90821036-F27D-4AC3-9AB8-40A94486B938
 keywords:
-- Controles de EM_GETAUTOCORRECTPROC de mensagens do Windows
+- EM_GETAUTOCORRECTPROC controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc4d730d15ca8631e6d663e3d4f971f115d5c268
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4dc6b5068c1e72c05d7a1b85ee02e57b788cf417f732fe3c2bab8c66d0dcf383
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119541086"
 ---
-# <a name="em_getautocorrectproc-message"></a>\_Mensagem em GETAUTOCORRECTPROC
+# <a name="em_getautocorrectproc-message"></a>Mensagem EM \_ GETAUTOCORRECTPROC
 
 Obtém um ponteiro para a função [*AutoCorrectProc*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc) definida pelo aplicativo.
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um ponteiro para a função [*AutoCorrectProc*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc) definida pelo aplicativo.
 
@@ -53,9 +53,9 @@ Retorna um ponteiro para a função [*AutoCorrectProc*](/windows/desktop/api/Ric
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ Retorna um ponteiro para a função [*AutoCorrectProc*](/windows/desktop/api/Ric
 [*AutoCorrectProc*](/windows/desktop/api/Richedit/nc-richedit-autocorrectproc)
 </dt> <dt>
 
-[**em \_ CALLAUTOCORRECTPROC**](em-callautocorrectproc.md)
+[**EM \_ CALLAUTOCORRECTPROC**](em-callautocorrectproc.md)
 </dt> <dt>
 
-[**em \_ SETAUTOCORRECTPROC**](em-setautocorrectproc.md)
+[**EM \_ SETAUTOCORRECTPROC**](em-setautocorrectproc.md)
 </dt> </dl>
 
  

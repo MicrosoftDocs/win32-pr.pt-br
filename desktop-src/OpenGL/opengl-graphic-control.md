@@ -7,20 +7,20 @@ keywords:
 - controle gráfico OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6bb138a2d8c597fae2d92a1d1394c8ff05b03cf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 61d8169b1f9e1cb1ff112306db42d34c60f1ab6c2f40d56a330081d71ce2a317
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119486346"
 ---
 # <a name="opengl-graphic-control"></a>Controle gráfico OpenGL
 
-O OpenGL fornece um controle bastante direto sobre as operações fundamentais de gráficos de duas e três dimensões. Isso inclui a especificação de tais parâmetros como matrizes de transformação, os coeficientes da equação de iluminação, os métodos de suavização e os operadores de atualização de pixel. No entanto, ele não fornece um meio para descrever ou modelar objetos geométricos complexos. Assim, os comandos OpenGL que você emitir especificam como um determinado resultado deve ser produzido (que procedimento deve ser seguido) em vez do que exatamente esse resultado deve ser semelhante. Ou seja, o OpenGL é fundamentalmente um procedimento em vez de descritivo. Para entender totalmente como usar o OpenGL, é útil saber a ordem na qual ele realiza suas operações.
+O OpenGL fornece controle bastante direto sobre as operações fundamentais de elementos gráficos bidimensionais. Isso inclui a especificação de parâmetros como matrizes de transformação, coeficientes de equação de iluminação, métodos antialiasing e operadores de atualização de pixel. No entanto, ele não fornece um meio para descrever ou modelar objetos geométricos complexos. Portanto, os comandos OpenGL que você emita especificam como um determinado resultado deve ser produzido (qual procedimento deve ser seguido) em vez da aparência exata desse resultado. Ou seja, o OpenGL é fundamentalmente um procedimento em vez de descritivo. Para entender totalmente como usar o OpenGL, ajuda a saber a ordem na qual ele executa suas operações.
 
- 
+ 
 
- 
+ 
 
 
 

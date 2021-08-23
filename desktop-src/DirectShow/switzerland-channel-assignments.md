@@ -1,23 +1,23 @@
 ---
-description: Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para Suíça.
+description: Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para a Suíça.
 ms.assetid: 67f7b6f0-9dd5-49de-b29c-e2a7343aaf73
 title: Atribuições de canal da Suíça
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 103a43c8e2ddf0e084f31dbfac1bb126988317ff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5005d1194e835882abe82d2024d28b60f134f2061bd8210b15362274dffe4c6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072340"
 ---
 # <a name="switzerland-channel-assignments"></a>Atribuições de canal da Suíça
 
-Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para Suíça.
+Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para a Suíça.
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+As atribuições de canal a seguir foram introduzidas Windows 7. Anteriormente, a [Tabela de Frequência Unicavel](unicable-frequency-table.md) era usada.
 
 ## <a name="cable-assignments"></a>Atribuições de cabo
 
@@ -177,7 +177,7 @@ As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormen
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

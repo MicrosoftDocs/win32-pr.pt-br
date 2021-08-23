@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: baf7f1bfdee61906f534ac0a3f8c0eff0194a5cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d676c7907932482711cf9451a3b2de4d99a62cb07aca7307f233baac125486ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040674"
 ---
 # <a name="esentmissingfiletobackupexception-constructor"></a>Construtor EsentMissingFileToBackupException
 
 Inicializa uma nova instância da classe EsentMissingFileToBackupException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentMissingFileToBackupException()
 
 [Classe EsentMissingFileToBackupException](./esentmissingfiletobackupexception-class.md)
 
-[Membros do EsentMissingFileToBackupException](./esentmissingfiletobackupexception-members.md)
+[Membros EsentMissingFileToBackupException](./esentmissingfiletobackupexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
