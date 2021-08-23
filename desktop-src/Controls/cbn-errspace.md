@@ -3,7 +3,7 @@ title: Código de notificação CBN_ERRSPACE (WinUser. h)
 description: Enviado quando uma caixa de combinação não pode alocar memória suficiente para atender a uma solicitação específica. A janela pai da caixa de combinação recebe esse código de notificação por meio da mensagem de comando do WM \_ .
 ms.assetid: c1c19c40-fc88-47d0-9676-7a267a48ae98
 keywords:
-- CBN_ERRSPACE de código de notificação controles do Windows
+- CBN_ERRSPACE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d74e46e4435a03a0233ce6591d3c36cefb4d880a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ba62469480ec4aee97670ec4346a97ba2db91ae6e57b54e0fb766f3e78dd9591
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699056"
 ---
 # <a name="cbn_errspace-notification-code"></a>Código de notificação do CBN \_ ERRSPACE
 
@@ -59,9 +59,9 @@ Identificador para a caixa de combinação.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

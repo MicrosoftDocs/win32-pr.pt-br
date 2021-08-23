@@ -1,11 +1,11 @@
 ---
-title: MS-KDS-PublicKey-atributo de comprimento
+title: Atributo ms-Kds-PublicKey-Length
 description: O comprimento da chave pública do contrato secreto.
 ms.assetid: d99e1ad8-1dab-4763-a2d3-ec1ded36788d
 ms.tgt_platform: multiple
 keywords:
-- MS-KDS-PublicKey-tamanho do esquema de atributo do AD
-- Esquema de AD do atributo msKds-PublicKeyLength
+- Esquema do AD do atributo ms-Kds-PublicKey-Length
+- Esquema do AD do atributo msKds-PublicKeyLength
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e09630516b45c9400d34f1f0ee66f4eb1fc59eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 49015468756c2017c759a2f635340d180dd04dd4904a85e6a19ae6e76fa5b3b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762946"
 ---
-# <a name="ms-kds-publickey-length-attribute"></a>MS-KDS-PublicKey-atributo de comprimento
+# <a name="ms-kds-publickey-length-attribute"></a>Atributo ms-Kds-PublicKey-Length
 
 O comprimento da chave pública do contrato secreto.
 
@@ -29,13 +29,13 @@ O comprimento da chave pública do contrato secreto.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-KDS-PublicKey-Length              |
-| LDAP-Display-Name | msKds-PublicKeyLength                |
+| CN                | ms-Kds-PublicKey-Length              |
+| Ldap-Display-Name | msKds-PublicKeyLength                |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2173              |
-| System-ID-GUID    | e338f470-39cd-4549-ab5b-f69f9e583fe0 |
+| System-Id-Guid    | e338f470-39cd-4549-ab5b-f69f9e583fe0 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -53,15 +53,15 @@ O comprimento da chave pública do contrato secreto.
 | ID do link                | \-                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                |
+| Tem valor único       | Verdadeiro                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                               |
-| No catálogo global      | Falso                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                        |
+| No Catálogo Global      | Falso                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000280                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Classes usadas em        | [**MS-KDS-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**MS-KDS-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Classes usadas em        | [**ms-Kds-Prov-ServerConfiguration**](c-mskds-provserverconfiguration.md)<br/> [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth de captura do serviço de dispositivo.
+description: Bluetooth classe de serviço do dispositivo capturando.
 ms.assetid: 56cb3cc0-0186-4230-8c1f-564ad0034c46
 title: System. Devices. AEP. Bluetooth. Cod. Services. Capture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0abd6624c989a73848bd1ad82b4f895c20a0154b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f93e9621f0e943fb9f4ad04b7c63b311e6ab0cb866f0bc4dc45de99a0a03dce7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775976"
 ---
 # <a name="systemdevicesaepbluetoothcodservicescapturing"></a>System. Devices. AEP. Bluetooth. Cod. Services. Capture
 
-Classe Bluetooth de captura do serviço de dispositivo.
+Bluetooth classe de serviço do dispositivo capturando.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 

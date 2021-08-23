@@ -3,19 +3,19 @@ title: DoProcessOutput no plug-in de DSP de vídeo de exemplo
 description: DoProcessOutput no plug-in de DSP de vídeo de exemplo
 ms.assetid: 67536e35-a049-49c8-bd89-fad1fab37e6c
 keywords:
-- Plug-ins do Windows Media Player, DSP de vídeo
+- plug-ins Windows Media Player, DSP de vídeo
 - plug-ins, DSP de vídeo
 - plug-ins de processamento de sinal digital, DoProcessOutput
 - Plug-ins do DSP, DoProcessOutput
 - plug-ins de DSP de vídeo, DoProcessOutput
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff3bc844890930209a1c6007213d3c466f0cd15b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b031ecddc4f7a1e4a83d4f8a7d8db3b975957789d7f887bf8b12438407624205
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105759723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680596"
 ---
 # <a name="doprocessoutput-in-the-sample-video-dsp-plug-in"></a>DoProcessOutput no plug-in de DSP de vídeo de exemplo
 
@@ -49,9 +49,9 @@ Se o plug-in estiver habilitado, o código simplesmente executará uma série de
 [**Implementando um plug-in de DSP de vídeo**](implementing-a-video-dsp-plug-in.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

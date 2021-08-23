@@ -4,18 +4,18 @@ ms.assetid: d1d8c708-75f2-4dc7-a33a-8dd2cea0ee00
 title: Consultando recursos de busca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aa763ab11267da0a9a13a920285491d83273a8d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7d1d4389d9e5fcf1466a039ae48bbffb2c26a41c29281101984f6a7a291789f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747446"
 ---
 # <a name="querying-for-seeking-capabilities"></a>Consultando recursos de busca
 
-O Microsoft® DirectShow® oferece suporte à busca pela interface [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) . O Gerenciador de gráfico de filtro expõe essa interface, mas a funcionalidade de busca sempre é implementada por filtros no grafo.
+o Microsoft® DirectShow® oferece suporte à busca pela interface [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) . o filtro Graph Manager expõe essa interface, mas a funcionalidade de busca sempre é implementada por filtros no grafo.
 
-Alguns dados não podem ser procurados. Por exemplo, você não pode buscar um fluxo de vídeo ao vivo de uma câmera. No entanto, se um fluxo é pesquisável, há vários tipos de busca que ele pode dar suporte. Estão incluídos:
+Alguns dados não podem ser procurados. Por exemplo, você não pode buscar um fluxo de vídeo ao vivo de uma câmera. No entanto, se um fluxo é pesquisável, há vários tipos de busca que ele pode dar suporte. Elas incluem:
 
 -   Buscando uma posição arbitrária no fluxo.
 -   Recuperando a duração do fluxo.

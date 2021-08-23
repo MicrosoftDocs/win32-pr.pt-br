@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ce75c82e705ffcc9957a3a71b9c32feeaf6ed429
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2151c01c6fd516138ddd047bbebfc71fa5afb73d4f063ad411b2b9acbc2a7fcc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734906"
 ---
 # <a name="esentinvalidobjectexception-constructor"></a>Construtor EsentInvalidObjectException
 
 Inicializa uma nova instância da classe EsentInvalidObjectException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidObjectException()
 
 [Classe EsentInvalidObjectException](./esentinvalidobjectexception-class.md)
 
-[Membros do EsentInvalidObjectException](./esentinvalidobjectexception-members.md)
+[Membros EsentInvalidObjectException](./esentinvalidobjectexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

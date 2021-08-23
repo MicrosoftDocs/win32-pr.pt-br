@@ -4,12 +4,12 @@ ms.assetid: 005c1840-6aa9-4e94-bfe7-6a9d53735fd9
 title: Mensagem de SPFILENOTIFY_STARTRENAME (Setupapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36c17d0c70b49ba00b3b16956e7ede5eda43b35b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ec75c84841adf5cb8a187e8d8431f031af74b31f33af7a87e46225b1e9a3464
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105754937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739416"
 ---
 # <a name="spfilenotify_startrename-message"></a>\_Mensagem SPFILENOTIFY STARTRENAME
 
@@ -43,7 +43,7 @@ Sempre tem o valor FILEOP \_ Rename.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A rotina de retorno de chamada deve retornar um dos valores a seguir.
 
@@ -65,9 +65,9 @@ A rotina de retorno de chamada deve retornar um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
 
 
 

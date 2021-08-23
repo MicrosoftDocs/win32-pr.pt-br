@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TVM_SETEXTENDEDSTYLE (commctrl. h)
-description: Informa o controle de exibição de árvore para definir estilos estendidos. Envie esta mensagem ou use a macro TreeView \_ setextendedattribute.
+title: TVM_SETEXTENDEDSTYLE mensagem (Commctrl.h)
+description: Informa o controle de exibição de árvore para definir estilos estendidos. Envie essa mensagem ou use a macro TreeView \_ SetExtendedStyle.
 ms.assetid: 35cb6ac8-1c1e-4ecd-88b2-878d3f6ccaa5
 keywords:
-- Controles de TVM_SETEXTENDEDSTYLE de mensagens do Windows
+- TVM_SETEXTENDEDSTYLE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c450f72f85e40514c35f08284428feec4f7caf9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d13d99a2f7a27475c30867f007f45d7525118d3077ebdce235c6bd33e1f8aafe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750956"
 ---
-# <a name="tvm_setextendedstyle-message"></a>\_Mensagem TVM SETextendedattribute
+# <a name="tvm_setextendedstyle-message"></a>Mensagem TVM \_ SETEXTENDEDSTYLE
 
-Informa o controle de exibição de árvore para definir estilos estendidos. Envie esta mensagem ou use a macro [**TreeView \_ setextendedattribute**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setextendedstyle).
+Informa o controle de exibição de árvore para definir estilos estendidos. Envie essa mensagem ou use a macro [**TreeView \_ SetExtendedStyle**](/windows/desktop/api/Commctrl/nf-commctrl-treeview_setextendedstyle).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,17 +39,17 @@ Máscara usada para selecionar os estilos a serem definidos.
 *lParam* 
 </dt> <dd>
 
-Valor que indica o estilo estendido. Para obter mais informações sobre estilos, consulte [controle de exibição de árvore estilos estendidos](tree-view-control-window-extended-styles.md).
+Valor que indica o estilo estendido. Para obter mais informações sobre estilos, consulte Estilos estendidos do [controle de exibição de árvore.](tree-view-control-window-extended-styles.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se essa mensagem tiver sucesso, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa mensagem for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Os estilos estendidos para um controle de exibição em árvore não têm nada a ver com os estilos estendidos usados com a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) ou a função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga).
+Os estilos estendidos para um controle de exibição de árvore não têm nada a ver com os estilos estendidos usados com a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) ou a [**função SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Os estilos estendidos para um controle de exibição em árvore não têm nada a
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

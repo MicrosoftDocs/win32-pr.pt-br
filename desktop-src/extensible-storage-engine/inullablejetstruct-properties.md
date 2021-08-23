@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.inul
 ms:contentKeyID: 39516258
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0cdf0a5a10e29198c3bdca09b3f0f3463b627f8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e376c579a51150975eef02779de29932b436c8fa82aa650f7a6079a66bf05fa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104558549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834266"
 ---
 # <a name="inullablejetstruct-properties"></a>Propriedades de INullableJetStruct
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [INullableJetStruct](./inullablejetstruct-interface.md) expõe os membros a seguir.
+O [tipo INullableJetStruct](./inullablejetstruct-interface.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -34,7 +34,7 @@ O tipo [INullableJetStruct](./inullablejetstruct-interface.md) expõe os membros
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="hh577833(v=exchg.10).md">HasValue</a></td>
+<td><a href="hh577833(v=exchg.10).md">Hasvalue</a></td>
 <td>Obtém um valor que indica se a estrutura tem um valor nulo.</td>
 </tr>
 </tbody>
@@ -49,4 +49,4 @@ Parte superior
 
 [Interface INullableJetStruct](./inullablejetstruct-interface.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

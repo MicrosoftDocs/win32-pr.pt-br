@@ -42,12 +42,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3eccbd9dabe853f01c54c78ca651d590afc49f17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbd8cd77a96301187e9b5c9f8544a23b616bf9db78af6560296660b0a3995bed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681236"
 ---
 # <a name="msvm_virtualethernetswitchsettingdata-class"></a>\_Classe Msvm VirtualEthernetSwitchSettingData
 
@@ -235,7 +235,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações do comutador Ethernet virtual".
+Uma breve descrição do objeto. essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "comutador Ethernet Virtual Configurações".
 
 </dd> <dt>
 
@@ -381,7 +381,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o número máximo de endereços MAC exclusivos que podem ser aprendidos pelo comutador para dar suporte ao aprendizado de endereço MAC, conforme definido no padrão IEEE 802,1. Essa propriedade é herdada do **CIM \_ VirtualEthernetSwitchSettingData**.
+especifica o número máximo de endereços mac exclusivos que podem ser aprendidos pelo comutador para dar suporte ao endereço mac Learning, conforme definido no padrão IEEE 802,1. Essa propriedade é herdada do **CIM \_ VirtualEthernetSwitchSettingData**.
 
 </dd> <dt>
 
@@ -410,7 +410,7 @@ Tipo de acesso: leitura/gravação
 Especifica se o PacketDirect deve ser usado, se disponível. O valor padrão é **false**.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10 e no Windows Server 2016.
+> esta propriedade foi adicionada em Windows 10 e Windows Server 2016.
 
  
 
@@ -480,7 +480,7 @@ Tipo de acesso: leitura/gravação
 Especifica se o agrupamento NIC deve ser usado. O valor padrão é **false**.
 
 > [!Note]  
-> Essa propriedade foi adicionada ao Windows 10 e ao Windows Server 2016.
+> Essa propriedade foi adicionada a inWindows 10 e Windows Server 2016.
 
  
 
@@ -531,8 +531,8 @@ Uma lista de identificadores de VLAN que esse comutador pode acessar. Essa propr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

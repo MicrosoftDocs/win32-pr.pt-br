@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Update_InstallableUpdates01_01
-description: A \_ classe MDM update \_ InstallableUpdates01 \_ 01 é usada para gerenciar e controlar a distribuição de atualizações aprovadas.
+title: MDM_Update_InstallableUpdates01_01 classe
+description: A classe MDM \_ Update \_ InstallableUpdates01 01 é usada para gerenciar e controlar a implantação de \_ atualizações aprovadas.
 ms.assetid: 53ca2291-a92a-46ed-948d-6d2a2dddd296
 keywords:
-- Classe MDM_Update_InstallableUpdates01_01
-- Classe MDM_Update_InstallableUpdates01_01, descrita
+- MDM_Update_InstallableUpdates01_01 classe
+- MDM_Update_InstallableUpdates01_01, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2bcb9dd3ec026e6894d4ba7155cc41f12bc01e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6a1e8989a261ef57025210ddf15ef265df436c1a5a94166c43db38d09068ff19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795866"
 ---
-# <a name="mdm_update_installableupdates01_01-class"></a>\_ \_ Classe InstallableUpdates01 01 de atualização \_ do MDM
+# <a name="mdm_update_installableupdates01_01-class"></a>Classe MDM \_ Update \_ InstallableUpdates01 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ Update \_ InstallableUpdates01 \_ 01** é usada para gerenciar e controlar a distribuição de atualizações aprovadas.
+A **classe MDM \_ Update \_ InstallableUpdates01 \_ 01** é usada para gerenciar e controlar a implantação de atualizações aprovadas.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_Update_InstallableUpdates01_01
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ Update \_ InstallableUpdates01 \_ 01** tem estes tipos de membros:
+A **classe \_ \_ InstallableUpdates01 \_ 01 do MDM Update** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ Update \_ InstallableUpdates01 \_ 01** tem essas propriedades.
+A **classe MDM \_ Update \_ InstallableUpdates01 \_ 01** tem essas propriedades.
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é o GUID
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -95,7 +95,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -106,7 +106,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,11 +117,11 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOFs</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

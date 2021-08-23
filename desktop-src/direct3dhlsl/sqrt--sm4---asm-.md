@@ -1,23 +1,23 @@
 ---
-title: sqrt (sm4-ASM)
-description: Raiz quadrada por componente.
+title: sqrt (sm4 – asm)
+description: Raiz quadrada do componente.
 ms.assetid: B860D656-7F01-484F-909F-A5C9A61C52C3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 628601e0a3a78784a5fd1a089ef7608a0cf9ca05
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 76e16ce8683daba19f0f0b578ccd34c9a0ea3b5d0281ccb2509d46f836a694f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743506"
 ---
-# <a name="sqrt-sm4---asm"></a>sqrt (sm4-ASM)
+# <a name="sqrt-sm4---asm"></a>sqrt (sm4 – asm)
 
-Raiz quadrada por componente.
+Raiz quadrada do componente.
 
 
 
-| SQRT \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle\] |
+| sqrt \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swizzle\] |
 |-------------------------------------------------------------|
 
 
@@ -28,8 +28,8 @@ Raiz quadrada por componente.
 
 | Item                                                            | Descrição                                                                     |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[no \] resultado da operação.<br/> *dest* = sqrt (*src0*)<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[nos \] componentes para os quais obter a raiz quadrada.<br/>             |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[em \] O resultado da operação.<br/> *dest* = sqrt(*src0*)<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[em \] Os componentes para os quais pegar a raiz quadrada.<br/>             |
 
 
 
@@ -37,23 +37,23 @@ Raiz quadrada por componente.
 
 ## <a name="remarks"></a>Comentários
 
-A precisão é 1 ULP.
+A precisão é de 1 ulp.
 
-A tabela a seguir mostra os resultados obtidos ao executar a instrução com várias classes de números, supondo que nenhum estouro ou Subfluxo ocorra.
+A tabela a seguir mostra os resultados obtidos ao executar a instrução com várias classes de números, supondo que nenhum estouro ou estouro ocorra.
 
-F significa número real finito.
+F significa número finito real.
 
 
 
-|          | **-INF** | **-F** | **-desnorma** | **-0** | **+0** | **+ desnormativo** | **+ F** | **+ INF** | **NaN** |
+|          | **-inf** | **-F** | **-denorm** | **-0** | **+0** | **+denorm** | **+F** | **+inf** | **NaN** |
 |----------|----------|--------|-------------|--------|--------|-------------|--------|----------|---------|
-| **dest** | NaN      | NaN    | -0          | -0     | +0     | +0          | + F     | +inf     | NaN     |
+| **Dest** | NaN      | NaN    | -0          | -0     | +0     | +0          | +F     | +inf     | NaN     |
 
 
 
  
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
@@ -65,16 +65,16 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
-| Modelo de Sombreador                                              | Suportado |
+| Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sim       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -88,7 +88,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 <dl> <dt>
 
-[Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly do modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

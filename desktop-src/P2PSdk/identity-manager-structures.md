@@ -4,12 +4,12 @@ ms.assetid: 687478b5-0c58-47c3-94c2-f44976436ec2
 title: Estruturas do Identity Manager
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8932c582710494f3740a5c3947f8cd486d890ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e72ec29f39ce65b71a40abb6bdc1d933c4358c799328908c6218932e06d02e48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776096"
 ---
 # <a name="identity-manager-structures"></a>Estruturas do Identity Manager
 

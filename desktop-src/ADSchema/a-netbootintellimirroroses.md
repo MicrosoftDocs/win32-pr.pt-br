@@ -1,11 +1,11 @@
 ---
-title: atributo netboot-IntelliMirror-SOS
-description: O atributo netboot-IntelliMirror-os-SOS é reservado para uso interno.
+title: Atributo netboot-IntelliMirror-OSes
+description: O atributo netboot-IntelliMirror-OSes é reservado para uso interno.
 ms.assetid: 61fbe06c-9669-4ba2-89a8-446555e3aca0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo netboot-IntelliMirror-SOS
-- Esquema de AD do atributo netbootIntelliMirrorOSes
+- Esquema do AD do atributo netboot-IntelliMirror-OSes
+- Esquema do AD do atributo netbootIntelliMirrorOSes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39284eec5ce3814ec8b555ed7c447d0bb94daee9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a77622f668979ccf46f9a5e7a072e661d52a93cf6c1cd2e956bd57ed7b75d03a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703416"
 ---
-# <a name="netboot-intellimirror-oses-attribute"></a>atributo netboot-IntelliMirror-SOS
+# <a name="netboot-intellimirror-oses-attribute"></a>Atributo netboot-IntelliMirror-OSes
 
-O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
+O **atributo netboot-IntelliMirror-OSes** é reservado para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | netboot-IntelliMirror-SOS                  |
-| LDAP-Display-Name | netbootIntelliMirrorOSes                    |
+| CN                | netboot-IntelliMirror-OSes                  |
+| Ldap-Display-Name | netbootIntelliMirrorOSes                    |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.            |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.857                      |
-| System-ID-GUID    | 0738307e-91df-11d1-aebc-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 0738307e-91df-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O atributo **netboot-IntelliMirror-os-SOS** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**IntelliMirror-SCP**](c-intellimirrorscp.md)<br/> |
+| Classes usadas em        | [**Intellimirror-SCP**](c-intellimirrorscp.md)<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de EM_SETUNDOLIMIT (RichEdit. h)
 description: Define o número máximo de ações que podem ser armazenadas na fila de desfazer de um controle de edição rico.
 ms.assetid: 485dbcda-89f4-40de-ad55-cd524958e910
 keywords:
-- Controles de EM_SETUNDOLIMIT de mensagens do Windows
+- controles de Windows de mensagem de EM_SETUNDOLIMIT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5b668d047f1de6d8720f09af5baf23e7cfc9cc2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 771e339e38437ea0299e5da6120fa555fd26148f72ff7da4e0287ed46cc4ad22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697516"
 ---
 # <a name="em_setundolimit-message"></a>\_Mensagem em SETUNDOLIMIT
 
@@ -43,7 +43,7 @@ Esse parâmetro não é usado; Ele deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o novo número máximo de ações de desfazer para o controle de edição rico. Esse valor pode ser menor que *wParam* se a memória for limitada.
 
@@ -59,9 +59,9 @@ Definir o limite como zero desabilita o recurso de **desfazer** .
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

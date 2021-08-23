@@ -1,21 +1,21 @@
 ---
-description: Suporte do VMR para aceleração de vídeo do DirectX
+description: Suporte de VMR para aceleração de vídeo do DirectX
 ms.assetid: 4bb5612d-3841-4920-a5ef-39ce357a6d1c
-title: Suporte do VMR para aceleração de vídeo do DirectX
+title: Suporte de VMR para aceleração de vídeo do DirectX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ed2e9f4907fdc653ccea6b6244c744073a9d157
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9f1998f5e55d7aa4d191ac2a312995db69d9e248349034e119ded8e99774c43
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696726"
 ---
-# <a name="vmr-support-for-directx-video-acceleration"></a>Suporte do VMR para aceleração de vídeo do DirectX
+# <a name="vmr-support-for-directx-video-acceleration"></a>Suporte de VMR para aceleração de vídeo do DirectX
 
-A aceleração de vídeo do DirectX é uma API (interface de programação de aplicativo) e uma DDI (interface de driver de dispositivo) correspondente para aceleração de hardware do processamento de decodificação de vídeo digital, com suporte de combinação alfa para tais finalidades como suporte a subimagem de DVD. O DirectX VA está documentado no Windows DDK. A interface [**IAMVideoAccelerator**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator) , que fornece acesso ao modo de usuário para a funcionalidade DirectX VA em um dispositivo de hardware, está documentada neste SDK.
+A Aceleração de Vídeo DirectX é uma API (Interface de Programação de Aplicativo) e uma DDI (Interface de Driver de Dispositivo) correspondente para aceleração de hardware do processamento de decodificação de vídeo digital, com suporte à combinação alfa para fins como suporte à subpicture de DVD. A VA do DirectX está documentada na Windows DDK. A interface [**IAMVideoAccelerator,**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator) que fornece acesso ao modo de usuário à funcionalidade do DirectX VA em um dispositivo de hardware, está documentada neste SDK.
 
-O VMR dá suporte a [**IAMVideoAccelerator**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator), e sua implementação é idêntica ao mixer de sobreposição antigo, exceto por uma diferença importante. O mixer de sobreposição garantiu que a saída é renderizada em uma superfície de sobreposição, enquanto o VMR pode enviar a saída para processamento adicional, por exemplo, uma operação 3D ou pode enviar a saída para uma superfície fora da área de transferência que, em seguida, é transportada para a superfície primária.
+A VMR dá suporte a [**IAMVideoAccelerator**](/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator)e sua implementação é idêntica à antiga sobreposição Mixer exceto por uma diferença importante. O Mixer sobreposição garante que a saída seja renderizada em uma superfície de sobreposição, enquanto a VMR pode enviar a saída para processamento posterior, por exemplo, uma operação 3D ou pode enviar a saída para uma superfície de tela externa que é então blitted para a superfície primária.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -4,12 +4,12 @@ ms.assetid: 73EE5E69-969B-409E-9E8F-5837720EA0B3
 title: Como registrar manipuladores de sobreposição de ícone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cb58747adc9b754481f43fec825a4588e1606ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5a0e62d95b224b131f03c2bd976ddf7c01d7cb3de7ad6995f21568dc7e990d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714906"
 ---
 # <a name="how-to-register-icon-overlay-handlers"></a>Como registrar manipuladores de sobreposição de ícone
 

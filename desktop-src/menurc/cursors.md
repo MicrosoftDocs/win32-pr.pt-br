@@ -7,12 +7,12 @@ keywords:
 - cursores, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9014befcc41161d7491af97186b33088f508dd8e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0d7be5b8e213dd1911d2227a3dce4b61078ab1a22711d4e765525c7fbd5bd08d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712606"
 ---
 # <a name="cursors"></a>Cursores
 
@@ -49,7 +49,7 @@ Quando o usuário move o mouse, o sistema move o cursor de acordo. As funções 
 | [**GetCursorInfo**](/windows/desktop/api/Winuser/nf-winuser-getcursorinfo)               | Recupera informações sobre o cursor global.<br/>                                                                                                                                                                                                                                              |
 | [**GetCursorPos**](/windows/desktop/api/Winuser/nf-winuser-getcursorpos)                 | Recupera a posição do cursor, em coordenadas da tela.<br/>                                                                                                                                                                                                                                     |
 | [**GetPhysicalCursorPos**](/windows/desktop/api/Winuser/nf-winuser-getphysicalcursorpos) | Recupera a posição do cursor em coordenadas físicas.<br/>                                                                                                                                                                                                                               |
-| [**LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora)                     | Carrega o recurso de cursor especificado do executável (. EXE) associado a uma instância do aplicativo.<br/>                                                                                                                                                                                |
+| [**LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora)                     | Carrega o recurso de cursor especificado do arquivo executável (.EXE) associado a uma instância do aplicativo.<br/>                                                                                                                                                                                |
 | [**LoadCursorFromFile**](/windows/desktop/api/Winuser/nf-winuser-loadcursorfromfilea)     | Cria um cursor com base nos dados contidos em um arquivo. <br/>                                                                                                                                                                                                                                        |
 | [**SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor)                       | Define a forma do cursor. <br/>                                                                                                                                                                                                                                                                     |
 | [**SetCursorPos**](/windows/desktop/api/Winuser/nf-winuser-setcursorpos)                 | Move o cursor para as coordenadas de tela especificadas. Se as novas coordenadas não estiverem dentro do retângulo da tela definido pela chamada de função [**ClipCursor**](/windows/desktop/api/Winuser/nf-winuser-clipcursor) mais recente, o sistema ajustará automaticamente as coordenadas para que o cursor permaneça dentro do retângulo. <br/>    |

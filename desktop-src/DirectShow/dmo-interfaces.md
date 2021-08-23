@@ -1,19 +1,19 @@
 ---
-description: Interfaces DMO
+description: DMO Interface
 ms.assetid: 1362495b-1abb-41fd-b821-b51d8e32f137
-title: Interfaces DMO
+title: DMO Interface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa87b2c3cf5bce5b5729249c1223d10a53879d4e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 27a5a65ee422a20a4ec94fd9d06a05c5f7c52f86d8c54bdb70fe432b44ed49cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103826028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749115"
 ---
-# <a name="dmo-interfaces"></a>Interfaces DMO
+# <a name="dmo-interfaces"></a>DMO Interface
 
-Esta seção contém entradas de referência para todas as interfaces COM do Microsoft DirectX Media Object (DMO) e seus métodos.
+esta seção contém entradas de referência para todas as interfaces COM do Microsoft DirectX Media Object (DMO) e seus métodos.
 
 
 
@@ -36,7 +36,7 @@ Esta seção contém entradas de referência para todas as interfaces COM do Mic
 
 <dl> <dt>
 
-[Referência de DMO](dmo-reference.md)
+[DMO Referência](dmo-reference.md)
 </dt> </dl>
 
  

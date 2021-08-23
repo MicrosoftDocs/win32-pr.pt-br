@@ -1,5 +1,5 @@
 ---
-description: Baixa a assinatura do arquivo. cab, verifica as permissões associadas aos pacotes e as executa com base na autenticação.
+description: Baixa a assinatura de arquivo .cab, verifica as permissões associadas aos pacotes e as executa com base na autenticação.
 ms.assetid: b86a8f39-73a1-4e17-ac83-9ed095de4922
 title: Função DownloadJavaEX
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Javacypt.dll
-ms.openlocfilehash: 31371e91599d604db591ee3e921b42bc809aae21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 628fdb1b8b0ec9979d844c8f48fb02fbf8f6a642a96c925f427c868160dd6b27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795256"
 ---
 # <a name="downloadjavaex-function"></a>Função DownloadJavaEX
 
-Baixa a assinatura do arquivo. cab, verifica as permissões associadas aos pacotes e as executa com base na autenticação.
+Baixa a assinatura de arquivo .cab, verifica as permissões associadas aos pacotes e as executa com base na autenticação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -86,7 +86,7 @@ Uma estrutura de [**\_ confiança do Java**](/windows/desktop/api/Capi/ns-capi-j
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem sucedido, o valor de retorno será **S \_ OK**. Caso contrário, o valor de retorno será um código de erro.
 

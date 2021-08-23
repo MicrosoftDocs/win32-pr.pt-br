@@ -1,7 +1,7 @@
 ---
 description: Define os tipos de rede sem fio.
 ms.assetid: 03236db9-4f58-4fe3-82ff-d4b3a387490a
-title: Tipo simples de networkTypeType
+title: tipo simples networkTypeType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: d0acb998c879e718a0e201418610bb0aa6db8c31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40184bb027f80826baa3ad56090755a2cd9ec630f9eb105e402d30a6ecf2661c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800106"
 ---
-# <a name="networktypetype-simple-type"></a>Tipo simples de networkTypeType
+# <a name="networktypetype-simple-type"></a>tipo simples networkTypeType
 
-O tipo simples networkTypeType define os tipos de rede sem fio. Há dois tipos de redes: redes de infraestrutura (ESS) e redes ad hoc (IBSS).
+O tipo simples networkTypeType define os tipos de rede sem fio. Há dois tipos de redes: ESS (redes de infraestrutura) e redes ad hoc (IBSS).
 
 ``` syntax
 <xs:simpleType name="networkTypeType">
@@ -40,14 +40,14 @@ O tipo simples networkTypeType define os tipos de rede sem fio. Há dois tipos d
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **networkTypeType** define os valores a seguir.
+O **tipo simples networkTypeType** define os valores a seguir.
 
 
 
 | Valor | Descrição |
 |-------|-------------|
 | IBSS  |             |
-| ESS   |             |
+| Ess   |             |
 
 
 
@@ -57,8 +57,8 @@ O tipo simples **networkTypeType** define os valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

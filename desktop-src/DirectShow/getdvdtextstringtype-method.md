@@ -4,17 +4,17 @@ ms.assetid: 8e22fa2e-e7eb-4dd8-b365-631986bad03e
 title: Método GetDVDTextStringType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7205025f1f7269737a4be11639f2f0dfe5e43911
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e4ad7985101379dd37d605f830ee9b20b4138e8f4c96092aaeb0ae347261adbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812526"
 ---
 # <a name="getdvdtextstringtype-method"></a>Método GetDVDTextStringType
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

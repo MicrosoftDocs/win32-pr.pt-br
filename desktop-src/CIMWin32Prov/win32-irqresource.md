@@ -1,5 +1,5 @@
 ---
-description: O Win32 \_ IRQResource &\# 160; A classe WMI representa um número de IRQ (linha de solicitação de interrupção) em um sistema de computador executando o Windows.
+description: O Win32 \_ IRQResource &\# 160; A classe WMI representa um número de IRQ (linha de solicitação de interrupção) em um sistema de computador executando Windows.
 ms.assetid: bae0c28e-2b66-40ac-9679-b2dfe9269306
 ms.tgt_platform: multiple
 title: Classe Win32_IRQResource
@@ -29,16 +29,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cd02487fe166cd7ce55482eaca1339c8701f2b62
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f70f77fb34379a9503bc2ac0988bd855254da4d6a30042b6a8fddd41561f6f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699496"
 ---
 # <a name="win32_irqresource-class"></a>\_Classe Win32 IRQResource
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ IRQResource do Win32** representa um número de IRQ (linha de solicitação de interrupção) em um sistema de computador executando o Windows.   Uma solicitação de interrupção é um sinal enviado à CPU por um dispositivo ou programa para eventos críticos de tempo. O IRQ pode ser baseado em hardware ou em software.
+A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ IRQResource do Win32** representa um número de IRQ (linha de solicitação de interrupção) em um sistema de computador executando Windows.   Uma solicitação de interrupção é um sinal enviado à CPU por um dispositivo ou programa para eventos críticos de tempo. O IRQ pode ser baseado em hardware ou em software.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -556,7 +556,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("win32api de \| estruturas do sistema cm/nível de interrupção do \| [**\_ \_ \_ descritor de recursos parciais**](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_cm_partial_resource_descriptor) \| \| ")
 </dt> </dl>
 
-Vetor do recurso de IRQ do Windows. Um vetor contém o endereço de memória para a função que será executada quando a solicitação de interrupção for confirmada pela CPU.
+vetor do Windows recurso IRQ. Um vetor contém o endereço de memória para a função que será executada quando a solicitação de interrupção for confirmada pela CPU.
 
 </dd> </dl>
 

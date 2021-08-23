@@ -4,12 +4,12 @@ ms.assetid: 74e74b62-8387-4056-83e6-2350b3da4077
 title: Mensagem de PHONE_STATE (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5db52f16d6c377087fd6ccadc5e70b5bb2865da2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90003eaa67cb3384b123c62827fcf52bae524b1e20f9f14c2391c46dc89a367c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796756"
 ---
 # <a name="phone_state-message"></a>Mensagem de estado do telefone \_
 
@@ -50,7 +50,7 @@ O estado do telefone que foi alterado. Esse parâmetro usa uma das [**\_ constan
 *dwParam2* 
 </dt> <dd>
 
-Informações dependentes do estado do telefone detalhando a alteração do status. Esse parâmetro não será usado se vários sinalizadores forem definidos em *dwParam1*, pois vários itens de status foram alterados. O aplicativo deve invocar [**phoneGetStatus**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatus) para obter um conjunto completo de informações.
+Telefone informações dependentes do estado detalhando a alteração do status. Esse parâmetro não será usado se vários sinalizadores forem definidos em *dwParam1*, pois vários itens de status foram alterados. O aplicativo deve invocar [**phoneGetStatus**](/windows/desktop/api/Tapi/nf-tapi-phonegetstatus) para obter um conjunto completo de informações.
 
 Se *dwParam1* for \_ proprietário de PHONESTATE, *dwParam2* conterá o novo número de proprietários.
 
@@ -71,7 +71,7 @@ Não utilizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -88,7 +88,7 @@ Uma mensagem de **\_ estado do telefone** com uma indicação de proprietários 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: c8f9001e-9f92-405a-8f3a-bc59b47c9e35
 title: JobPrimaryBannerSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39922f65d71ea0cc6d6de6103bc159f79467038f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 56e16c3f371a92924dd7d9b5bf9a2746386b615b821d1f58b2e57acd03f9ed11
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711816"
 ---
 # <a name="jobprimarybannersheet"></a>JobPrimaryBannerSheet
 
@@ -25,7 +25,7 @@ Descreve a folha de faixa a ser impressa para o trabalho. A folha de faixa deve 
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefixo de escopo <br/> | Trabalho<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |

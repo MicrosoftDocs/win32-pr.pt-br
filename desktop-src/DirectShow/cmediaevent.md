@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 927e561fa557ac33b1669ca7353377f7814ca448
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 505a11b9a8d3c12586e25faa822b127e0b8bb636f6655eb617125a47fb84feaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119832476"
 ---
 # <a name="cmediaevent-class"></a>Classe CMediaEvent
 
@@ -35,10 +35,10 @@ As funções de membro [**CMediaEvent:: GetIDsOfNames**](cmediaevent-getidsofnam
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CMediaEvent**](cmediaevent-cmediaevent.md)           | Constrói um objeto **CMediaEvent** .                                                                                                                                                          |
 | Métodos IDispatch                                        | Descrição                                                                                                                                                                                   |
-| [**GetIDsOfNames**](cmediaevent-getidsofnames.md)       | Mapeia um único membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiro, que podem ser usados durante as chamadas subsequentes para o método **IDispatch:: Invoke** . |
+| [**GetIDsOfNames**](cmediaevent-getidsofnames.md)       | Mapas um único membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiro, que pode ser usado durante as chamadas subsequentes para o método **IDispatch:: Invoke** . |
 | [**GetTypeInfo**](cmediaevent-gettypeinfo.md)           | Recupera um objeto Type-informations, que recupera as informações de tipo de uma interface.                                                                                                   |
 | [**GetTypeInfoCount**](cmediaevent-gettypeinfocount.md) | Recupera o número de interfaces de informações de tipo fornecidas por um objeto.                                                                                                                    |
-| [**Chame**](cmediaevent-invoke.md)                     | Fornece acesso a propriedades e métodos expostos por um objeto.                                                                                                                               |
+| [**Invoke**](cmediaevent-invoke.md)                     | Fornece acesso a propriedades e métodos expostos por um objeto.                                                                                                                               |
 
 
 

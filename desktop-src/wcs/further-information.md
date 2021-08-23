@@ -3,23 +3,23 @@ title: Mais informações
 description: Mais informações
 ms.assetid: 6e2ac851-3dba-4bbb-b766-82800b1cc5f1
 keywords:
-- WCS (sistema de cores do Windows), recursos
-- WCS (sistema de cores do Windows), recursos
+- Windows Sistema de cores (WCS), recursos
+- WCS (Windows sistema de cores), recursos
 - gerenciamento de cores de imagem, recursos
 - gerenciamento de cores, recursos
-- WCS (sistema de cores do Windows), mais informações
-- WCS (sistema de cores do Windows), mais informações
+- Windows Sistema de cores (WCS), mais informações
+- WCS (Windows sistema de cores), mais informações
 - gerenciamento de cores de imagem, mais informações
 - gerenciamento de cores, mais informações
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b16e42439a4bce88141a9179390225e4eba3b096
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 747abd166382a36067a2c3f1568f839384e2183929dc7d423c2c4bf887f8636a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105766586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814586"
 ---
 # <a name="further-information"></a>Mais informações
 

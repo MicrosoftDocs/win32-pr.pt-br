@@ -3,7 +3,7 @@ title: Mensagem de MCM_HITTEST (commctrl. h)
 description: Determina qual parte de um controle de calendário mensal está em um determinado ponto na tela. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ HitTest.
 ms.assetid: 51e74b07-4ed7-488d-ad5d-116f046577fc
 keywords:
-- Controles de MCM_HITTEST de mensagens do Windows
+- controles de Windows de mensagem de MCM_HITTEST
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3670ac8ab663ceda1786f7136a50c4da255a76c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ab43ae76a2e747ff019a5bafa32870a208851a143ad94dd0679e894366c3592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697186"
 ---
 # <a name="mcm_hittest-message"></a>\_Mensagem MCM HITTEST
 
@@ -39,7 +39,7 @@ Ponteiro para uma estrutura [**MCHITTESTINFO**](/windows/desktop/api/Commctrl/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Define valores em membros do
 
@@ -75,9 +75,9 @@ Define valores em membros do
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

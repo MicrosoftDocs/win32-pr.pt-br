@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e22b5f2a3ced9d50c9f930228d1e5611039741b4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ef7744e99d5a793bb11adb2baefee397d3264a7b0fb9969e01663bfdbef2acf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704986"
 ---
 # <a name="ms-dfsr-conflictsizeinmb-attribute"></a>atributo ms-DFSR-ConflictSizeInMb
 
@@ -56,7 +56,7 @@ Contém o tamanho, em megabytes, do diretório de conflitos.
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
@@ -77,7 +77,7 @@ Contém o tamanho, em megabytes, do diretório de conflitos.
 | ID do link                | \-                                                                                                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                                                                                  |
-| É de valor único       | True                                                                                                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                   |
 | É indexado             | Falso                                                                                                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                           |
@@ -98,7 +98,7 @@ Contém o tamanho, em megabytes, do diretório de conflitos.
 | ID do link                | \-                                                                                                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                                                                                  |
-| É de valor único       | True                                                                                                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                   |
 | É indexado             | Falso                                                                                                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                           |
@@ -119,21 +119,21 @@ Contém o tamanho, em megabytes, do diretório de conflitos.
 | ID do link                | \-                                                                                                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                                                                                                     |
 | System-Only            | Falso                                                                                                                                                                                                  |
-| É de valor único       | True                                                                                                                                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                   |
 | É indexado             | Falso                                                                                                                                                                                                  |
-| No catálogo global      | Falso                                                                                                                                                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                           |
+| No Catálogo Global      | Falso                                                                                                                                                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                           |
 | Range-Lower            | \-                                                                                                                                                                                                     |
 | Range-Upper            | \-                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                             |
 | System-Flags           | 0x00000000                                                                                                                                                                                             |
-| Classes usadas em        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**MS-DFSR-telereplication**](c-msdfsr-replicationgroup.md)<br/> [**MS-DFSR-Contentset**](c-msdfsr-contentset.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**ms-DFSR-ReplicationGroup**](c-msdfsr-replicationgroup.md)<br/> [**ms-DFSR-ContentSet**](c-msdfsr-contentset.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O atributo [**MS-DFSR-DirectoryFilter**](a-msdfsr-directoryfilter.md) faz parte do suporte ao serviço de replicação do sistema de arquivos distribuído (DFS).
+O [**atributo ms-DFSR-DirectoryFilter**](a-msdfsr-directoryfilter.md) faz parte do suporte ao serviço de replicação Sistema de Arquivos Distribuído (DFS).
 
  
 

@@ -1,23 +1,23 @@
 ---
-title: Fazendo backup e restaurando links físicos
-description: Para fazer backup e restaurar links físicos, use as funções CreateFile, CreateHardLink, FindFirstFileNameW, FindNextFileNameW, BackupRead, GetFileInformationByHandle e BackupWrite, conforme mostrado nos exemplos de pseudocódigo a seguir.
+title: Fazer o back-up e restaurar links rígidos
+description: Para fazer backup e restaurar links rígidos, use as funções CreateFile, CreateHardLink, FindFirstFileNameW, FindNextFileNameW, BackupRead, GetFileInformationByHandle e BackupWrite, conforme mostrado nos exemplos de pseudocódigo a seguir.
 ms.assetid: 129e9cf4-8ab1-45d2-8e1a-4bc85b9de668
 keywords:
-- Backup de links físicos
+- backup de links rígidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c72155231295a1eb07b6b565c018b765693c8f46
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25e5cf5a114160456e83e39cb06f441554f998df65bed2ea8f0e63b036c33c94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702216"
 ---
-# <a name="backing-up-and-restoring-hard-links"></a>Fazendo backup e restaurando links físicos
+# <a name="backing-up-and-restoring-hard-links"></a>Fazer o back-up e restaurar links rígidos
 
-Para fazer backup e restaurar links físicos, use as funções [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**CreateHardLink**](/windows/desktop/api/winbase/nf-winbase-createhardlinka), [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew), [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew), [**BackupRead**](/windows/desktop/api/Winbase/nf-winbase-backupread), [**GetFileInformationByHandle**](/windows/desktop/api/fileapi/nf-fileapi-getfileinformationbyhandle)e [**BackupWrite**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) , conforme mostrado nos exemplos de pseudocódigo a seguir.
+Para fazer backup e restaurar links rígidos, use as funções [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**CreateHardLink**](/windows/desktop/api/winbase/nf-winbase-createhardlinka), [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew), [**FindNextFileNameW,**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) [**BackupRead**](/windows/desktop/api/Winbase/nf-winbase-backupread), [**GetFileInformationByHandle**](/windows/desktop/api/fileapi/nf-fileapi-getfileinformationbyhandle)e [**BackupWrite,**](/windows/desktop/api/Winbase/nf-winbase-backupwrite) conforme mostrado nos exemplos de pseudocódigo a seguir.
 
-## <a name="pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo pseudocódigo para fazer backup de links físicos
+## <a name="pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo de pseudocódigo para fazer o back-up de links rígidos
 
 ``` syntax
 1.  Initialize and empty a list of known links. 
@@ -49,7 +49,7 @@ Para fazer backup e restaurar links físicos, use as funções [**CreateFile**](
 22. EndWhile
 ```
 
-## <a name="pseudocode-algorithm-for-restoring-hard-links"></a>Algoritmo pseudocódigo para restaurar links físicos
+## <a name="pseudocode-algorithm-for-restoring-hard-links"></a>Algoritmo de pseudocódigo para restaurar links rígidos
 
 ``` syntax
 1.  While there are more files to restore 
@@ -60,9 +60,9 @@ Para fazer backup e restaurar links físicos, use as funções [**CreateFile**](
 6.  EndWhile
 ```
 
-**Windows Server 2003 e Windows XP:** Não há suporte para as funções [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) . Em vez disso, você pode usar o procedimento descrito no exemplo de pseudocódigo a seguir.
+**Windows Server 2003 e Windows XP:** Não há suporte para as funções [**FindFirstFileNameW**](/windows/desktop/api/fileapi/nf-fileapi-findfirstfilenamew) e [**FindNextFileNameW.**](/windows/desktop/api/fileapi/nf-fileapi-findnextfilenamew) Em vez disso, você pode usar o procedimento descrito no exemplo de pseudocódigo a seguir.
 
-## <a name="alternate-pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo de pseudocódigo alternativo para fazer backup de links físicos
+## <a name="alternate-pseudocode-algorithm-for-backing-up-hard-links"></a>Algoritmo de pseudocódigo alternativo para fazer o back-up de links rígidos
 
 ``` syntax
 1.  Initialize and empty a list of known links. 
@@ -91,6 +91,6 @@ Para fazer backup e restaurar links físicos, use as funções [**CreateFile**](
 18. EndWhile
 ```
 
- 
+ 
 
- 
+ 

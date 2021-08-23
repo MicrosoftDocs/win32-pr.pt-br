@@ -3,7 +3,7 @@ title: Métodos ID2D1DeviceContext2 CreateImageSourceFromWic (D2d1 \_ 3. h)
 description: Cria um objeto de origem de imagem de uma origem de bitmap do WIC, ao mesmo tempo em que preenche toda a memória de pixel na origem da imagem. A imagem é carregada e armazenada ao usar uma quantidade mínima de memória.
 ms.assetid: af02630d-a9ca-f5b4-6f2a-31a73ef603e5
 keywords:
-- Métodos CreateImageSourceFromWic Direct2D
+- Direct2D métodos de CreateImageSourceFromWic
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 20773912886840a185e1b9fc71576f89e9a40fde
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91ca60f19a798d2c215d6810adafc08d83e96bf1923bd006f394910879cae14e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749626"
 ---
 # <a name="id2d1devicecontext2createimagesourcefromwic-methods"></a>Métodos ID2D1DeviceContext2:: CreateImageSourceFromWic
 

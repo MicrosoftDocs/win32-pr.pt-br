@@ -1,7 +1,7 @@
 ---
 description: Cria um thread.
 ms.assetid: 40785522-dc6e-41af-8b27-9e8875a0dd84
-title: Método CMsgThread. CreateThread (Msgthrd. h)
+title: Método CMsgThread.CreateThread (Msgthrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8951995de18158fe4d1e5f84b1d98da701067ab6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3681716af79d0c47ae08371caa2d03d236b9748d98b08098d7a6834a93ed9b2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119831866"
 ---
-# <a name="cmsgthreadcreatethread-method"></a>Método CMsgThread. CreateThread
+# <a name="cmsgthreadcreatethread-method"></a>Método CMsgThread.CreateThread
 
 Cria um thread.
 
@@ -40,7 +40,7 @@ BOOL CreateThread();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -48,8 +48,8 @@ Retorna um dos valores a seguir.
 
 | Código de retorno                                                                              | Descrição                                     |
 |------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <dl> <dt>VERDADEIRO * * * *</dt> </dl>  | O thread foi criado com êxito.<br/>     |
-| <dl> <dt>FALSE * * * *</dt> </dl> | O thread não foi criado com êxito.<br/> |
+| <dl> <dt>TRUE****</dt> </dl>  | O thread foi criado com êxito.<br/>     |
+| <dl> <dt>FALSE****</dt> </dl> | O thread não foi criado com êxito.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Retorna um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-O thread fará um loop, bloqueando até que uma solicitação seja enfileirada (por meio da função de membro [**CMsgThread::P utthreadmsg**](cmsgthread-putthreadmsg.md) ) e, em seguida, chamando a função de membro [**CMsgThread:: ThreadMessageProc**](cmsgthread-threadmessageproc.md) com cada mensagem.
+O thread fará um loop, bloqueando até que uma solicitação seja enxuta (por meio da função membro [**CMsgThread::P utThreadMsg)**](cmsgthread-putthreadmsg.md) e, em seguida, chamando a função de membro [**CMsgThread::ThreadMessageProc**](cmsgthread-threadmessageproc.md) com cada mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ O thread fará um loop, bloqueando até que uma solicitação seja enfileirada (
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Msgthrd. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Msgthrd.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

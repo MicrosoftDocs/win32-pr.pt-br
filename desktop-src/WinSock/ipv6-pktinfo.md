@@ -4,12 +4,12 @@ ms.assetid: 7BF17538-BE92-44FE-BA3C-6B44F61D478A
 title: Opção de soquete IPV6_PKTINFO (Ws2ipdef. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5afd5b19cbaba7f6a66f5ba6fbd85d74eb2f2e3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1bee015e7a73b803d78ae914e71a863dec83e4f40fc1aea9f631a54b37c586a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733766"
 ---
 # <a name="ipv6_pktinfo-socket-option"></a>\_Opção de soquete de PKTINFO IPv6
 
@@ -90,7 +90,7 @@ Um ponteiro para o tamanho, em bytes, do buffer *optval* . Esse tamanho deve ser
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com êxito, a função [**getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) ou [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) retornará zero.
 
@@ -103,8 +103,8 @@ Se a operação falhar, um valor de erro de soquete \_ será retornado e um cód
 | <dl> <dt>**[WSANOTINITIALISED](windows-sockets-error-codes-2.md)**</dt> </dl> | Uma chamada [**WSAStartup**](/windows/desktop/api/winsock/nf-winsock-wsastartup) bem-sucedida deve ocorrer antes de usar essa função.<br/>                                                                                                                                                     |
 | <dl> <dt>**[WSAENETDOWN](windows-sockets-error-codes-2.md)**</dt> </dl>             | Falha no subsistema de rede.<br/>                                                                                                                                                                                                               |
 | <dl> <dt>**[WSAEFAULT](windows-sockets-error-codes-2.md)**</dt> </dl>                 | Um dos parâmetros *optval* ou *optlen* aponta para a memória que não está em uma parte válida do espaço de endereço de usuário. Esse erro também será retornado se o valor apontado pelo parâmetro *optlen* for menor que o tamanho de um valor **DWORD** .<br/> |
-| <dl> <dt>**[WSAEINPROGRESS](windows-sockets-error-codes-2.md)**</dt> </dl>       | Uma chamada de bloqueio do Windows Sockets 1,1 está em andamento ou o provedor de serviços ainda está processando uma função de retorno de chamada.<br/>                                                                                                                            |
-| <dl> <dt>**[WSAEINVAL](windows-sockets-error-codes-2.md)**</dt> </dl>                 | Foi fornecido um argumento inválido. Esse erro será retornado se o parâmetro de *nível* for desconhecido ou inválido. No Windows Vista e posterior, esse erro também será retornado se o soquete estava em um estado de transição.<br/>                                     |
+| <dl> <dt>**[WSAEINPROGRESS](windows-sockets-error-codes-2.md)**</dt> </dl>       | uma chamada Windows soquetes de bloqueio 1,1 está em andamento ou o provedor de serviços ainda está processando uma função de retorno de chamada.<br/>                                                                                                                            |
+| <dl> <dt>**[WSAEINVAL](windows-sockets-error-codes-2.md)**</dt> </dl>                 | Foi fornecido um argumento inválido. Esse erro será retornado se o parâmetro de *nível* for desconhecido ou inválido. no Windows Vista e posterior, esse erro também será retornado se o soquete estava em um estado de transição.<br/>                                     |
 | <dl> <dt>**[WSAENOPROTOOPT](windows-sockets-error-codes-2.md)**</dt> </dl>       | A opção é desconhecida ou não é suportada pela família de protocolos indicada. Esse erro será retornado se o parâmetro de *tipo* para o descritor de soquete passado no parâmetro *s* não tiver sido **Sock \_ DGRAM** ou **Sock \_ RAW**. <br/>                          |
 | <dl> <dt>**[WSAENOTSOCK](windows-sockets-error-codes-2.md)**</dt> </dl>             | O descritor não é um soquete.<br/>                                                                                                                                                                                                                 |
 
@@ -132,9 +132,9 @@ Observe que o arquivo de cabeçalho *Ws2ipdef. h* é incluído automaticamente e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Ws2ipdef. h (incluir Ws2tcpip. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Ws2ipdef. h (incluir Ws2tcpip. h)</dt> </dl> |
 
 
 

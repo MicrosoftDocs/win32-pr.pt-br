@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_VPNv2_PluginProfile02
-description: A \_ classe MDM VPNv2 \_ PlugInProfile02 descreve as informações necessárias ao usar um plug-in de VPN baseado na Windows Store.
+title: MDM_VPNv2_PluginProfile02 classe
+description: A classe MDM \_ VPNv2 PlugInProfile02 descreve as informações necessárias ao usar um \_ plug-in VPN Windows Store.
 ms.assetid: 522c32e5-74f9-46b2-b590-ca6ade241e97
 keywords:
-- Classe MDM_VPNv2_PluginProfile02
-- Classe MDM_VPNv2_PluginProfile02, descrita
+- MDM_VPNv2_PluginProfile02 classe
+- MDM_VPNv2_PluginProfile02 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 008d60b28ec1d2cec9431cc63ac4d0c406d18060
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5833440924af2c8a3682a50cb066c892ce3e9c428711f21f149c70f4c0db8859
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795726"
 ---
-# <a name="mdm_vpnv2_pluginprofile02-class"></a>\_ \_ Classe PLUGINPROFILE02 do MDM VPNv2
+# <a name="mdm_vpnv2_pluginprofile02-class"></a>Classe \_ PluginProfile02 do VPNv2 \_ MDM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ VPNv2 \_ PlugInProfile02** descreve as informações necessárias ao usar um plug-in de VPN baseado na Windows Store.
+A **classe MDM \_ VPNv2 \_ PlugInProfile02** descreve as informações necessárias ao usar um plug-in VPN Windows Store.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -49,13 +49,13 @@ class MDM_VPNv2_PluginProfile02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ PluginProfile02 de MDM VPNv2** tem estes tipos de membros:
+A **classe MDM \_ VPNv2 \_ PluginProfile02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ PluginProfile02 do MDM VPNv2** tem essas propriedades.
+A **classe MDM \_ VPNv2 \_ PluginProfile02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ A **classe \_ \_ PluginProfile02 do MDM VPNv2** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -76,7 +76,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -97,7 +97,7 @@ Identifica o nome do nó pai.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -109,7 +109,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/VPNv2/*ProfileName*"
+Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/VPNv2/*ProfileName"*
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -130,7 +130,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -141,10 +141,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

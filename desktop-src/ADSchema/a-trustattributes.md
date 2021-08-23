@@ -4,8 +4,8 @@ description: Esse atributo armazena os atributos de confiança para um domínio 
 ms.assetid: c85b98a6-4d09-4eb2-821b-58ef558b3460
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Trust-Attributes do atributo AD
-- Esquema de AD do atributo trustattributes
+- Trust-Attributes atributo AD Schema
+- Atributo trustAttributes Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,33 +14,33 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d81dc06f73fbda5dab7ce8d2a07bfc90323d2b29
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2d09104d0f32c770ba1fe3fbdde6cf56d56989a801856ba970284b2d06c96a5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704036"
 ---
 # <a name="trust-attributes-attribute"></a>Trust-Attributes atributo
 
-Esse atributo armazena os atributos de confiança para um domínio confiável. Os valores de atributo possíveis são os seguintes:
+Esse atributo armazena os atributos de confiança para um domínio confiável. Os valores de atributo possíveis são os seguinte:
 
--   Atributo de confiança \_ \_ não \_ transitiva desabilite transitividade.
--   A \_ relação \_ \_ de confiança pai da árvore de atributos de confiança está definida como pai da árvore organizacional.
--   Confiança \_ raiz da árvore de atributos de confiança \_ \_ definida como outra raiz da árvore na floresta.
--   O \_ atributo de confiança \_ somente o \_ link confiável é válido somente para o cliente de upLevel.
+-   TRUST \_ ATTRIBUTE \_ NON \_ TRANSITIVE Disable transitivity.
+-   TRUST \_ ATTRIBUTE TREE PARENT Trust é definido como o pai da árvore da \_ \_ organização.
+-   TRUST \_ ATTRIBUTE TREE ROOT Trust definido como outra raiz de árvore na \_ \_ floresta.
+-   TRUST \_ ATTRIBUTE \_ UPLEVEL \_ ONLY Trusted link valid only for uplevel client.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Trust-Attributes                     |
-| LDAP-Display-Name | trustattributes                      |
+| Ldap-Display-Name | trustAttributes                      |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.470               |
-| System-ID-GUID    | 80a67e5a-9f22-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | 80a67e5a-9f22-11d0-afdd-00c04fd930c9 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -63,10 +63,10 @@ Esse atributo armazena os atributos de confiança para um domínio confiável. O
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -84,10 +84,10 @@ Esse atributo armazena os atributos de confiança para um domínio confiável. O
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -105,10 +105,10 @@ Esse atributo armazena os atributos de confiança para um domínio confiável. O
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -126,10 +126,10 @@ Esse atributo armazena os atributos de confiança para um domínio confiável. O
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -147,10 +147,10 @@ Esse atributo armazena os atributos de confiança para um domínio confiável. O
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |
@@ -168,10 +168,10 @@ Esse atributo armazena os atributos de confiança para um domínio confiável. O
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | True                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Verdadeiro                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000000                                           |

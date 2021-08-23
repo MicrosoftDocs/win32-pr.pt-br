@@ -1,22 +1,22 @@
 ---
-title: Instalando e Registrando manipuladores de protocolo (recursos de ambiente herdados do Windows)
-description: A instalação de manipuladores de protocolo envolve copiar as DLLs para um local apropriado no diretório arquivos de programas e registrá-las.
+title: Instalando e registrando manipuladores de protocolo (recursos Windows ambiente herdado)
+description: A instalação de manipuladores de protocolo envolve copiar as DLL(s) para um local apropriado no diretório Arquivos de Programas e registrá-las.
 ms.assetid: 3da32de1-2dc4-46d3-80d0-cc45a36f12f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec07f96a92b04fb489aeeb76b705efb81b5754f0
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 49f6cce4337c8b2c3faf47411f76165b11ed13ff00dfebd66ac5307d6ca6a68c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104294737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716556"
 ---
-# <a name="installing-and-registering-protocol-handlers-legacy-windows-environment-features"></a>Instalando e Registrando manipuladores de protocolo (recursos de ambiente herdados do Windows)
+# <a name="installing-and-registering-protocol-handlers-legacy-windows-environment-features"></a>Instalando e registrando manipuladores de protocolo (recursos Windows ambiente herdado)
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use o [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use [Windows Search.](../search/-search-3x-wds-overview.md)
 
-A instalação de **manipuladores de protocolo** envolve copiar as DLLs para um local apropriado no diretório arquivos de programas e registrá-las.
+A instalação **de manipuladores de** protocolo envolve copiar as DLL(s) para um local apropriado no diretório Arquivos de Programas e registrá-las.
 
 Esta seção contém os seguintes tópicos:
 
@@ -26,22 +26,22 @@ Esta seção contém os seguintes tópicos:
 
 ## <a name="installation-guidelines"></a>Diretrizes de instalação
 
-Os manipuladores de protocolo devem implementar o auto-registro para instalação e devem seguir estas diretrizes:
+Os manipuladores de protocolo devem implementar o autoregisto para instalação e devem seguir estas diretrizes:
 
--   O instalador deve usar o EXE ou o instalador MSI.
+-   O instalador deve usar o instalador EXE ou MSI.
 -   As notas de versão devem ser fornecidas.
--   Uma entrada **Adicionar/remover programas** deve ser criada para cada suplemento instalado.
--   O instalador deve assumir todas as configurações do registro para o tipo de arquivo específico ou o armazenamento que o suplemento atual compreende.
--   Se um suplemento anterior estiver sendo substituído, o instalador deverá notificar o usuário.
--   Se um suplemento mais recente tiver substituído o suplemento anterior, deverá haver a capacidade de restaurar a funcionalidade do suplemento anterior e torná-lo o suplemento padrão para esse tipo de arquivo novamente.
+-   Uma **entrada Adicionar/Remover Programas** deve ser criada para cada complemento instalado.
+-   O instalador deve assumir todas as configurações do Registro para o tipo de arquivo ou armazenamento específico que o complemento atual entende.
+-   Se um complemento anterior estiver sendo substituído, o instalador deverá notificar o usuário.
+-   Se um novo complemento tiver substituído o complemento anterior, deverá haver a capacidade de restaurar a funcionalidade do complemento anterior e torná-la o complemento padrão para esse tipo de arquivo novamente.
 
 ## <a name="to-register-protocol-handlers"></a>Para registrar manipuladores de protocolo
 
-Você precisa fazer quatorze entradas no registro para registrar o componente de manipulador de protocolo, em que:
+Você precisa fazer 14 entradas no Registro para registrar o componente do manipulador de protocolo, em que:
 
--   *Ver \_ A \_ ProgID do IND* é o ProgID independente da versão da implementação do manipulador de protocolo
--   *Ver \_ \_ProgID DEP* é o ProgID dependente da versão da implementação do manipulador de protocolo
--   *CLSID \_ 1* é o CLSID da implementação do manipulador de protocolo
+-   *Ver \_ Ind \_ ProgID é* o ProgID independente de versão da implementação do manipulador de protocolo
+-   *Ver \_ Dep \_ ProgID é* o ProgID dependente de versão da implementação do manipulador de protocolo
+-   *CLSID \_ 1 é* a CLSID da implementação do manipulador de protocolo
 
 1.  Registre o ProgID independente de versão com as seguintes chaves e valores:
 
@@ -105,7 +105,7 @@ Você precisa fazer quatorze entradas no registro para registrar o componente de
        (Default) = <Ver_Ind_ProgID>"
     ```
 
-4.  Registre o manipulador de protocolo no Windows Desktop Search:
+4.  Registre o manipulador de protocolo com Windows Desktop Search:
 
     ```
     HKEY_LOCAL_MACHINE\Software\Microsoft\RSSearch\ProtocolHandlers
@@ -125,7 +125,7 @@ Você precisa fazer quatorze entradas no registro para registrar o componente de
 
 ## <a name="to-register-shell-extensions"></a>Para registrar extensões do Shell
 
-Você precisa fazer duas entradas no registro para registrar a extensão do shell do manipulador de protocolo.
+Você precisa fazer duas entradas no Registro para registrar a extensão shell do manipulador de protocolo.
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\{CLSID of PH Implementation}

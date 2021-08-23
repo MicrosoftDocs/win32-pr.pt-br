@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b950ddfe261de5d46980e51b236da0f775fcb01b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af6cd8e2483e7a5e73fbc68dd123a358f098a729a2f2a0159ccd4e8b3e03d894
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702856"
 ---
 # <a name="usn-created-attribute"></a>USN-Created atributo
 
@@ -58,10 +58,10 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -79,10 +79,10 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -100,10 +100,10 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -121,11 +121,11 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -142,11 +142,11 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -163,11 +163,11 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |
@@ -184,11 +184,11 @@ O número de sequência de atualização (USN) atribuído na criação do objeto
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8154                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000009                      |

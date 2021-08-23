@@ -1,7 +1,7 @@
 ---
-description: Função IWICBitmapEncoder_SetPalette_Proxy function-proxy para o método SetPalette.
+description: IWICBitmapEncoder_SetPalette_Proxy função - função proxy para o método SetPalette.
 ms.assetid: d8e2c36e-6886-4959-b2a2-469bebfe1cdc
-title: Função IWICBitmapEncoder_SetPalette_Proxy
+title: IWICBitmapEncoder_SetPalette_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 8503698a1e91b86698ba288e56cc65e4447c906e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bad4b79cec720b08176e818a21a52bf71aa2f5950341394e3bdd6f709ac52ec1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812636"
 ---
-# <a name="iwicbitmapencoder_setpalette_proxy-function"></a>Função de proxy de IWICBitmapEncoder \_ Onpalette \_
+# <a name="iwicbitmapencoder_setpalette_proxy-function"></a>Função proxy IWICBitmapEncoder \_ SetPalette \_
 
-Função de proxy para o método [**SetPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette) .
+Função proxy para o [**método SetPalette.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT IWICBitmapEncoder_SetPalette_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)\***
 
-Ponteiro para este objeto [**IWICBitmapEncoder**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder) .
+Ponteiro para este [**objeto IWICBitmapEncoder.**](/windows/desktop/api/wincodec/nn-wincodec-iwicbitmapencoder)
 
 </dd> <dt>
 
-*pIPalette* \[ no\]
+*pIPalette* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-O [**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) a ser usado como a paleta global.
+A [**IWICPalette a**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) ser usada como a paleta global.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ O [**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) a ser
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -73,9 +73,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

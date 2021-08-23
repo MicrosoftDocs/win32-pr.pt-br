@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_COMPRESS (VFW. h)
-description: A \_ mensagem de compactação ICM notifica um driver de compactação de vídeo para compactar um quadro de dados em um buffer definido pelo aplicativo.
+description: o ICM \_ mensagem de compactação notifica um driver de compactação de vídeo para compactar um quadro de dados em um buffer definido pelo aplicativo.
 ms.assetid: d95b943f-458d-4a5e-bab1-e3648d323395
 keywords:
-- Multimídia do Windows de mensagem ICM_COMPRESS
+- mensagem de ICM_COMPRESS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8021a4c18ab47c9b5b848dd1cb097358f2714bf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1230f429eb49596dd8a450b8a384e0a69856b69c51141834458c09fa41ca54d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105748130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678466"
 ---
-# <a name="icm_compress-message"></a>\_Mensagem de compactação ICM
+# <a name="icm_compress-message"></a>ICM \_ COMPACTar mensagem
 
-A mensagem de **\_ compactação ICM** notifica um driver de compactação de vídeo para compactar um quadro de dados em um buffer definido pelo aplicativo.
+o **ICM mensagem de \_ compactação** notifica um driver de compactação de vídeo para compactar um quadro de dados em um buffer definido pelo aplicativo.
 
 
 ```C++

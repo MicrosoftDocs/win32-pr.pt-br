@@ -4,12 +4,12 @@ ms.assetid: 027c9ef5-4012-4d1c-b78c-a4d3f1ccbf35
 title: Usando a normalização Unicode para representar cadeias de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad452db3bc20518320afcf77e5f6483e010cd144
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62c6d091548d924919a18fe05fb9d98d2b82b13792df2facfe96489be2d7ff2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822486"
 ---
 # <a name="using-unicode-normalization-to-represent-strings"></a>Usando a normalização Unicode para representar cadeias de caracteres
 
@@ -41,7 +41,7 @@ Em muitos casos, o Unicode permite várias representações do que é, lingüís
 
 ## <a name="use-the-four-defined-normalization-forms"></a>Usar os quatro formulários de normalização definidos
 
-Seus aplicativos podem executar a normalização Unicode usando vários algoritmos, chamados de "formas de normalização", que obedecem a diferentes regras. O consórcio Unicode definiu quatro formas de normalização: NFC (forma C), NFD (forma D), NFKC (Form KC) e NFKD (Form KD). Cada formulário elimina algumas diferenças, mas preserva maiúsculas e minúsculas. O Win32 e o .NET Framework dão suporte a todos os quatro formulários de normalização.
+Seus aplicativos podem executar a normalização Unicode usando vários algoritmos, chamados de "formas de normalização", que obedecem a diferentes regras. O consórcio Unicode definiu quatro formas de normalização: NFC (forma C), NFD (forma D), NFKC (Form KC) e NFKD (Form KD). Cada formulário elimina algumas diferenças, mas preserva maiúsculas e minúsculas. o Win32 e o .NET Framework dão suporte a todos os quatro formulários de normalização.
 
 O [**\_ formulário**](/windows/desktop/api/Winnls/ne-winnls-norm_form) normal de tipo de enumeração NLS dá suporte aos quatro formulários de normalização Unicode padrão. Os formulários C e D fornecem formulários canônicos para cadeias de caracteres. As formas não canônicas KC e KD fornecem compatibilidade adicional e podem revelar determinadas equivalências semânticas que não são aparentes nos formulários C e D. No entanto, eles fazem isso às custas de uma certa perda de informações e geralmente não devem ser usados como uma forma canônica de armazenar cadeias de caracteres.
 
@@ -55,7 +55,7 @@ Os formulários KC e KD são semelhantes aos formulários C e D, respectivamente
 
 O formulário KC é um formulário composto e o formulário KD é um formulário decomposto. O aplicativo pode voltar entre os formulários KC e KD, mas não há uma maneira consistente de ir de forma KC ou KD de volta para a cadeia de caracteres original, mesmo que a cadeia de caracteres original esteja no formato C ou D.
 
-O Windows, os aplicativos da Microsoft e o .NET Framework geralmente geram caracteres na forma C usando métodos de entrada normais. Para a maioria dos fins no Windows, o formulário C é o formulário preferido. Por exemplo, os caracteres no formato C são produzidos pela entrada de teclado do Windows. No entanto, os caracteres importados da Web e de outras plataformas podem introduzir outros formulários de normalização no fluxo de dados.
+Windows, aplicativos da Microsoft e a .NET Framework geralmente geram caracteres na forma C usando métodos de entrada normais. para a maioria dos fins no Windows, o formulário C é o formulário preferido. por exemplo, os caracteres no formato C são produzidos por Windows entrada de teclado. No entanto, os caracteres importados da Web e de outras plataformas podem introduzir outros formulários de normalização no fluxo de dados.
 
 Os exemplos a seguir são desenhados a partir de UAX \# 15 e ilustram as diferenças entre os quatro formulários de normalização.
 
@@ -154,67 +154,67 @@ Os exemplos a seguir são desenhados a partir de UAX \# 15 e ilustram as diferen
 </thead>
 <tbody>
 <tr class="odd">
-<td>&quot;Äffin&quot;</td>
+<td>&quot;Ãoffin&quot;</td>
 <td>&quot;A\u0308ffin&quot;</td>
-<td>&quot;Äffin&quot;</td>
-<td rowspan="2">O ffi_ligature (U + FB03) é decomposto no formato KC, mas não no formato C. $ {REMOVE} $<br />
+<td>&quot;Ãoffin&quot;</td>
+<td rowspan="2">O ffi_ligature (U+FB03) é decomposto no formato KC, mas não no formato C.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
-<td>&quot;Ä \ uFB03n&quot;</td>
+<td>&quot;A\uFB03n&quot;</td>
 <td>&quot;A\u0308ffin&quot;</td>
-<td>&quot;Äffin&quot;</td>
+<td>&quot;Ãoffin&quot;</td>
 
 </tr>
 <tr class="odd">
-<td>&quot;Henry IV&quot;</td>
-<td>&quot;Henry IV&quot;</td>
-<td>&quot;Henry IV&quot;</td>
-<td rowspan="2">As cadeias de caracteres resultantes aqui são idênticas no formato KC. $ {REMOVE} $<br />
+<td>&quot;Iv.&quot;</td>
+<td>&quot;Iv.&quot;</td>
+<td>&quot;Iv.&quot;</td>
+<td rowspan="2">As cadeias de caracteres resultantes aqui são idênticas no formato KC.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
-<td>&quot;Henry \u2163&quot;</td>
-<td>&quot;Henry IV&quot;</td>
-<td>&quot;Henry IV&quot;</td>
+<td>&quot;Paulo \u2163&quot;</td>
+<td>&quot;Iv.&quot;</td>
+<td>&quot;Iv.&quot;</td>
 
 </tr>
 <tr class="odd">
 <td>ga</td>
-<td>Ka + dez</td>
+<td>ka +ten</td>
 <td>ga</td>
-<td rowspan="5">Diferentes equivalentes de compatibilidade de um único caractere japonês resultam na mesma cadeia de caracteres no formato KC. $ {REMOVE} $<br />
+<td rowspan="5">Equivalentes de compatibilidade diferentes de um único caractere japonês resultam na mesma cadeia de caracteres no formato KC.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
-<td>Ka + dez</td>
-<td>Ka + dez</td>
+<td>ka +ten</td>
+<td>ka +ten</td>
 <td>ga</td>
 
 </tr>
 <tr class="odd">
-<td>hw_ka + hw_ten</td>
-<td>Ka + dez</td>
+<td>hw_ka +hw_ten</td>
+<td>ka +ten</td>
 <td>ga</td>
 
 </tr>
 <tr class="even">
-<td>Ka + hw_ten</td>
-<td>Ka + dez</td>
+<td>ka +hw_ten</td>
+<td>ka +ten</td>
 <td>ga</td>
 
 </tr>
 <tr class="odd">
-<td>hw_ka + dez</td>
-<td>Ka + dez</td>
+<td>hw_ka +dez</td>
+<td>ka +ten</td>
 <td>ga</td>
 
 </tr>
 <tr class="even">
 <td>kaks</td>
-<td>k <sub>i</sub> + a m + KS <sub>f</sub></td>
+<td>k <sub>i</sub> + a m + ks <sub>f</sub></td>
 <td>kaks</td>
-<td>As sílabas Hangul são mantidas sob normalização. Em versões anteriores do Unicode, caracteres Jamo como KS <sub>f</sub> tinham mapeamentos de compatibilidade para k <sub>f</sub> + s <sub>f</sub>. Esses mapeamentos foram removidos em 2.1.9 Unicode para garantir que as sílabas Hangul sejam mantidas.<br/></td>
+<td>As syllables hangul são mantidas em normalização. Em versões Unicode anteriores, caracteres jamo como ks f tinham <sub>mapeamentos</sub> de compatibilidade para k <sub>f</sub> + s <sub>f</sub>. Esses mapeamentos foram removidos no Unicode 2.1.9 para garantir que as syllables hangul sejam mantidas.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -224,23 +224,23 @@ Os exemplos a seguir são desenhados a partir de UAX \# 15 e ilustram as diferen
  
 
 > [!Note]  
-> As duas tabelas acima têm direitos autorais de © 1998-2006 Unicode, Inc. Todos os direitos reservados.
+> As duas tabelas acima têm direitos autorais © 1998-2006 Unicode, Inc. Todos os direitos reservados.
 
  
 
-## <a name="use-composed-forms-for-single-glyphs"></a>Usar formulários compostos para glifos únicos
+## <a name="use-composed-forms-for-single-glyphs"></a>Usar formulários compostos para glifos individuais
 
-Muitas sequências de caracteres que correspondem a um único glifo não têm formulários compostos. Mesmo quando normalizado pela forma C, um único glifo Visual ou elemento de texto lógico pode ser composto por vários pontos de código Unicode. Por exemplo, vários caracteres usados na escrita de lituano têm diacríticos duplos, pois têm apenas formulários decompostos. Um exemplo é minúscula U com Macron e til ("ū̃", U + 016B U + 0303, em que o primeiro ponto de código é um U minúsculo com Macron e o segundo é um acento agudo combinável).
+Muitas sequências de caracteres que correspondem a um único glifo não têm formulários compostos. Mesmo quando normalizado pelo formulário C, um único glifo visual ou elemento de texto lógico pode ser composto por vários pontos de código Unicode. Por exemplo, vários caracteres usados na escrita de Lituano têm diacríticas duplas, pois eles têm apenas formulários decompostos. Um exemplo é U minúsculo com macron e til ("ª", U+016b U+0303, em que o primeiro ponto de código é um U minúsculo com macron e o segundo é um acento indeternado combinado).
 
 ## <a name="example"></a>Exemplo
 
-Um exemplo relevante pode ser encontrado em [NLS: exemplo de normalização Unicode](nls--unicode-normalization-sample.md).
+Um exemplo relevante pode ser encontrado em [NLS: Exemplo de normalização Unicode.](nls--unicode-normalization-sample.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando o suporte ao idioma nacional](using-national-language-support.md)
+[Usando o suporte a idiomas nacionais](using-national-language-support.md)
 </dt> <dt>
 
 [Considerações sobre segurança: recursos internacionais](security-considerations--international-features.md)
@@ -249,7 +249,7 @@ Um exemplo relevante pode ser encontrado em [NLS: exemplo de normalização Unic
 [**IsNormalizedString**](/windows/desktop/api/Winnls/nf-winnls-isnormalizedstring)
 </dt> <dt>
 
-[**Normalizestring**](/windows/desktop/api/Winnls/nf-winnls-normalizestring)
+[**NormalizeString**](/windows/desktop/api/Winnls/nf-winnls-normalizestring)
 </dt> </dl>
 
  
