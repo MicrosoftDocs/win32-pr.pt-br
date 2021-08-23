@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. Peoplenames.
+description: A política de metadados de foto para a propriedade System.Photo.PeopleNames.
 ms.assetid: 567d5542-fc7b-4d19-bc3c-b9d6e26e3387
-title: Política de metadados de foto System. Photo. Peoplenames
+title: Política de metadados de foto System.Photo.PeopleNames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3de9f5adda67fcd0e555194500f109df078bdf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4118cc8242d6dfe8a91d0bcd2b6039095fdf180037f51205d3541b9aefa2cc0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105754228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087045"
 ---
-# <a name="systemphotopeoplenames-photo-metadata-policy"></a>Política de metadados de foto System. Photo. Peoplenames
+# <a name="systemphotopeoplenames-photo-metadata-policy"></a>Política de metadados de foto System.Photo.PeopleNames
 
-A política de metadados de foto para a propriedade [System. Photo. peoplenames](../properties/props-system-photo-peoplenames.md) .
+A política de metadados de foto para a [propriedade System.Photo.PeopleNames.](../properties/props-system-photo-peoplenames.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ fotos de \_ pessoas
+PKEY \_ Photo \_ PeopleNames
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,29 +25,29 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-\_LPWStr do vetor VT VT \| \_
+VT \_ VECTOR \| VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
 StringMulti
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                                                           | Formato de disco |
 |-------|----------------------------------------------------------------|-------------|
-| 1     | /XMP/ <xmpstruct> MP: RegionInfo/ <xmpbag> MPRI: regiões | ushort      |
+| 1     | /xmp/ <xmpstruct> MP:RegionInfo/ <xmpbag> MPRI:Regions | ushort      |
 
 
 
@@ -55,7 +55,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="write-paths"></a>Caminhos de gravação
 
-Esta propriedade não pode ser gravada usando a política de metadados.
+Essa propriedade não pode ser escrita usando a política de metadados.
 
 ### <a name="remove-paths"></a>Remover caminhos
 
@@ -63,7 +63,7 @@ Esta propriedade não pode ser gravada usando a política de metadados.
 
 | Ordem | Caminho                                |
 |-------|-------------------------------------|
-| 1     | /XMP/ <xmpstruct> MP: RegionInfo |
+| 1     | /xmp/ <xmpstruct> MP:RegionInfo |
 
 
 
@@ -71,13 +71,13 @@ Esta propriedade não pode ser gravada usando a política de metadados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                                                               | Formato de disco |
 |-------|--------------------------------------------------------------------|-------------|
-| 1     | /IFD/XMP/ <xmpstruct> MP: RegionInfo/ <xmpbag> MPRI: regiões | ushort      |
+| 1     | /ifd/xmp/ <xmpstruct> MP:RegionInfo/ <xmpbag> MPRI:Regions | ushort      |
 
 
 
@@ -85,7 +85,7 @@ Esta propriedade não pode ser gravada usando a política de metadados.
 
 ### <a name="write-paths"></a>Caminhos de gravação
 
-Esta propriedade não pode ser gravada usando a política de metadados.
+Essa propriedade não pode ser escrita usando a política de metadados.
 
 ### <a name="remove-paths"></a>Remover caminhos
 
@@ -93,7 +93,7 @@ Esta propriedade não pode ser gravada usando a política de metadados.
 
 | Ordem | Caminho                                    |
 |-------|-----------------------------------------|
-| 1     | /IFD/XMP/ <xmpstruct> MP: RegionInfo |
+| 1     | /ifd/xmp/ <xmpstruct> MP:RegionInfo |
 
 
 
@@ -105,7 +105,7 @@ Esta propriedade não pode ser gravada usando a política de metadados.
 
 <dl> <dt>
 
-[System. Photo. programmode](../properties/props-system-photo-programmode.md)
+[System.Photo.ProgramMode](../properties/props-system-photo-programmode.md)
 </dt> </dl>
 
  

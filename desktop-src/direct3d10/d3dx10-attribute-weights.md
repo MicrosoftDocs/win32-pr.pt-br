@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: ab163149493ad73f892a251a691ad82544d7f382
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ef80db70d0562b000aa527afe17da43eee0eed5d6498e5da5b3d1ad964f5f87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282776"
 ---
 # <a name="d3dx10_attribute_weights-structure"></a>Estrutura de pesos de \_ atributo D3DX10 \_
 
@@ -157,7 +157,7 @@ O \_ tipo de pesos do atributo LPD3DX \_ é definido como um ponteiro para a \_ 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

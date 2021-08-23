@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 349bcffb521402b4f915937e205504ece541eee4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0cb153a74fb07e82f528cdbd21dddadd528e88cb2ea49cd422bff3fd69ab623b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081790"
 ---
 # <a name="msmq-privacy-level-attribute"></a>MSMQ-atributo de nível de privacidade
 
@@ -58,9 +58,9 @@ O nível de privacidade exigido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
+| No catálogo global      | Verdadeiro                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
@@ -79,9 +79,9 @@ O nível de privacidade exigido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
+| No catálogo global      | Verdadeiro                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
@@ -100,9 +100,9 @@ O nível de privacidade exigido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
+| No catálogo global      | Verdadeiro                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
@@ -121,10 +121,10 @@ O nível de privacidade exigido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
@@ -142,10 +142,10 @@ O nível de privacidade exigido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |
@@ -163,10 +163,10 @@ O nível de privacidade exigido pela fila.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | 0                                            |
 | Range-Upper            | 2                                            |
 | Search-Flags           | 0x00000000                                   |

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-password-History-Length
-description: Tamanho do histórico de senha para contas de usuário.
+title: Atributo ms-DS-Password-History-Length
+description: Comprimento do histórico de senha para contas de usuário.
 ms.assetid: 9a3a8420-253c-4a55-9d64-15c2c4035ea0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-password-History-Length
-- atributo msDS-PasswordHistoryLength do AD Schema
+- Esquema do AD do atributo ms-DS-Password-History-Length
+- Esquema do AD do atributo msDS-PasswordHistoryLength
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cfd79771e29e8fe755064e008510c5c18fd4e64
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7baa73decb4658e788125536cfafb6ef04f1641728cb37fa32b40b10d4ba2ef9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294616"
 ---
-# <a name="ms-ds-password-history-length-attribute"></a>atributo ms-DS-password-History-Length
+# <a name="ms-ds-password-history-length-attribute"></a>Atributo ms-DS-Password-History-Length
 
-Tamanho do histórico de senha para contas de usuário.
+Comprimento do histórico de senha para contas de usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-password-tamanho do histórico        |
-| LDAP-Display-Name | msDS-PasswordHistoryLength           |
+| CN                | ms-DS-Password-History-Length        |
+| Ldap-Display-Name | msDS-PasswordHistoryLength           |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2014              |
-| System-ID-GUID    | fed81bb7-768c-4c2f-9641-2245de34794d |
+| System-Id-Guid    | fed81bb7-768c-4c2f-9641-2245de34794d |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -55,15 +55,15 @@ Tamanho do histórico de senha para contas de usuário.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Tamanho do histórico de senha para contas de usuário.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Tamanho do histórico de senha para contas de usuário.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | 0                                                                     |
 | Range-Upper            | 65535                                                                 |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**ms-DS-password-Settings**](c-msds-passwordsettings.md)<br/> |
+| Classes usadas em        | [**ms-DS-Password-Configurações**](c-msds-passwordsettings.md)<br/> |
 
 
 

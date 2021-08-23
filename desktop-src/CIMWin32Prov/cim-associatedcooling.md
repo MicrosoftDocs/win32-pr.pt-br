@@ -1,8 +1,8 @@
 ---
-description: A \_ associação CIM AssociatedCooling indica quando ventiladores ou outros dispositivos de resfriamento são específicos para um dispositivo (em vez de fornecer resfriamento de compartimento ou de gabinete).
+description: A associação CIM Associated Cooling indica quando ventiladores ou outros dispositivos de resfriamento são específicos de um dispositivo (em vez de fornecer compartimento ou \_ resfriamento de gabinete).
 ms.assetid: 7b20e429-593c-4365-a340-1aef9b0fadf5
 ms.tgt_platform: multiple
-title: Classe CIM_AssociatedCooling
+title: CIM_AssociatedCooling classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bb838129226b225f024917e8f8e77ddc92ddf2ff
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 71f9c129a7883e5594affeefab8de9c20cf30ff092c5ce315471dbf5bc0a316a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119218936"
 ---
-# <a name="cim_associatedcooling-class"></a>\_Classe CIM AssociatedCooling
+# <a name="cim_associatedcooling-class"></a>Classe CIM \_ Associated Cooling
 
-A associação **CIM \_ AssociatedCooling** indica quando ventiladores ou outros dispositivos de resfriamento são específicos para um dispositivo (em vez de fornecer resfriamento de compartimento ou de gabinete).
+A **associação CIM \_ Associated Cooling** indica quando ventiladores ou outros dispositivos de resfriamento são específicos de um dispositivo (em vez de fornecer compartimento ou resfriamento de gabinete).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -42,55 +42,55 @@ class CIM_AssociatedCooling : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ AssociatedCooling** tem estes tipos de membros:
+A **classe CIM \_ Associated Cooling** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ AssociatedCooling** tem essas propriedades.
+A **classe CIM \_ Associated Cooling** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ CoolingDevice**
+Tipo de dados: **Cim \_ CoolingDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que descreve o dispositivo de resfriamento.
+Um [**\_ LogicalDevice cim**](cim-logicaldevice.md) que descreve o dispositivo de resfriamento.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ LogicalDevice CIM**](cim-logicaldevice.md) que faz referência ao dispositivo lógico que está sendo resfriado.
+Um [**\_ LogicalDevice cim**](cim-logicaldevice.md) que faz referência ao dispositivo lógico que está sendo resfriado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ AssociatedCooling** é derivada da [**\_ dependência CIM**](cim-dependency.md).
+A **classe \_ Associated Cooling CIM** é derivada da [**\_ Dependência CIM.**](cim-dependency.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -110,7 +110,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

@@ -6,26 +6,26 @@ keywords:
 - Windows Media Player, biblioteca
 - Windows Media Player modelo de objeto, biblioteca
 - modelo de objeto, biblioteca
-- Windows Media Player Mobile, biblioteca para o modelo de objeto
-- Windows Media Player controle ActiveX, biblioteca para modelo de objeto
-- Windows Media Player controle ActiveX Móvel, biblioteca para modelo de objeto
-- Controle ActiveX, biblioteca para modelo de objeto
+- Windows Media Player Móvel, biblioteca para o modelo de objeto
+- Windows Media Player ActiveX controle, biblioteca para o modelo de objeto
+- Windows Media Player Controle ActiveX dispositivo móvel, biblioteca para modelo de objeto
+- ActiveX controle, biblioteca para o modelo de objeto
 - Windows Media Player, gerenciando itens de mídia
 - biblioteca, gerenciando itens de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf984c2f884ae828bd6426dd2a3f6da19a78ddea
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: ac689bd6951f09b39db20975d52f6a8ccfc08668d3266d5964c2b7eac28cfd38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054624"
 ---
 # <a name="managing-media-items"></a>Gerenciando itens de mídia
 
 Um **objeto Media** representa um item de mídia. Ele tem propriedades e métodos que você pode usar para recuperar informações e exibi-las para o usuário ou para tomar ações diferentes com base no valor recuperado.
 
-Grande parte do seu trabalho com **objetos de** Mídia envolve metadados sobre o conteúdo do item de mídia, chamados de atributos. O tópico [Atributos de Item de](media-item-attributes.md) Mídia descreve como ler e alterar valores de atributo. Além deste tópico, consulte as Diretrizes de uso de metadados de mídia do [Windows](/previous-versions/ms867702(v=msdn.10)) no site da Microsoft para obter mais informações sobre os atributos e seu uso.
+Grande parte do seu trabalho com **objetos de** Mídia envolve metadados sobre o conteúdo do item de mídia, chamados de atributos. O tópico [Atributos de Item de](media-item-attributes.md) Mídia descreve como ler e alterar valores de atributo. Além deste tópico, consulte as Diretrizes Windows uso de metadados de [mídia](/previous-versions/ms867702(v=msdn.10)) no site da Microsoft para obter mais informações sobre os atributos e seu uso.
 
 O **objeto Media** tem propriedades e métodos que recuperam alguns atributos diretamente, como o nome ou a duração do item. Para itens de vídeo, você pode recuperar a altura e a largura da imagem e recuperar informações de marcador com base no nome ou índice de um marcador. Você também pode determinar se um item de mídia específico está incluído em uma playlist específica.
 

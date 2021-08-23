@@ -4,12 +4,12 @@ description: O BITS dá suporte à autenticação básica, autenticação do Pas
 ms.assetid: cfd4aec3-79d0-4971-93f8-df797e5c0f75
 ms.topic: article
 ms.date: 10/09/2018
-ms.openlocfilehash: 5d970956676a3348dd4b8c4b420e044bd4714775
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 9cb3d50f6689ed28889c68388969c1cb7d06ea912bc5d5ed4384f45a4e740f79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021284"
 ---
 # <a name="authentication-bits"></a>Autenticação (BITS)
 
@@ -37,7 +37,7 @@ O BITS usará credenciais implícitas para autenticação se o valor do registro
 
 Observe que alterar o valor do registro **LmCompatibilityLevel** pode afetar outros aplicativos e serviços em execução no computador. Para obter mais informações sobre como usar o valor do registro **LmCompatibilityLevel** , consulte [KB147706](https://support.microsoft.com/kb/147706).
 
-Se a definição do valor do registro **LmCompatibilityLevel** for um problema, você poderá criar o valor do registro **UseLMCompat** em **HKEY \_ local \_ Machine** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **bits**. O valor do registro é um DWORD. A tabela a seguir lista os possíveis valores para **UseLMCompat**:
+se a definição do valor do registro **LMCompatibilityLevel** for um problema, você poderá criar o valor do registro **UseLMCompat** em **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **BITS**. O valor do registro é um DWORD. A tabela a seguir lista os possíveis valores para **UseLMCompat**:
 
 |Valor|Descrição|
 |-|-|
@@ -59,12 +59,12 @@ Se você estiver usando BITS em um ambiente que exija autenticação de proxy du
 
 A lógica de detecção de proxy usada em BITS faz o seguinte quando um token auxiliar de rede ( \_ rede de token BG \_ ) é definido:
 
--   Se [**método ibackgroundcopyjob:: SetProxySettings**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setproxysettings) foi chamado com **a \_ \_ configuração de \_ uso \_ de proxy de trabalho BG**, leia as configurações de proxy do IE local usando a representação do contexto do token do proprietário do trabalho por meio de [**WinHttpGetIEProxyConfigForCurrentUser**](/windows/desktop/api/winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser). A partir do Windows 10, versão 1809 (10,0; Build 17763), a identidade do token auxiliar é usada para esta etapa.
+-   Se [**método ibackgroundcopyjob:: SetProxySettings**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setproxysettings) foi chamado com **a \_ \_ configuração de \_ uso \_ de proxy de trabalho BG**, leia as configurações de proxy do IE local usando a representação do contexto do token do proprietário do trabalho por meio de [**WinHttpGetIEProxyConfigForCurrentUser**](/windows/desktop/api/winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser). a partir do Windows 10, versão 1809 (10,0; Build 17763), a identidade do token auxiliar é usada para esta etapa.
 -   Se [**método ibackgroundcopyjob:: SetProxySettings**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setproxysettings) for chamado com a detecção automática de uso de proxy de BG ou se as configurações do IE do caso de configuração de uso do proxy de trabalho BG especificarem uma **\_ \_ \_ \_ AutoConfig** ou uma URL de configuração automática, realize a detecção de proxy automático ou o protocolo de descoberta automática de proxy da Web (WPAD), usando a representação de token auxiliar via [**WinHttpGetProxyForUrl**](/windows/desktop/api/winhttp/nf-winhttp-winhttpgetproxyforurl). **\_ \_ \_**
 
 Depois disso, a representação do token auxiliar é usada para autenticação de proxy ou de servidor em todo o.
 
-A partir do Windows 10, versão 1809 (10,0; Build 17763), o cenário de proxy autenticado com credenciais específicas do usuário é simplificado.
+a partir do Windows 10, versão 1809 (10,0; Build 17763), o cenário de proxy autenticado com credenciais específicas do usuário é simplificado.
 
 1.  Chame o método [**SetCredentials**](/windows/desktop/api/Bits1_5/nf-bits1_5-ibackgroundcopyjob2-setcredentials) do trabalho do bits com o **BG \_ auth \_ Scheme \_ Negotiate**, *username* definido como **NULL**, *password* Set como **null** e *target* Set como **BG \_ auth \_ target \_ proxy**. Isso faz com que as credenciais implícitas da conta do usuário sejam usadas para a autenticação NTLM e Kerberos com o proxy e o servidor.
 2.  Chame [**método ibackgroundcopyjob:: SetProxySettings**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-setproxysettings) com o **BG \_ uso de proxy de trabalho de \_ \_ \_ configuração**.
@@ -76,7 +76,7 @@ A partir do Windows 10, versão 1809 (10,0; Build 17763), o cenário de proxy au
 8. Continuar a instalação do trabalho.
 9. Chame [**resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) no trabalho.
 
-Antes do Windows 10, versão 1809 (10,0; Build 17763), a identidade de usuário correta (a identidade do token auxiliar) é usada para a detecção de proxy baseada em rede (WPAD) e para autenticação de proxy, mas a detecção real de configurações de proxy locais (IE) é sempre feita usando o token do proprietário do trabalho, mesmo quando um token auxiliar é configurado. Para contornar essa deficiência, você pode seguir estas etapas.
+antes de Windows 10, versão 1809 (10,0; Build 17763), a identidade de usuário correta (a identidade do token auxiliar) é usada para a detecção de proxy baseada em rede (WPAD) e para autenticação de proxy, mas a detecção real de configurações de proxy locais (IE) é sempre feita usando o token do proprietário do trabalho, mesmo quando um token auxiliar é configurado. Para contornar essa deficiência, você pode seguir estas etapas.
 
 1.  Representar a conta de usuário que você está usando para credenciais NTLM/Kerberos.
 2.  Recupere as configurações de proxy do IE da conta de usuário chamando [**WinHttpGetIEProxyConfigForCurrentUser**](/windows/desktop/api/winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser).

@@ -1,25 +1,25 @@
 ---
-title: Usando COM em seu aplicativo do Windows
+title: usando com em seu aplicativo Windows
 description: O módulo 1 desta série mostrou como criar uma janela e responder a mensagens de janela como o WM \_ Paint e o WM \_ Close. O módulo 2 apresenta a Component Object Model (COM).
 ms.assetid: 6e867618-4d02-4c17-b7ea-dc7290507689
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8c03f16937846c4479a70e16141f1b50bde3efc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2180d47bd0dd12c0184a2f9241ec5656c7fe711150e1d5163ca2fec9e0b28fd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103641012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068026"
 ---
 # <a name="module-2-using-com-in-your-windows-based-program"></a>Módulo 2. Usando COM em seu programa de Windows-Based
 
 O [módulo 1](your-first-windows-program.md) desta série mostrou como criar uma janela e responder a mensagens de janela como o [**WM \_ Paint**](/windows/desktop/gdi/wm-paint) e o [**WM \_ Close**](/windows/desktop/winmsg/wm-close). O módulo 2 apresenta a Component Object Model (COM).
 
-COM é uma especificação para a criação de componentes de software reutilizáveis. Muitos dos recursos que você usará em um programa moderno baseado no Windows contam COM o COM, como o seguinte:
+COM é uma especificação para a criação de componentes de software reutilizáveis. muitos dos recursos que você usará em um programa moderno baseado em Windows contam com o COM, como o seguinte:
 
 -   Gráficos (Direct2D)
 -   Texto (DirectWrite)
--   O Shell do Windows
+-   o Windows Shell
 -   O controle da faixa de faixas
 -   Animação da interface do usuário
 
@@ -57,6 +57,6 @@ COM é um *padrão binário*, não um padrão de idioma: define a interface bin�
 [Aprenda a programar para Windows em C++](learn-to-program-for-windows.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

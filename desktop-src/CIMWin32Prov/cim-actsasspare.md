@@ -1,8 +1,8 @@
 ---
-description: A \_ associação CIM ActsAsSpare indica quais elementos podem ser sobressalentes ou substituir outros elementos agregados. Um sobressalente pode operar no \# modo &0034; hot-standby&\# 0034;, conforme especificado em uma base elemento a elemento.
+description: A associação CIM \_ ActsAsSpare indica quais elementos podem ser sobressalentes ou substituir outros elementos agregados. Um sobressalente pode operar no modo &\# 0034;hot-standby&0034; conforme especificado em uma base elemento a \# elemento.
 ms.assetid: bed8c552-f782-4af9-9441-ff3268182c3b
 ms.tgt_platform: multiple
-title: Classe CIM_ActsAsSpare
+title: CIM_ActsAsSpare classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 975c6317a78789938ea9d34e062d84fe3435498a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6b76b9dbd4a5a3302d1aae328bcd096dee5cd03e1615d3c7e30c58f3344ea67f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080950"
 ---
-# <a name="cim_actsasspare-class"></a>\_Classe CIM ActsAsSpare
+# <a name="cim_actsasspare-class"></a>Classe CIM \_ ActsAsSpare
 
-A associação **CIM \_ ActsAsSpare** indica quais elementos podem ser sobressalentes ou substituir outros elementos agregados. Um sobressalente pode operar no modo "hot-standby", conforme especificado de acordo com o elemento.
+A **associação CIM \_ ActsAsSpare** indica quais elementos podem ser sobressalentes ou substituir outros elementos agregados. Um sobressalente pode operar no modo de "espera quente", conforme especificado em uma base elemento a elemento.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -49,46 +49,46 @@ class CIM_ActsAsSpare
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ActsAsSpare** tem estes tipos de membros:
+A **classe CIM \_ ActsAsSpare** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ActsAsSpare** tem essas propriedades.
+A **classe CIM \_ ActsAsSpare** tem essas propriedades.
 
 <dl> <dt>
 
 **Grupo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ Respare CIM**
+Tipo de dados: **\_ SpareGroup CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência à propriedade de **grupo** que representa a classe de [**\_ reserva de CIM**](cim-sparegroup.md) .
+Referência à propriedade **Group** que representa a [**classe \_ SpareGroup CIM.**](cim-sparegroup.md)
 
 </dd> <dt>
 
 **HotStandby**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, o sobressalente estará operando como uma espera ativa.
+Se **TRUE**, o sobressalente está operando como um modo de espera quente.
 
 </dd> <dt>
 
-**Livre**
+**Poupar**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ManagedSystemElement**
+Tipo de dados: **Cim \_ ManagedSystemElement**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -102,7 +102,7 @@ Referência a um elemento do sistema gerenciado atuando como um sobressalente e 
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,8 +112,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -122,7 +122,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[Classes CIM](/windows/desktop/WmiSdk/cimclas)
+[CIM Classes](/windows/desktop/WmiSdk/cimclas)
 </dt> </dl>
 
  

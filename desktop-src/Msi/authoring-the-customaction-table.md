@@ -1,19 +1,19 @@
 ---
-description: Insira registros para as cinco ações personalizadas de exemplo criadas na seção anterior para a tabela CustomAction. Para obter mais informações sobre como preencher a tabela CustomAction para esse tipo de ação personalizada, consulte tipo de ação personalizada 1.
+description: Insira registros para as cinco ações personalizadas de exemplo criadas na seção anterior para a Tabela CustomAction. Para obter mais informações sobre como preencher a tabela CustomAction para esse tipo de ação personalizada, consulte Tipo de ação personalizada 1.
 ms.assetid: 56828105-bd72-426d-833f-f756c577c77f
-title: Criando a tabela CustomAction
+title: Como fazer a tabela CustomAction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56fb7d8cf99a30200e6a5525e3516e2b888c1129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b618da6e88718aa59483b3b25c007ff0b41eb89f6e1dc18a7eb31563632dc54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066076"
 ---
-# <a name="authoring-the-customaction-table"></a>Criando a tabela CustomAction
+# <a name="authoring-the-customaction-table"></a>Como fazer a tabela CustomAction
 
-Insira registros para as cinco ações personalizadas de exemplo criadas na seção anterior para a [tabela CustomAction](customaction-table.md). Para obter mais informações sobre como preencher a tabela CustomAction para esse tipo de ação personalizada, consulte [tipo de ação personalizada 1](custom-action-type-1.md).
+Insira registros para as cinco ações personalizadas de exemplo criadas na seção anterior para a [Tabela CustomAction](customaction-table.md). Para obter mais informações sobre como popular a tabela CustomAction para esse tipo de ação personalizada, consulte [Custom Action Type 1](custom-action-type-1.md).
 
 [Tabela CustomAction](customaction-table.md)
 
@@ -31,7 +31,7 @@ Insira registros para as cinco ações personalizadas de exemplo criadas na seç
 
  
 
-O código-fonte do C++ para as bibliotecas de vínculo dinâmico são fornecidos no SDK do Windows Installer. Use o Process. cpp para criar o arquivo Process.dll. Use Create. cpp para criar o arquivo Create.dll. Use remove. cpp para criar Remove.dll. Adicione esses arquivos da biblioteca de vínculo dinâmico à tabela binária.
+O código-fonte do C++ para as bibliotecas de vínculo dinâmico é fornecido no SDK Windows Installer. Use Process.cpp para criar o arquivo Process.dll. Use Create.cpp para criar o arquivo Create.dll. Use Remove.cpp para criar Remove.dll. Adicione esses arquivos de biblioteca de vínculo dinâmico à tabela Binária.
 
 [Tabela binária](binary-table.md)
 
@@ -47,7 +47,7 @@ O código-fonte do C++ para as bibliotecas de vínculo dinâmico são fornecidos
 
  
 
-Continue a [Adicionar uma tabela CustomUserAccounts personalizada](adding-a-custom-customuseraccounts-table.md).
+Continue [adicionando uma tabela CustomUserAccounts personalizada.](adding-a-custom-customuseraccounts-table.md)
 
  
 

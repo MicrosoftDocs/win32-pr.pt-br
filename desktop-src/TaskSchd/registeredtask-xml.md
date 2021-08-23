@@ -1,11 +1,11 @@
 ---
-title: Propriedade RegisteredTask.XML
+title: RegisteredTask.XML propriedade
 description: Para scripts, obtém as informações de registro formatadas em XML para a tarefa registrada.
 ms.assetid: 59a88a19-2401-42aa-aa04-1933f16a7d7b
 keywords:
-- Agendador de Tarefas da propriedade XML
-- Propriedade XML Agendador de Tarefas, objeto RegisteredTask
-- Agendador de Tarefas de objeto RegisteredTask, propriedade XML
+- Propriedade XML Agendador de Tarefas
+- Propriedade XML Agendador de Tarefas objeto , RegisteredTask
+- Objeto RegisteredTask Agendador de Tarefas propriedade , XML
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0765613918882910b902af61d9989bfa40a513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee7af139100a449d8a2e8ce4ddc6098b9776d61477e1ef595aac14315a152c4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253556"
 ---
-# <a name="registeredtaskxml-property"></a>Propriedade RegisteredTask.XML
+# <a name="registeredtaskxml-property"></a>RegisteredTask.XML propriedade
 
 Para scripts, obtém as informações de registro formatadas em XML para a tarefa registrada.
 
@@ -46,9 +46,9 @@ As informações de registro formatadas em XML para a tarefa registrada.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

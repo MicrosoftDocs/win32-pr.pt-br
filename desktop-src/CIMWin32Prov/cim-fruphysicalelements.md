@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5c47160b9053a323f693d76f5b84d922c5120992
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 15a1f94771e7ccdcaaf132f4366b7b06824b14010d9cf8abf5914ea446f9ac8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080590"
 ---
 # <a name="cim_fruphysicalelements-class"></a>\_Classe CIM FRUPhysicalElements
 

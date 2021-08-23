@@ -4,12 +4,12 @@ ms.assetid: b422b981-8760-4484-9965-f212287c421e
 title: Instalação e exclusão de fontes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0184054973c769462ed8c1620e5534ff909576ca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 112cfbff6bebdfc2fa4d46993f1fa60dcc19285bc3e16ebc2fd929e3a43ba679
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037924"
 ---
 # <a name="font-installation-and-deletion"></a>Instalação e exclusão de fontes
 
@@ -27,7 +27,7 @@ Quando um aplicativo termina de usar uma fonte instalada, ele deve remover essa 
 Uma fonte instalada a partir de um local diferente da pasta% windir% \\ fonts não pode ser modificada quando carregada em qualquer sessão ativa, incluindo a sessão 0. Qualquer tentativa de alterar, substituir ou excluir, portanto, será bloqueada. Se a modificação para uma fonte for necessária:
 
 -   *Fontes temporárias* são carregadas apenas na sessão atual. Antes de tentar qualquer modificação de fonte, chame [**RemoveFontResource**](/windows/desktop/api/Wingdi/nf-wingdi-removefontresourcea) para forçar a sessão atual a descarregar a fonte.
--   As *fontes permanentes* permanecem instaladas após a reinicialização e são carregadas por todas as sessões criadas. Chame [**RemoveFontResource**](/windows/desktop/api/Wingdi/nf-wingdi-removefontresourcea) para forçar a sessão atual a descarregar a fonte. Em seguida, na chave do registro da fonte (**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ fonts**), localize e remova o valor do registro associado à fonte. Por fim, reinicialize o computador para garantir que a fonte não seja carregada em nenhuma sessão. Após a reinicialização, continue com sua modificação/exclusão de fonte.
+-   As *fontes permanentes* permanecem instaladas após a reinicialização e são carregadas por todas as sessões criadas. Chame [**RemoveFontResource**](/windows/desktop/api/Wingdi/nf-wingdi-removefontresourcea) para forçar a sessão atual a descarregar a fonte. em seguida, na chave do registro da fonte (**HKEY \_ LOCAL \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows NT \\ CurrentVersion \\ fonts**), localize e remova o valor do registro associado à fonte. Por fim, reinicialize o computador para garantir que a fonte não seja carregada em nenhuma sessão. Após a reinicialização, continue com sua modificação/exclusão de fonte.
 
 Sempre que um aplicativo chama as funções que adicionam e excluem recursos de fonte, ele também deve chamar a função [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) e enviar uma mensagem do [**WM \_ FONTCHANGE**](wm-fontchange.md) para todas as janelas de nível superior no sistema. Essa mensagem notifica outros aplicativos de que a tabela de fontes interna foi alterada por um aplicativo que adicionou ou removeu uma fonte.
 

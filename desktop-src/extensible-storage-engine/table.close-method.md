@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Table. Close'
-title: Método Table. Close
+description: 'Saiba mais sobre: Método Table.Close'
+title: Método Table.Close
 TOCTitle: 'Close method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Table.Close
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.table.close(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b97e68a0875b237c6a197e3d4f8c15d1b5d1f4aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8786179f460280cdf1c2cf03966c2d8d9c54de419e2e244f71e1be9469b120f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119106991"
 ---
-# <a name="tableclose-method"></a>Método Table. Close
+# <a name="tableclose-method"></a>Método Table.Close
 
 Feche a tabela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,8 +57,8 @@ public void Close()
 
 #### <a name="reference"></a>Referência
 
-[Classe de tabela](./table-class.md)
+[Classe Table](./table-class.md)
 
 [Membros da tabela](./table-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

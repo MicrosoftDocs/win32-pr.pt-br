@@ -1,28 +1,28 @@
 ---
-description: A \_ classe de arquivo de paginação Win32 expõe os métodos a seguir.
+description: A classe \_ PageFile Win32 expõe os métodos a seguir.
 ms.assetid: 1423FC37-302D-47FA-A1CC-D9D59328FA0A
 ms.tgt_platform: multiple
-title: Métodos de Win32_PageFile
+title: Métodos Win32_PageFile dados
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 201de9f1e83c95442f9edbc145132ff92bcb2804
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a25d9f47ab8475769da0a1d723593e5b9d2a27b1d0d9f78533f251ec258660f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079720"
 ---
-# <a name="win32_pagefile-methods"></a>\_Métodos de arquivo de paginação Win32
+# <a name="win32_pagefile-methods"></a>Métodos PageFile do Win32 \_
 
-A classe de [**\_ arquivo de paginação Win32**](win32-pagefile.md) expõe os métodos a seguir.
+A [**classe \_ PageFile Win32**](win32-pagefile.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [**Método ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-win32-pagefile.md)
 -   [**Método ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-win32-pagefile.md)
--   [**Método compress**](compress-method-in-class-win32-pagefile.md)
+-   [**Método Compress**](compress-method-in-class-win32-pagefile.md)
 -   [**Método CompressEx**](compressex-method-in-class-win32-pagefile.md)
--   [**Método de cópia**](copy-method-in-class-win32-pagefile.md)
+-   [**Método Copy**](copy-method-in-class-win32-pagefile.md)
 -   [**Método CopyEx**](copyex-method-in-class-win32-pagefile.md)
 -   [**Método Delete**](delete-method-in-class-win32-pagefile.md)
 -   [**Método DeleteEx**](deleteex-method-in-class-win32-pagefile.md)
@@ -30,7 +30,7 @@ A classe de [**\_ arquivo de paginação Win32**](win32-pagefile.md) expõe os m
 -   [**Renomear método**](rename-method-in-class-win32-pagefile.md)
 -   [**Método TakeOwnerShip**](takeownership-method-in-class-win32-pagefile.md)
 -   [**Método TakeOwnerShipEx**](takeownershipex-method-in-class-win32-pagefile.md)
--   [**Descompactar método**](uncompress-method-in-class-win32-pagefile.md)
+-   [**Método Uncompress**](uncompress-method-in-class-win32-pagefile.md)
 -   [**Método UncompressEx**](uncompressex-method-in-class-win32-pagefile.md)
 
  

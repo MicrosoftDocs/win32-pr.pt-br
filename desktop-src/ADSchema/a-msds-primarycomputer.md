@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47f960bccd6067b8d31e7782a0d8d46a806ee7bb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8193ed84eab93e36d12d3ef370362df7d7b407863c921981b867525a32e3c015
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294356"
 ---
 # <a name="ms-ds-primary-computer-attribute"></a>atributo ms-DS-Primary-Computer
 
@@ -36,7 +36,7 @@ Para um objeto de usuário ou grupo, o identifica os computadores primários.
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2167                 |
 | System-ID-GUID    | a13df4e2-dbb0-4ceb-828b-8b2e143e9e81    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,8 +54,8 @@ Para um objeto de usuário ou grupo, o identifica os computadores primários.
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
 | É de valor único       | Falso                                                                 |
-| É indexado             | True                                                                  |
-| No catálogo global      | True                                                                  |
+| É indexado             | Verdadeiro                                                                  |
+| No catálogo global      | Verdadeiro                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |

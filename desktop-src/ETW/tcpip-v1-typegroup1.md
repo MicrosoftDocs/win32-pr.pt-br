@@ -1,7 +1,7 @@
 ---
-description: Classe TcpIp_V1_TypeGroup1-essa classe é a classe de tipo de evento para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: TcpIp_V1_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 1cde7e37-52da-4108-90ce-7647a5653f65
-title: Classe TcpIp_V1_TypeGroup1
+title: TcpIp_V1_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 831dfdc228e2c8e128f328784046e833b0b45a39
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2b16f125eac6bf22904e93aef9084f00bbf6ca55be85c762de54c286631b584e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069546"
 ---
-# <a name="tcpip_v1_typegroup1-class"></a>\_ \_ Classe TypeGroup1 tcpip v1
+# <a name="tcpip_v1_typegroup1-class"></a>Classe TypeGroup1 TcpIp \_ \_ V1
 
 Essa classe é a classe de tipo de evento para eventos TCP/IP.
 
@@ -48,17 +48,17 @@ class TcpIp_V1_TypeGroup1 : TcpIp_V1
 
 ## <a name="members"></a>Membros
 
-A classe **tcpip \_ v1 \_ TypeGroup1** tem estes tipos de membros:
+A **classe \_ \_ TypeGroup1 TcpIp V1** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **tcpip \_ v1 \_ TypeGroup1** tem essas propriedades.
+A **classe \_ \_ TypeGroup1 TcpIp V1** tem essas propriedades.
 
 <dl> <dt>
 
-daddr
+paidr
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -67,14 +67,14 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3), extensão ("IPAddr")
+Qualificadores: WmiDataId(3), Extension("IPAddr")
 </dt> </dl>
 
 Endereço IP de destino.
 
 </dd> <dt>
 
-dport
+Dport
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -83,7 +83,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), extensão ("porta")
+Qualificadores: WmiDataId(5), Extension("Port")
 </dt> </dl>
 
 Número da porta de destino.
@@ -93,13 +93,13 @@ Número da porta de destino.
 PID
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1)
+Qualificadores: WmiDataId(1)
 </dt> </dl>
 
 Identificador do processo associado à solicitação.
@@ -115,7 +115,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), extensão ("IPAddr")
+Qualificadores: WmiDataId(4), Extension("IPAddr")
 </dt> </dl>
 
 Endereço IP de origem.
@@ -125,20 +125,20 @@ Endereço IP de origem.
 tamanho
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
 Tamanho do pacote.
 
 </dd> <dt>
 
-esporte
+Esporte
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -147,7 +147,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), extensão ("porta")
+Qualificadores: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Número da porta de origem.
@@ -160,16 +160,16 @@ Número da porta de origem.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**TcpIp \_ v1**](tcpip-v1.md)
+[**TcpIp \_ V1**](tcpip-v1.md)
 </dt> </dl>
 
  

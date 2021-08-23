@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d9ce7b94f983ae9e6bc413b2fbd70b874e64e8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ca80dccbda813050c213a210738f96f9e6b5c619b58f6fef9fe1648d4b8b28f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081600"
 ---
 # <a name="ms-pki-site-name-attribute"></a>atributo ms-PKI-site-Name
 
@@ -54,9 +54,9 @@ Active Directory site ao qual o computador de autoridade de certificação perte
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | True                                                                |
+| No catálogo global      | Verdadeiro                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
@@ -75,9 +75,9 @@ Active Directory site ao qual o computador de autoridade de certificação perte
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | True                                                                |
+| No catálogo global      | Verdadeiro                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |

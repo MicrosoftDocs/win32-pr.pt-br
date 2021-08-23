@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b590cadeb12a77cff859991efb6356393072823
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 32bdbd18c6412f943a124a62badb9c154fa9aeb64573919970ffc1dc4af17798
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105780531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066796"
 ---
 # <a name="out-attribute"></a>atributo out
 
@@ -55,7 +55,7 @@ Especifica zero ou mais declaradores de ponteiro. Um Declarador de ponteiro é o
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome do procedimento remoto.
@@ -96,7 +96,7 @@ HRESULT MyFunction([out] short * pcount);
 
 <dl> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
 [Tipos base de MIDL](midl-base-types.md)
@@ -144,7 +144,7 @@ HRESULT MyFunction([out] short * pcount);
 [**o tamanho \_ é**](size-is.md)
 </dt> <dt>
 
-[**string**](string.md)
+[**Strings**](string.md)
 </dt> <dt>
 
 [**struct**](struct.md)
@@ -159,6 +159,6 @@ HRESULT MyFunction([out] short * pcount);
 [**diferente**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

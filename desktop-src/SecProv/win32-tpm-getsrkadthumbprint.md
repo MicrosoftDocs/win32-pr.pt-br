@@ -1,5 +1,5 @@
 ---
-description: Obtém a impressão digital da chave raiz de armazenamento para um determinado módulo da parte pública da chave raiz de armazenamento do TPM.
+description: obtém a impressão digital de Armazenamento chave raiz para um determinado módulo da parte pública do TPM Armazenamento chave raiz.
 ms.assetid: 08CBEB19-ECF5-4E43-B4A4-0F35987173E1
 title: 'Método Win32_Tpm:: GetSrkADThumbprint'
 ms.topic: reference
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 81e1ec53596a3d5ce469d412e9bd7ca17e1ad8b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9be4b7f02a9b645c29b431a9d974f5871ad5a95fc001e43df17bfe459483974e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004104"
 ---
 # <a name="win32_tpmgetsrkadthumbprint-method"></a>\_Método TPM:: GetSrkADThumbprint do Win32
 
-Obtém a impressão digital da chave raiz de armazenamento para um determinado módulo da parte pública da chave raiz de armazenamento do TPM. A impressão digital é usada para indexar as chaves raiz de armazenamento no servidor de Active Directory se o Active Directory backup das informações de autorização do proprietário do TPM for habilitado por meio da configuração Política de Grupo.
+obtém a impressão digital de Armazenamento chave raiz para um determinado módulo da parte pública do TPM Armazenamento chave raiz. a impressão digital é usada para indexar as chaves raiz Armazenamento no servidor Active Directory se o backup Active Directory de informações de autorização de proprietário do TPM estiver habilitado por meio da configuração Política de Grupo.
 
 > [!Note]  
-> A partir do Windows 10, versão 1607, a autorização do proprietário do TPM nunca é submetida a backup em Active Directory.
+> a partir do Windows 10, versão 1607, a autorização do proprietário do TPM nunca é submetida a backup em Active Directory.
 
  
 
@@ -50,7 +50,7 @@ uint32 GetSrkADThumbprint(
 *SrkPublicKeyModulus* \[ no\]
 </dt> <dd>
 
-O módulo da parte pública da chave raiz de armazenamento do TPM. Ele também pode ser obtido usando o método [**GetSrkPublicKeyModulus**](win32-tpm-getsrkpublickeymodulus.md) da classe [Win32 \_ TPM](win32-tpm.md) .
+o módulo da parte pública do TPM Armazenamento chave raiz. Ele também pode ser obtido usando o método [**GetSrkPublicKeyModulus**](win32-tpm-getsrkpublickeymodulus.md) da classe [Win32 \_ TPM](win32-tpm.md) .
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Retorna uma matriz de 20 bytes que contém a impressão digital da chave raiz de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Todos os erros do TPM, bem como erros específicos para os [serviços base do TPM](../tbs/tbs-return-codes.md) , podem ser retornados.
 
@@ -79,7 +79,7 @@ Os códigos de retorno comuns são listados abaixo.
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                      |
 | Namespace<br/>                | \\\\.\\ \\MicrosoftTpm de \\ segurança \\ cimv2 raiz<br/>                                     |
 | MOF<br/>                      | <dl> <dt>\_TPM. mof do Win32</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |

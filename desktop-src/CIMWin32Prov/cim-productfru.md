@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ProductFRU representa uma associação entre o produto e uma unidade de substituição de campo (FRU), que fornece informações sobre os componentes do produto que foram ou estão sendo substituídos.
+description: A classe Cim ProductFRU representa uma associação entre o produto e uma UNIDADE substituível por campo (FRU), que fornece informações sobre os componentes do produto que foram ou estão \_ sendo substituídos.
 ms.assetid: 15d682e5-cd90-4fc4-8fff-e3fe1d2a0ac4
 ms.tgt_platform: multiple
-title: Classe CIM_ProductFRU
+title: CIM_ProductFRU classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b141d16adb50c5bc3f8d6be682a90aa4921061ef
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06457b7f5eccd7364fa7882301ec0a195cb5bfc3af46d4040570d1ecb2e2f635
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020944"
 ---
-# <a name="cim_productfru-class"></a>\_Classe CIM ProductFRU
+# <a name="cim_productfru-class"></a>Classe Cim \_ ProductFRU
 
-A classe **CIM \_ ProductFRU** representa uma associação entre o produto e uma unidade de substituição de campo (FRU), que fornece informações sobre os componentes do produto que foram ou estão sendo substituídos.
+A **classe Cim \_ ProductFRU** representa uma associação entre o produto e uma UNIDADE substituível por campo (FRU), que fornece informações sobre os componentes do produto que foram ou estão sendo substituídos.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do Managed Object Format (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,42 +47,42 @@ class CIM_ProductFRU
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ProductFRU** tem estes tipos de membros:
+A **classe Cim \_ ProductFRU** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ProductFRU** tem essas propriedades.
+A **classe Cim \_ ProductFRU** tem essas propriedades.
 
 <dl> <dt>
 
-**FRU**
+**Fru**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ FRU do CIM**
+Tipo de dados: **CIM \_ FRU**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência à FRU.
+Referência ao FRU.
 
 </dd> <dt>
 
 **Product**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ produto CIM**
+Tipo de dados: **Produto CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Máx.**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Referência ao produto ao qual a FRU é aplicada.
+Referência ao produto ao qual o FRU é aplicado.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ Referência ao produto ao qual a FRU é aplicada.
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

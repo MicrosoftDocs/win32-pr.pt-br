@@ -4,12 +4,12 @@ ms.assetid: aa4ff8b8-cbbb-4b18-83b3-279e52d9f6d3
 title: Criando a interface do usuário para entrada de senha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b37cd7bb9531cbf63a443011656f200717dc0214
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b558243e24e4977d8e28311ac7643c118a26cdf62c89366694a16227b30c1969
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066066"
 ---
 # <a name="authoring-the-user-interface-for-password-input"></a>Criando a interface do usuário para entrada de senha
 
@@ -21,7 +21,7 @@ Os [atributos de controle](control-attributes.md) para o controle de edição de
 
 
 
-| caixa de diálogo\_ | controle\_            | Type | X   | S   | Largura | Altura | Atributos | Propriedade         | Texto | \_Próximo controle | Ajuda |
+| caixa de diálogo\_ | controle\_            | Type | X   | Y   | Largura | Altura | Atributos | Propriedade         | Texto | \_Próximo controle | Ajuda |
 |----------|----------------------|------|-----|-----|-------|--------|------------|------------------|------|---------------|------|
 | MyDialog | TestUserPasswordEdit | Editar | 25  | 120 | 300   | 20     | 2097155    | TESTUSERPASSWORD |      | Cancelar        |      |
 

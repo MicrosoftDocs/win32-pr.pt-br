@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Acessando um valor de registro sem nome
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92860d240598f0353d1f4c9f41a77306942d272b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d62a82cfdb9d90ba11a177891ad7ee5e3310207825bd9a155c5eda3b10c4e68e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131919"
 ---
 # <a name="accessing-an-unnamed-registry-value"></a>Acessando um valor de registro sem nome
 

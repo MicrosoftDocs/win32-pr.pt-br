@@ -4,12 +4,12 @@ description: Objetos COM podem dar suporte à chamada assíncrona.
 ms.assetid: bf7f9f8e-66ce-41a4-854c-62dbe840a89e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 059f55cc64a70f130e7fb654426803edbe8b7209
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 173f33ea3a0d4ec59f994eeff259e776efa58ae5b0182ba97f77e1ba99dd0d82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105770576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130198"
 ---
 # <a name="making-and-processing-asynchronous-calls"></a>Fazendo e processando chamadas assíncronas
 
@@ -22,7 +22,7 @@ Os clientes não fazem chamadas assíncronas diretamente no objeto de servidor. 
 > [!Note]  
 > O suporte assíncrono não está disponível para **IDispatch** ou para interfaces que herdam **IDispatch**.
 
- 
+ 
 
 Objetos de servidor que dão suporte a chamadas assíncronas implementam a interface [**ICallFactory**](/windows/win32/api/objidlbase/nn-objidlbase-icallfactory) . Essa interface expõe um único método, [**createchama**](/windows/win32/api/objidlbase/nf-objidlbase-icallfactory-createcall), que cria uma instância de um objeto de chamada especificado. Os clientes podem consultar **ICallFactory** para determinar se um objeto dá suporte à chamada assíncrona.
 
@@ -36,13 +36,13 @@ Em ambos os casos, a interação entre o cliente e o servidor é empacotada como
 
 Quando o cliente e o servidor estiverem no mesmo apartamento, o objeto de servidor processará qualquer chamada que o cliente fizer. Se um objeto de chamada não estiver disponível, o cliente deverá obter explicitamente a interface síncrona e fazer uma chamada síncrona.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Fazendo uma chamada assíncrona](making-an-asynchronous-call.md)
 -   [Cancelando uma chamada assíncrona](canceling-an-asynchronous-call.md)
 -   [Cancelando chamadas de método](canceling-method-calls.md)
 -   [Sincronização de chamadas](call-synchronization.md)
 
- 
+ 
 
- 
+ 

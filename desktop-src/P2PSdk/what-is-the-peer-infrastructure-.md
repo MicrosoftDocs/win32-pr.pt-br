@@ -4,12 +4,12 @@ ms.assetid: aed7585a-88e5-4ca3-a8c3-e2ccfe13d35d
 title: O que é a infraestrutura de pares?
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 873717b3f90497fe9ab9f50bb9c18e6f0692a4e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e80a5cdcc190fe47ea0a37efd5348ec5f718eaff654543c68bd6e9d355d4d07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119287636"
 ---
 # <a name="what-is-the-peer-infrastructure"></a>O que é a infraestrutura de pares?
 

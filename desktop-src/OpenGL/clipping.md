@@ -7,12 +7,12 @@ keywords:
 - OpenGL de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08aa35458e7e0a137759fe22be95f4b399b4d56b
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6bb518b9208b73dad2071531f6a30cdff6cab2ec5dcbe937fa3e66fea8bb0a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119289036"
 ---
 # <a name="clipping-opengl"></a>Recorte (OpenGL)
 

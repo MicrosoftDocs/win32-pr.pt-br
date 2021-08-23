@@ -1,28 +1,28 @@
 ---
-title: Dialeto SQL
-description: O dialeto SQL, derivado da linguagem SQL, usa expressões legíveis para definir instruções de consulta.
+title: SQL Dialeto
+description: O SQL dialeto, derivado do linguagem SQL, usa expressões que podem ser lidas por humanos para definir instruções de consulta.
 ms.assetid: c1032268-e0f5-4d74-ab72-864cdd36851d
 ms.tgt_platform: multiple
 keywords:
-- ADSI de dialeto SQL
-- dialeto ADSI, dialeto SQL
+- SQL ADSI de dialeto
+- dialeto ADSI, SQL dialeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b0936a54bc7bd0028717967ce779fe2f2048a33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b7483a5e3785f410e6c2fd875122ba24618a82b70d1ed6dc9a85105ae4e8dcfa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105754049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119262046"
 ---
-# <a name="sql-dialect"></a>Dialeto SQL
+# <a name="sql-dialect"></a>SQL Dialeto
 
-O dialeto SQL, derivado da linguagem SQL, usa expressões legíveis para definir instruções de consulta. Use uma instrução de consulta SQL com as seguintes interfaces de pesquisa ADSI:
+O SQL dialeto, derivado do linguagem SQL, usa expressões que podem ser lidas por humanos para definir instruções de consulta. Use uma SQL de consulta com as seguintes interfaces de pesquisa ADSI:
 
--   As interfaces [ADO (ActiveX Data Object)](searching-with-activex-data-objects-ado.md) , que são interfaces de automação que usam OLE DB.
+-   As [interfaces ActiveX ADO (Objeto](searching-with-activex-data-objects-ado.md) de Dados), que são interfaces de Automação que usam OLE DB.
 -   [OLE DB](searching-with-ole-db.md), que é um conjunto de interfaces C/C++ para consultar bancos de dados.
 
-As instruções SQL exigem a sintaxe a seguir.
+SQL instruções exigem a sintaxe a seguir.
 
 
 ```sql
@@ -31,27 +31,27 @@ SELECT [ALL] * | select-list FROM 'ADsPath' [WHERE search-condition] [ORDER BY s
 
 
 
-A tabela a seguir lista as palavras-chave da instrução de consulta SQL.
+A tabela a seguir lista SQL de instrução de consulta.
 
 
 
 | Palavra-chave  | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SELECT   | Especifica uma lista separada por vírgulas de atributos a serem recuperados para cada objeto. Se você especificar \* , a consulta recuperará apenas o ADsPath de cada objeto.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| FROM     | Especifica o ADsPath da base da pesquisa. Por exemplo, o ADsPath do contêiner usuários em um domínio Active Directory pode ser ' LDAP:Binding = Users, DC = Fabrikam, DC = COM '. Lembre-se de que o caminho está incluído em um par de aspas simples (').                                                                                                                                                                                                                                                                                                                                                    |
+| SELECT   | Especifica uma lista separada por vírgulas de atributos a recuperar para cada objeto. Se você especificar \* , a consulta recuperará apenas o ADsPath de cada objeto.                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| FROM     | Especifica o ADsPath da base da pesquisa. Por exemplo, o ADsPath do contêiner Usuários em um domínio do Active Directory pode ser 'LDAP://CN=Users,DC=Fabrikam,DC=COM'. Esteja ciente de que o caminho está entre um par de aspas simples (').                                                                                                                                                                                                                                                                                                                                                    |
 | WHERE    | Uma palavra-chave opcional que especifica o filtro de consulta.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ORDER BY | Uma palavra-chave opcional que gera uma classificação do lado do servidor se o servidor oferecer suporte ao controle de classificação LDAP. O Active Directory dá suporte ao controle de classificação, mas pode afetar o desempenho do servidor, especialmente se o conjunto de resultados for grande. A lista de classificação é uma lista separada por vírgulas de atributos nos quais classificar. Lembre-se de que Active Directory dá suporte apenas a uma única chave de classificação. Você pode usar as palavras-chave ASC e DESC opcionais para especificar a ordem de classificação crescente ou decrescente; o padrão é Ascending. A palavra-chave ORDER BY substitui qualquer chave de classificação especificada com a propriedade "Sort on" do objeto de comando do ADO. |
+| ORDER BY | Uma palavra-chave opcional que gera uma classificação do lado do servidor se o servidor dá suporte ao controle de classificação LDAP. O Active Directory dá suporte ao controle de classificação, mas pode afetar o desempenho do servidor, especialmente se o conjunto de resultados for grande. A lista de classificação é uma lista separada por vírgulas de atributos nos quais classificar. Esteja ciente de que o Active Directory dá suporte apenas a uma única chave de classificação. Você pode usar as palavras-chave OPC e DESC opcionais para especificar a ordem de classificação crescente ou decrescente; o padrão é crescente. A palavra-chave ORDER BY substitui qualquer chave de classificação especificada pela propriedade "Classificar" do objeto Comando ADO. |
 
 
 
- 
+ 
 
 > [!Note]  
-> Nos casos em que um conjunto de caracteres MultiByte está sendo usado, se a pesquisa for executada pelo ADO com o dialeto SQL, uma barra invertida não poderá ser usada para escapar caracteres. Em vez disso, as sequências de escape listadas em [caracteres especiais](search-filter-syntax.md) devem ser usadas. Por exemplo, para uma instrução que usou a sintaxe "samAccountName = \( Test", que usa a barra invertida " \\ ", para escapar do parêntese de abertura, "(", em vez disso, você substituiria a barra invertida pelo caractere especial " \\ 28", da seguinte maneira: "sAMAccountName = \\ 28Test".
+> Nos casos em que um Conjunto de Caracteres MultiByte está sendo usado, se a pesquisa for executada pelo ADO com o dialeto SQL, uma faixa invertida não poderá ser usada para escapar caracteres. Em vez disso, as sequências de escape listadas [em Caracteres Especiais](search-filter-syntax.md) devem ser usadas. Por exemplo, para uma instrução que usou a sintaxe "samAccountName= Test", que usa a faixa invertida, " ", para escapar o parêntese aberto, "(", em vez disso, você substituiria a faixa invertida pelo caractere especial \( \\ " 28", da seguinte \\ forma: "samAccountName= \\ 28Test".
 
- 
+ 
 
-As instruções de consulta a seguir são exemplos de dialeto SQL no ADSI.
+As instruções de consulta a seguir são exemplos de SQL dialeto no ADSI.
 
 Para pesquisar todos os objetos de grupo.
 
@@ -62,7 +62,7 @@ SELECT ADsPath, cn FROM 'LDAP://DC=Fabrikam,DC=COM' WHERE objectCategory='group'
 
 
 
-Para pesquisar todos os usuários cujo sobrenome começa com a letra H.
+Para pesquisar todos os usuários cujo Sobrenome começa com a letra H.
 
 
 ```sql
@@ -71,7 +71,7 @@ SELECT ADsPath, cn FROM 'LDAP://OU=Sales,DC=Fabrikam,DC=COM' WHERE objectCategor
 
 
 
-A gramática formal para consultas SQL é definida no exemplo de código a seguir. Todas as palavras-chave não diferenciam maiúsculas de minúsculas.
+A gramática formal para SQL consultas é definida no exemplo de código a seguir. Todas as palavras-chave não são sensíveis a maiúsculas e minúsculas.
 
 
 ```sql
@@ -100,13 +100,13 @@ boolean-literal ::= TRUE | FALSE | YES | NO | ON | OFF
 
 
 
-Não há suporte para junções internas do SQL pelo provedor de OLE DB Active Directory, mas você pode usar o SQL para unir dados SQL e Active Directory. Para obter mais informações, consulte [criando uma junção heterogênea entre SQL Server e Active Directory](creating-a-heterogeneous-join-between-sql-server-and-active-directory.md).
+SQL junções internas não são suportadas pelo provedor de OLE DB Active Directory, mas você pode usar o SQL para unir SQL dados do Active Directory. Para obter mais informações, consulte [Criando uma junção heterogênea entre o SQL Server e o Active Directory.](creating-a-heterogeneous-join-between-sql-server-and-active-directory.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Sintaxe do filtro de pesquisa](search-filter-syntax.md)
+[Sintaxe de filtro de pesquisa](search-filter-syntax.md)
 </dt> <dt>
 
 [Dialeto LDAP](ldap-dialect.md)
@@ -115,15 +115,15 @@ Não há suporte para junções internas do SQL pelo provedor de OLE DB Active D
 [Pesquisando com a interface IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Pesquisando com ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
+[Pesquisando com objetos ActiveX dados](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
 [Pesquisando com OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

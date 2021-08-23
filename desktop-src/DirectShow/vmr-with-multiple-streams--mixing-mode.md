@@ -1,17 +1,17 @@
 ---
-description: VMR com vários fluxos (modo de combinação)
+description: VMR com vários Fluxos (modo de combinação)
 ms.assetid: 053edb70-8631-4fe4-a137-2fe54e02ab9e
-title: VMR com vários fluxos (modo de combinação)
+title: VMR com vários Fluxos (modo de combinação)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a21a954b0ad78afbceabf0fde493f920961b90dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88f958d8c95372325229dffc1cc37aff579213c48940f93ad090d0fbd9359b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290776"
 ---
-# <a name="vmr-with-multiple-streams-mixing-mode"></a>VMR com vários fluxos (modo de combinação)
+# <a name="vmr-with-multiple-streams-mixing-mode"></a>VMR com vários Fluxos (modo de combinação)
 
 O VMR pode renderizar vários fluxos de entrada. Nessa configuração, chamada de modo de combinação, o VMR carrega o mixer e o compositor para executar a mistura e a mesclagem antes da renderização. O modo de combinação pode ser usado enquanto o VMR está no modo de janela ou sem janela.
 
@@ -22,17 +22,17 @@ O modo de combinação requer que o driver de gráficos dê suporte aos \_ sinal
 
  
 
-**Configurando o VMR-7 para vários fluxos**
+**configurando o VMR-7 para vários Fluxos**
 
 Para renderizar vários fluxos de entrada com o VMR-7, faça o seguinte:
 
 1.  Antes de conectar qualquer um dos Pins de entrada do VMR, chame o método [**IVMRFilterConfig:: SetNumberOfStreams**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setnumberofstreams) com o número de fluxos. Isso faz com que o VMR carregue o mixer e o compositor e crie o número especificado de Pins de entrada.
 2.  Chame [**IVMRFilterConfig:: SetRenderingPrefs**](/windows/desktop/api/Strmif/nf-strmif-ivmrfilterconfig-setrenderingprefs) para especificar várias preferências de renderização.
-3.  Conecte os Pins aos filtros upstream. A maneira mais fácil de fazer isso é chamar [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) para cada fluxo de entrada. Se o pino de saída no filtro upstream (geralmente um decodificador) e o pino de entrada no VMR não puderem concordar em uma conexão, uma nova instância do VMR com as configurações padrão será criada. Isso resultará em uma nova janela com "ActiveMovie" na barra de título. Para evitar que isso aconteça, o aplicativo sempre deve verificar se a instância correta do VMR está sendo usada chamando um método como [**IPin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto). Outra opção é adicionar o filtro de origem e, em seguida, conectar os Pins usando **IGraphBuilder:: Connect**.
+3.  Conexão os pins para os filtros upstream. A maneira mais fácil de fazer isso é chamar [**IGraphBuilder:: RenderFile**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-renderfile) para cada fluxo de entrada. Se o pino de saída no filtro upstream (geralmente um decodificador) e o pino de entrada no VMR não puderem concordar em uma conexão, uma nova instância do VMR com as configurações padrão será criada. Isso resultará em uma nova janela com "ActiveMovie" na barra de título. Para evitar que isso aconteça, o aplicativo sempre deve verificar se a instância correta do VMR está sendo usada chamando um método como [**IPin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto). outra opção é adicionar o filtro de origem e, em seguida, conectar os pins usando **IGraphBuilder:: Conexão**.
 4.  Use a interface [**IVMRMixerControl**](/windows/desktop/api/Strmif/nn-strmif-ivmrmixercontrol) no VMR para controlar os parâmetros de cada fluxo, como o valor alfa, a ordenação Z e o retângulo de saída.
 5.  Execute o gráfico de filtro.
 
-**Configurando o VMR-9 para vários fluxos**
+**configurando o VMR-9 para vários Fluxos**
 
 Por padrão, o VMR-9 cria quatro pinos de entrada. Se você quiser misturar mais de quatro fluxos de vídeo, chame [**IVMRFilterConfig9:: SetNumberOfStreams**](/previous-versions/windows/desktop/api/Vmr9/nf-vmr9-ivmrfilterconfig9-setnumberofstreams) antes de conectar qualquer pino de entrada. Use a interface [**IVMRMixerControl9**](/previous-versions/windows/desktop/api/Vmr9/nn-vmr9-ivmrmixercontrol9) para definir os parâmetros de fluxo, como alfa, ordem Z e posição.
 

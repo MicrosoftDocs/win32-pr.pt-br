@@ -8,12 +8,12 @@ keywords:
 - ADSI, pesquisa, IDirectorySearch, outras opções de pesquisa, limite de tempo do servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba5f80f9b83f20affaf7ad03de6b1609e9951b7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e120586cb05fa07baf1e26fa8c1db8e11eecdbd1b19ed7f4f9c2215a921409ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119262126"
 ---
 # <a name="server-time-limit-with-idirectorysearch"></a>Limite de tempo do servidor com IDirectorySearch
 
@@ -33,9 +33,9 @@ SearchPref.vValue.Integer = 10;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 95e93fd3a6bbf7f2fa3505fcb9480367b780ecc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56e86765839434f2cd3a67c18f6395dd5443f21f8b905e6f86e6e85ad9915c3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038864"
 ---
 # <a name="jet_ossnapidtostring-method-string-iformatprovider"></a>JET_OSSNAPID. Método ToString (String, IFormatProvider)
 
 Formata o valor da instância atual usando o formato especificado.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,34 +62,34 @@ public string ToString(
 #### <a name="parameters"></a>Parâmetros
 
   - format  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    A [cadeia de caracteres](/dotnet/api/system.string) que especifica o formato a ser usado. -ou-NULL para usar o formato padrão definido para o tipo da implementação de [IFormattable](/dotnet/api/system.iformattable) .
+    A [Cadeia de](/dotnet/api/system.string) caracteres que especifica o formato a ser usado. -ou- nulo para usar o formato padrão definido para o tipo da implementação [IFormattable.](/dotnet/api/system.iformattable)
 
 <!-- end list -->
 
-  - formatProvider  
-    Tipo: [System. IFormatProvider](/dotnet/api/system.iformatprovider)  
+  - Formatprovider  
+    Tipo: [System.IFormatProvider](/dotnet/api/system.iformatprovider)  
     
-    O [IFormatProvider](/dotnet/api/system.iformatprovider) a ser usado para formatar o valor. -ou-NULL para obter as informações de formato numérico da configuração de localidade atual do sistema operacional.
+    O [IFormatProvider a](/dotnet/api/system.iformatprovider) ser usado para formatar o valor. -ou- nulo para obter as informações de formato numérico da configuração de localidade atual do sistema operacional.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Uma [cadeia de caracteres](/dotnet/api/system.string) que contém o valor da instância atual no formato especificado.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Uma [Cadeia de](/dotnet/api/system.string) caracteres que contém o valor da instância atual no formato especificado.  
 
 #### <a name="implements"></a>Implementações
 
-[IFormattable. ToString (String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
+[IFormattable.ToString(String, IFormatProvider)](/dotnet/api/system.iformattable.tostring#System_IFormattable_ToString_System_String_System_IFormatProvider_)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estrutura](./jet-ossnapid-structure.md)
 
-[Membros do JET_OSSNAPID](./jet-ossnapid-members.md)
+[JET_OSSNAPID membros](./jet-ossnapid-members.md)
 
-[Sobrecarga de ToString](./jet-ossnapid.tostring-method.md)
+[Sobrecarga toString](./jet-ossnapid.tostring-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

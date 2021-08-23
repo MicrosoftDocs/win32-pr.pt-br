@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Métodos IWbemUnsecuredApartment
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48bba9c4dba5e62c941761d910459bddb942bc36
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e112dbda166c1c2d5bd9b4ad914f319e140d84da863f50a3839c0f2b26b9b8e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131228"
 ---
 # <a name="iwbemunsecuredapartment-methods"></a>Métodos IWbemUnsecuredApartment
 

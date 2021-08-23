@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do JET_RECPOS'
-title: Membros do JET_RECPOS
+description: 'Saiba mais sobre: JET_RECPOS membros'
+title: JET_RECPOS membros
 TOCTitle: JET_RECPOS members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_RECPOS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_recpos_members(v=EXCHG.10)
 ms:contentKeyID: 55103843
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: eee06b8429ef183d589f4e5e542c955208beae7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b203b7579200bf9f9f2e019018c788f58edff397b22c3ddd8de3b6c9fbe32ae6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107525"
 ---
-# <a name="jet_recpos-members"></a>Membros do JET_RECPOS
+# <a name="jet_recpos-members"></a>JET_RECPOS membros
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Representa uma posição fracionária dentro de um índice. Isso é usado por JetGotoPosition e JetGetRecordPosition.
+Representa uma posição fracionada dentro de um índice. Isso é usado por JetGotoPosition e JetGetRecordPosition.
 
-O tipo de [JET_RECPOS](./jet-recpos-class.md) expõe os membros a seguir.
+O [JET_RECPOS](./jet-recpos-class.md) tipo expõe os membros a seguir.
 
 ## <a name="constructors"></a>Construtores
 
@@ -59,7 +59,7 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351021(v=exchg.10).md">centriesLT</a></td>
-<td>Obtém ou define o número aproximado de entradas de índice menores que a chave.</td>
+<td>Obtém ou define o número aproximado de entradas de índice menor que a chave.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -91,7 +91,7 @@ Parte superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335274(v=exchg.10).md">DeepClone</a></td>
-<td>Retorna uma cópia profunda do objeto.</td>
+<td>Retorna uma cópia profunda do objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -110,18 +110,18 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335276(v=exchg.10).md">ToString</a></td>
-<td>Gere uma representação de cadeia de caracteres da instância. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Gere uma representação de cadeia de caracteres da instância . (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -133,6 +133,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RECPOS](./jet-recpos-class.md)
+[JET_RECPOS classe](./jet-recpos-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

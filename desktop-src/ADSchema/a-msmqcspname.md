@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 784fc9143a811f71feb2e0ba87b8414569d0db1b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d408da8006de454c846e86983922698601e8d9b1dd0e1fc386af121875cedf0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081900"
 ---
 # <a name="msmq-csp-name-attribute"></a>Atributo MSMQ-CSP-Name
 
@@ -58,7 +58,7 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -66,7 +66,7 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -87,7 +87,7 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -108,7 +108,7 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tipo de provedor criptográfico usado pelo MSMQ.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 

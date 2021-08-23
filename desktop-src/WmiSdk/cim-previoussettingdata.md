@@ -2,7 +2,7 @@
 description: Uma associação entre um sistema virtual e os dados de configuração do instantâneo, que é o pai do sistema virtual.
 ms.assetid: d11e00e0-a163-49ea-b8ef-e3909a7dc83f
 ms.tgt_platform: multiple
-title: Classe CIM_PreviousSettingData
+title: CIM_PreviousSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - Schema
 api_location:
 - Root\CIMV2
-ms.openlocfilehash: 4422d590714b82120b610dc4eeb9377a385519d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 85f08f22409df8a17bdae33ae81c06cb8167996ecb477f6a2d207d9e0ce2acca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131758"
 ---
-# <a name="cim_previoussettingdata-class"></a>\_Classe CIM PreviousSettingData
+# <a name="cim_previoussettingdata-class"></a>Classe CIM \_ PreviousSettingData
 
 Uma associação entre um sistema virtual e os dados de configuração do instantâneo, que é o pai do sistema virtual.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -46,26 +46,26 @@ class CIM_PreviousSettingData
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ PreviousSettingData** tem estes tipos de membros:
+A **classe CIM \_ PreviousSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ PreviousSettingData** tem essas propriedades.
+A **classe CIM \_ PreviousSettingData** tem essas propriedades.
 
 <dl> <dt>
 
-**Anteriorobject**
+**PreviousObject**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
 Os dados de configuração de instantâneo que são o pai deste sistema de computador.
@@ -75,16 +75,16 @@ Os dados de configuração de instantâneo que são o pai deste sistema de compu
 **Target (destino)**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-O sistema de computador que foi o destino do aplicativo.
+O sistema de computador que era o destino do aplicativo.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ O sistema de computador que foi o destino do aplicativo.
 
 | Requisito | Valor |
 |----------------------|------------------------|
-| Namespace<br/> | Raiz \\ cimv2<br/> |
+| Namespace<br/> | RAIZ \\ CIMV2<br/> |
 
 
 

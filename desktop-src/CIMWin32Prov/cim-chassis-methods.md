@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Métodos de CIM_Chassis
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e84bd113c39b362e74fda65348754fc7994559b5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c71ad902391ebbd32cd32ac0ca5b28547876c48a64f171448b02ad8c7623cc6a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119218186"
 ---
 # <a name="cim_chassis-methods"></a>\_Métodos de chassi CIM
 

@@ -1,34 +1,34 @@
 ---
-title: Recursos de linguagem ODL em MIDL
-description: Atributos, palavras-chave, instruções e diretivas do ODL (Object Description Language) que fazem parte do MIDL.
+title: Recursos de linguagem ODL no MIDL
+description: Atributos de linguagem de descrição de objeto (ODL), palavras-chave, instruções e diretivas que fazem parte do MIDL.
 ms.assetid: beca14a6-01c4-4605-b1c5-214d48a7f46a
 keywords:
-- MIDL e ODL MIDL, recursos de linguagem
-- ODL MIDL , em MIDL
+- MIDL e ODL, recursos de linguagem
+- ODL MIDL, no MIDL
 - ODL MIDL, atributos
-- ODL MIDL , palavras-chave
+- ODL MIDL, palavras-chave
 - ODL MIDL, instruções
 - ODL MIDL, diretivas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db346a664ed7b8f7beeacfe73cc928a924befe10
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 9c75c959c77e13476eeeff1c9fdfda2481e006935e7ac4d05cbb8596cf6ff148
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066836"
 ---
-# <a name="odl-language-features-in-midl"></a>Recursos de linguagem ODL em MIDL
+# <a name="odl-language-features-in-midl"></a>Recursos de linguagem ODL no MIDL
 
 > [!Note]  
-> A Mktyplib.exe de dados está obsoleta. Em vez disso, use o compilador MIDL.
+> A ferramenta de Mktyplib.exe está obsoleta. Em vez disso, use o compilador MIDL.
 
  
 
-Os tópicos a seguir listam os atributos, palavras-chave, instruções e diretivas do ODL (Object Description Language) que agora fazem parte do linguagem IDL da Microsoft (MIDL):
+Os tópicos a seguir listam os atributos de linguagem de descrição de objeto (ODL), palavras-chave, instruções e diretivas que agora fazem parte do linguagem IDL da Microsoft (MIDL):
 
 -   [Atributos ODL](#odl-attributes)
--   [Palavras-chave, instruções e diretivas ODL](#odl-keywords-statements-and-directives)
+-   [Palavras-chave, instruções e diretivas do ODL](#odl-keywords-statements-and-directives)
 
 ## <a name="odl-attributes"></a>Atributos ODL
 
@@ -37,22 +37,22 @@ Os tópicos a seguir listam os atributos, palavras-chave, instruções e diretiv
         \[[**appobject**](appobject.md)\]
     :::column-end:::
     :::column:::
-        \[[**Ligável**](bindable.md)\]
+        \[[**vinculáveis**](bindable.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Controle**](control.md)\]
+        \[[**controlo**](control.md)\]
     :::column-end:::
     :::column:::
-        \[[**Padrão**](default.md)\]
+        \[[**os**](default.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Defaultvalue**](defaultvalue.md)\]
+        \[[**ValorPadrão**](defaultvalue.md)\]
     :::column-end:::
     :::column:::
         \[[**displaybind**](displaybind.md)\]
@@ -61,37 +61,37 @@ Os tópicos a seguir listam os atributos, palavras-chave, instruções e diretiv
 
 :::row:::
     :::column:::
-        \[[**Dllname**](dllname-str-.md)\]
+        \[[**nomedadll**](dllname-str-.md)\]
     :::column-end:::
     :::column:::
-        \[[**Dupla**](dual.md)\]
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        \[[**Entrada**](entry.md)\]
-    :::column-end:::
-    :::column:::
-        \[[**Helpcontext**](helpcontext.md)\]
+        \[[**simplifica**](dual.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Helpstring**](helpstring.md)\]
+        \[[**inicial**](entry.md)\]
     :::column-end:::
     :::column:::
-        \[[**Helpfile**](helpfile.md)\]
+        \[[**identificação**](helpcontext.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Escondidos**](hidden.md)\]
+        \[[**HelpString**](helpstring.md)\]
     :::column-end:::
     :::column:::
-        \[[**Id**](id.md)\]
+        \[[**HelpFile**](helpfile.md)\]
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        \[[**oculto**](hidden.md)\]
+    :::column-end:::
+    :::column:::
+        \[[**sessão**](id.md)\]
     :::column-end:::
 :::row-end:::
 
@@ -100,88 +100,88 @@ Os tópicos a seguir listam os atributos, palavras-chave, instruções e diretiv
         \[[**immediatebind**](immediatebind.md)\]
     :::column-end:::
     :::column:::
-        \[[**Em**](in.md)\]
+        \[[**no**](in.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Lcid**](lcid.md)\]
+        \[[**LCID**](lcid.md)\]
     :::column-end:::
     :::column:::
-        \[[**Licenciado**](licensed.md)\]
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        \[[**Nonextensible**](nonextensible.md)\]
-    :::column-end:::
-    :::column:::
-        \[[**Odl**](odl.md)\]
+        \[[**licenças**](licensed.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Oleautomation**](oleautomation.md)\]
+        \[[**performancecategory**](nonextensible.md)\]
     :::column-end:::
     :::column:::
-        \[[**Opcional**](optional.md)\]
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        \[[**out**](out-idl.md)\]
-    :::column-end:::
-    :::column:::
-        \[[**Propget**](propget.md)\]
+        \[[**odl**](odl.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Propput**](propput.md)\]
+        \[[**oleautomation**](oleautomation.md)\]
     :::column-end:::
     :::column:::
-        \[[**Propputref**](propputref.md)\]
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        \[[**Público**](public.md)\]
-    :::column-end:::
-    :::column:::
-        \[[ **readonly**](readonly.md)\]
+        \[[**adicional**](optional.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Requestedit**](requestedit.md)\]
+        \[[**fora**](out-idl.md)\]
     :::column-end:::
     :::column:::
-        \[[**Restrito**](restricted.md)\]
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        \[[**Retval**](retval.md)\]
-    :::column-end:::
-    :::column:::
-        \[[**Fonte**](source.md)\]
+        \[[**propget**](propget.md)\]
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        \[[**Uuid**](uuid.md)\]
+        \[[**propput**](propput.md)\]
     :::column-end:::
     :::column:::
-        [**Vararg**](vararg.md)\]
+        \[[**propputref**](propputref.md)\]
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        \[[**publicada**](public.md)\]
+    :::column-end:::
+    :::column:::
+        \[[ **somente leitura**](readonly.md)\]
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        \[[**requestedit**](requestedit.md)\]
+    :::column-end:::
+    :::column:::
+        \[[**Restricted**](restricted.md)\]
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        \[[**retval**](retval.md)\]
+    :::column-end:::
+    :::column:::
+        \[[**original**](source.md)\]
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        \[[**personalizado**](uuid.md)\]
+    :::column-end:::
+    :::column:::
+        [**vararg**](vararg.md)\]
     :::column-end:::
 :::row-end:::
 
@@ -194,29 +194,29 @@ Os tópicos a seguir listam os atributos, palavras-chave, instruções e diretiv
     :::column-end:::
 :::row-end:::
 
-## <a name="odl-keywords-statements-and-directives"></a>Palavras-chave, instruções e diretivas ODL
+## <a name="odl-keywords-statements-and-directives"></a>Palavras-chave, instruções e diretivas do ODL
 
 [**coclass**](coclass.md)
 
 [**dispinterface**](dispinterface.md)
 
-[**Enum**](enum.md)
+[**enumera**](enum.md)
 
-\[[**Importlib**](importlib.md)\]
+\[[**importlib**](importlib.md)\]
 
-[**Interface**](interface.md)
+[**interface**](interface.md)
 
-[**Biblioteca**](library.md)
+[**biblioteca**](library.md)
 
-[**Módulo**](module.md)
+[**modulo**](module.md)
 
-[**Struct**](struct.md)
+[**struct**](struct.md)
 
-[**Typedef**](typedef.md)
+[**typedef**](typedef.md)
 
-[**União**](union.md)
+[**unida**](union.md)
 
-Para obter informações sobre como efetuar marshaling de tipos de Automação OLE, como **BSTR,** **VARIANT** e **SAFEARRAY,** consulte [Marshaling de tipos](marshaling-ole-data-types.md)de dados OLE .
+Para obter informações sobre como realizar marshaling de tipos de automação OLE, como **BSTR**, **Variant** e **SafeArray**, consulte [marshaling OLE Data Types](marshaling-ole-data-types.md).
 
  
 
