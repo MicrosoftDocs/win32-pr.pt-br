@@ -1,11 +1,11 @@
 ---
-title: atributo ms-RRAS-Vendor-Attribute-entry
-description: Uma cadeia de caracteres que permite que os fornecedores adicionem atributos de roteador ao DS para uso em consultas, no formato AttributeName vendornameelement AttributeType.
+title: Atributo ms-RRAS-Vendor-Attribute-Entry
+description: Uma cadeia de caracteres que permite que os fornecedores adicionem atributos de roteador ao DS para uso em consultas, no formato AttributeName vendorID AttributeType.
 ms.assetid: 07bc4d9b-eba9-456b-be21-cd7bb8a5b0b6
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do MS-RRAS-Vendor-Attribute-entry
-- Esquema de AD do atributo msRRASVendorAttributeEntry
+- Esquema do AD do atributo ms-RRAS-Vendor-Attribute-Entry
+- Esquema do AD do atributo msRRASVendorAttributeEntry
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28ee353122107db5b1247860e9799db861b4d6bf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: efaaddb014b57e5d786ecb4ac7f45ace24adc7a2384bcd90c7e1316d1310b260
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960315"
 ---
-# <a name="ms-rras-vendor-attribute-entry-attribute"></a>atributo ms-RRAS-Vendor-Attribute-entry
+# <a name="ms-rras-vendor-attribute-entry-attribute"></a>Atributo ms-RRAS-Vendor-Attribute-Entry
 
-Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de roteador ao DS para uso em consultas, no formato AttributeName: VendorID: AttributeType.
+Uma cadeia de caracteres que permite que os fornecedores adicionem atributos de roteador ao DS para uso em consultas, no formato AttributeName:vendorID:AttributeType.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Entrada de atributo ms-RRAS-Vendor              |
-| LDAP-Display-Name | msRRASVendorAttributeEntry                  |
+| CN                | ms-RRAS-Vendor-Attribute-Entry              |
+| Ldap-Display-Name | msRRASVendorAttributeEntry                  |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.883                      |
-| System-ID-GUID    | f39b98ac-938d-11d1-aebd-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f39b98ac-938d-11d1-aebd-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de rot
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | Falso                                                                               |
+| Tem valor único       | Falso                                                                               |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**RRAS-administração-dicionário**](c-rrasadministrationdictionary.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de rot
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | Falso                                                                               |
+| Tem valor único       | Falso                                                                               |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**RRAS-administração-dicionário**](c-rrasadministrationdictionary.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de rot
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | Falso                                                                               |
+| Tem valor único       | Falso                                                                               |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**RRAS-administração-dicionário**](c-rrasadministrationdictionary.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de rot
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | Falso                                                                               |
+| Tem valor único       | Falso                                                                               |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**RRAS-administração-dicionário**](c-rrasadministrationdictionary.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de rot
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | Falso                                                                               |
+| Tem valor único       | Falso                                                                               |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**RRAS-administração-dicionário**](c-rrasadministrationdictionary.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma cadeia de caracteres que permite aos fornecedores adicionar atributos de rot
 | ID do link                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
 | System-Only            | Falso                                                                               |
-| É de valor único       | Falso                                                                               |
+| Tem valor único       | Falso                                                                               |
 | É indexado             | Falso                                                                               |
-| No catálogo global      | Falso                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                        |
+| No Catálogo Global      | Falso                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Classes usadas em        | [**RRAS-administração-dicionário**](c-rrasadministrationdictionary.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Dictionary**](c-rrasadministrationdictionary.md)<br/> |
 
 
 

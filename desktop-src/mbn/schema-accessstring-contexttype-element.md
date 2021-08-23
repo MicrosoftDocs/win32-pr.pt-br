@@ -11,12 +11,12 @@ api_name:
 - AccessString
 api_type:
 - Schema
-ms.openlocfilehash: 8cf0d37b8a1870011ae6ae3ea6febf22a98cdeb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 603c4aa04bb3e86891ec121233474fa96ffd792cbcb6880bad9e76599003d979
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975275"
 ---
 # <a name="accessstring-contexttype-element"></a>Elemento accessstring (contextType)
 
@@ -51,7 +51,7 @@ O elemento **accessstring** é definido pelo tipo complexo [**ContextType**](sch
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

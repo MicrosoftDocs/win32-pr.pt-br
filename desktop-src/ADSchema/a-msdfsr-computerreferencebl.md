@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DFSR-ComputerReferenceBL
+title: Atributo ms-DFSR-ComputerReferenceBL
 description: Contém o link para trás para o atributo ms-DFSR-ComputerReference.
 ms.assetid: 586b5d6a-86ff-4dac-905d-59928674a505
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DFSR-ComputerReferenceBL
-- Esquema de AD do atributo msDFSR-ComputerReferenceBL
+- Esquema do AD do atributo ms-DFSR-ComputerReferenceBL
+- Esquema do AD do atributo msDFSR-ComputerReferenceBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4aed9748f74e08ae621d6391185b41f97aa702e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0e3a5b4ae4f01e0c5af0a46e13238237dde5e006e8a83a5a7082dc97c121f05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960955"
 ---
-# <a name="ms-dfsr-computerreferencebl-attribute"></a>atributo ms-DFSR-ComputerReferenceBL
+# <a name="ms-dfsr-computerreferencebl-attribute"></a>Atributo ms-DFSR-ComputerReferenceBL
 
-Contém o link para trás para o atributo [**MS-DFSR-ComputerReference**](a-msdfsr-computerreference.md) .
+Contém o link para trás para [**o atributo ms-DFSR-ComputerReference.**](a-msdfsr-computerreference.md)
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DFSR-ComputerReferenceBL             |
-| LDAP-Display-Name | msDFSR-ComputerReferenceBL              |
+| CN                | ms-DFSR-ComputerReferenceBL             |
+| Ldap-Display-Name | msDFSR-ComputerReferenceBL              |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.103             |
-| System-ID-GUID    | 5eb526d7-d71b-44ae-8cc6-95460052e6ac    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5eb526d7-d71b-44ae-8cc6-95460052e6ac    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,10 +56,10 @@ Contém o link para trás para o atributo [**MS-DFSR-ComputerReference**](a-msdf
 | ID do link                | 2051                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,10 +77,10 @@ Contém o link para trás para o atributo [**MS-DFSR-ComputerReference**](a-msdf
 | ID do link                | 2051                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,10 +98,10 @@ Contém o link para trás para o atributo [**MS-DFSR-ComputerReference**](a-msdf
 | ID do link                | 2051                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,10 +119,10 @@ Contém o link para trás para o atributo [**MS-DFSR-ComputerReference**](a-msdf
 | ID do link                | 2051                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -133,7 +133,7 @@ Contém o link para trás para o atributo [**MS-DFSR-ComputerReference**](a-msdf
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **MS-DFSR-ComputerReferenceBL** faz parte do suporte ao serviço de replicação do sistema de arquivos distribuído (DFS).
+O **atributo ms-DFSR-ComputerReferenceBL** faz parte do suporte do serviço de replicação Sistema de Arquivos Distribuído (DFS).
 
  
 

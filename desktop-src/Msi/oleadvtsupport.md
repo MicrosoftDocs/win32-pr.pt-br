@@ -4,12 +4,12 @@ ms.assetid: 274d7658-3d33-4c3a-987c-878cbd5bf821
 title: Propriedade OLEAdvtSupport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72c9bd8f5ecaaa2690654211a2dd7ecdc5e9ef2f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f7bbf3b69ee5d8af8bda841bbdcbd55c02c83df0c40605a9d9e7930986ddaee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118942877"
 ---
 # <a name="oleadvtsupport-property"></a>Propriedade OLEAdvtSupport
 
@@ -21,7 +21,7 @@ O instalador define a propriedade **OLEAdvtSupport** como true quando o sistema 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

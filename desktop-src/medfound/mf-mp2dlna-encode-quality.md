@@ -4,12 +4,12 @@ ms.assetid: 4cf745ab-66ae-40f2-b5c4-3f72f1b9badb
 title: Atributo MF_MP2DLNA_ENCODE_QUALITY (Mfmp2dlna. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81c785ff12524d45d096d566014a5c0a5e24eea8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a612dae32aabe4276ece76e7edff1aef431cc5d93f8aeaae0dbc9087620374c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973655"
 ---
 # <a name="mf_mp2dlna_encode_quality-attribute"></a>\_Atributo de \_ qualidade de codificação MP2DLNA MF \_
 
@@ -39,9 +39,9 @@ Para definir esse atributo no coletor de mídia DLNA, consulte o coletor de míd
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
 
 
 

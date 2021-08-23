@@ -12,12 +12,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 256d942d68c30788180f2d8080f963c1d79b401a
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 74be4614d1a08baf27b08cee7ffa46d36f658c36176e39f80714387981d45f13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105790376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042824"
 ---
 # <a name="performservervalidation-peapextensionstype-element-v1-schema"></a>Elemento PerformServerValidation (PeapExtensionsType) (esquema v1)
 
@@ -42,8 +42,8 @@ O elemento **PerformServerValidation** é opcional.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

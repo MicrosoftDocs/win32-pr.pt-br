@@ -1,11 +1,11 @@
 ---
 title: Atributo MSMQ-Name-Style
-description: A Convenção do estilo do nome do computador.
+description: A convenção de estilo de nome do computador.
 ms.assetid: dff1c988-77a5-4454-b54c-bb52bf771401
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-nome-do-esquema de atributo do tipo AD
-- Esquema de AD do atributo mSMQNameStyle
+- Esquema do AD do atributo MSMQ-Name-Style
+- Esquema do AD do atributo mSMQNameStyle
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9f61b3ec820e4f4771c3e470a19cf79c83e85aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 365426143fca985ec5cd39cc6444994c5c6b1b734bbb2cd8b35540c1da88a720
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960485"
 ---
 # <a name="msmq-name-style-attribute"></a>Atributo MSMQ-Name-Style
 
-A Convenção do estilo do nome do computador.
+A convenção de estilo de nome do computador.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-nome-do-estilo                      |
-| LDAP-Display-Name | mSMQNameStyle                        |
+| CN                | Estilo de nome MSMQ                      |
+| Ldap-Display-Name | mSMQNameStyle                        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.939               |
-| System-ID-GUID    | 9a0dc333-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc333-c100-11d1-football5-0080c76670c0 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ A Convenção do estilo do nome do computador.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A Convenção do estilo do nome do computador.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A Convenção do estilo do nome do computador.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ A Convenção do estilo do nome do computador.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -129,7 +129,7 @@ A Convenção do estilo do nome do computador.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ A Convenção do estilo do nome do computador.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -150,7 +150,7 @@ A Convenção do estilo do nome do computador.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ A Convenção do estilo do nome do computador.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -171,7 +171,7 @@ A Convenção do estilo do nome do computador.
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> |
 
 
 

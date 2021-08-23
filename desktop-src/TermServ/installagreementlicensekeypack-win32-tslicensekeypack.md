@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: beb891469feae169c1267c12c04af6d21415c309
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9f62105d2210e08bd62b53fa05d723177383e777261f4b21885c4375b30b9599
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118852955"
 ---
 # <a name="installagreementlicensekeypack-method-of-the-win32_tslicensekeypack-class"></a>Método InstallAgreementLicenseKeyPack da classe Win32 \_ TSLicenseKeyPack
 
@@ -51,7 +51,7 @@ Tipo de contrato.
 | Valor | Descrição |
 |-------|-------------|
 | 0 | O pacote de chaves de licença é de um contrato de licença de volume selecionado (para clientes com 250 ou mais computadores). O parâmetro *sAgreementNumber* é o número de registro (sete dígitos numéricos) encontrado no formulário de contrato assinado. |
-| 1 | O pacote de chaves de licença é de um contrato de licença de volume corporativo para clientes com 250 ou mais computadores. O parâmetro *sAgreementNumber* é o número de registro (sete dígitos numéricos) encontrado no formulário de contrato assinado. |
+| 1 | o pacote de chaves de licença é de um contrato de licença de volume Enterprise para clientes com 250 ou mais computadores. O parâmetro *sAgreementNumber* é o número de registro (sete dígitos numéricos) encontrado no formulário de contrato assinado. |
 | 2 | O pacote de chaves de licença é de um contrato de licença por volume de campus para uma instituição de ensino superior. O parâmetro *sAgreementNumber* é o número de registro (sete dígitos numéricos) encontrado no formulário de contrato assinado. |
 | 3 | O pacote de chaves de licença é de um contrato de licença por volume da escola para instituições primárias e secundárias. O parâmetro *sAgreementNumber* é o número de registro (sete dígitos numéricos) encontrado no formulário de contrato assinado. |
 | 4 | O pacote de chaves de licença é de um contrato de licença de provedor de serviços para provedores de serviços para licenciar softwares da Microsoft mensalmente. O parâmetro *sAgreementNumber* é o número de registro (sete dígitos numéricos) encontrado no formulário de contrato assinado. |
@@ -69,7 +69,7 @@ Versão do produto.
 |-------|-------------|
 | 0 | Sem suporte |
 | 1 | Sem suporte |
-| 2 | Windows Server 2008/Windows Server 2008 R2 |
+| 2 | Windows server 2008/Windows server 2008 R2 |
 | 4 | Windows Server 2012/Windows Server 2012 R2 |
 | 5 | Windows Server 2016 |
 | 6 | Windows Server 2019 |
@@ -92,7 +92,7 @@ Número de licenças a serem instaladas.
 
 Recebe o identificador do pacote de chaves.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
 
@@ -100,7 +100,7 @@ Se o método tiver sucesso, ele retornará zero. Se o método não for bem-suced
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

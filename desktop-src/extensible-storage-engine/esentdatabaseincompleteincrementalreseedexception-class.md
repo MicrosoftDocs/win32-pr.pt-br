@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Classe EsentDatabaseIncompleteIncrementalReseedException'
+description: 'Saiba mais sobre: classe EsentDatabaseIncompleteIncrementalReseedException'
 title: Classe EsentDatabaseIncompleteIncrementalReseedException
 TOCTitle: EsentDatabaseIncompleteIncrementalReseedException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentDatabaseIncompleteIncrementalReseedException
@@ -33,22 +33,22 @@ ms.locfileid: "118781247"
 ---
 # <a name="esentdatabaseincompleteincrementalreseedexception-class"></a>Classe EsentDatabaseIncompleteIncrementalReseedException
 
-Classe base para JET_err. Exceções DatabaseIncompleteIncrementalReseed.
+Classe base para JET_err. DatabaseIncompleteIncrementalReseed exceções.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
-      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentDataException](./esentdataexception-class.md)  
-          [Microsoft.Isam.Esent.Interop.EsentInconsistentException](./esentinconsistentexception-class.md)  
-            Microsoft.Isam.Esent.Interop.EsentDatabaseIncompleteIncrementalReseedException  
+    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
+      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
+          [Microsoft. ISAM. ESENT. Interop. EsentInconsistentException](./esentinconsistentexception-class.md)  
+            Microsoft. ISAM. ESENT. Interop. EsentDatabaseIncompleteIncrementalReseedException  
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros EsentDatabaseIncompleteIncrementalReseedException](./esentdatabaseincompleteincrementalreseedexception-members.md)
+[Membros do EsentDatabaseIncompleteIncrementalReseedException](./esentdatabaseincompleteincrementalreseedexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

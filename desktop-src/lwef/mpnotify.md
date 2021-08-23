@@ -3,8 +3,8 @@ title: Enumeração MPNOTIFY (MpClient. h)
 description: Possíveis notificações de retorno de chamada.
 ms.assetid: CCD0CD89-2C6E-453F-9437-E6ED87AD9F29
 keywords:
-- Recursos do ambiente Windows herdado de enumeração MPNOTIFY
-- Ponteiro de enumeração PMPNOTIFY recursos de ambiente do Windows herdados
+- recursos de ambiente Windows de enumeração herdados do MPNOTIFY
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMPNOTIFY
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afa0eeb6cb1d610f28cc82f578617f7bd71cf886
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed62a9f868aa39cbc0cfc7702afc99849005a22106892696eca857ffb20673af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747784"
 ---
 # <a name="mpnotify-enumeration"></a>Enumeração MPNOTIFY
 
 Possíveis notificações de retorno de chamada.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -422,214 +422,214 @@ Ação de limpeza bem-sucedida para uma ameaça.
 <span id="MPNOTIFY_THREAT_CLEAN_FAILED"></span><span id="mpnotify_threat_clean_failed"></span>**\_ \_ falha ao limpar ameaça mpnotify \_**
 </dt> <dd>
 
-Falha na ação de limpeza para uma ameaça. **Erro \_ do O código de erro de ameaça de MP \_ \_ não \_ encontrado** indica que a ameaça não foi encontrada (e não foi uma falha de limpeza).
+Falha na ação de limpeza para uma ameaça. **ERRO \_ O código de erro MP \_ THREAT \_ NOT \_ FOUND** indica que a ameaça não foi encontrada (e não foi uma falha de limpeza).
 
 </dd> <dt>
 
-<span id="MPNOTIFY_THREAT_ABANDONED"></span><span id="mpnotify_threat_abandoned"></span>**\_ameaça mpnotify \_ abandonada**
+<span id="MPNOTIFY_THREAT_ABANDONED"></span><span id="mpnotify_threat_abandoned"></span>**MPNOTIFY \_ THREAT \_ ABANDONED**
 </dt> <dd>
 
-Nenhuma correção ocorreu antes da interrupção do serviço.
+Nenhuma correção ocorreu antes de o serviço ser interrompido.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_THREAT_CLEAN_EVENT_START"></span><span id="mpnotify_threat_clean_event_start"></span>**\_início do \_ evento de limpeza de ameaça mpnotify \_ \_**
+<span id="MPNOTIFY_THREAT_CLEAN_EVENT_START"></span><span id="mpnotify_threat_clean_event_start"></span>**MPNOTIFY \_ THREAT \_ CLEAN \_ EVENT \_ START**
 </dt> <dd>
 
 Uma ação de limpeza foi iniciada.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_THREAT_CLEAN_EVENT_COMPLETE"></span><span id="mpnotify_threat_clean_event_complete"></span>**\_evento de limpeza de ameaça mpnotify \_ \_ \_ concluído**
+<span id="MPNOTIFY_THREAT_CLEAN_EVENT_COMPLETE"></span><span id="mpnotify_threat_clean_event_complete"></span>**EVENTO MPNOTIFY \_ THREAT \_ CLEAN \_ \_ CONCLUÍDO**
 </dt> <dd>
 
 Uma ação de limpeza foi encerrada.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_START"></span><span id="mpnotify_sigupdate_start"></span>**MPNOTIFY \_ SIGUPDATE \_ Start**
+<span id="MPNOTIFY_SIGUPDATE_START"></span><span id="mpnotify_sigupdate_start"></span>**MPNOTIFY \_ SIGUPDATE \_ START**
 </dt> <dd>
 
 Atualização de assinatura iniciada.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_SEARCH_START"></span><span id="mpnotify_sigupdate_search_start"></span>**início da pesquisa do MPNOTIFY \_ SIGUPDATE \_ \_**
+<span id="MPNOTIFY_SIGUPDATE_SEARCH_START"></span><span id="mpnotify_sigupdate_search_start"></span>**MPNOTIFY \_ SIGUPDATE \_ SEARCH \_ START**
 </dt> <dd>
 
-Pesquisa de atualizações iniciada.
+Pesquise atualizações iniciadas.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_SEARCH_COMPLETE"></span><span id="mpnotify_sigupdate_search_complete"></span>**pesquisa do MPNOTIFY \_ SIGUPDATE \_ \_ concluída**
+<span id="MPNOTIFY_SIGUPDATE_SEARCH_COMPLETE"></span><span id="mpnotify_sigupdate_search_complete"></span>**MPNOTIFY \_ SIGUPDATE \_ SEARCH \_ COMPLETE**
 </dt> <dd>
 
-Pesquisa de atualizações concluída.
+Pesquise atualizações concluídas.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_SOFTWARE_UPDATE_AVAILABLE"></span><span id="mpnotify_sigupdate_software_update_available"></span>**\_atualização de \_ software mpnotify SIGUPDATE \_ \_ disponível**
+<span id="MPNOTIFY_SIGUPDATE_SOFTWARE_UPDATE_AVAILABLE"></span><span id="mpnotify_sigupdate_software_update_available"></span>**MPNOTIFY \_ SIGUPDATE \_ SOFTWARE \_ UPDATE \_ AVAILABLE**
 </dt> <dd>
 
 Atualização de software disponível.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_START"></span><span id="mpnotify_sigupdate_download_start"></span>**início do download do MPNOTIFY \_ SIGUPDATE \_ \_**
+<span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_START"></span><span id="mpnotify_sigupdate_download_start"></span>**MPNOTIFY \_ SIGUPDATE \_ DOWNLOAD \_ START**
 </dt> <dd>
 
 Download iniciado.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_PROGRESS"></span><span id="mpnotify_sigupdate_download_progress"></span>**progresso do download do MPNOTIFY \_ SIGUPDATE \_ \_**
+<span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_PROGRESS"></span><span id="mpnotify_sigupdate_download_progress"></span>**MPNOTIFY \_ SIGUPDATE \_ DOWNLOAD \_ PROGRESS**
 </dt> <dd>
 
-Download em andamento. Os dados de retorno de chamada contêm o progresso.
+Download em andamento. Os dados de retorno de chamada contêm progresso.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_COMPLETE"></span><span id="mpnotify_sigupdate_download_complete"></span>**Download do MPNOTIFY \_ SIGUPDATE \_ \_ concluído**
+<span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_COMPLETE"></span><span id="mpnotify_sigupdate_download_complete"></span>**MPNOTIFY \_ SIGUPDATE \_ DOWNLOAD \_ COMPLETE**
 </dt> <dd>
 
 Download concluído.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_INSTALL_START"></span><span id="mpnotify_sigupdate_install_start"></span>**início da instalação do MPNOTIFY \_ SIGUPDATE \_ \_**
+<span id="MPNOTIFY_SIGUPDATE_INSTALL_START"></span><span id="mpnotify_sigupdate_install_start"></span>**MPNOTIFY \_ SIGUPDATE \_ INSTALL \_ START**
 </dt> <dd>
 
 Instalação iniciada.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_INSTALL_PROGRESS"></span><span id="mpnotify_sigupdate_install_progress"></span>**progresso da instalação do MPNOTIFY \_ SIGUPDATE \_ \_**
+<span id="MPNOTIFY_SIGUPDATE_INSTALL_PROGRESS"></span><span id="mpnotify_sigupdate_install_progress"></span>**MPNOTIFY \_ SIGUPDATE \_ INSTALL \_ PROGRESS**
 </dt> <dd>
 
-Instalação em andamento. Os dados de retorno de chamada contêm o progresso.
+Instalação em andamento. Os dados de retorno de chamada contêm progresso.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_INSTALL_COMPLETE"></span><span id="mpnotify_sigupdate_install_complete"></span>**instalação do MPNOTIFY \_ SIGUPDATE \_ \_ concluída**
+<span id="MPNOTIFY_SIGUPDATE_INSTALL_COMPLETE"></span><span id="mpnotify_sigupdate_install_complete"></span>**MPNOTIFY \_ SIGUPDATE \_ INSTALL \_ COMPLETE**
 </dt> <dd>
 
 Instalação concluída.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_REBOOT_REQUIRED"></span><span id="mpnotify_sigupdate_reboot_required"></span>**\_reinicialização mpnotify SIGUPDATE \_ \_ necessária**
+<span id="MPNOTIFY_SIGUPDATE_REBOOT_REQUIRED"></span><span id="mpnotify_sigupdate_reboot_required"></span>**MPNOTIFY \_ SIGUPDATE \_ REBOOT \_ REQUIRED**
 </dt> <dd>
 
 A atualização requer reinicialização.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_REQUEST_PROCESSED"></span><span id="mpnotify_sigupdate_request_processed"></span>**\_solicitação mpnotify \_ SIGUPDATE \_ processada**
+<span id="MPNOTIFY_SIGUPDATE_REQUEST_PROCESSED"></span><span id="mpnotify_sigupdate_request_processed"></span>**SOLICITAÇÃO MPNOTIFY \_ SIGUPDATE \_ \_ PROCESSADA**
 </dt> <dd>
 
-O serviço processou uma solicitação de atualização de assinatura. A falha ou o êxito é indicado por **HRESULT** nos dados de retorno de chamada.
+O serviço processou uma solicitação de atualização de assinatura. Falha ou êxito é indicado por **hResult** nos dados de retorno de chamada.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SIGUPDATE_COMPLETE"></span><span id="mpnotify_sigupdate_complete"></span>**MPNOTIFY \_ SIGUPDATE \_ concluída**
+<span id="MPNOTIFY_SIGUPDATE_COMPLETE"></span><span id="mpnotify_sigupdate_complete"></span>**MPNOTIFY \_ SIGUPDATE \_ CONCLUÍDO**
 </dt> <dd>
 
-Atualização concluída. **S \_** O status falso indica que nenhuma atualização foi necessária.
+Atualização concluída. **S \_ O** status FALSE indica que nenhuma atualização foi necessária.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SAMPLE_START"></span><span id="mpnotify_sample_start"></span>**\_início de exemplo do mpnotify \_**
+<span id="MPNOTIFY_SAMPLE_START"></span><span id="mpnotify_sample_start"></span>**MPNOTIFY \_ SAMPLE \_ START**
 </dt> <dd>
 
-Envio de amostra iniciado.
+Envio de exemplo iniciado.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SAMPLE_COMPLETE"></span><span id="mpnotify_sample_complete"></span>**exemplo de MPNOTIFY \_ \_ concluído**
+<span id="MPNOTIFY_SAMPLE_COMPLETE"></span><span id="mpnotify_sample_complete"></span>**MPNOTIFY \_ SAMPLE \_ COMPLETE**
 </dt> <dd>
 
-Envio de amostra concluído.
+Envio de exemplo concluído.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SAMPLE_ITEM_START"></span><span id="mpnotify_sample_item_start"></span>**\_início do \_ item de exemplo mpnotify \_**
+<span id="MPNOTIFY_SAMPLE_ITEM_START"></span><span id="mpnotify_sample_item_start"></span>**MPNOTIFY \_ SAMPLE \_ ITEM \_ START**
 </dt> <dd>
 
-Envio de item de exemplo específico iniciado. O índice do item de exemplo está disponível nos [**\_ dados do MPSAMPLE**](mpsample-data.md).
+Envio de item de exemplo específico iniciado. O índice de item de exemplo está disponível [**em MPSAMPLE \_ DATA.**](mpsample-data.md)
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SAMPLE_ITEM_SUCCEEDED"></span><span id="mpnotify_sample_item_succeeded"></span>**ITEM de exemplo de MPNOTIFY \_ \_ \_ bem-sucedido**
+<span id="MPNOTIFY_SAMPLE_ITEM_SUCCEEDED"></span><span id="mpnotify_sample_item_succeeded"></span>**ITEM DE EXEMPLO MPNOTIFY \_ \_ \_ BEM-SUCEDIDO**
 </dt> <dd>
 
 Envio de item de exemplo específico bem-sucedido.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_SAMPLE_ITEM_FAILED"></span><span id="mpnotify_sample_item_failed"></span>**\_ \_ falha no item de exemplo mpnotify \_**
+<span id="MPNOTIFY_SAMPLE_ITEM_FAILED"></span><span id="mpnotify_sample_item_failed"></span>**FALHA NO ITEM DE EXEMPLO MPNOTIFY \_ \_ \_**
 </dt> <dd>
 
-Falha ao enviar o item de exemplo específico. O código de erro está disponível nos [**\_ dados do MPCALLBACK**](mpcallback-data.md).
+Falha no envio de item de exemplo específico. O código de erro está disponível em [**DADOS MPCALLBACK. \_**](mpcallback-data.md)
 
 </dd> <dt>
 
-<span id="MPNOTIFY_RESERVED_DATA"></span><span id="mpnotify_reserved_data"></span>**MPNOTIFY \_ \_ dados reservados**
+<span id="MPNOTIFY_RESERVED_DATA"></span><span id="mpnotify_reserved_data"></span>**DADOS RESERVADOS DO \_ MPNOTIFY \_**
 </dt> <dd>
 
 Dados reservados internos.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_FASTPATH_SIG_ADDED"></span><span id="mpnotify_fastpath_sig_added"></span>**MPNOTIFY \_ FASTPATH \_ SIG \_ adicionado**
+<span id="MPNOTIFY_FASTPATH_SIG_ADDED"></span><span id="mpnotify_fastpath_sig_added"></span>**MPNOTIFY \_ FASTPATH \_ SIG \_ ADICIONADO**
 </dt> <dd>
 
-Uma assinatura FastPath adicionou ou desabilitou uma assinatura.
+Uma assinatura fastpath adicionou ou desabilitou uma assinatura.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_FASTPATH_SIG_REMOVED"></span><span id="mpnotify_fastpath_sig_removed"></span>**\_SIG mpnotify \_ FASTPATH \_ removido**
+<span id="MPNOTIFY_FASTPATH_SIG_REMOVED"></span><span id="mpnotify_fastpath_sig_removed"></span>**MPNOTIFY \_ FASTPATH \_ SIG \_ REMOVIDO**
 </dt> <dd>
 
-Uma assinatura do FastPath foi removida.
+Uma assinatura FastPath foi removida.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_NIS_PRIVATE"></span><span id="mpnotify_nis_private"></span>**MPNOTIFY \_ NIS \_ particular**
+<span id="MPNOTIFY_NIS_PRIVATE"></span><span id="mpnotify_nis_private"></span>**MPNOTIFY \_ NIS \_ PRIVATE**
 </dt> <dd>
 
-Notificações privada NIS. Nenhum parceiro deve se registrar para isso.
+Notificações privadas da NIS. Nenhum parceiro deve se registrar para isso.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_HEALTH_CHANGE"></span><span id="mpnotify_health_change"></span>**\_alteração de integridade do mpnotify \_**
+<span id="MPNOTIFY_HEALTH_CHANGE"></span><span id="mpnotify_health_change"></span>**MPNOTIFY \_ HEALTH \_ CHANGE**
 </dt> <dd>
 
 O serviço AM entrou em um novo estado.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_HEALTH_RECOVERY"></span><span id="mpnotify_health_recovery"></span>**\_recuperação de integridade do mpnotify \_**
+<span id="MPNOTIFY_HEALTH_RECOVERY"></span><span id="mpnotify_health_recovery"></span>**MPNOTIFY \_ HEALTH \_ RECOVERY**
 </dt> <dd>
 
 O serviço AM foi recuperado de um estado.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_HEALTH_START"></span><span id="mpnotify_health_start"></span>**\_início da integridade do mpnotify \_**
+<span id="MPNOTIFY_HEALTH_START"></span><span id="mpnotify_health_start"></span>**MPNOTIFY \_ HEALTH \_ START**
 </dt> <dd>
 
-O serviço AM inicializou a integridade do sistema.
+O serviço AM inicializou a saúde do sistema.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_ENDOFLIFE_CHANGE"></span><span id="mpnotify_endoflife_change"></span>**MPNOTIFY \_ ENDOFLIFE \_**
+<span id="MPNOTIFY_ENDOFLIFE_CHANGE"></span><span id="mpnotify_endoflife_change"></span>**MPNOTIFY \_ ENDOFLIFE \_ CHANGE**
 </dt> <dd>
 
-As datas de expiração do "fim da vida útil" do serviço AM foram alteradas.
+As datas de expiração "Fim da Vida Útil" para o serviço AM foram alteradas.
 
 </dd> <dt>
 
-<span id="MPNOTIFY_MALWARETOAST_DATA"></span><span id="mpnotify_malwaretoast_data"></span>**MPNOTIFY \_ MALWARETOAST \_ Data**
+<span id="MPNOTIFY_MALWARETOAST_DATA"></span><span id="mpnotify_malwaretoast_data"></span>**MPNOTIFY \_ MALWARETOAST \_ DATA**
 </dt> <dd>
 
 O serviço AM encontrou malware que pode ter causado alteração de configurações críticas no computador.
@@ -642,9 +642,9 @@ O serviço AM encontrou malware que pode ter causado alteração de configuraç�
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -655,10 +655,10 @@ O serviço AM encontrou malware que pode ter causado alteração de configuraç�
 [**MpManagerStatusQueryEx**](mpmanagerstatusqueryex.md)
 </dt> <dt>
 
-[**dados do MPCALLBACK \_**](mpcallback-data.md)
+[**DADOS \_ MPCALLBACK**](mpcallback-data.md)
 </dt> <dt>
 
-[**dados do MPSAMPLE \_**](mpsample-data.md)
+[**DADOS MPSAMPLE \_**](mpsample-data.md)
 </dt> </dl>
 
  

@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Especificando o nome principal do servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a2f5aa4053b5ae7452e5f5e9c0ddcac15630ae5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc8b3d05d6933653a7d2a1737d36f00f6ca65c39bd7739e5f2e9f4232eb507f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118816419"
 ---
 # <a name="specifying-the-server-principal-name"></a>Especificando o nome principal do servidor
 
@@ -18,9 +18,9 @@ O serviço de autenticação Kerberos especifica o nome principal do servidor pa
 
 Esse parâmetro é necessário para que o Kerberos dê suporte à autenticação mútua. No entanto, o uso do nome principal do servidor padrão não permite a autenticação mútua. Os clientes para os quais a autenticação mútua é crítica devem especificar um nome principal de servidor que corresponda à identidade do servidor que o serviço WMI está usando. Para obter mais informações sobre como configurar a segurança de proxy e um exemplo de C++ mostrando como definir o nome principal do servidor, consulte [definindo a segurança em IWbemServices e em outros proxies](setting-the-security-on-iwbemservices-and-other-proxies.md).
 
-Para obter mais informações sobre como definir o nome principal do servidor em script e Visual Basic, consulte [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md) e [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
+para obter mais informações sobre como definir o nome principal do servidor em script e Visual Basic, consulte [**SWbemLocator. ConnectServer**](swbemlocator-connectserver.md) e [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
 
-Ao contrário da maioria dos protocolos de segurança para Instrumentação de Gerenciamento do Windows (WMI) e Component Object Model (COM), você não pode definir a entidade do servidor em uma chamada para [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). No entanto, você pode definir a entidade de segurança do servidor com o parâmetro *bstrAuthority* para [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver)ou o parâmetro *pServerPrincName* para [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+ao contrário da maioria dos protocolos de segurança para Instrumentação de Gerenciamento do Windows (WMI) e Component Object Model (COM), você não pode definir a entidade do servidor em uma chamada para [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). No entanto, você pode definir a entidade de segurança do servidor com o parâmetro *bstrAuthority* para [**IWbemLocator:: ConnectServer**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemlocator-connectserver)ou o parâmetro *pServerPrincName* para [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
 O exemplo de código neste tópico requer a seguinte \# instrução include para compilação correta.
 

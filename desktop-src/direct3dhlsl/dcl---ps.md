@@ -20,7 +20,7 @@ ms.locfileid: "118793462"
 
 Declare um registro de entrada de sombreador de pixel.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 \[ \_ máscara de \] dest PP \[ . Mask\]
 

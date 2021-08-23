@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6d516770adf025ef673686ce1632dd8ec4217c8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1a9e0e85aeee03b0e11e74f4ee76253d473e122773a31e04e1286bd995d4717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961545"
 ---
 # <a name="enabled-attribute"></a>Atributo habilitado
 
@@ -58,7 +58,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                         |
 | MAPI-Id                | 0x8C21                                     |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -79,7 +79,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                         |
 | MAPI-Id                | 0x8C21                                     |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -100,7 +100,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                                                                                                                                                  |
 | MAPI-Id                | 0x8C21                                                                                                                                                              |
 | System-Only            | Falso                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                |
+| É de valor único       | Verdadeiro                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                               |
 | No catálogo global      | Falso                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                        |
@@ -121,7 +121,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                         |
 | MAPI-Id                | 0x8C21                                     |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -142,7 +142,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                         |
 | MAPI-Id                | 0x8C21                                     |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -163,7 +163,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                         |
 | MAPI-Id                | 0x8C21                                     |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
@@ -184,7 +184,7 @@ Esse atributo é usado para indicar se um determinado crossRef está habilitado.
 | ID do link                | \-                                         |
 | MAPI-Id                | 0x8C21                                     |
 | System-Only            | Falso                                      |
-| É de valor único       | True                                       |
+| É de valor único       | Verdadeiro                                       |
 | É indexado             | Falso                                      |
 | No catálogo global      | Falso                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |

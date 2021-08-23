@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 3cb48943a826296c13df80130171442fc29435f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ccda81fc3640d4d09f9644bdf0d84a18a68b743397e1578a5ad434349893e893
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898970"
 ---
 # <a name="signeddataverify-method"></a>Método SignedData. Verify
 
@@ -75,7 +75,7 @@ Um valor da enumeração [de \_ \_ sinalizador de \_ verificação \_ de dados a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna uma cadeia de caracteres que contém os dados codificados e assinados.
 
@@ -87,7 +87,7 @@ Se esse método falhar, um erro será gerado. O objeto **Err** conterá informa�
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

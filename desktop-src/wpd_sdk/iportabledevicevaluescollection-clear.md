@@ -1,7 +1,7 @@
 ---
 description: O método Clear libera todos os itens da coleção.
 ms.assetid: 151d1f61-11f0-40f0-8da1-79e9eb2001ce
-title: Método IPortableDeviceValuesCollection::Clear (PortableDeviceTypes.h)
+title: 'Método IPortableDeviceValuesCollection:: Clear (PortableDeviceTypes. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118697020"
 ---
-# <a name="iportabledevicevaluescollectionclear-method"></a>Método IPortableDeviceValuesCollection::Clear
+# <a name="iportabledevicevaluescollectionclear-method"></a>Método IPortableDeviceValuesCollection:: Clear
 
-O **método Clear** libera todos os itens da coleção.
+O método **Clear** libera todos os itens da coleção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -62,8 +62,8 @@ O método libera toda a memória alocada para os itens na coleção.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
 
 
 
@@ -71,7 +71,7 @@ O método libera toda a memória alocada para os itens na coleção.
 
 <dl> <dt>
 
-[**IPortableDeviceValuesCollection Interface**](iportabledevicevaluescollection.md)
+[**Interface IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)
 </dt> </dl>
 
  

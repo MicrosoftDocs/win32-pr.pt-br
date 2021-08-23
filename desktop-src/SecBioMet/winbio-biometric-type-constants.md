@@ -1,6 +1,6 @@
 ---
 title: Constantes de WINBIO_BIOMETRIC_TYPE (WinBio \_ Types. h)
-description: Tipos biométricos padrão definidos pelo National Institute of Standards and Technology Information (NISTIR) 6529-A, também conhecido como o formato de Patron da CBEFF (Biometric Exchange formatings Framework).
+description: tipos biométricos padrão definidos pelo National Institute of standards and Technology Information (NISTIR) 6529-a, também conhecido como o formato de Patron da CBEFF (biometria comum de formatos de Exchange biométricas).
 ms.assetid: DCBDB5F9-FF81-44C1-B439-2B8C02483212
 topic_type:
 - apiref
@@ -36,16 +36,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d2ab5c41a3c2af26312c97a67d1179b50fd759
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9c1b6475433d2c0d1432e7501e6cbda46436c5a54fd13d5f254f79b678b3f7bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911065"
 ---
 # <a name="winbio_biometric_type-constants"></a>\_Constantes de tipo BIOMÉTRICO WINBIO \_
 
-As constantes a seguir representam os tipos biométricos padrão definidos pelo National Institute of Standards and Technology Information (NISTIR) 6529-A, também conhecido como o formato de Patron do CBEFF (Biometric Exchange formating Framework). No momento, somente a **\_ \_ impressão digital do tipo WINBIO** é suportada.
+as constantes a seguir representam os tipos biométricos padrão definidos pelo National Institute of standards and Technology Information (NISTIR) 6529-a, também conhecido como o formato de Patron de CBEFF (biometria comum de formatos de Exchange biométricas). No momento, somente a **\_ \_ impressão digital do tipo WINBIO** é suportada.
 
 
 
@@ -57,12 +57,12 @@ As constantes a seguir representam os tipos biométricos padrão definidos pelo 
 | <span id="WINBIO_TYPE_FACIAL_FEATURES"></span><span id="winbio_type_facial_features"></span><dl> <dt>**\_ \_ recursos facial do tipo WINBIO \_**</dt> </dl>           | Os recursos faciais são usados para determinar a identidade de um indivíduo.<br/>                                                          |
 | <span id="WINBIO_TYPE_VOICE"></span><span id="winbio_type_voice"></span><dl> <dt>**WINBIO \_ tipo \_ voz**</dt> </dl>                                          | Padrões de frequência e volume na voz de um indivíduo são usados para determinar a identidade de um indivíduo.<br/>              |
 | <span id="WINBIO_TYPE_FINGERPRINT"></span><span id="winbio_type_fingerprint"></span><dl> <dt>**\_impressão digital do tipo WINBIO \_**</dt> </dl>                        | Padrões de impressão digital são usados para determinar a identidade de um indivíduo.<br/>                                                     |
-| <span id="WINBIO_TYPE_IRIS"></span><span id="winbio_type_iris"></span><dl> <dt>**WINBIO \_ tipo \_ íris**</dt> </dl>                                             | Padrões de íris são usados para determinar a identidade de um indivíduo. Esse valor tem suporte a partir do Windows 10.<br/>            |
+| <span id="WINBIO_TYPE_IRIS"></span><span id="winbio_type_iris"></span><dl> <dt>**WINBIO \_ tipo \_ íris**</dt> </dl>                                             | Padrões de íris são usados para determinar a identidade de um indivíduo. Esse valor tem suporte a partir de Windows 10.<br/>            |
 | <span id="WINBIO_TYPE_RETINA"></span><span id="winbio_type_retina"></span><dl> <dt>**WINBIO \_ tipo \_ retina**</dt> </dl>                                       | Os padrões de sentido na retina são usados para determinar a identidade de um indivíduo.<br/>                                              |
 | <span id="WINBIO_TYPE_HAND_GEOMETRY"></span><span id="winbio_type_hand_geometry"></span><dl> <dt>**\_geometria do tipo WINBIO \_ \_**</dt> </dl>                 | A forma de uma pessoa de um indivíduo é usada para determinar a identidade de um indivíduo.<br/>                                      |
 | <span id="WINBIO_TYPE_SIGNATURE_DYNAMICS"></span><span id="winbio_type_signature_dynamics"></span><dl> <dt>**WINBIO \_ de \_ assinatura do tipo \_ dinâmica**</dt> </dl>  | Os padrões de força que o indivíduo usa quando assinam seu nome são usados para determinar a identidade de um indivíduo.<br/> |
 | <span id="WINBIO_TYPE_KEYSTROKE_DYNAMICS"></span><span id="winbio_type_keystroke_dynamics"></span><dl> <dt>**WINBIO \_ de \_ pressionamento de teclas do tipo \_ Dynamics**</dt> </dl>  | Os padrões de velocidade e erro na digitação por um indivíduo são usados para determinar a identidade de um indivíduo.<br/>                  |
-| <span id="WINBIO_TYPE_LIP_MOVEMENT"></span><span id="winbio_type_lip_movement"></span><dl> <dt>**\_movimentação de \_ LIP do tipo WINBIO \_**</dt> </dl>                    | As alterações nos Lips de um indivíduo que ocorrem quando falam são usadas para determinar a identidade de um indivíduo.<br/>      |
+| <span id="WINBIO_TYPE_LIP_MOVEMENT"></span><span id="winbio_type_lip_movement"></span><dl> <dt>**WINBIO \_ tipo de \_ LIP \_ movimentação**</dt> </dl>                    | As alterações nos Lips de um indivíduo que ocorrem quando falam são usadas para determinar a identidade de um indivíduo.<br/>      |
 | <span id="WINBIO_TYPE_THERMAL_FACE_IMAGE"></span><span id="winbio_type_thermal_face_image"></span><dl> <dt>**\_imagem de \_ \_ face térmica do tipo \_ WINBIO**</dt> </dl> | Os padrões de temperatura na face de um indivíduo são usados para determinar a identidade de um indivíduo.<br/>                    |
 | <span id="WINBIO_TYPE_THERMAL_HAND_IMAGE"></span><span id="winbio_type_thermal_hand_image"></span><dl> <dt>**\_imagem da \_ \_ mão térmica do tipo \_ WINBIO**</dt> </dl> | Os padrões de temperatura à mão de um indivíduo são usados para determinar a identidade de um indivíduo.<br/>                    |
 | <span id="WINBIO_TYPE_GAIT"></span><span id="winbio_type_gait"></span><dl> <dt>**WINBIO \_ tipo \_ da**</dt> </dl>                                             | Os padrões de movimento que ocorrem quando as movimentações individuais são usadas para determinar a identidade de um indivíduo.<br/>            |
@@ -85,8 +85,8 @@ As constantes a seguir representam os tipos biométricos padrão definidos pelo 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                                                                                  |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                                                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                                                                                  |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo Address-Entry-Display-Table
-description: A tabela de exibição de uma entrada de endereço.
+title: Atributo address-entry-display-Table
+description: A tabela de exibição para uma entrada de endereço.
 ms.assetid: e563bf38-825b-43f9-b10e-29079bba3f93
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo Address-Entry-Display-Table
-- esquema do AD do atributo addressEntryDisplayTable
+- Endereço-entry-display-Table atributo AD Schema
+- Esquema de AD do atributo addressEntryDisplayTable
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118688850"
 ---
-# <a name="address-entry-display-table-attribute"></a>Atributo Address-Entry-Display-Table
+# <a name="address-entry-display-table-attribute"></a>Atributo address-entry-display-Table
 
-A tabela de exibição de uma entrada de endereço.
+A tabela de exibição para uma entrada de endereço.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Address-Entry-Display-Table                           |
-| Ldap-Display-Name | addressEntryDisplayTable                              |
+| CN                | Endereço-entrada-exibição-tabela                           |
+| LDAP-Display-Name | addressEntryDisplayTable                              |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.324                                |
-| System-Id-Guid    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | 5fd42461-1262-11d0-a060-00aa006c33ed                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ A tabela de exibição de uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A tabela de exibição de uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A tabela de exibição de uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A tabela de exibição de uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A tabela de exibição de uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A tabela de exibição de uma entrada de endereço.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8017                                                   |
 | System-Only            | Falso                                                    |
-| Tem valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No Catálogo Global      | Falso                                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                                             |
+| No catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**Exibir modelo**](c-displaytemplate.md)<br/> |
+| Classes usadas em        | [**Display-template**](c-displaytemplate.md)<br/> |
 
 
 

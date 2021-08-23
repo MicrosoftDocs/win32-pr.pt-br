@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TTM_RELAYEVENT (commctrl. h)
-description: Passa uma mensagem do mouse para um controle ToolTip para processamento.
+title: TTM_RELAYEVENT mensagem (Commctrl.h)
+description: Passa uma mensagem do mouse para um controle de dica de ferramenta para processamento.
 ms.assetid: 76d6d0ed-f357-479e-83d8-03d2e988cbd3
 keywords:
-- Controles de TTM_RELAYEVENT de mensagens do Windows
+- TTM_RELAYEVENT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8648303a318f1f71eb16e8070235910ecfb8760
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 051a0b7ab8ecd93b15ceb9187eefd6f566b55d653b751889cd29acec58366716
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166359"
 ---
-# <a name="ttm_relayevent-message"></a>\_Mensagem TTM RELAYEVENT
+# <a name="ttm_relayevent-message"></a>Mensagem TTM \_ RELAYEVENT
 
-Passa uma mensagem do mouse para um controle ToolTip para processamento.
+Passa uma mensagem do mouse para um controle de dica de ferramenta para processamento.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,33 +32,33 @@ Passa uma mensagem do mouse para um controle ToolTip para processamento.
 *wParam* 
 </dt> <dd>
 
-Deve ser zero. **Windows 7 e posterior:** Se a posição da dica de ferramenta for deslocada da posição do cursor (na ordem não ser obstruída por um dedo ou um dispositivo apontador), esse parâmetro poderá conter informações extras da mensagem [**\_ MOUSEMOVE do WM**](/windows/desktop/inputdev/wm-mousemove) . Recupere essas informações extras com [**GetMessageExtraInfo**](/windows/desktop/api/winuser/nf-winuser-getmessageextrainfo).
+Deve ser zero. **Windows 7 e posteriores:** Se a posição da dica de ferramenta for deslocada da posição do cursor (para não ser obstruída por um dedo ou um dispositivo que aponta), esse parâmetro poderá conter informações extras extra da mensagem [**WM \_ MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove) Recupere essas informações extras com [**GetMessageExtraInfo.**](/windows/desktop/api/winuser/nf-winuser-getmessageextrainfo)
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**msg**](/windows/win32/api/winuser/ns-winuser-msg) que contém a mensagem a ser retransmitida.
+Ponteiro para uma [**estrutura MSG**](/windows/win32/api/winuser/ns-winuser-msg) que contém a mensagem para retransmissão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Um controle ToolTip processa apenas as seguintes mensagens passadas para ele pela mensagem **TTM \_ RELAYEVENT** :
+Um controle de dica de ferramenta processa apenas as seguintes mensagens passadas para ele pela **mensagem TTM \_ RELAYEVENT:**
 
--   LBUTTONDOWN do WM \_
--   LBUTTONUP do WM \_
--   MBUTTONDOWN do WM \_
--   MBUTTONUP do WM \_
--   admousemove do WM \_
--   NCMOUSEMOVE do WM \_
--   RBUTTONDOWN do WM \_
--   RBUTTONUP do WM \_
+-   WM \_ LBUTTONDOWN
+-   WM \_ LBUTTONUP
+-   WM \_ MBUTTONDOWN
+-   WM \_ MBUTTONUP
+-   WM \_ MOUSEMOVE
+-   WM \_ NCMOUSEMOVE
+-   WM \_ RBUTTONDOWN
+-   WM \_ RBUTTONUP
 
 Todas as outras mensagens são ignoradas.
 
@@ -68,9 +68,9 @@ Todas as outras mensagens são ignoradas.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

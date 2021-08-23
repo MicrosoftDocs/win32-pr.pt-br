@@ -4,12 +4,12 @@ ms.assetid: 82fd83d4-22dd-4641-807b-d2b263918e4c
 title: Tabela ODBCattribute
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7e76a52dd63bdc8eb969324f7891e7359be7caf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e31e67cde1625812d1c5b8af7dc3bd24347891d3a769e24deeb02db7cc44396
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118943174"
 ---
 # <a name="odbcattribute-table"></a>Tabela ODBCattribute
 
@@ -21,9 +21,9 @@ A tabela ODBCattribute tem as colunas a seguir.
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| Driver\_  | [Identificador](identifier.md) | S   | N        |
-| Atributo | [Text](text.md)             | S   | N        |
-| Valor     | [Binário](formatted.md)   | N   | S        |
+| Driver\_  | [Identificador](identifier.md) | Y   | N        |
+| Atributo | [Text](text.md)             | Y   | N        |
+| Valor     | [Binário](formatted.md)   | N   | Y        |
 
 
 

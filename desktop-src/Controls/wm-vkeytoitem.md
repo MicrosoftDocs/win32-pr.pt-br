@@ -3,7 +3,7 @@ title: Mensagem de WM_VKEYTOITEM (WinUser. h)
 description: Enviado por uma caixa de listagem com o \_ estilo de lbs WANTKEYBOARDINPUT para seu proprietário em resposta a uma mensagem do WM \_ KEYDOWN.
 ms.assetid: 2eab922f-7298-436f-bd94-0eefae7284d5
 keywords:
-- Controles de WM_VKEYTOITEM de mensagens do Windows
+- controles de Windows de mensagem de WM_VKEYTOITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1685682d8305fff5d9d93ef59d8859e099e6ce
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: 47c054952c74b8e66bb109b925cfbdc353ec97f7bebfb5b5cafaedf8857ccb5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104297995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957465"
 ---
 # <a name="wm_vkeytoitem-message"></a>Mensagem do WM \_ VKEYTOITEM
 
@@ -53,7 +53,7 @@ Identificador para a caixa de listagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno especifica a ação que o aplicativo realizou em resposta à mensagem. Um valor de retorno de-2 indica que o aplicativo tratou todos os aspectos da seleção do item e não requer nenhuma ação adicional na caixa de listagem. (Consulte comentários.) Um valor de retorno de-1 indica que a caixa de listagem deve executar a ação padrão em resposta ao pressionamento de tecla. Um valor de retorno 0 ou maior especifica o índice de um item na caixa de listagem e indica que a caixa de listagem deve executar a ação padrão para o pressionamento de tecla no item especificado.
 
@@ -75,9 +75,9 @@ Se um procedimento da caixa de diálogo tratar essa mensagem, ele deverá conver
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

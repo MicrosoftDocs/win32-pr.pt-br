@@ -3,7 +3,7 @@
   items:
     - name: MSMonitorClass
       href: msmonitorclass.md
-    - name: Classes MSMCA
+    - name: MSMCA Classes
       href: msmca-classes.md
       items:
         - name: MSMCAEvent_CPUError
@@ -46,7 +46,7 @@
       href: supporteddisplayfeaturesdescriptor.md
     - name: VideoModeDescriptor
       href: videomodedescriptor.md
-    - name: WMIEvent
+    - name: Wmievent
       href: wmievent.md
     - name: WmiMonitorAnalogVideoInputParams
       href: wmimonitoranalogvideoinputparams.md
@@ -92,7 +92,7 @@
       href: wmimonitorlistedsupportedsourcemodes.md
     - name: WmiMonitorRawEEdidV1Block
       href: wmimonitorraweedidv1block.md
-    - name: XYZinCIE
+    - name: XYPatiaCIE
       href: xyzincie.md
 - name: Provedor WDM
   href: wdm-provider.md

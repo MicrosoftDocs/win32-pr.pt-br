@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 610d49c73ade9bab47c95e90af73bac606f4bd23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3e878a5d2b9567ae7a483344a2240d3480620ea00706db1ed0c834fd2c5553a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962455"
 ---
 # <a name="dsrestoreregister-function"></a>Função DsRestoreRegister
 
-\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. A partir do Windows Vista, use [serviço de cópias de sombra de volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
+\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. a partir do Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
 
 A função **DsRestoreRegister** registra uma operação de restauração. Essa função interbloqueia todas as operações de restauração subsequentes e impede que o destino de restauração seja iniciado até que a função [**DsRestoreRegisterComplete**](dsrestoreregistercomplete.md) seja chamada.
 
@@ -108,7 +108,7 @@ Contém o número de log mais alto a ser restaurado nesta sessão de restauraç�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **S \_ OK** se a função for bem-sucedida, ou um código de erro Win32 ou RPC. A lista a seguir lista os possíveis códigos de erro.
 
@@ -143,7 +143,7 @@ O token de expiração fornecido a [**DsRestorePrepare**](dsrestoreprepare.md) e
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **DsRestoreRegisterW** (Unicode) e **DsRestoreRegisterA** (ANSI)<br/>           |
@@ -169,7 +169,7 @@ O token de expiração fornecido a [**DsRestorePrepare**](dsrestoreprepare.md) e
 [**\_RSTMAP EDB**](edb-rstmap.md)
 </dt> <dt>
 
-[Restaurando Active Directory](restoring-an-active-directory-server.md)
+[Restaurando o Active Directory](restoring-an-active-directory-server.md)
 </dt> <dt>
 
 [Funções de backup de diretório](directory-backup-functions.md)

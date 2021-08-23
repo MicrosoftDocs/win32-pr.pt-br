@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_SETLOCALE (WinUser. h)
-description: Define a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o \_ estilo de classificação lbs) e o texto adicionado pela mensagem do lb \_ AddString.
+title: LB_SETLOCALE mensagem (Winuser.h)
+description: Define a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o estilo SORT LBS) e do texto adicionado pela mensagem \_ \_ ADDSTRING do LB.
 ms.assetid: e9503124-de9f-4b92-a59e-ec9320864ae7
 keywords:
-- Controles de LB_SETLOCALE de mensagens do Windows
+- LB_SETLOCALE controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd8ea7bb7b6d19144a84ab166f56cd2c0ad49e05
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 623b8550b3d5f382ddc8ccc1e1cfcf861a2f8c0a7877ba60c57e393abc1401d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958535"
 ---
-# <a name="lb_setlocale-message"></a>\_Mensagem SETlocal do lb
+# <a name="lb_setlocale-message"></a>Mensagem \_ LB SETLOCALE
 
-Define a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o estilo de [**\_ classificação lbs**](list-box-styles.md) ) e o texto adicionado pela mensagem do [**lb \_ AddString**](lb-addstring.md) .
+Define a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o estilo [**SORT \_ LBS)**](list-box-styles.md) e do texto adicionado pela mensagem [**\_ ADDSTRING do LB.**](lb-addstring.md)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define a localidade atual da caixa de listagem. Você pode usar a localidade par
 *wParam* 
 </dt> <dd>
 
-Especifica o identificador de localidade que a caixa de listagem usará para classificar ao adicionar texto.
+Especifica o identificador de localidade que a caixa de listagem usará para classificação ao adicionar texto.
 
 </dd> <dt>
 
@@ -43,13 +43,13 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é o identificador de localidade anterior. Se o parâmetro *wParam* especificar uma localidade que não esteja instalada no sistema, o valor de retorno será lb \_ Err e a localidade da caixa de listagem atual não será alterada.
+O valor de retorno é o identificador de localidade anterior. Se o *parâmetro wParam* especificar uma localidade que não está instalada no sistema, o valor de retorno será LB ERR e a localidade da caixa de listagem atual não \_ será alterada.
 
 ## <a name="remarks"></a>Comentários
 
-Use a macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) para construir um identificador de localidade.
+Use a [**macro MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) para construir um identificador de localidade.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Use a macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) para co
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ Use a macro [**MAKELCID**](/windows/desktop/api/winnt/nf-winnt-makelcid) para co
 **Referência**
 </dt> <dt>
 
-[**seqüência de caracteres de LB \_**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**\_local lb**](lb-getlocale.md)
+[**LB \_ GETLOCALE**](lb-getlocale.md)
 </dt> </dl>
 
  

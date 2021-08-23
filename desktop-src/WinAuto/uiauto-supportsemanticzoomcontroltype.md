@@ -21,20 +21,20 @@ keywords:
 - tipos de controle, SemanticZoom
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b17d4712aa4f10489081b1b5d0f69fed849080bc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 49609b7bc2b3958b6041bcf3a8c2c6442ce38501f95ff75a6c0f2145d497436f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118825471"
 ---
 # <a name="semanticzoom-control-type"></a>Tipo de controle SemanticZoom
 
 Este tópico fornece informações sobre o suporte de automação da interface do usuário para o tipo de controle **SemanticZoom** .
 
-O zoom semântico é uma técnica introduzida no Windows 8 para apresentar e navegar por grandes conjuntos de dados ou conteúdo relacionados em uma única exibição, como um álbum de fotos, uma lista de aplicativos ou um catálogo de endereços. O zoom semântico usa dois modos distintos de classificação, ou *níveis de zoom*, para organizar e apresentar o conteúdo. O modo de baixo nível (ou *ampliado*) exibe itens em uma estrutura simples, "tudo para cima"; e o modo de alto nível (ou *zoom*) exibe itens em grupos, permitindo que o usuário navegue e navegue rapidamente pelo conteúdo. Por exemplo, aplicar zoom em uma lista de cidades pode mudar para uma lista de Estados que contém essas cidades. O zoom de uma lista de programas pode ser alterado para uma lista de grupos de programas lógicos.
+o Zoom semântico é uma técnica introduzida em Windows 8 para apresentar e navegar por grandes conjuntos de dados ou conteúdo relacionados em uma única exibição, como um álbum de fotos, uma lista de aplicativos ou um catálogo de endereços. O zoom semântico usa dois modos distintos de classificação, ou *níveis de zoom*, para organizar e apresentar o conteúdo. O modo de baixo nível (ou *ampliado*) exibe itens em uma estrutura simples, "tudo para cima"; e o modo de alto nível (ou *zoom*) exibe itens em grupos, permitindo que o usuário navegue e navegue rapidamente pelo conteúdo. Por exemplo, aplicar zoom em uma lista de cidades pode mudar para uma lista de Estados que contém essas cidades. O zoom de uma lista de programas pode ser alterado para uma lista de grupos de programas lógicos.
 
-Para obter mais informações sobre o zoom semântico especificamente como usado para aplicativos da Windows Store, consulte [diretrizes para zoom semântico](/windows/uwp/controls-and-patterns/semantic-zoom).
+para obter mais informações sobre o zoom semântico especificamente como usado para aplicativos da Windows Store, consulte [diretrizes para zoom semântico](/windows/uwp/controls-and-patterns/semantic-zoom).
 
 O modelo de uso para o tipo de controle **SemanticZoom** é incomum, pois ele existe principalmente para acesso programático. Os clientes de automação da interface do usuário da Microsoft podem monitorar e manipular o controle de zoom semântico para controlar o estado de zoom da lista. Os usuários que não estão usando tecnologia assistencial normalmente manipulariam o controle de zoom semântico diretamente por meio de gestos de toque ou atalhos de teclado.
 

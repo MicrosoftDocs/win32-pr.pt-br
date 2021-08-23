@@ -3,9 +3,9 @@ title: Propriedade IResultProperty IndexColumn (WdsSharedIDL. h)
 description: Nome da coluna de propriedades no índice.
 ms.assetid: a043be43-49ef-46e0-bfb6-01104288e9ef
 keywords:
-- Recursos do ambiente Windows herdado da propriedade IndexColumn
-- Propriedade IndexColumn recursos de ambiente do Windows herdados, interface IResultProperty
-- Recursos do ambiente Windows herdado da interface IResultProperty, Propriedade IndexColumn
+- recursos de ambiente herdado Windows da propriedade IndexColumn
+- propriedade IndexColumn recursos de ambiente herdados Windows, interface IResultProperty
+- recursos de ambiente Windows da interface IResultProperty herdada, propriedade IndexColumn
 topic_type:
 - apiref
 api_name:
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a4749f9ba1200f1af8ba202056e48f0123e8402
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a3a78d91b9e823dbf8d3c7a2273247706f9ae2bb04c6f64d08f5555eb875023c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754769"
 ---
 # <a name="iresultpropertyindexcolumn-property"></a>Propriedade IResultProperty:: IndexColumn
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
 Nome da coluna de propriedades no índice.
 
@@ -54,10 +54,10 @@ Retorna um ponteiro para o nome da coluna no índice.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                             |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| parâmetro<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisador de desktops (WDS) 2.6.5<br/>                                             |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
 
 
 

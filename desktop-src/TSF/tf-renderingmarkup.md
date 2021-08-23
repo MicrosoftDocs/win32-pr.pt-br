@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 166a60182ae7b53dbc70993a7bae81991e42255b
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d594ae41109e072413e20709c68770038fbae870966325f762ddd169900491d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105813075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874199"
 ---
 # <a name="tf_renderingmarkup-structure"></a>Estrutura de RENDERINGMARKUP de TF \_
 
@@ -29,7 +29,7 @@ A estrutura de estrutura [**TF \_ RENDERINGMARKUP**](/windows/desktop/api/Msctf/
 
 ```C++
 typedef struct {
-  ITfRange*           pRange;
+  ITfRange*           pRange;
   TF_DISPLAYATTRIBUTE tfDisplayAttr;
 } TF_RENDERINGMARKUP;
 ```
@@ -58,9 +58,9 @@ Exibir informações de atributo.
 
 Essa estrutura não está atualmente nos arquivos de cabeçalho públicos. Para usar essa API, você deve compilar o [protótipo](prototypes.md)em MIDL.
 
- 
+ 
 
- 
+ 
 
 
 

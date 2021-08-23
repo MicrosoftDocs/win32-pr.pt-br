@@ -1,5 +1,5 @@
 ---
-title: MPRESOURCE_INFO estrutura (MpClient.h)
+title: MPRESOURCE_INFO (MpClient.h)
 description: Estrutura de informações de recurso.
 ms.assetid: 2D645722-3DE3-4748-B532-3E522464EA1E
 keywords:
@@ -79,9 +79,9 @@ Esse campo é definido quando o recurso é identificado como parte da ameaça. E
 | Valor                                                                                                                                                                                                                                                                        | Significado                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | <span id="MP_RESOURCE_CLASS_UNKNOWN"></span><span id="mp_resource_class_unknown"></span><dl> <dt>**MP \_ RESOURCE \_ CLASS \_ UNKNOWN**</dt> <dt>0x0000</dt> </dl>              |                                                                       |
-| <span id="MP_RESOURCE_CLASS_CONCRETE"></span><span id="mp_resource_class_concrete"></span><dl> <dt>**MP \_ CLASSE \_ DE \_ RECURSO CONCRETE**</dt> <dt>0X0001</dt> </dl>           | Mutuamente exclusivo com **MP \_ RESOURCE CLASS \_ \_ LATENT.**<br/>   |
+| <span id="MP_RESOURCE_CLASS_CONCRETE"></span><span id="mp_resource_class_concrete"></span><dl> <dt>**MP \_ CLASSE \_ DE \_ RECURSO CONCRETE**</dt> <dt>0x0001</dt> </dl>           | Mutuamente exclusivo com **MP \_ RESOURCE CLASS \_ \_ LATENT.**<br/>   |
 | <span id="MP_RESOURCE_CLASS_LATENT"></span><span id="mp_resource_class_latent"></span><dl> <dt>**MP \_ CLASSE \_ DE \_ RECURSO LATENTE**</dt> <dt>0X0002</dt> </dl>                 | Mutuamente exclusivo com **MP \_ RESOURCE CLASS \_ \_ CONCRETE.**<br/> |
-| <span id="MP_RESOURCE_CLASS_SAMPLE_FILE"></span><span id="mp_resource_class_sample_file"></span><dl> <dt>**MP \_ ARQUIVO DE \_ \_ EXEMPLO DA CLASSE \_ DE**</dt> <dt>RECURSO 0x0004</dt> </dl> |                                                                       |
+| <span id="MP_RESOURCE_CLASS_SAMPLE_FILE"></span><span id="mp_resource_class_sample_file"></span><dl> <dt>**MP \_ ARQUIVO \_ DE EXEMPLO DA CLASSE \_ \_ DE**</dt> <dt>RECURSO 0x0004</dt> </dl> |                                                                       |
 | <span id="MP_RESOURCE_CLASS_SHARED"></span><span id="mp_resource_class_shared"></span><dl> <dt>**MP \_ CLASSE \_ DE RECURSO COMPARTILHADO \_ 0X0100**</dt> <dt></dt> </dl>                 |                                                                       |
 
 
@@ -98,7 +98,7 @@ Esse campo é definido quando o recurso é identificado como parte da ameaça. E
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
 | Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

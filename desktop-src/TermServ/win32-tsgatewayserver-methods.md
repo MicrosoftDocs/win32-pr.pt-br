@@ -1,20 +1,20 @@
 ---
-title: Métodos de Win32_TSGatewayServer
-description: A \_ classe Win32 TSGatewayServer expõe os métodos a seguir.
+title: Métodos Win32_TSGatewayServer dados
+description: A classe \_ Win32 TSGatewayServer expõe os métodos a seguir.
 ms.assetid: 925A57CB-A052-4F2F-A35A-AB8C771A2E59
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29706a9351a714c80f4ee8cceea63fb16e79d4bd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 66fbe61311092efdc85e4a29663e8513a6e13dc8bdaf69898206e8c46bfd2b80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105757584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118847442"
 ---
-# <a name="win32_tsgatewayserver-methods"></a>\_Métodos TSGatewayServer do Win32
+# <a name="win32_tsgatewayserver-methods"></a>Métodos Win32 \_ TSGatewayServer
 
-A classe [**Win32 \_ TSGatewayServer**](win32-tsgatewayserver.md) expõe os métodos a seguir.
+A [**classe \_ Win32 TSGatewayServer**](win32-tsgatewayserver.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -22,9 +22,9 @@ A classe [**Win32 \_ TSGatewayServer**](win32-tsgatewayserver.md) expõe os mét
 -   [**Método de exportação**](export-win32-tsgatewayserver.md)
 -   [**Método Import**](import-win32-tsgatewayserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,9 +3,9 @@ title: Método IReferenceClock AdvisePeriodic
 description: Este método não está implementado.
 ms.assetid: b34ef914-992e-4ce2-943b-8bc36687a88a
 keywords:
-- Formato de mídia do windows do método AdvisePeriodic
-- Formato de mídia do windows do método AdvisePeriodic, interface IReferenceClock
-- Formato de mídia da interface IReferenceClock , método AdvisePeriodic
+- Formato de mídia do Windows do método AdvisePeriodic
+- Método AdvisePeriodic Windows Media Format, interface IReferenceClock
+- Formato de mídia do Windows de interface IReferenceClock, método AdvisePeriodic
 topic_type:
 - apiref
 api_name:
@@ -22,11 +22,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118701664"
 ---
-# <a name="ireferenceclockadviseperiodic-method"></a>Método IReferenceClock::AdvisePeriodic
+# <a name="ireferenceclockadviseperiodic-method"></a>Método IReferenceClock:: AdvisePeriodic
 
 Este método não está implementado.
 
-Em outras implementações da interface **IReferenceClock,** como no componente DirectShow® do Microsoft® DirectX®, o método **AdvisePeriodic** é usado para criar uma solicitação de consultoria periódica que sinalizaria o objeto de evento especificado sempre que o intervalo de tempo especificado descala. Esse SDK não implementa a funcionalidade desse método e todas as chamadas feitas a ele resultarão em um valor de retorno de E \_ NOTIMPL.
+em outras implementações da interface **IReferenceClock** , como no componente DirectShow® do Microsoft® DirectX®, o método **AdvisePeriodic** é usado para criar uma solicitação de aviso periódica que sinalizaria o objeto de evento especificado cada vez que o intervalo de tempo especificado decorrer. Esse SDK não implementa a funcionalidade desse método, e todas as chamadas feitas a ele resultarão em um valor de retorno de E \_ NOTIMPL.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ Esse método não tem parâmetros.
 
 <dl> <dt>
 
-[**IReferenceClock Interface**](ireferenceclock.md)
+[**Interface IReferenceClock**](ireferenceclock.md)
 </dt> </dl>
 
  

@@ -11,12 +11,12 @@ api_name:
 - providerType
 api_type:
 - Schema
-ms.openlocfilehash: 1520425cf6ec1bc246f26f2db2d75f79f45a3dae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb62fbb55f83d004f70093fbde974f8ab08e6367742f34dbf166d1c25a63b28c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975055"
 ---
 # <a name="providertype-complex-type"></a>Tipo complexo providerType
 
@@ -39,7 +39,7 @@ O tipo complexo **ProviderType** especifica informações sobre uma rede de celu
 
 
 
-| Elemento                                                          | Type                                                           | Description               |
+| Elemento                                                          | Type                                                           | Descrição               |
 |------------------------------------------------------------------|----------------------------------------------------------------|---------------------------|
 | [**ProviderID**](schema-providerid-providertype-element.md)     | [**providerIdType**](schema-provideridtype-simpletype.md)     | ID do provedor.<br/>   |
 | [**ProviderName**](schema-providername-providertype-element.md) | [**providerNametype**](schema-providernametype-simpletype.md) | Nome do provedor.<br/> |
@@ -52,7 +52,7 @@ O tipo complexo **ProviderType** especifica informações sobre uma rede de celu
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

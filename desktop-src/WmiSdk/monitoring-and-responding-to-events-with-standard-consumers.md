@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5bd1d329cd861fa45c99851707177322d0b9d12f
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: b0b7e7b1d1e79e64fb1eb83f17f3aa2d118a9eb53b23c19cbdfd624e2c501a84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103837990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992776"
 ---
 # <a name="monitoring-and-responding-to-events-with-standard-consumers"></a>Monitorando e respondendo a eventos com consumidores padrão
 
@@ -23,7 +23,7 @@ Você pode usar as [classes de consumidor padrão](standard-consumer-classes.md)
 
 O WMI compila os consumidores padrão em namespaces padrão que dependem do sistema operacional, por exemplo:
 
--   No Windows Server 2003, todos os consumidores padrão são compilados por padrão no \\ namespace "assinatura raiz".
+-   no Windows Server 2003, todos os consumidores padrão são compilados por padrão no \\ namespace "assinatura raiz".
 
 > [!Note]  
 > Para os namespaces e sistemas operacionais padrão específicos para cada classe WMI, consulte as seções comentários e requisitos de cada tópico de classe.
@@ -157,7 +157,7 @@ O procedimento a seguir descreve como monitorar e responder a eventos usando um 
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra o MOF para uma instância de [**NTEventLogEventConsumer**](nteventlogeventconsumer.md). Depois de compilar esse MOF, qualquer tentativa de criar, excluir ou modificar um valor no caminho do registro **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Execute** registra uma entrada no log de eventos do aplicativo, sob a origem "WSH".
+O exemplo a seguir mostra o MOF para uma instância de [**NTEventLogEventConsumer**](nteventlogeventconsumer.md). depois de compilar esse MOF, qualquer tentativa de criar, excluir ou modificar um valor no caminho do registro **HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ execute** registra uma entrada no log de eventos do aplicativo, sob a origem "WSH".
 
 
 ```mof

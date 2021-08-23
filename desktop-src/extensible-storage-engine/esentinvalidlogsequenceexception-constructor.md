@@ -35,8 +35,8 @@ ms.locfileid: "118777604"
 
 Inicializa uma nova instância da classe EsentInvalidLogSequenceException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidLogSequenceException()
 
 [Classe EsentInvalidLogSequenceException](./esentinvalidlogsequenceexception-class.md)
 
-[Membros do EsentInvalidLogSequenceException](./esentinvalidlogsequenceexception-members.md)
+[Membros EsentInvalidLogSequenceException](./esentinvalidlogsequenceexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

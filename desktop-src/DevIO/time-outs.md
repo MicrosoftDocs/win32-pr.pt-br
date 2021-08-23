@@ -4,12 +4,12 @@ ms.assetid: 271d4c68-1f6d-4483-a9a1-703220de761f
 title: Intervalos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db31fafc0f4d98832f1fb7fa5d22b32cba33d73
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4d6226e8a2d13020bd4dc90a416e7ef359fbd919cf54e886c5e691e5fca2cdea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956785"
 ---
 # <a name="time-outs"></a>Intervalos
 
@@ -46,8 +46,8 @@ A tabela a seguir resume o comportamento das operações de leitura com base nos
 |-------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | 0        | Retorna quando o buffer é completamente preenchido. Os tempos limite não são usados.                                                                                                                    |
 | T     | 0        | Retorna quando o buffer é completamente preenchido ou quando T milissegundos decorrem desde o início da operação.                                                                   |
-| 0     | S        | Retorna quando o buffer é completamente preenchido ou quando Y milissegundos decorreu entre o recebimento de dois caracteres. O tempo não começa até que o primeiro caractere seja recebido. |
-| T     | S        | Retorna quando o buffer é completamente preenchido ou quando um dos tipos de tempo limite ocorre.                                                                                                     |
+| 0     | Y        | Retorna quando o buffer é completamente preenchido ou quando Y milissegundos decorreu entre o recebimento de dois caracteres. O tempo não começa até que o primeiro caractere seja recebido. |
+| T     | Y        | Retorna quando o buffer é completamente preenchido ou quando um dos tipos de tempo limite ocorre.                                                                                                     |
 
 
 

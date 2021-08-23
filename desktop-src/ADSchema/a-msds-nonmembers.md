@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Non-Members
-description: Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, mas com regras de definição de scoping aplicadas.
+title: atributo ms-DS-non-members
+description: Esse atributo tem a mesma finalidade que o atributo de não-segurança-membro, mas com regras de escopo aplicadas.
 ms.assetid: 11d3d030-3643-4ed2-a52e-a57f32e9597f
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DS-Non-Members
-- Atributo MsDS-NonMembers Esquema do AD
+- Esquema de AD do atributo ms-DS-non-members
+- atributo msDS-não membros do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118683720"
 ---
-# <a name="ms-ds-non-members-attribute"></a>Atributo ms-DS-Non-Members
+# <a name="ms-ds-non-members-attribute"></a>atributo ms-DS-non-members
 
-Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, mas com regras de definição de scoping aplicadas.
+Esse atributo tem a mesma finalidade que o atributo de não-segurança-membro, mas com regras de escopo aplicadas.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Non-Members                       |
-| Ldap-Display-Name | msDS-NonMembers                         |
+| CN                | ms-DS-não-membros                       |
+| LDAP-Display-Name | msDS-não membros                         |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | Administrador do AzRoles                           |
 | Frequência de atualização  | Na inicialização e na alteração da política.    |
 | Attribute-Id      | 1.2.840.113556.1.4.1793                 |
-| System-Id-Guid    | cafcb1de-f23c-46b5-adf7-1e64957bd5db    |
-| Sintaxe            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-ID-GUID    | cafcb1de-f23c-46b5-adf7-1e64957bd5db    |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -57,10 +57,10 @@ Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, m
 | ID do link                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| Tem valor único       | Falso                               |
+| É de valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No Catálogo Global      | Falso                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                        |
+| No catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -78,10 +78,10 @@ Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, m
 | ID do link                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| Tem valor único       | Falso                               |
+| É de valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No Catálogo Global      | Falso                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                        |
+| No catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -99,10 +99,10 @@ Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, m
 | ID do link                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| Tem valor único       | Falso                               |
+| É de valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No Catálogo Global      | Falso                               |
-| Descritor de segurança NT | O:BAG:BAD:S:                        |
+| No catálogo global      | Falso                               |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -120,10 +120,10 @@ Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, m
 | ID do link                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | Falso                               |
+| Tem valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |
@@ -141,10 +141,10 @@ Esse atributo tem a mesma finalidade que o atributo Não Membro de Segurança, m
 | ID do link                | 2014                                |
 | MAPI-Id                | \-                                  |
 | System-Only            | Falso                               |
-| É de valor único       | Falso                               |
+| Tem valor único       | Falso                               |
 | É indexado             | Falso                               |
-| No catálogo global      | Falso                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                        |
+| No Catálogo Global      | Falso                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                        |
 | Range-Lower            | \-                                  |
 | Range-Upper            | \-                                  |
 | Search-Flags           | 0x00000000                          |

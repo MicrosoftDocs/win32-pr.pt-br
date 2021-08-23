@@ -26,7 +26,7 @@ ms.locfileid: "118901046"
 
 A propriedade **OID** recupera a ID de objeto do qualificador. Essa é a propriedade padrão.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB

@@ -1,5 +1,5 @@
 ---
-description: Para a criptografia de unidade ou para criar um software de segurança de criptografia, você pode usar o software de criptografia do Windows, Criptografia de Unidade de Disco BitLocker, uma API de criptografia que pode ser usada usando a \_ classe de provedor WMI EncryptableVolume do Win32.
+description: para a criptografia de unidade ou para criar um software de segurança de criptografia, você pode usar o software de criptografia Windows, Criptografia de Unidade de Disco BitLocker, uma API de criptografia que pode ser usada usando a \_ classe de provedor WMI do Win32 EncryptableVolume.
 ms.assetid: 464fa664-4330-43fa-a5e0-144d1e73cf58
 title: Classe Win32_EncryptableVolume
 ms.topic: reference
@@ -17,12 +17,12 @@ api_type:
 - Schema
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: b202a536f3c20126c05f072c029fe316f90ce4fe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3beb3498cf9e3d2873ea7dcfe3a108618eeddb513bc8207d1e819cce2fe976d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118890999"
 ---
 # <a name="win32_encryptablevolume-class"></a>\_Classe Win32 EncryptableVolume
 
@@ -108,30 +108,30 @@ A classe **Win32 \_ EncryptableVolume** tem esses métodos.
 | [**GetProtectionStatus**](getprotectionstatus-win32-encryptablevolume.md)                                               | Indica se o volume e sua chave de criptografia (se houver) estão protegidos.<br/>                                                                                                                                                                                                  |
 | [**Obter versão**](getversion-win32-encryptablevolume.md)                                                                 | Indica a versão de metadados FVE do volume.<br/>                                                                                                                                                                                                                          |
 | [**IsAutoUnlockEnabled**](isautounlockenabled-win32-encryptablevolume.md)                                               | Indica se o volume é desbloqueado automaticamente quando montado.<br/>                                                                                                                                                                                                       |
-| [**IsAutoUnlockKeyStored**](isautounlockkeystored-win32-encryptablevolume.md)                                           | Indica se existe no volume do sistema operacional em execução no momento todas as chaves externas e as informações relacionadas que podem ser usadas para desbloquear automaticamente os volumes de dados.<br/>                                                                                           |
+| [**IsAutoUnlockKeyStored**](isautounlockkeystored-win32-encryptablevolume.md)                                           | Indica se existe no volume do sistema operacional em execução no momento quaisquer chaves externas e informações relacionadas que podem ser usadas para desbloquear automaticamente os volumes de dados.<br/>                                                                                           |
 | [**IsKeyProtectorAvailable**](iskeyprotectoravailable-win32-encryptablevolume.md)                                       | Indica se os protetores estão disponíveis para o volume.<br/>                                                                                                                                                                                                                 |
-| [**IsNumericalPasswordValid**](isnumericalpasswordvalid-win32-encryptablevolume.md)                                     | Indica se a senha numérica atende aos requisitos especiais de formato.<br/>                                                                                                                                                                                            |
-| [**Bloquear**](lock-win32-encryptablevolume.md)                                                                             | Desmonta o volume e remove a chave de criptografia do volume da memória do sistema.<br/>                                                                                                                                                                                           |
-| [**PauseConversion**](pauseconversion-win32-encryptablevolume.md)                                                       | Pausa a criptografia ou descriptografia de um volume.<br/>                                                                                                                                                                                                                           |
+| [**IsNumericalPasswordValid**](isnumericalpasswordvalid-win32-encryptablevolume.md)                                     | Indica se a senha numérica atende aos requisitos de formato especial.<br/>                                                                                                                                                                                            |
+| [**Bloqueio**](lock-win32-encryptablevolume.md)                                                                             | Desmonta o volume e remove a chave de criptografia do volume da memória do sistema.<br/>                                                                                                                                                                                           |
+| [**PauseConversion**](pauseconversion-win32-encryptablevolume.md)                                                       | Pausa a criptografia ou a descriptografia de um volume.<br/>                                                                                                                                                                                                                           |
 | [**PrepareVolume**](preparevolume-win32-encryptablevolume.md)                                                           | Cria um volume do BitLocker com o tipo de sistema de arquivos especificado do volume de descoberta.<br/>                                                                                                                                                                                    |
-| [**ProtectKeyWithCertificateFile**](protectkeywithcertificatefile-win32-encryptablevolume.md)                           | Valida o OID (identificador de objeto) de uso avançado de chave (EKU) do arquivo de certificado fornecido.<br/>                                                                                                                                                                           |
-| [**ProtectKeyWithCertificateThumbprint**](protectkeywithcertificatethumbprint-win32-encryptablevolume.md)               | Valida o OID (identificador de objeto) de uso avançado de chave (EKU) da impressão digital do certificado fornecido.<br/>                                                                                                                                                                     |
-| [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablevolume.md)                                   | Protege a chave de criptografia do volume com uma chave externa de 256 bits.<br/>                                                                                                                                                                                                           |
-| [**ProtectKeyWithNumericalPassword**](protectkeywithnumericalpassword-win32-encryptablevolume.md)                       | Protege a chave de criptografia do volume com uma senha de 48 dígitos formatada especialmente.<br/>                                                                                                                                                                                          |
-| [**ProtectKeyWithPassphrase**](protectkeywithpassphrase-win32-encryptablevolume.md)                                     | Usa a frase secreta para obter a chave derivada.<br/>                                                                                                                                                                                                                             |
-| [**ProtectKeyWithTPM**](protectkeywithtpm-win32-encryptablevolume.md)                                                   | Protege a chave de criptografia do volume usando o hardware de segurança do Trusted Platform Module (TPM) no computador, se disponível.<br/>                                                                                                                                            |
-| [**ProtectKeyWithTPMAndPIN**](protectkeywithtpmandpin-win32-encryptablevolume.md)                                       | Protege a chave de criptografia do volume usando o hardware de segurança do Trusted Platform Module (TPM) no computador, se disponível, aprimorado por um PIN (número de identificação pessoal) especificado pelo usuário que deve ser fornecido ao computador na inicialização.<br/>                        |
-| [**ProtectKeyWithTPMAndPINAndStartupKey**](protectkeywithtpmandpinandstartupkey-win32-encryptablevolume.md)             | Protege a chave de criptografia do volume usando o hardware de segurança do Trusted Platform Module (TPM) no computador, se disponível, aprimorado por um PIN (número de identificação pessoal) especificado pelo usuário e por uma chave externa que deve ser fornecida ao computador na inicialização.<br/> |
-| [**ProtectKeyWithTPMAndStartupKey**](protectkeywithtpmandstartupkey-win32-encryptablevolume.md)                         | Protege a chave de criptografia do volume usando o hardware de segurança do Trusted Platform Module (TPM) no computador, se disponível, aprimorado por uma chave externa que deve ser fornecida ao computador na inicialização.<br/>                                                              |
-| [**ResumeConversion**](resumeconversion-win32-encryptablevolume.md)                                                     | Retoma a criptografia ou descriptografia de um volume.<br/>                                                                                                                                                                                                                          |
+| [**ProtectKeyWithCertificateFile**](protectkeywithcertificatefile-win32-encryptablevolume.md)                           | Valida o OID (identificador de objeto EKU) do arquivo de certificado fornecido.<br/>                                                                                                                                                                           |
+| [**ProtectKeyWithCertificateThumbprint**](protectkeywithcertificatethumbprint-win32-encryptablevolume.md)               | Valida o OID (Identificador de Objeto de Uso Aprimorado de Chave) (OID) da impressão digital do certificado fornecido.<br/>                                                                                                                                                                     |
+| [**ProtectKeyWithExternalKey**](protectkeywithexternalkey-win32-encryptablevolume.md)                                   | Garante a chave de criptografia do volume com uma chave externa de 256 bits.<br/>                                                                                                                                                                                                           |
+| [**ProtectKeyWithNumericalPassword**](protectkeywithnumericalpassword-win32-encryptablevolume.md)                       | Garante a chave de criptografia do volume com uma senha de 48 dígitos especialmente formatada.<br/>                                                                                                                                                                                          |
+| [**ProtectKeyWithPassphrase**](protectkeywithpassphrase-win32-encryptablevolume.md)                                     | Usa a frase-senha para obter a chave derivada.<br/>                                                                                                                                                                                                                             |
+| [**ProtectKeyWithTPM**](protectkeywithtpm-win32-encryptablevolume.md)                                                   | Proteja a chave de criptografia do volume usando o hardware de segurança Trusted Platform Module (TPM) no computador, se disponível.<br/>                                                                                                                                            |
+| [**ProtectKeyWithTPMAndPIN**](protectkeywithtpmandpin-win32-encryptablevolume.md)                                       | Proteja a chave de criptografia do volume usando o Hardware de Segurança do Trusted Platform Module (TPM) no computador, se disponível, aprimorado por um PIN (número de identificação pessoal) especificado pelo usuário que deve ser fornecido ao computador na inicialização.<br/>                        |
+| [**ProtectKeyWithTPMAndPINAndStartupKey**](protectkeywithtpmandpinandstartupkey-win32-encryptablevolume.md)             | Proteja a chave de criptografia do volume usando o Hardware de Segurança do Trusted Platform Module (TPM) no computador, se disponível, aprimorado por um PIN (número de identificação pessoal) especificado pelo usuário e por uma chave externa que deve ser fornecida ao computador na inicialização.<br/> |
+| [**ProtectKeyWithTPMAndStartupKey**](protectkeywithtpmandstartupkey-win32-encryptablevolume.md)                         | Proteja a chave de criptografia do volume usando o Hardware de Segurança Trusted Platform Module (TPM) no computador, se disponível, aprimorado por uma chave externa que deve ser fornecida ao computador na inicialização.<br/>                                                              |
+| [**ResumeConversion**](resumeconversion-win32-encryptablevolume.md)                                                     | Retoma a criptografia ou a descriptografia de um volume.<br/>                                                                                                                                                                                                                          |
 | [**SaveExternalKeyToFile**](saveexternalkeytofile-win32-encryptablevolume.md)                                           | Grava a chave externa associada ao protetor de chave de volume especificado em um local de arquivo especificado.<br/>                                                                                                                                                                   |
-| [**Setidentificafield**](setidentificationfield-win32-encryptablevolume.md)                                         | Define a cadeia de caracteres do identificador especificado nos metadados do volume.<br/>                                                                                                                                                                                                             |
+| [**SetIdentificationField**](setidentificationfield-win32-encryptablevolume.md)                                         | Define a cadeia de caracteres do identificador especificado nos metadados do volume.<br/>                                                                                                                                                                                                             |
 | [**UnlockWithCertificateFile**](unlockwithcertificatefile-win32-encryptablevolume.md)                                   | Usa o arquivo de certificado fornecido para obter a chave derivada e desbloquear o volume criptografado.<br/>                                                                                                                                                                              |
 | [**UnlockWithCertificateThumbprint**](unlockwithcertificatethumbprint-win32-encryptablevolume.md)                       | Usa a impressão digital do certificado fornecida para obter a chave derivada e desbloquear o volume criptografado.<br/>                                                                                                                                                                        |
 | [**UnlockWithExternalKey**](unlockwithexternalkey-win32-encryptablevolume.md)                                           | Usa uma chave externa fornecida para acessar o conteúdo de um volume de dados.<br/>                                                                                                                                                                                                      |
 | [**UnlockWithNumericalPassword**](unlockwithnumericalpassword-win32-encryptablevolume.md)                               | Usa uma senha numérica fornecida para acessar o conteúdo de um volume de dados.<br/>                                                                                                                                                                                                |
-| [**UnlockWithPassphrase**](unlockwithpassphrase-win32-encryptablevolume.md)                                             | Usa a frase secreta para obter a chave derivada. Depois que a chave derivada é calculada, a chave derivada é usada para desbloquear a chave mestra do volume criptografado.<br/>                                                                                                                   |
-| [**UpgradeVolume**](upgradevolume-win32-encryptablevolume.md)                                                           | Atualiza um volume do formato do Windows Vista para o formato do Windows 7.<br/>                                                                                                                                                                                                   |
+| [**UnlockWithPassphrase**](unlockwithpassphrase-win32-encryptablevolume.md)                                             | Usa a frase-senha para obter a chave derivada. Depois que a chave derivada é calculada, a chave derivada é usada para desbloquear a chave mestra do volume criptografado.<br/>                                                                                                                   |
+| [**UpgradeVolume**](upgradevolume-win32-encryptablevolume.md)                                                           | Atualiza um volume do formato Windows Vista para o formato Windows 7.<br/>                                                                                                                                                                                                   |
 
 
 
@@ -139,11 +139,11 @@ A classe **Win32 \_ EncryptableVolume** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ EncryptableVolume** tem essas propriedades.
+A **classe \_ EncryptableVolume do Win32** tem essas propriedades.
 
 <dl> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -152,10 +152,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Um identificador exclusivo para o volume neste sistema. Use isso para associar um volume a outras classes de provedor de WMI, por exemplo, o **\_ volume Win32**.
+Um identificador exclusivo para o volume neste sistema. Use isso para associar um volume a outras classes de provedor WMI, por exemplo, **\_ Volume Win32**.
 
 </dd> <dt>
 
@@ -168,9 +168,9 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A letra da unidade do volume. Esse identificador pode ser usado para associar um volume com outras classes de provedor WMI, por exemplo, o [**\_ volume Win32**](/previous-versions/windows/desktop/legacy/aa394515(v=vs.85)).
+A letra da unidade do volume. Esse identificador pode ser usado para associar um volume a outras classes de provedor WMI, por exemplo, [**\_ Volume Win32**](/previous-versions/windows/desktop/legacy/aa394515(v=vs.85)).
 
-Para volumes sem letras de unidade, esse valor é **NULL**.
+Para volumes sem letras de unidade, esse valor é **NULL.**
 
 </dd> <dt>
 
@@ -183,30 +183,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um identificador persistente para o volume neste sistema. Esse identificador é exclusivo para **Win32 \_ EncryptableVolume**.
+Um identificador persistente para o volume neste sistema. Esse identificador é exclusivo para **Win32 \_ EncryptableVolume.**
 
-Esse identificador é uma cadeia de caracteres vazia se o volume for um volume NTFS padrão totalmente descriptografado; caso contrário, ele tem um valor exclusivo.
+Esse identificador será uma cadeia de caracteres vazia se o volume for um volume NTFS padrão totalmente descriptografado; caso contrário, ele terá um valor exclusivo.
 
 </dd> <dt>
 
 **ProtectionStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O status do volume, se o BitLocker está ou não protegendo o volume. Esse valor é armazenado quando a classe é instanciada. É possível que o status da proteção mude o estado entre a instanciação e quando você verificar o valor. Para verificar o valor da propriedade **ProtectionStatus** em tempo real, use o método [**GetProtectionStatus**](getprotectionstatus-win32-encryptablevolume.md) .
+O status do volume, independentemente de o BitLocker proteger ou não o volume. Esse valor é armazenado quando a classe é instautada. É possível que o status de proteção altere o estado entre a insta instação e quando você verifica o valor. Para verificar o valor da **propriedade ProtectionStatus** em tempo real, use o [**método GetProtectionStatus.**](getprotectionstatus-win32-encryptablevolume.md)
 
 
 
 | Valor                                                                        | Significado                                                                                                                                                                           |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | PROTEÇÃO DESATIVADA<br/> O volume não é criptografado, parcialmente criptografado ou a chave de criptografia do volume para o volume está disponível no limpar no disco rígido. <br/> |
-| <dl> <dt>1</dt> </dl> | PROTEÇÃO ATIVADA<br/> O volume é totalmente criptografado e a chave de criptografia para o volume não está disponível em claro no disco rígido. <br/>                          |
-| <dl> <dt>2</dt> </dl> | PROTEÇÃO DESCONHECIDA<br/> Não é possível determinar o status de proteção do volume. Uma causa potencial é que o volume está em um estado bloqueado.<br/>                          |
+| <dl> <dt>0</dt> </dl> | PROTEÇÃO DESLIGADA<br/> O volume não está criptografado, parcialmente criptografado ou a chave de criptografia do volume para o volume está disponível de forma clara no disco rígido. <br/> |
+| <dl> <dt>1</dt> </dl> | PROTEÇÃO EM<br/> O volume é totalmente criptografado e a chave de criptografia para o volume não está disponível de forma clara no disco rígido. <br/>                          |
+| <dl> <dt>2</dt> </dl> | PROTEÇÃO DESCONHECIDA<br/> O status de proteção de volume não pode ser determinado. Uma causa potencial é que o volume está em um estado bloqueado.<br/>                          |
 
 
 
@@ -216,22 +216,22 @@ O status do volume, se o BitLocker está ou não protegendo o volume. Esse valor
 
 ## <a name="security-considerations"></a>Considerações de segurança
 
-A classe de provedor WMI **\_ EncryptableVolume do Win32** depende da segurança do namespace do WMI e do subsistema criptografia de unidade de disco BitLocker para controle de acesso.
+A classe de provedor WMI **Win32 \_ EncryptableVolume** depende da segurança do namespace WMI e do subsistema Criptografia de Unidade de Disco BitLocker para controle de acesso.
 
-Para usar os **métodos \_ EncryptableVolume do Win32** , as seguintes condições devem ser atendidas:
+Para usar os **métodos Win32 \_ EncryptableVolume,** as seguintes condições devem ser atendidas:
 
 -   Você deve ter privilégios de administrador.
 -   A criptografia de conexão deve ser capaz de se conectar ao provedor.
 
-    Para obter mais informações sobre como criar uma conexão criptografada, consulte [exigindo uma conexão criptografada para um namespace](../wmisdk/requiring-an-encrypted-connection-to-a-namespace.md).
+    Para obter mais informações sobre como criar uma conexão criptografada, consulte [Exigindo uma conexão criptografada com um namespace](../wmisdk/requiring-an-encrypted-connection-to-a-namespace.md).
 
-Para habilitar conexões remotas, o tráfego WMI remoto deve ser permitido. Para obter mais informações sobre como habilitar o tráfego WMI, consulte [conectando-se ao WMI remotamente a partir do vista](../wmisdk/connecting-to-wmi-remotely-starting-with-vista.md).
+Para habilitar conexões remotas, o tráfego WMI remoto deve ser permitido. Para obter mais informações sobre como habilenciar o tráfego WMI, consulte [Conectando-se ao WMI remotamente começando com o Vista](../wmisdk/connecting-to-wmi-remotely-starting-with-vista.md).
 
-A configuração de segurança de namespace padrão inclui uma entrada para permitir a edição por padrão. Para obter mais informações sobre a auditoria de namespace do WMI, consulte [acesso aos namespaces do WMI](../wmisdk/access-to-wmi-namespaces.md).
+A configuração de segurança de namespace padrão inclui uma entrada para permitir a edição por padrão. Para obter mais informações sobre a auditoria de namespace WMI, consulte [Acesso a namespaces WMI](../wmisdk/access-to-wmi-namespaces.md).
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -239,10 +239,10 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
-| Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows aplicativos da área de trabalho do Vista Ultimate \[\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                    |
+| Namespace<br/>                | Segurança \\ RAIZ CIMV2 \\ \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c9a6b8d3715c1692e93579d3c94cdfa44f4192e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6da17b1edd25952668e838bd06ed4ce30bd667e24161d84c5d953c4433f75b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961335"
 ---
 # <a name="gpc-wql-filter-attribute"></a>Atributo GPC-WQL-Filter
 
@@ -57,7 +57,7 @@ Usado para armazenar uma cadeia de caracteres que contém um GUID para o filtro 
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -78,7 +78,7 @@ Usado para armazenar uma cadeia de caracteres que contém um GUID para o filtro 
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -99,7 +99,7 @@ Usado para armazenar uma cadeia de caracteres que contém um GUID para o filtro 
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -120,15 +120,15 @@ Usado para armazenar uma cadeia de caracteres que contém um GUID para o filtro 
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Usado para armazenar uma cadeia de caracteres que contém um GUID para o filtro 
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

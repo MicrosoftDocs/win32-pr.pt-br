@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49ec2a825725e01d876b9e8658f215de6595f32f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b944dcb5d03e579817b2789e2bbefd5a3da8e20dd86c5a85ca7394201f6d36b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855352"
 ---
 # <a name="imsrdpclientadvancedsettingssmartsizing-property"></a>Propriedade IMsRdpClientAdvancedSettings:: SmartSizing
 

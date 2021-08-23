@@ -3,11 +3,11 @@
   items:
     - name: Definindo o reconhecimento de DPI padrão para um processo
       href: setting-the-default-dpi-awareness-for-a-process.md
-    - name: Mixed-Mode o dimensionamento de DPI e APIs com reconhecimento de DPI
+    - name: Mixed-Mode dimensionamento de DPI e APIs com conhecimento de DPI
       href: high-dpi-improvements-for-desktop-applications.md
     - name: Desenvolver um aplicativo WPF com reconhecimento de DPI por monitor
       href: declaring-managed-apps-dpi-aware.md
-    - name: Referência de DPI alto
+    - name: Referência de DPI alta
       href: high-dpi-reference.md
       items:
         - name: AdjustWindowRectExForDpi

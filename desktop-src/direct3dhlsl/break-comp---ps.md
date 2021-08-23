@@ -20,7 +20,7 @@ ms.locfileid: "118794449"
 
 Interromper o loop atual no [ENDLOOP-PS](endloop---ps.md) ou [endrep-PS](endrep---ps.md)mais próximo, com base em uma comparação por componente.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 
@@ -35,7 +35,7 @@ Em que:
 
 -   \_comp é uma comparação escalar (ou única) entre os dois registros de origem. Pode ser um dos seguintes: 
 
-    | Sintaxe | Comparação            |
+    | Syntax | Comparação            |
     |--------|-----------------------|
     | \_gt   | Maior que          |
     | \_lt   | Menor que             |

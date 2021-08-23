@@ -8,12 +8,12 @@ keywords:
 - Automação da interface do usuário, lista de unidades de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91ff4257c70b34cea01a149b30dff2bf2fbe691a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cc5c40604f3c524c1e9f3bcdb36458e099563eb7279fa61133dcfa7ea3fde90b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118824159"
 ---
 # <a name="ui-automation-text-units"></a>Unidades de texto de automação da interface do usuário
 
@@ -128,7 +128,7 @@ A especificação de padrão de controle [TextRange](uiauto-implementingtextandt
 
 [TextPatternRangeEndpoint](/windows/desktop/api/uiautomationcore/ne-uiautomationcore-textpatternrangeendpoint)
 
-[ITextRangeProvider:: GetChildren](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextrangeprovider-getchildren)
+[ITextRangeProvider::GetChildren](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextrangeprovider-getchildren)
 
 
 
@@ -136,6 +136,6 @@ A especificação de padrão de controle [TextRange](uiauto-implementingtextandt
 
 ### <a name="conceptual"></a>Conceitual
 
-[Suporte à automação da interface do usuário para conteúdo textual](uiauto-ui-automation-textpattern-overview.md)
+[Automação da Interface do Usuário suporte para conteúdo textual](uiauto-ui-automation-textpattern-overview.md)
 
 [Trabalhando com controles baseados em texto](uiauto-workingwithtextbasedcontrols.md)

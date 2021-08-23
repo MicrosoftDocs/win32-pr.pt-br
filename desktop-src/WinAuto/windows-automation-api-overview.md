@@ -1,19 +1,19 @@
 ---
-title: Visão geral da API de automação do Windows
-description: Esta seção fornece uma visão geral de alto nível da API de automação do Microsoft Windows 3,0, que inclui o Microsoft Acessibilidade Ativa herdado e a implementação do Windows da especificação de automação da interface do usuário da Microsoft.
+title: Windows Visão geral da API de automação
+description: esta seção fornece uma visão geral de alto nível do microsoft Windows automation API 3,0, que inclui o microsoft Acessibilidade Ativa herdado e a implementação Windows da especificação de automação da interface do usuário da microsoft.
 ms.assetid: 11c99444-eb5a-4656-ae9d-e4d4bdbcabfc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67282c8b0287fa02f89e0ad1b46045a8bbdaa865
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 45f39c1a9169d7d7a9358eaf0b947c885159adc0103eb8f6a76b39b029649cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823393"
 ---
-# <a name="windows-automation-api-overview"></a>Visão geral da API de automação do Windows
+# <a name="windows-automation-api-overview"></a>Windows Visão geral da API de automação
 
-Esta seção fornece uma visão geral de alto nível da API de automação do Microsoft Windows 3,0, que inclui o Microsoft Acessibilidade Ativa herdado e a implementação do Windows da especificação de automação da interface do usuário da Microsoft. A visão geral destaca as semelhanças e diferenças entre o Microsoft Acessibilidade Ativa e a automação da interface do usuário, descreve os componentes e recursos que permitem que as duas tecnologias trabalhem em conjunto e fornece diretrizes para escolher qual tecnologia implementar.
+esta seção fornece uma visão geral de alto nível do microsoft Windows automation API 3,0, que inclui o microsoft Acessibilidade Ativa herdado e a implementação Windows da especificação de automação da interface do usuário da microsoft. A visão geral destaca as semelhanças e diferenças entre o Microsoft Acessibilidade Ativa e a automação da interface do usuário, descreve os componentes e recursos que permitem que as duas tecnologias trabalhem em conjunto e fornece diretrizes para escolher qual tecnologia implementar.
 
 Esta seção inclui os tópicos a seguir:
 
@@ -30,9 +30,9 @@ Esta seção inclui os tópicos a seguir:
 [Especificação de automação da interface do usuário](./ui-automation-specification.md)
 </dt> <dt>
 
-[Promessa da comunidade de automação da interface do usuário](./uiauto-specandcommunitypromise.md)
+[automação da interface do usuário Community promessa](./uiauto-specandcommunitypromise.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

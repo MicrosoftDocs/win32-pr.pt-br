@@ -4,12 +4,12 @@ description: Os contadores de desempenho medem quantidades de informações ou d
 ms.assetid: 1b264144-7600-402e-86f8-674a2d02f9f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de90607cbda0542ee385b83f44bec878927d509f
-ms.sourcegitcommit: fc3f2a28a55e590ac38846048f10b64ba527a98d
+ms.openlocfilehash: f92afacf959c72735adea25c3ace60c8ae032da66394dda6731fdab913407e21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "105780544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950715"
 ---
 # <a name="scenario-3-performance-counters"></a>Cenário 3: contadores de desempenho
 
@@ -17,7 +17,7 @@ Os contadores de desempenho medem quantidades de informações ou dados, de acor
 
 ## <a name="performance-counters-for-httpsys"></a>Contadores de desempenho para HTTP.sys
 
-A partir do Windows Vista e do Windows Server 2008, HTTP.sys tem os seguintes contadores de métrica de desempenho para ajudá-lo com monitoramento, diagnóstico e planejamento de capacidade para servidores Web: o componente de API do servidor HTTP tem os seguintes contadores de desempenho para ajudá-lo com monitoramento, diagnóstico e planejamento de capacidade para servidores Web:
+a partir do Windows Vista e do Windows Server 2008, o HTTP.sys tem os seguintes contadores de métrica de desempenho para ajudá-lo com monitoramento, diagnóstico e planejamento de capacidade para servidores web: o componente de API do servidor HTTP tem os seguintes contadores de desempenho para ajudá-lo com monitoramento, diagnóstico e planejamento de capacidade para servidores web:
 
 - Contadores de serviço HTTP:
   - Número de URIs no cache, adicionadas desde a inicialização, excluídas desde a inicialização e o número de liberações de cache

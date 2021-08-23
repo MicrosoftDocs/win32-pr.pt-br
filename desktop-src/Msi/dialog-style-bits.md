@@ -1,21 +1,21 @@
 ---
-description: O estilo de uma caixa de diálogo é especificado na coluna atributos da tabela de diálogo por uma palavra de 32 bits composta de sinalizadores de bits de estilo.
+description: O estilo de uma caixa de diálogo é especificado na coluna Atributos da tabela Dialog por uma palavra de 32 bits composta por sinalizadores de bits de estilo.
 ms.assetid: aad719e8-86b3-4b2b-b417-db55013f8d3a
 title: Bits de estilo de caixa de diálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f22392ef9a88c547bd8fde5bc7df2f4839d66ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43742c61c8dfe0827d0d51c7f9c8a2de60116500b6fdca3e404a08e120ac4348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947438"
 ---
 # <a name="dialog-style-bits"></a>Bits de estilo de caixa de diálogo
 
-O estilo de uma caixa de diálogo é especificado na coluna atributos da [tabela de diálogo](dialog-table.md) por uma palavra de 32 bits composta de sinalizadores de bits de estilo.
+O estilo de uma caixa de diálogo é especificado na coluna Atributos da tabela [Dialog](dialog-table.md) por uma palavra de 32 bits composta por sinalizadores de bits de estilo.
 
-A lista a seguir fornece links para descrições de bits de estilo de caixa de diálogo reservada.
+A lista a seguir fornece links para descrições de bits de estilo de caixa de diálogo reservados.
 
 
 
@@ -31,7 +31,7 @@ A lista a seguir fornece links para descrições de bits de estilo de caixa de d
 | [RTLRO](rtlro-dialog-style-bit.md)                       | 128     | 0x00000080  | **msidbDialogAttributesRTLRO**                                                                                                                 |
 | [RightAligned](rightaligned-dialog-style-bit.md)         | 256     | 0x00000100  | **msidbDialogAttributesRightAligned**                                                                                                          |
 | [LeftScroll](leftscroll-dialog-style-bit.md)             | 512     | 0x00000200  | **msidbDialogAttributesLeftScroll**                                                                                                            |
-| [BiDi](bidi-dialog-style-bit.md)                         | 896     | 0x00000380  | **msidbDialogAttributesBiDi**  =  **msidbDialogAttributesRTLRO** \| **msidbDialogAttributesRightAligned** \| **msidbDialogAttributesLeftScroll** |
+| [Bidi](bidi-dialog-style-bit.md)                         | 896     | 0x00000380  | **msidbDialogAttributesBiDi**  =  **msidbDialogAttributesRTLRO** \| **msidbDialogAttributesRightAligned** \| **msidbDialogAttributesLeftScroll** |
 | [Erro](error-dialog-style-bit.md)                       | 65536   | 0x00010000  | **msidbDialogAttributesError**                                                                                                                 |
 
 

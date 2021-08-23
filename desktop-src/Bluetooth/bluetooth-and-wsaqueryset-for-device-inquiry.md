@@ -1,22 +1,22 @@
 ---
-title: Bluetooth e WSAQUERYSET para consulta de dispositivo
-description: Usado para facilitar a descoberta de dispositivos e serviços no namespace do Bluetooth, NS \_ BTH.
+title: Bluetooth e WSAQUERYSET para a consulta do dispositivo
+description: usado para facilitar a descoberta de dispositivos e serviços no namespace Bluetooth, NS \_ BTH.
 ms.assetid: 0c0d26f7-b6c3-42a9-8c01-118278c381cc
 keywords:
-- Bluetooth e WSAQUERYSET para consulta de dispositivo Bluetooth
+- Bluetooth e WSAQUERYSET para Bluetooth de consulta do dispositivo
 - WSAQUERYSET Bluetooth, para consulta do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7de7adf8c15907fe539ddac5133df08d68ee7c4f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 75a9250670fda52f2ecdc27ffee949b12049b8ec2860b7ee2df23631c4469076
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959275"
 ---
-# <a name="bluetooth-and-wsaqueryset-for-device-inquiry"></a>Bluetooth e WSAQUERYSET para consulta de dispositivo
+# <a name="bluetooth-and-wsaqueryset-for-device-inquiry"></a>Bluetooth e WSAQUERYSET para a consulta do dispositivo
 
-No Bluetooth, a estrutura [**WSAQUERYSET**](/windows/desktop/api/winsock2/ns-winsock2-wsaquerysetw) é usada para facilitar a descoberta de dispositivos e serviços no namespace do Bluetooth, NS \_ BTH.
+no Bluetooth, a estrutura [**WSAQUERYSET**](/windows/desktop/api/winsock2/ns-winsock2-wsaquerysetw) , é usada para facilitar a descoberta de dispositivos e serviços no namespace Bluetooth, NS \_ BTH.
 
 As funções [**WSALookupServiceBegin**](/windows/desktop/api/winsock2/nf-winsock2-wsalookupservicebegina) e [**WSALookupServiceNext**](/windows/desktop/api/winsock2/nf-winsock2-wsalookupservicenexta) usam a estrutura [**WSAQUERYSET**](/windows/desktop/api/winsock2/ns-winsock2-wsaquerysetw) para obter informações sobre o processo de consulta do dispositivo. A tabela a seguir lista e descreve os valores de membro na estrutura **WSAQUERYSET** .
 
@@ -24,8 +24,8 @@ As funções [**WSALookupServiceBegin**](/windows/desktop/api/winsock2/nf-winsoc
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **dwSize**                  | Deve ser definido como **sizeof**([**WSAQUERYSET**](/windows/desktop/api/winsock2/ns-winsock2-wsaquerysetw)).                                                                                                                                       | **sizeof**([**WSAQUERYSET**](/windows/desktop/api/winsock2/ns-winsock2-wsaquerysetw)) retornado pelo sistema.                                                                                                                                                                                                                                                                                                                                                        |
 | **dwOutputFlags**           | Não usado.                                                                                                                                                                                                  | Pode ter um ou mais destes sinalizadores definidos: **BTHNS \_ resultado \_ dispositivo \_ conectado** especifica que o dispositivo está conectado.<br/> **BTHNS \_ RESULTADO o \_ dispositivo \_ lembrado** especifica que o dispositivo é um dispositivo lembrado. Nem todos os dispositivos lembrados são autenticados.<br/> **BTHNS \_ O \_ dispositivo de resultado \_ autenticado** especifica que o dispositivo é autenticado, emparelhado ou acoplado. Todos os dispositivos autenticados são lembrados.<br/> |
-| **lpszServiceInstanceName** | Não usado.                                                                                                                                                                                                  | Nome de exibição do dispositivo, retornado originalmente de uma operação de solicitação de nome remoto de Bluetooth e possivelmente atualizado pelo usuário local. Retornado se **o \_ \_ nome de retorno de Lup** for especificado.                                                                                                                                                                                                                                         |
-| **lpServiceClassId**        | Não usado.                                                                                                                                                                                                  | O campo de dispositivo (COD) Bluetooth de 32 bits mapeado para o membro **dados1** do GUID. Retornado se **o \_ \_ tipo de retorno Lup** for especificado.                                                                                                                                                                                                                                                                                    |
+| **lpszServiceInstanceName** | Não usado.                                                                                                                                                                                                  | nome de exibição do dispositivo, retornado originalmente de uma operação de solicitação de nome Bluetooth remoto e possivelmente atualizado pelo usuário local. Retornado se **o \_ \_ nome de retorno de Lup** for especificado.                                                                                                                                                                                                                                         |
+| **lpServiceClassId**        | Não usado.                                                                                                                                                                                                  | o campo de dispositivo (COD) de Bluetooth de 32 bits mapeado para o membro **dados1** do GUID. Retornado se **o \_ \_ tipo de retorno Lup** for especificado.                                                                                                                                                                                                                                                                                    |
 | **lpVersion**               | Não usado.                                                                                                                                                                                                  | Não usado.                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **lpszComment**             | Não usado.                                                                                                                                                                                                  | Não usado.                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **dwNameSpace**             | Deve ser NS \_ BTH.                                                                                                                                                                                           | Retorna **ns \_ BTH**.                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -46,7 +46,7 @@ As funções [**WSALookupServiceBegin**](/windows/desktop/api/winsock2/nf-winsoc
 
 <dl> <dt>
 
-[Bluetooth e WSAQUERYSET para o serviço set](bluetooth-and-wsaqueryset-for-set-service.md)
+[Bluetooth e WSAQUERYSET para o serviço de conjunto](bluetooth-and-wsaqueryset-for-set-service.md)
 </dt> <dt>
 
 [Bluetooth e WSAQUERYSET para consulta de serviço](bluetooth-and-wsaqueryset-for-service-inquiry.md)

@@ -4,24 +4,24 @@ ms.assetid: 17ab5ecc-0173-4c5c-9d65-40e506ab7e07
 title: Métodos de codificação (Microsoft Media Foundation)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4366f11ea9d120d638c5600f84fc16f6c5320f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fa11e9545aa38358e5e1c0fdb4dfc4b7a2c3ee13f24b0fa38fe76b9e8bddcc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974525"
 ---
 # <a name="encoding-methods-microsoft-media-foundation"></a>Métodos de codificação (Microsoft Media Foundation)
 
-A maioria dos codecs de vídeo e áudio do Windows Media dá suporte a vários métodos de codificação. Saber como e quando usar cada método pode ajudá-lo a criar conteúdo compactado de alta qualidade.
+a maioria dos codecs de áudio e vídeo de mídia Windows dá suporte a vários métodos de codificação. Saber como e quando usar cada método pode ajudá-lo a criar conteúdo compactado de alta qualidade.
 
 Todos os métodos de codificação se concentram no buffer usado pelo decodificador para gerenciar dados de entrada compactados. Esse buffer é definido pela taxa de bits do fluxo, em bits por segundo, e pela janela de buffer, em milissegundos. Durante a codificação, o codec obedece às restrições do buffer. Para obter mais informações sobre o buffer, consulte [o modelo de buffer de buckets de vazamento](the-leaky-bucket-buffer-model.md).
 
 ## <a name="constant-bit-rate-encoding"></a>Codificação de taxa de bits constante
 
-A taxa de bits para qualquer fluxo codificado por um dos codecs de áudio e vídeo do Windows Media não é constante. A codificação constante de taxa de bits (CBR) é, portanto, um termo enganoso. O recurso de distinção de um fluxo codificado em CBR é uma pequena janela de buffer, que limita a variação de tamanhos de amostra. A codificação de CBR é usada principalmente para conteúdo que é transmitido em uma rede para seu destino. Nesse cenário, é importante ser capaz de contar com o uso consistente da largura de banda.
+a taxa de bits para qualquer fluxo codificado por um dos codecs de áudio e vídeo de mídia Windows não é constante. A codificação constante de taxa de bits (CBR) é, portanto, um termo enganoso. O recurso de distinção de um fluxo codificado em CBR é uma pequena janela de buffer, que limita a variação de tamanhos de amostra. A codificação de CBR é usada principalmente para conteúdo que é transmitido em uma rede para seu destino. Nesse cenário, é importante ser capaz de contar com o uso consistente da largura de banda.
 
-De um ponto de vista de configuração, a codificação de CBR difere dos outros modos que antes de começar a codificar, você define a taxa média de bits do conteúdo de saída e a janela de buffer que se aplica a essa taxa de bits. Em outros modos, um ou ambos os valores são desconhecidos quando você configura o codificador e é calculado pelo codec enquanto ele codifica. A CBR é o modo de codificação padrão usado pelo Windows Media Encoder DMOs.
+De um ponto de vista de configuração, a codificação de CBR difere dos outros modos que antes de começar a codificar, você define a taxa média de bits do conteúdo de saída e a janela de buffer que se aplica a essa taxa de bits. Em outros modos, um ou ambos os valores são desconhecidos quando você configura o codificador e é calculado pelo codec enquanto ele codifica. a CBR é o modo de codificação padrão usado pelo Windows Media Encoder DMOs.
 
 ## <a name="two-pass-constant-bit-rate-encoding"></a>Two-Pass a codificação da taxa de bits constante
 
@@ -29,7 +29,7 @@ A CBR padrão usa apenas uma única passagem de codificação. Você fornece seu
 
 A codificação de CBR de duas passagens tem muitas vantagens. Ele geralmente gera ganhos de qualidade significativos em relação à codificação de CBR padrão sem alterar nenhum dos requisitos de buffer. Isso torna esse modo de codificação ideal para o conteúdo que é transmitido por uma rede. A única situação em que a CBR em duas passagens não é viável é quando você codifica o conteúdo de uma fonte dinâmica e não pode usar uma segunda passagem.
 
-O tipo de mídia de saída de um fluxo de CBR de duas passagens é idêntico ao de um fluxo de CBR padrão; Você ainda especifica a taxa de bits e a janela de buffer a ser usada. Ao configurar o DMO, você deve defini-lo para executar duas passagens. E você deve notificar o DMO quando terminar de enviar amostras para a primeira passagem.
+O tipo de mídia de saída de um fluxo de CBR de duas passagens é idêntico ao de um fluxo de CBR padrão; Você ainda especifica a taxa de bits e a janela de buffer a ser usada. ao configurar o DMO, você deve defini-lo para executar duas passagens. e você deve notificar a DMO quando terminar de enviar amostras para a primeira passagem.
 
 ## <a name="quality-based-variable-bit-rate-encoding"></a>Codificação de taxa de bits de variável Quality-Based
 

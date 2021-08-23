@@ -3,7 +3,7 @@ title: WM/WMCollectionGroupID
 description: O atributo WM/WMCollectionGroupID contém um GUID que identifica o grupo de coleta.
 ms.assetid: 5cfa1747-ce3b-4e8d-bcce-84fb719123e8
 keywords:
-- Formato de mídia do Windows do WM/WMCollectionGroupID
+- Formato de mídia do Windows WM/WMCollectionGroupID
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118698230"
 ---
 # <a name="wmwmcollectiongroupid"></a>WM/WMCollectionGroupID
 
-O atributo **WM/WMCollectionGroupID** contém um GUID que identifica o grupo de coleta.
+O **atributo WM/WMCollectionGroupID** contém um GUID que identifica o grupo de coleta.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMWMCollectionGroupID
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**\_GUID do tipo WMT \_**
+**GUID DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-o conteúdo é identificado por Windows tecnologias de mídia usando três valores: **wm/WMCollectionGroupID**, **wm/WMCollectionID** e **wm/WMContentID**. Esses valores identificam o conteúdo, a coleção à qual ele pertence e o grupo ao qual a coleção pertence. todos esses três valores são populados por Windows Media Player quando os metadados para o conteúdo são recuperados. Você pode fazer com que seu aplicativo registre esses valores e usá-los para identificar conteúdo, mas você não deve alterá-los se estiverem presentes.
+O conteúdo é identificado por tecnologias Windows Media usando três valores: **WM/WMCollectionGroupID,** **WM/WMCollectionID** e **WM/WMContentID.** Esses valores identificam o conteúdo, a coleção à qual ele pertence e o grupo ao qual a coleção pertence. Todos esses três valores são preenchidos por Windows Media Player quando os metadados do conteúdo são recuperados. Você pode fazer com que seu aplicativo grave esses valores e use-os para identificar o conteúdo, mas não deve alterá-los se eles estão presentes.
 
 ## <a name="see-also"></a>Confira também
 

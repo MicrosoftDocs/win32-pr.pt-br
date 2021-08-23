@@ -1,20 +1,20 @@
 ---
-description: Assim como outros provedores de instância, você registra um provedor de alto desempenho com o Microsoft Windows&\# 160; Instrumentação de gerenciamento (WMI) criando uma instância das \_ \_ classes Win32Provider e \_ \_ InstanceProviderRegistration.
+description: assim como outros provedores de instância, você registra um provedor de alto desempenho com o Microsoft Windows&\# 160; Instrumentação de gerenciamento (WMI) criando uma instância das \_ \_ classes Win32Provider e \_ \_ InstanceProviderRegistration.
 ms.assetid: 6ff3f8c6-71ca-4589-bca7-b864e24a473d
 ms.tgt_platform: multiple
 title: Registrando um provedor de High-Performance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e38653be78747bbfe68ce01d610e9b65b4c981d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2ee52db95290810a046d23781dbccf666cd63a19b01bf9414b2e224b8137f8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992566"
 ---
 # <a name="registering-a-high-performance-provider"></a>Registrando um provedor de High-Performance
 
-Assim como outros provedores de instância, você registra um provedor de alto desempenho com o Microsoft Instrumentação de gerenciamento do Windows (WMI) criando uma instância das classes [**\_ \_ Win32Provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) . A instância do **\_ \_ Win32Provider** define a implementação física do provedor e a instância **\_ \_ InstanceProviderRegistration** define o conjunto de recursos do provedor. Para obter mais informações, consulte [registrando um provedor](registering-a-provider.md).
+assim como outros provedores de instância, você registra um provedor de alto desempenho com o Microsoft Instrumentação de Gerenciamento do Windows (WMI) criando uma instância das classes [**\_ \_ win32provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) . A instância do **\_ \_ Win32Provider** define a implementação física do provedor e a instância **\_ \_ InstanceProviderRegistration** define o conjunto de recursos do provedor. Para obter mais informações, consulte [registrando um provedor](registering-a-provider.md).
 
 O procedimento a seguir descreve como registrar um provedor de instância de alto desempenho.
 

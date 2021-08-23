@@ -3,8 +3,8 @@ title: Estrutura de MPEXPIRATION_DATA (MpClient. h)
 description: Notificação de status de expiração do produto.
 ms.assetid: BF464FFD-16AE-4F46-83CD-E0355478180C
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPEXPIRATION_DATA
-- Ponteiro de estrutura de PMPEXPIRATION_DATA recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPEXPIRATION_DATA
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPEXPIRATION_DATA
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df5e417b1ce6b1d1f4c15d646b44b0ea6c1fade2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5f270b7d433e6de7cd1eb3e7a3cfc88c9cb85c6087c20371ac804ec61d949d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105751391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976026"
 ---
 # <a name="mpexpiration_data-structure"></a>\_Estrutura de dados MPEXPIRATION
 
@@ -95,9 +95,9 @@ Estado de expiração. Esse é um dos seguintes valores possíveis:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

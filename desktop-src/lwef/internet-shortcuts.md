@@ -8,12 +8,12 @@ keywords:
 - IPropertySetStorage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f14bc2ed58f75522e59b9008ded7b0f1416a21fe
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2aba53c320ed740fe7d91a2425b4d47d66e28d78aa35e4ce893efeed12380c3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118749404"
 ---
 # <a name="internet-shortcuts"></a>Atalhos da Internet
 
@@ -24,7 +24,7 @@ Os tópicos a seguir são discutidos.
 -   [Criando atalhos da Internet](#creating-internet-shortcuts)
     -   [Criando um atalho da Internet de um controle WebBrowser](#creating-an-internet-shortcut-from-a-webbrowser-control)
     -   [Criando um atalho da Internet a partir de uma URL](#creating-an-internet-shortcut-from-a-url)
--   [Acessando o armazenamento de propriedades](#accessing-property-storage)
+-   [acessando a propriedade Armazenamento](#accessing-property-storage)
 -   [Interfaces](#interfaces)
     -   [Interfaces OLE](#ole-interfaces)
     -   [Interfaces do Shell](#shell-interfaces)
@@ -53,7 +53,7 @@ Você também pode criar um atalho da Internet se tiver a URL da página à qual
 2.  Use o método [IUniformResourceLocator:: SetURL](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dd565676(v=vs.85)) para definir a URL no atalho.
 3.  Use o método [IPersistFile:: Save](/windows/win32/api/objidl/nf-objidl-ipersistfile-save) para salvar o arquivo de atalho em um local desejado.
 
-## <a name="accessing-property-storage"></a>Acessando o armazenamento de propriedades
+## <a name="accessing-property-storage"></a>acessando a propriedade Armazenamento
 
 O objeto de atalho da Internet contém várias propriedades que você pode acessar por meio da interface [IPropertySetStorage](/windows/win32/api/propidl/nn-propidl-ipropertysetstorage) do objeto com o procedimento a seguir.
 
@@ -84,7 +84,7 @@ As IDs de propriedade a seguir podem ser solicitadas para FMTID \_ Intshcut.
 
 
 
- 
+ 
 
 As IDs de propriedade a seguir podem ser solicitadas para FMTID \_ InternetSite.
 
@@ -98,54 +98,54 @@ As IDs de propriedade a seguir podem ser solicitadas para FMTID \_ InternetSite.
 | DTI \_ INTSITE \_ LASTMOD      | FILETIME do VT \_ | Hora em que o site foi modificado pela última vez                       |
 | DTI \_ INTSITE \_ VISITCOUNT   | \_UI4 VT      | Número de vezes que o usuário visitou                  |
 | Descrição da PID \_ INTSITE \_  | LPWStr do VT \_   | Texto de descrição do site                          |
-| \_Comentário PID INTSITE \_      | LPWStr do VT \_   | Comentário anotado do usuário                            |
-| \_sinalizadores INTSITE de PID \_        | \_UI4 VT      | Indica o uso de \_ sinalizadores PIDISF (veja abaixo)       |
-| DTI \_ INTSITE \_ CONTENTLEN   | N/D          | Sem suporte no momento                           |
-| DTI \_ INTSITE \_ CONTENTCODE  | N/D          | Sem suporte no momento                           |
-| recurse de \_ INTSITE PID \_      | N/D          | Sem suporte no momento                           |
-| \_inspeção INTSITE de PID \_        | N/D          | Sem suporte no momento                           |
-| assinatura do PID \_ INTSITE \_ | \_UI8 VT      | Valor de SUBSCRIPTIONCOOKIE para o Gerenciador de assinatura |
-| URL do PID \_ INTSITE \_          | LPWStr do VT \_   | URL para a qual o atalho leva                   |
-| DTI \_ título de INTSITE \_        | LPWStr do VT \_   | Título                                             |
-| \_página de \_ código PID INTSITE     | \_UI4 VT      | Página de código do documento                          |
-| \_controle de INTSITE PID \_     | N/D          | Sem suporte no momento                           |
-| DTI \_ INTSITE \_ ICONINDEX    | \_I4 VT       | Índice do ícone                                 |
-| DTI \_ ícone do INTSITE \_     | LPWStr do VT \_   | Arquivo que contém o ícone                       |
-| PID \_ INTSITE \_ móvel       | \_UI4 VT      | A entrada foi adicionada devido ao roaming                |
+| PID \_ INTSITE \_ COMMENT      | VT \_ LPWSTR   | Comentário anotado pelo usuário                            |
+| SINALIZADORES \_ PID INTSITE \_        | VT \_ UI4      | Indica o uso de sinalizadores PIDISF \_ (veja abaixo)       |
+| PID \_ INTSITE \_ CONTENTLEN   | N/D          | Sem suporte no momento                           |
+| PID \_ INTSITE \_ CONTENTCODE  | N/D          | Sem suporte no momento                           |
+| PID \_ INTSITE \_ RECURSE      | N/D          | Sem suporte no momento                           |
+| PID \_ INTSITE \_ WATCH        | N/D          | Sem suporte no momento                           |
+| ASSINATURA \_ PID \_ INTSITE | VT \_ UI8      | Valor SUBSCRIPTIONCOOKIE para o gerenciador de assinaturas |
+| PID \_ INTSITE \_ URL          | VT \_ LPWSTR   | URL para a qual o atalho leva                   |
+| PID \_ INTSITE \_ TITLE        | VT \_ LPWSTR   | Título                                             |
+| PID \_ INTSITE \_ CODEPAGE     | VT \_ UI4      | Página de código do documento                          |
+| PID \_ INTSITE \_ TRACKING     | N/D          | Sem suporte no momento                           |
+| ÍCONE \_ DE INTSITE DO \_ PIDINDEX    | VT \_ I4       | Índice do ícone                                 |
+| PID \_ INTSITE \_ ICONFILE     | VT \_ LPWSTR   | Arquivo que contém o ícone                       |
+| PID \_ INTSITE \_ ROAMED       | VT \_ UI4      | A entrada foi adicionada devido a roaming                |
 
 
 
- 
+ 
 
-Veja a seguir os sinalizadores de site da Internet.
+A seguir estão os sinalizadores de site da Internet.
 
 
 
 | Sinalizador                    | Descrição                                |
 |-------------------------|--------------------------------------------|
-| PIDISF \_ recentemente | Indica que um site foi alterado recentemente |
+| PIDISF \_ RECENTLYCHANGED | Indica que um site foi alterado recentemente |
 | PIDISF \_ CACHEDSTICKY    | Sem suporte no momento                    |
 | PIDISF \_ CACHEIMAGES     | Sem suporte no momento                    |
 | PIDISF \_ FOLLOWALLLINKS  | Sem suporte no momento                    |
 
 
 
- 
+ 
 
 Os valores a seguir são usados para o histórico de roaming da Internet.
 
 
 
-| Valor de PID \_ INTSITE \_ roamed         | Descrição                                                                                                                                                              |
+| Valor de PID \_ INTSITE \_ ROAMED         | Descrição                                                                                                                                                              |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Valor não definido ou PIDISR \_ atualizado \_ \_ | Esta entrada de cache não foi modificada por roaming.                                                                                                                       |
-| PIDISR \_ precisa \_ Adicionar                    | Essa entrada de cache foi adicionada ao cache por roaming. Defina PIDISR \_ atualizado \_ \_ após a conclusão do processamento da entrada.                                                   |
-| PIDISR \_ precisa de \_ atualização                 | Essa entrada de cache já existia no computador local, mas foi atualizada por roaming. Defina PIDISR \_ atualizado \_ \_ após a conclusão do processamento da entrada.                 |
-| PIDISR \_ precisa \_ excluir                 | O roaming detectou que essa entrada de cache deve ser excluída. Por exemplo, o usuário pode ter removido seu histórico de navegador. Exclua a entrada usando DeleteUrlCacheEntry. |
+| Valor não definido ou PIDISR \_ \_ ATUALIZADO \_ | Essa entrada de cache não foi modificada pelo roaming.                                                                                                                       |
+| PIDISR \_ PRECISA \_ ADICIONAR                    | Essa entrada de cache foi adicionada ao cache por roaming. De configurar o PIDISR \_ COMO ATUALIZADO quando o processamento da entrada for \_ \_ concluído.                                                   |
+| O PIDISR \_ PRECISA DE \_ ATUALIZAÇÃO                 | Essa entrada de cache já existia no computador local, mas foi atualizada por roaming. De configurar o PIDISR \_ COMO ATUALIZADO quando o processamento da entrada for \_ \_ concluído.                 |
+| O PIDISR \_ PRECISA DE \_ EXCLUSÃO                 | O roaming detectou que essa entrada de cache deve ser excluída. Por exemplo, o usuário pode ter limpado seu histórico do navegador. Exclua a entrada usando DeleteUrlCacheEntry. |
 
 
 
- 
+ 
 
 ## <a name="interfaces"></a>Interfaces
 
@@ -153,14 +153,14 @@ O objeto de atalho da Internet expõe várias interfaces.
 
 ### <a name="ole-interfaces"></a>Interfaces OLE
 
--   [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject)
--   [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile)
--   [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream)
+-   [Idataobject](/windows/win32/api/objidl/nn-objidl-idataobject)
+-   [Ipersistfile](/windows/win32/api/objidl/nn-objidl-ipersistfile)
+-   [Ipersiststream](/windows/win32/api/objidl/nn-objidl-ipersiststream)
 -   [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget)
 -   [IPropertySetStorage](/windows/win32/api/propidl/nn-propidl-ipropertysetstorage)
--   [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite)
+-   [Iobjectwithsite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite)
 
-### <a name="shell-interfaces"></a>Interfaces do Shell
+### <a name="shell-interfaces"></a>Interfaces de shell
 
 -   [**IContextMenu2**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-icontextmenu2)
 -   [**IExtractIcon**](/windows/desktop/api/shlobj_core/nn-shlobj_core-iextracticona)
@@ -181,6 +181,6 @@ Há várias funções de utilitário que podem ser usadas com o objeto de atalho
 -   [**TranslateURL**](/windows/desktop/api/intshcut/nf-intshcut-translateurla)
 -   [**URLAssociationDialog**](/windows/desktop/api/intshcut/nf-intshcut-urlassociationdialoga)
 
- 
+ 
 
- 
+ 

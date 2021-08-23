@@ -1,6 +1,6 @@
 ---
-title: 'Função RWStructuredBuffer:: GetDimensions'
-description: 'Obtém as dimensões do recurso. | Função RWStructuredBuffer:: GetDimensions'
+title: Função RWStructuredBuffer::GetDimensions
+description: Obtém as dimensões do recurso. | Função RWStructuredBuffer::GetDimensions
 ms.assetid: 842b3d21-2e2b-4906-93ee-0252b2e8cf85
 keywords:
 - Função GetDimensions HLSL
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118789922"
 ---
-# <a name="rwstructuredbuffergetdimensions-function"></a>Função RWStructuredBuffer:: GetDimensions
+# <a name="rwstructuredbuffergetdimensions-function"></a>Função RWStructuredBuffer::GetDimensions
 
 Obtém as dimensões do recurso.
 
@@ -37,7 +37,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*numStructs* \[ fora\]
+*numStructs* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -46,12 +46,12 @@ O número de estruturas no recurso.
 
 </dd> <dt>
 
-*Stride* \[ fora\]
+*stride* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O stride, em bytes, de cada elemento da estrutura.
+O stride, em bytes, de cada elemento de estrutura.
 
 </dd> </dl>
 
@@ -65,7 +65,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

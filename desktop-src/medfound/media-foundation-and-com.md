@@ -1,36 +1,36 @@
 ---
-description: Microsoft Media Foundation usa uma combinação de construções COM, mas não é uma API totalmente baseada em COM.
+description: Microsoft Media Foundation usa uma combinação de constructos COM, mas não é uma API totalmente baseada em COM.
 ms.assetid: d58ca46f-8f3a-4a12-b948-1ea7ab568788
 title: Media Foundation e COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdb7d05bac6a3f4deef2c004c6980ef1351c3823
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: bb43fa29063da453a17275fca0b5c441e89f75aab8016a1abcf1702f5433fd71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105769646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974205"
 ---
 # <a name="media-foundation-and-com"></a>Media Foundation e COM
 
-Microsoft Media Foundation usa uma combinação de construções COM, mas não é uma API totalmente baseada em COM. Este tópico descreve a interação entre COM e Media Foundation. Ele também define algumas práticas recomendadas para o desenvolvimento de Media Foundation componentes de plug-in. Seguir essas práticas pode ajudá-lo a evitar alguns erros de programação comuns, mas sutis.
+Microsoft Media Foundation usa uma combinação de constructos COM, mas não é uma API totalmente baseada em COM. Este tópico descreve a interação entre COM e Media Foundation. Ele também define algumas práticas recomendadas para desenvolver Media Foundation componentes de plug-in. Seguir essas práticas pode ajudá-lo a evitar alguns erros de programação comuns, mas sutis.
 
 -   [Práticas recomendadas para aplicativos](#best-practices-for-applications)
--   [Práticas recomendadas para componentes de Media Foundation](#best-practices-for-media-foundation-components)
+-   [Práticas recomendadas para Media Foundation componentes](#best-practices-for-media-foundation-components)
 -   [Resumo](#summary)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="best-practices-for-applications"></a>Práticas recomendadas para aplicativos
 
-No Media Foundation, o processamento assíncrono e os retornos de chamada são tratados por [filas de trabalho](work-queues.md). As filas de trabalho sempre têm threads de MTA (multithreaded apartment), de modo que um aplicativo terá uma implementação mais simples se for executado em um thread MTA também. Portanto, é recomendável chamar [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) com o sinalizador de **\_ vários threads de coinit** .
+No Media Foundation, o processamento assíncrono e os retornos de chamada são tratados por [filas de trabalho.](work-queues.md) As filas de trabalho sempre têm threads MTA (multithreaded apartment), portanto, um aplicativo terá uma implementação mais simples se ele for executado em um thread MTA também. Portanto, é recomendável chamar [**CoInitializeEx com**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) o **sinalizador COINIT \_ MULTITHREADED.**
 
-Media Foundation não empacota objetos STA (single-threaded apartment) para threads de fila de trabalho. Nem garante que as invariáveis de STA sejam mantidas. Portanto, um aplicativo STA deve ter cuidado para não passar objetos STA ou proxies para Media Foundation APIs. Os objetos que são somente STA não têm suporte no Media Foundation.
+Media Foundation não faz marshal de objetos STA (single-threaded apartment) para trabalhar threads de fila. Nem garante que as invariáveis STA sejam mantidas. Portanto, um aplicativo STA deve ter cuidado para não passar objetos STA ou proxies para Media Foundation APIs. Não há suporte para objetos somente STA no Media Foundation.
 
-Se você tiver um proxy STA para um MTA ou um objeto de thread livre, o objeto poderá ser empacotado para um proxy MTA usando um retorno de chamada de fila de trabalho. A função [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) pode retornar um ponteiro bruto ou um proxy STA, dependendo do modelo de objeto definido no registro para esse CLSID. Se um proxy STA for retornado, você não deverá passar o ponteiro para uma API Media Foundation.
+Se você tiver um proxy STA para um objeto MTA ou de thread livre, o objeto poderá ser marshalado para um proxy MTA usando um retorno de chamada de fila de trabalho. A [**função CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) pode retornar um ponteiro bruto ou um proxy STA, dependendo do modelo de objeto definido no Registro para esse CLSID. Se um proxy STA for retornado, você não deverá passar o ponteiro para uma API Media Foundation dados.
 
-Por exemplo, suponha que você queira passar um ponteiro **IPropertyStore** para o método [**IMFSourceResolver:: BeginCreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl) . Você pode chamar **PSCreateMemoryPropertyStore** para criar o ponteiro **IPropertyStore** . Se você estiver chamando de um STA, deverá realizar marshaling do ponteiro antes de passá-lo para **BeginCreateObjectFromURL**.
+Por exemplo, suponha que você queira passar um ponteiro **IPropertyStore** para o método [**IMFSourceResolver::BeginCreateObjectFromURL.**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-begincreateobjectfromurl) Você pode chamar **PSCreateMemoryPropertyStore** para criar o ponteiro **IPropertyStore.** Se você estiver chamando de um STA, deverá efetuar marshal do ponteiro antes de passá-lo para **BeginCreateObjectFromURL.**
 
-O código a seguir mostra como realizar marshaling de um proxy STA para uma API Media Foundation.
+O código a seguir mostra como fazer marshal de um proxy STA para uma API Media Foundation dados.
 
 
 ```C++
@@ -133,55 +133,55 @@ private:
 
 Para obter mais informações sobre a tabela de interface global, consulte [**IGlobalInterfaceTable**](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
 
-Se você estiver usando Media Foundation em processo, os objetos retornados de Media Foundation métodos e funções serão ponteiros diretos para o objeto. Para Media Foundation de processo cruzado, esses objetos podem ser proxies MTA e devem ser empacotados em um thread STA, se necessário. Da mesma forma, os objetos obtidos dentro de um retorno de chamada — por exemplo, uma topologia do evento [MESessionTopologyStatus](mesessiontopologystatus.md) — são ponteiros diretos quando Media Foundation é usado em processo, mas são proxies MTA quando Media Foundation é usado em processo cruzado.
+Se você estiver usando Media Foundation em processo, os objetos retornados de Media Foundation e funções serão ponteiros diretos para o objeto . Para processos cruzados Media Foundation, esses objetos podem ser proxies MTA e devem ser empacotados em um thread STA, se necessário. Da mesma forma, objetos obtidos dentro de um retorno de chamada – por exemplo, uma topologia do evento [MESessionTopologyStatus](mesessiontopologystatus.md) – são ponteiros diretos quando Media Foundation é usado em processo, mas são proxies MTA quando Media Foundation é usado entre processos.
 
 > [!Note]  
-> O cenário mais comum para usar Media Foundation processo cruzado é com o [caminho de mídia protegido](protected-media-path.md) (PMP). No entanto, esses comentários se aplicam a qualquer situação quando Media Foundation APIs são usadas por meio de RPC.
+> O cenário mais comum para usar Media Foundation entre processos é com o caminho [de mídia](protected-media-path.md) protegido (PMP). No entanto, esses comentários se aplicam a qualquer situação quando Media Foundation APIs são usadas por meio de RPC.
 
  
 
-Todas as implementações de [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) devem ser compatíveis com o MTA. Esses objetos não precisam ser objetos COM. Mas, se estiverem, eles não poderão ser executados no STA. A função [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) será invocada em um thread de fila de pesquisa MTA e o objeto [**IMFAsyncResult**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) fornecido será um ponteiro de objeto direto ou um proxy MTA.
+Todas as implementações de [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) devem ser compatíveis com MTA. Esses objetos não precisam ser objetos COM. Mas, se eles são, eles não podem ser executados no STA. A [**função IMFAsyncCallback::Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) será invocada em um thread de workqueue do MTA e o objeto [**IMFAsyncResult**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) fornecido será um ponteiro de objeto direto ou um proxy MTA.
 
-## <a name="best-practices-for-media-foundation-components"></a>Práticas recomendadas para componentes de Media Foundation
+## <a name="best-practices-for-media-foundation-components"></a>Práticas recomendadas para Media Foundation componentes
 
-Há duas categorias de objetos Media Foundation que precisam se preocupar COM o COM. Alguns componentes, como transformações ou manipuladores de fluxo de bytes, são objetos COM completos criados pelo CLSID. Esses objetos devem seguir as regras para Apartments COM, para Media Foundation em processo e em processo cruzado. Outros componentes de Media Foundation não são objetos COM completos, mas precisam de proxies COM para reprodução entre processos. Os objetos nessa categoria incluem fontes de mídia e objeto de ativação. Esses objetos poderão ignorar problemas de apartamento se eles forem usados apenas para Media Foundation em processo.
+Há duas categorias de Media Foundation objetos que precisam se preocupar com COM. Alguns componentes, como transformar ou manipuladores de fluxo de byte, são objetos COM completos criados pelo CLSID. Esses objetos devem seguir as regras para apartments COM, tanto em processo quanto entre Media Foundation. Outros Media Foundation componentes não são objetos COM completos, mas precisam de proxies COM para reprodução entre processos. Os objetos nessa categoria incluem fontes de mídia e objeto de ativação. Esses objetos poderão ignorar problemas de apartment se eles serão usados apenas para problemas em Media Foundation.
 
-Embora nem todos os objetos de Media Foundation sejam objetos COM, todas as interfaces de Media Foundation derivam de [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). Portanto, todos os objetos de Media Foundation devem implementar **IUnknown** de acordo com as especificações com, incluindo as regras para contagem de referência e [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). Todos os objetos de referência contados também devem garantir que o [**DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) não permitirá que o módulo seja descarregado enquanto os objetos ainda persistirem.
+Embora nem todos os Media Foundation objetos sejam objetos COM, todas Media Foundation interfaces derivam [**de IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). Portanto, todos os Media Foundation devem implementar **IUnknown** de acordo com as especificações COM, incluindo as regras para contagem de referência e [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). Todos os objetos contados por referência também devem garantir que [**DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) não permita que o módulo seja descarregado enquanto os objetos ainda persistem.
 
-Os componentes de Media Foundation não podem ser objetos STA. Muitos objetos de Media Foundation não precisam ser objetos COM. Mas, se estiverem, eles não poderão ser executados no STA. Todos os componentes de Media Foundation devem ser thread-safe. Alguns objetos de Media Foundation devem ser de thread livre ou de apartamento neutro também. A tabela a seguir especifica os requisitos para implementações de interface personalizada:
+Media Foundation componentes não podem ser objetos STA. Muitos Media Foundation objetos não precisam ser objetos COM. Mas, se eles são, eles não podem ser executados no STA. Todos Media Foundation componentes devem ser thread-safe. Alguns Media Foundation objetos devem ser de thread livre ou neutros em apartment também. A tabela a seguir especifica os requisitos para implementações de interface personalizadas:
 
 
 
-| Interface                                                          | Category            | Apartamento necessário       |
+| Interface                                                          | Categoria            | Apartment necessário       |
 |--------------------------------------------------------------------|---------------------|--------------------------|
-| [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)                                 | Proxy de processo cruzado | Livre de threads ou neutros |
+| [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)                                 | Proxy entre processos | Threaded livre ou neutro |
 | [**IMFByteStreamHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler)               | Objeto COM          | MTA                      |
-| [**IMFContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) | Proxy de processo cruzado | Livre de threads ou neutros |
-| [**IMFQualityManager**](/windows/desktop/api/mfidl/nn-mfidl-imfqualitymanager)                     | Objeto COM          | Livre de threads ou neutros |
-| [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)                           | Proxy de processo cruzado | Livre de threads ou neutros |
+| [**IMFContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) | Proxy entre processos | Threaded livre ou neutro |
+| [**IMFQualityManager**](/windows/desktop/api/mfidl/nn-mfidl-imfqualitymanager)                     | Objeto COM          | Threaded livre ou neutro |
+| [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)                           | Proxy entre processos | Threaded livre ou neutro |
 | [**IMFSchemeHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfschemehandler)                       | Objeto COM          | MTA                      |
-| [**IMFTopoLoader**](/windows/desktop/api/mfidl/nn-mfidl-imftopoloader)                             | Objeto COM          | Livre de threads ou neutros |
+| [**IMFTopoLoader**](/windows/desktop/api/mfidl/nn-mfidl-imftopoloader)                             | Objeto COM          | Threaded livre ou neutro |
 | [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)                               | Objeto COM          | MTA                      |
 
 
 
  
 
-Pode haver requisitos adicionais, dependendo da implementação. Por exemplo, se um coletor de mídia implementar outra interface que permita que o aplicativo faça chamadas de função diretas para o coletor, o coletor precisaria ser de thread livre ou neutro, para que pudesse lidar com chamadas diretas de processos cruzados. Qualquer objeto pode ser de segmento livre; Esta tabela especifica os requisitos mínimos.
+Pode haver requisitos adicionais dependendo da implementação. Por exemplo, se um sink de mídia implementar outra interface que permita que o aplicativo faça chamadas de função diretas para o sink, o sink precisará ser livre ou neutro, para que ele possa lidar com chamadas diretas entre processos. Qualquer objeto pode ser de thread livre; essa tabela especifica os requisitos mínimos.
 
-A maneira recomendada para implementar objetos livres de threads ou neutros é agregar o marshaler de thread livre. Para obter mais detalhes, consulte a documentação do MSDN em [**CoCreateFreeThreadedMarshaler**](/windows/win32/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler). De acordo com o requisito de não passar objetos STA ou proxies para Media Foundation APIs, os objetos de thread livre não precisam se preocupar com o marshaling de ponteiros de entrada STA em componentes de thread livre.
+A maneira recomendada de implementar objetos de thread livre ou neutros é agregando o marshaler de thread livre. Para obter mais detalhes, consulte a documentação do MSDN [**em CoCreateFreeThreadedMarshaler**](/windows/win32/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler). De acordo com o requisito de não passar objetos STA ou proxies para apIs Media Foundation, os objetos de thread livre não precisam se preocupar com o marshaling de ponteiros de entrada STA em componentes de thread livre.
 
-Os componentes que usam a fila de trabalho de função longa (**\_ \_ \_ \_ função longa da fila de retorno de chamada MFASYNC**) devem exercer mais cuidado. Os threads na fila de funções de longa duração criam seu próprio STA. Os componentes que usam a fila de funções de longa duração para retornos de chamada devem evitar a criação de objetos COM nesses threads e precisam ter cuidado para realizar marshaling de proxies para o STA, conforme necessário.
+Os componentes que usam a fila de trabalho de função longa (FUNÇÃO LONGA DA FILA DE RETORNO DE CHAMADA **MFASYNC \_ \_ \_ \_**) devem ter mais cuidado. Os threads na função longa criam seu próprio STA. Os componentes que usam a longa linha de trabalho de função para retornos de chamada devem evitar a criação de objetos COM nesses threads e precisam ter cuidado para efetuar marshaling de proxies para o STA conforme necessário.
 
 ## <a name="summary"></a>Resumo
 
-Os aplicativos terão um tempo mais fácil se interagirem com Media Foundation de um thread MTA, mas é possível ter cuidado ao usar Media Foundation de um thread STA. Media Foundation não trata componentes STA, e os aplicativos devem ter cuidado para não passar objetos STA para Media Foundation APIs. Alguns objetos têm requisitos adicionais, especialmente objetos executados em uma situação de processo cruzado. Seguir essas diretrizes ajudará a evitar erros COM, deadlocks e atrasos inesperados no processamento de mídia.
+Os aplicativos terão um tempo mais fácil se eles interagirem com Media Foundation de um thread MTA, mas é possível com algum cuidado usar Media Foundation de um thread STA. Media Foundation não lida com componentes STA e os aplicativos devem ter cuidado para não passar objetos STA para Media Foundation APIs. Alguns objetos têm requisitos adicionais, especialmente objetos que são executados em uma situação entre processos. Seguir essas diretrizes ajudará a evitar erros COM, deadlocks e atrasos inesperados no processamento de mídia.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[APIs da plataforma Media Foundation](media-foundation-platform-apis.md)
+[Media Foundation Platform APIs](media-foundation-platform-apis.md)
 </dt> <dt>
 
 [Arquitetura Media Foundation](media-foundation-architecture.md)

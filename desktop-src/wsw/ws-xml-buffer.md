@@ -6,12 +6,12 @@ keywords:
 - WS_XML_BUFFER
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f84bc755d24d07e8e2ed9bacf91b644c883871
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 576c901434bb1d05aecbadc52ce51b163023b99e3c7c8959f0169e2e9b0badad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962755"
 ---
 # <a name="ws_xml_buffer"></a>\_buffer XML do WS \_
 
@@ -34,9 +34,9 @@ Este objeto não é thread-safe. Para obter mais informações, consulte [segura
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>WebServices. h</dt> </dl> |
 
 
 

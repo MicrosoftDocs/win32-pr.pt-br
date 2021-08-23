@@ -1,7 +1,7 @@
 ---
-description: Recupera a cadeia do signatário.
+description: Recupera a cadeia do signante.
 ms.assetid: 02845542-507d-4f9f-b172-7bd3b5af4094
-title: Propriedade signatário. Chain
+title: Propriedade Signer.Chain
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 323b8dcb7cccc448e099fd1bbf0e7c2c39d41e62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56e47d5c33d1c1eb4873ae3da99a6f1227f229ce0fd2272e5c6ef09e789d948c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898859"
 ---
-# <a name="signerchain-property"></a>Propriedade signatário. Chain
+# <a name="signerchain-property"></a>Propriedade Signer.Chain
 
-\[A propriedade **Chain** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Em vez disso, use a [**classe CmsSigner**](/dotnet/api/system.security.cryptography.pkcs.cmssigner?view=dotnet-plat-ext-3.1&preserve-view=true) no namespace [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[A **propriedade** Chain está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Em vez disso, [**use a Classe CmsSigner**](/dotnet/api/system.security.cryptography.pkcs.cmssigner?view=dotnet-plat-ext-3.1&preserve-view=true) no namespace [**System.Security.Cryptography.Pkcs.**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-A propriedade **Chain** recupera a cadeia do signatário.
+A **propriedade Chain** recupera a cadeia do signante.
 
 Esta propriedade é somente para leitura.
 
@@ -39,7 +39,7 @@ Signer.Chain As Chain
 
 ## <a name="property-value"></a>Valor da propriedade
 
-A cadeia do signatário.
+A cadeia do signante.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ A cadeia do signatário.
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

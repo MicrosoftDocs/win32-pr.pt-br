@@ -35,7 +35,7 @@ Uma identidade assinada digitalmente ou certificada e um conjunto de atributos. 
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 2.5.4.58                                              |
 | System-Id-Guid    | fa4693bb-7bc2-4cb9-81a8-c99c43b7905e                  |
-| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 

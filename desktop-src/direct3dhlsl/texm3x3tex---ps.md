@@ -20,7 +20,7 @@ ms.locfileid: "118787555"
 
 Executa uma multiplicação de matriz 3x3 e usa o resultado para fazer uma análise de textura. O texm3x3tex deve ser usado com duas [instruções de texm3x3pad – ps.](texm3x3pad---ps.md)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 
