@@ -1,11 +1,11 @@
 ---
 title: MSMQ-Authenticate atributo
-description: Indica se a fila aceita somente mensagens autenticadas.
+description: Indica se a fila aceita apenas mensagens autenticadas.
 ms.assetid: f03316e3-daae-4d1e-b135-8b4c3c2765b2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de MSMQ-Authenticate do atributo AD
-- Esquema de AD do atributo mSMQAuthenticate
+- MSMQ-Authenticate atributo AD Schema
+- Esquema do AD do atributo mSMQAuthenticate
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5a2d3744a01834cde181f5cfcf3804a0c765415
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5e568d0ce3ef2a043c6fcfb655a11aa453a7ff704f39e26c088e8cfc40e06c3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582586"
 ---
 # <a name="msmq-authenticate-attribute"></a>MSMQ-Authenticate atributo
 
-Indica se a fila aceita somente mensagens autenticadas.
+Indica se a fila aceita apenas mensagens autenticadas.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Authenticate                    |
-| LDAP-Display-Name | mSMQAuthenticate                     |
+| Ldap-Display-Name | mSMQAuthenticate                     |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.923               |
-| System-ID-GUID    | 9a0dc326-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc326-c100-11d1-football5-0080c76670c0 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,10 +58,10 @@ Indica se a fila aceita somente mensagens autenticadas.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -79,10 +79,10 @@ Indica se a fila aceita somente mensagens autenticadas.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -100,10 +100,10 @@ Indica se a fila aceita somente mensagens autenticadas.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -121,10 +121,10 @@ Indica se a fila aceita somente mensagens autenticadas.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -142,10 +142,10 @@ Indica se a fila aceita somente mensagens autenticadas.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -163,10 +163,10 @@ Indica se a fila aceita somente mensagens autenticadas.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

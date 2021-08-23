@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 953604f6dc8ff171745ddc4e95e6fc9a2f2756c3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ca96f86ac6cef1c4eda346ea7463f7a51a7116d706ae09c4d4c2974312f698f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583046"
 ---
 # <a name="ms-dfs-schema-minor-version-attribute"></a>MS-DFS-Schema-atributo de versão secundária
 
@@ -55,7 +55,7 @@ Contém a versão secundária do esquema de metadados do DFS.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -76,7 +76,7 @@ Contém a versão secundária do esquema de metadados do DFS.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -97,7 +97,7 @@ Contém a versão secundária do esquema de metadados do DFS.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |

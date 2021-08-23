@@ -22,12 +22,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee7fa33f142e47b9493e53aa5bc4779623d6ef40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed353e0d9c4d3049e120b00a11bc3d1bf85e3a0b42e52deb4ed277b9bde9b96b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523286"
 ---
 # <a name="msvm_guestclusterinformation-class"></a>\_Classe Msvm GuestClusterInformation
 
@@ -167,7 +167,7 @@ Tipo de acesso: Somente leitura
 A contagem de tiques de relógio quando um dos recursos de disco compartilhado foi movido pela última vez.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703 e Windows Server 2016.
+> essa propriedade foi adicionada em Windows 10, versão 1703 e Windows Server 2016.
 
  
 
@@ -211,7 +211,7 @@ Uma matriz de dados de configuração de alocação de recursos (RASD) que repre
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |

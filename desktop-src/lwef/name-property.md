@@ -1,19 +1,19 @@
 ---
 title: Propriedade Name (objeto Characters)
-description: Saiba mais sobre a propriedade Name do objeto Characters. O Microsoft Agent foi preterido a partir do Windows 7.
+description: Saiba mais sobre a propriedade Name do objeto Characters. O Microsoft Agent foi preterido a partir Windows 7.
 ms.assetid: vs|msagent|~\pacontrol_2bxm.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7365550d5d4d4071cf4292e505f16e7047628cf1
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: e08509d5d2a349c56548259db4846203da6f632ff76c86309db87e6aa90583a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608646"
 ---
 # <a name="name-property-characters-object"></a>Propriedade Name (objeto Characters)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

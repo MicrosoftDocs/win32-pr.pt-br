@@ -1,17 +1,17 @@
 ---
-description: Visualizando um projeto
+description: Visualizando um Project
 ms.assetid: 2efa3f25-a93f-4362-b461-b67475e5d78c
-title: Visualizando um projeto
+title: Visualizando um Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd9d299a99a0a7315cec986fbc044d427385647
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 159303c175c459b4d5d93ba4c7b4b2622caddac2a35d3474a3059ac703d62645
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104295995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583548"
 ---
-# <a name="previewing-a-project"></a>Visualizando um projeto
+# <a name="previewing-a-project"></a>Visualizando um Project
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
@@ -38,7 +38,7 @@ hr = pRender->RenderOutputPins();
 
 
 
-Agora, execute o gráfico de filtro. Primeiro, chame o método [**IRenderEngine:: GetFilterGraph**](irenderengine-getfiltergraph.md) para recuperar um ponteiro para a interface [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) do Gerenciador do grafo de filtro. Em seguida, consulte o Gerenciador do grafo de filtro para a interface [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e chame [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run), conforme mostrado no código a seguir:
+Agora, execute o gráfico de filtro. primeiro, chame o método [**IRenderEngine:: GetFilterGraph**](irenderengine-getfiltergraph.md) para recuperar um ponteiro para o filtro Graph interface [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) do gerenciador. em seguida, consulte o filtro Graph Manager para a interface [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e chame [**IMediaControl:: Run**](/windows/desktop/api/Control/nf-control-imediacontrol-run), conforme mostrado no código a seguir:
 
 
 ```C++
@@ -51,7 +51,7 @@ hr = pControl->Run();
 
 
 
-Use a interface [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) do Gerenciador de grafo de filtro para aguardar a conclusão da visualização. Você também pode buscar o grafo usando a interface [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) do Gerenciador de grafo de filtro, assim como faria com um grafo de reprodução de arquivo.
+Use o filtro Graph interface [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) do gerenciador para aguardar a conclusão da visualização. você também pode buscar o grafo usando o filtro Graph interface [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking) do gerenciador, assim como faria com um grafo de reprodução de arquivo.
 
 Para visualizar o projeto novamente, busque o grafo de volta para o tempo zero e chame a **execução** novamente. Se você alterar o conteúdo da linha do tempo, faça o seguinte:
 
@@ -77,7 +77,7 @@ hr = pControl->Run();
 
 
 
-Para obter um exemplo completo que carrega e visualiza um arquivo de projeto, consulte [carregando e visualizando um projeto](loading-and-previewing-a-project.md).
+Para obter um exemplo completo que carrega e visualiza um arquivo de projeto, consulte [carregando e visualizando um Project](loading-and-previewing-a-project.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -86,7 +86,7 @@ Para obter um exemplo completo que carrega e visualiza um arquivo de projeto, co
 [Gerenciando projetos de edição de vídeo](managing-video-editing-projects.md)
 </dt> <dt>
 
-[Renderizando um projeto](rendering-a-project.md)
+[Renderizando um Project](rendering-a-project.md)
 </dt> </dl>
 
  

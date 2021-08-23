@@ -1,23 +1,23 @@
 ---
-description: Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para Cingapura.
+description: Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para Singapura.
 ms.assetid: 77d4f4fc-76ec-4996-8f25-05ad8840d49f
-title: Atribuições de canal de Cingapura
+title: Atribuições de canal de Singapura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccf7ae41242244ace47cc457950eedd0c82a0f5a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fe915305fd5aaaace3599cafae6281774f4bf35c501bb587fe82e8d9752fd556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683586"
 ---
-# <a name="singapore-channel-assignments"></a>Atribuições de canal de Cingapura
+# <a name="singapore-channel-assignments"></a>Atribuições de canal de Singapura
 
-Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para Cingapura.
+Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para Singapura.
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+As atribuições de canal a seguir foram introduzidas Windows 7. Anteriormente, a [Tabela de Frequência Unicavel](unicable-frequency-table.md) era usada.
 
 -   [Atribuições de difusão](#broadcast-assignments)
 -   [Atribuições de cabo](#cable-assignments)
@@ -183,7 +183,7 @@ As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormen
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

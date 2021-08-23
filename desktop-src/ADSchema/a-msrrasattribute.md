@@ -1,11 +1,11 @@
 ---
-title: atributo ms-RRAS-Attribute
-description: Cadeia de caracteres que contém o número de VendorID instalado em um roteador. O VendorID é o SMI do fornecedor e o número é MS-RRAS-número de atributo definido no objeto de dicionário de identidade do roteador.
+title: Atributo ms-RRAS-Attribute
+description: Cadeia de caracteres que contém o número vendorID instalado em um roteador. O VendorID é o SMI do fornecedor e o Número é ms-RRAS-Attribute Number definido no Objeto de Dicionário de Identidade do Roteador.
 ms.assetid: 72b32814-b2a2-4369-af01-ba8c893aa393
 ms.tgt_platform: multiple
 keywords:
-- MS-RRAS-atributo de atributo do AD
-- Esquema de AD do atributo msRRASAttribute
+- Esquema do AD do atributo ms-RRAS-Attribute
+- Esquema do AD do atributo msRRASAttribute
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67e98a93f31fc45aca37e173ac6490bd1ca95840
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1e28c24e01d0d37259c624bc6a1fda13f65e4ade4c2166cec2ae6adfce53dca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755679"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582086"
 ---
-# <a name="ms-rras-attribute-attribute"></a>atributo ms-RRAS-Attribute
+# <a name="ms-rras-attribute-attribute"></a>Atributo ms-RRAS-Attribute
 
-Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O VendorID é o SMI do fornecedor e o número é MS-RRAS-número de atributo definido no objeto de dicionário de identidade do roteador.
+Cadeia de caracteres que contém o vendorID:Number instalado em um roteador. O VendorID é o SMI do fornecedor e o Número é ms-RRAS-Attribute Number definido no Objeto de Dicionário de Identidade do Roteador.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-RRAS-Attribute                           |
-| LDAP-Display-Name | msRRASAttribute                             |
+| CN                | ms-RRAS-Attribute                           |
+| Ldap-Display-Name | msRRASAttribute                             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.884                      |
-| System-ID-GUID    | f39b98ad-938d-11d1-aebd-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f39b98ad-938d-11d1-aebd-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O
 | ID do link                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| É de valor único       | Falso                                                                                          |
+| Tem valor único       | Falso                                                                                          |
 | É indexado             | Falso                                                                                          |
-| No catálogo global      | True                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                   |
+| No Catálogo Global      | Verdadeiro                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classes usadas em        | [**RRAS-administração – ponto de conexão**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O
 | ID do link                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| É de valor único       | Falso                                                                                          |
+| Tem valor único       | Falso                                                                                          |
 | É indexado             | Falso                                                                                          |
-| No catálogo global      | True                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                   |
+| No Catálogo Global      | Verdadeiro                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classes usadas em        | [**RRAS-administração – ponto de conexão**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O
 | ID do link                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
 | System-Only            | Falso                                                                                          |
-| É de valor único       | Falso                                                                                          |
+| Tem valor único       | Falso                                                                                          |
 | É indexado             | Falso                                                                                          |
-| No catálogo global      | True                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                   |
+| No Catálogo Global      | Verdadeiro                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Classes usadas em        | [**RRAS-administração – ponto de conexão**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Classes usadas em        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -123,7 +123,7 @@ Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O
 | System-Only            | Falso                                                                                          |
 | É de valor único       | Falso                                                                                          |
 | É indexado             | Falso                                                                                          |
-| No catálogo global      | True                                                                                           |
+| No catálogo global      | Verdadeiro                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
@@ -144,7 +144,7 @@ Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O
 | System-Only            | Falso                                                                                          |
 | É de valor único       | Falso                                                                                          |
 | É indexado             | Falso                                                                                          |
-| No catálogo global      | True                                                                                           |
+| No catálogo global      | Verdadeiro                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
@@ -165,7 +165,7 @@ Cadeia de caracteres que contém o VendorID: número instalado em um roteador. O
 | System-Only            | Falso                                                                                          |
 | É de valor único       | Falso                                                                                          |
 | É indexado             | Falso                                                                                          |
-| No catálogo global      | True                                                                                           |
+| No catálogo global      | Verdadeiro                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |

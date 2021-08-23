@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put OffsetX especifica o deslocamento horizontal da origem do apagamento.
+description: O método \_ put OffsetX especifica o deslocamento horizontal da origem do apagaamento.
 ms.assetid: 7bc721fd-7e72-49d4-90ae-a193df46326c
-title: 'IDxtJpeg: método de ut_OffsetX de:p (QEdit. h)'
+title: Método IDxtJpeg::p ut_OffsetX (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 70bb908be3f2e2173ebae12f45e24600b38a0441
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d0e80a847b69d0dd7f0c29eedb751b07baedab2154bb237d2c3e7f816891e9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639276"
 ---
-# <a name="idxtjpegput_offsetx-method"></a>IDxtJpeg: método UT \_ OffsetX:p
+# <a name="idxtjpegput_offsetx-method"></a>Método OffsetX IDxtJpeg::p ut \_
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `put_OffsetX` método especifica o deslocamento horizontal da origem do apagamento.
+O `put_OffsetX` método especifica o deslocamento horizontal da origem do apagando.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,26 +45,26 @@ HRESULT put_OffsetX(
 
 <dl> <dt>
 
-*newVal* \[ no\]
+*newVal* \[ Em\]
 </dt> <dd>
 
-O deslocamento horizontal da origem do apagamento, em pixels. O centro do apagamento é deslocado por esse valor.
+O deslocamento horizontal da origem do apagando, em pixels. O centro do apagando é deslocada por esse valor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**Interface IDxtJpeg**](idxtjpeg.md)
+[**IDxtJpeg Interface**](idxtjpeg.md)
 </dt> </dl>
 
  

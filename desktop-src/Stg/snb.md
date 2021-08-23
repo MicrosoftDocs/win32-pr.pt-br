@@ -6,12 +6,12 @@ keywords:
 - SNB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69d6860204d9f232c2ffafa4f1f16a1187fee8de
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e49a7868912b9d7d1e3d9f3b1f82805e6e285d815eacbc559c887febd23e9e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682776"
 ---
 # <a name="snb"></a>SNB
 
@@ -45,9 +45,9 @@ O marshaling de um **SNB** é baseado na suposição de que o **SNB** que foi pa
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Objidl. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Objidl. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Objidl. idl</dt> </dl> |
 
 

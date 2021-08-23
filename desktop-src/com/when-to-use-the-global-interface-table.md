@@ -4,12 +4,12 @@ description: Quando usar a tabela de interface global
 ms.assetid: def8f7f8-9d0d-49a4-9d5c-40233903eea5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f89bbd7437b65c85abe89e8d647cbd73555c2d6a
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 37457e0e1b35c0c1acb2c8f84750f3d0f08c1344eaf27e0361c442aea3be23ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639226"
 ---
 # <a name="when-to-use-the-global-interface-table"></a>Quando usar a tabela de interface global
 
@@ -18,7 +18,7 @@ Se você estiver desempacotando um ponteiro de interface várias vezes entre Apa
 > [!Note]  
 > Se o ponteiro de interface não tiver marshaling apenas uma vez, talvez você queira usar a função [**CoMarshalInterThreadInterfaceInStream**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterthreadinterfaceinstream) . Ele também pode ser usado para passar um ponteiro de interface de um thread para outro thread no mesmo processo.
 
- 
+ 
 
 A interface [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) também torna mais simples o problema anteriormente mais difícil para o programador. Esse problema ocorre quando as seguintes condições se aplicam:
 
@@ -36,6 +36,6 @@ Para resolver esse problema, o objeto externo que agrega o marshaler de thread l
 [Criando a tabela de interface global](creating-the-global-interface-table.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

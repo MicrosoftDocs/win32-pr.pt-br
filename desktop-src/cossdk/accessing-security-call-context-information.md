@@ -4,12 +4,12 @@ ms.assetid: 9fc0a9e5-934c-4510-8fbb-1fb2817aa0ea
 title: Acessando informações de contexto de chamada de segurança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6d7e5160c766783b6d43822571d624e0a595c9e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 38e438ce3cfa137ece28bce70d2c820becede231b1b0381da38dd7c6bcc21cb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639116"
 ---
 # <a name="accessing-security-call-context-information"></a>Acessando informações de contexto de chamada de segurança
 
@@ -38,13 +38,13 @@ As seguintes coleções de propriedades estão disponíveis no objeto de context
 
  
 
-Para obter mais informações sobre como usar essa coleção, os desenvolvedores do Microsoft Visual Basic devem ver a classe [**SecurityCallContext**](securitycallcontext.md) . Os desenvolvedores de C e C++ devem se referir a [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext).
+para obter mais informações sobre como usar essa coleção, os desenvolvedores do Microsoft Visual Basic devem ver a classe [**SecurityCallContext**](securitycallcontext.md) . Os desenvolvedores de C e C++ devem se referir a [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext).
 
 ## <a name="securitycallers-collection"></a>Coleção SecurityCallers
 
 A coleção [**SecurityCallers**](securitycallers.md) representa chamadores que podem ser recuperados usando um índice entre 0 e 1 menor que NumCallers, inclusive. Cada chamador é representado por um objeto [**SecurityIdentity**](securityidentity.md) .
 
-Para obter mais informações sobre essa coleção, Visual Basic os desenvolvedores devem ver a classe [**SecurityCallers**](securitycallers.md) . Os desenvolvedores de C e C++ devem se referir a [**ISecurityCallersColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallerscoll).
+para obter mais informações sobre essa coleção, Visual Basic os desenvolvedores devem ver a classe [**SecurityCallers**](securitycallers.md) . Os desenvolvedores de C e C++ devem se referir a [**ISecurityCallersColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallerscoll).
 
 ## <a name="securityidentity-collection"></a>Coleção SecurityIdentity
 
@@ -62,7 +62,7 @@ Para obter mais informações sobre essa coleção, Visual Basic os desenvolvedo
 
  
 
-Para obter mais informações sobre essa coleção, Visual Basic os desenvolvedores devem ver a classe [**SecurityIdentity**](securityidentity.md) . Os desenvolvedores de C e C++ devem se referir a [**ISecurityIdentityColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecurityidentitycoll).
+para obter mais informações sobre essa coleção, Visual Basic os desenvolvedores devem ver a classe [**SecurityIdentity**](securityidentity.md) . Os desenvolvedores de C e C++ devem se referir a [**ISecurityIdentityColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecurityidentitycoll).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

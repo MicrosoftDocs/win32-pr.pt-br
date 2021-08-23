@@ -1,5 +1,5 @@
 ---
-description: Uma lista de identificadores de territórios da NAI (identificador de acesso à rede).
+description: Uma lista de identificadores de Realm do NAI (Identificador de Acesso à Rede).
 ms.assetid: e77802ee-4017-4f04-ae71-5d6d0de8fcf3
 title: Elemento NAIRealm (Hotspot2)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a7c8fcf85bd23c13f0e7501d59c3db62c2bf82f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 084ee3ce04a560ce50c3ab0391f808bc09aed1bb90da6a34b86755b9b64ae772
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684206"
 ---
 # <a name="nairealm-hotspot2-element"></a>Elemento NAIRealm (Hotspot2)
 
-Uma lista de identificadores de territórios da NAI (identificador de acesso à rede). As entradas nessa lista geralmente são do formulário `user@domain` . A lista de territórios da NAI é o método preferencial para identificar a maioria dos operadores não móveis, como MSOs, operadores de conexão e locais públicos.
+Uma lista de identificadores de Realm do NAI (Identificador de Acesso à Rede). As entradas nesta lista geralmente são do formato `user@domain` . A lista Realm da NAI é o método preferencial para identificar a maioria dos operadores não móveis, como MSOs, operadores de linha de transmissão e locais públicos.
 
 ``` syntax
 <xs:element name="NAIRealm"
@@ -51,7 +51,7 @@ Uma lista de identificadores de territórios da NAI (identificador de acesso à 
 </xs:element>
 ```
 
-O elemento é definido pelo elemento [**Hotspot2**](wlan-profileschema-hotspot2-element.md) .
+O elemento é definido pelo [**elemento Hotspot2.**](wlan-profileschema-hotspot2-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -59,7 +59,7 @@ O elemento é definido pelo elemento [**Hotspot2**](wlan-profileschema-hotspot2-
 
 | Elemento | Type | Descrição                                                   |
 |---------|------|---------------------------------------------------------------|
-| name    |      | Um único identificador de realm. Geralmente do formulário `user@domain` . |
+| name    |      | Um único identificador de realm. Geralmente do formato `user@domain` . |
 
 
 

@@ -1,27 +1,27 @@
 ---
-title: O arquivo de cabeçalho
-description: O arquivo de cabeçalho contém definições de todos os tipos de dados e operações declarados no arquivo IDL, bem como todos os tipos de dados e operações declarados nos arquivos incluídos na diretiva \ include.
+title: O arquivo de header
+description: O arquivo de header contém definições de todos os tipos de dados e operações declaradas no arquivo IDL, bem como todos os tipos de dados e operações declarados nos arquivos incluídos com a diretiva \ include.
 ms.assetid: 51789b42-e01c-4233-97da-5e0a044f596f
 keywords:
-- MIDL e PRC de MIDL, interfaces, arquivo de cabeçalho
+- MIDL e RPC MIDL, interfaces, arquivo de header
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61331d8bb72d322987c13d02b04632c95424e755
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3cd107bbf741f3259ac474d03a3ec1eba5c4ab8217df3ff6afa5ef45e7b4945a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582126"
 ---
-# <a name="the-header-file"></a>O arquivo de cabeçalho
+# <a name="the-header-file"></a>O arquivo de header
 
-O arquivo de cabeçalho contém definições de todos os tipos de dados e operações declarados no arquivo IDL, bem como todos os tipos de dados e operações declarados nos arquivos incluídos na \# diretiva include. Os tipos de dados dos arquivos importados com a diretiva de importação não são replicados para o arquivo de cabeçalho; em vez disso, o arquivo de cabeçalho gerado contém uma linha de inclusão para o arquivo H gerado a partir do arquivo importado. O arquivo de cabeçalho deve ser incluído por todos os módulos de aplicativo que chamam as operações definidas, implementar as operações definidas ou manipular os tipos definidos.
+O arquivo de header contém definições de todos os tipos de dados e operações declarados no arquivo IDL, bem como todos os tipos de dados e operações declarados nos arquivos incluídos com a diretiva \# include. Os tipos de dados dos arquivos importados com a diretiva import não são replicados para o arquivo de header; em vez disso, o arquivo de header gerado contém uma linha de inclusão para o arquivo H gerado do arquivo importado. O arquivo de header deve ser incluído por todos os módulos de aplicativo que chamam as operações definidas, implementam as operações definidas ou manipulam os tipos definidos.
 
-O compilador MIDL alterna [**/header**](-header.md) e [**/out**](-out.md) afeta o arquivo de cabeçalho.
+As opções [**/header**](-header.md) e [**/out**](-out.md) do compilador MIDL afetam o arquivo de header.
 
- 
+ 
 
- 
+ 
 
 
 

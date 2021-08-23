@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 882aaf0d131ae6fe062c00c0181e2f913a0e1bc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96b1d8ce92a847dcd4ffcebca6b45df2b652ad74c1216fc60b8aac72bb6a12ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659716"
 ---
 # <a name="iwiaimagefilterfilterpreviewimage-method"></a>Método IWiaImageFilter:: FilterPreviewImage
 
@@ -54,13 +54,13 @@ Não usado. Defina como 0.
 *pWiaChildItem2* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
 O item que é processado.
 
 </dd> <dt>
 
-_InputImageExtents * \[ in\]
+*InputImageExtents* \[ no\]
 </dt> <dd>
 
 Tipo: **Rect**
@@ -72,15 +72,15 @@ As coordenadas (na área de aquisição física) da imagem que o componente de v
 *pInputStream* \[ no\]
 </dt> <dd>
 
-Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream) \** _
+Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream)\***
 
 Um ponteiro para a interface [IStream](/windows/win32/api/objidl/nn-objidl-istream) para os dados de imagem armazenados em cache que são filtrados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -100,9 +100,9 @@ Um aplicativo deve garantir que *pWiaChildItem2* tenha o mesmo formato de imagem
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

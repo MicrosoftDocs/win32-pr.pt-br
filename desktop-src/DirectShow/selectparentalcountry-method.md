@@ -1,15 +1,15 @@
 ---
-description: O método SelectParentalCountry define o país/região pai especificado para reprodução subsequente.
+description: O método SelectParentalCountry define o país/região dos pais especificado para reprodução subsequente.
 ms.assetid: 70368351-c7b9-4640-a4f7-7d972b8e4628
 title: Método SelectParentalCountry
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2216d2b2ed72436aca003b42cbf811c8a01bd8fa
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d148145f2c38cdb01da209e02f6400301da851e1d2b41e5adaf84b2338ad21c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684056"
 ---
 # <a name="selectparentalcountry-method"></a>Método SelectParentalCountry
 
@@ -18,7 +18,7 @@ ms.locfileid: "104500582"
 
  
 
-O `SelectParentalCountry` método define o país/região pai especificado para reprodução subsequente.
+O `SelectParentalCountry` método define o país/região dos pais especificado para reprodução subsequente.
 
 ``` syntax
 MSWebDVD.SelectParentalCountry(iCountry, sUserName, sPassword)
@@ -28,24 +28,24 @@ MSWebDVD.SelectParentalCountry(iCountry, sUserName, sPassword)
 
 <dl> <dt>
 
-<span id="iCountry"></span><span id="icountry"></span><span id="ICOUNTRY"></span>*iCountry*
+<span id="iCountry"></span><span id="icountry"></span><span id="ICOUNTRY"></span>*Icountry*
 </dt> <dd>
 
-Especifica o país/região como um inteiro.
+Especifica o país/região como um Inteiro.
 
 </dd> <dt>
 
 <span id="sUserName"></span><span id="susername"></span><span id="SUSERNAME"></span>*sUserName*
 </dt> <dd>
 
-Especifica o usuário conectado no momento como uma cadeia de caracteres. (Ignorado no momento.)
+Especifica o usuário conectado atual como uma Cadeia de Caracteres. (Atualmente ignorado.)
 
 </dd> <dt>
 
 <span id="sPassword"></span><span id="spassword"></span><span id="SPASSWORD"></span>*sPassword*
 </dt> <dd>
 
-Especifica a cadeia de caracteres de senha do aplicativo.
+Especifica a cadeia de caracteres da senha do aplicativo.
 
 </dd> </dl>
 
@@ -55,7 +55,7 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O país/região pai determina como os níveis de pais são interpretados.
+O país/região dos pais determina como os níveis dos pais são interpretados.
 
 ## <a name="see-also"></a>Confira também
 

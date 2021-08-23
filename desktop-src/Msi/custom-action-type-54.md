@@ -1,15 +1,15 @@
 ---
-description: Os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 54 quando as ações padrão são insuficientes para executar a instalação.
+description: os desenvolvedores de Windows Installer pacotes podem optar por usar um tipo de ação personalizada 54 quando as ações padrão são insuficientes para executar a instalação.
 ms.assetid: ab348a8e-f5df-4e03-a1b7-1ab1a7fbcb3b
 title: Tipo de ação personalizada 54
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 623e8d4ffe955c73ef95a5948aa6e043702a35f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c206eec715982e1fd23978a04393b6036f77abf4c18807d2e5d43d27755640c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520076"
 ---
 # <a name="custom-action-type-54"></a>Tipo de ação personalizada 54
 
@@ -33,7 +33,7 @@ Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-tab
 
  
 
-Windows Installer pode usar ações personalizadas de 64 bits em sistemas operacionais de 64 bits. Uma ação personalizada de 64 bits baseada em scripts deve incluir o bit **msidbCustomActionType64BitScript** em seu tipo numérico. Para obter informações [, consulte ações personalizadas de 64 bits](64-bit-custom-actions.md). Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-table.md) para especificar o tipo numérico básico de uma ação personalizada de 64 bits.
+Windows O instalador pode usar ações personalizadas de 64 bits em sistemas operacionais de 64 bits. Uma ação personalizada de 64 bits baseada em scripts deve incluir o bit **msidbCustomActionType64BitScript** em seu tipo numérico. Para obter informações [, consulte ações personalizadas de 64 bits](64-bit-custom-actions.md). Inclua o seguinte valor na coluna Type da [tabela CustomAction](customaction-table.md) para especificar o tipo numérico básico de uma ação personalizada de 64 bits.
 
 
 
@@ -63,11 +63,11 @@ Inclua bits de sinalizador opcionais na coluna Type da [tabela CustomAction](cus
 
 ## <a name="return-values"></a>Valores de retorno
 
-Funções opcionais escritas em script devem retornar um dos valores descritos em [valores de retorno de ações personalizadas JScript e VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
+funções opcionais escritas em script devem retornar um dos valores descritos em [valores de retorno de JScript e ações personalizadas do VBScript](return-values-of-jscript-and-vbscript-custom-actions.md).
 
 ## <a name="remarks"></a>Comentários
 
-Uma ação personalizada escrita em JScript ou VBScript requer o objeto de [**sessão**](session-object.md) de instalação. O instalador anexa o **objeto de sessão** ao script com a *sessão* de nome. Como o objeto de **sessão** pode não existir durante uma reversão de instalação, uma ação personalizada adiada escrita em script deve usar um dos métodos ou propriedades do objeto de **sessão** descrito na seção [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar seu contexto.
+uma ação personalizada escrita em JScript ou VBScript requer o objeto de [**sessão**](session-object.md) de instalação. O instalador anexa o **objeto de sessão** ao script com a *sessão* de nome. Como o objeto de **sessão** pode não existir durante uma reversão de instalação, uma ação personalizada adiada escrita em script deve usar um dos métodos ou propriedades do objeto de **sessão** descrito na seção [obtendo informações de contexto para ações personalizadas de execução adiada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar seu contexto.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

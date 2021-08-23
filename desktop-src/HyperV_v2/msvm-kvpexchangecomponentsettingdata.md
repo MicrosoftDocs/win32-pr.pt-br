@@ -40,12 +40,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2fe2ef128d3212ba2dfd47a3d71f713c26ba2435
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54129a1c50a67baa6eecd9f00efb44fad16fba503329cb530a0373f9b8e2b505
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522075"
 ---
 # <a name="msvm_kvpexchangecomponentsettingdata-class"></a>\_Classe Msvm KvpExchangeComponentSettingData
 
@@ -240,7 +240,7 @@ Tipo de acesso: leitura/gravação
 Essa propriedade desabilita o host de populatinghost automaticamente o nome e as informações do sistema operacional dentro do convidado.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -512,8 +512,8 @@ O acesso à classe **Msvm \_ KvpExchangeComponentSettingData** pode ser restring
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

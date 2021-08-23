@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Database
-description: O nome do banco de dados de SQL Server envolvido na replicação.
+title: atributo MS-SQL-Database
+description: o nome do banco de dados de SQL Server envolvido na replicação.
 ms.assetid: 624705d9-df3f-458e-98f4-fb8da073efd6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Database
-- Esquema de AD do atributo mS-SQL-Database
+- esquema de AD do atributo MS-SQL-Database
+- esquema de AD do atributo mS-SQL-Database
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6c448213bee18fede3cc8a77cabf607c3b2ee3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e7820e9ea165922fa2b77606ee160469a8866870346208ed199350df7a5e238b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583396"
 ---
-# <a name="ms-sql-database-attribute"></a>Atributo MS-SQL-Database
+# <a name="ms-sql-database-attribute"></a>atributo MS-SQL-Database
 
-O nome do banco de dados de SQL Server envolvido na replicação.
+o nome do banco de dados de SQL Server envolvido na replicação.
 
 
 
@@ -58,15 +58,15 @@ O nome do banco de dados de SQL Server envolvido na replicação.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
-| É indexado             | True                                                                |
-| No catálogo global      | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
+| É indexado             | Verdadeiro                                                                |
+| No catálogo global      | Verdadeiro                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O nome do banco de dados de SQL Server envolvido na replicação.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
-| É indexado             | True                                                                |
-| No catálogo global      | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
+| É indexado             | Verdadeiro                                                                |
+| No catálogo global      | Verdadeiro                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O nome do banco de dados de SQL Server envolvido na replicação.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
-| É indexado             | True                                                                |
-| No catálogo global      | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
+| É indexado             | Verdadeiro                                                                |
+| No catálogo global      | Verdadeiro                                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O nome do banco de dados de SQL Server envolvido na replicação.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
-| É indexado             | True                                                                |
-| No catálogo global      | True                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| Tem valor único       | Verdadeiro                                                                |
+| É indexado             | Verdadeiro                                                                |
+| No Catálogo Global      | Verdadeiro                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O nome do banco de dados de SQL Server envolvido na replicação.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
-| É indexado             | True                                                                |
-| No catálogo global      | True                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| Tem valor único       | Verdadeiro                                                                |
+| É indexado             | Verdadeiro                                                                |
+| No Catálogo Global      | Verdadeiro                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O nome do banco de dados de SQL Server envolvido na replicação.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
-| É indexado             | True                                                                |
-| No catálogo global      | True                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| Tem valor único       | Verdadeiro                                                                |
+| É indexado             | Verdadeiro                                                                |
+| No Catálogo Global      | Verdadeiro                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

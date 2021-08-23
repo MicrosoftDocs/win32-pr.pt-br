@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ef88168836d1e4a5f81efae81533036dc2b29045
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f0214c3572553d948c4cec2cf4cc55936e2030dd8da3912ffbcf5b22f8f1dd2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582206"
 ---
 # <a name="startservice-method-of-the-msvm_transparentbridgingservice-class"></a>Método StartService da classe Msvm \_ TransparentBridgingService
 
@@ -63,7 +63,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

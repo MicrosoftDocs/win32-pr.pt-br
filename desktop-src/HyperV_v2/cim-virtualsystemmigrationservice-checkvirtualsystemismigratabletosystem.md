@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: método CheckVirtualSystemIsMigratableToSystem da classe CIM_VirtualSystemMigrationService'
+description: 'Saiba mais sobre: Método CheckVirtualSystemIsMigratableToSystem da classe CIM_VirtualSystemMigrationService'
 ms.assetid: d3f7c926-804f-4c7c-8964-a8e464155417
 title: Método CheckVirtualSystemIsMigratableToSystem da classe CIM_VirtualSystemMigrationService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: be85c51cb507fea3cea14f1706ffa8f67af06c42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f2f543cff29464d76f1b2729efa9bca1a0c677d3cd7173975f59d2007aafb7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682706"
 ---
-# <a name="checkvirtualsystemismigratabletosystem-method-of-the-cim_virtualsystemmigrationservice-class"></a>Método CheckVirtualSystemIsMigratableToSystem da \_ classe VIRTUALSYSTEMMIGRATIONSERVICE CIM
+# <a name="checkvirtualsystemismigratabletosystem-method-of-the-cim_virtualsystemmigrationservice-class"></a>Método CheckVirtualSystemIsMigratableToSystem da classe CIM \_ VirtualSystemMigrationService
 
-Método para executar uma verificação prévia para determinar se um sistema virtual provavelmente será migrado com êxito para um sistema de destino. Esse método não garante que uma migração subsequente sempre terá sucesso, devido à disponibilidade dinâmica de recursos. Descrição do código de retorno:
+Método para executar uma pré-verificação para determinar se um sistema virtual provavelmente será migrado com êxito para um sistema de destino. Esse método não garante que uma migração subsequente sempre terá êxito, devido à disponibilidade dinâmica de recursos. Descrição do código de retorno:
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,66 +44,66 @@ uint32 CheckVirtualSystemIsMigratableToSystem(
 
 <dl> <dt>
 
-*ComputerSystem* \[ no\]
+*ComputerSystem* \[ Em\]
 </dt> <dd>
 
-[**CIM \_**](cim-computersystem.md) Instância de ComputerSystem que faz referência ao sistema de computador virtual de origem a ser migrado.
+[**CIM \_ Instância do ComputerSystem**](cim-computersystem.md) que referencia o sistema de computador virtual de origem a ser migrado.
 
 </dd> <dt>
 
-*DestinationSystem* \[ no\]
+*DestinationSystem* \[ Em\]
 </dt> <dd>
 
-[**CIM \_**](cim-system.md) Instância do sistema que faz referência ao sistema de destino para o qual migrar o sistema virtual.
+[**CIM \_ Instância**](cim-system.md) do sistema que faz referência ao sistema de destino para o qual migrar o sistema virtual.
 
 </dd> <dt>
 
-*MigrationSettingData* \[ no\]
+*MigrationSettingData* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres que contém uma instância inserida da classe [**CIM \_ VirtualSystemMigrationSettingData**](cim-virtualsystemmigrationsettingdata.md) que representa as configurações de migração aplicáveis à operação de migração.
+Cadeia de caracteres que contém uma instância inserida da [**classe CIM \_ VirtualSystemMigrationSettingData**](cim-virtualsystemmigrationsettingdata.md) que representa as configurações de migração aplicáveis à operação de migração.
 
 </dd> <dt>
 
-*NewSystemSettingData* \[ no\]
+*NewSystemSettingData* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres que contém uma instância inserida da classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que representa as novas propriedades aplicáveis ao sistema virtual depois que ele é migrado.
+Cadeia de caracteres que contém uma instância inserida da classe [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que representa novas propriedades aplicáveis ao sistema virtual depois que ela é migrada.
 
 </dd> <dt>
 
-*NewResourceSettingData* \[ no\]
+*NewResourceSettingData* \[ Em\]
 </dt> <dd>
 
-Matriz de cadeias de caracteres que contém uma instância incorporada da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representa as novas propriedades aplicáveis aos recursos virtuais no escopo do sistema virtual depois que ele é migrado.
+Matriz de cadeias de caracteres que contêm uma instância inserida da classe [**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md) que representa novas propriedades aplicáveis aos recursos virtuais no escopo do sistema virtual depois que ele é migrado.
 
 </dd> <dt>
 
-*IsMigratable* \[ fora\]
+*IsMigratable* \[ out\]
 </dt> <dd>
 
 O resultado da verificação de migração que indica se o sistema virtual pode ou não ser migrado com êxito.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 
 
-| Código/valor de retorno                                                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                                                                                     |
+| Valor/código de retorno                                                                                                                                                | Descrição                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>    | Verificação realizada; resultado relatado por meio do valor do \[ parâmetro out \] *IsMigratable* .<br/>                                                                                                                                                                                                                                                                          |
-| <dl> <dt>**Sem suporte**</dt> <dt>1</dt> </dl>              | Método sem suporte pela implementação. Nenhum resultado relatado pelo valor do \[ parâmetro out \] *IsMigratable* .<br/>                                                                                                                                                                                                                                                |
-| <dl> <dt>**Com falha**</dt> <dt>2</dt> </dl>                     | A verificação falhou por razões não especificadas. Nenhum resultado relatado pelo valor do \[ parâmetro out \] *IsMigratable* .<br/>                                                                                                                                                                                                                                                  |
-| <dl> <dt>**Tempo limite**</dt> <dt>3</dt> </dl>                    | A verificação atingiu o tempo limite. Nenhum resultado relatado pelo valor do \[ parâmetro out \] *IsMigratable* .<br/>                                                                                                                                                                                                                                                                       |
-| <dl> <dt>**Parâmetro inválido**</dt> <dt>4</dt> </dl>          | Um ou mais parâmetros são formalmente inválidos. Por exemplo, o valor do parâmetro *DestinationSystem* não inclui um caminho de objeto válido. Nenhum resultado relatado pelo valor do \[ parâmetro out \] *IsMigratable* .<br/>                                                                                                                                        |
-| <dl> <dt>**Estado inválido**</dt> <dt>5</dt> </dl>              | O sistema virtual de origem, o sistema host de origem ou o sistema host de destino estão em um estado que permite a inicialização da migração de sistema virtual solicitada; Essa pode ser uma condição temporária. Nenhum resultado relatado pelo valor do \[ parâmetro out \] *IsMigratable* .<br/>                                                                                    |
-| <dl> <dt>**Parâmetros incompatíveis**</dt> <dt>6</dt> </dl>    | Um ou mais parâmetros de entrada são incompatíveis como um conjunto ou em relação ao host de destino. Por exemplo, o valor do parâmetro *NewSettingData* contém propriedades que não são suportadas pelo sistema host de destino identificado pelo valor do parâmetro *DestinationSystem* . Nenhum resultado relatado pelo valor do \[ parâmetro out \] *IsMigratable* .<br/> |
-| <dl> <dt>**DMTF reservado**</dt> <dt>..</dt> </dl>             |                                                                                                                                                                                                                                                                                                                                                                                 |
-| <dl> <dt>**Método reservado**</dt> <dt>4097.. 32767</dt> </dl>  |                                                                                                                                                                                                                                                                                                                                                                                 |
-| <dl> 32768 <dt>**específicos do fornecedor**</dt> <dt>. 65535</dt> </dl> |                                                                                                                                                                                                                                                                                                                                                                                 |
+| <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>    | Verificação executada; resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/>                                                                                                                                                                                                                                                                          |
+| <dl> <dt>**Sem suporte**</dt> <dt>1</dt> </dl>              | Método sem suporte pela implementação. Nenhum resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/>                                                                                                                                                                                                                                                |
+| <dl> <dt>**Falha**</dt> <dt>2</dt> </dl>                     | Falha na verificação por motivos não especificados. Nenhum resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/>                                                                                                                                                                                                                                                  |
+| <dl> <dt>**Tempoout**</dt> <dt>3</dt> </dl>                    | Verifique o tempo de saída. Nenhum resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/>                                                                                                                                                                                                                                                                       |
+| <dl> <dt>**Parâmetro inválido**</dt> <dt>4</dt> </dl>          | Um ou mais parâmetros são formalmente inválidos. Por exemplo, o valor do parâmetro *DestinationSystem* não inclui um caminho de objeto válido. Nenhum resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/>                                                                                                                                        |
+| <dl> <dt>**Estado inválido**</dt> <dt>5</dt> </dl>              | O sistema virtual de origem, o sistema de host de origem ou o sistema de host de destino estão em um estado que permite o início da migração do sistema virtual solicitada; essa pode ser uma condição temporária. Nenhum resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/>                                                                                    |
+| <dl> <dt>**Parâmetros incompatíveis**</dt> <dt>6</dt> </dl>    | Um ou mais parâmetros de entrada são incompatíveis como um conjunto ou em relação ao host de destino. Por exemplo, o valor do *parâmetro NewSettingData* contém propriedades que não têm suporte pelo sistema de host de destino identificado pelo valor do *parâmetro DestinationSystem.* Nenhum resultado relatado por meio do valor do \[ parâmetro \] *Out IsMigratable.*<br/> |
+| <dl> <dt>**DMTF Reservado**</dt> <dt>..</dt> </dl>             |                                                                                                                                                                                                                                                                                                                                                                                 |
+| <dl> <dt>**Método Reservado**</dt> <dt>4097..32767</dt> </dl>  |                                                                                                                                                                                                                                                                                                                                                                                 |
+| <dl> <dt>**Fornecedor específico**</dt> <dt>32768..65535</dt> </dl> |                                                                                                                                                                                                                                                                                                                                                                                 |
 
 
 
@@ -117,8 +117,8 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -127,7 +127,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMIGRATIONSERVICE CIM**](cim-virtualsystemmigrationservice.md)
+[**CIM \_ VirtualSystemMigrationService**](cim-virtualsystemmigrationservice.md)
 </dt> </dl>
 
  

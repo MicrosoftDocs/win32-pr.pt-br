@@ -1,28 +1,28 @@
 ---
 title: Configuração do pool privado
-description: Contém o projeto do console de instalação do.
+description: Contém o projeto de console de instalação.
 ms.assetid: 0B00690C-9B13-4D8B-8AB6-F8BD2E35858C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a661e65610e6cefb03ee9d47f70d7dc8d6d92a0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf2f2eb309e054ef41d9b1f2842367d595ea83a2feb61880b2ea7ba606cdbe1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683376"
 ---
 # <a name="private-pool-setup"></a>Configuração do pool privado
 
 As seções a seguir contêm o código necessário para configurar um pool de sensor privado.
 
--   [Targetver. h](#targetverh)
--   [Stdafx. h](#stdafxh)
--   [PrivatePoolCommonDefs. h](#privatepoolcommondefsh)
--   [PrivatePoolSetup. cpp](#privatepoolsetupcpp)
+-   [Targetver.h](#targetverh)
+-   [Stdafx.h](#stdafxh)
+-   [PrivatePoolCommonDefs.h](#privatepoolcommondefsh)
+-   [PrivatePoolSetup.cpp](#privatepoolsetupcpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>Targetver.h
 
-Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.
+Este exemplo foi criado para sistemas operacionais Windows 7 e posteriores.
 
 
 ```C++
@@ -65,9 +65,9 @@ Este exemplo foi criado para o Windows 7 e sistemas operacionais posteriores.
 
 
 
-## <a name="privatepoolcommondefsh"></a>PrivatePoolCommonDefs. h
+## <a name="privatepoolcommondefsh"></a>PrivatePoolCommonDefs.h
 
-Inclua o cabeçalho a seguir. Observe que você deve gerar uma ID de banco de dados exclusiva. Não use o GUID fornecido em um aplicativo liberado.
+Inclua o seguinte header. Observe que você deve gerar uma ID de banco de dados exclusiva. Não use o GUID fornecido em um aplicativo liberado.
 
 
 ```C++
@@ -99,9 +99,9 @@ static const GUID PRIVATE_POOL_DATABASE_ID =
 
 
 
-## <a name="privatepoolsetupcpp"></a>PrivatePoolSetup. cpp
+## <a name="privatepoolsetupcpp"></a>PrivatePoolSetup.cpp
 
-O código-fonte a seguir exibe o ponto de entrada para um aplicativo de pool de sensores privado.
+O código-fonte a seguir exibe o ponto de entrada para um aplicativo de pool de sensor privado.
 
 
 ```C++
@@ -530,9 +530,9 @@ static bool isDatabaseInstalled(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

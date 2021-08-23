@@ -1,12 +1,12 @@
 ---
-title: Método OnWarning do IMsTscAxEvents
-description: Chamado quando o controle de cliente encontra uma condição de erro que não é fatal.
+title: Método OnWarning IMsTscAxEvents
+description: Chamado quando o controle do cliente encontra uma condição de erro que não é fatal.
 ms.assetid: af43d3aa-0ae8-4721-b85d-bb043b20dc40
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnWarning
-- Método OnWarning Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnWarning
+- Método OnWarning Serviços de Área de Trabalho Remota
+- Método OnWarning Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota , método OnWarning
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aadc7013f34c93406f93841896a9041bbb1b7cfb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbcebe5c86bb50913ba11d4485f30757f399467aa30730f8cd27de50e360c0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657136"
 ---
-# <a name="imstscaxeventsonwarning-method"></a>Método IMsTscAxEvents:: OnWarning
+# <a name="imstscaxeventsonwarning-method"></a>Método IMsTscAxEvents::OnWarning
 
-Chamado quando o controle de cliente encontra uma condição de erro que não é fatal.
+Chamado quando o controle do cliente encontra uma condição de erro que não é fatal.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void OnWarning(
 
 <dl> <dt>
 
-*WarningCode* \[ no\]
+*warningCode* \[ Em\]
 </dt> <dd>
 
 O código de erro.
@@ -61,13 +61,13 @@ O cache de bitmap está corrompido.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

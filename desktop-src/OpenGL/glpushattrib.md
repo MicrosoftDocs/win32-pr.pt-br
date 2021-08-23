@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0bc15b85ddca3bdbe5f6774b5368c6f0cde8dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 252859065ddae0439441acb6afd797d26bbed44a246b628b4f0350d7f3b1e2d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519986"
 ---
 # <a name="glpushattrib-function"></a>função glPushAttrib
 
@@ -40,7 +40,7 @@ void WINAPI glPushAttrib(
 
 <dl> <dt>
 
-*mascara* 
+*mask* 
 </dt> <dd>
 
 Uma máscara que indica quais atributos salvar. As constantes de máscara simbólica e seu estado de OpenGL associado são os seguintes (os parágrafos recuados listam os atributos que são salvos):

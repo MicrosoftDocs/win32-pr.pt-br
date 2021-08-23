@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b09b64e5c812348b270540a5f791779df9774d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8001d156553fa712b34d3e5d6a5991137bb76a7f1f321db61f20e300e8fc16ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552736"
 ---
 # <a name="ms-ds-az-task-is-role-definition-attribute"></a>atributo ms-DS-AZ-Task-is-role-Definition
 
@@ -57,7 +57,7 @@ Um campo booliano que indica se AzTask é uma tarefa clássica ou uma definiçã
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| É de valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
@@ -78,7 +78,7 @@ Um campo booliano que indica se AzTask é uma tarefa clássica ou uma definiçã
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| É de valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
@@ -99,7 +99,7 @@ Um campo booliano que indica se AzTask é uma tarefa clássica ou uma definiçã
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| É de valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
@@ -120,15 +120,15 @@ Um campo booliano que indica se AzTask é uma tarefa clássica ou uma definiçã
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classes usadas em        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Um campo booliano que indica se AzTask é uma tarefa clássica ou uma definiçã
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Classes usadas em        | [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

@@ -37,12 +37,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b64762b824cea7d3b064636e7f7f87777e053daf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c729690bb2c8f59610fd1610e9123dfddf267152d1b428be308b5bd3ec23fe2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524537"
 ---
 # <a name="msvm_ethernetswitchhardwareoffloaddata-class"></a>\_Classe Msvm EthernetSwitchHardwareOffloadData
 
@@ -139,7 +139,7 @@ Qualificadores: **WmiDataId** (11), **InterfaceVersion** (3), **InterfaceRevisio
 A configuração de VMMQ atual para a fila padrão
 
 > [!Note]  
-> Propriedade adicionada no Windows 10, versão 1703.
+> propriedade adicionada em Windows 10, versão 1703.
 
  
 
@@ -160,7 +160,7 @@ Qualificadores: **WmiDataId** (12), **InterfaceVersion** (3), **InterfaceRevisio
 O número atual de filas alocadas para a fila padrão
 
 > [!Note]  
-> Propriedade adicionada no Windows 10, versão 1703.
+> propriedade adicionada em Windows 10, versão 1703.
 
  
 
@@ -181,7 +181,7 @@ Qualificadores: **WmiDataId** (10), **InterfaceVersion** (3), **InterfaceRevisio
 A configuração de VRss atual para a fila padrão
 
 > [!Note]  
-> Propriedade adicionada no Windows 10, versão 1703.
+> propriedade adicionada em Windows 10, versão 1703.
 
  
 
@@ -202,7 +202,7 @@ Qualificadores: **WmiDataId** (15), **InterfaceVersion** (4), **InterfaceRevisio
 Indica se a CPU de VMQ primária foi excluída da tabela de indireção VRSS/VMMQ.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -223,7 +223,7 @@ Qualificadores: **WmiDataId** (16), **InterfaceVersion** (4), **InterfaceRevisio
 Indica se a difusão do VRSS deve ser sempre feita para a fila padrão, independentemente do estado de RSS do vPort externo.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -244,7 +244,7 @@ Qualificadores: **WmiDataId** (13), **InterfaceVersion** (4), **InterfaceRevisio
 Indica o número mínimo de filas usadas para VRSS/VMMQ.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -265,7 +265,7 @@ Qualificadores: **WmiDataId** (14), **InterfaceVersion** (4), **InterfaceRevisio
 Indica como as filas VRSS/VMMQ são direcionadas para processadores de host diferentes.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -380,7 +380,7 @@ O número atual de funções virtuais que estão sendo usadas pelo comutador.
 **IPsecSACapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -389,14 +389,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número máximo de descarregamentos de associação de segurança IPsec com suporte no comutador.
+O número máximo de descarregas de associação de segurança IPsec com suporte pela opção.
 
 </dd> <dt>
 
 **IPsecSAUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -405,7 +405,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número atual de descarregamentos de associação de segurança IPsec que estão sendo usados pelo comutador.
+O número atual de descarregas de associação de segurança IPsec que estão sendo usados pela opção.
 
 </dd> <dt>
 
@@ -418,17 +418,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **substituição**, **maxlen** (256)
+Qualificadores: **Key**, **Override**, **MaxLen** (256)
 </dt> </dl>
 
-O nome exclusivo do recurso. Esta propriedade é herdada de [**Msvm \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+O nome exclusivo do recurso. Essa propriedade é herdada de [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
 **PacketDirectInUse**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -437,10 +437,10 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (9), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se o pacote direto está sendo usado pelo comutador
+Indica se o pacote direto está sendo usado pela opção
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -455,14 +455,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe de criação do sistema de hospedagem. Esta propriedade é herdada de [**Msvm \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+O nome da classe de criação do sistema de hospedagem. Essa propriedade é herdada de [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -471,17 +471,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-O nome do comutador virtual ao qual a instância de recurso associada está associada. Esta propriedade é herdada de [**Msvm \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+O nome do com switch virtual ao qual a instância de recurso associada está associada. Essa propriedade é herdada de [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
 **VmqCapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -490,14 +490,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número máximo de descarregamentos de fila de máquina virtual com suporte no comutador.
+O número máximo de descarregadores de fila de máquinas virtuais com suporte pela opção.
 
 </dd> <dt>
 
 **VmqUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -506,7 +506,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número atual de descarregamentos de fila de máquina virtual que estão sendo usados pelo comutador.
+O número atual de descarregas de fila de máquinas virtuais que estão sendo usados pela opção.
 
 </dd> </dl>
 
@@ -516,10 +516,10 @@ O número atual de descarregamentos de fila de máquina virtual que estão sendo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,7 +1,7 @@
 ---
-description: O método setfloatvalue adiciona um novo valor FLOAT (tipo VT \_ R4) ou substitui um existente.
+description: O método SetFloatValue adiciona um novo valor FLOAT (tipo VT R4) ou substitui \_ um existente.
 ms.assetid: 1e0c9d19-47bf-4d93-a0c0-27e2c4897012
-title: 'Método IPortableDeviceValues:: setfloatvalue (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetFloatValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 60b42217c925c83e96f2c893c7bc7f11449ebdd6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 347cf93fe68e989eebb921472d1e81e4d0aa650e92d2c535dfdd93a6d823ed1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657806"
 ---
-# <a name="iportabledevicevaluessetfloatvalue-method"></a>Método IPortableDeviceValues:: setfloatvalue
+# <a name="iportabledevicevaluessetfloatvalue-method"></a>Método IPortableDeviceValues::SetFloatValue
 
-O método **Setfloatvalue** adiciona um novo valor **float** (tipo VT \_ R4) ou substitui um existente.
+O **método SetFloatValue** adiciona um novo valor **FLOAT** (tipo VT R4) ou substitui \_ um existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT SetFloatValue(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
+Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
 
 </dd> <dt>
 
-*Valor* \[ do no\]
+*Valor* \[ Em\]
 </dt> <dd>
 
-Um **float** que contém o novo valor.
+Um **FLOAT** que contém o novo valor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -71,7 +71,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -88,10 +88,10 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceValues:: getfloatvalue**](iportabledevicevalues-getfloatvalue.md)
+[**IPortableDeviceValues::GetFloatValue**](iportabledevicevalues-getfloatvalue.md)
 </dt> </dl>
 
  

@@ -2,7 +2,7 @@
 description: Envia um trabalho para um sistema operacional para execução em uma data e hora especificadas no futuro.
 ms.assetid: 9d582fbb-24cb-401d-8b77-af7671a24e6d
 ms.tgt_platform: multiple
-title: Método Create da classe Win32_ScheduledJob
+title: Criar método da classe Win32_ScheduledJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9f1acae94ea29d2d57b2952c0b0adc267ad3066c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a7788c894646b3ebb07fc9d3d98aeeda54b9172b5dde01e7eb65975bb2d95d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547406"
 ---
-# <a name="create-method-of-the-win32_scheduledjob-class"></a>Método Create da classe Win32 \_ ScheduledJob
+# <a name="create-method-of-the-win32_scheduledjob-class"></a>Criar método da classe ScheduledJob win32 \_
 
-O método **Create** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) envia um trabalho para um sistema operacional para execução em uma data e hora especificadas no futuro. Esse método requer que o serviço de agendamento seja iniciado no computador para o qual o trabalho é enviado.
+O **método** [criar classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) envia um trabalho para um sistema operacional para execução em uma data e hora especificadas no futuro. Esse método requer que o serviço de agendamento seja iniciado no computador para o qual o trabalho é enviado.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,41 +48,41 @@ uint32 Create(
 
 <dl> <dt>
 
-*Comando* \[ no\]
+*Comando* \[ Em\]
 </dt> <dd>
 
-Nome do comando, programa em lotes ou arquivo binário e parâmetros de linha de comando que o serviço de agendamento usa para invocar o trabalho.
+Nome do comando, programa em lotes ou parâmetros de arquivo binário e linha de comando que o serviço de agendamento usa para invocar o trabalho.
 
-Exemplo: "Defrag/q/f".
+Exemplo: "defrag /q /f".
 
 </dd> <dt>
 
-*StartTime* \[ no\]
+*StartTime* \[ Em\]
 </dt> <dd>
 
-Tempo universal coordenado (UTC) para executar um trabalho. O formulário deve ser: "AAAAMMDDHHMMSS. MMMMMm (+-) OOO ", onde" aaaammdd "deve ser substituído por" \* \* \* \* \* \* \* \* ". Por exemplo: " \* \* \* \* \* \* \* \* 143000.000000-420" especifica 14,30 (2:30 P.M.) PST com o horário de verão em vigor.
+Tempo Universal Coordenado (UTC) para executar um trabalho. O formulário deve ser: "AAAAMMDDHHMMSS. MMMMMM(+-)OOO", em que "YYYYMMDD" deve ser substituído por " \* \* \* \* \* \* \* \* ". Por exemplo: " \* \* \* \* \* \* \* \* 143000.000000-420" especifica 14.30 (14:30 P.M.) PST com horário de verão em vigor.
 
-A seção "(+-) OOO" do valor da Propriedade StartTime é a tendência atual para a conversão de hora local. A tendência é a diferença entre a hora UTC e a hora local. Para calcular a tendência de seu fuso horário, multiplique o número de horas em que o fuso horário está adiantado ou atrasado no horário de Greenwich (GMT) por 60 (use um número positivo para o número de horas se o fuso horário estiver à frente do GMT e um número negativo se o fuso horário estiver atrás do GMT). Adicione um 60 adicional ao seu cálculo se o seu fuso horário estiver usando o horário de verão. Por exemplo, o fuso horário padrão do Pacífico é de oito horas atrás do GMT, portanto, a tendência é igual a-420 (-8 \* 60 + 60) quando o horário de verão está em uso e-480 (-8 \* 60) quando o horário de verão não está em uso. Você também pode determinar o valor da tendência consultando a propriedade Bias da classe TimeZone do [**Win32 \_**](win32-timezone.md) .
+A seção "(+-)OOO" do valor da propriedade StartTime é o desvio atual para a tradução de horário local. O desvio é a diferença entre a hora UTC e a hora local. Para calcular o desvio para o fuso horário, multiplique o número de horas que seu fuso horário está à frente ou atrás de GMT (Horário de Greenwich) por 60 (use um número positivo para o número de horas se o fuso horário estiver à frente de GMT e um número negativo se o fuso horário estiver atrás de GMT). Adicione mais 60 ao cálculo se o fuso horário estiver usando o horário de verão. Por exemplo, o Fuso Horário Padrão do Pacífico está oito horas atrás do GMT, portanto, o desvio é igual a -420 (-8 60 + 60) quando o horário de verão está em uso e \* -480 (-8 60) quando o horário de verão não \* está em uso. Você também pode determinar o valor do desvio consultando a propriedade bias da [**classe Win32 \_ TimeZone.**](win32-timezone.md)
 
 </dd> <dt>
 
-*RunRepeatedly* \[ em, opcional\]
+*RunRepeatedly* \[ in, opcional\]
 </dt> <dd>
 
-Se **for true**, um trabalho agendado será executado repetidamente em dias específicos. O padrão é **False**.
+Se **True**, um trabalho agendado será executado repetidamente em dias específicos. O padrão é **False**.
 
 </dd> <dt>
 
-*DaysOfWeek* \[ em, opcional\]
+*DaysOfWeek* \[ in, opcional\]
 </dt> <dd>
 
-Dias da semana em que um trabalho está agendado para ser executado; usado somente quando o parâmetro *RunRepeatedly* é **true**. Para agendar um trabalho para mais de um dia da semana, ingresse os valores apropriados em um OR lógico. Por exemplo, para agendar um trabalho para terças e sextas-feiras, o valor de *DaysOfWeek* é 2 ou 16.
+Dias da semana em que um trabalho está agendado para ser executado; usado somente quando o *parâmetro RunRepeatedly* é **True.** Para agendar um trabalho por mais de um dia da semana, junte os valores apropriados em um OR lógico. Por exemplo, para agendar um trabalho para terças-feiras e sextas-feiras, o valor de *DaysOfWeek* é 2 OU 16.
 
 <dt>
 
 <span id="Monday"></span><span id="monday"></span><span id="MONDAY"></span>
 
-**Segunda** (1)
+**Segunda-feira** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -129,10 +129,10 @@ Dias da semana em que um trabalho está agendado para ser executado; usado somen
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*DaysOfMonth* \[ em, opcional\]
+*DaysOfMonth* \[ in, opcional\]
 </dt> <dd>
 
-Dias do mês em que um trabalho está agendado para ser executado; usado somente quando o parâmetro *RunRepeatedly* é **true**.
+Dias do mês em que um trabalho está agendado para ser executado; usado somente quando o *parâmetro RunRepeatedly* é **True.**
 
 <dt>
 
@@ -477,23 +477,23 @@ Dia 31 de um mês
 
 </dd> </dl> </dd> <dt>
 
-*InteractWithDesktop* \[ em, opcional\]
+*InteractWithDesktop* \[ in, opcional\]
 </dt> <dd>
 
-Se **for true**, o trabalho especificado deverá ser interativo, o que significa que um usuário pode fornecer entrada para um trabalho agendado enquanto o trabalho está em execução. O padrão é **False**.
+Se **True**, o trabalho especificado deverá ser interativo, o que significa que um usuário pode dar entrada a um trabalho agendado enquanto o trabalho está em execução. O padrão é **False**.
 
 </dd> <dt>
 
-*JobID* \[ fora\]
+*JobId* \[ out\]
 </dt> <dd>
 
-Número de identificador de um trabalho. Esse parâmetro é um identificador para um trabalho que está sendo agendado em um computador.
+Número do identificador de um trabalho. Esse parâmetro é um lidar com um trabalho que está sendo agendado em um computador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) quando bem-sucedido e um número diferente para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) quando bem-sucedido e um número diferente para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -538,7 +538,7 @@ Processo interativo.
 
 9
 
-Não é possível encontrar o caminho do diretório para o arquivo executável do serviço.
+O caminho do diretório para o arquivo executável de serviço não pode ser encontrado.
 
 </dd> <dt>
 
@@ -569,7 +569,7 @@ A conta em que esse serviço é executado é inválida ou não tem as permissõe
 
 ## <a name="remarks"></a>Comentários
 
-Se o trabalho agendado iniciar um programa interativo, como o bloco de notas, a propriedade **InteractWithDeskto** deverá ser definida como **true** ou a tela do programa não ficará visível. O processo ainda aparece no **Gerenciador de tarefas** , mesmo que ele não apareça na tela.
+Se o trabalho agendado iniciar um programa interativo como Bloco de notas, a propriedade **InteractWithDeskto** deverá ser definida como **True** ou a tela do programa não estará visível. O processo ainda aparece no **Gerenciador de Tarefas** mesmo que ele não apareça na tela.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -579,8 +579,8 @@ Se o trabalho agendado iniciar um programa interativo, como o bloco de notas, a 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -592,7 +592,7 @@ Se o trabalho agendado iniciar um programa interativo, como o bloco de notas, a 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_ScheduledJob Win32**](win32-scheduledjob.md)
+[**Win32 \_ ScheduledJob**](win32-scheduledjob.md)
 </dt> </dl>
 
  

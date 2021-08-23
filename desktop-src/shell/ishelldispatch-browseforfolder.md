@@ -1,7 +1,7 @@
 ---
-description: Método IShellDispatch. BrowseForFolder – cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de pasta da pasta selecionada.
+description: Método IShellDispatch.BrowseForFolder – cria uma caixa de diálogo que permite que o usuário selecione uma pasta e, em seguida, retorne o objeto Pasta da pasta selecionada.
 ms.assetid: 578C51C1-F59B-4604-A09B-62BA61225ABB
-title: Método IShellDispatch. BrowseForFolder (shldisp. h)
+title: Método IShellDispatch.BrowseForFolder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ee6202c7029e2c27684e15d96dd6c38680cb0678
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e70fd50d4b08787326f93cddf7ec55a0eaacb25fa815cc2b4c8246c1934494a0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551826"
 ---
-# <a name="ishelldispatchbrowseforfolder-method"></a>Método IShellDispatch. BrowseForFolder
+# <a name="ishelldispatchbrowseforfolder-method"></a>Método IShellDispatch.BrowseForFolder
 
-Cria uma caixa de diálogo que permite ao usuário selecionar uma pasta e, em seguida, retorna o objeto de [**pasta**](folder.md) da pasta selecionada.
+Cria uma caixa de diálogo que permite que o usuário selecione uma pasta e, em seguida, retorne o objeto [**Pasta da**](folder.md) pasta selecionada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,39 +55,39 @@ IShellDispatch.BrowseForFolder( _
 
 <dl> <dt>
 
-*HWND* \[ no\]
+*Hwnd* \[ Em\]
 </dt> <dd>
 
-Tipo: **inteiro**
+Tipo: **Inteiro**
 
-O identificador para a janela pai da caixa de diálogo. Esse valor pode ser zero.
+O alça para a janela pai da caixa de diálogo. Esse valor pode ser zero.
 
 </dd> <dt>
 
-*sTitle* \[ no\]
+*sTitle* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Um valor de **cadeia de caracteres** que representa o título exibido dentro da caixa de diálogo de **procura** .
+Um **valor string** que representa o título exibido dentro da caixa de **diálogo** Procurar.
 
 </dd> <dt>
 
-*iOptions* \[ no\]
+*iOptions* \[ Em\]
 </dt> <dd>
 
-Tipo: **inteiro**
+Tipo: **Inteiro**
 
-Um valor **inteiro** que contém as opções para o método. Isso pode ser zero ou uma combinação dos valores listados no membro **ulFlags** da estrutura [**BROWSEINFO**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa) .
+Um **valor** Inteiro que contém as opções para o método . Isso pode ser zero ou uma combinação dos valores listados sob o **membro ulFlags** da [**estrutura BROWSEINFO.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-browseinfoa)
 
 </dd> <dt>
 
-*vRootFolder* \[ em, opcional\]
+*vRootFolder* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A pasta raiz a ser usada na caixa de diálogo. O usuário não pode navegar mais para cima na árvore do que essa pasta. Se esse valor não for especificado, a pasta raiz usada na caixa de diálogo será a área de trabalho. Esse valor pode ser uma cadeia de caracteres que especifica o caminho da pasta ou um dos valores de [**ShellSpecialFolderConstants**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) . Observe que os nomes de constantes encontrados em **ShellSpecialFolderConstants** estão disponíveis em Visual Basic, mas não em VBScript ou JScript. Nesses casos, os valores numéricos devem ser usados em seu lugar.
+A pasta raiz a ser usada na caixa de diálogo. O usuário não pode navegar mais alto na árvore do que essa pasta. Se esse valor não for especificado, a pasta raiz usada na caixa de diálogo será a área de trabalho. Esse valor pode ser uma cadeia de caracteres que especifica o caminho da pasta ou um dos [**valores ShellSpecialFolderConstants.**](/windows/desktop/api/Shldisp/ne-shldisp-shellspecialfolderconstants) Observe que os nomes constantes encontrados em **ShellSpecialFolderConstants** estão disponíveis no Visual Basic, mas não no VBScript ou JScript. Nesses casos, os valores numéricos devem ser usados em seu lugar.
 
 </dd> </dl>
 
@@ -95,25 +95,25 @@ A pasta raiz a ser usada na caixa de diálogo. O usuário não pode navegar mais
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **pasta \* \***
+Tipo: **\* \* FOLDER**
 
-Uma referência de objeto para o objeto de [**pasta**](folder.md) da pasta selecionada.
+Uma referência de objeto ao objeto Pasta da [**pasta**](folder.md) selecionada.
 
 ### <a name="vb"></a>VB
 
-Tipo: **pasta \* \***
+Tipo: **\* \* FOLDER**
 
-Uma referência de objeto para o objeto de [**pasta**](folder.md) da pasta selecionada.
+Uma referência de objeto ao objeto Pasta da [**pasta**](folder.md) selecionada.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio do método [**shell. BrowseForFolder**](shell-browseforfolder.md) .
+Esse método é implementado e acessado por meio [**do método Shell.BrowseForFolder.**](shell-browseforfolder.md)
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir usam **BrowseForFolder** para exibir uma janela de procura intitulada "example" com raiz na pasta do Windows. O uso é mostrado para JScript, VBScript e Visual Basic.
+Os exemplos a seguir usam **BrowseForFolder** para exibir uma janela de navegação intitulada "Exemplo" com raiz na pasta Windows dados. O uso é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -135,7 +135,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -187,11 +187,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

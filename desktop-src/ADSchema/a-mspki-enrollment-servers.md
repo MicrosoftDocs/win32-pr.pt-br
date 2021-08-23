@@ -1,11 +1,11 @@
 ---
-title: atributo ms-PKI-Enroll-Servers
+title: Atributo ms-PKI-Enrollment-Servers
 description: Prioridade, tipo de autenticação e URI de cada serviço Web de registro de certificado.
 ms.assetid: 7125f6da-d7ca-457f-8f90-ca7f74a363ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-PKI-Enroll-Servers
-- msPKI-atributo de AD de atributos de registro de servidores
+- Atributo ms-PKI-Enrollment-Servers Esquema do AD
+- Atributo msPKI-Enrollment-Servers Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10a05f040dbe4f32df824d8f6596b515c3e1f792
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c25e11ee7b18f02dc8df79124d217f2acfea21f538f8caacb378d11b948e1fe8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582236"
 ---
-# <a name="ms-pki-enrollment-servers-attribute"></a>atributo ms-PKI-Enroll-Servers
+# <a name="ms-pki-enrollment-servers-attribute"></a>Atributo ms-PKI-Enrollment-Servers
 
 Prioridade, tipo de autenticação e URI de cada serviço Web de registro de certificado.
 
@@ -29,14 +29,14 @@ Prioridade, tipo de autenticação e URI de cada serviço Web de registro de cer
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-PKI-Enrollment-Servers                   |
-| LDAP-Display-Name | msPKI-registro-servidores                    |
+| CN                | ms-PKI-Enrollment-Servers                   |
+| Ldap-Display-Name | msPKI-Enrollment-Servers                    |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2076                     |
-| System-ID-GUID    | f22bd38f-a1d0-4832-8b28-0331438886a6        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f22bd38f-a1d0-4832-8b28-0331438886a6        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,15 +54,15 @@ Prioridade, tipo de autenticação e URI de cada serviço Web de registro de cer
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | Falso                                                               |
+| Tem valor único       | Falso                                                               |
 | É indexado             | Falso                                                               |
-| No catálogo global      | True                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Verdadeiro                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Prioridade, tipo de autenticação e URI de cada serviço Web de registro de cer
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | Falso                                                               |
+| Tem valor único       | Falso                                                               |
 | É indexado             | Falso                                                               |
-| No catálogo global      | True                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Verdadeiro                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**PKI-serviço de registro**](c-pkienrollmentservice.md)<br/> |
+| Classes usadas em        | [**PKI-Enrollment-Service**](c-pkienrollmentservice.md)<br/> |
 
 
 

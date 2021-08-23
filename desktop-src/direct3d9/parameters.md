@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\parameters.htm
 title: Parâmetros (Direct3D 9)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e5c78a4f6c0518c99b61be10b721d98b17630ab
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fc28d1410180aac54daf306fe586694cfa1b7f4123403efc606a77385d088326
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104088799"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606676"
 ---
 # <a name="parameters-direct3d-9"></a>Parâmetros (Direct3D 9)
 

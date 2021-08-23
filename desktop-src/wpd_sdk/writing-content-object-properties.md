@@ -1,36 +1,36 @@
 ---
-description: Gravando Propriedades do objeto
+description: Escrevendo propriedades de objeto
 ms.assetid: f762a571-83ea-4999-ad49-a51044bc790d
-title: Gravando Propriedades do objeto
+title: Escrevendo propriedades de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 726501c986e73033437de3bee0c11b3beb66150d
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 7e140563c6cf17235d3709e0d53cbfda9ab602076c3e72c010570b004429c96e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657326"
 ---
-# <a name="writing-object-properties"></a>Gravando Propriedades do objeto
+# <a name="writing-object-properties"></a>Escrevendo propriedades de objeto
 
-Os serviços geralmente contêm objetos filho que pertencem a um dos formatos aos quais cada serviço dá suporte. Por exemplo, um serviço de contatos pode dar suporte a vários objetos de contato do formato de contato abstrato. Cada objeto de contato é descrito pelas propriedades relacionadas (nome do contato, número de telefone, endereço de email e assim por diante).
+Os serviços geralmente contêm objetos filho que pertencem a um dos formatos aos quais cada serviço dá suporte. Por exemplo, um serviço Contatos pode dar suporte a vários objetos de contato do formato Contato Abstrato. Cada objeto de contato é descrito por propriedades relacionadas (nome de contato, número de telefone, endereço de email e assim por diante).
 
-O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode atualizar a propriedade Name para um objeto filho do serviço Contacts fornecido. Este exemplo usa as seguintes interfaces WPD.
+O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode atualizar a propriedade name para um objeto filho do serviço Contacts determinado. Este exemplo usa as seguintes interfaces WPD.
 
 
 
 | Interface                                                      | Descrição                                                                                                                                                          |
 |----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)       | Usado para recuperar a interface **IPortableDeviceContent2** para acessar os métodos de serviço com suporte.                                                                  |
-| [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)     | Fornece acesso aos métodos específicos de conteúdo.                                                                                                                     |
-| [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Usado para gravar os valores de propriedade de objeto e para determinar se uma determinada propriedade pode ser gravada                                                                    |
-| [**IPortableDeviceValues**](iportabledevicevalues.md)         | Usado para manter os valores de propriedade a serem gravados, determinar os resultados da operação de gravação e recuperar atributos de Propriedades (ao determinar o recurso de gravação). |
+| [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2)     | Fornece acesso aos métodos específicos do conteúdo.                                                                                                                     |
+| [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Usado para gravar os valores de propriedade do objeto e determinar se uma determinada propriedade pode ser escrita                                                                    |
+| [**IPortableDeviceValues**](iportabledevicevalues.md)         | Usado para manter os valores de propriedade a serem gravados, determinar os resultados da operação de gravação e recuperar atributos de propriedades (ao determinar a capacidade de gravação). |
 
 
 
  
 
-Quando o usuário escolhe a opção "8" na linha de comando, o aplicativo invoca o método **WriteContentProperties** encontrado no módulo contentproperties. cpp. Esse método solicita que o usuário insira um identificador de objeto para a propriedade a ser atualizada. O usuário identifica o objeto e o método solicita que o usuário especifique um novo nome. Depois que esse nome for especificado, o método atualizará a propriedade Name para o objeto fornecido.
+Quando o usuário escolhe a opção "8" na linha de comando, o aplicativo invoca o método **WriteContentProperties** encontrado no módulo ContentProperties.cpp. Esse método solicita que o usuário insira um identificador de objeto para que a propriedade seja atualizada. O usuário identifica o objeto e o método solicita que o usuário especifique um novo nome. Depois que esse nome é especificado, o método atualiza a propriedade Name para o objeto especificado.
 
 Observe que, antes de escrever as propriedades do objeto, o aplicativo de exemplo abre um serviço Contatos em um dispositivo conectado.
 

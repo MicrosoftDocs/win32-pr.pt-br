@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30947d059f9115cbf7c63b03380e86dad72775b5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 56160df9d77876c9c06de0a68921712099ca1d243d96f2c3da31e437c717a271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553006"
 ---
 # <a name="ms-dns-parent-has-secure-delegation-attribute"></a>atributo ms-DNS-Parent-tem-Secure-Delegation
 
@@ -53,7 +53,7 @@ Um atributo usado para definir se a delegação de pais para a zona DNS é segur
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

@@ -3,9 +3,9 @@ title: Propriedade WebViewFolderContents.Folder (Shldisp.h)
 description: Propriedade WebViewFolderContents. Folder – Obtém um objeto Folder que representa a exibição.
 ms.assetid: 1d81c27a-1e48-4c0a-b74d-c63af43a909d
 keywords:
-- Propriedade da pasta recursos do ambiente herdado do Windows
-- Propriedade da pasta recursos de ambiente herdados do Windows, objeto WebViewFolderContents
-- Objeto WebViewFolderContents de recursos de ambiente do Windows herdados, propriedade da pasta
+- recursos de ambiente de Windows herdado de propriedade de pasta
+- propriedade da pasta recursos herdados Windows ambiente, objeto WebViewFolderContents
+- objeto WebViewFolderContents herdado Windows recursos de ambiente, propriedade de pasta
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e88fd7a54971fa088bdddbc78d3d8df4af610875
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: af475d55351d9278ca954a9ebb896ef03928538b9984a2f87478ed3358a1741e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607836"
 ---
 # <a name="webviewfoldercontentsfolder-property"></a>Propriedade WebViewFolderContents. Folder
 
@@ -44,7 +44,7 @@ Um objeto que recebe o objeto de [**pasta**](../shell/folder.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado dessa propriedade no JScript inserido em HTML.
+o exemplo a seguir mostra o uso apropriado dessa propriedade no JScript inserido em HTML.
 
 
 ```HTML
@@ -84,7 +84,7 @@ O exemplo a seguir mostra o uso apropriado dessa propriedade no JScript inserido
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

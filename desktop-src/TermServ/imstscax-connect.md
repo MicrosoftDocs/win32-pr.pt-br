@@ -1,30 +1,30 @@
 ---
-title: Método de conexão IMsTscAx
-description: Inicia uma conexão usando as propriedades atualmente definidas no controle.
+title: Método Conexão IMsTscAx
+description: Inicia uma conexão usando as propriedades atualmente definidas no controle .
 ms.assetid: 9bcbdc13-6c66-4737-82a4-98329f173743
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsTscAx
-- Serviços de Área de Trabalho Remota de interface IMsTscAx, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, método Connect
-- Método Connect Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, método Connect
+- Conexão método Serviços de Área de Trabalho Remota
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsTscAx
+- Interface IMsTscAx Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota interface , IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , Conexão método
+- Conexão método Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , Conexão método
 topic_type:
 - apiref
 api_name:
@@ -44,16 +44,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c267b24c3dd27dd875d895674d98e1350f757c82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4372b19c9dba51714c6927d5e54468e143033689bfd9c74db78bbff8812e45ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513106"
 ---
-# <a name="imstscaxconnect-method"></a>Método IMsTscAx:: Connect
+# <a name="imstscaxconnect-method"></a>Método IMsTscAx::Conexão
 
-Inicia uma conexão usando as propriedades atualmente definidas no controle.
+Inicia uma conexão usando as propriedades atualmente definidas no controle .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,21 +68,21 @@ HRESULT Connect();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar **S \_ OK** se for bem-sucedido.
+Retornar **S \_ OK se** for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-A única propriedade necessária é o nome do servidor. Consulte a propriedade [**Server**](imstscax-server.md) .
+A única propriedade necessária é o nome do servidor. Consulte a [**propriedade**](imstscax-server.md) Server.
 
-O controle se conecta de forma assíncrona, de modo que um retorno de uma chamada de conexão indica apenas que a conexão foi iniciada com êxito, não que ela tenha sido concluída. Você deve responder a eventos na interface [**IMsTscAxEvents**](imstscaxevents-interface.md) para determinar quando o controle foi conectado com êxito (ou se foi desconectado.)
+O controle se conecta de forma assíncrona, portanto, um retorno de uma chamada Conexão indica apenas que a conexão foi iniciada com êxito, não que ela foi concluída. Você deve responder a eventos na interface [**IMsTscAxEvents**](imstscaxevents-interface.md) para determinar quando o controle se conectou com êxito (ou foi desconectado.)
 
-Esse método retornará **E \_ falhará** se for chamado enquanto o controle já estiver conectado ou no estado de conexão.
+Esse método **retornará E \_ FAIL** se for chamado enquanto o controle já estiver conectado ou no estado de conexão.
 
-Depois que o **Connect** for chamado, a maioria das propriedades de controle não poderá mais ser definida até que o controle retorne ao estado desconectado.
+Depois **Conexão** tiver sido chamada, a maioria das propriedades de controle não poderá mais ser definida até que o controle retorne ao estado desconectado.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,7 +94,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx é definido como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
@@ -102,7 +102,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)
@@ -132,7 +132,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**Desconectar**](imstscax-disconnect.md)
 </dt> <dt>
 
-[**IMsTscAx**](imstscax-interface.md)
+[**Imstscax**](imstscax-interface.md)
 </dt> </dl>
 
  
