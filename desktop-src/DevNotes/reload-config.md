@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Imejpknl.dll
 - Imejp98k.dll
-ms.openlocfilehash: bc9d0d026359036d8847ebaa2542f778de4d5767
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 343003156c2f93788ac87004657a21d3e9b31a47ff4585374836488642de3240
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571616"
 ---
 # <a name="reload_config-function"></a>recarregar \_ função de configuração
 

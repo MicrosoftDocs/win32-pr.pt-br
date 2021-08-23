@@ -3,19 +3,19 @@ title: Salvando perfis
 description: Salvando perfis
 ms.assetid: 07c1ef16-6696-4314-aed8-58cda464b0db
 keywords:
-- SDK do Windows Media Format, salvando perfis
-- SDK do Windows Media Format, salvamento de perfil
+- Windows SDK do formato de mídia, salvando perfis
+- Windows SDK do formato de mídia, salvamento de perfil
 - perfis, salvando
 - perfis, interface IWMProfileManager
 - IWMProfileManager, salvando perfis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 276b002f0b7f98de2e84f2c27a4f52bde25726bb
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 6befb09d7e0d628462bdd22e1e905c351be58dc077959089883ce3707dc493d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547036"
 ---
 # <a name="saving-profiles"></a>Salvando perfis
 
@@ -24,7 +24,7 @@ Você pode usar o método [**IWMProfileManager:: SaveProfile**](/previous-versio
 > [!Note]  
 > Você nunca deve alterar a cadeia de caracteres do perfil gravada em um arquivo. As alterações que você deseja fazer em um perfil devem ser feitas programaticamente. Alterar valores em um arquivo. prx pode causar resultados imprevisíveis.
 
- 
+ 
 
 O exemplo a seguir é uma função para salvar um perfil em um arquivo usando e/s de arquivo em estilo C padrão. Para compilar um aplicativo que usa este exemplo, você deve incluir STDIO. h em seu projeto.
 
@@ -94,9 +94,9 @@ HRESULT ProfileToFile(IWMProfileManager* pProfileMgr,
 [**Trabalhando com perfis**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

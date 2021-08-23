@@ -1,9 +1,9 @@
 ---
-title: g_wszWMVCDecoderComplexityProfile (Wmcodecdsp. h)
-description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | g_wszWMVCDecoderComplexityProfile (Wmcodecdsp. h)
+title: g_wszWMVCDecoderComplexityProfile (Wmcodecdsp.h)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | g_wszWMVCDecoderComplexityProfile (Wmcodecdsp.h)
 ms.assetid: d13868e3-6273-4fec-a887-e9076e524095
 keywords:
-- g_wszWMVCDecoderComplexityProfile o formato Windows Media
+- g_wszWMVCDecoderComplexityProfile formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "119447196"
 ---
 # <a name="g_wszwmvcdecodercomplexityprofile"></a>g \_ wszWMVCDecoderComplexityProfile
 
-para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ para obter a documentação atual sobre codecs de mídia Windows e processadores
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

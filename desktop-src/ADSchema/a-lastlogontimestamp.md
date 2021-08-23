@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a6d7668891d008e1b16b7dc148462498e9210b4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fbaea56a7456a46b7583633992f77e6fd836276151e6c9f6b792ba1abdd36b4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322145"
 ---
 # <a name="last-logon-timestamp-attribute"></a>Atributo Last-login-timestamp
 
@@ -58,7 +58,7 @@ Esta é a hora em que o usuário fez o último logon no domínio. Esse valor é 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -78,8 +78,8 @@ Esta é a hora em que o usuário fez o último logon no domínio. Esse valor é 
 |------------------------|-------------------------------------------------------------------|
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | True                                                              |
-| É de valor único       | True                                                              |
+| System-Only            | Verdadeiro                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -100,7 +100,7 @@ Esta é a hora em que o usuário fez o último logon no domínio. Esse valor é 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -121,9 +121,9 @@ Esta é a hora em que o usuário fez o último logon no domínio. Esse valor é 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
-| É indexado             | True                              |
-| No catálogo global      | True                              |
+| É de valor único       | Verdadeiro                              |
+| É indexado             | Verdadeiro                              |
+| No catálogo global      | Verdadeiro                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -142,9 +142,9 @@ Esta é a hora em que o usuário fez o último logon no domínio. Esse valor é 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
-| É indexado             | True                              |
-| No catálogo global      | True                              |
+| É de valor único       | Verdadeiro                              |
+| É indexado             | Verdadeiro                              |
+| No catálogo global      | Verdadeiro                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
@@ -163,9 +163,9 @@ Esta é a hora em que o usuário fez o último logon no domínio. Esse valor é 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
-| É indexado             | True                              |
-| No catálogo global      | True                              |
+| É de valor único       | Verdadeiro                              |
+| É indexado             | Verdadeiro                              |
+| No catálogo global      | Verdadeiro                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |

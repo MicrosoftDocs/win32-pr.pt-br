@@ -1,9 +1,9 @@
 ---
-title: Mensagem de ICM_GETDEFAULTQUALITY (VFW. h)
-description: A \_ mensagem ICM GETDEFAULTQUALITY consulta um driver de compactação de vídeo para fornecer sua configuração de qualidade padrão. Você pode enviar essa mensagem explicitamente ou usando a macro ICGetDefaultQuality.
+title: ICM_GETDEFAULTQUALITY mensagem (Vfw.h)
+description: A ICM getDEFAULTQUALITY consulta um driver de \_ compactação de vídeo para fornecer sua configuração de qualidade padrão. Você pode enviar essa mensagem explicitamente ou usando a macro ICGetDefaultQuality.
 ms.assetid: bba7f451-52c2-4684-a7c9-e4b05cb946c5
 keywords:
-- Multimídia do Windows de mensagem ICM_GETDEFAULTQUALITY
+- ICM_GETDEFAULTQUALITY mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4350539851ca720e3538d297f955a56fedfc4a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df9c27527cea53c4b4eca6cf75babef3a41f80732d8ecf7a18528c07d6d9311b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525906"
 ---
-# <a name="icm_getdefaultquality-message"></a>\_Mensagem GETDEFAULTQUALITY de ICM
+# <a name="icm_getdefaultquality-message"></a>\_ICM Mensagem GETDEFAULTQUALITY
 
-A mensagem **ICM \_ GETDEFAULTQUALITY** consulta um driver de compactação de vídeo para fornecer sua configuração de qualidade padrão. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICGetDefaultQuality**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultquality) .
+A **ICM \_ mensagem GETDEFAULTQUALITY** consulta um driver de compactação de vídeo para fornecer sua configuração de qualidade padrão. Você pode enviar essa mensagem explicitamente ou usando a [**macro ICGetDefaultQuality.**](/windows/desktop/api/Vfw/nf-vfw-icgetdefaultquality)
 
 
 ```C++
@@ -47,7 +47,7 @@ Endereço para conter o valor de qualidade padrão. Os valores de qualidade vari
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará ICERR \_ OK se o driver der suporte a essa mensagem ou ICERR \_ sem suporte.
+Retorna ICERR \_ OK se o driver dá suporte a essa mensagem ou ICERR \_ SEM SUPORTE caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará ICERR \_ OK se o driver der suporte a essa mensagem ou ICERR \_ sem s
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Retornará ICERR \_ OK se o driver der suporte a essa mensagem ou ICERR \_ sem s
 
 <dl> <dt>
 
-[Gerenciador de compactação de vídeo](video-compression-manager.md)
+[Gerenciador de Compactação de Vídeo](video-compression-manager.md)
 </dt> <dt>
 
 [Mensagens de compactação de vídeo](video-compression-messages.md)

@@ -4,12 +4,12 @@ ms.assetid: 1a8b639d-c12f-4130-a107-acf008ea1408
 title: Métodos Region. Exclude
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e5bd762122e304ca2eff3877ac0fb55a15aa6070
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8d9d8fba6fcd1aa84edc5565cc3729c1c4001cbd83bf4264d1dd5da0ef7f69b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602606"
 ---
 # <a name="regionexclude-methods"></a>Métodos Region. Exclude
 

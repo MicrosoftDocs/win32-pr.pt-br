@@ -1,27 +1,27 @@
 ---
-description: O arquivo de recurso de concerto do produto original, MNP2000, contém um erro no arquivo Concert.txt.
+description: O arquivo de recurso Concert do produto original, MNP2000, contém um erro no arquivo Concert.txt.
 ms.assetid: 4289bd0c-bdf3-4747-9287-94f737ce4f5c
-title: Planejando um patch de atualização pequena
+title: Planejando um pequeno patch de atualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f15f3667c6a18ab7a71e86997091bd76d4b15577
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 0aed6c947ee278e7c4856281790a9c392af38734c475e3d40561d72d805f6011
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "103837696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519536"
 ---
-# <a name="planning-a-small-update-patch"></a>Planejando um patch de atualização pequena
+# <a name="planning-a-small-update-patch"></a>Planejando um pequeno patch de atualização
 
-O arquivo de recurso de concerto do produto original, MNP2000, contém um erro no arquivo Concert.txt. Como Windows Installer foi usado para a instalação e a configuração do aplicativo, as correções secundárias para o aplicativo podem ser tratadas pela instalação de um pacote de patch de atualização pequeno. Uma [pequena atualização](small-updates.md) faz alterações em um ou mais arquivos de aplicativo que são muito menores para alterar o código do produto. O exemplo a seguir mostra como criar um pacote de patches Windows Installer que pode aplicar a pequena atualização e fornecer uma correção rápida para o produto MNP2000.
+O arquivo de recurso Concert do produto original, MNP2000, contém um erro no arquivo Concert.txt. Como Windows instalador foi usado para a instalação e a instalação do aplicativo, correções secundárias para o aplicativo podem ser tratadas instalando um pequeno pacote de patch de atualização. Uma [pequena atualização faz](small-updates.md) alterações em um ou mais arquivos de aplicativo muito pequenos para alterar o código do produto. O exemplo a seguir mostra como criar um pacote de patch do Windows Installer que pode aplicar a pequena atualização e fornecer uma correção rápida ao produto MNP2000.
 
-Para criar a atualização pequena, primeiro obtenha uma imagem totalmente descompactada do produto MNP2000 que inclui o erro em Concert.txt. A imagem deve incluir MNP2000.msi e todos os arquivos de origem descritos em [planejando a instalação](planning-the-installation.md). Na discussão a seguir, isso é chamado de imagem de destino. A imagem de destino deve ser totalmente descompactada porque o processo de criação de patches não pode gerar patches binários para arquivos compactados em gabinetes. Coloque o arquivo. msi e todos os arquivos de origem da imagem de destino em uma pasta chamada Target.
+Para criar a pequena atualização, primeiro obtenha uma imagem totalmente descompactada do produto MNP2000 que inclui o erro no Concert.txt. A imagem deve incluir MNP2000.msi e todos os arquivos de origem descritos em [Planejando a instalação](planning-the-installation.md)do . Na discussão a seguir, isso é chamado de Imagem de destino. A imagem de destino deve ser totalmente descompactada porque o processo de criação de patch não pode gerar patches binários para arquivos compactados em gabinetes. Coloque o .msi arquivo e todos os arquivos de origem da imagem de destino em uma pasta chamada Destino.
 
-Em seguida, obtenha uma imagem totalmente descompactada do produto MNP2000 com um arquivo Concert.txt corrigido. Isso é chamado de imagem atualizada na discussão a seguir. Use uma ferramenta de edição de banco de dados de instalação, como orca, para atualizar o arquivo. msi. Por exemplo, se o tamanho da Concert.txt corrigida for menor do que o original, certifique-se de inserir o novo tamanho no campo FileSize da tabela de arquivos da imagem atualizada. Observe que, como o pacote foi alterado, você deve atribuir um novo código de pacote na propriedade [**Resumo do número de revisão**](revision-number-summary.md) . Coloque o arquivo. msi e todos os arquivos de origem da imagem atualizada em uma pasta chamada atualizado.
+Em seguida, obtenha uma imagem totalmente descompactada do produto MNP2000 com um arquivo Concert.txt que é corrigido. Isso é chamado de Imagem atualizada na discussão a seguir. Use uma ferramenta de edição de banco de dados de instalação, como Orca, para atualizar o .msi arquivo. Por exemplo, se o tamanho do arquivo Concert.txt for menor que o original, insira o novo tamanho no campo FileSize da tabela Arquivo da imagem atualizada. Observe que, como o pacote foi alterado, você deve atribuir um novo código de pacote na propriedade [**Resumo do Número de**](revision-number-summary.md) Revisão. Coloque o .msi arquivo e todos os arquivos de origem da imagem Atualizada em uma pasta chamada Atualizado.
 
-Para os fins deste exemplo, suponha que o tamanho do arquivo de Concert.txt seja alterado. Isso significa que os campos de FileSize nas tabelas de arquivos do destino e do banco de dados atualizado contêm diferentes.
+Para os fins deste exemplo, suponha que o tamanho do arquivo Concert.txt alterações. Isso significa que os campos FileSize nas tabelas Arquivo do banco de dados de Destino e Atualizado contêm dados diferentes.
 
-A [tabela de arquivos](file-table.md) a seguir identifica o registro da imagem de destino.
+A Tabela [de Arquivos a](file-table.md) seguir identifica o registro da Imagem de Destino.
 
 
 
@@ -33,7 +33,7 @@ A [tabela de arquivos](file-table.md) a seguir identifica o registro da imagem d
 
  
 
-A tabela de arquivos a seguir identifica o registro da imagem atualizada.
+A tabela de arquivos a seguir identifica o registro da Imagem Atualizada.
 
 
 
@@ -46,9 +46,9 @@ A tabela de arquivos a seguir identifica o registro da imagem atualizada.
  
 
 > [!Note]
-> O arquivo deve ter a mesma chave nas [tabelas de arquivos](file-table.md) da imagem de destino e da imagem atualizada. Os valores de cadeia de caracteres na coluna arquivo de ambas as tabelas devem ser idênticos. Letras maiúsculas e minúsculas também devem ser idênticas.
+> O arquivo deve ter a mesma chave nas [Tabelas](file-table.md) de Arquivos da imagem de destino e da imagem atualizada. Os valores de cadeia de caracteres na coluna Arquivo de ambas as tabelas devem ser idênticos. Maiúsculas e minúsculas também devem ser idênticas.
 > 
-> Siga as diretrizes descritas em [criando um pacote de patch](creating-a-patch-package.md). Não crie um pacote com chaves de [tabela de arquivos](file-table.md) que diferem somente por maiúsculas e minúsculas, pois [Msimsp.exe](msimsp-exe.md) e [Patchwiz.dll](patchwiz-dll.md) chamada Makecab.exe, que não diferencia maiúsculas de minúsculas e a geração de patch falha.
+> Siga as diretrizes descritas em [Criando um pacote de patch.](creating-a-patch-package.md) Não autor de um pacote com chaves de [](msimsp-exe.md) Tabela de Arquivos [](patchwiz-dll.md) que diferem apenas por caso, porqueMsimsp.exeePatchwiz.dllchamada Makecab.exe, que não diferencia maiúsculas de minúsculas e a geração de patch falha. [](file-table.md)
 
 [Continuar](creating-a-patch-creation-properties-file.md)
 

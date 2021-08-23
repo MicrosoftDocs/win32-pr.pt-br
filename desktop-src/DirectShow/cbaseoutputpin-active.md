@@ -1,7 +1,7 @@
 ---
-description: Método CBaseOutputPin. active – o método ativo notifica o PIN de que o filtro está ativo agora.
+description: Método CBaseOutputPin.Active – o método Ativo notifica o pino de que o filtro agora está ativo.
 ms.assetid: 35df4305-0e2c-4ee1-bc63-db5aec864c46
-title: Método CBaseOutputPin. Active (Amfilter. h)
+title: Método CBaseOutputPin.Active (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f282f45bb895a941c44cb70cf5d9d3d373bf8649
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 94e71b3a85fdddd3ea4554575b07871ecdc09070f00c988f24f31378e9effb6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640026"
 ---
-# <a name="cbaseoutputpinactive-method"></a>Método CBaseOutputPin. active
+# <a name="cbaseoutputpinactive-method"></a>Método CBaseOutputPin.Active
 
-O `Active` método notifica o PIN de que o filtro está ativo agora.
+O `Active` método notifica o pino de que o filtro agora está ativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,14 +42,14 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabela a seguir.
+Retorna um **valor HRESULT.** Os valores possíveis incluem aqueles listados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                          | Descrição                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                 | Sucesso.<br/>                   |
-| <dl> <dt>**VFW \_ E \_ nenhum \_ alocador**</dt> </dl> | Nenhum alocador disponível.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                 | Êxito.<br/>                   |
+| <dl> <dt>**VFW \_ E \_ NO \_ ALLOCATOR**</dt> </dl> | Nenhum alocador está disponível.<br/> |
 
 
 
@@ -57,9 +57,9 @@ Retorna um valor **HRESULT** . Os valores possíveis incluem os listados na tabe
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CBasePin:: active**](cbasepin-active.md) . Ele chama o método [**IMemAllocator:: Commit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit) no alocador para alocar memória para buffers.
+Esse método substitui o [**método CBasePin::Active.**](cbasepin-active.md) Ele chama o [**método IMemAllocator::Commit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit) no alocador para alocar memória para buffers.
 
-Se você substituir esse método, chame o método de classe base do seu método de substituição.
+Se você substituir esse método, chame o método de classe base do método de substituição.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,12 +67,12 @@ Se você substituir esse método, chame o método de classe base do seu método 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

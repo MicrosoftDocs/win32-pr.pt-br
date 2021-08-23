@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a18c6d7771eb0e95d86142f41262d721509eb6f8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d896fe76946881ebbc52591da1bfce1fbc0fb99ce4adfb02418aa35b912f0e75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440176"
 ---
 # <a name="setdefaultprinter-method-of-the-win32_printer-class"></a>Método SetDefaultPrinter da classe de \_ impressora Win32
 
@@ -40,7 +40,7 @@ uint32 SetDefaultPrinter();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna 0 (zero) se for bem-sucedido e algum outro valor se ocorrer um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 

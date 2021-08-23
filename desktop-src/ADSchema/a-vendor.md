@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39aed7d01c04750e1613615fe0d5f1e21303c291
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f69521e58a26ec2b3bf081f9674c857c04339db4a2b9f0f524589c89868d1462
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702626"
 ---
 # <a name="vendor-attribute"></a>Atributo de fornecedor
 
@@ -58,7 +58,7 @@ Esse atributo identifica o fornecedor de um aplicativo.
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | True                                                             |
+| É de valor único       | Verdadeiro                                                             |
 | É indexado             | Falso                                                            |
 | No catálogo global      | Falso                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
@@ -79,7 +79,7 @@ Esse atributo identifica o fornecedor de um aplicativo.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
@@ -100,7 +100,7 @@ Esse atributo identifica o fornecedor de um aplicativo.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
@@ -121,10 +121,10 @@ Esse atributo identifica o fornecedor de um aplicativo.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
-| No catálogo global      | Falso                                                                                                                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
+| No Catálogo Global      | Falso                                                                                                                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                       |
 | Range-Upper            | 512                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
@@ -142,10 +142,10 @@ Esse atributo identifica o fornecedor de um aplicativo.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
-| No catálogo global      | Falso                                                                                                                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
+| No Catálogo Global      | Falso                                                                                                                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                       |
 | Range-Upper            | 512                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |
@@ -163,10 +163,10 @@ Esse atributo identifica o fornecedor de um aplicativo.
 | ID do link                | \-                                                                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                                                                    |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                                                                   |
-| No catálogo global      | Falso                                                                                                                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                            |
+| No Catálogo Global      | Falso                                                                                                                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                            |
 | Range-Lower            | 0                                                                                                                                                                                                       |
 | Range-Upper            | 512                                                                                                                                                                                                     |
 | Search-Flags           | 0x00000000                                                                                                                                                                                              |

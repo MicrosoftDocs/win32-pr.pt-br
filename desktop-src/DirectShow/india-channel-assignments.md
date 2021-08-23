@@ -1,23 +1,23 @@
 ---
-description: Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para a Índia.
+description: Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para a Índia.
 ms.assetid: 4bf7a67e-0434-4177-96c7-dcaad14c6545
 title: Atribuições de canal da Índia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ced8fdba140fba2a7274fa9dbd8dcae84ffce13
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4cef59d270165a75dd42b05f1a9934bb413bdc0d9d53dd11eed987d6cee8aa9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105784118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584546"
 ---
 # <a name="india-channel-assignments"></a>Atribuições de canal da Índia
 
-Este tópico lista as tabelas de frequência usadas para ajuste de TV analógica para a Índia.
+Este tópico lista as tabelas de frequência usadas para ajuste de TV análogo para a Índia.
 
-Para obter uma explicação das tabelas a seguir, consulte [tabelas e atribuições](tables-and-assignments.md).
+Para uma explicação das tabelas a seguir, consulte [Tabelas e Atribuições](tables-and-assignments.md).
 
-As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormente, a [tabela de frequência unicable](unicable-frequency-table.md) foi usada.
+As atribuições de canal a seguir foram introduzidas Windows 7. Anteriormente, a [Tabela de Frequência Unicavel](unicable-frequency-table.md) era usada.
 
 ## <a name="cable-assignments"></a>Atribuições de cabo
 
@@ -138,7 +138,7 @@ As seguintes atribuições de canal foram introduzidas no Windows 7. Anteriormen
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TV análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

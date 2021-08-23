@@ -20,12 +20,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 86ef0e22143ffd424ee3acee616504e45d8125bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 751e5f3256da82d2b7cae2da17a8b9dfb54bc5331ebf2679e745bc67c0b4d3b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524536"
 ---
 # <a name="msvm_ethernetswitchhardwareoffloadsettingdata-class"></a>\_Classe Msvm EthernetSwitchHardwareOffloadSettingData
 
@@ -124,7 +124,7 @@ Qualificadores: **WmiDataId** (6), **InterfaceVersion** (2), **InterfaceRevision
 Indica se a CPU de VMQ primária foi excluída da tabela de indireção VRSS/VMMQ.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -145,7 +145,7 @@ Qualificadores: **WmiDataId** (7), **InterfaceVersion** (2), **InterfaceRevision
 Indica se a difusão do VRSS deve ser sempre feita para a fila padrão, independentemente do estado de RSS do vPort externo.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -166,7 +166,7 @@ Qualificadores: **WmiDataId** (4), **InterfaceVersion** (2), **InterfaceRevision
 Indica o número mínimo de filas usadas para VRSS/VMMQ.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -187,7 +187,7 @@ Qualificadores: **WmiDataId** (5), **InterfaceVersion** (2), **InterfaceRevision
 Indica como as filas VRSS/VMMQ são direcionadas para processadores de host diferentes.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -199,7 +199,7 @@ Indica como as filas VRSS/VMMQ são direcionadas para processadores de host dife
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |

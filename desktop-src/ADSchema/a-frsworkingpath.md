@@ -1,11 +1,11 @@
 ---
-title: FRS-atributo de caminho de trabalho
+title: Atributo FRS-Working-Path
 description: O caminho para o banco de dados de replicação de arquivo.
 ms.assetid: 43db1214-17a3-4458-b082-1cf69d06384c
 ms.tgt_platform: multiple
 keywords:
-- FRS-esquema de atributo de caminho de trabalho
-- Esquema de AD do atributo fRSWorkingPath
+- Esquema do AD do atributo FRS-Working-Path
+- Esquema do AD do atributo fRSWorkingPath
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e86603b9e0c63645d7253e017619c53d763d138
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 438e329915ebdffa888cb82bc7fad269cc3a81abac977a82860b20137ebb2172
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119323326"
 ---
-# <a name="frs-working-path-attribute"></a>FRS-atributo de caminho de trabalho
+# <a name="frs-working-path-attribute"></a>Atributo FRS-Working-Path
 
 O caminho para o banco de dados de replicação de arquivo.
 
@@ -29,14 +29,14 @@ O caminho para o banco de dados de replicação de arquivo.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | FRS – caminho de trabalho                            |
-| LDAP-Display-Name | fRSWorkingPath                              |
+| CN                | FRS-Working-Path                            |
+| Ldap-Display-Name | fRSWorkingPath                              |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.486                      |
-| System-ID-GUID    | 1be8f173-a9ff-11d0-afe2-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 1be8f173-a9ff-11d0-afe2-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ O caminho para o banco de dados de replicação de arquivo.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 2.048                                                           |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**NTFRS-assinaturas**](c-ntfrssubscriptions.md)<br/> |
+| Classes usadas em        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O caminho para o banco de dados de replicação de arquivo.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 2.048                                                           |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**NTFRS-assinaturas**](c-ntfrssubscriptions.md)<br/> |
+| Classes usadas em        | [**NTFRS-Subscriptions**](c-ntfrssubscriptions.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ O caminho para o banco de dados de replicação de arquivo.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| Tem valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 0                                                              |
 | Range-Upper            | 2.048                                                           |
 | Search-Flags           | 0x00000000                                                     |
@@ -121,7 +121,7 @@ O caminho para o banco de dados de replicação de arquivo.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -142,7 +142,7 @@ O caminho para o banco de dados de replicação de arquivo.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -163,7 +163,7 @@ O caminho para o banco de dados de replicação de arquivo.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |

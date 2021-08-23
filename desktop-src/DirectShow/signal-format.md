@@ -4,22 +4,22 @@ ms.assetid: 8684972c-3233-49bf-8c34-ca644aca432a
 title: Formato de sinal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb6983328729e0dc72d93c0e00a74e7e65a7f237
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 66add7467f2f497985094c603aaea83b55967f6b2c07eba4cacde080503ef2e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583176"
 ---
 # <a name="signal-format"></a>Formato de sinal
 
-O formato de sinal de camcorder DV pode ser NTSC ou PAL, Standard ou de execução longa.
+O formato de sinal de uma gravação dv pode ser NTSC ou PAL, padrão ou reprodução longa.
 
-**Driver MSDV**
+**MSDV Driver**
 
-Para obter o formato de sinal de entrada do driver MSDV, chame o método [**IAMExtTransport:: GetTransportBasicParameters**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-gettransportbasicparameters) e passe o sinalizador de sinal de entrada do Ed \_ transbasic \_ \_ . O método retorna uma constante definida, indicando o formato.
+Para obter o formato de sinal de entrada do driver MSDV, chame o método [**IAMExtTransport::GetTransportBasicParameters**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-gettransportbasicparameters) e passe o sinalizador ED \_ TRANSBASIC \_ INPUT \_ SIGNAL. O método retorna uma constante definida, indicando o formato.
 
-O código a seguir verifica o formato de sinal e usa esse valor para calcular o tempo médio por quadro. O modo de variável recebe a constante de formato de sinal.
+O código a seguir verifica o formato de sinal e usa esse valor para calcular o tempo médio por quadro. A variável Modo recebe a constante de formato de sinal.
 
 
 ```C++
@@ -52,17 +52,17 @@ if (SUCCEEDED(hr))
 
 
 
-Para obter o formato de sinal de saída, chame o mesmo método com o \_ sinalizador de sinal de saída Ed transbasic \_ \_ .
+Para obter o formato de sinal de saída, chame o mesmo método com o sinalizador ED \_ TRANSBASIC \_ OUTPUT \_ SIGNAL.
 
-**Driver UVC**
+**UVC Driver**
 
-Para obter o formato de sinal de entrada ou saída do driver UVC, chame [**IAMStreamConfig:: GetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getformat) no PIN e examine o bloco de formato de vídeo. (Para dispositivos UVC, o código mostrado no exemplo anterior geralmente retorna ED \_ \_Sinal transbasic \_ desconhecido, portanto, não é confiável.)
+Para obter o formato de sinal de entrada ou saída do driver UVC, chame [**IAMStreamConfig::GetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getformat) no pino e examine o bloco de formato de vídeo. (Para dispositivos UVC, o código mostrado no exemplo anterior geralmente retorna ED \_ TRANSBASIC \_ SIGNAL \_ UNKNOWN, portanto, ele não é confiável.)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Controlando uma camcorder DV](controlling-a-dv-camcorder.md)
+[Controlando uma dvcorder](controlling-a-dv-camcorder.md)
 </dt> </dl>
 
  

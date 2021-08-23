@@ -1,11 +1,11 @@
 ---
 title: OEM-Information atributo
-description: Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade com versões anteriores.
+description: Para manter informações do OEM. Não se usa mais. Aqui para compatibilidade com compatibilidade com backward.
 ms.assetid: d456f9e0-da88-4f3a-897a-1a9f42f4b7b9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de OEM-Information do atributo AD
-- Esquema de AD do atributo oEMInformation
+- OEM-Information atributo AD Schema
+- Esquema do AD do atributo oEMInformation
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 700baa4453d0ce88c2c6a316cef88244c6a96687
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28a9440f2ef5dbb6ed4c1899b8439a442767ab1692acda2c38d280d56eb62be0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442336"
 ---
 # <a name="oem-information-attribute"></a>OEM-Information atributo
 
-Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade com versões anteriores.
+Para manter informações do OEM. Não se usa mais. Aqui para compatibilidade com compatibilidade com backward.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | OEM-Information                             |
-| LDAP-Display-Name | oEMInformation                              |
+| Ldap-Display-Name | oEMInformation                              |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.151                      |
-| System-ID-GUID    | bf9679ea-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf9679ea-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Para manter as informações de OEM. Não se usa mais. Aqui para compatibilidade
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | 0                                                     |
 | Range-Upper            | 32767                                                 |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

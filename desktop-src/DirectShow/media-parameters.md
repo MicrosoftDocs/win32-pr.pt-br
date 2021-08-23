@@ -4,23 +4,23 @@ ms.assetid: 48b2bc2e-897d-4aa9-8a50-c2855a17dca5
 title: Parâmetros de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce9276a3d38b9176458299bfd1a47057cac6236e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 37cf7229cac3deb5b31a6c6879fd3b5896e5f4098a4cce64ac42d19970f5c569
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584336"
 ---
 # <a name="media-parameters"></a>Parâmetros de mídia
 
-Os parâmetros de mídia permitem que um aplicativo configure as propriedades de um objeto de forma que elas sejam alteradas com o passar do tempo de forma matematicamente determinística.
+Os parâmetros de mídia permitem que um aplicativo configure as propriedades de um objeto para que elas mudem ao longo do tempo de maneira matematicamente determinística.
 
-Por exemplo, suponha que um engenheiro de som esteja misturando uma fita mestre digital e queira aplicar um pequeno atraso a uma seção vocal para preencher o som. O efeito será dissonante se o atraso for recortado abruptamente. Em vez disso, o efeito deve começar de 100% seco (sem atraso) e a mistura úmida/seca deve aumentar gradualmente até atingir o nível desejado. Além disso, essa transição deve seguir uma curva suave ou uma progressão linear. Para dar suporte a esse cenário, um DMO pode expor as seguintes interfaces:
+Por exemplo, suponha que um engenheiro de som está combinando uma fita mestra digital e deseja aplicar um pequeno atraso a uma seção vocal para preencher o som. O efeito será jarring se o atraso for interrompida de forma repentina. Em vez disso, o efeito deve começar 100% de seta (sem atraso) e a combinação de umidade/umidade deve aumentar gradualmente até atingir o nível desejado. Além disso, essa transição deve seguir uma curva suave ou progressão linear. Para dar suporte a esse cenário, DMO pode expor as seguintes interfaces:
 
 -   [**IMediaParamInfo**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparaminfo) contém métodos para descobrir informações sobre as propriedades com suporte. Normalmente, o cliente chamará esses métodos antes de começar a transmitir dados.
--   [**IMediaParams**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparams) contêm métodos para definir as curvas que um parâmetro seguirá durante o streaming.
+-   [**IMediaParams contêm**](/previous-versions/windows/desktop/api/Medparam/nn-medparam-imediaparams) métodos para definir as curvas que um parâmetro seguirá durante o streaming.
 
-Essas interfaces são projetadas principalmente para DMOs, mas qualquer objeto pode dar suporte a elas. Nesta seção, o *parâmetro* Term refere-se a qualquer propriedade que ofereça suporte a essas duas interfaces.
+Essas interfaces são projetadas principalmente para DMOs, mas qualquer objeto pode dar suporte a elas. Nesta seção, o termo *parâmetro refere-se* a qualquer propriedade que dá suporte a essas duas interfaces.
 
 Esta seção contém os seguintes tópicos:
 

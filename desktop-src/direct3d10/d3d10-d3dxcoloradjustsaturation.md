@@ -1,7 +1,7 @@
 ---
-description: Função D3DXColorAdjustSaturation (D3DX10Math. h) – ajusta o valor de saturação de uma cor.
+description: Função D3DXColorAdjustSaturation (D3DX10Math.h) – ajusta o valor de saturação de uma cor.
 ms.assetid: a7ca64b4-2198-4116-8e9f-79d6c922fd09
-title: Função D3DXColorAdjustSaturation (D3DX10Math. h)
+title: Função D3DXColorAdjustSaturation (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9e9ae91f5c898dae8ff922616bc02846732c760a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6dbc819a1c2b8b6d4eb862b61d4ee23abbb9a2fc6e5aef6b7820d7d6a1a71482
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609536"
 ---
-# <a name="d3dxcoloradjustsaturation-function-d3dx10mathh"></a>Função D3DXColorAdjustSaturation (D3DX10Math. h)
+# <a name="d3dxcoloradjustsaturation-function-d3dx10mathh"></a>Função D3DXColorAdjustSaturation (D3DX10Math.h)
 
 Ajusta o valor de saturação de uma cor.
 
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorAdjustSaturation(
 
 <dl> <dt>
 
-*pout* \[ no\]
+*pOut* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](../direct3d9/d3dxcolor.md)\***
 
-Ponteiro para um [**D3DXCOLOR**](d3d10-d3dxcolor.md) que é o resultado da operação.
+Ponteiro para [**um D3DXCOLOR**](d3d10-d3dxcolor.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*PC* \[ no\]
+*pC* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](../direct3d9/d3dxcolor.md) \***
 
-Ponteiro para uma estrutura de D3DXCOLOR de origem.
+Ponteiro para uma estrutura D3DXCOLOR de origem.
 
 </dd> <dt>
 
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de saturação. Esse parâmetro interpola linearmente entre a cor convertida em escala de cinza e a cor original, pC. Não há limites para o valor de s. Se s for 0, a cor retornada será a cor de escala de cinza. Se s for 1, a cor retornada será a cor original.
+Valor de saturação. Esse parâmetro interpola linearmente entre a cor convertida em escala de cinza e a cor original, pC. Não há limites no valor de s. Se s for 0, a cor retornada será a cor de escala de cinza. Se s for 1, a cor retornada será a cor original.
 
 </dd> </dl>
 
@@ -77,9 +77,9 @@ Essa função retorna um ponteiro para uma estrutura D3DXCOLOR que é o resultad
 
 ## <a name="remarks"></a>Comentários
 
-O canal alfa de entrada é copiado, não modificado, para o canal alfa de saída.
+O canal alfa de entrada é copiado, sem modificação, para o canal alfa de saída.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, essa função pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, essa função pode ser usada como um parâmetro para outra função.
 
 Essa função interpola os componentes de cor vermelho, verde e azul de uma estrutura D3DXCOLOR entre uma cor não saturada e uma cor, conforme mostrado no exemplo a seguir.
 
@@ -94,9 +94,9 @@ pOut->r = grey + s * (pC->r - grey);
 
 
 
-Se s for maior que 0 e menor que 1, a saturação será diminuída. Se s for maior que 1, a saturação será aumentada.
+Se s for maior que 0 e menor que 1, a saturação será reduzida. Se s for maior que 1, a saturação será aumentada.
 
-A cor de escala de cinza é calculada como:
+A cor de escala de cinza é computada como:
 
 
 ```
@@ -111,12 +111,12 @@ r = g = b = 0.2125*r + 0.7154*g + 0.0721*b;
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

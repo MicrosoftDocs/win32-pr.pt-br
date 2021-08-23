@@ -3,7 +3,7 @@ title: Ambienteattributes. accName
 description: O atributo accName especifica ou recupera um nome para qualquer elemento.
 ms.assetid: 4cb453c9-1b5b-4bd9-8ae4-6d4bccc45562
 keywords:
-- AccName do Windows Media Player de ambiente.
+- Windows Media Player ambientalattributes. accName
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506af45bd214a91eda26b19453810ae90629dec9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a525688683584b112ae002b4179ae68623a5709d67685ad38b34256226f55f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509656"
 ---
 # <a name="ambientattributesaccname"></a>Ambienteattributes. accName
 

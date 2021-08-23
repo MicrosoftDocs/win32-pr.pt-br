@@ -1,9 +1,9 @@
 ---
-title: função glFeedbackBuffer (GL. h)
+title: Função glFeedbackBuffer (Gl.h)
 description: A função glFeedbackBuffer controla o modo de comentários.
 ms.assetid: fe3773a7-c264-4d49-8f90-1f2319f9af4f
 keywords:
-- função glFeedbackBuffer OpenGL
+- Função glFeedbackBuffer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e64b232db640d41ca9a1e1f75d6ab766597d6511
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76e51a08dac2bbf55509d4964218fc4b844581c797220294464b84c05de5e05b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105751092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580196"
 ---
-# <a name="glfeedbackbuffer-function"></a>função glFeedbackBuffer
+# <a name="glfeedbackbuffer-function"></a>Função glFeedbackBuffer
 
-A função **glFeedbackBuffer** controla o modo de comentários.
+A **função glFeedbackBuffer** controla o modo de comentários.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,11 +52,11 @@ O número máximo de valores que podem ser gravados no *buffer*.
 *tipo* 
 </dt> <dd>
 
-Uma constante simbólica que descreve as informações que serão retornadas para cada vértice. As seguintes constantes simbólicas são aceitas: GL \_ 2D, GL \_ 3D, Recall \_ 3D \_ Color, GL \_ 3D Color \_ \_ Texture e GL \_ 4D \_ Color \_ Texture.
+Uma constante simbólica que descreve as informações que serão retornadas para cada vértice. As seguintes constantes simbólicas são aceitas: GL \_ 2D, GL \_ 3D, GL \_ 3D \_ COLOR, GL \_ 3D COLOR TEXTURE e \_ GL \_ \_ 4D \_ COLOR \_ TEXTURE.
 
 </dd> <dt>
 
-*completo* 
+*Buffer* 
 </dt> <dd>
 
 Retorna os dados de comentários.
@@ -69,89 +69,89 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                                                                                                                |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tipo* não era um valor aceito.<br/>                                                                                                                                                                           |
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tamanho* era negativo.<br/>                                                                                                                                                                                        |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | **glFeedbackBuffer** foi chamado enquanto o modo render tinha \_ comentários GL ou [**glRenderMode**](glrendermode.md) foi chamado com comentários Argument GL \_ antes de **glFeedbackBuffer** ser chamado pelo menos uma vez.<br/> |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/>                                                                                  |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *type* não era um valor aceito.<br/>                                                                                                                                                                           |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *size* era negativo.<br/>                                                                                                                                                                                        |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | **glFeedbackBuffer** foi chamado enquanto o modo de renderização era GL FEEDBACK ou glRenderMode foi chamado com o argumento GL FEEDBACK antes \_ [](glrendermode.md) \_ de **glFeedbackBuffer** ter sido chamado pelo menos uma vez.<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/>                                                                                  |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glFeedbackBuffer** controla os comentários. Comentários, como seleção, é um modo OpenGL. O modo é selecionado chamando [**glRenderMode**](glrendermode.md) com os \_ comentários GL. Quando OpenGL está no modo de comentários, nenhum pixel é produzido pela rasterização. Em vez disso, as informações sobre primitivas que teriam sido rasterizadas são voltadas para o aplicativo usando OpenGL.
+A **função glFeedbackBuffer** controla os comentários. Comentários, como seleção, são um modo OpenGL. O modo é selecionado chamando [**glRenderMode com**](glrendermode.md) GL \_ FEEDBACK. Quando o OpenGL está no modo de comentários, nenhum pixel é produzido pela rasterização. Em vez disso, as informações sobre primitivos que teriam sido rasterizados são alimentadas novamente para o aplicativo usando OpenGL.
 
-A função **glFeedbackBuffer** tem três argumentos:
+A **função glFeedbackBuffer** tem três argumentos:
 
--   *buffer* é um ponteiro para uma matriz de valores de ponto flutuante em que as informações de comentários são colocadas.
--   *tamanho* indica o tamanho da matriz.
--   *Type* é uma constante simbólica que descreve as informações que são voltadas para cada vértice.
+-   *buffer* é um ponteiro para uma matriz de valores de ponto flutuante na qual as informações de comentários são colocadas.
+-   *size* indica o tamanho da matriz.
+-   *type* é uma constante simbólica que descreve as informações que são alimentadas de volta para cada vértice.
 
-Você deve emitir **glFeedbackBuffer** antes que o modo de comentários esteja habilitado (chamando **glRenderMode** com comentários do Argument GL \_ ). Definir \_ comentários GL sem estabelecer o buffer de comentários ou chamar **GlFeedbackBuffer** enquanto OpenGL está no modo de comentários, é um erro.
+Você deve emitir **glFeedbackBuffer** antes que o modo de comentários seja habilitado (chamando **glRenderMode** com o argumento GL \_ FEEDBACK). Configurar o GL FEEDBACK sem estabelecer o buffer de comentários ou chamar \_ **glFeedbackBuffer** enquanto o OpenGL estiver no modo de comentários, é um erro.
 
-Retire o OpenGL do modo de comentários chamando [**glRenderMode**](glrendermode.md) com um valor de parâmetro diferente do GL \_ . Quando você faz isso enquanto OpenGL está no modo de comentários, **glRenderMode** retorna o número de entradas colocadas na matriz de comentários. O valor retornado nunca excede o *tamanho*. Se os dados de comentários precisarem de mais espaço que o disponível no *buffer*, **glRenderMode** retornará um valor negativo.
+Tire o OpenGL do modo de comentários chamando [**glRenderMode com**](glrendermode.md) um valor de parâmetro diferente de GL \_ FEEDBACK. Quando você faz isso enquanto o OpenGL está no modo de comentários, **glRenderMode** retorna o número de entradas colocadas na matriz de comentários. O valor retornado nunca excede o *tamanho*. Se os dados de comentários exigirem mais espaço do que estava disponível no *buffer,* **glRenderMode** retornará um valor negativo.
 
-No modo de comentários, cada primitivo que seria rasterizado gera um bloco de valores que são copiados para a matriz de comentários. Se isso fizer com que o número de entradas exceda o máximo, o **glFeedbackBuffer** gravará parcialmente o bloco para preencher a matriz (se houver alguma sala restante) e definir um sinalizador de estouro. Cada bloco começa com um código que indica o tipo primitivo, seguido por valores que descrevem os vértices e os dados associados do primitivo. A função **glFeedbackBuffer** também grava entradas para bitmaps e retângulos de pixel. Os comentários ocorrem após a remoção do polígono e a interpretação [**glPolygonMode**](glpolygonmode.md) dos polígonos, portanto, os polígonos que são retirados não são retornados no buffer de comentários. Isso também pode ocorrer depois que polígonos com mais de três bordas são divididos em triângulos, se a implementação do OpenGL renderiza polígonos executando essa decomposição.
+No modo de comentários, cada primitivo que seria rasterizado gera um bloco de valores copiados para a matriz de comentários. Se isso faria com que o número de entradas excedesse o máximo, **glFeedbackBuffer** grava parcialmente o bloco para preencher a matriz (se houver espaço) e define um sinalizador de estouro. Cada bloco começa com um código que indica o tipo primitivo, seguido por valores que descrevem os vértices e os dados associados do primitivo. A **função glFeedbackBuffer** também grava entradas para bitmaps e retângulos de pixel. Os comentários ocorrem após a redução de polígono e a interpretação [**glPolygonMode**](glpolygonmode.md) de polígonos, portanto, polígonos que são eliminados não são retornados no buffer de comentários. Isso também pode ocorrer depois que polígonos com mais de três bordas são divididos em triângulos, se a implementação do OpenGL renderiza polígonos executando essa decomposição.
 
-Você pode inserir um marcador no buffer de comentários com [**glPassThrough**](glpassthrough.md).
+Você pode inserir um marcador no buffer de comentários com [**glPassThrough.**](glpassthrough.md)
 
-Veja a seguir a gramática para os blocos de valores gravados no buffer de comentários. Cada primitiva é indicada com um valor de identificação exclusivo seguido por algum número de vértices. As entradas de polígono incluem um valor inteiro indicando quantos vértices seguem. Um vértice é devolvido como um número de valores de ponto flutuante, conforme determinado pelo *tipo*. As cores são realimentadas como quatro valores no modo RGBA e um valor no modo de índice de cor.
+A seguir está a gramática para os blocos de valores gravados no buffer de comentários. Cada primitivo é indicado com um valor de identificação exclusivo seguido por algum número de vértices. Entradas de polígono incluem um valor inteiro que indica quantos vértices seguem. Um vértice é alimentado de volta como um número de valores de ponto flutuante, conforme determinado pelo *tipo*. As cores são alimentadas novamente como quatro valores no modo RGBA e um valor no modo de índice de cores.
 
-feedbacklist < feedbackItem feedbacklist \| feedbackItem
+feedbackList < feedbackItem feedbackList \| feedbackItem
 
-feedbackItem < ponto \| lineSegment \| Polygon \| bitmap \| pixelRectangle \| PassThru
+feedbackItem < linha de bitmap de \| \| polígono de polígono \| \| pixelRectangle \| passThru
 
-\_vértice do token de ponto do < GL \_
+vértice < \_ TOKEN GL POINT \_
 
-vértice do vértice do \_ token de linha do lineSegment < GL \_ \| \_ \_ \_
+vértice lineSegment < \_ \_ vértice GL LINE TOKEN vtex \| GL LINE RESET \_ \_ \_ TOKEN
 
-símbolo de polígono < GL do polígono \_ \_ n da polispec
+polygon < GL \_ POLYGON \_ TOKEN n polySpec
 
-polispec < vértice de vértice do vértice de vértice do polispec \|
+polySpec < vértice de \| vértice polySpec
 
-\_vértice do token de bitmap do bitmap < GL \_
+bitmap < \_ vértice GL BITMAP \_ TOKEN
 
-vértice do \_ \_ \_ token \| \_ \_ \_ pixel do pixelRectangle < GL
+vértice pixelRectangle < TOKEN DE PIXEL DE DESENHO GL \_ \_ \_ \| COPY \_ \_ \_
 
-passThru < GL \_ o \_ valor do token de passagem \_
+passThru < valor DE \_ \_ TOKEN DE PASSAGEM GL \_
 
-vértice < 2D \| 3D \| 3dColor \| 3dColorTexture \| 4dColorTexture
+vértice < \| 2d \| 3d \| 3dColor 3dColorTexture \| 4dColorTexture
 
-valor de valor de < 2D
+Valor de < 2d
 
-valor do valor do valor de < 3D
+Valor do valor < 3d
 
-cor do valor do valor de < de valor de 3dColor
+3dColor < de valor de valor
 
-3dColorTexture < valor Value valor Color Tex
+3dColorTexture < valor value color tex
 
-4dColorTexture < valor valor valor da cor Tex
+4dColorTexture < valor value value color tex
 
-índice de < de cores RGBA \|
+color < índice \| rgba
 
-RGBA < valor do valor do valor do valor
+rgba < valor do valor
 
-valor de < de índice
+index < valor
 
-valor do valor do valor de < de valor de Tex
+valor < valor de valor de tex
 
-O parâmetro *Value* é um número de ponto flutuante, e *n* é um inteiro de ponto flutuante fornecendo o número de vértices no polígono. Veja a seguir constantes de ponto flutuante simbólico: \_ token de ponto GL \_ , \_ \_ token de linha gl, token de \_ redefinição de linha GL, token de \_ \_ \_ polígono GL \_ , \_ \_ token de bitmap GL, token \_ \_ de pixel de desenho GL \_ , token de pixel de \_ cópia GL e o \_ \_ \_ token de passagem GL \_ \_ . \_ \_ \_ O token de redefinição de linha GL é retornado sempre que o padrão de Stipple de linha é redefinido. Os dados retornados como um vértice dependem do *tipo* de comentário.
+O *parâmetro* value é um número de ponto flutuante e *n* é um inteiro de ponto flutuante que dá o número de vértices no polígono. A seguir estão constantes de ponto flutuante simbólico: GL \_ POINT \_ TOKEN, GL \_ LINE \_ TOKEN, GL LINE RESET \_ \_ \_ TOKEN, GL \_ POLYGON \_ TOKEN, GL \_ BITMAP \_ TOKEN, GL DRAW PIXEL \_ TOKEN, GL COPY PIXEL TOKEN e \_ \_ GL PASS THROUGH \_ \_ \_ \_ \_ \_ TOKEN. GL \_ LINE RESET TOKEN é retornado sempre que o padrão de apple de linha é \_ \_ redefinido. Os dados retornados como um vértice dependem do tipo de *comentários*.
 
-A tabela a seguir fornece a correspondência entre o *tipo* e o número de valores por vértice; *k* é 1 no modo de índice de cor e 4 no modo RGBA.
+A tabela a seguir fornece a correspondência entre *o tipo* e o número de valores por vértice; *k* é 1 no modo de índice de cores e 4 no modo RGBA.
 
 
 
-| Tipo                   | Coordenadas        | Cor | Textura | Número total de valores |
+| Tipo                   | Coordenadas        | Color | Textura | Número total de valores |
 |------------------------|--------------------|-------|---------|------------------------|
 | GL \_ 2D                 | *x*, *y*           |       |         | 2                      |
 | GL \_ 3D                 | *x*, *y*, *z*      |       |         | 3                      |
-| Cor do GL \_ 3D \_          | *x*, *y*, *z*      | *c*   |         | 3 + *k*                |
-| \_Textura de \_ cores \_ 3D GL | *x*, *y*, *z*,     | *c*   | 4       | 7 + *k*                |
+| COR \_ 3D GL \_          | *x*, *y*, *z*      | *K*   |         | 3 + *k*                |
+| TEXTURA DE \_ COR 3D GL \_ \_ | *x*, *y*, *z*,     | *K*   | 4       | 7 + *k*                |
 | \_Textura de \_ cores GL 4D \_ | *x*, *y*, *z*, *w* | *c*   | 4       | 8 + *k*                |
 
 

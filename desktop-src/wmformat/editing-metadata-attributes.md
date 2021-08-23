@@ -3,18 +3,18 @@ title: Editando atributos de metadados
 description: Editando atributos de metadados
 ms.assetid: 96c979e2-c616-45e3-9c60-a24f03e29dc4
 keywords:
-- SDK do Windows Media Format, editando atributos de metadados
+- Windows SDK do formato de mídia, editando atributos de metadados
 - ASF (Advanced Systems Format), editando atributos de metadados
 - ASF (formato de sistemas avançados), editando atributos de metadados
 - metadados, editando atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a52990e5366da178e9ed5021af93a9f6403b80c4
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: b973b787b37bbf9333a0adb218ab5db0e6f677521f1bfc9a0cdc1d5c37200e83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104365614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586056"
 ---
 # <a name="editing-metadata-attributes"></a>Editando atributos de metadados
 
@@ -29,9 +29,9 @@ Você pode usar o número de fluxo 0xFFFF para especificar um atributo a ser mod
 [**Trabalhando com metadados**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

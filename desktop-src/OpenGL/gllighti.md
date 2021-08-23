@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52225c4db8eaa31c17d12a25590b918cf94b4c3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94ec260f0e4e5475cc834c786bc1ba7249b30fabd087030caf3426273adc3012
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493306"
 ---
 # <a name="gllighti-function"></a>função glLighti
 

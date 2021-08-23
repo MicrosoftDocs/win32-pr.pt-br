@@ -1,11 +1,11 @@
 ---
 title: COM-ProgID atributo
-description: Esse atributo armazena a lista de IDs de programa de objeto COM que são implementadas neste pacote de aplicativo.
+description: Esse atributo armazena a lista de IDs do programa de objeto COM implementadas neste pacote de aplicativos.
 ms.assetid: 9d2945e4-f236-48f6-bed3-145d445ff653
 ms.tgt_platform: multiple
 keywords:
-- Esquema de COM-ProgID do atributo AD
-- Esquema de AD do atributo corprogid
+- COM-ProgID atributo AD Schema
+- Esquema do AD do atributo cOMProgID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 686976732bedf2c4ba486186634720568d3b6c3c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ca9d952719483f30448045221d1a366c37c0718770f5d6db88d21d5f5bbd994
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509556"
 ---
 # <a name="com-progid-attribute"></a>COM-ProgID atributo
 
-Esse atributo armazena a lista de IDs de programa de objeto COM que são implementadas neste pacote de aplicativo.
+Esse atributo armazena a lista de IDs do programa de objeto COM implementadas neste pacote de aplicativos.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
 | CN                | COM-ProgID                                                                       |
-| LDAP-Display-Name | corprogid                                                                        |
+| Ldap-Display-Name | cOMProgID                                                                        |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Qualquer pessoa pode atualizar esse objeto com base na segurança do objeto que está sendo criado. |
 | Frequência de atualização  | \-                                                                               |
 | Attribute-Id      | 1.2.840.113556.1.4.21                                                            |
-| System-ID-GUID    | bf96793d-0de6-11d0-a285-00aa003049e2                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | bf96793d-0de6-11d0-a285-00aa003049e2                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ Esse atributo armazena a lista de IDs de programa de objeto COM que são impleme
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | Falso                                                                                                                         |
+| Tem valor único       | Falso                                                                                                                         |
 | É indexado             | Falso                                                                                                                         |
-| No catálogo global      | Falso                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| No Catálogo Global      | Falso                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -79,10 +79,10 @@ Esse atributo armazena a lista de IDs de programa de objeto COM que são impleme
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | Falso                                                                                                                         |
+| Tem valor único       | Falso                                                                                                                         |
 | É indexado             | Falso                                                                                                                         |
-| No catálogo global      | Falso                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| No Catálogo Global      | Falso                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
@@ -100,10 +100,10 @@ Esse atributo armazena a lista de IDs de programa de objeto COM que são impleme
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | Falso                                                                                                                         |
+| Tem valor único       | Falso                                                                                                                         |
 | É indexado             | Falso                                                                                                                         |
-| No catálogo global      | Falso                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| No Catálogo Global      | Falso                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |

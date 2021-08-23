@@ -3,7 +3,7 @@ title: Mensagem de HDM_ORDERTOINDEX (commctrl. h)
 description: Recupera um valor de índice para um item com base em sua ordem no controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a \_ macro OrderToIndex do cabeçalho.
 ms.assetid: vs|controls|~\controls\header\messages\hdm_ordertoindex.htm
 keywords:
-- Controles de HDM_ORDERTOINDEX de mensagens do Windows
+- controles de Windows de mensagem de HDM_ORDERTOINDEX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b65d10fb27c9a07639ebbd5770a53d72cbf0aba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7afd006c90684137ffc484dac62ab40c04d90c0cdbc87f51102d8e9119e8b14d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576255"
 ---
 # <a name="hdm_ordertoindex-message"></a>\_Mensagem HDM ORDERTOINDEX
 
@@ -39,7 +39,7 @@ A ordem na qual o item aparece dentro do controle de cabeçalho, da esquerda par
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna INT que indica o índice do item. Se *wParam* for inválido (negativo ou muito grande), o retorno será igual a *wParam*.
 
@@ -49,9 +49,9 @@ Retorna INT que indica o índice do item. Se *wParam* for inválido (negativo ou
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

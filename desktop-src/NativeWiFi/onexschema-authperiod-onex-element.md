@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 098391a672eedd2657dbd7ad5913fef13fde98cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ccaef08f65baffa0d7b9a921afd9db78a6ac6c6dd1d0bf4fd8075454fe38be21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684850"
 ---
 # <a name="authperiod-onex-element"></a>Elemento authPeriod (OneX)
 
-O elemento authPeriod (OneX) especifica o período máximo de tempo, em segundos, no qual um cliente aguarda uma resposta do autenticador. Se uma resposta não for recebida dentro do período especificado, o cliente assumirá que não há um autenticador presente na rede.
+O elemento authPeriod (OneX) especifica o período máximo de tempo, em segundos, no qual um cliente aguarda uma resposta do autenticador. Se uma resposta não for recebida dentro do período especificado, o cliente assumirá que não há nenhum autenticador presente na rede.
 
-Esse elemento é opcional. Quando authPeriod não é especificado em um perfil, é usado um valor de 18 segundos.
+Esse elemento é opcional. Quando authPeriod não é especificado em um perfil, um valor de 18 segundos é usado.
 
 **Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
 
@@ -44,7 +44,7 @@ Esse elemento é opcional. Quando authPeriod não é especificado em um perfil, 
 </xs:element>
 ```
 
-O elemento **authPeriod** é definido pelo elemento [**Onex**](onexschema-onex-element.md) .
+O **elemento authPeriod** é definido pelo [**elemento OneX.**](onexschema-onex-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ O elemento **authPeriod** é definido pelo elemento [**Onex**](onexschema-onex-e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -64,13 +64,13 @@ O elemento **authPeriod** é definido pelo elemento [**Onex**](onexschema-onex-e
 **Contexto de definição do elemento no esquema**
 </dt> <dt>
 
-[**802.1x**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> <dt>
 
 **Possível elemento pai imediato na instância de esquema**
 </dt> <dt>
 
-[**802.1x**](onexschema-onex-element.md)
+[**Onex**](onexschema-onex-element.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: As etapas a seguir descrevem uma interação típica entre um aplic
 ms.assetid: e57a86c4-7e27-40cf-a9c1-081b3f20d9d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e68bee24cfe0724ed14d439b0789f5023338853
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ab97d1a9d76d1e82dab64fb777ef5207d3d47560b2a889981c698ab78e3622b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726986"
 ---
 # <a name="interacting-with-imapi"></a>Interagindo com IMAPi
 
@@ -22,26 +22,26 @@ As etapas a seguir descrevem uma interação típica entre um aplicativo e o IMA
 5.  Use [**IDiscMaster::P rogressadvise**](/windows/desktop/api/Imapi/nf-imapi-idiscmaster-progressadvise) para se registrar para retornos de chamada de andamento.
 6.  Use a interface para o formato selecionado para criar conteúdo. O conteúdo é compilado de forma incremental, de modo que o conteúdo das trilhas ou da pasta pode ser adicionado a uma parte do disco. A criação desse conteúdo é chamada *de preparo de uma imagem*. O conteúdo da imagem preparada não pode ser excluído incrementalmente (não é possível remover uma faixa que foi adicionada), mas é possível limpar o conteúdo de uma imagem preparada para que o preparo possa ser iniciado novamente. Use [**IDiscMaster:: ClearFormatContent**](/windows/desktop/api/Imapi/nf-imapi-idiscmaster-clearformatcontent) para reiniciar o preparo.
 
-**Para áudio:  **
+* * Para áudio: * *
 
 1.  Use [**IRedbookDiscMaster:: CreateAudioTrack**](/windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-createaudiotrack) para indicar que uma nova faixa de áudio está sendo iniciada no disco.
 2.  Use [**IRedbookDiscMaster:: AddAudioTrackBlocks**](/windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-addaudiotrackblocks) para adicionar dados brutos de áudio a um controle. O aplicativo pode usar [**GetAvailableAudioTrackBlocks**](/windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-getavailableaudiotrackblocks), [**GetTotalAudioBlocks**](/windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-gettotalaudioblocks)e [**GetUsedAudioBlocks**](/windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-getusedaudioblocks) para recuperar informações estatísticas.
 3.  Use [**IRedbookDiscMaster:: CloseAudioTrack**](/windows/desktop/api/Imapi/nf-imapi-iredbookdiscmaster-closeaudiotrack) para fechar uma faixa de áudio.
 4.  Repita as etapas de 1-3 até sem espaço ou todas as faixas de áudio foram gravadas.
 
-**Para dados:  **
+* * Para dados: * *
 
 1.  Use [**IJolietDiscMaster:: AddData**](/windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-adddata) para adicionar o conteúdo de uma pasta à imagem. Os itens dentro de uma pasta são colocados na raiz do arquivo de imagem. Use [**GetTotalDataBlocks**](/windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-gettotaldatablocks) e [**GetUsedDataBlocks**](/windows/desktop/api/Imapi/nf-imapi-ijolietdiscmaster-getuseddatablocks) para recuperar informações estatísticas.
 2.  Repita a etapa acima até sem espaço ou todos os dados tiverem sido adicionados.
 
-**Para todos os discos:  **
+* * Para todos os discos: * *
 
 1.  Use [**IDiscMaster:: RecordDisc**](/windows/desktop/api/Imapi/nf-imapi-idiscmaster-recorddisc) para registrar o disco.
 2.  Feche a sessão IMAPi usando [**IDiscMaster:: Close**](/windows/desktop/api/Imapi/nf-imapi-idiscmaster-close). Fechar a sessão limpa o conteúdo do disco stash.
 
- 
+ 
 
- 
+ 
 
 
 

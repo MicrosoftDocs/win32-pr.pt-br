@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. selectedItem
-description: O atributo selectedItem especifica ou recupera o índice do item selecionado no controle caixa de listagem.
+title: LISTBOX.selectedItem
+description: O atributo selectedItem especifica ou recupera o índice do item selecionado no controle de caixa de listagem.
 ms.assetid: 8c4eb914-c3a3-447e-a42b-8bb80b8aa8f4
 keywords:
-- LISTBOX. selectedItem Windows Media Player
+- LISTBOX.selectedItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6ec30032e62713436e85f3924f63344c96944ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bd236e288bf91d77cdf79b2b5f4f4cb2e8ebcf4b2bcb6eb876c6978dc2249335
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105807290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508486"
 ---
-# <a name="listboxselecteditem"></a>LISTBOX. selectedItem
+# <a name="listboxselecteditem"></a>LISTBOX.selectedItem
 
-O atributo **SelectedItem** especifica ou recupera o índice do item selecionado no controle caixa de listagem.
+O **atributo selectedItem** especifica ou recupera o índice do item selecionado no controle de caixa de listagem.
 
 ``` syntax
         elementID.selectedItem
@@ -29,11 +29,11 @@ O atributo **SelectedItem** especifica ou recupera o índice do item selecionado
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** de leitura/gravação (**longo**).
+Esse atributo é um número de **leitura/gravação** (**longo).**
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade selecionará uma linha no controle caixa de listagem. Qualquer outra linha selecionada será desmarcada.
+Essa propriedade selecionará uma linha no controle da caixa de listagem. Qualquer outra linha selecionada será deseleitada.
 
 ## <a name="requirements"></a>Requisitos
 

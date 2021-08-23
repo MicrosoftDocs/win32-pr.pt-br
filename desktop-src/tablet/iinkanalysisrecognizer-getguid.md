@@ -1,7 +1,7 @@
 ---
-description: Recupera o identificador global exclusivo (GUID) do reconhecedor.
+description: Recupera o GUID (identificador global exclusivo) do reconhecedor.
 ms.assetid: 9b98993b-eaf3-4207-9d56-33efeceb75cf
-title: 'Método IInkAnalysisRecognizer:: GetGuid (IACom. h)'
+title: Método IInkAnalysisRecognizer::GetGuid (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 9a027a405829e6d1237a8ec90dd59fcc8905006d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5fbf2b07b2a63f2fdb088c38a5e03e4182c4e38528208c039f927b282755344
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596736"
 ---
-# <a name="iinkanalysisrecognizergetguid-method"></a>Método IInkAnalysisRecognizer:: GetGuid
+# <a name="iinkanalysisrecognizergetguid-method"></a>Método IInkAnalysisRecognizer::GetGuid
 
-Recupera o identificador global exclusivo (GUID) do reconhecedor.
+Recupera o GUID (identificador global exclusivo) do reconhecedor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ HRESULT GetGuid(
 
 <dl> <dt>
 
-*pid* \[ fora\]
+*pId* \[ out\]
 </dt> <dd>
 
-O GUID que identifica este [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
+O GUID que identifica esse [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Para obter uma descrição dos valores de retorno, consulte [classes e interface
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

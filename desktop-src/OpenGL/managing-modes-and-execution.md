@@ -6,20 +6,20 @@ keywords:
 - OpenGL, modos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 427e04b856c79c9adfdfebf4061f7e96f09db835
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ec448fa94c8ed0983be68f8aa1dbbef0974d2e040c4f68b002b026b300406981
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105754621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553976"
 ---
 # <a name="managing-modes-and-execution"></a>Gerenciando modos e execução
 
-O efeito de muitas funções OpenGL depende se um modo específico está em vigor. As funções [**glEnable**](glenable.md) e [**glDisable**](gldisable.md) definem tais modos; [**glIsEnabled**](glisenabled.md) determina se um modo específico está definido.
+O efeito de muitas funções OpenGL depende se um modo específico está em vigor. As [**funções glEnable**](glenable.md) e [**glDisable**](gldisable.md) configuram esses modos; [**glIsEnabled**](glisenabled.md) determina se um modo específico está definido.
 
-Você pode controlar a execução de funções OpenGL emitidas anteriormente com [**glFinish**](glfinish.md), o que força todas essas funções a serem concluídas, ou [**glFlush**](glflush.md), o que garante que todas essas funções serão preenchidas em um tempo finito.
+Você pode controlar a execução de funções OpenGL emitidas anteriormente com [**glFinish**](glfinish.md), que força todas essas funções a serem concluídas, ou [**glFlush,**](glflush.md)o que garante que todas essas funções sejam concluídas em um tempo finito.
 
-Em uma implementação específica do OpenGL, você poderá controlar determinados comportamentos com dicas usando [**glHint**](glhint.md). Esses comportamentos são a qualidade das cores e a interpolação de coordenadas de textura; a precisão dos cálculos de neblina; e a qualidade de amostragem de pontos, linhas ou polígonos com alias.
+Em uma implementação específica do OpenGL, você pode controlar determinados comportamentos com dicas usando [**glHint.**](glhint.md) Esses comportamentos são a qualidade da interpolação de coordenadas de cor e textura; a precisão dos cálculos de cálculos de mosca; e a qualidade de amostragem de pontos, linhas ou polígonos antialiasados.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -28,9 +28,9 @@ Em uma implementação específica do OpenGL, você poderá controlar determinad
 [Modos e referência de execução](modes-and-execution-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: O método GetSetupData recupera os dados de registro para o filtro.
+description: O método GetSetupData recupera os dados de registro do filtro.
 ms.assetid: 93582c75-4f40-492c-919c-c8a06dce7715
-title: Método CBaseFilter. GetSetupData (Amfilter. h)
+title: Método CBaseFilter.GetSetupData (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 40223a22f4de4a078ce84f8ebe49bddd5ab13575
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f86bc35688ab0ec1c19053a95cbfd2025cf45ad666ef419fdb8440c6a844cb61
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640466"
 ---
-# <a name="cbasefiltergetsetupdata-method"></a>Método CBaseFilter. GetSetupData
+# <a name="cbasefiltergetsetupdata-method"></a>Método CBaseFilter.GetSetupData
 
 O `GetSetupData` método recupera os dados de registro para o filtro.
 
 > [!Note]  
-> Esse método é obsoleto. Ele é chamado pelos métodos [**CBaseFilter:: Register**](cbasefilter-register.md) e [**CBaseFilter:: Unregister**](cbasefilter-unregister.md) .
+> Esse método é obsoleto. Ele é chamado pelos [**métodos CBaseFilter::Register**](cbasefilter-register.md) e [**CBaseFilter::Unregister.**](cbasefilter-unregister.md)
 
  
 
@@ -45,13 +45,13 @@ virtual LPAMOVIESETUP_FILTER GetSetupData();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para uma estrutura de [**\_ filtro AMOVIESETUP**](amoviesetup-filter.md) que contém informações de registro para o filtro.
+Retorna um ponteiro para uma estrutura [**AMOVIESETUP \_ FILTER**](amoviesetup-filter.md) que contém informações de registro para o filtro.
 
 ## <a name="remarks"></a>Comentários
 
-A classe base retorna **NULL**.
+A classe base retorna **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ A classe base retorna **NULL**.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

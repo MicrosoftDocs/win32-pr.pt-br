@@ -1,10 +1,10 @@
 ---
-title: Sintaxe de objeto (DN-binário)
-description: Uma cadeia de caracteres de octeto que contém um valor binário e um DN (nome distinto).
+title: Sintaxe object(DN-Binary)
+description: Uma cadeia de caracteres de octeto que contém um valor binário e um DN (nome diferenciado).
 ms.assetid: 1d7efc17-a99a-41bf-9812-9e8a2b2b6644
 ms.tgt_platform: multiple
 keywords:
-- Esquema de sintaxe de objeto (DN binário) do AD
+- Esquema do AD de sintaxe object(DN-Binary)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e96f640ad729f203362df906bcc6afe6b82e7e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 15172a8577cf8ccec71053c3d374b389d71d3264fcc1934b19440a3f9efc4904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702565"
 ---
-# <a name="objectdn-binary-syntax"></a>Sintaxe de objeto (DN-binário)
+# <a name="objectdn-binary-syntax"></a>Sintaxe object(DN-Binary)
 
-Uma cadeia de caracteres de octeto que contém um valor binário e um DN (nome distinto).
+Uma cadeia de caracteres de octeto que contém um valor binário e um DN (nome diferenciado).
 
 
 
 | Entrada | Valor |
 |--------------|------------------------------------------------------------------------------------|
-| Nome         | Objeto (DN-binário)                                                                  |
+| Nome         | Object(DN-Binary)                                                                  |
 | ID da sintaxe    | 2.5.5.7                                                                            |
-| ID DO OM        | 127                                                                                |
-| Tipo de MAPI    | TSTRING                                                                            |
-| Tipo de ADS     | \_DN ADSTYPE \_ com \_ binário                                                          |
-| Tipo de variante | expedição de VT \_                                                                       |
-| Tipo SDS     | Um objeto COM que pode ser convertido em um [**IADsDNWithBinary**](/windows/desktop/api/iads/nn-iads-iadsdnwithbinary). |
+| OM ID        | 127                                                                                |
+| Tipo MAPI    | TSTRING                                                                            |
+| Tipo ADS     | ADSTYPE \_ DN \_ COM \_ BINÁRIO                                                          |
+| Tipo de variante | DISPATCH \_ da VT                                                                       |
+| Tipo de SDS     | Um objeto COM que pode ser lançado em [**um IADsDNWithBinary**](/windows/desktop/api/iads/nn-iads-iadsdnwithbinary). |
 
 
 
@@ -46,7 +46,7 @@ Um valor com essa sintaxe tem o seguinte formato:
 B:<char count>:<binary value>:<object DN>
 ```
 
-onde " &lt; contagem &gt; de caracteres" é o número de dígitos hexadecimais em " &lt; valor binário &gt; ", " &lt; valor binário &gt; " é a representação HEXADECIMAL do valor binário e "DN do &lt; objeto &gt; " é um nome diferenciado. Active Directory atualizará automaticamente o DN se o objeto ao qual ele se refere for movido ou renomeado. Para obter mais informações e um exemplo de código que usa essa sintaxe, consulte [habilitando a associação de renomeação segura com a propriedade otherWellKnownObjects](/windows/desktop/AD/enabling-rename-safe-binding-with-the-otherwellknownobjects-property).
+em que " contagem de caracteres " é o número de dígitos hexadecimais em " valor binário ", " valor binário " é a representação &lt; &gt; &lt; &gt; &lt; &gt; hexadecimal &lt; do valor binário e " DN de objeto &gt; " é um nome diferenciado. O Active Directory atualizará automaticamente o DN se o objeto ao qual ele se refere for movido ou renomeado. Para obter mais informações e um exemplo de código que usa essa sintaxe, consulte Habilitando a associação rename-safe com a [outra propriedadeWellKnownObjects](/windows/desktop/AD/enabling-rename-safe-binding-with-the-otherwellknownobjects-property).
 
 ## <a name="see-also"></a>Confira também
 

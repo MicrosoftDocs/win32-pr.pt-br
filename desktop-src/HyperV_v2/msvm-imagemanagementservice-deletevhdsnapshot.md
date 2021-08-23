@@ -1,7 +1,7 @@
 ---
-description: Exclui uma entrada de instantâneo VHD em um arquivo de conjunto VHD.
+description: Exclui uma entrada de instantâneo vhd dentro de um arquivo de conjunto de VHDs.
 ms.assetid: 37d55a5f-209d-42ce-8f69-8b494055e263
-title: Método DeleteVHDSnapshot da classe Msvm_ImageManagementService
+title: Método DeleteVHDSnapshot da classe Msvm_ImageManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5c7f3f115825aedb3a21a8f33326a712c52e0780
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45a15b03b3ca26375ef0a563981cb9405c4397f355735c173e105029959d8282
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522656"
 ---
-# <a name="deletevhdsnapshot-method-of-the-msvm_imagemanagementservice-class"></a>Método DeleteVHDSnapshot da \_ classe imagens Msvm
+# <a name="deletevhdsnapshot-method-of-the-msvm_imagemanagementservice-class"></a>Método DeleteVHDSnapshot da classe Msvm \_ ImageManagementService
 
-Exclui uma entrada de instantâneo VHD em um arquivo de conjunto VHD.
+Exclui uma entrada de instantâneo vhd dentro de um arquivo de conjunto de VHDs.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,35 +42,35 @@ uint32 DeleteVHDSnapshot(
 
 <dl> <dt>
 
-*VHDSetPath* \[ no\]
+*VHDSetPath* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres que contém o caminho para o arquivo de conjunto VHD que contém o instantâneo em questão.
+Cadeia de caracteres que contém o caminho para o arquivo conjunto de VHD que contém o instantâneo em questão.
 
 </dd> <dt>
 
-*Instantâneoid* \[ no\]
+*SnapshotId* \[ Em\]
 </dt> <dd>
 
-Um GUID que representa a ID de instantâneo para a entrada de instantâneo VHD a ser excluída.
+Um GUID que representa a ID do instantâneo para a entrada de instantâneo vhd a ser excluída.
 
 </dd> <dt>
 
-*PersistReferenceSnapshot* \[ no\]
+*PersistReferenceSnapshot* \[ Em\]
 </dt> <dd>
 
-Se um registro de instantâneo somente de referência deve ou não persistir após a exclusão do instantâneo.
+Se um registro de instantâneo somente referência deve ser persistido após a exclusão do instantâneo.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Uma referência ao trabalho (pode ser NULL se a tarefa for concluída).
+Uma referência ao trabalho (pode ser nula se a tarefa for concluída).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -79,7 +79,7 @@ Esse método retorna um dos seguintes valores:
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -91,16 +91,16 @@ Esse método retorna um dos seguintes valores:
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -109,10 +109,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo não encontrado** (32779)
@@ -124,10 +124,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,7 +136,7 @@ O **sistema não está disponível** (32777)
 
 <dl> <dt>
 
-[**Msvm \_ imagens**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

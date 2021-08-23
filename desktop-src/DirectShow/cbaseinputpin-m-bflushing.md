@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que indica se o PIN está sendo liberado no momento. Se for TRUE, o PIN estará sendo liberado.
+description: Sinalizador que indica se o pino está sendo liberado no momento. Se TRUE, o pino será liberado.
 ms.assetid: 5f5433e4-6c10-4e85-bcc7-68edea90db6b
-title: 'Membro CBaseInputPin:: m_bFlushing (Amfilter. h)'
+title: Membro CBaseInputPin::m_bFlushing (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec7d04118cce54b0fe3e589ebb533b8527e1c51e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 987eec4340a6ea5c63e145c2109eea5668aa0185869d23390988b333556041c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640256"
 ---
-# <a name="cbaseinputpinm_bflushing-member"></a>Membro de CBaseInputPin:: m \_ bFlushing
+# <a name="cbaseinputpinm_bflushing-member"></a>Membro CBaseInputPin::m \_ bFlushing
 
-Sinalizador que indica se o PIN está sendo liberado no momento. Se for **true**, o PIN estará sendo liberado.
+Sinalizador que indica se o pino está sendo liberado no momento. Se **TRUE**, o pino será liberado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BYTE m_bFlushing;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

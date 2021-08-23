@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMMouse ScrollWheelPosition (VPCCOMInterfaces. h)
+title: Propriedade IVMMouse ScrollWheelPosition (VPCCOMInterfaces.h)
 description: Ajusta a coordenada z do mouse (somente relativo).
 ms.assetid: 52269d0c-a7a8-4dc2-bb27-c891d1e9c293
 keywords:
-- Propriedade ScrollWheelPosition Virtual PC
-- Propriedade ScrollWheelPosition Virtual PC, interface IVMMouse
-- IVMMouse interface virtual PC, Propriedade ScrollWheelPosition
+- Propriedade ScrollWheelPosition Pc Virtual
+- Propriedade ScrollWheelPosition pc virtual, interface IVMMouse
+- INTERFACE IVMMouse Pc Virtual, propriedade ScrollWheelPosition
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e374011dc87ad00d4edef1f33e9787d5a2e6d787
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 334190707cd43e63ce2244f410180b11bf6eb5018ff1482f073903adfb4b7878
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119510646"
 ---
-# <a name="ivmmousescrollwheelposition-property"></a>Propriedade IVMMouse:: ScrollWheelPosition
+# <a name="ivmmousescrollwheelposition-property"></a>Propriedade IVMMouse::ScrollWheelPosition
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Ajusta a coordenada z do mouse (somente relativo).
 
@@ -54,10 +54,10 @@ A coordenada z que indica o número de pixels que o mouse deve ser movido ao lon
 | Nome/valor                                                                                                                                                                     | Significado                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                        | A operação foi bem-sucedida.<br/>                                                                |
-| <dl> <dt>VM \_ E a \_ VM \_ não \_ está executando</dt> <dt>0xA0040206</dt> </dl>             | A máquina virtual à qual este dispositivo de mouse está anexado não está em execução no momento.<br/>         |
-| <dl> <dt>VM \_ E \_ mouse \_ não \_ ativo</dt> <dt>0xA0040800</dt> </dl>           | O dispositivo de mouse não foi ligado ou não está ativo no momento na máquina virtual.<br/> |
-| <dl> <dt>VM \_ E \_ usando 0xA0040801 de \_ \_ coordenadas absolutas</dt> <dt></dt> </dl> | A posição da roda de rolagem não pode ser definida quando o dispositivo do mouse está usando coordenadas absolutas.<br/> |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl>                  | Ocorreu um erro inesperado.<br/>                                                            |
+| <dl> <dt>VM \_ E \_ VM \_ NÃO \_ EXECUTANDO</dt> <dt>0XA0040206</dt> </dl>             | A máquina virtual à qual este dispositivo do mouse está anexado não está em execução no momento.<br/>         |
+| <dl> <dt>VM \_ E \_ MOUSE \_ NÃO \_ ATIVO</dt> <dt>0XA0040800</dt> </dl>           | O dispositivo do mouse não foi ligado ou não está ativo na máquina virtual no momento.<br/> |
+| <dl> <dt>VM \_ E \_ USANDO \_ \_ COORDENADAS ABSOLUTAS</dt> <dt>0XA0040801</dt> </dl> | A posição da roda de rolagem não pode ser definida quando o dispositivo do mouse está usando coordenadas absolutas.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                  | Ocorreu um erro inesperado.<br/>                                                            |
 
 
 
@@ -67,12 +67,12 @@ A coordenada z que indica o número de pixels que o mouse deve ser movido ao lon
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMmouse é definido como ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMmouse é definido como \_ ac903f6d-6346-4f29-8875-5d511a13895e<br/>                   |
 
 
 

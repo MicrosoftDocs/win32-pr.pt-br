@@ -1,25 +1,25 @@
 ---
 title: Visão geral do storyboard
-description: Esta visão geral se concentra em como transições e storyboards são usados na Animação do Windows.
+description: Esta visão geral se concentra em como transições e storyboards são usados em Windows Animação.
 ms.assetid: d37718ac-0256-4a24-a26c-d29173593be0
 keywords:
-- Animação do Windows Animação do Windows , visão geral do storyboard
-- animação do Windows storyboards, descrita
-- transições da Animação do Windows, descritas
-- faz a transição da Animação do Windows, personalizada
-- interpoladores Animação do Windows , descrito
+- Windows Animação Windows animação, visão geral do storyboard
+- storyboards Windows Animação , descrito
+- transições Windows Animação , descritas
+- transições Windows Animação , personalizado
+- interpoladores Windows Animação , descritos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58210ae98f6d3a96c554276466ad72b3364d72a1
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: ca78e4638ad7c3930be25b9ff826e5fa533d2af62cc4907b7a17d4c5b636f239
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119514017"
 ---
 # <a name="storyboard-overview"></a>Visão geral do storyboard
 
-Esta visão geral se concentra em como transições e storyboards são usados na Animação do Windows. Para ter uma visão geral dos componentes da Animação do Windows, consulte Visão [geral da animação do Windows.](scenic-animation-api-overview.md)
+Esta visão geral se concentra em como transições e storyboards são usados em Windows Animação. Para ter uma visão geral dos componentes do Windows Animation, consulte [Visão geral Windows animação.](scenic-animation-api-overview.md)
 
 Este tópico contém as seguintes seções:
 
@@ -28,7 +28,7 @@ Este tópico contém as seguintes seções:
     -   [Transições personalizadas](#custom-transitions)
 -   [Storyboards](#storyboards)
     -   [Criando um storyboard simples](#building-a-simple-storyboard)
-    -   [Usando uma duração Context-Sensitive dados](#using-a-context-sensitive-duration)
+    -   [Usando uma duração Context-Sensitive tempo](#using-a-context-sensitive-duration)
     -   [Criando um storyboard mais complexo](#building-a-more-complex-storyboard)
     -   [Usando keyframes](#using-keyframes)
     -   [Mantendo variáveis](#holding-variables)
@@ -37,9 +37,9 @@ Este tópico contém as seguintes seções:
 
 ## <a name="transitions"></a>Transições
 
-Uma transição define como uma única variável de animação muda em um intervalo de tempo específico. A Animação do Windows inclui uma biblioteca de transições comuns que os desenvolvedores podem aplicar a uma ou mais variáveis de animação. Diferentes tipos de transições têm conjuntos diferentes de parâmetros, que podem incluir o valor da variável quando a transição é concluída, a duração da transição ou quantidades exclusivas para a função matemática subjacente, como aceleração ou intervalo de oscilação.
+Uma transição define como uma única variável de animação muda em um intervalo de tempo específico. Windows A animação inclui uma biblioteca de transições comuns que os desenvolvedores podem aplicar a uma ou mais variáveis de animação. Diferentes tipos de transições têm conjuntos diferentes de parâmetros, que podem incluir o valor da variável quando a transição é concluída, a duração da transição ou quantidades exclusivas para a função matemática subjacente, como aceleração ou intervalo de oscilação.
 
-Todas as transições compartilham dois parâmetros implícitos: o valor inicial e a velocidade inicial (inclinação) da função matemática. Eles podem ser especificados explicitamente pelo aplicativo, mas normalmente são definidos pelo gerenciador de animação como o valor e a velocidade da variável de animação quando a transição é iniciada.
+Todas as transições compartilham dois parâmetros implícitos: o valor inicial e a velocidade inicial (inclinação) da função matemática. Eles podem ser especificados explicitamente pelo aplicativo, mas normalmente são definidos pelo gerenciador de animação como o valor e a velocidade da variável de animação quando a transição começa.
 
 -   [Biblioteca de transição](#transition-library)
 -   [Transições personalizadas](#custom-transitions)
@@ -92,14 +92,14 @@ Observe que a maioria dos aplicativos terá todas as transições de que precisa
 
 ## <a name="storyboards"></a>Storyboards
 
-Um storyboard é uma coleção de transições aplicadas a uma ou mais variáveis de animação ao longo do tempo. As transições em um storyboard têm a garantia de permanecer sincronizadas em relação umas às outras e o storyboard é agendado ou cancelado como uma unidade. Depois de criar as transições desejadas, um aplicativo cria um storyboard usando o gerenciador de animação, adiciona as transições ao storyboard, configura o storyboard adequadamente e o agenda para ser reproduzível assim que possível. O gerenciador de animação determina a hora de início real do storyboard, pois pode haver contenção com outros storyboards atualmente animando as mesmas variáveis.
+Um storyboard é uma coleção de transições aplicadas a uma ou mais variáveis de animação ao longo do tempo. As transições em um storyboard têm a garantia de permanecer sincronizadas em relação umas às outras, e o storyboard é agendado ou cancelado como uma unidade. Depois de criar as transições desejadas, um aplicativo cria um storyboard usando o gerenciador de animação, adiciona as transições ao storyboard, configura o storyboard adequadamente e o agenda para ser reproduzível assim que possível. O gerenciador de animação determina a hora de início real do storyboard, pois pode haver contenção com outros storyboards atualmente animando as mesmas variáveis.
 
 A duração geral de um storyboard depende das durações das transições dentro do storyboard. A duração de uma transição não precisa ser corrigida; ele pode ser determinado pelo valor e pela velocidade das variáveis animadas quando a transição é iniciada. Portanto, a duração de um storyboard também pode depender do estado das variáveis que ele anima.
 
 Os exemplos a seguir pressuem que um gerenciador de animação, uma biblioteca de transição e um temporizador foram criados. Para obter mais informações, consulte [Criar os objetos de animação principais](adding-animation-to-an-application.md). Os exemplos também pressupom que o aplicativo criou três variáveis de animação (X, Y e Z) usando o método [**IUIAnimationManager::CreateAnimationVariable**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationmanager-createanimationvariable) e cinco transições (T1, T2, T3, T4 e T5) usando um dos métodos da interface [**IUIAnimationTransitionLibrary.**](/windows/desktop/api/UIAnimation/nn-uianimation-iuianimationtransitionlibrary)
 
 -   [Criando um storyboard simples](#building-a-simple-storyboard)
--   [Usando uma duração Context-Sensitive dados](#using-a-context-sensitive-duration)
+-   [Usando uma duração Context-Sensitive tempo](#using-a-context-sensitive-duration)
 -   [Criando um storyboard mais complexo](#building-a-more-complex-storyboard)
 -   [Usando keyframes](#using-keyframes)
 -   [Mantendo variáveis](#holding-variables)
@@ -173,7 +173,7 @@ A ilustração a seguir mostra a estrutura de um storyboard com cinco transiçõ
 
 ![ilustração mostrando um storyboard com cinco transições animando três variáveis](images/storyboardwithoutline.png)
 
-A base da plataforma de animação do Windows é seu suporte para permitir que uma animação seja concluída antes que outra comece, quando necessário. Embora isso elimine muitos problemas lógicos, ele também apresenta uma latência arbitrária na interface do usuário. Para resolver isso, os aplicativos podem especificar o *atraso aceitável mais longo* para que um storyboard comece, usando o método [**IUIAnimationStoryboard:: SetLongestAcceptableDelay**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay) e o Gerenciador de animação use essas informações para agendar o storyboard antes de o período de latência especificado expirar. Quando um Storyboard é agendado, o Gerenciador de animação determina se outros storyboards devem primeiro ser cancelados, cortados, concluídos e/ou compactados.
+uma base da plataforma de animação Windows é o seu suporte para permitir que uma animação seja concluída antes que outra comece, quando necessário. Embora isso elimine muitos problemas lógicos, ele também apresenta uma latência arbitrária na interface do usuário. Para resolver isso, os aplicativos podem especificar o *atraso aceitável mais longo* para que um storyboard comece, usando o método [**IUIAnimationStoryboard:: SetLongestAcceptableDelay**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-setlongestacceptabledelay) e o Gerenciador de animação use essas informações para agendar o storyboard antes de o período de latência especificado expirar. Quando um Storyboard é agendado, o Gerenciador de animação determina se outros storyboards devem primeiro ser cancelados, cortados, concluídos e/ou compactados.
 
 Um aplicativo pode registrar um manipulador que será chamado quando o status de um storyboard for alterado. Isso permite que o aplicativo responda quando o storyboard começa a ser executado, executa até a conclusão, é removido totalmente da agenda ou não é impedido de concluir devido à interrupção por um storyboard de prioridade mais alta. Para identificar os storyboards passados para manipuladores de eventos de storyboard (ou comparações de prioridade), um aplicativo pode usar o método [**IUIAnimationStoryboard:: SetTag**](/windows/desktop/api/UIAnimation/nf-uianimation-iuianimationstoryboard-settag) para aplicar marcas a storyboards, semelhante àqueles que podem ser usados para identificar variáveis. Assim como na reutilização do storyboard, os desenvolvedores devem ter cuidado ao usar marcas para identificar storyboards e garantir que as ambiguidades não surjam quando as ações do usuário resultam na fila de muitos storyboards.
 

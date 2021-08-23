@@ -1,10 +1,10 @@
 ---
-title: Sintaxe de objeto (link de réplica)
-description: Sintaxe de objeto (link de réplica).
+title: Sintaxe object(Replica-Link)
+description: Sintaxe object(Replica-Link).
 ms.assetid: 772dee62-1e87-44dd-aa8a-91762a87d9bc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de sintaxe de objeto (link de réplica) do AD
+- Esquema do AD de sintaxe object(Replica-Link)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56c3eb396f0475b4f6f0924cce823c290005818a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0376fb8dd180f475f0b42441ac054054ff7ed463eca092bbeab6c6b42a147c26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702536"
 ---
-# <a name="objectreplica-link-syntax"></a>Sintaxe de objeto (link de réplica)
+# <a name="objectreplica-link-syntax"></a>Sintaxe object(Replica-Link)
 
-Sintaxe de objeto (link de réplica). Essa sintaxe é usada apenas pelo sistema.
+Sintaxe object(Replica-Link). Essa sintaxe só é usada pelo sistema.
 
 
 
 | Entrada | Valor |
 |--------------|-------------------------------------------------------------------|
-| Nome         | Objeto (link de réplica)                                              |
+| Nome         | Object(Replica-Link)                                              |
 | ID da sintaxe    | 2.5.5.10                                                          |
-| ID DO OM        | 127                                                               |
-| Tipo de MAPI    | BINARY                                                            |
-| Tipo de ADS     | Cadeia de caracteres de \_ OCTETO ADSTYPE \_                                            |
-| Tipo de variante | variante do VT \_                                                       |
-| Tipo SDS     | [System.Byte\[\]](/dotnet/api/system.byte) |
+| OM ID        | 127                                                               |
+| Tipo MAPI    | BINARY                                                            |
+| Tipo ADS     | CADEIA DE \_ CARACTERES DE OCTETO ADSTYPE \_                                            |
+| Tipo de variante | VARIANTE \_ DA VT                                                       |
+| Tipo de SDS     | [System.Byte\[\]](/dotnet/api/system.byte) |
 
 
 

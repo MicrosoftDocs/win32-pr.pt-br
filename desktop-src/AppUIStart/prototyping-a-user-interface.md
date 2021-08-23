@@ -4,12 +4,12 @@ description: Este tópico explora como a criação de protótipos de uma interfa
 ms.assetid: 16e3fabb-9cd1-4517-8f19-b1d80c956ee0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 148c01d31c3bee34b555ab2ce10565229a7d1fb8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ce42ad4240c3a06716f0db851e98b31e713b1ce0e23d1d485bc3e154375d9e50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507427"
 ---
 # <a name="prototyping-a-user-interface"></a>Criando um protótipo de uma interface do usuário
 
@@ -41,7 +41,7 @@ Ao examinar as necessidades de um projeto específico, os motivos para criar um 
 
 Às vezes, os protótipos são criados para uma combinação desses motivos. Se uma equipe planeja bem o suficiente, ela pode alocar tempo para um desenvolvedor e um designer ou gerente de projeto para trabalhar juntos em um protótipo. Nesses casos, é extremamente importante definir claramente as metas e as contribuições que cada membro da equipe deve tomar. Todos devem estar claros sobre quais são as metas, o que está em jogo e qual será o resultado potencial.
 
-## <a name="who-is-involved"></a>Quem está envolvido?
+## <a name="who-is-involved"></a>Who Está envolvido?
 
 A formação de protótipos pode ser feita informalmente por qualquer pessoa, independentemente de seu plano de fundo ou função no projeto. É fácil fazer um protótipo simples, mas eficaz, tirando um bitmap do Adobe Photoshop, colocando-o na ferramenta de criação e gerenciamento de site do Microsoft FrontPage e adicionando botões ou links ativos. Esses protótipos leves só vão até o momento e podem se tornar difíceis de interações complexas.
 
@@ -51,7 +51,7 @@ Para protótipos mais formais por equipes maiores, um desenvolvedor ou gerente d
 
 Dependendo do escopo do protótipo e do nível de detalhe necessário, os protótipos podem ser criados a qualquer momento durante o projeto. Geralmente, eles são criados no início do projeto, durante a fase de planejamento e especificação, antes que os desenvolvedores escrevam qualquer código de produção. É quando a necessidade de exploração é melhor e quando o investimento de tempo necessário é mais viável. Se os desenvolvedores em vez de gerentes ou designers de programa estiverem criando protótipos, o tempo de agendamento se tornará ainda mais importante devido à necessidade de garantir que o trabalho investido no protótipo seja contabilizado no cronograma de desenvolvimento. O planejamento de qualquer versão da interface do usuário deve incluir algum nível de protótipo.
 
-No final de um projeto, protótipos menores podem ajudar a resolver problemas técnicos e de design difíceis. Uma simulação rápida de HTML de como uma caixa de diálogo ou página da Web deve se comportar pode ajudar a responder à pergunta de um desenvolvedor ou a dar a outros colegas uma ideia de qual deve ser a experiência desejada. Em alguns casos, um poderoso gerente de programa ou designer pode implementar o comportamento no software de desenvolvimento Microsoft JScript e aproximar grande parte da lógica de programação que os desenvolvedores precisarão considerar.
+No final de um projeto, protótipos menores podem ajudar a resolver problemas técnicos e de design difíceis. Uma simulação rápida de HTML de como uma caixa de diálogo ou página da Web deve se comportar pode ajudar a responder à pergunta de um desenvolvedor ou a dar a outros colegas uma ideia de qual deve ser a experiência desejada. em alguns casos, um poderoso gerente de programa ou designer pode implementar o comportamento no software de desenvolvimento Microsoft JScript e aproximar grande parte da lógica de programação que os desenvolvedores precisarão considerar.
 
 O tempo necessário para criar um protótipo pode variar enormemente, dependendo do escopo e da precisão de como o resultado final precisa ser semelhante. Um protótipo informal pode significar algumas horas de trabalho por uma pessoa; um esforço mais organizado pode envolver semanas de esforço por uma equipe inteira.
 
@@ -83,47 +83,47 @@ Como o foco do esforço de protótipo é determinado, considere o seguinte:
 
 -   Entrada da equipe.
 
-    Converse com os principais desenvolvedores da equipe, já que as ideias no protótipo estão reunidas. Obtenha um aspecto básico do que é razoável, o que é possível e o que está além de considerar para a próxima versão. Em alguns casos, é recomendável ir além do que eles dizem é possível para um aspecto do design se ele for um ponto importante e a equipe precisar ser desafiada. No entanto, não faça isso com todos os aspectos do seu protótipo, pois há uma linha fina entre o envio dos limites e a sobrecarga da sua equipe. Se o desejo for inspirar a equipe mostrando-lhes uma visão para várias versões, vá para ela. No entanto, se o requisito for definir alterações específicas para a próxima versão, concentre os esforços nessas alterações. Certifique-se de chamar as alterações específicas de uma maneira modular e mostre aos desenvolvedores um caminho para a criação dos designs.
+    Converse com os principais desenvolvedores da equipe, já que as ideias no protótipo estão reunidas. Obtenha um aspecto básico do que é razoável, o que é possível e o que está além de considerar para a próxima versão. Em alguns casos, é recomendável ir além do que eles dizem é possível para um aspecto do design se ele for um ponto importante e a equipe precisar ser desafiada. No entanto, não faça isso com todos os aspectos do seu protótipo, pois há uma linha fina entre o envio dos limites e a sobrecarga da sua equipe. Se o desejo for inspirar a equipe mostrando-lhes uma visão para várias versões, vá para ela. No entanto, se o requisito for definir alterações específicas para a próxima versão, concentre os esforços nessas alterações. Certifique-se de chamar as alterações específicas de maneira modular e mostrar aos desenvolvedores um caminho para criar os designs.
 
 -   Amplitude versus profundidade.
 
-    Para protótipos maiores, há a consideração adicional de amplitude versus profundidade. Cada recurso no design funcionará apenas um pouco ou deve ser escolhido um recurso para criar protótipos com quase todas as suas partes e opções? Tente não fazer isso, pois o resultado pode ser um protótipo grande e complicado que é difícil de modificar e difícil de se descartar.
+    Para protótipos maiores, há a consideração adicional de amplitude versus profundidade. Cada recurso no design deve funcionar um pouco ou um recurso deve ser escolhido para criar protótipos com quase todas as suas partes e opções? Tente não fazer ambos, pois o resultado pode ser um protótipo grande e complicado que é difícil de modificar e difícil de lançar.
 
 ## <a name="flexible-prototypes"></a>Protótipos flexíveis
 
-Uma maneira de focar os recursos de protótipo é concentrar-se no design inteligente. Protótipos mais eficientes podem ser criados permitindo que uma parte do código do protótipo exerça muitas ideias diferentes. Em vez de ter cinco protótipos diferentes, considere criar um protótipo com as opções para alternar os diferentes atributos do protótipo.
+Uma maneira de concentrar os recursos de criação de protótipos é se concentrar no design inteligente. Protótipos mais eficazes podem ser criados permitindo que uma parte do código de protótipo exerça muitas ideias diferentes. Em vez de ter cinco protótipos diferentes, considere criar um protótipo que tenha as opções para alternar os diferentes atributos do protótipo.
 
-A barra de ferramentas deve estar localizada à esquerda ou na parte superior? Devemos mostrar 10 itens no home page ou 20? Um bom protótipo tem algum tipo de painel de opções interno que permite alterar os parâmetros de aparência ou funcionamento do protótipo. Mantenha esses painéis de opção ocultos no protótipo — tente evitar que um participante de usabilidade os encontre acidentalmente durante um teste.
+A barra de ferramentas deve estar localizada à esquerda ou na parte superior? Devemos mostrar 10 itens no home page ou 20? Um bom protótipo tem algum tipo de painel de opções integrado que permite alterar os parâmetros da aparência ou do trabalho do protótipo. Mantenha esses painéis de opções ocultos no protótipo— tente evitar que um participante de usabilidade os encontra acidentalmente durante um teste.
 
-O desafio é manter o protótipo simples, mas ainda útil o suficiente para que ele possa ser mostrado a um colega de equipe, diferentes opções podem ser demonstradas e os comentários podem ser obtidos.
+O desafio é manter o protótipo simples, mas ainda útil o suficiente para que ele possa ser mostrado a um colega de equipe, diferentes opções podem ser demonstradas e comentários podem ser obtidos.
 
-## <a name="beta-vs-prototype"></a>Beta versus protótipo
+## <a name="beta-vs-prototype"></a>Beta vs. Protótipo
 
-As versões beta não se qualificam como protótipos, pois são esforços de engenharia completos. Se um erro crítico for encontrado em um recurso de uma versão beta, é improvável que seja descartado, mesmo que possa estar no melhor interesse do produto. Os desenvolvedores, testadores e designers já investiram muito tempo, e a pressão para viver com decisões ruins é muito alta. As versões beta certamente ajudam a localizar bugs e defeitos, mas raramente são úteis para fazer estudos controlados do valor de direções de design específicas.
+As versões beta não se qualificam como protótipos, pois são esforços de engenharia completos. Se um erro crítico for encontrado em um recurso de uma versão beta, é improvável que ele seja descartado, mesmo que possa ser do melhor interesse do produto. Os desenvolvedores, testadores e designers já investiram muito tempo, e a pressão para lidar com decisões ruins é muito alta. Os betas certamente ajudam a localizar bugs e defeitos, mas raramente são úteis para fazer estudos controlados sobre o valor de direções de design específicas.
 
 ## <a name="tools-and-technologies"></a>Ferramentas e tecnologias
 
-Há várias ferramentas e tecnologias diferentes que podem ser usadas para criar protótipos, cada uma das quais tem suas vantagens e desvantagens. Considere o tipo de trabalho de design que está sendo protótipo e as metas do esforço de protótipo antes de decidir qual ferramenta ou tecnologia é a correta.
+Há várias ferramentas e tecnologias diferentes que podem ser usadas para criar protótipos, cada uma delas tem suas vantagens e desvantagens. Considere o tipo de trabalho de design que está sendo protótipo e as metas do esforço de criação de protótipo antes de decidir qual ferramenta ou tecnologia é a certa.
 
 -   Microsoft Visual Basic ou C#.
 
-    Essa é a tecnologia mais rápida para a criação de protótipos de interface do usuário no estilo do Windows. O objeto navegador da Web facilita a integração do HTMLUI a componentes padrão do estilo Windows. Embora seja verdade que um desenvolvedor experiente com Microsoft Visual Studio possa gerar a interface do usuário mais rápido no C/C++, isso cria a tentação de reutilizar o código do protótipo da interface do usuário no código de produção. A ti toma disciplina para reconhecer que as metas de um protótipo de interface do usuário rápido e sujo são altamente divergentes da engenharia de alta qualidade. Certifique-se de que está claro que tipo de código está sendo escrito e que a equipe ou o gerente compreende o que será Descartado.
+    Essa é a tecnologia mais rápida para criar protótipos Windows interface do usuário de estilo único. O objeto do navegador da Web facilita a integração do HTMLUI com Windows de estilo padrão. Embora seja verdade que um desenvolvedor teve experiência com o Microsoft Visual Studio pode ser capaz de gerar a interface do usuário mais rapidamente no C/C++, isso cria a tentação de reutilizar o código do protótipo da interface do usuário no código de produção. É necessário disciplina para reconhecer que as metas de um protótipo de interface do usuário rápido e sujo são altamente divergentes da engenharia de alta qualidade. Certifique-se de que está claro que tipo de código está sendo escrito e se a equipe ou gerente entende o que será descartado.
 
 -   Microsoft Expression Blend + SketchFlow.
 
-    SketchFlow é uma ferramenta Visual para criação, criação de protótipos e criar interfaces de usuário sofisticadas para o Windows Presentation Foundation (WPF) e aplicativos Web e de desktop do Microsoft Silverlight. Os aplicativos são criados por formas de desenho, controles de desenho, como botões e caixas de listagem, fazendo com que as partes de um aplicativo respondam a cliques do mouse e a outras entradas do usuário e estilizando tudo para parecer exclusivo.
+    O SketchFlow é uma ferramenta visual para projetar, criar protótipos e criar interfaces de usuário sofisticadas para Windows Presentation Foundation (WPF) e aplicativos Web e de área de trabalho do Microsoft Silverlight. Os aplicativos são construídos desenhando formas, desenhando controles como botões e caixas de listagem, fazendo com que as partes de um aplicativo respondam a cliques do mouse e outras entradas do usuário e estilização de tudo para parecer exclusivo.
 
 -   Adobe Director ou Adobe Flash.
 
-    O director é uma popular ferramenta de protótipo de interface do usuário entre designers. Ele é mais útil para designs de multimídia ou não padrão de GUI, ou para protótipos que exigem uma animação significativa. A alta flexibilidade torna difícil a interface do usuário no estilo da interface do usuário em comparação com Visual Basic. No entanto, um usuário do diretor proficiente pode gerar a interface do usuário do Windows ou da Web sem dificuldade.
+    Director é uma ferramenta popular de criação de protótipos de interface do usuário entre designers. Ele é mais útil para designs de GUI multimídia ou não padrão ou para protótipos que exigem animação significativa. Sua alta flexibilidade torna complicado para a interface do usuário no estilo de interface do usuário em comparação com Visual Basic. No entanto, um usuário proficiente do Director pode gerar Windows ou interface do usuário da Web sem dificuldades.
 
--   HTML.
+-   Html.
 
-    O FrontPage e outros editores de HTML permitem a criação rápida de protótipos simples. Para expressar uma ideia, muitas vezes é possível criar bitmaps que ilustram uma sequência de interação do usuário e colocá-los no FrontPage. Essas imagens podem ser usadas para simular como interagir com o design. O JScript e o DHTML levam coisas para outro nível, permitindo uma lógica e interação muito sofisticadas. Se estiver usando HTML para protótipo de um site, o aviso que acaba de ser descrito para C/C++ também se aplicará aqui — não se enquadrará na interceptação de código de protótipo rápido confuso com engenharia de qualidade de produção.
+    FrontPage e outros editores HTML permitem a criação rápida de protótipos simples. Para expressar uma ideia, geralmente é possível criar bitmaps que ilustram uma sequência de interação do usuário e coloque-os em FrontPage. Essas imagens podem ser usadas para simular como interagir com o design. JScript e DHTML levam as coisas para outro nível, permitindo uma lógica e uma interação muito sofisticadas. Se estiver usando HTML para protótipo de um site da Web, o aviso descrito para C/C++ também se aplicará aqui – não se enquadra na armadilha de código de protótipo rápido confuso com engenharia de qualidade de produção.
 
- 
+ 
 
- 
+ 
 
 
 

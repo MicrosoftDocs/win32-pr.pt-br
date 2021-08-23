@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1b380617cadf5cfc8b5048e6c9513d40001504
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e88953b46bdaa58f25d12ccdfb74f2fe6ca3fd04c27f0b86a597f14d9a918354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551266"
 ---
 # <a name="ms-ieee-80211-id-attribute"></a>atributo ms-IEEE-80211-ID
 
@@ -57,7 +57,7 @@ Um identificador usado para um objeto de política sem fio no AD.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -78,7 +78,7 @@ Um identificador usado para um objeto de política sem fio no AD.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -99,7 +99,7 @@ Um identificador usado para um objeto de política sem fio no AD.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -120,7 +120,7 @@ Um identificador usado para um objeto de política sem fio no AD.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -141,7 +141,7 @@ Um identificador usado para um objeto de política sem fio no AD.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |

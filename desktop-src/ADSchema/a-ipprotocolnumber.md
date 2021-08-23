@@ -1,10 +1,10 @@
 ---
-title: atributo ipProtocolNumber
+title: Atributo ipProtocolNumber
 description: Contém a seção do mapa de protocolos que armazena o número exclusivo que identifica o protocolo.
 ms.assetid: 8a29db25-1195-44b1-b92c-605d2ef293d7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ipProtocolNumber
+- Esquema do AD do atributo ipProtocolNumber
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c55724aa0f9be6a41bf50b233a99bc7d748697c0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5f44c9d181f51824d253ccb0a837025add4f777b354f190c2131f3e8e9aa585a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322746"
 ---
-# <a name="ipprotocolnumber-attribute"></a>atributo ipProtocolNumber
+# <a name="ipprotocolnumber-attribute"></a>Atributo ipProtocolNumber
 
 Contém a seção do mapa de protocolos que armazena o número exclusivo que identifica o protocolo.
 
@@ -29,12 +29,12 @@ Contém a seção do mapa de protocolos que armazena o número exclusivo que ide
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ipProtocolNumber                     |
-| LDAP-Display-Name | ipProtocolNumber                     |
+| Ldap-Display-Name | ipProtocolNumber                     |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.17                     |
-| System-ID-GUID    | ebf5c6eb-0e2d-4415-9670-1081993b4211 |
+| System-Id-Guid    | ebf5c6eb-0e2d-4415-9670-1081993b4211 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -55,10 +55,10 @@ Contém a seção do mapa de protocolos que armazena o número exclusivo que ide
 | ID do link                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| É de valor único       | True                                          |
+| Tem valor único       | Verdadeiro                                          |
 | É indexado             | Falso                                         |
-| No catálogo global      | Falso                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                  |
+| No Catálogo Global      | Falso                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
@@ -76,10 +76,10 @@ Contém a seção do mapa de protocolos que armazena o número exclusivo que ide
 | ID do link                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| É de valor único       | True                                          |
+| Tem valor único       | Verdadeiro                                          |
 | É indexado             | Falso                                         |
-| No catálogo global      | Falso                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                  |
+| No Catálogo Global      | Falso                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
@@ -97,10 +97,10 @@ Contém a seção do mapa de protocolos que armazena o número exclusivo que ide
 | ID do link                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| É de valor único       | True                                          |
+| Tem valor único       | Verdadeiro                                          |
 | É indexado             | Falso                                         |
-| No catálogo global      | Falso                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                  |
+| No Catálogo Global      | Falso                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                  |
 | Range-Lower            | \-                                            |
 | Range-Upper            | \-                                            |
 | Search-Flags           | 0x00000000                                    |
@@ -118,7 +118,7 @@ Contém a seção do mapa de protocolos que armazena o número exclusivo que ide
 | ID do link                | \-                                            |
 | MAPI-Id                | \-                                            |
 | System-Only            | Falso                                         |
-| É de valor único       | True                                          |
+| É de valor único       | Verdadeiro                                          |
 | É indexado             | Falso                                         |
 | No catálogo global      | Falso                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                  |

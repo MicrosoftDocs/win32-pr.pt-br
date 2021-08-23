@@ -1,21 +1,21 @@
 ---
-description: O filtro Microsoft MPEG-2 Audio Encoder codifica as camadas de áudio MPEG-1 I e II, incluindo suporte para as extensões MPEG-2 Low amostragem Frequency (LSF).
+description: O filtro Microsoft MPEG-2 Audio Encoder codifica as camadas de áudio MPEG-1 I e II, incluindo suporte para as extensões de LSF (Baixa Frequência de Amostragem) MPEG-2.
 ms.assetid: a36e838b-8b11-4851-9dd2-efd9fe070770
-title: Codificador de áudio Microsoft MPEG-2 (Wmcodecdsp. h)
+title: Codificador de Áudio Microsoft MPEG-2 (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 43d055acd379d9e966f43eac284e38a10c05a86c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 030821905862a9698ee24c3227f2846cd8c892e20c501d2776cdf2f9bb88f3e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105759494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119584116"
 ---
-# <a name="microsoft-mpeg-2-audio-encoder"></a>Codificador de áudio Microsoft MPEG-2
+# <a name="microsoft-mpeg-2-audio-encoder"></a>Codificador de áudio do Microsoft MPEG-2
 
-O filtro Microsoft MPEG-2 Audio Encoder codifica as camadas de áudio MPEG-1 I e II, incluindo suporte para as extensões MPEG-2 Low amostragem Frequency (LSF).
+O filtro Microsoft MPEG-2 Audio Encoder codifica as camadas de áudio MPEG-1 I e II, incluindo suporte para as extensões de LSF (Baixa Frequência de Amostragem) MPEG-2.
 
-Para codificar e multiplexar fluxos de áudio/vídeo, use o filtro de [**codificador MPEG-2 da Microsoft**](microsoft-mpeg-2-encoder.md) , que encapsula as funções desse filtro e do filtro de [**codificador de vídeo MPEG-2 da Microsoft**](microsoft-mpeg-2-video-encoder.md) .
+Para codificar e multiplexar fluxos de áudio/vídeo, use o filtro [**codificador Microsoft MPEG-2,**](microsoft-mpeg-2-encoder.md) que encapsula as funções desse filtro e do filtro do Codificador de Vídeo [**do Microsoft MPEG-2.**](microsoft-mpeg-2-video-encoder.md)
 
 > [!Note]  
 > Não há suporte para esse filtro em plataformas baseadas em IA-64.
@@ -26,41 +26,41 @@ Para codificar e multiplexar fluxos de áudio/vídeo, use o filtro de [**codific
 
 Informações de filtro
 
-Filtrar interfaces
+Interfaces de filtro
 
-[**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/> [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)<br/> **IEncoderAPI**<br/> [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IVideoEncoder**](/windows/win32/api/strmif/nn-strmif-ivideoencoder)<br/>
+[**Ibasefilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/> [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)<br/> **IEncoderAPI**<br/> [**Imediaseeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IVideoEncoder**](/windows/win32/api/strmif/nn-strmif-ivideoencoder)<br/>
 
 Tipos de mídia de pino de entrada
 
-**MediaType \_ Áudio**, **MEDIASUBTYPE \_ PCM**
+**MEDIATYPE \_ ÁUDIO**, **MEDIASUBTYPE \_ PCM**
 
 Interfaces de pino de entrada
 
-[**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
+[**Imeminputpin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**Iqualitycontrol**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-Tipos de mídia do pino de saída
+Tipos de mídia de pino de saída
 
-**MediaType \_ Áudio**, **\_ \_ áudio MEDIASUBTYPE MPEG2**<br/> **MediaType \_ Fluxo**, **\_ \_ áudio MEDIASUBTYPE MPEG2**<br/> **MediaType \_ Fluxo**, **\_ \_ programa MEDIASUBTYPE MPEG2**<br/> **MediaType \_ Fluxo**, **\_ \_ transporte MEDIASUBTYPE MPEG2**<br/>
+**MEDIATYPE \_ Áudio**, **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ AUDIO**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ PROGRAM**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**<br/>
 
 Interfaces de pino de saída
 
-[**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
+[**Imediaseeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**Iqualitycontrol**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-CLSID do filtro
+Filtrar CLSID
 
-**CLSID \_ do CMPEG2EncoderAudioDS** (declarado em wmcodecdsp. h)
+**CLSID \_ CMPEG2EncoderAudioDS** (declarado em wmcodecdsp.h)
 
 Executável
 
 msmpeg2enc.dll
 
-[Núcleo](merit.md)
+[Mérito](merit.md)
 
-**MÉRITO \_ \_ não \_ use**
+**NÃO USE O NÃO \_ \_ USO \_ DE LIMITED**
 
-[Categoria do filtro](filter-categories.md)
+[Categoria de filtro](filter-categories.md)
 
-**\_LEGACYAMFILTERCATEGORY CLSID**
+**CLSID \_ LegacyAmFilterCategory**
 
 
 
@@ -68,32 +68,32 @@ msmpeg2enc.dll
 
 ## <a name="remarks"></a>Comentários
 
-O codificador de áudio MPEG-2 pode produzir os seguintes tipos de saída:
+O Codificador de Áudio MPEG-2 pode produzir os seguintes tipos de saída:
 
--   Fluxo elementar áudio
+-   Fluxo elementar de áudio
 -   Áudio em um fluxo de programa MPEG-2
 -   Áudio em um fluxo de transporte MPEG-2
 
-Ele dá suporte a camadas MPEG-1 I e II e extensões LSF (baixa amostragem Frequency) de MPEG-2
+Ele dá suporte a extensões de LSF (frequência de amostragem baixa) mpEG-1 e II e MPEG-2
 
-Os exemplos de entrada devem ter 16 bits por amostra, com uma taxa de amostragem de áudio de 48, 44,1, 32, 22, 5 ou 16 KHz. O codificador não pode reamostrar o fluxo de áudio; o áudio codificado tem a mesma taxa de amostragem que a entrada.
+As amostras de entrada devem ter 16 bits por amostra, com uma taxa de amostragem de áudio de 48, 44,1, 32, 22,05 ou 16 KHz. O codificador não pode resamplor o fluxo de áudio; o áudio codificado tem a mesma taxa de exemplo que a entrada.
 
-Os exemplos de entrada devem ser mono ou estéreo. O áudio codificado tem o número de canais como entrada.
+As amostras de entrada devem ser mono ou estéreo. O áudio codificado tem o número de canais como entrada.
 
 ### <a name="limitations"></a>Limitações
 
-O codificador não oferece suporte ao seguinte:
+O codificador não dá suporte ao seguinte:
 
--   Áudio MPEG Layer III fragmentado.
--   Extensão de vários canais MPEG-2 fragmentado.
--   MPEG-4 AAC fragmentado.
--   Fragmentado (NBC) compatível com MPEG-2 sem versões anteriores.
--   Geração de pacotes de pacote de fluxo elementar (PES).
--   Codificação digital Dolby.
+-   Bitstreams de áudio da camada III da MPEG.
+-   Bitstreams de extensão multi channel MPEG-2.
+-   Fluxos de bits do AAC MPEG-4.
+-   Fluxos de bits compatíveis com MPEG-2 não compatíveis com versões anteriores (LTD).
+-   Geração de pacotes PES (fluxo elementar) em pacotes.
+-   Codificação Dolby Digital.
 
-### <a name="codec-properties"></a>Propriedades do codec
+### <a name="codec-properties"></a>Propriedades do Codec
 
-O filtro oferece suporte às seguintes propriedades por meio de [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi):
+O filtro dá suporte às seguintes propriedades por [**meio de ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi):
 
 -   [**AVAudioChannelCount**](avaudiochannelcount-property.md)
 -   [**AVAudioSampleRate**](avaudiosamplerate-property.md)
@@ -109,30 +109,30 @@ O filtro oferece suporte às seguintes propriedades por meio de [**ICodecAPI**](
 -   [**AVEncMPAPrivateUserBit**](avencmpaprivateuserbit-property.md)
 
 > [!Note]  
-> Uma versão anterior da documentação listava incorretamente algumas propriedades adicionais que não têm suporte.
+> Uma versão anterior da documentação listava incorretamente algumas propriedades adicionais sem suporte.
 
  
 
-Para compatibilidade com versões anteriores, o filtro oferece suporte à seguinte propriedade por meio da interface **IEncoderAPI** :
+Para compatibilidade com backward, o filtro dá suporte à seguinte propriedade por meio da interface **IEncoderAPI:**
 
 
 
 | Propriedade                 | Descrição                                                                      |
 |--------------------------|----------------------------------------------------------------------------------|
-| **\_taxa de bits ENCAPIPARAM** | Equivalente a [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md). |
+| **TAXA DE BITS ENCAPIPARAM \_** | Equivalente a [**AVEncCommonMeanBitRate.**](avenccommonmeanbitrate-property.md) |
 
 
 
  
 
-É recomendável definir as propriedades na seguinte ordem:
+É recomendável definir propriedades na seguinte ordem:
 
 1.  [**AVEncCommonFormatConstraint**](avenccommonformatconstraint-property.md)
 2.  [**AVEncMPALayer**](avencmpalayer-property.md)
 3.  [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md)
 4.  [**AVEncMPACodingMode**](avencmpacodingmode-property.md)
 
-Defina as propriedades restantes em qualquer ordem.
+De definir as propriedades restantes em qualquer ordem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -140,9 +140,9 @@ Defina as propriedades restantes em qualquer ordem.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ Desktop apps\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Aplicativos de área de trabalho \[ ultimate\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
 
 
 
@@ -150,10 +150,10 @@ Defina as propriedades restantes em qualquer ordem.
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> <dt>
 
-[**Tipos de mídia de Desmultiplexador MPEG-2**](mpeg-2-demultiplexer-media-types.md)
+[**Tipos de mídia de demultiplexer MPEG-2**](mpeg-2-demultiplexer-media-types.md)
 </dt> </dl>
 
  

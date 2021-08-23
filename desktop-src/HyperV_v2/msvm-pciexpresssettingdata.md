@@ -1,7 +1,7 @@
 ---
 description: Representa o estado configurado de uma porta PCI Express.
 ms.assetid: adb03dd7-5a47-47e6-a4e4-28224164150c
-title: Classe Msvm_PciExpressSettingData
+title: Msvm_PciExpressSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c092cbc119506c4c52bc0565cd969426feffc481
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d32224a24261bf604f4adaa8256f1fc0c61959eae41505e0da5dc9cadac58888
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520986"
 ---
-# <a name="msvm_pciexpresssettingdata-class"></a>\_Classe Msvm PciExpressSettingData
+# <a name="msvm_pciexpresssettingdata-class"></a>Classe Msvm \_ PciExpressSettingData
 
 Representa o estado configurado de uma porta PCI Express.
 
@@ -41,44 +41,44 @@ class Msvm_PciExpressSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ PciExpressSettingData** tem estes tipos de membros:
+A **classe Msvm \_ PciExpressSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ PciExpressSettingData** tem essas propriedades.
+A **classe Msvm \_ PciExpressSettingData** tem essas propriedades.
 
 <dl> <dt>
 
 **VirtualFunctions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O número da função virtual a ser atribuída à VM.
+O número da função virtual a ser atribuído à VM.
 
 </dd> <dt>
 
 **VirtualSystemIdentifiers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-Uma matriz de cadeia de caracteres de forma livre de identificadores desse recurso apresentada ao sistema operacional do sistema de computador virtual. Os índices e valores por índice são definidos por recurso (ou seja, para cada valor de **ResourceType** enumerado). Essa propriedade é definida como "GUID".
+Uma matriz de cadeia de caracteres de forma livre de identificadores desse recurso apresentada ao sistema operacional do sistema operacional do computador virtual. Os índices e os valores por índice são definidos por recurso (ou seja, para cada valor **de ResourceType** enumerado). Essa propriedade é definida como "GUID".
 
-Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyVirtualSystemResources**](/previous-versions/windows/desktop/virtual/modifyvirtualsystemresources-msvm-virtualsystemmanagementservice) da classe SD.
+Essa é uma propriedade somente leitura, mas pode ser alterada usando o [**método ModifyVirtualSystemResources**](/previous-versions/windows/desktop/virtual/modifyvirtualsystemresources-msvm-virtualsystemmanagementservice) da classe sd.
 
 </dd> </dl>
 
@@ -88,10 +88,10 @@ Essa é uma propriedade somente leitura, mas pode ser alterada usando o método 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ para aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -100,7 +100,7 @@ Essa é uma propriedade somente leitura, mas pode ser alterada usando o método 
 
 <dl> <dt>
 
-[**\_RESOURCEALLOCATIONSETTINGDATA CIM**](cim-resourceallocationsettingdata.md)
+[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md)
 </dt> </dl>
 
  

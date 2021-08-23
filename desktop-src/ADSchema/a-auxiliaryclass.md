@@ -1,11 +1,11 @@
 ---
 title: Auxiliary-Class atributo
-description: A lista de classes auxiliares a serem associadas a esta classe.
+description: A lista de classes auxiliares a serem associadas a essa classe.
 ms.assetid: 8c3bb822-222f-4ee2-9da7-820e29e33c9a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Auxiliary-Class do atributo AD
-- Esquema de AD do atributo auxiliaryClass
+- Auxiliary-Class atributo AD Schema
+- Esquema do AD do atributo auxiliaryClass
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24b3b633e343a0ca7d43deffee5bda7666a3d144
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d193169baf60b3e52572cc4a7a5371f57198a2cacc99671508bf5e2de14d9a96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442756"
 ---
 # <a name="auxiliary-class-attribute"></a>Auxiliary-Class atributo
 
-A lista de classes auxiliares a serem associadas a esta classe.
+A lista de classes auxiliares a serem associadas a essa classe.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
 | CN                | Auxiliary-Class                                                 |
-| LDAP-Display-Name | auxiliaryClass                                                  |
+| Ldap-Display-Name | auxiliaryClass                                                  |
 | Tamanho              | \-                                                              |
 | Privilégio de atualização  | Administrador de esquema                                            |
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.2.351                                          |
-| System-ID-GUID    | bf96792c-0de6-11d0-a285-00aa003049e2                            |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| System-Id-Guid    | bf96792c-0de6-11d0-a285-00aa003049e2                            |
+| Sintaxe            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ A lista de classes auxiliares a serem associadas a esta classe.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -80,10 +80,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -92,7 +92,7 @@ A lista de classes auxiliares a serem associadas a esta classe.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -122,10 +122,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -143,10 +143,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -164,10 +164,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -185,10 +185,10 @@ A lista de classes auxiliares a serem associadas a esta classe.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

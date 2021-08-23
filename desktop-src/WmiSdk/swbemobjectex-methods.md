@@ -5,21 +5,21 @@ ms.tgt_platform: multiple
 title: Métodos SWbemObjectEx
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c46e08bf4612372fe5f58dca84e8a79711e1ba38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80247a3e040c5457c91c8a67a6b56bc0158f0971936aa622525187006cc694bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611896"
 ---
 # <a name="swbemobjectex-methods"></a>Métodos SWbemObjectEx
 
-O objeto [**SWbemObjectEx**](swbemobjectex.md) expõe os métodos a seguir.
+O [**objeto SWbemObjectEx**](swbemobjectex.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método GetText \_**](swbemobjectex-gettext-.md)
--   [**Método de atualização \_**](swbemobjectex-refresh-.md)
+-   [**Método \_ GetText**](swbemobjectex-gettext-.md)
+-   [**Método \_ Refresh**](swbemobjectex-refresh-.md)
 
  
 

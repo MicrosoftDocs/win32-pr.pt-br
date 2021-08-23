@@ -23,12 +23,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 829e5e1b3658771728aab9ef30634d90a8bc6450
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c0a9e863bd22cebc6609e32521b85de4bca29ae048d9673e3b09cfff2b95408f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105762996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504526"
 ---
 # <a name="win32_winsat-class"></a>\_Classe Win32 WinSAT
 
@@ -88,7 +88,7 @@ Tipo de dados: **real32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Depois de Windows 8.1, o WinSAT não avalia mais os recursos de gráficos tridimensionais (jogos) do computador e a capacidade do driver gráfico de processar objetos e executar sombreadores usando essa avaliação. Para compatibilidade, os valores de sentinela de relatório do WinSAT para as métricas e pontuações, no entanto, não são calculados em tempo real.
+depois de Windows 8.1, o WinSAT não avalia mais os recursos de gráficos tridimensionais (jogos) do computador e a capacidade do driver gráfico de processar objetos e executar sombreadores usando essa avaliação. Para compatibilidade, os valores de sentinela de relatório do WinSAT para as métricas e pontuações, no entanto, não são calculados em tempo real.
 
 </dd> <dt>
 
@@ -204,7 +204,7 @@ Para obter um exemplo que mostra como usar o WMI para recuperar dados dessa clas
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                   |
 | MOF<br/>                      | <dl> <dt>WinSAT. mof</dt> </dl>    |

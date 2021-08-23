@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 381d137dd73056a2a6f4c2e9cd3746f9f16c5b2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89e7ab9fb5213b41d53695b516b95b47193e8d803b207efd09216c743085927e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660716"
 ---
 # <a name="icontextnodegetpropertydata-method"></a>Método IContextNode:: GetPropertyData
 
@@ -62,7 +62,7 @@ Um ponteiro para uma matriz de inteiros sem sinal de 8 bits que contém os dados
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
 
@@ -92,9 +92,9 @@ As propriedades do tipo booliano incluem:
 -   GUID \_ AHP \_ COERCETOFACTOID
 -   GUID \_ AHP \_ WordMode
 
-O valor de retorno **é \_ booliano de Variant**. Se você converter o \* parâmetro *ppbPropertyData* para **Variant \_ bool \** _, seu comprimento retornado será `sizeof(VARIANT_BOOL)` .
+O valor de retorno **é \_ booliano de Variant**. Se você converter o \* parâmetro *PpbPropertyData* para **Variant \_ bool \*** , seu comprimento retornado será `sizeof(VARIANT_BOOL)` .
 
-GUID \_ AHP \_ guia é uma propriedade do tipo guia. O valor de retorno _*é \* InkAnalysisRecognitionGuide*_. Se você converter o \_ parâmetro *ppbPropertyData* para **InkAnalysisRecognitionGuide \**, seu comprimento retornado será `sizeof(InkAnalysisRecognitionGuide)` .
+GUID \_ AHP \_ guia é uma propriedade do tipo guia. O valor de retorno é ** \* InkAnalysisRecognitionGuide* _. Se você converter o \_ parâmetro *PpbPropertyData* para **InkAnalysisRecognitionGuide \*** , seu comprimento retornado será `sizeof(InkAnalysisRecognitionGuide)` .
 
 As propriedades do tipo inteiro incluem:
 
@@ -106,7 +106,7 @@ As propriedades do tipo inteiro incluem:
 -   \_segmentação de CNP GUID \_
 -   GUID \_ CNP \_ ALIGNMENTLEVEL
 
-O valor de retorno _*é \* longo*_. Se você converter o \_ parâmetro *ppbPropertyData* para **Long \** _, seu comprimento retornado será `sizeof(LONG)` .
+O valor de retorno é ** \* Long* _. Se você converter o \_ parâmetro *PpbPropertyData* para **longo \*** , seu comprimento retornado será `sizeof(LONG)` .
 
 Métricas de linha – as propriedades do tipo incluem:
 
@@ -115,11 +115,11 @@ Métricas de linha – as propriedades do tipo incluem:
 -   \_linha de \_ base CNP GUID
 -   GUID \_ CNP \_ Tabs no meio
 
-O valor de retorno _*é \* longo*_. Se você converter o \_ parâmetro *ppbPropertyData* para **Long \** _, seu comprimento retornado será `sizeof(LONG)_4` , significando os valores (x, y) para os pontos iniciais seguidos dos valores (x, y) dos pontos finais.
+O valor de retorno é ** \* Long*_. Se você converter o \_ parâmetro *ppbPropertyData* para **longo \**_ seu comprimento retornado é `sizeof(LONG)_4` , significando os valores (x, y) para os pontos iniciais seguidos dos valores (x, y) dos pontos finais.
 
-GUID \_ CNP \_ TEXTRECOGNIZERID é uma propriedade **GUID** . O valor de retorno é ** \* GUID*_. Se você converter o \_ parâmetro *ppbPropertyData* para **GUID \** ,_ seu comprimento retornado será `sizeof(GUID)` .
+GUID \_ CNP \_ TEXTRECOGNIZERID é uma propriedade **GUID** . O valor de retorno é ** \* GUID* _. Se você converter o \_ parâmetro *PpbPropertyData* para **GUID \*** , seu comprimento retornado será `sizeof(GUID)` .
 
-GUID \_ CNP \_ ROTATEDBOUNDINGBOX é uma propriedade de caixa delimitadora girada. O valor de retorno _*é \* longo*_. Se você converter o \_ parâmetro *ppbPropertyData* para **Long \** _, seu comprimento retornado será `sizeof(LONG)_8` , significando os valores (x, y) para os quatro cantos da caixa.
+GUID \_ CNP \_ ROTATEDBOUNDINGBOX é uma propriedade de caixa delimitadora girada. O valor de retorno é ** \* Long*_. Se você converter o \_ parâmetro *ppbPropertyData* para **longo \**_ seu comprimento retornado é `sizeof(LONG)_8` , significando os valores (x, y) para os quatro cantos da caixa.
 
 GUID \_ CNP \_ HOTPOINT é uma propriedade de ponto de acesso. O valor de retorno é ** \* Long*_. Se você converter o \_ parâmetro *ppbPropertyData* para **longo \**_ seu comprimento retornado é `sizeof(LONG)_2` , significando os valores (x, y) para o ponto.
 
@@ -171,9 +171,9 @@ HRESULT CMyClass::ExploreParagraphNode(
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

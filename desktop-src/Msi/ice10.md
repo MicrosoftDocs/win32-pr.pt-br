@@ -4,12 +4,12 @@ ms.assetid: b0e0d837-245e-4c38-a7c4-06dda0eea25c
 title: ICE10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac8f1304f4444a0f087d747328cdea4b3d714ab0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80071bdb7f219904c03d7c6b5b947a1bd818af2c3ebc270b0bfb17f2cf185280
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581206"
 ---
 # <a name="ice10"></a>ICE10
 
@@ -39,7 +39,7 @@ Conflicting states, one favors, one disallows. Child: Word differs in advertise 
 from Parent: Office.
 ```
 
-Observe que, para este exemplo, o Microsoft Excel e o Microsoft Word são recursos filho de Microsoft Office.
+observação para este exemplo que Microsoft Excel e Microsoft Word são recursos filho de Microsoft Office.
 
 Tabela de [recursos](feature-table.md) (parcial)
 

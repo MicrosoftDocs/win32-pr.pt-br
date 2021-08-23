@@ -4,28 +4,28 @@ description: O dialeto LDAP é um formato para instruções de consulta que usam
 ms.assetid: 29aca7e6-3ed5-4efd-8b03-6a2ee0571f1f
 ms.tgt_platform: multiple
 keywords:
-- ADSI de dialeto LDAP
-- dialeto ADSI, dialeto LDAP
+- ADSI do dialeto LDAP
+- dialetos ADSI, dialeto LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15f7d1f65a41655596d0a14cf6e2a3595916c2cc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c231d3c4d619775cca2ed9542733bff51219d92ff31d922f6d38ea7b1bcd2e4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509976"
 ---
 # <a name="ldap-dialect"></a>Dialeto LDAP
 
-O dialeto LDAP é um formato para instruções de consulta que usam a [sintaxe de filtro de pesquisa LDAP](search-filter-syntax.md). Use uma instrução de consulta LDAP com as seguintes interfaces de pesquisa ADSI:
+O dialeto LDAP é um formato para instruções de consulta que usam a sintaxe de filtro de [pesquisa LDAP](search-filter-syntax.md). Use uma instrução de consulta LDAP com as seguintes interfaces de pesquisa ADSI:
 
--   As interfaces [ADO (ActiveX Data Object)](searching-with-activex-data-objects-ado.md) , que são interfaces de automação que usam OLE DB.
+-   As [interfaces ActiveX objeto de dados (ADO),](searching-with-activex-data-objects-ado.md) que são interfaces de Automação que usam OLE DB.
 -   [OLE DB](searching-with-ole-db.md), que é um conjunto de interfaces C/C++ para consultar bancos de dados.
--   [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch), que é a interface C/C++ para Active Directory.
+-   [**IDirectorySearch,**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)que é a interface C/C++ do Active Directory.
 
 Uma cadeia de caracteres de dialeto LDAP consiste em quatro partes separadas por ponto e vírgula (;).
 
--   Nome distinto base. Por exemplo:
+-   Nome diferenciado básico. Por exemplo:
 
     ```VB
     <LDAP://DC=Fabrikam,DC=COM>
@@ -33,11 +33,11 @@ Uma cadeia de caracteres de dialeto LDAP consiste em quatro partes separadas por
 
     
 
--   Filtros de pesquisa LDAP. Para obter mais informações sobre filtros de pesquisa, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).
--   O nome de exibição LDAP dos atributos a serem recuperados. Vários atributos são separados por uma vírgula.
--   Especifica o escopo da pesquisa. Os valores válidos são "base", "OneLevel" e "Subtree". O escopo especificado em uma cadeia de caracteres de consulta LDAP substitui qualquer escopo de pesquisa especificado pela propriedade "SearchScope" do objeto de comando ADO.
+-   Filtros de pesquisa LDAP. Para obter mais informações sobre filtros de pesquisa, consulte [Sintaxe de filtro de pesquisa](search-filter-syntax.md).
+-   O nome de exibição LDAP dos atributos a recuperar. Vários atributos são separados por uma vírgula.
+-   Especifica o escopo da pesquisa. Os valores válidos são "base", "onelevel" e "subtree". O escopo especificado em uma cadeia de caracteres de consulta LDAP substitui qualquer escopo de pesquisa especificado pela propriedade "SearchScope" do objeto comando ADO.
 
-Veja a seguir um exemplo de código do dialeto LDAP no ADSI que pesquisa todos os objetos na subárvore.
+A seguir está um exemplo de código do dialeto LDAP na ADSI que pesquisa todos os objetos na subárvore.
 
 
 ```VB
@@ -46,9 +46,9 @@ Veja a seguir um exemplo de código do dialeto LDAP no ADSI que pesquisa todos o
 
 
 
-Nem todas as opções de pesquisa (o tamanho da página de pesquisa, por exemplo) podem ser expressas no dialeto LDAP, portanto, você deve definir as opções antes que a execução real da consulta seja iniciada.
+Nem todas as opções de pesquisa (tamanho da página de pesquisa, por exemplo) podem ser expressas no dialeto LDAP, portanto, você deve definir as opções antes que a execução real da consulta seja iniciada.
 
-## <a name="example-code-for-performing-an-ldap-query"></a>Exemplo de código para executar uma consulta LDAP
+## <a name="example-code-for-performing-an-ldap-query"></a>Código de exemplo para executar uma consulta LDAP
 
 O exemplo de código a seguir mostra como usar uma consulta LDAP
 
@@ -106,30 +106,30 @@ Debug.Print "No. of rows = ", rs.RecordCount
 
 
 
-Para obter detalhes sobre a sintaxe de consulta, consulte [sintaxe do filtro de pesquisa](search-filter-syntax.md).
+Para obter detalhes sobre a sintaxe de consulta, consulte [Sintaxe de filtro de pesquisa](search-filter-syntax.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Sintaxe do filtro de pesquisa](search-filter-syntax.md)
+[Sintaxe de filtro de pesquisa](search-filter-syntax.md)
 </dt> <dt>
 
-[Dialeto SQL](sql-dialect.md)
+[SQL dialeto](sql-dialect.md)
 </dt> <dt>
 
 [Pesquisando com a interface IDirectorySearch](searching-with-idirectorysearch.md)
 </dt> <dt>
 
-[Pesquisando com ActiveX Data Objects](searching-with-activex-data-objects-ado.md)
+[Pesquisando com objetos ActiveX dados](searching-with-activex-data-objects-ado.md)
 </dt> <dt>
 
 [Pesquisando com OLE DB](searching-with-ole-db.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

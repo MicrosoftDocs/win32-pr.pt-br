@@ -38,12 +38,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7c45f67a3e1b7c2b4b5291b24beddcdd4cf5e964
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f59810c402f5153cb4f55ed10530c121ccd728d1021b280bf5004fbc4e8334c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520806"
 ---
 # <a name="msvm_resourcepool-class"></a>\_Classe Msvm ResourcePool
 
@@ -327,20 +327,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -374,7 +374,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migrando** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrating** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrando** (10)
 </dt> <dt>
 
 <span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Immigrating** (11)
@@ -386,7 +386,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Desligando** (13)
 </dt> <dt>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em teste** (14)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em Teste** (14)
 </dt> <dt>
 
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transição** (15)
@@ -395,10 +395,10 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**Em serviço** (16)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -406,30 +406,30 @@ Fornece informações de status atuais para a condição operacional do elemento
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("OperationalStatus"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("OperationalStatus"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
-Se nenhuma condição relacionada a QoS for detectada, o status principal (OperationalStatus \[ 0 \] ) será definido como OK (2). Caso contrário, o status principal será definido como degradado (3) e um ou mais valores de status secundários serão preenchidos na matriz, começando no índice 1, que relata condições mais específicas, de acordo com esta tabela.
+Se nenhuma condição relacionada à QoS tiver sido detectada, o status principal (OperationalStatus 0 ) será \[ definido como OK \] (2). Caso contrário, o status primário será definido como Degradado (3) e um ou mais valores de status secundários serão preenchidos na matriz, começando no índice 1, que relata condições mais específicas, de acordo com esta tabela.
 
 
 
 | Valor                                                                                                                                                                                                    | Descrição                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| <span id="_Insufficient_Throughput___32788_"></span><span id="_insufficient_throughput___32788_"></span><span id="_INSUFFICIENT_THROUGHPUT___32788_"></span> Taxa de transferência insuficiente (32788)<br/> | No momento, pelo menos um dos discos virtuais alocados no pool está relatando um status de taxa de transferência insuficiente.<br/> |
+| <span id="_Insufficient_Throughput___32788_"></span><span id="_insufficient_throughput___32788_"></span><span id="_INSUFFICIENT_THROUGHPUT___32788_"></span> Produtividade insuficiente (32788)<br/> | Pelo menos um dos discos virtuais alocados do pool está relatando um status de produtividade insuficiente no momento.<br/> |
 
 
 
  
 
-O provedor WMI do Hyper-V gera um evento [**Msvm \_ StorageAlert**](msvm-storagealert.md) toda vez que o OperationalStatus da classe **Msvm \_ ResourcePool** é alterado.
+O provedor WMI do Hyper-V gera um evento [**Msvm \_ StorageAlert**](msvm-storagealert.md) sempre que o OperationalStatus da **classe Msvm \_ ResourcePool** muda.
 
 <dt>
 
@@ -470,14 +470,14 @@ O provedor WMI do Hyper-V gera um evento [**Msvm \_ StorageAlert**](msvm-storage
 
 <span id="Protocol_Mismatch"></span><span id="protocol_mismatch"></span><span id="PROTOCOL_MISMATCH"></span>
 
-**Incompatibilidade de protocolo** (32775)
+**Incompatibilidade de** protocolo (32775)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Insufficient_Throughput"></span><span id="insufficient_throughput"></span><span id="INSUFFICIENT_THROUGHPUT"></span>
 
-**Taxa de transferência insuficiente** (32788)
+**Produtividade insuficiente** (32788)
 
 
 </dt> <dd></dd> </dl>
@@ -493,11 +493,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorpool.md) é definido como 0 ("other"). Essa propriedade é herdada de [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85)) e é definida como **NULL**.
+Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorpool.md) é definido como 0 ("Outro"). Essa propriedade é herdada de [**Cim \_ ResourcePool**](/previous-versions//cc136903(v=vs.85)) e é definida como **Null.**
 
 </dd> <dt>
 
-**Poolid**
+**PoolID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -506,20 +506,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Esse valor é referenciado pelas instâncias do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) que foram alocadas deste pool. Essa propriedade é herdada do [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85))e é sempre definida como "Microsoft:*GUID* \\ root".
+Esse valor é referenciado pelas instâncias [**de \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata) do CIM que foram alocadas desse pool. Essa propriedade é herdada do [**\_ ResourcePool do CIM**](/previous-versions//cc136903(v=vs.85))e sempre é definida como "Microsoft:*RAIZ DO GUID".* \\
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer o status de integridade de alto nível e detalhado do elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer status de saúde detalhado e de alto nível do elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -535,10 +535,10 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Erro** (3)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -546,26 +546,26 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 **Primordial**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**True** se esse pool de recursos for a base da qual os recursos são desenhados e retornados na atividade do gerenciamento de recursos; caso contrário, **false**. Ser primordial significa que esse pool de recursos não pode ser criado ou excluído por consumidores desse modelo. No entanto, outras ações, modeladas ou não, podem afetar as características ou o tamanho dos pools de recursos primordial. Essa propriedade é herdada do [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85)).
+**True** se esse pool de recursos for a base da qual os recursos são desenhados e retornados na atividade de gerenciamento de recursos; caso contrário, **False.** Ser primitivo significa que esse pool de recursos não pode ser criado ou excluído pelos consumidores desse modelo. No entanto, outras ações, modeladas ou não, podem afetar as características ou o tamanho dos pools de recursos primitivos. Essa propriedade é herdada de [**CIM \_ ResourcePool.**](/previous-versions//cc136903(v=vs.85))
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-As reservas atuais (em unidades de **AllocationUnits**) se espalham por todas as alocações ativas deste pool. Em uma configuração hierárquica, isso representa a soma de todas as reservas atuais do pool de recursos descendentes. Essa propriedade é herdada do [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85)).
+As reservas atuais (em unidades de **AllocationUnits)** se propagam por todas as alocações ativas desse pool. Em uma configuração hierárquica, isso representa a soma de todas as reservas atuais do pool de recursos descendentes. Essa propriedade é herdada de [**CIM \_ ResourcePool.**](/previous-versions//cc136903(v=vs.85))
 
 </dd> <dt>
 
@@ -578,20 +578,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve um subtipo específico de implementação para esse pool. Por exemplo, isso pode ser usado para distinguir modelos diferentes do mesmo tipo de recurso. Essa propriedade é herdada do [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85)).
+Uma cadeia de caracteres que descreve um subtipo específico de implementação para esse pool. Por exemplo, isso pode ser usado para distinguir modelos diferentes do mesmo tipo de recurso. Essa propriedade é herdada de [**CIM \_ ResourcePool.**](/previous-versions//cc136903(v=vs.85))
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de recurso que esse pool de recursos pode alocar. Essa propriedade é herdada do [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85))e é definida como 4 ("memória").
+O tipo de recurso que esse pool de recursos pode alocar. Essa propriedade é herdada de [**CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85))e é definida como 4 ("Memória").
 
 </dd> <dt>
 
@@ -604,14 +604,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O status atual do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+O status atual do objeto. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -631,8 +631,8 @@ O acesso à classe **Msvm \_ ResourcePool** pode ser restringido pela filtragem 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

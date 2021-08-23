@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 2bd052679f207cd0778f212a73663d4dfd8ce165
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 8f66021f61536e8c8f09663e9ec2513b11d1ec87829f5c100b48cbf15d98cdd2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105775683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685056"
 ---
 # <a name="security-msm-element-lan_policy"></a>Elemento Security (MSM) (LAN_policy)
 
@@ -50,7 +50,7 @@ O elemento **Security** é definido pelo elemento [**msm**](lan-profileschema-ms
 
 
 
-| Elemento                                                                 | Type    | Description                                                                                                                              |
+| Elemento                                                                 | Type    | Descrição                                                                                                                              |
 |-------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
 | [**OneXEnabled**](lan-profileschema-onexenabled-security-element.md)   | booleano | Especifica se o serviço de configuração automática para redes com fio tentará a autenticação de porta usando 802.1 X. <br/>      |
 | [**OneXEnforced**](lan-profileschema-onexenforced-security-element.md) | booleano | Especifica se o serviço de configuração automática para redes com fio requer o uso do 802.1 X para autenticação de porta. <br/> |
@@ -63,8 +63,8 @@ O elemento **Security** é definido pelo elemento [**msm**](lan-profileschema-ms
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

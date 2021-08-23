@@ -1,7 +1,7 @@
 ---
-description: O método ObjectsActive recupera uma contagem de todo o processo de objetos ativos.
+description: O método ObjectsActive recupera uma contagem em todo o processo de objetos ativos.
 ms.assetid: adbc023a-22b7-44e9-b078-a26831f961cc
-title: Método CBaseObject. ObjectsActive (combase. h)
+title: Método CBaseObject.ObjectsActive (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2a3aee21fd9835b28bdcc23eabe30c1d2b5217b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea1b85303751531662123662c1af0e1a35799a780842e8b0bcbc912916c94976
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640196"
 ---
-# <a name="cbaseobjectobjectsactive-method"></a>Método CBaseObject. ObjectsActive
+# <a name="cbaseobjectobjectsactive-method"></a>Método CBaseObject.ObjectsActive
 
-O `ObjectsActive` método recupera uma contagem de todo o processo de objetos ativos.
+O `ObjectsActive` método recupera uma contagem em todo o processo de objetos ativos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ static LONG ObjectsActive();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de objetos ativos.
 
@@ -50,8 +50,8 @@ Retorna o número de objetos ativos.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Combase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

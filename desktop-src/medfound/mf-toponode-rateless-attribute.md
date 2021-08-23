@@ -1,7 +1,7 @@
 ---
-description: Especifica se o sink de mídia associado a esse nó de topologia é rateless.
+description: Especifica se o coletor de mídia associado a este nó de topologia é sem taxa.
 ms.assetid: 81ef7005-a9ab-4f26-bc39-68b27c4f92aa
-title: MF_TOPONODE_RATELESS atributo (Mfidl.h)
+title: Atributo MF_TOPONODE_RATELESS (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 56d4de6b132bf2b49e327be45588a497374043794ec73925eb61f2dab16fd1bb
@@ -11,23 +11,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119448866"
 ---
-# <a name="mf_toponode_rateless-attribute"></a>Atributo MF \_ TOPONODE \_ RATELESS
+# <a name="mf_toponode_rateless-attribute"></a>\_Atributo MF TOPONODE sem \_ taxa
 
-Especifica se o sink de mídia associado a esse nó de topologia é rateless.
+Especifica se o coletor de mídia associado a este nó de topologia é sem taxa.
 
 ## <a name="data-type"></a>Tipo de dados
 
 **UINT32**
 
-Trate como um valor booliana.
+Tratar como um valor booliano.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a nós de saída **(NÓ DE SAÍDA \_ DE TOPOLOGIA \_ \_ MF).**
+Esse atributo se aplica a nós de saída (**\_ nó de \_ saída \_ da topologia MF**).
 
-Se o valor desse atributo for diferente de zero, a Sessão de Mídia tratará o sink de mídia como um sinkless rateless, independentemente de o sink de mídia retornar a característica **MEDIASINK \_ RATELESS.** Se esse atributo não estiver definido, o sink de mídia será presumido como não ser rateless.
+Se o valor desse atributo for diferente de zero, a sessão de mídia tratará o coletor de mídia como um coletor sem taxas, independentemente de o coletor de mídia retornar a característica sem **\_ taxa de MEDIASINK** . Se esse atributo não estiver definido, supõe-se que o coletor de mídia não seja sem taxa.
 
-A constante GUID para esse atributo é exportada de mfuuid.lib.
+A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 <dl> <dt>
 
-[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFMediaSink::GetCharacteristics**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getcharacteristics)
+[**IMFMediaSink:: getcaracterísticas**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getcharacteristics)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

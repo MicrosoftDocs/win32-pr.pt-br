@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_CAN_CONFIG (VFW. h)
 description: A mensagem de configuração de MCIWNDM \_ pode \_ determinar se um dispositivo MCI pode exibir uma caixa de diálogo de configuração. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanConfig.
 ms.assetid: f1eb22a8-d0fc-4d2c-a414-392e560cfbed
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_CAN_CONFIG
+- mensagem de MCIWNDM_CAN_CONFIG Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 816a8c1dfaec6fc7d7854f8873ce05e74e4de6bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3ef5b8e4f8e1ab09f128b1294034bbb715c834c3e867f31bbaae0cb6bd620be5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525526"
 ---
 # <a name="mciwndm_can_config-message"></a>MCIWNDM \_ pode \_ Configurar a mensagem
 

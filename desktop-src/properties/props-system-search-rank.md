@@ -4,12 +4,12 @@ ms.assetid: e0c03f6f-4539-4a6b-b58d-161bd985ee0f
 title: Sistema. Search. Rank
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d23d1c78e5c3807c529fd68b04cc71b6f03300c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94b4607cf37136c8d1bb9d6d739afb2e5733cfaefe4b7b207637f930210cc30b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119595026"
 ---
 # <a name="systemsearchrank"></a>Sistema. Search. Rank
 

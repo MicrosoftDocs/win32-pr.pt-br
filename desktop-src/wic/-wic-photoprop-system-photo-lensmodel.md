@@ -4,12 +4,12 @@ ms.assetid: 39aeff17-e8d3-4ceb-86a1-1749d2ca98d6
 title: Política de metadados de foto System. Photo. LensModel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8a5249136346407ab9fcd1e4802d6910d3e514a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a07fff44e14a04dab220f8dbce243a638710f30db253c43c1ff79a240bb32f3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119441866"
 ---
 # <a name="systemphotolensmodel-photo-metadata-policy"></a>Política de metadados de foto System. Photo. LensModel
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -47,7 +47,7 @@ Se o arquivo estiver no formato JPEG, o manipulador usará o caminho a seguir ao
 
 | Ordem | Caminho                          | Formato de disco | Obrigatório |
 |-------|-------------------------------|-------------|----------|
-| 1     | /xmp/MicrosoftPhoto:LensModel | Unicode     | Yes      |
+| 1     | /xmp/MicrosoftPhoto:LensModel | Unicode     | Sim      |
 
 
 
@@ -61,7 +61,7 @@ Se o arquivo estiver no formato TIFF, o manipulador usará a ordem de precedênc
 
 | Ordem | Caminho                              | Formato de disco | Obrigatório |
 |-------|-----------------------------------|-------------|----------|
-| 1     | /ifd/xmp/MicrosoftPhoto:LensModel | Unicode     | Yes      |
+| 1     | /ifd/xmp/MicrosoftPhoto:LensModel | Unicode     | Sim      |
 
 
 

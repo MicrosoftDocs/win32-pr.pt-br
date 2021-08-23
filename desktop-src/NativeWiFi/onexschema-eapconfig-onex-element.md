@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 955b3647aca787097495b6051407b718dfa91f53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 539f30d6730ec0735006f9dd3812322468ce71c7b0fbd90610b6cd589e0d60bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684876"
 ---
 # <a name="eapconfig-onex-element"></a>Elemento EAPConfig (OneX)
 
@@ -48,8 +48,8 @@ O elemento **EAPConfig** é definido pelo elemento [**Onex**](onexschema-onex-el
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows Vista, Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                |
+| Cliente mínimo com suporte<br/> | Windows Vista, somente Windows XP com \[ aplicativos de área de trabalho do SP3\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                |
 | Redistribuível<br/>          | API de LAN sem fio para Windows XP com SP2<br/>                 |
 
 

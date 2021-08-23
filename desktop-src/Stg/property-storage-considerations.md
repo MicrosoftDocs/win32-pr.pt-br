@@ -1,17 +1,17 @@
 ---
-title: Considerações de armazenamento de propriedade
+title: considerações de Armazenamento de propriedade
 description: IPropertyStorage ReadMultiple lê quantas propriedades especificadas na matriz rgpspec como são encontradas no conjunto de propriedades.
 ms.assetid: 7540966f-a3b2-46c9-9e04-b15133a517eb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aad6aabf8b22a7c01f91a090136e6cc8156c791
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 128c5da70ae08c62660e0177187036fddee6ff27ed1d9971b6f95dea7052ecdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105749440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662156"
 ---
-# <a name="property-storage-considerations"></a>Considerações de armazenamento de propriedade
+# <a name="property-storage-considerations"></a>considerações de Armazenamento de propriedade
 
 [**IPropertyStorage:: ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple) lê quantas propriedades especificadas na matriz *rgpspec* como são encontradas no conjunto de propriedades. Desde que qualquer uma das propriedades solicitadas seja lida, uma solicitação para recuperar uma propriedade que não existe não é um erro. Em vez disso, isso deve fazer com \_ que o VT vazio seja gravado para  essa propriedade \[ \] na matriz rgVar no retorno. Quando nenhuma das propriedades solicitadas existir, o método deverá retornar S \_ false e definir o VT \_ vazio em cada [**PROPVARIANT**](/windows/win32/api/propidlbase/ns-propidlbase-propvariant). Se qualquer outro erro for retornado, nenhum valor de propriedade será recuperado e o chamador não precisará se preocupar em liberá-los.
 
@@ -35,9 +35,9 @@ Outro problema é várias aberturas no modo transacionado. O resultado depende d
 
 Se a chamada para abrir o conjunto de propriedades especificar o acesso de leitura/gravação, as propriedades com valor de [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) e [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream)sempre serão abertas com acesso de leitura/gravação. Os dados podem então ser escritos por meio dessas interfaces, alterando o valor da propriedade, que é a maneira mais eficiente de atualizar essas propriedades. O próprio valor da propriedade não tem um nível adicional de aninhamento de transações, portanto, as alterações têm o escopo definido na transação (se houver) no objeto de armazenamento de propriedade.
 
-## <a name="storage-and-stream-properties"></a>Propriedades de armazenamento e fluxo
+## <a name="storage-and-stream-properties"></a>propriedades de Armazenamento e de fluxo
 
-Para gravar um fluxo ou um objeto de armazenamento em um conjunto de propriedades, o conjunto de propriedades deve ter sido criado como não simples. Para obter mais informações sobre conjuntos de propriedades simples e não simples, consulte a seção intitulada [armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md). Os tipos de propriedade a seguir, conforme especificado no campo *VT* dos elementos da matriz *rgVar* , são tipos de armazenamento ou de fluxo: VT \_ Stream, \_ armazenamento VT, \_ objeto transmitido por VT \_ , \_ objeto armazenado VT \_ .
+Para gravar um fluxo ou um objeto de armazenamento em um conjunto de propriedades, o conjunto de propriedades deve ter sido criado como não simples. para obter mais informações sobre conjuntos de propriedades simples e não simples, consulte a seção intitulada [Armazenamento e objetos de fluxo para um conjunto de propriedades](storage-vs--stream-for-a-property-set.md). Os tipos de propriedade a seguir, conforme especificado no campo *VT* dos elementos da matriz *rgVar* , são tipos de armazenamento ou de fluxo: VT \_ Stream, \_ armazenamento VT, \_ objeto transmitido por VT \_ , \_ objeto armazenado VT \_ .
 
 Para gravar um fluxo ou um objeto de armazenamento como uma propriedade em um conjunto de propriedades não simples, chame [**IPropertyStorage:: WriteMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-writemultiple). Embora você também chame esse método para atualizar propriedades simples, ele não é uma maneira eficiente de atualizar o fluxo e os objetos de armazenamento em um conjunto de propriedades. Isso ocorre porque a atualização de uma dessas propriedades por meio de uma chamada para **WriteMultiple** cria no objeto de armazenamento de propriedade uma cópia dos dados passados e os ponteiros [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) ou [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream) não são mantidos além da duração dessa chamada. Geralmente, é mais eficiente atualizar os objetos Stream ou Storage diretamente chamando [**IPropertyStorage:: ReadMultiple**](/windows/desktop/api/Propidl/nf-propidl-ipropertystorage-readmultiple) para obter o ponteiro de interface para o fluxo ou armazenamento e, em seguida, gravar dados por meio dos métodos **IStream** ou **IStorage** .
 
@@ -76,6 +76,6 @@ Ao alocar um identificador de propriedade, a implementação pode escolher qualq
 [Implementação IPropertyStorage-autônoma](ipropertystorage-stand-alone-implementation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

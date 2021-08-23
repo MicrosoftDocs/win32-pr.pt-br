@@ -1,6 +1,6 @@
 ---
 title: Atributo inicials
-description: Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado como a inicial do meio no catálogo de endereços do Windows.
+description: Contém as iniciais de partes do nome completo do usuário. isso pode ser usado como a inicial do meio no catálogo de endereços Windows.
 ms.assetid: 220b4448-5276-4c3f-8a1b-217cec06135a
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 946f6c9633c1126a30ae4898274096a54db9a402
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4c9aa6020dc5f442547582c71be475c7dc8e6e3efcd3e1588095c536f22e2347
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322906"
 ---
 # <a name="initials-attribute"></a>Atributo inicials
 
-Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado como a inicial do meio no catálogo de endereços do Windows.
+Contém as iniciais de partes do nome completo do usuário. isso pode ser usado como a inicial do meio no catálogo de endereços Windows.
 
 
 
@@ -36,7 +36,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 2.5.4.43                                    |
 | System-ID-GUID    | f0f8ff90-1191-11d0-a060-00aa006c33ed        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,7 +58,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A0A                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | ID do link                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| É de valor único       | True                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                   |
 | É indexado             | Falso                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                           |
@@ -100,7 +100,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | ID do link                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| É de valor único       | True                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                   |
 | É indexado             | Falso                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                           |
@@ -121,7 +121,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | ID do link                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| É de valor único       | True                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                   |
 | É indexado             | Falso                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                           |
@@ -142,7 +142,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | ID do link                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| É de valor único       | True                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                   |
 | É indexado             | Falso                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                           |
@@ -163,7 +163,7 @@ Contém as iniciais de partes do nome completo do usuário. Isso pode ser usado 
 | ID do link                | \-                                                                                                                     |
 | MAPI-Id                | 0x3A0A                                                                                                                 |
 | System-Only            | Falso                                                                                                                  |
-| É de valor único       | True                                                                                                                   |
+| É de valor único       | Verdadeiro                                                                                                                   |
 | É indexado             | Falso                                                                                                                  |
 | No catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                           |

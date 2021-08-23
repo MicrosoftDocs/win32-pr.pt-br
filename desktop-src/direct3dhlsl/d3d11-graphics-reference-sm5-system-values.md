@@ -1,6 +1,6 @@
 ---
-title: Valores de sistema do Shader Model 5
-description: O Shader Model 5 implementa os valores do sistema do Shader Model 4 e anterior, bem como os novos valores de sistema a seguir
+title: Valores do sistema do Modelo de Sombreador 5
+description: O Modelo de Sombreador 5 implementa os valores do sistema do Modelo de Sombreador 4 e anteriores, bem como os novos valores do sistema a seguir
 ms.assetid: 30fc6dec-9f68-4435-b611-50ceb18c74d2
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b354209c0881d8f20a86e3a0effac2ed8c66b8fe
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e8d450411b1a38d187b6f58557985b8c26c7df7fd18bbd33f5388633ca1a9571
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104293587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726916"
 ---
-# <a name="shader-model-5-system-values"></a>Valores de sistema do Shader Model 5
+# <a name="shader-model-5-system-values"></a>Valores do sistema do Modelo de Sombreador 5
 
-O Shader Model 5 implementa os [valores do sistema](dx-graphics-hlsl-semantics.md) do Shader Model 4 e anterior, bem como os seguintes novos valores do sistema:
+O Modelo de Sombreador 5 implementa os valores [do](dx-graphics-hlsl-semantics.md) sistema do Modelo de Sombreador 4 e anteriores, bem como os seguintes novos valores do sistema:
 
--   [\_DISPATCHTHREADID VA](sv-dispatchthreadid.md)
--   [\_DOMAINLOCATION VA](sv-domainlocation.md)
--   [\_GroupId da VA](sv-groupid.md)
--   [\_GROUPINDEX VA](sv-groupindex.md)
--   [\_GROUPTHREADID VA](sv-groupthreadid.md)
--   [\_GSINSTANCEID VA](sv-gsinstanceid.md)
--   [\_INSIDETESSFACTOR VA](sv-insidetessfactor.md)
--   [\_OUTPUTCONTROLPOINTID VA](sv-outputcontrolpointid.md)
--   [\_TESSFACTOR VA](sv-tessfactor.md)
+-   [SV \_ DispatchThreadID](sv-dispatchthreadid.md)
+-   [SV \_ DomainLocation](sv-domainlocation.md)
+-   [GroupID de SV \_](sv-groupid.md)
+-   [SV \_ GroupIndex](sv-groupindex.md)
+-   [SV \_ GroupThreadID](sv-groupthreadid.md)
+-   [SV \_ GSInstanceID](sv-gsinstanceid.md)
+-   [SV \_ InsideTessFactor](sv-insidetessfactor.md)
+-   [SV \_ OutputControlPointID](sv-outputcontrolpointid.md)
+-   [SV \_ TessFactor](sv-tessfactor.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -37,9 +37,9 @@ O Shader Model 5 implementa os [valores do sistema](dx-graphics-hlsl-semantics.m
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Os aplicativos usam os métodos da interface IDirectXFileEnumObject para percorrer os objetos de dados no arquivo e recuperar um objeto de dados por seu GUID (identificador global exclusivo) ou por seu nome. Preterido.
+description: Os aplicativos usam os métodos da interface IDirectXFileEnumObject para passar pelos objetos de dados no arquivo e recuperar um objeto de dados por seu GUID (identificador global exclusivo) ou por seu nome. Preterido.
 ms.assetid: 9eefda2a-5b17-4330-8245-63a38c1b1469
-title: Interface IDirectXFileEnumObject (DXFile. h)
+title: Interface IDirectXFileEnumObject (DXFile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_type:
 api_location:
 - d3dxof.lib
 - d3dxof.dll
-ms.openlocfilehash: f9220f6e0a406cb4143798787276d7aa6cb5f5d1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 448751cf7160dd9f5bd44f8f7460f30acc731ddf783c840654c3634e80f66540
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105779406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491746"
 ---
 # <a name="idirectxfileenumobject-interface"></a>Interface IDirectXFileEnumObject
 
-Os aplicativos usam os métodos da interface IDirectXFileEnumObject para percorrer os objetos de dados no arquivo e recuperar um objeto de dados por seu GUID (identificador global exclusivo) ou por seu nome. Preterido.
+Os aplicativos usam os métodos da interface IDirectXFileEnumObject para passar pelos objetos de dados no arquivo e recuperar um objeto de dados por seu GUID (identificador global exclusivo) ou por seu nome. Preterido.
 
 ## <a name="members"></a>Membros
 
-A interface **IDirectXFileEnumObject** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IDirectXFileEnumObject** também tem estes tipos de membros:
+A interface **IDirectXFileEnumObject** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IDirectXFileEnumObject** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -41,7 +41,7 @@ A interface **IDirectXFileEnumObject** tem esses métodos.
 |:---------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [**GetDataObjectById**](idirectxfileenumobject--getdataobjectbyid.md)     | Recupera o objeto de dados que tem o GUID especificado. Preterido.<br/>   |
 | [**GetDataObjectByName**](idirectxfileenumobject--getdataobjectbyname.md) | Recupera o objeto de dados que tem o nome especificado. Preterido.<br/>   |
-| [**GetNextDataObject**](idirectxfileenumobject--getnextdataobject.md)     | Recupera o próximo objeto de nível superior no arquivo do DirectX. Preterido.<br/> |
+| [**GetNextDataObject**](idirectxfileenumobject--getnextdataobject.md)     | Recupera o próximo objeto de nível superior no arquivo DirectX. Preterido.<br/> |
 
 
 
@@ -49,9 +49,9 @@ A interface **IDirectXFileEnumObject** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-O GUID da interface IDirectXFileEnumObject é IDirectXFileEnumObject IID \_ .
+O GUID da interface IDirectXFileEnumObject é IID \_ IDirectXFileEnumObject.
 
-O tipo LPDIRECTXFILEENUMOBJECT é definido como um ponteiro para essa interface.
+O tipo LPDIRECTXF DIGITUMOBJECT é definido como um ponteiro para essa interface.
 
 
 ```
@@ -66,8 +66,8 @@ typedef interface IDirectXFileEnumObject *LPDIRECTXFILEENUMOBJECT;
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>DXFile. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3dxof. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>DXFile.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3dxof.lib</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ typedef interface IDirectXFileEnumObject *LPDIRECTXFILEENUMOBJECT;
 
 <dl> <dt>
 
-[X interfaces de arquivo](dx9-graphics-reference-x-file-interfaces.md)
+[Interfaces de arquivo X](dx9-graphics-reference-x-file-interfaces.md)
 </dt> </dl>
 
  

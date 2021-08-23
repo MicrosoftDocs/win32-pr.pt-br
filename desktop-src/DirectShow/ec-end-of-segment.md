@@ -4,12 +4,12 @@ ms.assetid: 07f141b1-2e96-49e2-9cf7-581690e245b5
 title: EC_END_OF_SEGMENT (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a779b0f46a031ad694bd3fed3fe29536424a3a7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13bbc55ab316a56264c9c0b66196a53181d0abd72bfdddf3315523b8c387a1d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639746"
 ---
 # <a name="ec_end_of_segment"></a>\_fim \_ do \_ segmento do EC
 

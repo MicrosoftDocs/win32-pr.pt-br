@@ -1,42 +1,42 @@
 ---
-description: O exemplo de análise de tinta básica mostra como a classe InkAnalyzer divide a tinta em vários segmentos de desenho e de palavras. Este exemplo é uma versão atualizada do exemplo de divisor de tinta.
+description: O exemplo análise de tinta básica mostra como a classe InkAnalyzer divide a tinta em vários segmentos de palavras e desenho. Este exemplo é uma versão atualizada do Exemplo de Divisor de Tinta.
 ms.assetid: cb9a28d9-f8c6-478e-ae43-2d30106edc7b
-title: Exemplo de análise de tinta básica
+title: Exemplo básico de análise de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e94ac73ca9049169c6e406059665a66e8eaa6f3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ab307deac8ac58a741b0c7f332986b09074f4f5c6a8afa53f0156a94916bf16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105780728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660826"
 ---
-# <a name="basic-ink-analysis-sample"></a>Exemplo de análise de tinta básica
+# <a name="basic-ink-analysis-sample"></a>Exemplo básico de análise de tinta
 
-O exemplo de análise de tinta básica mostra como a classe [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide a tinta em vários segmentos de desenho e de palavras.
+O exemplo análise de tinta básica mostra como a [classe InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide a tinta em vários segmentos de palavras e desenho.
 
-Este exemplo é uma versão atualizada do [exemplo de divisor de tinta](ink-divider-sample.md). Enquanto o exemplo de divisória de tinta usa a classe [divisória](/previous-versions/ms839398(v=msdn.10)) , este exemplo usa a API InkAnalysis mais recente e preferencial. A API InkAnalysis combina o [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) e o divisor em uma API e expande a funcionalidade de ambos.
+Este exemplo é uma versão atualizada do Exemplo [de Divisor de Tinta.](ink-divider-sample.md) Enquanto o Exemplo de Divisor de Tinta Usa a [classe Divisor,](/previous-versions/ms839398(v=msdn.10)) este exemplo usa a API InkAnalysis mais nova e preferencial. A API inkAnalysis combina o [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) e o Divisor em uma API e expande a funcionalidade de ambos.
 
-Quando você atualiza o formulário, o exemplo desenha um retângulo em volta de cada unidade analisada: palavras, linhas, parágrafos, regiões de escrita, desenhos e marcadores. O formulário usa cores diferentes para as diferentes unidades. Os retângulos também são ampliados por valores diferentes para garantir que nenhum retângulo seja obscurecido por outros.
+Quando você atualiza o formulário, o exemplo desenha um retângulo em torno de cada unidade analisada: palavras, linhas, parágrafos, regiões de escrita, desenhos e marcadores. O formulário usa cores diferentes para as unidades diferentes. Os retângulos também são ampliados por quantidades diferentes para garantir que nenhum retângulo seja obscurecido por nenhum outro.
 
-A tabela a seguir especifica a cor e a ampliação para cada unidade analisada.
+A tabela a seguir especifica a cor e o ampliação de cada unidade analisada.
 
 
 
-| Unidade analisada             | Cor do retângulo | Ampliação do retângulo (pixels) |
+| Unidade analisada             | Cor do retângulo | Ampliação de retângulo (pixels) |
 |---------------------------|--------------------|--------------------------------|
 | Word<br/>           | Verde<br/>   | 1<br/>                   |
 | Linha<br/>           | Magenta<br/> | 3<br/>                   |
 | Paragraph<br/>      | Azul<br/>    | 5<br/>                   |
-| Região de escrita<br/> | Amarelo<br/>  | 7<br/>                   |
+| Escrevendo região<br/> | Amarelo<br/>  | 7<br/>                   |
 | Desenho<br/>        | Vermelho<br/>     | 1<br/>                   |
-| Listas<br/>         | Laranja<br/>  | 1<br/>                   |
+| Bala<br/>         | Laranja<br/>  | 1<br/>                   |
 
 
 
  
 
-Você pode apagar os traços no formulário. No aplicativo de exemplo, você pode alternar entre o modo de tinta e de apagamento para alterar a função da caneta.
+Você pode apagar traços no formulário. No aplicativo de exemplo, você pode alternar entre o modo Tinta e Apagar para alterar a função da caneta.
 
 
 ```C++
@@ -69,7 +69,7 @@ Você pode apagar os traços no formulário. No aplicativo de exemplo, você pod
 
 
 
-Quando você adiciona ou exclui traços, os exemplos atualizam o [InkAnalyzer](/previous-versions/ms583671(v=vs.100)).
+Quando você adiciona ou exclui traços, os exemplos atualiza o [InkAnalyzer.](/previous-versions/ms583671(v=vs.100))
 
 
 ```C++
@@ -106,16 +106,16 @@ Quando você adiciona ou exclui traços, os exemplos atualizam o [InkAnalyzer](/
 
 
 
-Observe que, no menu modo, a análise de layout automática está ativada por padrão. Com essa opção selecionada, os manipuladores de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) e [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) do objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) chamam o método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) toda vez que um traço é criado ou excluído.
+Observe que, no menu Modo, a Análise Automática de Layout está em por padrão. Com essa opção selecionada, os manipuladores de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) e [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) do objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) chamam o método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) sempre que um traço é criado ou excluído.
 
 > [!Note]  
-> Chamar o método [Analyze](/previous-versions/ms568971(v=vs.100)) do objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) com mais de alguns traços presentes cria um atraso perceptível em um aplicativo. Isso ocorre porque Analyze é uma operação de análise de tinta síncrona. Na prática, chame o método Analyze somente quando você precisar do resultado. Caso contrário, use o método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) assíncrono, conforme mostrado no exemplo.
+> Chamar o método Analyze do [](/previous-versions/ms568971(v=vs.100)) objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) com mais de alguns traços presentes cria um atraso perceptível em um aplicativo. Isso ocorre porque Analisar é uma operação de análise de tinta síncrona. Na prática, chame o método Analisar somente quando precisar do resultado. Caso contrário, use o método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) assíncrono, conforme mostrado no exemplo.
 
  
 
 ## <a name="handling-the-analysis-results"></a>Manipulando os resultados da análise
 
-O exemplo cria duas matrizes para manter os vários retângulos, horizontal ou girado. Use uma caixa delimitadora girada para obter o ângulo no qual uma linha de palavras é escrita. O exemplo mostra as propriedades retornadas pelo [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) e exibe a caixa delimitadora ou a caixa delimitadora girada (dependendo da seleção de menu).
+O exemplo cria duas matrizes para manter os vários retângulos, horizontais ou girados. Use uma caixa delimitada girada para obter o ângulo no qual uma linha de palavras é escrita. O exemplo mostra as propriedades retornadas pelo [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) e exibe a caixa delimitador ou a caixa delimitador girada (dependendo da seleção do menu).
 
 
 ```C++
@@ -274,11 +274,11 @@ O exemplo cria duas matrizes para manter os vários retângulos, horizontal ou g
 
 
 
-O analisador calcula o [GetRotatedBoundingBox](/previous-versions/ms569544(v=vs.100)) durante a análise. Você pode acessar as informações das caixas delimitadora giradas em seu aplicativo por vários motivos úteis:
+O analisador calcula [GetRotatedBoundingBox durante](/previous-versions/ms569544(v=vs.100)) a análise. Você pode acessar as informações das caixas delimitadas giradas em seu aplicativo por vários motivos úteis:
 
--   Detecte ou desenhe os limites de uma única linha, parágrafo ou outra unidade.
--   Determine o ângulo no qual uma linha ou parágrafo é escrito.
--   Implemente recursos como a seleção de uma linha, um parágrafo ou outra unidade.
+-   Detectar ou desenhar os limites de uma única linha, parágrafo ou outra unidade.
+-   Determine o ângulo no qual uma linha ou parágrafo é gravado.
+-   Implemente recursos como seleção para uma linha, parágrafo ou outra unidade.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -290,7 +290,7 @@ O analisador calcula o [GetRotatedBoundingBox](/previous-versions/ms569544(v=vs.
 [Exemplo de formulário de papel digitalizado](scanned-paper-form-sample.md)
 </dt> <dt>
 
-[Exemplo de divisória de tinta](ink-divider-sample.md)
+[Exemplo de divisor de tinta](ink-divider-sample.md)
 </dt> </dl>
 
  
