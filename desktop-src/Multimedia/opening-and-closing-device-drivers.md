@@ -13,16 +13,16 @@ keywords:
 - fechando dispositivos MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53d7035455baa067b81af7da980a4ae043500c7b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e935ab3d0d420e735bed6e01d08c80962e134338ea9e88eaa4899e0e81cb71f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806286"
 ---
 # <a name="opening-and-closing-device-drivers"></a>Abrindo e fechando drivers de dispositivo
 
-Você deve abrir um dispositivo MIDI antes de usá-lo e fechar o dispositivo assim que terminar de usá-lo. O Windows fornece as seguintes funções para abrir e fechar diferentes tipos de dispositivos MIDI.
+Você deve abrir um dispositivo MIDI antes de usá-lo e fechar o dispositivo assim que terminar de usá-lo. Windows fornece as seguintes funções para abrir e fechar diferentes tipos de dispositivos MIDI.
 
 
 
@@ -35,7 +35,7 @@ Você deve abrir um dispositivo MIDI antes de usá-lo e fechar o dispositivo ass
 
 
 
- 
+ 
 
 Cada função que abre um dispositivo MIDI usa como parâmetros um identificador de dispositivo, um endereço de um local de memória e alguns parâmetros exclusivos de dispositivos MIDI. O local da memória é preenchido com um identificador de dispositivo, que é usado para identificar o dispositivo de áudio aberto em chamadas a outras funções de áudio.
 
@@ -44,7 +44,7 @@ Muitas funções MIDI podem aceitar um identificador de dispositivo ou um dispos
 > [!Note]  
 > Os dispositivos MIDI não são necessariamente compartilháveis, portanto, um dispositivo específico pode não estar disponível quando um usuário solicitá-lo. Se isso acontecer, o aplicativo deve notificar o usuário e permitir que o usuário tente abrir o dispositivo novamente.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -53,6 +53,6 @@ Muitas funções MIDI podem aceitar um identificador de dispositivo ou um dispos
 [Serviços MIDI](midi-services.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

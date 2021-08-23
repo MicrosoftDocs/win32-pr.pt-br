@@ -4,27 +4,27 @@ ms.assetid: 1347c3d6-67f6-4cea-9a93-9fc754755b47
 title: D3DVERTEXTEXTURESAMPLER
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0f9526f38bac0f1f1af94b8714aa9b3c685a64c
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 8f8720562d256d29192a51d292ad8bc7f7cef622600f253972b51c046dbacd53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750606"
 ---
 # <a name="d3dvertextexturesampler"></a>D3DVERTEXTEXTURESAMPLER
 
 Constantes de amostra de textura de vértice.
 
-Essas constantes identificam os amostradores de textura usados por sombreadores de vértice.
+Essas constantes identificam os exemplos de textura usados por sombreadores de vértice.
 
 
 
-| \#Definir                 | Descrição        |
+| \#definir                 | Descrição        |
 |--------------------------|--------------------|
-| D3DVERTEXTEXTURESAMPLER0 | (D3DDMAPSAMPLER+1) |
-| D3DVERTEXTEXTURESAMPLER1 | (D3DDMAPSAMPLER+2) |
-| D3DVERTEXTEXTURESAMPLER2 | (D3DDMAPSAMPLER+3) |
-| D3DVERTEXTEXTURESAMPLER3 | (D3DDMAPSAMPLER+4) |
+| D3DVERTEXTEXTURESAMPLER0 | (D3DDMAPSAMPLER + 1) |
+| D3DVERTEXTEXTURESAMPLER1 | (D3DDMAPSAMPLER + 2) |
+| D3DVERTEXTEXTURESAMPLER2 | (D3DDMAPSAMPLER + 3) |
+| D3DVERTEXTEXTURESAMPLER3 | (D3DDMAPSAMPLER + 4) |
 
 
 
@@ -32,11 +32,11 @@ Essas constantes identificam os amostradores de textura usados por sombreadores 
 
 ## <a name="d3ddmapsampler"></a>D3DDMAPSAMPLER
 
-Essa é uma constante interna usada pelo amostrador de textura no mosaico.
+Essa é uma constante interna usada pela amostra de textura no Tessellator.
 
 
 
-| \#Definir       | Descrição                                           |
+| \#definir       | Descrição                                           |
 |----------------|-------------------------------------------------------|
 | D3DDMAPSAMPLER | 256, que é o número máximo de amostras de textura. |
 

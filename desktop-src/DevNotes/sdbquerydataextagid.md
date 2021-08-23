@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 8db16463d2923ce3c888de4f202e1ebc36584e99
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 19477385fb70f65c560d1a13d479fc4c2ce1853220aff6ac32a75f3634a40d71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815376"
 ---
 # <a name="sdbquerydataextagid-function"></a>Função SdbQueryDataExTagID
 
@@ -45,24 +45,24 @@ DWORD WINAPI SdbQueryDataExTagID(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tiExe* \[ no\]
+*tiExe* \[ Em\]
 </dt> <dd>
 
-O [**TagId**](tagid.md) da entrada exe.
+O [**TAGID**](tagid.md) da entrada EXE.
 
 </dd> <dt>
 
-*lpszDataName* \[ em, opcional\]
+*lpszDataName* \[ in, opcional\]
 </dt> <dd>
 
-O nome da entrada de dados a ser recuperada. Para especificar várias entradas, separe os nomes com o caractere de barra invertida (" \\ "). Se esse parâmetro for **nulo**, a função tentará retornar todas as entradas de dados.
+O nome da entrada de dados a ser recuperada. Para especificar várias entradas, separe os nomes com o caractere de faixa invertida (" \\ "). Se esse parâmetro for **NULL,** a função tentará retornar todas as entradas de dados.
 
 </dd> <dt>
 
@@ -73,46 +73,46 @@ O tipo de dados das entradas retornadas. Esse parâmetro pode ser um dos seguint
 
 <dl><span id="REG_BINARY"></span><span id="reg_binary"></span><dt>
 
-**\_binário reg**
+**REG \_ BINARY**
 </dt><span id="REG_DWORD"></span><span id="reg_dword"></span><dt>
 
 **REG \_ DWORD**
 </dt><span id="REG_MULTI_SZ"></span><span id="reg_multi_sz"></span><dt>
 
-**REG \_ multi \_ sz**
+**REG \_ MULTI \_ SZ**
 </dt><span id="REG_NONE"></span><span id="reg_none"></span><dt>
 
-**REG \_ None**
+**REG \_ NONE**
 </dt><span id="REG_QWORD"></span><span id="reg_qword"></span><dt>
 
 **REG \_ QWORD**
 </dt><span id="REG_SZ"></span><span id="reg_sz"></span><dt>
 
-**REG \_ sz**
+**REG \_ SZ**
 </dt> </dl> </dd> <dt>
 
-*lpBuffer* \[ fora\]
+*lpBuffer* \[ out\]
 </dt> <dd>
 
-O buffer que recebe os dados. Se o buffer não for grande o suficiente para conter os dados, a função falhará e retornará o **\_ \_ buffer insuficiente de erro**.
+O buffer que recebe os dados. Se o buffer não for grande o suficiente para conter os dados, a função falhará e **retornará ERROR \_ INSUFFICIENT \_ BUFFER**.
 
 </dd> <dt>
 
-*lpcbBufferSize* \[ entrada, saída, opcional\]
+*lpcbBufferSize* \[ in, out, opcional\]
 </dt> <dd>
 
-O tamanho do buffer *lpBuffer* , em bytes.
+O tamanho do *buffer lpBuffer,* em bytes.
 
 </dd> <dt>
 
-*ptiData* \[ fora\]
+*ptiData* \[ out\]
 </dt> <dd>
 
-O [**TagId**](tagid.md) da entrada de dados.
+O [**TAGID**](tagid.md) da entrada de dados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retorna um dos valores a seguir.
 
@@ -120,12 +120,12 @@ Essa função retorna um dos valores a seguir.
 
 | Código de retorno                                                                                                    | Descrição                                                            |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**\_parâmetro inválido de erro \_**</dt> </dl>       | Um ou mais parâmetros de entrada estão incorretos.<br/>                  |
-| <dl> <dt>**ERRO \_ de \_ corrupção interna do BD \_**</dt> </dl> | Não foram encontradas entradas de dados para a entrada EXE.<br/>               |
-| <dl> <dt>**ERRO \_ de \_ buffer insuficiente**</dt> </dl>     | O buffer não é grande o suficiente para conter as entradas de dados.<br/> |
-| <dl> <dt>**ERRO \_ de \_ memória insuficiente \_**</dt> </dl>      | Falha na alocação de memória.<br/>                               |
-| <dl> <dt>**ERRO \_ não \_ encontrado**</dt> </dl>               | Uma entrada de dados com o nome *lpszDataName* não foi encontrada.<br/>    |
-| <dl> <dt>**êxito do erro \_**</dt> </dl>                  | A função foi concluída com êxito.<br/>                        |
+| <dl> <dt>**ERRO \_ PARÂMETRO \_ INVÁLIDO**</dt> </dl>       | Um ou mais parâmetros de entrada estão incorretos.<br/>                  |
+| <dl> <dt>**ERRO \_ INTERNO DE BANCO DE DADOS \_ \_ CORRUPÇÕES**</dt> </dl> | Nenhuma entrada de dados foi encontrada para a entrada EXE.<br/>               |
+| <dl> <dt>**ERRO \_ BUFFER \_ INSUFICIENTE**</dt> </dl>     | O buffer não é grande o suficiente para conter as entradas de dados.<br/> |
+| <dl> <dt>**ERRO \_ SEM \_ MEMÓRIA \_ SUFICIENTE**</dt> </dl>      | Falha na alocação de memória.<br/>                               |
+| <dl> <dt>**ERRO \_ NÃO \_ ENCONTRADO**</dt> </dl>               | Uma entrada de dados com o nome *lpszDataName* não foi encontrada.<br/>    |
+| <dl> <dt>**ÊXITO \_ DO ERRO**</dt> </dl>                  | A função foi concluída com êxito.<br/>                        |
 
 
 
@@ -137,8 +137,8 @@ Essa função retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

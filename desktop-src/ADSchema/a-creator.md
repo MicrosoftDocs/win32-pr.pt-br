@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f746ea0c773c591267ad3bfc8e2ae9940b59736b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 360d1c05ff28f9e9cdc0fbffa89eb76317c42dd150a0b54e1254ecdb1b26b7d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805206"
 ---
 # <a name="creator-attribute"></a>Atributo de criador
 
@@ -58,7 +58,7 @@ A pessoa que criou o objeto.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -79,7 +79,7 @@ A pessoa que criou o objeto.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -100,7 +100,7 @@ A pessoa que criou o objeto.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -121,10 +121,10 @@ A pessoa que criou o objeto.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
@@ -142,10 +142,10 @@ A pessoa que criou o objeto.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
@@ -163,10 +163,10 @@ A pessoa que criou o objeto.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |

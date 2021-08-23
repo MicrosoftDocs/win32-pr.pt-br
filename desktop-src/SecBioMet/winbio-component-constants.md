@@ -1,5 +1,5 @@
 ---
-title: Constantes de WINBIO_COMPONENT (WinBio \_ Types. h)
+title: WINBIO_COMPONENT constantes (tipos \_ Winbio.h)
 description: Especifique o tipo de adaptador que está sendo usado.
 ms.assetid: f920788b-2175-4c01-81b5-e7b49111a7ac
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07afe4fac08632133d4fa755717d83475b78c675
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 019c84c8c7690c15c8eb3bda5a9ccde0012f40301e819179a2a04b10301e7909
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868076"
 ---
-# <a name="winbio_component-constants"></a>\_Constantes do componente WINBIO
+# <a name="winbio_component-constants"></a>Constantes \_ DE COMPONENTE WINBIO
 
 As constantes a seguir podem ser usadas ao chamar [**WinBioControlUnit**](/windows/desktop/api/Winbio/nf-winbio-winbiocontrolunit) ou [**WinBioControlUnitPrivileged**](/windows/desktop/api/Winbio/nf-winbio-winbiocontrolunitprivileged) para especificar o tipo de adaptador que está sendo usado.
 
@@ -29,9 +29,9 @@ As constantes a seguir podem ser usadas ao chamar [**WinBioControlUnit**](/windo
 
 | Constante                                                                                                                                                                                        | Descrição                             |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------|
-| <span id="WINBIO_COMPONENT_SENSOR"></span><span id="winbio_component_sensor"></span><dl> <dt>**\_sensor de componente WINBIO \_**</dt> </dl>    | Especifica um adaptador de sensor.<br/>  |
-| <span id="WINBIO_COMPONENT_ENGINE"></span><span id="winbio_component_engine"></span><dl> <dt>**\_mecanismo de componente WINBIO \_**</dt> </dl>    | Especifica um adaptador de mecanismo.<br/> |
-| <span id="WINBIO_COMPONENT_STORAGE"></span><span id="winbio_component_storage"></span><dl> <dt>**\_armazenamento de componentes WINBIO \_**</dt> </dl> | Especifica um adaptador de armazenamento.<br/> |
+| <span id="WINBIO_COMPONENT_SENSOR"></span><span id="winbio_component_sensor"></span><dl> <dt>**SENSOR DE \_ COMPONENTE \_ WINBIO**</dt> </dl>    | Especifica um adaptador de sensor.<br/>  |
+| <span id="WINBIO_COMPONENT_ENGINE"></span><span id="winbio_component_engine"></span><dl> <dt>**MECANISMO DE \_ COMPONENTE WINBIO \_**</dt> </dl>    | Especifica um adaptador de mecanismo.<br/> |
+| <span id="WINBIO_COMPONENT_STORAGE"></span><span id="winbio_component_storage"></span><dl> <dt>**ARMAZENAMENTO DE \_ COMPONENTES WINBIO \_**</dt> </dl> | Especifica um adaptador de armazenamento.<br/> |
 
 
 
@@ -41,9 +41,9 @@ As constantes a seguir podem ser usadas ao chamar [**WinBioControlUnit**](/windo
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 

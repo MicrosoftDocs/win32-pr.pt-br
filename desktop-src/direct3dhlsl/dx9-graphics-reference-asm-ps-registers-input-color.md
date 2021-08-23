@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 73ea16c5aa6b49bce59fe51905734344e4e1cffb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fcabc6dcf5043c23be252fe6ac25c99da505e33b7c670c95ee5672b50ddb74bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744626"
 ---
 # <a name="input-color-register"></a>Registro de cor de entrada
 
@@ -31,36 +31,36 @@ dcl v#.writeMask
 
 em que:
 
--   [DCL-(SM2, SM3-PS ASM)](dcl---ps.md) é uma instrução de declaração de registro.
--   v é um registro de entrada e \# é o número de registro. O número de registros permitidos é determinado pela versão do sombreador.
--   writeMask determina quais componentes (até quatro) são gravados. Os componentes válidos são: (x, y, z, w) ou (r, g, b, a).
+-   [dcl - (sm2, sm3 - ps asm)](dcl---ps.md) é uma instrução de declaração de registro.
+-   v é um registro de entrada \# e é o número do registro. O número de registros permitidos é determinado pela versão do sombreador.
+-   writeMask determina quais componentes (até quatro) são gravados. Os componentes válidos são: (x,y, z,w) ou (r,g,b,a).
 
 ## <a name="remarks"></a>Comentários
 
-Os registros de cores são registros somente leitura. Cada registrador contém valores RGBA de quatro componentes iterados a partir de vértices de entrada. Eles têm uma precisão menor do que a maioria dos registros, garantindo que tenham 8 bits de dados não assinados no intervalo (0, + 1). Você não pode usar mais de um em uma única instrução.
+Registros de cores são registros somente leitura. Cada registro contém valores RGBA de quatro componentes iterados de vértices de entrada. Eles têm uma precisão menor do que a maioria dos registros, com garantia de ter 8 bits de dados não assinados no intervalo (0, +1). Você não pode usar mais de um em uma única instrução.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Register](dx9-graphics-reference-asm-ps-registers.md)
+[Registros](dx9-graphics-reference-asm-ps-registers.md)
 </dt> <dt>
 
-[PS \_ 1 \_ 1 \_ \_ PS \_ 1 \_ 2 PS 1 \_ \_ \_ \_ 3 \_ \_ PS \_ 1 \_ 4 registros](dx9-graphics-reference-asm-ps-registers-ps-1-x.md)
+[ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 \_ \_ ps \_ 1 \_ 3 \_ \_ ps \_ 1 \_ 4 Registros](dx9-graphics-reference-asm-ps-registers-ps-1-x.md)
 </dt> <dt>
 
-[\_registros PS 2 \_ 0](dx9-graphics-reference-asm-ps-registers-ps-2-0.md)
+[ps \_ 2 \_ 0 Registros](dx9-graphics-reference-asm-ps-registers-ps-2-0.md)
 </dt> <dt>
 
-[\_registros PS 2 \_ x](dx9-graphics-reference-asm-ps-registers-ps-2-x.md)
+[ps \_ 2 \_ x Registers](dx9-graphics-reference-asm-ps-registers-ps-2-x.md)
 </dt> <dt>
 
-[\_registros PS 3 \_ 0](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)
+[ps \_ 3 \_ 0 Registros](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

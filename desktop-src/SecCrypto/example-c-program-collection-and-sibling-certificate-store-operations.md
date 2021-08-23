@@ -1,36 +1,36 @@
 ---
-description: O exemplo a seguir demonstra o conceito do repositório de coleta, um repositório de certificados temporário que, de fato, inclui o conteúdo de vários repositórios de certificados.
+description: O exemplo a seguir demonstra o conceito do armazenamento de coleções, um armazenamento de certificados temporário que realmente inclui o conteúdo de vários armazenamentos de certificados.
 ms.assetid: 5349222f-ad68-477c-8712-fde16e68f600
-title: 'Programa C de exemplo: operações de repositório de certificado de coleção e irmãos'
+title: 'Exemplo de programa C: operações de coleção e de armazenamento de certificados irmãos'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79ad1957f37e1aabeabbda0be8c14662c14c3ecc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52074b58cb96b37b17808cfa8de17e2cd4af3082cf58c7c4312b46eb8eca0e29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873866"
 ---
-# <a name="example-c-program-collection-and-sibling-certificate-store-operations"></a>Programa C de exemplo: operações de repositório de certificado de coleção e irmãos
+# <a name="example-c-program-collection-and-sibling-certificate-store-operations"></a>Exemplo de programa C: operações de coleção e de armazenamento de certificados irmãos
 
-O exemplo a seguir demonstra o conceito do repositório de coleta, um [*repositório de certificados*](../secgloss/c-gly.md) temporário que, de fato, inclui o conteúdo de vários repositórios de certificados. Uma ou mais lojas podem ser adicionadas a uma coleção que pode acessar o conteúdo de qualquer um dos repositórios na coleção com uma única chamada de função.
+O exemplo a seguir demonstra o conceito [](../secgloss/c-gly.md) do armazenamento de coleções, um armazenamento de certificados temporário que realmente inclui o conteúdo de vários armazenamentos de certificados. Um ou mais armazenamentos podem ser adicionados a uma coleção que pode acessar o conteúdo de qualquer um dos armazenamentos na coleção com uma única chamada de função.
 
-Este exemplo ilustra as seguintes tarefas e funções de [*CryptoAPI*](../secgloss/c-gly.md) :
+Este exemplo ilustra as seguintes tarefas e [*funções CryptoAPI:*](../secgloss/c-gly.md)
 
--   Abrir e fechar um repositório de coleta, um armazenamento de memória e um armazenamento de sistema usando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
--   Adicionar um repositório irmão a um repositório de coleta usando [**CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection).
--   Localizar certificados e links para certificados em armazenamentos que atendem a alguns critérios usando o [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
+-   Abrindo e fechando um repositório de coleta, um repositório de memória e um repositório do sistema usando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) e [**CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   Adicionar um repositório irmão a um repositório de coleta [**usando CertAddStoreToCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddstoretocollection).
+-   Localizar certificados e links para certificados em repositórios que atendam a alguns critérios usando [**CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
 -   Adicionar um certificado recuperado a um repositório na memória usando [**CertAddCertificateContextToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatecontexttostore).
--   Adicionar um link a um certificado para um armazenamento usando [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
--   Salvando o armazenamento na memória em um arquivo no disco.
--   Abrir e fechar um repositório de certificados baseado em arquivo.
--   Removendo um repositório irmão de uma coleção usando [**CertRemoveStoreFromCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certremovestorefromcollection).
+-   Adicionar um link a um certificado a um repositório usando [**CertAddCertificateLinkToStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddcertificatelinktostore).
+-   Salvando o armazenamento na memória em um arquivo em disco.
+-   Abrir e fechar um armazenamento de certificados baseado em arquivo.
+-   Removendo um repositório irmão de uma coleção [**usando CertRemoveStoreFromCollection**](/windows/desktop/api/Wincrypt/nf-wincrypt-certremovestorefromcollection).
 
-Este exemplo usa a função [**MyHandleError**](myhandleerror.md). O código para essa função está incluído no exemplo. O código para essa e outras funções auxiliares também está listado em [funções uso geral](general-purpose-functions.md).
+Este exemplo usa a [**função MyHandleError**](myhandleerror.md). O código para essa função está incluído no exemplo. O código para essa e outras funções auxiliares também é listado [em Uso Geral Functions](general-purpose-functions.md).
 
-Este exemplo usa a função **CreateMyDACL** , definida no tópico [criando uma DACL](../secbp/creating-a-dacl.md) , para garantir que o arquivo aberto seja criado com uma DACL apropriada.
+Este exemplo usa a **função CreateMyDACL,** definida no tópico Criando uma [DACL,](../secbp/creating-a-dacl.md) para garantir que o arquivo aberto seja criado com uma DACL adequada.
 
-O exemplo a seguir abre um repositório de coleta, cria um novo repositório de certificados na memória e adiciona o novo repositório como um repositório irmão ao repositório de coleta. Em seguida, o programa abre um repositório do sistema e recupera um certificado. Esse certificado é adicionado ao armazenamento de memória. Um segundo certificado é recuperado do repositório do sistema e um link para esse certificado é adicionado ao armazenamento de memória. O certificado e o link são então recuperados do repositório de coleta, mostrando que os certificados e links em um repositório irmão podem ser recuperados do repositório de coleta. A memória é salva em disco. O armazenamento de memória é removido da coleção. O link adicionado ao armazenamento de memória ainda pode ser encontrado no armazenamento de memória, mas não pode mais ser encontrado no repositório de coleta. Todos os armazenamentos e arquivos são fechados e, em seguida, o repositório de arquivos é reaberto e uma pesquisa é feita para o link de certificado. O sucesso deste programa depende de uma minha loja estar disponível. Esse repositório deve incluir um certificado com o assunto "inserir \_ o \_ assunto do certificado \_ Nome1" e um segundo certificado com o assunto "inserir \_ \_ entidade CERT \_ nome2". Os nomes dos assuntos devem ser alterados para os nomes de entidades de certificado conhecidos como no meu repositório.
+O exemplo a seguir abre um armazenamento de coleta, cria um novo armazenamento de certificados na memória e adiciona o novo armazenamento como um armazenamento irmão ao armazenamento de coleções. Em seguida, o programa abre um armazenamento do sistema e recupera um certificado. Esse certificado é adicionado ao armazenamento de memória. Um segundo certificado é recuperado do armazenamento do sistema e um link para esse certificado é adicionado ao armazenamento de memória. O certificado e o link são recuperados do armazenamento de coleta mostrando que os certificados e links em um armazenamento irmão podem ser recuperados do armazenamento de coleta. A memória é salva em disco. O armazenamento de memória é removido da coleção. O link adicionado ao armazenamento de memória ainda pode ser encontrado no armazenamento de memória, mas não pode mais ser encontrado no armazenamento de coleta. Todos os armazenamentos e arquivos são fechados e, em seguida, o armazenamento de arquivos é reaberto e uma pesquisa é feita para o link de certificado. O sucesso desse programa depende de uma Minha loja estar disponível. Esse armazenamento deve incluir um certificado com o assunto "Inserir nome da assunto do certificado1" e um segundo certificado com o assunto "Inserir nome da \_ \_ assunto do \_ \_ \_ \_ certificado2". Os nomes dos assuntos devem ser alterados para os nomes dos assuntos de certificado conhecidos por estar na Minha loja.
 
 
 ```C++

@@ -1,7 +1,7 @@
 ---
-description: Aguarda a um objeto ser sinalizado.
+description: Aguarda até que um objeto seja sinalizado.
 ms.assetid: 5fbcccd9-9db7-4834-852a-86f28218e92e
-title: Função DbgWaitForSingleObject (Wxdebug. h)
+title: Função DbgWaitForSingleObject (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 99d0058a60b5cf5b362adb80855a788d9a597af6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5e8180c905cdb7d8d1024f22a85984c17c0e12e18971499d29ed1479a79498f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749346"
 ---
 # <a name="dbgwaitforsingleobject-function"></a>Função DbgWaitForSingleObject
 
-Aguarda a um objeto ser sinalizado.
+Aguarda até que um objeto seja sinalizado.
 
-Em uma compilação de depuração, essa função acionará uma declaração se o intervalo de tempo limite expirar antes de o objeto ser sinalizado. Para definir o intervalo de tempo limite, chame a função [**DbgSetWaitTimeout**](dbgsetwaittimeout.md) .
+Em um build de depuração, essa função dispara uma declaração se o intervalo de tempo-expirar antes que o objeto seja sinalizado. Para definir o intervalo de tempo-out, chame a [**função DbgSetWaitTimeout.**](dbgsetwaittimeout.md)
 
-Em uma compilação de varejo, essa função é equivalente à função **WaitForSingleObject** com um intervalo de tempo limite de infinito.
+Em um build de varejo, essa função é equivalente à **função WaitForSingleObject** com um intervalo de tempo-tempo de INFINITE.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ DWORD DbgWaitForSingleObject(
 *h* 
 </dt> <dd>
 
-Identificador para o objeto.
+Identificador para o objeto .
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Identificador para o objeto.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Identificador para o objeto.
 
 <dl> <dt>
 
-[Aguardar funções de depuração](wait-debugging-functions.md)
+[Funções de depuração de espera](wait-debugging-functions.md)
 </dt> </dl>
 
  

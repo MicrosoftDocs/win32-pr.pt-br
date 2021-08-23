@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_NEW (VFW. h)
-description: A \_ nova mensagem do MCIWNDM cria um novo arquivo para o dispositivo MCI atual. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndNew.
+title: MCIWNDM_NEW mensagem (Vfw.h)
+description: A mensagem MCIWNDM \_ NEW cria um novo arquivo para o dispositivo MCI atual. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndNew.
 ms.assetid: 18b2340d-8303-415a-867f-bd346034db2a
 keywords:
-- mensagem de MCIWNDM_NEW Windows multimídia
+- MCIWNDM_NEW mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119783076"
 ---
-# <a name="mciwndm_new-message"></a>MCIWNDM \_ nova mensagem
+# <a name="mciwndm_new-message"></a>Mensagem MCIWNDM \_ NEW
 
-A **\_ nova** mensagem do MCIWNDM cria um novo arquivo para o dispositivo MCI atual. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndNew**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew) .
+A **mensagem MCIWNDM \_ NEW** cria um novo arquivo para o dispositivo MCI atual. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndNew.**](/windows/desktop/api/Vfw/nf-vfw-mciwndnew)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = (LPARAM) (LPVOID) lp;
 
 <dl> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
 Ponteiro para um buffer que contém o nome do dispositivo MCI que usará o arquivo.
@@ -47,7 +47,7 @@ Ponteiro para um buffer que contém o nome do dispositivo MCI que usará o arqui
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

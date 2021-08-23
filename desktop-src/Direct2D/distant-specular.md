@@ -84,16 +84,16 @@ em que Light?, Light<sub>y</sub>e Light<sub>z</sub> são os valores de posição
 | D2D1 \_ MODO DE ESCALA DISTANTEESPECULAR VIZINHO MAIS \_ \_ \_ \_ PRÓXIMO     | Amostra o ponto único mais próximo e usa isso. Esse modo usa menos tempo de processamento, mas emita a imagem de qualidade mais baixa.                                                                           |
 | D2D1 \_ MODO DE ESCALASPECULAR \_ DISTANTE \_ \_ LINEAR                | Usa uma amostra de quatro pontos e interpolação linear. Esse modo saída de uma imagem de qualidade mais alta do que o vizinho mais próximo.                                                                                   |
 | D2D1 \_ MODO DE ESCALA DISTANTESPECULAR \_ \_ \_ CÚBICA                 | Usa um kernel cúbica de 16 exemplos para interpolação. Esse modo usa a maior parte do tempo de processamento, mas emita uma imagem de qualidade mais alta.                                                                        |
-| D2D1 \_ MODO DE ESCALA DISTANTESPECULAR \_ \_ \_ \_ \_ MULTI-AMOSTRA LINEAR | Usa quatro amostras lineares em um único pixel para suavização de multialias de borda. Esse modo é bom para reduzir horizontalmente por pequenas quantidades em imagens com poucos pixels.                                              |
-| \_Modo de \_ dimensionamento d2d1 DISTANTSPECULAR \_ \_ ANISOTROPIC           | Usa a filtragem de anisotropic para exemplificar um padrão de acordo com a forma transformada do bitmap.                                                                                                     |
-| \_Modo de escala d2d1 DISTANTSPECULAR de \_ \_ \_ alta \_ qualidade \_ cúbico  | Usa um kernel cúbico de tamanho variável de alta qualidade para executar uma imagem diminuir se downscaling estiver envolvido na matriz de transformação. Em seguida, usa o modo de interpolação cúbica para a saída final. |
+| D2D1 \_ MODO DE ESCALA DISTANTEESPECULAR \_ \_ \_ \_ \_ MULTI-AMOSTRA LINEAR | Usa quatro exemplos lineares em um único pixel para uma boa suavização de borda. Esse modo é bom para escalar para baixo em pequenas quantidades em imagens com poucos pixels.                                              |
+| D2D1 \_ MODO DE ESCALA DISTANTESPECULAR \_ \_ \_ ANISOCO           | Usa a filtragem anisométrico para amostrar um padrão de acordo com a forma transformada do bitmap.                                                                                                     |
+| D2D1 \_ DISTANTE MODO DE ESCALASPECULAR DE ALTA QUALIDADE \_ \_ \_ \_ \_ CÚBICA  | Usa um kernel cúbico de tamanho variável de alta qualidade para executar um pré-downscale da imagem se o downscaling estiver envolvido na matriz de transformação. Em seguida, usa o modo de interpolação cúbica para a saída final. |
 
 
 
  
 
 > [!Note]  
-> Se você não selecionar um modo, o efeito terá como padrão o \_ modo de escala d2d1 DISTANTSPECULAR \_ \_ \_ linear.
+> Se você não selecionar um modo, o efeito assume como padrão D2D1 MODO DE \_ ESCALASPECULAR \_ \_ \_ LINEAR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,10 +101,10 @@ em que Light?, Light<sub>y</sub>e Light<sub>z</sub> são os valores de posição
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
-| Cabeçalho                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

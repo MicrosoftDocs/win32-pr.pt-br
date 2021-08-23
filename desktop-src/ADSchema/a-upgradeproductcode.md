@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33734ec62665d301568f5f4152b39c5fbf4f94a6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 842aa4aa12f1e4b312f05f3700844bf7a742a6a299ff489482fbc1f4d17bfa7f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105771746"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835396"
 ---
 # <a name="upgrade-product-code-attribute"></a>Atualizar-atributo de código do produto
 

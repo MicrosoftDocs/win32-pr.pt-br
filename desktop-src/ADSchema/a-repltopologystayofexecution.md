@@ -1,11 +1,11 @@
 ---
-title: Atributo repl-Topology-continue-of-Execution
+title: Atributo Repl-Topology-Stay-Of-Execution
 description: O atraso entre a exclusão de um objeto de servidor e a remoção permanente da topologia de replicação.
 ms.assetid: 770231b0-4886-41c2-a3b5-ac488ac09669
 ms.tgt_platform: multiple
 keywords:
-- Replicação de repl-Topology-continue-of-Execution do esquema do AD
-- Esquema de AD do atributo replTopologyStayOfExecution
+- Esquema do AD do atributo Repl-Topology-Stay-Of-Execution
+- replTopologyStayOfExecution atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a51c74c477cce926dd18ea17b8df2b1adcf99df1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 05cb589fdf6ab99654b688df5710117a3fea4926de9fa7a96460c9644ff1ea5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837456"
 ---
-# <a name="repl-topology-stay-of-execution-attribute"></a>Atributo repl-Topology-continue-of-Execution
+# <a name="repl-topology-stay-of-execution-attribute"></a>Atributo Repl-Topology-Stay-Of-Execution
 
 O atraso entre a exclusão de um objeto de servidor e a remoção permanente da topologia de replicação.
 
@@ -29,13 +29,13 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Repl-topologia-permanecer de execução      |
-| LDAP-Display-Name | replTopologyStayOfExecution          |
+| CN                | Repl-Topology-Stay-of-Execution      |
+| Ldap-Display-Name | replTopologyStayOfExecution          |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | Sempre que um objeto de servidor é excluído. |
 | Attribute-Id      | 1.2.840.113556.1.4.677               |
-| System-ID-GUID    | 7bfdcb83-4807-11d1-a9c3-0000f80367c1 |
+| System-Id-Guid    | 7bfdcb83-4807-11d1-a9c3-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -44,7 +44,7 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ O atraso entre a exclusão de um objeto de servidor e a remoção permanente da 
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 

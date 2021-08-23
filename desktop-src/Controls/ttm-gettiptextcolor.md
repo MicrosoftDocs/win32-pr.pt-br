@@ -3,7 +3,7 @@ title: TTM_GETTIPTEXTCOLOR mensagem (Commctrl.h)
 description: Recupera a cor do texto em uma janela de dica de ferramenta.
 ms.assetid: dede991e-35e6-4bd0-9654-656c96135298
 keywords:
-- TTM_GETTIPTEXTCOLOR controles Windows mensagem
+- TTM_GETTIPTEXTCOLOR controles de Windows mensagem
 topic_type:
 - apiref
 api_name:

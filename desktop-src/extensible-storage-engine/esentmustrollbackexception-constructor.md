@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d87fc8be01a4623f799e6949180be7fd01da84e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca2bd1827eedf88af5a4bfa2cacc1806554adf84c8e21e57890e08f683ffe4af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836336"
 ---
 # <a name="esentmustrollbackexception-constructor"></a>Construtor EsentMustRollbackException
 
 Inicializa uma nova instância da classe EsentMustRollbackException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentMustRollbackException()
 
 [Classe EsentMustRollbackException](./esentmustrollbackexception-class.md)
 
-[Membros do EsentMustRollbackException](./esentmustrollbackexception-members.md)
+[Membros EsentMustRollbackException](./esentmustrollbackexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

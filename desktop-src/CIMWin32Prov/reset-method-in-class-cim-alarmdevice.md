@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 442cac28c094e60c978099c2337076fd8f2df980
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ac0cd1ded976ed4ba28ca89715d9ba72ea6c324b6eaaadc71eff8a38ca8f827e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119816676"
 ---
 # <a name="reset-method-of-the-cim_alarmdevice-class"></a>Método Reset da classe CIM \_ AlarmDevice
 
@@ -43,7 +43,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 

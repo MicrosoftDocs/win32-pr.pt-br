@@ -1,11 +1,11 @@
 ---
-title: atributo de origem do MS-DS-Claim
+title: Atributo ms-DS-Claim-Source
 description: Para um tipo de declaração, esse atributo indica a origem do tipo de declaração. Por exemplo, a origem pode ser certificado.
 ms.assetid: ec6d8565-e628-47a4-be84-c07b12cd9aec
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Claim-atributo de origem esquema do AD
-- Esquema de AD do atributo msDS-Claimname
+- Esquema do AD do atributo ms-DS-Claim-Source
+- Esquema do AD do atributo msDS-ClaimSource
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119804216"
 ---
-# <a name="ms-ds-claim-source-attribute"></a>atributo de origem do MS-DS-Claim
+# <a name="ms-ds-claim-source-attribute"></a>Atributo ms-DS-Claim-Source
 
 Para um tipo de declaração, esse atributo indica a origem do tipo de declaração. Por exemplo, a origem pode ser certificado.
 
@@ -30,13 +30,13 @@ Para um tipo de declaração, esse atributo indica a origem do tipo de declaraç
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ms-DS-Claim-Source                          |
-| LDAP-Display-Name | msDS-Claimname                            |
+| Ldap-Display-Name | msDS-ClaimSource                            |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2157                     |
-| System-ID-GUID    | fa32f2a6-f28b-47d0-bf91-663e8f910a72        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | fa32f2a6-f28b-47d0-bf91-663e8f910a72        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ Para um tipo de declaração, esse atributo indica a origem do tipo de declaraç
 | ID do link                | \-                                                      |
 | MAPI-Id                | \-                                                      |
 | System-Only            | Falso                                                   |
-| É de valor único       | Verdadeiro                                                    |
+| Tem valor único       | Verdadeiro                                                    |
 | É indexado             | Falso                                                   |
-| No catálogo global      | Falso                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                            |
+| No Catálogo Global      | Falso                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                            |
 | Range-Lower            | \-                                                      |
 | Range-Upper            | \-                                                      |
 | Search-Flags           | 0x00000000                                              |
 | System-Flags           | 0x00000010                                              |
-| Classes usadas em        | [**ms-DS-tipo de declaração**](c-msds-claimtype.md)<br/> |
+| Classes usadas em        | [**ms-DS-Claim-Type**](c-msds-claimtype.md)<br/> |
 
 
 

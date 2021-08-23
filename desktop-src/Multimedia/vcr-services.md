@@ -9,16 +9,16 @@ keywords:
 - Driver VISCA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d884c38d224182db7eef8db0f0cd80b14e3a08
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0397e56c589c357edc9e0be1999b51d358f8caced60117af5c20c7954a1edb49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804516"
 ---
 # <a name="vcr-services"></a>Serviços de VCR
 
-O Windows fornece serviços de VCR por meio de um driver de dispositivo que é baseado no comando MCI definido para VCRs. Esta seção descreve o driver VISCA (arquitetura de controle do sistema de vídeo) MCI e explica como usá-lo para controlar um videocassete.
+o Windows fornece serviços de VCR por meio de um driver de dispositivo que é baseado no comando MCI definido para VCRs. Esta seção descreve o driver VISCA (arquitetura de controle do sistema de vídeo) MCI e explica como usá-lo para controlar um videocassete.
 
 O tipo de dispositivo *VCR* controla VCRs. Para obter uma lista dos comandos MCI reconhecidos por dispositivos VCR, consulte [conjunto de comandos VCR](vcr-command-set.md).
 
@@ -100,7 +100,7 @@ O VCR se prepara para gravação ou reprodução ao procurar o *ponto*, que é a
 > [!Note]  
 > Quando você registra usando as posições "de" e "para", a posição "de" é incluída na edição e a posição "para" não é.
 
- 
+ 
 
 Para obter mais informações sobre a gravação, consulte [gravando](recording.md).
 
@@ -110,15 +110,15 @@ Ao editar, talvez você queira registrar segmentos de um videocassete para outro
 
 Ambos os VCRs devem usar o mesmo relógio para esse tipo de edição; o relógio ajuda a sincronizar os dois dispositivos. Você pode determinar se dois VCRs compartilham o mesmo relógio usando o comando [**status**](status.md) ([**\_ status do MCI**](mci-status.md)) com o sinalizador "ID do relógio" para consultar cada VCR. Se os números de identificação retornados pelo comando de **status** forem os mesmos, os dispositivos usarão o mesmo relógio. Como um recurso compartilhado, o relógio pode ser conectado a vários VCRs. O driver VISCA dá suporte a apenas um relógio compartilhado.
 
-Você também pode determinar a resolução do relógio usando o comando **status** "taxa de incremento de relógio". Esse comando retorna o número de incrementos com suporte do relógio por segundo. Por exemplo, se o relógio for atualizado a cada milissegundo, o comando retornará 1000 como a taxa de incremento do relógio. A vantagem de usar a taxa de incremento é que a taxa é expressa como um inteiro; caso contrário, o incremento seria um valor de ponto flutuante (precisão simples ou dupla). Como um inteiro, manipular a taxa de incremento é uma operação simples e não é suscetível a erros de arredondamento. Você pode redefinir o relógio usando o comando [**set**](set.md) ([**MCI \_ set**](mci-set.md)) com o sinalizador "Clock 0" (zero).
+Você também pode determinar a resolução do relógio usando o **comando status** "taxa de incremento do relógio". Esse comando retorna o número de incrementos que o relógio dá suporte por segundo. Por exemplo, se o relógio for atualizado a cada milissegundo, o comando retornará 1000 como a taxa de incremento do relógio. A vantagem de usar a taxa de incremento é que a taxa é expressa como um inteiro; caso contrário, o incremento seria um valor de ponto flutuante (de precisão simples ou dupla). Como um inteiro, manipular a taxa de incremento é uma operação simples e não está suscetível a erros de arredondamento. Você pode redefinir o relógio usando o [**comando set**](set.md) ([**MCI \_ SET**](mci-set.md)) com o sinalizador "clock 0" (zero).
 
-Ao emitir um comando [**Play**](play.md) ([**\_ reprodução MCI**](mci-play.md)), [**registro**](record.md) ([**\_ registro MCI**](mci-record.md)) ou [**busca**](seek.md) ([**MCI \_ Seek**](mci-seek.md)), você pode especificar quando o comando deve ser executado. As características do VCRs que está sendo usado determinam quando iniciar cada VCR. O tempo deve considerar a quantidade de cada dispositivo necessária e a quantidade de tempo necessária para concluir os comandos MCI usados para configurar a sessão de edição. Para fazer isso, recupere a hora do relógio e adicione um intervalo de espera de 5 a 10 segundos. (O intervalo de espera deve ser longo o suficiente para permitir que a preversão e os comandos MCI pendentes concluam a execução.)
+Ao emmissão de um comando [**play**](play.md) ([**MCI \_ PLAY**](mci-play.md)), [**record**](record.md) ([**MCI \_ RECORD**](mci-record.md)) ou [**seek**](seek.md) ([**MCI \_ SEEK**](mci-seek.md)), você pode especificar quando o comando deve ser executado. As características dos VCRs que estão sendo usados determinam quando iniciar cada VCR. O tempo deve levar em conta a quantidade de pré-roll que cada dispositivo requer e o tempo necessário para concluir os comandos MCI usados para configurar a sessão de edição. Para fazer isso, recupere a hora do relógio e adicione um intervalo de espera de 5 a 10 segundos. (O intervalo de espera deve ser longo o suficiente para permitir que o pré-roll e todos os comandos MCI pendentes terminem a execução.)
 
-Para garantir que o período de espera seja longo o suficiente, coloque o comando **gravar** por último no aplicativo e verifique o tempo imediatamente antes dele. Se o intervalo for muito curto, reinicie o comando **Play** . Como alternativa, você pode verificar o tempo imediatamente após o último comando do script para verificar se há tempo suficiente para enviar e concluir todos os comandos.
+Para garantir que o período de espera seja longo o suficiente, coloque o comando **de registro** por último em seu aplicativo e verifique a hora imediatamente antes dele. Se o intervalo for muito curto, reinicie o **comando play.** Como alternativa, você pode verificar a hora imediatamente após o último comando do script para verificar se há tempo suficiente para enviar e concluir todos os comandos.
 
- 
+ 
 
- 
+ 
 
 
 

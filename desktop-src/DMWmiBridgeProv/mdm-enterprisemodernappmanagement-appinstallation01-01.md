@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_EnterpriseModernAppManagement_AppInstallation01_01
-description: A \_ classe MDM EnterpriseModernAppManagement \_ AppInstallation01 \_ 01 é usada para instalar aplicativos da Windows Store ou de um local hospedado.
+description: a \_ classe MDM EnterpriseModernAppManagement \_ AppInstallation01 \_ 01 é usada para instalar aplicativos do repositório de Windows ou de um local hospedado.
 ms.assetid: fc4c4c82-6f43-41fc-863b-940c0517f28b
 keywords:
 - Classe MDM_EnterpriseModernAppManagement_AppInstallation01_01
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6cd3fc5478e73df5276fdc9d6a1d66c9649dd6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d29cde4408cac13471e98d0c42b36779f8b23c0101f6ba22f383d97e181893e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875336"
 ---
 # <a name="mdm_enterprisemodernappmanagement_appinstallation01_01-class"></a>\_Classe MDM EnterpriseModernAppManagement \_ AppInstallation01 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppInstallation01 \_ 01** é usada para instalar aplicativos da Windows Store ou de um local hospedado.
+a classe **MDM \_ EnterpriseModernAppManagement \_ AppInstallation01 \_ 01** é usada para instalar aplicativos do repositório de Windows ou de um local hospedado.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -63,7 +63,7 @@ A classe **MDM \_ EnterpriseModernAppManagement \_ AppInstallation01 \_ 01** tem
 | Método                                                                                                    | Descrição                                                                                                                                |
 |:----------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**HostedInstallMethod**](mdm-enterprisemodernappmanagement-appinstallation01-01-hostedinstallmethod.md) | Método para executar uma instalação de um pacote de aplicativo de um local hospedado (pode ser uma unidade local, uma UNC ou uma fonte de dados HTTPS).<br/> |
-| [**StoreInstallMethod**](mdm-enterprisemodernappmanagement-appinstallation01-01-storeinstallmethod.md)   | Método para executar uma instalação de um aplicativo e uma licença da Windows Store.<br/>                                                    |
+| [**StoreInstallMethod**](mdm-enterprisemodernappmanagement-appinstallation01-01-storeinstallmethod.md)   | método para executar uma instalação de um aplicativo e uma licença da Windows Store.<br/>                                                    |
 
 
 
@@ -157,7 +157,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

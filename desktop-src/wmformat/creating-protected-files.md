@@ -3,8 +3,8 @@ title: Criando arquivos protegidos
 description: Criando arquivos protegidos
 ms.assetid: 5237e797-72ec-402e-81ec-ab379747e464
 keywords:
-- SDK do Windows Media Format, criando arquivos protegidos
-- SDK do Windows Media Format, arquivos protegidos
+- Windows SDK do formato de mídia, criando arquivos protegidos
+- Windows SDK do formato de mídia, arquivos protegidos
 - ASF (Advanced Systems Format), criando arquivos protegidos
 - ASF (formato de sistemas avançados), criando arquivos protegidos
 - ASF (Advanced Systems Format), arquivos protegidos
@@ -17,12 +17,12 @@ keywords:
 - DRM (gerenciamento de direitos digitais), WMStubDRM. lib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 160a14d96da924bdb2a307bc804514a1ec3de083
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a5be729f04f67e1a2e4319bcc8d267c798942293c2df2ee97dcc6a559af612aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809466"
 ---
 # <a name="creating-protected-files"></a>Criando arquivos protegidos
 
@@ -36,7 +36,7 @@ Os tópicos a seguir descrevem em detalhes como proteger arquivos.
 > [!Note]  
 > O DRM não é compatível com a versão baseada em x64 deste SDK.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -60,9 +60,9 @@ Os tópicos a seguir descrevem em detalhes como proteger arquivos.
 [**Lendo arquivos protegidos**](reading-protected-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

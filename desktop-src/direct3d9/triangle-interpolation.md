@@ -4,16 +4,16 @@ ms.assetid: 6fa05e56-c4cd-4623-abe9-2b1c8bbc644b
 title: Interpolação de triângulo (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 405cbecd6123145d412a3e7f58f727bdf5b5a3e8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 28a411f53351ccd5d3407b358b03e705677e9bf5a96a57b162016afe09332bae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105791464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746256"
 ---
 # <a name="triangle-interpolation-direct3d-9"></a>Interpolação de triângulo (Direct3D 9)
 
-Durante a renderização, o pipeline interpola os dados de vértice em cada triângulo. Os dados de vértice podem ser uma grande variedade de dados e podem incluir (mas não se limitam a): cor difusa, cor especular, alfa difusa (opacidade de triângulo), alfanuméricos de especulação e um fator de neblina (tirado da especulação alfa para pipeline de vértice de função fixa e do registro de neblina para pipeline de vértice programável). Os dados de vértice são definidos pela [declaração de vértice (Direct3D 9)](vertex-declaration.md).
+Durante a renderização, o pipeline interpola os dados de vértice em cada triângulo. Os dados de vértice podem ser uma ampla variedade de dados e podem incluir (mas não se limitam a): cor difusa, cor especular, alfa difuso (opacidade de triângulo), alfa especular e um fator de cinza (retirado do alfa especular para o pipeline de vértice de função fixa e do registro de cinza para pipeline de vértice programável). Os dados de vértice são definidos pela Declaração [de Vértice (Direct3D 9)](vertex-declaration.md).
 
 Para alguns dados de vértice, a interpolação depende do modo de sombreamento atual, conforme mostrado na tabela a seguir.
 
@@ -32,13 +32,13 @@ As cores difusas e realces especulares são tratados de forma diferente, depende
 
 O componente alfa de uma cor é tratado como um valor interpolado separado porque drivers de dispositivo podem implementar transparência de duas maneiras diferentes: utilizando uma mesclagem de textura ou usando textura pontilhada.
 
-Use o membro ShadeCaps da estrutura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) para determinar a quais formas de interpolação o driver de dispositivo atual oferece suporte.
+Use o membro ShadeCaps da estrutura [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) para determinar quais formas de interpolação o driver de dispositivo atual dá suporte.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Coordenar sistemas e geometria](coordinate-systems-and-geometry.md)
+[Sistemas de coordenadas e geometria](coordinate-systems-and-geometry.md)
 </dt> </dl>
 
  

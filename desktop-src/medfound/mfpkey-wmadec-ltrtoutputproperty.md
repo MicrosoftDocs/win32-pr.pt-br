@@ -29,7 +29,7 @@ Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-p
 
 ## <a name="remarks"></a>Comentários
 
-Se essa propriedade tiver um valor de VARIANT FALSE e a saída for estéreo, o \_ decodificador de áudio usará uma dobra de canal simples para baixo. Se essa propriedade tiver um valor de VARIANT TRUE, o Lt-Rt decodificador de áudio executará uma dobra (matrizizada) para baixo em estéreo e, em seguida, qualquer decodificador Surround Dolby poderá ser usado para decodificar o surround matriz. \_ Por exemplo, o decodificador de áudio pode executar Lt-Rt dobra para baixo no conteúdo 5.1 ou 7.1.
+Se essa propriedade tiver um valor de VARIANT FALSE e a saída for estéreo, o \_ decodificador de áudio usará uma dobra de canal simples para baixo. Se essa propriedade tiver um valor de VARIANT TRUE, o Lt-Rt decodificador de áudio executará uma dobra (matrizizada) para baixo para estéreo e, em seguida, qualquer decodificador Surround Dolby poderá ser usado para decodificar o surround matriz. \_ Por exemplo, o decodificador de áudio pode executar Lt-Rt dobra para baixo no conteúdo 5.1 ou 7.1.
 
 Essa propriedade só tem suporte quando o decodificador está atuando como um objeto de mídia directX (DMO). Nenhuma dobra para baixo de qualquer tipo é suportada quando o decodificador está atuando como uma transformação Media Foundation (MFT).
 

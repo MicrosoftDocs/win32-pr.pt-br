@@ -1,7 +1,7 @@
 ---
-description: Método IRenderEngine::SetRange2 – Sem suporte.
+description: 'Método IRenderEngine:: SetInterestRange2-sem suporte.'
 ms.assetid: c5572927-905e-4420-9038-3f9573c5d0b0
-title: Método IRenderEngine::SetRange2
+title: 'Método IRenderEngine:: SetInterestRange2'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119791846"
 ---
-# <a name="irenderenginesetinterestrange2-method"></a>Método IRenderEngine::SetRange2
+# <a name="irenderenginesetinterestrange2-method"></a>Método IRenderEngine:: SetInterestRange2
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -60,17 +60,17 @@ Reservado.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -78,7 +78,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 <dl> <dt>
 
-[**IRenderEngine Interface**](irenderengine.md)
+[**Interface IRenderEngine**](irenderengine.md)
 </dt> </dl>
 
  

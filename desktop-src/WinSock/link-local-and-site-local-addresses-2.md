@@ -4,16 +4,16 @@ ms.assetid: d31882f6-b747-47c7-83cb-a9a03fe11cb8
 title: Link IPv6-local e endereços locais do site
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb80b8e201adf382b10dd31fe5607de903d6c588
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22220adb2c1b0338462f7ed87b3937a97c3d0b8a8b0aa2d9858d5c5efc8b4f54
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105814014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794776"
 ---
 # <a name="ipv6-link-local-and-site-local-addresses"></a>Link IPv6-local e endereços locais do site
 
-Os endereços IPv6 de link local e local são chamados de endereços no escopo. A API do Windows Sockets (Winsock) dá suporte ao membro da **\_ \_ ID de escopo sin6** na estrutura [**SOCKADDR \_ In6**](sockaddr-2.md) para uso com endereços com escopo. Para endereços de link local IPv6 (FE80::/10 prefix), o membro de **\_ \_ ID de escopo sin6** na estrutura **SOCKADDR \_ In6** é o número da interface. Para endereços locais de site IPv6 (FEC0::/10 prefix), o membro de **\_ \_ ID de escopo sin6** na estrutura **SOCKADDR \_ In6** é um identificador de site.
+Os endereços IPv6 de link local e local são chamados de endereços no escopo. a API de Windows sockets (Winsock) dá suporte ao membro de **\_ \_ id de escopo sin6** na estrutura [**\_ in6 sockaddr**](sockaddr-2.md) para uso com endereços com escopo. Para endereços de link local IPv6 (FE80::/10 prefix), o membro de **\_ \_ ID de escopo sin6** na estrutura **SOCKADDR \_ In6** é o número da interface. Para endereços locais de site IPv6 (FEC0::/10 prefix), o membro de **\_ \_ ID de escopo sin6** na estrutura **SOCKADDR \_ In6** é um identificador de site.
 
 Um exemplo de um endereço IPv6 de link local na interface \# 5 é o seguinte:
 
@@ -21,23 +21,23 @@ Um exemplo de um endereço IPv6 de link local na interface \# 5 é o seguinte:
 fe80::208:74ff:feda:625c%5
 ```
 
-O comando a seguir está disponível no Windows XP com Service Pack 1 (SP1) e posterior para consultar e configurar o IPv6 em um computador local:
+o comando a seguir está disponível no Windows XP com Service Pack 1 (SP1) e posterior para consultar e configurar o IPv6 em um computador local:
 
 -   [Netsh.exe](netsh-exe.md)
 
 As alterações de configuração feitas usando os comandos Netsh.exe são permanentes e não são perdidas quando o computador ou o protocolo IPv6 é reiniciado.
 
-Antes do Windows XP com Service Pack 1 (SP1), a configuração e o gerenciamento de IPv6 usavam várias ferramentas de linha de comando mais antigas (Net.exe, Ipv6.exe e Ipsec6.exe) para configurar e gerenciar o IPv6. Usando essas ferramentas mais antigas, as alterações de IPv6 não são permanentes e são perdidas quando o computador ou o protocolo IPv6 foi reiniciado. Essas ferramentas de linha de comando mais antigas só têm suporte no Windows XP.
+antes do Windows XP com Service Pack 1 (SP1), a configuração e o gerenciamento de IPv6 usaram várias ferramentas de linha de comando mais antigas (Net.exe, Ipv6.exe e Ipsec6.exe) para configurar e gerenciar o IPv6. Usando essas ferramentas mais antigas, as alterações de IPv6 não são permanentes e são perdidas quando o computador ou o protocolo IPv6 foi reiniciado. essas ferramentas de linha de comando mais antigas só têm suporte no Windows XP.
 
-No Windows XP com SP1, o comando a seguir exibirá a lista de interfaces IPv6 em um computador local, incluindo o índice da interface, o nome da interface e várias outras propriedades da interface.
+no Windows XP com SP1, o comando a seguir exibirá a lista de interfaces IPv6 em um computador local, incluindo o índice da interface, o nome da interface e várias outras propriedades da interface.
 
 **netsh interface ipv6 show interface**
 
-No Windows XP com SP1, o comando a seguir alterará o identificador de site associado a um índice de interface.
+no Windows XP com SP1, o comando a seguir alterará o identificador de site associado a um índice de interface.
 
 **netsh interface ipv6 set interface <InterfaceIndex or Name> SiteId = valor**
 
-No Windows XP, o comando mais antigo a seguir também alterará o identificador de site associado a um endereço de site local para 3.
+no Windows XP, o comando mais antigo a seguir também alterará o identificador de site associado a um endereço de site local para 3.
 
 **IPv6 RTU FEC0::/10 3**
 
@@ -72,7 +72,7 @@ Se você não tiver especificado o membro de **\_ \_ ID de escopo sin6** na estr
 
 Se o endereço de link local de destino for resolvido, essa interface será usada para enviar o pacote atual. Essa interface também é usada para todos os pacotes de escopo ambíguos subseqüentes que são enviados para o mesmo endereço de destino de link local.
 
-Se a descoberta de vizinhos falhar ao resolver o endereço de destino-local em todas as interfaces, o sistema tentará enviar o pacote na interface mais preferencial (a primeira interface tentada). A pilha de rede continua tentando resolver o endereço do link-local de destino na interface mais preferencial. Após um período de tempo após a falha da descoberta de vizinho em todas as interfaces, a pilha de rede reiniciará o processo novamente e tentará resolver o endereço do link-local de destino em todas as interfaces. Atualmente, esse intervalo de tempo quando a descoberta de vizinho é tentada novamente em todas as interfaces é de 60 segundos. No entanto, esse intervalo de tempo pode ser alterado em versões do Windows e não deve ser considerado por um aplicativo.
+Se a descoberta de vizinhos falhar ao resolver o endereço de destino-local em todas as interfaces, o sistema tentará enviar o pacote na interface mais preferencial (a primeira interface tentada). A pilha de rede continua tentando resolver o endereço do link-local de destino na interface mais preferencial. Após um período de tempo após a falha da descoberta de vizinho em todas as interfaces, a pilha de rede reiniciará o processo novamente e tentará resolver o endereço do link-local de destino em todas as interfaces. Atualmente, esse intervalo de tempo quando a descoberta de vizinho é tentada novamente em todas as interfaces é de 60 segundos. no entanto, esse intervalo de tempo pode ser alterado em versões do Windows e não deve ser considerado por um aplicativo.
 
 > [!Note]  
 > Se um aplicativo associar o mesmo endereço de vínculo local a uma interface diferente depois que a descoberta de vizinho tiver resolvido o endereço de vínculo local, isso não substituirá a interface pelo endereço de destino de link local retornado pela descoberta de vizinho.

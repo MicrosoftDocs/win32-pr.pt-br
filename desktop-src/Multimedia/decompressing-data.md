@@ -3,23 +3,23 @@ title: Descompactando dados
 description: Descompactando dados
 ms.assetid: 1faf0238-7bef-4363-9bbc-44737600c946
 keywords:
-- Gerenciador de compactação de vídeo (VCM), descompactando dados
-- VCM (Gerenciador de compactação de vídeo), descompactando dados
+- VCM (gerenciador de compactação de vídeo), descompactando dados
+- VCM (gerenciador de compactação de vídeo), descompactando dados
 - Macro ICDecompressBegin
 - Função ICDecompress
 - Macro ICDecompressEnd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03b44ea375bb1f2b5c41a361ca7f31387439b610
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a213a4d4762f782da817773aac6e8838155561ae47129dd998dad7a82ac5a4f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785426"
 ---
 # <a name="decompressing-data"></a>Descompactando dados
 
-O exemplo a seguir mostra como um aplicativo pode inicializar um descompactador usando a macro [**ICDecompressBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) , descompactar uma sequência de quadros usando a função [**ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) e encerrar a descompactação usando a macro [**ICDecompressEnd**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend) .
+O exemplo a seguir mostra como um aplicativo pode inicializar um descompactador usando a macro [**ICDecompressBegin,**](/windows/desktop/api/Vfw/nf-vfw-icdecompressbegin) descompactar uma sequência de quadros usando a [**função ICDecompress**](/windows/desktop/api/Vfw/nf-vfw-icdecompress) e encerrar a descompactação usando a macro [**ICDecompressEnd.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressend)
 
 
 ```C++
@@ -54,9 +54,9 @@ else
 
 
 
- 
+ 
 
- 
+ 
 
 
 

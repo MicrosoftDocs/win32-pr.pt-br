@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 580778135e840a69342ff34ffd8e415883317517
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb281265a9567db5da6252944fa1da1a6beb1bd4a0fb2a6a4d80ef1177455fc8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873946"
 ---
 # <a name="id2d1solidcolorbrushsetcolor-methods"></a>Métodos ID2D1SolidColorBrush:: setColor
 
@@ -37,7 +37,7 @@ Especifica a cor deste pincel de cor sólida.
 
 ## <a name="remarks"></a>Comentários
 
-Para ajudar a criar cores, o Direct2D fornece a classe [**colorf**](/windows/win32/api/d2d1helper/nl-d2d1helper-colorf) . Ele oferece vários métodos auxiliares para a criação de cores e fornece um conjunto ou cores predefinidas.
+para ajudar a criar cores, Direct2D fornece a classe [**ColorF**](/windows/win32/api/d2d1helper/nl-d2d1helper-colorf) . Ele oferece vários métodos auxiliares para a criação de cores e fornece um conjunto ou cores predefinidas.
 
 ## <a name="examples"></a>Exemplos
 

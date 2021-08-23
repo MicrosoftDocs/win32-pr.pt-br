@@ -3,7 +3,7 @@ title: Estrutura de MCI_VCR_SETTUNER_PARMS (VCR. h)
 description: A estrutura do MCI do \_ \_ setajuster de videocassetes \_ contém parâmetros para o \_ comando de setajuste MCI para gravadores de vídeo-fita.
 ms.assetid: 8254b4c0-80bb-44e4-9f51-1d7434d3b08f
 keywords:
-- Multimídia do Windows da estrutura de MCI_VCR_SETTUNER_PARMS
+- estrutura de MCI_VCR_SETTUNER_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 891ddf3b4b3dcb9532a2431901b0b2b9d84b0e52
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa6d297ae86ad50ee9c7bb19a1f98ef69c77d502f4ccd306394436d07de330d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784168"
 ---
 # <a name="mci_vcr_settuner_parms-structure"></a>\_Estrutura de \_ parâmetros de setajuster de VCR MCI \_
 

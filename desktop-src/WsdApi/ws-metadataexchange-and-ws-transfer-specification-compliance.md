@@ -4,12 +4,12 @@ ms.assetid: 2441beac-ee40-405a-8e98-8b8d65477911
 title: Conformidade de especificação de WS-MetadataExchange e WS-Transfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5e6ecad5224256f35b2157088ce091e8bd5751c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db78bec29d96b4ba3671f176349a56b891cd4d642762670fd16cf582da53208c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793966"
 ---
 # <a name="ws-metadataexchange-and-ws-transfer-specification-compliance"></a>Conformidade de especificação de WS-MetadataExchange e WS-Transfer
 

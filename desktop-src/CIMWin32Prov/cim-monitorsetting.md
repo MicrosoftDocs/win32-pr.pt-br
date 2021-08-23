@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM MonitorSetting associa a resolução do monitor ao monitor de área de trabalho ao qual se aplica.
+description: A classe CIM \_ MonitorSetting associa a resolução do monitor ao monitor da área de trabalho ao qual ele se aplica.
 ms.assetid: 4bf0b2d5-b901-4294-a33b-9c8a87785af0
 ms.tgt_platform: multiple
-title: Classe CIM_MonitorSetting
+title: CIM_MonitorSetting classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dc947f4bb484ec5392204747e583fbf80bbf88cf
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 084b8bf9b1ca175f723fe7e15beaf6b79e315b318982c1a0bd505b82b58fbd2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821026"
 ---
-# <a name="cim_monitorsetting-class"></a>\_Classe CIM MonitorSetting
+# <a name="cim_monitorsetting-class"></a>Classe CIM \_ MonitorSetting
 
-A classe **CIM \_ MonitorSetting** associa a resolução do monitor ao monitor de área de trabalho ao qual se aplica.
+A **classe CIM \_ MonitorSetting** associa a resolução do monitor ao monitor da área de trabalho ao qual ele se aplica.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -47,45 +47,45 @@ class CIM_MonitorSetting : CIM_ElementSetting
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ MonitorSetting** tem estes tipos de membros:
+A **classe \_ MONITORSetting cim** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ MonitorSetting** tem essas propriedades.
+A **classe \_ MONITORSetting cim** tem essas propriedades.
 
 <dl> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ DesktopMonitor**
+Tipo de dados: **Cim \_ DesktopMonitor**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("elemento")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Elemento")
 </dt> </dl>
 
-Um [**\_ DesktopMonitor CIM**](cim-desktopmonitor.md) que descreve o monitor da área de trabalho.
+Um [**Cim \_ DesktopMonitor que**](cim-desktopmonitor.md) descreve o monitor da área de trabalho.
 
 </dd> <dt>
 
 **Configuração**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ MonitorResolution**
+Tipo de dados: **Monitor \_ CIMResolution**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("configuração")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Configuração")
 </dt> </dl>
 
-Um [**\_ MonitorResolution CIM**](cim-monitorresolution.md) que descreve a resolução de monitor associada ao monitor de desktop.
+Um [**Monitor \_ CIMResolution que**](cim-monitorresolution.md) descreve a resolução do monitor associada ao monitor da área de trabalho.
 
 </dd> </dl>
 
@@ -93,7 +93,7 @@ Um [**\_ MonitorResolution CIM**](cim-monitorresolution.md) que descreve a resol
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -113,7 +113,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**Elemento \_ CIMSetting**](cim-elementsetting.md)
 </dt> </dl>
 
  

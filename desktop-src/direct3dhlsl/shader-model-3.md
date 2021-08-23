@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2d87c791694e91de135052b4172e3bd5f55577d7
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: 899284777f86c3a1e5d77da9a2f21ed9aa4b5368b540082cc92bd56b7fb780da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111827095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788636"
 ---
 # <a name="shader-model-3-hlsl-reference"></a>Modelo de sombreador 3 (referência HLSL)
 
@@ -36,7 +36,7 @@ Outros estados de renderização do modo de wrap foram adicionados para cobrir a
 
 Os tipos de registro de saída do sombreador de vértice foram recolhidos em doze registros (consulte [Registros de Saída](dx9-graphics-reference-asm-vs-registers-output.md)). Cada registro usado precisa ser declarado usando a instrução [dcl](dcl-usage---ps.md) e uma semântica (por exemplo, dcl \_ color0 o0.xyzw).
 
-O modelo de sombreador de vértice 3 \_ 0 (versus 3 0) expande os recursos do vs 2 0 com indexação de registro mais eficiente, um conjunto de registros de saída simplificados, a capacidade de amostra de uma textura em um sombreador de vértice e a capacidade de controlar a taxa na qual as entradas do sombreador são \_ \_ \_ \_ inicializadas.
+O modelo de sombreador de vértice \_ 3 0 (versus 3 0) expande os recursos do vs 2 0 com indexação de registro mais eficiente, um conjunto de registros de saída simplificados, a capacidade de amostra de uma textura em um sombreador de vértice e a capacidade de controlar a taxa na qual as entradas do sombreador são \_ \_ \_ \_ inicializadas.
 
 ### <a name="index-any-register"></a>Indexar qualquer registro
 
@@ -48,7 +48,7 @@ Você só tem permissão para indexar um intervalo contínuo de registros; ou se
 
 ### <a name="simplify-output-registers"></a>Simplificar registros de saída
 
-Todos os vários tipos de registros de saída foram recolhidos em doze registros de saída: 1 para posição, 2 para cor, 8 para textura e 1 para tamanho do ponto ou da bola. Esses registros interpolarão todos os dados que eles contêm para o sombreador de pixel. As declarações de registro de saída são necessárias e a semântica é atribuída a cada registro.
+Todos os vários tipos de registros de saída foram recolhidos em doze registros de saída: 1 para a posição, 2 para cor, 8 para textura e 1 para tamanho de ponto ou cinza. Esses registros interpolarão todos os dados que eles contêm para o sombreador de pixel. As declarações de registro de saída são necessárias e a semântica é atribuída a cada registro.
 
 Os registros podem ser divididos da seguinte forma:
 

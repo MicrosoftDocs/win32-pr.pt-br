@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15438d55c9540ecca873395cc329058bc0773399
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5199d9fd0f91b94ed6625a8759f3a5acd76a892460c44e3315911350f0ff59f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837356"
 ---
 # <a name="rid-previous-allocation-pool-attribute"></a>Atributo RID-Previous-Allocation-pool
 
@@ -57,8 +57,8 @@ O atributo **RID-Previous-Alloc-pool** contém o pool de RIDs (identificadores r
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -78,8 +78,8 @@ O atributo **RID-Previous-Alloc-pool** contém o pool de RIDs (identificadores r
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -99,8 +99,8 @@ O atributo **RID-Previous-Alloc-pool** contém o pool de RIDs (identificadores r
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -120,8 +120,8 @@ O atributo **RID-Previous-Alloc-pool** contém o pool de RIDs (identificadores r
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -141,8 +141,8 @@ O atributo **RID-Previous-Alloc-pool** contém o pool de RIDs (identificadores r
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -162,8 +162,8 @@ O atributo **RID-Previous-Alloc-pool** contém o pool de RIDs (identificadores r
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |

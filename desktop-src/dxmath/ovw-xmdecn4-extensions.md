@@ -1,19 +1,19 @@
 ---
-description: XMDECN4 descreve um vetor 4D para armazenar valores normalizados e assinados como componentes x-, y-, e z com sinal de 10 bits e um componente w-assinado de 2 bits.
+description: XMDECN4 descreve um vetor 4D para armazenar valores assinados e normalizados como componentes x,y e z- assinados de 10 bits e um componente w com assinatura de 2 bits.
 ms.assetid: 7144ae8f-8c9d-41e6-8f75-6d388c3f297c
 title: Extensões XMDECN4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b42df02919512c0ae881681d89493b262eeecc56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02296802a3e00d86205fb6a5e74479a7687558dbaa0bd4a8b7f96224704b6f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841644"
 ---
 # <a name="xmdecn4-extensions"></a>Extensões XMDECN4
 
-[**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4) descreve um vetor 4D para armazenar valores normalizados e assinados como componentes x-, y-, e z com sinal de 10 bits e um componente w-assinado de 2 bits.
+[**XMDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmdecn4) descreve um vetor 4D para armazenar valores assinados e normalizados como componentes x,y e z- assinados de 10 bits e um componente w com assinatura de 2 bits.
 
 > [!Note]  
 > Os recursos listados aqui só estão disponíveis ao desenvolver com C++.

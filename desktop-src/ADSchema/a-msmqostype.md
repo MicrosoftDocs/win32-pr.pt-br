@@ -121,15 +121,15 @@ O tipo de sistema operacional.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Verdadeiro                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Verdadeiro                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tipo de sistema operacional.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Verdadeiro                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Verdadeiro                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tipo de sistema operacional.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Verdadeiro                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Verdadeiro                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

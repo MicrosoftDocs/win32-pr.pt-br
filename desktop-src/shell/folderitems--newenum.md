@@ -1,6 +1,6 @@
 ---
-description: Cria e retorna um novo objeto FolderItems que é uma cópia desse objeto FolderItemss.
-title: FolderItems._NewEnum método (Shldisp.h)
+description: Cria e retorna um novo objeto FolderItems que é uma cópia desse objeto FolderItemsss.
+title: Método de FolderItems._NewEnum (shldisp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "119715356"
 ---
 # <a name="folderitems_newenum-method"></a>FolderItems. \_ Método NewEnum
 
-Cria e retorna um novo [**objeto FolderItems**](folderitems.md) que é uma cópia desse objeto FolderItemss.
+Cria e retorna um novo objeto [**FolderItems**](folderitems.md) que é uma cópia desse objeto FolderItemsss.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,9 +47,9 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>    | <dl> <dt>Shldisp.idl</dt> </dl>                         |
-| DLL<br/>    | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Shldisp. h</dt> </dl>                           |
+| INSERI<br/>    | <dl> <dt>Shldisp. idl</dt> </dl>                         |
+| DLL<br/>    | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
 
 
 

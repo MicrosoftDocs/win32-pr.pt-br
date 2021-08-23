@@ -1,7 +1,7 @@
 ---
-description: Representa os dados de status do recurso de descarregamento de porta.
+description: Representa os dados de status do recurso de descarregaamento de porta.
 ms.assetid: 1117b9e4-cff7-4c9e-bf5e-74499297e84e
-title: Classe Msvm_EthernetSwitchPortOffloadData
+title: Msvm_EthernetSwitchPortOffloadData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -45,11 +45,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119681476"
 ---
-# <a name="msvm_ethernetswitchportoffloaddata-class"></a>\_Classe Msvm EthernetSwitchPortOffloadData
+# <a name="msvm_ethernetswitchportoffloaddata-class"></a>Classe Msvm \_ EthernetSwitchPortOffloadData
 
-Representa os dados de status do recurso de descarregamento de porta.
+Representa os dados de status do recurso de descarregaamento de porta.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -87,13 +87,13 @@ class Msvm_EthernetSwitchPortOffloadData : Msvm_EthernetPortData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortOffloadData** tem estes tipos de membros:
+A **classe \_ EthernetSwitchPortOffloadData Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortOffloadData** tem essas propriedades.
+A **classe \_ EthernetSwitchPortOffloadData Msvm** tem essas propriedades.
 
 <dl> <dt>
 
@@ -106,7 +106,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "status do recurso de descarregamento de porta do comutador Ethernet".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Status do Recurso de Descarregamento de Porta de Comutamento Ethernet".
 
 </dd> <dt>
 
@@ -119,10 +119,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome da subclasse usada na criação desta instância de dados de porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e é sempre definida como "Msvm \_ EthernetSwitchPortOffloadData".
+O nome da subclasse usada na criação dessa instância de dados de porta. Essa propriedade é herdada [**de Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e sempre é definida como "Msvm \_ EthernetSwitchPortOffloadData".
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "representa os dados de status do recurso de descarregamento de porta.".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Representa os dados de status do recurso de descarregamento de porta".
 
 </dd> <dt>
 
@@ -148,14 +148,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e é sempre definida como "Msvm \_ EthernetSwitchPort".
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**de Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e sempre é definida como "Msvm \_ EthernetSwitchPort".
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -164,10 +164,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (64)
+Qualificadores: **Key**, **MaxLen** ( 64 )
 </dt> </dl>
 
-A ID do dispositivo da porta que abrange essa instância de dados de porta. Esta propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
+A ID do dispositivo da porta que tem como escopo essa instância de dados de porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "status do recurso de descarregamento de porta do comutador Ethernet".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Status do Recurso de Descarregamento de Porta de Comutamento Ethernet".
 
 </dd> <dt>
 
@@ -193,36 +193,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IovOffloadUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O uso de descarregamento de IOV (virtualização de e/s) atual.
+O uso atual da IOV (virtualização de E/S).
 
 </dd> <dt>
 
 **IovQueuePairUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -235,48 +235,48 @@ O número atual de pares de fila que estão sendo usados pela porta.
 **IovVfDataPathActive**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se o caminho de dados de IOV VF está ativo.
+Indica se o caminho de dados da VF IOV está ativo.
 
 </dd> <dt>
 
 **IovVfId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O identificador FV de IOV atual que é atribuído à porta. Isso será válido se **IovOffloadUsage** não for zero.
+O identificador de VF IOV atual atribuído à porta. Isso será válido se **IovOffloadUsage** não for zero.
 
 </dd> <dt>
 
 **IpsecCurrentOffloadSaCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número atual de Slots de descarga SA (Associação de segurança) em uso na porta.
+O número atual de slots de descarrega de SA (associação de segurança) em uso na porta.
 
 </dd> <dt>
 
@@ -289,10 +289,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Uma cadeia de caracteres que identifica exclusivamente essa instância de dados de porta dentro do escopo do comutador e da porta. Esta propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
+Uma cadeia de caracteres que identifica exclusivamente essa instância de dados de porta dentro do escopo da opção e da porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
@@ -305,14 +305,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e é sempre definida como "Msvm \_ VirtualEthernetSwitch".
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**de Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e sempre é definida como "Msvm \_ VirtualEthernetSwitch".
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -321,17 +321,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome do comutador virtual que abrange essa instância de dados de porta. Esta propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
+O nome do com switch virtual que tem como escopo essa instância de dados de porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
 **VmmqEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -340,10 +340,10 @@ Tipo de acesso: Somente leitura
 Qualificadores: **WmiDataId** (9), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica se VMMQ está ativo.
+Indica se o VMMQ está ativo.
 
 > [!Note]  
-> essa propriedade foi adicionada em Windows 10, versão 1703.
+> Essa propriedade foi adicionada na Windows 10, versão 1703.
 
  
 
@@ -417,7 +417,7 @@ Qualificadores: **WmiDataId** (8), **InterfaceVersion** (2), **InterfaceRevision
 Indica se o vRSS está ativo.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> Essa propriedade foi adicionada na Windows 10, versão 1703.
 
  
 

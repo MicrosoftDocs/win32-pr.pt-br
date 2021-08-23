@@ -1,11 +1,11 @@
 ---
-title: Atributo DNS-Secure-secundários
-description: O atributo DNS-Secure-secundários não é usado no momento.
+title: Atributo Dns-Secure-Secondaries
+description: O atributo Dns-Secure-Secondaries não é usado no momento.
 ms.assetid: ba5110f1-e451-4f85-897e-e4223649dc10
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo DNS-Secure-secundários
-- Esquema de AD do atributo dnsSecureSecondaries
+- Esquema do AD do atributo DNS-Secure-Secondaries
+- Atributo dnsSecureSecondaries Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4d6d45c642ec9045d5eb8593492e385245bc635
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f72ca21992256df6b2fbe92b34400b9e2b6e368101fc158ea513381ed0445acf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804886"
 ---
-# <a name="dns-secure-secondaries-attribute"></a>Atributo DNS-Secure-secundários
+# <a name="dns-secure-secondaries-attribute"></a>Atributo Dns-Secure-Secondaries
 
-O atributo **DNS-Secure-secundários** não é usado no momento.
+O **atributo Dns-Secure-Secondaries** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | DNS-seguros-secundários               |
-| LDAP-Display-Name | dnsSecureSecondaries                 |
+| CN                | Dns-Secure-Secondaries               |
+| Ldap-Display-Name | dnsSecureSecondaries                 |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.380               |
-| System-ID-GUID    | e0fa1e67-9b45-11d0-afdd-00c04fd930c9 |
+| System-Id-Guid    | e0fa1e67-9b45-11d0-afdd-00c04fd930c9 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,10 +58,10 @@ O atributo **DNS-Secure-secundários** não é usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -79,10 +79,10 @@ O atributo **DNS-Secure-secundários** não é usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -100,10 +100,10 @@ O atributo **DNS-Secure-secundários** não é usado no momento.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | Falso                                    |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |

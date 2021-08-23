@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionRotateTransform3D SetCenterZ (DCOMP. h)
+title: Métodos IDCompositionRotateTransform3D SetCenterZ (Dcomp.h)
 description: Altera ou anima o valor da propriedade CenterZ de uma transformação de rotação 3D. A propriedade CenterZ especifica a coordenada z do ponto sobre o qual a rotação é executada. O valor padrão é zero.
 ms.assetid: 7FF293B6-8FAE-4277-8C07-EBD4E819E2A0
 keywords:
-- Métodos SetCenterZ DirectComposition
+- DirectComposition dos métodos SetCenterZ
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 4fd9fd29dc3baa5d5999ba71ef1801f79b9ca50f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4164f748cfbf1a327a02fe70d6f476ae1a42b08dd45ed5c67634a3e05daeaa84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844346"
 ---
-# <a name="idcompositionrotatetransform3dsetcenterz-methods"></a>Métodos IDCompositionRotateTransform3D:: SetCenterZ
+# <a name="idcompositionrotatetransform3dsetcenterz-methods"></a>Métodos IDCompositionRotateTransform3D::SetCenterZ
 
 Altera ou anima o valor da propriedade CenterZ de uma transformação de rotação 3D. A propriedade CenterZ especifica a coordenada z do ponto sobre o qual a rotação é executada. O valor padrão é zero.
 
@@ -29,8 +29,8 @@ Altera ou anima o valor da propriedade CenterZ de uma transformação de rotaç�
 
 | Método                                                                                                           | Descrição                                            |
 |:-----------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**SetCenterZ (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterz(float))                                     | Altera o valor da propriedade CenterZ.<br/>  |
-| [**SetCenterZ (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterz(idcompositionanimation)) | Anima o valor da propriedade CenterZ.<br/> |
+| [**SetCenterZ(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterz(float))                                     | Altera o valor da propriedade CenterZ.<br/>  |
+| [**SetCenterZ(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setcenterz(idcompositionanimation)) | Anima o valor da propriedade CenterZ.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Altera ou anima o valor da propriedade CenterZ de uma transformação de rotaç�
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2012 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 
