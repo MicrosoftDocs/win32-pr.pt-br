@@ -1,5 +1,5 @@
 ---
-description: Um sombreador que é usado para implementar primitivos de interseção personalizados para raios interseccionando um volume limitado associado (caixa delimitadora).
+description: Um sombreador usado para implementar primitivos de interseção personalizados para raios intersecção de um volume delimitador associado (caixa delimitador).
 ms.assetid: ''
 title: Sombreador de interseção
 ms.localizationpriority: low
@@ -12,20 +12,20 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: f20d9ceb90b716ca5e5c04fb796a8b20f535825d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d7f9f81fdedae0fc6f6aa0448e6771c331af9c0d8924ab0f091d281565e4cfa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105786308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850876"
 ---
 # <a name="intersection-shader"></a>Sombreador de interseção
 
-Um sombreador que é usado para implementar primitivos de interseção personalizados para raios interseccionando um volume limitado associado (caixa delimitadora). 
+Um sombreador usado para implementar primitivos de interseção personalizados para raios intersecção de um volume delimitador associado (caixa delimitador). 
 
-O sombreador de interseção não tem acesso à carga Ray, mas define os atributos de interseção para cada um deles através de uma chamada para [**ReportHit**](reporthit-function.md).  O tratamento de **ReportHit** pode parar o sombreador de interseção cedo, se o **sinalizador Ray Flag ray \_ \_ aceitar \_ primeiro \_ HIT_ \AND \_ \END \_ Search** estiver definido ou [**AcceptHitAndEndSearch**](accepthitandendsearch-function.md) for chamado de um sombreador any.  Caso contrário, retornará true se o pressionamento for aceito ou false se o pressionamento for rejeitado.  Isso significa que um sombreador qualquer clique, se presente, deve ser executado antes que o controle retorne condicionalmente para o sombreador de interseção.
+O sombreador de interseção não tem acesso à carga de raio, mas define os atributos de interseção para cada ocorrência por meio de uma chamada para [**ReportHit**](reporthit-function.md).  A manipulação do **ReportHit** poderá interromper o sombreador de interseção no início, se o sinalizador de raio **RAY FLAG ACCEPT FIRST \_ \_ \_ \_ HIT_\AND \_ \END \_ SEARCH** estiver definido ou [**AcceptHitAndEndSearch**](accepthitandendsearch-function.md) for chamado de qualquer sombreador de ocorrência.  Caso contrário, ele retornará true se o hit tiver sido aceito ou false se o hit tiver sido rejeitado.  Isso significa que qualquer sombreador de acerto, se presente, deve ser executado antes que o controle retorne condicionalmente ao sombreador de interseção.
 
-## <a name="shader-type-attribute"></a>Atributo de tipo de sombreador
+## <a name="shader-type-attribute"></a>Atributo Tipo de Sombreador
 
 
 ```

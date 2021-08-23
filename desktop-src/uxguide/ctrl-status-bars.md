@@ -4,17 +4,17 @@ description: Uma barra de status é uma área na parte inferior de uma janela pr
 ms.assetid: 09dc03d9-d730-4f03-86a8-7b39d9a55369
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 3458b301c10cb4b9d6ca3a26a71b59e1011ec5a9
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: fa76563adbd3810b48339cc49014441512e3d76a0ac7484ff632f64f635b4cf6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119934143"
 ---
 # <a name="status-bars-design-basics"></a>Barras de status (noções básicas de design)
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> Este guia de design foi criado para Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
 
 Uma barra de status é uma área na parte inferior de uma janela primária que exibe informações sobre o estado da janela atual (como o que está sendo exibido e como), tarefas em segundo plano (como impressão, verificação e formatação) ou outras informações contextuais (como seleção e estado do teclado).
 
@@ -43,7 +43,7 @@ Para decidir, considere estas perguntas:
 
     ![captura de tela da barra de status "erro de certificado" vermelha ](images/ctrl-status-bars-image2.png)
 
-    Uma barra de endereços vermelhos no Windows Internet Explorer.
+    Uma barra de endereços vermelhos Windows Internet Explorer.
 
 -   **O programa destina-se principalmente a usuários iniciantes?** Em geral, os usuários não estão cientes das barras de status, portanto, remente o uso de barras de status nesse caso.
 
@@ -119,7 +119,7 @@ As barras de status têm vários padrões de uso:
 
 -   Não altere o status com muita frequência. Os ícones da barra de status não devem parecer barulhentos, instável ou exigir atenção. O olho é sensível a alterações no campo periférico da visão, portanto, as alterações de status precisam ser sutis.
 -   Para ícones que fornecem informações de status importantes, prefira rótulos in-place.
--   Ícones de barra de status sem rótulo devem ter dicas de ferramenta.
+-   Os ícones da barra de status sem rótulo devem ter dicas de ferramenta.
 
 Para obter mais informações, consulte [ícones](vis-icons.md).
 
@@ -131,7 +131,7 @@ Para obter mais informações, consulte [ícones](vis-icons.md).
     -   Não dê suporte ao clique com o botão direito do mouse ou clique duas vezes em. Os usuários não esperam tais interações em uma barra de status, portanto, não são prováveis de tentar.
 -   Exibir dicas de ferramentas ao focalizar.
 
-## <a name="text"></a>Text
+## <a name="text"></a>Texto
 
 -   Em geral, use rótulos concisos. Recorte qualquer texto que possa ser eliminado.
 -   Prefira fragmentos de sentença, sem pontuação final. Use frases completas (com pontuação final) somente quando os fragmentos de frase não forem significativamente menores.

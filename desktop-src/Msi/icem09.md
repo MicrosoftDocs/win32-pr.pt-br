@@ -4,12 +4,12 @@ ms.assetid: 747ae5ee-adc1-4aa7-8239-2379f76bfd0f
 title: ICEM09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee4b4d2d52c35d6dd3670daff5150a785e19d0b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e4d2af38903d2e704d49b48f932818d8dfaeeb1e12588c007d4af05c297642c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894486"
 ---
 # <a name="icem09"></a>ICEM09
 
@@ -31,7 +31,7 @@ directory 'ProgramFilesFolder'. It is recommended that merge modules alias
 all such directories to unique names.
 ```
 
-Renomeie o diretório do módulo de mesclagem para que ele não corresponda a uma propriedade Windows Installer e, portanto, seja exclusivo. Em seguida, defina uma propriedade com o mesmo nome para o valor do diretório Windows Installer. Quando ocorre a resolução de diretório, o diretório tem uma propriedade de mesmo nome, portanto, o local de instalação do diretório é o valor da propriedade. Os arquivos são movidos do local de origem distinto para o mesmo local de destino. Esse processo deve remover completamente os conflitos de mesclagem.
+renomeie o diretório do módulo de mesclagem para que ele não corresponda a uma propriedade Windows Installer e, portanto, seja exclusivo. em seguida, defina uma propriedade com o mesmo nome para o valor do diretório Windows Installer. Quando ocorre a resolução de diretório, o diretório tem uma propriedade de mesmo nome, portanto, o local de instalação do diretório é o valor da propriedade. Os arquivos são movidos do local de origem distinto para o mesmo local de destino. Esse processo deve remover completamente os conflitos de mesclagem.
 
 ``` syntax
 Warning: The 'ModuleInstallExecuteSequence' table contains a type 51 action 
@@ -100,7 +100,7 @@ Para corrigir esse aviso, nomeie a ação da mesma forma que o diretório de des
 
 
 
-| Ação                       | Sequência | Baseaction | After (após) | Condição |
+| Ação                       | Sequência | Baseaction | Depois | Condição |
 |------------------------------|----------|------------|-------|-----------|
 | StartMenuFolder.<GUID> | 100      |            |       |           |
 

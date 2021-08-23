@@ -6,17 +6,17 @@ keywords:
 - tipos de dados MIDL, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91266083661b7614616c232f130f972ecd68d8cb
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bf01be6a046822cda59d75ff7763bcbd027630ae9e117779e00293205a1ceb79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104161939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869616"
 ---
 # <a name="midl-structures"></a>Estruturas MIDL
 
 A semântica C normal se aplica aos campos de tipos base. Os campos de tipos mais complexos, como ponteiros, matrizes e outros tipos construídos, podem ser modificados por [**\_ atributos**](/windows/desktop/Rpc/field-attributes)de tipo ou campo. Para obter mais informações, consulte [**struct**](struct.md).
 
- 
+ 
 
- 
+ 

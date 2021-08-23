@@ -35,8 +35,8 @@ ms.locfileid: "119723285"
 
 Inicializa uma nova instância da classe EsentLogCorruptedException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogCorruptedException()
 
 [Classe EsentLogCorruptedException](./esentlogcorruptedexception-class.md)
 
-[Membros EsentLogCorruptedException](./esentlogcorruptedexception-members.md)
+[Membros do EsentLogCorruptedException](./esentlogcorruptedexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

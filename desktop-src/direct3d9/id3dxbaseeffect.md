@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e72fabf7db8341821885afb160fa73cb0fc9f395
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8525a8139cd769a59886576f8ec32c7dab333a2903ffdb0fba1abc8ffbe27d8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848546"
 ---
 # <a name="id3dxbaseeffect-interface"></a>Interface ID3DXBaseEffect
 
@@ -82,16 +82,16 @@ A interface **ID3DXBaseEffect** tem esses métodos.
 | [**SetFloatArray**](id3dxbaseeffect--setfloatarray.md)                                   | Define uma matriz de valores de ponto flutuante.<br/>                                                                                                                                                                                |
 | [**SetInt**](id3dxbaseeffect--setint.md)                                                 | Define um número inteiro.<br/>                                                                                                                                                                                                       |
 | [**SetIntArray**](id3dxbaseeffect--setintarray.md)                                       | Define uma matriz de inteiros.<br/>                                                                                                                                                                                             |
-| [**Setmatrix**](id3dxbaseeffect--setmatrix.md)                                           | Define uma matriz não transposeda.<br/>                                                                                                                                                                                          |
-| [**SetMatrixArray**](id3dxbaseeffect--setmatrixarray.md)                                 | Define uma matriz de matrizes nontransposed.<br/>                                                                                                                                                                               |
-| [**SetMatrixPointerArray**](id3dxbaseeffect--setmatrixpointerarray.md)                   | Define uma matriz de ponteiros para matrizes nontransposed.<br/>                                                                                                                                                                   |
-| [**SetMatrixTranspose**](id3dxbaseeffect--setmatrixtranspose.md)                         | Define uma matriz transposeda.<br/>                                                                                                                                                                                              |
+| [**Setmatrix**](id3dxbaseeffect--setmatrix.md)                                           | Define uma matriz não transposta.<br/>                                                                                                                                                                                          |
+| [**SetMatrixArray**](id3dxbaseeffect--setmatrixarray.md)                                 | Define uma matriz de matrizes não transpostas.<br/>                                                                                                                                                                               |
+| [**SetMatrixPointerArray**](id3dxbaseeffect--setmatrixpointerarray.md)                   | Define uma matriz de ponteiros para matrizes não transpostas.<br/>                                                                                                                                                                   |
+| [**SetMatrixTranspose**](id3dxbaseeffect--setmatrixtranspose.md)                         | Define uma matriz transposta.<br/>                                                                                                                                                                                              |
 | [**SetMatrixTransposeArray**](id3dxbaseeffect--setmatrixtransposearray.md)               | Define uma matriz de matrizes transpostas.<br/>                                                                                                                                                                                  |
 | [**SetMatrixTransposePointerArray**](id3dxbaseeffect--setmatrixtransposepointerarray.md) | Define uma matriz de ponteiros para matrizes transpostas.<br/>                                                                                                                                                                      |
-| [**SetString**](id3dxbaseeffect--setstring.md)                                           | Define uma cadeia de caracteres.<br/>                                                                                                                                                                                                         |
-| [**SetTexture**](id3dxbaseeffect--settexture.md)                                         | Define uma textura.<br/>                                                                                                                                                                                                        |
-| [**SetValue**](id3dxbaseeffect--setvalue.md)                                             | Defina o valor de um parâmetro ou anotação arbitrária, incluindo tipos simples, structs, matrizes, cadeias de caracteres, sombreadores e texturas. <br/>                                                                                        |
-| [**Setvector**](id3dxbaseeffect--setvector.md)                                           | Define um vetor.<br/>                                                                                                                                                                                                         |
+| [**Setstring**](id3dxbaseeffect--setstring.md)                                           | Define uma cadeia de caracteres.<br/>                                                                                                                                                                                                         |
+| [**Settexture**](id3dxbaseeffect--settexture.md)                                         | Define uma textura.<br/>                                                                                                                                                                                                        |
+| [**SetValue**](id3dxbaseeffect--setvalue.md)                                             | Definir o valor de um parâmetro arbitrário ou anotação, incluindo tipos simples, structs, matrizes, cadeias de caracteres, sombreadores e texturas. <br/>                                                                                        |
+| [**SetVector**](id3dxbaseeffect--setvector.md)                                           | Define um vetor.<br/>                                                                                                                                                                                                         |
 | [**SetVectorArray**](id3dxbaseeffect--setvectorarray.md)                                 | Define uma matriz de vetores.<br/>                                                                                                                                                                                              |
 
 
@@ -117,8 +117,8 @@ typedef interface ID3DXBaseEffect *LPD3DXBASEEFFECT;
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

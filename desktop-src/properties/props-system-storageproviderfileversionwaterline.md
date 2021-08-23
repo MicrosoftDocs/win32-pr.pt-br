@@ -1,19 +1,19 @@
 ---
-description: A irrigação da versão do arquivo computado do provedor de armazenamento para este arquivo. Esse valor é usado para detectar se um arquivo foi alterado.
+description: A linha d'água da versão do arquivo computada do provedor de armazenamento para esse arquivo. Esse valor é usado para detectar se um arquivo foi alterado.
 ms.assetid: 1b253fc9-ee0e-455a-9034-ead5202c6fff
-title: System. StorageProviderFileVersionWaterline
+title: System.StorageProviderFileVersionWaterline
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6589eaac31023b66de33bc77c11a3dbafff42416
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7068eb440a6f3d8389f1b3482f9519a7b60d22d958e27e53e76b91abdd1a9721
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938106"
 ---
-# <a name="systemstorageproviderfileversionwaterline"></a>System. StorageProviderFileVersionWaterline
+# <a name="systemstorageproviderfileversionwaterline"></a>System.StorageProviderFileVersionWaterline
 
-A irrigação da versão do arquivo computado do provedor de armazenamento para este arquivo. Esse valor é usado para detectar se um arquivo foi alterado.
+A linha d'água da versão do arquivo computada do provedor de armazenamento para esse arquivo. Esse valor é usado para detectar se um arquivo foi alterado.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

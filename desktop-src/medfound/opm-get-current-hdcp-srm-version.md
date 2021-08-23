@@ -1,27 +1,27 @@
 ---
-description: Retorna o número de versão da mensagem de renovação do sistema (SRM) usada atualmente pela saída de vídeo.
+description: Retorna o número de versão da SRM (mensagem de renovação do sistema) usada atualmente pela saída de vídeo.
 ms.assetid: 65d4b98b-369f-4863-a28c-f9e3b4c2b55d
-title: OPM_GET_CURRENT_HDCP_SRM_VERSION (Opmapi. h)
+title: OPM_GET_CURRENT_HDCP_SRM_VERSION (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e05ad53ae58e2141c63179c84a90f90cea86fb4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee36516510d04fec067bbc692387e2e36b9da083db1a6daae0f51948a992cc83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887486"
 ---
-# <a name="opm_get_current_hdcp_srm_version"></a>OPM \_ obter \_ versão atual do \_ SRM de HDCP \_ \_
+# <a name="opm_get_current_hdcp_srm_version"></a>OBTER \_ A \_ VERSÃO ATUAL DO \_ \_ HDCP SRM \_ DO OPM
 
-Retorna o número de versão da mensagem de renovação do sistema (SRM) usada atualmente pela saída de vídeo.
+Retorna o número de versão da SRM (mensagem de renovação do sistema) usada atualmente pela saída de vídeo.
 
 
 
 | Requisito | Valor |
 |--------------|-----------------------------------------------------------------------------|
-| GUID de solicitação | OPM \_ obter \_ versão atual do \_ SRM de HDCP \_ \_                                       |
+| GUID de solicitação | OBTER \_ A \_ VERSÃO ATUAL DO \_ \_ HDCP SRM \_ DO OPM                                       |
 | Dados de entrada   | Nenhum                                                                        |
-| Retornar dados  | Uma estrutura de [**\_ \_ informações de OPM padrão**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) |
+| Retornar dados  | Uma [**estrutura de INFORMAÇÕES PADRÃO \_ \_ do OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) |
 
 
 
@@ -29,18 +29,18 @@ Retorna o número de versão da mensagem de renovação do sistema (SRM) usada a
 
 ## <a name="remarks"></a>Comentários
 
-Se essa consulta for realizada com sucesso, o membro **ulInformation** da estrutura de [**\_ \_ informações padrão OPM**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) contém o número de versão do SRM, no formato little-endian.
+Se essa consulta for bem-sucedida, o membro **ulInformation** da estrutura [**OPM \_ STANDARD \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) conterá o número de versão srm, no formato little-endian.
 
-SRMs são usados para atualizar a lista de dispositivos de High-Bandwidth digital Proteção de Conteúdo (HDCP) revogados. SRMs são entregues com o conteúdo de vídeo. Para definir o SRM, envie o comando [**OPM \_ set \_ HDCP \_ SRM**](opm-set-hdcp-srm.md) .
+OS SRMs são usados para atualizar a lista de dispositivos High-Bandwidth HDCP (Proteção de Conteúdo Digital). OS SRMs são entregues com o conteúdo do vídeo. Para definir o SRM, envie o comando [**OPM \_ SET \_ HDCP \_ SRM.**](opm-set-hdcp-srm.md)
 
-Essa consulta pode fazer com que o método [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) retorne qualquer um dos códigos de erro a seguir.
+Essa consulta pode fazer com que [**o método IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) retorne qualquer um dos códigos de erro a seguir.
 
 
 
 | Código de retorno                                            | Descrição                             |
 |--------------------------------------------------------|-----------------------------------------|
-| gráfico de erros \_ \_ OPM de HDCP do \_ \_ SRM \_ nunca \_ definido            | O aplicativo não definiu um SRM.     |
-| ERRO \_ gráficos \_ de \_ saída \_ OPM \_ não \_ dá suporte a \_ HDCP | A saída de vídeo não oferece suporte a HDCP. |
+| GRÁFICOS \_ DE \_ ERRO OPM \_ HDCP \_ SRM NUNCA \_ \_ DEFINIDO            | O aplicativo não definiu um SRM.     |
+| GRÁFICOS \_ DE ERRO A SAÍDA DO \_ OPM NÃO DÁ \_ SUPORTE AO \_ \_ \_ \_ HDCP | A saída de vídeo não dá suporte ao HDCP. |
 
 
 
@@ -52,9 +52,9 @@ Essa consulta pode fazer com que o método [**IOPMVideoOutput:: GetInformation**
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
@@ -62,10 +62,10 @@ Essa consulta pode fazer com que o método [**IOPMVideoOutput:: GetInformation**
 
 <dl> <dt>
 
-[**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation)
+[**IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation)
 </dt> <dt>
 
-[Solicitações de status OPM](opm-status-requests.md)
+[Solicitações de status do OPM](opm-status-requests.md)
 </dt> </dl>
 
  

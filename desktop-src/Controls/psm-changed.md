@@ -3,7 +3,7 @@ title: Mensagem de PSM_CHANGED (Prsht. h)
 description: Informa uma folha de propriedades de que as informações em uma página foram alteradas. Você pode enviar essa mensagem explicitamente ou usando a macro PropSheet \_ Changed.
 ms.assetid: b092969f-31dc-4e3c-9100-d15f1bdd5aa5
 keywords:
-- Controles de PSM_CHANGED de mensagens do Windows
+- controles de Windows de mensagem de PSM_CHANGED
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57f931db5e25f816f7ea164ca5871a4e3e7757a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2002801d21e4e89a6ccf762b9c9932671b210217a950f5494fb736feda35d32e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105752942"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826016"
 ---
 # <a name="psm_changed-message"></a>Mensagem de alteração de PSM \_
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -62,9 +62,9 @@ A folha de propriedades habilitará o botão **aplicar** .
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

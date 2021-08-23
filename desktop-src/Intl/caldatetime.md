@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 5e3f0099a8e1dd7794b960af3d753085f2a32eaa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 700e11f27b673d9ff706483cc4abcf2f06cd7d8bb779ef8eaf9b51a6d81b4068
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822826"
 ---
 # <a name="caldatetime-structure"></a>Estrutura CALDATETIME
 
@@ -54,31 +54,31 @@ O [identificador de calendário](calendar-identifiers.md) para o instante no tem
 
 </dd> <dt>
 
-**Dourado**
+**Era**
 </dt> <dd>
 
-As informações de era para o instante em tempo.
+As informações de era para o instantâneo no tempo.
 
 </dd> <dt>
 
-**Year**
+**Ano**
 </dt> <dd>
 
-O ano para o instante no tempo.
+O ano para o instantâneo no tempo.
 
 </dd> <dt>
 
 **Mês**
 </dt> <dd>
 
-O mês para o instante no tempo.
+O mês do instantâneo no tempo.
 
 </dd> <dt>
 
 **Day**
 </dt> <dd>
 
-O dia para o instante no tempo.
+O dia do instante no tempo.
 
 </dd> <dt>
 
@@ -92,25 +92,25 @@ O dia da semana para o instante no tempo.
 **Hora**
 </dt> <dd>
 
-A hora para o instante no tempo.
+A hora do instante no tempo.
 
 </dd> <dt>
 
-**Demorar**
+**Minuto**
 </dt> <dd>
 
 O minuto para o instante no tempo.
 
 </dd> <dt>
 
-**Microssegundo**
+**Segundo**
 </dt> <dd>
 
-O segundo para o instante no tempo.
+O segundo para o instantâneo no tempo.
 
 </dd> <dt>
 
-**Traços**
+**Carrapato**
 </dt> <dd>
 
 O tique para o instante no tempo.
@@ -123,8 +123,8 @@ O tique para o instante no tempo.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -132,7 +132,7 @@ O tique para o instante no tempo.
 
 <dl> <dt>
 
-[Estruturas de suporte ao idioma nacional](national-language-support-structures.md)
+[Estruturas de suporte a idiomas nacionais](national-language-support-structures.md)
 </dt> </dl>
 
  

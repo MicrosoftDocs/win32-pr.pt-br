@@ -1,7 +1,7 @@
 ---
-description: O método checktime determina se um tempo especificado é devido.
+description: O método CheckTime determina se um tempo especificado é devido.
 ms.assetid: 522bc7ae-f998-4a7d-8bc3-caf09b4108a6
-title: Método CCmdQueue. checktime (Winutil. h)
+title: Método CCmdQueue.CheckTime (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 17fd67973e122830e53d93d1d8db17046f716507
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 826b59d12c135e9c86ce923f37e1558dca4f13efafb4880aecab1384829a484a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910426"
 ---
-# <a name="ccmdqueuechecktime-method"></a>Método CCmdQueue. checktime
+# <a name="ccmdqueuechecktime-method"></a>Método CCmdQueue.CheckTime
 
 O `CheckTime` método determina se um tempo especificado é devido.
 
@@ -46,20 +46,20 @@ BOOL CheckTime(
 *time* 
 </dt> <dd>
 
-Tempo para verificar.
+Hora de verificar.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-**True** se o parâmetro *time* for um valor de tempo de fluxo; **False** se o *tempo* for um valor de tempo de apresentação.
+**TRUE** se o *parâmetro time* for um valor de tempo de fluxo; **FALSE** se *time* for um valor de tempo de apresentação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se o tempo especificado ainda não tiver passado.
+Retornará **TRUE** se o tempo especificado ainda não tiver passado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Retornará **true** se o tempo especificado ainda não tiver passado.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

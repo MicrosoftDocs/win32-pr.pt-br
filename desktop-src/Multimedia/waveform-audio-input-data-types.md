@@ -1,48 +1,48 @@
 ---
-title: Waveform-Audio tipos de dados de entrada
-description: Waveform-Audio tipos de dados de entrada
+title: Waveform-Audio de dados de entrada
+description: Waveform-Audio de dados de entrada
 ms.assetid: dfedcb93-edfb-4a25-8445-95d4aee55734
 keywords:
-- áudio de onda, tipos de dados de entrada
-- Wave-interface de áudio, tipos de dados de entrada
-- gravando áudio de onda, tipos de dados de entrada
-- Identificador de HWAVEIN
+- áudio waveform, tipos de dados de entrada
+- interface waveform-audio, tipos de dados de entrada
+- gravação de áudio de forma de onda, tipos de dados de entrada
+- Alça HWAVEIN
 - Estrutura WAVEFORMATEX
 - Estrutura WAVEHDR
 - Estrutura WAVEINCAPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39a8d37869224fe2ce677e2b8b952030ca6e021f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a6e131e55c404fe658a0c8f60a8f816ff231f9eb9492bcf8641a4e38781bfa78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892086"
 ---
-# <a name="waveform-audio-input-data-types"></a>Waveform-Audio tipos de dados de entrada
+# <a name="waveform-audio-input-data-types"></a>Waveform-Audio de dados de entrada
 
-Os tipos de dados a seguir são definidos para funções de entrada de formato wave-áudio.
+Os tipos de dados a seguir são definidos para funções de entrada waveform-audio.
 
 
 
 | Tipo                                 | Descrição                                                                                                                                                     |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **HWAVEIN**                          | Identificador de um dispositivo de entrada de wave-áudio aberto.                                                                                                                  |
-| [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) | Estrutura que especifica os formatos de dados com suporte por um dispositivo de entrada de wave-áudio específico. Essa estrutura também é usada para dispositivos de saída de wave-áudio. |
-| [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr)           | Estrutura usada como um cabeçalho para um bloco de dados de entrada de forma de onda-áudio. Essa estrutura também é usada para dispositivos de saída de wave-áudio.                             |
-| [**WAVEINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-waveincaps)     | Estrutura usada para consultar os recursos de um dispositivo de entrada de áudio de onda específico.                                                                   |
+| **HWAVEIN**                          | Alça de um dispositivo de entrada de áudio de forma de onda aberta.                                                                                                                  |
+| [**Waveformatex**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) | Estrutura que especifica os formatos de dados com suporte por um dispositivo de entrada waveform-audio específico. Essa estrutura também é usada para dispositivos de saída waveform-audio. |
+| [**Wavehdr**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr)           | Estrutura usada como um header para um bloco de dados de entrada waveform-audio. Essa estrutura também é usada para dispositivos de saída waveform-audio.                             |
+| [**WAVEINCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-waveincaps)     | Estrutura usada para perguntar sobre os recursos de um dispositivo de entrada de áudio de forma de onda específico.                                                                   |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gravando áudio de onda](recording-waveform-audio.md)
+[Gravação de áudio waveform](recording-waveform-audio.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

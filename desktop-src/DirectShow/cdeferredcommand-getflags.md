@@ -1,7 +1,7 @@
 ---
 description: O método GetFlags recupera os sinalizadores de contexto associados ao comando adiado.
 ms.assetid: 3a96299a-b157-419b-a23e-86241e10566f
-title: Método CDeferredCommand. GetFlags (Ctlutil. h)
+title: Método CDeferredCommand.GetFlags (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: aec9b97e42534d34c5033b3b86edb9c33366d639
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c3ee5826c1b4ff81f90c86a6db4517aafc41313e53672486c41ab4847e82674
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910186"
 ---
-# <a name="cdeferredcommandgetflags-method"></a>Método CDeferredCommand. GetFlags
+# <a name="cdeferredcommandgetflags-method"></a>Método CDeferredCommand.GetFlags
 
 O `GetFlags` método recupera os sinalizadores de contexto associados ao comando adiado.
 
@@ -40,7 +40,7 @@ short GetFlags();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna uma destas opções:
 
@@ -48,10 +48,10 @@ Retorna uma destas opções:
 
 | Código de retorno                                                                                             | Descrição                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**método de expedição \_**</dt> </dl>         | Execute o membro como um método. Se uma propriedade tiver o mesmo nome, isso e o \_ sinalizador PROPERTYGET de expedição poderão ser definidos.<br/>                                               |
-| <dl> <dt>**PROPERTYGET de expedição \_**</dt> </dl>    | O membro está sendo recuperado como uma propriedade ou um membro de dados.<br/>                                                                                                         |
-| <dl> <dt>**PROPERTYPUT de expedição \_**</dt> </dl>    | O membro está sendo alterado como um membro de propriedade ou de dados.<br/>                                                                                                           |
-| <dl> <dt>**PROPERTYPUTREF de expedição \_**</dt> </dl> | O membro está sendo alterado por meio de uma atribuição de referência, em vez de uma atribuição de valor. Esse sinalizador é válido somente quando a propriedade aceita uma referência a um objeto.<br/> |
+| <dl> <dt>**MÉTODO \_ DISPATCH**</dt> </dl>         | Execute o membro como um método. Se uma propriedade tiver o mesmo nome, este e o sinalizador DISPATCH \_ PROPERTYGET poderão ser definidos.<br/>                                               |
+| <dl> <dt>**DISPATCH \_ PROPERTYGET**</dt> </dl>    | O membro está sendo recuperado como uma propriedade ou membro de dados.<br/>                                                                                                         |
+| <dl> <dt>**DISPATCH \_ PROPERTYPUT**</dt> </dl>    | O membro está sendo alterado como uma propriedade ou membro de dados.<br/>                                                                                                           |
+| <dl> <dt>**DISPATCH \_ PROPERTYPUTREF**</dt> </dl> | O membro está sendo alterado por meio de uma atribuição de referência, em vez de uma atribuição de valor. Esse sinalizador é válido somente quando a propriedade aceita uma referência a um objeto .<br/> |
 
 
 
@@ -63,8 +63,8 @@ Retorna uma destas opções:
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

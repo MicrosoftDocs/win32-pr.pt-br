@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: c76b66711883e2238e971cb26d071716bd52ca54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27d7753fa16abcfbc30b28bcc4343b2e1ef7996cad408b54fefb850feac9b17e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760518"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846256"
 ---
 # <a name="doc_info_2-structure"></a>Estrutura de informações do documento \_ \_ 2
 

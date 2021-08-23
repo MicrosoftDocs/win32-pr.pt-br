@@ -1,7 +1,7 @@
 ---
-description: Sinaliza que uma fonte de mídia começou a armazenar em buffer os dados.
+description: Sinaliza que uma fonte de mídia começou a buffer de dados.
 ms.assetid: 8637dfcd-2e0c-4cf4-a216-4089c201bfc6
-title: Evento MEBufferingStarted (Mfobjects. h)
+title: Evento MEBufferingStarted (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: e55a691b723fc2e09487752ee8f5226e32504d60a6d68a4652bbb2b5b3e5aa7e
@@ -13,29 +13,29 @@ ms.locfileid: "119724266"
 ---
 # <a name="mebufferingstarted-event"></a>Evento MEBufferingStarted
 
-Sinaliza que uma fonte de mídia começou a armazenar em buffer os dados.
+Sinaliza que uma fonte de mídia começou a buffer de dados.
 
-Uma fonte de mídia pode enviar esse evento se a origem armazenar dados em buffer enquanto a sessão de mídia estiver em execução. Quando a sessão de mídia recebe esse evento, ele pausa o relógio de apresentação até que a origem de mídia envie o evento [MEBufferingStopped](mebufferingstopped.md) . A sessão de mídia também encaminha o evento MEBufferingStarted para o aplicativo.
+Uma fonte de mídia pode enviar esse evento se a origem em buffer de dados enquanto a Sessão de Mídia está em execução. Quando a Sessão de Mídia recebe esse evento, ela pausa o relógio de apresentação até que a fonte de mídia envie o [evento MEBufferingStopped.](mebufferingstopped.md) A Sessão de Mídia também encaminha o evento MEBufferingStarted para o aplicativo.
 
-Os fluxos de bytes que implementam a interface [**IMFByteStreamBuffering**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreambuffering) também enviam esse evento.
+Fluxos de byte que implementam a interface [**IMFByteStreamBuffering**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreambuffering) também enviam esse evento.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE              | Descrição                           |
+| Vartype              | Descrição                           |
 |----------------------|---------------------------------------|
-| VT \_ vazio<br/> | Nenhum dado do evento.<br/> <br/> |
+| VT \_ VAZIO<br/> | Nenhum dado do evento.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Se uma origem de mídia enviar o evento MEBufferingStarted, ela deverá enviar o evento [MEBufferingStopped](mebufferingstopped.md) quando parar de armazenar em buffer os dados. A origem da mídia deve enviar um evento MEBufferingStopped correspondente para cada evento MEBufferingStarted. A origem da mídia não deve encaminhar esses eventos antes que o método [**IMFMediaSource:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) da fonte seja chamado ou depois que o método [**IMFMediaSource:: Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-stop) da fonte for chamado.
+Se uma fonte de mídia enviar o evento MEBufferingStarted, ela deverá enviar o [evento MEBufferingStopped](mebufferingstopped.md) quando parar de buffer de dados. A fonte de mídia deve enviar um evento MEBufferingStopped correspondente para cada evento MEBufferingStarted. A fonte de mídia não deve encaminhar esses eventos antes que o método [**IMFMediaSource::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) da origem seja chamado ou depois que o método [**IMFMediaSource::Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-stop) da origem for chamado.
 
-Se você estiver transmitindo da fonte de rede Media Foundation, poderá obter o progresso do buffer consultando a estatística **de \_ \_ ID MFNETSOURCE BUFFERPROGRESS** . Para obter mais informações, [**consulte \_ \_ IDs de estatísticas do MFNETSOURCE**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids).
+Se você estiver transmitindo da fonte Media Foundation rede, poderá obter o progresso do buffer consultando a estatística de **\_ \_ ID BUFFERPROGRESS do MFNETSOURCE.** Para obter mais informações, [**consulte MFNETSOURCE \_ STATISTICS \_ IDS**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids).
 
 ## <a name="examples"></a>Exemplos
 
@@ -81,9 +81,9 @@ HRESULT GetBufferProgress(IMFMediaSession *pSession, DWORD *pProgress)
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ HRESULT GetBufferProgress(IMFMediaSession *pSession, DWORD *pProgress)
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

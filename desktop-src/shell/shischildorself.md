@@ -1,7 +1,7 @@
 ---
 UID: ''
 title: Função SHIsChildOrSelf
-description: Compara se uma janela é igual a, um filho de ou um descendente de uma segunda janela.
+description: Compara se uma janela é igual a, um filho de ou um descendente de, uma segunda janela.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -34,21 +34,21 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 911bb0b2a544197ca6db761e05adac79e97c3f69
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: f2d8eaab0f17647a6f548a0243199073baef074c88dad6a3f7100cfbca1a02be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "104988639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941326"
 ---
 # <a name="shischildorself-function"></a>Função SHIsChildOrSelf
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
-\[Essa função está disponível por meio do Windows XP e do Windows Server 2003.
-Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP e Windows Server 2003.
+Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-Compara se uma janela é igual a, um filho de ou um descendente de uma segunda janela.
+Compara se uma janela é igual a, um filho de ou um descendente de, uma segunda janela.
 
 ```cpp
 HRESULT SHIsChildOrSelf(
@@ -61,23 +61,23 @@ HRESULT SHIsChildOrSelf(
 
 ### <a name="hwndparent-in"></a>hwndParent [in]
 
-Tipo: **HWND**
+Digite: **HWND**
 
-Um identificador para a primeira janela.
+Um alça para a primeira janela.
 
-### <a name="hwnd-in"></a>HWND [in]
+### <a name="hwnd-in"></a>hwnd [in]
 
-Tipo: **HWND**
+Digite: **HWND**
 
-Um identificador para uma janela a ser testado em relação a *hwndParent*.
+Um alça para uma janela a ser testada em *relação a hwndParent.*
 
 ## <a name="returns"></a>Retornos
 
 Tipo: **HRESULT**
 
-Retorna **S_OK** se a janela especificada por *HWND* é igual a, um filho de ou um descendente da janela especificada por *hwndParent*.
-Retorna **S_FALSE** se a janela especificada por HWND não for igual a, não um filho de, e não um descendente da janela especificada por *hwndParent*.
-O valor de retorno será indefinido se o identificador da janela for inválido.
+Retorna **S_OK** se a janela especificada por *hwnd* for igual a, um filho de ou um descendente da janela especificada por *hwndParent*.
+Retornará **S_FALSE** se a janela especificada por hwnd não for igual a, não um filho de e não um descendente da janela especificada por *hwndParent*.
+O valor de retorno será indefinido se qualquer alça de janela for inválida.
 
 ## <a name="remarks"></a>Comentários
 

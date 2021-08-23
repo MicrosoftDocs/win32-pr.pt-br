@@ -20,23 +20,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8c8e9a279f536622cfdfccb8bc8882914aeee64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6db8dce5861f6b75590becf2fd8ce3da112d09ae9d01e6e7514043fa47241861
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849976"
 ---
 # <a name="jetgetinstanceinfo-function"></a>Função JetGetInstanceInfo
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgetinstanceinfo-function"></a>Função JetGetInstanceInfo
 
 A função **JetGetInstanceInfo** recupera informações sobre as instâncias que estão em execução.
 
-**Windows XP: o JetGetInstanceInfo** é introduzido no Windows XP.
+**Windows xp: o JetGetInstanceInfo** é introduzido no Windows XP.
 
 ```cpp
     JET_ERR JET_API JetGetInstanceInfo(
@@ -57,7 +57,7 @@ Um ponteiro para um buffer que receberá o endereço do primeiro elemento de uma
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -106,11 +106,11 @@ Se não houver nenhuma instância ativa, **JetGetInstanceInfo** retornará JET_e
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>requer o Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

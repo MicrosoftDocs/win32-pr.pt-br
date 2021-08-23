@@ -4,12 +4,12 @@ ms.assetid: E20AB303-A8C6-4CD1-B3DC-3FE5C5D95678
 title: Atributo MF_DEVICESTREAM_TAKEPHOTO_TRIGGER (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b982539a1b6ef4f098c14a4c950bec0957e7f32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 528bf73ebd0adcdaed4f3ceca1bb72d913c55da768b9e4ec29e0d54b3b7a39b9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119848356"
 ---
 # <a name="mf_devicestream_takephoto_trigger-attribute"></a>\_Atributo de gatilho MF DEVICESTREAM \_ TAKEPHOTO \_
 
@@ -29,9 +29,9 @@ Defina esse atributo como diferente de zero para encapsular o gatilho tirar foto
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

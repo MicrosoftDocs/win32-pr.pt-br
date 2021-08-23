@@ -1,6 +1,6 @@
 ---
-title: 'Métodos de coleta de Texture2D:: Texture2D'
-description: Faz amostras de um Texture2D e retorna todos os quatro componentes.
+title: Métodos Texture2D::Texture2D Gather
+description: Amostra um Texture2D e retorna todos os quatro componentes.
 ms.assetid: bb3ecda8-f167-45ce-a59f-af3e0308e250
 keywords:
 - Coletar métodos HLSL
@@ -12,18 +12,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: ca9bc4701af65847609e4ad152c6c63b484bc1cb
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
-ms.translationtype: HT
+ms.openlocfilehash: 470f7b8031c4aea6d85d1c50df647fc97198492d7f74740b68eaed18a3c45a7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104968269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949456"
 ---
-# <a name="texture2dgather-methods"></a>Métodos Texture2D:: Reúna
+# <a name="texture2dgather-methods"></a>Métodos Texture2D::Gather
 
-Faz amostras de um [**Texture2D**](sm5-object-texture2d.md) e retorna todos os quatro componentes.
+Amostra um [**Texture2D**](sm5-object-texture2d.md) e retorna todos os quatro componentes.
 
-Consulte a documentação em [gather4](./gather4--sm5---asm-.md) para obter mais informações descrevendo a instrução DXBC subjacente.
+Consulte a documentação [sobre gather4](./gather4--sm5---asm-.md) para obter mais informações que descrevem a instrução DXBC subjacente.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -31,8 +31,8 @@ Consulte a documentação em [gather4](./gather4--sm5---asm-.md) para obter mais
 
 | Método                                                           | Descrição                                                                                         |
 |:-----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**Coleta (S, float, int)**](sm5-object-texture2d-gather.md)       | Faz a amostragem de uma textura e retorna todos os quatro componentes.<br/>                                       |
-| [**Coleta (S, float, int, uint)**](t2d-gather-s-float-int-uint-.md) | Obtém uma textura e retorna todos os quatro componentes junto com o status sobre a operação.<br/> |
+| [**Gather(S,float,int)**](sm5-object-texture2d-gather.md)       | Amostra uma textura e retorna todos os quatro componentes.<br/>                                       |
+| [**Gather(S,float,int,uint)**](t2d-gather-s-float-int-uint-.md) | Amostra uma textura e retorna todos os quatro componentes junto com o status sobre a operação.<br/> |
 
 
 

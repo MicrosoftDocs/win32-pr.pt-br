@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 778a77a92146241c0fff5d389c11880b76adf65c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17de26c77dec57d40fb58a0e7f5a7771a87530bb8586b85bb1165a70ba974ab8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850676"
 ---
 # <a name="esentslvprovidernotloadedexception-class"></a>Classe EsentSLVProviderNotLoadedException
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  

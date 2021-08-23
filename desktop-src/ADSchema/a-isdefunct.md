@@ -1,11 +1,11 @@
 ---
 title: Is-Defunct atributo
-description: Se for TRUE, a classe ou o atributo não poderá mais ser usado. As versões antigas desse objeto podem existir, mas novas não podem ser criadas.
+description: Se TRUE, a classe ou o atributo não será mais acessível. Versões antigas desse objeto podem existir, mas novas não podem ser criadas.
 ms.assetid: ca1b7701-e501-424d-9c07-20835b23dcd3
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Is-Defunct do atributo AD
-- Esquema de AD de atributo isfunct
+- Is-Defunct atributo AD Schema
+- Esquema do AD do atributo isDefunct
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c895a4af5d02c76a709607753065b6e965966bb6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08affdad5efa61e7420f08a3b5d2da8ac928671a1281bdfbc793338c39b19023
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924856"
 ---
 # <a name="is-defunct-attribute"></a>Is-Defunct atributo
 
-Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões antigas desse objeto podem existir, mas novas não podem ser criadas.
+Se **TRUE**, a classe ou o atributo não será mais acessível. Versões antigas desse objeto podem existir, mas novas não podem ser criadas.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Is-Defunct                           |
-| LDAP-Display-Name | isDefunct                            |
+| Ldap-Display-Name | Isdefunct                            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Administrador de esquema                 |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.661               |
-| System-ID-GUID    | 28630ebe-41d5-11d1-a9c1-0000f80367c1 |
-| Sintaxe            | [**Boolean**](s-boolean.md)         |
+| System-Id-Guid    | 28630ebe-41d5-11d1-a9c1-0000f80367c1 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -44,7 +44,7 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ Se **for true**, a classe ou o atributo não poderá mais ser usado. As versões
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propriedade ActionCollection. Context
-description: Para scripts, Obtém ou define o identificador da entidade de segurança da tarefa.
+title: Propriedade ActionCollection.Context
+description: Para scripts, obtém ou define o identificador da entidade de entidade de trabalho.
 ms.assetid: 5d8ac31c-ce07-4801-a04e-e12e996b88c6
 keywords:
-- Agendador de Tarefas de propriedade de contexto
-- Propriedade de contexto Agendador de Tarefas, objeto ActionCollection
-- Agendador de Tarefas de objeto ActionCollection, Propriedade Context
+- Propriedades de contexto Agendador de Tarefas
+- Propriedade de contexto Agendador de Tarefas objeto , ActionCollection
+- Objeto ActionCollection Agendador de Tarefas , propriedade Context
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0f98318ba8332e4c3bb0e7fee6b702a7ed50533
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ff495e4ef2742a6a05570308f2976c014026941d290d44c39bdd087ce3e13a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105779893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772746"
 ---
-# <a name="actioncollectioncontext-property"></a>Propriedade ActionCollection. Context
+# <a name="actioncollectioncontext-property"></a>Propriedade ActionCollection.Context
 
-Para scripts, Obtém ou define o identificador da entidade de segurança da tarefa.
+Para scripts, obtém ou define o identificador da entidade de entidade de trabalho.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,7 +38,7 @@ ActionCollection.Context As String
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O identificador da entidade de segurança para a tarefa. O identificador especificado aqui deve corresponder ao identificador especificado na propriedade ID da interface IPrincipal que define a entidade de segurança.
+O identificador da entidade de entidade de trabalho. O identificador especificado aqui deve corresponder ao identificador especificado na propriedade ID da interface IPrincipal que define a entidade de entidade.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ O identificador da entidade de segurança para a tarefa. O identificador especif
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -60,7 +60,7 @@ O identificador da entidade de segurança para a tarefa. O identificador especif
 [Agendador de Tarefas](task-scheduler-start-page.md)
 </dt> <dt>
 
-[**Açãocollection**](actioncollection.md)
+[**Actioncollection**](actioncollection.md)
 </dt> </dl>
 
  

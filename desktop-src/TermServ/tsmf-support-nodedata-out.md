@@ -1,11 +1,11 @@
 ---
-title: Estrutura de TSMF_SUPPORT_NODEDATA_OUT
-description: Usado na estrutura de \_ saída de dados de suporte do TSMF \_ \_ para conter informações sobre formatos de mídia com suporte.
+title: TSMF_SUPPORT_NODEDATA_OUT estrutura
+description: Usado dentro da estrutura TSMF \_ SUPPORT DATA OUT para conter informações sobre \_ \_ formatos de mídia com suporte.
 ms.assetid: cac0af9e-6750-4735-b075-46c77aea7d41
 ms.tgt_platform: multiple
 keywords:
-- Estrutura de TSMF_SUPPORT_NODEDATA_OUT Serviços de Área de Trabalho Remota
-- Ponteiro de estrutura de PTSMF_SUPPORT_NODEDATA_OUT Serviços de Área de Trabalho Remota
+- TSMF_SUPPORT_NODEDATA_OUT estrutura Serviços de Área de Trabalho Remota
+- PTSMF_SUPPORT_NODEDATA_OUT ponteiro de estrutura Serviços de Área de Trabalho Remota
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 517170e9d6580f69b59f71e0994351ebe0484ddc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df3eb4c515963e13d2a7919c58a6d55ca4b2a7600c429a33516093215b5ac0eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869006"
 ---
-# <a name="tsmf_support_nodedata_out-structure"></a>TSMF \_ dá suporte à \_ \_ estrutura de saída NODEDATA
+# <a name="tsmf_support_nodedata_out-structure"></a>Estrutura \_ \_ NODEDATA OUT DE SUPORTE do TSMF \_
 
-Usado na estrutura [**de \_ \_ \_ saída de dados de suporte do TSMF**](tsmf-support-data-out.md) para conter informações sobre formatos de mídia com suporte.
+Usado dentro da estrutura [**TSMF \_ SUPPORT \_ DATA \_ OUT**](tsmf-support-data-out.md) para conter informações sobre formatos de mídia com suporte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ typedef struct tagTSMF_SUPPORT_NODEDATA_OUT {
 
 <dl> <dt>
 
-**nodeId**
+**Nodeid**
 </dt> <dd>
 
 O nó.
@@ -54,7 +54,7 @@ O nó.
 **hrSupportStatus**
 </dt> <dd>
 
-Se o coletor identificado pelo parâmetro *clsidNewSink* tem suporte.
+Se o sink identificado pelo parâmetro *clsidNewSink* tem suporte.
 
 Os valores possíveis são.
 
@@ -74,21 +74,21 @@ Com suporte
 
 </dd> </dl>
 
-Outros valores são indefinidos.
+Outros valores são indefinido.
 
 </dd> <dt>
 
 **clsidNewSink**
 </dt> <dd>
 
-O coletor associado ao tipo de mídia.
+O sink associado ao tipo de mídia.
 
 </dd> <dt>
 
 **supportedMediaTypeIndex**
 </dt> <dd>
 
-O índice de base zero do tipo de mídia com suporte no coletor.
+O índice baseado em zero do tipo de mídia com suporte pelo sink.
 
 </dd> </dl>
 
@@ -110,7 +110,7 @@ O índice de base zero do tipo de mídia com suporte no coletor.
 [**QueryProperty**](/windows/desktop/api/Wtsprotocol/nf-wtsprotocol-iwrdsprotocolconnection-queryproperty)
 </dt> <dt>
 
-[**\_saída de \_ dados de suporte do TSMF \_**](tsmf-support-data-out.md)
+[**DADOS DE SUPORTE DO TSMF \_ \_ \_ OUT**](tsmf-support-data-out.md)
 </dt> </dl>
 
  

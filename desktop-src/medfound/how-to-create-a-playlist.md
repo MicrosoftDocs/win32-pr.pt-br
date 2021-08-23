@@ -4,12 +4,12 @@ ms.assetid: 5a760492-bd52-40b8-a652-8a62646db6ae
 title: Como criar uma lista de reprodução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2e6e19766c3fa569a701fea9bed0f05d11a4324
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57d2a36735d29510e0622882a399fff199fd2289261453a51f281414b5076826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828166"
 ---
 # <a name="how-to-create-a-playlist"></a>Como criar uma lista de reprodução
 

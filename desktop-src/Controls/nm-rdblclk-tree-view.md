@@ -3,7 +3,7 @@ title: Código de notificação de NM_RDBLCLK (exibição em árvore) (commctrl.
 description: Notifica o pai de um controle de exibição de árvore que o usuário clicou duas vezes com o botão direito do mouse dentro do controle. Essa notificação é enviada na forma de uma mensagem de \_ notificação do WM.
 ms.assetid: eb1ae167-32cb-45d6-92e6-7bf5f7e46c2a
 keywords:
-- Código de notificação de NM_RDBLCLK (exibição de árvore) controles do Windows
+- código de notificação de NM_RDBLCLK (exibição em árvore) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef5b4f1dbaf1031c995028028cc0b44e544f5f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4da45d7ac3363a5dc362ef6d34255531f71ce780075e8106fb9579126298a1e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826066"
 ---
 # <a name="nm_rdblclk-tree-view-notification-code"></a>\_Código de notificação nm RDBLCLK (exibição em árvore)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar um valor diferente de zero para impedir o processamento padrão ou zero para permitir o processamento padrão.
 
@@ -55,9 +55,9 @@ Retornar um valor diferente de zero para impedir o processamento padrão ou zero
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

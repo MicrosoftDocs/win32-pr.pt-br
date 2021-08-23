@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: d68cafdf545d93a290e90c54be134977e51de4e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 335cd4115f3b66ede4ce34a6ac6b33c86a8b193b88de4314b4902f8c12417358
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828666"
 ---
 # <a name="d3dauthenticatedchannel_queryprotection_output-structure"></a>Estrutura de saída do D3DAUTHENTICATEDCHANNEL \_ QUERYPROTECTION \_
 
@@ -62,9 +62,9 @@ Uma estrutura de [**\_ \_ sinalizadores de proteção D3DAUTHENTICATEDCHANNEL**]
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
 
 
 

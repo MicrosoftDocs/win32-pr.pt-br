@@ -4,12 +4,12 @@ ms.assetid: 8fbd7960-f3f0-4326-ad1d-12b636c0039e
 title: Liberando memória virtual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7628ed53f956d5cd13f0c7d2d1157443d529129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 60c5f78da34573126cfb20d7bc16f803ec603c818a3147f388c9661245d6c408
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869687"
 ---
 # <a name="freeing-virtual-memory"></a>Liberando memória virtual
 

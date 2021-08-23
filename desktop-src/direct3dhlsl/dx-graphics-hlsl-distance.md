@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c0f3a64778666ac8f7de16b91eed202e36e90ed1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f51c5e9865b9dfc1c5a941beb43010dc8fad64e2d8ac8763998c22cb3e0dfbd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726536"
 ---
 # <a name="distance"></a>distância
 
@@ -26,7 +26,7 @@ Retorna uma distância escalar entre dois vetores.
 
 
 
-| distância de *RET* (*x*, *y*) |
+| *ret* distance(*x*, *y*) |
 |--------------------------|
 
 
@@ -39,8 +39,8 @@ Retorna uma distância escalar entre dois vetores.
 
 | Item                                                   | Descrição                                                    |
 |--------------------------------------------------------|----------------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] primeiro vetor de ponto flutuante a ser comparado.<br/>  |
-| <span id="y"></span><span id="Y"></span>*Iar*<br/> | \[no \] segundo vetor de ponto flutuante a ser comparado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O primeiro vetor de ponto flutuante a ser comparado.<br/>  |
+| <span id="y"></span><span id="Y"></span>*Y*<br/> | \[no \] segundo vetor de ponto flutuante a ser comparado.<br/> |
 
 
 
@@ -48,31 +48,31 @@ Retorna uma distância escalar entre dois vetores.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Um valor escalar de ponto flutuante que representa a distância entre o parâmetro *x* e o parâmetro *y* .
+Um valor escalar e de ponto flutuante que representa a distância entre o *parâmetro x* e o *parâmetro y.*
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
 |-------|-------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *y*   | [**vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões como entrada *x* |
-| *RET* | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
+| *x*   | [**Vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *y*   | [**Vetor**](dx-graphics-hlsl-intrinsic-functions.md) | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões que a entrada *x* |
+| *Ret* | [**Escalar**](dx-graphics-hlsl-intrinsic-functions.md) | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | 1                              |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim       |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 

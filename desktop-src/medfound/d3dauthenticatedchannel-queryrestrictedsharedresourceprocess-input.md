@@ -1,7 +1,7 @@
 ---
-description: Contém dados de entrada para uma \_ consulta D3DAUTHENTICATEDQUERY RESTRICTEDSHAREDRESOURCEPROCESS.
+description: Contém dados de entrada para uma consulta D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS.
 ms.assetid: a1ceb394-7af9-4f05-9f58-a3103bf0150e
-title: Estrutura de D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_INPUT (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_INPUT (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,11 +20,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119958756"
 ---
-# <a name="d3dauthenticatedchannel_queryrestrictedsharedresourceprocess_input-structure"></a>Estrutura de entrada do D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_
+# <a name="d3dauthenticatedchannel_queryrestrictedsharedresourceprocess_input-structure"></a>Estrutura DE ENTRADA D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_
 
-Contém dados de entrada para uma consulta [**D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS**](d3dauthenticatedquery-restrictedsharedresourceprocess.md) .
+Contém dados de entrada para uma [**consulta D3DAUTHENTICATEDQUERY \_ RESTRICTEDSHAREDRESOURCEPROCESS.**](d3dauthenticatedquery-restrictedsharedresourceprocess.md)
 
-Para enviar essa consulta, chame [**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
+Para enviar essa consulta, chame [**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_INP
 **Entrada**
 </dt> <dd>
 
-Uma estrutura de [**\_ \_ entrada de consulta D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-query-input.md) que contém o GUID para a consulta e outros dados.
+Uma estrutura DE ENTRADA DE CONSULTA [**D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md) que contém o GUID para a consulta e outros dados.
 
 </dd> <dt>
 
@@ -62,9 +62,9 @@ O índice do processo.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ O índice do processo.
 [Estruturas de vídeo do Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

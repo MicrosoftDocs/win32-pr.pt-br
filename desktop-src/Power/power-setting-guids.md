@@ -4,12 +4,12 @@ ms.assetid: 39D432A7-54F8-4135-B98C-7290F95B054A
 title: GUIDs de configuração de energia (WinNT. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b67dfd619d93f4318dbcfe2b44b5f8ba24460bd3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b05909509e0c3ed581582ebe90b10e5df4e91a31b7ab050b3fd1ef6679b1a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887026"
 ---
 # <a name="power-setting-guids"></a>GUIDs de configuração de energia
 
@@ -65,7 +65,7 @@ A capacidade restante da bateria foi alterada. A granularidade varia de sistema 
 
 O estado de exibição do monitor atual foi alterado.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa notificação está disponível a partir do Windows 8 e do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa notificação está disponível a partir de Windows 8 e Windows Server 2012.
 
 O membro de **dados** é um **DWORD** com um dos valores a seguir.
 
@@ -94,7 +94,7 @@ O status do usuário associado a qualquer sessão foi alterado. Isso representa 
 
 Essa notificação é enviada somente para serviços e outros programas em execução na sessão 0. Os aplicativos de modo de usuário devem se registrar para a **\_ presença de \_ usuário \_ de sessão GUID** em vez disso.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa notificação está disponível a partir do Windows 8 e do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa notificação está disponível a partir de Windows 8 e Windows Server 2012.
 
 O membro de **dados** é um **DWORD** com um dos valores a seguir.
 
@@ -220,7 +220,7 @@ Automático-o esquema foi projetado para balancear automaticamente o desempenho 
 
 A exibição associada à sessão do aplicativo foi ligada ou desativada.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa notificação está disponível a partir do Windows 8 e do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa notificação está disponível a partir de Windows 8 e Windows Server 2012.
 
 Essa notificação é enviada somente para aplicativos de modo de usuário. Os serviços e outros programas em execução na sessão 0 não recebem essa notificação. O membro de **dados** é um **DWORD** com um dos valores a seguir.
 
@@ -247,7 +247,7 @@ Essa notificação é enviada somente para aplicativos de modo de usuário. Os s
 
 O status do usuário associado à sessão do aplicativo foi alterado.
 
-**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** Essa notificação está disponível a partir do Windows 8 e do Windows Server 2012.
+**Windows 7, Windows server 2008 R2, Windows Vista e Windows server 2008:** essa notificação está disponível a partir de Windows 8 e Windows Server 2012.
 
 Essa notificação é enviada somente para aplicativos de modo de usuário em execução em uma sessão interativa. Os serviços e outros programas em execução na sessão 0 devem ser registrados para a **\_ \_ \_ presença do usuário global do GUID**. O membro de **dados** é um **DWORD** com um dos valores a seguir.
 

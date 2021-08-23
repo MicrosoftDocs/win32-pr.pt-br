@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 8db5b2aef859ea5d8247fc203611af74c8daddd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59d6ba435b592076455690916f5c627c73f65370df381861c25a6fafa21bf0f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949096"
 ---
 # <a name="getdefaultprinter-function"></a>Função GetDefaultPrinter
 
@@ -56,7 +56,7 @@ Na entrada, especifica o tamanho, em caracteres, do buffer *pszBuffer* . Na saí
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um valor diferente de zero e a variável apontada por *pcchBuffer* conterá o número de caracteres copiados para o buffer *pszBuffer* , incluindo o caractere nulo de terminação.
 

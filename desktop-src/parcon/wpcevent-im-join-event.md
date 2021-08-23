@@ -4,12 +4,12 @@ ms.assetid: 5251234b-0280-4d5d-80f5-295d720a89d1
 title: WPCEVENT_IM_JOIN evento (Wpcevent. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b020eb3d4204f946002f59f472e5c95b715f88f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 181bc849cf89e8a78a7a5aaad97463baf0c611d99ca0dc05caf9bfaf879eb804
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951286"
 ---
 # <a name="wpcevent_im_join-event"></a>Evento de junção de \_ im WPCEVENT \_
 
@@ -102,9 +102,9 @@ A cadeia de caracteres de identidade da conta de mensagens instantâneas para o 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
 
 
 

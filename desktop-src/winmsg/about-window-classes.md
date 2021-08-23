@@ -4,12 +4,12 @@ ms.assetid: db79fd4b-6a15-4bf9-a0d9-5f6415f6c75f
 title: Sobre classes de janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b683176c3fd7904cf3f89b385ce0fa393b89e9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0fcb46d862bf5b9249bb4f13b111ac10c441c3e687dd3fb1784f355c40d14b72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119932326"
 ---
 # <a name="about-window-classes"></a>Sobre classes de janela
 
@@ -26,7 +26,7 @@ Esta seção aborda os tópicos a seguir.
 -   [Como o sistema localiza uma classe de janela](#how-the-system-locates-a-window-class)
 -   [Registrando uma classe de janela](#registering-a-window-class)
 -   [Elementos de uma classe de janela](#elements-of-a-window-class)
-    -   [Nome da Classe](#class-name)
+    -   [Nome da classe](#class-name)
     -   [Endereço de procedimento de janela](#window-procedure-address)
     -   [Identificador de Instância](#instance-handle)
     -   [Cursor de classe](#class-cursor)
@@ -51,9 +51,9 @@ Esses tipos diferem no escopo e em quando e como eles são registrados e destru�
 
 Uma classe de sistema é uma classe de janela registrada pelo sistema. Muitas classes de sistema estão disponíveis para todos os processos a serem usados, enquanto outras são usadas apenas internamente pelo sistema. Como o sistema registra essas classes, um processo não pode destruí-las.
 
-O sistema registra as classes do sistema para um processo na primeira vez em que um de seus threads chama um usuário ou uma função do Windows Graphics Device Interface (GDI).
+o sistema registra as classes do sistema para um processo na primeira vez em que um de seus threads chama um usuário ou uma função Graphics Device Interface GDI (Windows).
 
-Cada aplicativo recebe sua própria cópia das classes do sistema. Todos os aplicativos de 16 bits baseados no Windows nas mesmas classes do sistema de compartilhamento do VDM, assim como no Windows de 16 bits.
+Cada aplicativo recebe sua própria cópia das classes do sistema. todos os aplicativos baseados em Windows de 16 bits nas mesmas classes do sistema de compartilhamento do VDM, assim como no Windows de 16 bits.
 
 A tabela a seguir descreve as classes de sistema que estão disponíveis para uso por todos os processos.
 
@@ -80,7 +80,7 @@ A tabela a seguir descreve as classes de sistema que estão disponíveis somente
 | Classe      | Descrição                                                            |
 |------------|------------------------------------------------------------------------|
 | ComboLBox  | A classe da caixa de listagem contida em uma caixa de combinação.                   |
-| DDEMLEvent | A classe para eventos de DDEML (biblioteca de gerenciamento de troca dinâmica de dados). |
+| DDEMLEvent | a classe para eventos de DDEML (biblioteca de gerenciamento de troca dinâmica de dados). |
 | Mensagem    | A classe para uma janela somente mensagem.                                   |
 | \#32768    | A classe de um menu.                                                  |
 | \#32769    | A classe da janela da área de trabalho.                                      |
@@ -94,19 +94,19 @@ A tabela a seguir descreve as classes de sistema que estão disponíveis somente
 
 ### <a name="application-global-classes"></a>Classes globais do aplicativo
 
-Uma [classe global de aplicativo](#application-global-classes) é uma classe de janela registrada por um executável ou DLL que está disponível para todos os outros módulos no processo. Por exemplo, o. dll pode chamar a função [**RegisterClassEx**](/windows/win32/api/winuser/nf-winuser-registerclassexa) para registrar uma classe de janela que define um controle personalizado como uma classe global de aplicativo para que um processo que carrega o. dll possa criar instâncias do controle personalizado.
+Uma [classe global de aplicativo](#application-global-classes) é uma classe de janela registrada por um executável ou DLL que está disponível para todos os outros módulos no processo. Por exemplo, seu .dll pode chamar a função [**RegisterClassEx**](/windows/win32/api/winuser/nf-winuser-registerclassexa) para registrar uma classe de janela que define um controle personalizado como uma classe global de aplicativo para que um processo que carrega o .dll possa criar instâncias do controle personalizado.
 
-Para criar uma classe que possa ser usada em cada processo, crie a classe Window em uma. dll e carregue o. dll em cada processo. Para carregar o. dll em cada processo, adicione seu nome ao valor **de \_ DLLs AppInit** na seguinte chave do registro:
+Para criar uma classe que pode ser usada em cada processo, crie a classe Window em um .dll e carregue o .dll em cada processo. Para carregar o .dll em cada processo, adicione seu nome ao valor **de \_ DLLs AppInit** na seguinte chave do registro:
 
-**HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Windows**
+**HKEY \_ Software do \_ computador LOCAL** \\  \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Windows**
 
-Sempre que um processo é iniciado, o sistema carrega o. dll especificado no contexto do processo recentemente iniciado antes de chamar sua função de ponto de entrada. O. dll deve registrar a classe durante seu procedimento de inicialização e deve especificar o estilo **cs \_ GLOBALCLASS** . Para obter mais informações, consulte [estilos de classe](#class-styles).
+Sempre que um processo é iniciado, o sistema carrega o .dll especificado no contexto do processo recentemente iniciado antes de chamar sua função de ponto de entrada. O .dll deve registrar a classe durante seu procedimento de inicialização e deve especificar o estilo **cs \_ GLOBALCLASS** . Para obter mais informações, consulte [estilos de classe](#class-styles).
 
 Para remover uma classe global de aplicativo e liberar o armazenamento associado a ela, use a função [**UnregisterClass**](/windows/win32/api/winuser/nf-winuser-unregisterclassa) .
 
 ### <a name="application-local-classes"></a>Classes locais do aplicativo
 
-Uma [classe local de aplicativo](#application-local-classes) é qualquer classe de janela que um executável ou. dll registra para seu uso exclusivo. Embora você possa registrar qualquer número de classes locais, é comum registrar apenas uma. Essa classe de janela dá suporte ao procedimento de janela da janela principal do aplicativo.
+Uma [classe local de aplicativo](#application-local-classes) é qualquer classe de janela que um executável ou .dll registra para seu uso exclusivo. Embora você possa registrar qualquer número de classes locais, é comum registrar apenas uma. Essa classe de janela dá suporte ao procedimento de janela da janela principal do aplicativo.
 
 O sistema destrói uma classe local quando o módulo que o registrou fecha. Um aplicativo também pode usar a função [**UnregisterClass**](/windows/win32/api/winuser/nf-winuser-unregisterclassa) para remover uma classe local e liberar o armazenamento associado a ela.
 
@@ -128,9 +128,9 @@ Para registrar uma classe global de aplicativo, especifique o \_ estilo cs GLOBA
 
 Se você registrar a classe Window usando a versão ANSI de [**RegisterClassEx**](/windows/win32/api/winuser/nf-winuser-registerclassexa), **RegisterClassExA**, o aplicativo solicitará que o sistema passe parâmetros de texto de mensagens para as janelas da classe criada usando o conjunto de caracteres ANSI; Se você registrar a classe usando a versão Unicode de **RegisterClassEx**, **RegisterClassExW**, o aplicativo solicitará que o sistema passe parâmetros de texto de mensagens para as janelas da classe criada usando o conjunto de caracteres Unicode. A função [**IsWindowUnicode**](/windows/win32/api/winuser/nf-winuser-iswindowunicode) permite que os aplicativos consultem a natureza de cada janela. Para obter mais informações sobre as funções ANSI e Unicode, consulte [convenções para protótipos de função](/windows/desktop/Intl/conventions-for-function-prototypes).
 
-O executável ou DLL que registrou a classe é o proprietário da classe. O sistema determina a propriedade de classe do membro **HINSTANCE** da estrutura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) passada para a função [**RegisterClassEx**](/windows/win32/api/winuser/nf-winuser-registerclassexa) quando a classe é registrada. Para DLLs, o membro **HINSTANCE** deve ser o identificador para a instância. dll.
+O executável ou DLL que registrou a classe é o proprietário da classe. O sistema determina a propriedade de classe do membro **HINSTANCE** da estrutura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) passada para a função [**RegisterClassEx**](/windows/win32/api/winuser/nf-winuser-registerclassexa) quando a classe é registrada. Para DLLs, o membro **HINSTANCE** deve ser o identificador para a instância de .dll.
 
-A classe não é destruída quando a. dll que a possui é descarregada. Portanto, se o sistema chamar o procedimento de janela para uma janela dessa classe, isso causará uma violação de acesso, pois o. dll que contém o procedimento de janela não está mais na memória. O processo deve destruir todas as janelas usando a classe antes que o. dll seja descarregado e chame a função [**UnregisterClass**](/windows/win32/api/winuser/nf-winuser-unregisterclassa) .
+A classe não é destruída quando o .dll que a possui é descarregado. Portanto, se o sistema chamar o procedimento de janela para uma janela dessa classe, isso causará uma violação de acesso, porque a .dll que contém o procedimento de janela não está mais na memória. O processo deve destruir todas as janelas usando a classe antes que a .dll seja descarregada e chamar a função [**UnregisterClass**](/windows/win32/api/winuser/nf-winuser-unregisterclassa) .
 
 ## <a name="elements-of-a-window-class"></a>Elementos de uma classe de janela
 
@@ -142,9 +142,9 @@ Embora uma classe de janela completa consista em muitos elementos, o sistema req
 
 | Elemento                                               | Finalidade                                                                                                                                                                                                                                       |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Nome da Classe](#class-name)                             | Distingue a classe de outras classes registradas.                                                                                                                                                                                        |
+| [Nome da classe](#class-name)                             | Distingue a classe de outras classes registradas.                                                                                                                                                                                        |
 | [Endereço de procedimento de janela](#window-procedure-address) | Ponteiro para a função que processa todas as mensagens enviadas ao Windows na classe e define o comportamento da janela.                                                                                                                      |
-| [Identificador de Instância](#instance-handle)                   | Identifica o aplicativo ou. dll que registrou a classe.                                                                                                                                                                                 |
+| [Identificador de Instância](#instance-handle)                   | Identifica o aplicativo ou .dll que registrou a classe.                                                                                                                                                                                 |
 | [Cursor de classe](#class-cursor)                         | Define o cursor do mouse que o sistema exibe para uma janela da classe.                                                                                                                                                                  |
 | [Ícones de classe](#class-icons)                           | Define o ícone grande e o ícone pequeno.                                                                                                                                                                                                    |
 | [Pincel de plano de fundo de classe](#class-background-brush)     | Define a cor e o padrão que preenchem a área do cliente quando a janela é aberta ou pintada.                                                                                                                                                 |
@@ -169,9 +169,9 @@ Cada classe precisa de um endereço de procedimento de janela para definir o pon
 
 ### <a name="instance-handle"></a>Identificador de Instância
 
-Cada classe de janela requer um identificador de instância para identificar o aplicativo ou. dll que registrou a classe. O sistema requer identificadores de instância para manter o controle de todos os módulos. O sistema atribui um identificador a cada cópia de um executável ou. dll em execução.
+Cada classe de janela requer um identificador de instância para identificar o aplicativo ou .dll que registrou a classe. O sistema requer identificadores de instância para manter o controle de todos os módulos. O sistema atribui um identificador a cada cópia de um executável ou .dll em execução.
 
-O sistema passa um identificador de instância para a função de ponto de entrada de cada executável (consulte [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain)) e. dll (consulte [**DllMain**](/windows/desktop/Dlls/dllmain)). O executável ou. dll atribui esse identificador de instância à classe copiando-o para o membro **HINSTANCE** da estrutura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) .
+O sistema passa um identificador de instância para a função de ponto de entrada de cada executável (consulte [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain)) e .dll (consulte [**DllMain**](/windows/desktop/Dlls/dllmain)). O executável ou .dll atribui esse identificador de instância à classe copiando-o para o membro **HINSTANCE** da estrutura [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) .
 
 ### <a name="class-cursor"></a>Cursor de classe
 

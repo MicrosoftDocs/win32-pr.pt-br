@@ -112,9 +112,9 @@
                   href: security-descriptor-string-format.md
                 - name: Linguagem de definição do descritor de segurança para ACEs condicionais.
                   href: security-descriptor-definition-language-for-conditional-aces-.md
-                - name: Cadeias de caracteres ACE
+                - name: Cadeias de Caracteres ACE
                   href: ace-strings.md
-                - name: Cadeias de caracteres de SID
+                - name: Cadeias de Caracteres SID
                   href: sid-strings.md
             - name: Privilégios
               href: privileges.md
@@ -224,17 +224,17 @@
       items:
         - name: Definindo permissões em C++
           href: defining-permissions-in-c--.md
-        - name: Verificando o acesso do cliente a um recurso solicitado em C++
+        - name: Verificando o acesso do cliente a um recurso solicitado no C++
           href: verifying-client-access-to-a-requested-resource-in-c--.md
         - name: Delegando a definição de permissões em C++
           href: delegating-the-defining-of-permissions-in-c--.md
-        - name: Tarefas de suporte para autorização em C++
+        - name: Dando suporte a tarefas para autorização em C++
           href: supporting-tasks-for-authorization-in-c--.md
           items:
-            - name: Criando um repositório de política de autorização em C++
+            - name: Criando um armazenamento de política de autorização em C++
               href: creating-an-authorization-policy-store-in-c--.md
               items:
-                - name: Criando um objeto de repositório de política de autorização em C++
+                - name: Criando um objeto de armazenamento de política de autorização em C++
                   href: creating-an-authorization-policy-store-object-in-c--.md
                 - name: Criando um objeto de aplicativo em C++
                   href: creating-an-application-object-in-c--.md
@@ -242,15 +242,15 @@
                   href: defining-operations-in-c--.md
                 - name: Agrupando operações em tarefas em C++
                   href: grouping-operations-into-tasks-in-c--.md
-                - name: Agrupando tarefas em funções em C++
+                - name: Agrupando tarefas em funções no C++
                   href: grouping-tasks-into-roles-in-c--.md
-                - name: Definindo grupos de usuários em C++
+                - name: Definindo grupos de usuários no C++
                   href: defining-groups-of-users-in-c--.md
-                - name: Adicionando usuários a um grupo de aplicativos em C++
+                - name: Adicionando usuários a um grupo de aplicativos no C++
                   href: adding-users-to-an-application-group-in-c--.md
-            - name: Estabelecendo um contexto de cliente com o Gerenciador de autorização em C++
+            - name: Estabelecendo um contexto de cliente com o Gerenciador de Autorização no C++
               href: establishing-a-client-context-with-authorization-manager-in-c--.md
-            - name: Qualificando o acesso com a lógica de negócios em C++
+            - name: Qualificando o acesso com lógica de negócios em C++
               href: qualifying-access-with-business-logic-in-c--.md
             - name: Definindo permissões com ACLs em C++
               href: defining-permissions-with-acls-in-c--.md
@@ -259,24 +259,24 @@
                   href: modifying-the-acls-of-an-object-in-c--.md
                 - name: Criando um descritor de segurança para um novo objeto em C++
                   href: creating-a-security-descriptor-for-a-new-object-in-c--.md
-                - name: Controlando a criação de objetos filho em C++
+                - name: Controlando a criação de objeto filho em C++
                   href: controlling-child-object-creation-in-c--.md
                 - name: Habilitando e desabilitando privilégios em C++
                   href: enabling-and-disabling-privileges-in-c--.md
             - name: Estabelecendo um contexto de cliente de um SID em C++
               href: establishing-a-client-context-from-a-sid-in-c--.md
               items:
-                - name: Pesquisando um SID em um token de acesso em C++
+                - name: Procurando um SID em um token de acesso em C++
                   href: searching-for-a-sid-in-an-access-token-in-c--.md
                 - name: Convertendo um SID binário em formato de cadeia de caracteres em C++
                   href: converting-a-binary-sid-to-string-format-in-c--.md
-            - name: Verificando o acesso do cliente com ACLs em C++
+            - name: Verificando o acesso do cliente com ACLs no C++
               href: verifying-client-access-with-acls-in-c--.md
-            - name: Localizando o proprietário de um objeto de arquivo em C++
+            - name: Localizar o proprietário de um objeto de arquivo em C++
               href: finding-the-owner-of-a-file-object-in-c--.md
-            - name: Tirando a propriedade do objeto em C++
+            - name: Assumindo a propriedade do objeto em C++
               href: taking-object-ownership-in-c--.md
-    - name: Usando a autorização no script
+    - name: Usando autorização no script
       href: using-authorization-in-script.md
       items:
         - name: Definindo permissões no script
@@ -288,10 +288,10 @@
         - name: Tarefas de suporte para autorização no script
           href: supporting-tasks-for-authorization-in-script.md
           items:
-            - name: Criando um repositório de política de autorização no script
+            - name: Criando um armazenamento de política de autorização no script
               href: creating-an-authorization-policy-store-in-script.md
               items:
-                - name: Criando um objeto de repositório de política de autorização no script
+                - name: Criando um objeto de armazenamento de política de autorização no script
                   href: creating-an-authorization-policy-store-object-in-script.md
                 - name: Criando um objeto de aplicativo no script
                   href: creating-an-application-object-in-script.md
@@ -307,9 +307,9 @@
                   href: adding-users-to-an-application-group-in-script.md
             - name: Estabelecendo um contexto de cliente no script
               href: establishing-a-client-context-in-script.md
-            - name: Qualificando o acesso com a lógica de negócios no script
+            - name: Qualificando o acesso com lógica de negócios no script
               href: qualifying-access-with-business-logic-in-script.md
-    - name: Usando a API AuthZ
+    - name: Usando Authz API
       href: using-authz-api.md
       items:
         - name: Inicializando um contexto de cliente
@@ -318,9 +318,9 @@
           href: querying-a-client-context.md
         - name: Adicionando SIDs a um contexto de cliente
           href: adding-sids-to-a-client-context.md
-        - name: Verificando o acesso com a API AuthZ
+        - name: Verificando o acesso com Authz API
           href: checking-access-with-authz-api.md
-        - name: Cache de verificações de acesso
+        - name: Caching Verificações de acesso
           href: caching-access-checks.md
     - name: Referência de autorização
       href: authorization-reference.md
@@ -334,7 +334,7 @@
               href: app-container-sid-constants.md
             - name: Constantes de auditoria
               href: auditing-constants.md
-            - name: Constantes de SID de recurso
+            - name: Constantes sid de funcionalidade
               href: capability-sid-constants.md
             - name: Constantes de privilégio
               href: privilege-constants.md
@@ -343,9 +343,9 @@
           items:
             - name: ACCESS_MASK
               href: access-mask.md
-            - name: SECURITY_DESCRIPTOR_CONTROL
+            - name: Security_descriptor_control
               href: security-descriptor-control.md
-            - name: SECURITY_INFORMATION
+            - name: Security_information
               href: security-information.md
         - name: Enumerações de autorização
           href: authorization-enumerations.md
@@ -372,7 +372,7 @@
               href: /windows/win32/api/AccCtrl/ne-accctrl-multiple_trustee_operation
             - name: PROG_INVOKE_SETTING
               href: /windows/win32/api/accctrl/ne-accctrl-prog_invoke_setting
-            - name: SE_OBJECT_TYPE
+            - name: Se_object_type
               href: /windows/win32/api/AccCtrl/ne-accctrl-se_object_type
             - name: SECURITY_IMPERSONATION_LEVEL
               href: /windows/win32/api/Winnt/ne-winnt-security_impersonation_level
@@ -1723,14 +1723,14 @@
             - name: IAzTasks
               href: /windows/desktop/api/Azroles/nn-azroles-iaztasks
               items:
-                - name: Propriedades de IAzTasks
+                - name: Propriedades do IAzTasks
                   href: iaztasks-properties.md
                   items:
                     - name: Propriedade Count
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztasks-get_count
                     - name: Propriedade Item
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztasks-get_item
-                    - name: Propriedade _NewEnum
+                    - name: _NewEnum propriedade
                       href: /windows/desktop/api/Azroles/nf-azroles-iaztasks-get__newenum
             - name: IeAxiService
               href: ieaxiservice.md
@@ -1738,7 +1738,7 @@
                 - name: Métodos IeAxiService
                   href: ieaxiservice-methods.md
                   items:
-                    - name: Método de limpeza
+                    - name: Método cleanup
                       href: ieaxiservice-cleanup.md
                     - name: Método Initialize
                       href: ieaxiservice-initialize.md
@@ -1748,7 +1748,7 @@
                 - name: Métodos IeAxiServiceCallback
                   href: ieaxiservicecallback-methods.md
                   items:
-                    - name: Método VERIFYFILE
+                    - name: Método VerifyFile
                       href: ieaxiservicecallback-verifyfile.md
             - name: IeAxiSystemInstaller
               href: ieaxisysteminstaller.md
@@ -1783,13 +1783,13 @@
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getinherittypes
                     - name: Método GetObjectInformation
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getobjectinformation
-                    - name: Método getSecurity
+                    - name: Método GetSecurity
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-getsecurity
                     - name: Método MapGeneric
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-mapgeneric
                     - name: Método PropertySheetPageCallback
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-propertysheetpagecallback
-                    - name: Método setsecurity
+                    - name: Método SetSecurity
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityinformation-setsecurity
             - name: ISecurityInformation2
               href: /windows/desktop/api/aclui/nn-aclui-isecurityinformation2
@@ -1822,7 +1822,7 @@
                 - name: Métodos ISecurityObjectTypeInfo
                   href: isecurityobjecttypeinfo-methods.md
                   items:
-                    - name: Método getherdize
+                    - name: Método GetInheritSource
                       href: /windows/desktop/api/aclui/nf-aclui-isecurityobjecttypeinfo-getinheritsource
         - name: Objetos de autorização
           href: authorization-objects.md
@@ -1848,11 +1848,11 @@
               href: /windows/win32/api/Winnt/ns-winnt-access_denied_callback_object_ace
             - name: ACCESS_DENIED_OBJECT_ACE
               href: /windows/win32/api/Winnt/ns-winnt-access_denied_object_ace
-            - name: PERFEITA
+            - name: Ace
               href: ace.md
-            - name: ACE_HEADER
+            - name: Ace_header
               href: /windows/win32/api/Winnt/ns-winnt-ace_header
-            - name: LCA
+            - name: ACL
               href: /windows/win32/api/Winnt/ns-winnt-acl
             - name: ACL_REVISION_INFORMATION
               href: /windows/win32/api/Winnt/ns-winnt-acl_revision_information
@@ -1898,7 +1898,7 @@
               href: /windows/win32/api/Winnt/ns-winnt-generic_mapping
             - name: INHERITED_FROM
               href: /windows/win32/api/AccCtrl/ns-accctrl-inherited_froma
-            - name: LUID
+            - name: Luid
               href: /windows/win32/api/Winnt/ns-winnt-luid
             - name: LUID_AND_ATTRIBUTES
               href: /windows/win32/api/Winnt/ns-winnt-luid_and_attributes
@@ -1912,11 +1912,11 @@
               href: /windows/win32/api/Ntsecapi/ns-ntsecapi-policy_audit_sid_array
             - name: PRIVILEGE_SET
               href: /windows/win32/api/Winnt/ns-winnt-privilege_set
-            - name: SECURITY_ATTRIBUTES
+            - name: Security_attributes
               href: /previous-versions/windows/desktop/legacy/aa379560(v=vs.85)
             - name: SECURITY_CAPABILITIES
               href: /windows/win32/api/Winnt/ns-winnt-security_capabilities
-            - name: SECURITY_DESCRIPTOR
+            - name: Security_descriptor
               href: /windows/win32/api/Winnt/ns-winnt-security_descriptor
             - name: SECURITY_OBJECT
               href: /windows/win32/api/Aclui/ns-aclui-security_object
@@ -1976,7 +1976,7 @@
               href: /windows/win32/api/Winnt/ns-winnt-token_device_claims
             - name: TOKEN_ELEVATION
               href: /windows/win32/api/Winnt/ns-winnt-token_elevation
-            - name: TOKEN_GROUPS
+            - name: Token_groups
               href: /windows/win32/api/Winnt/ns-winnt-token_groups
             - name: TOKEN_GROUPS_AND_PRIVILEGES
               href: /windows/win32/api/Winnt/ns-winnt-token_groups_and_privileges
@@ -1992,7 +1992,7 @@
               href: /windows/win32/api/Winnt/ns-winnt-token_owner
             - name: TOKEN_PRIMARY_GROUP
               href: /windows/win32/api/Winnt/ns-winnt-token_primary_group
-            - name: TOKEN_PRIVILEGES
+            - name: Token_privileges
               href: /windows/win32/api/Winnt/ns-winnt-token_privileges
             - name: TOKEN_SOURCE
               href: /windows/win32/api/Winnt/ns-winnt-token_source
@@ -2002,76 +2002,76 @@
               href: /windows/win32/api/Winnt/ns-winnt-token_user
             - name: TOKEN_USER_CLAIMS
               href: /windows/win32/api/Winnt/ns-winnt-token_user_claims
-            - name: CONFIANÇA
+            - name: Administrador
               href: /windows/win32/api/AccCtrl/ns-accctrl-trustee_a
-    - name: Assembly Microsoft. Interop. Security. AzRoles
+    - name: Microsoft.Interop.Security.AzRoles Assembly
       href: microsoft-interop-security-azroles-assembly.md
       items:
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplication
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplication
           href: microsoft-interop-security-azroles-iazapplication-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplication2
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplication2
           href: microsoft-interop-security-azroles-iazapplication2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplication3
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplication3
           href: microsoft-interop-security-azroles-iazapplication3-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplicationGroup
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplicationGroup
           href: microsoft-interop-security-azroles-iazapplicationgroup-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplicationGroup2
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplicationGroup2
           href: microsoft-interop-security-azroles-iazapplicationgroup2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplicationGroups
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplicationGroups
           href: microsoft-interop-security-azroles-iazapplicationgroups-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzApplications
+        - name: Microsoft.Interop.Security.AzRoles.IAzApplications
           href: microsoft-interop-security-azroles-iazapplications-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore
+        - name: Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore
           href: microsoft-interop-security-azroles-azauthorizationstore-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore2
+        - name: Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2
           href: microsoft-interop-security-azroles-iazauthorizationstore2-interfac.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzAuthorizationStore3
+        - name: Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore3
           href: microsoft-interop-security-azroles-iazauthorizationstore3-interfac.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzBizRuleContext
+        - name: Microsoft.Interop.Security.AzRoles.IAzBizRuleContext
           href: microsoft-interop-security-azroles-azbizrulecontext-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzBizRuleInterfaces
+        - name: Microsoft.Interop.Security.AzRoles.IAzBizRuleInterfaces
           href: microsoft-interop-security-azroles-iazbizruleinterfaces-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzBizRuleParameters
+        - name: Microsoft.Interop.Security.AzRoles.IAzBizRuleParameters
           href: microsoft-interop-security-azroles-iazbizruleparameters-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzClientContext
+        - name: Microsoft.Interop.Security.AzRoles.IAzClientContext
           href: microsoft-interop-security-azroles-iazclientcontext-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzClientContext2
+        - name: Microsoft.Interop.Security.AzRoles.IAzClientContext2
           href: microsoft-interop-security-azroles-iazclientcontext2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzClientContext3
+        - name: Microsoft.Interop.Security.AzRoles.IAzClientContext3
           href: microsoft-interop-security-azroles-iazclientcontext3-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzNameResolver
+        - name: Microsoft.Interop.Security.AzRoles.IAzNameResolver
           href: microsoft-interop-security-azroles-iaznameresolver-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzObjectPicker
+        - name: Microsoft.Interop.Security.AzRoles.IAzObjectPicker
           href: microsoft-interop-security-azroles-iazobjectpicker-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzOperation
+        - name: Microsoft.Interop.Security.AzRoles.IAzOperation
           href: microsoft-interop-security-azroles-iazoperation-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzOperation2
+        - name: Microsoft.Interop.Security.AzRoles.IAzOperation2
           href: microsoft-interop-security-azroles-iazoperation2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzOperations
+        - name: Microsoft.Interop.Security.AzRoles.IAzOperations
           href: microsoft-interop-security-azroles-iazoperations-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzPrincipalLocator
+        - name: Microsoft.Interop.Security.AzRoles.IAzPrincipalLocator
           href: microsoft-interop-security-azroles-iazprincipallocator-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRole
+        - name: Microsoft.Interop.Security.AzRoles.IAzRole
           href: microsoft-interop-security-azroles-iazrole-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleAssignment
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleAssignment
           href: microsoft-interop-security-azroles-iazroleassignment-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleAssignments
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleAssignments
           href: microsoft-interop-security-azroles-iazroleassignments-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleDefinition
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleDefinition
           href: microsoft-interop-security-azroles-iazroledefinition-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoleDefinitions
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoleDefinitions
           href: microsoft-interop-security-azroles-iazroledefinitions-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzRoles
+        - name: Microsoft.Interop.Security.AzRoles.IAzRoles
           href: microsoft-interop-security-azroles-iazroles-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzScope
+        - name: Microsoft.Interop.Security.AzRoles.IAzScope
           href: microsoft-interop-security-azroles-iazscope-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzScope2
+        - name: Microsoft.Interop.Security.AzRoles.IAzScope2
           href: microsoft-interop-security-azroles-iazscope2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzScopes
+        - name: Microsoft.Interop.Security.AzRoles.IAzScopes
           href: microsoft-interop-security-azroles-iazscopes-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzTask
+        - name: Microsoft.Interop.Security.AzRoles.IAzTask
           href: microsoft-interop-security-azroles-iaztask-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzTask2
+        - name: Microsoft.Interop.Security.AzRoles.IAzTask2
           href: microsoft-interop-security-azroles-iaztask2-interface.md
-        - name: Microsoft. Interop. Security. AzRoles. IAzTasks
+        - name: Microsoft.Interop.Security.AzRoles.IAzTasks
           href: microsoft-interop-security-azroles-iaztasks-interface.md

@@ -1,9 +1,9 @@
 ---
-title: Tipo simples emptyobject
-description: Saiba mais sobre o tipo simples emptyobject, que não está em uso. Consulte requisitos e exiba recursos adicionais disponíveis.
+title: Tipo simples emptyString
+description: Saiba mais sobre o tipo simples emptyString, que não está em uso. Confira os requisitos e veja os recursos disponíveis adicionais.
 ms.assetid: e561b8d5-8683-41a1-bd72-73b1a767b6cf
 keywords:
-- tipo simples emptytype EAPHost
+- emptyString tipo simples EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 756c8976c8b989cf77be921491770fcff9ea62d5
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 4f210fadeb0097ffd7a11d80dd47b252dbbfdc614950af0ac07d612b44edd0aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104008387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948206"
 ---
-# <a name="emptystring-simple-type"></a>Tipo simples emptyobject
+# <a name="emptystring-simple-type"></a>Tipo simples emptyString
 
-O tipo simples **emptyobject** não está em uso.
+O **tipo simples emptyString** não está em uso.
 
 ``` syntax
 <xs:simpleType name="emptyString">
@@ -43,8 +43,8 @@ O tipo simples **emptyobject** não está em uso.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |-------------------------------------|------------------------------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

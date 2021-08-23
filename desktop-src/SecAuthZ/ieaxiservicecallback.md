@@ -1,5 +1,5 @@
 ---
-description: Chamado pela interface IeAxiSystemInstaller para verificar se um objeto ActiveX pode ser instalado.
+description: chamado pela interface IeAxiSystemInstaller para verificar se um objeto ActiveX pode ser instalado.
 ms.assetid: d5cd6263-d07e-4261-9463-b9a06e883f16
 title: Interface IeAxiServiceCallback
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3ad276126548ac6d5fdc2c828f722c90b43ad679
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3313a1744a1fb9a3b34549ca32bb9b0c7cf18977c7785075900c4a11425b5949
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908346"
 ---
 # <a name="ieaxiservicecallback-interface"></a>Interface IeAxiServiceCallback
 
-A interface **IeAxiServiceCallback** é chamada pela interface [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) para verificar se um objeto ActiveX pode ser instalado.
+a interface **IeAxiServiceCallback** é chamada pela interface [**IeAxiSystemInstaller**](ieaxisysteminstaller.md) para verificar se um objeto ActiveX pode ser instalado.
 
 A classe [**CIeAxiInstallerService**](cieaxiinstallerservice.md) implementa essa interface.
 
@@ -59,7 +59,7 @@ A interface **IeAxiServiceCallback** tem esses métodos.
 
 | Método                                                | Descrição                                                                                                                                    |
 |:------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Verificarfile**](ieaxiservicecallback-verifyfile.md) | Executa verificações de segurança no objeto ActiveX especificado e retorna o local onde o arquivo. cab correspondente foi baixado.<br/> |
+| [**Verificarfile**](ieaxiservicecallback-verifyfile.md) | executa verificações de segurança no objeto de ActiveX especificado e retorna o local onde o arquivo de .cab correspondente foi baixado.<br/> |
 
 
 
@@ -71,7 +71,7 @@ A interface **IeAxiServiceCallback** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Business, Windows Vista Enterprise, \[ somente aplicativos de área de trabalho do Windows Vista Ultimate\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows vista Business, Windows vista Enterprise, \[ somente os aplicativos de área de trabalho do Windows vista Ultimate\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiServiceCallback é definido como 1823E7BA-EC36-447A-9B2E-B4912E15AFE7<br/>                   |
 

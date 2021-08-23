@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2b273057bd990d90b1a206d10041692d17053ee
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 970bbf2628f0794cf4d77caecdfc90da05ac0f7bd9a83e54e0ab3f01877d1b21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105754840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924756"
 ---
 # <a name="last-logoff-attribute"></a>Last-Logoff atributo
 
@@ -58,7 +58,7 @@ Esse atributo não é usado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -79,7 +79,7 @@ Esse atributo não é usado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -100,7 +100,7 @@ Esse atributo não é usado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -121,10 +121,10 @@ Esse atributo não é usado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -142,10 +142,10 @@ Esse atributo não é usado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -163,10 +163,10 @@ Esse atributo não é usado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

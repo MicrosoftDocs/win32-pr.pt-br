@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8b4b31ab08aca476ced1cb28dfc5ed5bfe61d044
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8f49afb4175559bb5338c01c0ebb22fb89801aef5e7cafa62386e25c095ea139
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847297"
 ---
 # <a name="id3dxskininfogetboneinfluence-method"></a>Método ID3DXSkinInfo:: GetBoneInfluence
 
@@ -69,7 +69,7 @@ Obtenha a matriz de pesos influenciada por um Bone.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

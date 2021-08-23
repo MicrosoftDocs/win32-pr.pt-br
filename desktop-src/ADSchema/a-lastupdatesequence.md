@@ -1,11 +1,11 @@
 ---
 title: Atributo Last-Update-Sequence
-description: Esse atributo contém o número de sequência de atualização para o último item no repositório de classe que foi alterado.
+description: Esse atributo contém o número da sequência de atualização para o último item no armazenamento de classes que foi alterado.
 ms.assetid: fd434b8d-31b4-45f7-8d8f-048f61cabb92
 ms.tgt_platform: multiple
 keywords:
-- Último-Atualizar-esquema de sequência de atributos do AD
-- Esquema de AD do atributo lastUpdateSequence
+- Esquema do AD do atributo Last-Update-Sequence
+- Esquema do AD do atributo lastUpdateSequence
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e670c6784ded96a1e81d98f5f1c9bfb859efaa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c5ff31db81cbdbc1767c05cb2f4c7d366ad685c39cd873f15d2a113eb5b2dbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924686"
 ---
 # <a name="last-update-sequence-attribute"></a>Atributo Last-Update-Sequence
 
-Esse atributo contém o número de sequência de atualização para o último item no repositório de classe que foi alterado.
+Esse atributo contém o número da sequência de atualização para o último item no armazenamento de classes que foi alterado.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Última atualização-sequência                        |
-| LDAP-Display-Name | lastUpdateSequence                          |
+| CN                | Sequência de última atualização                        |
+| Ldap-Display-Name | lastUpdateSequence                          |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.330                      |
-| System-ID-GUID    | 7d6c0e9c-7e20-11d0-afd6-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 7d6c0e9c-7e20-11d0-afd6-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Esse atributo contém o número de sequência de atualização para o último it
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
-| No catálogo global      | Falso                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classes usadas em        | [**Armazenamento de classe**](c-classstore.md)<br/> [**Registro de pacote**](c-packageregistration.md)<br/> |
+| Classes usadas em        | [**Class-Store**](c-classstore.md)<br/> [**Registro de pacote**](c-packageregistration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo contém o número de sequência de atualização para o último it
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
-| No catálogo global      | Falso                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classes usadas em        | [**Armazenamento de classe**](c-classstore.md)<br/> [**Registro de pacote**](c-packageregistration.md)<br/> |
+| Classes usadas em        | [**Class-Store**](c-classstore.md)<br/> [**Registro de pacote**](c-packageregistration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esse atributo contém o número de sequência de atualização para o último it
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
-| No catálogo global      | Falso                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                    |
 | Range-Lower            | \-                                                                                                              |
 | Range-Upper            | \-                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                      |
-| Classes usadas em        | [**Armazenamento de classe**](c-classstore.md)<br/> [**Registro de pacote**](c-packageregistration.md)<br/> |
+| Classes usadas em        | [**Class-Store**](c-classstore.md)<br/> [**Registro de pacote**](c-packageregistration.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Esse atributo contém o número de sequência de atualização para o último it
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| É de valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
 | No catálogo global      | Falso                                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
@@ -142,7 +142,7 @@ Esse atributo contém o número de sequência de atualização para o último it
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| É de valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
 | No catálogo global      | Falso                                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |
@@ -163,7 +163,7 @@ Esse atributo contém o número de sequência de atualização para o último it
 | ID do link                | \-                                                                                                              |
 | MAPI-Id                | \-                                                                                                              |
 | System-Only            | Falso                                                                                                           |
-| É de valor único       | True                                                                                                            |
+| É de valor único       | Verdadeiro                                                                                                            |
 | É indexado             | Falso                                                                                                           |
 | No catálogo global      | Falso                                                                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                    |

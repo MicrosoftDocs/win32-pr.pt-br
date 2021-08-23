@@ -1,17 +1,17 @@
 ---
 description: As funções a seguir são usadas com pincéis.
 ms.assetid: 617eb778-876c-4bbb-90da-c5f13359becb
-title: Funções de pincel (GDI do Windows)
+title: funções de pincel (Windows GDI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2170ff5c4b743e19da669bd76b340ca95ac2ef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c44f122592e1f13186253b349089706686d352460a364e405c404fd326f64989
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849286"
 ---
-# <a name="brush-functions-windows-gdi"></a>Funções de pincel (GDI do Windows)
+# <a name="brush-functions-windows-gdi"></a>funções de pincel (Windows GDI)
 
 As funções a seguir são usadas com pincéis.
 

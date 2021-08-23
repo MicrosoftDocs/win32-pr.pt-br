@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca714dc17db60982e5ba047690886bc88aa79853
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac172605b387cc8d9b492cb4dd4692d84b70902c10d898b438ec025cb6c94a34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825496"
 ---
 # <a name="mdm_policy_config01_privacy02-class"></a>\_Classe MDM \_ Config01 \_ Privacy02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A **classe \_ \_ Config01 \_ Privacy02 de política de MDM** representa as políticas de pesquisa disponíveis.
 
@@ -803,7 +803,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -814,7 +814,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -825,7 +825,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -836,7 +836,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -847,7 +847,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -858,7 +858,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -869,7 +869,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -880,7 +880,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -891,7 +891,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -902,7 +902,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -913,7 +913,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -924,7 +924,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -935,7 +935,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -946,7 +946,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -957,7 +957,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -968,7 +968,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -979,12 +979,12 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -1006,7 +1006,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -1017,10 +1017,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

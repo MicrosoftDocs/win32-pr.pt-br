@@ -4,12 +4,12 @@ ms.assetid: 8703ee74-812a-4ca2-8ee3-a3b8779739e7
 title: Mensagem de WM_PRINTCLIENT (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52aca68695964a35ab9a2c4e309cd71c2e9f7eca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 807c12ca4d0a5fe5f1e2a12aecd3b3148d936119f72771e811fe85d5b0af3abf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717656"
 ---
 # <a name="wm_printclient-message"></a>Mensagem do WM \_ FILEclient
 
@@ -66,7 +66,7 @@ As opções de desenho. Esse parâmetro pode ser um ou mais dos valores a seguir
 
 Uma janela pode processar essa mensagem da mesma maneira que o [**WM \_ Paint**](./wm-paint.md), exceto que [**BeginPaint**](/windows/desktop/api/Winuser/nf-winuser-beginpaint) e [**EndPaint**](/windows/desktop/api/Winuser/nf-winuser-endpaint) não precisam ser chamados (um contexto de dispositivo é fornecido) e a janela deve desenhar toda a área do cliente em vez de apenas a região inválida.
 
-As janelas que podem ser usadas em qualquer lugar no sistema, como controles, devem processar essa mensagem. Provavelmente vale a pena que outras janelas processem essa mensagem também porque é relativamente fácil de implementar.
+Windows que podem ser usadas em qualquer lugar no sistema, como controles, devem processar essa mensagem. Provavelmente vale a pena que outras janelas processem essa mensagem também porque é relativamente fácil de implementar.
 
 A função [AnimateWindow](/windows/desktop/api/winuser/nf-winuser-animatewindow) requer que a janela que está sendo animada implemente a mensagem do **WM \_ fileclient** .
 
@@ -78,7 +78,7 @@ A função [AnimateWindow](/windows/desktop/api/winuser/nf-winuser-animatewindow
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

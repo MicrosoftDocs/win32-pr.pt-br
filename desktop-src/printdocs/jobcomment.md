@@ -1,21 +1,21 @@
 ---
-description: Saiba mais sobre o elemento JobComment, que especifica um comentário associado ao trabalho, por exemplo, Entregue à sala 1234 quando concluído.
+description: Saiba mais sobre o elemento JobComment, que especifica um comentário associado ao trabalho, por exemplo, forneça à sala 1234 quando concluído.
 ms.assetid: 100fe310-8e64-453f-8eaf-10abaf8b10b7
 title: JobComment
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1decf4cf3af7b3a992b07d8008579ac005d3d14e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 8132d3a6f1b7f488fe1f88e04d134b7d60cad8c415419b61ba794445aab44e95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845966"
 ---
 # <a name="jobcomment"></a>JobComment
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica um comentário associado ao trabalho. Exemplo: "Entregue ao quarto 1234 quando concluído".
+Especifica um comentário associado ao trabalho. Exemplo: "forneça a sala 1234 quando concluído".
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -24,10 +24,10 @@ Especifica um comentário associado ao trabalho. Exemplo: "Entregue ao quarto 12
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
-| Prefixo de definição de scoping <br/> | Trabalho<br/>          |
+| Prefixo de escopo <br/> | Trabalho<br/>          |
 | Observações <br/>          | Nenhum<br/>         |
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| Minlength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
-| Unittype<br/>     | string<br/>  | characters<br/>      |
+| MinLength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
+| UnitType<br/>     | string<br/>  | characters<br/>      |
 
 
 

@@ -3,7 +3,7 @@ title: Código de notificação do NM_RELEASEDCAPTURE (pager) (commctrl. h)
 description: Notifica uma janela pai do controle de pager que o controle liberou a captura do mouse. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 5ce9c38a-5d37-4ac7-8510-30bc59d85cca
 keywords:
-- Código de notificação do NM_RELEASEDCAPTURE (pager) controles do Windows
+- código de notificação do NM_RELEASEDCAPTURE (pager) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fb1d258d9baa0952e1707e36884a492ff65f99b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f857f64b6964d9258aca6cb923553a85e11e8b0fd9931c3fe2ceb4050038a7ce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826056"
 ---
 # <a name="nm_releasedcapture-pager-notification-code"></a>\_Código de notificação do nm RELEASEDCAPTURE (pager)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado pelo controle de pager.
 
@@ -55,9 +55,9 @@ O valor de retorno é ignorado pelo controle de pager.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
