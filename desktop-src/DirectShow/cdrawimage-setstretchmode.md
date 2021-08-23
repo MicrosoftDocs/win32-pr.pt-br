@@ -1,7 +1,7 @@
 ---
-description: O método setstretchmode calcula se a imagem de vídeo deve ser ampliada.
+description: O método SetStretchMode calcula se a imagem de vídeo deve ser alongada.
 ms.assetid: ffdcaf9c-e157-4557-9193-8430c1c451bf
-title: Método CDrawImage. setstretchmode (Winutil. h)
+title: Método CDrawImage.SetStretchMode (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 33a4b3a6b104b9e2888776cc59183835f412fdcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3886910bce57aca728f64ffbe9d660c1073d1281864a7721faa7e757c7c7d81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526486"
 ---
-# <a name="cdrawimagesetstretchmode-method"></a>Método CDrawImage. setstretchmode
+# <a name="cdrawimagesetstretchmode-method"></a>Método CDrawImage.SetStretchMode
 
-O `SetStretchMode` método calcula se a imagem de vídeo deve ser ampliada.
+O `SetStretchMode` método calcula se a imagem de vídeo deve ser alongada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ void SetStretchMode();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CDrawImage** chama esse método automaticamente sempre que o retângulo de origem ou de destino é alterado.
+A **classe CDrawImage chama** automaticamente esse método sempre que o retângulo de origem ou de destino muda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ A classe **CDrawImage** chama esse método automaticamente sempre que o retângu
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

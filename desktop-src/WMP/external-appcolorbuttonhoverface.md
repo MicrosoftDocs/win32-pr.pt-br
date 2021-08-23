@@ -3,7 +3,7 @@ title: External. appColorButtonHoverFace
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External. appColorButtonHoverFace
 ms.assetid: bf3a0898-b2fb-48bf-84b2-11e9aada4bf3
 keywords:
-- Windows Media Player externo. appColorButtonHoverFace
+- Windows Media Player external. appColorButtonHoverFace
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ef3a654ee5468595d48ca5cd56144c4bf1f5de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bcebb6f48d82f0d91e3431052e6a10ddcbe2c1566e2337aa7160ab34077c6b1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649936"
 ---
 # <a name="externalappcolorbuttonhoverface"></a>External. appColorButtonHoverFace
 
@@ -28,7 +28,7 @@ ms.locfileid: "105784200"
 
  
 
-A propriedade **appColorButtonHoverFace** recupera a cor de foco do botão atual para a interface do usuário do Windows Media Player. Essa cor é exibida quando o usuário move o ponteiro do mouse sobre um botão.
+a propriedade **appColorButtonHoverFace** recupera a cor de foco do botão atual para a interface do usuário do Windows Media Player. Essa cor é exibida quando o usuário move o ponteiro do mouse sobre um botão.
 
 ``` syntax
 window.external.appColorButtonHoverFace
@@ -41,7 +41,7 @@ Esta propriedade é uma **cadeia de caracteres** somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Os usuários podem alterar a cor da interface do usuário do Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
+os usuários podem alterar a cor da interface do usuário Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
 
 ## <a name="requirements"></a>Requisitos
 

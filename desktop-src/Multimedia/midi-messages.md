@@ -12,31 +12,31 @@ keywords:
 - Mensagens MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63a49e918a4f06efbafd5d8f61848111d3331153
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c45c7c9f101c931591857d3957df0f0cfd00a4ecaff61c31f6f69ef24b36deff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525126"
 ---
 # <a name="midi-messages"></a>Mensagens MIDI
 
 As mensagens a seguir são usadas com MIDI.
 
--   [**próximo a MIM \_**](mim-close.md)
--   [**dados do MIM \_**](mim-data.md)
--   [**erro do MIM \_**](mim-error.md)
--   [**\_LONGDATA mim**](mim-longdata.md)
--   [**\_LONGERROR mim**](mim-longerror.md)
--   [**\_MOREDATA mim**](mim-moredata.md)
--   [**MIM \_ aberto**](mim-open.md)
--   [**Eu \_ fechar do mim \_**](mm-mim-close.md)
--   [**\_dados do mim mm \_**](mm-mim-data.md)
--   [**\_erro do mim mm \_**](mm-mim-error.md)
--   [**\_LONGDATA do mim mm \_**](mm-mim-longdata.md)
--   [**\_LONGERROR do mim mm \_**](mm-mim-longerror.md)
--   [**\_MOREDATA do mim mm \_**](mm-mim-moredata.md)
--   [**MIM de MM \_ \_ aberto**](mm-mim-open.md)
+-   [**MIM \_ INCLUI**](mim-close.md)
+-   [**MIM \_ DADO**](mim-data.md)
+-   [**MIM \_ AO**](mim-error.md)
+-   [**MIM \_ LONGDATA**](mim-longdata.md)
+-   [**MIM \_ LONGERROR**](mim-longerror.md)
+-   [**MIM \_ MOREDATA**](mim-moredata.md)
+-   [**MIM \_ ABRIR**](mim-open.md)
+-   [**MM \_ MIM \_ fechar**](mm-mim-close.md)
+-   [**\_dados de MIM MM \_**](mm-mim-data.md)
+-   [**\_erro de MIM MM \_**](mm-mim-error.md)
+-   [**MM \_ MIM \_ LONGDATA**](mm-mim-longdata.md)
+-   [**MM \_ MIM \_ LONGERROR**](mm-mim-longerror.md)
+-   [**MM \_ MIM \_ MOREDATA**](mm-mim-moredata.md)
+-   [**MM \_ MIM \_ abrir**](mm-mim-open.md)
 -   [**\_fechamento do MOM mm \_**](mm-mom-close.md)
 -   [**\_Mom mm \_ concluído**](mm-mom-done.md)
 -   [**\_Mom mm \_ aberto**](mm-mom-open.md)
@@ -53,9 +53,9 @@ As mensagens a seguir são usadas com MIDI.
 [Referência de MIDI](midi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

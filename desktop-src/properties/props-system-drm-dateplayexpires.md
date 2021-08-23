@@ -4,12 +4,12 @@ ms.assetid: 11b173bc-545a-4e98-91c8-f97a4108a9e1
 title: System. DRM. DatePlayExpires
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad4f3e26e88f52a370bcd4f018a9f65dfd1941e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 710a7d41a38d733def89587a1f313bbabafd01485cd4b0d4f7d49a8ed25feeaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105800113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597896"
 ---
 # <a name="systemdrmdateplayexpires"></a>System. DRM. DatePlayExpires
 

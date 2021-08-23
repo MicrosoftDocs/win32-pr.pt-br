@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d0dd2906bee79aff6ad69ef494fa7164aa338d1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6f611b94c0de5a4005494ba87285918fbc0509f726c32d7d423e4dada274b0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553086"
 ---
 # <a name="category-id-attribute"></a>Category-Id atributo
 
@@ -58,7 +58,7 @@ A ID de uma categoria de componente.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ A ID de uma categoria de componente.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -100,7 +100,7 @@ A ID de uma categoria de componente.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -108,7 +108,7 @@ A ID de uma categoria de componente.
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A ID de uma categoria de componente.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 16                                                                 |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A ID de uma categoria de componente.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 16                                                                 |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A ID de uma categoria de componente.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 16                                                                 |
 | Range-Upper            | 16                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**Categoria-registro**](c-categoryregistration.md)<br/> |
+| Classes usadas em        | [**Registro de categoria**](c-categoryregistration.md)<br/> |
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: Trabalhando com codec MFTs
+description: Trabalhando com MFTs codec
 ms.assetid: 61567043-e76e-4166-9344-c57661e5752a
-title: Trabalhando com codec MFTs
+title: Trabalhando com MFTs codec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 008610dbf6bf17205de15b89440d1bdacee3c489
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf39b4a413059542ff05dd0fb2e82c3a89117018ba68f489a968c85423e82866
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602206"
 ---
-# <a name="working-with-codec-mfts"></a>Trabalhando com codec MFTs
+# <a name="working-with-codec-mfts"></a>Trabalhando com MFTs codec
 
-Esta seção fornece uma visão geral das noções básicas de como trabalhar com codecs como transformações de Media Foundation (MFTs). Ele inclui os tópicos a seguir.
+Esta seção fornece uma visão geral dos conceitos básicos de trabalhar com codecs como Media Foundation transformação (MFTs). Ele inclui os tópicos a seguir.
 
 
 
 | Seção                                                                                | Descrição                                                                        |
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Criando uma instância do codec MFTs](instantiatingcodecmfts.md)                                 | Explica como criar instâncias do codec DirectX Media Objects (MFTs).        |
-| [Trabalhando com tipos de mídia MFT](workingwithmftmediatypes.md)                           | Discute as estruturas que são usadas pelo codec MFTs para descrever os tipos de mídia.  |
-| [Trabalhando com exemplos e buffers de mídia de MFT](workingwithmftmediabuffersandsamples.md) | Discute os buffers que você deve criar para processar amostras com o codec MFTs. |
-| [Configurando o codec MFTs](configuringcodecmfts.md)                                     | Descreve a sequência para configurar o codec MFTs.                             |
-| [Entrada e saída de MFT do codec de processamento](processingcodecmftinputandoutput.md)          | Descreve como processar entradas e saídas usando o codec MFTs.               |
+| [Instançando MFTs codec](instantiatingcodecmfts.md)                                 | Explica como criar instâncias do codec DirectX Media Objects (MFTs).        |
+| [Trabalhando com tipos de mídia MFT](workingwithmftmediatypes.md)                           | Discute as estruturas que são usadas pelos MFTs codec para descrever tipos de mídia.  |
+| [Trabalhando com buffers e exemplos de mídia MFT](workingwithmftmediabuffersandsamples.md) | Discute os buffers que você deve criar para processar exemplos com os MFTs de codec. |
+| [Configurando MFTs do Codec](configuringcodecmfts.md)                                     | Descreve a sequência para configurar os MFTs codec.                             |
+| [Ing Codec MFT Input and Output](processingcodecmftinputandoutput.md)          | Descreve como processar entradas e saídas usando os MFTs codec.               |
 
 
 

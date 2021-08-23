@@ -1,56 +1,56 @@
 ---
-title: Gerenciamento de recursos do Fence-Based
-description: Mostra como gerenciar o tempo de vida de dados de recursos rastreando o progresso da GPU por meio de limites. A memória pode ser efetivamente reutilizada com limites que gerenciam cuidadosamente a disponibilidade de espaço livre na memória, como em uma implementação de buffer de anéis para um heap de carregamento.
+title: Gerenciamento de recursos baseados em limites
+description: Mostra como gerenciar o tempo de vida dos dados de recurso acompanhando o progresso da GPU por meio de cercas. A memória pode ser efetivamente re usada com cercas que gerenciam cuidadosamente a disponibilidade de espaço livre na memória, como em uma implementação de buffer de anéis para um heap de Upload.
 ms.assetid: A7AB6569-EC6B-4B1B-9266-D05B6DB3A27B
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aba8afd66f8a50a54b699c6a314ba148ebcef023
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0cbfd9231e3013099c8382072049f1ae1478e28f00830e89fb4ecef1b835ce58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74103610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728850"
 ---
-# <a name="fence-based-resource-management"></a>Gerenciamento de recursos do Fence-Based
+# <a name="fence-based-resource-management"></a>Gerenciamento de recursos baseados em limites
 
-Mostra como gerenciar o tempo de vida de dados de recursos rastreando o progresso da GPU por meio de limites. A memória pode ser efetivamente reutilizada com limites que gerenciam cuidadosamente a disponibilidade de espaço livre na memória, como em uma implementação de buffer de anéis para um heap de carregamento.
+Mostra como gerenciar o tempo de vida dos dados de recurso acompanhando o progresso da GPU por meio de cercas. A memória pode ser efetivamente re usada com cercas que gerenciam cuidadosamente a disponibilidade de espaço livre na memória, como em uma implementação de buffer de anéis para um heap de Upload.
 
 -   [Cenário de buffer de anéis](#ring-buffer-scenario)
--   [Amostra de buffer de anel](#ring-buffer-sample)
+-   [Exemplo de buffer de anéis](#ring-buffer-sample)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="ring-buffer-scenario"></a>Cenário de buffer de anéis
 
-Veja a seguir um exemplo em que um aplicativo passa por uma demanda rara para carregar a memória do heap.
+A seguir está um exemplo no qual um aplicativo passa por uma demanda rara de carregamento de memória de heap.
 
-Um buffer de anéis é uma maneira de gerenciar um heap de carregamento. O buffer de anéis armazena os dados necessários para os próximos quadros. O aplicativo mantém um ponteiro de entrada de dados atual e uma fila de deslocamento de quadro para registrar cada quadro e iniciar o deslocamento dos dados de recurso para esse quadro.
+Um buffer de anéis é uma maneira de gerenciar um heap de upload. O buffer de anéis contém os dados necessários para os próximos quadros. O aplicativo mantém um ponteiro de entrada de dados atual e uma fila de deslocamento de quadro para registrar cada quadro e o deslocamento inicial dos dados do recurso para esse quadro.
 
-Um aplicativo cria um buffer de anéis com base em um buffer para carregar dados para a GPU de cada quadro. Atualmente, o quadro 2 foi renderizado, o buffer de anéis encapsula os dados do quadro 4, todos os dados necessários para o quadro 5 estão presentes e um buffer de constante grande necessário para o quadro 6 precisa ser subalocado.
+Um aplicativo cria um buffer de anéis com base em um buffer para carregar dados para a GPU de cada quadro. Atualmente, o quadro 2 foi renderizado, o buffer de anéis envolve os dados do quadro 4, todos os dados necessários para o quadro 5 estão presentes e um buffer constante grande necessário para o quadro 6 precisa ser sublocado.
 
-**Figura 1** : o aplicativo tenta subalocar para o buffer de constantes, mas localiza memória livre insuficiente.
+**Figura 1:** o aplicativo tenta sublocar para o buffer constante, mas encontra memória livre insuficiente.
 
 ![memória livre insuficiente neste buffer de anéis](images/ring-buffer-1.png)
 
-**Figura 2** : por meio da sondagem de cerca, o aplicativo descobre que o quadro 3 foi renderizado, a fila de deslocamento de quadros é atualizada e o estado atual do buffer de anéis segue-no entanto, a memória livre ainda não é grande o suficiente para acomodar o buffer de constantes.
+**Figura 2:** por meio da sondagem de cerca, o aplicativo descobre que o quadro 3 foi renderizado, a fila de deslocamento do quadro é atualizada e o estado atual do buffer de anéis segue - no entanto, a memória livre ainda não é grande o suficiente para acomodar o buffer constante.
 
-![Ainda não há memória suficiente após o quadro 3 ter processado](images/ring-buffer-2.png)
+![memória ainda insuficiente após o quadro 3 ter sido renderizado](images/ring-buffer-2.png)
 
-**Figura 3** : dada a situação, a CPU bloqueia a si mesma (por meio de espera de cerca) até que o quadro 4 tenha sido renderizado, liberando a memória alocada para o quadro 4.
+**Figura 3:** dada a situação, a CPU se bloqueia (por meio de espera de cerca) até que o quadro 4 tenha sido renderizado, o que libera a memória sublocada para o quadro 4.
 
-![o quadro de renderização 4 libera mais do que o buffer de anéis](images/ring-buffer-3.png)
+![renderização do quadro 4 libera mais do buffer de anéis](images/ring-buffer-3.png)
 
-**Figura 4** : agora a memória livre é grande o suficiente para o buffer de constantes e a subalocação é realizada com sucesso; o aplicativo copia os dados de buffer de grande constante para a memória usada anteriormente pelos dados de recurso para os dois quadros 3 e 4. O ponteiro de entrada atual é finalmente atualizado.
+**Figura 4:** agora a memória livre é grande o suficiente para o buffer constante e a subatribuição é bem-sucedida; o aplicativo copia os dados de buffer de constante grande para a memória usada anteriormente pelos dados de recurso para os quadros 3 e 4. O ponteiro de entrada atual é finalmente atualizado.
 
-![Agora há espaço do quadro 6 no buffer de anéis](images/ring-buffer-4.png)
+![agora há espaço do quadro 6 no buffer de anéis](images/ring-buffer-4.png)
 
-Se um aplicativo implementa um buffer de anéis, o buffer de anéis deve ser grande o suficiente para lidar com o cenário de pior caso dos tamanhos dos dados do recurso.
+Se um aplicativo implementar um buffer de anéis, o buffer de anéis deverá ser grande o suficiente para lidar com o cenário pior dos tamanhos de dados de recurso.
 
-## <a name="ring-buffer-sample"></a>Amostra de buffer de anel
+## <a name="ring-buffer-sample"></a>Exemplo de buffer de anéis
 
-O código de exemplo a seguir mostra como um buffer de anéis pode ser gerenciado, prestando atenção à rotina de subalocação que lida com a sondagem de cerca e espera. Para simplificar, o exemplo usa \_ memória insuficiente \_ para ocultar os detalhes de "memória livre insuficiente encontrada no heap", pois essa lógica (com base em *m \_ pDataCur* e deslocamentos dentro de *FrameOffsetQueue*) não está estreitamente relacionada a heaps ou limites. O exemplo é simplificado para sacrificar a taxa de quadros em vez da utilização de memória.
+O código de exemplo a seguir mostra como um buffer de anéis pode ser gerenciado, preste atenção à rotina de subatribuição que lida com sondagem de cerca e espera. Para simplificar, o exemplo usa NOT SUFFICIENT MEMORY para ocultar os detalhes de "memória livre insuficiente encontrada no heap", pois essa lógica (com base em \_ m \_ *\_ pDataCur* e deslocamentos dentro de *FrameOffsetQueue*) não está fortemente relacionada a heaps ou cercas. O exemplo é simplificado para simplificar a taxa de quadros em vez da utilização de memória.
 
-Observe que o suporte ao buffer de anéis deve ser um cenário popular; no entanto, o design de heap não impede outro uso, como parametrização de lista de comandos e reutilização.
+Observe que o suporte a buffer de anéis deve ser um cenário popular; no entanto, o design do heap não impede outro uso, como parametrização e rea utilização da lista de comandos.
 
 ``` syntax
 struct FrameResourceOffset
@@ -152,9 +152,9 @@ void FreeUpMemoryUntilFrame(UINT lastCompletedFrame)
 [Subalocação em buffers](large-buffers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

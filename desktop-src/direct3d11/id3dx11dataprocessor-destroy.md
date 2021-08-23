@@ -1,6 +1,6 @@
 ---
 title: Método Destroy ID3DX11DataProcessor (D3DX11core. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Destrói o processador após a conclusão de um item de trabalho.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Destrói o processador após a conclusão de um item de trabalho.
 ms.assetid: 759641c0-ef86-42ee-88b9-3fcb7a171d86
 keywords:
 - Método Destroy Direct3D 11
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af92f8b3a22ba9a62258e8b24589a662eda22592
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0a0968ff090f01a27cb18d3fff0e6dbd499c05c95cd558a2eba805dd91a153c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632922"
 ---
 # <a name="id3dx11dataprocessordestroy-method"></a>ID3DX11DataProcessor: método estroy de:D
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -46,7 +46,7 @@ HRESULT Destroy();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

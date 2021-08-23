@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fea580294f54b6e2fc5c3e5b6aee1119811c22e8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3cbb4eef2f744c78e84999e9f07f3ca5a06d5dbf93dbfa26d5c6593d94d4e19d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119576136"
 ---
 # <a name="imageliststateflags"></a>IMAGELISTSTATEFLAGS
 
@@ -32,8 +32,8 @@ Os sinalizadores a seguir são passados para o método [**bruto IImageList::D**]
 | Constante/valor                                                                                                                                                                                                             | Descrição                                                                                                                                                                                                                                                                                                                                                                                   |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="ILS_NORMAL"></span><span id="ils_normal"></span><dl> <dt>**ILS \_ NORMAL**</dt> <dt>0x00000000</dt> </dl>       | O estado da imagem não é modificado.<br/>                                                                                                                                                                                                                                                                                                                                                   |
-| <span id="ILS_GLOW"></span><span id="ils_glow"></span><dl> <dt>**ILS \_ BRILHO**</dt> <dt>0x00000001</dt> </dl>             | Não há suporte. <br/>                                                                                                                                                                                                                                                                                                                                                                    |
-| <span id="ILS_SHADOW"></span><span id="ils_shadow"></span><dl> <dt>**ILS \_ SOMBRA**</dt> <dt>0x00000002</dt> </dl>       | Não há suporte. <br/>                                                                                                                                                                                                                                                                                                                                                                    |
+| <span id="ILS_GLOW"></span><span id="ils_glow"></span><dl> <dt>**ILS \_ BRILHO**</dt> <dt>0x00000001</dt> </dl>             | Sem suporte. <br/>                                                                                                                                                                                                                                                                                                                                                                    |
+| <span id="ILS_SHADOW"></span><span id="ils_shadow"></span><dl> <dt>**ILS \_ SOMBRA**</dt> <dt>0x00000002</dt> </dl>       | Sem suporte. <br/>                                                                                                                                                                                                                                                                                                                                                                    |
 | <span id="ILS_SATURATE"></span><span id="ils_saturate"></span><dl> <dt>**ILS \_ Saturação**</dt> <dt>0x00000004</dt> </dl> | Reduz a saturação de cor do ícone para escala de cinza. Isso afeta apenas as imagens 32 bpp. <br/>                                                                                                                                                                                                                                                                                            |
 | <span id="ILS_ALPHA"></span><span id="ils_alpha"></span><dl> <dt>**ILS \_**</dt> <dt>0x00000008</dt> alfa </dl>          | Alfa mistura o ícone. A mesclagem alfa controla o nível de transparência de um ícone, de acordo com o valor de seu canal alfa. O valor do canal alfa é indicado pelo membro de **quadro** no método [**IMAGELISTDRAWPARAMS**](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) . O canal alfa pode ser de 0 a 255, sendo que 0 é completamente transparente e 255 sendo completamente opaco.<br/> |
 
@@ -45,9 +45,9 @@ Os sinalizadores a seguir são passados para o método [**bruto IImageList::D**]
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

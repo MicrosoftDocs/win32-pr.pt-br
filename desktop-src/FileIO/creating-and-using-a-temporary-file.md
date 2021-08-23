@@ -4,16 +4,16 @@ ms.assetid: 6254c67d-5d34-499d-b1a4-8cac526dd294
 title: Criando e usando um arquivo temporário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ca18b7b72aab7c53bea95c38147af66f2b7fef9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f242b9b021744c42e7e1b8745c7eec2b6388249246872192ecfd6308bdab55af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650416"
 ---
 # <a name="creating-and-using-a-temporary-file"></a>Criando e usando um arquivo temporário
 
-Os aplicativos podem obter nomes de arquivo e caminho exclusivos para arquivos temporários usando as funções [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) e [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) . A função **GetTempFileName** gera um nome de arquivo exclusivo e a função **GetTempPath** recupera o caminho para um diretório em que os arquivos temporários devem ser criados.
+Os aplicativos podem obter nomes de arquivo e caminho exclusivos para arquivos temporários usando as funções [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) e [**GetTempPath.**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) A **função GetTempFileName** gera um nome de arquivo exclusivo e a função **GetTempPath** recupera o caminho para um diretório em que arquivos temporários devem ser criados.
 
 O procedimento a seguir descreve como um aplicativo cria um arquivo temporário para fins de manipulação de dados.
 
@@ -22,20 +22,20 @@ O procedimento a seguir descreve como um aplicativo cria um arquivo temporário 
 1.  O aplicativo abre o arquivo de texto de origem fornecido pelo usuário usando [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea).
 2.  O aplicativo recupera um caminho de arquivo temporário e um nome de arquivo usando as funções [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) e [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) e, em seguida, usa [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) para criar o arquivo temporário.
 3.  O aplicativo lê blocos de dados de texto em um buffer, converte o conteúdo do buffer em maiúsculas usando a função [CharUpperBuffA](/windows/win32/api/winuser/nf-winuser-charupperbuffa) e grava o buffer convertido no arquivo temporário.
-4.  Quando todo o arquivo de origem é gravado no arquivo temporário, o aplicativo fecha os dois arquivos e renomeia o arquivo temporário para "allcaps.txt" usando a função [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa) .
+4.  Quando todo o arquivo de origem é gravado no arquivo temporário, o aplicativo fecha os dois arquivos e renomeia o arquivo temporário como "allcaps.txt" usando a [**função MoveFileEx.**](/windows/desktop/api/WinBase/nf-winbase-movefileexa)
 
-Cada uma das etapas anteriores é verificada em busca de sucesso antes de passar para a próxima etapa, e uma descrição de falha será exibida se ocorrer um erro. O aplicativo será encerrado imediatamente após a exibição da mensagem de erro.
+Cada uma das etapas anteriores é verificada quanto ao sucesso antes de passar para a próxima etapa e uma descrição de falha é exibida se ocorrer um erro. O aplicativo será encerrado imediatamente depois de exibir a mensagem de erro.
 
-Observe que a manipulação do arquivo de texto foi escolhida apenas para facilitar a demonstração e pode ser substituída por qualquer procedimento de manipulação de dados desejado. O arquivo de dados pode ser de qualquer tipo de dados, não apenas texto.
+Observe que a manipulação de arquivo de texto foi escolhida apenas para facilitar a demonstração e pode ser substituída por qualquer procedimento de manipulação de dados desejado necessário. O arquivo de dados pode ser de qualquer tipo de dados, não apenas texto.
 
-A função [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) recupera uma cadeia de caracteres de caminho totalmente qualificada de uma variável de ambiente, mas não verifica antecipadamente a existência do caminho ou dos direitos de acesso adequados a esse caminho, que é responsabilidade do desenvolvedor do aplicativo. Para obter mais informações, consulte [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha). No exemplo a seguir, um erro é considerado uma condição de terminal e o aplicativo é encerrado após o envio de uma mensagem descritiva para a saída padrão. No entanto, existem muitas outras opções, como solicitar ao usuário um diretório temporário ou simplesmente tentar usar o diretório atual.
+A [**função GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) recupera uma cadeia de caracteres de caminho totalmente qualificada de uma variável de ambiente, mas não verifica com antecedência a existência do caminho ou os direitos de acesso adequados para esse caminho, que é de responsabilidade do desenvolvedor do aplicativo. Para obter mais informações, [**consulte GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha). No exemplo a seguir, um erro é considerado como uma condição de terminal e o aplicativo sai depois de enviar uma mensagem descritiva para a saída padrão. No entanto, existem muitas outras opções, como solicitar ao usuário um diretório temporário ou simplesmente tentar usar o diretório atual.
 
 > [!Note]  
-> A função [**GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) não requer que a função [**GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) seja usada.
+> A [**função GetTempFileName**](/windows/desktop/api/FileAPI/nf-fileapi-gettempfilenamea) não exige que a [**função GetTempPath**](/windows/desktop/api/FileAPI/nf-fileapi-gettemppatha) seja usada.
 
  
 
-O exemplo de C++ a seguir mostra como criar um arquivo temporário para fins de manipulação de dados.
+O exemplo C++ a seguir mostra como criar um arquivo temporário para fins de manipulação de dados.
 
 
 ```C++

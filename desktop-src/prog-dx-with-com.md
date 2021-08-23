@@ -3,12 +3,12 @@ description: Programando DirectX com com.
 title: Programando DirectX com com
 ms.topic: article
 ms.date: 01/29/2019
-ms.openlocfilehash: 67fc7a35f42439e1a9eeef1b2895d88dc0dbf5d4
-ms.sourcegitcommit: f712e5fed19d6afe2762a77ffcdf8b5977f85901
+ms.openlocfilehash: 660f030e56d0b84325f7b90a9e2cc8e3864587660dd452611f41c78241220f54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "103923018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600196"
 ---
 # <a name="programming-directx-with-com"></a>Programando DirectX com com
 
@@ -31,7 +31,7 @@ Na prática, isso parece ser semelhante à chamada de métodos em um objeto C++ 
 - Um objeto COM não é criado da mesma maneira que um objeto C++. Há várias maneiras de criar um objeto COM, mas todos envolvem técnicas específicas de COM. A API do DirectX inclui uma variedade de funções auxiliares e métodos que simplificam a criação da maioria dos objetos COM do DirectX.
 - Você deve usar técnicas específicas do COM para controlar o tempo de vida de um objeto COM.
 - O servidor COM (normalmente uma DLL) não precisa ser carregado explicitamente. Não é possível vincular a uma biblioteca estática para usar um componente COM. Cada componente COM tem um identificador exclusivo registrado (um identificador global exclusivo, ou GUID), que seu aplicativo usa para identificar o objeto COM. Seu aplicativo identifica o componente e o tempo de execução COM carrega automaticamente a DLL correta do servidor COM.
-- COM é uma especificação binária. Objetos COM podem ser gravados e acessados em uma variedade de idiomas. Você não precisa saber nada sobre o código-fonte do objeto. Por exemplo, Visual Basic aplicativos usam rotineiramente objetos COM que foram escritos em C++.
+- COM é uma especificação binária. Objetos COM podem ser gravados e acessados em uma variedade de idiomas. Você não precisa saber nada sobre o código-fonte do objeto. por exemplo, Visual Basic aplicativos usam rotineiramente objetos COM que foram escritos em C++.
 
 ## <a name="component-object-and-interface"></a>Componente, objeto e interface
 
@@ -71,13 +71,13 @@ A maioria dos métodos COM retorna um inteiro de 32 bits chamado **HRESULT**. Co
 - Se o método teve êxito ou falhou.
 - Informações mais detalhadas sobre o resultado da operação executada pelo método.
 
-Alguns métodos retornam um valor **HRESULT** do conjunto padrão definido em `Winerror.h` . No entanto, um método é gratuito para retornar um valor de **HRESULT** personalizado com informações mais especializadas. Esses valores normalmente estão documentados na página de referência do método.
+Alguns métodos retornam um **valor HRESULT** do conjunto padrão definido em `Winerror.h` . No entanto, um método é livre para retornar um valor **HRESULT personalizado** com informações mais especializadas. Esses valores normalmente são documentados na página de referência do método.
 
-A lista de valores **HRESULT** que você encontra na página de referência de um método é geralmente apenas um subconjunto dos possíveis valores que podem ser retornados. A lista normalmente aborda apenas os valores que são específicos para o método, bem como os valores padrão que têm algum significado específico do método. Você deve assumir que um método pode retornar uma variedade de valores **HRESULT** padrão, mesmo que eles não estejam documentados explicitamente.
+A lista de **valores HRESULT** que você encontra na página de referência de um método geralmente é apenas um subconjunto dos valores possíveis que podem ser retornados. A lista normalmente abrange apenas os valores específicos do método, bem como os valores padrão que têm algum significado específico do método. Você deve supor que um método pode retornar uma variedade de valores **HRESULT** padrão, mesmo que eles não estão documentados explicitamente.
 
-Embora os valores **HRESULT** geralmente sejam usados para retornar informações de erro, você não deve considerá-los como códigos de erro. O fato de que o bit que indica êxito ou falha é armazenado separadamente dos bits que contêm as informações detalhadas permite que os valores de **HRESULT** tenham qualquer número de códigos de êxito e de falha. Por convenção, os nomes de códigos de êxito são prefixados por S_ e códigos de falha por E_. Por exemplo, os dois códigos mais comumente usados são S_OK e E_FAIL, que indicam êxito ou falha simples, respectivamente.
+Embora **os valores HRESULT** geralmente sejam usados para retornar informações de erro, você não deve pensar neles como códigos de erro. O fato de que o bit que indica êxito ou falha é armazenado separadamente dos bits que contêm as informações detalhadas permite que os valores **HRESULT** tenham qualquer número de códigos de êxito e falha. Por convenção, os nomes dos códigos de sucesso são prefixados por S_ e códigos de falha por E_. Por exemplo, os dois códigos mais usados são S_OK e E_FAIL, que indicam êxito ou falha simples, respectivamente.
 
-O fato de que os métodos COM podem retornar uma variedade de códigos de êxito ou de falha significam que você precisa ter cuidado ao testar o valor **HRESULT** . Por exemplo, considere um método hipotético com valores de retorno documentados de S_OK se for bem-sucedido e E_FAIL se não for. No entanto, lembre-se de que o método também pode retornar outros códigos de falha ou êxito. O fragmento de código a seguir ilustra o perigo de usar um teste simples, em que `hr` contém o valor **HRESULT** retornado pelo método.
+O fato de que os métodos COM podem retornar uma variedade de códigos de êxito ou falha significa que você precisa ter cuidado ao testar o **valor HRESULT.** Por exemplo, considere um método hipotético com valores de retorno documentados S_OK se for bem-sucedido e E_FAIL se não. No entanto, lembre-se de que o método também pode retornar outros códigos de falha ou êxito. O fragmento de código a seguir ilustra o risco de usar um teste simples, em que contém o `hr` **valor HRESULT** retornado pelo método .
 
 ```cpp
 if (hr == E_FAIL)
@@ -90,14 +90,14 @@ else
 }  
 ```
 
-Desde que, no caso de falha, esse método apenas retorne E_FAIL (e não algum outro código de falha), esse teste funciona. No entanto, é mais realista que um determinado método seja implementado para retornar um conjunto de códigos de falha específicos, talvez E_NOTIMPL ou E_INVALIDARG. Com o código acima, esses valores seriam interpretados incorretamente como um sucesso.
+Desde que, no caso de falha, esse método só retorne E_FAIL (e não algum outro código de falha), esse teste funcionará. No entanto, é mais realista que um determinado método seja implementado para retornar um conjunto de códigos de falha específicos, talvez E_NOTIMPL ou E_INVALIDARG. Com o código acima, esses valores seriam interpretados incorretamente como um sucesso.
 
-Se precisar de informações detalhadas sobre o resultado da chamada do método, você precisará testar cada valor **HRESULT** relevante. No entanto, você pode se interessar apenas se o método teve êxito ou falhou. Uma maneira robusta de testar se um valor **HRESULT** indica êxito ou falha é passar o valor para uma das macros a seguir, definida em Winerror. h.
+Se precisar de informações detalhadas sobre o resultado da chamada de método, você precisará testar cada valor **de HRESULT** relevante. No entanto, você pode estar interessado apenas em se o método foi bem-sucedido ou falhou. Uma maneira robusta de testar se um valor **HRESULT** indica êxito ou falha é passar o valor para uma das macros a seguir, definidas em Winerror.h.
 
-- A `SUCCEEDED` macro retorna true para um código de êxito e false para um código de falha.
-- A `FAILED` macro retorna true para um código de falha e false para um código de êxito.
+- A `SUCCEEDED` macro retorna TRUE para um código de êxito e FALSE para um código de falha.
+- A `FAILED` macro retorna TRUE para um código de falha e FALSE para um código de êxito.
 
-Portanto, você pode corrigir o fragmento de código anterior usando a `FAILED` macro, conforme mostrado no código a seguir.
+Portanto, você pode corrigir o fragmento de código anterior usando a `FAILED` macro , conforme mostrado no código a seguir.
 
 ```cpp
 if (FAILED(hr))
@@ -112,11 +112,11 @@ else
 
 Esse fragmento de código corrigido trata corretamente E_NOTIMPL e E_INVALIDARG como falhas.
 
-Embora a maioria dos métodos COM retorne valores de **HRESULT** estruturados, um pequeno número usa **HRESULT** para retornar um inteiro simples. Implicitamente, esses métodos sempre são bem-sucedidos. Se você passar um **HRESULT** desse tipo para a macro SUCCEEDED, a macro sempre retornará true. Um exemplo de um método chamado comumente que não retorna um **HRESULT** é o método **IUnknown:: Release** , que retorna um ULONG. Esse método decrementa a contagem de referência de um objeto em um e retorna a contagem de referência atual. Consulte [Gerenciando um tempo de vida de um objeto com](#managing-a-com-objects-lifetime) para uma discussão de contagem de referência.
+Embora a maioria dos métodos COM retorne valores **HRESULT estruturados,** um número pequeno usa **o HRESULT** para retornar um inteiro simples. Implicitamente, esses métodos são sempre bem-sucedidos. Se você passar um **HRESULT** dessa classificação para a macro SUCCEEDED, a macro sempre retornará TRUE. Um exemplo de um método comumente chamado que não retorna um **HRESULT** é o **método IUnknown::Release,** que retorna um ULONG. Esse método diminui a contagem de referência de um objeto em um e retorna a contagem de referência atual. Consulte [Gerenciando o tempo de vida de um objeto COM](#managing-a-com-objects-lifetime) para uma discussão sobre a contagem de referência.
 
 ## <a name="the-address-of-a-pointer"></a>O endereço de um ponteiro
 
-Se você exibir algumas páginas de referência de método COM, provavelmente será executado em algo semelhante ao seguinte.
+Se você exibir algumas páginas de referência de método COM, provavelmente se deparará com algo semelhante ao seguinte.
 
 ```cpp
 HRESULT D3D12CreateDevice(
@@ -127,9 +127,9 @@ HRESULT D3D12CreateDevice(
 );
 ```
 
-Embora um ponteiro normal seja bastante familiar para qualquer desenvolvedor de C/C++, COM geralmente usa um nível adicional de indireção. Esse segundo nível de indireção é indicado por dois asteriscos, `**` , após a declaração de tipo, e o nome da variável normalmente tem um prefixo de `pp` . Para a função acima, o `ppDevice` parâmetro é normalmente referido como o endereço de um ponteiro para um void. Na prática, neste exemplo, `ppDevice` é o endereço de um ponteiro para uma interface **ID3D12Device** .
+Embora um ponteiro normal seja bastante familiar para qualquer desenvolvedor C/C++, o COM geralmente usa um nível adicional de indcisão. Esse segundo nível de indreção é indicado por dois asteriscos, , após a declaração de tipo e o nome da variável normalmente tem um `**` prefixo de `pp` . Para a função acima, o parâmetro normalmente é conhecido como `ppDevice` o endereço de um ponteiro para um void. Na prática, neste exemplo, é o endereço `ppDevice` de um ponteiro para uma interface **ID3D12Device.**
 
-Ao contrário de um objeto C++, você não acessa diretamente os métodos de um objeto COM. Em vez disso, você deve obter um ponteiro para uma interface que expõe o método. Para invocar o método, você usa essencialmente a mesma sintaxe que faria para invocar um ponteiro para um método C++. Por exemplo, para invocar o método **IMinhaInterface::D osomething** , você usaria a sintaxe a seguir.
+Ao contrário de um objeto C++, você não acessa os métodos de um objeto COM diretamente. Em vez disso, você deve obter um ponteiro para uma interface que expõe o método . Para invocar o método , você usa essencialmente a mesma sintaxe que faria para invocar um ponteiro para um método C++. Por exemplo, para invocar o **método IMyInterface::D o Syntax,** você usaria a sintaxe a seguir.
 
 ```cpp
 IMyInterface * pMyIface = nullptr;
@@ -137,7 +137,7 @@ IMyInterface * pMyIface = nullptr;
 pMyIface->DoSomething(...);
 ```
 
-A necessidade de um segundo nível de indireção é o fato de que você não cria ponteiros de interface diretamente. Você deve chamar um de vários métodos, como o método **D3D12CreateDevice** mostrado acima. Para usar esse método para obter um ponteiro de interface, você declara uma variável como um ponteiro para a interface desejada e, em seguida, passa o endereço dessa variável para o método. Em outras palavras, você passa o endereço de um ponteiro para o método. Quando o método retorna, a variável aponta para a interface solicitada e você pode usar esse ponteiro para chamar qualquer um dos métodos da interface.
+A necessidade de um segundo nível de indcisão vem do fato de que você não cria ponteiros de interface diretamente. Você deve chamar um de uma variedade de métodos, como o **método D3D12CreateDevice** mostrado acima. Para usar esse método para obter um ponteiro de interface, declare uma variável como um ponteiro para a interface desejada e, em seguida, passe o endereço dessa variável para o método . Em outras palavras, você passa o endereço de um ponteiro para o método . Quando o método retorna, a variável aponta para a interface solicitada e você pode usar esse ponteiro para chamar qualquer um dos métodos da interface.
 
 ```cpp
 IDXGIAdapter * pIDXGIAdapter = nullptr;
@@ -155,30 +155,30 @@ if (FAILED(hr)) return E_FAIL;
 
 ## <a name="creating-a-com-object"></a>Criando um objeto COM
 
-Há várias maneiras de criar um objeto COM. Esses são os dois mais comumente usados na programação do DirectX.
+Há várias maneiras de criar um objeto COM. Esses são os dois mais comumente usados na programação DirectX.
 
-- Indiretamente, chamando um método ou função DirectX que cria o objeto para você. O método cria o objeto e retorna uma interface no objeto. Quando você cria um objeto dessa forma, às vezes você pode especificar qual interface deve ser retornada, outras vezes a interface é implícita. O exemplo de código acima mostra como criar indiretamente um objeto COM de dispositivo Direct3D 12.
-- Diretamente, passando o CLSID do objeto para a [**função CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance). A função cria uma instância do objeto e retorna um ponteiro para uma interface que você especifica.
+- Indiretamente, chamando um método ou função DirectX que cria o objeto para você. O método cria o objeto e retorna uma interface no objeto . Quando você cria um objeto dessa forma, às vezes você pode especificar qual interface deve ser retornada, outras vezes, a interface é implícita. O exemplo de código acima mostra como criar indiretamente um objeto COM do dispositivo Direct3D 12.
+- Diretamente, passando o CLSID do objeto para a [**função CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance). A função cria uma instância do objeto e retorna um ponteiro para uma interface que você especificar.
 
-Uma vez, antes de criar qualquer objeto COM, você deve inicializar COM chamando a [**função CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex). Se você estiver criando objetos indiretamente, o método de criação de objeto tratará essa tarefa. Mas, se você precisar criar um objeto com **CoCreateInstance**, deverá chamar **CoInitializeEx** explicitamente. Quando tiver terminado, o COM deve ser não inicializado chamando [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize). Se você fizer uma chamada para **CoInitializeEx** , deverá fazer a correspondência com uma chamada para **CoUninitialize**. Normalmente, os aplicativos que precisam inicializar explicitamente o COM fazem isso em sua rotina de inicialização e não inicializam COM em sua rotina de limpeza.
+Uma vez, antes de criar qualquer objeto COM, você deve inicializar COM chamando a [**função CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex). Se você estiver criando objetos indiretamente, o método de criação de objeto manipulará essa tarefa. Mas, se você precisar criar um objeto com **CoCreateInstance**, deverá chamar **CoInitializeEx** explicitamente. Quando você terminar, COM deverá ser não reinicializado chamando [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize). Se você fizer uma chamada para **CoInitializeEx,** deverá corresponder a ela com uma chamada para **CoUninitialize**. Normalmente, os aplicativos que precisam inicializar explicitamente o COM fazem isso em sua rotina de inicialização e não inicializam o COM em sua rotina de limpeza.
 
-Para criar uma nova instância de um objeto com com **CoCreateInstance**, você deve ter o CLSID do objeto. Se esse CLSID estiver disponível publicamente, você o encontrará na documentação de referência ou no arquivo de cabeçalho apropriado. Se o CLSID não estiver disponível publicamente, você não poderá criar o objeto diretamente.
+Para criar uma nova instância de um objeto COM com **CoCreateInstance**, você deve ter o CLSID do objeto. Se esse CLSID estiver disponível publicamente, você o encontrará na documentação de referência ou no arquivo de header apropriado. Se o CLSID não estiver disponível publicamente, você não poderá criar o objeto diretamente.
 
-A função **CoCreateInstance** tem cinco parâmetros. Para os objetos COM que você usará com o DirectX, você pode normalmente definir os parâmetros da seguinte maneira.
+A **função CoCreateInstance** tem cinco parâmetros. Para os objetos COM que você vai usar com o DirectX, normalmente você pode definir os parâmetros da seguinte forma.
 
-*rclsid* Defina isso para o CLSID do objeto que você deseja criar.
+*rclsid* De definido como o CLSID do objeto que você deseja criar.
 
-*pUnkOuter* Defina como `nullptr` . Esse parâmetro será usado somente se você estiver agregando objetos. Uma discussão sobre a agregação COM está fora do escopo deste tópico.
+*pUnkOuter* De definido como `nullptr` . Esse parâmetro será usado somente se você estiver agregando objetos. Uma discussão sobre a agregação COM está fora do escopo deste tópico.
 
-*dwClsContext* Defina como CLSCTX_INPROC_SERVER. Essa configuração indica que o objeto é implementado como uma DLL e é executado como parte do processo do seu aplicativo.
+*dwClsContext* De definido como CLSCTX_INPROC_SERVER. Essa configuração indica que o objeto é implementado como uma DLL e é executado como parte do processo do aplicativo.
 
-*riid* Defina como o IID da interface que você deseja que tenha retornado. A função criará o objeto e retornará o ponteiro de interface solicitado no parâmetro PPV.
+*riid* De acordo com o IID da interface que você gostaria de ter retornado. A função criará o objeto e retornará o ponteiro de interface solicitado no parâmetro ppv.
 
-*PPV* Defina isso para o endereço de um ponteiro que será definido para a interface especificada por `riid` quando a função retornar. Essa variável deve ser declarada como um ponteiro para a interface solicitada, e a referência ao ponteiro na lista de parâmetros deve ser convertida como (LPVOID *).
+*ppv* De definido como o endereço de um ponteiro que será definido para a interface especificada por `riid` quando a função retornar. Essa variável deve ser declarada como um ponteiro para a interface solicitada e a referência ao ponteiro na lista de parâmetros deve ser lançada como (LPVOID *).
 
-Criar um objeto indiretamente geralmente é muito mais simples, como vimos no exemplo de código acima. Você passa o método de criação de objeto o endereço de um ponteiro de interface, e o método cria o objeto e retorna um ponteiro de interface. Quando você cria um objeto indiretamente, mesmo que não possa escolher qual interface o método retorna, geralmente você ainda pode especificar uma variedade de coisas sobre como o objeto deve ser criado.
+A criação indiretamente de um objeto é muito mais simples, como vimos no exemplo de código acima. Você passa o método de criação de objeto para o endereço de um ponteiro de interface e, em seguida, o método cria o objeto e retorna um ponteiro de interface. Quando você cria um objeto indiretamente, mesmo que não possa escolher qual interface o método retorna, muitas vezes você ainda pode especificar uma variedade de coisas sobre como o objeto deve ser criado.
 
-Por exemplo, você pode passar para **D3D12CreateDevice** um valor especificando o nível mínimo de recurso do D3D ao qual o dispositivo retornado deve dar suporte, conforme mostrado no exemplo de código acima.
+Por exemplo, você pode passar para **D3D12CriarDevice** um valor que especifica o nível mínimo de recurso D3D ao qual o dispositivo retornado deve dar suporte, conforme mostrado no exemplo de código acima.
 
 ## <a name="using-com-interfaces"></a>Usando interfaces COM
 
@@ -186,15 +186,15 @@ Quando você cria um objeto COM, o método de criação retorna um ponteiro de i
 
 ## <a name="requesting-additional-interfaces"></a>Solicitando interfaces adicionais
 
-Em muitos casos, o ponteiro de interface que você recebe do método de criação pode ser o único que você precisa. Na verdade, é relativamente comum que um objeto exporte apenas uma interface diferente de **IUnknown**. No entanto, muitos objetos exportam várias interfaces e você pode precisar de ponteiros para vários deles. Se você precisar de mais interfaces do que aquela retornada pelo método de criação, não será necessário criar um novo objeto. Em vez disso, solicite outro ponteiro de interface usando o [**método IUnknown:: QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(refiid_void))do objeto.
+Em muitos casos, o ponteiro de interface que você recebe do método de criação pode ser o único de que você precisa. Na verdade, é relativamente comum para um objeto exportar apenas uma interface diferente **de IUnknown.** No entanto, muitos objetos exportam várias interfaces e você pode precisar de ponteiros para várias delas. Se você precisar de mais interfaces do que aquela retornada pelo método de criação, não será necessário criar um novo objeto. Em vez disso, solicite outro ponteiro de interface usando o método [**IUnknown::QueryInterface do objeto**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(refiid_void)).
 
-Se você criar o objeto com **CoCreateInstance**, poderá solicitar um ponteiro de interface **IUnknown** e, em seguida, chamar **IUnknown:: QueryInterface** para solicitar todas as interfaces necessárias. No entanto, essa abordagem não é conveniente se você precisar apenas de uma interface única, e ela não funcionará se você usar um método de criação de objeto que não permita que você especifique qual ponteiro de interface deve ser retornado. Na prática, normalmente você não precisa obter um ponteiro **IUnknown** explícito, pois todas as interfaces com estendem a interface **IUnknown** .
+Se você criar seu objeto com **CoCreateInstance**, poderá solicitar um ponteiro de interface **IUnknown** e, em seguida, chamar **IUnknown::QueryInterface** para solicitar todas as interfaces de que você precisa. No entanto, essa abordagem será inconveniente se você precisar apenas de uma única interface e ela não funcionará se você usar um método de criação de objeto que não permita que você especifique qual ponteiro de interface deve ser retornado. Na prática, geralmente você não precisa obter um ponteiro **IUnknown** explícito, pois todas as interfaces COM estendem a interface **IUnknown.**
 
-Estender uma interface é conceitualmente semelhante à herança de uma classe C++. A interface filho expõe todos os métodos da interface pai, além de um ou mais de seus próprios. Na verdade, você verá com frequência "herda de" usado em vez de "extends". O que você precisa lembrar é que a herança é interna ao objeto. Seu aplicativo não pode herdar de ou estender a interface de um objeto. No entanto, você pode usar a interface filho para chamar qualquer um dos métodos do filho ou pai.
+Estender uma interface é conceitualmente semelhante à herança de uma classe C++. A interface filho expõe todos os métodos da interface pai, além de um ou mais de seus próprios métodos. Na verdade, você geralmente verá "herda de" usado em vez de "estende". O que você precisa se lembrar é que a herança é interna ao objeto . Seu aplicativo não pode herdar nem estender a interface de um objeto. No entanto, você pode usar a interface filho para chamar qualquer um dos métodos do filho ou pai.
 
-Como todas as interfaces são filhas de **IUnknown**, você pode chamar **QueryInterface** em qualquer um dos ponteiros de interface que você já tem para o objeto. Ao fazer isso, você deve fornecer o IID da interface que você está solicitando e o endereço de um ponteiro que conterá o ponteiro de interface quando o método retornar.
+Como todas as interfaces são filhos de **IUnknown**, você pode chamar **QueryInterface** em qualquer um dos ponteiros de interface que você já tem para o objeto . Ao fazer isso, você deve fornecer o IID da interface que está solicitando e o endereço de um ponteiro que conterá o ponteiro de interface quando o método retornar.
 
-Por exemplo, o fragmento de código a seguir chama **IDXGIFactory2:: CreateSwapChainForHwnd** para criar um objeto de cadeia de permuta primário. Esse objeto expõe várias interfaces. O método **CreateSwapChainForHwnd** retorna uma interface **IDXGISwapChain1** . Em seguida, o código subsequente usa a interface **IDXGISwapChain1** para chamar **QueryInterface** para solicitar uma interface **IDXGISwapChain3** .
+Por exemplo, o fragmento de código a seguir chama **IDXGIFactory2::CreateSwapChainForHwnd** para criar um objeto de cadeia de permuta primária. Esse objeto expõe várias interfaces. O **método CreateSwapChainForHwnd** retorna uma interface **IDXGISwapChain1.** O código subsequente usa a interface **IDXGISwapChain1** para chamar **QueryInterface** para solicitar uma interface **IDXGISwapChain3.**
 
 ```cpp
 HRESULT hr = S_OK;
@@ -215,27 +215,27 @@ if (FAILED(hr)) return hr;
 ```
 
 > [!NOTE]
-> Em C++, você pode fazer uso da ``IID_PPV_ARGS`` macro em vez do IID explícito e do ponteiro de conversão: ``pDXGISwapChain1->QueryInterface(IID_PPV_ARGS(&pDXGISwapChain3));`` .
-> Isso geralmente é usado para métodos de criação, bem como para **QueryInterface**. Consulte [combaseapi. h](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args) para obter mais informações.
+> No C++, você pode usar a macro em vez do IID explícito e ``IID_PPV_ARGS`` do ponteiro de cast: ``pDXGISwapChain1->QueryInterface(IID_PPV_ARGS(&pDXGISwapChain3));`` .
+> Isso geralmente é usado para métodos de criação, bem **como QueryInterface**. Consulte [combaseapi.h para](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args) obter mais informações.
 
 ## <a name="managing-a-com-objects-lifetime"></a>Gerenciando o tempo de vida de um objeto COM
 
-Quando um objeto é criado, o sistema aloca os recursos de memória necessários. Quando um objeto não for mais necessário, ele deverá ser destruído. O sistema pode usar essa memória para outras finalidades. Com objetos C++, você pode controlar o tempo de vida do objeto diretamente com os `new` `delete` operadores e nos casos em que você está operando nesse nível ou apenas usando a pilha e o tempo de vida do escopo. O COM não permite que você crie ou destrua objetos diretamente. O motivo para esse design é que o mesmo objeto pode ser usado por mais de uma parte do seu aplicativo ou, em alguns casos, por mais de um aplicativo. Se uma dessas referências fosse destruir o objeto, as outras referências se tornarão inválidas. Em vez disso, COM usa um sistema de contagem de referência para controlar o tempo de vida de um objeto.
+Quando um objeto é criado, o sistema aloca os recursos de memória necessários. Quando um objeto não for mais necessário, ele deverá ser destruído. O sistema pode usar essa memória para outras finalidades. Com objetos C++, você pode controlar o tempo de vida do objeto diretamente com os operadores e nos casos em que você está operando nesse nível ou apenas usando a pilha e o tempo de vida `new` `delete` do escopo. O COM não permite que você crie ou destrói objetos diretamente. O motivo para esse design é que o mesmo objeto pode ser usado por mais de uma parte do seu aplicativo ou, em alguns casos, por mais de um aplicativo. Se uma dessas referências destruir o objeto, as outras referências se tornarão inválidas. Em vez disso, o COM usa um sistema de contagem de referência para controlar o tempo de vida de um objeto.
 
-A contagem de referência de um objeto é o número de vezes que uma de suas interfaces foi solicitada. Cada vez que uma interface é solicitada, a contagem de referência é incrementada. Um aplicativo libera uma interface quando essa interface não é mais necessária, decrementando a contagem de referência. Desde que a contagem de referência seja maior que zero, o objeto permanecerá na memória. Quando a contagem de referência chega a zero, o objeto se destrói. Você não precisa saber nada sobre a contagem de referência de um objeto. Desde que você obtenha e libere as interfaces de um objeto corretamente, o objeto terá o tempo de vida apropriado.
+A contagem de referência de um objeto é o número de vezes que uma de suas interfaces foi solicitada. Sempre que uma interface é solicitada, a contagem de referência é incrementada. Um aplicativo libera uma interface quando essa interface não é mais necessária, diminuindo a contagem de referência. Desde que a contagem de referência seja maior que zero, o objeto permanecerá na memória. Quando a contagem de referência atinge zero, o objeto destrói a si mesmo. Você não precisa saber nada sobre a contagem de referência de um objeto . Desde que você obtenha e libere as interfaces de um objeto corretamente, o objeto terá o tempo de vida apropriado.
 
-Lidar corretamente com a contagem de referência é uma parte crucial da programação COM. A falha em fazer isso pode criar facilmente um vazamento de memória ou uma falha. Um dos erros mais comuns que os programadores do COM faz é falhar ao liberar uma interface. Quando isso acontece, a contagem de referência nunca chega a zero e o objeto permanece na memória indefinidamente.
+Lidar corretamente com a contagem de referência é uma parte crucial da programação COM. Não fazer isso pode facilmente criar uma perda de memória ou uma falha. Um dos erros mais comuns que os programadores COM fazem é não liberar uma interface. Quando isso acontece, a contagem de referência nunca atinge zero e o objeto permanece na memória indefinidamente.
 
 > [!NOTE]
-> O Direct3D 10 ou posterior tem regras de tempo de vida ligeiramente modificadas para objetos. Em particular, os objetos que derivam de **ID3DxxDeviceChild** nunca sobreviver Alémm seu dispositivo pai (ou seja, se o **ID3DxxDevice** proprietário chegar a 0 Refcount, todos os objetos filho também serão inválidos imediatamente). Além disso, quando você usa métodos **set** para associar objetos ao pipeline de renderização, essas referências não aumentam a contagem de referência (ou seja, são referências fracas). Na prática, isso é melhor tratado ao garantir que você libere todos os objetos filho do dispositivo completamente antes de liberar o dispositivo.
+> O Direct3D 10 ou posterior tem regras de tempo de vida ligeiramente modificadas para objetos . Em particular, os objetos derivados de **ID3DxxDeviceChild** nunca sobreviverão ao dispositivo pai (ou seja, se o **ID3DxxDevice** próprio atingir uma contagem de 0, todos os objetos filho também serão imediatamente inválidos). Além disso, quando você usa **Definir** métodos para vincular objetos ao pipeline de renderização, essas referências não aumentam a contagem de referência (ou seja, são referências fracas). Na prática, isso é melhor tratado garantindo que você libere todos os objetos filho do dispositivo totalmente antes de liberar o dispositivo.
 
-## <a name="incrementing-and-decrementing-the-reference-count"></a>Incrementando e decrementando a contagem de referência
+## <a name="incrementing-and-decrementing-the-reference-count"></a>Incrementando e diminuindo a contagem de referência
 
-Sempre que você obtém um novo ponteiro de interface, a contagem de referência deve ser incrementada por uma chamada para [**IUnknown:: AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref). No entanto, o aplicativo geralmente não precisa chamar esse método. Se você obtiver um ponteiro de interface chamando um método de criação de objeto ou chamando **IUnknown:: QueryInterface**, o objeto incrementará automaticamente a contagem de referência. No entanto, se você criar um ponteiro de interface de alguma outra forma, como copiar um ponteiro existente, deverá chamar explicitamente **IUnknown:: AddRef**. Caso contrário, quando você liberar o ponteiro de interface original, o objeto poderá ser destruído, mesmo que ainda seja necessário usar a cópia do ponteiro.
+Sempre que você obtém um novo ponteiro de interface, a contagem de referência deve ser incrementada por uma chamada para [**IUnknown::AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref). No entanto, seu aplicativo geralmente não precisa chamar esse método. Se você obter um ponteiro de interface chamando um método de criação de objeto ou chamando **IUnknown::QueryInterface**, o objeto incrementa automaticamente a contagem de referência. No entanto, se você criar um ponteiro de interface de alguma outra maneira, como copiar um ponteiro existente, deverá chamar explicitamente **IUnknown::AddRef**. Caso contrário, ao liberar o ponteiro de interface original, o objeto poderá ser destruído, mesmo que você ainda precise usar a cópia do ponteiro.
 
-Você deve liberar todos os ponteiros de interface, independentemente se você ou o objeto incrementou a contagem de referência. Quando você não precisar mais de um ponteiro de interface, chame [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) para diminuir a contagem de referência. Uma prática comum é inicializar todos os ponteiros de interface para `nullptr` e, em seguida, defini-los de volta para `nullptr` quando eles são liberados. Essa Convenção permite testar todos os ponteiros de interface em seu código de limpeza. Aqueles que ainda não `nullptr` estão ativos, e você precisa liberá-los antes de encerrar o aplicativo.
+Você deve liberar todos os ponteiros de interface, independentemente de você ou o objeto ter incrementado a contagem de referência. Quando você não precisar mais de um ponteiro de interface, chame [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) para decrementar a contagem de referência. Uma prática comum é inicializar todos os ponteiros de interface para e, em `nullptr` seguida, defini-los novamente `nullptr` como quando eles são liberados. Essa convenção permite que você teste todos os ponteiros de interface em seu código de limpeza. Aqueles que ainda não `nullptr` estão ativos e você precisa liberá-los antes de encerrar o aplicativo.
 
-O fragmento de código a seguir estende o exemplo mostrado anteriormente para ilustrar como tratar a contagem de referência.
+O fragmento de código a seguir estende o exemplo mostrado anteriormente para ilustrar como lidar com a contagem de referência.
 
 ```cpp
 HRESULT hr = S_OK;
@@ -283,20 +283,20 @@ if (pDXGISwapChain3Copy != nullptr)
 
 ## <a name="com-smart-pointers"></a>Ponteiros inteligentes COM
 
-O código até agora foi chamado explicitamente ``Release`` e ``AddRef`` para manter as contagens de referência usando métodos **IUnknown** . Esse padrão exige que o programador seja cuidadoso para se lembrar de manter a contagem corretamente em todos os caminhos possíveis. Isso pode resultar em tratamento de erros complicado, e com a manipulação de exceção do C++ habilitada pode ser particularmente difícil de implementar. Uma solução melhor com o C++ é usar um [ponteiro inteligente](/cpp/cpp/smart-pointers-modern-cpp).
+O código até agora chamou explicitamente e para manter as contagens de ``Release`` referência usando métodos ``AddRef`` **IUnknown.** Esse padrão exige que o programador seja cuidadoso em lembrar-se de manter corretamente a contagem em todos os caminhos de código possíveis. Isso pode resultar em tratamento de erros complicado, e com o tratamento de exceção C++ habilitado pode ser particularmente difícil de implementar. Uma solução melhor com C++ é usar um [ponteiro inteligente](/cpp/cpp/smart-pointers-modern-cpp).
 
-* **winrt:: com_ptr** é um ponteiro inteligente fornecido pelas [projeções de linguagem C++/WinRT](/uwp/cpp-ref-for-winrt/com-ptr). Este é o ponteiro inteligente COM recomendado a ser usado para aplicativos UWP. Observe que C++/WinRT requer C++ 17.
+* **winrt::com_ptr** é um ponteiro inteligente fornecido pelas projeções de linguagem [C++/WinRT](/uwp/cpp-ref-for-winrt/com-ptr). Este é o ponteiro inteligente COM recomendado a ser usado para aplicativos UWP. Observe que o C++/WinRT requer C++17.
 
-* **Microsoft:: WRL:: ComPtr** é um ponteiro inteligente fornecido pela [Windows Runtime biblioteca de modelos do C++ (WRL)](/cpp/cppcx/wrl/comptr-class). Essa biblioteca é "pura" C++ para que possa ser utilizada para aplicativos Windows Runtime (via C++/CX ou C++/WinRT), bem como aplicativos de área de trabalho Win32 clássicos. Esse ponteiro inteligente também funciona em versões anteriores do Windows que não dão suporte às APIs de Windows Runtime. Para aplicativos de área de trabalho Win32, você pode usar ``#include <wrl/client.h>`` para incluir apenas essa classe e, opcionalmente, definir o símbolo de pré-processador ``__WRL_CLASSIC_COM_STRICT__`` também. Para obter mais informações, consulte [apontadores inteligentes com revisitados](/archive/msdn-magazine/2015/february/windows-with-c-com-smart-pointers-revisited).
+* **Microsoft::WRL::ComPtr** é um ponteiro inteligente fornecido pela WRL (Biblioteca de Modelos [C++)](/cpp/cppcx/wrl/comptr-class)do runtime do Windows. Essa biblioteca é "pura" C++ para que possa ser utilizada para aplicativos de runtime do Windows (por meio de C++/CX ou C++/WinRT), bem como aplicativos de área de trabalho Win32 clássicos. Esse ponteiro inteligente também funciona em versões mais antigas Windows que não são suportadas por APIs Windows Runtime. Para aplicativos da área de trabalho Win32, você pode usar para incluir apenas essa classe e, opcionalmente, definir o ``#include <wrl/client.h>`` símbolo de ``__WRL_CLASSIC_COM_STRICT__`` pré-processador também. Para obter mais informações, consulte [Ponteiros inteligentes COM revisitados.](/archive/msdn-magazine/2015/february/windows-with-c-com-smart-pointers-revisited)
 
-* **CComPtr** é um ponteiro inteligente fornecido pelo [Active Template Library (ATL)](/cpp/atl/reference/ccomptr-class). O **Microsoft:: WRL:: ComPtr** é uma versão mais recente dessa implementação que aborda vários problemas de uso sutis, portanto, o uso desse ponteiro inteligente não é recomendado para novos projetos. Para obter mais informações, consulte [como criar e usar CComPtr e CComQIPtr](/cpp/cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances).
+* **CComPtr** é um ponteiro inteligente fornecido pelo [Active Template Library (ATL).](/cpp/atl/reference/ccomptr-class) O **Microsoft::WRL::ComPtr** é uma versão mais recente dessa implementação que aborda vários problemas de uso sutis, portanto, o uso desse ponteiro inteligente não é recomendado para novos projetos. Para obter mais informações, [consulte Como criar e usar CComPtr e CComQIPtr](/cpp/cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances).
 
 
 ## <a name="using-atl-with-directx-9"></a>Usando a ATL com o DirectX 9
 
-Para usar o Active Template Library (ATL) com o DirectX 9, você deve redefinir as interfaces para compatibilidade com ATL. Isso permite que você use corretamente a classe **CComQIPtr** para obter um ponteiro para uma interface.
+Para usar o Active Template Library (ATL) com o DirectX 9, você deve redefinir as interfaces para compatibilidade com a ATL. Isso permite que você use corretamente a **classe CComQIPtr** para obter um ponteiro para uma interface.
 
-Você saberá se não redefinir as interfaces para ATL, porque verá a seguinte mensagem de erro.
+Você saberá se não redefinir as interfaces para a ATL, pois verá a seguinte mensagem de erro.
 
 ```
 [...]\atlmfc\include\atlbase.h(4704) :   error C2787: 'IDirectXFileData' : no GUID has been associated with this object
@@ -313,23 +313,23 @@ struct __declspec(uuid("{3D82AB44-62DA-11CF-AB39-0020AF71E433}")) IDirectXFileDa
 RT_IID("{1DD9E8DA-1C77-4D40-B0CF-98FEFDFF9512}", IDirectXFileData);
 ```
 
-Depois de redefinir a interface, você deve usar o método **Attach** para anexar a interface ao ponteiro de interface retornado por **::D irect3dcreate9**. Caso contrário, a interface **IDirect3D9** não será liberada corretamente pela classe de ponteiro inteligente.
+Depois de redefinir a interface, você deve usar o método **Attach** para anexar a interface ao ponteiro de interface retornado por **::D irect3DCreate9**. Caso não, a interface **IDirect3D9** não será liberada corretamente pela classe de ponteiro inteligente.
 
-A classe **CComPtr** internamente chama **IUnknown:: AddRef** no ponteiro de interface quando o objeto é criado e quando uma interface é atribuída à classe **CComPtr** . Para evitar o vazamento do ponteiro de interface, não chame * * IUnknown:: AddRef na interface retornada de **::D irect3dcreate9**.
+A **classe CComPtr** chama internamente **IUnknown::AddRef** no ponteiro de interface quando o objeto é criado e quando uma interface é atribuída à **classe CComPtr.** Para evitar o vazamento do ponteiro de interface, não chame **IUnknown::AddRef na interface retornada de **::D irect3DCreate9**.
 
-O código a seguir libera corretamente a interface sem chamar **IUnknown:: AddRef**.
+O código a seguir libera corretamente a interface sem chamar **IUnknown::AddRef**.
 
 ```cpp
 CComPtr<IDirect3D9> d3d;
 d3d.Attach(::Direct3DCreate9(D3D_SDK_VERSION));
 ```
 
-Use o código anterior. Não use o código a seguir, que chama **IUnknown:: AddRef** seguido por **IUnknown:: Release** e não libera a referência adicionada por **::D irect3dcreate9**.
+Use o código anterior. Não use o código a seguir, que chama **IUnknown::AddRef** seguido por **IUnknown::Release** e não libera a referência adicionada por **::D irect3DCreate9**.
 
 ```cpp
 CComPtr<IDirect3D9> d3d = ::Direct3DCreate9(D3D_SDK_VERSION);
 ```
 
-Observe que esse é o único lugar no Direct3D 9, no qual você terá que usar o método **Attach** dessa maneira.
+Observe que esse é o único lugar no Direct3D 9 em que você terá que usar o **método Attach** dessa maneira.
 
-Para obter mais informações sobre as classes **CComPTR** e **CComQIPtr** , consulte suas definições no `Atlbase.h` arquivo de cabeçalho.
+Para obter mais informações sobre **as classes CComPTR** e **CComQIPtr,** consulte suas definições no arquivo `Atlbase.h` de header.

@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 51416ed59bc1c6df1d2c69de87d61bdecab522f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6034c330da19f5982e9bbacbf75cc16f0a7d10dd65f9c8bded2efa5cbda70835
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601136"
 ---
 # <a name="addprinter-function"></a>Função AddPrinter
 
@@ -64,7 +64,7 @@ Um ponteiro para uma estrutura de [**informações da impressora \_ \_ 2**](prin
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será um identificador (não seguro para thread) para um novo objeto de impressora. Quando você terminar com o identificador, passe-o para a função [**ClosePrinter**](closeprinter.md) para fechá-lo.
 
@@ -108,7 +108,7 @@ Se **pSecurityDescriptor** for **NULL**, o sistema atribuirá um descritor de se
 
 | Valor                          | Descrição                                                                                                                                                                                                                                                                                                                                            |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Administradores e Usuários Avançados | Controle total na fila de impressão. Isso significa que os membros desses grupos podem imprimir, gerenciar a fila (pode excluir a fila, alterar qualquer configuração da fila, incluindo o descritor de segurança) e gerenciar os trabalhos de impressão de todos os usuários (excluir, pausar, retomar e reiniciar trabalhos). Observe que os usuários avançados não existem antes do Windows XP Professional.<br/> |
+| Administradores e Usuários Avançados | Controle total na fila de impressão. Isso significa que os membros desses grupos podem imprimir, gerenciar a fila (pode excluir a fila, alterar qualquer configuração da fila, incluindo o descritor de segurança) e gerenciar os trabalhos de impressão de todos os usuários (excluir, pausar, retomar e reiniciar trabalhos). observe que os usuários avançados não existem antes de Windows XP Professional.<br/> |
 | Criador/Proprietário                  | Pode gerenciar trabalhos próprios. Isso significa que o usuário que envia trabalhos pode gerenciar (excluir, pausar, retomar, reiniciar) seus próprios trabalhos.                                                                                                                                                                                                                                  |
 | Todos                       | Execute e controle de leitura padrão. Isso significa que os membros do grupo Everyone podem imprimir e ler as propriedades da fila de impressão.                                                                                                                                                                                                                     |
 
@@ -124,7 +124,7 @@ Use a função [**EnumPrintProcessors**](enumprintprocessors.md) para enumerar o
 
 O chamador da função **AddPrinter** deve ter acesso \_ ao servidor \_ administrar o acesso ao servidor no qual a impressora será criada. O identificador retornado pela função terá toda a permissão de acesso à impressora \_ \_ e poderá ser usado para executar operações administrativas na impressora.
 
-Se a função **DrvPrinterEvent** for passada, o sinalizador de evento de impressora \_ \_ \_ sem sinalizador de interface do \_ usuário não deverá usar uma chamada de interface do usuário durante o **DrvPrinterEvent**. Para fazer trabalhos relacionados à interface do usuário, o instalador deve usar a entrada **VendorSetup** no arquivo. inf da impressora ou, para dispositivos plug and Play, o instalador pode usar um coinstalador específico do dispositivo. Para obter mais informações sobre o **VendorSetup**, consulte o Microsoft Windows Driver Development Kit (DDK).
+Se a função **DrvPrinterEvent** for passada, o sinalizador de evento de impressora \_ \_ \_ sem sinalizador de interface do \_ usuário não deverá usar uma chamada de interface do usuário durante o **DrvPrinterEvent**. Para fazer trabalhos relacionados à interface do usuário, o instalador deve usar a entrada **VendorSetup** no arquivo. inf da impressora ou, para dispositivos plug and Play, o instalador pode usar um coinstalador específico do dispositivo. para obter mais informações sobre o **VendorSetup**, consulte o Microsoft Windows Driver Development Kit (DDK).
 
 O firewall de conexão com a Internet (ICF) bloqueia as portas de impressora por padrão, mas uma exceção para o compartilhamento de arquivos e impressoras é habilitada quando você executa o **AddPrinter**.
 

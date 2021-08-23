@@ -4,12 +4,12 @@ ms.assetid: 54c9c447-5c97-462f-b9cb-2df7d4126d80
 title: Solicitação de CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39097ab92065aa902b23e7388b406a7c17e88944
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 074602a9afb87562502e622dbdf0e6ceb95b979dc95820f015d2ae3edef88031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670336"
 ---
 # <a name="cmc-request"></a>Solicitação de CMC
 

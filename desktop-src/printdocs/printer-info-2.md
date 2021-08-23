@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: b299cb1bbdd3ac2475b7a9f2b600bcd9652246d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f7a2b871cc0181fbceab56e4ac14170bf46fa1b31081f4b4365ad7296ec2e85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600606"
 ---
 # <a name="printer_info_2-structure"></a>Estrutura de informações da impressora \_ \_ 2
 
@@ -175,7 +175,7 @@ Os atributos da impressora. Esse membro pode ser qualquer combinação razoável
 
  
 
-No Windows XP e versões posteriores do Windows, o valor a seguir também pode ser usado.
+no Windows XP e versões posteriores do Windows, o valor a seguir também pode ser usado.
 
 | Valor                   | Significado                                                                                                                                                                                           |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -185,7 +185,7 @@ No Windows XP e versões posteriores do Windows, o valor a seguir também pode s
 
  
 
-No Windows Vista e versões posteriores do Windows, os valores a seguir também podem ser usados.
+no Windows Vista e versões posteriores do Windows, os valores a seguir também podem ser usados.
 
 | Valor                               | Significado                                                                          |
 |-------------------------------------|----------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ No Windows Vista e versões posteriores do Windows, os valores a seguir também 
 
  
 
-No Windows Server 2003, o valor a seguir também pode ser usado.
+no Windows Server 2003, o valor a seguir também pode ser usado.
 
 | Valor                  | Significado                                                                 |
 |------------------------|-------------------------------------------------------------------------|
@@ -234,7 +234,7 @@ A hora mais antiga em que a impressora imprimirá um trabalho. Esse valor é exp
 **UntilTime**
 </dt> <dd>
 
-A última hora em que a impressora imprimirá um trabalho. Esse valor é expresso como minutos decorridos desde 12:00 AM GMT (Greenwich Mean Time).
+A hora mais recente em que a impressora imprimirá um trabalho. Esse valor é expresso como minutos decorridos desde 00:00 GMT (Hora média de Greenwich).
 
 </dd> <dt>
 
@@ -247,31 +247,31 @@ O status da impressora. Esse membro pode ser qualquer combinação razoável dos
 
 | Valor                               | Significado                                                          |
 |-------------------------------------|------------------------------------------------------------------|
-| STATUS da impressora \_ \_ ocupado               | A impressora está ocupada.                                             |
-| porta de status da impressora \_ \_ \_ aberta         | A porta da impressora está aberta.                                        |
-| \_erro de status da impressora \_              | A impressora está em um estado de erro.                                |
-| \_inicialização do status da impressora \_       | A impressora está sendo inicializada.                                     |
-| STATUS da impressora \_ \_ e/s \_ ativa         | A impressora está em um estado de entrada/saída ativo                   |
-| \_ \_ feed manual de status da impressora \_       | A impressora está em um estado de feed manual.                           |
-| STATUS da impressora \_ \_ sem \_ toner          | A impressora está sem toner.                                     |
-| STATUS da impressora \_ \_ não \_ disponível     | A impressora não está disponível para impressão.                       |
-| STATUS da impressora \_ \_ offline            | A impressora está offline.                                          |
-| \_status \_ da impressora fora \_ da \_ memória    | A impressora ficou sem memória.                               |
-| bandeja de saída de status da impressora \_ \_ \_ \_ cheia  | O compartimento de saída da impressora está cheio.                                |
-| \_ \_ apontador de página de status da impressora \_         | A impressora não pode imprimir a página atual.                       |
-| \_ \_ emperramento de papel do status da impressora \_         | O papel está emperrado na impressora                                   |
-| \_saída do status da impressora \_ \_         | A impressora está sem papel.                                     |
-| \_problema de \_ papel do status da impressora \_     | A impressora tem um problema de papel.                                 |
-| STATUS da impressora em \_ \_ pausa             | A impressora está em pausa.                                           |
-| \_exclusão de status \_ da impressora pendente \_  | A impressora está sendo excluída.                                    |
-| \_economia de \_ energia de status da impressora \_        | A impressora está no modo de economia de energia.                               |
-| \_impressão de status da impressora \_           | A impressora está imprimindo.                                         |
-| \_processamento de status da impressora \_         | A impressora está processando um trabalho de impressão.                           |
-| servidor de status de impressora \_ \_ \_ desconhecido    | O status da impressora é desconhecido.                                   |
-| \_toner de status da impressora \_ \_ baixo         | A impressora está com pouco toner.                                     |
-| \_status da \_ impressora \_ intervenção do usuário | A impressora tem um erro que exige que o usuário faça algo. |
-| STATUS da impressora \_ \_ aguardando            | A impressora está aguardando.                                          |
-| STATUS da impressora \_ \_ aquecendo \_        | A impressora está em preparação.                                       |
+| STATUS DA \_ IMPRESSORA \_ OCUPADO               | A impressora está ocupada.                                             |
+| PORTA \_ DE STATUS DA IMPRESSORA \_ \_ ABERTA         | A porta da impressora está aberta.                                        |
+| ERRO DE \_ STATUS \_ DA IMPRESSORA              | A impressora está em um estado de erro.                                |
+| INICIALIZAÇÃO \_ DO STATUS \_ DA IMPRESSORA       | A impressora está sendo inicializada.                                     |
+| \_STATUS DA IMPRESSORA \_ E/S \_ ATIVO         | A impressora está em um estado de entrada/saída ativo                   |
+| \_FEED MANUAL DE STATUS DA \_ \_ IMPRESSORA       | A impressora está em um estado de feed manual.                           |
+| \_STATUS DA IMPRESSORA NÃO \_ \_ TONER          | A impressora está sem toner.                                     |
+| \_STATUS DA IMPRESSORA NÃO \_ \_ DISPONÍVEL     | A impressora não está disponível para impressão.                       |
+| \_STATUS DA IMPRESSORA \_ OFFLINE            | A impressora está offline.                                          |
+| \_STATUS DA IMPRESSORA SEM \_ \_ \_ MEMÓRIA    | A impressora ficou sem memória.                               |
+| COMPARTIMENTO DE \_ SAÍDA DE STATUS DA IMPRESSORA \_ \_ \_ CHEIO  | O compartimento de saída da impressora está cheio.                                |
+| PUNT DA \_ PÁGINA STATUS \_ DA \_ IMPRESSORA         | A impressora não pode imprimir a página atual.                       |
+| PAPEL \_ DE STATUS DA IMPRESSORA \_ \_ JAM         | O papel é ressalvado na impressora                                   |
+| PAPEL \_ DE STATUS DA \_ \_ IMPRESSORA         | A impressora está sem papel.                                     |
+| PROBLEMA DE \_ PAPEL DE STATUS DA \_ \_ IMPRESSORA     | A impressora tem um problema de papel.                                 |
+| \_STATUS DA IMPRESSORA \_ PAUSADO             | A impressora está em pausa.                                           |
+| \_EXCLUSÃO PENDENTE DO STATUS \_ \_ DA IMPRESSORA  | A impressora está sendo excluída.                                    |
+| ECONOMIA DE \_ ENERGIA DO STATUS DA \_ \_ IMPRESSORA        | A impressora está no modo de economia de energia.                               |
+| IMPRESSÃO DE \_ STATUS \_ DA IMPRESSORA           | A impressora está imprimindo.                                         |
+| PROCESSAMENTO \_ DE STATUS DA \_ IMPRESSORA         | A impressora está processando um trabalho de impressão.                           |
+| SERVIDOR \_ DE STATUS DA IMPRESSORA \_ \_ DESCONHECIDO    | O status da impressora é desconhecido.                                   |
+| STATUS \_ DA IMPRESSORA \_ TONER \_ BAIXO         | A impressora está com pouco toner.                                     |
+| INTERVENÇÃO DO \_ USUÁRIO NO STATUS DA \_ \_ IMPRESSORA | A impressora tem um erro que exige que o usuário faça algo. |
+| STATUS DA \_ \_ IMPRESSORA AGUARDANDO            | A impressora está aguardando.                                          |
+| AQUECIMENTO \_ DO STATUS DA \_ \_ IMPRESSORA        | A impressora está em preparação.                                       |
 
 
 
@@ -282,7 +282,7 @@ O status da impressora. Esse membro pode ser qualquer combinação razoável dos
 **cJobs**
 </dt> <dd>
 
-O número de trabalhos de impressão que foram enfileirados para a impressora.
+O número de trabalhos de impressão que foram ensuados para a impressora.
 
 </dd> <dt>
 
@@ -301,8 +301,8 @@ O número médio de páginas por minuto que foram impressas na impressora.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | Informações de **\_ impressora \_ \_ 2W** (Unicode) e **\_ informações de impressora \_ \_ 2a** (ANSI)<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **\_ INFORMAÇÕES \_ DA IMPRESSORA \_ 2W** (Unicode) e **\_ INFORMAÇÕES DA IMPRESSORA \_ \_ 2A** (ANSI)<br/>                           |
 
 
 
@@ -313,25 +313,25 @@ O número médio de páginas por minuto que foram impressas na impressora.
 [Impressão](printdocs-printing.md)
 </dt> <dt>
 
-[Estruturas de API do spooler de impressão](printing-and-print-spooler-structures.md)
+[Imprimir estruturas de API do Spooler](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
-[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> <dt>
 
 [**EnumPrinters**](enumprinters.md)
 </dt> <dt>
 
-[**Informações da impressora \_ \_ 1**](printer-info-1.md)
+[**INFORMAÇÕES \_ DA \_ IMPRESSORA 1**](printer-info-1.md)
 </dt> <dt>
 
-[**Informações da impressora \_ \_ 3**](printer-info-3.md)
+[**INFORMAÇÕES \_ DA IMPRESSORA \_ 3**](printer-info-3.md)
 </dt> <dt>
 
-[**Informações da impressora \_ \_ 4**](printer-info-4.md)
+[**INFORMAÇÕES \_ DA IMPRESSORA \_ 4**](printer-info-4.md)
 </dt> <dt>
 
-[**\_descritor de segurança**](/windows/desktop/api/winnt/ns-winnt-security_descriptor)
+[**DESCRITOR \_ DE SEGURANÇA**](/windows/desktop/api/winnt/ns-winnt-security_descriptor)
 </dt> </dl>
 
  

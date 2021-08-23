@@ -3,7 +3,7 @@ title: Mensagem de DRV_FREE (mmsystem. h)
 description: Notifica o driver de que ele está sendo removido da memória. O driver deve liberar qualquer memória e outros recursos do sistema alocados.
 ms.assetid: 0447f8e9-4c4d-4be5-ab1f-ecd3e8cd2e67
 keywords:
-- Multimídia do Windows de mensagem DRV_FREE
+- mensagem de DRV_FREE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abb9d70d269cb84e0d6ef0881618b67cfef11068
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21a558dc7a2c3ece040790b2351ff39dc3054d660eb9368567ed7ce79d40c8a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526206"
 ---
 # <a name="drv_free-message"></a>Mensagem do DRV \_ Free
 

@@ -8,12 +8,12 @@ keywords:
 - ADSI, ADSI, usando, esquema ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 478104a24d850f79cc52473f3d9e546936c56650
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8aaf49f75d026f52c644d06a6fe36e4555841e3e7bf587ffeb1e0277d1e5ac99
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103823988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648816"
 ---
 # <a name="using-the-adsi-schema"></a>Usando o esquema ADSI
 
@@ -27,6 +27,6 @@ A ADSI abstrai os dados de sintaxe conforme necessário e permite que você use 
 
 Para obter mais informações sobre o esquema de Active Directory, consulte [Active Directory esquema](/windows/desktop/AD/active-directory-schema). Para obter exemplos de código a serem usados para ler o contêiner de esquema, consulte [lendo o esquema](reading-the-schema.md).
 
- 
+ 
 
- 
+ 

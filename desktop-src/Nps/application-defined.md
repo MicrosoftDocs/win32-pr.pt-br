@@ -5,12 +5,12 @@ ms.assetid: 0BA67E4A-DCBB-4DCE-BA32-786B9F9F7D46
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c472d9a5a957135eb29af12bcca400a3c2870b7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 888417efbad5d4e411db8397ba47116bf5a9637ee1de3ba0a156dbd873b6449f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105796393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554986"
 ---
 # <a name="application-defined"></a>Definido pelo aplicativo
 
@@ -23,6 +23,6 @@ ms.locfileid: "105796393"
 -   [*\_Processo de extensão PRADIUS \_ \_ 2*](/windows/desktop/api/authif/nc-authif-pradius_extension_process_2)
 -   [*\_termo de extensão PRADIUS \_*](/windows/desktop/api/authif/nc-authif-pradius_extension_term)
 
- 
+ 
 
- 
+ 

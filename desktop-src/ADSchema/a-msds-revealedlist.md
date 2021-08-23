@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbf8c5dc2e308b69ce142c7345957d25510168ab
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4f3316a57658d0dfb5f674f432aeb1a9d5bcd0f5490bccb9aee69ec8fc58689
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544886"
 ---
 # <a name="ms-ds-revealed-list-attribute"></a>atributo ms-DS-revelate-List
 
@@ -54,7 +54,7 @@ Identifica entidades de segurança cujas senhas de conta do computador atual for
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -75,7 +75,7 @@ Identifica entidades de segurança cujas senhas de conta do computador atual for
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -96,7 +96,7 @@ Identifica entidades de segurança cujas senhas de conta do computador atual for
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |

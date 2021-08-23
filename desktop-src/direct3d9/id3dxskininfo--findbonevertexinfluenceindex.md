@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 05a86e98e5001092700fdec12f2a7afc33ddf082
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d9035f6c791708dc0b7d84ffd69380f801f4ecce8525c03bb1ac00a3902a1d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105761550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727786"
 ---
 # <a name="id3dxskininfofindbonevertexinfluenceindex-method"></a>Método ID3DXSkinInfo:: FindBoneVertexInfluenceIndex
 
@@ -69,7 +69,7 @@ Ponteiro para o índice da influência do Bone que afeta vertexNum.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

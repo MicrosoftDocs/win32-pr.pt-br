@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db4232d57b38e87386b340810f5edea47f2e409c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c9e8fbb11ae06efe9adb6b530670d88cc7c7e466922d3d8cbc6162cc6701ed3d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648686"
 ---
 # <a name="netboot-initialization-attribute"></a>Netboot-Initialization atributo
 
@@ -58,7 +58,7 @@ Caminho de inicialização padrão para inicialização em disco.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -79,7 +79,7 @@ Caminho de inicialização padrão para inicialização em disco.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -100,7 +100,7 @@ Caminho de inicialização padrão para inicialização em disco.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -121,10 +121,10 @@ Caminho de inicialização padrão para inicialização em disco.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -142,10 +142,10 @@ Caminho de inicialização padrão para inicialização em disco.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -163,10 +163,10 @@ Caminho de inicialização padrão para inicialização em disco.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

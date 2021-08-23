@@ -1,23 +1,23 @@
 ---
-title: breakc (sm4-ASM)
-description: Move condicionalmente o ponto de execução para a instrução após o próximo loop Endou endswitch.
+title: breakc (sm4 – asm)
+description: Move condicionalmente o ponto de execução para a instrução após o próximo endloop ou endswitch.
 ms.assetid: 5735EF88-1E8C-4142-8442-9328D78999A7
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 019a1c859f7d1e0ee6368f5b9984775ef9bfaba1
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 1eff9be2428db0d0df24879f50964ce14f6831e235c54655958d9401224d7225
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626466"
 ---
-# <a name="breakc-sm4---asm"></a>breakc (sm4-ASM)
+# <a name="breakc-sm4---asm"></a>breakc (sm4 – asm)
 
-Move condicionalmente o ponto de execução para a instrução após o próximo [loop](endloop--sm4---asm-.md) Endou [endswitch](endswitch--sm4---asm-.md).
+Move condicionalmente o ponto de execução para a instrução após o próximo [endloop](endloop--sm4---asm-.md) ou [endswitch](endswitch--sm4---asm-.md).
 
 
 
-| breakc { \_ z \|\_NZ} src0. Select \_ componente |
+| breakc{ \_ z\|\_Componente nz} src0.select \_ |
 |------------------------------------------|
 
 
@@ -36,9 +36,9 @@ Move condicionalmente o ponto de execução para a instrução após o próximo 
 
 ## <a name="remarks"></a>Comentários
 
-O formato do token contém o deslocamento da instrução **ENDLOOP** correspondente no sombreador como uma conveniência.
+O formato de token contém o deslocamento da instrução **endloop** correspondente no Sombreador como uma conveniência.
 
-O exemplo a seguir mostra a instrução **breakc** .
+O exemplo a seguir mostra a **instrução breakc.**
 
 
 ```
@@ -53,11 +53,11 @@ O exemplo a seguir mostra a instrução **breakc** .
 
 
 
-Essa instrução deve aparecer em um **loop** / **ENDLOOP** ou **alternar** / **endswitch**.
+Essa instrução deve aparecer dentro de **um endloop de loop** ou de /   / **terminações de com alternação**.
 
-O registro de 32 bits fornecido pelo *src0* é testado em um nível de bit. Se algum bit for diferente de zero, **breakc \_ NZ** executará a interrupção. Se todos os bits forem zero, o **breakc \_ z** executará a interrupção.
+O registro de 32 bits fornecido pelo *src0* é testado em um nível de bit. Se algum bit for diferente de zero, **breakc \_ nz** executará a quebra. Se todos os bits são zero, **breakc \_ z** executará a quebra.
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
@@ -69,16 +69,16 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sim       |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sim       |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -92,7 +92,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 <dl> <dt>
 
-[Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Assembly do modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

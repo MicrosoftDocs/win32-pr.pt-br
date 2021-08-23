@@ -1,6 +1,6 @@
 ---
-title: 'Buffer:: métodos de carregamento de buffer'
-description: Lê dados de buffer.
+title: Métodos buffer::Buffer Load
+description: Lê dados do buffer.
 ms.assetid: 53FD566F-2017-43B9-8E36-134958B74108
 keywords:
 - Métodos de carregamento HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 02fc0e3ebffdd686b87330f33ef5e5c36f570cf3
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: 59ed76101dcd6efdd0968f51e5211769c92db29ca52e5123fb9c55605f1a8cd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104365093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626356"
 ---
-# <a name="bufferload-methods"></a>Métodos buffer:: Load
+# <a name="bufferload-methods"></a>Buffer::Carregar métodos
 
-Lê dados de [**buffer**](sm5-object-buffer.md) .
+Lê dados [**do buffer.**](sm5-object-buffer.md)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Lê dados de [**buffer**](sm5-object-buffer.md) .
 
 | Método                                            | Descrição                                                       |
 |:--------------------------------------------------|:------------------------------------------------------------------|
-| [**Carga (int, uint)**](sm5-object-buffer-load.md) | Lê os dados de buffer e retorna o status da operação.<br/> |
-| [**Carga (int)**](dx-graphics-hlsl-to-load.md)     | Lê dados de buffer.<br/>                                     |
+| [**Load(int, uint)**](sm5-object-buffer-load.md) | Lê dados de buffer e retorna o status da operação.<br/> |
+| [**Load(int)**](dx-graphics-hlsl-to-load.md)     | Lê dados de buffer.<br/>                                     |
 
 
 

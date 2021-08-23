@@ -4,12 +4,12 @@ ms.assetid: 6b8a66cb-d1d6-4e19-b668-049a03a40804
 title: Iniciar e executar especialistas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bd41472d286727541d26bade1942eb3b6b5c593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dc85ba39c393ac253ca688a826bc77747c8d17bea29b089250a63f6f833066c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555308"
 ---
 # <a name="starting-and-running-experts"></a>Iniciar e executar especialistas
 
@@ -25,7 +25,7 @@ O especialista está ativo até que os dados concluam sua passagem por meio do a
 
 Um segundo relatório (não mostrado), resume os resultados do especialista de retransmissão do protocolo TCP.
 
-Também é possível:
+Você também pode:
 
 -   Crie uma entrada para uma página de referência de evento (ERP) que aconselha o usuário de condições ou problemas detectados (conforme mostrado na janela de análise).
 -   Crie entradas para correções sugeridas ou dados explicativos que forneçam informações adicionais (conforme mostrado na janela de resolução).

@@ -3,9 +3,9 @@ title: Método external. compre
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O método Buy inicia a compra de um conjunto de itens de mídia.
 ms.assetid: 78496de6-214e-4712-8fbc-11e002adce88
 keywords:
-- método de compra Windows Media Player
+- Windows Media Player do método de compra
 - método de compra Windows Media Player, classe externa
-- Classe externa Windows Media Player, método de compra
+- classe externa Windows Media Player, método de compra
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5ffee188372e33ed4ceadf1bb1ee2ea0f986207
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16acc578d18c2a93118e1d7aa55b0fdcbe474a8698a0982ef8c2df7edb3802ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649516"
 ---
 # <a name="externalbuy-method"></a>Método external. compre
 
@@ -68,7 +68,7 @@ CPAlbumID
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

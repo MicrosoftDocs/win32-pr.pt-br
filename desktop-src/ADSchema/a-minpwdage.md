@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c733f1a6f6803b10f04d6b0f9e367a9933cd9330
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c98d7d8e48c1579b0a226cad848fd2b94b5f8cd9dba63d6f0cb3609bbd85f053
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705426"
 ---
 # <a name="min-pwd-age-attribute"></a>Atributo min-pwd-age
 
@@ -58,7 +58,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -79,7 +79,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -100,7 +100,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -121,7 +121,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -142,7 +142,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |
@@ -163,7 +163,7 @@ A quantidade mínima de tempo, em intervalos de 100 a nanossegundos, que uma sen
 | ID do link                | \-                                                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                                                    |
 | System-Only            | Falso                                                                                                                                                 |
-| É de valor único       | True                                                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                                                  |
 | É indexado             | Falso                                                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                          |

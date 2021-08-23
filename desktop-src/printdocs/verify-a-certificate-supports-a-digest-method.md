@@ -1,28 +1,28 @@
 ---
-description: Este tópico descreve como verificar se o sistema dá suporte a um método Digest.
+description: Este tópico descreve como verificar se o sistema dá suporte a um método digest.
 ms.assetid: dd1b53cd-66b9-46b3-89ad-ee84b4690e1e
 title: Verificar se o sistema dá suporte a um método Digest
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9acf3e0c2c7f4927fc6047c88039e443e2db3e71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 272db3f7169ba66fdaa67c2943030d53e7c75927c2024750d405aa9a8246949e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600296"
 ---
 # <a name="verify-the-system-supports-a-digest-method"></a>Verificar se o sistema dá suporte a um método Digest
 
-Este tópico descreve como verificar se o sistema dá suporte a um método Digest.
+Este tópico descreve como verificar se o sistema dá suporte a um método digest.
 
-As assinaturas digitais XPS usam a API de criptografia, que fornece métodos para verificar se o sistema dá suporte a um método de resumo específico. Para usar a função **CryptXmlEnumAlgorithmInfo** da API de criptografia para enumerar os métodos de resumo que são suportados pelo sistema, o chamador deve fornecer um método de retorno de chamada e uma estrutura de dados. A função **CryptXmlEnumAlgorithmInfo** passa os dados de enumeração de volta para o chamador por meio do método de retorno de chamada.
+As Assinaturas Digitais XPS usam a API de Criptografia, que fornece métodos para verificar se o sistema dá suporte a um método digest específico. Para usar a função **CryptXmlEnumAlgorithmInfo** da API de Criptografia para enumerar os métodos digest com suporte pelo sistema, o chamador deve fornecer um método de retorno de chamada e uma estrutura de dados. A **função CryptXmlEnumAlgorithmInfo** passa os dados de enumeração de volta para o chamador por meio do método de retorno de chamada.
 
 A estrutura de dados usada neste exemplo é mostrada no exemplo de código a seguir e contém os seguintes campos:
 
 | Campo                            | Descrição                                                                                                |
 |----------------------------------|------------------------------------------------------------------------------------------------------------|
-| **userDigestAlgorithm**          | Um campo **LPWSTR** que aponta para a cadeia de caracteres que contém o URI do algoritmo de resumo a ser verificado. |
-| **userDigestAlgorithmSupported** | Um valor **booliano** que indica se há suporte para o algoritmo Digest no certificado.           |
+| **userDigestAlgorithm**          | Um **campo LPWSTR** que aponta para a cadeia de caracteres que contém o URI do algoritmo digest a ser verificado. |
+| **userDigestAlgorithmSupported** | Um **valor booliana** que indica se o algoritmo digest é suportado pelo certificado.           |
 
 
 
@@ -39,7 +39,7 @@ struct DigestMethodData
 
 
 
-O método de API de criptografia que enumera os métodos Digest usa um método de retorno de chamada para retornar dados ao chamador. **CryptXmlEnumAlgorithmInfo** enumera os métodos de resumo que são suportados pelo sistema e chama o método de retorno de chamada para cada método de resumo que ele enumera, até que o método de retorno de chamada retorne **false** ou até que todos os métodos de resumo com suporte do sistema sejam enumerados. O método de retorno de chamada neste exemplo compara o método Digest passado pelo **CryptXmlEnumAlgorithmInfo** com o método Digest fornecido pelo método de chamada.
+O método da API de Criptografia que enumera os métodos digest usa um método de retorno de chamada para retornar dados ao chamador. **CryptXmlEnumAlgorithmInfo** enumera os métodos digest com suporte pelo sistema e chama o método de retorno de chamada para cada método digest enumerado, até que o método de retorno de chamada retorne **FALSE** ou até que todos os métodos digest com suporte pelo sistema sejam enumerados. O método de retorno de chamada neste exemplo compara o método digest passado por **CryptXmlEnumAlgorithmInfo** com o método digest fornecido pelo método de chamada.
 
 
 ```C++
@@ -96,7 +96,7 @@ EnumDigestMethodCallback (
 
 
 
-O exemplo de código a seguir encapsula a funcionalidade de validação em um único método, que retorna um valor **booliano** que indica se o sistema dá suporte ao método Digest.
+O exemplo de código a seguir envolve a funcionalidade de validação em um único método, que retorna um valor **booliana** que indica se o sistema dá suporte ao método digest.
 
 
 ```C++
@@ -165,7 +165,7 @@ SupportsDigestAlgorithm (
 [Funções de criptografia](/windows/desktop/SecCrypto/cryptography-functions)
 </dt> <dt>
 
-[Erros de API de assinatura digital XPS](xps-digital-signatures-errors.md)
+[Erros da API de Assinatura Digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
 [Erros de documento XPS](xps-document-errors.md)

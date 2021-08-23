@@ -3,7 +3,7 @@ title: External. selectedItemid
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External. selectedItemid
 ms.assetid: 150aaa38-d4fe-493e-bda1-e5b0a27fccf7
 keywords:
-- External. selectedItemid Windows Media Player
+- Windows Media Player externa. selectedItemid
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 768387c9e20082ef47cb0f502a2c4572bf462f26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ea4b93656adc3fab25ab96e41fe417bde158035c5c11a0af9be84c5d555b153
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648426"
 ---
 # <a name="externalselecteditemid"></a>External. selectedItemid
 
@@ -28,7 +28,7 @@ ms.locfileid: "105760065"
 
  
 
-A propriedade **selecteditemid** recupera o identificador do item de mídia selecionado no momento no Windows Media Player.
+A propriedade **selecteditemid** recupera o identificador do item de mídia selecionado no momento em Windows Media Player.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,9 +42,9 @@ Esta propriedade é uma **cadeia de caracteres** somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade é usada em combinação com a propriedade [external. selecteditemtype](external-selecteditemtype.md) . Por exemplo, se **selecteditemtype** for igual a CPTrackID, **selecteditemid** será a ID da faixa selecionada. Para obter mais informações sobre como o Windows Media Player caracteriza exibições de conteúdo da loja online, consulte [local e item selecionado](location-and-selected-item.md).
+Essa propriedade é usada em combinação com a propriedade [external. selecteditemtype](external-selecteditemtype.md) . Por exemplo, se **selecteditemtype** for igual a CPTrackID, **selecteditemid** será a ID da faixa selecionada. para obter mais informações sobre como Windows Media Player caracteriza as exibições do conteúdo da loja online, consulte [local e Item selecionado](location-and-selected-item.md).
 
-Determinadas exibições no Windows Media Player têm um item de mídia específico selecionado. Por exemplo, suponha que a exibição atual represente um álbum. Um álbum é um contêiner de faixas, portanto **selecteditemtype** é igual a CPTrackID e **selecteditemid** é a ID da faixa selecionada. Outras exibições não têm um item de mídia selecionado. Por exemplo, se o usuário clicar no nó raiz do armazenamento online no controle de exibição de árvore, o Windows Media Player exibirá uma página de descoberta fornecida pela loja online. O Player não exibe nenhum contêiner de itens de mídia na interface do usuário do Player. Nesse caso, **selecteditemtype** é igual a UnknownLocation e **selecteditemid** é igual à cadeia de caracteres vazia.
+determinadas exibições em Windows Media Player têm um item de mídia específico selecionado. Por exemplo, suponha que a exibição atual represente um álbum. Um álbum é um contêiner de faixas, portanto **selecteditemtype** é igual a CPTrackID e **selecteditemid** é a ID da faixa selecionada. Outras exibições não têm um item de mídia selecionado. por exemplo, se o usuário clicar no nó raiz do armazenamento online no controle de exibição de árvore, Windows Media Player exibirá uma página de descoberta fornecida pela loja online. O Player não exibe nenhum contêiner de itens de mídia na interface do usuário do Player. Nesse caso, **selecteditemtype** é igual a UnknownLocation e **selecteditemid** é igual à cadeia de caracteres vazia.
 
 ## <a name="requirements"></a>Requisitos
 

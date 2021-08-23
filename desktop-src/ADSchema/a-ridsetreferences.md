@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4115d013a19e7dc8f100f35b57ee3658855e3b6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08f5a6f7a885f161a60a1e184a691deb163e6a8a3198c36e776d3b793d109615
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646636"
 ---
 # <a name="rid-set-references-attribute"></a>Atributo RID-Set-References
 
@@ -57,7 +57,7 @@ Lista de referências a objetos RID-Set que gerenciam a alocação de RID (ident
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -78,7 +78,7 @@ Lista de referências a objetos RID-Set que gerenciam a alocação de RID (ident
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -99,7 +99,7 @@ Lista de referências a objetos RID-Set que gerenciam a alocação de RID (ident
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -120,7 +120,7 @@ Lista de referências a objetos RID-Set que gerenciam a alocação de RID (ident
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -141,7 +141,7 @@ Lista de referências a objetos RID-Set que gerenciam a alocação de RID (ident
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
@@ -162,7 +162,7 @@ Lista de referências a objetos RID-Set que gerenciam a alocação de RID (ident
 |------------------------|-------------------------------------------|
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | True                                      |
+| System-Only            | Verdadeiro                                      |
 | É de valor único       | Falso                                     |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |

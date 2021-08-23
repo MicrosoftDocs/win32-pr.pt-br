@@ -1,7 +1,7 @@
 ---
-description: Função D3DXSHPRTCompSplitMeshSC – usada com resultados compactados da versão de vértice do simulador de transferência radiante (PRT) precomputado.
+description: Função D3DXSHPRTCompSplitMeshSC – usada com resultados compactados da versão de vértice do simulador de PRT (transferência de radiance pré-comutada).
 ms.assetid: 10d81920-2a1b-42fa-aabe-7d6b504f4d36
-title: Função D3DXSHPRTCompSplitMeshSC (D3DX9Mesh. h)
+title: Função D3DXSHPRTCompSplitMeshSC (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e51a86ec9b12992d49364d3a7c614751dacafac3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 14b138ae4c1b61b70147726d1a320e8dca1c0a57ffb11dd742419a46f9d131b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119630866"
 ---
 # <a name="d3dxshprtcompsplitmeshsc-function"></a>Função D3DXSHPRTCompSplitMeshSC
 
-Usado com resultados compactados da versão de vértice do simulador de transferência radiante (PRT) de computação. Depois que [**D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md) tiver sido chamado, essa função poderá ser usada para dividir a malha em um grupo de faces/vértices por supercluster. Cada super cluster contém todas as faces que contêm qualquer vértice classificado em um de seus clusters. Todos os vértices conectados a esse conjunto de faces também estão incluídos na matriz retornada ppVertStatus indicando se o vértice pertence ou não ao Super cluster.
+Usado com resultados compactados da versão de vértice do simulador de PRT (transferência de radiance pré-comutada). Depois [**que D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md) tiver sido chamado, essa função poderá ser usada para dividir a malha em um grupo de faces/vértices por super cluster. Cada super cluster contém todos os rostos que contêm qualquer vértice classificado em um de seus clusters. Todos os vértices conectados a esse conjunto de faces também são incluídos com a matriz retornada ppVertStatus, indicando se o vértice pertence ou não ao super cluster.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,147 +55,147 @@ HRESULT D3DXSHPRTCompSplitMeshSC(
 
 <dl> <dt>
 
-*pClusterIDs* \[ no\]
+*pClusterIDs* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-*NumVertices* IDs de cluster (extraídas de um buffer compactado).
+IDs de cluster *numVertices* (extraídas de um buffer compactado.)
 
 </dd> <dt>
 
-*NumVertices* \[ no\]
+*NumVertices* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de vértices na malha original.
 
 </dd> <dt>
 
-*NumCs* \[ no\]
+*NumCs* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de clusters (parâmetro de entrada para compactação).
+Número de clusters (parâmetro de entrada para compactação.)
 
 </dd> <dt>
 
-*pSClusterIDs* \[ no\]
+*pSClusterIDs* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Matriz de tamanho *NumCs* que conterá as IDs de supercluster.
+Matriz de *numCs de tamanho* que conterão IDs de super cluster.
 
 </dd> <dt>
 
-*NumSCs* \[ no\]
+*NumSCs* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de superclusters alocados em [**D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md).
+Número de super clusters alocados [**em D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md).
 
 </dd> <dt>
 
-*pInputIB* \[ no\]
+*pInputIB* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Buffer de índice bruto para malha. O formato depende de *InputIBIs32Bit*.
+Buffer de índice bruto para malha. O formato depende de *InputIBIs32Bit.*
 
 </dd> <dt>
 
-*InputIBIs32Bit* \[ no\]
+*InputIBIs32Bit* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Se for **true**, o buffer de índice será definido como 32 bit; caso contrário, 16 bits.
+Se **TRUE**, o buffer de índice será definido como 32 bits; caso contrário, 16 bits.
 
 </dd> <dt>
 
-*NumFaces* \[ no\]
+*NumFaces* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de rostos na malha original (*pInputIB* é 3 vezes esse comprimento.)
-
-</dd> <dt>
-
-*ppIBData* \[ entrada, saída\]
-</dt> <dd>
-
-Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
-
-Buffer de índice bruto que conterá as faces divididas resultantes. Formato determinado por *InputIBIs32Bit*. Alocada por função.
+Número de faces na malha original (*pInputIB* tem três vezes esse comprimento.)
 
 </dd> <dt>
 
-*pIBDataLength* \[ entrada, saída\]
-</dt> <dd>
-
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
-
-Comprimento de *ppIBData*, atribuído na função.
-
-</dd> <dt>
-
-*OutputIBIs32Bit* \[ entrada, saída\]
-</dt> <dd>
-
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
-
-Se **for true**, alocará uma matriz de inteiros sem sinal; caso contrário, o aloca uma matriz curta não assinada.
-
-</dd> <dt>
-
-*ppFaceRemap* \[ entrada, saída\]
+*ppIBData* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Mapeamento de cada face em *ppIBData* para faces originais. O comprimento é \* *pIBDataLength*/3.
+Buffer de índice bruto que conterá as faces divididas resultantes. Formato determinado por *InputIBIs32Bit.* Alocado por função.
 
 </dd> <dt>
 
-*ppVertData* \[ entrada, saída\]
+*pIBDataLength* \[ in, out\]
+</dt> <dd>
+
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
+
+Comprimento de *ppIBData*, atribuído na função .
+
+</dd> <dt>
+
+*OutputIBIs32Bit* \[ in, out\]
+</dt> <dd>
+
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
+
+Se **TRUE**, alocará uma matriz de inteiros sem sinal; caso contrário, alocará uma matriz curta sem assinatura.
+
+</dd> <dt>
+
+*ppFaceRemap* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Nova estrutura de dados de vértice. Tamanho de *pVertDataLength*.
+Mapeamento de cada rosto em *ppIBData para* rostos originais. Length é \* *pIBDataLength*/3.
 
 </dd> <dt>
 
-*pVertDataLength* \[ entrada, saída\]
+*ppVertData* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Número de novos vértices na malha dividida. Atribuído na função.
+Nova estrutura de dados de vértice. Tamanho de *pVertDataLength.*
 
 </dd> <dt>
 
-*pSCClusterList* \[ entrada, saída\]
+*pVertDataLength* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Matriz de comprimento *NumCs* quais índices *PSCData* (campos *pClusterIDs* \* ) para cada supercluster, contém clusters classificados por supercluster.
+Número de novos vértices na malha dividida. Atribuído na função .
 
 </dd> <dt>
 
-*pSCData* \[ entrada, saída\]
+*pSCClusterList* \[ in, out\]
+</dt> <dd>
+
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
+
+Matriz de *NumCs de* comprimento em que *pSCData* indexa (*campos pClusterIDs)* para cada \* supercluster, contém clusters classificação por supercluster.
+
+</dd> <dt>
+
+*pSCData* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXSHPRTSPLITMESHCLUSTERDATA**](d3dxshprtsplitmeshclusterdata.md)\***
 
-Estrutura por supercluster. Contém índices em *ppIBData*, *pSCClusterList* e *ppVertData*.
+Estrutura por super cluster. Contém índices em *ppIBData,* *pSCClusterList* e *ppVertData.*
 
 </dd> </dl>
 
@@ -203,7 +203,7 @@ Estrutura por supercluster. Contém índices em *ppIBData*, *pSCClusterList* e *
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -211,16 +211,16 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Funções de transferência radiante preputadas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funções de transferência de Radiance pré-comutadas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

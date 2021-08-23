@@ -1,19 +1,19 @@
 ---
-description: O Windows Installer armazena todas as cadeias de caracteres de banco de dados em um único pool de cadeias compartilhada para reduzir o tamanho do banco de dados e melhorar o desempenho.
+description: o Windows Installer armazena todas as cadeias de caracteres de banco de dados em um único pool de cadeias compartilhada para reduzir o tamanho do banco de dados e melhorar o desempenho.
 ms.assetid: b627f3da-3545-4c1a-85b0-d8845fdac621
 title: Validação de String-Pool
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecb544b5c76026846f7e8b8f6f331195426ab55c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1e895a9e9032cb0cf5d94b5a8c3c9070c46fe79041dee41e4ea10366043b4af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627356"
 ---
 # <a name="string-pool-validation"></a>Validação de String-Pool
 
-O Windows Installer armazena todas as cadeias de caracteres de banco de dados em um único pool de cadeias compartilhada para reduzir o tamanho do banco de dados e melhorar o desempenho. O único meio de validar o pool de cadeias de caracteres é usar a ferramenta MsiInfo encontrada no SDK do Windows Installer.
+o Windows Installer armazena todas as cadeias de caracteres de banco de dados em um único pool de cadeias compartilhada para reduzir o tamanho do banco de dados e melhorar o desempenho. o único meio de validar o pool de cadeias de caracteres é usar a ferramenta MsiInfo encontrada no SDK do Windows Installer.
 
 A verificação do pool de cadeias de caracteres consiste em duas verificações principais:
 
@@ -34,7 +34,7 @@ Para verificar as contagens de referência de todas as cadeias de caracteres, to
 
 Se houver um problema de contagem de referência de cadeia de caracteres, o usuário deverá exportar imediatamente cada tabela do banco de dados usando [**MsiDatabaseExport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseexporta), criar um novo banco de dados e importar as tabelas para o novo banco de dados usando [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta). O novo banco de dados tem o mesmo conteúdo do banco de dados antigo, mas as contagens de referência de cadeia de caracteres estão corretas. A adição ou exclusão de dados de um banco de dado com um pool de cadeias de caracteres corrompidos pode aumentar a corrupção do banco de dados e a perda de dado. portanto, é importante executar essas etapas rapidamente para evitar mais perda de dados.
 
-Ao recriar bancos de dados, lembre-se de inserir todos os armazenamentos e fluxos necessários no novo banco de dados (consulte tabela de [ \_ fluxos](-streams-table.md) e tabela de [ \_ armazenamentos](-storages-table.md)) e lembre-se de problemas de página de código. Lembre-se também de definir cada uma das propriedades de [fluxo de informações de resumo](summary-information-stream.md) necessárias.
+ao recriar bancos de dados, lembre-se de inserir todos os armazenamentos e fluxos necessários no novo banco de dados (consulte Fluxos tabela de [ \_ tabelas](-streams-table.md) e [ \_ armazenamentos](-storages-table.md)) e esteja atento a problemas de página de código. Lembre-se também de definir cada uma das propriedades de [fluxo de informações de resumo](summary-information-stream.md) necessárias.
 
  
 

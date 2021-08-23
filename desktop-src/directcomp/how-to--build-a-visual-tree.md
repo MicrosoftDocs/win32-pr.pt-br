@@ -4,17 +4,17 @@ description: Este tópico demonstra como criar uma árvore visual simples do Mic
 ms.assetid: 86006C3C-67A8-4931-BE76-D0CA9DB19505
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 621e3f48f76b76be92dc464678dce23b08ebdbd6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0e27a3af12976f08a1f878779506ac1a42076adecebda02550149e5cb1653d31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670867"
 ---
 # <a name="how-to-build-a-simple-visual-tree"></a>Como criar uma árvore visual simples
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico demonstra como criar uma árvore visual simples do Microsoft DirectComposition. O exemplo neste tópico cria e compõe uma árvore visual que consiste em um visual raiz e três elementos visuais filho. O conteúdo do Visual raiz é um bitmap claro-azul que serve como o plano de fundo para os elementos visuais filho. Esta ilustração mostra a composição criada pelo código de exemplo neste tópico.
 
@@ -83,7 +83,7 @@ for (int i = 0; i < NUM_VISUALS; i++)
 }
 ``` 
 
-A função definida por aplicativo a seguir mostra como criar a superfície do Microsoft DirectComposition e renderizar um bitmap do Windows Graphics Device Interface (GDI) na superfície.
+a função definida por aplicativo a seguir mostra como criar a superfície do Microsoft DirectComposition e renderizar um bitmap Windows Graphics Device Interface (GDI) na superfície.
 
 ```cpp
 // MyCreateGDIRenderedDCompSurface - Creates a DirectComposition surface and 

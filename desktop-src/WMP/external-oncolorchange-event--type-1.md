@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11805cc154c60b8a765f46041f74d40929df418d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b50f23763827965c80c3c2774f6139ba2345e4e50633966d5debc1f2d4b782e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648776"
 ---
 # <a name="externaloncolorchange-event-type-1"></a>Evento external. OnColorChange (tipo 1)
 
@@ -28,7 +28,7 @@ ms.locfileid: "105783605"
 
  
 
-O evento **OnColorChange** ocorre quando a cor da interface do usuário do Windows Media Player é alterada.
+o evento **OnColorChange** ocorre quando a cor da interface do usuário do Windows Media Player é alterada.
 
 ``` syntax
 window.external.OnColorChange = FunctionName
@@ -36,7 +36,7 @@ window.external.OnColorChange = FunctionName
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa é uma propriedade somente gravação que especifica o nome da função no script que o Windows Media Player chama quando o evento ocorre.
+essa é uma propriedade somente gravação que especifica o nome da função no script que Windows Media Player chama quando o evento ocorre.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -44,7 +44,7 @@ A função que manipula esse evento não usa parâmetros.
 
 ## <a name="remarks"></a>Comentários
 
-Os usuários podem alterar a cor da interface do usuário do Windows Media Player. Você pode usar esse evento para personalizar a aparência da página da web hospedada para corresponder ao Player.
+os usuários podem alterar a cor da interface do usuário Windows Media Player. Você pode usar esse evento para personalizar a aparência da página da web hospedada para corresponder ao Player.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ ms.assetid: 78fbf15a-678f-4d87-a309-e70374e3ecee
 title: Criando um nome de entidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fe512be48c9a727857c4fac4abc6e04a705b7f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00a7350268c4b7fe5f0d6bde0630bfa7556bc8dd6085e11261456299b725dd57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670206"
 ---
 # <a name="creating-a-subject-name"></a>Criando um nome de entidade
 
@@ -19,7 +19,7 @@ Você pode usar a interface [**IX500DistinguishedName**](/windows/desktop/api/Ce
 |-----------------------------------|-------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | C<br/>                      | \_nome do \_ país do OID do XCN \_<br/>              | Contém um código de país ou região ISO 3166 de duas letras.<br/>                                  |
 | CN<br/>                     | \_ \_ nome comum do OID XCN \_<br/>               | Contém um nome comum.<br/>                                                                 |
-| E<br/> Email<br/>     | XCN \_ OID \_ RSA \_ emailAddr<br/>             | Contém um endereço de email.<br/>                                                              |
+| E<br/> EMAIL<br/>     | XCN \_ OID \_ RSA \_ emailAddr<br/>             | Contém um endereço de email.<br/>                                                              |
 | DC<br/>                     | componente de domínio do XCN \_ OID \_ \_<br/>          | Contém uma parte de um nome DNS (sistema de nomes de domínio).<br/>                                   |
 | G<br/> GivenName<br/> | \_nome do OID XCN \_ fornecido \_<br/>                | Contém a parte do nome de uma pessoa que não é um sobrenome.<br/>                             |
 | I<br/>                      | \_iniciais do OID do XCN \_<br/>                   | Contém as iniciais de uma pessoa.<br/>                                                           |

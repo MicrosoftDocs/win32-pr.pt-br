@@ -1,24 +1,24 @@
 ---
-title: Mensagens do acelerador de teclado
-description: Mensagens do acelerador de teclado
+title: Mensagens de acelerador de teclado
+description: Mensagens de acelerador de teclado
 ms.assetid: 987151e7-fd68-4ff5-a131-116a6b17ac28
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f14244324709f01256525704107c2a572bd6c141
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4ba8c240563730db4291765682b5b9624cbe0e9ca0eec8f81fea6336a1731201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602006"
 ---
-# <a name="keyboard-accelerator-messages"></a>Mensagens do acelerador de teclado
+# <a name="keyboard-accelerator-messages"></a>Mensagens de acelerador de teclado
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**CHANGEUISTATE do WM \_**](wm-changeuistate.md)
--   [**INITMENU do WM \_**](wm-initmenu.md)
--   [**QUERYUISTATE do WM \_**](wm-queryuistate.md)
--   [**UPDATEUISTATE do WM \_**](wm-updateuistate.md)
+-   [**WM \_ CHANGEUISTATE**](wm-changeuistate.md)
+-   [**WM \_ INITMENU**](wm-initmenu.md)
+-   [**WM \_ QUERYUISTATE**](wm-queryuistate.md)
+-   [**WM \_ UPDATEUISTATE**](wm-updateuistate.md)
 
  
 

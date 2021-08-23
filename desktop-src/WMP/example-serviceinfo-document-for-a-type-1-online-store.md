@@ -1,31 +1,31 @@
 ---
-title: Documento de informações de exemplo para uma loja online tipo 1
-description: Documento de informações de exemplo para uma loja online tipo 1
+title: Documento ServiceInfo de exemplo para uma loja online do tipo 1
+description: Documento ServiceInfo de exemplo para uma loja online do tipo 1
 ms.assetid: 7d997773-1c11-44d5-ae67-05ba3909c481
 keywords:
-- Repositórios online do Windows Media Player, documento de informações de exemplo
-- repositórios online, documento de informações de exemplo
-- Digite 1 lojas online, documento de informações de exemplo
-- Repositórios online do Windows Media Player, documento do serviceInfo
-- repositórios online, documento do serviceInfo
-- Digite 1 lojas online, documento do serviceInfo
-- Lojas online do Windows Media Player, exemplo de código
+- Windows Media Player online, exemplo de documento ServiceInfo
+- lojas online, exemplo de documento ServiceInfo
+- tipo 1 lojas online, exemplo de documento ServiceInfo
+- Windows Media Player online, documento ServiceInfo
+- lojas online, documento ServiceInfo
+- type 1 online stores,ServiceInfo document
+- Windows Media Player online, exemplo de código
 - lojas online, exemplo de código
-- tipo 1 lojas online, exemplo de código
-- documento de informações de exemplo
-- Documento do serviceInfo
+- type 1 online stores,code example
+- exemplo de documento ServiceInfo
+- Documento ServiceInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1378c30a8dbbb46844923e9c73c242a28d5da3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a414ed729733eed610b06e43748e393fa600ee46917d4f9b30ad21ae8d378d3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650206"
 ---
-# <a name="example-serviceinfo-document-for-a-type-1-online-store"></a>Documento de informações de exemplo para uma loja online tipo 1
+# <a name="example-serviceinfo-document-for-a-type-1-online-store"></a>Documento ServiceInfo de exemplo para uma loja online do tipo 1
 
-O exemplo de código a seguir mostra um documento de ServiceInfo.xml completo. Você pode usar esse XML como um ponto de partida para seu próprio documento do serviceInfo.
+O exemplo de código a seguir mostra um documento ServiceInfo.xml completo. Você pode usar esse XML como um ponto de partida para seu próprio documento ServiceInfo.
 
 
 ```C++
@@ -94,15 +94,15 @@ O exemplo de código a seguir mostra um documento de ServiceInfo.xml completo. V
 [**Guia de programação para lojas online do tipo 1**](programming-guide-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**Documento do serviceInfo para uma loja online tipo 1**](serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo para um armazenamento online do tipo 1**](serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento do serviceInfo**](serviceinfo-document.md)
+[**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

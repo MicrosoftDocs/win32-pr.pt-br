@@ -1,50 +1,50 @@
 ---
-title: Como imprimir o conteúdo de controles de edição avançados
-description: Esta seção contém informações sobre como imprimir o conteúdo de controles de edição avançados.
+title: Como imprimir o conteúdo de controles de edição rich
+description: Esta seção contém informações sobre como imprimir o conteúdo de controles de edição rich.
 ms.assetid: d61e2e11-d848-43fc-9622-b3b2032bda48
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a304e5c09b5f8ea934c90873c3d915179295964e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e00c7a7287fc86e47e085cfacd7757a7e24b4a91a3a513e75dc4610b51606b36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105753570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575546"
 ---
-# <a name="how-to-print-the-contents-of-rich-edit-controls"></a>Como imprimir o conteúdo de controles de edição avançados
+# <a name="how-to-print-the-contents-of-rich-edit-controls"></a>Como imprimir o conteúdo de controles de edição rich
 
-Esta seção contém informações sobre como imprimir o conteúdo de controles de edição avançados.
+Esta seção contém informações sobre como imprimir o conteúdo de controles de edição rich.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="use-print-preview"></a>Usar visualização de impressão
+### <a name="use-print-preview"></a>Usar a visualização de impressão
 
-Para formatar o texto em um controle de edição rico, como ele aparecerá em um dispositivo de destino (geralmente, a página impressa), envie a mensagem em [**\_ SETTARGETDEVICE**](em-settargetdevice.md) , passando o identificador para um contexto de dispositivo (HDC) do dispositivo de destino e a largura de linha desejada. Normalmente, você obterá a largura da linha chamando [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para o HDC de destino.
+Para formatar texto em um controle de edição rico, pois ele aparecerá em um dispositivo de destino (geralmente a página impressa), envie a mensagem [**EM \_ SETTARGETDEVICE,**](em-settargetdevice.md) passando o handle para um HDC (contexto de dispositivo) do dispositivo de destino e a largura de linha desejada. Normalmente, você obterá a largura da linha chamando [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para o HDC de destino.
 
-### <a name="format-print-for-a-specific-device"></a>Formato de impressão para um dispositivo específico
+### <a name="format-print-for-a-specific-device"></a>Formatar impressão para um dispositivo específico
 
-Para formatar parte de um conteúdo de controle de edição rico para um dispositivo específico, envie a mensagem em [**\_ FORMATRANGE**](em-formatrange.md) . A estrutura [**FORMATRANGE**](/windows/desktop/api/Richedit/ns-richedit-formatrange) usada com essa mensagem Especifica o intervalo de texto a ser formatado, bem como o HDC para o dispositivo de destino. Opcionalmente, essa mensagem também envia o texto para a impressora.
+Para formatar parte do conteúdo de um controle de edição rich para um dispositivo específico, envie a [**mensagem EM \_ FORMATRANGE.**](em-formatrange.md) A [**estrutura FORMATRANGE**](/windows/desktop/api/Richedit/ns-richedit-formatrange) usada com essa mensagem especifica o intervalo de texto a ser formatado, bem como o HDC para o dispositivo de destino. Opcionalmente, essa mensagem também envia o texto para a impressora.
 
-### <a name="use-banding"></a>Usar faixa
+### <a name="use-banding"></a>Usar o banding
 
-A faixa é o processo pelo qual uma única página de saída é gerada usando um ou mais retângulos ou faixas separadas. Quando todas as faixas são colocadas na página, uma imagem completa resulta. Essa abordagem é geralmente usada por impressoras rasterizadas que não têm memória suficiente ou capacidade de fazer a imagem de uma página inteira ao mesmo tempo.
+A banda é o processo pelo qual uma única página de saída é gerada usando um ou mais retângulos separados ou faixas. Quando todas as faixas são colocadas na página, uma imagem completa resulta. Essa abordagem geralmente é usada por impressoras raster que não têm memória suficiente ou capacidade de criar uma imagem de uma página inteira ao mesmo tempo.
 
-Para implementar a faixa, use a mensagem em [**\_ DISPLAYBAND**](em-displayband.md) para enviar partes sucessivas do conteúdo do controle de edição rico para o dispositivo. Essa mensagem é impressa no dispositivo que foi especificado em uma chamada anterior para [**em \_ FORMATRANGE**](em-formatrange.md). É claro que o parâmetro *wParam* da mensagem **em \_ FORMATRANGE** deve ser zero, de modo que a impressão não seja iniciada por essa mensagem.
+Para implementar a banda, use a [**mensagem EM \_ DISPLAYBAND**](em-displayband.md) para enviar partes sucessivas do conteúdo do controle de edição rich para o dispositivo. Essa mensagem imprime no dispositivo que foi especificado em uma chamada anterior para [**EM \_ FORMATRANGE.**](em-formatrange.md) É claro que o *parâmetro wParam* da mensagem **EM \_ FORMATRANGE** deve ser zero, de modo que a impressão não seja iniciada por essa mensagem.
 
 ## <a name="printrtf-code-example"></a>Exemplo de código PrintRTF
 
-O código de exemplo a seguir imprime o conteúdo de um controle rich edit para a impressora especificada.
+O código de exemplo a seguir imprime o conteúdo de um controle de edição rico na impressora especificada.
 
 
 ```C++
@@ -144,12 +144,12 @@ BOOL PrintRTF(HWND hwnd, HDC hdc)
 
 <dl> <dt>
 
-[Usando controles de edição avançados](using-rich-edit-controls.md)
+[Usando controles de edição rich](using-rich-edit-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
