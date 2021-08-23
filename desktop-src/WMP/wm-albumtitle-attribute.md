@@ -1,9 +1,9 @@
 ---
-title: Atributo WM/campos AlbumTitle
-description: O atributo WM/campos AlbumTitle é o título do álbum no qual o conteúdo foi originalmente lançado.
+title: Atributo WM/AlbumTitle
+description: O atributo WM/AlbumTitle é o título do álbum no qual o conteúdo foi lançado originalmente.
 ms.assetid: 8c9609c7-3953-4c5b-8cfd-4766e37a2046
 keywords:
-- Atributo WM/campos AlbumTitle do Windows Media Player
+- Atributo WM/AlbumTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,24 +12,24 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6e66d9c2598e897655ea4712b624852a14c2fa0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5c42cf1e6a51aac56b5bd610b9dfe10d448ada66f9dc4fbfdbb6bb6b1d32a351
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053874"
 ---
-# <a name="wmalbumtitle-attribute"></a>Atributo WM/campos AlbumTitle
+# <a name="wmalbumtitle-attribute"></a>Atributo WM/AlbumTitle
 
-O atributo **WM/campos AlbumTitle** é o título do álbum no qual o conteúdo foi originalmente lançado.
+O **atributo WM/AlbumTitle** é o título do álbum no qual o conteúdo foi lançado originalmente.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado tanto na biblioteca (ou no cache) quanto no arquivo de mídia digital.
+Esse atributo é armazenado na biblioteca (ou cache) e no arquivo de mídia digital.
 
-O **álbum** é um alias para este atributo.
+**O** álbum é um alias para esse atributo.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMAlbumTitle.
+A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMAlbumTitle.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ A constante do Windows Media Format SDK para esse atributo é g \_ wszWMAlbumTit
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -51,13 +51,13 @@ A constante do Windows Media Format SDK para esse atributo é g \_ wszWMAlbumTit
 [Itens de áudio](audio-item-attributes.md)
 </dt> <dt>
 
-[Playlists de CD](cd-playlist-attributes.md)
+[CD Playlists](cd-playlist-attributes.md)
 </dt> <dt>
 
 [Faixas de CD](cd-track-attributes.md)
 </dt> <dt>
 
-[Atributos de arquivo de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+[Atributos de arquivo Windows mídia comumente usados](commonly-used-windows-media-file-attributes.md)
 </dt> </dl>
 
  

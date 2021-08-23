@@ -3,9 +3,9 @@ title: Método Network. getProxyBypassForLocal
 description: O método getProxyBypassForLocal recupera um valor que indica se o servidor proxy será ignorado se o servidor de origem estiver em uma rede local.
 ms.assetid: e5217d56-da22-4424-94b0-400369410b47
 keywords:
-- método getProxyBypassForLocal Windows Media Player
+- Windows Media Player do método getProxyBypassForLocal
 - método getProxyBypassForLocal Windows Media Player, classe de rede
-- Classe de rede Windows Media Player, método getProxyBypassForLocal
+- classe de rede Windows Media Player, método getProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c60b9248cd5a893496c2de88c5a5370dfb7bf82
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51f22eb6187938318d95b9dd7a473b58e216315210d4af41c29b352b2654cbf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054554"
 ---
 # <a name="networkgetproxybypassforlocal-method"></a>Método Network. getProxyBypassForLocal
 
@@ -49,7 +49,7 @@ bRetVal = Network.getProxyBypassForLocal(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um **valor booleano** que indica se o servidor proxy é ignorado. O valor retornado é significativo somente quando **getProxySettings** retorna um valor de dois (use configurações manuais).
 
@@ -61,7 +61,7 @@ Esse método falha a menos que o aplicativo de chamada esteja em execução no c
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa a *rede*. **getProxyBypassForLocal** para exibir se o Windows Media Player está definido para ignorar o servidor proxy para endereços locais. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa a *rede*. **getProxyBypassForLocal** para exibir se Windows Media Player está definido para ignorar o servidor proxy para endereços locais. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

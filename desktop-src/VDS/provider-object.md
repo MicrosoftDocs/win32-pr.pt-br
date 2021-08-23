@@ -4,20 +4,20 @@ ms.assetid: 131e927d-d32a-44f6-8aae-28839cfa9e7d
 title: Objeto de provedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb36517f0091776b9429911212610134f31077a2
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: 0bb64d879b8213970edd5887c2d7a217c434ec38a113d2c9f36cd9e1d73e564d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104569677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999457"
 ---
 # <a name="provider-object"></a>Objeto de provedor
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 O objeto de provedor modela o programa responsável pelo gerenciamento de armazenamento. Este objeto fornece acesso ao provedor de software e à funcionalidade do provedor de hardware. Os programas de provedor executam operações em dispositivos de software (volumes e discos) e dispositivos de hardware (subsistemas de armazenamento e matrizes de unidades por trás de controladores RAID).
 
-O VDS registra um objeto de provedor como um objeto COM no registro do Windows e usa interfaces contidas (não agregação) para implementar os objetos restantes, encapsulando todas as interfaces e métodos e adicionando condicionalmente a funcionalidade. Os objetos e as interfaces que são encapsuladas pelo objeto do provedor diferem dependendo do tipo de provedor.
+o VDS registra um objeto de provedor como um objeto COM no registro de Windows e usa interfaces contidas (não agregação) para implementar os objetos restantes, encapsulando todas as interfaces e métodos e adicionando condicionalmente a funcionalidade. Os objetos e as interfaces que são encapsuladas pelo objeto do provedor diferem dependendo do tipo de provedor.
 
 Você não pode criar uma instância de um objeto de provedor diretamente do seu aplicativo. Em vez disso, você deve iniciar o VDS, obter um ponteiro para um objeto de serviço e usar o objeto de serviço para consultar os provedores conhecidos do host. Para obter instruções sobre como carregar o VDS, consulte [Startup and Service Objects](startup-and-service-objects.md).
 
@@ -35,7 +35,7 @@ A tabela a seguir lista as interfaces, as enumerações e as estruturas relacion
 | Interfaces que são sempre expostas somente por provedores de software                                | [**IVdsSwProvider**](/windows/desktop/api/Vds/nn-vds-ivdsswprovider)                                                                                                                                                                                                                                                       |
 | Interfaces que são sempre expostas somente por provedores de hardware                                | [**IVdsHwProvider**](/windows/desktop/api/Vds/nn-vds-ivdshwprovider)                                                                                                                                                                                                                                                       |
 | Interfaces que podem ser expostas por este objeto                                                | [**IVdsProviderSupport**](/windows/desktop/api/Vds/nn-vds-ivdsprovidersupport)                                                                                                                                                                                                                                             |
-| Interfaces que podem ser expostas somente por provedores de hardware                                    | [**IVdsHwProviderType**](/windows/desktop/api/Vds/nn-vds-ivdshwprovidertype), [**IVdsHwProviderStoragePools**](/windows/desktop/api/Vds/nn-vds-ivdshwproviderstoragepools)**Windows Server 2008, windows vista e Windows Server 2003:** não há suporte para a interface [**IVdsHwProviderStoragePools**](/windows/desktop/api/Vds/nn-vds-ivdshwproviderstoragepools) .<br/> |
+| Interfaces que podem ser expostas somente por provedores de hardware                                    | [**IVdsHwProviderType**](/windows/desktop/api/Vds/nn-vds-ivdshwprovidertype), [**IVdsHwProviderStoragePools**](/windows/desktop/api/Vds/nn-vds-ivdshwproviderstoragepools)**Windows server 2008, Windows Vista e Windows Server 2003:** não há suporte para a interface [**IVdsHwProviderStoragePools**](/windows/desktop/api/Vds/nn-vds-ivdshwproviderstoragepools) .<br/> |
 | Interfaces que são sempre implementadas, mas não expostas a aplicativos                       | [**IVdsProviderPrivate**](/windows/desktop/api/VdsHwPrv/nn-vdshwprv-ivdsproviderprivate)                                                                                                                                                                                                                                             |
 | Interfaces que são sempre implementadas por provedores de hardware, mas não são expostas a aplicativos | [**IVdsHwProviderPrivate**](/windows/desktop/api/VdsHwPrv/nn-vdshwprv-ivdshwproviderprivate)                                                                                                                                                                                                                                         |
 | Interfaces que podem ser implementadas por provedores de hardware, mas não expostas a aplicativos     | [**IVdsHwProviderPrivateMpio**](/windows/desktop/api/VdsHwPrv/nn-vdshwprv-ivdshwproviderprivatempio)                                                                                                                                                                                                                                 |

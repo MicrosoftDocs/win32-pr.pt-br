@@ -1,7 +1,7 @@
 ---
 description: Obtém ou define o caminho para o objeto de link.
 ms.assetid: ddb5be91-7c21-46c8-949e-bdd973e11b6c
-title: Propriedade ShellLinkObject. Path (shldisp. h)
+title: Propriedade ShellLinkObject.Path (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ac6b6f1168724f3808462088dc7e5907ec0cec58
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d3eb2418478445dbae9b3f9a0f9e5ba3dde7013854ab3bef8b8f41188d4000e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968385"
 ---
-# <a name="shelllinkobjectpath-property"></a>Propriedade ShellLinkObject. Path
+# <a name="shelllinkobjectpath-property"></a>Propriedade ShellLinkObject.Path
 
 Obtém ou define o caminho para o objeto de link.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,9 +42,9 @@ o caminho totalmente qualificado do objeto de link.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado dessa propriedade em JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra o uso adequado dessa propriedade em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -85,7 +85,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -174,11 +174,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

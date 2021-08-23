@@ -4,25 +4,25 @@ ms.assetid: 4a5f6938-7b33-4350-b8fa-cf78c5c44bcd
 title: Exibindo páginas de propriedades de um filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0845a12b73363dc6ed93654439fd31826bf9cfc
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0f0e29654983ee51b98666411a11f7130eb896c380ec754b5576862c313dcbc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016133"
 ---
 # <a name="displaying-a-filters-property-pages"></a>Exibindo páginas de propriedades de um filtro
 
 Uma página de propriedades é uma maneira de um filtro oferecer suporte a propriedades que o usuário pode definir. Este artigo descreve como exibir as páginas de propriedades de um filtro em um aplicativo. Para obter mais informações sobre páginas de propriedades, consulte a documentação do Platform SDK.
 
 > [!Note]  
-> Embora muitos dos filtros fornecidos com as páginas de propriedades de suporte do DirectShow, eles destinam-se a fins de depuração e não são recomendados para uso do aplicativo. Na maioria dos casos, a funcionalidade equivalente é fornecida por meio de uma interface personalizada no filtro. Um aplicativo deve controlar esses filtros programaticamente, em vez de expor suas páginas de propriedades aos usuários.
+> embora muitos dos filtros fornecidos com DirectShow páginas de propriedades de suporte, eles destinam-se a fins de depuração e não são recomendados para uso do aplicativo. Na maioria dos casos, a funcionalidade equivalente é fornecida por meio de uma interface personalizada no filtro. Um aplicativo deve controlar esses filtros programaticamente, em vez de expor suas páginas de propriedades aos usuários.
 
  
 
 Filtros com páginas de propriedades expõem a interface **ISpecifyPropertyPages** . Para determinar se um filtro define uma página de propriedades, consulte o filtro para essa interface usando **QueryInterface**.
 
-Se você criou diretamente uma instância de um filtro (chamando **CoCreateInstance**), você já tem um ponteiro para o filtro. Caso contrário, você pode enumerar os filtros no grafo, usando o método [**IFilterGraph:: EnumFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-enumfilters) . Para obter detalhes, consulte [Enumerando objetos em um grafo de filtro](enumerating-objects-in-a-filter-graph.md).
+Se você criou diretamente uma instância de um filtro (chamando **CoCreateInstance**), você já tem um ponteiro para o filtro. Caso contrário, você pode enumerar os filtros no grafo, usando o método [**IFilterGraph:: EnumFilters**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-enumfilters) . Para obter detalhes, consulte [Enumerando objetos em um filtro Graph](enumerating-objects-in-a-filter-graph.md).
 
 Quando você tiver o ponteiro de interface **ISpecifyPropertyPages** , recupere as páginas de propriedades do filtro chamando o método **ISpecifyPropertyPages:: GetPages** . Esse método preenche uma matriz contada de identificadores globalmente exclusivos (GUIDs) com o identificador de classe (CLSID) de cada página de propriedades. Uma matriz contada é definida por uma estrutura **CAUUID** , que você deve alocar, mas não precisa inicializar. O método **GetPages** aloca a matriz, que está contida no membro **PElems** da estrutura **CAUUID** . Quando terminar, libere a matriz chamando a função **CoTaskMemFree** .
 
@@ -71,7 +71,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[Tarefas básicas do DirectShow](basic-directshow-tasks.md)
+[tarefas básicas de DirectShow](basic-directshow-tasks.md)
 </dt> </dl>
 
  

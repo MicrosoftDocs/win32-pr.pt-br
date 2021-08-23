@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dea5489aaa6fafcaa19a97a44d81fd85abb178d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8322bb07300ce188684f5097232563e80721fadf0f614c24ac5f7b2d034c1fff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985306"
 ---
 # <a name="setrgbstring-message"></a>Mensagem SETRGBSTRING
 
@@ -52,7 +52,7 @@ O valor RGB da cor a ser selecionada na caixa de diálogo **cor** . Você pode u
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esta mensagem não tem nenhum valor de retorno.
 

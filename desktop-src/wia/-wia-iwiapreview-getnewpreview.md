@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: c3f1251e7ec1b98d43e616c1ff6f2b3b2aacd8b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2200452fe586a4755a4560f0f68094e5f107e9e7d69a823bafac4d33bc1c6ce8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965555"
 ---
 # <a name="iwiapreviewgetnewpreview-method"></a>Método IWiaPreview:: GetNewPreview
 
@@ -44,9 +44,9 @@ HRESULT GetNewPreview(
 *pWiaItem2* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
-Especifica um ponteiro para o item [_ *IWiaItem2* *](-wia-iwiaitem2.md) para a imagem.
+Especifica um ponteiro para o item [**IWiaItem2**](-wia-iwiaitem2.md) para a imagem.
 
 </dd> <dt>
 
@@ -62,13 +62,13 @@ Atualmente não utilizado. Deve ser definido como zero.
 *pWiaTransferCallback* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWiaTransferCallback**](-wia-iwiatransfercallback.md) \** _
+Tipo: **[ **IWiaTransferCallback**](-wia-iwiatransfercallback.md)\***
 
-Especifica um ponteiro para a interface [_ *IWiaTransferCallback* *](-wia-iwiatransfercallback.md) do aplicativo de chamada.
+Especifica um ponteiro para a interface [**IWiaTransferCallback**](-wia-iwiatransfercallback.md) do aplicativo de chamada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -80,7 +80,7 @@ Um aplicativo deve chamar **IWiaPreview:: GetNewPreview** antes de chamar [**IWi
 
 **IWiaPreview:: GetNewPreview** define a propriedade de [**\_ \_ visualização do DPS do WIA**](-wia-wiaitempropscannerdevice.md) (e a redefine antes de retornar, a menos que tenha sido definido antes). Isso permite que o driver e o hardware, bem como o filtro de processamento de imagens, saibam que o item é uma verificação de visualização.
 
-Internamente, o componente de versão prévia do WIA (Windows Image Acquisition) 2,0 cria uma instância do filtro de processamento de imagem do driver chamando [**GetExtension**](-wia-iwiaitem2-getextension.md) em *pWiaItem2*. O componente de visualização do WIA 2,0 faz isso quando o aplicativo chama **IWiaPreview:: GetNewPreview**. O componente de visualização do WIA 2,0 também Inicializa o filtro em **IWiaPreview:: GetNewPreview**. A mesma instância de filtro é usada pelo componente de visualização do WIA 2,0 durante uma chamada para [**IWiaPreview:: UpdatePreview**](-wia-iwiapreview-updatepreview.md).
+internamente, o componente de visualização do WIA (Windows Image Acquisition) 2,0 cria uma instância do filtro de processamento de imagem do driver chamando [**getextension**](-wia-iwiaitem2-getextension.md) em *pWiaItem2*. O componente de visualização do WIA 2,0 faz isso quando o aplicativo chama **IWiaPreview:: GetNewPreview**. O componente de visualização do WIA 2,0 também Inicializa o filtro em **IWiaPreview:: GetNewPreview**. A mesma instância de filtro é usada pelo componente de visualização do WIA 2,0 durante uma chamada para [**IWiaPreview:: UpdatePreview**](-wia-iwiapreview-updatepreview.md).
 
 Antes de chamar o componente de visualização do WIA 2,0, um aplicativo deve chamar [**CheckExtension**](-wia-iwiaitem2-checkextension.md) para certificar-se de que o driver vem com um filtro de processamento de imagem. Ele deve chamar **CheckExtension** no item que ele passaria para **IWiaPreview:: GetNewPreview**. É inútil fornecer visualizações dinâmicas sem um filtro de processamento de imagem. Se um aplicativo chamar **IWiaPreview:: GetNewPreview** para um driver sem um filtro de processamento de imagem, a chamada falhará.
 
@@ -220,9 +220,9 @@ DownloadPreviewImage(
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

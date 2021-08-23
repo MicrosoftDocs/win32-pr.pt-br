@@ -1,5 +1,5 @@
 ---
-description: A classe CBaseControlWindow implementa a interface IVideoWindow e controla o acesso externo ao seu filtro associado.
+description: A classe CBaseControlWindow implementa a interface IVideoWindow e controla o acesso externo ao filtro associado.
 ms.assetid: 3657ba24-ffaa-491f-9eb3-f9913d5d421a
 title: Classe CBaseControlWindow
 ms.topic: reference
@@ -12,66 +12,66 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: c4b53cc5ce1b209cc7de9d68648b68096e5c4911
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 500706531d7e7a934681dabe3bcd00b7de0d80e42b8bbf27a5456a8fd4415f21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017225"
 ---
 # <a name="cbasecontrolwindow-class"></a>Classe CBaseControlWindow
 
-![hierarquia de classe CBaseControlWindow](images/wctrl01.png)
+![Hierarquia de classes cbasecontrolwindow](images/wctrl01.png)
 
-A classe **CBaseControlWindow** implementa a interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) e controla o acesso externo ao seu filtro associado. Você deve sincronizar o objeto **CBaseControlWindow** com o filtro passando um ponteiro para um objeto de sincronização de seção crítica. A classe **CBaseControlWindow** fornece vários métodos que retornam configurações de propriedade sem lidar com essa seção crítica. Por exemplo, chamar [**CBaseControlWindow:: get \_ AutoShow**](cbasecontrolwindow-get-autoshow.md) para recuperar o valor do membro de dados **m \_ bAutoShow** bloqueia a seção crítica. O filtro pode já ter uma seção crítica interna bloqueada, no entanto, que poderia violar a hierarquia de bloqueio do filtro. Em vez disso, chamar a função de membro [**CBaseControlWindow:: IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md) retorna o valor necessário sem afetar a seção crítica.
+A **classe CBaseControlWindow** implementa a interface [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) e controla o acesso externo ao filtro associado. Você deve sincronizar o **objeto CBaseControlWindow** com o filtro passando um ponteiro para um objeto de sincronização de seção crítico. A **classe CBaseControlWindow** fornece vários métodos que retornam configurações de propriedade sem lidar com esta seção crítica. Por exemplo, chamar [**CBaseControlWindow::get \_ AutoShow**](cbasecontrolwindow-get-autoshow.md) para recuperar o valor do membro de dados **m \_ bAutoShow** bloqueia a seção crítica. No entanto, o filtro já pode ter uma seção crítica interna bloqueada, o que pode violar a hierarquia de bloqueio do filtro. Em vez disso, chamar a função membro [**CBaseControlWindow::IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md) retorna o valor necessário sem afetar a seção crítica.
 
-Todos os métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) implementados pelo **CBaseControlWindow** exigem que o filtro esteja conectado corretamente com seu filtro upstream. Por esse motivo, os objetos de classe exigem um PIN de sincronização, que você define chamando o método [**CBaseControlWindow:: SetControlWindowPin**](cbasecontrolwindow-setcontrolwindowpin.md) . Sempre que você chamar um método **IVideoWindow** , o objeto **CBaseControlWindow** verificará se o PIN ainda está conectado.
+Todos os métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) implementados pelo **CBaseControlWindow** exigem que o filtro seja conectado corretamente com seu filtro upstream. Por esse motivo, os objetos de classe exigem um pin de sincronização, que você definiu chamando o [**método CBaseControlWindow::SetControlWindowPin.**](cbasecontrolwindow-setcontrolwindowpin.md) Sempre que você chama **um método IVideoWindow,** o **objeto CBaseControlWindow** verifica se o pino ainda está conectado.
 
 
 
 | Membros de Dados Protegidos                                                     | Descrição                                                                                                                                 |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| \_bAutoShow m                                                               | Resultado quando o estado é alterado.                                                                                                              |
-| \_bCursorHidden m                                                           | Determinação de se o cursor é exibido ou oculto.                                                                                 |
-| \_BorderColour m                                                            | Cor da borda da janela atual.                                                                                                         |
-| \_hwndDrain m                                                               | Identificador de janela para o qual as mensagens recebidas são lançadas.                                                                                        |
-| \_hwndOwner m                                                               | Janela proprietária.                                                                                                                              |
-| \_pFilter m                                                                 | Ponteiro para o filtro de mídia proprietário.                                                                                                         |
-| \_pInterfaceLock m                                                          | Seção crítica definida externamente.                                                                                                        |
-| \_pPin m                                                                    | Controle dos tipos de mídia para conexão.                                                                                                  |
+| m \_ bAutoShow                                                               | Resultado quando o estado muda.                                                                                                              |
+| m \_ bCursorHidden                                                           | Determinação de se o cursor é exibido ou oculto.                                                                                 |
+| m \_ BorderColorr                                                            | Cor da borda da janela atual.                                                                                                         |
+| m \_ hwndDrain                                                               | O alça de janela para o qual as mensagens recebidas são postadas.                                                                                        |
+| m \_ hwndOwner                                                               | Janela De propriedade.                                                                                                                              |
+| m \_ pFilter                                                                 | Ponteiro para o filtro de mídia de propriedade.                                                                                                         |
+| m \_ pInterfaceLock                                                          | Seção crítica definida externamente.                                                                                                        |
+| m \_ pPin                                                                    | Controle dos tipos de mídia para conexão.                                                                                                  |
 | Funções de membro                                                           | Descrição                                                                                                                                 |
-| [**CBaseControlWindow**](cbasecontrolwindow-cbasecontrolwindow.md)        | Constrói um objeto **CBaseControlWindow** .                                                                                                 |
+| [**Cbasecontrolwindow**](cbasecontrolwindow-cbasecontrolwindow.md)        | Constrói **um objeto CBaseControlWindow.**                                                                                                 |
 | [**DoGetWindowStyle**](cbasecontrolwindow-dogetwindowstyle.md)            | Recupera os estilos de janela típicos ou estendidos.                                                                                     |
 | [**DoSetWindowStyle**](cbasecontrolwindow-dosetwindowstyle.md)            | Define os estilos de janela típicos ou estendidos.                                                                                                 |
-| [**GetBorderColour**](cbasecontrolwindow-getbordercolour.md)              | Recupera a cor da borda atual. Essa é uma função de membro auxiliar.                                                                       |
-| [**GetOwnerWindow**](cbasecontrolwindow-getownerwindow.md)                | Recupera a janela proprietária. Essa é uma função de membro auxiliar.                                                                              |
-| [**IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md)          | Recupera informações sobre se a janela de vídeo é exibida automaticamente quando o filtro de renderização é pausado ou executado.                        |
-| [**IsCursorHidden**](cbasecontrolwindow-iscursorhidden.md)                | Recupera o estado atual do membro de dados **m \_ bCursorHidden** sem bloquear a seção crítica. Essa é uma função de membro auxiliar. |
-| [**PossiblyEatMessage**](cbasecontrolwindow-possiblyeatmessage.md)        | Distribui mensagens para a janela pai.                                                                                                  |
-| [**SetControlWindowPin**](cbasecontrolwindow-setcontrolwindowpin.md)      | Notifica o objeto do Pin ao qual se aplica.                                                                                         |
+| [**GetBorderColorr**](cbasecontrolwindow-getbordercolour.md)              | Recupera a cor da borda atual. Essa é uma função de membro auxiliar.                                                                       |
+| [**GetOwnerWindow**](cbasecontrolwindow-getownerwindow.md)                | Recupera a janela de propriedade. Essa é uma função de membro auxiliar.                                                                              |
+| [**IsAutoShowEnabled**](cbasecontrolwindow-isautoshowenabled.md)          | Recupera informações sobre se a janela de vídeo aparece automaticamente quando o filtro de renderização pausa ou é executado.                        |
+| [**IsCursorHidden**](cbasecontrolwindow-iscursorhidden.md)                | Recupera o estado atual do **membro de dados m \_ bCursorHidden** sem bloquear a seção crítica. Essa é uma função de membro auxiliar. |
+| [**PossivelmenteEatMessage**](cbasecontrolwindow-possiblyeatmessage.md)        | Distribui mensagens para a janela pai.                                                                                                  |
+| [**SetControlWindowPin**](cbasecontrolwindow-setcontrolwindowpin.md)      | Notifica o objeto do pino ao qual ele se aplica.                                                                                         |
 | Métodos IVideoWindow                                                       | Descrição                                                                                                                                 |
-| [**obter \_ Automostrar**](cbasecontrolwindow-get-autoshow.md)                   | Recupera a configuração atual do sinalizador AutoShow.                                                                                                |
-| [**obter \_ BackgroundPalette**](cbasecontrolwindow-get-backgroundpalette.md) | Recupera a paleta realizada no sinalizador de segundo plano.                                                                                      |
+| [**get \_ AutoShow**](cbasecontrolwindow-get-autoshow.md)                   | Recupera a configuração atual do sinalizador AutoShow.                                                                                                |
+| [**obter \_ BackgroundPalette**](cbasecontrolwindow-get-backgroundpalette.md) | Recupera a paleta realizada no sinalizador de plano de fundo.                                                                                      |
 | [**obter \_ BorderColor**](cbasecontrolwindow-get-bordercolor.md)             | Recupera a cor da borda atual.                                                                                                         |
-| [**obter \_ legenda**](cbasecontrolwindow-get-caption.md)                     | Recupera a legenda da janela atual.                                                                                                       |
-| [**obter \_ tela inteira**](cbasecontrolwindow-get-fullscreenmode.md)      | Recupera o modo de tela inteira atual.                                                                                                     |
-| [**obter \_ altura**](cbasecontrolwindow-get-height.md)                       | Recupera a altura da janela atual.                                                                                                        |
-| [**obter \_ à esquerda**](cbasecontrolwindow-get-left.md)                           | Recupera a coordenada da janela esquerda atual.                                                                                               |
+| [**obter \_ Legenda**](cbasecontrolwindow-get-caption.md)                     | Recupera a legenda da janela atual.                                                                                                       |
+| [**get \_ FullScreenMode**](cbasecontrolwindow-get-fullscreenmode.md)      | Recupera o modo de tela inteira atual.                                                                                                     |
+| [**obter \_ altura**](cbasecontrolwindow-get-height.md)                       | Recupera a altura atual da janela.                                                                                                        |
+| [**get \_ Left**](cbasecontrolwindow-get-left.md)                           | Recupera a coordenada da janela esquerda atual.                                                                                               |
 | [**GetMaxIdealImageSize**](cbasecontrolwindow-getmaxidealimagesize.md)    | Recupera o tamanho máximo da imagem ideal.                                                                                              |
-| [**obter \_ MessageDrain**](cbasecontrolwindow-get-messagedrain.md)           | Recupera a mensagem atual drenagem.                                                                                                        |
+| [**get \_ MessageDrain**](cbasecontrolwindow-get-messagedrain.md)           | Recupera o dreno de mensagens atual.                                                                                                        |
 | [**GetMinIdealImageSize**](cbasecontrolwindow-getminidealimagesize.md)    | Recupera o tamanho mínimo da imagem ideal.                                                                                              |
-| [**obter \_ proprietário**](cbasecontrolwindow-get-owner.md)                         | Recupera o identificador da janela pai.                                                                                                         |
+| [**obter \_ Proprietário**](cbasecontrolwindow-get-owner.md)                         | Recupera o alça da janela pai.                                                                                                         |
 | [**GetRestorePosition**](cbasecontrolwindow-getrestoreposition.md)        | Recupera a posição na qual a janela será restaurada quando maximizada ou minimizada.                                                    |
-| [**obter \_ parte superior**](cbasecontrolwindow-get-top.md)                             | Recupera a coordenada y para a parte superior da janela.                                                                                       |
-| [**Fique \_ visível**](cbasecontrolwindow-get-visible.md)                     | Recupera a configuração de visibilidade atual da janela.                                                                                     |
-| [**obter \_ largura**](cbasecontrolwindow-get-width.md)                         | Recupera a largura da janela.                                                                                                          |
+| [**get \_ Top**](cbasecontrolwindow-get-top.md)                             | Recupera a coordenada y para a parte superior da janela.                                                                                       |
+| [**ficar \_ visível**](cbasecontrolwindow-get-visible.md)                     | Recupera a configuração de visibilidade atual da janela.                                                                                     |
+| [**obter \_ Largura**](cbasecontrolwindow-get-width.md)                         | Recupera a largura da janela.                                                                                                          |
 | [**GetWindowPosition**](cbasecontrolwindow-getwindowposition.md)          | Recupera as coordenadas da janela atual.                                                                                                   |
-| [**obter \_ janelastate**](cbasecontrolwindow-get-windowstate.md)             | Recupera o estado atual da janela.                                                                                                  |
-| [**obter \_ janelastyle**](cbasecontrolwindow-get-windowstyle.md)             | Recupera os estilos de janela padrão.                                                                                                       |
-| [**obter \_ WindowStyleEx**](cbasecontrolwindow-get-windowstyleex.md)         | Recupera os estilos de janela estendida.                                                                                                       |
+| [**get \_ WindowState**](cbasecontrolwindow-get-windowstate.md)             | Recupera o estado atual da janela.                                                                                                  |
+| [**get \_ WindowStyle**](cbasecontrolwindow-get-windowstyle.md)             | Recupera os estilos de janela padrão.                                                                                                       |
+| [**obter \_ WindowStyleEx**](cbasecontrolwindow-get-windowstyleex.md)         | Recupera os estilos de janela estendidos.                                                                                                       |
 | [**HideCursor**](cbasecontrolwindow-hidecursor.md)                        | Oculta ou exibe o cursor.                                                                                                               |
-| [**IsCursorHidden**](cbasecontrolwindow-iscursorhidden.md)                | Recupera o estado atual do membro de dados **m \_ bCursorHidden** .                                                                        |
-| [**NotifyOwnerMessage**](cbasecontrolwindow-notifyownermessage.md)        | Passa mensagens que são enviadas para as janelas proprietárias.                                                                                         |
+| [**IsCursorHidden**](cbasecontrolwindow-iscursorhidden.md)                | Recupera o estado atual do **membro de dados m \_ bCursorHidden.**                                                                        |
+| [**NotifyOwnerMessage**](cbasecontrolwindow-notifyownermessage.md)        | Passa mensagens que são enviadas para janelas de propriedade.                                                                                         |
 | [**colocar \_ Automostrar**](cbasecontrolwindow-put-autoshow.md)                   | Define a propriedade AutoShow.                                                                                                                 |
 | [**colocar \_ BackgroundPalette**](cbasecontrolwindow-put-backgroundpalette.md) | Define um sinalizador para obter a paleta em segundo plano.                                                                                       |
 | [**colocar \_ BorderColor**](cbasecontrolwindow-put-bordercolor.md)             | Define a cor da borda atual.                                                                                                              |
@@ -98,7 +98,7 @@ Todos os métodos [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivi
 
 <dl> <dt>
 
-[Classes base do DirectShow](directshow-base-classes.md)
+[DirectShow Classes base](directshow-base-classes.md)
 </dt> </dl>
 
  

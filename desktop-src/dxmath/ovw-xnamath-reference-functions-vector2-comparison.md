@@ -1,17 +1,17 @@
 ---
 description: Lista as funções de comparação de vetor 2D.
 ms.assetid: 16e8348b-c6cf-06a5-12be-5954de3522c1
-title: Funções de comparação de vetor 2D da biblioteca DirectXMath
+title: Funções de comparação de vetor 2D da Biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66b4ed7f61ffc7009aafe070c941129b15ca74fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f200bbc9a2fdd6e95c446c9635e34e106df6904ce64f8e1ebad1a7cc129f7285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984826"
 ---
-# <a name="directxmath-library-2d-vector-comparison-functions"></a>Funções de comparação de vetor 2D da biblioteca DirectXMath
+# <a name="directxmath-library-2d-vector-comparison-functions"></a>Funções de comparação de vetor 2D da Biblioteca DirectXMath
 
 Lista as funções de comparação de vetor 2D.
 
@@ -29,7 +29,7 @@ Lista as funções de comparação de vetor 2D.
 | [**XMVector2GreaterOrEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvector2greaterorequal)<br/>   | Testa se um vetor 2D é maior que ou igual a outro vetor 2D.<br/>                                                                                                                                                                     |
 | [**XMVector2GreaterOrEqualR**](/windows/win32/api/directxmath/nf-directxmath-xmvector2greaterorequalr)<br/> | Testa se um vetor 2D é maior que ou igual a outro vetor 2D e retorna um valor de comparação que pode ser examinado usando funções como [**XMComparisonAllTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonalltrue).<br/>                                      |
 | [**XMVector2GreaterR**](/windows/win32/api/directxmath/nf-directxmath-xmvector2greaterr)<br/>               | Testa se um vetor 2D é maior que outro vetor 2D e retorna um valor de comparação que pode ser examinado usando funções como [**XMComparisonAllTrue**](/windows/desktop/api/DirectXMath/nf-directxmath-xmcomparisonalltrue).<br/>                                                  |
-| [**XMVector2IsInfinite**](/windows/win32/api/directxmath/nf-directxmath-xmvector2isinfinite)<br/>           | Testa se algum componente de um vetor 2D é infinito positivo ou negativo.<br/>                                                                                                                                                                   |
+| [**XMVector2IsInfinite**](/windows/win32/api/directxmath/nf-directxmath-xmvector2isinfinite)<br/>           | Testa se qualquer componente de um vetor 2D é infinito positivo ou negativo.<br/>                                                                                                                                                                   |
 | [**XMVector2IsNaN**](/windows/win32/api/directxmath/nf-directxmath-xmvector2isnan)<br/>                     | Testa se qualquer componente de um vetor 2D é um NaN.<br/>                                                                                                                                                                                           |
 | [**XMVector2Less**](/windows/win32/api/directxmath/nf-directxmath-xmvector2less)<br/>                       | Testa se um vetor 2D é menor que outro vetor 2D.<br/>                                                                                                                                                                                    |
 | [**XMVector2LessOrEqual**](/windows/win32/api/directxmath/nf-directxmath-xmvector2lessorequal)<br/>         | Testa se um vetor 2D é menor que ou igual a outro vetor 2D.<br/>                                                                                                                                                                        |
@@ -45,7 +45,7 @@ Lista as funções de comparação de vetor 2D.
 
 <dl> <dt>
 
-[Funções de vetor 2D da biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2.md)
+[Funções de vetor 2D da Biblioteca DirectXMath](ovw-xnamath-reference-functions-vector2.md)
 </dt> </dl>
 
  

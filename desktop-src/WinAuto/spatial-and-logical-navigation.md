@@ -4,12 +4,12 @@ description: Os clientes recuperam informações sobre um objeto que é espacial
 ms.assetid: a1ebb50e-76cf-472d-bb0f-3f5bf5ed30d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b9e49772a267e49d723a04005dcbc8a369510b3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d762352c41f2adc764ac40c052632922a25ca995b9f2ec2f5008c668d0332bfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105771377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052494"
 ---
 # <a name="spatial-and-logical-navigation"></a>Navegação espacial e lógica
 
@@ -46,6 +46,6 @@ A ordem de navegação lógica deve ser uma ordem de navegação de teclado para
 
 Para objetos que não têm locais de tela definidos, a ordem lógica é decidida por desenvolvedores de servidor e os desenvolvedores de cliente não devem fazer suposições sobre ele. Por exemplo, é aceitável que objetos não visíveis, como objetos que estão temporariamente ocultos, sejam intercalados com objetos visíveis.
 
- 
+ 
 
- 
+ 

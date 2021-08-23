@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: 05b3c5d38575fa1b2957c28070d642ad15f846ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df70048760af47b380308eddab4ef5c044c8f6881374c83002944d6d76836ed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969415"
 ---
 # <a name="ienumuseridentityreset-method"></a>Método IEnumUserIdentity:: Reset
 
@@ -39,7 +39,7 @@ HRESULT Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -55,11 +55,11 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                  |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 

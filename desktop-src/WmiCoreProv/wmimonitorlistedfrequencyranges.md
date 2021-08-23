@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: e13828f6d5e844147fc0b041617c8452c503ceef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41b49c293d5661d523138b01c093fce627e5bedf3d1e783dccb8248edf88546c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051134"
 ---
 # <a name="wmimonitorlistedfrequencyranges-class"></a>Classe WmiMonitorListedFrequencyRanges
 
-A classe WMI **WmiMonitorListedFrequencyRanges** lista os intervalos de frequência com suporte no monitor. Esses intervalos são encontrados na definição de entrada de vídeo da VESA (vídeo Electronics Standard Association) Enhanced display de identificação de vídeo (E-EDID), ou no arquivo INF do Windows que contém dados de driver de dispositivo.
+A classe WMI **WmiMonitorListedFrequencyRanges** lista os intervalos de frequência com suporte no monitor. esses intervalos são encontrados na definição de entrada de vídeo da VESA (vídeo Electronics Standard Association) enhanced Display de identificação de vídeo (E-EDID), ou no arquivo INF Windows que contém dados de driver de dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 

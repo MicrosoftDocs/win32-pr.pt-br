@@ -1,7 +1,7 @@
 ---
-description: Classe Registry_V1_TypeGroup1-essa classe é a classe de tipo de evento para eventos de registro. A sintaxe a seguir é simplificada do código MOF.
+description: Registry_V1_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos do Registro. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 59c455a0-af7e-4fd5-9af4-07ff72ee0545
-title: Classe Registry_V1_TypeGroup1
+title: Registry_V1_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: ab0326f92d1b084f471f3dc1b57322f69aa645fd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 80b6bfbac1afbe3797bd76dfa49dee6666a339eb46c336d3e6c68f6b236c0848
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069766"
 ---
-# <a name="registry_v1_typegroup1-class"></a>\_ \_ Classe TypeGroup1 do registro v1
+# <a name="registry_v1_typegroup1-class"></a>Classe \_ \_ TypeGroup1 do Registro V1
 
-Essa classe é a classe de tipo de evento para eventos de registro.
+Essa classe é a classe de tipo de evento para eventos do Registro.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -46,13 +46,13 @@ class Registry_V1_TypeGroup1 : Registry
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ TypeGroup1 do registro v1** tem estes tipos de membros:
+A **classe \_ \_ TypeGroup1 do Registro V1** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ TypeGroup1 do registro v1** tem essas propriedades.
+A **classe \_ \_ TypeGroup1 do Registro V1** tem essas propriedades.
 
 <dl> <dt>
 
@@ -65,42 +65,42 @@ Tipo de dados: **sint64**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
-Tempo decorrido da operação de registro.
+Tempo decorrido da operação do Registro.
 
 </dd> <dt>
 
 Índice
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
-O índice de subchave para a operação de registro (como EnumerateKey).
+O índice de sub-chave para a operação do Registro (como EnumerateKey).
 
 </dd> <dt>
 
-Identificador de
+Keyhandle
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), ponteiro
+Qualificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador para a chave do registro.
+Lidar com a chave do Registro.
 
 </dd> <dt>
 
@@ -113,26 +113,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), StringTermination ("NullTerminated"), Format ("w")
+Qualificadores: WmiDataId(5), StringTermination("NullTerminated"), Format("w")
 </dt> </dl>
 
-Nome da chave do registro.
+Nome da chave do Registro.
 
 </dd> <dt>
 
 Status
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), ponteiro
+Qualificadores: WmiDataId(1), Pointer
 </dt> </dl>
 
-Valor de NTSTATUS da operação de registro.
+Valor NTSTATUS da operação do Registro.
 
 </dd> </dl>
 
@@ -147,14 +147,14 @@ Valor de NTSTATUS da operação de registro.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [**Registro**](registry.md)
 </dt> <dt>
 
-[**Registro \_ v1**](registry-v1.md)
+[**Registro \_ V1**](registry-v1.md)
 </dt> </dl>
 
  

@@ -1,24 +1,24 @@
 ---
-description: O método canstep determina se o decodificador MPEG-2 no sistema local pode executar a revisão do quadro em uma direção especificada.
+description: O método CanStep determina se o decodificador MPEG-2 no sistema local pode executar a execução de quadro em uma direção especificada.
 ms.assetid: 21721722-0bf4-4cc7-a0e4-96b353888948
-title: Método canstep
+title: Método CanStep
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506e7436e5ec79947aceeca69891e52074cf2ea7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 55ff6ca29443e059cd5ebfbbb553f67cf50b1cb13e1bc8d7199ac6cfae704cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017584"
 ---
-# <a name="canstep-method"></a>Método canstep
+# <a name="canstep-method"></a>Método CanStep
 
 > [!Note]  
 > Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
-O `CanStep` método determina se o decodificador MPEG-2 no sistema local pode executar a revisão do quadro em uma direção especificada.
+O `CanStep` método determina se o decodificador MPEG-2 no sistema local pode executar a execução de quadro em uma direção especificada.
 
 ``` syntax
 [ bCanStep = ] MSWebDVD.CanStep(bDirection)
@@ -31,13 +31,13 @@ O `CanStep` método determina se o decodificador MPEG-2 no sistema local pode ex
 <span id="bDirection"></span><span id="bdirection"></span><span id="BDIRECTION"></span>*bDirection*
 </dt> <dd>
 
-Booliano usado como um sinalizador para especificar a direção, encaminhamento ou retrocesso da capacidade de depuração de quadro do decodificador.
+Booliana usada como um sinalizador para especificar a direção, para frente ou para trás da capacidade de passo a passo do decodificador.
 
 
 
 | Valor | Descrição                                          |
 |-------|------------------------------------------------------|
-| true  | A etapa do decodificador pode voltar?                           |
+| true  | O decodificador pode retroceder?                           |
 | false | O decodificador pode avançar? Esse é o valor padrão. |
 
 
@@ -48,11 +48,11 @@ Booliano usado como um sinalizador para especificar a direção, encaminhamento 
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor booliano de true se o decodificador puder entrar na direção especificada e false caso contrário.
+Retornará um valor boolano de true se o decodificador puder entrar na direção especificada e false caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Nem todos os decodificadores de hardware MPEG-2 dão suporte aos novos recursos de revisão de quadros no DirectShow® 8,0. Esse método consulta o decodificador para seus recursos de revisão de quadros. Se o decodificador puder executar a revisão do quadro, um aplicativo poderá usar o método [**Step**](step-method.md) para percorrer os quadros. Esse método sempre retornará **true** se um decodificador de software estiver sendo usado.
+Nem todos os decodificadores mpEG-2 de hardware suportam os novos recursos de passo a passo de quadro DirectShow® 8.0. Esse método consulta o decodificador para suas funcionalidades de passo a passo de quadro. Se o decodificador puder executar a etapa do quadro, um aplicativo poderá usar o [**método Step**](step-method.md) para passar por quadros. Esse método sempre retornará **true se** um decodificador de software estiver sendo usado.
 
  
 

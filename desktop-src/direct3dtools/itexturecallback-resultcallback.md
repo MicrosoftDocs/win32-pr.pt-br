@@ -1,10 +1,10 @@
 ---
-description: Um retorno de chamada que notifica o host que o. O arquivo DDS (superfície do DirectDraw) que contém os resultados da solicitação associada estão prontos.
+description: Um retorno de chamada que notifica o host de que o . O arquivo DDS (DirectDraw Surface) que contém os resultados da solicitação associada está pronto.
 MS-HAID: vspixengine.ITextureCallback\_ResultCallback
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: 'Método ITextureCallback:: ResultCallback'
+title: Método ITextureCallback::ResultCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 330E2573-CF93-4DF7-B5C6-4D1D44142914
@@ -17,16 +17,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 8e3f224dd1b97ad5dc1ac4a62d04af1d91353001
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 850bd88a432d425415f6efe170c2a43e802481b14922580246428ac86188ab1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985576"
 ---
-# <a name="span-idvspixengineitexturecallback_resultcallbackspanitexturecallbackresultcallback-method"></a><span id="vspixengine.itexturecallback_resultcallback"></span>Método ITextureCallback:: ResultCallback
+# <a name="span-idvspixengineitexturecallback_resultcallbackspanitexturecallbackresultcallback-method"></a><span id="vspixengine.itexturecallback_resultcallback"></span>Método ITextureCallback::ResultCallback
 
-Um retorno de chamada que notifica o host que o. O arquivo DDS (superfície do DirectDraw) que contém os resultados da solicitação associada estão prontos.
+Um retorno de chamada que notifica o host de que o . O arquivo DDS (DirectDraw Surface) que contém os resultados da solicitação associada está pronto.
 
 ## <a name="syntax"></a>Syntax
 

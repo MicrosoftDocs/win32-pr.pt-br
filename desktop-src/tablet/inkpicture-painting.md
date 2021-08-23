@@ -1,19 +1,19 @@
 ---
-description: Ocorre antes de o controle InkPicture ser redesenhado.
+description: Ocorre antes que o controle InkPicture redesenhar a si mesmo.
 ms.assetid: 97d017ce-fdab-49e5-9ea6-0bcc5d7b14fb
-title: Evento InkPicture. Pintation (Msinkaut. h)
+title: Evento InkPicture.Painting (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3dc76bbf3079d61c84ac14d1b22690d645a7cce4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0129e5f74ee8097794112b70fb709ab9b9a3b8fadc9f3e5a2fd7d874c65c0d22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966965"
 ---
-# <a name="inkpicturepainting-event"></a>Evento InkPicture. Pintation
+# <a name="inkpicturepainting-event"></a>Evento InkPicture.Painting
 
-Ocorre antes de o controle [InkPicture](inkpicture-control-reference.md) ser redesenhado.
+Ocorre antes que o [controle InkPicture](inkpicture-control-reference.md) redesenhar a si mesmo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,34 +32,34 @@ void Painting(
 
 <dl> <dt>
 
-*HDC* \[ no\]
+*hDC* \[ Em\]
 </dt> <dd>
 
 O contexto do dispositivo no qual a pintura ocorrerá.
 
 </dd> <dt>
 
-*Rect* \[ no\]
+*Rect* \[ Em\]
 </dt> <dd>
 
-O retângulo de tinta que deve ser redesenhado.
+O retângulo de tinta que deve ser repintado.
 
 </dd> <dt>
 
-*Permitir* \[ entrada, saída\]
+*Permitir* \[ in, out\]
 </dt> <dd>
 
-Se o redesenho ocorrerá.
+Se a reint ocorrerá.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de DISPID \_ IOEPainting.
+Esse método de evento é definido nas interfaces somente de expedição **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** (dispinterfaces) com uma ID de \_ IOEPainting DISPID.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -78,7 +78,7 @@ Esse método de evento é definido nas interfaces somente de expedição **\_ II
 
 <dl> <dt>
 
-[InkPicture](inkpicture-control-reference.md)
+[Inkpicture](inkpicture-control-reference.md)
 </dt> </dl>
 
  

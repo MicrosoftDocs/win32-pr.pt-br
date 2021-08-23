@@ -4,12 +4,12 @@ ms.assetid: 8bb64686-8f02-4e0d-a664-aeee1744fc8e
 title: Propriedade MFPKEY_WMAAECMA_FEATR_NOISE_FILL (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea0c0af2b47767a7798d9b583ac55ad5112ddf1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec3f2f6780157da97263bd6e68ac5f38c9448a5633fafe6481b082ed033331dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035114"
 ---
 # <a name="mfpkey_wmaaecma_featr_noise_fill-property"></a>\_Propriedade de \_ preenchimento de \_ ruído MFPKEY WMAAECMA \_
 
@@ -58,9 +58,9 @@ O DSP usa essa propriedade somente quando o processamento de AEC está habilitad
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

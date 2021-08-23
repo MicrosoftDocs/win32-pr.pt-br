@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9d8936f08b952af069812859736a6a13ea9c0e4e
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: cb3095e366a03d94616d45eda441fec78d2ccbf7d58f8e74890a42902bae6fc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073250"
 ---
 # <a name="csourcestreamgetmediatype-method-sourceh---iposition-and-pmediatype-parameters"></a>Método CSourceStream. GetMediaType (origem. h)-parâmetros iPosition e pMediaType
 
@@ -57,7 +57,7 @@ Ponteiro para um objeto [**CMediaType**](cmediatype.md) que recebe o tipo de mí
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -89,7 +89,7 @@ O método de parâmetro único retorna E \_ inesperado. O método de dois parâm
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro  | Source. h (incluir fluxos. h)                                                                                    |
+| parâmetro  | Source. h (incluir Fluxos. h)                                                                                    |
 | Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 ## <a name="see-also"></a>Confira também

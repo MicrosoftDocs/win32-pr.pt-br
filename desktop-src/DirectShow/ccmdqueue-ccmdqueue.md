@@ -1,7 +1,7 @@
 ---
-description: Construtor de CCmdQueue. CCmdQueue-método de construtor.
+description: Construtor CCmdQueue.CCmdQueue – Método do construtor.
 ms.assetid: 9961a8fe-db72-4be6-8f72-68b74f82e4d4
-title: Construtor CCmdQueue. CCmdQueue (Winutil. h)
+title: Construtor CCmdQueue.CCmdQueue (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f4dd94e7ef2ac3970fe652f4b7a3ad7117f047e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4afa6fe382bfbeca400a4862f60572cb24a59006eeacb40b68b9f281f309b590
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074420"
 ---
-# <a name="ccmdqueueccmdqueue-constructor"></a>Construtor CCmdQueue. CCmdQueue
+# <a name="ccmdqueueccmdqueue-constructor"></a>Construtor CCmdQueue.CCmdQueue
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ CCmdQueue();
 
 ## <a name="parameters"></a>Parâmetros
 
-Este construtor não tem parâmetros.
+Esse construtor não tem parâmetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,12 +46,12 @@ Este construtor não tem parâmetros.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Os identificadores de associação são compostos de uma sequência
 ms.assetid: 0a3bed37-95c7-4f4a-9ed3-9d57f69db523
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f42ed5d2af21eff1091e0ba48718426bf17501e3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fc566d408b27884cacefe07a181f26971352e1f29f9f47dfd41b3d56a8276515
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105768687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931719"
 ---
 # <a name="client-side-binding"></a>Associação do lado do cliente
 
@@ -53,7 +53,7 @@ void main(int argc, char **argv)
 
 Como você pode ver no exemplo anterior, o aplicativo cliente não precisa fazer nenhuma chamada explícita para as funções de biblioteca de tempo de execução RPC. O stub do cliente os gerencia.
 
-Se seu aplicativo usa identificadores de associação implícitos ou explícitos, o cliente deve obter as informações de associação e chamar as funções RPC para criar os identificadores. O local em que o cliente obtém as informações de associação depende dos requisitos do seu aplicativo. O programa de instalação que instala o aplicativo cliente pode armazenar informações de associação em variáveis de ambiente que ele cria. Ele também pode salvar informações de associação em um arquivo de configuração específico do aplicativo. Como as informações de associação em variáveis de ambiente ou arquivos de configuração geralmente são armazenadas como cadeias de caracteres, o aplicativo cliente precisará converter a cadeia de caracteres em uma associação. Em ambientes Windows XP/2000, as informações de associação podem ser recuperadas de Active Directory. Para obter mais informações, consulte [usando associações de cadeia de caracteres](finding-server-host-systems.md).
+Se seu aplicativo usa identificadores de associação implícitos ou explícitos, o cliente deve obter as informações de associação e chamar as funções RPC para criar os identificadores. O local em que o cliente obtém as informações de associação depende dos requisitos do seu aplicativo. O programa de instalação que instala o aplicativo cliente pode armazenar informações de associação em variáveis de ambiente que ele cria. Ele também pode salvar informações de associação em um arquivo de configuração específico do aplicativo. Como as informações de associação em variáveis de ambiente ou arquivos de configuração geralmente são armazenadas como cadeias de caracteres, o aplicativo cliente precisará converter a cadeia de caracteres em uma associação. em ambientes Windows XP/2000, as informações de associação podem ser recuperadas de Active Directory. Para obter mais informações, consulte [usando associações de cadeia de caracteres](finding-server-host-systems.md).
 
 A maioria das redes tem um serviço de nome. Os programas de servidor podem se anunciar no banco de dados do serviço de nome. Quando um cliente inicia a execução, ele pode obter suas informações de associação do banco de dados do serviço de nome. Para obter detalhes, consulte [importando de bancos de dados de serviço de nome](finding-server-host-systems.md).
 
@@ -65,9 +65,9 @@ As etapas necessárias para a associação com identificadores implícitos e exp
 
 Para obter uma breve visão geral desses tópicos, consulte [conectando o cliente e o servidor](connecting-the-client-and-the-server.md).
 
- 
+ 
 
- 
+ 
 
 
 

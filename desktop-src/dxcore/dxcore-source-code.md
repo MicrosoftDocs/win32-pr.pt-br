@@ -5,22 +5,22 @@ ms.custom: 19H1
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 06/21/2019
-ms.openlocfilehash: 6a1094f3fcc450fc8e5af471d79be3e3c3064fbf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9f9d8687fa9871152504f80a917a083ce9acbd14b9bf9159bc7559865b6a7a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105790433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985206"
 ---
 # <a name="minimal-dxcore-application"></a>Aplicativo DXCore mínimo
 
-Este tópico apresenta a listagem completa de código-fonte para um aplicativo DXCore mínimo (escrito em [C++/WinRT](/windows/uwp/cpp-and-winrt-apis)). A maior parte do código mostrado abaixo é explicada no tópico [usando DXCore para enumerar adaptadores](dxcore-enum-adapters.md).
+Este tópico apresenta a listagem de código-fonte completa para um aplicativo DXCore mínimo (escrito em [C++/WinRT).](/windows/uwp/cpp-and-winrt-apis) A maior parte do código mostrado abaixo é explicada no tópico [Usando DXCore para enumerar adaptadores](dxcore-enum-adapters.md).
 
 ## <a name="full-source-code-listing-of-a-minimal-dxcore-application"></a>Listagem completa de código-fonte de um aplicativo DXCore mínimo
 
-Se você quiser compilar e executar este exemplo de código-fonte, primeiro, no Visual Studio, crie um novo projeto de **aplicativo de console do Windows (C++/WinRT)** . Em seguida, edite `pch.h` e `main.cpp` para se parecer com as listagens abaixo.
+Se você quiser criar e executar esse exemplo de código-fonte, primeiro, no Visual Studio, crie um novo projeto de Aplicativo de **Console do Windows (C++/WinRT).** Em `pch.h` seguida, `main.cpp` edite e para parecer com as listagem abaixo.
 
-O exemplo de código abaixo usa [C++/WinRT](/windows/uwp/cpp-and-winrt-apis). No entanto, para manter o uso das APIs é transparente, ela não usa a [função winrt:: com_ptr:: Capture](/uwp/cpp-ref-for-winrt/com-ptr#com_ptrcapture-function).
+O exemplo de código abaixo usa [C++/WinRT](/windows/uwp/cpp-and-winrt-apis). No entanto, para manter o uso das APIs transparente, ele não usa a função [winrt::com_ptr::capture](/uwp/cpp-ref-for-winrt/com-ptr#com_ptrcapture-function).
 
 ```cppwinrt
 // pch.h

@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: sobre o mecanismo de armazenamento extensível'
-title: Sobre o mecanismo de armazenamento extensível
+description: 'saiba mais sobre: sobre o mecanismo de Armazenamento extensível'
+title: sobre o mecanismo de Armazenamento extensível
 TOCTitle: About Extensible Storage Engine
 ms:assetid: 06d1526e-169d-4677-b409-2ed415287de6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269181(v=EXCHG.10)
 ms:contentKeyID: 32765484
 ms.date: 04/11/2016
 ms.topic: article
-ms.openlocfilehash: 17e2277deaef54c04bf6a53a8464479fd67295a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26a1d4d28f1d5957432202545ff94c4f18c37e5a521e0deadfdabfb72751adec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983866"
 ---
-# <a name="about-extensible-storage-engine"></a>Sobre o mecanismo de armazenamento extensível
+# <a name="about-extensible-storage-engine"></a>sobre o mecanismo de Armazenamento extensível
 
 
-_**Aplica-se a:** Exchange Server 2013 | Windows | Windows Server_
+_**aplica-se a:** Exchange Server 2013 | Windows | Windows Servidor_
 
-## <a name="about-extensible-storage-engine"></a>Sobre o mecanismo de armazenamento extensível
+## <a name="about-extensible-storage-engine"></a>sobre o mecanismo de Armazenamento extensível
 
 O ESE (mecanismo de armazenamento extensível) é um mecanismo de banco de dados que armazena informações em uma sequência lógica. As informações podem ser recuperadas em sequência ou por meio do acesso a índices definidos. As atualizações no banco de dados são implementadas com uma transação para garantir operações seguras. O ESE permite o acesso simultâneo a vários bancos de dados, incluindo bancos de dados de arquivos de log de transações que podem ser usados para recuperação do sistema. O ESE é escalonável para aplicativos grandes ou pequenos. Os recursos a seguir estão disponíveis com a API (interface de programação de aplicativo) do ESE:
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 5b0fb5104e56afbcc4dd25e28981f0c382d7888e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37df0c93a17dadc2f6d6fbf94a662b89bf9630a0b0861f5bf5a0c676f7d369fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952435"
 ---
 # <a name="ixml2dexreadxmlfile-method"></a>Método IXml2Dex:: ReadXMLfile
 
@@ -60,7 +60,7 @@ Cadeia de caracteres que especifica o nome do arquivo a ser carregado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor HRESULT. Os possíveis valores incluem os seguintes.
 
@@ -68,7 +68,7 @@ Retorna um valor HRESULT. Os possíveis valores incluem os seguintes.
 
 | Código de retorno                                                                                                  | Descrição                    |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                         | Sucesso<br/>             |
+| <dl> <dt>**S \_ OK**</dt> </dl>                         | Êxito<br/>             |
 | <dl> <dt>**VFW \_ E \_ \_ formato de arquivo inválido \_**</dt> </dl> | Formato de arquivo inválido<br/> |
 
 
@@ -85,7 +85,7 @@ Esse método não limpa os objetos existentes da linha do tempo antes de inserir
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -96,7 +96,7 @@ Esse método não limpa os objetos existentes da linha do tempo antes de inserir
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Internet Explorer 4,0 ou posterior<br/>                                               |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Cabeçalho<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
 | Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 

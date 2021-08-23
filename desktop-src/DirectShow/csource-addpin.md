@@ -1,7 +1,7 @@
 ---
 description: O método AddPin adiciona um novo pino de saída ao filtro.
 ms.assetid: 48850a1f-ecb7-460c-9bfc-ce1d1103a00b
-title: Método CSource. AddPin (Source. h)
+title: Método CSource.AddPin (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 224550756f5935ce26c106ba01c9ef64f0767140
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1c221d2fd032445587b52b0d0ae7f7744889254983fab82c7b282d06fee195e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953775"
 ---
-# <a name="csourceaddpin-method"></a>Método CSource. AddPin
+# <a name="csourceaddpin-method"></a>Método CSource.AddPin
 
 O `AddPin` método adiciona um novo pino de saída ao filtro.
 
@@ -45,13 +45,13 @@ HRESULT AddPin(
 *pStream* 
 </dt> <dd>
 
-Ponteiro para o objeto [**CSourceStream**](csourcestream.md) que implementa o PIN.
+Ponteiro para o [**objeto CSourceStream**](csourcestream.md) que implementa o pino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
@@ -66,7 +66,7 @@ Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Quando você cria um novo PIN derivado de **CSourceStream**, o construtor **CSourceStream** chama esse método automaticamente para adicionar o pino de saída ao filtro.
+Quando você cria um novo pin derivado de **CSourceStream,** o construtor **CSourceStream** chama automaticamente esse método para adicionar o pino de saída ao filtro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ Quando você cria um novo PIN derivado de **CSourceStream**, o construtor **CSou
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

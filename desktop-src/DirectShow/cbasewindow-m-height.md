@@ -1,7 +1,7 @@
 ---
 description: Altura da área do cliente, em pixels.
 ms.assetid: 3d32c9db-71f1-4b20-ae7c-5da7dc9b7244
-title: 'Membro CBaseWindow:: m_Height (Winutil. h)'
+title: Membro CBaseWindow::m_Height (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9899de99da316ffec4093a439f405f1db26b4223
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f85cef9076ce1e961a6ba07c315ff9b08a01e55b30c29dafae3eb10708d39f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074580"
 ---
-# <a name="cbasewindowm_height-member"></a>Membro de altura CBaseWindow:: m \_
+# <a name="cbasewindowm_height-member"></a>Membro CBaseWindow::m \_ Height
 
 Altura da área do cliente, em pixels.
 
@@ -42,8 +42,8 @@ LONG m_Height;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -6,20 +6,20 @@ keywords:
 - DCE_C_ERROR_STRING_LEN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4087117fb36983f41e59a248b256184e8a3373c5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: abb7fbfec5a7931a6ed46f1ba6a6c8f4b941e101e4292325c093a00bdfbe20a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118931135"
 ---
 # <a name="dce_c_error_string_len"></a>comp. de \_ cadeia de caracteres de erro DCE C \_ \_ \_
 
 A constante número de **\_ \_ \_ cadeias de caracteres de erro \_ de DCE C** define a quantidade máxima de caracteres que uma cadeia de caracteres de mensagem de erro contém.
 
- 
+ 
 
- 
+ 
 
 
 

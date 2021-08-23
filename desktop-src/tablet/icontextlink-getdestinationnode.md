@@ -1,7 +1,7 @@
 ---
-description: Recupera o objeto IContextNode que é o destino para este IContextLink.
+description: Recupera o objeto IContextNode que é o destino deste IContextLink.
 ms.assetid: 7e185e69-821b-409b-bc58-d89a4aefeb23
-title: 'Método IContextLink:: GetDestinationNode (IACom. h)'
+title: Método IContextLink::GetDestinationNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 86d34bfcca39f7df9d9010e8dae32747ca8f1d27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a11d9021d4299a1823fee57ed9a80237b4896459b0396a8ba4b140bd377bb80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967446"
 ---
-# <a name="icontextlinkgetdestinationnode-method"></a>Método IContextLink:: GetDestinationNode
+# <a name="icontextlinkgetdestinationnode-method"></a>Método IContextLink::GetDestinationNode
 
-Recupera o objeto [**IContextNode**](icontextnode.md) que é o destino para este [**IContextLink**](icontextlink.md).
+Recupera o [**objeto IContextNode**](icontextnode.md) que é o destino deste [**IContextLink.**](icontextlink.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,27 +39,27 @@ HRESULT GetDestinationNode(
 
 <dl> <dt>
 
-*ppDstContextNodeId* \[ fora\]
+*ppDstContextNodeId* \[ out\]
 </dt> <dd>
 
-Um ponteiro para o objeto [**IContextNode**](icontextnode.md) que é o destino para esse [**IContextLink**](icontextlink.md).
+Um ponteiro para o [**objeto IContextNode**](icontextnode.md) que é o destino deste [**IContextLink.**](icontextlink.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Caution]  
-> Para evitar um vazamento de memória, chame [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *ppDstContextNodeId* quando você não precisar mais usar o nó de destino.
+> Para evitar uma perda de memória, chame [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *ppDstContextNodeId* quando você não precisar mais usar o nó de destino.
 
  
 
-Se o objeto [**IContextLink**](icontextlink.md) vincular-se entre um nó que contém a gravação e um nó que contém o desenho, o nó de destino será geralmente o nó que contém a gravação.
+Se o [**objeto IContextLink**](icontextlink.md) estiver links entre um nó que contém a escrita e um nó que contém desenho, o nó de destino geralmente será o nó que contém a escrita.
 
-Se o objeto [**IContextLink**](icontextlink.md) tiver um tipo de link de delimitados (consulte [**IContextLink:: GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md)), o nó de destino será o objeto [**IContextNode**](icontextnode.md) que está incluído.
+Se o objeto [**IContextLink**](icontextlink.md) tiver um tipo de link de Encloses (consulte [**IContextLink::GetContextLinkDirection**](icontextlink-getcontextlinkdirection.md)), o nó de destino será [**o objeto IContextNode**](icontextnode.md) incluído.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Se o objeto [**IContextLink**](icontextlink.md) tiver um tipo de link de delimit
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

@@ -1,7 +1,7 @@
 ---
-description: O método GetDueHandle recupera o identificador de evento a ser sinalizado.
+description: O método GetDueHandle recupera o alça de evento a ser sinalizado.
 ms.assetid: 495ea76d-8b94-48a9-8025-06ab18b66693
-title: Método CCmdQueue. GetDueHandle (Winutil. h)
+title: Método CCmdQueue.GetDueHandle (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4cb7c8c965c72abe6343a8a75863e0e6969dc5c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 62fbe0e38e24891add93e63e0c03d521289ed345078e8e567a376e9bd639d997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016414"
 ---
-# <a name="ccmdqueuegetduehandle-method"></a>Método CCmdQueue. GetDueHandle
+# <a name="ccmdqueuegetduehandle-method"></a>Método CCmdQueue.GetDueHandle
 
-O `GetDueHandle` método recupera o identificador de evento a ser sinalizado.
+O `GetDueHandle` método recupera o alça de evento a ser sinalizado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ HANDLE GetDueHandle();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador de evento.
+Retorna o alça de evento.
 
 ## <a name="remarks"></a>Comentários
 
-Retornar o identificador de evento sempre que houver comandos adiados que são devidos à execução (quando [**CCmdQueue:: GetDueCommand**](ccmdqueue-getduecommand.md) não será bloqueado).
+Retorne o alçamento de evento sempre que houver comandos adiados que devem ser executados (quando [**CCmdQueue::GetDueCommand**](ccmdqueue-getduecommand.md) não for bloqueado).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Retornar o identificador de evento sempre que houver comandos adiados que são d
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
