@@ -1,19 +1,19 @@
 ---
-description: O Windows Search linguagem SQL (SQL) é semelhante a uma consulta SQL padrão.
+description: o linguagem SQL de pesquisa do Windows (SQL) é semelhante a uma consulta de SQL padrão.
 ms.assetid: 7d992fa2-4606-46ca-904c-b45056a9bbc2
-title: Visão geral da sintaxe SQL do Windows Search
+title: visão geral da sintaxe de SQL de pesquisa do Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ff6a755312e4358dc2eaa9ea7ae97f22ef783f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f34f321bef35ab9f5198345a2630d20b80275b794f53a0c47aabf7667f2e238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119594736"
 ---
-# <a name="overview-of-windows-search-sql-syntax"></a>Visão geral da sintaxe SQL do Windows Search
+# <a name="overview-of-windows-search-sql-syntax"></a>visão geral da sintaxe de SQL de pesquisa do Windows
 
-O Windows Search linguagem SQL (SQL) é semelhante a uma consulta SQL padrão. Ele é mostrado nas duas sintaxes a seguir:
+o linguagem SQL de pesquisa do Windows (SQL) é semelhante a uma consulta de SQL padrão. Ele é mostrado nas duas sintaxes a seguir:
 
 
 ```SQL
@@ -39,7 +39,7 @@ WHERE (System.Document.PageCount > 50)
 ORDER BY System.Document.PageCount
 ```
 
-A sintaxe de consulta do Windows Search dá suporte a várias opções, permitindo consultas mais complicadas.
+a sintaxe de consulta de Windows pesquisa dá suporte a várias opções, permitindo consultas mais complicadas.
 
 A tabela a seguir descreve cada cláusula nas instruções SELECT ou GROUP ON e os recursos com suporte.
 
@@ -53,7 +53,7 @@ A tabela a seguir descreve cada cláusula nas instruções SELECT ou GROUP ON e 
 
 ### <a name="code-samples"></a>Exemplos de código
 
-O exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB e o Windows Search por meio do SQL. O exemplo de código WSOleDB ilustra Active Template Library (ATL) OLE DB acesso aos aplicativos do Windows Search e dois métodos adicionais para recuperar os resultados do Windows Search. Ambos os exemplos estão disponíveis no [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch).
+o exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB e Windows pesquisar por meio de SQL. o exemplo de código WSOleDB ilustra Active Template Library (ATL) OLE DB acesso a Windows aplicativos de pesquisa e dois métodos adicionais para recuperar resultados de Windows pesquisa. Ambos os exemplos estão disponíveis em [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -71,9 +71,9 @@ O exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB 
 
 ### <a name="conceptual"></a>Conceitual
 
-[Extensões do SQL no Microsoft Windows Search](-search-sql-extensions-sps.md)
+[SQL extensões no Microsoft Windows Search](-search-sql-extensions-sps.md)
 
-[Recursos do SQL não disponíveis no Microsoft Windows Search](-search-sql-featuresunavailableinspssearch.md)
+[SQL recursos não disponíveis no Microsoft Windows Search](-search-sql-featuresunavailableinspssearch.md)
 
 [Identificadores](-search-sql-identifiers.md)
 

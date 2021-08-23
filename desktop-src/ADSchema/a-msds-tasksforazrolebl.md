@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-Tasks-for-AZ-role-BL
-description: Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
+title: Atributo ms-DS-Tasks-For-Az-Role-BL
+description: Link para trás Az-Task para Az-Role objetos que se vinculam a ele.
 ms.assetid: 6cce9461-3515-4098-9c05-7b39a067aa40
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Tasks-for-AZ-role-BL atributo AD Schema
-- atributo msDS-TasksForAzRoleBL do AD Schema
+- Esquema do AD do atributo ms-DS-Tasks-For-Az-Role-BL
+- Esquema do AD do atributo msDS-TasksForAzRoleBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dcdb496702e80a432ebe25872f8ccf6a13b3f284
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 28f14029804a027aff7c60a8b8749dace0815b813c20739e58bb8dd878afd45a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544306"
 ---
-# <a name="ms-ds-tasks-for-az-role-bl-attribute"></a>atributo ms-DS-Tasks-for-AZ-role-BL
+# <a name="ms-ds-tasks-for-az-role-bl-attribute"></a>Atributo ms-DS-Tasks-For-Az-Role-BL
 
-Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
+Link para trás Az-Task para Az-Role objetos que se vinculam a ele.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-Tasks-for-AZ-role-BL              |
-| LDAP-Display-Name | msDS-TasksForAzRoleBL                   |
+| CN                | ms-DS-Tasks-For-Az-Role-BL              |
+| Ldap-Display-Name | msDS-TasksForAzRoleBL                   |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | Esse valor é definido pelo sistema.        |
 | Attribute-Id      | 1.2.840.113556.1.4.1815                 |
-| System-ID-GUID    | a0dcd536-5158-42fe-8c40-c00a7ad37959    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | a0dcd536-5158-42fe-8c40-c00a7ad37959    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,11 +56,11 @@ Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2025                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,11 +77,11 @@ Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2025                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,11 +98,11 @@ Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2025                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,7 +119,7 @@ Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2025                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -140,7 +140,7 @@ Link regressivo de Az-Task para Az-Role objetos vinculados a ele.
 |------------------------|---------------------------------|
 | ID do link                | 2025                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

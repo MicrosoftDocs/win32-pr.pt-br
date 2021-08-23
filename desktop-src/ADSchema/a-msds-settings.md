@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-Settings
-description: Usado para armazenar as configurações de um objeto. Seu uso é determinado exclusivamente pelo proprietário do objeto. É recomendável usá-lo para armazenar pares de nome/valor. Por exemplo, cor azul.
+title: Atributo ms-DS-Configurações
+description: Usado para armazenar configurações para um objeto . Seu uso é determinado exclusivamente pelo proprietário do objeto. É recomendável usá-lo para armazenar pares de nome/valor. Por exemplo, cor azul.
 ms.assetid: 44e3a9e2-5528-4328-9cb7-1b6a4a77950a
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-Settings atributo AD Schema
-- atributo msDS-Settings do esquema do AD
+- Esquema do AD do atributo ms-DS-Configurações
+- Esquema do AD do atributo msDS-Configurações
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f466bd5aa5a904482ff9c84c1f818c12205f69c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6dd39e64c096049bb39379aa48d97444982e51746808ae59987e4ddcad2de30c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544566"
 ---
-# <a name="ms-ds-settings-attribute"></a>atributo ms-DS-Settings
+# <a name="ms-ds-settings-attribute"></a>Atributo ms-DS-Configurações
 
-Usado para armazenar as configurações de um objeto. Seu uso é determinado exclusivamente pelo proprietário do objeto. É recomendável usá-lo para armazenar pares de nome/valor. Por exemplo, Color = Blue.
+Usado para armazenar configurações para um objeto . Seu uso é determinado exclusivamente pelo proprietário do objeto. É recomendável usá-lo para armazenar pares de nome/valor. Por exemplo, color=blue.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | ms-DS-Settings                              |
-| LDAP-Display-Name | msDS-configurações                               |
+| CN                | ms-DS-Configurações                              |
+| Ldap-Display-Name | msDS-Configurações                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
-| Frequência de atualização  | Cada vez que os valores das configurações são alterados.       |
+| Frequência de atualização  | Cada vez que os valores de configurações são alterados.       |
 | Attribute-Id      | 1.2.840.113556.1.4.1697                     |
-| System-ID-GUID    | 0e1b47d7-40a3-4b48-8d1b-4cac0c1cdf21        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 0e1b47d7-40a3-4b48-8d1b-4cac0c1cdf21        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Usado para armazenar as configurações de um objeto. Seu uso é determinado exc
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | Falso                                                                                                                     |
+| Tem valor único       | Falso                                                                                                                     |
 | É indexado             | Falso                                                                                                                     |
-| No catálogo global      | Falso                                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
+| No Catálogo Global      | Falso                                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
+| Classes usadas em        | [**Aplicativos Configurações**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ Usado para armazenar as configurações de um objeto. Seu uso é determinado exc
 | ID do link                | \-                                                               |
 | MAPI-Id                | \-                                                               |
 | System-Only            | Falso                                                            |
-| É de valor único       | Falso                                                            |
+| Tem valor único       | Falso                                                            |
 | É indexado             | Falso                                                            |
-| No catálogo global      | Falso                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                     |
+| No Catálogo Global      | Falso                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000000                                                       |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> |
+| Classes usadas em        | [**Aplicativos Configurações**](c-applicationsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Usado para armazenar as configurações de um objeto. Seu uso é determinado exc
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | Falso                                                                                                                     |
+| Tem valor único       | Falso                                                                                                                     |
 | É indexado             | Falso                                                                                                                     |
-| No catálogo global      | Falso                                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
+| No Catálogo Global      | Falso                                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | \-                                                                                                                        |
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Usado para armazenar as configurações de um objeto. Seu uso é determinado exc
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Usado para armazenar as configurações de um objeto. Seu uso é determinado exc
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Usado para armazenar as configurações de um objeto. Seu uso é determinado exc
 | Range-Upper            | \-                                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000000                                                                                                                |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**Ponto de conexão**](c-connectionpoint.md)<br/> |
 
 
 

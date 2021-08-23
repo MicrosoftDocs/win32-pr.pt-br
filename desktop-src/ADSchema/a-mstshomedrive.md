@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Home-Drive
-description: A unidade base dos serviços de terminal especifica uma unidade inicial para o usuário.
+title: Atributo ms-TS-Home-Drive
+description: A Home Drive dos Serviços de Terminal especifica uma unidade Home para o usuário.
 ms.assetid: c295c387-fc7a-4c07-85e6-62b88243c3fc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-TS-Home-Drive
-- Esquema de AD do atributo msTSHomeDrive
+- Esquema do AD do atributo ms-TS-Home-Drive
+- Esquema do AD do atributo msTSHomeDrive
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ebde2e210c570a9be214e4952d6410e281761e8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 030820dc017eb82644d524ed1044d71773a34b91dc9fcb923b9af62b7cd7adb0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508274"
 ---
-# <a name="ms-ts-home-drive-attribute"></a>atributo MS-TS-Home-Drive
+# <a name="ms-ts-home-drive-attribute"></a>Atributo ms-TS-Home-Drive
 
-A unidade base dos serviços de terminal especifica uma unidade inicial para o usuário.
+A Home Drive dos Serviços de Terminal especifica uma unidade Home para o usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-TS-Home-Drive                            |
-| LDAP-Display-Name | msTSHomeDrive                               |
+| CN                | ms-TS-Home-Drive                            |
+| Ldap-Display-Name | msTSHomeDrive                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1978                     |
-| System-ID-GUID    | 5f0a24d9-dffa-4cd9-acbf-a0680c03731e        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 5f0a24d9-dffa-4cd9-acbf-a0680c03731e        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,10 +55,10 @@ A unidade base dos serviços de terminal especifica uma unidade inicial para o u
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
@@ -76,10 +76,10 @@ A unidade base dos serviços de terminal especifica uma unidade inicial para o u
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
@@ -97,10 +97,10 @@ A unidade base dos serviços de terminal especifica uma unidade inicial para o u
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |

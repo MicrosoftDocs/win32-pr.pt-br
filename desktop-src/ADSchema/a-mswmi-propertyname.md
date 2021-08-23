@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-PropertyName
+title: Atributo ms-WMI-PropertyName
 description: O nome do objeto de política de destino para um objeto de parâmetro.
 ms.assetid: d4044656-545e-4aac-84f1-540c88858090
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-PropertyName
-- atributo msWMI-PropertyName do esquema do AD
+- Esquema do AD do atributo ms-WMI-PropertyName
+- Esquema do AD do atributo msWMI-PropertyName
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 152fc413e9f24c63ece5e9d78ea94d635610f54c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 730e72b067b0f0a678b92e61be6e73d2becacee93157c85260ea549b2271a8e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507606"
 ---
-# <a name="ms-wmi-propertyname-attribute"></a>atributo ms-WMI-PropertyName
+# <a name="ms-wmi-propertyname-attribute"></a>Atributo ms-WMI-PropertyName
 
 O nome do objeto de política de destino para um objeto de parâmetro.
 
@@ -29,14 +29,14 @@ O nome do objeto de política de destino para um objeto de parâmetro.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-PropertyName                         |
-| LDAP-Display-Name | msWMI-PropertyName                          |
-| Tamanho              | Menos de vinte caracteres.                |
-| Privilégio de atualização  | Administrador de Política de Grupo                  |
+| CN                | ms-WMI-PropertyName                         |
+| Ldap-Display-Name | msWMI-PropertyName                          |
+| Tamanho              | Menos de 20 caracteres.                |
+| Privilégio de atualização  | Política de Grupo administrador                  |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1641                     |
-| System-ID-GUID    | ab920883-e7f8-4d72-b4a0-c0449897509d        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ab920883-e7f8-4d72-b4a0-c0449897509d        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,15 +57,15 @@ O nome do objeto de política de destino para um objeto de parâmetro.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classes usadas em        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ O nome do objeto de política de destino para um objeto de parâmetro.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classes usadas em        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ O nome do objeto de política de destino para um objeto de parâmetro.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classes usadas em        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ O nome do objeto de política de destino para um objeto de parâmetro.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classes usadas em        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ O nome do objeto de política de destino para um objeto de parâmetro.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| Tem valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
 | System-Flags           | 0x00000010                                                 |
-| Classes usadas em        | [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
+| Classes usadas em        | [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> |
 
 
 

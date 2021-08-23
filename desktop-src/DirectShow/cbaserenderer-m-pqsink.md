@@ -1,7 +1,7 @@
 ---
 description: Ponteiro para o objeto que recebe mensagens de controle de qualidade.
 ms.assetid: bf4fd84c-9522-4686-9fb1-17a2ce3e5a16
-title: 'Membro CBaseRenderer:: m_pQSink (Renbase. h)'
+title: Membro CBaseRenderer::m_pQSink (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 331504ffaeb74d84382b65d1332f6dbe7c9556dd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb365c0af23868f05c624144de239828ce7c1d6cabacd3bf774c59d566348ff5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502716"
 ---
-# <a name="cbaserendererm_pqsink-member"></a>Membro de CBaseRenderer:: m \_ pQSink
+# <a name="cbaserendererm_pqsink-member"></a>Membro CBaseRenderer::m \_ pQSink
 
 Ponteiro para o objeto que recebe mensagens de controle de qualidade.
 
@@ -38,7 +38,7 @@ IQualityControl *m_pQSink;
 
 ## <a name="remarks"></a>Comentários
 
-A classe base não implementa o controle de qualidade. Essa variável de membro usa como padrão **NULL**.
+A classe base não implementa o controle de qualidade. Essa variável de membro assume NULL como **padrão.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ A classe base não implementa o controle de qualidade. Essa variável de membro 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

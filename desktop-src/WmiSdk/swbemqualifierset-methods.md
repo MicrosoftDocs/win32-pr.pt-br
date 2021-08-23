@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos SWbemQualifierSet
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08e81a2c23209e57965e74dc525a45ea7254d65c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2014a916692a439080b6dfe7dab531f717d4a16da2166f79ae5f2eeb79d31d69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503237"
 ---
 # <a name="swbemqualifierset-methods"></a>Métodos SWbemQualifierSet
 
-O objeto [**SWbemQualifierSet**](swbemqualifierset.md) expõe os métodos a seguir.
+O [**objeto SWbemQualifierSet**](swbemqualifierset.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 

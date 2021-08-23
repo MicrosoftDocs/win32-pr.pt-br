@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_GETLOCALE (WinUser. h)
-description: Obtém a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o \_ estilo de classificação lbs) e o texto adicionado pela mensagem do lb \_ AddString.
+title: LB_GETLOCALE mensagem (Winuser.h)
+description: Obtém a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o estilo SORT LBS) e do texto adicionado pela mensagem \_ \_ ADDSTRING do LB.
 ms.assetid: ec814b03-5ce2-4b81-a36c-ab4c115f88be
 keywords:
-- Controles de LB_GETLOCALE de mensagens do Windows
+- LB_GETLOCALE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57620b62011dba234710caf1b5d1c429da37ace9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 732bfac72502c38265f7c1651667dc235c440293c8435f16088eaee775a874f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544516"
 ---
-# <a name="lb_getlocale-message"></a>\_Mensagem de GETlocalize do lb
+# <a name="lb_getlocale-message"></a>Mensagem \_ GETLOCALE do LB
 
-Obtém a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o estilo de [**\_ classificação lbs**](list-box-styles.md) ) e o texto adicionado pela mensagem do [**lb \_ AddString**](lb-addstring.md) .
+Obtém a localidade atual da caixa de listagem. Você pode usar a localidade para determinar a ordem de classificação correta do texto exibido (para caixas de listagem com o estilo [**SORT \_ LBS)**](list-box-styles.md) e do texto adicionado pela mensagem [**\_ ADDSTRING do LB.**](lb-addstring.md)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,13 +43,13 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno especifica a localidade atual da caixa de listagem. O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contém o código de país/região e o [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contém o identificador de idioma.
+O valor de retorno especifica a localidade atual da caixa de listagem. O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contém o código de país/região e [**o LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contém o identificador de idioma.
 
 ## <a name="remarks"></a>Comentários
 
-O identificador de idioma consiste em um identificador de subidioma e um identificador de idioma primário. Use a macro [**PRIMARYLANGID**](/windows/desktop/api/winnt/nf-winnt-primarylangid) para extrair o identificador de idioma primário do [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) do valor de retorno e a macro [**SUBLANGID**](/windows/desktop/api/winnt/nf-winnt-sublangid) para extrair o identificador de subidioma.
+O identificador de idioma consiste em um identificador de sublângua e um identificador de idioma primário. Use a macro [**PRIMARYLANGID**](/windows/desktop/api/winnt/nf-winnt-primarylangid) para extrair o identificador de idioma primário da [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) do valor de retorno e a [**macro SUBLANGID**](/windows/desktop/api/winnt/nf-winnt-sublangid) para extrair o identificador de sublanguagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ O identificador de idioma consiste em um identificador de subidioma e um identif
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -70,10 +70,10 @@ O identificador de idioma consiste em um identificador de subidioma e um identif
 **Referência**
 </dt> <dt>
 
-[**seqüência de caracteres de LB \_**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**LB \_ SETlocale**](lb-setlocale.md)
+[**LB \_ SETLOCALE**](lb-setlocale.md)
 </dt> <dt>
 
 **Outros recursos**

@@ -1,6 +1,6 @@
 ---
-description: A partir do Windows XP, o painel de controle oferece suporte à categorização de itens do painel de controle. Os itens são registrados para aparecerem em uma ou mais categorias. Não é possível criar novas categorias.
-title: Atribuindo categorias do painel de controle
+description: A partir Windows XP, o Painel de Controle dá suporte à categorização de Painel de Controle itens. Os itens são registrados para aparecer em uma ou mais categorias. Novas categorias não podem ser criadas.
+title: Atribuindo Painel de Controle categorias
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: e189b57d-c066-4f28-b1d5-3e05d6c6eeb2
@@ -9,18 +9,18 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: bade62cda23c2d2f66ffdfd70f3f555a243f3efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d70854177baecf6261d550bc5ad37cf5319eed323ae9b17f5fd281118acd8b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593626"
 ---
-# <a name="assigning-control-panel-categories"></a>Atribuindo categorias do painel de controle
+# <a name="assigning-control-panel-categories"></a>Atribuindo Painel de Controle categorias
 
-A partir do Windows XP, o painel de controle oferece suporte à categorização de itens do painel de controle. Os itens são registrados para aparecerem em uma ou mais categorias. Não é possível criar novas categorias.
+A partir Windows XP, o Painel de Controle dá suporte à categorização de Painel de Controle itens. Os itens são registrados para aparecer em uma ou mais categorias. Novas categorias não podem ser criadas.
 
-Para registrar um item do painel de controle em uma ou mais categorias, adicione valores conforme explicado na seção registro do [item do painel de controle executável](registering-control-panel-items.md) ou [registro do item do painel de controle da dll](registering-control-panel-items.md) de registro de [itens](registering-control-panel-items.md)do painel de controle, conforme apropriado.
+Para registrar um item Painel de Controle em uma ou mais categorias, adicione valores, conforme explicado na seção Registro de [Item](registering-control-panel-items.md) Painel de Controle Executável ou Registro de Item [Painel de Controle DLL](registering-control-panel-items.md) de Registrando [itens Painel de Controle](registering-control-panel-items.md), conforme apropriado.
 
 
 
@@ -42,17 +42,17 @@ Para registrar um item do painel de controle em uma ou mais categorias, adicione
 <tbody>
 <tr class="odd">
 <td>0</td>
-<td>&quot;Todos os itens do painel de controle&quot;</td>
+<td>&quot;Todos os Painel de Controle itens&quot;</td>
 <td>&quot;Opções adicionais&quot;
 <blockquote>
 [!Note]<br />
-Qualquer item do painel de controle que não especifique uma ID de categoria aparece nessa categoria.
+Qualquer Painel de Controle item que não especifica uma ID de categoria é exibido nesta categoria.
 </blockquote>
 <br/></td>
-<td>&quot;Outras opções do painel de controle&quot;
+<td>&quot;Outras Painel de Controle opções&quot;
 <blockquote>
 [!Note]<br />
-Qualquer item do painel de controle que não especifique uma ID de categoria aparece nessa categoria.
+Qualquer Painel de Controle item que não especifica uma ID de categoria é exibido nesta categoria.
 </blockquote>
 <br/></td>
 </tr>
@@ -66,18 +66,18 @@ Qualquer item do painel de controle que não especifique uma ID de categoria apa
 <td>2</td>
 <td>&quot;Hardware e som&quot;</td>
 <td>&quot;Hardware e som&quot;</td>
-<td>&quot;Impressoras e outros tipos de hardware&quot;</td>
+<td>&quot;Impressoras e outros hardwares&quot;</td>
 </tr>
 <tr class="even">
 <td>3</td>
 <td>&quot;Rede e Internet&quot;</td>
 <td>&quot;Rede e Internet&quot;</td>
-<td>&quot;Conexões de rede e Internet&quot;</td>
+<td>&quot;Conexões de Rede e Internet&quot;</td>
 </tr>
 <tr class="odd">
 <td>4</td>
-<td>Não se usa mais. Qualquer item que se adiciona somente à categoria 4 aparece na categoria 2 (hardware e som).</td>
-<td>Não se usa mais. Qualquer item que se adiciona somente à categoria 4 aparece na categoria 2 (hardware e som).</td>
+<td>Não se usa mais. Qualquer item que se adiciona apenas à categoria 4 aparece na categoria 2 (Hardware e Som).</td>
+<td>Não se usa mais. Qualquer item que se adiciona apenas à categoria 4 aparece na categoria 2 (Hardware e Som).</td>
 <td>&quot;Sons, fala e dispositivos de áudio&quot;</td>
 </tr>
 <tr class="even">
@@ -109,32 +109,32 @@ Qualquer item do painel de controle que não especifique uma ID de categoria apa
 <td>&quot;Contas de Usuário&quot;
 <blockquote>
 [!Note]<br />
-Quando não conectado a um domínio, isso é chamado de &quot; contas de usuário e segurança de família &quot; .
+Quando não estiver conectado a um domínio, isso é chamado de Contas de &quot; Usuário e Segurança da &quot; Família.
 </blockquote>
 <br/></td>
 <td>&quot;Contas de Usuário&quot;
 <blockquote>
 [!Note]<br />
-Quando não conectado a um domínio, isso é chamado de &quot; contas de usuário e segurança de família &quot; .
+Quando não estiver conectado a um domínio, isso é chamado de Contas de &quot; Usuário e Segurança da &quot; Família.
 </blockquote>
 <br/></td>
 <td>&quot;Contas de Usuário&quot;</td>
 </tr>
 <tr class="odd">
 <td>10</td>
-<td>Não se usa mais. Os itens registrados nessa categoria aparecem na categoria 5 (sistema e segurança).</td>
+<td>Não se usa mais. Os itens registrados nessa categoria aparecem na categoria 5 (Sistema e Segurança).</td>
 <td>&quot;Segurança&quot;</td>
 <td>&quot;Central de Segurança&quot;
 <blockquote>
 [!Note]<br />
-Disponível apenas no Windows XP Service Pack 2 (SP2) ou posterior.
+Disponível somente no Windows XP Service Pack 2 (SP2) ou posterior.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>11</td>
-<td>Não se usa mais. Os itens registrados nessa categoria aparecem na categoria 0 (todos os itens do painel de controle).</td>
-<td>&quot;PC móvel&quot;
+<td>Não se usa mais. Os itens registrados nessa categoria aparecem na categoria 0 (Todos os Painel de Controle Itens).</td>
+<td>&quot;Pc móvel&quot;
 <blockquote>
 [!Note]<br />
 Essa categoria só é visível em PCs móveis.
@@ -149,39 +149,39 @@ Essa categoria só é visível em PCs móveis.
 
  
 
-No Windows XP, as categorias **adicionam ou removem programas** e **contas de usuário** funcionam de maneira um pouco diferente de outras categorias no painel de controle. Quando um ou mais itens são adicionados a uma dessas duas categorias, o link associado no painel de controle abre uma página de categoria. Os itens registrados aparecem na parte inferior da página sob o título "ou selecionam um ícone do painel de controle". Quando nenhum item é registrado para uma dessas categorias, o link associado no painel de controle chama diretamente o item padrão do Windows para essa categoria. No Windows Vista e posterior, a categoria **programas** e a categoria **contas de usuário** não têm essa propriedade.
+No Windows XP, as categorias **Adicionar**  ou Remover Programas e Contas de Usuário funcionam de forma um pouco diferente de outras categorias no Painel de Controle. Quando um ou mais itens são adicionados a uma dessas duas categorias, o link associado no Painel de Controle abre uma página de categoria. Os itens registrados aparecem na parte inferior da página sob o título "ou Escolha um ícone Painel de Controle". Quando nenhum item é registrado para uma dessas categorias, o link associado no Painel de Controle invoca diretamente o item Windows padrão para essa categoria. No Windows Vista e posterior, a categoria **Programas** e a categoria **Contas de** Usuário não têm essa propriedade.
 
-A categoria da **central de segurança** , disponível apenas no Windows XP SP2, também é um pouco não padrão. Clicar nessa categoria abre a página **central de segurança** em uma nova janela. Os itens registrados para a **central de segurança** aparecem na parte inferior dessa página, sob o título **gerenciar configurações de segurança para:**. Clicar em um ícone abre o item do painel de controle.
+A **categoria Central de** Segurança, disponível somente no Windows XP SP2, também é um pouco não padrão. Clicar nessa categoria abre a **página Central de** Segurança em uma nova janela. Os itens registrados **para a Central de** Segurança aparecem na parte inferior dessa página sob o título Gerenciar configurações de segurança **para:**. Clicar em um ícone abre o Painel de Controle item.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Itens do painel de controle](control-panel-applications.md)
+[Painel de Controle itens](control-panel-applications.md)
 </dt> <dt>
 
 [Diretrizes da Experiência do Usuário](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrando itens do painel de controle](registering-control-panel-items.md)
+[Registrando Painel de Controle itens](registering-control-panel-items.md)
 </dt> <dt>
 
 [Usando CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Processamento de mensagens do painel de controle](message-processing.md)
+[Painel de Controle processamento de mensagens](message-processing.md)
 </dt> <dt>
 
-[Executando itens do painel de controle](executing-control-panel-items.md)
+[Executando Painel de Controle itens](executing-control-panel-items.md)
 </dt> <dt>
 
-[Estendendo itens do painel de controle do sistema](extending-system-control-panel-items.md)
+[Estendendo itens Painel de Controle sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Criando links de tarefas pesquisáveis para um item do painel de controle](creating-searchable-task-links.md)
+[Criando links de tarefa pesquisáveis para um Painel de Controle item](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Acessando o painel de controle no modo de segurança no Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Acessando o Painel de Controle no modo Cofre em Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

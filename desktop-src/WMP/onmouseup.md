@@ -1,9 +1,9 @@
 ---
-title: OnMouseUp
-description: O manipulador de eventos OnMouseUp manipula um evento que ocorre quando o usuário libera um botão do mouse enquanto o ponteiro está sobre o elemento.
+title: Onmouseup
+description: O manipulador de eventos onmouseup lida com um evento que ocorre quando o usuário libera um botão do mouse enquanto o ponteiro está sobre o elemento.
 ms.assetid: d6c9c028-cb12-4767-a5de-b2312681ea13
 keywords:
-- Windows Media Player de OnMouseUp
+- onmouseup Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: baa1713b828fc2d2c3dea885ec9a642c53710260
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08059a66646834aac55c03c65ad9c80f6e1a60309a15c1867ef616c48036036d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572193"
 ---
-# <a name="onmouseup"></a>OnMouseUp
+# <a name="onmouseup"></a>Onmouseup
 
-O manipulador de eventos **OnMouseUp** manipula um evento que ocorre quando o usuário libera um botão do mouse enquanto o ponteiro está sobre o elemento.
+O **manipulador de eventos onmouseup** lida com um evento que ocorre quando o usuário libera um botão do mouse enquanto o ponteiro está sobre o elemento.
 
 ``` syntax
 onmouseup
@@ -30,7 +30,7 @@ onmouseup
 
 ## <a name="remarks"></a>Comentários
 
-Este manipulador de eventos não é aplicável ao elemento **playlist** .
+Esse manipulador de eventos não é aplicável ao **elemento PLAYLIST.**
 
 ## <a name="requirements"></a>Requisitos
 

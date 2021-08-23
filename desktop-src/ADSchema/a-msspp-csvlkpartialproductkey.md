@@ -1,11 +1,11 @@
 ---
-title: atributo de chave de produto MS-SPP-CSVLK-partial
-description: Últimos 5 caracteres da chave de produto CSVLK usada para criar o objeto de ativação
+title: Atributo ms-SPP-CSVLK-Partial-Product-Key
+description: Últimos 5 caracteres da chave do produto CSVLK usada para criar o Objeto de Ativação
 ms.assetid: 6209326f-1b95-43c6-824a-43eb893ef1e1
 ms.tgt_platform: multiple
 keywords:
-- MS-SPP-CSVLK-partial-produto-chave do esquema do AD
-- Esquema de AD do atributo msSPP-CSVLKPartialProductKey
+- Esquema do AD do atributo ms-SPP-CSVLK-Partial-Product-Key
+- Esquema do AD do atributo msSPP-CSVLKPartialProductKey
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f53d09a51137054923c8f9e108419dd2494595
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53d946eb812f2194f9c8c995d0f90a6715317e4c6d5bce52e8a4a632ef98a76c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119542216"
 ---
-# <a name="ms-spp-csvlk-partial-product-key-attribute"></a>atributo de chave de produto MS-SPP-CSVLK-partial
+# <a name="ms-spp-csvlk-partial-product-key-attribute"></a>Atributo ms-SPP-CSVLK-Partial-Product-Key
 
-Últimos 5 caracteres da chave de produto CSVLK usada para criar o objeto de ativação
+Últimos 5 caracteres da chave do produto CSVLK usada para criar o Objeto de Ativação
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-SPP-CSVLK-parcial-Product-Key            |
-| LDAP-Display-Name | msSPP-CSVLKPartialProductKey                |
+| CN                | ms-SPP-CSVLK-Partial-Product-Key            |
+| Ldap-Display-Name | msSPP-CSVLKPartialProductKey                |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2106                     |
-| System-ID-GUID    | a601b091-8652-453a-b386-87ad239b7c08        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a601b091-8652-453a-b386-87ad239b7c08        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ ms.locfileid: "104500058"
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | True                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 5                                                                       |
 | Range-Upper            | 5                                                                       |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Classes usadas em        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

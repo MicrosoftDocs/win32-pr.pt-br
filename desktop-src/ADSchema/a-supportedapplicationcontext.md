@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29512a4d9588a8097ca531acd477c08b0e316876
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: abeb9f3a7b7a0956798fb20a3fcbbe77040efa8dcd6b6909a0115bf68957ebc6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645476"
 ---
 # <a name="supported-application-context-attribute"></a>Atributo de contexto de aplicativo com suporte
 

@@ -34,12 +34,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91ba11975e0e065e0cfcce91eb22402153acf236
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 12aa42dfb54f6139ab0847f83b44298a0b81c1ff84dd1ea41e483a38ee8889bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119574396"
 ---
 # <a name="imsrdpclient6transportsettings2-property"></a>Propriedade IMsRdpClient6:: TransportSettings2
 

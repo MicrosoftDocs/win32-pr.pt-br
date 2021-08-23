@@ -1,30 +1,30 @@
 ---
-title: Descoberta de perfil de DMTF por meio de passagem de associação
-description: Um componente fundamental da infraestrutura de Instrumentação de Gerenciamento do Windows (WMI) é um modelo orientado a objeto das entidades gerenciáveis em um sistema.
+title: Descoberta de perfil DMTF por meio de passagem de associação
+description: Um componente fundamental da infraestrutura de WMI (Instrumentação de Gerenciamento de Windows) é um modelo orientado a objeto das entidades gerenciáveis em um sistema.
 ms.assetid: 21e03d78-bce1-471e-a826-e676d32990ba
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 776b3f5883075ddf549330c422efec558195c8fa
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: a8f49d1433d8263dff2c1d50007f9aa0daf1573c09ebc8d7a513eda658c51997
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104366819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643146"
 ---
-# <a name="dmtf-profile-discovery-through-association-traversal"></a>Descoberta de perfil de DMTF por meio de passagem de associação
+# <a name="dmtf-profile-discovery-through-association-traversal"></a>Descoberta de perfil DMTF por meio de passagem de associação
 
-Um componente fundamental da infraestrutura de Instrumentação de Gerenciamento do Windows (WMI) é um modelo orientado a objeto das entidades gerenciáveis em um sistema. O modelo está em conformidade com um padrão mantido pelo Desktop Management Task Force ([DMTF](https://www.dmtf.org/standards/wsman)) e é conhecido como o modelo CIM (CIM). Algumas classes no modelo, como o [ \_ arquivo CIM](../cimwin32prov/cim-datafile.md) ou o [ \_ processo Win32](../cimwin32prov/win32-process.md), correspondem diretamente a entidades gerenciáveis. Outras classes no modelo, como [Win32 \_ systemservices](../cimwin32prov/win32-systemservices.md), representam relações entre entidades gerenciáveis. Essas classes de modelagem de relação são conhecidas como classes de associação.
+Um componente fundamental da infraestrutura de WMI (Instrumentação de Gerenciamento de Windows) é um modelo orientado a objeto das entidades gerenciáveis em um sistema. O modelo está em conformidade com um padrão mantido pela[DMTF](https://www.dmtf.org/standards/wsman)(Desktop Management Task Force) e é conhecido como CIM (modelo CIM). Algumas classes no modelo, como [Cim \_ DataFile ou](../cimwin32prov/cim-datafile.md) Processo [Win32, \_ ](../cimwin32prov/win32-process.md)correspondem diretamente a entidades gerenciáveis. Outras classes no modelo, como [Win32 \_ SystemServices,](../cimwin32prov/win32-systemservices.md)representam relações entre entidades gerenciáveis. Essas classes de modelagem de relação são conhecidas como classes de Associação.
 
-Usando a linguagem de consulta específica de WMI, WQL, você pode recuperar instâncias de classes que representam entidades gerenciáveis ou instâncias de classes de associação. Mas a WQL é específica da implementação. Ele funciona apenas com a implementação do Windows do padrão DMTF (WMI). Além disso, a sintaxe WQL para recuperar classes de associação é bastante complicada.
+Usando a linguagem de consulta específica do WMI, WQL, você pode recuperar instâncias de classes que representam entidades gerenciáveis ou instâncias de classes de Associação. Mas o WQL é específico da implementação. Ele funciona apenas com a Windows do WMI (padrão DMTF). Além disso, a sintaxe WQL para recuperar classes de Associação é bastante complicada.
 
-A infraestrutura Gerenciamento Remoto do Windows (WinRM) fornece uma excelente maneira de aproveitar a funcionalidade do WMI. As versões anteriores do WinRM tinham que usar o WQL para recuperar instâncias de classes de associação. O WinRM 2,0 inclui um novo recurso conhecido como descoberta de perfil de DMTF por meio de passagem de associação. A passagem de associação permite que um usuário do WinRM recupere instâncias de classes de associação usando um mecanismo de filtragem padrão, o dialeto AssociationFilter, definido na especificação de vinculação CIM DMTF. Para obter mais informações sobre a passagem de associação, consulte a especificação de associação CIM WS-Management ( [https://www.dmtf.org/standards/wsman]( https://www.dmtf.org/standards/ws-man) ).
+A Windows WinRM (Gerenciamento Remoto) fornece uma excelente maneira de aproveitar a funcionalidade do WMI. As versões anteriores do WinRM tinham que usar o WQL para recuperar instâncias de classes de Associação. O WinRM 2.0 inclui um novo recurso conhecido como descoberta de perfil DMTF por meio de passagem de associação. A travessia de associação permite que um usuário do WinRM recupere instâncias de classes de Associação usando um mecanismo de filtragem padrão, o dialeto AssociationFilter, definido na especificação de associação CIM de DMTF. Para obter mais informações sobre a travessia de associação, consulte a WS-Management de associação CIM ( [https://www.dmtf.org/standards/wsman]( https://www.dmtf.org/standards/ws-man) ).
 
-O utilitário WinRM fornece um mecanismo simples para percorrer a associação apropriada e recuperar um perfil de dispositivo.
+O utilitário winrm fornece um mecanismo simples para percorrer a associação apropriada e recuperar um perfil de dispositivo.
 
-## <a name="configuration-implementation-details"></a>Detalhes da implementação da configuração
+## <a name="configuration-implementation-details"></a>Detalhes da implementação de configuração
 
-O utilitário WinRM agora dá suporte a um dialeto para a solicitação de associação. O URI ou o alias podem ser especificados usando o utilitário WinRM.
+O utilitário winrm agora dá suporte a um dialeto para a solicitação de associação. O URI ou o alias podem ser especificados usando o utilitário winrm.
 
 
 
@@ -34,15 +34,15 @@ O utilitário WinRM agora dá suporte a um dialeto para a solicitação de assoc
 
 
 
- 
+ 
 
 ## <a name="retrieving-instances-of-an-association-class-by-using-the-associationfilter-dialect"></a>Recuperando instâncias de uma classe de associação usando o dialeto AssociationFilter
 
-O utilitário WinRM pode recuperar instâncias de classe de associação WMI de uma instância de origem específica. O comando a seguir demonstra como usar o utilitário WinRM para recuperar instâncias de classes de associação de [ \_ serviço do Win32](../cimwin32prov/win32-service.md) . O switch "-Associations" deve ser usado para retornar classes de associação.
+O utilitário winrm pode recuperar instâncias de classe de associação WMI de uma instância de origem específica. O comando a seguir demonstra como usar o utilitário winrm para recuperar instâncias de classes de associação do [Serviço Win32. \_ ](../cimwin32prov/win32-service.md) A opção "-associations" deve ser usada para retornar classes de associação.
 
-**WinRM Enumerate wmicimv2/ \* -dialeto: Association-Associations-Filter: {Object = Win32 \_ Service? Name = WinRM; resultclassname = Win32 \_ dependentservice; role = Dependent}**
+**winrm enumera wmicimv2/ \* -dialect:association -associations -filter:{object=win32 \_ service?name=winrm;resultclassname=win32 \_ dependentservice;role=dependent}**
 
-O trecho de código com base em texto a seguir é a saída do comando acima:
+O snippet baseado em texto a seguir é a saída do comando acima:
 
 ``` syntax
 Win32_DependentService
@@ -78,11 +78,11 @@ Win32_DependentService
 
 ## <a name="retrieving-instances-of-an-associated-class-by-using-the-associationfilter-dialect"></a>Recuperando instâncias de uma classe associada usando o dialeto AssociationFilter
 
-O utilitário WinRM pode recuperar as instâncias de classe WMI que estão associadas a uma instância de origem específica. O comando a seguir demonstra como usar o utilitário WinRM para recuperar instâncias de classes associadas ao [ \_ serviço Win32](../cimwin32prov/win32-service.md) .
+O utilitário winrm pode recuperar instâncias de classe WMI associadas a uma instância de origem específica. O comando a seguir demonstra como usar o utilitário winrm para recuperar instâncias de classes associadas ao [Serviço Win32. \_ ](../cimwin32prov/win32-service.md)
 
-**WinRM enumerar wmicimv2/ \* -dialeto: Association-filtro: {Object = Win32 \_ Service? Name = WinRM; associationclassname = Win32 \_ dependentservice; resultclassname = Win32 \_ Service; ResultRole = Antecedent; role = Dependent}**
+**winrm enumera wmicimv2/ \* -dialect:association -filter:{object=win32 \_ service?name=winrm;associationclassname=win32 \_ dependentservice;resultclassname=win32 \_ service;resultrole=antecedent;role=dependent}**
 
-O trecho de código com base em texto a seguir é a saída do comando acima:
+O snippet baseado em texto a seguir é a saída do comando acima:
 
 ``` syntax
 Win32_Service
@@ -112,6 +112,6 @@ Win32_Service
     WaitHint = 0
 ```
 
- 
+ 
 
- 
+ 

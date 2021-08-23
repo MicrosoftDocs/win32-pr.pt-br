@@ -1,11 +1,11 @@
 ---
-title: Trust-auth-atributo de saída
-description: Informações de autenticação para a parte de saída de uma relação de confiança.
+title: Atributo Trust-Auth-Outgoing
+description: Informações de autenticação para a parte de saída de uma confiança.
 ms.assetid: 0b63554b-b57e-4ca5-8a78-2bce5ebfea2f
 ms.tgt_platform: multiple
 keywords:
-- Trust-auth-esquema de atributo de saída do AD
-- Esquema de AD do atributo trustAuthOutgoing
+- Esquema do AD do atributo Trust-Auth-Outgoing
+- Esquema do AD do atributo trustAuthOutgoing
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee1d462767f5ad756c936eb30f455c7982663ec0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4b83cb16d27447d64291dd959115a175fff3aeb0af8c483a75062bf57ae810ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644866"
 ---
-# <a name="trust-auth-outgoing-attribute"></a>Trust-auth-atributo de saída
+# <a name="trust-auth-outgoing-attribute"></a>Atributo Trust-Auth-Outgoing
 
-Informações de autenticação para a parte de saída de uma relação de confiança.
+Informações de autenticação para a parte de saída de uma confiança.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Confiança-autenticação-saída                                   |
-| LDAP-Display-Name | trustAuthOutgoing                                     |
+| CN                | Trust-Auth-Outgoing                                   |
+| Ldap-Display-Name | trustAuthOutgoing                                     |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.135                                |
-| System-ID-GUID    | bf967a5f-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a5f-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -79,10 +79,10 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -100,10 +100,10 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| Tem valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | 0                                                    |
 | Range-Upper            | 32767                                                |
 | Search-Flags           | 0x00000000                                           |
@@ -121,7 +121,7 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -142,7 +142,7 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -163,7 +163,7 @@ Informações de autenticação para a parte de saída de uma relação de confi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |

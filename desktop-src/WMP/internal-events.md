@@ -3,27 +3,27 @@ title: Eventos internos
 description: Eventos internos
 ms.assetid: d99e84ec-41db-42e7-ab26-5ca6a3ba610b
 keywords:
-- Capas do Windows Media Player, eventos internos
+- Windows Media Player capas, eventos internos
 - capas, eventos internos
 - eventos, internos
 - escrevendo código para capas, eventos internos
 - eventos internos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f08ed2abca3f23a89ea6fe261a29639d671e0d58
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8859ed86cb4951509d452b24c108e73d4129e474abf1c0bc2f51487e2d42bd9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572516"
 ---
 # <a name="internal-events"></a>Eventos internos
 
-Você pode detectar alterações que ocorrem no Windows Media Player ou alterações em sua própria aparência. Elas podem ser alterações em métodos ou propriedades de objeto do Windows Media Player, alterações em atributos de capa e assim por diante.
+você pode detectar alterações que ocorrem em Windows Media Player ou alterações em sua própria aparência. elas podem ser alterações em Windows Media Player propriedades de objeto ou métodos, alterações em atributos de capa e assim por diante.
 
-## <a name="windows-media-player-property-changes"></a>Alterações de Propriedade do Windows Media Player
+## <a name="windows-media-player-property-changes"></a>Windows Media Player Alterações de propriedade
 
-Você pode processar alterações no Windows Media Player usando o ouvinte wmpprop. Você deve configurar o ouvinte como um valor de um atributo. Coloque o valor entre aspas duplas e comece com a palavra "wmpprop" seguida por dois-pontos. Em seguida, você inclui a propriedade que deseja escutar. Quando a propriedade for alterada, o valor do atributo também será alterado. Por exemplo, para que um valor do elemento Slider seja alterado sempre que o valor do atributo **CurrentPosition** for alterado, digite o seguinte:
+você pode processar alterações em Windows Media Player usando o ouvinte wmpprop. Você deve configurar o ouvinte como um valor de um atributo. Coloque o valor entre aspas duplas e comece com a palavra "wmpprop" seguida por dois-pontos. Em seguida, você inclui a propriedade que deseja escutar. Quando a propriedade for alterada, o valor do atributo também será alterado. Por exemplo, para que um valor do elemento Slider seja alterado sempre que o valor do atributo **CurrentPosition** for alterado, digite o seguinte:
 
 
 ```C++
@@ -32,11 +32,11 @@ Você pode processar alterações no Windows Media Player usando o ouvinte wmppr
 
 
 
--   **Importante** Não use wmpprop nos métodos do Windows Media Player. Podem ocorrer resultados inesperados.
+-   **Importante** não use wmpprop em métodos Windows Media Player. Podem ocorrer resultados inesperados.
 
-## <a name="windows-media-player-method-changes"></a>Alterações de método do Windows Media Player
+## <a name="windows-media-player-method-changes"></a>Windows Media Player Alterações de método
 
-Você pode fazer com que sua capa responda à disponibilidade de métodos no Windows Media Player usando wmpenabled e wmpdisabled. Eles são usados de forma semelhante ao ouvinte wmpprop, exceto que você só pode usá-los em métodos do objeto de **controle** que são suportados pelo método **IsAvailable** .
+você pode fazer com que sua capa responda à disponibilidade de métodos em Windows Media Player usando wmpenabled e wmpdisabled. Eles são usados de forma semelhante ao ouvinte wmpprop, exceto que você só pode usá-los em métodos do objeto de **controle** que são suportados pelo método **IsAvailable** .
 
 Por exemplo, você pode habilitar um botão somente quando o método **Play** está habilitado, usando um código como este:
 
@@ -48,7 +48,7 @@ Por exemplo, você pode habilitar um botão somente quando o método **Play** es
 
 
 
--   **Importante** Não use wmpenabled ou wmpdisabled nas propriedades do Windows Media Player. Podem ocorrer resultados inesperados.
+-   **Importante** não use wmpenabled ou wmpdisabled em propriedades Windows Media Player. Podem ocorrer resultados inesperados.
 
 ## <a name="skin-attribute-changes"></a>Alterações de atributo de aparência
 
@@ -74,7 +74,7 @@ value_onchange
 
 
 
-Em seguida, você atribuiria uma cadeia de caracteres JScript que você deseja executar quando o valor for alterado. Por exemplo, para responder a uma alteração no valor de uma caixa de texto que pode ser usada para ajustar o volume do Windows Media Player, digite o seguinte dentro de seu elemento de **texto** como um atributo:
+em seguida, você atribuiria uma cadeia de caracteres de JScript que deseja executar quando o valor for alterado. por exemplo, para responder a uma alteração no valor de uma caixa de texto que pode ser usada para ajustar o volume de Windows Media Player, digite o seguinte dentro de seu elemento de **texto** como um atributo:
 
 
 ```C++
@@ -91,9 +91,9 @@ value_onchange = "JScript: player.Settings.Volume = myText.value"
 [**Manipulando eventos**](handling-events.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

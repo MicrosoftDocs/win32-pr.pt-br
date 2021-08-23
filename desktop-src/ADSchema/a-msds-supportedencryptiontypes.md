@@ -1,11 +1,11 @@
 ---
-title: ms-DS-supported-atributo de tipos de criptografia
-description: Os algoritmos de criptografia com suporte do usuário, computador ou contas de confiança. Observe que o KDC usa essas informações ao gerar um tíquete de serviço para essa conta.
+title: Atributo ms-DS-Supported-Encryption-Types
+description: Os algoritmos de criptografia com suporte por contas de usuário, computador ou confiança. Observação O KDC usa essas informações ao gerar um tíquete de serviço para essa conta.
 ms.assetid: 6f9055a9-531e-4f4b-8703-aca5531a3bcb
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-supported-tipo de criptografia-esquema do AD Schema
-- atributo msDS-SupportedEncryptionTypes do AD Schema
+- Atributo AD Schema ms-DS-Supported-Encryption-Types
+- Atributo AD Schema msDS-SupportedEncryptionTypes
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7ab16959d1f1cd4405cb661a6026f3734a134f8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c1d092061dfebcea8e9a0e4f4a060010e16102108d1e2e74f05e6df2db706141
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544336"
 ---
-# <a name="ms-ds-supported-encryption-types-attribute"></a>ms-DS-supported-atributo de tipos de criptografia
+# <a name="ms-ds-supported-encryption-types-attribute"></a>Atributo ms-DS-Supported-Encryption-Types
 
-Os algoritmos de criptografia com suporte do usuário, computador ou contas de confiança.
+Os algoritmos de criptografia com suporte por contas de usuário, computador ou confiança.
 
 > [!Note]  
 > O KDC usa essas informações ao gerar um tíquete de serviço para essa conta. Os serviços e computadores podem atualizar automaticamente esse atributo em suas respectivas contas no Active Directory e, portanto, precisam de acesso de gravação a esse atributo.
@@ -34,13 +34,13 @@ Os algoritmos de criptografia com suporte do usuário, computador ou contas de c
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-supported-tipos de criptografia     |
-| LDAP-Display-Name | msDS-SupportedEncryptionTypes        |
+| CN                | ms-DS-Supported-Encryption-Types     |
+| Ldap-Display-Name | msDS-SupportedEncryptionTypes        |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1963              |
-| System-ID-GUID    | 20119867-1d04-4ab7-9371-cfc3d5df0afd |
+| System-Id-Guid    | 20119867-1d04-4ab7-9371-cfc3d5df0afd |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -60,10 +60,10 @@ Os algoritmos de criptografia com suporte do usuário, computador ou contas de c
 | ID do link                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
 | System-Only            | Falso                                                                                  |
-| É de valor único       | True                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                   |
 | É indexado             | Falso                                                                                  |
-| No catálogo global      | Falso                                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                           |
+| No Catálogo Global      | Falso                                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
@@ -81,10 +81,10 @@ Os algoritmos de criptografia com suporte do usuário, computador ou contas de c
 | ID do link                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
 | System-Only            | Falso                                                                                  |
-| É de valor único       | True                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                   |
 | É indexado             | Falso                                                                                  |
-| No catálogo global      | Falso                                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                           |
+| No Catálogo Global      | Falso                                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
@@ -102,10 +102,10 @@ Os algoritmos de criptografia com suporte do usuário, computador ou contas de c
 | ID do link                | \-                                                                                     |
 | MAPI-Id                | \-                                                                                     |
 | System-Only            | Falso                                                                                  |
-| É de valor único       | True                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                   |
 | É indexado             | Falso                                                                                  |
-| No catálogo global      | Falso                                                                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                           |
+| No Catálogo Global      | Falso                                                                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |

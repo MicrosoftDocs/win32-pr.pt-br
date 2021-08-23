@@ -17,12 +17,12 @@ keywords:
 - Exemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d9a89df1b9d2afc401e07b6cd77d1307d912f11
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a0e8dd4cb2d810ad8423c1fa4f75020a9489ceb72acbe1483cb439e943b5676
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505296"
 ---
 # <a name="subscribing-to-ui-automation-events"></a>Inscrevendo-se em eventos de automação da interface do usuário
 
@@ -31,16 +31,16 @@ A automação da interface do usuário da Microsoft permite que os clientes assi
 A eficiência também é aprimorada pela capacidade de escutar eventos somente dentro de um escopo definido. Por exemplo, um cliente pode escutar alterações de seleção em um item de uma lista, na própria lista ou em uma caixa de diálogo inteira.
 
 > [!Note]  
-> Não presuma que todos os eventos possíveis sejam gerados por um provedor de automação de interface do usuário. Por exemplo, nem todas as alterações de propriedade fazem com que os eventos sejam gerados pelos provedores de proxy padrão para os controles Windows Forms e Microsoft Win32.
+> Não presuma que todos os eventos possíveis sejam gerados por um provedor de automação de interface do usuário. por exemplo, nem todas as alterações de propriedade fazem com que os eventos sejam gerados pelos provedores de proxy padrão para os controles Windows Forms e Microsoft Win32.
 
- 
+ 
 
 Para obter uma visão mais ampla dos eventos de automação da interface do usuário, consulte [visão geral dos eventos de automação da IU](uiauto-eventsoverview.md).
 
 > [!Note]  
 > Antes de implementar um manipulador de eventos, você deve estar familiarizado com os problemas de Threading descritos em [noções básicas sobre problemas de Threading](uiauto-threading.md).
 
- 
+ 
 
 Este tópico inclui as seções a seguir.
 
@@ -64,7 +64,7 @@ Os aplicativos cliente assinam eventos de um tipo específico registrando um man
 
 
 
- 
+ 
 
 Quando um cliente adiciona um manipulador de eventos para todos os descendentes (os [**\_ descendentes TreeScope**](/windows/desktop/api/UIAutomationClient/ne-uiautomationclient-treescope)), a automação da interface do usuário adiciona apenas um manipulador para a raiz da subárvore e o manipulador escuta em todos os descendentes. A automação da interface do usuário não Adiciona manipuladores de eventos recursivamente.
 
@@ -77,7 +77,7 @@ No desligamento, ou quando eventos de automação da interface do usuário não 
 > [!Note]  
 > Um cliente de automação de interface do usuário não deve usar vários threads para adicionar ou remover manipuladores de eventos. Um comportamento inesperado pode ocorrer se um manipulador de eventos estiver sendo adicionado ou removido enquanto outro estiver sendo adicionado ou removido no mesmo processo de cliente.
 
- 
+ 
 
 
 
@@ -92,7 +92,7 @@ No desligamento, ou quando eventos de automação da interface do usuário não 
 
 
 
- 
+ 
 
 É possível que um evento seja entregue a um manipulador de eventos após o cancelamento da assinatura do manipulador, se o evento for recebido simultaneamente com a solicitação para cancelar a assinatura do evento. A prática recomendada é seguir o padrão de Component Object Model (COM) e evitar destruir o objeto manipulador de eventos até que sua contagem de referência tenha atingido zero. Destruir um manipulador de eventos imediatamente após a desentrada de eventos pode resultar em uma violação de acesso se um evento for entregue tardiamente.
 
@@ -113,9 +113,9 @@ Para obter exemplos de código que mostram como manipular eventos de automação
 [Noções básicas sobre problemas de Threading](uiauto-threading.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
