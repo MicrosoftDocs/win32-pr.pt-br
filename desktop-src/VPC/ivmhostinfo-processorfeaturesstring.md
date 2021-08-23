@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMHostInfo ProcessorFeaturesString (VPCCOMInterfaces. h)
-description: Recupera os recursos da lista com suporte pelo processador do host.
+title: Propriedade IVMHostInfo ProcessorFeaturesString (VPCCOMInterfaces.h)
+description: Recupera os recursos de lista com suporte pelo processador de host.
 ms.assetid: 036c6376-0e9b-46fa-90f4-a40c71c5cf23
 keywords:
-- Propriedade ProcessorFeaturesString Virtual PC
-- Propriedade ProcessorFeaturesString Virtual PC, interface IVMHostInfo
-- IVMHostInfo interface virtual PC, Propriedade ProcessorFeaturesString
+- Propriedade ProcessorFeaturesString pc virtual
+- Propriedade ProcessorFeaturesString pc virtual , interface IVMHostInfo
+- Interface IVMHostInfo pc virtual , propriedade ProcessorFeaturesString
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 118aaa2eabe7ddb2fd608892775a17eac6a77d16
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1040702df250c906bb32af5068a340c37a9ba3faabee3af17d8397bfdc8059e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998886"
 ---
-# <a name="ivmhostinfoprocessorfeaturesstring-property"></a>IVMHostInfo: Propriedade rocessorFeaturesString de:P
+# <a name="ivmhostinfoprocessorfeaturesstring-property"></a>Propriedade IVMHostInfo::P rocessorFeaturesString
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera os recursos da lista com suporte pelo processador do host.
+Recupera os recursos de lista com suporte pelo processador de host.
 
 Esta propriedade é somente para leitura.
 
@@ -45,21 +45,21 @@ HRESULT get_ProcessorFeaturesString(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma lista delimitada por vírgulas de recursos. Um exemplo seria "MMX, SSE, SSE2, x86-64".
+Uma lista de recursos delimitada por vírgulas. Um exemplo seria "MMX,SSE,SSE2,x86-64".
 
 
 
 | Valor                                                                                 | Significado                                                             |
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| <dl> <dt>"AMD-V"</dt> </dl>    | Dá suporte às extensões de virtualização AMD.<br/>              |
-| <dl> <dt>"Intel VT"</dt> </dl> | Dá suporte às extensões de tecnologia de virtualização da Intel.<br/> |
-| <dl> <dt>"HAVD"</dt> </dl>     | A virtualização assistida por hardware está desabilitada.<br/>            |
-| <dl> <dt>TER</dt> </dl>     | A virtualização assistida por hardware está habilitada.<br/>             |
-| <dl> <dt>TECNOLOGIA</dt> </dl>      | Dá suporte às extensões de MMX.<br/>                             |
-| <dl> <dt>SSE</dt> </dl>      | Dá suporte às extensões SIMD de streaming.<br/>                  |
-| <dl> <dt>EXTENSÕES</dt> </dl>     | Dá suporte às extensões SIMD de streaming 2.<br/>                |
-| <dl> <dt>SSE3</dt> </dl>     | Dá suporte às extensões SIMD de streaming 3.<br/>                |
-| <dl> <dt>"TXTE"</dt> </dl>     | Dá suporte às extensões de tecnologia de execução confiável.<br/>    |
+| <dl> <dt>"AMD-V"</dt> </dl>    | Dá suporte às extensões de Virtualização amd.<br/>              |
+| <dl> <dt>"Intel VT"</dt> </dl> | Dá suporte às extensões da Intel Virtualization Technology.<br/> |
+| <dl> <dt>"HAVD"</dt> </dl>     | A Virtualização Assistida por Hardware está desabilitada.<br/>            |
+| <dl> <dt>"HAVE"</dt> </dl>     | A Virtualização Assistida por Hardware está habilitada.<br/>             |
+| <dl> <dt>"MMX"</dt> </dl>      | Dá suporte às extensões MMX.<br/>                             |
+| <dl> <dt>"SSE"</dt> </dl>      | Dá suporte às extensões SIMD de streaming.<br/>                  |
+| <dl> <dt>"SSE2"</dt> </dl>     | Dá suporte às Extensões SIMD de Streaming 2.<br/>                |
+| <dl> <dt>"SSE3"</dt> </dl>     | Dá suporte às Extensões SIMD de Streaming 3.<br/>                |
+| <dl> <dt>"TXTE"</dt> </dl>     | Dá suporte às extensões de Tecnologia de Execução Confiável.<br/>    |
 | <dl> <dt>"x86-64"</dt> </dl>   | Dá suporte a extensões x86-64.<br/>                              |
 
 
@@ -73,8 +73,8 @@ Uma lista delimitada por vírgulas de recursos. Um exemplo seria "MMX, SSE, SSE2
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>        |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>        |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -84,12 +84,12 @@ Uma lista delimitada por vírgulas de recursos. Um exemplo seria "MMX, SSE, SSE2
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHostInfo é definido como 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHostInfo é definido como \_ 5b5cf343-05ad-453b-be99-adf4e27b2ebc<br/>                |
 
 
 

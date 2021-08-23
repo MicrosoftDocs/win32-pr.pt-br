@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get BorderColor recupera a cor da borda ao contrário das bordas do padrão de apagamento.
+description: O método \_ get BorderColor recupera a cor da borda em torno das bordas do padrão de apagador.
 ms.assetid: 9d36cc49-c174-4b93-a030-ca8d2890c624
-title: 'Método IDxtJpeg:: get_BorderColor (QEdit. h)'
+title: Método IDxtJpeg::get_BorderColor (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 7f37c37865caf76839733ada376ec637747977ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3769a5d5e790f03343c4978b1397c8e14e0d32f316870ec3e4a6d2c449a54d6d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119341336"
 ---
-# <a name="idxtjpegget_bordercolor-method"></a>Método IDxtJpeg:: get \_ BorderColor
+# <a name="idxtjpegget_bordercolor-method"></a>Método IDxtJpeg::get \_ BorderColor
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `get_BorderColor` método recupera a cor da borda em torno das bordas do padrão de apagamento.
+O `get_BorderColor` método recupera a cor da borda em torno das bordas do padrão de apagando.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,26 +45,26 @@ HRESULT get_BorderColor(
 
 <dl> <dt>
 
-*PVal* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recebe a cor. O valor retornado é um número hexadecimal com o formato 0xRRGGBB, em que RR é o valor vermelho, GG é o valor verde e BB é o valor azul.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**Interface IDxtJpeg**](idxtjpeg.md)
+[**IDxtJpeg Interface**](idxtjpeg.md)
 </dt> </dl>
 
  

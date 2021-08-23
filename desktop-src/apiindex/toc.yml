@@ -1,9 +1,9 @@
 - name: Índice de APIs
   href: api-index-portal.md
   items:
-    - name: Lista de API do Windows
+    - name: Windows Lista de APIs
       href: windows-api-list.md
-    - name: Conjuntos de API do Windows
+    - name: Windows Conjuntos de API
       items:
         - name: Visão geral
           href: windows-apisets.md
@@ -13,5 +13,5 @@
           href: detect-api-set-availability.md
         - name: Bibliotecas de abrangência do Windows
           href: windows-umbrella-libraries.md
-    - name: APIs do WinRT que podem ser chamadas de um aplicativo de desktop
+    - name: APIs do WinRT que podem ser chamadas de um aplicativo para desktop
       href: uwp-apis-callable-from-a-classic-desktop-app.md

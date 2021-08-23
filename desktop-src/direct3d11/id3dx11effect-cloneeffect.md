@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9dc7e47d1c50d0e41c29c90102afaaebdce8dda
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d9fa68fe05674573468eb684d8149d8dae45e540572f4d777bb860755c60e0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124521"
 ---
 # <a name="id3dx11effectcloneeffect-method"></a>Método ID3DX11Effect:: CloneEffect
 
@@ -72,7 +72,7 @@ Ponteiro para um ponteiro [**ID3DX11Effect**](id3dx11effect.md) que será defini
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

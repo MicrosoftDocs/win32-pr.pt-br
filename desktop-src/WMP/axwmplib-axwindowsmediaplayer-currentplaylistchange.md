@@ -3,7 +3,7 @@ title: Evento CurrentPlaylistChange do objeto AxWindowsMediaPlayer
 description: O evento CurrentPlaylistChange ocorre quando algo é alterado na playlist atual. | Evento CurrentPlaylistChange do objeto AxWindowsMediaPlayer
 ms.assetid: 1f9c99a4-7d10-48bf-b5ff-b1c1d6753b20
 keywords:
-- Evento CurrentPlaylistChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento CurrentPlaylistChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f99f34f0e02d03352a61bbfca6767295d63d59a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 07ff3c076f9b670e3cd234a53b93f3ea9c0963d2dea1f12a3963f12300e9532e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136139"
 ---
 # <a name="currentplaylistchange-event-of-the-axwindowsmediaplayer-object"></a>Evento CurrentPlaylistChange do objeto AxWindowsMediaPlayer
 

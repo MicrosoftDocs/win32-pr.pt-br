@@ -4,12 +4,12 @@ ms.assetid: 592dea65-9da1-4e49-82e4-8e08c451e026
 title: Direitos de acesso ao objeto de política
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2e5c762955a4c53015241086b2249c5edbc4f12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ae22db51c28e76e7122a1f7baf781671d9cc445e253fb6df7d63f87e3f7e921
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005094"
 ---
 # <a name="policy-object-access-rights"></a>Direitos de acesso ao objeto de política
 

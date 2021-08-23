@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a1c43ce76cb56e89831f3d6108bfef6d3b403a1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af2621c363bacc2cf864e4b39999e760cfd615358d664ffb4c8197336eca32e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081530"
 ---
 # <a name="netboot-current-client-count-attribute"></a>netboot-atributo atual-de-cliente-contagem
 
@@ -58,7 +58,7 @@ O atributo **netboot – Current-Client-Count** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -79,7 +79,7 @@ O atributo **netboot – Current-Client-Count** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -100,7 +100,7 @@ O atributo **netboot – Current-Client-Count** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -121,7 +121,7 @@ O atributo **netboot – Current-Client-Count** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -142,7 +142,7 @@ O atributo **netboot – Current-Client-Count** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
@@ -163,7 +163,7 @@ O atributo **netboot – Current-Client-Count** é reservado para uso interno.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | True                                                       |
+| É de valor único       | Verdadeiro                                                       |
 | É indexado             | Falso                                                      |
 | No catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |

@@ -1,19 +1,19 @@
 ---
-description: Especifica a classe de política de áudio para o processador de áudio.
+description: Especifica a classe de política de áudio para o renderador de áudio.
 ms.assetid: 80b028f5-7756-4bb8-b5e3-ebc8343e168c
-title: Atributo MF_AUDIO_RENDERER_ATTRIBUTE_SESSION_ID (Mfidl. h)
+title: MF_AUDIO_RENDERER_ATTRIBUTE_SESSION_ID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4952a60d4438e610677b494290e9738e469770d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5830a3deeb32ca6a3f766bad1858a803948b7e2c07a36f1f1e3222d00ba6199a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104992"
 ---
-# <a name="mf_audio_renderer_attribute_session_id-attribute"></a>\_Atributo de \_ \_ ID de sessão de atributo de processador \_ MF \_
+# <a name="mf_audio_renderer_attribute_session_id-attribute"></a>Atributo MF \_ AUDIO \_ RENDERER \_ ATTRIBUTE SESSION \_ \_ ID
 
-Especifica a classe de política de áudio para o processador de áudio.
+Especifica a classe de política de áudio para o renderador de áudio.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,14 +21,14 @@ Especifica a classe de política de áudio para o processador de áudio.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo associa o processador de áudio a uma classe de política de áudio. Cada classe de política tem seu próprio controle de volume e de política. Se esse atributo não for definido, o novo SAR ingressará na sessão de áudio padrão do aplicativo. Para obter mais informações, consulte [**IAudioClient:: Initialize**](/windows/win32/api/audioclient/nf-audioclient-iaudioclient-initialize) na documentação da API de áudio principal.
+Esse atributo associa o renderador de áudio a uma classe de política de áudio. Cada classe de política tem seu próprio volume e controle de política. Se esse atributo não estiver definido, o novo SAR ingressará na sessão de áudio padrão do aplicativo. Para obter mais informações, consulte [**IAudioClient::Initialize na**](/windows/win32/api/audioclient/nf-audioclient-iaudioclient-initialize) documentação da API de áudio principal.
 
-Você pode usar esse atributo para configurar o processador de áudio. O uso depende de qual função você chama para criar o processador de áudio:
+Você pode usar esse atributo para configurar o renderador de áudio. O uso depende de qual função você chama para criar o renderdor de áudio:
 
--   [**MFCreateAudioRenderer**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorenderer): defina esse atributo usando o ponteiro de interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) especificado no parâmetro *pAudioAttributes* .
--   [**MFCreateAudioRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorendereractivate): defina esse atributo usando o ponteiro de interface [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) recuperado no parâmetro *ppActivate* . Defina o atributo antes de chamar [**IMFActivate:: activateobject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject).
+-   [**MFCreateAudioRenderer:**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorenderer)de definir esse atributo usando o ponteiro de interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) especificado no parâmetro *pAudioAttributes.*
+-   [**MFCreateAudioRendererActivate:**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorendereractivate)de definir esse atributo usando o ponteiro da interface [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) recuperado no *parâmetro ppActivate.* De definir o atributo antes de [**chamar IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject).
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -36,9 +36,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -46,19 +46,19 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos do processador de áudio](audio-renderer-attributes.md)
+[Atributos do renderador de áudio](audio-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
-[Processador de streaming de áudio](streaming-audio-renderer.md)
+[Renderização de áudio de streaming](streaming-audio-renderer.md)
 </dt> </dl>
 
  

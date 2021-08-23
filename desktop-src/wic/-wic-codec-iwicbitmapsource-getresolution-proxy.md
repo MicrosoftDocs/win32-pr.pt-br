@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 0bcd63c01bf99e426cdbf5044223a40308fb5e9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f226e1fddc1d780e24796d342736082c2f7f11e7d03369245f2222eee1074713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088348"
 ---
 # <a name="iwicbitmapsource_getresolution_proxy-function"></a>Função de proxy de resolution de IWICBitmapSource \_ \_
 
@@ -45,33 +45,33 @@ HRESULT IWICBitmapSource_GetResolution_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) \** _
+Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-Ponteiro para este objeto [_ *IWICBitmapSource* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) .
+Ponteiro para este objeto [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) .
 
 </dd> <dt>
 
 *pDpiX* \[ fora\]
 </dt> <dd>
 
-Tipo: **Double \** _
+Tipo: **duplo \***
 
 Um ponteiro que recebe a resolução de DPI do eixo x.
 
 </dd> <dt>
 
-_pDpiY * \[ out\]
+*pDpiY* \[ fora\]
 </dt> <dd>
 
-Tipo: **Double \** _
+Tipo: **duplo \***
 
 Um ponteiro que recebe a resolução de DPI do eixo y.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -83,8 +83,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

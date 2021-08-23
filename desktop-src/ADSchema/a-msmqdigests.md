@@ -4,8 +4,8 @@ description: Uma matriz de resumos dos certificados correspondentes no atributo 
 ms.assetid: a9b03edd-1506-4f2d-afe1-7d953977f6fa
 ms.tgt_platform: multiple
 keywords:
-- Esquema de MSMQ-Digests do atributo AD
-- Esquema de AD do atributo mSMQDigests
+- MSMQ-Digests atributo AD Schema
+- Esquema do AD do atributo mSMQDigests
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06d51c607b1d99af0aed46f259513f4bcf790844
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dff810ec6cbb8b9d461cec7d349cfb7abd08f1d6e8e330e9b0e1b23e7caefff5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081880"
 ---
 # <a name="msmq-digests-attribute"></a>MSMQ-Digests atributo
 
@@ -30,13 +30,13 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | MSMQ-Digests                                          |
-| LDAP-Display-Name | mSMQDigests                                           |
-| Tamanho              | Cada resumo é 16 bytes.                              |
+| Ldap-Display-Name | mSMQDigests                                           |
+| Tamanho              | Cada resumo é de 16 bytes.                              |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.948                                |
-| System-ID-GUID    | 9a0dc33c-c100-11d1-bbc5-0080c76670c0                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9a0dc33c-c100-11d1-football5-0080c76670c0                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | Falso                                                                                         |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| Tem valor único       | Falso                                                                                         |
+| É indexado             | Verdadeiro                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | Falso                                                                                         |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| Tem valor único       | Falso                                                                                         |
+| É indexado             | Verdadeiro                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | Falso                                                                                         |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| Tem valor único       | Falso                                                                                         |
+| É indexado             | Verdadeiro                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | Falso                                                                                         |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| Tem valor único       | Falso                                                                                         |
+| É indexado             | Verdadeiro                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | Falso                                                                                         |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| Tem valor único       | Falso                                                                                         |
+| É indexado             | Verdadeiro                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma matriz de resumos dos certificados correspondentes no atributo mSMQ-Sign-Cer
 | ID do link                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
 | System-Only            | Falso                                                                                         |
-| É de valor único       | Falso                                                                                         |
-| É indexado             | True                                                                                          |
-| No catálogo global      | True                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                  |
+| Tem valor único       | Falso                                                                                         |
+| É indexado             | Verdadeiro                                                                                          |
+| No Catálogo Global      | Verdadeiro                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                  |
 | Range-Lower            | 16                                                                                            |
 | Range-Upper            | 16                                                                                            |
 | Search-Flags           | 0x00000001                                                                                    |
 | System-Flags           | 0x00000010                                                                                    |
-| Classes usadas em        | [**MSMQ-migrado-usuário**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**MSMQ-Migrated-User**](c-msmqmigrateduser.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 

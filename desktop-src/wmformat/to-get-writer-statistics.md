@@ -1,42 +1,42 @@
 ---
-title: Para obter estatísticas do gravador
-description: Para obter estatísticas do gravador
+title: Para obter estatísticas do writer
+description: Para obter estatísticas do writer
 ms.assetid: 81d7f567-0d99-4199-9248-1a497dc2eaab
 keywords:
-- Formato de sistema avançado (ASF), estatísticas do gravador
-- ASF (formato de sistemas avançados), estatísticas do gravador
-- estatísticas do gravador, sobre
+- ASF (Advanced Systems Format), estatísticas de autor
+- ASF (Formato de Sistemas Avançados), estatísticas de autor
+- estatísticas do autor, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8c6620a2410b08d4d605c4dc116366c24b1e52c
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: a1cedd96f1e94b8d3c9499fe08e3eeebb2100e866b141b756483cfb07bb7cb0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "103917068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083961"
 ---
-# <a name="to-get-writer-statistics"></a>Para obter estatísticas do gravador
+# <a name="to-get-writer-statistics"></a>Para obter estatísticas do writer
 
-O gravador pode fornecer informações estatísticas sobre as operações de gravação. Há dois métodos para a coleta de estatísticas do gravador: [**IWMWriterAdvanced:: Getstatistics**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-getstatistics) e [**IWMWriterAdvanced3:: GetStatisticsEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced3-getstatisticsex). As informações recuperadas pelo **GetStatisticsEx** são mais específicas do que as informações recuperadas por **getstatistics**.
+O autor pode fornecer informações estatísticas sobre operações de escrita. Há dois métodos para coletar estatísticas de autor: [**IWMWriterAdvanced::GetStatistics**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-getstatistics) e [**IWMWriterAdvanced3::GetStatisticsEx.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced3-getstatisticsex) As informações recuperadas por **GetStatisticsEx** são mais específicas do que as informações recuperadas por **GetStatistics.**
 
-Ambos os métodos populam estruturas com informações estatísticas. **Getstatistics** usa a estrutura de [**\_ \_ estatísticas do gravador do WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_writer_statistics) e o **GetStatisticsEx** usa a estrutura de exemplo de [**estatísticas do gravador do WM \_ \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_writer_statistics_ex) . **GetStatisticsEx** não duplica os dados obtidos por **getstatistics**. Para obter as informações mais completas, você deve chamar os dois métodos.
+Ambos os métodos populam estruturas com informações estatísticas. **GetStatistics** usa a [**estrutura WM WRITER \_ \_ STATISTICS**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_writer_statistics) e **GetStatisticsEx** usa a estrutura [**WM WRITER \_ \_ STATISTICS \_ EX.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_writer_statistics_ex) **GetStatisticsEx** não duplica os dados obtidos por **GetStatistics.** Para obter as informações mais completas, você deve chamar os dois métodos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Interface IWMWriterAdvanced**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced)
+[**IWMWriterAdvanced Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced)
 </dt> <dt>
 
-[**Interface IWMWriterAdvanced3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced3)
+[**IWMWriterAdvanced3 Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriteradvanced3)
 </dt> <dt>
 
-[**Gravando arquivos ASF**](writing-asf-files.md)
+[**Escrevendo arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

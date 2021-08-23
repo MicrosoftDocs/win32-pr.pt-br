@@ -1,7 +1,7 @@
 ---
-description: A função de exportação ParserAutoInstallInfo identifica o analisador ou analisadores que estão localizados em uma DLL. ParserAutoInstallInfo deve ser implementado em todas as DLLs do analisador.
+description: A função de exportação ParserAutoInstallInfo identifica o analisador ou os analisadores localizados em uma DLL. ParserAutoInstallInfo deve ser implementado em todas as DLLs do analisador.
 ms.assetid: 7af3bf3c-d415-4af9-8f5c-c9a76535bd1a
-title: Função de retorno de chamada ParserAutoInstallInfo (Netmon. h)
+title: Função de retorno de chamada ParserAutoInstallInfo (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Netmon.h
-ms.openlocfilehash: 7702ae8aad5ae24acf3835451b7b8eff3a26ceb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c6c69b66f3ff92905333a28c5dadfd79290033f0abb68cb2a790f07c6e34412
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296197"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063746"
 ---
 # <a name="parserautoinstallinfo-callback-function"></a>Função de retorno de chamada ParserAutoInstallInfo
 
-A função de exportação **ParserAutoInstallInfo** identifica o analisador ou analisadores que estão localizados em uma dll. **ParserAutoInstallInfo** deve ser implementado em todas as DLLs do analisador.
+A **função de exportação ParserAutoInstallInfo** identifica o analisador ou os analisadores localizados em uma DLL. **ParserAutoInstallInfo** deve ser implementado em todas as DLLs do analisador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,35 +35,35 @@ PPF_PARSERDLLINFO WINAPI ParserAutoInstallInfo(void);
 
 ## <a name="parameters"></a>Parâmetros
 
-Esta função de retorno de chamada não tem parâmetros.
+Essa função de retorno de chamada não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será uma estrutura de [ \_ PARSERDLLINFO de PF](pf-parserdllinfo.md) que descreve os analisadores na dll.
+Se a função for bem-sucedida, o valor de retorno será uma estrutura [ \_ PARSERDLLINFO](pf-parserdllinfo.md) de PF que descreve os analisadores na DLL.
 
-Se a função não for bem-sucedida, o valor de retorno será **false**.
+Se a função não for bem-sucedida, o valor de retorno será **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Quando Monitor de Rede é carregado pela primeira vez, ele chama **ParserAutoInstallInfo** (se existir) para instalar automaticamente cada analisador e, em seguida, enumera todas as DLLs do analisador no subdiretório do analisador.
+Quando Monitor de Rede é carregado pela primeira vez, ele chama **ParserAutoInstallInfo** (se existir) para instalar automaticamente cada analisador e, em seguida, enumerar todas as DLLs do analisador no subdiretório do analisador.
 
-As informações retornadas na estrutura **PF \_ PARSERDLLINFO** incluem o seguinte:
+As informações retornadas na estrutura **\_ PARSERDLLINFO** do PF incluem o seguinte:
 
 -   O número de analisadores na DLL (normalmente um).
--   O nome e uma breve descrição do protocolo que cada analisador detecta.
--   Um arquivo de ajuda opcional para cada protocolo.
+-   O nome e uma breve descrição do protocolo detectado por cada analisador.
+-   Um arquivo de Ajuda opcional para cada protocolo.
 -   Os protocolos que precedem cada protocolo.
 -   Os protocolos que seguem cada protocolo.
 
-Cada DLL do analisador deve conter um analisador. No entanto, Monitor de Rede permite que você crie uma DLL que contenha mais de um analisador. Por exemplo, tcpip.dll é uma DLL Monitor de Rede com mais de um analisador.
+Cada DLL do analisador deve conter um analisador. No entanto, Monitor de Rede permite que você crie uma DLL que contenha mais de um analisador. Por exemplo, tcpip.dll é uma Monitor de Rede DLL com mais de um analisador.
 
 
 
 | Para obter informações sobre                                               | Consulte                                                                          |
 |------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Quais analisadores são e como eles funcionam com Monitor de Rede.        | [Analisadores](parsers.md)                                                       |
-| Quais pontos de entrada são incluídos na DLL do analisador.               | [Arquitetura de DLL do analisador](parser-dll-architecture.md)                       |
-| Como implementar **ParserAutoInstallInfo**  inclui um exemplo. | [Implementando ParserAutoInstallInfo](implementing-parserautoinstallinfo.md) |
+| O que são analisadores e como eles funcionam com Monitor de Rede.        | [Analisadores](parsers.md)                                                       |
+| Quais pontos de entrada estão incluídos na DLL do analisador.               | [Arquitetura de DLL do analisador](parser-dll-architecture.md)                       |
+| Como implementar **o ParserAutoInstallInfo**  inclui um exemplo. | [Implementando ParserAutoInstallInfo](implementing-parserautoinstallinfo.md) |
 
 
 
@@ -77,7 +77,7 @@ Cada DLL do analisador deve conter um analisador. No entanto, Monitor de Rede pe
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ Cada DLL do analisador deve conter um analisador. No entanto, Monitor de Rede pe
 
 <dl> <dt>
 
-[PARSERDLLINFO de PF \_](pf-parserdllinfo.md)
+[PF \_ PARSERDLLINFO](pf-parserdllinfo.md)
 </dt> </dl>
 
  

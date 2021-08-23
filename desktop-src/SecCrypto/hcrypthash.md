@@ -4,12 +4,12 @@ ms.assetid: 3b872bf0-cf1b-465b-82a2-c6fd154e1125
 title: HCRYPTHASH (Wincrypt. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a009350ed910627c1e6ec9ae33997ed20c7fec2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99b2d20d7aeb46adda162f8d5ec380143164690bad8ee88139f9653753f1e290
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006554"
 ---
 # <a name="hcrypthash"></a>HCRYPTHASH
 
@@ -28,9 +28,9 @@ typedef ULONG_PTR HCRYPTHASH;
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
 
 
 

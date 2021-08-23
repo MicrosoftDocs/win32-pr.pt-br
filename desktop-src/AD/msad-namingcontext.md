@@ -1,11 +1,11 @@
 ---
-title: Classe MSAD_NamingContext
-description: Representa um NC (contexto de nomenclatura) específico no controlador de domínio.
+title: MSAD_NamingContext classe
+description: Representa um NC (contexto de nomenvão) específico no controlador de domínio.
 ms.assetid: 67dd6c68-6c67-40b4-a20a-c6c312d23441
 ms.tgt_platform: multiple
 keywords:
-- Classe de MSAD_NamingContext Active Directory
-- Active Directory de MSAD_NamingContext classe, descrita
+- classe MSAD_NamingContext Active Directory
+- MSAD_NamingContext classe Active Directory , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d68f70c6e40e823df0a6827e1114f40dae7937be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 571f13642116be0e846fe1350cd932d52087d9f0422b8f40d695e4fef99df5cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025774"
 ---
-# <a name="msad_namingcontext-class"></a>\_Classe MSAD NamingContext
+# <a name="msad_namingcontext-class"></a>Classe MSAD \_ NamingContext
 
-Representa um NC (contexto de nomenclatura) específico no controlador de domínio.
+Representa um NC (contexto de nomenvão) específico no controlador de domínio.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,13 +42,13 @@ class MSAD_NamingContext
 
 ## <a name="members"></a>Membros
 
-A classe **MSAD \_ NamingContext** tem estes tipos de membros:
+A **classe MSAD \_ NamingContext** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MSAD \_ NamingContext** tem essas propriedades.
+A **classe MSAD \_ NamingContext** tem essas propriedades.
 
 <dl> <dt>
 
@@ -64,20 +64,20 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Obtém o caminho X. 500 do NC.
+Obtém o caminho X.500 do NC.
 
 </dd> <dt>
 
 **IsFullReplica**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Obtém o valor que indica se o NC é de leitura/gravação. **True** se o NC for de leitura/gravação; **False** se o NC for somente leitura.
+Obtém o valor que indica se o NC é de leitura/gravação. **TRUE** se o NC for de leitura/gravação; **FALSE** se o NC for somente leitura.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ Obtém o valor que indica se o NC é de leitura/gravação. **True** se o NC for
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | Namespace<br/>                | \\MicrosoftActiveDirectory raiz<br/>                                               |
-| MOF<br/>                      | <dl> <dt>Replprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Replprov.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Replprov.dll</dt> </dl> |
 
 

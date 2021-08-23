@@ -3,7 +3,7 @@ title: Mensagem de MCM_SETUNICODEFORMAT (commctrl. h)
 description: MCM_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere Unicode para o controle.
 ms.assetid: 250789b5-694b-4502-9cc0-3bc260ea06e7
 keywords:
-- Controles de MCM_SETUNICODEFORMAT de mensagens do Windows
+- controles de Windows de mensagem de MCM_SETUNICODEFORMAT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa922b0dde8702f447690f9626938364174cbff6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1d5671384a43b4308ae08317137c00e213a5a7dbb37c5f0310d2d32e4716f176
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435156"
 ---
 # <a name="mcm_setunicodeformat-message"></a>\_Mensagem MCM SETUNICODEFORMAT
 
@@ -53,13 +53,13 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

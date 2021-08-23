@@ -4,12 +4,12 @@ ms.assetid: 474e8bee-336d-491f-afa0-f0186a8d19c7
 title: Primitivos de Higher-Order (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67767dd955fa5c0c5c21315d7c1c510de422870c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f36ee67cfe4d4a802303091288f3906778e6cb3cdc1ad811602a80bc161d0a1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122117"
 ---
 # <a name="higher-order-primitives-direct3d-9"></a>Primitivos de Higher-Order (Direct3D 9)
 

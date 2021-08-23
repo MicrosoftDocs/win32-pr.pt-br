@@ -1,6 +1,6 @@
 ---
-title: Função D3DX11CreateAsyncMemoryLoader (D3DX11async. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações. Crie um carregador de memória assíncrona.
+title: Função D3DX11CreateAsyncMemoryLoader (D3DX11async.h)
+description: Observação A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações. Crie um carregador de memória assíncrona.
 ms.assetid: 0bf1e6a2-a968-4644-a7b4-e847ed4f7450
 keywords:
 - Função D3DX11CreateAsyncMemoryLoader Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d16c91b0537f79fb60a5b256789c13d664401ecc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6c65f1f094337aed5fee6b026896bba98c151576077c4d89ad750486e0fa48cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104989349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124871"
 ---
 # <a name="d3dx11createasyncmemoryloader-function"></a>Função D3DX11CreateAsyncMemoryLoader
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
+> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store. Consulte Observações.
 
  
 
@@ -48,7 +48,7 @@ HRESULT D3DX11CreateAsyncMemoryLoader(
 
 <dl> <dt>
 
-*pData* \[ no\]
+*pData* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](/windows/desktop/WinProg/windows-data-types)**
@@ -57,37 +57,37 @@ Ponteiro para os dados.
 
 </dd> <dt>
 
-*cbData* \[ no\]
+*cbData* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **tamanho \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
 Tamanho dos dados.
 
 </dd> <dt>
 
-*ppDataLoader* \[ fora\]
+*ppDataLoader* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11DataLoader**](id3dx11dataloader.md)\*\***
 
-O endereço de um ponteiro para o carregador de dados assíncronos (consulte a [**interface ID3DX11DataLoader**](id3dx11dataloader.md)).
+O endereço de um ponteiro para o carregador de dados assíncronos (consulte [**Interface ID3DX11DataLoader**](id3dx11dataloader.md)).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
-Não há nenhuma implementação do carregador assíncrono fora do D3DX 10 e D3DX 11.
+Não há nenhuma implementação do carregador assíncrono fora do D3DX 10 e do D3DX 11.
 
-Para aplicativos da Windows Store, os exemplos do DirectX (por exemplo, o [exemplo de tutorial do Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)) incluem o módulo **BasicLoader** que usa o modelo de programação assíncrona do Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
+Para aplicativos da Windows Store, os exemplos do DirectX (por exemplo, o exemplo de tutorial do [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluem o módulo **BasicLoader** que usa o modelo de programação assíncrona do Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
 
-Para aplicativos de área de trabalho Win32, você pode usar o [tempo de execução de simultaneidade](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) para implementar algo semelhante ao modelo de programação Windows Runtime assíncrona.
+Para aplicativos da área de trabalho Win32, você pode usar o [Runtime de Simultaneidade](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) para implementar algo semelhante ao modelo de programação assíncrona Windows Runtime.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Para aplicativos de área de trabalho Win32, você pode usar o [tempo de execuç
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX11async. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>    |
+| parâmetro<br/>  | <dl> <dt>D3DX11async.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>    |
 
 
 

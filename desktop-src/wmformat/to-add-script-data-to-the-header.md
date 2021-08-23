@@ -3,18 +3,18 @@ title: Para adicionar dados de script ao cabeçalho
 description: Para adicionar dados de script ao cabeçalho
 ms.assetid: 25f63d9e-c81a-4098-81d4-e848659a60e5
 keywords:
-- SDK do Windows Media Format, adicionando dados de script aos cabeçalhos
+- Windows SDK do formato de mídia, adicionando dados de script aos cabeçalhos
 - ASF (Advanced Systems Format), adicionando dados de script aos cabeçalhos
 - ASF (formato de sistemas avançados), adicionando dados de script aos cabeçalhos
 - scripts, adicionando dados aos cabeçalhos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8052d8a5ae04b0ea821d716bf1931352c591f892
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: b19a8ad34a69427dc26435a6a599b8d91db2ebe2b8be700483189b2e7ba22846
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "105786153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027314"
 ---
 # <a name="to-add-script-data-to-the-header"></a>Para adicionar dados de script ao cabeçalho
 
@@ -33,7 +33,7 @@ Quando um aplicativo lê o arquivo, ele precisa recuperar todos os comandos de s
 > [!Note]  
 > Ao usar o DRM para criptografar um arquivo, nenhum comando de script pode ter um horário de apresentação de 0.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -48,9 +48,9 @@ Quando um aplicativo lê o arquivo, ele precisa recuperar todos os comandos de s
 [**Usando comandos de script**](using-script-commands.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

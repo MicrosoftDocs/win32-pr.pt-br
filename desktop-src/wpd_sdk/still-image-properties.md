@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de imagem ainda.
+description: Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de imagem ainda.
 ms.assetid: 0b5a126c-5064-48e5-a635-00c3e9ab6a2c
 title: Propriedades da imagem ainda (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 3bc06428dc153dc8ff205e283b1000ef0a171b6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2076c03b479b5b720b1c09d5c443b1332f1ea00ecf74ea381efb224b56b72bec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105815585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083440"
 ---
 # <a name="still-image-properties"></a>Propriedades da imagem ainda
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de imagem ainda.
+Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de imagem ainda.
 
 
 
@@ -32,7 +32,7 @@ Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedade
 | <span id="wpd_still_image_burst_interval"></span><span id="WPD_STILL_IMAGE_BURST_INTERVAL"></span>**\_intervalo de \_ intermitência de imagem ainda \_ mais WPD \_**                       | **\_UI4 VT**    | Em uma captura de imagem de modo intermitente, o tempo de espera entre capturas de imagem, em milissegundos.                                                                                                                                                                                                                                       |
 | <span id="wpd_still_image_burst_number"></span><span id="WPD_STILL_IMAGE_BURST_NUMBER"></span>**\_número de \_ intermitência de imagem ainda \_ WPD \_**                             | **\_UI4 VT**    | Em uma captura de imagem de modo intermitente, o número de imagens a serem capturadas.                                                                                                                                                                                                                                                              |
 | **\_atraso de \_ captura de imagem \_ \_ do WPD ainda**                                                                                                                          | **\_UI4 VT**    | Especifica o atraso de tempo entre o comando para capturar uma imagem e a captura real, em milissegundos.                                                                                                                                                                                                                    |
-| **\_formato de \_ captura de imagem \_ \_ do WPD ainda**                                                                                                                         | **CLSID do VT \_**  | O formato a ser usado para capturar a imagem. Esse é um dos [valores de GUID de formato](object-format-guids.md) que é definido por dispositivos portáteis do Windows.                                                                                                                                                                        |
+| **\_formato de \_ captura de imagem \_ \_ do WPD ainda**                                                                                                                         | **CLSID do VT \_**  | O formato a ser usado para capturar a imagem. esse é um dos [valores de GUID de formato](object-format-guids.md) que é definido por Windows dispositivos portáteis.                                                                                                                                                                        |
 | <span id="wpd_still_image_capture_mode"></span><span id="WPD_STILL_IMAGE_CAPTURE_MODE"></span>**\_modo de \_ captura de imagem ainda \_ WPD \_**                             | **\_UI4 VT**    | Um enumerador de [**\_ \_ modos de captura WPD**](wpd-capture-modes.md) que especifica o modo de captura a ser usado para capturar uma imagem.                                                                                                                                                                                                    |
 | **\_resolução de \_ captura de imagem \_ \_ do WPD ainda**                                                                                                                     | **LPWStr do VT \_** | Uma cadeia de caracteres que especifica o tamanho da imagem a ser capturada. O tamanho da imagem é especificado em pixels, no formato "*largura* x *altura*". Por exemplo: "800x600".                                                                                                                                                                          |
 | **\_configuração de \_ \_ compactação de imagem \_ do WPD ainda**                                                                                                                    | **\_UI8 VT**    | Descreve as configurações de compactação de imagem que são usadas durante a captura de uma imagem. Isso é específico do dispositivo.                                                                                                                                                                                                                     |
@@ -54,8 +54,8 @@ Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedade
 | **a \_ \_ nitidez da imagem \_ do WPD ainda**                                                                                                                               | **\_UI4 VT**    | Um número que especifica a nitidez a ser usada ao capturar uma imagem, onde zero é o número menos nítido e maior indicam maior nitidez.                                                                                                                                                                        |
 | <span id="wpd_still_image_timelapse_interval"></span><span id="WPD_STILL_IMAGE_TIMELAPSE_INTERVAL"></span>**\_intervalo de \_ TIMELAPSE de imagens WPD ainda \_ \_**           | **\_UI4 VT**    | O tempo de atraso entre capturas de imagem em uma captura de imagem de lapso de tempo, em milissegundos.                                                                                                                                                                                                                                        |
 | <span id="wpd_still_image_timelapse_number"></span><span id="WPD_STILL_IMAGE_TIMELAPSE_NUMBER"></span>**\_TIMELAPSE WPD \_ ainda \_ \_ número de imagem**                 | **\_UI4 VT**    | O número de imagens a serem capturadas em uma captura de imagem de modo de lapso de tempo.                                                                                                                                                                                                                                                          |
-| **\_URL de \_ upload de imagem \_ \_ do WPD ainda**                                                                                                                             | **LPWStr do VT \_** | Especifica uma URL na qual o dispositivo deve enviar a imagem após sua captura.                                                                                                                                                                                                                                                 |
-| **\_proporção de \_ branco de imagem ainda \_ WPD \_**                                                                                                                          | **\_UI4 VT**    | Um valor enumerado [**\_ \_ \_ das configurações de balanço de branco WPD**](wpd-white-balance-settings.md) que especifica as configurações de balanço de branco a serem usadas durante a captura de uma imagem.                                                                                                                                                             |
+| **\_URL de \_ upload de imagem \_ \_ do WPD ainda**                                                                                                                             | **LPWStr do VT \_** | Especifica uma URL para a qual o dispositivo deve enviar a imagem depois de ser capturado.                                                                                                                                                                                                                                                 |
+| **BALANCEAR BRANCO DA IMAGEM DO WPD \_ STILL \_ \_ \_**                                                                                                                          | **VT \_ UI4**    | Um [**valor \_ enumerado WPD WHITE \_ BALANCE \_ SETTINGS**](wpd-white-balance-settings.md) que especifica as configurações de saldo em branco a usar ao capturar uma imagem.                                                                                                                                                             |
 
 
 
@@ -67,7 +67,7 @@ Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedade
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 4ca3e234bc6bbff8899b88c89169a59d9838350b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 158f1f65a55e1dd1c8a93c632f588d475d78e3add3412545e78c6cdadaee8840
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104461072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088398"
 ---
 # <a name="iwicbitmapdecoder_getdecoderinfo_proxy-function"></a>\_Função de \_ proxy IWICBitmapDecoder GetDecoderInfo
 
@@ -44,9 +44,9 @@ HRESULT IWICBitmapDecoder_GetDecoderInfo_Proxy(
 *Isso \_ PTR* \[\]
 </dt> <dd>
 
-Tipo: **[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) \** _
+Tipo: **[ **IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)\***
 
-Ponteiro para este objeto [_ *IWICBitmapDecoder* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
+Ponteiro para este objeto [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) .
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Um ponteiro que recebe um ponteiro para um [**IWICBitmapDecoderInfo**](/windows/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -73,8 +73,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

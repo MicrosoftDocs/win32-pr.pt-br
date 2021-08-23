@@ -4,26 +4,26 @@ ms.assetid: c7a23ace-4e9c-4de2-994e-2aa9c70a30b6
 title: Verificar se um certificado dá suporte a um método de assinatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27da9ae31c3cf0c4e453a5507d93d1505606e859
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 177859dd78d30ee9f9147cee7ca01311ed95c0733115cd939dde8aa6ec70f5b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119098708"
 ---
 # <a name="verify-that-a-certificate-supports-a-signature-method"></a>Verificar se um certificado dá suporte a um método de assinatura
 
 Este tópico descreve como verificar se um certificado dá suporte a um método de assinatura específico.
 
-O **CryptXmlEnumAlgorithmInfo** na API de criptografia da Microsoft enumera as propriedades de um certificado e é usado neste exemplo de código para enumerar os métodos de assinatura aos quais o certificado dá suporte. Para usar **CryptXmlEnumAlgorithmInfo** para enumerar os métodos de assinatura aos quais o certificado dá suporte, o chamador deve fornecer um método de retorno de chamada e uma estrutura de dados na chamada para **CryptXmlEnumAlgorithmInfo**, permitindo que ele passe dados para o método de retorno de chamada.
+O **CryptXmlEnumAlgorithmInfo** na API de Criptografia da Microsoft enumera as propriedades de um certificado e é usado neste exemplo de código para enumerar os métodos de assinatura compatíveis com o certificado. Para usar **CryptXmlEnumAlgorithmInfo** para enumerar os métodos de assinatura compatíveis com o certificado, o chamador deve fornecer um método de retorno de chamada e uma estrutura de dados na chamada para **CryptXmlEnumAlgorithmInfo,** permitindo que ele passe dados para o método de retorno de chamada.
 
 A estrutura de dados usada no próximo exemplo de código tem os seguintes campos:
 
 | Campo                               | Descrição                                                                                                                               |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **userSignatureAlgorithmToCheck**   | Um campo **LPWSTR** que aponta para a cadeia de caracteres que contém o URI do algoritmo de assinatura a ser verificado.                             |
-| **certificateAlgorithmInfo**        | Um ponteiro para uma estrutura de **\_ \_ informações de OID cript** que contém informações sobre um algoritmo de assinatura que é suportado pelo certificado. |
-| **userSignatureAlgorithmSupported** | Um valor **booliano** que indica se há suporte para o algoritmo de assinatura no certificado.                                       |
+| **userSignatureAlgorithmToCheck**   | Um **campo LPWSTR** que aponta para a cadeia de caracteres que contém o URI do algoritmo de assinatura a ser verificado.                             |
+| **certificateAlgorithmInfo**        | Um ponteiro para uma estrutura **CRYPT \_ OID \_ INFO** que contém informações sobre um algoritmo de assinatura com suporte pelo certificado. |
+| **userSignatureAlgorithmSupported** | Um **valor booliana** que indica se o algoritmo de assinatura é suportado pelo certificado.                                       |
 
 
 
@@ -41,9 +41,9 @@ struct SignatureMethodData
 
 
 
-O método de API de criptografia que verifica o certificado usa um método de retorno de chamada para retornar dados ao chamador. **CryptXmlEnumAlgorithmInfo** enumera os métodos de assinatura aos quais o certificado dá suporte e chama o método de retorno de chamada para cada método de assinatura até que o método de retorno de chamada retorne **false** ou até que todos os métodos de assinatura no certificado tenham sido enumerados.
+O método da API de Criptografia que verifica o certificado usa um método de retorno de chamada para retornar dados ao chamador. **CryptXmlEnumAlgorithmInfo** enumera os métodos de assinatura compatíveis com o certificado e chama o método de retorno de chamada para cada método de assinatura até que o método de retorno de chamada retorne **FALSE** ou até que todos os métodos de assinatura no certificado tenham sido enumerados.
 
-O método de retorno de chamada no próximo exemplo de código pesquisa um método de assinatura passado por **CryptXmlEnumAlgorithmInfo** que corresponde ao método de assinatura fornecido pelo método de chamada. Quando uma correspondência é encontrada, o método de retorno de chamada verifica se o método de assinatura também tem suporte no sistema. Se os métodos de assinatura corresponderem e tiverem suporte do sistema, o método de assinatura será marcado como com suporte do sistema e o método de retorno de chamada retornará **false**.
+O método de retorno de chamada no próximo exemplo de código pesquisa um método de assinatura passado por **CryptXmlEnumAlgorithmInfo** que corresponde ao método de assinatura fornecido pelo método de chamada. Quando uma corresponder é encontrada, o método de retorno de chamada verifica se o método de assinatura também é suportado pelo sistema. Se os métodos de assinatura corresponderem e o sistema tiver suporte, o método de assinatura será marcado como com suporte do sistema e o método de retorno de chamada **retornará FALSE.**
 
 
 ```C++
@@ -108,7 +108,7 @@ EnumSignatureMethodCallback (
 
 
 
-O exemplo de código a seguir encapsula a funcionalidade de validação em um único método. Esse método retorna um valor **booliano** que indica se o certificado oferece suporte ao método de assinatura e se o método de assinatura tem suporte no sistema.
+O exemplo de código a seguir envolve a funcionalidade de validação em um único método. Esse método retorna um **valor booliana** que indica se o certificado dá suporte ao método de assinatura e se o método de assinatura é compatível com o sistema.
 
 
 ```C++
@@ -184,7 +184,7 @@ SupportsSignatureAlgorithm (
 [**CryptFindOIDInfo**](/windows/desktop/api/wincrypt/nf-wincrypt-cryptfindoidinfo)
 </dt> <dt>
 
-[**\_informações de OID cript \_**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
+[**CRYPT \_ OID \_ INFO**](/windows/desktop/api/wincrypt/ns-wincrypt-crypt_oid_info)
 </dt> <dt>
 
 **CryptXmlEnumAlgorithmInfo**
@@ -199,7 +199,7 @@ SupportsSignatureAlgorithm (
 [Funções de criptografia](/windows/desktop/SecCrypto/cryptography-functions)
 </dt> <dt>
 
-[Erros de API de assinatura digital XPS](xps-digital-signatures-errors.md)
+[Erros da API de Assinatura Digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
 [Erros de documento XPS](xps-document-errors.md)

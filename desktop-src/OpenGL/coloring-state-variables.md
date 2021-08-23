@@ -1,9 +1,9 @@
 ---
-title: Variáveis de estado de coloração
-description: Variáveis de estado de coloração
+title: Variáveis de Estado de Coloração
+description: Variáveis de Estado de Coloração
 ms.assetid: 783a798a-f45c-4262-99b8-badd15f52cd5
 keywords:
-- Variáveis de estado de colorização OpenGL
+- Variáveis de estado de coloração OpenGL
 topic_type:
 - apiref
 api_name:
@@ -12,34 +12,34 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb41866aa194461fd4edf72fdba8f4dad5de8766
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 2fafcd3400df351ac9dd8f50a1b4c4fb31f5a1ef14924f55588d3b9b1866c65a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063286"
 ---
-# <a name="coloring-state-variables"></a>Variáveis de estado de coloração
+# <a name="coloring-state-variables"></a>Variáveis de Estado de Coloração
 
-<dl> <dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>\_cor da neblina do GL \_</dt> <dd> 
+<dl> <dt><span id="GL_FOG_COLOR"></span><span id="gl_fog_color"></span>COR \_ GL COLOR \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Cor da neblina                                                                      |
-| Grupo de atributos: | neblina                                                                            |
-| Valor inicial:   | 0, 0, 0, 0                                                                        |
+| Descrição:     | Cor da cor da coloração                                                                      |
+| Grupo de atributos: | Nevoeiro                                                                            |
+| Valor inicial:   | 0,0,0,0                                                                        |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>\_índice de neblina GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_INDEX"></span><span id="gl_fog_index"></span>GL \_ FOG \_ INDEX</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Índice de neblina                                                                      |
-| Grupo de atributos: | neblina                                                                            |
+| Descrição:     | Índice de 100%.                                                                      |
+| Grupo de atributos: | Nevoeiro                                                                            |
 | Valor inicial:   | 0                                                                              |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -47,12 +47,12 @@ ms.locfileid: "107909284"
 
  
 
-</dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>\_densidade de neblina GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_DENSITY"></span><span id="gl_fog_density"></span>DENSIDADE \_ GL BP \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Densidade de neblina exponencial                                                        |
-| Grupo de atributos: | neblina                                                                            |
+| Descrição:     | Densidade exponencial de mosca                                                        |
+| Grupo de atributos: | Nevoeiro                                                                            |
 | Valor inicial:   | 1.0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -60,25 +60,25 @@ ms.locfileid: "107909284"
 
  
 
-</dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>\_início da neblina do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_START"></span><span id="gl_fog_start"></span>GL \_ BP \_ START</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Início da neblina linear                                                               |
-| Grupo de atributos: | neblina                                                                            |
-| Valor inicial:   | 0.0                                                                            |
+| Descrição:     | Início linear do linear                                                               |
+| Grupo de atributos: | Nevoeiro                                                                            |
+| Valor inicial:   | 0,0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>\_fim da neblina do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_END"></span><span id="gl_fog_end"></span>GL \_ BP \_ END</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Fim da neblina linear                                                                 |
-| Grupo de atributos: | neblina                                                                            |
+| Descrição:     | Extremidade linear do linear                                                                 |
+| Grupo de atributos: | Nevoeiro                                                                            |
 | Valor inicial:   | 1.0                                                                            |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
@@ -86,39 +86,39 @@ ms.locfileid: "107909284"
 
  
 
-</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>\_modo de neblina GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG_MODE"></span><span id="gl_fog_mode"></span>MODO \_ GL MODE \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Modo de neblina                                                                         |
-| Grupo de atributos: | neblina                                                                              |
-| Valor inicial:   | GL \_ exp                                                                          |
+| Descrição:     | Modo de 10000                                                                         |
+| Grupo de atributos: | Nevoeiro                                                                              |
+| Valor inicial:   | GL \_ EXP                                                                          |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>neblina do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_FOG"></span><span id="gl_fog"></span>GL \_ BP</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|------------------------------------|
-| Descrição:     | True se a neblina estiver habilitada                |
-| Grupo de atributos: | neblina/habilitar                         |
-| Valor inicial:   | GL \_ falso                          |
+| Descrição:     | True se o recurso estiver habilitado                |
+| Grupo de atributos: | habilitação/habilitação                         |
+| Valor inicial:   | GL \_ FALSE                          |
 | Comando Get:     | [**glIsEnabled**](glisenabled.md) |
 
 
 
  
 
-</dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>\_modelo de sombreamento GL \_</dt> <dd> 
+</dd> <dt><span id="GL_SHADE_MODEL"></span><span id="gl_shade_model"></span>MODELO DE \_ SOMBRA \_ GL</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | configuração de **glShadeModel**                                                         |
+| Descrição:     | **Configuração glShadeModel**                                                         |
 | Grupo de atributos: | iluminação                                                                         |
-| Valor inicial:   | GL \_ uniforme                                                                       |
+| Valor inicial:   | GL \_ SMOOTH                                                                       |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 
 

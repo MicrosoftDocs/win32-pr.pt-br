@@ -4,12 +4,12 @@ description: O subsistema RPC dá suporte ao uso do MSMQ como um transporte em m
 ms.assetid: c3f96a91-b7bb-4c2a-8699-2100324af165
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a647fe4111e3ba4fc2ad0fe05fb7bcb48729a4c2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ab18f4476815929e8a7e6fb4e4a1eef0a4e4e34754ac134f023c8551899e0138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010674"
 ---
 # <a name="using-msmq-as-an-rpc-transport"></a>Usando o MSMQ como um transporte RPC
 
@@ -21,6 +21,6 @@ O modo assíncrono permite que os aplicativos cliente façam chamadas para o ser
 
 Implemente o MSMQ assíncrono como você faria com o MSMQ síncrono. Você deve usar pontos de extremidade bem conhecidos e definir o protocolo de transporte para ser [ncadg \_ MQ](/windows/desktop/Midl/ncadg-mq). No arquivo IDL, aplique o atributo [Message](/windows/desktop/Midl/message) às funções que usam o enfileiramento de mensagens assíncrona. Observe que as funções de mensagem podem ter \[ \] apenas parâmetros.
 
- 
+ 
 
- 
+ 

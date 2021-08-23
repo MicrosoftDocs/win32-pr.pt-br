@@ -1,7 +1,7 @@
 ---
-description: O método SetSignedLargeIntegerValue adiciona um novo valor LONGLONG (tipo VT \_ i8) ou substitui um existente.
+description: O método SetSignedLargeIntegerValue adiciona um novo valor LONGLONG (tipo VT I8) ou substitui \_ um existente.
 ms.assetid: 604b48ed-3e3f-4a06-91dd-7ece9f146824
-title: 'Método IPortableDeviceValues:: SetSignedLargeIntegerValue (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetSignedLargeIntegerValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f8c207a88e17c9a1ddf45d77e9da8b62a8396e23
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5ac0ec7e7dce817565ea8b260501879ca8423b090ff357b30f177ff828c8ff9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026764"
 ---
-# <a name="iportabledevicevaluessetsignedlargeintegervalue-method"></a>Método IPortableDeviceValues:: SetSignedLargeIntegerValue
+# <a name="iportabledevicevaluessetsignedlargeintegervalue-method"></a>Método IPortableDeviceValues::SetSignedLargeIntegerValue
 
-O método **SetSignedLargeIntegerValue** adiciona um novo valor **LONGLONG** (tipo VT \_ i8) ou substitui um existente.
+O **método SetSignedLargeIntegerValue** adiciona um novo valor **LONGLONG** (tipo VT I8) ou substitui \_ um existente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT SetSignedLargeIntegerValue(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-Um **REFPROPERTYKEY** que especifica o item a ser criado ou substituído.
+Uma **REFPROPERTYKEY** que especifica o item a ser criado ou substituido.
 
 </dd> <dt>
 
-*Valor* \[ do no\]
+*Valor* \[ Em\]
 </dt> <dd>
 
 Um **LONGLONG** que especifica o novo valor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -71,7 +71,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave* , ele substituirá o valor existente sem nenhum aviso.
+Se um valor existente tiver a mesma chave especificada pelo parâmetro *key,* ele substituirá o valor existente sem nenhum aviso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Se um valor existente tiver a mesma chave especificada pelo parâmetro de *chave
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetSignedLargeIntegerValue**](iportabledevicevalues-getsignedlargeintegervalue.md)

@@ -1,19 +1,19 @@
 ---
 title: Extrair o conteúdo do pacote de aplicativo (C++)
-description: Saiba como extrair arquivos do pacote do aplicativo para um aplicativo do Windows usando a API de empacotamento.
+description: saiba como extrair arquivos do pacote do aplicativo para um aplicativo Windows usando a API de empacotamento.
 ms.assetid: 72C368F9-2EBA-4930-81CF-9B85717CC0AA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8830ba7bc21553a9f8145bc97a6b98b3e32729af
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 4960a2b30ad7946f1f68e11df5170ae5246f3c36564a7e5e9bc27595be0b7903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104365826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049044"
 ---
 # <a name="extract-app-package-contents-c"></a>Extrair o conteúdo do pacote de aplicativo (C++)
 
-Saiba como extrair arquivos do pacote do aplicativo para um aplicativo do Windows usando a [API de empacotamento](interfaces.md).
+saiba como extrair arquivos do pacote do aplicativo para um aplicativo Windows usando a [API de empacotamento](interfaces.md).
 
 Você também pode usar a ferramenta de MakeAppx.exe para extrair arquivos de um pacote de aplicativo ou grupo. Consulte [extrair arquivos de um pacote ou grupo](/windows/msix/package/create-app-package-with-makeappx-tool#extract-files-from-a-package-or-bundle) para obter mais informações.
 
@@ -456,6 +456,6 @@ CoUninitialize();
 [**IAppxPackageReader**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagereader)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
 title: Função D3DX11GetImageInfoFromMemory (D3DX11tex. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Observação em vez de usar essa função, recomendamos que você use a biblioteca DirectXTex, GetMetadataFromXXXMemory (em que XXX é o WIC, DDS ou TGA; O WIC não oferece suporte a DDS e TGA; O D3DX 9 TGA com suporte como um formato de origem de arte comum para jogos). Obtenha informações sobre uma imagem já carregada na memória.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Observação em vez de usar essa função, recomendamos que você use a biblioteca DirectXTex, GetMetadataFromXXXMemory (em que XXX é o WIC, DDS ou TGA; O WIC não oferece suporte a DDS e TGA; O D3DX 9 TGA com suporte como um formato de origem de arte comum para jogos). Obtenha informações sobre uma imagem já carregada na memória.
 ms.assetid: b13192fa-4235-4c38-ba46-e14ffab2f653
 keywords:
 - Função D3DX11GetImageInfoFromMemory Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c5f1f04c9540614541b9f63b7833967d6ce959
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f64db94fd0827e1168c599c3a4b959da097faaf43231943d323a19917e18a8b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124701"
 ---
 # <a name="d3dx11getimageinfofrommemory-function"></a>Função D3DX11GetImageInfoFromMemory
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -100,7 +100,7 @@ Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

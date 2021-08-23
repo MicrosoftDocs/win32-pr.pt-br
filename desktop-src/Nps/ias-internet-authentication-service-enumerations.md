@@ -1,34 +1,34 @@
 ---
-title: Enumerações de extensões do NPS
-description: Use os seguintes tipos enumerados ao desenvolver DLLs de extensão do NPS.
+title: Enumerações de extensões NPS
+description: Use os seguintes tipos enumerados ao desenvolver DLLs de extensão NPS.
 ms.assetid: 6bf9c421-f0f6-4c75-bb4d-dbe91dcb8d01
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b727fee91a1ca3431fb6ced3c7640fb4ead12b40
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8aa794bea36a704de71cc65f81a9cec2186134f21d4b8b6cde2d9f92e8ffe844
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063546"
 ---
-# <a name="nps-extensions-enumerations"></a>Enumerações de extensões do NPS
+# <a name="nps-extensions-enumerations"></a>Enumerações de extensões NPS
 
 > [!Note]  
-> O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS.
+> O IAS (Serviço de Autenticação da Internet) foi renomeado como NPS (Servidor de Políticas de Rede) a partir do Windows Server 2008. O conteúdo deste tópico se aplica a IAS e NPS.
 
- 
+ 
 
-Use os seguintes tipos enumerados ao desenvolver DLLs de extensão do NPS.
+Use os seguintes tipos enumerados ao desenvolver DLLs de extensão NPS.
 
--   [**\_ação RADIUS**](/windows/desktop/api/authif/ne-authif-radius_action)
--   [**\_tipo de atributo RADIUS \_**](/windows/desktop/api/authif/ne-authif-radius_attribute_type)
--   [**\_provedor de autenticação RADIUS \_**](/windows/desktop/api/authif/ne-authif-radius_authentication_provider)
--   [**\_código RADIUS**](/windows/desktop/api/authif/ne-authif-radius_code)
--   [**\_tipo de dados RADIUS \_**](/windows/desktop/api/authif/ne-authif-radius_data_type)
--   [**\_ponto de extensão RADIUS \_**](/windows/desktop/api/authif/ne-authif-radius_extension_point)
--   [**\_código de motivo de rejeição RADIUS \_ \_**](/windows/desktop/api/authif/ne-authif-radius_reject_reason_code)
+-   [**AÇÃO \_ RADIUS**](/windows/desktop/api/authif/ne-authif-radius_action)
+-   [**TIPO \_ DE ATRIBUTO \_ RADIUS**](/windows/desktop/api/authif/ne-authif-radius_attribute_type)
+-   [**PROVEDOR DE \_ AUTENTICAÇÃO \_ RADIUS**](/windows/desktop/api/authif/ne-authif-radius_authentication_provider)
+-   [**CÓDIGO \_ RADIUS**](/windows/desktop/api/authif/ne-authif-radius_code)
+-   [**TIPO \_ DE DADOS \_ RADIUS**](/windows/desktop/api/authif/ne-authif-radius_data_type)
+-   [**PONTO DE \_ EXTENSÃO \_ RADIUS**](/windows/desktop/api/authif/ne-authif-radius_extension_point)
+-   [**CÓDIGO DE \_ \_ MOTIVO DE \_ REJEIÇÃO RADIUS**](/windows/desktop/api/authif/ne-authif-radius_reject_reason_code)
 
- 
+ 
 
- 
+ 

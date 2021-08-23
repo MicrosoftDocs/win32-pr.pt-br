@@ -4,8 +4,8 @@ description: Lista de chaves de criptografia de senha.
 ms.assetid: f214def2-5d16-4e04-b243-e5195dc7316f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Pek-List do atributo AD
-- Esquema de AD do atributo pekList
+- Pek-List atributo AD Schema
+- Esquema do AD do atributo pekList
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cc5b718740fe20eabdca5bfa26509db7a9ed1b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5ad0942ba883466458a392ba02fa9ee40a6387b4e58c7bdf70b32a88eb36de20
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119325406"
 ---
 # <a name="pek-list-attribute"></a>Pek-List atributo
 
@@ -30,13 +30,13 @@ Lista de chaves de criptografia de senha.
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Pek-List                                              |
-| LDAP-Display-Name | pekList                                               |
+| Ldap-Display-Name | pekList                                               |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.865                                |
-| System-ID-GUID    | 07383083-91df-11d1-aebc-0000f80367c1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 07383083-91df-11d1-aebc-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Lista de chaves de criptografia de senha.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000011                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000011                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -122,7 +122,7 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -143,7 +143,7 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -164,7 +164,7 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -185,7 +185,7 @@ Lista de chaves de criptografia de senha.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

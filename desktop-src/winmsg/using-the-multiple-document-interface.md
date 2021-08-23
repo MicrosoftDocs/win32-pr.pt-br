@@ -4,19 +4,19 @@ ms.assetid: 024744d3-362f-4162-8d0a-d4dac61de808
 title: Usando a interface de vários documentos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b5e24aed7abc3640b441345520203c8a02e025e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09453e6f4a9301c8cdfc9d675ae1efd7853594fc472a446a021e3bd3e075fc50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028324"
 ---
 # <a name="using-the-multiple-document-interface"></a>Usando a interface de vários documentos
 
 Esta seção explica como executar as seguintes tarefas:
 
 -   [Registrando classes de janela filho e de quadro](#registering-child-and-frame-window-classes)
--   [Criando janelas de quadro e filho](#creating-frame-and-child-windows)
+-   [Criando Windows de quadros e filhos](#creating-frame-and-child-windows)
 -   [Escrevendo o loop de mensagem principal](#writing-the-main-message-loop)
 -   [Escrevendo o procedimento da janela do quadro](#writing-the-frame-window-procedure)
 -   [Escrevendo o procedimento de janela filho](#writing-the-child-window-procedure)
@@ -75,7 +75,7 @@ BOOL WINAPI InitializeApplication()
 
 
 
-## <a name="creating-frame-and-child-windows"></a>Criando janelas de quadro e filho
+## <a name="creating-frame-and-child-windows"></a>Criando Windows de quadros e filhos
 
 Depois de registrar suas classes de janela, um aplicativo MDI pode criar suas janelas. Primeiro, ele cria sua janela de quadros usando a função [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) ou [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) . Depois de criar sua janela de quadros, o aplicativo cria a janela do cliente novamente usando **CreateWindow** ou **CreateWindowEx**. O aplicativo deve especificar MDICLIENT como o nome da classe da janela do cliente; **MdiClient** é uma classe de janela preregistrada definida pelo sistema. O parâmetro *lpvParam* de **CreateWindow** ou **CreateWindowEx** deve apontar para uma estrutura [**CLIENTCREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-clientcreatestruct) . Essa estrutura contém os membros descritos na tabela a seguir:
 
@@ -189,7 +189,7 @@ Assim como o procedimento de janela do quadro, um procedimento de janela filho M
 | [**movimentação do WM \_**](wm-move.md)                   | Recalcula as barras de rolagem do cliente MDI, se estiverem presentes.                                                                                                                                                                                                 |
 | [**WM \_ SETFOCUS**](../inputdev/wm-setfocus.md)      | Ativa a janela filho, se não for a janela filho MDI ativa.                                                                                                                                                                                     |
 | [**tamanho do WM \_**](wm-size.md)                   | Executa operações necessárias para alterar o tamanho de uma janela, especialmente para maximizar ou restaurar uma janela filho MDI. A falha ao passar essa mensagem para a função [**DefMDIChildProc**](/windows/win32/api/winuser/nf-winuser-defmdichildproca) produz resultados altamente indesejáveis. |
-| [**SYSCOMMAND do WM \_**](../menurc/wm-syscommand.md)    | Manipula comandos de menu Window (anteriormente conhecidos como System) **: SC \_ NEXTWINDOW**, **sc \_ PREVWINDOW**, **sc \_ mover**, **sc \_ size** e **sc \_ Maxim**.                                                                                                        |
+| [**SYSCOMMAND do WM \_**](../menurc/wm-syscommand.md)    | Lida com comandos de menu da janela (anteriormente conhecido como sistema) : **SC \_ NEXTWINDOW,** **SC \_ PREVWINDOW,** **SC \_ MOVE,** **SC \_ SIZE** e **SC \_ MAXIMIZE**.                                                                                                        |
 
 
 
@@ -197,15 +197,15 @@ Assim como o procedimento de janela do quadro, um procedimento de janela filho M
 
 ## <a name="creating-a-child-window"></a>Criando uma janela filho
 
-Para criar uma janela filho MDI, um aplicativo pode chamar a função [**CreateMDIWindow**](/windows/win32/api/winuser/nf-winuser-createmdiwindowa) ou enviar uma mensagem do [**WM \_ MDICREATE**](wm-mdicreate.md) para a janela do cliente MDI. (O aplicativo pode usar a função [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) com o estilo **WS \_ ex \_ MDICHILD** para criar janelas filho MDI.) Um aplicativo MDI de thread único pode usar qualquer um dos métodos para criar uma janela filho. Um thread em um aplicativo MDI multithread deve usar a função **CreateMDIWindow** ou **CreateWindowEx** para criar uma janela filho em um thread diferente.
+Para criar uma janela filho MDI, um aplicativo pode chamar a função [**CreateMDIWindow**](/windows/win32/api/winuser/nf-winuser-createmdiwindowa) ou enviar uma mensagem [**WM \_ MDICREATE**](wm-mdicreate.md) para a janela do cliente MDI. (O aplicativo pode usar a [**função CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) com o estilo **\_ \_ MDICHILD do WS EX** para criar janelas MDI filho.) Um aplicativo MDI de thread único pode usar qualquer método para criar uma janela filho. Um thread em um aplicativo MDI multithread deve usar a função **CreateMDIWindow** ou **CreateWindowEx** para criar uma janela filho em um thread diferente.
 
-O parâmetro *lParam* de uma mensagem do [**WM \_ MDICREATE**](wm-mdicreate.md) é um ponteiro distante para uma estrutura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) . A estrutura inclui quatro membros de dimensão: **x** e **y**, que indicam as posições horizontal e vertical da janela, e **CX** e **CY**, que indicam as extensões horizontais e verticais da janela. Qualquer um desses membros pode ser atribuído explicitamente pelo aplicativo, ou pode ser definido para USEDEFAULT de **peso \_ variável**; nesse caso, o sistema seleciona uma posição, tamanho ou ambos, de acordo com um algoritmo em cascata. Em qualquer caso, todos os quatro membros devem ser inicializados. Multipad usa **\_ USEDEFAULT de PV** para todas as dimensões.
+O *parâmetro lParam* de [**uma mensagem WM \_ MDICREATE**](wm-mdicreate.md) é um ponteiro distante para uma [**estrutura MDICREATESTRUCT.**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) A estrutura inclui quatro membros da dimensão: **x** e **y,** que indicam as posições horizontais e verticais da janela, e **cx** e **cy,** que indicam as extensão horizontal e vertical da janela. Qualquer um desses membros pode ser atribuído explicitamente pelo aplicativo ou pode ser definido como **CW \_ USEDEFAULT,** caso em que o sistema seleciona uma posição, tamanho ou ambos, de acordo com um algoritmo em cascata. Em qualquer caso, todos os quatro membros devem ser inicializados. Multipad usa **CW \_ USEDEFAULT para** todas as dimensões.
 
-O último membro da estrutura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) é o membro **Style** , que pode conter bits de estilo para a janela. Para criar uma janela filho MDI que pode ter qualquer combinação de estilos de janela, especifique o estilo de janela **MDIS \_ ALLCHILDSTYLES** . Quando esse estilo não é especificado, uma janela filho MDI tem os **estilos \_ WS minimize**, **WS \_ Maxim**, WS **\_ HSCROLL** e **WS \_ VSCROLL** como configurações padrão.
+O último membro da estrutura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) é o membro **de** estilo, que pode conter bits de estilo para a janela. Para criar uma janela filho MDI que pode ter qualquer combinação de estilos de janela, especifique o estilo de janela **MDIS \_ ALLCHILDSTYLES.** Quando esse estilo não é especificado, uma janela filho MDI tem os estilos **WS \_ MINIMIZE,** **WS \_ MAXIMIZE,** **\_ WS HSCROLL** e **\_ WS VSCROLL** como configurações padrão.
 
-O Multipad cria suas janelas filho MDI usando sua função AddFile definida localmente (localizada no arquivo de origem MPFILE. C). A função AddFile define o título da janela filho atribuindo o membro **szTitle** da estrutura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) da janela ao nome do arquivo que está sendo editado ou "sem título". O membro **szClass** é definido como o nome da classe de janela filho MDI registrada na função InitializeApplication do Multipad. O membro **hOwner** é definido como o identificador de instância do aplicativo.
+O Multipad cria suas janelas filho MDI usando sua função AddFile definida localmente (localizada no arquivo de origem MPFILE. C). A função AddFile define o título da janela filho atribuindo o membro **szTitle** da estrutura [**MDICREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) da janela ao nome do arquivo que está sendo editado ou a "Sem título". O **membro szClass** é definido como o nome da classe de janela filho MDI registrada na função InitializeApplication do Multipad. O **membro hOwner** é definido como o handle de instância do aplicativo.
 
-O exemplo a seguir mostra a função AddFile em Multipad.
+O exemplo a seguir mostra a função AddFile no Multipad.
 
 
 ```
@@ -272,7 +272,7 @@ TCHAR * pName;
 
 
 
-O ponteiro passado no parâmetro *lParam* da mensagem [**\_ MDICREATE do WM**](wm-mdicreate.md) é passado para a função [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) e aparece como o primeiro membro na estrutura [**CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) , passado na mensagem de [**\_ criação do WM**](wm-create.md) . No Multipad, a janela filho se inicializa durante o **WM \_ criar** processamento de mensagens Inicializando variáveis de documento em seus dados extras e criando a janela filho do controle de edição.
+O ponteiro passado no parâmetro *lParam* da mensagem [**WM \_ MDICREATE**](wm-mdicreate.md) é passado para a função [**CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) e aparece como o primeiro membro na estrutura [**CREATETRUCT,**](/windows/win32/api/winuser/ns-winuser-createstructa) passado na mensagem [**WM \_ CREATE.**](wm-create.md) No Multipad, a janela filho se inicializa durante o processamento de mensagens **WM \_ CREATE** inicializando variáveis de documento em seus dados extras e criando a janela filho do controle de edição.
 
  
 

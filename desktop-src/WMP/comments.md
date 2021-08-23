@@ -3,7 +3,7 @@ title: Comentários (msfeeds. h)
 description: Adicione comentários a metaarquivos seguindo a sintaxe linguagem XML (XML). Os comentários começam com \ 0034; --\ 0034; e terminar com \ 0034;--\ 0034;.
 ms.assetid: 3d8dbf13-bd48-4405-804f-57e0f5eff642
 keywords:
-- Comentários do Windows Media Player
+- Comentários Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 701f456cae9f1432ed42235a3a6e13af555b2b8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0fe5aaf9dde3d804bb91a1e2551636c86aa54ff2bec599bf06100ee2622b592a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135779"
 ---
 # <a name="comments-msfeedsh"></a>Comentários (msfeeds. h)
 
@@ -70,7 +70,7 @@ Os comentários podem aparecer em qualquer lugar, exceto no conteúdo do element
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c0a379ef13a4b6ff22de8028bf34c00572f7d6e7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1d3e62ec82746fc5c43cea5c421b7bc0d03656e0811615911fbedb693bd9b71e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217946"
 ---
 # <a name="reset-method-of-the-cim_logicaldevice-class-cimwin32-wmi-providers"></a>Método Reset da classe CIM_LogicalDevice (provedores WMI CIMWin32)
 
@@ -43,7 +43,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 

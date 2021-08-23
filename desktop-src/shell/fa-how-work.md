@@ -4,12 +4,12 @@ ms.assetid: A1C05857-26F8-4d4a-977B-4782E8AFA317
 title: Como funcionam as associações de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cf307e40bb6165da4a2547fb8dafc1791a11ee6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbd12386ec7e850d160a6377ddff9b807e6dccfe101ad45285bdc9d7f2661a0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032724"
 ---
 # <a name="how-file-associations-work"></a>Como funcionam as associações de arquivo
 
@@ -29,7 +29,7 @@ As associações de arquivo controlam a seguinte funcionalidade:
 
 -   Qual aplicativo é iniciado quando um usuário clica duas vezes em um arquivo.
 -   Qual ícone aparece para um arquivo por padrão.
--   Como o tipo de arquivo aparece quando exibido no Windows Explorer.
+-   como o tipo de arquivo aparece quando exibido no Windows Explorer.
 -   Quais comandos aparecem no menu de atalho de um arquivo.
 -   Outros recursos de interface do usuário, como dicas de ferramenta, informações de bloco e o painel detalhes.
 
@@ -37,7 +37,7 @@ Os desenvolvedores de aplicativos podem usar associações de arquivos para cont
 
 Os usuários podem controlar alguns aspectos das associações de arquivo para personalizar como o Shell trata um tipo de arquivo usando a interface do usuário **abrir com** ou editando o registro.
 
-Na janela do Windows Explorer mostrada na captura de tela abaixo, o Shell exibe ícones diferentes para cada arquivo, com base no ícone associado ao tipo de arquivo. Se o usuário clicar duas vezes na **imagem de bitmap de exemplo** de arquivo, o Shell iniciará o Paint e o usará para abrir o arquivo porque, nesse sistema, o Paint será associado a arquivos. bmp. As pessoas podem controlar essas ações usando associações de arquivos.
+na janela do Windows Explorer mostrada na captura de tela abaixo, o Shell exibe ícones diferentes para cada arquivo, com base no ícone associado ao tipo de arquivo. se o usuário clicar duas vezes na **imagem de Bitmap de exemplo** de arquivo, o Shell iniciará Paint e a usará para abrir o arquivo porque, nesse sistema, Paint será associado a arquivos .bmp. As pessoas podem controlar essas ações usando associações de arquivos.
 
 ![ilustração de como as associações de arquivo funcionam na prática](images/file-assoc/fileassoc-icons.png)
 
@@ -61,7 +61,7 @@ Os arquivos são expostos no Shell como itens de Shell. Para controlar as associ
 
 <dl> <dt>
 
-[registro de Aplicativo](app-registration.md)
+[Registro do aplicativo](app-registration.md)
 </dt> <dt>
 
 [Tipos de arquivo](fa-file-types.md)

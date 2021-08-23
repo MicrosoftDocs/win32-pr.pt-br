@@ -4,12 +4,12 @@ ms.assetid: d78a8c4d-377e-45eb-9cf6-2d61b34e82d6
 title: Atributo MF_MT_AUDIO_BITS_PER_SAMPLE (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 896e77c937269b63208cb4bff73482a8df8596aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b9697ff5ce97bc7dd9066b57f94e41ff02a599fcf14d1ea8f51c9dea69efc7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119104552"
 ---
 # <a name="mf_mt_audio_bits_per_sample-attribute"></a>\_Bits de áudio MF MT \_ \_ \_ por exemplo de \_ atributo
 
@@ -35,9 +35,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

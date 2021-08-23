@@ -1,9 +1,9 @@
 ---
-title: Elemento data (comhandletype)
+title: Elemento Data (comHandlerType)
 description: Especifica dados adicionais associados ao manipulador.
 ms.assetid: 352cb92b-54bb-4bb0-8a43-123c88c80962
 keywords:
-- Agendador de Tarefas de elemento de dados
+- Elemento data Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d009005dc2bb889c8bd9e34e84d853665310330a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 649cadf0fc10919902e65ce82df1b410708d74a9db8dd3638c6fb22753aa557a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334586"
 ---
-# <a name="data-comhandlertype-element"></a>Elemento data (comhandletype)
+# <a name="data-comhandlertype-element"></a>Elemento Data (comHandlerType)
 
 Especifica dados adicionais associados ao manipulador.
 
@@ -30,21 +30,21 @@ Especifica dados adicionais associados ao manipulador.
  />
 ```
 
-O elemento de **dados** é definido pelo tipo complexo [**comhandletype**](taskschedulerschema-comhandlertype-complextype.md) .
+O **elemento Data** é definido pelo tipo complexo [**comHandlerType.**](taskschedulerschema-comhandlertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
 
 
-| Elemento                                                                  | Derivado de                                                             | Descrição                                          |
+| Elemento                                                                  | Derivado de                                                             | Description                                          |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------|
-| [**Commanipulador**](taskschedulerschema-comhandler-actiongroup-element.md) | [**comhandletype**](taskschedulerschema-comhandlertype-complextype.md) | Especifica uma ação que dispara um manipulador.<br/> |
+| [**ComHandler**](taskschedulerschema-comhandler-actiongroup-element.md) | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md) | Especifica uma ação que dispara um manipulador.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos definem os dados do manipulador usando a propriedade [**Data**](/windows/desktop/api/taskschd/nf-taskschd-icomhandleraction-get_data) da interface [**IComHandlerAction**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction) .
+Os aplicativos definem os dados do manipulador [**usando a propriedade Data**](/windows/desktop/api/taskschd/nf-taskschd-icomhandleraction-get_data) da interface [**IComHandlerAction.**](/windows/desktop/api/taskschd/nn-taskschd-icomhandleraction)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ Os aplicativos definem os dados do manipulador usando a propriedade [**Data**](/
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -61,7 +61,7 @@ Os aplicativos definem os dados do manipulador usando a propriedade [**Data**](/
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

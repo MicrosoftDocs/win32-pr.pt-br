@@ -1,9 +1,9 @@
 ---
-title: Mensagem de IPM_SETADDRESS (commctrl. h)
+title: IPM_SETADDRESS mensagem (Commctrl.h)
 description: Define os valores de endereço para todos os quatro campos no controle de endereço IP.
 ms.assetid: 52e72437-3558-4789-844f-5ab5b0b7967c
 keywords:
-- Controles de IPM_SETADDRESS de mensagens do Windows
+- IPM_SETADDRESS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8e8e4fa69791f93094d24f990ad62207cad33dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54817d2206295432e9b477532268a000fc43047ae928ab02224d668912474519
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434486"
 ---
-# <a name="ipm_setaddress-message"></a>\_Mensagem de SETADDRESS IPM
+# <a name="ipm_setaddress-message"></a>Mensagem \_ SETADDRESS do IPM
 
 Define os valores de endereço para todos os quatro campos no controle de endereço IP.
 
@@ -35,17 +35,17 @@ Define os valores de endereço para todos os quatro campos no controle de endere
 *lParam* 
 </dt> <dd>
 
-Um valor **DWORD** que contém o novo endereço. O valor do campo 3 está contido em bits 0 a 7. O valor do campo 2 está contido em bits 8 a 15. O valor do campo 1 está contido nos bits 16 a 23. O valor do campo 0 está contido em bits 24 a 31. A macro [**MAKEIPADDRESS**](/windows/desktop/api/Commctrl/nf-commctrl-makeipaddress) também pode ser usada para criar as informações de endereço.
+Um **valor DWORD** que contém o novo endereço. O valor do campo 3 está contido nos bits 0 a 7. O valor do campo 2 está contido nos bits 8 a 15. O valor do campo 1 está contido nos bits 16 a 23. O valor do campo 0 está contido nos bits 24 a 31. A [**macro MAKEIPADDRESS**](/windows/desktop/api/Commctrl/nf-commctrl-makeipaddress) também pode ser usada para criar as informações de endereço.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem não gera uma notificação [**\_ FieldChanged IPN**](ipn-fieldchanged.md) .
+Essa mensagem não gera uma [**notificação \_ IPN FIELDCHANGED.**](ipn-fieldchanged.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Essa mensagem não gera uma notificação [**\_ FieldChanged IPN**](ipn-fieldcha
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

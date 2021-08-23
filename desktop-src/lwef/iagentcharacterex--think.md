@@ -4,16 +4,16 @@ description: IAgentCharacterEx think
 ms.assetid: 64bfa388-0db7-423c-a4af-64a9f7351e9a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bd1bedfc2665c80d522ccb38c7c3073580136db
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a513a070104605df0cf3e0e722852a2b68d5845f4bcdb1ef6073954b3f9a18c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105434"
 ---
 # <a name="iagentcharacterexthink"></a>IAgentCharacterEx:: think
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT Think(
@@ -51,13 +51,13 @@ A quebra automática de palavras do Microsoft Agent no balão de palavras quebra
 > [!Note]  
 > Defina a ID de idioma do caractere (usando [**IAgentCharacterEx:: Setlanguageid**](iagentcharacterex--setlanguageid.md) antes de usar o método [**IAgentCharacter:: Speak**](iagentcharacter--speak.md) para garantir a exibição de texto apropriada dentro do balão do Word.
 
- 
+ 
 
 ## <a name="see-also"></a>Consulte Também
 
 [**IAgentBalloon:: Gethabilited**](iagentballoon--getenabled.md), [**IAgentBalloonEx:: SetStyle**](iagentballoonex--setstyle.md), [**IAgentCharacter:: Speak**](iagentcharacter--speak.md)
 
 
- 
+ 
 
- 
+ 

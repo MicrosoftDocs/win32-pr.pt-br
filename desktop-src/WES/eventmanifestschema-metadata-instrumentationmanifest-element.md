@@ -1,9 +1,9 @@
 ---
-title: Elemento Metadata (instrumentationManifest)
+title: Elemento metadata (instrumentationManifest)
 description: Contém valores globais que você pode referenciar em outros manifestos.
 ms.assetid: 5bf3bb1e-47c9-4d6e-86e3-3316e21b76b3
 keywords:
-- EventLog de elemento de metadados
+- Elemento de metadados EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c14dc8772dee66fcce9ff07e9918c11b463aa414
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eaa22cc13c611b90ace42a2a71517fe0771d6e9ed03d6d964f11a4e4c93cda43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136319"
 ---
-# <a name="metadata-instrumentationmanifest-element"></a>Elemento Metadata (instrumentationManifest)
+# <a name="metadata-instrumentationmanifest-element"></a>Elemento metadata (instrumentationManifest)
 
-Contém valores globais que você pode referenciar em outros manifestos. Para obter um exemplo, consulte o arquivo Winmeta.xml incluído na \\ pasta include do SDK do Windows.
+Contém valores globais que você pode referenciar em outros manifestos. Para ver um exemplo, consulte o arquivo Winmeta.xml incluído na \\ pasta Incluir do SDK do Windows.
 
 ``` syntax
 <xs:element name="metadata"
@@ -30,11 +30,11 @@ Contém valores globais que você pode referenciar em outros manifestos. Para ob
  />
 ```
 
-O elemento de **metadados** é definido pelo elemento [**instrumentationManifest**](eventmanifestschema-instrumentationmanifest-element.md) .
+O **elemento de** metadados é definido pelo elemento [**instrumentationManifest.**](eventmanifestschema-instrumentationmanifest-element.md)
 
 ## <a name="remarks"></a>Comentários
 
-Embora você possa criar um manifesto que contenha uma seção de metadados, o serviço não o usará; os únicos metadados que o serviço reconhece são os metadados encontrados no arquivo de Winmeta.xml.
+Embora você possa criar um manifesto que contém uma seção de metadados, o serviço não o usará; os únicos metadados que o serviço reconhece são os metadados encontrados no arquivo Winmeta.xml dados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,8 +42,8 @@ Embora você possa criar um manifesto que contenha uma seção de metadados, o s
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

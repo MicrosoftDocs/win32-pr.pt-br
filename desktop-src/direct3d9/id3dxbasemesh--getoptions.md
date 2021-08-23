@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a751230b4ccfc537f651846ed455b62d7c7f8262
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8b8ed6281e1418246027a05f281ef5c01d8fbe757a8bd88d2bf6f44ca41ed1d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121758"
 ---
 # <a name="id3dxbasemeshgetoptions-method"></a>Método ID3DXBaseMesh:: getoptions
 
@@ -38,7 +38,7 @@ DWORD GetOptions();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 

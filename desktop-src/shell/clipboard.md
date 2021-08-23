@@ -4,12 +4,12 @@ ms.assetid: fb8ce5d3-3215-4e05-a916-4d4a803464d2
 title: Formatos de área de transferência do Shell
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 674ccc33db3a35a1a60abb549f5e1ab5b5c96760
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fccd73f5b364c247454d874f5b9bb7586e3187150ebce28620cc6dc01f8298d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119351386"
 ---
 # <a name="shell-clipboard-formats"></a>Formatos de área de transferência do Shell
 
@@ -78,7 +78,7 @@ c:\temp1.txt'\0'c:\temp2.txt'\0''\0'
 
 Se o objeto foi copiado para a área de transferência como parte de uma operação de arrastar e soltar, o membro **pt** da estrutura [**DropFiles**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropfiles) contém as coordenadas do ponto em que o objeto foi Descartado. Você pode usar [**DragQueryPoint**](/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint) para extrair as coordenadas do cursor.
 
-Se esse formato estiver presente em um objeto de dados, um loop de arrastar do OLE simulará [**WM_DROPFILES**](wm-dropfiles.md) funcionalidade com destinos de destino não OLE. Isso é importante se seu aplicativo for a origem de uma operação de arrastar e soltar em um sistema Windows 3,1.
+Se esse formato estiver presente em um objeto de dados, um loop de arrastar do OLE simulará [**WM_DROPFILES**](wm-dropfiles.md) funcionalidade com destinos de destino não OLE. isso é importante se seu aplicativo for a origem de uma operação de arrastar e soltar em um sistema Windows 3,1.
 
 ### <a name="cfstr_filecontents"></a>CFSTR_FILECONTENTS
 
@@ -94,31 +94,31 @@ O formato de CFSTR_FILEDESCRIPTOR é comumente usado para transferir dados como 
 
 ### <a name="cfstr_filename"></a>CFSTR_FILENAME
 
-Esse identificador de formato é usado para transferir um único arquivo. Os dados consistem em uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma única cadeia de caracteres terminada em **nulo** que contém o caminho de arquivo totalmente qualificado do arquivo. Esse formato foi substituído por [CF_HDROP](#cf_hdrop), mas tem suporte para compatibilidade com versões anteriores com aplicativos do Windows 3,1.
+Esse identificador de formato é usado para transferir um único arquivo. Os dados consistem em uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma única cadeia de caracteres terminada em **nulo** que contém o caminho de arquivo totalmente qualificado do arquivo. esse formato foi substituído por [CF_HDROP](#cf_hdrop), mas há suporte para compatibilidade com versões anteriores com aplicativos Windows 3,1.
 
 ### <a name="cfstr_filenamemap"></a>CFSTR_FILENAMEMAP
 
-Esse identificador de formato é usado quando um grupo de arquivos no formato [CF_HDROP](#cf_hdrop) está sendo renomeado e transferido. Os dados consistem em uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma matriz de caracteres dupla de terminação **nula**. Essa matriz contém um novo nome para cada arquivo, na mesma ordem em que os arquivos são listados no formato de CF_HDROP que o acompanha. O formato da matriz de caracteres é o mesmo usado pelo CF_HDROP para listar os arquivos transferidos.
+Esse identificador de formato é usado quando um grupo de arquivos no formato [CF_HDROP](#cf_hdrop) está sendo renomeado e transferido. Os dados consistem em uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para uma matriz **de** caracteres terminada em nulo duplo. Essa matriz contém um novo nome para cada arquivo, na mesma ordem em que os arquivos são listados no formato CF_HDROP acompanhamento. O formato da matriz de caracteres é o mesmo usado pelo CF_HDROP listar os arquivos transferidos.
 
 ### <a name="cfstr_mountedvolume"></a>CFSTR_MOUNTEDVOLUME
 
-Esse identificador de formato é usado para transferir um caminho em um volume montado. Ele é semelhante a [CF_HDROP](#cf_hdrop), mas contém apenas um único caminho e pode manipular as cadeias de caracteres de caminho mais longas que podem ser necessárias para representar um caminho quando o volume é montado em uma pasta. Os dados consistem em uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma única cadeia de caracteres terminada em **nulo** que contém o caminho de arquivo totalmente qualificado. A cadeia de caracteres de caminho deve terminar com um \\ caractere ' ', seguido pelo **nulo** de terminação.
+Esse identificador de formato é usado para transferir um caminho em um volume montado. Ele é semelhante ao [CF_HDROP](#cf_hdrop), mas contém apenas um único caminho e pode lidar com as cadeias de caracteres de caminho mais longas que podem ser necessárias para representar um caminho quando o volume é montado em uma pasta. Os dados consistem em uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para uma **única** cadeia de caracteres terminada em nulo que contém o caminho de arquivo totalmente qualificado. A cadeia de caracteres de caminho deve terminar com um \\ caractere ' ', seguido pelo null de **terminação.**
 
-Antes do Windows 2000, os volumes podiam ser montados somente em letras de unidade. Para sistemas Windows 2000 e posteriores com uma unidade formatada NTFS, você também pode montar volumes em pastas vazias. Esse recurso permite que um volume seja montado sem a necessidade de uma letra de unidade. O volume montado pode usar qualquer formato com suporte no momento, incluindo FAT, FAT32, NTFS e CDFS.
+Antes Windows 2000, os volumes podiam ser montados apenas em letras de unidade. Para Windows 2000 e sistemas posteriores com uma unidade formatada NTFS, você também pode montar volumes em pastas vazias. Esse recurso permite que um volume seja montado sem assumir uma letra da unidade. O volume montado pode usar qualquer formato com suporte no momento, incluindo FAT, FAT32, NTFS e CDFS.
 
-Você pode adicionar páginas a uma folha de propriedades de propriedades da unidade implementando um [manipulador de folha de propriedades](propsheet-handlers.md). Se o volume for montado em uma letra de unidade, o Shell passa as informações de caminho para o manipulador com o formato [CF_HDROP](#cf_hdrop) . Com o Windows 2000 e sistemas posteriores, o formato de CF_HDROP é usado quando um volume é montado em uma letra de unidade, assim como acontece com os sistemas anteriores. No entanto, se um volume for montado em uma pasta, o identificador de formato [CFSTR_MOUNTEDVOLUME](#cfstr_mountedvolume) será usado em vez de CF_HDROP.
+Você pode adicionar páginas a uma folha de propriedades Propriedades da Unidade implementando um manipulador [de folha de propriedades](propsheet-handlers.md). Se o volume for montado em uma letra da unidade, o Shell passará informações de caminho para o manipulador com o [formato CF_HDROP](#cf_hdrop) disco. Com Windows 2000 e sistemas posteriores, o formato CF_HDROP é usado quando um volume é montado em uma letra da unidade, assim como acontece com sistemas anteriores. No entanto, se um volume for montado em uma pasta, o [identificador CFSTR_MOUNTEDVOLUME](#cfstr_mountedvolume) formato será usado em vez de CF_HDROP.
 
-Se apenas letras de unidade forem usadas para montar volumes, somente [CF_HDROP](#cf_hdrop) serão usadas, e os manipuladores de folha de propriedades existentes funcionarão como faziam com os sistemas anteriores. No entanto, se você quiser que seu manipulador exiba uma página para volumes que são montados em pastas, bem como letras de unidade, o manipulador deve ser capaz de entender os formatos CSFTR_MOUNTEDVOLUME e CF_HDROP.
+Se apenas letras de unidade serão [](#cf_hdrop) usadas para montar volumes, somente CF_HDROP serão usados e manipuladores de folha de propriedades existentes funcionarão como fizeram com sistemas anteriores. No entanto, se você quiser que o manipulador exibir uma página para volumes montados em pastas, bem como letras de unidade, o manipulador deverá ser capaz de entender os formatos CSFTR_MOUNTEDVOLUME e CF_HDROP unidade.
 
 ### <a name="cfstr_shellidlist"></a>CFSTR_SHELLIDLIST
 
-Esse identificador de formato é usado ao transferir os locais de um ou mais objetos de namespace existentes. Ele é usado quase da mesma forma que [CF_HDROP](#cf_hdrop), mas contém PIDLs em vez de caminhos do sistema de arquivos. O uso de PIDLs permite que o formato de CFSTR_SHELLIDLIST manipule objetos virtuais, bem como objetos do sistema de arquivos. Os dados são uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma estrutura [**cida**](/windows/win32/api/shlobj_core/ns-shlobj_core-cida) .
+Esse identificador de formato é usado ao transferir os locais de um ou mais objetos de namespace existentes. Ele é usado da mesma maneira que CF_HDROP [,](#cf_hdrop)mas contém PIDLs em vez de caminhos do sistema de arquivos. O uso de PIDLs permite que o CFSTR_SHELLIDLIST para manipular objetos virtuais, bem como objetos do sistema de arquivos. Os dados são uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para uma [**estrutura CIDA.**](/windows/win32/api/shlobj_core/ns-shlobj_core-cida)
 
-O membro **aoffset** da estrutura [**cida**](/windows/win32/api/shlobj_core/ns-shlobj_core-cida) é uma matriz que contém deslocamentos para o início da estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) para cada PIDL que está sendo transferido. Para extrair um PIDL específico, primeiro determine seu índice. Em seguida, adicione o valor **aoffset** que corresponde a esse índice ao endereço da estrutura **cida** .
+O **membro aoffset** da estrutura [**CIDA**](/windows/win32/api/shlobj_core/ns-shlobj_core-cida) é uma matriz que contém deslocamentos para o início da estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) para cada PIDL que está sendo transferido. Para extrair um PIDL específico, primeiro determine seu índice. Em seguida, adicione **o valor aoffset** que corresponde a esse índice ao endereço da estrutura **CIDA.**
 
-O primeiro elemento de **aoffset** contém um deslocamento para o PIDL totalmente qualificado de uma pasta pai. Se esse PIDL estiver vazio, a pasta pai será a área de trabalho. Cada um dos elementos restantes da matriz contém um deslocamento para um dos PIDLs a ser transferido. Todos esses PIDLs são relativos ao PIDL da pasta pai.
+O primeiro elemento de **aoffset** contém um deslocamento para o PIDL totalmente qualificado de uma pasta pai. Se esse PIDL estiver vazio, a pasta pai será a área de trabalho. Cada um dos elementos restantes da matriz contém um deslocamento para uma das PIDLs a serem transferidas. Todas essas PIDLs são relativas ao PIDL da pasta pai.
 
-As duas macros a seguir podem ser usadas para recuperar PIDLs de uma estrutura [**cida**](/windows/win32/api/shlobj_core/ns-shlobj_core-cida) . A primeira pega um ponteiro para a estrutura e recupera o PIDL da pasta pai. O segundo usa um ponteiro para a estrutura e recupera um dos outros PIDLs, identificados por seu índice de base zero.
+As duas macros a seguir podem ser usadas para recuperar PIDLs de uma [**estrutura CIDA.**](/windows/win32/api/shlobj_core/ns-shlobj_core-cida) O primeiro leva um ponteiro para a estrutura e recupera o PIDL da pasta pai. O segundo leva um ponteiro para a estrutura e recupera uma das outras PIDLs, identificadas por seu índice baseado em zero.
 
 
 ```C++
@@ -128,15 +128,15 @@ As duas macros a seguir podem ser usadas para recuperar PIDLs de uma estrutura [
 ```
 
 > [!Note]  
-> O valor retornado por essas macros é um ponteiro para a estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) do PIDL. Como essas estruturas variam em comprimento, você deve determinar o fim da estrutura percorrendo cada uma das estruturas [**SHITEMID**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) da estrutura de **ITEMIDLIST** até alcançar o **nulo** de dois bytes que marca o final.
+> O valor retornado por essas macros é um ponteiro para a estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) do PIDL. Como essas estruturas variam de tamanho, você deve determinar o final da estrutura, passando por cada uma das estruturas [**DEMID**](/windows/desktop/api/Shtypes/ns-shtypes-shitemid) DA estrutura **ITEMIDLIST** até alcançar o **NULL** de dois byte que marca o fim.
 
 ### <a name="cfstr_shellidlistoffset"></a>CFSTR_SHELLIDLISTOFFSET
 
-Esse identificador de formato é usado com formatos como [CF_HDROP](#cf_hdrop), [CFSTR_SHELLIDLIST](#cfstr_shellidlist)e [CFSTR_FILECONTENTS](#cfstr_filecontents) para especificar a posição de um grupo de objetos após uma transferência. Os dados consistem em uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma matriz de estruturas de [**ponto**](/previous-versions//dd162805(v=vs.85)) . A primeira estrutura especifica as coordenadas da tela, em pixels, do canto superior esquerdo do retângulo que se aproxima do grupo. O restante das estruturas especifica os locais dos objetos individuais relativos à posição do grupo. Eles devem estar na mesma ordem usada para listar os objetos no formato associado.
+Esse identificador de formato é usado com formatos como [CF_HDROP](#cf_hdrop), [CFSTR_SHELLIDLIST](#cfstr_shellidlist)e [CFSTR_FILECONTENTS](#cfstr_filecontents) para especificar a posição de um grupo de objetos após uma transferência. Os dados consistem em uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para uma matriz de [**estruturas POINT.**](/previous-versions//dd162805(v=vs.85)) A primeira estrutura especifica as coordenadas de tela, em pixels, do canto superior esquerdo do retângulo que inclui o grupo. O restante das estruturas especifica os locais dos objetos individuais em relação à posição do grupo. Eles devem estar na mesma ordem usada para listar os objetos no formato associado.
 
-## <a name="formats-for-transferring-virtual-objects"></a>Formatos para transferência de objetos virtuais
+## <a name="formats-for-transferring-virtual-objects"></a>Formatos para transferir objetos virtuais
 
-O formato de CFSTR_SHELLIDLIST pode ser usado para transferir o sistema de arquivos e objetos virtuais. No entanto, há também vários formatos especializados para transferir tipos específicos de objetos virtuais.
+O CFSTR_SHELLIDLIST pode ser usado para transferir objetos virtuais e do sistema de arquivos. No entanto, também há vários formatos especializados para transferir tipos específicos de objetos virtuais.
 
 -   [CFSTR_NETRESOURCES](#cfstr_netresources)
 -   [CFSTR_PRINTERGROUP](#cfstr_printergroup)
@@ -145,26 +145,26 @@ O formato de CFSTR_SHELLIDLIST pode ser usado para transferir o sistema de arqui
 
 ### <a name="cfstr_netresources"></a>CFSTR_NETRESOURCES
 
-Esse identificador de formato é usado ao transferir recursos de rede, como um domínio ou servidor. Os dados são uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma estrutura [**NRESARRAY**](/windows/desktop/api/shlobj_core/ns-shlobj_core-nresarray) . O membro **NR** dessa estrutura indica uma estrutura de [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) cujo membro **lpRemoteName** contém uma cadeia de caracteres terminada em **nulo** que identifica o recurso de rede. O destino de soltura pode usar os dados com qualquer uma das funções de API do [WNet (rede do Windows)](../wnet/windows-networking-wnet-.md) , como [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona), para executar operações de rede no objeto.
+Esse identificador de formato é usado ao transferir recursos de rede, como um domínio ou servidor. Os dados são uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para uma [**estrutura NRESARRAY.**](/windows/desktop/api/shlobj_core/ns-shlobj_core-nresarray) O **membro nr** dessa estrutura indica uma estrutura [**NETRESOURCE**](/windows/win32/api/rrascfg/nn-rrascfg-ieapproviderconfig) cujo membro **lpRemoteName** contém uma cadeia de caracteres terminada em nulo que identifica o recurso de rede. O destino de soltar pode usar os dados com qualquer uma das funções de API de rede Windows [(WNet),](../wnet/windows-networking-wnet-.md) como [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona), para executar operações de rede no objeto .
 
 ### <a name="cfstr_printergroup"></a>CFSTR_PRINTERGROUP
 
-Esse identificador de formato é usado ao transferir os nomes amigáveis de impressoras. Os dados são uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para uma cadeia de caracteres no mesmo formato usado com [CF_HDROP](#cf_hdrop). No entanto, o membro **pFiles** da estrutura [**DropFiles**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropfiles) contém um ou mais nomes amigáveis de impressoras em vez de caminhos de arquivo.
+Esse identificador de formato é usado ao transferir os nomes amigáveis de impressoras. Os dados são uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para uma cadeia de caracteres no mesmo formato que a usada com [CF_HDROP](#cf_hdrop). No entanto, **o membro pFiles** da estrutura [**DROPFILES**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropfiles) contém um ou mais nomes amigáveis de impressoras em vez de caminhos de arquivo.
 
 ### <a name="cfstr_ineturl"></a>CFSTR_INETURL
 
-Este identificador de formato substitui [CFSTR_SHELLURL (preterido)](#cfstr_shellurl-deprecated). Se você quiser que seu aplicativo manipule URLs da área de transferência, use CFSTR_INETURL em vez de CFSTR_SHELLURL (preterido). Esse formato fornece a melhor representação da área de transferência de uma única URL. Se o UNICODE não estiver definido, o aplicativo recuperará a versão CF_TEXT/CFSTR_SHELLURL da URL. Se o UNICODE estiver definido, o aplicativo recuperará a versão CF_UNICODE da URL.
+Esse identificador de formato [substitui CFSTR_SHELLURL (preterido).](#cfstr_shellurl-deprecated) Se você quiser que seu aplicativo manipule URLs da área de transferência, use CFSTR_INETURL em vez de CFSTR_SHELLURL (preterido). Esse formato fornece a melhor representação da área de transferência de uma única URL. Se UNICODE não estiver definido, o aplicativo recuperará a CF_TEXT/CFSTR_SHELLURL da URL. Se UNICODE for definido, o aplicativo recuperará a CF_UNICODE da URL.
 
 ### <a name="cfstr_shellurl-deprecated"></a>CFSTR_SHELLURL (preterido)
 
 > [!Note]  
-> Este identificador de formato foi preterido; em vez disso, use CFSTR_INETURL.
+> Esse identificador de formato foi preterido; use CFSTR_INETURL em vez disso.
 
  
 
-## <a name="formats-for-communication-between-source-and-target"></a>Formatos de comunicação entre a origem e o destino
+## <a name="formats-for-communication-between-source-and-target"></a>Formatos para comunicação entre a origem e o destino
 
-Esses identificadores de formato permitem a comunicação entre a origem e o destino. Os formatos acompanham os dados e proporcionam aos aplicativos um grau maior de controle sobre as operações de arrastar-copiar-colar ou do tipo Drag-e-drop que envolvem objetos shell.
+Esses identificadores de formato permitem a comunicação entre a origem e o destino. Os formatos acompanham os dados e dão aos aplicativos um maior grau de controle sobre operações move-copy-paste ou do tipo "arrastar e soltar" que envolvem objetos shell.
 
 -   [CFSTR_INDRAGLOOP](#cfstr_indragloop)
 -   [CFSTR_LOGICALPERFORMEDDROPEFFECT](#cfstr_logicalperformeddropeffect)
@@ -177,15 +177,15 @@ Esses identificadores de formato permitem a comunicação entre a origem e o des
 
 ### <a name="cfstr_indragloop"></a>CFSTR_INDRAGLOOP
 
-Esse identificador de formato é usado por um objeto de dados para indicar se ele está em um loop de arrastar e soltar. Os dados são uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para um valor **DWORD** . Se o valor **DWORD** for diferente de zero, o objeto de dados estará dentro de um loop de arrastar e soltar. Se o valor for definido como zero, o objeto de dados não estará dentro de um loop de arrastar e soltar.
+Esse identificador de formato é usado por um objeto de dados para indicar se ele está em um loop do tipo "arrastar e soltar". Os dados são uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para um **valor DWORD.** Se o **valor DWORD** for não zero, o objeto de dados está dentro de um loop do tipo "arrastar e soltar". Se o valor for definido como zero, o objeto de dados não está dentro de um loop do tipo "arrastar e soltar".
 
-Alguns destinos de soltura podem chamar [**IDataObject:: GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) e tentar extrair dados enquanto o objeto ainda está dentro do loop do tipo "arrastar e soltar". A renderização total do objeto para cada ocorrência desse tipo pode fazer com que o cursor de arrastar seja interrompido. Se o objeto de dados der suporte a [CFSTR_INDRAGLOOP](#cfstr_indragloop), o destino poderá usar esse formato para verificar o status do loop do tipo "arrastar e soltar" e evitar a renderização intensiva da memória do objeto até que ele seja realmente removido. Os formatos que têm uso intensivo de memória para renderização ainda devem ser incluídos no enumerador [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) e em chamadas para [**IDataObject:: QueryGetData**](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata). Se o objeto de dados não definir CFSTR_INDRAGLOOP, ele deverá agir como se o valor fosse definido como zero.
+Alguns destinos de soltar podem chamar [**IDataObject::GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) e tentar extrair dados enquanto o objeto ainda está dentro do loop do tipo "arrastar e soltar". Renderizar totalmente o objeto para cada ocorrência desse tipo pode causar a parada do cursor de arrastar. Se o objeto de dados for compatível com [CFSTR_INDRAGLOOP](#cfstr_indragloop), o destino poderá usar esse formato para verificar o status do loop do tipo "arrastar e soltar" e evitar a renderização com uso intensivo de memória do objeto até que ele seja realmente descartado. Os formatos que têm uso intensivo de memória para renderização ainda devem ser incluídos no enumerador [**FORMATETC**](/windows/win32/api/objidl/ns-objidl-formatetc) e em chamadas para [**IDataObject::QueryGetData.**](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) Se o objeto de dados não definir CFSTR_INDRAGLOOP, ele deverá agir como se o valor estivesse definido como zero.
 
 ### <a name="cfstr_logicalperformeddropeffect"></a>CFSTR_LOGICALPERFORMEDDROPEFFECT
 
-[Versão 5,0.](versions.md) Esse identificador de formato permite que uma fonte de soltar chame o método [**IDataObject:: GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) do objeto de dados para determinar o resultado de uma transferência de dados do Shell. Os dados são uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para um DWORD que contém um valor [**DROPEFFECT**](../com/dropeffect-constants.md) .
+[Versão 5.0.](versions.md) Esse identificador de formato permite que uma fonte de soltar chame o método [**IDataObject::GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) do objeto de dados para determinar o resultado de uma transferência de dados do Shell. Os dados são uma [**estrutura STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **hGlobal** da estrutura aponta para um DWORD que contém [**um valor DROPEFFECT.**](../com/dropeffect-constants.md)
 
-O identificador de formato de [CFSTR_PERFORMEDDROPEFFECT](#cfstr_performeddropeffect) foi projetado para permitir que o destino indique ao objeto de dados qual operação foi realmente realizada. No entanto, o Shell usa [movimentações otimizadas](datascenarios.md) para objetos do sistema de arquivos sempre que possível. Nesse caso, o Shell normalmente define o valor de CFSTR_PERFORMEDDROPEFFECT como DROPEFFECT_NONE, para indicar ao objeto de dados que os dados originais foram excluídos. Portanto, a origem não pode usar o valor CFSTR_PERFORMEDDROPEFFECT para determinar qual operação foi realizada. Embora a maioria das fontes não precise dessas informações, há algumas exceções. Por exemplo, embora as movimentações otimizadas eliminem a necessidade de uma origem excluir qualquer dado, a origem ainda pode precisar atualizar um banco de dados relacionado para indicar que os arquivos foram movidos ou copiados.
+O [CFSTR_PERFORMEDDROPEFFECT](#cfstr_performeddropeffect) identificador de formato foi destinado a permitir que o destino indique ao objeto de dados qual operação realmente ocorreu. No entanto, o Shell usa [movimentações otimizadas para](datascenarios.md) objetos do sistema de arquivos sempre que possível. Nesse caso, o Shell normalmente define o valor CFSTR_PERFORMEDDROPEFFECT como DROPEFFECT_NONE, para indicar ao objeto de dados que os dados originais foram excluídos. Portanto, a origem não pode usar o valor CFSTR_PERFORMEDDROPEFFECT para determinar qual operação ocorreu. Embora a maioria das fontes não precise dessas informações, há algumas exceções. Por exemplo, embora as movimentações otimizadas eliminem a necessidade de uma origem excluir qualquer dado, a origem ainda pode precisar atualizar um banco de dados relacionado para indicar que os arquivos foram movidos ou copiados.
 
 Se uma fonte precisar saber qual operação ocorreu, ela poderá chamar o método [**IDataObject:: GetData**](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) do objeto de dados e solicitar o formato CFSTR_LOGICALPERFORMEDDROPEFFECT. Esse formato essencialmente reflete o que acontece no ponto de vista do usuário depois que a operação é concluída. Se um novo arquivo for criado e o arquivo original for excluído, o usuário verá uma operação de movimentação e o valor de dados do formato será definido como DROPEFFECT_MOVE. Se o arquivo original ainda estiver lá, o usuário verá uma operação de cópia e o valor de dados do formato será definido como DROPEFFECT_COPY. Se um link tiver sido criado, o valor de dados do formato será DROPEFFECT_LINK.
 
@@ -217,7 +217,7 @@ Esse formato é usado principalmente para permitir que os objetos sejam excluíd
 
 ### <a name="cfstr_untrusteddragdrop"></a>CFSTR_UNTRUSTEDDRAGDROP
 
-Esse identificador de formato é usado pelo Windows Internet Explorer e pelo shell do Windows para fornecer um mecanismo pelo qual bloquear ou solicitar operações de arrastar e soltar originadas do Internet Explorer em conjunto com o sinalizador de [**URLACTION_SHELL_ENHANCED_DRAGDROP_SECURITY**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537178(v=vs.85)) .
+esse identificador de formato é usado pelo Windows Internet Explorer e pelo Windows Shell para fornecer um mecanismo pelo qual bloquear ou solicitar operações de arrastar e soltar originadas do Internet Explorer em conjunto com o sinalizador de [**URLACTION_SHELL_ENHANCED_DRAGDROP_SECURITY**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537178(v=vs.85)) .
 
 **CFSTR_UNTRUSTEDDRAGDROP** é adicionado pela origem de uma operação de arrastar e soltar para especificar que o objeto de dados pode conter dados não confiáveis. Os dados são representados por uma estrutura [**STGMEDIUM**](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) que contém um objeto de memória global. O membro **HGLOBAL** da estrutura aponta para um **DWORD** definido como um sinalizador de [**ação de URL**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537178(v=vs.85)) apropriado para fazer com que uma política Verifique o método [**IInternetSecurityManager::P rocessurlaction**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537136(v=vs.85)) , usando o sinalizador [**PUAF_ENFORCERESTRICTED**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537171(v=vs.85)) .
 
@@ -225,7 +225,7 @@ Esse identificador de formato é usado pelo Windows Internet Explorer e pelo she
 
 Esse formato é usado em uma operação de arrastar e soltar para identificar a imagem de arrastar de um objeto (janela) para que suas informações visuais possam ser atualizadas dinamicamente. Quando um objeto é arrastado sobre um destino de soltar, um aplicativo atualiza sua estrutura [**DROPDESCRIPTION**](/windows/desktop/api/shlobj_core/ns-shlobj_core-dropdescription) em resposta ao método [**IDropTarget::D ragover**](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover) ou [**IDropSource:: GiveFeedback**](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback) . O **DROPDESCRIPTION** é atualizado com um novo valor [**DROPIMAGETYPE**](/windows/desktop/api/shlobj_core/ne-shlobj_core-dropimagetype) que indica a decoração a ser aplicada ao Visual da janela de arrastar; por exemplo, uma indicação de que o arquivo está sendo copiado em vez de movido ou que o objeto não pode ser Descartado para esse local. No entanto, até que o objeto receba uma mensagem de [**DDWM_UPDATEWINDOW**](ddwm-updatewindow.md) , os visuais não serão atualizados. Esse formato fornece o **HWND** da janela de arrastar destinatário para o remetente da mensagem de **DDWM_UPDATEWINDOW** .
 
-Os dados da área de transferência são do tipo [**TYMED_HGLOBAL**](/windows/win32/api/objidl/ne-objidl-tymed). É uma representação **DWORD** de um **HWND**. Os dados podem ser passados para a função **ULongToHandle** , definida em Basetsd. h, para fornecer um **HWND** de 64 bits para uso em janelas de 64 bits.
+Os dados da área de transferência são do tipo [**TYMED_HGLOBAL**](/windows/win32/api/objidl/ne-objidl-tymed). É uma representação **DWORD** de um **HWND**. Os dados podem ser passados para a função **ULongToHandle** , definida em Basetsd. h, para fornecer um **HWND** de 64 bits para uso em Windows de 64 bits.
 
 Esse formato não requer a inclusão de shlobj. h.
 

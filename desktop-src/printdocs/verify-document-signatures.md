@@ -1,30 +1,30 @@
 ---
 description: Este tópico descreve como verificar as assinaturas em um documento XPS e como verificar os certificados relacionados a essas assinaturas.
 ms.assetid: fd12abaf-dc0f-4db1-837d-c116627bcc7e
-title: Verificar assinaturas e certificados de documentos
+title: Verificar assinaturas e certificados de documento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47dfee91437f7cc36e754e8c1f97fa89cd2387af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: adfc3dbb6eefedcc3bc14d79340893b60dc32dc7cd9b50b653913c1261d8eac6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033834"
 ---
-# <a name="verify-document-signatures-and-certificates"></a>Verificar assinaturas e certificados de documentos
+# <a name="verify-document-signatures-and-certificates"></a>Verificar assinaturas e certificados de documento
 
 Este tópico descreve como verificar as assinaturas em um documento XPS e como verificar os certificados relacionados a essas assinaturas.
 
-Antes de usar os exemplos de código a seguir em seu programa, leia o aviso de isenção de responsabilidade em [tarefas comuns de programação de assinatura digital](basic-digital-signature-programming-tasks.md).
+Antes de usar os exemplos de código a seguir em seu programa, leia o aviso de isenção de responsabilidade em Tarefas comuns de [programação de assinatura digital.](basic-digital-signature-programming-tasks.md)
 
 O exemplo de código a seguir verifica as assinaturas digitais encontradas em um documento XPS.
 
 Para verificar as assinaturas em um documento XPS, execute as seguintes etapas:
 
-1.  Carregue o documento em um Gerenciador de assinatura, conforme descrito em [inicializar o Gerenciador de assinatura](initialize-the-signature-manager.md).
-2.  Obtenha a coleção de assinaturas do Gerenciador de assinatura digital.
-3.  Obtenha o número de assinaturas na coleção.
-4.  Para cada assinatura na coleção, chame o método [**Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) conforme mostrado no exemplo de código a seguir.
+1.  Carregue o documento em um gerenciador de assinaturas, conforme descrito [em Inicializar o Gerenciador de Assinaturas](initialize-the-signature-manager.md).
+2.  Obter a coleção de assinaturas do gerenciador de assinatura digital.
+3.  Obter o número de assinaturas na coleção.
+4.  Para cada assinatura na coleção, chame o [**método Verify,**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) conforme mostrado no exemplo de código a seguir.
 
 
 ```C++
@@ -95,12 +95,12 @@ VerifyAllDigitalSignaturesAndAuthenticateCertificates(
 
 
 
-Para verificar uma assinatura digital, primeiro verifique a assinatura criada pelo certificado de autenticação e, em seguida, valide o certificado de autenticação. O método de validação usado no exemplo de código a seguir armazena em cache os certificados em um repositório de certificados temporário, que as funções da API de criptografia usam quando são chamadas posteriormente neste exemplo.
+Para verificar uma assinatura digital, primeiro verifique a assinatura criada pelo certificado de assinatura e valide o certificado de assinatura. O método de validação usado no exemplo de código a seguir armazena em cache os certificados em um armazenamento de certificados temporário, que as funções da API de Criptografia usam quando são chamadas posteriormente neste exemplo.
 
-Para criar um repositório de certificados temporário, execute as seguintes etapas:
+Para criar um armazenamento de certificados temporário, execute as seguintes etapas:
 
-1.  Crie um repositório de certificados temporário para manter os certificados usados pela assinatura.
-2.  Itere pelo conjunto de certificados da assinatura e carregue cada certificado no repositório de certificados temporário.
+1.  Crie um armazenamento de certificados temporário para manter os certificados usados pela assinatura.
+2.  Iterar pelo conjunto de certificados da assinatura e carregar cada certificado no armazenamento de certificados temporário.
 
 
 ```C++
@@ -180,8 +180,8 @@ HRESULT VerifySignatureAndCertificates (
 
 Para verificar a assinatura digital e o certificado usado para assinar o documento, execute as seguintes etapas:
 
-1.  Localize o certificado de autenticação Iterando pelos certificados que são usados pela assinatura.
-2.  Teste o certificado verificando a assinatura em relação ao certificado. O certificado de autenticação é encontrado quando o método [**Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) retorna [**um \_ \_ status de assinatura XPS**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_signature_status) de **status de \_ assinatura XPS \_ \_ válido** ou **status de \_ assinatura XPS \_ \_ questionável** e não retorna um erro de **\_ segurança de recurso** .
+1.  Encontre o certificado de assinatura iterando pelos certificados usados pela assinatura.
+2.  Teste o certificado verificando a assinatura em relação ao certificado. O certificado de assinatura [](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) é encontrado quando o método Verify retorna um [**\_ \_ STATUS**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_signature_status) DE ASSINATURA XPS DE **\_ \_ STATUS \_** DE ASSINATURA XPS VÁLIDO ou STATUS DE ASSINATURA **XPS \_ \_ \_ QUESTIONÁVEL** e não retorna um erro **DE SEGURANÇA DE \_** INSTALAÇÃO.
 
 
 ```C++
@@ -260,15 +260,15 @@ Para verificar a assinatura digital e o certificado usado para assinar o documen
 
 
 
-Quando o certificado de autenticação for encontrado, execute as seguintes etapas:
+Quando o certificado de assinatura for encontrado, execute as seguintes etapas:
 
 1.  Salve o status de assinatura retornado.
-2.  Atualize o status local, se necessário, para executar os testes de certificado subsequentes:
-    1.  Se o status da assinatura for bem-sucedido, defina o status local para questionável a fim de testar os certificados.
-    2.  Se o status da assinatura for incompatível, deixe o status local como incompatível.
-    3.  Se o status da assinatura for rompido ou incompleto, defina o status local como rompido.
+2.  Atualize o status local, se necessário, para executar testes de certificado subsequentes:
+    1.  Se o status da assinatura for bem-sucedido, de definir o status local como questionável para testar os certificados.
+    2.  Se o status da assinatura estiver em conformidade, deixe o status local como em conformidade.
+    3.  Se o status da assinatura estiver desfeito ou incompleto, de definir o status local como desfeito.
 
-Um status de assinatura **de \_ \_ \_ incompatibilidade de status de assinatura XPS** significa que partes do documento XPS que não deveriam ter sido assinadas foram assinadas ou partes do documento XPS que deveriam ter sido assinadas não foram. Se [**Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) retornar esse status de assinatura, a verificação adicional da assinatura será desnecessária.
+Um status de assinatura **DE STATUS DE ASSINATURA XPS \_ \_ \_ INCOMPLIANT** significa que partes do documento XPS que não deveriam ter sido assinadas foram assinadas ou partes do documento XPS que deveriam ter sido assinadas não foram assinadas. Se [**Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify) retornar esse status de assinatura, a verificação posterior da assinatura será desnecessária.
 
 
 ```C++
@@ -308,13 +308,13 @@ Um status de assinatura **de \_ \_ \_ incompatibilidade de status de assinatura 
 
 
 
-Para verificar a confiança do certificado se o status da assinatura for válido ou questionável, execute as seguintes etapas:
+Para verificar a confiança do certificado se o status da assinatura era válido ou questionável, execute as seguintes etapas:
 
-1.  Obtenha o status de confiança do certificado.
+1.  Obter o status de confiança do certificado.
 2.  Avalie o status de confiança do certificado retornado.
 3.  Retornar o status resultante.
 
-O exemplo de código a seguir não testa todos os status de confiança de certificado possíveis. Para obter detalhes adicionais sobre os valores de status que podem ser retornados, consulte [**\_ \_ status de confiança do certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_trust_status).
+O próximo exemplo de código não testa todos os possíveis status de confiança de certificado. Para obter detalhes adicionais sobre os valores de status que podem ser retornados, consulte [**STATUS DE CONFIANÇA DO \_ \_ CERTIFICADO.**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_trust_status)
 
 
 ```C++
@@ -473,7 +473,7 @@ HRESULT GetCertificateTrustStatus(
 
 
 
-A cadeia de certificados usada no exemplo de código anterior é criada chamando-se o método mostrado no exemplo de código a seguir.
+A cadeia de certificados usada no exemplo de código anterior é criada chamando o método mostrado no exemplo de código a seguir.
 
 
 ```C++
@@ -524,31 +524,31 @@ CreateCertificateChain (
 **Usado nesta seção**
 </dt> <dt>
 
-[**\_contexto da cadeia de certificados \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context)
+[**CONTEXTO DA \_ CADEIA DE \_ CERTIFICADOS**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context)
 </dt> <dt>
 
-[**contexto do certificado \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO DO \_ CERTIFICADO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
-[**\_status de confiança do certificado \_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_trust_status)
+[**STATUS \_ DE CONFIANÇA DO \_ CERTIFICADO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_trust_status)
 </dt> <dt>
 
 [**CertAddCertificateContextToStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certaddcertificatecontexttostore)
 </dt> <dt>
 
-[**CertOpenStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certopenstore)
+[**Certopenstore**](/windows/desktop/api/wincrypt/nf-wincrypt-certopenstore)
 </dt> <dt>
 
-[**CertGetCertificateChain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain)
+[**Certgetcertificatechain**](/windows/desktop/api/wincrypt/nf-wincrypt-certgetcertificatechain)
 </dt> <dt>
 
 [**IOpcCertificateEnumerator**](/previous-versions/windows/desktop/api/msopc/nn-msopc-iopccertificateenumerator)
 </dt> <dt>
 
-[**IOpcCertificateEnumerator:: GetCurrent**](/previous-versions/windows/desktop/api/msopc/nf-msopc-iopccertificateenumerator-getcurrent)
+[**IOpcCertificateEnumerator::GetCurrent**](/previous-versions/windows/desktop/api/msopc/nf-msopc-iopccertificateenumerator-getcurrent)
 </dt> <dt>
 
-[**IOpcCertificateEnumerator:: MoveNext**](/previous-versions/windows/desktop/api/msopc/nf-msopc-iopccertificateenumerator-movenext)
+[**IOpcCertificateEnumerator::MoveNext**](/previous-versions/windows/desktop/api/msopc/nf-msopc-iopccertificateenumerator-movenext)
 </dt> <dt>
 
 [**IXpsSignature**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssignature)
@@ -557,7 +557,7 @@ CreateCertificateChain (
 [**IXpsSignature::GetCertificateEnumerator**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-getcertificateenumerator)
 </dt> <dt>
 
-[**IXpsSignature:: verificar**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify)
+[**IXpsSignature::Verify**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignature-verify)
 </dt> <dt>
 
 [**IXpsSignatureCollection**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssignaturecollection)
@@ -566,16 +566,16 @@ CreateCertificateChain (
 [**IXpsSignatureCollection::GetAt**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturecollection-getat)
 </dt> <dt>
 
-[**IXpsSignatureCollection:: GetCount**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturecollection-getcount)
+[**IXpsSignatureCollection::GetCount**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturecollection-getcount)
 </dt> <dt>
 
 [**IXpsSignatureManager**](/windows/desktop/api/xpsdigitalsignature/nn-xpsdigitalsignature-ixpssignaturemanager)
 </dt> <dt>
 
-[**IXpsSignatureManager:: getsignatures**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-getsignatures)
+[**IXpsSignatureManager::GetSignatures**](/windows/desktop/api/xpsdigitalsignature/nf-xpsdigitalsignature-ixpssignaturemanager-getsignatures)
 </dt> <dt>
 
-[**\_status da assinatura XPS \_**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_signature_status)
+[**STATUS DA \_ ASSINATURA XPS \_**](/windows/win32/api/xpsdigitalsignature/ne-xpsdigitalsignature-xps_signature_status)
 </dt> <dt>
 
 **Para obter mais informações**
@@ -584,7 +584,7 @@ CreateCertificateChain (
 [Inserir cadeias de certificados em um documento](embedding-certificate-trust-chains-in-a-document.md)
 </dt> <dt>
 
-[Erros de API de assinatura digital XPS](xps-digital-signatures-errors.md)
+[Erros da API de Assinatura Digital XPS](xps-digital-signatures-errors.md)
 </dt> <dt>
 
 [Erros de documento XPS](xps-document-errors.md)

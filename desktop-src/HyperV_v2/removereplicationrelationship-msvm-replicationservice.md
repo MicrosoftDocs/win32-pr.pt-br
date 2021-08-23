@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: bb897ff72cd927390362f076114fc8757baa6c5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9266433abd100e20673d74decf33644654c6d22899becf46dd0b39b1a5a80a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014354"
 ---
 # <a name="removereplicationrelationship-method-of-the-msvm_replicationservice-class"></a>Método RemoveReplicationRelationship da \_ classe ReplicationService Msvm
 
 Remove uma relação de replicação de máquina virtual e age na relação de replicação primária da máquina virtual.
 
 > [!Note]  
-> A partir do Windows 8.1, recomendamos não usar **RemoveReplicationRelationship** para remover um relacionamento de replicação de máquina virtual. Em vez disso, use [**RemoveReplicationRelationshipEx**](removereplicationrelationshipex-msvm-replicationservice.md).
+> a partir do Windows 8.1, recomendamos não usar **RemoveReplicationRelationship** para remover um relacionamento de replicação de máquina virtual. Em vez disso, use [**RemoveReplicationRelationshipEx**](removereplicationrelationshipex-msvm-replicationservice.md).
 
  
 
@@ -59,7 +59,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -113,8 +113,8 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

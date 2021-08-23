@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d85566083dc9ead93a1a9e73fb06051b62178114
-ms.sourcegitcommit: 004d7881dc9ff92ea394cd2331774e13b1e7f13c
+ms.openlocfilehash: 49b10f6383344821c7659ac40b367a77e0421d33be68a374c59920a62d37697c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "103640366"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120080"
 ---
 # <a name="packing-rules-for-constant-variables"></a>Regras de empacotamento para variáveis constantes
 
 As regras de empacotamento determinam como os dados rígidos podem ser organizados quando são armazenados. O HLSL implementa regras de empacotamento para dados de saída do VS, dados de entrada e saída GS e dados de entrada e saída do PS. (Os dados não são empacotados para entradas do VS porque o estágio IA não pode desempacotar dados.)
 
-As regras de empacotamento HLSL são semelhantes à execução de um **\# pragma Pack 4** com o Visual Studio, que empacota dados em limites de 4 bytes. Além disso, HLSL pacotes de dados para que ele não cruze um limite de 16 bytes. As variáveis são empacotadas em um determinado vetor de quatro componentes até que a variável se aprofunde em um limite de 4 vetores; as variáveis seguintes serão resaltadas para o próximo vetor de quatro componentes.
+as regras de empacotamento HLSL são semelhantes à execução de um **\# pragma pack 4** com Visual Studio, que empacota os dados em limites de 4 bytes. Além disso, HLSL pacotes de dados para que ele não cruze um limite de 16 bytes. As variáveis são empacotadas em um determinado vetor de quatro componentes até que a variável se aprofunde em um limite de 4 vetores; as variáveis seguintes serão resaltadas para o próximo vetor de quatro componentes.
 
 Cada estrutura força a próxima variável a iniciar no próximo vetor de quatro componentes. Às vezes, isso gera preenchimento para matrizes de estruturas. O tamanho resultante de qualquer estrutura será sempre divisível por **sizeof**(*vetor de quatro componentes*).
 
@@ -159,9 +159,9 @@ A embalagem mais rígida é uma compensação em comparação com a necessidade 
 [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

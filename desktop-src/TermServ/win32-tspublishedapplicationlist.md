@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSPublishedApplicationList
-description: Representa a lista de programas que estão na lista de programas do RemoteApp em um servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+title: Win32_TSPublishedApplicationList classe
+description: Representa a lista de programas que estão na lista Programas RemoteApp em um Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) .
 ms.assetid: 3dbefe54-8c31-439f-a87a-5148214a07d5
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSPublishedApplicationList Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSPublishedApplicationList classe, descrita
+- Win32_TSPublishedApplicationList classe Serviços de Área de Trabalho Remota
+- Win32_TSPublishedApplicationList classe Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1f87a87dc6f95bcdb33c7dbd1364ad6b3114ddf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28b67899b91aa121f1e5c404b710d47d083c79cca721f003e40b41b3ac4193f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137629"
 ---
-# <a name="win32_tspublishedapplicationlist-class"></a>\_Classe Win32 TSPublishedApplicationList
+# <a name="win32_tspublishedapplicationlist-class"></a>Classe Win32 \_ TSPublishedApplicationList
 
-Representa a lista de programas que estão na lista de programas do RemoteApp em um servidor Host da Sessão da Área de Trabalho Remota (Host da Sessão RD).
+Representa a lista de programas que estão na lista Programas RemoteApp em um Host da Sessão da Área de Trabalho Remota (Host da Sessão RD) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,13 +51,13 @@ class Win32_TSPublishedApplicationList : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSPublishedApplicationList** tem estes tipos de membros:
+A **classe Win32 \_ TSPublishedApplicationList** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSPublishedApplicationList** tem essas propriedades.
+A **classe Win32 \_ TSPublishedApplicationList** tem essas propriedades.
 
 <dl> <dt>
 
@@ -70,12 +70,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição (cadeia de caracteres de uma linha) do objeto.
+Descrição curta (cadeia de caracteres de uma linha) do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -90,38 +90,38 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Desabilitado**
+**Desabilitada**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o servidor de Host da Sessão RD restringe os programas que um usuário pode iniciar na conexão inicial com os programas que estão na lista de programas do RemoteApp.
+Indica se o servidor Host da Sessão RD restrinja os programas que um usuário pode iniciar na conexão inicial com os programas que estão na lista Programas remoteApp.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 ")
+Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 A data em que o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -136,41 +136,41 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PolicySourceDisabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica onde a propriedade **desabilitada** está configurada. Os valores possíveis incluem:
+Indica onde a **propriedade Disabled** está configurada. Os valores possíveis incluem:
 
 <dt>
 
 0
 </dt> <dd>
 
-A configuração é configurada no servidor por meio de Gerenciador RemoteApp ou do provedor WMI do RemoteApp.
+A configuração é configurada no servidor por meio Gerenciador RemoteApp ou o provedor WMI do RemoteApp.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-A configuração é definida por meio da diretiva de grupo.
+A configuração é configurada por meio da política de grupo.
 
 </dd> <dt>
 
 2
 </dt> <dd>
 
-A configuração não está configurada. O valor padrão **false** é usado para a propriedade **Disabled** .
+A configuração não está configurada. O valor padrão **false** é usado para a propriedade **Disabled.**
 
 </dd> </dl>
 
@@ -185,12 +185,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -256,13 +256,13 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 
 Você deve ser um membro do grupo Administradores para definir propriedades usando essa classe.
 
-A propriedade **Disabled** não impede que os usuários iniciem programas não listados remotamente depois de se conectarem ao servidor de host da Sessão RD usando um programa RemoteApp.
+A **propriedade Disabled** não impede que os usuários iniciam programas não na lista remotamente depois que se conectam ao servidor Host da Sessão RD usando um programa RemoteApp.
 
-A propriedade **Disabled** será definida como um valor de 2 somente se a seguinte entrada do registro estiver ausente:
+A **propriedade Disabled** será definida como um valor de 2 somente se a seguinte entrada do Registro estiver ausente:
 
-**HKEY \_ SOFTWARE de \_ máquina local** \\  \\ **Microsoft** \\  \\  \\ **TerminalServer** CurrentVersion \\ **TSAppAllowList** \\ **fDisabledAllowList**
+**HKEY \_ SOFTWARE \_ DO COMPUTADOR LOCAL** \\  \\ **Microsoft** \\ **WindowsNT** \\ **CurrentVersion** \\ **TerminalServer** \\ **TSAppAllowList** \\ **fDisabledAllowList**
 
-Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **de \_ \_ privacidade do \_ PCT no \_ nível \_** de autenticado RPC C, que pode ser definido usando a função com [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) . Para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de 6. O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao \\ \\ namespace raiz CIMV2 \\ TerminalServices, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**, que pode ser definido usando a função [**COM CoSetProxyBlanket.**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) Para Visual Basic e script de chamadas, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -273,7 +273,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -283,8 +283,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>Tsallow. mof</dt> </dl>  |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
 | DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

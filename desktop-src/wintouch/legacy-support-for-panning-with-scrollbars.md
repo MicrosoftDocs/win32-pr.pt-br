@@ -1,38 +1,38 @@
 ---
 title: Suporte herdado para movimento panorâmico com barras de rolagem
-description: Esta seção descreve o suporte para movimento panorâmico usando barras de rolagem em aplicativos baseados no Windows.
+description: esta seção descreve o suporte para movimento panorâmico usando barras de rolagem em aplicativos baseados em Windows.
 ms.assetid: a8906b48-b804-4f3a-bb9b-dc94b632e2f7
 keywords:
-- Windows Touch, suporte herdado
+- Windows Toque, suporte herdado
 - movimento panorâmico com barras de rolagem
-- Windows Touch, panorâmica com barras de rolagem
-- Windows Touch, barras de rolagem
+- Windows Toque, movimento panorâmico com barras de rolagem
+- Windows Toque, barras de rolagem
 - barras de rolagem, panorâmica
 - barras de rolagem, suporte herdado
-- Toque do Windows, gestos
+- Windows Toque, gestos
 - gestos, movimento panorâmico com barras de rolagem
-- Windows Touch, movimentos
+- Windows Toque, movimentos
 - movimentos, panorâmicas com barras de rolagem
 - movimentos, desabilitando
-- Windows Touch, mensagens de roda do mouse
+- Windows Toque, mensagens de roda do mouse
 - mensagens de roda do mouse
-- Windows Touch, personalizando o movimento panorâmico
+- Windows Toque, personalizando a panorâmica
 - panorâmica, barras de rolagem
 - visão panorâmica, suporte herdado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57f6b9dd47821205a6aa5b6f07e5053e31597358
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 97190d637cae5cc6936ecd78dca31e1e6c0f9ef1037b292b6080f973fc4e8701
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104564720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086293"
 ---
 # <a name="legacy-support-for-panning-with-scroll-bars"></a>Suporte herdado para movimento panorâmico com barras de rolagem
 
-Esta seção descreve o suporte para movimento panorâmico usando barras de rolagem em aplicativos baseados no Windows.
+esta seção descreve o suporte para movimento panorâmico usando barras de rolagem em aplicativos baseados em Windows.
 
-No Windows 7, gestos de panorâmica geram \_ \* mensagens de rolagem do WM para habilitar o suporte herdado para movimento panorâmico. Como seus aplicativos podem não dar suporte a todas as \_ \* mensagens de rolagem do WM, o movimento panorâmico pode não funcionar corretamente. Este tópico descreve as etapas que você deve seguir para garantir que a experiência de panorâmica herdada em aplicativos funcione conforme os usuários esperam.
+no Windows 7, gestos de panorâmica geram \_ \* mensagens de rolagem do WM para habilitar o suporte herdado para movimento panorâmico. Como seus aplicativos podem não dar suporte a todas as \_ \* mensagens de rolagem do WM, o movimento panorâmico pode não funcionar corretamente. Este tópico descreve as etapas que você deve seguir para garantir que a experiência de panorâmica herdada em aplicativos funcione conforme os usuários esperam.
 
 ## <a name="overview"></a>Visão geral
 
@@ -44,7 +44,7 @@ As seções a seguir explicam como habilitar a experiência de panorâmica herda
 
 ## <a name="create-an-application-with-scroll-bars"></a>Criar um aplicativo com barras de rolagem
 
-Inicie um novo projeto Win32 usando o assistente de Microsoft Visual Studio. Verifique se o tipo de aplicativo está definido para o aplicativo do Windows. Você não precisa habilitar o suporte para o Active Template Library (ATL). A imagem a seguir mostra qual será a aparência do seu projeto depois de você iniciá-lo.
+inicie um novo projeto Win32 usando o assistente de Microsoft Visual Studio. verifique se o tipo de aplicativo está definido como o Windows aplicativo. Você não precisa habilitar o suporte para o Active Template Library (ATL). A imagem a seguir mostra qual será a aparência do seu projeto depois de você iniciá-lo.
 
 ![captura de tela mostrando uma janela sem barras de rolagem](images/gpd-1.png)
 
@@ -308,7 +308,7 @@ Para melhorar a experiência de panorâmica em seu aplicativo, você deve deslig
 > [!Note]  
 > Isso é útil para aplicativos que exigem comentários imediatos sobre um evento de toque ou caneta, em vez de testar por um limite de tempo ou de distância.
 
- 
+ 
 
 
 ```C++
@@ -342,15 +342,15 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow){
 
 ## <a name="customize-the-panning-experience"></a>Personalizar a experiência de panorâmica
 
-Você pode querer uma experiência de panorâmica diferente do que o Windows 7 oferece por padrão. Para melhorar a experiência de panorâmica, você deve adicionar o manipulador para a mensagem de [**\_ gesto do WM**](wm-gesture.md) . Para obter mais informações, consulte [aprimorando a experiência de panorâmica Single-Finger](improving-the-single-finger-panning-experience.md).
+você pode querer uma experiência de panorâmica diferente da oferecida pelo Windows 7 por padrão. Para melhorar a experiência de panorâmica, você deve adicionar o manipulador para a mensagem de [**\_ gesto do WM**](wm-gesture.md) . Para obter mais informações, consulte [aprimorando a experiência de panorâmica Single-Finger](improving-the-single-finger-panning-experience.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gestos de toque do Windows](guide-multi-touch-gestures.md)
+[Windows Gestos de toque](guide-multi-touch-gestures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

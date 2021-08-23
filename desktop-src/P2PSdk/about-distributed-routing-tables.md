@@ -4,12 +4,12 @@ ms.assetid: 257ad7ea-636b-45f2-b514-4a213939d107
 title: Sobre tabelas de roteamento distribuído
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dfca9f81cc609d97584ef5a11f999722c696858
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc8e82b25fee0bb6733bb21db82193d14e6cc8d621148b6d5c671fb04a3b2d85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011834"
 ---
 # <a name="about-distributed-routing-tables"></a>Sobre tabelas de roteamento distribuído
 
@@ -19,9 +19,9 @@ Um nó que publica uma chave compila e mantém uma tabela de roteamento local de
 
 As chaves DRT são inteiros sem sinal de 256 bits. A proximidade entre as chaves é definida pela diferença numérica entre elas. O keyspace de DRT é considerado circular. Por exemplo, o primeiro valor de chave possível e o último valor de chave possível são considerados vizinhos.
 
-Em um DRT seguro, os nós são necessários para autenticar as chaves que eles publicam. O mecanismo pelo qual os nós autenticam chaves deve ser definido usando a API DRT quando o DRT é inicializado. Isso é feito escolhendo um provedor de segurança para o DRT. Um provedor de segurança é um módulo que pode produzir tokens usados para autenticar chaves e verificar tokens produzidos por outros nós. Ele deve implementar a interface do provedor de segurança que está definida nesta documentação. A DRT do Windows 7 vem com dois provedores de segurança totalmente implementados que podem ser usados para criar aplicativos do Windows.
+Em um DRT seguro, os nós são necessários para autenticar as chaves que eles publicam. O mecanismo pelo qual os nós autenticam chaves deve ser definido usando a API DRT quando o DRT é inicializado. Isso é feito escolhendo um provedor de segurança para o DRT. Um provedor de segurança é um módulo que pode produzir tokens usados para autenticar chaves e verificar tokens produzidos por outros nós. Ele deve implementar a interface do provedor de segurança que está definida nesta documentação. a DRT Windows 7 é fornecida com dois provedores de segurança totalmente implementados que podem ser usados para criar Windows aplicativos.
 
-Durante a inicialização, um aplicativo também deve fornecer o DRT com um provedor de inicialização. O provedor de inicialização é um módulo que pode recuperar os pontos de extremidade de rede dos nós já presentes na malha DRT e é chamado pelo DRT quando um novo nó é estabelecido. Assim como o módulo do provedor de segurança, o provedor Bootstrap deve implementar uma interface bem definida. A DRT do Windows 7 vem com dois provedores de inicialização totalmente implementados.
+Durante a inicialização, um aplicativo também deve fornecer o DRT com um provedor de inicialização. O provedor de inicialização é um módulo que pode recuperar os pontos de extremidade de rede dos nós já presentes na malha DRT e é chamado pelo DRT quando um novo nó é estabelecido. Assim como o módulo do provedor de segurança, o provedor Bootstrap deve implementar uma interface bem definida. a DRT Windows 7 é fornecida com dois provedores de inicialização totalmente implementados.
 
 A DRT considera os vizinhos imediatos de uma chave especial. As cinco chaves mais próximas numericamente menores e as cinco chaves mais próximas numericamente maiores que um formulário de chave publicado, o que é chamado de um conjunto de folha. Os relatórios de DRT são alterados para o conjunto de folha de uma chave por meio da API DRT.
 

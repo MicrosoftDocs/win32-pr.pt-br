@@ -1,23 +1,23 @@
 ---
 title: Exemplo de gatilho de tempo (C++)
-description: Este exemplo de C++ mostra como criar uma tarefa que está agendada para executar o bloco de notas em um horário especificado.
+description: este exemplo de C++ mostra como criar uma tarefa que está agendada para executar Bloco de notas em um horário especificado.
 ms.assetid: e45b18b0-5a7f-4283-b42f-15e9ffcfaff7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39f7f8d3c8bd1f179b0def9be069d710a2e126a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 227d6fe24aa63b430376a7ce50d23b4b8ecd282f807315384b42175b9903d1b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059644"
 ---
 # <a name="time-trigger-example-c"></a>Exemplo de gatilho de tempo (C++)
 
-Este exemplo de C++ mostra como criar uma tarefa que está agendada para executar o bloco de notas em um horário especificado. A tarefa contém um gatilho baseado em tempo que especifica um limite inicial e um limite final para a tarefa. A tarefa também contém uma ação que especifica a tarefa para executar o bloco de notas. A tarefa é registrada usando um tipo de logon interativo, o que significa que a tarefa é executada no contexto de segurança do usuário que executa o aplicativo. A tarefa também contém configurações ociosas, que especifica como Agendador de Tarefas executa tarefas quando o computador está em uma condição ociosa.
+este exemplo de C++ mostra como criar uma tarefa que está agendada para executar Bloco de notas em um horário especificado. A tarefa contém um gatilho baseado em tempo que especifica um limite inicial e um limite final para a tarefa. a tarefa também contém uma ação que especifica a tarefa a ser executada Bloco de notas. A tarefa é registrada usando um tipo de logon interativo, o que significa que a tarefa é executada no contexto de segurança do usuário que executa o aplicativo. A tarefa também contém configurações ociosas, que especifica como Agendador de Tarefas executa tarefas quando o computador está em uma condição ociosa.
 
 O procedimento a seguir descreve como agendar uma tarefa para iniciar um executável em um determinado momento.
 
-**Para agendar o bloco de notas para iniciar em uma hora específica**
+**para agendar Bloco de notas para iniciar em uma hora específica**
 
 1.  Inicialize COM e defina a segurança COM geral.
 2.  Crie o objeto [**o ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
@@ -42,7 +42,7 @@ O procedimento a seguir descreve como agendar uma tarefa para iniciar um execut�
 
 7.  Registre a tarefa usando o método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
 
-O exemplo de C++ a seguir mostra como agendar uma tarefa para executar o bloco de notas um minuto depois que a tarefa é registrada.
+o exemplo de C++ a seguir mostra como agendar uma tarefa para execução Bloco de notas um minuto depois que a tarefa é registrada.
 
 
 ```C++
@@ -418,9 +418,9 @@ int __cdecl wmain()
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

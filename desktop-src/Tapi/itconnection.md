@@ -4,16 +4,16 @@ ms.assetid: 44dc39cf-3222-41ed-b29c-df2d32615500
 title: Interface ITConnection (Sdpblb. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a00da80631c0ef4e8186aa36425f18e4d2a62bfc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a64758f6a5cf7bcd9106504412f4cf7f39e6fb7ca0b76e35b38e19dc3f815ccf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140339"
 ---
 # <a name="itconnection-interface"></a>Interface ITConnection
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A interface **ITConnection** fornece a seguinte funcionalidade:
 
@@ -62,7 +62,7 @@ A interface **ITConnection** tem esses métodos.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
