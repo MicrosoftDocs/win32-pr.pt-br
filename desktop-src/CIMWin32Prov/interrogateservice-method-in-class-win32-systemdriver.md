@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 666a261dfe3fac7dd62e6253c5eb4804b3a55677
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0327dc7dcb357217ff18df85b22c7cc7bff8972f42ebeb53a89f552c98205d72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760326"
 ---
 # <a name="interrogateservice-method-of-the-win32_systemdriver-class"></a>Método InterrogateService da \_ classe SystemDriver Win32
 
@@ -40,7 +40,7 @@ uint32 InterrogateService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se a solicitação **InterrogateService** tiver sido aceita, 1 (uma) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 

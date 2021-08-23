@@ -4,17 +4,17 @@ description: As guias fornecem uma maneira de apresentar informações relaciona
 ms.assetid: d90228ce-aa95-4359-be8e-ea2014d71ae6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: d6922865abcaa060cc2e4b13e4768d57bcd17aa8
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 167b74bab228398eb0334452a5eacd359578d5bfc01efecb52ccafbcd90d376d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119818957"
 ---
 # <a name="tabs"></a>Guias
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 As guias fornecem uma maneira de apresentar informações relacionadas em páginas rotuladas separadas.
 
@@ -135,14 +135,14 @@ Verifique se as informações nas guias estão relacionadas, mas as configuraç�
 
 -   **Não use barras de rolagem em páginas da guia.** As guias funcionam de forma semelhante às barras de rolagem para aumentar a área efetiva de uma janela. Um mecanismo deve ser suficiente.
 -   **Use rótulos de guias concisos.** Use uma ou duas palavras que descrevam claramente o conteúdo da página. Rótulos mais longos consomem espaço na tela, especialmente quando os rótulos são localizados.
--   **Use rótulos de guias específicos e significativos.** Evite rótulos de guia genéricos que possam se aplicar a qualquer guia, como geral, avançado ou configurações.
+-   **Use rótulos de guias específicos e significativos.** evite rótulos de guia genéricos que possam se aplicar a qualquer guia, como geral, avançado ou Configurações.
 -   **Se uma guia não se aplicar ao contexto atual e os usuários não esperarem, remova-o.** Fazer isso simplifica a interface do usuário e os usuários não perdem isso.
 
     **Incorreto:**
 
     ![captura de tela da janela de opções com o nome de guia esmaecido ](images/ctrl-tabs-image12.png)
 
-    Neste exemplo, a guia locais de arquivo é desabilitada incorretamente quando o Microsoft Word é usado como um editor de email. Em vez de desabilitar essa guia, ela deve ser removida porque os usuários não esperam exibir ou alterar os locais de arquivo neste contexto.
+    neste exemplo, a guia locais de arquivo é desabilitada incorretamente quando Microsoft Word é usada como um editor de email. Em vez de desabilitar essa guia, ela deve ser removida porque os usuários não esperam exibir ou alterar os locais de arquivo neste contexto.
 
 -   **Se uma guia não se aplicar ao contexto atual e os usuários puderem esperar isso:**
 

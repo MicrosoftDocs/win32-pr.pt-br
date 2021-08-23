@@ -1,7 +1,7 @@
 ---
-description: Retorna o quadrado do comprimento de um Quaternion.
+description: Retorna o quadrado do comprimento de um quaterão.
 ms.assetid: 358d2a2b-7baf-4ae9-9b92-7a7f01ca843b
-title: Função D3DXQuaternionLengthSq (D3dx9math. h)
+title: Função D3DXQuaternionLengthSq (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0771d571b15ef690b115f12e5fa1d8ff6fea4dad
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 062339144a182d0ceeec27d34dd0d572d470ef10fcc1722375f89156b6b55874
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631076"
 ---
 # <a name="d3dxquaternionlengthsq-function"></a>Função D3DXQuaternionLengthSq
 
-Retorna o quadrado do comprimento de um Quaternion.
+Retorna o quadrado do comprimento de um quaterão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,24 +40,24 @@ FLOAT D3DXQuaternionLengthSq(
 
 <dl> <dt>
 
-*pQ* \[ no\]
+*pQ* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](d3dxquaternion.md) \***
 
-Ponteiro para a estrutura de [**D3DXQUATERNION**](d3dxquaternion.md) de origem.
+Ponteiro para a estrutura [**D3DXQUATERNION de origem.**](d3dxquaternion.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-O comprimento quadrado do Quaternion.
+O comprimento quadrado do quatrion.
 
 ## <a name="remarks"></a>Comentários
 
-Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entrada de Quaternion que ainda não esteja normalizada.
+Use [**D3DXQuaternionNormalize para**](d3dxquaternionnormalize.md) qualquer entrada de quatérnion que ainda não tenha sido normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Use [**D3DXQuaternionNormalize**](d3dxquaternionnormalize.md) para qualquer entr
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

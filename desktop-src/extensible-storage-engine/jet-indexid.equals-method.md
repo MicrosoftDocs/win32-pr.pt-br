@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 11b2c4c67706c8953aa42dedf32cb78cabfc3314
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 149a69d230f0cfca9bd1dc810d25109c3d5cbfd253b0666c05644c6a7ada1945
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104560968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720386"
 ---
 # <a name="jet_indexidequals-method"></a>JET_INDEXID. Método Equals
 

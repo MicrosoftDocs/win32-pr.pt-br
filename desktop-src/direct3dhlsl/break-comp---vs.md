@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 631998aeba6612d945495d8115a74d00f7e657c7
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a02bf34844918255086b318d9a13feeabbd6e75bdecca03684adaba70b420626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103823450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626556"
 ---
 # <a name="break_comp---vs"></a>interromper \_ comp-vs
 
@@ -29,7 +29,7 @@ Interromper condicionalmente o loop atual no [ENDLOOP-vs](endloop---vs.md) ou [e
 
 
 
- 
+ 
 
 Em que:
 
@@ -42,11 +42,11 @@ Em que:
     | \_GE   | Maior ou igual |
     | \_quivo   | Inferior ou igual    |
     | \_EQ   | Igual a              |
-    | \_m   | Não igual a          |
+    | \_m   | É diferente de          |
 
     
 
-     
+     
 
 -   src0 é um registro de origem. Replicate swizzle é necessário para selecionar um único componente.
 -   src1 é um registro de origem. Replicate swizzle é necessário para selecionar um único componente.
@@ -63,7 +63,7 @@ Essa instrução tem suporte nas versões a seguir.
 
 
 
- 
+ 
 
 Quando a comparação for verdadeira, ela será interrompida no loop atual, conforme mostrado.
 
@@ -82,9 +82,9 @@ if (src0 comparison src1)
 [Instruções do sombreador de vértice](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

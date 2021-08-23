@@ -1,7 +1,7 @@
 ---
-description: Método Shell. instart – inicia um serviço nomeado.
+description: Método Shell.ServiceStart – inicia um serviço nomeado.
 ms.assetid: 72214E80-38A2-4a57-B555-942902BAFC3D
-title: Método Shell. OnStart (shldisp. h)
+title: Método Shell.ServiceStart (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9c88b1980d215ad088a4a24362f17147b5d6e432
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: afdc1e7cac8d50de08e21cfad5cb492b5b51dcb647e963b4c003e9600a924244
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709546"
 ---
-# <a name="shellservicestart-method"></a>Método Shell. OnStart
+# <a name="shellservicestart-method"></a>Método Shell.ServiceStart
 
 Inicia um serviço nomeado.
 
@@ -51,21 +51,21 @@ Shell.ServiceStart( _
 
 <dl> <dt>
 
-*sServiceName* \[ no\]
+*sServiceName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **cadeia de caracteres** que contém o nome do serviço.
+Uma **Cadeia de** caracteres que contém o nome do serviço.
 
 </dd> <dt>
 
-*vPersistent* \[ no\]
+*vPersistent* \[ Em\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-Defina como **true** para que o serviço seja iniciado automaticamente pelo Gerenciador de controle de serviço durante a inicialização do sistema. Defina como **false** para deixar a configuração de serviço inalterada.
+Definido como **true para** que o serviço seja iniciado automaticamente pelo gerenciador de controle de serviço durante a inicialização do sistema. De definido **como false** para deixar a configuração do serviço inalterada.
 
 </dd> </dl>
 
@@ -73,27 +73,27 @@ Defina como **true** para que o serviço seja iniciado automaticamente pelo Gere
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true se** for bem-sucedido; caso contrário, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se for bem-sucedido; caso contrário, **false**.
+Retornará **true se** for bem-sucedido; caso contrário, **false.**
 
 ## <a name="remarks"></a>Comentários
 
-O método retornará **false** se o serviço já tiver sido iniciado. Antes de chamar esse método, você pode chamar [**shell. IsServiceRunning**](./shell-isservicerunning.md) para verificar o status do serviço.
+O método **retornará false** se o serviço já tiver sido iniciado. Antes de chamar esse método, você pode chamar [**Shell.IsServiceRunning**](./shell-isservicerunning.md) para determinar o status do serviço.
 
-Este método não está disponível atualmente no Microsoft Visual Basic.
+Esse método não está disponível atualmente no Microsoft Visual Basic.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso do **Imstart** para iniciar o serviço mensageiro. O uso é mostrado para JScript e VBScript.
+Os exemplos a seguir mostram o uso de **ServiceStart** para iniciar o serviço Messenger. O uso é mostrado para JScript e VBScript.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -109,7 +109,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -135,11 +135,11 @@ VBScript
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

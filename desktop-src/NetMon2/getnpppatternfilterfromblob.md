@@ -1,7 +1,7 @@
 ---
-description: A função GetNPPPatternFilterFromBlob recupera o filtro de correspondência de padrão de um BLOB específico.
+description: A função GetNPPPatternFilterFromBlob recupera o filtro de corresponder padrão de um BLOB específico.
 ms.assetid: b17cde55-8abb-4699-960f-676cbbb24326
-title: Função GetNPPPatternFilterFromBlob (Netmon. h)
+title: Função GetNPPPatternFilterFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 5758c53fe21231d300058a9168e556e9f9ceaa43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f54be7ac5d5b7a443f967d0f6aa1b4737f798a9459833fc87f07f50328f824c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743886"
 ---
 # <a name="getnpppatternfilterfromblob-function"></a>Função GetNPPPatternFilterFromBlob
 
-A função **GetNPPPatternFilterFromBlob** recupera o filtro de correspondência de padrão de um blob específico.
+A **função GetNPPPatternFilterFromBlob** recupera o filtro de corresponder padrão de um BLOB específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,36 +41,36 @@ DWORD GetNPPPatternFilterFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB.
+Lidar com o BLOB.
 
 </dd> <dt>
 
-*pExpression* \[ no\]
+*pExpression* \[ Em\]
 </dt> <dd>
 
 Ponteiro para a expressão de filtro.
 
 </dd> <dt>
 
-*hErrorBlob* \[ fora\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador para um BLOB de erro que especifica onde ocorreu o erro (se houver) no BLOB original.
+Tratar para um BLOB de erro que especifica em que local no BLOB original ocorreu o erro (se algum).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um NMERR que indica o erro.
 
 ## <a name="remarks"></a>Comentários
 
-As informações de filtro de correspondência de padrão são armazenadas na categoria de **configuração** do blob.
+As informações de filtro de combinação de padrões são armazenadas **na categoria Config** do BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,8 +80,8 @@ As informações de filtro de correspondência de padrão são armazenadas na ca
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

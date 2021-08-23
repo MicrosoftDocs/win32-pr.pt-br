@@ -1,5 +1,5 @@
 ---
-description: Fecha o banco de dados de Shim inicializado usando a função SdbInitDatabase.
+description: Fecha o banco de dados shim inicializado usando a função SdbInitDatabase.
 ms.assetid: 8452ab14-a1e9-41b3-a1ac-7ff3a7d3a7ed
 title: Função SdbReleaseDatabase
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 7df4b62af6b2fe654269a8bea4b2e866d0d765b3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 82a7cf785927a5ef14e3e033c29233afcc4a49cf89d610757d110583bce4eff6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815326"
 ---
 # <a name="sdbreleasedatabase-function"></a>Função SdbReleaseDatabase
 
-Fecha o banco de dados de Shim inicializado usando a função [**SdbInitDatabase**](sdbinitdatabase.md) .
+Fecha o banco de dados shim inicializado usando a [**função SdbInitDatabase.**](sdbinitdatabase.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,10 +39,10 @@ void WINAPI SdbReleaseDatabase(
 
 <dl> <dt>
 
-*hSDB* \[ no\]
+*hSDB* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim retornado pela função [**SdbInitDatabase**](sdbinitdatabase.md) .
+Um handle para o banco de dados shim retornado pela [**função SdbInitDatabase.**](sdbinitdatabase.md)
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Essa função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

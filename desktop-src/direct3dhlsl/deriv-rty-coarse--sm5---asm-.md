@@ -4,12 +4,12 @@ description: Computa a taxa de alteração de componentes. | deriv_rty_coarse (S
 ms.assetid: 1EBCC0B9-BD3E-46DD-AC17-F7167F892195
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df7fd539adf8587118a6bdfdcb5959925e6a97f8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 33e3c5fe51444db9f5e10f482ee352d7ef665b3051aac1dba63dee88b2138445
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673886"
 ---
 # <a name="deriv_rty_coarse-sm5---asm"></a>derivar \_ rty \_ grande (SM5-ASM)
 
@@ -43,7 +43,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     |         |
 

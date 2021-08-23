@@ -1,9 +1,9 @@
 ---
-title: SLIDER. foregroundImage
-description: O atributo foregroundImage especifica ou recupera a imagem em primeiro plano do controle deslizante.
+title: SLIDER.foregroundImage
+description: O atributo foregroundImage especifica ou recupera a imagem de primeiro plano do controle deslizante.
 ms.assetid: f713fba8-e965-4fed-b323-8a513d1f13e6
 keywords:
-- Controle deslizante. foregroundImage Windows Media Player
+- SLIDER.foregroundImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a286d3b73a2647160a0bd23357703f4fcb88d267
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f7fad50a6e33ca4de5890dfca340e36aa2fdc0af0c0b938793eac4edc1dfb71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105756098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735706"
 ---
-# <a name="sliderforegroundimage"></a>SLIDER. foregroundImage
+# <a name="sliderforegroundimage"></a>SLIDER.foregroundImage
 
-O atributo **foregroundImage** especifica ou recupera a imagem em primeiro plano do controle deslizante.
+O **atributo foregroundImage** especifica ou recupera a imagem de primeiro plano do controle deslizante.
 
 ``` syntax
         elementID.foregroundImage
@@ -29,15 +29,15 @@ O atributo **foregroundImage** especifica ou recupera a imagem em primeiro plano
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém o nome de um arquivo de imagem.
+Esse atributo é uma cadeia de caracteres **de** leitura/gravação que contém o nome de um arquivo de imagem.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é opcional. Ao usar imagens para construir um controle deslizante, o **backgroundImage** é usado para a imagem principal do controle deslizante. O **thumbImage** representa o controle deslizante real e pode ser movido usando o mouse. No controle deslizante **thumbImage** , há uma linha invisível em que a imagem de plano de fundo é exibida em um lado da linha e a imagem em primeiro plano é exibida no outro lado.
+Esse atributo é opcional. Ao usar imagens para construir um controle deslizante, **backgroundImage** é usado para a imagem do controle deslizante principal. O **thumbImage representa** o controle deslizante real e pode ser movido usando o mouse. No controle **deslizante thumbImage,** há uma linha invisível em que a imagem da tela de fundo é exibida em um lado da linha e a imagem de primeiro plano é exibida no outro lado.
 
-Quando o controle deslizante **thumbImage** for movido com o mouse, se o **Slide** estiver definido como true, a imagem em primeiro plano deslizará como se fosse puxada pelo controle deslizante para cobrir a imagem de plano de fundo. Se o **Slide** for definido como false, a imagem em primeiro plano não se moverá, mas será revelada no lugar, como se o controle deslizante estiver movendo a imagem de plano de fundo para a imagem em primeiro plano.
+Quando o controle deslizante **thumbImage** é  movido com o mouse, se slide estiver definido como true, a imagem de primeiro plano deslizará como se estivesse sendo esbosada pelo controle deslizante para cobrir a imagem de plano de fundo. Se **slide** for definido como false, a imagem de primeiro plano não se move, mas será revelada no local, como se o controle deslizante estivesse movendo a imagem de plano de fundo da imagem de primeiro plano.
 
-Se o **atributo de** subbarra for definido como true e a imagem em primeiro plano for menor do que a área de primeiro plano do controle deslizante, a imagem será colocada lado-a-horizontal ou verticalmente, dependendo do atributo **Direction** , para preencher o espaço disponível.
+Se  o atributo lado a lado for definido como true e a imagem de primeiro plano for menor que a área de primeiro  plano do controle deslizante, a imagem será lado a lado horizontal ou verticalmente, dependendo do atributo de direção, para preencher o espaço disponível.
 
 Os formatos com suporte são BMP, JPG, PNG e GIF (não incluindo GIFs animados).
 
@@ -47,7 +47,7 @@ Os formatos com suporte são BMP, JPG, PNG e GIF (não incluindo GIFs animados).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -58,16 +58,16 @@ Os formatos com suporte são BMP, JPG, PNG e GIF (não incluindo GIFs animados).
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDER. backgroundImage**](slider-backgroundimage.md)
+[**SLIDER.backgroundImage**](slider-backgroundimage.md)
 </dt> <dt>
 
-[**Controle deslizante. slide**](slider-slide.md)
+[**SLIDER.slide**](slider-slide.md)
 </dt> <dt>
 
-[**SLIDER. thumbImage**](slider-thumbimage.md)
+[**SLIDER.thumbImage**](slider-thumbimage.md)
 </dt> <dt>
 
-[**Controle deslizante. valor**](slider-value.md)
+[**SLIDER.value**](slider-value.md)
 </dt> </dl>
 
  

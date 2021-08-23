@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put Owner define a janela pai da janela de vídeo; a janela pai, em seguida, encaminha certas mensagens para a janela de vídeo.
+description: O método put Owner define a janela pai da janela de vídeo; a janela pai encaminha \_ determinadas mensagens para a janela de vídeo.
 ms.assetid: 8ed85cb0-47be-40c1-947a-dd9f7850d867
-title: Método de CBaseControlWindow.put_Owner (Ctlutil. h)
+title: CBaseControlWindow.put_Owner método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16817d1c3f0fbdf756f6c054b875b8507fd1172a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f33e0c26506faea93afc11f51aaba13007c443fc011839efafce436fe9f2b2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635886"
 ---
-# <a name="cbasecontrolwindowput_owner-method"></a>Método de proprietário CBaseControlWindow. put \_
+# <a name="cbasecontrolwindowput_owner-method"></a>Método de Proprietário CBaseControlWindow.put \_
 
-O `put_Owner` método define a janela pai da janela de vídeo; a janela pai, em seguida, encaminha certas mensagens para a janela de vídeo.
+O método define a janela pai da janela `put_Owner` de vídeo; a janela pai encaminha determinadas mensagens para a janela de vídeo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,19 +45,19 @@ HRESULT put_Owner(
 *Proprietário* 
 </dt> <dd>
 
-Identificador para a janela pai.
+Lidar com a janela pai.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna NOERROR.
 
 ## <a name="remarks"></a>Comentários
 
-Internamente, esse método chama a função **Setpai** do Microsoft Win32 para definir o novo proprietário e define o estilo da janela pai como WS \_ Child. A janela pai encaminhará certos conjuntos de mensagens (em particular, mensagens do mouse e do teclado) para a janela de vídeo.
+Internamente, esse método chama a função Microsoft Win32 **SetParent** para definir o novo proprietário e define o estilo da janela pai como WS \_ CHILD. Em seguida, a janela pai encaminhará determinados conjuntos de mensagens (em particular, mensagens de mouse e teclado) para a janela de vídeo.
 
-Depois de definir o proprietário da janela de vídeo, você deve definir o proprietário como **nulo** e o estilo de janela do proprietário como WS \_ Overlapped e WS \_ CLIPCHILDREN antes de liberar o grafo de filtro. Quando você define o proprietário como **NULL**, esse método desativa o bit do WS-Child da janela pai \_ . Se você não definir o proprietário como **nulo**, a janela pai continuará a passar mensagens para a janela de vídeo e os erros provavelmente ocorrerão quando o aplicativo for fechado.
+Depois de definir o proprietário da janela de vídeo, você deve definir o proprietário como **NULL** e o estilo de janela do proprietário como WS \_ OVERLAPPED e WS CLIPCHILDREN antes de liberar o grafo \_ de filtro. Quando você definir o proprietário como **NULL,** esse método desligará o bit filho WS \_ da janela pai. Se você não definir o proprietário como **NULL,** a janela pai continuará passando mensagens para a janela de vídeo e provavelmente ocorrerão erros quando o aplicativo for fechado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Depois de definir o proprietário da janela de vídeo, você deve definir o prop
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

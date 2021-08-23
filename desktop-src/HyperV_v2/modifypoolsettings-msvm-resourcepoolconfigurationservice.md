@@ -1,7 +1,7 @@
 ---
-description: Altera as configurações de um pool filho que não estão relacionados à alocação.
+description: Altera as configurações de um pool filho que não estão relacionadas à alocação.
 ms.assetid: f60068e0-f333-41e2-8f11-78aa48dfa260
-title: Método ModifyPoolSettings da classe Msvm_ResourcePoolConfigurationService
+title: Método ModifyPoolSettings da classe Msvm_ResourcePoolConfigurationService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: edc5f48dabfb84554954cc80d9c4e8a20678d34f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1c8d71f8f380d5049d6bd2743e1f1d48573407431372c53aaeaacf4297ec56e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694036"
 ---
-# <a name="modifypoolsettings-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método ModifyPoolSettings da \_ classe ResourcePoolConfigurationService Msvm
+# <a name="modifypoolsettings-method-of-the-msvm_resourcepoolconfigurationservice-class"></a>Método ModifyPoolSettings da classe Msvm \_ ResourcePoolConfigurationService
 
-Altera as configurações de um pool filho que não estão relacionados à alocação.
+Altera as configurações de um pool filho que não estão relacionadas à alocação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,28 +41,28 @@ uint32 ModifyPoolSettings(
 
 <dl> <dt>
 
-*ChildPool* \[ no\]
+*ChildPool* \[ Em\]
 </dt> <dd>
 
-Uma referência a uma instância da classe [**CIM \_ ResourcePool**](cim-resourcepool.md) que representa o pool filho a ser modificado.
+Uma referência a uma instância da classe [**\_ ResourcePool cim**](cim-resourcepool.md) que representa o pool filho a ser modificado.
 
 </dd> <dt>
 
-*PoolSettings* \[ no\]
+*PoolSettings* \[ Em\]
 </dt> <dd>
 
-Uma instância inserida da classe [**Msvm \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md) que é usada para especificar as novas configurações para o pool.
+Uma instância inserida da [**classe Msvm \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md) usada para especificar as novas configurações para o pool.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -71,13 +71,13 @@ Esse método retorna um dos valores a seguir.
 **Trabalho concluído sem erro** (0)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
 **Falha** (32768)
@@ -92,7 +92,7 @@ Esse método retorna um dos valores a seguir.
 **Desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
@@ -107,25 +107,25 @@ Esse método retorna um dos valores a seguir.
 **Tipo de recurso incorreto para o pool** (32776)
 </dt> <dt>
 
-**Não disponível** (32777)
+**Indisponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem** memória (32778)
 </dt> <dt>
 
-**Fornecedor reservado** (32779)
+**Fornecedor Reservado** (32779)
 </dt> <dt>
 
 **Recursos insuficientes** (32780)
 </dt> <dt>
 
-**Objeto não encontrado** (32781.. 32787)
+**Objeto não encontrado** (32781..32787)
 </dt> <dt>
 
-O **objeto existe** (32788)
+**Object Exists** (32788)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -134,10 +134,10 @@ O **objeto existe** (32788)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

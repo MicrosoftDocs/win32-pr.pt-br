@@ -1,11 +1,11 @@
 ---
-title: MS-WMI-atributo de alteração
+title: Atributo ms-WMI-ChangeDate
 description: A última data em que esse objeto foi alterado.
 ms.assetid: a445c659-8f38-4eae-b23c-844a4c5be331
 ms.tgt_platform: multiple
 keywords:
-- MS-WMI-alterar esquema de atributo do AD
-- Esquema de AD do atributo msWMI-changeDate
+- Esquema do AD do atributo ms-WMI-ChangeDate
+- Esquema do AD do atributo msWMI-ChangeDate
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8a349baf922bcc4c93d64401a6b9ce90f1e646f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 316e726f16c81a87c3713075c4fca4b583eb48e34c9944e290540c8451cc5a0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760866"
 ---
-# <a name="ms-wmi-changedate-attribute"></a>MS-WMI-atributo de alteração
+# <a name="ms-wmi-changedate-attribute"></a>Atributo ms-WMI-ChangeDate
 
 A última data em que esse objeto foi alterado.
 
@@ -29,14 +29,14 @@ A última data em que esse objeto foi alterado.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------|
-| CN                | MS-WMI-modificado                                 |
-| LDAP-Display-Name | msWMI-alteração                                  |
-| Tamanho              | Representação de tipo de dados de DateTime do WMI-26 caracteres. |
+| CN                | ms-WMI-ChangeDate                                 |
+| Ldap-Display-Name | msWMI-ChangeDate                                  |
+| Tamanho              | Representação de tipo de dados datetime WMI – 26 caracteres. |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                  |
 | Frequência de atualização  | \-                                                |
 | Attribute-Id      | 1.2.840.113556.1.4.1624                           |
-| System-ID-GUID    | f9cdf7a0-ec44-4937-a79b-cd91522b3aa8              |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)       |
+| System-Id-Guid    | f9cdf7a0-ec44-4937-a79b-cd91522b3aa8              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)       |
 
 
 
@@ -57,15 +57,15 @@ A última data em que esse objeto foi alterado.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ A última data em que esse objeto foi alterado.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ A última data em que esse objeto foi alterado.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ A última data em que esse objeto foi alterado.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ A última data em que esse objeto foi alterado.
 | ID do link                | \-                                                                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                                                                         |
 | System-Only            | Falso                                                                                                                                                                      |
-| É de valor único       | True                                                                                                                                                                       |
+| Tem valor único       | Verdadeiro                                                                                                                                                                       |
 | É indexado             | Falso                                                                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                               |
 | Range-Lower            | \-                                                                                                                                                                         |
 | Range-Upper            | \-                                                                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                                                                                 |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**MS-WMI-som**](c-mswmi-som.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-PolicyType**](c-mswmi-policytype.md)<br/> [**ms-WMI-Som**](c-mswmi-som.md)<br/> |
 
 
 

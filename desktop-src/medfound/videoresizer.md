@@ -4,12 +4,12 @@ ms.assetid: 4acd6366-1abf-43f3-b6c9-4ea17a335cec
 title: DSP de redimensionador de vídeo (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff7826f21cadc6d30bc2b8b04bbcc741c2bf31bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58d26dcc53baf38336656d870acc5583066e0816a0bf963217db1da54513ee18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721315"
 ---
 # <a name="video-resizer-dsp"></a>DSP de redimensionador de vídeo
 
@@ -29,7 +29,7 @@ Redimensiona um fluxo de vídeo.
 
 ## <a name="formats"></a>Formatos
 
-O DSP do redimensionador de vídeo dá suporte aos seguintes subtipos de mídia de entrada/saída quando ele está agindo como um DMO (objeto de mídia do DirectX).
+O DSP do redimensionador de vídeo dá suporte aos seguintes subtipos de mídia de entrada/saída quando ele está agindo como um objeto de mídia DirectX (DMO).
 
 -   MEDIASUBTYPE \_ IYUV
 -   MEDIASUBTYPE \_ YUY2
@@ -87,9 +87,9 @@ O DSP do redimensionador de vídeo dá suporte aos seguintes subtipos de mídia 
 
 ## <a name="remarks"></a>Comentários
 
-O DSP do redimensionador de vídeo é implementado como um objeto COM que pode atuar como um DMO ou uma MFT. O objeto tem um único identificador de classe (CLSID), independentemente de agir como um DMO ou uma MFT. Para obter informações sobre quando um DSP atua como um DMO ou uma MFT, consulte [processadores de sinais digitais](windowsmediadigitalsignalprocessors.md).
+o DSP do redimensionador de vídeo é implementado como um objeto COM que pode atuar como um DMO ou um MFT. o objeto tem um único identificador de classe (CLSID), independentemente de agir como um DMO ou um MFT. para obter informações sobre quando um DSP atua como um DMO ou uma MFT, consulte [processadores de sinais digitais](windowsmediadigitalsignalprocessors.md).
 
-Os identificadores globalmente exclusivos (GUIDs) para subtipos de mídia RGB diferem dependendo se um DSP está agindo como um DMO ou uma MFT. Os GUIDs para subtipos de mídia não RGB são os mesmos, independentemente de um DSP estar agindo como um DMO ou um MFT. Para obter informações sobre os GUIDs que representam subtipos de mídia, consulte [GUIDs de subtipo de vídeo](video-subtype-guids.md).
+os identificadores globalmente exclusivos (guids) para subtipos de mídia RGB diferem dependendo se um DSP está agindo como um DMO ou um MFT. os guids para subtipos de mídia não RGB são os mesmos, independentemente de um DSP estar agindo como um DMO ou um MFT. Para obter informações sobre os GUIDs que representam subtipos de mídia, consulte [GUIDs de subtipo de vídeo](video-subtype-guids.md).
 
 Esse DSP pode executar o corte e o dimensionamento na imagem de vídeo. O formato do tipo de saída deve corresponder ao formato do tipo de entrada. O DSP não executa conversões de espaço em cores.
 
@@ -115,9 +115,9 @@ O DSP copia a parte da imagem de origem definida pelo retângulo de origem e a a
 
 A abertura geométrica, a abertura de exibição mínima e a região de panorâmica/verificação não afetam o modo como o DSP redimensiona o vídeo. No entanto, eles podem afetar como o componente downstream interpreta o quadro de vídeo. Em particular, o processador de vídeo avançado (EVR) usa esses valores quando calcula a taxa de proporção da imagem e a área de exibição.
 
-Se você estiver usando Media Foundation tipos de mídia, poderá definir a abertura geométrica, a abertura de exibição mínima e as regiões de panorâmica/verificação diretamente no tipo de mídia de saída. Caso contrário, se você estiver usando tipos de mídia DMO, defina-os usando as propriedades.
+Se você estiver usando Media Foundation tipos de mídia, poderá definir a abertura geométrica, a abertura de exibição mínima e as regiões de panorâmica/verificação diretamente no tipo de mídia de saída. caso contrário, se você estiver usando DMO tipos de mídia, defina-os usando as propriedades.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [**\_ \_ abertura geométrica do MF MT \_**](mf-mt-geometric-aperture-attribute.md)
 -   [**\_abertura de \_ \_ exibição mínima \_ de MF MT**](mf-mt-minimum-display-aperture-attribute.md)
@@ -129,9 +129,9 @@ Para mais informações, consulte os seguintes tópicos:
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vidreszr.dll</dt> </dl> |
 
 

@@ -4,24 +4,24 @@ ms.assetid: 0b379dc9-a86f-40c0-9403-d9c9091ca8c3
 title: Exemplo de informações sobre a plataforma do Tablet PC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d815f21233b1edcc90d456df68b3736c170a5fb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1731fc30e0405b2702bb45d0a9d0556b861ad09994ac683d739da33afe018088
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119819976"
 ---
 # <a name="tablet-pc-platform-info-sample"></a>Exemplo de informações sobre a plataforma do Tablet PC
 
 Este programa verifica a presença e a configuração dos componentes principais do PC MicrosoftTablet e do touch Technology. Ele determina se os componentes do Tablet PC estão habilitados no sistema operacional, listando nomes e informações de versão para controles principais e o reconhecedor de fala e manuscrito padrão.
 
-O aplicativo usa a API do Windows GetSystemMetrics, passando o Tablet do SM \_ , para determinar se o aplicativo está sendo executado em um Tablet PC. O SM \_ Tablet é definido em winuser. h.
+o aplicativo usa a API de Windows do GetSystemMetrics, passando o tablet de tablet \_ , para determinar se o aplicativo está em execução em um pc de mesa. O SM \_ Tablet é definido em winuser. h.
 
 De interesse específico é a maneira como o aplicativo usa a coleção reconhecedores para fornecer informações sobre o reconhecedor padrão. Antes de tentar usar a coleção de reconhecedores e o objeto reconhecedor, o aplicativo testa a criação bem-sucedida.
 
 ## <a name="components"></a>Componentes
 
-Usando o módulo de mesclagem redistribuível, determinadas partes da API da plataforma do Tablet PC podem ser instaladas em versões não-Tablet do vista e do Windows XP Professional. A chamada GetSystemMetrics indica apenas que o Windows XP Tablet PC Edition está instalado. Um aplicativo sempre deve determinar se um determinado componente está disponível. A maneira apropriada de determinar se um componente da API está instalado é tentar criar uma instância de um objeto ou controle e verificar se ela existe antes de tentar usá-la, conforme mostrado no exemplo a seguir.
+usando o módulo de mesclagem redistribuível, determinadas partes da API da plataforma do tablet PC podem ser instaladas em versões não-Tablet do Vista e do Windows XP Professional. a chamada GetSystemMetrics indica apenas que o Windows XP Tablet PC Edition está instalado. Um aplicativo sempre deve determinar se um determinado componente está disponível. A maneira apropriada de determinar se um componente da API está instalado é tentar criar uma instância de um objeto ou controle e verificar se ela existe antes de tentar usá-la, conforme mostrado no exemplo a seguir.
 
 
 ```C++

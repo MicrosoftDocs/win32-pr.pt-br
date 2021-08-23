@@ -4,18 +4,18 @@ ms.assetid: 101e6b59-3791-450c-9dc6-8930bd665a93
 title: Adicionando ações personalizadas ao ProgressBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ff2b6da9e72a37329b26cfce7590bab5f9792db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d83dfeb806eb0ed6f1e251dd48b97911d8e0f583c8b65cb48ef0d04df059ebb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811056"
 ---
 # <a name="adding-custom-actions-to-the-progressbar"></a>Adicionando ações personalizadas ao ProgressBar
 
 As [ações personalizadas](custom-actions.md) podem adicionar informações de tempo e progresso a um controle [ProgressBar](progressbar-control.md) . Para obter mais informações sobre como criar uma caixa de diálogo de exibição de ação com um ProgressBar, consulte Criando [um controle ProgressBar](authoring-a-progressbar-control.md).
 
-Observe que duas ações personalizadas devem ser adicionadas ao pacote de Windows Installer para relatar com precisão informações de tempo e progresso ao ProgressBar. Uma ação personalizada deve ser uma ação personalizada adiada. Essa ação personalizada deve concluir a instalação personalizada e enviar as quantidades de incrementos individuais para o controle [ProgressBar](progressbar-control.md) quando o instalador executa o script de instalação. A segunda ação personalizada deve ser uma ação personalizada de execução imediata que informa a ProgressBar quantos tiques adicionar à contagem total durante a fase de aquisição e geração de script da instalação.
+observe que duas ações personalizadas devem ser adicionadas ao pacote de Windows Installer para relatar com precisão informações de tempo e progresso ao ProgressBar. Uma ação personalizada deve ser uma ação personalizada adiada. Essa ação personalizada deve concluir a instalação personalizada e enviar as quantidades de incrementos individuais para o controle [ProgressBar](progressbar-control.md) quando o instalador executa o script de instalação. A segunda ação personalizada deve ser uma ação personalizada de execução imediata que informa a ProgressBar quantos tiques adicionar à contagem total durante a fase de aquisição e geração de script da instalação.
 
 **Para adicionar uma ação personalizada ao ProgressBar**
 
@@ -30,8 +30,8 @@ Observe que duas ações personalizadas devem ser adicionadas ao pacote de Windo
 4.  Separe sua ação personalizada em duas seções de código: uma seção que é executada durante a fase de geração de script e uma seção que é executada durante a fase de execução da instalação. Você pode fazer isso usando dois arquivos ou pode usar um arquivo por condicionamento no modo de execução do instalador. O exemplo a seguir usa um arquivo e verifica o estado da instalação. As seções do exemplo são condicionadas para serem executadas dependendo se o instalador está na fase de execução ou geração de script da instalação.
 5.  A seção que é executada durante a geração de script deve aumentar a estimativa do tamanho total final do [ProgressBar](progressbar-control.md) pelo número total de tiques na ação personalizada. Isso é feito enviando uma mensagem de progresso **ProgressAddition** .
 6.  A seção que é executada durante a fase de execução da instalação deve configurar o texto e os modelos da mensagem para informar ao usuário sobre o que a ação personalizada está fazendo e para direcionar o instalador na atualização do controle [ProgressBar](progressbar-control.md) . Por exemplo, informe o instalador para mover o ProgressBar para frente um incremento e enviar uma mensagem de progresso explícita com cada atualização. Geralmente, há um loop nesta seção se a ação personalizada estiver instalando algo. Com cada passagem desse loop, o instalador pode instalar um item de referência, como uma chave do registro, e atualizar o controle ProgressBar
-7.  Adicione uma ação personalizada de execução imediata ao seu pacote de Windows Installer. Essa ação personalizada informa o [ProgressBar](progressbar-control.md) quanto avançar durante as fases de aquisição e geração de script da instalação. Para o exemplo a seguir, a origem é a DLL criada pela compilação do código de exemplo e o destino é o ponto de entrada, CAProgress.
-8.  Adicione uma ação personalizada de execução adiada ao seu pacote de Windows Installer. Essa ação personalizada conclui as etapas da instalação real e informa o [ProgressBar](progressbar-control.md) quanto para avançar a barra no momento em que o instalador executa o script de instalação. Para o exemplo a seguir, a origem é a DLL criada pela compilação do código de exemplo e o destino é o ponto de entrada, CAProgress.
+7.  adicione uma ação personalizada de execução imediata ao seu pacote de Windows Installer. Essa ação personalizada informa o [ProgressBar](progressbar-control.md) quanto avançar durante as fases de aquisição e geração de script da instalação. Para o exemplo a seguir, a origem é a DLL criada pela compilação do código de exemplo e o destino é o ponto de entrada, CAProgress.
+8.  adicione uma ação personalizada de execução adiada ao seu pacote de Windows Installer. Essa ação personalizada conclui as etapas da instalação real e informa o [ProgressBar](progressbar-control.md) quanto para avançar a barra no momento em que o instalador executa o script de instalação. Para o exemplo a seguir, a origem é a DLL criada pela compilação do código de exemplo e o destino é o ponto de entrada, CAProgress.
 9.  Agende as ações personalizadas entre [InstallInitialize](installinitialize-action.md) e [InstallFinalize](installfinalize-action.md) na tabela [InstallExecuteSequence](installexecutesequence-table.md) . A ação personalizada adiada deve ser agendada imediatamente após a ação personalizada de execução imediata. O instalador não executará a ação personalizada adiada até que o script seja executado.
 
 O exemplo a seguir mostra como uma ação personalizada pode ser adicionada ao [ProgressBar](progressbar-control.md). A origem de ambas as ações personalizadas é a DLL criada pela compilação do código de exemplo e o destino de ambas as ações personalizadas é o ponto de entrada, CAProgress. Este exemplo não faz nenhuma alteração real no sistema, mas opera o ProgressBar como se estiver instalando 10 itens de referência com aproximadamente 10.000 bytes de tamanho. O instalador atualiza a mensagem e a ProgressBar sempre que instala um item de referência.

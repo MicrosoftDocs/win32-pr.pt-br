@@ -1,7 +1,7 @@
 ---
-description: O método GetRestorePosition recupera a posição para a qual a janela será restaurada quando ela não for maximizada ou minimizada.
+description: O método GetRestorePosition recupera a posição na qual a janela será restaurada quando não for maximizada ou minimizada.
 ms.assetid: 5f129be3-c4d8-4583-bbc8-870e0bcafd80
-title: Método CBaseControlWindow. GetRestorePosition (Ctlutil. h)
+title: Método CBaseControlWindow.GetRestorePosition (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f922a97f69f4dae03d4e61a54bd99c52d69a984a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 215b71d731227641df02716dd2b760f7e023bbec0c50bc66ac6d390ed87d002e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757606"
 ---
-# <a name="cbasecontrolwindowgetrestoreposition-method"></a>Método CBaseControlWindow. GetRestorePosition
+# <a name="cbasecontrolwindowgetrestoreposition-method"></a>Método CBaseControlWindow.GetRestorePosition
 
-O `GetRestorePosition` método recupera a posição para a qual a janela será restaurada quando ela não for maximizada ou minimizada.
+O `GetRestorePosition` método recupera a posição na qual a janela será restaurada quando não for maximizada ou minimizada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ HRESULT GetRestorePosition(
 *pLeft* 
 </dt> <dd>
 
-Ponteiro para o valor da coordenada da extrema esquerda.
+Ponteiro para o valor da coordenada mais à esquerda.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Ponteiro para o valor da parte superior da janela.
 
 </dd> <dt>
 
-*pWidth* 
+*Pwidth* 
 </dt> <dd>
 
 Ponteiro para o valor da largura da janela.
@@ -73,13 +73,13 @@ Ponteiro para o valor da altura da janela.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Isso é o mesmo que os valores retornados pela função [**CBaseControlWindow:: GetWindowPosition**](cbasecontrolwindow-getwindowposition.md) quando a janela não é maximizada nem minimizada.
+Isso é o mesmo que os valores retornados pela função [**CBaseControlWindow::GetWindowPosition**](cbasecontrolwindow-getwindowposition.md) quando a janela não é maximizada nem minimizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Isso é o mesmo que os valores retornados pela função [**CBaseControlWindow:: 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

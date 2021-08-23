@@ -3,7 +3,7 @@ title: MCN_GETDAYSTATE código de notificação (commctrl. h)
 description: Enviado por um controle de calendário mensal para solicitar informações sobre como dias individuais devem ser exibidos. Esse código de notificação é enviado somente por controles de calendário de mês que usam o \_ estilo MCS DAYSTATE e é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: dc2608e0-c598-4b26-9195-208f09cd84b7
 keywords:
-- MCN_GETDAYSTATE de código de notificação controles do Windows
+- MCN_GETDAYSTATE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bff81b9f171884f39063c517cb17299a55b4053b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 64af64fde86ed91ae41cbd3fed53e9cb27a0be410140bc1d25e0548a64042668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697136"
 ---
 # <a name="mcn_getdaystate-notification-code"></a>Código de notificação do MCN \_ GETDAYSTATE
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMDAYSTATE**](/windows/win32/api/commctrl/ns-comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -59,9 +59,9 @@ Manipular esse código de notificação permite que seu aplicativo Personalize s
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

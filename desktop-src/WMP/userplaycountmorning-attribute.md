@@ -1,6 +1,6 @@
 ---
 title: Atributo UserPlaycountMorning
-description: O atributo UserPlaycountMorning é o número de vezes que o item foi reproduzido entre 06 00 e 12 00 hora local.
+description: O atributo UserPlaycountMorning é o número de vezes que o item foi tocado entre 06 00 e 12 00 hora local.
 ms.assetid: df942657-c40a-4632-8e43-e226609a95d3
 keywords:
 - Atributo UserPlaycountMorning Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8178b3f05fb61601a46932461c235088f0b14daa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e68fb15fca4425611be8a923dc37928789d1619f3923506a7a459fbc9c4b1c54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762116"
 ---
 # <a name="userplaycountmorning-attribute"></a>Atributo UserPlaycountMorning
 
-O atributo **UserPlaycountMorning** é o número de vezes que o item foi reproduzido entre 06:00 e 12:00 hora local.
+O **atributo UserPlaycountMorning** é o número de vezes que o item foi tocado entre 06:00 e 12:00 hora local.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -32,9 +32,9 @@ O atributo **UserPlaycountMorning** é o número de vezes que o item foi reprodu
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

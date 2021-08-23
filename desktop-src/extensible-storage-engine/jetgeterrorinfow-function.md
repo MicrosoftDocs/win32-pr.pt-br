@@ -17,23 +17,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1bf4db5d8d34a741e57f72e8f237f1497de0bacf
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 52f67063ecd4c2cf3828ecccacf4e37a4c30fb1aad534cd6ae1853411d6a28c7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104092014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719166"
 ---
 # <a name="jetgeterrorinfow-function"></a>Função JetGetErrorInfoW
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgeterrorinfow-function"></a>Função JetGetErrorInfoW
 
 A função **JetGetErrorInfoW** BAS_ do mecanismo de banco de dados.
 
-Observação: esta documentação se baseia em uma versão preliminar do mecanismo de armazenamento extensível. Essas informações estão sujeitas a alterações.
+observação: esta documentação se baseia em uma versão preliminar do mecanismo de Armazenamento extensível. Essas informações estão sujeitas a alterações.
 
 ```cpp
 JET_ERR JET_API JetGetErrorInfoW( 
@@ -90,7 +90,7 @@ Reservado.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./extensible-storage-engine-error-codes.md) com um dos códigos de retorno listados na tabela a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./extensible-storage-engine-error-codes.md) com um dos códigos de retorno listados na tabela a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -144,11 +144,11 @@ A função [JET_ERRINFOBASIC_W](./jet-errinfobasic-w-structure.md) e [JET_ERRCAT
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows 8.</p></td>
+<td><p>Requer Windows 8.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows 8 Server.</p></td>
+<td><p>requer Windows 8 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

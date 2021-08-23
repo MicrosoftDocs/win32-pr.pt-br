@@ -22,16 +22,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: bef8cb8029c62957446ee5d7aefcf67fe5d7acb8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 888da618a0c51fbbb81923e8ff5885d815c3327ab99f8bfa4f76571602059d9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119817806"
 ---
 # <a name="cim_storageredundancygroup-class"></a>\_Classe CIM StorageRedundancyGroup
 
-A classe **CIM \_ StorageRedundancyGroup** representa informações de redundância relacionadas ao armazenamento em massa. Os grupos de redundância de armazenamento são usados para proteger os dados do usuário. Eles são compostos de uma ou mais extensões físicas ou de uma ou mais extensões físicas de agregação. Os grupos de redundância de armazenamento podem se sobrepor; no entanto, as extensões subjacentes dentro da sobreposição não devem conter nenhum dado de verificação.
+A classe **CIM \_ StorageRedundancyGroup** representa informações de redundância relacionadas ao armazenamento em massa. Armazenamento grupos de redundância são usados para proteger os dados do usuário. Eles são compostos de uma ou mais extensões físicas ou de uma ou mais extensões físicas de agregação. Armazenamento grupos de redundância podem se sobrepor; no entanto, as extensões subjacentes dentro da sobreposição não devem conter nenhum dado de verificação.
 
 > [!IMPORTANT]
 > As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
@@ -378,7 +378,7 @@ Algoritmo usado para a redundância e reconstrução de dados. O valor 0 não é
 
 <span id="Copy"></span><span id="copy"></span><span id="COPY"></span>
 
-**Cópia** (3)
+**Copiar** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -392,7 +392,7 @@ Algoritmo usado para a redundância e reconstrução de dados. O valor 0 não é
 
 <span id="P_Q"></span><span id="p_q"></span>
 
-**P + Q** (5)
+**P+Q** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -406,7 +406,7 @@ Algoritmo usado para a redundância e reconstrução de dados. O valor 0 não é
 
 <span id="P_S"></span><span id="p_s"></span>
 
-**P + S** (7)
+**P+S** (7)
 
 
 </dt> <dd></dd> </dl>
@@ -415,11 +415,11 @@ Algoritmo usado para a redundância e reconstrução de dados. O valor 0 não é
 
 ## <a name="remarks"></a>Comentários
 
-A classe **CIM \_ StorageRedundancyGroup** é derivada de [**\_ RedundancyGroup CIM**](cim-redundancygroup.md).
+A **classe CIM \_ StorageRedundancyGroup** é derivada de [**CIM \_ RedundancyGroup**](cim-redundancygroup.md).
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -429,8 +429,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -439,7 +439,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_REDUNDANCYGROUP CIM**](cim-redundancygroup.md)
+[**CIM \_ RedundancyGroup**](cim-redundancygroup.md)
 </dt> </dl>
 
  

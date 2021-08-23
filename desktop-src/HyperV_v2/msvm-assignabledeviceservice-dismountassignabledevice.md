@@ -1,7 +1,7 @@
 ---
 description: Desmonta o dispositivo PCI especificado para que ele possa ser atribuído.
 ms.assetid: 8ea3bc27-93ba-4db8-a4aa-cdfea225eaa9
-title: Método DismountAssignableDevice da classe Msvm_AssignableDeviceService
+title: Método DismountAssignableDevice da classe Msvm_AssignableDeviceService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 53036cd09113430d1045c8e9eae7a8d782b35960
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9b602a26f789b0d7ccded487bafe8c0295133f6e4dd9457d51ce33ee24a8d0c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693476"
 ---
-# <a name="dismountassignabledevice-method-of-the-msvm_assignabledeviceservice-class"></a>Método DismountAssignableDevice da \_ classe AssignableDeviceService Msvm
+# <a name="dismountassignabledevice-method-of-the-msvm_assignabledeviceservice-class"></a>Método DismountAssignableDevice da classe Msvm \_ AssignableDeviceService
 
 Desmonta o dispositivo PCI especificado para que ele possa ser atribuído.
 
@@ -41,28 +41,28 @@ uint32 DismountAssignableDevice(
 
 <dl> <dt>
 
-*DismountSettingData* \[ no\]
+*DismountSettingData* \[ Em\]
 </dt> <dd>
 
 Instância inserida de um objeto de dados de configuração que especifica o dispositivo PCI a ser desmontado.
 
 </dd> <dt>
 
-*DismountedDeviceInstancePath* \[ fora\]
+*DismountedDeviceInstancePath* \[ out\]
 </dt> <dd>
 
 Cadeia de caracteres que contém o caminho da instância do dispositivo para o dispositivo desmontado.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Uma referência ao trabalho (pode ser NULL se a tarefa for concluída).
+Uma referência ao trabalho (pode ser nula se a tarefa for concluída).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 
@@ -71,7 +71,7 @@ Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -83,16 +83,16 @@ Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -101,10 +101,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo não encontrado** (32779)
@@ -116,10 +116,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ para aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

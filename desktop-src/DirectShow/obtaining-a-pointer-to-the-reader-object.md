@@ -1,19 +1,19 @@
 ---
-description: Saiba mais sobre como obter um Ponteiro para o Objeto de Leitor do SDK Windows Media Format usando a interface IWMReaderAdvanced2 no DirectShow.
+description: saiba como obter um ponteiro para o objeto leitor do SDK do formato de mídia Windows usando a interface IWMReaderAdvanced2 no DirectShow.
 ms.assetid: d1292e2f-bd0e-4961-a6fa-8cdaeb28b692
-title: Obtendo um ponteiro para o objeto Reader (DirectShow)
+title: Obtendo um ponteiro para o objeto leitor (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e131b9e111aa5e779d1208b68e04c9979e3b1d7f
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 5c1395a9d1c2cb764e8994600845362816ac2c158ca9ab7d8fdf630a1a51ed00
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633616"
 ---
-# <a name="obtaining-a-pointer-to-the-reader-object-directshow"></a>Obtendo um ponteiro para o objeto Reader (DirectShow)
+# <a name="obtaining-a-pointer-to-the-reader-object-directshow"></a>Obtendo um ponteiro para o objeto leitor (DirectShow)
 
-Em determinados casos, por exemplo, ao determinar quais extensões de unidade de dados são definidas em um determinado fluxo, talvez seja necessário acessar o Objeto de Leitor do SDK do Windows Media Format diretamente. A função a seguir mostra como obter a interface [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) no próprio Objeto de Leitor:
+em determinados casos, por exemplo, ao determinar quais extensões de unidade de dados são definidas em um determinado fluxo, talvez seja necessário acessar o objeto leitor do SDK do formato de mídia Windows diretamente. A função a seguir mostra como obter a interface [**IWMReaderAdvanced2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreaderadvanced2) no próprio objeto Reader:
 
 
 ```C++

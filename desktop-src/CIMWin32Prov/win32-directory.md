@@ -45,16 +45,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6185b9c0d427b7410d36f3fddfaf70c0ed8d364b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1247a965f5d447ab2e6e86737feff96b205a6a74e3cab5e3e94cade9a2f8394c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699846"
 ---
 # <a name="win32_directory-class"></a>\_Classe de diretório Win32
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) de **\_ diretório do Win32** representa uma entrada de diretório em um sistema de computador executando o Windows. Um diretório é um tipo de arquivo que agrupa logicamente os arquivos de dados e fornece informações de caminho para os arquivos agrupados. Exemplo: C: \\ Temp. **Win32 \_ O diretório** não inclui diretórios de unidades de rede.
+A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) de **\_ diretório Win32** representa uma entrada de diretório em um sistema de computador que executa o Windows. Um diretório é um tipo de arquivo que agrupa logicamente os arquivos de dados e fornece informações de caminho para os arquivos agrupados. Exemplo: C: \\ Temp. **Win32 \_ O diretório** não inclui diretórios de unidades de rede.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -122,7 +122,7 @@ A classe de **\_ diretório Win32** tem esses métodos.
 | [**Excluir**](delete-method-in-class-win32-directory.md)                                           | Método de classe que exclui o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                      |
 | [**DeleteEx**](deleteex-method-in-class-win32-directory.md)                                       | Método de classe que exclui o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                      |
 | [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-directory.md)           | Método de classe que determina se o chamador tem as permissões agregadas especificadas pelo argumento *Permissions* não apenas no objeto File, mas no compartilhamento o arquivo ou diretório reside (se estiver em um compartilhamento).<br/> |
-| [**Renomear**](rename-method-in-class-win32-directory.md)                                           | Método de classe que renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                      |
+| [**Nome**](rename-method-in-class-win32-directory.md)                                           | Método de classe que renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                      |
 | [**TakeOwnerShip**](takeownership-method-in-class-win32-directory.md)                             | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                        |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-win32-directory.md)                         | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                        |
 | [**Descompactar**](uncompress-method-in-class-win32-directory.md)                                   | Método de classe que descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                 |
@@ -376,7 +376,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("compactado")
 </dt> </dl>
 
-Indica se a pasta foi compactada ou não. O WMI reconhece pastas compactadas usando o próprio WMI ou usando a interface gráfica do usuário; no entanto, ele não reconhece. Arquivos ZIP como compactados. Se **for true**, o arquivo será compactado.
+Indica se a pasta foi compactada ou não. O WMI reconhece pastas compactadas usando o próprio WMI ou usando a interface gráfica do usuário; no entanto, ele não reconhece .ZIP arquivos como sendo compactados. Se **for true**, o arquivo será compactado.
 
 Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
@@ -606,7 +606,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Tamanho**
+**FileSize**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt64**
@@ -626,7 +626,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Talvez**
+**FileType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -786,7 +786,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-A propriedade Name é uma cadeia de caracteres que representa o nome herdado que serve como uma chave de uma instância de arquivo lógico em um sistema de arquivos. Devem ser fornecidos nomes de caminho completos. Exemplo: C: \\ \\ sistema Windows \\win.ini
+A propriedade Name é uma cadeia de caracteres que representa o nome herdado que serve como uma chave de uma instância de arquivo lógico em um sistema de arquivos. Devem ser fornecidos nomes de caminho completos. exemplo: C: \\ Windows \\ sistema \\win.ini
 
 Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
@@ -929,7 +929,7 @@ Não **recuperar** ("Recover")
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -939,66 +939,66 @@ Não **recuperar** ("Recover")
 **System**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("arquivo do sistema")
+Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Arquivo do Sistema")
 </dt> </dl>
 
-Indica se o objeto é um arquivo do sistema. Se for **true**, o arquivo será um arquivo do sistema
+Indica se o objeto é um arquivo do sistema. Se **True**, o arquivo será um arquivo do sistema
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **Gravável**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("gravável")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Writeable")
 </dt> </dl>
 
-Se **for true**, o arquivo poderá ser gravado.
+Se **True**, o arquivo poderá ser gravado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe do **\_ diretório Win32** é derivada [**do \_ diretório CIM**](cim-directory.md).
+A **classe \_ Diretório Win32** é derivada do [**Diretório \_ CIM.**](cim-directory.md)
 
 **Visão geral**
 
-As pastas são objetos do sistema de arquivos criados para conter outros objetos do sistema de arquivos. No entanto, isso não significa que todas as pastas são semelhantes. Em vez disso, as pastas podem variar consideravelmente. Algumas pastas são pastas do sistema operacional, que geralmente não devem ser modificadas por um script. Algumas pastas são somente leitura, o que significa que os usuários podem acessar o conteúdo dessa pasta, mas não podem adicionar, excluir ou modificar esses conteúdos. Algumas pastas são compactadas para armazenamento ideal, enquanto outras ficam ocultas e não são visíveis para os usuários.
+As pastas são objetos do sistema de arquivos projetados para conter outros objetos do sistema de arquivos. No entanto, isso não significa que todas as pastas sejam iguais. Em vez disso, as pastas podem variar consideravelmente. Algumas pastas são pastas do sistema operacional, que geralmente não devem ser modificadas por um script. Algumas pastas são somente leitura, o que significa que os usuários podem acessar o conteúdo dessa pasta, mas não podem adicionar, excluir ou modificar esses conteúdos. Algumas pastas são compactadas para o armazenamento ideal, enquanto outras ficam ocultas e não são visíveis para os usuários.
 
-O WMI usa a classe de **\_ diretório do Win32** para gerenciar pastas. Significativamente, as propriedades e os métodos disponíveis nessa classe são idênticos às propriedades e aos métodos disponíveis na classe de [**\_ arquivo**](cim-datafile.md) de arquivos CIM, a classe usada para gerenciar arquivos. Isso significa que, depois de aprender a gerenciar pastas usando o WMI, você terá, sem qualquer trabalho extra, também saberá como gerenciar arquivos.
+O WMI usa a **classe Diretório \_ Win32** para gerenciar pastas. Significativamente, as propriedades e os métodos disponíveis nessa classe são idênticos às propriedades e métodos disponíveis na classe [**CIM \_ DataFile,**](cim-datafile.md) a classe usada para gerenciar arquivos. Isso significa que, depois de aprender a gerenciar pastas usando o WMI, você também aprenderá, sem nenhum trabalho extra, como gerenciar arquivos.
 
-A classe de associação de [**\_ subdiretório Win32**](win32-subdirectory.md) também é usada para gerenciar arquivos e pastas. A classe de **\_ subdiretório Win32** relaciona uma pasta e suas subpastas imediatas. Por exemplo, na estrutura de pastas C: \\ scripts \\ logs, logs é uma subpasta de scripts e scripts é uma subpasta da pasta raiz C: \\ . No entanto, os logs não são considerados uma subpasta de C: \\ .
+A [**classe de associação do \_ Subdiretório Win32**](win32-subdirectory.md) também é usada para gerenciar arquivos e pastas. A **classe \_ Subdiretório Win32** relaciona uma pasta e suas subpastas imediatas. Por exemplo, na estrutura de pastas C: Scripts Logs, Logs é uma subpasta de Scripts e Scripts é uma \\ \\ subpasta da pasta raiz C: \\ . No entanto, os logs não são considerados uma subpasta de C: \\ .
 
-Você pode recuperar as propriedades de qualquer pasta no sistema de arquivos usando a classe de **\_ diretório Win32** . As propriedades disponíveis usando essa classe são mostradas na tabela 11,1. Para recuperar as propriedades de uma única pasta, construa uma consulta WQL (linguagem de consulta do Windows) para a classe do **\_ diretório Win32** , certificando-se de incluir o nome da pasta. Por exemplo, essa consulta é vinculada à pasta D: \\ arquivo morto:
+Você pode recuperar as propriedades de qualquer pasta no sistema de arquivos usando a **classe Diretório \_ Win32.** As propriedades disponíveis usando essa classe são mostradas na Tabela 11.1. Para recuperar as propriedades de uma única pasta, construa uma consulta WQL (Linguagem de Consulta Windows) para a classe **do Diretório \_ Win32,** certifique-se de incluir o nome da pasta. Por exemplo, essa consulta é vinculada à pasta D: \\ Arquivo morto:
 
 `        Copy     "SELECT * FROM Win32_Directory WHERE Name = 'D:\\Archive'"`
 
-Ao especificar um nome de arquivo ou pasta em uma consulta WQL, certifique-se de usar duas barras invertidas ( \\ \\ ) para separar componentes de caminho.
+Ao especificar um nome de arquivo ou pasta em uma consulta WQL, certifique-se de usar duas malhas instrínteses ( ) para separar os componentes \\ \\ de caminho.
 
-Se você quiser limitar a recuperação de dados a uma única unidade de disco, inclua uma cláusula WHERE especificando a letra da unidade. Por exemplo, essa consulta retorna uma lista de todas as pastas na unidade C:
+Se você quiser limitar a recuperação de dados a uma única unidade de disco, inclua uma cláusula Where especificando a letra da unidade. Por exemplo, essa consulta retorna uma lista de todas as pastas na unidade C:
 
 `"SELECT * FROM Win32_Directory WHERE Drive = 'C:'"`
 
-Se você precisar enumerar todas as pastas em um computador, lembre-se de que essa consulta pode levar um tempo estendido para ser concluída.
+Se você precisar enumerar todas as pastas em um computador, esteja ciente de que essa consulta pode levar muito tempo para ser concluída.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de VBScript a seguir recupera as propriedades da pasta C: \\ scripts.
+O exemplo de VBScript a seguir recupera propriedades para a pasta C: \\ Scripts.
 
 
 ```VB
@@ -1049,8 +1049,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1059,7 +1059,7 @@ Next
 
 <dl> <dt>
 
-[**\_Diretório CIM**](cim-directory.md)
+[**Diretório \_ CIM**](cim-directory.md)
 </dt> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))

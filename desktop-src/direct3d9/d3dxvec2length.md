@@ -1,7 +1,7 @@
 ---
 description: Retorna o comprimento de um vetor 2D.
 ms.assetid: 376fd2ca-c89d-41e7-a15c-a79d7281d010
-title: Função D3DXVec2Length (D3dx9math. h)
+title: Função D3DXVec2Length (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1753098d164cd67e79770a0ecfcf5db4d047c1a0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: bddfbb617b05212b04977965fc4d9497df8b839757aa137e43962072f3ed2226
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676046"
 ---
 # <a name="d3dxvec2length-function"></a>Função D3DXVec2Length
 
@@ -40,18 +40,18 @@ FLOAT D3DXVec2Length(
 
 <dl> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Ponteiro para a estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
+Ponteiro para a estrutura [**D3DXVECTOR2 de**](d3dxvector2.md) origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 O comprimento do vetor.
 
@@ -61,8 +61,8 @@ O comprimento do vetor.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

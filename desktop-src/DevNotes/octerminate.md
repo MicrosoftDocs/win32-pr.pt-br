@@ -1,5 +1,5 @@
 ---
-description: Fecha o Gerenciador de OC.
+description: Fecha o gerenciador de OC.
 ms.assetid: feba9954-03b2-4b57-b7ba-933e171751ff
 title: Função OcTerminate
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - OcManage.dll
-ms.openlocfilehash: 2e747c19db5e5a79e2827dc3bcfb88b97fae2ba6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 399bdb936befb4f7ff45f9f5a3b132245b984bf2a5201ce054ee0fbeb50f5598
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833346"
 ---
 # <a name="octerminate-function"></a>Função OcTerminate
 
-Fecha o Gerenciador de OC.
+Fecha o gerenciador de OC.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,10 +39,10 @@ VOID OcTerminate(
 
 <dl> <dt>
 
-*OcManagerContext* \[ entrada, saída\]
+*OcManagerContext* \[ in, out\]
 </dt> <dd>
 
-Na entrada, contém o ponteiro de contexto do Gerenciador OC retornado por [**OcInitialize**](ocinitialize.md). Na saída, recebe **NULL**.
+Na entrada, contém o ponteiro de contexto do gerenciador de OC retornado por [**OcInitialize**](ocinitialize.md). Na saída, recebe **NULL.**
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

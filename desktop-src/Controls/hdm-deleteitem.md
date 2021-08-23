@@ -3,7 +3,7 @@ title: Mensagem de HDM_DELETEITEM (commctrl. h)
 description: Exclui um item de um controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a \_ macro DeleteItem do cabeçalho.
 ms.assetid: 1dd1f233-2812-41ae-8a36-c42b9ac70ffc
 keywords:
-- Controles de HDM_DELETEITEM de mensagens do Windows
+- controles de Windows de mensagem de HDM_DELETEITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6a3ec4b48c3dcc77579f70d26cd55b7127f5a6d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28b0a48d769117ffd68f2ba2af9695fe7fce00031f297626ae48c111d4574dd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697346"
 ---
 # <a name="hdm_deleteitem-message"></a>\_Mensagem HDM DELETEITEM
 
@@ -39,7 +39,7 @@ Um índice do item a ser excluído.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -49,9 +49,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

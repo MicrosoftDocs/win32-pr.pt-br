@@ -3,9 +3,9 @@ title: Método IWMPControls playItem
 description: O método playItem reproduz o item de mídia especificado. | Método IWMPControls playItem
 ms.assetid: ddd4e4f7-475c-4964-a623-9123ed66be8e
 keywords:
-- método playItem Windows Media Player
+- Windows Media Player do método playItem
 - método playItem Windows Media Player, interface IWMPControls
-- Interface IWMPControls Windows Media Player, método playItem
+- Windows Media Player de interface IWMPControls, método playItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b2ac11f93409128eccc88c1d916144615d77476
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1fabab78fe60120110f72176885e3b5825699b83782272dfbef0b48c165d1d02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761026"
 ---
 # <a name="iwmpcontrolsplayitem-method"></a>IWMPControls: método layItem de:p
 
@@ -60,7 +60,7 @@ Uma interface **WMPLib. IWMPMedia** para o item de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

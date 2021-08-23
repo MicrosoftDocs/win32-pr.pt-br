@@ -1,7 +1,7 @@
 ---
 description: Representa os dados de configuração de isolamento.
 ms.assetid: f6bf5fcf-61c4-4e69-8ba0-fff4c4873368
-title: Classe Msvm_EthernetSwitchPortIsolationSettingData
+title: Msvm_EthernetSwitchPortIsolationSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3d7761b090cfd3bf2ae6aaaa92e9c5d09d55eae6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33ddf01fb7df5787fc35c073472987aa9a170e62086cd6c127f874cb2360b38d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681526"
 ---
-# <a name="msvm_ethernetswitchportisolationsettingdata-class"></a>\_Classe Msvm EthernetSwitchPortIsolationSettingData
+# <a name="msvm_ethernetswitchportisolationsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortIsolationSettingData
 
 Representa os dados de configuração de isolamento.
 
@@ -45,77 +45,77 @@ class Msvm_EthernetSwitchPortIsolationSettingData : Msvm_EthernetSwitchPortFeatu
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortIsolationSettingData** tem estes tipos de membros:
+A **classe Msvm \_ EthernetSwitchPortIsolationSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortIsolationSettingData** tem essas propriedades.
+A **classe Msvm \_ EthernetSwitchPortIsolationSettingData** tem essas propriedades.
 
 <dl> <dt>
 
 **AllowUntaggedTraffic**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (2), [**versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificadores: **WmiDataId** (2), [**Versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Se a porta tem permissão para enviar/receber tráfego não marcado.
 
 </dd> <dt>
 
-**Defaultisolaid**
+**DefaultIsolationId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (3), [**versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificadores: **WmiDataId** (3), [**Versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-O VirtualSubnetId ou a VLAN padrão que será definida em todos os tráfegos de envio/recebimento se **AllowedUntaggedTraffic** for **true**.
+O VirtualSubnetId padrão ou VLAN que será definido em todo o tráfego de envio/recebimento se **AllowedUntaggedTraffic** for **true.**
 
 </dd> <dt>
 
 **EnableMultiTenantStack**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (4), [**versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificadores: **WmiDataId** (4), [**Versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Se **for true**, a pilha de rede na VM poderá acessar a configuração de isolamento. O valor padrão é **false**.
+Se **true**, a pilha de rede na VM poderá acessar a configuração de isolamento. O valor padrão é **false**.
 
 </dd> <dt>
 
 **IsolationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: **WmiDataId** (1), [**versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Qualificadores: **WmiDataId** (1), [**Versão**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisão**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Se a porta está usando **VLAN** ou **VirtualSubnetId** para isolamento. **NativeVirtualSubnetId** é usado para redes baseadas em VIRTUALSUBNETID do WNV.
+Se a porta está usando **VLAN** ou **VirtualSubnetId** para isolamento. **NativeVirtualSubnetId** é usado para redes baseadas em WNV VirtualSubnetId.
 
 <dt>
 
@@ -157,8 +157,8 @@ Se a porta está usando **VLAN** ou **VirtualSubnetId** para isolamento. **Nativ
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

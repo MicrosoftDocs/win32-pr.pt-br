@@ -1,38 +1,38 @@
 ---
-description: Nome de processadores e colocação de mensagens em processadores.
+description: Nomeando emailslots e colocando mensagens em emailslots.
 ms.assetid: 1ef522a4-9786-427c-a18a-ae1f0a05cc50
-title: Nomes de processador de processadores
+title: Nomes do Maillot
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf03718a7e603fe891e00d82c2b0b06fab63f8f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6f96cc5300b3472abe7d6e824266bd0abd0e7b668e38f9f3462eee3cbf3dfb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716896"
 ---
-# <a name="mailslot-names"></a>Nomes de processador de processadores
+# <a name="mailslot-names"></a>Nomes do Maillot
 
-Quando um processo cria um processador de itens, o nome do processador de processadores deve ter o seguinte formato.
+Quando um processo cria um maillot, o nome do maillot deve ter o formulário a seguir.
 
-\\\\.\\ nome do \\ \[ *caminho* \\ \]  do processador de processadores
+\\\\.\\ nome \\ do \[ caminho \\ \]  do maillot
 
-Um nome de processador de texto requer os seguintes elementos: duas barras invertidas para iniciar o nome, um ponto, uma barra invertida após o período, a palavra "processador de texto" e uma barra invertida à direita. Os nomes não diferenciam maiúsculas de minúsculas. Um nome de processador de itens pode ser precedido por um caminho que consiste nos nomes de um ou mais diretórios, separados por barras invertidas. Por exemplo, se um usuário espera mensagens no assunto de impostos de Bob, Pete e Suzana, o aplicativo do processador de mensagens do usuário pode permitir que o usuário crie processadores de mensagens individuais para cada remetente, como mostrado aqui:<dl> \\\\.\\ \\ \\ comentários bobs de taxas de processador de processadores \_  
-\\\\.\\ os impostos do processador de \\ taxas \\ petem \_ comentários  
-\\\\.\\ \\ \\ comentários sues de taxas de processador de processadores \_  
+Um nome maillot requer os seguintes elementos: duas malhas invertida para iniciar o nome, um ponto, uma faixa invertida após o período, a palavra "maillot" e uma faixa invertida à parte final. Os nomes não são sensíveis a minúsculas. Um nome de maillot pode ser precedido por um caminho que consiste nos nomes de um ou mais diretórios, separados por malhas in-back. Por exemplo, se um usuário espera mensagens sobre o assunto de impostos de Bob, Mail e Maillot, o aplicativo maillot do usuário pode permitir que o usuário crie emailslots individuais para cada remetente, conforme mostrado aqui:<dl> \\\\.\\ emailslot \\ impostos \\ bobs \_ comments  
+\\\\.\\ emailslot \\ impostos \\ sobre comentários \_  
+\\\\.\\ impostos do maillot \\ \\ \_ acionará comentários  
 </dl>
 
-Para colocar uma mensagem em um processador de mensagens, um processo abre um processador por nome. Para gravar em um processador de processadores no computador local, um processo pode usar um nome de processador de processadores que tenha a mesma forma usada para criar um processador de processadores. No entanto, essa situação é relativamente incomum. Com mais frequência, você usaria o seguinte formulário para gravar em um processador de processadores em um computador remoto específico:
+Para colocar uma mensagem em um maillot, um processo abre um maillot por nome. Para gravar em um maillot no computador local, um processo pode usar um nome maillot que tenha o mesmo formulário usado para criar um maillot. No entanto, essa situação é relativamente incomum. Com mais frequência, você usaria o seguinte formulário para gravar em um maillot em um computador remoto específico:
 
-\\\\*ComputerName* \\ nome do \\ \[ *caminho* \\ \]  do processador de processadores
+\\\\*ComputerName* \\ nome \\ do \[ caminho \\ \]  do maillot
 
-Para colocar uma mensagem em cada processador de mensagens no domínio especificado com um determinado nome, use o seguinte formato:
+Para colocar uma mensagem em cada maillot no domínio especificado com um determinado nome, use o seguinte formulário:
 
-\\\\*Nome_do_domínio* \\ nome do \\ \[ *caminho* \\ \]  do processador de processadores
+\\\\*DomainName* \\ nome \\ do \[ caminho \\ \]  do maillot
 
-Para colocar uma mensagem em cada processador de mensagens com um nome específico no domínio primário do sistema, use o seguinte formato:
+Para colocar uma mensagem em cada maillot com um determinado nome no domínio primário do sistema, use o seguinte formulário:
 
-\\\\\*\\nome do \\ \[ *caminho* \\ \]  do processador de processadores
+\\\\\*\\nome \\ do \[ caminho \\ \]  do maillot
 
  
 

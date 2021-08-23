@@ -5,19 +5,19 @@ ms.assetid: 3d4d8d22-4cd3-48e0-b4a4-dfa0a0b7b87f
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05878a5243774046c1ca052052d59be9378483d6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 204fff8d97548e79eed3e317b3e14291e7288b55c51384c25ef8b912ad2d6095
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105754144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799456"
 ---
 # <a name="about-nps-extensions"></a>Sobre as extensões do NPS
 
 > [!Note]  
-> O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
+> o IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
 
- 
+ 
 
 Esta seção descreve como implementar DLLs para estender a funcionalidade do NPS. Ele descreve a interação entre o NPS e as DLLs e apresenta algumas considerações de design sobre as DLLs.
 
@@ -34,14 +34,14 @@ Se um DLL de extensão de autenticação retornar ACCEPT, o pacote ignorará a a
 > [!Note]  
 > Quando várias DLLs de extensão de autenticação estão presentes, o restante das DLLs de extensão também pode ser ignorado. Consulte [configurando as DLLs de extensão](/windows/desktop/Nps/ias-setting-up-the-extension-and-authorization-dlls) para obter mais informações.
 
- 
+ 
 
 Se uma DLL de extensão de autenticação retornar continuar, o pacote vai para a autenticação do NPS e, em seguida, para a autorização do NPS.
 
 > [!Note]  
 > Quando várias DLLs de extensão de autenticação estão presentes, o restante das DLLs de extensão de autenticação são invocadas antes da autenticação NPS.
 
- 
+ 
 
 Os tópicos a seguir descrevem as DLLs de extensão com mais detalhes:
 
@@ -49,6 +49,6 @@ Os tópicos a seguir descrevem as DLLs de extensão com mais detalhes:
 -   [Invocando as DLLs de extensão](/windows/desktop/Nps/ias-authentication-and-authorization-process)
 -   [Atributos de identificação de usuário](/windows/desktop/Nps/ias-user-identification-attributes)
 
- 
+ 
 
- 
+ 

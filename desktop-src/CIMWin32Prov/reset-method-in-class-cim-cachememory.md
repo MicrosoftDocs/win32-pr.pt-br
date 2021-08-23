@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 58c73f392ab6e380c29374aa8116918e788e1ddd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: da5cd756e3f0a56aa51f5de7ef388973d25542853ca29ed4e247ed991ac45698
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700246"
 ---
 # <a name="reset-method-of-the-cim_cachememory-class"></a>Método Reset da classe CIM \_ CacheMemory
 
@@ -43,7 +43,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 

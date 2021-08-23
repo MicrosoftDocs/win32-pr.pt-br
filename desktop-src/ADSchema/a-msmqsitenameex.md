@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace461d45356b18558e04c3b1920656f6faa5ed9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e8838e6b9a77a2060a4520b45d02c1e9b1fa302ddfb3b51bffbd01691a2101e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762006"
 ---
 # <a name="msmq-site-name-ex-attribute"></a>Atributo MSMQ-site-Name-ex
 
@@ -58,7 +58,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -66,7 +66,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -87,7 +87,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -108,7 +108,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -129,7 +129,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -150,7 +150,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| É de valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
 | No catálogo global      | Falso                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
@@ -171,7 +171,7 @@ O atributo **MSMQ-site-Name-ex** contém informações de modo misto do MSMQ.
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**Configurações MSMQ**](c-msmqsettings.md)<br/> |
 
 
 

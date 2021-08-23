@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24dd07faecc66bc50c408eab36bcbd8c93c460ef
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 942fcf03d97c7d787231e896199bce0d4c53cf78d16f6b25741e604238bf06b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741756"
 ---
 # <a name="fileokstring-message"></a>Mensagem FILEOKSTRING
 
-\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
+\[Começando com Windows Vista,  as  caixas de diálogo Abrir e Salvar como comuns foram superadas pela caixa [de diálogo Item Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
 Uma **caixa** de diálogo Abrir ou Salvar **como** envia a mensagem registrada **FILEOKSTRING** para o procedimento de [*gancho, OFNHookProc,*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)quando o usuário especifica um nome de arquivo e clica no **botão OK.** O procedimento de gancho pode aceitar o nome do arquivo e permitir que a caixa de diálogo feche ou rejeite o nome do arquivo e force a caixa de diálogo a permanecer aberta.
 
@@ -54,7 +54,7 @@ Um ponteiro para uma [**estrutura OPENFILENAME.**](/windows/win32/api/commdlg/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o procedimento de gancho retornar zero, a caixa de diálogo **Abrir** ou Salvar **como** aceitará o nome de arquivo especificado e fechará.
 
@@ -72,7 +72,7 @@ O procedimento de gancho deve especificar a constante **FILEOKSTRING** em uma ch
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **FILEOKSTRINGW** (Unicode) e **FILEOKSTRINGA** (ANSI)<br/>                                      |
 
 
@@ -84,7 +84,7 @@ O procedimento de gancho deve especificar a constante **FILEOKSTRING** em uma ch
 **Referência**
 </dt> <dt>
 
-[**CDN \_ FILEOK**](cdn-fileok.md)
+[**\_CDN Fileok**](cdn-fileok.md)
 </dt> <dt>
 
 [**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)

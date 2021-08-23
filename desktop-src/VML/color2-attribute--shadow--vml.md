@@ -1,24 +1,24 @@
 ---
-title: Atributo Color2 (sombra) (VML)
-description: Atributo Color2 (sombra) (VML)
+title: Atributo Color2 (Sombra)(VML)
+description: Atributo Color2 (Sombra)(VML)
 ms.assetid: 265d189a-1a11-4f57-9299-1bc1efd13595
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e735d7672457153881d384c7b625199cf4a202e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 241c7e0a620b6b5f2f54a8849779dcc905d027781fe38a5121ca74b6acbeac4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655696"
 ---
-# <a name="color2-attribute-shadowvml"></a>Atributo Color2 (sombra) (VML)
+# <a name="color2-attribute-shadowvml"></a>Atributo Color2 (Sombra)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Define a segunda cor de uma sombra. Leitura/gravação. **VgColor**.
 
@@ -28,19 +28,19 @@ Define a segunda cor de uma sombra. Leitura/gravação. **VgColor**.
 
 **Sintaxe de marca**
 
-<v: *Element* color2 = " *expressão* " >
+<v: *elemento* color2=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . color2 = "*expressão*"
+*elemento* .color2="*expression*"
 
-*expressão* = de *elemento*. color2
+*expressão* = *elemento*.color2
 
 **Comentários**
 
-Use uma segunda cor para criar efeitos de sombra especiais. Consulte o atributo [Type](type-attribute--shadow--vml.md) para obter mais informações sobre as segundas cores.
+Use uma segunda cor para criar efeitos de sombra especiais. Consulte o [atributo Type](type-attribute--shadow--vml.md) para obter mais informações sobre as segundas cores.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
@@ -59,6 +59,6 @@ A sombra tem azul para uma segunda cor.
 
 
 
- 
+ 
 
- 
+ 

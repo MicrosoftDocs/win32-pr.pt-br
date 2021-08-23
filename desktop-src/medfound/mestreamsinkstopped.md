@@ -1,29 +1,29 @@
 ---
-description: Gerado por um coletor de fluxo quando ele conclui a transição para o estado parado. A transição para parada ocorre quando o método IMFPresentationClock Stop é chamado no relógio de apresentação dos coletores.
+description: Gerado por um sink de fluxo quando ele conclui a transição para o estado parado. A transição para parado ocorre quando o método Stop IMFPresentationClock é chamado no relógio de apresentação dos sinks.
 ms.assetid: 1a8c7faa-4d4a-4458-ad08-a760a15dc347
-title: Evento MEStreamSinkStopped (Mfobjects. h)
+title: Evento MEStreamSinkStopped (Mfobjects.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e35313ab3d43c950184a82e403fa6ad0eb5b4ab4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d7bf6a39dca8f50fed8fdd1d0137405225624999fab42771e485174ba4f0afa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715096"
 ---
 # <a name="mestreamsinkstopped-event"></a>Evento MEStreamSinkStopped
 
-Gerado por um coletor de fluxo quando ele conclui a transição para o estado parado. A transição para parada ocorre quando o método [**IMFPresentationClock:: Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-stop) é chamado no relógio de apresentação do coletor.
+Gerado por um sink de fluxo quando ele conclui a transição para o estado parado. A transição para parado ocorre quando o [**método IMFPresentationClock::Stop**](/windows/desktop/api/mfidl/nf-mfidl-imfpresentationclock-stop) é chamado no relógio de apresentação do sink.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE              | Descrição                           |
+| Vartype              | Descrição                           |
 |----------------------|---------------------------------------|
-| VT \_ vazio<br/> | Nenhum dado do evento.<br/> <br/> |
+| VT \_ VAZIO<br/> | Nenhum dado do evento.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,10 +43,10 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
-[Coletores de mídia](media-sinks.md)
+[Sinks de mídia](media-sinks.md)
 </dt> </dl>
 
  

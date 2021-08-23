@@ -1,5 +1,5 @@
 ---
-description: A \_ estrutura de cabeçalho bruto do WIA \_ define uma imagem no formato de dados brutos de um dispositivo e permite que os aplicativos usem o formato bruto em transferências do WIA (aquisição de imagem do Windows).
+description: a \_ estrutura de cabeçalho bruto do WIA \_ define uma imagem no formato de dados brutos de um dispositivo e permite que os aplicativos usem o formato bruto em transferências de aquisição de imagem de Windows (WIA).
 ms.assetid: c7b50816-d596-4c62-a00e-cd8d6e303e42
 title: Estrutura de WIA_RAW_HEADER (Wiadef. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadef.h
-ms.openlocfilehash: 8da33f0b257168712f1b16fb7f940df5db862d3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b4e89f47737788fa9ebf238f06f6420eafbc31d7b27ab7933372d0716fb6588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105798270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812946"
 ---
 # <a name="wia_raw_header-structure"></a>\_Estrutura de \_ cabeçalho bruto WIA
 
-A estrutura de **\_ \_ cabeçalho bruto do WIA** define uma imagem no formato de dados brutos de um dispositivo e permite que os aplicativos usem o formato bruto em transferências do WIA (aquisição de imagem do Windows).
+a estrutura de **\_ \_ cabeçalho bruto do WIA** define uma imagem no formato de dados brutos de um dispositivo e permite que os aplicativos usem o formato bruto em transferências de aquisição de imagem de Windows (WIA).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -282,9 +282,9 @@ A paleta e os dados podem ser obtidos em qualquer ordem.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
 
 
 

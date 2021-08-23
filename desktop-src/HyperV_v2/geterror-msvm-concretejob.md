@@ -1,7 +1,7 @@
 ---
-description: Método GetError da classe Msvm_ConcreteJob – recupera o objeto de erro para o trabalho, se existir um.
+description: Método GetError da classe Msvm_ConcreteJob - recupera o objeto de erro para o trabalho, se houver um.
 ms.assetid: 7E810CBE-F18F-4EFA-B52E-631CD071D136
-title: Método GetError da classe Msvm_ConcreteJob
+title: Método GetError da classe Msvm_ConcreteJob dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c222a7091550b5ee831330f100292549e31ce5ff
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c169636931ff0d284d20cb616450a5a716848dd074347f3e96abafd4a153693a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682426"
 ---
-# <a name="geterror-method-of-the-msvm_concretejob-class"></a>Método GetError da \_ classe Msvm ConcreteJob
+# <a name="geterror-method-of-the-msvm_concretejob-class"></a>Método GetError da classe Msvm \_ ConcreteJob
 
-Recupera o objeto de erro para o trabalho, se houver um. Quando o trabalho está em execução ou termina sem erro, esse método não retorna um objeto de [**\_ erro CIM**](/previous-versions//cc150671(v=vs.85)) . No entanto, se o trabalho falhou devido a algum problema interno ou porque o trabalho foi encerrado por um cliente, uma instância de **\_ erro CIM** é retornada.
+Recupera o objeto de erro para o trabalho, se houver um. Quando o trabalho está em execução ou foi encerrado sem erro, esse método não retorna um [**objeto de \_ erro CIM.**](/previous-versions//cc150671(v=vs.85)) No entanto, se o trabalho tiver falhado devido a algum problema interno ou porque o trabalho foi encerrado por um cliente, uma instância de Erro **CIM \_** será retornada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,18 +39,18 @@ uint32 GetError(
 
 <dl> <dt>
 
-*Erro* \[ do fora\]
+*Erro* \[ out\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
-Se o status operacional do trabalho não for 2 (OK), esse método retornará uma instância inserida da classe [**de \_ erro Msvm**](msvm-error.md) , no formato CIM-XML. Se o status operacional do trabalho for 2 (OK), será retornado **NULL** .
+Se o status operacional do trabalho não for 2 (OK), esse método retornará uma instância inserida da [**classe Msvm \_ Error,**](msvm-error.md) no formato CIM-XML. Se o status operacional do trabalho for 2 (OK), **Null** será retornado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Esse método retorna um dos valores a seguir.
 
@@ -68,16 +68,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -86,15 +86,15 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe [**Msvm \_ ConcreteJob**](msvm-concretejob.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe Msvm \_ ConcreteJob**](msvm-concretejob.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,15 +102,15 @@ O acesso à classe [**Msvm \_ ConcreteJob**](msvm-concretejob.md) pode ser restr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

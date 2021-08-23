@@ -11,12 +11,12 @@ api_name:
 - SimIccID
 api_type:
 - Schema
-ms.openlocfilehash: f566253ad3e86b4f7ee7317cf125d9e649034847
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a6e4a20d93396337e2af0f0533486618dc707760f1ccd5c4f20f399cbdbf203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777856"
 ---
 # <a name="simiccid-mbnprofile-element"></a>Elemento SimIccID (MBNProfile)
 
@@ -38,7 +38,7 @@ O elemento **SimIccID** é definido pelo elemento [**MBNProfile**](schema-mbnpro
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

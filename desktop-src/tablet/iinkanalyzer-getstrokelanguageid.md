@@ -1,7 +1,7 @@
 ---
 description: Retorna o identificador de localidade do traço especificado.
 ms.assetid: a5fb9b7a-ed3e-4552-9412-39529203bd81
-title: 'Método IInkAnalyzer:: GetStrokeLanguageId (IACom. h)'
+title: Método IInkAnalyzer::GetEntrokeLanguageId (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: a231dde453467ad2973d729fa068cedcc35151c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b61bfa61b4e4aa2c8415c9596cb97a3b0c1313cf3a080d065a7c82e4d69b84d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713386"
 ---
-# <a name="iinkanalyzergetstrokelanguageid-method"></a>Método IInkAnalyzer:: GetStrokeLanguageId
+# <a name="iinkanalyzergetstrokelanguageid-method"></a>Método IInkAnalyzer::GetEntrokeLanguageId
 
 Retorna o identificador de localidade do traço especificado.
 
@@ -40,27 +40,27 @@ HRESULT GetStrokeLanguageId(
 
 <dl> <dt>
 
-*lStrokeId* \[ no\]
+*lStrkeId* \[ Em\]
 </dt> <dd>
 
 O identificador de traço.
 
 </dd> <dt>
 
-*lStrokeLCID* \[ fora\]
+*lRogkeLCID* \[ out\]
 </dt> <dd>
 
 O identificador de localidade para o traço especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
-A localidade do traço é definida quando você adiciona o traço chamando [**IInkAnalyzer:: addstroke**](iinkanalyzer-addstroke.md), o método [**IInkAnalyzer:: AddStrokeForLanguage**](iinkanalyzer-addstrokeforlanguage.md), o método [**IInkAnalyzer:: AddStrokes**](iinkanalyzer-addstrokes.md)ou o [**método IInkAnalyzer:: AddStrokesForLanguage**](iinkanalyzer-addstrokesforlanguage.md). Para alterar a localidade do traço, use o método [**IInkAnalyzer:: SetStrokeLanguageId**](iinkanalyzer-setstrokelanguageid.md) ou o método [**IInkAnalyzer:: SetStrokesLanguageId**](iinkanalyzer-setstrokeslanguageid.md).
+A localidade do traço é definida quando você adiciona o traço chamando o método [**IInkAnalyzer::AddStrke**](iinkanalyzer-addstroke.md), [**Método IInkAnalyzer::AddRogkeForLanguage**](iinkanalyzer-addstrokeforlanguage.md), [**Método IInkAnalyzer::AddEntrokes**](iinkanalyzer-addstrokes.md)ou Método [**IInkAnalyzer::Add IssokesForLanguage**](iinkanalyzer-addstrokesforlanguage.md). Para alterar a localidade do traço, use o Método [**IInkAnalyzer::SetOsekeLanguageId**](iinkanalyzer-setstrokelanguageid.md) ou o Método [**IInkAnalyzer::SetOsekesLanguageId**](iinkanalyzer-setstrokeslanguageid.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ A localidade do traço é definida quando você adiciona o traço chamando [**II
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -82,10 +82,10 @@ A localidade do traço é definida quando você adiciona o traço chamando [**II
 [**IInkAnalyzer**](iinkanalyzer.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: SetStrokeLanguageId**](iinkanalyzer-setstrokelanguageid.md)
+[**Método IInkAnalyzer::SetRogkeLanguageId**](iinkanalyzer-setstrokelanguageid.md)
 </dt> <dt>
 
-[**Método IInkAnalyzer:: SetStrokesLanguageId**](iinkanalyzer-setstrokeslanguageid.md)
+[**Método IInkAnalyzer::SetRogkesLanguageId**](iinkanalyzer-setstrokeslanguageid.md)
 </dt> <dt>
 
 [Referência de análise de tinta](ink-analysis-reference.md)

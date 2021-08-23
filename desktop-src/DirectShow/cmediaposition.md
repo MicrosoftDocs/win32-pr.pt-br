@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 60d06a08badf3302ef4ddb352d840842a2605600
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7305d5eded589e167352ce7ff13194b52965b939daf907e8381b64684a03d1bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789973"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634846"
 ---
 # <a name="cmediaposition-class"></a>Classe CMediaPosition
 
@@ -29,7 +29,7 @@ ms.locfileid: "105789973"
 
 A classe **CMediaPosition** manipula os métodos **IDispatch** da interface dupla [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) .
 
-Essa classe herda a interface [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) , mas não a implementa. Ele implementa o **IDispatch** por meio da classe [**CBaseDispatch**](cbasedispatch.md) e da biblioteca de tipos do DirectShow. Não use essa classe diretamente. Em vez disso, use uma das seguintes classes:
+Essa classe herda a interface [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition) , mas não a implementa. ele implementa o **IDispatch** por meio da classe [**CBaseDispatch**](cbasedispatch.md) e da biblioteca de tipos de DirectShow. Não use essa classe diretamente. Em vez disso, use uma das seguintes classes:
 
 -   Filtros de origem: Use a classe base [**CSourceSeeking**](csourceseeking.md) para implementar a busca.
 -   Filtros de transformação: Use a classe [**CPosPassThru**](cpospassthru.md) para passar comandos de busca ascendentes.
@@ -41,10 +41,10 @@ Essa classe herda a interface [**IMediaPosition**](/windows/desktop/api/Control/
 |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [**CMediaPosition**](cmediaposition-cmediaposition.md)     | Método de construtor.                                                                                                 |
 | Métodos IDispatch                                           | Descrição                                                                                                         |
-| [**GetIDsOfNames**](cmediaposition-getidsofnames.md)       | Mapeia um conjunto de nomes para um conjunto correspondente de DISPIDs.                                                              |
+| [**GetIDsOfNames**](cmediaposition-getidsofnames.md)       | Mapas um conjunto de nomes para um conjunto correspondente de dispids.                                                              |
 | [**GetTypeInfo**](cmediaposition-gettypeinfo.md)           | Recupera as informações de tipo do objeto, que podem ser usadas para obter as informações de tipo de uma interface. |
 | [**GetTypeInfoCount**](cmediaposition-gettypeinfocount.md) | Recupera o número de interfaces de informações de tipo que o objeto fornece.                                            |
-| [**Chame**](cmediaposition-invoke.md)                     | Fornece acesso a propriedades e métodos expostos pelo objeto.                                                    |
+| [**Invoke**](cmediaposition-invoke.md)                     | Fornece acesso a propriedades e métodos expostos pelo objeto.                                                    |
 
 
 
@@ -56,7 +56,7 @@ Essa classe herda a interface [**IMediaPosition**](/windows/desktop/api/Control/
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
@@ -65,7 +65,7 @@ Essa classe herda a interface [**IMediaPosition**](/windows/desktop/api/Control/
 
 <dl> <dt>
 
-[Classes base do DirectShow](directshow-base-classes.md)
+[DirectShow Classes base](directshow-base-classes.md)
 </dt> </dl>
 
  

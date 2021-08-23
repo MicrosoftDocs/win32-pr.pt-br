@@ -1,19 +1,19 @@
 ---
 title: Controle de fonte
-description: Para simplificar a integração e a configuração do suporte a fontes em aplicativos que exigem recursos de processamento de palavras e edição de texto, a estrutura da faixa de opções do Windows fornece um controle de fonte especializado que expõe uma ampla gama de propriedades de fonte, como nome do tipo, estilo, tamanho do ponto e efeitos.
+description: para simplificar a integração e a configuração do suporte a fontes em aplicativos que exigem recursos de processamento de palavras e edição de texto, a estrutura da faixa de opções Windows fornece um controle de fonte especializado que expõe uma ampla gama de propriedades de fonte, como nome do tipo, estilo, tamanho do ponto e efeitos.
 ms.assetid: 6052f2e3-2c9e-432e-9ed6-c1e3a50843d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e179296ae03163bf03e08d2fbf7287264792e6e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e2c80ce84e17573925b8bf64637df1330c7447b6bebe501de1f20ebc4b1ac79d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710647"
 ---
 # <a name="font-control"></a>Controle de fonte
 
-Para simplificar a integração e a configuração do suporte a fontes em aplicativos que exigem recursos de processamento de palavras e edição de texto, a estrutura da faixa de opções do Windows fornece um controle de fonte especializado que expõe uma ampla gama de propriedades de fonte, como nome do tipo, estilo, tamanho do ponto e efeitos.
+para simplificar a integração e a configuração do suporte a fontes em aplicativos que exigem recursos de processamento de palavras e edição de texto, a estrutura da faixa de opções Windows fornece um controle de fonte especializado que expõe uma ampla gama de propriedades de fonte, como nome do tipo, estilo, tamanho do ponto e efeitos.
 
 -   [Introdução](#introduction)
 -   [Uma experiência consistente](#a-consistent-experience)
@@ -29,7 +29,7 @@ Para simplificar a integração e a configuração do suporte a fontes em aplica
 
 O controle de fonte é um controle composto que consiste em botões, botões de alternância, caixas de listagem suspensas e caixas de combinação, todos usados para especificar uma determinada propriedade de fonte ou opção de formatação.
 
-A captura de tela a seguir mostra o controle de fonte da faixa de opções no WordPad do Windows 7.
+a captura de tela a seguir mostra o controle de fonte da faixa de opções no WordPad para Windows 7.
 
 ![captura de tela do elemento fontcontrol com o atributo richfont definido como true.](images/controls/fontcontrol.png)
 
@@ -41,9 +41,9 @@ Essa experiência consistente inclui
 
 -   Formatação padronizada e seleção de fontes em aplicativos de faixa de opção.
 -   Representação de fonte padronizada em aplicativos de faixa de faixas.
--   Automático, no Windows 7, ativação de fonte baseada na configuração **Mostrar** ou **ocultar** para cada fonte no painel de controle **fontes** . O controle de fonte exibe apenas as fontes que estão definidas para **Mostrar**.
+-   automático, no Windows 7, ativação de fonte baseada na configuração **mostrar** ou **ocultar** para cada fonte no painel de controle de **fontes** . O controle de fonte exibe apenas as fontes que estão definidas para **Mostrar**.
     > [!Note]  
-    > No Windows Vista, o painel de controle de **fontes** não oferece a funcionalidade de **Mostrar** ou **ocultar** , portanto, todas as fontes são ativadas.
+    > no Windows Vista, o painel de controle de **fontes** não oferece a funcionalidade de **mostrar** ou **ocultar** , portanto, todas as fontes são ativadas.
 
      
 
@@ -59,7 +59,7 @@ Essa experiência consistente inclui
     -   Listas de fontes com base no dispositivo de entrada.
 
     > [!Note]  
-    > O suporte para essa funcionalidade não está disponível em nenhuma plataforma anterior ao Windows 7.
+    > o suporte para essa funcionalidade não está disponível em nenhuma plataforma com mais de Windows 7.
 
      
 
@@ -77,11 +77,11 @@ Esse manipulador de comando único permite que o controle de fonte gerencie a fu
 Outros recursos do controle de fonte incluem
 
 -   A geração automática de reconhecimento de DPI de um WYSIWYG (o que você vê é o que você obtém) representação de bitmap para cada fonte no menu **da família de fontes** .
--   Integração [do Windows Graphics Device Interface (GDI)](../gdi/windows-gdi.md) .
+-   integração [do Windows Graphics Device Interface (GDI)](../gdi/windows-gdi.md) .
 -   Bitmaps e dicas de ferramentas localizadas da família de fontes.
 -   Enumeração de fontes, agrupamento e metadados para gerenciar e apresentar fontes.
     > [!Note]  
-    > O suporte para essa funcionalidade não está disponível em nenhuma plataforma anterior ao Windows 7.
+    > o suporte para essa funcionalidade não está disponível em nenhuma plataforma com mais de Windows 7.
 
      
 
@@ -90,9 +90,9 @@ Outros recursos do controle de fonte incluem
 
 ## <a name="alignment-with-common-gdi-text-structures"></a>Alinhamento com estruturas de texto GDI comuns
 
-Os componentes de pilha de texto [do Windows Graphics Device Interface (GDI)](../gdi/windows-gdi.md) são usados para expor a seleção de fontes e a funcionalidade de formatação por meio do controle de fonte da faixa de Os vários recursos de fonte com suporte da estrutura [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfonta), da [estrutura CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefonta)e da [estrutura CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2a) são expostos por meio dos subcontroles incluídos no controle de fonte.
+os componentes da pilha de texto [Windows Graphics Device Interface (GDI)](../gdi/windows-gdi.md) são usados para expor a seleção de fontes e a funcionalidade de formatação por meio do controle fonte da faixa de opção. Os vários recursos de fonte com suporte da estrutura [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfonta), da [estrutura CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefonta)e da [estrutura CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2a) são expostos por meio dos subcontroles incluídos no controle de fonte.
 
-Os subcontroles exibidos no controle de fonte dependem do modelo *FontType* declarado na marcação da faixa de lista. Os modelos *FontType* (discutidos mais detalhadamente na seção a seguir) são projetados para serem alinhados com as estruturas de texto comuns do [Windows Graphics Device Interface (GDI)](../gdi/windows-gdi.md) .
+Os subcontroles exibidos no controle de fonte dependem do modelo *FontType* declarado na marcação da faixa de lista. os modelos *fonttype* (discutidos mais detalhadamente na seção a seguir) são projetados para alinhar-se com as estruturas de texto common [Windows Graphics Device Interface (GDI)](../gdi/windows-gdi.md) .
 
 ## <a name="add-a-fontcontrol"></a>Adicionar um FontControl
 
@@ -198,7 +198,7 @@ Sim
 
 \-
 
-Botão **reduzir fonte**
+**Botão Reduzir** fonte
 
 Sim
 
@@ -212,7 +212,7 @@ Sim
 
 \-
 
-Botão **negrito**
+**Botão Negrito**
 
 Sim
 
@@ -226,7 +226,7 @@ Sim
 
 Não
 
-Botão **itálico**
+**Botão Itálico**
 
 Sim
 
@@ -240,7 +240,7 @@ Sim
 
 Não
 
-Botão **sublinhado**
+**Botão Sublinhado**
 
 Sim
 
@@ -254,7 +254,7 @@ Sim
 
 Sim
 
-Botão **tachado**
+**Botão Tachado**
 
 Sim
 
@@ -268,7 +268,7 @@ Sim
 
 Sim
 
-Botão **subscrito**
+**Botão Subscrito**
 
 Sim
 
@@ -282,7 +282,7 @@ Não
 
 \-
 
-Botão **sobrescrito**
+**Botão Sobrescrito**
 
 Sim
 
@@ -296,7 +296,7 @@ Não
 
 \-
 
-Botão de **cor de realce de texto**
+**Botão de cor de realçada de** texto
 
 Sim
 
@@ -310,7 +310,7 @@ Sim
 
 \-
 
-Botão de **cor do texto**
+**Botão De cor do** texto
 
 Sim
 
@@ -328,13 +328,13 @@ Não
 
  
 
-Quando o comportamento de layout de um controle de fonte é declarado, a estrutura da faixa de faixas fornece um modelo de layout *SizeDefinition* opcional, `OneFontControl` , que define duas configurações de subcontrole com base no tamanho da faixa de opção e no espaço disponível para o controle de fonte. Para obter mais informações, consulte [Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md).
+Quando o comportamento de layout de um Controle de Fonte é declarado, a estrutura de Faixa de Opções fornece um modelo de layout *SizeDefinition* opcional, , que define duas configurações de subcontrole com base no tamanho da Faixa de Opções e no espaço disponível para o Controle de `OneFontControl` Fonte. Para obter mais informações, consulte [Personalização de uma faixa de opções por definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md).
 
-### <a name="adding-a-fontcontrol-to-a-ribbon"></a>Adicionando um FontControl a uma faixa de faixas
+### <a name="adding-a-fontcontrol-to-a-ribbon"></a>Adicionando um FontControl a uma faixa de opções
 
-Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um controle de fonte a uma faixa de opções:
+Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um Controle de Fonte a uma Faixa de Opções:
 
-Esta seção de código mostra a marcação de declaração de comando [**FontControl**](windowsribbon-element-fontcontrol.md) , incluindo os comandos de [**guia**](windowsribbon-element-tab.md) e de [**grupo**](windowsribbon-element-group.md) que são necessários para exibir um controle na [**faixa de faixas**](windowsribbon-element-ribbon.md).
+Esta seção de código mostra a marcação [](windowsribbon-element-tab.md) de declaração de Comando [**FontControl,**](windowsribbon-element-fontcontrol.md) incluindo os Comandos tab e [**group**](windowsribbon-element-group.md) necessários para exibir um controle na Faixa de [**Opções**](windowsribbon-element-ribbon.md).
 
 
 ```C++
@@ -354,7 +354,7 @@ Esta seção de código mostra a marcação de declaração de comando [**FontCo
 
 
 
-Esta seção de código mostra a marcação necessária para declarar e associar um [**FontControl**](windowsribbon-element-fontcontrol.md) a um [**comando**](windowsribbon-element-command.md) por meio de uma ID de comando. Esse exemplo específico inclui as declarações de [**guia**](windowsribbon-element-tab.md) e de [**grupo**](windowsribbon-element-group.md) , com preferências de dimensionamento.
+Esta seção de código mostra a marcação necessária para declarar e associar [**um FontControl**](windowsribbon-element-fontcontrol.md) a um [**Comando**](windowsribbon-element-command.md) por meio de uma ID de comando. Este exemplo específico inclui as declarações [**Tab**](windowsribbon-element-tab.md) e [**Group,**](windowsribbon-element-group.md) com preferências de dimensionamento.
 
 
 ```C++
@@ -380,11 +380,11 @@ Esta seção de código mostra a marcação necessária para declarar e associar
 
 ### <a name="adding-a-fontcontrol-to-a-contextpopup"></a>Adicionando um FontControl a um ContextPopup
 
-A adição de um controle de fonte a um [pop-up de contexto](windowsribbon-controls-contextpopup.md) requer um procedimento semelhante ao da adição de um controle de fonte à faixa de tipos. No entanto, um controle de fonte em um [**Minibarra**](windowsribbon-element-minitoolbar.md) é restrito ao conjunto de subcontroles padrão que são comuns a todos os modelos de controle de fonte: **família de fontes**, **tamanho da fonte**, **negrito** e **itálico**.
+Adicionar um controle de fonte a um [pop-up](windowsribbon-controls-contextpopup.md) de contexto requer um procedimento semelhante ao da adição de um Controle de Fonte à Faixa de Opções. No entanto, um Controle de Fonte em uma [**MiniToolbar**](windowsribbon-element-minitoolbar.md) é restrito ao conjunto de subcontroles padrão que são comuns a todos os modelos de Controle de **Fonte:** Família de fontes, **Tamanho** da fonte, **Negrito** e **Itálico.**
 
-Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um controle de fonte a um [Popup de contexto](windowsribbon-controls-contextpopup.md):
+Os exemplos de código a seguir demonstram os requisitos básicos de marcação para adicionar um controle de fonte a um [pop-up de contexto](windowsribbon-controls-contextpopup.md):
 
-Esta seção de código mostra a marcação de declaração de comando [**FontControl**](windowsribbon-element-fontcontrol.md) que é necessária para exibir um **FontControl** no [**ContextPopup**](windowsribbon-element-contextpopup.md).
+Esta seção de código mostra a marcação de declaração do [**Comando FontControl**](windowsribbon-element-fontcontrol.md) necessária para exibir **um FontControl** no [**ContextPopup.**](windowsribbon-element-contextpopup.md)
 
 
 ```C++
@@ -393,7 +393,7 @@ Esta seção de código mostra a marcação de declaração de comando [**FontCo
 
 
 
-Esta seção de código mostra a marcação necessária para declarar e associar um [**FontControl**](windowsribbon-element-fontcontrol.md) a um comando por meio de uma ID de comando.
+Esta seção de código mostra a marcação necessária para declarar e associar [**um FontControl**](windowsribbon-element-fontcontrol.md) a um Comando por meio de uma ID de comando.
 
 
 ```C++
@@ -410,16 +410,16 @@ Esta seção de código mostra a marcação necessária para declarar e associar
 
 ### <a name="keytips"></a>Dicas de tecla
 
-Cada subcontrole no controle de fonte da faixa de bits pode ser acessado por meio de um atalho de teclado ou KeyTip. Esse KeyTip é predefinido e atribuído a cada subcontrole da estrutura.
+Cada subcontrole no Controle de Fonte da Faixa de Opções é acessível por meio de um atalho de teclado ou dica de tecla. Essa dica de chave é predefinida e atribuída a cada subcontrole pela estrutura.
 
-Se um valor de atributo *KeyTip* for atribuído ao elemento [**FontControl**](windowsribbon-element-fontcontrol.md) na marcação, esse valor será adicionado como um prefixo ao KeyTip definido pelo Framework.
+Se um *valor de atributo Keytip* for atribuído ao [**elemento FontControl**](windowsribbon-element-fontcontrol.md) na marcação, esse valor será adicionado como um prefixo à dica de chave definida pela estrutura.
 
 > [!Note]  
 > O aplicativo deve impor uma regra de caractere único para esse prefixo.
 
  
 
-A tabela a seguir lista as keytips definidas pela estrutura. 
+A tabela a seguir lista as dicas de chave definidas pela estrutura. 
 
 <table>
 <colgroup>
@@ -429,7 +429,7 @@ A tabela a seguir lista as keytips definidas pela estrutura.
 <thead>
 <tr class="header">
 <th>Subcontrole</th>
-<th>KeyTip</th>
+<th>Keytip</th>
 </tr>
 </thead>
 <tbody>
@@ -474,7 +474,7 @@ A tabela a seguir lista as keytips definidas pela estrutura.
 <td>Y ou Z
 <blockquote>
 [!Note]<br />
-Se o atributo <em>KeyTip</em> não for declarado na marcação, o KeyTip padrão será Y; caso contrário, o KeyTip padrão será <em>KeyTip</em> + Z.
+Se o <em>atributo Keytip</em> não for declarado na marcação, a dica de chave padrão será Y; caso contrário, a dica de chave padrão <em>será Keytip</em> + Z.
 </blockquote>
 <br/></td>
 </tr>
@@ -487,7 +487,7 @@ Se o atributo <em>KeyTip</em> não for declarado na marcação, o KeyTip padrão
 <td>C</td>
 </tr>
 <tr class="odd">
-<td>Realce de fonte</td>
+<td>Realçada da fonte</td>
 <td>H</td>
 </tr>
 </tbody>
@@ -497,7 +497,7 @@ Se o atributo <em>KeyTip</em> não for declarado na marcação, o KeyTip padrão
 
  
 
-O prefixo recomendado para uma faixa de opções do MUI (Multilingual User interface) EN-US é ' F ', conforme mostrado no exemplo a seguir.
+O prefixo recomendado para uma faixa Interface de Usuário Multilíngue (MUI) EN-US é 'F', conforme mostrado no exemplo a seguir.
 
 
 ```C++
@@ -506,7 +506,7 @@ O prefixo recomendado para uma faixa de opções do MUI (Multilingual User inter
 
 
 
-A captura de tela a seguir ilustra as dicas de teclado do controle de fonte conforme elas são definidas no exemplo anterior.
+A captura de tela a seguir ilustra as dicas de tecla do Controle de Fonte conforme elas são definidas no exemplo anterior.
 
 ![captura de tela do fontcontrol keytips no WordPad para Windows 7.](images/controls/fontcontrol-keytips.png)
 
@@ -575,7 +575,7 @@ A tabela a seguir lista as chaves de propriedade que estão associadas ao contro
 
 Além das propriedades com suporte pelo controle de fonte em si, a estrutura da faixa de faixas também define uma [chave de propriedade](windowsribbon-reference-properties.md) para cada subcontrole de controle de fonte. Essas chaves de propriedade e seus valores são expostos pela estrutura por meio de uma implementação de interface [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) que define os métodos para gerenciar uma coleção, também chamada de recipiente de propriedades, de pares de nome e valor.
 
-O aplicativo traduz as estruturas de fonte para propriedades que podem ser acessadas por meio dos métodos de interface [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) . Esse modelo enfatiza a distinção entre o controle de fonte e os componentes de pilha de texto do Windows Graphics Device Interface (GDI) ([estrutura LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfonta), [estrutura CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefonta)e [estrutura CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2a)) que são suportados pela estrutura.
+O aplicativo traduz as estruturas de fonte para propriedades que podem ser acessadas por meio dos métodos de interface [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) . esse modelo enfatiza a distinção entre o controle de fonte e os componentes de pilha de texto Windows Graphics Device Interface (GDI) ([estrutura LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfonta), [estrutura CHOOSEFONT](/windows/win32/api/commdlg/ns-commdlg-choosefonta)e [estrutura CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2a)) que têm suporte na estrutura.
 
 A tabela a seguir lista os controles individuais e suas chaves de propriedade associadas.
 
@@ -589,7 +589,7 @@ A tabela a seguir lista os controles individuais e suas chaves de propriedade as
 | **Reduzir fonte**          | [\_Tamanho da \_ fonte de PKEY da interface do usuário \_](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                                                                                                                                                    | Consulte **tamanho da fonte**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Negrito**                 | [Interface do usuário \_ PKEY \_ FontProperty \_ bold](windowsribbon-reference-properties-uipkey-fontproperties-bold.md)                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Itálico**               | [Interface do usuário \_ PKEY \_ fontproperties \_ itálico](windowsribbon-reference-properties-uipkey-fontproperties-italic.md)                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Aplicar**            | [Interface do usuário \_ PKEY \_ fontproperties \_ sublinhado](windowsribbon-reference-properties-uipkey-fontproperties-underline.md)                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Underline**            | [Interface do usuário \_ PKEY \_ fontproperties \_ sublinhado](windowsribbon-reference-properties-uipkey-fontproperties-underline.md)                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Tachado**        | [Interface do usuário \_ PKEY \_ fontproperties \_ tachado](windowsribbon-reference-properties-uipkey-fontproperties-strikethrough.md)                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Subscrito**            | [Interface do usuário \_ PKEY \_ fontproperties \_ VerticalPositioning](windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md)                                                                                                                                      | Se o botão **subscrito** for definido, o **sobrescrito** também não poderá ser definido.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | **Sobrescrito**          | [Interface do usuário \_ PKEY \_ fontproperties \_ VerticalPositioning](windowsribbon-reference-properties-uipkey-fontproperties-verticalpositioning.md)                                                                                                                                      | Se o botão **sobrescrito** for definido, o **subscript** também não poderá ser definido.                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -791,7 +791,7 @@ STDMETHODIMP CCommandHandler::UpdateProperty(
 
 <dl> <dt>
 
-[Biblioteca de controle do Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controle da estrutura de faixa](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento FontControl**](windowsribbon-element-fontcontrol.md)

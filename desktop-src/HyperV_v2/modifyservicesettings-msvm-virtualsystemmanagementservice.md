@@ -1,5 +1,5 @@
 ---
-description: Método ModifyServiceSettings da classe Msvm_VirtualSystemManagementService – modifica os dados de configuração para o serviço.
+description: Método ModifyServiceSettings da classe Msvm_VirtualSystemManagementService - Modifica os dados de configuração para o serviço.
 ms.assetid: 1CA49922-894D-4AA1-B741-6A0DC9F5654E
 title: Método ModifyServiceSettings da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee4e8ae904292bae06770f23cf6c853d5e5448bd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85423711ff62cb1005151173a42451eb57af67ecb378f14a74ce2a5d2f441ea2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693876"
 ---
-# <a name="modifyservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyServiceSettings da \_ classe VirtualSystemManagementService Msvm
+# <a name="modifyservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyServiceSettings da classe Msvm \_ VirtualSystemManagementService
 
 Modifica os dados de configuração para o serviço.
 
@@ -40,27 +40,27 @@ uint32 ModifyServiceSettings(
 
 <dl> <dt>
 
-*SettingData* \[ no\]
+*SettingData* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
-Uma instância inserida da classe [**Msvm \_ VirtualSystemManagementServiceSettingData**](msvm-virtualsystemmanagementservicesettingdata.md) que contém os aspectos modificados do serviço existente.
+Uma instância inserida da [**classe Msvm \_ VirtualSystemManagementServiceSettingData**](msvm-virtualsystemmanagementservicesettingdata.md) que contém os aspectos modificados do serviço existente.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Esse método retorna um dos valores a seguir.
 
@@ -69,7 +69,7 @@ Esse método retorna um dos valores a seguir.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -81,16 +81,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -99,15 +99,15 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe \_ VirtualSystemManagementService do Msvm**](msvm-virtualsystemmanagementservice.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,25 +115,25 @@ O acesso à classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsyst
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**ModifyServiceSettings (v1)**](/previous-versions/windows/desktop/virtual/modifyservicesettings-msvm-virtualsystemmanagementservice)
+[**ModifyServiceSettings (V1)**](/previous-versions/windows/desktop/virtual/modifyservicesettings-msvm-virtualsystemmanagementservice)
 </dt> <dt>
 
 [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> <dt>
 
-[**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
+[**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))
 </dt> </dl>
 
  

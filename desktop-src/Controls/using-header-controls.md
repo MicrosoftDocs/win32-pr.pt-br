@@ -1,19 +1,19 @@
 ---
-title: Usando controles de cabeçalho
-description: Este tópico fornece detalhes de implementação e exemplos de código para controles de cabeçalho.
+title: Usando controles de header
+description: Este tópico fornece detalhes de implementação e exemplos de código para controles de header.
 ms.assetid: 388ca191-be77-4954-baeb-73fa209dc21d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce61377cef08fb11f0a655fe9930ac755f5240dd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 335ec0d400fe55f7aaf6261f96844744bdae9fdc2087d3d3fb5b8c68795117fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655796"
 ---
-# <a name="using-header-controls"></a>Usando controles de cabeçalho
+# <a name="using-header-controls"></a>Usando controles de header
 
-Este tópico fornece detalhes de implementação e exemplos de código para controles de cabeçalho. Os tópicos a seguir são discutidos.
+Este tópico fornece detalhes de implementação e exemplos de código para controles de header. Os tópicos a seguir são discutidos.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,8 +21,8 @@ Este tópico fornece detalhes de implementação e exemplos de código para cont
 
 | Tópico                                                                                    | Descrição                                                                                                               |
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [Como criar um controle de cabeçalho](create-a-header-control.md)<br/>                 | Este tópico demonstra como criar um controle de cabeçalho e posicioná-lo na área cliente da janela pai.<br/> |
-| [Como adicionar um item a um controle de cabeçalho](add-an-item-to-a-header-control.md)<br/> | Este tópico demonstra como adicionar um item a um controle de cabeçalho.<br/>                                                |
+| [Como criar um controle de header](create-a-header-control.md)<br/>                 | Este tópico demonstra como criar um controle de header e posicioná-lo na área de cliente da janela pai.<br/> |
+| [Como adicionar um item a um controle de header](add-an-item-to-a-header-control.md)<br/> | Este tópico demonstra como adicionar um item a um controle de header.<br/>                                                |
 
 
 

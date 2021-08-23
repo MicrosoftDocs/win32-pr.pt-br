@@ -4,12 +4,12 @@ ms.assetid: 8600f48f-0ef5-4ac2-bdb9-6d9700cae306
 title: Referência de contadores de desempenho
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: e716d44c08a847f7f64dc07bc4382faa9adf8f0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca2d7f0593aff143ab4612c5ed9489bb8a48c76e7726d2289f8387fcb38a257e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775296"
 ---
 # <a name="performance-counters-reference"></a>Referência de contadores de desempenho
 
@@ -21,7 +21,7 @@ Use os seguintes elementos de programação para escrever aplicativos que consom
 - [Enumerações de contadores de desempenho](performance-counter-enumerations.md)
 - [Tipos de contadores de desempenho](performance-counters-types.md)
 - [Códigos de erro de auxiliar de dados de desempenho](pdh-error-codes.md)
-- [Esquema do arquivo de log SQL](sql-log-file-schema.md)
+- [SQL Esquema do arquivo de log](sql-log-file-schema.md)
 
 Esta seção também descreve:
 

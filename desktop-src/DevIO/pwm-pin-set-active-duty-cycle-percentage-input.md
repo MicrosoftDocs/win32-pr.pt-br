@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Pwm.h
-ms.openlocfilehash: 98811ace7ce8fce760e10757b8bf012cc2b9b27d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ca6b2ee6aa4d4d2da3f94aa7cc471de12c1f8040b597edf568bf061c8e392aa1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758846"
 ---
 # <a name="pwm_pin_set_active_duty_cycle_percentage_input-structure"></a>\_Estrutura de \_ \_ entrada de \_ \_ percentual de ciclo de serviço ativo da \_ definição \_ de PIN PWM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Contém uma porcentagem de ciclo de serviço desejado para um PIN ou canal em um controlador de modulação de largura de pulso (PWM).
 
@@ -54,11 +54,11 @@ O ciclo de serviço de sinal de PWM desejado, como um percentual de PWM \_ , que
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                             |
 | Versão mínima do KMDF<br/>     | 1,19<br/>                                                                                  |
 | Versão mínima do UMDF<br/>     | 2.19<br/>                                                                                  |
-| parâmetro<br/>                   | <dl> <dt>PWM. h (incluir PWM. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>PWM. h (incluir PWM. h)</dt> </dl> |
 
 
 

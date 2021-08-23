@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentTooManyInstancesException'
+description: 'Saiba mais sobre: Métodos EsentTooManyInstancesException'
 title: 'Métodos EsentTooManyInstancesException '
 TOCTitle: EsentTooManyInstancesException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentTooManyInstancesException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103070
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 570c670a1a0117d798ed6910a5adb151256774c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c73b3954118f1962497dd824e5883039d12a46ab5b51f315abad71f83b8a74f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781346"
 ---
 # <a name="esenttoomanyinstancesexception-methods"></a>Métodos EsentTooManyInstancesException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.md) expõe os membros a seguir.
+O [tipo EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.m
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.m
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentTooManyInstancesException](./esenttoomanyinstancesexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
