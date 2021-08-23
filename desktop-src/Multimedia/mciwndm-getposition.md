@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_GETPOSITION (VFW. h)
-description: A \_ mensagem GETPOSITION MCIWNDM recupera o valor numérico da posição atual dentro do conteúdo do dispositivo MCI.
+title: MCIWNDM_GETPOSITION mensagem (Vfw.h)
+description: A mensagem GETPOSITION MCIWNDM recupera o valor numérico da posição atual dentro do \_ conteúdo do dispositivo MCI.
 ms.assetid: 6dc5d3bd-8515-4514-a2a5-c1bee07f7acf
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_GETPOSITION
+- MCIWNDM_GETPOSITION mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e7468b0e3698a72d3dce82bbd1591d59940d9a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83cf16f5945bfccbfd2f745ba22fac750f0536696aa2c4c06c2872bd318b263e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525426"
 ---
-# <a name="mciwndm_getposition-message"></a>\_Mensagem GETPOSITION MCIWNDM
+# <a name="mciwndm_getposition-message"></a>Mensagem GETPOSITION MCIWNDM \_
 
-A **mensagem \_ GetPosition MCIWNDM** recupera o valor numérico da posição atual dentro do conteúdo do dispositivo MCI. Essa macro também fornece a posição atual no formulário de cadeia de caracteres em um buffer definido pelo aplicativo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetPosition**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetposition) ou [**MCIWndGetPositionString**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpositionstring) .
+A **mensagem \_ GETPOSITION MCIWNDM** recupera o valor numérico da posição atual dentro do conteúdo do dispositivo MCI. Essa macro também fornece a posição atual no formato de cadeia de caracteres em um buffer definido pelo aplicativo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetPosition**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetposition) ou [**MCIWndGetPositionString.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpositionstring)
 
 
 ```C++
@@ -45,10 +45,10 @@ Tamanho, em bytes, do buffer. Se a cadeia de caracteres terminada em nulo for ma
 
 </dd> <dt>
 
-<span id="lp"></span><span id="LP"></span>*LP*
+<span id="lp"></span><span id="LP"></span>*Lp*
 </dt> <dd>
 
-Ponteiro para um buffer definido pelo aplicativo usado para retornar a posição. Use zero para inibir a recuperação da posição como uma cadeia de caracteres. Se o dispositivo oferecer suporte a faixas, as informações de posição da cadeia de caracteres serão retornadas no formato TT: MM: SS: FF, em que TT corresponde a faixas, MM e SS correspondem a minutos e segundos, e FF corresponde a quadros.
+Ponteiro para um buffer definido pelo aplicativo usado para retornar a posição. Use zero para inibir a recuperação da posição como uma cadeia de caracteres. Se o dispositivo dá suporte a faixas, as informações de posição da cadeia de caracteres são retornadas no formato TT:MM:SS:FF em que TT corresponde a faixas, MM e SS correspondem a minutos e segundos e FF corresponde a quadros.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Retorna um inteiro correspondente à posição atual. As unidades para o valor d
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

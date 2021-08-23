@@ -3,7 +3,7 @@ title: EFEITOS. em janela
 description: O atributo em janela especifica ou recupera um valor que indica se a visualização será em janelas ou sem janela, ou seja, se todo o retângulo do controle estará visível sempre ou se ele pode ser recortado.
 ms.assetid: bc535274-8bc3-43bb-aab0-11899134d71e
 keywords:
-- EFEITOS. Windows Media Player em janelas
+- EFEITOS. Windows Media Player janelas
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3e30ae511c3e80e5e560f864baa8d797903fe2a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32fcd144d26de8f96c039d8199af8e6e4c1c14e60b2c5e2bf0c7dcc5a7f3cbf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650996"
 ---
 # <a name="effectswindowed"></a>EFEITOS. em janela
 

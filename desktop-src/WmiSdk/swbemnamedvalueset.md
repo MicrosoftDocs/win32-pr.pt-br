@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 2b3048b8589666a07958251ed4c0d56100132fd0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfdcc3ba2bde6dfdfd0cc732e4376ceb69ba60904f4d787d9030299c248ebb62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732666"
 ---
 # <a name="swbemnamedvalueset-object"></a>Objeto SWbemNamedValueSet
 
@@ -53,7 +53,7 @@ O objeto **SWbemNamedValueSet** tem esses métodos.
 | Método                                            | Descrição                                                                                                                              |
 |:--------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
 | [**Agrega**](swbemnamedvalueset-add.md)             | Adiciona um objeto [**SWbemNamedValue**](swbemnamedvalue.md) à coleção.<br/>                                                  |
-| [**8i**](swbemnamedvalueset-clone.md)         | Faz uma cópia desta coleção **SWbemNamedValueSet** .<br/>                                                                       |
+| [**Clone**](swbemnamedvalueset-clone.md)         | Faz uma cópia desta coleção **SWbemNamedValueSet** .<br/>                                                                       |
 | [**DeleteAll**](swbemnamedvalueset-deleteall.md) | Remove todos os itens da coleção, tornando o objeto **SWbemNamedValueSet** vazio.<br/>                                        |
 | [**Item**](swbemnamedvalueset-item.md)           | Recupera um objeto [**SWbemNamedValue**](swbemnamedvalue.md) da coleção. Esse é o método padrão do objeto.<br/> |
 | [**Remover**](swbemnamedvalueset-remove.md)       | Remove um objeto [**SWbemNamedValue**](swbemnamedvalue.md) da coleção.<br/>                                             |
@@ -70,7 +70,7 @@ O objeto **SWbemNamedValueSet** tem essas propriedades.
 
 | Propriedade                                             | Tipo de acesso          | Descrição                                       |
 |:-----------------------------------------------------|:---------------------|:--------------------------------------------------|
-| [**Contar**](swbemnamedvalueset-count.md)<br/> | Somente leitura<br/> | Número de itens na coleção.<br/> |
+| [**Contagem**](swbemnamedvalueset-count.md)<br/> | Somente leitura<br/> | Número de itens na coleção.<br/> |
 
 
 
@@ -213,7 +213,7 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMNAMEDVALUESET CLSID<br/>                                                    |

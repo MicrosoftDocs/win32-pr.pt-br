@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17cdba8b9dd9a3e762a93923a3c353fbc9578377
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48ec252b9badc784726110300792c6479bed379b799c3c0499f59f0fdeb6632d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554126"
 ---
 # <a name="glutesscallback-function"></a>função gluTessCallback
 

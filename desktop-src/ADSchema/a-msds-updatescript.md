@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7809bf6fdbaabb38976068d1998cacfb12bdaf3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 636f3deff820b4c78898413654d4fcbae98ec3fedf9e2e0a9c9f764399c4c19e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119551896"
 ---
 # <a name="ms-ds-updatescript-attribute"></a>atributo ms-DS-UpdateScript
 
@@ -58,7 +58,7 @@ Isso é usado para manter o script com as instruções de reestruturação de do
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -79,7 +79,7 @@ Isso é usado para manter o script com as instruções de reestruturação de do
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -100,7 +100,7 @@ Isso é usado para manter o script com as instruções de reestruturação de do
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -121,7 +121,7 @@ Isso é usado para manter o script com as instruções de reestruturação de do
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -142,7 +142,7 @@ Isso é usado para manter o script com as instruções de reestruturação de do
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
@@ -163,7 +163,7 @@ Isso é usado para manter o script com as instruções de reestruturação de do
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | True                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
 | No catálogo global      | Falso                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |

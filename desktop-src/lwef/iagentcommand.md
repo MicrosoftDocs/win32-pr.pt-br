@@ -4,51 +4,51 @@ description: IAgentCommand
 ms.assetid: 70873093-df71-4377-9c39-c7528400052f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53c4ba90f7d355a0baa088a78aa05b7a91e14112
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 42e2288a7b913becc54e2c0baa43eb14903e65fb7eddf6620d5cefbd78968026
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105813316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665476"
 ---
 # <a name="iagentcommand"></a>IAgentCommand
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
-Um objeto de [**comando**](/windows/desktop/lwef/the-command-object) é um item em uma coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) . O servidor fornece o acesso de usuário aos seus comandos que o aplicativo cliente torna a entrada ativa. Para recuperar um **comando**, chame [**IAgentCommands:: GetCommand**](iagentcommands--getcommand.md).
+Um [**objeto Command**](/windows/desktop/lwef/the-command-object) é um item em uma coleção [**De**](/windows/desktop/lwef/the-commands-collection-object) comandos. O servidor fornece ao usuário acesso aos comandos em que seu aplicativo cliente se torna ativo de entrada. Para recuperar um **Comando**, chame [**IAgentCommands::GetCommand.**](iagentcommands--getcommand.md)
 
-**IAgentCommand** define uma interface que permite que os aplicativos definam e consultem Propriedades para objetos de [**comando**](/windows/desktop/lwef/the-command-object) que podem aparecer no menu pop-up de um caractere e na janela de comandos de voz. Essas funções também estão disponíveis em [**IAgentCommandEx**](iagentcommandex.md). Um objeto de **comando** é um item em uma coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) . O servidor fornece ao usuário acesso aos seus comandos quando o aplicativo cliente se torna ativo de entrada.
+**IAgentCommand** define uma interface que permite que os aplicativos definam e consultem propriedades para objetos [**Command**](/windows/desktop/lwef/the-command-object) que podem aparecer no menu pop-up de um caractere e na Janela comandos de voz. Essas funções também estão disponíveis em [**IAgentCommandEx.**](iagentcommandex.md) Um **objeto Command** é um item em uma coleção [**De**](/windows/desktop/lwef/the-commands-collection-object) comandos. O servidor fornece ao usuário acesso aos seus comandos quando seu aplicativo cliente se torna ativo de entrada.
 
-Um [**comando**](/windows/desktop/lwef/the-command-object) pode aparecer no menu pop-up do caractere e na janela de comandos de voz. Para aparecer no menu pop-up, ele deve ter uma [**legenda**](caption-property.md) e ter a propriedade [**Visible**](visible-property.md) definida como **true**. A propriedade **Visible** para seu objeto de coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) também deve ser definida como **true** para que o comando apareça no menu pop-up quando o aplicativo cliente está em entrada-ativo. Para aparecer na janela de comandos de voz, um **comando** deve ter suas propriedades [**VoiceCaption**](voicecaption-property.md) e [**Voice**](voice-property.md) definidas. (Para compatibilidade com versões anteriores, se não houver nenhum **VoiceCaption**, a configuração de **legenda** será usada.)
+Um [**Comando**](/windows/desktop/lwef/the-command-object) pode aparecer no menu pop-up do caractere e na Janela comandos de voz. Para aparecer no menu pop-up, ele deve ter uma [**Legenda**](caption-property.md) e ter a propriedade [**Visible**](visible-property.md) definida como **True.** A **propriedade Visible** para seu objeto de coleção [**Commands**](/windows/desktop/lwef/the-commands-collection-object) também deve ser definida como **True** para que o comando apareça no menu pop-up quando o aplicativo cliente estiver ativo de entrada. Para aparecer na janela Comandos de Voz, um **comando** deve ter suas [**propriedades VoiceCaption**](voicecaption-property.md) e [**Voice**](voice-property.md) definidas. (Para compatibilidade com backward, se não houver **VoiceCaption**, a **configuração Legenda** será usada.)
 
-As entradas do menu pop-up de um caractere não são alteradas enquanto o menu é exibido. Se você adicionar ou remover comandos ou alterar suas propriedades enquanto o menu popup do caractere for exibido, o menu exibirá essas alterações quando reexibida. No entanto, a janela de comandos de voz exibe alterações à medida que você as faz.
+As entradas do menu pop-up de um caractere não são alteradas enquanto o menu é exibido. Se você adicionar ou remover Comandos ou alterar suas propriedades enquanto o menu pop-up do caractere for exibido, o menu exibirá essas alterações quando for exibido. No entanto, a Janela Comandos de Voz exibe alterações conforme você as faz.
 
 A tabela a seguir resume como as propriedades de um comando afetam sua apresentação.
 
 
 
-| Propriedade Caption | Propriedade Voice-Caption | Propriedade de voz | Propriedade Visible | Aparece no menu pop-up do caractere             | Aparece na janela de comandos de voz                         |
+| Propriedade Caption | Voice-Caption propriedade | Propriedade Voice | Propriedade Visible | Aparece no menu pop-up do caractere             | Aparece na janela Comandos de Voz                         |
 |------------------|------------------------|----------------|------------------|------------------------------------------------|----------------------------------------------------------|
-| Sim              | Sim                    | Sim            | True             | Sim, usando [ **legenda**](caption-property.md) | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
-| Sim              | Sim                    | Sem ¹            | True             | Sim, usando [ **legenda**](caption-property.md) | Não                                                       |
+| Sim              | Sim                    | Sim            | Verdadeiro             | Sim, usando [ **Legenda**](caption-property.md) | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
+| Sim              | Sim                    | Não;            | Verdadeiro             | Sim, usando [ **Legenda**](caption-property.md) | Não                                                       |
 | Sim              | Sim                    | Sim            | Falso            | Não                                             | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
-| Sim              | Sim                    | Sem ¹            | Falso            | Não                                             | Não                                                       |
-| Sem ¹              | Sim                    | Sim            | True             | Não                                             | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
-| Sem ¹              | Sim                    | Sim            | Falso            | Não                                             | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
-| Sem ¹              | Sim                    | Sem ¹            | True             | Não                                             | Não                                                       |
-| Sem ¹              | Sim                    | Sem ¹            | Falso            | Não                                             | Não                                                       |
-| Sim              | Sem ¹                    | Sim            | True             | Sim, usando [ **legenda**](caption-property.md) | Sim, usando [ **legenda**](caption-property.md)           |
-| Sim              | Sem ¹                    | Sem ¹            | True             | Sim                                            | Não                                                       |
-| Sim              | Sem ¹                    | Sim            | Falso            | Não                                             | Sim, usando [ **legenda**](caption-property.md)           |
-| Sim              | Sem ¹                    | Sem ¹            | Falso            | Não                                             | Não                                                       |
-| Sem ¹              | Sem ¹                    | Sim            | True             | Não                                             | Sem ²                                                      |
+| Sim              | Sim                    | Não;            | Falso            | Não                                             | Não                                                       |
+| Não;              | Sim                    | Sim            | True             | Não                                             | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
+| Não;              | Sim                    | Sim            | Falso            | Não                                             | Sim, usando [ **VoiceCaption**](voicecaption-property.md) |
+| Não;              | Sim                    | Não;            | True             | Não                                             | Não                                                       |
+| Não;              | Sim                    | Não;            | Falso            | Não                                             | Não                                                       |
+| Sim              | Não;                    | Sim            | Verdadeiro             | Sim, usando [ **Legenda**](caption-property.md) | Sim, usando [ **Legenda**](caption-property.md)           |
+| Sim              | Não;                    | Não;            | True             | Sim                                            | Não                                                       |
+| Sim              | Não;                    | Sim            | Falso            | Não                                             | Sim, usando [ **Legenda**](caption-property.md)           |
+| Sim              | Não;                    | Não;            | Falso            | Não                                             | Não                                                       |
+| Não;              | Não;                    | Sim            | True             | Não                                             | Sem ²                                                      |
 | Sem ¹              | Sem ¹                    | Sim            | Falso            | Não                                             | Sem ²                                                      |
 | Sem ¹              | Sem ¹                    | Sem ¹            | True             | Não                                             | Não                                                       |
 | Sem ¹              | Sem ¹                    | Sem ¹            | Falso            | Não                                             | Não                                                       |
 
 
 
- 
+ 
 
 ¹ se a configuração da propriedade for nula. Em algumas linguagens de programação, uma cadeia de caracteres vazia não pode ser interpretada como a mesma que uma cadeia de caracteres nula.
 
@@ -80,8 +80,8 @@ Quando o servidor recebe entrada que corresponde a um dos objetos de [**comando*
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

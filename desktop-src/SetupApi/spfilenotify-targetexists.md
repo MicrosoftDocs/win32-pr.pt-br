@@ -1,19 +1,19 @@
 ---
-description: A \_ notificação SPFILENOTIFY TARGETEXISTS será enviada para a rotina de retorno de chamada se o arquivo a ser copiado tiver sido colocado na fila com o \_ sinalizador de cópia NoOverwrite do SP \_ e esse arquivo já existir no diretório de destino.
+description: A notificação SPFILENOTIFY TARGETEXISTS será enviada para a rotina de retorno de chamada se o arquivo a ser copiado tiver sido enxuado com o sinalizador \_ SP \_ COPY NOOVERWRITE e esse arquivo já existir no diretório de \_ destino.
 ms.assetid: 5c6e0c59-0340-4aa6-94db-8d9a5d202758
-title: Mensagem de SPFILENOTIFY_TARGETEXISTS (Setupapi. h)
+title: SPFILENOTIFY_TARGETEXISTS mensagem (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1d0c1a1ffba520789113b0dc78246657a4fe324
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c51f845d7ccb41b330f6365eff269645d08e58597e7e6dd3e9acc7a7f0300c80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104370748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664736"
 ---
-# <a name="spfilenotify_targetexists-message"></a>\_Mensagem SPFILENOTIFY TARGETEXISTS
+# <a name="spfilenotify_targetexists-message"></a>Mensagem SPFILENOTIFY \_ TARGETEXISTS
 
-A notificação **SPFILENOTIFY \_ TARGETEXISTS** será enviada para a rotina de retorno de chamada se o arquivo a ser copiado tiver sido colocado na fila com o \_ sinalizador de cópia NoOverwrite do SP \_ e esse arquivo já existir no diretório de destino. Ele pode ser enviado para a rotina de retorno de chamada isoladamente ou combinada, usando o operador OR, com as notificações [**SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md) e/ou [**SPFILENOTIFY \_ TARGETNEWER**](spfilenotify-targetnewer.md) .
+A **notificação SPFILENOTIFY \_ TARGETEXISTS** será enviada para a rotina de retorno de chamada se o arquivo a ser copiado tiver sido enxuado com o sinalizador SP \_ COPY NOOVERWRITE e esse arquivo já existir no diretório de \_ destino. Ele pode ser enviado para a rotina de retorno de chamada sozinho ou combinado, usando o operador OR, com as notificações [**SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md) e/ou [**SPFILENOTIFY \_ TARGETNEWER.**](spfilenotify-targetnewer.md)
 
 
 ```C++
@@ -32,18 +32,18 @@ SPFILENOTIFY_TARGETEXISTS
 *Param1* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**FILEpaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) que contém informações sobre os caminhos para os arquivos de origem e de destino.
+Ponteiro para uma [**estrutura FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) que contém informações sobre os caminhos para os arquivos de origem e de destino.
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Esse parâmetro não é usado a menos que essa notificação seja combinada, usando o operador OR, com a notificação [**SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md) .
+Esse parâmetro não é usado, a menos que essa notificação seja combinada, usando o operador OR, com a notificação [**SPFILENOTIFY \_ LANGMISMATCH.**](spfilenotify-langmismatch.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A rotina de retorno de chamada deve retornar um dos valores a seguir.
 
@@ -51,8 +51,8 @@ A rotina de retorno de chamada deve retornar um dos valores a seguir.
 
 | Código de retorno                                                                          | Descrição                                            |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**TRUE**</dt> </dl>  | Substitua o arquivo no diretório de destino.<br/> |
-| <dl> <dt>**FOR**</dt> </dl> | Ignore a operação de cópia atual.<br/>            |
+| <dl> <dt>**Verdade**</dt> </dl>  | Substituir o arquivo no diretório de destino.<br/> |
+| <dl> <dt>**False**</dt> </dl> | Ignore a operação de cópia atual.<br/>            |
 
 
 
@@ -64,9 +64,9 @@ A rotina de retorno de chamada deve retornar um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ A rotina de retorno de chamada deve retornar um dos valores a seguir.
 [Notificações](notifications.md)
 </dt> <dt>
 
-[**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
+[**Filepaths**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a)
 </dt> <dt>
 
 [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea)

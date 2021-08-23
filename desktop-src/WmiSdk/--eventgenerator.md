@@ -2,7 +2,7 @@
 description: Serve como uma classe pai para classes que controlam a geração de eventos, como eventos de temporizador.
 ms.assetid: 381b06e7-2857-4932-9f52-f1d62efa8b79
 ms.tgt_platform: multiple
-title: __EventGenerator classe
+title: Classe __EventGenerator
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "119732898"
 ---
 # <a name="__eventgenerator-class"></a>\_\_Classe EventGenerator
 
-A **\_ \_ classe de sistema EventGenerator** é uma classe base abstrata que serve como uma classe pai para classes que controlam a geração de eventos, como eventos [de temporizador](receiving-a-timed-or-repeating-event.md).
+A classe de sistema **\_ \_ EventGenerator** é uma classe base abstrata que serve como uma classe pai para classes que controlam a geração de eventos, como [eventos de temporizador](receiving-a-timed-or-repeating-event.md).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -38,11 +38,11 @@ class __EventGenerator : __IndicationRelated
 
 ## <a name="members"></a>Membros
 
-A **\_ \_ classe EventGenerator** não define nenhum membro.
+A classe **\_ \_ EventGenerator** não define nenhum membro.
 
 ## <a name="remarks"></a>Comentários
 
-A **\_ \_ classe EventGenerator** é derivada de [**\_ \_ IndicationRelated,**](--indicationrelated.md)que não tem nenhuma propriedade.
+A classe **\_ \_ EventGenerator** é derivada de [**\_ \_ IndicationRelated**](--indicationrelated.md), que não tem propriedades.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ A **\_ \_ classe EventGenerator** é derivada de [**\_ \_ IndicationRelated,**](
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
 
 
 
@@ -60,7 +60,7 @@ A **\_ \_ classe EventGenerator** é derivada de [**\_ \_ IndicationRelated,**](
 
 <dl> <dt>
 
-[**\_\_IndicaçãoRelated**](/windows/desktop/WmiSdk/--indicationrelated)
+[**\_\_IndicationRelated**](/windows/desktop/WmiSdk/--indicationrelated)
 </dt> <dt>
 
 [Classes do sistema WMI](wmi-system-classes.md)

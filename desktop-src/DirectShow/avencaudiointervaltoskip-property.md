@@ -1,21 +1,21 @@
 ---
 description: Especifica o número de amostras de áudio para o codificador ignorar.
 ms.assetid: cc4342d4-07d1-44d9-8fa6-a5f921f7cf06
-title: Propriedade AVEncAudioIntervalToSkip (Codecapi. h)
+title: Propriedade AVEncAudioIntervalToSkip (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a901f30e634d25e97f04fbbc49ac288d4471a62b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 2c57b7a7943beeb59e138aa3f390e968c5fcea385a7bdb159755b1bbb02bd2af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690296"
 ---
 # <a name="avencaudiointervaltoskip-property"></a>Propriedade AVEncAudioIntervalToSkip
 
 Especifica o número de amostras de áudio para o codificador ignorar.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -31,9 +31,9 @@ Esta propriedade é de leitura/gravação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -41,10 +41,10 @@ Esta propriedade é de leitura/gravação.
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Pstore.h
-ms.openlocfilehash: ff53526febcc8eab1a95285ffa3dcb59fe628238
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: abf5bc69fd36e45cc715b3805f5407e821cfc7efc7f6595bcfc9eab8d762b716
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690856"
 ---
 # <a name="pst_authenticodedata-structure"></a>Estrutura de AUTHENTICODEDATA de PST \_
 
-\[O armazenamento protegido (Pstore) está disponível para uso no Windows Server 2003 e no Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e no Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[o Armazenamento protegido (pstore) está disponível para uso no Windows Server 2003 e no Windows XP. ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
 
 Define os dados a serem usados na verificação de Authenticode da Microsoft dos dados do item.
 
@@ -62,9 +62,9 @@ Um valor que identifica o modificador que um de uma cadeia de chamadores deve ve
 
 | Valor                                                                                                                                                                                                                                                 | Significado                                                                                                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="PST_AC_SINGLE_CALLER"></span><span id="pst_ac_single_caller"></span><dl> <dt>**PST \_ \_ \_ Chamador único de AC**</dt> <dt>0</dt> </dl>           | Apenas um único nível na cadeia de chamadas para Pstore. O chamador passa a verificação de verificação. A imagem especificada é o chamador imediato e é um aplicativo (. exe).<br/>              |
-| <span id="PST_AC_TOP_LEVEL_CALLER"></span><span id="pst_ac_top_level_caller"></span><dl> <dt>**PST \_ \_ \_ \_ Chamador 1 de nível superior de AC**</dt> <dt></dt> </dl> | O chamador de nível superior deve passar na verificação, mas pode haver DLLs intermediárias. A imagem especificada não é necessariamente o chamador imediato e é um aplicativo (. exe).<br/>           |
-| <span id="PST_AC_IMMEDIATE_CALLER"></span><span id="pst_ac_immediate_caller"></span><dl> <dt>**PST \_ \_ \_ Chamador imediato de AC**</dt> <dt>2</dt> </dl>  | O chamador imediato deve passar na verificação, mas não precisa ser o processo de nível superior. A imagem especificada é o chamador imediato, e a imagem pode ser um aplicativo (. exe) ou uma DLL.<br/> |
+| <span id="PST_AC_SINGLE_CALLER"></span><span id="pst_ac_single_caller"></span><dl> <dt>**PST \_ \_ \_ Chamador único de AC**</dt> <dt>0</dt> </dl>           | Apenas um único nível na cadeia de chamadas para Pstore. O chamador passa a verificação de verificação. A imagem especificada é o chamador imediato e é um aplicativo (.exe).<br/>              |
+| <span id="PST_AC_TOP_LEVEL_CALLER"></span><span id="pst_ac_top_level_caller"></span><dl> <dt>**PST \_ \_ \_ \_ Chamador 1 de nível superior de AC**</dt> <dt></dt> </dl> | O chamador de nível superior deve passar na verificação, mas pode haver DLLs intermediárias. A imagem especificada não é necessariamente o chamador imediato e é um aplicativo (.exe).<br/>           |
+| <span id="PST_AC_IMMEDIATE_CALLER"></span><span id="pst_ac_immediate_caller"></span><dl> <dt>**PST \_ \_ \_ Chamador imediato de AC**</dt> <dt>2</dt> </dl>  | O chamador imediato deve passar na verificação, mas não precisa ser o processo de nível superior. A imagem especificada é o chamador imediato, e a imagem pode ser um aplicativo (.exe) ou uma DLL.<br/> |
 
 
 

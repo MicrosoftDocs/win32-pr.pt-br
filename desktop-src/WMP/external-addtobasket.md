@@ -3,9 +3,9 @@ title: Método external. addToBasket
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | Método external. addToBasket
 ms.assetid: c0dc8cd7-b924-47b8-b36c-caff8f1f892f
 keywords:
-- método addToBasket Windows Media Player
+- Windows Media Player do método addToBasket
 - método addToBasket Windows Media Player, classe externa
-- Classe externa Windows Media Player, método addToBasket
+- classe externa Windows Media Player, método addToBasket
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e2fab549dec9e24b0c5bbe61f5511e375c4c04
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 17f51cfc3df641b02a5aa3a0869e810f318357dd70ba67acb3ec2310f8a5a355
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650006"
 ---
 # <a name="externaladdtobasket-method"></a>Método external. addToBasket
 
@@ -30,7 +30,7 @@ ms.locfileid: "105759707"
 
  
 
-O método **addToBasket** adiciona itens de mídia ao painel de lista (também chamado de cesta) no Windows Media Player.
+O método **addToBasket** adiciona itens de mídia ao painel de lista (também chamado de cesta) em Windows Media Player.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -76,7 +76,7 @@ CPRadioID
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

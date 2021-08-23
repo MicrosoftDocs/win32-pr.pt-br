@@ -4,12 +4,12 @@ ms.assetid: 279bb9ad-afb6-406e-b74a-8424da177e6f
 title: Propriedade TARGETDIR
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8d5e2650dab798c1f6b9e766fc1dcbb61dcfa77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0b61575de21b47b1d82764d96e5876a9fd4c89fb1f837150988aa2c7a08e07be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626596"
 ---
 # <a name="targetdir-property"></a>Propriedade TARGETDIR
 
@@ -27,7 +27,7 @@ Para obter mais informações sobre como alterar TARGETDIR durante uma instalaç
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

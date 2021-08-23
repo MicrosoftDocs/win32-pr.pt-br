@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6269b9b3aceed9251282dd728e4a48de3f180731
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7bfa232185ce17c9198edd1e1d97874e526d6f3ee16ae5edc3dcdbd14531359
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652046"
 ---
 # <a name="creftimegetunits-method"></a>Método CReftime. getunits
 
@@ -40,7 +40,7 @@ LONGLONG GetUnits();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor de [**CRefTime:: m \_ time**](creftime-m-time.md).
 
@@ -50,7 +50,7 @@ Retorna o valor de [**CRefTime:: m \_ time**](creftime-m-time.md).
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>REFTIME. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Reftime. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

@@ -1,21 +1,21 @@
 ---
-description: Especifica o nível de normalização da caixa de diálogo, em decibéis (dB), em um fluxo de áudio Dolby Digital. Essa propriedade se aplica aos codificadores Dolby Digital Audio.
+description: Especifica o nível de normalização da caixa de diálogo, em dB (decib), em um fluxo de áudio Dolby Digital. Essa propriedade se aplica a codificadores de áudio Dolby Digital.
 ms.assetid: c347f8b2-5132-45d6-af66-43d3c409b0d7
-title: Propriedade AVEncDDDialogNormalization (Codecapi. h)
+title: Propriedade AVEncDDDialogNormalization (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 586f241dc8d032767ecb2678c1ee5704dc20e0ef
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f050147b0de889c9bb12f4e66964f16b8705c4883fa66c0f5cbba9c82338c30f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690186"
 ---
 # <a name="avencdddialognormalization-property"></a>Propriedade AVEncDDDialogNormalization
 
-Especifica o nível de normalização da caixa de diálogo, em decibéis (dB), em um fluxo de áudio Dolby Digital. Essa propriedade se aplica aos codificadores Dolby Digital Audio.
+Especifica o nível de normalização da caixa de diálogo, em dB (decib), em um fluxo de áudio Dolby Digital. Essa propriedade se aplica a codificadores de áudio Dolby Digital.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Esta propriedade tem um intervalo linear de valores. Para obter o intervalo com suporte, chame [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Essa propriedade tem um intervalo linear de valores. Para obter o intervalo com suporte, chame [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Esta propriedade tem um intervalo linear de valores. Para obter o intervalo com 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ Esta propriedade tem um intervalo linear de valores. Para obter o intervalo com 
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msidle.dll
-ms.openlocfilehash: e50679c53123ad140324f7d159ef938367c02af0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2ba6732b9221d4d4d43e670d0d42d39363d50dffc0d2d4b0daf378b10dd292e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691406"
 ---
 # <a name="endidledetection-function"></a>Função EndIdleDetection
 
-\[Essa função não tem suporte e pode ser alterada ou não estar disponível no futuro. Em vez disso, use a função **GetLastInputInfo** .\]
+\[Essa função não tem suporte e pode ser alterada ou não disponível no futuro. Em vez disso, use **a função GetLastInputInfo.**\]
 
 Encerra o monitoramento de inatividade.
 
@@ -48,13 +48,13 @@ Esse parâmetro deve ser definido como zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se a função tiver sucesso; caso contrário, retornará **false**.
+Retornará **TRUE** se a função for bem-sucedida; caso contrário, retornará **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) . Esta função não é exportada pelo nome; Especifique o ordinal 4 ao chamar **GetProcAddress**.
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) Essa função não é exportada por nome; especifique ordinal 4 ao chamar **GetProcAddress.**
 
 ## <a name="requirements"></a>Requisitos
 

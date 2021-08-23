@@ -1,11 +1,11 @@
 ---
-title: Propriedade SortProperty IResultsViewer (WdsView. h)
-description: Essa propriedade irá definir ou retornar o IndexColumn da propriedade para classificar os resultados por.
+title: Propriedade SortProperty de IResultsViewer (WdsView.h)
+description: Essa propriedade definirá ou retornará o IndexColumn da propriedade por onde classificar os resultados.
 ms.assetid: 5b117f2e-52cc-43ef-9ebd-d7a800015465
 keywords:
-- Recursos de ambiente herdado do Windows da propriedade SortProperty
-- Propriedade SortProperty recursos de ambiente herdados do Windows, interface IResultsViewer
-- Recursos do ambiente Windows herdado da interface IResultsViewer, Propriedade SortProperty
+- Propriedade SortProperty Herdou Windows Recursos de Ambiente
+- Propriedade SortProperty Recursos Windows ambiente herdado, interface IResultsViewer
+- Interface IResultsViewer Recursos Windows ambiente herdado, propriedade SortProperty
 topic_type:
 - apiref
 api_name:
@@ -18,21 +18,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cb75b98f1f0a726ef0d61b5c476df1485ba7189
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 99ab912dde6bdc87b2e9d05496f25de497b6fdc9c8fde4e65e3d2cb89549b1e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610926"
 ---
-# <a name="iresultsviewersortproperty-property"></a>Propriedade IResultsViewer:: SortProperty
+# <a name="iresultsviewersortproperty-property"></a>Propriedade IResultsViewer::SortProperty
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
-Essa propriedade irá definir ou retornar o IndexColumn da propriedade para classificar os resultados por.
+Essa propriedade definirá ou retornará o IndexColumn da propriedade por onde classificar os resultados.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -59,10 +59,10 @@ Define a propriedade IndexColumn.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                        |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                 |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                        |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

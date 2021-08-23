@@ -4,17 +4,17 @@ ms.assetid: 51a48716-53ef-493e-8974-c429bde9b6ff
 title: Administração do Sistema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a70263458403a621975de383f689f842ade8bc69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e86eb0beafd46abed99d14a5fb99a7f37166a150a92ad1194153e2cd96947eee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663916"
 ---
 # <a name="system-administration"></a>Administração do Sistema
 
 > [!Note]  
-> Esses tópicos são para desenvolvedores de software. Para problemas de atendimento ao cliente, consulte [suporte-ajuda do Windows](https://windows.microsoft.com/windows/support#1TC=windows-10).
+> Esses tópicos são para desenvolvedores de software. para problemas de suporte ao cliente, consulte [ajuda de Windows de suporte](https://windows.microsoft.com/windows/support#1TC=windows-10).
 
  
 
@@ -25,7 +25,7 @@ ms.locfileid: "105751065"
 [Provedor WMI de Dados de Configuração da Inicialização](/previous-versions/windows/desktop/bcd/boot-configuration-data-portal)
 </dt> <dd>
 
-O provedor de Dados de Configuração da Inicialização (BCD) Instrumentação de Gerenciamento do Windows (WMI) fornece acesso programático a repositórios BCD, que descrevem aplicativos de inicialização e configurações do aplicativo de inicialização.
+o provedor de Dados de Configuração da Inicialização (BCD) Instrumentação de Gerenciamento do Windows (WMI) fornece acesso programático a repositórios BCD, que descrevem aplicativos de inicialização e configurações do aplicativo de inicialização.
 
 </dd> <dt>
 
@@ -57,10 +57,10 @@ O registro de MDM registra os dispositivos em um serviço MDM.
 
 </dd> <dt>
 
-[Provedor de configurações de gerenciamento de dispositivo móvel](/previous-versions/windows/desktop/mdmsettingsprov/mobile-device-management-settings-provider-portal)
+[provedor de Configurações de gerenciamento de dispositivo móvel](/previous-versions/windows/desktop/mdmsettingsprov/mobile-device-management-settings-provider-portal)
 </dt> <dd>
 
-O provedor de configurações do MDM permite o gerenciamento de configurações em dispositivos assinados para um serviço MDM.
+o provedor de Configurações de MDM permite o gerenciamento de configurações em dispositivos assinados para um serviço de MDM.
 
 </dd> <dt>
 
@@ -71,24 +71,24 @@ O NetShell é uma ferramenta baseada em linha de comando que permite aos adminis
 
 </dd> <dt>
 
-[Infraestrutura de gerenciamento de configurações](/previous-versions/windows/desktop/smi/settings-management-infrastructure--smi-)
+[Configurações Infraestrutura de gerenciamento](/previous-versions/windows/desktop/smi/settings-management-infrastructure--smi-)
 </dt> <dd>
 
-A SMI (infraestrutura de gerenciamento de configurações) fornece uma infraestrutura padronizada para acessar e manipular configurações que podem ser modificadas por usuários e aplicativos.
+Configurações A infraestrutura de gerenciamento (SMI) fornece uma infraestrutura padronizada para acessar e manipular configurações que podem ser modificadas por usuários e aplicativos.
 
 </dd> <dt>
 
 [Log de Inventário de Software](/previous-versions/windows/desktop/sil/software-inventory-logging-portal)
 </dt> <dd>
 
-O log de inventário de software coleta dados de licenciamento sobre o software instalado em um servidor Windows e fornece acesso remoto aos dados para que possam ser agregados facilmente por um datacenter.
+o log de inventário de software coleta dados de licenciamento sobre o software instalado em um Windows Server e fornece acesso remoto aos dados para que possam ser agregados facilmente por um datacenter.
 
 </dd> <dt>
 
 [API de licenciamento de software](/previous-versions/windows/desktop/secslapi/software-licensing-api-portal)
 </dt> <dd>
 
-A API de licenciamento de software (SLAPI) pode ser usada para determinar uma instalação do Microsoft Windows original, instalar e registrar uma licença de gerenciamento de ativos e recuperar informações sobre a política de licenciamento de um componente de software.
+a API de licenciamento de Software (SLAPI) pode ser usada para determinar uma instalação do Microsoft Windows original, instalar e registrar uma licença de gerenciamento de ativos e recuperar informações sobre a política de licenciamento de um componente de Software.
 
 </dd> <dt>
 
@@ -116,69 +116,69 @@ O Agendador de Tarefas permite que você execute automaticamente tarefas rotinei
 [Log de acesso do usuário](/previous-versions/windows/desktop/ual/user-access-logging)
 </dt> <dd>
 
-O registro de acesso do usuário (UAL) é uma estrutura comum para funções do Windows Server para relatar suas respectivas métricas de consumo. Essa estrutura UAL é um componente fundamental e essencial da solução de gerenciamento de licenciamento maior.
+o registro de acesso do usuário (UAL) é uma estrutura comum para Windows funções de servidor para relatar suas respectivas métricas de consumo. Essa estrutura UAL é um componente fundamental e essencial da solução de gerenciamento de licenciamento maior.
 
 </dd> <dt>
 
-[Windows Deployment Services](/windows/desktop/Wds/windows-deployment-services-portal)
+[Windows Serviços de implantação](/windows/desktop/Wds/windows-deployment-services-portal)
 </dt> <dd>
 
-O WDS (serviços de implantação do Windows) é a versão revisada do RIS (serviços de instalação remota). O WDS permite a implantação de sistemas operacionais Windows. Você pode usar o WDS para configurar novos clientes com uma instalação baseada em rede sem exigir que os administradores visitem cada computador ou instalem diretamente da mídia de CD ou DVD.
+Windows O WDS (serviços de implantação) é a versão revisada do RIS (serviços de instalação remota). o WDS permite a implantação de sistemas operacionais Windows. Você pode usar o WDS para configurar novos clientes com uma instalação baseada em rede sem exigir que os administradores visitem cada computador ou instalem diretamente da mídia de CD ou DVD.
 
 </dd> <dt>
 
-[API do Windows Genuine Advantage](/previous-versions/windows/desktop/wingen/windows-genuine-advantage-api-portal)
+[Windows API de vantagem original](/previous-versions/windows/desktop/wingen/windows-genuine-advantage-api-portal)
 </dt> <dd>
 
-A API do Windows Genuine Advantage é usada para determinar se o sistema operacional Windows em execução no sistema atual é uma cópia original.
+a API do Windows genuine advantage é usada para determinar se o sistema operacional Windows que está sendo executado no sistema atual é uma cópia original.
 
 </dd> <dt>
 
 [Instrumentação de Gerenciamento do Windows](/windows/desktop/WmiSdk/wmi-start-page)
 </dt> <dd>
 
-Instrumentação de Gerenciamento do Windows (WMI) é a infraestrutura para dados de gerenciamento e operações em sistemas operacionais baseados no Windows. Você pode escrever scripts WMI ou aplicativos para automatizar tarefas administrativas em computadores remotos.
+Windows a instrumentação de gerenciamento (WMI) é a infraestrutura para dados de gerenciamento e operações em sistemas operacionais baseados em Windows. Você pode escrever scripts WMI ou aplicativos para automatizar tarefas administrativas em computadores remotos.
 
 </dd> <dt>
 
 [APIs do Windows Defender WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 </dt> <dd>
 
-As APIs do WMI do Windows Defender podem ser usadas para gerenciar a proteção contra malware por meio de scripts ou aplicativos.
+Windows Defender As APIs do WMI podem ser usadas para gerenciar a proteção contra malware por meio de scripts ou aplicativos.
 
 </dd> <dt>
 
 [Windows PowerShell](https://msdn.microsoft.com/library/Dd835506(v=VS.85).aspx)
 </dt> <dd>
 
-O Windows PowerShell é um shell de linha de comando baseado em tarefa e uma linguagem de script desenvolvida especialmente para a administração do sistema. Baseado no .NET Framework, o Windows PowerShell ajuda os profissionais de TI e os usuários avançados a controlar e automatizar a administração de sistemas operacionais Windows e de aplicativos que são executados no Windows.
+o Windows PowerShell é um shell de linha de comando baseado em tarefa e linguagem de script projetado especialmente para a administração do sistema. Baseado no .NET Framework, o Windows PowerShell ajuda os profissionais de TI e os usuários avançados a controlar e automatizar a administração de sistemas operacionais Windows e de aplicativos que são executados no Windows.
 
 </dd> <dt>
 
 [Gerenciamento Remoto do Windows](/windows/desktop/WinRM/portal)
 </dt> <dd>
 
-O Gerenciamento Remoto do Windows (WinRM) é a implementação da Microsoft do protocolo WS-Management, um protocolo padrão baseado em protocolo SOAP (Simple Object Access Protocol), que permite que os sistemas operacionais e de hardware, de fornecedores diferentes, interajam. A especificação do protocolo WS-Management fornece uma maneira comum de os sistemas acessarem e trocarem informações de gerenciamento em uma infra-estrutura de ti.
+o Gerenciamento Remoto do Windows (WinRM) é a implementação da Microsoft do protocolo WS-Management, um protocolo padrão baseado em protocolo SOAP (Simple Object Access protocol), que permite que os sistemas operacionais e de hardware, de fornecedores diferentes, interajam. A especificação do protocolo WS-Management fornece uma maneira comum de os sistemas acessarem e trocarem informações de gerenciamento em uma infra-estrutura de ti.
 
 </dd> <dt>
 
-[Proteção de Recursos do Windows](/windows/desktop/Wfp/windows-resource-protection-portal)
+[Windows Proteção de recursos](/windows/desktop/Wfp/windows-resource-protection-portal)
 </dt> <dd>
 
-O Proteção de Recursos do Windows (WRP) impede a substituição de arquivos de sistema, pastas e chaves do registro essenciais que são instalados como parte do sistema operacional.
+Windows A WRP (proteção de recurso) impede a substituição de arquivos de sistema, pastas e chaves do registro essenciais que são instalados como parte do sistema operacional.
 
 </dd> <dt>
 
 [Windows Server Update Services](windows-server-update-services.md)
 </dt> <dd>
 
-Os administradores do sistema podem usar a API do Windows Server Update Services (WSUS) para determinar quais atualizações se aplicam a um computador ou grupo de computadores, baixar essas atualizações e instalá-las com pouca ou nenhuma intervenção do usuário.
+os administradores do sistema podem usar a API do Windows Server Update Services (WSUS) para determinar quais atualizações se aplicam a um computador ou grupo de computadores, baixar essas atualizações e instalá-las com pouca ou nenhuma intervenção do usuário.
 
 Fornecedores independentes de software e desenvolvedores de usuários finais podem integrar recursos do WSUS ao gerenciamento de computadores ou ao software de gerenciamento de atualizações para fornecer um ambiente operacional perfeitamente integrado.
 
 </dd> <dt>
 
-[Ferramenta de avaliação do sistema do Windows](/windows/desktop/WinSAT/windows-system-assessment-tool-portal)
+[Windows Ferramenta de avaliação do sistema](/windows/desktop/WinSAT/windows-system-assessment-tool-portal)
 </dt> <dd>
 
 Como usar o WinSAT para avaliar as características e os recursos de desempenho de um computador.

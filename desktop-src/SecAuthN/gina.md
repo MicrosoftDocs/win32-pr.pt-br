@@ -1,37 +1,37 @@
 ---
-description: A finalidade de uma DLL GINA é fornecer procedimentos de autenticação e identificação de usuário personalizáveis. A GINA padrão faz isso delegando o monitoramento de eventos SAS ao Winlogon, que recebe e processa as sequências de atenção seguro (SASs) de CTL + ALT + DEL.
+description: A finalidade de uma DLL DOES é fornecer procedimentos personalizáveis de autenticação e identificação do usuário. O PADRÃO DEIS faz isso delegar o monitoramento de eventos SAS para o Winlogon, que recebe e processa ASS (sequências de atenção segura) CTL+ALT+DEL.
 ms.assetid: 035e9c8b-2490-438d-8f02-7e0f039f960f
-title: GINA
+title: Gina
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084a65ad42bdbe030e697481501a4dc60e54baef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5dad8917a24100fbf5c6c36eab3bbfc5b67baf62b378f9207626378fe864b672
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623136"
 ---
-# <a name="gina"></a>GINA
+# <a name="gina"></a>Gina
 
-A [*Gina*](/windows/desktop/SecGloss/g-gly) opera no [*contexto*](/windows/desktop/SecGloss/c-gly) do processo do [*Winlogon*](/windows/desktop/SecGloss/w-gly) e, como tal, a dll Gina é carregada logo no início do processo de inicialização. A DLL GINA deve seguir as regras para que a integridade do sistema seja mantida, particularmente em relação à interação com o usuário.
+O [*ÂMBITO*](/windows/desktop/SecGloss/g-gly) opera no [*contexto*](/windows/desktop/SecGloss/c-gly) do processo [*winlogon*](/windows/desktop/SecGloss/w-gly) e, como tal, a DLL DOLP é carregada muito no início do processo de inicialização. A DLL DOEI deve seguir as regras para que a integridade do sistema seja mantida, especialmente em relação à interação com o usuário.
 
 > [!Note]  
-> As DLLs GINAs são ignoradas no Windows Vista.
+> As DLLs DE VALOR são ignoradas no Windows Vista.
 
  
 
-O uso mais comum da GINA é comunicar-se com um dispositivo externo, como um [*leitor*](/windows/desktop/SecGloss/r-gly)de cartão inteligente. É essencial definir o parâmetro Start para o driver de dispositivo como System (WinNT. h: início do \_ sistema de serviço \_ ) para garantir que o driver seja carregado até o momento em que a Gina é invocada.
+O uso mais comum do SEMPRE é se comunicar com um dispositivo externo, como um leitor de cartão [*inteligente.*](/windows/desktop/SecGloss/r-gly) É essencial definir o parâmetro start para o driver de dispositivo para o sistema (Winnt.h: SERVICE SYSTEM START) para garantir que o driver seja carregado no momento em que oLP for \_ \_ invocado.
 
-A finalidade de uma DLL GINA é fornecer procedimentos de autenticação e identificação de usuário personalizáveis. A GINA padrão faz isso delegando o monitoramento de eventos SAS ao Winlogon, que recebe e processa as [*sequências de atenção seguro*](/windows/desktop/SecGloss/s-gly) (SASs) de CTL + ALT + del. Uma GINA personalizada é responsável por se configurar para receber eventos de SAS (além do evento de SAS CTRL + ALT + DEL) e notificar o Winlogon quando ocorrerem eventos de SAS. O Winlogon avaliará seu estado para determinar o que é necessário para processar a SAS da GINAção personalizada. Esse processamento geralmente inclui chamadas para as funções de processamento SAS da GINA.
+A finalidade de uma DLL DOES é fornecer procedimentos personalizáveis de autenticação e identificação do usuário. O PADRÃO DEIS faz isso delegar o monitoramento de eventos SAS para o Winlogon, que recebe e processa ASS [*(sequências*](/windows/desktop/SecGloss/s-gly) de atenção segura) CTL+ALT+DEL. Um CUSTOM é responsável por configurar a si mesmo para receber eventos SAS (diferente do evento padrão CTRL+ALT+DEL SAS) e notificar o Winlogon quando ocorrerem eventos SAS. O Winlogon avaliará seu estado para determinar o que é necessário para processar a SAS do DYNAMIC personalizada. Esse processamento geralmente inclui chamadas para as funções de processamento de SAS do SEMPRE.
 
-Para obter informações sobre funções de exportação de GINA específicas, consulte [funções de exportação de Gina](authentication-functions.md). Para obter informações sobre como usar estruturas GINA para passar informações, consulte [estruturas Gina](authentication-structures.md).
+Para obter informações sobre funções específicas de exportação [DELP,](authentication-functions.md)consulte Funções de exportação DE EXPORT. Para obter informações sobre como usar estruturas DEIS para passar informações, consulte [Estruturas DEIS.](authentication-structures.md)
 
 
 
 | Tópico                                                                             | Descrição                                                                     |
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Carregando e executando uma DLL GINA](loading-and-running-a-gina-dll.md)<br/>   | Qual valor da chave do registro a ser alterado para carregar e executar uma DLL GINA personalizada.<br/> |
-| [Criando e testando uma DLL GINA](building-and-testing-a-gina-dll.md)<br/> | Como testar uma DLL GINA.<br/>                                              |
+| [Carregando e executando uma DLL DE LTD](loading-and-running-a-gina-dll.md)<br/>   | Qual valor de chave do Registro deve ser alterado para carregar e executar uma DLL CUSTOM CUSTOM.<br/> |
+| [Como criar e testar uma DLL DE LTD](building-and-testing-a-gina-dll.md)<br/> | Como testar uma DLL DE LTD.<br/>                                              |
 
 
 
