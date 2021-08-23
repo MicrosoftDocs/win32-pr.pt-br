@@ -1,7 +1,7 @@
 ---
 description: A função GetInterface recupera um ponteiro de interface.
 ms.assetid: 75fe8849-c779-4d47-a5ff-5a23308c8a21
-title: Função GetInterface (combase. h)
+title: Função GetInterface (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 317f08af2a4ff0e9410c61da8b19d14735a14f6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 289c6e56d4b5387fe9224e476c69865107102141b687825cdfd9a717f482632c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537026"
 ---
 # <a name="getinterface-function"></a>Função GetInterface
 
@@ -43,27 +43,27 @@ HRESULT GetInterface(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Ponteiro para a interface **IUnknown** .
+Ponteiro para a interface **IUnknown.**
 
 </dd> <dt>
 
-*ppv* 
+*Ppv* 
 </dt> <dd>
 
 Endereço de um ponteiro para a interface recuperada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro executa um incremento thread-safe da contagem de referência. Para recuperar a interface e adicionar uma referência, chame essa função de sua implementação de substituição do método **INonDelegatingUnknown:: NonDelegatingQueryInterface** .
+Essa função membro executa um incremento thread-safe da contagem de referência. Para recuperar a interface e adicionar uma referência, chame essa função de sua implementação de substituição do **método INonDeltingUnknown::NonDeltingQueryInterface.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Essa função de membro executa um incremento thread-safe da contagem de referê
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Combase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Essa função de membro executa um incremento thread-safe da contagem de referê
 [**Funções auxiliares COM**](com-helper-functions.md)
 </dt> <dt>
 
-[**INonDelegatingUnknown**](inondelegatingunknown.md)
+[**Inondelegatingunknown**](inondelegatingunknown.md)
 </dt> </dl>
 
  

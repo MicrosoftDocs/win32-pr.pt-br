@@ -1,9 +1,9 @@
 ---
-title: TEMA. Copyright
+title: THEME.copyright
 description: O atributo de direitos autorais especifica ou recupera a cadeia de caracteres de direitos autorais para a capa.
 ms.assetid: d27287dd-711c-4f50-97ab-f49edc926566
 keywords:
-- THEME. Copyright Windows Media Player
+- THEME.copyright Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6a08f19195e487858d6adf31d4ad4b0d0199700
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee2aac6c601c2f81b64f6cdc4df4dccb69827953771ef7acebd916b33d01052b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507506"
 ---
-# <a name="themecopyright"></a>TEMA. Copyright
+# <a name="themecopyright"></a>THEME.copyright
 
-O atributo de **direitos autorais** especifica ou recupera a cadeia de caracteres de direitos autorais para a capa.
+O **atributo de** direitos autorais especifica ou recupera a cadeia de caracteres de direitos autorais para a capa.
 
 ``` syntax
 theme.copyright
@@ -29,7 +29,7 @@ theme.copyright
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação sem valor padrão.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação** sem valor padrão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação sem valor pa
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

@@ -1,31 +1,31 @@
 ---
 title: HttpCalculatorWithEncodedChannelServiceExample
-description: Revise um exemplo C++ da API de Serviços Web do Windows (WWSAPI) de uma calculadora HTTP com serviço de canal codificado.
+description: examine um exemplo de Windows WWSAPI (API de serviços Web) C++ de uma calculadora HTTP com serviço de canal codificado.
 ms.assetid: 3b8d58dd-2f0c-4008-81ad-abda23a26a52
 keywords:
-- HttpCalculatorWithEncodedChannelServiceExample Native-Web-Services
+- HttpCalculatorWithEncodedChannelServiceExample nativo – Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1eb0ef089b546a87ce741934ce26855e726c38a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cc24880433d11079c5c842d24b41e2badd8a7e33e7b305125ee25b04f7701b8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590146"
 ---
 # <a name="httpcalculatorwithencodedchannelserviceexample"></a>HttpCalculatorWithEncodedChannelServiceExample
 
-Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora com um canal personalizado e uma implementação de ouvinte nessa camada sobre HTTP.
+Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora com uma implementação de canal e ouvinte personalizado que é a camada sobre HTTP.
 
--   [HttpCalculatorWithEncodedChannelService.cpp](#httpcalculatorwithencodedchannelservicecpp)
--   [EncodedChannel.h](#encodedchannelh)
--   [EncodedChannel.cpp](#encodedchannelcpp)
--   [CalculatorService.wsdl](#calculatorservicewsdl)
+-   [HttpCalculatorWithEncodedChannelService. cpp](#httpcalculatorwithencodedchannelservicecpp)
+-   [EncodedChannel. h](#encodedchannelh)
+-   [EncodedChannel. cpp](#encodedchannelcpp)
+-   [CalculatorService. WSDL](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorwithencodedchannelservicecpp"></a>HttpCalculatorWithEncodedChannelService.cpp
+## <a name="httpcalculatorwithencodedchannelservicecpp"></a>HttpCalculatorWithEncodedChannelService. cpp
 
 
 ```C++
@@ -273,7 +273,7 @@ Exit:
 
 
 
-## <a name="encodedchannelh"></a>EncodedChannel.h
+## <a name="encodedchannelh"></a>EncodedChannel. h
 
 
 ```C++
@@ -283,7 +283,7 @@ extern WS_CHANNEL_DECODER channelDecoder;
 
 
 
-## <a name="encodedchannelcpp"></a>EncodedChannel.cpp
+## <a name="encodedchannelcpp"></a>EncodedChannel. cpp
 
 
 ```C++
@@ -649,7 +649,7 @@ WS_CHANNEL_DECODER channelDecoder =
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
 
 ``` syntax
 <wsdl:definitions 

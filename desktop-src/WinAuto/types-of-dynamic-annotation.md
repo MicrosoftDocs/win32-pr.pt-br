@@ -4,12 +4,12 @@ description: Há três tipos de anotação dinâmica com suporte na anotação d
 ms.assetid: 113fea65-982e-4291-9d60-bbb57282f3f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0453d3b5d05e2713d1a57fb0f475d4ec2a481b02
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c58d30abe3d34fc61a9c85ebce0f6f6e38d51a43b70bef7d28f82adc4b476d74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570926"
 ---
 # <a name="types-of-dynamic-annotation"></a>Tipos de anotação dinâmica
 
@@ -21,7 +21,7 @@ A anotação direta é a forma mais simples de anotação dinâmica. Ele é mais
 
 ## <a name="value-map-annotation"></a>Anotação de mapa de valor
 
-Além de anotar diretamente as propriedades do [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , há muitas vezes uma necessidade de converter um valor específico do controle em uma cadeia de caracteres que pode ser compreendida por um usuário final. Um exemplo é o controle deslizante de resolução de tela na guia **configurações** da janela **Propriedades de exibição** (no **painel de controle**). Embora cada posição do controle deslizante corresponda a uma resolução diferente (por exemplo, 640 x 480, 1024 x 768), o controle não tem conhecimento dessa relação e não pode transmitir essas informações ao Microsoft Acessibilidade Ativa.
+Além de anotar diretamente as propriedades do [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) , há muitas vezes uma necessidade de converter um valor específico do controle em uma cadeia de caracteres que pode ser compreendida por um usuário final. um exemplo é o controle deslizante de resolução de tela na guia **Configurações** na janela **propriedades de exibição** (no **painel de controle**). Embora cada posição do controle deslizante corresponda a uma resolução diferente (por exemplo, 640 x 480, 1024 x 768), o controle não tem conhecimento dessa relação e não pode transmitir essas informações ao Microsoft Acessibilidade Ativa.
 
 A anotação mapeada por valor facilita essa tarefa. Usando essa forma de anotação, você pode especificar cadeias de caracteres para valores de controle deslizante e especificar funções, Estados e descrições para ícones em exibições de lista e árvore. Para obter mais informações, consulte [anotação de mapa de valor](value-map-annotation.md).
 
@@ -31,9 +31,9 @@ A anotação de servidor permite que os desenvolvedores registrem um objeto de r
 
 Um recurso particularmente útil de anotação do servidor é que um servidor pode ser registrado uma vez para lidar com solicitações de um contêiner e de todos os seus filhos. Portanto, por exemplo, um único servidor pode ser configurado uma vez para lidar com solicitações de todos os itens é uma caixa de listagem. Para obter mais informações, consulte [anotação do servidor](server-annotation.md).
 
- 
+ 
 
- 
+ 
 
 
 

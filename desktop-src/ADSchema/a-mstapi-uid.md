@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 528d34d9d4282dac3f5bd5a41231094fd2666c2c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 36e929ecb48cdc7d12b0b75eb275a338e0a6371f365d4591ed532b399aaff03a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104369978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508536"
 ---
 # <a name="ms-tapi-unique-identifier-attribute"></a>atributo ms-TAPI-Unique-Identifier
 
@@ -57,7 +57,7 @@ Fornece o nome de uma conferência multicast TAPI. É o atributo de nomenclatura
 | ID do link                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
 | System-Only            | Falso                                                                                                                       |
-| É de valor único       | True                                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                                        |
 | É indexado             | Falso                                                                                                                       |
 | No catálogo global      | Falso                                                                                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                |
@@ -78,7 +78,7 @@ Fornece o nome de uma conferência multicast TAPI. É o atributo de nomenclatura
 | ID do link                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
 | System-Only            | Falso                                                                                                                       |
-| É de valor único       | True                                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                                        |
 | É indexado             | Falso                                                                                                                       |
 | No catálogo global      | Falso                                                                                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                |
@@ -99,7 +99,7 @@ Fornece o nome de uma conferência multicast TAPI. É o atributo de nomenclatura
 | ID do link                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
 | System-Only            | Falso                                                                                                                       |
-| É de valor único       | True                                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                                        |
 | É indexado             | Falso                                                                                                                       |
 | No catálogo global      | Falso                                                                                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                |
@@ -107,7 +107,7 @@ Fornece o nome de uma conferência multicast TAPI. É o atributo de nomenclatura
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Classes usadas em        | [**MS-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-Person**](c-mstapi-rtperson.md)<br/> |
+| Classes usadas em        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Fornece o nome de uma conferência multicast TAPI. É o atributo de nomenclatura
 | ID do link                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
 | System-Only            | Falso                                                                                                                       |
-| É de valor único       | True                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                        |
 | É indexado             | Falso                                                                                                                       |
-| No catálogo global      | Falso                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                |
+| No Catálogo Global      | Falso                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Classes usadas em        | [**MS-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-Person**](c-mstapi-rtperson.md)<br/> |
+| Classes usadas em        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Fornece o nome de uma conferência multicast TAPI. É o atributo de nomenclatura
 | ID do link                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
 | System-Only            | Falso                                                                                                                       |
-| É de valor único       | True                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                        |
 | É indexado             | Falso                                                                                                                       |
-| No catálogo global      | Falso                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                |
+| No Catálogo Global      | Falso                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Classes usadas em        | [**MS-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-Person**](c-mstapi-rtperson.md)<br/> |
+| Classes usadas em        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 

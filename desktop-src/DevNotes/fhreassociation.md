@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Fhcfg.idl
-ms.openlocfilehash: 1e303799a792e788fcb948ad6d3c6e2fd732e26e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f4b8cb55ce4b374f7f17f16044811a930623fc777a028ee98b5d8726bf714cce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538506"
 ---
 # <a name="fhreassociation-class"></a>Classe FhReassociation
 
@@ -34,9 +34,9 @@ A API de histórico de arquivo implementa essa classe. Para criar uma instância
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Fhcfg. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Fhcfg. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Fhcfg. idl</dt> </dl> |
 
 

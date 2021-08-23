@@ -3,7 +3,7 @@ title: Evento MouseUp do objeto AxWindowsMediaPlayer
 description: O evento MouseUp ocorre quando o usuário libera um botão do mouse. | Evento MouseUp do objeto AxWindowsMediaPlayer
 ms.assetid: 26bb6e82-d744-4770-b4de-07c9f52b76ec
 keywords:
-- Evento MouseUp do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MouseUp do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2bf9c209b4fa263eb0a6cbcba2a32b0b1c46fa9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10adcb3705182be7543eb1a89ea82d50cac096f3200a6341e10156de9262fa0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509436"
 ---
 # <a name="mouseup-event-of-the-axwindowsmediaplayer-object"></a>Evento MouseUp do objeto AxWindowsMediaPlayer
 

@@ -1,31 +1,31 @@
 ---
-title: Considerações de segurança interface do usuário do Windows
-description: Este tópico fornece informações sobre considerações de segurança na interface do usuário do Windows.
+title: considerações de segurança Windows Interface do usuário
+description: este tópico fornece informações sobre considerações de segurança na Interface do usuário do Windows.
 ms.assetid: D560E59A-D6C8-40a9-AABB-DE5A47C94E6E
 keywords:
-- Interface do usuário do Windows, segurança
-- segurança para interface do usuário do Windows
+- Windows Interface do usuário, segurança
+- segurança para Interface do usuário Windows
 - segurança de cadeia de caracteres
 - entrada do usuário, validação
 - Validando entradas do usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71b714de3ab12cb10d6e5d9a2e251c34eeeff7a5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f8d8281684dde5a78d458816c3d90c8c75fd96bb8ae7160004667ea302794c37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589196"
 ---
-# <a name="security-considerations-windows-user-interface"></a>Considerações de segurança: interface do usuário do Windows
+# <a name="security-considerations-windows-user-interface"></a>considerações sobre segurança: Windows Interface do usuário
 
-Este tópico fornece informações sobre considerações de segurança na interface do usuário do Windows. Este tópico não fornece tudo o que você precisa saber sobre problemas de segurança. Em vez disso, use-o como ponto de partida e referência para essa área de tecnologia.
+este tópico fornece informações sobre considerações de segurança na Interface do usuário do Windows. Este tópico não fornece tudo o que você precisa saber sobre problemas de segurança. Em vez disso, use-o como ponto de partida e referência para essa área de tecnologia.
 
-Com o aumento na interconectividade entre computadores, os desenvolvedores agora devem se preocupar com a segurança do aplicativo. No entanto, a segurança também aprimora a segurança geral do aplicativo e a robustez; Portanto, é outra maneira que o desenvolvedor pode fornecer uma boa experiência do usuário. Os tópicos a seguir discutem algumas possíveis preocupações de segurança ao usar a interface do usuário do Windows.
+Com o aumento na interconectividade entre computadores, os desenvolvedores agora devem se preocupar com a segurança do aplicativo. No entanto, a segurança também aprimora a segurança geral do aplicativo e a robustez; Portanto, é outra maneira que o desenvolvedor pode fornecer uma boa experiência do usuário. os tópicos a seguir discutem algumas possíveis preocupações de segurança ao usar a Interface do usuário do Windows.
 
 -   [Considerações sobre cadeia de caracteres](#string-considerations)
 -   [Entrada do usuário](#user-input)
--   [Alertas de segurança](#security-alerts)
+-   [Alertas de Segurança](#security-alerts)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="string-considerations"></a>Considerações sobre cadeia de caracteres
@@ -42,7 +42,7 @@ Além disso, considere o uso das funções [StrSafe](/windows/desktop/menurc/str
 
 ## <a name="user-input"></a>Entrada do usuário
 
-A interface do usuário do Windows está preocupada com o recebimento e a resposta a informações dos usuários. No entanto, os usuários que inserem dados incorretos podem interromper seu aplicativo, seja ou não pretendem fazer isso. Portanto, a regra cardeal é que toda a entrada deve ser validada.
+a interface do usuário Windows se preocupa em obter e responder às informações dos usuários. No entanto, os usuários que inserem dados incorretos podem interromper seu aplicativo, seja ou não pretendem fazer isso. Portanto, a regra cardeal é que toda a entrada deve ser validada.
 
 De preocupação principal são dados de cadeia de caracteres, que são discutidos em [Considerações sobre cadeias de caracteres](#string-considerations). No entanto, todos os tipos de entrada devem ser validados antes de serem usados pelo seu aplicativo. Outra preocupação é quando os dados são validados em um ponto, mas são alterados antes de serem usados, por exemplo, ao receber mensagens que fornecem o comprimento do texto. Portanto, se houver uma chance de que os dados possam ser alterados, você deverá verificar os dados antes de usá-los
 
@@ -72,13 +72,13 @@ A tabela a seguir lista os recursos que, se usados incorretamente, podem comprom
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Microsoft Security](https://www.microsoft.com/security/)
+[Segurança da Microsoft](https://www.microsoft.com/security/)
 </dt> <dt>
 
 [Segurança e identidade](/windows/desktop/security)
@@ -93,6 +93,6 @@ A tabela a seguir lista os recursos que, se usados incorretamente, podem comprom
 [Práticas recomendadas para as APIs de segurança](/windows/desktop/SecBP/best-practices-for-the-security-apis)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

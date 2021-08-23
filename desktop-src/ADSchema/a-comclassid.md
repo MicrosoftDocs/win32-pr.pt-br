@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 606a3d1dd54496217c69f9fac412d1cb4460ddc8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a38532d970ef58bd23b6a7dcd760a08fec8e071e4dff24d4bffbb646c6d68254
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509686"
 ---
 # <a name="com-classid-attribute"></a>COM-ClassID atributo
 
@@ -59,7 +59,7 @@ Esse atributo armazena a lista de ClassIDs que são implementados neste pacote d
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
 | É de valor único       | Falso                                                                                                             |
-| É indexado             | True                                                                                                              |
+| É indexado             | Verdadeiro                                                                                                              |
 | No catálogo global      | Falso                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
@@ -80,7 +80,7 @@ Esse atributo armazena a lista de ClassIDs que são implementados neste pacote d
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
 | É de valor único       | Falso                                                                                                             |
-| É indexado             | True                                                                                                              |
+| É indexado             | Verdadeiro                                                                                                              |
 | No catálogo global      | Falso                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
@@ -101,7 +101,7 @@ Esse atributo armazena a lista de ClassIDs que são implementados neste pacote d
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
 | É de valor único       | Falso                                                                                                             |
-| É indexado             | True                                                                                                              |
+| É indexado             | Verdadeiro                                                                                                              |
 | No catálogo global      | Falso                                                                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
@@ -121,10 +121,10 @@ Esse atributo armazena a lista de ClassIDs que são implementados neste pacote d
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | Falso                                                                                                             |
-| É indexado             | True                                                                                                              |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| Tem valor único       | Falso                                                                                                             |
+| É indexado             | Verdadeiro                                                                                                              |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
@@ -142,10 +142,10 @@ Esse atributo armazena a lista de ClassIDs que são implementados neste pacote d
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | Falso                                                                                                             |
-| É indexado             | True                                                                                                              |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| Tem valor único       | Falso                                                                                                             |
+| É indexado             | Verdadeiro                                                                                                              |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
@@ -163,10 +163,10 @@ Esse atributo armazena a lista de ClassIDs que são implementados neste pacote d
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | Falso                                                                                                             |
-| É indexado             | True                                                                                                              |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| Tem valor único       | Falso                                                                                                             |
+| É indexado             | Verdadeiro                                                                                                              |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |

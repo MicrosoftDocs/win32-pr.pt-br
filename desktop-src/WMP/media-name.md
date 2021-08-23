@@ -3,7 +3,7 @@ title: Media.name
 description: A propriedade Name especifica ou recupera o nome do item de mídia.
 ms.assetid: 68aba78a-86fd-4411-9ac4-58f38d915e2c
 keywords:
-- Media.name Windows Media Player
+- Windows Media Player Media.name
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9de8095d88c3ddec9049e0b43461adcf5553ec74
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3abe6df00b5674cfbd443a5838b208814e30c5ecf75875586907314fc3a39d9f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616852"
 ---
 # <a name="medianame"></a>Media.name
 
@@ -43,7 +43,7 @@ Antes de usar esse método para especificar o nome de um item de mídia, use **i
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **nome** para alterar o nome do item de mídia atual. Um elemento de entrada de texto HTML chamado NameText permite que o usuário insira uma cadeia de texto para o novo nome. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *mídia*. **nome** para alterar o nome do item de mídia atual. Um elemento de entrada de texto HTML chamado NameText permite que o usuário insira uma cadeia de texto para o novo nome. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -80,10 +80,10 @@ O exemplo de JScript a seguir usa *mídia*. **nome** para alterar o nome do item
 [**Objeto de mídia**](media-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

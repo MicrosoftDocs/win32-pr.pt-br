@@ -1,19 +1,19 @@
 ---
-description: Define o identificador do conjunto de parâmetros de sequência (SPS) na unidade da NAL (camada de abstração de rede) do SPS do fluxo de bits H. 264.
+description: Define o identificador do SPS (conjunto de parâmetros de sequência) na unidade NAL (camada de abstração de rede) do fluxo H.264 bits.
 ms.assetid: 583DD539-6EE8-4DD4-A0FE-D2BBE1A4302F
-title: Propriedade CODECAPI_AVEncH264SPSID (Codecapi. h)
+title: CODECAPI_AVEncH264SPSID propriedade (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e06fb78fc128b2eec5db2c61faf70ee10a5eba5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da06e431a3747e676e3934ac9a261e1d0e1ec37e18bacf01f8a3e623c4257488
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664656"
 ---
-# <a name="codecapi_avench264spsid-property"></a>\_Propriedade CODECAPI AVEncH264SPSID
+# <a name="codecapi_avench264spsid-property"></a>Propriedade CODECAPI \_ AVEncH264SPSID
 
-Define o identificador do conjunto de parâmetros de sequência (SPS) na unidade da NAL (camada de abstração de rede) do SPS do fluxo de bits H. 264.
+Define o identificador do SPS (conjunto de parâmetros de sequência) na unidade NAL (camada de abstração de rede) do fluxo H.264 bits.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -25,9 +25,9 @@ Define o identificador do conjunto de parâmetros de sequência (SPS) na unidade
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Especifica o valor da **\_ ID do \_ conjunto \_ de parâmetros Seq** na unidade de nal do SPS. O elemento sintaxe de **\_ ID do \_ conjunto \_ de parâmetros Seq** identifica o conjunto de parâmetros de sequência. O fluxo de bits resultante pode ser concatenado com outros fluxos de bits, para produzir um fluxo de bits mais longo que contenha vários conjuntos de parâmetros de sequência com diferentes identificadores de SPS.
+Especifica o valor da **\_ \_ \_ ID do** conjunto de parâmetros seq na unidade SPS NAL. O **elemento de sintaxe de \_ \_ \_ ID do** conjunto de parâmetros seq identifica o conjunto de parâmetros de sequência. O fluxo de bits resultante pode ser concatenado com outros fluxos de bits para produzir um fluxo de bits mais longo que contém vários conjuntos de parâmetros de sequência com diferentes identificadores SPS.
 
-O intervalo válido é de 0 31, conforme especificado na especificação H. 264/AVC.
+O intervalo válido é 0 31, conforme especificado na especificação H.264/AVC.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O intervalo válido é de 0 31, conforme especificado na especificação H. 264/
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,7 +45,7 @@ O intervalo válido é de 0 31, conforme especificado na especificação H. 264/
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
 [**ICodecAPI**](/windows/desktop/api/strmif/nn-strmif-icodecapi)

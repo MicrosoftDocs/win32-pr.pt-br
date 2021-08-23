@@ -1,21 +1,21 @@
 ---
-title: Consumindo eventos (log de eventos do Windows)
+title: consumindo eventos (Windows Log de eventos)
 description: Você pode consumir eventos de canais ou de arquivos de log.
 ms.assetid: 17204d3f-0875-42c5-9af4-caca6349a67d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adb3fb1b36a0cd4ecf836a8893bc1abc14e46451
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: f131f0f3b02485c3c838e9180ea1daaebb4121b8846e5a124f36cfdb6bf377f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105796462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620376"
 ---
-# <a name="consuming-events-windows-event-log"></a>Consumindo eventos (log de eventos do Windows)
+# <a name="consuming-events-windows-event-log"></a>consumindo eventos (Windows Log de eventos)
 
 Você pode consumir eventos de canais ou de arquivos de log. Para consumir eventos, você pode consumir todos os eventos ou pode especificar uma expressão XPath que identifique os eventos que você deseja consumir. Para determinar os elementos e atributos de um evento que você pode usar em sua expressão XPath, consulte [esquema de evento](eventschema-schema.md).
 
-O log de eventos do Windows dá suporte a um subconjunto do XPath 1,0. Para obter detalhes sobre as limitações, consulte [limitações do XPath 1,0](#xpath-10-limitations).
+Windows O log de eventos dá suporte a um subconjunto do XPath 1,0. Para obter detalhes sobre as limitações, consulte [limitações do XPath 1,0](#xpath-10-limitations).
 
 Os exemplos a seguir mostram expressões XPath simples.
 
@@ -86,12 +86,12 @@ Para obter detalhes sobre como consumir eventos, consulte os seguintes tópicos:
 As ferramentas de usuário final padrão para o evento de consumo são:
 
 -   [Visualizador de Eventos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11))
--   O cmdlet [Get-WinEvent](/previous-versions//dd367894(v=technet.10)) do Windows PowerShell
+-   o cmdlet Windows PowerShell [Get-WinEvent](/previous-versions//dd367894(v=technet.10))
 -   [**WevtUtil**](windows-event-log-tools.md)
 
 ## <a name="xpath-10-limitations"></a>Limitações do XPath 1,0
 
-O log de eventos do Windows dá suporte a um subconjunto do XPath 1,0. A principal restrição é que apenas elementos XML que representam eventos podem ser selecionados por um seletor de eventos. Uma consulta XPath que não seleciona um evento não é válida. Todos os caminhos de seletor válidos começam com \* ou "Event". Todos os caminhos de localização operam nos nós de evento e são compostos por uma série de etapas. Cada etapa é uma estrutura de três partes: o eixo, o teste de nó e o predicado. Para obter mais informações sobre essas partes e sobre o XPath 1,0, consulte [linguagem de caminho XML (XPath)](https://www.w3.org/TR/xpath). O log de eventos do Windows coloca as seguintes restrições na expressão:
+Windows O log de eventos dá suporte a um subconjunto do XPath 1,0. A principal restrição é que apenas elementos XML que representam eventos podem ser selecionados por um seletor de eventos. Uma consulta XPath que não seleciona um evento não é válida. Todos os caminhos de seletor válidos começam com \* ou "Event". Todos os caminhos de localização operam nos nós de evento e são compostos por uma série de etapas. Cada etapa é uma estrutura de três partes: o eixo, o teste de nó e o predicado. Para obter mais informações sobre essas partes e sobre o XPath 1,0, consulte [linguagem de caminho XML (XPath)](https://www.w3.org/TR/xpath). Windows O log de eventos coloca as seguintes restrições na expressão:
 
 -   Axis: há suporte apenas para o eixo filho (padrão) e o atributo (e seu "@") de atalho.
 -   Testes de nó: há suporte apenas para os nomes de nó e os testes de NCName. O \* caractere "", que seleciona qualquer caractere, tem suporte.

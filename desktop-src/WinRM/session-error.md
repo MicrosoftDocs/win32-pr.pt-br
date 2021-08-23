@@ -5,8 +5,8 @@ ms.assetid: f291c11c-012f-45eb-b851-5661d881ee79
 ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows de propriedade de erro
-- Propriedade de erro Gerenciamento Remoto do Windows, objeto de sessão
-- Gerenciamento Remoto do Windows de objeto de sessão, Propriedade Error
+- propriedade de erro Gerenciamento Remoto do Windows, objeto de sessão
+- Gerenciamento Remoto do Windows de objeto de sessão, propriedade Error
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2568fb7f51d6970d3d98f8434357b22efb7793d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11c053c2cd48dd9da7a4c24d3cbc0c8d8dd9c986688cbedec677676f29371c02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105772652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642586"
 ---
 # <a name="sessionerror-property"></a>Propriedade Session. Error
 
@@ -138,7 +138,7 @@ to get more information in how to construct a resource URI:
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
@@ -149,7 +149,7 @@ to get more information in how to construct a resource URI:
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> </dl>
 
  

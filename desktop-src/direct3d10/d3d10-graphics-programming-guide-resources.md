@@ -4,12 +4,12 @@ ms.assetid: 24859fbc-b5e1-4963-baf8-4f083f41f39a
 title: Recursos (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e8bb064bc771e36335527d68891bc76a1ce4df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 93448fadd14d1a0849c9b730d34030b70d42a8cbc0926743e7059e222a6ea9c8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567046"
 ---
 # <a name="resources-direct3d-10"></a>Recursos (Direct3D 10)
 
@@ -25,7 +25,7 @@ Um modo de exibição de recurso fornece um modelo geral para acesso a um recurs
 
 Para saber mais sobre os tipos de recursos básicos, as matrizes de textura e como criar e usar recursos, consulte estes outros tópicos:
 
--   [Tipos de recursos](d3d10-graphics-programming-guide-resources-types.md)
+-   [Tipos de recurso](d3d10-graphics-programming-guide-resources-types.md)
 -   [Escolhendo um recurso](d3d10-graphics-programming-guide-resources-choosing-basic.md)
 -   [Criando recursos de buffer](d3d10-graphics-programming-guide-resources-creating.md)
 -   [Criando recursos de textura](d3d10-graphics-programming-guide-resources-creating-textures.md)

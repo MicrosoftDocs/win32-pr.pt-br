@@ -1,7 +1,7 @@
 ---
 description: O método InitialThreadProc chama o procedimento de thread principal.
 ms.assetid: 1546c214-7ea9-4484-974b-dbd4b2b3e296
-title: CAMThread.Inimétodo tialThreadProc (Wxutil. h)
+title: CAMThread.Inimétodo tialThreadProc (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cd7fd0aa12d0659776db7e39fb223095762fc209
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d12e8d41ac0c6e1fd2af06c21accbb5c62e4eb25f2fc3f6c36988101a9b64d89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540296"
 ---
 # <a name="camthreadinitialthreadproc-method"></a>CAMThread.Inimétodo tialThreadProc
 
@@ -42,22 +42,22 @@ DWORD InitialThreadProc(
 
 <dl> <dt>
 
-*PV* 
+*Pv* 
 </dt> <dd>
 
-`this` refere.
+`this` Ponteiro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o **DWORD** retornado por [**CAMThread:: ThreadProc**](camthread-threadproc.md). A classe derivada define esse valor.
+Retorna o **DWORD** retornado por [**CAMThread::ThreadProc.**](camthread-threadproc.md) A classe derivada define esse valor.
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CAMThread:: Create**](camthread-create.md) usa esse método para o procedimento de thread quando ele cria o thread. Ele usa o `this` ponteiro como o argumento de thread.
+O [**método CAMThread::Create**](camthread-create.md) usa esse método para o procedimento de thread quando ele cria o thread. Ele usa o `this` ponteiro como o argumento de thread.
 
-Esse método chama o método [**CAMThread:: CoInitializeHelper**](camthread-coinitializehelper.md) e, em seguida, ThreadProc.
+Esse método chama o [**método CAMThread::CoInitializeHelper**](camthread-coinitializehelper.md) e, em seguida, ThreadProc.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Esse método chama o método [**CAMThread:: CoInitializeHelper**](camthread-coin
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

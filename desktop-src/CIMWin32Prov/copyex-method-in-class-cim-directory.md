@@ -2,7 +2,7 @@
 description: O método CopyEx copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro FileName. Esse método é uma versão estendida do método Copy e é herdado de CIM \_ LogicalFile.
 ms.assetid: e207cc80-055e-41bc-ab80-dc50131b544d
 ms.tgt_platform: multiple
-title: Método CopyEx da classe CIM_Directory
+title: Método CopyEx da classe CIM_Directory classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1d7502c46c616d9b8e1fffeebf5aefcd022dd4cc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6ef84023cc5c6f42aa398cf1591ab381a634330b3423f381f5b386607e305b79
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504876"
 ---
-# <a name="copyex-method-of-the-cim_directory-class"></a>Método CopyEx da classe de \_ diretório CIM
+# <a name="copyex-method-of-the-cim_directory-class"></a>Método CopyEx da classe de diretório CIM \_
 
-O método **CopyEx** copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro *filename* . Esse método é uma versão estendida do método [**Copy**](copy-method-in-class-cim-directory.md) e é herdado de [**CIM \_ LogicalFile**](cim-logicalfile.md).
+O **método CopyEx** copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro *FileName.* Esse método é uma versão estendida do método [**Copy**](copy-method-in-class-cim-directory.md) e é herdado de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ uint32 CopyEx(
 
 <dl> <dt>
 
-*Nome do arquivo* \[ no\]
+*FileName* \[ Em\]
 </dt> <dd>
 
 Nome totalmente qualificado da cópia do arquivo de destino (ou diretório).
@@ -59,28 +59,28 @@ Exemplo: "c: \\ temp \\ newdirectory"
 
 </dd> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Cadeia de caracteres que representa o nome do arquivo (ou diretório) em que o método falhou. Esse parâmetro será **nulo** se o método tiver sucesso.
+Cadeia de caracteres que representa o nome do arquivo (ou diretório) em que o método falhou. Esse parâmetro será **nulo** se o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ no\]
+*StartFileName* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres que representa o arquivo filho (ou diretório) a ser usado como ponto de partida para esse método. Normalmente, esse parâmetro é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada do método anterior. Se esse parâmetro for **nulo**, a operação será executada no arquivo (ou diretório) especificado na chamada de [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Cadeia de caracteres que representa o arquivo filho (ou diretório) a ser usado como um ponto de partida para esse método. Normalmente, esse parâmetro é o *parâmetro StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **nulo,** a operação será executada no arquivo (ou diretório) especificado na [**chamada ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ no\]
+*Recursivo* \[ Em\]
 </dt> <dd>
 
-Se for TRUE, o método também será aplicado recursivamente a arquivos e diretórios dentro do diretório especificado pela instância do [**\_ diretório CIM**](cim-directory.md) . Para instâncias de arquivo, esse parâmetro é ignorado.
+Se TRUE, o método também será aplicado recursivamente a arquivos e diretórios dentro do diretório especificado pela instância do [**\_ Diretório CIM.**](cim-directory.md) Para instâncias de arquivo, esse parâmetro é ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -100,7 +100,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -205,9 +205,9 @@ Parâmetro inválido.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -217,8 +217,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -227,10 +227,10 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[\_Diretório CIM](copyex-method-in-class-cim-directory.md)
+[Diretório \_ CIM](copyex-method-in-class-cim-directory.md)
 </dt> <dt>
 
-[**\_Diretório CIM**](cim-directory.md)
+[**Diretório \_ CIM**](cim-directory.md)
 </dt> </dl>
 
  

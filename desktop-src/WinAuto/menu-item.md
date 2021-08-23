@@ -4,12 +4,12 @@ description: Um item de menu representa um item específico em uma barra de menu
 ms.assetid: 330782d6-4293-4e65-ab49-a616d133d273
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cb6621a14927cc4dc9af9f3384157e60ce6570d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b1b90162f386314ac495ed138ccf4d180d2f53b8b1e6126287c79a1d75d40be2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644496"
 ---
 # <a name="menu-item-msaa-ui-element-reference"></a>Item de menu (referência de elemento de interface do usuário do MSAA)
 

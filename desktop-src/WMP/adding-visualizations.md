@@ -4,17 +4,17 @@ description: Adicionando visualizações
 ms.assetid: adb5d10b-070c-426c-a74a-8d4881d9acbf
 keywords:
 - Criando capas, visualizações
-- Capas do Windows Media Player, visualizações
+- Windows Media Player capas, visualizações
 - capas, visualizações
 - visualizações, capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9750b114d99af8c59777ea28ff4dab85a56dd229
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d236990d3e29cf4e51dbb46e8e1269b0c8a50ccaf205940a6f34b97c89fa6e62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619146"
 ---
 # <a name="adding-visualizations"></a>Adicionando visualizações
 
@@ -76,9 +76,9 @@ Você pode ver uma aparência de visualização de trabalho semelhante na seçã
 [**Guia de criação de capa**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

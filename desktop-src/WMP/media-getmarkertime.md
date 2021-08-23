@@ -3,9 +3,9 @@ title: Método Media. getmarcadortime
 description: O método getmarcadortime recupera a hora do marcador no índice especificado.
 ms.assetid: c3e6bead-2831-4d84-9d13-dcb865efe472
 keywords:
-- método getmarcadortime Windows Media Player
-- método getmarcadortime Windows Media Player, classe de mídia
-- Classe de mídia Windows Media Player, método getmarcadortime
+- método GetMarkerTime Windows Media Player
+- método getmarkertime Windows Media Player, classe de mídia
+- classe de mídia Windows Media Player, método getmarcadortime
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4398f89055a1996acb3f921d33c7675e52100ddd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f90d1382302e4a053a6dee4dac911d2cc0c0aa67066469c8143f6f38b3bd889
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508406"
 ---
 # <a name="mediagetmarkertime-method"></a>Método Media. getmarcadortime
 
@@ -49,7 +49,7 @@ retVal = Media.getMarkerTime(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um **número** (**duplo**) especificando o local do marcador em segundos a partir do início do clipe.
 
@@ -65,7 +65,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **Getmarcadortime** para preencher um elemento de TextArea HTML chamado MTIMES com o local de cada marcador. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *mídia*. **Getmarcadortime** para preencher um elemento de TextArea HTML chamado MTIMES com o local de cada marcador. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -113,10 +113,10 @@ for (var i = 1;i < mcount + 1; i++){
 [**Media. markerCount**](media-markercount.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

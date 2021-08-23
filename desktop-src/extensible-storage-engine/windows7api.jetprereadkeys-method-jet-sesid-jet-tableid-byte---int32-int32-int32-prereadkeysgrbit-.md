@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Windows7Api. JetPrereadKeys (JET_SESID, JET_TABLEID, Byte [] [], Int32, Int32, Int32, PrereadKeysGrbit)'
-title: Método Windows7Api. JetPrereadKeys (JET_SESID, JET_TABLEID, Byte [] [], Int32, Int32, Int32, PrereadKeysGrbit) (Microsoft. ISAM. ESENT. Interop. windows7)
+description: 'Saiba mais sobre: Método Windows7Api.JetPrereadKeys (JET_SESID, JET_TABLEID, Byte[][], Int32 , Int32, Int32, PrereadKeysGrbit)'
+title: Método Windows7Api.JetPrereadKeys (JET_SESID, JET_TABLEID, Byte[][], Int32 , Int32, Int32, PrereadKeysGrbit) (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: JetPrereadKeys method (JET_SESID, JET_TABLEID, Byte[][], Int32 , Int32, Int32, PrereadKeysGrbit)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows7.Windows7Api.JetPrereadKeys(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[][],System.Int32[],System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.Windows7.PrereadKeysGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7api.jetprereadkeys(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 66f85c08c1fccc58702d4ac4cf170d6b0493ab8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6880e7fa1520f55f4cf1dd8300c4f7b75002a84e164cd80e1be341a0548bd9fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470886"
 ---
-# <a name="windows7apijetprereadkeys-method-jet_sesid-jet_tableid-byte-int32--int32-int32-prereadkeysgrbit"></a>Método Windows7Api. JetPrereadKeys (JET_SESID, JET_TABLEID, byte \[ \] \[ \] , Int32, Int32, Int32, PrereadKeysGrbit)
+# <a name="windows7apijetprereadkeys-method-jet_sesid-jet_tableid-byte-int32--int32-int32-prereadkeysgrbit"></a>Método Windows7Api.JetPrereadKeys (JET_SESID, JET_TABLEID, Byte \[ \] \[ \] , Int32 , Int32, Int32, PrereadKeysGrbit)
 
-Se os registros com as chaves especificadas não estiverem no cache do buffer, inicie as leituras assíncronas para colocar os registros no cache do buffer de banco de dados.
+Se os registros com as chaves especificadas não estão no cache do buffer, inicie as leituras assíncronas para colocar os registros no cache do buffer de banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -74,51 +74,51 @@ public static void JetPrereadKeys(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    A tabela na qual os itens são relidos.
+    A tabela para a que emitir as pré-leituras.
 
 <!-- end list -->
 
   - chaves  
-    Escreva \[\]  
+    Tipo: \[\]  
     
-    As chaves a serem lidas. As chaves devem ser classificadas.
+    As chaves a ser lidas previamente. As chaves devem ser ordenadas.
 
 <!-- end list -->
 
-  - Comprimentos de caracteres  
-    Escreva \[\]  
+  - keyLengths  
+    Tipo: \[\]  
     
-    Os comprimentos das chaves a serem lidas.
+    Os comprimentos das chaves a ser lidas previamente.
 
 <!-- end list -->
 
-  - Contagem de keycount  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - keyCount  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    O número máximo de chaves a serem lidas.
+    O número máximo de chaves a ser pré-lida.
 
 <!-- end list -->
 
   - keysPreread  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Retorna o número de chaves para realmente ser lido.
+    Retorna o número de chaves a ser realmente pré-lida.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. Windows7. PrereadKeysGrbit](./prereadkeysgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows7.PrereadKeysGrbit](./prereadkeysgrbit-enumeration.md)  
     
-    Opções de preread. Usado para especificar a direção da subleitura.
+    Opções de pré-leitura. Usado para especificar a direção do pré-lido.
 
 ## <a name="see-also"></a>Confira também
 
@@ -128,6 +128,6 @@ public static void JetPrereadKeys(
 
 [Membros do Windows7Api](./windows7api-members.md)
 
-[Sobrecarga de JetPrereadKeys](./windows7api.jetprereadkeys-method.md)
+[Sobrecarga jetPrereadKeys](./windows7api.jetprereadkeys-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

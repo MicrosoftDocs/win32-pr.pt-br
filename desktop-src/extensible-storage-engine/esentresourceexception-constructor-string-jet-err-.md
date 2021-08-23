@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 458b12a80fdc0e6d7883d966f2e50aa8c1f6d69b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c178ef476f88e4515c361967d0c367b8eb177bdfdbe5608456eda9461146393
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619736"
 ---
 # <a name="esentresourceexception-constructor-string-jet_err"></a>Construtor EsentResourceException (cadeia de caracteres, JET_err)
 

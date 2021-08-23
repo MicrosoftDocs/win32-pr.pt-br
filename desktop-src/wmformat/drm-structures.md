@@ -1,25 +1,25 @@
 ---
-title: Estruturas de cliente DRM do Microsoft Windows Media
-description: Estruturas de cliente DRM do Microsoft Windows Media
+title: estruturas de cliente do Microsoft Windows Media DRM
+description: estruturas de cliente do Microsoft Windows Media DRM
 ms.assetid: 794de1b7-d60c-435e-9f77-c4df109b5372
 keywords:
-- SDK do Windows Media Format, estruturas
+- Windows SDK do formato de mídia, estruturas
 - DRM (gerenciamento de direitos digitais), estruturas
 - DRM (gerenciamento de direitos digitais), estruturas
 - APIs estendidas do cliente DRM, estruturas
 - APIs estendidas do cliente, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43264c37ed9830026f87998823017d17c9d75f7e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 145381cc6d702dd338176ffa89983de137285dcd7aef946d3ece956eb450880c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119447836"
 ---
-# <a name="microsoft-windows-media-drm-client-structures"></a>Estruturas de cliente DRM do Microsoft Windows Media
+# <a name="microsoft-windows-media-drm-client-structures"></a>estruturas de cliente do Microsoft Windows Media DRM
 
-As estruturas a seguir têm suporte das APIs estendidas do cliente DRM do Windows Media.
+as estruturas a seguir têm suporte no Windows de APIs estendidas do cliente DRM de mídia.
 
 
 
@@ -46,10 +46,10 @@ As estruturas a seguir têm suporte das APIs estendidas do cliente DRM do Window
 | [**\_filtro de licença do WMDRM \_**](wmdrm-license-filter.md)                                      | Contém informações de filtragem para a criação de enumerações de licenças.                                                                                           |
 | [**\_níveis de \_ proteção de saída do WMDRM \_**](wmdrm-output-protection-levels.md)                 | Contém os níveis de proteção de saída exigidos por uma licença para executar várias ações.                                                                    |
 | [**WMDRMCryptoData**](wmdrmcryptodata.md)                                                  | Contém informações sobre o algoritmo criptográfico usado para criptografar e descriptografar conteúdo.                                                                 |
-| [**política de WMDRMNET \_**](wmdrmnet-policy.md)                                                 | Contém a política a ser usada para operações do Windows Media DRM para dispositivos de rede.                                                                        |
-| [**\_ \_ requisitos globais da política de WMDRMNET \_**](wmdrmnet-policy-global-requirements.md)       | Mantém requisitos globais para o Windows Media DRM para dispositivos de rede.                                                                                        |
-| [**\_ \_ ambiente mínimo da política de WMDRMNET \_**](wmdrmnet-policy-minimum-environment.md)       | Contém os requisitos mínimos de segurança para o Windows Media DRM para dispositivos de rede.                                                                       |
-| [**política de WMDRMNET \_ \_ TRANSCRYPTPLAY**](wmdrmnet-policy-transcryptplay.md)                  | Mantém as informações de política para reproduzir conteúdo usando o Windows Media DRM para dispositivos de rede.                                                               |
+| [**política de WMDRMNET \_**](wmdrmnet-policy.md)                                                 | contém a política a ser usada para Windows o DRM de mídia para operações de dispositivos de rede.                                                                        |
+| [**\_ \_ requisitos globais da política de WMDRMNET \_**](wmdrmnet-policy-global-requirements.md)       | mantém os requisitos globais para Windows o DRM de mídia para dispositivos de rede.                                                                                        |
+| [**\_ \_ ambiente mínimo da política de WMDRMNET \_**](wmdrmnet-policy-minimum-environment.md)       | contém os requisitos mínimos de segurança para Windows o DRM de mídia para dispositivos de rede.                                                                       |
+| [**política de WMDRMNET \_ \_ TRANSCRYPTPLAY**](wmdrmnet-policy-transcryptplay.md)                  | mantém as informações de política para reproduzir conteúdo usando Windows mídia DRM para dispositivos de rede.                                                               |
 
 
 

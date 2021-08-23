@@ -15,17 +15,17 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9cf47565a199bd17df47fb6962a1d174454dbe39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c879cfa977cecc0e3e6e7632d48b571c38cf4a078df5b78a3502b2fa9af380c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617496"
 ---
 # <a name="jet_dbinfomisc2-structure"></a>Estrutura JET_DBINFOMISC2
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_dbinfomisc2-structure"></a>Estrutura JET_DBINFOMISC2
 
@@ -267,31 +267,31 @@ Dá suporte à infraestrutura ESE e não pode ser usada em seu código.
 
 **bkinfoFullCur**
 
-Dá suporte à infraestrutura ESE e não pode ser usada em seu código.
+Dá suporte à infraestrutura de ESE e não pode ser usado em seu código.
 
 **fShadowingDisabled**
 
-Dá suporte à infraestrutura ESE e não pode ser usada em seu código.
+Dá suporte à infraestrutura de ESE e não pode ser usado em seu código.
 
 **fUpgradeDb**
 
-Dá suporte à infraestrutura ESE e não pode ser usada em seu código.
+Dá suporte à infraestrutura de ESE e não pode ser usado em seu código.
 
 **dwMajorVersion**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+Representa os Windows NT de versão quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **dwMinorVersion**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+Representa os Windows NT de versão quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **dwBuildNumber**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+Representa os Windows NT de versão quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **lSPNumber**
 
-Representa os números de versão do Windows NT quando os índices dos bancos de dados foram atualizados. Usado para atualizar índices.
+Representa os Windows NT de versão quando os índices de bancos de dados foram atualizados. Usado para atualizar índices.
 
 **cbPageSize**
 
@@ -301,11 +301,11 @@ Esse valor será recuperado somente se JET_DbInfoMisc foi passado para [JetGetDa
 
 **genMinRequired**
 
-Representa a geração de log mínima necessária para repetir os logs. Normalmente, isso é usado como a geração de ponto de verificação.
+Representa a geração mínima de log necessária para repetir os logs. Normalmente, isso é usado como a geração de ponto de verificação.
 
 **genMaxRequired**
 
-Representa a geração de log máxima necessária para repetir os logs.
+Representa a geração máxima de log necessária para repetir os logs.
 
 **logtimeGenMaxCreate**
 
@@ -321,7 +321,7 @@ Representa a data e a hora em que o último reparo foi executado.
 
 **ulRepairCountOld**
 
-O número de vezes que o reparo foi executado neste banco de dados antes da última desfragmentação.
+O número de vezes que o reparo foi executado nesse banco de dados antes da última desfragmentação.
 
 **ulECCFixSuccess**
 
@@ -337,27 +337,27 @@ Representa o número de vezes que um erro de um bit foi corrigido e resultou em 
 
 **ulECCFixFail**
 
-O número de vezes que um erro de um bit foi corrigido e resultou em uma página inadequada.
+O número de vezes que um erro de um bit foi corrigido e resultou em uma página ruim.
 
 **logtimeECCFixFail**
 
-Representa a data e a hora em que o último erro de um bit foi corrigido e resultou em uma página inadequada.
+Representa a data e a hora em que o último erro de um bit foi corrigido e resultou em uma página ruim.
 
 **ulECCFixFailOld**
 
-O número de vezes que um erro de um bit foi corrigido e resultou em uma página inapropriada antes do último reparo.
+O número de vezes que um erro de um bit foi corrigido e resultou em uma página ruim antes do último reparo.
 
 **ulBadChecksum**
 
-O número de vezes que um erro ECC não corrigível/checksum foi encontrado.
+O número de vezes que um erro de ECC/checksum não corretamente foi encontrado.
 
 **logtimeBadChecksum**
 
-Representa a data e a hora em que o último erro não corrigível de ECC/checksum foi encontrado.
+Representa a data e a hora em que o último erro de ECC/checksum não corrigida foi encontrado.
 
 **ulBadChecksumOld**
 
-O número de vezes que um erro ECC não corrigível/checksum foi encontrado antes do último reparo.
+O número de vezes que um erro de ECC/checksum não corretamente foi encontrado antes do último reparo.
 
 ### <a name="requirements"></a>Requisitos
 
@@ -369,15 +369,15 @@ O número de vezes que um erro ECC não corrigível/checksum foi encontrado ante
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

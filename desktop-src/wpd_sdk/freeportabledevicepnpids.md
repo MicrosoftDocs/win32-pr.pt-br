@@ -1,7 +1,7 @@
 ---
-description: 'Libera os identificadores de plug and Play (PnP) que são recuperados pelos métodos IPortableDeviceManager:: Devices ou IPortableDeviceServiceManager:: getdeviceservices.'
+description: Libera os identificadores Plug and Play (PnP) recuperados pelos métodos IPortableDeviceManager::GetDevices ou IPortableDeviceServiceManager::GetDeviceServices.
 ms.assetid: b86f7733-81a3-4b60-bb7c-840c75f8d03f
-title: Função FreePortableDevicePnPIDs (PortableDevice. h)
+title: Função FreePortableDevicePnPIDs (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 58bb5fa33007ed0e167226edf7078d08c2e5c3de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 150796912d2796a2697d3c088963c20e1523288f5a1301e9467a6859845db68c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590301"
 ---
 # <a name="freeportabledevicepnpids-function"></a>Função FreePortableDevicePnPIDs
 
-A função auxiliar **FreePortableDevicePnPIDs** libera os identificadores de plug and Play (PnP) que são recuperados pelos métodos [**IPortableDeviceManager:: Devices**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicemanager-getdevices) ou [**IPortableDeviceServiceManager:: getdeviceservices**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices) .
+A função auxiliar **FreePortableDevicePnPIDs** libera os identificadores Plug and Play (PnP) recuperados pelos métodos [**IPortableDeviceManager::GetDevices**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicemanager-getdevices) ou [**IPortableDeviceServiceManager::GetDeviceServices.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,14 +43,14 @@ void FreePortableDevicePnPIDs(
 *pPnPIDs* 
 </dt> <dd>
 
-A matriz de identificadores de Plug and Play (PnP) a ser liberada.
+A matriz de Plug and Play (PnP) a ser liberada.
 
 </dd> <dt>
 
 *cPnPIDs* 
 </dt> <dd>
 
-O número de identificadores na matriz especificada pelo parâmetro *pPnPIDs* .
+O número de identificadores na matriz especificada pelo *parâmetro pPnPIDs.*
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O aplicativo é responsável por liberar a matriz de ponteiros que ela aloca.
+O aplicativo é responsável por liberar a matriz de ponteiros que ele aloca.
 
 ## <a name="examples"></a>Exemplos
 
@@ -90,9 +90,9 @@ if (pPnpDeviceIDs != NULL)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho \| UWP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
-| parâmetro<br/>                   | <dl> <dt>PortableDevice. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

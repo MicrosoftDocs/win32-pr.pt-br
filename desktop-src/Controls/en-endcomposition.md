@@ -3,7 +3,7 @@ title: EN_ENDCOMPOSITION código de notificação (RichEdit. h)
 description: Notifica uma janela pai do controle de edição rico que o usuário inseriu novos dados ou terminou de inserir dados ao usar o IME ou a estrutura de serviços de texto.
 ms.assetid: 3956313F-F82F-41A2-AEDA-52E63218977C
 keywords:
-- EN_ENDCOMPOSITION de código de notificação controles do Windows
+- EN_ENDCOMPOSITION código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df1c2b5d08b2da73c67edeb6fe7ca4ac639000c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d9fe75910ea018cf9d72dd14696067eb0b2bc00dabd4456cca63e41a099a75d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436837"
 ---
 # <a name="en_endcomposition-notification-code"></a>\_Código de notificação de ENDcomposição
 
@@ -51,8 +51,8 @@ Uma estrutura [**ENDCOMPOSITIONNOTIFY**](/windows/win32/api/richedit/ns-richedit
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 

@@ -4,16 +4,16 @@ description: Declaração de classe CGuiPaper
 ms.assetid: b772d056-bf89-46a8-9462-21772cf96dfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 269694b83804f3e85cd8654cd2a1be843396a2ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d684618eea78247b94ed03223cfce45d2cc713f5507b1e290731d3451212b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663516"
 ---
 # <a name="cguipaper-class-declaration"></a>Declaração de classe CGuiPaper
 
-A seguir está a declaração de classe **CGuiPaper** de GUIPAPER. H.
+A seguir está a declaração de classe **CGuiPaper** de GUIPAPER.H.
 
 
 ```C++
@@ -75,21 +75,21 @@ class CGuiPaper
 
 
 
-**CGuiPaper** mantém as propriedades de GUI atuais para o papel de desenho. Os membros **m \_ crInkColor**, **m \_ crInkWidth** e **m \_ WinRect** contêm valores para a cor da tinta atual, a largura da tinta e o retângulo do desenho. O **membro \_ HWND do m** armazena o identificador para a janela em que a pintura é feita.
+**O CGuiPaper** mantém as propriedades de GUI atuais para o papel de desenho. Os **membros m \_ crInkColor**, **m \_ crInkWidth** e **m \_ WinRect** contêm valores para a cor de tinta atual, a largura da tinta e o retângulo de desenho. O **membro \_ m hWnd** armazena a alça na janela em que a pintura é feita.
 
-A pintura real de imagens é feita usando um identificador para um contexto de dispositivo mantido no membro **m \_ HDC**. Um identificador para a caneta de desenho atual é mantido no membro **m \_ hPen**. A caneta é destruída e recriada quando sua cor ou largura é alterada pelo usuário.
+A pintura real de imagens é feita usando uma alça para um contexto de dispositivo mantido no **membro m \_ hDC.** Um alça para a caneta de desenho atual é mantido no **membro m \_ hPen**. A caneta é destruída e recriada quando sua cor ou largura é alterada pelo usuário.
 
-Os membros **m \_ pCOPaperSink** e **m \_ dwPaperSink** contêm valores necessários para a conexão com o copaper para receber notificações de entrada por meio da interface [**IPaperSink**](ipapersink-methods.md) . O membro **m \_ bDirty** contém um sinalizador que indica que o usuário alterou o desenho e que ele não reflete mais os dados armazenados em seu arquivo.
+Membros **m \_ pCOPaperSink** e **m \_ dwPaperSink** retivem os valores necessários para se conectar ao COPaper para receber notificações de entrada por meio da interface [**IPaperSink.**](ipapersink-methods.md) O **membro \_ m bDirty** contém um sinalizador que indica que o usuário alterou o desenho e que ele não reflete mais os dados armazenados em seu arquivo.
 
-O membro **m \_ pIPaper** mantém o ponteiro da interface principal para o objeto de copapel. Toda a funcionalidade de copapel é acessada por meio desse ponteiro.
+O **membro \_ m pIPaper** contém o ponteiro da interface principal para o objeto COPaper. Toda a funcionalidade COPaper é acessada por meio desse ponteiro.
 
-O membro **m \_ nLockKey** é usado para dar suporte a um esquema de bloqueio de cliente que é usado com vários clientes para permitir que um cliente tenha acesso exclusivo a um objeto de copapel compartilhado. O copaper atribui **m \_ nLockKey** durante uma chamada [**IPaper**](ipaper-methods.md)::**Lock** e é passado como um parâmetro pelo cliente em chamadas subsequentes para o copaper. O copaper executará o trabalho nessas chamadas somente se a chave de bloqueio passada corresponder à chave do último entregue a um cliente por copaper.
+O **membro \_ m nLockKey** é usado para dar suporte a um esquema de bloqueio de cliente que é usado com vários clientes para permitir que um cliente tenha acesso exclusivo a um objeto COPaper compartilhado. O COPaper atribui **m \_ nLockKey** durante uma chamada [**IPaper**](ipaper-methods.md)::**Lock** e é passado como um parâmetro pelo cliente em chamadas subsequentes para COPaper. O COPaper executará o trabalho nessas chamadas somente se a chave de bloqueio passada corresponde à chave entregue pela última vez a um cliente pelo COPaper.
 
-O membro **m \_ pPapFile** mantém um ponteiro para um objeto [**CPapFile**](cpapfile-class-and-methods.md) . É um objeto C++ que encapsula operações de carregamento e salvamento em um arquivo composto de armazenamento estruturado. O **CPapFile** trabalha com o objeto de copapel subjacente baseado em servidor para carregar e salvar os dados de desenho de copapel.
+O **membro \_ m pPapFile** contém um ponteiro para um [**objeto CPapFile.**](cpapfile-class-and-methods.md) É um objeto C++ que encapsula operações de carregamento e de salvar em um arquivo composto de armazenamento estruturado. **O CPapFile** funciona com o objeto COPaper baseado em servidor subjacente para carregar e salvar os dados de desenho do COPaper.
 
- 
+ 
 
- 
+ 
 
 
 

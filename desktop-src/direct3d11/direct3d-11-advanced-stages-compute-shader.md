@@ -4,12 +4,12 @@ description: Um sombreador de computação é um estágio de sombreador program�
 ms.assetid: 02c1f98e-fdd6-49b0-b8b2-efbd472ab599
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 485e83ab965f14342d235a07810f210e18aadc53
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: f6167915a670b6dfb4fffae957ee0121e8e52f639463b0d1132be9dac3552fe9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107222864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119566336"
 ---
 # <a name="compute-shader-overview"></a>Visão geral do sombreador de computação
 

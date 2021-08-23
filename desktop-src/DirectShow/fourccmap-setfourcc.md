@@ -1,7 +1,7 @@
 ---
 description: Define a parte FOURCC do objeto FOURCCMap.
 ms.assetid: cc821e39-e565-4255-a289-2c9507d43433
-title: 'Método FOURCCMap:: SetFOURCC (FOURCC. h)'
+title: Método FOURCCMap::Set LTDCC (Fourcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 435eb209e39ffad29f041e2e117a45d735abffed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 03ac14c7174fde7184bfdbfbb5d82d3fc1288d46ff37158bbbab146c34db5ed9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536826"
 ---
-# <a name="fourccmapsetfourcc-method"></a>Método FOURCCMap:: SetFOURCC
+# <a name="fourccmapsetfourcc-method"></a>Método FOURCCMap::SetCCICC
 
-Define a parte **FOURCC** do objeto [**FOURCCMap**](fourccmap.md) .
+Define a **parte FOURCC** do [**objeto FOURCCMap.**](fourccmap.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,14 +42,14 @@ void SetFOURCC(
 
 <dl> <dt>
 
-*pguid* 
+*Pguid* 
 </dt> <dd>
 
-Ponteiro para a parte do identificador global exclusivo (**GUID**) retornado do objeto **FOURCCMap** .
+Ponteiro para a parte guid **(identificador** global exclusivo) retornada do **objeto FOURCCMap.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -59,8 +59,8 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>FourCC. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Fourcc.h (include Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

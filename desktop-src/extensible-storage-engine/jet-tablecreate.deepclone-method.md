@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d1844a0295b9b7f680ebcedb79da9313769c8406
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c829cbb2e1c4e6839d589a222dc9bf9d4b8aa84d4dc3eab7bb26fc2fd7d3095
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616046"
 ---
 # <a name="jet_tablecreatedeepclone-method"></a>JET_TABLECREATE. Método DeepClone
 
@@ -54,7 +54,7 @@ returnValue = instance.DeepClone()
 public JET_TABLECREATE DeepClone()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLECREATE](./jet-tablecreate-class.md)  
 Uma cópia profunda do objeto.  

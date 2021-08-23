@@ -1,28 +1,28 @@
 ---
-title: Usando a exclusão mútua de taxa de bits múltiplas
-description: Usando a exclusão mútua de taxa de bits múltiplas
+title: Usando a exclusão mútua de taxa de bits múltipla
+description: Usando a exclusão mútua de taxa de bits múltipla
 ms.assetid: 69898b4d-fe10-422e-9ed2-87b65aa7bdb3
 keywords:
-- taxa de bits múltipla (MBR), exclusão mútua
+- MBR (taxa de bits múltipla), exclusão mútua
 - MBR (taxa de bits múltipla), exclusão mútua
 - exclusão mútua, taxa de bits múltipla (MBR)
 - perfis, taxa de bits múltipla (MBR)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be77c7615845d10d07982676dfdb4dc8c617cebe
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c31c7954f6aa5098f6cc221a7a761428ff15fd6a4c2c0a6e5c8cea2b6622a84b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119446966"
 ---
-# <a name="using-multiple-bit-rate-mutual-exclusion"></a>Usando a exclusão mútua de taxa de bits múltiplas
+# <a name="using-multiple-bit-rate-mutual-exclusion"></a>Usando a exclusão mútua de taxa de bits múltipla
 
-A exclusão mútua de taxa de bits múltipla (MBR) é útil quando você deseja codificar o conteúdo para uma variedade de cenários de reprodução. Uma saída de vídeo MBR consiste em uma única entrada codificada várias vezes, cada uma com diferentes configurações de taxa de bits. Quando um arquivo com codificação MBR é lido, o leitor determinará qual fluxo usar com base na largura de banda disponível.
+A exclusão mútua MBR (taxa de bits múltipla) é útil quando você deseja codificar conteúdo para uma variedade de cenários de reprodução. Uma saída de vídeo MBR consiste em uma única entrada codificada várias vezes, cada uma com configurações de taxa de bits diferentes. Quando um arquivo com codificação MBR for lido, o leitor determinará qual fluxo usar com base na largura de banda disponível.
 
-O SDK do Windows Media Format dá suporte à codificação MBR para fluxos de áudio e vídeo. Além disso, você pode criar um tipo especial de codificação de MBR chamado codificação MBR de tamanho de vários vídeos. As funções de vídeo MBR de tamanho múltiplo de vídeo são idênticas ao vídeo MBR normal, exceto que você pode especificar tamanhos de imagem diferentes para os fluxos de vídeo na exclusão mútua.
+O SDK Windows Media Format dá suporte à codificação MBR para fluxos de áudio e vídeo. Além disso, você pode criar um tipo especial de codificação MBR chamado codificação MBR de tamanho múltiplo de vídeo. O vídeo MBR de tamanho múltiplo de vídeo funciona de forma idêntica ao vídeo MBR normal, exceto que você pode especificar tamanhos de imagem diferentes para os fluxos de vídeo na exclusão mútua.
 
-O exemplo a seguir demonstra como configurar um perfil para vídeo MBR com vários tamanhos de vídeo. Ele cria um novo perfil com três fluxos de vídeo de diferentes taxas e tamanhos de bits e os inclui em um objeto de exclusão mútua.
+O exemplo a seguir demonstra como configurar um perfil para vídeo MBR com vários tamanhos de vídeo. Ele cria um novo perfil com três fluxos de vídeo de diferentes taxas de bits e tamanhos e os inclui em um objeto de exclusão mútua.
 
 
 ```C++
@@ -146,27 +146,27 @@ pProfileMgr = NULL;
 
 <dl> <dt>
 
-[**Interface IWMMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops)
+[**IWMMediaProps Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops)
 </dt> <dt>
 
-[**Interface IWMMutualExclusion**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmutualexclusion)
+[**IWMMutualExclusion Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmutualexclusion)
 </dt> <dt>
 
-[**Interface IWMProfile**](iwmprofile.md)
+[**IWMProfile Interface**](iwmprofile.md)
 </dt> <dt>
 
-[**Interface IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig)
+[**IWMStreamConfig Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig)
 </dt> <dt>
 
 [**Usando a exclusão mútua**](using-mutual-exclusion.md)
 </dt> <dt>
 
-[**\_tipo de mídia do WM \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type)
+[**TIPO \_ DE MÍDIA \_ WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

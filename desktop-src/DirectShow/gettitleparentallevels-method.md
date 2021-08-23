@@ -4,17 +4,17 @@ ms.assetid: 076808d7-6cb6-4d81-b26d-c7945db298f2
 title: Método GetTitleParentalLevels
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6db82ca21c2fdd023aa472e4c3428260464a8612
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 88ef462767c280f5e6f1c58679a78ee876e58042dce632f30711c198b4ca574a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536666"
 ---
 # <a name="gettitleparentallevels-method"></a>Método GetTitleParentalLevels
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

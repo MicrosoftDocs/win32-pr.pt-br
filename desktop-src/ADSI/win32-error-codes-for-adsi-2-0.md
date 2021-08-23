@@ -1,50 +1,50 @@
 ---
-title: Códigos de erro do Win32 para ADSI 2,0
-description: A tabela a seguir lista as mensagens de erro LDAP para o ADSI 2,0.
+title: Códigos de erro do Win32 para ADSI 2.0
+description: A tabela a seguir lista as mensagens de erro LDAP para ADSI 2.0.
 ms.assetid: 99d97ea8-1dcc-49f4-a2bf-36ff8076e83a
 ms.tgt_platform: multiple
 keywords:
-- Códigos de erro do Win32 para ADSI do ADSI 2,0
+- Códigos de erro do Win32 para ADSI 2.0 ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e079fa6a98df28625f6307f774ce194712a52a6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ea81b4d277ad43cb2278d23549e370df1d11b3058be1e9c8b0f8b9329eabe26e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589746"
 ---
-# <a name="win32-error-codes-for-adsi-20"></a>Códigos de erro do Win32 para ADSI 2,0
+# <a name="win32-error-codes-for-adsi-20"></a>Códigos de erro do Win32 para ADSI 2.0
 
-A tabela a seguir lista as mensagens de erro LDAP para o ADSI 2,0.
+A tabela a seguir lista as mensagens de erro LDAP para ADSI 2.0.
 
 
 
-| Valor de erro ADSI | Mensagem LDAP                           | Mensagem Win32                        | Descrição                                          |
+| Valor do erro ADSI | Mensagem LDAP                           | Mensagem Win32                        | Descrição                                          |
 |------------------|----------------------------------------|--------------------------------------|------------------------------------------------------|
-| 0                | **êxito de LDAP \_**                      | **SEM \_ erros**                        | Operação bem-sucedida.                                 |
-| 0x80070002       | **LDAP \_ não existe \_ tal \_ objeto**             | **arquivo de erro \_ \_ não \_ encontrado**          | O objeto não existe.                               |
-| 0x80070005       | **\_ \_ \_ não \_ há suporte para o método de autenticação LDAP** | **ERRO de \_ acesso \_ negado**            | Método de autenticação sem suporte.                 |
-| 0x80070005       | **\_autenticação forte de LDAP \_ \_ necessária**       | **ERRO de \_ acesso \_ negado**            | Requer autenticação forte.                      |
-| 0x80070005       | **\_autenticação inadequada de LDAP \_**          | **ERRO de \_ acesso \_ negado**            | Autenticação inadequada.                        |
-| 0x80070005       | **\_direitos insuficientes do LDAP \_**         | **ERRO de \_ acesso \_ negado**            | O usuário tem direitos de acesso insuficientes.                 |
-| 0x80070005       | **\_autenticação LDAP \_ desconhecida**                | **ERRO de \_ acesso \_ negado**            | Ocorreu um erro de autenticação desconhecido.               |
-| 0x80070008       | **LDAP \_ sem \_ memória**                   | **ERRO \_ de \_ memória insuficiente \_**       | O sistema está sem memória.                             |
-| 0x8007001F       | **\_outro LDAP**                        | **\_falha de Gen de erro \_**              | Ocorreu um erro desconhecido.                              |
-| 0x8007001F       | **\_erro local de LDAP \_**                 | **\_falha de Gen de erro \_**              | Ocorreu um erro local.                                |
-| 0x80070037       | **LDAP \_ não disponível**                  | **\_desenvolvimento de \_ erro \_ inexistente**           | O servidor não está disponível.                             |
-| 0x8007003A       | **\_servidor LDAP \_ inoperante**                 | **ERRO \_ \_ resp net inadequado \_**            | Não é possível contatar o servidor LDAP.                      |
-| 0x8007003B       | **\_erro de codificação LDAP \_**              | **ERRO \_ UNEXP \_ net \_ Err**           | Ocorreu um erro de codificação.                             |
-| 0x8007003B       | **\_erro de DEcodificação de LDAP \_**              | **ERRO \_ UNEXP \_ net \_ Err**           | Ocorreu um erro de decodificação.                             |
-| 0x80070044       | **limite de administrador de LDAP \_ \_ \_ excedido**       | **ERRO \_ em \_ muitos \_ nomes**          | Limite de administração excedido no servidor.         |
-| 0x80070056       | **\_credenciais inválidas do LDAP \_**         | **\_senha inválida do erro \_**         | Credencial inválida.                                |
-| 0x80070057       | **\_sintaxe DN inválida do LDAP \_ \_**          | **\_parâmetro inválido de erro \_**        | O nome diferenciado tem sintaxe inválida.     |
-| 0x80070057       | **\_violação de nomenclatura de LDAP \_**            | **\_parâmetro inválido de erro \_**        | Violação de nomenclatura.                                    |
-| 0x80070057       | **\_violação de \_ classe de objeto LDAP \_**     | **\_parâmetro inválido de erro \_**        | Violação de classe de objeto.                              |
-| 0x80070057       | **\_erro de filtro LDAP \_**                | **\_parâmetro inválido de erro \_**        | O filtro de pesquisa é insatisfatório.                                |
-| 0x80070057       | **\_erro de parâmetro LDAP \_**                 | **\_parâmetro inválido de erro \_**        | Parâmetro inadequado foi passado para uma rotina.               |
-| 0X8007006E       | **\_erro de operações de LDAP \_**            | **\_ \_ falha ao abrir erro**              | Ocorreu um erro de operação.                            |
-| 0x8007007A       | **\_resultados LDAP \_ muito \_ grandes**          | **ERRO \_ de \_ buffer insuficiente**      | O conjunto de resultados é muito grande.                            |
+| 0                | **LDAP \_ SUCCESS**                      | **NENHUM \_ ERRO**                        | Êxito na operação.                                 |
+| 0x80070002       | **LDAP \_ NÃO É UM OBJETO DESSE \_ \_ TIPO**             | **ARQUIVO \_ DE ERRO NÃO \_ \_ ENCONTRADO**          | O objeto não existe.                               |
+| 0x80070005       | **NÃO HÁ SUPORTE PARA O MÉTODO LDAP \_ \_ \_ \_ AUTH** | **ACESSO \_ DE ERRO \_ NEGADO**            | Não há suporte para o método de autenticação.                 |
+| 0x80070005       | **AUTH \_ FORTE \_ LDAP \_ NECESSÁRIA**       | **ACESSO \_ DE ERRO \_ NEGADO**            | Requer autenticação forte.                      |
+| 0x80070005       | **\_AUTH LDAP \_ INADEQUADA**          | **ACESSO \_ DE ERRO \_ NEGADO**            | Autenticação inadequada.                        |
+| 0x80070005       | **DIREITOS LDAP \_ \_ INSUFICIENTES**         | **ACESSO \_ DE ERRO \_ NEGADO**            | O usuário tem direitos de acesso insuficientes.                 |
+| 0x80070005       | **LDAP \_ AUTH \_ UNKNOWN**                | **ACESSO \_ DE ERRO \_ NEGADO**            | Erro de autenticação desconhecido.               |
+| 0x80070008       | **LDAP \_ SEM \_ MEMÓRIA**                   | **ERRO \_ SEM \_ MEMÓRIA \_ SUFICIENTE**       | O sistema está sem memória.                             |
+| 0x8007001F       | **LDAP \_ OUTROS**                        | **FALHA \_ DE GERAÇÃO DE \_ ERRO**              | Ocorreu um erro desconhecido.                              |
+| 0x8007001F       | **ERRO LOCAL DO \_ LDAP \_**                 | **FALHA \_ DE GERAÇÃO DE \_ ERRO**              | Ocorreu um erro local.                                |
+| 0x80070037       | **LDAP \_ INDISPONÍVEL**                  | **O \_ DEV \_ DE ERRO NÃO \_ EXISTE**           | O servidor não está disponível.                             |
+| 0x8007003A       | **LDAP \_ SERVER \_ DOWN**                 | **ERRO \_ \_ RESP DE NET \_ RUIM**            | Não é possível contatar o servidor LDAP.                      |
+| 0x8007003B       | **ERRO DE CODIFICAÇÃO LDAP \_ \_**              | **ERRO \_ ERRO UNEXP \_ NET \_ ERR**           | Ocorreu um erro de codificação.                             |
+| 0x8007003B       | **ERRO DE \_ DECODIFICAÇÃO DE LDAP \_**              | **ERRO \_ ERRO UNEXP \_ NET \_ ERR**           | Ocorreu um erro de decodificação.                             |
+| 0x80070044       | **LIMITE DE ADMINISTRADOR \_ LDAP \_ \_ EXCEDIDO**       | **ERRO \_ MUITOS \_ \_ NOMES**          | Limite de administração excedido no servidor.         |
+| 0x80070056       | **CREDENCIAIS \_ INVÁLIDAS DO LDAP \_**         | **ERRO \_ SENHA \_ INVÁLIDA**         | A credencial não é válida.                                |
+| 0x80070057       | **SINTAXE \_ DN INVÁLIDA \_ DE LDAP \_**          | **ERRO \_ PARÂMETRO \_ INVÁLIDO**        | O nome diferenciado tem sintaxe que não é válida.     |
+| 0x80070057       | **VIOLAÇÃO DE \_ NOMENUIDADE \_ LDAP**            | **ERRO \_ PARÂMETRO \_ INVÁLIDO**        | Violação de nomeação.                                    |
+| 0x80070057       | **VIOLAÇÃO DA CLASSE DE OBJETO LDAP \_ \_ \_**     | **ERRO \_ PARÂMETRO \_ INVÁLIDO**        | Violação de classe de objeto.                              |
+| 0x80070057       | **ERRO DE FILTRO LDAP \_ \_**                | **ERRO \_ PARÂMETRO \_ INVÁLIDO**        | O filtro de pesquisa é ruim.                                |
+| 0x80070057       | **ERRO DE PARAM LDAP \_ \_**                 | **ERRO \_ PARÂMETRO \_ INVÁLIDO**        | O parâmetro ruim foi passado para uma rotina.               |
+| 0X8007006E       | **ERRO DE OPERAÇÕES LDAP \_ \_**            | **FALHA \_ AO ABRIR \_ ERRO**              | Ocorreu um erro de operação.                            |
+| 0x8007007A       | **RESULTADOS LDAP \_ \_ MUITO \_ GRANDES**          | **ERRO \_ BUFFER \_ INSUFICIENTE**      | O conjunto de resultados é muito grande.                            |
 | 0x8007007B       | **sintaxe de LDAP \_ inválida \_**              | **\_nome inválido do erro \_**             | Sintaxe inválida.                                    |
 | 0x8007007C       | **\_erro de protocolo LDAP \_**              | **ERRO \_ de \_ nível inválido**            | Erro de protocolo.                                      |
 | 0x800700B7       | **o LDAP \_ já \_ existe**              | **o erro \_ já \_ existe**           | O objeto já existe.                               |
@@ -75,13 +75,13 @@ A tabela a seguir lista as mensagens de erro LDAP para o ADSI 2,0.
 
 
 
- 
+ 
 
 No ADSI 2,0, várias mensagens de erro LDAP são mapeadas para um código de erro do Win32 como erro **\_ \_ estendido de erro**. Chame [**ADsGetLastError**](/windows/desktop/api/Adshlp/nf-adshlp-adsgetlasterror) para recuperar a cadeia de caracteres de erro retornada pelo servidor. Para obter mais informações, consulte [mensagens de erro estendidas da ADSI](adsi-extended-error-messages.md) abaixo.
 
- 
+ 
 
- 
+ 
 
 
 

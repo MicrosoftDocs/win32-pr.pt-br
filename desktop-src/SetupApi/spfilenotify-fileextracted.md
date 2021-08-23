@@ -4,12 +4,12 @@ ms.assetid: 70ffe06c-e72d-4bb8-a13c-e2946ff72fa6
 title: Mensagem de SPFILENOTIFY_FILEEXTRACTED (Setupapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efdd66c7f218e632ba817d00a6e6c9447052e350
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 56b5028dec11cf2317be080fb82b79bf155be007c66abcbee33492aa229d6317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665106"
 ---
 # <a name="spfilenotify_fileextracted-message"></a>SPFILENOTIFY \_ extracçãod Message
 
@@ -43,7 +43,7 @@ Não utilizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A rotina de retorno de chamada do gabinete deve retornar um dos valores a seguir.
 
@@ -69,9 +69,9 @@ A rotina de retorno de chamada do gabinete deve retornar um dos valores a seguir
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
 
 
 

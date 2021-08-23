@@ -1,7 +1,7 @@
 ---
 description: Mensagem privada que realiza a paleta.
 ms.assetid: 1a8c9b31-031f-48c4-8f97-58b824d38e06
-title: 'Membro CBaseWindow:: m_RealizePalette (Winutil. h)'
+title: Membro CBaseWindow::m_RealizePalette (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ad05b499432747bde52651bcabe576fe9f356b28
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd1e51a48b4e359f8000b3be5e40b3bbfa725507bdb956d637ea8ded98eaad6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119567426"
 ---
-# <a name="cbasewindowm_realizepalette-member"></a>Membro de CBaseWindow:: m \_ RealizePalette
+# <a name="cbasewindowm_realizepalette-member"></a>Membro CBaseWindow::m \_ RealizePalette
 
 Mensagem privada que realiza a paleta.
 
@@ -38,7 +38,7 @@ UINT m_RealizePalette;
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CBaseWindow:: SetPalette**](cbasewindow-setpalette.md) envia essa mensagem.
+O [**método CBaseWindow::SetPalette**](cbasewindow-setpalette.md) envia essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ O método [**CBaseWindow:: SetPalette**](cbasewindow-setpalette.md) envia essa m
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

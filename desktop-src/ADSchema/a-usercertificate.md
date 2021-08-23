@@ -1,11 +1,11 @@
 ---
 title: X509-Cert atributo
-description: Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Observe que essa propriedade contém os certificados de chave pública emitidos para esse usuário pelo serviço de certificado da Microsoft.
+description: Contém os certificados X.509v3 codificados em DER emitidos para o usuário. Observe que essa propriedade contém os certificados de chave pública emitidos para esse usuário pelo Serviço de Certificado da Microsoft.
 ms.assetid: bdd6b9a4-c402-462c-be2c-8e7e582a899a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de X509-Cert do atributo AD
-- Esquema de AD do atributo userCertificate
+- X509-Cert atributo AD Schema
+- esquema do AD do atributo userCertificate
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faa6f0dfb5acc25890361a124e52b8b24958915f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0d6d95ab05047c19ba978a02957dca3870c2f93cf26b323bd6aa55c2f35472a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119644586"
 ---
 # <a name="x509-cert-attribute"></a>X509-Cert atributo
 
-Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Observe que essa propriedade contém os certificados de chave pública emitidos para esse usuário pelo serviço de certificado da Microsoft.
+Contém os certificados X.509v3 codificados em DER emitidos para o usuário. Observe que essa propriedade contém os certificados de chave pública emitidos para esse usuário pelo Serviço de Certificado da Microsoft.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------|
 | CN                | X509-Cert                                                                                                               |
-| LDAP-Display-Name | userCertificate                                                                                                         |
-| Tamanho              | Esse atributo exigirá cerca de 4 KB para cada certificado de agente de recuperação de chave emitido pela autoridade de certificação usando a instância de KRA. |
+| Ldap-Display-Name | userCertificate                                                                                                         |
+| Tamanho              | Esse atributo exigirá cerca de 4 KB para cada certificado do Agente de Recuperação de Chave emitido pela AC usando a instância DEIS. |
 | Privilégio de atualização  | Administrador de domínio                                                                                                    |
 | Frequência de atualização  | Cada vez que um certificado é emitido.                                                                                      |
 | Attribute-Id      | 2.5.4.36                                                                                                                |
-| System-ID-GUID    | bf967a7f-0de6-11d0-a285-00aa003049e2                                                                                    |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)                                                                   |
+| System-Id-Guid    | bf967a7f-0de6-11d0-a285-00aa003049e2                                                                                    |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                                                                   |
 
 
 
@@ -58,15 +58,15 @@ Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Ob
 | ID do link                | \-                                                                                     |
 | MAPI-Id                | 0x8C6A                                                                                 |
 | System-Only            | Falso                                                                                  |
-| É de valor único       | Falso                                                                                  |
+| Tem valor único       | Falso                                                                                  |
 | É indexado             | Falso                                                                                  |
-| No catálogo global      | True                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                           |
+| No Catálogo Global      | Verdadeiro                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                           |
 | Range-Lower            | \-                                                                                     |
 | Range-Upper            | \-                                                                                     |
 | Search-Flags           | 0x00000000                                                                             |
 | System-Flags           | 0x00000010                                                                             |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Ob
 | ID do link                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                              |
-| É de valor único       | Falso                                                                                                                                                                                                                              |
+| Tem valor único       | Falso                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                              |
-| No catálogo global      | True                                                                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                       |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário de email**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário do email**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Ob
 | ID do link                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                              |
-| É de valor único       | Falso                                                                                                                                                                                                                              |
+| Tem valor único       | Falso                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                              |
-| No catálogo global      | True                                                                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                       |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário de email**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário do email**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Ob
 | ID do link                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                              |
-| É de valor único       | Falso                                                                                                                                                                                                                              |
+| Tem valor único       | Falso                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                              |
-| No catálogo global      | True                                                                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                       |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário de email**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário do email**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Ob
 | ID do link                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                              |
-| É de valor único       | Falso                                                                                                                                                                                                                              |
+| Tem valor único       | Falso                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                              |
-| No catálogo global      | True                                                                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                       |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário de email**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário do email**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contém os certificados X. 509v3 codificados em DER emitidos para o usuário. Ob
 | ID do link                | \-                                                                                                                                                                                                                                 |
 | MAPI-Id                | 0x8C6A                                                                                                                                                                                                                             |
 | System-Only            | Falso                                                                                                                                                                                                                              |
-| É de valor único       | Falso                                                                                                                                                                                                                              |
+| Tem valor único       | Falso                                                                                                                                                                                                                              |
 | É indexado             | Falso                                                                                                                                                                                                                              |
-| No catálogo global      | True                                                                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                       |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                       |
 | Range-Lower            | \-                                                                                                                                                                                                                                 |
 | Range-Upper            | \-                                                                                                                                                                                                                                 |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                         |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                         |
-| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário de email**](c-mailrecipient.md)<br/> [**MS-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Destinatário do email**](c-mailrecipient.md)<br/> [**ms-PKI-Private-Key-Recovery-Agent**](c-mspki-privatekeyrecoveryagent.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 

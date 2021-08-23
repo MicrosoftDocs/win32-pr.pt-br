@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_CAN_SAVE (VFW. h)
-description: O MCIWNDM \_ pode \_ salvar a mensagem determina se um dispositivo MCI pode salvar dados. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanSave.
+title: MCIWNDM_CAN_SAVE mensagem (Vfw.h)
+description: A mensagem MCIWNDM \_ CAN SAVE determina se um dispositivo \_ MCI pode salvar dados. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanSave.
 ms.assetid: b4e27190-b095-494b-9ed3-10653bea187b
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_CAN_SAVE
+- MCIWNDM_CAN_SAVE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11b60b8a5d93ac80befc8beeb6665399efe44f1e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ccab622381208b8213414ed8b156a84e431afffc55acdf2323b0c0a2d31014f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429626"
 ---
-# <a name="mciwndm_can_save-message"></a>MCIWNDM \_ pode \_ salvar a mensagem
+# <a name="mciwndm_can_save-message"></a>Mensagem MCIWNDM \_ PODE \_ SALVAR
 
-O **MCIWNDM \_ pode \_ salvar** a mensagem determina se um dispositivo MCI pode salvar dados. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndCanSave**](/windows/desktop/api/Vfw/nf-vfw-mciwndcansave) .
+A **mensagem MCIWNDM \_ CAN \_ SAVE** determina se um dispositivo MCI pode salvar dados. Você pode enviar essa mensagem explicitamente ou usando a [**macro MCIWndCanSave.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcansave)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se o dispositivo der suporte a salvar ou **false** caso contrário.
+Retornará **TRUE se** o dispositivo for compatível com salvar ou **FALSE** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Retornará **true** se o dispositivo der suporte a salvar ou **false** caso cont
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2fddeea7b996a8599a8dfb7abf52fda387b43dfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb1a7c3eac4e357f72050b18f23e446e018e7f6021722acf423b27b8ee8b150a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620146"
 ---
 # <a name="esentlogsequenceendexception-constructor"></a>Construtor EsentLogSequenceEndException
 
 Inicializa uma nova instância da classe EsentLogSequenceEndException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogSequenceEndException()
 
 [Classe EsentLogSequenceEndException](./esentlogsequenceendexception-class.md)
 
-[Membros do EsentLogSequenceEndException](./esentlogsequenceendexception-members.md)
+[Membros EsentLogSequenceEndException](./esentlogsequenceendexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

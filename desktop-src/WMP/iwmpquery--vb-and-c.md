@@ -1,10 +1,10 @@
 ---
-title: Interface IWMPQuery (VB e C) (WMP. h)
+title: Interface IWMPQuery (VB e C ) (Wmp.h)
 description: Representa uma consulta composta.
 ms.assetid: b9cfeec9-f928-4b12-88c2-0f78b26f8687
 keywords:
-- Windows Media Player de interface IWMPQuery (VB e C)
-- Windows Media Player de interface IWMPQuery (VB e C), descrita
+- Interface IWMPQuery (VB e C) Windows Media Player
+- Interface IWMPQuery (VB e C ) Windows Media Player , descrita
 topic_type:
 - apiref
 api_name:
@@ -40,20 +40,20 @@ A interface **IWMPQuery (VB e C#)** tem esses métodos.
 
 | Método                                                                       | Descrição                                                            |
 |:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| [**addcondition**](wmplibiwmpquery-iwmpquery-addcondition--vb-and-c.md)     | Adiciona uma condição à consulta composta usando **and** Logic.<br/> |
-| [**beginNextGroup**](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md) | Inicia um novo grupo de condição.<br/>                               |
+| [**addCondition**](wmplibiwmpquery-iwmpquery-addcondition--vb-and-c.md)     | Adiciona uma condição à consulta composta usando a **lógica AND.**<br/> |
+| [**beginNextGroup**](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md) | Inicia um novo grupo de condições.<br/>                               |
 
 
 
  
 
-Obtenha uma interface **IWMPQuery** usando o método a seguir.
+Obter uma **interface IWMPQuery** usando o método a seguir.
 
 
 
 | Interface                                                      | Método                                                  |
 |----------------------------------------------------------------|---------------------------------------------------------|
-| [**IWMPMediaCollection2**](iwmpmediacollection2--vb-and-c.md) | [**createQuery**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmediacollection2-createquery) |
+| [**IWMPMediaCollection2**](iwmpmediacollection2--vb-and-c.md) | [**Createquery**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmediacollection2-createquery) |
 
 
 
@@ -65,7 +65,7 @@ Obtenha uma interface **IWMPQuery** usando o método a seguir.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 
@@ -73,16 +73,16 @@ Obtenha uma interface **IWMPQuery** usando o método a seguir.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. createQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
+[**IWMPMediaCollection2.createQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getPlaylistByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getPlaylistByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getStringCollectionByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getStringCollectionByQuery (VB e C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
 </dt> </dl>
 
  

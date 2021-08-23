@@ -4,12 +4,12 @@ ms.assetid: 61dfff97-86b2-4d75-ac1c-a69b1dbde02a
 title: Escrevendo renderizadores de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6ec5b6ca42304514e8f0683ddf7f59cf6e77064
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91d9d4b2322661156f3871d383db13af1821fa1b6823a2cbfa633e3e202f236f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105792540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535946"
 ---
 # <a name="writing-video-renderers"></a>Escrevendo renderizadores de vídeo
 
@@ -24,7 +24,7 @@ Esta seção contém os seguintes tópicos.
 
 <dl> <dt>
 
-[Gravando filtros do DirectShow](writing-directshow-filters.md)
+[gravando filtros de DirectShow](writing-directshow-filters.md)
 </dt> </dl>
 
  

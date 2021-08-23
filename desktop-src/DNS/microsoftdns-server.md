@@ -67,12 +67,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 854a90f5b0fa4d331bd0478d104e50dd70b0cd65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c4a42432a11b5cde0df657ba2a9725a68d76a055fce3787bce56c10dfd227ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539266"
 ---
 # <a name="microsoftdns_server-class"></a>\_Classe de servidor MicrosoftDNS
 
@@ -197,7 +197,7 @@ Especifica se o servidor DNS aceita solicitações de atualização dinâmica. O
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Sem restrições.<br/>                                                                           |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Não permite atualizações dinâmicas de registros SOA.<br/>                                             |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Não permite atualizações dinâmicas de registros NS na raiz da zona.<br/>                             |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Não permite atualizações dinâmicas de registros NS que não estejam na raiz da zona (registros NS de delegação).<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Não permite atualizações dinâmicas de registros NS que não estejam na raiz da zona (registros NS de delegação).<br/> |
 
 
 
@@ -238,7 +238,7 @@ Indica quais zonas primárias padrão que são autoritativas para o nome do serv
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum.<br/>                                           |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Somente servidores que permitem atualizações dinâmicas.<br/>        |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Somente servidores que não permitem atualizações dinâmicas.<br/> |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Todos os servidores.<br/>                                    |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Todos os servidores.<br/>                                    |
 
 
 
@@ -307,10 +307,10 @@ Valor de **ScavengingInterval** padrão definido para todas as zonas integradas 
 **DefaultNoRefreshInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Intervalo sem atualização, em horas, definido para todas as zonas integradas ao Active Directory criadas neste servidor DNS. O valor padrão é 168 horas (sete dias).
@@ -320,10 +320,10 @@ Intervalo sem atualização, em horas, definido para todas as zonas integradas a
 **DefaultRefreshInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Intervalo de atualização, em horas, definido para todas as zonas integradas ao Active Directory criadas neste servidor DNS. O valor padrão é 168 horas (sete dias).
@@ -333,10 +333,10 @@ Intervalo de atualização, em horas, definido para todas as zonas integradas ao
 **DisableAutoReverseZones**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Indica se o servidor DNS cria automaticamente zonas de pesquisa inversa padrão.
@@ -346,23 +346,23 @@ Indica se o servidor DNS cria automaticamente zonas de pesquisa inversa padrão.
 **DisjointNets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se a associação de porta padrão para um soquete usado para enviar consultas para servidores DNS remotos pode ser substituída.
+Indica se a associação de porta padrão para um soquete usado para enviar consultas para servidores DNS remotos pode ser substituído.
 
 </dd> <dt>
 
 **DsAvailable**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Indica se há um DS disponível no servidor DNS.
@@ -372,109 +372,109 @@ Indica se há um DS disponível no servidor DNS.
 **DsPollingInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Intervalo, em segundos, para sondar as zonas integradas ao DS.
+Intervalo, em segundos, para sondar as zonas integradas a DS.
 
 </dd> <dt>
 
 **DsTombstoneInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Tempo de vida dos registros marcados para exclusão nas zonas integradas do serviço de diretório, expresso em segundos.
+Tempo de vida de registros marcados por uma lista em zonas integradas do Serviço de Diretório, expressas em segundos.
 
 </dd> <dt>
 
 **EDnsCacheTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Tempo de vida, em segundos, das informações armazenadas em cache que descrevem a versão do EDNS com suporte de outros servidores DNS.
+Tempo de vida, em segundos, das informações armazenadas em cache que descrevem a versão EDNS com suporte de outros servidores DNS.
 
 </dd> <dt>
 
 **EnableDirectoryPartitions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se o suporte para partições de diretório de aplicativo está habilitado no servidor DNS.
+Especifica se o suporte para partições de diretório do aplicativo está habilitado no servidor DNS.
 
-* * Windows Server 2003: * *
+**Windows Server 2003: **
 
-Esse método é denominado EnableDirectoryPartitionSupport.
+Esse método é chamado EnableDirectoryPartitionSupport.
 
 </dd> <dt>
 
 **EnableDnsSec**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se o servidor DNS inclui RRs específicos do DNSSEC, chave, SIG e NXT em uma resposta, de acordo com a tabela a seguir:
+Especifica se o servidor DNS inclui RRs, KEY, SIG e NXT específicos do DNSSEC em uma resposta, de acordo com a tabela a seguir:
 
 
 
 | Valor                                                                                                | Significado                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum registro DNSSEC é incluído na resposta, a menos que a consulta solicitou um conjunto de registros de recursos do tipo de registro DNSSEC.<br/>          |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Os registros DNSSEC são incluídos na resposta de acordo com a RFC 2535.<br/>                                                                  |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Os registros DNSSEC são incluídos em uma resposta somente se a consulta do cliente original contivesse o registro de recurso OPT de acordo com a RFC 2671<br/> |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum registro DNSSEC é incluído na resposta, a menos que a consulta tenha solicitado um conjunto de registros de recurso do tipo de registro DNSSEC.<br/>          |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Os registros DNSSEC são incluídos na resposta de acordo com o RFC 2535.<br/>                                                                  |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Os registros DNSSEC serão incluídos em uma resposta somente se a consulta do cliente original contiver o registro de recurso OPT de acordo com o RFC 2671<br/> |
 
 
 
  
 
-Se uma consulta solicitar um conjunto de registros de recursos do tipo DNSSEC, o servidor DNS sempre responderá com esses registros, se disponível.
+Se uma consulta solicitar um conjunto de registros de recurso do tipo DNSSEC, o servidor DNS sempre responderá com esses registros, se disponível.
 
 </dd> <dt>
 
 **EnableEDnsProbes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica o comportamento do servidor DNS. Quando TRUE, o servidor DNS sempre responde com registros de recursos OPCIONais de acordo com a RFC 2671, a menos que o servidor remoto tenha indicado que ele não oferece suporte ao EDNS em um Exchange anterior. Se for FALSE, o servidor DNS responderá a consultas com optas somente se as optas forem enviadas na consulta original.
+Especifica o comportamento do servidor DNS. Quando TRUE, o servidor DNS sempre responde com registros de recurso OPT de acordo com o RFC 2671, a menos que o servidor remoto tenha indicado que ele não dá suporte a EDNS em uma troca anterior. Se FALSE, o servidor DNS responderá a consultas com OPTs somente se AS OPTs são enviadas na consulta original.
 
 </dd> <dt>
 
 **EventLogLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica quais eventos o servidor DNS registra no log do sistema Visualizador de Eventos. Os valores a seguir são usados.
+Indica quais eventos o Servidor DNS registra no log Visualizador de Eventos sistema. Os valores a seguir são usados.
 
 
 
@@ -482,8 +482,8 @@ Indica quais eventos o servidor DNS registra no log do sistema Visualizador de E
 |------------------------------------------------------------------------------------------------------|------------------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum.<br/>                         |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Registrar apenas erros.<br/>              |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Registrar somente avisos e erros.<br/> |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | Registrar todos os eventos.<br/>               |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Registre apenas avisos e erros.<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | Registrar todos os eventos.<br/>               |
 
 
 
@@ -494,64 +494,64 @@ Indica quais eventos o servidor DNS registra no log do sistema Visualizador de E
 **ForwardDelegations**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se as consultas a subzonas delegadas são encaminhadas.
+Especifica se as consultas a sub-zonas delegadas são encaminhadas.
 
 </dd> <dt>
 
 **Encaminhadores**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Enumera a lista de endereços IP de encaminhadores para os quais o servidor DNS encaminha consultas.
+Enumera a lista de endereços IP de Encaminhadores para os quais o Servidor DNS encaminha consultas.
 
 </dd> <dt>
 
 **ForwardingTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Tempo, em segundos, um servidor DNS que encaminha uma consulta aguardará a resolução do [*encaminhador*](f-gly.md) antes de tentar resolver a consulta em si.
+Tempo, em segundos, um servidor DNS que encaminha [](f-gly.md) uma consulta aguardará a resolução do encaminhador antes de tentar resolver a consulta em si.
 
-Esse valor será inútil se o servidor de encaminhamento não estiver definido para usar recursão. Para determinar isso, verifique a propriedade booliana do isslave.
+Esse valor não terá sentido se o servidor de encaminhamento não estiver definido para usar a recursão. Para determinar isso, verifique a propriedade booliana Is Boolean.
 
 </dd> <dt>
 
-**Isslave**
+**IsAvoe**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-**True** se o servidor DNS não usar recursão quando a resolução de nomes por meio de encaminhadores falhar.
+**TRUE** se o servidor DNS não usar recursão quando a resolução de nomes por meio de encaminhadores falhar.
 
 </dd> <dt>
 
 **ListenAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Enumera a lista de endereços IP nos quais o servidor DNS pode receber consultas.
@@ -561,49 +561,49 @@ Enumera a lista de endereços IP nos quais o servidor DNS pode receber consultas
 **LocalNetPriority**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o servidor DNS fornece prioridade para o endereço de rede local ao retornar registros A.
+Indica se o servidor DNS dá prioridade ao endereço net local ao retornar registros A.
 
 </dd> <dt>
 
 **LogFileMaxSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Tamanho do log de depuração do servidor DNS, em bytes.
+Tamanho do log de depuração do Servidor DNS, em bytes.
 
 </dd> <dt>
 
-**LogFilePath**
+**Logfilepath**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Nome do arquivo e caminho para o log de depuração do servidor DNS. O padrão é% system32% \\ DNS \\ DNS. log. Os caminhos relativos são relativos a% SystemRoot% \\ System32. Caminhos absolutos podem ser usados, mas não há suporte para caminhos UNC.
+Nome do arquivo e caminho para o log de depuração do Servidor DNS. O padrão é %system32% \\ \\ dns.log. Os caminhos relativos são relativos a %Systemroot% \\ System32. Caminhos absolutos podem ser usados, mas não há suporte para caminhos UNC.
 
 </dd> <dt>
 
 **LogIPFilterList**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Lista de endereços IP usados para filtrar eventos DNS gravados no log de depuração.
@@ -613,35 +613,35 @@ Lista de endereços IP usados para filtrar eventos DNS gravados no log de depura
 **LogLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica quais políticas são ativadas no log do sistema Visualizador de Eventos.
+Indica quais políticas são ativadas no log Visualizador de Eventos sistema.
 
-Deve ser definido como valores específicos com base no seguinte algoritmo: cada política (a ser ativada no log do sistema Visualizador de Eventos) recebe um valor específico.
+Deve ser definido como valores específicos com base no seguinte algoritmo: cada política (a ser ativada no log Visualizador de Eventos sistema) recebe um valor específico.
 
 
 
 | Valor                                                                                                                  | Significado                                             |
 |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl>                   | Consultá.<br/>                                   |
-| <span id="16"></span><dl> <dt>**16**</dt> </dl>                 | Sobre.<br/>                                  |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl>                   | Consulta.<br/>                                   |
+| <span id="16"></span><dl> <dt>**16**</dt> </dl>                 | Notificar.<br/>                                  |
 | <span id="32"></span><dl> <dt>**32**</dt> </dl>                 | Update.<br/>                                  |
-| <span id="254"></span><dl> <dt>**254**</dt> </dl>               | Transações não consulta.<br/>                   |
+| <span id="254"></span><dl> <dt>**254**</dt> </dl>               | Transações não sequenciais.<br/>                   |
 | <span id="256"></span><dl> <dt>**256**</dt> </dl>               | Perguntas.<br/>                               |
-| <span id="512"></span><dl> <dt>**512**</dt> </dl>               | Respectivas.<br/>                                 |
+| <span id="512"></span><dl> <dt>**512**</dt> </dl>               | Respostas.<br/>                                 |
 | <span id="4096"></span><dl> <dt>**4096**</dt> </dl>             | Enviar.<br/>                                    |
-| <span id="8192"></span><dl> <dt>**8192**</dt> </dl>             | Recebe.<br/>                                 |
-| <span id="16384"></span><dl> <dt>**16384**</dt> </dl>           | UDP.<br/>                                     |
+| <span id="8192"></span><dl> <dt>**8192**</dt> </dl>             | Receber.<br/>                                 |
+| <span id="16384"></span><dl> <dt>**16384**</dt> </dl>           | Udp.<br/>                                     |
 | <span id="32768"></span><dl> <dt>**32768**</dt> </dl>           | TCP.<br/>                                     |
 | <span id="65535"></span><dl> <dt>**65535**</dt> </dl>           | Todos os pacotes.<br/>                             |
-| <span id="65536"></span><dl> <dt>**65536**</dt> </dl>           | Transação de gravação do serviço de diretório do NT.<br/>  |
-| <span id="131072"></span><dl> <dt>**131072**</dt> </dl>         | Transação de atualização do serviço de diretório do NT.<br/> |
+| <span id="65536"></span><dl> <dt>**65536**</dt> </dl>           | Transação de gravação do Serviço de Diretório NT.<br/>  |
+| <span id="131072"></span><dl> <dt>**131072**</dt> </dl>         | Transação de atualização do Serviço de Diretório NT.<br/> |
 | <span id="16777216"></span><dl> <dt>**16777216**</dt> </dl>     | Pacotes completos.<br/>                            |
-| <span id="2147483648"></span><dl> <dt>**2147483648**</dt> </dl> | Gravação.<br/>                           |
+| <span id="2147483648"></span><dl> <dt>**2147483648**</dt> </dl> | Faça a gravação.<br/>                           |
 
 
 
@@ -654,26 +654,26 @@ A soma dos valores correspondentes a todas as políticas a serem ativadas é ind
 **LooseWildcarding**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o servidor DNS executa curingas flexíveis. Se for indefinido ou zero, o servidor seguirá o comportamento curinga especificado na RFC do DNS. Nesse caso, é aconselhável que um administrador inclua registros MX para todos os hosts que não têm capacidade de receber emails. Se for diferente de zero, o servidor buscará o nó curinga mais próximo; Nesse caso, um administrador deve colocar os registros MX na raiz da zona e em um nó curinga (' \* ') diretamente abaixo da raiz da zona. Além disso, os administradores devem colocar os registros MX de referência automática em hosts que recebem seus próprios emails.
+Indica se o servidor DNS executa caracteres curinga soltos. Se for indefinido ou zero, o servidor seguirá o comportamento curinga especificado na RFC do DNS. Nesse caso, um administrador é aconselhado a incluir registros MX para todos os hosts sem capacidade de receber emails. Se não for zero, o servidor buscará o nó curinga mais próximo; nesse caso, um administrador deve colocar registros MX na raiz da zona e em um nó curinga (' ') diretamente \* abaixo da raiz da zona. Além disso, os administradores devem colocar registros MX de autorreferência em hosts que recebem seu próprio email.
 
 </dd> <dt>
 
 **MaxCacheTTL**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Tempo máximo, em segundos, o registro de uma consulta de nome recursivo pode permanecer no cache do servidor DNS. O servidor DNS exclui registros do cache quando o valor dessa entrada expira, mesmo que o valor do campo TTL no registro seja maior.
+Tempo máximo, em segundos, o registro de uma consulta de nome recursivo pode permanecer no cache do Servidor DNS. O Servidor DNS exclui registros do cache quando o valor dessa entrada expira, mesmo que o valor do campo TTL no registro seja maior.
 
 O valor padrão dessa propriedade é 86.400 segundos (1 dia).
 
@@ -682,13 +682,13 @@ O valor padrão dessa propriedade é 86.400 segundos (1 dia).
 **MaxNegativeCacheTTL**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Tempo máximo, em segundos, um resultado de erro de nome de uma consulta recursiva pode permanecer no cache do servidor DNS. O DNS exclui registros do cache quando esse temporizador expira, mesmo que o campo TTL seja maior. O valor padrão é 86.400 (um dia).
+O tempo máximo, em segundos, um erro de nome resultante de uma consulta recursiva pode permanecer no cache do Servidor DNS. O DNS exclui registros do cache quando esse temporizador expira, mesmo que o campo TTL seja maior. O valor padrão é 86.400 (um dia).
 
 </dd> <dt>
 
@@ -708,55 +708,55 @@ FQDN (nome de domínio totalmente qualificado) ou endereço IP do servidor DNS.
 **NameCheckFlag**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica o conjunto de caracteres qualificados a ser usado em nomes DNS. Os valores a seguir são usados.
+Indica o conjunto de caracteres qualificados a serem usados em nomes DNS. Os valores a seguir são usados.
 
 
 
 | Valor                                                                                                | Significado                      |
 |------------------------------------------------------------------------------------------------------|------------------------------|
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | RFC estrito (ANSI)<br/> |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Não RFC (ANSI)<br/>    |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | NÃO RFC (ANSI)<br/>    |
 | <span id="3"></span><dl> <dt>**3**</dt> </dl> | Multibyte (UTF8)<br/>  |
 
 
 
  
 
-* * Windows Server 2003: * *
+**Windows Server 2003: **
 
-Um valor de "2" indica "any".
+Um valor de "2" indica "Qualquer".
 
 </dd> <dt>
 
-**Recursão**
+**Norecursion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o servidor DNS executa Pesquisas recursivas. VERDADEIRO indica que as pesquisas recursivas não são executadas.
+Indica se o servidor DNS executa pesquisas recursivas. TRUE indica que as pesquisas recursivas não são executadas.
 
 </dd> <dt>
 
 **RecursionRetry**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Segundos decorridos antes de tentar novamente uma pesquisa recursiva. Se a propriedade for indefinida ou zero, as novas tentativas serão feitas após três segundos. Os usuários não são incentivados de alterar essa propriedade. Há certas situações em que a propriedade deve ser alterada; um exemplo é quando o servidor DNS entra em contato com servidores remotos por um link lento e o servidor DNS está tentando novamente antes de receber a resposta do DNS remoto. Nesse caso, aumentar o tempo para ser um pouco mais longo do que o tempo de resposta observado do DNS remoto seria razoável.
+Segundos decorridos antes de tentar novamente uma olhada recursiva. Se a propriedade for indefinida ou zero, as novas tentativas serão feitas após três segundos. Os usuários não são incentivados de alterar essa propriedade. Há certas situações em que a propriedade deve ser alterada; um exemplo é quando o servidor DNS entra em contato com servidores remotos por um link lento e o servidor DNS está tentando novamente antes de receber a resposta do DNS remoto. Nesse caso, aumentar o tempo para ser um pouco mais longo do que o tempo de resposta observado do DNS remoto seria razoável.
 
 </dd> <dt>
 
@@ -808,7 +808,7 @@ Protocolo RPC ou protocolos sobre os quais o RPC administrativo é executado. O 
 | <span id="0"></span><dl> <dt>**0**</dt> </dl> | Nenhum<br/>        |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | TCP<br/>         |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Pipes nomeados<br/> |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | LPC<br/>         |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | LPC<br/>         |
 
 
 
@@ -972,16 +972,16 @@ Tempo, em segundos, o servidor DNS aguarda uma conexão TCP bem-sucedida para um
 
 <dl> <dt>
 
-[**Método StartService da classe de \_ servidor MicrosoftDNS**](microsoftdns-server-startservice.md)
+[**Método StartService da classe de servidor \_ MicrosoftDNS**](microsoftdns-server-startservice.md)
 </dt> <dt>
 
-[**Método StopService da classe de \_ servidor MicrosoftDNS**](microsoftdns-server-stopservice.md)
+[**Método StopService da classe de servidor \_ MicrosoftDNS**](microsoftdns-server-stopservice.md)
 </dt> <dt>
 
-[**Método StartScavenging da classe de \_ servidor MicrosoftDNS**](microsoftdns-server-startscavenging.md)
+[**Método StartScavenging da classe de servidor \_ MicrosoftDNS**](microsoftdns-server-startscavenging.md)
 </dt> <dt>
 
-[**Método getdistinguiname da classe de \_ servidor MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
+[**Método GetDistinguishedName da classe de servidor \_ MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
 </dt> </dl>
 
  

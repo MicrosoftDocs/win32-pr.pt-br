@@ -4,12 +4,12 @@ ms.assetid: 8aacc6c0-b6fe-4b4a-bbe4-a0351baf1f30
 title: Mensagem de SPFILENOTIFY_QUEUESCAN (Setupapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66202a398f7e3f4e1121782f9469d2d6f299452c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ab9c680ff2aaa3056ab74db741a34bb9f0379ec7123821b1de4c20200997ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119664846"
 ---
 # <a name="spfilenotify_queuescan-message"></a>\_Mensagem SPFILENOTIFY QUEUESCAN
 
@@ -43,7 +43,7 @@ Se o arquivo no nó atual da fila estiver em uso, *param2* usará a cópia atras
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A rotina de retorno de chamada deve retornar um [código de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -60,9 +60,9 @@ Se a rotina de retorno de chamada não retornar nenhum \_ erro, a verificação 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
 
 
 

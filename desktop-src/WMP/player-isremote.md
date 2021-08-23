@@ -1,9 +1,9 @@
 ---
-title: Player. IsRemote
-description: A propriedade IsRemote recupera um valor que indica se o controle do Windows Media Player está sendo executado no modo remoto.
+title: Player.isRemote
+description: A propriedade isRemote recupera um valor que indica se o controle Windows Media Player está em execução no modo remoto.
 ms.assetid: bfeab968-affb-4d5d-b88b-5caf50d34cee
 keywords:
-- Player. IsRemote Windows Media Player
+- Player.isRemote Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,31 +14,31 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7c8d97ba212e032db16b43299d2a3a8a836f9b9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6afa0caf615563f4829f1a337f31521b1fb7dafd5ef6e2722f1d50c01dda1ba4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616686"
 ---
-# <a name="playerisremote"></a>Player. IsRemote
+# <a name="playerisremote"></a>Player.isRemote
 
-A propriedade **IsRemote** recupera um valor que indica se o controle do Windows Media Player está sendo executado no modo remoto.
+A **propriedade isRemote** recupera um valor que indica se o controle Windows Media Player está em execução no modo remoto.
 
 ## <a name="syntax"></a>Syntax
 
-*Player* . **IsRemote**
+*player* . **isRemote**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é um **booliano** somente leitura.
+Essa propriedade é um booliana **somente leitura.**
 
 
 
 | Valor | Descrição                                   |
 |-------|-----------------------------------------------|
-| true  | O controle do player está sendo executado no modo remoto. |
-| false | O controle do player está sendo executado no modo local.  |
+| true  | O controle Player está em execução no modo remoto. |
+| false | O controle Player está em execução no modo local.  |
 
 
 
@@ -54,7 +54,7 @@ Esta propriedade é um **booliano** somente leitura.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ Esta propriedade é um **booliano** somente leitura.
 
 <dl> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> <dt>
 
 [**Estabelecer comunicação remota do controle do Windows Media Player**](remoting-the-windows-media-player-control.md)

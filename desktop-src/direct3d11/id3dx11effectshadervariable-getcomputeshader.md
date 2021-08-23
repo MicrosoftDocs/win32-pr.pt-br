@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c9312a7d603370d53c0721574623733c9e75da8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 27a256c143a7232494e34c2b6c36255f1360cf15225c212d0d7c1be6678d3b7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565896"
 ---
 # <a name="id3dx11effectshadervariablegetcomputeshader-method"></a>Método ID3DX11EffectShaderVariable:: GetComputeShader
 
@@ -62,7 +62,7 @@ Ponteiro para um ponteiro [**ID3D11ComputeShader**](/windows/win32/api/d3d11/nn-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

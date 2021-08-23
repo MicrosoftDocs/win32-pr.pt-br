@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 181487fdada61b092bd5014e0fda777e9ca7da90
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d66ae5157d82c09a8a8d9655bca58c96f5c4efc8cc8c12865ae40f6b9f8eade4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509156"
 ---
 # <a name="default-hiding-value-attribute"></a>Padrão-Ocultar atributo-Value
 
@@ -59,7 +59,7 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -80,7 +80,7 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -101,7 +101,7 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -122,10 +122,10 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -143,10 +143,10 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -164,10 +164,10 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -185,10 +185,10 @@ Um valor booliano que especifica a configuração padrão da propriedade showInA
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: propriedade Instance. JetInstance'
-title: Propriedade instance. JetInstance
+description: 'Saiba mais sobre: propriedade Instance.JetInstance'
+title: Propriedade Instance.JetInstance
 TOCTitle: 'JetInstance property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Instance.JetInstance
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instance.jetinstance(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cc1e330be27f25fe677410d5468e56eea7b26933
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e886e2367fd1ab7204d1fe3d31aba8644355cd80ea8a8281f43a968d1f673fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618296"
 ---
-# <a name="instancejetinstance-property"></a>Propriedade instance. JetInstance
+# <a name="instancejetinstance-property"></a>Propriedade Instance.JetInstance
 
-Obtém o JET_INSTANCE que essa instância contém.
+Obtém a JET_INSTANCE que essa instância contém.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,7 +58,7 @@ public JET_INSTANCE JetInstance { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -68,4 +68,4 @@ Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)
 
 [Membros da Instância ](./instance-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ description: Ajusta os destaques e as sombras da imagem.
 ms.assetid: ebbb7d99-9144-ffff-af73-d89e7d269924
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d595a5b82a2df0b0b0bab14c03e6a807511ed61
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3335de3bc6b115221c1a2a343cac9c5c5154a6d868c9fa8f63b2cfa719e287c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104561616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569606"
 ---
 # <a name="highlights-and-shadows-effect"></a>Efeito de realces e sombras
 
@@ -53,9 +53,9 @@ As propriedades do efeito de realce e sombras são definidas pela enumeração d
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| Servidor mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
+| Cliente mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects \_ 2. h                                  |
 | Biblioteca                  | d2d1. lib, dxguid. lib                              |
 
 ## <a name="related-topics"></a>Tópicos relacionados

@@ -1,7 +1,7 @@
 ---
 description: A função GetBitmapSubtype retorna o GUID do subtipo de mídia para o bitmap especificado.
 ms.assetid: 0af8a64b-8d3c-4308-9fd6-174864a1ca26
-title: Função GetBitmapSubtype (Wxutil. h)
+title: Função GetBitmapSubtype (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ba12ffcd1b50b920f28e1969444a2d31a9d073d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8903e4a404367327b677a239b8ab28e3cb47e5679203857154f453a5cc01e25e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119536676"
 ---
 # <a name="getbitmapsubtype-function"></a>Função GetBitmapSubtype
 
-A `GetBitmapSubtype` função retorna o **GUID** do subtipo de mídia para o bitmap especificado.
+A `GetBitmapSubtype` função retorna o GUID de **subtipo** de mídia para o bitmap especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,19 +45,19 @@ const GUID GetBitmapSubtype(
 *pHeader* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) .
+Ponteiro para uma [**estrutura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o **GUID** do subtipo de mídia.
+Retorna o GUID do subtipo **de mídia**.
 
 ## <a name="remarks"></a>Comentários
 
-Para tipos RGB não compactados, essa função mapeia o campo **biBitCount** para o subtipo. Para tipos de vídeo compactados, essa função usa a classe [**FOURCCMap**](fourccmap.md) para mapear o campo de **bicompactação** para o subtipo.
+Para tipos RGB descompactados, essa função mapeia o **campo biBitCount** para o subtipo . Para tipos de vídeo compactados, essa função usa a [**classe FOURCCMap**](fourccmap.md) para mapear o **campo biCompression** para o subtipo .
 
-Se a função não puder corresponder ao formato de um subtipo, o valor de retorno será o GUID \_ NULL.
+Se a função não puder corresponder o formato a um subtipo, o valor de retorno será GUID \_ NULL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Se a função não puder corresponder ao formato de um subtipo, o valor de retor
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

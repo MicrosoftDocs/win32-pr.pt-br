@@ -1,7 +1,7 @@
 ---
-description: Fornece acesso de leitura a um arquivo de diário do Windows, retornando um fluxo que contém uma versão XML do conteúdo do arquivo.
+description: Fornece acesso de leitura a um Windows journal, retornando um fluxo que contém uma versão XML do conteúdo do arquivo.
 ms.assetid: e4e19f69-6377-4f06-856d-7f9b453e7656
-title: Interface IJournalReader (Journal. h)
+title: Interface IJournalReader (Journal.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - COM
 api_location:
 - Journal.dll
-ms.openlocfilehash: 7576996d341f13518879310f08c0a48996e1293f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff0151432e38a3e611e09efe2d5192eefb8c1d3e6cb0e79296e992b728c5a16a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590296"
 ---
 # <a name="ijournalreader-interface"></a>Interface IJournalReader
 
-Fornece acesso de leitura a um arquivo de diário do Windows, retornando um fluxo que contém uma versão XML do conteúdo do arquivo.
+Fornece acesso de leitura a um Windows journal, retornando um fluxo que contém uma versão XML do conteúdo do arquivo.
 
 > [!Note]  
-> O componente de leitor de diário não pode ler arquivos de diário do Windows criados por computadores que executam o Windows 7 ou posterior. A interface IJournalReader deve ser considerada preterida ou obsoleta e não deve ser usada.
+> O componente Leitor de Diário não pode Windows arquivos de Diário criados por máquinas que executam Windows 7 ou posterior. A interface IJournalReader deve ser considerada preterida ou obsoleta e não deve ser usada.
 
  
 
 ## <a name="members"></a>Membros
 
-A interface **IJournalReader** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IJournalReader** também tem estes tipos de membros:
+A interface **IJournalReader** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IJournalReader** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -43,7 +43,7 @@ A interface **IJournalReader** tem esses métodos.
 
 | Método                                                  | Descrição                                                                                                           |
 |:--------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| [**ReadFromStream**](ijournalreader-readfromstream.md) | Usa um fluxo para um arquivo de anotação do diário e retorna um fluxo XML que representa o conteúdo do documento.<br/> |
+| [**ReadFromStream**](ijournalreader-readfromstream.md) | Leva um fluxo para um arquivo de Anotação de Diário e retorna um fluxo XML que representa o conteúdo do documento.<br/> |
 
 
 
@@ -51,14 +51,14 @@ A interface **IJournalReader** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-A classe **JournalReader** permite carregar um fluxo de documento de diário e receber um fluxo XML que representa o conteúdo. Você pode reconstituir, exibir e manipular a tinta.
+A **classe JournalReader** permite carregar um fluxo de documentos do Diário e receber um fluxo XML que representa o conteúdo. Você pode reconstituir, exibir e manipular a tinta.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir de um manipulador para o evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) de um botão cria uma instância da classe **JournalReader** e a usa para ler um arquivo de diário existente.
+O exemplo a seguir de um manipulador para o evento [**Click**](/dotnet/api/system.windows.forms.control.click?view=netcore-3.1) de um botão cria uma instância da classe **JournalReader** e a usa para ler um arquivo de Diário existente.
 
 > [!Note]  
-> O método **DisplayXml** chamado a partir deste exemplo não é mostrado. A implementação específica desse método é dependente das necessidades do seu aplicativo.
+> O **método DisplayXml** chamado deste exemplo não é mostrado. A implementação específica desse método depende das necessidades do aplicativo.
 
  
 
@@ -157,9 +157,9 @@ void CJntlReaderMFCDlg::OnBnClickedButton1()
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                         |
-| parâmetro<br/>                   | <dl> <dt>Journal. h (também requer Journal \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Journal.h (também requer o diário \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Journal.dll</dt> </dl>                            |
 
 

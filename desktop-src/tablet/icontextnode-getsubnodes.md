@@ -1,7 +1,7 @@
 ---
 description: Obtém os nós filho diretos do objeto IContextNode.
 ms.assetid: 50ce2fa4-031e-42e9-8e47-c0d3c2d2b4df
-title: 'Método IContextNode:: GetSubNodes (IACom. h)'
+title: Método IContextNode::GetSubNodes (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 5c0526ca4a5b4db355c1f895a44ebbf634cb8bc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0154e1f3e541981f7b74095ea0346695dc95f8aada9e11325bba44073958a03f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590727"
 ---
-# <a name="icontextnodegetsubnodes-method"></a>Método IContextNode:: GetSubNodes
+# <a name="icontextnodegetsubnodes-method"></a>Método IContextNode::GetSubNodes
 
-Obtém os nós filho diretos do objeto [**IContextNode**](icontextnode.md) .
+Obtém os nós filho diretos do [**objeto IContextNode.**](icontextnode.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,33 +39,33 @@ HRESULT GetSubNodes(
 
 <dl> <dt>
 
-*ppSubContextNodes* \[ fora\]
+*ppSubContextNodes* \[ out\]
 </dt> <dd>
 
-Uma coleção dos objetos [**IContextNode**](icontextnode.md) que são nós filho diretos desse **IContextNode**.
+Uma coleção de objetos [**IContextNode**](icontextnode.md) que são nós filho diretos deste **IContextNode.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Caution]  
-> Para evitar um vazamento de memória, chame [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *ppSubContextNodes* quando você não precisar mais usar a coleção de subnós.
+> Para evitar uma perda de memória, chame [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *ppSubContextNodes* quando você não precisar mais usar a coleção de subnodes.
 
  
 
-Isso retorna apenas os nós filho diretos, e não todos os nós descendentes.
+Isso retorna apenas os nós filho diretos, nem todos os nós descendentes.
 
 ## <a name="examples"></a>Exemplos
 
-Este exemplo mostra um método, `ExploreContextNode` , que examina um [**IContextNode**](icontextnode.md). O método faz o seguinte:
+Este exemplo mostra um `ExploreContextNode` método, , que examina [**um IContextNode**](icontextnode.md). O método faz o seguinte:
 
 -   Obtém o tipo do nó de contexto.
--   Examina as propriedades específicas do tipo de nó chamando um método auxiliar, se o nó de contexto for uma tinta não classificada, uma dica de análise ou um nó de reconhecedor personalizado.
--   Examina cada subnó chamando a si mesmo, se o nó tiver subnós.
+-   Examina propriedades específicas do tipo de nó chamando um método auxiliar, se o nó de contexto for uma tinta não classificada, uma dica de análise ou um nó de reconhecedor personalizado.
+-   Examina cada subnónodo chamando a si mesmo, se o nó tiver subnónodos.
 -   Examina os dados de traço do nó chamando um método auxiliar, se o nó for um nó folha de tinta.
 
 
@@ -176,9 +176,9 @@ HRESULT CMyClass::ExploreContextNode(
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

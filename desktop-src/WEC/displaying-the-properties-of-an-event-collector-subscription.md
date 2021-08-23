@@ -5,12 +5,12 @@ ms.assetid: 984e21cf-3671-4aca-9e8e-bcad1fa2f02c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4630bfc41ecbc0cc9372ae6bb99ce6d3184e4b6e
-ms.sourcegitcommit: 2e9db3c7d9a3dbea15196b03c883846fad6f32be
+ms.openlocfilehash: 0a39042997fd61b3e8bb96eb7fb8030d0fbe1c91d7aa84b9c1482319355db411
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "103638815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119620686"
 ---
 # <a name="display-event-collector-subscription-properties"></a>Exibir Propriedades da assinatura do coletor de eventos
 
@@ -22,7 +22,7 @@ Você pode exibir informações úteis sobre uma assinatura do coletor de evento
 >
 > a *assinatura* de **wecutil GS**
 
- 
+ 
 
 Para exibir suas propriedades, especifique o nome de uma assinatura. Para obter mais informações e um exemplo de código em C++ de como listar os nomes das assinaturas atuais em um computador local, consulte [listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)ou você pode digitar o seguinte comando no prompt de comando:
 
@@ -32,7 +32,7 @@ O exemplo de código a seguir segue um procedimento para exibir as propriedades 
 
 **Para exibir as propriedades de uma assinatura do coletor de eventos e suas origens de eventos**
 
-1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).
+1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . para obter mais informações sobre direitos de acesso, consulte [**Windows constantes do coletor de eventos**](windows-event-collector-constants.md).
 2.  Obtenha e exiba as propriedades das fontes de assinatura e de evento chamando a função [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) e a função [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty) . Para obter mais informações sobre as propriedades da assinatura e da origem do evento que podem ser exibidas, consulte a enumeração da [**ID de propriedade da assinatura do EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
 3.  Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
 
@@ -777,12 +777,12 @@ std::wstring ConvertEcSubscriptionType(DWORD code)
 [Listando assinaturas do coletor de eventos](listing-event-collector-subscriptions.md)
 </dt> <dt>
 
-[Referência do coletor de eventos do Windows](windows-event-collector-reference.md)
+[Windows Referência do coletor de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

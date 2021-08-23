@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETHOTCURSOR (commctrl. h)
-description: Recupera o valor HCURSOR usado quando o ponteiro está sobre um item enquanto o controle ativo está habilitado. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetHotCursor do ListView.
+title: LVM_GETHOTCURSOR mensagem (Commctrl.h)
+description: Recupera o valor HCURSOR usado quando o ponteiro está sobre um item enquanto o acompanhamento a quente está habilitado. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView GetHotCursor.
 ms.assetid: 064d04b2-d74e-4a80-aec6-97a3c53fc4fb
 keywords:
-- Controles de LVM_GETHOTCURSOR de mensagens do Windows
+- LVM_GETHOTCURSOR controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddd8fa4c038bf2fb1c10816319504dd9de32c0e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e5703d252d239124b78656c4a5991efdecb2107552fb6e2ab0f87701af4e18d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540796"
 ---
-# <a name="lvm_gethotcursor-message"></a>\_Mensagem GETHOTCURSOR LVM
+# <a name="lvm_gethotcursor-message"></a>Mensagem \_ GETHOTCURSOR LVM
 
-Recupera o valor HCURSOR usado quando o ponteiro está sobre um item enquanto o controle ativo está habilitado. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetHotCursor do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gethotcursor) .
+Recupera o valor HCURSOR usado quando o ponteiro está sobre um item enquanto o acompanhamento a quente está habilitado. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ ListView GetHotCursor.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gethotcursor)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Recupera o valor HCURSOR usado quando o ponteiro está sobre um item enquanto o 
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor HCURSOR que é o identificador para o cursor que o controle List-View usa quando o controle de acesso está habilitado.
+Retorna um valor HCURSOR que é o alçador para o cursor que o controle de exibição de lista usa quando o acompanhamento a quente está habilitado.
 
 ## <a name="remarks"></a>Comentários
 
-Um controle de exibição de lista usa rastreamento dinâmico e seleção de foco quando o estilo [**LVS \_ ex \_ TRACKSELECT**](extended-list-view-styles.md) é definido.
+Um controle de exibição de lista usa o acompanhamento a quente e a seleção de foco quando o [**estilo LVS \_ EX \_ TRACKSELECT**](extended-list-view-styles.md) é definido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Um controle de exibição de lista usa rastreamento dinâmico e seleção de foc
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

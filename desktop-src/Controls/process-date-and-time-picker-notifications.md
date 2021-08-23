@@ -4,12 +4,12 @@ description: Esta seção demonstra como processar notificações do se picker d
 ms.assetid: DBF624F0-89E0-435B-BE96-60B7A4CEDA61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffa1214ebd671b4ae222990bde4b44586e6d7b11
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 81846d22f3c946d1bfdf661823429fd092b78647cf0ebcb0d683d2600ddcaf17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540469"
 ---
 # <a name="how-to-process-date-and-time-picker-notifications"></a>Como processar notificações de selador de data e hora
 
@@ -19,12 +19,12 @@ Esta seção demonstra como processar notificações do se picker de data e hora
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação Interface do Usuário Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
@@ -33,7 +33,7 @@ Um controle DTP (selador de data e hora) envia mensagens de notificação para a
 
 Se você planeja usar campos de retorno de chamada com os controles DTP em seu aplicativo, deve estar preparado para lidar com códigos de notificação [DTN \_ FORMATQUERY,](dtn-formatquery.md) [DTN \_ FORMAT](dtn-format.md)e [DTN \_ WMKEYDOWN.](dtn-wmkeydown.md) Para obter informações adicionais sobre campos de retorno de chamada, consulte [Campos de retorno de chamada](date-and-time-picker-controls.md).
 
-O exemplo de código C++ a seguir identifica a mensagem de notificação enviada por um controle DTP e chama a função apropriada definida pelo aplicativo. Consulte os tópicos a seguir para ver exemplos de código que ilustram como processar as notificações que aparecem neste exemplo.
+O exemplo de código C++ a seguir identifica a mensagem de notificação enviada por um controle DTP e chama a função definida pelo aplicativo apropriada. Consulte os tópicos a seguir para ver exemplos de código que ilustram como processar as notificações que aparecem neste exemplo.
 
 |   Tópicos                                                                                                     |
 |--------------------------------------------------------------------------------------------------------|

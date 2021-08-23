@@ -4,12 +4,12 @@ ms.assetid: 88824566-93c7-4941-a4fc-3a7ae9a332a4
 title: Modos abertos do pipe nomeado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f51d41ea98a47a269634b06ccdad869bd649fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d7fe3f843a157e69d8b938630e5eb9efa95035960cb6578325be6bddd5d93c5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451256"
 ---
 # <a name="named-pipe-open-modes"></a>Modos abertos do pipe nomeado
 

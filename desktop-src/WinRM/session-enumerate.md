@@ -1,12 +1,12 @@
 ---
-title: Método Session. Enumeration (WSManDisp. h)
-description: Enumera uma tabela, uma coleção de dados ou um recurso de log.
+title: Método Session.Enumerate (WSManDisp.h)
+description: Enumera uma tabela, coleta de dados ou recurso de log.
 ms.assetid: ed8ad3ad-d033-45cb-b681-995c5f73b12e
 ms.tgt_platform: multiple
 keywords:
-- Gerenciamento Remoto do Windows do método Enumerate
-- Método Enumerate Gerenciamento Remoto do Windows, objeto Session
-- Gerenciamento Remoto do Windows de objeto de sessão, método Enumerate
+- Enumerar o método Windows Gerenciamento Remoto
+- Enumerar o método Windows Gerenciamento Remoto, Objeto de sessão
+- Objeto de sessão Windows Gerenciamento Remoto , Enumerar método
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca6b66b910251c641832cde3ddd93d6479f66be7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6dc40a45cc28179acd8e5dc9fff17df8b8accddd8dffda3ea299571e11d46564
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642626"
 ---
-# <a name="sessionenumerate-method"></a>Método Session. Enumeration
+# <a name="sessionenumerate-method"></a>Método Session.Enumerate
 
-Enumera uma tabela, uma coleção de dados ou um recurso de log. Para criar uma consulta, inclua um parâmetro de *filtro* e um parâmetro de *dialeto* em uma enumeração. Você também pode usar um objeto [**ResourceLocator**](resourcelocator.md) para criar consultas. Para obter mais informações, consulte [enumerando ou listando todas as instâncias de um recurso](enumerating-or-listing-all-instances-of-a-resource.md).
+Enumera uma tabela, coleta de dados ou recurso de log. Para criar uma consulta, inclua um parâmetro *de filtro* e um parâmetro *de dialeto* em uma enumeração. Você também pode usar um [**objeto ResourceLocator**](resourcelocator.md) para criar consultas. Para obter mais informações, [consulte Enumerando ou listando todas as instâncias de um recurso](enumerating-or-listing-all-instances-of-a-resource.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,7 +46,7 @@ Session.Enumerate( _
 
 <dl> <dt>
 
-*ResourceURI* \[ no\]
+*resourceUri* \[ Em\]
 </dt> <dd>
 
 O identificador do recurso a ser recuperado.
@@ -62,53 +62,53 @@ Esse parâmetro pode conter um dos seguintes:
 
     
 
--   Um objeto [**ResourceLocator**](resourcelocator.md) .
--   Uma referência de ponto de extremidade do [*WS-Addressing*](windows-remote-management-glossary.md) , conforme descrito no padrão do protocolo WS-Management. Para obter mais informações sobre a especificação pública para [protocolo WS-Management](ws-management-protocol.md), consulte a [página de índice de especificações de gerenciamento](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
+-   Um [**objeto ResourceLocator.**](resourcelocator.md)
+-   Uma referência de ponto de extremidade de endereçamento [*WS,*](windows-remote-management-glossary.md) conforme descrito no padrão WS-Management protocolo. Para obter mais informações sobre a especificação pública [do protocolo WS-Management](ws-management-protocol.md), consulte Página índice [de especificações de gerenciamento](/previous-versions/dotnet/articles/ms951267(v=msdn.10)).
 
 </dd> <dt>
 
-*Filtrar* \[ em, opcional\]
+*filtro* \[ in, opcional\]
 </dt> <dd>
 
-Um filtro que define quais itens no recurso são retornados pela enumeração. Quando o recurso é enumerado, somente os itens que correspondem aos critérios de filtro são retornados. A inclusão de um parâmetro de *filtro* e um parâmetro de *dialeto* em uma enumeração converte a enumeração em uma consulta. Para obter um exemplo, consulte [consultando instâncias específicas de um recurso](querying-for-specific-instances-of-a-resource.md).
+Um filtro que define quais itens no recurso são retornados pela enumeração . Quando o recurso é enumerado, somente os itens que corresponderem aos critérios de filtro são retornados. Incluir um *parâmetro* de filtro e *um parâmetro de* dialeto em uma enumeração converte a enumeração em uma consulta. Para ver um exemplo, [consulte Consultando instâncias específicas de um recurso](querying-for-specific-instances-of-a-resource.md).
 
-Se você tiver um objeto [**ResourceLocator**](resourcelocator.md) para o parâmetro *ResourceURI* , esse parâmetro não deverá ser usado.
+Se você tiver um [**objeto ResourceLocator**](resourcelocator.md) para o *parâmetro resourceURI,* esse parâmetro não deverá ser usado.
 
 </dd> <dt>
 
-*dialeto* \[ em, opcional\]
+*dialeto* \[ in, opcional\]
 </dt> <dd>
 
-O idioma usado pelo filtro. O [WQL](/windows/desktop/WmiSdk/wql-sql-for-wmi), um subconjunto de SQL usado pelo WMI, é o único idioma com suporte.
+O idioma usado pelo filtro. [WQL](/windows/desktop/WmiSdk/wql-sql-for-wmi), um subconjunto de SQL usado pelo WMI, é o único idioma com suporte.
 
-Se você tiver um objeto [**ResourceLocator**](resourcelocator.md) para o parâmetro *ResourceURI* , esse parâmetro não deverá ser usado.
+Se você tiver um [**objeto ResourceLocator**](resourcelocator.md) para o *parâmetro resourceURI,* esse parâmetro não deverá ser usado.
 
 </dd> <dt>
 
-*sinalizadores* \[ de em, opcional\]
+*sinalizadores* \[ in, opcional\]
 </dt> <dd>
 
-Um parâmetro que deve conter um sinalizador na enumeração **\_ \_ WSManEnumFlags** . Para obter mais informações, consulte [constantes de enumeração](enumeration-constants.md).
+Um parâmetro que deve conter um sinalizador na **\_ \_ enumeração WSManEnumFlags.** Para obter mais informações, consulte [Constantes de enumeração](enumeration-constants.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um objeto [**enumerador**](enumerator.md) que contém os resultados da enumeração.
+Um [**objeto Enumerador**](enumerator.md) que contém os resultados da enumeração .
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre como limitar chamadas de rede durante uma enumeração, consulte a propriedade [**BatchItems**](session-batchitems.md) .
+Para obter mais informações sobre como limitar chamadas de rede durante uma enumeração, consulte a [**propriedade BatchItems.**](session-batchitems.md)
 
-Lembre-se de que, se os sinalizadores incluírem as [**constantes de enumeração**](enumeration-constants.md) **WSManFlagHierarchyDeepBasePropsOnly** ou **WSManFlagHierarchyShallow** , gerenciamento remoto do Windows serviço retornará o erro de código de erro o **modo de polimorfismo do \_ WSMan \_ \_ \_ sem suporte**.
+Esteja ciente de que se os sinalizadores incluirem as [**Constantes**](enumeration-constants.md) de Enumeração **WSManFlagHierarchyDeepBasePropsOnly** ou **WSManFlagHierarchyShallow,** o serviço de Gerenciamento Remoto do Windows retornará o código de erro **ERROR \_ WSMAN \_ POLYMORPHISM \_ MODE \_ UNSUPPORTED**.
 
-Se um filtro for especificado, ele deverá ser um documento válido em relação ao esquema do recurso. O parâmetro dialeto é opcional. No entanto, se a cadeia de caracteres de filtro começar com <, mas não for um fragmento XML, inclua o parâmetro *dialeto* ou defina o sinalizador **WSManFlagNonXmlText** no parâmetro *flags* . Para obter mais informações, consulte [**constantes de enumeração**](enumeration-constants.md).
+Se um filtro for especificado, ele deverá ser um documento válido em relação ao esquema do recurso. O parâmetro de dialeto é opcional. No entanto, se a cadeia de caracteres de filtro começar com <, mas não for um fragmento XML, inclua o parâmetro *de* dialeto ou defina o sinalizador **WSManFlagNonXmlText** no parâmetro *flags.* Para obter mais informações, consulte [**Constantes de enumeração**](enumeration-constants.md).
 
-O método C++ correspondente é [**IWSManSession:: Enumerate**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate).
+O método C++ correspondente [**é IWSManSession::Enumerate**](/windows/desktop/api/WSManDisp/nf-wsmandisp-iwsmansession-enumerate).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir enumera as instâncias do disco [**\_ lógico do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) em um computador remoto especificado pelo servername.domain.com (nome de domínio totalmente qualificado). Lembre-se de que a liberação do objeto de enumeração limpa as solicitações de enumeração pendentes. A sub-rotina DisplayOutput usa o arquivo de transformação XML da ferramenta de linha de comando do WinRM (WsmTxt. Xsl) para gerar os dados em um formato de tabela.
+O exemplo de código VBScript a seguir enumera as instâncias [**\_ logicalDisk do Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) em um computador remoto especificado pelo nome de domínio totalmente qualificado (servername.domain.com). Esteja ciente de que liberar o objeto de enumeração limpa as solicitações de enumeração pendentes. A sub-rotina DisplayOutput usa o arquivo de transformação XML da ferramenta de linha de comando Winrm (WsmTxt.xsl) para exibir os dados em um formato tabular.
 
 
 ```VB
@@ -151,9 +151,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -162,7 +162,7 @@ End Sub
 
 <dl> <dt>
 
-[**Session**](session.md)
+[**Sessão**](session.md)
 </dt> <dt>
 
 [Consultando instâncias específicas de um recurso](querying-for-specific-instances-of-a-resource.md)
@@ -171,7 +171,7 @@ End Sub
 [**BatchItems**](session-batchitems.md)
 </dt> <dt>
 
-[**ResourceLocator**](resourcelocator.md)
+[**Resourcelocator**](resourcelocator.md)
 </dt> </dl>
 
  

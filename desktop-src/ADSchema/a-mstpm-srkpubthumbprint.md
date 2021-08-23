@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf2ab2daec38d509e670771eef61824278bee4c4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4365b47018112886a683a2160c7d305a061cd6bd2564e9bc9a7871929a0501ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508426"
 ---
 # <a name="ms-tpm-srk-pub-thumbprint-attribute"></a>atributo ms-TPM-SRK-pub-Thumbprint
 
@@ -53,8 +53,8 @@ Esse atributo contém a impressão digital do SrkPub correspondente a um TPM esp
 | ID do link                | \-                                                                        |
 | MAPI-Id                | \-                                                                        |
 | System-Only            | Falso                                                                     |
-| É de valor único       | True                                                                      |
-| É indexado             | True                                                                      |
+| É de valor único       | Verdadeiro                                                                      |
+| É indexado             | Verdadeiro                                                                      |
 | No catálogo global      | Falso                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                              |
 | Range-Lower            | \-                                                                        |
