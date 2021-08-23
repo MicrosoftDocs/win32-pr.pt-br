@@ -1,25 +1,25 @@
 ---
-description: O terminal de streaming de mídia (MST) é um terminal dinâmico com base no uso de filtros do DirectShow. Um MSP escrito usando as classes base TAPI 3 MSP incorporará um MST, mas os autores do MSP poderão optar por implementá-lo sem usar as classes base.
+description: O MST (Terminal de Streaming de Mídia) é um terminal dinâmico baseado no uso de filtros DirectShow mídia. Um MSP escrito usando as Classes Base do TAPI 3 MSP incorporará um MST, mas os autores do MSP podem optar por implementá-lo sem usar as classes base.
 ms.assetid: 21015c33-2ad1-4472-b346-167953d06a21
-title: Terminal de streaming de mídia (MST)
+title: MST (Terminal de Streaming de Mídia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2afb9bb4b97d0e741aec96454b187beefe2d21eb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: d8eeb9ad231c114ca18b4dea0926b861360ab5a359cd9ee8c48fd1c388a941a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103930148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002904"
 ---
-# <a name="media-streaming-terminal-mst"></a>Terminal de streaming de mídia (MST)
+# <a name="media-streaming-terminal-mst"></a>MST (Terminal de Streaming de Mídia)
 
-O terminal de streaming de mídia (MST) é um terminal dinâmico com base no uso de filtros do DirectShow. Um MSP escrito usando as [classes base TAPI 3 MSP](tapi-3-msp-base-classes.md) incorporará um MST, mas os autores do MSP poderão optar por implementá-lo sem usar as classes base.
+O MST (Terminal de Streaming de Mídia) é um terminal dinâmico baseado no uso de filtros DirectShow mídia. Um MSP escrito usando as Classes Base do [TAPI 3 MSP](tapi-3-msp-base-classes.md) incorporará um MST, mas os autores do MSP podem optar por implementá-lo sem usar as classes base.
 
-Para invocar a criação de MST, um aplicativo faz uma chamada para [**ITTerminalSupport:: createterminal**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-createterminal) usando *PTERMINALCLASS* definido como CLSID \_ MediaStreamTerminal.
+Para invocar a criação do MST, um aplicativo faz uma chamada para [**ITTerminalSupport::CreateTerminal**](/windows/win32/api/tapi3if/nf-tapi3if-itterminalsupport-createterminal) usando *pTerminalClass* definido como CLSID \_ MediaStreamTerminal.
 
-As interfaces [**ITAMMediaFormat**](/windows/win32/api/tapi3/nn-tapi3-itammediaformat) e [**ITAllocatorProperties**](/windows/win32/api/tapi3/nn-tapi3-itallocatorproperties) são então expostas no terminal, permitindo que um aplicativo ajuste o desempenho de streaming. Essas interfaces são declaradas em Tapi3. h.
+As interfaces [**ITAMMediaFormat**](/windows/win32/api/tapi3/nn-tapi3-itammediaformat) e [**ITAllocatorProperties**](/windows/win32/api/tapi3/nn-tapi3-itallocatorproperties) são expostas no terminal, permitindo que um aplicativo ajuste o desempenho de streaming. Essas interfaces são declaradas em Tapi3.h.
 
-A implementação e o uso de um MST exigem familiaridade com filtros do DirectShow e o gerenciamento de gráficos de filtro. Consulte o material do DirectShow no nó gráficos e serviços de multimídia do SDK (Software Development Kit) da plataforma. A referência de streaming de multimídia será particularmente útil para autores MSP.
+A implementação e o uso de um MST exigem familiaridade com DirectShow filtros e gerenciamento de grafo de filtro. Consulte o material DirectShow no nó Serviços Gráficos e Multimídia do SDK (Kit de Desenvolvimento de Software de Plataforma). A Referência de Streaming multimídia será particularmente útil para autores do MSP.
 
  
 

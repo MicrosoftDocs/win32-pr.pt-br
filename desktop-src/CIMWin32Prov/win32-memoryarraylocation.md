@@ -1,8 +1,8 @@
 ---
-description: A \_ classe WMI de associação do Win32 MemoryArrayLocation relaciona uma matriz de memória lógica e a matriz de memória física na qual ela existe.
+description: A classe WMI de associação MemoryArrayLocation do Win32 relaciona uma matriz de memória lógica e a matriz de memória física na \_ qual ela existe.
 ms.assetid: 455daeee-ad67-4599-84d6-fa3f4ac593aa
 ms.tgt_platform: multiple
-title: Classe Win32_MemoryArrayLocation
+title: Win32_MemoryArrayLocation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 62aae3bf672b12bdb947ff8ce6b76f919eaa11b7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a0fd01751794dc9177f3840804f0412db70531f6706a452793fe6cbcf3aa2389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079790"
 ---
-# <a name="win32_memoryarraylocation-class"></a>\_Classe Win32 MemoryArrayLocation
+# <a name="win32_memoryarraylocation-class"></a>Classe Win32 \_ MemoryArrayLocation
 
-A [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) de associação do **Win32 \_ MemoryArrayLocation** relaciona uma matriz de memória lógica e a matriz de memória física na qual ela existe.
+A classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de associação **\_ MemoryArrayLocation do Win32** relaciona uma matriz de memória lógica e a matriz de memória física na qual ela existe.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -42,17 +42,17 @@ class Win32_MemoryArrayLocation : CIM_Realizes
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ MemoryArrayLocation** tem estes tipos de membros:
+A **classe \_ MemoryArrayLocation do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ MemoryArrayLocation** tem essas propriedades.
+A **classe \_ MemoryArrayLocation do Win32** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **Win32 \_ PhysicalMemoryArray**
@@ -61,14 +61,14 @@ Tipo de dados: **Win32 \_ PhysicalMemoryArray**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ PhysicalMemoryArray")
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ PhysicalMemoryArray")
 </dt> </dl>
 
-Um [**\_ PhysicalMemoryArray Win32**](win32-physicalmemoryarray.md) que descreve a matriz de memória física que implementa a matriz de memória lógica.
+Um [**Win32 \_ PhysicalMemoryArray**](win32-physicalmemoryarray.md) que descreve a matriz de memória física que implementa a matriz de memória lógica.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **Win32 \_ MemoryArray**
@@ -77,16 +77,16 @@ Tipo de dados: **Win32 \_ MemoryArray**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryArray")
+Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ MemoryArray")
 </dt> </dl>
 
-Um [**\_ MemoryArray Win32**](win32-memoryarray.md) que descreve a matriz de memória lógica implementada pela matriz de memória física.
+Uma [**\_ MemoryArray do Win32**](win32-memoryarray.md) que descreve a matriz de memória lógica implementada pela matriz de memória física.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ MemoryArrayLocation** é derivada do [**CIM \_**](cim-realizes.md).
+A **classe \_ MemoryArrayLocation win32** é derivada de [**CIM \_ Realizes**](cim-realizes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ A classe **Win32 \_ MemoryArrayLocation** é derivada do [**CIM \_**](cim-realiz
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ A classe **Win32 \_ MemoryArrayLocation** é derivada do [**CIM \_**](cim-realiz
 
 <dl> <dt>
 
-[**O CIM \_ percebe**](cim-realizes.md)
+[**Cim \_ Realiza**](cim-realizes.md)
 </dt> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)

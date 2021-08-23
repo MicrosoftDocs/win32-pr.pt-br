@@ -1,100 +1,100 @@
 ---
-title: Modelo de sombreador HLSL 6,0
-description: Descreve os intrínsecores de operação de onda adicionados ao modelo de sombreador HLSL 6,0.
+title: Modelo 6.0 do Sombreador HLSL
+description: Descreve os intrínsecos de operação de onda adicionados ao Modelo de Sombreador HLSL 6.0.
 ms.assetid: BF968CD3-AC67-48DB-B93F-EF54B680106F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e55661e3f91125597c8c7842a1be16129cefe0
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 10f0f06050c4c387b8e50c1c0cfb39dc5689d45d0e31bd7df5a81f45c63815a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986536"
 ---
-# <a name="hlsl-shader-model-60"></a>Modelo de sombreador HLSL 6,0
+# <a name="hlsl-shader-model-60"></a>Modelo 6.0 do Sombreador HLSL
 
-Descreve os intrínsecores de operação de onda adicionados ao modelo de sombreador HLSL 6,0.
+Descreve os intrínsecos de operação de onda adicionados ao Modelo de Sombreador HLSL 6.0.
 
-- [Modelo do sombreador 6,0](#shader-model-60)
+- [Modelo de sombreador 6.0](#shader-model-60)
 - [Terminologia](#terminology)
-- [Intrínsecos da linguagem de sombreamento](#shading-language-intrinsics)
-    - [Consulta de onda](#wave-query)
-    - [Voto de onda](#wave-vote)
-    - [Difusão de ondas](#wave-broadcast)
+- [Intrínsecos de linguagem de sombreamento](#shading-language-intrinsics)
+    - [Consulta wave](#wave-query)
+    - [Wave Vote](#wave-vote)
+    - [Difusão de onda](#wave-broadcast)
     - [Redução de onda](#wave-reduction)
     - [Verificação de onda e prefixo](#wave-scan-and-prefix)
-    - [Operações de ordem aleatória quádrupla](#quad-wide-shuffle-operations)
+    - [Operações aleatórias de todo o quádruplo](#quad-wide-shuffle-operations)
 - [Funcionalidade de hardware](#hardware-capability)
 - [Tópicos relacionados](#related-topics)
 
-## <a name="shader-model-60"></a>Modelo do sombreador 6,0
+## <a name="shader-model-60"></a>Modelo de sombreador 6.0
 
-Para modelos de sombreador anteriores, a programação HLSL expõe apenas um único thread de execução. Novas operações de nível Wave são fornecidas, começando com o modelo 6,0, para aproveitar explicitamente o paralelismo de GPUs atuais – muitos threads podem ser executados em atrelada no mesmo núcleo simultaneamente. Por exemplo, os intrínsecos do modelo 6,0 permitem a eliminação de construções de barreira quando o escopo da sincronização está dentro da largura do processador SIMD ou de algum outro conjunto de threads que são conhecidos como atômicos em relação uns aos outros.
+Para modelos de sombreador anteriores, a programação HLSL expõe apenas um único thread de execução. Novas operações de nível de onda são fornecidas, começando com o modelo 6.0, para aproveitar explicitamente o paralelismo das GPUs atuais – muitos threads podem ser executados em lockstep no mesmo núcleo simultaneamente. Por exemplo, os intrínsecos do modelo 6.0 permitem a eliminação de constructos de barreira quando o escopo da sincronização está dentro da largura do processador SIMD ou algum outro conjunto de threads que são conhecidos como atômicos em relação uns aos outros.
 
-Os casos de uso em potencial incluem: compactação de fluxo, reduções, bloquear Transpose, classificação de bitônico ou transformações de Fourier rápidas (FFT), compartimentalização, eliminação de duplicação de fluxo e cenários semelhantes.
+Os possíveis casos de uso incluem: compactação de fluxo, reduções, transposição de blocos, classificação bitônica ou FFT (Fast Fourier Transforms), binning, des duplicação de fluxo e cenários semelhantes.
 
-A maioria dos intrínsecores aparece em sombreadores de pixel e sombreadores de computação, embora haja algumas exceções (indicadas para cada função). As funções foram adicionadas aos requisitos para o nível de recurso do DirectX 12,0, sob API nível 12.
+A maioria dos intrínsecos aparece em sombreadores de pixel e sombreadores de computação, embora haja algumas exceções (notadas para cada função). As funções foram adicionadas aos requisitos do DirectX Feature Level 12.0, no nível da API 12.
 
-O *<type>* parâmetro e o valor de retorno para essas funções implicam no tipo da expressão, os tipos com suporte são os da lista a seguir que *também* estão presentes no modelo de sombreador de destino para seu aplicativo:
+O parâmetro e o valor de retorno para essas funções implicam o tipo da expressão, os tipos com suporte são aqueles da lista a seguir que também estão presentes no modelo de sombreador de destino para *<type>* seu aplicativo: 
 
-- metade, half2, half3, half4
-- float, float2, float3, FLOAT4
-- Double, double2, double3, double4
-- int, Int2, Int3, INT4
+- half, half2, half3, half4
+- float, float2, float3, float4
+- double, double2, double3, double4
+- int, int2, int3, int4
 - uint, uint2, uint3, uint4
-- Short, short2, short3, short4
+- short, short2, short3, short4
 - ushort, ushort2, ushort3, ushort4
-- UInt64 \_ t, UInt64 \_ T2, UInt64 \_ T3, UInt64 \_ T4
+- uint64 \_ t, uint64 \_ t2, uint64 \_ t3, uint64 \_ t4
 
-Algumas operações (tais como os operadores bit a bit) dão suporte apenas a tipos inteiros.
+Algumas operações (como os operadores bit a bit) só suportam os tipos inteiros.
 
 ## <a name="terminology"></a>Terminologia
 
 | **Termo** | **Definição** |
 |-|-|
-| Estreita | Um único thread de execução. Os modelos de sombreador antes da versão 6,0 expõem apenas um deles no nível de linguagem, deixando a expansão para o processamento paralelo de SIMD inteiramente na implementação. |
-| Wave | Um conjunto de pistas (threads) executado simultaneamente no processador. Não são necessárias barreiras explícitas para garantir que elas sejam executadas em paralelo. Conceitos semelhantes incluem "Warp" e "Wavefront". |
-| Raia inativa | Uma pista que não está sendo executada, por exemplo, devido ao fluxo de controle ou trabalho insuficiente para preencher o tamanho mínimo da onda. |
-| Pista ativa | Uma pista para a qual a execução está sendo executada. Em sombreadores de pixel, ele pode incluir pistas de pixel auxiliares. |
-| Quadra | Um conjunto de 4 pistas adjacentes correspondentes a pixels organizados em um quadrado 2x2. Eles são usados para estimar gradientes por diferenciação em x ou y. Uma onda pode ser composta por vários quatro processadores. Todos os pixels em um quad ativo são executados (e podem ser "pistas ativas"), mas aqueles que não produzem resultados visíveis são chamados de "pistas auxiliares". |
-| Pista auxiliar | Uma pista que é executada exclusivamente para fins de gradientes no sombreador de pixel quads. A saída de tal raia será descartada e, portanto, não renderizará para a superfície de destino. |
+| Pista | Um único thread de execução. Os modelos de sombreador anteriores à versão 6.0 expõem apenas um deles no nível da linguagem, deixando a expansão para o processamento de SIMD paralelo totalmente até a implementação. |
+| Wave | Um conjunto de pistas (threads) executado simultaneamente no processador. Nenhuma barreira explícita é necessária para garantir que elas sejam executadas em paralelo. Conceitos semelhantes incluem "distorção" e "wavefront". |
+| Inativo Lane | Uma faixa que não está sendo executada, por exemplo, devido ao fluxo de controle ou trabalho insuficiente para preencher o tamanho mínimo da onda. |
+| Faixa ativa | Uma faixa para a qual a execução está sendo executada. Em sombreadores de pixel, ele pode incluir qualquer faixa de pixel auxiliar. |
+| Quad | Um conjunto de 4 pistas adjacentes correspondentes a pixels organizados em um quadrado 2x2. Eles são usados para estimar gradientes diferenciando x ou y. Uma onda pode ser composta por vários quads. Todos os pixels em um quad ativo são executados (e podem ser "Active Lanes"), mas aqueles que não produzem resultados visíveis são termo "Helper Lanes". |
+| Helper Lane | Uma faixa que é executada exclusivamente para fins de gradientes em quads de sombreador de pixel. A saída dessa faixa será descartada e, portanto, não renderizará para a superfície de destino. |
 
-## <a name="shading-language-intrinsics"></a>Intrínsecos da linguagem de sombreamento
+## <a name="shading-language-intrinsics"></a>Intrínsecos de linguagem de sombreamento
 
 Todas as operações desse modelo de sombreador foram adicionadas em uma variedade de funções intrínsecas.
 
-### <a name="wave-query"></a>Consulta de onda
+### <a name="wave-query"></a>Consulta wave
 
 Os intrínsecos para consultar uma única onda.
 
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
 |-|-|-|-|
 | [**WaveGetLaneCount**](wavegetlanecount.md) | Retorna o número de pistas na onda atual. | \* | \* |
-| [**WaveGetLaneIndex**](wavegetlaneindex.md) | Retorna o índice da pista atual dentro da onda atual. | \* | \* |
-| [**WaveIsFirstLane**](waveisfirstlane.md) | Retorna true somente para a pista ativa na onda atual com o menor índice | \* | \* |
+| [**WaveGetLaneIndex**](wavegetlaneindex.md) | Retorna o índice da faixa atual dentro da onda atual. | \* | \* |
+| [**WaveIsFirstLane**](waveisfirstlane.md) | Retorna true somente para a faixa ativa na onda atual com o menor índice | \* | \* |
 
-### <a name="wave-vote"></a>Voto de onda
+### <a name="wave-vote"></a>Wave Vote
 
 Esse conjunto de intrínsecos compara valores entre threads atualmente ativos da onda atual.
 
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
 |-|-|-|-|
-| [**WaveActiveAnyTrue**](waveanytrue.md) | Retornará true se a expressão for verdadeira em qualquer rota ativa na onda atual. | \* | \* |
-| [**WaveActiveAllTrue**](wavealltrue.md) | Retornará true se a expressão for verdadeira em todas as pistas ativas na onda atual. | \* | \* |
-| [**WaveActiveBallot**](waveballot.md) | Retorna um bitmask de inteiro sem sinal de 64 bits da avaliação da expressão booliana para todas as pistas ativas na onda especificada. | \* | \* |
+| [**WaveActiveAnyTrue**](waveanytrue.md) | Retornará true se a expressão for verdadeira em qualquer faixa ativa na onda atual. | \* | \* |
+| [**WaveActiveAllTrue**](wavealltrue.md) | Retornará true se a expressão for verdadeira em todas as faixas ativas na onda atual. | \* | \* |
+| [**WaveActiveBallot**](waveballot.md) | Retorna uma máscara de bitmas de inteiro sem sinal de 64 bits da avaliação da expressão booliana para todas as faixas ativas na onda especificada. | \* | \* |
 
-### <a name="wave-broadcast"></a>Difusão de ondas
+### <a name="wave-broadcast"></a>Difusão de onda
 
-Esses intrínsecos permitem que todas as pistas ativas na onda atual recebam o valor da pista especificada, transmitindo-a efetivamente. O valor de retorno de uma pista inválida é indefinido.
+Esses intrínsecos permitem que todas as faixas ativas na onda atual recebam o valor da faixa especificada, transmitindo-o efetivamente. O valor de retorno de uma faixa inválida é indefinido.
 
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
 |-|-|-|-|
-| [**WaveReadLaneAt**](wavereadlaneat.md) | Retorna o valor da expressão para o índice de raia fornecido dentro da onda especificada. | \* | \* |
-| [**WaveReadLaneFirst**](wavereadfirstlane.md) | Retorna o valor da expressão para a pista ativa da onda atual com o menor índice. | \* | \* |
+| [**WaveReadLaneAt**](wavereadlaneat.md) | Retorna o valor da expressão para o índice de lane especificado dentro da onda especificada. | \* | \* |
+| [**WaveReadLaneFirst**](wavereadfirstlane.md) | Retorna o valor da expressão para a faixa ativa da onda atual com o menor índice. | \* | \* |
 
 ### <a name="wave-reduction"></a>Redução de onda
 
-Esses intrínsecos computam a operação especificada em todas as pistas ativas na onda e transmitem o resultado final para todas as pistas ativas. Portanto, a saída final é garantida uniforme em toda a onda.
+Esses intrínsecos computam a operação especificada em todas as faixas ativas na onda e transmitem o resultado final para todas as faixas ativas. Portanto, a saída final é garantida uniforme em toda a onda.
 
 | **Intrinsic** | **Descrição** | **Sombreador de pixel** | **Sombreador de computação** |
 |-|-|-|-|
@@ -130,7 +130,7 @@ Esses intrínsecos executam operações de permuta nos valores em uma onda conhe
 
 v 
 
-S 
+Y 
 
 
 Essas rotinas funcionam em sombreadores de computação ou sombreadores de pixel. Em sombreadores de computação eles operam em quatro processadores definidos como grupos de 4 divididos uniformemente em uma onda de SIMD. Em sombreadores de pixel eles devem ser usados em ondas capturadas por WaveQuadLanes, caso contrário os resultados são indefinidos.

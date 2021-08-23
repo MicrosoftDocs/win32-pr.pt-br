@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: constantes do mecanismo de armazenamento extensível'
-title: Constantes do mecanismo de armazenamento extensível
+description: 'Saiba mais sobre: Extensible Armazenamento Engine Constants'
+title: Constantes extensíveis Armazenamento mecanismo
 TOCTitle: Extensible Storage Engine Constants
 ms:assetid: 9a361b83-491d-442d-971d-6696f88ad42e
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269351(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ab478b7972206f462cd0bd0031f74865d850dbee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 563efe09c011830ef17001c13a6f3d4564b26567940245aee3fcb272f562aa69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980805"
 ---
-# <a name="extensible-storage-engine-constants"></a>Constantes do mecanismo de armazenamento extensível
+# <a name="extensible-storage-engine-constants"></a>Constantes extensíveis Armazenamento mecanismo
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-constants"></a>Constantes do mecanismo de armazenamento extensível
+## <a name="extensible-storage-engine-constants"></a>Constantes extensíveis Armazenamento mecanismo
 
-A seção de constantes do mecanismo de armazenamento extensível contém as seguintes seções:
+A seção Extensible Armazenamento Engine Constants contém as seguintes seções:
 
   - [JET_CBTYP](./jet-cbtyp.md)
 
@@ -43,12 +43,12 @@ A seção de constantes do mecanismo de armazenamento extensível contém as seg
 
   - [Constantes de tratamento de erro](./error-handling-constants.md)
 
-  - [Constantes de log de eventos](./event-logging-constants.md)
+  - [Constantes de registro em log de eventos](./event-logging-constants.md)
 
-  - [Parâmetros do sistema do mecanismo de armazenamento extensível](./extensible-storage-engine-system-parameters.md)
+  - [Parâmetros do sistema Armazenamento mecanismo extensível](./extensible-storage-engine-system-parameters.md)
 
-  - [Constantes de identificador inválidas](./invalid-handle-constants.md)
+  - [Constantes de alça inválidas](./invalid-handle-constants.md)
 
-  - [Constantes de configurações máximas](./maximum-settings-constants.md)
+  - [Constantes Configurações máximo](./maximum-settings-constants.md)
 
   - [Constantes obsoletas](./obsolete-constants.md)

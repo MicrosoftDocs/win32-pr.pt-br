@@ -1,19 +1,19 @@
 ---
 title: Estruturas (estrutura da faixa de faixas)
-description: Os tópicos nesta seção fornecem as especificações de referência para as estruturas da estrutura de faixa de faixas do Windows.
+description: os tópicos nesta seção fornecem as especificações de referência para as estruturas da estrutura da faixa de Windows.
 ms.assetid: 8A109C67-BF05-4BA4-8F12-473F2C773B90
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 928b1c0dcf404c054072dc57c1064dca3b39b096
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: adae6c190acb59ca0916d958266eff0d678fe75554a94aa5bdab14f2724afb14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105791533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964395"
 ---
 # <a name="structures-ribbon-framework"></a>Estruturas (estrutura da faixa de faixas)
 
-Os tópicos nesta seção fornecem as especificações de referência para as estruturas [da estrutura de faixa de faixas do Windows](-uiplat-windowsribbon-entry.md) .
+os tópicos nesta seção fornecem as especificações de referência para as estruturas [da estrutura da faixa de Windows](-uiplat-windowsribbon-entry.md) .
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -32,7 +32,7 @@ Os tópicos nesta seção fornecem as especificações de referência para as es
 
 <dl> <dt>
 
-[Referência do Windows Ribbon Framework](windowsribbon-reference-entry.md)
+[Windows Referência da estrutura da faixa de Ribbon](windowsribbon-reference-entry.md)
 </dt> </dl>
 
  

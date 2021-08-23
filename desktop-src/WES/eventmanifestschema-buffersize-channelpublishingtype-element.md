@@ -3,7 +3,7 @@ title: Elemento bufferSize (ChannelPublishingType)
 description: Contém a quantidade de memória, em quilobytes, alocada para os buffers de sessão.
 ms.assetid: 05f38251-648a-48a2-a0f6-bac5ace7f02b
 keywords:
-- EventLog do elemento bufferSize
+- elemento bufferSize EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: af609db6fb81417e81b2981ed351dc8b2954371f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 42f28b81d0e5fb2e9dc79938f26d7e2e22f3b577d7aa9ed4b231c593de7c809e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056024"
 ---
 # <a name="buffersize-channelpublishingtype-element"></a>Elemento bufferSize (ChannelPublishingType)
 
@@ -30,7 +30,7 @@ Contém a quantidade de memória, em quilobytes, alocada para os buffers de sess
  />
 ```
 
-O elemento **BufferSize** é definido pelo tipo complexo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) .
+O **elemento bufferSize** é definido pelo tipo complexo [**ChannelPublishingType.**](eventmanifestschema-channelpublishingtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **BufferSize** é definido pelo tipo complexo [**ChannelPublishingTyp
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **BufferSize** é definido pelo tipo complexo [**ChannelPublishingTyp
 **Elemento pai**
 </dt> <dt>
 
-[**publicando (channelType)**](eventmanifestschema-publishing-channeltype-element.md)
+[**publicação (ChannelType)**](eventmanifestschema-publishing-channeltype-element.md)
 </dt> </dl>
 
  

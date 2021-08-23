@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_VPNv2_NativeProfile02
-description: A \_ classe MDM VPNv2 \_ NativeProfile2 define informações de perfil ao usar um protocolo de VPN da caixa de entrada do Windows (IKEV2, PPTP, L2TP).
+description: a \_ classe MDM VPNv2 \_ NativeProfile2 define informações de perfil ao usar um protocolo VPN de Windows caixa de entrada (IKEv2, PPTP, L2TP).
 ms.assetid: 50c4adc6-baef-437c-8223-9aeaaec813af
 keywords:
 - Classe MDM_VPNv2_NativeProfile02
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8573975c488df6e5c759e719d5c687f6a71c505
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b09152d705e7746aded2487d06c5668c766e37940a620a19ff15733ac6522459
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076950"
 ---
 # <a name="mdm_vpnv2_nativeprofile02-class"></a>\_ \_ Classe NATIVEPROFILE02 do MDM VPNv2
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ VPNv2 \_ NativeProfile2** define informações de perfil ao usar um protocolo de VPN da caixa de entrada do Windows (IKEV2, PPTP, L2TP).
+a classe **MDM \_ VPNv2 \_ NativeProfile2** define informações de perfil ao usar um protocolo VPN de Windows caixa de entrada (IKEv2, PPTP, L2TP).
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -141,7 +141,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

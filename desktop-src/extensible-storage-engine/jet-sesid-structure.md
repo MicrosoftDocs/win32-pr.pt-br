@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_SESID'
-title: Estrutura de JET_SESID
+description: 'Saiba mais sobre: JET_SESID estrutura'
+title: JET_SESID estrutura
 TOCTitle: JET_SESID structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SESID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_sesid(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f547425f40b4336213ef69abe4bba07ee1baa513
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 704d4dc763bb886d2c09e0aa6e6c942f0c171dcf03041e3b35db5ac781863d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979416"
 ---
-# <a name="jet_sesid-structure"></a>Estrutura de JET_SESID
+# <a name="jet_sesid-structure"></a>JET_SESID estrutura
 
-Um JET_SESID contém um identificador para a sessão a ser usado para chamadas para o JET APIr-.
+Um JET_SESID contém um handle para a sessão a ser usada para chamadas para o JET APIr-.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,6 +61,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do JET_SESID](./jet-sesid-members.md)
+[JET_SESID membros](./jet-sesid-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

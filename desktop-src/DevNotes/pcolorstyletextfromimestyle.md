@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 791fdaca4a93b0a44099306b8ae14ae4d5cb11cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 58fb2c2830f016080ac27c48b188bbd1948406a6cb7516b3279c411c87d9c155
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955715"
 ---
 # <a name="pcolorstyletextfromimestyle-function"></a>Função PColorStyleTextFromIMEStyle
 
@@ -46,7 +46,7 @@ Uma estrutura **IMESTYLE** retornada da função [**PIMEStyleFromAttr**](pimesty
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Ponteiro para uma estrutura **IMECOLORSTY** que representa o estilo de cor do texto.
 

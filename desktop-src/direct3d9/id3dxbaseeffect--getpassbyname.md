@@ -1,7 +1,7 @@
 ---
-description: Obtém o identificador de uma passagem procurando seu nome.
+description: Obtém o alça de uma passagem procurando seu nome.
 ms.assetid: 24d043a2-5c87-4a59-80d4-0c81bd7a0b3e
-title: 'Método ID3DXBaseEffect:: GetPassByName (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetPassByName (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 2cd96a9d91f0e822b3e869bd8f0c965f0f951f44
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5837d2b69c793f788c4c89f648402e7924bc2f3af9a92bbbe596c133efe10d1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987756"
 ---
-# <a name="id3dxbaseeffectgetpassbyname-method"></a>Método ID3DXBaseEffect:: GetPassByName
+# <a name="id3dxbaseeffectgetpassbyname-method"></a>Método ID3DXBaseEffect::GetPassByName
 
-Obtém o identificador de uma passagem procurando seu nome.
+Obtém o alça de uma passagem procurando seu nome.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,29 +41,29 @@ D3DXHANDLE GetPassByName(
 
 <dl> <dt>
 
-*hTechnique* \[ no\]
+*hTechnique* \[ Em\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador da técnica pai. Consulte [Handles (Direct3D 9)](handles.md).
+Lidar com a técnica pai. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pname* \[ no\]
+*pName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Cadeia de caracteres que contém o nome da passagem.
+Cadeia de caracteres que contém o nome de passagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Retorna o identificador da primeira passagem dentro da técnica especificada que tem o nome especificado ou **nulo** se o nome não foi encontrado. Consulte [Handles (Direct3D 9)](handles.md).
+Retorna o handle da primeira passagem dentro da técnica especificada que tem o nome especificado ou **NULL** se o nome não foi encontrado. Consulte [Handles (Direct3D 9)](handles.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Retorna o identificador da primeira passagem dentro da técnica especificada que
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

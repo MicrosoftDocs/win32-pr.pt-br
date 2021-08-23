@@ -4,16 +4,16 @@ ms.assetid: 9a557cb2-acad-406c-9a87-18cbe96e8a9f
 title: Interface ITAudioDeviceControl (Ipmsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 589bf50ee219f200a81aed7057b7755f203b2275
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac06118300d9170f4928d7be5d2cf1bc3b69261f0062d6ffecd403389e564d48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003434"
 ---
 # <a name="itaudiodevicecontrol-interface"></a>Interface ITAudioDeviceControl
 
-\[ Essa interface não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[essa interface não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 A interface **ITAudioDeviceControl** expõe métodos que permitem que um aplicativo obtenha e defina parâmetros para o controle de um dispositivo de áudio.
 
@@ -35,7 +35,7 @@ A interface **ITAudioDeviceControl** tem esses métodos.
 |:----------------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | [**Obter**](/windows/desktop/api/tapi3if/nf-tapi3if-itasrterminalevent-get_call)          | Obtém o valor de uma determinada [propriedade de dispositivo de áudio](audiodeviceproperty.md).<br/>                  |
 | [**GetRange**](/windows/desktop/api/tapi3if/nf-tapi3if-itasrterminalevent-get_terminal) | Obtém o intervalo de valores válidos para uma determinada [propriedade de dispositivo de áudio](audiodeviceproperty.md).<br/> |
-| [**Definir**](/windows/desktop/api/tapi3if/nf-tapi3if-itasrterminalevent-get_error)         | Define o valor de uma determinada [propriedade de dispositivo de áudio](audiodeviceproperty.md).<br/>                  |
+| [**Definição**](/windows/desktop/api/tapi3if/nf-tapi3if-itasrterminalevent-get_error)         | Define o valor de uma determinada [propriedade de dispositivo de áudio](audiodeviceproperty.md).<br/>                  |
 
 
 
@@ -48,7 +48,7 @@ A interface **ITAudioDeviceControl** tem esses métodos.
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 

@@ -3,8 +3,8 @@ title: Interface IWMPCdrom (VB e C) (WMP. h)
 description: Fornece uma maneira de acessar um CD ou DVD em sua unidade. A interface IWMPCdrom expõe as propriedades a seguir.
 ms.assetid: 2748e64b-b9b7-489a-a6b5-21154aabd312
 keywords:
-- IWMPCdrom (VB e C) interface do Windows Media Player
-- IWMPCdrom (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPCdrom (VB e C)
+- Windows Media Player de interface IWMPCdrom (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 036411c96b278023d87c37ad48f81e986b9dadcb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60fa6b0226cb110008d12f2e78bfcea4e938dc5da9e33449e10c7bc1be927e5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996496"
 ---
 # <a name="iwmpcdrom-vb-and-c-interface"></a>Interface IWMPCdrom (VB e C#)
 
@@ -58,7 +58,7 @@ A interface **IWMPCdrom (VB e C#)** tem essas propriedades.
 | Propriedade                                                                                | Tipo de acesso          | Descrição                                                                                                                                  |
 |:----------------------------------------------------------------------------------------|:---------------------|:---------------------------------------------------------------------------------------------------------------------------------------------|
 | [**driveSpecifier**](wmplibiwmpcdrom-iwmpcdrom-drivespecifier--vb-and-c.md)<br/> | Somente leitura<br/> | Obtém a letra da unidade de CD ou DVD.<br/>                                                                                                  |
-| [**7.1**](wmplibiwmpcdrom-iwmpcdrom-playlist--vb-and-c.md)<br/>             | Somente leitura<br/> | Obtém uma interface [**IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist) que representa as faixas em um CD ou as entradas de título no nível raiz de um DVD.<br/> |
+| [**Playlist**](wmplibiwmpcdrom-iwmpcdrom-playlist--vb-and-c.md)<br/>             | Somente leitura<br/> | Obtém uma interface [**IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist) que representa as faixas em um CD ou as entradas de título no nível raiz de um DVD.<br/> |
 
 
 
@@ -78,7 +78,7 @@ A interface **IWMPCdrom (VB e C#)** tem essas propriedades.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPPlaylist (VB e C#)**](iwmpplaylist--vb-and-c.md)

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0a96448ccd3abdaed7b789b463f08c5d5c8e6f67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9927a8f75868c40f93aab84f79e1f03e86ca1b88f1a1a4c6d99d8ed174199c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117379"
 ---
 # <a name="esentalreadypreparedexception-constructor"></a>Construtor EsentAlreadyPreparedException
 
 Inicializa uma nova instância da classe EsentAlreadyPreparedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentAlreadyPreparedException()
 
 [Classe EsentAlreadyPreparedException](./esentalreadypreparedexception-class.md)
 
-[Membros do EsentAlreadyPreparedException](./esentalreadypreparedexception-members.md)
+[Membros EsentAlreadyPreparedException](./esentalreadypreparedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 268572e5dad3dffd0fe15956a0ff145f277fb6db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9280a358c7124a3f16e3d303026f36506610b6dc6fe0453fdf3e7b2432682719
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055635"
 ---
 # <a name="iwmdrmdeviceappacquiredevicedata-method"></a>Método IWMDRMDeviceApp:: AcquireDeviceData
 
@@ -98,7 +98,7 @@ Um dos valores **DWORD** a seguir que especificam o status retornado pelo dispos
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -108,7 +108,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 |-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                                    | O método foi bem-sucedido.<br/>                                                                                                    |
 | <dl> <dt>**DRM \_ E \_ INVALIDARG**</dt> </dl>                                       | Um ou mais argumentos não são válidos.<br/>                                                                                     |
-| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl>                        | O dispositivo especificado não é um dispositivo compatível com DRM do Windows Media.<br/>                                                       |
+| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl>                        | o dispositivo especificado não é um dispositivo compatível com DRM com mídia Windows.<br/>                                                       |
 | <dl> <dt>**o NS \_ E \_ DRM \_ não consegue \_ obter o \_ \_ \_ Clock seguro**</dt> </dl>               | Falha ao recuperar o desafio de relógio seguro do dispositivo ou não foi possível recuperar a URL do clock seguro do desafio.<br/> |
 | <dl> <dt>**o NS \_ E \_ DRM \_ não pode \_ obter o \_ \_ relógio seguro \_ \_ do \_ servidor**</dt> </dl> | Falha ao recuperar a resposta do relógio seguro do servidor do clock seguro.<br/>                                               |
 | <dl> <dt>**o NS \_ E \_ DRM \_ não pode \_ definir o \_ \_ \_ relógio seguro**</dt> </dl>               | Falha ao enviar o desafio de relógio seguro para o dispositivo ou o dispositivo não pôde definir o relógio.<br/>                          |

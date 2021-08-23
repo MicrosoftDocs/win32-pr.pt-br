@@ -1,23 +1,23 @@
 ---
-title: Manipulando erros desconhecidos
-description: Manipulando erros desconhecidos
+title: Tratamento de erros desconhecidos
+description: Tratamento de erros desconhecidos
 ms.assetid: d6a4cc60-8320-4b67-9f2e-7c4bea6c37fb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8c3d9e70b89a9a78be62d2940ad8a69ac34c8f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 38fb0e8aaaef8fc3ff4ae9bb76f76a845c325c4b5a5dc4d409dbd0ab35734ce4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048254"
 ---
-# <a name="handling-unknown-errors"></a>Manipulando erros desconhecidos
+# <a name="handling-unknown-errors"></a>Tratamento de erros desconhecidos
 
-É legal retornar um código de status somente da implementação de um método de interface aprovado como legalmente retornado. A falha ao observar essa regra convida a possibilidade de conflito entre valores de código de erro retornados e aqueles aprovados pelo aplicativo. Preste atenção especial a esse possível problema ao propagar códigos de erro de funções que são chamadas internamente.
+É legal retornar um código de status somente da implementação de um método de interface sancionado como legalmente returnável. A falha ao observar essa regra convida a possibilidade de conflito entre os valores de código de erro retornados e os sancionados pelo aplicativo. Preste atenção especial a esse possível problema ao propagar códigos de erro de funções que são chamadas internamente.
 
-Os aplicativos que chamam interfaces devem tratar qualquer código de erro desconhecido retornado (em oposição a um código de êxito) como sinônimo de E \_ inesperado. Essa prática de manipulação de códigos de erro desconhecidos é exigida pelos clientes das interfaces e funções definidas COM. Como a prática de programação típica é manipular alguns códigos de erro específicos em detalhes e tratar o restante de forma genérica, esse requisito de manipulação de códigos de erro inesperados ou desconhecidos é facilmente atendido.
+Os aplicativos que chamam interfaces devem tratar qualquer código de erro retornado desconhecido (em vez de um código de êxito) como sinônimo de E \_ UNEXPECTED. Essa prática de lidar com códigos de erro desconhecidos é exigida pelos clientes das interfaces e funções definidas pelo COM. Como a prática de programação típica é lidar com alguns códigos de erro específicos em detalhes e tratar o restante genericamente, esse requisito de lidar com códigos de erro inesperados ou desconhecidos é facilmente atendido.
 
-É importante lidar com todos os erros possíveis ao chamar um método de interface. Se não for possível fazer isso, o aplicativo falhará, corromperá os dados ou ficará vulnerável a explorações de segurança. O exemplo de código a seguir mostra a maneira recomendada de lidar com erros desconhecidos:
+É importante tratar todos os erros possíveis ao chamar um método de interface. A falha ao fazer isso pode fazer com que seu aplicativo falha, corrompa dados ou se torne vulnerável a explorações de segurança. O exemplo de código a seguir mostra a maneira recomendada de lidar com erros desconhecidos:
 
 
 ```C++
@@ -48,7 +48,7 @@ switch (GetScode(hr))
 
 
 
-A verificação de erro a seguir é frequentemente usada com essas rotinas que não retornam nada especial (além de S \_ OK ou algum erro inesperado):
+A verificação de erro a seguir geralmente é usada com as rotinas que não retornam nada especial (diferente de S \_ OK ou algum erro inesperado):
 
 
 ```C++
@@ -71,9 +71,9 @@ else
 [Tratamento de erro em COM](error-handling-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

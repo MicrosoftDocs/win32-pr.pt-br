@@ -4,12 +4,12 @@ ms.assetid: a24916a9-b67a-4622-b9f3-4b4f26bf4d6b
 title: DBT_DEVICEQUERYREMOVEFAILED evento (DBT. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 848c7378cdbac95729eee70c70a1e323373b8e85
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 605c2689d7d986b4e85fda6d8ce5f24fa6483641de46a6a84f3e4e96ba473897
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076300"
 ---
 # <a name="dbt_devicequeryremovefailed-event"></a>\_Evento DBT DEVICEQUERYREMOVEFAILED
 
@@ -61,7 +61,7 @@ Um ponteiro para uma estrutura que identifica o dispositivo. A estrutura consist
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **true**.
 
@@ -77,7 +77,7 @@ Para obter um exemplo, consulte [processando uma solicitação para remover um d
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows XP<br/>                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2003<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>DBT. h</dt> </dl> |
 
 
 

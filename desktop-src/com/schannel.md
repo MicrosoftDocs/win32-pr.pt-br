@@ -4,12 +4,12 @@ description: O pacote de segurança do Schannel (canal seguro), cujo identificad
 ms.assetid: 03a5f987-f668-4f19-9b58-d62711f58734
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eccc9f82a05d1542e7585426128f10cdf452d31d
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 01ab40ed9d87013f646137e23ccc755dfdf9ab6b8f2ded367940b4ae630d7b4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104294538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047844"
 ---
 # <a name="schannel"></a>SChannel
 
@@ -31,7 +31,7 @@ Os tópicos a seguir descrevem brevemente o protocolo TLS e como ele funciona co
 > [!Note]  
 > Todas as informações sobre o protocolo TLS nessas seções também se aplicam aos protocolos SSL e PCT.
 
- 
+ 
 
 ## <a name="when-to-use-tls"></a>Quando usar o TLS
 
@@ -93,40 +93,40 @@ Para usar o TLS, os seguintes parâmetros devem ser especificados quando um serv
     -   *dwAuthnSvc* deve ser RPC \_ C \_ Authn \_ GSS \_ Schannel.
     -   *dwAuthzSvc* deve ser RPC \_ C \_ AUTHZ \_ None. No momento, ele é ignorado.
     -   *pPrincipalName* deve ser um ponteiro para um [**\_ contexto de certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context), Cast como um ponteiro para OLECHAR, que representa o certificado X. 509 do servidor.
--   *dwAuthnLevel* indica o nível de autenticação mínimo que será aceito de clientes para uma conexão bem-sucedida. Não pode ser RPC \_ C \_ Authn \_ nível \_ None.
--   *dwCapabilities* não deve ter o \_ sinalizador AppID EOAC definido. O \_ sinalizador de controle de acesso EOAC \_ deve ser definido se *pVoid* aponta para um objeto [**IAccessControl**](/windows/desktop/api/IAccess/nn-iaccess-iaccesscontrol) ; ele não deve ser definido se *pVoid* aponta para um \_ descritor de segurança. Para outros sinalizadores que podem ser definidos, consulte [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
+-   *dwAuthnLevel* indica o nível de autenticação mínimo que será aceito de clientes para uma conexão bem-sucedida. Não pode ser RPC \_ C \_ AUTHN \_ LEVEL \_ NONE.
+-   *dwCapabilities* não deve ter o sinalizador APPID EOAC \_ definido. O sinalizador EOAC ACCESS CONTROL deverá ser definido se pVoid aponta para um objeto \_ \_ [**IAccessControl;**](/windows/desktop/api/IAccess/nn-iaccess-iaccesscontrol)  ele não deve ser definido se *pVoid* aponta para um \_ SECURITY DESCRIPTOR. Para outros sinalizadores que podem ser definidos, consulte [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
-Para obter mais informações sobre como usar [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), consulte [Configurando a segurança do processwide com CoInitializeSecurity](setting-processwide-security-with-coinitializesecurity.md).
+Para obter mais informações sobre como [**usar o CoInitializeSecurity,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)consulte Configurando a segurança em todo o processo [com CoInitializeSecurity](setting-processwide-security-with-coinitializesecurity.md).
 
-### <a name="how-a-client-sets-the-security-blanket"></a>Como um cliente define a cobertura de segurança
+### <a name="how-a-client-sets-the-security-blanket"></a>Como um cliente define a segurança
 
-Se um cliente quiser usar o TLS, ele deverá especificar Schannel (RPC \_ C \_ Authn \_ GSS \_ Schannel) em sua lista de serviços de autenticação no parâmetro *pAuthList* de [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Se Schannel não for especificado como um possível serviço de autenticação quando **CoInitializeSecurity** for chamado, uma chamada posterior para [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) (ou [**IClientSecurity:: setampla**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket)) falhará se tentar especificar Schannel como o serviço de autenticação.
+Se um cliente quiser usar o TLS, ele deverá especificar Schannel (RPC C AUTHN GSS SCHANNEL) em sua lista de serviços de autenticação no parâmetro \_ \_ \_ \_ *pAuthList* [**de CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Se O Schannel não for especificado como um serviço de autenticação possível quando **CoInitializeSecurity** for chamado, uma chamada posterior para [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) (ou [**IClientSecurity::SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket)) falhará se tentar especificar Schannel como o serviço de autenticação.
 
-Os parâmetros a seguir devem ser especificados quando um cliente chama [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity):
+Os seguintes parâmetros devem ser especificados quando um cliente chama [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity):
 
--   *dwAuthnLevel* especifica o nível de autenticação padrão que o cliente deseja usar. Não pode ser RPC \_ C \_ Authn \_ nível \_ None.
--   *dwImpLevel* deve ser a \_ representação de nível de imp do RPC C \_ \_ \_ .
--   *pAuthList* deve ter os seguintes parâmetros de [**\_ \_ informações de autenticação exclusivas**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info) como um membro da lista:
-    -   *dwAuthnSvc* deve ser RPC \_ C \_ Authn \_ GSS \_ Schannel.
-    -   *dwAuthzSvc* deve ser RPC \_ C \_ AUTHZ \_ None.
-    -   *pAuthInfo* é um ponteiro para um [**\_ contexto de certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context), convertido como um ponteiro para void, que representa o certificado X. 509 do cliente. Se o cliente não tiver um certificado ou não quiser apresentar seu certificado ao servidor, o *pAuthInfo* deverá ser **nulo** e será feita uma tentativa de conexão anônima com o servidor.
--   *dwCapabilities* é um conjunto de sinalizadores que indicam recursos adicionais do cliente. Consulte [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) para obter informações sobre quais sinalizadores devem ser definidos.
+-   *dwAuthnLevel* especifica o nível de autenticação padrão que o cliente deseja usar. Não pode ser RPC \_ C \_ AUTHN \_ LEVEL \_ NONE.
+-   *dwImpLevel deve* ser RPC \_ C IMP LEVEL \_ \_ \_ IMPERSONATE.
+-   *pAuthList* deve ter os seguintes parâmetros [**SOLE \_ AUTHENTICATION \_ INFO**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info) como um membro da lista:
+    -   *dwAuthnSvc* deve ser RPC \_ C \_ AUTHN \_ GSS \_ SCHANNEL.
+    -   *dwAuthzSvc deve* ser RPC \_ C \_ AUTHZ \_ NONE.
+    -   *pAuthInfo* é um ponteiro para um [**CONTEXTO \_ DE CERTIFICADO**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context), lançado como um ponteiro para void, que representa o certificado X.509 do cliente. Se o cliente não tiver um certificado ou não desejar apresentar seu certificado ao servidor, *pAuthInfo* deverá ser **NULL** e uma conexão anônima será tentada com o servidor.
+-   *dwCapabilities é* um conjunto de sinalizadores que indicam recursos adicionais do cliente. Consulte [**CoInitializeSecurity para**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) obter informações sobre quais sinalizadores devem ser definidos.
 
-Para obter mais informações sobre como usar [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), consulte [Configurando a segurança do processwide com CoInitializeSecurity](setting-processwide-security-with-coinitializesecurity.md).
+Para obter mais informações sobre como [**usar o CoInitializeSecurity,**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity)consulte Configurando a segurança em todo o processo [com CoInitializeSecurity](setting-processwide-security-with-coinitializesecurity.md).
 
-### <a name="how-a-client-changes-the-security-blanket"></a>Como um cliente altera a cobertura de segurança
+### <a name="how-a-client-changes-the-security-blanket"></a>Como um cliente altera a segurança
 
-Se um cliente quiser usar o TLS, mas alterar a cobertura de segurança depois de chamar [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), ele deverá chamar [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) ou [**IClientSecurity:: setampla**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) com parâmetros semelhantes aos usados na chamada para **CoInitializeSecurity**, com as seguintes diferenças:
+Se um cliente quiser usar TLS, mas alterar a segurança após chamar [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity), ele deverá chamar [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket) ou [**IClientSecurity::SetBlanket**](/windows/win32/api/objidl/nf-objidl-iclientsecurity-setblanket) com parâmetros semelhantes aos usados na chamada para **CoInitializeSecurity**, com as seguintes diferenças:
 
--   *pServerPrincName* indica o nome da entidade de segurança do servidor, no formato msstd ou fullsic. Para obter informações sobre esses formatos, consulte [nomes de entidade de segurança](/windows/desktop/Rpc/principal-names). Se o cliente tiver o certificado X. 509 do servidor, ele poderá encontrar o nome da entidade de segurança chamando [**RpcCertGeneratePrincipalName**](/windows/desktop/api/rpcssl/nf-rpcssl-rpccertgenerateprincipalname).
--   *pAuthInfo* é um ponteiro para um [**\_ contexto de certificado**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context), convertido como um ponteiro para \_ identificador de identidade de autenticação RPC \_ \_ , que representa o certificado X. 509 do cliente. Se o cliente não tiver um certificado ou não quiser apresentar seu certificado ao servidor, o *pAuthInfo* deverá ser **nulo** e será feita uma tentativa de conexão anônima com o servidor.
--   *dwCapabilities* consiste em sinalizadores que indicam recursos adicionais do cliente. Somente quatro sinalizadores podem ser usados para alterar as configurações de ampla segurança: EOAC \_ padrão, EOAC \_ Mutual \_ auth, EOAC \_ qualquer \_ autoridade (esse sinalizador é preterido) e EOAC \_ Make \_ FULLSIC. Para obter mais informações, consulte [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket).
+-   *pServerPrincName* indica o nome principal do servidor, no formato msstd ou fullsic. Para obter informações sobre esses formatos, consulte [Nomes de entidade de segurança.](/windows/desktop/Rpc/principal-names) Se o cliente tiver o certificado X.509 do servidor, ele poderá encontrar o nome da entidade chamando [**RpcCertGeneratePrincipalName**](/windows/desktop/api/rpcssl/nf-rpcssl-rpccertgenerateprincipalname).
+-   *pAuthInfo* é um ponteiro para um CONTEXTO DE CERTIFICADO , cast como um ponteiro para RPC AUTH IDENTITY HANDLE, que representa o certificado [**\_**](/windows/desktop/api/wincrypt/ns-wincrypt-cert_context) \_ \_ \_ X.509 do cliente. Se o cliente não tiver um certificado ou não desejar apresentar seu certificado ao servidor, *pAuthInfo* deverá ser **NULL** e uma conexão anônima será tentada com o servidor.
+-   *dwCapabilities consiste* em sinalizadores que indicam funcionalidades adicionais do cliente. Somente quatro sinalizadores podem ser usados para alterar as configurações de proteção de segurança: \_ EOAC DEFAULT, EOAC \_ MUTUAL \_ AUTH, EOAC ANY AUTHORITY (esse sinalizador foi \_ \_ preterido) e EOAC \_ MAKE \_ FULLSIC. Para obter mais informações, [**consulte CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket).
 
-Para obter mais informações sobre como usar o [**CoSetProxyBlanket**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket), consulte [definindo a segurança no nível de proxy da interface](setting-security-at-the-interface-proxy-level.md).
+Para obter mais informações sobre como [**usar CoSetProxyBlanket,**](/windows/desktop/api/combaseapi/nf-combaseapi-cosetproxyblanket)consulte [Configurando a segurança no nível de proxy da interface](setting-security-at-the-interface-proxy-level.md).
 
-### <a name="example-client-changes-the-security-blanket"></a>Exemplo: o cliente altera a cobertura de segurança
+### <a name="example-client-changes-the-security-blanket"></a>Exemplo: o cliente altera o título de segurança
 
-O exemplo a seguir demonstra como um cliente pode alterar a cobertura de segurança para acomodar uma solicitação do servidor para o cliente fornecer seu certificado X. 509. O código de tratamento de erros é omitido para fins de brevidade.
+O exemplo a seguir demonstra como um cliente pode alterar a segurança para acomodar uma solicitação do servidor para que o cliente forneça seu certificado X.509. O código de tratamento de erro é omitido por brevidade.
 
 
 ```C++
@@ -223,9 +223,9 @@ void ClientChangesSecurity ()
 
 <dl> <dt>
 
-[Pacotes de segurança e COM](com-and-security-packages.md)
+[Pacotes COM e de segurança](com-and-security-packages.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

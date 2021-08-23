@@ -1,6 +1,6 @@
 ---
-title: Função D3DPERF_SetRegion
-description: Marque uma série de quadros com a cor e o nome especificados no arquivo PIXRun. Atualmente, essa função não tem suporte no PIX.
+title: D3DPERF_SetRegion função
+description: Marque uma série de quadros com a cor e o nome especificados no arquivo PROTOCOLRun. Atualmente, não há suporte para essa função por MEIO DEM.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 04/06/2020
@@ -16,16 +16,16 @@ api_location:
 api_name:
 - D3DPERF_SetRegion
 targetos: Windows
-ms.openlocfilehash: 650cc6063865da5ce30b97ed1468c1718ace5da6
-ms.sourcegitcommit: 517a888e0370b9ec64c451635f12d60245ff5ae3
+ms.openlocfilehash: 05884fe8a3b104588a941dcaf3089a1c0f6f8eab4f4a01e143470f73454ad4ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "105812137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989256"
 ---
-# <a name="d3dperf_setregion-function"></a>Função D3DPERF_SetRegion
+# <a name="d3dperf_setregion-function"></a>D3DPERF_SetRegion função
 
-Marque uma série de quadros com a cor e o nome especificados no arquivo PIXRun. Atualmente, essa função não tem suporte no PIX.
+Marque uma série de quadros com a cor e o nome especificados no arquivo PROTOCOLRun. Atualmente, não há suporte para essa função por MEIO DEM.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,24 +40,24 @@ void WINAPI D3DPERF_SetRegion(
 
 `col`
 
-Cor do evento. Essa é a cor para exibir o evento no modo de exibição de evento.
+Cor do evento. Essa é a cor para exibir o evento na exibição de evento.
 
 `wszName`
 
 Nome do evento.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para facilitar a análise, o programa de destino pode usar cores para marcar cada nível de um programa de destino.
+Para facilitar a análise, o programa de destino pode usar a cor para marcar cada nível de um programa de destino.
 
 ## <a name="requirements"></a>Requisitos
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Plataforma de Destino** | Windows |
-| **Cabeçalho** | d3d9. h |
-| **Biblioteca** | d3d9. lib |
+| **Cabeçalho** | d3d9.h |
+| **Biblioteca** | d3d9.lib |
 | **DLL** | d3d9.dll |

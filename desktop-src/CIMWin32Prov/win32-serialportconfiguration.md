@@ -1,5 +1,5 @@
 ---
-description: A \_ classe WMI SerialPortConfiguration do Win32 representa as configurações de transmissão de dados em uma porta serial baseada no Windows. Isso inclui configurações para estabelecer uma conexão e verificação de erro.
+description: a \_ classe WMI SerialPortConfiguration do Win32 representa as configurações de transmissão de dados em uma porta serial baseada em Windows. Isso inclui configurações para estabelecer uma conexão e verificação de erro.
 ms.assetid: 688cdcce-8325-4b4d-93ab-5a602e9e3f8e
 ms.tgt_platform: multiple
 title: Classe Win32_SerialPortConfiguration
@@ -43,16 +43,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 065d069b261472e3347a115cfbbff652812b6622
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 07052c0366b32904ef6bf6f52b15f3ea98022ba8385120ec60cdefe5714e2c4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079690"
 ---
 # <a name="win32_serialportconfiguration-class"></a>\_Classe Win32 SerialPortConfiguration
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) **\_ SerialPortConfiguration do Win32** representa as configurações de transmissão de dados em uma porta serial baseada no Windows. Isso inclui configurações para estabelecer uma conexão e verificação de erro.
+a [classe WMI](../wmisdk/retrieving-a-class.md) **\_ SerialPortConfiguration do Win32** representa as configurações de transmissão de dados em uma porta serial baseada em Windows. Isso inclui configurações para estabelecer uma conexão e verificação de erro.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -152,7 +152,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fBinary")
 </dt> </dl>
 
-Se **for true**, as transferências de dados no modo binário serão habilitadas para a porta serial. Os sistemas de computador que executam o Windows só permitem transferências binárias por meio de portas seriais, portanto, esse valor é sempre **verdadeiro**.
+Se **for true**, as transferências de dados no modo binário serão habilitadas para a porta serial. os sistemas de computador que executam Windows só permitem transferências binárias por meio de portas seriais, portanto, esse valor é sempre **verdadeiro**.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("estruturas de comunicação do win32api \| \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| bytes")
 </dt> </dl>
 
-Número de bits transmitidos e recebidos para cada byte de dados para a porta serial do Windows. O número pode variar com bits de correção de erro e controle, como bits de paridade.
+número de bits transmitidos e recebidos para cada byte de dados para a porta serial Windows. O número pode variar com bits de correção de erro e controle, como bits de paridade.
 
 Exemplo: 8
 
@@ -358,57 +358,57 @@ Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| est
 
 Valor do caractere usado para substituir bytes recebidos por um erro de paridade.
 
-Exemplo: ^ C
+Exemplo: ^C
 
 </dd> <dt>
 
 **ErrorReplacementEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fErrorChar")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fErrorChar")
 </dt> </dl>
 
-Se **for true**, bytes recebidos com erros de paridade serão substituídos pelo valor **ErrorReplaceCharacter** . Os caracteres com erros de paridade serão substituídos apenas se essa propriedade for **true** e a paridade estiver habilitada.
+Se **TRUE**, os bytes recebidos com erros de paridade serão substituídos pelo **valor ErrorReplaceCharacter.** Caracteres com erros de paridade só serão substituídos se essa propriedade for **TRUE** e a paridade estiver habilitada.
 
 </dd> <dt>
 
 **EventCharacter**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| EvtChar")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| EvtChar")
 </dt> </dl>
 
 Valor do caractere de controle usado para sinalizar um evento, como o fim do arquivo.
 
-Exemplo: ^ e
+Exemplo: ^e
 
 </dd> <dt>
 
-**IsBusy**
+**Isbusy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| File Functions \| CreateFile")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| File Functions \| CreateFile")
 </dt> </dl>
 
-Se for **true**, a porta serial estará ocupada.
+Se **TRUE**, a porta serial está ocupada.
 
 </dd> <dt>
 
@@ -421,10 +421,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**maxlen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry de \| hardware \\ \\ DeviceMap \\ \\ SerialComm")
+Qualificadores: [**key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32Registry \| Hardware \\ \\ DeviceMap \\ \\ SerialComm")
 </dt> </dl>
 
-Nome da porta serial do Windows.
+Nome da porta Windows serial.
 
 Exemplo: "COM1"
 
@@ -439,16 +439,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb)de \| paridade")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Paridade de DCB de estruturas de comunicação Win32API") \| \| [](/windows/win32/api/winbase/ns-winbase-dcb) \|
 </dt> </dl>
 
-Método de verificação de paridade a ser usado. A paridade é usada como uma técnica de verificação de erros em que um bit de paridade extra é incluído em cada unidade de dados. O receptor pode, então, verificar a validade dos dados contando os bits que estão definidos.
+Método de verificação de paridade a ser usado. A paridade é usada como uma técnica de verificação de erro em que um bit de paridade extra é incluído em cada unidade de dados. Em seguida, o receptor pode verificar a validade dos dados contando os bits definidos.
 
 <dt>
 
 <span id="None"></span><span id="none"></span><span id="NONE"></span>
 
-<span id="None"></span><span id="none"></span><span id="NONE"></span>**Nenhum** ("nenhum")
+<span id="None"></span><span id="none"></span><span id="NONE"></span>**Nenhum** ("Nenhum")
 
 
 </dt> <dd>
@@ -459,7 +459,7 @@ Verificação de paridade não usada.
 
 <span id="Odd"></span><span id="odd"></span><span id="ODD"></span>
 
-<span id="Odd"></span><span id="odd"></span><span id="ODD"></span>**Ímpar** ("ímpar")
+<span id="Odd"></span><span id="odd"></span><span id="ODD"></span>**Ímpar** ("Ímpar")
 
 
 </dt> <dd>
@@ -470,7 +470,7 @@ Define o bit de paridade de modo que a contagem de bits definida seja um número
 
 <span id="Even"></span><span id="even"></span><span id="EVEN"></span>
 
-<span id="Even"></span><span id="even"></span><span id="EVEN"></span>**Par** ("uniforme")
+<span id="Even"></span><span id="even"></span><span id="EVEN"></span>**Até** mesmo ("Even")
 
 
 </dt> <dd>
@@ -481,7 +481,7 @@ Define o bit de paridade de modo que a contagem de bits definida seja um número
 
 <span id="Mark"></span><span id="mark"></span><span id="MARK"></span>
 
-<span id="Mark"></span><span id="mark"></span><span id="MARK"></span>**Marcar** ("Mark")
+<span id="Mark"></span><span id="mark"></span><span id="MARK"></span>**Marcar** ("Marca")
 
 
 </dt> <dd>
@@ -492,7 +492,7 @@ Deixa o bit de paridade definido como 1.
 
 <span id="Space"></span><span id="space"></span><span id="SPACE"></span>
 
-<span id="Space"></span><span id="space"></span><span id="SPACE"></span>**Espaço** ("espaço")
+<span id="Space"></span><span id="space"></span><span id="SPACE"></span>**Espaço** ("Espaço")
 
 
 </dt> <dd>
@@ -506,16 +506,16 @@ Deixa o bit de paridade definido como 0 (zero).
 **ParityCheckEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fParity")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fParity")
 </dt> </dl>
 
-Se for **true**, a verificação de paridade estará habilitada.
+Se **TRUE**, a verificação de paridade será habilitada.
 
 </dd> <dt>
 
@@ -528,13 +528,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Solicitação para enviar o controle de fluxo (RTS). O RTS é usado para sinalizar que os dados estão disponíveis para transmissão.
+Solicitação para enviar controle de fluxo (RTS). O RTS é usado para sinalizar que os dados estão disponíveis para transmissão.
 
 <dt>
 
 <span id="Enable"></span><span id="enable"></span><span id="ENABLE"></span>
 
-<span id="Enable"></span><span id="enable"></span><span id="ENABLE"></span>**Habilitar** ("habilitar")
+<span id="Enable"></span><span id="enable"></span><span id="ENABLE"></span>**Habilitar** ("Habilitar")
 
 
 </dt> <dd>
@@ -550,35 +550,35 @@ O RTS é deixado para a sessão de transferência de dados.
 
 </dt> <dd>
 
-O RTS é ignorado após o primeiro sinal de RTS ser recebido.
+O RTS é ignorado depois que o primeiro sinal RTS é recebido.
 
 </dd> <dt>
 
 <span id="Handshake"></span><span id="handshake"></span><span id="HANDSHAKE"></span>
 
-<span id="Handshake"></span><span id="handshake"></span><span id="HANDSHAKE"></span>**Handshake** ("handshake")
+<span id="Handshake"></span><span id="handshake"></span><span id="HANDSHAKE"></span>**Handshake** ("Handshake")
 
 
 </dt> <dd>
 
-O RTS será desativado se o buffer de transmissão tiver mais de três trimestres cheios e o RTS for ativado quando o buffer for menor do que a metade completa.
+O RTS será desligado se o buffer de transmissão estiver mais de três trimestres cheio e o RTS estiver ligado quando o buffer for menor que meio cheio.
 
 </dd> <dt>
 
 <span id="Toggle"></span><span id="toggle"></span><span id="TOGGLE"></span>
 
-<span id="Toggle"></span><span id="toggle"></span><span id="TOGGLE"></span>**Ativar/desativar** ("alternar")
+<span id="Toggle"></span><span id="toggle"></span><span id="TOGGLE"></span>**Alternar** ("Alternar")
 
 
 </dt> <dd>
 
-O RTS será ativado se houver algum buffer de dados para transmissão.
+O RTS será ligado se houver algum buffer de dados para transmissão.
 
 </dd> </dl>
 
 </dd> <dt>
 
-**SettingID**
+**Settingid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -587,16 +587,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (256)
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
 Identificador pelo qual o objeto atual é conhecido.
 
-Essa propriedade é herdada [**da \_ configuração de CIM**](cim-setting.md).
+Essa propriedade é herdada da [**Configuração cim \_**](cim-setting.md).
 
 </dd> <dt>
 
-**StopBits**
+**Stopbits**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -605,10 +605,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| StopBits")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| StopBits")
 </dt> </dl>
 
-Número de bits de parada a serem usados. Parar bits separa cada unidade de dados em uma conexão serial assíncrona. Eles também são enviados continuamente quando não há dados disponíveis para transmissão.
+Número de bits de parada a serem usados. Os bits de parada separam cada unidade de dados em uma conexão serial assíncrona. Eles também são enviados continuamente quando nenhum dado está disponível para transmissão.
 
 <dt>
 
@@ -621,7 +621,7 @@ Número de bits de parada a serem usados. Parar bits separa cada unidade de dado
 
 <span id="1.5"></span>
 
-**1,5** ("1,5")
+**1.5** ("1.5")
 
 
 </dt> <dd></dd> <dt>
@@ -638,29 +638,29 @@ Número de bits de parada a serem usados. Parar bits separa cada unidade de dado
 **XOffCharacter**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| XoffChar")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| XoffChar")
 </dt> </dl>
 
-Valor do caractere XOFF para transmissão e recepção. XOFF é um controle de software para interromper a transmissão de dados (enquanto RTS e CTS são controles de hardware). XON retoma a transmissão.
+Valor do caractere XOFF para transmissão e recepção. XOFF é um controle de software para interromper a transmissão de dados (enquanto RTS e CTS são controles de hardware). O VERTICAL retoma a transmissão.
 
 </dd> <dt>
 
 **XOffXMitThreshold**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| XoffLim")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| XoffLim")
 </dt> </dl>
 
 Número máximo de bytes permitidos no buffer de entrada antes que o caractere XOFF seja enviado.
@@ -670,48 +670,48 @@ Número máximo de bytes permitidos no buffer de entrada antes que o caractere X
 **XOnCharacter**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| XonChar")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| CharChar")
 </dt> </dl>
 
-Valor do caractere XON para transmissão e recepção. XON é um controle de software para retomar a transmissão de dados (enquanto RTS e CTS são controles de hardware). XOFF interrompe a transmissão.
+Valor do caractere LTDA para transmissão e recepção. O VERTICAL é um controle de software para retomar a transmissão de dados (enquanto RTS e CTS são controles de hardware). XOFF interrompe a transmissão.
 
 </dd> <dt>
 
 **XOnXMitThreshold**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| XonLim")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| LimLim")
 </dt> </dl>
 
-Número mínimo de bytes permitidos no buffer de entrada antes que o caractere XON seja enviado. Essa propriedade funciona em conjunto com **XOffXMitThreshold** para regular a taxa na qual os dados são transferidos.
+Número mínimo de bytes permitidos no buffer de entrada antes que o caractere DATA seja enviado. Essa propriedade funciona em conjunto com **XOffXMitThreshold** para regular a taxa na qual os dados são transferidos.
 
 </dd> <dt>
 
 **XOnXOffInFlowControl**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fInX")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fInX")
 </dt> </dl>
 
-Se **for true**, o controle de fluxo XON/XOFF será usado durante a recepção. Se **for true**, o valor de **XOffCharacter** será enviado quando o buffer de entrada ficar dentro de **XOffXMitThreshold** bytes de estar cheio, e o valor de **XOnCharacter** será enviado quando o buffer de entrada entrar em **XOnXMitThreshold** bytes de estar vazio.
+Se **TRUE,** o controle de fluxo TRUE/XOFF será usado durante a recepção. Se **TRUE**, o valor **XOffCharacter** é enviado quando o buffer de entrada vem dentro de bytes **XOffXMitThreshold** de estar cheio e o valor **XOnCharacter** é enviado quando o buffer de entrada vem dentro de **bytes XOnXMitThreshold** de estar vazio.
 
 <dt>
 
@@ -742,22 +742,22 @@ TRUE
 **XOnXOffOutFlowControl**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| estruturas de comunicação win32api \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fOutX")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Communication Structures \| [**DCB**](/windows/win32/api/winbase/ns-winbase-dcb) \| fOutX")
 </dt> </dl>
 
-O **XOnXOffOutFlowControl** especifica se o controle de fluxo XON ou XOFF é usado durante a transmissão. Se **for true**, a transmissão será interrompida quando o valor de **XOffCharacter** for recebido e iniciar novamente quando o valor de **XOnCharacter** for recebido.
+O **XOnXOffOutFlowControl especifica** se o controle de fluxo NIX ou XOFF é usado durante a transmissão. Se **TRUE**, a transmissão será interrompida quando o **valor XOffCharacter** for recebido e iniciado novamente quando **o valor XOnCharacter** for recebido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ SerialPortConfiguration** é derivada da [**\_ configuração de CIM**](cim-setting.md).
+A **classe \_ SerialPortConfiguration do Win32** é derivada da [**configuração cim \_**](cim-setting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -767,8 +767,8 @@ A classe **Win32 \_ SerialPortConfiguration** é derivada da [**\_ configuraçã
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -777,7 +777,7 @@ A classe **Win32 \_ SerialPortConfiguration** é derivada da [**\_ configuraçã
 
 <dl> <dt>
 
-[**Configuração de CIM \_**](cim-setting.md)
+[**Configuração cim \_**](cim-setting.md)
 </dt> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)

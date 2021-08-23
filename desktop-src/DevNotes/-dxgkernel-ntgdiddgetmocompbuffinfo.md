@@ -1,7 +1,7 @@
 ---
-description: Permite que o driver especifique quantas superfícies provisórias são necessárias para dar suporte ao GUID especificado e o tamanho, o local e o formato de cada uma dessas superfícies.
+description: Permite que o driver especifique quantas superfícies intermediárias são necessárias para dar suporte ao GUID especificado e o tamanho, o local e o formato de cada uma dessas superfícies.
 ms.assetid: 1f3207a8-aa6a-47a3-a1d0-19166592eeca
-title: Função NtGdiDdGetMoCompBuffInfo (Ntgdi. h)
+title: Função NtGdiDdGetMoCompBuffInfo (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: 03d471e62edd061ce167e0baf2051836e9634fae
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e2d324cf1b0b986845a7fab95c24abb9f44eb4c6024bbba9be101d25e1318a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956325"
 ---
 # <a name="ntgdiddgetmocompbuffinfo-function"></a>Função NtGdiDdGetMoCompBuffInfo
 
-\[Essa função está sujeita a alterações em cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]
+\[Essa função está sujeita a alterações com cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação diretamente com drivers de exibição.\]
 
-Permite que o driver especifique quantas superfícies provisórias são necessárias para dar suporte ao GUID especificado e o tamanho, o local e o formato de cada uma dessas superfícies.
+Permite que o driver especifique quantas superfícies intermediárias são necessárias para dar suporte ao GUID especificado e o tamanho, o local e o formato de cada uma dessas superfícies.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,30 +45,30 @@ DWORD APIENTRY NtGdiDdGetMoCompBuffInfo(
 
 <dl> <dt>
 
-*hDirectDraw* \[ no\]
+*hDirectDraw* \[ Em\]
 </dt> <dd>
 
-Identificador para objeto DirectDraw do modo de kernel criado anteriormente.
+Identificador para o objeto DirectDraw no modo kernel criado anteriormente.
 
 </dd> <dt>
 
-*puGetBuffData* \[ entrada, saída\]
+*puGetBuffData* \[ in, out\]
 </dt> <dd>
 
-Ponteiro para uma [**estrutura \_ GETMOCOMPCOMPBUFFDATA do DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getmocompcompbuffdata) que contém as informações do buffer compactado.
+Ponteiro para uma [**estrutura DD \_ GETMOCOMPCOMPBUFFDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getmocompcompbuffdata) que contém as informações de buffer compactado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-**NtGdiDdGetMoCompBuffInfo** retorna um dos seguintes códigos de retorno de chamada.
+**NtGdiDdGetMoCompBuffInfo** retorna um dos códigos de retorno de chamada a seguir.
 
 
 
 | Código de retorno                                                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_Driver DDHAL \_ manipulado**</dt> </dl>    | O driver executou a operação e retornou um código de retorno válido para essa operação. Se esse código for DD \_ OK, o DirectDraw ou Direct3D continuará com a função. Caso contrário, o DirectDraw ou o Direct3D retorna o código de erro fornecido pelo driver e anula a função.<br/>                                                                                 |
-| <dl> <dt>**Driver DDHAL não \_ \_ manipulado**</dt> </dl> | O driver não tem nenhum comentário sobre a operação solicitada. Se for necessário que o driver implementou um retorno de chamada específico, o DirectDraw ou o Direct3D relatará uma condição de erro. Caso contrário, o DirectDraw ou o Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido pela execução da implementação do DirectDraw ou do Direct3D independente de dispositivo.<br/> |
+| <dl> <dt>**DRIVER DDHAL \_ \_ MANIPULADO**</dt> </dl>    | O driver realizou a operação e retornou um código de retorno válido para essa operação. Se esse código for DD \_ OK, DirectDraw ou Direct3D prosseguirá com a função . Caso contrário, DirectDraw ou Direct3D retornará o código de erro fornecido pelo driver e anulará a função.<br/>                                                                                 |
+| <dl> <dt>**DDHAL \_ DRIVER \_ NOTHANDLED**</dt> </dl> | O driver não tem nenhum comentário sobre a operação solicitada. Se o driver precisar ter implementado um retorno de chamada específico, DirectDraw ou Direct3D relata uma condição de erro. Caso contrário, DirectDraw ou Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido executando a implementação independente de dispositivo DirectDraw ou Direct3D.<br/> |
 
 
 
@@ -76,7 +76,7 @@ Ponteiro para uma [**estrutura \_ GETMOCOMPCOMPBUFFDATA do DD**](/windows/win32/
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações, consulte o Microsoft DirectX Video Acceleration Driver Development Kit (DDK).
+Para obter mais informações, consulte O DDK (Kit de Desenvolvimento de Driver de Aceleração de Vídeo) do Microsoft DirectX.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Para obter mais informações, consulte o Microsoft DirectX Video Acceleration D
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 

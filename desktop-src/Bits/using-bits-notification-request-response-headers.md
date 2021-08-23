@@ -4,12 +4,12 @@ description: O BITS pode enviar o local do arquivo de carregamento (por referên
 ms.assetid: b80f9077-54e7-4d10-909a-dee7d8822627
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 5dcbee8b82d96a4f13db0ae4de6441e9df40ce83
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3db568f483468cbc92474f24f830da5bf1be94a2165cbb69a2d1751cc58965dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021064"
 ---
 # <a name="using-bits-notification-requestresponse-headers"></a>Usando cabeçalhos de solicitação/resposta de notificação do BITS
 
@@ -59,9 +59,9 @@ Se você quiser usar um arquivo de resposta diferente daquele especificado em BI
 ```JavaScript
   Response.AddHeader "BITS-Static-Response-URL" "https://myserver/mypath/myfile"
 ```
- 
+ 
 
- 
+ 
 
 
 

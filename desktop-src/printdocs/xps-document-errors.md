@@ -1,19 +1,19 @@
 ---
-description: A tabela a seguir lista todos os valores HRESULT que podem ser retornados pelos métodos da API de documento XPS.
+description: A tabela a seguir lista todos os valores HRESULT que podem ser retornados pelos métodos da API de Documento XPS.
 ms.assetid: 9e6db1e3-7151-4538-8607-b7185ebc0110
-title: Erros de documento XPS (Xpsobjectmodel. h)
+title: Erros de documento XPS (Xpsobjectmodel.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a221858e177172a0062185cbe1bcc127ccc728fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d142105d9d958d435f8777212a4473cbaa4f4bb6712e387e3dfeffdcb85c58c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971135"
 ---
 # <a name="xps-document-errors"></a>Erros de documento XPS
 
-A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pelos métodos da API de documento XPS. Observe que nem todos os métodos retornam todos os valores retornados listados nesta tabela.
+A tabela a seguir lista todos os **valores HRESULT** que podem ser retornados pelos métodos da API de Documento XPS. Observe que nem todos os métodos retornam todos os valores de retorno listados nesta tabela.
 
 
 
@@ -24,7 +24,7 @@ A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pe
 </colgroup>
 <thead>
 <tr class="header">
-<th>Código/valor de retorno</th>
+<th>Valor/código de retorno</th>
 <th>Descrição</th>
 </tr>
 </thead>
@@ -35,39 +35,39 @@ A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pe
 </tr>
 <tr class="even">
 <td><span id="XPS_E_BLEED_BOX_PAGE_DIMENSIONS_NOT_IN_SYNC"></span><span id="xps_e_bleed_box_page_dimensions_not_in_sync"></span><dl> <dt><strong>XPS_E_BLEED_BOX_PAGE_DIMENSIONS_NOT_IN_SYNC</strong></dt> <dt>0x80520509</dt> </dl></td>
-<td>As dimensões da caixa de sangria não são compatíveis com as dimensões da página.<br/> O valor da largura da caixa de sangria deve ser maior ou igual à largura da página, além do valor absoluto da coordenada x da origem da caixa de sangria. O valor da altura da caixa de sangria deve ser maior ou igual à altura da página mais o valor absoluto da coordenada y da origem da caixa de sangria. <br/></td>
+<td>As dimensões da caixa de correio não são compatíveis com as dimensões da página.<br/> O valor de largura da caixa de corte deve ser maior ou igual à largura da página mais o valor absoluto da coordenada X da origem da caixa de ressarção. O valor de altura da caixa de correio deve ser maior ou igual à altura da página mais o valor absoluto da coordenada y da origem da caixa de correio. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_BOTH_PATHFIGURE_AND_ABBR_SYNTAX_PRESENT"></span><span id="xps_e_both_pathfigure_and_abbr_syntax_present"></span><dl> <dt><strong>XPS_E_BOTH_PATHFIGURE_AND_ABBR_SYNTAX_PRESENT</strong></dt> <dt>0x80520507</dt> </dl></td>
-<td>Um elemento <strong>PathGeometry</strong> contém um conjunto de figuras Path que são especificadas com o atributo <strong>figuras</strong> ou com um elemento <strong>PathFigure</strong> filho. As figuras de caminho de uma geometria não podem ter o atributo <strong>figures</strong> e um elemento <strong>PathFigure</strong> filho. <br/></td>
+<td>Um <strong>elemento PathGeometry</strong> contém um conjunto de figuras de caminho que são especificadas com o atributo <strong>Figures</strong> ou com um <strong>elemento PathFigure</strong> filho. As figuras de caminho de uma geometria não podem ter o atributo <strong>Figures</strong> e um <strong>elemento PathFigure</strong> filho. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_BOTH_RESOURCE_AND_SOURCEATTR_PRESENT"></span><span id="xps_e_both_resource_and_sourceattr_present"></span><dl> <dt><strong>XPS_E_BOTH_RESOURCE_AND_SOURCEATTR_PRESENT</strong></dt> <dt>0x80520508</dt> </dl></td>
-<td>Um elemento <strong>ResourceDictionary</strong> que especifica um dicionário de recursos remotos em seu atributo de <strong>origem</strong> não deve conter nenhum filho de definição de recurso.<br/></td>
+<td>Um <strong>elemento ResourceDictionary</strong> que especifica um dicionário de recursos remotos em seu atributo <strong>Source</strong> NÃO DEVE conter nenhum filho de definição de recurso.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_CARET_OUT_OF_ORDER"></span><span id="xps_e_caret_out_of_order"></span><dl> <dt><strong>XPS_E_CARET_OUT_OF_ORDER</strong></dt> <dt>0x80520306</dt> </dl></td>
-<td>Um valor de local de cursor está fora de ordem. Os valores de local devem ser classificados em ordem crescente. <br/></td>
+<td>Um valor de local de adoção está fora de ordem. Os valores de localização devem ser classificação em ordem crescente. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_CARET_OUTSIDE_STRING"></span><span id="xps_e_caret_outside_string"></span><dl> <dt><strong>XPS_E_CARET_OUTSIDE_STRING</strong></dt> <dt>0x80520305</dt> </dl></td>
-<td>A interrupção do cursor foi especificada para uma cadeia de caracteres vazia; ou, o índice de salto do cursor excedeu o comprimento da cadeia de caracteres Unicode. <br/></td>
+<td>Foram especificadas paradas de adoção para uma cadeia de caracteres vazia; ou, o índice de salto com a distância excedeu o comprimento da cadeia de caracteres Unicode. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_COLOR_COMPONENT_OUT_OF_RANGE"></span><span id="xps_e_color_component_out_of_range"></span><dl> <dt><strong>XPS_E_COLOR_COMPONENT_OUT_OF_RANGE</strong></dt> <dt>0x80520506</dt> </dl></td>
-<td>Um valor de cor está fora do intervalo.<br/> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_SCRGB</strong></a> tipos de cor, o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a + 1,0.<br/> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_CONTEXT</strong></a> tipos de cor, o <strong>channelValues [0]</strong> que representa o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a + 1,0. <br/></td>
+<td>Um valor de cor está fora do intervalo.<br/> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_SCRGB</strong></a> de cores, o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a +1,0.<br/> Para <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_color"><strong>XPS_COLOR_TYPE_CONTEXT</strong></a> de cores, <strong>o channelValues[0]</strong> que representa o valor do canal alfa deve ser maior ou igual a 0,0 e menor ou igual a +1,0. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_DICTIONARY_ITEM_NAMED"></span><span id="xps_e_dictionary_item_named"></span><dl> <dt><strong>XPS_E_DICTIONARY_ITEM_NAMED</strong></dt> <dt>0x80520401</dt> </dl></td>
-<td>Um Visual em um dicionário de recursos tem o atributo <strong>Name</strong> , que pode não ser especificado em qualquer filho de um elemento <strong>ResourceDictionary</strong> .<br/></td>
+<td>Um visual em um dicionário de recursos tem o <strong>atributo Name,</strong> que pode não ser especificado em nenhum filho de <strong>um elemento ResourceDictionary.</strong><br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_DUPLICATE_NAMES"></span><span id="xps_e_duplicate_names"></span><dl> <dt><strong>XPS_E_DUPLICATE_NAMES</strong></dt> <dt>0x80520209</dt> </dl></td>
-<td>Já existe um objeto com este nome no dicionário.<br/></td>
+<td>Um objeto com esse nome já existe no dicionário.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_DUPLICATE_RESOURCE_KEYS"></span><span id="xps_e_duplicate_resource_keys"></span><dl> <dt><strong>XPS_E_DUPLICATE_RESOURCE_KEYS</strong></dt> <dt>0x80520200</dt> </dl></td>
-<td>Já existe um objeto com esse nome de chave no dicionário.<br/></td>
+<td>Um objeto com esse nome de chave já existe no dicionário.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INDEX_OUT_OF_RANGE"></span><span id="xps_e_index_out_of_range"></span><dl> <dt><strong>XPS_E_INDEX_OUT_OF_RANGE</strong></dt> <dt>0x80520500</dt> </dl></td>
@@ -75,11 +75,11 @@ A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pe
 </tr>
 <tr class="even">
 <td><span id="XPS_E_INVALID_BLEED_BOX"></span><span id="xps_e_invalid_bleed_box"></span><dl> <dt><strong>XPS_E_INVALID_BLEED_BOX</strong></dt> <dt>0x80520004</dt> </dl></td>
-<td>O retângulo da caixa de sangria contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para obter os valores válidos. <br/></td>
+<td>O retângulo da caixa de correio contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para os valores válidos. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INVALID_CONTENT_BOX"></span><span id="xps_e_invalid_content_box"></span><dl> <dt><strong>XPS_E_INVALID_CONTENT_BOX</strong></dt> <dt>0x8052000b</dt> </dl></td>
-<td>O retângulo da caixa de conteúdo contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para obter os valores válidos. <br/></td>
+<td>O retângulo da caixa de conteúdo contém um ou mais valores que não são válidos. Consulte a descrição do parâmetro para os valores válidos. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_INVALID_CONTENT_TYPE"></span><span id="xps_e_invalid_content_type"></span><dl> <dt><strong>XPS_E_INVALID_CONTENT_TYPE</strong></dt> <dt>0x8052000e</dt> </dl></td>
@@ -87,7 +87,7 @@ A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pe
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INVALID_FLOAT"></span><span id="xps_e_invalid_float"></span><dl> <dt><strong>XPS_E_INVALID_FLOAT</strong></dt> <dt>0x80520007</dt> </dl></td>
-<td>Um valor <strong>float</strong> não é válido. Ele é infinito ou não um número (NAN).<br/></td>
+<td>Um <strong>valor FLOAT</strong> não é válido. É um NAN (número infinito ou não).<br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_INVALID_FONT_URI"></span><span id="xps_e_invalid_font_uri"></span><dl> <dt><strong>XPS_E_INVALID_FONT_URI</strong></dt> <dt>0x8052000a</dt> </dl></td>
@@ -99,20 +99,20 @@ A tabela a seguir lista todos os valores **HRESULT** que podem ser retornados pe
 </tr>
 <tr class="even">
 <td><span id="XPS_E_INVALID_LOOKUP_TYPE"></span><span id="xps_e_invalid_lookup_type"></span><dl> <dt><strong>XPS_E_INVALID_LOOKUP_TYPE</strong></dt> <dt>0x80520006</dt> </dl></td>
-<td>O nome da chave de pesquisa faz referência a um objeto que não é o tipo correto para a chamada; por exemplo, se o método retornar um pincel, mas o nome da chave de pesquisa se referir a um objeto Geometry.<br/></td>
+<td>O nome da chave de consulta faz referência a um objeto que não é o tipo correto para a chamada; por exemplo, se o método retornar um pincel, mas o nome da chave de busca se referir a um objeto geometry.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INVALID_MARKUP"></span><span id="xps_e_invalid_markup"></span><dl> <dt><strong>XPS_E_INVALID_MARKUP</strong></dt> <dt>0x8052000c</dt> </dl></td>
-<td>A marcação que está sendo lida contém um elemento ou um atributo que não está de acordo com a <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">especificação de papel XML</a>.<br/>
+<td>A marcação que está sendo lida contém um elemento ou um atributo que não está em conformidade com o <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">XML Paper Specification</a>.<br/>
 <blockquote>
 [!Note]<br />
-Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <strong>float</strong> em vez de <strong>Double</strong>. Se um documento XPS tiver um elemento com dados de ponto flutuante que não caiba em um valor <strong>float</strong> , esse erro será retornado quando esse valor for encontrado durante a desserialização.
+Para representar valores de ponto flutuante, o OM XPS usa o <strong>tipo de</strong> dados FLOAT em vez de <strong>DOUBLE.</strong> Se um documento XPS tiver um elemento com dados de ponto flutuante que não se ajustam a um valor <strong>FLOAT,</strong> esse erro será retornado quando esse valor for encontrado durante a desserialização.
 </blockquote>
 <br/> <br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_INVALID_NAME"></span><span id="xps_e_invalid_name"></span><dl> <dt><strong>XPS_E_INVALID_NAME</strong></dt> <dt>0x80520001</dt> </dl></td>
-<td>A cadeia de caracteres passada não é um nome válido, de acordo com a especificação de papel XML. <br/></td>
+<td>A cadeia de caracteres que foi passada não é um nome válido, de acordo com o XML Paper Specification. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INVALID_OBFUSCATED_FONT_URI"></span><span id="xps_e_invalid_obfuscated_font_uri"></span><dl> <dt><strong>XPS_E_INVALID_OBFUSCATED_FONT_URI</strong></dt> <dt>0x8052000f</dt> </dl></td>
@@ -124,7 +124,7 @@ Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <stron
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INVALID_RESOURCE_KEY"></span><span id="xps_e_invalid_resource_key"></span><dl> <dt><strong>XPS_E_INVALID_RESOURCE_KEY</strong></dt> <dt>0x80520002</dt> </dl></td>
-<td>De acordo com a <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">especificação de papel XML</a>, a cadeia de caracteres da chave de pesquisa não é válida.<br/></td>
+<td>De acordo com o <a href="https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf">XML Paper Specification</a>, a cadeia de caracteres de chave de lookup não é válida.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_INVALID_THUMBNAIL_IMAGE_TYPE"></span><span id="xps_e_invalid_thumbnail_image_type"></span><dl> <dt><strong>XPS_E_INVALID_THUMBNAIL_IMAGE_TYPE</strong></dt> <dt>0x80520005</dt> </dl></td>
@@ -132,11 +132,11 @@ Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <stron
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_INVALID_XML_ENCODING"></span><span id="xps_e_invalid_xml_encoding"></span><dl> <dt><strong>XPS_E_INVALID_XML_ENCODING</strong></dt> <dt>0x8052000d</dt> </dl></td>
-<td>Marcação XML incorreta ou formatada incorretamente.<br/></td>
+<td>Encontrada marcação XML incorreta ou formatada incorretamente.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_MAPPING_OUT_OF_ORDER"></span><span id="xps_e_mapping_out_of_order"></span><dl> <dt><strong>XPS_E_MAPPING_OUT_OF_ORDER</strong></dt> <dt>0x80520302</dt> </dl></td>
-<td>Em uma ou mais estruturas de <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_glyph_mapping"><strong>XPS_GLYPH_MAPPING</strong></a> , um elemento está fora de sequência. <br/></td>
+<td>Em uma ou mais <a href="/windows/win32/api/xpsobjectmodel/ns-xpsobjectmodel-xps_glyph_mapping"><strong>XPS_GLYPH_MAPPING</strong></a> estruturas, um elemento está fora de sequência. <br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_MAPPING_OUTSIDE_INDICES"></span><span id="xps_e_mapping_outside_indices"></span><dl> <dt><strong>XPS_E_MAPPING_OUTSIDE_INDICES</strong></dt> <dt>0x80520304</dt> </dl></td>
@@ -144,19 +144,19 @@ Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <stron
 </tr>
 <tr class="even">
 <td><span id="XPS_E_MAPPING_OUTSIDE_STRING"></span><span id="xps_e_mapping_outside_string"></span><dl> <dt><strong>XPS_E_MAPPING_OUTSIDE_STRING</strong></dt> <dt>0x80520303</dt> </dl></td>
-<td>Erro nos mapeamentos de glifos.<br/> Se a cadeia de caracteres Unicode estiver vazia, esse erro significa que um mapeamento de glifo também foi definido. Os mapeamentos de glifo não devem ser definidos se a cadeia de caracteres Unicode estiver vazia.<br/> Se a cadeia de caracteres Unicode não estiver vazia, esse erro significa que um mapeamento de glifo foi definido para glifos fora da cadeia de caracteres Unicode. Os mapeamentos de glifo não podem ser definidos para glifos que se enquadram fora do comprimento da cadeia de caracteres Unicode.<br/></td>
+<td>Erro nos mapeamentos de glifo.<br/> Se a cadeia de caracteres Unicode estiver vazia, esse erro significa que um mapeamento de glifo também foi definido. Mapeamentos de glifo não devem ser definidos se a cadeia de caracteres Unicode estiver vazia.<br/> Se a cadeia de caracteres Unicode não estiver vazia, esse erro significa que um mapeamento de glifo foi definido para glifos fora da cadeia de caracteres Unicode. Mapeamentos de glifo não podem ser definidos para glifos que estão fora do comprimento da cadeia de caracteres Unicode.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_MISSING_COLORPROFILE"></span><span id="xps_e_missing_colorprofile"></span><dl> <dt><strong>XPS_E_MISSING_COLORPROFILE</strong></dt> <dt>0x80520104</dt> </dl></td>
-<td>O parâmetro de perfil de cor é <strong>nulo</strong>, mas um perfil de cor é esperado. Um perfil de cor é necessário quando o tipo de cor é XPS_COLOR_TYPE_CONTEXT. <br/></td>
+<td>O parâmetro de perfil de cor <strong>é NULL,</strong>mas um perfil de cor é esperado. Um perfil de cor é necessário quando o tipo de cor é XPS_COLOR_TYPE_CONTEXT. <br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_MISSING_DISCARDCONTROL"></span><span id="xps_e_missing_discardcontrol"></span><dl> <dt><strong>XPS_E_MISSING_DISCARDCONTROL</strong></dt> <dt>0x80520112</dt> </dl></td>
-<td>Uma página refere-se a recursos descartados, mas não especifica um nome de parte DiscardControl.<br/></td>
+<td>Uma página refere-se a recursos que podem ser descartados, mas não especifica um nome de parte DiscardControl.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_MISSING_DOCUMENT"></span><span id="xps_e_missing_document"></span><dl> <dt><strong>XPS_E_MISSING_DOCUMENT</strong></dt> <dt>0x80520109</dt> </dl></td>
-<td><a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage"><strong>IXpsOMPackageWriter:: AddPage</strong></a> foi chamado antes de <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument"><strong>IXpsOMPackageWriter:: StartNewDocument</strong></a>.<br/></td>
+<td><a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-addpage"><strong>IXpsOMPackageWriter::AddPage</strong></a> foi chamado antes <a href="/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument"><strong>de IXpsOMPackageWriter::StartNewDocument</strong></a>.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_MISSING_DOCUMENTSEQUENCE_RELATIONSHIP"></span><span id="xps_e_missing_documentsequence_relationship"></span><dl> <dt><strong>XPS_E_MISSING_DOCUMENTSEQUENCE_RELATIONSHIP</strong></dt> <dt>0x80520108</dt> </dl></td>
@@ -164,7 +164,7 @@ Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <stron
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_MISSING_FONTURI"></span><span id="xps_e_missing_fonturi"></span><dl> <dt><strong>XPS_E_MISSING_FONTURI</strong></dt> <dt>0x80520107</dt> </dl></td>
-<td>A interface <a href="/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs"><strong>IXpsOMGlyphs</strong></a> requer um URI de fonte, mas uma não está especificada.<br/></td>
+<td>A interface <a href="/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomglyphs"><strong>IXpsOMGlyphs</strong></a> requer um URI de fonte, mas um não é especificado.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="XPS_E_MISSING_GLYPHS"></span><span id="xps_e_missing_glyphs"></span><dl> <dt><strong>XPS_E_MISSING_GLYPHS</strong></dt> <dt>0x80520102</dt> </dl></td>
@@ -184,7 +184,7 @@ Para representar valores de ponto flutuante, o OM XPS usa o tipo de dados <stron
 </tr>
 <tr class="even">
 <td><span id="XPS_E_MISSING_PAGE_IN_DOCUMENT"></span><span id="xps_e_missing_page_in_document"></span><dl> <dt><strong>XPS_E_MISSING_PAGE_IN_DOCUMENT</strong></dt> <dt>0x8052010c</dt> </dl></td>
-<td>O FixedDocument não contém nenhuma parte FixedPage. Um documento XPS deve conter pelo menos uma parte FixedPage.<br/></td>
+<td>O FixedDocument não contém nenhuma parte de FixedPage. Um documento XPS deve conter pelo menos uma parte FixedPage.<br/></td>
 </tr>
 <tr class="odd">
 <td><span id="XPS_E_MISSING_PAGE_IN_PAGEREFERENCE"></span><span id="xps_e_missing_page_in_pagereference"></span><dl> <dt><strong>XPS_E_MISSING_PAGE_IN_PAGEREFERENCE</strong></dt> <dt>0x8052010d</dt> </dl></td>
@@ -351,10 +351,10 @@ Alguns métodos de API de documento XPS fazem chamadas para a API de [empacotame
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos de área de trabalho do Windows Vista \[ somente\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para Windows Server 2008 \[ Desktop apps somente\]<br/> |
-| parâmetro<br/>                   | <dl> <dt>Xpsobjectmodel. h</dt> </dl>                                       |
-| INSERI<br/>                      | <dl> <dt>XpsObjectModel. idl</dt> </dl>                                     |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos da área de trabalho do Vista \[\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma somente para aplicativos da área de trabalho do Windows Server 2008 \[\]<br/> |
+| Cabeçalho<br/>                   | <dl> <dt>Xpsobjectmodel.h</dt> </dl>                                       |
+| Idl<br/>                      | <dl> <dt>XpsObjectModel.idl</dt> </dl>                                     |
 
 
 

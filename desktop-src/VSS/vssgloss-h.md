@@ -5,12 +5,12 @@ ms.assetid: e99de576-ed73-4b91-a58c-4fae739d6709
 title: H (Serviço de Cópias de Sombra de Volume)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b285e503b8105481cbafa49ef25d8085f72250d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 235776eed621d744054be5cee9dc31b34af59a563def4f5eb2481b04a0c3ebf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056164"
 ---
 # <a name="h-volume-shadow-copy-service"></a>H (Serviço de Cópias de Sombra de Volume)
 
@@ -28,7 +28,7 @@ Um provedor que gerencia cópias de sombra no nível de hardware trabalhando em 
 <span id="base.vssgloss_hidden_shadow_copy"></span><span id="BASE.VSSGLOSS_HIDDEN_SHADOW_COPY"></span>**cópia de sombra oculta**
 </dt> <dd>
 
-Um volume oculto, que é um volume que não está montado e não é exposto no espaço de nome do Windows como uma letra de unidade ou pasta montada.
+um volume oculto, que é um volume que não está montado e não é exposto no espaço de nome de Windows como uma letra de unidade ou pasta montada.
 
 </dd> </dl>
 

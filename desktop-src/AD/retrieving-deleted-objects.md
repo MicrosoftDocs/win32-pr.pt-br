@@ -9,12 +9,12 @@ keywords:
 - Active Directory, usando, recuperando objetos excluídos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62b2062c747e38bc0b3a9b1b793a102006c11512
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5b033a992599fecfc372bf578c1bade54867fd8332c3e114103a69264f736b48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025084"
 ---
 # <a name="retrieving-deleted-objects"></a>Recuperando objetos excluídos
 
@@ -22,7 +22,7 @@ Os objetos excluídos são armazenados no contêiner objetos excluídos. O cont�
 
 O contêiner objetos excluídos pode ser obtido pela associação ao **\_ \_ \_ contêiner de objetos excluídos GUID** GUID bem conhecido definido em NTDSAPI. h. Para obter mais informações sobre a associação a GUIDs conhecidos, consulte [associação a objetos de Well-Known usando o WKGUID](binding-to-well-known-objects-using-wkguid.md).
 
-Especifique a opção de **\_ \_ ligação rápida do ADS** ao associar ao contêiner de objetos excluídos. Isso significa que as interfaces ADSI usadas para trabalhar com um objeto em Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsPropertyList**](/windows/desktop/api/iads/nn-iads-iadspropertylist), não podem ser usadas no contêiner objetos excluídos. Para obter mais informações e um exemplo de código que mostra como associar ao contêiner de objetos excluídos, consulte a função de exemplo GetDeletedObjectsContainer abaixo.
+especifique a opção **ADS \_ FAST \_ associar** ao associar ao contêiner objetos excluídos. Isso significa que as interfaces ADSI usadas para trabalhar com um objeto em Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsPropertyList**](/windows/desktop/api/iads/nn-iads-iadspropertylist), não podem ser usadas no contêiner objetos excluídos. Para obter mais informações e um exemplo de código que mostra como associar ao contêiner de objetos excluídos, consulte a função de exemplo GetDeletedObjectsContainer abaixo.
 
 -   [Enumerando objetos excluídos](#enumerating-deleted-objects)
 -   [Localizando um objeto excluído específico](#finding-a-specific-deleted-object)
@@ -46,7 +46,7 @@ Para um código de exemplo de código que mostra como enumerar objetos excluído
 
 A pesquisa pode ser refinada ainda mais adicionando ao filtro de pesquisa, conforme mostrado no [dialeto LDAP](/windows/desktop/ADSI/ldap-dialect). Por exemplo, para pesquisar todos os objetos excluídos com um nome que comece com "Jeff", o filtro de pesquisa seria definido como "(& (IsDeleted =**true**) (CN = Jeff \* ))".
 
-Como os objetos excluídos têm a maioria de seus atributos removidos quando são excluídos, não é possível associar diretamente a um objeto excluído. A opção de **\_ \_ ligação rápida do ADS** deve ser especificada durante a associação a um objeto excluído. Isso significa que as interfaces ADSI usadas para trabalhar com um objeto Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsPropertyList**](/windows/desktop/api/iads/nn-iads-iadspropertylist), não podem ser usadas em um contêiner de objeto excluído.
+Como os objetos excluídos têm a maioria de seus atributos removidos quando são excluídos, não é possível associar diretamente a um objeto excluído. a opção **ADS \_ FAST \_ associar** deve ser especificada ao associar a um objeto excluído. Isso significa que as interfaces ADSI usadas para trabalhar com um objeto Active Directory Domain Services, como [**IADs**](/windows/desktop/api/iads/nn-iads-iads) e [**IADsPropertyList**](/windows/desktop/api/iads/nn-iads-iadspropertylist), não podem ser usadas em um contêiner de objeto excluído.
 
 ## <a name="finding-a-specific-deleted-object"></a>Localizando um objeto excluído específico
 
@@ -435,6 +435,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

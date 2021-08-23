@@ -1,27 +1,27 @@
 ---
 title: Lendo o objectGUID de um objeto e criando uma representação de cadeia de caracteres do GUID
-description: Use o método IADs get \_ GUID para recuperar a forma de cadeia de caracteres vinculável do OBJECTguid de um objeto de diretório.
+description: Use o método GUID de obter IADs para recuperar a forma de cadeia de caracteres a \_ vinciável do objectGUID de um objeto de diretório.
 ms.assetid: 4f7f0e9d-3e06-47c9-83ce-cabed8692c15
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77bf9c346585e8604968c3f708dfdc62ee8d248f
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9872f16ddeee2e7a01e05be0d3c98aed5e66a9e6bce310565c001f831bd46e02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025323"
 ---
 # <a name="reading-an-objects-objectguid-and-creating-a-string-representation-of-the-guid"></a>Lendo o objectGUID de um objeto e criando uma representação de cadeia de caracteres do GUID
 
-A propriedade **objectGUID** de cada objeto em Active Directory Domain Services é armazenada no diretório como uma cadeia de caracteres de octeto. Uma cadeia de caracteres de octeto é uma matriz de caracteres de um byte. Use o método [**IADs:: get \_ GUID**](/windows/desktop/ADSI/iads-property-methods) para recuperar a forma de cadeia de caracteres vinculável do **objectGUID** de um objeto de diretório.
+A **propriedade objectGUID** de cada objeto Active Directory Domain Services é armazenada no diretório como uma cadeia de caracteres octeto. Uma cadeia de caracteres de octeto é uma matriz de caracteres de um byte. Use o [**método GUID \_ IADs::get**](/windows/desktop/ADSI/iads-property-methods) para recuperar a forma de cadeia de caracteres a vinciável do **objectGUID** de um objeto de diretório.
 
-Os exemplos de código a seguir mostram uma função que lê o atributo **objectGUID** e retorna uma representação de cadeia de caracteres do GUID usado para associar ao objeto.
+Os exemplos de código a seguir mostram uma função que lê o atributo **objectGUID** e retorna uma representação de cadeia de caracteres do GUID usado para se vincular ao objeto .
 
--   [Exemplo de Visual Basic](#visual-basic-example)
+-   [Visual Basic Exemplo](#visual-basic-example)
 -   [Exemplo de C++](#c-example)
 
-## <a name="visual-basic-example"></a>Exemplo de Visual Basic
+## <a name="visual-basic-example"></a>Visual Basic Exemplo
 
 
 ```VB
@@ -178,6 +178,6 @@ void wmain(int argc, wchar_t *argv[])
 
 
 
- 
+ 
 
- 
+ 

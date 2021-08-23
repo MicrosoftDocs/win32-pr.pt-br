@@ -1,7 +1,7 @@
 ---
-description: Função D3DXQuaternionLn (D3DX10Math. h) – calcula o logaritmo natural.
+description: Função D3DXQuaternionLn (D3DX10Math.h) – calcula o logaritmo natural.
 ms.assetid: 576cf676-bb42-45ec-8e45-4612a7cdb167
-title: Função D3DXQuaternionLn (D3DX10Math. h)
+title: Função D3DXQuaternionLn (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9abaaa231e424e55e496b7901882e9da17c59786
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ec225648d5024951ca51e0533098fee897a66d6770d0c937c0d251842613a9b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991116"
 ---
-# <a name="d3dxquaternionln-function-d3dx10mathh"></a>Função D3DXQuaternionLn (D3DX10Math. h)
+# <a name="d3dxquaternionln-function-d3dx10mathh"></a>Função D3DXQuaternionLn (D3DX10Math.h)
 
 Calcula o logaritmo natural.
 
@@ -41,21 +41,21 @@ D3DXQUATERNION* D3DXQuaternionLn(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Ponteiro para o [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que é o resultado da operação.
+Ponteiro para [**o D3DXQUATERNION**](d3d10-d3dxquaternion.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pQ* \[ no\]
+*pQ* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Ponteiro para a estrutura de D3DXQUATERNION de origem.
+Ponteiro para a estrutura D3DXQUATERNION de origem.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Ponteiro para uma estrutura D3DXQUATERNION que é o logaritmo natural.
 
 ## <a name="remarks"></a>Comentários
 
-A função D3DXQuaternionLn funciona apenas para os quaternions da unidade.
+A função D3DXQuaternionLn funciona apenas para quaternões de unidade.
 
 
 ```
@@ -78,9 +78,9 @@ The natural logarithm of Q is, ln(Q) = (0, theta * v)
 
 
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXQuaternionLn pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXQuaternionLn pode ser usada como um parâmetro para outra função.
 
-Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualquer entrada de Quaternion que ainda não esteja normalizada.
+Use [**D3DXQuaternionNormalize para**](d3d10-d3dxquaternionnormalize.md) qualquer entrada de quatérnion que ainda não tenha sido normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,12 +88,12 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

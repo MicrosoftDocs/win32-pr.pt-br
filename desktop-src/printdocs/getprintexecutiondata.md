@@ -1,7 +1,7 @@
 ---
-description: O GetPrintExecutionData recupera o contexto de impressão atual.
+description: GetPrintExecutionData recupera o contexto de impressão atual.
 ms.assetid: bb9506aa-a0da-46bc-a86a-84a79587cd50
-title: Função GetPrintExecutionData (winspool. h)
+title: Função GetPrintExecutionData (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - winspool.drv
-ms.openlocfilehash: a1b2f2674c9ef186338c91ed2e4500d8408964d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bbe08e82fb8f753d6e4fd23776618cb5f555b390434fdd0feddd231aaebc635
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971345"
 ---
 # <a name="getprintexecutiondata-function"></a>Função GetPrintExecutionData
 
-O **GetPrintExecutionData** recupera o contexto de impressão atual.
+**GetPrintExecutionData** recupera o contexto de impressão atual.
 
 > [!Note]  
-> Essa função destina-se a uso por drivers de impressora que estão em execução no contexto do spooler de impressão.
+> Essa função destina-se ao uso por drivers de impressora que estão em execução no contexto do spooler de impressão.
 
  
 
@@ -44,24 +44,24 @@ BOOL WINAPI GetPrintExecutionData(
 
 <dl> <dt>
 
-*pData* \[ fora\]
+*pData* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma variável que recebe o endereço da estrutura [**de \_ \_ dados de execução de impressão**](print-execution-data.md) .
+Um ponteiro para uma variável que recebe o endereço da estrutura [**PRINT \_ EXECUTION \_ DATA.**](print-execution-data.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se a função tiver sucesso; caso contrário, **false**. Se o valor de retorno for **false**, chame [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter o status de erro.
+Retornará **TRUE** se a função for bem-sucedida; caso **contrário, FALSE.** Se o valor de retorno for **FALSE,** chame [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) para obter o status do erro.
 
 ## <a name="remarks"></a>Comentários
 
-Os drivers de impressora devem chamar o [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) no módulo winspool. drv para obter o endereço da função **GetPrintExecutionData** porque o **GetPrintExecutionData** não tem suporte no Windows Vista ou em versões anteriores do Windows.
+Os drivers de impressora devem chamar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) no módulo winspool.drv para obter o endereço da função **GetPrintExecutionData** porque **GetPrintExecutionData** não tem suporte no Windows Vista ou em versões anteriores do Windows.
 
-**GetPrintExecutionData** só falhará se o valor de *pData* for **nulo**.
+**GetPrintExecutionData** só falhará se o valor de *pData* for **NULL.**
 
-O valor do membro **clientAppPID** dos [**dados de \_ execução \_ de impressão**](print-execution-data.md) só será significativo se o valor do **contexto** for o contexto de **execução de impressão \_ \_ \_ WOW64**. Se o valor do **contexto** não for **o \_ contexto de execução de impressão \_ \_ WOW64**, o valor de **clientAppPID** será 0.
+O valor do membro **clientAppPID** de [**PRINT EXECUTION \_ \_ DATA**](print-execution-data.md) só será significativo se o valor do contexto for **PRINT EXECUTION CONTEXT \_ \_ \_ WOW64**.  Se o valor do **contexto não** for PRINT EXECUTION **CONTEXT \_ \_ \_ WOW64**, o valor **de clientAppPID** será 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,10 +69,10 @@ O valor do membro **clientAppPID** dos [**dados de \_ execução \_ de impressã
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 
 
 
@@ -80,16 +80,16 @@ O valor do membro **clientAppPID** dos [**dados de \_ execução \_ de impressã
 
 <dl> <dt>
 
-[**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
+[**Getlasterror**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror)
 </dt> <dt>
 
 [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)
 </dt> <dt>
 
-[**\_contexto de execução de impressão \_**](print-execution-context.md)
+[**CONTEXTO DE \_ EXECUÇÃO \_ DE IMPRESSÃO**](print-execution-context.md)
 </dt> <dt>
 
-[**IMPRIMIR \_ dados de execução \_**](print-execution-data.md)
+[**IMPRIMIR \_ DADOS DE \_ EXECUÇÃO**](print-execution-data.md)
 </dt> </dl>
 
  
