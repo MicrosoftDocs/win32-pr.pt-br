@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6eff03f95d4ebbb068bccbfd9f68a930c00f0b00
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 673916c3a538f21ceea5b0b7578bb9e8f225ec2a349e38015eab0b50d73935aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512336"
 ---
 # <a name="imstscaxeventsonfocusreleased-method"></a>Método IMsTscAxEvents:: OnFocusReleased
 
 Chamado quando a combinação de teclas de foco da versão é pressionada. Por exemplo, esse evento é chamado quando o usuário pressiona as teclas CTRL + ALT + seta para a esquerda ou CTRL + ALT + seta para a direita.
 
-Esse evento permite que o contêiner de controle ActiveX assuma o controle do controle ActiveX. Por exemplo, isso é útil em um cenário em que você não tem um mouse e as combinações de teclas especiais, como ALT + TAB, estão sendo redirecionadas para o servidor. Nesse caso, você não tem uma maneira de retornar o foco do teclado de volta para a área de trabalho local. No entanto, com a combinação CTRL + ALT + seta para a esquerda ou CTRL + ALT + seta para a direita, o contêiner ActiveX pode escutar esse evento e responder, tirando o foco do controle ActiveX.
+esse evento permite que o contêiner de controle de ActiveX assuma o controle do controle de ActiveX. Por exemplo, isso é útil em um cenário em que você não tem um mouse e as combinações de teclas especiais, como ALT + TAB, estão sendo redirecionadas para o servidor. Nesse caso, você não tem uma maneira de retornar o foco do teclado de volta para a área de trabalho local. no entanto, com a combinação ctrl + alt + seta para a esquerda ou ctrl + alt + seta para a direita, o contêiner ActiveX pode escutar esse evento e responder, tirando o foco para fora do controle de ActiveX.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,7 +52,7 @@ O parâmetro de direção de 1 (CTRL + ALT + seta direita) ou 1 (CTRL + ALT + se
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

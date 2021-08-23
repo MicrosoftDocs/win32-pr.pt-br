@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithBasicOverSslServiceExample
-description: Revise um exemplo C++ da API de Serviços Web do Windows (WWSAPI) de uma calculadora HTTP com serviço overSL básico.
+description: examine um exemplo de Windows WWSAPI (API de serviços Web) C++ de uma calculadora HTTP com serviço básico sobre SSL.
 ms.assetid: ff56afec-da8c-4a2c-b26e-a065f9b73db1
 keywords:
-- HttpCalculatorWithBasicOverSslServiceExample Native-Web-Services
+- HttpCalculatorWithBasicOverSslServiceExample nativo – Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0490c8409ea8a08c990bad49472303dd4ae58c93
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2217cbe700ec5844b824d81cc6cdc939b187e08e36ba761d690970bbc7f7edea
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546006"
 ---
 # <a name="httpcalculatorwithbasicoversslserviceexample"></a>HttpCalculatorWithBasicOverSslServiceExample
 
-Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com segurança de transporte SSL e autenticação básica de cabeçalho HTTP. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL, que também fornece autenticação de servidor. A autenticação do cliente é fornecida por um par nome de usuário/senha fornecido em cabeçalhos HTTP usando o esquema básico.
+Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com segurança de transporte SSL e autenticação básica de cabeçalho HTTP. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor. A autenticação de cliente é fornecida por um par de nome de usuário/senha fornecido em cabeçalhos HTTP usando o esquema básico.
 
--   [HttpCalculatorWithBasicOverSslService.cpp](#httpcalculatorwithbasicoversslservicecpp)
--   [CalculatorService.wsdl](#calculatorservicewsdl)
+-   [HttpCalculatorWithBasicOverSslService. cpp](#httpcalculatorwithbasicoversslservicecpp)
+-   [CalculatorService. WSDL](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorwithbasicoversslservicecpp"></a>HttpCalculatorWithBasicOverSslService.cpp
+## <a name="httpcalculatorwithbasicoversslservicecpp"></a>HttpCalculatorWithBasicOverSslService. cpp
 
 
 ```C++
@@ -282,7 +282,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
+## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
 
 ``` syntax
 <wsdl:definitions 

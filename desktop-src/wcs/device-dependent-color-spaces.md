@@ -3,8 +3,8 @@ title: Espaços de cores dependentes do dispositivo
 description: A maioria dos espaços de cores são dependentes do dispositivo.
 ms.assetid: 657ec64b-8605-4d05-a7d6-9f8bb71e6a71
 keywords:
-- WCS (sistema de cores do Windows), espaços de cores dependentes do dispositivo
-- WCS (sistema de cores do Windows), espaços de cores dependentes do dispositivo
+- Windows Sistema de cores (WCS), espaços de cores dependentes do dispositivo
+- WCS (Windows sistema de cores), espaços de cores dependentes do dispositivo
 - gerenciamento de cores de imagem, espaços de cores dependentes do dispositivo
 - gerenciamento de cores, espaços de cores dependentes do dispositivo
 - cores, espaços de cores dependentes do dispositivo
@@ -15,12 +15,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22a1523ee6ba81dcdc3b69a468546871cfd21913
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: fe10ad9d48e750f9869b113a45f1235d2aa692532702ea4443ec3629d32276ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105769669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593616"
 ---
 # <a name="device-dependent-color-spaces"></a>Espaços de cores dependentes do dispositivo
 

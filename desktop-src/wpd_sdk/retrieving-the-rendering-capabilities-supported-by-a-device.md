@@ -1,41 +1,41 @@
 ---
-description: Recuperando os recursos de renderização suportados por um dispositivo
+description: Recuperando os recursos de renderização com suporte por um dispositivo
 ms.assetid: 2332e3cc-087c-49cf-bde9-7f86f65158e7
-title: Recuperando os recursos de renderização suportados por um dispositivo
+title: Recuperando os recursos de renderização com suporte por um dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 523f1f9bbcaefe1c502c7c74252582fddcadad4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5b5e4fd09417585954ae205fc28fc8cf0e78ab02fdd3add616859b35b4237ae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119546226"
 ---
-# <a name="retrieving-the-rendering-capabilities-supported-by-a-device"></a>Recuperando os recursos de renderização suportados por um dispositivo
+# <a name="retrieving-the-rendering-capabilities-supported-by-a-device"></a>Recuperando os recursos de renderização com suporte por um dispositivo
 
-Os dispositivos portáteis do Windows que dão suporte à categoria funcional informações de renderização ( \_ informações de renderização da categoria funcional de WPD \_ \_ \_ ) retornarão informações de renderização quando consultados. As informações de renderização descrevem os requisitos e as restrições impostas em aplicativos que tentam gravar conteúdo em um dispositivo.
+Windows Dispositivos portáteis que suportam a categoria funcional de informações de renderização (INFORMAÇÕES DE RENDERIZAÇÃO DE CATEGORIA FUNCIONAL WPD) retornarão informações de renderização \_ \_ quando \_ \_ consultados. As informações de renderização descrevem os requisitos e restrições impostos aos aplicativos que tentam gravar conteúdo em um dispositivo.
 
-A função ListRenderingCapabilityInformation, a função auxiliar SupportsFunctionalCategory e a função auxiliar ReadProfileInformationProperties no módulo DeviceCapabilities. cpp demonstram a recuperação de recursos de renderização para um dispositivo selecionado.
+A função ListRenderingCapabilityInformation, a função auxiliar SupportsFunctionalCategory e a função auxiliar ReadProfileInformationProperties no módulo DeviceCapabilities.cpp demonstram a recuperação de recursos de renderização para um dispositivo selecionado.
 
-Seu aplicativo pode recuperar os recursos de renderização com suporte de um dispositivo usando as interfaces descritas na tabela a seguir.
+Seu aplicativo pode recuperar os recursos de renderização com suporte por um dispositivo usando as interfaces descritas na tabela a seguir.
 
 
 
 | Interface                                                                                      | Descrição                                                 |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [**Interface IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Fornece acesso à interface IPortableDeviceProperties. |
-| [**Interface IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Fornece acesso aos métodos específicos da propriedade.           |
-| [**Interface IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Usado para armazenar as chaves de propriedade para o perfil especificado.      |
-| [**Interface IPortableDeviceValues**](iportabledevicevalues.md)                               | Usado armazena os valores de propriedade para o perfil especificado.       |
-| [**Interface IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Usado armazena os valores de propriedade para o perfil especificado.       |
-| [**Interface IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Usado armazena os valores de propriedade para o perfil especificado.       |
-| [**Interface IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)           | Usado armazena os valores de propriedade para o perfil especificado.       |
+| [**IPortableDeviceContent Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Fornece acesso à interface IPortableDeviceProperties. |
+| [**IPortableDeviceProperties Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Fornece acesso aos métodos específicos da propriedade.           |
+| [**IPortableDeviceKeyCollection Interface**](iportabledevicekeycollection.md)                 | Usado para armazenar as chaves de propriedade para o perfil determinado.      |
+| [**IPortableDeviceValues Interface**](iportabledevicevalues.md)                               | Usado para armazenar os valores de propriedade para o perfil determinado.       |
+| [**IPortableDeviceCapabilities Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)                   | Usado para armazenar os valores de propriedade para o perfil determinado.       |
+| [**IPortableDevicePropVariantCollection Interface**](iportabledevicepropvariantcollection.md) | Usado para armazenar os valores de propriedade para o perfil determinado.       |
+| [**IPortableDeviceValuesCollection Interface**](iportabledevicevaluescollection.md)           | Usado para armazenar os valores de propriedade para o perfil determinado.       |
 
 
 
  
 
-Uma das primeiras tarefas realizadas pelo aplicativo de exemplo é determinar se o dispositivo selecionado é capaz de listar os recursos de renderização. A função auxiliar SupportsFunctionalCategory determina se esse é o caso chamando a função auxiliar ListRenderingCapabilityInformation e passando informações de \_ \_ renderização de categoria funcional WPD \_ \_ como o segundo argumento.
+Uma das primeiras tarefas realizadas pelo aplicativo de exemplo é determinar se o dispositivo selecionado é capaz de listar recursos de renderização. A função auxiliar SupportsFunctionalCategory determina se esse é o caso chamando a função auxiliar ListRenderingCapabilityInformation e passando INFORMAÇÕES DE RENDERIZAÇÃO DE CATEGORIA FUNCIONAL WPD como o \_ \_ segundo \_ \_ argumento.
 
 
 ```C++
@@ -53,7 +53,7 @@ if (SupportsFunctionalCategory(pDevice, WPD_FUNCTIONAL_CATEGORY_RENDERING_INFORM
 
 
 
-Se o dispositivo for capaz de listar os recursos de renderização, a próxima etapa envolve a recuperação de um objeto [**IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) e a invocação do método [**GetFunctionalObjects**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfunctionalobjects) para recuperar um identificador de objeto para o objeto de informações de renderização.
+Se o dispositivo for capaz de listar recursos de renderização, a próxima etapa envolverá a recuperação de um objeto [**IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities) e a invocação do [**método GetFunctionalObjects**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfunctionalobjects) para recuperar um identificador de objeto para o objeto rendering-information.
 
 
 ```C++
@@ -81,7 +81,7 @@ if (SUCCEEDED(hr))
 
 
 
-A próxima etapa é armazenar o identificador de objeto de informações de renderização que acabou de ser recuperado em uma variável de cadeia de caracteres (strRenderingInfoObjectID) e, em seguida, chamar a função auxiliar ReadProfileInformationProperties. (A variável, strRenderingInfoObjectID, é passada como o segundo argumento para a função auxiliar.)
+A próxima etapa é armazenar o identificador de objeto rendering-information que acabou de ser recuperado em uma variável de cadeia de caracteres (strRenderingInfoObjectID) e, em seguida, chamar a função auxiliar ReadProfileInformationProperties. (A variável, strRenderingInfoObjectID, é passada como o segundo argumento para a função auxiliar.)
 
 
 ```C++
@@ -120,7 +120,7 @@ if (SUCCEEDED(hr))
 
 
 
-Uma das primeiras tarefas realizadas pela função auxiliar é recuperar um objeto [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) , que será usado para acessar os métodos específicos do conteúdo.
+Uma das primeiras tarefas realizadas pela função auxiliar é recuperar um objeto [**IPortableDeviceContent,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) que será usado para acessar os métodos específicos do conteúdo.
 
 
 ```C++
@@ -142,7 +142,7 @@ if (SUCCEEDED(hr))
 
 
 
-Em seguida, a função auxiliar recupera um objeto [**IPortableDeviceProperties**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) , que será usado para acessar os métodos específicos da propriedade.
+Em seguida, a função auxiliar recupera um [**objeto IPortableDeviceProperties,**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) que será usado para acessar os métodos específicos da propriedade.
 
 
 ```C++
@@ -164,7 +164,7 @@ if (SUCCEEDED(hr))
 
 
 
-A próxima etapa é criar um objeto [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) no qual as chaves de propriedade das informações de renderização são armazenadas. Depois que o objeto é criado, o método [**IPortableDeviceKeyCollection:: Add**](iportabledevicekeycollection-add.md) é invocado para adicionar as chaves necessárias. (É necessário adicionar essas chaves para que os perfis de renderização correspondentes possam ser recuperados nas etapas subsequentes.)
+A próxima etapa é criar um [**objeto IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) no qual as chaves de propriedade para as informações de renderização são armazenadas. Depois que o objeto é criado, o método [**IPortableDeviceKeyCollection::Add**](iportabledevicekeycollection-add.md) é invocado para adicionar as chaves necessárias. (É necessário adicionar essas chaves para que os perfis de renderização correspondentes possam ser recuperados nas etapas subsequentes.)
 
 
 ```C++
@@ -198,7 +198,7 @@ if (SUCCEEDED(hr))
 
 
 
-A próxima etapa é recuperar os valores de Propriedade do driver de dispositivo chamando o método [**IPortableDeviceProperties:: GetValues**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) .
+A próxima etapa é recuperar os valores de propriedade do driver de dispositivo chamando o [**método IPortableDeviceProperties::GetValues.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues)
 
 
 ```C++
@@ -255,7 +255,7 @@ if (SUCCEEDED(hr))
 
 
 
-Depois que a função auxiliar lê as \_ Propriedades de perfis de informações de RENDERIZAÇÃO WPD \_ \_ , os perfis de renderização são exibidos. Esses perfis são exibidos pela função auxiliar DisplayRenderingProfile.
+Depois que a função auxiliar ler as propriedades DE PERFIS DE INFORMAÇÕES DE RENDERIZAÇÃO \_ \_ WPD, os \_ perfis de renderização serão exibidos. Esses perfis são exibidos pela função auxiliar DisplayRenderingProfile.
 
 
 ```C++
@@ -341,28 +341,28 @@ void DisplayRenderingProfile(
 
 
 
-Observe que, como os perfis de renderização são estáticos, seu aplicativo pode optar por ler os perfis e armazená-los localmente (em vez de acessar o dispositivo cada vez que os dados forem necessários).
+Observe que, como os perfis de renderização são estáticos, seu aplicativo pode optar por ler os perfis e armazená-los localmente (em vez de acessar o dispositivo sempre que os dados são necessários).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Interface IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice Interface**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interface IPortableDeviceCapabilities**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
+[**IPortableDeviceCapabilities Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)
 </dt> <dt>
 
-[**Interface IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent Interface**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interface IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)
+[**IPortableDeviceKeyCollection Interface**](iportabledevicekeycollection.md)
 </dt> <dt>
 
-[**Interface IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection Interface**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
-[**Interface IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)
+[**IPortableDeviceValuesCollection Interface**](iportabledevicevaluescollection.md)
 </dt> <dt>
 
 [**Guia de programação**](programming-guide.md)

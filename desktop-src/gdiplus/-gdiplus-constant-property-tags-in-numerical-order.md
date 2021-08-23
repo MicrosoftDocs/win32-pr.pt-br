@@ -1,19 +1,19 @@
 ---
-description: A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em ordem numérica.
+description: A tabela a seguir lista as Windows GDI+ de propriedade da imagem em ordem numérica.
 ms.assetid: 44417090-a468-47c9-996c-bc7629a6e53f
 title: Marcas de propriedade em ordem numérica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fee3f21a67bf21b86014c5bfc50527ada1d9790
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46d4a03a97159cb40262da6e4ccf3c84fb5cc1253cc3d5bdf5a4729c5b3f113f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666356"
 ---
 # <a name="property-tags-in-numerical-order"></a>Marcas de propriedade em ordem numérica
 
-A tabela a seguir lista as marcas de propriedade de imagem do Windows GDI+ em ordem numérica.
+A tabela a seguir lista as Windows GDI+ de propriedade da imagem em ordem numérica.
 
 
 

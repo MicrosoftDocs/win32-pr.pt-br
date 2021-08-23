@@ -1,73 +1,73 @@
 ---
-description: A proteção de fluxo de controle (CFG) é um recurso de segurança de plataforma altamente otimizado que foi criado para combater vulnerabilidades de corrupção de memória.
+description: O CFG (Control Flow Guard) é um recurso de segurança de plataforma altamente otimizado que foi criado para combater vulnerabilidades de corrupção de memória.
 ms.assetid: 116EAD64-7CAE-455C-BA43-9492F78DE873
 title: Proteção de Fluxo de Controle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91cf97a648443135e7fee666ea4c259b1c32104e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62186a86f821e7eb350381c7dfbc500c80dd040f4321a8f630c7d408937a8460
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119622796"
 ---
 # <a name="control-flow-guard"></a>Proteção de Fluxo de Controle
 
-## <a name="what-is-control-flow-guard"></a>O que é a proteção de fluxo de controle?
+## <a name="what-is-control-flow-guard"></a>O que é o Control Flow Guard?
 
-A proteção de fluxo de controle (CFG) é um recurso de segurança de plataforma altamente otimizado que foi criado para combater vulnerabilidades de corrupção de memória. Ao colocar restrições rígidas sobre onde um aplicativo pode executar código, isso torna muito mais difícil para explorações executar código arbitrário por meio de vulnerabilidades como estouros de buffer. O CFG estende as tecnologias de mitigação de exploração anteriores, como [/GS](/cpp/build/reference/gs-buffer-security-check?view=vs-2019), [DEP](../memory/data-execution-prevention.md)e [ASLR](/archive/blogs/michael_howard/address-space-layout-randomization-in-windows-vista).
+O CFG (Control Flow Guard) é um recurso de segurança de plataforma altamente otimizado que foi criado para combater vulnerabilidades de corrupção de memória. Ao colocar restrições rígidas sobre onde um aplicativo pode executar código, torna muito mais difícil para explorações executar código arbitrário por meio de vulnerabilidades como estouros de buffer. O CFG estende tecnologias de mitigação de exploração anteriores, como [/GS,](/cpp/build/reference/gs-buffer-security-check?view=vs-2019) [DEP](../memory/data-execution-prevention.md)e [ASLR.](/archive/blogs/michael_howard/address-space-layout-randomization-in-windows-vista)
 
-Esse recurso está disponível no Microsoft Visual Studio 2015 e é executado em versões "com reconhecimento de CFG" do Windows — as versões x86 e x64 para desktop e servidor do Windows 10 e do Windows 8.1 Update (KB3000850).
+Esse recurso está disponível no Microsoft Visual Studio 2015 e é executado em versões "com suporte para CFG" do Windows – as versões x86 e x64 para Desktop e Server do Windows 10 e Windows 8.1 Update (KB3000850).
 
-Recomendamos que os desenvolvedores habilitem o CFG para seus aplicativos. Você não precisa habilitar o CFG para cada parte do seu código, pois uma combinação de CFG habilitado e código não habilitado para CFG será executada corretamente. Mas a falha ao habilitar CFG para todo o código pode abrir lacunas na proteção. Além disso, o código de CFG habilitado funciona bem em versões "CFG sem reconhecimento" do Windows e, portanto, é totalmente compatível com eles.
+Incentivamos fortemente os desenvolvedores a habilitar o CFG para seus aplicativos. Você não precisa habilitar o CFG para cada parte do código, pois uma combinação de código habilitado para CFG e não habilitado para CFG será executada habilitada. Mas não habilitar o CFG para todo o código pode abrir lacunas na proteção. Além disso, o código habilitado para CFG funciona bem em versões "CFG-Unaware" do Windows e, portanto, é totalmente compatível com elas.
 
-## <a name="how-can-i-enable-cfg"></a>Como posso habilitar o CFG?
+## <a name="how-can-i-enable-cfg"></a>Como habilitar o CFG?
 
-Na maioria dos casos, não há necessidade de alterar o código-fonte. Tudo o que você precisa fazer é adicionar uma opção ao seu projeto do Visual Studio 2015, e o compilador e o vinculador habilitarão o CFG.
+Na maioria dos casos, não há necessidade de alterar o código-fonte. Tudo o que você precisa fazer é adicionar uma opção ao projeto Visual Studio 2015, e o compilador e o linker habilitam o CFG.
 
-O método mais simples é navegar até **Propriedades de projeto \| configurações de \| configuração \| C/C++ \| geração de código** e escolher **Sim (/Guard: CF)** para proteção de fluxo de controle.
+O método mais simples é navegar até Project propriedades de configuração **\| \| \| C/C++ \|** Geração de código e escolher **Sim (/guard:cf)** para Control Flow Guard.
 
 ![Propriedade cfg no Visual Studio](images/cfg-vs.png)
 
-Como alternativa, adicione **/Guard: CF** às propriedades do projeto Propriedades de **configuração de linha de \| \| \| comando C/C++ \| \| Opções adicionais** (para o compilador) e **/Guard: CF** às propriedades do projeto Propriedades de **\| \| configuração linha de comando do \| vinculador \| \| Opções adicionais** (para o vinculador).
+Como alternativa, adicione **/guard:cf** às propriedades de configuração de propriedades do Project Opções adicionais de linha de comando **\| \| \| C/C++ \| \|** (para o compilador) e **/guard:cf** para opções adicionais de linha de comando do vinculador de propriedades de configuração de propriedades do Project (para o linker). **\| \| \| \| \|**
 
-![Propriedade cfg para o compilador](images/cfg-compiler.png)![Propriedade cfg para o vinculador](images/cfg-linker.png)
+![Propriedade cfg para o compilador](images/cfg-compiler.png)![Propriedade cfg para o linker](images/cfg-linker.png)
 
-Consulte [/Guard (habilitar proteção de fluxo de controle)](/cpp/build/reference/guard-enable-control-flow-guard?view=vs-2019) para obter informações adicionais.
+Consulte [/guard (Habilitar Flow Guard) para](/cpp/build/reference/guard-enable-control-flow-guard?view=vs-2019) obter informações adicionais.
 
-Se você estiver criando seu projeto na linha de comando, poderá adicionar as mesmas opções. Por exemplo, se você estiver Compilando um projeto chamado Test. cpp, use **CL/Guard: CF Test. cpp/link/Guard: CF**.
+Se você estiver criando seu projeto da linha de comando, poderá adicionar as mesmas opções. Por exemplo, se você estiver compilando um projeto chamado test.cpp, use **cl /guard:cf test.cpp /link /guard:cf**.
 
-Você também tem a opção de controlar dinamicamente o conjunto de endereços de destino iCal que são considerados válidos por CFG usando o [**SetProcessValidCallTargets**](/windows/desktop/api/memoryapi/nf-memoryapi-setprocessvalidcalltargets) da API de gerenciamento de memória. A mesma API pode ser usada para especificar se as páginas são destinos inválidos ou válidos para CFG. As funções [**usar VirtualProtect**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualprotect) e [**VirtualAlloc**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) , por padrão, tratam uma região especificada do executável e as páginas confirmadas como destinos de chamada indiretos válidos. É possível substituir esse comportamento, como ao implementar um compilador just-in-time, especificando **destinos de página \_ \_ inválidos** ao chamar o **VirtualAlloc** ou **o \_ direcionamento de página \_ sem \_ atualização** ao chamar **usar VirtualProtect** , conforme detalhado em [**constantes de proteção de memória**](/windows/desktop/Memory/memory-protection-constants).
+Você também tem a opção de controlar dinamicamente o conjunto de endereços de destino de icall que são considerados válidos pelo CFG usando [**SetProcessValidCallTargets**](/windows/desktop/api/memoryapi/nf-memoryapi-setprocessvalidcalltargets) da memória API de Gerenciamento. A mesma API pode ser usada para especificar se as páginas são destinos inválidos ou válidos para CFG. As [**funções VirtualProtect**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualprotect) e [**VirtualAlloc**](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) tratarão por padrão uma região especificada de páginas executáveis e confirmadas como destinos de chamada indireta válidos. É possível substituir esse comportamento, como ao implementar um compilador Just-In-Time, especificando **PAGE \_ TARGETS \_ INVALID** ao chamar **VirtualAlloc** ou **PAGE \_ TARGETS NO \_ \_ UPDATE** ao chamar **VirtualProtect,** conforme detalhado em [**Constantes**](/windows/desktop/Memory/memory-protection-constants)de proteção de memória.
 
-## <a name="how-do-i-tell-that-a-binary-is-under-control-flow-guard"></a>Como faço para dizer que um binário está sob o controle do Flow Guard?
+## <a name="how-do-i-tell-that-a-binary-is-under-control-flow-guard"></a>Como fazer para dizer que um binário está sob controle Flow Guard?
 
-Execute a [ferramenta DUMPBIN](/cpp/build/reference/dumpbin-reference) (incluída na instalação do visual Studio 2015) no prompt de comando do Visual Studio com as opções */Headers* e */loadconfig* : **DUMPBIN/Headers/loadconfig test.exe**. A saída de um binário em CFG deve mostrar que os valores de cabeçalho incluem "Guard" e que os valores de configuração de carga incluem "CF instrumentado" e "tabela FID presente".
+Execute a ferramenta [dumpbin](/cpp/build/reference/dumpbin-reference) (incluída na instalação do Visual Studio 2015) no prompt de comando do Visual Studio com as opções */headers* e */loadconfig:* **dumpbin /headers /loadconfig test.exe**. A saída de um binário em CFG deve mostrar que os valores de header incluem "Guard" e que os valores de configuração de carga incluem "CF Instrumentado" e "tabela FID presente".
 
-![saída de DUMPBIN/Headers](images/cfg-dumpbin-headers.png)
+![saída de dumpbin /headers](images/cfg-dumpbin-headers.png)
 
-![saída de DUMPBIN/loadconfig](images/cfg-dumpbin-loadconfig.png)
+![saída de dumpbin /loadconfig](images/cfg-dumpbin-loadconfig.png)
 
 ## <a name="how-does-cfg-really-work"></a>Como o CFG realmente funciona?
 
-As vulnerabilidades de software são frequentemente exploradas fornecendo dados pouco, incomuns ou extremos a um programa em execução. Por exemplo, um invasor pode explorar uma vulnerabilidade de estouro de buffer fornecendo mais entrada a um programa do que o esperado e, assim, executando em excesso a área reservada pelo programa para manter uma resposta. Isso pode corromper a memória adjacente que pode conter um ponteiro de função. Quando o programa chama essa função, ele pode então saltar para um local indesejado especificado pelo invasor.
+As vulnerabilidades de software geralmente são exploradas fornecendo dados improváveis, incomuns ou extremos para um programa em execução. Por exemplo, um invasor pode explorar uma vulnerabilidade de estouro de buffer fornecendo mais entrada para um programa do que o esperado, executando, assim, a área reservada pelo programa para conter uma resposta. Isso pode corromper a memória adjacente que pode conter um ponteiro de função. Quando o programa chama por essa função, ele pode ir para um local não intencional especificado pelo invasor.
 
-No entanto, uma combinação potente de compilação e suporte de tempo de execução do CFG implementa a integridade do fluxo de controle que restringe rigorosamente onde as instruções de chamada indireta podem ser executadas.
+No entanto, uma combinação perfeita de suporte de compilação e tempo de execução do CFG implementa a integridade do fluxo de controle que restringe firmemente o local em que as instruções de chamada indireta podem ser executadas.
 
 O compilador faz o seguinte:
 
 1.  Adiciona verificações de segurança leves ao código compilado.
 2.  Identifica o conjunto de funções no aplicativo que são destinos válidos para chamadas indiretas.
 
-O suporte ao tempo de execução, fornecido pelo kernel do Windows:
+O suporte de runtime, fornecido pelo Windows kernel:
 
-1.  Mantém o estado com eficiência que identifica destinos de chamada indiretos válidos.
+1.  Mantém com eficiência o estado que identifica destinos de chamada indireta válidos.
 2.  Implementa a lógica que verifica se um destino de chamada indireta é válido.
 
 Para ilustrar:
 
-![o pseudocódigo de cfg](images/cfg-pseudocode.jpg)
+![pseudocódigo cfg](images/cfg-pseudocode.jpg)
 
-Quando uma verificação de CFG falha em tempo de execução, o Windows imediatamente encerra o programa, interrompendo qualquer exploração que tente chamar indiretamente um endereço inválido.
+Quando uma verificação de CFG falha no runtime, Windows encerra imediatamente o programa, descumprindo assim qualquer exploração que tenta chamar indiretamente um endereço inválido.
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: propriedades EsentColumnLongException'
-title: Propriedades EsentColumnLongException
+description: 'Saiba mais sobre: Propriedades de EsentColumnLongException'
+title: Propriedades de EsentColumnLongException
 TOCTitle: EsentColumnLongException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentColumnLongException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumnlongexception_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119622016"
 ---
-# <a name="esentcolumnlongexception-properties"></a>Propriedades EsentColumnLongException
+# <a name="esentcolumnlongexception-properties"></a>Propriedades de EsentColumnLongException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expõe os membros a seguir.
+O tipo [EsentColumnLongException](./esentcolumnlongexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,11 +40,11 @@ O [tipo EsentColumnLongException](./esentcolumnlongexception-class.md) expõe os
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentColumnLongException](./esentcolumnlongexception-class.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

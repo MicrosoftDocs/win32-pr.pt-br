@@ -1,46 +1,46 @@
 ---
-title: Como lidar com botões suspensos
-description: Um botão suspenso pode apresentar aos usuários uma lista de opções.
+title: Como lidar com botões de lista listada
+description: Um botão de lista listada pode apresentar aos usuários uma lista de opções.
 ms.assetid: 2D908D4B-AA8B-4DEF-B656-C37B673ABB4D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35d6f59bfa888d346e196e13ce030d1473a07f0f
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: b74443b0d29b3ab39255d7417fd13677769f6a762ebe176e8301a76029db0c37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "103640342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544937"
 ---
-# <a name="how-to-handle-drop-down-buttons"></a>Como lidar com botões suspensos
+# <a name="how-to-handle-drop-down-buttons"></a>Como lidar com botões de lista listada
 
-Um botão suspenso pode apresentar aos usuários uma lista de opções. Para criar esse estilo de botão, especifique o [**estilo \_ suspenso BTNS**](toolbar-control-and-button-styles.md) (também chamado [**de \_ lista suspensa TBSTYLE**](toolbar-control-and-button-styles.md) para compatibilidade com versões anteriores dos controles comuns). Para mostrar um botão suspenso com uma seta, você também deve definir o estilo da barra de ferramentas [**TBSTYLE \_ ex \_ DRAWDDARROWS**](toolbar-extended-styles.md) enviando uma mensagem de [**TB \_ Extended**](tb-setextendedstyle.md) .
+Um botão de lista listada pode apresentar aos usuários uma lista de opções. Para criar esse estilo de botão, especifique o estilo [**SUSPENSO BTNS \_**](toolbar-control-and-button-styles.md) (também chamado [**TBSTYLE \_ DROPDOWN**](toolbar-control-and-button-styles.md) para compatibilidade com versões anteriores dos controles comuns). Para mostrar um botão de lista listada com uma seta, você também deve definir o estilo da barra de ferramentas [**TBSTYLE \_ EX \_ DRAWDDARROWS**](toolbar-extended-styles.md) enviando uma mensagem [**TB \_ SETEXTENDEDSTYLE.**](tb-setextendedstyle.md)
 
-A ilustração a seguir mostra um botão suspenso "abrir" com o menu de contexto aberto e mostrando uma lista de arquivos. Neste exemplo, a barra de ferramentas tem o estilo [**TBSTYLE \_ ex \_ DRAWDDARROWS**](toolbar-extended-styles.md) .
+A ilustração a seguir mostra um botão suspenso "Abrir" com o menu de contexto aberto e mostrando uma lista de arquivos. Neste exemplo, a barra de ferramentas tem o [**estilo TBSTYLE \_ EX \_ DRAWDDARROWS.**](toolbar-extended-styles.md)
 
-![captura de tela de uma caixa de diálogo com três itens da barra de ferramentas representados por ícones; um tem uma seta suspensa expandida e um menu de contexto de três itens](images/tb-dropdown.png)
+![captura de tela de uma caixa de diálogo com três itens da barra de ferramentas representados por ícones; um tem uma seta para baixo expandida e um menu de contexto de três itens](images/tb-dropdown.png)
 
-A ilustração a seguir mostra a mesma barra de ferramentas, desta vez sem o estilo [**TBSTYLE \_ ex \_ DRAWDDARROWS**](toolbar-extended-styles.md) .
+A ilustração a seguir mostra a mesma barra de ferramentas, desta vez sem o estilo [**TBSTYLE \_ EX \_ DRAWDDARROWS.**](toolbar-extended-styles.md)
 
-![captura de tela de uma caixa de diálogo anterior, mas o ícone com o menu de contexto não tem uma seta suspensa](images/tb-dropdown2.png)
+![captura de tela de uma caixa de diálogo anterior, mas o ícone com o menu de contexto não tem seta para baixo](images/tb-dropdown2.png)
 
-Quando os usuários clicam em um botão da barra de ferramentas que usa o estilo [**\_ suspenso BTNS**](toolbar-control-and-button-styles.md) , o controle Toolbar envia à janela pai um código de notificação [ \_ DropDown tbn](tbn-dropdown.md) .
+Quando os usuários clicam em um botão de barra de ferramentas que usa o estilo [**BTNS \_ DROPDOWN,**](toolbar-control-and-button-styles.md) o controle da barra de ferramentas envia à janela pai um código de notificação [ \_ DROPDOWN do TBN.](tbn-dropdown.md)
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="handle-a-drop-down-button"></a>Manipular um botão suspenso
+### <a name="handle-a-drop-down-button"></a>Manipular um botão de lista listada
 
-O exemplo de código a seguir demonstra como um aplicativo pode dar suporte a um botão suspenso em um controle ToolBar.
+O exemplo de código a seguir demonstra como um aplicativo pode dar suporte a um botão de lista listada em um controle de barra de ferramentas.
 
 
 ```C++
@@ -104,12 +104,12 @@ BOOL DoNotify(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 [Usando controles da barra de ferramentas](using-toolbar-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

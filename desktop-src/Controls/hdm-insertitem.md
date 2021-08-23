@@ -3,7 +3,7 @@ title: Mensagem de HDM_INSERTITEM (commctrl. h)
 description: Insere um novo item em um controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a \_ macro InsertItem do cabeçalho.
 ms.assetid: aececf32-090d-4cd4-a239-4435a322f72e
 keywords:
-- Controles de HDM_INSERTITEM de mensagens do Windows
+- controles de Windows de mensagem de HDM_INSERTITEM
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9cabf86fea79fd437b3e9fb7e32890b3ba1a780
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e30a07637afae1a3efcf71b3b556c32bebf96775bb2a5cbdf6e92513d33ec5c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544736"
 ---
 # <a name="hdm_insertitem-message"></a>\_Mensagem HDM INSERTITEM
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura [**HDITEM**](/windows/win32/api/commctrl/ns-commc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o índice do novo item se for bem-sucedido ou-1 caso contrário.
 
@@ -55,9 +55,9 @@ Retorna o índice do novo item se for bem-sucedido ou-1 caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **HDM \_ INSERTITEMW** (Unicode) e **HDM \_ INSERTITEMA** (ANSI)<br/>             |
 
 

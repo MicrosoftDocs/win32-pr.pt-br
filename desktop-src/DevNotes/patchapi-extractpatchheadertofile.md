@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - mspatchc.dll
-ms.openlocfilehash: 40835a0b88558046ff9086ffcd7ec4609d1ed863
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 626bd53e3361f4d29cc76e17ae2788ddea3bc8b99b580196bcbf77c27a6983d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105795496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571796"
 ---
 # <a name="extractpatchheadertofileaw-function"></a>Função ExtractPatchHeaderToFileA/W
 
@@ -50,7 +50,7 @@ O nome do Delta que contém o cabeçalho.
 
 O nome do arquivo de cabeçalho a ser criado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função retornará **true** se tiver sucesso; caso contrário, retornará **false**.
 

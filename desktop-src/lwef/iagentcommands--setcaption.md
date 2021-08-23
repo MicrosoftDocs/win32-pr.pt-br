@@ -1,19 +1,19 @@
 ---
-title: IAgentCommands AutoCaption
-description: IAgentCommands AutoCaption
+title: IAgentCommands SetCaption
+description: IAgentCommands SetCaption
 ms.assetid: 042f7366-0071-40a5-a47c-81c02cdbe3a9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a8c472bfbfd82235e21c28e24e7e0ce03223ff8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: b38138d218804461afc782efc14ff3685f55d2f737db6fdb21c39021efbcb36e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665466"
 ---
-# <a name="iagentcommandssetcaption"></a>IAgentCommands:: SetCaption
+# <a name="iagentcommandssetcaption"></a>IAgentCommands::SetCaption
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetCaption(
@@ -21,7 +21,7 @@ HRESULT SetCaption(
 );
 ```
 
-Define o texto de [**legenda**](caption-property.md) exibido para uma coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .
+Define o [**texto Legenda**](caption-property.md) exibido para uma coleção [**comandos.**](/windows/desktop/lwef/the-commands-collection-object)
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -30,19 +30,19 @@ Define o texto de [**legenda**](caption-property.md) exibido para uma coleção 
 <span id="bszCaption"></span><span id="bszcaption"></span><span id="BSZCAPTION"></span>*bszCaption*
 </dt> <dd>
 
-Um BSTR que especifica o valor da propriedade [**Caption**](caption-property.md) para uma coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) .
+Um BSTR que especifica o valor da propriedade [**Caption**](caption-property.md) para uma coleção [**commands.**](/windows/desktop/lwef/the-commands-collection-object)
 
 </dd> </dl>
 
-Definir a propriedade [**Caption**](caption-property.md) para uma coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) define como ela será exibida no menu pop-up do caractere quando sua propriedade [**Visible**](visible-property.md) é definida como **true** e seu aplicativo não é o cliente de entrada-ativo. Para especificar uma tecla de acesso (mnemônico não embutido) para sua **legenda**, inclua um caractere de e comercial (&) antes desse caractere.
+Definir a propriedade [**Legenda**](caption-property.md) para uma coleção [**de**](/windows/desktop/lwef/the-commands-collection-object) Comandos define como ela será exibida no menu pop-up do caractere quando sua propriedade [**Visible**](visible-property.md) estiver definida como **True** e seu aplicativo não for o cliente ativo de entrada. Para especificar uma chave de acesso (mnemônico não emlindado) para a **Legenda**, inclua um caractere & (entese) antes desse caractere.
 
-Se você definir comandos para uma coleção de [**comandos**](/windows/desktop/lwef/the-commands-collection-object) que tenha sua [**legenda**](caption-property.md) definida, normalmente também definirá uma **legenda** para sua coleção de **comandos** .
+Se você definir comandos para uma coleção [**De**](/windows/desktop/lwef/the-commands-collection-object) comandos que tem sua [**Legenda**](caption-property.md) definida, normalmente também definirá uma **Legenda** para sua coleção **de Comandos.**
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCommands:: getCaption**](iagentcommands--getcaption.md), [**IAgentCommands:: setvisível**](iagentcommands--setvisible.md), [**IAgentCommands:: setvoice**](iagentcommands--setvoice.md)
+[**IAgentCommands::GetCaption**](iagentcommands--getcaption.md), [**IAgentCommands::SetVisible**](iagentcommands--setvisible.md), [**IAgentCommands::SetVoice**](iagentcommands--setvoice.md)
 
 
- 
+ 
 
- 
+ 

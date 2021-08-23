@@ -10,12 +10,12 @@ keywords:
 - referência para áudio wavefore, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3593594cb2637befb670bfffb4cf0c08eb7c3cee
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: ac6e760a84d22343abe0042a236132b3373bb2059c4d0f5d00f9e9e651ebba81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687256"
 ---
 # <a name="waveform-structures"></a>Estruturas de formato de onda
 
@@ -35,6 +35,6 @@ ms.locfileid: "103917296"
 [Referência de áudio de onda](waveform-audio-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

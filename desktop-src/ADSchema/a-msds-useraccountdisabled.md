@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-User-Account-Disabled
+title: Atributo ms-DS-User-Account-Disabled
 description: Indica se uma conta está desabilitada ou habilitada.
 ms.assetid: 5d6ced7b-ca0f-4afa-b394-e61e80454f3d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-User-acdisabled
-- atributo msDS-UserAccountDisabled do AD Schema
+- Ms-DS-User-Account-Disabled attribute AD Schema
+- Esquema do AD do atributo msDS-UserAccountDisabled
 topic_type:
 - apiref
 api_name:
@@ -14,37 +14,37 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30a01c0b83599a8d6309f6639b94f5d0321180df
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c9f0744cd835fab641de4f4d3386304a342fe3902fcf1a67b3367dc15b7ee68f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544136"
 ---
-# <a name="ms-ds-user-account-disabled-attribute"></a>atributo ms-DS-User-Account-Disabled
+# <a name="ms-ds-user-account-disabled-attribute"></a>Atributo ms-DS-User-Account-Disabled
 
-Indica se uma conta está desabilitada ou habilitada. True se a conta for desabilitada; caso contrário, false.
+Indica se uma conta está desabilitada ou habilitada. True se a conta estiver desabilitada; caso contrário, False.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-User-Account-Disabled          |
-| LDAP-Display-Name | msDS-UserAccountDisabled             |
+| Ldap-Display-Name | msDS-UserAccountDisabled             |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1853              |
-| System-ID-GUID    | 7c708658-7372-4211-b22b-13a45ffd1d61 |
+| System-Id-Guid    | 7c708658-7372-4211-b22b-13a45ffd1d61 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
 ## <a name="implementations"></a>Implementações
 
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -53,21 +53,21 @@ Indica se uma conta está desabilitada ou habilitada. True se a conta for desabi
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**ms-DS-Vinculed-Object**](c-msds-bindableobject.md)<br/> |
+| Classes usadas em        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-No ADAM, esse atributo substitui o [**sinalizador \_ \_ ACCOUNTDISABLE da UF do ADS**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) do atributo [**userAccountControl**](a-useraccountcontrol.md) .
+No ADAM, esse atributo substitui o sinalizador [**ADS \_ UF \_ ACCOUNTDISABLE**](/windows/desktop/api/iads/ne-iads-ads_user_flag_enum) do [**atributo userAccountControl.**](a-useraccountcontrol.md)
 
  
 

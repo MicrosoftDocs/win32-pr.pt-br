@@ -1,11 +1,11 @@
 ---
 title: Atributo Service-DNS-Name
-description: O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço.
+description: O nome DNS a ser procurar para encontrar um servidor que executa esse serviço.
 ms.assetid: b2852276-30f5-4c2a-9f72-9df0d7c0c994
 ms.tgt_platform: multiple
 keywords:
-- Service-DNS-Name atributo AD Schema
-- Esquema de AD do atributo serviceDNSName
+- Esquema do AD do atributo Service-DNS-Name
+- Esquema do AD do atributo serviceDNSName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46b881587a1358a6e7a3a814efb80af122ac5669
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2d39d1237aa52aa99d725ca4a056f914f59d4eee370acfb7be7f6d8e01e028b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645996"
 ---
 # <a name="service-dns-name-attribute"></a>Atributo Service-DNS-Name
 
-O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço.
+O nome DNS a ser procurar para encontrar um servidor que executa esse serviço.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Nome DNS do serviço                            |
-| LDAP-Display-Name | serviceDNSName                              |
+| Ldap-Display-Name | serviceDNSName                              |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.657                      |
-| System-ID-GUID    | 28630eb8-41d5-11d1-a9c1-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 28630eb8-41d5-11d1-a9c1-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -79,10 +79,10 @@ O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -100,10 +100,10 @@ O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -121,7 +121,7 @@ O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -142,7 +142,7 @@ O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -163,7 +163,7 @@ O nome DNS a ser pesquisado para localizar um servidor que executa esse serviço
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |

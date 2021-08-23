@@ -1,19 +1,19 @@
 ---
-description: Wi-Fi informações do serviço de solicitação de serviços diretos.
+description: Wi-Fi do Serviço de Solicitação do Direct Services.
 ms.assetid: 39be864d-8e30-4554-b824-06c3e72e1b09
-title: System. Devices. WiFiDirectServices. RequestServiceInformation
+title: System.Devices.WiFiDirectServices.RequestServiceInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bf4e5ffbf549a05c343b295d44dfe5faaad057a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 167a24c86142a136bba04de70abb439595330b0eafb0a652353f4661e02db784
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598516"
 ---
-# <a name="systemdeviceswifidirectservicesrequestserviceinformation"></a>System. Devices. WiFiDirectServices. RequestServiceInformation
+# <a name="systemdeviceswifidirectservicesrequestserviceinformation"></a>System.Devices.WiFiDirectServices.RequestServiceInformation
 
-Informações do serviço de solicitação do Wi-Fi Direct Services
+Wi-Fi do Serviço de Solicitação do Direct Services
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

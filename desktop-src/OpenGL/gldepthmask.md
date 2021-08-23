@@ -1,9 +1,9 @@
 ---
-title: função glDepthMask (GL. h)
-description: A função glDepthMask habilita ou desabilita a gravação no buffer de profundidade.
+title: Função glDepthMask (Gl.h)
+description: A função glDepthMask habilita ou desabilita a escrita no buffer de profundidade.
 ms.assetid: 067b18e2-f21a-4dde-8fa6-dd975746e189
 keywords:
-- função glDepthMask OpenGL
+- Função glDepthMask OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5873d517770f1ce61f9a2eaad3ea7cce7b4fd7ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0e774917d47cecdbb276b19dbc97a7c8c7620e04e0a044cf6932aa83167e325
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625716"
 ---
-# <a name="gldepthmask-function"></a>função glDepthMask
+# <a name="gldepthmask-function"></a>Função glDepthMask
 
-A função **glDepthMask** habilita ou desabilita a gravação no buffer de profundidade.
+A **função glDepthMask** habilita ou desabilita a escrita no buffer de profundidade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void WINAPI glDepthMask(
 *flag* 
 </dt> <dd>
 
-Especifica se o buffer de profundidade está habilitado para gravação. Se o *sinalizador* for zero, a gravação de buffer de profundidade será desabilitada. Caso contrário, ele será habilitado. Inicialmente, a gravação de buffer de profundidade está habilitada.
+Especifica se o buffer de profundidade está habilitado para escrita. Se *o sinalizador* for zero, a escrita do buffer de profundidade será desabilitada. Caso contrário, ele será habilitado. Inicialmente, a escrita de buffer de profundidade está habilitada.
 
 </dd> </dl>
 
@@ -53,21 +53,21 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O código de erro a seguir pode ser recuperado pela função [**glGetError**](glgeterror.md) .
+O código de erro a seguir pode ser recuperado pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função a seguir recupera informações relacionadas a **glDepthMask**:
+A função a seguir recupera informações relacionadas **a glDepthMask**:
 
-**glGet** com profundidade de argumento GL \_ \_ WRITEMASK
+**glGet** com o argumento GL \_ DEPTH \_ WRITEMASK
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,8 +77,8 @@ A função a seguir recupera informações relacionadas a **glDepthMask**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

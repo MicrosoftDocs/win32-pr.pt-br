@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 02e115cf4526ab065d2613636427059826f450f5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 809cbb6400b9b0e1aa6dcd2c224c322fb336d305e2aaa87faad5c488c6461814
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494336"
 ---
 # <a name="id3dxconstanttablesetmatrixarray-method"></a>Método ID3DXConstantTable:: SetMatrixArray
 
@@ -96,7 +96,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

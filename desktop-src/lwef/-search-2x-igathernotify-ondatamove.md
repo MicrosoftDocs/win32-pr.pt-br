@@ -1,11 +1,11 @@
 ---
 title: Método IGatherNotify OnDataMove (preterido)
-description: Este tópico da interface do Windows Desktop Search foi preterido e é substituído pela API ISearchPersistentItemsChangedSink do Windows Search no SDK do Windows. | Método IGatherNotify OnDataMove (preterido)
+description: Este tópico Windows interface de Pesquisa de Área de Trabalho foi preterido e substituído pela API ISearchPersistentItemsChangedSink do Windows Windows Search. | Método IGatherNotify OnDataMove (preterido)
 ms.assetid: cc223d0f-6508-4e38-b365-c60660db5324
 keywords:
-- Método OnDataMove (preterido) recursos de ambiente herdado do Windows
-- Método OnDataMove (preterido) recursos de ambiente herdado do Windows, interface IGatherNotify
-- Recursos do ambiente Windows herdado da interface IGatherNotify, método OnDataMove (preterido)
+- Método OnDataMove (preterido) herdado Windows de ambiente
+- Método OnDataMove (preterido) herdado Windows recursos de ambiente, interface IGatherNotify
+- Interface IGatherNotify herdada Windows recursos de ambiente, método OnDataMove (preterido)
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9fe38cd11e9072981334e5b724445ea3393d4361
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2f3d4f7d91bc9e9741f227812997a820ab4180ccf438d52ae8cfea93f67dc0bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665866"
 ---
-# <a name="igathernotifyondatamove-deprecated-method"></a>Método IGatherNotify:: OnDataMove (preterido)
+# <a name="igathernotifyondatamove-deprecated-method"></a>Método IGatherNotify::OnDataMove (preterido)
 
-\[**OnDataMove** pode ser alterado ou não estar disponível nas versões subsequentes do sistema operacional ou produto.\]
+\[**OnDataMove pode** ser alterado ou não disponível em versões subsequentes do sistema operacional ou produto.\]
 
-Este tópico da interface do Windows Desktop Search foi preterido e é substituído pela API [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) do Windows Search no SDK do Windows.
+Este tópico Windows interface de Pesquisa de Área de Trabalho foi preterido e foi substituído pela API do Windows Search [**ISearchPersistentItemsChangedSink**](/windows/desktop/api/searchapi/nn-searchapi-isearchpersistentitemschangedsink) no SDK do Windows.
 
 Esse método notifica o indexador de dados que foram movidos. Quando ele envia a notificação para o indexador, ele inclui o endereço antigo, o novo endereço e o endereço lógico.
 
@@ -48,7 +48,7 @@ void OnDataMove (Deprecated)(
 
 <dl> <dt>
 
-*eChangeAdviseSemantics* \[ no\]
+*eChangeAdviseSemantics* \[ Em\]
 </dt> <dd>
 
 Tipo: **longo**
@@ -57,16 +57,16 @@ Um parâmetro enumerado que descreve o tipo de movimentação que ocorreu.
 
 </dd> <dt>
 
-*bstrOldAddress* \[ no\]
+*bstrOldAddress* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-O endereço antigo do item que foi movido. Para arquivos normais,*eChangeAdviseSematics* é **nulo**. Para uma pasta ou diretório, defina *eChangeAdviseSematics* para o \_ diretório de semântica da AC \_ \_ do GTHR.
+O endereço antigo do item que foi movido. Para arquivos normais,*eChangeAdviseSematics* é **NULL.** Para uma pasta ou diretório, de definido *eChangeAdviseSematics* como GTHR \_ CA \_ SEMANTICS \_ DIRECTORY.
 
 </dd> <dt>
 
-*bstrNewAddress* \[ no\]
+*bstrNewAddress* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -75,7 +75,7 @@ O novo endereço do item que foi movido.
 
 </dd> <dt>
 
-*bstrLogicalAddress* \[ no\]
+*bstrLogicalAddress* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
@@ -84,7 +84,7 @@ O endereço lógico do item que foi movido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

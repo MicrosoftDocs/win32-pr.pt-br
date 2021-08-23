@@ -4,12 +4,12 @@ ms.assetid: 5550dc25-20c1-44a5-a45a-6402503e1ff8
 title: System. RatingText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f366c622d1df42fdde1d2f3de8274e1cb6ca0497
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a725e2d768318c0556ecf7d47b123caa1f0a4c93cc1b225ce8749e03f10bb22c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105794603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598146"
 ---
 # <a name="systemratingtext"></a>System. RatingText
 

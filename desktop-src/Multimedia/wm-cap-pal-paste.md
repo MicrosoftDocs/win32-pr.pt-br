@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_PAL_PASTE (VFW. h)
 description: A mensagem do WM \_ Cap \_ PAL \_ Paste copia a paleta da área de transferência e a transmite para um driver de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capPalettePaste.
 ms.assetid: d49c7fd9-be40-4a07-8339-b85f7c4c331e
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_PAL_PASTE
+- mensagem de WM_CAP_PAL_PASTE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3daf88c69edbb8bad6257456b95a86c8a68df328
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7bedb760a444abe9b0667592855d701dc24a02b8ee57ea15ab30912a5e216d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686826"
 ---
 # <a name="wm_cap_pal_paste-message"></a>\_Mensagem de \_ colagem da PAL do WM Cap \_
 

@@ -1,11 +1,11 @@
 ---
-title: Método de atualização de IResultsViewer (WdsView. h)
-description: Aplica qualquer alteração de consulta e navega a exibição para o novo conjunto de resultados.
+title: Método IResultsViewer Update (WdsView.h)
+description: Aplica as alterações de consulta e navega a exibição para o novo conjunto de resultados.
 ms.assetid: 3bcb4ac0-4a78-4051-bd2b-701d19c83602
 keywords:
-- Recursos do ambiente Windows herdado do método Update
-- Método de atualização recursos de ambiente herdados do Windows, interface IResultsViewer
-- Recursos de ambiente do Windows herdados da interface IResultsViewer, método Update
+- Atualizar recursos de ambiente Windows método herdado
+- Atualizar recursos de Windows ambiente herdado, interface IResultsViewer
+- Interface IResultsViewer Herdada Windows recursos de ambiente, método Update
 topic_type:
 - apiref
 api_name:
@@ -16,19 +16,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9c1bcd97ae2137ea66d215d3c17a314194d9e99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aba3598912ad548677da789b7bbdc730396e5881e0ac0670819c9db59136fa95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665786"
 ---
-# <a name="iresultsviewerupdate-method"></a>Método IResultsViewer:: Update
+# <a name="iresultsviewerupdate-method"></a>Método IResultsViewer::Update
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
-Aplica qualquer alteração de consulta e navega a exibição para o novo conjunto de resultados.
+Aplica as alterações de consulta e navega a exibição para o novo conjunto de resultados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ void Update();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -53,8 +53,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WdsView. h</dt> </dl>   |
-| INSERI<br/>    | <dl> <dt>WdsView. idl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>WdsView.h</dt> </dl>   |
+| Idl<br/>    | <dl> <dt>WdsView.idl</dt> </dl> |
 
 
 

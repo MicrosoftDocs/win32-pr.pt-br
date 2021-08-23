@@ -1,9 +1,9 @@
 ---
-title: Settings. DefaultFrame
+title: Configurações. defaultframe
 description: A propriedade DefaultFrame especifica ou recupera o nome do quadro usado para exibir uma URL recebida em um evento ScriptCommand.
 ms.assetid: c2edb253-a545-4820-85aa-8fb7badf4d81
 keywords:
-- Settings. DefaultFrame Windows Media Player
+- Configurações. defaultframe Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6182a635e4bd73a946c3cf85efb7d39966c0007
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0240864cd19c1a4d84c30abfc6e6b8ecb08457d26c3c660d19fc18d228b19615
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571806"
 ---
-# <a name="settingsdefaultframe"></a>Settings. DefaultFrame
+# <a name="settingsdefaultframe"></a>Configurações. defaultframe
 
 A propriedade **DefaultFrame** especifica ou recupera o nome do quadro usado para exibir uma URL recebida em um evento **ScriptCommand** .
 
@@ -37,7 +37,7 @@ Essa propriedade é uma **cadeia de caracteres** de leitura/gravação correspon
 
 Se um quadro de destino for especificado no próprio evento **ScriptCommand** , essa propriedade será ignorada.
 
-Essa propriedade é ignorada ao usar o miniaplicativo Java do Netscape Navigator. No navegador, cada comando de script de URL recebido exibe a URL em uma nova janela do navegador, independentemente do valor das *configurações*. **DefaultFrame**.
+Essa propriedade é ignorada ao usar o miniaplicativo Java do Netscape Navigator. no navegador, cada comando de script de url recebido exibe a URL em uma nova janela do navegador, independentemente do valor de *Configurações*. **DefaultFrame**.
 
 **Windows Media Player 10 Mobile**: essa propriedade é somente leitura e sempre retorna uma cadeia de caracteres vazia.
 
@@ -59,7 +59,7 @@ Essa propriedade é ignorada ao usar o miniaplicativo Java do Netscape Navigator
 [**Evento Player. ScriptCommand**](player-player-scriptcommand.md)
 </dt> <dt>
 
-[**Objeto de configurações**](settings-object.md)
+[**Configurações Objeto**](settings-object.md)
 </dt> <dt>
 
 [**Uso do Windows Media Player com o Netscape 7.1**](using-windows-media-player-with-netscape-7-1.md)

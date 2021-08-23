@@ -1,28 +1,28 @@
 ---
-description: Como a transferência de dados de imagem é baseada em fluxo no WIA (aquisição de imagem do Windows) 2,0, não é necessário especificar um tipo de destino (por exemplo,
+description: Como a transferência de dados de imagem é baseada em fluxo no WIA (Aquisição de Imagem) 2.0 do Windows, você não precisa especificar um tipo de destino (por exemplo,
 ms.assetid: ebb9fce5-9450-4ffe-b480-b21670b60f90
-title: Transferindo dados de imagem no WIA 2,0
+title: Transferindo dados de imagem no WIA 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85ded5c6cd8fb94b1beccd86c3cd8aef3018aed0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66aca2179c477f49bc76197795ddf9d59792ca242da8729c169c39aa69553161
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592956"
 ---
-# <a name="transferring-image-data-in-wia-20"></a>Transferindo dados de imagem no WIA 2,0
+# <a name="transferring-image-data-in-wia-20"></a>Transferindo dados de imagem no WIA 2.0
 
 > [!Note]  
-> Este tutorial demonstra como transferir dados de imagem em aplicativos que são executados no Windows Vista ou posterior. Consulte Transferindo [dados de imagem no WIA 1,0](-wia-transferring-image-data.md) para obter informações sobre como transferir dados de imagem em aplicativos executados no Windows XP ou anterior.
+> Este tutorial demonstra como transferir dados de imagem em aplicativos executados no Windows Vista ou posterior. Consulte Transferindo dados de imagem no [WIA 1.0](-wia-transferring-image-data.md) para obter informações sobre como transferir dados de imagem em aplicativos executados no Windows XP ou anterior.
 
  
 
-Como a transferência de dados de imagem é baseada em fluxo no WIA (aquisição de imagem do Windows) 2,0, não é necessário especificar um tipo de destino (por exemplo, memória ou arquivo). O aplicativo simplesmente fornece a WIA 2,0 o fluxo a ser usado, e o driver lê ou grava no fluxo. O fluxo pode ser um fluxo de arquivos, um fluxo de memória ou qualquer outro tipo de fluxo, e é transparente para o driver. O uso de fluxos também fornece uma fácil integração com o filtro de processamento de imagens.
+Como a transferência de dados de imagem é baseada em fluxo no WIA (Aquisição de Imagem) 2.0 do Windows, você não precisa especificar um tipo de destino (por exemplo, memória ou arquivo). O aplicativo simplesmente fornece ao WIA 2.0 o fluxo a ser usado e o driver lê ou grava no fluxo. O fluxo pode ser um fluxo de arquivos, um fluxo de memória ou qualquer outro tipo de fluxo e é transparente para o driver. O uso de fluxos também fornece uma integração fácil com o filtro processamento de imagem.
 
-Use os métodos da interface [**IWiaTransfer**](-wia-iwiatransfer.md) para transferir dados de um dispositivo WIA 2,0 para um aplicativo. Essa interface está disponível por meio da interface [**IWiaItem2**](-wia-iwiaitem2.md) . A interface **IWiaTransfer** tem métodos para solicitar o carregamento ou o download de dados de e para um dispositivo. Esses métodos usam um retorno de chamada que o aplicativo fornece e usam um [IStream](/windows/win32/api/objidl/nn-objidl-istream) fornecido pelo aplicativo para o destino real da transferência de dados.
+Use os métodos da interface [**IWiaTransfer**](-wia-iwiatransfer.md) para transferir dados de um dispositivo WIA 2.0 para um aplicativo. Essa interface está disponível por meio da interface [**IWiaItem2.**](-wia-iwiaitem2.md) A interface **IWiaTransfer** tem métodos para solicitar o upload ou o download de dados de e para um dispositivo. Esses métodos usam um retorno de chamada fornecido pelo aplicativo e usam um [IStream](/windows/win32/api/objidl/nn-objidl-istream) fornecido pelo aplicativo para o destino real da transferência de dados.
 
-Os aplicativos devem consultar um item de imagem para obter um ponteiro para sua interface [**IWiaTransfer**](-wia-iwiatransfer.md) , conforme mostrado no exemplo de código a seguir:
+Os aplicativos devem consultar um item de imagem para obter um ponteiro para sua interface [**IWiaTransfer,**](-wia-iwiatransfer.md) conforme mostrado no exemplo de código a seguir:
 
 
 ```
@@ -34,9 +34,9 @@ Os aplicativos devem consultar um item de imagem para obter um ponteiro para sua
 
 
 
-No código anterior, presumimos que **pWiaItem2** é um ponteiro válido para a interface [**IWiaItem2**](-wia-iwiaitem2.md) . A chamada para [IUnknown:: QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) preenche **pWiaTransfer** com um ponteiro para a interface [**IWiaTransfer**](-wia-iwiatransfer.md) do item referido por **pWiaItem2**.
+No código anterior, presumimos que **pWiaItem2 é** um ponteiro válido para a interface [**IWiaItem2.**](-wia-iwiaitem2.md) A chamada para [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) preenche **pWiaTransfer** com um ponteiro para a interface [**IWiaTransfer**](-wia-iwiatransfer.md) do item referenciado por **pWiaItem2**.
 
-Em seguida, o aplicativo instancia o objeto de retorno de chamada, como mostrado aqui.
+Em seguida, o aplicativo instalita o objeto de retorno de chamada, conforme mostrado aqui.
 
 
 ```
@@ -47,9 +47,9 @@ Em seguida, o aplicativo instancia o objeto de retorno de chamada, como mostrado
 
 
 
-O aplicativo seguinte define as propriedades usando a interface [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) do item [**IWiaItem2**](-wia-iwiaitem2.md) e executa a transferência.
+Em seguida, o aplicativo define as propriedades usando a interface [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) do item [**IWiaItem2**](-wia-iwiaitem2.md) e executa a transferência.
 
-Baixar
+Transferindo:
 
 
 ```
@@ -59,7 +59,7 @@ Baixar
 
 
 
-Carregar
+Upload:
 
 
 ```

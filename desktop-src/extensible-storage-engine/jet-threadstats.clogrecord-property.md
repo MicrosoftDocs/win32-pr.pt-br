@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 17947c0ea74f00ae51101d3e10b2eb54c78abe7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c4e33e7055e2197a024cf71f21d153841c8ab945604e09810c368d9c3174105
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119667726"
 ---
 # <a name="jet_threadstatsclogrecord-property"></a>Propriedade JET_THREADSTATS. cLogRecord
 
@@ -40,7 +40,7 @@ Obtém o número total de registros de log de transações que foram gerados pel
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

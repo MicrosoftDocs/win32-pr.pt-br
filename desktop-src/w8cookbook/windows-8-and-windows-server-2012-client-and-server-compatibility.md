@@ -1,55 +1,55 @@
 ---
-title: Compatibilidade de cliente e servidor-Windows 8
-description: Compatibilidade de cliente e servidor com Windows 8 e Windows Server 2012
+title: Compatibilidade de cliente e servidor – Windows 8
+description: Windows 8 compatibilidade Windows Server 2012 cliente e servidor
 ms.assetid: 5067219A-EBA2-4FAF-8C17-7AB22C5EADD0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5b685ae10b97a7b8197737944ea7231d226514
-ms.sourcegitcommit: 477b1efe7d9c2f91d5f2ac588a20edf348b1c734
+ms.openlocfilehash: 5bbe52486339906d260fe623533cfbb871e97c07f914798990a5d16c51e5bbf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "104293669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593806"
 ---
-# <a name="windows-8-and-windows-server-2012-client-and-server-compatibility"></a>Compatibilidade de cliente e servidor com Windows 8 e Windows Server 2012
+# <a name="windows-8-and-windows-server-2012-client-and-server-compatibility"></a>Windows 8 compatibilidade Windows Server 2012 cliente e servidor
 
-Esta seção descreve as alterações no sistema operacional que você deve prestar atenção especial devido aos possíveis impactos nos aplicativos existentes e como os novos aplicativos devem ser criados em clientes, em servidores ou em clientes e servidores. A seguir está a lista de tópicos abordados nesta seção, agrupados por área de recurso:
+Esta seção descreve as alterações no sistema operacional às quais você deve prestar atenção especial devido aos possíveis impactos nos aplicativos existentes e como novos aplicativos devem ser projetados em clientes, em servidores ou em clientes e servidores. A seguir está a lista de tópicos abordados nesta seção, agrupados por área de recursos:
 
 **AppCompat**
 
 -   Atualização de regras de detecção de aplicativo de segurança
--   Determinando o status do Shim
--   Os aplicativos do servidor devem ser capazes de executar sem o shell gráfico do servidor
--   Os componentes do servidor RDS são removidos do Windows 8
+-   Determinando o status do shim
+-   Os aplicativos de servidor devem ser capazes de ser executados sem o Shell Gráfico do Servidor
+-   Os componentes do servidor RDS são removidos Windows 8
 -   Modelo de associações de protocolo e tipo de arquivo
 -   Moderador de atividade da área de trabalho
--   .NET Framework 4,5 é o padrão e .NET Framework 3,5 é opcional
+-   .NET Framework 4.5 é padrão e .NET Framework 3.5 é opcional
 -   Os aplicativos da área de trabalho podem não estar visíveis depois de iniciar o navegador da Web padrão
 -   Modo de alto contraste
 -   Manifesto do aplicativo (executável)
 -   O modelo presente na fila está sendo preterido
--   Cenários do assistente de compatibilidade de programas para o Windows 8
--   Gadgets de área de trabalho removidos
+-   Cenários do Assistente de Compatibilidade do Programa para Windows 8
+-   Desktop desktop removido
 
 **Armazenamento e sistema de arquivos**
 
 -   Atualização de compatibilidade de disco de formato avançado (4K)
--   Provisionamento dinâmico de unidades lógicas
--   O armazenamento aprimorado agora é opcional para Ambiente de Pré-Instalação do Windows (WinPE) e SKU do servidor
--   O serviço de disco virtual está em transição para a API de gerenciamento de armazenamento do Windows baseada em Instrumentação de Gerenciamento do Windows (WMI)
+-   Provisionamento fino de unidades lógicas
+-   O armazenamento aprimorado agora é opcional para Windows WinPE (Ambiente de Pré-instalação) e SKU do servidor
+-   O Serviço de Disco Virtual está em transição para o WMI (Instrumentação de Gerenciamento Windows) baseada em Windows Armazenamento API de Gerenciamento
 -   Interface do usuário de versões anteriores removida para volumes locais
 -   StorAHCI substitui MSAHCI
--   Backup e restauração do Windows 7 preteridos
+-   Windows 7 backup e restauração preterido
 -   Transferências de dados descarregadas
 
 **Outras**
 
--   Gerenciador de Janelas da Área de Trabalho está sempre ativada
--   Direct2D não dá suporte à renderização para metaarquivos "avançados" no Internet Explorer 9
--   Alterações no suporte de hardware herdado DX9
--   A MSAA não está disponível para aplicativos da Windows Store
--   A porta 3 foi preterida para drivers NDIS 6,30
+-   Gerenciador de Janelas da Área de Trabalho está sempre em
+-   Direct2D não dá suporte à renderização para metadados "avançado" no Internet Explorer 9
+-   Alterações no suporte a hardware herdado DX9
+-   A MSAA não está disponível para aplicativos Windows Store
+-   A porta 3 foi preterida para drivers NDIS 6.30
 
- 
+ 
 
- 
+ 

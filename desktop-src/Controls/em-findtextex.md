@@ -3,7 +3,7 @@ title: Mensagem de EM_FINDTEXTEX (RichEdit. h)
 description: Mensagem de EM_FINDTEXTEX-localiza o texto em um controle de edição rico.
 ms.assetid: f1bf925b-2776-40b8-9d05-8484daf8d989
 keywords:
-- Controles de EM_FINDTEXTEX de mensagens do Windows
+- controles de Windows de mensagem de EM_FINDTEXTEX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2158dabf9ea17d1bd4cac48454bdbb4056765752
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 41f5121108fcd75d3b57b3ef61a8dc789bd92f731a3593314036d4d9507e6252
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119541186"
 ---
 # <a name="em_findtextex-message"></a>\_Mensagem em FINDTEXTEX
 
@@ -76,13 +76,13 @@ Se a operação de pesquisa encontrar uma correspondência, o membro **chrgText*
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

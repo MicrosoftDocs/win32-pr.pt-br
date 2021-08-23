@@ -3,15 +3,15 @@ title: Funções de WCS obsoletas
 description: Esta seção delineia funções obsoletas no WCS 1.0. Atualmente, eles são mantidos para compatibilidade com backward. No entanto, eles serão removidos da API em versões posteriores do WCS.
 ms.assetid: 49c26320-41c2-4075-aad2-005447616726
 keywords:
-- WCS (Sistema de Cores do Windows), funções
-- WCS (Sistema de Cores do Windows), funções
+- Windows Sistema de Cores (WCS), funções
+- WCS (Windows color system),funções
 - gerenciamento de cores de imagem, funções
 - gerenciamento de cores, funções
 - colors,functions
 - Referência do WCS, funções
 - referência para WCS, funções
-- WCS (Sistema de Cores do Windows), funções obsoletas
-- WCS (Sistema de Cores do Windows), funções obsoletas
+- Windows Sistema de Cores (WCS), funções obsoletas
+- WCS (Windows Color System), funções obsoletas
 - gerenciamento de cores da imagem, funções obsoletas
 - gerenciamento de cores, funções obsoletas
 - cores, funções obsoletas
@@ -20,12 +20,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64886367ba6b3af680b506abbc1418e122c71965
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: f866308ddd2f1acbfb9311b9711a0a796d9ceeb3e8abb4cd783b99d4a035a222
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593366"
 ---
 # <a name="obsolete-wcs-functions"></a>Funções de WCS obsoletas
 

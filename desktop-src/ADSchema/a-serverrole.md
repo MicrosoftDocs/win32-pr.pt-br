@@ -1,11 +1,11 @@
 ---
 title: Server-Role atributo
-description: Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um computador que executa o Windows NT Server pode ser um servidor autônomo, um controlador de domínio primário (PDC) ou um controlador de domínio de backup (BDC).
+description: Para compatibilidade com servidores pré-Windows 2000 Server. Um computador executando Windows NT Server pode ser um servidor autônomo, um PDC (controlador de domínio primário) ou um BDC (controlador de domínio de backup).
 ms.assetid: 0c2e5b18-14ad-4f77-a62c-eeb95aabbb99
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Server-Role do atributo AD
-- Esquema de AD do atributo serverRole
+- Server-Role atributo AD Schema
+- Esquema do AD do atributo serverRole
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58a127a94cd1ecc2bfce3701c11ee2a5e0c2376c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4e46345362e78590cd50e75e2ea592f55f3bda2db96c4c412c85afccc5eb6f2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646116"
 ---
 # <a name="server-role-attribute"></a>Server-Role atributo
 
-Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um computador que executa o Windows NT Server pode ser um servidor autônomo, um controlador de domínio primário (PDC) ou um controlador de domínio de backup (BDC).
+Para compatibilidade com servidores pré-Windows 2000 Server. Um computador executando Windows NT Server pode ser um servidor autônomo, um PDC (controlador de domínio primário) ou um BDC (controlador de domínio de backup).
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Server-Role                          |
-| LDAP-Display-Name | serverRole                           |
+| Ldap-Display-Name | Serverrole                           |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | 4 bytes                              |
 | Attribute-Id      | 1.2.840.113556.1.4.157               |
-| System-ID-GUID    | bf967a33-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a33-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um c
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um c
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um c
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um c
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um c
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Para compatibilidade com servidores de servidor anteriores ao Windows 2000. Um c
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
 
 
 

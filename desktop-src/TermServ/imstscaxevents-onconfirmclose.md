@@ -1,12 +1,12 @@
 ---
-title: Método IMsTscAxEvents OnConfirmClose
-description: Chamado quando o cliente chama o método IMsRdpClient RequestClose.
+title: Método OnConfirmClose de IMsTscAxEvents
+description: Chamado quando o cliente chama o método RequestClose IMsRdpClient.
 ms.assetid: fb149fbc-9415-4c4c-8d4b-e22214ac38cb
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnConfirmClose
-- Método OnConfirmClose Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnConfirmClose
+- Método OnConfirmClose Serviços de Área de Trabalho Remota
+- Método OnConfirmClose Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota método , OnConfirmClose
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 623196033e23a964857a6a604c7eca3904f32c60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2effd50552ab227e8e065844b8b19da0e022f6b8e36d1d86701ad0614b821126
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512466"
 ---
-# <a name="imstscaxeventsonconfirmclose-method"></a>Método IMsTscAxEvents:: OnConfirmClose
+# <a name="imstscaxeventsonconfirmclose-method"></a>Método IMsTscAxEvents::OnConfirmClose
 
-Chamado quando o cliente chama o método [**IMsRdpClient:: RequestClose**](imsrdpclient-requestclose.md) . Em resposta a esse evento, o usuário deve ser solicitado a confirmar o fechamento da conexão. Para obter mais informações, consulte a seção Comentários a seguir.
+Chamado quando o cliente chama o [**método IMsRdpClient::RequestClose.**](imsrdpclient-requestclose.md) Em resposta a esse evento, o usuário deve ser solicitado a confirmar o fechamento da conexão. Para obter mais informações, consulte a seção Comentários a seguir.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ void OnConfirmClose(
 
 <dl> <dt>
 
-*pfAllowClose* \[ fora\]
+*pfAllowClose* \[ out\]
 </dt> <dd>
 
-Se **Variant \_ true**, o padrão, indica que o usuário deseja fechar a conexão. Se **Variant \_ false**, indica que o usuário não deseja fechar a conexão. Para obter mais informações, consulte a seção Comentários a seguir.
+Se **VARIANT \_ TRUE**, o padrão indicará que o usuário deseja fechar a conexão. Se **VARIANT \_ FALSE**, indica que o usuário não deseja fechar a conexão. Para obter mais informações, consulte a seção Comentários a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando um aplicativo de contêiner chama o método [**IMsRdpClient:: RequestClose**](imsrdpclient-requestclose.md) , esse método retorna um valor que indica se o contêiner deve aguardar a ocorrência de um evento **OnConfirmClose** antes de fechar a conexão de controle. Se **RequestClose** retornar **controlCloseWaitForEvents** e o usuário estiver conectado e conectado à sua sessão de serviços de área de trabalho remota, o evento **OnConfirmClose** será acionado. Nesse ponto, o aplicativo de contêiner pode solicitar o usuário, perguntando se o usuário deseja fechar a conexão. Se o usuário quiser fechar a conexão, o aplicativo deverá definir o parâmetro *pfAllowClose* como **Variant \_ true** e continuar com o fechamento da conexão. Se o usuário não quiser fechar, o aplicativo deverá definir *pfAllowClose* como **Variant \_ false** e deixar a conexão aberta.
+Quando um aplicativo de contêiner chama o método [**IMsRdpClient::RequestClose,**](imsrdpclient-requestclose.md) esse método retorna um valor que indica se o contêiner deve aguardar um evento **OnConfirmClose** ocorrer antes de fechar a conexão de controle. Se **RequestClose** retornar **controlCloseWaitForEvents** e o usuário estiver conectado e conectado à sessão Serviços de Área de Trabalho Remota, o evento **OnConfirmClose** será açado. Nesse ponto, o aplicativo de contêiner pode solicitar ao usuário, perguntando se o usuário deseja fechar a conexão. Se o usuário quiser fechar a conexão, o aplicativo deverá definir o *parâmetro pfAllowClose* como **VARIANT \_ TRUE** e prosseguir com o fechamento da conexão. Se o usuário não quiser fechar, o aplicativo deverá definir *pfAllowClose como* **VARIANT \_ FALSE** e deixar a conexão aberta.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

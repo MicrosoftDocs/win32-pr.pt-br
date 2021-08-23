@@ -1,9 +1,9 @@
 ---
 title: Elemento Navigate
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O elemento Navigate especifica uma URL usada por chamadas para external. NavigateTaskPaneURL.
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O elemento Navigate especifica uma URL usada por chamadas para External.NavigateTaskPaneURL.
 ms.assetid: 3898e381-baf8-481a-90ee-d64e55b319a0
 keywords:
-- Navegar no elemento Windows Media Player
+- Elemento Navigate Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ab3a76fba522332f1414b02d3e317f2793e88292
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a9e62dc0defae10eb0c271543e3ef3c85aab409325a21611792011d487840740
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647626"
 ---
 # <a name="navigate-element"></a>Elemento Navigate
 
@@ -27,7 +27,7 @@ ms.locfileid: "105747688"
 
  
 
-O elemento **Navigate** especifica uma URL usada por chamadas para **external. NavigateTaskPaneURL**.
+O **elemento Navigate** especifica uma URL usada por chamadas para **External.NavigateTaskPaneURL.**
 
 ``` syntax
 <Navigate
@@ -41,7 +41,7 @@ O elemento **Navigate** especifica uma URL usada por chamadas para **external. N
 
 | Termo                                                                                                                                             | Descrição                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseURL** (obrigatório)<br/> | URL totalmente qualificada para a página da Web na qual navegar. **NavigateTaskPaneURL** pode acrescentar uma cadeia de caracteres de consulta a essa URL.<br/> |
+| <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseURL** (obrigatório)<br/> | URL totalmente qualificada para a página da Web para a qual navegar. **NavigateTaskPaneURL** pode anexar uma cadeia de caracteres de consulta a essa URL.<br/> |
 
 
 
@@ -74,16 +74,16 @@ O elemento **Navigate** especifica uma URL usada por chamadas para **external. N
 
 <dl> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
-[**External. NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
+[**External.NavigateTaskPaneURL**](external-navigatetaskpaneurl.md)
 </dt> <dt>
 
-[**Documento do serviceInfo**](serviceinfo-document.md)
+[**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
  

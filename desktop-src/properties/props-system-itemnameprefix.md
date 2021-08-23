@@ -1,17 +1,17 @@
 ---
-description: 'O prefixo de um item, usado para mensagens de email em que o assunto começa com o prefixo &\# 0034; Re: &\# 0034;.'
+description: O prefixo de um item, usado para mensagens de email em que o assunto começa com o prefixo &\# 0034; Re:&\# 0034;.
 ms.assetid: 3c257edc-b7f7-498d-8347-0be4fca41023
-title: System. ItemNamePrefix
+title: System.ItemNamePrefix
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf669dd867c8cf60046f226e33dae18f46060cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7830f63c3e9e0f6026099c95d11820a1d8592928cece72ebe72d76936d8467
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119598456"
 ---
-# <a name="systemitemnameprefix"></a>System. ItemNamePrefix
+# <a name="systemitemnameprefix"></a>System.ItemNamePrefix
 
 O prefixo de um item, usado para mensagens de email em que o assunto começa com o prefixo "Re:".
 
@@ -33,20 +33,20 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-Se o item for um arquivo, o valor dessa propriedade será VT \_ Empty. Se o item for uma mensagem, o valor dessa propriedade será os prefixos de encaminhamento ou de resposta (incluindo os dois pontos delimitadores, mas sem espaço em branco) ou VT \_ vazio se não houver nenhum prefixo.
+Se o item for um arquivo, o valor dessa propriedade será VT \_ EMPTY. Se o item for uma mensagem, o valor dessa propriedade será os prefixos de encaminhamento ou resposta (incluindo os dois-pontos delimitadores, mas nenhum espaço em branco) ou VT EMPTY se não houver \_ prefixo.
 
 Valores de exemplo:
 
 
 
-| System. ItemNamePrefix | System. ItemName  | System.ItemNameDisplay |
+| System.ItemNamePrefix | System.ItemName  | System.ItemNameDisplay |
 |-----------------------|------------------|------------------------|
-| VT \_ vazio             | "Ótimo dia"      | "Ótimo dia"            |
-| "Re:"                 | "Ótimo dia"      | "Re: ótimo dia"        |
-| "FWD:"               | "Orçamento mensal" | "FWD: orçamento mensal"  |
-| VT \_ vazio             | accounts.xls     | accounts.xls           |
+| VT \_ VAZIO             | "Ótimo dia"      | "Ótimo dia"            |
+| "Re:"                 | "Ótimo dia"      | "Re: Ótimo dia"        |
+| "Fwd: "               | "Orçamento mensal" | "Fwd: orçamento mensal"  |
+| VT \_ VAZIO             | accounts.xls     | accounts.xls           |
 
 
 
@@ -56,7 +56,7 @@ Valores de exemplo:
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -65,19 +65,19 @@ Valores de exemplo:
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -92,7 +92,7 @@ Valores de exemplo:
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

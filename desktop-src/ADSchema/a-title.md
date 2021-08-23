@@ -1,11 +1,11 @@
 ---
-title: Atributo de título
-description: Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar o cargo formal, como programador sênior, em vez de classe de ocupação, como programador. Normalmente, ele não é usado para títulos de sufixo, como esq. ou DDS.
+title: Atributo title
+description: Contém o cargo do usuário. Essa propriedade geralmente é usada para indicar o cargo formal, como Programador Sênior, em vez de classe profissional, como programador. Normalmente, ele não é usado para títulos de sufixo, como Esq. ou DDS.
 ms.assetid: 4a6899a7-ddbf-4dd0-b088-3739716f33df
 ms.tgt_platform: multiple
 keywords:
-- Atributo de título esquema do AD
-- atributo de título esquema do AD
+- Atributo de título Esquema do AD
+- atributo title Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebbb4dae862db9fc363b22647bd5e56a98e9e60b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c8885a557e8fbec17d6d58d68fdea0f99039f0e09e34a8da01954dc7b4979fc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645026"
 ---
-# <a name="title-attribute-ad-schema"></a>Atributo Title (esquema do AD)
+# <a name="title-attribute-ad-schema"></a>Atributo title (Esquema do AD)
 
-Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar o cargo formal, como programador sênior, em vez de classe de ocupação, como programador. Normalmente, ele não é usado para títulos de sufixo, como esq. ou DDS.
+Contém o cargo do usuário. Essa propriedade geralmente é usada para indicar o cargo formal, como Programador Sênior, em vez de classe profissional, como programador. Normalmente, ele não é usado para títulos de sufixo, como Esq. ou DDS.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------|
 | CN                | Título                                                                     |
-| LDAP-Display-Name | título                                                                     |
+| Ldap-Display-Name | título                                                                     |
 | Tamanho              | \-                                                                        |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                    |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o título precisa ser alterado. |
 | Attribute-Id      | 2.5.4.12                                                                  |
-| System-ID-GUID    | bf967a55-0de6-11d0-a285-00aa003049e2                                      |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                               |
+| System-Id-Guid    | bf967a55-0de6-11d0-a285-00aa003049e2                                      |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                               |
 
 
 
@@ -58,15 +58,15 @@ Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar 
 | ID do link                | \-                                                                                                                              |
 | MAPI-Id                | 0x3A17                                                                                                                          |
 | System-Only            | Falso                                                                                                                           |
-| É de valor único       | True                                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                                            |
 | É indexado             | Falso                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | 1                                                                                                                               |
 | Range-Upper            | 64                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Residencial-pessoa**](c-residentialperson.md)<br/> |
+| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Pessoa Residencial**](c-residentialperson.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar 
 | ID do link                | \-                                                                                                                              |
 | MAPI-Id                | 0x3A17                                                                                                                          |
 | System-Only            | Falso                                                                                                                           |
-| É de valor único       | True                                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                                            |
 | É indexado             | Falso                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | 1                                                                                                                               |
 | Range-Upper            | 64                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Residencial-pessoa**](c-residentialperson.md)<br/> |
+| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Pessoa Residencial**](c-residentialperson.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar 
 | ID do link                | \-                                                                                                                              |
 | MAPI-Id                | 0x3A17                                                                                                                          |
 | System-Only            | Falso                                                                                                                           |
-| É de valor único       | True                                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                                            |
 | É indexado             | Falso                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | 1                                                                                                                               |
 | Range-Upper            | 64                                                                                                                              |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Residencial-pessoa**](c-residentialperson.md)<br/> |
+| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Pessoa Residencial**](c-residentialperson.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar 
 | ID do link                | \-                                                                                                                              |
 | MAPI-Id                | 0x3A17                                                                                                                          |
 | System-Only            | Falso                                                                                                                           |
-| É de valor único       | True                                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                                            |
 | É indexado             | Falso                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | 1                                                                                                                               |
 | Range-Upper            | 128                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Residencial-pessoa**](c-residentialperson.md)<br/> |
+| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Pessoa Residencial**](c-residentialperson.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar 
 | ID do link                | \-                                                                                                                              |
 | MAPI-Id                | 0x3A17                                                                                                                          |
 | System-Only            | Falso                                                                                                                           |
-| É de valor único       | True                                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                                            |
 | É indexado             | Falso                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | 1                                                                                                                               |
 | Range-Upper            | 128                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Residencial-pessoa**](c-residentialperson.md)<br/> |
+| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Pessoa Residencial**](c-residentialperson.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contém o cargo do usuário. Essa propriedade é normalmente usada para indicar 
 | ID do link                | \-                                                                                                                              |
 | MAPI-Id                | 0x3A17                                                                                                                          |
 | System-Only            | Falso                                                                                                                           |
-| É de valor único       | True                                                                                                                            |
+| Tem valor único       | Verdadeiro                                                                                                                            |
 | É indexado             | Falso                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                    |
+| No Catálogo Global      | Falso                                                                                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                    |
 | Range-Lower            | 1                                                                                                                               |
 | Range-Upper            | 128                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                      |
 | System-Flags           | 0x00000010                                                                                                                      |
-| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Residencial-pessoa**](c-residentialperson.md)<br/> |
+| Classes usadas em        | [**Organizational-Person**](c-organizationalperson.md)<br/> [**Pessoa Residencial**](c-residentialperson.md)<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: Cadeia de caracteres. Count
 description: A propriedade Count recupera o número de itens na coleção de cadeias de caracteres.
 ms.assetid: bf02d102-deb2-4c5a-971c-d54f36dd2ad8
 keywords:
-- StringCollection. Count Windows Media Player
+- Cadeia de caracteres. Count Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce3e0a755411228d8a71de1cdc781c360050ee94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac93b14cf79aadc6622f00e9d3867d3dfdb50955799f1185db80d2fb1e8b271d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571776"
 ---
 # <a name="stringcollectioncount"></a>Cadeia de caracteres. Count
 
@@ -52,10 +52,10 @@ Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura �
 
 <dl> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> <dt>
 
 [**Objeto StringCollection**](stringcollection-object.md)

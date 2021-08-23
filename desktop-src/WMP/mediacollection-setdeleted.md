@@ -3,9 +3,9 @@ title: Método mediacollection. setdeleted
 description: O método setdeled move o item de mídia especificado para a pasta itens excluídos. | Método mediacollection. setdeleted
 ms.assetid: 3e3c9a16-37e1-41b4-8593-58aaf4541eb9
 keywords:
-- método setdeled Media Player do Windows
-- método setdeleted Windows Media Player, classe Mediacollection
-- Classe mediacollection Windows Media Player, método setdeled
+- método setdeled Windows Media Player
+- método setdeled Windows Media Player, classe mediacollection
+- classe mediacollection Windows Media Player, método setdeleted
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f545953899883933286f3c38def62d9f254dfdc0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63dcb4c0062acbd5f457cd09b9c1370ff9c4f7683fd8758a4a64ce5f510a6948
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647836"
 ---
 # <a name="mediacollectionsetdeleted-method"></a>Método mediacollection. setdeleted
 
@@ -57,7 +57,7 @@ Sempre Especifique esse valor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -71,7 +71,7 @@ Para usar esse método, é necessário ter acesso completo à biblioteca. Para o
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mediacollection*. **Setdeled** para mover um item de mídia específico, armazenado na variável chamada mediaobject, para a pasta itens excluídos. O *mediacollection*. o método **IsDeleted** testa primeiro se o item já foi excluído. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *mediacollection*. **Setdeled** para mover um item de mídia específico, armazenado na variável chamada mediaobject, para a pasta itens excluídos. O *mediacollection*. o método **IsDeleted** testa primeiro se o item já foi excluído. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -100,7 +100,7 @@ else
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0, Windows Media Player versão 7,1 ou Windows Media Player para Windows XP. Esse método não tem suporte no Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player versão 7,0, Windows Media Player versão 7,1 ou Windows Media Player para Windows XP. não há suporte para esse método no Windows Media Player 9 Series ou posterior.<br/> |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                                                              |
 
 
@@ -118,10 +118,10 @@ else
 [**Mediacollection. IsDeleted**](mediacollection-isdeleted.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

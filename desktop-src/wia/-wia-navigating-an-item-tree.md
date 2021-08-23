@@ -1,19 +1,19 @@
 ---
-description: Um aplicativo navega pela árvore de itens do dispositivo de aquisição de imagens do Windows (WIA) para localizar e selecionar imagens no dispositivo. Usando essa técnica, um aplicativo seleciona e adquire uma imagem sem apresentar uma caixa de diálogo ao usuário.
+description: um aplicativo navega em uma árvore de itens do dispositivo de aquisição de imagem Windows (WIA) para localizar e selecionar imagens no dispositivo. Usando essa técnica, um aplicativo seleciona e adquire uma imagem sem apresentar uma caixa de diálogo ao usuário.
 ms.assetid: 1f124b4a-45fb-4181-b45a-e810a61ac37d
 title: Navegando em uma árvore de itens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 787ff3b53690ae7db4ff69fd5de2f4f4186f8e43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5a8ef11fc534a621c31461df897c8cc81f987ef83163a1300b0e392ce4f190e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593016"
 ---
 # <a name="navigating-an-item-tree"></a>Navegando em uma árvore de itens
 
-Um aplicativo navega pela árvore de itens do dispositivo de aquisição de imagens do Windows (WIA) para localizar e selecionar imagens no dispositivo. Usando essa técnica, um aplicativo seleciona e adquire uma imagem sem apresentar uma caixa de diálogo ao usuário.
+um aplicativo navega em uma árvore de itens do dispositivo de aquisição de imagem Windows (WIA) para localizar e selecionar imagens no dispositivo. Usando essa técnica, um aplicativo seleciona e adquire uma imagem sem apresentar uma caixa de diálogo ao usuário.
 
 Um dispositivo WIA é representado como o item raiz em uma árvore de objetos [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) ou [**IWiaItem2**](-wia-iwiaitem2.md) . Os itens filho na árvore representam imagens para uma câmera ou ambientes de verificação para um scanner.
 

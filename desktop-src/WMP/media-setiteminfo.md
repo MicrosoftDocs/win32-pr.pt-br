@@ -3,9 +3,9 @@ title: Método Media. setItemInfo
 description: O método setItemInfo define o valor do atributo especificado para o item de mídia atual.
 ms.assetid: 8c4ce954-45cb-4a67-9660-1a013ecd64c3
 keywords:
-- método setItemInfo Windows Media Player
-- método setItemInfo Windows Media Player, classe de mídia
-- Classe de mídia Windows Media Player, método setItemInfo
+- Windows Media Player do método setItemInfo
+- método setItemInfo Windows Media Player, classe Media
+- classe de mídia Windows Media Player, método setItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b918e6a388cab750cc379611f5f55c6a1b1d256c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1639b86ce1e0643f3d6ce255e5ca492bc4fae0c1301e1a568a0c5609ceda2a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647966"
 ---
 # <a name="mediasetiteminfo-method"></a>Método Media. setItemInfo
 
@@ -46,7 +46,7 @@ Media.setItemInfo(
 *atributo* \[ no\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo. Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+**Cadeia de caracteres** que contém o nome do atributo. para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 </dd> <dt>
 
@@ -57,7 +57,7 @@ Media.setItemInfo(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -71,13 +71,13 @@ Para usar esse método, é necessário ter acesso completo à biblioteca. Para o
 
 **Observação**
 
-Se você inserir o controle do Windows Media Player em seu aplicativo, os atributos de arquivo alterados não serão gravados no arquivo de mídia digital até que o usuário execute o Windows Media Player. Se você usar o controle em um aplicativo remoto escrito em C++, os atributos de arquivo alterados serão gravados no arquivo de mídia digital logo depois que você fizer as alterações. Em ambos os casos, as alterações ficam imediatamente disponíveis para seu código por meio da biblioteca.
+se você inserir o controle de Windows Media Player em seu aplicativo, os atributos de arquivo que você alterar não serão gravados no arquivo de mídia digital até que o usuário seja executado Windows Media Player. Se você usar o controle em um aplicativo remoto escrito em C++, os atributos de arquivo alterados serão gravados no arquivo de mídia digital logo depois que você fizer as alterações. Em ambos os casos, as alterações ficam imediatamente disponíveis para seu código por meio da biblioteca.
 
 **Windows Media Player 10 Mobile:** Este método não está implementado.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **setItemInfo** para alterar o valor do atributo gênero para o item de mídia atual. Um elemento de entrada de texto HTML chamado genText permite que o usuário insira uma cadeia de texto, que é usada para alterar as informações de atributo. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *mídia*. **setItemInfo** para alterar o valor do atributo gênero para o item de mídia atual. Um elemento de entrada de texto HTML chamado genText permite que o usuário insira uma cadeia de texto, que é usada para alterar as informações de atributo. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -126,10 +126,10 @@ onClick = "
 [**Media. isReadOnlyItem**](media-isreadonlyitem.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

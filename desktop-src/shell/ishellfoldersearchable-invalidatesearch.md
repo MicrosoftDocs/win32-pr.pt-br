@@ -1,6 +1,6 @@
 ---
-description: Torna esse ponteiro para uma lista de identificadores de item (PIDL) uma parte inválida da pasta do Shell.
-title: 'Método IShellFolderSearchable:: InvalidateSearch'
+description: Torna esse ponteiro para uma PIDL (lista de identificadores de item) uma parte inválida da pasta Shell.
+title: Método IShellFolderSearchable::InvalidateSearch
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6985a299-8547-4db4-99f9-d46dafe4789b
-ms.openlocfilehash: 43d76c6a27b301a61474b8028af16e5e540cf2ce
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 5f443f3abd4a5cf2c1d0fc473c9267660d05c183a02c7f7705c1fabcbc9a8918
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596566"
 ---
-# <a name="ishellfoldersearchableinvalidatesearch-method"></a>Método IShellFolderSearchable:: InvalidateSearch
+# <a name="ishellfoldersearchableinvalidatesearch-method"></a>Método IShellFolderSearchable::InvalidateSearch
 
-Torna esse ponteiro para uma lista de identificadores de item (PIDL) uma parte inválida da pasta do Shell.
+Torna esse ponteiro para uma PIDL (lista de identificadores de item) uma parte inválida da pasta Shell.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,33 +40,33 @@ HRESULT InvalidateSearch(
 
 <dl> <dt>
 
-*pidlSearch* \[ no\]
+*pidlSearch* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCITEMIDLIST**
 
-Um ponteiro para a estrutura de [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) da pasta de pesquisa.
+Um ponteiro para a [**estrutura ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) da pasta de pesquisa.
 
 </dd> <dt>
 
-*pdwFlags* \[ no\]
+*pdwFlags* \[ Em\]
 </dt> <dd>
 
 Tipo: **DWORD \***
 
-Nenhum sinalizador está definido no momento; Defina como **nulo**.
+Nenhum sinalizador está definido no momento; definido como **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Quando uma pasta de pesquisa é invalidada, ela pode executar a limpeza de todos os recursos que ele usou. O método **IShellFolderSearchable:: InvalidateSearch** pode fazer com que uma pesquisa assíncrona seja cancelada e resultará na versão eventual do objeto de interface [**IShellFolderSearchableCallback**](ishellfoldersearchablecallback.md) .
+Quando uma pasta de pesquisa é invalidada, ela pode executar a limpeza de todos os recursos que usou. O **método IShellFolderSearchable::InvalidateSearch** pode fazer com que uma pesquisa assíncrona seja cancelada e resultará na versão eventual do objeto de interface [**IShellFolderSearchableCallback.**](ishellfoldersearchablecallback.md)
 
 ## <a name="requirements"></a>Requisitos
 

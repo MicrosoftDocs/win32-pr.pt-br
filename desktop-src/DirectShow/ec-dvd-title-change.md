@@ -1,7 +1,7 @@
 ---
-description: Indica quando o número de título do DVD atual é alterado.
+description: Indica quando o número de título do DVD atual é atualizado.
 ms.assetid: 9888f2ec-fc2d-4d6d-a03d-b381373337eb
-title: EC_DVD_TITLE_CHANGE (Dvdevcode. h)
+title: EC_DVD_TITLE_CHANGE (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,25 +13,25 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: 9539d29704797b1c7b001d426250762d2ed27b3e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 667d8f11270865f1caa4549377db2cccb278053ea9848b71aa38f0d5f7528689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119686206"
 ---
-# <a name="ec_dvd_title_change"></a>\_alteração do \_ título do DVD do EC \_
+# <a name="ec_dvd_title_change"></a>ALTERAÇÃO DE \_ TÍTULO DO DVD DE \_ \_ EC
 
-Indica quando o número de título do DVD atual é alterado.
+Indica quando o número de título do DVD atual é atualizado.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-Valor **DWORD** que indica o novo número de título.
+**Valor DWORD** que indica o novo número de título.
 
 </dd> <dt>
 
@@ -44,9 +44,9 @@ Zero.
 
 ## <a name="remarks"></a>Comentários
 
-Os números de título variam de 1 a 99. Esse número indica o TTN, que é o número de título em relação ao disco inteiro, e não VTS \_ TTN, que é o número de título em relação a apenas uma VTS atual.
+Os números de título variam de 1 a 99. Esse número indica o TTN, que é o número de título em relação ao disco inteiro, não ao TTN do VTS, que é o número de título em relação apenas a um \_ VTS atual.
 
-Esse evento é gerado no domínio do título.
+Esse evento é gerado no domínio de título.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Esse evento é gerado no domínio do título.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdevcode.h (inclua Dshow.h)</dt> </dl> |
 
 
 
@@ -65,10 +65,10 @@ Esse evento é gerado no domínio do título.
 [Aplicativos de DVD](dvd-applications.md)
 </dt> <dt>
 
-[Códigos de notificação de eventos de DVD](dvd-notification-codes.md)
+[Códigos de notificação de evento de DVD](dvd-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

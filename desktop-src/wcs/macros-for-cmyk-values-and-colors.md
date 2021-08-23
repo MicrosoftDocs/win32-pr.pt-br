@@ -3,8 +3,8 @@ title: Macros para valores CMYK e cores
 description: As macros a seguir são úteis na manipulação de valores CMYK.
 ms.assetid: e5d107fb-e010-400b-9ec5-90c2c0381dbe
 keywords:
-- WCS (sistema de cores do Windows), macros CMYK
-- WCS (sistema de cores do Windows), macros CMYK
+- Windows Sistema de cores (WCS), macros CMYK
+- WCS (Windows sistema de cores), macros CMYK
 - gerenciamento de cores de imagem, macros CMYK
 - gerenciamento de cores, macros CMYK
 - cores, macros CMYK
@@ -16,12 +16,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a0efcbb6b0dc25f8f93f420113cc8c0797cba46
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 591c479686db45f1b0d6fc6097d5134de481307b144200604a15b360bcf2c146
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105785996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119593356"
 ---
 # <a name="macros-for-cmyk-values-and-colors"></a>Macros para valores CMYK e cores
 

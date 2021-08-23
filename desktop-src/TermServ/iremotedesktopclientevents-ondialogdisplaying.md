@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eaf3d69657147845dcd2114cd4a1f3b4f68a962f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4eb2351a62432118424ce3b434c3beed305dc50af8b956ff081df15f3a146f27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511665"
 ---
 # <a name="iremotedesktopclienteventsondialogdisplaying-method"></a>Método IRemoteDesktopClientEvents:: OnDialogDisplaying
 
@@ -41,7 +41,7 @@ void OnDialogDisplaying();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

@@ -3,7 +3,7 @@ title: OnClick
 description: O manipulador de eventos OnClick manipula um evento que ocorre quando o usuário clica no elemento.
 ms.assetid: 59aa0038-b004-4dc3-849a-6015db764843
 keywords:
-- onclique no Windows Media Player
+- desclicar Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: be07d2cc8a7720f686ca5ae0847870b27279b8da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae69bcd5ff7d806db5bcaf1e7fd978fc43881d8b390ada7922f394f4f7225b4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647196"
 ---
 # <a name="onclick"></a>OnClick
 

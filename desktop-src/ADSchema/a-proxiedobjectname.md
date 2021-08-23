@@ -1,11 +1,11 @@
 ---
-title: Atributo de nome de objeto com proxy
-description: Esse atributo é usado internamente pelo Active Directory para ajudar a acompanhar as movimentações entre domínios.
+title: Atributo Proxied-Object-Name
+description: Esse atributo é usado internamente pelo Active Directory para ajudar a acompanhar as movimentações de interdomínio.
 ms.assetid: 661ea322-f78c-44dc-8d64-4f28ead1a7aa
 ms.tgt_platform: multiple
 keywords:
-- Atributo do AD-Object-Name-Schema
-- Esquema de AD do atributo proxiedObjectName
+- Esquema do AD do atributo Proxied-Object-Name
+- Esquema do AD do atributo proxiedObjectName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ffafbbea411c950954102a788226c29589029e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8cfb8560c8960ef954e2fb0921bc1568f8a15a4502f5da87d82fc9044f1da53a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646926"
 ---
-# <a name="proxied-object-name-attribute"></a>Atributo de nome de objeto com proxy
+# <a name="proxied-object-name-attribute"></a>Atributo Proxied-Object-Name
 
-Esse atributo é usado internamente pelo Active Directory para ajudar a acompanhar as movimentações entre domínios.
+Esse atributo é usado internamente pelo Active Directory para ajudar a acompanhar as movimentações de interdomínio.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------|
-| CN                | Nome-do-objeto-proxy                             |
-| LDAP-Display-Name | proxiedObjectName                               |
+| CN                | Proxied-Object-Name                             |
+| Ldap-Display-Name | proxiedObjectName                               |
 | Tamanho              | \-                                              |
 | Privilégio de atualização  | Isso é usado pelo sistema.                     |
 | Frequência de atualização  | \-                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.1249                         |
-| System-ID-GUID    | e1aea402-cd5b-11d0-afff-0000f80367c1            |
-| Syntax            | [**Objeto (DN-binário)**](s-object-dn-binary.md) |
+| System-Id-Guid    | e1aea402-cd5b-11d0-afff-0000f80367c1            |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md) |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -79,11 +79,11 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -121,10 +121,10 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -142,10 +142,10 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -163,10 +163,10 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
@@ -184,10 +184,10 @@ Esse atributo é usado internamente pelo Active Directory para ajudar a acompanh
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
+| No catálogo global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |

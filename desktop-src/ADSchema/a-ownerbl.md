@@ -1,11 +1,11 @@
 ---
-title: atributo ms-Exch-Owner-BL
-description: O link para trás para o atributo de proprietário. Contém uma lista de proprietários de um objeto.
+title: Atributo ms-Exch-Owner-BL
+description: O link para trás para o atributo de proprietário. Contém uma lista de proprietários para um objeto .
 ms.assetid: 7b47238d-7edd-4375-83bf-6dbb8da794ef
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-Exch-Owner-BL
-- Esquema de AD do atributo ownerBL
+- Esquema do AD do atributo ms-Exch-Owner-BL
+- Esquema do AD do atributo ownerBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff7be6dd574591f1619980e046222b8b62864534
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1945f393fb41488ad391dcee42d966f41d9572a0daf9744ce7bb23bf9cdf2bb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648086"
 ---
-# <a name="ms-exch-owner-bl-attribute"></a>atributo ms-Exch-Owner-BL
+# <a name="ms-exch-owner-bl-attribute"></a>Atributo ms-Exch-Owner-BL
 
-O link para trás para o atributo de proprietário. Contém uma lista de proprietários de um objeto.
+O link para trás para o atributo de proprietário. Contém uma lista de proprietários para um objeto .
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Ms-Exch-Owner-BL                        |
-| LDAP-Display-Name | ownerBL                                 |
+| CN                | ms-Exch-Owner-BL                        |
+| Ldap-Display-Name | ownerBL                                 |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.        |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.104                  |
-| System-ID-GUID    | bf9679f4-0de6-11d0-a285-00aa003049e2    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf9679f4-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,11 +56,11 @@ O link para trás para o atributo de proprietário. Contém uma lista de proprie
 |------------------------|---------------------------------|
 | ID do link                | 45                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,11 +77,11 @@ O link para trás para o atributo de proprietário. Contém uma lista de proprie
 |------------------------|---------------------------------|
 | ID do link                | 45                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,11 +98,11 @@ O link para trás para o atributo de proprietário. Contém uma lista de proprie
 |------------------------|---------------------------------|
 | ID do link                | 45                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,11 +119,11 @@ O link para trás para o atributo de proprietário. Contém uma lista de proprie
 |------------------------|---------------------------------|
 | ID do link                | 45                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -140,11 +140,11 @@ O link para trás para o atributo de proprietário. Contém uma lista de proprie
 |------------------------|---------------------------------|
 | ID do link                | 45                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

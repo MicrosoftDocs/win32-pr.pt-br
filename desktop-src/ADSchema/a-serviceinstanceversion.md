@@ -1,11 +1,11 @@
 ---
-title: Atributo de versão de instância de serviço
+title: Atributo Service-Instance-Version
 description: Versão de um serviço Winsock.
 ms.assetid: fabed006-7c3a-40ba-b229-3ceae3113250
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de versão de instância de serviço
-- Esquema de AD do atributo serviceInstanceVersion
+- Esquema do AD do atributo Service-Instance-Version
+- Esquema do AD do atributo serviceInstanceVersion
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53981f3871797e0809d8dda1d7e35551c48c22ec
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a917ff8056f62ff7ecaeb6eecc9efeb2abd7a60e22e972b3a45ea805a8e1a390
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645997"
 ---
-# <a name="service-instance-version-attribute"></a>Atributo de versão de instância de serviço
+# <a name="service-instance-version-attribute"></a>Atributo Service-Instance-Version
 
 Versão de um serviço Winsock.
 
@@ -30,13 +30,13 @@ Versão de um serviço Winsock.
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Versão da instância de serviço                              |
-| LDAP-Display-Name | serviceInstanceVersion                                |
+| Ldap-Display-Name | serviceInstanceVersion                                |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.199                                |
-| System-ID-GUID    | bf967a37-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967a37-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ Versão de um serviço Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Verdadeiro                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -79,10 +79,10 @@ Versão de um serviço Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Verdadeiro                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -100,10 +100,10 @@ Versão de um serviço Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Verdadeiro                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
 | Search-Flags           | 0x00000000                                               |
@@ -121,9 +121,9 @@ Versão de um serviço Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
+| No catálogo global      | Verdadeiro                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
@@ -142,9 +142,9 @@ Versão de um serviço Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
+| No catálogo global      | Verdadeiro                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |
@@ -163,9 +163,9 @@ Versão de um serviço Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
+| No catálogo global      | Verdadeiro                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | 0                                                        |
 | Range-Upper            | 8                                                        |

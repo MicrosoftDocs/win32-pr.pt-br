@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b0a707cc56eac5f92c50852a0d006fe6374b802
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2ff01428e1faf994766586f9e25c5e051aa88f40ae29c979b1aafb2b988f33d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647786"
 ---
 # <a name="personal-title-attribute"></a>Personal-Title atributo
 
@@ -58,7 +58,7 @@ o título do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ o título do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -100,7 +100,7 @@ o título do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -121,10 +121,10 @@ o título do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -142,10 +142,10 @@ o título do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -163,10 +163,10 @@ o título do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C6B                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |

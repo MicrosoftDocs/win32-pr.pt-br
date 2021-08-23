@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: aff08831bf194da5c7ce958e5a0746abdd533dc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e1df9be00a098bbefe6a6925413a29f0e01655f9b794bb48ea14d8ac1cb91c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591926"
 ---
 # <a name="shelllinkobjectdescription-property"></a>Propriedade ShellLinkObject. Description
 
@@ -42,9 +42,9 @@ a descrição do link.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado dessa propriedade em JScript, VBScript e Visual Basic.
+o exemplo a seguir mostra o uso apropriado dessa propriedade em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -173,7 +173,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 2000 Professional com SP3 \[\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |

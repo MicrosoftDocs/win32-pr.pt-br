@@ -4,12 +4,12 @@ ms.assetid: 35fed5e4-2338-4b5e-a138-b5cf587a8db8
 title: System. Photo. ApertureDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b4497017745cf73c2027f32be980aeafa7e7129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d42df2ea6d01fdd72cf7a02525193af5873f0c93507af21693bbc136f825d384
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119596726"
 ---
 # <a name="systemphotoaperturedenominator"></a>System. Photo. ApertureDenominator
 

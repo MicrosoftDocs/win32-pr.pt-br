@@ -4,8 +4,8 @@ description: Informações de associação específicas do serviço no formato d
 ms.assetid: 0348b375-85cd-4ca7-87bc-122548d5e48d
 ms.tgt_platform: multiple
 keywords:
-- Esquema do atributo Service-Binding-Information do AD
-- Esquema de AD do atributo serviceBindingInformation
+- Esquema do AD do atributo Service-Binding-Information
+- Esquema do AD do atributo serviceBindingInformation
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 061592e86561fea2c6b09563237c9213c5fb32e1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd7d4f6935020287f40f86ddb16271d0005ae4254a799b34011dee8d665f4e2c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646096"
 ---
 # <a name="service-binding-information-attribute"></a>Atributo Service-Binding-Information
 
@@ -29,14 +29,14 @@ Informações de associação específicas do serviço no formato de cadeia de c
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Associação de serviço-informações                 |
-| LDAP-Display-Name | serviceBindingInformation                   |
+| CN                | Service-Binding-Information                 |
+| Ldap-Display-Name | serviceBindingInformation                   |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.510                      |
-| System-ID-GUID    | b7b1311c-b82e-11d0-afee-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b7b1311c-b82e-11d0-afee-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ Informações de associação específicas do serviço no formato de cadeia de c
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -79,10 +79,10 @@ Informações de associação específicas do serviço no formato de cadeia de c
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -100,10 +100,10 @@ Informações de associação específicas do serviço no formato de cadeia de c
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Verdadeiro                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
@@ -123,7 +123,7 @@ Informações de associação específicas do serviço no formato de cadeia de c
 | System-Only            | Falso                                                                   |
 | É de valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -144,7 +144,7 @@ Informações de associação específicas do serviço no formato de cadeia de c
 | System-Only            | Falso                                                                   |
 | É de valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
@@ -165,7 +165,7 @@ Informações de associação específicas do serviço no formato de cadeia de c
 | System-Only            | Falso                                                                   |
 | É de valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | True                                                                    |
+| No catálogo global      | Verdadeiro                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |

@@ -4,12 +4,12 @@ ms.assetid: 4a33f411-d71e-41d3-b5fd-018a92dceeac
 title: Elemento isDefaultSaveLocation (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75b664e4cd6f7c88f1dfbeb44ba23faee5d24a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e94cfe2f620dd7c4ccac2bed27dd87511e9174861aeb74dce9ac5737263e9275
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597476"
 ---
 # <a name="isdefaultsavelocation-element-search-connector-schema"></a>Elemento isDefaultSaveLocation (esquema do conector de pesquisa)
 
@@ -47,7 +47,7 @@ O elemento booliano opcional <isDefaultSaveLocation> especifica se o local descr
 
 ## <a name="remarks"></a>Comentários
 
-Quando um usuário opta por salvar um item, o Windows Explorer salva o item no local especificado no <simpleLocation> elemento. Os usuários podem alterar essa configuração usando a caixa de diálogo Propriedades do conector de pesquisa.
+quando um usuário opta por salvar um item, o Windows Explorer salva o item no local especificado no <simpleLocation> elemento. Os usuários podem alterar essa configuração usando a caixa de diálogo Propriedades do conector de pesquisa.
 
 ## <a name="example"></a>Exemplo
 
