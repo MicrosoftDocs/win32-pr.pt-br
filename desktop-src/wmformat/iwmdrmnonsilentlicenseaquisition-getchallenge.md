@@ -1,11 +1,11 @@
 ---
-title: Método getchallenge IWMDRMNonSilentLicenseAquisition (wmdrmsdk. h)
-description: O método getchallenge recupera o desafio de licença que deve ser postado no servidor de licença.
+title: Método GetChallenge IWMDRMNonSilentLicenseAquisition (Wmdrmsdk.h)
+description: O método GetChallenge recupera o desafio de licença que deve ser postado no servidor de licença.
 ms.assetid: f2ff8484-8fe2-4c74-82c1-9bc14f8197e0
 keywords:
-- Método getchallenge formato de mídia do Windows
-- Método getchallenge Windows Media Format, interface IWMDRMNonSilentLicenseAquisition
-- IWMDRMNonSilentLicenseAquisition interface formato Windows Media, método getchallenge
+- Formato de mídia do windows do método GetChallenge
+- Formato de mídia do windows do método GetChallenge, interface IWMDRMNonSilentLicenseAquisition
+- IWMDRMNonSilentLicenseNãosition interface windows Formato de mídia , método GetChallenge
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0dc63c63e5d7a62c06cbe791d9a5e5e8d09c5d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf495652033bdb5201f2b4e5bd9dc1d6a222cc3ebdf4ec6438fe391ed06fac85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027514"
 ---
-# <a name="iwmdrmnonsilentlicenseaquisitiongetchallenge-method"></a>Método IWMDRMNonSilentLicenseAquisition:: getchallenge
+# <a name="iwmdrmnonsilentlicenseaquisitiongetchallenge-method"></a>Método IWMDRMNonSilentLicenseAquisition::GetChallenge
 
-O método **getchallenge** recupera o desafio de licença que deve ser postado no servidor de licença.
+O **método GetChallenge** recupera o desafio de licença que deve ser postado no servidor de licença.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ HRESULT GetChallenge(
 
 <dl> <dt>
 
-*pbstrChallenge* \[ fora\]
+*pbstrChallenge* \[ out\]
 </dt> <dd>
 
 Endereço de uma variável que recebe o desafio de licença.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -74,8 +74,8 @@ Nenhum.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Nenhum.
 
 <dl> <dt>
 
-[**Interface IWMDRMNonSilentLicenseAquisition**](iwmdrmnonsilentlicenseaquisition.md)
+[**IWMDRMNonSilentLicenseAquisition Interface**](iwmdrmnonsilentlicenseaquisition.md)
 </dt> </dl>
 
  

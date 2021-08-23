@@ -1,30 +1,30 @@
 ---
 title: Pesquisa síncrona
-description: O objeto localizador de dispositivo permite pesquisas síncronas e assíncronas. As pesquisas síncronas são concluídas e retornam o controle para o aplicativo de chamada somente depois que todos os dispositivos disponíveis forem encontrados.
+description: O objeto Device Finder habilita pesquisas síncronas e assíncronas. As pesquisas síncronas são concluídas e retornam o controle para o aplicativo de chamada somente depois que todos os dispositivos disponíveis são encontrados.
 ms.assetid: fa22cd53-6468-4958-b4e3-b1a41b3cb2f6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1890829dfe8386cd79627dde039264dc81e473c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f852957bed4bb73d9b31d0e26e099eb545b804953718d8cfd4e3cb44ea5f6c62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105783721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999496"
 ---
 # <a name="synchronous-searching"></a>Pesquisa síncrona
 
-O objeto localizador de dispositivo permite pesquisas síncronas e assíncronas. As pesquisas síncronas são concluídas e retornam o controle para o aplicativo de chamada somente depois que todos os dispositivos disponíveis forem encontrados. Para executar uma pesquisa síncrona, use um dos métodos de pesquisa síncrona da interface [**IUPnPDeviceFinder**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder) .
+O objeto Device Finder habilita pesquisas síncronas e assíncronas. As pesquisas síncronas são concluídas e retornam o controle para o aplicativo de chamada somente depois que todos os dispositivos disponíveis são encontrados. Para executar uma pesquisa síncrona, use um dos métodos de pesquisa síncrona da interface [**IUPnPDevice Playback.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder)
 
 > [!Note]  
-> As pesquisas síncronas levam pelo menos nove segundos para serem retornadas. O atraso é causado porque a mensagem de pesquisa UDP inicial deve ser enviada várias vezes. Essa duplicação conta com a inconfiabilidade do protocolo de rede subjacente. As pesquisas síncronas são melhores para interfaces de linha de comando. Elas não são recomendadas para interfaces gráficas do usuário.
+> As pesquisas síncronas levam pelo menos nove segundos para retornar. O atraso é causado porque a mensagem de pesquisa UDP inicial deve ser enviada várias vezes. Essa duplicação responde pela não confiabilidade do protocolo de rede subjacente. As pesquisas síncronas são melhores para interfaces de linha de comando. Eles não são recomendados para interfaces gráficas do usuário.
 
- 
+ 
 
-O método [**IUPnPDeviceFinder:: FindByType**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype) pesquisa por dispositivo ou tipo de serviço. Esse método usa um URI de tipo como um parâmetro de entrada e retorna uma coleção de objetos de dispositivo. Um objeto de dispositivo representa um dispositivo individual.
+O [**método IUPnPDeviceType::FindByType**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype) pesquisa por tipo de dispositivo ou serviço. Esse método aceita um URI de tipo como um parâmetro de entrada e retorna uma coleção de objetos Device. Um objeto Device representa um dispositivo individual.
 
-Os exemplos a seguir demonstram como executar uma pesquisa síncrona para dispositivos em VBScript. Cada script usa [**IUPnPDeviceFinder:: FindByType**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype), chamado com o URI de tipo (ID do serviço) para o tipo de dispositivo do player de mídia, *urn: schemas-UPnP-org: Device: MediaPlayer. v 1.00.00*. O método retorna uma coleção de objetos de dispositivo que corresponde aos dispositivos do player de mídia que foram encontrados. Para obter informações sobre como extrair objetos de dispositivo individuais de uma coleção, consulte [coleções de dispositivos retornadas por pesquisas síncronas](device-collections-returned-by-synchronous-searches.md).
+Os exemplos a seguir demonstram como executar uma pesquisa síncrona para dispositivos no VBScript. Cada script usa [**IUPnPDeviceType::FindByType**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype), chamado com o tipo URI (ID de serviço) para o tipo de dispositivo do player de mídia, *urn:schemas-upnp-org:device:mediaplayer.v1.00.00*. O método retorna uma coleção de objetos Device que corresponde aos dispositivos de player de mídia que foram encontrados. Para obter informações sobre como extrair objetos de dispositivo individuais de uma coleção, consulte Coleções de [dispositivos retornadas por pesquisas síncronas](device-collections-returned-by-synchronous-searches.md).
 
-## <a name="search-for-devices-by-type-in-vbscript"></a>Pesquisar dispositivos por tipo em VBScript
+## <a name="search-for-devices-by-type-in-vbscript"></a>Pesquisar dispositivos por tipo no VBScript
 
 
 ```VB
@@ -41,9 +41,9 @@ Set devices = deviceFinder.FindByType( "urn:schemas-upnp-org:device:multidisk-dv
 
 ## <a name="search-for-device-by-type-in-c"></a>Pesquisar dispositivo por tipo em C++
 
-O exemplo a seguir demonstra uma pesquisa síncrona para dispositivos de player de mídia usando C++. A função usa um ponteiro para a interface [**IUPnPDeviceFinder**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder) como entrada e retorna o ponteiro de interface [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) .
+O exemplo a seguir demonstra uma pesquisa síncrona para dispositivos de player de mídia usando C++. A função leva um ponteiro para a interface [**IUPnPDevice Ltda**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder) como entrada e retorna o ponteiro da interface [**IUPnPDevices.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices)
 
-O exemplo primeiro aloca um **BSTR** para representar o URI do tipo de dispositivo e, em seguida, passa isso para o método [**IUPnPDeviceFinder:: FindByType**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype) . Ele também passa o endereço de um ponteiro [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) local no buffer no qual o método, em seguida, armazena a coleção de dispositivos encontrados. Se a chamada de função for bem-sucedida, ela retornará o ponteiro para essa coleção.
+O exemplo primeiro aloca um **BSTR** para representar o URI do tipo de dispositivo e, em seguida, passa isso para o [**método IUPnPDeviceType::FindByType.**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicefinder-findbytype) Ele também passa o endereço de um ponteiro [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) local no buffer no qual o método armazena a coleção de dispositivos encontrados. Se a chamada de função for bem-sucedida, ela retornará o ponteiro para essa coleção.
 
 
 ```C++
@@ -95,9 +95,9 @@ IUPnPDevices *FindMediaPlayerDevices(IUPnPDeviceFinder *pDeviceFinder)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

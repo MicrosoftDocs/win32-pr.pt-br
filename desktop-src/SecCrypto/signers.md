@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 75eba0ecb2592bf7efc27ecdd63288179e306651
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 62c5f59fc90d0d34226b4442b8fa443ad734d474e8077bf210df8bfdf752b1ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118898329"
 ---
 # <a name="signers-object"></a>Objeto de assinantes
 
@@ -48,8 +48,8 @@ O objeto de **assinantes** tem essas propriedades.
 
 | Propriedade                                        | Tipo de acesso          | Descrição                                                                                                                                                                                                                     |
 |:------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](signers-newenum.md)<br/> | Somente leitura<br/> | Recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](signers-count.md)<br/>       | Somente leitura<br/> | Número de objetos de [**signatário**](signer.md) na coleção.<br/>                                                                                                                                                        |
+| [**\_NewEnum**](signers-newenum.md)<br/> | Somente leitura<br/> | Recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).<br/> |
+| [**Contagem**](signers-count.md)<br/>       | Somente leitura<br/> | Número de objetos de [**signatário**](signer.md) na coleção.<br/>                                                                                                                                                        |
 | [**Item**](signers-item.md)<br/>         | Somente leitura<br/> | Recupera o objeto de [**signatário**](signer.md) que representa o assinante indexado. Essa é a propriedade padrão.<br/>                                                                                                      |
 
 
@@ -66,7 +66,7 @@ Não é possível criar o objeto de **assinantes** .
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

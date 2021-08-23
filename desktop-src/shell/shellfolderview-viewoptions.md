@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e336034e7d5037b8037c6fd0ef549fe5f87da312
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c49389700494c646976ee7df5e67782b110fc085f4328cb139b9604523c8622
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968425"
 ---
 # <a name="shellfolderviewviewoptions-property"></a>Propriedade ShellFolderView. ViewOptions
 
@@ -124,7 +124,7 @@ A opção **Active Desktop – exibir como página da Web** está habilitada.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse método no JScript inserido em HTML.
+o exemplo a seguir mostra o uso apropriado desse método no JScript inserido em HTML.
 
 
 ```JScript
@@ -178,7 +178,7 @@ O exemplo a seguir mostra o uso apropriado desse método no JScript inserido em 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

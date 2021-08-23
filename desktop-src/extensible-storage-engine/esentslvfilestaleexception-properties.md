@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSLVFileStaleException'
-title: Propriedades de EsentSLVFileStaleException
+description: 'Saiba mais sobre: propriedades EsentSLVFileStaleException'
+title: Propriedades EsentSLVFileStaleException
 TOCTitle: EsentSLVFileStaleException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVFileStaleException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvfilestaleexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102773
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b3a2f4e13cfb3a35c5c9cee67354e1929dd883c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f0d995f3e87388d51f3518ae67fe525083bf7588b48b82407e2248cd0fd72b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104561539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981296"
 ---
-# <a name="esentslvfilestaleexception-properties"></a>Propriedades de EsentSLVFileStaleException
+# <a name="esentslvfilestaleexception-properties"></a>Propriedades EsentSLVFileStaleException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVFileStaleException](./esentslvfilestaleexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVFileStaleException](./esentslvfilestaleexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSLVFileStaleException](./esentslvfilestaleexception-class.md) expõ
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSLVFileStaleException](./esentslvfilestaleexception-class.md) expõ
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSLVFileStaleException](./esentslvfilestaleexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

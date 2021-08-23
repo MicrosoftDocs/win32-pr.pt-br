@@ -1,26 +1,26 @@
 ---
-title: Propriedade IMsRdpClientNonScriptable3 RedirectDynamicDrives
-description: Especifica ou recupera se as unidades PnP (Plug and Play conectadas dinamicamente) que são enumeradas enquanto estiverem em uma sessão estão disponíveis para redirecionamento.
+title: Propriedade RedirectDynamicDrives de IMsRdpClientNonScriptable3
+description: Especifica ou recupera se as unidades pnP (Plug and Play) anexadas dinamicamente que são enumeradas em uma sessão estão disponíveis para redirecionamento.
 ms.assetid: 11eb19fc-9711-4293-8054-f7975dadb492
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable3, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, objeto MsRdpClient5
-- Objeto MsRdpClient5 Serviços de Área de Trabalho Remota, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, objeto MsRdpClient6
-- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, objeto MsRdpClient7
-- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, objeto MsRdpClient8
-- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota, Propriedade RedirectDynamicDrives
-- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota, objeto MsRdpClient9
-- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota, Propriedade RedirectDynamicDrives
+- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota
+- A propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable3
+- Interface IMsRdpClientNonScriptable3 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- A propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- A propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota objeto , MsRdpClient5
+- Objeto MsRdpClient5 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota objeto , MsRdpClient6
+- Objeto MsRdpClient6 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota objeto , MsRdpClient7
+- Objeto MsRdpClient7 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- A propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota objeto , MsRdpClient8
+- Objeto MsRdpClient8 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
+- Propriedade RedirectDynamicDrives Serviços de Área de Trabalho Remota objeto , MsRdpClient9
+- Objeto MsRdpClient9 Serviços de Área de Trabalho Remota propriedade RedirectDynamicDrives
 topic_type:
 - apiref
 api_name:
@@ -44,18 +44,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b19c0e6e20f7f73481f6f2ecbc50ab0eda512ded
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5199f8fcf8e114cfb8febd05631e49de97aab01a69ca9397bc7d15539ad819d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001096"
 ---
-# <a name="imsrdpclientnonscriptable3redirectdynamicdrives-property"></a>Propriedade IMsRdpClientNonScriptable3:: RedirectDynamicDrives
+# <a name="imsrdpclientnonscriptable3redirectdynamicdrives-property"></a>Propriedade IMsRdpClientNonScriptable3::RedirectDynamicDrives
 
-Especifica ou recupera se as unidades PnP (Plug and Play conectadas dinamicamente) que são enumeradas enquanto estiverem em uma sessão estão disponíveis para redirecionamento.
+Especifica ou recupera se as unidades pnP (Plug and Play) anexadas dinamicamente que são enumeradas em uma sessão estão disponíveis para redirecionamento.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -74,7 +74,7 @@ HRESULT get_RedirectDynamicDrives(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Especifica se as unidades PnP conectadas dinamicamente que são enumeradas enquanto estiverem em uma sessão estão disponíveis para redirecionamento.
+Especifica se as unidades PnP anexadas dinamicamente que são enumeradas em uma sessão estão disponíveis para redirecionamento.
 
 ## <a name="requirements"></a>Requisitos
 

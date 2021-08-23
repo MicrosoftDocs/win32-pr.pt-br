@@ -4,12 +4,12 @@ ms.assetid: 49baeb89-1dc9-45c2-a532-071085a8e52f
 title: Comportamentos necessários para provedores de cópia de sombra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f451dea7154a313cd64a3a46fbcc3b5fe663ec12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97153d3780701fce6edcde4a4a7740ae1d296b58b2bb44ea38c51f3ab1204499
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056384"
 ---
 # <a name="required-behaviors-for-shadow-copy-providers"></a>Comportamentos necessários para provedores de cópia de sombra
 
@@ -23,21 +23,21 @@ O provedor nunca deve concordar em dar suporte a uma cópia de sombra que não p
 
 ## <a name="created-shadow-copy-volumes-are-read-only-and-hidden"></a>Os volumes de cópia de sombra criados são Read-Only e ocultos
 
-O VSS define os sinalizadores em cada LUN afetado, de modo que os volumes de cópia de sombra resultantes serão ocultos e somente leitura quando detectados por um computador que executa o Windows Server 2003. Letras de unidade e pastas montadas não são atribuídas automaticamente. O VSS mantém esses sinalizadores durante todo o ciclo de vida de uma cópia de sombra.
+o VSS define os sinalizadores em cada LUN afetado, de modo que os volumes de cópia de sombra resultantes serão ocultos e somente leitura quando detectados por um computador executando o Windows Server 2003. Letras de unidade e pastas montadas não são atribuídas automaticamente. O VSS mantém esses sinalizadores durante todo o ciclo de vida de uma cópia de sombra.
 
 ## <a name="hardware-shadow-copy-luns-must-be-readwrite"></a>LUNs de cópia de sombra de hardware devem ser de leitura/gravação
 
 O VSS dá suporte a cópias de sombra de hardware somente quando o LUN subjacente é mapeado como leitura/gravação. Isso deve ser feito antes que a cópia de sombra seja criada; Isso não pode ser feito após o fato. Os provedores de hardware não devem modificar esses sinalizadores. Para obter mais informações sobre como o VSS usa esses sinalizadores, consulte [o processo de criação de cópia de sombra](the-shadow-copy-creation-process.md).
 
-## <a name="auto-import-hardware-shadow-copies-are-not-supported-on-windows-cluster-service"></a>Não há suporte para a importação automática de cópias de sombra de hardware no serviço de cluster do Windows
+## <a name="auto-import-hardware-shadow-copies-are-not-supported-on-windows-cluster-service"></a>não há suporte para a importação automática de cópias de sombra de Hardware no serviço de Cluster Windows
 
-O Windows Serviço de cluster não pode acomodar LUNs com assinaturas duplicadas e layout de partição. Os LUNs de cópia de sombra devem ser transportados para um host fora do cluster. Para obter mais informações, consulte [recuperação rápida usando volumes copiados de sombra transportável](fast-recovery-using-transportable-shadow-copied-volumes.md).
+Windows Serviço de cluster não pode acomodar LUNs com assinaturas duplicadas e layout de partição. Os LUNs de cópia de sombra devem ser transportados para um host fora do cluster. Para obter mais informações, consulte [recuperação rápida usando volumes copiados de sombra transportável](fast-recovery-using-transportable-shadow-copied-volumes.md).
 
 ## <a name="shadow-copies-that-contain-dynamic-disks-must-be-transported-to-a-different-host"></a>As cópias de sombra que contêm discos dinâmicos devem ser transportadas para um host diferente
 
-**Antes do Windows Server 2008:** O suporte nativo para discos dinâmicos não pode acomodar LUNs com assinaturas duplicadas e conteúdo de banco de dados de configuração. Os LUNs de cópia de sombra devem ser transportados para um host diferente. O VSS impõe isso por não permitir cópias de sombra de discos dinâmicos de importação automática. Um solicitante não deve importar uma cópia de sombra transportável de volta para o mesmo host.
+**antes do Windows Server 2008:** O suporte nativo para discos dinâmicos não pode acomodar LUNs com assinaturas duplicadas e conteúdo de banco de dados de configuração. Os LUNs de cópia de sombra devem ser transportados para um host diferente. O VSS impõe isso por não permitir cópias de sombra de discos dinâmicos de importação automática. Um solicitante não deve importar uma cópia de sombra transportável de volta para o mesmo host.
 
-**A partir do Windows Server 2008:** Essa limitação é removida.
+**a partir do Windows Server 2008:** Essa limitação é removida.
 
 ## <a name="providers-are-out-of-process"></a>Os provedores estão fora do processo
 

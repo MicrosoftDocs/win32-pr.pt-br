@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\vertex_buffers.htm
 title: Buffers de vértice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e38feb34e7b9f637f383bf451bff812d9ee6fb1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8ceec0f5aee30597b20142945a4ffd3cbcd29500db4113ac2c8dcdd27d045d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043994"
 ---
 # <a name="vertex-buffers-direct3d-9"></a>Buffers de vértice (Direct3D 9)
 

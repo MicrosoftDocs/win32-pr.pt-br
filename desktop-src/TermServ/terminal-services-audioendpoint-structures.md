@@ -1,18 +1,18 @@
 ---
-title: Serviços de Área de Trabalho Remota estruturas AudioEndpoint
+title: estruturas Serviços de Área de Trabalho Remota AudioEndpoint
 description: As estruturas a seguir são usadas com a API AudioEndpoint.
 ms.assetid: 174661a6-f6be-4aac-837a-43dbee9cd839
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c38901d9901ab05d28f9ead90da3f95004acde5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 346cc3f3bc57e567c53961f16f5d8718014a6e6cfb253b41cfdd0e32d2378f06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000046"
 ---
-# <a name="remote-desktop-services-audioendpoint-structures"></a>Serviços de Área de Trabalho Remota estruturas AudioEndpoint
+# <a name="remote-desktop-services-audioendpoint-structures"></a>estruturas Serviços de Área de Trabalho Remota AudioEndpoint
 
 As estruturas a seguir são usadas com a API AudioEndpoint.
 
@@ -20,27 +20,27 @@ As estruturas a seguir são usadas com a API AudioEndpoint.
 
 <dl> <dt>
 
-[**\_posição atual da AE \_**](/windows/desktop/api/Audioengineendpoint/ns-audioengineendpoint-ae_current_position)
+[**POSIÇÃO \_ ATUAL DO AE \_**](/windows/desktop/api/Audioengineendpoint/ns-audioengineendpoint-ae_current_position)
 </dt> <dd>
 
 Relata a posição do quadro atual do dispositivo para os clientes.
 
 </dd> <dt>
 
-[**\_propriedade de conexão APO \_**](/windows/desktop/api/Audioapotypes/ns-audioapotypes-apo_connection_property)
+[**PROPRIEDADE DE \_ CONEXÃO DO \_ APO**](/windows/desktop/api/Audioapotypes/ns-audioapotypes-apo_connection_property)
 </dt> <dd>
 
-Contém as propriedades de conexão de alteração dinâmica.
+Contém as propriedades de conexão que mudam dinamicamente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O Serviços de Área de Trabalho Remota API AudioEndpoint é para uso em cenários de Área de Trabalho Remota; Não é para aplicativos cliente.
+A api Serviços de Área de Trabalho Remota AudioEndpoint é para uso em Área de Trabalho Remota cenários; não é para aplicativos cliente.
 
- 
+ 
 
- 
+ 
 
 
 

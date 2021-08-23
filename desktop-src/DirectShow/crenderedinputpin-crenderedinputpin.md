@@ -1,7 +1,7 @@
 ---
-description: Construtor de CRenderedInputPin. CRenderedInputPin-método de construtor.
+description: Construtor CRenderedInputPin.CRenderedInputPin – método construtor.
 ms.assetid: bf335750-b776-47bc-978d-e84e8b5259f7
-title: Construtor CRenderedInputPin. CRenderedInputPin (Amextra. h)
+title: Construtor CRenderedInputPin.CRenderedInputPin (Amextra.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4bd8e864531604fb36c2abe0bcd57ac5b3a9c869
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6b75ce6b5f91f5bd9019a4bf6e46266269b72ac7a5e719f7a58b2f2e702375a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953825"
 ---
-# <a name="crenderedinputpincrenderedinputpin-constructor"></a>Construtor CRenderedInputPin. CRenderedInputPin
+# <a name="crenderedinputpincrenderedinputpin-constructor"></a>Construtor CRenderedInputPin.CRenderedInputPin
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,35 +49,35 @@ CRenderedInputPin(
 *pObjectName* 
 </dt> <dd>
 
-Cadeia de caracteres que contém o nome de depuração do objeto. Para obter mais informações, consulte [**classe CBaseObject**](cbaseobject.md).
+Cadeia de caracteres que contém o nome de depuração do objeto. Para obter mais informações, consulte [**Classe CBaseObject**](cbaseobject.md).
 
 </dd> <dt>
 
 *pFilter* 
 </dt> <dd>
 
-Ponteiro para o filtro que criou este pin.
+Ponteiro para o filtro que criou esse pino.
 
 </dd> <dt>
 
-*pLock* 
+*Plock* 
 </dt> <dd>
 
-Ponteiro para um bloqueio de [**CCritSec**](ccritsec.md) , usado para serializar alterações de estado. Essa pode ser a mesma seção crítica que o bloqueio de filtro, [**CBaseFilter:: m \_ pLock**](cbasefilter-m-plock.md).
+Ponteiro para um [**bloqueio CCritSec,**](ccritsec.md) usado para serializar alterações de estado. Essa pode ser a mesma seção crítica que o bloqueio de filtro, [**CBaseFilter::m \_ pLock**](cbasefilter-m-plock.md).
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um valor **HRESULT** que indica o êxito ou a falha do método.
+Ponteiro para uma variável que recebe um **valor HRESULT** que indica o êxito ou a falha do método.
 
 </dd> <dt>
 
-*pName* 
+*Pname* 
 </dt> <dd>
 
-Cadeia de caracteres largos contendo o nome do PIN (também usado como o identificador do PIN).
+Cadeia de caracteres largos que contém o nome do pino (também usado como o identificador de pino).
 
 </dd> </dl>
 
@@ -87,12 +87,12 @@ Cadeia de caracteres largos contendo o nome do PIN (também usado como o identif
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amextra. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amextra.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

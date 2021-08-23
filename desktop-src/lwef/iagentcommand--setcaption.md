@@ -4,16 +4,16 @@ description: IAgentCommand AutoCaption
 ms.assetid: f4fdd37a-28b4-4e00-885c-58addedec659
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88453f54ffa59b413f30d27c58aa6cd2dcc6e12e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 73ffccf42a972ec9635c929fb954d58bfaff967af364d24ae505e1dbb2bd8772
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976356"
 ---
 # <a name="iagentcommandsetcaption"></a>IAgentCommand:: SetCaption
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetCaption(
@@ -41,6 +41,6 @@ Definir a propriedade [**Caption**](caption-property.md) para um [**comando**](/
 [**IAgentCommand:: getCaption**](iagentcommand--getcaption.md), [**IAgentCommand:: sethabilitated**](iagentcommand--setenabled.md), [**IAgentCommand:: setvisível**](iagentcommand--setvisible.md), [**IAgentCommand:: setvoice**](iagentcommand--setvoice.md), [**IAgentCommands:: Adicionar**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
 
 
- 
+ 
 
- 
+ 

@@ -4,16 +4,16 @@ ms.assetid: 91c4b8cf-3d24-4a11-b19c-b0297734e52b
 title: Controle de qualidade padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 864cd187df71c56441edcfd00fcd6785d96afe84
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9df737855376db52a35476c0f01da4b850e3678ec20595ee82720b7b928237ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953125"
 ---
 # <a name="default-quality-control"></a>Controle de qualidade padrão
 
-As [classes base do DirectShow](directshow-base-classes.md) implementam alguns comportamentos padrão para o controle de qualidade de vídeo.
+as [Classes Base DirectShow](directshow-base-classes.md) implementam alguns comportamentos padrão para o controle de qualidade de vídeo.
 
 As mensagens de qualidade começam no renderizador. A classe base para renderizadores de vídeo é [**CBaseVideoRenderer**](cbasevideorenderer.md), que tem o seguinte comportamento:
 

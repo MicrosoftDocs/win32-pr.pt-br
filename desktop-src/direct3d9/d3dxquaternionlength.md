@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7f54136e7e34ba05442f98b25438dd03b7b5f211
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 21589f6e470c1f23bd537b2983c7073a3f8c29866534418077018f616ca6b25f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104370997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044684"
 ---
 # <a name="d3dxquaternionlength-function"></a>Função D3DXQuaternionLength
 
@@ -49,7 +49,7 @@ Ponteiro para a estrutura de [**D3DXQUATERNION**](d3dxquaternion.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **float**](../winprog/windows-data-types.md)**
 

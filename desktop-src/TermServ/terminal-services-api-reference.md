@@ -7,12 +7,12 @@ keywords:
 - Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota, referência de API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f47f9555cd09a15a771ec00c7f70d95c1204920
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7ef4c5240baf494a47dfdefe71e2a26a2a7a1a00b711bfa6dff906f209656195
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000186"
 ---
 # <a name="remote-desktop-services-api-reference"></a>Referência de API de Serviços de Área de Trabalho Remota
 
@@ -37,9 +37,9 @@ Os elementos a seguir são usados com a API Serviços de Área de Trabalho Remot
 [Usando a API de Serviços de Área de Trabalho Remota](using-the-terminal-services-api.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

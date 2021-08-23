@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDeviceApp QueryDeviceStatus (WMDRMDeviceApp. h)
-description: O método QueryDeviceStatus consulta um dispositivo quanto ao seu status e recursos de DRM atuais.
+title: Método IWMDRMDeviceApp QueryDeviceStatus (WMDRMDeviceApp.h)
+description: O método QueryDeviceStatus consulta um dispositivo quanto ao status e às funcionalidades atuais do DRM.
 ms.assetid: cd5a75d5-d7f8-4077-a9fc-6e7ddd7c796b
 keywords:
-- Método QueryDeviceStatus Windows Media Gerenciador de Dispositivos
-- Método QueryDeviceStatus Windows Media Gerenciador de Dispositivos, interface IWMDRMDeviceApp
-- Interface IWMDRMDeviceApp Windows Media Gerenciador de Dispositivos, método QueryDeviceStatus
+- Método QueryDeviceStatus windows Media Gerenciador de Dispositivos
+- Método QueryDeviceStatus windows Media Gerenciador de Dispositivos , interface IWMDRMDeviceApp
+- Interface IWMDRMDeviceApp windows Media Gerenciador de Dispositivos , método QueryDeviceStatus
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8e0f4fad5ff9026ce70fc21712506eb4796d76b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b169412104a5e22ae973542457d08bead328ea4ded5a34691499ea8dbfd8b7b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055634"
 ---
-# <a name="iwmdrmdeviceappquerydevicestatus-method"></a>Método IWMDRMDeviceApp:: QueryDeviceStatus
+# <a name="iwmdrmdeviceappquerydevicestatus-method"></a>Método IWMDRMDeviceApp::QueryDeviceStatus
 
-O método **QueryDeviceStatus** consulta um dispositivo quanto ao seu status e recursos de DRM atuais.
+O **método QueryDeviceStatus** consulta um dispositivo quanto ao status e às funcionalidades atuais do DRM.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,27 +44,27 @@ HRESULT QueryDeviceStatus(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
-Ponteiro para um objeto [**IWMDMDevice**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice) .
+Ponteiro para um [**objeto IWMDMDevice.**](/windows/desktop/api/mswmdm/nn-mswmdm-iwmdmdevice)
 
 </dd> <dt>
 
-*pdwStatus* \[ fora\]
+*pdwStatus* \[ out\]
 </dt> <dd>
 
-Zero ou mais dos valores **DWORD** a seguir que descrevem os aspectos de DRM do dispositivo, combinados com um **OR bit a** bit. Consulte Observações.
+Zero ou mais dos seguintes valores **DWORD** que descrevem os aspectos drm do dispositivo, combinados com um OR bit a **bit.** Consulte Observações.
 
 
 
 | Status                      | Descrição                                  |
 |-----------------------------|----------------------------------------------|
-| \_ISWMDRM de dispositivo WMDRM \_      | O dispositivo dá suporte a DRM do Windows Media.       |
-| \_NEEDCLOCK de dispositivo WMDRM \_    | O dispositivo não tem um Clock seguro.     |
-| \_dispositivo WMDRM \_ revogado      | O dispositivo foi revogado.                 |
-| \_NEEDINDIV do cliente WMDRM \_    | A segurança do DRM precisa ser individualizada. |
-| \_REFRESHCLOCK de dispositivo WMDRM \_ | O relógio precisa ser atualizado.             |
+| \_ \_ ISWMDRM DO DISPOSITIVO WMDRM      | O dispositivo dá suporte Windows DRM de Mídia.       |
+| \_NEEDCLOCK DO DISPOSITIVO \_ WMDRM    | O dispositivo não tem um relógio seguro.     |
+| DISPOSITIVO WMDRM \_ \_ REVOGADO      | O dispositivo foi revogado.                 |
+| \_NEEDINDIV DO \_ CLIENTE WMDRM    | A segurança do DRM precisa ser individualizada. |
+| ATUALIZAÇÃO DO \_ DISPOSITIVO WMDRMCLOCK \_ | O relógio precisa ser atualizado.             |
 
 
 
@@ -72,9 +72,9 @@ Zero ou mais dos valores **DWORD** a seguir que descrevem os aspectos de DRM do 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -82,8 +82,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                                     | O método foi bem-sucedido.<br/>                                          |
 | <dl> <dt>**DRM \_ E \_ INVALIDARG**</dt> </dl>                        | O argumento de entrada não é válido.<br/>                               |
-| <dl> <dt>**certificado inválido do NS \_ E \_ DRM \_ \_**</dt> </dl>          | O certificado de dispositivo recuperado do dispositivo não é válido.<br/> |
-| <dl> <dt>**o NS \_ E \_ DRM \_ não pode \_ obter o \_ \_ certificado do dispositivo \_**</dt> </dl> | Falha ao recuperar o certificado do dispositivo do dispositivo.<br/>     |
+| <dl> <dt>**NS \_ E \_ DRM CERTIFICADO \_ \_ INVÁLIDO**</dt> </dl>          | O certificado do dispositivo recuperado do dispositivo não é válido.<br/> |
+| <dl> <dt>**O NS \_ E \_ DRM \_ NÃO CONSEGUE OBTER O CERTIFICADO DO \_ \_ \_ \_ DISPOSITIVO**</dt> </dl> | Falha ao recuperar o certificado do dispositivo.<br/>     |
 
 
 
@@ -91,11 +91,11 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Esse método deve ser chamado antes de executar qualquer ação restrita no conteúdo DRM, como transferir conteúdo DRM para o dispositivo ou adquirir informações de medição. Se os valores recuperados por *pdwStatus* indicarem que alguma ação precisa ser executada (como individualização para a área de trabalho ou aquisição de um relógio para o dispositivo), o aplicativo deverá chamar [**AcquireDeviceData**](iwmdrmdeviceapp-acquiredevicedata.md) e passar o valor de *pdwStatus* recuperado dessa função para o parâmetro *dwFlags* em **AcquireDeviceData**. Se zero for retornado, o dispositivo não oferecerá suporte ao Windows Media DRM 10 para dispositivos portáteis e nenhuma ação precisará ser executada. Consulte [lidando com conteúdo protegido no aplicativo](handling-protected-content-in-the-application.md) para obter mais informações.
+Esse método deve ser chamado antes de executar ações restritas no conteúdo drm, como transferir conteúdo drm para o dispositivo ou adquirir informações de medição. Se os valores recuperados por *pdwStatus* indicarem que alguma ação precisa ser executada (como individualização para a área de trabalho ou aquisição de um relógio para o dispositivo), o aplicativo deverá chamar [**AcquireDeviceData**](iwmdrmdeviceapp-acquiredevicedata.md) e passar o valor *pdwStatus* recuperado dessa função para o parâmetro *dwFlags* **em AcquireDeviceData**. Se zero for retornado, o dispositivo não dá suporte Windows DRM de Mídia 10 para Dispositivos Portáteis e nenhuma ação precisa ser tomada. Consulte [Tratamento de conteúdo protegido no aplicativo para](handling-protected-content-in-the-application.md) obter mais informações.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código C++ a seguir cria um objeto **WMDRMDeviceApp** , verifica se o dispositivo é um dispositivo Windows Media DRM 10, se o relógio está correto e solicita os dados de medição.
+O exemplo de código C++ a seguir cria um objeto **WMDRMDeviceApp,** verifica se o dispositivo é um dispositivo drm 10 de mídia do Windows, se seu relógio é preciso e, em seguida, solicita os dados de medição.
 
 
 ```C++
@@ -133,8 +133,8 @@ else if (status & WMDRM_DEVICE_NEEDCLOCK ||
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDRMDeviceApp. h (também requer Wmdrmdeviceapp \_ i. c, criado a partir de WMDRMDeviceApp. idl)</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl>                                                                        |
+| parâmetro<br/>  | <dl> <dt>WMDRMDeviceApp.h (também requer Wmdrmdeviceapp \_ i.c, criado do WMDRMDeviceApp.idl)</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl>                                                                        |
 
 
 
@@ -142,10 +142,10 @@ else if (status & WMDRM_DEVICE_NEEDCLOCK ||
 
 <dl> <dt>
 
-[**Lidando com conteúdo protegido no aplicativo**](handling-protected-content-in-the-application.md)
+[**Manipulando conteúdo protegido no aplicativo**](handling-protected-content-in-the-application.md)
 </dt> <dt>
 
-[**Interface IWMDRMDeviceApp**](iwmdrmdeviceapp.md)
+[**IWMDRMDeviceApp Interface**](iwmdrmdeviceapp.md)
 </dt> <dt>
 
 [**IWMDRMDeviceApp2::QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md)

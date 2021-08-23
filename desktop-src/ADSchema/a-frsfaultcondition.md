@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c97c346f962fbb3c96b399cef3455d95e3f9fe6d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9fb968ed2d09da3a47348f8672960dd97d2d67030e1addcbbda6c7acceae49c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105769113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961505"
 ---
 # <a name="frs-fault-condition-attribute"></a>Atributo FRS-Fault-Condition
 
@@ -58,7 +58,7 @@ A condição de falha para um membro.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -79,7 +79,7 @@ A condição de falha para um membro.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -100,7 +100,7 @@ A condição de falha para um membro.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -108,7 +108,7 @@ A condição de falha para um membro.
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A condição de falha para um membro.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A condição de falha para um membro.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A condição de falha para um membro.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 16                                                       |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000010                                               |
-| Classes usadas em        | [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> |
+| Classes usadas em        | [**Assinante NTFRS**](c-ntfrssubscriber.md)<br/> |
 
 
 

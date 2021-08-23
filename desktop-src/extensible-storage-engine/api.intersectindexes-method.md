@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. IntersectIndexes'
-title: Método API. IntersectIndexes
+description: 'Saiba mais sobre: Método Api.IntersectIndexes'
+title: Método Api.IntersectIndexes
 TOCTitle: 'IntersectIndexes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.IntersectIndexes(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID[])
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.intersectindexes(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8dfe5784ecd5ab517e183f8eeeb5f79315fe585a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88bcc872fc557e3942a119845206661bd48705317163520924059af5456f6e00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983676"
 ---
-# <a name="apiintersectindexes-method"></a>Método API. IntersectIndexes
+# <a name="apiintersectindexes-method"></a>Método Api.IntersectIndexes
 
-Intersecte um grupo de intervalos de índice e retorne os indicadores dos registros que são encontrados em todos os intervalos de índice. Consulte também [JetIntersectIndexes (JET_SESID, \[ \] , Int32, JET_RECORDLIST, IntersectIndexesGrbit)](./api.jetintersectindexes-method.md).
+Intersecção de um grupo de intervalos de índice e retorne os indicadores dos registros encontrados em todos os intervalos de índice. Consulte também [JetIntersectIndexes(JET_SESID, \[ \] , Int32, JET_RECORDLIST, IntersectIndexesGrbit)](./api.jetintersectindexes-method.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,21 +65,21 @@ public static IEnumerable<byte[]> IntersectIndexes(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
   - tableids  
-    Escreva \[\]  
+    Tipo: \[\]  
     
-    O tableids a ser usado. Cada TableName deve ser de um índice diferente na mesma tabela e ter um intervalo de índice ativo. Use [JetSetIndexRange (JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) para criar um intervalo de índice.
+    Os tableids a usar. Cada tableid deve ser de um índice diferente na mesma tabela e ter um intervalo de índice ativo. Use [JetSetIndexRange(JET_SESID, JET_TABLEID, SetIndexRangeGrbit)](./api.jetsetindexrange-method.md) para criar um intervalo de índice.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
-Os indicadores dos registros que são encontrados em todos os intervalos de índice. Os indicadores são retornados na ordem de chave primária.  
+Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<\[\]\>  
+Os indicadores dos registros encontrados em todos os intervalos de índice. Os indicadores são retornados na ordem de chave primária.  
 
 ## <a name="see-also"></a>Confira também
 
@@ -89,4 +89,4 @@ Os indicadores dos registros que são encontrados em todos os intervalos de índ
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

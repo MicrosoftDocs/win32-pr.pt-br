@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DFS-namespace-Identity-GUID-v2
-description: Para ser definido somente quando o namespace é criado. Estável na renomeação ou movimentação, desde que o namespace não seja substituído por outro namespace que tenha o mesmo nome.
+title: Atributo ms-DFS-Namespace-Identity-GUID-v2
+description: A ser definido somente quando o namespace for criado. Estável entre renomear ou mover, desde que o namespace não seja substituído por outro namespace que tenha o mesmo nome.
 ms.assetid: 66907d40-48a7-40ae-9031-1366a4a4d2a2
 ms.tgt_platform: multiple
 keywords:
-- MS-DFS-namespace-Identity-GUID-v2 atributo AD Schema
-- Esquema de AD do atributo msDFS-NamespaceIdentityGUIDv2
+- Ms-DFS-Namespace-Identity-GUID-v2 atributo AD Schema
+- Esquema do AD do atributo msDFS-NamespaceIdentityGUIDv2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9be75ccaa0a8d607502d4709afdf313f0ddfce99
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d8cf6129392ae0c4e9361f614f303c824c59be2b995dbcc36c4b8f5aaf35f0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960975"
 ---
-# <a name="ms-dfs-namespace-identity-guid-v2-attribute"></a>atributo ms-DFS-namespace-Identity-GUID-v2
+# <a name="ms-dfs-namespace-identity-guid-v2-attribute"></a>Atributo ms-DFS-Namespace-Identity-GUID-v2
 
-Para ser definido somente quando o namespace é criado. Estável na renomeação ou movimentação, desde que o namespace não seja substituído por outro namespace que tenha o mesmo nome.
+A ser definido somente quando o namespace for criado. Estável entre renomear ou mover, desde que o namespace não seja substituído por outro namespace que tenha o mesmo nome.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DFS-namespace-Identity-GUID-v2                     |
-| LDAP-Display-Name | msDFS-NamespaceIdentityGUIDv2                         |
+| CN                | ms-DFS-Namespace-Identity-GUID-v2                     |
+| Ldap-Display-Name | msDFS-NamespaceIdentityGUIDv2                         |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2033                               |
-| System-ID-GUID    | 200432ce-ec5f-4931-A525-d7f4afe34e68                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 200432ce-ec5f-4931-a525-d7f4afe34e68                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,15 +55,15 @@ Para ser definido somente quando o namespace é criado. Estável na renomeação
 | ID do link                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                 |
 | É indexado             | Falso                                                                                                                                                                                |
-| No catálogo global      | Falso                                                                                                                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                         |
+| No Catálogo Global      | Falso                                                                                                                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 16                                                                                                                                                                                   |
 | Range-Upper            | 16                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classes usadas em        | [**MS-DFS-Deleted-link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-v2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-v2**](c-msdfs-namespacev2.md)<br/> |
+| Classes usadas em        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -76,15 +76,15 @@ Para ser definido somente quando o namespace é criado. Estável na renomeação
 | ID do link                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                 |
 | É indexado             | Falso                                                                                                                                                                                |
-| No catálogo global      | Falso                                                                                                                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                         |
+| No Catálogo Global      | Falso                                                                                                                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 16                                                                                                                                                                                   |
 | Range-Upper            | 16                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classes usadas em        | [**MS-DFS-Deleted-link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-v2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-v2**](c-msdfs-namespacev2.md)<br/> |
+| Classes usadas em        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -97,15 +97,15 @@ Para ser definido somente quando o namespace é criado. Estável na renomeação
 | ID do link                | \-                                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                                                |
-| É de valor único       | True                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                 |
 | É indexado             | Falso                                                                                                                                                                                |
-| No catálogo global      | Falso                                                                                                                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                         |
+| No Catálogo Global      | Falso                                                                                                                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                         |
 | Range-Lower            | 16                                                                                                                                                                                   |
 | Range-Upper            | 16                                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                                           |
-| Classes usadas em        | [**MS-DFS-Deleted-link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**MS-DFS-link-v2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-v2**](c-msdfs-namespacev2.md)<br/> |
+| Classes usadas em        | [**ms-DFS-Deleted-Link-v2**](c-msdfs-deletedlinkv2.md)<br/> [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

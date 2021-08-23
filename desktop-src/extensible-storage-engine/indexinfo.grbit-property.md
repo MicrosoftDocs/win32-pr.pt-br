@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade IndexInfo. Grbit'
-title: Propriedade IndexInfo. Grbit
+description: 'Saiba mais sobre: propriedade IndexInfo.Grbit'
+title: Propriedade IndexInfo.Grbit
 TOCTitle: 'Grbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexInfo.Grbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo.grbit(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 55e16e08b82191f48bcab8813772d03dd243fd2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3767ee86d757901e396e3e54ce632dc2375e4ecc2aae3ba7ef32cbca64754294
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980696"
 ---
-# <a name="indexinfogrbit-property"></a>Propriedade IndexInfo. Grbit
+# <a name="indexinfogrbit-property"></a>Propriedade IndexInfo.Grbit
 
 Obtém as opções de índice.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,7 +58,7 @@ public CreateIndexGrbit Grbit { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft. ISAM. ESENT. Interop. CreateIndexGrbit](./createindexgrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.CreateIndexGrbit](./createindexgrbit-enumeration.md)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -66,6 +66,6 @@ Tipo: [Microsoft. ISAM. ESENT. Interop. CreateIndexGrbit](./createindexgrbit-enu
 
 [Classe IndexInfo](./indexinfo-class.md)
 
-[Membros do IndexInfo](./indexinfo-members.md)
+[Membros indexInfo](./indexinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,19 +1,19 @@
 ---
-description: Contém o título da nota e a data no título, se presente.
+description: Contém o título da observação e a data no título, se presente.
 ms.assetid: 70f90c34-5f9b-4be5-85b9-6d2ccf9dde8c
 title: Elemento TitleInfo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ae170700e8a82e145767336a2943d45bedec9eb
-ms.sourcegitcommit: c3f669dc1d52278432bf75ad9fddba3257d26aa2
+ms.openlocfilehash: 04700aac0144aa06577adccc552c015af5be3702633150a36249637a3ed7985d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111432208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966725"
 ---
 # <a name="titleinfo-element"></a>Elemento TitleInfo
 
-Contém o título da nota e a data no título, se presente.
+Contém o título da observação e a data no título, se presente.
 
 ## <a name="definition"></a>Definição
 
@@ -27,7 +27,7 @@ Contém o título da nota e a data no título, se presente.
 
 ## <a name="child-elements"></a>Elementos filho
 
-[**Text**](text-element.md)
+[**Texto**](text-element.md)
 
 [**Data**](date-element.md)
 
@@ -41,9 +41,9 @@ Nenhum.
 
 |   Elemento    | Valor                                                           |
 |--------------|-----------------------------------------------------------------|
-| Tipo de elemento | [**ComplexType TitleInfoType**](titleinfotype-complex-type.md) |
-| Namespace    | urn:schemas-microsoft-com:tabletpc:richink                      |
-| Nome do esquema  | Leitor de Diário                                                  |
+| Tipo de elemento | ComplexType [**TitleInfoType**](titleinfotype-complex-type.md) |
+| Namespace    | urn: esquemas-Microsoft-com: Tablet: RichInk                      |
+| Nome do esquema  | Leitor de diário                                                  |
 
 
 

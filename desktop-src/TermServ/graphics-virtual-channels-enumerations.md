@@ -5,12 +5,12 @@ ms.assetid: 2A7C9A21-26B6-4DF4-B2DB-F07EB24B2B2D
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28033479d62bc71cb86cc0b095819eac2b399c1a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e14f4c5c2aa48c4029d6452192a169a2ccafad942db918a48423029aaf84e051
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059374"
 ---
 # <a name="graphics-virtual-channels-enumerations"></a>Enumerações de canais virtuais de gráficos
 
@@ -27,9 +27,9 @@ Usado para especificar o tipo de canal virtual de gráficos a ser criado no mét
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

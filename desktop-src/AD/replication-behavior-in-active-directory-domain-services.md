@@ -7,12 +7,12 @@ keywords:
 - Active Directory Domain Services Active Directory, replicação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41009a733f99366e499a25baca989f4f28794aea
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e7548ecf146f1d23b97b9db6a0307b21a6c39d359576c2de02285331d165fad4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025134"
 ---
 # <a name="replication-behavior-in-active-directory-domain-services"></a>Comportamento de replicação no Active Directory Domain Services
 
@@ -24,9 +24,9 @@ A situação não é tão complexa quanto pode ser exibida. Há apenas três Est
 -   Atualização parcial: algumas das alterações aplicadas a uma determinada réplica de origem foram propagadas para uma determinada réplica de destino. Um aplicativo que lê a réplica de origem vê as novas informações, enquanto um aplicativo que lê o destino vê uma mistura de informações novas e antigas (ou apenas algumas das novas informações, se as novas informações foram adicionadas pela primeira vez). A atualização parcial se aplica aos consumidores do serviço de diretório que usam dois ou mais objetos relacionados para armazenar suas informações.
 -   Estado totalmente replicado: todas as alterações aplicadas a uma determinada réplica de origem foram propagadas para uma determinada réplica de destino. Os aplicativos nas réplicas de origem e de destino veem as mesmas informações.
 
- 
+ 
 
- 
+ 
 
 
 

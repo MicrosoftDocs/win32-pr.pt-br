@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 188553d6091314e1a872145219ea321d581b35c3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f3700c8f61861987bc5311a637722955c62a1c6ad1572c7628d9ab9e0f5c76c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897681"
 ---
 # <a name="storeremove-method"></a>Método Store. Remove
 
@@ -48,7 +48,7 @@ Expressão que resolve para uma instância de um objeto de [**certificado**](cer
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -69,7 +69,7 @@ Se o armazenamento não estiver aberto com permissão de leitura/gravação, ess
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Se o armazenamento não estiver aberto com permissão de leitura/gravação, ess
 
 <dl> <dt>
 
-[**Repositório**](store.md)
+[**Store**](store.md)
 </dt> <dt>
 
 [**Objetos de criptografia**](cryptography-objects.md)

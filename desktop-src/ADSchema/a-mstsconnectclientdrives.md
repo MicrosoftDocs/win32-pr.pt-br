@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Connect-Client-drives
-description: Unidades do cliente de conexão de sessão dos serviços de terminal especifica se as unidades de cliente mapeadas devem ser reconectadas no logon.
+title: Atributo ms-TS-Conexão-Client-Drives
+description: A sessão dos Serviços Conexão unidades de cliente especifica se as unidades de cliente mapeadas devem ser reconectadas ao logon.
 ms.assetid: 647d41d1-8b4e-4521-bcef-34b7df8d012e
 ms.tgt_platform: multiple
 keywords:
-- MS-TS-Connect-Client-drives atributo AD Schema
-- Esquema de AD do atributo msTSConnectClientDrives
+- Esquema do AD do atributo ms-TS-Conexão-Client-Drives
+- Atributo AD msTSConnectClientDrives
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c74890b77ba0d3077d04b975344fb950ca61c9bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8679dee80eadb5dbd6b793991cf1e70cf3335662effc55a1164f1b9c5fa53005
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960255"
 ---
-# <a name="ms-ts-connect-client-drives-attribute"></a>atributo MS-TS-Connect-Client-drives
+# <a name="ms-ts-connect-client-drives-attribute"></a>Atributo ms-TS-Conexão-Client-Drives
 
-Unidades do cliente de conexão de sessão dos serviços de terminal especifica se as unidades de cliente mapeadas devem ser reconectadas no logon.
+A sessão dos Serviços Conexão unidades de cliente especifica se as unidades de cliente mapeadas devem ser reconectadas ao logon.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Connect-Client-drives          |
-| LDAP-Display-Name | msTSConnectClientDrives              |
+| CN                | ms-TS-Conexão-Client-Drives          |
+| Ldap-Display-Name | msTSConnectClientDrives              |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1986              |
-| System-ID-GUID    | 23572aaf-29dd-44ea-b0fa-7e8438b9a4a3 |
+| System-Id-Guid    | 23572aaf-29dd-44ea-b0fa-7e8438b9a4a3 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -55,10 +55,10 @@ Unidades do cliente de conexão de sessão dos serviços de terminal especifica 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -76,10 +76,10 @@ Unidades do cliente de conexão de sessão dos serviços de terminal especifica 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -97,10 +97,10 @@ Unidades do cliente de conexão de sessão dos serviços de terminal especifica 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

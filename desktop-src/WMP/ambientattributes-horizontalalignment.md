@@ -1,9 +1,9 @@
 ---
-title: Ambienteattributes. horizontalAlignment
-description: O atributo horizontalAlignment especifica ou recupera um valor que indica o posicionamento horizontal do controle quando a exibição ou a subexibição pai é redimensionada.
+title: AmbientAttributes.horizontalAlignment
+description: O atributo horizontalAlignment especifica ou recupera um valor que indica o posicionamento horizontal do controle quando VIEW ou SUBVIEW pai é ressalvado.
 ms.assetid: 97ca23b9-2046-45ee-b2da-ea388e7ab8d8
 keywords:
-- Windows Media Player de ambiente. horizontalAlignment
+- AmbienteAttributes.horizontalAlignment Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7f946f0d095526c9fc0894cdf0270cbf7cc0c81
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9daf64189735d79e1ad3eb4f7b3637ca68cfdae489cda9423bb60acdd1f9185c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055164"
 ---
-# <a name="ambientattributeshorizontalalignment"></a>Ambienteattributes. horizontalAlignment
+# <a name="ambientattributeshorizontalalignment"></a>AmbientAttributes.horizontalAlignment
 
-O atributo **horizontalAlignment** especifica ou recupera um valor que indica o posicionamento horizontal do controle quando a **exibição** ou a **subexibição** pai é redimensionada.
+O **atributo horizontalAlignment** especifica ou recupera um valor que indica o posicionamento horizontal do controle quando **VIEW** ou **SUBVIEW** pai é ressalvado.
 
 ``` syntax
         elementID.horizontalAlignment
@@ -29,16 +29,16 @@ O atributo **horizontalAlignment** especifica ou recupera um valor que indica o 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação.**
 
 
 
 | Valor   | Descrição                                                                                                                                                                                                                                                                                                                                                        |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| esquerda    | Padrão. Mantém o posicionamento do controle em relação à esquerda da **exibição** ou da **subexibição** pai quando a exibição é redimensionada.                                                                                                                                                                                                                               |
-| direita   | Mantém o posicionamento do controle em relação à direita da **exibição** ou da **subexibição** pai quando a exibição é redimensionada.                                                                                                                                                                                                                                       |
-| centro  | Mantém o posicionamento do controle em relação ao centro horizontal da **exibição** ou à **subexibição** pai quando a exibição é redimensionada.                                                                                                                                                                                                                           |
-| Estendi | Mantém o posicionamento do controle em relação às margens esquerda e direita da **exibição** ou **subexibição** pai quando redimensionada. O controle se ajusta para se ajustar quando a **exibição** ou a **subexibição** é ampliada. A imagem real não aumenta ou diminui, a menos que seja redimensionável, mas a área clicável aumente ou diminua se não estiver limitada por um **clippingImage**. |
+| esquerda    | Padrão. Mantém o posicionamento do controle em relação à esquerda do **VIEW** ou **SUBVIEW** pai quando a exibição é ressada.                                                                                                                                                                                                                               |
+| direita   | Mantém o posicionamento do controle em relação à direita do **VIEW** ou **SUBVIEW** pai quando a exibição é ressada.                                                                                                                                                                                                                                       |
+| centro  | Mantém o posicionamento do controle em relação ao centro horizontal do **VIEW** ou **SUBVIEW** pai quando a exibição é relizada.                                                                                                                                                                                                                           |
+| Esticar | Mantém o posicionamento do controle em relação às margens esquerda e direita do **VIEW** ou **SUBVIEW** pai quando reessado. O controle se alonga para ajustar quando **VIEW** ou **SUBVIEW** é alongado. A imagem real não aumenta ou diminui, a menos que seja reizável, mas a área clicável aumenta ou diminui se não estiver limitada por um **recorteImagem**. |
 
 
 
@@ -46,9 +46,9 @@ Este atributo é uma **cadeia de caracteres** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-A menos que **horizontalAlignment** esteja definido como "Center", o controle manterá sua distância original da borda especificada ou de ambas as bordas se "Stretch" for especificado e o controle for redimensionável. Se o controle não for redimensionável e "Stretch" for especificado, a região clicável será ampliada.
+A menos **que horizontalAlignment** esteja definido como "center", o controle manterá sua distância original da borda especificada ou das duas bordas se "stretch" for especificado e o controle for resizável. Se o controle não for resizável e "stretch" for especificado, a região clicável será alongada.
 
-Você pode definir qualquer combinação de **horizontalAlignment** e **verticalAlignment**. Por exemplo, se você quiser centralizar um controle tanto horizontal quanto verticalmente, defina horizontalAlignment = "Center" verticalAlignment = "Center".
+Você pode definir qualquer combinação de **horizontalAlignment** e **verticalAlignment**. Por exemplo, se você quiser centralizar um controle horizontal e verticalmente, de definido horizontalAlignment="center" verticalAlignment="center".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Você pode definir qualquer combinação de **horizontalAlignment** e **vertical
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -67,10 +67,10 @@ Você pode definir qualquer combinação de **horizontalAlignment** e **vertical
 [**Atributos de ambiente**](ambient-attributes.md)
 </dt> <dt>
 
-[**Ambiente. verticalAlignment**](ambientattributes-verticalalignment.md)
+[**AmbientAttributes.verticalAlignment**](ambientattributes-verticalalignment.md)
 </dt> <dt>
 
-[**Ambienteattributes. clippingImage**](ambientattributes-clippingimage.md)
+[**AmbientAttributes.clippingImage**](ambientattributes-clippingimage.md)
 </dt> </dl>
 
  

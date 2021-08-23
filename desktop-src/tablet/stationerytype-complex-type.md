@@ -1,5 +1,5 @@
 ---
-description: Define o tipo que contém o papel de carta usado pela nota do diário.
+description: Define o tipo que contém a papelaria usada pela observação Do diário.
 ms.assetid: acc0df57-9316-4c8b-8e64-929136dbefd7
 title: Tipo complexo StationeryType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 10dcfa5ccf572b2a8dd5672f973b924a2a840b96
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e0bcfe22c4a083d93faf27591d56bc6a43f3bd7d61afc386957cb5ec5807c15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966755"
 ---
 # <a name="stationerytype-complex-type"></a>Tipo complexo StationeryType
 
-Define o tipo que contém o papel de carta usado pela nota do diário.
+Define o tipo que contém a papelaria usada pela observação Do diário.
 
 ``` syntax
 <xs:complexType name="StationeryType" />
@@ -33,7 +33,7 @@ Define o tipo que contém o papel de carta usado pela nota do diário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

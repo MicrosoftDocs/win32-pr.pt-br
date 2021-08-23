@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a864bab9c3b888622640e6226c3e7ee542a096d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1972fdf9f19ad7a249df00a07cbe8481bcb133da81a748fda865639d934e4c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983686"
 ---
 # <a name="apijetaddcolumn-method"></a>Método API. JetAddColumn
 

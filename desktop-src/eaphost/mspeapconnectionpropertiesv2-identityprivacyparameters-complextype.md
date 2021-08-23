@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8360065e2ce124531bec63637e2b6560cfc32f54
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 18bef3eb69ab2799f7139fe2886d89e996fb8fb47d178997694c568450fb8340
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104084291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983896"
 ---
 # <a name="identityprivacyparameters-complex-type"></a>Tipo complexo IdentityPrivacyParameters
 
-O tipo complexo **IdentityPrivacyParameters** contém informações sobre o uso de identidade anônima durante a autenticação PEAP.
+O **tipo complexo IdentityPrivacyParameters** contém informações sobre o uso de identidade anônima durante a autenticação PEAP.
 
 
 ```XML
@@ -43,11 +43,11 @@ O tipo complexo **IdentityPrivacyParameters** contém informações sobre o uso 
 | Elemento                                                                                                               | Type    | Descrição                                                                                                                                                                                                                                                                                                                                          |
 |-----------------------------------------------------------------------------------------------------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**EnableIdentityPrivacy**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) | booleano | Indica se a identidade verdadeira de um usuário ou uma identidade anônima é enviada.                                                                                                                                                                                                                                                                           |
-| [**AnonymousUserName**](mspeapconnectionpropertiesv2-anonymoususername-identityprivacyparameters-element.md)         | string  | contém uma identidade anônima usada no lugar da identificação verdadeira de um usuário. Ele é enviado durante a 1ª fase da autenticação PEAP quando a **identidade** é enviada como texto sem formatação. O uso de identidade anônima é determinado pelo elemento [**EnableIdentityPrivacy**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) . |
+| [**AnonymousUserName**](mspeapconnectionpropertiesv2-anonymoususername-identityprivacyparameters-element.md)         | string  | contém uma identidade anônima usada no lugar da verdadeira identificação de um usuário. Ele é enviado durante a 1ª fase da autenticação PEAP quando **a Identidade** é enviada como texto sem-texto. O uso de identidade anônima é determinado pelo [**elemento EnableIdentityPrivacy.**](mspeapconnectionpropertiesv2-enableidentityprivacy-identityprivacyparameters-element.md) |
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -66,9 +66,9 @@ O elemento IdentityPrivacyParameters é opcional.
 [Tipos complexos mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-complex-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

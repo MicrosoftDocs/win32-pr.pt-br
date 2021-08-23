@@ -1,12 +1,12 @@
 ---
-title: Método IMsRdpDeviceCollection2 RedirectNow
-description: Força os dispositivos que foram selecionados ou desmarcados da coleção a serem redirecionados ou removidos.
+title: Método RedirectNow IMsRdpDeviceCollection2
+description: Força os dispositivos selecionados ou não selecionados da coleção a serem redirecionados ou removidos.
 ms.assetid: 9cd5849d-a589-43f3-b904-6b2e15ca033d
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método RedirectNow
-- Método RedirectNow Serviços de Área de Trabalho Remota, interface IMsRdpDeviceCollection2
-- Serviços de Área de Trabalho Remota de interface IMsRdpDeviceCollection2, método RedirectNow
+- Método RedirectNow Serviços de Área de Trabalho Remota
+- O método RedirectNow Serviços de Área de Trabalho Remota interface , IMsRdpDeviceCollection2
+- Interface IMsRdpDeviceCollection2 Serviços de Área de Trabalho Remota , método RedirectNow
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 893d1e26f504d5aeb45f795ea7425eeefc3a6232
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 60c92eff142305e95a71c69cdce9789b0d2316e3d5e60b703a7c1aa8e835688f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058914"
 ---
-# <a name="imsrdpdevicecollection2redirectnow-method"></a>Método IMsRdpDeviceCollection2:: RedirectNow
+# <a name="imsrdpdevicecollection2redirectnow-method"></a>Método IMsRdpDeviceCollection2::RedirectNow
 
-Força os dispositivos que foram selecionados ou desmarcados da coleção a serem redirecionados ou removidos.
+Força os dispositivos selecionados ou não selecionados da coleção a serem redirecionados ou removidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,20 +43,20 @@ HRESULT RedirectNow(
 
 <dl> <dt>
 
-*Tipo* \[ de no\]
+*Tipo* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **RedirectDeviceType**](redirectdevicetype.md)**
 
-Um valor da enumeração [**RedirectDeviceType**](redirectdevicetype.md) que especifica o tipo de dispositivo a ser redirecionado.
+Um valor da [**enumeração RedirectDeviceType**](redirectdevicetype.md) que especifica o tipo de dispositivo a ser redirecionado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 

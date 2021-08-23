@@ -1,29 +1,29 @@
 ---
 title: HttpPurchaseOrderWithUserNameOverSslServiceExample
-description: Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP, com o nome de usuário sobre segurança de modo misto SSL.
+description: Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP, com nome de usuário sobre segurança de modo misto SSL.
 ms.assetid: 3dfedab1-d508-4cff-b179-591871078adb
 keywords:
-- HttpPurchaseOrderWithUserNameOverSslServiceExample nativo – Web-Services
+- HttpPurchaseOrderWithUserNameOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6558a119efda4f8e2c4c009b9de3ad2525985ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 63bb584286d749687889a1a24d638ba8fc62ae8620ffb821e940115d1655b42c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026444"
 ---
 # <a name="httppurchaseorderwithusernameoversslserviceexample"></a>HttpPurchaseOrderWithUserNameOverSslServiceExample
 
-Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP, com o nome de usuário sobre segurança de modo misto SSL. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor. A autenticação de cliente é fornecida por um par de nome de usuário/senha em um cabeçalho WS-Security na mensagem.
+Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP, com nome de usuário sobre segurança de modo misto SSL. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL, que também fornece autenticação de servidor. A autenticação do cliente é fornecida por um par nome de usuário/senha em um WS-Security na mensagem.
 
--   [PurchaseOrderServiceUserNameOverSsl. cpp](#purchaseorderserviceusernameoversslcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [PurchaseOrderServiceUserNameOverSsl.cpp](#purchaseorderserviceusernameoversslcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="purchaseorderserviceusernameoversslcpp"></a>PurchaseOrderServiceUserNameOverSsl. cpp
+## <a name="purchaseorderserviceusernameoversslcpp"></a>PurchaseOrderServiceUserNameOverSsl.cpp
 
 
 ```C++
@@ -470,7 +470,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -609,9 +609,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,39 +1,39 @@
 ---
-title: Objetos de identificador de recurso
+title: Objetos do Resource Handle
 description: A estrutura de um objeto de recurso é restrita à implementação do Microsoft WinSNMP. Um aplicativo WinSNMP pode acessar um objeto de recurso com um identificador.
 ms.assetid: c70a03b1-afac-4f1a-81e7-7f31430f5655
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1afe5e6488190f95961bff7ce37f7b719d076d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 06b05702f0ad43e5b4b80a9b1a3cada471212dec3bc377bddcc95fe9a109ec78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009114"
 ---
-# <a name="resource-handle-objects"></a>Objetos de identificador de recurso
+# <a name="resource-handle-objects"></a>Objetos do Resource Handle
 
 A estrutura de um objeto de recurso é restrita à implementação do Microsoft WinSNMP. Um aplicativo WinSNMP pode acessar um objeto de recurso com um identificador.
 
-A implementação pode alocar um dos seguintes tipos de identificadores de recursos para um aplicativo WinSNMP.
+A implementação pode alocar um dos seguintes tipos de alças de recurso para um aplicativo WinSNMP.
 
 | Tipo de identificador        | Descrição                       |
 |--------------------|-----------------------------------|
-| **\_sessão HSNMP** | Tratar de uma sessão WinSNMP       |
-| **\_entidade HSNMP**  | Identificador para uma entidade SNMP          |
-| **contexto de HSNMP \_** | Tratar de um contexto WinSNMP       |
-| **PDU de HSNMP \_**     | Identificador para uma unidade de dados de protocolo    |
-| **HSNMP \_ VBL**     | Identificador para uma lista de associação de variável |
+| **SESSÃO \_ HSNMP** | Manipular para uma sessão WinSNMP       |
+| **ENTIDADE \_ HSNMP**  | Lidar com uma entidade SNMP          |
+| **CONTEXTO \_ HSNMP** | Manipular para um contexto WinSNMP       |
+| **HSNMP \_ PDU**     | Lidar com uma unidade de dados de protocolo    |
+| **HSNMP \_ VBL**     | Manipular para uma lista de associação de variáveis |
 
 
 
- 
+ 
 
-Um aplicativo WinSNMP pode solicitar que a implementação crie ou exclua identificadores de recurso, mas a implementação executa a operação. Para obter informações adicionais sobre como liberar recursos individuais, consulte as funções [**SnmpFreeDescriptor**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor), [**SnmpFreeVbl**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreevbl), [**SnmpFreePdu**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu), [**SnmpFreeEntity**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreeentity)e [**SnmpFreeContext**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreecontext) .
+Um aplicativo WinSNMP pode solicitar que a implementação crie ou exclua os alças de recurso, mas a implementação executa a operação. Para obter informações adicionais sobre como liberar recursos individuais, consulte as funções [**SnmpFreeDescriptor**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreedescriptor), [**SnmpFreeVbl**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreevbl), [**SnmpFreePdu,**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreepdu) [**SnmpFreeEntity**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreeentity)e [**SnmpFreeContext.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpfreecontext)
 
- 
+ 
 
- 
+ 
 
 
 

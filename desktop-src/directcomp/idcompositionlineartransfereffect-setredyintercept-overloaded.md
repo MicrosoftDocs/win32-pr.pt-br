@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionLinearTransferEffect setredyintercept (DCOMP. h)
-description: Define a intercepção Y da função linear para o canal vermelho.
+title: Métodos IDCompositionLinearTransferEffect setredyintercept (Dcomp.h)
+description: Define a interceptação Y da função linear para o canal vermelho.
 ms.assetid: 1ecb0d5e-a180-f135-a732-ebc0ea84e7b4
 keywords:
 - Métodos SetRedYIntercept DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: c8e2d29aa795e0e407d62e151a24da82db2ff8d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e243099c0e436aa269a2cb55f1f0967813d8ac3a986ac5d3abd1ca943cb3a71e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043244"
 ---
-# <a name="idcompositionlineartransfereffectsetredyintercept-methods"></a>Métodos IDCompositionLinearTransferEffect:: setredyintercept
+# <a name="idcompositionlineartransfereffectsetredyintercept-methods"></a>Métodos IDCompositionLinearTransferEffect::setredyintercept
 
-Define a intercepção Y da função linear para o canal vermelho.
+Define a interceptação Y da função linear para o canal vermelho.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Define a intercepção Y da função linear para o canal vermelho.
 
 | Método                                                                                                       | Descrição                                                                 |
 |:-------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
-| [**SetRedYIntercept**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredyintercept(float))                               | Define a intercepção Y da função linear para o canal vermelho.<br/> |
-| [**SetRedYIntercept (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredyintercept(idcompositionanimation)) | Define a intercepção Y da função linear para o canal vermelho.<br/> |
+| [**SetRedYIntercept**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredyintercept(float))                               | Define a interceptação Y da função linear para o canal vermelho.<br/> |
+| [**SetRedyIntercept (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionlineartransfereffect-setredyintercept(idcompositionanimation)) | Define a interceptação Y da função linear para o canal vermelho.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Define a intercepção Y da função linear para o canal vermelho.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DCOMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

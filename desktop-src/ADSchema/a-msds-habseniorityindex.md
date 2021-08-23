@@ -1,11 +1,11 @@
 ---
-title: ms-DS-HAB-senioridade-atributo de índice
-description: Contém o índice de tempo de inexperiente, conforme aplicado pela organização em que a pessoa trabalha. | ms-DS-HAB-senioridade-atributo de índice
+title: Atributo ms-DS- LTD-Seniority-Index
+description: Contém o índice de senioridade, conforme aplicado pela organização em que a pessoa trabalha. | Atributo ms-DS- LTD-Seniority-Index
 ms.assetid: 4110b6c3-6987-4f65-bfdf-244a9c9c0f46
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-HAB-senioridade-esquema do AD do atributo de índice
-- atributo msDS-HABSeniorityIndex do AD Schema
+- Ms-DS- LTD-Seniority-Index atributo AD Schema
+- Esquema do AD do atributo msDS- OPERAÇÃOSeniorityIndex
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f796b30d2676df76803ec407423e34e8cd96ecb
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 994719462ae47396e5765cde7ed24faf19f486c8052d089888e5751687b5619d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105769063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960755"
 ---
-# <a name="ms-ds-hab-seniority-index-attribute"></a>ms-DS-HAB-senioridade-atributo de índice
+# <a name="ms-ds-hab-seniority-index-attribute"></a>Atributo ms-DS- LTD-Seniority-Index
 
-Contém o índice de tempo de inexperiente, conforme aplicado pela organização em que a pessoa trabalha.
+Contém o índice de senioridade, conforme aplicado pela organização em que a pessoa trabalha.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-HAB-senioridade-índice            |
-| LDAP-Display-Name | msDS-HABSeniorityIndex               |
+| CN                | ms-DS- LTD-Seniority-Index            |
+| Ldap-Display-Name | msDS-HABSeniorityIndex               |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1997              |
-| System-ID-GUID    | def449f1-fd3b-4045-98cf-d9658da788b5 |
+| System-Id-Guid    | def449f1-fd3b-4045-98cf-d9658da788b5 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -55,10 +55,10 @@ Contém o índice de tempo de inexperiente, conforme aplicado pela organização
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| Tem valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
@@ -76,10 +76,10 @@ Contém o índice de tempo de inexperiente, conforme aplicado pela organização
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| Tem valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |
@@ -97,10 +97,10 @@ Contém o índice de tempo de inexperiente, conforme aplicado pela organização
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8CA0                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| Tem valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000001                                                         |

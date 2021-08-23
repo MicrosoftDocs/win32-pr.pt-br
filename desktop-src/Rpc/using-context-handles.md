@@ -1,30 +1,30 @@
 ---
-title: Usando identificadores de contexto
-description: Esta seção refere-se ao Windows 2000 e ao Windows XP.
+title: Usando alças de contexto
+description: Esta seção refere-se Windows 2000 e Windows XP.
 ms.assetid: a1f0408c-7739-4fca-b9b2-f045dad0c392
 keywords:
-- RPC de chamada de procedimento remoto, práticas recomendadas, usando identificadores de contexto
+- RPC de Chamada de Procedimento Remoto , práticas recomendadas, usando alças de contexto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e757014599924a4085802345cf6a72e797f17ed2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b11fff47b99e784b1669e5ea026f7dba4967c976cbe11aad8c02cb40d34fd820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010794"
 ---
-# <a name="using-context-handles"></a>Usando identificadores de contexto
+# <a name="using-context-handles"></a>Usando alças de contexto
 
-Esta seção refere-se ao Windows 2000 e ao Windows XP. Em alguns casos, as informações são apenas para o Windows XP; esses casos são indicados como tal. As informações contidas nesta seção são divididas nos seguintes tópicos:
+Esta seção refere-se Windows 2000 e Windows XP. Em alguns casos, as informações são Windows XP; esses casos são notados como tal. As informações nesta seção são divididas nos seguintes tópicos:
 
--   [Mantendo o estado no servidor entre as chamadas](maintaining-state-on-the-server-between-calls.md)
--   [Descarregando um servidor com identificadores de contexto pendentes](unloading-a-server-with-outstanding-context-handles.md)
--   [Usando mais de um identificador de contexto por chamada](using-more-than-one-context-handle-per-call.md)
--   [Semântica de falha para identificadores de contexto](failure-semantics-for-context-handles.md)
+-   [Mantendo o estado no servidor entre chamadas](maintaining-state-on-the-server-between-calls.md)
+-   [Descarregando um servidor com alças de contexto pendentes](unloading-a-server-with-outstanding-context-handles.md)
+-   [Usando mais de um alça de contexto por chamada](using-more-than-one-context-handle-per-call.md)
+-   [Semântica de falha para alças de contexto](failure-semantics-for-context-handles.md)
 
- 
+ 
 
- 
+ 
 
 
 

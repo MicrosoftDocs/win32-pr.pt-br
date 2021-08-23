@@ -3,19 +3,19 @@ title: Elemento COLUMN
 description: Elemento COLUMN
 ms.assetid: 2ea8f730-91e2-47a6-acdf-e402fdd11f87
 keywords:
-- Capas do Windows Media Player, elemento de coluna
+- Windows Media Player capas, elemento COLUMN
 - capas, elemento COLUMN
 - elemento COLUMN
 - referência para capas, elemento COLUMN
 - elementos, coluna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd0c69472c53cd6ab5101694343ed7513a9941e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 91502ce75c9fd7ad9505f4f44b874ec23077b7ed98988f3174cd373198a17a1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997646"
 ---
 # <a name="column-element"></a>Elemento COLUMN
 
@@ -34,7 +34,7 @@ O elemento **Column** dá suporte aos seguintes atributos.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -43,9 +43,9 @@ O elemento **Column** dá suporte aos seguintes atributos.
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

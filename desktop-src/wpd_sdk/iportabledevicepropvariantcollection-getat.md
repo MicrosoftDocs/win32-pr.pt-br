@@ -1,7 +1,7 @@
 ---
-description: 'Método IPortableDevicePropVariantCollection:: GetAt – o método GetAt recupera um item da coleção por um índice baseado em zero.'
+description: Método IPortableDevicePropVariantCollection::GetAt – o método GetAt recupera um item da coleção por um índice baseado em zero.
 ms.assetid: c7119ba6-e6fc-4cb6-a8ab-3bf7b6bfe850
-title: 'Método IPortableDevicePropVariantCollection:: GetAt (PortableDeviceTypes. h)'
+title: Método IPortableDevicePropVariantCollection::GetAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: b901e8fcfa065813e4c0942632f80901800ef0a9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 02fa273b3bedea78884e15d2dedb5b7d2f675c78330c735e3bfb1896bc9d5199
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963725"
 ---
-# <a name="iportabledevicepropvariantcollectiongetat-method"></a>Método IPortableDevicePropVariantCollection:: GetAt
+# <a name="iportabledevicepropvariantcollectiongetat-method"></a>Método IPortableDevicePropVariantCollection::GetAt
 
-O método **GetAt** recupera um item da coleção por um índice baseado em zero.
+O **método GetAt** recupera um item da coleção por um índice baseado em zero.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,31 +41,31 @@ HRESULT GetAt(
 
 <dl> <dt>
 
-*dwIndex* \[ no\]
+*dwIndex* \[ Em\]
 </dt> <dd>
 
-**DWORD** que contém o índice de base zero do item a ser recuperado.
+**DWORD** que contém o índice baseado em zero do item a ser recuperado.
 
 </dd> <dt>
 
-*valores* \[ fora\]
+*pValue* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma estrutura **PROPVARIANT** . O chamador é responsável por liberar essa memória chamando **PropVariantClear**.
+Ponteiro para uma **estrutura PROPVARIANT.** O chamador é responsável por liberar essa memória chamando **PropVariantClear**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                  | Descrição                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | O método foi bem-sucedido.<br/>                          |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>    | Um argumento de ponteiro necessário era **nulo**.<br/>      |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O índice que foi passado estava fora do intervalo.<br/> |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>    | Um argumento de ponteiro necessário era **NULL.**<br/>      |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O índice passado estava fora do intervalo.<br/> |
 
 
 
@@ -73,7 +73,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo de como usar esse método, consulte [recuperando as categorias funcionais com suporte de um dispositivo](retrieving-the-functional-categories-supported-by-a-device.md).
+Para ver um exemplo de como usar esse método, consulte Recuperando as [categorias](retrieving-the-functional-categories-supported-by-a-device.md)funcionais com suporte por um dispositivo .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,16 +81,16 @@ Para obter um exemplo de como usar esse método, consulte [recuperando as catego
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection Interface**](iportabledevicepropvariantcollection.md)
 </dt> <dt>
 
 [Recuperando um identificador de objeto de um identificador exclusivo persistente](retrieving-an-object-identifier-from-a-persistent-unique-identifier.md)
@@ -105,16 +105,16 @@ Para obter um exemplo de como usar esse método, consulte [recuperando as catego
 [Recuperando métodos de serviço com suporte](retrieving-supported-methods.md)
 </dt> <dt>
 
-[Recuperando os tipos de conteúdo com suporte de um dispositivo](retrieving-the-content-types-supported-by-a-device.md)
+[Recuperando os tipos de conteúdo com suporte por um dispositivo](retrieving-the-content-types-supported-by-a-device.md)
 </dt> <dt>
 
-[Recuperando as categorias funcionais com suporte de um dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)
+[Recuperando as categorias funcionais com suporte por um dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)
 </dt> <dt>
 
 [Recuperando os identificadores de objeto funcional para um dispositivo](retrieving-the-functional-object-identifiers-for-a-device.md)
 </dt> <dt>
 
-[Recuperando os recursos de renderização suportados por um dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
+[Recuperando os recursos de renderização com suporte por um dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)
 </dt> <dt>
 
 [Definindo propriedades para vários objetos](setting-properties-for-multiple-objects.md)

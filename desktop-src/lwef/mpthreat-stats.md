@@ -3,8 +3,8 @@ title: Estrutura de MPTHREAT_STATS (MpClient. h)
 description: Estatísticas relacionadas a ameaças.
 ms.assetid: 78B7E2A8-1BB4-4610-8E90-1F8ECBE740A8
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPTHREAT_STATS
-- Ponteiro de estrutura de PMPTHREAT_STATS recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPTHREAT_STATS
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPTHREAT_STATS
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21a2eef7acde5fbeac2cf9951dfad3e6923ccea2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7671b45dc09c8aca494ad270aa69fc386ef3d7c03d5144fdc3e89b4f657bb07b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975936"
 ---
 # <a name="mpthreat_stats-structure"></a>\_Estrutura de estatísticas MPTHREAT
 
@@ -82,9 +82,9 @@ Campos reservados para uso futuro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

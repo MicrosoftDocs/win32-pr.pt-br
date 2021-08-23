@@ -1,19 +1,19 @@
 ---
-title: Tipos de dados (Gerenciador de animação do Windows)
-description: Documentação de referência para tipos de dados definidos pelo Gerenciador de animação do Windows.
+title: tipos de dados (Windows gerenciador de animação)
+description: documentação de referência para tipos de dados definidos pelo gerenciador de animação Windows.
 ms.assetid: 11ef2412-c20c-4c97-9e54-447f493fab5f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab4d629879a02d3bddc8ad9c47f60876bf616975
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c54170c185ebb5f41e095a9abd4d09c0067525a0d976de21a5d49b978910d6c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103917904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999686"
 ---
-# <a name="data-types-windows-animation-manager"></a>Tipos de dados (Gerenciador de animação do Windows)
+# <a name="data-types-windows-animation-manager"></a>tipos de dados (Windows gerenciador de animação)
 
-Documentação de referência para tipos de dados definidos pelo Gerenciador de animação do Windows.
+documentação de referência para tipos de dados definidos pelo gerenciador de animação Windows.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -32,7 +32,7 @@ Documentação de referência para tipos de dados definidos pelo Gerenciador de 
 
 <dl> <dt>
 
-[Referência de animação do Windows](windows-animation-reference.md)
+[Windows Referência de animação](windows-animation-reference.md)
 </dt> </dl>
 
  

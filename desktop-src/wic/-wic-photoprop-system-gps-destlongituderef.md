@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. DestLongitudeRef.
+description: A política de metadados de foto para a propriedade System.GPS.DestLongitudeRef.
 ms.assetid: 2a0abb9b-41e3-49ba-a60b-3096d9c032bd
-title: Política de metadados de foto System. GPS. DestLongitudeRef
+title: Política de metadados de foto System.GPS.DestLongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8139fcf5218d9863393888d7ab7b188a53e7f55f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fca1095138b35767da94e2eeed85a11892ba6edea3fa32f37ea6bd85fb76462
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964945"
 ---
-# <a name="systemgpsdestlongituderef-photo-metadata-policy"></a>Política de metadados de foto System. GPS. DestLongitudeRef
+# <a name="systemgpsdestlongituderef-photo-metadata-policy"></a>Política de metadados de foto System.GPS.DestLongitudeRef
 
-A política de metadados de foto para a propriedade [System. GPS. DestLongitudeRef](../properties/props-system-gps-destlongituderef.md) .
+A política de metadados de foto [para a propriedade System.GPS.DestLongitudeRef.](../properties/props-system-gps-destlongituderef.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ GPS. DestLongitudeRef
+\_GPS PKEY. DestLongitudeRef
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,19 +25,19 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-VT \_ LPWSTR é preferível, mas VT \_ LPSTR também é aceito.
+O VT \_ LPWSTR é preferencial, mas o VT \_ LPSTR também é aceito.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="precedence-of-paths-jpeg"></a>Precedência de caminhos (JPEG)
 
@@ -47,8 +47,8 @@ Se o arquivo estiver no formato JPEG, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                          | Formato de disco | Obrigatório |
 |-------|-------------------------------|-------------|----------|
-| 1     | /xmp/exif:GPSDestLongitudeRef | Unicode     | Yes      |
-| 2     | /App1/IFD/GPS/ \\ {UShort = 21 \\ } | ASCII       | No       |
+| 1     | /xmp/exif:GPSDestLongitudeRef | Unicode     | Sim      |
+| 2     | /app1/ifd/gps/ \\ {ushort=21 \\ } | ASCII       | Não       |
 
 
 
@@ -62,8 +62,8 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                              | Formato de disco | Obrigatório |
 |-------|-----------------------------------|-------------|----------|
-| 1     | /ifd/xmp/exif:GPSDestLongitudeRef | Unicode     | Yes      |
-| 2     | /IFD/GPS/ \\ {UShort = 21 \\ }          | ASCII       | Não       |
+| 1     | /ifd/xmp/exif:GPSDestLongitudeRef | Unicode     | Sim      |
+| 2     | /ifd/gps/ \\ {ushort=21 \\ }          | ASCII       | Não       |
 
 
 
@@ -75,7 +75,7 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 <dl> <dt>
 
-[System. GPS. DestLongitudeRef](../properties/props-system-gps-destlongituderef.md)
+[System.GPS.DestLongitudeRef](../properties/props-system-gps-destlongituderef.md)
 </dt> </dl>
 
  

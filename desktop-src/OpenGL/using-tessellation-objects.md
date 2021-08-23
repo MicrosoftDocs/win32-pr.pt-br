@@ -8,12 +8,12 @@ keywords:
 - objetos de mosaico OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 590ab571e656fcd346da265bfa921cb965fdf540
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: efc2ca11fd037f79a88fed1568c97a24692060d723327cde0c8e8842ed21d084
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011894"
 ---
 # <a name="using-tessellation-objects"></a>Usando objetos de mosaico
 
@@ -23,9 +23,9 @@ Se você não precisar mais de um objeto de mosaico, poderá excluí-lo e libera
 
 Você pode reutilizar um único objeto de mosaico para todos os seus mosaicos. Esse objeto é necessário apenas porque as funções de biblioteca podem precisar fazer seus próprios mosaicos, e eles devem ser capazes de fazer isso sem interferir em qualquer mosaico que seu programa esteja executando. Vários objetos de mosaico também são úteis se você quiser usar diferentes conjuntos de retornos de chamada para diferentes mosaicos. Normalmente, no entanto, você aloca um único objeto de mosaico e o utiliza para todos os mosaicos. Não há necessidade real de liberá-lo, pois ele usa uma pequena quantidade de memória. Por outro lado, se você estiver escrevendo uma função de biblioteca que usa o mosaico GLU, tenha cuidado para liberar todos os objetos de mosaico que criar.
 
- 
+ 
 
- 
+ 
 
 
 

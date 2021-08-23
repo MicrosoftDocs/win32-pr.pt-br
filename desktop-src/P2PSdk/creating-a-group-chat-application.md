@@ -4,12 +4,12 @@ ms.assetid: 47bb8606-0b7b-4e71-9d6f-c400d6a82e43
 title: Criando um aplicativo de chat de grupo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 676d4e9913934024df3131c0f965a5d85477d148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcb8f9458f8e01bea86e42f0cd976395e951bda52f13af46952479d5810e46c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011654"
 ---
 # <a name="creating-a-group-chat-application"></a>Criando um aplicativo de chat de grupo
 

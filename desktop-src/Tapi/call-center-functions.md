@@ -4,12 +4,12 @@ ms.assetid: 81bd0e7b-2bf1-4a05-83f4-ef641641cf2b
 title: Funções do Call Center
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 261188a4a1440ca128a6a6830149230a47672581
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ac927158c260a1a2bede4e114c6e46c1a5cac5b5939eb9de1a4c30a749a7670
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118870710"
 ---
 # <a name="call-center-functions"></a>Funções do Call Center
 

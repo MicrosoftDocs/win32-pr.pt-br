@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 72decdcf0a9573f7ad8ba0f4e363df6df3599477
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 97cbddc59dd84d0a5b83610212fe94e87a49757da0430d64cb420280c815d9cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047044"
 ---
 # <a name="id3dx10fontgettextmetrics-method"></a>Método ID3DX10Font:: GetTextMetrics
 
@@ -49,7 +49,7 @@ Ponteiro para uma estrutura [TEXTMETRIC](/previous-versions//ms534202(v=vs.85)) 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **bool**](../winprog/windows-data-types.md)**
 

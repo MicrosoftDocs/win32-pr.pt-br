@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab30de5c371c012e1320950e4a491021bb0b15c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75a0890acdf656c807ae3bcb275012bd56a4711a114547f750f04fd8d875fc68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118883144"
 ---
 # <a name="logfiles-object"></a>Objeto LogFiles
 
@@ -58,7 +58,7 @@ O objeto **LogFiles** tem essas propriedades.
 
 | Propriedade                                                 | Descrição                                                                                         |
 |:---------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| [**Contar**](systemmonitor-logfiles-count.md)<br/> | Recupera o número de instâncias [**LogFileItem**](logfileitem.md) na coleção.<br/>  |
+| [**Contagem**](systemmonitor-logfiles-count.md)<br/> | Recupera o número de instâncias [**LogFileItem**](logfileitem.md) na coleção.<br/>  |
 | [**Item**](systemmonitor-logfiles-item.md)<br/>   | Recupera a instância [**LogFileItem**](logfileitem.md) especificada da coleção.<br/> |
 
 
@@ -69,7 +69,7 @@ O objeto **LogFiles** tem essas propriedades.
 
 Para ter os contadores de desempenho de exibição SYSMON de um arquivo de log, defina [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) como [**DataSourceTypeConstants.sysmonLogFiles**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants). Depois de adicionar os arquivos de log à coleção, use a coleção de [**contadores**](counters.md) para especificar os dados de contadores que você deseja ler dos arquivos de log. Observe que, se **SystemMonitor. DataSourceType** for definido como **DataSourceTypeConstants.sysmonLogFiles**, o SYSMON recriará os arquivos de log sempre que você adicionar um arquivo de log ou contador às respectivas coleções.
 
-**Antes do Windows Vista:** Você não poderá adicionar arquivos de log à [**coleção de arquivos de log**](systemmonitor-logfiles.md) se o valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for definido como [**DataSourceTypeConstants.sysmonLogFiles**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants). Primeiro, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonNullDataSource**, adicione os arquivos de log e contadores e, em seguida, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonLogFiles**.
+**antes do Windows Vista:** Você não poderá adicionar arquivos de log à [**coleção de arquivos de log**](systemmonitor-logfiles.md) se o valor de [**SystemMonitor. DataSourceType**](systemmonitor-datasourcetype.md) for definido como [**DataSourceTypeConstants.sysmonLogFiles**](/windows/desktop/api/ISysmon/ne-isysmon-datasourcetypeconstants). Primeiro, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonNullDataSource**, adicione os arquivos de log e contadores e, em seguida, defina **SystemMonitor. DataSourceType** como **DataSourceTypeConstants.sysmonLogFiles**.
 
 As propriedades [**SystemMonitor. LogViewStart**](systemmonitor-logviewstart.md) e [**SystemMonitor. LogViewStop**](systemmonitor-logviewstop.md) especificam o intervalo de valores de amostra dos arquivos de log para o grafo. Os grafos do SYSMON apenas uma exibição de dados do arquivo de log (a exibição de gráfico não rola como faz ao grafar a atividade atual do computador). Se os dados de amostra excederem o que pode ser mostrado em uma exibição de gráfico único, o SYSMON compacta os dados de amostra (cada ponto grafado representa a média de vários valores de amostra) para ajustar todos os dados de amostra dos arquivos de log no grafo.
 

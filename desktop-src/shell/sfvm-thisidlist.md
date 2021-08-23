@@ -4,12 +4,12 @@ ms.assetid: 488f696d-aa71-4727-bbd2-c99e7d245d85
 title: Mensagem de SFVM_THISIDLIST (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e86e24199e5adbb895c8d1d5fc36bfff0c109bc2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd00f1cfc2b6661dac2414f0327cab03d4c0586eb62b992b5e33f81e64565246
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968625"
 ---
 # <a name="sfvm_thisidlist-message"></a>\_Mensagem SFVM THISIDLIST
 
@@ -43,11 +43,11 @@ O endereço do PIDL da exibição.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
 | Fim do suporte do cliente<br/>    | Windows XP com SP2<br/>                                                      |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put CurrentStream especifica o número de fluxo para o detector de mídia a ser usado.
+description: O método \_ put CurrentStream especifica o número de fluxo para o detector de mídia usar.
 ms.assetid: 01fb7ccf-9b45-434c-b574-f3027d85ea8a
-title: 'IMediaDet: método de ut_CurrentStream de:p (QEdit. h)'
+title: Método IMediaDet::p ut_CurrentStream (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 864848f646e4a9e06ca12e2bfec742c1741d77e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ba8b9cfe7cf898e9645d0f1caf8ef789bb45967bfc268f08555a5bdea53c4127
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952595"
 ---
-# <a name="imediadetput_currentstream-method"></a>IMediaDet: método UT \_ CurrentStream:p
+# <a name="imediadetput_currentstream-method"></a>Método IMediaDet::p ut \_ CurrentStream
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `put_CurrentStream` método especifica o número de fluxo para o detector de mídia a ser usado.
+O `put_CurrentStream` método especifica o número de fluxo para o detector de mídia usar.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,30 +45,30 @@ HRESULT put_CurrentStream(
 
 <dl> <dt>
 
-*newVal* \[ no\]
+*newVal* \[ Em\]
 </dt> <dd>
 
 Número do fluxo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar esse método, chame [**IMediaDet::p UT \_ filename**](imediadet-put-filename.md) para definir o nome do arquivo. Chame [**IMediaDet:: get \_ OutputStreams**](imediadet-get-outputstreams.md) para determinar o número de fluxos contidos no arquivo de origem.
+Antes de chamar esse método, chame [**IMediaDet::p nome \_ do arquivo**](imediadet-put-filename.md) para definir o nome do arquivo. Chame [**IMediaDet::get \_ OutputStreams**](imediadet-get-outputstreams.md) para determinar o número de fluxos contidos no arquivo de origem.
 
-Se o detector de mídia estiver no modo de captura de bitmap, esse método retornará E \_ INVALIDARG. Para obter mais informações, consulte [**IMediaDet:: EnterBitmapGrabMode**](imediadet-enterbitmapgrabmode.md).
+Se o detector de mídia estiver no modo de captura de bitmap, esse método retornará E \_ INVALIDARG. Para obter mais informações, [**consulte IMediaDet::EnterBitmapGrabMode.**](imediadet-enterbitmapgrabmode.md)
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ Se o detector de mídia estiver no modo de captura de bitmap, esse método retor
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Se o detector de mídia estiver no modo de captura de bitmap, esse método retor
 
 <dl> <dt>
 
-[**Interface IMediaDet**](imediadet.md)
+[**IMediaDet Interface**](imediadet.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)
