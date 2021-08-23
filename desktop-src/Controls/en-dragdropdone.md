@@ -3,7 +3,7 @@ title: EN_DRAGDROPDONE código de notificação (RichEdit. h)
 description: Notifica uma janela pai do controle de edição rico que a operação de arrastar e soltar foi concluída. Um controle de edição rico envia esse código de notificação na forma de uma \_ mensagem de notificação do WM.
 ms.assetid: 3c8b95cc-86ef-4aec-b551-11dca50ea5c5
 keywords:
-- EN_DRAGDROPDONE de código de notificação controles do Windows
+- EN_DRAGDROPDONE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a10b6718122791bcc862866fbaf17ed43e8bfd0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fb498361de04184823ab0d0652cc32adc9cbb1978bd6f303b7b215417f99f552
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436866"
 ---
 # <a name="en_dragdropdone-notification-code"></a>\_Código de notificação en DRAGDROPDONE
 
@@ -45,7 +45,7 @@ Uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Este código de notificação não retorna um valor.
 
@@ -59,9 +59,9 @@ Para receber um \_ código de notificação en DRAGDROPDONE, especifique o sinal
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

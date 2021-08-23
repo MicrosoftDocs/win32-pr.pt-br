@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 72f3c4aaf9ac7e6beaad1343c024aa28bd2a85ab
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 45bd755cdc0d183a6b06e42cbd9fb3934a5dc26a729e9982bc54fb9d2a2b01fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561966"
 ---
 # <a name="texldd---ps"></a>texldd-PS
 
@@ -29,7 +29,7 @@ Amostra uma textura com entradas de gradiente adicionais.
 
 
 
- 
+ 
 
 Em que:
 
@@ -49,7 +49,7 @@ Em que:
 
 
 
- 
+ 
 
 \* Essa instrução só tem suporte no PS \_ 2 \_ a. Não há suporte para ele no PS \_ 2 \_ b. Para obter mais informações sobre perfis, consulte [**D3DXGetPixelShaderProfile**](/windows/desktop/direct3d9/d3dxgetpixelshaderprofile).
 
@@ -66,6 +66,6 @@ Todas as máscaras de gravação são válidas no destino.
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

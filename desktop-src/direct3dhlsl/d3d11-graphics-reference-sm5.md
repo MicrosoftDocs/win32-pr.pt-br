@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f379301008190367a40959a319d01cfad127f6b4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a252c8ad3cc12c443506fbcc3802d9f1f7c15cfbe8cc62d937fcb9ca8723a8da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119371456"
 ---
 # <a name="shader-model-5"></a>Modelo de sombreador 5
 

@@ -1,9 +1,9 @@
 ---
-title: função ddy_coarse
-description: Computa uma derivada parcial de baixa precisão em relação à coordenada y de espaço de tela.
+title: ddy_coarse função
+description: Calcula um derivado parcial de baixa precisão em relação à coordenada Y do espaço na tela.
 ms.assetid: f6103cd3-f7ee-41c2-b3cf-9e72ca84b25e
 keywords:
-- função ddy_coarse HLSL
+- ddy_coarse função HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b6fef330e919a31e39306742bb03280454d47626
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 997b17d486d5e0a396e420bdc7b36da9d7ef83366a0d5c290110cf1cf2098c25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119490636"
 ---
-# <a name="ddy_coarse-function"></a>\_função ddy grande
+# <a name="ddy_coarse-function"></a>função \_ de ddy coarse
 
-Computa uma derivada parcial de baixa precisão em relação à coordenada y de espaço de tela.
+Calcula um derivado parcial de baixa precisão em relação à coordenada Y do espaço na tela.
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 float ddy_coarse(
-  in float value
+  in float value
 );
 ```
 
@@ -36,7 +36,7 @@ float ddy_coarse(
 
 <dl> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
@@ -45,11 +45,11 @@ O valor de entrada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **float**
 
-O derivativo parcial de baixa precisão do *valor*.
+O derivado parcial de baixa precisão *do valor*.
 
 ## <a name="remarks"></a>Comentários
 
@@ -61,31 +61,31 @@ float3 ddy_coarse(float3 value);
 float4 ddy_coarse(float4 value);
 ```
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -97,9 +97,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

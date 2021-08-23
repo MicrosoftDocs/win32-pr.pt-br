@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ae50ad570211303cdfb7aa8e86908593ab48537d
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 4389c348a06b7c54dc899da8114eee09e740681f043084bb0c32ab9f7163772e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591826"
 ---
 # <a name="wowshellexecute-function"></a>Função WOWShellExecute
 
-\[Essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
-Executa uma operação em um arquivo especificado. **WOWShellExecute** existe apenas para uso com o computador virtual dos do Microsoft Windows NT (Ntvdm.exe), que permite que o sistema operacional de disco (dos) e o software de 16 bits sejam executados em um sistema Windows e não deve ser usado por outras pessoas. Em vez disso, use [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) .
+Executa uma operação em um arquivo especificado. **WOWShellExecute** existe apenas para uso com o Ntvdm.exe (computador Virtual dos) da Microsoft Windows NT, que permite que o sistema operacional de disco (dos) e o software de 16 bits sejam executados em um sistema Windows e não deve ser usado por outras pessoas. Em vez disso, use [**ShellExecute**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ HINSTANCE WOWShellExecute(
 *HWND* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Um identificador para a janela do proprietário usado para exibir uma interface do usuário ou mensagens de erro. Esse valor pode ser **nulo** se a operação não estiver associada a uma janela.
 
@@ -127,9 +127,9 @@ Imprime o arquivo de documento especificado por *lpFile*. Se *lpFile* não for u
 
 </dt> <dd>
 
-Para sistemas anteriores ao Windows 2000, o verbo padrão é usado se ele é válido e está disponível no registro. Caso contrário, o verbo "Open" será usado.
+para sistemas anteriores à Windows 2000, o verbo padrão será usado se ele for válido e disponível no registro. Caso contrário, o verbo "Open" será usado.
 
-Para sistemas Windows 2000 e posteriores, o verbo padrão é usado, se disponível. Caso contrário, o verbo "Open" será usado. Se nenhum verbo estiver disponível, o sistema usará o primeiro verbo listado no registro.
+para os sistemas Windows 2000 e posteriores, o verbo padrão é usado, se disponível. Caso contrário, o verbo "Open" será usado. Se nenhum verbo estiver disponível, o sistema usará o primeiro verbo listado no registro.
 
 </dd> </dl> </dd> <dt>
 
@@ -178,11 +178,11 @@ Função de retorno de chamada usada para chamar [**CreateProcess**](/windows/wi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HINSTANCE**
 
-Retorna um valor maior que 32 se for bem-sucedido ou um valor de erro menor ou igual a 32, caso contrário. A tabela a seguir lista os valores de erro. O valor de retorno é convertido como um HINSTANCE para compatibilidade com versões anteriores com aplicativos do Windows de 16 bits. No entanto, não é um verdadeiro HINSTANCE. A única coisa que pode ser feita com o HINSTANCE retornado é convertê-lo em um **int** e compará-lo com o valor 32 ou um dos códigos de erro abaixo.
+Retorna um valor maior que 32 se for bem-sucedido ou um valor de erro menor ou igual a 32, caso contrário. A tabela a seguir lista os valores de erro. o valor de retorno é convertido como um HINSTANCE para compatibilidade com versões anteriores com aplicativos de Windows de 16 bits. No entanto, não é um verdadeiro HINSTANCE. A única coisa que pode ser feita com o HINSTANCE retornado é convertê-lo em um **int** e compará-lo com o valor 32 ou um dos códigos de erro abaixo.
 
 
 
@@ -191,18 +191,18 @@ Retorna um valor maior que 32 se for bem-sucedido ou um valor de erro menor ou i
 | <dl> <dt>**0**</dt> </dl>                        | O sistema operacional está sem memória ou recursos.<br/>                                                                                                           |
 | <dl> <dt>**arquivo de erro \_ \_ não \_ encontrado**</dt> </dl>  | O arquivo especificado não foi encontrado.<br/>                                                                                                                             |
 | <dl> <dt>**caminho de erro \_ \_ não \_ encontrado**</dt> </dl>  | O caminho especificado não foi encontrado.<br/>                                                                                                                             |
-| <dl> <dt>**ERRO \_ de \_ formato inadequado**</dt> </dl>       | O arquivo. exe é inválido (não Win32. exe ou erro na imagem. exe).<br/>                                                                                             |
-| <dl> <dt>**SE \_ Err \_ ACCESSDENIED**</dt> </dl>    | O sistema operacional negou o acesso ao arquivo especificado.<br/>                                                                                                     |
-| <dl> <dt>**SE \_ Err \_ ASSOCINCOMPLETE**</dt> </dl> | A associação de nome de arquivo está incompleta ou inválida.<br/>                                                                                                           |
-| <dl> <dt>**SE \_ Err \_ DDEBUSY**</dt> </dl>         | A transação DDE não pôde ser concluída porque outras transações DDE estavam sendo processadas.<br/>                                                               |
-| <dl> <dt>**SE \_ Err \_ DDEFAIL**</dt> </dl>         | Falha na transação DDE.<br/>                                                                                                                                   |
-| <dl> <dt>**SE \_ Err \_ DDETIMEOUT**</dt> </dl>      | A transação DDE não pôde ser concluída porque o tempo limite da solicitação foi atingido.<br/>                                                                                     |
-| <dl> <dt>**SE \_ Err \_ DLLNOTFOUND**</dt> </dl>     | A DLL especificada não foi encontrada.<br/>                                                                                                                              |
-| <dl> <dt>**SE \_ Err \_ FNF**</dt> </dl>             | O arquivo especificado não foi encontrado.<br/>                                                                                                                             |
-| <dl> <dt>**SE \_ Err \_ noassoc**</dt> </dl>         | Não há nenhum aplicativo associado à extensão de nome de arquivo fornecida. Esse erro também será retornado se você tentar imprimir um arquivo que não seja imprimível.<br/> |
-| <dl> <dt>**inoom de \_ erro se \_**</dt> </dl>             | Não havia memória suficiente para concluir a operação.<br/>                                                                                                        |
-| <dl> <dt>**SE \_ erro \_ PNF**</dt> </dl>             | O caminho especificado não foi encontrado.<br/>                                                                                                                             |
-| <dl> <dt>**\_compartilhamento de erro se \_**</dt> </dl>           | Ocorreu uma violação de compartilhamento.<br/>                                                                                                                                 |
+| <dl> <dt>**ERRO \_ de \_ formato inadequado**</dt> </dl>       | O arquivo de .exe é inválido (.exe não Win32 ou erro na imagem .exe).<br/>                                                                                             |
+| <dl> <dt>**ES \_ ACCESSDENIED de erro \_**</dt> </dl>    | O sistema operacional negou o acesso ao arquivo especificado.<br/>                                                                                                     |
+| <dl> <dt>**ES \_ ASSOCINCOMPLETE de erro \_**</dt> </dl> | A associação de nome de arquivo está incompleta ou inválida.<br/>                                                                                                           |
+| <dl> <dt>**ES \_ DDEBUSY de erro \_**</dt> </dl>         | A transação DDE não pôde ser concluída porque outras transações DDE estavam sendo processadas.<br/>                                                               |
+| <dl> <dt>**ES \_ DDEFAIL de erro \_**</dt> </dl>         | Falha na transação DDE.<br/>                                                                                                                                   |
+| <dl> <dt>**ES \_ DDETIMEOUT de erro \_**</dt> </dl>      | A transação DDE não pôde ser concluída porque o tempo limite da solicitação foi atingido.<br/>                                                                                     |
+| <dl> <dt>**ES \_ DLLNOTFOUND de erro \_**</dt> </dl>     | A DLL especificada não foi encontrada.<br/>                                                                                                                              |
+| <dl> <dt>**ES \_ FNF de erro \_**</dt> </dl>             | O arquivo especificado não foi encontrado.<br/>                                                                                                                             |
+| <dl> <dt>**ES \_ ERR \_ NOassoc**</dt> </dl>         | Não há nenhum aplicativo associado à extensão de nome de arquivo fornecida. Esse erro também será retornado se você tentar imprimir um arquivo que não seja imprimível.<br/> |
+| <dl> <dt>**ES \_ Oom de erro \_**</dt> </dl>             | Não havia memória suficiente para concluir a operação.<br/>                                                                                                        |
+| <dl> <dt>**\_ES ERR \_ PNF**</dt> </dl>             | O caminho especificado não foi encontrado.<br/>                                                                                                                             |
+| <dl> <dt>**\_ES ERR \_ SHARE**</dt> </dl>           | Ocorreu uma violação de compartilhamento.<br/>                                                                                                                                 |
 
 
 
@@ -210,16 +210,16 @@ Retorna um valor maior que 32 se for bem-sucedido ou um valor de erro menor ou i
 
 ## <a name="remarks"></a>Comentários
 
-**WOWShellExecute** não está incluído em um cabeçalho ou em um arquivo. lib. Ele é exportado de Shell32.dll por nome.
+**WOWShellExecute** não está incluído em um arquivo .lib ou de header. Ele é exportado do Shell32.dll por nome.
 
-Esse método permite executar qualquer comando no menu de atalho de uma pasta ou armazenado no registro.
+Esse método permite que você execute comandos no menu de atalho de uma pasta ou armazenados no Registro.
 
-Se *lpOperation* for **NULL**, a função abrirá o arquivo especificado por *lpFile*. Se *lpOperation* for "Open" ou "Explore", a função tentará abrir ou explorar a pasta.
+Se *lpOperation* for **NULL,** a função abrirá o arquivo especificado por *lpFile*. Se *lpOperation* for "open" ou "explore", a função tentará abrir ou explorar a pasta.
 
-Para obter informações sobre o aplicativo que é iniciado como resultado da chamada de **WOWShellExecute**, use [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
+Para obter informações sobre o aplicativo que é lançado como resultado da chamada **a WOWShellExecute,** use [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa).
 
 > [!Note]  
-> As **janelas de pasta de inicialização em uma configuração de processo separada** em opções de pasta afetam **WOWShellExecute**. Se essa opção estiver desabilitada (a configuração padrão), o **WOWShellExecute** usará uma janela aberta do Explorer em vez de iniciar uma nova. Se nenhuma janela do Explorer estiver aberta, o **WOWShellExecute** iniciará uma nova.
+> As **janelas Iniciar pasta em uma configuração de processo** separada em Opções de Pasta afetam **WOWShellExecute**. Se essa opção estiver desabilitada (a configuração padrão), **WOWShellExecute** usará uma janela aberta do Explorer em vez de iniciar uma nova. Se nenhuma janela do Explorer estiver aberta, **WOWShellExecute** iniciará uma nova.
 
  
 

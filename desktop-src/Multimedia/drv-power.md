@@ -1,9 +1,9 @@
 ---
-title: Mensagem de DRV_POWER (mmsystem. h)
-description: Notifica o driver de que a alimentação do dispositivo está sendo ativada ou desativada.
+title: DRV_POWER mensagem (Mmsystem.h)
+description: Notifica o driver de que a energia para o dispositivo está sendo desligada ou desligada.
 ms.assetid: b3bbd16a-5b90-4127-a1dd-f2ddfd918f0a
 keywords:
-- Multimídia do Windows de mensagem DRV_POWER
+- DRV_POWER mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8113b7fe544bf36a35b6e516c7a98ae71082577d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a6b9f3ddb2c0184337d2f53d73cdda8451a8d8df19229e505b08fedf685f40d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496446"
 ---
-# <a name="drv_power-message"></a>\_Mensagem de energia drv
+# <a name="drv_power-message"></a>Mensagem DRV \_ POWER
 
-Notifica o driver de que a alimentação do dispositivo está sendo ativada ou desativada.
+Notifica o driver de que a energia para o dispositivo está sendo desligada ou desligada.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,24 +32,24 @@ Notifica o driver de que a alimentação do dispositivo está sendo ativada ou d
 <span id="dwDriverId"></span><span id="dwdriverid"></span><span id="DWDRIVERID"></span>*dwDriverId*
 </dt> <dd>
 
-Identificador do driver instalável. Esse é o mesmo valor retornado anteriormente pelo driver da mensagem de [**\_ abertura do drv**](drv-open.md) .
+Identificador do driver instalável. Esse é o mesmo valor retornado anteriormente pelo driver da [**mensagem DRV \_ OPEN.**](drv-open.md)
 
 </dd> <dt>
 
 <span id="hdrvr"></span><span id="HDRVR"></span>*hdrvr*
 </dt> <dd>
 
-Identificador da instância de driver instalável.
+Lidar com a instância do driver instanciada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero, se for bem-sucedido ou zero.
+Retornará diferente de zero se for bem-sucedido ou zero, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Os parâmetros *lParam1* e *lParam2* não são usados.
+Os *parâmetros lParam1* *e lParam2* não são usados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Os parâmetros *lParam1* e *lParam2* não são usados.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

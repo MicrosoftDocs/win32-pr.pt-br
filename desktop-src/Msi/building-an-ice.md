@@ -4,12 +4,12 @@ ms.assetid: d9ff43ee-8e7a-4132-ac2f-232dc24606d8
 title: Criando uma ICE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f2de8dab0284a612723461d11b420ed1f22b244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6b4b79ab8e17d53ccfb60484c0d307f668c44a7a0e530cf776b10e73a697541c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500756"
 ---
 # <a name="building-an-ice"></a>Criando uma ICE
 
@@ -31,7 +31,7 @@ As ações personalizadas do ICE são limitadas aos seguintes tipos de ação pe
 | [Tipo de ação personalizada 2](custom-action-type-2.md)   | EXE no fluxo binário      |
 | [Tipo de ação personalizada 5](custom-action-type-5.md)   | JScript em fluxo binário  |
 | [Tipo de ação personalizada 6](custom-action-type-6.md)   | VBScript em fluxo binário |
-| [Tipo de ação personalizada 37](custom-action-type-37.md) | Código JScript como cadeia de caracteres    |
+| [Tipo de ação personalizada 37](custom-action-type-37.md) | JScript código como cadeia de caracteres    |
 | [Tipo de ação personalizada 38](custom-action-type-38.md) | Código VBScript como cadeia de caracteres   |
 
 

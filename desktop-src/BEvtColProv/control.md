@@ -14,12 +14,12 @@ api_type:
 - DllExport
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 2681af7425fd5cacf88375e11e4658e5d4b1a2c3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5eeccd31f3d9ab1f0b0ec05ebf80ea9f880a73fed21b21fe67fe63257af28871
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589016"
 ---
 # <a name="control-class"></a>Classe de controle
 
@@ -50,7 +50,7 @@ A classe **Control** tem esses métodos.
 
 | Método                                                         | Descrição                                                                                                                                                                                                                                                                                                                                                               |
 |:---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Verifica**](control-checkpoint.md)                       | Se a configuração atual for um resultado da função desfazer/refazer/restaurar, o marcará como se ela estivesse definida explicitamente, de modo que o histórico preservará a hora em que foi definido e um arquivo de backup será criado para ele na próxima alteração de configuração. Se a configuração atual já foi definida explicitamente, não terá efeito. Retorna 1 em caso de êxito, 0 em erro.<br/> |
+| [**Ponto de verificação**](control-checkpoint.md)                       | Se a configuração atual for um resultado da função desfazer/refazer/restaurar, o marcará como se ela estivesse definida explicitamente, de modo que o histórico preservará a hora em que foi definido e um arquivo de backup será criado para ele na próxima alteração de configuração. Se a configuração atual já foi definida explicitamente, não terá efeito. Retorna 1 em caso de êxito, 0 em erro.<br/> |
 | [**DumpDiagnostics**](control-dumpdiagnostics.md)             | Despeje as informações de diagnóstico no log.<br/>                                                                                                                                                                                                                                                                                                                  |
 | [**FastShutdown**](control-fastshutdown.md)                   | Pare o coletor rapidamente, descartando todos os dados na fila.<br/>                                                                                                                                                                                                                                                                                                    |
 | [**Liberar**](control-flush.md)                                 | Libere os buffers do encaminhador.<br/>                                                                                                                                                                                                                                                                                                                                   |
@@ -61,7 +61,7 @@ A classe **Control** tem esses métodos.
 | [**RestoreFile**](control-restorefile.md)                     | Restaure a configuração ativa do coletor de um arquivo de backup. Retorna 1 em caso de êxito, 0 em erro.<br/>                                                                                                                                                                                                                                                        |
 | [**RestoreFromTime**](control-restorefromtime.md)             | Restaure a configuração ativa do coletor de um arquivo de backup, selecionado por um carimbo de data/hora. Retorna 1 em caso de êxito, 0 em erro.<br/>                                                                                                                                                                                                                               |
 | [**Configuração de**](control-setconfiguration.md)           | Defina a nova configuração ativa do coletor. Retorna 1 em caso de êxito, 0 em erro.<br/>                                                                                                                                                                                                                                                                           |
-| [**Desligar**](control-shutdown.md)                           | Pare o coletor. Se o coletor estiver sendo executado como um serviço, a interrupção do serviço será a melhor abordagem.<br/>                                                                                                                                                                                                                                                     |
+| [**Desligamento**](control-shutdown.md)                           | Pare o coletor. Se o coletor estiver sendo executado como um serviço, a interrupção do serviço será a melhor abordagem.<br/>                                                                                                                                                                                                                                                     |
 | [**Desfazer**](control-undo.md)                                   | Restaure a configuração ativa do coletor a partir do arquivo de backup anterior (determinado voltando do carimbo de data/hora original atual). Se a configuração tiver sido definida apenas, isso significa desfazer essa alteração. As chamadas consecutivas serão desfeitas para as configurações anteriores e anteriores. Retorna 1 em caso de êxito, 0 em erro.<br/>                           |
 | [**ValidateConfiguration**](control-validateconfiguration.md) | Valide um texto de configuração para exatidão sem defini-lo como ativo. Retorna 1 em caso de êxito, 0 em erro.<br/>                                                                                                                                                                                                                                                     |
 
@@ -75,9 +75,9 @@ A classe **Control** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                       |
-| Namespace<br/>                | Raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| Namespace<br/>                | raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
 | MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 

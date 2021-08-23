@@ -4,12 +4,12 @@ ms.assetid: fd2a15cf-d117-4a87-a26e-caff4b12a2e9
 title: ICE80
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d5233f260e9cc248bdb2d0c19b47956a2b7dbe1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7be298e406db40b76a54eadbe12e99175e0058d97c4d57c5a4b1cd842b000f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119339936"
 ---
 # <a name="ice80"></a>ICE80
 
@@ -17,7 +17,7 @@ ICE80 valida que o valor da propriedade de [**Resumo do modelo**](template-summa
 
 ICE80 também valida que a ID de idioma especificada pela propriedade [**ProductLanguage**](productlanguage.md) deve estar contida na propriedade [**Summary do modelo**](template-summary.md) .
 
-Para obter mais informações, consulte [Windows Installer em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md).
+para obter mais informações, consulte [Windows Installer em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md).
 
 ## <a name="result"></a>Resultado
 
@@ -50,7 +50,7 @@ ICE80 posta os erros a seguir.
 [Referência de ICE](ice-reference.md)
 </dt> <dt>
 
-[Windows Installer em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md)
+[Windows Instalador em sistemas operacionais de 64 bits](windows-installer-on-64-bit-operating-systems.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Mensagem de HDM_SETBITMAPMARGIN (commctrl. h)
 description: Define a largura da margem, especificada em pixels, de um bitmap em um controle de cabeçalho existente. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetBitmapMargin do cabeçalho.
 ms.assetid: 5ac04701-18c8-42d4-9850-fe6eb813672c
 keywords:
-- Controles de HDM_SETBITMAPMARGIN de mensagens do Windows
+- controles de Windows de mensagem de HDM_SETBITMAPMARGIN
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2a5384151a63918a5828608b0aa8e829df61cad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa2e7c24ea52edc0001cea9f4d7184957c2cfbf50f15769df964351df91e5813
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435946"
 ---
 # <a name="hdm_setbitmapmargin-message"></a>\_Mensagem HDM SETBITMAPMARGIN
 
@@ -39,7 +39,7 @@ A largura, especificada em pixels, da margem que circunda um bitmap dentro de um
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a largura da margem do bitmap, em pixels. Se a margem do bitmap não tiver sido especificada anteriormente, o valor padrão de 3 \* [**GetSystemMetrics**](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) (*SM \_ CXEDGE*) será retornado.
 
@@ -49,8 +49,8 @@ Retorna a largura da margem do bitmap, em pixels. Se a margem do bitmap não tiv
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

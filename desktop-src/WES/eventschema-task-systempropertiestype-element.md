@@ -1,9 +1,9 @@
 ---
 title: Elemento Task (SystemPropertiesType)
-description: A tarefa definida no evento.
+description: A tarefa definida no evento .
 ms.assetid: fc42fb0e-715a-48d4-a85f-ea412b53ed9a
 keywords:
-- Elemento de tarefa EventLog
+- Elemento Task EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f639849a9dc8a80f614436c630e43bd093dc47f7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 823f6ad270debfa03a998cc0a1741d547629b48511e71a7301f952570351e68c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119470921"
 ---
 # <a name="task-systempropertiestype-element"></a>Elemento Task (SystemPropertiesType)
 
-A tarefa definida no evento.
+A tarefa definida no evento .
 
 ``` syntax
 <xs:element name="Task"
@@ -30,7 +30,7 @@ A tarefa definida no evento.
  />
 ```
 
-O elemento **Task** é definido pelo tipo complexo [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md) .
+O **elemento Task** é definido pelo tipo complexo [**SystemPropertiesType.**](eventschema-systempropertiestype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Task** é definido pelo tipo complexo [**SystemPropertiesType**](ev
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **Task** é definido pelo tipo complexo [**SystemPropertiesType**](ev
 **Elemento pai**
 </dt> <dt>
 
-[**Sistema (EventType)**](eventschema-system-eventtype-element.md)
+[**System (EventType)**](eventschema-system-eventtype-element.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 78d6e8cf-785e-4d5f-a78d-9ef9da9bc3e0
 title: Criando páginas de referência de evento expert e monitor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33c84610c7a1088e994fc852c64a7893f73f7909
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5826ab0aaa71461f6b4e56b9330e00c5af6aae26952d84af88c380da6dfe41fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144229"
 ---
 # <a name="creating-expert-and-monitor-event-reference-pages"></a>Criando páginas de referência de evento expert e monitor
 
@@ -30,7 +30,7 @@ Para desenvolver um novo ERP, a primeira etapa é determinar os eventos que exig
 Depois de estabelecer uma lista de ERPs exclusivos, siga estas etapas para criar cada ERP.
 
 -   [Escreva o documento de origem HTML](writing-an-event-reference-page.md).
--   [Salve e nomeie](naming-an-event-reference-page.md) o arquivo de origem HTML como um arquivo. htm.
+-   [Salve e nomeie](naming-an-event-reference-page.md) o arquivo de origem HTML como um arquivo .htm.
 -   [Teste o ERP](testing-an-event-reference-page.md) com o especialista ou o monitor concluído.
 
  

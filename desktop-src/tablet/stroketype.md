@@ -1,7 +1,7 @@
 ---
-description: Indica se um traço deve ser analisado como parte de um desenho ou como parte da gravação.
+description: Indica se um traço deve ser analisado como parte de um desenho ou como parte da escrita.
 ms.assetid: 3f4c4522-ada7-4759-bca7-88b2a71f36ea
-title: Enumeração StrokeType (IACom. h)
+title: Enumeração StrokeType (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: 3b59be130c6c7055bb7636760451dcadf5acf841
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b02a05582d675f04ad4458b1cb21c6d4a1797bacf15baf5d0851804d1a95d49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589576"
 ---
 # <a name="stroketype-enumeration"></a>Enumeração StrokeType
 
-Indica se um traço deve ser analisado como parte de um desenho ou como parte da gravação.
+Indica se um traço deve ser analisado como parte de um desenho ou como parte da escrita.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,21 +41,21 @@ typedef enum StrokeType {
 
 <dl> <dt>
 
-<span id="StrokeType_Unclassified"></span><span id="stroketype_unclassified"></span><span id="STROKETYPE_UNCLASSIFIED"></span>**StrokeType não \_ classificado**
+<span id="StrokeType_Unclassified"></span><span id="stroketype_unclassified"></span><span id="STROKETYPE_UNCLASSIFIED"></span>**StrokeType \_ Não Classificado**
 </dt> <dd>
 
-O traço pode ser qualquer parte de um desenho ou parte da escrita.
+O traço pode fazer parte de um desenho ou parte da escrita.
 
 </dd> <dt>
 
-<span id="StrokeType_Writing"></span><span id="stroketype_writing"></span><span id="STROKETYPE_WRITING"></span>**Escrita de StrokeType \_**
+<span id="StrokeType_Writing"></span><span id="stroketype_writing"></span><span id="STROKETYPE_WRITING"></span>**Escrita de \_ StrokeType**
 </dt> <dd>
 
-O traço faz parte da gravação.
+O traço faz parte da escrita.
 
 </dd> <dt>
 
-<span id="StrokeType_Drawing"></span><span id="stroketype_drawing"></span><span id="STROKETYPE_DRAWING"></span>**Desenho de StrokeType \_**
+<span id="StrokeType_Drawing"></span><span id="stroketype_drawing"></span><span id="STROKETYPE_DRAWING"></span>**Desenho de \_ StrokeType**
 </dt> <dd>
 
 O traço faz parte de um desenho.
@@ -64,7 +64,7 @@ O traço faz parte de um desenho.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra parte de um manipulador de eventos de traço, implementado de maneira semelhante ao [exemplo de coletores de eventos C++](c---event-sinks-sample.md). O traço adicionado é verificado para ver se a parte superior da caixa delimitadora foi desenhada abaixo de uma margem, `drawingMargin` . Nesse caso, o objeto [**IInkAnalyzer**](iinkanalyzer.md) , `m_spInkAnalyzer` , é definido para analisar o traço como um traço de desenho, e não como um traço de manuscrito. `CheckHResult` é uma função que usa um `HRESULT` e uma cadeia de caracteres e gera uma exceção criada com a cadeia de caracteres se o `HRESULT` não for **êxito**.
+O exemplo a seguir mostra parte de um manipulador de eventos de traço, implementado de maneira semelhante ao Exemplo de Sinks de Eventos [C++.](c---event-sinks-sample.md) O traço adicionado é verificado para ver se a parte superior da caixa delimitada foi desenhada abaixo de uma margem, `drawingMargin` . Se sim, o [**objeto IInkAnalyzer,**](iinkanalyzer.md) , é definido para analisar o traço como um traço de desenho, em vez de como `m_spInkAnalyzer` um traço de manuscrito. `CheckHResult`é uma função que aceita uma cadeia de caracteres e e lança uma exceção criada com a cadeia de `HRESULT` caracteres se `HRESULT` o não for **SUCCESS.**
 
 
 ```C++
@@ -88,9 +88,9 @@ if (top > drawingMargin)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 
 
 
@@ -98,7 +98,7 @@ if (top > drawingMargin)
 
 <dl> <dt>
 
-[**Método IInkAnalyzer:: setstroketype**](iinkanalyzer-setstroketype.md)
+[**Método IInkAnalyzer::SetRogkeType**](iinkanalyzer-setstroketype.md)
 </dt> </dl>
 
  

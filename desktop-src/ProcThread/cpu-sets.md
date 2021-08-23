@@ -4,16 +4,16 @@ ms.assetid: FF8BE790-19D9-473F-B184-C54FB392D61A
 title: Conjuntos de CPU
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 801474591751f04a5bffe570d6b8caff4974203f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 092559fbf5646a0938696c953f4136f1fe1a9567e56e02a04c6c36510d03d729
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143119"
 ---
 # <a name="cpu-sets"></a>Conjuntos de CPU
 
-Os conjuntos de CPU fornecem APIs para declarar a afinidade de aplicativo de maneira "suave" que é compatível com o gerenciamento de energia do sistema operacional. Além disso, a API fornece aos aplicativos a capacidade de reaffinitize todos os threads em segundo plano no processo para um subconjunto de processadores usando o mecanismo **padrão do processo** para evitar a interferência de threads do sistema operacional dentro do processo. Algumas versões do Windows dão suporte a políticas de reserva de núcleo, nas quais um subconjunto dos conjuntos de CPU do sistema pode ser dedicado ao uso exclusivo de aplicativos e cargas de trabalho individuais.
+Os conjuntos de CPU fornecem APIs para declarar a afinidade de aplicativo de maneira "suave" que é compatível com o gerenciamento de energia do sistema operacional. Além disso, a API fornece aos aplicativos a capacidade de reaffinitize todos os threads em segundo plano no processo para um subconjunto de processadores usando o mecanismo **padrão do processo** para evitar a interferência de threads do sistema operacional dentro do processo. algumas versões do Windows dão suporte a políticas de reserva de núcleo, nas quais um subconjunto dos conjuntos de CPU do sistema pode ser dedicado ao uso exclusivo de aplicativos e cargas de trabalho individuais.
 
 A API do conjunto de CPU funciona com IDs de conjunto de CPU, que estão associadas a afinidades de processador virtual. Na maioria dos sistemas, e na maioria das condições, cada ID de conjunto de CPU será mapeada diretamente para um único processador lógico **doméstico** . Um relacionados de thread para um determinado conjunto de CPU normalmente será executado em um dos processadores em sua lista de IDs de conjunto de CPU selecionadas.
 

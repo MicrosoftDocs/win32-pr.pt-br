@@ -4,12 +4,12 @@ ms.assetid: 9d460107-ec12-4df5-a7a9-d19943685599
 title: Exemplos de SDK do Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f335b5ba744b098efdb7570aa861ad36fc9216cf
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aa7d07d4136e613b4c6b553aa089834f58ccf65b6b87043ec5148d8db4ee6547
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103663795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465137"
 ---
 # <a name="media-foundation-sdk-samples"></a>Exemplos de SDK do Media Foundation
 
@@ -30,7 +30,7 @@ Esta seção descreve os aplicativos de exemplo que demonstram como usar Media F
 
 | Amostra                            | Descrição                                                 |
 |-----------------------------------|-------------------------------------------------------------|
-| [Codificação](transcode-sample.md) | Mostra como recodificar um arquivo de mídia para o formato de mídia do Windows. |
+| [Codificação](transcode-sample.md) | mostra como recodificar um arquivo de mídia para Windows formato de mídia. |
 
 
 
@@ -138,7 +138,7 @@ Este exemplo não está mais incluído no SDK.
 <br/></td>
 </tr>
 <tr class="odd">
-<td><a href="playlist-sample.md">7.1</a></td>
+<td><a href="playlist-sample.md">Playlist</a></td>
 <td>Reproduz uma sequência de arquivos de áudio usando a origem do sequenciador.<br/>
 <blockquote>
 [!Note]<br />

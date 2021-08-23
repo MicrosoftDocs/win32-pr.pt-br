@@ -281,7 +281,7 @@
           href: performance-counters-types.md
         - name: Códigos de erro de auxiliar de dados de desempenho
           href: pdh-error-codes.md
-        - name: Esquema do arquivo de log SQL
+        - name: SQL Esquema do arquivo de log
           href: sql-log-file-schema.md
           items:
             - name: Dados

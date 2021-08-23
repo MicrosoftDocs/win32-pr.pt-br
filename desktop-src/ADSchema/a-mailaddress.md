@@ -1,11 +1,11 @@
 ---
-title: Atributo de endereço de email SMTP
-description: Atributo de endereço de email genérico. Usado na caixa como um atributo opcional de objetos de servidor, onde é consumido pela replicação DS baseada em email (se os computadores estiverem tão configurados).
+title: Atributo SMTP-Mail-Address
+description: Atributo de endereço de email genérico. Usado na caixa como um atributo opcional de objetos de servidor, em que ele é consumido pela replicação DS baseada em email (se os computadores estão configurados).
 ms.assetid: 54fd710c-d140-4d46-9db3-0c72fb5fb08c
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo de email SMTP
-- Esquema de AD do atributo mailAddress
+- Esquema do AD do atributo SMTP-Mail-Address
+- Esquema do AD do atributo mailAddress
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e1828c59af346ab5a5741aaa03358b711484089
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b6ffc0e535b97994d3ef6ed451516eafa68c59940468f31bd88ffab84a878dbf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301286"
 ---
-# <a name="smtp-mail-address-attribute"></a>Atributo de endereço de email SMTP
+# <a name="smtp-mail-address-attribute"></a>Atributo SMTP-Mail-Address
 
-Atributo de endereço de email genérico. Usado na caixa como um atributo opcional de objetos de servidor, onde é consumido pela replicação DS baseada em email (se os computadores estiverem tão configurados).
+Atributo de endereço de email genérico. Usado na caixa como um atributo opcional de objetos de servidor, em que ele é consumido pela replicação DS baseada em email (se os computadores estão configurados).
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Endereço de email SMTP                           |
-| LDAP-Display-Name | mailAddress                                 |
+| Ldap-Display-Name | Mailaddress                                 |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | Quase nunca                                |
 | Attribute-Id      | 1.2.840.113556.1.4.786                      |
-| System-ID-GUID    | 26d9736f-6070-11d1-a9c6-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 26d9736f-6070-11d1-a9c6-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -80,10 +80,10 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -92,7 +92,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -122,7 +122,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -143,7 +143,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -164,7 +164,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -185,7 +185,7 @@ Atributo de endereço de email genérico. Usado na caixa como um atributo opcion
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |

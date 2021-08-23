@@ -1,7 +1,7 @@
 ---
-description: O objeto Microsoft. Windows. ActCtx faz referência a manifestos e fornece uma maneira para os mecanismos de script acessarem assemblies lado a lado. O objeto Microsoft. Windows. ActCtx pode ser usado para criar uma instância de um assembly lado a lado com componentes COM.
+description: A Microsoft. Windows. O objeto ActCtx faz referência a manifestos e fornece uma maneira de os mecanismos de script acessarem assemblies lado a lado. A Microsoft. Windows. O objeto ActCtx pode ser usado para criar uma instância de um assembly lado a lado com componentes COM.
 ms.assetid: 818e175e-2c58-4c44-87ce-4e97352fc3f3
-title: Objeto Microsoft. Windows. ActCtx
+title: Microsoft. Windows. Objeto ActCtx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,36 +12,36 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 58290ec9d36d8e8428000422d0e1014335870149
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e84eadbc7489ddd91c34c0c9494515e89205849829625e850ad31dce3e92fc1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119141999"
 ---
-# <a name="microsoftwindowsactctx-object"></a>Objeto Microsoft. Windows. ActCtx
+# <a name="microsoftwindowsactctx-object"></a>Microsoft. Windows. Objeto ActCtx
 
-O objeto **Microsoft. Windows. ActCtx** faz referência a manifestos e fornece uma maneira para os mecanismos de script acessarem assemblies lado a lado. O objeto **Microsoft. Windows. ActCtx** pode ser usado para criar uma instância de um assembly lado a lado COM componentes com.
+O **Microsoft.Windows. O objeto ActCtx** faz referência a manifestos e fornece uma maneira de os mecanismos de script acessarem assemblies lado a lado. O **Microsoft.Windows. O objeto ActCtx** pode ser usado para criar uma instância de um assembly lado a lado com componentes COM.
 
-O objeto **Microsoft. Windows. ActCtx** é fornecido como um assembly no Windows Server 2003. Ele também pode ser instalado por aplicativos que usam o Windows Installer para instalação e o incluem como um módulo de mesclagem em seu pacote de instalação.
+O **Microsoft.Windows. O objeto ActCtx** vem como um assembly no Windows Server 2003. Ele também pode ser instalado por aplicativos que usam o instalador Windows para instalação e o incluem como um módulo de mesclagem em seu pacote de instalação.
 
 ## <a name="members"></a>Membros
 
-O objeto **Microsoft. Windows. ActCtx** tem estes tipos de membros:
+O **Microsoft.Windows. O objeto ActCtx** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **Microsoft. Windows. ActCtx** tem esses métodos.
+O **Microsoft.Windows. O objeto ActCtx** tem esses métodos.
 
 
 
 | Método                               | Descrição                                                                     |
 |:-------------------------------------|:--------------------------------------------------------------------------------|
-| [**CreateObject**](createobject.md) | Cria um objeto no contexto do manifesto atual.<br/>            |
-| [**GetObject**](getobject.md)       | Obtém uma instância de um objeto **Microsoft. Windows. ActCtx** existente.<br/> |
+| [**Createobject**](createobject.md) | Cria um objeto no contexto do manifesto atual.<br/>            |
+| [**Getobject**](getobject.md)       | Obtém uma instância de um **Microsoft.Windows. Objeto ActCtx.**<br/> |
 
 
 
@@ -49,7 +49,7 @@ O objeto **Microsoft. Windows. ActCtx** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **Microsoft. Windows. ActCtx** tem essas propriedades.
+O **Microsoft.Windows. O objeto ActCtx** tem essas propriedades.
 
 
 
@@ -67,8 +67,8 @@ O objeto **Microsoft. Windows. ActCtx** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/> |
 
 
 

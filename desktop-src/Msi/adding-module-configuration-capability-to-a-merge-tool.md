@@ -1,15 +1,15 @@
 ---
-description: Windows Installer desenvolvedores podem criar ferramentas que permitem que os usuários finais usem módulos de mesclagem configuráveis.
+description: Windows Os desenvolvedores de instalador podem criar ferramentas que permitem que os usuários finais usem módulos de mesclagem configuráveis.
 ms.assetid: 5857b788-f1dd-41d0-b0ee-0872494e3c2c
 title: Adicionando a funcionalidade de configuração de módulo a uma ferramenta de mesclagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba04d297ad93cffc553670c648577f650cd21407
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb20645d4a66b09ffa95e34f04e9057bd0a8c57e645be652d8ea8cd595ddd6cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119252096"
 ---
 # <a name="adding-module-configuration-capability-to-a-merge-tool"></a>Adicionando a funcionalidade de configuração de módulo a uma ferramenta de mesclagem
 

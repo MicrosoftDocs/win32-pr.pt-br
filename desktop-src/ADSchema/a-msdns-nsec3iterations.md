@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5ca58c75131fd8d474dbb7adf72f4dc6a7f996e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 353e24d2de846bd86f79a820717ed510240f3da0d04ce75eb8fc24ba93bf50d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119297716"
 ---
 # <a name="ms-dns-nsec3-iterations-attribute"></a>atributo ms-DNS-NSEC3-iterations
 

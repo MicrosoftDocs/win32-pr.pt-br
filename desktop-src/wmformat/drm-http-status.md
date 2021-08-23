@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d61803cab6cb80932402e429e77228a1611fd9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e222cbf24e6333c7105e8564a5ad255693340749aeea32d98bd013bcb40995d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105757643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586296"
 ---
 # <a name="drm_http_status-enumeration-drmexternalsh"></a>Enumeração de DRM_HTTP_STATUS (Drmexternals. h)
 
 O tipo de enumeração de **\_ \_ status http DRM** define um intervalo de Estados para uma solicitação de [*DRM*](wmformat-glossary.md) .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -92,8 +92,8 @@ Essa enumeração é usada pela estrutura [**de \_ \_ status individual do WM**]
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                      |
-| Versão<br/>                  | SDK do Windows Media Format 7 ou versões posteriores do SDK<br/>                       |
-| parâmetro<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Versão<br/>                  | Windows SDK do Media Format 7 ou versões posteriores do SDK<br/>                       |
+| Cabeçalho<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
 
 
 

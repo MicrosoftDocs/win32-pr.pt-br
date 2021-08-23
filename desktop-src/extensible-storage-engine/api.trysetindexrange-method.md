@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. TrySetIndexRange'
-title: Método API. TrySetIndexRange
+description: 'Saiba mais sobre: Método Api.TrySetIndexRange'
+title: Método Api.TrySetIndexRange
 TOCTitle: 'TrySetIndexRange method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TrySetIndexRange(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.SetIndexRangeGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.trysetindexrange(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d175fdfc931d24742d61f962a45e690a5c49c2be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbc04a7fe79f14976e509928e243030b641e8a89703e638861e95d60653fc081
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275286"
 ---
-# <a name="apitrysetindexrange-method"></a>Método API. TrySetIndexRange
+# <a name="apitrysetindexrange-method"></a>Método Api.TrySetIndexRange
 
-Limita temporariamente o conjunto de entradas de índice que o cursor pode percorrer usando JetMove para aqueles que começam da entrada de índice atual e terminam na entrada de índice que corresponde aos critérios de pesquisa especificados pela chave de pesquisa nesse cursor e os critérios de associação especificados. Uma chave de pesquisa deve ter sido construída anteriormente usando JetMakeKey. Retorna true se o intervalo de índice não estiver vazio; caso contrário, false.
+Limita temporariamente o conjunto de entradas de índice que o cursor pode andar usando JetMove para aqueles que começam na entrada de índice atual e terminam na entrada de índice que corresponde aos critérios de pesquisa especificados pela chave de pesquisa nesse cursor e aos critérios de limite especificados. Uma chave de pesquisa deve ter sido construída anteriormente usando JetMakeKey. Retornará true se o intervalo de índice não estiver vazio; caso contrário, false.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,27 +68,27 @@ public static bool TrySetIndexRange(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor a ser posicionado.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. SetIndexRangeGrbit](./setindexrangegrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.SetIndexRangeGrbit](./setindexrangegrbit-enumeration.md)  
     
-    Opção de busca.
+    Opção Seek.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True se a busca foi bem-sucedida.  
 
 ## <a name="see-also"></a>Confira também
@@ -99,4 +99,4 @@ True se a busca foi bem-sucedida.
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

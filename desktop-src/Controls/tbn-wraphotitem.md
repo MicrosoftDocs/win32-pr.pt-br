@@ -1,9 +1,9 @@
 ---
-title: TBN_WRAPHOTITEM código de notificação (commctrl. h)
-description: Notifica um aplicativo com duas ou mais barras de ferramentas que o item ativo está prestes a alterar. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: TBN_WRAPHOTITEM de notificação (Commctrl.h)
+description: Notifica um aplicativo com duas ou mais barras de ferramentas que o item quente está prestes a ser alterado. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 169309ec-68dd-4cbb-8963-f842cf75b4fc
 keywords:
-- TBN_WRAPHOTITEM de código de notificação controles do Windows
+- TBN_WRAPHOTITEM código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58eb513780da464ead40f8a4fb1264f6268d4370
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33c6bd1f2e750a2fd71dc053d31ca452fa581891037db73d356e5405476b28de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119293356"
 ---
-# <a name="tbn_wraphotitem-notification-code"></a>Código de notificação do TBN \_ WRAPHOTITEM
+# <a name="tbn_wraphotitem-notification-code"></a>Código de \_ notificação TBN WRAPHOTITEM
 
-Notifica um aplicativo com duas ou mais barras de ferramentas que o item ativo está prestes a alterar. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica um aplicativo com duas ou mais barras de ferramentas que o item quente está prestes a ser alterado. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ TBN_WRAPHOTITEM
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura que contém o item quente antigo (**isniciar**) e se o novo item ativo está antes dele (**iDir** =-1) ou depois dele (**iDir** = 1), bem como um motivo pelo qual o item ativo está mudando.
+Um ponteiro para uma estrutura que contém o item quente antigo (**iStart**) e se o novo item quente está antes dele (**iDir** = -1) ou depois dele (**iDir** = 1), bem como um motivo pelo qual o item quente está mudando.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-**True** se o aplicativo estiver lidando com a alteração de item quente; caso contrário, **false**.
+**TRUE** se o aplicativo estiver tratando a própria alteração de item quente; caso **contrário, FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura **NMTBWRAPHOTITEM** deve ser definida pelo aplicativo da seguinte maneira:
+A **estrutura NMTBWRAPHOTITEM** deve ser definida pelo aplicativo da seguinte forma:
 
 ``` syntax
 typedef struct tagNMTBWRAPHOTITEM {
@@ -68,9 +68,9 @@ typedef struct tagNMTBWRAPHOTITEM {
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

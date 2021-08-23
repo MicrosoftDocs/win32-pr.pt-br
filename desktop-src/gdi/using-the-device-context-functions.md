@@ -4,12 +4,12 @@ ms.assetid: 50a66d66-07e5-4cde-ae0b-13f626644719
 title: Usando as funções de contexto do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6aea10a5c93938280781e957c77c0a59f4b16bce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbc32100af871751d1afafeed7cda1e39b01351139970b597534143df1d1009a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558026"
 ---
 # <a name="using-the-device-context-functions"></a>Usando as funções de contexto do dispositivo
 

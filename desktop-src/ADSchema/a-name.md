@@ -1,11 +1,11 @@
 ---
 title: Atributo RDN
-description: O nome distinto relativo (RDN) de um objeto.
+description: O RDN (Nome Diferenciado Relativo) de um objeto .
 ms.assetid: 07fe0e81-1b18-4dbb-abca-a059a8bf993e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de atributos do atributo RDN
-- atributo de nome esquema do AD
+- Esquema do AD do atributo RDN
+- atributo name Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe49bd525d0fa3f4ed95874f2020d9d2a5eb9554
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1255494d757b6bd0b43535d3389a16cd2d86f1809742733a5c594512bf8efbac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119326166"
 ---
 # <a name="rdn-attribute"></a>Atributo RDN
 
-O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN (nome distinto), que identifica exclusivamente um objeto LDAP.
+O RDN (Nome Diferenciado Relativo) de um objeto . Um RDN é a parte relativa de um DN (nome diferenciado), que identifica exclusivamente um objeto LDAP.
 
 
 
 | Entrada | Valor |
 |-------------------|------------------------------------------------|
-| CN                | RDN                                            |
-| LDAP-Display-Name | name                                           |
+| CN                | Rdn                                            |
+| Ldap-Display-Name | name                                           |
 | Tamanho              | \-                                             |
 | Privilégio de atualização  | Esse valor é definido pelo administrador do esquema. |
 | Frequência de atualização  | \-                                             |
 | Attribute-Id      | 1.2.840.113556.1.4.1                           |
-| System-ID-GUID    | bf967a0e-0de6-11d0-a285-00aa003049e2           |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)    |
+| System-Id-Guid    | bf967a0e-0de6-11d0-a285-00aa003049e2           |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)    |
 
 
 
@@ -44,7 +44,7 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x0000000D                      |
@@ -79,11 +79,11 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x0000000D                      |
@@ -92,7 +92,7 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x0000000D                      |
@@ -121,11 +121,11 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x0000000D                      |
@@ -142,11 +142,11 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x0000000D                      |
@@ -163,11 +163,11 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |
 | Search-Flags           | 0x0000000D                      |
@@ -184,10 +184,10 @@ O nome distinto relativo (RDN) de um objeto. Um RDN é a parte relativa de um DN
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8202                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
-| É indexado             | True                            |
-| No catálogo global      | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
+| É indexado             | Verdadeiro                            |
+| No Catálogo Global      | Verdadeiro                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
 | Range-Lower            | 1                               |
 | Range-Upper            | 255                             |

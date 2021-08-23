@@ -1,33 +1,33 @@
 ---
-title: Menus (noções básicas de design)
-description: Menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
+title: Menus (noções básicas de Design)
+description: Os menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
 ms.assetid: 3772ff8e-8057-476d-b62b-efbd5e07907f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 7d5c52e56c88f4066e8f1dc068ac89070c7d4974
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: e9b2c3559163ff77e8e3f08354b017c1b7cb53c95fd51802ae2565efdf71abcd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350084"
 ---
-# <a name="menus-design-basics"></a>Menus (noções básicas de design)
+# <a name="menus-design-basics"></a>Menus (noções básicas de Design)
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-Menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
+Os menus são listas hierárquicas de comandos ou opções disponíveis para os usuários no contexto atual.
 
-Os menus suspensos são menus exibidos sob demanda ao clicar ou passar o mouse. Normalmente, eles ficam ocultos da exibição e, portanto, são um meio eficiente de conservar espaço na tela. Um submenu ou menu em cascata é um menu secundário exibido sob demanda de dentro de um menu. Eles são indicados por uma seta no final do rótulo de submenu. Um item de menu é um comando ou opção individual dentro de um menu.
+Menus suspensos são menus exibidos sob demanda no clique do mouse ou em foco. Eles normalmente são ocultados da exibição e, portanto, são um meio eficiente de economizar espaço na tela. Um submenu ou menu em cascata é um menu secundário exibido sob demanda de dentro de um menu. Elas são indicadas por uma seta no final do rótulo do submenu. Um item de menu é um comando individual ou uma opção dentro de um menu.
 
-Os menus geralmente são exibidos em uma barra de menus, que é uma lista de categorias de menu rotuladas normalmente localizadas próximos à parte superior de uma janela. Por outro lado, um menu de contexto é suspenso quando os usuários clicam com o botão direito do mouse em um objeto ou região de janela que dá suporte a um menu de contexto.
+Os menus são geralmente exibidos de uma barra de menus, que é uma lista de categorias de menu rotuladas normalmente localizadas próximo à parte superior de uma janela. Por outro lado, um menu de contexto cai quando os usuários clicam com o botão direito do mouse em uma região de objeto ou janela que dá suporte a um menu de contexto.
 
 ![captura de tela da barra de menus com menu e submenu ](images/cmd-menus-image1.png)
 
 Uma barra de menus típica que exibe um menu suspenso e um submenu.
 
 > [!Note]  
-> As diretrizes [relacionadas aos](ctrl-command-buttons.md)botões de comando , barras de ferramentas e [teclado](inter-keyboard.md) são [apresentadas](cmd-toolbars.md)em artigos separados.
+> As diretrizes relacionadas a [botões de comando](ctrl-command-buttons.md), barras de [ferramentas](cmd-toolbars.md)e [teclado](inter-keyboard.md) são apresentadas em artigos separados.
 
  
 
@@ -39,18 +39,18 @@ Os menus têm vários padrões de uso:
 
 | Uso                                                                                                                                                |    Exemplo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Barras de menu**<br/> uma barra de menus exibe comandos e opções em menus suspensos. <br/>                                               | As barras de menu são muito comuns e fáceis de encontrar, bem como um uso eficiente de espaço. <br/> ![captura de tela da barra de menus com o menu suspenso ](images/cmd-menus-image2.png)<br/> Uma barra de menus do Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
-| **Menus da barra de ferramentas**<br/> uma barra de menus implementada como uma barra de ferramentas. <br/>                                                                   | Os menus da barra de ferramentas são barras de ferramentas que consistem principalmente em comandos em botões de [menu](ctrl-command-buttons.md) e botões de divisão, com apenas alguns comandos diretos, se for o caso. <br/> ![captura de tela do menu da barra de ferramentas com o menu suspenso ](images/cmd-menus-image3.png)<br/> Um menu da barra de ferramentas no Windows Galeria de Fotos.<br/> Para ver diretrizes sobre esse padrão, consulte [Barras de ferramentas.](cmd-toolbars.md)<br/>                                                                                                                                                                                                             |
-| **Menus de tabulação**<br/> botões em guias que exibem um pequeno conjunto de comandos e opções relacionados a uma guia em um menu suspenso. <br/> | guias com menus parecem guias comuns, exceto que sua parte inferior tem um botão com seta para baixo. clicar no botão exibe um menu suspenso em vez de selecionar a guia. <br/> ![captura de tela do menu guia com o menu suspenso ](images/cmd-menus-image4.png)<br/> Os menus de tabulação são usados Windows Media Player.<br/>                                                                                                                                                                                                                                                                                           |
-| **Botões de menu**<br/> botões de comando que exibem um pequeno conjunto de comandos relacionados em um menu suspenso. <br/>                       | [os botões de menu](ctrl-command-buttons.md) se parecem com botões de comando comuns, exceto que eles têm uma seta para baixo dentro deles. clicar no botão exibe um menu suspenso em vez de executar um comando.<br/> [Os botões de divisão](ctrl-command-buttons.md) são semelhantes aos botões de menu, exceto que são variações de um comando e clicar na parte esquerda do botão executa a ação no rótulo diretamente.<br/> ![captura de tela do botão de menu com comandos suspensos ](images/cmd-menus-image5.png)<br/> Um botão de menu com um pequeno conjunto de comandos relacionados.<br/> |
-| **Menus de contexto**<br/> menus suspensos que exibem um pequeno conjunto de comandos e opções relacionados ao contexto atual. <br/>       | menus de contexto suspensos quando os usuários clicam com o botão direito do mouse em um objeto ou região de janela que dá suporte a um menu de contexto. <br/> ![captura de tela do menu de contexto exibindo comandos ](images/cmd-menus-image6.png)<br/> um menu de contexto do Windows Explorer.<br/> se os menus de contexto são a melhor opção de menu, mas você precisa de uma solução adequada para todos os usuários, você pode usar um botão de seta para baixo do menu. <br/> ![captura de tela da foto com o botão de menu suspenso ](images/cmd-menus-image7.png)<br/> Um menu de contexto tornou-se visível com um botão suspenso do menu.<br/>                                                   |
-| **Menus do painel de tarefas**<br/> um pequeno conjunto de comandos relacionados ao objeto ou modo de programa selecionado. <br/>                              | ao contrário dos menus de contexto, eles são exibidos automaticamente em um painel de janela, em vez de sob demanda. <br/> ![captura de tela da foto com o menu do painel de tarefas à direita ](images/cmd-menus-image8.png)<br/> Um menu do painel de tarefas do windows Galeria de Fotos visualizador.<br/>                                                                                                                                                                                                                                                                                                                                                         |
+| **Barras de menu**<br/> uma barra de menus exibe comandos e opções nos menus suspensos. <br/>                                               | as barras de menu são muito comuns e fáceis de encontrar, bem como um uso eficiente de espaço. <br/> ![captura de tela da barra de menus com o menu suspenso ](images/cmd-menus-image2.png)<br/> uma barra de menus do Windows Mail.<br/>                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **Menus da barra de ferramentas**<br/> uma barra de menus implementada como uma barra de ferramentas. <br/>                                                                   | os menus da barra de ferramentas são barras de ferramentas que consistem principalmente em comandos em [botões de menu](ctrl-command-buttons.md) e botões de divisão, com apenas alguns comandos diretos, se houver. <br/> ![captura de tela do menu da barra de ferramentas com o menu suspenso ](images/cmd-menus-image3.png)<br/> um menu de barra de ferramentas na galeria de fotos Windows.<br/> Para obter diretrizes sobre esse padrão, consulte [barras de ferramentas](cmd-toolbars.md).<br/>                                                                                                                                                                                                             |
+| **Menus de guia**<br/> botões dentro de guias que exibem um pequeno conjunto de comandos e opções relacionadas a uma guia em um menu suspenso. <br/> | guias com menus são semelhantes a guias comuns, exceto que sua parte inferior tem um botão com a seta suspensa. clicar no botão exibe um menu suspenso em vez de selecionar a guia. <br/> ![captura de tela do menu guia com o menu suspenso ](images/cmd-menus-image4.png)<br/> Os menus de guia são usados no Windows Media Player.<br/>                                                                                                                                                                                                                                                                                           |
+| **Botões de menu**<br/> botões de comando que exibem um pequeno conjunto de comandos relacionados em um menu suspenso. <br/>                       | os [botões de menu](ctrl-command-buttons.md) parecem botões de comando comuns, exceto por terem uma seta suspensa dentro deles. clicar no botão exibe um menu suspenso em vez de executar um comando.<br/> os [botões de divisão](ctrl-command-buttons.md) são semelhantes aos botões de menu, exceto que eles são variações de um comando, e clicar na parte esquerda do botão executa a ação diretamente no rótulo.<br/> ![captura de tela do botão de menu com comandos suspensos ](images/cmd-menus-image5.png)<br/> Um botão de menu com um pequeno conjunto de comandos relacionados.<br/> |
+| **Menus de contexto**<br/> menus suspensos que exibem um pequeno conjunto de comandos e opções relacionadas ao contexto atual. <br/>       | menu suspenso de menus de contexto quando os usuários clicam com o botão direito do mouse em uma região de objeto ou de janela que oferece suporte a menus de contexto. <br/> ![captura de tela do menu de contexto exibindo comandos ](images/cmd-menus-image6.png)<br/> um menu de contexto do Windows Explorer.<br/> Se os menus de contexto forem a melhor opção de menu, mas você precisar de uma solução adequada para todos os usuários, você poderá usar um botão de seta suspensa menu. <br/> ![captura de tela de foto com o botão de menu suspenso ](images/cmd-menus-image7.png)<br/> Um menu de contexto ficou visível com um botão suspenso de menu.<br/>                                                   |
+| **Menus do painel de tarefas**<br/> um pequeno conjunto de comandos relacionados ao modo de programa ou objeto selecionado. <br/>                              | ao contrário dos menus de contexto, eles são exibidos automaticamente dentro de um painel de janela, em vez de sob demanda. <br/> ![captura de tela de foto com o menu do painel de tarefas à direita ](images/cmd-menus-image8.png)<br/> um menu do painel de tarefas no visualizador da galeria de fotos Windows.<br/>                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
  
 
-## <a name="is-this-the-right-user-interface"></a>Essa é a interface do usuário certa?
+## <a name="is-this-the-right-user-interface"></a>Esta é a interface do usuário correta?
 
 Para decidir, considere estas perguntas:
 
@@ -58,86 +58,86 @@ Para decidir, considere estas perguntas:
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela primária?
+-   A janela é uma janela principal?
 -   Há muitos itens de menu?
 -   Há muitas categorias de menu?
--   A maioria dos itens de menu se aplica a todo o programa e à janela primária?
+-   A maioria dos itens de menu se aplica a todo o programa e à janela principal?
 -   O menu precisa funcionar para todos os usuários?
 
-Se sim, considere usar uma barra de menus.
+Nesse caso, considere usar uma barra de menus.
 
 ### <a name="toolbar-menus"></a>Menus da barra de ferramentas
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela primária?
+-   A janela é uma janela principal?
 -   A janela tem uma barra de ferramentas?
 -   Há apenas algumas categorias de menu?
 -   O menu precisa funcionar para todos os usuários?
 
 Nesse caso, considere usar um menu da barra de ferramentas em vez de ou além de uma barra de menus.
 
-### <a name="tab-menus"></a>Menus de tabulação
+### <a name="tab-menus"></a>Menus de guia
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela primária?
--   A janela tem guias, em que cada guia é usada para um conjunto dedicado de tarefas (em vez de usar guias para mostrar exibições diferentes)?
+-   A janela é uma janela principal?
+-   A janela tem guias, onde cada guia é usada para um conjunto dedicado de tarefas (em oposição ao uso de guias para mostrar diferentes modos de exibição)?
 -   Há uma categoria de menu que se aplica a cada guia?
 -   Há muitos comandos e opções, mas apenas um pequeno conjunto para cada guia?
 
-Se sim, considere usar um menu de tabulação em vez de uma barra de menus.
+Nesse caso, considere usar um menu de guia em vez de uma barra de menus.
 
 ### <a name="context-menu"></a>Menu de contexto
 
 As seguintes condições se aplicam:
 
--   Há um pequeno conjunto de comandos contextuais e opções que se aplicam ao objeto selecionado ou à região da janela?
+-   Há um pequeno conjunto de comandos e opções contextuais que se aplicam ao objeto ou à região da janela selecionada?
 -   Esses itens de menu são redundantes?
--   Os usuários de destino estão familiarizados com menus de contexto?
+-   Os usuários de destino estão familiarizados com os menus de contexto?
 
 Nesse caso, considere fornecer menus de contexto para os objetos e regiões de janela que precisam deles.
 
-Para programas baseados em navegador, os menus do painel de tarefas são uma solução mais comum para comandos contextuais. Atualmente, os usuários esperam que os menus de contexto em programas baseados em navegador sejam genéricos e sem ajuda.
+Para programas baseados em navegador, os menus do painel de tarefas são uma solução mais comum para comandos contextuais. Atualmente, os usuários esperam que os menus de contexto em programas baseados em navegador sejam genéricos e não tenham ajuda.
 
 ### <a name="task-pane-menu"></a>Menu do painel de tarefas
 
 As seguintes condições se aplicam:
 
--   A janela é uma janela primária?
--   Há um pequeno conjunto de comandos contextuais e opções que se aplicam ao objeto ou modo de programa selecionado?
+-   A janela é uma janela principal?
+-   Há um pequeno conjunto de comandos contextuais e opções que se aplicam ao modo de programa ou objeto selecionado?
 -   Há algumas categorias de menu?
 -   O menu precisa funcionar para todos os usuários?
 
-Nesse caso, considere usar um menu do painel de tarefas em vez de um menu de contexto.
+Nesse caso, considere usar um menu de painel de tarefas em vez de um menu de contexto.
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Menus efetivos que promovem uma boa experiência do usuário:
+Menus eficientes que promovem uma boa experiência do usuário:
 
--   Use uma apresentação de comando que corresponde ao tipo de programa, tipos de janela, uso de comando e usuários de destino.
+-   Use uma apresentação de comando que corresponda ao tipo de programa, tipos de janela, uso de comando e usuários de destino.
 -   São bem organizados, usando a organização de menu padrão quando apropriado.
--   Use barras de menus, barras de ferramentas e menus de contexto com eficiência.
+-   Use barras de menu, barras de ferramentas e menus de contexto com eficiência.
 -   Use ícones com eficiência.
--   Use teclas de acesso e teclas de atalho com eficiência.
+-   Use chaves de acesso e teclas de atalho com eficiência.
 
 **Se você fizer apenas uma coisa...**
 
-Escolha uma apresentação de comando que corresponda ao tipo de programa, aos tipos de janela, ao uso de comando e aos usuários de destino.
+Escolha uma apresentação de comando que corresponde ao tipo de programa, tipos de janela, uso de comando e usuários de destino.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="general"></a>Geral
 
--   **Todos os padrões de menu, exceto as barras de menu, precisam de uma seta suspensa para indicar a presença de um menu suspenso.** A presença de menus fica sem dizer em uma barra de menus, mas não em outros padrões.
--   **Não altere nomes de itens de menu dinamicamente.** Isso é confuso e inesperado. Por exemplo, não altere uma opção de modo retrato para modo paisagem na seleção. Para modos, use [marcadores e marcas](#bullets-and-checkmarks) de seleção em vez disso.
-    -   **Exceção:** Você pode alterar nomes de itens de menu que são baseados em nomes de objetos dinamicamente. Por exemplo, as listas de arquivos usados recentemente ou nomes de janela podem ser dinâmicas.
+-   **Todos os padrões de menu, exceto barras de menu, precisam de uma seta para baixo para indicar a presença de um menu suspenso.** A presença de menus fica sem dizer em uma barra de menus, mas não nos outros padrões.
+-   **Não altere nomes de item de menu dinamicamente.** Fazer isso é confuso e inesperado. Por exemplo, não altere uma opção de modo Retrato para Modo paisagem após a seleção. Para modos, use [marcadores e marcas de seleção.](#bullets-and-checkmarks)
+    -   **Exceção:** Você pode alterar nomes de item de menu baseados em nomes de objeto dinamicamente. Por exemplo, listas de arquivos usados recentemente ou nomes de janela podem ser dinâmicas.
 
 ### <a name="menu-bars"></a>Barras de menu
 
--   **Considere eliminar barras de menus com três ou menos categorias de menu.** Se houver apenas alguns comandos, prefira alternativas mais claras, como menus da barra de ferramentas, ou alternativas mais diretas, como botões de comando e links.
--   **Não há mais de 10 categorias de menu.** Muitas categorias de menu são enormes e tornam a barra de menus difícil de usar.
--   **Considere ocultar a barra de menus** se a barra de ferramentas ou os comandos diretos fornecerem quase todos os comandos necessários para a maioria dos usuários. Permitir que os usuários mostrem ou ocultem com uma opção de marca de seleção de barra de menus em um menu da barra de ferramentas.
+-   **Considere eliminar barras de menu com três ou menos categorias de menu.** Se houver apenas alguns comandos, prefira alternativas mais leves, como menus da barra de ferramentas ou alternativas mais diretas, como botões de comando e links.
+-   **Não tem mais de 10 categorias de menu.** Muitas categorias de menu são difíceis de usar e dificultam o uso da barra de menus.
+-   **Considere ocultar a barra de menus** se a barra de ferramentas ou comandos diretos fornecerem quase todos os comandos necessários para a maioria dos usuários. Permitir que os usuários mostrem ou o hide com uma opção de marca de seleção da barra de menus em um menu da barra de ferramentas.
 
 ![captura de tela da lista de opções com a barra de menus selecionada ](images/cmd-menus-image9.png)
 
@@ -147,74 +147,74 @@ Para obter mais informações, consulte [ocultando barras de menu](#hiding-menu-
 
 ### <a name="hiding-menu-bars"></a>Ocultando barras de menu
 
-Em geral, as barras de ferramentas funcionam muito bem com barras de menus porque ambas permitem que cada uma se concentre em seus pontos fortes sem comprometimento.
+Em geral, as barras de ferramentas funcionam muito bem junto com barras de menu, pois ter ambos permite que cada um se concentre em seus pontos fortes sem comprometimento.
 
--   Oculte a barra de menus por padrão se o design da barra de ferramentas tornar uma barra de menus redundante.
--   Oculte a barra de menus em vez de removê-la completamente, pois as barras de menus são mais acessíveis para usuários de teclado.
--   Para restaurar a barra de menus, forneça uma opção de marca de seleção de barra de menus na categoria de menu exibição (para barras de ferramentas primárias) ou ferramentas (para barras de ferramentas secundárias). Para obter mais informações, consulte [menu padrão e botões de divisão](cmd-toolbars.md).
+-   Ocultar a barra de menus por padrão se o design da barra de ferramentas torna a redundância de uma barra de menus.
+-   Ocultar a barra de menus em vez de removê-la completamente, pois as barras de menu são mais acessíveis para usuários de teclado.
+-   Para restaurar a barra de menus, forneça uma opção de marca de seleção barra de menus na categoria de menu Exibir (para barras de ferramentas primárias) ou Ferramentas (para barras de ferramentas secundárias). Para obter mais informações, consulte [Menu padrão e botões de divisão](cmd-toolbars.md).
 
 ### <a name="menu-categories"></a>Categorias de menu
 
--   **Escolha nomes de palavras únicas para categorias de menu.** O uso de várias palavras torna a separação entre categorias confusa.
--   **Para programas que criam ou exibem documentos, use as categorias de menu padrão** , como arquivo, editar, exibir, ferramentas e ajuda. Isso torna os itens de menu comuns previsíveis e fáceis de localizar.
--   **Para outros tipos de programas, considere organizar seus comandos e opções em categorias mais úteis e naturais** com base na finalidade do seu programa e na maneira como os usuários consideram suas tarefas e metas. Não se sinta obrigado a usar a organização de menu padrão se ela não for adequada para seu programa.
--   **Se você optar por usar categorias de menu não padrão, deverá escolher bons nomes de categoria.** Para obter mais informações, consulte a seção [Rótulos](#labels) .
--   **Prefira categorias de menu orientadas a tarefas em categorias genéricas.** As categorias orientadas a tarefas facilitam a localização de itens de menu.
+-   **Escolha nomes de palavra única para categorias de menu.** Usar várias palavras torna a separação entre categorias confusa.
+-   **Para programas que criam ou visualizam documentos, use** as categorias de menu padrão, como Arquivo, Editar, Exibir, Ferramentas e Ajuda. Isso torna os itens de menu comuns previsíveis e mais fáceis de encontrar.
+-   **Para outros tipos de programas,** considere organizar seus comandos e opções em categorias naturais mais úteis com base na finalidade do programa e na maneira como os usuários pensam sobre suas tarefas e metas. Não se sinta obrigado a usar a organização do menu padrão se ela não for adequada para seu programa.
+-   **Se você optar por usar categorias de menu não padrão, deverá escolher bons nomes de categoria.** Para obter mais informações, consulte a [seção Rótulos.](#labels)
+-   **Prefira categorias de menu orientadas a tarefas em vez de categorias genéricas.** As categorias orientadas a tarefas facilitam a encontrar itens de menu.
 
-![captura de tela da barra de menus com RIP, gravação e sincronização ](images/cmd-menus-image10.png)
+![captura de tela da barra de menus com ondulação, gravar e sincronizar ](images/cmd-menus-image10.png)
 
 Neste exemplo, o Windows Media Player usa categorias de menu orientadas a tarefas.
 
--   **Evite categorias de menu com apenas um ou dois itens de menu.** Se for sensato, consolide com outras categorias de menu, talvez usando um submenu.
+-   **Evite categorias de menu com apenas um ou dois itens de menu.** Se for razoável, consolide com outras categorias de menu, talvez usando um submenu.
 -   **Considere colocar o mesmo item de menu em várias categorias somente se:**
     -   O item de menu pertence logicamente a várias categorias de menu.
-    -   Você tem dados mostrando que os usuários têm dificuldade para localizar o item em uma única categoria de menu.
-    -   Você tem apenas um ou dois itens de menu de difícil localização em várias categorias.
--   **Não coloque itens de menu diferentes que usem o mesmo nome em várias categorias.** Por exemplo, não têm itens de menu de opções diferentes em várias categorias.
-    -   **Exceção:** O padrão de menu da guia pode ter opções e itens de menu de ajuda diferentes em cada menu de guia.
+    -   Você tem dados mostrando que os usuários têm problemas para localizar o item em uma única categoria de menu.
+    -   Você tem apenas um ou dois itens de menu difíceis de encontrar em várias categorias.
+-   **Não coloque itens de menu diferentes que usam o mesmo nome em várias categorias.** Por exemplo, não há itens de menu Opções diferentes em várias categorias.
+    -   **Exceção:** O padrão de menu guia pode ter diferentes itens de menu Opções e Ajuda em cada menu de guia.
 
-![captura de tela de menus guia com itens de menu repetidos ](images/cmd-menus-image11.png)
+![captura de tela de menus de tabulação com itens de menu repetidos ](images/cmd-menus-image11.png)
 
-Neste exemplo, o Windows Media Player tem opções e itens de menu de ajuda em cada menu de guia.
+Neste exemplo, o Windows Media Player tem itens de menu Opções e Ajuda em cada menu de guia.
 
-### <a name="menu-item-organization-and-order"></a>Ordem e organização do item de menu
+### <a name="menu-item-organization-and-order"></a>Organização e ordem do item de menu
 
 -   **Organize os itens de menu em grupos de sete ou menos itens fortemente relacionados.** Para isso, os submenus contam como um único item de menu no menu pai.
--   **Não coloque mais de 25 itens em um único nível de um menu** (não contando submenus).
+-   **Não coloque mais de 25 itens** em um único nível de um menu (sem contar submenus).
 -   **Coloque separadores entre os grupos dentro de um menu.** Um separador é uma única linha que abrange a largura do menu.
--   **Em um menu, coloque os grupos em sua ordem lógica.** Se não houver nenhuma ordem lógica, coloque os grupos usados com mais frequência primeiro.
--   **Dentro de um grupo, coloque os itens em sua ordem lógica.** Se não houver nenhuma ordem lógica, coloque os itens mais comumente usados primeiro. Coloque itens numéricos (como porcentagens de zoom) em ordem numérica.
+-   **Em um menu, coloque os grupos em sua ordem lógica.** Se não houver nenhuma ordem lógica, coloque os grupos mais usados primeiro.
+-   **Em um grupo, coloque os itens em sua ordem lógica.** Se não houver nenhuma ordem lógica, coloque os itens mais usados primeiro. Coloque itens numéricos (como percentuais de zoom) em ordem numérica.
 
 ### <a name="submenus"></a>Submenus
 
--   **Evite usar submenus desnecessariamente.** Os submenus exigem mais esforço físico para serem usados e geralmente tornam os itens de menu mais difíceis de localizar.
--   **Não coloque itens de menu usados com frequência em um submenu.** Isso tornaria o uso ineficiente desses comandos. No entanto, você pode colocar comandos usados com frequência em um submenu se eles normalmente são acessados mais diretamente, como com uma barra de ferramentas.
+-   **Evite usar submenus desnecessariamente.** Os submenus exigem mais esforço físico para usar e geralmente dificultam a localização dos itens de menu.
+-   **Não coloque itens de menu usados com frequência em um submenu.** Isso faria com que o uso desses comandos fosse ineficiente. No entanto, você pode colocar comandos usados com frequência em um submenu se eles normalmente são acessados mais diretamente, como com uma barra de ferramentas.
 -   **Considere usar um submenu se:**
-    -   Fazer isso simplifica o menu pai porque ele tem muitos itens (20 ou mais), ou o submenu faz parte de um grupo com mais de sete itens.
+    -   Isso simplifica o menu pai porque ele tem muitos itens (20 ou mais) ou o submenu faz parte de um grupo de mais de sete itens.
     -   Os itens no submenu são usados com menos frequência do que aqueles no menu pai.
     -   O submenu teria três ou mais itens.
-    -   Há três ou mais comandos que começam com a mesma palavra. Nesse caso, use essa palavra como o rótulo do submenu.
+    -   Há três ou mais comandos que começam com a mesma palavra. Nesse caso, use essa palavra como o rótulo de submenu.
 
-![captura de tela do menu ' novo ' com quatro itens de submenu ](images/cmd-menus-image12.png)
+![captura de tela do menu "novo" com quatro itens de submenu ](images/cmd-menus-image12.png)
 
-Neste exemplo, o novo submenu substitui comandos separados para nova mensagem de email, nova mensagem de notícias, nova pasta e novo contato.
+Neste exemplo, o submenu Novo substitui comandos separados para Nova mensagem de email, Nova mensagem de notícias, Nova pasta e Novo contato.
 
--   **Use no máximo três níveis de menus.** Ou seja, você pode ter um menu principal e, no máximo, dois níveis de submenus. Dois níveis de submenus devem ser raros.
+-   **Use no máximo três níveis de menus.** Ou seja, você pode ter um menu primário e, no máximo, dois níveis de submenus. Dois níveis de submenus devem ser raros.
 
 ### <a name="presentation"></a>Apresentação
 
--   **Desabilite os itens de menu que não se aplicam ao contexto atual,** em vez de removê-los. Isso torna o conteúdo da barra de menus estável e mais fácil de encontrar. **Exceções:**
-    -   Para categorias de menu contextual, **remova em vez de Desabilitar itens de menu de contexto que não se aplicam ao contexto atual.** Uma categoria de menu é contextual quando é exibida somente para modos específicos, como quando um determinado tipo de objeto é selecionado. Para obter detalhes, consulte as diretrizes [remover versus desabilitar](#context-menus) para menus de contexto.
-    -   Se a determinação de quando um item de menu deve ser desabilitado causar problemas de desempenho perceptíveis, deixe o item de menu ativo e, se necessário, terá sua seleção resultante de uma mensagem de erro.
+-   **Desabilite itens de menu que não se aplicam ao contexto atual, em** vez de removê-los. Isso torna o conteúdo da barra de menus estável e mais fácil de encontrar. **Exceções:**
+    -   Para categorias de menu contextual, remova em vez de desabilitar itens de menu de contexto **que não se aplicam ao contexto atual.** Uma categoria de menu é contextual quando é exibida somente para modos específicos, como quando um determinado tipo de objeto é selecionado. Para obter detalhes, consulte [remover versus desabilitar diretrizes](#context-menus) para menus de contexto.
+    -   Se determinar quando um item de menu deve ser desabilitado causar problemas de desempenho perceptíveis, deixe o item de menu ativo e, se necessário, sua seleção resultará em uma mensagem de erro.
 
-### <a name="tab-menus"></a>Menus de guia
+### <a name="tab-menus"></a>Menus de tabulação
 
--   **Cada menu de guia pode ter opções específicas de contexto e itens de menu da ajuda.** Isso é diferente de todos os outros padrões de menu. Cada guia é usada para um conjunto dedicado de tarefas, portanto, qualquer redundância entre menus de guia não é confusa.
+-   **Cada menu de guia pode ter itens de menu Opções e Ajuda específicos do contexto.** Isso é diferente de todos os outros padrões de menu. Cada guia é usada para um conjunto dedicado de tarefas, portanto, qualquer redundância entre menus de tabulação não é confusa.
 
 ### <a name="context-menus"></a>Menus de contexto
 
--   **Use menus de contexto somente para comandos e opções contextuais.** Os itens de menu devem ser aplicados somente ao objeto ou região da janela selecionada (ou clicado), não o programa inteiro.
--   **Não torne os comandos disponíveis somente por meio de menus de contexto.** Como as teclas de atalho, os menus de contexto são meios alternativos de executar comandos e escolher opções. Por exemplo, um comando de propriedades também está disponível por meio da barra de menus ou da tecla de acesso Alt + Enter.
+-   **Use menus de contexto somente para comandos contextuais e opções.** Os itens de menu devem ser aplicados somente ao objeto selecionado (ou clicado) ou à região da janela, não ao programa inteiro.
+-   **Não disponibiliza comandos somente por meio de menus de contexto.** Assim como as teclas de atalho, os menus de contexto são meios alternativos de executar comandos e escolher opções. Por exemplo, um comando de propriedades também está disponível por meio da barra de menus ou da tecla de acesso Alt + Enter.
 -   **Forneça menus de contexto para todos os objetos e regiões de janela** que se beneficiam de um pequeno conjunto de comandos e opções contextuais. Muitos usuários clicam com o botão direito do mouse regularmente e esperam encontrar menus de contexto em qualquer lugar.
 -   **Considere usar um botão de seta suspensa menu para menus de contexto direcionados a todos os usuários.** Normalmente, os menus de contexto são adequados para comandos e opções direcionadas a usuários avançados. No entanto, você pode usar um botão suspenso de menu nos casos em que os menus de contexto são a melhor opção de menu e você precisa direcionar todos os usuários.
 
@@ -284,7 +284,7 @@ Para obter mais informações e exemplos, consulte [ícones](vis-icons.md).
 
 ![captura de tela de itens de menu com chaves de acesso numéricos ](images/cmd-menus-image14.png)
 
-Neste exemplo, o programa de pintura no Windows atribui chaves de acesso numérico a arquivos usados recentemente.
+neste exemplo, o programa Paint no Windows atribui chaves de acesso numérico a arquivos usados recentemente.
 
 -   **Atribua chaves de acesso exclusivas dentro de um nível de menu.** Você pode reutilizar as chaves de acesso em diferentes níveis de menu.
 -   **Torne as chaves de acesso fáceis de localizar:**
@@ -304,19 +304,19 @@ Para obter mais diretrizes e exemplos, consulte [teclado](inter-keyboard.md).
 -   **Atribua teclas de atalho para os itens de menu usados com mais frequência.** Itens de menu usados raramente não precisam de teclas de atalho porque os usuários podem usar chaves de acesso em vez disso.
 -   **Não crie uma tecla de atalho a única maneira de executar uma tarefa.** Os usuários também devem ser capazes de usar o mouse ou o teclado com teclas de tabulação, seta e acesso.
 -   **Para as teclas de atalho conhecidas, use as atribuições padrão.**
--   **Não atribua diferentes significados a teclas de atalho bem conhecidas.** Como eles são memorizados, os significados inconsistentes para atalhos bem conhecidos são frustrantes e sujeitos a erros. Consulte teclas de atalho do teclado do Windows para obter as teclas de atalho bem conhecidas usadas por programas do Windows.
+-   **Não atribua diferentes significados a teclas de atalho bem conhecidas.** Como eles são memorizados, os significados inconsistentes para atalhos bem conhecidos são frustrantes e sujeitos a erros. consulte Windows teclas de atalho de teclado para as teclas de atalho conhecidas usadas por Windows programas.
 -   **Não tente atribuir teclas de atalho do programa em todo o sistema.** As teclas de atalho do programa terão efeito somente quando o seu programa tiver o foco de entrada.
 -   **Documente todas as teclas de atalho.** Isso ajuda os usuários a aprender as atribuições de teclas de atalho.
     -   **Exceção:** Não exibir as atribuições de teclas de atalho nos menus de contexto. Os menus de contexto não exibem as atribuições de tecla de atalho porque são otimizadas para eficiência.
 -   **Para atribuições de chave não padrão:**
     -   **Escolha teclas de atalho que não têm atribuições padrão.** Nunca reatribuir teclas de atalho padrão.
     -   **Use atribuições de chave não padrão consistentemente em todo o programa.** Não atribua significados diferentes em janelas diferentes.
-    -   **Se possível, escolha atribuições de chave mnemônica, especialmente** para comandos usados com frequência.
+    -   **Se possível, escolha atribuições de chave mnemônica,** especialmente para comandos usados com frequência.
     -   **Use chaves de função para comandos que têm um efeito** de pequena escala, como comandos que se aplicam ao objeto selecionado. Por exemplo, F2 renomeia o item selecionado.
     -   **Use combinações de teclas Ctrl para comandos** que têm um efeito em grande escala, como comandos que se aplicam a um documento inteiro. Por exemplo, Ctrl+S salva o documento atual.
     -   **Use combinações de teclas Shift para comandos que estendem ou complementam as ações da tecla de atalho padrão.** Por exemplo, a tecla de atalho Alt+Tab passa pelas janelas primárias abertas, enquanto Alt+Shift+Tab é um ciclo na ordem inversa. Da mesma forma, F1 exibe a Ajuda, enquanto Shift+F1 exibe a Ajuda contextitivo.
     -   **Não use os seguintes caracteres para teclas de atalho:** @ $ {} \[ \] \\  ~  \| ^ ' < >. Esses caracteres exigem combinações de teclas diferentes entre idiomas ou são específicos da localidade.
-    -   **Não use combinações Ctrl+Alt,** pois o Windows interpreta essa combinação em algumas versões de linguagem como uma chave AltGR, que gera caracteres alfanuméricos.
+    -   Não use combinações **Ctrl+Alt,** pois Windows essa combinação em algumas versões de linguagem como uma chave AltGR, que gera caracteres alfanuméricos.
 -   **Se o programa atribuir muitas teclas de atalho, forneça a capacidade de personalizar as atribuições.** Isso permite que os usuários reatribuam chaves de atalho conflitantes e migre de outros produtos. A maioria dos programas não atribui teclas de atalho suficientes para precisar desse recurso.
 
 Para obter mais diretrizes e atribuições de teclas de atalho padrão, consulte [Teclado](inter-keyboard.md).
@@ -416,7 +416,7 @@ Neste exemplo, a impressão... comando exibe uma caixa de diálogo de impressão
 
 **O uso adequado de reticências é importante para indicar que os usuários podem fazer mais escolhas antes de executar a ação ou até mesmo cancelar a ação inteiramente.** A indicação visual oferecida por uma elipse permite que os usuários explorem seu software sem medo.
 
-**Isso não significa que você deve usar uma elipse sempre que uma ação exibir outra janela** somente quando forem necessárias informações adicionais para executar a ação. Por exemplo, os comandos sobre, avançado, ajuda, opções, propriedades e configurações devem exibir outra janela quando clicados, mas não exigem informações adicionais do usuário. Portanto, eles não precisam de reticências.
+**Isso não significa que você deve usar uma elipse sempre que uma ação exibir outra janela** somente quando forem necessárias informações adicionais para executar a ação. por exemplo, os comandos sobre, avançado, ajuda, opções, propriedades e Configurações devem exibir outra janela quando clicados, mas não exigem informações adicionais do usuário. Portanto, eles não precisam de reticências.
 
 **No caso de ambiguidade (por exemplo, o rótulo de comando não tem um verbo), decida com base na ação do usuário mais provável.** Se a simples exibição da janela for uma ação comum, não use reticências.
 
@@ -483,7 +483,7 @@ No exemplo incorreto, o item de menu se baseia em sua tecnologia.
     -   **Personalizar** Para exibir um resumo das configurações de [personalização](glossary.md) comumente usadas.
     -   **Preferências** do Não use. Use as opções em vez disso.
     -   **Propriedades** do Para exibir a janela de propriedades de um objeto.
-    -   **Configurações** do Não use como um rótulo de menu. Use as opções em vez disso.
+    -   **Configurações** Não use como um rótulo de menu. Use as opções em vez disso.
 
 ### <a name="submenu-names"></a>Nomes de submenu
 

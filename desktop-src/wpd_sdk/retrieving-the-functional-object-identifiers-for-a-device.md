@@ -4,16 +4,16 @@ ms.assetid: 9a13071a-95a1-4330-92d5-11fa72a8f211
 title: Recuperando os identificadores de objeto funcional para um dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6a753324e24a6b78625a78b4128380288b6672f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93d0cc686a6997c10e26e3d83190503bba09fe15afc7f4e0cf75e297f0d905f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105815556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119262996"
 ---
 # <a name="retrieving-the-functional-object-identifiers-for-a-device"></a>Recuperando os identificadores de objeto funcional para um dispositivo
 
-Conforme observado no tópico [recuperando as categorias funcionais com suporte de um dispositivo](retrieving-the-functional-categories-supported-by-a-device.md) , os dispositivos portáteis do Windows podem dar suporte a uma ou mais categorias funcionais. Qualquer categoria funcional específica pode dar suporte a um ou mais objetos funcionais. Por exemplo, a categoria de armazenamento pode dar suporte a três objetos de armazenamento funcional, cada um dos quais é identificado por uma cadeia de caracteres de identificador exclusivo. O primeiro objeto de armazenamento pode ser identificado pela cadeia de caracteres "Storage1", o segundo pela cadeia de caracteres "Storage2" e o terceiro pela cadeia de caracteres "Storage3".
+conforme observado no tópico [recuperando as categorias funcionais com suporte de um dispositivo](retrieving-the-functional-categories-supported-by-a-device.md) , Windows dispositivos portáteis podem dar suporte a uma ou mais categorias funcionais. Qualquer categoria funcional específica pode dar suporte a um ou mais objetos funcionais. Por exemplo, a categoria de armazenamento pode dar suporte a três objetos de armazenamento funcional, cada um dos quais é identificado por uma cadeia de caracteres de identificador exclusivo. O primeiro objeto de armazenamento pode ser identificado pela cadeia de caracteres "Storage1", o segundo pela cadeia de caracteres "Storage2" e o terceiro pela cadeia de caracteres "Storage3".
 
 A função ListFunctionalObjects no módulo DeviceCapabilities. cpp demonstra a recuperação de tipos de conteúdo para as categorias funcionais com suporte de um dispositivo selecionado.
 

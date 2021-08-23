@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_SETVOLUME (VFW. h)
 description: A \_ mensagem SETVOLUME MCIWNDM define o nível de volume de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndSetVolume.
 ms.assetid: 04151588-b761-447a-9a57-808c034c3059
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_SETVOLUME
+- mensagem de MCIWNDM_SETVOLUME Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2215f8df3ea6f7b36b224318ebac68175ff9c265
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8c40d2c8b2c7c4cb309b5c6e5b21dcd29e6c8ee27b9ca8c97556cb14927a121
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119428536"
 ---
 # <a name="mciwndm_setvolume-message"></a>Mensagem do MCIWNDM \_ SETvolume
 

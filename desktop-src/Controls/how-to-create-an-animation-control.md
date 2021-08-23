@@ -4,34 +4,34 @@ description: Este tópico demonstra como criar um controle de animação.
 ms.assetid: 5852B636-F3D0-47A4-82F6-8BE570013E1B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d4ff190617996e42e6580b82311fb51f4248000
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8117d7c9393a828786532bd3d3fbfcf4f4eaaf6bb1bfdccdc5a2f97fa1c5cb38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119435816"
 ---
 # <a name="how-to-create-an-animation-control"></a>Como criar um controle de animação
 
-Este tópico demonstra como criar um controle de animação. O exemplo de código do C++ que o acompanha cria um controle de animação em uma caixa de diálogo. Ele posiciona o controle de animação abaixo de um controle especificado e define as dimensões do controle de animação com base nas dimensões de um quadro no clipe de Audio-Video intercalado (AVI).
+Este tópico demonstra como criar um controle de animação. O exemplo de código C++ que acompanha cria um controle de animação em uma caixa de diálogo. Ele posiciona o controle de animação abaixo de um controle especificado e define as dimensões do controle de animação com base nas dimensões de um quadro no clipe Audio-Video INTERcalado (AVI).
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 -   Arquivos AVI
 
 ## <a name="instructions"></a>Instruções
 
-### <a name="step-1-create-an-instance-of-the-animation-control"></a>Etapa 1: criar uma instância do controle de animação.
+### <a name="step-1-create-an-instance-of-the-animation-control"></a>Etapa 1: Criar uma instância do controle de animação.
 
-Use a macro [**animar \_ criar**](/windows/desktop/api/Commctrl/nf-commctrl-animate_create) para criar uma instância do controle animação.
+Use a [**macro Animar \_ Criar**](/windows/desktop/api/Commctrl/nf-commctrl-animate_create) para criar uma instância do controle de animação.
 
 
 ```C++
@@ -44,7 +44,7 @@ hwndAnim = Animate_Create(hwndDlg, IDC_ANIMATE,
 
 
 
-### <a name="step-2-position-the-animation-control"></a>Etapa 2: posicionar o controle de animação.
+### <a name="step-2-position-the-animation-control"></a>Etapa 2: Posiciona o controle de animação.
 
 Obter as coordenadas de tela do botão de controle especificado.
 
@@ -68,7 +68,7 @@ ScreenToClient(hwndDlg, &pt);
 
 
 
-Posicione o controle de animação abaixo do botão de controle especificado.
+Posiciona o controle de animação abaixo do botão de controle especificado.
 
 
 ```C++
@@ -80,9 +80,9 @@ SetWindowPos(hwndAnim, 0, pt.x, pt.y + 20,
 
 
 
-### <a name="step-3-open-the-avi-clip"></a>Etapa 3: abrir o clipe AVI.
+### <a name="step-3-open-the-avi-clip"></a>Etapa 3: Abra o clipe AVI.
 
-Chame a macro de [**animação \_ aberta**](/windows/desktop/api/Commctrl/nf-commctrl-animate_open) para abrir o clipe AVI e exibir o primeiro quadro no controle de animação. Chame a função de **janela** para tornar o controle de animação visível.
+Chame a [**macro Animar \_ Abrir**](/windows/desktop/api/Commctrl/nf-commctrl-animate_open) para abrir o clipe AVI e exibir o primeiro quadro no controle de animação. Chame a **função ShowWindow** para tornar o controle de animação visível.
 
 
 ```C++
@@ -151,7 +151,7 @@ HWND CreateAnimationCtrl(HWND hwndDlg, int nIDCtl)
 
 <dl> <dt>
 
-[Sobre os controles de animação](animation-control-overview.md)
+[Sobre controles de animação](animation-control-overview.md)
 </dt> <dt>
 
 [Referência de controle de animação](bumper-animation-animation-control-reference.md)
@@ -163,9 +163,9 @@ HWND CreateAnimationCtrl(HWND hwndDlg, int nIDCtl)
 [Animação](animation-control-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

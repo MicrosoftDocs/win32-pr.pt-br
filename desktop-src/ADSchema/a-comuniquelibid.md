@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f8360b9f6c720fe3ed86fd8da583441a185544b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b104e072b375b57de8f9ef18fd972c8b01f603a775fb98669f187d1f7ad45ffa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119327106"
 ---
 # <a name="com-unique-libid-attribute"></a>Atributo COM-Unique-LIBID
 
@@ -58,7 +58,7 @@ GUID de cadeia de caracteres de valor único LIBID para uma biblioteca de tipos.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -79,7 +79,7 @@ GUID de cadeia de caracteres de valor único LIBID para uma biblioteca de tipos.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -100,7 +100,7 @@ GUID de cadeia de caracteres de valor único LIBID para uma biblioteca de tipos.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -121,7 +121,7 @@ GUID de cadeia de caracteres de valor único LIBID para uma biblioteca de tipos.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -142,7 +142,7 @@ GUID de cadeia de caracteres de valor único LIBID para uma biblioteca de tipos.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -163,7 +163,7 @@ GUID de cadeia de caracteres de valor único LIBID para uma biblioteca de tipos.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |

@@ -83,7 +83,7 @@
                       href: forward-ovr.md
                     - name: Entregas
                       href: handoffs-ovr.md
-                    - name: Bloqueio
+                    - name: Bloquear
                       href: hold-ovr.md
                     - name: Parque
                       href: park-ovr.md
@@ -213,32 +213,32 @@
     - name: 'TAPI 2,2'
       href: tapi-2-2-start-page.md
       items:
-        - name: 'Visão geral da TAPI 2,2'
+        - name: Visão geral do TAPI 2.2
           href: tapi-2-2-overview.md
           items:
-            - name: Controle de versão da TAPI
+            - name: Versão da TAPI
               href: tapi-versioning.md
               items:
-                - name: 'TAPI 2,2'
+                - name: TAPI 2.2
                   href: tapi-2-2.md
-                - name: 'TAPI 2,1'
+                - name: TAPI 2.1
                   href: tapi-2-1.md
-                - name: 'TAPI 2,0'
+                - name: TAPI 2.0
                   href: tapi-2-0.md
-                - name: 'TAPI 1,5'
+                - name: TAPI 1.5
                   href: tapi-1-5.md
-                - name: 'TAPI 1,4'
+                - name: TAPI 1.4
                   href: tapi-1-4.md
-                - name: 'TAPI 1,3'
+                - name: TAPI 1.3
                   href: tapi-1-3.md
                 - name: Elementos TAPI por versão
                   href: tapi-elements-by-version.md
-                - name: Negociação de versão TAPI
+                - name: Negociação de versão do TAPI
                   href: tapi-version-negotiation.md
             - name: Acesso à sessão
               href: session-access.md
               items:
-                - name: Identificadores de chamada
+                - name: Alças de chamada
                   href: call-handles.md
             - name: Acesso ao dispositivo
               href: device-access.md
@@ -262,58 +262,58 @@
                       href: media-monitoring.md
                     - name: Monitoramento de dígitos
                       href: digit-monitoring.md
-                    - name: Monitoramento de Tom
+                    - name: Monitoramento de tom
                       href: tone-monitoring.md
                 - name: Controle de mídia
                   href: ./media-control.md
                 - name: Coleta de dígitos
                   href: digit-gathering.md
-                - name: Gerando dígitos de banda e tons
+                - name: Gerando dígitos e tons de inband
                   href: generating-inband-digits-and-tones.md
             - name: Controle do Call Center
               href: call-center-control.md
               items:
-                - name: Modelagem de um Call Center
+                - name: Modelagem de um call center
                   href: modeling-of-a-call-center.md
-                - name: Rádio
+                - name: Estações
                   href: stations.md
                 - name: Discagem preditiva
                   href: predictive-dialing.md
-                - name: Filas de chamadas e pontos de rota
+                - name: Chamar filas e pontos de rota
                   href: call-queues-and-route-points.md
-                - name: Monitoramento e controle do AD Agent
+                - name: Monitoramento e controle do agente ACD
                   href: acd-agent-monitoring-and-control.md
-                - name: Controle de status de estação
+                - name: Controle de status da estação
                   href: station-status-control.md
-                - name: Temporizador de estado de chamada
+                - name: Temporizador de Estado de Chamada
                   href: call-state-timer.md
-                - name: Temporizadores de eventos de mídia
+                - name: Temporizadores de Evento de Mídia
                   href: media-event-timers.md
-                - name: Resumos dos elementos de programação do Call Center
+                - name: Resumos de elementos de programação do call center
                   href: summaries-of-call-center-programming-elements.md
-            - name: Dispositivos de telefone
+            - name: Telefone Dispositivos
               href: phone-devices.md
               items:
-                - name: Elementos de dispositivo de telefone
+                - name: Telefone Elementos do dispositivo
                   href: phone-device-elements.md
                 - name: Inicialização e desligamento
                   href: initialization-and-shutdown.md
-                - name: Abrindo e fechando dispositivos de telefone
+                - name: Abrindo e fechando Telefone dispositivos
                   href: opening-and-closing-phone-devices.md
                   items:
                     - name: Modos de operação e privilégios
                       href: operating-modes-and-privileges.md
                     - name: IDs de dispositivo
                       href: device-ids.md
-                    - name: Fechando o dispositivo de telefone
+                    - name: Fechando o dispositivo Telefone dispositivo
                       href: closing-the-phone-device.md
                 - name: Dispositivos Hookswitch
                   href: hookswitch-devices.md
-                - name: Monitor
+                - name: Exibir
                   href: display.md
                 - name: Anel
                   href: ring.md
-                - name: Botões de telefone
+                - name: Telefone Botões
                   href: phone-buttons.md
                 - name: Lâmpadas
                   href: lamps.md
@@ -321,7 +321,7 @@
                   href: data-areas.md
                 - name: Status
                   href: status.md
-                - name: Funções de telefone de telefonia estendidas
+                - name: Funções de Telefone telefonia estendida
                   href: extended-telephony-phone-functions.md
                   items:
                     - name: Constantes de dados escalares
@@ -330,26 +330,26 @@
                       href: bit-flag-data-constants.md
                     - name: Funções e mensagens
                       href: functions-and-messages.md
-        - name: 'Referência TAPI 2,2'
+        - name: Referência do TAPI 2.2
           href: tapi-2-2-reference.md
           items:
-            - name: Referência de função rápida TAPI
+            - name: Referência de função rápida tapi
               href: tapi-quick-function-reference.md
               items:
-                - name: Referência de serviços de telefonia básicos
+                - name: Referência de Serviços de Telefonia Básica
                   href: basic-telephony-services-reference.md
                 - name: Referência de serviços de telefonia suplementares
                   href: supplementary-telephony-services-reference.md
                   items:
-                    - name: Funções de serviço de linha suplementar
+                    - name: Funções de serviço de linha suplementares
                       href: supplementary-line-service-functions.md
-                    - name: Funções de serviço de telefone suplementar
+                    - name: Funções de serviço Telefone suplementares
                       href: supplementary-phone-service-functions.md
-                - name: Referência de serviços de telefonia estendida
+                - name: Referência dos Serviços de Telefonia Estendida
                   href: extended-telephony-services-reference.md
-                - name: Referência de serviços de telefonia assistida
+                - name: Referência dos Serviços de Telefonia Assistida
                   href: assisted-telephony-services-reference.md
-            - name: Suporte a TAPI Unicode
+            - name: Suporte a Unicode tapi
               href: tapi-unicode-support.md
               items:
                 - name: Funções com versões Unicode (W)
@@ -359,14 +359,14 @@
             - name: Funções TAPI
               href: tapi-functions.md
               items:
-                - name: Funções de telefonia assistidas
+                - name: Funções de telefonia assistida
                   href: assisted-telephony-functions.md
                   items:
                     - name: tapiRequestDrop
                       href: /windows/desktop/api/Tapi/nf-tapi-tapirequestdrop
                     - name: tapiGetLocationInfo
                       href: /windows/desktop/api/Tapi/nf-tapi-tapigetlocationinfo
-                    - name: tapiRequestMakeCall
+                    - name: Tapirequestmakecall
                       href: /windows/desktop/api/Tapi/nf-tapi-tapirequestmakecall
                     - name: tapiRequestMediaCall
                       href: tapirequestmediacall.md
@@ -426,71 +426,71 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-lineaccept
                     - name: lineAddProvider
                       href: /windows/desktop/api/Tapi/nf-tapi-lineaddprovider
-                    - name: lineAddToConference
+                    - name: Lineaddtoconference
                       href: /windows/desktop/api/Tapi/nf-tapi-lineaddtoconference
-                    - name: lineAnswer
+                    - name: Lineanswer
                       href: /windows/desktop/api/Tapi/nf-tapi-lineanswer
                     - name: lineBlindTransfer
                       href: /windows/desktop/api/Tapi/nf-tapi-lineblindtransfer
                     - name: lineCallback
                       href: /windows/desktop/api/Tapi/nc-tapi-linecallback
-                    - name: lineClose
+                    - name: Lineclose
                       href: /windows/desktop/api/Tapi/nf-tapi-lineclose
                     - name: lineCompleteCall
                       href: /windows/desktop/api/Tapi/nf-tapi-linecompletecall
-                    - name: lineCompleteTransfer
+                    - name: Linecompletetransfer
                       href: /windows/desktop/api/Tapi/nf-tapi-linecompletetransfer
                     - name: lineConfigDialog
                       href: /windows/desktop/api/Tapi/nf-tapi-lineconfigdialog
-                    - name: lineConfigDialogEdit
+                    - name: Lineconfigdialogedit
                       href: /windows/desktop/api/Tapi/nf-tapi-lineconfigdialogedit
                     - name: lineConfigProvider
                       href: /windows/desktop/api/Tapi/nf-tapi-lineconfigprovider
-                    - name: lineDeallocateCall
+                    - name: Linedeallocatecall
                       href: /windows/desktop/api/Tapi/nf-tapi-linedeallocatecall
                     - name: lineDevSpecific
                       href: /windows/desktop/api/Tapi/nf-tapi-linedevspecific
                     - name: lineDevSpecificFeature
                       href: /windows/desktop/api/Tapi/nf-tapi-linedevspecificfeature
-                    - name: lineDial
+                    - name: Linedial
                       href: /windows/desktop/api/Tapi/nf-tapi-linedial
-                    - name: lineDrop
+                    - name: Linedrop
                       href: /windows/desktop/api/Tapi/nf-tapi-linedrop
-                    - name: lineForward
+                    - name: Lineforward
                       href: /windows/desktop/api/Tapi/nf-tapi-lineforward
                     - name: lineGatherDigits
                       href: /windows/desktop/api/Tapi/nf-tapi-linegatherdigits
-                    - name: lineGenerateDigits
+                    - name: Linegeneratedigits
                       href: /windows/desktop/api/Tapi/nf-tapi-linegeneratedigits
-                    - name: lineGenerateTone
+                    - name: Linegeneratetone
                       href: /windows/desktop/api/Tapi/nf-tapi-linegeneratetone
-                    - name: lineGetAddressCaps
+                    - name: Linegetaddresscaps
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetaddresscaps
                     - name: lineGetAddressID
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetaddressid
-                    - name: lineGetAddressStatus
+                    - name: Linegetaddressstatus
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetaddressstatus
                     - name: lineGetAppPriority
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetapppriority
-                    - name: lineGetCallInfo
+                    - name: Linegetcallinfo
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetcallinfo
-                    - name: lineGetCallStatus
+                    - name: Linegetcallstatus
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetcallstatus
                     - name: lineGetConfRelatedCalls
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetconfrelatedcalls
                     - name: lineGetCountry
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetcountry
-                    - name: lineGetDevCaps
+                    - name: Linegetdevcaps
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetdevcaps
-                    - name: lineGetDevConfig
+                    - name: Linegetdevconfig
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetdevconfig
                     - name: lineGetIcon
                       href: /windows/desktop/api/Tapi/nf-tapi-linegeticon
-                    - name: lineGetID
+                    - name: Linegetid
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetid
                     - name: lineGetLineDevStatus
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetlinedevstatus
-                    - name: lineGetMessage
+                    - name: Linegetmessage
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetmessage
                     - name: lineGetNewCalls
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetnewcalls
@@ -502,35 +502,35 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetrequest
                     - name: lineGetStatusMessages
                       href: /windows/desktop/api/Tapi/nf-tapi-linegetstatusmessages
-                    - name: lineGetTranslateCaps
+                    - name: Linegettranslatecaps
                       href: /windows/desktop/api/Tapi/nf-tapi-linegettranslatecaps
                     - name: lineHandoff
                       href: /windows/desktop/api/Tapi/nf-tapi-linehandoff
                     - name: lineHold
                       href: /windows/desktop/api/Tapi/nf-tapi-linehold
-                    - name: lineInitialize
+                    - name: Lineinitialize
                       href: /windows/desktop/api/Tapi/nf-tapi-lineinitialize
-                    - name: lineInitializeEx
+                    - name: Lineinitializeex
                       href: /windows/desktop/api/Tapi/nf-tapi-lineinitializeexa
-                    - name: lineMakeCall
+                    - name: Linemakecall
                       href: /windows/desktop/api/Tapi/nf-tapi-linemakecall
                     - name: lineMonitorDigits
                       href: /windows/desktop/api/Tapi/nf-tapi-linemonitordigits
-                    - name: lineMonitorMedia
+                    - name: Linemonitormedia
                       href: /windows/desktop/api/Tapi/nf-tapi-linemonitormedia
                     - name: lineMonitorTones
                       href: /windows/desktop/api/Tapi/nf-tapi-linemonitortones
-                    - name: lineNegotiateAPIVersion
+                    - name: Linenegotiateapiversion
                       href: /windows/desktop/api/Tapi/nf-tapi-linenegotiateapiversion
                     - name: lineNegotiateExtVersion
                       href: /windows/desktop/api/Tapi/nf-tapi-linenegotiateextversion
-                    - name: lineOpen
+                    - name: Lineopen
                       href: /windows/desktop/api/Tapi/nf-tapi-lineopen
                     - name: linePark
                       href: /windows/desktop/api/Tapi/nf-tapi-linepark
                     - name: linePickup
                       href: /windows/desktop/api/Tapi/nf-tapi-linepickup
-                    - name: linePrepareAddToConference
+                    - name: Lineprepareaddtoconference
                       href: /windows/desktop/api/Tapi/nf-tapi-lineprepareaddtoconference
                     - name: lineRedirect
                       href: /windows/desktop/api/Tapi/nf-tapi-lineredirect
@@ -562,7 +562,7 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetcalltreatment
                     - name: lineSetCurrentLocation
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetcurrentlocation
-                    - name: lineSetDevConfig
+                    - name: Linesetdevconfig
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetdevconfig
                     - name: lineSetLineDevStatus
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetlinedevstatus
@@ -570,25 +570,25 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetmediacontrol
                     - name: lineSetMediaMode
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetmediamode
-                    - name: lineSetNumRings
+                    - name: Linesetnumrings
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetnumrings
                     - name: lineSetStatusMessages
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetstatusmessages
-                    - name: lineSetTerminal
+                    - name: Linesetterminal
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetterminal
                     - name: lineSetTollList
                       href: /windows/desktop/api/Tapi/nf-tapi-linesettolllist
-                    - name: lineSetupConference
+                    - name: Linesetupconference
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetupconference
-                    - name: lineSetupTransfer
+                    - name: Linesetuptransfer
                       href: /windows/desktop/api/Tapi/nf-tapi-linesetuptransfer
-                    - name: lineShutdown
+                    - name: Lineshutdown
                       href: /windows/desktop/api/Tapi/nf-tapi-lineshutdown
-                    - name: lineSwapHold
+                    - name: Lineswaphold
                       href: /windows/desktop/api/Tapi/nf-tapi-lineswaphold
-                    - name: lineTranslateAddress
+                    - name: Linetranslateaddress
                       href: /windows/desktop/api/Tapi/nf-tapi-linetranslateaddress
-                    - name: lineTranslateDialog
+                    - name: Linetranslatedialog
                       href: /windows/desktop/api/Tapi/nf-tapi-linetranslatedialog
                     - name: lineUncompleteCall
                       href: /windows/desktop/api/Tapi/nf-tapi-lineuncompletecall
@@ -596,7 +596,7 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-lineunhold
                     - name: lineUnpark
                       href: /windows/desktop/api/Tapi/nf-tapi-lineunpark
-                - name: Funções de dispositivo de telefone
+                - name: Telefone Funções de dispositivo
                   href: phone-device-functions.md
                   items:
                     - name: phoneCallback
@@ -611,7 +611,7 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-phonegetbuttoninfo
                     - name: phoneGetData
                       href: /windows/desktop/api/Tapi/nf-tapi-phonegetdata
-                    - name: phoneGetDevCaps
+                    - name: Phonegetdevcaps
                       href: /windows/desktop/api/Tapi/nf-tapi-phonegetdevcaps
                     - name: phoneGetDisplay
                       href: /windows/desktop/api/Tapi/nf-tapi-phonegetdisplay
@@ -637,9 +637,9 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-phonegetvolume
                     - name: phoneInitialize
                       href: /windows/desktop/api/Tapi/nf-tapi-phoneinitialize
-                    - name: phoneInitializeEx
+                    - name: Phoneinitializeex
                       href: /windows/desktop/api/Tapi/nf-tapi-phoneinitializeexa
-                    - name: phoneNegotiateAPIVersion
+                    - name: Phonenegotiateapiversion
                       href: /windows/desktop/api/Tapi/nf-tapi-phonenegotiateapiversion
                     - name: phoneNegotiateExtVersion
                       href: /windows/desktop/api/Tapi/nf-tapi-phonenegotiateextversion
@@ -663,7 +663,7 @@
                       href: /windows/desktop/api/Tapi/nf-tapi-phonesetstatusmessages
                     - name: phoneSetVolume
                       href: /windows/desktop/api/Tapi/nf-tapi-phonesetvolume
-                    - name: phoneShutdown
+                    - name: Phoneshutdown
                       href: /windows/desktop/api/Tapi/nf-tapi-phoneshutdown
             - name: Estruturas TAPI
               href: tapi-structures.md
@@ -705,24 +705,24 @@
                       href: /windows/win32/api/Tapi/ns-tapi-linequeueinfo
                     - name: LINEQUEUELIST
                       href: /windows/win32/api/Tapi/ns-tapi-linequeuelist
-                - name: Estruturas de dispositivos de linha
+                - name: Estruturas de dispositivo de linha
                   href: line-device-structures.md
                   items:
-                    - name: LINEADDRESSCAPS
+                    - name: Lineaddresscaps
                       href: /windows/win32/api/Tapi/ns-tapi-lineaddresscaps
-                    - name: LINEADDRESSSTATUS
+                    - name: Lineaddressstatus
                       href: /windows/win32/api/Tapi/ns-tapi-lineaddressstatus
                     - name: LINEAPPINFO
                       href: /windows/win32/api/Tapi/ns-tapi-lineappinfo
                     - name: LINECALLHUBTRACKINGINFO
                       href: /windows/win32/api/Tapi/ns-tapi-linecallhubtrackinginfo
-                    - name: LINECALLINFO
+                    - name: Linecallinfo
                       href: /windows/win32/api/Tapi/ns-tapi-linecallinfo
                     - name: LINECALLLIST
                       href: /windows/win32/api/Tapi/ns-tapi-linecalllist
-                    - name: LINECALLPARAMS
+                    - name: Linecallparams
                       href: /windows/win32/api/Tapi/ns-tapi-linecallparams
-                    - name: LINECALLSTATUS
+                    - name: Linecallstatus
                       href: /windows/win32/api/Tapi/ns-tapi-linecallstatus
                     - name: LINECALLTREATMENTENTRY
                       href: /windows/win32/api/Tapi/ns-tapi-linecalltreatmententry
@@ -732,23 +732,23 @@
                       href: /windows/win32/api/Tapi/ns-tapi-linecountryentry
                     - name: LINECOUNTRYLIST
                       href: /windows/win32/api/Tapi/ns-tapi-linecountrylist
-                    - name: LINEDEVCAPS
+                    - name: Linedevcaps
                       href: /windows/win32/api/Tapi/ns-tapi-linedevcaps
-                    - name: LINEDEVSTATUS
+                    - name: Linedevstatus
                       href: /windows/win32/api/Tapi/ns-tapi-linedevstatus
                     - name: LINEDIALPARAMS
                       href: /windows/win32/api/Tapi/ns-tapi-linedialparams
                     - name: LINEEXTENSIONID
                       href: /windows/win32/api/Tapi/ns-tapi-lineextensionid
-                    - name: LINEFORWARD
+                    - name: Lineforward
                       href: /windows/win32/api/Tapi/ns-tapi-lineforward
                     - name: LINEFORWARDLIST
                       href: /windows/win32/api/Tapi/ns-tapi-lineforwardlist
-                    - name: LINEGENERATETONE
+                    - name: Linegeneratetone
                       href: /windows/win32/api/Tapi/ns-tapi-linegeneratetone
                     - name: LINEINITIALIZEEXPARAMS
                       href: /windows/win32/api/Tapi/ns-tapi-lineinitializeexparams
-                    - name: LINELOCATIONENTRY
+                    - name: Linelocationentry
                       href: /windows/win32/api/Tapi/ns-tapi-linelocationentry
                     - name: LINEMEDIACONTROLCALLSTATE
                       href: /windows/win32/api/Tapi/ns-tapi-linemediacontrolcallstate
@@ -776,12 +776,12 @@
                       href: /windows/win32/api/Tapi/ns-tapi-linetranslatecaps
                     - name: LINETRANSLATEOUTPUT
                       href: /windows/win32/api/Tapi/ns-tapi-linetranslateoutput
-                - name: Estruturas de dispositivo de telefone
+                - name: Telefone Estruturas de dispositivo
                   href: phone-device-structures.md
                   items:
                     - name: PHONEBUTTONINFO
                       href: /windows/win32/api/Tapi/ns-tapi-phonebuttoninfo
-                    - name: PHONECAPS
+                    - name: Phonecaps
                       href: /windows/win32/api/Tapi/ns-tapi-phonecaps
                     - name: PHONEEXTENSIONID
                       href: /windows/win32/api/Tapi/ns-tapi-phoneextensionid
@@ -791,12 +791,12 @@
                       href: /windows/win32/api/Tapi/ns-tapi-phonemessage
                     - name: PHONESTATUS
                       href: /windows/win32/api/Tapi/ns-tapi-phonestatus
-                    - name: VARSTRING
+                    - name: Varstring
                       href: /windows/win32/api/Tapi/ns-tapi-varstring
             - name: Mensagens TAPI
               href: tapi-messages.md
               items:
-                - name: Mensagens de telefonia assistidas
+                - name: Mensagens de telefonia assistida
                   href: assisted-telephony-messages.md
                   items:
                     - name: TAPI_REPLY
@@ -825,26 +825,26 @@
                   items:
                     - name: TAPIERROR_FORMATMESSAGE
                       href: /windows/desktop/api/Tapi/nf-tapi-tapierror_formatmessage
-                - name: Mensagens do dispositivo de linha
+                - name: Mensagens de dispositivo de linha
                   href: line-device-messages.md
                   items:
-                    - name: LINE_ADDRESSSTATE
+                    - name: Line_addressstate
                       href: line-addressstate.md
                     - name: LINE_APPNEWCALL
                       href: line-appnewcall.md
                     - name: LINE_APPNEWCALLHUB
                       href: line-appnewcallhub.md
-                    - name: LINE_CALLINFO
+                    - name: Line_callinfo
                       href: line-callinfo.md
                     - name: LINE_CALLHUBCLOSE
                       href: line-callhubclose.md
-                    - name: LINE_CALLSTATE
+                    - name: Line_callstate
                       href: line-callstate.md
-                    - name: LINE_CLOSE
+                    - name: Line_close
                       href: line-close.md
                     - name: LINE_CREATE
                       href: line-create.md
-                    - name: LINE_DEVSPECIFIC
+                    - name: Line_devspecific
                       href: line-devspecific.md
                     - name: LINE_DEVSPECIFICEX
                       href: line-devspecificex.md
@@ -852,28 +852,28 @@
                       href: line-devspecificfeature.md
                     - name: LINE_GATHERDIGITS
                       href: line-gatherdigits.md
-                    - name: LINE_GENERATE
+                    - name: Line_generate
                       href: line-generate.md
-                    - name: LINE_LINEDEVSTATE
+                    - name: Line_linedevstate
                       href: line-linedevstate.md
-                    - name: LINE_MONITORDIGITS
+                    - name: Line_monitordigits
                       href: line-monitordigits.md
-                    - name: LINE_MONITORMEDIA
+                    - name: Line_monitormedia
                       href: line-monitormedia.md
                     - name: LINE_MONITORTONE
                       href: line-monitortone.md
                     - name: LINE_REMOVE
                       href: line-remove.md
-                    - name: LINE_REPLY
+                    - name: Line_reply
                       href: line-reply.md
                     - name: LINE_REQUEST
                       href: line-request.md
-                - name: Mensagens do dispositivo de telefone
+                - name: Telefone Mensagens do dispositivo
                   href: phone-device-messages.md
                   items:
                     - name: PHONE_BUTTON
                       href: phone-button.md
-                    - name: PHONE_CLOSE
+                    - name: Phone_close
                       href: phone-close.md
                     - name: PHONE_CREATE
                       href: phone-create.md
@@ -883,12 +883,12 @@
                       href: phone-remove.md
                     - name: PHONE_REPLY
                       href: phone-reply.md
-                    - name: PHONE_STATE
+                    - name: Phone_state
                       href: phone-state.md
             - name: Constantes TAPI
               href: tapi-constants.md
               items:
-                - name: Constantes de Call Center
+                - name: Constantes do Call Center
                   href: call-center-constants.md
                   items:
                     - name: LINEAGENTFEATURE_ constantes
@@ -1026,7 +1026,7 @@
                       href: linetranslateresult--constants.md
                     - name: LINETSPIOPTION_ constantes
                       href: linetspioption--constants.md
-                - name: Constantes de dispositivo de telefone
+                - name: Telefone Constantes do dispositivo
                   href: phone-device-constants.md
                   items:
                     - name: PHONEBUTTONFUNCTION_ constantes
@@ -1060,63 +1060,63 @@
             - name: Classes de dispositivo TAPI
               href: tapi-device-classes.md
               items:
-                - name: Comentários
+                - name: Comunicação
                   href: comm.md
-                - name: comm/datamodeto
+                - name: comm/datamodem
                   href: comm-datamodem.md
-                - name: comm/datamodea/conexão
+                - name: comm/datamodem/dialin
                   href: comm-datamodem-dialin.md
-                - name: comm/datamodea/dialout
+                - name: comm/datamodem/dialout
                   href: comm-datamodem-dialout.md
-                - name: comm/datamodeling/PortName
+                - name: comm/datamodem/portname
                   href: comm-datamodem-portname.md
-                - name: onda/entrada
+                - name: wave/in
                   href: wave-in.md
-                - name: Wave/saída
+                - name: wave/out
                   href: wave-out.md
-                - name: Wave/entrada/saída
+                - name: wave/in/out
                   href: wave-in-out.md
-                - name: MIDI/in
+                - name: midi/in
                   href: midi-in.md
-                - name: MIDI/out
+                - name: midi/out
                   href: midi-out.md
-                - name: TAPI/linha
+                - name: tapi/line
                   href: tapi-line.md
-                - name: TAPI/telefone
+                - name: tapi/phone
                   href: tapi-phone.md
-                - name: recepção
+                - name: Ndis
                   href: ndis.md
-                - name: TAPI/terminal
+                - name: tapi/terminal
                   href: tapi-terminal.md
-    - name: 'TAPI 3,1'
+    - name: TAPI 3.1
       href: tapi-3-1-start-page.md
       items:
-        - name: 'Visão geral da TAPI 3,1'
+        - name: Visão geral do TAPI 3.1
           href: tapi-3-1-overview.md
           items:
-            - name: 'Requisitos de TAPI 3,1'
+            - name: Requisitos do TAPI 3.1
               href: 3-1-requirements.md
             - name: What's New
               href: what-s-new.md
         - name: Controles de chamada e mídia
           href: call-and-media-controls.md
           items:
-            - name: Sobre controles de chamada e de mídia
+            - name: Sobre controles de chamada e mídia
               href: about-call-and-media-controls.md
               items:
                 - name: Objeto TAPI
                   href: tapi-object.md
-                - name: Objeto de endereço
+                - name: Objeto Address
                   href: address-object.md
-                - name: Objeto terminal
+                - name: Objeto Terminal
                   href: terminal-object.md
                   items:
                     - name: Terminais de arquivo
                       href: file-terminals.md
                       items:
-                        - name: Terminal de reprodução de arquivos de terminal e gravação de arquivos
+                        - name: Terminal de reprodução de arquivo e terminal de gravação de arquivo
                           href: file-playback-terminal-and-file-recording-terminal.md
-                        - name: Acompanhar terminais
+                        - name: Rastrear terminais
                           href: track-terminals.md
                     - name: Terminais multitrack
                       href: multitrack-terminals.md
@@ -1125,13 +1125,13 @@
                           href: about-multitrack-terminals.md
                         - name: Mecanismo de seleção de terminal padrão
                           href: default-terminal-selection-mechanism.md
-                        - name: Seleção de terminal manual
+                        - name: Seleção manual de terminal
                           href: manual-terminal-selection.md
-                    - name: Terminais conectáveis
+                    - name: Terminais que podem ser conectados
                       href: pluggable-terminals.md
-                - name: Objeto de chamada
+                - name: Objeto Call
                   href: call-object.md
-                - name: Controle de telefone e o objeto de telefone
+                - name: Telefone Controle e o objeto Telefone objeto
                   href: phone-control-and-the-phone-object.md
                 - name: Objeto CallHub
                   href: callhub-object.md
@@ -1139,55 +1139,55 @@
                   href: stream-objects.md
                 - name: Eventos
                   href: events.md
-                - name: Objeto de solicitação
+                - name: Objeto Request
                   href: request-object.md
-                - name: Mapeador de expedição
+                - name: Dispatch Mapper
                   href: dispatch-mapper.md
-                - name: Interfaces Provider-Specific
+                - name: interfaces Provider-Specific dados
                   href: provider-specific-interfaces.md
-            - name: Usando controles de chamada e de mídia
+            - name: Usando controles de chamada e mídia
               href: using-call-and-media-controls.md
               items:
                 - name: Bibliotecas necessárias
                   href: libraries-required.md
-                - name: Dicas e dicas
+                - name: Dicas e Dicas
                   href: hints-and-tips.md
                 - name: Usando terminais de arquivo
                   href: using-file-terminals.md
                   items:
                     - name: Reprodução simples
                       href: simple-playback.md
-                    - name: Reprodução de Track-Controlled
+                    - name: Track-Controlled reprodução
                       href: track-controlled-playback.md
                     - name: Registro simples
                       href: simple-record.md
-                    - name: Registro de Track-Controlled
+                    - name: Track-Controlled registro
                       href: track-controlled-record.md
                 - name: Usando terminais multitrack e o mecanismo de seleção padrão
                   href: using-multitrack-terminals-and-the-default-selection-mechanism.md
-                - name: Registro de terminal conectável
+                - name: Registro de terminal que pode ser conectado
                   href: pluggable-terminal-registration.md
                   items:
                     - name: Entradas do Registro
                       href: registry-entries.md
-                    - name: Registrar um terminal conectável
+                    - name: Registrar um terminal que pode ser conectado
                       href: register-a-pluggable-terminal.md
-                    - name: Cancelar o registro de um terminal conectável
+                    - name: Não registro de um terminal plugável
                       href: unregister-a-pluggable-terminal.md
-                    - name: Registrando para eventos de terminal conectável
+                    - name: Registrando para eventos de terminal plug-able
                       href: registering-for-pluggable-terminal-events.md
-                - name: Telefone e endereço de eventos específicos do dispositivo
+                - name: Telefone e tratar eventos específicos do dispositivo
                   href: phone-and-address-device-specific-events.md
                 - name: Exemplos de código
                   href: code-snippets.md
                   items:
-                    - name: Inicializar a TAPI
+                    - name: Inicializar TAPI
                       href: initialize-tapi.md
                     - name: Selecionar um endereço
                       href: select-an-address.md
                     - name: Registrar eventos
                       href: register-events.md
-                    - name: Selecionar um terminal
+                    - name: Selecionar um Terminal
                       href: select-a-terminal.md
                     - name: Fazer uma chamada
                       href: make-a-call.md
@@ -1197,23 +1197,23 @@
                       href: create-a-simple-conference.md
                     - name: Transferir uma chamada
                       href: transfer-a-call.md
-            - name: Referência de controles de chamada e de mídia
+            - name: Referência de controles de mídia e chamada
               href: call-and-media-controls-reference.md
               items:
-                - name: Referência rápida de controles de mídia e chamada
+                - name: Referência rápida de controles de chamada e mídia
                   href: call-and-media-controls-quick-reference.md
                   items:
                     - name: Interfaces de objeto TAPI
                       href: tapi-object-interfaces.md
                     - name: Interfaces de objeto de endereço
                       href: address-object-interfaces.md
-                    - name: Interfaces de objeto de terminal
+                    - name: Interfaces de objeto terminal
                       href: terminal-object-interfaces.md
-                    - name: Interfaces de objeto de chamada
+                    - name: Chamar interfaces de objeto
                       href: call-object-interfaces.md
-                    - name: Interfaces de objeto de telefone
+                    - name: Telefone Interfaces de objeto
                       href: phone-object-interfaces.md
-                    - name: Interfaces MSP IPConf
+                    - name: IPConf MSP Interfaces
                       href: ipconf-msp-interfaces.md
                     - name: Interfaces de objeto CallHub
                       href: callhub-object-interfaces.md
@@ -1223,7 +1223,7 @@
                       href: stand-alone-objects.md
                     - name: Interfaces de evento
                       href: event-interfaces.md
-                - name: Constantes de controles de chamada e de mídia
+                - name: Constantes de controles de chamada e mídia
                   href: call-and-media-controls-constants.md
                   items:
                     - name: LINEADDRESSTYPE_ constantes
@@ -1236,9 +1236,9 @@
                       href: tapimediatype--constants.md
                     - name: TAPIPROTOCOL_ constantes
                       href: tapiprotocol--constants.md
-                    - name: Classe terminal
+                    - name: Classe Terminal
                       href: terminal-class.md
-                - name: Enumerações de controles de chamada e de mídia
+                - name: Enumerações de controles de chamada e mídia
                   href: call-and-media-controls-enumerations.md
                   items:
                     - name: ADDRESS_CAPABILITY
@@ -1781,7 +1781,7 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itbasiccallcontrol-blindtransfer
                         - name: Método de conferência
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itbasiccallcontrol-conference
-                        - name: Método Connect
+                        - name: Conexão Forma
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itbasiccallcontrol-connect
                         - name: Método de discagem
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itbasiccallcontrol-dial
@@ -1902,31 +1902,31 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallingcard-get_options
                         - name: Método de get_PermanentCardID
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallingcard-get_permanentcardid
-                        - name: Método de get_SameAreaDialingRule
+                        - name: Get_SameAreaDialingRule método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallingcard-get_sameareadialingrule
                     - name: ITCallMediaEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itcallmediaevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallmediaevent-get_call
-                        - name: Método de get_Cause
+                        - name: Get_Cause método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallmediaevent-get_cause
-                        - name: Método de get_Error
+                        - name: Get_Error método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallmediaevent-get_error
-                        - name: Método de get_Event
+                        - name: Get_Event método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallmediaevent-get_event
-                        - name: Método de get_Stream
+                        - name: Get_Stream método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallmediaevent-get_stream
-                        - name: Método de get_Terminal
+                        - name: Get_Terminal método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallmediaevent-get_terminal
                     - name: ITCallNotificationEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itcallnotificationevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallnotificationevent-get_call
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallnotificationevent-get_callbackinstance
-                        - name: Método de get_Event
+                        - name: Get_Event método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallnotificationevent-get_event
                     - name: ITCallQualityControl
                       href: itcallqualitycontrol.md
@@ -1940,100 +1940,100 @@
                     - name: ITCallStateEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itcallstateevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallstateevent-get_call
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallstateevent-get_callbackinstance
-                        - name: Método de get_Cause
+                        - name: Get_Cause método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallstateevent-get_cause
-                        - name: Método de get_State
+                        - name: Get_State método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcallstateevent-get_state
                     - name: ITCollection
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itcollection
                       items:
-                        - name: Método de get__NewEnum
+                        - name: Get__NewEnum método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcollection-get__newenum
-                        - name: Método de get_Count
+                        - name: Get_Count método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcollection-get_count
-                        - name: Método de get_Item
+                        - name: Get_Item método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itcollection-get_item
                     - name: ITCollection2
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-itcollection2
                       items:
                         - name: Adicionar método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcollection2-add
-                        - name: Remover método
+                        - name: Método Remove
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcollection2-remove
                     - name: ITCustomTone
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-itcustomtone
                       items:
-                        - name: Método de get_CadenceOff
+                        - name: Get_CadenceOff método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-get_cadenceoff
-                        - name: Método de get_CadenceOn
+                        - name: Get_CadenceOn método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-get_cadenceon
-                        - name: Método de get_Frequency
+                        - name: Get_Frequency método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-get_frequency
-                        - name: Método de get_Volume
+                        - name: Get_Volume método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-get_volume
-                        - name: Método de put_CadenceOff
+                        - name: Put_CadenceOff método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-put_cadenceoff
-                        - name: Método de put_CadenceOn
+                        - name: Put_CadenceOn método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-put_cadenceon
-                        - name: Método de put_Frequency
+                        - name: Put_Frequency método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-put_frequency
-                        - name: Método de put_Volume
+                        - name: Put_Volume método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itcustomtone-put_volume
                     - name: ITDetectTone
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-itdetecttone
                       items:
-                        - name: Método de get_AppSpecific
+                        - name: Get_AppSpecific método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdetecttone-get_appspecific
-                        - name: Método de get_Duration
+                        - name: Get_Duration método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdetecttone-get_duration
-                        - name: Método de get_Frequency
+                        - name: Get_Frequency método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdetecttone-get_frequency
-                        - name: Método de put_AppSpecific
+                        - name: Put_AppSpecific método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdetecttone-put_appspecific
-                        - name: Método de put_Duration
+                        - name: Put_Duration método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdetecttone-put_duration
-                        - name: Método de put_Frequency
+                        - name: Put_Frequency método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdetecttone-put_frequency
                     - name: ITDigitDetectionEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itdigitdetectionevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitdetectionevent-get_call
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitdetectionevent-get_callbackinstance
-                        - name: Método de get_Digit
+                        - name: Get_Digit método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitdetectionevent-get_digit
-                        - name: Método de get_DigitMode
+                        - name: Get_DigitMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitdetectionevent-get_digitmode
-                        - name: Método de get_TickCount
+                        - name: Get_TickCount método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitdetectionevent-get_tickcount
                     - name: ITDigitGenerationEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itdigitgenerationevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitgenerationevent-get_call
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitgenerationevent-get_callbackinstance
-                        - name: Método de get_GenerationTermination
+                        - name: Get_GenerationTermination método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitgenerationevent-get_generationtermination
-                        - name: Método de get_TickCount
+                        - name: Get_TickCount método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itdigitgenerationevent-get_tickcount
                     - name: ITDigitsGatheredEvent
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-itdigitsgatheredevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdigitsgatheredevent-get_call
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdigitsgatheredevent-get_callbackinstance
-                        - name: Método de get_Digits
+                        - name: Get_Digits método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdigitsgatheredevent-get_digits
-                        - name: Método de get_GatherTermination
+                        - name: Get_GatherTermination método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdigitsgatheredevent-get_gathertermination
-                        - name: Método de get_TickCount
+                        - name: Get_TickCount método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itdigitsgatheredevent-get_tickcount
                     - name: ITDispatchMapper
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itdispatchmapper
@@ -2043,32 +2043,32 @@
                     - name: ITFileTerminalEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itfileterminalevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfileterminalevent-get_call
-                        - name: Método de get_Cause
+                        - name: Get_Cause método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfileterminalevent-get_cause
-                        - name: Método de get_Error
+                        - name: Get_Error método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfileterminalevent-get_error
-                        - name: Método de get_State
+                        - name: Get_State método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfileterminalevent-get_state
-                        - name: Método de get_Terminal
+                        - name: Get_Terminal método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfileterminalevent-get_terminal
-                        - name: Método de get_Track
+                        - name: Get_Track método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfileterminalevent-get_track
                     - name: ITFileTrack
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itfiletrack
                       items:
-                        - name: Método de get_AudioFormatForScripting
+                        - name: Get_AudioFormatForScripting método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfiletrack-get_audioformatforscripting
-                        - name: Método de get_ControllingTerminal
+                        - name: Get_ControllingTerminal método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfiletrack-get_controllingterminal
-                        - name: Método de get_EmptyAudioFormatForScripting
+                        - name: Get_EmptyAudioFormatForScripting método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfiletrack-get_emptyaudioformatforscripting
-                        - name: Método de get_Format
+                        - name: Get_Format método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfiletrack-get_format
-                        - name: Método de put_AudioFormatForScripting
+                        - name: Método put_AudioFormatForScripting
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfiletrack-put_audioformatforscripting
-                        - name: Método de put_Format
+                        - name: Put_Format método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itfiletrack-put_format
                     - name: ITFormatControl
                       href: itformatcontrol.md
@@ -2088,17 +2088,17 @@
                       items:
                         - name: Método Clear
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-clear
-                        - name: Método getforwardtype
+                        - name: Método GetForwardType
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-getforwardtype
-                        - name: Método setforwardtype
+                        - name: Método SetForwardType
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-setforwardtype
-                        - name: Método de get_ForwardTypeCaller
+                        - name: Get_ForwardTypeCaller método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-get_forwardtypecaller
-                        - name: Método de get_ForwardTypeDestination
+                        - name: Get_ForwardTypeDestination método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-get_forwardtypedestination
-                        - name: Método de get_NumRingsNoAnswer
+                        - name: Get_NumRingsNoAnswer método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-get_numringsnoanswer
-                        - name: Método de put_NumRingsNoAnswer
+                        - name: Put_NumRingsNoAnswer método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itforwardinformation-put_numringsnoanswer
                     - name: ITForwardInformation2
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-itforwardinformation2
@@ -2107,9 +2107,9 @@
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itforwardinformation2-getforwardtype2
                         - name: Método SetForwardType2
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itforwardinformation2-setforwardtype2
-                        - name: Método de get_ForwardTypeCallerAddressType
+                        - name: Get_ForwardTypeCallerAddressType método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itforwardinformation2-get_forwardtypecalleraddresstype
-                        - name: Método de get_ForwardTypeDestinationAddressType
+                        - name: Get_ForwardTypeDestinationAddressType método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itforwardinformation2-get_forwardtypedestinationaddresstype
                     - name: ITLegacyAddressMediaControl
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itlegacyaddressmediacontrol
@@ -2171,34 +2171,34 @@
                     - name: ITLocalParticipant
                       href: itlocalparticipant.md
                       items:
-                        - name: Método de get_LocalParticipantTypedInfo
+                        - name: Get_LocalParticipantTypedInfo método
                           href: itlocalparticipant-get-localparticipanttypedinfo.md
-                        - name: Método de put_LocalParticipantTypedInfo
+                        - name: Put_LocalParticipantTypedInfo método
                           href: itlocalparticipant-put-localparticipanttypedinfo.md
                     - name: ITLocationInfo
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itlocationinfo
                       items:
-                        - name: Método de get_CancelCallWaitingCode
+                        - name: Get_CancelCallWaitingCode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_cancelcallwaitingcode
-                        - name: Método de get_CityCode
+                        - name: Get_CityCode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_citycode
-                        - name: Método de get_CountryCode
+                        - name: Get_CountryCode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_countrycode
-                        - name: Método de get_CountryID
+                        - name: Get_CountryID método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_countryid
-                        - name: Método de get_LocalAccessCode
+                        - name: Get_LocalAccessCode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_localaccesscode
-                        - name: Método de get_LocationName
+                        - name: Get_LocationName método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_locationname
-                        - name: Método de get_LongDistanceAccessCode
+                        - name: Get_LongDistanceAccessCode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_longdistanceaccesscode
-                        - name: Método de get_Options
+                        - name: Get_Options método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_options
-                        - name: Método de get_PermanentLocationID
+                        - name: Get_PermanentLocationID método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_permanentlocationid
-                        - name: Método de get_PreferredCardID
+                        - name: Get_PreferredCardID método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_preferredcardid
-                        - name: Método de get_TollPrefixList
+                        - name: Get_TollPrefixList método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itlocationinfo-get_tollprefixlist
                     - name: ITMediaControl
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itmediacontrol
@@ -2209,28 +2209,28 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediacontrol-start
                         - name: Método Stop
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediacontrol-stop
-                        - name: Método de get_MediaState
+                        - name: Get_MediaState método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediacontrol-get_mediastate
                     - name: ITMediaPlayback
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itmediaplayback
                       items:
-                        - name: Método de get_PlayList
+                        - name: Get_PlayList método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediaplayback-get_playlist
-                        - name: Método de put_PlayList
+                        - name: Put_PlayList método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediaplayback-put_playlist
                     - name: ITMediaRecord
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itmediarecord
                       items:
-                        - name: Método de get_FileName
+                        - name: Get_FileName método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediarecord-get_filename
-                        - name: Método de put_FileName
+                        - name: Put_FileName método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediarecord-put_filename
                     - name: ITMediaSupport
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itmediasupport
                       items:
                         - name: Método QueryMediaType
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediasupport-querymediatype
-                        - name: Método de get_MediaTypes
+                        - name: Get_MediaTypes método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmediasupport-get_mediatypes
                     - name: ITMultiTrackTerminal
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itmultitrackterminal
@@ -2241,51 +2241,51 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmultitrackterminal-enumeratetrackterminals
                         - name: Método RemoveTrackTerminal
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmultitrackterminal-removetrackterminal
-                        - name: Método de get_DirectionsInUse
+                        - name: Get_DirectionsInUse método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmultitrackterminal-get_directionsinuse
-                        - name: Método de get_MediaTypesInUse
+                        - name: Get_MediaTypesInUse método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmultitrackterminal-get_mediatypesinuse
-                        - name: Método de get_TrackTerminals
+                        - name: Get_TrackTerminals método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itmultitrackterminal-get_trackterminals
                     - name: ITParticipant
                       href: itparticipant.md
                       items:
                         - name: Método EnumerateStreams
                           href: itparticipant-enumeratestreams.md
-                        - name: Método de get_MediaTypes
+                        - name: Get_MediaTypes método
                           href: itparticipant-get-mediatypes.md
-                        - name: Método de get_ParticipantTypedInfo
+                        - name: Get_ParticipantTypedInfo método
                           href: itparticipant-get-participanttypedinfo.md
-                        - name: Método de get_Status
+                        - name: Get_Status método
                           href: itparticipant-get-status.md
-                        - name: Método de get_Streams
+                        - name: Método get_Streams
                           href: itparticipant-get-streams.md
-                        - name: Método de put_Status
+                        - name: Put_Status método
                           href: itparticipant-put-status.md
                     - name: ITParticipantControl
                       href: itparticipantcontrol.md
                       items:
                         - name: Método EnumerateParticipants
                           href: itparticipantcontrol-enumerateparticipants.md
-                        - name: Método de get_Participants
+                        - name: Get_Participants método
                           href: itparticipantcontrol-get-participants.md
                     - name: ITParticipantEvent
                       href: itparticipantevent.md
                       items:
-                        - name: Método de get_Event
+                        - name: Get_Event método
                           href: itparticipantevent-get-event.md
-                        - name: Método de get_Participant
+                        - name: Get_Participant método
                           href: itparticipantevent-get-participant.md
-                        - name: Método de get_SubStream
+                        - name: Get_SubStream método
                           href: itparticipantevent-get-substream.md
                     - name: ITParticipantSubStreamControl
                       href: itparticipantsubstreamcontrol.md
                       items:
                         - name: Método SwitchTerminalToSubStream
                           href: itparticipantsubstreamcontrol-switchterminaltosubstream.md
-                        - name: Método de get_ParticipantFromSubStream
+                        - name: Get_ParticipantFromSubStream método
                           href: itparticipantsubstreamcontrol-get-participantfromsubstream.md
-                        - name: Método de get_SubStreamFromParticipant
+                        - name: Get_SubStreamFromParticipant método
                           href: itparticipantsubstreamcontrol-get-substreamfromparticipant.md
                     - name: ITPhone
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itphone
@@ -2304,143 +2304,143 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-enumerateterminals
                         - name: Método GetPhoneCapsBuffer
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-getphonecapsbuffer
-                        - name: Método de get_PreferredAddresses
+                        - name: Get_PreferredAddresses método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_preferredaddresses
                         - name: Método NegotiateExtVersion
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-negotiateextversion
-                        - name: Abrir método
+                        - name: Método Open
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-open
-                        - name: Método setdisplay
+                        - name: Método SetDisplay
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-setdisplay
-                        - name: Método de get_Addresses
+                        - name: Get_Addresses método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_addresses
-                        - name: Método de get_ButtonFunction
+                        - name: Get_ButtonFunction método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_buttonfunction
-                        - name: Método de get_ButtonMode
+                        - name: Get_ButtonMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_buttonmode
-                        - name: Método de get_ButtonState
+                        - name: Get_ButtonState método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_buttonstate
-                        - name: Método de get_ButtonText
+                        - name: Get_ButtonText método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_buttontext
-                        - name: Método de get_Display
+                        - name: Get_Display método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_display
-                        - name: Método de get_HookSwitchState
+                        - name: Get_HookSwitchState método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_hookswitchstate
-                        - name: Método de get_LampMode
+                        - name: Get_LampMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_lampmode
-                        - name: Método de get_PhoneCapsBuffer
+                        - name: Get_PhoneCapsBuffer método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_phonecapsbuffer
-                        - name: Método de get_PhoneCapsLong
+                        - name: Get_PhoneCapsLong método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_phonecapslong
-                        - name: Método de get_PhoneCapsString
+                        - name: Get_PhoneCapsString método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_phonecapsstring
-                        - name: Método de get_Privilege
+                        - name: Get_Privilege método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_privilege
-                        - name: Método de get_RingMode
+                        - name: Get_RingMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_ringmode
-                        - name: Método de get_RingVolume
+                        - name: Get_RingVolume método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_ringvolume
-                        - name: Método de get_Terminals
+                        - name: Get_Terminals método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-get_terminals
-                        - name: Método de put_ButtonFunction
+                        - name: Put_ButtonFunction método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_buttonfunction
-                        - name: Método de put_ButtonMode
+                        - name: Put_ButtonMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_buttonmode
-                        - name: Método de put_ButtonText
+                        - name: Put_ButtonText método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_buttontext
-                        - name: Método de put_HookSwitchState
+                        - name: Put_HookSwitchState método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_hookswitchstate
-                        - name: Método de put_LampMode
+                        - name: Put_LampMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_lampmode
-                        - name: Método de put_RingMode
+                        - name: Put_RingMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_ringmode
-                        - name: Método de put_RingVolume
+                        - name: Put_RingVolume método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphone-put_ringvolume
                     - name: ITPhoneDeviceSpecificEvent
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-itphonedevicespecificevent
                       items:
-                        - name: Método de get_Phone
+                        - name: Get_Phone método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itphonedevicespecificevent-get_phone
-                        - name: Método de get_lParam1
+                        - name: Get_lParam1 método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itphonedevicespecificevent-get_lparam1
-                        - name: Método de get_lParam2
+                        - name: Get_lParam2 método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itphonedevicespecificevent-get_lparam2
-                        - name: Método de get_lParam3
+                        - name: Get_lParam3 método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-itphonedevicespecificevent-get_lparam3
                     - name: ITPhoneEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itphoneevent
                       items:
-                        - name: Método de get_ButtonLampId
+                        - name: Get_ButtonLampId método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_buttonlampid
-                        - name: Método de get_ButtonState
+                        - name: Get_ButtonState método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_buttonstate
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_call
-                        - name: Método de get_Event
+                        - name: Get_Event método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_event
-                        - name: Método de get_HookSwitchDevice
+                        - name: Get_HookSwitchDevice método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_hookswitchdevice
-                        - name: Método de get_HookSwitchState
+                        - name: Get_HookSwitchState método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_hookswitchstate
-                        - name: Método de get_NumberGathered
+                        - name: Get_NumberGathered método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_numbergathered
-                        - name: Método de get_Phone
+                        - name: Get_Phone método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_phone
-                        - name: Método de get_RingMode
+                        - name: Get_RingMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itphoneevent-get_ringmode
                     - name: ITPluggableTerminalClassInfo
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itpluggableterminalclassinfo
                       items:
-                        - name: Método de get_CLSID
+                        - name: Get_CLSID método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_clsid
-                        - name: Método de get_Company
+                        - name: Get_Company método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_company
-                        - name: Método de get_Direction
+                        - name: Get_Direction método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_direction
-                        - name: Método de get_MediaTypes
+                        - name: Get_MediaTypes método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_mediatypes
-                        - name: Método de get_Name
+                        - name: Get_Name método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_name
-                        - name: Método de get_TerminalClass
+                        - name: Get_TerminalClass método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_terminalclass
-                        - name: Método de get_Version
+                        - name: Get_Version método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalclassinfo-get_version
                     - name: ITPluggableTerminalClassRegistration
                       href: /windows/desktop/api/Termmgr/nn-termmgr-itpluggableterminalclassregistration
                       items:
                         - name: Adicionar método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-add
-                        - name: Excluir método
+                        - name: Método Delete
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-delete
                         - name: Método GetTerminalClassInfo
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-getterminalclassinfo
-                        - name: Método de get_CLSID
+                        - name: Get_CLSID método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_clsid
-                        - name: Método de get_Company
+                        - name: Get_Company método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_company
-                        - name: Método de get_Direction
+                        - name: Get_Direction método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_direction
-                        - name: Método de get_MediaTypes
+                        - name: Get_MediaTypes método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_mediatypes
-                        - name: Método de get_Name
+                        - name: Get_Name método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_name
-                        - name: Método de get_TerminalClass
+                        - name: Get_TerminalClass método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_terminalclass
-                        - name: Método de get_Version
+                        - name: Get_Version método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-get_version
-                        - name: Método de put_CLSID
+                        - name: Put_CLSID método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_clsid
-                        - name: Método de put_Company
+                        - name: Put_Company método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_company
-                        - name: Método de put_Direction
+                        - name: Put_Direction método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_direction
-                        - name: Método de put_MediaTypes
+                        - name: Put_MediaTypes método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_mediatypes
-                        - name: Método de put_Name
+                        - name: Put_Name método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_name
-                        - name: Método de put_TerminalClass
+                        - name: Put_TerminalClass método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_terminalclass
-                        - name: Método de put_Version
+                        - name: Put_Version método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalclassregistration-put_version
                     - name: ITPluggableTerminalEventSink
                       href: /windows/desktop/api/msp/nn-msp-itpluggableterminaleventsink
@@ -2462,43 +2462,43 @@
                     - name: ITPluggableTerminalSuperclassInfo
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itpluggableterminalsuperclassinfo
                       items:
-                        - name: Método de get_CLSID
+                        - name: Get_CLSID método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalsuperclassinfo-get_clsid
-                        - name: Método de get_Name
+                        - name: Get_Name método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itpluggableterminalsuperclassinfo-get_name
                     - name: ITPluggableTerminalSuperclassRegistration
                       href: /windows/desktop/api/Termmgr/nn-termmgr-itpluggableterminalsuperclassregistration
                       items:
                         - name: Adicionar método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-add
-                        - name: Excluir método
+                        - name: Método Delete
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-delete
                         - name: Método EnumerateTerminalClasses
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-enumerateterminalclasses
                         - name: Método GetTerminalSuperclassInfo
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-getterminalsuperclassinfo
-                        - name: Método de get_CLSID
+                        - name: Get_CLSID método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-get_clsid
-                        - name: Método de get_Name
+                        - name: Get_Name método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-get_name
-                        - name: Método de get_TerminalClasses
+                        - name: Get_TerminalClasses método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-get_terminalclasses
-                        - name: Método de put_CLSID
+                        - name: Put_CLSID método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-put_clsid
-                        - name: Método de put_Name
+                        - name: Put_Name método
                           href: /windows/desktop/api/Termmgr/nf-termmgr-itpluggableterminalsuperclassregistration-put_name
                     - name: ITPrivateEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itprivateevent
                       items:
-                        - name: Método de get_Address
+                        - name: Get_Address método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itprivateevent-get_address
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itprivateevent-get_call
-                        - name: Método de get_CallHub
+                        - name: Get_CallHub método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itprivateevent-get_callhub
-                        - name: Método de get_EventCode
+                        - name: Get_EventCode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itprivateevent-get_eventcode
-                        - name: Método de get_EventInterface
+                        - name: Get_EventInterface método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itprivateevent-get_eventinterface
                     - name: ITQOSApplicationID
                       href: itqosapplicationid.md
@@ -2508,11 +2508,11 @@
                     - name: ITQOSEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itqosevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itqosevent-get_call
-                        - name: Método de get_Event
+                        - name: Get_Event método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itqosevent-get_event
-                        - name: Método de get_MediaType
+                        - name: Get_MediaType método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itqosevent-get_mediatype
                     - name: ITRequest
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itrequest
@@ -2522,49 +2522,49 @@
                     - name: ITRequestEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itrequestevent
                       items:
-                        - name: Método de get_AppName
+                        - name: Get_AppName método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itrequestevent-get_appname
-                        - name: Método de get_CalledParty
+                        - name: Get_CalledParty método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itrequestevent-get_calledparty
-                        - name: Método de get_Comment
+                        - name: Get_Comment método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itrequestevent-get_comment
-                        - name: Método de get_DestAddress
+                        - name: Get_DestAddress método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itrequestevent-get_destaddress
-                        - name: Método de get_RegistrationInstance
+                        - name: Get_RegistrationInstance método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itrequestevent-get_registrationinstance
-                        - name: Método de get_RequestMode
+                        - name: Get_RequestMode método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itrequestevent-get_requestmode
                     - name: ITScriptableAudioFormat
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itscriptableaudioformat
                       items:
-                        - name: Método de get_AvgBytesPerSec
+                        - name: Get_AvgBytesPerSec método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-get_avgbytespersec
-                        - name: Método de get_BitsPerSample
+                        - name: Get_BitsPerSample método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-get_bitspersample
-                        - name: Método de get_BlockAlign
+                        - name: Método get_BlockAlign
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-get_blockalign
-                        - name: Método de get_Channels
+                        - name: Get_Channels método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-get_channels
-                        - name: Método de get_FormatTag
+                        - name: Get_FormatTag método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-get_formattag
-                        - name: Método de get_SamplesPerSec
+                        - name: Método get_SamplesPerSec
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-get_samplespersec
-                        - name: Método de put_AvgBytesPerSec
+                        - name: Put_AvgBytesPerSec método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-put_avgbytespersec
-                        - name: Método de put_BitsPerSample
+                        - name: Put_BitsPerSample método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-put_bitspersample
-                        - name: Método de put_BlockAlign
+                        - name: Put_BlockAlign método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-put_blockalign
-                        - name: Método de put_Channels
+                        - name: Put_Channels método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-put_channels
-                        - name: Método de put_FormatTag
+                        - name: Put_FormatTag método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-put_formattag
-                        - name: Método de put_SamplesPerSec
+                        - name: Put_SamplesPerSec método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itscriptableaudioformat-put_samplespersec
                     - name: ITStaticAudioTerminal
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itstaticaudioterminal
                       items:
-                        - name: Método de get_WaveId
+                        - name: Get_WaveId método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itstaticaudioterminal-get_waveid
                     - name: ITStream (MSPI)
                       href: itstream-mspi-.md
@@ -2592,17 +2592,17 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-enumeratecallhubs
                         - name: Método EnumeratePrivateTAPIObjects
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-enumerateprivatetapiobjects
-                        - name: Método de get_PrivateTAPIObjects
+                        - name: Get_PrivateTAPIObjects método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-get_privatetapiobjects
-                        - name: Método de get_Addresses
+                        - name: Get_Addresses método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-get_addresses
-                        - name: Método de get_CallHubs
+                        - name: Get_CallHubs método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-get_callhubs
-                        - name: Método de get_EventFilter
+                        - name: Get_EventFilter método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-get_eventfilter
                         - name: Método Initialize
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-initialize
-                        - name: Método de put_EventFilter
+                        - name: Put_EventFilter método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-put_eventfilter
                         - name: Método RegisterCallNotifications
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-registercallnotifications
@@ -2610,7 +2610,7 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-registerrequestrecipient
                         - name: Método SetApplicationPriority
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-setapplicationpriority
-                        - name: Método SetAssistedTelephonyPriority
+                        - name: Método SetAssistedTele operaçãoPriority
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-setassistedtelephonypriority
                         - name: Método SetCallHubTracking
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi-setcallhubtracking
@@ -2625,35 +2625,35 @@
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi2-createemptycollectionobject
                         - name: Método EnumeratePhones
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi2-enumeratephones
-                        - name: Método de get_Phones
+                        - name: Get_Phones método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapi2-get_phones
                     - name: ITTAPICallCenter
                       href: /windows/desktop/api/tapi3cc/nn-tapi3cc-ittapicallcenter
                       items:
                         - name: Método EnumerateAgentHandlers
                           href: /windows/desktop/api/tapi3/nf-tapi3-ittapicallcenter-enumerateagenthandlers
-                        - name: Método de get_AgentHandlers
+                        - name: Get_AgentHandlers método
                           href: /windows/desktop/api/tapi3/nf-tapi3-ittapicallcenter-get_agenthandlers
                     - name: ITTAPIEventNotification
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-ittapieventnotification
                       items:
-                        - name: Método de evento
+                        - name: Método event
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event
                     - name: ITTAPIObjectEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-ittapiobjectevent
                       items:
-                        - name: Método de get_Address
+                        - name: Get_Address método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapiobjectevent-get_address
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapiobjectevent-get_callbackinstance
-                        - name: Método de get_Event
+                        - name: Get_Event método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapiobjectevent-get_event
-                        - name: Método de get_TAPIObject
+                        - name: Get_TAPIObject método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapiobjectevent-get_tapiobject
                     - name: ITTAPIObjectEvent2
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-ittapiobjectevent2
                       items:
-                        - name: Método de get_Phone
+                        - name: Get_Phone método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittapiobjectevent2-get_phone
                     - name: ITTerminal (MSPI)
                       href: itterminal-mspi-.md
@@ -2664,33 +2664,33 @@
                     - name: ITToneDetectionEvent
                       href: /windows/desktop/api/Tapi3if/nn-tapi3if-ittonedetectionevent
                       items:
-                        - name: Método de get_AppSpecific
+                        - name: Get_AppSpecific método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-ittonedetectionevent-get_appspecific
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-ittonedetectionevent-get_call
-                        - name: Método de get_CallbackInstance
+                        - name: Get_CallbackInstance método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-ittonedetectionevent-get_callbackinstance
-                        - name: Método de get_TickCount
+                        - name: Get_TickCount método
                           href: /windows/desktop/api/Tapi3if/nf-tapi3if-ittonedetectionevent-get_tickcount
-                        - name: Método de get_ToneListID
+                        - name: Get_ToneListID método
                           href: /previous-versions/windows/desktop/legacy/ms733258(v=vs.85)
                     - name: ITToneTerminalEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-ittoneterminalevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittoneterminalevent-get_call
-                        - name: Método de get_Error
+                        - name: Get_Error método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittoneterminalevent-get_error
-                        - name: Método de get_Terminal
+                        - name: Get_Terminal método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-ittoneterminalevent-get_terminal
                     - name: ITTTSTerminalEvent
                       href: /windows/desktop/api/tapi3if/nn-tapi3if-itttsterminalevent
                       items:
-                        - name: Método de get_Call
+                        - name: Get_Call método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itttsterminalevent-get_call
-                        - name: Método de get_Error
+                        - name: Get_Error método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itttsterminalevent-get_error
-                        - name: Método de get_Terminal
+                        - name: Get_Terminal método
                           href: /windows/desktop/api/tapi3if/nf-tapi3if-itttsterminalevent-get_terminal
         - name: Controles do Call Center
           href: call-center-controls.md
@@ -2700,14 +2700,14 @@
             - name: Usando controles do Call Center
               href: using-call-center-controls.md
               items:
-                - name: Proxy AD
+                - name: ACD Proxy
                   href: acd-proxy.md
-                - name: Cliente do agente do AD
+                - name: Cliente do agente ACD
                   href: acd-agent-client.md
             - name: Referência de controles do Call Center
               href: call-center-controls-reference.md
               items:
-                - name: Referência rápida de controles do Call Center
+                - name: Referência rápida de controles de call center
                   href: call-center-controls-quick-reference.md
                 - name: Interfaces de controles do Call Center
                   href: call-center-controls-interfaces.md
@@ -3170,7 +3170,7 @@
                           href: /windows/desktop/api/Rend/nf-rend-itdirectory-put_defaultobjectttl
                         - name: Método EnableAutoRefresh
                           href: /windows/desktop/api/Rend/nf-rend-itdirectory-enableautorefresh
-                        - name: Método Connect
+                        - name: Conexão Forma
                           href: /windows/desktop/api/Rend/nf-rend-itdirectory-connect
                         - name: Método Bind
                           href: /windows/desktop/api/Rend/nf-rend-itdirectory-bind
@@ -3201,176 +3201,176 @@
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobject-enumeratedialableaddrs
                         - name: Método de get_SecurityDescriptor
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobject-get_securitydescriptor
-                        - name: Método de put_SecurityDescriptor
+                        - name: Put_SecurityDescriptor método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobject-put_securitydescriptor
                     - name: ITDirectoryObjectConference
                       href: /windows/desktop/api/Rend/nn-rend-itdirectoryobjectconference
                       items:
-                        - name: Método de get_Protocol
+                        - name: Get_Protocol método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_protocol
-                        - name: Método de get_Originator
+                        - name: Get_Originator método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_originator
-                        - name: Método de put_Originator
+                        - name: Put_Originator método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_originator
-                        - name: Método de get_AdvertisingScope
+                        - name: Get_AdvertisingScope método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_advertisingscope
-                        - name: Método de put_AdvertisingScope
+                        - name: Put_AdvertisingScope método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_advertisingscope
-                        - name: Método de get_Url
+                        - name: Get_Url método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_url
-                        - name: Método de put_Url
+                        - name: Put_Url método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_url
-                        - name: Método de get_Description
+                        - name: Get_Description método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_description
-                        - name: Método de put_Description
+                        - name: Put_Description método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_description
-                        - name: Método de get_IsEncrypted
+                        - name: Get_IsEncrypted método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_isencrypted
-                        - name: Método de put_IsEncrypted
+                        - name: Put_IsEncrypted método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_isencrypted
-                        - name: Método de get_StartTime
+                        - name: Get_StartTime método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_starttime
-                        - name: Método de put_StartTime
+                        - name: Put_StartTime método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_starttime
-                        - name: Método de get_StopTime
+                        - name: Get_StopTime método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-get_stoptime
-                        - name: Método de put_StopTime
+                        - name: Put_StopTime método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectconference-put_stoptime
                     - name: ITDirectoryObjectUser
                       href: /windows/desktop/api/Rend/nn-rend-itdirectoryobjectuser
                       items:
-                        - name: Método de get_IPPhonePrimary
+                        - name: Get_IPPhonePrimary método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectuser-get_ipphoneprimary
-                        - name: Método de put_IPPhonePrimary
+                        - name: Put_IPPhonePrimary método
                           href: /windows/desktop/api/Rend/nf-rend-itdirectoryobjectuser-put_ipphoneprimary
                     - name: ITILSConfig
                       href: /windows/desktop/api/Rend/nn-rend-itilsconfig
                       items:
-                        - name: Método de get_Port
+                        - name: Get_Port método
                           href: /windows/desktop/api/Rend/nf-rend-itilsconfig-get_port
-                        - name: Método de put_Port
+                        - name: Método put_Port
                           href: /windows/desktop/api/Rend/nf-rend-itilsconfig-put_port
-                    - name: ITMedia
+                    - name: Itmedia
                       href: itmedia.md
                       items:
-                        - name: Método de get_MediaName
+                        - name: Get_MediaName método
                           href: itmedia-get-medianame.md
-                        - name: Método de get_TransportProtocol
+                        - name: Get_TransportProtocol método
                           href: itmedia-get-transportprotocol.md
-                        - name: Método de get_FormatCodes
+                        - name: Get_FormatCodes método
                           href: itmedia-get-formatcodes.md
-                        - name: Método de get_MediaTitle
+                        - name: Get_MediaTitle método
                           href: itmedia-get-mediatitle.md
-                        - name: Método de put_MediaName
+                        - name: Put_MediaName método
                           href: itmedia-put-medianame.md
-                        - name: Método de get_StartPort
+                        - name: Get_StartPort método
                           href: itmedia-get-startport.md
-                        - name: Método de put_TransportProtocol
+                        - name: Método put_TransportProtocol
                           href: itmedia-put-transportprotocol.md
-                        - name: Método de put_FormatCodes
+                        - name: Put_FormatCodes método
                           href: itmedia-put-formatcodes.md
-                        - name: Método de put_MediaTitle
+                        - name: Método put_MediaTitle
                           href: itmedia-put-mediatitle.md
                         - name: Método SetPortInfo
                           href: itmedia-setportinfo.md
-                        - name: Método de get_NumPorts
+                        - name: Get_NumPorts método
                           href: itmedia-get-numports.md
                     - name: ITMediaCollection
                       href: itmediacollection.md
                       items:
-                        - name: Método de get_Count
+                        - name: Método get_Count
                           href: itmediacollection-get-count.md
-                        - name: Método de get_EnumerationIf
+                        - name: Get_EnumerationIf método
                           href: itmediacollection-get-enumerationif.md
-                        - name: Método de get_Item
+                        - name: Get_Item método
                           href: itmediacollection-get-item.md
-                        - name: Método de get__NewEnum
+                        - name: Get__NewEnum método
                           href: itmediacollection-get--newenum.md
-                        - name: Criar método
+                        - name: Método Create
                           href: itmediacollection-create.md
-                        - name: Excluir método
+                        - name: Método Delete
                           href: itmediacollection-delete.md
-                    - name: ITRendezvous
+                    - name: ITRevous
                       href: /windows/desktop/api/Rend/nn-rend-itrendezvous
                       items:
-                        - name: Método de get_DefaultDirectories
+                        - name: Get_DefaultDirectories método
                           href: /windows/desktop/api/Rend/nf-rend-itrendezvous-get_defaultdirectories
                         - name: Método EnumerateDefaultDirectories
                           href: /windows/desktop/api/Rend/nf-rend-itrendezvous-enumeratedefaultdirectories
                         - name: Método CreateDirectory
                           href: /windows/desktop/api/Rend/nf-rend-itrendezvous-createdirectory
-                        - name: Método createdirectoryobject
+                        - name: Método CreateDirectoryObject
                           href: /windows/desktop/api/Rend/nf-rend-itrendezvous-createdirectoryobject
                     - name: ITSdp
                       href: itsdp.md
                       items:
-                        - name: Método de get_IsValid
+                        - name: Get_IsValid método
                           href: itsdp-get-isvalid.md
-                        - name: Método de get_ProtocolVersion
+                        - name: Get_ProtocolVersion método
                           href: itsdp-get-protocolversion.md
-                        - name: Método de get_SessionId
+                        - name: Get_SessionId método
                           href: itsdp-get-sessionid.md
-                        - name: Método de get_SessionVersion
+                        - name: Get_SessionVersion método
                           href: itsdp-get-sessionversion.md
-                        - name: Método de get_MachineAddress
+                        - name: Get_MachineAddress método
                           href: itsdp-get-machineaddress.md
                         - name: Método GetPhoneNumbers
                           href: itsdp-getphonenumbers.md
                         - name: Método SetPhoneNumbers
                           href: itsdp-setphonenumbers.md
-                        - name: Método de get_Name
+                        - name: Get_Name método
                           href: itsdp-get-name.md
-                        - name: Método de get_Description
+                        - name: Get_Description método
                           href: itsdp-get-description.md
-                        - name: Método de get_Url
+                        - name: Get_Url método
                           href: itsdp-get-url.md
-                        - name: Método de put_SessionVersion
+                        - name: Put_SessionVersion método
                           href: itsdp-put-sessionversion.md
-                        - name: Método de get_MediaCollection
+                        - name: Get_MediaCollection método
                           href: itsdp-get-mediacollection.md
-                        - name: Método de get_TimeCollection
+                        - name: Get_TimeCollection método
                           href: itsdp-get-timecollection.md
-                        - name: Método de put_MachineAddress
+                        - name: Put_MachineAddress método
                           href: itsdp-put-machineaddress.md
-                        - name: Método de put_Name
+                        - name: Put_Name método
                           href: itsdp-put-name.md
-                        - name: Método de put_Description
+                        - name: Put_Description método
                           href: itsdp-put-description.md
-                        - name: Método de get_Originator
+                        - name: Get_Originator método
                           href: itsdp-get-originator.md
-                        - name: Método de put_Originator
+                        - name: Put_Originator método
                           href: itsdp-put-originator.md
-                        - name: Método de put_Url
+                        - name: Put_Url método
                           href: itsdp-put-url.md
-                        - name: Método getemailnames
+                        - name: Método GetEmailNames
                           href: itsdp-getemailnames.md
-                        - name: Método setemailnames
+                        - name: Método SetEmailNames
                           href: itsdp-setemailnames.md
                     - name: ITTime
                       href: ittime.md
                       items:
-                        - name: Método de get_StartTime
+                        - name: Get_StartTime método
                           href: ittime-get-starttime.md
-                        - name: Método de get_StopTime
+                        - name: Get_StopTime método
                           href: ittime-get-stoptime.md
-                        - name: Método de put_StartTime
+                        - name: Put_StartTime método
                           href: ittime-put-starttime.md
-                        - name: Método de put_StopTime
+                        - name: Put_StopTime método
                           href: ittime-put-stoptime.md
                     - name: ITTimeCollection
                       href: ittimecollection.md
                       items:
-                        - name: Método de get_Count
+                        - name: Método get_Count
                           href: ittimecollection-get-count.md
-                        - name: Método de get_EnumerationIf
+                        - name: Get_EnumerationIf método
                           href: ittimecollection-get-enumerationif.md
-                        - name: Método de get_Item
+                        - name: Get_Item método
                           href: ittimecollection-get-item.md
-                        - name: Método de get__NewEnum
+                        - name: Get__NewEnum método
                           href: ittimecollection-get--newenum.md
-                        - name: Criar método
+                        - name: Método Create
                           href: ittimecollection-create.md
-                        - name: Excluir método
+                        - name: Método Delete
                           href: ittimecollection-delete.md
                 - name: Enumerações de reunião
                   href: rendezvous-enumerations.md
@@ -3398,16 +3398,16 @@
         - name: Provedores de serviços de telefonia
           href: telephony-service-providers-start-page.md
           items:
-            - name: Sobre o provedor de serviços de telefonia (TSP)
+            - name: Sobre o TSP (Provedor de Serviços de Telefonia)
               href: about-the-telephony-service-provider-tsp-.md
               items:
                 - name: H323 TSP
                   href: h323-tsp.md
                 - name: IPConf TSP
                   href: ipconf-tsp.md
-                - name: Kernel-Mode o driver de dispositivo TSP
+                - name: Kernel-Mode TSP do Driver de Dispositivo
                   href: kernel-mode-device-driver-tsp.md
-                - name: TSP do proxy NDIS
+                - name: NDIS Proxy TSP
                   href: ndis-proxy-tsp.md
                 - name: TSP remoto
                   href: remote-tsp.md
@@ -3421,20 +3421,20 @@
                 - name: Considerações gerais sobre programação
                   href: general-programming-considerations.md
                   items:
-                    - name: Controle de versão do TSPI
+                    - name: Versão do TSPI
                       href: tspi-versioning.md
                       items:
-                        - name: 'O que há de novo na versão 3,0 do TSPI'
+                        - name: Novidades do TSPI versão 3.0
                           href: what-s-new-for-tspi-version-3-0.md
-                        - name: 'O que há de novo na versão 2,2 do TSPI'
+                        - name: Novidades do TSPI versão 2.2
                           href: what-s-new-for-tspi-version-2-2.md
-                        - name: 'O que há de novo na versão 2,1 do TSPI'
+                        - name: Novidades do TSPI versão 2.1
                           href: what-s-new-for-tspi-version-2-1.md
-                    - name: Verificação de erros
+                    - name: Verificação de erro
                       href: error-checking.md
-                    - name: Comparação geral com a TAPI
+                    - name: Comparação geral com TAPI
                       href: overall-comparison-with-tapi.md
-                    - name: TSPI níveis de serviço
+                    - name: Níveis de serviço TSPI
                       href: tspi-levels-of-service.md
                 - name: Ciclo de vida de um provedor de serviços de telefonia
                   href: life-cycle-of-a-telephony-service-provider.md
@@ -3445,27 +3445,27 @@
                   items:
                     - name: Configurações de linha
                       href: line-configurations.md
-                    - name: Configurando um terminal para conversas por telefone
+                    - name: Definindo um terminal para Telefone conversas
                       href: setting-a-terminal-for-phone-conversations.md
-                    - name: Serviços de linha estendida
+                    - name: Serviços de Linha Estendida
                       href: extended-line-services.md
                 - name: Acesso à sessão
                   href: session-access.md
                   items:
                     - name: Chamadas sem proprietário
                       href: unowned-calls.md
-                    - name: Identificadores de chamada
+                    - name: Alças de chamada
                       href: call-handles.md
                       items:
-                        - name: Identificadores de chamada pendentes
+                        - name: Alças de chamada pendentes
                           href: pending-call-handles.md
-                        - name: Respostas assíncronas versus eventos em novos identificadores de chamada
+                        - name: Respostas assíncronas versus eventos em novos alças de chamada
                           href: async-replies-versus-events-on-new-call-handles.md
-                        - name: Manipulação de identificador de chamada
+                        - name: Manipulação do manipulador de chamada
                           href: call-handle-manipulation.md
-                    - name: Números de telefone gerados externamente
+                    - name: Números de Telefone gerados externamente
                       href: externally-generated-phone-numbers.md
-                    - name: Suporte do CallHub
+                    - name: Suporte ao CallHub
                       href: callhub-support.md
                 - name: Acesso à mídia
                   href: media-access.md
@@ -3477,33 +3477,33 @@
                           href: media-monitoring.md
                         - name: Monitoramento de dígitos
                           href: digit-monitoring.md
-                        - name: Monitoramento de Tom
+                        - name: Monitoramento de tom
                           href: tone-monitoring.md
                     - name: Controle de mídia
                       href: media-control.md
                       items:
                         - name: Coleta de dígitos
                           href: digit-gathering.md
-                        - name: Gerando dígitos de banda e tons
+                        - name: Gerando dígitos e tons de inband
                           href: generating-inband-digits-and-tones.md
-                    - name: Comunicação do provedor de serviços de mídia
+                    - name: Comunicação do Provedor de Serviços de Mídia
                       href: media-service-provider-communication.md
-                - name: Dispositivos de telefone
+                - name: Telefone Dispositivos
                   href: phone-devices.md
                   items:
-                    - name: Serviços de telefone básicos
+                    - name: Serviços Telefone Básicos
                       href: basic-phone-services.md
                       items:
-                        - name: Inicialização do SPI do telefone
+                        - name: Telefone Inicialização da SPI
                           href: phone-spi-initialization.md
-                        - name: Abrindo e fechando dispositivos de telefone
+                        - name: Abrindo e fechando Telefone dispositivos
                           href: opening-and-closing-phone-devices.md
-                    - name: Serviços de telefone suplementares
+                    - name: Serviços de Telefone suplementares
                       href: supplementary-phone-services.md
                       items:
                         - name: Dispositivos Hookswitch
                           href: hookswitch-devices.md
-                        - name: Monitor
+                        - name: Exibir
                           href: display.md
                         - name: Anel
                           href: ring.md
@@ -3515,7 +3515,7 @@
                           href: data-areas.md
                         - name: Status
                           href: status.md
-                    - name: Serviços de telefone estendidos
+                    - name: Serviços Telefone estendidos
                       href: extended-phone-services.md
                       items:
                         - name: Constantes de dados escalares
@@ -3524,7 +3524,7 @@
                           href: bit-flag-data-constants.md
                         - name: Funções e mensagens
                           href: functions-and-messages.md
-                    - name: Operações de telefone assíncrono
+                    - name: Operações de Telefone assíncronas
                       href: asynchronous-phone-operations.md
                 - name: A interface DLL da interface do usuário do provedor de serviços de telefonia
                   href: the-telephony-service-provider-ui-dll-interface.md
@@ -3534,7 +3534,7 @@
                     - name: Uso
                       href: usage.md
                       items:
-                        - name: Funções projetadas para gerar a interface do usuário
+                        - name: Funções projetadas para gerar interface do usuário
                           href: functions-designed-to-generate-ui.md
                         - name: Funções não projetadas para gerar interface do usuário
                           href: functions-not-designed-to-generate-ui.md
@@ -3544,9 +3544,9 @@
                 - name: Funções TSPI
                   href: tspi-functions.md
                   items:
-                    - name: Funções de telefonia básicas do TSPI
+                    - name: Funções de telefonia básica TSPI
                       href: tspi-basic-telephony-functions.md
-                    - name: Funções do provedor de serviço TSPI
+                    - name: Funções do provedor de serviços TSPI
                       href: tspi-service-provider-functions.md
                       items:
                         - name: TSPI_providerConfig
@@ -3555,9 +3555,9 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_providercreatelinedevice
                         - name: TSPI_providerCreatePhoneDevice
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_providercreatephonedevice
-                        - name: TSPI_providerEnumDevices
+                        - name: Tspi_providerenumdevices
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_providerenumdevices
-                        - name: TSPI_providerInit
+                        - name: Tspi_providerinit
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_providerinit
                         - name: TSPI_providerInstall
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_providerinstall
@@ -3598,9 +3598,9 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linedevspecific
                         - name: TSPI_lineDevSpecificFeature
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linedevspecificfeature
-                        - name: TSPI_lineDial
+                        - name: Tspi_linedial
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linedial
-                        - name: TSPI_lineDrop
+                        - name: Tspi_linedrop
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linedrop
                         - name: TSPI_lineDropNoOwner
                           href: tspi-linedropnoowner.md
@@ -3610,9 +3610,9 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_lineforward
                         - name: TSPI_lineGatherDigits
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegatherdigits
-                        - name: TSPI_lineGenerateDigits
+                        - name: Tspi_linegeneratedigits
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegeneratedigits
-                        - name: TSPI_lineGenerateTone
+                        - name: Tspi_linegeneratetone
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegeneratetone
                         - name: TSPI_lineGetAddressCaps
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetaddresscaps
@@ -3632,13 +3632,13 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetcallstatus
                         - name: TSPI_lineGetDevCaps
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetdevcaps
-                        - name: TSPI_lineGetDevConfig
+                        - name: Tspi_linegetdevconfig
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetdevconfig
                         - name: TSPI_lineGetExtensionID
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetextensionid
                         - name: TSPI_lineGetIcon
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegeticon
-                        - name: TSPI_lineGetID
+                        - name: Tspi_linegetid
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetid
                         - name: TSPI_lineGetLineDevStatus
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetlinedevstatus
@@ -3646,7 +3646,7 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linegetnumaddressids
                         - name: TSPI_lineHold
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linehold
-                        - name: TSPI_lineMakeCall
+                        - name: Tspi_linemakecall
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linemakecall
                         - name: TSPI_lineMonitorDigits
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linemonitordigits
@@ -3658,7 +3658,7 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linemspidentify
                         - name: TSPI_lineNegotiateExtVersion
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linenegotiateextversion
-                        - name: TSPI_lineNegotiateTSPIVersion
+                        - name: Tspi_linenegotiatetspiversion
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_linenegotiatetspiversion
                         - name: TSPI_lineOpen
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_lineopen
@@ -3722,7 +3722,7 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_lineunhold
                         - name: TSPI_lineUnpark
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_lineunpark
-                    - name: Funções de dispositivo de telefone TSPI
+                    - name: Funções de dispositivo Telefone TSPI
                       href: tspi-phone-device-functions.md
                       items:
                         - name: TSPI_phoneClose
@@ -3759,7 +3759,7 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_phonegetvolume
                         - name: TSPI_phoneNegotiateExtVersion
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_phonenegotiateextversion
-                        - name: TSPI_phoneNegotiateTSPIVersion
+                        - name: Tspi_phonenegotiatetspiversion
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_phonenegotiatetspiversion
                         - name: TSPI_phoneOpen
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_phoneopen
@@ -3801,7 +3801,7 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_providergenericdialogdata
                         - name: TSPI_providerUIIdentify
                           href: /windows/desktop/api/tspi/nf-tspi-tspi_provideruiidentify
-                    - name: Funções do provedor de serviço TUISPI
+                    - name: Funções do provedor de serviços TUISPI
                       href: tuispi-service-provider-functions.md
                       items:
                         - name: TUISPI_providerConfig
@@ -3821,7 +3821,7 @@
                           href: /windows/desktop/api/tspi/nf-tspi-tuispi_lineconfigdialog
                         - name: TUISPI_lineConfigDialogEdit
                           href: /windows/desktop/api/tspi/nf-tspi-tuispi_lineconfigdialogedit
-                    - name: Funções de dispositivo de telefone TUISPI
+                    - name: Funções de dispositivo Telefone TUISPI
                       href: tuispi-phone-device-functions.md
                       items:
                         - name: TUISPI_phoneConfigDialog
@@ -3834,9 +3834,9 @@
                 - name: Estruturas TSPI
                   href: tspi-structures.md
                   items:
-                    - name: Identificadores opacos
+                    - name: Alças opacas
                       href: opaque-handles.md
-                    - name: Identificadores opacos e estruturas de dados privadas
+                    - name: Alças opacas e estruturas de dados privadas
                       href: opaque-handles-and-private-data-structures.md
                     - name: Extensibilidade da estrutura
                       href: structure-extensibility.md
@@ -3909,7 +3909,7 @@
                           href: line-sendmspdata.md
                         - name: LINE_QOSINFO
                           href: line-qosinfo.md
-                    - name: Mensagens do dispositivo TSPI Phone
+                    - name: TSPI mensagens de dispositivo de Telefone
                       href: tspi-phone-device-messages.md
                       items:
                         - name: PHONE_BUTTON
@@ -4062,16 +4062,16 @@
                     - name: CMSPCallBase
                       href: /windows/desktop/api/Mspcall/nl-mspcall-cmspcallbase
                       items:
-                        - name: Membros do CMSPCallBase
+                        - name: Membros CMSPCallBase
                           href: cmspcallbase-members.md
-                        - name: Métodos CMSPCallBase MSPI implementados
+                        - name: Métodos MSPI CMSPCallBase implementados
                           href: cmspcallbase-mspi-methods-implemented.md
-                        - name: 'Métodos públicos CMSPCallBase, chamados por objeto MSPAddress'
+                        - name: 'Métodos públicos CMSPCallBase, chamados pelo objeto MSPAddress'
                           href: cmspcallbase-public-methods-called-by-mspaddress-object.md
                           items:
                             - name: Método ReceiveTSPCallData
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-receivetspcalldata
-                        - name: 'Métodos públicos CMSPCallBase, chamados por objeto MSPStream'
+                        - name: 'Métodos públicos CMSPCallBase, chamados pelo objeto MSPStream'
                           href: cmspcallbase-public-methods-called-by-mspstream-object.md
                           items:
                             - name: Método HandleStreamEvent
@@ -4085,39 +4085,39 @@
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-mspcallrelease
                             - name: Método Init
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-init
-                            - name: Método de desligamento
+                            - name: Método ShutDown
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-shutdown
                             - name: Método InternalCreateStream
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-internalcreatestream
-                            - name: Método createstreamobject
+                            - name: Método CreateStreamObject
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-createstreamobject
                             - name: Método RemoveStream
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallbase-removestream
                     - name: CMSPCallMultiGraph
                       href: /windows/desktop/api/Mspcall/nl-mspcall-cmspcallmultigraph
                       items:
-                        - name: Definições de tipo de CMSPCallMultiGraph
+                        - name: Definições de tipo CMSPCallMultiGraph
                           href: cmspcallmultigraph-type-definitions.md
                           items:
                             - name: MSPSTREAMCONTEXT
                               href: /previous-versions/windows/desktop/legacy/ms733448(v=vs.85)
                             - name: THREADPOOLWAITBLOCK
                               href: /previous-versions/windows/desktop/legacy/ms734804(v=vs.85)
-                        - name: Membros do CMSPCallMultiGraph
+                        - name: Membros CMSPCallMultiGraph
                           href: cmspcallmultigraph-members.md
-                        - name: Métodos CMSPCallMultiGraph MSPI implementados
+                        - name: Métodos MSPI CMSPCallMultiGraph implementados
                           href: cmspcallmultigraph-mspi-methods-implemented.md
                           items:
                             - name: Método RemoveStream
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-removestream
-                        - name: Métodos públicos CMSPCallMultiGraph chamados por objeto MSPAddress
+                        - name: Métodos públicos CMSPCallMultiGraph chamados pelo objeto MSPAddress
                           href: cmspcallmultigraph-public-methods-called-by-mspaddress-object.md
                           items:
                             - name: Método Init
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-init
-                            - name: Método de desligamento
+                            - name: Método ShutDown
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-shutdown
-                        - name: Métodos públicos CMSPCallMultiGraph chamados pelo pool de threads
+                        - name: Métodos públicos CMSPCallMultiGraph chamados por pool de threads
                           href: cmspcallmultigraph-public-methods-called-by-thread-pool.md
                           items:
                             - name: Método DispatchGraphEvent
@@ -4126,7 +4126,7 @@
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-handlegraphevent
                             - name: Método ProcessGraphEvent
                               href: /windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-processgraphevent
-                        - name: Métodos CComObject substituídos CMSPCallMultiGraph
+                        - name: Métodos CComObject anulados por CMSPCallMultiGraph
                           href: cmspcallmultigraph-overriden-ccomobject-methods.md
                           items:
                             - name: Método FinalRelease
@@ -4143,18 +4143,18 @@
                     - name: CMSPStream
                       href: /windows/desktop/api/Mspstrm/nl-mspstrm-cmspstream
                       items:
-                        - name: Definições de tipo de CMSPStream
+                        - name: Definições de tipo CMSPStream
                           href: cmspstream-type-definitions.md
                         - name: Membros do CMSPStream
                           href: cmspstream-members.md
-                        - name: Métodos CMSPStream MSPI implementados
+                        - name: Métodos MSPI do CMSPStream implementados
                           href: cmspstream-mspi-methods-implemented.md
-                        - name: Métodos públicos CMSPStream chamados por objeto MSPCall
+                        - name: Métodos públicos CMSPStream chamados pelo objeto MSPCall
                           href: cmspstream-public-methods-called-by-mspcall-object.md
                           items:
                             - name: Método Init
                               href: /windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-init
-                            - name: Método de desligamento
+                            - name: Método ShutDown
                               href: /windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-shutdown
                             - name: Método GetState
                               href: /windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-getstate
@@ -4162,12 +4162,12 @@
                               href: /windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-handletspdata
                             - name: Método ProcessGraphEvent
                               href: /windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-processgraphevent
-                        - name: Métodos CComObject substituídos CMSPStream
+                        - name: Métodos CComObject anulados do CMSPStream
                           href: cmspstream-overriden-ccomobject-methods.md
                           items:
                             - name: Método FinalRelease
                               href: /windows/desktop/api/Mspstrm/nf-mspstrm-cmspstream-finalrelease
-                        - name: Métodos virtuais puros CMSPStream
+                        - name: Métodos virtuais puros do CMSPStream
                           href: cmspstream-pure-virtual-methods.md
                     - name: CBaseTerminal
                       href: cbaseterminal.md
@@ -4183,18 +4183,18 @@
                       href: cmspthread.md
                     - name: Problemas Abertos
                       href: open-issues.md
-                - name: Gerenciador de terminal TAPI 3
+                - name: TAPI 3 Terminal Manager
                   href: tapi-3-terminal-manager.md
                   items:
-                    - name: Terminal de streaming de mídia (MST)
+                    - name: MST (Terminal de Streaming de Mídia)
                       href: media-streaming-terminal-mst-.md
-                    - name: Referência do Gerenciador de terminal TAPI 3
+                    - name: Referência do Gerenciador de Terminal tapi 3
                       href: tapi-3-terminal-manager-reference.md
                       items:
                         - name: ITTerminalControl
                           href: /windows/desktop/api/Termmgr/nn-termmgr-itterminalcontrol
                           items:
-                            - name: Método de get_AddressHandle
+                            - name: Método get_AddressHandle
                               href: /windows/desktop/api/Termmgr/nf-termmgr-itterminalcontrol-get_addresshandle
                             - name: Método CompleteConnectTerminal
                               href: /windows/desktop/api/Termmgr/nf-termmgr-itterminalcontrol-completeconnectterminal
@@ -4220,12 +4220,12 @@
                               href: /windows/desktop/api/Termmgr/nf-termmgr-itterminalmanager2-getpluggablesuperclasses
                             - name: Método GetPluggableTerminalClasses
                               href: /windows/desktop/api/Termmgr/nf-termmgr-itterminalmanager2-getpluggableterminalclasses
-                - name: Gravando um terminal conectável
+                - name: Escrevendo um terminal plugável
                   href: writing-a-pluggable-terminal.md
                   items:
-                    - name: Implementando terminais conectáveis
+                    - name: Implementando terminais plug-able
                       href: implementing-pluggable-terminals.md
-            - name: Referência de MSPI (interface do provedor de serviços de mídia)
+            - name: Referência de MSPI (Interface do Provedor de Serviços de Mídia)
               href: media-service-provider-interface-mspi-reference.md
               items:
                 - name: IEnumStream
@@ -4280,11 +4280,11 @@
                       href: /windows/desktop/api/tapi3if/nf-tapi3if-itstream-stopstream
                     - name: Método UnselectTerminal
                       href: /windows/desktop/api/tapi3if/nf-tapi3if-itstream-unselectterminal
-                    - name: Método de get_Direction
+                    - name: Get_Direction método
                       href: /windows/desktop/api/tapi3if/nf-tapi3if-itstream-get_direction
-                    - name: Método de get_MediaType
+                    - name: Get_MediaType método
                       href: /windows/desktop/api/tapi3if/nf-tapi3if-itstream-get_mediatype
-                    - name: Método de get_Name
+                    - name: Get_Name método
                       href: /windows/desktop/api/tapi3if/nf-tapi3if-itstream-get_name
                     - name: Método de get_Terminals
                       href: /windows/desktop/api/tapi3if/nf-tapi3if-itstream-get_terminals

@@ -6,12 +6,12 @@ keywords:
 - efeito de transferência discreta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c05ef08f9ddf053eaa686cb0f88d4183194d9e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8c977e6d2b03a3496bfa9be84209a32f57094c8514f6760746f9ec967c2ff8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104564069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431387"
 ---
 # <a name="discrete-transfer-effect"></a>Efeito de transferência discreta
 
@@ -33,7 +33,7 @@ A imagem aqui mostra a entrada e a saída do efeito de transferência discreta.
 | Antes                                                            |
 |-------------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)        |
-| After (após)                                                             |
+| Depois                                                             |
 | ![a imagem após a transformação.](images/12-discretetransfer.png) |
 
 
@@ -106,8 +106,8 @@ Esta é a aparência do grafo da função de transferência discreta se as entra
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
+| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho Windows 7 \[ \| Windows aplicativos da loja\] |
 | parâmetro                   | d2d1effects. h                                                                      |
 | Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
 

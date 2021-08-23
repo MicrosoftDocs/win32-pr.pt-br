@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7670c3c516627283a466b3adbb369dc76bbe0d45
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 94d3ee659937508f52e38513006701494a01ed4ff95fe6c75c56bd9638137160
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119277826"
 ---
 # <a name="id3dxspritebegin-method"></a>Método ID3DXSprite:: Begin
 
@@ -40,7 +40,7 @@ HRESULT Begin(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -60,7 +60,7 @@ Para obter uma descrição dos sinalizadores e informações sobre como controla
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -119,29 +119,29 @@ Estados de estágio de textura:
 | 0                | D3DTSS \_ ALPHAOP                                                           | \_Modular D3DTOP |
 | 0                | D3DTSS \_ COLORARG1                                                         | \_Textura D3DTA   |
 | 0                | D3DTSS \_ COLORARG2                                                         | D3DTA \_ difuso   |
-| 0                | D3DTSS \_ COLOROP                                                           | \_Modular D3DTOP |
+| 0                | D3DTSS \_ COLOROP                                                           | D3DTOP \_ MODULARTE |
 | 0                | D3DTSS \_ TEXCOORDINDEX                                                     | 0                |
-| 0                | D3DTSS \_ TEXTURETRANSFORMFLAGS                                             | D3DTTFF \_ desabilitar |
-| 1                | D3DTSS \_ ALPHAOP                                                           | D3DTOP \_ desabilitar  |
-| 1                | D3DTSS \_ COLOROP                                                           | D3DTOP \_ desabilitar  |
+| 0                | TEXTURA \_ D3DTSSTRANSFORMFLAGS                                             | D3DTTFF \_ DISABLE |
+| 1                | D3DTSS \_ ALPHAOP                                                           | D3DTOP \_ DISABLE  |
+| 1                | D3DTSS \_ COLOROP                                                           | D3DTOP \_ DISABLE  |
 
 
 
  
 
-Estados de amostra:
+Estados do sampler:
 
 
 
-| Índice de estágio de amostra | Tipo ([**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)) | Valor                                                                                                          |
+| Índice de estágio do sampler | Tipo ([**D3DSAMPLERSTATETYPE**](./d3dsamplerstatetype.md)) | Valor                                                                                                          |
 |---------------------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| 0                   | Endereço de D3DSAMP \_                                               | D3DTADDRESS \_ fixe                                                                                             |
-| 0                   | D3DSAMP \_ ADDRESSV                                               | D3DTADDRESS \_ fixe                                                                                             |
-| 0                   | D3DSAMP \_ MAGFILTER                                              | D3DTEXF \_ ANISOTROPIC se TextureFilterCaps incluir D3DPTFILTERCAPS \_ MAGFANISOTROPIC; caso contrário, D3DTEXF \_ linear |
+| 0                   | D3DSAMP \_ ADDRESSU                                               | FIXE D3DTADDRESS \_                                                                                             |
+| 0                   | D3DSAMP \_ ADDRESSV                                               | FIXE D3DTADDRESS \_                                                                                             |
+| 0                   | D3DSAMP \_ MAGFILTER                                              | D3DTEXF \_ ANISFILTER SE TextureFilterCaps incluir D3DPTFILTERCAPS \_ MAGFANISFILTER; caso contrário, D3DTEXF \_ LINEAR |
 | 0                   | D3DSAMP \_ MAXMIPLEVEL                                            | 0                                                                                                              |
-| 0                   | D3DSAMP \_ MAXANISOTROPY                                          | MaxAnisotropy                                                                                                  |
-| 0                   | D3DSAMP \_ MINFILTER                                              | D3DTEXF \_ ANISOTROPIC se TextureFilterCaps incluir D3DPTFILTERCAPS \_ MINFANISOTROPIC; caso contrário, D3DTEXF \_ linear |
-| 0                   | D3DSAMP \_ MIPFILTER                                              | D3DTEXF \_ linear se TextureFilterCaps inclui D3DPTFILTERCAPS \_ MIPFLINEAR; caso contrário, D3DTEXF \_ ponto            |
+| 0                   | D3DSAMP \_ MAX VIP                                          | Max Ltda                                                                                                  |
+| 0                   | D3DSAMP \_ MINFILTER                                              | D3DTEXF \_ ANISFILTER SE TextureFilterCaps incluir D3DPTFILTERCAPS \_ MINFANISFILTER; caso contrário, D3DTEXF \_ LINEAR |
+| 0                   | D3DSAMP \_ MIPFILTER                                              | D3DTEXF \_ LINEAR se TextureFilterCaps incluir D3DPTFILTERCAPS \_ MIPFLINEAR; caso contrário, D3DTEXF \_ POINT            |
 | 0                   | D3DSAMP \_ MIPMAPLODBIAS                                          | 0                                                                                                              |
 | 0                   | D3DSAMP \_ SRGBTEXTURE                                            | 0                                                                                                              |
 
@@ -150,7 +150,7 @@ Estados de amostra:
  
 
 > [!Note]  
-> Esse método desabilita N-patches.
+> Esse método desabilita N patches.
 
  
 
@@ -160,8 +160,8 @@ Estados de amostra:
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

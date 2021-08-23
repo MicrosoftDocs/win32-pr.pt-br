@@ -1,6 +1,6 @@
 ---
 title: Atributo LM-pwd-History
-description: O histórico de senha do usuário no formato unidirecional do LM (LAN Manager) (). O LM OWF é usado para compatibilidade com clientes do LAN Manager 2. x, Windows 95 e Windows 98.
+description: O histórico de senha do usuário no formato unidirecional do LM (LAN Manager) (). o LM OWF é usado para compatibilidade com clientes do LAN Manager 2. x, Windows 95 e Windows 98.
 ms.assetid: c4cb2e74-b37d-4c76-8d21-d71bc9c19a4a
 ms.tgt_platform: multiple
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f5c73b35bb0ea2cae9d01324d82e1568485541
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 365c5989f7118408ef31b7a3f0c6b3d91f98502127ef2c5161a9f276296732b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301916"
 ---
 # <a name="lm-pwd-history-attribute"></a>Atributo LM-pwd-History
 

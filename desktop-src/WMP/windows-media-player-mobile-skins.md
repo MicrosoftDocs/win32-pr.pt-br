@@ -1,25 +1,25 @@
 ---
-title: Capas móveis do Windows Media Player
-description: Capas móveis do Windows Media Player
+title: Windows Media Player Capas móveis
+description: Windows Media Player Capas móveis
 ms.assetid: bcab41ed-db48-4070-b462-879f56bb6606
 keywords:
-- Windows Media Player Mobile, capas
-- Capas móveis do Windows Media Player, sobre
-- capas, Windows Media Player Mobile
+- Windows Media Player Dispositivos móveis, capas
+- Windows Media Player Capas móveis, sobre
+- capas, Windows Media Player dispositivos móveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 920a672000e7e7c3a5f470cac9e05ecb38985311
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 87196eb39fdbe0977f4d5baf5d298f339bb84f77d22f9e2e5579549c779a6b5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119246876"
 ---
-# <a name="windows-media-player-mobile-skins"></a>Capas móveis do Windows Media Player
+# <a name="windows-media-player-mobile-skins"></a>Windows Media Player Capas móveis
 
-O software móvel do Windows Media Player inclui uma aparência padrão que consiste em vários botões e controles deslizantes que você pode usar para reproduzir, retroceder ou parar mídia digital. Uma capa é uma interface do usuário personalizável que fornece uma aparência e uma funcionalidade exclusivas para o Windows Media Player Mobile.
+Windows Media Player O software móvel inclui uma aparência padrão que consiste em vários botões e controles deslizantes que você pode usar para reproduzir, retroceder ou parar mídia digital. uma capa é uma interface do usuário personalizável que fornece uma aparência e uma funcionalidade exclusivas para Windows Media Player dispositivos móveis.
 
-As seções a seguir descrevem como criar capas para o Windows Media Player Mobile.
+as seções a seguir descrevem como criar capas para Windows Media Player Mobile.
 
 
 
@@ -31,18 +31,18 @@ As seções a seguir descrevem como criar capas para o Windows Media Player Mobi
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Capas do Windows Media Player**](windows-media-player-skins.md)
+[**Windows Media Player Skin**](windows-media-player-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

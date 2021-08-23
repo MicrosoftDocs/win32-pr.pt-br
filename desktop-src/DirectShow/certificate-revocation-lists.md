@@ -4,12 +4,12 @@ ms.assetid: 146e7e4a-4281-4f5c-8346-d6c0d5f5442f
 title: Listas de Revogação de Certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b51ddee9f77b147d69b8895b3335d41e041da7f2
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 703bb8813e95ebfe07783fa07284b2ae7dad0df2ff8a9205234ee9a4514192d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105769220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537296"
 ---
 # <a name="certificate-revocation-lists"></a>Listas de Revogação de Certificados
 
@@ -17,15 +17,15 @@ Este tópico descreve como examinar a CRL (lista de certificados revogados) para
 
 A CRL contém resumos de certificados revogados e pode ser fornecida e assinada somente pela Microsoft. A CRL é distribuída por meio de licenças do DRM (gerenciamento de direitos digitais). A CRL pode revogar qualquer certificado na cadeia de certificados do driver. Se qualquer certificado na cadeia for revogado, esse certificado e todos os certificados abaixo dele na cadeia também serão revogados.
 
-Para obter a CRL, o aplicativo deve usar o Windows Media Format SDK, versão 9 ou posterior e executar as seguintes etapas:
+para obter a CRL, o aplicativo deve usar o SDK do formato de mídia Windows, versão 9 ou posterior e executar as seguintes etapas:
 
-1.  Chame **WMCreateReader** para criar o objeto leitor do Windows Media Format SDK.
+1.  chame **WMCreateReader** para criar o objeto leitor do SDK do formato de mídia Windows.
 2.  Consulte o objeto de leitor para a interface **IWMDRMReader** .
 3.  Chame **IWMDRMReader:: GetDRMProperty** com um valor de g \_ wszWMDRMNet \_ revogação para obter a CRL. Você deve chamar esse método duas vezes: uma vez para obter o tamanho do buffer a ser alocado e uma vez para preencher o buffer. A segunda chamada retorna uma cadeia de caracteres que contém a CRL. A cadeia de caracteres inteira é codificada em base 64.
 4.  Decodifique a cadeia de caracteres codificada em base 64. Você pode usar a função **CryptStringToBinary** para fazer isso. Essa função faz parte do CryptoAPI.
 
 > [!Note]  
-> Para usar a interface **IWMDRMReader** , você deve obter uma biblioteca de DRM estática da Microsoft e vincular seu aplicativo a esse arquivo de biblioteca. Para obter mais informações, consulte o tópico "obtendo a biblioteca de DRM necessária" na documentação do SDK do Windows Media Format.
+> Para usar a interface **IWMDRMReader** , você deve obter uma biblioteca de DRM estática da Microsoft e vincular seu aplicativo a esse arquivo de biblioteca. para obter mais informações, consulte o tópico "obtendo a biblioteca de DRM necessária" na documentação do SDK do formato de mídia do Windows.
 
  
 
@@ -175,7 +175,7 @@ A CRL tem o formato a seguir.
 
 | Seção            | Sumário                                                             |
 |--------------------|----------------------------------------------------------------------|
-| parâmetro             | version32-bit CRL de 32 bits-número de entradas                           |
+| Cabeçalho             | version32-bit CRL de 32 bits-número de entradas                           |
 | Entradas de revogação | Várias entradas de revogação de 160 bits                                  |
 | Certificado        | certificado de comprimento lengthVariable do certificado de 32 bits                 |
 | Assinatura          | assinatura de 8 bits type16-bit assinatura lengthVariable-assinatura de comprimento |
