@@ -4,12 +4,12 @@ ms.assetid: 3879d215-064b-4d7d-afae-2ed46569c8bf
 title: Criando superfícies de mapa de ambiente cúbico (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36be3067c6a5f21c39cfed7cab731ca875b70799
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0b37321978a40170d47718318e4b3f6898ba04d5fa229e97ada47e08e589fdcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608016"
 ---
 # <a name="creating-cubic-environment-map-surfaces-direct3d-9"></a>Criando superfícies de mapa de ambiente cúbico (Direct3D 9)
 
@@ -53,7 +53,7 @@ O primeiro parâmetro que o [**GetCubeMapSurface**](/windows/win32/api/d3d9helpe
 
  
 
-## <a name="rendering-to-cubic-environment-maps"></a>Renderizando para mapas de ambiente cúbico
+## <a name="rendering-to-cubic-environment-maps"></a>Renderizando para o ambiente cúbico Mapas
 
 Você pode copiar imagens para as faces individuais do mapa do cubo, assim como faria com qualquer outro objeto de textura ou superfície. A coisa mais importante a fazer antes de renderizar para uma face é definir as matrizes de transformação para que a câmera seja posicionada corretamente e aponte para a direção correta para essa face: encaminhar (+ z), voltar (-z), esquerda (-x), direita (+ x), up (+ y) ou Down (-y).
 

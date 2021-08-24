@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8b490fd47bd9346c4f514867de63df7a4d090e5b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 68a864ec2feb65a6ab38e647cb145e710f6a81086d69e3bffd797f3b3a00d654
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119367506"
 ---
 # <a name="texture2dgathercmpgreensfloatfloatint2int2int2int2uint-function"></a>Função Texture2D:: GatherCmpGreen (S, float, float, Int2, Int2, Int2, Int2, uint)
 
@@ -118,7 +118,7 @@ O status da operação. Você não pode acessar o status diretamente; em vez dis
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -132,7 +132,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

@@ -4,12 +4,12 @@ ms.assetid: 9166c43f-d2ae-4dc7-84e9-02146b67efe2
 title: Atributo MFT_CONNECTED_TO_HW_STREAM (Mftransform. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d5a3e8e4da74b3d581dd5ae4a53a03dc2b0fd67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31ff2a2dea2fcb67cff776ba02c43193b571a382df57a5d0562f3f2cd1fb7248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602866"
 ---
 # <a name="mft_connected_to_hw_stream-attribute"></a>MFT \_ conectado \_ ao \_ atributo de fluxo de HW \_
 
@@ -44,9 +44,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
 
 
 

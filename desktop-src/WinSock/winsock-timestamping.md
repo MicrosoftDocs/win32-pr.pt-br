@@ -3,12 +3,12 @@ title: Data/hora do Winsock
 description: Os timestamps de pacote são um recurso crucial para muitos aplicativos de sincronização de &mdash; relógio, por exemplo, o Protocolo de Tempo de Precisão. Quanto mais próxima a geração de timestamp estiver quando um pacote for recebido/enviado pelo hardware do adaptador de rede, mais preciso o aplicativo de sincronização poderá ser.
 ms.topic: article
 ms.date: 10/22/2020
-ms.openlocfilehash: eae0dce8c2c16bc187ef5522f323e7f36d7fc0b4
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 329c13d76fc0c4ce0d87550623e7419af14bfdd268bf359a8f50729e0b0596e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119568986"
 ---
 # <a name="winsock-timestamping"></a>Data/hora do Winsock
 
@@ -20,25 +20,25 @@ Portanto, as APIs de data/hora descritas neste tópico fornecem ao seu aplicativ
 
 ## <a name="receive-timestamps"></a>Receber os tempos de data/hora
 
-Você configura a recepção de data/hora de recebimento [**por meio do SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esse IOCTL para habilitar a recepção do timestamp de recebimento. Quando você recebe um datagrama usando a função [**LPFN_WSARECVMSG (WSARecvMsg),**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) seu timestamp (se disponível) está contido na mensagem **SO_TIMESTAMP** controle.
+Configure a recepção do timestamp de recebimento por meio [**do SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esse IOCTL para habilitar a recepção do timestamp de recebimento. Quando você recebe um datagrama usando a função [**LPFN_WSARECVMSG (WSARecvMsg),**](/windows/win32/api/mswsock/nc-mswsock-lpfn_wsarecvmsg) seu timestamp (se disponível) está contido na mensagem **SO_TIMESTAMP** controle.
 
 **SO_TIMESTAMP** (0x300A) é definido em `mstcpip.h` . Os dados da mensagem de controle são retornados como **um UINT64.**
 
 ## <a name="transmit-timestamps"></a>Transmitir os timestamps
 
-A recepção do timestamp de transmissão também é configurada por meio [**do SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esse IOCTL para habilitar a recepção do timestamp de transmissão e especifique o número de data/hora de transmissão que o sistema vai buffer. À medida que osstamps de hora de transmissão são gerados, eles são adicionados ao buffer. Se o buffer estiver cheio, novos carimbos de data/hora de transmissão serão descartados.
+A recepção do timestamp de transmissão também é configurada por meio [**do SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) IOCTL. Use esse IOCTL para habilitar a recepção do timestamp de transmissão e especifique o número de data/hora de transmissão que o sistema vai buffer. À medida que osstamps de hora de transmissão são gerados, eles são adicionados ao buffer. Se o buffer estiver cheio, os novos data/hora de transmissão serão descartados.
 
-Ao enviar um datagrama, associe o datagrama a uma mensagem de controle de **SO_TIMESTAMP_ID** . Deve conter um identificador exclusivo. Envie o datagrama, junto com sua mensagem de controle de **SO_TIMESTAMP_ID** , usando [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg). Os carimbos de data/hora de transmissão podem não estar imediatamente disponíveis após o retorno de **WSASendMsg** . À medida que os carimbos de data/hora de transmissão ficam disponíveis, eles são colocados em um buffer por soquete. Use o [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) IOCTL para sondar o carimbo de data/hora por sua ID. Se o carimbo de data/hora estiver disponível, ele será removido do buffer e retornado. Se o carimbo de data/hora não estiver disponível, [WSAGetLastError](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) retornará **WSAEWOULDBLOCK**. Se um carimbo de data/hora de transmissão for gerado enquanto o buffer estiver cheio, o novo carimbo de data/hora será Descartado.
+Ao enviar um datagrama, associe o datagrama a **uma SO_TIMESTAMP_ID** de controle. Isso deve conter um identificador exclusivo. Envie o datagrama, juntamente com sua **mensagem SO_TIMESTAMP_ID** de controle, usando [**WSASendMsg**](/windows/win32/api/winsock2/nf-winsock2-wsasendmsg). Os timestamps de transmissão podem não estar imediatamente disponíveis após o retorno de **WSASendMsg.** À medida que osstamps de tempo de transmissão ficam disponíveis, eles são colocados em um buffer por soquete. Use o [**SIO_GET_TX_TIMESTAMP**](/windows/win32/winsock/winsock-ioctls#sio_get_tx_timestamp) IOCTL para sondar o timestamp por sua ID. Se o timestamp estiver disponível, ele será removido do buffer e retornado. Se o timestamp não estiver disponível, [WSAGetLastError](/windows/win32/api/winsock/nf-winsock-wsagetlasterror) retornará **WSAEBLOCKBLOCK.** Se um timestamp de transmissão for gerado enquanto o buffer estiver cheio, o novo timestamp será descartado.
 
-**SO_TIMESTAMP_ID** (0x300B) é definido em `mstcpip.h` . Você deve fornecer os dados da mensagem de controle como um **UINT32**.
+**SO_TIMESTAMP_ID** (0x300B) é definido em `mstcpip.h` . Você deve fornecer os dados da mensagem de controle como **um UINT32.**
 
-Os carimbos de data/hora são representados como um valor de contador de 64 bits. A frequência do contador depende da origem do carimbo de data/hora. Para carimbos de data/hora de software, o contador é um valor de [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (Qpc) e você pode determinar sua frequência por meio de [**QueryPerformanceFrequency**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency). Para carimbos de data/hora de hardware NIC, a frequência do contador depende do hardware da NIC e você pode determinar isso com informações adicionais fornecidas pelo [**CaptureInterfaceHardwareCrossTimestamp**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp). Para determinar a fonte de carimbos de data/hora, use as funções [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) e [**GetInterfaceSupportedTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities) .
+Os timestamps são representados como um valor de contador de 64 bits. A frequência do contador depende da origem do timestamp. Para os timestamps de software, o contador é um valor [**QPC (QueryPerformanceCounter)**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) e você pode determinar sua frequência por meio de [**QueryPerformanceFrequency.**](/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency) Para os timestamps de hardware NIC, a frequência do contador depende do hardware da NIC e você pode determinar isso com informações adicionais fornecidas por [**CaptureInterfaceHardwareCrossTimestamp.**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) Para determinar a origem dos timestamps, use as funções [**GetInterfaceActiveTimestampCapabilities**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) e [**GetInterfaceSupportedTimestampCapabilities.**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities)
 
-Além da configuração em nível de soquete usando a opção de soquete [**SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) para habilitar a recepção de carimbo de data/hora para um soquete, a configuração de nível de sistema também é necessária.
+Além da configuração no nível do soquete usando a [**opção SIO_TIMESTAMPING**](/windows/win32/winsock/winsock-ioctls#sio_timestamping) soquete para habilitar a recepção de timestamp para um soquete, a configuração no nível do sistema também é necessária.
 
-## <a name="estimating-latency-of-socket-send-path"></a>Estimando a latência do caminho de envio do soquete
+## <a name="estimating-latency-of-socket-send-path"></a>Estimando a latência do caminho de envio de soquete
 
-Nesta seção, usaremos os carimbos de hora de transmissão para estimar a latência do caminho de envio do soquete. Se você tiver um aplicativo existente que consome os tempos de E/S no nível do aplicativo em que o timestamp precisa ser o mais próximo possível do ponto real de transmissão, este exemplo fornece uma descrição quantitativa de quanto as APIs de data/hora winsock podem melhorar a precisão &mdash; &mdash; do seu aplicativo.
+Nesta seção, vamos usar osstamps de tempo de transmissão para estimar a latência do caminho de envio do soquete. Se você tiver um aplicativo existente que consome os tempos de E/S no nível do aplicativo em que o timestamp precisa ser o mais próximo possível do ponto real de transmissão, este exemplo fornece uma descrição quantitativa de quanto as APIs de data/hora winsock podem melhorar a precisão &mdash; &mdash; do seu aplicativo.
 
 O exemplo presume que há apenas uma NIC (placa de adaptador de rede) no sistema e que *interfaceLuid* é o LUID desse adaptador.
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8f4601b7b4213c36e400a27d752df661eaa879e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 008d67ded91a7daa339c5eb1d6fc3441d44f6dc553c96a89586e25ddb85d07b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454736"
 ---
 # <a name="esentindextupleskeytoosmallexception-constructor"></a>Construtor EsentIndexTuplesKeyTooSmallException
 
 Inicializa uma nova instância da classe EsentIndexTuplesKeyTooSmallException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentIndexTuplesKeyTooSmallException()
 
 [Classe EsentIndexTuplesKeyTooSmallException](./esentindextupleskeytoosmallexception-class.md)
 
-[Membros do EsentIndexTuplesKeyTooSmallException](./esentindextupleskeytoosmallexception-members.md)
+[Membros EsentIndexTuplesKeyTooSmallException](./esentindextupleskeytoosmallexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

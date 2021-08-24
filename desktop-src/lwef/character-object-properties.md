@@ -4,24 +4,24 @@ description: Propriedades do objeto Character
 ms.assetid: 86748de2-f5c8-4057-bfa4-79d46cac1e62
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6212d6f0539b7fcb29faa883e6d88101952c12f5
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3c80e16bdb35d3fdfd8687eb15f200d2005ab75027e4dcc786f883d21232af4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119610686"
 ---
 # <a name="character-object-properties"></a>Propriedades do objeto Character
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 O objeto [**Character**](/windows/desktop/lwef/the-characters-object) expõe as seguintes propriedades:
 
--   [**Activo**](active-property.md)
+-   [**Ativo**](active-property.md)
 -   [**AutoPopupMenu**](autopopupmenu-property.md)
 -   [**Descrição**](description-property.md)
 -   [**ExtraData**](extradata-property.md)
--   [**VOLUME**](guid-property.md)
+-   [**GUID**](guid-property.md)
 -   [**HasOtherClients**](hasotherclients-property.md)
 -   [**Altura**](height-property.md)
 -   [**HelpContextid**](helpcontextid-property-ch.md)
@@ -34,16 +34,16 @@ O objeto [**Character**](/windows/desktop/lwef/the-characters-object) expõe as 
 -   [**Nome**](name-property.md)
 -   [**OriginalHeight**](originalheight-property.md)
 -   [**OriginalWidth**](originalwidth-property.md)
--   [**Zumbi**](pitch-property.md)
+-   [**Densidade**](pitch-property.md)
 -   [**SoundEffectsOn**](soundeffectson-property.md)
--   [**Velocidade**](speed-property.md)
+-   [**Rápida**](speed-property.md)
 -   [**SRModeID**](srmodeid-property.md)
 -   [**SRStatus**](srstatus-property.md)
 -   [**Início**](top-property.md)
 -   [**TTSModeID**](ttsmodeid-property.md)
 -   [**Versão**](version-property.md)
 -   [**VisibilityCause**](visibilitycause-property.md)
--   [**Visible**](visible-property-cob.md)
+-   [**Visível**](visible-property-cob.md)
 -   [**Largura**](width-property-co.md)
 
 Observe que as propriedades [**altura**](height-property.md), [**esquerda**](left-property.md), [**superior**](top-property.md)e [**largura**](width-property-co.md) de um caractere diferem das que podem ser suportadas pelo ambiente de programação para o posicionamento do controle. As propriedades de [**caractere**](/windows/desktop/lwef/the-characters-object) se aplicam à apresentação visível de um caractere, não ao local do controle do Microsoft Agent.
@@ -81,6 +81,6 @@ Assim como acontece com métodos de objeto de [**caractere**](/windows/desktop/l
 
 Como o servidor carrega um caractere de forma assíncrona, verifique se o caractere foi carregado antes de consultar suas propriedades, por exemplo, usando o evento [**RequestComplete**](requestcomplete-event.md) . Caso contrário, as propriedades podem retornar valores incorretos.
 
- 
+ 
 
- 
+ 

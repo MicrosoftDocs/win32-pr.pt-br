@@ -1,41 +1,41 @@
 ---
-description: O codificador do Windows Media Video 9 codificará fluxos de vídeo.
+description: o codificador de Windows de vídeo de mídia 9 codificará fluxos de vídeo.
 ms.assetid: 1d0a41bc-7f7c-4e25-860c-1108ab292951
-title: Codificador do Windows Media Video 9 (Wmcodecdsp. h)
+title: Windows Codificador de vídeo de mídia 9 (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c36ee5823c585d60ee74e75f99e8ec9b4d91f5cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 852d3d3e7feb06cfbe9e9149fd9fd55d76ecf5abe2fbe0d6eea6ac961a0561ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119398236"
 ---
-# <a name="windows-media-video-9-encoder"></a>Codificador do Windows Media Video 9
+# <a name="windows-media-video-9-encoder"></a>Windows Codificador de vídeo de mídia 9
 
-O codificador do Windows Media Video 9 codificará fluxos de vídeo. O codificador dá suporte às quatro categorias de saída codificadas a seguir.
+o codificador de Windows de vídeo de mídia 9 codificará fluxos de vídeo. O codificador dá suporte às quatro categorias de saída codificadas a seguir.
 
--   Perfil simples do Windows Media Video 9
--   Perfil principal do Windows Media Video 9
--   Perfil avançado do Windows Media Video 9
--   Imagem do vídeo 9,1 do Windows Media
+-   Windows Perfil simples de vídeo de mídia 9
+-   Windows Perfil principal do vídeo de mídia 9
+-   Windows Perfil avançado de vídeo de mídia 9
+-   Windows Imagem de vídeo de mídia 9,1
 
 ## <a name="class-identifier"></a>Identificador de classe
 
-O CLSID (identificador de classe) para o codificador de vídeo do Windows Media é representado pela constante **CLSID \_ CWMV9EncMediaObject**. Você pode criar uma instância do codificador de vídeo chamando **CoCreateInstance**.
+o identificador de classe (CLSID) para o codificador de vídeo de mídia Windows é representado pela constante **CLSID \_ CWMV9EncMediaObject**. Você pode criar uma instância do codificador de vídeo chamando **CoCreateInstance**.
 
 ## <a name="interfaces"></a>Interfaces
 
-Um objeto de codificador de vídeo expõe a interface [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que o objeto possa ser usado como um objeto de mídia do DirectX (DMO) e expõe a interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que o objeto possa ser usado como uma Media Foundation transformação (MFT).
+um objeto de codificador de vídeo expõe a interface [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject) para que o objeto possa ser usado como um objeto de mídia do DirectX (DMO) e expõe a interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para que o objeto possa ser usado como uma Media Foundation transformação (MFT).
 
-Um codificador de vídeo se comporta como um DMO ou um MFT dependendo de quais interfaces você obtém e qual versão do Windows está sendo executada. A tabela a seguir mostra as condições sob as quais um codificador de vídeo se comporta como um DMO ou um MFT.
+um codificador de vídeo se comporta como um DMO ou um MFT dependendo de quais interfaces você obtém e qual versão do Windows está em execução. a tabela a seguir mostra as condições sob as quais um codificador de vídeo se comporta como um DMO ou um MFT.
 
 
 
 | Sistema operacional            | Comportamento do codificador                                                                                                                                                      |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Windows XP                  | Um codificador de vídeo do Windows Media sempre se comporta como DMO.                                                                                                                |
-| Windows Vista e Windows 7 | Por padrão, um codificador de vídeo do Windows Media se comporta como DMO. Se você obtiver uma interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) em um codificador de vídeo, ela se comporta como um MFT. |
+| Windows XP                  | um codificador de vídeo de mídia Windows sempre se comporta como um DMO.                                                                                                                |
+| Windows Vista e Windows 7 | por padrão, um codificador de vídeo de mídia Windows se comporta como um DMO. Se você obtiver uma interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) em um codificador de vídeo, ela se comporta como um MFT. |
 
 
 
@@ -43,7 +43,7 @@ Um codificador de vídeo se comporta como um DMO ou um MFT dependendo de quais i
 
 ## <a name="input-formats"></a>Formatos de entrada
 
-O codificador de vídeo do Windows Media dá suporte aos seguintes subtipos de mídia de entrada quando ele está agindo como DMO.
+o codificador de vídeo de mídia Windows dá suporte aos seguintes subtipos de mídia de entrada quando ele está agindo como um DMO.
 
 -   MEDIASUBTYPE \_ IYUV
 -   MEDIASUBTYPE \_ I420
@@ -60,7 +60,7 @@ O codificador de vídeo do Windows Media dá suporte aos seguintes subtipos de m
 -   MEDIASUBTYPE \_ RGB8
 -   MEDIASUBTYPE \_ FOTOmotion
 
-O codificador de vídeo do Windows Media dá suporte aos seguintes subtipos de mídia de entrada quando ele está atuando como um MFT.
+o codificador de vídeo de mídia Windows dá suporte aos seguintes subtipos de mídia de entrada quando ele está atuando como um MFT.
 
 -   MFVideoFormat \_ IYUV
 -   MFVideoFormat \_ I420
@@ -85,10 +85,10 @@ A tabela a seguir mostra os códigos de quatro caracteres (FOURCC) que correspon
 
 | Categoria                               | FOURCC                                   |
 |----------------------------------------|------------------------------------------|
-| Perfil simples do Windows Media Video 9   | "WMV3"                                   |
-| Perfil principal do Windows Media Video 9     | "WMV3"                                   |
-| Perfil avançado do Windows Media Video 9 | "WVC1"                                   |
-| Imagem do vídeo 9,1 do Windows Media          | "WMVP" para 9,1, "WVP2" para 9,1 versão 2 |
+| Windows Perfil simples de vídeo de mídia 9   | "WMV3"                                   |
+| Windows Perfil principal do vídeo de mídia 9     | "WMV3"                                   |
+| Windows Perfil avançado de vídeo de mídia 9 | "WVC1"                                   |
+| Windows Imagem de vídeo de mídia 9,1          | "WMVP" para 9,1, "WVP2" para 9,1 versão 2 |
 
 
 
@@ -98,7 +98,7 @@ Para distinguir entre perfil simples e perfil principal, defina a propriedade [*
 
 ## <a name="properties"></a>Propriedades
 
-O codificador do Windows Media Video 9 dá suporte às propriedades a seguir.
+o codificador Windows Media Video 9 dá suporte às propriedades a seguir.
 
 
 
@@ -186,7 +186,7 @@ Somente gravação.<br />
 </tr>
 <tr class="even">
 <td><a href="mfpkey-compressionoptimizationtypeproperty.md"><strong>MFPKEY_COMPRESSIONOPTIMIZATIONTYPE</strong></a></td>
-<td>Especifica o tipo de otimização a ser usado para o codec de perfil avançado do Windows Media Video 9.<br/> <dl> Windows XP e posterior.<br />
+<td>especifica o tipo de otimização a ser usado para o codec de perfil avançado do vídeo do Windows Media 9.<br/> <dl> Windows XP e posterior.<br />
 Perfil simples, perfil principal, perfil avançado.<br />
 Gravação.<br />
 </dl></td>
@@ -532,7 +532,7 @@ Somente leitura<br />
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows XP, Windows Vista ou Windows 7<br/>                                       |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Wmvencod.dll</dt> </dl> |
 
 

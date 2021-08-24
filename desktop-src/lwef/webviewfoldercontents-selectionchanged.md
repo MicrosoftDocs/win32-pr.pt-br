@@ -3,7 +3,7 @@ title: Evento WebViewFolderContents. SelectionChanged (shldisp. h)
 description: Evento WebViewFolderContents. SelectionChanged – ocorre quando o estado de seleção de qualquer item ou itens na exibição é alterado.
 ms.assetid: 46dfceec-aa81-4950-81e5-526a6e621271
 keywords:
-- Recursos de ambiente herdado do Windows do evento SelectionChanged
+- recursos de ambiente herdado de Windows do evento selectionchanged
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea6176cb2a1703d48cd2ddec8069c65d7efc978f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4cccabe52d7370d22fa086e9e8664163771062e8828c8ab2a6d016df30f13350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607826"
 ---
 # <a name="webviewfoldercontentsselectionchanged-event"></a>Evento WebViewFolderContents. SelectionChanged
 
@@ -46,7 +46,7 @@ Este manipulador de eventos não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado desse evento para JScript Embedded em HTML.
+o exemplo a seguir mostra o uso apropriado desse evento para JScript inserido em HTML.
 
 
 ```HTML
@@ -84,7 +84,7 @@ O exemplo a seguir mostra o uso apropriado desse evento para JScript Embedded em
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

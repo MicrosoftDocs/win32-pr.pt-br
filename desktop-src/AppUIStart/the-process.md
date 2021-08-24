@@ -4,12 +4,12 @@ description: Esta seção descreve as três fases do design da interface do usu�
 ms.assetid: ab544cb9-eed3-4575-a8dd-2f5d7b5c575f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b531fb07a1805c14441c81777bbdddad0739e7cb
-ms.sourcegitcommit: e5c43274e96cb8fd1b60fc187ef16723e9258367
+ms.openlocfilehash: a3c7c965c5c7bfd0250c2116ee23bd91b2125ae5ea6bf15bd714ed13d58e000d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "104007027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589136"
 ---
 # <a name="overview-of-the-user-interface-development-process"></a>Visão geral do processo de desenvolvimento da interface do usuário
 
@@ -44,14 +44,14 @@ O seguinte descreve as fases típicas do processo de dvelopment da interface do 
 -   Protótipo – desenvolva papel ou tela interativa telas que se concentrem na interface e não inclua elementos de Design Visual confusos.
 -   Construção – compile o aplicativo e prepare-se para solicitações de alteração de design.
 
-### <a name="testing"></a>Teste
+### <a name="testing"></a>Testando
 
 -   Teste de usabilidade – teste o aplicativo com vários usuários e cenários.
 -   Teste de acessibilidade – teste o aplicativo com tecnologias acessíveis e ferramentas de teste automatizadas.
 
- 
+ 
 
- 
+ 
 
 
 

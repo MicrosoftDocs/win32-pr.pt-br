@@ -1,7 +1,7 @@
 ---
-description: Representa uma coleção que fornece recursos de computação e consiste em \_ objetos CIM ManagedSystemElement.
+description: Representa uma coleção que fornece recursos de computação e consiste em objetos CIM \_ ManagedSystemElement.
 ms.assetid: 410be43f-3368-4109-8b29-7b7cc2a3ec1b
-title: Classe CIM_ComputerSystem (gerenciamento do Hyper-V)
+title: CIM_ComputerSystem classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 00a53d0c514113175c3c6ffb7ea40f8ef4e730d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd8aac2c3846c65b633061d15e6b4311b18c0a84663eca28cf2a928df2b13f4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119431596"
 ---
-# <a name="cim_computersystem-class-hyper-v-management"></a>Classe CIM_ComputerSystem (gerenciamento do Hyper-V)
+# <a name="cim_computersystem-class-hyper-v-management"></a>CIM_ComputerSystem classe (gerenciamento do Hyper-V)
 
-Representa uma coleção que fornece recursos de computação e consiste em objetos [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md) .
+Representa uma coleção que fornece recursos de computação e consiste em [**objetos CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,20 +45,20 @@ class CIM_ComputerSystem : CIM_System
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ sistema CIM** tem estes tipos de membros:
+A **classe \_ ComputerSystem cim** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ ComputerSystem de CIM** tem esses métodos.
+A **classe \_ ComputerSystem cim** tem esses métodos.
 
 
 
 | Método                                                    | Descrição                                                                                                                                                                                                          |
 |:----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**SetPowerState**](cim-computersystem-setpowerstate.md) | Esse método é preterido. Em vez disso, use o método **RequestPowerStateChange** na classe **CIM \_ PowerManagementService** .<br/> **Descrição preterida:** Define o estado de energia do computador.<br/> |
+| [**SetPowerState**](cim-computersystem-setpowerstate.md) | Esse método é preterido. Em vez disso, use **o método RequestPowerStateChange** na **classe CIM \_ PowerManagementService.**<br/> **Descrição preterida:** Define o estado de energia do computador.<br/> |
 
 
 
@@ -66,29 +66,29 @@ A classe de **\_ ComputerSystem de CIM** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ ComputerSystem de CIM** tem essas propriedades.
+A **classe \_ ComputerSystem CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **Dedicado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. \| Serviços deMIB-II.sysIETF "," FC-GS. INCITS-T11 \| Platform \| platformtype "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ComputerSystem**.**OtherDedicatedDescriptions**")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \|MIB-II.sysServices", "FC-GS. INCITS-T11 \| \| Platform PlatformType"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ComputerSystem**.**OtherDedicatedDescriptions**")
 </dt> </dl>
 
-A finalidade e os recursos do sistema de computador. Por exemplo, um sistema dedicado à impressão poderia especificar "11" (impressão). Um sistema de uso geral com recursos de impressão pode ser definido como "0" (não dedicado) e "11" (impressão).
+A finalidade e os recursos do sistema de computador. Por exemplo, um sistema dedicado à impressão pode especificar "11" (Imprimir). Um sistema de uso geral com funcionalidades de impressão pode ser definido como "0" (Não Dedicado) e "11" (Impressão).
 
 <dt>
 
 <span id="Not_Dedicated"></span><span id="not_dedicated"></span><span id="NOT_DEDICATED"></span>
 
-<span id="Not_Dedicated"></span><span id="not_dedicated"></span><span id="NOT_DEDICATED"></span>**Não dedicado** (0)
+<span id="Not_Dedicated"></span><span id="not_dedicated"></span><span id="NOT_DEDICATED"></span>**Não Dedicado** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -102,7 +102,7 @@ A finalidade e os recursos do sistema de computador. Por exemplo, um sistema ded
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (2)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -130,14 +130,14 @@ A finalidade e os recursos do sistema de computador. Por exemplo, um sistema ded
 
 <span id="Layer_3_Switch"></span><span id="layer_3_switch"></span><span id="LAYER_3_SWITCH"></span>
 
-<span id="Layer_3_Switch"></span><span id="layer_3_switch"></span><span id="LAYER_3_SWITCH"></span>**Comutador de camada 3** (6)
+<span id="Layer_3_Switch"></span><span id="layer_3_switch"></span><span id="LAYER_3_SWITCH"></span>**Opção de camada 3** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Central_Office_Switch"></span><span id="central_office_switch"></span><span id="CENTRAL_OFFICE_SWITCH"></span>
 
-<span id="Central_Office_Switch"></span><span id="central_office_switch"></span><span id="CENTRAL_OFFICE_SWITCH"></span>**Comutador central do Office** (7)
+<span id="Central_Office_Switch"></span><span id="central_office_switch"></span><span id="CENTRAL_OFFICE_SWITCH"></span>**Comut Office Central** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -151,7 +151,7 @@ A finalidade e os recursos do sistema de computador. Por exemplo, um sistema ded
 
 <span id="Access_Server"></span><span id="access_server"></span><span id="ACCESS_SERVER"></span>
 
-<span id="Access_Server"></span><span id="access_server"></span><span id="ACCESS_SERVER"></span>**Servidor de acesso** (9)
+<span id="Access_Server"></span><span id="access_server"></span><span id="ACCESS_SERVER"></span>**Servidor de Acesso** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -172,14 +172,14 @@ A finalidade e os recursos do sistema de computador. Por exemplo, um sistema ded
 
 <span id="I_O"></span><span id="i_o"></span>
 
-<span id="I_O"></span><span id="i_o"></span>**E/s** (12)
+<span id="I_O"></span><span id="i_o"></span>**E/S** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Web_Caching"></span><span id="web_caching"></span><span id="WEB_CACHING"></span>
 
-<span id="Web_Caching"></span><span id="web_caching"></span><span id="WEB_CACHING"></span>**Cache da Web** (13)
+<span id="Web_Caching"></span><span id="web_caching"></span><span id="WEB_CACHING"></span>**Web Caching** (13)
 
 
 </dt> <dd></dd> <dt>
@@ -191,20 +191,20 @@ A finalidade e os recursos do sistema de computador. Por exemplo, um sistema ded
 
 </dt> <dd>
 
-Esta instância é dedicada à hospedagem do software de gerenciamento do sistema
+Esta instância é dedicada à hospedagem de software de gerenciamento de sistema
 
 </dd> <dt>
 
 <span id="Block_Server"></span><span id="block_server"></span><span id="BLOCK_SERVER"></span>
 
-<span id="Block_Server"></span><span id="block_server"></span><span id="BLOCK_SERVER"></span>**Servidor de blocos** (15)
+<span id="Block_Server"></span><span id="block_server"></span><span id="BLOCK_SERVER"></span>**Servidor de bloco** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="File_Server"></span><span id="file_server"></span><span id="FILE_SERVER"></span>
 
-<span id="File_Server"></span><span id="file_server"></span><span id="FILE_SERVER"></span>**Servidor de arquivos** (16)
+<span id="File_Server"></span><span id="file_server"></span><span id="FILE_SERVER"></span>**Servidor de** Arquivos (16)
 
 
 </dt> <dd></dd> <dt>
@@ -216,20 +216,20 @@ Esta instância é dedicada à hospedagem do software de gerenciamento do sistem
 
 </dt> <dd>
 
-Um exemplo de um dispositivo de usuário dedicado é um telefone celular ou um scanner de código de barras em um repositório que se comunica via radiofrequência. Esses sistemas são bastante limitados em funcionalidade e programação e não são considerados plataformas de computação de "finalidade geral". Como alternativa, um exemplo de um sistema móvel que é ' finalidade geral ' (ou seja, não é dedicado) é um computador de bolso. Embora limitado em sua programação, o novo software pode ser baixado e sua funcionalidade expandida pelo usuário.
+Um exemplo de um dispositivo de usuário dedicado é um telefone celular ou um scanner de código de barras em uma loja que se comunica por meio da frequência de rádio. Esses sistemas são bastante limitados em funcionalidade e programação e não são considerados plataformas de computação de "finalidade geral". Como alternativa, um exemplo de um sistema móvel que é 'uso geral' (ou seja, NÃO é dedicado) é um computador manual. Embora limitado em sua programação, novos softwares podem ser baixados e sua funcionalidade expandida pelo usuário.
 
 </dd> <dt>
 
 <span id="Repeater"></span><span id="repeater"></span><span id="REPEATER"></span>
 
-<span id="Repeater"></span><span id="repeater"></span><span id="REPEATER"></span>**Repeater** (18)
+<span id="Repeater"></span><span id="repeater"></span><span id="REPEATER"></span>**Repetidor** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bridge_Extender"></span><span id="bridge_extender"></span><span id="BRIDGE_EXTENDER"></span>
 
-<span id="Bridge_Extender"></span><span id="bridge_extender"></span><span id="BRIDGE_EXTENDER"></span>**Ponte/extensor** (19)
+<span id="Bridge_Extender"></span><span id="bridge_extender"></span><span id="BRIDGE_EXTENDER"></span>**Bridge/Extender** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -243,14 +243,14 @@ Um exemplo de um dispositivo de usuário dedicado é um telefone celular ou um s
 
 <span id="Storage_Virtualizer"></span><span id="storage_virtualizer"></span><span id="STORAGE_VIRTUALIZER"></span>
 
-<span id="Storage_Virtualizer"></span><span id="storage_virtualizer"></span><span id="STORAGE_VIRTUALIZER"></span>**Virtualização de armazenamento** (21)
+<span id="Storage_Virtualizer"></span><span id="storage_virtualizer"></span><span id="STORAGE_VIRTUALIZER"></span>**Armazenamento Virtualizer** (21)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Media_Library"></span><span id="media_library"></span><span id="MEDIA_LIBRARY"></span>
 
-<span id="Media_Library"></span><span id="media_library"></span><span id="MEDIA_LIBRARY"></span>**Biblioteca de mídia** (22)
+<span id="Media_Library"></span><span id="media_library"></span><span id="MEDIA_LIBRARY"></span>**Biblioteca de Mídia** (22)
 
 
 </dt> <dd></dd> <dt>
@@ -264,28 +264,28 @@ Um exemplo de um dispositivo de usuário dedicado é um telefone celular ou um s
 
 <span id="NAS_Head"></span><span id="nas_head"></span><span id="NAS_HEAD"></span>
 
-<span id="NAS_Head"></span><span id="nas_head"></span><span id="NAS_HEAD"></span>**Cabeçalho do nas** (24)
+<span id="NAS_Head"></span><span id="nas_head"></span><span id="NAS_HEAD"></span>**Cabeça do NAS** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Self-contained_NAS"></span><span id="self-contained_nas"></span><span id="SELF-CONTAINED_NAS"></span>
 
-<span id="Self-contained_NAS"></span><span id="self-contained_nas"></span><span id="SELF-CONTAINED_NAS"></span>**Nas** independente (25)
+<span id="Self-contained_NAS"></span><span id="self-contained_nas"></span><span id="SELF-CONTAINED_NAS"></span>**NAS autossu contido** (25)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UPS"></span><span id="ups"></span>
 
-<span id="UPS"></span><span id="ups"></span>**Ups** (26)
+<span id="UPS"></span><span id="ups"></span>**UPS** (26)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IP_Phone"></span><span id="ip_phone"></span><span id="IP_PHONE"></span>
 
-<span id="IP_Phone"></span><span id="ip_phone"></span><span id="IP_PHONE"></span>**Telefone IP** (27)
+<span id="IP_Phone"></span><span id="ip_phone"></span><span id="IP_PHONE"></span>**IP Telefone** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -297,20 +297,20 @@ Um exemplo de um dispositivo de usuário dedicado é um telefone celular ou um s
 
 </dt> <dd>
 
-Essa instância representa um hardware especializado dedicado ao gerenciamento de sistemas (ou seja, um controlador BMC ou processador de serviço).
+Essa instância representa um hardware especializado dedicado ao gerenciamento de sistemas (ou seja, um BMC (Controlador de Gerenciamento de Placa Base) ou processador de serviço.
 
-O escopo de gerenciamento de um "controlador de gerenciamento" é normalmente um único sistema gerenciado no qual ele está contido.
+O escopo de gerenciamento de um "Controlador de Gerenciamento" normalmente é um único sistema gerenciado no qual ele está contido.
 
 </dd> <dt>
 
 <span id="Chassis_Manager"></span><span id="chassis_manager"></span><span id="CHASSIS_MANAGER"></span>
 
-<span id="Chassis_Manager"></span><span id="chassis_manager"></span><span id="CHASSIS_MANAGER"></span>**Gerente do chassi** (29)
+<span id="Chassis_Manager"></span><span id="chassis_manager"></span><span id="CHASSIS_MANAGER"></span>**Gerenciador de Chassis** (29)
 
 
 </dt> <dd>
 
-Essa instância representa um sistema dedicado ao gerenciamento de um chassi de folha e seus dispositivos independentes. Esse valor seria usado para representar um controlador de prateleira. Um "Gerenciador de chassis" é um ponto de agregação para gerenciamento e pode depender de controladores de gerenciamento subordinados para o gerenciamento de partes constituintes.
+Essa instância representa um sistema dedicado ao gerenciamento de um chassi de folha e seus dispositivos contidos. Esse valor seria usado para representar um Controlador de Prateleira. Um "Gerenciador de Chassis" é um ponto de agregação para gerenciamento e pode contar com controladores de gerenciamento subordinados para o gerenciamento de partes constituintes.
 
 </dd> <dt>
 
@@ -327,7 +327,7 @@ Essa instância representa um controlador de armazenamento RAID contido em um co
 
 <span id="Storage_Device_Enclosure"></span><span id="storage_device_enclosure"></span><span id="STORAGE_DEVICE_ENCLOSURE"></span>
 
-<span id="Storage_Device_Enclosure"></span><span id="storage_device_enclosure"></span><span id="STORAGE_DEVICE_ENCLOSURE"></span>**Compartimento de dispositivo de armazenamento** (31)
+<span id="Storage_Device_Enclosure"></span><span id="storage_device_enclosure"></span><span id="STORAGE_DEVICE_ENCLOSURE"></span>**Armazenamento compartimento do dispositivo** (31)
 
 
 </dt> <dd>
@@ -338,7 +338,7 @@ Essa instância representa um compartimento que contém dispositivos de armazena
 
 <span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>
 
-<span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>**Área de trabalho** (32)
+<span id="Desktop"></span><span id="desktop"></span><span id="DESKTOP"></span>**Área de** trabalho (32)
 
 
 </dt> <dd></dd> <dt>
@@ -352,18 +352,18 @@ Essa instância representa um compartimento que contém dispositivos de armazena
 
 <span id="Virtual_Tape_Library"></span><span id="virtual_tape_library"></span><span id="VIRTUAL_TAPE_LIBRARY"></span>
 
-<span id="Virtual_Tape_Library"></span><span id="virtual_tape_library"></span><span id="VIRTUAL_TAPE_LIBRARY"></span>**Biblioteca de fitas virtuais** (34)
+<span id="Virtual_Tape_Library"></span><span id="virtual_tape_library"></span><span id="VIRTUAL_TAPE_LIBRARY"></span>**Biblioteca de Fitas Virtuais** (34)
 
 
 </dt> <dd>
 
-A emulação de uma biblioteca de fitas por um sistema de biblioteca virtual.
+A emulação de uma biblioteca de fitas por um Sistema de Biblioteca Virtual.
 
 </dd> <dt>
 
 <span id="Virtual_Library_System"></span><span id="virtual_library_system"></span><span id="VIRTUAL_LIBRARY_SYSTEM"></span>
 
-<span id="Virtual_Library_System"></span><span id="virtual_library_system"></span><span id="VIRTUAL_LIBRARY_SYSTEM"></span>**Sistema de biblioteca virtual** (35)
+<span id="Virtual_Library_System"></span><span id="virtual_library_system"></span><span id="VIRTUAL_LIBRARY_SYSTEM"></span>**Sistema de Biblioteca Virtual** (35)
 
 
 </dt> <dd>
@@ -374,50 +374,50 @@ Usa o armazenamento em disco para emular bibliotecas de fitas
 
 <span id="Network_PC_Thin_Client"></span><span id="network_pc_thin_client"></span><span id="NETWORK_PC_THIN_CLIENT"></span>
 
-<span id="Network_PC_Thin_Client"></span><span id="network_pc_thin_client"></span><span id="NETWORK_PC_THIN_CLIENT"></span>**PC de rede/cliente fino** (36)
+<span id="Network_PC_Thin_Client"></span><span id="network_pc_thin_client"></span><span id="NETWORK_PC_THIN_CLIENT"></span>**Pc de rede/Cliente Fino** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_Switch"></span><span id="fc_switch"></span><span id="FC_SWITCH"></span>
 
-<span id="FC_Switch"></span><span id="fc_switch"></span><span id="FC_SWITCH"></span>**Comutador FC** (37)
+<span id="FC_Switch"></span><span id="fc_switch"></span><span id="FC_SWITCH"></span>**Opção FC** (37)
 
 
 </dt> <dd>
 
-Dedicado a alternar quadros de Fibre Channel de camada 2.
+Dedicado à alternação de quadros de fibre channel de camada 2.
 
 </dd> <dt>
 
 <span id="Ethernet_Switch"></span><span id="ethernet_switch"></span><span id="ETHERNET_SWITCH"></span>
 
-<span id="Ethernet_Switch"></span><span id="ethernet_switch"></span><span id="ETHERNET_SWITCH"></span>**Comutador Ethernet** (38)
+<span id="Ethernet_Switch"></span><span id="ethernet_switch"></span><span id="ETHERNET_SWITCH"></span>**Opção Ethernet** (38)
 
 
 </dt> <dd>
 
-Dedicado a alternar quadros de Ethernet de camada 2
+Dedicado à alternação de quadros ethernet de camada 2
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor reservado** (32568.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor Reservado** (32568..65535)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**NameFormat**
+**Nameformat**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -426,10 +426,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("NameFormat")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("NameFormat")
 </dt> </dl>
 
-O formato do nome do sistema do computador.
+O formato do nome do sistema de computador.
 
 <dt>
 
@@ -449,7 +449,7 @@ O formato do nome do sistema do computador.
 
 
 
- ("Discar")
+ ("Dial")
 
 
 </dt> <dd></dd> <dt>
@@ -512,7 +512,7 @@ O formato do nome do sistema do computador.
 
 
 
- ("E. 164")
+ ("E.164")
 
 
 </dt> <dd></dd> <dt>

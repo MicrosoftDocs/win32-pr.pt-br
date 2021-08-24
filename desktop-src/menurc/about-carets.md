@@ -1,62 +1,62 @@
 ---
-title: Sobre os Cursors
-description: Este tópico discute os Cursors.
+title: Sobre carets
+description: Este tópico aborda os pontos de cuidado.
 ms.assetid: 4487c93c-9a0f-467c-86b1-969f664d5526
 keywords:
-- recursos, Cursors
-- Cursors, removendo
+- recursos, pontos de cuidado
+- carets, removendo
 - linhas piscando
 - blocos piscando
 - bitmaps piscando
-- interpolações, visibilidade
-- interpolações, tempos de intermitência
-- horários de intermitência
-- Cursors, posições
-- removendo os Cursors
+- carets, visibilidade
+- carets, tempos de piscar
+- tempos de piscar
+- carets,positions
+- removendo os pontos de cuidado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a19eb3895ada13297f090a09529b2bcb7c75dee
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 65ed2cbe50771b893c7a2ccc0874a882aabb23a1d0b4ba27822d7ce0ec47a18b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105811607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461316"
 ---
-# <a name="about-carets"></a>Sobre os Cursors
+# <a name="about-carets"></a>Sobre carets
 
-O sistema fornece um acento circunflexo por fila de mensagens. Uma janela deve criar um cursor somente quando ele tem o foco do teclado ou está ativo. A janela deve destruir o cursor antes de perder o foco do teclado ou se tornar inativo. Para obter mais informações sobre a entrada do teclado, consulte [entrada do teclado](/windows/desktop/inputdev/keyboard-input).
+O sistema fornece um a caret por fila de mensagens. Uma janela deve criar um achamado somente quando ele tiver o foco do teclado ou estiver ativo. A janela deve destruir o a tecla caret antes de perder o foco do teclado ou ficar inativa. Para obter mais informações sobre a entrada do teclado, consulte [Entrada do teclado.](/windows/desktop/inputdev/keyboard-input)
 
-Use a função [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) para especificar os parâmetros de um cursor. O sistema forma um cursor invertendo a cor do pixel dentro do retângulo especificado pela posição, largura e altura do cursor. A largura e a altura são especificadas em unidades lógicas; Portanto, a aparência de um cursor está sujeita ao modo de mapeamento da janela.
+Use a [**função CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) para especificar os parâmetros de um acento. O sistema forma um a careta invertendo a cor do pixel dentro do retângulo especificado pela posição, largura e altura do caret. A largura e a altura são especificadas em unidades lógicas; portanto, a aparência de um cursor está sujeita ao modo de mapeamento da janela.
 
 Os tópicos a seguir são discutidos nesta seção.
 
--   [Visibilidade do cursor](#caret-visibility)
--   [Tempo de intermitência do cursor](#caret-blink-time)
--   [Posição do cursor](#caret-position)
--   [Removendo um cursor](#removing-a-caret)
+-   [Visibilidade do caret](#caret-visibility)
+-   [Horário de piscar do a caret](#caret-blink-time)
+-   [Posição do caret](#caret-position)
+-   [Removendo um caret](#removing-a-caret)
 
-## <a name="caret-visibility"></a>Visibilidade do cursor
+## <a name="caret-visibility"></a>Visibilidade do caret
 
-Depois que o cursor for definido, use a função de [**Iscaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) para tornar o cursor visível. Quando o cursor é exibido, ele começa a piscar automaticamente. Para exibir um cursor sólido, o sistema inverte todos os pixels no retângulo; para exibir um cursor cinza, o sistema inverte todos os outros pixels; para exibir um cursor de bitmap, o sistema inverte apenas os bits brancos do bitmap.
+Depois que o cursor for definido, use a [**função ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) para tornar o cursor visível. Quando o cursor é exibido, ele começa automaticamente a piscar. Para exibir um a careta sólido, o sistema inverte cada pixel no retângulo; para exibir um acinzenta, o sistema inverte todos os outros pixels; para exibir um bitmap caret, o sistema inverte apenas os bits em branco do bitmap.
 
-## <a name="caret-blink-time"></a>Tempo de intermitência do cursor
+## <a name="caret-blink-time"></a>Horário de piscar do a caret
 
-O tempo decorrido, em milissegundos, necessário para inverter o cursor é chamado de *tempo de intermitência*. O cursor piscará contanto que o thread proprietário da fila de mensagens tenha um bombeamento de mensagens processando as mensagens.
+O tempo decorrido, em milissegundos, necessário para inverter o aro é chamado de hora *de piscar.* O afileiramento piscará, desde que o thread que possui a fila de mensagens tenha uma bomba de mensagens que processa as mensagens.
 
-O usuário pode definir o tempo de intermitência do cursor usando o painel de controle e os aplicativos devem respeitar as configurações que o usuário escolheu. Um aplicativo pode determinar o tempo de intermitência do cursor usando a função [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) . Se você estiver escrevendo um aplicativo que permite ao usuário ajustar o tempo de intermitência, como um miniaplicativo do painel de controle, use a função [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para definir a taxa do tempo de intermitência para um número especificado de milissegundos.
+O usuário pode definir a hora de piscar do cursor usando o Painel de Controle e os aplicativos devem respeitar as configurações escolhidas pelo usuário. Um aplicativo pode determinar o tempo de piscar do aro usando a [**função GetCaretBlinkTime.**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) Se você estiver escrevendo um aplicativo que permite que o usuário ajuste a hora de piscar, como um applet Painel de Controle, use a função [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para definir a taxa do tempo de piscar para um número especificado de milissegundos.
 
-O *tempo de flash* é o tempo decorrido, em milissegundos, necessário para exibir, inverter e restaurar a exibição do cursor. A hora de flash de um cursor é duas vezes maior do que o tempo de intermitência.
+O *tempo de flash* é o tempo decorrido, em milissegundos, necessário para exibir, inverter e restaurar a exibição do aro. O tempo de flash de um a careta é duas vezes maior que a hora de piscar.
 
-## <a name="caret-position"></a>Posição do cursor
+## <a name="caret-position"></a>Posição do caret
 
-Você pode determinar a posição do cursor usando a função [**GetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-getcaretpos) . A posição, em coordenadas do cliente, é copiada para uma estrutura especificada por um parâmetro em **GetCaretPos**. Um aplicativo pode mover um cursor em uma janela usando a função [**SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) . Uma janela pode mover um cursor somente se ele já possuir o cursor. **SetCaretPos** pode mover o cursor se ele estiver visível ou não.
+Você pode determinar a posição do aro usando a [**função GetCaretPos.**](/windows/desktop/api/Winuser/nf-winuser-getcaretpos) A posição, em coordenadas do cliente, é copiada para uma estrutura especificada por um parâmetro em **GetCaretPos.** Um aplicativo pode mover um aro em uma janela usando a [**função SetCaretPos.**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) Uma janela só poderá mover um a caret se ele já tiver o achamado. **SetCaretPos** pode mover o aro se ele está visível ou não.
 
-## <a name="removing-a-caret"></a>Removendo um cursor
+## <a name="removing-a-caret"></a>Removendo um caret
 
-Você pode remover temporariamente um cursor ocultando-o ou pode remover permanentemente o cursor destruindo-o. Para ocultar o cursor, use a função [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) . Isso é útil quando seu aplicativo precisa redesenhar a tela durante o processamento de uma mensagem, mas deve manter o cursor fora do caminho. Quando o aplicativo termina o desenho, ele pode exibir o cursor novamente usando a função de [**Iscaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) . Ocultar o cursor não destrói sua forma ou invalidar o ponto de inserção. Ocultar o cursor é cumulativo; ou seja, se o aplicativo chamar **HideCaret** cinco vezes, ele também deverá chamar o **cuidado** cinco vezes antes que o cursor reapareça.
+Você pode remover temporariamente um a carete ocultando-o ou pode remover permanentemente o a caret, destrói-o. Para ocultar o aro, use a [**função HideCaret.**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) Isso é útil quando seu aplicativo deve redesenhar a tela durante o processamento de uma mensagem, mas deve manter o sinal de adoção fora do caminho. Quando o aplicativo terminar de desenhar, ele poderá exibir o aro novamente usando a [**função ShowCaret.**](/windows/desktop/api/Winuser/nf-winuser-showcaret) Ocultar o a careta não destrói sua forma nem invalida o ponto de inserção. Ocultar o a careta é cumulativo; ou seja, se o aplicativo chamar **HideCaret** cinco vezes, ele também deverá chamar **ShowCaret** cinco vezes antes que o aro reaparecer.
 
-Para remover o cursor da tela e destruir sua forma, use usando a função [**DestroyCaret**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) . **DestroyCaret** destrói o cursor somente se a janela envolvida na tarefa atual possuir o cursor.
+Para remover o aro da tela e destruir sua forma, use a [**função DestroyCaret.**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) **DestroyCaret** destruirá o aro somente se a janela envolvida na tarefa atual possuir o aro.
 
- 
+ 
 
- 
+ 

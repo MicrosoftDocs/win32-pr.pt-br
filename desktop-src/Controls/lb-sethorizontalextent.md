@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_SETHORIZONTALEXTENT (WinUser. h)
+title: LB_SETHORIZONTALEXTENT mensagem (Winuser.h)
 description: Define a largura, em pixels, pela qual uma caixa de listagem pode ser rolada horizontalmente (a largura rolável).
 ms.assetid: 7d59b6de-2a22-4246-936b-4c669d285392
 keywords:
-- Controles de LB_SETHORIZONTALEXTENT de mensagens do Windows
+- LB_SETHORIZONTALEXTENT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ded17b9ea2d78a77b030950877047256d0e2a1a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce248354b853dd3be15e76646958ed25068648182970d748da35fb5c596ca49e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433875"
 ---
-# <a name="lb_sethorizontalextent-message"></a>SETHORIZONTALEXTENT de mensagens de LB \_
+# <a name="lb_sethorizontalextent-message"></a>Mensagem \_ LBORIZONTALEXTENT
 
-Define a largura, em pixels, pela qual uma caixa de listagem pode ser rolada horizontalmente (a largura rolável). Se a largura da caixa de listagem for menor que esse valor, a barra de rolagem horizontal rolará horizontalmente os itens na caixa de listagem. Se a largura da caixa de listagem for igual ou maior que esse valor, a barra de rolagem horizontal ficará oculta.
+Define a largura, em pixels, pela qual uma caixa de listagem pode ser rolada horizontalmente (a largura rolável). Se a largura da caixa de listagem for menor que esse valor, a barra de rolagem horizontal rolará os itens horizontalmente na caixa de listagem. Se a largura da caixa de listagem for igual ou maior que esse valor, a barra de rolagem horizontal será oculta.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,7 +34,7 @@ Define a largura, em pixels, pela qual uma caixa de listagem pode ser rolada hor
 
 Especifica o número de pixels pelos quais a caixa de listagem pode ser rolada.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows me): o parâmetro *wParam* é limitado a valores de 16 bits.
+Windows 95/Windows 98/Windows Edition DaNium (Windows Me) : o parâmetro *wParam* é limitado a valores de 16 bits.
 
 </dd> <dt>
 
@@ -45,17 +45,17 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Para responder à mensagem **\_ SETHORIZONTALEXTENT de lb** , a caixa de listagem deve ter sido definida com o estilo [**WS \_ HSCROLL**](/windows/desktop/winmsg/window-styles) .
+Para responder à mensagem **LB \_ LBORIZONTALEXTENT,** a caixa de listagem deve ter sido definida com o [**estilo \_ HSCROLL do WS.**](/windows/desktop/winmsg/window-styles)
 
 Observe que uma caixa de listagem não atualiza sua extensão horizontal dinamicamente.
 
-Esta mensagem não tem nenhum efeito em uma caixa de listagem de várias colunas.
+Essa mensagem não tem nenhum efeito em uma caixa de listagem de várias colunas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Esta mensagem não tem nenhum efeito em uma caixa de listagem de várias colunas
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Esta mensagem não tem nenhum efeito em uma caixa de listagem de várias colunas
 
 <dl> <dt>
 
-[**\_GETHORIZONTALEXTENT lb**](lb-gethorizontalextent.md)
+[**LB \_ GETHORIZONTALEXTENT**](lb-gethorizontalextent.md)
 </dt> </dl>
 
  

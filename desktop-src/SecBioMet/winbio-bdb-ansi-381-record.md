@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f30af31d88349dbe02066f231cdff21293aebe90
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 15e30cd66348245aa3090fb21188d7d1cea347c1b28ee51243d2effd9b52609f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480336"
 ---
 # <a name="winbio_bdb_ansi_381_record-structure"></a>\_Estrutura de registro WINBIO BdB \_ ANSI \_ 381 \_
 
@@ -113,7 +113,7 @@ Reservado. Deve ser definido como zero (0).
 
 ## <a name="remarks"></a>Comentários
 
-O membro de *posição* especifica a área da mão ou o Palm usado para criar o exemplo biométrico. O Windows Biometric Framework (WBF) atualmente dá suporte apenas à captura de impressão digital e usa as constantes a seguir para representar informações de posição.
+O membro de *posição* especifica a área da mão ou o Palm usado para criar o exemplo biométrico. o Windows Biometric Framework (WBF) atualmente dá suporte apenas à captura de impressão digital e usa as constantes a seguir para representar informações de posição.
 
 -   WINBIO \_ ANSI \_ 381 \_ pos \_ desconhecido
 -   WINBIO \_ ANSI \_ 381 \_ pos \_ RH \_ Thumb
@@ -132,7 +132,7 @@ O membro de *posição* especifica a área da mão ou o Palm usado para criar o 
 
 > [!IMPORTANT]
 >
-> Não tente validar o valor fornecido para o valor de *posição* . O serviço de biometria do Windows validará o valor fornecido antes de passá-lo para sua implementação. Se o valor for **WINBIO \_ subtipo \_ nenhuma \_ informação** ou **\_ subtipo WINBIO \_**, em seguida, valide quando apropriado.
+> Não tente validar o valor fornecido para o valor de *posição* . o serviço de biometria Windows validará o valor fornecido antes de passá-lo para sua implementação. Se o valor for **WINBIO \_ subtipo \_ nenhuma \_ informação** ou **\_ subtipo WINBIO \_**, em seguida, valide quando apropriado.
 
  
 
@@ -142,8 +142,8 @@ O membro de *posição* especifica a área da mão ou o Palm usado para criar o 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                                       |
 | parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
 
 

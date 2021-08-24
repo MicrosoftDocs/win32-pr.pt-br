@@ -1,9 +1,9 @@
 ---
-title: Propriedade Command.Name
-description: Representa o nome de um comando.
+title: Command.Name propriedade
+description: Representa o nome de um Comando.
 ms.assetid: 36fb0b93-143f-4706-8c32-e6c818cce16f
 keywords:
-- Faixa de Command.Name da Propriedade do Windows
+- Command.Name propriedade Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d93b830e29ca271052a4693b00ba64eee94309f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48162c5edda2dd8787518ce7042a8ae8eeb349ff332488cd834d10b377d96a0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587746"
 ---
-# <a name="commandname-property"></a>Propriedade Command.Name
+# <a name="commandname-property"></a>Command.Name propriedade
 
-Representa o nome de um comando.
+Representa o nome de um Comando.
 
 ## <a name="usage"></a>Uso
 
@@ -51,11 +51,11 @@ Não há elementos filho.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada [**comando**](windowsribbon-element-command.md).
+Pode ocorrer no máximo uma vez para cada [**Comando**](windowsribbon-element-command.md).
 
-**Command.Name** é referenciado na marcação para associar um comando a um controle por meio do atributo *CommandName* do controle.
+**Command.Name** é referenciado na marcação para associar um Comando a um controle por meio do atributo *CommandName* do controle .
 
-Esse elemento contém um valor do tipo *xs: String*.
+Esse elemento contém um valor do tipo *xs:string*.
 
 O valor é restrito a uma cadeia de caracteres que consiste em uma letra ou sublinhado seguido por qualquer sequência de letras, dígitos e sublinhados.
 
@@ -63,7 +63,7 @@ O comprimento máximo é de 100 caracteres.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação para um elemento [**Command**](windowsribbon-element-command.md) com uma declaração **Command.Name** .
+O exemplo a seguir demonstra a marcação para um [**elemento Command**](windowsribbon-element-command.md) com uma **Command.Name** de dados.
 
 
 ```XML
@@ -93,8 +93,8 @@ O exemplo a seguir demonstra a marcação para um elemento [**Command**](windows
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 15a557c2e0570dc558a5eee66005976461d17659
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6d4fb9b0dfe5ad76353e93e96f65c540fa7bc5fb7eb58d0fff18c0f75d879d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119454966"
 ---
 # <a name="columnstreamtostring-method"></a>Método ColumnStream. ToString
 
@@ -54,7 +54,7 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 Uma [cadeia de caracteres](/dotnet/api/system.string) que representa o [ColumnStream](./columnstream-class.md)atual.  

@@ -18,22 +18,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09f6370dfb868ec386e05f361240a74412f13a7d
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 9ed7ec327fb845873c4c6305f3d121053a74c632be0ca451182b17da55763477
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119394376"
 ---
 # <a name="ivmvirtualpcdefaultvmconfigurationpath-property"></a>IVMVirtualPC: Propriedade efaultVMConfigurationPath de:D
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera e define o diretório padrão a ser procurado por arquivos de configuração de máquina virtual disponíveis.
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -72,7 +72,7 @@ Especifica o caminho do diretório para os arquivos de configuração padrão da
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, esse valor de propriedade é definido como o seguinte diretório: "% LocalAppData% \\ Microsoft \\ Windows Virtual PC \\ Virtual Machines \\ ".
+por padrão, esse valor de propriedade é definido como o seguinte diretório: "% LocalAppData% \\ Microsoft \\ Windows virtual PC \\ virtual machines \\ ".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,11 +80,11 @@ Por padrão, esse valor de propriedade é definido como o seguinte diretório: "
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualPC é definido como 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 

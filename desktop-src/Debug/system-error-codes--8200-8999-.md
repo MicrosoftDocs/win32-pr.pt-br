@@ -1,26 +1,26 @@
 ---
-description: Descreve os códigos de erro 8200-8999 definidos no arquivo de cabeçalho WinError. h e destina-se a desenvolvedores.
+description: Descreve os códigos de erro 8200-8999 definidos no arquivo de título WinError.h e destina-se a desenvolvedores.
 ms.assetid: f16fdfa3-b080-47ee-a7dd-241fe2d24278
-title: Códigos de erro do sistema (8200-8999) (WinError. h)
+title: Códigos de erro do sistema (8200-8999) (WinError.h)
 ms.topic: reference
 ms.date: 07/18/2019
-ms.openlocfilehash: 7500ae4c178999de8052b0858089604652dc5237
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e9fd65025c3d51575cb0ece83cba14e0c62980d11a60ec6cb351919b6c7714c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572956"
 ---
 # <a name="system-error-codes-8200-8999"></a>Códigos de erro do sistema (8200-8999)
 
 > [!NOTE]
-> Essas informações destinam-se a desenvolvedores Depurando erros do sistema. Para outros erros, como problemas com Windows Update, há uma lista de recursos na página códigos de [erro](system-error-codes.md) .
+> Essas informações são destinadas a desenvolvedores que depuram erros do sistema. Para outros erros, como problemas com Windows Atualização, há uma lista de recursos na [página Códigos de](system-error-codes.md) erro.
 
-A lista a seguir descreve os [códigos de erro do sistema](system-error-codes.md) para erros 8200 a 8999. Elas são retornadas pela função [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a função [**FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com a **mensagem de formato \_ \_ do sinalizador do \_ sistema** .
+A lista a seguir descreve [os códigos de](system-error-codes.md) erro do sistema para erros de 8200 a 8999. Eles são retornados pela [**função GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) quando muitas funções falham. Para recuperar o texto de descrição do erro em seu aplicativo, use a [**função FormatMessage**](/windows/desktop/api/WinBase/nf-winbase-formatmessage) com o **sinalizador FORMAT MESSAGE FROM \_ \_ \_ SYSTEM.**
 
 <dl> <dt>
 
-<span id="ERROR_DS_NOT_INSTALLED"></span><span id="error_ds_not_installed"></span>**ERRO \_ DS \_ não \_ instalado**
+<span id="ERROR_DS_NOT_INSTALLED"></span><span id="error_ds_not_installed"></span>**ERRO \_ DS \_ NÃO \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 8200 (0x2008)
@@ -33,7 +33,7 @@ Ocorreu um erro ao instalar o serviço de diretório. Para obter mais informaç�
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_MEMBERSHIP_EVALUATED_LOCALLY"></span><span id="error_ds_membership_evaluated_locally"></span>**ERRO \_ de \_ Associação DS \_ avaliada \_ localmente**
+<span id="ERROR_DS_MEMBERSHIP_EVALUATED_LOCALLY"></span><span id="error_ds_membership_evaluated_locally"></span>**ERRO \_ A ASSOCIAÇÃO A \_ DS AVALIADA \_ \_ LOCALMENTE**
 </dt> <dd> <dl> <dt>
 
 8201 (0x2009)
@@ -41,12 +41,12 @@ Ocorreu um erro ao instalar o serviço de diretório. Para obter mais informaç�
 
 
 
-O serviço de diretório avaliou associações de grupo localmente.
+O serviço de diretório avaliou as associações de grupo localmente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NO_ATTRIBUTE_OR_VALUE"></span><span id="error_ds_no_attribute_or_value"></span>**ERRO \_ DS \_ sem \_ atributo \_ ou \_ valor**
+<span id="ERROR_DS_NO_ATTRIBUTE_OR_VALUE"></span><span id="error_ds_no_attribute_or_value"></span>**ERRO \_ DS \_ NENHUM ATRIBUTO OU \_ \_ \_ VALOR**
 </dt> <dd> <dl> <dt>
 
 8202 (0x200A)
@@ -59,7 +59,7 @@ O atributo ou o valor do serviço de diretório especificado não existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INVALID_ATTRIBUTE_SYNTAX"></span><span id="error_ds_invalid_attribute_syntax"></span>**ERRO \_ de \_ \_ sintaxe de atributo inválido DS \_**
+<span id="ERROR_DS_INVALID_ATTRIBUTE_SYNTAX"></span><span id="error_ds_invalid_attribute_syntax"></span>**SINTAXE \_ DE ATRIBUTO INVÁLIDA ERROR DS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 8203 (0x200B)
@@ -72,7 +72,7 @@ A sintaxe de atributo especificada para o serviço de diretório é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ATTRIBUTE_TYPE_UNDEFINED"></span><span id="error_ds_attribute_type_undefined"></span>**ERRO \_ de \_ tipo de atributo DS \_ \_ indefinido**
+<span id="ERROR_DS_ATTRIBUTE_TYPE_UNDEFINED"></span><span id="error_ds_attribute_type_undefined"></span>**TIPO \_ DE ATRIBUTO ERROR DS \_ \_ \_ INDEFINIDO**
 </dt> <dd> <dl> <dt>
 
 8204 (0x200C)
@@ -85,7 +85,7 @@ O tipo de atributo especificado para o serviço de diretório não está definid
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ATTRIBUTE_OR_VALUE_EXISTS"></span><span id="error_ds_attribute_or_value_exists"></span>**ERRO \_ o \_ atributo \_ ou o valor do DS \_ \_ existe**
+<span id="ERROR_DS_ATTRIBUTE_OR_VALUE_EXISTS"></span><span id="error_ds_attribute_or_value_exists"></span>**ERRO \_ O ATRIBUTO OU O VALOR DE DS \_ \_ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 8205 (0x200D)
@@ -98,7 +98,7 @@ O atributo ou o valor do serviço de diretório especificado já existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_BUSY"></span><span id="error_ds_busy"></span>**ERRO \_ DS \_ ocupado**
+<span id="ERROR_DS_BUSY"></span><span id="error_ds_busy"></span>**ERRO \_ DS \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 8206 (0x200E)
@@ -111,7 +111,7 @@ O serviço de diretório está ocupado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_UNAVAILABLE"></span><span id="error_ds_unavailable"></span>**ERRO \_ DS \_ não disponível**
+<span id="ERROR_DS_UNAVAILABLE"></span><span id="error_ds_unavailable"></span>**ERRO \_ DS \_ INDISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 8207 (0x200F)
@@ -124,7 +124,7 @@ O serviço de diretório não está disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NO_RIDS_ALLOCATED"></span><span id="error_ds_no_rids_allocated"></span>**ERRO \_ DS \_ nenhum \_ RIDs \_ alocado**
+<span id="ERROR_DS_NO_RIDS_ALLOCATED"></span><span id="error_ds_no_rids_allocated"></span>**ERRO \_ DS \_ NENHUM \_ RIDS \_ ALOCADO**
 </dt> <dd> <dl> <dt>
 
 8208 (0x2010)
@@ -137,7 +137,7 @@ O serviço de diretório não pôde alocar um identificador relativo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NO_MORE_RIDS"></span><span id="error_ds_no_more_rids"></span>**ERRO \_ DS \_ não \_ mais \_ RIDs**
+<span id="ERROR_DS_NO_MORE_RIDS"></span><span id="error_ds_no_more_rids"></span>**ERRO \_ DS \_ NÃO MAIS \_ \_ RIDS**
 </dt> <dd> <dl> <dt>
 
 8209 (0x2011)
@@ -145,12 +145,12 @@ O serviço de diretório não pôde alocar um identificador relativo.
 
 
 
-O serviço de diretório esgotou o pool de identificadores relativos.
+O serviço de diretório esgota o pool de identificadores relativos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INCORRECT_ROLE_OWNER"></span><span id="error_ds_incorrect_role_owner"></span>**ERRO \_ \_ proprietário da \_ função incorreta do DS \_**
+<span id="ERROR_DS_INCORRECT_ROLE_OWNER"></span><span id="error_ds_incorrect_role_owner"></span>**ERRO \_ DS \_ PROPRIETÁRIO INCORRETO DA \_ \_ FUNÇÃO**
 </dt> <dd> <dl> <dt>
 
 8210 (0x2012)
@@ -163,7 +163,7 @@ A operação solicitada não pôde ser executada porque o serviço de diretório
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_RIDMGR_INIT_ERROR"></span><span id="error_ds_ridmgr_init_error"></span>**ERRO \_ DS \_ RIDMGR \_ erro de inicialização \_**
+<span id="ERROR_DS_RIDMGR_INIT_ERROR"></span><span id="error_ds_ridmgr_init_error"></span>**ERRO \_ ERRO DS \_ RIDMGR \_ INIT \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 8211 (0x2013)
@@ -176,7 +176,7 @@ O serviço de diretório não pôde inicializar o subsistema que aloca identific
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_OBJ_CLASS_VIOLATION"></span><span id="error_ds_obj_class_violation"></span>**ERRO \_ de \_ \_ violação de classe DS obj \_**
+<span id="ERROR_DS_OBJ_CLASS_VIOLATION"></span><span id="error_ds_obj_class_violation"></span>**VIOLAÇÃO \_ DA CLASSE \_ OBJ ERROR DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8212 (0x2014)
@@ -184,12 +184,12 @@ O serviço de diretório não pôde inicializar o subsistema que aloca identific
 
 
 
-A operação solicitada não satisfez uma ou mais restrições associadas à classe do objeto.
+A operação solicitada não satisfez uma ou mais restrições associadas à classe do objeto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_ON_NON_LEAF"></span><span id="error_ds_cant_on_non_leaf"></span>**ERRO \_ DS \_ \_ não consegue \_ em \_ folha**
+<span id="ERROR_DS_CANT_ON_NON_LEAF"></span><span id="error_ds_cant_on_non_leaf"></span>**ERRO \_ DS \_ CANT \_ EM FOLHA \_ \_ NÃO FOLHA**
 </dt> <dd> <dl> <dt>
 
 8213 (0x2015)
@@ -202,7 +202,7 @@ O serviço de diretório pode executar a operação solicitada somente em um obj
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_ON_RDN"></span><span id="error_ds_cant_on_rdn"></span>**ERRO \_ DS não \_ consegue \_ no \_ RDN**
+<span id="ERROR_DS_CANT_ON_RDN"></span><span id="error_ds_cant_on_rdn"></span>**ERRO \_ DS \_ CANT \_ NO \_ RDN**
 </dt> <dd> <dl> <dt>
 
 8214 (0x2016)
@@ -210,12 +210,12 @@ O serviço de diretório pode executar a operação solicitada somente em um obj
 
 
 
-O serviço de diretório não pode executar a operação solicitada no atributo RDN de um objeto.
+O serviço de diretório não pode executar a operação solicitada no atributo RDN de um objeto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_MOD_OBJ_CLASS"></span><span id="error_ds_cant_mod_obj_class"></span>**ERRO DS não é possível \_ \_ \_ \_ \_ classe obj**
+<span id="ERROR_DS_CANT_MOD_OBJ_CLASS"></span><span id="error_ds_cant_mod_obj_class"></span>**CLASSE OBJ ERROR \_ DS \_ CANT \_ MOD \_ \_**
 </dt> <dd> <dl> <dt>
 
 8215 (0x2017)
@@ -223,12 +223,12 @@ O serviço de diretório não pode executar a operação solicitada no atributo 
 
 
 
-O serviço de diretório detectou uma tentativa de modificar a classe de objeto de um objeto.
+O serviço de diretório detectou uma tentativa de modificar a classe de objeto de um objeto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CROSS_DOM_MOVE_ERROR"></span><span id="error_ds_cross_dom_move_error"></span>**erro ao mover o erro \_ \_ entre \_ dom do \_ DS \_**
+<span id="ERROR_DS_CROSS_DOM_MOVE_ERROR"></span><span id="error_ds_cross_dom_move_error"></span>**ERRO \_ ERRO DS \_ CROSS DOM \_ MOVE \_ \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 8216 (0x2018)
@@ -236,12 +236,12 @@ O serviço de diretório detectou uma tentativa de modificar a classe de objeto 
 
 
 
-Não foi possível executar a operação de movimentação entre domínios solicitada.
+Não foi possível realizar a operação de movimentação entre domínios solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_GC_NOT_AVAILABLE"></span><span id="error_ds_gc_not_available"></span>**ERRO \_ DS \_ GC \_ não \_ disponível**
+<span id="ERROR_DS_GC_NOT_AVAILABLE"></span><span id="error_ds_gc_not_available"></span>**ERRO \_ O \_ GC DO DS \_ NÃO ESTÁ \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 8217 (0x2019)
@@ -254,7 +254,7 @@ Não é possível contatar o servidor de catálogo global.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_SHARED_POLICY"></span><span id="error_shared_policy"></span>**ERRO \_ de \_ política compartilhada**
+<span id="ERROR_SHARED_POLICY"></span><span id="error_shared_policy"></span>**POLÍTICA \_ COMPARTILHADA DE \_ ERRO**
 </dt> <dd> <dl> <dt>
 
 8218 (0x201A)
@@ -267,7 +267,7 @@ O objeto de política é compartilhado e só pode ser modificado na raiz.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_POLICY_OBJECT_NOT_FOUND"></span><span id="error_policy_object_not_found"></span>**objeto de política de erro \_ \_ \_ não \_ encontrado**
+<span id="ERROR_POLICY_OBJECT_NOT_FOUND"></span><span id="error_policy_object_not_found"></span>**OBJETO \_ DE POLÍTICA DE ERRO NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 8219 (0x201B)
@@ -280,7 +280,7 @@ O objeto de política não existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_POLICY_ONLY_IN_DS"></span><span id="error_policy_only_in_ds"></span>**\_política \_ de erro somente \_ no \_ DS**
+<span id="ERROR_POLICY_ONLY_IN_DS"></span><span id="error_policy_only_in_ds"></span>**POLÍTICA \_ DE ERRO SOMENTE EM \_ \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8220 (0x201C)
@@ -288,12 +288,12 @@ O objeto de política não existe.
 
 
 
-As informações de política solicitadas só estão no serviço de diretório.
+As informações de política solicitadas estão apenas no serviço de diretório.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_PROMOTION_ACTIVE"></span><span id="error_promotion_active"></span>**promoção de erros \_ \_ ativa**
+<span id="ERROR_PROMOTION_ACTIVE"></span><span id="error_promotion_active"></span>**PROMOÇÃO \_ DE \_ ERRO ATIVA**
 </dt> <dd> <dl> <dt>
 
 8221 (0x201D)
@@ -306,7 +306,7 @@ Uma promoção do controlador de domínio está ativa no momento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_PROMOTION_ACTIVE"></span><span id="error_no_promotion_active"></span>**ERRO \_ sem \_ promoção \_ ativa**
+<span id="ERROR_NO_PROMOTION_ACTIVE"></span><span id="error_no_promotion_active"></span>**ERRO \_ SEM \_ PROMOÇÃO \_ ATIVA**
 </dt> <dd> <dl> <dt>
 
 8222 (0x201E)
@@ -319,7 +319,7 @@ Uma promoção do controlador de domínio não está ativa no momento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_OPERATIONS_ERROR"></span><span id="error_ds_operations_error"></span>**erro \_ de \_ operações \_ DS**
+<span id="ERROR_DS_OPERATIONS_ERROR"></span><span id="error_ds_operations_error"></span>**ERRO \_ DE OPERAÇÕES DE DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8224 (0x2020)
@@ -327,12 +327,12 @@ Uma promoção do controlador de domínio não está ativa no momento.
 
 
 
-Ocorreu um erro de operação.
+Ocorreu um erro de operações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_PROTOCOL_ERROR"></span><span id="error_ds_protocol_error"></span>**erro \_ de \_ erro de protocolo DS \_**
+<span id="ERROR_DS_PROTOCOL_ERROR"></span><span id="error_ds_protocol_error"></span>**ERRO \_ DE PROTOCOLO DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8225 (0x2021)
@@ -345,7 +345,7 @@ Erro de protocolo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_TIMELIMIT_EXCEEDED"></span><span id="error_ds_timelimit_exceeded"></span>**ERRO \_ de \_ limite de DS \_ excedido**
+<span id="ERROR_DS_TIMELIMIT_EXCEEDED"></span><span id="error_ds_timelimit_exceeded"></span>**ERRO \_ DS \_ TIMELIMIT \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 8226 (0x2022)
@@ -353,12 +353,12 @@ Erro de protocolo.
 
 
 
-O limite de tempo para esta solicitação foi excedido.
+O limite de tempo para essa solicitação foi excedido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SIZELIMIT_EXCEEDED"></span><span id="error_ds_sizelimit_exceeded"></span>**ERRO \_ \_ SIZELIMIT DS \_ excedido**
+<span id="ERROR_DS_SIZELIMIT_EXCEEDED"></span><span id="error_ds_sizelimit_exceeded"></span>**ERRO \_ DS \_ SIZELIMIT \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 8227 (0x2023)
@@ -366,12 +366,12 @@ O limite de tempo para esta solicitação foi excedido.
 
 
 
-O limite de tamanho para esta solicitação foi excedido.
+O limite de tamanho para essa solicitação foi excedido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ADMIN_LIMIT_EXCEEDED"></span><span id="error_ds_admin_limit_exceeded"></span>**ERRO \_ de \_ limite de administrador DS \_ \_ excedido**
+<span id="ERROR_DS_ADMIN_LIMIT_EXCEEDED"></span><span id="error_ds_admin_limit_exceeded"></span>**ERRO \_ LIMITE DE ADMINISTRADOR \_ \_ DS \_ EXCEDIDO**
 </dt> <dd> <dl> <dt>
 
 8228 (0x2024)
@@ -379,12 +379,12 @@ O limite de tamanho para esta solicitação foi excedido.
 
 
 
-O limite administrativo para esta solicitação foi excedido.
+O limite administrativo para essa solicitação foi excedido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_COMPARE_FALSE"></span><span id="error_ds_compare_false"></span>**ERRO \_ de \_ comparação de DS \_ falso**
+<span id="ERROR_DS_COMPARE_FALSE"></span><span id="error_ds_compare_false"></span>**ERRO \_ DS \_ COMPARE \_ FALSE**
 </dt> <dd> <dl> <dt>
 
 8229 (0x2025)
@@ -392,12 +392,12 @@ O limite administrativo para esta solicitação foi excedido.
 
 
 
-A resposta de comparação foi falsa.
+A resposta de comparação era false.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_COMPARE_TRUE"></span><span id="error_ds_compare_true"></span>**ERRO \_ de \_ comparação de DS \_ verdadeiro**
+<span id="ERROR_DS_COMPARE_TRUE"></span><span id="error_ds_compare_true"></span>**ERRO \_ DS \_ COMPARE \_ TRUE**
 </dt> <dd> <dl> <dt>
 
 8230 (0x2026)
@@ -405,12 +405,12 @@ A resposta de comparação foi falsa.
 
 
 
-A resposta de comparação foi verdadeira.
+A resposta de comparação era verdadeira.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_AUTH_METHOD_NOT_SUPPORTED"></span><span id="error_ds_auth_method_not_supported"></span>**ERRO \_ \_ \_ \_ não \_ há suporte para o método de autenticação DS**
+<span id="ERROR_DS_AUTH_METHOD_NOT_SUPPORTED"></span><span id="error_ds_auth_method_not_supported"></span>**ERRO NÃO HÁ SUPORTE PARA O MÉTODO \_ \_ DE AUTH \_ \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8231 (0x2027)
@@ -1684,7 +1684,7 @@ Não foi possível ler o atributo proprietário da função.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_COULDNT_CONTACT_FSMO"></span><span id="error_ds_couldnt_contact_fsmo"></span>**ERRO \_ DS \_ não foi possível \_ contatar \_ FSMO**
+<span id="ERROR_DS_COULDNT_CONTACT_FSMO"></span><span id="error_ds_couldnt_contact_fsmo"></span>**ERRO \_ DS \_ NÃO PÔDE CONTATAR \_ O \_ FSMO**
 </dt> <dd> <dl> <dt>
 
 8367 (0x20AF)
@@ -1697,7 +1697,7 @@ Falha na operação FSMO solicitada. O atual titular do FSMO não pôde ser cont
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CROSS_NC_DN_RENAME"></span><span id="error_ds_cross_nc_dn_rename"></span>**ERRO \_ DS \_ Cross \_ NC \_ DN \_ renomear**
+<span id="ERROR_DS_CROSS_NC_DN_RENAME"></span><span id="error_ds_cross_nc_dn_rename"></span>**ERRO \_ DS \_ CROSS NC \_ \_ DN \_ RENAME**
 </dt> <dd> <dl> <dt>
 
 8368 (0x20B0)
@@ -1705,12 +1705,12 @@ Falha na operação FSMO solicitada. O atual titular do FSMO não pôde ser cont
 
 
 
-Não é permitido modificar um DN em um contexto de nomenclatura.
+Não é permitida a modificação de um DN em um contexto de nomentura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_MOD_SYSTEM_ONLY"></span><span id="error_ds_cant_mod_system_only"></span>**ERRO \_ DS \_ \_ somente no \_ sistema \_ mod**
+<span id="ERROR_DS_CANT_MOD_SYSTEM_ONLY"></span><span id="error_ds_cant_mod_system_only"></span>**ERRO \_ DS \_ SÓ PODET MOD \_ \_ \_ SYSTEM**
 </dt> <dd> <dl> <dt>
 
 8369 (0x20B1)
@@ -1723,7 +1723,7 @@ O atributo não pode ser modificado porque pertence ao sistema.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_REPLICATOR_ONLY"></span><span id="error_ds_replicator_only"></span>**ERRO \_ \_ somente replicador \_ DS**
+<span id="ERROR_DS_REPLICATOR_ONLY"></span><span id="error_ds_replicator_only"></span>**ERRO \_ SOMENTE \_ REPLICADOR DS \_**
 </dt> <dd> <dl> <dt>
 
 8370 (0x20B2)
@@ -1736,7 +1736,7 @@ Somente o replicador pode executar essa função.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_OBJ_CLASS_NOT_DEFINED"></span><span id="error_ds_obj_class_not_defined"></span>**ERRO \_ de \_ classe de obj DS \_ \_ não \_ definida**
+<span id="ERROR_DS_OBJ_CLASS_NOT_DEFINED"></span><span id="error_ds_obj_class_not_defined"></span>**CLASSE \_ OBJ ERROR DS \_ NÃO \_ \_ \_ DEFINIDA**
 </dt> <dd> <dl> <dt>
 
 8371 (0x20B3)
@@ -1749,7 +1749,7 @@ A classe especificada não está definida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_OBJ_CLASS_NOT_SUBCLASS"></span><span id="error_ds_obj_class_not_subclass"></span>**ERRO \_ de \_ classe DS obj \_ \_ não \_ subclasse**
+<span id="ERROR_DS_OBJ_CLASS_NOT_SUBCLASS"></span><span id="error_ds_obj_class_not_subclass"></span>**CLASSE \_ ERROR DS \_ OBJ NÃO \_ \_ \_ SUBCLASSE**
 </dt> <dd> <dl> <dt>
 
 8372 (0x20B4)
@@ -1762,7 +1762,7 @@ A classe especificada não é uma subclasse.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_REFERENCE_INVALID"></span><span id="error_ds_name_reference_invalid"></span>**ERRO \_ de \_ referência de nome DS \_ \_ inválido**
+<span id="ERROR_DS_NAME_REFERENCE_INVALID"></span><span id="error_ds_name_reference_invalid"></span>**REFERÊNCIA \_ DE NOME DE ERRO DS \_ \_ \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 8373 (0x20B5)
@@ -1775,7 +1775,7 @@ A referência de nome é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CROSS_REF_EXISTS"></span><span id="error_ds_cross_ref_exists"></span>**ERRO \_ de \_ referência cruzada de DS \_ \_**
+<span id="ERROR_DS_CROSS_REF_EXISTS"></span><span id="error_ds_cross_ref_exists"></span>**ERROR \_ DS \_ CROSS \_ REF \_ EXISTS**
 </dt> <dd> <dl> <dt>
 
 8374 (0x20B6)
@@ -1788,7 +1788,7 @@ Já existe uma referência cruzada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_DEL_MASTER_CROSSREF"></span><span id="error_ds_cant_del_master_crossref"></span>**ERRO DS não é possível \_ \_ excluir o \_ \_ \_ CROSSREF mestre**
+<span id="ERROR_DS_CANT_DEL_MASTER_CROSSREF"></span><span id="error_ds_cant_del_master_crossref"></span>**ERRO \_ DS \_ CANT \_ DEL MASTER \_ \_ CROSSREF**
 </dt> <dd> <dl> <dt>
 
 8375 (0x20B7)
@@ -1796,12 +1796,12 @@ Já existe uma referência cruzada.
 
 
 
-Não é permitido excluir uma referência cruzada mestre.
+Não é permitido excluir uma referência cruzada mestra.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SUBTREE_NOTIFY_NOT_NC_HEAD"></span><span id="error_ds_subtree_notify_not_nc_head"></span>**ERRO \_ na \_ subárvore DS de \_ notificação \_ não \_ NC \_ cabeçalho**
+<span id="ERROR_DS_SUBTREE_NOTIFY_NOT_NC_HEAD"></span><span id="error_ds_subtree_notify_not_nc_head"></span>**ERRO \_ DS \_ SUBTREE \_ NOTIFY NOT \_ \_ NC \_ HEAD**
 </dt> <dd> <dl> <dt>
 
 8376 (0x20B8)
@@ -1809,12 +1809,12 @@ Não é permitido excluir uma referência cruzada mestre.
 
 
 
-As notificações de subárvore só têm suporte em cabeçalhos NC.
+As notificações de subárvore só têm suporte em cabeça NC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NOTIFY_FILTER_TOO_COMPLEX"></span><span id="error_ds_notify_filter_too_complex"></span>**ERRO \_ do \_ filtro de notificação DS \_ \_ muito \_ complexo**
+<span id="ERROR_DS_NOTIFY_FILTER_TOO_COMPLEX"></span><span id="error_ds_notify_filter_too_complex"></span>**ERRO \_ DS \_ NOTIFICAR \_ FILTRO MUITO \_ \_ COMPLEXO**
 </dt> <dd> <dl> <dt>
 
 8377 (0x20B9)
@@ -1827,7 +1827,7 @@ O filtro de notificação é muito complexo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DUP_RDN"></span><span id="error_ds_dup_rdn"></span>**ERRO \_ \_ RDN de Dup de DS \_**
+<span id="ERROR_DS_DUP_RDN"></span><span id="error_ds_dup_rdn"></span>**ERRO \_ DS \_ DUP \_ RDN**
 </dt> <dd> <dl> <dt>
 
 8378 (0x20BA)
@@ -1835,12 +1835,12 @@ O filtro de notificação é muito complexo.
 
 
 
-Falha na atualização do esquema: RDN duplicado.
+Falha na atualização de esquema: RDN duplicado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DUP_OID"></span><span id="error_ds_dup_oid"></span>**ERRO \_ \_ OID de Dup de DS \_**
+<span id="ERROR_DS_DUP_OID"></span><span id="error_ds_dup_oid"></span>**ERRO \_ DS \_ DUP \_ OID**
 </dt> <dd> <dl> <dt>
 
 8379 (0x20BB)
@@ -1848,12 +1848,12 @@ Falha na atualização do esquema: RDN duplicado.
 
 
 
-Falha na atualização do esquema: OID duplicado.
+Falha na atualização de esquema: OID duplicado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DUP_MAPI_ID"></span><span id="error_ds_dup_mapi_id"></span>**ERRO \_ de \_ \_ ID MAPI do Dup de DS \_**
+<span id="ERROR_DS_DUP_MAPI_ID"></span><span id="error_ds_dup_mapi_id"></span>**ERRO \_ DS \_ DUP \_ MAPI \_ ID**
 </dt> <dd> <dl> <dt>
 
 8380 (0x20BC)
@@ -1861,12 +1861,12 @@ Falha na atualização do esquema: OID duplicado.
 
 
 
-Falha na atualização do esquema: identificador MAPI duplicado.
+Falha na atualização de esquema: identificador MAPI duplicado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DUP_SCHEMA_ID_GUID"></span><span id="error_ds_dup_schema_id_guid"></span>**ERRO \_ \_ GUID de \_ ID de esquema do DUP \_ DS \_**
+<span id="ERROR_DS_DUP_SCHEMA_ID_GUID"></span><span id="error_ds_dup_schema_id_guid"></span>**\_GUID DE \_ \_ ID DE ESQUEMA DE DUP DE DS \_ \_ DE ERRO**
 </dt> <dd> <dl> <dt>
 
 8381 (0x20BD)
@@ -1874,12 +1874,12 @@ Falha na atualização do esquema: identificador MAPI duplicado.
 
 
 
-Falha na atualização do esquema: GUID de ID de esquema duplicado.
+Falha na atualização de esquema: GUID de ID de esquema duplicado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DUP_LDAP_DISPLAY_NAME"></span><span id="error_ds_dup_ldap_display_name"></span>**ERRO \_ \_ nome de \_ exibição LDAP de DUP \_ de DS \_**
+<span id="ERROR_DS_DUP_LDAP_DISPLAY_NAME"></span><span id="error_ds_dup_ldap_display_name"></span>**ERRO \_ NOME DE \_ EXIBIÇÃO \_ LDAP DUP DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8382 (0x20BE)
@@ -1887,12 +1887,12 @@ Falha na atualização do esquema: GUID de ID de esquema duplicado.
 
 
 
-Falha na atualização do esquema: nome de exibição LDAP duplicado.
+Falha na atualização de esquema: nome de exibição LDAP duplicado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SEMANTIC_ATT_TEST"></span><span id="error_ds_semantic_att_test"></span>**ERRO \_ de \_ teste semântico de \_ ATT de DS \_**
+<span id="ERROR_DS_SEMANTIC_ATT_TEST"></span><span id="error_ds_semantic_att_test"></span>**ERRO \_ DS \_ SEMANTIC \_ ATT \_ TEST**
 </dt> <dd> <dl> <dt>
 
 8383 (0x20BF)
@@ -1900,12 +1900,12 @@ Falha na atualização do esquema: nome de exibição LDAP duplicado.
 
 
 
-Falha na atualização do esquema: intervalo inferior menor que intervalo superior.
+Falha na atualização do esquema: intervalo menor que o intervalo superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SYNTAX_MISMATCH"></span><span id="error_ds_syntax_mismatch"></span>**ERRO \_ de \_ incompatibilidade de sintaxe DS \_**
+<span id="ERROR_DS_SYNTAX_MISMATCH"></span><span id="error_ds_syntax_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DE SINTAXE DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8384 (0x20C0)
@@ -1913,12 +1913,12 @@ Falha na atualização do esquema: intervalo inferior menor que intervalo superi
 
 
 
-Falha na atualização do esquema: incompatibilidade de sintaxe.
+Falha na atualização de esquema: incompatibilidade de sintaxe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_EXISTS_IN_MUST_HAVE"></span><span id="error_ds_exists_in_must_have"></span>**o erro \_ DS \_ existe \_ em \_ deve \_ ter**
+<span id="ERROR_DS_EXISTS_IN_MUST_HAVE"></span><span id="error_ds_exists_in_must_have"></span>**O \_ ERRO DS \_ EXISTE EM \_ DEVE \_ \_ TER**
 </dt> <dd> <dl> <dt>
 
 8385 (0x20C1)
@@ -1926,12 +1926,12 @@ Falha na atualização do esquema: incompatibilidade de sintaxe.
 
 
 
-Falha na exclusão do esquema: o atributo é usado em deve-conter.
+Falha na exclusão de esquema: o atributo é usado em must-contain.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_EXISTS_IN_MAY_HAVE"></span><span id="error_ds_exists_in_may_have"></span>**o erro \_ DS \_ existe \_ em \_ pode \_ ter**
+<span id="ERROR_DS_EXISTS_IN_MAY_HAVE"></span><span id="error_ds_exists_in_may_have"></span>**O \_ ERRO DS \_ EXISTE EM \_ PODE \_ \_ TER**
 </dt> <dd> <dl> <dt>
 
 8386 (0x20C2)
@@ -1939,12 +1939,12 @@ Falha na exclusão do esquema: o atributo é usado em deve-conter.
 
 
 
-Falha na exclusão do esquema: o atributo é usado em maio-conter.
+Falha na exclusão de esquema: o atributo é usado em may-contain.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NONEXISTENT_MAY_HAVE"></span><span id="error_ds_nonexistent_may_have"></span>**ERRO o \_ DS não \_ existente \_ pode \_ ter**
+<span id="ERROR_DS_NONEXISTENT_MAY_HAVE"></span><span id="error_ds_nonexistent_may_have"></span>**ERRO \_ QUE \_ DS INEXISTENTE PODE \_ \_ TER**
 </dt> <dd> <dl> <dt>
 
 8387 (0x20C3)
@@ -1952,12 +1952,12 @@ Falha na exclusão do esquema: o atributo é usado em maio-conter.
 
 
 
-Falha na atualização do esquema: o atributo em pode-conter não existe.
+Falha na atualização de esquema: o atributo em may-contain não existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NONEXISTENT_MUST_HAVE"></span><span id="error_ds_nonexistent_must_have"></span>**o erro \_ DS não \_ existente \_ deve \_ ter**
+<span id="ERROR_DS_NONEXISTENT_MUST_HAVE"></span><span id="error_ds_nonexistent_must_have"></span>**O \_ ERRO DS \_ NÃO INEXISTENTE \_ DEVE \_ TER**
 </dt> <dd> <dl> <dt>
 
 8388 (0x20C4)
@@ -1965,12 +1965,12 @@ Falha na atualização do esquema: o atributo em pode-conter não existe.
 
 
 
-Falha na atualização do esquema: o atributo em deve-conter não existe.
+Falha na atualização de esquema: o atributo no must-contain não existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_AUX_CLS_TEST_FAIL"></span><span id="error_ds_aux_cls_test_fail"></span>**ERRO \_ \_ falha no \_ teste de CLS auxiliar \_ DS \_**
+<span id="ERROR_DS_AUX_CLS_TEST_FAIL"></span><span id="error_ds_aux_cls_test_fail"></span>**ERRO \_ FALHA NO TESTE DE \_ CLS DO AUX \_ \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8389 (0x20C5)
@@ -1978,12 +1978,12 @@ Falha na atualização do esquema: o atributo em deve-conter não existe.
 
 
 
-Falha na atualização do esquema: a classe na lista de classes auxiliares não existe ou não é uma classe auxiliar.
+Falha na atualização de esquema: a classe na lista de classes aux não existe ou não é uma classe auxiliar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NONEXISTENT_POSS_SUP"></span><span id="error_ds_nonexistent_poss_sup"></span>**ERRO \_ DS não \_ existente \_ poss \_ sup**
+<span id="ERROR_DS_NONEXISTENT_POSS_SUP"></span><span id="error_ds_nonexistent_poss_sup"></span>**ERRO \_ DS \_ NONEXISTENT \_ POSS \_ SUP**
 </dt> <dd> <dl> <dt>
 
 8390 (0x20C6)
@@ -1991,12 +1991,12 @@ Falha na atualização do esquema: a classe na lista de classes auxiliares não 
 
 
 
-Falha na atualização do esquema: a classe em poss-superiors não existe.
+Falha na atualização de esquema: a classe em poss-superiors não existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SUB_CLS_TEST_FAIL"></span><span id="error_ds_sub_cls_test_fail"></span>**ERRO \_ \_ falha no \_ teste de subcls do \_ DS \_**
+<span id="ERROR_DS_SUB_CLS_TEST_FAIL"></span><span id="error_ds_sub_cls_test_fail"></span>**FALHA NO TESTE DE SUB CLS DO \_ ERROR \_ \_ DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8391 (0x20C7)
@@ -2004,12 +2004,12 @@ Falha na atualização do esquema: a classe em poss-superiors não existe.
 
 
 
-Falha na atualização do esquema: a classe na lista listas SubClassOf não existe ou não satisfaz as regras de hierarquia.
+Falha na atualização de esquema: a classe na lista de subclassof não existe ou não satisfaz regras de hierarquia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_BAD_RDN_ATT_ID_SYNTAX"></span><span id="error_ds_bad_rdn_att_id_syntax"></span>**ERRO \_ DS \_ insatisfatório \_ \_ \_ ID de \_ sintaxe do RDN**
+<span id="ERROR_DS_BAD_RDN_ATT_ID_SYNTAX"></span><span id="error_ds_bad_rdn_att_id_syntax"></span>**ERRO \_ DS \_ SINTAXE DE \_ ID DE ATT DE \_ RDN \_ \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 8392 (0x20C8)
@@ -2017,12 +2017,12 @@ Falha na atualização do esquema: a classe na lista listas SubClassOf não exis
 
 
 
-Falha na atualização do esquema: RDN-ATT-ID tem sintaxe incorreta.
+Falha na atualização de esquema: Rdn-Att-Id tem sintaxe errada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_EXISTS_IN_AUX_CLS"></span><span id="error_ds_exists_in_aux_cls"></span>**ERRO \_ o \_ DS \_ existe \_ no \_ CLS auxiliar**
+<span id="ERROR_DS_EXISTS_IN_AUX_CLS"></span><span id="error_ds_exists_in_aux_cls"></span>**O \_ ERRO DS \_ EXISTE NAS \_ \_ CLS DO AUX \_**
 </dt> <dd> <dl> <dt>
 
 8393 (0x20C9)
@@ -2030,12 +2030,12 @@ Falha na atualização do esquema: RDN-ATT-ID tem sintaxe incorreta.
 
 
 
-Falha na exclusão do esquema: a classe é usada como classe auxiliar.
+Falha na exclusão de esquema: a classe é usada como classe auxiliar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_EXISTS_IN_SUB_CLS"></span><span id="error_ds_exists_in_sub_cls"></span>**ERRO \_ DS \_ existe \_ em \_ sub \_ CLS**
+<span id="ERROR_DS_EXISTS_IN_SUB_CLS"></span><span id="error_ds_exists_in_sub_cls"></span>**O \_ ERRO DS \_ EXISTE EM \_ SUB \_ \_ CLS**
 </dt> <dd> <dl> <dt>
 
 8394 (0x20CA)
@@ -2043,12 +2043,12 @@ Falha na exclusão do esquema: a classe é usada como classe auxiliar.
 
 
 
-Falha na exclusão do esquema: a classe é usada como subclasse.
+Falha na exclusão de esquema: a classe é usada como sub class.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_EXISTS_IN_POSS_SUP"></span><span id="error_ds_exists_in_poss_sup"></span>**ERRO o \_ DS \_ existe \_ no \_ poss \_ sup**
+<span id="ERROR_DS_EXISTS_IN_POSS_SUP"></span><span id="error_ds_exists_in_poss_sup"></span>**O \_ ERRO DS \_ EXISTE NO \_ \_ POSS \_ SUP**
 </dt> <dd> <dl> <dt>
 
 8395 (0x20CB)
@@ -2056,12 +2056,12 @@ Falha na exclusão do esquema: a classe é usada como subclasse.
 
 
 
-Falha na exclusão do esquema: a classe é usada como poss superior.
+Falha na exclusão de esquema: a classe é usada como poss superior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_RECALCSCHEMA_FAILED"></span><span id="error_ds_recalcschema_failed"></span>**ERRO \_ \_ RECALCSCHEMA DS \_ falhou**
+<span id="ERROR_DS_RECALCSCHEMA_FAILED"></span><span id="error_ds_recalcschema_failed"></span>**ERRO \_ DS \_ RECALCSCHEMA \_ FALHOU**
 </dt> <dd> <dl> <dt>
 
 8396 (0x20CC)
@@ -2074,7 +2074,7 @@ Falha na atualização do esquema ao recalcular o cache de validação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_TREE_DELETE_NOT_FINISHED"></span><span id="error_ds_tree_delete_not_finished"></span>**ERRO \_ ao \_ excluir árvore de DS \_ \_ não \_ concluído**
+<span id="ERROR_DS_TREE_DELETE_NOT_FINISHED"></span><span id="error_ds_tree_delete_not_finished"></span>**ERRO \_ EXCLUSÃO DE ÁRVORE DS \_ NÃO \_ \_ \_ CONCLUÍDA**
 </dt> <dd> <dl> <dt>
 
 8397 (0x20CD)
@@ -2082,12 +2082,12 @@ Falha na atualização do esquema ao recalcular o cache de validação.
 
 
 
-A exclusão de árvore não foi concluída. A solicitação deve ser feita novamente para continuar a excluir a árvore.
+A exclusão de árvore não foi concluída. A solicitação deve ser feita novamente para continuar excluindo a árvore.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_DELETE"></span><span id="error_ds_cant_delete"></span>**ERRO o \_ DS não \_ consegue \_ excluir**
+<span id="ERROR_DS_CANT_DELETE"></span><span id="error_ds_cant_delete"></span>**ERRO \_ DS \_ CANT \_ DELETE**
 </dt> <dd> <dl> <dt>
 
 8398 (0x20CE)
@@ -2095,12 +2095,12 @@ A exclusão de árvore não foi concluída. A solicitação deve ser feita novam
 
 
 
-Não foi possível executar a operação de exclusão solicitada.
+Não foi possível realizar a operação de exclusão solicitada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ATT_SCHEMA_REQ_ID"></span><span id="error_ds_att_schema_req_id"></span>**ERRO \_ ID de req. de \_ esquema DS ATT \_ \_ \_**
+<span id="ERROR_DS_ATT_SCHEMA_REQ_ID"></span><span id="error_ds_att_schema_req_id"></span>**ID DE REQ DE ESQUEMA \_ DO ERRO DS \_ ATT \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 8399 (0x20CF)
@@ -2108,12 +2108,12 @@ Não foi possível executar a operação de exclusão solicitada.
 
 
 
-Não é possível ler o identificador de classe de controle para o registro de esquema.
+Não é possível ler o identificador de classe governs para o registro de esquema.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_BAD_ATT_SCHEMA_SYNTAX"></span><span id="error_ds_bad_att_schema_syntax"></span>**ERRO \_ de \_ \_ sintaxe de \_ esquema \_ ATT Bad insatisfatório**
+<span id="ERROR_DS_BAD_ATT_SCHEMA_SYNTAX"></span><span id="error_ds_bad_att_schema_syntax"></span>**ERRO \_ DS \_ SINTAXE DE ESQUEMA \_ DE ATT \_ \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 8400 (0x20D0)
@@ -2121,12 +2121,12 @@ Não é possível ler o identificador de classe de controle para o registro de e
 
 
 
-O esquema de atributo tem uma sintaxe inadequada.
+O esquema de atributo tem sintaxe ruim.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_CACHE_ATT"></span><span id="error_ds_cant_cache_att"></span>**ERRO \_ DS não \_ consegue \_ cache \_ ATT**
+<span id="ERROR_DS_CANT_CACHE_ATT"></span><span id="error_ds_cant_cache_att"></span>**ERRO \_ DS \_ CANT \_ CACHE \_ ATT**
 </dt> <dd> <dl> <dt>
 
 8401 (0x20D1)
@@ -2139,7 +2139,7 @@ Não foi possível armazenar o atributo em cache.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_CACHE_CLASS"></span><span id="error_ds_cant_cache_class"></span>**ERRO \_ DS não \_ consegue \_ armazenar \_ classe**
+<span id="ERROR_DS_CANT_CACHE_CLASS"></span><span id="error_ds_cant_cache_class"></span>**CLASSE DE \_ CACHE ERROR DS \_ CANT \_ \_**
 </dt> <dd> <dl> <dt>
 
 8402 (0x20D2)
@@ -2147,12 +2147,12 @@ Não foi possível armazenar o atributo em cache.
 
 
 
-Não foi possível armazenar a classe em cache.
+A classe não pôde ser armazenada em cache.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_REMOVE_ATT_CACHE"></span><span id="error_ds_cant_remove_att_cache"></span>**ERRO \_ DS não \_ consegue \_ remover o \_ cache de ATT \_**
+<span id="ERROR_DS_CANT_REMOVE_ATT_CACHE"></span><span id="error_ds_cant_remove_att_cache"></span>**ERRO \_ DS \_ NÃO PODE REMOVER O CACHE \_ \_ ATT \_**
 </dt> <dd> <dl> <dt>
 
 8403 (0x20D3)
@@ -2165,7 +2165,7 @@ Não foi possível remover o atributo do cache.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_REMOVE_CLASS_CACHE"></span><span id="error_ds_cant_remove_class_cache"></span>**ERRO \_ DS \_ não \_ consegue \_ Remover \_ cache de classe**
+<span id="ERROR_DS_CANT_REMOVE_CLASS_CACHE"></span><span id="error_ds_cant_remove_class_cache"></span>**ERRO \_ DS \_ NÃO PODE REMOVER CACHE DE \_ \_ \_ CLASSE**
 </dt> <dd> <dl> <dt>
 
 8404 (0x20D4)
@@ -2173,12 +2173,12 @@ Não foi possível remover o atributo do cache.
 
 
 
-A classe não pôde ser removida do cache.
+Não foi possível remover a classe do cache.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_RETRIEVE_DN"></span><span id="error_ds_cant_retrieve_dn"></span>**ERRO \_ DS não \_ consegue \_ recuperar \_ DN**
+<span id="ERROR_DS_CANT_RETRIEVE_DN"></span><span id="error_ds_cant_retrieve_dn"></span>**ERRO \_ DS \_ NÃO PODE RECUPERAR \_ \_ DN**
 </dt> <dd> <dl> <dt>
 
 8405 (0x20D5)
@@ -2186,12 +2186,12 @@ A classe não pôde ser removida do cache.
 
 
 
-Não foi possível ler o atributo de nome distinto.
+Não foi possível ler o atributo de nome diferenciado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_MISSING_SUPREF"></span><span id="error_ds_missing_supref"></span>**ERRO \_ DS \_ ausente \_ SUPREF**
+<span id="ERROR_DS_MISSING_SUPREF"></span><span id="error_ds_missing_supref"></span>**ERRO \_ DS \_ \_ SUPREF AUSENTE**
 </dt> <dd> <dl> <dt>
 
 8406 (0x20D6)
@@ -2199,12 +2199,12 @@ Não foi possível ler o atributo de nome distinto.
 
 
 
-Nenhuma referência superior foi configurada para o serviço de diretório. Portanto, o serviço de diretório não pode emitir referências a objetos fora desta floresta.
+Nenhuma referência superior foi configurada para o serviço de diretório. Portanto, o serviço de diretório não pode emitir indicações para objetos fora dessa floresta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_RETRIEVE_INSTANCE"></span><span id="error_ds_cant_retrieve_instance"></span>**ERRO \_ DS não \_ consegue \_ recuperar \_ instância**
+<span id="ERROR_DS_CANT_RETRIEVE_INSTANCE"></span><span id="error_ds_cant_retrieve_instance"></span>**ERROR \_ DS \_ CANT \_ RETRIEVE \_ INSTANCE**
 </dt> <dd> <dl> <dt>
 
 8407 (0x20D7)
@@ -2217,7 +2217,7 @@ Não foi possível recuperar o atributo de tipo de instância.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CODE_INCONSISTENCY"></span><span id="error_ds_code_inconsistency"></span>**ERRO \_ de \_ inconsistência de código DS \_**
+<span id="ERROR_DS_CODE_INCONSISTENCY"></span><span id="error_ds_code_inconsistency"></span>**ERRO \_ \_ INCONSISTÊNCIA DE CÓDIGO \_ DS**
 </dt> <dd> <dl> <dt>
 
 8408 (0x20D8)
@@ -2230,7 +2230,7 @@ Ocorreu um erro interno.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DATABASE_ERROR"></span><span id="error_ds_database_error"></span>**erro \_ de \_ banco de dados DS \_**
+<span id="ERROR_DS_DATABASE_ERROR"></span><span id="error_ds_database_error"></span>**ERRO DE \_ BANCO DE DADOS DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8409 (0x20D9)
@@ -2243,7 +2243,7 @@ Ocorreu um erro de banco de dados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_GOVERNSID_MISSING"></span><span id="error_ds_governsid_missing"></span>**ERRO \_ DS \_ GOVERNSID \_ ausente**
+<span id="ERROR_DS_GOVERNSID_MISSING"></span><span id="error_ds_governsid_missing"></span>**ERRO \_ DS \_ GOVERNSID \_ AUSENTE**
 </dt> <dd> <dl> <dt>
 
 8410 (0x20DA)
@@ -2256,7 +2256,7 @@ O atributo GOVERNSID está ausente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_MISSING_EXPECTED_ATT"></span><span id="error_ds_missing_expected_att"></span>**ERRO \_ DS \_ faltando \_ \_ ATT esperado**
+<span id="ERROR_DS_MISSING_EXPECTED_ATT"></span><span id="error_ds_missing_expected_att"></span>**ERRO \_ DS \_ AUSENTE O \_ \_ ATT ESPERADO**
 </dt> <dd> <dl> <dt>
 
 8411 (0x20DB)
@@ -2269,7 +2269,7 @@ Um atributo esperado está ausente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NCNAME_MISSING_CR_REF"></span><span id="error_ds_ncname_missing_cr_ref"></span>**ERRO \_ de \_ NCName de DS ausente na \_ \_ referência de Cr \_**
+<span id="ERROR_DS_NCNAME_MISSING_CR_REF"></span><span id="error_ds_ncname_missing_cr_ref"></span>**ERRO \_ DS \_ NCNAME \_ CR REF \_ \_ AUSENTE**
 </dt> <dd> <dl> <dt>
 
 8412 (0x20DC)
@@ -2277,12 +2277,12 @@ Um atributo esperado está ausente.
 
 
 
-O contexto de nomenclatura especificado não tem uma referência cruzada.
+O contexto de nomentura especificado não tem uma referência cruzada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SECURITY_CHECKING_ERROR"></span><span id="error_ds_security_checking_error"></span>**erro \_ \_ ao verificar a segurança do DS \_ \_**
+<span id="ERROR_DS_SECURITY_CHECKING_ERROR"></span><span id="error_ds_security_checking_error"></span>**ERRO \_ ERRO DE VERIFICAÇÃO DE SEGURANÇA \_ \_ DE DS \_**
 </dt> <dd> <dl> <dt>
 
 8413 (0x20DD)
@@ -2295,7 +2295,7 @@ Ocorreu um erro de verificação de segurança.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SCHEMA_NOT_LOADED"></span><span id="error_ds_schema_not_loaded"></span>**ERRO \_ de \_ esquema DS \_ não \_ carregado**
+<span id="ERROR_DS_SCHEMA_NOT_LOADED"></span><span id="error_ds_schema_not_loaded"></span>**ERRO \_ ESQUEMA DS \_ NÃO \_ \_ CARREGADO**
 </dt> <dd> <dl> <dt>
 
 8414 (0x20DE)
@@ -2308,7 +2308,7 @@ O esquema não está carregado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SCHEMA_ALLOC_FAILED"></span><span id="error_ds_schema_alloc_failed"></span>**ERRO \_ \_ \_ falha na alocação de esquema DS \_**
+<span id="ERROR_DS_SCHEMA_ALLOC_FAILED"></span><span id="error_ds_schema_alloc_failed"></span>**ERRO \_ FALHA NO \_ \_ ALLOC DO ESQUEMA DS \_**
 </dt> <dd> <dl> <dt>
 
 8415 (0x20DF)
@@ -2321,7 +2321,7 @@ Falha na alocação de esquema. Verifique se o computador está com pouca memór
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ATT_SCHEMA_REQ_SYNTAX"></span><span id="error_ds_att_schema_req_syntax"></span>**ERRO \_ de \_ \_ sintaxe de req de esquema DS ATT \_ \_**
+<span id="ERROR_DS_ATT_SCHEMA_REQ_SYNTAX"></span><span id="error_ds_att_schema_req_syntax"></span>**SINTAXE \_ DE \_ \_ \_ REQ \_ DE ESQUEMA DE ERRO DS ATT**
 </dt> <dd> <dl> <dt>
 
 8416 (0x20E0)
@@ -2334,7 +2334,7 @@ Falha ao obter a sintaxe necessária para o esquema de atributo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_GCVERIFY_ERROR"></span><span id="error_ds_gcverify_error"></span>**erro erro de \_ \_ GCVERIFY DS \_**
+<span id="ERROR_DS_GCVERIFY_ERROR"></span><span id="error_ds_gcverify_error"></span>**ERRO \_ DS \_ ERRO GCVERIFY \_**
 </dt> <dd> <dl> <dt>
 
 8417 (0x20E1)
@@ -2342,12 +2342,12 @@ Falha ao obter a sintaxe necessária para o esquema de atributo.
 
 
 
-Falha na verificação do catálogo global. O catálogo global não está disponível ou não oferece suporte à operação. Parte do diretório não está disponível no momento.
+Falha na verificação do catálogo global. O catálogo global não está disponível ou não dá suporte à operação. Parte do diretório não está disponível no momento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SCHEMA_MISMATCH"></span><span id="error_ds_dra_schema_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de esquema Dra DS \_**
+<span id="ERROR_DS_DRA_SCHEMA_MISMATCH"></span><span id="error_ds_dra_schema_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DE ESQUEMA DE DRA DS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 8418 (0x20E2)
@@ -2360,7 +2360,7 @@ A operação de replicação falhou devido a uma incompatibilidade de esquema en
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_FIND_DSA_OBJ"></span><span id="error_ds_cant_find_dsa_obj"></span>**ERRO \_ DS não \_ consegue \_ encontrar \_ DSA \_ obj**
+<span id="ERROR_DS_CANT_FIND_DSA_OBJ"></span><span id="error_ds_cant_find_dsa_obj"></span>**ERRO \_ DS \_ NÃO CONSEGUE ENCONTRAR \_ \_ DSA \_ OBJ**
 </dt> <dd> <dl> <dt>
 
 8419 (0x20E3)
@@ -2373,7 +2373,7 @@ Não foi possível encontrar o objeto DSA.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_FIND_EXPECTED_NC"></span><span id="error_ds_cant_find_expected_nc"></span>**ERRO \_ DS não \_ consegue \_ localizar o \_ \_ NC esperado**
+<span id="ERROR_DS_CANT_FIND_EXPECTED_NC"></span><span id="error_ds_cant_find_expected_nc"></span>**ERRO \_ DS \_ NÃO PODE ENCONTRAR \_ NC \_ \_ ESPERADO**
 </dt> <dd> <dl> <dt>
 
 8420 (0x20E4)
@@ -2381,12 +2381,12 @@ Não foi possível encontrar o objeto DSA.
 
 
 
-Não foi possível encontrar o contexto de nomenclatura.
+Não foi possível encontrar o contexto de nomentura.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_FIND_NC_IN_CACHE"></span><span id="error_ds_cant_find_nc_in_cache"></span>**ERRO \_ DS não \_ consegue \_ localizar \_ NC \_ no \_ cache**
+<span id="ERROR_DS_CANT_FIND_NC_IN_CACHE"></span><span id="error_ds_cant_find_nc_in_cache"></span>**ERRO \_ DS \_ NÃO CONSEGUE ENCONTRAR NC NO \_ \_ \_ \_ CACHE**
 </dt> <dd> <dl> <dt>
 
 8421 (0x20E5)
@@ -2394,12 +2394,12 @@ Não foi possível encontrar o contexto de nomenclatura.
 
 
 
-Não foi possível encontrar o contexto de nomenclatura no cache.
+Não foi possível encontrar o contexto de nomentura no cache.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_RETRIEVE_CHILD"></span><span id="error_ds_cant_retrieve_child"></span>**ERRO \_ DS não \_ consegue \_ recuperar \_ filho**
+<span id="ERROR_DS_CANT_RETRIEVE_CHILD"></span><span id="error_ds_cant_retrieve_child"></span>**ERRO \_ DS \_ NÃO PODE RECUPERAR \_ \_ FILHO**
 </dt> <dd> <dl> <dt>
 
 8422 (0x20E6)
@@ -2412,7 +2412,7 @@ Não foi possível recuperar o objeto filho.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SECURITY_ILLEGAL_MODIFY"></span><span id="error_ds_security_illegal_modify"></span>**ERRO \_ de \_ \_ modificação ilegal de segurança DS \_**
+<span id="ERROR_DS_SECURITY_ILLEGAL_MODIFY"></span><span id="error_ds_security_illegal_modify"></span>**ERRO \_ DS \_ SECURITY ILLEGAL \_ \_ MODIFY**
 </dt> <dd> <dl> <dt>
 
 8423 (0x20E7)
@@ -2425,7 +2425,7 @@ A modificação não foi permitida por motivos de segurança.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_REPLACE_HIDDEN_REC"></span><span id="error_ds_cant_replace_hidden_rec"></span>**ERRO \_ DS não \_ consegue \_ substituir o \_ \_ REC oculto**
+<span id="ERROR_DS_CANT_REPLACE_HIDDEN_REC"></span><span id="error_ds_cant_replace_hidden_rec"></span>**ERRO \_ DS \_ NÃO PODE SUBSTITUIR REC \_ \_ \_ OCULTO**
 </dt> <dd> <dl> <dt>
 
 8424 (0x20E8)
@@ -2438,7 +2438,7 @@ A operação não pode substituir o registro oculto.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_BAD_HIERARCHY_FILE"></span><span id="error_ds_bad_hierarchy_file"></span>**ERRO \_ de \_ \_ arquivo de hierarquia insatisfatório DS \_**
+<span id="ERROR_DS_BAD_HIERARCHY_FILE"></span><span id="error_ds_bad_hierarchy_file"></span>**ARQUIVO \_ DE HIERARQUIA RUIM DE ERRO DS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 8425 (0x20E9)
@@ -2451,7 +2451,7 @@ O arquivo de hierarquia é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_BUILD_HIERARCHY_TABLE_FAILED"></span><span id="error_ds_build_hierarchy_table_failed"></span>**ERRO \_ \_ \_ \_ falha na tabela de hierarquia de compilação DS \_**
+<span id="ERROR_DS_BUILD_HIERARCHY_TABLE_FAILED"></span><span id="error_ds_build_hierarchy_table_failed"></span>**ERRO \_ FALHA NA TABELA DE HIERARQUIA DE BUILD \_ \_ \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8426 (0x20EA)
@@ -2464,7 +2464,7 @@ Falha na tentativa de criar a tabela de hierarquia.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CONFIG_PARAM_MISSING"></span><span id="error_ds_config_param_missing"></span>**ERRO \_ \_ parâmetro DS \_ config \_ ausente**
+<span id="ERROR_DS_CONFIG_PARAM_MISSING"></span><span id="error_ds_config_param_missing"></span>**ERRO \_ DS \_ CONFIG \_ PARAM \_ MISSING**
 </dt> <dd> <dl> <dt>
 
 8427 (0x20EB)
@@ -2472,12 +2472,12 @@ Falha na tentativa de criar a tabela de hierarquia.
 
 
 
-O parâmetro de configuração de diretório está ausente no registro.
+O parâmetro de configuração de diretório está ausente do Registro.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_COUNTING_AB_INDICES_FAILED"></span><span id="error_ds_counting_ab_indices_failed"></span>**ERRO de \_ contagem de DS de \_ \_ \_ índices AB \_ com falha**
+<span id="ERROR_DS_COUNTING_AB_INDICES_FAILED"></span><span id="error_ds_counting_ab_indices_failed"></span>**ERRO \_ DS \_ FALHA NA CONTAGEM \_ DE \_ ÍNDICES \_ AB**
 </dt> <dd> <dl> <dt>
 
 8428 (0x20EC)
@@ -2485,12 +2485,12 @@ O parâmetro de configuração de diretório está ausente no registro.
 
 
 
-Falha na tentativa de contagem dos índices do catálogo de endereços.
+Falha na tentativa de contar os índices do livro de endereços.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_HIERARCHY_TABLE_MALLOC_FAILED"></span><span id="error_ds_hierarchy_table_malloc_failed"></span>**ERRO \_ \_ \_ \_ falha ao alocar tabela de hierarquia DS \_**
+<span id="ERROR_DS_HIERARCHY_TABLE_MALLOC_FAILED"></span><span id="error_ds_hierarchy_table_malloc_failed"></span>**ERRO \_ FALHA NA TABELA DE HIERARQUIA \_ \_ \_ DS MALLOC \_**
 </dt> <dd> <dl> <dt>
 
 8429 (0x20ED)
@@ -2503,7 +2503,7 @@ Falha na alocação da tabela de hierarquia.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INTERNAL_FAILURE"></span><span id="error_ds_internal_failure"></span>**ERRO \_ interno de DS \_ \_**
+<span id="ERROR_DS_INTERNAL_FAILURE"></span><span id="error_ds_internal_failure"></span>**ERRO \_ FALHA \_ \_ INTERNA DO DS**
 </dt> <dd> <dl> <dt>
 
 8430 (0x20EE)
@@ -2516,7 +2516,7 @@ O serviço de diretório encontrou uma falha interna.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_UNKNOWN_ERROR"></span><span id="error_ds_unknown_error"></span>**erro \_ desconhecido ao DS \_ \_**
+<span id="ERROR_DS_UNKNOWN_ERROR"></span><span id="error_ds_unknown_error"></span>**ERRO \_ ERRO DS \_ ERRO \_ DESCONHECIDO**
 </dt> <dd> <dl> <dt>
 
 8431 (0x20EF)
@@ -2529,7 +2529,7 @@ O serviço de diretório encontrou uma falha desconhecida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ROOT_REQUIRES_CLASS_TOP"></span><span id="error_ds_root_requires_class_top"></span>**ERRO \_ a \_ raiz DS \_ requer a \_ classe \_ Top**
+<span id="ERROR_DS_ROOT_REQUIRES_CLASS_TOP"></span><span id="error_ds_root_requires_class_top"></span>**A \_ RAIZ DO ERRO DS REQUER A CLASSE \_ \_ \_ \_ TOP**
 </dt> <dd> <dl> <dt>
 
 8432 (0x20F0)
@@ -2537,12 +2537,12 @@ O serviço de diretório encontrou uma falha desconhecida.
 
 
 
-Um objeto raiz requer uma classe de ' top '.
+Um objeto raiz requer uma classe de "top".
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_REFUSING_FSMO_ROLES"></span><span id="error_ds_refusing_fsmo_roles"></span>**ERRO \_ ao \_ recusar as \_ \_ funções FSMO do DS**
+<span id="ERROR_DS_REFUSING_FSMO_ROLES"></span><span id="error_ds_refusing_fsmo_roles"></span>**ERRO \_ DS \_ REANDO \_ FUNÇÕES FSMO \_**
 </dt> <dd> <dl> <dt>
 
 8433 (0x20F1)
@@ -2550,12 +2550,12 @@ Um objeto raiz requer uma classe de ' top '.
 
 
 
-Este servidor de diretório está sendo desligado e não é possível apropriar-se de novas funções de operação de mestre único flutuante.
+Esse servidor de diretório está sendo desligado e não pode assumir a propriedade de novas funções de operação de mestre único flutuante.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_MISSING_FSMO_SETTINGS"></span><span id="error_ds_missing_fsmo_settings"></span>**ERRO \_ DS \_ ausente \_ \_ configurações FSMO**
+<span id="ERROR_DS_MISSING_FSMO_SETTINGS"></span><span id="error_ds_missing_fsmo_settings"></span>**ERRO \_ DS \_ CONFIGURAÇÕES \_ DE FSMO \_ AUSENTES**
 </dt> <dd> <dl> <dt>
 
 8434 (0x20F2)
@@ -2563,12 +2563,12 @@ Este servidor de diretório está sendo desligado e não é possível apropriar-
 
 
 
-O serviço de diretório não tem informações de configuração obrigatórias e não é possível determinar a propriedade de funções de operação de mestre único flutuante.
+O serviço de diretório não tem informações de configuração obrigatórias e não pode determinar a propriedade de funções de operação de mestre único flutuantes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_UNABLE_TO_SURRENDER_ROLES"></span><span id="error_ds_unable_to_surrender_roles"></span>**ERRO \_ DS \_ incapaz \_ de despartir de \_ \_ funções**
+<span id="ERROR_DS_UNABLE_TO_SURRENDER_ROLES"></span><span id="error_ds_unable_to_surrender_roles"></span>**ERRO \_ DS \_ NÃO É POSSÍVEL \_ ENTREGAR \_ FUNÇÕES \_**
 </dt> <dd> <dl> <dt>
 
 8435 (0x20F3)
@@ -2576,12 +2576,12 @@ O serviço de diretório não tem informações de configuração obrigatórias 
 
 
 
-O serviço de diretório não pôde transferir a propriedade de uma ou mais funções de operação de mestre único flutuantes para outros servidores.
+O serviço de diretório não pôde transferir a propriedade de uma ou mais funções de operação de mestre único flutuante para outros servidores.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_GENERIC"></span><span id="error_ds_dra_generic"></span>**ERRO \_ de \_ Dra \_ genérico de DS**
+<span id="ERROR_DS_DRA_GENERIC"></span><span id="error_ds_dra_generic"></span>**ERRO \_ DS \_ DRA \_ GENERIC**
 </dt> <dd> <dl> <dt>
 
 8436 (0x20F4)
@@ -2594,7 +2594,7 @@ Falha na operação de replicação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_INVALID_PARAMETER"></span><span id="error_ds_dra_invalid_parameter"></span>**ERRO \_ de \_ \_ parâmetro inválido de Dra DS \_**
+<span id="ERROR_DS_DRA_INVALID_PARAMETER"></span><span id="error_ds_dra_invalid_parameter"></span>**ERRO \_ DS \_ DRA PARÂMETRO \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 8437 (0x20F5)
@@ -2607,7 +2607,7 @@ Um parâmetro inválido foi especificado para esta operação de replicação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_BUSY"></span><span id="error_ds_dra_busy"></span>**ERRO \_ DS \_ Dra \_ ocupado**
+<span id="ERROR_DS_DRA_BUSY"></span><span id="error_ds_dra_busy"></span>**ERRO \_ DS \_ DRA \_ OCUPADO**
 </dt> <dd> <dl> <dt>
 
 8438 (0x20F6)
@@ -2620,7 +2620,7 @@ O serviço de diretório está muito ocupado para concluir a operação de repli
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_BAD_DN"></span><span id="error_ds_dra_bad_dn"></span>**ERRO \_ \_ DN DS Dra \_ insatisfatório \_**
+<span id="ERROR_DS_DRA_BAD_DN"></span><span id="error_ds_dra_bad_dn"></span>**ERRO \_ DS \_ DRA BAD \_ \_ DN**
 </dt> <dd> <dl> <dt>
 
 8439 (0x20F7)
@@ -2628,12 +2628,12 @@ O serviço de diretório está muito ocupado para concluir a operação de repli
 
 
 
-O nome distinto especificado para esta operação de replicação é inválido.
+O nome diferenciado especificado para essa operação de replicação é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_BAD_NC"></span><span id="error_ds_dra_bad_nc"></span>**ERRO \_ \_ NC DS Dra \_ insatisfatório \_**
+<span id="ERROR_DS_DRA_BAD_NC"></span><span id="error_ds_dra_bad_nc"></span>**ERRO \_ DS \_ DRA BAD \_ \_ NC**
 </dt> <dd> <dl> <dt>
 
 8440 (0x20F8)
@@ -2641,12 +2641,12 @@ O nome distinto especificado para esta operação de replicação é inválido.
 
 
 
-O contexto de nomenclatura especificado para esta operação de replicação é inválido.
+O contexto de nomentura especificado para essa operação de replicação é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_DN_EXISTS"></span><span id="error_ds_dra_dn_exists"></span>**ERRO \_ o \_ DN DS Dra \_ \_ existe**
+<span id="ERROR_DS_DRA_DN_EXISTS"></span><span id="error_ds_dra_dn_exists"></span>**ERRO \_ DS \_ DRA \_ DN \_ EXISTS**
 </dt> <dd> <dl> <dt>
 
 8441 (0x20F9)
@@ -2654,12 +2654,12 @@ O contexto de nomenclatura especificado para esta operação de replicação é 
 
 
 
-O nome distinto especificado para esta operação de replicação já existe.
+O nome diferenciado especificado para essa operação de replicação já existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_INTERNAL_ERROR"></span><span id="error_ds_dra_internal_error"></span>**erro \_ \_ interno de Dra DS \_ \_**
+<span id="ERROR_DS_DRA_INTERNAL_ERROR"></span><span id="error_ds_dra_internal_error"></span>**ERRO \_ ERRO INTERNO DO DRA DS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 8442 (0x20FA)
@@ -2672,7 +2672,7 @@ O sistema de replicação encontrou um erro interno.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_INCONSISTENT_DIT"></span><span id="error_ds_dra_inconsistent_dit"></span>**ERRO \_ de \_ dit de Dra \_ inconsistente DS \_**
+<span id="ERROR_DS_DRA_INCONSISTENT_DIT"></span><span id="error_ds_dra_inconsistent_dit"></span>**ERRO \_ DS \_ DRA \_ \_ INCONSISTENTE DIT**
 </dt> <dd> <dl> <dt>
 
 8443 (0x20FB)
@@ -2685,7 +2685,7 @@ A operação de replicação encontrou uma inconsistência de banco de dados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_CONNECTION_FAILED"></span><span id="error_ds_dra_connection_failed"></span>**ERRO \_ \_ \_ falha na conexão Dra DS \_**
+<span id="ERROR_DS_DRA_CONNECTION_FAILED"></span><span id="error_ds_dra_connection_failed"></span>**ERRO \_ FALHA NA CONEXÃO DO \_ DS DRA \_ \_**
 </dt> <dd> <dl> <dt>
 
 8444 (0x20FC)
@@ -2693,12 +2693,12 @@ A operação de replicação encontrou uma inconsistência de banco de dados.
 
 
 
-O servidor especificado para esta operação de replicação não pôde ser contatado.
+O servidor especificado para essa operação de replicação não pôde ser contatado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_BAD_INSTANCE_TYPE"></span><span id="error_ds_dra_bad_instance_type"></span>**ERRO \_ de \_ \_ tipo de \_ instância inválido DS Dra \_**
+<span id="ERROR_DS_DRA_BAD_INSTANCE_TYPE"></span><span id="error_ds_dra_bad_instance_type"></span>**ERRO \_ DS \_ DRA TIPO DE \_ INSTÂNCIA \_ \_ RUIM**
 </dt> <dd> <dl> <dt>
 
 8445 (0x20FD)
@@ -2711,7 +2711,7 @@ A operação de replicação encontrou um objeto com um tipo de instância invá
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_OUT_OF_MEM"></span><span id="error_ds_dra_out_of_mem"></span>**ERRO \_ DS \_ Dra \_ fora \_ do \_ mem**
+<span id="ERROR_DS_DRA_OUT_OF_MEM"></span><span id="error_ds_dra_out_of_mem"></span>**ERRO \_ DS \_ DRA OUT \_ DO \_ \_ MEM**
 </dt> <dd> <dl> <dt>
 
 8446 (0x20FE)
@@ -2724,7 +2724,7 @@ Falha na operação de replicação ao alocar memória.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_MAIL_PROBLEM"></span><span id="error_ds_dra_mail_problem"></span>**ERRO \_ de \_ email Dra DS \_ \_**
+<span id="ERROR_DS_DRA_MAIL_PROBLEM"></span><span id="error_ds_dra_mail_problem"></span>**ERRO \_ PROBLEMA DO \_ DS DRA \_ \_ MAIL**
 </dt> <dd> <dl> <dt>
 
 8447 (0x20FF)
@@ -2737,7 +2737,7 @@ A operação de replicação encontrou um erro com o sistema de email.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_REF_ALREADY_EXISTS"></span><span id="error_ds_dra_ref_already_exists"></span>**ERRO o \_ DS \_ Dra \_ ref \_ já \_ existe**
+<span id="ERROR_DS_DRA_REF_ALREADY_EXISTS"></span><span id="error_ds_dra_ref_already_exists"></span>**O \_ ERRO DS \_ DRA REF \_ JÁ \_ \_ EXISTE**
 </dt> <dd> <dl> <dt>
 
 8448 (0x2100)
@@ -2750,7 +2750,7 @@ As informações de referência de replicação para o servidor de destino já e
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_REF_NOT_FOUND"></span><span id="error_ds_dra_ref_not_found"></span>**ERRO \_ de \_ ref Dra DS \_ \_ não \_ encontrado**
+<span id="ERROR_DS_DRA_REF_NOT_FOUND"></span><span id="error_ds_dra_ref_not_found"></span>**ERRO \_ DS \_ DRA REF NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 8449 (0x2101)
@@ -2763,7 +2763,7 @@ As informações de referência de replicação para o servidor de destino não 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_OBJ_IS_REP_SOURCE"></span><span id="error_ds_dra_obj_is_rep_source"></span>**ERRO \_ DS \_ Dra \_ obj \_ is \_ origem do representante \_**
+<span id="ERROR_DS_DRA_OBJ_IS_REP_SOURCE"></span><span id="error_ds_dra_obj_is_rep_source"></span>**ERRO \_ DS \_ DRA \_ OBJ É FONTE DE \_ \_ \_ REP**
 </dt> <dd> <dl> <dt>
 
 8450 (0x2102)
@@ -2771,12 +2771,12 @@ As informações de referência de replicação para o servidor de destino não 
 
 
 
-Não é possível remover o contexto de nomenclatura porque ele é replicado em outro servidor.
+O contexto de nomentura não pode ser removido porque ele é replicado para outro servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_DB_ERROR"></span><span id="error_ds_dra_db_error"></span>**erro \_ erro de banco de domínio DS \_ Dra \_ \_**
+<span id="ERROR_DS_DRA_DB_ERROR"></span><span id="error_ds_dra_db_error"></span>**ERRO \_ ERRO DO BD DRA \_ \_ DS \_**
 </dt> <dd> <dl> <dt>
 
 8451 (0x2103)
@@ -2789,7 +2789,7 @@ A operação de replicação encontrou um erro de banco de dados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_NO_REPLICA"></span><span id="error_ds_dra_no_replica"></span>**ERRO \_ DS \_ Dra \_ sem \_ réplica**
+<span id="ERROR_DS_DRA_NO_REPLICA"></span><span id="error_ds_dra_no_replica"></span>**ERRO \_ DS \_ DRA SEM \_ \_ RÉPLICA**
 </dt> <dd> <dl> <dt>
 
 8452 (0x2104)
@@ -2797,12 +2797,12 @@ A operação de replicação encontrou um erro de banco de dados.
 
 
 
-O contexto de nomenclatura está no processo de ser removido ou não é replicado do servidor especificado.
+O contexto de nomentura está no processo de ser removido ou não é replicado do servidor especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_ACCESS_DENIED"></span><span id="error_ds_dra_access_denied"></span>**ERRO \_ \_ acesso ao Dra DS \_ \_ negado**
+<span id="ERROR_DS_DRA_ACCESS_DENIED"></span><span id="error_ds_dra_access_denied"></span>**ERRO \_ ACESSO DE DRA \_ \_ DS \_ NEGADO**
 </dt> <dd> <dl> <dt>
 
 8453 (0x2105)
@@ -2815,7 +2815,7 @@ O acesso à replicação foi negado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_NOT_SUPPORTED"></span><span id="error_ds_dra_not_supported"></span>**ERRO \_ DS \_ Dra \_ não \_ suportado**
+<span id="ERROR_DS_DRA_NOT_SUPPORTED"></span><span id="error_ds_dra_not_supported"></span>**ERRO NÃO HÁ SUPORTE \_ \_ PARA O DRA \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8454 (0x2106)
@@ -2823,12 +2823,12 @@ O acesso à replicação foi negado.
 
 
 
-Esta versão do serviço de diretório não dá suporte para a operação solicitada.
+A operação solicitada não é suportada por esta versão do serviço de diretório.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_RPC_CANCELLED"></span><span id="error_ds_dra_rpc_cancelled"></span>**ERRO \_ \_ RPC de Dra DS \_ \_ cancelado**
+<span id="ERROR_DS_DRA_RPC_CANCELLED"></span><span id="error_ds_dra_rpc_cancelled"></span>**ERRO \_ DS \_ DRA \_ RPC \_ CANCELADO**
 </dt> <dd> <dl> <dt>
 
 8455 (0x2107)
@@ -2841,7 +2841,7 @@ A chamada de procedimento remoto de replicação foi cancelada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SOURCE_DISABLED"></span><span id="error_ds_dra_source_disabled"></span>**ERRO \_ \_ origem de Dra DS \_ \_ desabilitada**
+<span id="ERROR_DS_DRA_SOURCE_DISABLED"></span><span id="error_ds_dra_source_disabled"></span>**ERRO \_ A ORIGEM \_ DO DRA \_ DS \_ DESABILITADA**
 </dt> <dd> <dl> <dt>
 
 8456 (0x2108)
@@ -2849,12 +2849,12 @@ A chamada de procedimento remoto de replicação foi cancelada.
 
 
 
-O servidor de origem está rejeitando solicitações de replicação no momento.
+No momento, o servidor de origem está rejeitando solicitações de replicação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SINK_DISABLED"></span><span id="error_ds_dra_sink_disabled"></span>**ERRO \_ de \_ coletor de Dra DS \_ \_ desabilitado**
+<span id="ERROR_DS_DRA_SINK_DISABLED"></span><span id="error_ds_dra_sink_disabled"></span>**ERRO \_ DS \_ DRA SINK \_ \_ DISABLED**
 </dt> <dd> <dl> <dt>
 
 8457 (0x2109)
@@ -2862,12 +2862,12 @@ O servidor de origem está rejeitando solicitações de replicação no momento.
 
 
 
-O servidor de destino está rejeitando solicitações de replicação no momento.
+No momento, o servidor de destino está rejeitando solicitações de replicação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_NAME_COLLISION"></span><span id="error_ds_dra_name_collision"></span>**ERRO \_ de \_ \_ colisão de nome Dra DS \_**
+<span id="ERROR_DS_DRA_NAME_COLLISION"></span><span id="error_ds_dra_name_collision"></span>**ERRO \_ COLISÃO DE NOME DO DRA DS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 8458 (0x210A)
@@ -2875,12 +2875,12 @@ O servidor de destino está rejeitando solicitações de replicação no momento
 
 
 
-Falha na operação de replicação devido a uma colisão de nomes de objetos.
+A operação de replicação falhou devido a uma colisão de nomes de objeto.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SOURCE_REINSTALLED"></span><span id="error_ds_dra_source_reinstalled"></span>**ERRO \_ de \_ origem de Dra DS \_ \_ reinstalado**
+<span id="ERROR_DS_DRA_SOURCE_REINSTALLED"></span><span id="error_ds_dra_source_reinstalled"></span>**ERRO \_ A ORIGEM \_ DO DRA \_ \_ DS REINSTALADA**
 </dt> <dd> <dl> <dt>
 
 8459 (0x210B)
@@ -2893,7 +2893,7 @@ A origem da replicação foi reinstalada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_MISSING_PARENT"></span><span id="error_ds_dra_missing_parent"></span>**ERRO \_ DS \_ Dra \_ ausente \_ pai**
+<span id="ERROR_DS_DRA_MISSING_PARENT"></span><span id="error_ds_dra_missing_parent"></span>**ERRO \_ DS \_ DRA PAI \_ \_ AUSENTE**
 </dt> <dd> <dl> <dt>
 
 8460 (0x210C)
@@ -2901,12 +2901,12 @@ A origem da replicação foi reinstalada.
 
 
 
-Falha na operação de replicação porque um objeto pai necessário está ausente.
+A operação de replicação falhou porque um objeto pai necessário está ausente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_PREEMPTED"></span><span id="error_ds_dra_preempted"></span>**ERRO \_ de \_ Dra DS \_ preempção**
+<span id="ERROR_DS_DRA_PREEMPTED"></span><span id="error_ds_dra_preempted"></span>**ERRO \_ DS \_ DRA \_ PREEMPTED**
 </dt> <dd> <dl> <dt>
 
 8461 (0x210D)
@@ -2914,12 +2914,12 @@ Falha na operação de replicação porque um objeto pai necessário está ausen
 
 
 
-A operação de replicação foi antecipada.
+A operação de replicação foi preempção.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_ABANDON_SYNC"></span><span id="error_ds_dra_abandon_sync"></span>**ERRO \_ DS \_ Dra \_ ABANDON \_ Sync**
+<span id="ERROR_DS_DRA_ABANDON_SYNC"></span><span id="error_ds_dra_abandon_sync"></span>**ERRO \_ DS \_ DRA ABANDON \_ \_ SYNC**
 </dt> <dd> <dl> <dt>
 
 8462 (0x210E)
@@ -2932,7 +2932,7 @@ A tentativa de sincronização de replicação foi abandonada devido à falta de
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SHUTDOWN"></span><span id="error_ds_dra_shutdown"></span>**ERRO \_ de \_ \_ desligamento de Dra DS**
+<span id="ERROR_DS_DRA_SHUTDOWN"></span><span id="error_ds_dra_shutdown"></span>**ERRO \_ DS \_ DRA \_ SHUTDOWN**
 </dt> <dd> <dl> <dt>
 
 8463 (0x210F)
@@ -2945,7 +2945,7 @@ A operação de replicação foi encerrada porque o sistema está sendo desligad
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_INCOMPATIBLE_PARTIAL_SET"></span><span id="error_ds_dra_incompatible_partial_set"></span>**ERRO \_ de \_ \_ \_ conjunto parcial incompatível de Dra DS \_**
+<span id="ERROR_DS_DRA_INCOMPATIBLE_PARTIAL_SET"></span><span id="error_ds_dra_incompatible_partial_set"></span>**ERRO \_ DS \_ DRA CONJUNTO \_ PARCIAL \_ \_ INCOMPATÍVEL**
 </dt> <dd> <dl> <dt>
 
 8464 (0x2110)
@@ -2953,12 +2953,12 @@ A operação de replicação foi encerrada porque o sistema está sendo desligad
 
 
 
-Falha na tentativa de sincronização porque o DC de destino está aguardando a sincronização de novos atributos parciais da origem no momento. Essa condição será normal se uma alteração de esquema recente tiver modificado o conjunto de atributos parciais. O conjunto de atributos parciais de destino não é um subconjunto do conjunto de atributos parciais de origem.
+Falha na tentativa de sincronização porque o DC de destino está aguardando para sincronizar novos atributos parciais da origem. Essa condição será normal se uma alteração de esquema recente tiver modificado o conjunto de atributos parciais. O conjunto de atributos parciais de destino não é um subconjunto do conjunto de atributos parciais de origem.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SOURCE_IS_PARTIAL_REPLICA"></span><span id="error_ds_dra_source_is_partial_replica"></span>**ERRO \_ a \_ origem do Dra DS \_ é uma \_ \_ \_ réplica parcial**
+<span id="ERROR_DS_DRA_SOURCE_IS_PARTIAL_REPLICA"></span><span id="error_ds_dra_source_is_partial_replica"></span>**ERRO \_ A ORIGEM \_ DO DRA \_ DS É UMA \_ RÉPLICA \_ \_ PARCIAL**
 </dt> <dd> <dl> <dt>
 
 8465 (0x2111)
@@ -2966,12 +2966,12 @@ Falha na tentativa de sincronização porque o DC de destino está aguardando a 
 
 
 
-Falha na tentativa de sincronização de replicação porque uma réplica mestre tentou sincronizar a partir de uma réplica parcial.
+Falha na tentativa de sincronização de replicação porque uma réplica mestra tentou sincronizar de uma réplica parcial.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_EXTN_CONNECTION_FAILED"></span><span id="error_ds_dra_extn_connection_failed"></span>**ERRO \_ \_ \_ \_ falha na conexão de EXTN Dra DS \_**
+<span id="ERROR_DS_DRA_EXTN_CONNECTION_FAILED"></span><span id="error_ds_dra_extn_connection_failed"></span>**ERRO \_ FALHA NA CONEXÃO \_ \_ EXTN DO DS DRA \_ \_**
 </dt> <dd> <dl> <dt>
 
 8466 (0x2112)
@@ -2979,12 +2979,12 @@ Falha na tentativa de sincronização de replicação porque uma réplica mestre
 
 
 
-O servidor especificado para esta operação de replicação foi contatado, mas esse servidor não pôde contatar um servidor adicional necessário para concluir a operação.
+O servidor especificado para essa operação de replicação foi contatado, mas esse servidor não pôde contatar um servidor adicional necessário para concluir a operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INSTALL_SCHEMA_MISMATCH"></span><span id="error_ds_install_schema_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de esquema de instalação DS \_**
+<span id="ERROR_DS_INSTALL_SCHEMA_MISMATCH"></span><span id="error_ds_install_schema_mismatch"></span>**ERRO \_ DS \_ INSTALAR \_ INCOMPATIBILIDADE DE \_ ESQUEMA**
 </dt> <dd> <dl> <dt>
 
 8467 (0x2113)
@@ -2997,7 +2997,7 @@ A versão do esquema de serviço de diretório da floresta de origem não é com
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DUP_LINK_ID"></span><span id="error_ds_dup_link_id"></span>**ERRO \_ \_ ID de \_ link de DUP DS \_**
+<span id="ERROR_DS_DUP_LINK_ID"></span><span id="error_ds_dup_link_id"></span>**ID \_ DO LINK DO DUP \_ \_ \_ DO ERROR DS**
 </dt> <dd> <dl> <dt>
 
 8468 (0x2114)
@@ -3005,12 +3005,12 @@ A versão do esquema de serviço de diretório da floresta de origem não é com
 
 
 
-Falha na atualização do esquema: já existe um atributo com o mesmo identificador de link.
+Falha na atualização de esquema: já existe um atributo com o mesmo identificador de link.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_ERROR_RESOLVING"></span><span id="error_ds_name_error_resolving"></span>**ERRO \_ ao \_ \_ resolver erro de nome DS \_**
+<span id="ERROR_DS_NAME_ERROR_RESOLVING"></span><span id="error_ds_name_error_resolving"></span>**ERRO \_ DE RESOLUÇÃO DE ERRO DE NOME \_ \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8469 (0x2115)
@@ -3018,12 +3018,12 @@ Falha na atualização do esquema: já existe um atributo com o mesmo identifica
 
 
 
-Conversão de nomes: erro de processamento genérico.
+Tradução de nome: erro de processamento genérico.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_ERROR_NOT_FOUND"></span><span id="error_ds_name_error_not_found"></span>**erro \_ de \_ nome \_ DS \_ não \_ encontrado**
+<span id="ERROR_DS_NAME_ERROR_NOT_FOUND"></span><span id="error_ds_name_error_not_found"></span>**ERRO \_ ERRO DE NOME \_ DS NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 8470 (0x2116)
@@ -3031,12 +3031,12 @@ Conversão de nomes: erro de processamento genérico.
 
 
 
-Conversão de nomes: não foi possível encontrar o nome ou o direito insuficiente para ver o nome.
+Tradução de nome: não foi possível encontrar o nome ou o direito insuficiente para ver o nome.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_ERROR_NOT_UNIQUE"></span><span id="error_ds_name_error_not_unique"></span>**ERRO \_ \_ nome DS \_ erro \_ não \_ exclusivo**
+<span id="ERROR_DS_NAME_ERROR_NOT_UNIQUE"></span><span id="error_ds_name_error_not_unique"></span>**ERRO \_ ERRO DE NOME \_ DS NÃO \_ \_ \_ EXCLUSIVO**
 </dt> <dd> <dl> <dt>
 
 8471 (0x2117)
@@ -3044,12 +3044,12 @@ Conversão de nomes: não foi possível encontrar o nome ou o direito insuficien
 
 
 
-Conversão de nomes: nome de entrada mapeado para mais de um nome de saída.
+Tradução de nome: nome de entrada mapeado para mais de um nome de saída.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_ERROR_NO_MAPPING"></span><span id="error_ds_name_error_no_mapping"></span>**erro \_ \_ nome DS \_ erro \_ sem \_ mapeamento**
+<span id="ERROR_DS_NAME_ERROR_NO_MAPPING"></span><span id="error_ds_name_error_no_mapping"></span>**ERRO \_ ERRO DE NOME DS SEM \_ \_ \_ \_ MAPEAMENTO**
 </dt> <dd> <dl> <dt>
 
 8472 (0x2118)
@@ -3057,12 +3057,12 @@ Conversão de nomes: nome de entrada mapeado para mais de um nome de saída.
 
 
 
-Conversão de nomes: nome de entrada encontrado, mas não o formato de saída associado.
+Tradução de nome: nome de entrada encontrado, mas não o formato de saída associado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_ERROR_DOMAIN_ONLY"></span><span id="error_ds_name_error_domain_only"></span>**ERRO \_ \_ nome DS \_ \_ somente domínio \_**
+<span id="ERROR_DS_NAME_ERROR_DOMAIN_ONLY"></span><span id="error_ds_name_error_domain_only"></span>**ERRO \_ SOMENTE DOMÍNIO DE ERRO DE NOME \_ \_ \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8473 (0x2119)
@@ -3070,12 +3070,12 @@ Conversão de nomes: nome de entrada encontrado, mas não o formato de saída as
 
 
 
-Conversão de nomes: não é possível resolver completamente, somente o domínio foi encontrado.
+Tradução de nome: não é possível resolver completamente, apenas o domínio foi encontrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING"></span><span id="error_ds_name_error_no_syntactical_mapping"></span>**erro \_ de \_ nome DS \_ erro \_ sem \_ \_ mapeamento sintático**
+<span id="ERROR_DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING"></span><span id="error_ds_name_error_no_syntactical_mapping"></span>**ERRO \_ ERRO DE NOME \_ DS SEM MAPEAMENTO \_ \_ \_ \_ SINTÁTICO**
 </dt> <dd> <dl> <dt>
 
 8474 (0x211A)
@@ -3083,12 +3083,12 @@ Conversão de nomes: não é possível resolver completamente, somente o domíni
 
 
 
-Conversão de nomes: não é possível executar um mapeamento puramente sintático no cliente sem sair da conexão.
+Tradução de nome: não é possível executar o mapeamento puramente sintático no cliente sem sair para a transmissão.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CONSTRUCTED_ATT_MOD"></span><span id="error_ds_constructed_att_mod"></span>**ERRO \_ DS \_ construído \_ ATT \_ mod**
+<span id="ERROR_DS_CONSTRUCTED_ATT_MOD"></span><span id="error_ds_constructed_att_mod"></span>**ERRO \_ DS \_ CONSTRUÍDO \_ ATT \_ MOD**
 </dt> <dd> <dl> <dt>
 
 8475 (0x211B)
@@ -3101,7 +3101,7 @@ A modificação de um atributo construído não é permitida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_WRONG_OM_OBJ_CLASS"></span><span id="error_ds_wrong_om_obj_class"></span>**ERRO \_ DS \_ de \_ classe do OM incorreto \_ \_**
+<span id="ERROR_DS_WRONG_OM_OBJ_CLASS"></span><span id="error_ds_wrong_om_obj_class"></span>**ERRO \_ DS \_ CLASSE \_ OM \_ OBJ \_ ERRADA**
 </dt> <dd> <dl> <dt>
 
 8476 (0x211C)
@@ -3109,12 +3109,12 @@ A modificação de um atributo construído não é permitida.
 
 
 
-A classe de objeto OM especificada está incorreta para um atributo com a sintaxe especificada.
+A classe OM-Object especificada está incorreta para um atributo com a sintaxe especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_REPL_PENDING"></span><span id="error_ds_dra_repl_pending"></span>**ERRO \_ de \_ replicação de Dra DS \_ \_ pendente**
+<span id="ERROR_DS_DRA_REPL_PENDING"></span><span id="error_ds_dra_repl_pending"></span>**ERRO \_ DS \_ DRA \_ REPL \_ PENDENTE**
 </dt> <dd> <dl> <dt>
 
 8477 (0x211D)
@@ -3127,7 +3127,7 @@ A solicitação de replicação foi postada; aguardando resposta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DS_REQUIRED"></span><span id="error_ds_ds_required"></span>**ERRO DS DS \_ \_ \_ necessário**
+<span id="ERROR_DS_DS_REQUIRED"></span><span id="error_ds_ds_required"></span>**ERRO \_ DS \_ DS \_ OBRIGATÓRIO**
 </dt> <dd> <dl> <dt>
 
 8478 (0x211E)
@@ -3135,12 +3135,12 @@ A solicitação de replicação foi postada; aguardando resposta.
 
 
 
-A operação solicitada requer um serviço de diretório e nenhuma estava disponível.
+A operação solicitada requer um serviço de diretório e nenhum estava disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INVALID_LDAP_DISPLAY_NAME"></span><span id="error_ds_invalid_ldap_display_name"></span>**ERRO \_ \_ nome de \_ \_ exibição LDAP \_ inválido do DS**
+<span id="ERROR_DS_INVALID_LDAP_DISPLAY_NAME"></span><span id="error_ds_invalid_ldap_display_name"></span>**ERRO \_ DS \_ NOME DE \_ EXIBIÇÃO LDAP \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 8479 (0x211F)
@@ -3148,12 +3148,12 @@ A operação solicitada requer um serviço de diretório e nenhuma estava dispon
 
 
 
-O nome de exibição LDAP da classe ou do atributo contém caracteres não ASCII.
+O nome de exibição LDAP da classe ou atributo contém caracteres não ASCII.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NON_BASE_SEARCH"></span><span id="error_ds_non_base_search"></span>**ERRO \_ de \_ \_ pesquisa não \_ básica de DS**
+<span id="ERROR_DS_NON_BASE_SEARCH"></span><span id="error_ds_non_base_search"></span>**ERROR \_ DS \_ NON \_ BASE \_ SEARCH**
 </dt> <dd> <dl> <dt>
 
 8480 (0x2120)
@@ -3161,12 +3161,12 @@ O nome de exibição LDAP da classe ou do atributo contém caracteres não ASCII
 
 
 
-A operação de pesquisa solicitada só tem suporte para pesquisas base.
+A operação de pesquisa solicitada só tem suporte para pesquisas de base.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_RETRIEVE_ATTS"></span><span id="error_ds_cant_retrieve_atts"></span>**ERRO \_ DS não \_ consegue \_ recuperar \_ atts**
+<span id="ERROR_DS_CANT_RETRIEVE_ATTS"></span><span id="error_ds_cant_retrieve_atts"></span>**ERRO \_ DS \_ NÃO PODE RECUPERAR \_ \_ ATTS**
 </dt> <dd> <dl> <dt>
 
 8481 (0x2121)
@@ -3174,12 +3174,12 @@ A operação de pesquisa solicitada só tem suporte para pesquisas base.
 
 
 
-A pesquisa não pôde recuperar os atributos do banco de dados.
+Falha na pesquisa ao recuperar atributos do banco de dados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_BACKLINK_WITHOUT_LINK"></span><span id="error_ds_backlink_without_link"></span>**ERRO \_ DS \_ BACKLINK \_ sem \_ link**
+<span id="ERROR_DS_BACKLINK_WITHOUT_LINK"></span><span id="error_ds_backlink_without_link"></span>**ERRO \_ DS \_ BACKLINK \_ SEM \_ LINK**
 </dt> <dd> <dl> <dt>
 
 8482 (0x2122)
@@ -3187,12 +3187,12 @@ A pesquisa não pôde recuperar os atributos do banco de dados.
 
 
 
-A operação de atualização de esquema tentou adicionar um atributo de vínculo regressivo que não tem nenhum link de encaminhamento correspondente.
+A operação de atualização de esquema tentou adicionar um atributo de link para trás que não tem nenhum link de encaminhamento correspondente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_EPOCH_MISMATCH"></span><span id="error_ds_epoch_mismatch"></span>**ERRO \_ de \_ incompatibilidade de época DS \_**
+<span id="ERROR_DS_EPOCH_MISMATCH"></span><span id="error_ds_epoch_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DE \_ ÉPOCA \_ DS**
 </dt> <dd> <dl> <dt>
 
 8483 (0x2123)
@@ -3200,12 +3200,12 @@ A operação de atualização de esquema tentou adicionar um atributo de víncul
 
 
 
-A origem e o destino de uma movimentação entre domínios não aceitam o número de época do objeto. A origem ou o destino não tem a versão mais recente do objeto.
+A origem e o destino de uma movimentação entre domínios não concorda com o número de época do objeto. A origem ou o destino não tem a versão mais recente do objeto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SRC_NAME_MISMATCH"></span><span id="error_ds_src_name_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de nome src DS \_**
+<span id="ERROR_DS_SRC_NAME_MISMATCH"></span><span id="error_ds_src_name_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DE NOME \_ DO SRC \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8484 (0x2124)
@@ -3213,12 +3213,12 @@ A origem e o destino de uma movimentação entre domínios não aceitam o númer
 
 
 
-A origem e o destino de uma movimentação entre domínios não aceitam o nome atual do objeto. A origem ou o destino não tem a versão mais recente do objeto.
+A origem e o destino de uma movimentação entre domínios não concorda com o nome atual do objeto. A origem ou o destino não tem a versão mais recente do objeto .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SRC_AND_DST_NC_IDENTICAL"></span><span id="error_ds_src_and_dst_nc_identical"></span>**ERRO \_ DS \_ src \_ e \_ DST \_ NC \_ idênticos**
+<span id="ERROR_DS_SRC_AND_DST_NC_IDENTICAL"></span><span id="error_ds_src_and_dst_nc_identical"></span>**ERRO \_ DS \_ SRC \_ E NC \_ DST \_ \_ IDÊNTICOS**
 </dt> <dd> <dl> <dt>
 
 8485 (0x2125)
@@ -3231,7 +3231,7 @@ A origem e o destino da operação de movimentação entre domínios são idênt
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DST_NC_MISMATCH"></span><span id="error_ds_dst_nc_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de NC de DST de DS \_**
+<span id="ERROR_DS_DST_NC_MISMATCH"></span><span id="error_ds_dst_nc_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE \_ DE NC DS DST \_ \_**
 </dt> <dd> <dl> <dt>
 
 8486 (0x2126)
@@ -3239,12 +3239,12 @@ A origem e o destino da operação de movimentação entre domínios são idênt
 
 
 
-A origem e o destino de uma movimentação entre domínios não estão em acordo com os contextos de nomenclatura na floresta. A origem ou o destino não tem a versão mais recente do contêiner de partições.
+A origem e o destino de uma movimentação entre domínios não estão de acordo com os contextos de nomentura na floresta. A origem ou o destino não tem a versão mais recente do contêiner Partições.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NOT_AUTHORITIVE_FOR_DST_NC"></span><span id="error_ds_not_authoritive_for_dst_nc"></span>**ERRO \_ DS \_ não \_ AUTHORITIVE \_ para o \_ DST \_ NC**
+<span id="ERROR_DS_NOT_AUTHORITIVE_FOR_DST_NC"></span><span id="error_ds_not_authoritive_for_dst_nc"></span>**ERRO \_ DS \_ NÃO \_ \_ AUTORITIVO PARA NC \_ DST \_**
 </dt> <dd> <dl> <dt>
 
 8487 (0x2127)
@@ -3252,12 +3252,12 @@ A origem e o destino de uma movimentação entre domínios não estão em acordo
 
 
 
-O destino de uma movimentação entre domínios não é autoritativo para o contexto de nomenclatura de destino.
+O destino de uma movimentação entre domínios não é autoritativo para o contexto de nomeação de destino.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_SRC_GUID_MISMATCH"></span><span id="error_ds_src_guid_mismatch"></span>**ERRO \_ de \_ \_ incompatibilidade de GUID src DS \_**
+<span id="ERROR_DS_SRC_GUID_MISMATCH"></span><span id="error_ds_src_guid_mismatch"></span>**ERRO \_ INCOMPATIBILIDADE DO \_ GUID DO SRC \_ \_ DS**
 </dt> <dd> <dl> <dt>
 
 8488 (0x2128)
@@ -3265,12 +3265,12 @@ O destino de uma movimentação entre domínios não é autoritativo para o cont
 
 
 
-A origem e o destino de uma movimentação entre domínios não aceitam a identidade do objeto de origem. A origem ou o destino não tem a versão mais recente do objeto de origem.
+A origem e o destino de uma movimentação entre domínios não concorda com a identidade do objeto de origem. A origem ou o destino não tem a versão mais recente do objeto de origem.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_MOVE_DELETED_OBJECT"></span><span id="error_ds_cant_move_deleted_object"></span>**ERRO \_ DS \_ impossível \_ mover \_ \_ objeto excluído**
+<span id="ERROR_DS_CANT_MOVE_DELETED_OBJECT"></span><span id="error_ds_cant_move_deleted_object"></span>**ERRO \_ DS \_ NÃO PODE MOVER O OBJETO \_ \_ \_ EXCLUÍDO**
 </dt> <dd> <dl> <dt>
 
 8489 (0x2129)
@@ -3278,12 +3278,12 @@ A origem e o destino de uma movimentação entre domínios não aceitam a identi
 
 
 
-O objeto que está sendo movido entre domínios já é conhecido como excluído pelo servidor de destino. O servidor de origem não tem a versão mais recente do objeto de origem.
+O objeto que está sendo movido entre domínios já é conhecido por ser excluído pelo servidor de destino. O servidor de origem não tem a versão mais recente do objeto de origem.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_PDC_OPERATION_IN_PROGRESS"></span><span id="error_ds_pdc_operation_in_progress"></span>**ERRO \_ \_ \_ \_ na operação de PDC do DS em \_ andamento**
+<span id="ERROR_DS_PDC_OPERATION_IN_PROGRESS"></span><span id="error_ds_pdc_operation_in_progress"></span>**ERRO \_ OPERAÇÃO DE \_ PDC DS \_ EM \_ \_ ANDAMENTO**
 </dt> <dd> <dl> <dt>
 
 8490 (0x212A)
@@ -3291,12 +3291,12 @@ O objeto que está sendo movido entre domínios já é conhecido como excluído 
 
 
 
-Outra operação que requer acesso exclusivo ao PDC FSMO já está em andamento.
+Outra operação que requer acesso exclusivo ao FSMO do PDC já está em andamento.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CROSS_DOMAIN_CLEANUP_REQD"></span><span id="error_ds_cross_domain_cleanup_reqd"></span>**ERRO \_ \_ REQD de \_ limpeza entre domínios \_ \_ DS**
+<span id="ERROR_DS_CROSS_DOMAIN_CLEANUP_REQD"></span><span id="error_ds_cross_domain_cleanup_reqd"></span>**ERRO \_ DS \_ \_ \_ REQD DE LIMPEZA \_ ENTRE DOMÍNIOS**
 </dt> <dd> <dl> <dt>
 
 8491 (0x212B)
@@ -3304,12 +3304,12 @@ Outra operação que requer acesso exclusivo ao PDC FSMO já está em andamento.
 
 
 
-Uma operação de movimentação entre domínios falhou, de modo que duas versões do objeto movido existam-uma a cada nos domínios de origem e de destino. O objeto de destino precisa ser removido para restaurar o sistema para um estado consistente.
+Falha em uma operação de movimentação entre domínios, de forma que existam duas versões do objeto movido, uma nos domínios de origem e de destino. O objeto de destino precisa ser removido para restaurar o sistema para um estado consistente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_ILLEGAL_XDOM_MOVE_OPERATION"></span><span id="error_ds_illegal_xdom_move_operation"></span>**ERRO \_ DS \_ inválido \_ ao \_ mover \_ operação de XDOM**
+<span id="ERROR_DS_ILLEGAL_XDOM_MOVE_OPERATION"></span><span id="error_ds_illegal_xdom_move_operation"></span>**ERRO \_ DS \_ OPERAÇÃO DE \_ MOVIMENTAÇÃO ILEGAL DO XDOM \_ \_**
 </dt> <dd> <dl> <dt>
 
 8492 (0x212C)
@@ -3317,12 +3317,12 @@ Uma operação de movimentação entre domínios falhou, de modo que duas versõ
 
 
 
-Esse objeto não pode ser movido entre limites de domínio porque as movimentações entre domínios dessa classe não são permitidas ou o objeto tem algumas características especiais, por exemplo: conta de confiança ou RID restrito, o que impede sua movimentação.
+Esse objeto não pode ser movido entre limites de domínio porque as movimentações entre domínios para essa classe não são permitidos ou o objeto tem algumas características especiais, por exemplo: conta de confiança ou RID restrito, que impede sua movimentação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_CANT_WITH_ACCT_GROUP_MEMBERSHPS"></span><span id="error_ds_cant_with_acct_group_membershps"></span>**ERRO \_ DS não \_ consegue \_ com o \_ \_ grupo acct \_ MEMBERSHPS**
+<span id="ERROR_DS_CANT_WITH_ACCT_GROUP_MEMBERSHPS"></span><span id="error_ds_cant_with_acct_group_membershps"></span>**ERRO \_ DS \_ CANT \_ COM MEMBROS DO \_ GRUPO \_ ACCTHPS \_**
 </dt> <dd> <dl> <dt>
 
 8493 (0x212D)
@@ -3330,12 +3330,12 @@ Esse objeto não pode ser movido entre limites de domínio porque as movimentaç
 
 
 
-Não é possível mover objetos com associações entre limites de domínio assim que forem movidos, isso violaria as condições de associação do grupo de contas. Remova o objeto de qualquer associação de grupo de conta e tente novamente.
+Não é possível mover objetos com associações entre limites de domínio, pois uma vez movidos, isso violaria as condições de associação do grupo de contas. Remova o objeto de quaisquer associações de grupo de contas e tentar novamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NC_MUST_HAVE_NC_PARENT"></span><span id="error_ds_nc_must_have_nc_parent"></span>**ERRO \_ o \_ NC DS \_ deve \_ ter o \_ NC \_ pai**
+<span id="ERROR_DS_NC_MUST_HAVE_NC_PARENT"></span><span id="error_ds_nc_must_have_nc_parent"></span>**ERRO \_ O NC DS DEVE TER \_ O PAI DO \_ \_ \_ \_ NC**
 </dt> <dd> <dl> <dt>
 
 8494 (0x212E)
@@ -3343,7 +3343,7 @@ Não é possível mover objetos com associações entre limites de domínio assi
 
 
 
-Uma cabeça de contexto de nomenclatura deve ser o filho imediato de outro cabeçalho de contexto de nomenclatura, não de um nó interior.
+Um head de contexto de nomentura deve ser o filho imediato de outro cabeça de contexto de nomentura, não de um nó interior.
 
 
 </dt> </dl> </dd> <dt>
@@ -3356,7 +3356,7 @@ Uma cabeça de contexto de nomenclatura deve ser o filho imediato de outro cabe�
 
 
 
-O diretório não pode validar o nome de contexto de nomenclatura proposto porque não contém uma réplica do contexto de nomenclatura acima do contexto de nomenclatura proposto. Verifique se a função mestre de nomeação de domínio é mantida por um servidor configurado como um servidor de catálogo global e se o servidor está atualizado com seus parceiros de replicação. (Aplica-se somente aos mestres de nomenclatura de domínio do Windows 2000.)
+O diretório não pode validar o nome de contexto de nomenclatura proposto porque não contém uma réplica do contexto de nomenclatura acima do contexto de nomenclatura proposto. Verifique se a função mestre de nomeação de domínio é mantida por um servidor configurado como um servidor de catálogo global e se o servidor está atualizado com seus parceiros de replicação. (aplica-se somente aos mestres de nomeação de domínio Windows 2000.)
 
 
 </dt> </dl> </dd> <dt>
@@ -3720,7 +3720,7 @@ O carregamento do cache de esquema falhou ao converter o SD padrão da cadeia de
 
 
 
-Somente os DSAs configurados para serem servidores de catálogo global devem ter permissão para manter a função FSMO do mestre de nomeação de domínio. (Aplica-se somente a servidores Windows 2000.)
+Somente os DSAs configurados para serem servidores de catálogo global devem ter permissão para manter a função FSMO do mestre de nomeação de domínio. (aplica-se somente a servidores Windows 2000.)
 
 
 </dt> </dl> </dd> <dt>
@@ -3954,7 +3954,7 @@ O objeto de origem e de destino deve ser do mesmo tipo.
 
 
 
-Falha na inicialização do Gerenciador de contas de segurança devido ao seguinte erro: %1. Status do erro: 0x %2. Clique em OK para desligar o sistema e reinicializar no modo de segurança. Verifique o log de eventos para obter informações detalhadas.
+Falha na inicialização do Gerenciador de contas de segurança devido ao seguinte erro: %1. Status do erro: 0x %2. clique em OK para desligar o sistema e reinicializar no modo de Cofre. Verifique o log de eventos para obter informações detalhadas.
 
 
 </dt> </dl> </dd> <dt>
@@ -4929,12 +4929,12 @@ A operação solicitada não é permitida em um objeto no contêiner do sistema.
 
 
 
-A fila de envio de rede dos servidores LDAP foi preenchida porque o cliente não está processando os resultados de suas solicitações com rapidez suficiente. Nenhuma solicitação será processada até que o cliente seja atualizado. Se o cliente não for atualizado, ele será desconectado.
+A fila de envio de rede dos servidores LDAP foi preenchida porque o cliente não está processando os resultados de suas solicitações com rapidez suficiente. Nenhuma outra solicitação será processada até que o cliente seja processado. Se o cliente não estiver em dia, ele será desconectado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_OUT_SCHEDULE_WINDOW"></span><span id="error_ds_dra_out_schedule_window"></span>**ERRO \_ na \_ \_ janela de \_ agendamento de saída \_ DS**
+<span id="ERROR_DS_DRA_OUT_SCHEDULE_WINDOW"></span><span id="error_ds_dra_out_schedule_window"></span>**ERRO \_ DS \_ JANELA DE \_ \_ AGENDAMENTO DO DRA \_ OUT**
 </dt> <dd> <dl> <dt>
 
 8617 (0x21A9)
@@ -4942,12 +4942,12 @@ A fila de envio de rede dos servidores LDAP foi preenchida porque o cliente não
 
 
 
-A replicação agendada não foi realizada porque o sistema estava muito ocupado para executar a solicitação dentro da janela de agendamento. A fila de replicação está sobrecarregada. Considere a redução do número de parceiros ou a redução da frequência de replicação agendada.
+A replicação agendada não ocorreu porque o sistema estava muito ocupado para executar a solicitação dentro da janela de agendamento. A fila de replicação está sobrecarregada. Considere reduzir o número de parceiros ou diminuir a frequência de replicação agendada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_POLICY_NOT_KNOWN"></span><span id="error_ds_policy_not_known"></span>**ERRO \_ de \_ política DS \_ não \_ conhecida**
+<span id="ERROR_DS_POLICY_NOT_KNOWN"></span><span id="error_ds_policy_not_known"></span>**POLÍTICA \_ DE ERRO DS NÃO \_ \_ \_ CONHECIDA**
 </dt> <dd> <dl> <dt>
 
 8618 (0x21AA)
@@ -4955,12 +4955,12 @@ A replicação agendada não foi realizada porque o sistema estava muito ocupado
 
 
 
-Neste momento, não será possível determinar se a política de replicação de ramificação está disponível no controlador de domínio do Hub. Tente novamente mais tarde para considerar as latências de replicação.
+No momento, não será possível determinar se a política de replicação de branch está disponível no controlador de domínio do hub. Tentar novamente mais tarde para levar em conta as latências de replicação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SITE_SETTINGS_OBJECT"></span><span id="error_no_site_settings_object"></span>**ERRO \_ nenhum \_ \_ objeto de configurações de site \_**
+<span id="ERROR_NO_SITE_SETTINGS_OBJECT"></span><span id="error_no_site_settings_object"></span>**ERRO \_ NENHUM OBJETO DE \_ \_ CONFIGURAÇÕES DO \_ SITE**
 </dt> <dd> <dl> <dt>
 
 8619 (0x21AB)
@@ -4968,12 +4968,12 @@ Neste momento, não será possível determinar se a política de replicação de
 
 
 
-O objeto de configurações de site para o site especificado não existe.
+O objeto de configurações do site especificado não existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_SECRETS"></span><span id="error_no_secrets"></span>**ERRO \_ sem \_ segredos**
+<span id="ERROR_NO_SECRETS"></span><span id="error_no_secrets"></span>**ERRO \_ SEM \_ SEGREDOS**
 </dt> <dd> <dl> <dt>
 
 8620 (0x21AC)
@@ -4981,12 +4981,12 @@ O objeto de configurações de site para o site especificado não existe.
 
 
 
-O repositório de conta local não contém material secreto para a conta especificada.
+O armazenamento da conta local não contém material secreto para a conta especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_NO_WRITABLE_DC_FOUND"></span><span id="error_no_writable_dc_found"></span>**ERRO \_ nenhum \_ \_ DC gravável \_ encontrado**
+<span id="ERROR_NO_WRITABLE_DC_FOUND"></span><span id="error_no_writable_dc_found"></span>**ERRO \_ NENHUM DC QUE PODE SER ESCRITO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 8621 (0x21AD)
@@ -4994,12 +4994,12 @@ O repositório de conta local não contém material secreto para a conta especif
 
 
 
-Não foi possível encontrar um controlador de domínio gravável no domínio.
+Não foi possível encontrar um controlador de domínio que possa ser escrito no domínio.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NO_SERVER_OBJECT"></span><span id="error_ds_no_server_object"></span>**ERRO \_ DS \_ nenhum \_ objeto de servidor \_**
+<span id="ERROR_DS_NO_SERVER_OBJECT"></span><span id="error_ds_no_server_object"></span>**ERRO \_ DS \_ NENHUM OBJETO DE \_ \_ SERVIDOR**
 </dt> <dd> <dl> <dt>
 
 8622 (0x21AE)
@@ -5012,7 +5012,7 @@ O objeto de servidor para o controlador de domínio não existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NO_NTDSA_OBJECT"></span><span id="error_ds_no_ntdsa_object"></span>**ERRO \_ DS \_ sem \_ objeto NTDSA \_**
+<span id="ERROR_DS_NO_NTDSA_OBJECT"></span><span id="error_ds_no_ntdsa_object"></span>**ERRO \_ DS \_ NENHUM OBJETO \_ NTDSA \_**
 </dt> <dd> <dl> <dt>
 
 8623 (0x21AF)
@@ -5020,12 +5020,12 @@ O objeto de servidor para o controlador de domínio não existe.
 
 
 
-O objeto de configurações NTDS para o controlador de domínio não existe.
+O objeto Configurações NTDS para o controlador de domínio não existe.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_NON_ASQ_SEARCH"></span><span id="error_ds_non_asq_search"></span>**ERRO \_ de \_ \_ pesquisa não \_ ASQ de DS**
+<span id="ERROR_DS_NON_ASQ_SEARCH"></span><span id="error_ds_non_asq_search"></span>**ERROR \_ DS \_ NON \_ ASQ \_ SEARCH**
 </dt> <dd> <dl> <dt>
 
 8624 (0x21B0)
@@ -5033,12 +5033,12 @@ O objeto de configurações NTDS para o controlador de domínio não existe.
 
 
 
-A operação de pesquisa solicitada não tem suporte para pesquisas de ASQ.
+Não há suporte para a operação de pesquisa solicitada para pesquisas asQ.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_AUDIT_FAILURE"></span><span id="error_ds_audit_failure"></span>**ERRO \_ de \_ falha de auditoria de DS \_**
+<span id="ERROR_DS_AUDIT_FAILURE"></span><span id="error_ds_audit_failure"></span>**ERRO \_ FALHA DE AUDITORIA DE DS \_ \_**
 </dt> <dd> <dl> <dt>
 
 8625 (0x21B1)
@@ -5046,12 +5046,12 @@ A operação de pesquisa solicitada não tem suporte para pesquisas de ASQ.
 
 
 
-Um evento de auditoria necessário não pôde ser gerado para a operação.
+Não foi possível gerar um evento de auditoria necessário para a operação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INVALID_SEARCH_FLAG_SUBTREE"></span><span id="error_ds_invalid_search_flag_subtree"></span>**ERRO \_ na \_ \_ \_ subárvore do sinalizador de pesquisa inválido do DS \_**
+<span id="ERROR_DS_INVALID_SEARCH_FLAG_SUBTREE"></span><span id="error_ds_invalid_search_flag_subtree"></span>**ERRO \_ DS \_ SUBÁRVORE \_ DE SINALIZADOR DE PESQUISA \_ \_ INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 8626 (0x21B2)
@@ -5059,12 +5059,12 @@ Um evento de auditoria necessário não pôde ser gerado para a operação.
 
 
 
-Os sinalizadores de pesquisa para o atributo são inválidos. O bit de índice de subárvore é válido somente em atributos com valor único.
+Os sinalizadores de pesquisa para o atributo são inválidos. O bit de índice da subárvore é válido somente em atributos com valor único.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_INVALID_SEARCH_FLAG_TUPLE"></span><span id="error_ds_invalid_search_flag_tuple"></span>**ERRO \_ de \_ \_ tupla de \_ sinalizador de pesquisa inválido \_ de DS**
+<span id="ERROR_DS_INVALID_SEARCH_FLAG_TUPLE"></span><span id="error_ds_invalid_search_flag_tuple"></span>**ERRO \_ DS \_ TUPLA \_ DE SINALIZADOR DE \_ \_ PESQUISA INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 8627 (0x21B3)
@@ -5077,7 +5077,7 @@ Os sinalizadores de pesquisa para o atributo são inválidos. O bit de índice d
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_HIERARCHY_TABLE_TOO_DEEP"></span><span id="error_ds_hierarchy_table_too_deep"></span>**ERRO \_ na \_ tabela de hierarquia DS \_ \_ muito \_ profunda**
+<span id="ERROR_DS_HIERARCHY_TABLE_TOO_DEEP"></span><span id="error_ds_hierarchy_table_too_deep"></span>**ERRO \_ TABELA DE HIERARQUIA DS MUITO \_ \_ \_ \_ PROFUNDA**
 </dt> <dd> <dl> <dt>
 
 8628 (0x21B4)
@@ -5085,12 +5085,12 @@ Os sinalizadores de pesquisa para o atributo são inválidos. O bit de índice d
 
 
 
-Os catálogos de endereços estão aninhados muito profundamente. Falha ao criar a tabela de hierarquia.
+Os livros de endereços são aninhados muito profundamente. Falha ao criar a tabela de hierarquia.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_CORRUPT_UTD_VECTOR"></span><span id="error_ds_dra_corrupt_utd_vector"></span>**ERRO \_ de \_ \_ vetor de \_ Utd corrompido de Dra DS \_**
+<span id="ERROR_DS_DRA_CORRUPT_UTD_VECTOR"></span><span id="error_ds_dra_corrupt_utd_vector"></span>**ERRO \_ DS \_ DRA CORRUPT \_ \_ UTD \_ VECTOR**
 </dt> <dd> <dl> <dt>
 
 8629 (0x21B5)
@@ -5098,12 +5098,12 @@ Os catálogos de endereços estão aninhados muito profundamente. Falha ao criar
 
 
 
-O vetor de atualização de qualidade especificado está corrompido.
+O vetor atualizado especificado está corrompido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_SECRETS_DENIED"></span><span id="error_ds_dra_secrets_denied"></span>**ERRO \_ de \_ segredos de Dra DS \_ \_ negado**
+<span id="ERROR_DS_DRA_SECRETS_DENIED"></span><span id="error_ds_dra_secrets_denied"></span>**ERRO \_ DS \_ SEGREDOS DE DRA \_ \_ NEGADOS**
 </dt> <dd> <dl> <dt>
 
 8630 (0x21B6)
@@ -5111,12 +5111,12 @@ O vetor de atualização de qualidade especificado está corrompido.
 
 
 
-A solicitação para replicar segredos foi negada.
+A solicitação para replicar segredos é negada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_RESERVED_MAPI_ID"></span><span id="error_ds_reserved_mapi_id"></span>**ERRO \_ \_ ID de \_ MAPI reservada para DS \_**
+<span id="ERROR_DS_RESERVED_MAPI_ID"></span><span id="error_ds_reserved_mapi_id"></span>**ERRO \_ DS \_ ID DE \_ MAPI \_ RESERVADA**
 </dt> <dd> <dl> <dt>
 
 8631 (0x21B7)
@@ -5124,12 +5124,12 @@ A solicitação para replicar segredos foi negada.
 
 
 
-Falha na atualização do esquema: o identificador MAPI está reservado.
+Falha na atualização de esquema: o identificador MAPI está reservado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_MAPI_ID_NOT_AVAILABLE"></span><span id="error_ds_mapi_id_not_available"></span>**ERRO a \_ ID de MAPI do DS \_ \_ \_ não \_ está disponível**
+<span id="ERROR_DS_MAPI_ID_NOT_AVAILABLE"></span><span id="error_ds_mapi_id_not_available"></span>**ERRO \_ DS \_ \_ ID DO MAPI \_ NÃO \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 8632 (0x21B8)
@@ -5142,7 +5142,7 @@ Falha na atualização do esquema: não há identificadores MAPI disponíveis.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_MISSING_KRBTGT_SECRET"></span><span id="error_ds_dra_missing_krbtgt_secret"></span>**ERRO \_ DS \_ Dra \_ faltando \_ segredo de krbtgt \_**
+<span id="ERROR_DS_DRA_MISSING_KRBTGT_SECRET"></span><span id="error_ds_dra_missing_krbtgt_secret"></span>**ERRO \_ DS \_ DRA MISSING \_ \_ \_ KRBTGT SECRET**
 </dt> <dd> <dl> <dt>
 
 8633 (0x21B9)
@@ -5150,12 +5150,12 @@ Falha na atualização do esquema: não há identificadores MAPI disponíveis.
 
 
 
-Falha na operação de replicação porque os atributos necessários do objeto krbtgt local estão ausentes.
+A operação de replicação falhou porque os atributos necessários do objeto krbtgt local estão ausentes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DOMAIN_NAME_EXISTS_IN_FOREST"></span><span id="error_ds_domain_name_exists_in_forest"></span>**ERRO \_ o \_ \_ nome de domínio DS \_ existe \_ na \_ floresta**
+<span id="ERROR_DS_DOMAIN_NAME_EXISTS_IN_FOREST"></span><span id="error_ds_domain_name_exists_in_forest"></span>**ERRO \_ O NOME DE DOMÍNIO \_ \_ DS EXISTE NA \_ \_ \_ FLORESTA**
 </dt> <dd> <dl> <dt>
 
 8634 (0x21BA)
@@ -5168,7 +5168,7 @@ O nome de domínio do domínio confiável já existe na floresta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_FLAT_NAME_EXISTS_IN_FOREST"></span><span id="error_ds_flat_name_exists_in_forest"></span>**ERRO \_ o \_ \_ nome simples \_ do DS existe \_ na \_ floresta**
+<span id="ERROR_DS_FLAT_NAME_EXISTS_IN_FOREST"></span><span id="error_ds_flat_name_exists_in_forest"></span>**ERRO \_ O NOME SIMPLES DS EXISTE NA \_ \_ \_ \_ \_ FLORESTA**
 </dt> <dd> <dl> <dt>
 
 8635 (0x21BB)
@@ -5181,7 +5181,7 @@ O nome simples do domínio confiável já existe na floresta.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INVALID_USER_PRINCIPAL_NAME"></span><span id="error_invalid_user_principal_name"></span>**\_nome da \_ entidade de usuário \_ \_ do erro inválido**
+<span id="ERROR_INVALID_USER_PRINCIPAL_NAME"></span><span id="error_invalid_user_principal_name"></span>**ERRO \_ NOME PRINCIPAL DE USUÁRIO \_ \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 8636 (0x21BC)
@@ -5189,12 +5189,12 @@ O nome simples do domínio confiável já existe na floresta.
 
 
 
-O UPN (nome principal do usuário) é inválido.
+O NOME UPN é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_OID_MAPPED_GROUP_CANT_HAVE_MEMBERS"></span><span id="error_ds_oid_mapped_group_cant_have_members"></span>**ERRO \_ o \_ grupo mapeado de OID DS não \_ \_ \_ \_ pode ter \_ Membros**
+<span id="ERROR_DS_OID_MAPPED_GROUP_CANT_HAVE_MEMBERS"></span><span id="error_ds_oid_mapped_group_cant_have_members"></span>**ERRO \_ O \_ GRUPO MAPEADO OID DE DS \_ \_ NÃO PODE TER \_ \_ \_ MEMBROS**
 </dt> <dd> <dl> <dt>
 
 8637 (0x21BD)
@@ -5202,12 +5202,12 @@ O UPN (nome principal do usuário) é inválido.
 
 
 
-Os grupos mapeados por OID não podem ter membros.
+Grupos mapeados OID não podem ter membros.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_OID_NOT_FOUND"></span><span id="error_ds_oid_not_found"></span>**ERRO \_ de \_ OID DS \_ não \_ encontrado**
+<span id="ERROR_DS_OID_NOT_FOUND"></span><span id="error_ds_oid_not_found"></span>**ERRO \_ DS \_ OID \_ NÃO \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 8638 (0x21BE)
@@ -5220,7 +5220,7 @@ O OID especificado não pode ser encontrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DRA_RECYCLED_TARGET"></span><span id="error_ds_dra_recycled_target"></span>**ERRO \_ de \_ \_ destino reciclado do Dra DS \_**
+<span id="ERROR_DS_DRA_RECYCLED_TARGET"></span><span id="error_ds_dra_recycled_target"></span>**ERRO \_ DS \_ DESTINO RECICLADO DO \_ \_ DRA**
 </dt> <dd> <dl> <dt>
 
 8639 (0x21BF)
@@ -5228,12 +5228,12 @@ O OID especificado não pode ser encontrado.
 
 
 
-Falha na operação de replicação porque o objeto de destino referenciado por um valor de link foi reciclado.
+A operação de replicação falhou porque o objeto de destino referenciado por um valor de link é reciclado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_DISALLOWED_NC_REDIRECT"></span><span id="error_ds_disallowed_nc_redirect"></span>**ERRO \_ de \_ \_ redirecionamento NC não permitido de DS \_**
+<span id="ERROR_DS_DISALLOWED_NC_REDIRECT"></span><span id="error_ds_disallowed_nc_redirect"></span>**ERRO \_ DS \_ REDIRECIONAMENTO DE \_ NC NÃO \_ PERMITIDO**
 </dt> <dd> <dl> <dt>
 
 8640 (0x21C0)
@@ -5241,12 +5241,12 @@ Falha na operação de replicação porque o objeto de destino referenciado por 
 
 
 
-A operação de redirecionamento falhou porque o objeto de destino está em um NC diferente do NC de domínio do controlador de domínio atual.
+A operação de redirecionamento falhou porque o objeto de destino está em um NC diferente do DOMÍNIO NC do controlador de domínio atual.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_HIGH_ADLDS_FFL"></span><span id="error_ds_high_adlds_ffl"></span>**ERRO \_ DS \_ High \_ ADLDS \_ FFL**
+<span id="ERROR_DS_HIGH_ADLDS_FFL"></span><span id="error_ds_high_adlds_ffl"></span>**ERRO \_ DS \_ HIGH \_ ADLDS \_ FFL**
 </dt> <dd> <dl> <dt>
 
 8641 (0x21C1)
@@ -5254,12 +5254,12 @@ A operação de redirecionamento falhou porque o objeto de destino está em um N
 
 
 
-O nível funcional do conjunto de configuração AD LDS não pode ser reduzido para o valor solicitado.
+O nível funcional do conjunto AD LDS configuração não pode ser inferior ao valor solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_HIGH_DSA_VERSION"></span><span id="error_ds_high_dsa_version"></span>**ERRO \_ de \_ versão alta do \_ DSA de DS \_**
+<span id="ERROR_DS_HIGH_DSA_VERSION"></span><span id="error_ds_high_dsa_version"></span>**ERRO \_ DS \_ HIGH \_ DSA \_ VERSION**
 </dt> <dd> <dl> <dt>
 
 8642 (0x21C2)
@@ -5267,12 +5267,12 @@ O nível funcional do conjunto de configuração AD LDS não pode ser reduzido p
 
 
 
-O nível funcional do domínio (ou floresta) não pode ser reduzido para o valor solicitado.
+O nível funcional do domínio (ou floresta) não pode ser inferior ao valor solicitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_LOW_ADLDS_FFL"></span><span id="error_ds_low_adlds_ffl"></span>**ERRO \_ DS \_ baixo de \_ ADLDS \_ FFL**
+<span id="ERROR_DS_LOW_ADLDS_FFL"></span><span id="error_ds_low_adlds_ffl"></span>**ERRO \_ DS \_ LOW \_ ADLDS \_ FFL**
 </dt> <dd> <dl> <dt>
 
 8643 (0x21C3)
@@ -5280,12 +5280,12 @@ O nível funcional do domínio (ou floresta) não pode ser reduzido para o valor
 
 
 
-O nível funcional do conjunto de configuração AD LDS não pode ser gerado para o valor solicitado, pois existe uma ou mais instâncias do ADLDS que estão em um nível funcional inferior incompatível.
+O nível funcional do conjunto AD LDS configuração não pode ser elevado ao valor solicitado, porque há uma ou mais instâncias do ADLDS que estão em um nível funcional incompatível inferior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DOMAIN_SID_SAME_AS_LOCAL_WORKSTATION"></span><span id="error_domain_sid_same_as_local_workstation"></span>**ERRO \_ \_ de SID \_ de domínio \_ como \_ estação de \_ trabalho local**
+<span id="ERROR_DOMAIN_SID_SAME_AS_LOCAL_WORKSTATION"></span><span id="error_domain_sid_same_as_local_workstation"></span>**SID \_ DE DOMÍNIO DE ERRO IGUAL À ESTAÇÃO DE TRABALHO \_ \_ \_ \_ \_ LOCAL**
 </dt> <dd> <dl> <dt>
 
 8644 (0x21C4)
@@ -5293,12 +5293,12 @@ O nível funcional do conjunto de configuração AD LDS não pode ser gerado par
 
 
 
-O ingresso no domínio não pode ser concluído porque o SID do domínio que você tentou ingressar era idêntico ao SID deste computador. Esse é um sintoma de uma instalação de sistema operacional clonado incorretamente. Você deve executar o Sysprep neste computador para gerar um novo SID de máquina. Consulte <https://go.microsoft.com/fwlink/p/?linkid=168895> para obter mais informações.
+A junção de domínio não pode ser concluída porque o SID do domínio que você tentou ingressar era idêntico ao SID deste computador. Esse é um sintoma de uma instalação de sistema operacional clonada incorretamente. Você deve executar o sysprep neste computador para gerar um novo SID do computador. Consulte <https://go.microsoft.com/fwlink/p/?linkid=168895> para obter mais informações.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_DS_UNDELETE_SAM_VALIDATION_FAILED"></span><span id="error_ds_undelete_sam_validation_failed"></span>**ERRO \_ \_ \_ \_ ao restaurar \_ falha na validação do Sam do DS**
+<span id="ERROR_DS_UNDELETE_SAM_VALIDATION_FAILED"></span><span id="error_ds_undelete_sam_validation_failed"></span>**ERRO \_ DS \_ FALHA AO EXCLUIR A \_ \_ VALIDAÇÃO DO SAM \_**
 </dt> <dd> <dl> <dt>
 
 8645 (0x21C5)
@@ -5306,12 +5306,12 @@ O ingresso no domínio não pode ser concluído porque o SID do domínio que voc
 
 
 
-Falha na operação de reexclusão porque o nome da conta Sam ou o nome da conta Sam adicional do objeto que está sendo inexcluído está em conflito com um objeto dinâmico existente.
+A operação de resseleção falhou porque o Nome da Conta sam ou o Nome da Conta Sam adicional do objeto que está sendo excluído está em conflito com um objeto ao vivo existente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="ERROR_INCORRECT_ACCOUNT_TYPE"></span><span id="error_incorrect_account_type"></span>**ERRO \_ \_ tipo de conta incorreto \_**
+<span id="ERROR_INCORRECT_ACCOUNT_TYPE"></span><span id="error_incorrect_account_type"></span>**ERRO \_ TIPO DE CONTA \_ \_ INCORRETO**
 </dt> <dd> <dl> <dt>
 
 8646 (0x21C6)
@@ -5319,7 +5319,7 @@ Falha na operação de reexclusão porque o nome da conta Sam ou o nome da conta
 
 
 
-O sistema não é autoritativo para a conta especificada e, portanto, não pode concluir a operação. Repita a operação usando o provedor associado a esta conta. Se este for um provedor online, use o site online do provedor.
+O sistema não é autoritativo para a conta especificada e, portanto, não pode concluir a operação. Repetir a operação usando o provedor associado a essa conta. Se esse for um provedor online, use o site online do provedor.
 
 
 </dt> </dl> </dd> </dl>
@@ -5331,9 +5331,9 @@ O sistema não é autoritativo para a conta especificada e, portanto, não pode 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>WinError. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>WinError.h</dt> </dl> |
 
 
 

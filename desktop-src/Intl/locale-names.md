@@ -1,19 +1,19 @@
 ---
-description: Um nome de localidade é baseado nas convenções de marcação de idioma do RFC 4646 (Windows Vista e posterior) e é representado pela localidade \_ SNAME.
+description: um nome de localidade é baseado nas convenções de marcação de idioma do RFC 4646 (Windows Vista e posterior) e é representado pela localidade \_ SNAME.
 ms.assetid: 221aae7b-3a7c-4995-ae78-50d97de436d8
 title: Nomes de localidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9808db94615cba4416c12995b9c969eaaf5a3fee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fed4c09900544e96c0f05166d1f4054972e9d8ff89fc108c185695a7506859bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147398"
 ---
 # <a name="locale-names"></a>Nomes de localidade
 
-Um nome de [localidade](locales-and-languages.md) é baseado nas convenções de marcação de idioma do RFC 4646 (Windows Vista e posterior) e é representado pela [localidade \_ SNAME](locale-sname.md). Em geral, o padrão `<language>-<REGION>` é usado. Aqui, language é um código de linguagem ISO 639 de letras minúsculas. Os códigos de ISO 639-1 são usados quando disponíveis. Caso contrário, os códigos de ISO 639-2/T serão usados. REGIÃO especifica um identificador de país/região em maiúsculas ISO 3166-1. Por exemplo, o nome da localidade para inglês (Estados Unidos) é "en-US" e o nome da localidade para divehi (Maldivass) é "dv-MV".
+um nome de [localidade](locales-and-languages.md) é baseado nas convenções de marcação de idioma do RFC 4646 (Windows Vista e posterior) e é representado pela [localidade \_ SNAME](locale-sname.md). Em geral, o padrão `<language>-<REGION>` é usado. Aqui, language é um código de linguagem ISO 639 de letras minúsculas. Os códigos de ISO 639-1 são usados quando disponíveis. Caso contrário, os códigos de ISO 639-2/T serão usados. REGIÃO especifica um identificador de país/região em maiúsculas ISO 3166-1. Por exemplo, o nome da localidade para inglês (Estados Unidos) é "en-US" e o nome da localidade para divehi (Maldivass) é "dv-MV".
 
 > [!Note]  
 > O [ \_ \_ \_ comprimento máximo do nome de localidade](locale-name-constants.md) da constante fornece o comprimento máximo de um nome de localidade. Ele inclui o espaço para um caractere nulo de terminação.

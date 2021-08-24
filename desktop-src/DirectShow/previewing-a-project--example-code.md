@@ -1,21 +1,21 @@
 ---
-description: 'Visualizando um projeto: código de exemplo'
+description: 'Visualizando um Project: código de exemplo'
 ms.assetid: 8a4af82a-5611-4c53-8de8-04eaefd51df9
-title: 'Visualizando um projeto: código de exemplo'
+title: 'Visualizando um Project: código de exemplo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c5527fd93d0f05d5388739cc936e4a4dd203e18
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d98a47970a333ed27e249bddc81ba6fb4fb6e2c706fdfa2dda7c29f886e74022
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583566"
 ---
-# <a name="previewing-a-project-example-code"></a>Visualizando um projeto: código de exemplo
+# <a name="previewing-a-project-example-code"></a>Visualizando um Project: código de exemplo
 
-\[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
+\[Essa API não tem suporte e pode ser alterada ou não disponível no futuro.\]
 
-O exemplo de código a seguir mostra como carregar e visualizar um projeto de [serviços de edição do DirectShow](directshow-editing-services.md) . A verificação de erros é omitida para fins de clareza.
+O exemplo de código a seguir mostra como carregar e visualizar um [projeto DirectShow Editing Services.](directshow-editing-services.md) A verificação de erro é omitida para maior clareza.
 
 
 ```C++
@@ -88,7 +88,7 @@ void main( void )
 
 <dl> <dt>
 
-[Carregando e visualizando um projeto](loading-and-previewing-a-project.md)
+[Carregando e visualizando um Project](loading-and-previewing-a-project.md)
 </dt> </dl>
 
  

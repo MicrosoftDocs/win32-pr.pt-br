@@ -23,12 +23,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5e4b85c17adcd2db7c0f2f672e27ca467b346b0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67dc120a4541b56638c2947c24534c9f42543533b4b1a97ace72297aaf48341c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119602546"
 ---
 # <a name="pointer-device-change"></a>Alteração do dispositivo do ponteiro
 
@@ -198,9 +198,9 @@ A taxa de proporção de exibição.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 
 
 

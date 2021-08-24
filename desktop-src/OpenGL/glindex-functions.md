@@ -1,32 +1,32 @@
 ---
 title: Funções glIndex
-description: Essas funções definem o índice de cores atual.
+description: Essas funções configuram o índice de cores atual.
 ms.assetid: 239c2e5d-cd87-4c2e-8fa1-7c71a32d4350
 keywords:
-- OpenGL, funções glIndex
-- Referência OpenGL, funções glIndex
-- referência para OpenGL, funções glIndex
+- Funções OpenGL,glIndex
+- Referência do OpenGL, funções glIndex
+- referência para funções OpenGL,glIndex
 - OpenGL, funções de índice
-- Referência OpenGL, funções de índice
+- Referência de OpenGL, funções de índice
 - referência para OpenGL, funções de índice
-- OpenGL, funções de cor
-- Referência OpenGL, funções de cor
-- referência para OpenGL, funções de cor
-- funções glIndex
+- OpenGL, funções de cores
+- Referência de OpenGL, funções de cor
+- referência para OpenGL, funções de cores
+- Funções glIndex
 - funções de índice
 - funções de cor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93f5197e8d53f9966fd5ab2e2ec63f7354463282
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cf3696102666068b94bc4aeb61738cfd11d85829529353fedd9ee1fe04c10c8e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493586"
 ---
 # <a name="glindex-functions"></a>Funções glIndex
 
-Essas funções definem o índice de cores atual:
+Essas funções configuram o índice de cores atual:
 
 -   [**glIndexd**](glindexd.md)
 -   [**glIndexf**](glindexf.md)
@@ -37,9 +37,9 @@ Essas funções definem o índice de cores atual:
 -   [**glIndexiv**](glindexiv.md)
 -   [**glIndexsv**](glindexsv.md)
 
- 
+ 
 
- 
+ 
 
 
 

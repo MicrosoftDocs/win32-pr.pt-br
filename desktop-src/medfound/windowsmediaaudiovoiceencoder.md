@@ -1,31 +1,31 @@
 ---
-description: O codificador de voz do Windows Media Audio é otimizado para codificar a voz humana em altas taxas de compactação. Esse é o codificador preferencial para fluxos que consistem principalmente em palavras faladas.
+description: O Windows media audio voice é otimizado para codificar a voz humana em altas taxas de compactação. Esse é o codificador preferencial para fluxos que consistem principalmente em palavras faladas.
 ms.assetid: b3cfa845-4fe1-405f-88e5-4555398639ef
-title: Codificador de voz do Windows Media Audio (Wmcodecdsp. h)
+title: Windows Codificador de Voz de Áudio de Mídia (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bef79f2c3d0c48fee8ec33e08bfb9fdf21c3656b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3c107e4e09309ff0ed56e899d3ec2cd0c9d372261b48231b4530ed3222ee3a68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462417"
 ---
-# <a name="windows-media-audio-voice-encoder"></a>Codificador de voz do Windows Media Audio
+# <a name="windows-media-audio-voice-encoder"></a>Windows Codificador de voz de áudio de mídia
 
-O codificador de voz do Windows Media Audio é otimizado para codificar a voz humana em altas taxas de compactação. Esse é o codificador preferencial para fluxos que consistem principalmente em palavras faladas.
+O Windows media audio voice é otimizado para codificar a voz humana em altas taxas de compactação. Esse é o codificador preferencial para fluxos que consistem principalmente em palavras faladas.
 
-## <a name="class-identifier"></a>Identificador de classe
+## <a name="class-identifier"></a>Identificador de Classe
 
-O CLSID (identificador de classe) do codificador de voz do Windows Media Audio é representado pelo **CLSID \_ CWMSPEncMediaObject2** de constantes. Você pode criar uma instância do codificador de voz chamando **CoCreateInstance**.
+O CLSID (identificador de classe) do codificador Windows Media Audio Voice é representado pela constante **CLSID \_ CWMSPEncMediaObject2**. Você pode criar uma instância do codificador de voz chamando **CoCreateInstance**.
 
 ## <a name="output-formats"></a>Formatos de saída
 
-O conteúdo codificado de voz do Windows Media Audio é identificado pela marca de formato 0x00a.
+Windows O conteúdo codificado em Voz de Áudio de Mídia é identificado pela marca de formato 0x00A.
 
 ## <a name="encoder-properties"></a>Propriedades do codificador
 
-O codificador de voz do Windows Media Audio oferece suporte às propriedades a seguir.
+O codificador Windows Media Audio Voice dá suporte às propriedades a seguir.
 
 
 
@@ -75,7 +75,7 @@ Leitura/gravação.<br />
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows XP, Windows Vista ou Windows 7<br/>                                       |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | DLL<br/>    | <dl> <dt>Wmspdmoe.dll</dt> </dl> |
 
 
@@ -84,10 +84,10 @@ Leitura/gravação.<br />
 
 <dl> <dt>
 
-[Objetos de codec](codecobjects.md)
+[Objetos codec](codecobjects.md)
 </dt> <dt>
 
-[Usando o codec de voz de áudio do Windows Media](usingthewindowsmediaaudio9voicecodec.md)
+[Usando o codec Windows de áudio de mídia](usingthewindowsmediaaudio9voicecodec.md)
 </dt> </dl>
 
  

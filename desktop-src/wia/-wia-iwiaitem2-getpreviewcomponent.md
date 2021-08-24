@@ -1,5 +1,5 @@
 ---
-description: Obtém o componente de versão prévia do WIA (Windows Image Acquisition) 2,0.
+description: obtém o componente de visualização do WIA (Windows Image Acquisition) 2,0.
 ms.assetid: 0b773c4c-f080-41fa-8902-4243a80fc67c
 title: 'Método IWiaItem2:: GetPreviewComponent (WIA. h)'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 2e0881f68044c30731322c89d6cc2f19ce7277a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ac3705b4be60ce53fee411df1142fb64bbd1c393864b644e260829080be8f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119450426"
 ---
 # <a name="iwiaitem2getpreviewcomponent-method"></a>Método IWiaItem2:: GetPreviewComponent
 
-Obtém o componente de versão prévia do WIA (Windows Image Acquisition) 2,0.
+obtém o componente de visualização do WIA (Windows Image Acquisition) 2,0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,7 +58,7 @@ Retorna o endereço de um ponteiro para a interface [**IWiaPreview**](-wia-iwiap
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -76,8 +76,8 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 

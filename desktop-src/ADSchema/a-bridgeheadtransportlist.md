@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 083c987f9ed40c23db4141d772c07ec73763d985
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a9ea77577c6628f4cc02d81c4cb217994a196750deeb5631d46d8fd54472baa6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645595"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442746"
 ---
 # <a name="bridgehead-transport-list-attribute"></a>Atributo bridgehead-Transport-List
 
@@ -36,7 +36,7 @@ Transportes para os quais este servidor é um bridgehead.
 | Frequência de atualização  | Sempre que um site é configurado.               |
 | Attribute-Id      | 1.2.840.113556.1.4.819                  |
 | System-ID-GUID    | d50c2cda-8951-11d1-aebc-0000f80367c1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -122,10 +122,10 @@ Transportes para os quais este servidor é um bridgehead.
 | ID do link                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | Falso                                 |
+| Tem valor único       | Falso                                 |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -143,10 +143,10 @@ Transportes para os quais este servidor é um bridgehead.
 | ID do link                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | Falso                                 |
+| Tem valor único       | Falso                                 |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -164,10 +164,10 @@ Transportes para os quais este servidor é um bridgehead.
 | ID do link                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | Falso                                 |
+| Tem valor único       | Falso                                 |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -185,10 +185,10 @@ Transportes para os quais este servidor é um bridgehead.
 | ID do link                | 98                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | Falso                                 |
+| Tem valor único       | Falso                                 |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

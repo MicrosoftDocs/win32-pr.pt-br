@@ -1,11 +1,11 @@
 ---
-title: Propriedade MonthlyDOWTrigger. DaysOfWeek
-description: Para scripts, Obtém ou define os dias da semana durante os quais a tarefa é executada.
+title: Propriedade MonthlyDOWTrigger.DaysOfWeek
+description: Para scripts, obtém ou define os dias da semana durante os quais a tarefa é executado.
 ms.assetid: dd9b2463-69a1-4e77-a8f7-26b186d3d02d
 keywords:
-- Agendador de Tarefas da Propriedade DaysOfWeek
-- Propriedade DaysOfWeek Agendador de Tarefas, objeto MonthlyDOWTrigger
-- Objeto MonthlyDOWTrigger Agendador de Tarefas, Propriedade DaysOfWeek
+- Propriedade DaysOfWeek Agendador de Tarefas
+- Propriedade DaysOfWeek Agendador de Tarefas objeto , MonthlyDOWTrigger
+- Objeto MonthlyDOWTrigger Agendador de Tarefas propriedade , DaysOfWeek
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15344650dabdec2bcbacf91397b37b97ce3f0772
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0b9abf5dcd33c92d402f8ed6047a2fd80a0d5905bae075110931cfb8f83aa10a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119517456"
 ---
-# <a name="monthlydowtriggerdaysofweek-property"></a>Propriedade MonthlyDOWTrigger. DaysOfWeek
+# <a name="monthlydowtriggerdaysofweek-property"></a>Propriedade MonthlyDOWTrigger.DaysOfWeek
 
-Para scripts, Obtém ou define os dias da semana durante os quais a tarefa é executada.
+Para scripts, obtém ou define os dias da semana durante os quais a tarefa é executado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,15 +38,15 @@ MonthlyDOWTrigger.DaysOfWeek As short
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma máscara de bits bit que indica os dias da semana durante os quais a tarefa é executada.
+Uma máscara bit a bit que indica os dias da semana durante os quais a tarefa é executado.
 
 ## <a name="remarks"></a>Comentários
 
-A tabela a seguir mostra o mapeamento da máscara de bits bit que é usada por essa propriedade.
+A tabela a seguir mostra o mapeamento da máscara bit a bit usada por essa propriedade.
 
 
 
-| Dia da semana | Valor hex | Valor decimal |
+| Dia da semana | Valor hexaxa | Valor decimal |
 |-------------|-----------|---------------|
 | Sunday      | 0x01      | 1             |
 | Monday      | 0x02      | 2             |
@@ -60,7 +60,7 @@ A tabela a seguir mostra o mapeamento da máscara de bits bit que é usada por e
 
  
 
-Ao ler ou gravar XML para uma tarefa, os dias da semana de um calendário mensal de dia da semana são especificados pelo elemento [**DaysOfWeek**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) .
+Ao ler ou escrever XML para uma tarefa, os dias da semana de um calendário mensal do dia da semana são especificados pelo [**elemento DaysOfWeek.**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Ao ler ou gravar XML para uma tarefa, os dias da semana de um calendário mensal
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

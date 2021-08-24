@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d61ffd10edbd58d11c5667fbda9dc0408ea1d72a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 502919f63e8c3a734e4b28fd462b9cfdd0b91b4f49b434e7487495ac18a46189
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451436"
 ---
 # <a name="wm_mousemove-message"></a>\_Mensagem MOUSEMOVE do WM
 
@@ -70,7 +70,7 @@ A palavra de ordem superior especifica a coordenada y do cursor. A coordenada é
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 

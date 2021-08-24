@@ -4,16 +4,16 @@ description: Propriedade VisibilityCause
 ms.assetid: 106574ef-af5f-44cf-9efb-9e6da19ebc1f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a6e21e2cda201f8d04837d2b10efc757b93f824
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4f1e90b77dfdfae364761254676d0867a43aebacf516d4f2adad2973700d7e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119398786"
 ---
 # <a name="visibilitycause-property"></a>Propriedade VisibilityCause
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna um valor inteiro que especifica o que causou o estado visível do caract
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente* do. **Caracteres ("***characterid***"). VisibilityCause**
+*agente* do. **Caracteres ("**_characterid_*_"). VisibilityCause_*
 
 
 
@@ -44,7 +44,7 @@ Retorna um valor inteiro que especifica o que causou o estado visível do caract
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -57,9 +57,9 @@ Você pode usar essa propriedade para determinar o que causou o caractere a ser 
 [**Ocultar evento**](hide-event.md), [**Mostrar evento**](show-event.md), [**ocultar método**](hide-method.md), [**Mostrar método**](show-method.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGotoSecondaryIndexBookmark'
-title: Método API. JetGotoSecondaryIndexBookmark
+description: 'Saiba mais sobre: Método Api.JetGotoSecondaryIndexBookmark'
+title: Método Api.JetGotoSecondaryIndexBookmark
 TOCTitle: 'JetGotoSecondaryIndexBookmark method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGotoSecondaryIndexBookmark(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[],System.Int32,System.Byte[],System.Int32,Microsoft.Isam.Esent.Interop.GotoSecondaryIndexBookmarkGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgotosecondaryindexbookmark(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af146236a2a5398dfb0b7b81f42dcfc6227a6de9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93d85897f81e27cc1e5704bd5524adf4abd921e86e9d5ad24f5893ee4384c427
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119455716"
 ---
-# <a name="apijetgotosecondaryindexbookmark-method"></a>Método API. JetGotoSecondaryIndexBookmark
+# <a name="apijetgotosecondaryindexbookmark-method"></a>Método Api.JetGotoSecondaryIndexBookmark
 
-Posiciona um cursor para uma entrada de índice que está associada ao indicador de índice secundário especificado. O indicador de índice secundário deve ser usado com o mesmo índice na mesma tabela da qual ele foi recuperado originalmente. O indicador de índice secundário para uma entrada de índice pode ser recuperado usando JetGotoSecondaryIndexBookmark (JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] Int32, GotoSecondaryIndexBookmarkGrbit).
+Posiciona um cursor em uma entrada de índice associada ao indicador de índice secundário especificado. O indicador de índice secundário deve ser usado com o mesmo índice na mesma tabela da qual foi originalmente recuperado. O indicador de índice secundário para uma entrada de índice pode ser recuperado usando JetGotoSecondaryIndexBookmark(JET_SESID, JET_TABLEID, \[ \] , Int32, \[ \] , Int32, GotoSecondaryIndexBookmarkGrbit).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -78,51 +78,51 @@ public static void JetGotoSecondaryIndexBookmark(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor de tabela a ser posicionado.
 
 <!-- end list -->
 
   - secondaryKey  
-    Escreva \[\]  
+    Tipo: \[\]  
     
     O buffer que contém a chave secundária.
 
 <!-- end list -->
 
   - secondaryKeySize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O tamanho da chave secundária.
 
 <!-- end list -->
 
   - primaryKey  
-    Escreva \[\]  
+    Tipo: \[\]  
     
     O buffer que contém a chave primária.
 
 <!-- end list -->
 
   - primaryKeySize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     O tamanho da chave primária.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. GotoSecondaryIndexBookmarkGrbit](./gotosecondaryindexbookmarkgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.GotoSecondaryIndexBookmarkGrbit](./gotosecondaryindexbookmarkgrbit-enumeration.md)  
     
-    Opções para posicionamento do indicador.
+    Opções para posicionar o indicador.
 
 ## <a name="see-also"></a>Confira também
 
@@ -132,4 +132,4 @@ public static void JetGotoSecondaryIndexBookmark(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ ms.assetid: 9b480750-602e-421e-8dfd-0b7049ed8b8a
 title: Propriedade de resumo do autor
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a860b03baaf395892f0c155e1166af4ea42e0edb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 69a050fdb64a8c931ad53c92229ca93994270a26829f72a15d025e4d513109d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581786"
 ---
 # <a name="author-summary-property"></a>Propriedade de resumo do autor
 
@@ -25,7 +25,7 @@ A propriedade de **Resumo do autor** transmite o fabricante do pacote de instala
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 
 
 

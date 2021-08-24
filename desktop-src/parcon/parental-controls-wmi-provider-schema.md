@@ -1,21 +1,21 @@
 ---
-description: O provedor WMI de controles pai é uma instância e um provedor de métodos. A instanciação de novas instâncias de classe, leitura ou modificação de propriedades de instância existentes e a invocação de métodos são controladas pelo arquivo Wpcsprov. mof.
+description: O Provedor WMI de Controles Dos Pais é uma instância e um provedor de método. A instanciação de novas instâncias de classe, leitura ou modificação de propriedades de instância existentes e invocação de métodos é controlada pelo arquivo Wpcsprov.mof.
 ms.assetid: 28d46969-448e-4a67-bfb3-4240b5cebe57
-title: Controle dos pais esquema do provedor WMI
+title: Esquema do provedor WMI de controles dos pais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 541d7fd9126d1992fab105d4b289fabae268148b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ea3c5cd54b14cc02f09f80558fe4cd5f9256c22bcdcc0f19da8553c4a8ff3b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601206"
 ---
-# <a name="parental-controls-wmi-provider-schema"></a>Controle dos pais esquema do provedor WMI
+# <a name="parental-controls-wmi-provider-schema"></a>Esquema do provedor WMI de controles dos pais
 
-O provedor WMI de controles pai é uma instância e um provedor de métodos. A instanciação de novas instâncias de classe, leitura ou modificação de propriedades de instância existentes e a invocação de métodos são controladas pelo arquivo Wpcsprov. mof.
+O Provedor WMI de Controles Dos Pais é uma instância e um provedor de método. A instanciação de novas instâncias de classe, leitura ou modificação de propriedades de instância existentes e invocação de métodos é controlada pelo arquivo Wpcsprov.mof.
 
-A sintaxe a seguir é do namespace. mof
+A sintaxe a seguir é de Namespace.mof
 
 ``` syntax
 #pragma autorecover
@@ -38,7 +38,7 @@ instance of __NAMESPACE
 };
 ```
 
-A sintaxe a seguir é de ratings. mof
+A sintaxe a seguir é de Ratings.mof
 
 ``` syntax
 //**************************************************************************
@@ -107,7 +107,7 @@ class WpcRatingsSystem
 
 ```
 
-A sintaxe a seguir é de WpcSettings. mof
+A sintaxe a seguir é de WpcSettings.mof
 
 ``` syntax
 // WPC Class definitions
@@ -268,7 +268,7 @@ class WpcClamper
 // End of WPC Class Definitions
 ```
 
-A sintaxe a seguir é de WpcProvider. mof
+A sintaxe a seguir é de WpcProvider.mof
 
 ``` syntax
 #pragma namespace ("\\\\.\\root\\CIMV2\\Applications\\WindowsParentalControls")

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b192d00c89e6daa4106cb970b35949b7b7871d16
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2ec76a14c0e8f432c443e8d7e49f864671616955b72d6bd425813b8dce66f0f0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119333136"
 ---
 # <a name="setpowerstate-method-of-the-cim_numericsensor-class"></a>Método SetPowerState da classe CIM \_ NumericSensor
 
@@ -102,7 +102,7 @@ Especifica quando o estado de energia deve ser definido, seja como um valor de d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se o *PowerState* e a solicitação de *tempo* especificados não forem suportados e outro valor se ocorrer algum outro erro.
 

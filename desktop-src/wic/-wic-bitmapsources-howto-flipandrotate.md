@@ -4,12 +4,12 @@ ms.assetid: 371c7759-0165-4a2a-b2ff-f9c8a31053a4
 title: Como inverter e girar uma fonte de bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f6a805144025f185a4f4793fc4fafb27d7695a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28a61a1546f5a0191d2e20cc3079af3e4d772e6d2c3c07a5dd1e1e4aa331dc3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331537"
 ---
 # <a name="how-to-flip-and-rotate-a-bitmap-source"></a>Como inverter e girar uma fonte de bitmap
 
@@ -17,7 +17,7 @@ Este tópico demonstra como girar um [**IWICBitmapSource**](/windows/desktop/api
 
 Para inverter e girar uma origem de bitmap
 
-1.  Crie um objeto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para criar objetos do Windows Imaging Component (WIC).
+1.  crie um objeto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para criar objetos WIC (Windows Imaging Component).
 
     ```C++
     // Create WIC factory

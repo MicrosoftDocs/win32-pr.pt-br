@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: da5bb8c820e1dbca5103c430a7b2ce2a525a8fca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 744c1b2e56fb50e5a0c16db7d03d7558b1ed69360de98f69a4aac795f9f7db63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147759"
 ---
 # <a name="setfailovernetworkadaptersettings-method-of-the-msvm_replicationservice-class"></a>Método SetFailoverNetworkAdapterSettings da \_ classe ReplicationService Msvm
 
-Define as configurações de IP do adaptador de rede a serem aplicadas a uma máquina virtual após um failover. Esses parâmetros de configuração são aplicados após uma operação de failover, imediatamente após o estabelecimento da comunicação com o componente de integração do Exchange KVP em execução no sistema operacional convidado.
+Define as configurações de IP do adaptador de rede a serem aplicadas a uma máquina virtual após um failover. esses parâmetros de configuração são aplicados após uma operação de failover, imediatamente após o estabelecimento da comunicação com o componente de integração do KVP Exchange em execução no sistema operacional convidado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,7 +62,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -113,8 +113,8 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

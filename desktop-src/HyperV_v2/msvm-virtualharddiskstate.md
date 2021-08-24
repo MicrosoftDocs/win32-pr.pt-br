@@ -1,7 +1,7 @@
 ---
 description: Fornece informações de estado para uma imagem de disco rígido virtual existente.
 ms.assetid: b0177906-71dc-4be8-b351-97d7ef427acd
-title: Classe Msvm_VirtualHardDiskState
+title: Msvm_VirtualHardDiskState classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 15d0a8b150e83c17946a6d1b66c7086383f08466
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c5896e8b19d2897084997bd01b65bbb0d6e80e0ca15f662fff38871bdc0b6755
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104460968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119426306"
 ---
-# <a name="msvm_virtualharddiskstate-class"></a>\_Classe Msvm VirtualHardDiskState
+# <a name="msvm_virtualharddiskstate-class"></a>Classe Msvm \_ VirtualHardDiskState
 
 Fornece informações de estado para uma imagem de disco rígido virtual existente.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,20 +51,20 @@ class Msvm_VirtualHardDiskState
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VirtualHardDiskState** tem estes tipos de membros:
+A **classe \_ VirtualHardDiskState Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ VirtualHardDiskState** tem essas propriedades.
+A **classe \_ VirtualHardDiskState Msvm** tem essas propriedades.
 
 <dl> <dt>
 
 **Alinhamento**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -76,8 +76,8 @@ Especifica o tipo de alinhamento do disco rígido virtual. Esse será um dos val
 
 | Valor                                                                        | Significado                        |
 |------------------------------------------------------------------------------|--------------------------------|
-| <dl> <dt>0</dt> </dl> | alinhamento de 512 bytes.<br/> |
-| <dl> <dt>1</dt> </dl> | alinhamento de 4 KB.<br/>     |
+| <dl> <dt>0</dt> </dl> | Alinhamento de 512 byte.<br/> |
+| <dl> <dt>1</dt> </dl> | Alinhamento de 4 KB.<br/>     |
 
 
 
@@ -85,10 +85,10 @@ Especifica o tipo de alinhamento do disco rígido virtual. Esse será um dos val
 
 </dd> <dt>
 
-**Tamanho**
+**FileSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -101,20 +101,20 @@ O tamanho do arquivo de disco rígido virtual (a quantidade real de armazenament
 **FragmentationPercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma aproximação da porcentagem de blocos de disco virtual que estão fragmentados no arquivo de disco rígido virtual.
+Uma aproximação do percentual de blocos de disco virtual fragmentados no arquivo de disco rígido virtual.
 
 </dd> <dt>
 
 **InUse**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -127,20 +127,20 @@ Esta propriedade está reservada para uso futuro.
 **MinInternalSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tamanho mínimo no qual o disco rígido virtual pode ser reduzido, em bytes. Esse tamanho é arredondado para o próximo maior múltiplo do tamanho do setor.
+O tamanho mínimo para o que o disco rígido virtual pode ser reduzido, em bytes. Esse tamanho é arredondado para o próximo maior múltiplo do tamanho do setor.
 
 </dd> <dt>
 
 **PhysicalSectorSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -153,16 +153,16 @@ O tamanho do setor físico usado pelo disco físico subjacente, em bytes.
 **Timestamp**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O carimbo de data/hora do disco rígido virtual
+O timestamp do disco rígido virtual
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> Adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -174,10 +174,10 @@ O carimbo de data/hora do disco rígido virtual
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

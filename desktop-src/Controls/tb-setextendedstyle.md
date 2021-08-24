@@ -3,7 +3,7 @@ title: Mensagem de TB_SETEXTENDEDSTYLE (commctrl. h)
 description: Define os estilos estendidos para um controle ToolBar.
 ms.assetid: aec64bc7-74b4-4efc-9864-2c8a9fbd35c2
 keywords:
-- Controles de TB_SETEXTENDEDSTYLE de mensagens do Windows
+- controles de Windows de mensagem de TB_SETEXTENDEDSTYLE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9a540aaeff61bd81b649f0509e064a29282f598
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 600e5904637215eeb052c85ec0203c9b86c75ed6b179be643dc9a213156b3afd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119318876"
 ---
 # <a name="tb_setextendedstyle-message"></a>Mensagem de TB \_ SETextendedattribute
 
@@ -39,7 +39,7 @@ Valor que especifica os novos estilos estendidos. Esse parâmetro pode ser uma c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um **DWORD** que representa os estilos estendidos anteriores. Esse valor pode ser uma combinação de [estilos estendidos](toolbar-extended-styles.md).
 
@@ -49,9 +49,9 @@ Retorna um **DWORD** que representa os estilos estendidos anteriores. Esse valor
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

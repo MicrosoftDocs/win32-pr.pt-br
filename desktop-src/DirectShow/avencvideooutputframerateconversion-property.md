@@ -1,21 +1,21 @@
 ---
-description: Especifica se o codificador converte a taxa de quadros quando a taxa de quadros de saída não corresponde à taxa de quadros de entrada.
+description: Especifica se o codificador converte a taxa de quadros quando a taxa de quadros de saída não corresponder à taxa de quadros de entrada.
 ms.assetid: c3946942-5a61-4a15-ace6-da2f63c01963
-title: Propriedade AVEncVideoOutputFrameRateConversion (Codecapi. h)
+title: Propriedade AVEncVideoOutputFrameRateConversion (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2687ce33af1717631f156df12de38dafff8d1871
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 39fa09b8370faf7f56336d129661d02e514bb6fc192f8dec0e1b19b5ee53f381
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105812999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540676"
 ---
 # <a name="avencvideooutputframerateconversion-property"></a>Propriedade AVEncVideoOutputFrameRateConversion
 
-Especifica se o codificador converte a taxa de quadros quando a taxa de quadros de saída não corresponde à taxa de quadros de entrada.
+Especifica se o codificador converte a taxa de quadros quando a taxa de quadros de saída não corresponder à taxa de quadros de entrada.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é um membro da enumeração [**eAVEncVideoOutputFrameRateConversion**](/windows/win32/api/codecapi/ne-codecapi-eavencvideooutputframerateconversion) .
+O valor dessa propriedade é um membro da enumeração [**eAVEncVideoOutputFrameRateConversion.**](/windows/win32/api/codecapi/ne-codecapi-eavencvideooutputframerateconversion)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoOutputFrame
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoOutputFrame
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

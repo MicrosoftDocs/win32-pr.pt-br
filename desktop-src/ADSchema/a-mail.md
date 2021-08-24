@@ -1,11 +1,11 @@
 ---
-title: Atributo E-mail-addresses
+title: Atributo de endereços de email
 description: A lista de endereços de email para um contato.
 ms.assetid: d8c75284-fdfd-4188-a4cf-ba2ddb9985fc
 ms.tgt_platform: multiple
 keywords:
-- Atributo de anúncio de atributos de e-mail-addresses
-- Esquema de AD do atributo de email
+- Esquema do AD do atributo de endereços de email
+- esquema do AD do atributo de email
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa769b886171211fc89ed5b1e3d5082e6eeedd2b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8e11247c9b81b378637fd751cd59ec76360e118da8220593340ff55ed25c7518
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301296"
 ---
-# <a name="e-mail-addresses-attribute"></a>Atributo E-mail-addresses
+# <a name="e-mail-addresses-attribute"></a>Atributo de endereços de email
 
 A lista de endereços de email para um contato.
 
@@ -29,14 +29,14 @@ A lista de endereços de email para um contato.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Email-endereços                            |
-| LDAP-Display-Name | mail                                        |
+| CN                | Endereços de email                            |
+| Ldap-Display-Name | mail                                        |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 0.9.2342.19200300.100.1.3                   |
-| System-ID-GUID    | bf967961-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967961-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ A lista de endereços de email para um contato.
 | ID do link                | \-                                                                                                     |
 | MAPI-Id                | 0x39FE                                                                                                 |
 | System-Only            | Falso                                                                                                  |
-| É de valor único       | True                                                                                                   |
-| É indexado             | True                                                                                                   |
-| No catálogo global      | True                                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                           |
+| Tem valor único       | Verdadeiro                                                                                                   |
+| É indexado             | Verdadeiro                                                                                                   |
+| No Catálogo Global      | Verdadeiro                                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                           |
 | Range-Lower            | 0                                                                                                      |
 | Range-Upper            | 256                                                                                                    |
 | Search-Flags           | 0x00000001                                                                                             |
@@ -79,10 +79,10 @@ A lista de endereços de email para um contato.
 | ID do link                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                                         |
-| É indexado             | True                                                                                                                                                                                         |
-| No catálogo global      | True                                                                                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                         |
+| É indexado             | Verdadeiro                                                                                                                                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
@@ -100,10 +100,10 @@ A lista de endereços de email para um contato.
 | ID do link                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                                         |
-| É indexado             | True                                                                                                                                                                                         |
-| No catálogo global      | True                                                                                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                         |
+| É indexado             | Verdadeiro                                                                                                                                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
@@ -121,10 +121,10 @@ A lista de endereços de email para um contato.
 | ID do link                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                                         |
-| É indexado             | True                                                                                                                                                                                         |
-| No catálogo global      | True                                                                                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                         |
+| É indexado             | Verdadeiro                                                                                                                                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
@@ -142,10 +142,10 @@ A lista de endereços de email para um contato.
 | ID do link                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                                         |
-| É indexado             | True                                                                                                                                                                                         |
-| No catálogo global      | True                                                                                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                         |
+| É indexado             | Verdadeiro                                                                                                                                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |
@@ -163,10 +163,10 @@ A lista de endereços de email para um contato.
 | ID do link                | \-                                                                                                                                                                                           |
 | MAPI-Id                | 0x39FE                                                                                                                                                                                       |
 | System-Only            | Falso                                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                                         |
-| É indexado             | True                                                                                                                                                                                         |
-| No catálogo global      | True                                                                                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                 |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                         |
+| É indexado             | Verdadeiro                                                                                                                                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                 |
 | Range-Lower            | 0                                                                                                                                                                                            |
 | Range-Upper            | 256                                                                                                                                                                                          |
 | Search-Flags           | 0x00000001                                                                                                                                                                                   |

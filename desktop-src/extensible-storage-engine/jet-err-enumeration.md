@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: enumeração de JET_err'
-title: Enumeração de JET_err
+description: 'Saiba mais sobre: JET_err enumeração'
+title: JET_err enumeração
 TOCTitle: JET_err enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_err
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_err(v=EXCHG.10)
@@ -832,19 +832,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eccc99baa6fe791f3817e7e88326e3cee9b451b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6f726de52cc640c47bedc15f7204b421dabee5f0c91a9200f1f5490b224ae38d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105778660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119475046"
 ---
-# <a name="jet_err-enumeration"></a>Enumeração de JET_err
+# <a name="jet_err-enumeration"></a>JET_err enumeração
 
 Códigos de erro ESENT.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -878,16 +878,16 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>RfsFailure</td>
-<td>Falha do simulador de falha de recurso</td>
+<td>Falha do Simulador de Falha de Recurso</td>
 </tr>
 <tr class="odd">
 <td></td>
-<td>RfsNotArmed</td>
-<td>Simulador de falha de recurso não inicializado</td>
+<td>RfsNot RfS</td>
+<td>Simulador de Falha de Recurso não inicializado</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>FileClose</td>
+<td>Fileclose</td>
 <td>Não foi possível fechar o arquivo</td>
 </tr>
 <tr class="odd">
@@ -898,7 +898,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TooManyIO</td>
-<td>Sistema ocupado devido a muitos IOs</td>
+<td>Sistema ocupado devido a muitas E/Ss</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -913,12 +913,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DisabledFunctionality</td>
-<td>Você está executando o meu, que não tem todos os recursos compilados no. Essa funcionalidade só tem suporte em uma versão completa do ESE.</td>
+<td>Você está executando MinESE, que não tem todos os recursos compilados. Essa funcionalidade só tem suporte em uma versão completa do ESE.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UnloadableOSFunctionality</td>
-<td>A funcionalidade de sistema operacional desejada não pôde ser localizada e carregada/vinculada.</td>
+<td>A funcionalidade desejada do sistema operacional não pôde ser localizada e carregada/vinculada.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -928,7 +928,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>PreviousVersion</td>
-<td>A versão já existe. Falha na recuperação</td>
+<td>A versão já existia. Falha na recuperação</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -937,7 +937,7 @@ public enum JET_err
 </tr>
 <tr class="even">
 <td></td>
-<td>Associação de entrada</td>
+<td>KeyBoundary</td>
 <td>Limite de chave atingido</td>
 </tr>
 <tr class="odd">
@@ -948,12 +948,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>BadBookmark</td>
-<td>O indicador não tem endereço correspondente no banco de dados</td>
+<td>Indicador não tem endereço correspondente no banco de dados</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>NTSystemCallFailed</td>
-<td>Falha em uma chamada para o sistema operacional</td>
+<td>Falha em uma chamada ao sistema operacional</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -963,7 +963,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>SPAvailExtCacheOutOfSync</td>
-<td>O cache AvailExt não corresponde ao árvore b</td>
+<td>O cache AvailExt não é igual a btree</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -973,7 +973,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>SPAvailExtCacheOutOfMemory</td>
-<td>Memória insuficiente alocando um nó de cache AvailExt</td>
+<td>Falta de memória alocando um nó de cache AvailExt</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -983,22 +983,22 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>DbTimeCorrupted</td>
-<td>Dbtime na página atual é maior do que o banco de dados global dbtime</td>
+<td>Dbtime na página atual é maior que dbtime de banco de dados global</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Keytruncate</td>
-<td>chave truncada no índice que não permite truncamento de chave</td>
+<td>KeyTruncated</td>
+<td>chave truncada no índice que não permite o truncamento de chave</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DatabaseLeakInSpace</td>
-<td>Algumas páginas de banco de dados se tornaram inacessíveis mesmo da árvore disponível, apenas uma desfragmentação offline pode retornar o espaço perdido.</td>
+<td>Algumas páginas de banco de dados se tornaram inacessível até mesmo da árvore de disponibilidade, somente uma desfragmentação offline pode retornar o espaço perdido.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BadEmptyPage</td>
-<td>Banco de dados corrompido. Pesquisando uma página vazia inesperadamente.</td>
+<td>Banco de dados corrompido. Pesquisando uma página inesperadamente vazia.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1008,27 +1008,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>CannotSeparateIntrinsicLV</td>
-<td>tentativa inválida de separar um LV que deve ser intrínseco</td>
+<td>tentativa ilegal de separar um LV que deve ser intrínseco</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SeparatedLongValue</td>
-<td>Operação sem suporte em valor longo separado</td>
+<td>Operação sem suporte em valores longos separados</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>MustBeSeparateLongValue</td>
-<td>Só é possível ler colunas de valor longo que podem ser separadas, por exemplo, sem restrições de tamanho, de forma que elas sejam fixas ou colunas variáveis</td>
+<td>Só é possível ler previamente colunas de valor longo que podem ser separadas, por exemplo, sem restrições de tamanho para que elas sejam colunas fixas ou variáveis</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InvalidPreread</td>
-<td>Não é possível conler valores longos quando o índice atual é secundário</td>
+<td>Não é possível pré-ler valores longos quando o índice atual é secundário</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>InvalidLoggedOperation</td>
-<td>A operação registrada em log não pode ser refeita</td>
+<td>A operação registrada não pode ser refeita</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1038,12 +1038,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>NoBackupDirectory</td>
-<td>Nenhum diretório de backup fornecido</td>
+<td>Nenhum diretório de backup determinado</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>BackupDirectoryNotEmpty</td>
-<td>O diretório de backup não é vazio</td>
+<td>O diretório de backup não é emtpy</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1058,27 +1058,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>MissingPreviousLogFile</td>
-<td>Arquivo de log ausente para o Check Point</td>
+<td>Faltando o arquivo de log para o ponto de verificação</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LogWriteFail</td>
-<td>Falha ao gravar no arquivo de log</td>
+<td>Falha ao escrever no arquivo de log</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogDisabledDueToRecoveryFailure</td>
-<td>Tentar registrar algo após a recuperação falhar</td>
+<td>Tente registrar algo depois que a recuperação falhar</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CannotLogDuringRecoveryRedo</td>
-<td>Tentar registrar algo durante a recuperação refazer</td>
+<td>Tente registrar algo durante a refazer da recuperação</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogGenerationMismatch</td>
-<td>O nome do arquivo de log não corresponde ao número de geração interno</td>
+<td>O nome do logfile não é igual ao número de geração interno</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1333,37 +1333,37 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>LogTornWriteDuringHardRestore</td>
-<td>foi detectada uma gravação interrompida em um conjunto de backup durante a restauração complexa</td>
+<td>A gravação dividida foi detectada em um conjunto de backup durante a restauração em disco</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogTornWriteDuringHardRecovery</td>
-<td>foi detectada uma gravação interrompida durante a recuperação complexa (o log não era parte de um conjunto de backup)</td>
+<td>A gravação cortada foi detectada durante a recuperação em tempo de recuperação (o log não fazia parte de um conjunto de backup)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LogCorruptDuringHardRestore</td>
-<td>corrupção detectada em um conjunto de backup durante a restauração complexa</td>
+<td>A corrupção foi detectada em um conjunto de backup durante a restauração</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogCorruptDuringHardRecovery</td>
-<td>foi detectado danos durante a recuperação complexa (o log não era parte de um conjunto de backup)</td>
+<td>A corrupção foi detectada durante a recuperação difícil (o log não fazia parte de um conjunto de backup)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>MustDisableLoggingForDbUpgrade</td>
-<td>Não é possível habilitar o registro em log durante a tentativa de atualizar o BD</td>
+<td>Não é possível habilitar o registro em log ao tentar atualizar o banco de dados</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BadRestoreTargetInstance</td>
-<td>O TargetInstance especificado para Restore não foi encontrado ou os arquivos de log não correspondem</td>
+<td>TargetInstance especificado para restauração não foi encontrado ou os arquivos de log não corresponderam</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecoveredWithoutUndo</td>
-<td>A recuperação reversível reproduziu com êxito todas as operações, mas a fase desfazer da recuperação foi ignorada</td>
+<td>A recuperação suave replayou com êxito todas as operações, mas a fase Desfazer da recuperação foi ignorada</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1373,42 +1373,42 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>SoftRecoveryOnSnapshot</td>
-<td>Recuperação simples em um banco de dados de um conjunto de backup de cópia de sombra</td>
+<td>Recuperação suave em um banco de dados de um conjunto de backup de cópia de sombra</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CommittedLogFilesMissing</td>
-<td>Um ou mais logs que foram confirmados neste banco de dados estão ausentes. Esses arquivos de log são necessários para manter a semântica ACID durável, mas não é necessário manter a consistência se o bit de JET_bitReplayIgnoreLostLogs for especificado durante a recuperação.</td>
+<td>Um ou mais logs que foram comprometidos com esse banco de dados estão ausentes. Esses arquivos de log são necessários para manter a semântica ACID durável, mas não são necessários para manter a consistência se o bit JET_bitReplayIgnoreLostLogs for especificado durante a recuperação.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SectorSizeNotSupported</td>
-<td>O tamanho do setor físico relatado pelo subsistema de disco não tem suporte pelo ESE para um tipo de arquivo específico.</td>
+<td>O tamanho do setor físico relatado pelo subsistema de disco não é compatível com o ESE para um tipo de arquivo específico.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RecoveredWithoutUndoDatabasesConsistent</td>
-<td>A recuperação reversível reproduziu com êxito todas as operações e pretendia ignorar a fase desfazer da recuperação, mas a fase desfazer não era necessária</td>
+<td>A recuperação suave replayou com êxito todas as operações e pretendia ignorar a fase Desfazer da recuperação, mas a fase Desfazer não era necessária</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CommittedLogFileCorrupt</td>
-<td>Um ou mais logs foram considerados corrompidos durante a recuperação. Esses arquivos de log são necessários para manter a semântica ACID durável, mas não é necessário manter a consistência se o JET_bitIgnoreLostLogs bit e JET_paramDeleteOutOfRangeLogs for especificado durante a recuperação.</td>
+<td>Um ou mais logs foram considerados corrompidos durante a recuperação. Esses arquivos de log são necessários para manter a semântica ACID durável, mas não são necessários para manter a consistência se o bit JET_bitIgnoreLostLogs e JET_paramDeleteOutOfRangeLogs for especificado durante a recuperação.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UnicodeTranslationBufferTooSmall</td>
-<td>Buffer de conversão Unicode muito pequeno</td>
+<td>Buffer de tradução Unicode muito pequeno</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UnicodeTranslationFail</td>
-<td>Falha na normalização Unicode</td>
+<td>Falha na normalização unicode</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>UnicodeNormalizationNotSupported</td>
-<td>O sistema operacional não dá suporte para normalização Unicode (e nenhum retorno de chamada de normalização foi especificado)</td>
+<td>O sistema operacional não oferece suporte para normalização Unicode (e nenhum retorno de chamada de normalização foi especificado)</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1418,7 +1418,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>ExistingLogFileHasBadSignature</td>
-<td>O arquivo de log existente tem assinatura inadequada</td>
+<td>O arquivo de log existente tem uma assinatura ruim</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1428,7 +1428,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>LogReadVerifyFailure</td>
-<td>Erro de soma de verificação no arquivo de log durante o backup</td>
+<td>Erro de verificação no arquivo de log durante o backup</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1443,7 +1443,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>RestoreOfNonBackupDatabase</td>
-<td>tentativa de recuperação complexa em um banco de dados que não era um banco de dados de backup</td>
+<td>tentativa de recuperação de disco rígido em um banco de dados que não era um banco de dados de backup</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1488,7 +1488,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DatabaseFileReadOnly</td>
-<td>Tentativa de anexar um arquivo de banco de dados somente leitura para operações de leitura/gravação</td>
+<td>Tentou anexar um arquivo de banco de dados somente leitura para operações de leitura/gravação</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1498,7 +1498,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>OutOfMemory</td>
-<td>Memória insuficiente</td>
+<td>Memória fora de memória</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1513,12 +1513,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>OutOfBuffers</td>
-<td>Sem buffers de página de banco de dados</td>
+<td>Buffers de página fora do banco de dados</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TooManyIndexes</td>
-<td>Muitos índices</td>
+<td>Índices demais</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1533,7 +1533,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>ReadVerifyFailure</td>
-<td>Erro de soma de verificação em uma página de banco de dados</td>
+<td>Erro de verificação em uma página de banco de dados</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1543,17 +1543,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>OutOfFileHandles</td>
-<td>Sem identificadores de arquivo</td>
+<td>Sem alças de arquivo</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DiskReadVerificationFailure</td>
-<td>O sistema operacional retornou ERROR_CRC de e/s de arquivo</td>
+<td>O sistema operacional retornou ERROR_CRC E/S do arquivo</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DiskIO</td>
-<td>Erro de e/s de disco</td>
+<td>Erro de E/S de disco</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1563,7 +1563,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidSystemPath</td>
-<td>Caminho de sistema inválido</td>
+<td>Caminho do sistema inválido</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1587,7 +1587,7 @@ public enum JET_err
 </tr>
 <tr class="even">
 <td></td>
-<td>Não inicializado</td>
+<td>NotInitialized</td>
 <td>Mecanismo de banco de dados não inicializado</td>
 </tr>
 <tr class="odd">
@@ -1608,12 +1608,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>QueryNotSupported</td>
-<td>Suporte à consulta não disponível</td>
+<td>Suporte à consulta indisponível</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SQLLinkNotSupported</td>
-<td>Suporte a link do SQL não disponível</td>
+<td>SQL Suporte ao link indisponível</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1633,7 +1633,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidFilename</td>
-<td>Nome de arquivo inválido</td>
+<td>O nome do arquivo é inválido</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1648,7 +1648,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidBufferSize</td>
-<td>O buffer de dados não corresponde ao tamanho da coluna</td>
+<td>O buffer de dados não combina com o tamanho da coluna</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1663,12 +1663,12 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>LinkNotSupported</td>
-<td>Suporte a links não disponível</td>
+<td>Suporte ao link indisponível</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>NullKeyDisallowed</td>
-<td>Chaves nulas não são permitidas no índice</td>
+<td>Chaves nulas não são permitidos no índice</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1678,12 +1678,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>MustRollback</td>
-<td>A transação deve ser revertida porque a falha de atualização não versionada</td>
+<td>A transação deve reverter devido à falha da atualização não reversida</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>TooManyActiveUsers</td>
-<td>Muitos usuários do banco de dados ativo</td>
+<td>Muitos usuários de banco de dados ativos</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1693,7 +1693,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidLanguageId</td>
-<td>ID de idioma inválido ou desconhecido</td>
+<td>ID de idioma inválida ou desconhecida</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -1703,32 +1703,32 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidLCMapStringFlags</td>
-<td>Sinalizadores inválidos para LCMapString ()</td>
+<td>Sinalizadores inválidos para LCMapString()</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>VersionStoreEntryTooBig</td>
-<td>Tentativa de criar uma entrada de repositório de versão (RCE) maior que um Bucket de versão</td>
+<td>Tentativa de criar uma RCE (entrada de armazenamento de versão) maior que um bucket de versão</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>VersionStoreOutOfMemoryAndCleanupTimedOut</td>
-<td>Memória insuficiente no repositório de versão (e falha na conclusão da tentativa de limpeza)</td>
+<td>Armazenamento de versão sem memória (e falha na conclusão da tentativa de limpeza)</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>VersionStoreOutOfMemory</td>
-<td>Armazenamento de versão sem memória (a limpeza já foi tentada)</td>
+<td>Armazenamento de versão sem memória (limpeza já tentada)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CurrencyStackOutOfMemory</td>
-<td>Não usado: lCSRPerfFUCB * g_lCursorsMax excedido (somente XJET)</td>
+<td>UNUSED: lCSRPerfFUCB * g_lCursorsMax excedido (somente XJET)</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CannotIndex</td>
-<td>Não é possível indexar coluna de caução ou coluna SLV</td>
+<td>Não é possível indexar a coluna de escrow ou a coluna SLV</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1743,52 +1743,52 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>OutOfObjectIDs</td>
-<td>Árvore b ObjectIDs (executar desfragmentação offline para recuperar ObjectIds liberadas/não utilizadas)</td>
+<td>Fora de ObjectIDs btree (execute a desfragmentação offline para recuperar ObjectIds liberadas/nãousadas)</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutOfLongValueIDs</td>
-<td>O contador de ID de valor longo atingiu o valor máximo. (execute a desfragmentação offline para recuperar LongValueIDs livres/não utilizados)</td>
+<td>O contador de ID de valor longo atingiu o valor máximo. (executar a desfragmentação offline para recuperar LongValueIDs gratuitos/nãoutilados)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfAutoincrementValues</td>
-<td>O contador de incremento automático atingiu o valor máximo (a desfragmentação offline não será capaz de recuperar valores de incremento automáticos livres/não utilizados).</td>
+<td>O contador de incremento automático atingiu o valor máximo (a desfragmentação offline NÃO poderá recuperar valores de incremento automático livres/não usadas).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutOfDbtimeValues</td>
-<td>O contador dbtime atingiu o valor máximo (execute a desfragmentação offline para recuperar valores de dbtime livres/não utilizados)</td>
+<td>O contador dbtime atingiu o valor máximo (execute a desfragmentação offline para recuperar valores dbtime livres/nãoutilados)</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>OutOfSequentialIndexValues</td>
-<td>O contador de índice sequencial atingiu o valor máximo (execute a desfragmentação offline para recuperar valores de SequentialIndex livres/não utilizados)</td>
+<td>O contador de índice sequencial atingiu o valor máximo (execute a desfragmentação offline para recuperar valores DequentialIndex livres/nãoutilados)</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RunningInOneInstanceMode</td>
-<td>Chamada de várias instâncias com modo de instância única habilitada</td>
+<td>Chamada de várias instâncias com o modo de instância única habilitado</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RunningInMultiInstanceMode</td>
-<td>Chamada de instância única com modo de várias instâncias habilitado</td>
+<td>Chamada de instância única com o modo de várias instâncias habilitado</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SystemParamsAlreadySet</td>
-<td>Os parâmetros do sistema global já foram definidos</td>
+<td>Parâmetros globais do sistema já foram definidos</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SystemPathInUse</td>
-<td>O caminho do sistema já foi usado por outra instância de banco de dados</td>
+<td>Caminho do sistema já usado por outra instância de banco de dados</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LogFilePathInUse</td>
-<td>Caminho do arquivo de log já usado por outra instância de banco de dados</td>
+<td>Caminho do logfile já usado por outra instância de banco de dados</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -1798,32 +1798,32 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InstanceNameInUse</td>
-<td>O nome da instância já está em uso</td>
+<td>Nome da Instância já em uso</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InstanceUnavailable</td>
-<td>Esta instância não pode ser usada porque encontrou um erro fatal</td>
+<td>Essa instância não pode ser usada porque encontrou um erro fatal</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>DatabaseUnavailable</td>
-<td>Este banco de dados não pode ser usado porque encontrou um erro fatal</td>
+<td>Esse banco de dados não pode ser usado porque encontrou um erro fatal</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InstanceUnavailableDueToFatalLogDiskFull</td>
-<td>Esta instância não pode ser usada porque encontrou um erro de disco cheio ao executar uma operação (provavelmente reversão de transação) que não pôde tolerar a falha</td>
+<td>Essa instância não pode ser usada porque encontrou um erro de disco de log completo executando uma operação (provável reação de transação) que não pôde tolerar a falha</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>OutOfSessions</td>
-<td>Fora de sessões</td>
+<td>Fora das sessões</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>WriteConflict</td>
-<td>Falha no bloqueio de gravação devido a um bloqueio de gravação pendente</td>
+<td>Falha no bloqueio de gravação devido ao bloqueio de gravação pendente</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2308,7 +2308,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>IndexTuplesKeyTooSmall</td>
-<td>a chave especificada não atende ao comprimento mínimo da tupla</td>
+<td>A chave especificada não atenderá ao tamanho mínimo da tupla</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2318,7 +2318,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>ColumnNoChunk</td>
-<td>Nenhuma parte desse tipo em valor longo</td>
+<td>Essa parte não tem valor longo</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2328,7 +2328,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>NullInvalid</td>
-<td>Nulo inválido</td>
+<td>Nulo não válido</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2338,12 +2338,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>ColumnTooBig</td>
-<td>O tamanho do campo é maior que o máximo</td>
+<td>O comprimento do campo é maior que o máximo</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ColumnNotFound</td>
-<td>Nenhuma coluna</td>
+<td>Essa coluna não existe</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2358,7 +2358,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>ColumnRedundant</td>
-<td>Segunda coluna de versão ou autoincremento</td>
+<td>Segunda coluna de edição automática ou versão</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2368,37 +2368,37 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TaggedNotNULL</td>
-<td>Nenhuma coluna marcada não nula</td>
+<td>Nenhuma coluna marcada como NULL</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>NoCurrentIndex</td>
-<td>Com um índice atual de w/o inválido</td>
+<td>Um índice atual inválido</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>KeyIsMade</td>
+<td>KeyIsParti</td>
 <td>A chave é completamente feita</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>BadColumnId</td>
-<td>ID de coluna incorreta</td>
+<td>ID da coluna incorreta</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>BadItagSequence</td>
-<td>ItagSequence inválidos para coluna marcada</td>
+<td>ItagSequence ruim para a coluna marcada</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ColumnInRelationship</td>
-<td>Não é possível excluir, participações de coluna na relação</td>
+<td>Não é possível excluir, a coluna participa da relação</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>CannotBeTagged</td>
-<td>O incremento automático e a versão não podem ser marcados</td>
+<td>AutoIncrement e Version não podem ser marcados</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2408,7 +2408,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>MultiValuedDuplicate</td>
-<td>Duplicação detectada em uma coluna exclusiva de vários valores</td>
+<td>Duplicação detectada em uma coluna exclusiva com vários valores</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2418,7 +2418,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>MultiValuedDuplicateAfterTruncation</td>
-<td>Duplicação detectada em uma coluna com vários valores exclusivos depois que os dados foram normalizados e normalizando os dados truncados antes da comparação</td>
+<td>Duplicação detectada em uma coluna exclusiva com vários valores após a normalização dos dados e normalização dos dados truncados antes da comparação</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2428,12 +2428,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>InvalidPlaceholderColumn</td>
-<td>Tentativa de converter a coluna em um espaço reservado de índice primário, mas a coluna não atende aos critérios necessários</td>
+<td>Tentou converter a coluna em um espaço reservado de índice primário, mas a coluna não atendem aos critérios necessários</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>ColumnCannotBeCompressed</td>
-<td>Somente colunas JET_coltypLongText e JET_coltypLongBinary podem ser compactadas</td>
+<td>Somente JET_coltypLongText e JET_coltypLongBinary colunas podem ser compactadas</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2448,12 +2448,12 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>NoCurrentRecord</td>
-<td>A moeda não está em um registro</td>
+<td>Conversor de Moedas em um registro</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RecordPrimaryChanged</td>
-<td>A chave primária não pode ser alterada</td>
+<td>A chave primária pode não mudar</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2463,11 +2463,11 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>AlreadyPrepared</td>
-<td>Tentativa de atualizar o registro quando a atualização do registro já estava em andamento</td>
+<td>Tentativa de atualizar o registro quando a atualização de registro já estava em andamento</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>KeyNotMade</td>
+<td>KeyNotNotNot</td>
 <td>Nenhuma chamada para JetMakeKey</td>
 </tr>
 <tr class="odd">
@@ -2483,17 +2483,17 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>LanguageNotSupported</td>
-<td>A instalação do Windows não dá suporte ao idioma</td>
+<td>Windows instalação não dá suporte ao idioma</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>DecompressionFailed</td>
-<td>Erro interno: não foi possível descompactar os dados</td>
+<td>DescompactaçãoFailed</td>
+<td>Erro interno: os dados não puderam ser descompactados</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>UpdateMustVersion</td>
-<td>Nenhuma atualização de versão somente para tabelas não confirmadas</td>
+<td>Nenhuma atualização de versão somente para tabelas não comprometidas</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2503,7 +2503,7 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>InvalidOnSort</td>
-<td>Operação inválida na classificação</td>
+<td>Operação inválida em Classificar</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2518,7 +2518,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>DiskFull</td>
-<td>Nenhum espaço restante no disco</td>
+<td>Não há espaço no disco</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2532,13 +2532,13 @@ public enum JET_err
 </tr>
 <tr class="odd">
 <td></td>
-<td>Inválidatype</td>
+<td>FileInvalidType</td>
 <td>Tipo de arquivo inválido</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>AfterInitialization</td>
-<td>Não é possível restaurar após init.</td>
+<td>Não é possível restaurar após a init.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2568,27 +2568,27 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>EntryPointNotFound</td>
-<td>Não foi possível encontrar um ponto de entrada em uma DLL que solicitamos</td>
+<td>Não foi possível encontrar um ponto de entrada em uma DLL necessária</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SessionContextAlreadySet</td>
-<td>A sessão especificada já tem um contexto de sessão definido</td>
+<td>A sessão especificada já tem um conjunto de contexto de sessão</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SessionContextNotSetByThisThread</td>
-<td>Tentativa de redefinir o contexto da sessão, mas o thread atual não orignally definiu o contexto da sessão</td>
+<td>Tentou redefinir o contexto de sessão, mas o thread atual não definiu orignamente o contexto da sessão</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SessionInUse</td>
-<td>Tentativa de encerrar a sessão em uso</td>
+<td>Tentou encerrar a sessão em uso</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RecordFormatConversionFailed</td>
-<td>Erro interno durante conversão de formato de registro dinâmico</td>
+<td>Erro interno durante a conversão de formato de registro dinâmico</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2598,7 +2598,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>RollbackError</td>
-<td>erro durante a reversão</td>
+<td>erro durante a reação</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2608,17 +2608,17 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>CallbackFailed</td>
-<td>Um retorno de chamada falhou</td>
+<td>Falha em um retorno de chamada</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>CallbackNotResolved</td>
-<td>Uma função de retorno de chamada não pôde ser encontrada</td>
+<td>Não foi possível encontrar uma função de retorno de chamada</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SpaceHintsInvalid</td>
-<td>Um elemento da estrutura de dicas de espaço JET não estava correto ou é acionável.</td>
+<td>Um elemento da estrutura de dicas de espaço JET não estava correto ou a ação.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2818,7 +2818,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>OSSnapshotTimeOut</td>
-<td>A cópia de sombra do sistema operacional terminou com o tempo limite</td>
+<td>A cópia de sombra do sistema operacional terminou com o tempo-out</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2828,7 +2828,7 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>OSSnapshotInvalidSnapId</td>
-<td>JET_OSSNAPID inválido</td>
+<td>JET_OSSNAPID</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -2838,32 +2838,32 @@ public enum JET_err
 <tr class="even">
 <td></td>
 <td>TestInjectionNotSupported</td>
-<td>Injeção de teste sem suporte</td>
+<td>Não há suporte para injeção de teste</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>InvalidLogDataSequence</td>
-<td>Alguns como os dados de log fornecidos são obtidos fora de sequência com o estado atual da instância</td>
+<td>Alguns de como os dados de log fornecidos sairam da sequência com o estado atual da instância</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LSCallbackNotSpecified</td>
-<td>Tentativa de usar o armazenamento local sem a especificação de uma função de retorno de chamada</td>
+<td>Tentativa de usar o local Armazenamento sem que uma função de retorno de chamada fosse especificada</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>LSAlreadySet</td>
-<td>Tentativa de definir o armazenamento local para um objeto que já tinha sido definido</td>
+<td>Tentativa de definir o local Armazenamento para um objeto que já o tinha definido</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>LSNotSet</td>
-<td>Tentativa de recuperar o armazenamento local de um objeto que não o definiu</td>
+<td>Tentativa de recuperar Armazenamento local de um objeto que não o definiu</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FileIOSparse</td>
-<td>uma e/s foi emitida para um local que era esparso</td>
+<td>uma E/S foi emitida para um local esparso</td>
 </tr>
 <tr class="even">
 <td></td>
@@ -2873,21 +2873,21 @@ public enum JET_err
 <tr class="odd">
 <td></td>
 <td>FileIOAbort</td>
-<td>instrui o chamador JET_ABORTRETRYFAILCALLBACK a anular a e/s especificada</td>
+<td>instrui o JET_ABORTRETRYFAILCALLBACK chamador a anular a E/S especificada</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FileIORetry</td>
-<td>instrui o chamador JET_ABORTRETRYFAILCALLBACK a repetir a e/s especificada</td>
+<td>instrui o JET_ABORTRETRYFAILCALLBACK chamador a repetir a E/S especificada</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FileIOFail</td>
-<td>instrui o chamador JET_ABORTRETRYFAILCALLBACK a falhar na e/s especificada</td>
+<td>instrui o JET_ABORTRETRYFAILCALLBACK chamador a falhar na E/S especificada</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Compactar</td>
+<td>FileCompressed</td>
 <td>Não há suporte para acesso de leitura/gravação em arquivos compactados</td>
 </tr>
 </tbody>
@@ -2898,4 +2898,4 @@ public enum JET_err
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

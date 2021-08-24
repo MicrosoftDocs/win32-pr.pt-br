@@ -4,12 +4,12 @@ ms.assetid: e18ea3c8-ddac-4214-83be-106c28c3c327
 title: SCRNSAVE.EXE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d6a5d50b002299fe38508b387926b0eed11141
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5e1ac7c0f2ee9d87911c0db195df89e2c27dcf1b19c0e9dac70d1517b0ad30ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571346"
 ---
 # <a name="scrnsaveexe"></a>SCRNSAVE.EXE
 
@@ -41,7 +41,7 @@ As alterações feitas nessa entrada entram em vigor na próxima vez em que o si
 
 ## <a name="notes"></a>Observações
 
--   Os sistemas operacionais Windows adicionam essa entrada ao registro quando você usa **Exibir** no painel de controle para selecionar uma proteção de tela. Se você desabilitar todas as proteções de tela escolhendo **(nenhum)** na lista proteção de tela, o sistema operacional excluirá essa entrada do registro e chamará a função [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) com *uiAction* igual a SPI \_ SETSCREENSAVEACTIVE e *uiParam* igual a **false**.
+-   Windows sistemas operacionais adicione essa entrada ao registro quando você usa **exibir** no painel de controle para selecionar uma proteção de tela. Se você desabilitar todas as proteções de tela escolhendo **(nenhum)** na lista proteção de tela, o sistema operacional excluirá essa entrada do registro e chamará a função [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) com *uiAction* igual a SPI \_ SETSCREENSAVEACTIVE e *uiParam* igual a **false**.
 -   Essa entrada pode ser substituída por uma configuração de Política de Grupo em sistemas que dão suporte a Política de Grupo. Enquanto a configuração Política de Grupo **nome do executável de proteção de tela** está habilitada, o sistema ignora essa entrada. A configuração dessa configuração de política é armazenada na entrada **SCRNSAVE.EXE** , que está na subchave **Policies** .
 
  

@@ -3,7 +3,7 @@ title: Mensagem de EM_SETENDOFLINE (CommCtrl. h)
 description: Define o caractere de fim de linha usado quando um LineBreak é inserido.
 ms.assetid: a10b3f57-0e67-4a0f-89f3-9c8ebd1514f8
 keywords:
-- Controles de EM_SETENDOFLINE de mensagens do Windows
+- controles de Windows de mensagem de EM_SETENDOFLINE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 5ee7c500ba3818cad0f5ee74e9994ed8af049ea0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5990b247757fc8e3cd39ab38edf5b88ca8ac62f74e402aac3899d51e3156231f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437586"
 ---
 # <a name="em_setendofline-message"></a>\_Mensagem em SETENDOFLINE
 
@@ -51,7 +51,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será diferente de zero.
 
@@ -67,9 +67,9 @@ Quando o conjunto de caracteres de fim de linha é o **EC \_ ENDOFLINE \_ DETECT
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 10, 1809\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2019\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, 1809 \[ aplicativos de área de trabalho apenas\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2019\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
 
 
 

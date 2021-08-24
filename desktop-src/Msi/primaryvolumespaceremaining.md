@@ -1,23 +1,23 @@
 ---
-description: O instalador define o valor da propriedade PrimaryVolumeSpaceRemaining como uma cadeia de caracteres que representa o número total de bytes restantes no volume referenciado pela propriedade PrimaryVolumePath, se todos os recursos selecionados no momento forem instalados.
+description: O instalador define o valor da propriedade PrimaryVolumeSpaceRemaining como uma cadeia de caracteres que representa o número total de bytes restantes no volume referenciado pela propriedade PrimaryVolumePath, se todos os recursos selecionados no momento foram instalados.
 ms.assetid: 8a59d22f-b8a1-47bf-90f3-f8cadfae8ecd
 title: Propriedade PrimaryVolumeSpaceRemaining
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cdae4e0895c18ca32ab65f68daa13cd6c702f62c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 16107af105de0684bd917177050017a3c14e40aff32c658881342a90e877c973
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580486"
 ---
 # <a name="primaryvolumespaceremaining-property"></a>Propriedade PrimaryVolumeSpaceRemaining
 
-O instalador define o valor da propriedade **PrimaryVolumeSpaceRemaining** como uma cadeia de caracteres que representa o número total de bytes restantes no volume referenciado pela propriedade [**PrimaryVolumePath**](primaryvolumepath.md) , se todos os recursos selecionados no momento forem instalados. Assim como acontece com a propriedade [**PrimaryVolumeSpaceAvailable**](primaryvolumespaceavailable.md) , esse número é expresso em unidades de 512 bytes.
+O instalador define o valor da propriedade **PrimaryVolumeSpaceRemaining** como uma cadeia de caracteres que representa o número total de bytes restantes no volume referenciado pela propriedade [**PrimaryVolumePath,**](primaryvolumepath.md) se todos os recursos selecionados no momento foram instalados. Assim como com [**a propriedade PrimaryVolumeSpaceAvailable,**](primaryvolumespaceavailable.md) esse número é expresso em unidades de 512 bytes.
 
 ## <a name="remarks"></a>Comentários
 
-Observação Se esse valor for para ser exibido em um [controle de texto](text-control.md)estático, o bit de [formatação](formatsize-control-attribute.md) poderá ser usado para formatar e rotular automaticamente esse número em unidades de kilobytes ou megabytes conforme apropriado.
+Observe que se esse valor deve ser exibido em um controle de Texto estático [,](text-control.md)o bit [FormatSize](formatsize-control-attribute.md) pode ser usado para formatar e rotular automaticamente esse número em unidades de quilobytes ou megabytes, conforme apropriado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ Observação Se esse valor for para ser exibido em um [controle de texto](text-c
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 6b901b73-516d-4f27-b258-3b93a8f9675f
 title: Máscaras de acesso do Gerenciador de recursos (WinNT. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f0f579a96ed80de100a5cb41cb9c4e9b847a060
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12ede54d5d49533e70aa9cda2d9c4a363d61f1fdbd894108a5b83f2c5e9efc98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146479"
 ---
 # <a name="resource-manager-access-masks"></a>Máscaras de acesso do Gerenciador de recursos
 
@@ -115,7 +115,7 @@ O chamador tem o seguinte privilégio: \_ direitos padrão \_ necessários.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinNT. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WinNT. h</dt> </dl> |
 
 
 

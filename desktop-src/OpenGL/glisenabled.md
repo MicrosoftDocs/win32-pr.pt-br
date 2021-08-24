@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fdb2ba206e0a026aef118b06d66097ade9ba9ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3237cedc1daeffa3fd47fd50b9b19d79ebad3acbf53bdd7929b70dad4093a7a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493396"
 ---
 # <a name="glisenabled-function"></a>função glIsEnabled
 
@@ -40,7 +40,7 @@ GLboolean WINAPI glIsEnabled(
 
 <dl> <dt>
 
-*extremidade* 
+*ponta* 
 </dt> <dd>
 
 Uma constante simbólica que indica um recurso OpenGL. Os seguintes recursos são aceitos.
@@ -93,15 +93,15 @@ Uma constante simbólica que indica um recurso OpenGL. Os seguintes recursos sã
 | <span id="GL_POLYGON_SMOOTH"></span><span id="gl_polygon_smooth"></span><dl> <dt>**\_suavização do polígono GL \_**</dt> </dl>                               | Consulte [ **glPolygonMode**](glpolygonmode.md)<br/>                                                                                               |
 | <span id="GL_POLYGON_STIPPLE"></span><span id="gl_polygon_stipple"></span><dl> <dt>**polígono do GL \_ \_ STIPPLE**</dt> </dl>                            | Consulte [ **glPolygonStipple**](glpolygonstipple.md)<br/>                                                                                         |
 | <span id="GL_SCISSOR_TEST"></span><span id="gl_scissor_test"></span><dl> <dt>**\_teste de tesoura do GL \_**</dt> </dl>                                     | Consulte [ **glScissor**](glscissor.md)<br/>                                                                                                       |
-| <span id="GL_STENCIL_TEST"></span><span id="gl_stencil_test"></span><dl> <dt>**\_teste de estêncil GL \_**</dt> </dl>                                     | Consulte [**glStencilFunc**](glstencilfunc.md) e [**glStencilOp**](glstencilop.md)<br/>                                                        |
-| <span id="GL_TEXTURE_1D"></span><span id="gl_texture_1d"></span><dl> <dt>**Somente \_ textura GL \_ 1D**</dt> </dl>                                           | Consulte [ **glTexImage1D**](glteximage1d.md)<br/>                                                                                                 |
-| <span id="GL_TEXTURE_2D"></span><span id="gl_texture_2d"></span><dl> <dt>**A \_ textura GL \_ 2D**</dt> </dl>                                           | Consulte [ **glTexImage2D**](glteximage2d.md)<br/>                                                                                                 |
-| <span id="GL_TEXTURE_COORD_ARRAY"></span><span id="gl_texture_coord_array"></span><dl> <dt>**\_matriz GL \_ coord de textura \_**</dt> </dl>               | Consulte [ **glTexCoordPointer**](gltexcoordpointer.md)<br/>                                                                                       |
-| <span id="GL_TEXTURE_GEN_Q"></span><span id="gl_texture_gen_q"></span><dl> <dt>**GL \_ Texture \_ Gen \_ Q**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
-| <span id="GL_TEXTURE_GEN_R"></span><span id="gl_texture_gen_r"></span><dl> <dt>**o GL de \_ Texture \_ Gen \_ R**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
-| <span id="GL_TEXTURE_GEN_S"></span><span id="gl_texture_gen_s"></span><dl> <dt>**S do GL \_ Texture \_ Gen \_**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
-| <span id="GL_TEXTURE_GEN_T"></span><span id="gl_texture_gen_t"></span><dl> <dt>**\_geração de textura de Texture GL \_ \_**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
-| <span id="GL_VERTEX_ARRAY"></span><span id="gl_vertex_array"></span><dl> <dt>**\_matriz de vértice GL \_**</dt> </dl>                                     | Consulte [ **glVertexPointer**](glvertexpointer.md)<br/>                                                                                           |
+| <span id="GL_STENCIL_TEST"></span><span id="gl_stencil_test"></span><dl> <dt>**TESTE \_ DE ESTÊNCIL \_ GL**</dt> </dl>                                     | Consulte [**glStencilFunc**](glstencilfunc.md) e [**glStencilOp**](glstencilop.md)<br/>                                                        |
+| <span id="GL_TEXTURE_1D"></span><span id="gl_texture_1d"></span><dl> <dt>**TEXTURA \_ GL \_ 1D**</dt> </dl>                                           | Consulte [ **glTexImage1D**](glteximage1d.md)<br/>                                                                                                 |
+| <span id="GL_TEXTURE_2D"></span><span id="gl_texture_2d"></span><dl> <dt>**TEXTURA \_ GL \_ 2D**</dt> </dl>                                           | Consulte [ **glTexImage2D**](glteximage2d.md)<br/>                                                                                                 |
+| <span id="GL_TEXTURE_COORD_ARRAY"></span><span id="gl_texture_coord_array"></span><dl> <dt>**MATRIZ DE \_ \_ COORD DE TEXTURA \_ GL**</dt> </dl>               | Consulte [ **glTexCoordPointer**](gltexcoordpointer.md)<br/>                                                                                       |
+| <span id="GL_TEXTURE_GEN_Q"></span><span id="gl_texture_gen_q"></span><dl> <dt>**GL \_ TEXTURE \_ GEN \_ Q**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
+| <span id="GL_TEXTURE_GEN_R"></span><span id="gl_texture_gen_r"></span><dl> <dt>**GL \_ TEXTURE \_ GEN \_ R**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
+| <span id="GL_TEXTURE_GEN_S"></span><span id="gl_texture_gen_s"></span><dl> <dt>**GL \_ TEXTURE \_ GEN \_ S**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
+| <span id="GL_TEXTURE_GEN_T"></span><span id="gl_texture_gen_t"></span><dl> <dt>**GL \_ TEXTURE \_ GEN \_ T**</dt> </dl>                                 | Consulte [ **glTexGen**](gltexgen-functions.md)<br/>                                                                                               |
+| <span id="GL_VERTEX_ARRAY"></span><span id="gl_vertex_array"></span><dl> <dt>**MATRIZ \_ DE VÉRTICE \_ GL**</dt> </dl>                                     | Consulte [ **glVertexPointer**](glvertexpointer.md)<br/>                                                                                           |
 
 
 
@@ -111,20 +111,20 @@ Uma constante simbólica que indica um recurso OpenGL. Os seguintes recursos sã
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | *Cap* não era um valor aceito.<br/>                                                                                           |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *cap* não era um valor aceito.<br/>                                                                                           |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **gllsEnabled** retornará GL \_ verdadeiro se *Cap* for um recurso habilitado e retornará GL \_ false caso contrário.
+A **função gllsEnabled** retornará GL TRUE se cap for uma funcionalidade habilitada e retornar GL FALSE caso \_  \_ contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -134,8 +134,8 @@ A função **gllsEnabled** retornará GL \_ verdadeiro se *Cap* for um recurso h
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

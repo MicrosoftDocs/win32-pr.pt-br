@@ -1,9 +1,9 @@
 ---
-title: função gluNurbsSurface (Glu. h)
-description: A função gluNurbsSurface define a forma de uma superfície B-spline racional não uniforme (NURBS).
+title: Função gluNfaceSurface (Glu.h)
+description: A função gluNfacesurface define a forma de uma superfície N GLUS (Racional B-Spline) não uniforme.
 ms.assetid: ee86376c-26ba-49a9-b0b0-4ca936b6614b
 keywords:
-- função gluNurbsSurface OpenGL
+- Função gluNfaceSurface OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c784741eded406a49bba90f67544a406ab024a6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50f56232ac891cbdfba18195741d875ecc5436112772ed4fa665903374e96602
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554186"
 ---
-# <a name="glunurbssurface-function"></a>função gluNurbsSurface
+# <a name="glunurbssurface-function"></a>Função gluNagisSurface
 
-A função **gluNurbsSurface** define a forma de uma superfície B-spline racional não uniforme ([NURBS](using-nurbs-curves-and-surfaces.md)).
+A **função gluNface define** a forma de uma superfície N [LTDS](using-nurbs-curves-and-surfaces.md)(Não Uniforme Racional B-Spline).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,77 +53,77 @@ void WINAPI gluNurbsSurface(
 *nobj* 
 </dt> <dd>
 
-O objeto NURBS (criado com [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+O objeto N LTDA (criado com [**gluNewNheisRenderer**](glunewnurbsrenderer.md)).
 
 </dd> <dt>
 
-*contagem de sknot \_* 
+*sknot \_ count* 
 </dt> <dd>
 
-O número de nós na direção de *u* paramétrica.
+O número de reações na direção do *u* paramétrico.
 
 </dd> <dt>
 
 *sknot* 
 </dt> <dd>
 
-Uma matriz de *\_ contagem de sknot* nondecreasing valores de nó na direção de *u* paramétrica.
+Uma matriz de valores de valores indesequente de contagem de *sknot \_* na direção do *u* paramétrico.
 
 </dd> <dt>
 
-*contagem de tknot \_* 
+*tknot \_ count* 
 </dt> <dd>
 
-O número de nós na direção de paramétrica *v* .
+O número de reações na direção v *paramétrica.*
 
 </dd> <dt>
 
 *tknot* 
 </dt> <dd>
 
-Uma matriz de *\_ contagem de tknot* nondecreasing valores de nó na direção de paramétrica *v* .
+Uma matriz de *tknot count nãondecreasing \_* values in the parametric *v* direction.
 
 </dd> <dt>
 
-*\_distância s* 
+*s \_ stride* 
 </dt> <dd>
 
-O deslocamento (como um número de valores de ponto de precisionfloating único) entre pontos de controle sucessivos na direção de paramétrica *u* em *ctlarray*.
+O deslocamento (como um número de valores de ponto de precisão único) entre pontos de controle sucessivos na direção *u* paramétrica em *ctlarray*.
 
 </dd> <dt>
 
-*t \_ Stride* 
+*t \_ stride* 
 </dt> <dd>
 
-O deslocamento (em valores de ponto de precisionfloating único) entre pontos de controle sucessivos na direção de paramétrica *v* em *ctlarray*.
+O deslocamento (em valores de ponto de precisão simples) entre pontos de controle sucessivos na direção *v* paramétrica em *ctlarray*.
 
 </dd> <dt>
 
 *ctlarray* 
 </dt> <dd>
 
-Uma matriz que contém pontos de controle para a superfície NURBS. Os deslocamentos entre pontos de controle sucessivos nas direções paramétrica *u* e *v* são fornecidos por *s \_ Stride* e *t \_ Stride*.
+Uma matriz que contém pontos de controle para a superfície NALTERS. Os deslocamentos entre pontos de controle sucessivos nas direções *paramétricas u* e *v* são determinados *por \_ estridente* *e t \_ stride.*
 
 </dd> <dt>
 
 *sorder* 
 </dt> <dd>
 
-A ordem da superfície NURBS na direção de *u* paramétrica. A ordem é mais do que o grau, portanto, uma superfície que é cúbica em *u* tem uma ordem *u* de 4.
+A ordem da superfície N LTDA na direção *do u paramétrico.* A ordem é um a mais do que o grau, portanto, uma superfície cúbica *em u* tem uma *ordem u* de 4.
 
 </dd> <dt>
 
 *torder* 
 </dt> <dd>
 
-A ordem da superfície NURBS na direção *v* paramétrica. A ordem é mais do que o grau, portanto, uma superfície que é cúbica em *v* tem uma ordem *v* de 4.
+A ordem da superfície N LTDA na direção *v* paramétrica. A ordem é um a mais do que o grau, portanto, uma superfície que é cúbica em *v* tem uma *ordem v* de 4.
 
 </dd> <dt>
 
 *tipo* 
 </dt> <dd>
 
-O tipo da superfície. O parâmetro de *tipo* pode ser qualquer um dos tipos de avaliadores bidimensionais válidos (como GL \_ map2 \_ Vertex \_ 3 ou GL \_ map2 \_ Color \_ 4).
+O tipo da superfície. O *parâmetro* type pode ser qualquer um dos tipos de avaliador bidimensionais válidos (como GL \_ MAP2 \_ VERTEX \_ 3 ou GL \_ MAP2 COLOR \_ \_ 4).
 
 </dd> </dl>
 
@@ -133,13 +133,13 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Use **gluNurbsSurface** em uma definição de superfície NURBS para descrever a forma de uma superfície NURBS (antes de qualquer corte). Para marcar o início de uma definição de superfície NURBS, use a função [**gluBeginSurface**](glubeginsurface.md) . Para marcar o final de uma definição de superfície NURBS, use a função [**gluEndSurface**](gluendsurface.md) . Chame **gluNurbsSurface** somente dentro de uma definição de superfície NURBS.
+Use **gluN ltda em uma** definição de superfície NFACES para descrever a forma de uma superfície NFACES (antes de qualquer corte). Para marcar o início de uma definição de superfície NFACES, use a [**função gluBeginSurface.**](glubeginsurface.md) Para marcar o final de uma definição de superfície NFACES, use a [**função gluEndSurface.**](gluendsurface.md) Chame **gluNfaceSurface somente em** uma definição de superfície NFACES.
 
-Você associa as coordenadas posicionais, de textura e de cores a uma superfície, apresentando cada uma como um **gluNurbsSurface** separado entre um par **gluBeginSurface** / **gluEndSurface** . Em um único par **gluBeginSurface** / **gluEndSurface** , você pode fazer apenas uma chamada para **gluNurbsSurface** para cor, posição e dados de textura. Faça exatamente uma chamada para descrever a posição da superfície (um *tipo* de GL \_ map2 \_ Vertex \_ 3 ou GL \_ map2 \_ Vertex \_ 4).
+Você associa coordenadas posicionais, de textura e de cores a uma superfície apresentando cada uma delas como um **gluNface separado** entre um par **gluBeginSurface** / **gluEndSurface.** Dentro de um único **par gluBeginSurface** gluEndSurface, você pode fazer apenas uma chamada a /  **gluNagisSurface** para dados de cor, posição e textura. Faça exatamente uma chamada para descrever *a* posição da superfície (um tipo de GL \_ MAP2 \_ VERTEX 3 ou \_ GL \_ MAP2 \_ VERTEX \_ 4).
 
-Você pode cortar uma superfície NURBS usando as funções [**gluNurbsCurve**](glunurbscurve.md) e [**gluPwlCurve**](glupwlcurve.md) entre chamadas para [**gluBeginTrim**](glubegintrim.md) e [**gluEndTrim**](gluendtrim.md).
+Você pode cortar uma superfície NRANDOS usando as funções [**gluNrecidasCurve**](glunurbscurve.md) e [**gluPwlCurve**](glupwlcurve.md) entre chamadas [**para gluBeginTrim**](glubegintrim.md) e [**gluEndTrim**](gluendtrim.md).
 
-Um **gluNurbsSurface** com os nós de *\_ contagem sknot* nos nós de *\_ contagem* *u* e tknot na direção *v* com Orders *sorder* e *torder* deve ter os pontos de controle (sknot *\_ Count*  - *sorder*) multipied por (tknot *\_ Count*  - *torder*).
+Um **gluNilasSurface** com *sknot \_* count  nos pontos de controle (  tknot  count torder ) deve ter (*sknot \_ count* *\_*   - *sorder*) multipied by (*tknot \_ count*  - *torder*).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -149,8 +149,8 @@ Um **gluNurbsSurface** com os nós de *\_ contagem sknot* nos nós de *\_ contag
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>GLU. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -171,10 +171,10 @@ Um **gluNurbsSurface** com os nós de *\_ contagem sknot* nos nós de *\_ contag
 [**gluEndTrim**](gluendtrim.md)
 </dt> <dt>
 
-[**gluNewNurbsRenderer**](glunewnurbsrenderer.md)
+[**gluNewNagisRenderer**](glunewnurbsrenderer.md)
 </dt> <dt>
 
-[**gluNurbsCurve**](glunurbscurve.md)
+[**gluNagisCurve**](glunurbscurve.md)
 </dt> <dt>
 
 [**gluPwlCurve**](glupwlcurve.md)

@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 61a36e46d554a953ecd061ccf2396d33b0578d8f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a416770a0ea3a4d317a2308fc9f5c9d940e89900aabbc7651ceb93b789454338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105814037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462256"
 ---
 # <a name="basicdeviceadd_connectionstatuschanged-method"></a>BasicDevice. Adicione o \_ método ConnectionStatusChanged
 
@@ -56,13 +56,13 @@ Referência a um token que pode ser usado para cancelar o registro do manipulado
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
-| Código de retorno                                                                          | Description                      |
+| Código de retorno                                                                          | Descrição                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl> | O método foi bem-sucedido.<br/> |
 

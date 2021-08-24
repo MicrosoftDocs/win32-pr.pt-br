@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 08fdf24b2a0b69b7830a683786f18fc5df0805b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82a0825d64bc93601b933a98b3a7e0e3f321954d2fb2d7aa285d8d08a315545c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119336016"
 ---
 # <a name="itabletcursorgetbuttoncount-method"></a>Método ITabletCursor:: GetButtonCount
 
@@ -47,7 +47,7 @@ A contagem de botões na caneta digitalizadora.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -68,7 +68,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

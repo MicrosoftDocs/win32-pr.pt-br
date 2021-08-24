@@ -1,19 +1,19 @@
 ---
-title: Usando o log de eventos do Windows
-description: Esta seção contém os detalhes sobre como usar a API do log de eventos do Windows para gravar um manifesto de instrumentação, gravar o provedor que fornece os eventos definidos no manifesto e consumir os eventos que são registrados.
+title: usando Windows Log de eventos
+description: esta seção contém os detalhes sobre como usar a API de Log de eventos Windows para gravar um manifesto de instrumentação, gravar o provedor que fornece os eventos definidos no manifesto e consumir os eventos que são registrados.
 ms.assetid: c2855190-584b-406d-acff-5ffbf10dbb5e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8aca9896eabf1f785cef590993a0e6184f70c39
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f87c8d0b4dbe851562b0b298cac55b051397b42e6710c536c900c9755fd6e512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119510826"
 ---
-# <a name="using-windows-event-log"></a>Usando o log de eventos do Windows
+# <a name="using-windows-event-log"></a>usando Windows Log de eventos
 
-Esta seção contém os detalhes sobre como usar a API do log de eventos do Windows para gravar um manifesto de instrumentação, gravar o provedor que fornece os eventos definidos no manifesto e consumir os eventos que são registrados.
+esta seção contém os detalhes sobre como usar a API de Log de eventos Windows para gravar um manifesto de instrumentação, gravar o provedor que fornece os eventos definidos no manifesto e consumir os eventos que são registrados.
 
 Para obter detalhes, consulte os seguintes tópicos:
 
@@ -28,6 +28,6 @@ Para obter detalhes, consulte os seguintes tópicos:
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Como habilitar o rastreamento de WPP por meio do serviço log de eventos do Windows?](/windows-hardware/drivers/devtest/enabling-wpp-tracing-through-windows-event-log)
+[como habilitar o rastreamento de WPP por meio do serviço Log de eventos Windows?](/windows-hardware/drivers/devtest/enabling-wpp-tracing-through-windows-event-log)
 
-[Referência do log de eventos do Windows](windows-event-log-reference.md)
+[Windows Referência do log de eventos](windows-event-log-reference.md)
