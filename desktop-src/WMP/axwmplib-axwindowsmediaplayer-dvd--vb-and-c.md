@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. DVD
 description: A propriedade DVD Obtém uma interface IWMPDVD que fornece propriedades e métodos para trabalhar com DVDs.
 ms.assetid: a1cafa04-33b6-42ff-86db-3ffc7f056907
 keywords:
-- Propriedade de DVD Windows Media Player
-- Propriedade DVD Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade DVD
+- Windows Media Player de propriedade de DVD
+- propriedade de dvd Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade dvd
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63671e8658ecaf81db9ade5ce6efdbcfcb3e1734
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65b956cdd96f20ee2981e53e4dd598ed20a2858aefadac2ade5a8b4f0cd7baeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864676"
 ---
 # <a name="axwindowsmediaplayerdvd-property"></a>Propriedade AxWindowsMediaPlayer. DVD
 

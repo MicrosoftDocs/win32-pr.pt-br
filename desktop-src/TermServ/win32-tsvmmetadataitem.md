@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSVmMetadataItem
-description: Representa um item de metadados para uma máquina virtual Área de Trabalho Remota.
+title: Win32_TSVmMetadataItem classe
+description: Representa um item de metadados para uma Área de Trabalho Remota virtual.
 ms.assetid: d2678eb0-8634-450c-b73f-611b6f68d556
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSVmMetadataItem Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSVmMetadataItem classe, descrita
+- Win32_TSVmMetadataItem classe Serviços de Área de Trabalho Remota
+- Win32_TSVmMetadataItem classe Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 872cec5bf3ff0e7b45ab07cb41b6227bcfb8636d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e6e894313f5abed1dc6d9ff2022ceb65b4741d2d4c4f2a2187a7cd1616a88971
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768976"
 ---
-# <a name="win32_tsvmmetadataitem-class"></a>\_Classe Win32 TSVmMetadataItem
+# <a name="win32_tsvmmetadataitem-class"></a>Classe Win32 \_ TSVmMetadataItem
 
-Representa um item de metadados para uma máquina virtual Área de Trabalho Remota.
+Representa um item de metadados para uma Área de Trabalho Remota virtual.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -56,13 +56,13 @@ class Win32_TSVmMetadataItem : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSVmMetadataItem** tem estes tipos de membros:
+A **classe Win32 \_ TSVmMetadataItem** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSVmMetadataItem** tem essas propriedades.
+A **classe \_ Win32 TSVmMetadataItem** tem essas propriedades.
 
 <dl> <dt>
 
@@ -75,12 +75,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição (cadeia de caracteres de uma linha) do objeto.
+Descrição curta (cadeia de caracteres de uma linha) do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -95,25 +95,25 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 ")
+Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 A data em que o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -128,11 +128,11 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Seção de seções**
+**SectionId**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
@@ -144,7 +144,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Especifica a seção dentro dos metadados onde esse item reside.
+Especifica a seção dentro dos metadados em que este item reside.
 
 <dt>
 
@@ -158,7 +158,7 @@ Seção de configuração.
 1
 </dt> <dd>
 
-Seção de configurações de esclarecimento.
+Seção configurações de esclarecimento.
 
 </dd> </dl>
 
@@ -173,12 +173,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -246,7 +246,7 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O valor da propriedade.
@@ -277,8 +277,8 @@ O nome da máquina virtual.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                             |
-| Namespace<br/>                | \\TerminalServices da cimv2 raiz \\<br/>                                                   |
-| MOF<br/>                      | <dl> <dt>TSVmHost. mof</dt> </dl>    |
+| Namespace<br/>                | Raiz \\ CIMV2 \\ TerminalServices<br/>                                                   |
+| MOF<br/>                      | <dl> <dt>TSVmHost.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TSVmHostWmi.dll</dt> </dl> |
 
 

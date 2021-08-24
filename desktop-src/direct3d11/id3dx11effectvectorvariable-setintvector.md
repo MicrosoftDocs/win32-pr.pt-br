@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVectorVariable SetIntVector (D3dx11effect. h)
-description: Defina um vetor de quatro componentes que contém dados inteiros.
+title: Método SetIntVector ID3DX11EffectVectorVariable (D3dx11effect.h)
+description: Definir um vetor de quatro componentes que contém dados inteiros.
 ms.assetid: d0546da4-c3b4-4e97-9aa9-d3b7022e22c5
 keywords:
 - Método SetIntVector Direct3D 11
-- Método SetIntVector Direct3D 11, interface ID3DX11EffectVectorVariable
-- Interface ID3DX11EffectVectorVariable Direct3D 11, método SetIntVector
+- Método SetIntVector Direct3D 11 , interface ID3DX11EffectVectorVariable
+- ID3DX11EffectVectorVariable interface Direct3D 11 , método SetIntVector
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea6141185459dbe7aad494312210b4517fe4f4f6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e9c388ec72beb4ce9be7356c3b1485d58e6dca0508b84a5dd5ff3566850c4ab0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791806"
 ---
-# <a name="id3dx11effectvectorvariablesetintvector-method"></a>Método ID3DX11EffectVectorVariable:: SetIntVector
+# <a name="id3dx11effectvectorvariablesetintvector-method"></a>Método ID3DX11EffectVectorVariable::SetIntVector
 
-Defina um vetor de quatro componentes que contém dados inteiros.
+Definir um vetor de quatro componentes que contém dados inteiros.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ HRESULT SetIntVector(
 
 <dl> <dt>
 
-*pData* 
+*Pdata* 
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)\***
@@ -52,16 +52,16 @@ Um ponteiro para o primeiro componente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

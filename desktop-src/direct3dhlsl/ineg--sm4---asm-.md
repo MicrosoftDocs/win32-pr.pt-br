@@ -4,12 +4,12 @@ description: complemento de 2.
 ms.assetid: 20C1EEC8-E349-4398-8EE3-EDD01EBCD4B1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4da3e0cbb08bee7bd732a4da8175705d1e1a0f
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 9c9994d9b21cc7d851c243294eb43e00e84024057f66da59f7ac96e961a30217
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788866"
 ---
 # <a name="ineg-sm4---asm"></a>ineg (sm4-ASM)
 

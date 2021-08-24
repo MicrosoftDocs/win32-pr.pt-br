@@ -1,5 +1,5 @@
 ---
-description: A \_ classe WMI de associação SystemDriverPNPEntity do Win32 relaciona um dispositivo Plug and Play no sistema de computador que executa o Windows e o driver que dá suporte ao dispositivo Plug and Play.
+description: a \_ classe WMI de associação SystemDriverPNPEntity do Win32 relaciona um dispositivo Plug and Play no sistema de computador que executa o Windows e o driver que dá suporte ao dispositivo Plug and Play.
 ms.assetid: 2696c8e5-3bc3-42e3-807b-a387607c7c09
 ms.tgt_platform: multiple
 title: Classe Win32_SystemDriverPNPEntity
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8b5a7eedfbd7a545e37cb9cda38c19cf61308761
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e4b0de9559d223db4c398387ca846be39b17566b3267c76399bdf4381cdd14e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751106"
 ---
 # <a name="win32_systemdriverpnpentity-class"></a>\_Classe Win32 SystemDriverPNPEntity
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de associação **\_ SystemDriverPNPEntity do Win32** relaciona um dispositivo Plug and Play no sistema de computador que executa o Windows e o driver que dá suporte ao dispositivo Plug and Play.
+a [classe WMI](../wmisdk/retrieving-a-class.md) de associação **\_ SystemDriverPNPEntity do Win32** relaciona um dispositivo Plug and Play no sistema de computador que executa o Windows e o driver que dá suporte ao dispositivo Plug and Play.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 

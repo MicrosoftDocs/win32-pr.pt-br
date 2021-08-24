@@ -1,12 +1,12 @@
 ---
-title: Método setint32property da classe Win32_RDMSDeploymentSettings
+title: Método SetInt32Property da classe Win32_RDMSDeploymentSettings
 description: Atualiza uma propriedade de inteiro para as configurações de implantação de uma coleção de área de trabalho virtual.
 ms.assetid: c5e6dbd5-7db7-4409-bf53-c2680e4a5319
 ms.tgt_platform: multiple
 keywords:
-- Método setint32property Serviços de Área de Trabalho Remota
-- Método setint32property Serviços de Área de Trabalho Remota, classe Win32_RDMSDeploymentSettings
-- Classe Win32_RDMSDeploymentSettings Serviços de Área de Trabalho Remota, método setint32property
+- Método SetInt32Property Serviços de Área de Trabalho Remota
+- Método SetInt32Property Serviços de Área de Trabalho Remota , Win32_RDMSDeploymentSettings classe
+- Win32_RDMSDeploymentSettings classe Serviços de Área de Trabalho Remota , método SetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fecdc42031514d5219fc03172b951602ad021ba
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73fa8f9ad7560e4d0eeeb8708feb547da00a8e9804e242ceb94666da211b03a5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761931"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865376"
 ---
-# <a name="setint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método setint32property da classe Win32 \_ RDMSDeploymentSettings
+# <a name="setint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método SetInt32Property da classe Win32 \_ RDMSDeploymentSettings
 
 Atualiza uma propriedade de inteiro para as configurações de implantação de uma coleção de área de trabalho virtual.
 
@@ -44,14 +44,14 @@ uint32 SetInt32Property(
 
 <dl> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
-O alias para a coleção de áreas de trabalho virtuais.
+O alias da coleção de área de trabalho virtual.
 
 </dd> <dt>
 
-*Valor* \[ do no\]
+*Valor* \[ Em\]
 </dt> <dd>
 
 O novo valor da propriedade.
@@ -66,8 +66,8 @@ O novo valor da propriedade.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -76,7 +76,7 @@ O novo valor da propriedade.
 
 <dl> <dt>
 
-[**\_RDMSDeploymentSettings Win32**](win32-rdmsdeploymentsettings.md)
+[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

@@ -3,19 +3,19 @@ title: Arquivos de arte (móvel)
 description: Arquivos de arte (móvel)
 ms.assetid: 90393c3c-7952-4f77-96f6-0a0541bded9e
 keywords:
-- Capas móveis do Windows Media Player, arquivos de arte
+- Windows Media Player Capas móveis, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, sobre
-- arquivos de arte para capas, Windows Media Player Mobile
+- arquivos de arte para capas, Windows Media Player dispositivos móveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b84ad1e78a18b84e8836e3a1c3324702945a7fd9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 9c88dbe11b93314274df2efe6ce1ecc12803963b265b459d7766313c6dc7b902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104163569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864993"
 ---
 # <a name="art-files-mobile"></a>Arquivos de arte (móvel)
 

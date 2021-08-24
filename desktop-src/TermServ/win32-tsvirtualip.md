@@ -33,12 +33,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f87db04d61dda0c6034b536544362ec09e0aaa66
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28830e44fd54e9246cb0affc5fdde1427673d92e843adfd3e1e19cd221af370e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769046"
 ---
 # <a name="win32_tsvirtualip-class"></a>\_Classe Win32 TSVirtualIP
 
@@ -93,7 +93,7 @@ A classe **Win32 \_ TSVirtualIP** tem esses métodos.
 | [**Setprogramlist**](setprogramlist-win32-tsvirtualip.md)                                               | Substitui a lista de programas que usam a virtualização de IP.<br/>                                                                                                       |
 | [**SetVirtualIPActive**](setvirtualipactive-win32-tsvirtualip.md)                                       | Define o valor da propriedade **VirtualIPActive** .<br/>                                                                                                                      |
 | [**SetVirtualIPMode**](setvirtualipmode-win32-tsvirtualip.md)                                           | Define o valor da propriedade **VirtualIPMode** .<br/>                                                                                                                        |
-| [**SetVirtualizeLoopbackAddressesEnabled**](setvirtualizeloopbackaddressesenabled-win32-tsvirtualip.md) | Define o valor da propriedade **VirtualizeLoopbackAddressesEnabled** .<br/> **Windows Server 2008 R2:** Esse método não está disponível antes do Windows Server 2012.<br/> |
+| [**SetVirtualizeLoopbackAddressesEnabled**](setvirtualizeloopbackaddressesenabled-win32-tsvirtualip.md) | Define o valor da propriedade **VirtualizeLoopbackAddressesEnabled** .<br/> **Windows Server 2008 R2:** Esse método não está disponível antes de Windows Server 2012.<br/> |
 
 
 
@@ -516,7 +516,7 @@ Tipo de acesso: Somente leitura
 
 Especifica se a virtualização de endereço de loopback está habilitada.
 
-**Windows Server 2008 R2:** Essa propriedade não está disponível antes do Windows Server 2012.
+**Windows Server 2008 R2:** Essa propriedade não está disponível antes de Windows Server 2012.
 
 <dt>
 
@@ -546,7 +546,7 @@ habilitado
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

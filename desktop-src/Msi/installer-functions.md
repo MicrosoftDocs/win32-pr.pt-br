@@ -1,19 +1,19 @@
 ---
-description: As seções a seguir descrevem as chamadas de função para Windows Installer API.
+description: as seções a seguir descrevem as chamadas de função para Windows Installer API.
 ms.assetid: 0a63b8bd-fa79-495e-9db8-e4cd450ea4d8
 title: Funções do instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c0a23593634261a25184f44e1e7191342ce4ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c915fdb5fe3edfacc87f876f63fa06fbfd8c2f0bdcbef5a7bb50cec7908f1331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787166"
 ---
 # <a name="installer-functions"></a>Funções do instalador
 
-As seções a seguir descrevem as chamadas de função para Windows Installer API.
+as seções a seguir descrevem as chamadas de função para Windows Installer API.
 
 [Sobre as funções do instalador](about-installer-functions.md)
 

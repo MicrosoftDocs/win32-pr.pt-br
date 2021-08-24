@@ -35,12 +35,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e780cdedee0fe447499bed5013dadc2ba9b448b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5139b53917f3d54b95fd153ac39fab176f047ba4bb9ec6df5d1c7c9b6e2d2f49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769146"
 ---
 # <a name="win32_tssessionsetting-class"></a>\_Classe Win32 TSSessionSetting
 
@@ -373,13 +373,13 @@ Padrão
 **PolicySourceDisconnectedSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **DisconnectedSessionLimit** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade DisconnectedSessionLimit** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -409,13 +409,13 @@ Padrão
 **PolicySourceIdleSessionLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **IdleSessionLimit** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade IdleSessionLimit** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -445,13 +445,13 @@ Padrão
 **PolicySourceReconnectionPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **ReconnectPolicy** é configurada pelo servidor, pela política de grupo ou por padrão.
+Indica se a **propriedade ReconnectPolicy** está configurada pelo servidor, pela política de grupo ou por padrão.
 
 <dt>
 
@@ -481,10 +481,10 @@ Padrão
 **ReconnectionPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Especifica se um usuário deve usar o cliente anterior para se reconectar a uma sessão desconectada.
@@ -524,12 +524,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -591,7 +591,7 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 
 </dd> <dt>
 
-**Terminalname**
+**TerminalName**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -602,17 +602,17 @@ Tipo de acesso: Somente leitura
 
 O nome do terminal.
 
-Esta propriedade é herdada do [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Essa propriedade é herdada de [**\_ TerminalSetting do Win32.**](win32-terminalsetting.md)
 
 </dd> <dt>
 
 **TimeLimitPolicy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 A política que o servidor usa para determinar os limites de tempo para sessões de usuário.
@@ -621,7 +621,7 @@ A política que o servidor usa para determinar os limites de tempo para sessões
 
 <span id="Per_User"></span><span id="per_user"></span><span id="PER_USER"></span>
 
-<span id="Per_User"></span><span id="per_user"></span><span id="PER_USER"></span>**Por usuário** (0)
+<span id="Per_User"></span><span id="per_user"></span><span id="PER_USER"></span>**Por Usuário** (0)
 
 
 </dt> <dd>
@@ -637,7 +637,7 @@ As configurações de política de limites de tempo do usuário estão em vigor.
 
 </dt> <dd>
 
-As configurações de política de limites de tempo do usuário são substituídas pelo servidor.
+As configurações de política de limites de tempo do usuário são substituídos pelo servidor.
 
 </dd> </dl>
 
@@ -645,9 +645,9 @@ As configurações de política de limites de tempo do usuário são substituíd
 
 ## <a name="remarks"></a>Comentários
 
-Lembre-se de que o WinStations associado à sessão de console não pode acessar os métodos e as propriedades dessa classe. Se for feita uma tentativa de fazer isso especificando "console" como o valor da propriedade Terminalname, os métodos desse objeto retornarão o **WBEM \_ E não \_ terão \_ suporte**. Esse código de erro também será retornado se uma estação de janela tentar chamar métodos desse objeto com a finalidade de adicionar ou modificar as propriedades de segurança das contas LocalSystem, LocalService ou NetworkService.
+Esteja ciente de que as winstations associadas à sessão de console não podem acessar os métodos e as propriedades dessa classe. Se for feita uma tentativa de fazer isso especificando "Console" como o valor da propriedade TerminalName, os métodos desse objeto retornarão **WBEM \_ E \_ NOT \_ SUPPORTED**. Esse código de erro também será retornado se uma estação de janela tentar chamar métodos desse objeto com a finalidade de adicionar ou modificar as propriedades de segurança das contas LocalSystem, LocalService ou NetworkService.
 
-Para se conectar ao namespace " \\ \\ terminal cimv2" raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, isso seria um nível de autenticação de **privacidade do PCT no nível do RPC \_ C \_ Authn \_ \_ \_**. Para chamadas de script e de Visual Basic, isso seria um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de 6. O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao namespace "Raiz \\ CIMV2 \\ TerminalServices", o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse seria um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Para Visual Basic e chamadas de script, esse seria um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -658,7 +658,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -668,8 +668,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -678,10 +678,10 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TerminalSetting Win32**](win32-terminalsetting.md)
+[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
 </dt> <dt>
 
-[**Configuração de CIM \_**](/windows/desktop/CIMWin32Prov/cim-setting)
+[**Configuração cim \_**](/windows/desktop/CIMWin32Prov/cim-setting)
 </dt> </dl>
 
  

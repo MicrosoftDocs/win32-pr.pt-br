@@ -1,29 +1,29 @@
 ---
 title: CustomHeaderExample
-description: Este exemplo mostra como adicionar e recuperar um cabeçalho personalizado.
+description: Este exemplo mostra como adicionar e recuperar um header personalizado.
 ms.assetid: 9c0cabee-4645-4b2d-a132-4494911f05b3
 keywords:
-- CustomHeaderExample Web Services para Windows
+- Serviços Web CustomHeaderExample para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b29c86dc8f88c8058ea9edf4e4d49adec9fad5cd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0d512f594104a25061452c59c622cc341509eac2a5e677f1b6754f5cebb4c0b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105772720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805686"
 ---
 # <a name="customheaderexample"></a>CustomHeaderExample
 
-Este exemplo mostra como adicionar e recuperar um cabeçalho personalizado.
+Este exemplo mostra como adicionar e recuperar um header personalizado.
 
--   [CustomHeader. cpp](#customheadercpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [CustomHeader.cpp](#customheadercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="customheadercpp"></a>CustomHeader. cpp
+## <a name="customheadercpp"></a>CustomHeader.cpp
 
 
 ```C++
@@ -192,7 +192,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -331,9 +331,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 204773e51f76355eaf446a27936fbbe4d8f42ff1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f08c3fc5f6debee201c7fa4ecbdd37c29a876a446194a375ce19aee701db860a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724166"
 ---
 # <a name="esentindextuplestextbinarycolumnsonlyexception-constructor"></a>Construtor EsentIndexTuplesTextBinaryColumnsOnlyException
 
 Inicializa uma nova instância da classe EsentIndexTuplesTextBinaryColumnsOnlyException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentIndexTuplesTextBinaryColumnsOnlyException()
 
 [Classe EsentIndexTuplesTextBinaryColumnsOnlyException](./esentindextuplestextbinarycolumnsonlyexception-class.md)
 
-[Membros do EsentIndexTuplesTextBinaryColumnsOnlyException](./esentindextuplestextbinarycolumnsonlyexception-members.md)
+[Membros EsentIndexTuplesTextBinaryColumnsOnlyException](./esentindextuplestextbinarycolumnsonlyexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

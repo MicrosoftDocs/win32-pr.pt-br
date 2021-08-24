@@ -1,24 +1,24 @@
 ---
-title: Estruturas DNS
-description: Página de navegação de estruturas do DNS (Sistema de Nomes de Domínio).
+title: Estruturas de DNS
+description: Página de navegação de estruturas DNS (sistema de nomes de domínio).
 ms.assetid: 636399be-43a5-4ddf-b652-f8efb81fbf42
 keywords:
 - Estruturas do sistema de nomes de domínio
-- Estruturas DNS
-- Sistema de Nomes de Domínio, referência, estruturas
+- Estruturas de DNS
+- Sistema de nomes de domínio, referência, estruturas
 ms.topic: article
 ms.date: 04/19/2019
 ms.custom: 19H1
-ms.openlocfilehash: da0e83639eaa92e84dd076e797431d5f7138245c
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 223e5985b7282efd3349cd412279510f476315fb078ea459e524e80d703474ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825316"
 ---
-# <a name="dns-structures"></a>Estruturas DNS
+# <a name="dns-structures"></a>Estruturas de DNS
 
-As seguintes estruturas são definidas para uso com DNS:
+As seguintes estruturas são definidas para uso com o DNS:
 
 - [**DNS_ADDR**](/windows/win32/api/windns/ns-windns-dns_addr)
 - [**DNS_ADDR_ARRAY**](/windows/win32/api/windns/ns-windns-dns_addr_array)
@@ -28,7 +28,7 @@ As seguintes estruturas são definidas para uso com DNS:
 - [**DNS_PROXY_INFORMATION**](/windows/desktop/api/Windns/ns-windns-dns_proxy_information)
 - [**DNS_QUERY_REQUEST**](/windows/desktop/api/Windns/ns-windns-dns_query_request)
 - [**DNS_QUERY_REQUEST3**](/windows/desktop/api/Windns/ns-windns-dns_query_request3)
-- [**Dns_record**](/windows/win32/api/windns/ns-windns-dns_recorda)
+- [**DNS_RECORD**](/windows/win32/api/windns/ns-windns-dns_recorda)
 - [**DNS_RECORD_FLAGS**](/windows/win32/api/windns/ns-windns-dns_record_flags)
 - [**DNS_SERVICE_BROWSE_REQUEST**](/windows/desktop/api/Windns/ns-windns-dns_service_browse_request)
 - [**DNS_SERVICE_CANCEL**](/windows/desktop/api/Windns/ns-windns-dns_service_cancel)
@@ -40,7 +40,7 @@ As seguintes estruturas são definidas para uso com DNS:
 - [**MDNS_QUERY_HANDLE**](/windows/desktop/api/Windns/ns-windns-mdns_query_handle)
 - [**MDNS_QUERY_REQUEST**](/windows/desktop/api/Windns/ns-windns-mdns_query_request)
 
-As seguintes estruturas de RR (Registro de Recurso) também estão incluídas na API DNS. Essas estruturas são usadas com a **estrutura DNS_RECORD** para gerenciar programaticamente os registros de recursos DNS.
+As estruturas RR (registro de recurso) a seguir também estão incluídas na API do DNS. Essas estruturas são usadas com a estrutura de **DNS_RECORD** para gerenciar programaticamente os registros de recursos DNS.
 
 - [**DNS_A_DATA**](/windows/win32/api/windns/ns-windns-dns_a_data)
 - [**DNS_AAAA_DATA**](/windows/win32/api/windns/ns-windns-dns_aaaa_data)

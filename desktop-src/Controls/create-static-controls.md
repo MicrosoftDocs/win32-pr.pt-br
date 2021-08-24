@@ -4,12 +4,12 @@ description: O exemplo nesta seção demonstra como criar um controle estático 
 ms.assetid: D2DA38CB-360C-49EC-90BC-9AFA88C4B751
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 217135a6590fcee60286d21f00233916c4eba967
-ms.sourcegitcommit: f0ca63c18dc52c357d3398af7be766d2bdd40be7
+ms.openlocfilehash: 3ef4bdb4cce808ab3f8f8133a731c7f4ef5638bb1fbf9fd45370e4304d0138d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "104453893"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826376"
 ---
 # <a name="how-to-create-static-controls"></a>Como criar controles estáticos
 
@@ -19,12 +19,12 @@ O exemplo nesta seção demonstra como criar um controle estático animado.
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -109,12 +109,12 @@ O identificador do controle de ícone estático ( \_ ícone estático IDI \_ ) �
 [Usando controles estáticos](using-static-controls.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

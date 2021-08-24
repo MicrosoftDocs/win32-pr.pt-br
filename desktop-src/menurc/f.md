@@ -5,30 +5,30 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 1208b41b-2552-4e1b-b220-77bb6468627b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38cf77db021c4e82276ced129ffb109c5c594895
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: e02e9f58f757ea2f93ef83821d9a83fbfa9ecfa218293a6209bb712135364311
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104454538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825986"
 ---
 # <a name="f-menus-and-other-resources"></a>F (menus e outros recursos)
 
-[A](a.md) [B](b.md) [C](c.md) D [E](e.md) F G H [i](i.md) J K L M [N](n.md) [O](o.md) P Q [R](r.md) S [T](t.md) [U](u.md) [V](v.md) [W](w.md) X Y Z
+[A](a.md) [B](b.md) [C](c.md) D [E](e.md) F G H [I](i.md) J K L M [N](n.md) [O](o.md) P Q [R](r.md) S [T](t.md) [U](u.md) [V](v.md) [W](w.md) X Y Z
 
 <dl> <dt>
 
-<span id="tools.f_1_gly"></span><span id="TOOLS.F_1_GLY"></span>**Arquivo não encontrado: nome de arquivo**
+<span id="tools.f_1_gly"></span><span id="TOOLS.F_1_GLY"></span>**Arquivo não encontrado:filename**
 </dt> <dd>
 
-O arquivo especificado no comando RC não foi encontrado. Verifique se o arquivo não foi movido para outro diretório e se o nome de arquivo ou caminho foi digitado corretamente.
+O arquivo especificado no comando RC não foi encontrado. Certifique-se de que o arquivo não foi movido para outro diretório e se o nome do arquivo ou caminho está digitado corretamente.
 
 </dd> <dt>
 
-<span id="tools.f_2_gly"></span><span id="TOOLS.F_2_GLY"></span>**Os nomes das fontes devem ser ordinais**
+<span id="tools.f_2_gly"></span><span id="TOOLS.F_2_GLY"></span>**Os nomes de fonte devem ser ordinais**
 </dt> <dd>
 
-O parâmetro de *pontos* na instrução [**Font**](font-statement.md) deve ser um inteiro, não uma cadeia de caracteres.
+O *parâmetro pointsize* na [**instrução FONT**](font-statement.md) deve ser um inteiro, não uma cadeia de caracteres.
 
 </dd> </dl>
 

@@ -1,19 +1,19 @@
 ---
-description: Ao dividir linhas ou separar o texto, o aplicativo Unicode deve manter caracteres de não espaçamento com seus caracteres de base.
+description: Ao dividir linhas ou separar texto de outra forma, seu aplicativo Unicode deve manter caracteres sem espaçamento com seus caracteres base.
 ms.assetid: 61be3fd8-e753-49e8-8b73-4ce08f6000be
-title: Usando caracteres de não espaçamento e sinais diacríticos
+title: Usando caracteres sem espaçamento e diacríticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f125a58940eba0ecde8864cca6f7c4d24e0381ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02a6becfdf96b3971c1e0e0d78aa6b2a2d05c64a44704ac67382968851bce8b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105779915"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787886"
 ---
-# <a name="using-nonspacing-characters-and-diacritics"></a>Usando caracteres de não espaçamento e sinais diacríticos
+# <a name="using-nonspacing-characters-and-diacritics"></a>Usando caracteres sem espaçamento e diacríticas
 
-Ao dividir linhas ou separar o texto, o aplicativo Unicode deve manter caracteres de não espaçamento com seus caracteres de base. Muitos scripts contêm caracteres que se combinam visualmente com outros caracteres na saída, por exemplo, marcas diacríticos ("destaques flutuantes").
+Ao dividir linhas ou separar texto de outra forma, seu aplicativo Unicode deve manter caracteres sem espaçamento com seus caracteres base. Muitos scripts contêm caracteres que se combinam visualmente com outros caracteres na saída, por exemplo, marcas diacríticas ("acentos flutuantes").
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

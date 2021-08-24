@@ -1,5 +1,5 @@
 ---
-title: Números (multimídia do Windows)
+title: números (Windows multimídia)
 description: Números
 ms.assetid: d416c4c2-a3e1-45a2-9ae1-82050a5e471b
 keywords:
@@ -16,14 +16,14 @@ keywords:
 - controle não assinado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f02c4ffd40f1058fae51af3798135840394be918
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 21c9e1bacdea3f52129d78eea2f0bc7134df08b7077c83510bd8de824777e524
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806616"
 ---
-# <a name="numbers-windows-multimedia"></a>Números (multimídia do Windows)
+# <a name="numbers-windows-multimedia"></a>números (Windows multimídia)
 
 O número de controles permite que o usuário insira dados numéricos associados a uma linha. Os dados numéricos são expressos como inteiros assinados, inteiros não assinados ou valores de número inteiro de decibéis. Esses controles usam as estruturas [**\_ não**](/previous-versions//dd757298(v=vs.85)) [**\_ assinadas MIXERCONTROLDETAILS**](/previous-versions//dd757297(v=vs.85)) e MIXERCONTROLDETAILS para recuperar e definir propriedades de controle. A tabela a seguir descreve os tipos de controles de número.
 

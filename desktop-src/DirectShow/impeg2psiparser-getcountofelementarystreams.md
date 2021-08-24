@@ -1,5 +1,5 @@
 ---
-description: 'Método IMpeg2PsiParser:: GetCountOfElementaryStreams – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
+description: 'método IMpeg2PsiParser:: GetCountOfElementaryStreams – a implementação desse método é fornecida como um código de exemplo com o SDK DirectShow. não é uma API DirectShow com suporte.'
 ms.assetid: 19ef96a8-3d5b-4da1-8cff-d6a271ad4915
 title: 'Método IMpeg2PsiParser:: GetCountOfElementaryStreams'
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: fc81c0a66751751a73a3895fd31fe8651aee8caf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e241697884a4b665c160dc9991e4cb7f02c76f1ba32bc7a0656515faf1117a58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767376"
 ---
 # <a name="impeg2psiparsergetcountofelementarystreams-method"></a>Método IMpeg2PsiParser:: GetCountOfElementaryStreams
 
-A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. não é uma API DirectShow com suporte.
 
 O `GetCountOfElementaryStreams` método recupera o número de fluxos elementares em um programa especificado.
 
@@ -63,7 +63,7 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
 
 
 
@@ -73,7 +73,7 @@ O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não
 
 Use o método **GetRecordProgramNumber** para obter o número do programa.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

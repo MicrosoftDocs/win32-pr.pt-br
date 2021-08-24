@@ -1,7 +1,7 @@
 ---
-description: O método CheckStreaming determina se o PIN pode aceitar amostras.
+description: O método CheckStreaming determina se o pino pode aceitar exemplos.
 ms.assetid: fa063966-4c72-466e-933c-def6a6818621
-title: Método CTransformInputPin. CheckStreaming (Transfrm. h)
+title: Método CTransformInputPin.CheckStreaming (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0e5c49a00054547193e3f492f0731f77af8331a2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c32dce44e48b033e0a76f5bb5af6aff3eb71948d54c73d670c6226571a1c938b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767602"
 ---
-# <a name="ctransforminputpincheckstreaming-method"></a>Método CTransformInputPin. CheckStreaming
+# <a name="ctransforminputpincheckstreaming-method"></a>Método CTransformInputPin.CheckStreaming
 
-O `CheckStreaming` método determina se o PIN pode aceitar amostras.
+O `CheckStreaming` método determina se o pino pode aceitar exemplos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,19 +40,19 @@ HRESULT CheckStreaming();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** listados na tabela a seguir.
+Retorna um dos **valores HRESULT** listados na tabela a seguir.
 
 
 
 | Código de retorno                                                                                           | Descrição                                 |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito.<br/>                         |
-| <dl> <dt>**\_falso**</dt> </dl>               | O PIN está sendo liberado no momento.<br/>       |
-| <dl> <dt>**VFW \_ E \_ não \_ conectado**</dt> </dl> | O pino de saída não está conectado.<br/> |
-| <dl> <dt>**VFW \_ E \_ erro de tempo de execução \_**</dt> </dl> | Ocorreu um erro em tempo de execução.<br/>       |
-| <dl> <dt>**VFW \_ E \_ estado incorreto \_**</dt> </dl>   | O PIN foi interrompido.<br/>              |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>               | O pino está sendo liberado no momento.<br/>       |
+| <dl> <dt>**VFW \_ E \_ NÃO \_ CONECTADO**</dt> </dl> | O pino de saída não está conectado.<br/> |
+| <dl> <dt>**ERRO DE \_ \_ RUNTIME DO VFW E \_**</dt> </dl> | Ocorreu um erro em tempo de run time.<br/>       |
+| <dl> <dt>**VFW \_ E \_ ESTADO \_ ERRADO**</dt> </dl>   | O pino é interrompido.<br/>              |
 
 
 
@@ -60,7 +60,7 @@ Retorna um dos valores **HRESULT** listados na tabela a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CBaseInputPin:: CheckStreaming**](cbaseinputpin-checkstreaming.md) .
+Esse método substitui o [**método CBaseInputPin::CheckStreaming.**](cbaseinputpin-checkstreaming.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ Esse método substitui o método [**CBaseInputPin:: CheckStreaming**](cbaseinput
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

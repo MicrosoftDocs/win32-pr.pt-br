@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ecd05478f67934368aa6d1de84ae32a209ddcad6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fdc944400bc80fbd5228ac06e2ba1c01f7315305071f7a24c0b38eb125ee1399
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767976"
 ---
 # <a name="cpullpinduration-method"></a>Método CPullPin. Duration
 
@@ -49,13 +49,13 @@ Ponteiro para uma variável que recebe a duração, em bytes multiplicado por 10
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-A duração é indeterminada até que o método [**CPullPin:: Connect**](cpullpin-connect.md) seja chamado.
+a duração é indeterminada até que o método [**CPullPin:: Conexão**](cpullpin-connect.md) seja chamado.
 
 ## <a name="requirements"></a>Requisitos
 

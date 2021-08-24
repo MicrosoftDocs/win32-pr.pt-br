@@ -3,7 +3,7 @@ title: Evento PlaylistCollectionPlaylistSetAsDeleted do objeto AxWindowsMediaPla
 description: O evento PlaylistCollectionPlaylistSetAsDeleted é reservado para uso futuro.
 ms.assetid: 6c0a4d2c-e965-4a88-acd4-2a2a12265e36
 keywords:
-- Evento PlaylistCollectionPlaylistSetAsDeleted do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento PlaylistCollectionPlaylistSetAsDeleted do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf432ede40298abed98cdf0c5b02b0a192f7b3a9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b11187ffaf6e16612ba7edb573e0b0bc71e9d2abf44ee509db2404026e3ed570
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864568"
 ---
 # <a name="playlistcollectionplaylistsetasdeleted-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistCollectionPlaylistSetAsDeleted do objeto AxWindowsMediaPlayer
 
@@ -47,8 +47,8 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propriedade         | Descrição                                 |
 |------------------|---------------------------------------------|
-| bstrPlaylistName | **System. String** Sem suporte.<br/>  |
-| varfIsDeleted    | **System. Boolean** Sem suporte.<br/> |
+| bstrPlaylistName | **System.String** Sem suporte.<br/>  |
+| varfIsDeleted    | **System.Boolean** Sem suporte.<br/> |
 
 
 
@@ -64,7 +64,7 @@ Esse evento é reservado para uso futuro.
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

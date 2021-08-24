@@ -28,12 +28,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8d1edbd722e3bf87631371b5650576917a7cfb39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4193f934dd17224091974a705288831e28253876d05ca1b5fc4b99c9c70424e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105767642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790236"
 ---
 # <a name="msvm_basemetricdefinition-class"></a>\_Classe Msvm BaseMetricDefinition
 
@@ -248,18 +248,18 @@ Tipo de dados: **UInt16**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica como os valores de métrica são coletados pela Instrumentação subjacente. Isso permite que o aplicativo cliente escolha a métrica certa para a finalidade. Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**. Isso pode ser **nulo** ou um dos valores a seguir.
+Indica como os valores de métrica são coletados pela Instrumentação subjacente. Isso permite que o aplicativo cliente escolha a métrica certa para a finalidade. Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**. Pode ser **Null** ou um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                                                       | Significado                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt></dt> <dt>0</dt> desconhecido </dl>                                                 | O tipo de coleta não é conhecido.<br/>                                                                                                                                                                                                                               |
-| <span id="OnChange"></span><span id="onchange"></span><span id="ONCHANGE"></span><dl> <dt>**OnChange**</dt> <dt>2</dt> </dl>                                             | Os valores de métrica são atualizados imediatamente quando os valores dentro do recurso medido são alterados.<br/>                                                                                                                                                              |
-| <span id="Periodic"></span><span id="periodic"></span><span id="PERIODIC"></span><dl> <dt>**Atividades periódicas**</dt> <dt>3</dt> </dl>                                             | Os valores de métrica são atualizados periodicamente. Por exemplo, para um aplicativo cliente, um valor de métrica que se aplica à hora atual aparecerá constante durante cada intervalo de coleta e, em seguida, salta para o novo valor no final de cada intervalo de coleta.<br/> |
-| <span id="OnRequest"></span><span id="onrequest"></span><span id="ONREQUEST"></span><dl> <dt>**OnRequest**</dt> <dt>4</dt> </dl>                                         | O valor da métrica é determinado sempre que um aplicativo cliente lê-lo.<br/>                                                                                                                                                                                        |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>5.. 32767</dt> </dl>                  |                                                                                                                                                                                                                                                                           |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> 32768 <dt> **reservado para fornecedor**</dt> <dt>.. 65535</dt> </dl> |                                                                                                                                                                                                                                                                           |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Desconhecido**</dt> <dt>0</dt> </dl>                                                 | O tipo de coleta não é conhecido.<br/>                                                                                                                                                                                                                               |
+| <span id="OnChange"></span><span id="onchange"></span><span id="ONCHANGE"></span><dl> <dt>**OnChange**</dt> <dt>2</dt> </dl>                                             | Os valores de métrica são atualizados imediatamente quando os valores dentro do recurso medido mudam.<br/>                                                                                                                                                              |
+| <span id="Periodic"></span><span id="periodic"></span><span id="PERIODIC"></span><dl> <dt>**Periódico**</dt> <dt>3</dt> </dl>                                             | Os valores de métrica são atualizados periodicamente. Por exemplo, para um aplicativo cliente, um valor de métrica que se aplica à hora atual aparecerá constante durante cada intervalo de coleta e, em seguida, pulará para o novo valor no final de cada intervalo de coleta.<br/> |
+| <span id="OnRequest"></span><span id="onrequest"></span><span id="ONREQUEST"></span><dl> <dt>**OnRequest**</dt> <dt>4</dt> </dl>                                         | O valor da métrica é determinado sempre que um aplicativo cliente o lê.<br/>                                                                                                                                                                                        |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reservado**</dt> <dt>5..32767</dt> </dl>                  |                                                                                                                                                                                                                                                                           |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor Reservado**</dt> <dt>32768..65535</dt> </dl> |                                                                                                                                                                                                                                                                           |
 
 
 
@@ -276,10 +276,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Uma cadeia de caracteres que identifica exclusivamente a definição da métrica. Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**.
+Uma cadeia de caracteres que identifica exclusivamente a definição de métrica. Essa propriedade é herdada **de \_ BASEMetricDefinition do CIM.**
 
 </dd> <dt>
 
@@ -292,23 +292,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Uma cadeia de caracteres que identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma cadeia de caracteres que identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IsContinuous**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o valor da métrica é contínuo ou escalar. As métricas de desempenho são um exemplo de uma métrica contínua. Exemplos de métricas escalares incluem códigos de erro ou Estados operacionais. Métricas contínuas podem ser comparadas usando a relação "maior que". Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**.
+Indica se o valor da métrica é contínuo ou escalar. As métricas de desempenho são um exemplo de uma métrica contínua. Exemplos de métricas escalares incluem códigos de erro ou estados operacionais. As métricas contínuas podem ser comparadas usando a relação "maior que". Essa propriedade é herdada **de \_ BASEMetricDefinition do CIM.**
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da métrica. Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**.
+O nome da métrica. Essa propriedade é herdada **de \_ BASEMetricDefinition do CIM.**
 
 </dd> <dt>
 
@@ -334,31 +334,31 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identifica as unidades específicas de um valor. O valor dessa propriedade será um valor válido do qualificador de unidades programáticas, conforme definido no Apêndice C. 1 de [DSP0004 v 2.4](https://www.dmtf.org/sites/default/files/standards/documents/DSP0004_2.5.0.pdf) ou posterior. Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**.
+Identifica as unidades específicas de um valor. O valor dessa propriedade será um valor legal do qualificador unidades programáticas, conforme definido no Apêndice C.1 [de DSP0004 V2.4](https://www.dmtf.org/sites/default/files/standards/documents/DSP0004_2.5.0.pdf) ou posterior. Essa propriedade é herdada **de \_ BASEMetricDefinition do CIM.**
 
 </dd> <dt>
 
-**Timescope**
+**TimeScope**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o escopo de tempo ao qual o valor de métrica se aplica. Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**.
+Indica o escopo de tempo ao qual o valor da métrica se aplica. Essa propriedade é herdada **de \_ BASEMetricDefinition do CIM.**
 
 
 
 | Valor                                                                                                                                                                                                                                                                       | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt></dt> <dt>0</dt> desconhecido </dl>                                                 | O escopo de tempo não foi qualificado pelo designer de métrica ou é desconhecido para o provedor.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| <span id="Point"></span><span id="point"></span><span id="POINT"></span><dl> <dt>**Ponto**</dt> <dt>2</dt> </dl>                                                         | A métrica se aplica a um ponto no tempo. Nas instâncias [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) correspondentes, a propriedade **timestamp** especifica o ponto no tempo e a propriedade **Duration** é sempre 0.<br/>                                                                                                                                                                                                                                                                                              |
-| <span id="Interval"></span><span id="interval"></span><span id="INTERVAL"></span><dl> <dt>**Intervalo**</dt> <dt>3</dt> </dl>                                             | A métrica se aplica a um intervalo de tempo. Nas instâncias [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) correspondentes, a propriedade **timestamp** especifica o final do intervalo de tempo e a propriedade **Duration** especifica sua duração.<br/>                                                                                                                                                                                                                                                                        |
-| <span id="StartupInterval"></span><span id="startupinterval"></span><span id="STARTUPINTERVAL"></span><dl> <dt>**StartupInterval**</dt> <dt>4</dt> </dl>                 | A métrica se aplica a um intervalo de tempo que começou na inicialização do recurso medido (ou seja, o Managedelement associado por MetricDefForMe). Nas instâncias [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) correspondentes, a propriedade **timestamp** especifica o final do intervalo de tempo. Se a propriedade **Duration** for 0, isso indica que o tempo de inicialização do recurso medido é desconhecido. Caso contrário, **Duration** especificará a duração entre a inicialização do recurso e o **carimbo de data/hora**.<br/> |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>5.. 32767</dt> </dl>                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> 32768 <dt> **reservado para fornecedor**</dt> <dt>.. 65535</dt> </dl> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Desconhecido**</dt> <dt>0</dt> </dl>                                                 | O escopo de tempo não foi qualificado pelo designer de métrica ou é desconhecido para o provedor.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| <span id="Point"></span><span id="point"></span><span id="POINT"></span><dl> <dt>**Ponto**</dt> <dt>2</dt> </dl>                                                         | A métrica se aplica a um ponto no tempo. Nas instâncias [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) correspondentes, a propriedade **TimeStamp** especifica o ponto no tempo e a propriedade **Duration** é sempre 0.<br/>                                                                                                                                                                                                                                                                                              |
+| <span id="Interval"></span><span id="interval"></span><span id="INTERVAL"></span><dl> <dt>**Intervalo**</dt> <dt>3</dt> </dl>                                             | A métrica se aplica a um intervalo de tempo. Nas instâncias [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) correspondentes, a propriedade **TimeStamp** especifica o final do intervalo de tempo e a propriedade **Duration** especifica sua duração.<br/>                                                                                                                                                                                                                                                                        |
+| <span id="StartupInterval"></span><span id="startupinterval"></span><span id="STARTUPINTERVAL"></span><dl> <dt>**StartupInterval**</dt> <dt>4</dt> </dl>                 | A métrica se aplica a um intervalo de tempo que começou na inicialização do recurso medido (ou seja, o ManagedElement associado por MetricDefForMe). Nas instâncias [**Msvm \_ BaseMetricValue**](msvm-basemetricvalue.md) correspondentes, a propriedade **TimeStamp** especifica o final do intervalo de tempo. Se a **propriedade Duration** for 0, isso indicará que o tempo de inicialização do recurso medido é desconhecido. Caso contrário, **Duration** especifica a duração entre a inicialização do recurso e **o TimeStamp.**<br/> |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reservado**</dt> <dt>5..32767</dt> </dl>                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor Reservado**</dt> <dt>32768..65535</dt> </dl> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
 
@@ -375,7 +375,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identifica as unidades específicas de um valor, por exemplo, "megabytes". Essa propriedade é herdada do **CIM \_ BaseMetricDefinition**.
+Identifica as unidades específicas de um valor, por exemplo, "megabytes". Essa propriedade é herdada **de \_ BASEMetricDefinition do CIM.**
 
 </dd> </dl>
 
@@ -385,10 +385,10 @@ Identifica as unidades específicas de um valor, por exemplo, "megabytes". Essa 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceManageability_Provider01_01
-description: A \_ classe MDM DeviceManageability \_ Provider01 \_ 01 é usada para recuperar as informações gerais sobre os recursos de configuração do MDM no dispositivo.
+title: MDM_DeviceManageability_Provider01_01 classe
+description: A classe \_ DeviceManageability Provider01 01 do MDM é usada para recuperar as informações gerais sobre os recursos de configuração \_ \_ de MDM no dispositivo.
 ms.assetid: 080e5cdd-4509-42d6-b5f8-36df6f8d9b45
 keywords:
-- Classe MDM_DeviceManageability_Provider01_01
-- Classe MDM_DeviceManageability_Provider01_01, descrita
+- MDM_DeviceManageability_Provider01_01 classe
+- MDM_DeviceManageability_Provider01_01, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d1ef064bcffd5303a3ef820dc0b463a3b5e622b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e45fa96c71902bae9f6c7a98be8004b6f632fa0dad04952720f9a9c598879a03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825736"
 ---
-# <a name="mdm_devicemanageability_provider01_01-class"></a>\_Classe MDM DeviceManageability \_ Provider01 \_ 01
+# <a name="mdm_devicemanageability_provider01_01-class"></a>Classe MDM \_ DeviceManageability \_ Provider01 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe MDM DeviceManageability \_ Provider01 \_ 01 é usada para recuperar as informações gerais sobre os recursos de configuração do MDM no dispositivo.
+A classe \_ DeviceManageability Provider01 01 do MDM é usada para recuperar as informações gerais sobre os recursos de configuração \_ \_ de MDM no dispositivo.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_DeviceManageability_Provider01_01
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ DeviceManageability \_ Provider01 \_ 01** tem estes tipos de membros:
+A **classe \_ DeviceManageability \_ Provider01 \_ 01 do MDM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ DeviceManageability \_ Provider01 \_ 01** tem essas propriedades.
+A **classe \_ DeviceManageability \_ Provider01 \_ 01 do MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -63,10 +63,10 @@ A classe **MDM \_ DeviceManageability \_ Provider01 \_ 01** tem essas propriedad
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Você deve definir o valor para \_ servidor de ponte WMI \_ . O chamador não pode definir a ID do provedor dinamicamente.
+Você deve definir o valor como Servidor de \_ Ponte WMI. \_ O chamador não pode definir dinamicamente a ID do Provedor.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Você deve definir o valor para \_ servidor de ponte WMI \_ . O chamador não po
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -95,7 +95,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -115,10 +115,10 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

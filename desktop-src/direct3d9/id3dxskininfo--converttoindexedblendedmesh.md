@@ -1,7 +1,7 @@
 ---
-description: Usa uma malha e retorna uma nova malha com pesos de mistura por vértice, índices e uma tabela de combinação de Bone. A tabela descreve quais paletas de Bone afetam quais subconjuntos da malha.
+description: Pega uma malha e retorna uma nova malha com pesos de combinação por vértice, índices e uma tabela de combinação de dois pontos. A tabela descreve quais paletas de malha afetam quais subconjuntos da malha.
 ms.assetid: e4758a3b-8a45-4ed3-aa62-9713d12afc56
-title: 'Método ID3DXSkinInfo:: ConvertToIndexedBlendedMesh (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::ConvertToIndexedBlendedMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 87c8a4b943a647e52d7260f1ff53b32b40756761
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9aa2b4bef607197c0f6fea084054d0e4fed1c721388677d45b465aff9c39ce49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105768210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790446"
 ---
-# <a name="id3dxskininfoconverttoindexedblendedmesh-method"></a>Método ID3DXSkinInfo:: ConvertToIndexedBlendedMesh
+# <a name="id3dxskininfoconverttoindexedblendedmesh-method"></a>Método ID3DXSkinInfo::ConvertToIndexedBlendedMesh
 
-Usa uma malha e retorna uma nova malha com pesos de mistura por vértice, índices e uma tabela de combinação de Bone. A tabela descreve quais paletas de Bone afetam quais subconjuntos da malha.
+Pega uma malha e retorna uma nova malha com pesos de combinação por vértice, índices e uma tabela de combinação de dois pontos. A tabela descreve quais paletas de malha afetam quais subconjuntos da malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ HRESULT ConvertToIndexedBlendedMesh(
 
 <dl> <dt>
 
-*pMesh* \[ no\]
+*pMesh* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
@@ -59,88 +59,88 @@ A malha de entrada. Consulte [**ID3DXMesh**](id3dxmesh.md).
 
 </dd> <dt>
 
-*Opções* \[ do no\]
+*Opções* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Atualmente não utilizado.
+Atualmente não éusado.
 
 </dd> <dt>
 
-*paletteSize* \[ no\]
+*paleetteSize* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de matrizes Bone disponíveis para a aparência da paleta de matriz.
+Número de matrizes disponíveis para a paleta de matrizes.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ no\]
+*pAdjacencyIn* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Informações de adjacência da malha de entrada.
+Informações de adjacency de malha de entrada.
 
 </dd> <dt>
 
-*pAdjacencyOut* \[ no\]
+*pAdjacencyOut* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDWORD**](../winprog/windows-data-types.md)**
 
-Informações de adjacência de malha de saída.
+Informações de adjacency de malha de saída.
 
 </dd> <dt>
 
-*pFaceRemap* \[ fora\]
+*pFaceRemap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Uma matriz de DWORDs, uma por face, que identifica a face de malha original que corresponde a cada face na malha mesclada. Se o valor fornecido para esse argumento for **nulo**, os dados de remapeamento facial não serão retornados.
+Uma matriz de DWORDs, uma por face, que identifica o rosto da malha original que corresponde a cada rosto na malha mesclada. Se o valor fornecido para esse argumento for **NULL,** os dados de remapa facial não serão retornados.
 
 </dd> <dt>
 
-*ppVertexRemap* \[ fora\]
+*ppVertexRemap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Endereço de um ponteiro para uma interface [**ID3DXBuffer**](id3dxbuffer.md) , que contém um DWORD para cada vértice que especifica como os novos vértices são mapeados para os vértices antigos. Esse remapeamento será útil se você precisar alterar dados externos com base no novo mapeamento de vértice. Esse parâmetro é opcional; **NULL** pode ser usado.
+Endereço de um ponteiro para uma interface [**ID3DXBuffer,**](id3dxbuffer.md) que contém uma DWORD para cada vértice que especifica como os novos vértices são mapeados para os vértices antigos. Esse remapa será útil se você precisar alterar dados externos com base no novo mapeamento de vértice. Esse parâmetro é opcional; **NULL** pode ser usado.
 
 </dd> <dt>
 
-*pMaxVertexInfl* \[ fora\]
+*pMaxVertexInfl* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Ponteiro para um DWORD que conterá o número máximo de influências Bone necessárias por vértice para esse método de aparência.
+Ponteiro para uma DWORD que conterá o número máximo de influências de gravidade necessárias por vértice para esse método de decodagem.
 
 </dd> <dt>
 
-*pNumBoneCombinations* \[ fora\]
+*pNumBoneCombinations* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o número de Bones na tabela de combinação de Bone.
+Ponteiro para o número de esqueletos na tabela de combinação de animais.
 
 </dd> <dt>
 
-*ppBoneCombinationTable* \[ fora\]
+*ppBoneCombinationTable* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Ponteiro para a tabela de combinação de Bone. Os dados são organizados em uma estrutura [**D3DXBONECOMBINATION**](d3dxbonecombination.md) .
+Ponteiro para a tabela de combinação de cores. Os dados são organizados em uma [**estrutura D3DXBONECOMBINATION.**](d3dxbonecombination.md)
 
 </dd> <dt>
 
-*ppMesh* \[ fora\]
+*ppMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
@@ -149,17 +149,17 @@ Ponteiro para a nova malha.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Cada elemento nas matrizes de remapeamento especifica o índice anterior para essa posição. Por exemplo, se um vértice estava na posição 3, mas foi remapeado para a posição 5, o quinto elemento de pVertexRemap conterá 3.
+Cada elemento nas matrizes de remapa especifica o índice anterior para essa posição. Por exemplo, se um vértice estava na posição 3, mas foi remapeado para a posição 5, o quinto elemento de pVertexRemap conterá 3.
 
-Esse método não é executado em hardware que não dá suporte à mesclagem de vértice de função fixa.
+Esse método não é executado em hardware que não dá suporte à combinação de vértice de função fixa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -167,8 +167,8 @@ Esse método não é executado em hardware que não dá suporte à mesclagem de 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

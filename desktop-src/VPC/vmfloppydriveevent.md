@@ -1,9 +1,9 @@
 ---
-title: Enumeração vmFloppyDriveEvent (VPCCOMInterfaces. h)
-description: Especifica os eventos da unidade de disquete.
+title: Enumeração vmFloppyDriveEvent (VPCCOMInterfaces.h)
+description: Especifica os eventos de unidade de disquete.
 ms.assetid: 31d0c748-609a-4e03-8b5c-0a17a2587242
 keywords:
-- vmFloppyDriveEvent de enumeração Virtual PC
+- VmFloppyDriveEvent enumeration Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a11b1485f91264713cf96a4f95cab8286261eea4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9f8ded5cf87d740f113bab54d9f7587c8f8927e5ae37352dceb4a30be09d104
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767896"
 ---
 # <a name="vmfloppydriveevent-enumeration"></a>Enumeração vmFloppyDriveEvent
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Especifica os eventos da unidade de disquete.
+Especifica os eventos de unidade de disquete.
 
 ## <a name="syntax"></a>Syntax
 
@@ -50,7 +50,7 @@ Uma imagem de disquete é anexada ou a mídia real é inserida em uma unidade de
 
 </dd> <dt>
 
-<span id="vmFloppyDriveEvent_OnEject"></span><span id="vmfloppydriveevent_oneject"></span><span id="VMFLOPPYDRIVEEVENT_ONEJECT"></span>**vmFloppyDriveEvent \_ Onejeção**
+<span id="vmFloppyDriveEvent_OnEject"></span><span id="vmfloppydriveevent_oneject"></span><span id="VMFLOPPYDRIVEEVENT_ONEJECT"></span>**vmFloppyDriveEvent \_ OnEject**
 </dt> <dd>
 
 A mídia foi ejetada.
@@ -63,11 +63,11 @@ A mídia foi ejetada.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

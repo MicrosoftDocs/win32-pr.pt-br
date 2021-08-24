@@ -1,7 +1,7 @@
 ---
-description: Adiciona configurações genéricas a uma configuração de sistema virtual.
+description: Adiciona configurações genéricas a uma configuração do sistema virtual.
 ms.assetid: ae04be39-0401-43e9-b19b-3539ca1786ec
-title: Método AddSystemComponentSettings da classe Msvm_VirtualSystemManagementService
+title: Método AddSystemComponentSettings da classe Msvm_VirtualSystemManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 56ca8bed752bab52f6a82e18975dd5df72dbe12d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 43bc224a0ab81732c24c581bbb0142d2121c93f0dbe5f6b80da0efb02227340a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789186"
 ---
-# <a name="addsystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método AddSystemComponentSettings da \_ classe VirtualSystemManagementService Msvm
+# <a name="addsystemcomponentsettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método AddSystemComponentSettings da classe Msvm \_ VirtualSystemManagementService
 
-Adiciona configurações genéricas a uma configuração de sistema virtual.
+Adiciona configurações genéricas a uma configuração do sistema virtual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,31 +42,31 @@ uint32 AddSystemComponentSettings(
 
 <dl> <dt>
 
-*AffectedConfiguration* \[ no\]
+*AffectedConfiguration* \[ Em\]
 </dt> <dd></dd> <dt>
 
-*ComponentSettings* \[ no\]
+*ComponentSettings* \[ Em\]
 </dt> <dd>
 
-As configurações de componente a serem adicionadas.
+As configurações do componente a adicionar.
 
 </dd> <dt>
 
-*ResultingComponentSettings* \[ fora\]
+*ResultingComponentSettings* \[ out\]
 </dt> <dd>
 
-Em caso de sucesso, faz referência a um [**\_ SystemComponentSettingData Msvm**](msvm-systemcomponentsettingdata.md) que contém as configurações de componente resultantes.
+Em caso de sucesso, faz referência a [**um \_ SystemComponentSettingData da Msvm**](msvm-systemcomponentsettingdata.md) que contém as configurações de componente resultantes.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 
@@ -81,22 +81,22 @@ Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,10 +105,10 @@ Em caso de sucesso, retorna 0 ou 4096; caso contrário, retornará um erro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ para aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

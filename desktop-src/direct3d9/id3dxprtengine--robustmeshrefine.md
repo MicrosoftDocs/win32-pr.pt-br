@@ -1,7 +1,7 @@
 ---
-description: Subdivide faces em uma malha, permitindo uma amostragem adaptável conservadora que não eliminará os recursos na malha.
+description: Subdivide rostos em uma malha, permitindo a amostragem adaptável conservadora que não eliminará recursos na malha.
 ms.assetid: 0d74a01a-de67-4607-99eb-ed98e239f199
-title: 'Método ID3DXPRTEngine:: RobustMeshRefine (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::RobustMeshRefine (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 65d49fcec3072956365ce1ed8dc5d7a11ce6c826
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 280e4552af6de13995ed81afab4d743232485e92446c72b61fd10ae17fea7b07
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105782652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790555"
 ---
-# <a name="id3dxprtenginerobustmeshrefine-method"></a>Método ID3DXPRTEngine:: RobustMeshRefine
+# <a name="id3dxprtenginerobustmeshrefine-method"></a>Método ID3DXPRTEngine::RobustMeshRefine
 
-Subdivide faces em uma malha, permitindo uma amostragem adaptável conservadora que não eliminará os recursos na malha.
+Subdivide rostos em uma malha, permitindo a amostragem adaptável conservadora que não eliminará recursos na malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,29 +41,29 @@ HRESULT RobustMeshRefine(
 
 <dl> <dt>
 
-*MinEdgeLength* \[ no\]
+*MinEdgeLength* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Comprimento mínimo de borda facial que será gerado na amostragem adaptável. Se for zero, um valor padrão razoável será substituído.
+Comprimento mínimo da borda facial que será gerado na amostragem adaptável. Se zero, um valor padrão razoável será substituído.
 
 </dd> <dt>
 
-*MaxSubdiv* \[ no\]
+*MaxSubdiv* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Nível máximo de subdivisão de uma face que será usada na amostragem adaptável. Se for zero, um valor padrão de 5 será substituído.
+Nível máximo de subdivisão de um rosto que será usado na amostragem adaptável. Se zero, um valor padrão de 5 será substituído.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

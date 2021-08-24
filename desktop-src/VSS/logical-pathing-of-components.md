@@ -4,12 +4,12 @@ ms.assetid: 663c8ca9-8f5b-48bd-af2d-b2d90de9e492
 title: Caminho lógico de componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a591f3eec0e00257740dbbd24ab7c609c53c27a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2ce4feeeb2147a7be736547eb69cbbb1a254c5940b18e904bc3be3290a2c79b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767746"
 ---
 # <a name="logical-pathing-of-components"></a>Caminho lógico de componentes
 
@@ -35,11 +35,11 @@ O exemplo hipotético de um gravador *myWriter* com uma estrutura de caminho ló
 |----------------|-------------------------|-----------------------|
 | Executáveis  | ""                      | N                     |
 | "ConfigFiles"  | Executáveis           | N                     |
-| "LicenseInfo"  | ""                      | S                     |
-| “Segurança”     | ""                      | S                     |
+| "LicenseInfo"  | ""                      | Y                     |
+| “Segurança”     | ""                      | Y                     |
 | UserInfo     | “Segurança”              | N                     |
 | Certificado | “Segurança”              | N                     |
-| "writerData"   | ""                      | S                     |
+| "writerData"   | ""                      | Y                     |
 | Conjunto1         | "writerData"            | N                     |
 | Janeiro          | "writerData \\ conjunto1"      | N                     |
 | Dez          | "writerData \\ conjunto1"      | N                     |
@@ -47,7 +47,7 @@ O exemplo hipotético de um gravador *myWriter* com uma estrutura de caminho ló
 | Janeiro          | "writerData \\ conjunto2"      | N                     |
 | Dez          | "writerData \\ conjunto2"      | N                     |
 | Consultá        | "writerData \\ QueryLogs" | N                     |
-| Usos        | "writerData"            | S                     |
+| Usos        | "writerData"            | Y                     |
 | Janeiro          | "uso de writerData \\ "     | N                     |
 | Dez          | "uso de writerData \\ "     | N                     |
 

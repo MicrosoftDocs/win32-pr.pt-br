@@ -1,7 +1,7 @@
 ---
 description: O filtro de renderizador MIDI renderiza dados MIDI do filtro analisador de MIDI.
 ms.assetid: 2675a21d-41d0-4095-96c4-f12f52c00d5a
-title: Filtro de renderizador MIDI (Windows. Devices. MIDI. h)
+title: filtro de renderizador MIDI (Windows. devices. midi. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - windows.devices.midi.h
-ms.openlocfilehash: 5fa27ceda0c249f88f4684979382495167cb9238
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 3727fb322e03338723eb3c9da1ac86d4e6a7145424cb04b0c050b67f83aa141a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791446"
 ---
 # <a name="midi-renderer-filter"></a>Filtro de renderizador MIDI
 
@@ -26,13 +26,13 @@ O filtro de renderizador MIDI renderiza dados MIDI do filtro [analisador de Midi
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMClockSlave**](/windows/desktop/api/Strmif/nn-strmif-iamclockslave), [**IAMDirectSound**](/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound), [**IAMResourceControl**](/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IBasicAudio**](/windows/desktop/api/Control/nn-control-ibasicaudio), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol), [**IReferenceClock**](/windows/desktop/api/Strmif/nn-strmif-ireferenceclock) |
 | Tipos de mídia de pino de entrada                    | \_MEDIASUBTYPE de mídia MIDI, \_ nulo                                                                                                                                                                                                                                                                                                                                                  |
 | Interfaces de pino de entrada                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                                                                                                                                                               |
-| Tipos de mídia do pino de saída                   | Não aplicável                                                                                                                                                                                                                                                                                                                                                                       |
-| Interfaces de pino de saída                    | Não aplicável                                                                                                                                                                                                                                                                                                                                                                       |
+| Tipos de mídia do pino de saída                   | Não se aplica                                                                                                                                                                                                                                                                                                                                                                       |
+| Interfaces de pino de saída                    | Não se aplica                                                                                                                                                                                                                                                                                                                                                                       |
 | CLSID do filtro                             | \_AVIMIDIRENDER CLSID                                                                                                                                                                                                                                                                                                                                                                 |
 | CLSID de página de propriedades                      | Nenhuma página de propriedades                                                                                                                                                                                                                                                                                                                                                                     |
 | Executável                               | quartz.dll                                                                                                                                                                                                                                                                                                                                                                           |
@@ -67,7 +67,7 @@ Exemplos do filtro analisador de MIDI contêm um segundo de dados MIDI. O render
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Windows. Devices. MIDI. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Windows. devices. midi. h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Exemplos do filtro analisador de MIDI contêm um segundo de dados MIDI. O render
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

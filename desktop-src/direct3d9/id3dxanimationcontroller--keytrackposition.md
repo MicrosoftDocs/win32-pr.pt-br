@@ -1,7 +1,7 @@
 ---
 description: Define uma chave de evento que altera a hora local de uma faixa de animação.
 ms.assetid: b527e960-8ab9-42a0-bb4d-bea5aaf83424
-title: 'Método ID3DXAnimationController:: KeyTrackPosition (D3dx9anim. h)'
+title: Método ID3DXAnimationController::KeyTrackPosition (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d027069efa9fb49cad3d2344da593eae4c3c844c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e66bac7b5aaa8da87b0cb88e3bfd12469d8aa8b6ec755eaa47268c70da5eadf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791226"
 ---
-# <a name="id3dxanimationcontrollerkeytrackposition-method"></a>Método ID3DXAnimationController:: KeyTrackPosition
+# <a name="id3dxanimationcontrollerkeytrackposition-method"></a>Método ID3DXAnimationController::KeyTrackPosition
 
 Define uma chave de evento que altera a hora local de uma faixa de animação.
 
@@ -42,38 +42,38 @@ D3DXEVENTHANDLE KeyTrackPosition(
 
 <dl> <dt>
 
-*Acompanhar* \[ no\]
+*Acompanhar* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Identificador da faixa a ser modificada.
+Identificador da faixa a ser modificado.
 
 </dd> <dt>
 
-*NewPosition* \[ no\]
+*NewPosition* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **duplo**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 Nova hora local da faixa de animação.
 
 </dd> <dt>
 
-*StartTime* \[ no\]
+*StartTime* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **duplo**](../winprog/windows-data-types.md)**
+Tipo: **[ **DOUBLE**](../winprog/windows-data-types.md)**
 
 Chave de tempo global. Especifica a hora global em que a alteração ocorrerá.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento para o evento de mesclagem de prioridade. **NULL** será retornado se Track for inválido ou se nenhum evento gratuito estiver disponível.
+Alça de evento para o evento priority blend. **NULL** será retornado se Track for inválido ou se nenhum evento gratuito estiver disponível.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Identificador de evento para o evento de mesclagem de prioridade. **NULL** será
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
