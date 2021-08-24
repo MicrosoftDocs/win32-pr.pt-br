@@ -1,6 +1,6 @@
 ---
 title: Método deviceobject ID3DX11DataProcessor (D3DX11core. h)
-description: Observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store. Cria um objeto de dispositivo.
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Cria um objeto de dispositivo.
 ms.assetid: 797d216b-2f54-4d24-aa97-04be0c71f909
 keywords:
 - Método createdeviceobject Direct3D 11
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6ff178cec1830d1b0213af23a2a70654416d35e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 15627fc823de8a46a1299607f74694a0f93236082423910adf395b2b00ad57f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894926"
 ---
 # <a name="id3dx11dataprocessorcreatedeviceobject-method"></a>Método ID3DX11DataProcessor:: deviceobject
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para o Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
@@ -57,7 +57,7 @@ Endereço de um ponteiro para o objeto de dispositivo criado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

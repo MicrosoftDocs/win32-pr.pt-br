@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - NlsMap.dll
-ms.openlocfilehash: 2f8e4ce9763348cf765522ebbd624a6e82f1071a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b96d0c983c46c5d16007aae3a59659099a48855048194153d0c8102d26dc5bd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898716"
 ---
 # <a name="downlevellcidtolocalename-function"></a>Função DownlevelLCIDToLocaleName
 
 Converte um [identificador de localidade](locale-identifiers.md) em um [nome de localidade](locale-names.md).
 
 > [!Note]  
-> Essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer um pacote de download. Os aplicativos que são executados somente no Windows Vista e posterior devem chamar [**LCIDToLocaleName**](/windows/desktop/api/Winnls/nf-winnls-lcidtolocalename) para recuperar um nome de localidade.
+> essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer um pacote de download. os aplicativos que são executados somente no Windows Vista e posterior devem chamar [**LCIDToLocaleName**](/windows/desktop/api/Winnls/nf-winnls-lcidtolocalename) para recuperar um nome de localidade.
 
  
 
@@ -81,7 +81,7 @@ Sinalizadores que especificam o tipo de nome a recuperar. O valor padrão é nom
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a contagem de pontos de código UTF-16 no nome da localidade, incluindo o caractere nulo de terminação, se for bem-sucedido. Se a função for bem sucedido e o valor de *cchName* for 0, o valor de retorno será o tamanho necessário, em caracteres (incluindo caracteres nulos), para o buffer de nome de localidade.
 
@@ -106,10 +106,10 @@ O arquivo de cabeçalho e a DLL necessários fazem parte do download "APIs de ma
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                |
 | Redistribuível<br/>          | APIs de mapeamento de dados de nível inferior do Microsoft NLS onwindows XP com SP2 e laterorWindows vista<br/> |
-| parâmetro<br/>                   | <dl> <dt>Nlsdl. h</dt> </dl>                  |
+| Cabeçalho<br/>                   | <dl> <dt>Nlsdl. h</dt> </dl>                  |
 | DLL<br/>                      | <dl> <dt>NlsMap.dll</dt> </dl>               |
 
 

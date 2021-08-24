@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETFOCUSEDGROUP (commctrl. h)
-description: Obtém o grupo que tem o foco. Envie essa mensagem explicitamente ou usando a macro do ListView \_ Getconcentrour.
+title: LVM_GETFOCUSEDGROUP mensagem (Commctrl.h)
+description: Obtém o grupo que tem o foco. Envie essa mensagem explicitamente ou usando a \_ macro ListView GetFocusedGroup.
 ms.assetid: c1902f35-84b7-4f46-89a6-e48148f06172
 keywords:
-- Controles de LVM_GETFOCUSEDGROUP de mensagens do Windows
+- LVM_GETFOCUSEDGROUP controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e0d12eb637ec1a421a5eaff58636df7bef8f449
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9b253405683c058518706e92e62f09041ae4db0e4bee426aa653103bda2188c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119877426"
 ---
-# <a name="lvm_getfocusedgroup-message"></a>Mensagem do LVM \_ GETfocaling
+# <a name="lvm_getfocusedgroup-message"></a>Mensagem \_ GETFOCUSEDGROUP LVM
 
-Obtém o grupo que tem o foco. Envie essa mensagem explicitamente ou usando a macro do [**ListView \_ getconcentrour**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfocusedgroup) .
+Obtém o grupo que tem o foco. Envie essa mensagem explicitamente ou usando a macro [**\_ ListView GetFocusedGroup.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getfocusedgroup)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Obtém o grupo que tem o foco. Envie essa mensagem explicitamente ou usando a ma
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o índice do grupo com o estado de LVGS \_ focalizado ou-1 se não houver nenhum grupo com o estado de LVGS \_ focalizado.
+Retorna o índice do grupo com o estado de LVGS FOCUSED ou -1 se não houver nenhum grupo com estado \_ de LVGS \_ FOCUSED.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o índice do grupo com o estado de LVGS \_ focalizado ou-1 se não houve
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

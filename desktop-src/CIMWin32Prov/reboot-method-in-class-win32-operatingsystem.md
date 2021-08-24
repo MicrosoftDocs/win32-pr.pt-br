@@ -1,8 +1,8 @@
 ---
-description: A reinicialização&\# 8194; O método de classe WMI desliga o sistema de computador e, em seguida, o reinicia.
+description: A reinicialização&\# 8194; O método de classe WMI desliga o sistema de computador e, em seguida, reinicia-o.
 ms.assetid: 23b70f2a-28ce-4463-9d22-29de52349ab6
 ms.tgt_platform: multiple
-title: Método reboot da classe Win32_OperatingSystem
+title: Método de reinicialização da Win32_OperatingSystem classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c4577f708d2f7ec7416ab3455da91b4e35fa079a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 700d497650e8950c72467bbad8e11cf450b2302f0b68ef762e8a11e3c6aaceee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752726"
 ---
-# <a name="reboot-method-of-the-win32_operatingsystem-class"></a>Método reboot da classe de sistema \_ operacional Win32
+# <a name="reboot-method-of-the-win32_operatingsystem-class"></a>Método de reinicialização da classe OperatingSystem Win32 \_
 
-O método **reinicializar** [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) desliga o sistema de computador e, em seguida, o reinicia.
+O **método** [de classe WMI de](/windows/desktop/WmiSdk/retrieving-a-class) reinicialização desliga o sistema de computador e, em seguida, reinicia-o.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,30 +40,30 @@ uint32 Reboot();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna zero (0) para indicar êxito. Qualquer outro número indica um erro. Para códigos de erro, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna zero (0) para indicar êxito. Qualquer outro número indica um erro. Para códigos de erro, [**consulte Constantes de**](/windows/desktop/WmiSdk/wmi-error-constants) erro WMI ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
 **Êxito** (0)
 </dt> <dt>
 
-**Outro** (1 4294967295)
+**Outros** (1 4294967295)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A capacidade de reiniciar programaticamente um computador permite que os administradores executem muitas tarefas de gerenciamento do computador remotamente.
+A capacidade de reiniciar programaticamente um computador permite que os administradores executem muitas tarefas de gerenciamento de computador remotamente.
 
-Por exemplo, se você criar um script para instalar o software ou fazer uma alteração de configuração que exija a reinicialização de um computador, poderá incluir o comando de reinicialização no script e executar a operação inteira remotamente. O método **reboot** pode ser usado para reiniciar um computador. Como o método [**Win32Shutdown**](win32shutdown-method-in-class-win32-operatingsystem.md) , o método **reboot** exige que o usuário cujas credenciais de segurança estejam sendo usadas pelo script para ter o privilégio de desligamento.
+Por exemplo, se você criar um script para instalar o software ou fazer uma alteração de configuração que exija a reinicialização de um computador, poderá incluir o comando de reinicialização no script e executar toda a operação remotamente. O **método Reboot** pode ser usado para reiniciar um computador. Assim como [**o método Win32Shutdown,**](win32shutdown-method-in-class-win32-operatingsystem.md) o método **Reboot** requer que o usuário cujas credenciais de segurança estão sendo usadas pelo script para ter o privilégio Desligamento.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir invoca o método reboot da classe [**Win32 \_ OperatingSystem**](win32-operatingsystem.md) .
+O exemplo de código VBScript a seguir invoca o método Reboot da [**classe \_ OperatingSystem Win32.**](win32-operatingsystem.md)
 
 > [!Note]  
-> Você deve ter o privilégio de desligamento para invocar com êxito o método de desligamento.
+> Você deve ter o privilégio Desligamento para invocar com êxito o método Shutdown.
 
  
 
@@ -78,10 +78,10 @@ next
 
 
 
-O código Perl a seguir invoca o método reboot da classe [**Win32 \_ OperatingSystem**](win32-operatingsystem.md) .
+O código Perl a seguir invoca o método Reboot da [**classe \_ OperatingSystem Win32.**](win32-operatingsystem.md)
 
 > [!Note]  
-> Você deve ter o privilégio de desligamento para invocar com êxito o método de desligamento.
+> Você deve ter o privilégio Desligamento para invocar com êxito o método Shutdown.
 
  
 
@@ -113,10 +113,10 @@ else
 
 
 
-O VBScript a seguir invoca o método reboot da classe [**Win32 \_ OperatingSystem**](win32-operatingsystem.md) em um sistema remoto. Preencha \_ \_ o nome do sistema remoto com o nome do sistema remoto para reinicializar.
+O VBScript a seguir invoca o método Reboot da [**classe \_ OperatingSystem Win32**](win32-operatingsystem.md) em um sistema remoto. Preencha REMOTE \_ SYSTEM NAME com o nome do sistema remoto a ser \_ reinicializado.
 
 > [!Note]  
-> Você deve ter o privilégio RemoteShutdown para invocar com êxito o método de reinicialização
+> Você deve ter o privilégio RemoteShutdown para invocar com êxito o método Reboot
 
  
 
@@ -131,10 +131,10 @@ next
 
 
 
-Ele segue o Perl invoca o método reboot da classe [**Win32 \_ OperatingSystem**](win32-operatingsystem.md) em um sistema remoto. Preencha \_ \_ o nome do sistema remoto com o nome do sistema remoto para reinicializar.
+ele seguindo Perl invoca o método Reboot da [**classe Win32 \_ OperatingSystem**](win32-operatingsystem.md) em um sistema remoto. Preencha REMOTE \_ SYSTEM NAME com o nome do sistema remoto a ser \_ reinicializado.
 
 > [!Note]  
-> Você deve ter o privilégio RemoteShutdown para invocar com êxito o método de reinicialização.
+> Você deve ter o privilégio RemoteShutdown para invocar com êxito o método Reboot.
 
  
 
@@ -183,8 +183,8 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -196,13 +196,13 @@ else
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Sistema \_ operacional Win32**](win32-operatingsystem.md)
+[**Sistema operacional \_ Win32**](win32-operatingsystem.md)
 </dt> <dt>
 
-[**\_Método CIM OperatingSystem. Shutdown**](shutdown-method-in-class-cim-operatingsystem.md)
+[**Método CIM \_ OperatingSystem.Shutdown**](shutdown-method-in-class-cim-operatingsystem.md)
 </dt> <dt>
 
-[Tarefas do WMI: gerenciamento de desktop](/windows/desktop/WmiSdk/wmi-tasks--desktop-management)
+[Tarefas WMI: Gerenciamento de Área de Trabalho](/windows/desktop/WmiSdk/wmi-tasks--desktop-management)
 </dt> </dl>
 
  

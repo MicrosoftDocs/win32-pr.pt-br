@@ -1,11 +1,11 @@
 ---
-title: classe ms-TPM-Information-Object
-description: Essa classe contém informações de recuperação para um dispositivo Trusted Platform Module (TPM).
+title: Classe ms-TPM-Information-Object
+description: Essa classe contém informações de recuperação para um Trusted Platform Module (TPM).
 ms.assetid: 75897787-f177-4899-905d-6ae2f2f7a16f
 ms.tgt_platform: multiple
 keywords:
-- ms-TPM-Information-classe de objeto AD Schema
-- msTPM-esquema de AD da classe Informationobject
+- Esquema do AD da classe ms-TPM-Information-Object
+- Esquema do AD da classe msTPM-InformationObject
 topic_type:
 - apiref
 api_name:
@@ -14,26 +14,26 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0aea6766e1ec90b169c052eebb0f082083f80ce
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 99673de4e4e6ee6bc81af380b6e2d61909a9b95773a5034e0fcc6d1872026ffc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879306"
 ---
-# <a name="ms-tpm-information-object-class"></a>classe ms-TPM-Information-Object
+# <a name="ms-tpm-information-object-class"></a>Classe ms-TPM-Information-Object
 
-Essa classe contém informações de recuperação para um dispositivo Trusted Platform Module (TPM).
+Essa classe contém informações de recuperação para um Trusted Platform Module (TPM).
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-TPM-Information-Object            |
-| LDAP-Display-Name | msTPM-Informationobject              |
+| Ldap-Display-Name | msTPM-InformationObject              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
-| Schema-ID-GUID    | 85045b6a-47a6-4243-a7cc-6890701f662c |
+| Schema-Id-Guid    | 85045b6a-47a6-4243-a7cc-6890701f662c |
 
 
 
@@ -51,49 +51,49 @@ Essa classe contém informações de recuperação para um dispositivo Trusted P
 |-----------------------------|------------------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                                |
 | Object-Category             | 1                                                                                                    |
-| Categoria de objeto-padrão     | \-                                                                                                   |
+| Default-Object-Category     | \-                                                                                                   |
 | Governs-Id                  | 1.2.840.113556.1.5.275                                                                               |
-| Padrão-ocultando valor        | 1                                                                                                    |
-| RDN-ATT-ID                  | \-                                                                                                   |
+| Valor ocultado padrão        | 1                                                                                                    |
+| Rdn-Att-Id                  | \-                                                                                                   |
 | Subclasse de                 | [**Início**](c-top.md)<br/>                                                                      |
-| Superiores possíveis          | [**ms-TPM-Information-Objects-container**](c-mstpm-informationobjectscontainer.md)                  |
+| Possíveis superiores          | [**ms-TPM-Information-Objects-Container**](c-mstpm-informationobjectscontainer.md)                  |
 | Classes Auxiliares           | \-                                                                                                   |
-| NT-Security-Descriptor      | O:BAG: INADEQUADO: S:                                                                                         |
-| Descritor de segurança padrão | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLO;;;D C) (A;; WP;;; COLABORA |
+| Descritor de segurança NT      | O:BAG:BAD:S:                                                                                         |
+| Descritor de segurança padrão | D:(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;; SY)(A;; RPLO;;;D C)(A;; WP;;; CO) |
 | System-Flags                | 0x00000010                                                                                           |
 
 
 
-## <a name="windows-server-2012-attributes"></a>Atributos do Windows Server 2012
+## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
-Essa classe contém os seguintes atributos para o Windows Server 2012:
+Essa classe contém os seguintes atributos para Windows Server 2012:
 
 
 
 | Atributo                                                                                    | Obrigatório | Derivado de                    |
 |----------------------------------------------------------------------------------------------|-----------|---------------------------------|
 | [**Descrição do administrador**](a-admindescription.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Administração – nome de exibição**](a-admindisplayname.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
+| [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Atributos permitidos**](a-allowedattributes.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-atributos-efetivos**](a-allowedattributeseffective.md)                         | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Classes filho permitidas**](a-allowedchildclasses.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-filho-classes-efetivas**](a-allowedchildclasseseffective.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome comum**](a-cn.md)                                                                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
+| [**Common-Name**](a-cn.md)                                                                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**Criar carimbo de data/hora**](a-createtimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome de exibição-imprimível**](a-displaynameprintable.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
-| [**DSA-assinatura**](a-dsasignature.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**DS-Core-propagação-data**](a-dscorepropagationdata.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**Nome de exibição imprimível**](a-displaynameprintable.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
+| [**Assinatura DSA**](a-dsasignature.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome da extensão**](a-extensionname.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Flags**](a-flags.md)                                                                     | Falso     | [**Início**](c-top.md)<br/> |
-| [**De entrada**](a-fromentry.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**Sinalizadores**](a-flags.md)                                                                     | Falso     | [**Início**](c-top.md)<br/> |
+| [**Entrada de entrada**](a-fromentry.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**FSMO-função-proprietário**](a-fsmoroleowner.md)                                                   | Falso     | [**Início**](c-top.md)<br/> |
-| [**Tipo de instância**](a-instancetype.md)                                                      | True      | [**Início**](c-top.md)<br/> |
+| [**Tipo de instância**](a-instancetype.md)                                                      | Verdadeiro      | [**Início**](c-top.md)<br/> |
 | [**É-crítico-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**É excluído**](a-isdeleted.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**Is-member-of-DL**](a-memberof.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
@@ -143,20 +143,20 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**ms-DS-revelado-List-BL**](a-msds-revealedlistbl.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-TDO-egresso-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-TDO-ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**msSFU-30-POSIX-membro de**](a-mssfu30posixmemberof.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-TPM-OwnerInformation**](a-mstpm-ownerinformation.md)                                  | True      | **ms-TPM-Information-Object**   |
+| [**ms-TPM-OwnerInformation**](a-mstpm-ownerinformation.md)                                  | Verdadeiro      | **ms-TPM-Information-Object**   |
 | [**ms-TPM-Owner-Information-Temp**](a-mstpm-ownerinformationtemp.md)                        | Falso     | **ms-TPM-Information-Object**   |
 | [**ms-TPM-SRK-pub-Thumbprint**](a-mstpm-srkpubthumbprint.md)                                | Falso     | **ms-TPM-Information-Object**   |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**Início**](c-top.md)<br/> |
 | [**Não Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | True      | [**Início**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Verdadeiro      | [**Início**](c-top.md)<br/> |
 | [**Obj-dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**Objeto-categoria**](a-objectcategory.md)                                                  | True      | [**Início**](c-top.md)<br/> |
-| [**Classe de objeto**](a-objectclass.md)                                                        | True      | [**Início**](c-top.md)<br/> |
+| [**Objeto-categoria**](a-objectcategory.md)                                                  | Verdadeiro      | [**Início**](c-top.md)<br/> |
+| [**Classe de objeto**](a-objectclass.md)                                                        | Verdadeiro      | [**Início**](c-top.md)<br/> |
 | [**GUID do objeto**](a-objectguid.md)                                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**Versão do objeto**](a-objectversion.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Outros objetos bem conhecidos**](a-otherwellknownobjects.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
@@ -190,9 +190,9 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**WBEM-caminho**](a-wbempath.md)                                                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Objetos bem conhecidos**](a-wellknownobjects.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Quando-alterado**](a-whenchanged.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**Quando-criado**](a-whencreated.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**WWW-Home-Page**](a-wwwhomepage.md)                                                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**WWW-página-outro**](a-url.md)                                                              | Falso     | [**Início**](c-top.md)<br/> |
+| [**Quando criado**](a-whencreated.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
+| [**WWW-Home Page**](a-wwwhomepage.md)                                                       | Falso     | [**Início**](c-top.md)<br/> |
+| [**WWW-Page-Other**](a-url.md)                                                              | Falso     | [**Início**](c-top.md)<br/> |
 
 
 

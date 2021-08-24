@@ -56,23 +56,23 @@
           items:
             - name: Makefile de exemplo assíncrono
               href: asynchronous-example-makefile.md
-            - name: Cabeçalho de exemplo assíncrono
+            - name: Header de exemplo assíncrono
               href: asynchronous-example-header.md
             - name: Aplicativo de exemplo assíncrono
               href: asynchronous-example-application.md
     - name: Referência do WinINet
       href: wininet-reference.md
       items:
-        - name: Constantes do WinINet
+        - name: Constantes WinINet
           href: wininet-constants.md
           items:
             - name: Sinalizadores de API
               href: api-flags.md
-            - name: Constantes do grupo de cache
+            - name: Constantes do Grupo de Cache
               href: cache-group-constants.md
             - name: Mensagens de erro
               href: wininet-errors.md
-            - name: Valores de tipo Gopher
+            - name: Valores de tipo gopher
               href: gopher-type-values.md
             - name: Códigos de status HTTP
               href: http-status-codes.md
@@ -238,9 +238,9 @@
               href: /windows/win32/api/wininet/nf-wininet-internetinitializeautoproxydll
             - name: InternetLockRequestFile
               href: /windows/win32/api/Wininet/nf-wininet-internetlockrequestfile
-            - name: InternetOpen
+            - name: InternetA abrir
               href: /windows/win32/api/Wininet/nf-wininet-internetopena
-            - name: InternetOpenUrl
+            - name: Internetopenurl
               href: /windows/win32/api/Wininet/nf-wininet-internetopenurla
             - name: InternetQueryDataAvailable
               href: /windows/win32/api/Wininet/nf-wininet-internetquerydataavailable
@@ -317,7 +317,7 @@
               href: /windows/win32/api/Wininet/ns-wininet-internet_async_result
             - name: INTERNET_AUTH_NOTIFY_DATA
               href: /windows/win32/api/wininet/ns-wininet-internet_auth_notify_data
-            - name: INTERNET_BUFFERS
+            - name: Internet_buffers
               href: /windows/win32/api/Wininet/ns-wininet-internet_buffersa
             - name: INTERNET_CACHE_CONFIG_INFO
               href: /windows/win32/api/Winineti/ns-winineti-internet_cache_config_infoa

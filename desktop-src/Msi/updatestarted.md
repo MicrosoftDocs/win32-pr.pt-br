@@ -1,21 +1,21 @@
 ---
-description: O instalador define a propriedade UpdateStarted quando as alterações no sistema começaram para essa instalação, incluindo a retomada de uma instalação suspensa. Instruções de condição da interface do usuário usam esse valor para selecionar uma caixa de diálogo.
+description: O instalador define a propriedade UpdateStarted quando as alterações no sistema foram iniciadas para essa instalação, incluindo a retomada de uma instalação suspensa. Instruções de condição da interface do usuário usam esse valor para selecionar uma caixa de diálogo.
 ms.assetid: aebc4a20-22b9-4a81-abed-1fed61b880da
 title: Propriedade UpdateStarted
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99561d17bf6fcb251f1acd7ac0d30ed5c1682997
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 341295b1bac517201bd9b3a2356637af7c883efdd68627ad94a03b6df7d4b614
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810036"
 ---
 # <a name="updatestarted-property"></a>Propriedade UpdateStarted
 
-O instalador define a propriedade **UpdateStarted** quando as alterações no sistema começaram para essa instalação, incluindo a retomada de uma instalação suspensa.
+O instalador define a **propriedade UpdateStarted** quando as alterações no sistema foram iniciadas para essa instalação, incluindo a retomada de uma instalação suspensa.
 
-Instruções de condição da interface do usuário usam esse valor para selecionar uma caixa de diálogo. Se essa propriedade for definida, o usuário será solicitado após um erro e cancelado se deseja restaurar ou continuar mais tarde.
+Instruções de condição da interface do usuário usam esse valor para selecionar uma caixa de diálogo. Se essa propriedade for definida, o usuário será solicitado após um erro e cancelamento se deve restaurar ou continuar posteriormente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -23,7 +23,7 @@ Instruções de condição da interface do usuário usam esse valor para selecio
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

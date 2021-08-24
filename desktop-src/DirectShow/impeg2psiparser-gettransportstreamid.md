@@ -1,7 +1,7 @@
 ---
-description: 'Método IMpeg2PsiParser:: GetTransportStreamId – a implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.'
+description: Método IMpeg2PsiParser::GetTransportStreamId – a implementação desse método é fornecida como código de exemplo com o SDK do DirectShow. Não é uma API de DirectShow com suporte.
 ms.assetid: 0c35abc0-984f-42df-a2a2-30cd400d4599
-title: 'Método IMpeg2PsiParser:: GetTransportStreamId'
+title: Método IMpeg2PsiParser::GetTransportStreamId
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: a24253b021abacf398a3a169b63bbb2f01ec2354
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e78eabce23633029e4ef3dfe6c6777c586a5d74ed28ccfe466c89064851f8197
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791896"
 ---
-# <a name="impeg2psiparsergettransportstreamid-method"></a>Método IMpeg2PsiParser:: GetTransportStreamId
+# <a name="impeg2psiparsergettransportstreamid-method"></a>Método IMpeg2PsiParser::GetTransportStreamId
 
-A implementação desse método é fornecida como um código de exemplo com o SDK do DirectShow. Não é uma API do DirectShow com suporte.
+A implementação desse método é fornecida como código de exemplo com o DirectShow SDK. Não é uma API de DirectShow com suporte.
 
-O `GetTransportStreamId` método recupera o \_ \_ campo ID do fluxo de transporte do Pat. Esse valor é definido pelo usuário e pode ser usado para distinguir um fluxo de transporte específico de outros fluxos na mesma rede. Um fluxo de transporte contém no máximo uma PAT.
+O `GetTransportStreamId` método recupera o campo de \_ \_ ID do fluxo de transporte do PAT. Esse valor é definido pelo usuário e pode ser usado para distinguir um fluxo de transporte específico de outros fluxos na mesma rede. Um fluxo de transporte contém no máximo um PAT.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,32 +40,32 @@ HRESULT GetTransportStreamId(
 
 <dl> <dt>
 
-*pStreamId* \[ fora\]
+*pStreamId* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável que recebe o \_ campo ID do fluxo de transporte \_ .
+Ponteiro para uma variável que recebe o campo de \_ ID do \_ fluxo de transporte.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um valor **HRESULT** . Os valores possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
+O método retorna um **valor HRESULT.** Os valores possíveis incluem, mas não estão limitados a, os valores mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                          | Descrição         |
 |--------------------------------------------------------------------------------------|---------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl> | Sucesso.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | Êxito.<br/> |
 
 
 
  
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IMpeg2PsiParser**](impeg2psiparser.md)
+[**IMpeg2PsiParser Interface**](impeg2psiparser.md)
 </dt> <dt>
 
 [Exemplo de filtro do analisador PSI](psi-parser-filter-sample.md)

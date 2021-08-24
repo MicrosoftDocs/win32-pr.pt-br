@@ -4,20 +4,20 @@ ms.assetid: b063989a-fe92-4c2c-9d66-8a14bc830f6b
 title: enrollKeyArchivalCMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 144f5f063834c156da5058fbc34f66ebdb76eb3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9e2e9856309560e982e7e1dda7ba724fefd0759e6fa10196b321eb66947cf64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882946"
 ---
 # <a name="enrollkeyarchivalcmc"></a>enrollKeyArchivalCMC
 
 O exemplo enrollKeyArchivalCMC cria uma solicitação de certificado CMC para arquivar uma chave privada em uma autoridade de certificação (CA). Para obter mais informações, consulte [solicitação de arquivamento de chave CMC](cmc-key-archival-request.md).
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ enrollKeyArchivalCMC.
+quando você instala o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado, por padrão, na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ enrollKeyArchivalCMC.
 
 ## <a name="discussion"></a>Discussão
 

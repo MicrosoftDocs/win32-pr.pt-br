@@ -6,12 +6,12 @@ keywords:
 - Comandos MCI, classificações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1524e6aa2094679e91acddb9dbfbb8cb480eb39f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72b532c56d1cdecac50cb24b14bf4f1b51c401dd5bb2501d1c421064659f1ef2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807925"
 ---
 # <a name="classifications-of-mci-commands"></a>Classificações de comandos MCI
 
@@ -37,7 +37,7 @@ O MCI processa os seguintes comandos do sistema diretamente, em vez de passá-lo
 
 
 
- 
+ 
 
 ## <a name="required-commands"></a>Comandos necessários
 
@@ -49,13 +49,13 @@ Todos os dispositivos MCI dão suporte aos seguintes comandos necessários.
 |----------------------------------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | [**recursos**](capability.md) | [**\_GETDEVCAPS MCI**](mci-getdevcaps.md) | Obtém os recursos de um dispositivo.                                                                                     |
 | [**inclui**](close.md)           | [**fechamento de MCI \_**](mci-close.md)           | Fecha o dispositivo.                                                                                                        |
-| [**detalhes**](info.md)             | [**informações do MCI \_**](mci-info.md)             | Obtém informações textuais de um dispositivo.                                                                                |
+| [**informações**](info.md)             | [**informações do MCI \_**](mci-info.md)             | Obtém informações textuais de um dispositivo.                                                                                |
 | [**abrir**](open.md)             | [**MCI \_ aberto**](mci-open.md)             | Inicializa o dispositivo.                                                                                                   |
-| [**Estado**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         | Obtém informações de status do dispositivo. Alguns dos sinalizadores deste comando não são necessários, portanto, ele também é um comando básico. |
+| [**Status**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         | Obtém informações de status do dispositivo. Alguns dos sinalizadores deste comando não são necessários, portanto, ele também é um comando básico. |
 
 
 
- 
+ 
 
 Os dispositivos também devem oferecer suporte a um conjunto padrão de sinalizadores de comando para os comandos necessários.
 
@@ -75,12 +75,12 @@ A lista a seguir resume os comandos básicos. O uso desses comandos por um dispo
 | [**Guarde**](save.md)     | [**\_salvar MCI**](mci-save.md)     | Salva dados em um arquivo de disco.                                                                                                                                                                                                              |
 | [**Procure**](seek.md)     | [**busca de MCI \_**](mci-seek.md)     | Procura para frente ou para trás.                                                                                                                                                                                                              |
 | [**Definição**](set.md)       | [**conjunto de MCI \_**](mci-set.md)       | Define o estado operacional do dispositivo.                                                                                                                                                                                                 |
-| [**Estado**](status.md) | [**STATUS DO MCI**](mci-status.md)  | Obtém informações de status sobre o dispositivo. Esse também é um comando necessário; como alguns de seus sinalizadores não são necessários, eles também estão listados aqui. (Os itens opcionais dão suporte a dispositivos que usam mídia linear com posições identificáveis.) |
+| [**Status**](status.md) | [**STATUS DO MCI**](mci-status.md)  | Obtém informações de status sobre o dispositivo. Esse também é um comando necessário; como alguns de seus sinalizadores não são necessários, eles também estão listados aqui. (Os itens opcionais dão suporte a dispositivos que usam mídia linear com posições identificáveis.) |
 | [**deixar**](stop.md)     | [**parada do MCI \_**](mci-stop.md)     | Interrompe a reprodução.                                                                                                                                                                                                                          |
 
 
 
- 
+ 
 
 Se um driver oferecer suporte a um comando básico, ele também deverá oferecer suporte a um conjunto padrão de sinalizadores para o comando.
 
@@ -96,30 +96,30 @@ Os comandos estendidos a seguir estão disponíveis com os tipos de dispositivo 
 
 | String                         | Mensagem                                 | Tipos de dispositivos            | Descrição                                                                                       |
 |--------------------------------|-----------------------------------------|-------------------------|---------------------------------------------------------------------------------------------------|
-| [**configurar**](configure.md) | [**configurar o MCI \_**](mci-configure.md) | digitalvideo            | Exibe uma caixa de diálogo de configuração.                                                              |
-| [**advertência**](cue.md)             | [**indicação de MCI \_**](mci-cue.md)             | digitalvideo, waveaudio | Prepara para reproduzir ou gravar.                                                                |
-| [**apagar**](delete.md)       | [**exclusão de MCI \_**](mci-delete.md)       | waveaudio               | Exclui um segmento de dados do arquivo de mídia.                                                       |
-| [fuga](escape.md)           | [**\_escape MCI**](mci-escape.md)       | videodisc               | Envia informações personalizadas para um dispositivo.                                                             |
-| [**Trave**](freeze.md)       | [**congelamento de MCI \_**](mci-freeze.md)       | overlay                 | Desabilita a aquisição de vídeo no buffer de quadros.                                                   |
-| [**Posicione**](put.md)             | [**PUT MCI**](mci-put.md)              | DigitalVideo, sobreposição   | Define as janelas de origem, de destino e de quadro.                                               |
-| [**State**](realize.md)     | [**percepção do MCI \_**](mci-realize.md)     | digitalvideo            | Instrui o dispositivo a selecionar e a perceber sua paleta em um contexto de dispositivo da janela exibida. |
-| [**SetAudio**](setaudio.md)   | [**\_áudio MCI**](mci-setaudio.md)  | digitalvideo            | Define os parâmetros de áudio para vídeo.                                                                  |
-| [**setvideo**](setvideo.md)   | [**VÍDEO do MCI \_**](mci-setvideo.md)  | digitalvideo            | Define os parâmetros de vídeo.                                                                            |
-| [**aviso**](signal.md)       | [**\_sinal MCI**](mci-signal.md)       | digitalvideo            | Identifica uma posição especificada com um sinal.                                                    |
-| [**ativa**](spin.md)           | [**rotação do MCI \_**](mci-spin.md)           | videodisc               | Inicia o disco girando ou interrompe a rotação do disco.                                         |
-| [**etapa**](step.md)           | [**\_etapa MCI**](mci-step.md)           | digitalvideo, videodisc | Etapas para executar um ou mais quadros para avançar ou reverter.                                             |
-| [**descongelar**](unfreeze.md)   | [**descongelar MCI \_**](mci-unfreeze.md)   | overlay                 | Habilita o buffer de quadros para adquirir dados de vídeo.                                                   |
-| [**cumulativo**](update.md)       | [**atualização do MCI \_**](mci-update.md)       | digitalvideo            | Redesenha o quadro atual no contexto do dispositivo.                                               |
-| [**posição**](where.md)         | [**MCI ONDE**](mci-where.md)          | DigitalVideo, sobreposição   | Obtém o retângulo que especifica a área de origem, destino ou quadro.                          |
-| [**Window**](window.md)       | [**\_janela MCI**](mci-window.md)       | DigitalVideo, sobreposição   | Controla a janela de exibição.                                                                      |
+| [**Configurar**](configure.md) | [**MCI \_ CONFIGURE**](mci-configure.md) | digitalvideo            | Exibe uma caixa de diálogo de configuração.                                                              |
+| [**Cue**](cue.md)             | [**MCI \_ CUE**](mci-cue.md)             | digitalvideo, waveaudio | Prepara-se para reprodução ou gravação.                                                                |
+| [**Excluir**](delete.md)       | [**MCI \_ DELETE**](mci-delete.md)       | Waveaudio               | Exclui um segmento de dados do arquivo de mídia.                                                       |
+| [Escapar](escape.md)           | [**ESCAPE \_ da MCI**](mci-escape.md)       | videodisc               | Envia informações personalizadas para um dispositivo.                                                             |
+| [**Congelar**](freeze.md)       | [**MCI \_ FREEZE**](mci-freeze.md)       | overlay                 | Desabilita a aquisição de vídeo para o buffer de quadros.                                                   |
+| [**Colocar**](put.md)             | [**MCI PUT**](mci-put.md)              | digitalvideo, sobreposição   | Define as janelas de origem, destino e quadro.                                               |
+| [**Perceber**](realize.md)     | [**MCI \_ REALIZE**](mci-realize.md)     | digitalvideo            | Informa ao dispositivo para selecionar e realizar sua paleta em um contexto de dispositivo da janela exibida. |
+| [**Setaudio**](setaudio.md)   | [**MCI \_ SETAUDIO**](mci-setaudio.md)  | digitalvideo            | Define parâmetros de áudio para vídeo.                                                                  |
+| [**setvideo**](setvideo.md)   | [**MCI \_ SETVIDEO**](mci-setvideo.md)  | digitalvideo            | Define parâmetros de vídeo.                                                                            |
+| [**Sinal**](signal.md)       | [**MCI \_ SIGNAL**](mci-signal.md)       | digitalvideo            | Identifica uma posição especificada com um sinal.                                                    |
+| [**Spin**](spin.md)           | [**ROTAÇÃO da MCI \_**](mci-spin.md)           | videodisc               | Inicia a rotação do disco ou impede a rotação do disco.                                         |
+| [**Passo**](step.md)           | [**ETAPA da \_ MCI**](mci-step.md)           | digitalvideo, videodisc | As etapas reproduzem um ou mais quadros para frente ou para trás.                                             |
+| [**Descongelar**](unfreeze.md)   | [**MCI \_ UNFREEZE**](mci-unfreeze.md)   | overlay                 | Permite que o buffer de quadros adquira dados de vídeo.                                                   |
+| [**Atualização**](update.md)       | [**ATUALIZAÇÃO \_ da MCI**](mci-update.md)       | digitalvideo            | Reintsimos o quadro atual no contexto do dispositivo.                                               |
+| [**Onde**](where.md)         | [**MCI WHERE**](mci-where.md)          | digitalvideo, sobreposição   | Obtém o retângulo que especifica a área de origem, destino ou quadro.                          |
+| [**Janela**](window.md)       | [**JANELA \_ MCI**](mci-window.md)       | digitalvideo, sobreposição   | Controla a janela de exibição.                                                                      |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

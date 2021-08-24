@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: c054a9d05410ddbe7ee7d11c5bd4adba9e0ce83b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7b5c580e847146cb2c3d0ccdaadf3a6755937a7c7935f13598e94f1fcf26ac44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752276"
 ---
 # <a name="stopservice-method-of-the-cim_bootservice-class"></a>Método StopService da \_ classe DS do CIM
 
@@ -45,7 +45,7 @@ Integer StopService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de sucesso, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
@@ -64,7 +64,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Sdoias. h</dt> </dl>     |
+| Cabeçalho<br/>                   | <dl> <dt>Sdoias. h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

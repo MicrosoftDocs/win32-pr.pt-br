@@ -4,21 +4,21 @@ description: Atributo Origin (VMLFrame) (VML)
 ms.assetid: 317c027e-5054-4543-ad98-2c21d1cf7154
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae9341eecea9ec1eae8aaf1d7b1ad729986a8249
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 874b857a2408927e296f82f0f9aa0a5e15f6da69b1e2af6eaf6ebe2c5df746d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768256"
 ---
 # <a name="origin-attribute-vmlframevml"></a>Atributo Origin (VMLFrame) (VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define a origem da região de recorte do quadro. Leitura/gravação. **VgVector2D**.
 
@@ -57,6 +57,6 @@ A origem da região de recorte é 100pt, 100pt.
 
 
 
- 
+ 
 
- 
+ 

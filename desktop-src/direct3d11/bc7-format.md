@@ -4,31 +4,31 @@ description: O formato BC7 é um formato de compactação de textura usado para 
 ms.assetid: DF333106-293E-4B3E-A1EB-B0BF0ADBAC72
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b9b64c3d4a8b5e960077a9f33de82ff08cd4bbc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0bd48826cc0c02be6d15a837c272442c0931e9660f507a90cb491acf4d5820ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858216"
 ---
 # <a name="bc7-format"></a>Formato BC7
 
 O formato BC7 é um formato de compactação de textura usado para compactação de alta qualidade de dados de RGB e RGBA.
 
--   [Sobre o formato BC7/DXGI \_ \_ BC7](/windows)
--   [Implementação de BC7](#bc7-implementation)
--   [Decodificando o formato BC7](#decoding-the-bc7-format)
+-   [Sobre BC7/DXGI \_ FORMAT \_ BC7](/windows)
+-   [Implementação bc7](#bc7-implementation)
+-   [Decodificação do formato BC7](#decoding-the-bc7-format)
 -   [Tópicos relacionados](#related-topics)
 
 Para obter informações sobre os modos de bloco do formato BC7, consulte [Referência do Modo de Formato BC7](bc7-format-mode-reference.md).
 
-## <a name="about-bc7dxgi_format_bc7"></a>Sobre o formato BC7/DXGI \_ \_ BC7
+## <a name="about-bc7dxgi_format_bc7"></a>Sobre BC7/DXGI \_ FORMAT \_ BC7
 
-BC7 é especificado pelos seguintes valores de \_ enumeração de formato DXGI:
+BC7 é especificado pelos seguintes valores de enumeração DXGI \_ FORMAT:
 
--   **Dxgi \_ BC7 de formato não \_ \_ Type**.
--   **Dxgi \_ FORMAT \_ BC7 \_ UNORM**.
--   **Dxgi \_ FORMATO \_ BC7 \_ UNORM \_ sRGB**.
+-   **DXGI \_ FORMAT \_ BC7 \_ TYPELESS**.
+-   **DXGI \_ FORMATAR \_ BC7 \_ UNORM**.
+-   **DXGI \_ FORMAT \_ BC7 \_ UNORM \_ SRGB**.
 
 O formato BC7 pode ser usado para o recursos de textura [Texture2D](/windows/desktop/direct3d10/d3d10-graphics-reference-resource-structures) (incluindo matrizes), Texture3D ou TextureCube (incluindo matrizes). Da mesma forma, esse formato se aplica a qualquer superfície de MIP-map associada a esses recursos.
 
@@ -44,13 +44,13 @@ O hardware de descompactação BC7 deve ter precisão de bit, ou seja, o hardwar
 
 Uma implementação de BC7 pode especificar um dos 8 modos, com o modo especificado no bit menos significativo do bloco de 16 bytes (128 bits). O modo é codificado por zero ou mais bits com um valor de 0 seguido por um 1.
 
-Um bloco BC7 pode conter vários pares de ponto de extremidade. Para os fins desta documentação, o conjunto de índices que correspondem a um par de pontos de extremidade pode ser chamado de "subconjunto". Além disso, em alguns modos de bloco, a representação do ponto de extremidade é codificada em um formulário que, novamente, para os fins desta documentação, deve ser chamada de "RBGP", onde o bit "P" representa um bit menos significativo compartilhado para os componentes de cor do ponto de extremidade. Por exemplo, se a representação de ponto de extremidade para o formato for "RGB 5.5.5.1", então o ponto de extremidade é interpretado como um valor RGB 6.6.6, onde o estado do bit P define o bit menos significativo de cada componente. Da mesma forma, para dados de origem com um canal alfa, se a representação para o formato for "RGBAP 5.5.5.5.1", o ponto de extremidade será interepreted como RGBA 6.6.6.6. Dependendo do modo de bloco, você pode especificar o bit menos significativo compartilhado para um ambos os pontos de extremidade de um subconjunto individualmente (2 bits P por subconjunto), ou compartilhados entre os pontos de extremidade de um subconjunto (1 bit P por subconjunto).
+Um bloco BC7 pode conter vários pares de ponto de extremidade. Para os fins desta documentação, o conjunto de índices que correspondem a um par de pontos de extremidade pode ser chamado de "subconjunto". Além disso, em alguns modos de bloco, a representação de ponto de extremidade é codificada em uma forma que, novamente, para os fins desta documentação, deve ser conhecida como "RBGP", em que o bit "P" representa um bit menos significativo compartilhado para os componentes de cor do ponto de extremidade. Por exemplo, se a representação de ponto de extremidade para o formato for "RGB 5.5.5.1", então o ponto de extremidade é interpretado como um valor RGB 6.6.6, onde o estado do bit P define o bit menos significativo de cada componente. Da mesma forma, para dados de origem com um canal alfa, se a representação para o formato for "RGBAP 5.5.5.5.1", o ponto de extremidade será intercalado como RGBA 6.6.6.6. Dependendo do modo de bloco, você pode especificar o bit menos significativo compartilhado para um ambos os pontos de extremidade de um subconjunto individualmente (2 bits P por subconjunto), ou compartilhados entre os pontos de extremidade de um subconjunto (1 bit P por subconjunto).
 
 Para os blocos de BC7 que não codificam explicitamente o componente alfa, um bloco BC7 consiste em bits de modo, bits de partição, pontos de extremidade compactados, índices compactados e um bit P opcional. Nesses blocos, os pontos de extremidade têm uma representação somente RGB e o componente alfa é decodificado como 1.0 para todos os texels nos dados de origem.
 
 Para os blocos de BC7 que tem componentes de cor e alfa combinados, um bloco consiste em bits de modo, pontos de extremidade compactados, índices compactados, bits de partição opcionais e um bit P. Nesses blocos, as cores de ponto de extremidade são expressas em formato RGBA e os valores de componente alfa são interpolados junto com os valores de componente de cor.
 
-Para os blocos BC7 que têm componentes de cor e alfa separados, um bloco consiste em bits de modo, bits de rotação, pontos de extremidade compactados, índices compactados, e um bit seletor de índice opcional. Esses blocos têm um R de vetor RGB efetivo \[ , G, B \] e um canal alfa escalar \[ um \] codificado separadamente.
+Para os blocos BC7 que têm componentes de cor e alfa separados, um bloco consiste em bits de modo, bits de rotação, pontos de extremidade compactados, índices compactados, e um bit seletor de índice opcional. Esses blocos têm um vetor RGB efetivo R, G, B e um canal \[ alfa escalar A codificado \] \[ \] separadamente.
 
 A tabela a seguir lista os componentes de cada tipo de bloco.
 
@@ -64,7 +64,7 @@ A tabela a seguir lista os componentes de cada tipo de bloco.
 
 
 
- 
+ 
 
 O BC7 define uma paleta de cores em uma linha aproximada entre dois pontos de extremidade. O valor de modo determina o número de pares de ponto de extremidade de interpolação por bloco. O BC7 armazena um índice de paleta por texel.
 
@@ -233,6 +233,6 @@ bitcount get_color_bitcount(block, mode)
 [Compactação de bloco de textura no Direct3D 11](texture-block-compression-in-direct3d-11.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,21 +4,21 @@ ROBOTS: NOINDEX, NOFOLLOW
 title: G (Monitor de Rede)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7e4318f09fdb0fcbcfdd00cf0deed4e47aaf77
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf508e0104b418542a671a0db7ff2ba9ba330eaf1485dc1daaa3613e7abaef85
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119910896"
 ---
 # <a name="g-network-monitor"></a>G (Monitor de Rede)
 
 <dl> <dt>
 
-<span id="_netmon_generic_formatter_gly"></span><span id="_NETMON_GENERIC_FORMATTER_GLY"></span>**Formatador genérico**
+<span id="_netmon_generic_formatter_gly"></span><span id="_NETMON_GENERIC_FORMATTER_GLY"></span>**formatação genérica**
 </dt> <dd>
 
-Um formatador de dados de propriedade que Monitor de Rede fornece. O formatador genérico pode formatar os dados que são exibidos no painel de detalhes da interface do usuário do Monitor de Rede. Quando desejar que Monitor de Rede use o formatador genérico, você deverá especificar a função **FormatPropertyInstance** no membro **InstanceData** da estrutura **PROPERTYINFO** de uma propriedade. Consulte também [saída de formatador genérico](generic-formatter-output.md)
+Um formatante de dados de propriedade que Monitor de Rede fornece. O formatante genérico pode formatar os dados exibidos no painel de detalhes da Monitor de Rede interface do usuário. Quando quiser Monitor de Rede o formatante genérico, especifique a função **FormatPropertyInstance** no membro **InstanceData** da estrutura **PROPERTYINFO** de uma propriedade. Confira também [a saída de formatação genérica](generic-formatter-output.md)
 
 </dd> </dl>
 

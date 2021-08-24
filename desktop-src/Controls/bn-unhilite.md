@@ -3,7 +3,7 @@ title: Código de notificação BN_UNHILITE (WinUser. h)
 description: Enviado quando o realce deve ser removido de um botão.
 ms.assetid: 9839a55b-9e9c-4c9c-8e92-347007ea27be
 keywords:
-- BN_UNHILITE de código de notificação controles do Windows
+- BN_UNHILITE código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 395901548103a7a678b4873e1fde52e259297ebb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 46d182baaa33ec3b3cc9dc905a7f65d71b8461265c406b28b0c6a0d5f9b59d12
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827576"
 ---
 # <a name="bn_unhilite-notification-code"></a>Código de notificação do bilhão \_ UNHILITE
 
 Enviado quando o realce deve ser removido de um botão.
 
 > [!Note]  
-> Este código de notificação é fornecido somente para compatibilidade com versões de 16 bits do Windows anteriores à versão 3,0. Os aplicativos devem usar o estilo de botão [**\_ OWNERDRAW BS**](button-styles.md) e a estrutura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) para essa tarefa.
+> este código de notificação é fornecido somente para compatibilidade com versões de 16 bits do Windows anteriores à versão 3,0. Os aplicativos devem usar o estilo de botão [**\_ OWNERDRAW BS**](button-styles.md) e a estrutura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-winuser-drawitemstruct) para essa tarefa.
 
  
 
@@ -70,9 +70,9 @@ BILHÃO \_ UNHILITE é o mesmo que o código de notificação não [ \_ enviado 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

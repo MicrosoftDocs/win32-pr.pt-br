@@ -1,10 +1,10 @@
 ---
-title: Enumeração de WINBIO_CREDENTIAL_STATE (WinBio \_ Types. h)
-description: Define os valores que especificam se uma credencial foi associada aos dados biométricos para um usuário final.
+title: WINBIO_CREDENTIAL_STATE enumeração (Tipos \_ Winbio.h)
+description: Define valores que especificam se uma credencial foi associada aos dados biométricos de um usuário final.
 ms.assetid: c24f1771-7a1f-403e-8100-dfb3f4cd77a1
 keywords:
-- API de Windows Biometric Framework de enumeração de WINBIO_CREDENTIAL_STATE
-- PWINBIO_CREDENTIAL_STATE Windows Biometric Framework API do ponteiro de enumeração
+- WINBIO_CREDENTIAL_STATE enumeração Windows API do Biometric Framework
+- PWINBIO_CREDENTIAL_STATE de enumeração Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f8b8292cbbaefeeda0f6bf349f55e8f825f1756
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce0e176479a68d39b017e852e17a73691b8349d7c6faa6be62130007a09dcef0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104294769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868056"
 ---
-# <a name="winbio_credential_state-enumeration"></a>\_Enumeração de estado de credencial WINBIO \_
+# <a name="winbio_credential_state-enumeration"></a>\_Enumeração WINBIO CREDENTIAL \_ STATE
 
-Define os valores que especificam se uma credencial foi associada aos dados biométricos para um usuário final. Essa enumeração é usada pela função [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate) .
+Define valores que especificam se uma credencial foi associada aos dados biométricos de um usuário final. Essa enumeração é usada pela [**função WinBioGetCredentialState.**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,14 +42,14 @@ typedef enum _WINBIO_CREDENTIAL_STATE {
 
 <dl> <dt>
 
-<span id="WINBIO_CREDENTIAL_NOT_SET"></span><span id="winbio_credential_not_set"></span>**\_credencial WINBIO \_ não \_ definida**
+<span id="WINBIO_CREDENTIAL_NOT_SET"></span><span id="winbio_credential_not_set"></span>**CREDENCIAL \_ WINBIO \_ NÃO \_ DEFINIDA**
 </dt> <dd>
 
 Uma credencial foi associada ao usuário final.
 
 </dd> <dt>
 
-<span id="WINBIO_CREDENTIAL_SET"></span><span id="winbio_credential_set"></span>**\_conjunto de credenciais WINBIO \_**
+<span id="WINBIO_CREDENTIAL_SET"></span><span id="winbio_credential_set"></span>**CONJUNTO DE CREDENCIAIS DO WINBIO \_ \_**
 </dt> <dd>
 
 Uma credencial não foi associada ao usuário final.
@@ -62,9 +62,9 @@ Uma credencial não foi associada ao usuário final.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Uma credencial não foi associada ao usuário final.
 
 <dl> <dt>
 
-[Enumerações de aplicativos cliente](client-application-enumerations.md)
+[Enumerações de aplicativo cliente](client-application-enumerations.md)
 </dt> <dt>
 
 [**WinBioGetCredentialState**](/windows/desktop/api/Winbio/nf-winbio-winbiogetcredentialstate)

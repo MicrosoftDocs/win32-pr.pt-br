@@ -1,28 +1,28 @@
 ---
-description: Ativação Just-in-time COM+
+description: Ativação Just-In-Time do COM+
 ms.assetid: 47b23cae-d5fc-4788-ab1c-93d6d8ee3f01
-title: Ativação Just-in-time COM+
+title: Ativação Just-In-Time do COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16c18d7916e815c6f5f71a44c26c968f53777597
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 832db356f8fe52efe6730923be3265b8189cda054eb581053229e1fce7430e6b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859186"
 ---
-# <a name="com-just-in-time-activation"></a>Ativação Just-in-time COM+
+# <a name="com-just-in-time-activation"></a>Ativação Just-In-Time do COM+
 
-A ativação JIT (just-in-time) é um serviço COM+ automático que pode ajudá-lo a usar os recursos do servidor com mais eficiência, particularmente ao escalar verticalmente seu aplicativo para fazer transações de alto volume.
+A ativação JIT (Just-In-Time) é um serviço COM+ automático que pode ajudá-lo a usar recursos de servidor com mais eficiência, especialmente ao escalar o aplicativo para fazer transações de alto volume.
 
-Os tópicos a seguir fornecem informações em segundo plano e tarefas sobre a ativação Just-in-time do COM+.
+Os tópicos a seguir fornecem informações em segundo plano e tarefas sobre a ativação just-in-time do COM+.
 
 
 
 | Tópico                                                                              | Descrição                                                                                                        |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Conceitos de ativação Just-in-time COM+](com--just-in-time-activation-concepts.md) | Fornece uma visão geral dos recursos e benefícios de habilitar o serviço de ativação JIT para seus componentes COM+. |
-| [Tarefas de ativação Just-in-time COM+](com--just-in-time-activation-tasks.md)       | Fornece instruções para configurar a ativação JIT para seus aplicativos COM+.                                       |
+| [Conceitos de ativação Just-In-Time do COM+](com--just-in-time-activation-concepts.md) | Fornece uma visão geral dos recursos e benefícios da habilitação do serviço de ativação JIT para seus componentes COM+. |
+| [Tarefas de ativação Just-In-Time do COM+](com--just-in-time-activation-tasks.md)       | Fornece instruções sobre como configurar a ativação JIT para seus aplicativos COM+.                                       |
 
 
 

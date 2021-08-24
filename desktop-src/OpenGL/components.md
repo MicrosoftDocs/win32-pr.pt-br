@@ -3,19 +3,19 @@ title: Componentes
 description: Componentes
 ms.assetid: 9fbd957d-ee6b-475f-8a04-51effa206ad5
 keywords:
-- OpenGL no Windows, componentes
+- OpenGL em Windows, componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c1294745938e245deda8296f2ce4d1df386b9f2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c11c8d23130393102f39b716e16c0a6433a40122ad176a525b40e2e1a21b0360
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105782179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868776"
 ---
 # <a name="components"></a>Componentes
 
-A implementação da Microsoft do OpenGL no Windows inclui os seguintes componentes:
+a implementação da Microsoft do OpenGL no Windows inclui os seguintes componentes:
 
 -   O conjunto completo de comandos OpenGL atuais
 
@@ -41,15 +41,15 @@ A implementação da Microsoft do OpenGL no Windows inclui os seguintes componen
 
 -   As funções WGL
 
-    Esse conjunto de funções conecta o OpenGL ao sistema de janelas do Windows. As funções gerenciam contextos de renderização, listas de exibição, funções de extensão e bitmaps de fontes. As funções WGL são análogas às extensões GLX que conectam OpenGL ao sistema de janelas X. Os nomes dessas funções têm um prefixo "WGL".
+    esse conjunto de funções conecta OpenGL ao sistema de janelas de Windows. As funções gerenciam contextos de renderização, listas de exibição, funções de extensão e bitmaps de fontes. As funções WGL são análogas às extensões GLX que conectam OpenGL ao sistema de janelas X. Os nomes dessas funções têm um prefixo "WGL".
 
--   Novas funções do Windows para formatos de pixel e buffer duplo
+-   novas funções de Windows para formatos de pixel e buffer duplo
 
     Essas funções dão suporte a formatos de pixel por janela e buffer duplo (para alterações de imagem suave) do Windows. Essas novas funções se aplicam somente a janelas de gráficos OpenGL.
 
- 
+ 
 
- 
+ 
 
 
 

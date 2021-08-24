@@ -1,11 +1,11 @@
 ---
 title: Other-Mailbox atributo
-description: Contém outros endereços de email adicionais em um formulário, como CCMAIL LtdKeever.
+description: Contém outros endereços de email adicionais em um formato como CCMAIL BruceKeever.
 ms.assetid: c7e49fbc-fb3a-487e-835b-ad2c1481425a
 ms.tgt_platform: multiple
 keywords:
-- Other-Mailbox atributo AD Schema
-- Esquema do AD do atributo otherMailbox
+- Esquema de Other-Mailbox do atributo AD
+- Esquema de AD do atributo otherMailbox
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "119704436"
 ---
 # <a name="other-mailbox-attribute"></a>Other-Mailbox atributo
 
-Contém outros endereços de email adicionais em um formulário, como CCMAIL: LtdKeever.
+Contém outros endereços de email adicionais em um formato como CCMAIL: BruceKeever.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------|
 | CN                | Other-Mailbox                                            |
-| Ldap-Display-Name | otherMailbox                                             |
+| LDAP-Display-Name | otherMailbox                                             |
 | Tamanho              | \-                                                       |
 | Privilégio de atualização  | Administrador de domínio                                     |
-| Frequência de atualização  | Sempre que o usuário é emitido um endereço de email adicional. |
+| Frequência de atualização  | Cada vez que o usuário recebe um endereço de email adicional. |
 | Attribute-Id      | 1.2.840.113556.1.4.651                                   |
-| System-Id-Guid    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
-| Syntax            | [**String(Unicode)**](s-string-unicode.md)              |
+| System-ID-GUID    | 0296c123-40da-11d1-a9c0-0000f80367c1                     |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)              |
 
 
 
@@ -58,10 +58,10 @@ Contém outros endereços de email adicionais em um formulário, como CCMAIL: Lt
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| Tem valor único       | Falso                                                              |
+| É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No Catálogo Global      | Falso                                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
+| No catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ Contém outros endereços de email adicionais em um formulário, como CCMAIL: Lt
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| Tem valor único       | Falso                                                              |
+| É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No Catálogo Global      | Falso                                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
+| No catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -100,10 +100,10 @@ Contém outros endereços de email adicionais em um formulário, como CCMAIL: Lt
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| Tem valor único       | Falso                                                              |
+| É de valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No Catálogo Global      | Falso                                                              |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
+| No catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |

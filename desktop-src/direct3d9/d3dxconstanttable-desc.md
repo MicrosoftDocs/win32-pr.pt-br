@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9shader.h
-ms.openlocfilehash: 7c53023952518182f68cf4a671ec47c6056a92a6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9fb881ce0871165d9df394bf8a76326b4f5d644692217b1bb901438b90cf7cef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103664021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119894056"
 ---
 # <a name="d3dxconstanttable_desc-structure"></a>\_Estrutura desc de D3DXCONSTANTTABLE
 

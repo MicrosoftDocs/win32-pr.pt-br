@@ -4,12 +4,12 @@ ms.assetid: a1015ddb-8d5c-40f7-97ac-4a1347644ae6
 title: Propriedade de resumo do modelo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36b3949e7028fd0b1b5f9ff3112f1a3d03c9b87e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da93d2d3a38f3c1853f3f936fe6f97b8550dcaeac70d4b553b8cb0362f41ee41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105775698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119893446"
 ---
 # <a name="template-summary-property"></a>Propriedade de resumo do modelo
 
@@ -43,23 +43,23 @@ Se a plataforma atual não corresponder a uma das plataformas especificadas na p
 
 Se a especificação da plataforma estiver ausente no valor da propriedade de **Resumo do modelo** , o instalador assumirá a arquitetura Intel.
 
-Se esse for um pacote de Windows Installer de 64 bits sendo executado em uma plataforma Intel64 (Itanium), digite Intel64 na propriedade **Resumo do modelo** .
+se esse for um pacote de Windows Installer de 64 bits sendo executado em uma plataforma Intel64 (Itanium), digite Intel64 na propriedade **resumo do modelo** .
 
-Se esse for um pacote de Windows Installer de 64 bits sendo executado em uma plataforma x64, digite x64 na propriedade de **Resumo do modelo** .
+se esse for um pacote de Windows Installer de 64 bits sendo executado em uma plataforma x64, digite x64 na propriedade de **resumo do modelo** .
 
-Se esse for um pacote de Windows Installer de 64 bits sendo executado em uma plataforma Arm64, digite Arm64 na propriedade **Resumo do modelo** .
+se esse for um pacote de Windows Installer de 64 bits sendo executado em uma plataforma Arm64, digite Arm64 na propriedade **resumo do modelo** .
 
-Um pacote Windows Installer não pode ser marcado como compatível com Intel64 e x64; por exemplo, o valor da propriedade de **Resumo do modelo** de Intel64, x64 é inválido.
+um pacote Windows Installer não pode ser marcado como compatível com Intel64 e x64; por exemplo, o valor da propriedade de **Resumo do modelo** de Intel64, x64 é inválido.
 
-Um pacote Windows Installer não pode ser marcado como compatível com plataformas de 32 bits e 64 bits; por exemplo, os valores de propriedade de **Resumo do modelo** , como Intel, x64 ou Intel, Intel64 são inválidos.
+um pacote Windows Installer não pode ser marcado como compatível com plataformas de 32 bits e 64 bits; por exemplo, os valores de propriedade de **Resumo do modelo** , como Intel, x64 ou Intel, Intel64 são inválidos.
 
 Inserir 0 (zero) no campo ID de idioma da propriedade **Resumo do modelo** ou deixar esse campo vazio, indica que o pacote é neutro de idioma.
 
-Se esse for um pacote Windows Installer sendo executado no Windows RT, insira o ARM de valor na propriedade de **Resumo do modelo** .
+se esse for um pacote Windows Installer sendo executado em Windows RT, insira o Arm de valor na propriedade de **resumo do modelo** .
 
 Os módulos de mesclagem são os únicos pacotes que podem ter vários idiomas. Somente um idioma pode ser especificado em um banco de dados do instalador de origem. Para obter mais informações, consulte [vários módulos de mesclagem de idiomas](multiple-language-merge-modules.md).
 
-A plataforma Alpha não tem suporte pelo Windows Installer.
+a plataforma Alpha não tem suporte pelo Windows Installer.
 
 **Windows Installer:** Não há suporte para a sintaxe a seguir:
 
@@ -78,7 +78,7 @@ Os exemplos a seguir não são valores válidos para a propriedade de **Resumo d
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
 
 
 

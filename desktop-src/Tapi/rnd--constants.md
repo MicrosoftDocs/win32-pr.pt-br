@@ -4,16 +4,16 @@ ms.assetid: 185bd906-c276-4075-9c23-eb112da2a7ca
 title: Constantes de RND_ (Rnderr. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54a89b6747fb9fef775bbf40fac472081567ff1a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2ed1b55b0ed18215fb17e27504c309c67b0cea3351acea6cffadc4b3ff31c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773366"
 ---
 # <a name="rnd_-constants"></a>Constantes de RND \_
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 As constantes a seguir podem ser retornadas como erros.
 
@@ -53,7 +53,7 @@ O nome do servidor é **nulo**, provavelmente porque [**ITConferenceBlob:: init*
 
 
 
-O método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) foi chamado, mas já existe uma conexão.
+o método [**ITDirectory:: Conexão**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) foi chamado, mas já existe uma conexão.
 
 
 </dt> </dl> </dd> <dt>
@@ -66,7 +66,7 @@ O método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-rend-itdirect
 
 
 
-O método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) não foi chamado ou falhou.
+o método [**ITDirectory:: Conexão**](/windows/desktop/api/Rend/nf-rend-itdirectory-connect) não foi chamado ou falhou.
 
 
 </dt> </dl> </dd> </dl>
@@ -78,7 +78,7 @@ O método [**ITDirectory:: Connect**](/windows/desktop/api/Rend/nf-rend-itdirect
 | Requisito | Valor |
 |-------------------------|-------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                               |
-| parâmetro<br/>       | <dl> <dt>Rnderr. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Rnderr. h</dt> </dl> |
 
 
 

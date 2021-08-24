@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: 3b11e9cb9a8425989e4ee513e0cfc18d2619ec4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae677a5dff2bcb7189b17c7d1477c95df5a5ae32b0065104b92e426e364d775d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749636"
 ---
 # <a name="orsetvalue-function"></a>Função ORSetValue
 
@@ -86,7 +86,7 @@ O tamanho das informações apontadas pelo parâmetro *lpData* , em bytes. Se os
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
 
@@ -102,8 +102,8 @@ Os tamanhos de valor são limitados pela memória disponível. Valores longos (m
 
 | Requisito | Valor |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuível<br/> | Biblioteca de registro offline do Windows versão 1,0 ou posterior<br/>                      |
-| parâmetro<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuível<br/> | Windows Biblioteca de registro offline versão 1,0 ou posterior<br/>                      |
+| Cabeçalho<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

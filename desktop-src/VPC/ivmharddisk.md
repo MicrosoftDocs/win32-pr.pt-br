@@ -15,16 +15,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 24d6df46e7c698676e3873dd17a854fd0b7d7933
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 525762f66798b95562958fb204119beda1d76a8b94a60a11a7171b0d0b2951e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768156"
 ---
 # <a name="ivmharddisk-interface"></a>Interface IVMHardDisk
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Fornece acesso a uma imagem de disco rígido. Ele pode ser acessado por meio da propriedade [**IVMHardDiskConnection:: HD**](ivmharddiskconnection-harddisk.md) ou do método [**IVMVirtualPC:: GetHardDisk**](ivmvirtualpc-getharddisk.md) .
 
@@ -43,7 +43,7 @@ A interface **IVMHardDisk** tem esses métodos.
 
 | Método                                 | Descrição                                                                                                                                                 |
 |:---------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Compacto**](ivmharddisk-compact.md) | Compacta uma imagem de disco rígido virtual de expansão dinâmica.<br/>                                                                                        |
+| [**Compactá**](ivmharddisk-compact.md) | Compacta uma imagem de disco rígido virtual de expansão dinâmica.<br/>                                                                                        |
 | [**Converter**](ivmharddisk-convert.md) | Converte qualquer disco rígido virtual em um disco rígido virtual de expansão dinâmica ou em um disco rígido virtual de tamanho fixo.<br/>                            |
 | [**Mescle**](ivmharddisk-merge.md)     | Mescla um disco rígido virtual diferencial com sua imagem de disco pai.<br/>                                                                              |
 | [**Mesclar**](ivmharddisk-mergeto.md) | Mescla um disco rígido virtual diferencial com todos os seus pais (até e incluindo o disco rígido virtual pai raiz) em um novo arquivo de disco rígido.<br/> |
@@ -77,11 +77,11 @@ A interface **IVMHardDisk** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMHardDisk é definido como ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
 
 

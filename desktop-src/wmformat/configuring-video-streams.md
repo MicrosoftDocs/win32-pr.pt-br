@@ -1,6 +1,6 @@
 ---
-title: Configurando fluxos de vídeo
-description: Configurando fluxos de vídeo
+title: configurando Fluxos de vídeo
+description: configurando Fluxos de vídeo
 ms.assetid: caffdfc1-3c35-4b7b-8643-5a9095cc11f6
 keywords:
 - fluxos, configurando fluxos de vídeo
@@ -8,14 +8,14 @@ keywords:
 - fluxos de vídeo, configurando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9d2389026dc1061064c5e687da60c3350ad94a4
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 22bc6e011f32d1ea9a9905c718ad8ff0c13f7d57650a30316ecfec6332978fdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105781362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809586"
 ---
-# <a name="configuring-video-streams"></a>Configurando fluxos de vídeo
+# <a name="configuring-video-streams"></a>configurando Fluxos de vídeo
 
 Os fluxos de vídeo são mais flexíveis em sua configuração do que os fluxos de áudio. Isso ocorre porque as propriedades dos quadros que compõem o vídeo podem variar muito de um arquivo para o outro. Ao recuperar o formato de codec para o codec que você está usando, você deve definir os valores a seguir para objetos de configuração de fluxo de vídeo.
 
@@ -34,7 +34,7 @@ Os fluxos de vídeo são mais flexíveis em sua configuração do que os fluxos 
 
 
 
- 
+ 
 
 O conteúdo de vídeo não é reproduzido corretamente, a menos que esteja codificado para um tamanho que seja um múltiplo de quatro para largura e altura. A exceção é um vídeo [*RGB*](wmformat-glossary.md) descompactado, que pode ser qualquer tamanho. Se você tentar definir um tamanho que não seja um múltiplo de quatro, um dos seguintes erros será retornado pelo gravador:
 
@@ -42,9 +42,9 @@ O conteúdo de vídeo não é reproduzido corretamente, a menos que esteja codif
 -   \_formato de saída NS E \_ inválido \_ \_
 -   NS \_ E \_ INVALIDPROFILE
 
-Se você estiver usando a codificação de taxa de bits variável, talvez seja necessário fazer outros ajustes. Para obter mais informações, consulte [Configuring VBR streams](configuring-vbr-streams.md).
+Se você estiver usando a codificação de taxa de bits variável, talvez seja necessário fazer outros ajustes. para obter mais informações, consulte [configuring VBR Fluxos](configuring-vbr-streams.md).
 
-Alguns codecs de vídeo do Windows Media dão suporte a vários níveis de complexidade. Os níveis de complexidade determinam os algoritmos que o codec usará ao codificar um fluxo de vídeo. O uso de um nível de complexidade alta exigirá mais capacidade de processamento para codificação e decodificação.
+alguns codecs de vídeo de mídia Windows dão suporte a vários níveis de complexidade. Os níveis de complexidade determinam os algoritmos que o codec usará ao codificar um fluxo de vídeo. O uso de um nível de complexidade alta exigirá mais capacidade de processamento para codificação e decodificação.
 
 Cada codec que dá suporte às configurações de complexidade expõe as seguintes configurações que você pode recuperar com o método [**IWMCodecInfo3:: GetCodecProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-getcodecprop) .
 
@@ -58,7 +58,7 @@ Cada codec que dá suporte às configurações de complexidade expõe as seguint
 
 
 
- 
+ 
 
 Para definir a complexidade de um fluxo de vídeo em um perfil, use o método [**IWMPropertyVault:: SetProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-setproperty) usando a propriedade g \_ wszComplexity. O valor definido deve ser menor ou igual à complexidade máxima com suporte para o codec.
 
@@ -66,18 +66,18 @@ Para definir a complexidade de um fluxo de vídeo em um perfil, use o método [*
 
 <dl> <dt>
 
-[**Configuração comum a todos os fluxos**](configuration-common-to-all-streams.md)
+[**configuração comum a todos os Fluxos**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
-[**Configurando fluxos**](configuring-streams.md)
+[**configurando Fluxos**](configuring-streams.md)
 </dt> <dt>
 
-[**Configurações de complexidade do vídeo**](video-complexity-settings.md)
+[**Configurações de complexidade de vídeo**](video-complexity-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

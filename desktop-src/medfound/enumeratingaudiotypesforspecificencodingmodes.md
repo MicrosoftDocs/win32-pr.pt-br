@@ -4,12 +4,12 @@ ms.assetid: d44960eb-da5e-4379-ba9d-cb804559dc53
 title: Enumerando tipos de áudio para modos de codificação específicos (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16a8b97afdd48cb1d7828f80778aa9fcf8dc1ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ec311c9ac4d879f8834d50353913e7fad1b6e50a9292a44444bc45376247636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828236"
 ---
 # <a name="enumerating-audio-types-for-specific-encoding-modes-microsoft-media-foundation"></a>Enumerando tipos de áudio para modos de codificação específicos (Microsoft Media Foundation)
 
@@ -19,9 +19,9 @@ Se você quiser usar um modo de codificação diferente de uma passagem CBR, dev
 
 ## <a name="identifying-quality-based-vbr-types"></a>Identificando tipos de VBR com base na qualidade
 
-O procedimento para identificar tipos de VBR com base na qualidade depende se o codificador está agindo como um DMO (objeto de mídia do DirectX) ou atuando como uma MFT (Media Foundation transformação). Para obter informações sobre quando um codificador atua como um DMO ou uma MFT, consulte as páginas de referência do codec individual em [objetos de codec](codecobjects.md).
+o procedimento para identificar tipos de VBR baseados em qualidade depende se o codificador está agindo como um objeto de mídia DirectX (DMO) ou atuando como uma Media Foundation transformação (MFT). para obter informações sobre quando um codificador atua como um DMO ou uma MFT, consulte as páginas de referência do codec individual em [objetos de codec](codecobjects.md).
 
-Quando um codificador de áudio está agindo como DMO e você configura o codificador para usar a VBR de uma passagem, ele enumera todos os tipos de saída com suporte. No entanto, normalmente você desejará selecionar um tipo de VBR de passagem com base no parâmetro de qualidade. O codificador coloca o valor de qualidade para os tipos de saída de VBR de uma passagem no membro **nAvgBytesPerSec** da estrutura **WAVEFORMATEX** apontada pelo **tipo de \_ mídia DMO \_ . pbFormat**.
+quando um codificador de áudio está agindo como um DMO e você configura o codificador para usar a VBR de uma passagem, ele enumera todos os tipos de saída com suporte. No entanto, normalmente você desejará selecionar um tipo de VBR de passagem com base no parâmetro de qualidade. o codificador coloca o valor de qualidade para os tipos de saída de VBR de uma passagem no membro **nAvgBytesPerSec** da estrutura **WAVEFORMATEX** apontada por **DMO \_ tipo de mídia \_ . pbFormat**.
 
 Esse valor é armazenado no seguinte formato: 0x7FFFFFXX, em que XX é o valor de qualidade (de 0 a 100). Por exemplo, o valor de **nAvgBytesPerSec** de 0x7FFFFF62 especifica o nível de qualidade 98 (0x62 = 98).
 

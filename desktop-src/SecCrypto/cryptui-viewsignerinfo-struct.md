@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: da150da6b5115e20a78a4edca64a5c9a97f66132
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf35b4475047548e1744174717c238e99c6a744c17ef2fa76ce48217a4fc72aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119875856"
 ---
 # <a name="cryptui_viewsignerinfo_struct-structure"></a>\_Estrutura de \_ struct CRYPTUI VIEWSIGNERINFO
 
@@ -148,8 +148,8 @@ Uma matriz de ponteiros de estrutura [**PROPSHEETPAGE**](/windows/win32/api/prsh
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                      |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                      |
 | Nomes Unicode e ANSI<br/>   | **CRYPTUI \_ VIEWSIGNERINFO \_ STRUCTW** (Unicode) e **CRYPTUI \_ VIEWSIGNERINFO \_ structA** (ANSI)<br/> |
 
 

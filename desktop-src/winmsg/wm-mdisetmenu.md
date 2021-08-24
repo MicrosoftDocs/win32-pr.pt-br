@@ -4,12 +4,12 @@ ms.assetid: 5cc85032-5378-44a0-abd4-d583deaa3294
 title: Mensagem de WM_MDISETMENU (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74b90aed079482e2d2b666432f72c15d6ca27896
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fe87682691c5f113034c20c68cefd81ca3a7018bd44eb868c4f18551cacacd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772065"
 ---
 # <a name="wm_mdisetmenu-message"></a>Mensagem do WM \_ MDISETMENU
 
@@ -40,7 +40,7 @@ Um identificador para o novo menu de janela. Se esse parâmetro for **nulo**, o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HMENU**
 
@@ -64,7 +64,7 @@ Se uma janela filho MDI for maximizada e essa mensagem substituir o menu de jane
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

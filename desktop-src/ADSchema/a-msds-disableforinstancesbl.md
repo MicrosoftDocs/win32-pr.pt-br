@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 270d34d26117a7d615b133c46e00e913f1831500
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 664b5728d73aefc4a64d15e7ae444171e24b1b1e439eb04deb2b2e5cb57f5a22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804206"
 ---
 # <a name="ms-ds-disable-for-instances-bl-attribute"></a>ms-DS-Disable-for-instances-atributo BL
 
@@ -36,7 +36,7 @@ Referência de vínculo retroativa para o objeto [**MS-DS-Service-Connection-Poi
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1871                 |
 | System-ID-GUID    | 8f9d31dd-67ea-cd42-9b88-7cddb36c21f4    |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,7 +52,7 @@ Referência de vínculo retroativa para o objeto [**MS-DS-Service-Connection-Poi
 |------------------------|---------------------------------|
 | ID do link                | 2043                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

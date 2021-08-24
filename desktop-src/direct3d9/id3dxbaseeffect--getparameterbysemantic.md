@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c70d30d68d73d6c4dd33d483747be4293a255693
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fa00ef4585462f068e95fcefca8332acd46930efaf1bb1c108a471511ab63eb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119791006"
 ---
 # <a name="id3dxbaseeffectgetparameterbysemantic-method"></a>Método ID3DXBaseEffect:: GetParameterBySemantic
 
@@ -59,7 +59,7 @@ Cadeia de caracteres que contém o nome semântico.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 

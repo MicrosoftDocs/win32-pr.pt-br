@@ -4,7 +4,7 @@ description: Usado para especificar o tipo de ação remota.
 ms.assetid: C0DA0FA2-6FE0-4B40-B169-4592A1BE2AD6
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de enumeração RemoteSessionActionType
+- Enumeração RemoteSessionActionType Serviços de Área de Trabalho Remota
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 291bb9fdd2cadfef3881bc27a47f9fc1bb1bce68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a107ee44f058d776a906fef37b2e384ed6d8970224c44a6846b257c5f336c515
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865706"
 ---
 # <a name="remotesessionactiontype-enumeration"></a>Enumeração RemoteSessionActionType
 
@@ -49,7 +49,7 @@ typedef enum _RemoteSessionActionType {
 <span id="RemoteSessionActionCharms"></span><span id="remotesessionactioncharms"></span><span id="REMOTESESSIONACTIONCHARMS"></span>**RemoteSessionActionCharms**
 </dt> <dd>
 
-Exibe os botões na sessão remota.
+Exibe os charms na sessão remota.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Exibe a barra de aplicativos na sessão remota.
 <span id="RemoteSessionActionSnap"></span><span id="remotesessionactionsnap"></span><span id="REMOTESESSIONACTIONSNAP"></span>**RemoteSessionActionSnap**
 </dt> <dd>
 
-Encaixa o aplicativo na sessão remota. Esta opção foi preterida e não deve ser usada.
+Encaixa o aplicativo na sessão remota. Essa opção foi preterida e não deve ser usada.
 
 </dd> <dt>
 
@@ -77,16 +77,16 @@ Faz com que a tela inicial seja exibida na sessão remota.
 <span id="RemoteSessionActionAppSwitch"></span><span id="remotesessionactionappswitch"></span><span id="REMOTESESSIONACTIONAPPSWITCH"></span>**RemoteSessionActionAppSwitch**
 </dt> <dd>
 
-Faz com que a janela de comutador do aplicativo seja exibida na sessão remota. Isso é o mesmo que o usuário pressionando Alt + Tab.
+Faz com que a janela de opção do aplicativo seja exibida na sessão remota. Isso é o mesmo que o usuário pressionando Alt+Tab.
 
 </dd> <dt>
 
 <span id="RemoteSessionActionActionCenter"></span><span id="remotesessionactionactioncenter"></span><span id="REMOTESESSIONACTIONACTIONCENTER"></span>**RemoteSessionActionActionCenter**
 </dt> <dd>
 
-Faz com que a central de ações seja exibida na sessão remota. Isso é o mesmo que o usuário pressionando Win + A.
+Faz com que a Central de Ações seja exibida na sessão remota. Isso é o mesmo que o usuário pressionando Win+A.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012 e Windows 8:** Não há suporte para esse valor antes do Windows Server 2016 e do Windows 10.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012 e Windows 8:** Esse valor não é suportado antes Windows Server 2016 e Windows 10.
 
 </dd> </dl>
 

@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7b7be04c149e2ac10c1a3e905678bd2b5f663cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8ce72d7cc26dc3fd7b60b7f1d4f26d2737980dfde88a1b31c79a59fb4335f96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770996"
 ---
 # <a name="imstscaxserver-property"></a>Propriedade IMsTscAx:: Server
 
@@ -102,11 +102,11 @@ Se os métodos forem bem-sucedidos, será retornado **S \_ OK** . Qualquer outro
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade deve ser definida antes de chamar o método [**Connect**](imstscax-connect.md) . É a única propriedade que deve ser definida antes da conexão.
+essa propriedade deve ser definida antes de chamar o método [**Conexão**](imstscax-connect.md) . É a única propriedade que deve ser definida antes da conexão.
 
 Essa propriedade só poderá ser definida se o controle não estiver no estado conectado. Essa propriedade retornará **E \_ falhará** se for chamada quando o controle estiver conectado. Você pode verificar o estado conectado usando a propriedade [**Connected**](imstscax-connected.md) .
 
-Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pserver* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Isso não é necessário para clientes de Visual Basic e de script.
+Esse método aloca a memória necessária para o buffer apontado pelo parâmetro *pserver* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . isso não é necessário para clientes de Visual Basic e de script.
 
 Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 
@@ -118,7 +118,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Asptlb. h</dt> </dl>    |
+| Cabeçalho<br/>                   | <dl> <dt>Asptlb. h</dt> </dl>    |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |

@@ -1,23 +1,23 @@
 ---
-description: Visualizando o projeto
+description: Visualizando o Project
 ms.assetid: 00d72a39-f848-47ea-8460-8b826684eeea
-title: Visualizando o projeto
+title: Visualizando o Project
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bdf38fe19e500cfe9bd9a8dfb77f7ff56528a2f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1d17d5fd0c87d98db2dac0a7ace97a72e2107eeb252561bbc535a5bd8b4a56d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103920000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119748256"
 ---
-# <a name="previewing-the-project"></a>Visualizando o projeto
+# <a name="previewing-the-project"></a>Visualizando o Project
 
 \[Essa API não tem suporte e pode ser alterada ou não estar disponível no futuro.\]
 
-Para visualizar o projeto, você precisa de um componente chamado *mecanismo de renderização*, que cria um grafo de filtro do DirectShow a partir de uma linha do tempo. O grafo de filtro é o que realmente renderiza o projeto. Você pode usar o mecanismo de renderização para visualizar um projeto ou gravar o arquivo de saída final.
+para visualizar o projeto, você precisa de um componente chamado *mecanismo de renderização*, que cria um DirectShow gráfico de filtro de uma linha do tempo. O grafo de filtro é o que realmente renderiza o projeto. Você pode usar o mecanismo de renderização para visualizar um projeto ou gravar o arquivo de saída final.
 
-Este artigo não entra em detalhes sobre o mecanismo de renderização. Para visualização, você só precisa de algumas chamadas de método. Você pode encontrar uma discussão mais completa, incluindo como gravar arquivos de saída, na [renderização de um projeto](rendering-a-project.md). O exemplo de código a seguir mostra como construir um grafo de visualização.
+Este artigo não entra em detalhes sobre o mecanismo de renderização. Para visualização, você só precisa de algumas chamadas de método. Você pode encontrar uma discussão mais completa, incluindo como gravar arquivos de saída, na [renderização de um Project](rendering-a-project.md). O exemplo de código a seguir mostra como construir um grafo de visualização.
 
 
 ```C++
@@ -38,7 +38,7 @@ Crie o mecanismo de renderização usando a função **CoCreateInstance** . Em s
 -   [**ConnectFrontEnd**](irenderengine-connectfrontend.md). Cria um gráfico de filtro parcial, com um pino de saída para cada grupo na linha do tempo.
 -   [**RenderOutputPins**](irenderengine-renderoutputpins.md). Conclui o grafo de visualização conectando cada pino de saída a um processador de áudio ou vídeo.
 
-Depois que o grafo for criado, você poderá visualizar o projeto executando o grafo, como faria com qualquer grafo de filtro do DirectShow. Primeiro, obtenha um ponteiro para o grafo de filtro chamando o método [**IRenderEngine:: GetFilterGraph**](irenderengine-getfiltergraph.md) .
+depois que o grafo for criado, você poderá visualizar o projeto executando o grafo, como faria com qualquer DirectShow grafo de filtro. Primeiro, obtenha um ponteiro para o grafo de filtro chamando o método [**IRenderEngine:: GetFilterGraph**](irenderengine-getfiltergraph.md) .
 
 
 ```C++
@@ -79,7 +79,7 @@ pRender->ScrapIt();
 
 <dl> <dt>
 
-[Carregando e visualizando um projeto](loading-and-previewing-a-project.md)
+[Carregando e visualizando um Project](loading-and-previewing-a-project.md)
 </dt> </dl>
 
  

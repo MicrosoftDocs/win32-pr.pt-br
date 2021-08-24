@@ -1,6 +1,6 @@
 ---
 title: Propriedades do codec
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Propriedades do codec
+description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | Propriedades do codec
 ms.assetid: 3d5748a0-b19b-4148-baf5-724d320bfa72
 keywords:
 - Propriedades do codec formato de mídia do Windows
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd750b12e7bce598373f9eda2b0d9fe43c4e6122
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f962ddaf0055731ddc80f6e901dc7621588ab3ca06162f1c7493749e1554eb9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104506428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119840226"
 ---
 # <a name="codec-properties"></a>Propriedades do codec
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

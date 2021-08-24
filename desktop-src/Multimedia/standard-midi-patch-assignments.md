@@ -12,16 +12,16 @@ keywords:
 - Especificação do modo MIDI geral
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8df7e02dea62696f1076bd4e5e3030081b0dbe3a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3559a57b55dfd45eeaf59ffd2f12967509473028dc3e298c30b37d6602719742
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105810302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805336"
 ---
 # <a name="standard-midi-patch-assignments"></a>Atribuições de patch de MIDI padrão
 
-As atribuições de patch MIDI padrão para a criação de arquivos MIDI para uso com o Windows são baseadas na especificação do modo MIDI geral da MMA (Associação de fabricantes MIDI). A seguir estão as atribuições de patch MIDI padrão.
+as atribuições de patch midi padrão para a criação de arquivos midi para uso com Windows se baseiam na especificação do modo midi geral da MMA (associação de fabricantes midi). A seguir estão as atribuições de patch MIDI padrão.
 
 
 
@@ -53,7 +53,7 @@ As atribuições de patch MIDI padrão para a criação de arquivos MIDI para us
 | oohs de voz 53              | seção de bronze de 61          | haste inglesa de 69      |
 | voz de sintetizador 54             | sintetizador de 62. bronze 1         | 70 Bassoon           |
 | 55 impacto de orquestração           | sintetizador de 63. bronze 2         | 71 clarinet          |
-| **Conexão**                   | **Líder do sintetizador**            | **Painel de sintetizador**        |
+| **Pipe**                   | **Líder do sintetizador**            | **Painel de sintetizador**        |
 | 72 Piccolo                 | 80 melodia 1 (quadrado)        | 88 percussão 1 (nova idade)   |
 | 73 Flute                   | 81 melodia 2 (Sawtooth)      | 89 percussão 2 (quente)      |
 | gravador 74                | 82 melodia 3 (Calliope Lead) | 90 percussão 3 (polisint) |
@@ -74,11 +74,11 @@ As atribuições de patch MIDI padrão para a criação de arquivos MIDI para us
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

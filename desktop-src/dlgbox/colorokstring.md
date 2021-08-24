@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86229c71f1234efb4b561ac73bc8aa20f6258cdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd55db4bb935880438290a83cd99c420ebcabf23ca8cb1bb238ea15f39e06247
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726276"
 ---
 # <a name="colorokstring-message"></a>Mensagem COLOROKSTRING
 
@@ -52,7 +52,7 @@ Um ponteiro para uma estrutura [**CHOOSECOLOR**](/windows/win32/api/commdlg/ns-c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o procedimento de gancho retornar zero, a caixa de diálogo **cor** aceitará a cor selecionada e fechará.
 

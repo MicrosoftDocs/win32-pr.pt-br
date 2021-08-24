@@ -15,16 +15,16 @@ keywords:
 - Implementando provedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e2bdb4a94ba6e693792508de5c573317299b0d3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0c8724f0761b5d7e5d361742734901990136a7a98c1b2f541b4fadb69c31a92d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861296"
 ---
 # <a name="implementing-a-client-side-proxy-ui-automation-provider"></a>Implementando um provedor de automação de interface do usuário de Client-Side (proxy)
 
-A automação da interface do usuário da Microsoft fornece um conjunto de proxies para a maioria dos controles padrão, como os usados nos aplicativos Microsoft Win32, Windows Forms e Windows Presentation Foundation (WPF). No entanto, muitos controles personalizados e controles de terceiros não implementam provedores nativos de automação da interface do usuário. Para ser acessível a aplicativos cliente de automação da interface do usuário, esses controles devem ser fornecidos com provedores do lado do cliente, também conhecidos como *provedores de proxy* ou *proxies*.
+a automação da interface do usuário da microsoft fornece um conjunto de proxies para a maioria dos controles padrão, como os usados nos aplicativos Microsoft Win32, Windows Forms e Windows Presentation Foundation (WPF). No entanto, muitos controles personalizados e controles de terceiros não implementam provedores nativos de automação da interface do usuário. Para ser acessível a aplicativos cliente de automação da interface do usuário, esses controles devem ser fornecidos com provedores do lado do cliente, também conhecidos como *provedores de proxy* ou *proxies*.
 
 Este tópico descreve como gravar um provedor de proxy para um controle sem suporte e adicioná-lo à lista de proxies usados por aplicativos cliente. Ele contém os seguintes tópicos:
 
@@ -68,7 +68,7 @@ Por padrão, a automação da interface do usuário pesquisa a tabela de fábric
 
 
 
- 
+ 
 
 Os proxies 7 e 8 são entradas duplicadas para o controle SysListView32. Sem modificação, o proxy 7 sempre é usado para o controle SysListView32 e o proxy 8 nunca é usado. O proxy 8 é usado somente para itens de lista visíveis e normalmente é usado por aplicativos cliente que funcionam apenas com elementos visíveis ou que têm requisitos de desempenho estritos. Esses clientes podem remover o proxy 7.
 
@@ -96,6 +96,6 @@ A tabela de proxies é representada por uma interface [**IUIAutomationProxyFacto
 [Guia do programador do provedor de automação de interface do usuário](uiauto-providerportal.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

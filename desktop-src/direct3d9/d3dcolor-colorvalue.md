@@ -1,7 +1,7 @@
 ---
-description: Inicializa uma cor com os valores de ponto flutuante de vermelho, verde, azul e alfa fornecidos.
+description: Inicializa uma cor com os valores de ponto flutuante vermelho, verde, azul e alfa fornecidos.
 ms.assetid: 61825e33-4150-47cd-97f2-2144434a45e2
-title: Macro D3DCOLOR_COLORVALUE (D3d9types. h)
+title: D3DCOLOR_COLORVALUE macro (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: 3d5bb780a5999d8931335da1e9f49ad8af88dc12
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f4ee10003e0f4fdeae937d8ac786b4d389a91ec0326c2d6288d10af2a63e2286
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751226"
 ---
-# <a name="d3dcolor_colorvalue-macro"></a>\_Macro D3DCOLOR ColorValue
+# <a name="d3dcolor_colorvalue-macro"></a>Macro COLORVALUE D3DCOLOR \_
 
-Inicializa uma cor com os valores de ponto flutuante de vermelho, verde, azul e alfa fornecidos.
+Inicializa uma cor com os valores de ponto flutuante vermelho, verde, azul e alfa fornecidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,7 +49,7 @@ Componente vermelho da cor. Esse valor deve ser um valor de ponto flutuante no i
 
 </dd> <dt>
 
-*m* 
+*G* 
 </dt> <dd>
 
 Componente verde da cor. Esse valor deve ser um valor de ponto flutuante no intervalo de 0,0 a 1,0.
@@ -63,16 +63,16 @@ Componente azul da cor. Esse valor deve ser um valor de ponto flutuante no inter
 
 </dd> <dt>
 
-*um* 
+*Um* 
 </dt> <dd>
 
 Componente alfa da cor. Esse valor deve ser um valor de ponto flutuante no intervalo de 0,0 a 1,0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor [**D3DCOLOR**](d3dcolor.md) que corresponde aos valores RGBA fornecidos.
+Retorna o [**valor D3DCOLOR**](d3dcolor.md) que corresponde aos valores de RGBA fornecidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Retorna o valor [**D3DCOLOR**](d3dcolor.md) que corresponde aos valores RGBA for
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

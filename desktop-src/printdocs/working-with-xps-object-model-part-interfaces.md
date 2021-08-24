@@ -4,12 +4,12 @@ ms.assetid: c52f7044-890d-47d1-83f8-bae1f8d83139
 title: Interfaces de parte do XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d81cbf17c26e4ba6c80199ee787b1ee11b28d260
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc93023f251d96f557dfc351949b58f7b9a0b67d308903d83b182de8f710e110
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823896"
 ---
 # <a name="xps-om-part-interfaces"></a>Interfaces de parte do XPS OM
 

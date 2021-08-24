@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae2f718c066c1b0cef347141f08e1ed1254e6bcc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a4b72ff96337637c90aaeaa48bfbb344f0d36e9658536cb6efa9c5399741063
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119891416"
 ---
 # <a name="jet_dbinfomisccbpagesize-property"></a>Propriedade JET_DBINFOMISC. cbPageSize
 
@@ -40,7 +40,7 @@ Obtém o tamanho da página do banco de dados. Um valor de 0 significa 4 página
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

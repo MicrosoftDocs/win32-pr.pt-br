@@ -16,12 +16,12 @@ api_location:
 api_name:
 - D3DPERF_QueryRepeatFrame
 targetos: Windows
-ms.openlocfilehash: c4054a0704fd0258483ee0d3d3d555cb5eabe7f9
-ms.sourcegitcommit: 517a888e0370b9ec64c451635f12d60245ff5ae3
+ms.openlocfilehash: dbc46ff05b6fa1846bb0e1ffc1fca928ca1d68ee38a43708c77a109b61a405da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "103640240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751236"
 ---
 # <a name="d3dperf_queryrepeatframe-function"></a>Função D3DPERF_QueryRepeatFrame
 
@@ -33,7 +33,7 @@ Determine se um criador de perfil de desempenho está solicitando que o quadro a
 BOOL WINAPI D3DPERF_QueryRepeatFrame( void );
 ```
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o valor de retorno for TRUE, o chamador deverá repetir a mesma sequência de chamadas. Se for FALSE, o chamador deverá continuar.
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5320f47a5ae4db5bd96232dfa0a1d55b54f29c25
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: f49ca0673d0796fc960b9a955381ad359cb291171be2106ec11fe690cabecb52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103664123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119892576"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatfloat-function-for-texturecubearray"></a>Função SampleGrad:: SampleGrad (S, float, float, float, float) para TextureCubeArray
 
@@ -127,7 +127,7 @@ Um valor opcional para fixe os valores de LOD de exemplo para. Por exemplo, se v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4b37362f77c150896c3781502d3af33df55df9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7b4dba9adbf42928f0a568b85ea5d70fe664d2f8b3f6c1c132b9cf42b958cffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705086"
 ---
 # <a name="ms-dfs-link-security-descriptor-v2-attribute"></a>atributo ms-DFS-link-Security-Descriptor-v2
 
@@ -55,7 +55,7 @@ Descritor de segurança do ponto de reanálise dos links do DFS no sistema de ar
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -76,7 +76,7 @@ Descritor de segurança do ponto de reanálise dos links do DFS no sistema de ar
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -97,7 +97,7 @@ Descritor de segurança do ponto de reanálise dos links do DFS no sistema de ar
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |

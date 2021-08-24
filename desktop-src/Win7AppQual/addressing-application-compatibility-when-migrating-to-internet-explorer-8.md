@@ -4,16 +4,16 @@ ms.assetid: 3F79CF5F-416D-4C06-AAAE-D935F36CD2E2
 title: Abordando a compatibilidade de aplicativos ao migrar para o Internet Explorer 8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f24fb4b0cbfb946f2385ddbd13ddc697987e659d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b806f7ed33e3ebd9ae4508c14b7fd285979de4fb8c90dbbac665025c97ed78e2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795886"
 ---
 # <a name="addressing-application-compatibility-when-migrating-to-internet-explorer-8"></a>Abordando a compatibilidade de aplicativos ao migrar para o Internet Explorer 8
 
-Esta seção fornece uma visão geral do teste de problemas de compatibilidade de aplicativos e correção desses problemas em aplicativos Web para o Windows Internet Explorer 8. Os tópicos a seguir descrevem as alterações no Internet Explorer 8 e as ferramentas e tecnologias para garantir a compatibilidade do seu aplicativo.
+esta seção fornece uma visão geral do teste de problemas de compatibilidade de aplicativos e correção desses problemas em aplicativos web para Windows o Internet Explorer 8. Os tópicos a seguir descrevem as alterações no Internet Explorer 8 e as ferramentas e tecnologias para garantir a compatibilidade do seu aplicativo.
 
 
 

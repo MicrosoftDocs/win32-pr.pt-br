@@ -4,12 +4,12 @@ description: Meio do componente (teta) e cos (teta) para teta em radianos.
 ms.assetid: 81FDEC8F-2C1C-4C60-A6DA-699C798F8316
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c03118ff9a1fc2d958eaa6eb1a550a6dbf672a2
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 18e0b8ba0f6a8ed5076b8918d23d42653fe661e334101257d19d3ad23ab27a60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107997013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788586"
 ---
 # <a name="sincos-sm4---asm"></a>Sincos (sm4-ASM)
 
@@ -77,7 +77,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
-| Modelo de Sombreador                                              | Suportado |
+| Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
 | [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sim       |

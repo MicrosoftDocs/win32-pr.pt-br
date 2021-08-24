@@ -1,7 +1,7 @@
 ---
-description: Função IWICBitmapFlipRotator_Initialize_Proxy function-proxy para o método Initialize.
+description: IWICBitmapFlipRotator_Initialize_Proxy função - função proxy para o método Initialize.
 ms.assetid: 860e8092-054d-489e-8ca1-fec43a039eca
-title: Função IWICBitmapFlipRotator_Initialize_Proxy
+title: IWICBitmapFlipRotator_Initialize_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 4a260d6e60c0ffdeb05aa064ae8abbb38818ac8c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8c40070130f07aa1e7cd654ac995acdc8754b38357fefdd72575d59991bdba3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119812456"
 ---
-# <a name="iwicbitmapfliprotator_initialize_proxy-function"></a>Função de proxy de \_ inicialização IWICBitmapFlipRotator \_
+# <a name="iwicbitmapfliprotator_initialize_proxy-function"></a>Função de Inicialização de Proxy IWICBitmapFlipRotator \_ \_
 
-Função de proxy para o método [**Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapfliprotator-initialize) .
+Função proxy para o [**método Initialize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapfliprotator-initialize)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ HRESULT IWICBitmapFlipRotator_Initialize_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)\***
 
-Ponteiro para este objeto [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator) .
+Ponteiro para este [**objeto IWICBitmapFlipRotator.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)
 
 </dd> <dt>
 
-*pISource* \[ no\]
+*pISource* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
@@ -60,7 +60,7 @@ A origem do bitmap de entrada.
 
 </dd> <dt>
 
-*Opções* \[ do no\]
+*opções* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicbitmaptransformoptions)**
@@ -73,7 +73,7 @@ O [**WICBitmapTransformOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicb
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -83,9 +83,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

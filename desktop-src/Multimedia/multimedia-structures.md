@@ -3,19 +3,19 @@ title: Estruturas de multimídia
 description: Estruturas de multimídia
 ms.assetid: afdf2730-d388-4700-88ad-dc6ccebd7854
 keywords:
-- Multimídia do Windows, estruturas
+- Windows multimídia, estruturas
 - multimídia, estruturas
 - referência de multimídia, estruturas
 - referência para multimídia, estruturas
 - estruturas de multimídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f31a95d2004443e25a60eb6c22010d20495ef0bc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7f3a67105f7b413758fbcd83ba6319cfdc01d2cab96da93efe51c1ed08aeb61d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806746"
 ---
 # <a name="multimedia-structures"></a>Estruturas de multimídia
 
@@ -156,6 +156,6 @@ As estruturas a seguir são usadas com multimídia.
 [Referência de multimídia](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

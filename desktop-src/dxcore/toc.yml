@@ -44,7 +44,7 @@
               items:
                 - name: GetFactory
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getfactory.md
-                - name: GetProperty
+                - name: Getproperty
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getproperty.md
                 - name: GetPropertySize
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapter-getpropertysize.md
@@ -65,7 +65,7 @@
             - name: IDXCoreAdapterFactory
               href: ./dxcore_interface/nn-dxcore_interface-idxcoreadapterfactory.md
               items:
-                - name: Createadapterlist
+                - name: CreateAdapterList
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterfactory-createadapterlist.md
                 - name: GetAdapterByLuid
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterfactory-getadapterbyluid.md
@@ -78,7 +78,7 @@
             - name: IDXCoreAdapterList
               href: ./dxcore_interface/nn-dxcore_interface-idxcoreadapterlist.md
               items:
-                - name: Getadapter
+                - name: GetAdapter
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getadapter.md
                 - name: GetAdapterCount
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getadaptercount.md
@@ -86,9 +86,9 @@
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-getfactory.md
                 - name: IsAdapterPreferenceSupported
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-isadapterpreferencesupported.md
-                - name: Isobsoleto
+                - name: IsStale
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-isstale.md
-                - name: Sort
+                - name: Classificar
                   href: ./dxcore_interface/nf-dxcore_interface-idxcoreadapterlist-sort.md
         - name: Estruturas de DXCore
           href: dxcore-structures.md
