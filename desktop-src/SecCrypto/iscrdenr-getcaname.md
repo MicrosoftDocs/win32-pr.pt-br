@@ -1,7 +1,7 @@
 ---
-description: Recupera o nome da autoridade de certificação (CA) especificada para um determinado modelo de certificado.
+description: Recupera o nome da AC (autoridade de certificação) especificada para um determinado modelo de certificado.
 ms.assetid: e921710a-7c74-4fda-91e1-fbad45889984
-title: 'Método ISCrdEnr:: getCAName'
+title: Método ISCrdEnr::getCAName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119960276"
 ---
-# <a name="iscrdenrgetcaname-method"></a>Método ISCrdEnr:: getCAName
+# <a name="iscrdenrgetcaname-method"></a>Método ISCrdEnr::getCAName
 
-O método **getCAName** recupera o nome da autoridade de [*certificação*](../secgloss/c-gly.md) (CA) especificada para um determinado modelo de certificado.
+O **método getCAName** recupera o nome da AC [*(autoridade*](../secgloss/c-gly.md) de certificação) especificada para um determinado modelo de certificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,24 +54,24 @@ SCrdEnr.getCAName( _
 
 <dl> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Um valor que determina se o nome refere-se ao nome da autoridade de certificação ou ao nome da máquina da autoridade de certificação. Se esse valor for SCARTAR \_ , registre o \_ \_ nome da máquina CA \_ (definido como 0x01) e o nome se referirá ao nome da máquina da autoridade de certificação; caso contrário, o nome se referirá ao nome da autoridade de certificação.
+Um valor que determina se o nome se refere ao nome da AC ou ao nome do computador da AC. Se esse valor for SCARD ENROLL CA MACHINE NAME (definido como 0x01), o nome se referirá ao nome do computador da AC; caso contrário, o nome se referirá ao nome \_ \_ da \_ \_ AC.
 
 </dd> <dt>
 
-*bstrCertTemplateName* \[ no\]
+*bstrCertTemplateName* \[ Em\]
 </dt> <dd>
 
 O nome do modelo de certificado.
 
 </dd> <dt>
 
-*pbstrCAName* \[ fora\]
+*pbstrCAName* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma cadeia de caracteres que retorna o nome da autoridade de certificação.
+Um ponteiro para uma cadeia de caracteres que retorna o nome da AC.
 
 </dd> </dl>
 
@@ -79,17 +79,17 @@ Um ponteiro para uma cadeia de caracteres que retorna o nome da autoridade de ce
 
 ### <a name="c"></a>C++
 
-Se o método for bem sucedido, o método retornará S \_ OK.
+Se o método for bem-sucedido, o método retornará S \_ OK.
 
-Se o método falhar, ele retornará um valor **HRESULT** que indica o erro. Para obter uma lista de códigos de erro comuns, consulte [valores comuns de HRESULT](common-hresult-values.md).
+Se o método falhar, ele retornará um **valor HRESULT** que indica o erro. Para ver uma lista de códigos de erro comuns, consulte [Valores comuns de HRESULT.](common-hresult-values.md)
 
 ### <a name="vb"></a>VB
 
-Uma cadeia de caracteres que representa o nome da autoridade de certificação.
+Uma cadeia de caracteres que representa o nome da AC.
 
 ## <a name="remarks"></a>Comentários
 
-O nome da autoridade de certificação padrão é o nome da lista de CAs disponível.
+O nome da AC padrão é o primeiro nome na lista de CAs disponíveis.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,9 +98,9 @@ O nome da autoridade de certificação padrão é o nome da lista de CAs dispon�
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr é definido como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr é definido como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

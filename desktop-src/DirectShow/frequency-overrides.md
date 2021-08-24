@@ -4,12 +4,12 @@ ms.assetid: 0e45d0a6-3c3e-462c-a8dc-c4f25b614b85
 title: Substituições de frequência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57177e4990cb40be271fc551718964faf1696d2d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 79a2c7663e70aa0e975cee52dc630453bea1ad4121a8c91d03564fe7d7a2cb4d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997833"
 ---
 # <a name="frequency-overrides"></a>Substituições de frequência
 
@@ -18,7 +18,7 @@ Uma quantidade significativa de esforço foi gasta para garantir que as frequên
 **HKEY \_ \_Computador local** \\ **software** \\ **Microsoft** \\ **TV System Services** \\ **TVAutoTune** \\ **TS0-1**
 
 > [!Note]  
-> A partir do Windows 7, a seguinte chave de registro redirecionada é usada para aplicativos x86 em execução em versões x64 do Windows:
+> a partir do Windows 7, a seguinte chave de registro redirecionada é usada para aplicativos x86 em execução em versões x64 do Windows:
 
  
 

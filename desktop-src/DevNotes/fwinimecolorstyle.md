@@ -1,5 +1,5 @@
 ---
-description: Especifica se a cor especificada é uma cor do Windows.
+description: Especifica se a cor especificada é uma Windows cor.
 ms.assetid: 0d2b2039-938c-4f9d-8ddc-9eb711f55009
 title: Função FWinIMEColorStyle
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 28731672f5f1aff385f9051ba8b641b7cdcdf83c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 723c74ca5017d7908423a9934c002b67ffbc755623da175cc7f1e361f40b42e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002306"
 ---
 # <a name="fwinimecolorstyle-function"></a>Função FWinIMEColorStyle
 
-Especifica se a cor especificada é uma cor do Windows.
+Especifica se a cor especificada é uma Windows cor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ BOOL __cdecl FWinIMEColorStyle(
 
 <dl> <dt>
 
-*pcolorstyle* \[ no\]
+*pcolorstyle* \[ Em\]
 </dt> <dd>
 
-Uma estrutura **IMECOLORSTY** retornada de uma função [**PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) ou [**PColorStyleTextFromIMEStyle**](pcolorstyletextfromimestyle.md) .
+Uma **estrutura IMECOLORSTY** retornada de [**uma função PColorStyleBackFromIMEStyle**](pcolorstylebackfromimestyle.md) ou [**PColorStyleTextFromIMEStyle.**](pcolorstyletextfromimestyle.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **true** quando a cor é uma cor do Windows.
+Retorna **TRUE** quando a cor é uma Windows cor.
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -3,7 +3,7 @@ title: Mensagem de LM_GETIDEALHEIGHT (commctrl. h)
 description: Mensagem de LM_GETIDEALHEIGHT – recupera a altura preferida de um link para a largura atual do controle.
 ms.assetid: bf6ef3c1-89bc-4c56-9384-085fd00234e1
 keywords:
-- Controles de LM_GETIDEALHEIGHT de mensagens do Windows
+- controles de Windows de mensagem de LM_GETIDEALHEIGHT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d6e82f259124e6da285ed2357d48ca07d5f8c08
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7b0cd4b56da08baefe36d9ce1d669c4dbc4939883005c1cd45e59760566b468b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119920436"
 ---
 # <a name="lm_getidealheight-message"></a>\_Mensagem GETIDEALHEIGHT de LM
 
@@ -52,9 +52,9 @@ Inteiro que representa a altura preferida do texto do link, em pixels.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

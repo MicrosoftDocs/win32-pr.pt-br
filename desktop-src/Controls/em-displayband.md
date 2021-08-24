@@ -3,7 +3,7 @@ title: Mensagem de EM_DISPLAYBAND (RichEdit. h)
 description: Exibe uma parte do conteúdo de um controle rich edit, conforme formatado anteriormente para um dispositivo usando a mensagem em \_ FormatRange.
 ms.assetid: 845513d0-f32b-418c-8255-a5caf2d56215
 keywords:
-- Controles de EM_DISPLAYBAND de mensagens do Windows
+- controles de Windows de mensagem de EM_DISPLAYBAND
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f51896a9ba5603e799609ab52989681ecf7bcac4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e67fc951940d76dced2851a01b7049b053f3e3c2b45f6eee95eb27bef633f59c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915936"
 ---
 # <a name="em_displayband-message"></a>\_Mensagem em DISPLAYBAND
 
@@ -43,7 +43,7 @@ Uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) que especifica a
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será **true**.
 
@@ -61,9 +61,9 @@ A faixa é o processo pelo qual uma única página de saída é gerada usando um
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

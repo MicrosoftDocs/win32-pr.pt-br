@@ -1,19 +1,19 @@
 ---
-description: Novo no Windows 7. Identifica uma propriedade que está relacionada à propriedade definida no arquivo de descrição da propriedade.
+description: Novo para Windows 7. Identifica uma propriedade relacionada à propriedade definida no arquivo de descrição da propriedade.
 ms.assetid: 30167942-141A-4f37-B019-0811BA654124
 title: relatedProperty
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cabde093a47a25834598659d3ad38e0847c1351d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4285c0f8b0731ba790cd57105f907cd4df85b6faa41c3f649588aca7ef457418
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938676"
 ---
 # <a name="relatedproperty"></a>relatedProperty
 
-Novo no Windows 7. Identifica uma propriedade que está relacionada à propriedade definida no arquivo de descrição da propriedade. Pode haver tantos elementos [relatedproperty]() dentro de um [relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) , conforme necessário.
+Novo para Windows 7. Identifica uma propriedade relacionada à propriedade definida no arquivo de descrição da propriedade. Pode haver tantos elementos [relatedProperty em]() [um relatedPropertyInfo](./propdesc-schema-relatedpropertyinfo.md) quanto necessário.
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,7 +57,7 @@ Novo no Windows 7. Identifica uma propriedade que está relacionada à proprieda
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento permite mapear uma propriedade para outra. Por exemplo, você pode mapear o texto da propriedade personalizada, fabrikam. StorageCapacity, para System. Capacity:
+Esse elemento permite mapear uma propriedade para outra. Por exemplo, você pode mapear o texto de sua propriedade personalizada, Fabrikam.StorageCapacity, para System.Capacity:
 
 
 ```

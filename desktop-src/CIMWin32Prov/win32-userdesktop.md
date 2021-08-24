@@ -1,8 +1,8 @@
 ---
-description: A \_ classe WMI de associação do Userdesktop do Win32 relaciona uma conta de usuário e configurações de área de trabalho que são específicas a ela.
+description: A classe WMI de associação Win32 UserDesktop relaciona uma conta de usuário e configurações de área de trabalho \_ específicas a ela.
 ms.assetid: 5ea83ad6-bd0a-4c16-85b2-e3e61ef05903
 ms.tgt_platform: multiple
-title: Classe Win32_UserDesktop
+title: Win32_UserDesktop classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 39b45ee7859fea9f1068123041a87309cf40c2d2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e4a80954117f96e09f760b6d99343746479bb35d373d06eaa3ac89ac5980a1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922626"
 ---
-# <a name="win32_userdesktop-class"></a>\_Classe Win32 Userdesktop
+# <a name="win32_userdesktop-class"></a>Classe UserDesktop do Win32 \_
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de associação do **\_ userdesktop do Win32** relaciona uma conta de usuário e configurações de área de trabalho que são específicas a ela.
+A classe [WMI](../wmisdk/retrieving-a-class.md) de associação **\_ Win32 UserDesktop** relaciona uma conta de usuário e configurações de área de trabalho específicas a ela.
 
-A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,42 +42,42 @@ class Win32_UserDesktop : CIM_ElementSetting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ userdesktop** tem estes tipos de membros:
+A **classe \_ UserDesktop do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ userdesktop** tem essas propriedades.
+A **classe \_ UserDesktop do Win32** tem essas propriedades.
 
 <dl> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ conta de userwin32**
+Tipo de dados: **Win32 \_ UserAccount**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**substituição**](../wmisdk/standard-qualifiers.md) ("elemento"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("conta de userwmi \| Win32 \_ ")
+Qualificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("Element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ UserAccount")
 </dt> </dl>
 
-Referência à instância que representa a conta de usuário cuja área de trabalho pode ser personalizada pela propriedade **Settings** dessa classe.
+Referência à instância que representa a conta de usuário cuja área de trabalho pode ser **personalizada** Configurações propriedade dessa classe.
 
 </dd> <dt>
 
 **Configuração**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ Desktop Win32**
+Tipo de dados: **Win32 \_ Desktop**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**substituição**](../wmisdk/standard-qualifiers.md) ("configuração"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("área de trabalho do WMI \| Win32 \_ ")
+Qualificadores: [**chave**](../wmisdk/key-qualifier.md), [**Substituir**](../wmisdk/standard-qualifiers.md) ("Configuração"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ Desktop")
 </dt> </dl>
 
 Referência à instância que representa as configurações da área de trabalho que servem para personalizar uma área de trabalho de conta de usuário específica.
@@ -86,7 +86,7 @@ Referência à instância que representa as configurações da área de trabalho
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ userdesktop** é derivada do [**CIM \_ ElementSetting**](cim-elementsetting.md).
+A **classe \_ UserDesktop do Win32** é derivada de [**\_ ElementSetting do CIM.**](cim-elementsetting.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ A classe **Win32 \_ userdesktop** é derivada do [**CIM \_ ElementSetting**](cim
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ A classe **Win32 \_ userdesktop** é derivada do [**CIM \_ ElementSetting**](cim
 
 <dl> <dt>
 
-[**\_ELEMENTSETTING CIM**](cim-elementsetting.md)
+[**Elemento \_ CIMSetting**](cim-elementsetting.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

@@ -1,25 +1,25 @@
 ---
-title: Glossário do sistema de arquivos projetado do Windows
-description: Termos especiais usados em ProjFS.
+title: Windows Glossário do Sistema de Arquivos Projetado
+description: Termos especiais usados no ProjFS.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: c6eac8faa83e2c898e4b1a3ada5c24ef81151b22
-ms.sourcegitcommit: a48b68a75323edfb902eb04fbe6d0ecba6988c21
+ms.openlocfilehash: 12b6e90d98fce3882aa5dc8d552f88e9cd9f389d24673fdc5caf175e180082f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "105773924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120030976"
 ---
-# <a name="windows-projected-file-system-glossary"></a>Glossário do sistema de arquivos projetado do Windows
+# <a name="windows-projected-file-system-glossary"></a>Windows Glossário do Sistema de Arquivos Projetado
 
-Termos especiais usados em ProjFS.
+Termos especiais usados no ProjFS.
 
 <dl>
 <dt>
 
-<span id="projfs.glossary_backing_store"></span><span id="PROJFS.GLOSSARY_BACKING_STORE"></span>**repositório de backup**
+<span id="projfs.glossary_backing_store"></span><span id="PROJFS.GLOSSARY_BACKING_STORE"></span>**armazenamento de backing**
 </dt>
 <dd>
 
@@ -32,7 +32,7 @@ Dados hierárquicos mantidos pelo provedor que são projetados no sistema de arq
 </dt>
 <dd>
 
-Um arquivo ou diretório que foi modificado localmente e não é mais um cache de seu estado no repositório do provedor.  Consulte [estado do cache na raiz de virtualização](cache-state.md).
+Um arquivo ou diretório que foi modificado localmente e não é mais um cache de seu estado no armazenamento do provedor.  Consulte [Estado do cache na Raiz de Virtualização.](cache-state.md)
 </dd>
 
 <dt>
@@ -41,34 +41,34 @@ Um arquivo ou diretório que foi modificado localmente e não é mais um cache d
 </dt>
 <dd>
 
-Um arquivo ou diretório que foi criado no sistema de arquivos local ou um arquivo que foi modificado, fazendo com que ele não seja mais um cache de seu estado no repositório de backup.  Consulte [estado do cache na raiz de virtualização](cache-state.md).
+Um arquivo ou diretório que foi criado no sistema de arquivos local ou um arquivo que foi modificado, tornando-o não mais um cache de seu estado no armazenamento de back-back.  Consulte [Estado do cache na Raiz de Virtualização.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_hydrated_placeholder"></span><span id="PROJFS.GLOSSARY_HYDRATED_PLACEHOLDER"></span>**espaço reservado para alimentador**
+<span id="projfs.glossary_hydrated_placeholder"></span><span id="PROJFS.GLOSSARY_HYDRATED_PLACEHOLDER"></span>**espaço reservado dratado**
 </dt>
 <dd>
 
-Um arquivo cujo conteúdo e metadados foram armazenados em cache no disco.  Consulte [estado do cache na raiz de virtualização](cache-state.md).
+Um arquivo cujo conteúdo e metadados foram armazenados em cache em disco.  Consulte [Estado do cache na Raiz de Virtualização.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_placeholder"></span><span id="PROJFS.GLOSSARY_PLACEHOLDER"></span>**reservado**
+<span id="projfs.glossary_placeholder"></span><span id="PROJFS.GLOSSARY_PLACEHOLDER"></span>**Espaço**
 </dt>
 <dd>
 
-Um arquivo ou diretório que não está totalmente presente no disco.  Consulte [estado do cache na raiz de virtualização](cache-state.md).
+Um arquivo ou diretório que não está totalmente presente no disco.  Consulte [Estado do cache na Raiz de Virtualização.](cache-state.md)
 </dd>
 
 <dt>
 
-<span id="projfs.glossary_tombstone"></span><span id="PROJFS.GLOSSARY_TOMBSTONE"></span>**marca para exclusão**
+<span id="projfs.glossary_tombstone"></span><span id="PROJFS.GLOSSARY_TOMBSTONE"></span>**Lápide**
 </dt>
 <dd>
 
-Um espaço reservado especial oculto que representa um item que foi excluído do sistema de arquivos local.  Consulte [estado do cache na raiz de virtualização](cache-state.md).
+Um espaço reservado oculto especial que representa um item que foi excluído do sistema de arquivos local.  Consulte [Estado do cache na Raiz de Virtualização.](cache-state.md)
 </dd>
 
 <dt>
@@ -77,7 +77,7 @@ Um espaço reservado especial oculto que representa um item que foi excluído do
 </dt>
 <dd>
 
-Um arquivo ou diretório que não existe fisicamente no disco, mas é projetado em resultados de enumeração.  Consulte [estado do cache na raiz de virtualização](cache-state.md).
+Um arquivo ou diretório que não existe fisicamente no disco, mas é projetado em resultados de enumeração.  Consulte [Estado do cache na Raiz de Virtualização.](cache-state.md)
 </dd>
 
 <dt>

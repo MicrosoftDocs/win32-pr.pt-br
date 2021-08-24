@@ -13,12 +13,12 @@ keywords:
 - funções de textura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e61dfeba97b0b208864a36f7bf60d0e85f397c9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2ca4079c282362e2a673e4a5e784f97388e8c8ac562b700304dad71c2a36dedd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105755331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036336"
 ---
 # <a name="gltexgen-functions"></a>Funções glTexGen
 
@@ -31,9 +31,9 @@ Essas funções controlam a geração de coordenadas de textura:
 -   [**glTexGenfv**](gltexgenfv.md)
 -   [**glTexGeniv**](gltexgeniv.md)
 
- 
+ 
 
- 
+ 
 
 
 

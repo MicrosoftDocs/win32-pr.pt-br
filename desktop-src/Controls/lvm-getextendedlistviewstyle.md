@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETEXTENDEDLISTVIEWSTYLE (commctrl. h)
-description: Obtém os estilos estendidos que estão em uso no momento para um determinado controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetExtendedListViewStyle do ListView.
+title: LVM_GETEXTENDEDLISTVIEWSTYLE mensagem (Commctrl.h)
+description: Obtém os estilos estendidos que estão atualmente em uso para um determinado controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView GetExtendedListViewStyle.
 ms.assetid: 5cfccdb8-a81c-4fa9-a4fa-19cf49bd6ce0
 keywords:
-- controles de Windows de mensagem de LVM_GETEXTENDEDLISTVIEWSTYLE
+- LVM_GETEXTENDEDLISTVIEWSTYLE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119968296"
 ---
-# <a name="lvm_getextendedlistviewstyle-message"></a>\_Mensagem GETEXTENDEDLISTVIEWSTYLE LVM
+# <a name="lvm_getextendedlistviewstyle-message"></a>Mensagem \_ GETEXTENDEDLISTVIEWSTYLE LVM
 
-Obtém os estilos estendidos que estão em uso no momento para um determinado controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetExtendedListViewStyle do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getextendedlistviewstyle) .
+Obtém os estilos estendidos que estão atualmente em uso para um determinado controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ ListView GetExtendedListViewStyle.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_getextendedlistviewstyle)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,7 +37,7 @@ Obtém os estilos estendidos que estão em uso no momento para um determinado co
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um **DWORD** que representa os estilos atualmente em uso para um determinado controle de exibição de lista. Esse valor pode ser uma combinação de [estilos de List-View estendidos](extended-list-view-styles.md).
+Retorna um **DWORD** que representa os estilos atualmente em uso para um determinado controle de exibição de lista. Esse valor pode ser uma combinação de [Estilos List-View Estendidos.](extended-list-view-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna um **DWORD** que representa os estilos atualmente em uso para um determi
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

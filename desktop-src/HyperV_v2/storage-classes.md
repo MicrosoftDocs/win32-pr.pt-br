@@ -4,12 +4,12 @@ ms.assetid: CF38F6E8-A43D-4A97-8055-6B17E323524C
 title: Classes de armazenamento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0c17ad2530a86e7f404fe19eaeb3ef5a1cd7895
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90c46efc17b3df5e1a509cec3565c6aaa7b65ff06d189951b100ac06d93a957e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105782801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829666"
 ---
 # <a name="storage-classes"></a>Classes de armazenamento
 
@@ -41,7 +41,7 @@ Veja a seguir as classes WMI de virtualização relacionadas ao armazenamento. T
 | [**Msvm \_ SCSIProtocolController**](msvm-scsiprotocolcontroller.md)<br/>             | Representa um controlador SCSI sintético.<br/>                                                                                                                                                                |
 | [**Msvm \_ StorageAlert**](msvm-storagealert.md)<br/>                                 | Representa um evento que é gerado cada vez que a propriedade **OperationalStatus** da classe [**Msvm \_ ResourcePool**](msvm-resourcepool.md) ou [**Msvm \_ LogicalDisk**](msvm-logicaldisk.md) é alterada.<br/> |
 | [**Msvm \_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md)<br/> | Representa as configurações especificamente relacionadas à alocação do armazenamento virtual.<br/>                                                                                                                         |
-| [**Msvm \_ StorageJob**](msvm-storagejob.md)<br/>                                     | Representa um trabalho de operação de armazenamento criado pelo serviço de gerenciamento de imagens Microsoft Hyper-V.<br/>                                                                                                          |
+| [**Msvm \_ StorageJob**](msvm-storagejob.md)<br/>                                     | representa um trabalho de operação de armazenamento criado pelo serviço de gerenciamento de imagens Microsoft Hyper-V.<br/>                                                                                                          |
 | [**Msvm \_ VirtualHardDiskSettingData**](msvm-virtualharddisksettingdata.md)<br/>     | Fornece dados de configuração para um disco rígido virtual.<br/>                                                                                                                                                         |
 | [**Msvm \_ VirtualHardDiskState**](msvm-virtualharddiskstate.md)<br/>                 | Fornece informações de estado para uma imagem de disco rígido virtual existente.<br/>                                                                                                                                    |
 

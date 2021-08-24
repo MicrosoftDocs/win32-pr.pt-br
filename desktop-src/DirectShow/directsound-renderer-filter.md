@@ -1,21 +1,21 @@
 ---
-description: Filtro de renderizador DirectSound
+description: Filtro do renderador DirectSound
 ms.assetid: ec6cc790-8c1f-4de4-a7ca-a7073894380e
-title: Filtro de renderizador DirectSound
+title: Filtro do renderador DirectSound
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae932340ea22213e0f9d7234599742d74208f632
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7e754c81ba9ac6d22141735ac1488218461d9ea63ef81f7bb947cb3e72fd81d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966316"
 ---
-# <a name="directsound-renderer-filter"></a>Filtro de renderizador DirectSound
+# <a name="directsound-renderer-filter"></a>Filtro do renderador DirectSound
 
-Esse filtro processa áudio usando DirectSound. Esse filtro é atualmente o processador de áudio padrão para som de onda.
+Esse filtro renderiza áudio usando DirectSound. Atualmente, esse filtro é o renderador de áudio padrão para som de forma de onda.
 
-Além de seus recursos básicos de renderização de som, esse filtro pode processar chamadas da API DirectSound. Use os métodos [**IAMDirectSound**](/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound) para definir e recuperar a janela que manipulará a reprodução do som. O renderizador de áudio do DirectSound é o filtro de renderização de áudio padrão para o DirectShow.
+Além de seus recursos básicos de renderização de som, esse filtro pode processar chamadas à API DirectSound. Use os [**métodos IAMDirectSound**](/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound) para definir e recuperar a janela que manipulará a reprodução de som. O Renderador de Áudio DirectSound é o filtro de renderização de áudio padrão para DirectShow.
 
 
 
@@ -26,8 +26,8 @@ Além de seus recursos básicos de renderização de som, esse filtro pode proce
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>Filtrar interfaces</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats"><strong>IAMAudioRendererStats</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iamclockslave"><strong>IAMClockSlave</strong></a>, <a href="/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound"><strong>IAMDirectSound</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol"><strong>IAMResourceControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a>, <a href="/windows/desktop/api/Control/nn-control-ibasicaudio"><strong>IBasicAudio</strong></a>, <strong>IDirectSound3DBuffer</strong>, <strong>IDirectSound3dListener</strong>, <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a></td>
+<td>Interfaces de filtro</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats"><strong>IAMAudioRendererStats,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iamclockslave"><strong>IAMClockKinge,</strong></a> <a href="/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound"><strong>IAMDirectSound,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol"><strong>IAMResourceControl</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter,</strong></a> <a href="/windows/desktop/api/Control/nn-control-ibasicaudio"><strong>IBasicAudio,</strong></a> <strong>IDirectSound3DBuffer,</strong> <strong>IDirectSound3dListener,</strong> <a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a></td>
 </tr>
 <tr class="even">
 <td>Tipos de mídia de pino de entrada</td>
@@ -44,10 +44,10 @@ Tipo de formato: FORMAT_WaveFormatEx<br/></td>
 </tr>
 <tr class="odd">
 <td>Interfaces de pino de entrada</td>
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-ipinconnection"><strong>IPinConnection</strong></a>, <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-ipinconnection"><strong>IPinConnection,</strong></a> <a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
 </tr>
 <tr class="even">
-<td>Tipos de mídia do pino de saída</td>
+<td>Tipos de mídia de pino de saída</td>
 <td>Não aplicável.</td>
 </tr>
 <tr class="odd">
@@ -55,11 +55,11 @@ Tipo de formato: FORMAT_WaveFormatEx<br/></td>
 <td>Não aplicável.</td>
 </tr>
 <tr class="even">
-<td>CLSID do filtro</td>
+<td>Filtrar CLSID</td>
 <td>CLSID_DSoundRender</td>
 </tr>
 <tr class="odd">
-<td>CLSID de página de propriedades</td>
+<td>CLSID da página de propriedades</td>
 <td>CLSID_AudioProperties, CLSID_AudioRendererAdvancedProperties</td>
 </tr>
 <tr class="even">
@@ -67,11 +67,11 @@ Tipo de formato: FORMAT_WaveFormatEx<br/></td>
 <td>quartz.dll</td>
 </tr>
 <tr class="odd">
-<td><a href="merit.md">Núcleo</a></td>
+<td><a href="merit.md">Mérito</a></td>
 <td>MERIT_PREFERRED</td>
 </tr>
 <tr class="even">
-<td><a href="filter-categories.md">Categoria do filtro</a></td>
+<td><a href="filter-categories.md">Categoria de filtro</a></td>
 <td>CLSID_AudioRendererCategory</td>
 </tr>
 </tbody>
@@ -83,28 +83,28 @@ Tipo de formato: FORMAT_WaveFormatEx<br/></td>
 
 ## <a name="remarks"></a>Comentários
 
-Esse filtro atua como um wrapper para um dispositivo de áudio. Para enumerar os dispositivos de áudio disponíveis no sistema do usuário, use a interface [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) com a categoria de processador de áudio (CLSID \_ AudioRendererCategory). Para cada dispositivo de áudio, a categoria de processador de áudio contém duas instâncias de filtro. Um deles corresponde ao renderizador do DirectSound e o outro corresponde ao filtro do [processador de áudio (WaveOut)](audio-renderer--waveout--filter.md) . A instância do DirectSound tem o nome amigável "DirectSound: *DeviceName*", em que *DeviceName* é o nome do dispositivo. A instância de WaveOut tem o nome amigável *DeviceName*.
+Esse filtro atua como um wrapper para um dispositivo de áudio. Para enumerar os dispositivos de áudio disponíveis no sistema do usuário, use a interface [**ICreateDevEnum**](/windows/desktop/api/Strmif/nn-strmif-icreatedevenum) com a categoria do renderador de áudio (CLSID \_ AudioRendererCategory). Para cada dispositivo de áudio, a categoria do renderador de áudio contém duas instâncias de filtro. Um deles corresponde ao Renderador DirectSound e o outro corresponde ao filtro Renderador de Áudio [(WaveOut).](audio-renderer--waveout--filter.md) A instância directSound tem o nome amigável "DirectSound: *DeviceName*," em *que DeviceName* é o nome do dispositivo. A instância waveOut tem o nome amigável *DeviceName*.
 
-A categoria de processador de áudio contém duas instâncias de filtro adicionais, chamadas "dispositivo DirectSound padrão" e "dispositivo wave out padrão". Eles correspondem ao dispositivo de som padrão, conforme escolhido pelo usuário por meio do painel de controle. Eles são, na verdade, mapeamentos para um dos pares descritos no parágrafo anterior. Por exemplo, se o sistema tiver dois dispositivos de áudio, o dispositivo A e o dispositivo B, a categoria de processador de áudio conterá o seguinte:
+A categoria do renderador de áudio contém duas instâncias de filtro adicionais, chamadas "Dispositivo DirectSound Padrão" e "Dispositivo WaveOut Padrão". Elas correspondem ao dispositivo de som padrão, conforme escolhido pelo usuário por meio do Painel de Controle. Na verdade, eles são mapeamentos para um dos pares descritos no parágrafo anterior. Por exemplo, se o sistema tiver dois dispositivos de áudio, o Dispositivo A e o Dispositivo B, a categoria do renderador de áudio conterá o seguinte:
 
 -   Dispositivo A
--   DirectSound: dispositivo A
+-   DirectSound: Dispositivo A
 -   Dispositivo B
--   DirectSound: dispositivo B
+-   DirectSound: Dispositivo B
 -   Dispositivo DirectSound padrão
--   Dispositivo wave out padrão
+-   Dispositivo WaveOut padrão
 
-Se o usuário selecionou o dispositivo A como o dispositivo padrão, "dispositivo DirectSound padrão" é equivalente a "DirectSound: dispositivo A" e "dispositivo wave out padrão" é equivalente a "dispositivo A". Se o usuário selecionar o dispositivo B como o dispositivo padrão, esses mapeamentos serão alterados.
+Se o usuário selecionou Dispositivo A como o dispositivo padrão, "Dispositivo DirectSound Padrão" será equivalente a "DirectSound: Dispositivo A" e "Dispositivo WaveOut Padrão" será equivalente a "Dispositivo A". Se o usuário selecionar o Dispositivo B como o dispositivo padrão, esses mapeamentos serão alteração.
 
-"Dispositivo DirectSound padrão" é atribuído a um mérito de um mérito \_ preferido. Os outros têm mérito de \_ mérito \_ não \_ usam. Portanto, o Intelligent Connect sempre escolherá o dispositivo DirectSound padrão.
+"Dispositivo DirectSound Padrão" recebe um crédito de \_ PREFERENCIAL. Os outros têm o valor DE TAMBÉM \_ NÃO \_ \_ USAR. Portanto, o Conexão inteligente sempre escolherá o dispositivo DirectSound padrão.
 
-O filtro do processador DirectSound dá suporte ao som 3D por meio das interfaces **IDirectSound3DBuffer** e **IDirectSound3dListener** do DirectSound. Você também pode consultar o filtro para as versões atuais dessas interfaces, **IDirectSound3DBuffer8** e **IDirectSound3dListener8**. Execute o grafo antes de chamar métodos nessas interfaces.
+O filtro do Renderador DirectSound dá suporte ao som 3D por meio das interfaces DirectSound **IDirectSound3DBuffer** e **IDirectSound3dListener.** Você também pode consultar o filtro para as versões atuais dessas interfaces, **IDirectSound3DBuffer8** e **IDirectSound3dListener8**. Execute o grafo antes de chamar métodos nessas interfaces.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

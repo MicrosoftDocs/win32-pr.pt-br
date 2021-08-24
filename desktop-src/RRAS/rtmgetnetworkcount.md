@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eab4babd1e9d98071b2fbe6ab30c9b92d4a23f0b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c721605988f15661030ddbeaadf4140fb716a089c87cc46fc2a8316bc2de9e42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120035666"
 ---
 # <a name="rtmgetnetworkcount-function"></a>Função RtmGetNetworkCount
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[esta api foi substituída pela api do [gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
 
 A função **RtmGetNetworkCount** recupera o número de redes para as quais o Gerenciador de tabela de roteamento tem rotas.
 
@@ -49,7 +49,7 @@ Especifica para qual tipo de rede obter informações de rota, por exemplo, IP o
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será a contagem de rede, o número de redes conhecidas para os protocolos de roteamento da família de protocolos especificada.
 
@@ -75,7 +75,7 @@ Se o valor de retorno for zero, nenhuma rota estará disponível ou a operação
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>RTM. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>RTM. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 

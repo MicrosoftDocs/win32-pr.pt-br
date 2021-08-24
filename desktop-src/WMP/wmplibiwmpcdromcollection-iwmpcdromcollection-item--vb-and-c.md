@@ -4,8 +4,8 @@ description: O método Item retorna uma interface IWMPCdrom no índice fornecido
 ms.assetid: 66e51aa9-39c8-4b79-9cc7-d7125516e87e
 keywords:
 - Método de item Windows Media Player
-- Método de item Windows Media Player, interface IWMPCdromCollection
-- Interface IWMPCdromCollection do Windows Media Player, método de item
+- método de Item Windows Media Player, interface IWMPCdromCollection
+- Windows Media Player de interface IWMPCdromCollection, método Item
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf0c4a0c79a17b1e6956ba640daec74f0cbb2825
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 80ab1ced32918e615230b3267d15dfbe5b2ba28377f6bbf265b735ea666153a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900106"
 ---
 # <a name="iwmpcdromcollectionitem-method"></a>Método IWMPCdromCollection:: item
 
@@ -60,7 +60,7 @@ Um **System. Int32** que é o índice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPCdrom** .
 
@@ -70,7 +70,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **Item** para exibir o especificador de unidade e o nome da lista de reprodução de cada CD disponível no computador em uma caixa de listagem. Se a unidade realmente contiver conteúdo de DVD, o Windows XP ou posterior será necessário. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir usa **Item** para exibir o especificador de unidade e o nome da lista de reprodução de cada CD disponível no computador em uma caixa de listagem. se a unidade realmente contiver conteúdo de DVD, Windows XP ou posterior será necessário. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
 
 
 ```CSharp

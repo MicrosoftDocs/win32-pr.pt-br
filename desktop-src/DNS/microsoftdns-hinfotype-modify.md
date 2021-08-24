@@ -5,7 +5,7 @@ ms.assetid: 8f8148f3-804f-4f99-8e79-606cd3cea660
 keywords:
 - Modificar o método DNS
 - Modificar o método DNS, MicrosoftDNS_HINFOType classe
-- MicrosoftDNS_HINFOType classe DNS, método Modify
+- MicrosoftDNS_HINFOType classe DNS , método Modify
 topic_type:
 - apiref
 api_name:

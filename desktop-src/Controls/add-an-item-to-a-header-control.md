@@ -1,37 +1,37 @@
 ---
-title: Como adicionar um item a um controle de cabeçalho
-description: Este tópico demonstra como adicionar um item a um controle de cabeçalho.
+title: Como adicionar um item a um controle de header
+description: Este tópico demonstra como adicionar um item a um controle de header.
 ms.assetid: DF71EF92-1726-46E1-A10F-57D3B07FB936
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1cf020c95a9dfe06bb06370533fdfd9416ddfef
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 4face974c1b04021afdc9e26976c023e1287439eb3d6d63c7ea7f9f34c5b27f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103917806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922046"
 ---
-# <a name="how-to-add-an-item-to-a-header-control"></a>Como adicionar um item a um controle de cabeçalho
+# <a name="how-to-add-an-item-to-a-header-control"></a>Como adicionar um item a um controle de header
 
-Este tópico demonstra como adicionar um item a um controle de cabeçalho. Um controle de cabeçalho normalmente tem vários itens de cabeçalho que definem as colunas do controle. Você pode adicionar um item a um controle de cabeçalho enviando a mensagem [**HDM \_ INSERTITEM**](hdm-insertitem.md) para o controle.
+Este tópico demonstra como adicionar um item a um controle de header. Um controle de header normalmente tem vários itens de header que definem as colunas do controle. Você pode adicionar um item a um controle de header enviando a mensagem [**\_ INSERTITEM do HDM**](hdm-insertitem.md) para o controle.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Use a mensagem [**HDM \_ INSERTITEM**](hdm-insertitem.md) para adicionar um item ao controle de cabeçalho. A mensagem deve incluir o endereço de uma estrutura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) . Essa estrutura define as propriedades do item de cabeçalho, que pode incluir uma cadeia de caracteres, uma imagem de bitmap, um tamanho inicial e um valor de 32 bits definido pelo aplicativo.
+Use a [**mensagem HDM \_ INSERTITEM**](hdm-insertitem.md) para adicionar um item ao controle de header. A mensagem deve incluir o endereço de uma [**estrutura HDITEM.**](/windows/win32/api/commctrl/ns-commctrl-hditema) Essa estrutura define as propriedades do item de header, que podem incluir uma cadeia de caracteres, uma imagem mapeada, um tamanho inicial e um valor de 32 bits definido pelo aplicativo.
 
-O exemplo a seguir ilustra como usar a mensagem [**HDM \_ INSERTITEM**](hdm-insertitem.md) e a estrutura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) para adicionar um item a um controle de cabeçalho. O novo item consiste em uma cadeia de caracteres que é justificada à esquerda dentro do retângulo do item.
+O exemplo a seguir ilustra como usar a mensagem [**\_ INSERTITEM do HDM**](hdm-insertitem.md) e a estrutura [**HDITEM**](/windows/win32/api/commctrl/ns-commctrl-hditema) para adicionar um item a um controle de header. O novo item consiste em uma cadeia de caracteres justificada à esquerda dentro do retângulo do item.
 
 
 
@@ -67,13 +67,13 @@ int DoInsertItem(HWND hwndHeader, int iInsertAfter,
 
 <dl> <dt>
 
-[Sobre controles de cabeçalho](header-controls.md)
+[Sobre controles de header](header-controls.md)
 </dt> <dt>
 
-[Referência de controle de cabeçalho](bumper-header-control-header-control-reference.md)
+[Referência de controle de header](bumper-header-control-header-control-reference.md)
 </dt> <dt>
 
-[Usando controles de cabeçalho](using-header-controls.md)
+[Usando controles de header](using-header-controls.md)
 </dt> </dl>
 
  

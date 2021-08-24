@@ -4,12 +4,12 @@ ms.assetid: 44c89bd8-774a-4b4f-9608-9a1926ef3b7d
 title: Propriedade PrimaryVolumeSpaceRequired
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ae1b210e57ee054191d908e4962c7568f0c6acf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 08c644c53b5a36c8ba834a52c22ca3ba2b192499cbf351f122d8ed2b6a66a57f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120042256"
 ---
 # <a name="primaryvolumespacerequired-property"></a>Propriedade PrimaryVolumeSpaceRequired
 
@@ -25,7 +25,7 @@ Observação Se esse valor for para ser exibido em um [controle de texto](text-c
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows instalador 4,0 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Evento de alteração de configuração de energia enviado com uma mensagem de janela do WM \_ POWERBROADCAST ou em um retorno de chamada de notificação HandlerEx para serviços.
+description: Evento de alteração de configuração de energia enviado com uma mensagem de janela WM POWERBROADCAST ou em um retorno de chamada de \_ notificação handlerEx para serviços.
 ms.assetid: 0bcadb85-47c5-48a9-b3f9-f0a1ca60b503
-title: Evento de PBT_POWERSETTINGCHANGE (WinUser. h)
+title: PBT_POWERSETTINGCHANGE evento (WinUser.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3e50a793e22cce7b0720fa7a020fb3d2d1b6e464ef619a0cf5c43ca256748d69
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119961686"
 ---
-# <a name="pbt_powersettingchange-event"></a>\_Evento PBT POWERSETTINGCHANGE
+# <a name="pbt_powersettingchange-event"></a>Evento PBT \_ POWERSETTINGCHANGE
 
-Evento de alteração de configuração de energia enviado com uma mensagem de janela do [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) ou em um retorno de chamada de notificação [**HandlerEx**](/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex) para serviços.
+Evento de alteração de configuração de energia enviado com uma mensagem de janela [**WM \_ POWERBROADCAST**](wm-powerbroadcast.md) ou em um retorno de chamada de [**notificação handlerEx**](/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex) para serviços.
 
 
 ```C++
@@ -31,10 +31,10 @@ WindowProc( HWND hwnd,      // handle to window
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Um identificador para a janela.
+Um alça para janela.
 
 </dd> <dt>*uMsg*</dt> <dd> 
 
@@ -61,7 +61,7 @@ Um identificador para a janela.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ configuração POWERBROADCAST**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting) .
+Ponteiro para uma [**estrutura POWERBROADCAST \_ SETTING.**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -91,10 +91,10 @@ Sem valor de retorno.
 [**HandlerEx**](/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex)
 </dt> <dt>
 
-[**POWERBROADCAST do WM \_**](wm-powerbroadcast.md)
+[**WM \_ POWERBROADCAST**](wm-powerbroadcast.md)
 </dt> <dt>
 
-[**configuração de POWERBROADCAST \_**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
+[**CONFIGURAÇÃO DO \_ POWERBROADCAST**](/windows/desktop/api/WinUser/ns-winuser-powerbroadcast_setting)
 </dt> </dl>
 
  

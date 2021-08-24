@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 71b0ab9ae84c2995062979f6c2821903189b56cf
-ms.sourcegitcommit: 0e611cdff84ff9f897c59e4e1d2b2d134bc4e133
+ms.openlocfilehash: 4f967d940fb8a117c58e85e951eeaa355d8d3dcc6cc97df432d7ce245744ca83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106187847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120054746"
 ---
 # <a name="creftimecreftime-constructor-reftimeh---no-parameters"></a>Construtor CReftime. CReftime (REFTIME. h)-sem parâmetros
 
@@ -50,7 +50,7 @@ O tempo de referência padrão é zero.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro  | REFTIME. h (incluir fluxos. h)                                                                                   |
+| parâmetro  | Reftime. h (incluir Fluxos. h)                                                                                   |
 | Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 

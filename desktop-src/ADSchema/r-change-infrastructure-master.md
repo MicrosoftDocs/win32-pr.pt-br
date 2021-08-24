@@ -1,10 +1,10 @@
 ---
-title: Change-infraestrutura-mestre estendido à direita
-description: Direito estendido necessário para alterar o proprietário da função de infraestrutura FSMO.
+title: Direito estendido Change-Infrastructure-Master
+description: Direito estendido necessário para alterar o proprietário da função FSMO da infraestrutura.
 ms.assetid: f91eb790-1a05-4fbb-b269-fd80e3499bdb
 ms.tgt_platform: multiple
 keywords:
-- Change-infraestrutura-mestre estendido esquema do AD
+- Esquema do AD estendido do Change-Infrastructure-Master
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bee4abf74860ba6564af65b9b94f44d08e4177d5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2de28ff2be401a84a48eb17b3982cb8ae41cbf79200d23538068f596f31ff75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922406"
 ---
-# <a name="change-infrastructure-master-extended-right"></a>Change-infraestrutura-mestre estendido à direita
+# <a name="change-infrastructure-master-extended-right"></a>Direito estendido Change-Infrastructure-Master
 
-Direito estendido necessário para alterar o proprietário da função de infraestrutura FSMO.
+Direito estendido necessário para alterar o proprietário da função FSMO da infraestrutura.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Alterar infraestrutura-mestre         |
-| Display-Name | Alterar mestre de infraestrutura         |
-| GUID de direitos  | cc17b1fb-33d9-11d2-97d4-00c04fd8d5cd |
+| CN           | Change-Infrastructure-Master         |
+| Display-Name | Alterar o Mestre de Infraestrutura         |
+| RIGHTS-GUID  | cc17b1fb-33d9-11d2-97d4-00c04fd8d5cd |
 
 
 
@@ -49,8 +49,8 @@ Direito estendido necessário para alterar o proprietário da função de infrae
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestrutura – atualização**](c-infrastructureupdate.md)<br/> |
-| Localização-exibição-ID | 50                                                                 |
+| Applies-To              | [**Atualização de infraestrutura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -60,8 +60,8 @@ Direito estendido necessário para alterar o proprietário da função de infrae
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestrutura – atualização**](c-infrastructureupdate.md)<br/> |
-| Localização-exibição-ID | 50                                                                 |
+| Applies-To              | [**Atualização de infraestrutura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -71,8 +71,8 @@ Direito estendido necessário para alterar o proprietário da função de infrae
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestrutura – atualização**](c-infrastructureupdate.md)<br/> |
-| Localização-exibição-ID | 50                                                                 |
+| Applies-To              | [**Atualização de infraestrutura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -82,8 +82,8 @@ Direito estendido necessário para alterar o proprietário da função de infrae
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestrutura – atualização**](c-infrastructureupdate.md)<br/> |
-| Localização-exibição-ID | 50                                                                 |
+| Applies-To              | [**Atualização de infraestrutura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -93,8 +93,8 @@ Direito estendido necessário para alterar o proprietário da função de infrae
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestrutura – atualização**](c-infrastructureupdate.md)<br/> |
-| Localização-exibição-ID | 50                                                                 |
+| Applies-To              | [**Atualização de infraestrutura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 
@@ -104,8 +104,8 @@ Direito estendido necessário para alterar o proprietário da função de infrae
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------|
-| Applies-To              | [**Infraestrutura – atualização**](c-infrastructureupdate.md)<br/> |
-| Localização-exibição-ID | 50                                                                 |
+| Applies-To              | [**Atualização de infraestrutura**](c-infrastructureupdate.md)<br/> |
+| Localization-Display-ID | 50                                                                 |
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: Método DeleteEx da classe Win32_PageFile – exclui o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto.
+description: Método DeleteEx da classe Win32_PageFile - exclui o arquivo de paging lógico (ou diretório) especificado no caminho do objeto.
 ms.assetid: ea31f92a-94b9-4d4d-abd9-6c304ac5caee
 ms.tgt_platform: multiple
-title: Método DeleteEx da classe Win32_PageFile
+title: Método DeleteEx da classe Win32_PageFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 34e27e80c3cfaea352ee97ad29aed0b7ca358546
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a9e1d63e112ae33f33309e05e1b100f4c25101d158a2f3275d35110af74a20df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119918436"
 ---
-# <a name="deleteex-method-of-the-win32_pagefile-class"></a>Método DeleteEx da classe de \_ arquivo de paginação Win32
+# <a name="deleteex-method-of-the-win32_pagefile-class"></a>Método DeleteEx da classe PageFile Win32 \_
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** exclui o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto. **DeleteEx** é uma versão estendida do método [**delete**](delete-method-in-class-win32-directory.md) .
+O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DeleteEx** exclui o arquivo de paging lógico (ou diretório) especificado no caminho do objeto. **DeleteEx** é uma versão estendida do [**método Delete.**](delete-method-in-class-win32-directory.md)
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,23 +43,23 @@ uint32 DeleteEx(
 
 <dl> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nome do arquivo ou diretório em que o método **DeleteEx** falhou. Esse parâmetro será **nulo** se o método tiver sucesso.
+Nome do arquivo ou diretório em que o **método DeleteEx** falhou. Esse parâmetro será **nulo** se o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ em, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Nomeia o arquivo ou diretório filho a ser usado como ponto de partida para **DeleteEx**. O parâmetro *StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada do método anterior. Se esse parâmetro for **nulo**, a operação será executada no arquivo ou diretório especificado na chamada de ExecMethod.
+Nomeia o arquivo ou diretório filho a ser usado como um ponto de partida **para DeleteEx.** O *parâmetro StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **NULL,** a operação será executada no arquivo ou diretório especificado na chamada ExecMethod.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo foi excluído com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido excluído com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -147,7 +147,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -162,20 +162,20 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Arquivo de paginação Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

@@ -13,10 +13,10 @@ ms.locfileid: "119986656"
 ---
 # <a name="vml-font-attribute"></a>Atributo de fonte VML
 
-este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -24,27 +24,27 @@ Especifica um valor composto de atributos de fonte. Leitura/gravação. **Cadeia
 
 **Aplica-se a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Textpath](msdn-online-vml-textpath-element.md)
 
 **Sintaxe de marca**
 
-<v: *Element* Style = "font: *expression* " >
+<v: *element* style="font: *expression* ">
 
 **Sintaxe do script**
 
-*elemento* . Style. Font = "*expressão*"
+*expressão element* .style.font=""
 
-*expressão* = de *elemento*. Style. Font
+*expressão* = *elemento*.style.font
 
 **Comentários**
 
-Define os atributos de uma fonte, incluindo família, estilo, peso, tamanho e variante. A ordem das definições na cadeia de caracteres é: **estilo de fonte**, **fonte-variante**, **espessura da fonte**, tamanho da **fonte**, altura da **linha** e **família de fontes**. Os valores são os mesmos que os atributos de estilo HTML padrão.
+Define os atributos de uma fonte, incluindo família, estilo, peso, tamanho e variante. A ordem das definições na cadeia de caracteres é: **font-style**, **font-variant**, **font-weight**, **font-size**, **line-height** e **font-family**. Os valores são os mesmos que os atributos de estilo HTML padrão.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A fonte do texto TextPath é itálico, versalete, negrito, 36 ponto Arial.
+A fonte do texto textpath é itálico, small-caps, negrito, 36 pontos Arial.
 
 
 ```HTML

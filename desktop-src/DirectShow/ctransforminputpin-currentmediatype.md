@@ -1,7 +1,7 @@
 ---
-description: Método CTransformInputPin. CurrentMediaType – o método CurrentMediaType recupera o tipo de mídia para a conexão do PIN atual.
+description: Método CTransformInputPin.CurrentMediaType – o método CurrentMediaType recupera o tipo de mídia para a conexão de pino atual.
 ms.assetid: d46f4d8e-9e9d-49d3-b823-f2f0fcf25383
-title: Método CTransformInputPin. CurrentMediaType (Transfrm. h)
+title: Método CTransformInputPin.CurrentMediaType (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 011f4eeda7f4a278baeceeadc7c21a822ae02b74
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2e313cc132f325b57a09e2b8609bc14f052aaaac69187ac4468ee1d5471d2442
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120053572"
 ---
-# <a name="ctransforminputpincurrentmediatype-method"></a>Método CTransformInputPin. CurrentMediaType
+# <a name="ctransforminputpincurrentmediatype-method"></a>Método CTransformInputPin.CurrentMediaType
 
-O `CurrentMediaType` método recupera o tipo de mídia para a conexão do PIN atual.
+O `CurrentMediaType` método recupera o tipo de mídia para a conexão de pino atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna uma referência à variável de membro [**CBasePin:: m \_ MT**](cbasepin-m-mt.md) .
+Retorna uma referência à [**variável de membro CBasePin::mt. \_**](cbasepin-m-mt.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna uma referência à variável de membro [**CBasePin:: m \_ MT**](cbasepin
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

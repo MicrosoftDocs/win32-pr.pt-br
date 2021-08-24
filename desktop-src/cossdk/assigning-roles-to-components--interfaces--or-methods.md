@@ -4,12 +4,12 @@ ms.assetid: 687d5692-4a83-4de8-b99d-859aaaddd16d
 title: Atribuindo funções a componentes, interfaces ou métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5efb66c9de865cbfcdc6e9cb047af92c95f6bc0a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 22fcec11a52182bc0c9ac6f643c6c9cd75cb7b7462c35bbdea1ad0bc401f6ed4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120029856"
 ---
 # <a name="assigning-roles-to-components-interfaces-or-methods"></a>Atribuindo funções a componentes, interfaces ou métodos
 

@@ -3,7 +3,7 @@ title: DTN_FORMAT código de notificação (commctrl. h)
 description: Enviado por um controle do seletor de data e hora (DTP) para solicitar que o texto seja exibido em um campo de retorno de chamada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: ce0ee230-638e-425f-9f34-c379342cea93
 keywords:
-- DTN_FORMAT de código de notificação controles do Windows
+- DTN_FORMAT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fadd11b090777d2226eeed85f32d2062e8340e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 75fb4279f6ec6b95ded673083a024d32785dd5156588852663e6c307f8351dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916266"
 ---
 # <a name="dtn_format-notification-code"></a>\_Código de notificação do formato DTN
 
@@ -47,7 +47,7 @@ Um ponteiro para uma estrutura [**NMDATETIMEFORMAT**](/windows/win32/api/commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O proprietário do controle deve retornar zero.
 
@@ -61,9 +61,9 @@ Manipular esse código de notificação permite que o proprietário do controle 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **DTN \_ FORMATW** (Unicode) e **DTN \_ formata** (ANSI)<br/>                     |
 
 

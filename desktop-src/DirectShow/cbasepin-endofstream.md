@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2324bae8ec1266dce2471049f8ba2f06b0c9e6e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f9e1549000be728da0118323303a60a23a5930ad68d3c7d2d2b6c9c92d54c3d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119916426"
 ---
 # <a name="cbasepinendofstream-method"></a>Método CBasePin. EndOfStream
 
@@ -40,13 +40,13 @@ HRESULT EndOfStream();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-O filtro deve passar notificações de fim de fluxo downstream para os Pins de entrada dos filtros conectados. Se o filtro for um renderizador, ele deverá lançar uma notificação de evento do [**EC \_ Complete**](ec-complete.md) para o Gerenciador do grafo de filtro. Para obter mais informações, consulte [fluxo de dados no grafo de filtro](data-flow-in-the-filter-graph.md).
+O filtro deve passar notificações de fim de fluxo downstream para os Pins de entrada dos filtros conectados. Se o filtro for um renderizador, ele deverá lançar uma notificação de evento do [**EC \_ Complete**](ec-complete.md) para o Gerenciador do grafo de filtro. para obter mais informações, consulte [Data Flow no Graph de filtro](data-flow-in-the-filter-graph.md).
 
 Na classe base, esse método não faz nada. Classes derivadas devem substituir esse método.
 
@@ -56,7 +56,7 @@ Na classe base, esse método não faz nada. Classes derivadas devem substituir e
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

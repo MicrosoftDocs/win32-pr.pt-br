@@ -1,10 +1,10 @@
 ---
-title: Estrutura de PROTOCOL_SPECIFIC_DATA (RTM. h)
-description: A \_ estrutura de dados específica de protocolo \_ contém memória reservada para dados específicos de um protocolo de roteamento específico.
+title: PROTOCOL_SPECIFIC_DATA estrutura (Rtm.h)
+description: A estrutura \_ PROTOCOL SPECIFIC DATA contém memória reservada para dados \_ específicos de um protocolo de roteamento específico.
 ms.assetid: b6c3a342-4726-4f7b-9511-dbe1393faf98
 keywords:
-- RAS da estrutura de PROTOCOL_SPECIFIC_DATA
-- RAS de ponteiro de estrutura de PPROTOCOL_SPECIFIC_DATA
+- ras PROTOCOL_SPECIFIC_DATA estrutura de PROTOCOL_SPECIFIC_DATA
+- PPROTOCOL_SPECIFIC_DATA ras de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3162aa377c051f6b329e993dfaca3bed17fae780
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe43e17827a4c6308c7bfd4499de60ec9105a9fa525ab5aad0226887d02ae8e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120036456"
 ---
-# <a name="protocol_specific_data-structure"></a>\_Estrutura de dados específica de protocolo \_
+# <a name="protocol_specific_data-structure"></a>ESTRUTURA \_ DE DADOS ESPECÍFICA DO \_ PROTOCOLO
 
-\[Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.\]
+\[Essa API foi superada pela API do Gerenciador de Tabelas de Roteamento versão [2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Os aplicativos devem usar a API do Gerenciador de Tabelas de Roteamento versão 2.\]
 
-A estrutura de **\_ \_ dados específica de protocolo** contém memória reservada para dados específicos de um protocolo de roteamento específico.
+A **estrutura PROTOCOL SPECIFIC \_ \_ DATA** contém memória reservada para dados específicos de um protocolo de roteamento específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,10 +43,10 @@ typedef struct _PROTOCOL_SPECIFIC_DATA {
 
 <dl> <dt>
 
-**\_Dados PSD**
+**Dados \_ PSD**
 </dt> <dd>
 
-Especifica uma matriz de variáveis **DWORD** . Essa memória é reservada para dados que são específicos para protocolos de roteamento.
+Especifica uma matriz de **variáveis DWORD.** Essa memória é reservada para dados específicos aos protocolos de roteamento.
 
 </dd> </dl>
 
@@ -58,8 +58,8 @@ Especifica uma matriz de variáveis **DWORD** . Essa memória é reservada para 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                        |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>RTM. h</dt> </dl> |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
@@ -67,16 +67,16 @@ Especifica uma matriz de variáveis **DWORD** . Essa memória é reservada para 
 
 <dl> <dt>
 
-[Referência da versão 1 do Gerenciador de tabela de roteamento](routing-table-manager-version-1-reference.md)
+[Referência do Gerenciador de Tabelas de Roteamento versão 1](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estruturas da versão 1 do Gerenciador de tabela de roteamento](routing-table-manager-version-1-structures.md)
+[Estruturas do Gerenciador de Tabelas de Roteamento versão 1](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**\_rota de IP RTM \_**](rtm-ip-route.md)
+[**RTM \_ IP \_ ROUTE**](rtm-ip-route.md)
 </dt> <dt>
 
-[**\_rota IPX do RTM \_**](rtm-ipx-route.md)
+[**RTM \_ IPX \_ ROUTE**](rtm-ipx-route.md)
 </dt> </dl>
 
  

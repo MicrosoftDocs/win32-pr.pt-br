@@ -1,35 +1,35 @@
 ---
-description: Reprodução de áudio de WMA multicanal no DirectShow
+description: Reprodução de áudio WMA multicanal DirectShow
 ms.assetid: 99c69290-545a-4368-8f51-74e547c9466d
-title: Reprodução de áudio de WMA multicanal no DirectShow
+title: Reprodução de áudio WMA multicanal DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 400ee9f0cede6c7268bcd3632365db1b423d114e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c3e7f7841677a7b7bc4087b2644632bbf6ec9cd48bccc15274506c6c57f96f89
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104296024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119830976"
 ---
-# <a name="multichannel-wma-audio-playback-in-directshow"></a>Reprodução de áudio de WMA multicanal no DirectShow
+# <a name="multichannel-wma-audio-playback-in-directshow"></a>Reprodução de áudio WMA multicanal DirectShow
 
-Para reproduzir um arquivo Multichannel de áudio do Windows Media no DirectShow, você deve definir a propriedade **MFPKEY \_ WMADEC \_ HIRESOUTPUT** diretamente no decodificador depois que ele estiver conectado ao leitor ASF do WM. Essa propriedade é definida no arquivo de cabeçalho wmcodecdsp. h, que está disponível no SDK do Windows.
+Para reproduzir um arquivo de áudio de mídia multicanal Windows no DirectShow, você deve definir a propriedade **MFPKEY \_ WCODE \_ HIRESOUTPUT** diretamente no decodificador depois que ele tiver sido conectado ao Leitor do WM ASF. Essa propriedade é definida no arquivo de header wmcodecdsp.h, que está disponível no SDK do Windows.
 
 > [!Note]  
-> Esse procedimento de configuração tem suporte apenas para arquivos que não são protegidos pelo Rights Management digital.
+> Esse procedimento de configuração tem suporte apenas para arquivos que não são protegidos pelo Digital Rights Management.
 
  
 
-As etapas básicas para habilitar a saída de multicanal são as seguintes:
+As etapas básicas para habilitar a saída multicanal são as seguintes:
 
-1.  Chame **RenderFile** para criar o gráfico de filtro.
-2.  Obtenha um ponteiro para o filtro de invólucro do DMO.
-3.  Desconecte o invólucro de DMO do processador de áudio.
-4.  Use a interface **IPropertyBag** para definir a propriedade **MFPKEY \_ WMADEC \_ HIRESOUTPUT** no decodificador. O nome da propriedade é definido pela constante global **g \_ wszWMACHiResOutput**.
-5.  Reconecte o invólucro de DMO e o processador de áudio.
+1.  Chame **RenderFile** para criar o grafo de filtro.
+2.  Obtenha um ponteiro para o filtro DMO Wrapper.
+3.  Desconecte DMO Wrapper do Renderdor de Áudio.
+4.  Use a interface **IPropertyBag** para definir a **propriedade \_ MFPKEY WCODE \_ HIRESOUTPUT** no decodificador. O nome da propriedade é definido pela constante global **g \_ wszWMACHiResOutput**.
+5.  Reconecte o DMO Wrapper e o Renderdor de Áudio.
 6.  Execute o grafo.
 
-Os trechos de código a seguir demonstram essas etapas. Esse código pressupõe que o arquivo de origem contém um fluxo de áudio e nenhum fluxo de vídeo. O Video Codec DMO não dá suporte à propriedade **MFPKEY \_ WMADEC \_ HIRESOUTPUT** .
+Os snippets de código a seguir demonstram essas etapas. Esse código presume que o arquivo de origem contém um fluxo de áudio e nenhum fluxo de vídeo. O codec de DMO de vídeo não dá suporte à **propriedade MFPKEY \_ W VIRALC \_ HIRESOUTPUT.**
 
 
 ```C++
@@ -91,7 +91,7 @@ HRESULT BuildGraph(IGraphBuilder *pGraph, const WCHAR *wFileName)
 
 
 
-As funções auxiliares do trecho de código anterior são implementadas da seguinte maneira:
+As funções auxiliares do snippet de código anterior são implementadas da seguinte forma:
 
 
 ```C++

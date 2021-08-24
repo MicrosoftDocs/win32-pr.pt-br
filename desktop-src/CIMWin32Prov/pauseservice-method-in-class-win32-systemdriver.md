@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a85c49a8ea81cc9af9a99f238bdafb473ca85050
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 087ffcda8aaa64588485015ed211713b0248cee73107a4c3726c278d61aba8e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120003086"
 ---
 # <a name="pauseservice-method-of-the-win32_systemdriver-class"></a>Método PauseService da \_ classe SystemDriver Win32
 
@@ -40,7 +40,7 @@ uint32 PauseService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se a solicitação **PauseService** tiver sido aceita, 1 (uma) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 
@@ -179,7 +179,7 @@ Há dependências circulares quando o serviço é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
 Há um serviço em execução com o mesmo nome.

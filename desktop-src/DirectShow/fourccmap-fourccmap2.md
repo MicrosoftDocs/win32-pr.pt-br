@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cbcd5e8a7c37d3265f508ac7632ffd4b18c8a00f
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 9cfd9cbb93a4d517391be0afe591d3378d9ecef32a0013ab452d31b9eecb6d59
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105749603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120043206"
 ---
 # <a name="fourccmapfourccmap-constructor-fourcch---fourcc-parameter"></a>Construtor FOURCCMap:: FOURCCMap (FOURCC. h) – parâmetro FOURCC
 
@@ -57,7 +57,7 @@ Se esse objeto for construído com o código **FOURCC** , um **GUID** será cria
 
 | Requisito | Valor |
 |-|-|
-| parâmetro  | FourCC. h (incluir fluxos. h) |
+| parâmetro  | Fourcc. h (incluir Fluxos. h) |
 | Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 ## <a name="see-also"></a>Confira também

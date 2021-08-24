@@ -4,12 +4,12 @@ ms.assetid: 45e80314-90b1-4fcf-9c8f-c9840ae1775b
 title: WPCEVENT_IM_FEATURE evento (Wpcevent. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee28f004560ed287bc3cb94cbee1bda876355834
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8046e755540a2282e84ea25c5278cf0c0b113264e78a3db31b6bd8a42de599cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951436"
 ---
 # <a name="wpcevent_im_feature-event"></a>\_Evento de \_ recurso WPCEVENT im
 
@@ -109,9 +109,9 @@ A descrição dos dados no recurso.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
 
 
 

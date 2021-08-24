@@ -13,19 +13,19 @@ ms.locfileid: "119966376"
 ---
 # <a name="directshow-reference"></a>DirectShow Referência
 
-Esta seção contém informações de referência para os principais DirectShow APIs e filtros.
+esta seção contém informações de referência para o núcleo DirectShow APIs e filtros.
 
--   [DirectShow Filtros](directshow-filters.md)
+-   [DirectShow Filter](directshow-filters.md)
 -   [Interfaces](interfaces.md)
 -   [DirectShow Estruturas](directshow-structures.md)
 -   [DirectShow Tipos enumerados](directshow-enumerated-types.md)
 -   [Constantes e GUIDs](constants-and-guids.md)
 -   [Funções](functions.md)
--   [Controle de ActiveX MSWebDVD](mswebdvd-activex-control.md)
+-   [controle de ActiveX de MSWebDVD](mswebdvd-activex-control.md)
 -   [Conjuntos de propriedades](property-sets.md)
--   [Referência da API do Codec](codec-api-reference.md)
--   [DirectShow Objetos](directshow-objects.md)
--   [DirectShow Base Classes](directshow-base-classes.md)
+-   [Referência de API de codec](codec-api-reference.md)
+-   [DirectShow Objeto](directshow-objects.md)
+-   [DirectShow Classes base](directshow-base-classes.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

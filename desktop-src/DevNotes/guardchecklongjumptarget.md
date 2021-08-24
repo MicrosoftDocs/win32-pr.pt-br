@@ -35,24 +35,24 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 02f659f77ab2bace129c9b9d9011b4c93e59b2f4
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: bcc8565401e09e8a4a3e0dfb221f240255b00bd0e91b9c2611b21db3ee1c0201
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "105756217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120002256"
 ---
 # <a name="guardchecklongjumptarget-function"></a>Função GuardCheckLongJumpTarget
 
 ## <a name="description"></a>Descrição
 
-Tenta verificar se o destino de um [longjmp](/cpp/c-runtime-library/reference/longjmp) é válido para um processo que tem a [proteção de fluxo de controle (cfg)](../secbp/control-flow-guard.md) habilitada.
+Tenta verificar se o destino de [um longjmp](/cpp/c-runtime-library/reference/longjmp) é válido para um processo que tem o [CFG (Control Flow Guard)](../secbp/control-flow-guard.md) habilitado.
 
 Se o endereço de destino corresponder a um mapeamento de imagem, os destinos válidos serão extraídos para o binário.
 A função usa esses destinos para validar o destino.
-Se o binário não tiver metadados que descrevam o conjunto de destinos de *longjmp* válidos, a função retornará **true**.
+Se o binário não tiver metadados que descrevam o conjunto de destinos *longjmp* válidos, a função retornará **TRUE.**
 
-Se o endereço de destino corresponder a um mapeamento que não seja de imagem, como no código JIT, uma política global somente leitura será consultada para determinar se o salto é permitido.
+Se o endereço de destino corresponder a um mapeamento de não imagem, como no código JIT, uma política global somente leitura será consultada para determinar se o salto é permitido.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -67,7 +67,7 @@ Se você especificar **GUARD_CHECK_LONGJUMP_NON_FATAL** (0x1), essa função nã
 
 ## <a name="returns"></a>Retornos
 
-**True** se o destino for válido, caso contrário, **false**.
+**TRUE** se o destino for válido, caso **contrário, FALSE.**
 
 ## <a name="remarks"></a>Comentários
 

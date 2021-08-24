@@ -1,8 +1,8 @@
 ---
-description: A \_ Propriedade Security do objeto SWbemLocator é usada para ler ou definir as configurações de segurança para um objeto SWbemLocator. Essa propriedade é um objeto SWbemSecurity.
+description: A propriedade Security do objeto SWbemLocator é usada para ler ou definir as configurações de \_ segurança para um objeto SWbemLocator. Essa propriedade é um objeto SWbemSecurity.
 ms.assetid: 75987bef-21ae-4420-b069-afab90499218
 ms.tgt_platform: multiple
-title: Propriedade SWbemLocator.Security_ (Wbemdisp. h)
+title: SWbemLocator.Security_ propriedade (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,23 +16,23 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: c2aa61ebc3ef48c82405d960d5de42ab8f23dc53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c5fa2ba102de1135c0019e2dcfb291f55672cabb00cea1c59d8a655f21c882e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955166"
 ---
-# <a name="swbemlocatorsecurity_-property"></a>Propriedade SWbemLocator. Security \_
+# <a name="swbemlocatorsecurity_-property"></a>Propriedade SWbemLocator.Security \_
 
-A **propriedade \_ Security** do objeto [**SWbemLocator**](swbemlocator.md) é usada para ler ou definir as configurações de segurança para um objeto **SWbemLocator** . Essa propriedade é um objeto [**SWbemSecurity**](swbemsecurity.md) .
+A **\_ propriedade Security** do [**objeto SWbemLocator**](swbemlocator.md) é usada para ler ou definir as configurações de segurança para um **objeto SWbemLocator.** Essa propriedade é um [**objeto SWbemSecurity.**](swbemsecurity.md)
 
 > [!Note]  
-> Definir a **propriedade \_ Security** de um objeto [**SWbemLocator**](swbemlocator.md) como **NULL** concede acesso ilimitado a todos os momentos. Para obter mais informações, consulte [**SWbemSecurity**](swbemsecurity.md).
+> Definir a **propriedade Security \_** de um objeto [**SWbemLocator**](swbemlocator.md) como **NULL** concede acesso ilimitado a todos o tempo todo. Para obter mais informações, consulte [**SWbemSecurity**](swbemsecurity.md).
 
  
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 Esta propriedade é somente para leitura.
 
@@ -49,7 +49,7 @@ SWbemLocator.Security_ As Object
 
 ## <a name="remarks"></a>Comentários
 
-As propriedades de um objeto **SWbemLocator. \_ Security** não têm valores padrão. Se você tentar obter o valor de [**SWbemSecurity. AuthenticationLevel**](swbemsecurity-authenticationlevel.md) ou [**SWbemSecurity. ImpersonationLevel**](swbemsecurity-impersonationlevel.md) em um objeto [**SWbemLocator**](swbemlocator.md) antes de defini-lo, ocorrerá um erro de [wbemErrFailed](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum) .
+As propriedades de um **objeto SWbemLocator.Security \_** não têm valores padrão. Se você tentar obter o valor [**de SWbemSecurity.AuthenticationLevel**](swbemsecurity-authenticationlevel.md) ou [**SWbemSecurity.ImpersonationLevel**](swbemsecurity-impersonationlevel.md) em um [**objeto SWbemLocator**](swbemlocator.md) antes de defini-lo, um [wbemErrFailed](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemerrorenum) resulta em um erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,11 +59,11 @@ As propriedades de um objeto **SWbemLocator. \_ Security** não têm valores pad
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMLOCATOR CLSID<br/>                                                          |
-| IID<br/>                      | ISWbemLocator de IID \_<br/>                                                           |
+| CLSID<br/>                    | CLSID \_ SWbemLocator<br/>                                                          |
+| IID<br/>                      | IID \_ ISWbemLocator<br/>                                                           |
 
 
 
@@ -74,19 +74,19 @@ As propriedades de um objeto **SWbemLocator. \_ Security** não têm valores pad
 [**SWbemLocator**](swbemlocator.md)
 </dt> <dt>
 
-[Criando um script ou aplicativo WMI](creating-a-wmi-application-or-script.md)
+[Criando um aplicativo ou script WMI](creating-a-wmi-application-or-script.md)
 </dt> <dt>
 
 [Executando operações privilegiadas usando o VBScript](executing-privileged-operations-using-vbscript.md)
 </dt> <dt>
 
-[Definindo a \_ segurança do processo do aplicativo cliente \_](setting-client-application-process-security.md)
+[Definindo a segurança \_ do processo de aplicativo \_ cliente](setting-client-application-process-security.md)
 </dt> <dt>
 
 [**Objeto SWbemSecurity**](swbemsecurity.md)
 </dt> <dt>
 
-[Protegendo uma conexão WMI remota](securing-a-remote-wmi-connection.md)
+[Proteger uma conexão WMI remota](securing-a-remote-wmi-connection.md)
 </dt> </dl>
 
  

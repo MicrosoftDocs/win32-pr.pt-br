@@ -1,9 +1,9 @@
 ---
 title: enable_allocate atributo
-description: O atributo \ Enable \_ ALLOCATE \ ACF especifica que o código stub do servidor deve habilitar o ambiente de gerenciamento de memória de stub.
+description: O atributo \ enable allocate\ ACF especifica que o código stub do servidor deve habilitar \_ o ambiente de gerenciamento de memória de stub.
 ms.assetid: 3a232a82-f114-4d8c-8b71-cf8860c77db3
 keywords:
-- enable_allocate do atributo MIDL
+- enable_allocate atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,12 +19,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119979616"
 ---
-# <a name="enable_allocate-attribute"></a>Habilitar \_ atributo de alocação
+# <a name="enable_allocate-attribute"></a>\_habilitar atributo allocate
 
-O atributo **\[ habilitar \_ alocação \]** ACF especifica que o código stub do servidor deve habilitar o ambiente de gerenciamento de memória de stub.
+O **\[ atributo \_ habilitar alocar \]** ACF especifica que o código stub do servidor deve habilitar o ambiente de gerenciamento de memória de stub.
 
 > [!Note]  
-> O atributo **\[ habilitar \_ alocação \]** é obsoleto e não tem mais suporte.
+> O **\[ atributo enable \_ allocate \]** está obsoleto e não tem mais suporte.
 
  
 
@@ -43,25 +43,25 @@ interface interface-name
 
 <dl> <dt>
 
-*lista de atributos opcionais* 
+*optional-attribute-list* 
 </dt> <dd>
 
 Especifica uma lista de zero ou mais atributos MIDL adicionais.
 
 </dd> <dt>
 
-*nome da interface* 
+*interface-name* 
 </dt> <dd>
 
-O nome da interface à qual o atributo de **\[ habilitação de \_ \] imrevestimento** será aplicado.
+O nome da interface à qual o **\[ atributo enable \_ \] alle** será aplicado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-No modo padrão, o stub de servidor habilita o ambiente de memória somente quando o atributo de **\[ \_ alocação \] de habilitação** é usado. O ambiente de gerenciamento de memória deve ser habilitado para que a memória possa ser alocada usando [**RpcSmAllocate**](/windows/desktop/api/rpcndr/nf-rpcndr-rpcsmallocate). No modo **uso** (quando você compila usando a opção [**/OSF**](-osf.md) ), o stub habilita esse ambiente automaticamente ou sob solicitação quando o atributo de **\[ \_ alocação \] de habilitação** é usado.
+No modo padrão, o stub do servidor habilita o ambiente de memória somente quando o **\[ atributo enable \_ allocate \]** é usado. O ambiente de gerenciamento de memória deve ser habilitado antes que a memória possa ser alocada usando [**RpcSmAllocate**](/windows/desktop/api/rpcndr/nf-rpcndr-rpcsmallocate). No **modo osf** (quando você compila usando a opção [**/osf),**](-osf.md) o stub habilita esse ambiente automaticamente ou na solicitação quando o atributo **\[ enable \_ allocate \]** é usado.
 
-O stub do lado do cliente pode ser sensível ao ambiente de gerenciamento de memória do **RPCSS** . Se um stub de cliente confidencial for executado quando o pacote **RPCSS** estiver desabilitado, os alocadores/desalocadores de usuário padrão serão chamados (por exemplo, o [ \_ usuário MIDL \_ alocar](/windows/desktop/Rpc/the-midl-user-allocate-function)o /  [ \_ usuário MIDL \_ gratuito](/windows/desktop/Rpc/the-midl-user-free-function)). Quando habilitado, o pacote **RPCSS** usa o par de alocador/desalocador do pacote. No modo padrão, o cliente é confidencial somente quando o atributo **\[ habilitar \_ alocação \]** é usado. Normalmente, o stub do lado do cliente opera no ambiente desabilitado. No modo **uso** (quando você compila usando a opção [**/OSF**](-osf.md) ), o cliente sempre é sensível ao ambiente de gerenciamento de memória do **RPCSS** e, portanto, o atributo **\[ habilitar \_ alocação \]** não afetará os stubs do cliente.
+O stub do lado do cliente pode ser sensível ao ambiente de gerenciamento de memória **Rpcss.** Se um stub de cliente sensível for executado quando o pacote **Rpcss** estiver desabilitado, os alocadores/desalocadores de usuário padrão serão chamados (por [exemplo, \_ \_](/windows/desktop/Rpc/the-midl-user-allocate-function)o usuário médio alocará o usuário /  [midl \_ \_](/windows/desktop/Rpc/the-midl-user-free-function)gratuito). Quando habilitado, o **pacote Rpcss** usa o par allocator/deallocator do pacote. No modo padrão, o cliente é sensível somente quando o **\[ atributo enable \_ allocate \]** é usado. Normalmente, o stub do lado do cliente opera no ambiente desabilitado. No **modo osf** (quando você compila usando a opção [**/osf),**](-osf.md) o cliente é sempre sensível ao ambiente de gerenciamento de memória **Rpcss** e, portanto, o atributo **\[ enable \_ allocate \]** não afetará os stubs do cliente.
 
 ## <a name="see-also"></a>Confira também
 
@@ -70,10 +70,10 @@ O stub do lado do cliente pode ser sensível ao ambiente de gerenciamento de mem
 [Arquivo de configuração de aplicativo (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[\_alocar usuário de MIDL \_](/windows/desktop/Rpc/the-midl-user-allocate-function)
+[midl \_ user \_ allocate](/windows/desktop/Rpc/the-midl-user-allocate-function)
 </dt> <dt>
 
-[usuário de MIDL \_ \_ gratuito](/windows/desktop/Rpc/the-midl-user-free-function)
+[midl \_ user \_ free](/windows/desktop/Rpc/the-midl-user-free-function)
 </dt> <dt>
 
 [**/osf**](-osf.md)

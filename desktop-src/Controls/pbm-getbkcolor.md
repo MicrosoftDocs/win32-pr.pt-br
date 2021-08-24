@@ -3,7 +3,7 @@ title: Mensagem de PBM_GETBKCOLOR (commctrl. h)
 description: Obtém a cor do plano de fundo da barra de progresso.
 ms.assetid: 9526ed78-08d9-468f-831b-72bb7c8c92d1
 keywords:
-- Controles de PBM_GETBKCOLOR de mensagens do Windows
+- controles de Windows de mensagem de PBM_GETBKCOLOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2240025629bbcc242ea7ed47be2e3db42ae73b15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1462d864df0440cd0567e6d6b1d04261818bb98ab4a6b5a803272e63abcb8d5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119919516"
 ---
 # <a name="pbm_getbkcolor-message"></a>Mensagem do GETBKCOLOR do PBM \_
 
@@ -35,7 +35,7 @@ Obtém a cor do plano de fundo da barra de progresso.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a cor do plano de fundo da barra de progresso.
 
@@ -51,9 +51,9 @@ Essa função afeta apenas o modo clássico, não qualquer estilo visual.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

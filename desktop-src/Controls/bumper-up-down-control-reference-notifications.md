@@ -1,6 +1,6 @@
 ---
-title: Notificações de Up-Down
-description: Notificações de Up-Down
+title: Up-Down de dados
+description: Up-Down de dados
 ms.assetid: f8e2c623-e5d7-4056-b0d6-3c42a4583be9
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119968746"
 ---
-# <a name="up-down-notifications"></a>Notificações de Up-Down
+# <a name="up-down-notifications"></a>Up-Down de dados
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [NM \_ RELEASEDCAPTURE (up-down)](nm-releasedcapture-up-down-.md)
--   [UDN \_ DELTAPOS](udn-deltapos.md)
+-   [DELTAPOS DA UDN \_](udn-deltapos.md)
 
  
 

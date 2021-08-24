@@ -3,7 +3,7 @@ title: Elemento DataItemName (ProcessingErrorDataType)
 description: Contém o nome do item de dados de evento que causou um erro quando os dados do evento foram processados.
 ms.assetid: 929ff7f1-a8fa-490b-aa58-ccaba05179dc
 keywords:
-- EventLog do elemento DataItemName
+- Elemento DataItemName EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 11e4629e33b1fb1f10eb01a230b689babee7b07e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 67e159426ec70f87f23d3c022a6f5ab3049f576daf14363875b70c9ea8e20076
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119904936"
 ---
 # <a name="dataitemname-processingerrordatatype-element"></a>Elemento DataItemName (ProcessingErrorDataType)
 
@@ -30,7 +30,7 @@ Contém o nome do item de dados de evento que causou um erro quando os dados do 
  />
 ```
 
-O elemento **DataItemName** é definido pelo tipo complexo [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) .
+O **elemento DataItemName** é definido pelo [**tipo complexo ProcessingErrorDataType.**](eventschema-processingerrordatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **DataItemName** é definido pelo tipo complexo [**ProcessingErrorDat
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

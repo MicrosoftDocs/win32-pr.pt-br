@@ -1,27 +1,27 @@
 ---
-description: Especifica o tipo de detecção de atividade de voz que o DSP de captura de voz executa.
+description: Especifica o tipo de detecção de atividade de voz que o DSP de Captura de Voz executa.
 ms.assetid: 59c8e348-8c08-4cf8-9c72-8d0f4fabc473
-title: Propriedade MFPKEY_WMAAECMA_FEATR_VAD (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_VAD propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e9e41b8ad80d909a0285b266587d02c09c08d794
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17e23662a8c6966a64140311f24c9af00dc53454cea19c025451698ddbbbd0dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119953506"
 ---
-# <a name="mfpkey_wmaaecma_featr_vad-property"></a>\_ \_ \_ Propriedade VAD do MFPKEY WMAAECMA
+# <a name="mfpkey_wmaaecma_featr_vad-property"></a>Propriedade \_ VAD MFPKEY WMAAECMACALR \_ \_
 
-Especifica o tipo de detecção de atividade de voz que o DSP de captura de voz executa.
+Especifica o tipo de detecção de atividade de voz que o DSP de Captura de Voz executa.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -29,11 +29,11 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de captura de voz](voicecapturedmo.md)
+-   [DSP de Captura de Voz](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Comentários
 
-O valor dessa propriedade é um membro da enumeração do [ \_ \_ modo de VAD do AEC](/windows/desktop/api/wmcodecdsp/ne-wmcodecdsp-aec_vad_mode) . A saída da detecção de atividade de voz é um número de 0 a 3, calculada para cada quadro de áudio. O DSP codifica o resultado no menor bit dos primeiros dois exemplos de áudio em cada quadro de áudio. O significado do valor depende do modo especificado.
+O valor dessa propriedade é um membro da enumeração [ \_ AEC VAD \_ MODE.](/windows/desktop/api/wmcodecdsp/ne-wmcodecdsp-aec_vad_mode) A saída da detecção de atividade de voz é um número de 0 a 3, calculado para cada quadro de áudio. O DSP codifica o resultado no bit mais baixo dos dois primeiros exemplos de áudio em cada quadro de áudio. O significado do valor depende do modo especificado.
 
 O código a seguir mostra como extrair os resultados dos dados de áudio. Neste exemplo, *pOutput* é um ponteiro para o início de um quadro de áudio nos dados de saída.
 
@@ -50,7 +50,7 @@ int AecDecodeVAD(short *pOutput)
 
 
 
-O valor padrão dessa propriedade é 0 (desabilitado). Antes de definir essa propriedade, você deve definir a propriedade [ \_ modo de \_ recurso \_ MFPKEY WMAAECMA](mfpkey-wmaaecma-feature-modeproperty.md) como Variant \_ true.
+O valor padrão dessa propriedade é 0 (desabilitado). Antes de definir essa propriedade, você deve definir a [propriedade \_ MFPKEY WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) como VARIANT \_ TRUE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,9 +58,9 @@ O valor padrão dessa propriedade é 0 (desabilitado). Antes de definir essa pro
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ O valor padrão dessa propriedade é 0 (desabilitado). Antes de definir essa pro
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

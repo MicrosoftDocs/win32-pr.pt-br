@@ -1,7 +1,7 @@
 ---
-description: CBaseStreamControl. ~ CBaseStreamControl destruidor-método Destruitor.
+description: Destruidor CBaseStreamControl.~CBaseStreamControl – método destruidor.
 ms.assetid: 292b4e33-02e2-4325-9784-bd41893e1ff4
-title: CBaseStreamControl. ~ CBaseStreamControl Destruitor (Strmctl. h)
+title: Destruidor CBaseStreamControl.~CBaseStreamControl (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ab25629d546dbbee656e5420fe0d94ca38fa227c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 440e3379b77bfbd39319d431cce115d60650ee930ad29fb172cb8c59210a89bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119999656"
 ---
-# <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a>Destruidor CBaseStreamControl. ~ CBaseStreamControl
+# <a name="cbasestreamcontrolcbasestreamcontrol-destructor"></a>Destruidor CBaseStreamControl.~CBaseStreamControl
 
 Método destruidor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,12 +42,12 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Strmctl. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Strmctl.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

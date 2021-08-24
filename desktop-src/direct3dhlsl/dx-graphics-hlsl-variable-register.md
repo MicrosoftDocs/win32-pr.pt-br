@@ -26,7 +26,7 @@ Palavra-chave opcional para atribuir uma variável de sombreador a um registro e
 
 
 
-| : register ( *\[ perfil de \_ sombreador, \]* *\# \[ subcomponente tipo \]* ) |
+| : Register ( *\[ \_ perfil \] do sombreador*, *tipo \# \[ subcomponente \]* ) |
 |----------------------------------------------------------------|
 
 
@@ -37,24 +37,24 @@ Palavra-chave opcional para atribuir uma variável de sombreador a um registro e
 
 <dl> <dt>
 
-<span id="register"></span><span id="REGISTER"></span>Registrar
+<span id="register"></span><span id="REGISTER"></span>Registr
 </dt> <dd>
 
-Palavra-chave necessária.
+Palavra-chave required.
 
 </dd> <dt>
 
-<span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[perfil do \_ sombreador\]*
+<span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[perfil do sombreador \_\]*
 </dt> <dd>
 
-Perfil [de sombreador opcional](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax), que pode ser um destino de sombreador ou simplesmente **ps** ou **vs**.
+[Perfil de sombreador](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax)opcional, que pode ser um alvo de sombreador ou simplesmente **PS** ou **vs**.
 
 </dd> <dt>
 
-<span id="Type__subcomponent_"></span><span id="type__subcomponent_"></span><span id="TYPE__SUBCOMPONENT_"></span>*\# \[ Subcomponente de tipo\]*
+<span id="Type__subcomponent_"></span><span id="type__subcomponent_"></span><span id="TYPE__SUBCOMPONENT_"></span>*Subcomponente do tipo \# \[\]*
 </dt> <dd>
 
-Registre o tipo, o número e a declaração do subcomponente.
+Tipo de registro, número e declaração de subcomponente.
 
 -   O tipo é um dos seguintes:
 
@@ -63,10 +63,10 @@ Registre o tipo, o número e a declaração do subcomponente.
     | Tipo | Descrição do registro       |
     |------|----------------------------|
     | b    | Buffer constante            |
-    | t    | Buffer de textura e textura |
-    | c    | Deslocamento de buffer              |
+    | t    | Buffer de textura e texturização |
+    | c    | Deslocamento do buffer              |
     | s    | Exemplo                    |
-    | u    | Exibição de acesso não organizado      |
+    | u    | Modo de exibição de acesso não ordenado      |
 
     
 
@@ -81,7 +81,7 @@ Registre o tipo, o número e a declaração do subcomponente.
 
 Você pode adicionar uma ou mais atribuições de registro à mesma declaração de variável, separadas por espaços.
 
-Para variáveis direct3D 10 no escopo global, a palavra-chave **register** atua da mesma forma que a palavra-chave [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
+Para as variáveis do Direct3D 10 no escopo global, a palavra-chave **Register** atua da mesma forma que a palavra-chave [PACKOFFSET (DirectX HLSL)](dx-graphics-hlsl-variable-packoffset.md) .
 
 ## <a name="examples"></a>Exemplos
 

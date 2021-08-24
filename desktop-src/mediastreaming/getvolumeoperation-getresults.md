@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 444eaf590e5afc5d4f5185bcd3793698d6fe4535
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9e58188a0d8b0d2ed13a9cb7d7486f440f4a1303ca32208371690965f976339d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105784613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011846"
 ---
 # <a name="getvolumeoperationgetresults-method"></a>Método GetVolumeOperation. GetResults
 
@@ -48,7 +48,7 @@ O volume. Um valor entre 0 e 100. 0 indica o volume mínimo e 100 indica o volum
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

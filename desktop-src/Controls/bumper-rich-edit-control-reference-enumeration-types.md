@@ -1,6 +1,6 @@
 ---
-title: Tipos de enumeração rich edit
-description: Tipos de enumeração rich edit
+title: Tipos de enumeração de edição rica
+description: Tipos de enumeração de edição rica
 ms.assetid: f2f00582-4b1a-4e8c-b408-89d352762ee3
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119970317"
 ---
-# <a name="rich-edit-enumeration-types"></a>Tipos de enumeração rich edit
+# <a name="rich-edit-enumeration-types"></a>Tipos de enumeração de edição rica
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**KYPH**](/windows/win32/api/richedit/ne-richedit-khyph)
--   [**Textmode**](/windows/win32/api/richedit/ne-richedit-textmode)
+-   [**KHYPH**](/windows/win32/api/richedit/ne-richedit-khyph)
+-   [**TEXTMODE**](/windows/win32/api/richedit/ne-richedit-textmode)
 -   [**UNDONAMEID**](/windows/desktop/api/Richedit/ne-richedit-undonameid)
 
  

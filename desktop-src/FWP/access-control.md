@@ -1,23 +1,23 @@
 ---
-title: Controle de acesso (plataforma de filtragem do Windows)
-description: Na WFP (Windows Filtering Platform), o serviço BFE (mecanismo de filtragem base) implementa o modelo de controle de acesso padrão do Windows com base em tokens de acesso e descritores de segurança.
+title: controle de acesso (plataforma de filtragem de Windows)
+description: na WFP (plataforma de filtragem de Windows), o serviço BFE (mecanismo de filtragem Base) implementa o modelo de controle de acesso de Windows padrão com base em tokens de acesso e descritores de segurança.
 ms.assetid: 936ad5f0-d5cd-47ed-b9e5-a7d82a4da603
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0df63b6fe92b18614a7ccf205ccf826927664ee
-ms.sourcegitcommit: af9983bab40fe0b042f177ce7ca79f2eb0f9d0e8
+ms.openlocfilehash: 1ad8d1cc292358b156a8853a8a141426fda638d64474d1413747e2ebdb59d7a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "104297846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119901087"
 ---
-# <a name="access-control-windows-filtering-platform"></a>Controle de acesso (plataforma de filtragem do Windows)
+# <a name="access-control-windows-filtering-platform"></a>controle de acesso (plataforma de filtragem de Windows)
 
-Na WFP (Windows Filtering Platform), o serviço BFE (mecanismo de filtragem base) implementa o [modelo de controle de acesso](/windows/desktop/SecAuthZ/access-control-model) padrão do Windows com base em tokens de acesso e descritores de segurança.
+na WFP (plataforma de filtragem de Windows), o serviço BFE (mecanismo de filtragem Base) implementa o [modelo de controle de acesso de Windows](/windows/desktop/SecAuthZ/access-control-model) padrão com base em tokens de acesso e descritores de segurança.
 
 ## <a name="access-control-model"></a>Modelo de controle de acesso
 
-Descritores de segurança podem ser especificados ao adicionar novos objetos WFP, como filtros e subcamadas. Descritores de segurança são gerenciados usando as funções de gerenciamento de WFP **Fwpm \* GetSecurityInfo0** e **Fwpm \* SetSecurityInfo0**, em que * *\** _ significa o nome do objeto WFP. Essas funções são semanticamente idênticas às funções Windows [_ *GetSecurityInfo* *](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) e [**SetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo) .
+Descritores de segurança podem ser especificados ao adicionar novos objetos WFP, como filtros e subcamadas. Descritores de segurança são gerenciados usando as funções de gerenciamento de WFP **Fwpm \* GetSecurityInfo0** e **Fwpm \* SetSecurityInfo0**, em que * *\** _ significa o nome do objeto WFP. essas funções são semanticamente idênticas às funções Windows [_ *GetSecurityInfo* *](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) e [**SetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo) .
 
 > [!Note]  
 > As funções **Fwpm \* SetSecurityInfo0** não podem ser chamadas de dentro de uma transação explícita.
@@ -33,7 +33,7 @@ O descritor de segurança padrão para o mecanismo de filtro (o objeto do mecani
 
 -   Conceda direitos de acesso **genéricos a \_ todos** (GA) ao grupo interno de administradores.
 -   Conceda direitos de **acesso genérico de gravação \_** (GR) generic **\_ Write** (GW) genérico de **\_ execução** (GX) a operadores de configuração de rede.
--   Conceda direitos de acesso **GRGWGX** aos seguintes SSIDs (identificadores de segurança de serviço): MPSSVC (firewall do Windows), NapAgent (agente de proteção de acesso à rede), policyagent (agente de diretiva IPSec), RPCSS (chamada de procedimento remoto) e WdiServiceHost (host do serviço de diagnóstico).
+-   conceda direitos de acesso **GRGWGX** aos seguintes ssids (identificadores de segurança de serviço): MpsSvc (Windows Firewall), NapAgent (agente de proteção de acesso à rede), PolicyAgent (agente de diretiva IPsec), rpcss (chamada de procedimento remoto) e WdiServiceHost (Host do serviço de diagnóstico).
 -   Grant **FWPM \_ ACTRL \_ Open** e **FWPM \_ ACTRL \_ classificar** para todos. (Estes são direitos de acesso específicos da WFP, descritos na tabela abaixo.)
 
 Os descritores de segurança padrão restantes são derivados por meio de herança.
@@ -70,9 +70,9 @@ O BFE ignora todas as verificações de acesso para chamadores de modo kernel.
 
 Para impedir que os administradores bloqueiem o BFE, os membros do grupo de administradores internos sempre recebem **FWPM \_ ACTRL \_ abrir** para o objeto Engine. Portanto, um administrador pode obter acesso por meio das etapas a seguir.
 
--   Habilite o privilégio **se \_ obter \_ \_ nome de propriedade** .
+-   habilite o privilégio **ES \_ obter \_ \_ nome de propriedade** .
 -   Chame [**FwpmEngineOpen0**](/windows/desktop/api/Fwpmu/nf-fwpmu-fwpmengineopen0). A chamada é realizada com sucesso porque o chamador é membro de administradores internos.
--   Apropriar-se do objeto do mecanismo. Isso é executado com sucesso porque o chamador tem o privilégio **se \_ obter \_ \_ nome de propriedade** .
+-   Apropriar-se do objeto do mecanismo. isso é executado com sucesso porque o chamador tem o privilégio **ES \_ obter \_ \_ nome de propriedade** .
 -   Atualize a DACL. Isso é executado com sucesso porque o proprietário sempre tem acesso de **gravação de \_ DAC**
 
 Como o BFE dá suporte a sua própria auditoria personalizada, ele não gera auditorias de acesso a objetos genéricos. Portanto, a SACL é ignorada.
@@ -230,10 +230,10 @@ Nenhuma verificação de acesso adicional além daquela para os filtros individu
 [**Direitos de acesso padrão**](/windows/desktop/SecAuthZ/standard-access-rights)
 </dt> <dt>
 
-[Modelo de controle de acesso do Windows](/windows/desktop/SecAuthZ/access-control-model)
+[modelo de controle de acesso Windows](/windows/desktop/SecAuthZ/access-control-model)
 </dt> <dt>
 
-[**Identificadores de direitos de acesso da plataforma de filtragem do Windows**](access-right-identifiers.md)
+[**Windows Identificadores de direitos de acesso à plataforma de filtragem**](access-right-identifiers.md)
 </dt> </dl>
 
  

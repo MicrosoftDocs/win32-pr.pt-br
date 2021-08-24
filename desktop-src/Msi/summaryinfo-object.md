@@ -13,33 +13,33 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 816a0ec4e307390edcb16d8e7096a7a4ef20c412
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3efdc009f40f0bce67559d185afb4cba1289c00fc1d7771a43d392601220dbae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120039586"
 ---
 # <a name="summaryinfo-object"></a>Objeto SummaryInfo
 
-O objeto **SummaryInfo** é usado para ler, criar e atualizar propriedades de documento do [fluxo de informações resumidas](summary-information-stream.md) de um objeto de armazenamento.
+O **objeto SummaryInfo** é usado para ler, criar e atualizar propriedades de documento do fluxo de informações [resumidas](summary-information-stream.md) de um objeto de armazenamento.
 
 ## <a name="members"></a>Membros
 
-O objeto **SummaryInfo** tem estes tipos de membros:
+O **objeto SummaryInfo** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **SummaryInfo** tem esses métodos.
+O **objeto SummaryInfo** tem esses métodos.
 
 
 
 | Método                                 | Descrição                                                                                                                                    |
 |:---------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Mantenha**](summaryinfo-persist.md) | Formata e grava as propriedades armazenadas anteriormente no fluxo de [informações de resumo](summary-information-stream.md)padrão.<br/> |
+| [**Persistir**](summaryinfo-persist.md) | Formatar e grava as propriedades armazenadas anteriormente no fluxo de informações [de resumo padrão.](summary-information-stream.md)<br/> |
 
 
 
@@ -47,7 +47,7 @@ O objeto **SummaryInfo** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **SummaryInfo** tem essas propriedades.
+O **objeto SummaryInfo** tem essas propriedades.
 
 
 
@@ -66,9 +66,9 @@ O objeto **SummaryInfo** tem essas propriedades.
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ ISummaryInfo é definido como 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
+| IID<br/>     | IID ISummaryInfo é definido como \_ 000C109B-0000-0000-C000-000000000046<br/>                                                                                                                                                                         |
 
 
 
@@ -76,13 +76,13 @@ O objeto **SummaryInfo** tem essas propriedades.
 
 <dl> <dt>
 
-[**Propriedade SummaryInformation (objeto Database)**](database-summaryinformation.md)
+[**Propriedade SummaryInformation (objeto database)**](database-summaryinformation.md)
 </dt> <dt>
 
-[**Propriedade SummaryInformation (objeto do instalador)**](installer-summaryinformation.md)
+[**Propriedade SummaryInformation (objeto installer)**](installer-summaryinformation.md)
 </dt> <dt>
 
-[Exemplos de script de Windows Installer](windows-installer-scripting-examples.md)
+[Windows Exemplos de script do instalador](windows-installer-scripting-examples.md)
 </dt> </dl>
 
  
