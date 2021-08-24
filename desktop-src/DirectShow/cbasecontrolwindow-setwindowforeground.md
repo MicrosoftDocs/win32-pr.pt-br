@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 52c9a37f23b555e140bfd541cf0b5e8e782f8d51
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87a6768c8864de45d50dc630773b756dfad43759adbf4b09ed8070febd37f4d1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635466"
 ---
 # <a name="cbasecontrolwindowsetwindowforeground-method"></a>Método CBaseControlWindow. SetWindowForeground
 
@@ -42,14 +42,14 @@ HRESULT SetWindowForeground(
 
 <dl> <dt>
 
-*Foco* 
+*Foca* 
 </dt> <dd>
 
 Valor que especifica se a janela de vídeo receberá o foco. Um valor de 1 dá ao foco da janela e 0 não.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -71,7 +71,7 @@ Retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

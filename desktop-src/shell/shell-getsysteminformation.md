@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b9e021e767309007cfee2cfc78268fb7d7cea042
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 23ad48c673fb0c5925e796f77bd43c77f3abd0afd4511864a5b840214861f792
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660646"
 ---
 # <a name="shellgetsysteminformation-method"></a>Método Shell. GetSystemInformation
 
@@ -120,21 +120,21 @@ PhysicalMemoryInstalled
 
 A quantidade de memória física instalada, em bytes.
 
-Os itens a seguir são válidos somente no Windows XP.
+os itens a seguir são válidos somente no Windows XP.
 
-IsOS \_ Professional
+\_Professional IsOS
 
 **Booliano**
 
-Defina como **true** se o sistema operacional for o Windows XP Professional Edition; caso contrário, **false**.
+defina como **true** se o sistema operacional for Windows XP Professional Edition; caso contrário, **false**.
 
 IsOS \_ pessoal
 
 **Booliano**
 
-Defina como **true** se o sistema operacional for o Windows XP Home Edition; caso contrário, **false**.
+defina como **true** se o sistema operacional for Windows XP Home Edition; caso contrário, **false**.
 
-O seguinte é válido somente no Windows XP e posterior.
+o seguinte é válido somente no Windows XP e versões posteriores.
 
 IsOS \_ DomainMember
 
@@ -150,9 +150,9 @@ Este método não está disponível atualmente no Microsoft Visual Basic.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **GetSystemInformation** para JScript e VBScript.
+os exemplos a seguir mostram o uso de **GetSystemInformation** para JScript e VBScript.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -197,9 +197,9 @@ VBScript
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
 

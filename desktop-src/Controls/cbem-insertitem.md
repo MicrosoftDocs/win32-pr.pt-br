@@ -3,7 +3,7 @@ title: Mensagem de CBEM_INSERTITEM (commctrl. h)
 description: Insere um novo item em um controle ComboBoxEx.
 ms.assetid: c99db676-204d-44c9-aaa3-81b70fe2cf44
 keywords:
-- Controles de CBEM_INSERTITEM de mensagens do Windows
+- controles de Windows de mensagem de CBEM_INSERTITEM
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23e6cb26a575472e53703d65e407a94a024dcfac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4d9627efef4796554dfdbe1d7263747cc6b1c32b2cc00d5619a7cb7953024cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699297"
 ---
 # <a name="cbem_insertitem-message"></a>\_Mensagem CBEM INSERTITEM
 
@@ -41,7 +41,7 @@ Um ponteiro para uma estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o índice no qual o novo item foi inserido, se for bem-sucedido, ou-1 caso contrário.
 
@@ -51,9 +51,9 @@ Retorna o índice no qual o novo item foi inserido, se for bem-sucedido, ou-1 ca
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CBEM \_ INSERTITEMW** (Unicode) e **CBEM \_ INSERTITEMA** (ANSI)<br/>           |
 
 

@@ -1,7 +1,7 @@
 ---
 description: Descreve um buffer de vértice.
 ms.assetid: 0ae8f976-d0ca-4d55-b6db-5be85fa3c799
-title: Estrutura de D3DVERTEXBUFFER_DESC (D3D9Types. h)
+title: D3DVERTEXBUFFER_DESC estrutura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b2c0838743f8190eeb0e5c825e7125d2e48c0b6c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1f1809bbf9352b022d2acfb15b119db47b0feab6302020cdaf5b24746945aa05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750576"
 ---
-# <a name="d3dvertexbuffer_desc-structure"></a>\_Estrutura desc de D3DVERTEXBUFFER
+# <a name="d3dvertexbuffer_desc-structure"></a>Estrutura D3DVERTEXBUFFER \_ DESC
 
 Descreve um buffer de vértice.
 
@@ -51,7 +51,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Membro do tipo enumerado [D3DFORMAT](d3dformat.md) , que descreve o formato da superfície dos dados do buffer de vértice.
+Membro do tipo [enumerado D3DFORMAT,](d3dformat.md) que descreve o formato de superfície dos dados do buffer de vértice.
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Tipo: **[ **D3DRESOURCETYPE**](./d3dresourcetype.md)**
 
 </dd> <dd>
 
-Membro do tipo enumerado [**D3DRESOURCETYPE**](./d3dresourcetype.md) , identificando esse recurso como um buffer de vértice.
+Membro do tipo [**enumerado D3DRESOURCETYPE,**](./d3dresourcetype.md) identificando esse recurso como um buffer de vértice.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Combinação de um ou mais sinalizadores [**D3DUSAGE**](d3dusage.md) .
+Combinação de um ou mais [**sinalizadores D3DUSAGE.**](d3dusage.md)
 
 </dd> <dt>
 
@@ -84,14 +84,14 @@ Tipo: **[ **D3DPOOL**](./d3dpool.md)**
 
 </dd> <dd>
 
-Membro do tipo enumerado [**D3DPOOL**](./d3dpool.md) , especificando a classe de memória alocada para este buffer de vértice.
+Membro do tipo [**enumerado D3DPOOL,**](./d3dpool.md) especificando a classe de memória alocada para esse buffer de vértice.
 
 </dd> <dt>
 
 **Tamanho**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -99,14 +99,14 @@ Tamanho do buffer de vértice, em bytes.
 
 </dd> <dt>
 
-**FVF**
+**Fvf**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice dos vértices nesse buffer.
+Combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice dos vértices neste buffer.
 
 </dd> </dl>
 
@@ -116,7 +116,7 @@ Combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice dos vért
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -124,7 +124,7 @@ Combinação de [D3DFVF](d3dfvf.md) que descreve o formato de vértice dos vért
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
 [**GetDesc**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dvertexbuffer9-getdesc)

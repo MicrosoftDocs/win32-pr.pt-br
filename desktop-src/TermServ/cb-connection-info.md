@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36370a4faa823f509d1f3356768add0ece9a6904
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fd433f668c178973a4e3690ea130d01d75fab79e739610f77ac00619b9e326c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575036"
 ---
 # <a name="cb_connection_info-structure"></a>Estrutura de informações de \_ conexão CB \_
 
@@ -113,7 +113,7 @@ Este membro é reservado para uso futuro.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
 
 
 

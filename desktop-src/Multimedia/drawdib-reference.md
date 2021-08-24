@@ -3,21 +3,21 @@ title: Referência de DrawDib
 description: Referência de DrawDib
 ms.assetid: 08489fa8-511d-4511-a158-f0cae2c6cef2
 keywords:
-- Multimídia do Windows, referência do DrawDib
+- Windows multimídia, referência de DrawDib
 - multimídia, referência de DrawDib
-- Vídeo para Windows (VFW), referência do DrawDib
-- VFW (vídeo para Windows), referência do DrawDib
+- vídeo para Windows (VFW), referência de DrawDib
+- VFW (vídeo para Windows), referência de DrawDib
 - DrawDib, referência
 - Referência de DrawDib, sobre
 - referência para DrawDib, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be359e2d0af6de28d6a054e60e0c5cac1de55c4a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bed8a2469b473efdebbe8a3fdd55d9ba7d735328185f1d9297ddf533e61b0f02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678758"
 ---
 # <a name="drawdib-reference"></a>Referência de DrawDib
 
@@ -54,9 +54,9 @@ Esta seção descreve as funções DrawDib e estruturas associadas. Esses elemen
 
 -   [**DRAWDIBTIME**](/windows/desktop/api/Vfw/ns-vfw-drawdibtime)
 
- 
+ 
 
- 
+ 
 
 
 

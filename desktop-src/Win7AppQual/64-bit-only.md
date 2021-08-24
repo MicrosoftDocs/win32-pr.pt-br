@@ -4,18 +4,18 @@ ms.assetid: 5d0188a5-ef5f-409e-9d2d-7639d99edc1d
 title: Somente 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d896fcaf4b8c4ebeadf7cfd5a5c22e511cb659
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e29da3d00b457c7fe95ed7fe614991bc272968ad042b9c0360a14d48b1bf3461
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680256"
 ---
 # <a name="64-bit-only"></a>Somente 64 bits
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
-**Servidores** -Windows Server 2008 R2  
+**servidores** -Windows Server 2008 R2  
 
 
 
@@ -31,7 +31,7 @@ ms.locfileid: "108088804"
 
 ## <a name="description"></a>Descrição
 
-O Windows Server 2008 R2 é fornecido com um SKU de 64 bits apenas; nenhuma SKU de 32 bits está disponível para a versão do servidor do sistema operacional. No entanto, um SKU de 32 bits continua disponível para o cliente do Windows 7.
+Windows O Server 2008 R2 é fornecido com um SKU de 64 bits apenas; nenhuma SKU de 32 bits está disponível para a versão do servidor do sistema operacional. no entanto, um SKU de 32 bits continua disponível para o cliente do Windows 7.
 
 ## <a name="manifestation-of-impact"></a>Manifestação do impacto
 
@@ -47,17 +47,17 @@ Recompile drivers de 32 bits como drivers de 64 bits assinados.
 
 ## <a name="solution-for-32-bit-plug-ins"></a>Solução para plug-ins de 32 bits
 
-O WoW64, um emulador x86, permite que aplicativos baseados em Windows de 32 bits sejam executados diretamente em janelas de 64 bits. O WoW64 agora é um recurso opcional que você deve instalar se for necessário executar o código de 32 bits.
+o WoW64, um emulador x86, permite que aplicativos baseados em Windows de 32 bits sejam executados diretamente em Windows de 64 bits. O WoW64 agora é um recurso opcional que você deve instalar se for necessário executar o código de 32 bits.
 
-O sistema isola os aplicativos de 32 bits de aplicativos de 64 bits, o que inclui a prevenção de colisões de arquivo e registro. Há suporte para aplicativos de console, GUI e serviço. O sistema fornece interoperabilidade entre o limite de 32/64 para cenários como recortar e colar e COM. No entanto, os processos de 32 bits não podem carregar DLLs de 64 bits e os processos de 64 bits não podem carregar DLLs de 32 bits. Normalmente vemos isso nos plug-ins do Shell escritos para o Windows Explorer.
+O sistema isola os aplicativos de 32 bits de aplicativos de 64 bits, o que inclui a prevenção de colisões de arquivo e registro. Há suporte para aplicativos de console, GUI e serviço. O sistema fornece interoperabilidade entre o limite de 32/64 para cenários como recortar e colar e COM. No entanto, os processos de 32 bits não podem carregar DLLs de 64 bits e os processos de 64 bits não podem carregar DLLs de 32 bits. normalmente vemos isso nos plug-ins do shell gravados para o Windows Explorer.
 
 Um aplicativo de 32 bits pode detectar se ele está em execução no WOW64 chamando a função IsWow64Process. O aplicativo pode obter informações adicionais sobre o processador usando a função GetNativeSystemInfo
 
-Observe que o Windows de 64 bits não oferece suporte à execução de aplicativos baseados no Windows de 16 bits. O principal motivo é que os identificadores têm 32 bits significativos no Windows de 64 bits. Portanto, os identificadores não podem ser truncados e passados para aplicativos de 16 bits sem perda de dados. As tentativas de iniciar aplicativos de 16 bits falham com o seguinte erro: erro de \_ \_ formato exe inválido \_ .
+observe que o Windows de 64 bits não oferece suporte à execução de aplicativos baseados em Windows de 16 bits. O principal motivo é que os identificadores têm 32 bits significativos em Windows de 64 bits. Portanto, os identificadores não podem ser truncados e passados para aplicativos de 16 bits sem perda de dados. As tentativas de iniciar aplicativos de 16 bits falham com o seguinte erro: erro de \_ \_ formato exe inválido \_ .
 
 ## <a name="solution-for-16-bit-executables"></a>Solução para executáveis de 16 bits
 
-o Windows de 64 bits reconhece um número limitado de programas de instalação de 16 bits específicos e substitui uma versão de 32 bits portada. A lista de substituições é armazenada no registro na seguinte chave: HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ NtVdm64 há suporte interno para vários mecanismos de instalação, incluindo instaladores do InstallShield 5. x. Observe que o Windows Installer de 64 bits pode instalar diretamente aplicativos baseados em MSI de 32 bits em janelas de 64 bits.
+64 bits Windows reconhece um número limitado de programas de instalador de 16 bits específicos e substitui uma versão de 32 bits portada. a lista de substituições é armazenada no registro na seguinte chave: HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ NtVdm64 há suporte interno para vários mecanismos de instalador, incluindo instaladores do InstallShield 5. x. observe que o Windows Installer de 64 bits pode instalar diretamente aplicativos baseados em MSI de 32 bits em Windows de 64 bits.
 
 ## <a name="links-to-other-resources"></a>Links para outros recursos
 

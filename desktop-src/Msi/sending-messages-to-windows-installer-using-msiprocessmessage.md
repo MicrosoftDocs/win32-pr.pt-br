@@ -1,19 +1,19 @@
 ---
 description: As mensagens enviadas usando MsiProcessMessage são as mesmas mensagens que são recebidas pela \_ função de retorno de chamada do manipulador INSTALLUI se MsiSetExternalUI foi chamado.
 ms.assetid: ca73bd0a-6f4e-453c-9e38-14cfd602d42c
-title: Enviar mensagens para Windows Installer usando o MsiProcessMessage
+title: enviar mensagens para Windows Installer usando o MsiProcessMessage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bcd8c8a704c1f4dd24763f7f47ff0d8898a95c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d1c639e45b22c2406f446ab31072ceb02ab9b3e906f5973b1436356d96f3782
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629946"
 ---
-# <a name="sending-messages-to-windows-installer-using-msiprocessmessage"></a>Enviando mensagens para Windows Installer usando o MsiProcessMessage
+# <a name="sending-messages-to-windows-installer-using-msiprocessmessage"></a>enviando mensagens para Windows Installer usando o MsiProcessMessage
 
-As mensagens enviadas usando [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) são as mesmas mensagens que são recebidas pela função de retorno de chamada do [**\_ manipulador INSTALLUI**](/windows/desktop/api/Msi/nc-msi-installui_handlera) se [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) foi chamado. Caso contrário, Windows Installer tratar as mensagens. Para obter detalhes, consulte [analisando mensagens de Windows Installer](parsing-windows-installer-messages.md).
+As mensagens enviadas usando [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) são as mesmas mensagens que são recebidas pela função de retorno de chamada do [**\_ manipulador INSTALLUI**](/windows/desktop/api/Msi/nc-msi-installui_handlera) se [**MsiSetExternalUI**](/windows/desktop/api/Msi/nf-msi-msisetexternaluia) foi chamado. caso contrário, Windows Installer tratar as mensagens. para obter detalhes, consulte [analisando mensagens de Windows Installer](parsing-windows-installer-messages.md).
 
 Por exemplo, para enviar uma \_ mensagem de erro INSTALLMESSAGE com o \_ ícone MB ICONWARNING e os \_ botões MB ABORTRETRYCANCEL:
 
@@ -30,7 +30,7 @@ Em que *hInstall* é o identificador para a instalação, fornecido a uma ação
 
 Por padrão, se uma \_ mensagem de erro INSTALLMESSAGE ou INSTALLMESSAGE \_ FATALEXIT for enviada sem especificar tipos de botão ou de ícone, MB \_ OK, nenhum ícone e MB \_ DEFBUTTON1 serão usados.
 
-Windows Installer não rotula o botão **abortar** com a cadeia de caracteres "Abort" ao exibir uma MessageBox com a \_ especificação do botão MB ABORTRETRYIGNORE, em vez disso, ela rotula o botão com a cadeia de caracteres "Cancel". Todas as mensagens de erro evitem usar a palavra "Abort" e, em vez disso, usar a palavra "Cancel".
+Windows O instalador não rotula o botão **anular** com a cadeia de caracteres "Abort" ao exibir uma MessageBox com a \_ especificação do botão MB ABORTRETRYIGNORE, em vez disso, ele rotula o botão com a cadeia de caracteres "Cancelar". Todas as mensagens de erro evitem usar a palavra "Abort" e, em vez disso, usar a palavra "Cancel".
 
 O parâmetro *hRecord* da função [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) depende do tipo de mensagem enviado para o [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage). A lista a seguir detalha os requisitos do registro em relação ao tipo de mensagem:
 
@@ -158,37 +158,37 @@ O \_ registro INSTALLMESSAGE ACTIONSTART determina o formato do registro ActionD
 
 Não referencie o campo 0 na mensagem do modelo de ação.
 
-O \_ registro INSTALLMESSAGE ACTIONDATA é formatado da seguinte maneira.
+O registro INSTALLMESSAGE \_ ACTIONDATA é formatado da seguinte forma.
 
 
 
 | Campo         | Descrição                                                                                                                                        |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0             | nulo                                                                                                                                               |
-| 1 a *n* | Dependendo do campo 3 da \_ mensagem ou do modelo ACTIONSTART INSTALLMESSAGE correspondente especificado na [tabela ActionText](actiontext-table.md). |
+| 1 a *n* | Dependente do campo 3 da mensagem OU modelo INSTALLMESSAGE ACTIONSTART correspondente \_ especificada na tabela [ActionText](actiontext-table.md). |
 
 
 
  
 
-Por exemplo, o \_ registro INSTALLMESSAGE ACTIONSTART.
+Por exemplo, o registro INSTALLMESSAGE \_ ACTIONSTART.
 
 
 
 | Campo | Tipo   | Dados                                                            |
 |-------|--------|-----------------------------------------------------------------|
 | 0     | string | nulo                                                            |
-| 1     | string | Myaction                                                        |
-| 2     | string | Esta é a descrição de "myaction"                           |
-| 3     | string | Modelo myaction: os dados de field1 são \[ 1 \] . os dados do campo 2 são \[ 2 \] . |
+| 1     | string | MyAction                                                        |
+| 2     | string | Esta é a descrição de "MyAction"                           |
+| 3     | string | Modelo MyAction: os dados field1 são \[ 1 \] . os dados do campo 2 são \[ 2 \] . |
 
 
 
  
 
-O modelo para INSTALLMESSAGE \_ ACTIONSTART (campo 3) faz referência aos campos 1 e 2, o registro de ACTIONDATA de INSTALLMESSAGE \_ deve ter dois campos contendo os dados garantidos. Os campos podem ser campos de cadeia de caracteres ou inteiros.
+O modelo para INSTALLMESSAGE ACTIONSTART (campo 3) faz referência aos campos 1 e 2; o registro \_ INSTALLMESSAGE ACTIONDATA deve ter dois campos contendo os dados com \_ garantia. Os campos podem ser campos de cadeia de caracteres ou inteiros.
 
-\_Registro de ACTIONDATA INSTALLMESSAGE.
+INSTALLMESSAGE \_ ACTIONDATA record.
 
 
 
@@ -196,7 +196,7 @@ O modelo para INSTALLMESSAGE \_ ACTIONSTART (campo 3) faz referência aos campos
 |-------|--------|-------------------------|
 | 0     | string | nulo                    |
 | 1     | INT    | 2                       |
-| 2     | string | ActionData para myaction |
+| 2     | string | ActionData para MyAction |
 
 
 
@@ -210,17 +210,17 @@ O registro FILESINUSE é um registro de comprimento variável.
 
 | Campo | Descrição                                                                                                                                                                                                                                                                                                                                                     |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | Este campo pode ser nulo. Para uma instalação usando uma interface do usuário básica, esse campo pode especificar texto estático para exibição no [controle ListBox](listbox-control.md) da [caixa de diálogo FilesInUse](filesinuse-dialog.md). Para uma instalação usando uma interface do usuário completa, esse campo não tem efeito porque o texto é especificado pela criação da caixa de diálogo FilesInUse personalizada. |
+| 0     | Esse campo pode ser nulo. Para uma instalação usando uma interface do usuário básica, esse campo pode especificar texto estático para exibição no [controle ListBox](listbox-control.md) da caixa [de diálogo FilesInUse](filesinuse-dialog.md). Para uma instalação usando uma interface do usuário completa, esse campo não tem nenhum efeito porque o texto é especificado pela autor da caixa de diálogo FilesInUse personalizada. |
 | 1     | Nome do arquivo em uso.                                                                                                                                                                                                                                                                                                                                        |
-| 2     | Este campo identifica o processo que contém o arquivo em uso. **Windows Installer versão 4,0:** A ID do processo (PID) do processo ou o título da janela do processo.<br/> **Windows Installer versão 3,1 e anteriores:** Esse campo deve ser a identificação do processo (PID) do processo.<br/>                                                      |
+| 2     | Esse campo identifica o processo que mantém o arquivo em uso. **Windows Installer versão 4.0:** A ID do processo (PID) do processo ou o título da janela para o processo.<br/> **Windows Installer versão 3.1 e anteriores:** Esse campo deve ser a ID do processo (PID) do processo.<br/>                                                      |
 
 
 
  
 
-Por exemplo, para enviar uma mensagem FilesInUse mostrando dois arquivos em uso, red.exe e blue.exe, o registro tem quatro campos mais o campo 0. O formato do registro seria como mostrado na tabela a seguir. Este exemplo requer Windows Installer versão 4,0.
+Por exemplo, para enviar uma mensagem FilesInUse mostrando dois arquivos em uso, red.exe e blue.exe, o registro tem quatro campos mais o campo 0. O formato do registro seria conforme mostrado na tabela a seguir. Este exemplo requer Windows Installer versão 4.0.
 
-**Windows Installer versão 3,1 e anteriores:** Os campos 2 e 4 no exemplo a seguir devem conter os PIDs dos processos que mantêm red.exe e blue.exe em uso.
+**Windows Instalador versão 3.1 e anterior:** Os campos 2 e 4 no exemplo a seguir devem conter os PIDs dos processos que red.exe e blue.exe em uso.
 
 
 
@@ -228,7 +228,7 @@ Por exemplo, para enviar uma mensagem FilesInUse mostrando dois arquivos em uso,
 |-------|-------------------|
 | 0     | nulo              |
 | 1     | Red.exe           |
-| 2     | Título da janela vermelha  |
+| 2     | Título da Janela Vermelha  |
 | 3     | Blue.exe          |
 | 4     | Título da janela azul |
 
@@ -237,7 +237,7 @@ Por exemplo, para enviar uma mensagem FilesInUse mostrando dois arquivos em uso,
  
 
 > [!Note]  
-> No Windows Installer versão 4,0, se a PID passada do serviço não tiver um título de janela, como um aplicativo de bandeja do sistema, o arquivo não será exibido e o log detalhado conterá as mensagens a seguir.
+> No Windows Installer versão 4.0, se o PID passado do serviço não tiver um título de janela, como um aplicativo de bandeja do sistema, o arquivo não será exibido e o log detalhado conterá as mensagens a seguir.
 
  
 
@@ -246,9 +246,9 @@ File In Use: -<FileName>- Window could not be found. Process ID: <PID>
 No window with title could be found for FilesInUse
 ```
 
-INSTALLMESSAGE \_ resolver
+INSTALLMESSAGE \_ RESOLVESOURCE
 
-O \_ registro de resolução INSTALLMESSAGE tem sete campos. Para \_ que o resolvedor de INSTALLMESSAGE funcione corretamente, um manipulador de interface do usuário externa pode não manipular a \_ mensagem de resolução INSTALLMESSAGE. Windows Installer deve manipular a \_ mensagem de resolução INSTALLMESSAGE. Ou seja, o manipulador de interface do usuário externa retorna 0 para indicar "nenhuma ação tomada" ao filtrar a \_ mensagem de resolução INSTALLMESSAGE. A prática recomendada é evitar o envio de uma mensagem de resolução.
+O registro INSTALLMESSAGE \_ RESOLVESOURCE tem sete campos. Para QUE INSTALLMESSAGE RESOLVESOURCE funcione corretamente, um manipulador de interface do usuário externo pode não manipular \_ a mensagem INSTALLMESSAGE \_ RESOLVESOURCE. Windows O instalador deve manipular a mensagem INSTALLMESSAGE \_ RESOLVESOURCE. Ou seja, o manipulador de interface do usuário externo retorna 0 para indicar "nenhuma ação tomada" ao filtrar a mensagem INSTALLMESSAGE \_ RESOLVESOURCE. A melhor prática é evitar o envio de uma mensagem RESOLVESOURCE.
 
 
 
@@ -260,8 +260,8 @@ O \_ registro de resolução INSTALLMESSAGE tem sete campos. Para \_ que o resol
 | 3     | Código do produto.                                                                                                                                                      |
 | 4     | O caminho relativo, se conhecido, pode ser nulo.                                                                                                                               |
 | 5     | 0                                                                                                                                                                  |
-| 6     | Se o código do pacote deve ser validado. Um valor de ' 1 ' indica que o código do pacote deve ser validado. Um valor de ' 0 ' indica que o pacote não deve ser validado. |
-| 7     | Disco necessário da tabela de mídia. Um valor de ' 0 ' indica que qualquer disco é aceitável.                                                                              |
+| 6     | Se o código do pacote deve ser validado. Um valor de '1' indica que o código do pacote deve ser validado. Um valor de '0' indica que o pacote não deve ser validado. |
+| 7     | Disco necessário da tabela de mídia. Um valor de '0' indica que qualquer disco é aceitável.                                                                              |
 
 
 

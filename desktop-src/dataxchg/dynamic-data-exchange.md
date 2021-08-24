@@ -1,23 +1,23 @@
 ---
 title: troca dinâmica de dados
-description: Esta seção fornece diretrizes para implementar o intercâmbio de dados dinâmicos para aplicativos que não podem usar a biblioteca de gerenciamento de troca dinâmica de dados (DDEML).
+description: esta seção fornece diretrizes para implementar o intercâmbio de dados dinâmicos para aplicativos que não podem usar a biblioteca de gerenciamento de troca dinâmica de dados (DDEML).
 ms.assetid: vs|winui|~\winui\windowsuserinterface\dataexchange\dynamicdataexchange.htm
 keywords:
-- Troca dinâmica de dados (DDE), sobre
+- troca dinâmica de dados (DDE), sobre
 - DDE (troca dinâmica de dados), sobre
 - troca de dados, troca dinâmica de dados (DDE)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91d5fa52078c2fa1d2e67a74d019535c801c4c96
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4db58f1027f0dfaacf28c4b2ec8d4208747929b0d40ca55d7d377831777f78a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678036"
 ---
 # <a name="dynamic-data-exchange"></a>troca dinâmica de dados
 
-Esta seção fornece diretrizes para implementar o intercâmbio de dados dinâmicos para aplicativos que não podem usar a biblioteca de gerenciamento de troca dinâmica de dados (DDEML). Para obter mais informações sobre o DDEML, consulte [troca dinâmica de dados biblioteca de gerenciamento](dynamic-data-exchange-management-library.md).
+esta seção fornece diretrizes para implementar o intercâmbio de dados dinâmicos para aplicativos que não podem usar a biblioteca de gerenciamento de troca dinâmica de dados (DDEML). para obter mais informações sobre o DDEML, consulte [troca dinâmica de dados biblioteca de gerenciamento](dynamic-data-exchange-management-library.md).
 
 ### <a name="overviews"></a>Visões gerais
 
@@ -39,7 +39,7 @@ Esta seção fornece diretrizes para implementar o intercâmbio de dados dinâmi
 
 | Nome                                                             | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DdeSetQualityOfService**](/windows/desktop/api/Dde/nf-dde-ddesetqualityofservice)         | Especifica a QOS (qualidade de serviço) que um aplicativo de troca dinâmica de dados bruto (DDE) desejar para futuras conversas de DDE que iniciar. A QOS especificada se aplica a qualquer conversa iniciada enquanto essas configurações estiverem em vigor. A qualidade de serviço de uma conversa DDE dura a duração da conversa; as chamadas para a função [**DdeSetQualityOfService**](/windows/desktop/api/Dde/nf-dde-ddesetqualityofservice) durante uma conversa não afetam a QoS da conversa. <br/> |
+| [**DdeSetQualityOfService**](/windows/desktop/api/Dde/nf-dde-ddesetqualityofservice)         | especifica a QOS (qualidade de serviço) que um aplicativo de troca dinâmica de dados bruto (DDE) desejar para futuras conversas de DDE que iniciar. A QOS especificada se aplica a qualquer conversa iniciada enquanto essas configurações estiverem em vigor. A qualidade de serviço de uma conversa DDE dura a duração da conversa; as chamadas para a função [**DdeSetQualityOfService**](/windows/desktop/api/Dde/nf-dde-ddesetqualityofservice) durante uma conversa não afetam a QoS da conversa. <br/> |
 | [**FreeDDElParam**](/windows/desktop/api/Dde/nf-dde-freeddelparam)                           | Libera a memória especificada pelo parâmetro *lParam* de uma mensagem DDE postada. Um aplicativo que recebe uma mensagem DDE postada deve chamar essa função depois de ter usado a função [**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam) para descompactar o valor de *lParam* . <br/>                                                                                                                                                                                                     |
 | [**ImpersonateDdeClientWindow**](/windows/desktop/api/Dde/nf-dde-impersonateddeclientwindow) | Permite que um aplicativo de servidor DDE represente o contexto de segurança de um aplicativo cliente DDE. Isso protege os dados do servidor seguro contra clientes DDE não autorizados. <br/>                                                                                                                                                                                                                                                                                                      |
 | [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam)                           | Compacta um valor de *lParam* DDE em uma estrutura interna usada para compartilhar dados DDE entre processos.<br/>                                                                                                                                                                                                                                                                                                                                                                 |

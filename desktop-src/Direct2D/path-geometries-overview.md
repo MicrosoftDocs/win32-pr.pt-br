@@ -5,55 +5,55 @@ ms.assetid: 38a290be-b915-4317-b9b1-0e49e40dc8ec
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 0189c46f50e2ccc9ecc4523a4bb6f34006e59139
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: 5fb177cbbd82ef56a03ef2c8a6faa7ef6c11f7889423ce79102d11eb42090231
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104552100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636128"
 ---
 # <a name="path-geometries-overview"></a>Visão geral de geometrias de caminho
 
-Este tópico descreve como usar geometrias de caminho Direct2D para criar desenhos complexos. Ele contém as seguintes seções:
+Este tópico descreve como usar geometrias Direct2D caminho para criar desenhos complexos. Ele contém as seguintes seções:
 
 -   [Pré-requisitos](#prerequisites)
--   [Geometrias de caminho em Direct2D](#path-geometries-in-direct2d)
+-   [Geometrias de caminho no Direct2D](#path-geometries-in-direct2d)
 -   [Usando um ID2D1GeometrySink para popular uma geometria de caminho](#using-an-id2d1geometrysink-to-populate-a-path-geometry)
--   [Exemplo: criar um desenho complexo](#example-create-a-complex-drawing)
-    -   [Criar uma geometria de caminho para as montanhas à esquerda](#create-a-path-geometry-for-the-left-mountain)
-    -   [Criar uma geometria de caminho para as montanhas certas](#create-a-path-geometry-for-the-right-mountain)
-    -   [Criar uma geometria de caminho para o Sun](#create-a-path-geometry-for-the-sun)
+-   [Exemplo: Criar um desenho complexo](#example-create-a-complex-drawing)
+    -   [Criar uma geometria de caminho para a mountain esquerda](#create-a-path-geometry-for-the-left-mountain)
+    -   [Criar uma geometria de caminho para a mountain direita](#create-a-path-geometry-for-the-right-mountain)
+    -   [Criar uma geometria de caminho para o Sol](#create-a-path-geometry-for-the-sun)
     -   [Criar uma geometria de caminho para o rio](#create-a-path-geometry-for-the-river)
     -   [Renderizar as geometrias de caminho na exibição](#render-the-path-geometries-onto-the-display)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Esta visão geral pressupõe que você esteja familiarizado com a criação de aplicativos Direct2D básicos, conforme descrito em [criando um aplicativo Direct2D simples](direct2d-quickstart.md). Ele também pressupõe que você esteja familiarizado com os recursos básicos das geometrias de Direct2D, conforme descrito na [visão geral de geometrias](direct2d-geometries-overview.md).
+Esta visão geral pressu que você está familiarizado com a criação de aplicativos Direct2D básicos, conforme descrito em Criando um [aplicativo de Direct2D simples.](direct2d-quickstart.md) Ele também pressuém que você está familiarizado com os recursos básicos Direct2D geometrias, conforme descrito na Visão geral [de geometrias.](direct2d-geometries-overview.md)
 
-## <a name="path-geometries-in-direct2d"></a>Geometrias de caminho em Direct2D
+## <a name="path-geometries-in-direct2d"></a>Geometrias de caminho no Direct2D
 
-As geometrias de caminho são representadas pela interface [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) . Para criar uma instância de uma geometria de caminho, chame o método [**ID2D1Factory:: createpathgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) . Esses objetos podem ser usados para descrever valores geométricos complexos compostos de segmentos como arcos, curvas e linhas. Para preencher uma geometria de caminho com figuras e segmentos, chame o método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para recuperar um [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) e use os métodos do coletor de geometria para adicionar figuras e segmentos à geometria do caminho.
+As geometrias de caminho são representadas pela interface [**ID2D1PathGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) Para criar uma inciação de uma geometria de caminho, chame o [**método ID2D1Factory::CreatePathGeometry.**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) Esses objetos podem ser usados para descrever figuras geométricas complexas compostas por segmentos, como arcos, curvas e linhas. Para popular uma geometria de caminho com figuras e segmentos, chame o método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para recuperar um [**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) e use os métodos do sink de geometria para adicionar figuras e segmentos à geometria do caminho.
 
 ## <a name="using-an-id2d1geometrysink-to-populate-a-path-geometry"></a>Usando um ID2D1GeometrySink para popular uma geometria de caminho
 
-[**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) descreve um caminho geométrico que pode conter linhas, arcos, curvas Bézier cúbicas e curvas de Bézier quadráticas.
+[**ID2D1GeometrySink**](/windows/win32/api/d2d1/nn-d2d1-id2d1geometrysink) descreve um caminho geométrico que pode conter linhas, arcos, curvas de Bézier cúbica e curvas de Bézier quadráticas.
 
-Um coletor de geometria consiste em uma ou mais figuras. Cada figura é composta por um ou mais segmentos de linha, curva ou arco. Para criar uma figura, chame o método [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure) , passando o ponto inicial da figura e, em seguida, use seus métodos Add (como [**AddLine**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addline) e [**AddBezier**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para adicionar segmentos. Quando você terminar de adicionar segmentos, chame o método [**endfigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure) . Você pode repetir essa sequência para criar figuras adicionais. Quando você terminar de criar figuras, chame o método [**Close**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-close) .
+Um sink de geometria consiste em uma ou mais figuras. Cada figura é feita de um ou mais segmentos de linha, curva ou arco. Para criar uma figura, chame o método [**BeginFigure,**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure) passando o ponto de partida da figura e, em seguida, use seus métodos Add (como [**AddLine**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometrysink-addline) e [**AddBezier**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget)) para adicionar segmentos. Quando terminar de adicionar segmentos, chame o [**método EndFigure.**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure) Você pode repetir essa sequência para criar figuras adicionais. Quando terminar de criar figuras, chame o [**método**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-close) Close.
 
-## <a name="example-create-a-complex-drawing"></a>Exemplo: criar um desenho complexo
+## <a name="example-create-a-complex-drawing"></a>Exemplo: Criar um desenho complexo
 
-A ilustração a seguir mostra um desenho complexo com linhas, arcos e curvas de Bézier. O exemplo de código a seguir mostra como criar o desenho usando quatro objetos Geometry de caminho, um para a montanha esquerda, um para as montanhas corretas, um para o rio e outro para o sol com flares.
+A ilustração a seguir mostra um desenho complexo com linhas, arcos e curvas de Bezier. O exemplo de código a seguir mostra como criar o desenho usando quatro objetos de geometria de caminho, um para a floresta esquerda, um para a cadeia direita, um para o rio e outro para o sol com raios.
 
-![ilustração de um rio, montanhas e sol, usando geometrias de caminho](images/path-geo-mnts.png)
+![ilustração de um rio, rio e o sol, usando geometrias de caminho](images/path-geo-mnts.png)
 
-### <a name="create-a-path-geometry-for-the-left-mountain"></a>Criar uma geometria de caminho para as montanhas à esquerda
+### <a name="create-a-path-geometry-for-the-left-mountain"></a>Criar uma geometria de caminho para a mountain esquerda
 
-O exemplo primeiro cria uma geometria de caminho para as montanhas à esquerda, conforme mostrado na ilustração a seguir.
+O exemplo primeiro cria uma geometria de caminho para a mountain esquerda, conforme mostrado na ilustração a seguir.
 
-![Mostra um desenho complexo de um polígono que mostra uma montanha.](images/path-geo-leftmnt.png)
+![Mostra um desenho complexo de um polígono que mostra uma mountain.](images/path-geo-leftmnt.png)
 
-Para criar a montanha à esquerda, o exemplo chama o método [**ID2D1Factory:: createpathgeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para criar um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry).
+Para criar a mountain esquerda, o exemplo chama o método [**ID2D1Factory::CreatePathGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createpathgeometry) para criar [**um ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry).
 
 
 ```C++
@@ -62,7 +62,7 @@ hr = m_pD2DFactory->CreatePathGeometry(&m_pLeftMountainGeometry);
 
 
 
-Em seguida, o exemplo usa o método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para obter um coletor de geometria de um [**ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) e o armazena na variável *pSink* .
+Em seguida, o exemplo usa o método [**Open**](/windows/win32/api/d2d1/nf-d2d1-id2d1pathgeometry-open) para obter um sinky geometry de [**um ID2D1PathGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1pathgeometry) e o armazena na variável *pSink.*
 
 
 ```C++
@@ -72,7 +72,7 @@ hr = m_pLeftMountainGeometry->Open(&pSink);
 
 
 
-Em seguida, o exemplo chama [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), passando a [**Figura d2d1 de \_ \_ início \_ preenchido**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_figure_begin) que indica que esta figura está preenchida e, em seguida, chama [**AddLines**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-addlines), passando uma matriz de pontos de [**d2d1 do \_ ponto \_ 2F**](d2d1-point-2f.md) , (267, 177), (236, 192), (212, 160), (156, 255) e (346, 255).
+Em seguida, o exemplo chama [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), passando [**D2D1 \_ FIGURE BEGIN \_ \_ FILLED**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_figure_begin) que indica que essa figura é preenchida e, em seguida, chama [**AddLines**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-addlines), passando uma matriz de pontos [**D2D1 \_ POINT \_ 2F,**](d2d1-point-2f.md) (267, 177), (236, 192), (212, 160), (156, 255) e (346, 255).
 
 O código a seguir mostra como fazer isso.
 
@@ -97,11 +97,11 @@ pSink->EndFigure(D2D1_FIGURE_END_CLOSED);
 
 
 
-### <a name="create-a-path-geometry-for-the-right-mountain"></a>Criar uma geometria de caminho para as montanhas certas
+### <a name="create-a-path-geometry-for-the-right-mountain"></a>Criar uma geometria de caminho para a mountain direita
 
-Em seguida, o exemplo cria outra geometria de caminho para a montanha correta com pontos (481, 146), (449, 181), (433, 159), (401, 214), (381, 199), (323, 263) e (575, 263). A ilustração a seguir mostra como as montanhas certas são exibidas.
+Em seguida, o exemplo cria outra geometria de caminho para a mountain direita com pontos (481, 146), (449, 181), (433, 159), (401, 214), (381, 199), (323, 263) e (575, 263). A ilustração a seguir mostra como a mountain direita é exibida.
 
-![ilustração de um polígono que mostra uma montanha](images/path-geo-rightmnt.png)
+![ilustração de um polígono que mostra uma mountain](images/path-geo-rightmnt.png)
 
 O código a seguir mostra como fazer isso.
 
@@ -141,13 +141,13 @@ O código a seguir mostra como fazer isso.
 
 
 
-### <a name="create-a-path-geometry-for-the-sun"></a>Criar uma geometria de caminho para o Sun
+### <a name="create-a-path-geometry-for-the-sun"></a>Criar uma geometria de caminho para o Sol
 
 Em seguida, o exemplo popula outra geometria de caminho para o sol, conforme mostrado na ilustração a seguir.
 
-![ilustração de curvas de arco e Bézier que mostram o sol](images/path-geo-sun.png)
+![ilustração de um arco e curvas de bezier que mostram o sol](images/path-geo-sun.png)
 
-Para fazer isso, a geometria do caminho cria um coletor e adiciona uma figura para o arco e uma figura para cada clarão para o coletor. Repetindo a sequência de [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), seus métodos Add (como [**AddBezier**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget))) e [**enddefinem**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure), várias figuras são adicionadas ao coletor.
+Para fazer isso, a geometria do caminho cria um sink e adiciona uma figura para o arco e uma figura para cada arco ao sink. Repetindo a sequência de [**BeginFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-beginfigure), seus métodos Add (como [**AddBezier**](/windows/desktop/api/d2d1/nf-d2d1-id2d1factory-createdxgisurfacerendertarget(idxgisurface_constd2d1_render_target_properties__id2d1rendertarget))) e [**EndFigure**](/windows/win32/api/d2d1/nf-d2d1-id2d1simplifiedgeometrysink-endfigure), várias figuras são adicionadas ao sink.
 
 O código a seguir mostra como fazer isso.
 
@@ -277,9 +277,9 @@ O código a seguir mostra como fazer isso.
 
 ### <a name="create-a-path-geometry-for-the-river"></a>Criar uma geometria de caminho para o rio
 
-Em seguida, o exemplo cria outro caminho de geometria para o rio que contém curvas de Bézier. A ilustração a seguir mostra como o rio é exibido.
+Em seguida, o exemplo cria outro caminho de geometria para o rio que contém curvas de Bezier. A ilustração a seguir mostra como o rio é exibido.
 
-![ilustração de curvas de Bézier que mostram um rio](images/path-geo-river.png)
+![ilustração de curvas dezier que mostram um rio](images/path-geo-river.png)
 
 O código a seguir mostra como fazer isso.
 
@@ -331,7 +331,7 @@ O código a seguir mostra como fazer isso.
 
 ### <a name="render-the-path-geometries-onto-the-display"></a>Renderizar as geometrias de caminho na exibição
 
-O código a seguir mostra como renderizar as geometrias de caminho populadas na exibição. Ele primeiro desenha e pinta a geometria Sun, a próxima da geometria da montanha esquerda, a geometria de rio e, por fim, a geometria de montanha correta.
+O código a seguir mostra como renderizar as geometrias de caminho populadas na exibição. Primeiro, ele desenha e pinta a geometria do sol, ao lado da geometria da estrada à esquerda, depois a geometria do rio e, por fim, a geometria da mountain direita.
 
 
 ```C++
@@ -376,15 +376,15 @@ O código a seguir mostra como renderizar as geometrias de caminho populadas na 
 
 
 
-O exemplo completo gera a ilustração a seguir.
+O exemplo completo mostra a ilustração a seguir.
 
-![ilustração de um rio, montanhas e sol, usando geometrias de caminho](images/path-geo-mnts.png)
+![ilustração de um rio, rio e o sol, usando geometrias de caminho](images/path-geo-mnts.png)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Criando um aplicativo Direct2D simples](direct2d-quickstart.md)
+[Criando um aplicativo de Direct2D simples](direct2d-quickstart.md)
 </dt> <dt>
 
 [Visão geral de geometrias](direct2d-geometries-overview.md)

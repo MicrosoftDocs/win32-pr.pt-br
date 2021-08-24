@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d9f3b58353163e1ee5b9abeb04007a4a9d449e5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7f3923e0a42375ac7d926d418943af81cc0264e111e6bdc4be56919780dfacf7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652146"
 ---
 # <a name="opcode-taskeventdefinitiontype-element"></a>Elemento opcode (TaskEventDefinitionType)
 
-\[A partir do compilador de mensagens fornecido com a versão do Windows 7 do SDK do Windows, esse elemento não estará mais disponível.\]
+\[a partir do compilador de mensagens fornecido com a versão Windows 7 do SDK do Windows, esse elemento não estará mais disponível.\]
 
 Contém um opcode específico da tarefa para um evento. Todas as definições de opcode são consideradas específicas da tarefa que contém as definições de evento.
 
@@ -71,8 +71,8 @@ O elemento **opcode** é definido pelo tipo complexo [**TaskEventDefinitionType*
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

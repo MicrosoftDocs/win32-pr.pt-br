@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 41694086537fac64cc5c6eb3019a079649c1b248
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 67397c3b4401289d4d1429d5acf10152d13a13fa4287d785c9813206716f192c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701546"
 ---
 # <a name="reset-method-of-the-cim_multistatesensor-class"></a>Método Reset da classe CIM \_ MultiStateSensor
 
@@ -67,7 +67,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

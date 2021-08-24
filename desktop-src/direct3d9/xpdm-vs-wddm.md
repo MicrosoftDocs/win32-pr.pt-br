@@ -1,28 +1,28 @@
 ---
-description: A API do Direct3D 9 opera no XPDM (Windows XP Display Driver Model) ou no WDDM (Windows Vista Display Driver Model), dependendo do sistema operacional instalado.
+description: a API do Direct3D 9 opera no Windows XP display driver model (XPDM) ou no Windows Vista display driver model (WDDM), dependendo do sistema operacional instalado.
 ms.assetid: b552c822-aa01-4f1d-a0a6-1411ab006e7b
 title: XPDM vs. WDDM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e12c7d811850c953eb53c346b628363a2642dda9
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: c0332198cd7c9425a3b5a107259dda1b1e974a04a2379244cdf939384260a89f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746046"
 ---
 # <a name="xpdm-vs-wddm"></a>XPDM vs. WDDM
 
-A API do Direct3D 9 opera no XPDM (Windows XP Display Driver Model) ou no WDDM (Windows Vista Display Driver Model), dependendo do sistema operacional instalado. Há algumas diferenças na maneira como a API do Direct3D se comporta nos dois modelos de driver.
+a API do Direct3D 9 opera no Windows XP display driver model (XPDM) ou no Windows Vista display driver model (WDDM), dependendo do sistema operacional instalado. Há algumas diferenças na maneira como a API do Direct3D se comporta nos dois modelos de driver.
 
 -   [Proteger área de trabalho](#secure-desktop)
 -   [Área de Trabalho Remota](#remote-desktop)
--   [Serviço Windows](#windows-service)
+-   [Serviço do Windows](#windows-service)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="secure-desktop"></a>Proteger área de trabalho
 
-A área de trabalho segura está ativa sempre que ocorrer qualquer uma das seguintes ações: o usuário bloqueia sua área de trabalho (Windows + L), a proteção de tela é ativada (quando nenhum usuário está conectado) ou por padrão quando o controle de conta de usuário apresenta um prompt. Quando a área de trabalho segura estiver ativa, o dispositivo HAL não estará acessível.
+a área de trabalho segura está ativa sempre que ocorrer qualquer uma das seguintes ações: o usuário bloqueia sua área de trabalho (Windows + L), a proteção de tela é ativada (quando nenhum usuário está conectado) ou por padrão quando o controle de conta de usuário apresenta um prompt. Quando a área de trabalho segura estiver ativa, o dispositivo HAL não estará acessível.
 
 Diferenças entre XPDM e WDDM:
 
@@ -48,20 +48,20 @@ Diferenças entre XPDM e WDDM:
 
  
 
-## <a name="windows-service"></a>Serviço Windows
+## <a name="windows-service"></a>Serviço do Windows
 
-Um serviço do Windows é um processo executado em segundo plano, controlado pelo SCM (Gerenciador de controle de serviço). Um serviço é executado independentemente do Active Desktop e, portanto, tem a capacidade limitada de interagir com os usuários.
+um serviço Windows é um processo executado em segundo plano, controlado pelo SCM (gerenciador de controle de serviço). Um serviço é executado independentemente do Active Desktop e, portanto, tem a capacidade limitada de interagir com os usuários.
 
 Diferenças entre XPDM e WDDM:
 
-- No WDDM, o Isolamento da Sessão 0 garante que um serviço não tenha acesso a nenhuma área de trabalho do usuário como uma medida de segurança, portanto, um dispositivo DIRECT3D 9 HAL nunca está disponível em um serviço Windows.
+- no WDDM, o isolamento da sessão 0 garante que um serviço não tenha acesso a qualquer área de trabalho do usuário como medida de segurança, portanto, um dispositivo de HAL do Direct3D 9 nunca estará disponível em um serviço Windows.
 
 
 
  
 
 > [!Note]  
-> Não é possível usar o Direct3D 9 em um serviço Windows. Para obter mais informações, consulte [o artigo de suporte da Microsoft 978635](https://support.microsoft.com/kb/978635).
+> não é possível usar o Direct3D 9 em um serviço Windows. Para obter mais informações, consulte [o artigo 978635 do suporte da Microsoft](https://support.microsoft.com/kb/978635).
 
  
 
@@ -70,18 +70,18 @@ A tabela a seguir resume as diferenças listadas aqui.
 
 
 
-| Área de Trabalho Segura | Xpdm | WDDM (Direct3D9) | WDDM(Direct3D9Ex/Direct3D10) |
+| Proteger área de trabalho | XPDM | WDDM (Direct3D9) | WDDM (Direct3D9Ex/Direct3D10) |
 |-----------------|------|------------------|------------------------------|
 | NULLREF         | Sim  | Sim              | Sim                          |
-| Hal             | Não   | Não               | Sim                          |
+| HAL             | Não   | Não               | Sim                          |
 | REF             | Sim  | Sim              | Sim                          |
 | Área de Trabalho Remota  |      |                  |                              |
 | NULLREF         | Não   | Sim              | Sim                          |
-| Hal             | Não   | Sim              | Sim                          |
+| HAL             | Não   | Sim              | Sim                          |
 | REF             | Sim  | Sim              | Sim                          |
-| Serviço Windows |      |                  |                              |
+| Serviço do Windows |      |                  |                              |
 | NULLREF         | Não   | Não               | Não                           |
-| Hal             | Não   | Não               | Não                           |
+| HAL             | Não   | Não               | Não                           |
 | REF             | Não   | Não               | Não                           |
 | WARP10          | N/D  | N/D              | Sim                          |
 
@@ -89,7 +89,7 @@ A tabela a seguir resume as diferenças listadas aqui.
 
  
 
-Para obter mais informações sobre XPDM, WDDM, Direct3D9Ex e Direct3D 10, consulte [APIs gráficas no Windows](../direct3darticles/graphics-apis-in-windows-vista.md).
+Para obter mais informações sobre XPDM, WDDM, Direct3D9Ex e Direct3D 10, consulte [APIs de gráficos no Windows](../direct3darticles/graphics-apis-in-windows-vista.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

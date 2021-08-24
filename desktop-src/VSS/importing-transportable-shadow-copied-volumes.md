@@ -4,12 +4,12 @@ ms.assetid: 4ec63917-03c0-434e-892e-3d9d4c47740e
 title: Importando volumes copiados de sombra transportável
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d259fbc047d088ee1f7064804a3ee98fe48da1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73cee5d491cde59767a321094f0a7de2f34da97b29c6ed02e5cc490643b4dcd5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119510256"
 ---
 # <a name="importing-transportable-shadow-copied-volumes"></a>Importando volumes copiados de sombra transportável
 
@@ -23,7 +23,7 @@ Para garantir uma cópia de sombra adequada — cooperar com os gravadores no *s
 
 Portanto, *systemOne* deve criar uma [*cópia de sombra transportável*](vssgloss-t.md), que *systemTwo* será importada.
 
-**Windows server 2003, Standard Edition, Windows server 2003, Web Edition e Windows XP:** Não há suporte para conjuntos de cópia de sombra transportáveis. Todas as edições do Windows Server 2003 com Service Pack 1 (SP1) oferecem suporte a conjuntos de cópia de sombra transportáveis.
+**Windows server 2003, Edição Standard, Windows server 2003, Web Edition e Windows XP:** Não há suporte para conjuntos de cópia de sombra transportáveis. todas as edições do Windows Server 2003 com Service Pack 1 (SP1) oferecem suporte a conjuntos de cópia de sombra transportáveis.
 
 Um exemplo típico de importação de uma cópia de sombra transportável pode proceder da seguinte maneira:
 

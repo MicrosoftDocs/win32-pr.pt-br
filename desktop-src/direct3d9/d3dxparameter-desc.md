@@ -1,7 +1,7 @@
 ---
-description: Descreve um parâmetro usado para um objeto Effect.
+description: Descreve um parâmetro usado para um objeto de efeito.
 ms.assetid: 60d19b52-67ef-4903-bbde-922a8fac1ad8
-title: Estrutura de D3DXPARAMETER_DESC (D3dx9effect. h)
+title: D3DXPARAMETER_DESC (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: 2256e24daa6dc8b6e5da1528e9a5e5aefce8ec99
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a12541e9bfb33979b11f8198e218a3eb474f948aeb8c74982a5369eed782eaa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631146"
 ---
-# <a name="d3dxparameter_desc-structure"></a>\_Estrutura desc de D3DXPARAMETER
+# <a name="d3dxparameter_desc-structure"></a>Estrutura D3DXPARAMETER \_ DESC
 
-Descreve um parâmetro usado para um objeto Effect.
+Descreve um parâmetro usado para um objeto de efeito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,7 +60,7 @@ Nome do parâmetro.
 
 </dd> <dt>
 
-**Semântico**
+**Semântica**
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -74,29 +74,29 @@ Significado semântico, também chamado de uso.
 **Classe**
 </dt> <dd>
 
-Tipo: **[ **\_ classe D3DXPARAMETER**](./d3dxparameter-class.md)**
+Tipo: **[ **CLASSE D3DXPARAMETER \_**](./d3dxparameter-class.md)**
 
 </dd> <dd>
 
-Classe de parâmetro. Defina isso para um dos valores na [**\_ classe D3DXPARAMETER**](./d3dxparameter-class.md).
+Classe de parâmetro. De definido como um dos valores em [**D3DXPARAMETER \_ CLASS**](./d3dxparameter-class.md).
 
 </dd> <dt>
 
 **Tipo**
 </dt> <dd>
 
-Tipo: **[ **\_ tipo de D3DXPARAMETER**](./d3dxparameter-type.md)**
+Tipo: **[ **D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md)**
 
 </dd> <dd>
 
-Tipo de parâmetro. Defina isso para um dos valores no [**\_ tipo D3DXPARAMETER**](./d3dxparameter-type.md).
+Tipo de parâmetro. De definido como um dos valores em [**D3DXPARAMETER \_ TYPE**](./d3dxparameter-type.md).
 
 </dd> <dt>
 
 **Linhas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -107,7 +107,7 @@ Número de linhas na matriz.
 **Colunas**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -118,7 +118,7 @@ Número de colunas na matriz.
 **Elementos**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -129,7 +129,7 @@ Número de elementos na matriz.
 **Anotações**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -140,7 +140,7 @@ Número de anotações.
 **StructMembers**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -155,14 +155,14 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Atributos de parâmetro. Consulte [constantes de efeito](dx9-graphics-reference-effects-constants.md).
+Atributos de parâmetro. Consulte [Constantes de efeito](dx9-graphics-reference-effects-constants.md).
 
 </dd> <dt>
 
 **Bytes**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -176,7 +176,7 @@ O tamanho do parâmetro, em bytes.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 

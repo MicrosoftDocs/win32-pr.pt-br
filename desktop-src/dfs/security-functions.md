@@ -4,12 +4,12 @@ description: As funções de segurança de gerenciamento de rede obtêm e define
 ms.assetid: 90860842-0f4d-49ad-b835-50305328a050
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95f717ff3f5701e507087fcdac164d9357f2505a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d31611aa650bb55ecdc29af468e0ef784b670555b247d536d27b397de356f4ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119677796"
 ---
 # <a name="security-functions"></a>Funções de segurança
 

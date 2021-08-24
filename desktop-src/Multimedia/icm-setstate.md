@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_SETSTATE (VFW. h)
-description: A \_ mensagem ICM SetState notifica um driver de compactação de vídeo para definir o estado do compressor. Você pode enviar essa mensagem explicitamente ou usando a macro ICSetState.
+description: o ICM \_ mensagem setstate notifica um driver de compactação de vídeo para definir o estado do compressor. Você pode enviar essa mensagem explicitamente ou usando a macro ICSetState.
 ms.assetid: d1a91847-2893-4c8b-9ca1-02db71ec2c81
 keywords:
-- Multimídia do Windows de mensagem ICM_SETSTATE
+- mensagem de ICM_SETSTATE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 230e0aaf3752016efd276d7d55624ee2abb4f8e0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ea6cd7aa0314520a30e293a8f029920c22b8baa58e995eed7ff9e5a96dd1b7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105779617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525806"
 ---
-# <a name="icm_setstate-message"></a>\_Mensagem SETstate do ICM
+# <a name="icm_setstate-message"></a>ICM \_ Mensagem SetState
 
-A mensagem **ICM \_ SetState** notifica um driver de compactação de vídeo para definir o estado do compressor. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) .
+o **ICM mensagem \_ setstate** notifica um driver de compactação de vídeo para definir o estado do compressor. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate) .
 
 
 ```C++
@@ -58,7 +58,7 @@ Retorna o número de bytes usados pelo compactador, se for bem-sucedido ou zero.
 
 ## <a name="remarks"></a>Comentários
 
-As informações usadas por essa mensagem são privadas e específicas para um determinado compressor. Os aplicativos cliente devem usar essa mensagem somente para restaurar as informações obtidas anteriormente com a mensagem [**ICM \_ GetState**](icm-getstate.md) e devem usar a mensagem [**ICM \_ Configure**](icm-configure.md) para ajustar a configuração de um driver de compactação de vídeo.
+As informações usadas por essa mensagem são privadas e específicas para um determinado compressor. os aplicativos cliente devem usar essa mensagem somente para restaurar as informações obtidas anteriormente com a [**ICM mensagem \_ getstate**](icm-getstate.md) e devem usar a mensagem [**ICM \_ configurar**](icm-configure.md) para ajustar a configuração de um driver de compactação de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 

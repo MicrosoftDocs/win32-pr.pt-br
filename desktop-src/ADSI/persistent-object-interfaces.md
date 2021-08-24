@@ -7,12 +7,12 @@ keywords:
 - ADSI de interfaces de objeto persistente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe82aa8dbfb14e466d804a280c1b025916bbe90a
-ms.sourcegitcommit: 8ea1a82717bd3dbb3457be0697329aa37fb13f08
+ms.openlocfilehash: 4aaaad41baeca7e54e8546e9b313550d9eb935a8a253ad7bb5dd49bbd2091719
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "104084305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637786"
 ---
 # <a name="persistent-object-interfaces-adsi"></a>Interfaces de objeto persistentes (ADSI)
 
@@ -33,9 +33,9 @@ Esta seção descreve as seguintes interfaces de objeto persistentes:
 -   [**IADsService**](/windows/desktop/api/Iads/nn-iads-iadsservice)
 -   [**IADsUser**](/windows/desktop/api/Iads/nn-iads-iadsuser)
 
- 
+ 
 
- 
+ 
 
 
 

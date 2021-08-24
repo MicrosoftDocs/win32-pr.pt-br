@@ -1,23 +1,23 @@
 ---
-title: Estruturas (gestos de toque do Windows)
-description: Esta seção contém estruturas para gestos de toque do Windows.
+title: estruturas (Windows gestos de toque)
+description: esta seção contém estruturas para gestos de toque Windows.
 ms.assetid: 3735cfa1-095b-416c-a863-84fd7de4ba03
 keywords:
-- Windows Touch, estruturas
-- Toque do Windows, gestos
+- Windows Toque, estruturas
+- Windows Toque, gestos
 - gestos, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 820bb4a4dc2471dbb6c7742246dfe126ee97eff4
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: a6fea3ca0808ac18733204f8d70a1dae21d8c96c510532fc572083993ab28331
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104499213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592116"
 ---
-# <a name="structures-windows-touch-gestures"></a>Estruturas (gestos de toque do Windows)
+# <a name="structures-windows-touch-gestures"></a>estruturas (Windows gestos de toque)
 
-Esta seção contém estruturas para gestos de toque do Windows.
+esta seção contém estruturas para gestos de toque Windows.
 
 As seguintes estruturas são especificadas nesta seção.
 
@@ -37,7 +37,7 @@ As seguintes estruturas são especificadas nesta seção.
 
 <dl> <dt>
 
-[Gestos de toque do Windows](multi-touch-gestures.md)
+[Windows Gestos de toque](multi-touch-gestures.md)
 </dt> <dt>
 
 [Guia de programação para gestos](guide-multi-touch-gestures.md)

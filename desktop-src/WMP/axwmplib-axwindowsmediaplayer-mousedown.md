@@ -3,7 +3,7 @@ title: Evento MouseDown do objeto AxWindowsMediaPlayer
 description: O evento MouseDown ocorre quando o usuário pressiona um botão do mouse. | Evento MouseDown do objeto AxWindowsMediaPlayer
 ms.assetid: 3dfbd034-67d4-4b7e-88d8-a77d301c5df7
 keywords:
-- Evento MouseDown do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MouseDown do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0779df27f406691903a0362c9eb3a1df993f595f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73259fab6ffd268e1c9a581a4b7ba18fdfba6c1647b57ef12bcae1c3ab8c04a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509446"
 ---
 # <a name="mousedown-event-of-the-axwindowsmediaplayer-object"></a>Evento MouseDown do objeto AxWindowsMediaPlayer
 

@@ -1,24 +1,24 @@
 ---
 title: Exibindo o estado atual
-description: O código de exemplo a seguir demonstra como localizar todos os filtros que podem afetar um aplicativo de servidor.
+description: O código de exemplo a seguir demonstra como encontrar todos os filtros que podem afetar um aplicativo de servidor.
 ms.assetid: fd6ca153-cd9a-4def-b017-9eff298b3343
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b876e579f29e69a0e7b47123cabc877819843402
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bc509198670f50d001c114d88b944cbbcf065ba9b2e73e53ac05652025271ac3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105782823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638996"
 ---
 # <a name="viewing-current-state"></a>Exibindo o estado atual
 
-O código de exemplo a seguir demonstra como localizar todos os filtros que podem afetar um aplicativo de servidor.
+O código de exemplo a seguir demonstra como encontrar todos os filtros que podem afetar um aplicativo de servidor.
 
 > [!Note]  
-> As condições de filtro são as mesmas que as suportadas pela API **IsPortAllowed** de nível inferior.
+> As condições de filtro são as mesmas que as suportadas pela API **IsPortAllowed** de nível baixo.
 
- 
+ 
 
 
 ```C++
@@ -162,9 +162,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

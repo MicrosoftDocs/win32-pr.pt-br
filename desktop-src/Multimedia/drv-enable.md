@@ -1,9 +1,9 @@
 ---
-title: Mensagem de DRV_ENABLE (mmsystem. h)
-description: Habilita o driver. O driver deve inicializar qualquer variável e localizar dispositivos com a interface de entrada e saída (e/s).
+title: DRV_ENABLE mensagem (Mmsystem.h)
+description: Habilita o driver. O driver deve inicializar todas as variáveis e localizar dispositivos com a interface de entrada e saída (E/S).
 ms.assetid: 8aa36f3d-b36c-4460-859c-108a7a450ae5
 keywords:
-- Multimídia do Windows de mensagem DRV_ENABLE
+- DRV_ENABLE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 569b4ca5f3d0dc5f439b1e2b0e25887ffd1da4ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7ab74abf08380db97a15da22fa99d58d72b6aba124a430cad665f65bc94e26c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526276"
 ---
-# <a name="drv_enable-message"></a>\_Mensagem de habilitação de drv
+# <a name="drv_enable-message"></a>Mensagem DRV \_ ENABLE
 
-Habilita o driver. O driver deve inicializar qualquer variável e localizar dispositivos com a interface de entrada e saída (e/s).
+Habilita o driver. O driver deve inicializar todas as variáveis e localizar dispositivos com a interface de entrada e saída (E/S).
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Habilita o driver. O driver deve inicializar qualquer variável e localizar disp
 <span id="hdrvr"></span><span id="HDRVR"></span>*hdrvr*
 </dt> <dd>
 
-Identificador da instância de driver instalável.
+Lidar com a instância do driver instanciada.
 
 </dd> </dl>
 
@@ -42,9 +42,9 @@ Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Os parâmetros *dwDriverId*, *lParam1* e *lParam2* não são usados.
+Os *parâmetros dwDriverId,* *lParam1* e *lParam2* não são usados.
 
-Os drivers são considerados habilitados a partir do momento em que receberem essa mensagem até que sejam desabilitados usando a mensagem de [**\_ desativação de drv**](drv-disable.md) .
+Os drivers são considerados habilitados desde o momento em que recebem essa mensagem até que sejam desabilitados usando a [**mensagem DRV \_ DISABLE.**](drv-disable.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Os drivers são considerados habilitados a partir do momento em que receberem es
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

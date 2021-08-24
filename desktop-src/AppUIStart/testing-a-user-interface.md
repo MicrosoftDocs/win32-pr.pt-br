@@ -1,22 +1,22 @@
 ---
 title: Testando uma interface do usuário
-description: Esta seção descreve detalhadamente algumas das tarefas associadas ao teste de uma interface do usuário para um aplicativo do Windows.
+description: esta seção descreve detalhadamente algumas das tarefas associadas ao teste de uma interface do usuário para um aplicativo Windows.
 ms.assetid: d628e530-7a0b-4a8d-9a9f-253aec275fa9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2e86282c03502642541c0ea1318b8ccaf6d16b2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 17f3d6686cdcd892aa5608944cf8c1a20df0d44106a0fdac01b2bbbd855fe523
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507426"
 ---
 # <a name="testing-a-user-interface"></a>Testando uma interface do usuário
 
-Esta seção descreve detalhadamente algumas das tarefas associadas ao teste de uma interface do usuário para um aplicativo do Windows.
+esta seção descreve detalhadamente algumas das tarefas associadas ao teste de uma interface do usuário para um aplicativo Windows.
 
 -   [Introdução](#introduction)
--   [Teste de usabilidade](#usability-testing)
+-   [Testes de usabilidade](#usability-testing)
 -   [Teste de acessibilidade](#accessibility-testing)
 
 ## <a name="introduction"></a>Introdução
@@ -53,8 +53,8 @@ Garantir que um aplicativo seja acessível aos usuários com deficiências envol
 
 O teste para esses aspectos de um aplicativo pode ser realizado por meio de uma auditoria de acessibilidade, que envolve uma revisão manual do aplicativo por um especialista em acessibilidade e um estudo de usabilidade focado de usuários desabilitados e dispositivos de tecnologia assistencial.
 
-Embora pareça não-relacionado, há uma correlação próxima entre os requisitos de acesso programático de estruturas de teste automatizadas e os de dispositivos de tecnologia assistencial. O suporte a um tem o benefício adicional de habilitar o outro. Para obter mais informações sobre acessibilidade e automação de teste em aplicativos do Windows, consulte [acessibilidade](/windows/desktop/accessibility), [ferramentas de teste](/windows/desktop/WinAuto/testing-tools)e a API de [automação do Windows](/windows/desktop/WinAuto/windows-automation-api-portal).
+Embora pareça não-relacionado, há uma correlação próxima entre os requisitos de acesso programático de estruturas de teste automatizadas e os de dispositivos de tecnologia assistencial. O suporte a um tem o benefício adicional de habilitar o outro. para obter mais informações sobre acessibilidade e automação de teste em aplicativos Windows, consulte [acessibilidade](/windows/desktop/accessibility), [ferramentas de teste](/windows/desktop/WinAuto/testing-tools)e a API de [automação de Windows](/windows/desktop/WinAuto/windows-automation-api-portal).
 
- 
+ 
 
- 
+ 

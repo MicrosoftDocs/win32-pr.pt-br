@@ -4,12 +4,12 @@ ms.assetid: fc0900b4-f08b-4a93-bbc0-d3db067d7917
 title: Interfaces e classes do RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34769b2c268bcdfe2becf9e759344d972092fe28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffd842219a23accc076ff7fdc8564ccb3ce0c472cb7e26ab036f1048456461f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119589946"
 ---
 # <a name="realtimestylus-classes-and-interfaces"></a>Interfaces e classes do RealTimeStylus
 
@@ -62,7 +62,7 @@ Os métodos na biblioteca COM retornam valores de **HRESULT**. Salvo indicação
 
 
 
-| Valor HRESULT                                   | Description                                                                              |
+| Valor HRESULT                                   | Descrição                                                                              |
 |-------------------------------------------------|------------------------------------------------------------------------------------------|
 | S \_ OK<br/>                                | Êxito.<br/>                                                                      |
 | \_ponteiro E<br/>                           | Pelo menos um ponteiro (para um parâmetro de entrada ou de saída) é inválido.<br/> |

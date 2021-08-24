@@ -1,5 +1,5 @@
 ---
-description: Cria um novo catálogo personalizado no indexador do Windows Search e retorna uma referência a ele.
+description: cria um novo catálogo personalizado no indexador Windows pesquisa e retorna uma referência a ele.
 ms.assetid: 2ADC48B8-87A2-4527-9AA8-9B0BA3A12462
 title: 'Método ISearchManager2:: createcatalog'
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - searchapi.h
-ms.openlocfilehash: 009e34a2d1eb4d18df1747ba01ea39c3360ec81a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34a4ceb37045ebbae62e04da0b5395673ed498c56189a26f2abaa376c960c511
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597746"
 ---
 # <a name="isearchmanager2createcatalog-method"></a>Método ISearchManager2:: createcatalog
 
-Cria um novo catálogo personalizado no indexador do Windows Search e retorna uma referência a ele.
+cria um novo catálogo personalizado no indexador Windows pesquisa e retorna uma referência a ele.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,7 +58,7 @@ Em caso de sucesso, uma referência ao catálogo criado é retornada como um pon
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -79,7 +79,7 @@ HRESULT com falha: falha ao criar catálogo ou argumentos inválidos passados.
 
 ## <a name="remarks"></a>Comentários
 
-Chamado para criar um novo catálogo no indexador do Windows Search. Após a criação, os métodos no Gerenciador de [**ISearchCatalog**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) retornado podem ser usados para adicionar locais a serem indexados, monitorar o processo de indexação e construir consultas para enviar ao indexador e obter resultados. Consulte a documentação "Gerenciando o índice" para obter mais informações: https://msdn.microsoft.com/library/bb266516(VS.85).aspx
+chamado para criar um novo catálogo no indexador de pesquisa Windows. Após a criação, os métodos no Gerenciador de [**ISearchCatalog**](/windows/desktop/api/Searchapi/nn-searchapi-isearchcatalogmanager) retornado podem ser usados para adicionar locais a serem indexados, monitorar o processo de indexação e construir consultas para enviar ao indexador e obter resultados. Consulte a documentação "Gerenciando o índice" para obter mais informações: https://msdn.microsoft.com/library/bb266516(VS.85).aspx
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Chamado para criar um novo catálogo no indexador do Windows Search. Após a cri
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>           |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 649f763f-45aa-4086-9e7f-b8934b5bd22c
 title: Todos os bits e a bit a bit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 709db4829f5b620bcb14e0b4261fac7e7d9a6f95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac133e04eae78fe9b943c1e354d9e4dcf451640ad60be1883eecc938ec1d418a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119594716"
 ---
 # <a name="all-bitwise-and-some-bitwise"></a>Todos os bits e a bit a bit
 
@@ -35,7 +35,7 @@ Os operadores de comparação com suporte para testes de bits BITais são listad
 | Operador de comparação | Descrição  |
 |---------------------|--------------|
 | =                   | Igual a     |
-| ! = ou <>      | Não igual a |
+| ! = ou <>      | É diferente de |
 
 
 
@@ -63,12 +63,12 @@ A tabela verdadeira a seguir usa valores binários e hexadecimais de exemplo par
 | Propriedade em binary (Hex) | Máscara em binário (Hex) | Máscara de & de propriedade = binary (Hex) | = ALGUNS BITS | = TODOS OS BITS |
 |--------------------------|----------------------|--------------------------------|----------------|---------------|
 | 0001 (0x1)               | 0001 (0x1)           | 0001 (0x1)                     | True           | True          |
-| 0001 (0x1)               | 0011 (0x3)           | 0001 (0x1)                     | True           | Falso         |
+| 0001 (0x1)               | 0011 (0x3)           | 0001 (0x1)                     | Verdadeiro           | Falso         |
 | 0011 (0x3)               | 0001 (0x1)           | 0001 (0x1)                     | True           | True          |
 | 0010 (0x2)               | 0001 (0x1)           | 0000 (0x0)                     | Falso          | Falso         |
 | 11110000 (0xF0)          | 00000011 (0x03)      | 00000000 (0x00)                | Falso          | Falso         |
 | 11110010 (0xF2)          | 11110010 (0xF2)      | 11110010 (0xF2)                | True           | True          |
-| 11110010 (0xF2)          | 00000011 (0x03)      | 00000010 (0x02)                | True           | Falso         |
+| 11110010 (0xF2)          | 00000011 (0x03)      | 00000010 (0x02)                | Verdadeiro           | Falso         |
 
 
 

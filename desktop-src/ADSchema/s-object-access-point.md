@@ -1,10 +1,10 @@
 ---
-title: Sintaxe de objeto (ponto de acesso)
-description: Sintaxe de objeto (ponto de acesso).
+title: Sintaxe object(Access-Point)
+description: Sintaxe object(Access-Point).
 ms.assetid: b52cfa3b-2a5e-495c-9c1f-db7d04ccbfb2
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD de sintaxe de objeto (ponto de acesso)
+- Esquema do AD de sintaxe object(Access-Point)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f0d8f75b41ddd3f5365e43cf04e942b41badc9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b7000223442157024cce2c0306eafe4bfe3286d6cd7658e671991937cd09804a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702556"
 ---
-# <a name="objectaccess-point-syntax"></a>Sintaxe de objeto (ponto de acesso)
+# <a name="objectaccess-point-syntax"></a>Sintaxe object(Access-Point)
 
-Sintaxe de objeto (ponto de acesso). Do X400.
+Sintaxe object(Access-Point). Do X400.
 
 
 
 | Entrada | Valor |
 |--------------|----------------------|
-| Nome         | Objeto (ponto de acesso) |
+| Nome         | Object(Access-Point) |
 | ID da sintaxe    | 2.5.5.14             |
-| ID DO OM        | 127                  |
-| Tipo de MAPI    | \-                   |
-| Tipo de ADS     | none                 |
-| Tipo de variante | none                 |
-| Tipo SDS     | nenhuma                 |
+| OM ID        | 127                  |
+| Tipo MAPI    | \-                   |
+| Tipo ADS     | nenhum                 |
+| Tipo de variante | nenhum                 |
+| Tipo de SDS     | nenhuma                 |
 
 
 

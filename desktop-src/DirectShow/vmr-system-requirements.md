@@ -4,12 +4,12 @@ ms.assetid: fd50b312-73f0-4c68-a8b1-3497d958bc8f
 title: Requisitos do sistema do VMR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99d54d6d1604c3e514f3ceef379eaba4a8fa1ee1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4d03d5a195f675b911dff85860592c3ec3b5a39ec4f65a51cdc594bc8744906
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632996"
 ---
 # <a name="vmr-system-requirements"></a>Requisitos do sistema do VMR
 

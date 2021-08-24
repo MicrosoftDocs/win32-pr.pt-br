@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e65f034e5f8857b21bc706bce45aa74c3c3cf966
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0df3337c07ed678354515bdf0c665a5d6157f158ac6c2370a8981d8e5028b27e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105771853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634787"
 ---
 # <a name="cmediapositioncmediaposition-constructor-ctlutilh---pname-punk-parameters"></a>Construtor CMediaPosition. CMediaPosition (Ctlutil. h)-pName, pUnk parâmetros
 
@@ -61,7 +61,7 @@ Ponteiro para o proprietário deste objeto ou **NULL** se o objeto não for agre
 
 | Requisito | Valor |
 |-|-|
-| parâmetro | Ctlutil. h (incluir fluxos. h) |
+| parâmetro | Ctlutil. h (incluir Fluxos. h) |
 | Biblioteca| Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 ## <a name="see-also"></a>Confira também

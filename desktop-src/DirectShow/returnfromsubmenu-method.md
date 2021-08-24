@@ -1,15 +1,15 @@
 ---
-description: O método ReturnFromSubmenu retorna exibição de um submenu para seu menu pai, ou para o título atual, se o menu for um menu de nível superior.
+description: O método ReturnFromSubmenu retornará a exibição de um submenu para seu menu pai ou para o título atual se o menu for um menu de nível superior.
 ms.assetid: 900151e9-3fb3-4665-9169-c1cae6659e72
 title: Método ReturnFromSubmenu
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67dfdbc38d36a1447d54837e788e55b1259bedef
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ef9617b8880c1179d5e5bfff7f9c56904d0bb953abbda7ef95b0ecf85ec12b90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747056"
 ---
 # <a name="returnfromsubmenu-method"></a>Método ReturnFromSubmenu
 
@@ -18,7 +18,7 @@ ms.locfileid: "104456734"
 
  
 
-O `ReturnFromSubmenu` método retorna exibição de um submenu para seu menu pai, ou para o título atual se o menu for um menu de nível superior.
+O `ReturnFromSubmenu` método retorna a exibição de um submenu para seu menu pai ou para o título atual se o menu for um menu de nível superior.
 
 ``` syntax
 MSWebDVD.ReturnFromSubmenu()

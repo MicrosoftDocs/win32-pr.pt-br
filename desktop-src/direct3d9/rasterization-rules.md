@@ -4,12 +4,12 @@ ms.assetid: 919b36f1-d4de-4d5d-ba1a-0605bf59a6cd
 title: Regras de rasterização (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5115b2f12e0064202fcbca58f52cb163166d0a82
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: d241248f5a69262129f60fc005582dc5e03b2a6931cf024bc4613d81558cdb38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104172398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746646"
 ---
 # <a name="rasterization-rules-direct3d-9"></a>Regras de rasterização (Direct3D 9)
 
@@ -17,7 +17,7 @@ Muitas vezes, os pontos especificados para vértices não correspondem exatament
 
 -   [Regras de rasterização de triângulo](#triangle-rasterization-rules)
 -   [Regras de ponto e linha](#point-and-line-rules)
--   [Regras de Sprite de ponto](#point-sprite-rules)
+-   [Regras de sprite de ponto](#point-sprite-rules)
 
 ## <a name="triangle-rasterization-rules"></a>Regras de rasterização de triângulo
 
@@ -55,17 +55,17 @@ Os pontos são renderizados igual aos sprites de ponto, que são renderizado com
 
 As regras de renderização de linha não as mesmas para [linhas de GDI](../gdi/lines.md).
 
-Para obter informações sobre a renderização de linha AntiAlias, consulte [**ID3DXLine**](id3dxline.md).
+Para obter informações sobre a renderização de linha aninhada, consulte [**ID3DXLine**](id3dxline.md).
 
 ## <a name="point-sprite-rules"></a>Regras de sprite de ponto
 
-Os sprites de ponto e os primitivos de patch são rasterizados como se os primitivos fossem transformados em triângulos antes e os triângulos resultante fossem rasterizados. Para obter mais informações, consulte [Point sprites (Direct3D 9)](point-sprites.md).
+Os sprites de ponto e os primitivos de patch são rasterizados como se os primitivos fossem transformados em triângulos antes e os triângulos resultante fossem rasterizados. Para obter mais informações, [consulte Sprites de ponto (Direct3D 9)](point-sprites.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Coordenar sistemas e geometria](coordinate-systems-and-geometry.md)
+[Sistemas de coordenadas e geometria](coordinate-systems-and-geometry.md)
 </dt> </dl>
 
  

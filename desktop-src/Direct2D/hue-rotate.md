@@ -1,26 +1,26 @@
 ---
-title: Efeito de Rotatation de matiz
+title: Efeito de rotação de matiz
 description: Use o efeito de rotação de matiz para alterar o matiz de uma imagem aplicando uma matriz de cores com base no ângulo de rotação.
 ms.assetid: D322DB2C-2B8B-4101-BFB2-97E49CAC7BF6
 keywords:
-- efeito de Rotatation de matiz
+- efeito de rotação de matiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 525dbe8fc94377080fbae34b80252c84c05073ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 531ab9b1649db96bc5ee100df98ed10b4021b506e3ad71bb426778655348b2df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104563054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569117"
 ---
-# <a name="hue-rotatation-effect"></a>Efeito de Rotatation de matiz
+# <a name="hue-rotatation-effect"></a>Efeito de rotação de matiz
 
 Use o efeito de rotação de matiz para alterar o matiz de uma imagem aplicando uma matriz de cores com base no ângulo de rotação.
 
-O CLSID para esse efeito é CLSID \_ D2D1HueRotation.
+O CLSID para esse efeito é CLSID \_ D2D1Rotation.
 
 -   [Imagem de exemplo](#example-image)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Bitmap de saída](#output-bitmap)
 -   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
@@ -34,7 +34,7 @@ O exemplo aqui mostra as imagens de entrada e saída do efeito de rotação de m
 | Antes                                                       |
 |--------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)   |
-| After (após)                                                        |
+| Depois                                                        |
 | ![a imagem após a transformação.](images/17-huerotation.png) |
 
 
@@ -56,19 +56,19 @@ m_d2dContext->EndDraw();
 
 
 
-O efeito calcula uma matriz de cores com base no ângulo de rotação (*?*) que você especifica com a \_ propriedade de ângulo de prop d2d1 HUEROTATION \_ \_ . Aqui estão as equações de matriz.
+O efeito calcula uma matriz de cores com base no ângulo de rotação (*?*) especificado com a propriedade D2D1 \_ HUEROTATION \_ PROP \_ ANGLE. Aqui estão as equações de matriz.
 
 ![cálculos de rotação de matiz](images/hue-formula.png)
 
-A matriz criada depende apenas do ângulo de rotação. Você pode usar o efeito de [matriz de cores](color-matrix.md) se precisar de uma matriz específica.
+A matriz criada depende apenas do ângulo de rotação. Você poderá usar o efeito [da matriz](color-matrix.md) de cores se precisar de uma matriz específica.
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
 
 
 | Nome de exibição e enumeração de índice                         | Tipo e valor padrão           | Descrição                              |
 |------------------------------------------------------------|----------------------------------|------------------------------------------|
-| Ângulo<br/> \_Ângulo de \_ prop d2d1 HUEROTATION \_<br/> | FLOAT<br/> 0,0 f<br/> | O ângulo para girar o matiz, em graus. |
+| Ângulo<br/> D2D1 \_ HUEROTATION \_ PROP \_ ANGLE<br/> | FLOAT<br/> 0.0f<br/> | O ângulo para girar o matiz, em graus. |
 
 
 
@@ -84,10 +84,10 @@ O tamanho do bitmap de saída é o mesmo que o tamanho do bitmap de entrada.
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

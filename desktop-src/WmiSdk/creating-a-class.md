@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Criando uma classe WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2274252715ce44b9d2b79e398c945ca723fe3f7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec2db62f1f0d14035f7bcc3fd74f8bbbfbacf08cb0dbf139b06c9870b7039e19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612556"
 ---
 # <a name="creating-a-wmi-class"></a>Criando uma classe WMI
 
@@ -25,7 +25,7 @@ No WMI, uma classe é um objeto que descreve algum aspecto de uma empresa, como 
 
 Uma classe base representa algum conceito geral. Por exemplo, a classe [**CIM \_ CDROMDrive**](/windows/desktop/CIMWin32Prov/cim-cdromdrive) representa todos os tipos de unidades de CD-ROM no WMI e contém propriedades gerais que descrevem todos os tipos de unidades de CD-ROM. Para obter mais informações, consulte [criando uma classe base](creating-a-base-class.md).
 
-Uma classe derivada herda propriedades e métodos de outra classe. Uma classe derivada geralmente representa um caso específico de uma classe base. Por exemplo, a classe [**Win32 \_ CDROMDrive**](/windows/desktop/CIMWin32Prov/win32-cdromdrive) representa uma unidade de CD-ROM em um sistema Windows. A classe **Win32 \_ CDROMDrive** baseia-se em e herda muitas propriedades de [**CIM \_ CDROMDrive**](/windows/desktop/CIMWin32Prov/cim-cdromdrive). No entanto, o **Win32 \_ CDROMDrive**, como outras classes derivadas, pode ter propriedades adicionais que tornam a classe derivada exclusiva. Para obter mais informações, consulte [criando uma classe derivada](creating-a-derived-class.md).
+Uma classe derivada herda propriedades e métodos de outra classe. Uma classe derivada geralmente representa um caso específico de uma classe base. por exemplo, a classe [**Win32 \_ CDROMDrive**](/windows/desktop/CIMWin32Prov/win32-cdromdrive) representa uma unidade de CD-ROM em um sistema Windows. A classe **Win32 \_ CDROMDrive** baseia-se em e herda muitas propriedades de [**CIM \_ CDROMDrive**](/windows/desktop/CIMWin32Prov/cim-cdromdrive). No entanto, o **Win32 \_ CDROMDrive**, como outras classes derivadas, pode ter propriedades adicionais que tornam a classe derivada exclusiva. Para obter mais informações, consulte [criando uma classe derivada](creating-a-derived-class.md).
 
 ## <a name="properties-and-methods"></a>Propriedades e métodos
 

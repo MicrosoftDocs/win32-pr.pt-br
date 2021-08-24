@@ -4,12 +4,12 @@ description: Os provedores usam modelos de dados para definir os dados específi
 ms.assetid: 064227a2-7ce8-461a-9dc0-7519652e6628
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 067230472c8de5ce29145e221c109b3f390f0a6c
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: d5480ca158916801665943bd33b886bfcd5d73015e8730c1dd108123dadc1995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "103823608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652606"
 ---
 # <a name="defining-event-data-templates"></a>Definindo modelos de dados de evento
 
@@ -31,7 +31,7 @@ Se você incluir estruturas no modelo, deverá escrever os membros da estrutura 
 
 Você deve considerar cuidadosamente as informações que você inclui nos eventos, especialmente quando os eventos são gravados nos canais globais. Como regra geral, você não deve incluir informações particulares nos eventos. Isso inclui senhas de texto sem formatação e informações de usuário pessoal. Além disso, os programas executados pelo usuário, URLs que o usuário visitou e outras informações relacionadas às atividades do usuário no computador devem ser consideradas particulares.
 
-Se você precisar registrar URLs e nomes de usuário nos eventos, não os grave nos canais do Windows (sistema e aplicativo), pois esses canais podem ser lidos por todos os usuários autenticados. Em vez disso, grave-os em seus próprios canais operacionais ou analíticos. Defina as permissões de acesso nesses canais para permitir que somente os administradores leiam os eventos. Talvez seja necessário fornecer uma divulgação apropriada para notificar os usuários do fato de que as informações privadas são disponibilizadas para os administradores.
+se você precisar registrar URLs e nomes de usuário nos eventos, não os grave nos canais de Windows (sistema e aplicativo), pois esses canais podem ser lidos por todos os usuários autenticados. Em vez disso, grave-os em seus próprios canais operacionais ou analíticos. Defina as permissões de acesso nesses canais para permitir que somente os administradores leiam os eventos. Talvez seja necessário fornecer uma divulgação apropriada para notificar os usuários do fato de que as informações privadas são disponibilizadas para os administradores.
 
 O exemplo a seguir mostra como definir um modelo. Você deve especificar o atributo **tid** do modelo referenciado na definição de evento ou definição de filtro.
 

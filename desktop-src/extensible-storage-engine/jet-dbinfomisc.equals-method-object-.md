@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c07e722abf0c6a291d42bc094ba7a2a7c5238cfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46be2130cbb57cc216f570e944d6959ae355780134f90bc94101d01d6f38bb16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617596"
 ---
 # <a name="jet_dbinfomiscequals-method-object"></a>JET_DBINFOMISC. Método Equals (Object)
 
-Determina se o [objeto](/dotnet/api/system.object) especificado é igual ao [objeto](/dotnet/api/system.object)atual.
+Determina se o Objeto [especificado](/dotnet/api/system.object) é igual ao Objeto [atual.](/dotnet/api/system.object)
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parâmetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
-    O [objeto](/dotnet/api/system.object) a ser comparado com o [objeto](/dotnet/api/system.object)atual.
+    O [Objeto](/dotnet/api/system.object) a ser comparado com o Objeto [atual.](/dotnet/api/system.object)
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se o [objeto](/dotnet/api/system.object) especificado for igual ao [objeto](/dotnet/api/system.object)atual; caso contrário, false.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se o Objeto [especificado](/dotnet/api/system.object) for igual ao Objeto [atual](/dotnet/api/system.object); caso contrário, false.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membros do JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membros](./jet-dbinfomisc-members.md)
 
-[Sobrecarga de Equals](./jet-dbinfomisc.equals-method.md)
+[Sobrecarga igual a](./jet-dbinfomisc.equals-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

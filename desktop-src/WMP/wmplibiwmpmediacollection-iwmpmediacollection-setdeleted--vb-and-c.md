@@ -1,11 +1,11 @@
 ---
-title: Método setdeleted IWMPMediaCollection
-description: O método setdeled move o item de mídia especificado para a pasta itens excluídos. | Método setdeleted IWMPMediaCollection
+title: Método setDeleted IWMPMediaCollection
+description: O método setDeleted move o item de mídia especificado para a pasta de itens excluídos. | Método setDeleted IWMPMediaCollection
 ms.assetid: 3fa7989e-8b98-44e1-93ca-8136aba358ea
 keywords:
-- método setdeled Media Player do Windows
-- método setdeleted Windows Media Player, interface IWMPMediaCollection
-- Interface IWMPMediaCollection Windows Media Player, método setdeleted
+- Método setDeleted Windows Media Player
+- método setDeleted Windows Media Player , interface IWMPMediaCollection
+- Interface IWMPMediaCollection Windows Media Player , método setDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ccf8cf2d36ab7e4aaf76fdbe5c28582650fcda
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7516d6aab26659fa2bba57bd961671b4dca0f92d367d5d9bb1f048e8fd19eb2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505946"
 ---
-# <a name="iwmpmediacollectionsetdeleted-method"></a>Método IWMPMediaCollection:: setdeleted
+# <a name="iwmpmediacollectionsetdeleted-method"></a>Método IWMPMediaCollection::setDeleted
 
-O `setDeleted` método move o item de mídia especificado para a pasta itens excluídos.
+O `setDeleted` método move o item de mídia especificado para a pasta de itens excluídos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,33 +55,33 @@ Implements IWMPMediaCollection.setDeleted
 
 <dl> <dt>
 
-*pItem* \[ no\]
+*pItem* \[ Em\]
 </dt> <dd>
 
-Uma interface **WMPLib. IWMPMedia** para o item a ser movido.
+Uma interface **WMPLib.IWMPMedia** para o item a ser movido.
 
 </dd> <dt>
 
-*varfIsDeleted* \[ no\]
+*varfIsDeleted* \[ Em\]
 </dt> <dd>
 
-Um valor **System. Boolean** que especifica se o item deve ser movido para a pasta itens excluídos. Esse valor deve ser sempre **verdadeiro**.
+Um **valor System.Boolean** que especifica se o item deve ser movido para a pasta de itens excluídos. Esse valor sempre deve ser **true.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não remove arquivos do computador do usuário, apenas os move para a pasta itens excluídos.
+Esse método não remove arquivos do computador do usuário, apenas os move para a pasta de itens excluídos.
 
-Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa `setDeleted` para mover um item de mídia específico para a pasta itens excluídos. O método **IsDeleted** testa primeiro se o item já foi excluído. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir `setDeleted` usa para mover um item de mídia específico para a pasta de itens excluídos. O **método isDeleted** primeiro testa se o item já foi excluído. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -131,7 +131,7 @@ End If
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

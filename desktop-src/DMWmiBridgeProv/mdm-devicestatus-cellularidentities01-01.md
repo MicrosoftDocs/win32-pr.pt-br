@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_DeviceStatus_CellularIdentities01_01
-description: A \_ classe MDM DeviceStatus \_ CellularIdentities01 \_ 01 permite consultar se o dispositivo está em conformidade com a política de criptografia corporativa.
+title: MDM_DeviceStatus_CellularIdentities01_01 classe
+description: A classe MDM \_ DeviceStatus \_ CellularIdentities01 01 permite que você consulte se o dispositivo está em conformidade com a \_ política de criptografia corporativa.
 ms.assetid: e117ff72-48c0-4b25-8b09-c096851c18ac
 keywords:
-- Classe MDM_DeviceStatus_CellularIdentities01_01
-- Classe MDM_DeviceStatus_CellularIdentities01_01, descrita
+- MDM_DeviceStatus_CellularIdentities01_01 classe
+- MDM_DeviceStatus_CellularIdentities01_01, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3d9d3fab514fbfb56d132fc20ba98ef8c2565eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8ee53bb06be0cf5bce11cdcc26be49d86b15f3bb79aa58237ce258f8ee1a05c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655686"
 ---
-# <a name="mdm_devicestatus_cellularidentities01_01-class"></a>\_Classe MDM DeviceStatus \_ CellularIdentities01 \_ 01
+# <a name="mdm_devicestatus_cellularidentities01_01-class"></a>Classe MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** permite consultar se o dispositivo está em conformidade com a política de criptografia corporativa.
+A **classe MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** permite que você consulte se o dispositivo está em conformidade com a política de criptografia corporativa.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -51,13 +51,13 @@ class MDM_DeviceStatus_CellularIdentities01_01
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** tem estes tipos de membros:
+A **classe MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** tem essas propriedades.
+A **classe MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** tem essas propriedades.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ A classe **MDM \_ DeviceStatus \_ CellularIdentities01 \_ 01** tem essas proprie
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -78,18 +78,18 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[IMSI](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-imsi)
+[Imsi](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-imsi)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -110,7 +110,7 @@ Nó para consultas em cartões SIM.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -126,13 +126,13 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 </dd> <dt>
 
-[PhoneNumber](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-phonenumber)
+[Phonenumber](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-phonenumber)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -140,10 +140,10 @@ Tipo de acesso: leitura/gravação
 [RoamingCompliance](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-roamingcompliance)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -151,10 +151,10 @@ Tipo de acesso: leitura/gravação
 [RoamingStatus](/windows/client-management/mdm/devicestatus-csp#devicestatus-cellularidentities-imei-roamingstatus)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -165,10 +165,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

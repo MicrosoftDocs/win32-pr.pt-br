@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Dsound.dll
-ms.openlocfilehash: 947f31d67a007e050f4ed031e2a15c5964fa63a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52a60c3cf77d1416cfe1d096b17c0892f2590b74894e09c325ad1c530c07ac22
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654116"
 ---
 # <a name="directsoundfullduplexcreate-function"></a>Função DirectSoundFullDuplexCreate
 
@@ -42,7 +42,7 @@ HRESULT DirectSoundFullDuplexCreate(
 *...* 
 </dt> <dd></dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 

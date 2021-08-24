@@ -7,12 +7,12 @@ keywords:
 - Esquema do Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b4c3393a6da1b8d1bd2c2418084c8f7fc657732
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 3259bf94049c877bb57cd575061cc1b447b8acb352613291e392b074deca6d39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105811217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702396"
 ---
 # <a name="active-directory-schema-ad-schema"></a>Esquema de Active Directory (esquema do AD)
 
@@ -38,7 +38,7 @@ Em cada um dos tópicos de referência, há uma seção para cada sistema operac
 
  
 
-Se um sistema operacional não estiver listado no tópico, o tópico não terá suporte nesse sistema operacional. Por exemplo, se um tópico lista apenas o Windows Server 2003 e o ADAM, o tópico não se aplica ao Windows Server 2003 R2.
+Se um sistema operacional não estiver listado no tópico, o tópico não terá suporte nesse sistema operacional. por exemplo, se um tópico listar apenas Windows server 2003 e ADAM, o tópico não se aplicará ao Windows server 2003 R2.
 
 As seções a seguir contêm informações detalhadas sobre os elementos do esquema de Active Directory.
 

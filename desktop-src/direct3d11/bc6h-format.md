@@ -7,40 +7,40 @@ keywords:
 - DXGI_FORMAT_BC6H
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92ea15e0275bc478c0708ce08f531d8888a3c84d
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 27422e177e98ecdc53b4152ba0514866f5ad75216e9ef789145d1af882a645d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633816"
 ---
 # <a name="bc6h-format"></a>Formato BC6H
 
 O formato BC6H é um formato de compactação de textura projetado para dar suporte a espaços de cores de intervalo altamente dinâmico (HDR) nos dados de origem.
 
--   [Sobre BC6H/DXGI \_ FORMAT \_ BC6H](/windows)
+-   [Sobre o formato BC6H/DXGI \_ \_ BC6H](/windows)
 -   [Implementação de BC6H](#bc6h-implementation)
--   [Decodificação do formato BC6H](#decoding-the-bc6h-format)
+-   [Decodificando o formato BC6H](#decoding-the-bc6h-format)
 -   [Formato de ponto de extremidade compactado BC6H](#bc6h-compressed-endpoint-format)
--   [Assinar extensão para valores de ponto de extremidade](#sign-extension-for-endpoint-values)
+-   [Extensão de assinatura para valores de ponto de extremidade](#sign-extension-for-endpoint-values)
 -   [Transformar inversão para valores de ponto de extremidade](#transform-inversion-for-endpoint-values)
--   [Não resquantação de pontos de extremidade de cor](#unquantization-of-color-endpoints)
+-   [Desquantificação de pontos de extremidade de cor](#unquantization-of-color-endpoints)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="about-bc6hdxgi_format_bc6h"></a>Sobre BC6H/DXGI \_ FORMAT \_ BC6H
+## <a name="about-bc6hdxgi_format_bc6h"></a>Sobre o formato BC6H/DXGI \_ \_ BC6H
 
 O formato BC6H fornece compactação de alta qualidade para imagens que usam canais de cor HDR, com um valor de 16 bits para cada canal de cor do valor (16: 16:16). Não há nenhum suporte para um canal alfa.
 
-BC6H é especificado pelos seguintes valores de enumeração DXGI \_ FORMAT:
+BC6H é especificado pelos seguintes valores de \_ enumeração de formato DXGI:
 
--   **DXGI \_ FORMAT \_ BC6H \_ TYPELESS**.
--   **DXGI \_ FORMAT \_ BC6H \_ UF16**. Esse formato BC6H não usa um bit de sinal nos valores de canal de cor da ponto flutuante de 16 bits.
--   **DXGI \_ FORMAT \_ BC6H \_ SF16**. Esse formato BC6H usa um bit de sinal nos valores de canal de cor de ponto flutuante de 16 bits.
+-   **Dxgi \_ BC6H de formato não \_ \_ Type**.
+-   **Dxgi \_ FORMAT \_ BC6H \_ UF16**. Esse formato BC6H não usa um bit de sinal nos valores de canal de cor da ponto flutuante de 16 bits.
+-   **Dxgi \_ FORMAT \_ BC6H \_ SF16**. Esse formato BC6H usa um bit de sinal nos valores de canal de cor de ponto flutuante de 16 bits.
 
 > [!Note]  
-> O formato de ponto flutuante de 16 bits para canais de cores geralmente é chamado de formato de ponto flutuante "metade". Esse formato tem o seguinte layout de bit:
+> O formato de ponto flutuante de 16 bits para canais de cor é geralmente chamado de formato de ponto flutuante "metade". Esse formato tem o seguinte layout de bit:
 >
-> |  Formatar                     | Layout de bit                                                |
+> |  Formatar                     | Layout de bits                                                |
 > |-----------------------|-------------------------------------------------|
 > | UF16 (float não assinado) | 5 bits de expoente + 11 bits de mantissa              |
 > | SF16 (float assinado)   | 1 bit de sinal + 5 bits de expoente + 10 bits de mantissa |
@@ -57,7 +57,7 @@ O BC6H usa um tamanho de bloco fixo de 16 bytes (128 bits) e um tamanho de bloco
 
 Algumas observações importantes sobre o formato BC6H:
 
--   O BC6H suporta a denormalization de ponto flutuante, mas não suporta INF (infinito) e NaN (não numérico). A exceção é o modo assinado de BC6H (FORMATO DXGI \_ BC6H SF16), que dá suporte a \_ \_ -INF (infinito negativo). Observe que esse suporte para-INF é meramente um artefato do próprio formato e não é especificamente suportado por codificadores para esse formato. Em geral, quando os codificadores encontram dados de entrada INF (positivos ou negativos) ou NaN, eles devem \\ converter esses dados no valor máximo permitido de representação não-inf e mapear Nan para 0 antes da compactação.
+-   O BC6H suporta a denormalization de ponto flutuante, mas não suporta INF (infinito) e NaN (não numérico). A exceção é o modo assinado de BC6H ( \_ formato dxgi \_ BC6H \_ SF16), que dá suporte a-inf (infinito negativo). Observe que esse suporte para-INF é meramente um artefato do próprio formato e não é especificamente suportado por codificadores para esse formato. Em geral, quando os codificadores encontram dados de entrada INF (positivos ou negativos) ou NaN, eles devem \\ converter esses dados no valor máximo permitido de representação não-inf e mapear Nan para 0 antes da compactação.
 -   O BC6H não oferece suporte a um canal alfa.
 -   O decodificador BC6H executa descompactação antes de realizar a filtragem de textura.
 -   A descompactação BC6H deve ser um pouco precisa. ou seja, o hardware deve retornar resultados idênticos ao decodificador descrito nesta documentação.
@@ -102,7 +102,7 @@ decompress_bc6h(x, y, block)
 
 A tabela a seguir contém os valores e a contagem de bit de cada um dos 14 formatos possíveis para blocos de BC6H. 
 
-| Modo | Índices de partição | Partição | Pontos de extremidade de cor                  | Bits de modo      |
+| Mode | Índices de partição | Partition | Pontos de extremidade de cor                  | Bits de modo      |
 |------|-------------------|-----------|----------------------------------|----------------|
 | 1    | 46 bits           | 5 bits    | 75 bits (10.555, 10.555, 10.555) | 2 bits (00)    |
 | 2    | 46 bits           | 5 bits    | 75 bits (7666, 7666, 7666)       | 2 bits (01)    |
@@ -170,11 +170,11 @@ Os nomes dos campos na tabela acima são definidos da seguinte maneira:
 
  
 
-Endpt i , em que i é 0 ou 1, refere-se ao 0º ou 1º conjunto de pontos \[ \] de extremidade, respectivamente.
+Endpt \[ i \] , onde eu é 0 ou 1, refere-se ao 0º ou ao primeiro conjunto de pontos de extremidade, respectivamente.
 
-## <a name="sign-extension-for-endpoint-values"></a>Assinar extensão para valores de ponto de extremidade
+## <a name="sign-extension-for-endpoint-values"></a>Extensão de assinatura para valores de ponto de extremidade
 
-Para os blocos de duas regiões, há quatro valores de ponto de extremidade que pode ter seu sinal estendido. Endpt \[ 0 \] . Um será assinado somente se o formato for um formato assinado; os outros pontos de extremidade serão assinados somente se o ponto de extremidade tiver sido transformado ou se o formato for um formato assinado. O código a seguir demonstra o algoritmo para estender o sinal dos valores de ponto de extremidade de duas regiões.
+Para os blocos de duas regiões, há quatro valores de ponto de extremidade que pode ter seu sinal estendido. Endpt \[ 0 \] . Um será assinado somente se o formato for um formato assinado; os outros pontos de extremidade serão assinados somente se o ponto de extremidades tiver sido transformado ou se o formato for um formato assinado. O código a seguir demonstra o algoritmo para estender o sinal dos valores de ponto de extremidade de duas regiões.
 
 ``` syntax
 static void sign_extend_two_region(Pattern &p, IntEndpts endpts[NREGIONS_TWO])
@@ -193,7 +193,7 @@ static void sign_extend_two_region(Pattern &p, IntEndpts endpts[NREGIONS_TWO])
 }
 ```
 
-Para blocos de uma região, o comportamento é o mesmo, somente com endpt \[ 1 \] removido.
+Para blocos de uma região, o comportamento é o mesmo, somente com Endpt \[ 1 \] removido.
 
 ``` syntax
 static void sign_extend_one_region(Pattern &p, IntEndpts endpts[NREGIONS_ONE])
@@ -210,13 +210,13 @@ static void sign_extend_one_region(Pattern &p, IntEndpts endpts[NREGIONS_ONE])
 
 ## <a name="transform-inversion-for-endpoint-values"></a>Transformar inversão para valores de ponto de extremidade
 
-Para blocos de duas regiões, a transformação aplica o inverso da codificação de diferença, adicionando o valor base ao endpt \[ 0 \] . Um para as três outras entradas para um total de 9 operações de a adicionar. Na imagem abaixo, o valor base é representado como "A0" e tem a maior precisão de ponto flutuante. "A1", "B0" e "B1" são todos os deltas calculados a partir do valor de âncora, e esses valores delta são representados com precisão mais baixa. (A0 corresponde ao endpt \[ \] 0. A, B0 corresponde ao endpt \[ \] 0. B, A1 corresponde ao endpt \[ \] 1. A e B1 correspondem ao endpt \[ 1 \] .B.)
+Para blocos de duas regiões, a transformação aplica o inverso da codificação de diferença, adicionando o valor base em Endpt \[ 0 \] . Um para as três outras entradas para um total de 9 adicionar operações. Na imagem abaixo, o valor base é representado como "A0" e tem a maior precisão de ponto flutuante. "A1", "B0" e "B1" são todos os deltas calculados a partir do valor de âncora, e esses valores delta são representados com precisão mais baixa. (A0 corresponde a Endpt \[ 0 \] . A, B0 corresponde a Endpt \[ 0 \] . B, a1 corresponde a Endpt \[ 1 \] . A e B1 corresponde a Endpt \[ 1 \] . B.)
 
 ![cálculo dos valores de ponto de extremidade de inversão de transformação](images/bc6h-transform-inverse.png)
 
 Para blocos de uma região, há apenas um deslocamento delta e, portanto, apenas 3 operações de adição.
 
-O descompactador deve garantir que os resultados da transformação inversa não estouram a precisão de \[ endpt 0 \] .a. No caso de um estouro, os valores resultantes da transformação inversa devem ser encapsulados dentro do mesmo número de bits. Se a precisão de A0 for "p" bits, o algoritmo de transformação é:
+O descompactador deve garantir que os resultados da transformação inversa não irão exceder a precisão de Endpt \[ 0 \] . a. No caso de um estouro, os valores resultantes da transformação inversa devem ser encapsulados dentro do mesmo número de bits. Se a precisão de A0 for "p" bits, o algoritmo de transformação é:
 
 `B0 = (B0 + A0) & ((1 << p) - 1)`
 

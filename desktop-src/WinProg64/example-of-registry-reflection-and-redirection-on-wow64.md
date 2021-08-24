@@ -1,27 +1,27 @@
 ---
-title: Exemplo de redirecionamento de registro no WOW64
-description: O código de exemplo a seguir demonstra as exibições separadas do registro fornecidas pelo redirecionador de registro no Windows de 64 bits.
+title: Exemplo de redirecionamento do Registro no WOW64
+description: O código de exemplo a seguir demonstra as exibições separadas do Registro fornecidas pelo redirecionador do Registro em 64 bits Windows.
 ms.assetid: b3ca2a47-402d-4e91-88bc-ddda6c776468
 keywords:
-- exemplos de programação de 64 bits do Windows
-- exemplos de guia de programação do Windows de 64 bits, programação de Windows de 64 bits
-- Guia de programação do Windows de 64 bits exemplos de programação de Windows de 64 bits, redirecionamento de registro no WOW64
-- exemplo de redirecionamento de registro de programação de 64 bits do Windows
-- Guia de programação do Windows de 64 bits programação de Windows de 64 bits, exemplos consulte exemplos de guia de programação do Windows de 64 bits
+- exemplos de programação Windows 64 bits
+- Exemplos de Windows de programação de 64 bits Windows programação
+- Exemplos de Windows de programação de 64 Windows de 64 bits, redirecionamento de registro no WOW64
+- exemplo de redirecionamento de registro de 64 bits Windows programação
+- Guia de programação Windows de 64 bits Windows de 64 bits, exemplos Consulte exemplos de guia Windows programação de 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff37b077137e9802e6716319623fe8e372941500
-ms.sourcegitcommit: 46376be61d3fa308f9b1a06d7e2fa122a39755af
+ms.openlocfilehash: 83428edb31e53bdd1c70825c7fa5a4d799a36536fa9c17f9ce1c4587ab096048
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "104366856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680218"
 ---
-# <a name="example-of-registry-redirection-on-wow64"></a>Exemplo de redirecionamento de registro no WOW64
+# <a name="example-of-registry-redirection-on-wow64"></a>Exemplo de redirecionamento do Registro no WOW64
 
-O código de exemplo a seguir demonstra as exibições separadas do registro fornecidas pelo redirecionador de registro no Windows de 64 bits. Ele também demonstra como os valores das chaves são definidos dependendo se uma chave é compartilhada ou redirecionada. Para obter mais informações, consulte [chaves do registro afetadas pelo WOW64](shared-registry-keys.md).
+O código de exemplo a seguir demonstra as exibições separadas do Registro fornecidas pelo redirecionador do Registro em 64 bits Windows. Ele também demonstra como os valores de chaves são definidos dependendo se uma chave é compartilhada ou redirecionada. Para obter mais informações, consulte [Chaves do Registro afetadas pelo WOW64.](shared-registry-keys.md)
 
-Compile o código a seguir separadamente para o Windows de 32 bits e de 64 bits. Execute cada arquivo executável resultante em um Windows de 64 bits e compare a saída. A saída de exemplo para ambas as versões está listada abaixo do código-fonte.
+Compile o código a seguir separadamente para 32 bits e 64 bits Windows. Execute cada arquivo executável resultante em uma Windows de 64 bits e compare a saída. A saída de exemplo para ambas as versões está listada abaixo do código-fonte.
 
 
 ```C++
@@ -248,9 +248,9 @@ main()
 
 
 
-Quando a versão de 64 bits do exemplo é executada, ela produz a saída a seguir. Os valores das exibições padrão e alternativa de **HKCR \\ Hello** são os mesmos porque essa chave é compartilhada. Os valores das outras chaves diferem porque são redirecionados.
+Quando a versão de 64 bits do exemplo é executado, ela produz a saída a seguir. Os valores das exibições padrão e alternativa do **HKCR \\ Hello** são os mesmos porque essa chave é compartilhada. Os valores das outras chaves diferem porque são redirecionados.
 
-**Windows server 2008, Windows Vista, Windows server 2003 e Windows XP:** Quando este exemplo é executado nesses sistemas operacionais, as exibições padrão e alternativa da chave LocalServer32 têm o mesmo valor. Isso ocorre porque a chave LocalServer32 é redirecionada e *refletida*, o que faz com que seu valor seja sincronizado entre as exibições de 64 bits e 32 bits do registro assim que o identificador para a chave é fechado. A reflexão do registro foi removida a partir do Windows 7. Para obter mais informações, consulte [reflexão do registro](registry-reflection.md).
+**Windows Server 2008, Windows Vista, Windows Server 2003 e Windows XP:** Quando este exemplo é executado nesses sistemas operacionais, as exibições padrão e alternativa da chave LocalServer32 têm o mesmo valor. Isso porque a chave LocalServer32 é redirecionada e refletida, o que faz com que seu valor seja sincronizado entre as exibições de 64 bits e 32 bits do Registro assim que o alçamento para a chave for fechado. A reflexão do Registro foi removida do Windows 7. Para obter mais informações, consulte [Reflexão do Registro.](registry-reflection.md)
 
 ``` syntax
 Application string: Hello! 64-bit World
@@ -271,7 +271,7 @@ Default view:     Hello! 64-bit World
 Alternate view:   Hello! 32-bit World
 ```
 
-Quando a versão de 32 bits do exemplo é executada, ela produz a saída a seguir. Para um aplicativo de 32 bits, a exibição de 64 bits do registro é a exibição alternativa para que os valores sejam revertidos, exceto para o HKCR \\ Hello, que é uma chave compartilhada.
+Quando a versão de 32 bits do exemplo é executado, ela produz a saída a seguir. Para um aplicativo de 32 bits, a exibição de 64 bits do Registro é a exibição alternativa para que os valores sejam invertidos, exceto para HKCR Hello, que é uma chave \\ compartilhada.
 
 ``` syntax
 Application string: Hello! 32-bit World
@@ -292,32 +292,32 @@ Default view:     Hello! 32-bit World
 Alternate view:   Hello! 64-bit World
 ```
 
-Para examinar o efeito de executar esse exemplo com o regedit, inspecione os valores das chaves a seguir. Observe que os aplicativos devem evitar o uso de Wow6432Node em caminhos de registro embutidos em código.
+Para examinar o efeito de executar este exemplo com regedit, inspecione os valores das chaves a seguir. Observe que os aplicativos devem evitar usar Wow6432Node em caminhos de registro codificados.
 
-**\\Olá, mundo de software HKLM \\**  
-**HKLM \\ software \\ Wow6432Node \\ Olá, mundo**  
-**\\CLSID \\ de HKCR {00000000-0000-0000-0000-ABCD00000000}**  
-**\\CLSID \\ de HKCR {00000000-0000-0000-0000-ABCD00000000} \\ InprocServer32**  
-**\\CLSID \\ de HKCR {00000000-0000-0000-0000-ABCD00000000} \\ LocalServer32**  
-**\\ \\ WOW6432NODE de HKCR Olá \\ \\ , CLSID de leitura de bits {00000000-0000-0000-0000-ABCD00000000}**  
-**\\Wow6432Node \\ de HKCR CLSID \\ {00000000-0000-0000-0000-ABCD00000000} \\ InprocServer32**  
-**\\ \\ CLSID de WOW6432NODE \\ de HKCR {00000000-0000-0000-0000-ABCD00000000} \\ LocalServer32**  
-**Wow6432Node de HKCR \\ \\**  
+**HKLM \\ SOFTWARE \\ Olá, Mundo**  
+**HKLM \\ SOFTWARE \\ Wow6432Node \\ Olá, Mundo**  
+**\\CLSID do HKCR \\ {00000000-0000-0000-0000-ABCD0000000}**  
+**CLSID do HKCR \\ \\ {00000000-0000-0000-0000-ABCD0000000} \\ InprocServer32**  
+**\\CLSID do HKCR \\ {00000000-0000-0000-0000-ABCD0000000} \\ LocalServer32**  
+**HKCR \\ Hello HKCR \\ Wow6432Node \\ CLSID \\ {00000000-0000-0000-0000-ABCD0000000}**  
+**\\HKCR Wow6432Node \\ CLSID \\ {00000000-0000-0000-0000-ABCD0000000} \\ InprocServer32**  
+**\\HKCR Wow6432Node \\ CLSID \\ {00000000-0000-0000-0000-ABCD0000000} \\ LocalServer32**  
+**HKCR \\ Wow6432Node \\ Hello**  
 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Redirecionador de registro](registry-redirector.md)
+[Redirecionador de Registro](registry-redirector.md)
 </dt> <dt>
 
-[Reflexão do registro](registry-reflection.md)
+[Reflexão do Registro](registry-reflection.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

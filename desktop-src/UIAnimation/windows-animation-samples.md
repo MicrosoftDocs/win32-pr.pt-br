@@ -1,21 +1,21 @@
 ---
-title: Exemplos de animação do Windows
-description: Os tópicos contidos nesta seção fornecem detalhes sobre os exemplos de código que dão suporte à documentação do Gerenciador de animação do Windows.
+title: Windows Exemplos de animação
+description: os tópicos contidos nesta seção fornecem detalhes sobre os exemplos de código que dão suporte à documentação do Windows Animation Manager.
 ms.assetid: 33b1770a-5acb-4ab5-999c-9663f4c075f0
 keywords:
-- Animação do Windows animações do Windows, exemplos
+- Windows animação Windows animação, exemplos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2fe31e7fa12feab010bec3da710d4b2b80dd1d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9119ab7333f1f5d74b9be9998ad26b36139f9a92d88fec856d3f4572d12f431
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656146"
 ---
-# <a name="windows-animation-samples"></a>Exemplos de animação do Windows
+# <a name="windows-animation-samples"></a>Windows Exemplos de animação
 
-Os tópicos contidos nesta seção fornecem detalhes sobre os exemplos de código que dão suporte à documentação do Gerenciador de animação do Windows.
+os tópicos contidos nesta seção fornecem detalhes sobre os exemplos de código que dão suporte à documentação do Windows Animation Manager.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -25,9 +25,9 @@ Os tópicos contidos nesta seção fornecem detalhes sobre os exemplos de códig
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [Exemplo de animação orientada por aplicativo](application-driven-animation-sample.md)<br/> |                                                                                                                     |
 | [Exemplo de animação orientada por temporizador](timer-driven-animation-sample.md)<br/>             |                                                                                                                     |
-| [Exemplo de interpolador personalizado](custom-interpolator-sample.md)<br/>                   | Mostra como usar a animação do Windows com seu próprio interpolador personalizado, com Direct2D usado para renderização. <br/> |
-| [Exemplo de layout de grade](grid-layout-sample.md)<br/>                                   | Mostra como usar a animação do Windows, usando Direct2D para animar uma grade de imagens. <br/>                         |
-| [Exemplo de comparação de prioridade](priority-comparison-sample.md)<br/>                   | Mostra como usar a animação do Windows com sua própria comparação de prioridade, usando Direct2D para renderização.<br/>      |
+| [Exemplo de interpolador personalizado](custom-interpolator-sample.md)<br/>                   | mostra como usar Windows animação com seu próprio interpolador personalizado, com Direct2D usado para renderização. <br/> |
+| [Exemplo de layout de grade](grid-layout-sample.md)<br/>                                   | mostra como usar Windows animação, usando Direct2D para animar uma grade de imagens. <br/>                         |
+| [Exemplo de comparação de prioridade](priority-comparison-sample.md)<br/>                   | mostra como usar Windows animação com sua própria comparação de prioridade, usando Direct2D para renderização.<br/>      |
 
 
 
@@ -92,10 +92,10 @@ Cria variáveis de animação e renderiza miniaturas.
 
 <dl> <dt>
 
-[Guia de desenvolvimento de animação do Windows](windows-animation-developer-guide.md)
+[Windows Guia de desenvolvimento de animação](windows-animation-developer-guide.md)
 </dt> <dt>
 
-[Referência de animação do Windows](windows-animation-reference.md)
+[Windows Referência de animação](windows-animation-reference.md)
 </dt> </dl>
 
  

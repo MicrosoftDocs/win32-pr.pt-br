@@ -1,19 +1,19 @@
 ---
-description: O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções de API simples são encapsuladas pela classe LinearGradientBrush C++.
+description: Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções. Essas funções de API simples são encapsuladas pela classe LinearGradientBrush C++.
 ms.assetid: ffbf0fe2-7651-4241-8669-2f4e9fe0868e
 title: Funções LinearGradientBrush
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3128657156ed2282669942cda18293f8265e6e2
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: c992e69b2aa471a2bbe7857becf204febacec15aa0f07d4e83b01196944717ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466746"
 ---
 # <a name="lineargradientbrush-functions"></a>Funções LinearGradientBrush
 
-O Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h. As funções na API Flat do GDI+ são encapsuladas por uma coleção de cerca de 40 classes C++. É recomendável que você não chame diretamente as funções na API simples. Sempre que você fizer chamadas para GDI+, deverá fazer isso chamando os métodos e funções fornecidos pelos invólucros do C++. O Microsoft Product Support Services não fornecerá suporte para código que chama a API simples diretamente. Para obter mais informações sobre como usar esses métodos de wrapper, consulte [GDI+ Flat API](-gdiplus-flatapi-flat.md).
+Windows GDI+ expõe uma API simples que consiste em cerca de 600 funções, que são implementadas em Gdiplus.dll e declaradas em Gdiplusflat. h. as funções no GDI+ API simples são encapsuladas por uma coleção de cerca de 40 classes C++. É recomendável que você não chame diretamente as funções na API simples. sempre que você fizer chamadas para GDI+, deverá fazer isso chamando os métodos e funções fornecidos pelos invólucros do C++. O Microsoft Product Support Services não fornecerá suporte para código que chama a API simples diretamente. para obter mais informações sobre como usar esses métodos de wrapper, consulte [GDI+ API simples](-gdiplus-flatapi-flat.md).
 
 As funções de API simples a seguir são encapsuladas pela classe [**LinearGradientBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-lineargradientbrush) C++.
 
