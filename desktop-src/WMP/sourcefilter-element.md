@@ -3,7 +3,7 @@ title: Elemento sourceFilter
 description: O elemento sourceFilter contém elementos que selecionam itens de uma biblioteca.
 ms.assetid: c961990f-8c57-448d-b4dc-dcfe70300e5a
 keywords:
-- Elemento sourceFilter do Windows Media Player
+- Elemento sourceFilter Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb43a9577c5fe8857b63067db5be90d314037b84
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14294f227e5ebe29e422d60a95734f7b93207880ea82ef9fb70ed3f7cf6dac4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763266"
 ---
 # <a name="sourcefilter-element"></a>Elemento sourceFilter
 
-O elemento **sourceFilter** contém elementos que selecionam itens de uma biblioteca.
+O **elemento sourceFilter** contém elementos que selecionam itens de uma biblioteca.
 
 ``` syntax
 <sourceFilter
@@ -37,26 +37,26 @@ O elemento **sourceFilter** contém elementos que selecionam itens de uma biblio
 
 <dl> <dt>
 
-<span id="type"></span><span id="TYPE"></span>**Escreva**
+<span id="type"></span><span id="TYPE"></span>**Tipo**
 </dt> <dd>
 
-O tipo de objeto de filtro. Não há valores predefinidos para este atributo.
+O tipo de objeto de filtro. Não há valores predefinidos para esse atributo.
 
 </dd> <dt>
 
-<span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**ID** (obrigatório) 
+<span id="id__required______________"></span><span id="ID__REQUIRED______________"></span>**id** (obrigatório) 
 </dt> <dd>
 
-O GUID que identifica exclusivamente o objeto de filtro de origem. Os métodos do objeto de filtro de origem são invocados para interpretar os elementos de **fragmento** contidos no elemento **sourceFilter** .
+O GUID que identifica exclusivamente o objeto de filtro de origem. Os métodos do objeto de filtro de origem são invocados para interpretar os elementos **de fragmento** contidos no **elemento sourceFilter.**
 
 
 
 | Valor                                  | Descrição                                              |
 |----------------------------------------|----------------------------------------------------------|
-| {4202947A-A563-4B05-A754-A1B4B5989849} | O GUID do filtro de origem "música em minha biblioteca".    |
-| {B2D9BDDC-8E49-444B-9BA4-193ABF9C7870} | O GUID do filtro de origem "vídeo em minha biblioteca".    |
-| {CC823400-A8E4-4081-B073-D3B6D952FE69} | O GUID do filtro de origem "imagens em minha biblioteca". |
-| {E5415A66-7763-4BDE-B97F-5557CA73C303} | O GUID do filtro de origem "programas de TV em minha biblioteca". |
+| {4202947A-A563-4B05-A754-A1B4B5989849} | O GUID do filtro de origem "Música na minha biblioteca".    |
+| {B2D9BDDC-8E49-444B-9BA4-193ABF9C7870} | O GUID do filtro de origem "Vídeo na minha biblioteca".    |
+| {CC823400-A8E4-4081-B073-D3B6D952FE69} | O GUID do filtro de origem "Imagens na minha biblioteca". |
+| {E5415A66-7763-4BDE-B97F-5557CA73C303} | O GUID do filtro de origem "TV mostra em minha biblioteca". |
 
 
 
@@ -64,7 +64,7 @@ O GUID que identifica exclusivamente o objeto de filtro de origem. Os métodos d
 
 </dd> <dt>
 
-<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**nome** (obrigatório) 
+<span id="name__required______________"></span><span id="NAME__REQUIRED______________"></span>**name** (obrigatório) 
 </dt> <dd>
 
 O nome do objeto de filtro.
@@ -73,10 +73,10 @@ O nome do objeto de filtro.
 
 | Valor                  | Descrição                                                                                     |
 |------------------------|-------------------------------------------------------------------------------------------------|
-| Música na minha biblioteca    | Um objeto de filtro que seleciona itens especificados do conjunto de itens de música na biblioteca do usuário. |
-| Vídeo na minha biblioteca    | Um objeto de filtro que seleciona itens especificados do conjunto de itens de vídeo na biblioteca do usuário. |
-| Imagens na minha biblioteca | Um objeto de filtro que seleciona itens especificados do conjunto de itens de fotos na biblioteca do usuário. |
-| Programas de TV em minha biblioteca | Um objeto de filtro que seleciona itens especificados do conjunto de itens de TV na biblioteca do usuário.    |
+| Música em minha biblioteca    | Um objeto de filtro que seleciona itens especificados do conjunto de itens de música na biblioteca do usuário. |
+| Vídeo em minha biblioteca    | Um objeto de filtro que seleciona itens especificados do conjunto de itens de vídeo na biblioteca do usuário. |
+| Imagens em minha biblioteca | Um objeto de filtro que seleciona itens especificados do conjunto de itens de foto na biblioteca do usuário. |
+| Programas de TV na minha biblioteca | Um objeto de filtro que seleciona itens especificados do conjunto de itens de TV na biblioteca do usuário.    |
 
 
 
@@ -90,8 +90,8 @@ O nome do objeto de filtro.
 
 | Hierarquia | Elementos                         |
 |-----------|----------------------------------|
-| Pai    | [queryset](queryset-element.md) |
-| Filho     | [fragmento](fragment-element.md) |
+| Pai    | [querySet](queryset-element.md) |
+| Filho     | [Fragmento](fragment-element.md) |
 
 
 
@@ -99,7 +99,7 @@ O nome do objeto de filtro.
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **sourceFilter** seleciona itens da biblioteca sem considerar o tamanho do conjunto de resultados. O elemento **Filter** , por outro lado, limita o tamanho do conjunto de resultados.
+O **elemento sourceFilter** seleciona itens da biblioteca sem considerar o tamanho do conjunto de resultados. O **elemento** de filtro, por outro lado, limita o tamanho do conjunto de resultados.
 
 ## <a name="examples"></a>Exemplos
 
@@ -128,7 +128,7 @@ O elemento **sourceFilter** seleciona itens da biblioteca sem considerar o taman
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/> |
 
 
 
@@ -136,16 +136,16 @@ O elemento **sourceFilter** seleciona itens da biblioteca sem considerar o taman
 
 <dl> <dt>
 
-[**Elemento Filter**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Elemento queryset**](queryset-element.md)
+[**Elemento querySet**](queryset-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

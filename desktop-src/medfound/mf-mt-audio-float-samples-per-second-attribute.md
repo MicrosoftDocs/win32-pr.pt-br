@@ -1,17 +1,17 @@
 ---
-description: Atributo MF_MT_AUDIO_FLOAT_SAMPLES_PER_SECOND-número de amostras de áudio por segundo em um tipo de mídia de áudio.
+description: MF_MT_AUDIO_FLOAT_SAMPLES_PER_SECOND atributo – número de amostras de áudio por segundo em um tipo de mídia de áudio.
 ms.assetid: 9e794f7d-0fb3-4069-8431-62651252517d
-title: Atributo MF_MT_AUDIO_FLOAT_SAMPLES_PER_SECOND (Mfapi. h)
+title: MF_MT_AUDIO_FLOAT_SAMPLES_PER_SECOND atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6878ce1f8a1197bd556a9f54d70c4f18dc3f87f9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: abb6ff3fd443cdbb50cbc05a4b85032b61fa5cd69465917bb94a938e3b9b8881
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108087634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723006"
 ---
-# <a name="mf_mt_audio_float_samples_per_second-attribute"></a>\_Atributo de \_ amostras float de áudio MF MT \_ \_ \_ por \_ segundo
+# <a name="mf_mt_audio_float_samples_per_second-attribute"></a>Atributo \_ MF MT \_ AUDIO \_ FLOAT \_ SAMPLES PER \_ \_ SECOND
 
 Número de amostras de áudio por segundo em um tipo de mídia de áudio.
 
@@ -21,7 +21,7 @@ Número de amostras de áudio por segundo em um tipo de mídia de áudio.
 
 ## <a name="remarks"></a>Comentários
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,23 +29,23 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getDouble**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getdouble)
+[**IMFAttributes::GetDouble**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getdouble)
 </dt> <dt>
 
-[**IMFAttributes:: SetDouble**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setdouble)
+[**IMFAttributes::SetDouble**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setdouble)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
@@ -54,7 +54,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 [Atributos de tipo de mídia](media-type-attributes.md)
 </dt> <dt>
 
-[**\_amostras de áudio MF MT \_ \_ \_ por \_ segundo**](mf-mt-audio-samples-per-second-attribute.md)
+[**AMOSTRAS \_ DE ÁUDIO MT \_ \_ MT POR \_ \_ SEGUNDO**](mf-mt-audio-samples-per-second-attribute.md)
 </dt> </dl>
 
  

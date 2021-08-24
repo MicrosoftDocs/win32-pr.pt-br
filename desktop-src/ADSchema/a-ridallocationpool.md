@@ -1,11 +1,11 @@
 ---
-title: Atributo RID-Allocation-pool
-description: Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o pool de alocação de RID anterior foi usado.
+title: Atributo RID-Allocation-Pool
+description: Um pool que foi pré-buscado para uso pelo gerenciador RID quando o RID-Previous-Allocation-Pool foi usado.
 ms.assetid: 6d49b497-322f-424c-badc-4801f51481f3
 ms.tgt_platform: multiple
 keywords:
-- RID-alocação-atributo do pool-esquema do AD
-- Esquema de AD do atributo rIDAllocationPool
+- Esquema do AD do atributo RID-Allocation-Pool
+- Esquema do AD do atributo rIDAllocationPool
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a035cef460cc3081144d66391db78fb32c61108b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ce6ff101ca49e8d2ffafdb31f2d05cf1cb2371ee3336525ab31318925d349805
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837376"
 ---
-# <a name="rid-allocation-pool-attribute"></a>Atributo RID-Allocation-pool
+# <a name="rid-allocation-pool-attribute"></a>Atributo RID-Allocation-Pool
 
-Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o pool de alocação de RID anterior foi usado.
+Um pool que foi pré-buscado para uso pelo gerenciador RID quando o RID-Previous-Allocation-Pool foi usado.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | RID – pool de alocação                  |
-| LDAP-Display-Name | rIDAllocationPool                    |
+| CN                | RID-Allocation-Pool                  |
+| Ldap-Display-Name | rIDAllocationPool                    |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.371               |
-| System-ID-GUID    | 66171889-8f3c-11d0-afda-00c04fd930c9 |
+| System-Id-Guid    | 66171889-8f3c-11d0-afda-00c04fd930c9 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -57,16 +57,16 @@ Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o po
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| Tem valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
-| No catálogo global      | Falso                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
+| No Catálogo Global      | Falso                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classes usadas em        | [**RID-definido**](c-ridset.md)<br/> |
+| Classes usadas em        | [**RID-Set**](c-ridset.md)<br/> |
 
 
 
@@ -78,16 +78,16 @@ Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o po
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| Tem valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
-| No catálogo global      | Falso                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
+| No Catálogo Global      | Falso                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classes usadas em        | [**RID-definido**](c-ridset.md)<br/> |
+| Classes usadas em        | [**RID-Set**](c-ridset.md)<br/> |
 
 
 
@@ -99,16 +99,16 @@ Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o po
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| Tem valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
-| No catálogo global      | Falso                                  |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
+| No Catálogo Global      | Falso                                  |
+| Descritor de segurança NT | O:BAG:BAD:S:                           |
 | Range-Lower            | \-                                     |
 | Range-Upper            | \-                                     |
 | Search-Flags           | 0x00000000                             |
 | System-Flags           | 0x00000010                             |
-| Classes usadas em        | [**RID-definido**](c-ridset.md)<br/> |
+| Classes usadas em        | [**RID-Set**](c-ridset.md)<br/> |
 
 
 
@@ -120,8 +120,8 @@ Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o po
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -141,8 +141,8 @@ Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o po
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |
@@ -162,8 +162,8 @@ Um pool que foi previamente buscado para uso pelo Gerenciador de RID quando o po
 |------------------------|----------------------------------------|
 | ID do link                | \-                                     |
 | MAPI-Id                | \-                                     |
-| System-Only            | True                                   |
-| É de valor único       | True                                   |
+| System-Only            | Verdadeiro                                   |
+| É de valor único       | Verdadeiro                                   |
 | É indexado             | Falso                                  |
 | No catálogo global      | Falso                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                           |

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101753
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 756f0a7c7a506b91289b90f5abd9133fbd57a119
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bbc710366324ed87c8775f34ce28c0921972efddebf122561b28d43bcf739f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104563891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838356"
 ---
 # <a name="esentgivenlogfileisnotcontiguousexception-methods"></a>Métodos EsentGivenLogFileIsNotContiguousException 
 

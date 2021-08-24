@@ -1,7 +1,7 @@
 ---
 description: Obtém uma ID de sessão exclusiva criada para esta sessão.
 ms.assetid: 779ebea9-69ff-469a-8ee0-06d570ede6cb
-title: 'Método IMFMediaKeySession:: get_SessionId'
+title: Método IMFMediaKeySession::get_SessionId
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 7110dbe6c24d1189019fb242621c7e3c01253264
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: f598cbb1d7122bb8597d5849778a833462b4e6d9de48942fdfabbc95bbc30898
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105778788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724546"
 ---
-# <a name="imfmediakeysessionget_sessionid-method"></a>Método IMFMediaKeySession:: get \_ SessionID
+# <a name="imfmediakeysessionget_sessionid-method"></a>Método IMFMediaKeySession::get \_ SessionId
 
 Obtém uma ID de sessão exclusiva criada para esta sessão.
 
@@ -46,9 +46,9 @@ A ID da sessão da chave de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

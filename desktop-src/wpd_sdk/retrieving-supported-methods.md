@@ -4,33 +4,33 @@ ms.assetid: 783a6552-9b22-4af4-9252-b443e2624687
 title: Recuperando métodos de serviço com suporte
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b021aa868ffaa95df23a729e94d62eae8a0c632e
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: ce058fcab000a90459dcce5310645088b40a2432d1de8c9852c84770db058300
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839042"
 ---
 # <a name="retrieving-supported-service-methods"></a>Recuperando métodos de serviço com suporte
 
-Os métodos de serviço encapsulam a funcionalidade que cada serviço define e implementa. Elas são específicas para cada tipo de tipo de serviço e são representadas por um GUID exclusivo.
+Os métodos de serviço encapsulam a funcionalidade que cada serviço define e implementa. Eles são específicos de cada tipo de tipo de serviço e são representados por um GUID exclusivo.
 
-Por exemplo, o serviço Contatos define um método **BeginSync** que os aplicativos chamam para preparar o dispositivo para sincronizar objetos contact e um **método EndSync** para notificar o dispositivo de que a sincronização foi concluída.
+Por exemplo, o serviço de contatos define um método **BeginSync** que os aplicativos chamam para preparar o dispositivo para sincronizar objetos de contato e um método **endsync** para notificar o dispositivo de que a sincronização foi concluída.
 
-Os aplicativos podem consultar programaticamente os métodos com suporte e acessar esses métodos e seus atributos usando a interface [**IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)
+Os aplicativos podem consultar programaticamente os métodos com suporte e acessar esses métodos e seus atributos usando a interface [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) .
 
-Os métodos de serviço não devem ser confundidos com comandos WPD. Os comandos WPD fazem parte da DDI (Interface de Driver de Dispositivo) WPD padrão e são o mecanismo de comunicação entre um aplicativo WPD e o driver. Os comandos são predefinidos, agrupados por categorias, por exemplo, WPD CATEGORY COMMON e são representados \_ \_ por uma estrutura PROPERTYKEY. Para obter mais informações, consulte o [**tópico Comandos.**](commands.md)
+Os métodos de serviço não devem ser confundidos com comandos WPD. Os comandos WPD fazem parte da DDI (interface de driver de dispositivo) Standard WPD e são o mecanismo de comunicação entre um aplicativo WPD e o driver. Os comandos são predefinidos, agrupados por categorias, por exemplo, \_ a categoria de WPD \_ comum e são representados por uma estrutura PROPERTYKEY. Para obter mais informações, consulte o tópico [**comandos**](commands.md) .
 
-O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode recuperar os métodos com suporte por um determinado serviço Contacts usando as interfaces na tabela a seguir.
+O aplicativo WpdServicesApiSample inclui código que demonstra como um aplicativo pode recuperar os métodos com suporte de um determinado serviço Contacts usando as interfaces na tabela a seguir.
 
 
 
 | Interface      | Descrição         |
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)                             | Usado para recuperar a interface **IPortableDeviceServiceCapabilities** para acessar os métodos de serviço com suporte. |
-| [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornece acesso aos métodos com suporte, atributos de método e parâmetros de método.                             |
+| [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities)     | Fornece acesso aos métodos, atributos de método e parâmetros de método com suporte.                             |
 | [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contém a lista de métodos com suporte.                                                                        |
-| [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Contém os atributos para um método e para parâmetros de um determinado método.                                      |
+| [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Contém os atributos para um método e para os parâmetros de um determinado método.                                      |
 | [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Contém os parâmetros para um determinado método.                                                                    |
 
 
@@ -45,9 +45,9 @@ Em WPD, um método é descrito por seu nome, direitos de acesso, parâmetros e d
 
 Cinco métodos no módulo Service Methods. cpp dão suporte à recuperação de métodos (e dados relacionados) para o serviço de contatos fornecido: **ListSupportedMethods**, **DisplayMethod**, **DisplayMethodAccess**, **DisplayFormat** e **DisplayMethodParameters**. O método **ListSupportedMethods** recupera uma contagem de métodos com suporte e o identificador GUID para cada um; em seguida, ele chama o método **DisplayMethod** . O método **DisplayMethod** chama o método [**IPortableDeviceServiceCapapbilities:: getmethodattributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar as opções, os parâmetros e assim por diante do método fornecido. Depois que o **DisplayMethod** recupera os dados do método, ele renderiza o nome (ou GUID), as restrições de acesso, o formato associado (se houver) e as descrições de parâmetro. **DisplayMethodAccess**, **DisplayFormat** e **DisplayMethodParameters** são funções auxiliares que renderizam seus respectivos campos de dados.
 
-O método **ListSupportedMethods** invoca o método [**IPortableDeviceService:: Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar uma interface [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Usando essa interface, ele recupera os métodos com suporte chamando o [**método IPortableDeviceServiceCapabilities::GetSupportedMethods.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) O **método GetSupportedMethods** recupera os GUIDs para cada método compatível com o serviço e copia esse GUID em [**um objeto IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
+O método **ListSupportedMethods** invoca o método [**IPortableDeviceService:: Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar uma interface [**IPortableDeviceServiceCapabilities**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) . Usando essa interface, ele recupera os métodos com suporte chamando o método [**IPortableDeviceServiceCapabilities:: GetSupportedMethods**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedmethods) . O método **GetSupportedMethods** recupera os GUIDs de cada método suportado pelo serviço e copia esse GUID em um objeto [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) .
 
-O código a seguir usa o **método ListSupportedMethods.**
+O código a seguir usa o método **ListSupportedMethods** .
 
 
 ```C++
@@ -123,11 +123,11 @@ void ListSupportedMethods(IPortableDeviceService* pService)
 
 
 
-Depois que o método **ListSupportedMethods** recupera o GUID para cada evento com suporte pelo serviço determinado, ele invoca o método **DisplayMethod** para recuperar os atributos específicos do método. Esses atributos incluem: o nome amigável de script do método, as restrições de acesso necessárias, qualquer formato associado e a lista de parâmetros.
+Depois que o método **ListSupportedMethods** recupera o GUID para cada evento suportado pelo serviço fornecido, ele invoca o método **DisplayMethod** para recuperar os atributos específicos do método. Esses atributos incluem: nome amigável de script do método, restrições de acesso necessárias, qualquer formato associado e lista de parâmetros.
 
-O **método DisplayMethod** invoca o método [**IPortableDeviceServiceCapabilities::GetMethodAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar uma coleção de atributos para o método determinado. Em seguida, ele chama [**o método IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) para recuperar o nome do método. O **DisplayMethod** chama [**IPortableDeviceValues::GetUnsignedIntegerValue**](iportabledevicevalues-getunsignedintegervalue.md) para recuperar as restrctions de acesso. Depois disso, ele chama [**IPortableDeviceValues::GetGuidValue**](iportabledevicevalues-getguidvalue.md) para recuperar qualquer formato associado. E, por fim, **DisplayMethod** chama [**IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md) para recuperar os dados do parâmetro. Ele passa os dados retornados por esses métodos para as funções auxiliares **DisplayMethodAccess,** **DisplayFormat** e **DisplayMethodParameters,** que renderizarão as informações para o método determinado.
+O método **DisplayMethod** invoca o método [**IPortableDeviceServiceCapabilities:: getmethodattributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar uma coleção de atributos para o método fornecido. Em seguida, ele chama o método [**IPortableDeviceValues:: GetStringValue**](iportabledevicevalues-getstringvalue.md) para recuperar o nome do método. O **DisplayMethod** chama [**IPortableDeviceValues:: GetUnsignedIntegerValue**](iportabledevicevalues-getunsignedintegervalue.md) para recuperar o restrctions de acesso. Depois disso, ele chama [**IPortableDeviceValues:: Getguidvalue**](iportabledevicevalues-getguidvalue.md) para recuperar qualquer formato associado. E, finalmente, o **DisplayMethod** chama [**IPortableDeviceValues:: GetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md) para recuperar os dados do parâmetro. Ele passa os dados retornados por esses métodos para as funções auxiliares **DisplayMethodAccess**, **DisplayFormat** e **DisplayMethodParameters** , que renderizam as informações para o método fornecido.
 
-O código a seguir usa o **método DisplayMethod.**
+O código a seguir usa o método **DisplayMethod** .
 
 
 ```C++
@@ -201,7 +201,7 @@ void DisplayMethod(
 
 
 
-A **função auxiliar DisplayMethodAccess** recebe um valor DWORD que contém as opções de acesso do método. Ele compara esse valor com WPD COMMAND ACCESS READ e \_ \_ \_ WPD \_ COMMAND ACCESS \_ READWRITE para determinar o privilégio de acesso \_ do método. Usando o resultado, ele renderiza uma cadeia de caracteres que indica a restrição de acesso para o método fornecido.
+A função auxiliar **DisplayMethodAccess** recebe um valor DWORD que contém as opções de acesso do método. Ele compara esse valor com o \_ comando WPD acesso de comando \_ \_ Read e WPD de \_ acesso a comandos de leitura \_ \_ para determinar o privilégio de acesso do método. Usando o resultado, ele renderiza uma cadeia de caracteres que indica a restrição de acesso para o método fornecido.
 
 O código a seguir usa a função auxiliar **DisplayMethodAccess** .
 

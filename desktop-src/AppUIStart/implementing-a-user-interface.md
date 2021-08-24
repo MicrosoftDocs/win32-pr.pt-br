@@ -1,19 +1,19 @@
 ---
 title: Implementando uma interface do usuário
-description: Esta seção descreve algumas das tarefas associadas à implementação de uma interface do usuário para um aplicativo do Windows.
+description: esta seção descreve algumas das tarefas associadas à implementação de uma interface do usuário para um aplicativo Windows.
 ms.assetid: 889791a7-d12c-4ec6-9b04-8fed14ecdb2c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0941458e046a85dc6e27a684d8aa3a7ea609e889
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7967474781e180ab29a42fce6884cc391515eef0211107852659eace3490e712
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702336"
 ---
 # <a name="implementing-a-user-interface"></a>Implementando uma interface do usuário
 
-Esta seção descreve algumas das tarefas associadas à implementação de uma interface do usuário para um aplicativo do Windows.
+esta seção descreve algumas das tarefas associadas à implementação de uma interface do usuário para um aplicativo Windows.
 
 -   [Protótipo](#prototype)
 -   [Constructo](#construct)
@@ -33,7 +33,7 @@ Tente limitar essa etapa a dois ou três protótipos no máximo. Os protótipos 
 
 Demonstre os protótipos e acompanhe os comentários dos usuários para ajudar a identificar as tendências gerais de usabilidade. Se for possível, descarte os protótipos menos bem-sucedidos e incorpore o máximo possível de comentários úteis em um ou mais dos protótipos restantes. Repita esse processo como tempo e recursos permitidos.
 
-Há várias ferramentas de protótipo disponíveis, incluindo [SketchFlow](/previous-versions/visualstudio/design-tools/expression-studio-3/ee341458(v=expression.30)) no Microsoft Expression Studio 3, o editor de layout na Microsoft Visual Studio e até mesmo o Microsoft Paint.
+há várias ferramentas de protótipo disponíveis, incluindo [SketchFlow](/previous-versions/visualstudio/design-tools/expression-studio-3/ee341458(v=expression.30)) no Microsoft Expression Studio 3, o editor de layout em Microsoft Visual Studio e até mesmo Microsoft Paint.
 
 ## <a name="construct"></a>Constructo
 
@@ -41,23 +41,23 @@ Ao implementar a interface do usuário para um aplicativo, considere o seguinte:
 
 -   Estrutura de comando
 
-    Determine se uma estrutura de comando tradicional deve ser implementada com base em menus e barras de ferramentas, ou uma estrutura de comando alternativa baseada na estrutura da faixa de opção do Windows. Para obter mais informações, consulte [menus](../menurc/menus.md), [barras de ferramentas](../controls/toolbar-control-reference.md)e [Windows Ribbon Framework](../windowsribbon/-uiplat-windowsribbon-entry.md).
+    Determine se uma estrutura de comando tradicional deve ser implementada com base em menus e barras de ferramentas, ou uma estrutura de comando alternativa baseada na estrutura da faixa de Windows. para obter mais informações, consulte [Menus](../menurc/menus.md), [barras de ferramentas](../controls/toolbar-control-reference.md)e [Windows estrutura da faixa](../windowsribbon/-uiplat-windowsribbon-entry.md)de informações.
 
--   Janelas e caixas de diálogo
+-   Windows e caixas de diálogo
 
-    Com base no design da interface do usuário e no trabalho de criação de protótipos, implemente as janelas do aplicativo, incluindo a janela principal, janelas filhas, caixas de diálogo e caixas de mensagem. Siga as diretrizes de UX para determinar quais estilos e controles usar nas janelas e caixas de diálogo. Para obter mais informações, consulte [janelas](../winmsg/windows.md), [caixas de diálogo](../dlgbox/dialog-boxes.md)e controles do [Windows](../controls/window-controls.md).
+    Com base no design da interface do usuário e no trabalho de criação de protótipos, implemente as janelas do aplicativo, incluindo a janela principal, janelas filhas, caixas de diálogo e caixas de mensagem. Siga as diretrizes de UX para determinar quais estilos e controles usar nas janelas e caixas de diálogo. para obter mais informações, consulte [Windows](../winmsg/windows.md), [caixas de diálogo](../dlgbox/dialog-boxes.md)e controles de [Windows](../controls/window-controls.md).
 
 -   Controles personalizados
 
-    Crie novos controles personalizados somente se você não puder obter a funcionalidade desejada de um dos controles padrão do Windows. Novos controles personalizados são muito dispendiosos para desenvolver e exigir trabalho adicional para torná-los acessíveis. Se seu aplicativo exigir controles personalizados, certifique-se de que eles sejam expostos adequadamente para tecnologias assistenciais. Para obter mais informações, consulte [controles personalizados](../controls/user-controls-intro.md) e [API de automação do Windows](../winauto/windows-automation-api-portal.md).
+    crie novos controles personalizados somente se você não puder obter a funcionalidade desejada de um dos controles de Windows padrão. Novos controles personalizados são muito dispendiosos para desenvolver e exigir trabalho adicional para torná-los acessíveis. Se seu aplicativo exigir controles personalizados, certifique-se de que eles sejam expostos adequadamente para tecnologias assistenciais. para obter mais informações, consulte [controles personalizados](../controls/user-controls-intro.md) e [API de automação de Windows](../winauto/windows-automation-api-portal.md).
 
 -   Suporte para dispositivos de entrada de usuário padrão
 
-    A maioria dos aplicativos do Windows precisa dar suporte à entrada do usuário por meio do teclado e do mouse. A capacidade de navegar e acessar toda a funcionalidade do aplicativo por meio do teclado sozinho é especialmente importante para os usuários que estão com deficiência visual ou que têm problemas de mobilidade. Para obter mais informações, consulte [entrada do usuário](../inputdev/user-input.md) e o [software de engenharia para o ebook de acessibilidade](https://www.microsoft.com/download/details.aspx?id=19262).
+    a maioria Windows aplicativos precisam dar suporte à entrada do usuário por meio do teclado e do mouse. A capacidade de navegar e acessar toda a funcionalidade do aplicativo por meio do teclado sozinho é especialmente importante para os usuários que estão com deficiência visual ou que têm problemas de mobilidade. Para obter mais informações, consulte [entrada do usuário](../inputdev/user-input.md) e o [software de engenharia para o ebook de acessibilidade](https://www.microsoft.com/download/details.aspx?id=19262).
 
 -   Estilos visuais, animações e efeitos visuais
 
-    O Windows inclui várias tecnologias que você pode usar para adicionar interesse visual e definir a interface do usuário além da de outros aplicativos. Isso inclui a especificação dos estilos visuais de controles, a adição de animações a elementos de interface do usuário e a implementação de vários efeitos visuais na interface do usuário. Para obter mais informações, consulte [estilos visuais](../controls/themes-overview.md), [Gerenciador de animação do Windows](../uianimation/-main-portal.md)e [Gerenciador de janelas da área de trabalho](../dwm/dwm-overview.md).
+    o Windows inclui várias tecnologias que você pode usar para adicionar interesse visual e definir a interface do usuário além da de outros aplicativos. Isso inclui a especificação dos estilos visuais de controles, a adição de animações a elementos de interface do usuário e a implementação de vários efeitos visuais na interface do usuário. para obter mais informações, consulte [estilos visuais](../controls/themes-overview.md), [Windows o gerenciador de animação](../uianimation/-main-portal.md)e [Gerenciador de Janelas da Área de Trabalho](../dwm/dwm-overview.md).
 
 ## <a name="simplify"></a>Simplificar o 
 
@@ -107,6 +107,6 @@ Ter bons dados sobre como as coisas são usadas é a chave para tomar essa decis
 
 O design está escolhendo como falhar: a otimização para uma coisa significa falha em outro. A chave para o bom design da interface do usuário é a possibilidade de decidir quais características do aplicativo são as mais importantes e quais podem ser recortadas.
 
- 
+ 
 
- 
+ 

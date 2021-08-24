@@ -1,19 +1,19 @@
 ---
-title: IAgent carga
-description: IAgent carga
+title: Carregamento do IAgent
+description: Carregamento do IAgent
 ms.assetid: 8f25e6b6-a117-4b37-969a-d8f80c7be224
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ce2835d60f3edce6f45d181927437ba6e58b18
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: ae718ee8c6566de42645c5c02c2efada90ef85ba0136a112bcf0420d18a7b511
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113120929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725386"
 ---
-# <a name="iagentload"></a>IAgent:: Load
+# <a name="iagentload"></a>IAgent::Load
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT Load(
@@ -23,7 +23,7 @@ HRESULT Load(
 );
 ```
 
-Carrega um caractere na coleção de [**caracteres**](./iagent.md) .
+Carrega um caractere na coleção [**Caracteres.**](./iagent.md)
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -32,13 +32,13 @@ Carrega um caractere na coleção de [**caracteres**](./iagent.md) .
 <span id="vLoadKey"></span><span id="vloadkey"></span><span id="VLOADKEY"></span>*vLoadKey*
 </dt> <dd>
 
-Um tipo de dados Variant que deve ser um dos seguintes:
+Um tipo de dados variante que deve ser um dos seguintes:
 
 
 
 | Valor           | Descrição                                                                      |
 |------------|-----------------------------------------------------------------------|
-| *filespec* | O local do arquivo local do arquivo de definição do caractere especificado. |
+| *Filespec* | O local do arquivo local do arquivo de definição do caractere especificado. |
 | *URL*      | O endereço HTTP para o arquivo de definição do caractere.                 |
 
 
@@ -57,19 +57,19 @@ Endereço de uma variável que recebe a ID do caractere.
 <span id="pdwReqID"></span><span id="pdwreqid"></span><span id="PDWREQID"></span>*pdwReqID*
 </dt> <dd>
 
-Endereço de uma variável que recebe a ID da solicitação de [**carregamento**](load-method.md) .
+Endereço de uma variável que recebe a ID [**da**](load-method.md) solicitação de carregamento.
 
 </dd> </dl>
 
-Você pode carregar caracteres do subdiretório do Microsoft Agent especificando um caminho relativo (um que não inclua dois pontos ou um caractere de barra à esquerda). Isso prefixa o caminho com o diretório de caracteres do agente (localizado no diretório% Windows% \\ MSAgent localizado). Você também pode usar um endereço relativo para especificar seu próprio diretório no diretório de caracteres do agente.
+Você pode carregar caracteres do subdiretório do Microsoft Agent especificando um caminho relativo (um que não inclui dois-pontos ou um caractere de barra à frente). Isso prefixa o caminho com o diretório de caracteres do Agent (localizado no diretório %windows% \\ msagent localizado). Você também pode usar um endereço relativo para especificar seu próprio diretório no diretório Chars do Agent.
 
-Não é possível carregar o mesmo caractere (um caractere com o mesmo GUID) mais de uma vez a partir de uma única conexão. Da mesma forma, você não pode carregar o caractere padrão e outros caracteres ao mesmo tempo de uma única conexão, porque o caractere padrão pode ser o mesmo que o outro caractere. No entanto, você pode criar outra conexão (usando CoCreateInstance) e carregar o mesmo caractere.
+Não é possível carregar o mesmo caractere (um caractere com o mesmo GUID) mais de uma vez de uma única conexão. Da mesma forma, você não pode carregar o caractere padrão e outros caracteres ao mesmo tempo de uma única conexão, porque o caractere padrão pode ser o mesmo que o outro caractere. No entanto, você pode criar outra conexão (usando CoCreateInstance) e carregar o mesmo caractere.
 
-O provedor de dados do Microsoft Agent dá suporte ao carregamento de dados de caracteres armazenados como um único arquivo estruturado (. ACS) com dados de caractere e dados de animação juntos, ou como dados de caractere separados (. ACF) e animação (. ACA) arquivos. Em geral, use a estrutura única. Arquivo ACS para carregar um caractere que é armazenado em uma unidade de disco ou rede local e acessado usando o protocolo de arquivo convencional (como caminhos UNC). Use a separada. ACF e. ACA arquivos quando você deseja carregar os arquivos de animação individualmente de um site remoto onde eles são acessados usando o protocolo HTTP.
+O provedor de dados do Microsoft Agent dá suporte ao carregamento de dados de caractere armazenados como um único arquivo estruturado (. ACS) com dados de caractere e dados de animação juntos ou como dados de caracteres separados (. ACF) e animação (. Arquivos ACA). Em geral, use o único estruturado. Arquivo ACS para carregar um caractere armazenado em uma unidade de disco local ou rede e acessado usando o protocolo de arquivo convencional (como nomes de caminho UNC). Use o separado. ACF e . Arquivos ACA quando você deseja carregar os arquivos de animação individualmente de um site remoto em que eles são acessados usando o protocolo HTTP.
 
-Fins. Os arquivos ACS, usando o método [**Load**](load-method.md) , fornecem acesso às animações de um caractere; Depois de carregado, você pode usar o método [**Play**](play-method.md) para animar o caractere. Fins. Arquivos ACF, você também usa o método [**Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) para carregar dados de animação. O método **Load** não oferece suporte ao download. Arquivos ACS de um site HTTP.
+Para. Arquivos ACS, usando o [**método Load,**](load-method.md) fornece acesso às animações de um caractere; depois de carregado, você pode usar o [**método Play**](play-method.md) para animar o caractere. Para. Arquivos ACF, você também usa o método [**Prepare**](/windows/desktop/lwef/iagentcharacter--prepare) para carregar dados de animação. O **método Load** não dá suporte ao download de . Arquivos ACS de um site HTTP.
 
-O carregamento de um caractere não exibe automaticamente o caractere. Use o método [**show**](show-method.md) primeiro para tornar o caractere visível.
+Carregar um caractere não exibe automaticamente o caractere. Use o [**método Show**](show-method.md) primeiro para tornar o caractere visível.
 
  
 

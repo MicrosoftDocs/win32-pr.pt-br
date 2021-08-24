@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - search.h
-ms.openlocfilehash: 2eab8eee4f7b07b0f712e68d7ad05b970506b00b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 109a852f37f3118cd1012c7385a4f9071fdd2f8867f57036e7607c20fd2dadbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822306"
 ---
 # <a name="iwordsink-interface"></a>Interface IWordSink
 
@@ -50,7 +50,7 @@ A interface **IWordSink** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-O Windows Search cria e inicializa instâncias do objeto **IWordSink** . O objeto **IWordSink** recebe o parâmetro *fQuery* durante a inicialização e usa esse parâmetro para determinar o contexto de quebra de palavras no qual o objeto é usado.
+Windows A pesquisa cria e inicializa instâncias do objeto **IWordSink** . O objeto **IWordSink** recebe o parâmetro *fQuery* durante a inicialização e usa esse parâmetro para determinar o contexto de quebra de palavras no qual o objeto é usado.
 
 Implementações [**IWordBreaker**](/windows/win32/api/indexsrv/nn-indexsrv-iwordbreaker) recebem um ponteiro para o objeto **IWordSink** no método [**IWordBreaker:: BreakText**](/windows/win32/api/indexsrv/nf-indexsrv-iwordbreaker-breaktext) .
 

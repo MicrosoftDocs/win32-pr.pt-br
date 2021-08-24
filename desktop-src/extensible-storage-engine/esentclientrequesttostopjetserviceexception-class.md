@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentClientRequestToStopJetServiceException'
+description: 'Saiba mais sobre: Classe EsentClientRequestToStopJetServiceException'
 title: Classe EsentClientRequestToStopJetServiceException
 TOCTitle: EsentClientRequestToStopJetServiceException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentClientRequestToStopJetServiceException
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 26e6bcf927b157efd64f8494d1cfa77eb4569fc0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66c23db58b5571a3ee6bcbd0fbdab655e07f59799005da2df50db59747499a5b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785846"
 ---
 # <a name="esentclientrequesttostopjetserviceexception-class"></a>Classe EsentClientRequestToStopJetServiceException
 
-Classe base para JET_err. ClientRequestToStopJetService exceções.
+Classe base para JET_err. Exceções clientRequestToStopJetService.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. ESENT. Interop. EsentClientRequestToStopJetServiceException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentClientRequestToStopJetServiceException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -71,6 +71,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentClientRequestToStopJetServiceException](./esentclientrequesttostopjetserviceexception-members.md)
+[Membros EsentClientRequestToStopJetServiceException](./esentclientrequesttostopjetserviceexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

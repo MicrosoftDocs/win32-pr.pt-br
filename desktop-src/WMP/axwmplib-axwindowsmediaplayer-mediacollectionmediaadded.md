@@ -3,7 +3,7 @@ title: Evento MediaCollectionMediaAdded do objeto AxWindowsMediaPlayer
 description: O evento MediaCollectionMediaAdded ocorre quando um item de mídia é adicionado à biblioteca local. | Evento MediaCollectionMediaAdded do objeto AxWindowsMediaPlayer
 ms.assetid: ba1779f6-a212-44f4-b52a-c88e22aebcce
 keywords:
-- Evento MediaCollectionMediaAdded do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento MediaCollectionMediaAdded do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbb839fccf9a5048b5647480eca36fcfcaeb904e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fb48a41970840a45344e2e6fdd578f4e84e23751fd8e337052e66ccd0a058d5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765096"
 ---
 # <a name="mediacollectionmediaadded-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionMediaAdded do objeto AxWindowsMediaPlayer
 
@@ -41,13 +41,13 @@ Private Sub player_MediaCollectionMediaAdded(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaAddedEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaAddedEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaAddedEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ MediaCollectionMediaAddedEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade | Descrição                                                                                                                  |
 |----------|------------------------------------------------------------------------------------------------------------------------------|
-| pMedia   | Item de mídia System. ObjectThe adicionado à biblioteca local. Você pode convertê-lo em uma interface IWMPMedia para acessá-lo.<br/> |
+| pMedia   | System.ObjectO item de mídia adicionado à biblioteca local. Você pode castiá-lo em uma interface IWMPMedia para acessá-la.<br/> |
 
 
 
@@ -55,7 +55,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-Esse evento ocorre apenas para a biblioteca local.
+Esse evento ocorre somente para a biblioteca local.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Esse evento ocorre apenas para a biblioteca local.
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. mediacollection (VB e C#)**](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md)
+[**AxWindowsMediaPlayer.mediaCollection (VB e C#)**](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)

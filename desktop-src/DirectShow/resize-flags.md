@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 api_location:
 - Qedit.h
-ms.openlocfilehash: 9e2ef2766f7f54fea4fad16fc26242a8c2ee08db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c38f4b1913eb7676832374e57e4d65e14dc87831c13f3cdb0de96edf9b83ebec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747097"
 ---
 # <a name="resize-flags"></a>Redimensionar sinalizadores
 

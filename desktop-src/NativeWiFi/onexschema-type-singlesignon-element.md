@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 947c8801e5b2534f4c3b4e548a2a2f2c7a4250d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8a395a5cdbd21bd33012e624f069d9447204cc96ffd2996a138ebf5d65f7bb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800726"
 ---
 # <a name="type-singlesignon-element"></a>Elemento Type (logon único)
 
 O elemento Type (logon único) especifica quando o logon único é executado. Quando definido como `preLogon` , o logon único é executado antes de o usuário fazer logon. Quando definido como `postLogon` , o logon único é executado imediatamente após o usuário fazer logon.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** Esse elemento será ignorado se estiver presente em um perfil.
 
 ``` syntax
 <xs:element name="type"
@@ -52,8 +52,8 @@ O elemento **Type** é definido pelo elemento [**logon único**](onexschema-sing
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

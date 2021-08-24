@@ -3,7 +3,7 @@ title: Elemento ButtonTip
 description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. | Elemento ButtonTip
 ms.assetid: 93e5d0c8-8d2d-45c1-9d47-bbd0b6eb8b88
 keywords:
-- Elemento ButtonTip do Windows Media Player
+- Windows Media Player do elemento ButtonTip
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56ab94794232ade6f924b87fd3f4d73d4452d544
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb7fb4a162a8e77fea7548265825af6c6cbda75dbafadf05fe32cb664c4d563f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764296"
 ---
 # <a name="buttontip-element"></a>Elemento ButtonTip
 
@@ -53,10 +53,10 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento é opcional para cada instância de **ServiceTask1**, **ServiceTask2** ou **ServiceTask3**. Se esse elemento não for fornecido, o Windows Media Player usará o texto do botão como o valor padrão.
+Esse elemento é opcional para cada instância de **ServiceTask1**, **ServiceTask2** ou **ServiceTask3**. se esse elemento não for fornecido, Windows Media Player usará o texto do botão como o valor padrão.
 
 > [!Note]  
-> O Windows Media Player 10 tem três painéis de tarefas em que um repositório online pode exibir suas páginas da Web. O repositório online pode optar por usar um, dois ou todos os três painéis de tarefas. O Windows Media Player 11 tem apenas um painel de tarefas, que pode ser exibido pelo usuário clicando na guia **lojas online** . o Windows Media Player 11 ignora os elementos **ServiceTask2** e **ServiceTask3** .
+> o Windows Media Player 10 tem três painéis de tarefas em que um repositório online pode exibir suas páginas da web. O repositório online pode optar por usar um, dois ou todos os três painéis de tarefas. o Windows Media Player 11 tem apenas um painel de tarefas, que pode ser exibido pelo usuário clicando na guia **lojas Online** . Windows Media Player 11 ignora os elementos **ServiceTask2** e **ServiceTask3** .
 
  
 

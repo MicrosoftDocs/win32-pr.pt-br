@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-bindings
-description: A lista de associações de RPC para a interface atual.
+title: Atributo rpc-Ns-Bindings
+description: A lista de vinculações RPC para a interface atual.
 ms.assetid: e3893b80-c4d8-4af3-b5b5-b86304456748
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo RPC-NS-bindings
-- Esquema de AD do atributo rpcNsBindings
+- Esquema do AD do atributo rpc-Ns-Bindings
+- Esquema do AD do atributo rpcNsBindings
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd6f68227c2e57e39f3175e29efb9d82f957e926
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b29b613e06202dd015b37aa18f1aece2ffba03aa7b3922fe7e461d41b722406
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837126"
 ---
-# <a name="rpc-ns-bindings-attribute"></a>atributo RPC-NS-bindings
+# <a name="rpc-ns-bindings-attribute"></a>Atributo rpc-Ns-Bindings
 
-A lista de associações de RPC para a interface atual.
+A lista de vinculações RPC para a interface atual.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-bindings                             |
-| LDAP-Display-Name | rpcNsBindings                               |
+| CN                | rpc-Ns-Bindings                             |
+| Ldap-Display-Name | rpcNsBindings                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.113                      |
-| System-ID-GUID    | bf967a23-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a23-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ A lista de associações de RPC para a interface atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | Falso                                                       |
+| Tem valor único       | Falso                                                       |
 | É indexado             | Falso                                                       |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A lista de associações de RPC para a interface atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | Falso                                                       |
+| Tem valor único       | Falso                                                       |
 | É indexado             | Falso                                                       |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A lista de associações de RPC para a interface atual.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | Falso                                                       |
+| Tem valor único       | Falso                                                       |
 | É indexado             | Falso                                                       |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
 | System-Flags           | 0x00000010                                                  |
-| Classes usadas em        | [**Servidor RPC-elemento**](c-rpcserverelement.md)<br/> |
+| Classes usadas em        | [**rpc-Server-Element**](c-rpcserverelement.md)<br/> |
 
 
 

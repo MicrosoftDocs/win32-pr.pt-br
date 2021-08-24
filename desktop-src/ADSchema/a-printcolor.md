@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d17b3fc82dd82b8ab5a65ce4e42b9a1c16c6871f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3a04c6e59c73a6f6d8b780d2ae9d3c1480655897df207250473104af402a1414
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838106"
 ---
 # <a name="print-color-attribute"></a>Print-Color atributo
 
@@ -58,9 +58,9 @@ ms.locfileid: "103645513"
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -79,9 +79,9 @@ ms.locfileid: "103645513"
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -100,9 +100,9 @@ ms.locfileid: "103645513"
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -121,9 +121,9 @@ ms.locfileid: "103645513"
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -142,9 +142,9 @@ ms.locfileid: "103645513"
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -163,9 +163,9 @@ ms.locfileid: "103645513"
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |

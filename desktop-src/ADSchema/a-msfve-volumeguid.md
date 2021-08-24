@@ -1,11 +1,11 @@
 ---
-title: atributo ms-FVE-VolumeGuid
+title: Atributo ms-FVE-VolumeGuid
 description: Contém o GUID associado a um volume de disco com suporte do BitLocker.
 ms.assetid: fe54beb4-8352-4ec5-9c9a-22ac19ee3cab
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-FVE-VolumeGuid
-- Esquema de AD do atributo msFVE-VolumeGuid
+- Esquema do AD do atributo ms-FVE-VolumeGuid
+- Esquema do AD do atributo msFVE-VolumeGuid
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2413ef17a489c495e7279455f6b2092127550665
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 616525ae079e2362cf246642f3ee21c222a2990fdebaa5f33b990a8b6ea4542f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763155"
 ---
-# <a name="ms-fve-volumeguid-attribute"></a>atributo ms-FVE-VolumeGuid
+# <a name="ms-fve-volumeguid-attribute"></a>Atributo ms-FVE-VolumeGuid
 
 Contém o GUID associado a um volume de disco com suporte do BitLocker.
 
@@ -30,13 +30,13 @@ Contém o GUID associado a um volume de disco com suporte do BitLocker.
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-FVE-VolumeGuid                                     |
-| LDAP-Display-Name | msFVE-VolumeGuid                                      |
+| Ldap-Display-Name | msFVE-VolumeGuid                                      |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1998                               |
-| System-ID-GUID    | 85e5a5cf-dcee-4075-9cfd-ac9db6a2f245                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 85e5a5cf-dcee-4075-9cfd-ac9db6a2f245                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,10 +55,10 @@ Contém o GUID associado a um volume de disco com suporte do BitLocker.
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
-| É indexado             | True                                                                         |
-| No catálogo global      | True                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| Tem valor único       | Verdadeiro                                                                         |
+| É indexado             | Verdadeiro                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
@@ -76,10 +76,10 @@ Contém o GUID associado a um volume de disco com suporte do BitLocker.
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
-| É indexado             | True                                                                         |
-| No catálogo global      | True                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| Tem valor único       | Verdadeiro                                                                         |
+| É indexado             | Verdadeiro                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |
@@ -97,10 +97,10 @@ Contém o GUID associado a um volume de disco com suporte do BitLocker.
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| É de valor único       | True                                                                         |
-| É indexado             | True                                                                         |
-| No catálogo global      | True                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                 |
+| Tem valor único       | Verdadeiro                                                                         |
+| É indexado             | Verdadeiro                                                                         |
+| No Catálogo Global      | Verdadeiro                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
 | Range-Lower            | \-                                                                           |
 | Range-Upper            | \-                                                                           |
 | Search-Flags           | 0x0000001B                                                                   |

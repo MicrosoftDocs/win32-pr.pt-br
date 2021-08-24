@@ -1,7 +1,7 @@
 ---
-description: A função CreateNPPInterface usa o BLOB retornado do localizador para criar um NPP que o aplicativo pode usar.
+description: A função CreateNPPInterface usa o BLOB retornado do finder para criar um NPP que o aplicativo pode usar.
 ms.assetid: 41f48c72-3284-4ebc-baff-63553c8971e6
-title: Função CreateNPPInterface (Netmon. h)
+title: Função CreateNPPInterface (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: d0efa1c33dd5e0778f13ddd59290de324c92e813
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03c2bb7fae0f68e6d38016df353266cfc9ec11757eeb98f6a5e41ab4316e63c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744536"
 ---
 # <a name="createnppinterface-function"></a>Função CreateNPPInterface
 
-A função **CreateNPPInterface** usa o blob retornado do localizador para criar um NPP que o aplicativo pode usar.
+A **função CreateNPPInterface** usa o BLOB retornado do finder para criar um NPP que o aplicativo pode usar.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,30 +41,30 @@ DWORD CreateNPPInterface(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para o BLOB retornado do localizador.
+Lidar com o BLOB retornado do finder.
 
 </dd> <dt>
 
-*IID* \[ em\]
+*iid* \[ em\]
 </dt> <dd>
 
 Identificador da interface que você chama do NPP (**IRTC** ou **IDelaydC**, por exemplo).
 
 </dd> <dt>
 
-*ppvObject* \[ fora\]
+*ppvObject* \[ out\]
 </dt> <dd>
 
 Ponteiro para o ponteiro retornado para a interface solicitada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que descreve o erro.
 
@@ -76,8 +76,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

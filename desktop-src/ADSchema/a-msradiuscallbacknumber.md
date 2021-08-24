@@ -1,10 +1,10 @@
 ---
-title: atributo msRADIUSCallbackNumber
+title: Atributo msRADIUSCallbackNumber
 description: O atributo msRADIUSCallbackNumber é usado internamente.
 ms.assetid: a8861fc5-a2c0-41fd-b66f-65062c7f1b1b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo msRADIUSCallbackNumber
+- Atributo AD MsRADIUSCallbackNumber
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c58edd286f9390f19055f1006328424a6dfb0644
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6add47133a5d8b84c7a5b98f126c284225614407b3867a0a91e432b85e9d58ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802836"
 ---
-# <a name="msradiuscallbacknumber-attribute"></a>atributo msRADIUSCallbackNumber
+# <a name="msradiuscallbacknumber-attribute"></a>Atributo msRADIUSCallbackNumber
 
-O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse valor diretamente.
+O **atributo msRADIUSCallbackNumber** é usado internamente. Não modifique esse valor diretamente.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | msRADIUSCallbackNumber               |
-| LDAP-Display-Name | msRADIUSCallbackNumber               |
+| Ldap-Display-Name | msRADIUSCallbackNumber               |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1145              |
-| System-ID-GUID    | db0c909c-c1f2-11d1-bbc5-0080c76670c0 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | db0c909c-c1f2-11d1-football5-0080c76670c0 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -57,10 +57,10 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -78,10 +78,10 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -99,10 +99,10 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -120,10 +120,10 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -141,10 +141,10 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -162,10 +162,10 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
@@ -178,7 +178,7 @@ O atributo **msRADIUSCallbackNumber** é usado internamente. Não modifique esse
 
 <dl> <dt>
 
-[Funções de administração de RAS](/windows/desktop/RRAS/ras-administration-functions)
+[Funções de administração ras](/windows/desktop/RRAS/ras-administration-functions)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Atributo netboot-Machine-File-Path
-description: Esse atributo especifica o servidor que responde ao cliente. A partir do sistema operacional Windows Server 2003, ele pode indicar o Startrom.com que o cliente obtém.
+description: Esse atributo especifica o servidor que responde ao cliente. a partir do sistema operacional Windows Server 2003, ele pode indicar o Startrom.com que o cliente obtém.
 ms.assetid: 8706bf38-8027-4260-b382-4d4c2a6e0f6e
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d03ead4f307b7c0b524192d9c865ee437fbd9d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5495a56a5673a1aa8e62a1f57af89cc12a3f5383dbe9139625fe27c77931e8a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703376"
 ---
 # <a name="netboot-machine-file-path-attribute"></a>Atributo netboot-Machine-File-Path
 
-Esse atributo especifica o servidor que responde ao cliente. A partir do sistema operacional Windows Server 2003, ele pode indicar o Startrom.com que o cliente obtém.
+Esse atributo especifica o servidor que responde ao cliente. a partir do sistema operacional Windows Server 2003, ele pode indicar o Startrom.com que o cliente obtém.
 
 
 
@@ -58,9 +58,9 @@ Esse atributo especifica o servidor que responde ao cliente. A partir do sistema
 | ID do link                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
-| No catálogo global      | True                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
@@ -79,9 +79,9 @@ Esse atributo especifica o servidor que responde ao cliente. A partir do sistema
 | ID do link                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
-| No catálogo global      | True                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
@@ -100,9 +100,9 @@ Esse atributo especifica o servidor que responde ao cliente. A partir do sistema
 | ID do link                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
-| No catálogo global      | True                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
@@ -121,9 +121,9 @@ Esse atributo especifica o servidor que responde ao cliente. A partir do sistema
 | ID do link                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
-| No catálogo global      | True                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
@@ -142,9 +142,9 @@ Esse atributo especifica o servidor que responde ao cliente. A partir do sistema
 | ID do link                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
-| No catálogo global      | True                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |
@@ -163,9 +163,9 @@ Esse atributo especifica o servidor que responde ao cliente. A partir do sistema
 | ID do link                | \-                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
 | System-Only            | Falso                                                                                                |
-| É de valor único       | True                                                                                                 |
+| É de valor único       | Verdadeiro                                                                                                 |
 | É indexado             | Falso                                                                                                |
-| No catálogo global      | True                                                                                                 |
+| No catálogo global      | Verdadeiro                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                         |
 | Range-Lower            | \-                                                                                                   |
 | Range-Upper            | \-                                                                                                   |

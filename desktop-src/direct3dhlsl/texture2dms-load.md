@@ -1,6 +1,6 @@
 ---
-title: 'Métodos de carga Texture2DMS:: Texture2DMS'
-description: 'Recupera um valor do recurso no local e no índice de exemplo fornecidos. | Métodos de carga Texture2DMS:: Texture2DMS'
+title: Métodos de carregamento Texture2DMS::Texture2DMS
+description: Recupera um valor do recurso no local e no índice de exemplo fornecido. | Métodos de carregamento Texture2DMS::Texture2DMS
 ms.assetid: d597fc42-0b21-4e89-bb33-0b8c12ae00ae
 keywords:
 - Métodos de carregamento HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: a29324dc108464359e333ac401a24be4cadb461d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 24df3d58413c873df4113cbd9b876ad531cb8307fbc5c8b5062d4a94847e8e2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104370868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742696"
 ---
-# <a name="texture2dmsload-methods"></a>Métodos Texture2DMS:: Load
+# <a name="texture2dmsload-methods"></a>Métodos Texture2DMS::Load
 
-Recupera um valor do recurso no local e no índice de exemplo fornecidos.
+Recupera um valor do recurso no local e no índice de exemplo fornecido.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,9 +29,9 @@ Recupera um valor do recurso no local e no índice de exemplo fornecidos.
 
 | Método                                                           | Descrição                                                        |
 |:-----------------------------------------------------------------|:-------------------------------------------------------------------|
-| [**Carregar (int, int)**](sm5-object-texture2dms-load.md)             | Lê dados de textura.<br/>                                     |
-| [**Carga (int, int, int)**](dx-graphics-hlsl-to-load.md)            | Lê dados de textura.<br/>                                     |
-| [**Load (int, int, int, uint)**](t2dms-load-float-int-int-uint-.md) | Lê os dados de textura e retorna o status da operação.<br/> |
+| [**Load(int,int)**](sm5-object-texture2dms-load.md)             | Lê dados de textura.<br/>                                     |
+| [**Load(int,int,int)**](dx-graphics-hlsl-to-load.md)            | Lê dados de textura.<br/>                                     |
+| [**Load(int,int,int,uint)**](t2dms-load-float-int-int-uint-.md) | Lê dados de textura e retorna o status da operação.<br/> |
 
 
 

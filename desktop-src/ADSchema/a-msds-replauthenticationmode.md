@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3b88c7e3223b946b56962b710b036ee6e0c36dc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ff624a9b7a1d1f678c748f79d3193b0b4b287026de1a669896c3e25d69f27ab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803536"
 ---
 # <a name="ms-ds-repl-authentication-mode-attribute"></a>ms-DS-repl-atributo de modo de autenticação
 
@@ -77,7 +77,7 @@ A tabela a seguir contém os identificadores programáticos para os valores dess
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |

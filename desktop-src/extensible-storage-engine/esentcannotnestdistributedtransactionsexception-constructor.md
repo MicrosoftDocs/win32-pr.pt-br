@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25ff80386341dff84486422e8f9392e1e9dcda30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e17acf02383f732e0e2b915056ad8e978f2450753cf87fede1e7e35ae71ad236
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785826"
 ---
 # <a name="esentcannotnestdistributedtransactionsexception-constructor"></a>Construtor EsentCannotNestDistributedTransactionsException
 
 Inicializa uma nova instância da classe EsentCannotNestDistributedTransactionsException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentCannotNestDistributedTransactionsException()
 
 [Classe EsentCannotNestDistributedTransactionsException](./esentcannotnestdistributedtransactionsexception-class.md)
 
-[Membros do EsentCannotNestDistributedTransactionsException](./esentcannotnestdistributedtransactionsexception-members.md)
+[Membros EsentCannotNestDistributedTransactionsException](./esentcannotnestdistributedtransactionsexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

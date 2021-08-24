@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bfc2265b2d809b7a73cd19faace87473552471a3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bd36fa89ab33ac7757ed4cf14673d33bc32fc1495f95102454fc918b8f21c4bb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762436"
 ---
 # <a name="msmq-out-routing-servers-attribute"></a>Atributo MSMQ-out-Routing-Servers
 
@@ -60,7 +60,7 @@ Links de DN para servidores de roteamento MSMQ por meio do qual todo o tráfego 
 | System-Only            | Falso                                                        |
 | É de valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -81,7 +81,7 @@ Links de DN para servidores de roteamento MSMQ por meio do qual todo o tráfego 
 | System-Only            | Falso                                                        |
 | É de valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -102,7 +102,7 @@ Links de DN para servidores de roteamento MSMQ por meio do qual todo o tráfego 
 | System-Only            | Falso                                                        |
 | É de valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -121,15 +121,15 @@ Links de DN para servidores de roteamento MSMQ por meio do qual todo o tráfego 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Links de DN para servidores de roteamento MSMQ por meio do qual todo o tráfego 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Links de DN para servidores de roteamento MSMQ por meio do qual todo o tráfego 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

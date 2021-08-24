@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_COMPRESS_GET_FORMAT (VFW. h)
-description: A \_ mensagem ICM Compact \_ Get \_ Format solicita o formato de saída dos dados compactados de um driver de compactação de vídeo. Você pode enviar essa mensagem explicitamente ou usando a macro ICCompressGetFormat.
+description: o ICM \_ compactar \_ obter \_ mensagem de formato solicita o formato de saída dos dados compactados de um driver de compactação de vídeo. Você pode enviar essa mensagem explicitamente ou usando a macro ICCompressGetFormat.
 ms.assetid: ac12d415-bad5-4838-b206-09c8097d3fd9
 keywords:
-- Multimídia do Windows de mensagem ICM_COMPRESS_GET_FORMAT
+- mensagem de ICM_COMPRESS_GET_FORMAT Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d096ceafa382bdbae5e4efe16975b3518735e773
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ac1bf9b3c9a3ae0535da008786bf8baef19c8b51e27446b84e4b95805a1c4a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785026"
 ---
-# <a name="icm_compress_get_format-message"></a>\_Mensagem de \_ formato de obtenção do ICM Compact \_
+# <a name="icm_compress_get_format-message"></a>ICM \_ COMPACTar a \_ \_ mensagem obter formato
 
-A mensagem **ICM \_ Compact \_ Get \_ Format** solicita o formato de saída dos dados compactados de um driver de compactação de vídeo. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat) .
+o **ICM \_ compactar \_ obter \_** mensagem de formato solicita o formato de saída dos dados compactados de um driver de compactação de vídeo. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat) .
 
 
 ```C++

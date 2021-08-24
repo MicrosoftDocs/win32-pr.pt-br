@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a3b05065c56e00465036d49a44a861de19dd9019
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe5a244f92c11cb0874709c6712748daf1d7196fca7250db49f9e94c3cf11122
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119725756"
 ---
 # <a name="xmunibble4-operator--operators"></a>Operador XMUNIBBLE4 = operadores
 

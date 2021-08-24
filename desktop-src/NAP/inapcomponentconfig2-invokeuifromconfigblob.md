@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54cc1efaf7da3434e1aff10d57c2e175481a3d2d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 45d85e0506b8adf084b65a13a117a9dea3856fcff2e73f65a229bdb31b283fb9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803156"
 ---
 # <a name="inapcomponentconfig2invokeuifromconfigblob-method"></a>Método INapComponentConfig2:: InvokeUIFromConfigBlob
 
@@ -94,9 +94,9 @@ Um ponteiro para um **bool** que é definido como **true** se a configuração f
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK se for bem-sucedido ou um dos códigos de erro padrão do Windows.
+retorna S \_ OK se for bem-sucedido ou um dos Windows códigos de erro padrão.
 
 ## <a name="remarks"></a>Comentários
 
@@ -109,8 +109,8 @@ Se usado para um computador local, essa função pode ser usada para a configura
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
 
 

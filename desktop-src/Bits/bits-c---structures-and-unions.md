@@ -4,12 +4,12 @@ description: As interfaces Serviço de Transferência Inteligente em Segundo Pla
 ms.assetid: a1b8b4a1-77d6-46ac-96d5-6a0c99cfc643
 ms.topic: article
 ms.date: 02/21/2019
-ms.openlocfilehash: 93763daa73bc96e12dd27b862d75fbb23869c20f
-ms.sourcegitcommit: 31f494fef71b63ad411b86b22b4cc01af6e37c8d
+ms.openlocfilehash: 199d5648ba8205d0417304350a104b2e16a607e4d7f1bdce4dfe9ecec34f98dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "104292900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702026"
 ---
 # <a name="bits-structures-and-unions"></a>Estruturas e uniões de BITS
 

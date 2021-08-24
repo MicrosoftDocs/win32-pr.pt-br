@@ -4,12 +4,12 @@ description: O NDF (estrutura de diagnóstico de rede) fornece uma maneira para 
 ms.assetid: 61dfb66b-4bc6-43a9-ad61-698f5cd67f4a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0342ee4cb285f0a0f1c76c74b3bdc5b412b07e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2397331e76fb5aa85478b6ab516216f2e0b7fb05e115ccdbebd0daa6565c8674
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801906"
 ---
 # <a name="network-diagnostics-framework"></a>Estrutura de diagnóstico de rede
 
@@ -29,7 +29,7 @@ A API NDF foi projetada para desenvolvedores de C/C++.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-O NDF está disponível para computadores que executam o Windows Vista, o Windows Server 2008 ou posterior.
+o NDF está disponível para computadores que executam o Windows Vista, Windows Server 2008 ou posterior.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -40,7 +40,7 @@ O NDF está disponível para computadores que executam o Windows Vista, o Window
 | [Sobre NDF](about-ndf.md)<br/>                                       | Fornece um resumo geral da tecnologia NDF.<br/>                                                                                                                                             |
 | [Usando NDF](using-ndf.md)<br/>                                       | Fornece informações e exemplos sobre como usar a funcionalidade NDF, bem como estender essa funcionalidade.<br/>                                                                                    |
 | [Referência de NDF](ndf-reference.md)<br/>                               | Fornece informações sobre enumerações, funções, interfaces e estruturas que dão suporte ao uso de NDF, bem como informações sobre as classes auxiliares extensíveis fornecidas pela Microsoft.<br/> |
-| [Rastreamento de rede no Windows 7](network-tracing-in-windows-7.md)<br/> | Discute o rastreamento de rede e as ferramentas a serem usadas para solução de problemas.<br/>                                                                                                                               |
+| [rastreamento de rede no Windows 7](network-tracing-in-windows-7.md)<br/> | Discute o rastreamento de rede e as ferramentas a serem usadas para solução de problemas.<br/>                                                                                                                               |
 
 
 

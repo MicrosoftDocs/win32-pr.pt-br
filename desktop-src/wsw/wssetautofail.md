@@ -1,6 +1,6 @@
 ---
-title: Função WsSetAutoFail (WebServicesDebug. h)
-description: Define o próximo ponto para injetar uma falha. Esta é uma função somente depuração.
+title: Função WsSetAutoFail (WebServicesDebug.h)
+description: Define o próximo ponto para injetar uma falha. Essa é uma função DEBUG ONLY.
 ms.assetid: b453dbc5-01ff-486d-8767-254b74cc5b6e
 keywords:
 - Serviços Web da função WsSetAutoFail para Windows
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ba10b8b038f270f764b064fac1cb81e675f5239
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4e2ae3ed731edce429aac78700d52d0e7504a5688d1bf35bbb9c64a5d34bc0a1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838536"
 ---
 # <a name="wssetautofail-function"></a>Função WsSetAutoFail
 
-Define o próximo ponto para injetar uma falha. Esta é uma função somente depuração.
+Define o próximo ponto para injetar uma falha. Essa é uma função DEBUG ONLY.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,23 +41,23 @@ HRESULT WINAPI  WsSetAutoFail(
 
 <dl> <dt>
 
-*contagem* \[ de no\]
+*count* \[ Em\]
 </dt> <dd>
 
-Especifica quantas operações antes de falhas começam a ocorrer.
+Especifica quantas operações antes que as falhas comecem a ocorrer.
 
 </dd> <dt>
 
-*erro* \[ do em, opcional\]
+*erro* \[ in, opcional\]
 </dt> <dd>
 
-Um ponteiro para um objeto de [ \_ erro WS](ws-error.md) em que informações adicionais sobre o erro devem ser armazenadas se a função falhar.
+Um ponteiro para um [objeto ERROR \_ do WS](ws-error.md) em que informações adicionais sobre o erro devem ser armazenadas se a função falhar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>WebServicesDebug. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>WebServicesDebug.h</dt> </dl> |
 
 
 

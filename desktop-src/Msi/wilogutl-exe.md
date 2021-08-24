@@ -4,20 +4,20 @@ ms.assetid: 09aa03ba-992f-47ab-999b-ebdfe85c1ea7
 title: Wilogutl.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec81c3c82299a08fd947fbbecc7afd8a373252b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74ee29553cba4105b5e6ff250f5b388adc964b9477bde5d1f25d073bbf2b1355
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786586"
 ---
 # <a name="wilogutlexe"></a>Wilogutl.exe
 
 Wilogutl.exe ajuda na análise de arquivos de log de uma instalação do Windows Installer e exibe soluções sugeridas para erros encontrados em um arquivo de log.
 
-Os erros não críticos não são exibidos. Wilogutl.exe pode ser executado no modo silencioso ou com uma interface do usuário (IU). A ferramenta gera relatórios como arquivos de texto na interface do usuário e nos modos silenciosos. Ele funciona melhor com arquivos de log Windows Installer detalhados, mas também funciona com logs não detalhados. Para obter mais informações, consulte [Logging](logging.md).
+Os erros não críticos não são exibidos. Wilogutl.exe pode ser executado no modo silencioso ou com uma interface do usuário (IU). A ferramenta gera relatórios como arquivos de texto na interface do usuário e nos modos silenciosos. ele funciona melhor com arquivos de log Windows Installer detalhados, mas também funciona com logs não detalhados. Para obter mais informações, consulte [Logging](logging.md).
 
-Essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -63,10 +63,10 @@ Quando executado no modo de interface do usuário, Wilogutl.exe exibe as caixas 
 </thead>
 <tbody>
 <tr class="odd">
-<td>Windows Installer detalhado do log Analyzer</td>
-<td>A Windows Installer caixa de diálogo analisador de log detalhado permite que os usuários selecionem um arquivo de log para análise:
+<td>Windows Analisador detalhado de log do instalador</td>
+<td>a Windows Installer caixa de diálogo analisador de Log detalhado permite que os usuários selecionem um arquivo de Log para análise:
 <ul>
-<li>O botão <strong>abrir</strong> abre o arquivo no bloco de notas. A área de visualização pode ser usada para verificar se o arquivo de log correto foi selecionado.</li>
+<li>o botão <strong>abrir</strong> abre o arquivo em Bloco de notas. A área de visualização pode ser usada para verificar se o arquivo de log correto foi selecionado.</li>
 <li>O botão <strong>analisar</strong> começa a análise do arquivo de log e exibe a caixa de diálogo exibição detalhada do arquivo de log.</li>
 </ul></td>
 </tr>
@@ -80,7 +80,7 @@ Quando executado no modo de interface do usuário, Wilogutl.exe exibe as caixas 
 <li>Log anotado em <strong>HTML</strong> - Mostrar log como arquivo HTML anotado.</li>
 <li><strong>Salvar resultados</strong> - Salvar arquivos de relatório no diretório especificado.</li>
 <li>Ajuda da mensagem de <strong>erro</strong> - Mostrar ajuda da mensagem de erro do instalador.</li>
-<li><strong>Ajuda</strong> - do Mostrar ajuda para o Windows Installer setup log Analyzer.</li>
+<li><strong>Ajuda</strong> - do mostrar ajuda para o Windows Installer Setup Log Analyzer.</li>
 <li><strong>Como ler um arquivo</strong> - de log Mostrar o documento de ajuda do arquivo de log.</li>
 </ul></td>
 </tr>
@@ -98,7 +98,7 @@ Para obter mais informações, consulte <a href="/windows/desktop/api/Msiquery/n
 </tr>
 <tr class="even">
 <td>Propriedades</td>
-<td>A caixa de diálogo Propriedades mostra Windows Installer <a href="properties.md">Propriedades</a> e seus valores no final da instalação. Você pode classificar as propriedades por nome ou por valor:
+<td>a caixa de diálogo propriedades mostra Windows Installer <a href="properties.md">propriedades</a> e seus valores no final da instalação. Você pode classificar as propriedades por nome ou por valor:
 <ul>
 <li>A guia <strong>cliente</strong> mostra Propriedades e valores durante a parte do lado do cliente da instalação.</li>
 <li>A guia <strong>servidor</strong> mostra Propriedades e valores durante a parte do servidor da instalação.</li>
@@ -124,7 +124,7 @@ Se você precisar de um valor de política que não esteja no log, tente usar Re
 
 ## <a name="report-files"></a>Arquivos de relatório
 
-Ao executar uma análise de modo silencioso ou clicar no botão **salvar resultados** na caixa de diálogo **Exibir arquivo de log detalhado** , a ferramenta Windows Installer setup Analyzer gera três arquivos de texto e um arquivo de log anotado em HTML.
+ao executar uma análise de modo silencioso ou clicar no botão **salvar resultados** na caixa de diálogo **exibir arquivo de log detalhado** , a ferramenta Windows Installer Setup Analyzer gera três arquivos de texto e um arquivo de Log anotado em HTML.
 
 A tabela a seguir identifica os nomes e o conteúdo nos arquivos de relatório.
 
@@ -165,7 +165,7 @@ Se argumentos de linha de comando inválidos forem passados para operações de 
 [Versões, ferramentas e redistribuíveis liberados](released-versions-tools-and-redistributables.md)
 </dt> <dt>
 
-[Ferramentas de desenvolvimento Windows Installer](windows-installer-development-tools.md)
+[Windows Ferramentas de desenvolvimento do instalador](windows-installer-development-tools.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: A \_ classe de montagem CIM representa uma associação entre um sistema de arquivos e um diretório ao qual ele está anexado.
+description: A classe Montagem CIM \_ representa uma associação entre um sistema de arquivos e um diretório ao qual ele está anexado.
 ms.assetid: abf1833b-9b39-45c0-8400-2be2bf3a1c3c
 ms.tgt_platform: multiple
-title: Classe CIM_Mount
+title: CIM_Mount classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,21 +16,21 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5b86587466517a10302b3109a521e902a66892c4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1298c695237ac40097b0c081d313769ee4e4e1190571b1bdd58137e25d53c10a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821016"
 ---
-# <a name="cim_mount-class"></a>\_Classe de montagem CIM
+# <a name="cim_mount-class"></a>Classe de \_ montagem CIM
 
-A classe de **\_ montagem CIM** representa uma associação entre um sistema de arquivos e um diretório ao qual ele está anexado.
+A **classe \_ Montagem CIM** representa uma associação entre um sistema de arquivos e um diretório ao qual ele está anexado.
 
-A semântica dessa relação exige que o diretório montado seja contido por um sistema de arquivos (por meio da Associação de armazenamento de arquivo) que seja diferente do sistema de arquivos referenciado como dependente. O sistema de arquivos que contém o diretório pode ser local ou remoto. Por exemplo, um sistema de arquivos local em um sistema de computador Solaris pode montar um diretório do sistema de arquivos acessado por meio da unidade de CDROM do computador (ou seja, outro sistema de arquivos local). Por outro lado, em um caso "remoto", o diretório é primeiro exportado por seu sistema de arquivos, que é hospedado em outro sistema de computador agindo, por exemplo, como um servidor de arquivos. Para distinguir as duas montagens, uma associação [**de \_ exportação de CIM**](cim-export.md) sempre deve ser definida para os diretórios acessados/montados remotamente.
+A semântica dessa relação exige que o diretório montado seja contido por um sistema de arquivos (por meio da associação de armazenamento de arquivos) diferente do sistema de arquivos referenciado como dependente. O sistema de arquivos que contém o diretório pode ser local ou remoto. Por exemplo, um sistema de arquivos local em um sistema de computadores Solaris pode montar um diretório do sistema de arquivos acessado por meio da unidade CDROM do computador (ou seja, outro sistema de arquivos local). Por outro lado, em um caso "remoto", o diretório é exportado primeiro por seu sistema de arquivos, que é hospedado em outro sistema de computador que atua, por exemplo, como um servidor de arquivos. Para distinguir as duas montagens, uma associação [**de \_ Exportação cim**](cim-export.md) sempre deve ser definida para os diretórios acessados/montados remotamente.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -49,55 +49,55 @@ class CIM_Mount : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ montagem CIM** tem estes tipos de membros:
+A **classe \_ Montagem CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ montagem CIM** tem essas propriedades.
+A **classe \_ Montagem CIM** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ diretório CIM**
+Tipo de dados: **Diretório CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
 </dt> </dl>
 
-Um [**\_ diretório CIM**](cim-directory.md) que descreve o diretório montado.
+Um [**Diretório CIM \_**](cim-directory.md) que descreve o diretório montado.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ NFS**
+Tipo de dados: **\_ CIM NFS**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um [**\_ NFS do CIM**](cim-nfs.md) que descreve o sistema de arquivos no qual o diretório está montado.
+Um [**\_ NFS cim que**](cim-nfs.md) descreve o FileSystem no qual o diretório está montado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-**CIM \_ A montagem** é derivada [**da \_ dependência CIM**](cim-dependency.md).
+**CIM \_ A** montagem é derivada da [**\_ Dependência CIM.**](cim-dependency.md)
 
 O WMI não implementa essa classe.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,8 +107,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -117,7 +117,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

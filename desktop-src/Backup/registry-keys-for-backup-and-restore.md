@@ -18,12 +18,12 @@ keywords:
 - SYSVOL Backup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7058378561072bdc0f51abb455c098a22a9ad5e
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 6d825c6588242dccd5df16778de9c590e51b7cdbf6696be4f1a5e40ff2d967c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702186"
 ---
 # <a name="registry-keys-and-values-for-backup-and-restore"></a>Chaves e valores do Registro para backup e restauração
 
@@ -48,13 +48,13 @@ Consulte [OverallPerformanceSetting e CustomPerformanceSettings](#overallperform
 
 ## <a name="disablemonitoring"></a>DisableMonitoring
 
-Em plataformas cliente Windows a partir do Windows 7, os usuários serão solicitados automaticamente a configurar o recurso Backup do Windows se ainda não o fizeram. Essas notificações aparecem no momento da inicialização do computador, começando sete dias após a instalação do sistema operacional. Eles também aparecem quando o usuário conecta uma unidade de disco rígido; nesse caso, as notificações aparecem imediatamente.
+No Windows plataformas cliente a partir do Windows 7, os usuários serão solicitados automaticamente a configurar o recurso Backup do Windows se ainda não o fizeram. Essas notificações aparecem no momento da inicialização do computador, começando sete dias após a instalação do sistema operacional. Eles também aparecem quando o usuário conecta uma unidade de disco rígido; nesse caso, as notificações aparecem imediatamente.
 
 Os OEMs e os desenvolvedores de aplicativos de backup de terceiros podem usar o valor do Registro **DisableMonitoring** para desativar essas notificações automáticas.
 
 Esse valor não existe por padrão, portanto, ele deve ser criado sob a seguinte chave do Registro:
 
-**HKEY \_ SOFTWARE \_ DO COMPUTADOR LOCAL** \\  \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **WindowsBackup**
+**HKEY \_ SOFTWARE \_ DO COMPUTADOR LOCAL** Microsoft \\  \\  \\ **Windows** \\ **WindowsBackup do CurrentVersion** \\ 
 
 O **valor do Registro DisableMonitoring** tem o tipo de dados REG DWORD e é interpretado da seguinte \_ maneira:
 
@@ -82,7 +82,7 @@ A tabela a seguir mostra algumas entradas típicas.
 | Internet Explorer                      | Arquivos temporários                                                                           |
 | Arquivo de página memória                       | \\Pagefile.sys                                                                            |
 | MS Coordenador de Transações Distribuídas | C: \\ Windows \\ system32 \\ MSDtc \\ MSDTC. LOG C: \\ Windows \\ system32 \\ MSDtc \\ trace \\ dtctrace.log |
-| cache Arquivos Offline dados                    | %Systemroot% \\ CSC \\ \* /s                                                                  |
+| Arquivos Offline cache                    | %Systemroot% \\ CSC \\ \* /s                                                                  |
 | Gerenciamento de energia                       | \\hiberfil.sys                                                                            |
 | Armazenamento de instância única                | \\SIS Common Store \\ \* . \* /s                                                              |
 | Arquivos temporários                        | %TEMP% \\ \* /s                                                                             |
@@ -92,13 +92,13 @@ A tabela a seguir mostra algumas entradas típicas.
  
 
 > [!Note]  
-> Os aplicativos que executam backups em nível de volume geralmente fazem isso copiando todo o volume no nível do bloco, portanto, eles não podem cumprir a chave do Registro **FilesNotToBackup** no momento do backup. Em vez disso, eles esperam até o tempo de restauração para excluir os arquivos que não devem ser armazenados em backup. Na maioria dos casos, essa é uma estratégia razoável. No entanto, no caso de arquivos de Armazenamento de Instância Única, os arquivos do Armazenamento Comum do SIS não devem ser excluídos no momento da restauração.
+> Os aplicativos que executam backups em nível de volume geralmente fazem isso copiando todo o volume no nível do bloco, portanto, eles não podem cumprir a chave do Registro **FilesNotToBackup** no momento do backup. Em vez disso, eles esperam até o tempo de restauração para excluir os arquivos que não devem ser armazenados em backup. Na maioria dos casos, essa é uma estratégia razoável. No entanto, no caso de arquivos de Armazenamento instância única, os arquivos do Armazenamento Comum do SIS não devem ser excluídos no momento da restauração.
 
  
 
-Para backups de volume no nível de bloco, Backup do Windows Server e o utilitário Wbadmin do Windows adem a chave do Registro **FilesNotToBackup** excluindo os arquivos apropriados no momento da restauração. Restauração do Sistema e o Backup de Estado do Sistema não são a chave do Registro **FilesNotToBackup.**
+Para backups de volume no nível do bloco, o backup do Windows Server e o utilitário Wbadmin do Windows adem a chave do Registro **FilesNotToBackup** excluindo os arquivos apropriados no momento da restauração. Restauração do Sistema e o Backup de Estado do Sistema não são a chave do Registro **FilesNotToBackup.**
 
-**Windows XP:** Restauração do Sistema a chave do **Registro FilesNotToBackup.**
+**Windows XP:** Restauração do Sistema a chave do Registro **FilesNotToBackup.**
 
 ## <a name="filesnottosnapshot"></a>FilesNotToSnapshot
 
@@ -106,7 +106,7 @@ O VSS dá suporte à chave do Registro **FilesNotToSnapshot.** Os aplicativos e 
 
 **Windows Server 2003 e Windows XP:** Não há suporte para essa chave do Registro.
 
-Para backups de volume no nível do bloco, Backup do Windows Server a chave do Registro **FilesNotToSnapshot** excluindo os arquivos apropriados no momento da restauração.
+Para backups de volume no nível do bloco, Windows Backup do Servidor do Windows a chave do Registro **FilesNotToSnapshot** excluindo os arquivos apropriados no momento da restauração.
 
 ## <a name="idletimeout"></a>IdleTimeout
 
@@ -114,7 +114,7 @@ O **valor do Registro IdleTimeout** especifica a quantidade de tempo, em segundo
 
 Esse valor do Registro pode ser encontrado na seguinte chave do Registro:
 
-**HKEY \_ Configurações \_ do** \\  \\ VSS do Sistema LOCAL MACHINE **CurrentControlSet** \\ **Services** \\  \\ 
+**HKEY \_ Sistema \_ LOCAL** \\ **MACHINE** \\ **CurrentControlSet** \\ **Services** \\ **VSS** \\ **Configurações**
 
 Se esse valor do Registro não existir:
 
@@ -138,7 +138,7 @@ A **chave do Registro KeysNotToRestore** especifica os nomes das sub-chaves do R
 
 **Windows Server 2003 e Windows XP:** Você deve seguir a **chave do Registro KeysNotToRestore.**
 
-Para backups de volume no nível do bloco, Backup do Windows Server a chave do Registro **KeysNotToRestore** excluindo os arquivos apropriados no momento da restauração.
+Para backups de volume no nível do bloco, Windows Backup do Servidor do Adure a chave do Registro **KeysNotToRestore** excluindo os arquivos apropriados no momento da restauração.
 
 O Backup de Estado do Sistema reconhece a chave do Registro **KeysNotToRestore.**
 
@@ -164,7 +164,7 @@ Sempre que uma nova restauração de estado do sistema for executada, o aplicati
 
 Outros aplicativos que precisam monitorar restaurações de estado do sistema devem armazenar os dados desse valor do Registro. Esses dados podem ser comparados com os dados atuais do valor do Registro **LastRestoreId** para determinar se uma nova restauração de estado do sistema foi executada.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Esse valor do Registro não é suportado até que o Windows Vista com Service Pack 1 (SP1) e Windows Server 2008.
+**Windows Vista, Windows Server 2003 e Windows XP:** Esse valor do Registro não tem suporte até Windows Vista com Service Pack 1 (SP1) e Windows Server 2008.
 
 ## <a name="maxshadowcopies"></a>MaxShadowCopies
 
@@ -172,7 +172,7 @@ O valor do Registro **MaxShadowCopies** especifica o número máximo de cópias 
 
 Se o valor do Registro **MaxShadowCopies** não existir, o aplicativo de backup poderá criar sob a seguinte chave do Registro:
 
-**HKEY \_ Configurações \_ do** \\  \\ VSS do Sistema LOCAL MACHINE **CurrentControlSet** \\ **Services** \\  \\ 
+**HKEY \_ Sistema \_ LOCAL** \\ **MACHINE** \\ **CurrentControlSet** \\ **Services** \\ **VSS** \\ **Configurações**
 
 Crie um valor com o nome **MaxShadowCopies e** digite DWORD. Os dados padrão para esse valor são 64. O mínimo é 1. O máximo é 512.
 
@@ -193,7 +193,7 @@ Crie um valor com o nome **MaxShadowCopies e** digite DWORD. Os dados padrão pa
 
 Se o valor do Registro **MinDiffAreaFileSize** não estiver definido, o tamanho mínimo da área de armazenamento de cópia de sombra será de 32 MB para volumes menores que 500 MB e 320 MB para volumes maiores que 500 MB.
 
-**Windows Server 2008, Windows Server 2003 com SP1 e Windows Vista:** Se o valor do Registro **MinDiffAreaFileSize** não estiver definido, a área de armazenamento de cópia de sombra terá um tamanho mínimo de 300 MB. Se o valor do Registro **MinDiffAreaFileSize** estiver definido, seus dados deverão estar entre 300 MB e 3000 MB (3 GB) e devem ser múltiplos de 300 MB.
+**Windows Server 2008, Windows Server 2003 com SP1** e Windows Vista: Se o valor do Registro **MinDiffAreaFileSize** não estiver definido, a área de armazenamento de cópia de sombra terá um tamanho mínimo de 300 MB. Se o valor do Registro **MinDiffAreaFileSize** estiver definido, seus dados deverão estar entre 300 MB e 3000 MB (3 GB) e devem ser múltiplos de 300 MB.
 
 **Windows Server 2003:** Se o valor do Registro **MinDiffAreaFileSize** não estiver definido, o tamanho mínimo da área de armazenamento de cópia de sombra será de 100 MB.
 
@@ -209,13 +209,13 @@ Cópias de sombra poderão não funcionar corretamente se o valor do Registro **
 
 ## <a name="overallperformancesetting-and-customperformancesettings"></a>OverallPerformanceSetting e CustomPerformanceSettings
 
-Os valores de registro **OverallPerformanceSetting** e **CustomPerformanceSettings** são usados para especificar as configurações de desempenho para Backup do Windows Server. Esses valores do Registro têm suporte apenas em sistemas operacionais Windows Server.
+Os valores de registro **OverallPerformanceSetting** e **CustomPerformanceSettings** são usados para especificar as configurações de desempenho para Windows Backup do Servidor. Esses valores do Registro têm suporte apenas em sistemas operacionais Windows servidor.
 
 **Windows Server 2003:** Não há suporte para esses valores do Registro.
 
 Se esses valores do Registro não existirem, o aplicativo de backup poderá crie-os na seguinte chave do Registro:
 
-**HKEY \_ SOFTWARE \_ LOCAL** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion Backup em** Nível de Bloco do \\ **Windows**
+**HKEY \_ SOFTWARE \_ DO COMPUTADOR LOCAL** Microsoft \\  \\  \\ **Windows** Backup em Nível \\  \\ **Windows** De Bloqueio do CurrentVersion
 
 Para especificar as configurações de desempenho para todos os volumes, crie um valor com o nome **OverallPerformanceSetting** e digite REG \_ DWORD. Os dados do valor devem ser definidos como um dos valores a seguir.
 
@@ -247,7 +247,7 @@ Se você definir **OverallPerformanceSetting** como 1 ou 2, os dados no valor **
 
 ## <a name="sysvol"></a>SYSVOL
 
-O **valor do Registro SYSVOL** é uma maneira de notificar o serviço DFSR (replicação Sistema de Arquivos Distribuído) de que uma operação de restauração de estado do sistema foi iniciada. Qualquer aplicativo de backup que executa a restauração de estado do sistema do SYSVOL deve usar esse valor para indicar se a operação de restauração é autoritativa ou não autoritativa. Esse valor é lido pelo serviço DFSR. Se esse valor não for definido, a restauração SYSVOL será executada de forma não autorizada por padrão.
+O **valor do Registro SYSVOL** é uma maneira de notificar o serviço DFSR (Replicação Sistema de Arquivos Distribuído) de que uma operação de restauração de estado do sistema foi iniciada. Qualquer aplicativo de backup que executa a restauração de estado do sistema do SYSVOL deve usar esse valor para indicar se a operação de restauração é autoritativa ou não autoritativa. Esse valor é lido pelo serviço DFSR. Se esse valor não for definido, a restauração SYSVOL será executada de forma não autorizada por padrão.
 
 Se o **valor do Registro SYSVOL** não existir, o aplicativo de backup deverá criar sob a seguinte chave do Registro:
 
@@ -255,7 +255,7 @@ Se o **valor do Registro SYSVOL** não existir, o aplicativo de backup deverá c
 
 Crie um valor com o nome **SYSVOL e** digite REG \_ SZ. Os dados do valor devem ser definidos como "autoritativos" ou "não autoritativos" com base na solicitação do administrador do sistema.
 
-**Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse valor de registro.
+**Windows Vista, Windows Server 2003 e Windows XP:** Não há suporte para esse valor do Registro.
 
  
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05fa7dfaab07717ebcdb1537b6db94f9871a8894
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 98e5f8c18540b95d85dd99463b7aacfe3718a5e4cbf93f39172f15119f6bcc68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803824"
 ---
 # <a name="ms-ds-phonetic-company-name-attribute"></a>atributo ms-DS-Phonetic-Company-Name
 
@@ -55,9 +55,9 @@ Contém o nome fonético da empresa em que a pessoa trabalha.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C91                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No catálogo global      | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -76,9 +76,9 @@ Contém o nome fonético da empresa em que a pessoa trabalha.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C91                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No catálogo global      | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
@@ -97,9 +97,9 @@ Contém o nome fonético da empresa em que a pessoa trabalha.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x8C91                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
-| É indexado             | True                                                               |
-| No catálogo global      | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
+| É indexado             | Verdadeiro                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |

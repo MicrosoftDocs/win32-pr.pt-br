@@ -1,19 +1,19 @@
 ---
 description: Enviado por um aplicativo para direcionar a janela do IME para executar o comando solicitado.
 ms.assetid: 5d3b7f8a-57c9-41e3-8022-9a3f515fc32e
-title: Mensagem de WM_IME_CONTROL (WinUser. h)
+title: WM_IME_CONTROL mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd0adc534883bc0b31984c8d3e9b57a04b555987
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 104ef8eb2a90c7c55eb0d4bca2fcdb1744dd9433f131b753e962fcfec571f43d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119822466"
 ---
 # <a name="wm_ime_control-message"></a>WM_IME_CONTROL mensagem
 
-Enviado por um aplicativo para direcionar a janela do IME para executar o comando solicitado. O aplicativo usa essa mensagem para controlar a janela do IME que ela criou. Para enviar essa mensagem, o aplicativo chama a função [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) com os parâmetros a seguir.
+Enviado por um aplicativo para direcionar a janela do IME para executar o comando solicitado. O aplicativo usa essa mensagem para controlar a janela do IME que ele criou. Para enviar essa mensagem, o aplicativo chama a [**função SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) com os parâmetros a seguir.
 
 
 ```C++
@@ -31,10 +31,10 @@ SendMessage(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador para a janela.
+Identificador da janela.
 
 </dd> <dt>
 
@@ -62,13 +62,13 @@ O comando. Esse parâmetro pode ter um dos seguintes valores:
 *lParam* 
 </dt> <dd>
 
-Dados específicos do comando, com formato dependente do valor do parâmetro *wParam* . Para obter mais informações, consulte a documentação de cada comando.
+Dados específicos do comando, com o formato dependente do valor do *parâmetro wParam.* Para obter mais informações, consulte a documentação de cada comando.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A mensagem retorna um valor específico de comando.
+A mensagem retorna um valor específico do comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ A mensagem retorna um valor específico de comando.
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                                                                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                                                                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h); </dt> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h);</dt> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ A mensagem retorna um valor específico de comando.
 
 <dl> <dt>
 
-[Gerenciador de métodos de entrada](input-method-manager.md)
+[Gerenciador de Métodos de Entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensagens do Gerenciador de métodos de entrada](input-method-manager-messages.md)
+[Mensagens do Gerenciador de Métodos de Entrada](input-method-manager-messages.md)
 </dt> <dt>
 
 [IMC_CLOSESTATUSWINDOW](imc-closestatuswindow.md)

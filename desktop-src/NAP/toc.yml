@@ -1,28 +1,28 @@
 - name: Proteção de Acesso à Rede
   href: network-access-protection-start-page.md
   items:
-    - name: Sobre a NAP
+    - name: Sobre NAP
       href: about-nap.md
       items:
-        - name: Arquitetura de cliente NAP
+        - name: Arquitetura do cliente NAP
           href: nap-client-architecture.md
         - name: Arquitetura do lado do servidor NAP
           href: nap-server-side-architecture.md
-        - name: Comunicação do cliente NAP e do componente do lado do servidor
+        - name: Comunicação de cliente NAP e componente do lado do servidor
           href: nap-client-and-server-side-component-communication.md
     - name: Usando NAP
       href: using-nap.md
       items:
         - name: Configurando um SHA simples
           href: setting-up-a-simple-sha.md
-        - name: SHV de exemplo
+        - name: Exemplo de SHV
           href: exampleshv.md
         - name: Módulo SHV
           href: shv-module.md
-    - name: Referência de NAP
+    - name: Referência nap
       href: nap-reference.md
       items:
-        - name: Constantes de NAP
+        - name: Constantes NAP
           href: nap-constants.md
           items:
             - name: Constantes de erro NAP
@@ -31,18 +31,18 @@
               href: nap-type-constants.md
             - name: Constantes de fornecedor NAP
               href: nap-vendor-constants.md
-        - name: Tipos de datanap
+        - name: Tipos de dados NAP
           href: nap-datatypes.md
-        - name: Tipos enumerados NAP
+        - name: Tipos enumerados nap
           href: nap-enumerated-types.md
           items:
             - name: FailureCategory
               href: /windows/win32/api/NapTypes/ne-naptypes-failurecategory
-            - name: Ajuste de correção
+            - name: FixupState
               href: /windows/win32/api/NapTypes/ne-naptypes-fixupstate
             - name: HealthClassValue
               href: healthclassvalue-enum.md
-            - name: Isolamentostate
+            - name: IsolationState
               href: /windows/win32/api/NapTypes/ne-naptypes-isolationstate
             - name: ExtendedIsolationState
               href: /windows/win32/api/NapTypes/ne-naptypes-extendedisolationstate
@@ -52,7 +52,7 @@
               href: /windows/win32/api/NapTypes/ne-naptypes-remoteconfigurationtype
             - name: SoHAttributeType
               href: sohattributetype-enum.md
-        - name: Interfaces NAP
+        - name: NAP Interfaces
           href: nap-interfaces.md
           items:
             - name: INapCertRelyingParty
@@ -97,7 +97,7 @@
                   href: inapcomponentconfig-invokeui.md
                 - name: Método GetConfig
                   href: inapcomponentconfig-getconfig.md
-                - name: Método setconfig
+                - name: Método SetConfig
                   href: inapcomponentconfig-setconfig.md
             - name: INapComponentConfig2
               href: inapcomponentconfig2.md
@@ -124,11 +124,11 @@
             - name: INapComponentInfo
               href: inapcomponentinfo.md
               items:
-                - name: Método getfriendlyname
+                - name: Método GetFriendlyName
                   href: inapcomponentinfo-getfriendlyname-method.md
                 - name: Método GetDescription
                   href: inapcomponentinfo-getdescription-method.md
-                - name: Método getvendornamename
+                - name: Método GetVendorName
                   href: inapcomponentinfo-getvendorname-method.md
                 - name: Método GetVersion
                   href: inapcomponentinfo-getversion-method.md
@@ -136,7 +136,7 @@
                   href: inapcomponentinfo-geticon-method.md
                 - name: Método ConvertErrorCodeToMessageId
                   href: inapcomponentinfo-converterrorcodetomessageid-method.md
-                - name: Método gettraduzistring
+                - name: Método GetLocalizedString
                   href: inapcomponentinfo-getlocalizedstring-method.md
             - name: INapEnforcementClientBinding
               href: inapenforcementclientbinding.md
@@ -165,9 +165,9 @@
             - name: INapEnforcementClientConnection
               href: inapenforcementclientconnection.md
               items:
-                - name: Método GetConnectionID
+                - name: Método GetConnectionId
                   href: inapenforcementclientconnection-getconnectionid-method.md
-                - name: Método CorrelationId
+                - name: Método GetCorrelationId
                   href: inapenforcementclientconnection-getcorrelationid-method.md
                 - name: Método GetEnforcerPrivateData
                   href: inapenforcementclientconnection-getenforcerprivatedata-method.md
@@ -175,7 +175,7 @@
                   href: inapenforcementclientconnection-getflags-method.md
                 - name: Método GetIsolationInfo
                   href: inapenforcementclientconnection-getisolationinfo-method.md
-                - name: Método getmaxsize
+                - name: Método GetMaxSize
                   href: inapenforcementclientconnection-getmaxsize-method.md
                 - name: Método GetPrivateData
                   href: inapenforcementclientconnection-getprivatedata-method.md
@@ -187,9 +187,9 @@
                   href: inapenforcementclientconnection-getstringcorrelationid-method.md
                 - name: Método Initialize
                   href: inapenforcementclientconnection-initialize-method.md
-                - name: Método setconnectionid
+                - name: Método SetConnectionId
                   href: inapenforcementclientconnection-setconnectionid-method.md
-                - name: Método CorrelationId
+                - name: Método SetCorrelationId
                   href: inapenforcementclientconnection-setcorrelationid-method.md
                 - name: Método SetEnforcerPrivateData
                   href: inapenforcementclientconnection-setenforcerprivatedata-method.md
@@ -197,7 +197,7 @@
                   href: inapenforcementclientconnection-setflags-method.md
                 - name: Método SetIsolationInfo
                   href: inapenforcementclientconnection-setisolationinfo-method.md
-                - name: Método setmaxsize
+                - name: Método SetMaxSize
                   href: inapenforcementclientconnection-setmaxsize-method.md
                 - name: Método SetPrivateData
                   href: inapenforcementclientconnection-setprivatedata-method.md
@@ -299,7 +299,7 @@
               items:
                 - name: Método GetCacheSoHFlag
                   href: inapsystemhealthagentrequest-getcachesohflag-method.md
-                - name: Método CorrelationId
+                - name: Método GetCorrelationId
                   href: inapsystemhealthagentrequest-getcorrelationid-method.md
                 - name: Método GetSoHRequest
                   href: inapsystemhealthagentrequest-getsohrequest-method.md
@@ -317,7 +317,7 @@
             - name: INapSystemHealthValidationRequest
               href: inapsystemhealthvalidationrequest.md
               items:
-                - name: Método CorrelationId
+                - name: Método GetCorrelationId
                   href: inapsystemhealthvalidationrequest-getcorrelationid-method.md
                 - name: Método GetMachineName
                   href: inapsystemhealthvalidationrequest-getmachinename-method.md
@@ -336,16 +336,16 @@
             - name: INapSystemHealthValidationRequest2
               href: inapsystemhealthvalidationrequest2.md
               items:
-                - name: Método getconfigid
+                - name: Método GetConfigID
                   href: inapsystemhealthvalidationrequest2-getconfigid.md
-        - name: Estruturas de NAP
+        - name: Estruturas NAP
           href: nap-structures.md
           items:
             - name: conexões
               href: connections-struct.md
             - name: CorrelationId
               href: /windows/win32/api/NapTypes/ns-naptypes-correlationid
-            - name: Contado
+            - name: CountedString
               href: /windows/win32/api/NapTypes/ns-naptypes-countedstring
             - name: FailureCategoryMapping
               href: /windows/win32/api/NapTypes/ns-naptypes-failurecategorymapping
@@ -353,7 +353,7 @@
               href: /windows/win32/api/NapTypes/ns-naptypes-fixupinfo
             - name: Ipv4Address
               href: /windows/win32/api/NapTypes/ns-naptypes-ipv4address
-            - name: Ipv6Address
+            - name: Endereço_ipv6
               href: /windows/win32/api/NapTypes/ns-naptypes-ipv6address
             - name: IsolationInfo
               href: /windows/win32/api/NapTypes/ns-naptypes-isolationinfo
@@ -367,7 +367,7 @@
               href: /windows/win32/api/NapTypes/ns-naptypes-privatedata
             - name: ResultCodes
               href: /windows/win32/api/NapTypes/ns-naptypes-resultcodes
-            - name: SoH
+            - name: Soh
               href: /windows/win32/api/NapTypes/ns-naptypes-soh
             - name: SoHAttribute
               href: /windows/win32/api/NapTypes/ns-naptypes-sohattribute

@@ -1,10 +1,10 @@
 ---
-title: atributo nisNetgroupTriple
-description: Representa uma entrada de um mapa do netgroup.
+title: Atributo nisNetgroupTriple
+description: Representa uma entrada de um mapa netgroup.
 ms.assetid: abf908f8-9f83-455a-8add-97a9ebccb5ae
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo nisNetgroupTriple
+- Esquema do AD do atributo nisNetgroupTriple
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e05215a00788927f8c5f87de13b8f49f5e9ff9d0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fe50c77897d8e4a49a604235edc374a2cf48e986d0058abcaa12deb5475368a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703226"
 ---
-# <a name="nisnetgrouptriple-attribute"></a>atributo nisNetgroupTriple
+# <a name="nisnetgrouptriple-attribute"></a>Atributo nisNetgroupTriple
 
-Representa uma entrada de um mapa do netgroup.
+Representa uma entrada de um mapa netgroup.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | nisNetgroupTriple                    |
-| LDAP-Display-Name | nisNetgroupTriple                    |
+| Ldap-Display-Name | nisNetgroupTriple                    |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.14                     |
-| System-ID-GUID    | a8032e74-30ef-4ff5-affc-0fc217783fec |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a8032e74-30ef-4ff5-affc-0fc217783fec |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Representa uma entrada de um mapa do netgroup.
 | ID do link                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| É de valor único       | Falso                                           |
+| Tem valor único       | Falso                                           |
 | É indexado             | Falso                                           |
-| No catálogo global      | Falso                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
+| No Catálogo Global      | Falso                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -76,10 +76,10 @@ Representa uma entrada de um mapa do netgroup.
 | ID do link                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| É de valor único       | Falso                                           |
+| Tem valor único       | Falso                                           |
 | É indexado             | Falso                                           |
-| No catálogo global      | Falso                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
+| No Catálogo Global      | Falso                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -97,10 +97,10 @@ Representa uma entrada de um mapa do netgroup.
 | ID do link                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| É de valor único       | Falso                                           |
+| Tem valor único       | Falso                                           |
 | É indexado             | Falso                                           |
-| No catálogo global      | Falso                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
+| No Catálogo Global      | Falso                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |
@@ -118,10 +118,10 @@ Representa uma entrada de um mapa do netgroup.
 | ID do link                | \-                                              |
 | MAPI-Id                | \-                                              |
 | System-Only            | Falso                                           |
-| É de valor único       | Falso                                           |
+| Tem valor único       | Falso                                           |
 | É indexado             | Falso                                           |
-| No catálogo global      | Falso                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                    |
+| No Catálogo Global      | Falso                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                    |
 | Range-Lower            | \-                                              |
 | Range-Upper            | \-                                              |
 | Search-Flags           | 0x00000000                                      |

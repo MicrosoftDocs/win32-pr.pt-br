@@ -4,8 +4,8 @@ description: O identificador exclusivo de um atributo.
 ms.assetid: 50f0a4b6-dded-42db-9ac5-123f2885c658
 ms.tgt_platform: multiple
 keywords:
-- Schema-ID-GUID atributo AD Schema
-- Esquema de AD do atributo schemaIDGUID
+- Esquema do AD do atributo Schema-ID-GUID
+- Esquema do AD do atributo schemaIDGUID
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72f0b16cc45ecfbcd03e2104cbc6c5b5b41bd813
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: afbf6f45b2c4518c0140eaf3188447740849ad79933d4e4eb71fe57f769f0455
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837039"
 ---
 # <a name="schema-id-guid-attribute"></a>Atributo Schema-ID-GUID
 
@@ -30,13 +30,13 @@ O identificador exclusivo de um atributo.
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------|
 | CN                | Schema-ID-GUID                                                      |
-| LDAP-Display-Name | schemaIDGUID                                                        |
+| Ldap-Display-Name | schemaIDGUID                                                        |
 | Tamanho              | 16 bytes                                                            |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                                    |
 | Frequência de atualização  | Esse valor é definido quando o objeto é criado e não pode ser alterado. |
 | Attribute-Id      | 1.2.840.113556.1.4.148                                              |
-| System-ID-GUID    | bf967923-0de6-11d0-a285-00aa003049e2                                |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md)               |
+| System-Id-Guid    | bf967923-0de6-11d0-a285-00aa003049e2                                |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)               |
 
 
 
@@ -44,7 +44,7 @@ O identificador exclusivo de um atributo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,16 +58,16 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
@@ -79,20 +79,20 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
@@ -121,8 +121,8 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -142,8 +142,8 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -163,8 +163,8 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -184,16 +184,16 @@ O identificador exclusivo de um atributo.
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | True                                                                                                      |
-| É de valor único       | True                                                                                                      |
+| System-Only            | Verdadeiro                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | 16                                                                                                        |
 | Range-Upper            | 16                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**Atributo-esquema**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
+| Classes usadas em        | [**Esquema de atributo**](c-attributeschema.md)<br/> [**Esquema de classe**](c-classschema.md)<br/> |
 
 
 

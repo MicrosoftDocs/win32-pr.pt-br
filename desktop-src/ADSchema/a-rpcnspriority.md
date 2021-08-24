@@ -1,11 +1,11 @@
 ---
-title: atributo de prioridade RPC-NS
+title: Atributo rpc-Ns-Priority
 description: A prioridade de uma determinada entrada de perfil RPC.
 ms.assetid: a4904b21-53b7-48e3-814a-948427984fcd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo de prioridade RPC-NS
-- Esquema de AD do atributo rpcNsPriority
+- Esquema do AD do atributo rpc-Ns-Priority
+- Esquema do AD do atributo rpcNsPriority
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10cc2b472262d118ee4896935157d45952846db0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1ea86dc78933e7647d1210397d5fd66c287c0ca4ad638959e6cfa1dc59993db7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119837054"
 ---
-# <a name="rpc-ns-priority-attribute"></a>atributo de prioridade RPC-NS
+# <a name="rpc-ns-priority-attribute"></a>Atributo rpc-Ns-Priority
 
 A prioridade de uma determinada entrada de perfil RPC.
 
@@ -29,13 +29,13 @@ A prioridade de uma determinada entrada de perfil RPC.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | RPC-NS-Priority                      |
-| LDAP-Display-Name | rpcNsPriority                        |
+| CN                | rpc-Ns-Priority                      |
+| Ldap-Display-Name | rpcNsPriority                        |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.117               |
-| System-ID-GUID    | bf967a27-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a27-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ A prioridade de uma determinada entrada de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A prioridade de uma determinada entrada de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A prioridade de uma determinada entrada de perfil RPC.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**Elemento de perfil RPC**](c-rpcprofileelement.md)<br/> |
+| Classes usadas em        | [**rpc-Profile-Element**](c-rpcprofileelement.md)<br/> |
 
 
 

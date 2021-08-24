@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7fd0c0d6f2c7b2a02b7dcc7da30ccd6c7da8494a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a0a9286abce8f5ec68e60863baf69b90f771def25f203fc674b38b9ed5a19d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119724766"
 ---
 # <a name="esentendingrestorelogtoolowexception-constructor"></a>Construtor EsentEndingRestoreLogTooLowException
 
 Inicializa uma nova instância da classe EsentEndingRestoreLogTooLowException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentEndingRestoreLogTooLowException()
 
 [Classe EsentEndingRestoreLogTooLowException](./esentendingrestorelogtoolowexception-class.md)
 
-[Membros do EsentEndingRestoreLogTooLowException](./esentendingrestorelogtoolowexception-members.md)
+[Membros EsentEndingRestoreLogTooLowException](./esentendingrestorelogtoolowexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

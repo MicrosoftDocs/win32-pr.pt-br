@@ -1,11 +1,11 @@
 ---
-title: ms-DS-quota-atributo usado
+title: Atributo ms-DS-Quota-Used
 description: A cota atual consumida por uma entidade de segurança no banco de dados de diretório.
 ms.assetid: 3a31c0c7-9791-4e00-81e5-ee596f94e3c9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-quota-used
-- atributo msDS-QuotaUsed do AD Schema
+- Esquema do AD do atributo ms-DS-Quota-Used
+- Atributo msDS-QuotaUsed Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c59cc425c83fd7f1a85f41cd9d23e234115e0b55
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9a1194415d07fec5b5d6655c9721f843ebbb409441bae82fa845962e6b500489
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105762834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803586"
 ---
-# <a name="ms-ds-quota-used-attribute"></a>ms-DS-quota-atributo usado
+# <a name="ms-ds-quota-used-attribute"></a>Atributo ms-DS-Quota-Used
 
 A cota atual consumida por uma entidade de segurança no banco de dados de diretório.
 
@@ -29,13 +29,13 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-quota-usado                     |
-| LDAP-Display-Name | msDS-QuotaUsed                       |
+| CN                | ms-DS-Quota-Used                     |
+| Ldap-Display-Name | msDS-QuotaUsed                       |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1849              |
-| System-ID-GUID    | b5a84308-615d-4bb7-b05f-2f1746aa439f |
+| System-Id-Guid    | b5a84308-615d-4bb7-b05f-2f1746aa439f |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classes usadas em        | [**ms-DS-quota-container**](c-msds-quotacontainer.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -79,15 +79,15 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classes usadas em        | [**ms-DS-quota-container**](c-msds-quotacontainer.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | \-                                                                |
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000014                                                        |
-| Classes usadas em        | [**ms-DS-quota-container**](c-msds-quotacontainer.md)<br/> |
+| Classes usadas em        | [**ms-DS-Quota-Container**](c-msds-quotacontainer.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -142,7 +142,7 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -163,7 +163,7 @@ A cota atual consumida por uma entidade de segurança no banco de dados de diret
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | True                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |

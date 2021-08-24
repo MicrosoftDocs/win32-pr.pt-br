@@ -1,67 +1,67 @@
 ---
-title: Referência do mixer de áudio
-description: Referência do mixer de áudio
+title: Referência de Mixer áudio
+description: Referência de Mixer áudio
 ms.assetid: 9d8751b1-9c0b-4238-a961-27c09a869bb3
 keywords:
-- áudio de multimídia, mixers de áudio
+- áudio multimídia, mixers de áudio
 - áudio, mixers de áudio
-- áudio de multimídia, referência de mixer
-- áudio, referência de mixer
+- áudio multimídia, referência de mixer
+- audio, referência de mixer
 - mixers de áudio, referência
 - mixers, referência
 - referência para mixers de áudio, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be1d86f305714d72631b56495753417699b1a146
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1602a9ac0631a3e81430285c8cd862215a437c72b03b41d87fad6cefa7e41827
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104162240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786216"
 ---
-# <a name="audio-mixer-reference"></a>Referência do mixer de áudio
+# <a name="audio-mixer-reference"></a>Referência de Mixer áudio
 
-Esta seção descreve as funções, as estruturas e as mensagens associadas aos mixers de áudio. Esses elementos são agrupados da seguinte maneira.
+Esta seção descreve as funções, estruturas e mensagens associadas a mixers de áudio. Esses elementos são agrupados da seguinte forma.
 
 ## <a name="querying-devices"></a>Consultando dispositivos
 
 -   [**MIXERCAPS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercaps)
 -   [**mixerGetDevCaps**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetdevcaps)
--   [**mixerGetNumDevs**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
+-   [**Mixergetnumdevs**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetnumdevs)
 
-## <a name="opening-and-closing"></a>Abrindo e fechando
+## <a name="opening-and-closing"></a>Abertura e fechamento
 
 -   [**mixerClose**](/windows/win32/api/mmeapi/nf-mmeapi-mixerclose)
--   [**mixerOpen**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
+-   [**Mixeropen**](/windows/win32/api/mmeapi/nf-mmeapi-mixeropen)
 
-## <a name="retrieving-mixer-identifiers"></a>Recuperando identificadores do mixer
+## <a name="retrieving-mixer-identifiers"></a>Recuperando identificadores Mixer dados
 
 -   [**mixerGetID**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetid)
 
 ## <a name="retrieving-line-controls"></a>Recuperando controles de linha
 
--   [**MIXERCONTROL**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontrol)
--   [**mixerGetLineControls**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlinecontrols)
--   [**MIXERLINECONTROLS**](/windows/win32/api/mmeapi/ns-mmeapi-mixerlinecontrols)
+-   [**Mixercontrol**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontrol)
+-   [**Mixergetlinecontrols**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlinecontrols)
+-   [**Mixerlinecontrols**](/windows/win32/api/mmeapi/ns-mmeapi-mixerlinecontrols)
 
 ## <a name="changing-control-attributes"></a>Alterando atributos de controle
 
--   [**MIXERCONTROLDETAILS**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
--   [**MIXERCONTROLDETAILS \_ booliano**](/previous-versions//dd757295(v=vs.85))
+-   [**Mixercontroldetails**](/windows/win32/api/mmeapi/ns-mmeapi-mixercontroldetails_listtexta)
+-   [**MIXERCONTROLDETAILS \_ BOOLEAN**](/previous-versions//dd757295(v=vs.85))
 -   [**MIXERCONTROLDETAILS \_ LISTTEXT**](/previous-versions//dd757296(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ assinado**](/previous-versions//dd757297(v=vs.85))
--   [**MIXERCONTROLDETAILS \_ não assinado**](/previous-versions//dd757298(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ ASSINADO**](/previous-versions//dd757297(v=vs.85))
+-   [**MIXERCONTROLDETAILS \_ UNSIGNED**](/previous-versions//dd757298(v=vs.85))
 -   [**mixerGetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetcontroldetails)
--   [**mixerSetControlDetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
+-   [**Mixersetcontroldetails**](/windows/win32/api/mmeapi/nf-mmeapi-mixersetcontroldetails)
 
 ## <a name="retrieving-line-information"></a>Recuperando informações de linha
 
--   [**mixerGetLineInfo**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
--   [**MIXER**](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
--   [**\_alteração de \_ controle de MIXM mm \_**](mm-mixm-control-change.md)
--   [**\_alteração de \_ linha \_ MIXM mm**](mm-mixm-line-change.md)
+-   [**Mixergetlineinfo**](/windows/win32/api/mmeapi/nf-mmeapi-mixergetlineinfo)
+-   [**Mixerline**](/windows/win32/api/mmeapi/ns-mmeapi-mixerline)
+-   [**ALTERAÇÃO \_ DE CONTROLE DO MM \_ \_ MIXM**](mm-mixm-control-change.md)
+-   [**ALTERAÇÃO DE LINHA DO MM \_ \_ \_ MIXM**](mm-mixm-line-change.md)
 
-## <a name="sending-user-defined-messages"></a>Enviando mensagens de User-Defined
+## <a name="sending-user-defined-messages"></a>Enviando User-Defined mensagens
 
 -   [**mixerMessage**](/windows/win32/api/mmeapi/nf-mmeapi-mixermessage)
 
@@ -69,9 +69,9 @@ Esta seção descreve as funções, as estruturas e as mensagens associadas aos 
 
 <dl> <dt>
 
-[Referência do mixer de áudio](audio-mixer-reference.md)
+[Referência de Mixer áudio](audio-mixer-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

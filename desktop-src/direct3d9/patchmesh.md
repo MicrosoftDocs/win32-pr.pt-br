@@ -1,15 +1,15 @@
 ---
-description: PatchMesh define uma malha definida por patches bézier, incluindo uma lista de vértices e os patches para a malha indexando na matriz de vértices.
+description: PatchMesh define uma malha definida por patches Bézier, incluindo uma lista de vértices e os patches para a malha indexando na matriz de vértices.
 ms.assetid: vs|directx_sdk|~\patchmesh.htm
 title: PatchMesh
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fabb3846246c7fb76a7146baf0b30bd9730fe24b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 7b3bc3c243fb42014ba18aac134ea008d5818e249a601858be6724d5a0fd7310
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746916"
 ---
 # <a name="patchmesh"></a>PatchMesh
 
