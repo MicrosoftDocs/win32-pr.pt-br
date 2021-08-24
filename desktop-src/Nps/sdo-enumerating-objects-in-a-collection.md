@@ -5,19 +5,19 @@ ms.assetid: 664e4d99-48ed-4948-b816-e92ad1ca3ece
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f3c543e01f3c8f154628c6e204aff53c6ad210
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 77b0399a75e9301fcdb5e88e6f30b7e0b2ef66160fa05136ed43b51fa8e80eca
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105810292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119742106"
 ---
 # <a name="enumerating-objects-in-a-collection"></a>Enumerando objetos em uma coleção
 
 > [!Note]  
-> O IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
+> o IAS (serviço de autenticação da Internet) foi renomeado como NPS (servidor de políticas de rede) a partir do Windows Server 2008. O conteúdo deste tópico aplica-se ao IAS e ao NPS. Em todo o texto, o NPS é usado para fazer referência a todas as versões do serviço, incluindo as versões originalmente chamadas de IAS.
 
- 
+ 
 
 O código a seguir enumera os protocolos na coleção de protocolos do NPS.
 
@@ -157,6 +157,6 @@ As variáveis vtName e vtProtocol são do tipo [ \_ Variant \_ t](/previous-vers
 [**VARIANTE**](/windows/win32/api/oaidl/ns-oaidl-variant)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

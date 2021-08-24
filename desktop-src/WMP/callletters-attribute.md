@@ -1,6 +1,6 @@
 ---
 title: Atributo CallLetters
-description: O atributo CallLetters é as letras de chamada da estação de rádio.
+description: O atributo CallLetters são as letras de chamada da estação de rádio.
 ms.assetid: 2808b4c2-cb3b-4045-aa24-629205f48f6d
 keywords:
 - Atributo CallLetters Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec756ce34bd3fff7e1077c8d0e8be45955515bec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 47d05a477a446a64c0d3f29891512a415a6f0090768355b316109b9ecc49cfe7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764276"
 ---
 # <a name="callletters-attribute"></a>Atributo CallLetters
 
-O atributo **CallLetters** é as letras de chamada da estação de rádio.
+O **atributo CallLetters** são as letras de chamada da estação de rádio.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,9 +29,9 @@ O atributo **CallLetters** é as letras de chamada da estação de rádio.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versão<br/> | Somente Windows Media Player 9 Series<br/> |
+| Versão<br/> | Windows Media Player série 9<br/> |
 
 
 

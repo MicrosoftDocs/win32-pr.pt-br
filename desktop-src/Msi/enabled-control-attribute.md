@@ -4,12 +4,12 @@ ms.assetid: d84b1b55-34e1-4173-b945-39a809014d55
 title: Atributo de controle habilitado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb7c5cbbbc12353fc07cf50404a1feae1d98f1b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a40de14ac0205c52cce46c6050de0282e62df90d50f3bcdeb576771c9107ffc5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763916"
 ---
 # <a name="enabled-control-attribute"></a>Atributo de controle habilitado
 

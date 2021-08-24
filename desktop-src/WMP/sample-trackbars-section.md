@@ -1,23 +1,23 @@
 ---
-title: Exemplo de seção trackbars
-description: Exemplo de seção trackbars
+title: Seção Trackbars de exemplo
+description: Seção Trackbars de exemplo
 ms.assetid: b336a034-12ad-480e-8ec8-9c6d2bd9196f
 keywords:
-- Capas móveis do Windows Media Player, trackbars
-- capas, trackbars
-- referência para capas, trackbars
-- trackbars em capas, seção trackbars
-- arquivos de definição de capa, seção trackbars
+- Windows Media Player Capas móveis, barras de faixa
+- skins,trackbars
+- referência para capas, barras de faixa
+- trackbars em capas, seção Trackbars
+- arquivos de definição de capa, seção Trackbars
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 042f99c6696b756b6c2c86a5694f8469ea90cb9c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 74bcdaf1049c7a022a0231c80e0f91df9f42e7bc55e64f1222ad2f3614940ea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763846"
 ---
-# <a name="sample-trackbars-section"></a>Exemplo de seção trackbars
+# <a name="sample-trackbars-section"></a>Seção Trackbars de exemplo
 
 As linhas a seguir mostram uma seção trackbars típica de um arquivo de definição de capa:
 
@@ -33,7 +33,7 @@ As linhas a seguir mostram uma seção trackbars típica de um arquivo de defini
 
 
 
-O exemplo anterior define um TrackBar que permite ao usuário buscar por meio de um item de mídia tocando e arrastando a imagem SeekThumb.
+O exemplo anterior define uma barra de faixa que permite que o usuário procure por um item de mídia tocando e arrastando a imagem SeekThumb.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -42,9 +42,9 @@ O exemplo anterior define um TrackBar que permite ao usuário buscar por meio de
 [**Trackbars**](trackbars.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

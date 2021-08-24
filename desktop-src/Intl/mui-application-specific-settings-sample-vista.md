@@ -1,19 +1,19 @@
 ---
-description: 'MUI: exemplo de configurações de Application-Specific (Windows Vista)'
+description: 'MUI: exemplo de Configurações de Application-Specific (Windows Vista)'
 ms.assetid: 348a51fb-aad1-4255-a5a2-224d5c94d762
-title: 'MUI: exemplo de configurações de Application-Specific (Windows Vista)'
+title: 'MUI: exemplo de Configurações de Application-Specific (Windows Vista)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9583e606a0f9023d02a4ef804fee22c56818a75f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 664b87af02e9c24a0eacd9191f9e007804672429d433c5d832dc0fbdd98e359b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765016"
 ---
-# <a name="mui-application-specific-settings-sample-windows-vista"></a>MUI: exemplo de configurações de Application-Specific (Windows Vista)
+# <a name="mui-application-specific-settings-sample-windows-vista"></a>MUI: exemplo de Configurações de Application-Specific (Windows Vista)
 
-O aplicativo de exemplo descrito neste tópico é outro aplicativo de Hello MUI que dá suporte a configurações específicas do aplicativo para seus idiomas de interface do usuário e é executado no Windows Vista e versões posteriores.
+o aplicativo de exemplo descrito neste tópico é outro aplicativo de Hello MUI que dá suporte a configurações específicas do aplicativo para seus idiomas de interface do usuário e é executado no Windows Vista e posterior.
 
 Esse aplicativo primeiro analisa uma lista de idiomas delimitados em um arquivo de texto e converte-o em uma lista de idiomas com várias cadeias de caracteres para definir as preferências de idioma específicas do aplicativo. Os delimitadores com suporte no exemplo são ",", ";", ":" e "". Depois de analisar a lista, o código localiza e carrega os recursos no idioma identificado, assim como faz o exemplo de configurações do sistema. Esse código carrega e libera arquivos de recursos usando chamadas para as funções do carregador de recursos [**LoadLibraryEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryexa) e [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary).
 

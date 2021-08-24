@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dae121b1d5f2d968f696190c64828be91adc71da
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 38473f45e2bd4c53b964bb38ec285cdf3eea091a96d72684c1d801b949f4d0a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801726"
 ---
 # <a name="utilassemblestringswithalloc-function"></a>Função UtilAssembleStringsWithAlloc
 
@@ -48,9 +48,9 @@ HRESULT UtilAssembleStringsWithAlloc(
 *Buffer* \[ fora\]
 </dt> <dd>
 
-Tipo: **LPWSTR \** _
+Tipo: **LPWSTR \***
 
-O local onde a cadeia de caracteres alocada recentemente será colocada. Quando a cadeia de caracteres não for mais necessária, ela deverá ser liberada com [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+O local onde a cadeia de caracteres alocada recentemente será colocada. Quando a cadeia de caracteres não for mais necessária, ela deverá ser liberada com [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ O valor a ser passado como o primeiro argumento de formatação para [**StringCc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -129,9 +129,9 @@ Os valores de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 369bf644cac226788332cb4a2935973a5d5ffeae
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: df79e8b7a0f6034e52c56c420777602994ba0adbcc7c535340d36f3e975027ab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836626"
 ---
 # <a name="service-dns-name-type-attribute"></a>Atributo Service-DNS-Name-Type
 
@@ -58,7 +58,7 @@ Tipo de registro DNS a ser pesquisado para este serviço. Por exemplo, A ou SRV.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -79,7 +79,7 @@ Tipo de registro DNS a ser pesquisado para este serviço. Por exemplo, A ou SRV.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -100,7 +100,7 @@ Tipo de registro DNS a ser pesquisado para este serviço. Por exemplo, A ou SRV.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -121,10 +121,10 @@ Tipo de registro DNS a ser pesquisado para este serviço. Por exemplo, A ou SRV.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 1                                                                       |
 | Range-Upper            | 256                                                                     |
 | Search-Flags           | 0x00000000                                                              |
@@ -142,10 +142,10 @@ Tipo de registro DNS a ser pesquisado para este serviço. Por exemplo, A ou SRV.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 1                                                                       |
 | Range-Upper            | 256                                                                     |
 | Search-Flags           | 0x00000000                                                              |
@@ -163,10 +163,10 @@ Tipo de registro DNS a ser pesquisado para este serviço. Por exemplo, A ou SRV.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 1                                                                       |
 | Range-Upper            | 256                                                                     |
 | Search-Flags           | 0x00000000                                                              |

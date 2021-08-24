@@ -47,12 +47,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f0dcfb44fdcd035ca47cbe3056da2a081ef2ae07
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cfdf044adf5623a7fafd424f6051105bf83d3d0f5f4338b16b7bf3a7fe07126c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820966"
 ---
 # <a name="cim_nfs-class"></a>\_Classe NFS CIM
 
@@ -343,7 +343,7 @@ Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.m
 
 <span id="Extended_UNIX_Code"></span><span id="extended_unix_code"></span><span id="EXTENDED_UNIX_CODE"></span>
 
-**Código UNIX estendido** (6)
+**código de UNIX estendido** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -394,9 +394,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -409,12 +409,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema CIM**](cim-computersystem.md).**CreationClassName**")
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**CreationClassName**")
 </dt> </dl>
 
-Nome da classe de criação do sistema do computador de escopo.
+Definindo o scoping do nome da classe de criação do sistema de computadores.
 
-Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -427,12 +427,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema CIM**](cim-computersystem.md).**Nome**")
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ComputerSystem**](cim-computersystem.md).**Nome**")
 </dt> </dl>
 
-Nome do sistema do computador de escopo.
+Definindo o scoping do nome do sistema de computador.
 
-Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
 </dd> <dt>
 
@@ -450,7 +450,7 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição textual do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -463,17 +463,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Partição DMTF \| 2,8 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Partição DMTF \| \| 002.8")
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que identifica o algoritmo ou a ferramenta usada para criptografar um arquivo lógico. Se o esquema de criptografia não for indulged (por motivos de segurança, por exemplo), use "desconhecido". Se o arquivo estiver criptografado, mas seu esquema de criptografia for desconhecido ou não for divulgado, use "Encrypted". Se o arquivo lógico não estiver criptografado, use "não criptografado". Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Cadeia de caracteres de forma livre que identifica o algoritmo ou a ferramenta usada para criptografar um arquivo lógico. Se o esquema de criptografia não for substituído (por motivos de segurança, por exemplo), use "Desconhecido". Se o arquivo for criptografado, mas seu esquema de criptografia for desconhecido ou não for divulgado, use "Criptografado". Se o arquivo lógico não estiver criptografado, use "Não Criptografado". Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
 </dd> <dt>
 
-**Filesystemize**
+**FileSystemSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -484,94 +484,94 @@ Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("by
 
 Tamanho total do sistema de arquivos, em bytes. Se for desconhecido, insira 0 (zero).
 
-Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **ForegroundMount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, as repetições serão executadas em primeiro plano. Se **for false**, e a primeira tentativa de montagem falhar, as novas tentativas serão executadas em segundo plano.
+Se **TRUE**, as recuperações serão executadas em primeiro plano. Se **FALSE** e a primeira tentativa de montagem falhar, as tentativas serão executadas em segundo plano.
 
 </dd> <dt>
 
 **HardMount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, depois que o sistema de arquivos for montado, as solicitações de NFS serão repetidas até que o sistema de hospedagem responda. Se for **false**, depois que o sistema de arquivos for montado, um erro será retornado se o sistema de hospedagem não responder.
+Se **TRUE**, depois que o sistema de arquivos for montado, as solicitações NFS serão recuperadas até que o sistema de hospedagem responda. Se **FALSE**, depois que o sistema de arquivos for montado, um erro será retornado se o sistema de hospedagem não responder.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**Atividades**
+**Interromper**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **verdadeiro**, as interrupções são permitidas para montagens rígidas. Se **for false**, as interrupções serão ignoradas para montagens físicas.
+Se **TRUE**, as interrupções serão permitidas para montagens em disco. Se **FALSE**, as interrupções serão ignoradas para montagens em disco.
 
 </dd> <dt>
 
 **MaxFileNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Comprimento máximo de um nome de arquivo dentro do sistema de arquivos. Um valor de 0 (zero) indica que não há limite para o comprimento do nome do arquivo.
+Comprimento máximo de um nome de arquivo dentro do sistema de arquivos. Um valor de 0 (zero)indica que não há nenhum limite para o comprimento do nome do arquivo.
 
-Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
 </dd> <dt>
 
 **MountFailureRetries**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número máximo de tentativas de falha de montagem permitidas.
+Número máximo de recuperações de falha de montagem permitidas.
 
 </dd> <dt>
 
@@ -584,19 +584,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-Rótulo pelo qual o objeto é conhecido. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave.
+Rótulo pelo qual o objeto é conhecido. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
-**ReadBufferSize**
+**Readbuffersize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -607,45 +607,45 @@ Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("by
 
 Tamanho do buffer de leitura, em bytes.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> <dt>
 
 **ReadOnly (somente-leitura)**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| host-REsources-MIB. hrFSAccess ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIB. IETF \| HOST-RESOURCES-MIB.hrFSAccess")
 </dt> </dl>
 
-Se **for true**, o sistema de arquivos será designado como somente leitura.
+Se **TRUE**, o sistema de arquivos será designado como somente leitura.
 
-Essa propriedade é herdada [**do \_ sistema de arquivos CIM**](cim-filesystem.md).
+Essa propriedade é herdada de [**Cim \_ FileSystem.**](cim-filesystem.md)
 
 </dd> <dt>
 
 **RetransmissionAttempts**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número máximo de retransmissões de NFS permitidas.
+Número máximo de retransmissões NFS permitidas.
 
 </dd> <dt>
 
 **RetransmissionTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -654,11 +654,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("décimos de segundos")
 </dt> </dl>
 
-Tempo limite do NFS, em décimos de segundo.
+Tempo de tempo de NFS, em décimos de segundo.
 
 </dd> <dt>
 
-**Básica**
+**Raiz**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**

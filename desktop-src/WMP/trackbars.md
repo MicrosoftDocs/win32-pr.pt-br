@@ -3,18 +3,18 @@ title: Trackbars
 description: Trackbars
 ms.assetid: b9676697-c3ab-465c-8b50-eb784f53bb11
 keywords:
-- Capas móveis do Windows Media Player, trackbars
+- Windows Media Player Capas móveis, trackbars
 - capas, trackbars
 - referência para capas, trackbars
 - trackbars em capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb7b64f7bada6f927b25aeecb71d584aa1ec2a68
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1eb311994ccdfb48eb1ea9e010b268cdef13fd1fc8a2154d491f6e4103a91ec3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105807872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762666"
 ---
 # <a name="trackbars"></a>Trackbars
 
@@ -69,9 +69,9 @@ Para obter um exemplo de código trackbars, consulte a [seção trackbars de exe
 [**Referência de capa**](skin-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

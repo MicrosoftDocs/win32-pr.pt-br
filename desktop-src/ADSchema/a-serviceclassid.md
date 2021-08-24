@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e789a0e25d18ff63f1671e62772981a857335037
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b7ac3479121449ff6fc0b1bdbbb72a554d5f82a823186faa980d5c13b23253c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836646"
 ---
 # <a name="service-class-id-attribute"></a>Atributo de ID de classe de serviço
 
@@ -58,9 +58,9 @@ O GUID da classe de serviço.
 | ID do link                | \-                                                                                                          |
 | MAPI-Id                | \-                                                                                                          |
 | System-Only            | Falso                                                                                                       |
-| É de valor único       | True                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                        |
 | É indexado             | Falso                                                                                                       |
-| No catálogo global      | True                                                                                                        |
+| No catálogo global      | Verdadeiro                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                |
 | Range-Lower            | \-                                                                                                          |
 | Range-Upper            | \-                                                                                                          |
@@ -79,9 +79,9 @@ O GUID da classe de serviço.
 | ID do link                | \-                                                                                                          |
 | MAPI-Id                | \-                                                                                                          |
 | System-Only            | Falso                                                                                                       |
-| É de valor único       | True                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                        |
 | É indexado             | Falso                                                                                                       |
-| No catálogo global      | True                                                                                                        |
+| No catálogo global      | Verdadeiro                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                |
 | Range-Lower            | \-                                                                                                          |
 | Range-Upper            | \-                                                                                                          |
@@ -100,9 +100,9 @@ O GUID da classe de serviço.
 | ID do link                | \-                                                                                                          |
 | MAPI-Id                | \-                                                                                                          |
 | System-Only            | Falso                                                                                                       |
-| É de valor único       | True                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                        |
 | É indexado             | Falso                                                                                                       |
-| No catálogo global      | True                                                                                                        |
+| No catálogo global      | Verdadeiro                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                |
 | Range-Lower            | \-                                                                                                          |
 | Range-Upper            | \-                                                                                                          |
@@ -121,9 +121,9 @@ O GUID da classe de serviço.
 | ID do link                | \-                                                                                                          |
 | MAPI-Id                | \-                                                                                                          |
 | System-Only            | Falso                                                                                                       |
-| É de valor único       | True                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                        |
 | É indexado             | Falso                                                                                                       |
-| No catálogo global      | True                                                                                                        |
+| No catálogo global      | Verdadeiro                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                |
 | Range-Lower            | \-                                                                                                          |
 | Range-Upper            | \-                                                                                                          |
@@ -142,9 +142,9 @@ O GUID da classe de serviço.
 | ID do link                | \-                                                                                                          |
 | MAPI-Id                | \-                                                                                                          |
 | System-Only            | Falso                                                                                                       |
-| É de valor único       | True                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                        |
 | É indexado             | Falso                                                                                                       |
-| No catálogo global      | True                                                                                                        |
+| No catálogo global      | Verdadeiro                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                |
 | Range-Lower            | \-                                                                                                          |
 | Range-Upper            | \-                                                                                                          |
@@ -163,9 +163,9 @@ O GUID da classe de serviço.
 | ID do link                | \-                                                                                                          |
 | MAPI-Id                | \-                                                                                                          |
 | System-Only            | Falso                                                                                                       |
-| É de valor único       | True                                                                                                        |
+| É de valor único       | Verdadeiro                                                                                                        |
 | É indexado             | Falso                                                                                                       |
-| No catálogo global      | True                                                                                                        |
+| No catálogo global      | Verdadeiro                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                |
 | Range-Lower            | \-                                                                                                          |
 | Range-Upper            | \-                                                                                                          |

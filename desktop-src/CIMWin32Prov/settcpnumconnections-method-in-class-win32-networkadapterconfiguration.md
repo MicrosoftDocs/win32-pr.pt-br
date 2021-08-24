@@ -2,7 +2,7 @@
 description: O método estático da classe WMI SetTcpNumConnections é usado para definir o número máximo de conexões que o TCP pode ter aberto simultaneamente.
 ms.assetid: 50458161-1f28-47f9-b395-09586e859d5d
 ms.tgt_platform: multiple
-title: Método SetTcpNumConnections da classe Win32_NetworkAdapterConfiguration
+title: Método SetTcpNumConnections da classe Win32_NetworkAdapterConfiguration dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 5708c7ce80930c0924b560cc7b84e5af45ad7962
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d28fcbe9c437d686b4f19383635fcbd9d2e0b954359cdb4e0af1b66a11c16764
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700046"
 ---
-# <a name="settcpnumconnections-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpNumConnections da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="settcpnumconnections-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpNumConnections da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpNumConnections** é usado para definir o número máximo de conexões que o TCP pode ter aberto simultaneamente.
+O método estático da classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpNumConnections** é usado para definir o número máximo de conexões que o TCP pode ter aberto simultaneamente.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 SetTcpNumConnections(
 
 <dl> <dt>
 
-*TcpNumConnections* \[ no\]
+*TcpNumConnections* \[ Em\]
 </dt> <dd>
 
-Número máximo de conexões que o TCP pode ter aberto simultaneamente. O intervalo válido de valores é 0-0xFFFFFE.
+Número máximo de conexões que o TCP pode ter aberto simultaneamente. O intervalo válido de valores é 0 - 0xFFFFFE.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -136,7 +136,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -235,21 +235,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 

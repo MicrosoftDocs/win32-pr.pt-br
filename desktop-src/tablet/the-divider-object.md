@@ -1,23 +1,23 @@
 ---
-description: A tecnologia do Tablet PC inclui a análise de layout de entrada de tinta que combina manuscrito e desenho.
+description: A Tecnologia de TABLET PC inclui a análise de layout da entrada de tinta que combina manuscrito e desenho.
 ms.assetid: 979b5a8d-9311-478e-976b-9b3c27a199bc
-title: O objeto divisória
+title: O objeto divisor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11bc1961100544de6bae9de7fabe547344690d74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8e65757021b6374f823f88d02c441bdceb8536cb2f68fdd37eaa7cde099895f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119819776"
 ---
-# <a name="the-divider-object"></a>O objeto divisória
+# <a name="the-divider-object"></a>O objeto divisor
 
-A tecnologia do Tablet PC inclui a análise de layout de entrada de tinta que combina manuscrito e desenho. O objeto [**divisória**](inkdivider-class.md) fornece recursos de análise de layout que classificam e agrupam traços em diferentes elementos estruturais.
+A Tecnologia de TABLET PC inclui a análise de layout da entrada de tinta que combina manuscrito e desenho. O [**objeto Divisor**](inkdivider-class.md) fornece recursos de análise de layout que classificam e agrupam traços em diferentes elementos estruturais.
 
-O tópico de [exemplo divisor de tinta](ink-divider-sample.md) demonstra como usar um objeto [**divisor**](inkdivider-class.md) com objetos de [**tinta**](inkdisp-class.md) para executar a análise de layout de tinta.
+O [tópico Exemplo de Divisor](ink-divider-sample.md) de Tinta Digital demonstra como usar um objeto [**Divisor**](inkdivider-class.md) com objetos [**ink**](inkdisp-class.md) para executar a análise de layout de tinta.
 
-As seções a seguir descrevem os conceitos básicos por trás da tecnologia de análise de layout do Tablet PC:
+As seções a seguir descrevem os conceitos básicos por trás da tecnologia de análise de layout do tablet pc:
 
 -   [Análise de layout](layout-analysis.md)
 -   [Trabalhando com o objeto divisor](working-with-the-divider-object.md)

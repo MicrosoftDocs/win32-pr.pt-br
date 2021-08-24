@@ -4,12 +4,12 @@ ms.assetid: 144677e0-b6dc-405c-95a7-b5403a548477
 title: System. Photo. ExposureTimeDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ec5d4ec796a26c9f663dbe53190efed2080094e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 500cb02d27e1db329757d0b4f151977bb09785510ea2c880291538aa97b53e9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105794564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716446"
 ---
 # <a name="systemphotoexposuretimedenominator"></a>System. Photo. ExposureTimeDenominator
 

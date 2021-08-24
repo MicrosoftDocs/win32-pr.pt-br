@@ -4,21 +4,21 @@ description: Atributo FillType da VML
 ms.assetid: c6870100-8fb9-4589-9b83-cd46cc17eeb3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e880f7d13c7db647c586431f492a301ccf1aba0b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0264fe6cd8cd3dfb7592aea25ef855fda01632647b23f0ab2cffe84c4c504918
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680796"
 ---
 # <a name="vml-filltype-attribute"></a>Atributo FillType da VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define o tipo de preenchimento usado para o plano de fundo de um traço. Leitura/gravação. **VgFillType**.
 
@@ -51,7 +51,7 @@ Os valores são:
 
 
 
- 
+ 
 
 *Atributo padrão da VML*
 
@@ -71,6 +71,6 @@ O traço da forma tem uma textura do lado do ladrilho criado a partir da imagem 
 
 
 
- 
+ 
 
- 
+ 

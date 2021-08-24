@@ -1,9 +1,9 @@
 ---
-title: COLUNA. columnResizeMode
-description: O atributo columnResizeMode especifica ou recupera o modo de redimensionamento para esta coluna.
+title: COLUMN.columnResizeMode
+description: O atributo columnResizeMode especifica ou recupera o modo de resize para essa coluna.
 ms.assetid: 95ece2a3-20a6-4b9d-a2eb-fc69fc612f29
 keywords:
-- COLUNA. columnResizeMode Windows Media Player
+- COLUMN.columnResizeMode Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d17b1a2edd878fb15e69c595e3c061c1963a5b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c59046aa76c01a1439e5db8f0fb6850e7df74d874cba555d1f9c3829f09d9598
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763996"
 ---
-# <a name="columncolumnresizemode"></a>COLUNA. columnResizeMode
+# <a name="columncolumnresizemode"></a>COLUMN.columnResizeMode
 
-O atributo **columnResizeMode** especifica ou recupera o modo de redimensionamento para esta coluna.
+O **atributo columnResizeMode** especifica ou recupera o modo de resize para essa coluna.
 
 ``` syntax
         elementID.columnResizeMode
@@ -29,16 +29,16 @@ O atributo **columnResizeMode** especifica ou recupera o modo de redimensionamen
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém um dos valores a seguir.
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém um dos valores a seguir.
 
 
 
 | Valor          | Descrição                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
-| AutosizeHeader | Padrão. A coluna é redimensionada para acomodar todos os dados na coluna e no cabeçalho.                         |
-| AutosizeData   | A coluna é redimensionada para acomodar todos os dados somente na coluna.                                                 |
+| AutosizeHeader | Padrão. A coluna é relize para acomodar todos os dados na coluna e no header.                         |
+| AutosizeData   | A coluna é relize para acomodar todos os dados somente na coluna.                                                 |
 | Fixo          | A coluna é um tamanho fixo.                                                                                    |
-| Se estende      | A coluna é redimensionada para usar o espaço restante no controle de **lista de reprodução** depois que todas as outras colunas são redimensionadas. |
+| Trechos      | A coluna é reorganizada para usar o espaço restante no controle **PLAYLIST** depois que todas as outras colunas são resized. |
 
 
 
@@ -50,7 +50,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

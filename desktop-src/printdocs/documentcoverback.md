@@ -4,12 +4,12 @@ ms.assetid: 29d0bf2d-4897-43ed-ba3d-0b38b2f30375
 title: DocumentCoverBack
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad5c75fd4bbce89bbc707c17a82202846cf2490a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: ae46d2672e53a72e015cf7b12559f727ae184ef7132ca1b7ea8014c7a984a46a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719366"
 ---
 # <a name="documentcoverback"></a>DocumentCoverBack
 
@@ -25,7 +25,7 @@ Descreve a folha de rosto voltar (terminando). Cada documento terá uma planilha
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Prefixo de escopo <br/> | Documento<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |

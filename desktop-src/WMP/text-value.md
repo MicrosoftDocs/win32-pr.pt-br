@@ -1,9 +1,9 @@
 ---
-title: TEXT. Value
-description: O atributo Value especifica ou recupera o texto que é exibido no controle de texto.
+title: TEXT.value
+description: O atributo value especifica ou recupera o texto exibido no controle Texto.
 ms.assetid: dbc50be2-ee18-4661-a343-9e906879aba0
 keywords:
-- TEXT. Value Windows Media Player
+- TEXT.value Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d87f688f7afffeb588a37ac13ebff4cdc7cc105
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8eef6b17428831a52a0e3cf5b8f8ec3dd7f795d5d4b78e2c4700a6274b877820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119762856"
 ---
-# <a name="textvalue"></a>TEXT. Value
+# <a name="textvalue"></a>TEXT.value
 
-O atributo **Value** especifica ou recupera o texto que é exibido no controle de texto.
+O **atributo** value especifica ou recupera o texto exibido no controle Texto.
 
 ``` syntax
         elementID.value
@@ -29,21 +29,21 @@ O atributo **Value** especifica ou recupera o texto que é exibido no controle d
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Se a largura do controle de texto não for suficiente para conter o texto fornecido, o texto será cortado e uma elipse será mostrada para ilustrar o fato. Se o atributo **ToolTip** não tiver sido definido, o texto completo será exibido como uma dica de ferramenta quando o cursor passar sobre o controle.
+Se a largura do controle Texto não for suficiente para conter o texto fornecido, o texto será cortado e uma reellipse será mostrada para ilustrar o fato. Se o **atributo toolTip** não tiver sido definido, o texto completo será exibido como uma Dica de Ferramenta quando o cursor passar o mouse sobre o controle.
 
 Se uma largura não for especificada, a largura padrão do controle será a largura da cadeia de caracteres.
 
 Se a altura do controle não for especificada, a altura padrão será uma linha.
 
-Se o atributo **WordWrap** for definido como true e a altura do controle for suficiente para acomodar outra linha de texto, o texto será quebrado em uma linha subsequente. O encapsulamento ocorre apenas entre palavras. Quebras de linha também podem ser forçadas, conforme explicado em **WordWrap**.
+Se o **atributo wordWrap** estiver definido como true e a altura do controle for suficiente para acomodar outra linha de texto, o texto será wrapado para uma linha subsequente. O empacotamento ocorre apenas entre palavras. As quebras de linha também podem ser forçadas, conforme explicado em **wordWrap**.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir é um arquivo de definição de capa completo que ilustra como os atributos do elemento de **texto** são usados. Ele pode ser encontrado no diretório de exemplos que foi instalado com o SDK.
+O exemplo a seguir é um arquivo de definição de capa completo que ilustra como os atributos do **elemento TEXT** são usados. Ele pode ser encontrado no diretório Samples que foi instalado com o SDK.
 
 
 ```C++
@@ -156,7 +156,7 @@ O exemplo a seguir é um arquivo de definição de capa completo que ilustra com
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -164,13 +164,13 @@ O exemplo a seguir é um arquivo de definição de capa completo que ilustra com
 
 <dl> <dt>
 
-[**Elemento de texto**](text-element.md)
+[**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. toolTip**](text-tooltip.md)
+[**TEXT.toolTip**](text-tooltip.md)
 </dt> <dt>
 
-[**TEXT. wordWrap**](text-wordwrap.md)
+[**TEXT.wordWrap**](text-wordwrap.md)
 </dt> </dl>
 
  

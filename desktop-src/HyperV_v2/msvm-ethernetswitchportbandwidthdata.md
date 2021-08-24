@@ -1,7 +1,7 @@
 ---
 description: Representa os dados de status do recurso de largura de banda da porta.
 ms.assetid: 1f7be0dd-3d2f-49ef-aff0-cb162389194a
-title: Classe Msvm_EthernetSwitchPortBandwidthData
+title: Msvm_EthernetSwitchPortBandwidthData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 55e8ad735d712bdd388e42b1f4174ee1a78af184
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f591c5b4f62cda04324fab6b962d7dad8873058cdb90aab2d998081578d259a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681506"
 ---
-# <a name="msvm_ethernetswitchportbandwidthdata-class"></a>\_Classe Msvm EthernetSwitchPortBandwidthData
+# <a name="msvm_ethernetswitchportbandwidthdata-class"></a>Classe Msvm \_ EthernetSwitchPortBandwidthData
 
 Representa os dados de status do recurso de largura de banda da porta.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,13 +59,13 @@ class Msvm_EthernetSwitchPortBandwidthData : Msvm_EthernetPortData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortBandwidthData** tem estes tipos de membros:
+A **classe Msvm \_ EthernetSwitchPortBandwidthData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortBandwidthData** tem essas propriedades.
+A **classe Msvm \_ EthernetSwitchPortBandwidthData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -78,7 +78,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "status do recurso de largura de banda da porta do comutador Ethernet".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Status do Recurso de Largura de Banda da Porta do Comutamento Ethernet".
 
 </dd> <dt>
 
@@ -91,26 +91,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome da subclasse usada na criação desta instância de dados de porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e é sempre definida como "Msvm \_ EthernetSwitchPortBandwidthData".
+O nome da subclasse usada na criação dessa instância de dados de porta. Essa propriedade é herdada [**de Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e sempre é definida como "Msvm \_ EthernetSwitchPortBandwidthData".
 
 </dd> <dt>
 
 **CurrentBandwidthReservationPercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-A porcentagem atual da largura de banda reservada para esta porta.
+O percentual atual de largura de banda reservada para essa porta.
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "representa os dados de status do recurso de largura de banda da porta.".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Representa os dados de status do recurso de largura de banda da porta".
 
 </dd> <dt>
 
@@ -136,14 +136,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e é sempre definida como "Msvm \_ EthernetSwitchPort".
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**de Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e sempre é definida como "Msvm \_ EthernetSwitchPort".
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -152,10 +152,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (64)
+Qualificadores: **Key**, **MaxLen** ( 64 )
 </dt> </dl>
 
-A ID do dispositivo da porta que abrange essa instância de dados de porta. Esta propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
+A ID do dispositivo da porta que tem como escopo essa instância de dados de porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "status do recurso de largura de banda da porta do comutador Ethernet".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Status do Recurso de Largura de Banda da Porta do Comutamento Ethernet".
 
 </dd> <dt>
 
@@ -181,10 +181,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -197,10 +197,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-Uma cadeia de caracteres que identifica exclusivamente essa instância de dados de porta dentro do escopo do comutador e da porta. Esta propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
+Uma cadeia de caracteres que identifica exclusivamente essa instância de dados de porta dentro do escopo da opção e da porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> <dt>
 
@@ -213,14 +213,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e é sempre definida como "Msvm \_ VirtualEthernetSwitch".
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**de Msvm \_ EthernetPortData**](msvm-ethernetportdata.md)e sempre é definida como "Msvm \_ VirtualEthernetSwitch".
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -229,10 +229,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome do comutador virtual que abrange essa instância de dados de porta. Esta propriedade é herdada de [**Msvm \_ EthernetPortData**](msvm-ethernetportdata.md).
+O nome do com switch virtual que tem como escopo essa instância de dados de porta. Essa propriedade é herdada de [**Msvm \_ EthernetPortData.**](msvm-ethernetportdata.md)
 
 </dd> </dl>
 
@@ -242,10 +242,10 @@ O nome do comutador virtual que abrange essa instância de dados de porta. Esta 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

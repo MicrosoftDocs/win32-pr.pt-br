@@ -4,24 +4,24 @@ ms.assetid: 5a57ba6e-d1fe-44ab-b72d-52b1f212c322
 title: ICE51
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38082d754564eead6d60a62e3b4cdcf9b1f0f94f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1187ad79aa23ca26ade28ecf92e6cde60beb9c8cc56540bec85f2ab1ae467f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763886"
 ---
 # <a name="ice51"></a>ICE51
 
 ICE51 verifica se um título foi fornecido para arquivos de recurso de fonte.
 
-Você deve fornecer um título para um recurso de fonte que não tenha um nome inserido. Somente os arquivos de recurso de fonte. TTC,. ttf e. otf não exigem um título, pois esses arquivos contêm um nome inserido. Não forneça um título para um recurso de fonte que contenha um nome inserido porque o sistema registra a fonte duas vezes.
+Você deve fornecer um título para um recurso de fonte que não tenha um nome inserido. Somente arquivos de recurso de fonte .ttc, .ttf e .otf não exigem um título, pois esses arquivos contêm um nome inserido. Não forneça um título para um recurso de fonte que contenha um nome inserido porque o sistema registra a fonte duas vezes.
 
-**[Windows Installer 4,5 e anteriores](not-supported-in-windows-installer-4-5.md):** ICE51 não verifica os arquivos de recurso de fonte. otf.
+**[Windows Instalador 4.5 e anteriores:](not-supported-in-windows-installer-4-5.md)** O ICE51 não verifica arquivos de recurso de fonte .otf.
 
 ## <a name="result"></a>Resultado
 
-ICE51 posta um erro se houver algum arquivo de recurso de fonte. TTC,. ttf e. otf com títulos. ICE51 posta um aviso se houver outros arquivos de recurso de fonte sem título.
+ICE51 posta um erro se houver arquivos de recurso de fonte .ttc, .ttf e .otf com títulos. ICE51 posta um aviso se houver outros arquivos de recurso de fonte sem um título.
 
 ## <a name="example"></a>Exemplo
 
@@ -43,8 +43,8 @@ Font 'Font2' does not have a title. Only TTC\TTF\OTF fonts do not need titles.
 
 | Arquivo  | FileName  |
 |-------|-----------|
-| Font1 | font1. ttf |
-| Font2 | font2. Fon |
+| Font1 | font1.ttf |
+| Font2 | font2.fon |
 
 
 
@@ -56,7 +56,7 @@ Font 'Font2' does not have a title. Only TTC\TTF\OTF fonts do not need titles.
 
 | Arquivo\_ | FontTitle          |
 |--------|--------------------|
-| Font1  | Uma fonte realmente interessante |
+| Font1  | Uma fonte muito interessante |
 | Font2  |                    |
 
 

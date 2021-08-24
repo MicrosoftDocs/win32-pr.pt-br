@@ -3,7 +3,7 @@ title: Estrutura de MCI_WAVE_SET_PARMS (Mciapi. h)
 description: A \_ estrutura de \_ \_ parâmetros Set parms do MCI contém informações para o \_ comando set do MCI para dispositivos de forma de onda-áudio.
 ms.assetid: 24c26124-274f-457e-ab87-887f3bcffce3
 keywords:
-- Multimídia do Windows da estrutura de MCI_WAVE_SET_PARMS
+- estrutura de MCI_WAVE_SET_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11446eda931da1a645b9bb6218c93898862b59bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85508ec493ecdc38825b90877e608683fe6c0bb7c099365c187a434890c605d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783746"
 ---
 # <a name="mci_wave_set_parms-structure"></a>\_Estrutura de \_ parâmetros do conjunto de ondas MCI \_
 

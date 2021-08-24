@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Enumeração ObjectInfoFlags'
+description: 'Saiba mais sobre: enumeração ObjectInfoFlags'
 title: Enumeração ObjectInfoFlags
 TOCTitle: ObjectInfoFlags enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ObjectInfoFlags
@@ -36,21 +36,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b3f301f1e786d126dbd57c071fe89356e0acc891
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 06cd7cecaa536106f70cc469e3b690a46bee8301fe2d1142bc3fa1ff2c045346
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780266"
 ---
 # <a name="objectinfoflags-enumeration"></a>Enumeração ObjectInfoFlags
 
-Sinalizadores para objetos ESENT (tabelas). Usado em [JET_OBJECTINFO](./jet-objectinfo-class.md).
+Sinalizadores para objetos ESENT (tabelas). Usado no [JET_OBJECTINFO](./jet-objectinfo-class.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -91,12 +91,12 @@ public enum ObjectInfoFlags
 <tr class="odd">
 <td></td>
 <td>TableFixedDDL</td>
-<td>O DDL da tabela é fixo.</td>
+<td>A DDL da tabela é fixa.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Tabelatemplate</td>
-<td>O DDL da tabela é herdável.</td>
+<td>TableTemplate</td>
+<td>A DDL da tabela é herdável.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -116,4 +116,4 @@ public enum ObjectInfoFlags
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

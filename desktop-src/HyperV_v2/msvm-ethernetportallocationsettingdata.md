@@ -45,12 +45,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: a310daf30127aec5069efcf7ca4fd5ead9277e6b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be3968f52065259cb69ad35721dffd3ac606da98e4189edaad1b762120f5a008
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105767639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681576"
 ---
 # <a name="msvm_ethernetportallocationsettingdata-class"></a>\_Classe Msvm EthernetPortAllocationSettingData
 
@@ -188,7 +188,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **maxlen** (64)
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de porta do comutador Ethernet".
+Uma breve descrição do objeto. essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "porta do comutador Ethernet Configurações".
 
 </dd> <dt>
 
@@ -204,7 +204,7 @@ Tipo de acesso: leitura/gravação
 Essa propriedade especifica o compartimento de rede de destino para a porta. Só há suporte para adaptadores internos.
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -245,7 +245,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de porta do comutador Ethernet".
+Uma descrição do objeto . essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "porta do comutador Ethernet Configurações".
 
 </dd> <dt>
 
@@ -345,7 +345,7 @@ Tipo de acesso: Somente leitura
 O último nome amigável conhecido do comutador para o qual essa porta tinha uma afinidade rígida, se houver.
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -567,8 +567,8 @@ Intervalo: 0 1000
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

@@ -1,5 +1,5 @@
 ---
-description: Contém as configurações globais para o módulo de configuração automática (ACM).
+description: Contém as configurações globais para o Módulo de Configuração Automática (ACM).
 ms.assetid: fb2b96d0-38cc-44fe-a82a-97e73b6a8f2a
 title: Elemento globalFlags (WLANPolicy)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 97d0b8ee90407efd94ac46cc1df6b084b9dcc54d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2851ae779bf1693d44642f87d33a71c17000e9dc0b68eeb8daab83972b37457d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800326"
 ---
 # <a name="globalflags-wlanpolicy-element"></a>Elemento globalFlags (WLANPolicy)
 
-O elemento globalFlags (WLANPolicy) contém as configurações globais para o ACM (módulo de configuração automática). Esse elemento é obrigatório.
+O elemento globalFlags (WLANPolicy) contém as configurações globais para o Módulo de Configuração Automática (ACM). Esse elemento é obrigatório.
 
 ``` syntax
 <xs:element name="globalFlags">
@@ -47,7 +47,7 @@ O elemento globalFlags (WLANPolicy) contém as configurações globais para o AC
 </xs:element>
 ```
 
-O elemento **globalFlags** é definido pelo elemento [**WLANPolicy**](wlan-policyschema-wlanpolicy-element.md) .
+O **elemento globalFlags** é definido pelo [**elemento WLANPolicy.**](wlan-policyschema-wlanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -56,8 +56,8 @@ O elemento **globalFlags** é definido pelo elemento [**WLANPolicy**](wlan-polic
 | Elemento                                                                                                                    | Type    | Descrição                                                                                                                          |
 |----------------------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------|
 | [**allowEveryoneToCreateAllUserProfiles**](wlan-policyschema-alloweveryonetocreatealluserprofiles-globalflags-element.md) | booleano | Especifica se qualquer usuário pode criar um perfil de todos os usuários. <br/>                                                               |
-| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | booleano | Especifica se os computadores usam o serviço interno de configuração automática (autoconfiguração) para gerenciar conexões sem fio. <br/> |
-| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | booleano | Especifica se as redes negadas aparecem no assistente **conectar-se a uma rede** . <br/>                                         |
+| [**enableAutoConfig**](wlan-policyschema-enableautoconfig-globalflags-element.md)                                         | booleano | Especifica se os máquinas usam o serviço de configuração automática (AutoConfig) para gerenciar conexões sem fio. <br/> |
+| [**showDeniedNetwork**](wlan-policyschema-showdeniednetwork-globalflags-element.md)                                       | booleano | Especifica se as redes negadas aparecem no Conexão **para um assistente de** rede. <br/>                                         |
 
 
 
@@ -67,8 +67,8 @@ O elemento **globalFlags** é definido pelo elemento [**WLANPolicy**](wlan-polic
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

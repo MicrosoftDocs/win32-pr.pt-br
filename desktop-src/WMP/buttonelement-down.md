@@ -3,7 +3,7 @@ title: BOTÃO. para baixo
 description: O atributo down especifica ou recupera um valor que indica se o elemento Button está na posição para cima ou para baixo.
 ms.assetid: 6b3633c5-84c1-48a0-bd2f-94660890d9a6
 keywords:
-- BUTTONelement. inoperante do Windows Media Player
+- BOTÃO. Down Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23f48b0e2ac0f4bf02f87d90bb0bd504478beb52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff20aebda01b24dc14eb7d5298ee0d663d903bedcb7ef6ef8b05b6211af8b567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764466"
 ---
 # <a name="buttonelementdown"></a>BOTÃO. para baixo
 

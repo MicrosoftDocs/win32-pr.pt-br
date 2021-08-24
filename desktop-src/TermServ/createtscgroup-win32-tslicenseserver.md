@@ -1,12 +1,12 @@
 ---
-title: Método CreateTSCGroup da classe Win32_TSLicenseServer
-description: O CreateTSCGroup não está mais disponível para uso a partir do Windows Server 2012.
+title: Método CreateTSCGroup da classe Win32_TSLicenseServer classe
+description: CreateTSCGroup não está mais disponível para uso a partir Windows Server 2012.
 ms.assetid: 31751da7-263b-4911-a328-246457a606f0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método CreateTSCGroup
-- Método CreateTSCGroup Serviços de Área de Trabalho Remota, classe Win32_TSLicenseServer
-- Classe Win32_TSLicenseServer Serviços de Área de Trabalho Remota, método CreateTSCGroup
+- Método CreateTSCGroup Serviços de Área de Trabalho Remota
+- Método CreateTSCGroup Serviços de Área de Trabalho Remota , Win32_TSLicenseServer classe
+- Win32_TSLicenseServer classe Serviços de Área de Trabalho Remota , método CreateTSCGroup
 topic_type:
 - apiref
 api_name:
@@ -17,20 +17,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f10db61cb02ece09d168cb462e31246e498494
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf363d86cf663a3f9b626d9586140eb4c00f86e9750070f8a2000149b655bb34
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737866"
 ---
-# <a name="createtscgroup-method-of-the-win32_tslicenseserver-class"></a>Método CreateTSCGroup da classe Win32 \_ TSLicenseServer
+# <a name="createtscgroup-method-of-the-win32_tslicenseserver-class"></a>Método CreateTSCGroup da classe \_ Win32 TSLicenseServer
 
-\[O **CreateTSCGroup** não está mais disponível para uso a partir do Windows Server 2012.\]
+\[**CreateTSCGroup** não está mais disponível para uso desde Windows Server 2012.\]
 
 Não há suporte para o método.
 
-**Windows server 2008 R2 e Windows server 2008:** Cria o grupo local computadores Terminal Server no Área de Trabalho Remota servidor de licença.
+**Windows Server 2008 R2 e Windows Server 2008:** Cria o grupo local Computadores do Servidor de Terminal Área de Trabalho Remota servidor de licença.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ uint32 CreateTSCGroup();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o **WBEM \_ E \_ não \_ tem suporte**.
+Retorna **WBEM \_ E NÃO TEM \_ \_ SUPORTE.**
 
-**Windows server 2008 R2 e Windows server 2008:** Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
+**Windows Server 2008 R2 e Windows Server 2008:** Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,10 +65,10 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                                 |
-| Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                         |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                                 |
+| Fim do suporte ao servidor<br/>    | Windows Server 2008 R2<br/>                                                         |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -77,7 +77,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> <dt>
 
 [**IsTSCGroupPresent**](istscgrouppresent-win32-tslicenseserver.md)
