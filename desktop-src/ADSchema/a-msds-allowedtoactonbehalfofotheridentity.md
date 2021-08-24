@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-allowed-to-Act-on-of-from-Identity
+title: Atributo ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
 description: Esse atributo é usado para verificações de acesso para determinar se um solicitante tem permissão para agir em nome de outras identidades para serviços em execução como essa conta.
 ms.assetid: 38203665-4505-461b-b6ab-b634725ac2fa
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-allowed-to-Act-on-be-of-of-Identity atributo AD Schema
-- atributo msDS-AllowedToActOnBehalfOfOtherIdentity do AD Schema
+- Esquema do AD do atributo ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
+- MsDS-AllowedToActOnBehalfOfOtherIdentity atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45dacd532b1d8a55b3656dc1d65fc1ebd940476c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: cad3ea9795dd89777d390235193ff2663e5b514125cdf539c34dfc85ad1664bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552836"
 ---
-# <a name="ms-ds-allowed-to-act-on-behalf-of-other-identity-attribute"></a>atributo ms-DS-allowed-to-Act-on-of-from-Identity
+# <a name="ms-ds-allowed-to-act-on-behalf-of-other-identity-attribute"></a>Atributo ms-DS-Allowed-To-Act-On-Behalf-Of-Other-Identity
 
 Esse atributo é usado para verificações de acesso para determinar se um solicitante tem permissão para agir em nome de outras identidades para serviços em execução como essa conta.
 
@@ -29,14 +29,14 @@ Esse atributo é usado para verificações de acesso para determinar se um solic
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------|
-| CN                | ms-DS-allowed-to-Act-on-of-from-Identity    |
-| LDAP-Display-Name | msDS-AllowedToActOnBehalfOfOtherIdentity            |
+| CN                | ms-DS-Allowed-To-Act-On-Behalf-of-Other-Identity    |
+| Ldap-Display-Name | msDS-AllowedToActOnBehalfOfOtherIdentity            |
 | Tamanho              | \-                                                  |
 | Privilégio de atualização  | \-                                                  |
 | Frequência de atualização  | \-                                                  |
 | Attribute-Id      | 1.2.840.113556.1.4.2182                             |
-| System-ID-GUID    | 3f78c3e5-f79a-46bd-a0b8-9d18116ddc79                |
-| Syntax            | [**Cadeia de caracteres (NT-SEC-DESC)**](s-string-nt-sec-desc.md) |
+| System-Id-Guid    | 3f78c3e5-f79a-46bd-a0b8-9d18116ddc79                |
+| Syntax            | [**String(NT-Sec-Desc)**](s-string-nt-sec-desc.md) |
 
 
 
@@ -52,11 +52,11 @@ Esse atributo é usado para verificações de acesso para determinar se um solic
 |------------------------|--------------------------------------------------------------------|
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | True                                                               |
-| É de valor único       | True                                                               |
+| System-Only            | Verdadeiro                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 0                                                                  |
 | Range-Upper            | 132096                                                             |
 | Search-Flags           | 0x00000000                                                         |

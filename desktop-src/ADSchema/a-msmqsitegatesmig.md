@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-site-Gates-MiG
+title: Atributo MSMQ-Site-Gates-Mig
 description: No modo misto do MSMQ, o valor anterior de mSMQSiteGates.
 ms.assetid: d9a89b2d-c400-45ea-a063-7c615228b8e5
 ms.tgt_platform: multiple
 keywords:
-- Atributo AD do MSMQ-site-Gates-MiG
-- Esquema de AD do atributo mSMQSiteGatesMig
+- Esquema do AD do atributo MSMQ-Site-Gates-Mig
+- Esquema do AD do atributo mSMQSiteGatesMig
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73b8afdee3c1e96f171651c454fd0b29bfbefbd5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7b71c43cc954c34dbc5500d4f39bef15c0dbd12f64ca33998cdb1eb7f955a379
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582286"
 ---
-# <a name="msmq-site-gates-mig-attribute"></a>Atributo MSMQ-site-Gates-MiG
+# <a name="msmq-site-gates-mig-attribute"></a>Atributo MSMQ-Site-Gates-Mig
 
 No modo misto do MSMQ, o valor anterior de mSMQSiteGates.
 
@@ -29,14 +29,14 @@ No modo misto do MSMQ, o valor anterior de mSMQSiteGates.
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MSMQ-site-Gates-MiG                     |
-| LDAP-Display-Name | mSMQSiteGatesMig                        |
+| CN                | MSMQ-Site-Gates-Mig                     |
+| Ldap-Display-Name | mSMQSiteGatesMig                        |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1310                 |
-| System-ID-GUID    | e2704852-3b7b-11d2-90cc-00c04fd91ab1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | e2704852-3b7b-11d2-90cc-00c04fd91ab1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ No modo misto do MSMQ, o valor anterior de mSMQSiteGates.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**MSMQ-link de site**](c-msmqsitelink.md)<br/> |
+| Classes usadas em        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ No modo misto do MSMQ, o valor anterior de mSMQSiteGates.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**MSMQ-link de site**](c-msmqsitelink.md)<br/> |
+| Classes usadas em        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ No modo misto do MSMQ, o valor anterior de mSMQSiteGates.
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**MSMQ-link de site**](c-msmqsitelink.md)<br/> |
+| Classes usadas em        | [**MSMQ-Site-Link**](c-msmqsitelink.md)<br/> |
 
 
 

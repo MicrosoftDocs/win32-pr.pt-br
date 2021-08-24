@@ -4,8 +4,8 @@ description: O idioma da instância atual do SQL Server.
 ms.assetid: 70ab1e8f-aff0-4a1e-ab2c-676a77b0c229
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Language
-- Esquema de AD do atributo mS-SQL-Language
+- Esquema do AD do atributo MS-SQL-Language
+- Esquema do AD do atributo mS-SQL-Language
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd9a4fb6ede4e656b7cebbfe7c5c920e19d9123
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: badc9f8a59df2727bcff304044666f2f6751dbcd7797d3178813a1dd5f289319
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705438"
 ---
 # <a name="ms-sql-language-attribute"></a>Atributo MS-SQL-Language
 
@@ -29,14 +29,14 @@ O idioma da instância atual do SQL Server.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Linguagem MS-SQL                             |
-| LDAP-Display-Name | Linguagem mS-SQL                             |
+| CN                | MS-SQL-Language                             |
+| Ldap-Display-Name | mS-SQL-Language                             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | Na configuração do sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1389                     |
-| System-ID-GUID    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O idioma da instância atual do SQL Server.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| Tem valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -79,10 +79,10 @@ O idioma da instância atual do SQL Server.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| Tem valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -100,10 +100,10 @@ O idioma da instância atual do SQL Server.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| Tem valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
-| No catálogo global      | Falso                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
+| No Catálogo Global      | Falso                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                |
 | Range-Lower            | \-                                                          |
 | Range-Upper            | \-                                                          |
 | Search-Flags           | 0x00000000                                                  |
@@ -121,7 +121,7 @@ O idioma da instância atual do SQL Server.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -142,7 +142,7 @@ O idioma da instância atual do SQL Server.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |
@@ -163,7 +163,7 @@ O idioma da instância atual do SQL Server.
 | ID do link                | \-                                                          |
 | MAPI-Id                | \-                                                          |
 | System-Only            | Falso                                                       |
-| É de valor único       | True                                                        |
+| É de valor único       | Verdadeiro                                                        |
 | É indexado             | Falso                                                       |
 | No catálogo global      | Falso                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                |

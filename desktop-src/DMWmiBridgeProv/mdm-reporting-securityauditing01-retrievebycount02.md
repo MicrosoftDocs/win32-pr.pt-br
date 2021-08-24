@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c979d25cdc9887a500307494218a6fc11f98bf86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a036d129f702853171e155a330c31ec6b1effdf227dd5cd051314fda81efb39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587716"
 ---
 # <a name="mdm_reporting_securityauditing01_retrievebycount02-class"></a>\_Classe RetrieveByCount02 de relatórios MDM \_ SecurityAuditing01 \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A [**classe \_ RetrieveByCount02 de relatório do MDM \_ SecurityAuditing01 \_**](mdm-reporting-enterprisedataprotection01-retrievebycount02.md) é usada para recuperar um número especificado de logs do StartTime. O StartTime é expresso no formato ISO 8601. Você pode definir o número de logs exigidos definindo LogCount e StartTime. Ele retorna o número especificado de log ou menos, se o número total de logs for menor que LogCount.
 
@@ -129,7 +129,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |

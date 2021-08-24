@@ -1,12 +1,12 @@
 ---
-title: Método WSMan.SessionFlagCredUsernamePassword (WSManDisp.h)
-description: Retorna o valor do sinalizador de autenticação WSManFlagCredUsernamePassword para uso no parâmetro flags do método WSMan.CreateSession.
+title: Método WSMan. SessionFlagCredUsernamePassword (WSManDisp. h)
+description: Retorna o valor do sinalizador de autenticação WSManFlagCredUsernamePassword para uso no parâmetro flags do método WSMan. CreateSession.
 ms.assetid: 70d12df4-f0ac-499a-8b2f-6ba83b77869e
 ms.tgt_platform: multiple
 keywords:
-- Método SessionFlagCredUsernamePassword Windows Gerenciamento Remoto
-- Método SessionFlagCredUsernamePassword Windows gerenciamento remoto, objeto WSMan
-- Objeto WSMan Windows Gerenciamento Remoto, Método SessionFlagCredUsernamePassword
+- Gerenciamento Remoto do Windows do método SessionFlagCredUsernamePassword
+- método SessionFlagCredUsernamePassword Gerenciamento Remoto do Windows, objeto WSMan
+- Gerenciamento Remoto do Windows de objeto WSMan, método SessionFlagCredUsernamePassword
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119613506"
 ---
-# <a name="wsmansessionflagcredusernamepassword-method"></a>Método WSMan.SessionFlagCredUsernamePassword
+# <a name="wsmansessionflagcredusernamepassword-method"></a>Método WSMan. SessionFlagCredUsernamePassword
 
-O **método WSMan.SessionFlagCredUsernamePassword** retorna o valor do sinalizador de autenticação **WSManFlagCredUsernamePassword** para uso no parâmetro *flags* do [**método WSMan.CreateSession.**](wsman-createsession.md) Esse método fornece uma sintaxe mais eficiente para usar a constante para que os scripts não sejam necessários para definir um valor constante. Para obter mais informações sobre como chamar esse método, consulte [Constantes de sessão](session-constants.md).
+O método **WSMan. SessionFlagCredUsernamePassword** retorna o valor do sinalizador de autenticação **WSManFlagCredUsernamePassword** para uso no parâmetro *flags* do método [**WSMan. CreateSession**](wsman-createsession.md) . Esse método fornece uma sintaxe mais eficiente para usar a constante para que os scripts não sejam necessários para definir um valor constante. Para obter mais informações sobre como chamar esse método, consulte [constantes de sessão](session-constants.md).
 
-**WSManFlagCredUsernamePassword** é uma constante na enumeração **\_ \_ WSManSessionFlags.** Para obter mais informações, consulte [Constantes de autenticação](authentication-constants.md).
+**WSManFlagCredUsernamePassword** é uma constante na enumeração **\_ \_ WSManSessionFlags** . Para obter mais informações, consulte [constantes de autenticação](authentication-constants.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ WSMan.SessionFlagCredUsernamePassword( _
 
 <dl> <dt>
 
-*sinalizadores* \[ out\]
+*sinalizadores* \[ de fora\]
 </dt> <dd>
 
 O valor da constante.
@@ -54,7 +54,7 @@ O valor da constante.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -75,7 +75,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 <dl> <dt>
 
-[**Wsman**](wsman.md)
+[**WSMan**](wsman.md)
 </dt> <dt>
 
 [**Sessão**](session.md)

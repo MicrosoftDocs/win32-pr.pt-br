@@ -1,30 +1,30 @@
 ---
-description: O Microsoft Windows HTTP Services (WinHTTP) fornece uma interface de alto nível com suporte de servidor para os protocolos de Internet HTTP/2 e 1,1.
+description: o Microsoft Windows HTTP Services (WinHTTP) fornece uma interface de alto nível com suporte de servidor para os protocolos de Internet HTTP/2 e 1,1.
 ms.assetid: 8337f699-3ec0-4397-acc2-6dc813f7542d
 title: Sobre o WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 150c829410a1601a3ede7f115f4594276af7fead
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e19df8ac8073cfca4fd74fd5d024712cc3fc59c770c3d9ad0ab1386bc0642d72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105784052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570286"
 ---
 # <a name="about-winhttp"></a>Sobre o WinHTTP
 
 > [!NOTE]
-> Para contêineres de aplicativos e serviços do sistema desde que o Windows 10, versão 1709, HTTP/2 (consulte [RFC7540](https://tools.ietf.org/html/rfc7540)) esteja ativado por padrão.
+> para contêineres de aplicativos e serviços do sistema desde Windows 10, a versão 1709, HTTP/2 (consulte [RFC7540](https://tools.ietf.org/html/rfc7540)) está ativada por padrão.
 
-O Microsoft Windows HTTP Services (WinHTTP) fornece uma interface de alto nível com suporte de servidor para os protocolos de Internet HTTP/2 e 1,1. O WinHTTP foi projetado para ser usado principalmente em cenários baseados em servidor por aplicativos de servidor que se comunicam com servidores HTTP.
+o Microsoft Windows HTTP Services (WinHTTP) fornece uma interface de alto nível com suporte de servidor para os protocolos de Internet HTTP/2 e 1,1. O WinHTTP foi projetado para ser usado principalmente em cenários baseados em servidor por aplicativos de servidor que se comunicam com servidores HTTP.
 
 O [WinInet](/windows/desktop/WinInet/portal) foi projetado como uma plataforma de cliente http para aplicativos de área de trabalho interativa. O WinINet exibe uma interface do usuário para algumas operações, como coletar credenciais do usuário. No entanto, o WinHTTP manipula essas operações de forma programática. Aplicativos de servidor que exigem serviços de cliente HTTP devem usar WinHTTP em vez de WinINet. Para obter mais informações, consulte [portando aplicativos WinInet para WinHTTP](porting-wininet-applications-to-winhttp.md).
 
 O WinHTTP também foi projetado para uso em serviços do sistema e aplicativos cliente baseados em HTTP. No entanto, aplicativos de usuário único que exigem funcionalidade de protocolo FTP, persistência de cookie, cache, tratamento automático de caixa de diálogo de credencial, compatibilidade do Internet Explorer ou suporte a plataformas de nível inferior devem considerar o uso do [WinInet](/windows/desktop/WinInet/portal).
 
-Essa interface pode ser acessada do C/C++ usando a API (interface de programação de aplicativo) do WinHTTP ou usando as interfaces [**IWinHttpRequest**](iwinhttprequest-interface.md) e [**IWinHttpRequestEvents**](iwinhttprequestevents-interface.md) . O WinHTTP também pode ser acessado do script e do Microsoft Visual Basic por meio do objeto WinHTTP. Para obter mais informações e descrições das funções individuais, consulte a referência das funções do WinHTTP para o idioma específico.
+Essa interface pode ser acessada do C/C++ usando a API (interface de programação de aplicativo) do WinHTTP ou usando as interfaces [**IWinHttpRequest**](iwinhttprequest-interface.md) e [**IWinHttpRequestEvents**](iwinhttprequestevents-interface.md) . o winhttp também pode ser acessado do script e do Microsoft Visual Basic por meio do objeto WinHTTP. Para obter mais informações e descrições das funções individuais, consulte a referência das funções do WinHTTP para o idioma específico.
 
-A partir do Windows 8, o WinHTTP fornece APIs para habilitar conexões usando o [protocolo WebSocket](https://tools.ietf.org/html/rfc6455)l, como [**WinHttpWebSocketSend**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketsend) e [**WinHttpWebSocketReceive**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketreceive).
+a partir do Windows 8, o WinHTTP fornece APIs para habilitar conexões usando o [protocolo websocket](https://tools.ietf.org/html/rfc6455)l, como [**WinHttpWebSocketSend**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketsend) e [**WinHttpWebSocketReceive**](/windows/desktop/api/winhttp/nf-winhttp-winhttpwebsocketreceive).
 
 > [!Caution]  
 > O WinHTTP não é reentrante, exceto durante o retorno de chamada de conclusão assíncrona. Ou seja, enquanto um thread tem uma chamada pendente para uma das funções do WinHTTP, como WinHttpSendRequest, WinHttpReceiveResponse, WinHttpQueryDataAvailable, WinHttpSendData ou WinHttpWriteData, ele nunca deve chamar o WinHTTP uma segunda vez até que a primeira chamada seja concluída. Um cenário sob o qual uma segunda chamada pode ocorrer é o seguinte: se um aplicativo enfileirar uma APC (chamada de procedimento assíncrono) para o thread que chama o WinHTTP e se o WinHTTP executar uma espera de alerta internamente, a APC poderá ser executada. Se a rotina da APC ocorrer também chamar o WinHTTP, ela reinserirá a API do WinHTTP e o estado interno do WinHTTP poderá ser corrompido.

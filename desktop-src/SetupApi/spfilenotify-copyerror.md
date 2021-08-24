@@ -4,12 +4,12 @@ ms.assetid: d6096954-c6a5-44d4-a358-c1320c50730a
 title: Mensagem de SPFILENOTIFY_COPYERROR (Setupapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6cd44daabd6a4aed5e61a716bab3df44f35fc0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80160af9d8053a90c1848d397da6bbb9bf41f2793756e1d5491fb0d6f5e39abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119665146"
 ---
 # <a name="spfilenotify_copyerror-message"></a>\_Mensagem SPFILENOTIFY COPYERROR
 
@@ -43,7 +43,7 @@ Ponteiro para um buffer, de tamanho máximo de \_ caracteres de caminho, que arm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O retorno de chamada deve retornar um dos valores a seguir.
 
@@ -66,9 +66,9 @@ O retorno de chamada deve retornar um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
 
 
 

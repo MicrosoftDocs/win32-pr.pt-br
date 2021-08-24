@@ -1,24 +1,24 @@
 ---
-title: Local do texto
-description: Local do texto
+title: Localização de texto
+description: Localização de texto
 ms.assetid: b05c3594-9249-4612-b4a3-f624832d1073
 keywords:
-- Aparências móveis do Windows Media Player, texto
-- capas, texto
-- referência de capas, texto
-- texto em capas, local
+- Windows Media Player Capas móveis, texto
+- skins,text
+- referência para capas, texto
+- texto em capas, localização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7b11f753cc6f85f57f04c14529752bd0fb53232
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0d02a8b7f3a2309af7e480bcd6238c070d59424fa27b3798f68be96dabf92559
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507516"
 ---
-# <a name="text-location"></a>Local do texto
+# <a name="text-location"></a>Localização de texto
 
-Você deve definir o local da caixa de exibição de texto que deseja usar. Para fazer isso, você deve fornecer quatro inteiros positivos, separados por vírgulas, que definem a esquerda, a parte superior, a largura e a altura da caixa de exibição de texto, em pixels, em relação à imagem de plano de fundo.
+Você deve definir o local da caixa de exibição de texto que deseja usar. Para fazer isso, você deve fornecer quatro inteiros positivos, separados por vírgulas, que definem a esquerda, a parte superior, a largura e a altura da caixa de exibição de texto, em pixels, em relação à imagem da tela de fundo.
 
 
 ```C++
@@ -35,9 +35,9 @@ Você deve definir o local da caixa de exibição de texto que deseja usar. Para
 [**Texto**](text.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

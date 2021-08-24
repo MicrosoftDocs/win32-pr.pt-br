@@ -9,12 +9,12 @@ keywords:
 - threads, enumerando threads
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32eff584aedaa3f6124cc358a4ee9d2a94962843
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ec4f75f4690be05a7703dab80965fb41035da03cb21f244a4b5a9039a4a61ef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105779874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513846"
 ---
 # <a name="thread-walking"></a>Movimentação de thread
 
@@ -27,7 +27,7 @@ Você pode recuperar um código de status de erro estendido para [**Thread32Firs
 > [!Note]  
 > O conteúdo do membro **th32ThreadID** de [**THREADENTRY32**](/windows/win32/api/tlhelp32/ns-tlhelp32-threadentry32) é um identificador de thread e pode ser usado por qualquer função que exija um identificador de thread.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -36,6 +36,6 @@ Você pode recuperar um código de status de erro estendido para [**Thread32Firs
 [Atravessando a lista de threads](traversing-the-thread-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

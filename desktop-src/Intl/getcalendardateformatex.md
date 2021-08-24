@@ -15,12 +15,12 @@ api_location:
 - Kernel32.dll
 - API-MS-Win-Core-calendar-l1-1-0.dll
 - kernel32legacy.dll
-ms.openlocfilehash: b0130bf62c742d0565b1c98c138ac8c71ddf7a67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db6bf4fc20c24e91a0af29dc8ee81f7a77ef5cb1c0f0e0f6c5a0a792e52eb903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068216"
 ---
 # <a name="getcalendardateformatex-function"></a>Função GetCalendarDateFormatEx
 
@@ -113,7 +113,7 @@ Tamanho, em caracteres, do buffer *lpDateStr* . Como alternativa, o aplicativo p
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de caracteres gravados no buffer *lpDateStr* se for bem-sucedido. Se o parâmetro *cchDate* for definido como 0, a função retornará o número de caracteres necessários para manter a cadeia de caracteres de data formatada, incluindo o caractere nulo de terminação.
 
@@ -136,8 +136,8 @@ Essa função não tem um arquivo de cabeçalho ou arquivo de biblioteca associa
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl> |
 
 

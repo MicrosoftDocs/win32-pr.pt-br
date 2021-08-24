@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 50c00dc4336e3e85b7db8ffd334de8868054c997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1108c0c1624d26855e872b7e6e0087b304b0e63ae39cf2b0b9b14156a9810972
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068296"
 ---
 # <a name="validatevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método ValidateVirtualHardDisk da \_ classe imagens Msvm
 
@@ -58,7 +58,7 @@ Se a operação for executada de forma assíncrona, esse método retornará 4096
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -157,8 +157,8 @@ public static void ValidateVirtualHardDisk(string vhdPath)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

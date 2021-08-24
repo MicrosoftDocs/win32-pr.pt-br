@@ -3,19 +3,19 @@ title: Tipos de TrackBar
 description: Tipos de TrackBar
 ms.assetid: 560792e9-edaa-4488-9093-536300b6f8e6
 keywords:
-- Capas móveis do Windows Media Player, trackbars
-- Capas móveis do Windows Media Player, buscar trackbars
-- Capas do Windows Media Player Mobile, volume trackbars
+- Windows Media Player Capas móveis, trackbars
+- Windows Media Player Capas móveis, buscar trackbars
+- Windows Media Player Capas móveis, volume trackbars
 - trackbars em capas, tipos
 - capas, trackbars
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70b21cc9773615386057c10a4fea94fc2a0f8316
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 77bd8e2f78e3e582083353ce29a54a2af914791af560e9bfcc0dd55f2c513d1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507366"
 ---
 # <a name="trackbar-types"></a>Tipos de TrackBar
 
@@ -30,12 +30,12 @@ Para obter mais informações sobre controles deslizantes, consulte a seção [t
 
 <dl> <dt>
 
-[**Funcionalidade móvel do Windows Media Player**](windows-media-player-mobile-functionality.md)
+[**Windows Media Player Funcionalidade móvel**](windows-media-player-mobile-functionality.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

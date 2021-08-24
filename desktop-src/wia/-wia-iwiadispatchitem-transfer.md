@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: a476f9653b7deced48394af0ecaa0ea0c8ae51e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efef054a324244553748b75659820f582100a01ed6f56f9a2f80b0ef0c08f105
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706316"
 ---
 # <a name="itemtransfer-method"></a>Método item. Transfer
 
@@ -69,7 +69,7 @@ Padrão. Defina esse valor como **true** se a chamada deve ser assíncrona (cons
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -79,7 +79,7 @@ Esse método aplica-se somente a itens de tipo de arquivo. O método verifica se
 
 Use "Clipboard" como o parâmetro *filename* para transferir um item para a área de transferência.
 
-Defina o valor de *AsyncTransfer* como **false** para transferências em qualquer aplicativo ou script executado em um ambiente que termine um processo no final de um script, como o WSH (Windows Script Host). Caso contrário, o script pode terminar e o processo é encerrado antes de a transferência ser concluída.
+defina o valor de *AsyncTransfer* como **false** para transferências em qualquer aplicativo ou script executado em um ambiente que termine um processo no final de um script, como o Host de script do Windows (WSH). Caso contrário, o script pode terminar e o processo é encerrado antes de a transferência ser concluída.
 
 O método de **transferência** não tem nenhum valor de retorno. Após a conclusão de uma transferência, esse método envia um evento [**OnTransferComplete**](-wia--iwiaevents-ontransfercomplete.md) para o script ou aplicativo.
 
@@ -119,8 +119,8 @@ Next
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Wiascr.dll (versão 4,90 ou posterior)</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_LocalPoliciesSecurityOptions02
-description: A política de MDM \_ \_ Config01 \_ LocalPoliciesSecurityOptions02 configura as opções de segurança de políticas locais.
+title: MDM_Policy_Config01_LocalPoliciesSecurityOptions02 classe
+description: A Configuração de Política de \_ MDM01 \_ \_ LocalPoliciesSecurityOptions02 configura as opções de segurança das políticas locais.
 ms.assetid: 07688109-f14a-4a04-91b2-ee928d8911b4
 keywords:
-- Classe MDM_Policy_Config01_LocalPoliciesSecurityOptions02
-- Classe MDM_Policy_Config01_LocalPoliciesSecurityOptions02, descrita
+- MDM_Policy_Config01_LocalPoliciesSecurityOptions02 classe
+- MDM_Policy_Config01_LocalPoliciesSecurityOptions02, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf39e1db2f5d6f823667865054a8c72b18dc916f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74a23ff538e5381e9853fca48df4703dc09dd110940128af2caed98b0fcec2af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017914"
 ---
-# <a name="mdm_policy_config01_localpoliciessecurityoptions02-class"></a>\_Classe MDM \_ Config01 \_ LocalPoliciesSecurityOptions02
+# <a name="mdm_policy_config01_localpoliciessecurityoptions02-class"></a>Classe MDM \_ Policy \_ Config01 \_ LocalPoliciesSecurityOptions02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A política de MDM \_ \_ Config01 \_ LocalPoliciesSecurityOptions02 configura as opções de segurança de políticas locais.
+A Configuração de Política de \_ MDM01 \_ \_ LocalPoliciesSecurityOptions02 configura as opções de segurança das políticas locais.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -79,23 +79,23 @@ class MDM_Policy_Config01_LocalPoliciesSecurityOptions02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Config01 \_ LocalPoliciesSecurityOptions02 da política MDM** tem estes tipos de membros:
+A **classe \_ \_ Config01 \_ LocalPoliciesSecurityOptions02 do MDM Policy** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Config01 \_ LocalPoliciesSecurityOptions02 da política MDM** tem essas propriedades.
+A **classe \_ \_ Config01 \_ LocalPoliciesSecurityOptions02 do MDM** tem essas propriedades.
 
 <dl> <dt>
 
-[BlockMicrosoftAccounts de contas \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-blockmicrosoftaccounts)
+[Bloco \_ de contasMicrosoftAccounts](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-blockmicrosoftaccounts)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -106,7 +106,7 @@ Accounts_EnableAdministratorAccountStatus
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -117,40 +117,40 @@ Accounts_EnableGuestAccountStatus
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly de contas \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly)
+[Accounts \_ LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[RenameAdministratorAccount de contas \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-renameadministratoraccount)
+[Accounts \_ RenameAdministratorAccount](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-renameadministratoraccount)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[RenameGuestAccount de contas \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-renameguestaccount)
+[Contas \_ RenameGuestAccount](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-accounts-renameguestaccount)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -161,7 +161,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -172,7 +172,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -183,7 +183,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -194,7 +194,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -219,7 +219,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -230,7 +230,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -241,7 +241,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -252,7 +252,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -263,7 +263,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -274,7 +274,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -285,7 +285,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -296,7 +296,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -307,7 +307,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -318,7 +318,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -329,12 +329,12 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -354,7 +354,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -365,7 +365,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -376,23 +376,23 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[AllowUIAccessApplicationsToPromptForElevation de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation)
+[UserAccountControl \_ AllowUIAccessApplicationsToPromptForElevation](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[BehaviorOfTheElevationPromptForAdministrators de UserAccountControl \_](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators)
+[UserAccountControl \_ BehaviorOfTheElevationPromptForAdministrators](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
@@ -497,7 +497,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |

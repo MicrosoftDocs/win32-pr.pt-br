@@ -1,11 +1,11 @@
 ---
-title: Atributo MSMQ-site-Foreign
-description: Um valor booliano que indica se ele é um site externo do MSMQ.
+title: Atributo MSMQ-Site-Foreign
+description: Um valor booliana que indica se ele é um site MSMQ externo.
 ms.assetid: 1589f1f2-3858-4563-b845-f400c04c0015
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-site-Foreign atributo AD Schema
-- Esquema de AD do atributo mSMQSiteForeign
+- Esquema do AD do atributo MSMQ-Site-Foreign
+- Esquema do AD do atributo mSMQSiteForeign
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119081730"
 ---
-# <a name="msmq-site-foreign-attribute"></a>Atributo MSMQ-site-Foreign
+# <a name="msmq-site-foreign-attribute"></a>Atributo MSMQ-Site-Foreign
 
-Um valor booliano que indica se ele é um site externo do MSMQ.
+Um valor booliana que indica se ele é um site MSMQ externo.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-site-Foreign                    |
-| LDAP-Display-Name | mSMQSiteForeign                      |
+| CN                | MSMQ-Site-Foreign                    |
+| Ldap-Display-Name | mSMQSiteForeign                      |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.961               |
-| System-ID-GUID    | fd129d8a-d57e-11d1-90a2-00c04fd91ab1 |
+| System-Id-Guid    | fd129d8a-d57e-11d1-90a2-00c04fd91ab1 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,10 +58,10 @@ Um valor booliano que indica se ele é um site externo do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -79,10 +79,10 @@ Um valor booliano que indica se ele é um site externo do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -100,10 +100,10 @@ Um valor booliano que indica se ele é um site externo do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -121,10 +121,10 @@ Um valor booliano que indica se ele é um site externo do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -142,10 +142,10 @@ Um valor booliano que indica se ele é um site externo do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -163,10 +163,10 @@ Um valor booliano que indica se ele é um site externo do MSMQ.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Falso                             |
+| Tem valor único       | Falso                             |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

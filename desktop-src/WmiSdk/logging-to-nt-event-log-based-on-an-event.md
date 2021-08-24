@@ -1,5 +1,5 @@
 ---
-description: A classe NTEventLogEventConsumer grava uma mensagem no log de eventos do Windows quando ocorre um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
+description: a classe NTEventLogEventConsumer grava uma mensagem no log de eventos Windows quando ocorre um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
 ms.assetid: ca998a91-d9f7-44ff-bb83-5ba92d68f31e
 ms.tgt_platform: multiple
 title: Registrando no log de eventos NT com base em um evento
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 69bf24c0d64c95a012b8681b88bde34dc28fa179
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8c070b1a52fe41f32b8610ff0931d33be7feb33f9f5cd6f6067652e963f6824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050704"
 ---
 # <a name="logging-to-nt-event-log-based-on-an-event"></a>Registrando no log de eventos NT com base em um evento
 
-A classe [**NTEventLogEventConsumer**](nteventlogeventconsumer.md) grava uma mensagem no log de eventos do Windows quando ocorre um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
+a classe [**NTEventLogEventConsumer**](nteventlogeventconsumer.md) grava uma mensagem no log de eventos Windows quando ocorre um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
 
 > [!Note]  
 > Os usuários autenticados não podem, por padrão, registrar eventos no log do aplicativo em um computador remoto. Como resultado, o exemplo descrito neste tópico falhará se você usar a propriedade **UNCServerName** da classe [**NTEventLogEventConsumer**](nteventlogeventconsumer.md) e especificar um computador remoto como seu valor. Para saber como alterar a segurança do log de eventos, consulte este [artigo da base de conhecimento](https://support.microsoft.com/kb/323076).
@@ -30,7 +30,7 @@ O procedimento básico para usar um consumidor padrão é descrito em [monitoran
 
 O procedimento a seguir descreve como criar um consumidor de eventos que grava no log de eventos do NT.
 
-**Para criar um consumidor de eventos que grava no log de eventos do Windows**
+**para criar um consumidor de eventos que grava no Log de eventos do Windows**
 
 1.  Em um arquivo formato MOF (MOF), crie uma instância de [**NTEventLogEventConsumer**](nteventlogeventconsumer.md) para receber os eventos solicitados na consulta. Para obter mais informações sobre como escrever código MOF, consulte [criando Classes formato MOF (MOF)](designing-managed-object-format--mof--classes.md).
 2.  Criar e nomear uma instância de [**\_ \_ EventFilter**](--eventfilter.md)e, em seguida, criar uma consulta para especificar o tipo de evento que dispara a gravação no log de eventos do NT.

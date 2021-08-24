@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af3fea99075399dcea2afa7ace40f0dbae57b01f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 71967dec6415e08de6534be547cad039aa2ba8182d428f50346c6398f1583516
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104506389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530686"
 ---
 # <a name="enumeration-syntax"></a>Sintaxe de enumeração
 
@@ -30,17 +30,17 @@ Sintaxe de enumeração (mecanismo de entrega).
 |--------------|---------------------------------------------------------------------------|
 | Nome         | Enumeração                                                               |
 | ID da sintaxe    | 2.5.5.9                                                                   |
-| ID DO OM        | 10                                                                        |
-| Tipo de MAPI    | LONG                                                                      |
-| Tipo de ADS     | ADSTYPE \_ inteiro                                                          |
-| Tipo de variante | \_I4 VT                                                                    |
-| Tipo SDS     | [System.Int32](/dotnet/api/system.int32) |
+| OM ID        | 10                                                                        |
+| Tipo MAPI    | LONG                                                                      |
+| Tipo ADS     | ADSTYPE \_ INTEGER                                                          |
+| Tipo de variante | VT \_ I4                                                                    |
+| Tipo de SDS     | [System.Int32](/dotnet/api/system.int32) |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Definido pelo ITU. Active Directory trata isso como um inteiro.
+Definido pela ITU. O Active Directory trata isso como um inteiro.
 
 ## <a name="see-also"></a>Confira também
 

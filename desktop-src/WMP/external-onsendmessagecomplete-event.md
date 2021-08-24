@@ -3,7 +3,7 @@ title: Evento external. OnSendMessageComplete
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | Evento external. OnSendMessageComplete
 ms.assetid: 9ae60aa5-4ecd-41dd-aeb0-afb1a3686982
 keywords:
-- Evento external. OnSendMessageComplete do Windows Media Player
+- Windows Media Player de evento external. OnSendMessageComplete
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05d4de69a753811537f60ae8a3244cfaf012f60d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a1dede59d2c52f20050a490e6ded1389e63884e598868e9736195280e3269a72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648726"
 ---
 # <a name="externalonsendmessagecomplete-event"></a>Evento external. OnSendMessageComplete
 
@@ -36,7 +36,7 @@ window.external.OnSendMessageComplete = FunctionName
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa é uma propriedade somente gravação que especifica o nome da função no script que o Windows Media Player chama quando o evento ocorre.
+essa é uma propriedade somente gravação que especifica o nome da função no script que Windows Media Player chama quando o evento ocorre.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -69,9 +69,9 @@ A mesma cadeia de caracteres que foi passada no parâmetro **param** de **SendMe
 
 O método **SendMessage** chama [IWMPContentPartner:: SendMessage](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-sendmessage), que retorna de forma assíncrona. Ou seja, ele retorna antes que a loja online termine de processar a mensagem. Quando o armazenamento online termina de processar a mensagem, ele chama [IWMPContentPartnerCallback:: SendMessageComplete](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartnercallback-sendmessagecomplete), que, por sua vez, chama o manipulador de eventos **OnSendMessageComplete** do script.
 
-Quando o armazenamento online chama **IWMPContentPartnerCallback:: SendMessageComplete**, ele fornece um código de resultado no parâmetro *bstrResult* . O Windows Media Player não interpreta esse código de resultado. Em vez disso, o Windows Media Player passa o código de resultado ao manipulador de eventos **OnSendMessageComplete** no parâmetro *Result* .
+Quando o armazenamento online chama **IWMPContentPartnerCallback:: SendMessageComplete**, ele fornece um código de resultado no parâmetro *bstrResult* . Windows Media Player não interpreta esse código de resultado. em vez disso, Windows Media Player passa o código de resultado ao manipulador de eventos **OnSendMessageComplete** no parâmetro de *resultado* .
 
-Nenhum dos parâmetros (*msg*, *param*, *Result*) do manipulador de eventos **OnSendMessageComplete** é interpretado pelo Windows Media Player. Os parâmetros têm significado apenas para a loja online.
+Nenhum dos parâmetros (*msg*, *param*, *Result*) do manipulador de eventos **OnSendMessageComplete** é interpretado por Windows Media Player. Os parâmetros têm significado apenas para a loja online.
 
 ## <a name="requirements"></a>Requisitos
 

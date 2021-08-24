@@ -1,19 +1,19 @@
 ---
-description: Indica a altitude com base na referência em PKEY \_ GPS \_ AltitudeRef.
+description: Indica altitude com base na referência em \_ AltitudeRef do GPS \_ PKEY.
 ms.assetid: 396f9c9e-4d13-4e0d-9ec5-14a1c49f059e
-title: System. GPS. altitude
+title: System.GPS.Altitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 181c3c07c81f905d627169c0ca51700298860a7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30035cb0b99dd08ff600dbad46d1219394d3c7abcf1297c3f520c0c7b19d04df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033534"
 ---
-# <a name="systemgpsaltitude"></a>System. GPS. altitude
+# <a name="systemgpsaltitude"></a>System.GPS.Altitude
 
-Indica a altitude com base na referência em PKEY \_ GPS \_ AltitudeRef. Calculado de PKEY \_ GPS \_ ALTITUDENUMERATOR e PKEY \_ GPS \_ AltitudeDenominator.
+Indica altitude com base na referência em \_ AltitudeRef do GPS \_ PKEY. Calculado de PKEY \_ GPS \_ AltitudeNumerator e PKEY \_ GPS \_ AltitudeDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,15 +33,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
-O requisito de uma referência de cadeia de caracteres indireta específica para o `label` atributo de **labelInfo** foi adicionado ao Windows Vista com Service Pack 1 (SP1).
+O requisito de uma referência de cadeia de caracteres indireta específica para o atributo de labelInfo foi adicionado para Windows `label` Vista com Service Pack 1 (SP1). 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -50,19 +50,19 @@ O requisito de uma referência de cadeia de caracteres indireta específica para
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ O requisito de uma referência de cadeia de caracteres indireta específica para
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -1,5 +1,5 @@
 ---
-description: O método AlignUp Arredonda um valor para cima até um limite de alinhamento especificado. Observação removida no Windows 7. .
+description: O método AlignUp Arredonda um valor para cima até um limite de alinhamento especificado. observação removida no Windows 7. .
 ms.assetid: fa2a6567-3eb1-4aa9-b966-2e88b15c67b1
 title: Método CPullPin. AlignUp (Pullpin. h)
 ms.topic: reference
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4f33ae2b7434d90d909315edda4d49e07d8adab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 34c45fe4a34e21647cd976adbf29dfe6723e4216d58166e7d1599d4c8d64d47e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687756"
 ---
 # <a name="cpullpinalignup-method"></a>Método CPullPin. AlignUp
 
 O método **AlignUp** Arredonda um valor para cima até um limite de alinhamento especificado.
 
 > [!Note]  
-> Removido do Windows 7.
+> removido do Windows 7.
 
  
 
@@ -62,7 +62,7 @@ Especifica o limite de alinhamento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o resultado alinhado.
 

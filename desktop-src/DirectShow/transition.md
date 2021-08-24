@@ -18,7 +18,7 @@ ms.locfileid: "119072250"
 
  
 
-O objeto de transição cria uma transição de vídeo entre faixas ou composições. Para criar esse objeto, chame o método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) .
+O objeto de transição cria uma transição de vídeo entre faixas ou composições. Para criar esse objeto, chame o [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
 O objeto de transição expõe as seguintes interfaces:
 

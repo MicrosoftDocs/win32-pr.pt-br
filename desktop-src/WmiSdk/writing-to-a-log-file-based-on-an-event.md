@@ -1,8 +1,8 @@
 ---
-description: A classe LogFileEventConsumer pode gravar texto predefinido em um arquivo de log quando ocorrer um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
+description: A classe LogFileEventConsumer pode gravar texto predefinido em um arquivo de log quando ocorre um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
 ms.assetid: c337e9f7-f40c-4d7d-a180-c053e24c882b
 ms.tgt_platform: multiple
-title: Gravando em um arquivo de log baseado em um evento
+title: Escrevendo em um arquivo de log com base em um evento
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,53 +10,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 33cc82925b6afc1690f2cd87607f21e9ea02fdbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 881435986a1097c2ba97160693ed15e28bae3d86019fb703adf6bf1e8b07f8a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049724"
 ---
-# <a name="writing-to-a-log-file-based-on-an-event"></a>Gravando em um arquivo de log baseado em um evento
+# <a name="writing-to-a-log-file-based-on-an-event"></a>Escrevendo em um arquivo de log com base em um evento
 
-A classe [**LogFileEventConsumer**](logfileeventconsumer.md) pode gravar texto predefinido em um arquivo de log quando ocorrer um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
+A [**classe LogFileEventConsumer**](logfileeventconsumer.md) pode gravar texto predefinido em um arquivo de log quando ocorre um evento especificado. Essa classe é um consumidor de eventos padrão que o WMI fornece.
 
-O procedimento básico para usar consumidores padrão é sempre o mesmo e está localizado em [monitoramento e resposta a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md).
+O procedimento básico para usar consumidores padrão é sempre o mesmo e está localizado em Monitoramento e resposta a [eventos com consumidores padrão.](monitoring-and-responding-to-events-with-standard-consumers.md)
 
-O procedimento a seguir adiciona o procedimento básico, é específico à classe [**LogFileEventConsumer**](logfileeventconsumer.md) e descreve como criar um consumidor de eventos que executa um programa.
+O procedimento a seguir adiciona ao procedimento básico, é específico à classe [**LogFileEventConsumer**](logfileeventconsumer.md) e descreve como criar um consumidor de eventos que executa um programa.
 
 **Para criar um consumidor de eventos que grava em um arquivo de log**
 
-1.  No arquivo formato MOF (MOF), crie uma instância de [**LogFileEventConsumer**](logfileeventconsumer.md) para receber os eventos solicitados na consulta, nomeie a instância na propriedade **Name** e coloque o caminho para o arquivo de log na propriedade **filename** .
+1.  No arquivo Managed Object Format (MOF), crie uma instância de [**LogFileEventConsumer**](logfileeventconsumer.md) para receber os eventos solicitados na consulta, nomeie a instância na propriedade **Name** e coloque o caminho para o arquivo de log na propriedade **Filename.**
 
-    Para obter mais informações, consulte [Designing formato MOF (MOF) classes](designing-managed-object-format--mof--classes.md).
+    Para obter mais informações, [consulte Designando classes Managed Object Format (MOF).](designing-managed-object-format--mof--classes.md)
 
-2.  Forneça o modelo de texto para gravar no arquivo de log na propriedade Text.
+2.  Forneça o modelo de texto a ser escrito no arquivo de log na propriedade Texto.
 
-    Para obter mais informações, consulte [usando modelos de cadeia de caracteres padrão](using-standard-string-templates.md).
+    Para obter mais informações, consulte [Usando modelos de cadeia de caracteres padrão](using-standard-string-templates.md).
 
 3.  Crie uma instância de [**\_ \_ EventFilter**](--eventfilter.md) e defina uma consulta para especificar os eventos que ativarão o consumidor.
 
-    Para obter mais informações, consulte [consultando com WQL](querying-with-wql.md).
+    Para obter mais informações, [consulte Consultando com WQL](querying-with-wql.md).
 
 4.  Crie uma instância de [**\_ \_ FilterToConsumerBinding**](--filtertoconsumerbinding.md) para associar o filtro à instância de [**LogFileEventConsumer**](logfileeventconsumer.md).
-5.  Para controlar quem lê ou grava em seu arquivo de log, defina a segurança no diretório em que o log está localizado no nível necessário.
+5.  Para controlar quem lê ou grava no arquivo de log, de definir a segurança no diretório em que o log está localizado para o nível necessário.
 6.  Compile o arquivo MOF usando [**Mofcomp.exe**](mofcomp.md).
 
 ## <a name="example"></a>Exemplo
 
-O exemplo nesta seção está no código MOF, mas você pode criar as instâncias programaticamente usando a [API de script para WMI](scripting-api-for-wmi.md) ou a [API com para WMI](com-api-for-wmi.md). O exemplo usa o LogFileEventConsumer padrão para criar uma classe de consumidor denominada LogFileEvent que grava uma linha no arquivo c: \\ logfile. log quando uma instância da classe LogFileEvent é criada.
+O exemplo nesta seção está no código MOF, mas você pode criar as instâncias programaticamente usando a API de Script para [WMI](scripting-api-for-wmi.md) ou a [API COM para WMI](com-api-for-wmi.md). O exemplo usa o LogFileEventConsumer padrão para criar uma classe de consumidor chamada LogFileEvent que grava uma linha no arquivo c: Logfile.log quando uma instância da classe \\ LogFileEvent é criada.
 
 O procedimento a seguir descreve como usar o exemplo.
 
 **Para usar o exemplo**
 
-1.  Copie a listagem MOF abaixo em um arquivo de texto e salve-a com uma extensão. mof.
+1.  Copie a listagem MOF abaixo em um arquivo de texto e salve-a com uma extensão .mof.
 2.  Em uma janela de comando, compile o arquivo MOF usando o comando a seguir.
 
-     *Nome do arquivo Mofcomp * * *. mof**
+    Nome do arquivo *Mofcomp***.mof* *
 
-3.  Abra o arquivo logfile. log para ver a linha especificada por LogFileEvent.Name: "evento de consumidor de evento de logfile".
+3.  Abra Logfile.log para ver a linha especificada por LogFileEvent.Name: "Evento do Consumidor de Eventos do Logfile".
 
 ``` syntax
 // Set the namespace as root\subscription.
@@ -123,7 +123,7 @@ instance of LogFileEvent
 
 <dl> <dt>
 
-[Monitorando e respondendo a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md)
+[Monitoramento e resposta a eventos com consumidores padrão](monitoring-and-responding-to-events-with-standard-consumers.md)
 </dt> </dl>
 
  

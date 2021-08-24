@@ -1,10 +1,10 @@
 ---
 title: Conjunto de propriedades Domain-Other-Parameters
-description: Conjunto de propriedades que permite o controle a uma lista de atributos de domínio.
+description: Conjunto de propriedades que permite o controle para uma lista de atributos de domínio.
 ms.assetid: 66c935c4-38cf-468a-b6e9-94541047c5e8
 ms.tgt_platform: multiple
 keywords:
-- Propriedade Domain-Other-Parameters do conjunto de propriedades do AD
+- Propriedade Domain-Other-Parameters definida pelo esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a9d5a7af10a2ade5ef4408c14c117678cd87a36b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7c46c98e3077d2284a3143bb569ae706b3d81fa37439b1bf19d815d75eaca152
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532426"
 ---
 # <a name="domain-other-parameters-property-set"></a>Conjunto de propriedades Domain-Other-Parameters
 
-Conjunto de propriedades que permite o controle a uma lista de atributos de domínio.
+Conjunto de propriedades que permite o controle para uma lista de atributos de domínio.
 
 
 
 | Entrada | Valor |
 |--------------|------------------------------------------|
-| CN           | Domínio-outros parâmetros                  |
-| Display-Name | Outros parâmetros de domínio (para uso por SAM) |
-| GUID de direitos  | b8119fd0-04f6-4762-ab7a-4986c76b3f9a     |
+| CN           | Domínio -Outros parâmetros                  |
+| Display-Name | Outros parâmetros de domínio (para uso pelo SAM) |
+| RIGHTS-GUID  | b8119fd0-04f6-4762-ab7a-4986c76b3f9a     |
 
 
 
@@ -48,9 +48,9 @@ Conjunto de propriedades que permite o controle a uma lista de atributos de dom�
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localização-exibição-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membros do conjunto de propriedades    | [**Réplica de domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Modificado-contagem**](a-modifiedcount.md)<br/> [**Informações de OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**Compatível com UAS**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membros do conjunto de propriedades    | [**Réplica de Domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Contagem de modificações**](a-modifiedcount.md)<br/> [**Informações do OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**UAS-Compat**](a-uascompat.md)<br/> |
 
 
 
@@ -60,9 +60,9 @@ Conjunto de propriedades que permite o controle a uma lista de atributos de dom�
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localização-exibição-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membros do conjunto de propriedades    | [**Réplica de domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Modificado-contagem**](a-modifiedcount.md)<br/> [**Informações de OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**Compatível com UAS**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membros do conjunto de propriedades    | [**Réplica de Domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Contagem de modificações**](a-modifiedcount.md)<br/> [**Informações do OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**UAS-Compat**](a-uascompat.md)<br/> |
 
 
 
@@ -72,9 +72,9 @@ Conjunto de propriedades que permite o controle a uma lista de atributos de dom�
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localização-exibição-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membros do conjunto de propriedades    | [**Réplica de domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Modificado-contagem**](a-modifiedcount.md)<br/> [**Informações de OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**Compatível com UAS**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membros do conjunto de propriedades    | [**Réplica de Domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Contagem de modificações**](a-modifiedcount.md)<br/> [**Informações do OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**UAS-Compat**](a-uascompat.md)<br/> |
 
 
 
@@ -84,9 +84,9 @@ Conjunto de propriedades que permite o controle a uma lista de atributos de dom�
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localização-exibição-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membros do conjunto de propriedades    | [**Réplica de domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Modificado-contagem**](a-modifiedcount.md)<br/> [**Informações de OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**Compatível com UAS**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membros do conjunto de propriedades    | [**Réplica de Domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Contagem de modificações**](a-modifiedcount.md)<br/> [**Informações do OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**UAS-Compat**](a-uascompat.md)<br/> |
 
 
 
@@ -96,9 +96,9 @@ Conjunto de propriedades que permite o controle a uma lista de atributos de dom�
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
-| Localização-exibição-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
-| Membros do conjunto de propriedades    | [**Réplica de domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Modificado-contagem**](a-modifiedcount.md)<br/> [**Informações de OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**Compatível com UAS**](a-uascompat.md)<br/> |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/>                                                                                                                                                                                                                                                                                                                   |
+| Localization-Display-ID | 59                                                                                                                                                                                                                                                                                                                                                             |
+| Membros do conjunto de propriedades    | [**Réplica de Domínio**](a-domainreplica.md)<br/> [**Forçar logoff**](a-forcelogoff.md)<br/> [**Contagem de modificações**](a-modifiedcount.md)<br/> [**Informações do OEM**](a-oeminformation.md)<br/> [**Função de servidor**](a-serverrole.md)<br/> [**Estado do servidor**](a-serverstate.md)<br/> [**UAS-Compat**](a-uascompat.md)<br/> |
 
 
 

@@ -38,7 +38,7 @@ Os computadores de origem do evento e o computador do coletor de eventos devem s
 
     **%SYSTEMROOT% \\ System32 \\ gpedit.msc**
 
-3. No nó **Configuração do** Computador, expanda o  **nó Modelos Administrativos,** expanda o nó Componentes Windows e selecione o **nó Encaminhamento de** Eventos.
+3. No nó **Configuração do** Computador, **expanda o**  nó Modelos Administrativos, expanda o nó Componentes Windows e selecione o **nó Encaminhamento de** Eventos.
 
 4. Clique com o botão direito **do mouse na configuração SubscriptionManager** e selecione **Propriedades**. Habilita **a configuração SubscriptionManager** e clique **no botão Mostrar** para adicionar um endereço de servidor à configuração. Adicione pelo menos uma configuração que especifica o computador do coletor de eventos. A **janela Propriedades de SubscriptionManager** contém uma guia **Explicar** que descreve a sintaxe da configuração.
 
@@ -191,7 +191,7 @@ Encontre mais informações neste artigo: https://technet.microsoft.com/library/
 
     Este é o certificado da AC Raiz ou Intermediária que emitiu os certificados instalados nos computadores de Origem do Evento (para evitar confusão, esta é a AC imediatamente acima do certificado na cadeia de *certificados)*:
 
-    **winrm create winrm/config/service/certmapping? Impressão digital** do emissor do certificado de AC em emissão = &lt;  &gt; **+Assunto=&#42;+URI=&#42; nome de usuário @{UserName="** &lt;  &gt; **"; Password="** &lt; _password_ &gt; **"} -remote:localhost**
+    **winrm create winrm/config/service/certmapping? Impressão digital** do emissor do certificado de AC emissor = &lt;  &gt; **+Assunto=&#42;+URI=&#42; nome de usuário @{UserName="** &lt;  &gt; **"; Password="** &lt; _password_ &gt; **"} -remote:localhost**
 
 3. De um cliente, teste o ouvinte e o mapeamento de certificado com o seguinte comando:
 
@@ -201,55 +201,55 @@ Encontre mais informações neste artigo: https://technet.microsoft.com/library/
 
     **O que acontece nesta etapa?**
     - O cliente se conecta ao Coletor de Eventos e envia o certificado especificado
-    - O coletor de eventos procura a AC emissora e verifica se o é um mapeamento de certificado correspondente
-    - O coletor de eventos valida o status da cadeia de certificados do cliente e de revogações
-    - Se as etapas acima obtiverem sucesso, a autenticação será concluída.
+    - O Coletor de Eventos procura a AC em emissão e verifica se o é um mapeamento de certificado correspondente
+    - O Coletor de Eventos valida a cadeia de certificados do cliente e o status de revogações
+    - Se as etapas acima são bem-sucedidas, a autenticação é concluída.
 
 > [!NOTE]
-> Você pode obter um erro de acesso negado ao reclamar do método de autenticação, o que poderia ser enganoso. Para solucionar problemas, verifique o log do CAPI no coletor de eventos.
+> Você pode receber um erro de acesso negado com a reclamações sobre o método de autenticação, o que pode ser enganoso. Para solucionar problemas, verifique o log CAPI no Coletor de Eventos.
 
-4. Liste as entradas de certmapping configuradas com o comando: **WinRM enum WinRM/config/Service/certmapping**
+4. Liste as entradas de certificado configuradas com o comando: **winrm enum winrm/config/service/certmapping**
 
 ### <a name="event-source-computer-configuration"></a>Configuração do computador de origem do evento
 
-1. Faça logon com uma conta de administrador e abra o Editor de Política de Grupo Local (gpedit. msc)
-2. navegue até o computador Local Policy\Computer \ modelos administrativos \ Windows Components\Event encaminhar.
-3. Abra a política "configurar o endereço do servidor, o intervalo de atualização e a autoridade de certificado do emissor de um Gerenciador de assinatura de destino".
-4. Habilite a política e clique no SubscriptionManagers "mostrar..." Button.
+1. Fazer logon com uma conta de administrador e abrir o Editor de Política de Grupo Local (gpedit.msc)
+2. Navegue até a Política do Computador Local\Configuração do Computador\Modelos Administrativos\Windows Components\Event Forwarding.
+3. Abra a política "Configurar o endereço do servidor, o intervalo de atualização e a autoridade de certificação do emissor de um Gerenciador de Assinatura de destino".
+4. Habilita a política e clique em SubscriptionManagers "Show..." Botão.
 5. Na janela SubscriptionManagers, insira a seguinte cadeia de caracteres:
 
-    **Servidor = https://** &lt; _FQDN do servidor_ &gt; do coletor de eventos **: 5986/WSMan/SubscriptionId/WEC, Refresh =** &lt; _Intervalo de atualização em segundos_ &gt; **, IssuerCA =** &lt; _Impressão digital do certificado de autoridade de certificação emissora_&gt;
+    **Server=HTTPS://** &lt; _FQDN do servidor do Coletor de Eventos_ &gt; **:5986/wsman/SubscriptionManager/WEC,Refresh=** &lt; _Intervalo de atualização em segundos_ &gt; **,IssuerCA=** &lt; _Impressão digital do certificado de AC em emissão_&gt;
 
-6. Execute a seguinte linha de comando para atualizar as configurações de Política de Grupo locais: gpupdate/force
-7. essas etapas devem produzir o evento 104 no computador de origem Visualizador de Eventos aplicativos e serviços Logs\Microsoft\ Windows log do \Eventlog-ForwardingPlugin\Operational com a seguinte mensagem:
+6. Execute a linha de comando a seguir para atualizar configurações Política de Grupo local:Gpupdate /force
+7. Essas etapas devem produzir o evento 104 em seu computador de origem Visualizador de Eventos Logs de Aplicativos e Serviços\Microsoft\Windows\Eventlog-ForwardingPlugin\Operational log com a seguinte mensagem:
 
-    "O encaminhador conectou-se com êxito ao Gerenciador de assinaturas no endereço &lt; FQDN &gt; seguido pelo evento 100 com a mensagem:" a assinatura &lt; sub_name &gt; foi criada com êxito ".
+    "O encaminhador se conectou com êxito ao gerenciador de assinaturas no endereço FQDN seguido pelo evento 100 com a mensagem: "A assinatura sub_name foi criada com &lt; &gt; &lt; &gt; êxito".
 
-8. No coletor de eventos, o status do tempo de execução da assinatura será exibido agora como um computador ativo.
-9. Abra o log do ForwardedEvents no coletor de eventos e verifique se você tem os eventos encaminhados dos computadores de origem.
+8. No Coletor de Eventos, o Status do Runtime da Assinatura mostrará agora 1 Computador ativo.
+9. Abra o log ForwardedEvents no Coletor de Eventos e verifique se você tem os eventos encaminhados dos computadores de origem.
 
-### <a name="grant-permission-on-the-private-key-of-the-client-certificate-on-the-event-source"></a>Conceder permissão na chave privada do certificado do cliente na origem do evento
+### <a name="grant-permission-on-the-private-key-of-the-client-certificate-on-the-event-source"></a>Conceder permissão na chave privada do certificado do cliente na Origem do Evento
 
-1. Abra o console de gerenciamento de certificados para o computador local no computador de origem do evento.
-2. Clique com o botão direito do mouse no certificado do cliente e gerencie chaves privadas.
-3. Conceda permissão de leitura ao usuário de serviço de rede.
+1. Abra o console de gerenciamento de Certificados para Computador local no computador de Origem do Evento.
+2. Clique com o botão direito do mouse no certificado do cliente e, em seguida, em Gerenciar chaves privadas.
+3. Conceda permissão de Leitura ao usuário DE SERVIÇO DE REDE.
 
-### <a name="event-subscription-configuration"></a>Configuração de assinatura de evento
+### <a name="event-subscription-configuration"></a>Configuração da assinatura de evento
 
-1. Abra Visualizador de Eventos no coletor de eventos e navegue até o nó assinaturas.
-2. Clique com o botão direito do mouse em assinaturas e escolha "criar assinatura..."
-3. Dê um nome e uma descrição opcional para a nova assinatura.
-4. Selecione a opção "computador de origem iniciado" e clique em "Selecionar grupos de computadores...".
-5. Em grupos de computadores, clique em "adicionar computadores que não são de domínio..." e digite o nome do host de origem do evento.
-6. Clique em "adicionar certificados..." e adicione o certificado da autoridade de certificação que emite os certificados do cliente. Você pode clicar em Exibir certificado para validar o certificado.
-7. Em autoridades de certificação, clique em OK para adicionar o certificado.
-8. Quando terminar de adicionar computadores, clique em OK.
-9. De volta às propriedades da assinatura, clique em selecionar eventos...
-10. Configure o filtro de consulta de eventos especificando o nível (s) de evento, log (s) de eventos ou origem (s) de evento, as IDs de evento e quaisquer outras opções de filtragem.
-11. De volta às propriedades da assinatura, clique em avançado...
-12. Escolha uma das opções de otimização para a entrega de eventos do evento de origem para o coletor de eventos ou deixe o padrão normal: 
-    1. **Minimizar largura de banda**: os eventos serão entregues menos frequência para economizar largura de banda.
-    2. **Minimizar latência**: os eventos serão entregues assim que ocorrerem para reduzir a latência de eventos.
-13. Altere o protocolo para HTTPS e clique em OK.
+1. Abra Visualizador de Eventos no Coletor de Eventos e navegue até o nó Assinaturas.
+2. Clique com o botão direito do mouse em Assinaturas e escolha "Criar Assinatura..."
+3. Dê um nome e uma descrição opcional para a nova Assinatura.
+4. Selecione a opção "Computador de origem iniciado" e clique em "Selecionar Grupos de Computadores...".
+5. Em Grupos de Computadores, clique em "Adicionar computadores que não são de domínio..." e digite o nome do host de origem do evento.
+6. Clique em "Adicionar Certificados..." e adicione o certificado da autoridade de certificação que em questão os certificados do cliente. Você pode clicar em Exibir Certificado para validar o certificado.
+7. Em Autoridades de Certificação, clique em OK para adicionar o certificado.
+8. Quando terminar de adicionar Computadores, clique em OK.
+9. De volta às Propriedades da Assinatura, clique em Selecionar Eventos...
+10. Configure o Filtro de Consulta de Eventos especificando os níveis de evento, os logs de eventos ou as origems do evento, as IDs de evento e quaisquer outras opções de filtragem.
+11. De volta às Propriedades da Assinatura, clique em Avançado...
+12. Escolha uma das opções de otimização para entrega de eventos do Evento de Origem para o Coletor de Eventos ou deixe o padrão Normal: 
+    1. **Minimizar largura de** banda: os eventos serão entregues com menos frequência para economizar largura de banda.
+    2. **Minimizar a latência:** os eventos serão entregues assim que ocorrerem para reduzir a latência de eventos.
+13. Altere o Protocolo para HTTPS e clique em OK.
 14. Clique em OK para criar a nova assinatura.
-15. Verifique o status de tempo de execução da assinatura clicando com o botão direito do mouse e escolhendo "status de tempo de execução"
+15. Verifique o status de runtime da Assinatura clicando com o botão direito do mouse e escolhendo "Status do Runtime"

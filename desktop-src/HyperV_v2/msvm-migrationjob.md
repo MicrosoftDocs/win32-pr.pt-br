@@ -60,12 +60,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ddecf34148e3ef07dc78af9b4f2dd45950644cfb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba979953a9e7a17df70247cdb176cba2f5782d4f9f6fc13d8f4addc161bbaf50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521196"
 ---
 # <a name="msvm_migrationjob-class"></a>\_Classe Msvm MigrationJob
 
@@ -455,21 +455,21 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Checking_Virtual_Machine_and_Storage_Compatibility"></span><span id="checking_virtual_machine_and_storage_compatibility"></span><span id="CHECKING_VIRTUAL_MACHINE_AND_STORAGE_COMPATIBILITY"></span>
 
-**Verificando a compatibilidade de máquina virtual e armazenamento** (302)
+**verificando a compatibilidade de máquina Virtual e Armazenamento** (302)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checking_Storage_Compatibility"></span><span id="checking_storage_compatibility"></span><span id="CHECKING_STORAGE_COMPATIBILITY"></span>
 
-**Verificando a compatibilidade de armazenamento** (303)
+**verificando a compatibilidade de Armazenamento** (303)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Checking_Storage_Migration"></span><span id="checking_storage_migration"></span><span id="CHECKING_STORAGE_MIGRATION"></span>
 
-**Verificando a migração de armazenamento** (304)
+**verificando a migração de Armazenamento** (304)
 
 
 </dt> <dd></dd> <dt>
@@ -483,14 +483,14 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Moving_Virtual_Machine_and_Storage"></span><span id="moving_virtual_machine_and_storage"></span><span id="MOVING_VIRTUAL_MACHINE_AND_STORAGE"></span>
 
-**Movendo a máquina virtual e o armazenamento** (306)
+**movendo máquina Virtual e Armazenamento** (306)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Moving_Storage"></span><span id="moving_storage"></span><span id="MOVING_STORAGE"></span>
 
-**Movendo o armazenamento** (307)
+**movendo Armazenamento** (307)
 
 
 </dt> <dd></dd> </dl>
@@ -591,33 +591,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O usuário que é notificado após a conclusão ou falha do trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O usuário que é notificado após a conclusão ou falha do trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como 2 (OK).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como 2 (OK).
 
 </dd> <dt>
 
@@ -630,7 +630,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve a ação de recuperação quando a propriedade **recoveryaction** da instância é 1 (outra). Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Uma cadeia de caracteres que descreve a ação de recuperação quando a **propriedade RecoveryAction** da instância é 1 (Outro). Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -643,81 +643,81 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O usuário que enviou o trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O usuário que enviou o trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **PercentComplete**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **MinValue** (0), **MaxValue** (100), **unidades** ("percent")
+Qualificadores: **MinValue** ( 0 ), **MaxValue** ( 100 ), **Units** ( "Percent" )
 </dt> </dl>
 
-A porcentagem de conclusão do trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O percentual de conclusão do trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer o status de integridade de alto nível e detalhado do elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer status de saúde detalhado e de alto nível do elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **Prioridade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A importância da execução de um trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+A importância da execução de um trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
-**Recuperação de**
+**RecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descreve a ação de recuperação a ser executada para um trabalho de execução sem êxito. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Descreve a ação de recuperação a ser tomada para um trabalho executado sem êxito. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
-<span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>Não **continuar** (2)
+<span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>**Não continuar** (2)
 </dt> <dt>
 
 <span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continuar com o próximo trabalho** (3)
 </dt> <dt>
 
-<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Executar trabalho novamente** (4)
+<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Executar trabalho de novo** (4)
 </dt> <dt>
 
-<span id="Run_Recovery_Job_"></span><span id="run_recovery_job_"></span><span id="RUN_RECOVERY_JOB_"></span>**Executar trabalho de recuperação** (5)
+<span id="Run_Recovery_Job_"></span><span id="run_recovery_job_"></span><span id="RUN_RECOVERY_JOB_"></span>**Executar trabalho de recuperação** (5 )
 </dt> </dl>
 
 </dd> <dt>
@@ -731,18 +731,18 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **MinValue** (-31), **MaxValue** (31)
+Qualificadores: **MinValue** ( -31 ), **MaxValue** ( 31 )
 </dt> </dl>
 
-O dia do mês em que o trabalho deve ser processado. Há diferentes interpretações para essa propriedade, dependendo do valor de **RunDayOfWeek**.
+O dia do mês em que o trabalho deve ser processado. Há interpretações diferentes para essa propriedade, dependendo do valor de **RunDayOfWeek**.
 
-Quando **RunDayOfWeek** é 0 e **RunDay** é positivo, **RunDay** define o dia do mês em que o trabalho é processado. Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 12, o trabalho será processado nos <sup>12 dias do</sup> mês.
+Quando **RunDayOfWeek** é 0 e RunDay é positivo, **o RunDay** define o dia do mês em que o trabalho é processado.  Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 12, o trabalho será processado no dia 12 <sup></sup> do mês.
 
-Quando **RunDayOfWeek** é 0 e **RunDay** é negativo, **RunDay** define o número de dias antes do último dia do mês em que o trabalho é processado.  1 indica o último dia do mês, 2 indica um dia antes do último dia do mês e assim por diante. Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 1, o trabalho será processado no último dia do mês.
+Quando **RunDayOfWeek** é 0 e RunDay é negativo, **o RunDay** define o número de dias antes do último dia do mês em que o trabalho é processado.   1 indica o último dia do mês, 2 indica um dia antes do último dia do mês e assim por diante. Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 1, o trabalho será processado no último dia do mês.
 
-Quando **RunDayOfWeek** não for 0, **RunDayOfWeek** será o dia da semana em que o trabalho será processado, em relação a **RunDay**. Por exemplo, se **RunDay** for 15 e **RunDayOfWeek** for 7 (+ sábado), o trabalho será processado no primeiro sábado, em ou <sup>após 15 dias</sup> do mês. Se **RunDay** for 20 e **RunDayOfWeek** for 7 (sábado), o trabalho será processado no primeiro sábado, em ou antes <sup>dos 20 dias</sup> do mês. Se **RunDay** for 1 e **RunDayOfWeek** for 1 (domingo), o trabalho será processado no último domingo do mês.
+Quando **RunDayOfWeek** não é 0, **RunDayOfWeek** é o dia da semana em que o trabalho será processado, em relação ao **RunDay.** Por exemplo, se **RunDay** for 15 e **RunDayOfWeek** for 7 (+Sábado), o trabalho será processado no primeiro sábado no dia ou após o 15º dia do mês.<sup></sup> Se **RunDay** for 20 e **RunDayOfWeek** for 7 ( sábado), o trabalho será processado no primeiro sábado no dia ou antes do dia 20 <sup></sup> do mês. Se **RunDay** for 1 e **RunDayOfWeek** for 1 ( domingo), o trabalho será processado no último domingo do mês.
 
-Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -755,29 +755,29 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um inteiro positivo ou negativo usado em conjunto com **RunDay** para indicar o dia da semana ou mês em que o trabalho é processado. Consulte a descrição da propriedade **RunDay** para obter mais informações. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Um inteiro positivo ou negativo usado em conjunto com **o RunDay** para indicar o dia da semana ou mês em que o trabalho é processado. Consulte a descrição da **propriedade RunDay** para obter mais informações. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
-<span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>**-Sábado** (7)
+<span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>**-Saturday** ( 7)
 </dt> <dt>
 
-<span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>**-Sexta** (6)
+<span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>**-Friday** ( 6)
 </dt> <dt>
 
-<span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>**-Quinta** (5)
+<span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>**-Thursday** ( 5)
 </dt> <dt>
 
-<span id="-Wednesday"></span><span id="-wednesday"></span><span id="-WEDNESDAY"></span>**-Quarta** (4)
+<span id="-Wednesday"></span><span id="-wednesday"></span><span id="-WEDNESDAY"></span>**-Wednesday** ( 4)
 </dt> <dt>
 
-<span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>**-Terça-feira** (3)
+<span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>**-Tuesday** ( 3)
 </dt> <dt>
 
-<span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>**-Segunda** (2)
+<span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>**-Monday** ( 2)
 </dt> <dt>
 
-<span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>**-Domingo** (1)
+<span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>**-Sunday** ( 1)
 </dt> <dt>
 
 <span id="ExactDayOfMonth"></span><span id="exactdayofmonth"></span><span id="EXACTDAYOFMONTH"></span>**ExactDayOfMonth** (0)
@@ -786,7 +786,7 @@ Um inteiro positivo ou negativo usado em conjunto com **RunDay** para indicar o 
 <span id="Sunday"></span><span id="sunday"></span><span id="SUNDAY"></span>**Domingo** (1)
 </dt> <dt>
 
-<span id="Monday"></span><span id="monday"></span><span id="MONDAY"></span>**Segunda** (2)
+<span id="Monday"></span><span id="monday"></span><span id="MONDAY"></span>**Segunda-feira** (2)
 </dt> <dt>
 
 <span id="Tuesday"></span><span id="tuesday"></span><span id="TUESDAY"></span>**Terça-feira** (3)
@@ -801,7 +801,7 @@ Um inteiro positivo ou negativo usado em conjunto com **RunDay** para indicar o 
 <span id="Friday"></span><span id="friday"></span><span id="FRIDAY"></span>**Sexta-feira** (6)
 </dt> <dt>
 
-<span id="Saturday_"></span><span id="saturday_"></span><span id="SATURDAY_"></span>**Sábado** (7)
+<span id="Saturday_"></span><span id="saturday_"></span><span id="SATURDAY_"></span>**Sábado** (7 )
 </dt> </dl>
 
 </dd> <dt>
@@ -815,7 +815,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O mês durante o qual o trabalho deve ser processado. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O mês durante o qual o trabalho deve ser processado. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
@@ -852,7 +852,7 @@ O mês durante o qual o trabalho deve ser processado. Essa propriedade é herdad
 <span id="November"></span><span id="november"></span><span id="NOVEMBER"></span>**Novembro** (10)
 </dt> <dt>
 
-<span id="December_"></span><span id="december_"></span><span id="DECEMBER_"></span>**Dezembro** (11)
+<span id="December_"></span><span id="december_"></span><span id="DECEMBER_"></span>**Dezembro** (11 )
 </dt> </dl>
 
 </dd> <dt>
@@ -860,39 +860,39 @@ O mês durante o qual o trabalho deve ser processado. Essa propriedade é herdad
 **RunStartInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O intervalo de tempo após a meia-noite quando o trabalho deve ser processado. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O intervalo de tempo após a meia-noite em que o trabalho deve ser processado. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **ScheduledStartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A hora de início agendada para o trabalho, se aplicável. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+A hora de início agendada para o trabalho, se aplicável. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **StartTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A hora em que o trabalho começou. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+A hora em que o trabalho começou. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -905,72 +905,72 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de **OperationalStatus** . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como "OK".
+Cadeias de caracteres que descrevem os **vários valores de matriz OperationalStatus.** Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como "OK".
 
 </dd> <dt>
 
 **TimeBeforeRemoval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A quantidade de tempo, em minutos, que o trabalho é retido após a conclusão da execução, com êxito ou falha na execução. O trabalho deve permanecer em existência por algum período de tempo, independentemente do valor da propriedade **DeleteOnCompletion** . O padrão é de cinco minutos. Essa propriedade é herdada do [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))e é sempre definida como 00000000000500.000000:000.
+A quantidade de tempo, em minutos, que o trabalho é retido após a execução concluída, seja com êxito ou falhando nessa execução. O trabalho deve permanecer em existência por algum período, independentemente do valor da **propriedade DeleteOnCompletion.** O padrão é de cinco minutos. Essa propriedade é herdada [**de CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))e sempre é definida como 00000000000500.000000:000.
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data ou a hora em que o estado do trabalho foi alterado pela última vez. Se o estado do trabalho não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo de 0. Se uma alteração de estado foi solicitada, mas rejeitada ou ainda não processada, a propriedade não deve ser atualizada. Essa propriedade é herdada do [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+A data ou a hora em que o estado do trabalho foi alterado pela última vez. Se o estado do trabalho não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo 0. Se uma alteração de estado tiver sido solicitada, mas rejeitada ou ainda não processada, a propriedade não deverá ser atualizada. Essa propriedade é herdada de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> <dt>
 
-**Timeenvio**
+**TimeSubmitted**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A hora em que o trabalho foi enviado. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+A hora em que o trabalho foi enviado. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **UntilTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A hora em que o trabalho não é válido ou deve ser parado. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+A hora em que o trabalho não é válido ou deve ser interrompido. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -993,10 +993,10 @@ O nome exclusivo do sistema virtual afetado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

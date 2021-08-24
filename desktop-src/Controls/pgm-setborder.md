@@ -3,7 +3,7 @@ title: Mensagem de PGM_SETBORDER (commctrl. h)
 description: Define o tamanho da borda atual para o controle de pager. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetBorder do pager.
 ms.assetid: 073a1f9e-f05b-4203-9035-8106e87e55cd
 keywords:
-- Controles de PGM_SETBORDER de mensagens do Windows
+- controles de Windows de mensagem de PGM_SETBORDER
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a987246a56da213098ba8632044af97ae51462df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c44433189c9d791aba1d50372176309682c1361c5b0efe31b11aaa99e9b322b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540526"
 ---
 # <a name="pgm_setborder-message"></a>\_Mensagem de SETborder do PGM
 
@@ -39,7 +39,7 @@ Novo tamanho da borda, em pixels. Esse valor não deve ser maior que o botão de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor INT que contém o tamanho da borda anterior, em pixels.
 
@@ -49,9 +49,9 @@ Retorna um valor INT que contém o tamanho da borda anterior, em pixels.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

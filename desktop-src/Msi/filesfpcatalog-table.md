@@ -4,12 +4,12 @@ ms.assetid: 70c8b64a-cf15-411c-8388-4a7e3051f45c
 title: Tabela FileSFPCatalog
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2300b73cc1639d8a54e206ea609043cf657c91f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41bec6e31cba93730cc65b04ffdfb4a509f0cd817ba709cc029edfb47c4c4e60
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581586"
 ---
 # <a name="filesfpcatalog-table"></a>Tabela FileSFPCatalog
 
@@ -23,8 +23,8 @@ A tabela FileSFPCatalog tem as colunas a seguir.
 
 | Coluna       | Tipo                         | Chave | Nullable |
 |--------------|------------------------------|-----|----------|
-| Arquivo\_       | [Identificador](identifier.md) | S   | N        |
-| SFPCatalog\_ | [Filename](filename.md)     | S   | N        |
+| Arquivo\_       | [Identificador](identifier.md) | Y   | N        |
+| SFPCatalog\_ | [Filename](filename.md)     | Y   | N        |
 
 
 

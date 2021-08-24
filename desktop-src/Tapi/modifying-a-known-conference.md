@@ -4,16 +4,16 @@ ms.assetid: 7f05d62e-2bcc-4d98-8a71-97ed20a12af2
 title: Modificando uma conferência conhecida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5bd58003b276bd3cdd54da2e7ed0df4f154311e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00b139b05f70f801a28b91ecb6c2773fd740f10df7c0fd2b8e86b904b210cc50
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575596"
 ---
 # <a name="modifying-a-known-conference"></a>Modificando uma conferência conhecida
 
-\[Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O fragmento de código a seguir ilustra a modificação do período de tempo de uma conferência. O período de tempo padrão é de trinta minutos. Nesse fragmento, o período de tempo é definido como um ano.
 

@@ -35,8 +35,8 @@ ms.locfileid: "119619886"
 
 Inicializa uma nova instância da classe EsentOutOfMemoryException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOutOfMemoryException()
 
 [Classe EsentOutOfMemoryException](./esentoutofmemoryexception-class.md)
 
-[Membros EsentOutOfMemoryException](./esentoutofmemoryexception-members.md)
+[Membros do EsentOutOfMemoryException](./esentoutofmemoryexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

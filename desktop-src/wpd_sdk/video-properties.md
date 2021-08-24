@@ -1,5 +1,5 @@
 ---
-description: Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de vídeo.
+description: Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de vídeo.
 ms.assetid: e6df5b2d-ceb8-4de0-b60b-9102c77143fe
 title: Propriedades do vídeo (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 1f44f32ab19c5ad10cc9c8dd5bdb8816ccc944f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6e7bbab3416f50a95d2ae29e2be0ef5ecdcad6eed0112f940e5c34b593f2b79a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105785161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083380"
 ---
 # <a name="video-properties"></a>Propriedades do vídeo
 
-Os dispositivos portáteis do Windows oferecem suporte às seguintes propriedades de vídeo.
+Windows Os dispositivos portáteis oferecem suporte às seguintes propriedades de vídeo.
 
 
 

@@ -1,38 +1,38 @@
 ---
-description: As \_ constantes de sinalizador de bit LINEROAMMODE descrevem o status de roaming de um dispositivo de linha.
+description: As constantes de sinalizador de bits LINEROAMMODE \_ descrevem o status de roaming de um dispositivo de linha.
 ms.assetid: af0eb263-8deb-44ab-8acb-00e4ff7930ab
-title: Constantes de LINEROAMMODE_ (TAPI. h)
+title: LINEROAMMODE_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3e40c40291567e7800b53070f882bf1e0bdac93
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d9c896b2d716dc1d6e57b9a2aec52c335657669a5bd0f0c20a904d725a7f5bb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119514815"
 ---
-# <a name="lineroammode_-constants"></a>\_Constantes LINEROAMMODE
+# <a name="lineroammode_-constants"></a>Constantes LINEROAMMODE \_
 
-As constantes de sinalizador de bit **LINEROAMMODE \_** descrevem o status de roaming de um dispositivo de linha.
+As constantes de sinalizador de bits **LINEROAMMODE \_** descrevem o status de roaming de um dispositivo de linha.
 
 <dl> <dt>
 
-<span id="LINEROAMMODE_HOME"></span><span id="lineroammode_home"></span>**\_página inicial do LINEROAMMODE**
+<span id="LINEROAMMODE_HOME"></span><span id="lineroammode_home"></span>**LINEROAMMODE \_ HOME**
 </dt> <dd> <dl> <dt>
 
 
 
-A linha está conectada ao nó da rede doméstica.
+A linha está conectada ao nó de rede da página principal.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEROAMMODE_ROAMA"></span><span id="lineroammode_roama"></span>**LINEROAMMODE \_ roama**
+<span id="LINEROAMMODE_ROAMA"></span><span id="lineroammode_roama"></span>**LINEROAMMODE \_ ROAMA**
 </dt> <dd> <dl> <dt>
 
 
 
-A linha é conectada ao roam-uma transportadora e as chamadas são cobradas de acordo.
+A linha está conectada à operadora Roam-A e as chamadas são cobradas de acordo.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,34 +42,34 @@ A linha é conectada ao roam-uma transportadora e as chamadas são cobradas de a
 
 
 
-A linha é conectada à transportadora do roam-B e as chamadas são cobradas de acordo.
+A linha está conectada à operadora Roam-B e as chamadas são cobradas de acordo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEROAMMODE_UNAVAIL"></span><span id="lineroammode_unavail"></span>**LINEROAMMODE não \_ disp.**
+<span id="LINEROAMMODE_UNAVAIL"></span><span id="lineroammode_unavail"></span>**LINEROAMMODE \_ UNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
 
-O modo de roaming não está disponível e não será conhecido.
+O modo de roam não está disponível e não será conhecido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEROAMMODE_UNKNOWN"></span><span id="lineroammode_unknown"></span>**LINEROAMMODE \_ desconhecido**
+<span id="LINEROAMMODE_UNKNOWN"></span><span id="lineroammode_unknown"></span>**LINEROAMMODE \_ DESCONHECIDO**
 </dt> <dd> <dl> <dt>
 
 
 
-O modo de roaming é desconhecido no momento, mas pode ser conhecido mais tarde.
+No momento, o modo de roam é desconhecido, mas pode se tornar conhecido posteriormente.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Sem extensibilidade. Todos os 32 bits são reservados.
+Nenhuma extensibilidade. Todos os 32 bits são reservados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,8 +77,8 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.0 ou posterior<br/>                                             |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

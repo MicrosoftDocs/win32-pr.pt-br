@@ -1,19 +1,19 @@
 ---
 title: Instalando um provedor
-description: O código de exemplo a seguir demonstra a operação de instalação do provedor da plataforma de filtragem do Windows.
+description: o código de exemplo a seguir demonstra a operação de instalação do provedor da plataforma de filtragem de Windows.
 ms.assetid: e39d97ba-2147-4d1e-a07c-c950a05c05f3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f1aff4a606342f757a49bb774f38e9ff0902aaf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 89f969b6f6bf482b5491c66617e81f04ca293ccc98c156d9039a09a009173217
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068996"
 ---
 # <a name="installing-a-provider"></a>Instalando um provedor
 
-O código de exemplo a seguir demonstra a operação de instalação do provedor da plataforma de filtragem do Windows.
+o código de exemplo a seguir demonstra a operação de instalação do provedor da plataforma de filtragem de Windows.
 
 
 ```C++
@@ -132,9 +132,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

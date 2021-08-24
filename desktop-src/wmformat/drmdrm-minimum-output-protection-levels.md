@@ -1,10 +1,10 @@
 ---
-title: Estrutura de DRM_MINIMUM_OUTPUT_PROTECTION_LEVELS (wmdrmsdk. h)
-description: A \_ estrutura de níveis de proteção de saída mínima de DRM \_ \_ \_ contém os níveis mínimos de proteção de saída (OPLs) para reprodução de vários tipos de conteúdo. Um dispositivo deve dar suporte ao mínimo de OPL para um tipo de dados para receber esse tipo de dados do leitor.
+title: DRM_MINIMUM_OUTPUT_PROTECTION_LEVELS estrutura (Wmdrmsdk.h)
+description: A estrutura NÍVEIS MÍNIMOS DE PROTEÇÃO DE SAÍDA DRM contém os níveis mínimos de proteção de saída \_ \_ \_ \_ (OPLs) para reprodução de vários tipos de conteúdo. Um dispositivo deve dar suporte ao OPL mínimo para um tipo de dados receber esse tipo de dados do leitor.
 ms.assetid: 6232ecd4-9829-4de3-9810-70e3d3c129a9
 keywords:
-- Formato de mídia do Windows de estrutura de DRM_MINIMUM_OUTPUT_PROTECTION_LEVELS
-- estruturar formato de mídia do Windows
+- DRM_MINIMUM_OUTPUT_PROTECTION_LEVELS formato de mídia windows da estrutura
+- formato de mídia de janelas de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 060fdda4cd1c3cc665e396a72d46ac05e721abe4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5559527507f0399a09661dfe380f51d11e10750eddf7d996b38d110e4f38e37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105786131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119708916"
 ---
-# <a name="drm_minimum_output_protection_levels-structure"></a>\_Estrutura de \_ \_ níveis de proteção de saída mínima do DRM \_
+# <a name="drm_minimum_output_protection_levels-structure"></a>Estrutura DE \_ NÍVEIS \_ MÍNIMOS DE \_ PROTEÇÃO DE \_ SAÍDA DRM
 
-A estrutura de **\_ níveis de \_ \_ proteção \_ de saída mínima de DRM** contém os níveis mínimos de proteção de saída (OPLs) para reprodução de vários tipos de conteúdo. Um dispositivo deve dar suporte ao mínimo de OPL para um tipo de dados para receber esse tipo de dados do leitor.
+A **estrutura NÍVEIS \_ MÍNIMOS DE PROTEÇÃO DE SAÍDA \_ \_ \_ DRM** contém os níveis mínimos de proteção de saída (OPLs) para reprodução de vários tipos de conteúdo. Um dispositivo deve dar suporte ao OPL mínimo para um tipo de dados receber esse tipo de dados do leitor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,41 +48,41 @@ typedef struct DRM_MINIMUM_OUTPUT_PROTECTION_LEVELS {
 **wCompressedDigitalVideo**
 </dt> <dd>
 
-OPL mínimo necessário para receber vídeo digital compactado.
+O OPL mínimo necessário para receber vídeo digital compactado.
 
 </dd> <dt>
 
 **wUncompressedDigitalVideo**
 </dt> <dd>
 
-OPL mínimo necessário para receber vídeo digital não compactado.
+O OPL mínimo necessário para receber vídeo digital descompactado.
 
 </dd> <dt>
 
 **wAnalogVideo**
 </dt> <dd>
 
-OPL mínimo necessário para receber vídeo analógico.
+O OPL mínimo necessário para receber vídeo análogo.
 
 </dd> <dt>
 
 **wCompressedDigitalAudio**
 </dt> <dd>
 
-OPL mínimo necessário para receber áudio digital compactado.
+O OPL mínimo necessário para receber áudio digital compactado.
 
 </dd> <dt>
 
 **wUncompressedDigitalAudio**
 </dt> <dd>
 
-OPL mínimo necessário para receber áudio digital descompactado.
+O OPL mínimo necessário para receber áudio digital descompactado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada como um membro da estrutura [**\_ \_ OPL de reprodução DRM**](drmdrm-play-opl.md) .
+Essa estrutura é usada como membro da estrutura [**\_ \_ OPL DO DRM PLAY.**](drmdrm-play-opl.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Essa estrutura é usada como um membro da estrutura [**\_ \_ OPL de reprodução
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

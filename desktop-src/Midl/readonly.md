@@ -1,9 +1,9 @@
 ---
 title: atributo readonly
-description: O atributo \ ReadOnly \ proíbe a atribuição a uma variável.
+description: O atributo \ readonly\ proíbe a atribuição a uma variável.
 ms.assetid: b81064e6-e788-48d1-9958-203f1e3c7e4d
 keywords:
-- MIDL de atributo ReadOnly
+- atributo readonly MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b4ef4ca5f32b96146ed5ab0ec085d32b24dca3a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4d0d534efe8df1f4d05cd0b536a78094f903870d896114ee8b614511e067025b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013674"
 ---
 # <a name="readonly-attribute"></a>atributo readonly
 
-O atributo **\[ ReadOnly \]** proíbe a atribuição a uma variável.
+O **\[ atributo \] readonly** proíbe a atribuição a uma variável.
 
 ``` syntax
 [readonly [, optional-attributes]] data-type identifier
@@ -31,7 +31,7 @@ O atributo **\[ ReadOnly \]** proíbe a atribuição a uma variável.
 
 <dl> <dt>
 
-*opcional-atributos* 
+*atributos opcionais* 
 </dt> <dd>
 
 Zero ou mais atributos MIDL.
@@ -41,7 +41,7 @@ Zero ou mais atributos MIDL.
 *tipo de dados* 
 </dt> <dd>
 
-O tipo dos dados contidos no *identificador*.
+O tipo dos dados contidos pelo *identificador*.
 
 </dd> <dt>
 
@@ -54,7 +54,7 @@ Um nome pelo qual o software pode se referir ao local de armazenamento de dados.
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ ReadOnly \]** proíbe a atribuição a uma variável. somente há suporte para **\[ ReadOnly \]** no nível do parâmetro, não no nível do método.
+O **\[ atributo \] readonly** proíbe a atribuição a uma variável. **\[ somente leitura \] tem** suporte no nível do parâmetro, não no nível do método.
 
 ### <a name="flags"></a>Flags
 
@@ -70,10 +70,10 @@ HRESULT Method3([in, readonly] int iMmutable);
 
 <dl> <dt>
 
-[TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[Typeflags](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -82,6 +82,6 @@ HRESULT Method3([in, readonly] int iMmutable);
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

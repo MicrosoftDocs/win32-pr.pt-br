@@ -13,15 +13,15 @@ ms.locfileid: "119685666"
 ---
 # <a name="external-device-transport-property-set"></a>Conjunto de propriedades de transporte de dispositivo externo
 
-Esse conjunto de Propriedades controla o transporte de dados de e para um dispositivo externo. Na maioria dos casos, os aplicativos não devem usar esse conjunto de propriedades diretamente. Em vez disso, use a interface [**IAMExtTransport**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport) .
+Esse conjunto de propriedades controla o transporte de dados de e para um dispositivo externo. Na maioria dos casos, os aplicativos não devem usar esse conjunto de propriedades diretamente. Em vez disso, use a interface [**IAMExtTransport.**](/windows/desktop/api/Strmif/nn-strmif-iamexttransport)
 
-A tabela a seguir lista as propriedades que são relevantes para aplicativos de modo de usuário. para obter uma descrição completa desse conjunto de propriedades, consulte o Microsoft Windows Driver Development Kit DDK.
+A tabela a seguir lista as propriedades relevantes para aplicativos no modo de usuário. Para uma descrição completa desse conjunto de propriedades, consulte o DDK do Microsoft Windows Driver Development Kit.
 
 
 
 | Rótulo | Valor |
 |-------------------|---------------------------|
-| GUID do Conjunto de Propriedades | transporte de extensão propsetid \_ \_ |
+| GUID do Conjunto de Propriedades | PROPSETID \_ EXT \_ TRANSPORT |
 
 
 
@@ -31,8 +31,8 @@ A tabela a seguir lista as propriedades que são relevantes para aplicativos de 
 
 | ID da propriedade                                                                           | Descrição                                  |
 |---------------------------------------------------------------------------------------|----------------------------------------------|
-| [**KSPROPERTY \_ EXTXPORT \_ ATN \_ Search**](ksproperty-extxport-atn-search.md)           | Pesquisa um número de faixa absoluto (ATN). |
-| [**pesquisa de código de KSPROPERTY \_ EXTXPORT \_ \_**](ksproperty-extxport-timecode-search.md) | Pesquisa um código de tempo.                    |
+| [**KSPROPERTY \_ EXTXPORT \_ ATN \_ SEARCH**](ksproperty-extxport-atn-search.md)           | Pesquisa um NÚMERO de faixa absoluto (ATN). |
+| [**KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH**](ksproperty-extxport-timecode-search.md) | Pesquisa um código de hora.                    |
 
 
 

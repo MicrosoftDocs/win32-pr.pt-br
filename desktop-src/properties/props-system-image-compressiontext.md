@@ -1,19 +1,19 @@
 ---
-description: A forma amigável de System. Image. Compression. Não destinado a ser analisado programaticamente.
+description: A forma amigável de System.Image.Compression. Não se destina a ser analisado programaticamente.
 ms.assetid: 4031fb56-d21c-4b7e-80a6-0ff5673fc09e
-title: System. Image. CompressionText
+title: System.Image.CompressionText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cc68ca09e43c1bd5ecdc4e9a71e94e4f7532694
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bcb4e0cc29765e7f3249324049c4c97b536a4668f3fea1765a874c08ac41e7c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103662100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553846"
 ---
-# <a name="systemimagecompressiontext"></a>System. Image. CompressionText
+# <a name="systemimagecompressiontext"></a>System.Image.CompressionText
 
-A forma amigável de System. Image. Compression. Não destinado a ser analisado programaticamente.
+A forma amigável de System.Image.Compression. Não se destina a ser analisado programaticamente.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -3,7 +3,7 @@ title: Mensagem de LB_INITSTORAGE (WinUser. h)
 description: Aloca memória para armazenar itens da caixa de listagem. Essa mensagem é usada antes que um aplicativo adicione um grande número de itens a uma caixa de listagem.
 ms.assetid: abc49049-3424-46c6-981a-b858afe88883
 keywords:
-- Controles de LB_INITSTORAGE de mensagens do Windows
+- controles de Windows de mensagem de LB_INITSTORAGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28216705dd0446aeb11adad9d45f9e604171e62c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe873244358bf171c3fcedc994facd36e194edf38e0ee0442f12556cc4342514
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544266"
 ---
 # <a name="lb_initstorage-message"></a>INITSTORAGE de mensagens de LB \_
 
@@ -34,7 +34,7 @@ Aloca memória para armazenar itens da caixa de listagem. Essa mensagem é usada
 
 O número de itens a serem adicionados.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows me): o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
+Windows 95/Windows 98/Windows Millennium Edition (Windows Me): o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
 
 </dd> <dt>
 
@@ -45,7 +45,7 @@ A quantidade de memória, em bytes, a ser alocada para cadeias de caracteres de 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a mensagem for bem-sucedida, o valor de retorno será o número total de itens para os quais a memória foi alocada previamente, ou seja, o número total de itens adicionados por todas as mensagens **\_ INITSTORAGE de lb** bem-sucedidas.
 
@@ -63,9 +63,9 @@ A **mensagem \_ INITSTORAGE de lb** ajuda a acelerar a inicialização de caixas
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

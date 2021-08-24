@@ -1,8 +1,8 @@
 ---
-description: Uma \_ classe de ação CIM é uma operação que faz parte de um processo para criar um elemento de software em seu estado seguinte ou para eliminar o elemento de software no estado atual.
+description: Uma classe cim Action é uma operação que faz parte de um processo para criar um elemento de software em seu próximo estado ou para eliminar o elemento \_ de software no estado atual.
 ms.assetid: d1f72aaf-7e26-414f-99e7-ff8f14d66360
 ms.tgt_platform: multiple
-title: Classe CIM_Action
+title: CIM_Action classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,19 +23,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a5f37fa4b62c1e8b678533de4abaa7f6a172904e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 171912934b7161a763bac75ceeb06a7ece0c521b4cefb163d67a9e2f42c34302
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080990"
 ---
-# <a name="cim_action-class"></a>\_Classe de ação CIM
+# <a name="cim_action-class"></a>Classe de ação CIM \_
 
-Uma classe de **\_ ação CIM** é uma operação que faz parte de um processo para criar um elemento de software em seu estado seguinte ou para eliminar o elemento de software no estado atual.
+Uma **classe cim \_ Action** é uma operação que faz parte de um processo para criar um elemento de software em seu próximo estado ou para eliminar o elemento de software no estado atual.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -61,20 +61,20 @@ class CIM_Action
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ ação CIM** tem estes tipos de membros:
+A **classe Cim \_ Action** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ ação CIM** tem esses métodos.
+A **classe Cim \_ Action** tem esses métodos.
 
 
 
 | Método                                              | Descrição                                                   |
 |:----------------------------------------------------|:--------------------------------------------------------------|
-| [**Chame**](invoke-method-in-class-cim-action.md) | Executa uma ação específica. Não implementado pelo WMI.<br/> |
+| [**Invoke**](invoke-method-in-class-cim-action.md) | Toma uma ação específica. Não implementado pelo WMI.<br/> |
 
 
 
@@ -82,11 +82,11 @@ A classe de **\_ ação CIM** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ ação CIM** tem essas propriedades.
+A **classe Cim \_ Action** tem essas propriedades.
 
 <dl> <dt>
 
-**ActionID**
+**Actionid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -95,7 +95,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador exclusivo atribuído a uma ação específica para um elemento de software.
@@ -114,7 +114,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
 </dd> <dt>
 
@@ -134,13 +134,13 @@ Descrição do objeto.
 **Direção**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se um objeto **de \_ ação CIM** específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "instalar" ou para remover o elemento de software atual, como "Desinstalar".
+Indica se um objeto de Ação **CIM \_** específico faz parte de uma sequência de ações para fazer a transição do elemento de software atual para seu próximo estado, como "Instalar", ou para remover o elemento de software atual, como "Desinstalar".
 
 <dt>
 
@@ -169,7 +169,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Name**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Name**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identifica o elemento de software.
@@ -185,7 +185,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementID**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementID**"), [**chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador para o elemento de software.
@@ -195,13 +195,13 @@ Identificador para o elemento de software.
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**SoftwareElementState**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**SoftwareElementState**"), [**chave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Estado de um elemento de software.
@@ -237,18 +237,18 @@ Descreve os detalhes necessários para a instalação bem-sucedida e os detalhes
 
 </dt> <dd>
 
-Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado em execução (ou seja, o próximo estado).
+Descreve os detalhes necessários para a execução bem-sucedida e os detalhes (condições e ações) necessários para criar um elemento de software no estado de execução (ou seja, o próximo estado).
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (3)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Executando** (3)
 
 
 </dt> <dd>
 
-Descreve os detalhes necessários para monitorar e operar em um elemento inicial.
+Descreve os detalhes necessários para monitorar e operar em um elemento start.
 
 </dd> </dl>
 
@@ -257,16 +257,16 @@ Descreve os detalhes necessários para monitorar e operar em um elemento inicial
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Informações do componente de software DMTF \| 2,5 ")
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**TargetOperatingSystem**"), [**chave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.5")
 </dt> </dl>
 
-Sistema operacional de destino do elemento de software proprietário.
+Sistema operacional de destino do elemento de software de propriedade.
 
 <dt>
 
@@ -279,7 +279,7 @@ Sistema operacional de destino do elemento de software proprietário.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -318,7 +318,7 @@ Mac OS
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Unix Digital** (6)
+<span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -330,13 +330,13 @@ Mac OS
 
 </dt> <dd>
 
-Abrir VMS
+Abrir VMs
 
 </dd> <dt>
 
 <span id="HPUX"></span><span id="hpux"></span>
 
-<span id="HPUX"></span><span id="hpux"></span>HP **(8** )
+<span id="HPUX"></span><span id="hpux"></span>**HPUX** (8)
 
 
 </dt> <dd>
@@ -368,7 +368,7 @@ HP-UX
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-<span id="OS_2"></span><span id="os_2"></span>**Sistema operacional/2** (12)
+<span id="OS_2"></span><span id="os_2"></span>**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -380,7 +380,7 @@ HP-UX
 
 </dt> <dd>
 
-VM (máquina virtual) da Microsoft para Java
+VM (Máquina Virtual) da Microsoft para Java
 
 </dd> <dt>
 
@@ -398,13 +398,13 @@ VM (máquina virtual) da Microsoft para Java
 
 </dt> <dd>
 
-Windows 3. x
+Windows 3.x
 
 </dd> <dt>
 
 <span id="WIN95"></span><span id="win95"></span>
 
-<span id="WIN95"></span><span id="win95"></span>**Win95** (16)
+<span id="WIN95"></span><span id="win95"></span>**WIN95** (16)
 
 
 </dt> <dd>
@@ -415,7 +415,7 @@ Windows 95
 
 <span id="WIN98"></span><span id="win98"></span>
 
-<span id="WIN98"></span><span id="win98"></span>**Win98** (17)
+<span id="WIN98"></span><span id="win98"></span>**WIN98** (17)
 
 
 </dt> <dd>
@@ -426,7 +426,7 @@ Windows 98
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-<span id="WINNT"></span><span id="winnt"></span>**WinNT** (18)
+<span id="WINNT"></span><span id="winnt"></span>**WINNT** (18)
 
 
 </dt> <dd>
@@ -437,7 +437,7 @@ Windows NT
 
 <span id="WINCE"></span><span id="wince"></span>
 
-<span id="WINCE"></span><span id="wince"></span>**WinCE** (19)
+<span id="WINCE"></span><span id="wince"></span>**WINCE** (19)
 
 
 </dt> <dd>
@@ -466,21 +466,21 @@ NCR 3000
 
 <span id="OSF"></span><span id="osf"></span>
 
-<span id="OSF"></span><span id="osf"></span>**Uso** (22)
+<span id="OSF"></span><span id="osf"></span>**OSF** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-<span id="DC_OS"></span><span id="dc_os"></span>**DC/os** (23)
+<span id="DC_OS"></span><span id="dc_os"></span>**DC/SO** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Unix dependente** (24)
+<span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -501,14 +501,14 @@ NCR 3000
 
 <span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>
 
-<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Subsequentes** (27)
+<span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>**Sequenciado** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IRIX"></span><span id="irix"></span>
 
-<span id="IRIX"></span><span id="irix"></span>**IRIX** (28)
+<span id="IRIX"></span><span id="irix"></span>**I LTDA** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -536,7 +536,7 @@ NCR 3000
 
 <span id="ASERIES"></span><span id="aseries"></span>
 
-<span id="ASERIES"></span><span id="aseries"></span>**ASeries** (32)
+<span id="ASERIES"></span><span id="aseries"></span>**ASERIES** (32)
 
 
 </dt> <dd>
@@ -552,7 +552,7 @@ Uma série
 
 </dt> <dd>
 
-NSK tandem
+Tandem NSK
 
 </dd> <dt>
 
@@ -563,7 +563,7 @@ NSK tandem
 
 </dt> <dd>
 
-NT em tandem
+Tandem NT
 
 </dd> <dt>
 
@@ -580,7 +580,7 @@ BS2000/OSD
 
 <span id="LINUX"></span><span id="linux"></span>
 
-<span id="LINUX"></span><span id="linux"></span>**Linux** (36)
+<span id="LINUX"></span><span id="linux"></span>**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -594,7 +594,7 @@ BS2000/OSD
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-<span id="XENIX"></span><span id="xenix"></span>**Xenix** (38)
+<span id="XENIX"></span><span id="xenix"></span>**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -608,7 +608,7 @@ BS2000/OSD
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Unix interativo** (40)
+<span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -640,7 +640,7 @@ BSD UNIX
 
 <span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>
 
-<span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>**GNU Hurd** (44)
+<span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>**GNU – Obstáculos** (44)
 
 
 </dt> <dd></dd> <dt>
@@ -658,14 +658,14 @@ Mac OS 9
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel Mach** (46)
+<span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>**Kernel DE NUM** (46)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Inferno** (47)
+<span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>**Ela** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -700,7 +700,7 @@ Mac OS 9
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**Menta** (52)
+<span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -712,7 +712,7 @@ Mac OS 9
 
 </dt> <dd>
 
-Ser so
+Ser sistema operacional
 
 </dd> <dt>
 
@@ -725,7 +725,7 @@ Ser so
 
 <span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>
 
-<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NEXTSTEP** (55)
+<span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>**NextStep** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -737,7 +737,7 @@ Ser so
 
 </dt> <dd>
 
-Sistema operacional Palm
+So da Mão
 
 </dd> <dt>
 
@@ -787,12 +787,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ softwareelement**](cim-softwareelement.md).**Version**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" MIF. \|Componente DMTF \| 1,3 ")
+Qualificadores: [**Propagado**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ SoftwareElement**](cim-softwareelement.md).**Version**"), [**cim \_ key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
 Versão da operação.
 
-A versão da operação deve estar em um dos seguintes formatos:
+A versão da operação deve estar em uma das seguintes formas:
 
 -   <major>.<minor>.<revision>
 -   <major>.<minor><letter><revision>
@@ -801,9 +801,9 @@ A versão da operação deve estar em um dos seguintes formatos:
 
 ## <a name="remarks"></a>Comentários
 
-O WMI não implementa essa classe. Consulte [classes Win32](win32-provider.md) para classes derivadas da **\_ ação de CIM**.
+O WMI não implementa essa classe. Consulte [Classes Win32 para](win32-provider.md) classes derivadas da ação **CIM \_**.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -813,8 +813,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -823,7 +823,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[Classes CIM](/windows/desktop/WmiSdk/cimclas)
+[CIM Classes](/windows/desktop/WmiSdk/cimclas)
 </dt> </dl>
 
  

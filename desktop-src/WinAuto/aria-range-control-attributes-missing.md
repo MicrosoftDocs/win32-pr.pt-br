@@ -6,18 +6,18 @@ keywords:
 - AriaRangeControlAttributesAbsentId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f8cd32a7a4807f06c26bd013ee3fd294d33cc57
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: b44e4e5c69ea6971846ed9ef5f3a6108bb488c6effb21a6cbc75953ed1bb780e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104008533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645111"
 ---
 # <a name="aria-range-control-attributes-missing"></a>Atributos de controle de intervalo do ARIA ausentes
 
 ## <a name="text"></a>Texto
 
-O elemento tem a função **ProgressBar** ou **Slider** , mas não está expondo os atributos correspondentes do **Aria-valuemin** , **Aria-VALUEMAX** e **aria-valuenow** .
+O elemento tem  **função de** barra de progresso ou controle deslizante, mas não expõe atributos **aria-valuemin** correspondentes, **aria-valuemax** e **aria-valuenow.**
 
 ## <a name="type"></a>Tipo
 
@@ -25,11 +25,11 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-Esse erro se aplica a elementos que têm uma [**função**](https://developer.mozilla.org/docs/Web/HTML/Reference) (implícita ou explícita) que é igual a **ProgressBar**, **Slider** ou **SpinButton**.
+Esse erro se aplica a elementos que têm uma [**função**](https://developer.mozilla.org/docs/Web/HTML/Reference) (implícita ou explícita) igual à barra de **progresso,** controle deslizante ou **spinbutton**.
 
-De acordo com a especificação do WAI-ARIA (aplicativos de Internet sofisticados) acessíveis, os elementos que têm a função **ProgressBar**, **Slider** ou **SpinButton** devem expor os atributos [**Aria-VALUEMAX**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**Aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) .
+De acordo com a especificação Iniciativa de Acessibilidade da Web – Aplicativos de Internet Rich Internet Acessíveis (GUID-ARIA), os elementos que têm a função **progressbar**, **controle** deslizante ou **spinbutton** devem expor os atributos [**aria-valuemax**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow.**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)
 
-Para corrigir esse erro, defina os atributos [**Aria-VALUEMAX**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**Aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) e mantenha o valor do **aria-valuenow** dinamicamente para garantir que o valor atual seja exposto. Você também deve definir o atributo [**Aria-valuetext**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) para adicionar mais significado ao valor de **aria-valuenow** exposto.
+Para corrigir esse erro, de definir os atributos [**aria-valuemax**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA), [**aria-valuemin**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA)e [**aria-valuenow**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) e manter dinamicamente o valor **aria-valuenow** para garantir que o valor atual seja exposto. Você também deve definir o [**atributo aria-valuetext**](https://developer.mozilla.org/docs/Web/Accessibility/ARIA) para adicionar mais significado ao valor **aria-valuenow** exposto.
 
 ## <a name="example"></a>Exemplo
 
@@ -56,12 +56,12 @@ Para corrigir esse erro, defina os atributos [**Aria-VALUEMAX**](https://develop
 
 <dl> <dt>
 
-[Atributos de controle de intervalo do ARIA incompatíveis](aria-range-control-attribute-out-of-range.md)
+[Atributos de controle de intervalo ARIA incompatíveis](aria-range-control-attribute-out-of-range.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

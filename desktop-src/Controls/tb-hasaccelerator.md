@@ -3,7 +3,7 @@ title: Mensagem de TB_HASACCELERATOR (commctrl. h)
 description: Recupera uma contagem de botões da barra de ferramentas que têm o caractere de acelerador especificado.
 ms.assetid: 41167815-fb64-4203-a32c-b2a88ce7bce1
 keywords:
-- Controles de TB_HASACCELERATOR de mensagens do Windows
+- controles de Windows de mensagem de TB_HASACCELERATOR
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2544eae629876e4527ea4e47477b50ea59b796c8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 420f06e71c6920c266c96d8b2580549fa0eaace2bd3abdd37524502d4039aa7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078280"
 ---
 # <a name="tb_hasaccelerator-message"></a>TB de \_ mensagem HASACCELERATOR
 
@@ -45,7 +45,7 @@ Ponteiro para um **int** que recebe o número de botões que têm o caractere de
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -63,9 +63,9 @@ Primeiro, o sistema consulta todos os botões da barra de ferramentas para os ac
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

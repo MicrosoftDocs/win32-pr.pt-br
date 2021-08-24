@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa01d20bfeebfa3f689a58aae5c5face8b879e3c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b2400be04e6955807bb6b2a60e712323f8993e55ecc031086afb3597f3962091
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103837966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632556"
 ---
 # <a name="id3dx11effectgetconstantbufferbyname-method"></a>Método ID3DX11Effect:: GetConstantBufferByName
 
@@ -52,7 +52,7 @@ O nome do buffer de constantes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **ID3DX11EffectConstantBuffer**](id3dx11effectconstantbuffer.md)\***
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aafbce1e784e1f205f0d32e045785125c1fb5aaa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d77a7d7608e9facc1e0fc6973b19a3d9db36900fa8d550896cc3058389f367bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119666376"
 ---
 # <a name="wm_dpichanged-message"></a>Mensagem do WM \_ DPICHANGED
 
@@ -44,7 +44,7 @@ O DPI atual para uma janela sempre é igual ao último DPI enviado pelo **WM \_ 
 *wParam* 
 </dt> <dd>
 
-O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) do *wParam* contém o valor do eixo Y do novo DPI da janela. O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) do *wParam* contém o valor do eixo X do novo DPI da janela. Por exemplo, 96, 120, 144 ou 192. Os valores dos eixos X e Y são idênticos aos aplicativos do Windows.
+O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) do *wParam* contém o valor do eixo Y do novo DPI da janela. O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) do *wParam* contém o valor do eixo X do novo DPI da janela. Por exemplo, 96, 120, 144 ou 192. os valores dos eixos X e Y são idênticos para os aplicativos Windows.
 
 </dd> <dt>
 
@@ -55,13 +55,13 @@ Um ponteiro para uma estrutura [**Rect**](/windows/desktop/api/windef/ns-windef-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
-Essa mensagem só é relevante para processos por thread com reconhecimento de **\_ \_ \_ dpi \_ de monitor** ou **reconhecimento de DPI por segmentos com \_ \_ \_ \_ reconhecimento de monitor** . Ele poderá ser recebido em determinadas alterações de DPI se a janela de nível superior ou o processo estiver sendo executado como **dpi** ou **reconhecimento de dpi de sistema**, mas nessas situações poderá ser ignorado com segurança. Para obter mais informações sobre os diferentes tipos de conscientização, consulte reconhecimento de [**dpi de processo \_ \_**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness) e [**\_ reconhecimento de DPI**](/windows/desktop/api/windef/ne-windef-dpi_awareness). As versões mais antigas do Windows exigiam reconhecimento de DPI para serem ligadas no nível de um aplicativo. Esses aplicativos usam **\_ \_ reconhecimento de dpi de processo**. Atualmente, o reconhecimento de DPI está vinculado a threads e a janelas individuais, e não a todo o aplicativo. Esses aplicativos usam **\_ reconhecimento de DPI**.
+Essa mensagem só é relevante para processos por thread com reconhecimento de **\_ \_ \_ dpi \_ de monitor** ou **reconhecimento de DPI por segmentos com \_ \_ \_ \_ reconhecimento de monitor** . Ele poderá ser recebido em determinadas alterações de DPI se a janela de nível superior ou o processo estiver sendo executado como **dpi** ou **reconhecimento de dpi de sistema**, mas nessas situações poderá ser ignorado com segurança. Para obter mais informações sobre os diferentes tipos de conscientização, consulte reconhecimento de [**dpi de processo \_ \_**](/windows/desktop/api/ShellScalingApi/ne-shellscalingapi-process_dpi_awareness) e [**\_ reconhecimento de DPI**](/windows/desktop/api/windef/ne-windef-dpi_awareness). as versões mais antigas do Windows reconhecimento de DPI necessário para serem vinculadas no nível de um aplicativo. Esses aplicativos usam **\_ \_ reconhecimento de dpi de processo**. Atualmente, o reconhecimento de DPI está vinculado a threads e a janelas individuais, e não a todo o aplicativo. Esses aplicativos usam **\_ reconhecimento de DPI**.
 
 Você só precisa usar o eixo X ou o valor do eixo Y ao dimensionar seu aplicativo, pois eles são os mesmos.
 
@@ -132,9 +132,9 @@ Uma maneira alternativa de dimensionar um valor é converter o valor de DPI em u
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 
 
 

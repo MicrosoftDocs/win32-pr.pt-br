@@ -37,12 +37,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85692a7ccc9cbb602a34da714a5eeb488ea5c4a7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3f0201f29d19969de6050ce3eeebf29a7bee73792dcc6b61b2359e5660db12d4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105766249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685916"
 ---
 # <a name="nap-type-constants"></a>Constantes de tipo NAP
 
@@ -402,9 +402,9 @@ O intervalo de valores possíveis para o tamanho máximo de um pacote SoH.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                                |
-| parâmetro<br/>                   | <dl> <dt>NapTypes. h; </dt> <dt>NapEnforcementClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                                                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapTypes. h; </dt> <dt>NapEnforcementClient. h</dt> </dl> |
 
 
 

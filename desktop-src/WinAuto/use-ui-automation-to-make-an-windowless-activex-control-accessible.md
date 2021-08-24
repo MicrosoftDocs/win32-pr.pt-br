@@ -1,41 +1,41 @@
 ---
-title: Como usar a automação da interface do usuário para tornar um controle ActiveX sem janela acessível
-description: Descreve como usar a automação da interface do usuário da Microsoft \ 32; API para garantir que o controle Microsoft ActiveX sem janela esteja acessível para aplicativos cliente de tecnologia assistencial (AT).
+title: como usar a automação da interface do usuário para tornar um controle de ActiveX sem janelas acessível
+description: Descreve como usar a automação da interface do usuário da Microsoft \ 32; API para garantir que o controle de ActiveX da Microsoft sem janelas esteja acessível para aplicativos cliente de tecnologia assistencial (AT).
 ms.assetid: D584E90D-6537-4F48-8553-0DCA061FAF2A
 keywords:
-- Controle ActiveX sem janela, acessibilidade
+- controle de ActiveX sem janela, acessibilidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba0ada1d26463b0654c1808f6e4fd43f571687d9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 68ef56d5f3a06bbfa21502c791163f2251506a10fda7da9d07ee04941ad39de1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570356"
 ---
-# <a name="how-to-use-ui-automation-to-make-a-windowless-activex-control-accessible"></a>Como usar a automação da interface do usuário para tornar um controle ActiveX sem janela acessível
+# <a name="how-to-use-ui-automation-to-make-a-windowless-activex-control-accessible"></a>como usar a automação da interface do usuário para tornar um controle de ActiveX sem janelas acessível
 
-Descreve como usar a API de automação da interface do usuário da Microsoft para garantir que o controle Microsoft ActiveX sem janela esteja acessível a aplicativos cliente de tecnologia assistencial (AT).
+descreve como usar a API de automação da interface do usuário da microsoft para garantir que o controle da microsoft ActiveX sem janelas seja acessível a aplicativos cliente de tecnologia assistencial (AT).
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles ActiveX](/windows/desktop/com/activex-controls)
+-   [ActiveX Controles](/windows/desktop/com/activex-controls)
 -   [Automação da Interface do Usuário](entry-uiauto-win32.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
 -   Programação do COM (Microsoft Win32 e Component Object Model)
--   Controles ActiveX sem janela
+-   controles de ActiveX sem janela
 -   Provedores de automação da interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
 ### <a name="step-1-implement-the-ui-automation-provider-interfaces"></a>Etapa 1: implementar as interfaces do provedor de automação da interface do usuário.
 
-Para tornar seu aplicativo acessível, você deve implementar as interfaces do provedor de automação da interface do usuário para o controle ActiveX sem janela, incluindo [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple), [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment), [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot)e [**IRawElementProviderAdviseEvents**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovideradviseevents). Você deve implementar essas interfaces da mesma forma como faria para um controle baseado em janela, exceto conforme descrito nas etapas a seguir. Para obter mais informações sobre como implementar interfaces de provedor UIA, consulte [Guia do programador do provedor de automação de IU](uiauto-providerportal.md).
+para tornar seu aplicativo acessível, você deve implementar as interfaces do provedor de automação da interface do usuário para o controle de ActiveX sem janela, incluindo [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple), [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment), [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot)e [**IRawElementProviderAdviseEvents**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovideradviseevents). Você deve implementar essas interfaces da mesma forma como faria para um controle baseado em janela, exceto conforme descrito nas etapas a seguir. Para obter mais informações sobre como implementar interfaces de provedor UIA, consulte [Guia do programador do provedor de automação de IU](uiauto-providerportal.md).
 
 ### <a name="step-2-implement-the-iserviceprovider-interface"></a>Etapa 2: implementar a interface IServiceProvider.
 
@@ -179,12 +179,12 @@ STDMETHODIMP CMyAccessibleUIAControl::GetRuntimeId(SAFEARRAY **ppRetVal)
 
 <dl> <dt>
 
-[Usar MSAA para tornar um controle ActiveX sem janela acessível](use-msaa-to-make-an-windowless-activex-control-accessible.md)
+[Use a MSAA para tornar um controle de ActiveX sem janela acessível](use-msaa-to-make-an-windowless-activex-control-accessible.md)
 </dt> <dt>
 
-[Acessibilidade de controle ActiveX sem janela](windowless-activex-control-accessibility.md)
+[acessibilidade de controle de ActiveX sem janelas](windowless-activex-control-accessibility.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

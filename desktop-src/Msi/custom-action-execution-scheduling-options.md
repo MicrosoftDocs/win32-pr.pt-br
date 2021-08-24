@@ -4,12 +4,12 @@ ms.assetid: a3ffeecb-cdd6-43af-a3fe-48e3e843ec8b
 title: Opções de agendamento de execução de ação personalizada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bfa5aee44f3ad357eefc6f9dd9c5ee5ae45797c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91adbee99684a5a9db0701c2371c8c517547b4d91881518d72fe7c25c0d189be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520096"
 ---
 # <a name="custom-action-execution-scheduling-options"></a>Opções de agendamento de execução de ação personalizada
 
@@ -20,7 +20,7 @@ Observe que o instalador:
 -   Executa ações em uma tabela de sequência imediatamente por padrão.
 -   Não executará uma ação se o campo expressão condicional da tabela de sequência for avaliado como false.
 -   Processa a tabela de sequências da interface do usuário no processo do cliente se o nível da interface dos usuários internos estiver definido como o modo de interface de usuário completo (consulte [**MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui) para obter uma descrição dos níveis de IU).
--   É um serviço registrado por padrão ao usar o Windows 2000 e, nesse caso, a tabela de sequências de execução é processada no serviço do instalador.
+-   é um serviço registrado por padrão ao usar Windows 2000 e, nesse caso, a tabela de sequências de execução é processada no serviço do instalador.
 
 Você pode usar os seguintes sinalizadores de opção para controlar várias execuções imediatas de ações personalizadas. Para definir uma opção, adicione o valor nessa tabela ao valor no campo tipo da [tabela CustomAction](customaction-table.md). Nenhum dos sinalizadores a seguir deve ser usado com [ações personalizadas de execução adiada](deferred-execution-custom-actions.md).
 

@@ -3,7 +3,7 @@ title: Mensagem de LB_ITEMFROMPOINT (WinUser. h)
 description: Obtém o índice de base zero do item mais próximo ao ponto especificado em uma caixa de listagem.
 ms.assetid: 5739eccb-e708-4ddb-ac97-d3e6c6120842
 keywords:
-- Controles de LB_ITEMFROMPOINT de mensagens do Windows
+- controles de Windows de mensagem de LB_ITEMFROMPOINT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5c4f06b9de8e6580c81c7faf7ddb8c287a148b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddddd58780cb4b140501c567d699373cb1fa03cbf212332bea71611a4add3788
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575926"
 ---
 # <a name="lb_itemfrompoint-message"></a>ITEMFROMPOINT de mensagens de LB \_
 
@@ -45,7 +45,7 @@ O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) espe
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno contém o índice do item mais próximo no [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)). O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) será zero se o ponto especificado estiver na área do cliente da caixa de listagem, ou um se estiver fora da área do cliente.
 
@@ -55,9 +55,9 @@ O valor de retorno contém o índice do item mais próximo no [**LOWORD**](/prev
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

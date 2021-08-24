@@ -4,8 +4,8 @@ description: True se a publicação permitir que assinantes registrados assinem.
 ms.assetid: be3b618e-bdf5-4bb4-ac4d-51dc97e73408
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-AllowKnownPullSubscription
-- Esquema de AD do atributo mS-SQL-AllowKnownPullSubscription
+- MS-SQL-AllowKnownPullSubscription atributo AD Schema
+- mS-SQL-AllowKnownPullSubscription atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d07789bf68f470db69219765628ebc82b2014428
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6243c0a9158e965a3b15a676dc076ceea86c9a8c106e72dc5f29c82dc3a7289d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705451"
 ---
 # <a name="ms-sql-allowknownpullsubscription-attribute"></a>Atributo MS-SQL-AllowKnownPullSubscription
 
@@ -30,12 +30,12 @@ True se a publicação permitir que assinantes registrados assinem.
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-AllowKnownPullSubscription    |
-| LDAP-Display-Name | mS-SQL-AllowKnownPullSubscription    |
+| Ldap-Display-Name | mS-SQL-AllowKnownPullSubscription    |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | Quando a replicação é configurada.           |
 | Attribute-Id      | 1.2.840.113556.1.4.1403              |
-| System-ID-GUID    | c3bb7054-d34b-11d2-999a-0000f87a57d4 |
+| System-Id-Guid    | c3bb7054-d34b-11d2-999a-0000f87a57d4 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ True se a publicação permitir que assinantes registrados assinem.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ True se a publicação permitir que assinantes registrados assinem.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ True se a publicação permitir que assinantes registrados assinem.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ True se a publicação permitir que assinantes registrados assinem.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -129,7 +129,7 @@ True se a publicação permitir que assinantes registrados assinem.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ True se a publicação permitir que assinantes registrados assinem.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -150,7 +150,7 @@ True se a publicação permitir que assinantes registrados assinem.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ True se a publicação permitir que assinantes registrados assinem.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -171,7 +171,7 @@ True se a publicação permitir que assinantes registrados assinem.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Descreve os recursos da \_ instância Msvm MetricService associada.
+description: Descreve os recursos da instância do Msvm \_ MetricService associada.
 ms.assetid: 4E24D675-8265-4B5E-9551-550510B138FE
-title: Classe Msvm_MetricServiceCapabilities
+title: Msvm_MetricServiceCapabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 635e153d3184e74ea581a045e3d6d54a5fea199f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 37fed3fead642ecfc5370d55c9f8b954477406b4b276cac392d9776a0cefb338
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521326"
 ---
-# <a name="msvm_metricservicecapabilities-class"></a>\_Classe Msvm MetricServiceCapabilities
+# <a name="msvm_metricservicecapabilities-class"></a>Classe Msvm \_ MetricServiceCapabilities
 
-Descreve os recursos da instância [**Msvm \_ MetricService**](msvm-metricservice.md) associada.
+Descreve os recursos da instância do [**Msvm \_ MetricService**](msvm-metricservice.md) associada.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,13 +63,13 @@ class Msvm_MetricServiceCapabilities : CIM_MetricServiceCapabilities
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ MetricServiceCapabilities** tem estes tipos de membros:
+A **classe Msvm \_ MetricServiceCapabilities** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ MetricServiceCapabilities** tem essas propriedades.
+A **classe Msvm \_ MetricServiceCapabilities** tem essas propriedades.
 
 <dl> <dt>
 
@@ -82,39 +82,39 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "recursos do serviço de métrica do Hyper-V".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Funcionalidades do Serviço de Métrica do Hyper-V".
 
 </dd> <dt>
 
 **ControllableManagedElements**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **ArrayType** ("indexado")
+Qualificadores: **ArrayType** ("Indexado")
 </dt> </dl>
 
-Identifica as instâncias de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) que podem ser controladas pela instância **\_ MetricService do CIM** associada. Se essa propriedade for **nula**, todos os elementos poderão ser controlados. Essa propriedade é herdada do **CIM \_ MetricServiceCapabilities**.
+Identifica as instâncias do [**\_ ManagedElement cim**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) que podem ser controladas pela instância **cim \_ metricService** associada. Se essa propriedade for **Null,** todos os elementos poderão ser controlados. Essa propriedade é herdada de **\_ MetricServiceCapabilities do CIM.**
 
 </dd> <dt>
 
 **ControllableMetrics**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **ArrayType** ("indexado")
+Qualificadores: **ArrayType** ("Indexado")
 </dt> </dl>
 
-Identifica as instâncias de **\_ BaseMetricDefinition CIM** que podem ser controladas pela instância **\_ MetricService do CIM** associada. Se essa propriedade for **nula**, todas as métricas poderão ser controladas. Essa propriedade é herdada do **CIM \_ MetricServiceCapabilities**.
+Identifica as instâncias do **CIM \_ BaseMetricDefinition** que podem ser controladas pela instância **cim \_ metricService** associada. Se essa propriedade for **Null,** todas as métricas poderão ser controladas. Essa propriedade é herdada de **\_ MetricServiceCapabilities do CIM.**
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "define os recursos do serviço de métrica do Hyper-V".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Define funcionalidades de serviço de métrica do Hyper-V".
 
 </dd> <dt>
 
@@ -140,20 +140,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "recursos do serviço de métrica do Hyper-V".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Funcionalidades do Serviço de Métrica do Hyper-V".
 
 </dd> <dt>
 
 **ElementNameEditSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **ElementName** pode ser modificada. Essa propriedade é herdada do **CIM \_ EnabledLogicalElementCapabilities**.
+Indica se a **propriedade ElementName** pode ser modificada. Essa propriedade é herdada de **CIM \_ EnabledLogicalElementCapabilities.**
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica as restrições em **ElementName**, expressas como uma expressão regular. Essa propriedade é herdada do **CIM \_ EnabledLogicalElementCapabilities**.
+Especifica as restrições em **ElementName**, expressas como uma expressão regular. Essa propriedade é herdada de **CIM \_ EnabledLogicalElementCapabilities.**
 
 </dd> <dt>
 
@@ -179,26 +179,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ManagedElementControlTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **ArrayType** ("indexado")
+Qualificadores: **ArrayType** ("Indexado")
 </dt> </dl>
 
-Identifica o tipo de controle com suporte da instância **\_ MetricService do CIM** associada para o objeto [**CIM \_ gerenciadoelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) identificado pelo valor no mesmo índice de matriz na propriedade **ControllableManagedElements** . Se essa propriedade for **nula**, todos os tipos de controle serão suportados. Essa propriedade é herdada do **CIM \_ MetricServiceCapabilities**.
+Identifica o tipo de controle com suporte da instância **cim \_ metricservice** associada para o objeto [**\_ ManagedElement CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement) identificado pelo valor no mesmo índice de matriz na propriedade **ControllableManagedElements.** Se essa propriedade for **Null,** todos os tipos de controle serão suportados. Essa propriedade é herdada de **\_ MetricServiceCapabilities do CIM.**
 
 
 
@@ -208,8 +208,8 @@ Identifica o tipo de controle com suporte da instância **\_ MetricService do CI
 | <dl> <dt>2</dt> </dl>            | Discreto<br/>        |
 | <dl> <dt>3</dt> </dl>            | Em massa<br/>            |
 | <dl> <dt>4</dt> </dl>            | Ambos<br/>            |
-| <dl> <dt>5.. 32767</dt> </dl>     | DMTF reservado<br/>   |
-| <dl> <dt>32768.. 65535</dt> </dl> | Específico do fornecedor<br/> |
+| <dl> <dt>5..32767</dt> </dl>     | DMTF reservado<br/>   |
+| <dl> <dt>32768..65535</dt> </dl> | Específico do fornecedor<br/> |
 
 
 
@@ -229,23 +229,23 @@ Tipo de acesso: Somente leitura
 Qualificadores: **MaxValue** (256)
 </dt> </dl>
 
-Especifica o comprimento máximo com suporte da propriedade **ElementName** . Essa propriedade é herdada do **CIM \_ EnabledLogicalElementCapabilities**.
+Especifica o comprimento máximo com suporte da **propriedade ElementName.** Essa propriedade é herdada de **CIM \_ EnabledLogicalElementCapabilities.**
 
 </dd> <dt>
 
 **MetricsControlTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **ArrayType** ("indexado")
+Qualificadores: **ArrayType** ("Indexado")
 </dt> </dl>
 
-Identifica o tipo de controle suportado pela instância **\_ MetricService do CIM** associada para o **\_ BaseMetricDefinition CIM** identificado pelo valor no mesmo índice de matriz na propriedade **ControllableMetrics** . Se essa propriedade for **nula**, todos os tipos de controle serão suportados. Essa propriedade é herdada do **CIM \_ MetricServiceCapabilities**.
+Identifica o tipo de controle com suporte da instância **cim \_ metricService** associada para **o \_ BaseMetricDefinition CIM** identificado pelo valor no mesmo índice de matriz na propriedade **ControllableMetrics.** Se essa propriedade for **Null,** todos os tipos de controle serão suportados. Essa propriedade é herdada de **\_ MetricServiceCapabilities do CIM.**
 
 
 
@@ -286,7 +286,7 @@ Indica os possíveis Estados que podem ser solicitados ao usar o método **Reque
 | <dl> <dt>7</dt> </dl>  | Teste<br/>      |
 | <dl> <dt>8</dt> </dl>  | Ferida<br/>     |
 | <dl> <dt>9</dt> </dl>  | Fechar<br/>   |
-| <dl> <dt>10</dt> </dl> | Reboot<br/>    |
+| <dl> <dt>10</dt> </dl> | Reinicialização<br/>    |
 | <dl> <dt>11</dt> </dl> | Redefinir<br/>     |
 
 
@@ -331,8 +331,8 @@ Especifica os métodos com suporte pelo serviço de métrica. Essa propriedade �
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

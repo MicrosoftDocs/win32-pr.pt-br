@@ -3,7 +3,7 @@ title: Mensagem de HDM_SETHOTDIVIDER (commctrl. h)
 description: Altera a cor de um divisor entre itens de cabeçalho para indicar o destino de uma operação de arrastar e soltar externa. Você pode enviar essa mensagem explicitamente ou usar a \_ macro SetHotDivider do cabeçalho.
 ms.assetid: 56f6e5c6-1df3-4b4d-9ad8-97fb168c5462
 keywords:
-- Controles de HDM_SETHOTDIVIDER de mensagens do Windows
+- controles de Windows de mensagem de HDM_SETHOTDIVIDER
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: feb894100878e9b3ee85e8e8367a4b81a022a0a5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eedfca7a6f0d10651984efb63c4db63116c4a53d2b9f9b85905c93fc12e6ca16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544746"
 ---
 # <a name="hdm_sethotdivider-message"></a>\_Mensagem HDM SETHOTDIVIDER
 
@@ -58,7 +58,7 @@ Se *wParam* for **false**, *lParam* representará o índice de inteiro do diviso
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor igual ao índice do divisor que o controle realçou.
 
@@ -72,9 +72,9 @@ Essa mensagem cria um efeito que um controle de cabeçalho produz automaticament
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

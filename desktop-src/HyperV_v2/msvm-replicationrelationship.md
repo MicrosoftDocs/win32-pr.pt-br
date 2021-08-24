@@ -21,12 +21,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 04665f96f4ec77501ee0b161d816c84943ca2c98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c8ff905475863df11c6fb6529f030f73a4f1b785792be4c5fe8c7ce1142096c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068476"
 ---
 # <a name="msvm_replicationrelationship-class"></a>\_Classe Msvm ReplicationRelationship
 
@@ -379,7 +379,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -393,7 +393,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -407,7 +407,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -421,7 +421,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -435,7 +435,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -449,7 +449,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -463,7 +463,7 @@ Estado de replicação para a relação de replicação.
 </dt> <dd>
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> essa propriedade foi adicionada em Windows 10, versão 1703.
 
  
 
@@ -475,9 +475,9 @@ Estado de replicação para a relação de replicação.
 
 ### <a name="extended-replication"></a>Replicação estendida
 
-O recurso de replicação do Hyper-V no Windows 8 permite que máquinas virtuais executadas em um servidor Hyper-V no site primário sejam replicadas com eficiência para outro servidor Hyper-V no site secundário.
+o recurso de replicação do hyper-v no Windows 8 permite que máquinas virtuais executadas em um servidor hyper-v no site primário sejam replicadas com eficiência para outro servidor hyper-v no site secundário.
 
-O recurso de replicação do Hyper-V no Windows 8.1 permite que um usuário estenda a relação de replicação do site secundário em diante para um terceiro site. O terceiro site pode ser um host Hyper-V previamente provisionado como um servidor de recuperação ou um provedor de replicação externo.
+o recurso de replicação do Hyper-V no Windows 8.1 permite que um usuário estenda a relação de replicação do site secundário em diante para um terceiro site. O terceiro site pode ser um host Hyper-V previamente provisionado como um servidor de recuperação ou um provedor de replicação externo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -485,8 +485,8 @@ O recurso de replicação do Hyper-V no Windows 8.1 permite que um usuário este
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                                 |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

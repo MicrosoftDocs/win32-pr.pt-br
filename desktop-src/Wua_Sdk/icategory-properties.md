@@ -13,21 +13,21 @@ ms.locfileid: "119049454"
 ---
 # <a name="icategory-properties"></a>Propriedades de ICategory
 
-A [**interface ICategory**](/windows/desktop/api/Wuapi/nn-wuapi-icategory) define as propriedades a seguir.
+A interface [**ICategory**](/windows/desktop/api/Wuapi/nn-wuapi-icategory) define as propriedades a seguir.
 
 
 
 | Propriedade                                     | Descrição                                                                                       |
 |----------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**Categoryid**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_categoryid)   | Obtém o identificador da categoria.                                                              |
-| [**Children**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_children)       | Obtém uma coleção de interfaces que contém as categorias filho dessa categoria.                 |
+| [**Categoria**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_categoryid)   | Obtém o identificador da categoria.                                                              |
+| [**Children**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_children)       | Obtém uma coleção de interface que contém as categorias filho desta categoria.                 |
 | [**Descrição**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_description) | Obtém a descrição da categoria.                                                             |
 | [**Imagem**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_image)             | Obtém uma interface que contém informações sobre a imagem associada à categoria. |
 | [**Nome**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_name)               | Obtém o nome localizado da categoria.                                                          |
-| [**Ordem**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_order)             | Obtém a ordem de exibição recomendada dessa categoria entre suas categorias irmãos.                 |
-| [**Pai**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_parent)           | Obtém uma interface que descreve a categoria pai dessa categoria.                            |
+| [**Ordem**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_order)             | Obtém a ordem de exibição recomendada dessa categoria entre suas categorias irmãs.                 |
+| [**Pai**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_parent)           | Obtém uma interface que descreve a categoria pai desta categoria.                            |
 | [**Tipo**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_type)               | Obtém o tipo da categoria.                                                                    |
-| [**Atualizações**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_updates)         | Obtém uma interface que contém uma coleção de atualizações que pertencem imediatamente à categoria.  |
+| [**Actualiza**](/windows/desktop/api/Wuapi/nf-wuapi-icategory-get_updates)         | Obtém uma interface que contém uma coleção de atualizações que pertencem imediatamente à categoria.  |
 
 
 

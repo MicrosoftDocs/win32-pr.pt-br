@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Config01_Authentication02
-description: A \_ classe Config01 Authentication02 do usuário da política de MDM \_ \_ \_ representa as políticas de gerenciamento de autenticação disponíveis.
+title: MDM_Policy_User_Config01_Authentication02 classe
+description: A classe MDM \_ Policy \_ User \_ Config01 \_ Authentication02 representa as políticas de gerenciamento de autenticação disponíveis.
 ms.assetid: 66d94f97-07ea-4025-95f9-d55282df3661
 keywords:
-- Classe MDM_Policy_User_Config01_Authentication02
-- Classe MDM_Policy_User_Config01_Authentication02, descrita
+- MDM_Policy_User_Config01_Authentication02 classe
+- MDM_Policy_User_Config01_Authentication02 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d278ad679f97047d0a4cf7e95eeb2eee0695e5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db9b794127f6085c44568b1671607f54dd58dd16a4af0a4756b6e913e39ca493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694206"
 ---
-# <a name="mdm_policy_user_config01_authentication02-class"></a>Config01 de usuário de política de MDM- \_ \_ \_ \_ classe Authentication02
+# <a name="mdm_policy_user_config01_authentication02-class"></a>Classe MDM \_ Policy \_ User \_ Config01 \_ Authentication02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe \_ \_ \_ Config01 \_ Authentication02 do usuário da política de MDM** representa as políticas de gerenciamento de autenticação disponíveis.
+A **classe MDM \_ Policy User \_ \_ Config01 \_ Authentication02** representa as políticas de gerenciamento de autenticação disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_User_Config01_Authentication02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ \_ Config01 \_ Authentication02 do usuário da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy User \_ \_ Config01 \_ Authentication02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ \_ Config01 \_ Authentication02 do usuário da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy User \_ \_ Config01 \_ Authentication02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ A **classe \_ \_ \_ Config01 \_ Authentication02 do usuário da política MDM** 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -79,11 +79,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Authentication".
+Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Autenticação".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -105,10 +105,10 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ description: Saiba mais sobre constantes EAPHost comuns. Consulte Tópicos adici
 ms.assetid: 35ea5b31-0a83-47e0-acb4-e90d93c2b490
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 733aa24bda0c3788afdc03828f2a09bdbbe99585
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 6c111032777ccecbf7963922769faa63bc4d98b791d7194683ae3ca2a73f8a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561946"
 ---
 # <a name="common-eaphost-constants"></a>Constantes do EAPHost comuns
 
@@ -38,9 +38,9 @@ Os seguintes grupos individuais de erros relacionados a EAP e constantes de info
 -   [**Constantes de erro e informações relacionadas a EAP**](eap-related-error-and-information-constants.md)
 -   [**\_Constantes de erro de certificado EAP**](eap-cert-error-constants.md)
 
- 
+ 
 
- 
+ 
 
 
 

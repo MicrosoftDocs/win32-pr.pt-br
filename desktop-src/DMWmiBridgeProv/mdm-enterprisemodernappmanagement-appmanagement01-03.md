@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_EnterpriseModernAppManagement_AppManagement01_03
-description: A \_ classe MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 03 fornece informações específicas sobre o aplicativo, como nome, versão e Publicador.
+title: MDM_EnterpriseModernAppManagement_AppManagement01_03 classe
+description: A classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 03 fornece informações específicas sobre o aplicativo, como nome, versão \_ e publicador.
 ms.assetid: 424e68de-1411-490f-b33b-5243ffa5a31e
 keywords:
-- Classe MDM_EnterpriseModernAppManagement_AppManagement01_03
-- Classe MDM_EnterpriseModernAppManagement_AppManagement01_03, descrita
+- MDM_EnterpriseModernAppManagement_AppManagement01_03 classe
+- MDM_EnterpriseModernAppManagement_AppManagement01_03 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f24c028c6a1f0d551fc54cb078376dcdef968abc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9395f59519d37b5a86ec3aa1c8e53b03c5c75ee86b8431d2cd98239aef717b3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018164"
 ---
-# <a name="mdm_enterprisemodernappmanagement_appmanagement01_03-class"></a>\_Classe MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 03
+# <a name="mdm_enterprisemodernappmanagement_appmanagement01_03-class"></a>Classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** fornece informações específicas sobre o aplicativo, como nome, versão e Publicador.
+A **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** fornece informações específicas sobre o aplicativo, como nome, versão e publicador.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -58,13 +58,13 @@ class MDM_EnterpriseModernAppManagement_AppManagement01_03
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** tem estes tipos de membros:
+A **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** tem essas propriedades.
+A **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** tem essas propriedades.
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 03** tem e
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -85,18 +85,18 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[InstallLocation](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-installlocation)
+[Installlocation](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-installlocation)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -117,35 +117,35 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é a inst
 
 </dd> <dt>
 
-[Isbundle](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-isbundle)
+[IsBundle](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-isbundle)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[Isframework](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-isframework)
+[IsFramework](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-isframework)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[Isprovisionado](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-isprovisioned)
+[IsProvisioned](/windows/client-management/mdm/enterprisemodernappmanagement-csp#----packagefamilyname-packagefullname-isprovisioned)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -156,7 +156,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -167,12 +167,12 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -184,7 +184,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/*enterpriseid* / *PackageFamilyName*"
+Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/*EnterpriseID* / *PackageFamilyName*"
 
 </dd> <dt>
 
@@ -194,7 +194,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -205,7 +205,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -216,7 +216,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -227,7 +227,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -238,7 +238,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -249,10 +249,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

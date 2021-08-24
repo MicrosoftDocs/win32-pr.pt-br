@@ -1,11 +1,11 @@
 ---
-title: atributo msSFU-30-POSIX-member-of
-description: Contém os nomes de exibição dos grupos aos quais este usuário pertence.
+title: Atributo msSFU-30-Posix-Member-Of
+description: Contém os nomes de exibição de grupos aos quais esse usuário pertence.
 ms.assetid: c29547d2-ee35-463a-9769-3d9d2260a845
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-POSIX-membro-de atributo AD Schema
-- Esquema de AD do atributo msSFU30PosixMemberOf
+- msSFU-30-Posix-Member-Of atributo AD Schema
+- Esquema do AD do atributo msSFU30PosixMemberOf
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 171d539464b6b1dc4aefef9b77946e66b369bcde
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 47fff54f2265394072c7eb075627a6a537c845106722d64955b0111ffeb3f675
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508836"
 ---
-# <a name="mssfu-30-posix-member-of-attribute"></a>atributo msSFU-30-POSIX-member-of
+# <a name="mssfu-30-posix-member-of-attribute"></a>Atributo msSFU-30-Posix-Member-Of
 
-Contém os nomes de exibição dos grupos aos quais este usuário pertence.
+Contém os nomes de exibição de grupos aos quais esse usuário pertence.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | msSFU-30-POSIX-membro de                |
-| LDAP-Display-Name | msSFU30PosixMemberOf                    |
+| CN                | msSFU-30-Posix-Member-Of                |
+| Ldap-Display-Name | msSFU30PosixMemberOf                    |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.347             |
-| System-ID-GUID    | 7bd76b92-3244-438a-ada6-24f5ea34381e    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 7bd76b92-3244-438a-ada6-24f5ea34381e    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,10 +56,10 @@ Contém os nomes de exibição dos grupos aos quais este usuário pertence.
 | ID do link                | 2031                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -77,10 +77,10 @@ Contém os nomes de exibição dos grupos aos quais este usuário pertence.
 | ID do link                | 2031                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -98,10 +98,10 @@ Contém os nomes de exibição dos grupos aos quais este usuário pertence.
 | ID do link                | 2031                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -119,10 +119,10 @@ Contém os nomes de exibição dos grupos aos quais este usuário pertence.
 | ID do link                | 2031                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

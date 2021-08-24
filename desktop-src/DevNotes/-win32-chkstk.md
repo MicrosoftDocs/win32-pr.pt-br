@@ -1,15 +1,15 @@
 ---
 description: Chamado pelo compilador quando você tem mais de uma página de variáveis locais em sua função.
 ms.assetid: 154dd992-88b5-44a4-9594-5d13afb71c28
-title: Rotina de _chkstk
+title: _chkstk rotina
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02a58b31836947dfb1816bea72a54f820354c792
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b129b73801c6c18b63b10ac61898ee13a9c5d4f1f0422678bbfe5af82d5b44f8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538826"
 ---
 # <a name="_chkstk-routine"></a>\_Rotina chkstk
 
@@ -17,7 +17,7 @@ Chamado pelo compilador quando você tem mais de uma página de variáveis locai
 
 ## <a name="remarks"></a>Comentários
 
-\_a rotina chkstk é uma rotina auxiliar para o compilador C. Para compiladores x86, \_ a rotina chkstk é chamada quando as variáveis locais excedem 4K bytes; para compiladores x64, ele é 8K.
+\_Chkstk Routine é uma rotina auxiliar para o compilador C. Para compiladores x86, a rotina chkstk é chamada quando as variáveis locais excedem \_ 4K bytes; para compiladores x64, é de 8K.
 
  
 

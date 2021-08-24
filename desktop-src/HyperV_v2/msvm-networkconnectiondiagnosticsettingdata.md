@@ -1,7 +1,7 @@
 ---
 description: Representa as configurações usadas para testar a conectividade de rede de uma máquina virtual.
 ms.assetid: d719d9c9-7ca9-40a0-ada8-185b8cd44c22
-title: Classe Msvm_NetworkConnectionDiagnosticSettingData
+title: Msvm_NetworkConnectionDiagnosticSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,16 +20,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ec0df1957df6c925cf12ce363c89a0bdad52d3e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da7774e2cf9f36460b1f153d1b498e0c2fa18a19078442ffd5226b9d2dcdb174
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521006"
 ---
-# <a name="msvm_networkconnectiondiagnosticsettingdata-class"></a>\_Classe Msvm NetworkConnectionDiagnosticSettingData
+# <a name="msvm_networkconnectiondiagnosticsettingdata-class"></a>Classe Msvm \_ NetworkConnectionDiagnosticSettingData
 
-Representa as configurações usadas para testar a conectividade de rede de uma máquina virtual. Usado pelo método [**DiagnoseNetworkConnection**](msvm-virtualsystemmanagementservice-diagnosenetworkconnection.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Representa as configurações usadas para testar a conectividade de rede de uma máquina virtual. Usado pelo [**método DiagnoseNetworkConnection**](msvm-virtualsystemmanagementservice-diagnosenetworkconnection.md) da [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -51,52 +51,52 @@ class Msvm_NetworkConnectionDiagnosticSettingData : CIM_SettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ NetworkConnectionDiagnosticSettingData** tem estes tipos de membros:
+A **classe Msvm \_ NetworkConnectionDiagnosticSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ NetworkConnectionDiagnosticSettingData** tem essas propriedades.
+A **classe Msvm \_ NetworkConnectionDiagnosticSettingData** tem essas propriedades.
 
 <dl> <dt>
 
-**Isolamentoid**
+**IsolationId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 A ID de isolamento.
 
 </dd> <dt>
 
-**Isenviador**
+**IsSender**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se este método está sendo invocado no remetente ou no destinatário.
+Indica se esse método está sendo invocado no remetente ou no receptor.
 
 </dd> <dt>
 
 **PayloadSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O tamanho da carga.
+O tamanho do payload.
 
 </dd> <dt>
 
@@ -106,10 +106,10 @@ O tamanho da carga.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O endereço IP do destinatário.
+O endereço IP do receptor.
 
 </dd> <dt>
 
@@ -119,10 +119,10 @@ O endereço IP do destinatário.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-O endereço MAC do destinatário.
+O endereço MAC do receptor.
 
 </dd> <dt>
 
@@ -132,7 +132,7 @@ O endereço MAC do destinatário.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O endereço IP do remetente.
@@ -142,10 +142,10 @@ O endereço IP do remetente.
 **SequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 O número de sequência.
@@ -158,10 +158,10 @@ O número de sequência.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -170,7 +170,7 @@ O número de sequência.
 
 <dl> <dt>
 
-[**CIM \_ SettingData**](cim-settingdata.md)
+[**Configuração \_ cimData**](cim-settingdata.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Especifica se um estilo sem cor tem o estilo itálico.
+description: Especifica se um estilo que não é de cor tem o estilo itálico.
 ms.assetid: 4295c0b1-6e37-4fa9-9015-68bcc4784cda
 title: Função FItalicIMEStyle
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Imeshare.dll
-ms.openlocfilehash: 828e701773d666830473e92afc73f80ccdae3bc3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c8160edf46b97544ef27558bf15a8a58e447e78a0e0709432aea840f4567bc0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076110"
 ---
 # <a name="fitalicimestyle-function"></a>Função FItalicIMEStyle
 
-Especifica se um estilo sem cor tem o estilo itálico.
+Especifica se um estilo que não é de cor tem o estilo itálico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ BOOL __cdecl FItalicIMEStyle(
 
 <dl> <dt>
 
-*pimestyle* \[ no\]
+*pimestyle* \[ Em\]
 </dt> <dd>
 
-Uma estrutura **IMESTYLE** retornada da função [**PIMEStyleFromAttr**](pimestylefromattr.md) .
+Uma **estrutura IMESTYLE** retornada da [**função PIMEStyleFromAttr.**](pimestylefromattr.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-**True** se o estilo tiver o estilo itálico.
+**TRUE** se o estilo tiver o estilo itálico.
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

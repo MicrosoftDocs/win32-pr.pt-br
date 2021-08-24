@@ -1,8 +1,8 @@
 ---
-description: Representa a ocorrência de um evento que é Descartado. Um evento removido é um evento que não é entregue a um consumidor de evento.
+description: Representa a ocorrência de um evento que é descartado. Um evento descartado é um evento que não é entregue a um consumidor de eventos.
 ms.assetid: fae267a9-e0ec-43fa-a3c3-d50345775a1d
 ms.tgt_platform: multiple
-title: Classe __EventDroppedEvent
+title: __EventDroppedEvent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 4e9f68328a3c5c455c98e85a65d53156da6eeada
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 695381a3471dcc744cae10622ee9e7935b2770941a770bd0e4e4e93e591a9220
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051084"
 ---
 # <a name="__eventdroppedevent-class"></a>\_\_Classe EventDroppedEvent
 
-A classe de sistema **\_ \_ EventDroppedEvent** representa a ocorrência de um evento que é Descartado. Um evento removido é um evento que não é entregue a um consumidor de evento.
+A **\_ \_ classe de sistema EventDroppedEvent** representa a ocorrência de um evento que é descartado. Um evento descartado é um evento que não é entregue a um consumidor de eventos.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
@@ -45,26 +45,26 @@ class __EventDroppedEvent : __SystemEvent
 
 ## <a name="members"></a>Membros
 
-A classe **\_ \_ EventDroppedEvent** tem estes tipos de membros:
+A **\_ \_ classe EventDroppedEvent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **\_ \_ EventDroppedEvent** tem essas propriedades.
+A **\_ \_ classe EventDroppedEvent** tem essas propriedades.
 
 <dl> <dt>
 
 **Evento**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **\_ \_ evento**
+Tipo de dados: **\_ \_ Evento**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Evento Descartado.
+Evento que é descartado.
 
 </dd> <dt>
 
@@ -77,41 +77,41 @@ Tipo de dados: **\_ \_ EventConsumer**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Referência a uma instância de [**\_ \_ EventConsumer**](--eventconsumer.md) que representa o consumidor permanente que você identifica para receber um evento. Diferentes consumidores permanentes que assinam um evento podem continuar a receber o evento.
+Referência a uma instância do [**\_ \_ EventConsumer que representa**](--eventconsumer.md) o consumidor permanente que você identifica para receber um evento. Diferentes consumidores permanentes que assinam um evento podem continuar recebendo o evento.
 
 </dd> <dt>
 
-**\_descritor de segurança**
+**DESCRITOR \_ DE SEGURANÇA**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descritor que um provedor de eventos usa para determinar os usuários que podem receber um evento. Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
+Descritor que um provedor de eventos usa para determinar os usuários que podem receber um evento. Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
 
 </dd> <dt>
 
-**HORA da \_ criação**
+**TEMPO \_ CRIADO**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Valor exclusivo que indica a hora em que um evento é gerado. Este é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato UTC (tempo Universal Coordenado). Esta propriedade é herdada do [**\_ \_ evento**](--event.md).
+Valor exclusivo que indica a hora em que um evento é gerado. Esse é um valor de 64 bits que representa o número de intervalos de 100 nanossegundos após 1º de janeiro de 1601. As informações estão no formato Tempo Universal Coordenado (UTC). Essa propriedade é herdada do [**\_ \_ Evento**](--event.md).
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **\_ \_ EventDroppedEvent** é derivada de [**\_ \_ SystemEvent**](--systemevent.md).
+A **\_ \_ classe EventDroppedEvent** é derivada de [**\_ \_ SystemEvent.**](--systemevent.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,7 +121,7 @@ A classe **\_ \_ EventDroppedEvent** é derivada de [**\_ \_ SystemEvent**](--sy
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 

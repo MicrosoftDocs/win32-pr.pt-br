@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101719
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 489c9a411197bc33dffb2022db458bf51aebc94a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78a49eb2af04ceb37254843f4bcb0ffd24d92821838e4c9e43d19b80f2247ae9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669086"
 ---
 # <a name="esentfilesystemcorruptionexception-properties"></a>Propriedades de EsentFileSystemCorruptionException
 
@@ -49,7 +49,7 @@ O tipo [EsentFileSystemCorruptionException](./esentfilesystemcorruptionexception
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentFileSystemCorruptionException](./esentfilesystemcorruptionexception
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">

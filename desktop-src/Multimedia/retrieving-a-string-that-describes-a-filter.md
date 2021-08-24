@@ -11,12 +11,12 @@ keywords:
 - função acmFilterDetails
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 641f2b9993d9c916113d14eaf92925e916409619
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 84bf182846da280f4810c84c75a02e76baaae9082ecaf2df8ea1797fd867e8b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105770157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689126"
 ---
 # <a name="retrieving-a-string-that-describes-a-filter"></a>Recuperando uma cadeia de caracteres que descreve um filtro
 
@@ -114,9 +114,9 @@ BOOL GetFilterDescription
 
 
 
- 
+ 
 
- 
+ 
 
 
 

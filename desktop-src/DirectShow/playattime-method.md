@@ -1,5 +1,5 @@
 ---
-description: O método PlayAtTime inicia a reprodução no título atual no horário especificado.
+description: O método PlayAtTime inicia a reprodução no título atual no momento especificado.
 ms.assetid: 83e27c27-e402-43bc-8245-3a23dd49130b
 title: Método PlayAtTime
 ms.topic: reference
@@ -14,11 +14,11 @@ ms.locfileid: "119633546"
 # <a name="playattime-method"></a>Método PlayAtTime
 
 > [!Note]  
-> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
-O `PlayAtTime` método inicia a reprodução no título atual na hora especificada.
+O `PlayAtTime` método inicia a reprodução no título atual no momento especificado.
 
 ``` syntax
 MSWebDVD.PlayAtTime(sTime)
@@ -28,10 +28,10 @@ MSWebDVD.PlayAtTime(sTime)
 
 <dl> <dt>
 
-<span id="sTime"></span><span id="stime"></span><span id="STIME"></span>*sTime*
+<span id="sTime"></span><span id="stime"></span><span id="STIME"></span>*Stime*
 </dt> <dd>
 
-Especifica a hora na qual iniciar a reprodução como uma cadeia de caracteres. A cadeia de caracteres deve estar no formato "hh: mm: SS: FF" (especificando horas, minutos, segundos, quadros).
+Especifica a hora em que iniciar a reprodução como uma cadeia de caracteres. A cadeia de caracteres deve estar no formato "hh:mm:ss:ff" (especificando horas, minutos, segundos, quadros).
 
 </dd> </dl>
 

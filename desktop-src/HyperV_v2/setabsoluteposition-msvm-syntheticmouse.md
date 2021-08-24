@@ -1,7 +1,7 @@
 ---
 description: Define a posição horizontal e vertical do cursor do mouse.
 ms.assetid: 7845E10A-7F61-4134-BF81-AED5483F36AD
-title: Método SetAbsolutePosition da classe Msvm_SyntheticMouse (Dbdao. h)
+title: Método SetAbsolutePosition da classe Msvm_SyntheticMouse (Dbdao.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4b8ffb3a4d415f76dedf30acba5869b4cc585eb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f7f04975d85be1cb176839c80c19710534237b3be15ca06e606dad58a099519
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014304"
 ---
-# <a name="setabsoluteposition-method-of-the-msvm_syntheticmouse-class"></a>Método SetAbsolutePosition da \_ classe SyntheticMouse Msvm
+# <a name="setabsoluteposition-method-of-the-msvm_syntheticmouse-class"></a>Método SetAbsolutePosition da classe Msvm \_ SyntheticMouse
 
 Define a posição horizontal e vertical do cursor do mouse.
 
@@ -40,7 +40,7 @@ uint32 SetAbsolutePosition(
 
 <dl> <dt>
 
-*horizontalPosition* \[ no\]
+*horizontalPosition* \[ Em\]
 </dt> <dd>
 
 Tipo: **sint32**
@@ -49,7 +49,7 @@ A nova posição horizontal do cursor do mouse, em pixels.
 
 </dd> <dt>
 
-*verticalPosition* \[ no\]
+*verticalPosition* \[ Em\]
 </dt> <dd>
 
 Tipo: **sint32**
@@ -58,18 +58,18 @@ A nova posição vertical do cursor do mouse, em pixels.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indica uma falha ao alterar a posição de rolagem.
+Um valor de retorno de zero indica êxito. Um valor não zero indica uma falha ao alterar a posição de rolagem.
 
 <dl> <dt>
 
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -81,16 +81,16 @@ Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indic
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -99,15 +99,15 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe [**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,11 +115,11 @@ O acesso à classe [**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Dbdao. h</dt> </dl>                      |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Dbdao.h</dt> </dl>                      |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

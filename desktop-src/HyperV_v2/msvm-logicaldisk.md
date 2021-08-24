@@ -1,5 +1,5 @@
 ---
-description: Representa a mídia da unidade de armazenamento e é usada para preencher as unidades de armazenamento.
+description: Representa a mídia da unidade de armazenamento e é usada para popular as unidades de armazenamento.
 ms.assetid: 06955C09-CA56-4B4C-997B-9B65AF125375
 title: Classe Msvm_LogicalDisk
 ms.topic: reference
@@ -76,18 +76,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e5071f2a102a32364888c9c7de5121ede5249f47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8bcc9121a6c1f11b57cad8df096713a29edf7a58551de76b6f1cfa2d1f20ab2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521736"
 ---
-# <a name="msvm_logicaldisk-class"></a>\_Classe Msvm LogicalDisk
+# <a name="msvm_logicaldisk-class"></a>Classe LogicalDisk Msvm \_
 
-Representa a mídia da unidade de armazenamento e é usada para preencher as unidades de armazenamento. Os tipos de mídia com suporte incluem arquivos de disco rígido virtual, arquivos de disquete virtuais, arquivos ISO e mídia de dispositivo físico.
+Representa a mídia da unidade de armazenamento e é usada para popular as unidades de armazenamento. Os tipos de mídia com suporte incluem arquivos rígidos virtuais, arquivos disquetes virtuais, arquivos ISO e mídia de dispositivo físico.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -157,14 +157,14 @@ class Msvm_LogicalDisk : CIM_LogicalDisk
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ LogicalDisk** tem estes tipos de membros:
+A **classe \_ LogicalDisk do Msvm** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Msvm \_ LogicalDisk** tem esses métodos.
+A **classe \_ LogicalDisk Msvm** tem esses métodos.
 
 
 
@@ -175,8 +175,8 @@ A classe **Msvm \_ LogicalDisk** tem esses métodos.
 | **QuiesceDevice**                                                 | Não há suporte para o método.<br/> |
 | [**RequestStateChange**](msvm-logicaldisk-requeststatechange.md) | Solicita uma alteração de estado.<br/>      |
 | [**Redefinir**](msvm-logicaldisk-reset.md)                           | Redefine o serviço.<br/>           |
-| **Restaurarproperties**                                             | Não há suporte para o método.<br/> |
-| **Salvarproperties**                                                | Não há suporte para o método.<br/> |
+| **RestoreProperties**                                             | Não há suporte para o método.<br/> |
+| **SaveProperties**                                                | Não há suporte para o método.<br/> |
 | **SetPowerState**                                                 | Não há suporte para o método.<br/> |
 
 
@@ -185,30 +185,30 @@ A classe **Msvm \_ LogicalDisk** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ LogicalDisk** tem essas propriedades.
+A **classe \_ LogicalDisk Msvm** tem essas propriedades.
 
 <dl> <dt>
 
 **Acesso**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a mídia é legível, gravável ou ambas. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+Indica se a mídia é acessível, escrevêvel ou ambas. Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 
 
 | Valor                                                                        | Significado                |
 |------------------------------------------------------------------------------|------------------------|
 | <dl> <dt>0</dt> </dl> | Unknown<br/>     |
-| <dl> <dt>1</dt> </dl> | Seres.<br/>   |
+| <dl> <dt>1</dt> </dl> | Legível.<br/>   |
 | <dl> <dt>2</dt> </dl> | Gravável.<br/>  |
 | <dl> <dt>3</dt> </dl> | Leitura/gravação.<br/> |
-| <dl> <dt>4</dt> </dl> | Gravar uma vez.<br/> |
+| <dl> <dt>4</dt> </dl> | Escreva uma vez.<br/> |
 
 
 
@@ -219,19 +219,19 @@ Indica se a mídia é legível, gravável ou ambas. Essa propriedade é herdada 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Qualquer disponibilidade e status adicionais do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Qualquer disponibilidade e status adicionais do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 
 
 | Valor                                                                            | Significado                    |
 |----------------------------------------------------------------------------------|----------------------------|
-| <dl> <dt>152</dt> </dl> | Não aplicável.<br/> |
+| <dl> <dt>{ 6 }</dt> </dl> | Não aplicável.<br/> |
 
 
 
@@ -242,13 +242,13 @@ Qualquer disponibilidade e status adicionais do dispositivo. Essa propriedade é
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A disponibilidade e o status principais do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+A disponibilidade e o status primários do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 
 
@@ -265,28 +265,28 @@ A disponibilidade e o status principais do dispositivo. Essa propriedade é herd
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada do **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do objeto [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) . Essa propriedade pode ser não **nula** se uma implementação for capaz de anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **nula** se uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
+Indica os valores possíveis para o *parâmetro RequestedState* do [**método RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada de **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do objeto [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85)) Essa propriedade poderá ser não nula **se** uma implementação puder anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **Null se** uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
 
-Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
-**BlockSize**
+**Blocksize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tamanho, em bytes, dos blocos que formam a extensão de armazenamento. Se o tamanho do bloco for variável, o tamanho máximo do bloco, em bytes, deverá ser especificado. Se o tamanho do bloco for desconhecido ou se um conceito de bloco não for válido (por exemplo, para extensões de agregação, memória ou discos lógicos), isso conterá 1. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+O tamanho, em bytes, dos blocos que formam a extensão de armazenamento. Se o tamanho do bloco for variável, o tamanho máximo do bloco, em bytes, deverá ser especificado. Se o tamanho do bloco for desconhecido ou se um conceito de bloco não for válido (por exemplo, para extensão de agregação, memória ou discos lógicos), isso conterá 1. Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 "Imagem de disco ISO"
 
@@ -314,20 +314,20 @@ Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ manage
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **ConsumableBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -582,7 +582,7 @@ Tipo de dados: **DateTime**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -595,49 +595,49 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IsBasedOnUnderlyingRedundancy**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se as extensões de armazenamento subjacentes participam de um grupo de redundância de armazenamento. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+Indica se as extensão de armazenamento subjacentes participam de um grupo de redundância de armazenamento. Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O último código de erro relatado pelo dispositivo lógico. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O último código de erro relatado pelo dispositivo lógico. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade foi substituída. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade foi substituída. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -650,20 +650,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é a mesma que a propriedade **ElementName** .
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é a mesma que a **propriedade ElementName.**
 
 </dd> <dt>
 
-**NameFormat**
+**Nameformat**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 
 
@@ -681,20 +681,20 @@ Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWi
 **NameNamespace**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 
 
 | Valor                                                                        | Significado                                      |
 |------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>1</dt> </dl> | Outro<br/>                             |
-| <dl> <dt>8</dt> </dl> | Namespace de dispositivo do sistema operacional<br/> |
+| <dl> <dt>8</dt> </dl> | Namespace do dispositivo do sistema operacional<br/> |
 
 
 
@@ -705,70 +705,70 @@ Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWi
 **NoSinglePointOfFailure**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se não existe nenhum ponto único de falha. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+Indica se não existe nenhum ponto único de falha. Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 </dd> <dt>
 
 **NumberOfBlocks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de blocos consecutivos, cada um deles com o tamanho do valor contido na propriedade **BlockSize** , que forma a extensão de armazenamento. O tamanho total da extensão de armazenamento pode ser calculado multiplicando o valor da propriedade **BlockSize** pelo valor dessa propriedade. Se o valor de **BlockSize** for 1, essa propriedade será o tamanho total da extensão de armazenamento. Essa propriedade é herdada do [**CIM \_ StorageExtent**](/windows/desktop/CIMWin32Prov/cim-storageextent).
+O número de blocos consecutivos, cada um bloqueia o tamanho do valor contido na propriedade **BlockSize,** que formam a extensão de armazenamento. O tamanho total da extensão de armazenamento pode ser calculado multiplicando o valor da propriedade **BlockSize** pelo valor dessa propriedade. Se o valor de **BlockSize** for 1, essa propriedade será o tamanho total da extensão de armazenamento. Essa propriedade é herdada de [**Cim \_ StorageExtent.**](/windows/desktop/CIMWin32Prov/cim-storageextent)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("OperationalStatus"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("OperationalStatus"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
-Quando o nível de QoS necessário para o disco virtual não puder ser satisfeito, o status principal (OperationalStatus \[ 0 \] ) será definido como degradado (3) e a matriz OperationalStatus também conterá um valor de status secundário que indica o motivo específico para a condição de QoS, de acordo com esta tabela.
+Quando o nível de QoS necessário para o disco virtual não puder ser atendido, o status primário (OperationalStatus 0 ) será definido como Degradado (3) e a matriz OperationalStatus também conterá um valor de status secundário que indica o motivo específico para a condição \[ de QoS, de acordo com esta \] tabela.
 
 
 
 | Valor                                                                                                                                                                                                    | Descrição                                                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| <span id="_Insufficient_Throughput___32788_"></span><span id="_insufficient_throughput___32788_"></span><span id="_INSUFFICIENT_THROUGHPUT___32788_"></span> Taxa de transferência insuficiente (32788)<br/> | A taxa mínima de IOPS solicitada não está disponível para o dispositivo no momento. <br/> |
+| <span id="_Insufficient_Throughput___32788_"></span><span id="_insufficient_throughput___32788_"></span><span id="_INSUFFICIENT_THROUGHPUT___32788_"></span> Produtividade insuficiente (32788)<br/> | No momento, a taxa de IOPS mínima solicitada não está disponível para o dispositivo. <br/> |
 
 
 
  
 
 > [!Note]  
-> OperationalStatus também é usado para relatar outras condições de erro ou de aviso (por exemplo, incompatibilidade de protocolo entre VSP e VSC). Se houver várias condições, o status principal será definido como degradado e um ou mais valores de status secundários, em qualquer ordem a partir do índice 1, será preenchido na matriz.
+> OperationalStatus também é usado para relatar outras condições de erro ou aviso (por exemplo, incompatibilidade de protocolo entre VSP e VSC). Se houver várias condições, o status primário será definido Degradado e um ou mais valores de status secundários, em qualquer ordem começando no índice 1, será preenchido na matriz.
 
  
 
@@ -803,7 +803,7 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -825,13 +825,13 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 
 <span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte com erro** (16)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte em erro** (16)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -839,20 +839,20 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 
 <span id="Protocol_Mismatch"></span><span id="protocol_mismatch"></span><span id="PROTOCOL_MISMATCH"></span>
 
-<span id="Protocol_Mismatch"></span><span id="protocol_mismatch"></span><span id="PROTOCOL_MISMATCH"></span>**Incompatibilidade de protocolo** (32775)
+<span id="Protocol_Mismatch"></span><span id="protocol_mismatch"></span><span id="PROTOCOL_MISMATCH"></span>**Incompatibilidade de** protocolo (32775)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Communication_Timed_Out"></span><span id="communication_timed_out"></span><span id="COMMUNICATION_TIMED_OUT"></span>
 
-<span id="Communication_Timed_Out"></span><span id="communication_timed_out"></span><span id="COMMUNICATION_TIMED_OUT"></span>**Tempo limite de comunicação** (32783)
+<span id="Communication_Timed_Out"></span><span id="communication_timed_out"></span><span id="COMMUNICATION_TIMED_OUT"></span>**Tempo de comunicação** (32783)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -860,7 +860,7 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 
 <span id="Insufficient_Throughput"></span><span id="insufficient_throughput"></span><span id="INSUFFICIENT_THROUGHPUT"></span>
 
-<span id="Insufficient_Throughput"></span><span id="insufficient_throughput"></span><span id="INSUFFICIENT_THROUGHPUT"></span>**Taxa de transferência insuficiente** (32788)
+<span id="Insufficient_Throughput"></span><span id="insufficient_throughput"></span><span id="INSUFFICIENT_THROUGHPUT"></span>**Produtividade insuficiente** (32788)
 
 
 </dt> <dd></dd> <dt>
@@ -880,7 +880,7 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -894,7 +894,7 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -902,13 +902,13 @@ Quando o nível de QoS necessário para o disco virtual não puder ser satisfeit
 
 <span id="Disk_Full"></span><span id="disk_full"></span><span id="DISK_FULL"></span>
 
-<span id="Disk_Full"></span><span id="disk_full"></span><span id="DISK_FULL"></span>**Disco cheio** (32794)
+<span id="Disk_Full"></span><span id="disk_full"></span><span id="DISK_FULL"></span>**Disco Cheio** (32794)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -1199,8 +1199,8 @@ O acesso à classe do **\_ LogicalDisk Msvm** pode ser restringido pela filtrage
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
@@ -1220,7 +1220,7 @@ O acesso à classe do **\_ LogicalDisk Msvm** pode ser restringido pela filtrage
 [**Msvm \_ StorageAlert**](msvm-storagealert.md)
 </dt> <dt>
 
-[Classes de armazenamento](storage-classes.md)
+[Armazenamento Classe](storage-classes.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac7062a67f2d7bf748d3983cbc7563fe05b9a7bf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e87bae0703d7acf06f1590e52922c07efb6d9af9652e6a052ad80e098eb2d0cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298786"
 ---
 # <a name="ms-dfsr-enabled-attribute"></a>atributo habilitado para MS-DFSR
 
@@ -119,21 +119,21 @@ Especifica se o objeto está habilitado.
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| Tem valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
-| No catálogo global      | Falso                                                                                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
+| No Catálogo Global      | Falso                                                                                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | \-                                                                                                                            |
 | Range-Upper            | \-                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                    |
 | System-Flags           | 0x00000000                                                                                                                    |
-| Classes usadas em        | [**MS-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**MS-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **habilitado para MS-DFSR** é parte do suporte do serviço de replicação do sistema de arquivos distribuído (DFS).
+O **atributo ms-DFSR-Enabled** faz parte do suporte ao serviço de replicação Sistema de Arquivos Distribuído (DFS).
 
  
 

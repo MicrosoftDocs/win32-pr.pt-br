@@ -3,7 +3,7 @@ title: Elemento FriendlyName
 description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. | Elemento FriendlyName
 ms.assetid: 9f5de0f9-609c-4b4d-8fda-4d65995aea79
 keywords:
-- Elemento FriendlyName do Windows Media Player
+- Elemento FriendlyName Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d93484937f14b233c995a041acc21f5e5eae383b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f48f14dac372767c0553f3215a2336a5ebedbfb1a363ec91d17309efb2cced21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648106"
 ---
 # <a name="friendlyname-element"></a>Elemento FriendlyName
 
@@ -27,7 +27,7 @@ ms.locfileid: "105794468"
 
  
 
-O elemento **FriendlyName** especifica a cadeia de caracteres de texto que o Windows Media Player exibe para o usuário identificar a loja online.
+o elemento **friendlyname** especifica a cadeia de caracteres de texto que Windows Media Player exibe para o usuário identificar a loja online.
 
 ``` syntax
 <FriendlyName>

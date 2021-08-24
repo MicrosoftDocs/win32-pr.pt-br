@@ -1,7 +1,7 @@
 ---
-description: Representa uma unidade de trabalho e é usado para acompanhar o progresso de operações assíncronas.
+description: Representa uma unidade de trabalho e é usada para acompanhar o progresso de operações assíncronas.
 ms.assetid: 33c13880-92a4-4367-8f0b-ecdf38b2ff8e
-title: Classe Msvm_ConcreteJob
+title: Msvm_ConcreteJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -55,18 +55,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2cff9594bfd39cf365020a1da8ae2f1ec0aea562
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9542d53ad56c736d8dc2fc3950e6e95c92f923b8179f03d52639c0c7ad898c60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531726"
 ---
-# <a name="msvm_concretejob-class"></a>\_Classe Msvm ConcreteJob
+# <a name="msvm_concretejob-class"></a>Classe Msvm \_ ConcreteJob
 
-Uma versão concreta do trabalho. Essa classe representa uma unidade de trabalho genérica e instanciável, como um trabalho de lote ou de impressão, e é usada especificamente no Hyper-V para acompanhar o progresso de operações assíncronas.
+Uma versão concreta do trabalho. Essa classe representa uma unidade de trabalho genérica e instanível, como um lote ou um trabalho de impressão, e é usada especificamente no Hyper-V para acompanhar o progresso de operações assíncronas.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -122,21 +122,21 @@ class Msvm_ConcreteJob : CIM_ConcreteJob
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ ConcreteJob** tem estes tipos de membros:
+A **classe Msvm \_ ConcreteJob** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Msvm \_ ConcreteJob** tem esses métodos.
+A **classe Msvm \_ ConcreteJob** tem esses métodos.
 
 
 
 | Método                                                            | Descrição                                                                      |
 |:------------------------------------------------------------------|:---------------------------------------------------------------------------------|
-| [**GetError**](geterror-msvm-concretejob.md)                     | Recupera o objeto de erro para o trabalho, se houver um.<br/>                |
-| [**GetErrorEx**](geterrorex-msvm-concretejob.md)                 | Recupera os objetos de erro para o trabalho, caso existam.<br/>                |
+| [**Geterror**](geterror-msvm-concretejob.md)                     | Recupera o objeto de erro para o trabalho, se houver um.<br/>                |
+| [**GetErrorEx**](geterrorex-msvm-concretejob.md)                 | Recupera os objetos de erro para o trabalho, se existirem.<br/>                |
 | **KillJob**                                                       | Não há suporte para o método.<br/>                                         |
 | [**RequestStateChange**](requeststatechange-msvm-concretejob.md) | Solicita que o estado do trabalho seja alterado para o estado especificado.<br/> |
 
@@ -146,20 +146,20 @@ A classe **Msvm \_ ConcreteJob** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ ConcreteJob** tem essas propriedades.
+A **classe Msvm \_ ConcreteJob** tem essas propriedades.
 
 <dl> <dt>
 
 **Cancelável**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o trabalho pode ser cancelado. O valor dessa propriedade não garante que uma solicitação para cancelar o trabalho seja realizada com sucesso.
+Indica se o trabalho pode ser cancelado. O valor dessa propriedade não garante que uma solicitação para cancelar o trabalho seja bem-sucedida.
 
 </dd> <dt>
 
@@ -172,33 +172,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **DeleteOnCompletion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se o trabalho deve ser excluído automaticamente após a conclusão. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Especifica se o trabalho deve ser excluído automaticamente após a conclusão. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -211,33 +211,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **ElapsedTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O intervalo de tempo em que o trabalho foi executado ou o tempo de execução total se o trabalho for concluído. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O intervalo de tempo que o trabalho está sendo executado ou o tempo total de execução se o trabalho for concluído. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -250,20 +250,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um código de erro específico do fornecedor. O valor deve ser definido como zero se o trabalho for concluído sem erros. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Um código de erro específico do fornecedor. O valor deverá ser definido como zero se o trabalho for concluído sem erro. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que contém a descrição do erro do fornecedor. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Uma cadeia de caracteres que contém a descrição do erro do fornecedor. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -289,36 +289,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**\_ trabalho CIM**](cim-job.md).**ErrorCode**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Trabalho CIM \_**](cim-job.md).**ErrorCode**")
 </dt> </dl>
 
-Uma descrição resumida do erro, se presente. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Uma descrição resumida do erro, se presente. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A integridade atual do elemento. Esse atributo expressa a integridade desse elemento, mas não necessariamente o de seus subcomponentes. Os valores possíveis são 0 a 30, em que 5 significa que o elemento está totalmente íntegro e 30 significa que o elemento é completamente não funcional. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5.
+A saúde atual do elemento. Esse atributo expressa a saúde desse elemento, mas não necessariamente a de seus subcomponentes. Os valores possíveis são de 0 a 30, em que 5 significa que o elemento está totalmente íntegre e 30 significa que o elemento é completamente nãofuncional. Essa propriedade é herdada [**de Cim \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -331,53 +331,53 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como **NULL**.
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **JobRunTimes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de vezes que o trabalho deve ser executado. Um valor de 1 indica que o trabalho não é recorrente, enquanto qualquer valor diferente de zero indica um limite para o número de vezes que o trabalho será recorrente. Zero indica que não há nenhum limite para o número de vezes que o trabalho pode ser processado, mas será encerrado após o tempo de espera ter sido atingido **ou o trabalho** será encerrado manualmente. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O número de vezes que o trabalho deve ser executado. Um valor de 1 indica que o trabalho não é recorrente, enquanto qualquer valor não zero indica um limite para o número de vezes que o trabalho será recurso. Zero indica que não há limite para o número de vezes que o trabalho pode ser processado, mas ele será encerrado depois que **UntilTime** for atingido ou o trabalho seja encerrado manualmente. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **JobState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-**JobState** é uma enumeração de inteiro que indica o estado operacional de um trabalho. Ele também pode indicar transições entre esses Estados, por exemplo, "desligando" e "Iniciando". Essa propriedade é herdada do [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+**JobState** é uma enumeração de inteiro que indica o estado operacional de um trabalho. Ele também pode indicar transições entre esses estados, por exemplo, "Desligando" e "Iniciando". Essa propriedade é herdada de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 
 
 | Valor                                                                                                                                                                                                                                                                 | Significado                                                                                                                                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="New"></span><span id="new"></span><span id="NEW"></span><dl> <dt>**Novo**</dt> <dt>2</dt> </dl>                                                           | O trabalho nunca foi iniciado.<br/>                                                                                                                                                                                                         |
-| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**Iniciando**</dt> em <dt>3</dt> </dl>                                       | O trabalho está sendo movido dos Estados 2 (novo), 5 (suspensos) ou 11 (serviço) para o estado 4 (em execução).<br/>                                                                                                                                   |
+| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**Começando**</dt> <dt>em 3</dt> </dl>                                       | O trabalho está mudando dos estados 2 (Novo), 5 (Suspenso) ou 11 (Serviço) para o estado 4 (Em execução).<br/>                                                                                                                                   |
 | <span id="Running"></span><span id="running"></span><span id="RUNNING"></span><dl> <dt>**Executando**</dt> <dt>4</dt> </dl>                                           | O trabalho está em execução.<br/>                                                                                                                                                                                                                     |
 | <span id="Suspended"></span><span id="suspended"></span><span id="SUSPENDED"></span><dl> <dt>**Suspenso**</dt> <dt>5</dt> </dl>                                   | O trabalho é interrompido, mas pode ser reiniciado de maneira direta.<br/>                                                                                                                                                                       |
-| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Desligando**</dt> <dt>6</dt> </dl>                   | O trabalho está mudando para um estado de 7 (concluído), 8 (encerrado) ou 9 (eliminado).<br/>                                                                                                                                                              |
-| <span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span><dl> <dt>**Concluído**</dt> em <dt>7</dt> </dl>                                   | O trabalho foi concluído normalmente.<br/>                                                                                                                                                                                                         |
-| <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span><dl> <dt>**Terminada**</dt> em <dt>8</dt> </dl>                               | O trabalho foi interrompido por uma solicitação de alteração de estado "Terminate". O trabalho e todos os seus processos subjacentes são encerrados e podem ser reiniciados apenas como um novo trabalho. O requisito de que o trabalho seja reiniciado somente como um novo trabalho é específico ao trabalho.<br/> |
-| <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span><dl> <dt>**Encerrado**</dt> <dt>9</dt> </dl>                                               | O trabalho foi interrompido por uma solicitação de alteração de estado "Kill". Os processos subjacentes ainda podem estar em execução, e uma limpeza pode ser necessária para liberar recursos.<br/>                                                                            |
-| <span id="Exception"></span><span id="exception"></span><span id="EXCEPTION"></span><dl> <dt>**Exceção**</dt> <dt>10</dt> </dl>                                  | O trabalho está em um estado anormal que pode indicar uma condição de erro. O status real do trabalho pode estar disponível por meio de objetos específicos do trabalho.<br/>                                                                           |
-| <span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dl> <dt>**Serviço**</dt> <dt>11</dt> </dl>                                          | O trabalho está em um estado específico do fornecedor que dá suporte à descoberta de problemas ou à resolução, ou ambos.<br/>                                                                                                                                          |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>12 32767</dt> </dl>            | Reservado.<br/>                                                                                                                                                                                                                               |
-| <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span><dl> <dt>**Fornecedor reservado**</dt> <dt>32768 65535</dt> </dl> | Reservado.<br/>                                                                                                                                                                                                                               |
+| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Desligando 6**</dt> <dt></dt> </dl>                   | O trabalho está mudando para um estado 7 (Concluído), 8 (Encerrado) ou 9 (Encerrado).<br/>                                                                                                                                                              |
+| <span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span><dl> <dt>**Concluído**</dt> <dt>7</dt> </dl>                                   | O trabalho foi concluído normalmente.<br/>                                                                                                                                                                                                         |
+| <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span><dl> <dt>**Encerrado 8**</dt> <dt></dt> </dl>                               | O trabalho foi interrompido por uma solicitação de alteração de estado "Encerrar". O trabalho e todos os seus processos subjacentes são encerrados e podem ser reiniciados apenas como um novo trabalho. O requisito de que o trabalho seja reiniciado somente como um novo trabalho é específico do trabalho.<br/> |
+| <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span><dl> <dt>**9**</dt> <dt>mortos</dt> </dl>                                               | O trabalho foi interrompido por uma solicitação de alteração de estado "Kill". Os processos subjacentes ainda podem estar em execução e uma limpeza pode ser necessária para liberar recursos.<br/>                                                                            |
+| <span id="Exception"></span><span id="exception"></span><span id="EXCEPTION"></span><dl> <dt>**Exceção**</dt> <dt>10</dt> </dl>                                  | O trabalho está em um estado anormal que pode ser um indicativo de uma condição de erro. O status real do trabalho pode estar disponível por meio de objetos específicos do trabalho.<br/>                                                                           |
+| <span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dl> <dt>**Serviço**</dt> <dt>11</dt> </dl>                                          | O trabalho está em um estado específico do fornecedor que dá suporte à descoberta de problemas, à resolução ou a ambos.<br/>                                                                                                                                          |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reservado**</dt> <dt>12 32767</dt> </dl>            | Reservado.<br/>                                                                                                                                                                                                                               |
+| <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span><dl> <dt>**Fornecedor Reservado**</dt> <dt>32768 65535</dt> </dl> | Reservado.<br/>                                                                                                                                                                                                                               |
 
 
 
@@ -394,20 +394,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que representa o status do trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Uma cadeia de caracteres que representa o status do trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **JobType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o tipo de trabalho que está sendo acompanhado por este objeto.
+Indica o tipo de trabalho que está sendo rastreado por esse objeto.
 
 <dt>
 
@@ -420,7 +420,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Define_Virtual_Machine"></span><span id="define_virtual_machine"></span><span id="DEFINE_VIRTUAL_MACHINE"></span>
 
-<span id="Define_Virtual_Machine"></span><span id="define_virtual_machine"></span><span id="DEFINE_VIRTUAL_MACHINE"></span>**Definir máquina virtual** (1)
+<span id="Define_Virtual_Machine"></span><span id="define_virtual_machine"></span><span id="DEFINE_VIRTUAL_MACHINE"></span>**Definir Máquina Virtual** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -434,21 +434,21 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Destroy_Virtual_Machine"></span><span id="destroy_virtual_machine"></span><span id="DESTROY_VIRTUAL_MACHINE"></span>
 
-<span id="Destroy_Virtual_Machine"></span><span id="destroy_virtual_machine"></span><span id="DESTROY_VIRTUAL_MACHINE"></span>**Destruir máquina virtual** (3)
+<span id="Destroy_Virtual_Machine"></span><span id="destroy_virtual_machine"></span><span id="DESTROY_VIRTUAL_MACHINE"></span>**Destruir Máquina Virtual** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Modify_Management_Service_Settings"></span><span id="modify_management_service_settings"></span><span id="MODIFY_MANAGEMENT_SERVICE_SETTINGS"></span>
 
-<span id="Modify_Management_Service_Settings"></span><span id="modify_management_service_settings"></span><span id="MODIFY_MANAGEMENT_SERVICE_SETTINGS"></span>**Modificar as configurações do serviço de gerenciamento** (4)
+<span id="Modify_Management_Service_Settings"></span><span id="modify_management_service_settings"></span><span id="MODIFY_MANAGEMENT_SERVICE_SETTINGS"></span>**Modify Management Service Configurações** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Initialize_Virtual_Machine"></span><span id="initialize_virtual_machine"></span><span id="INITIALIZE_VIRTUAL_MACHINE"></span>
 
-<span id="Initialize_Virtual_Machine"></span><span id="initialize_virtual_machine"></span><span id="INITIALIZE_VIRTUAL_MACHINE"></span>**Inicializar máquina virtual** (10)
+<span id="Initialize_Virtual_Machine"></span><span id="initialize_virtual_machine"></span><span id="INITIALIZE_VIRTUAL_MACHINE"></span>**Inicializar Máquina Virtual** (10)
 
 
 </dt> <dd></dd> <dt>
@@ -462,63 +462,63 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Start_Virtual_Machine"></span><span id="start_virtual_machine"></span><span id="START_VIRTUAL_MACHINE"></span>
 
-<span id="Start_Virtual_Machine"></span><span id="start_virtual_machine"></span><span id="START_VIRTUAL_MACHINE"></span>**Iniciar máquina virtual** (12)
+<span id="Start_Virtual_Machine"></span><span id="start_virtual_machine"></span><span id="START_VIRTUAL_MACHINE"></span>**Iniciar Máquina Virtual** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Off_Virtual_Machine"></span><span id="power_off_virtual_machine"></span><span id="POWER_OFF_VIRTUAL_MACHINE"></span>
 
-<span id="Power_Off_Virtual_Machine"></span><span id="power_off_virtual_machine"></span><span id="POWER_OFF_VIRTUAL_MACHINE"></span>Desligar a **máquina virtual** (13)
+<span id="Power_Off_Virtual_Machine"></span><span id="power_off_virtual_machine"></span><span id="POWER_OFF_VIRTUAL_MACHINE"></span>**Desligar Máquina Virtual** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Save_Virtual_Machine"></span><span id="save_virtual_machine"></span><span id="SAVE_VIRTUAL_MACHINE"></span>
 
-<span id="Save_Virtual_Machine"></span><span id="save_virtual_machine"></span><span id="SAVE_VIRTUAL_MACHINE"></span>**Salvar máquina virtual** (14)
+<span id="Save_Virtual_Machine"></span><span id="save_virtual_machine"></span><span id="SAVE_VIRTUAL_MACHINE"></span>**Salvar Máquina Virtual** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Restore_Virtual_Machine"></span><span id="restore_virtual_machine"></span><span id="RESTORE_VIRTUAL_MACHINE"></span>
 
-<span id="Restore_Virtual_Machine"></span><span id="restore_virtual_machine"></span><span id="RESTORE_VIRTUAL_MACHINE"></span>**Restaurar máquina virtual** (15)
+<span id="Restore_Virtual_Machine"></span><span id="restore_virtual_machine"></span><span id="RESTORE_VIRTUAL_MACHINE"></span>**Restaurar Máquina Virtual** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Shut_Down_Virtual_Machine"></span><span id="shut_down_virtual_machine"></span><span id="SHUT_DOWN_VIRTUAL_MACHINE"></span>
 
-<span id="Shut_Down_Virtual_Machine"></span><span id="shut_down_virtual_machine"></span><span id="SHUT_DOWN_VIRTUAL_MACHINE"></span>**Desligar máquina virtual** (16)
+<span id="Shut_Down_Virtual_Machine"></span><span id="shut_down_virtual_machine"></span><span id="SHUT_DOWN_VIRTUAL_MACHINE"></span>**Desligar Virtual Machine** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pause_Virtual_Machine"></span><span id="pause_virtual_machine"></span><span id="PAUSE_VIRTUAL_MACHINE"></span>
 
-<span id="Pause_Virtual_Machine"></span><span id="pause_virtual_machine"></span><span id="PAUSE_VIRTUAL_MACHINE"></span>**Pausar máquina virtual** (26)
+<span id="Pause_Virtual_Machine"></span><span id="pause_virtual_machine"></span><span id="PAUSE_VIRTUAL_MACHINE"></span>**Pausar Máquina Virtual** (26)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Resume_Virtual_Machine"></span><span id="resume_virtual_machine"></span><span id="RESUME_VIRTUAL_MACHINE"></span>
 
-<span id="Resume_Virtual_Machine"></span><span id="resume_virtual_machine"></span><span id="RESUME_VIRTUAL_MACHINE"></span>**Retomar máquina virtual** (27)
+<span id="Resume_Virtual_Machine"></span><span id="resume_virtual_machine"></span><span id="RESUME_VIRTUAL_MACHINE"></span>**Retomar Máquina Virtual** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reset_Virtual_Machine"></span><span id="reset_virtual_machine"></span><span id="RESET_VIRTUAL_MACHINE"></span>
 
-<span id="Reset_Virtual_Machine"></span><span id="reset_virtual_machine"></span><span id="RESET_VIRTUAL_MACHINE"></span>**Redefinir máquina virtual** (28)
+<span id="Reset_Virtual_Machine"></span><span id="reset_virtual_machine"></span><span id="RESET_VIRTUAL_MACHINE"></span>**Redefinir Máquina Virtual** (28)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reboot_Virtual_Machine"></span><span id="reboot_virtual_machine"></span><span id="REBOOT_VIRTUAL_MACHINE"></span>
 
-<span id="Reboot_Virtual_Machine"></span><span id="reboot_virtual_machine"></span><span id="REBOOT_VIRTUAL_MACHINE"></span>**Reinicializar máquina virtual** (29)
+<span id="Reboot_Virtual_Machine"></span><span id="reboot_virtual_machine"></span><span id="REBOOT_VIRTUAL_MACHINE"></span>**Reinicializar Máquina Virtual** (29)
 
 
 </dt> <dd></dd> <dt>
@@ -546,7 +546,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Request_Initial_Virtual_Machine_Memory"></span><span id="request_initial_virtual_machine_memory"></span><span id="REQUEST_INITIAL_VIRTUAL_MACHINE_MEMORY"></span>
 
-<span id="Request_Initial_Virtual_Machine_Memory"></span><span id="request_initial_virtual_machine_memory"></span><span id="REQUEST_INITIAL_VIRTUAL_MACHINE_MEMORY"></span>**Solicitar memória de máquina virtual inicial** (40)
+<span id="Request_Initial_Virtual_Machine_Memory"></span><span id="request_initial_virtual_machine_memory"></span><span id="REQUEST_INITIAL_VIRTUAL_MACHINE_MEMORY"></span>**Solicitar memória inicial da máquina virtual** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -574,7 +574,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Create_VSS_Snapshot_inside_Virtual_Machine"></span><span id="create_vss_snapshot_inside_virtual_machine"></span><span id="CREATE_VSS_SNAPSHOT_INSIDE_VIRTUAL_MACHINE"></span>
 
-<span id="Create_VSS_Snapshot_inside_Virtual_Machine"></span><span id="create_vss_snapshot_inside_virtual_machine"></span><span id="CREATE_VSS_SNAPSHOT_INSIDE_VIRTUAL_MACHINE"></span>**Criar um instantâneo VSS dentro da máquina virtual** (51)
+<span id="Create_VSS_Snapshot_inside_Virtual_Machine"></span><span id="create_vss_snapshot_inside_virtual_machine"></span><span id="CREATE_VSS_SNAPSHOT_INSIDE_VIRTUAL_MACHINE"></span>**Criar instantâneo do VSS dentro da máquina virtual** (51)
 
 
 </dt> <dd></dd> <dt>
@@ -588,14 +588,14 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Import_Virtual_Machine"></span><span id="import_virtual_machine"></span><span id="IMPORT_VIRTUAL_MACHINE"></span>
 
-<span id="Import_Virtual_Machine"></span><span id="import_virtual_machine"></span><span id="IMPORT_VIRTUAL_MACHINE"></span>**Importar máquina virtual** (61)
+<span id="Import_Virtual_Machine"></span><span id="import_virtual_machine"></span><span id="IMPORT_VIRTUAL_MACHINE"></span>**Importar Máquina Virtual** (61)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Export_Virtual_Machine"></span><span id="export_virtual_machine"></span><span id="EXPORT_VIRTUAL_MACHINE"></span>
 
-<span id="Export_Virtual_Machine"></span><span id="export_virtual_machine"></span><span id="EXPORT_VIRTUAL_MACHINE"></span>**Exportar máquina virtual** (62)
+<span id="Export_Virtual_Machine"></span><span id="export_virtual_machine"></span><span id="EXPORT_VIRTUAL_MACHINE"></span>**Exportar Máquina Virtual** (62)
 
 
 </dt> <dd></dd> <dt>
@@ -609,14 +609,14 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Unregister_Configuration"></span><span id="unregister_configuration"></span><span id="UNREGISTER_CONFIGURATION"></span>
 
-<span id="Unregister_Configuration"></span><span id="unregister_configuration"></span><span id="UNREGISTER_CONFIGURATION"></span>**Cancelar o registro da configuração** (64)
+<span id="Unregister_Configuration"></span><span id="unregister_configuration"></span><span id="UNREGISTER_CONFIGURATION"></span>**Configuração de não registro** (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Snapshot_Virtual_Machine"></span><span id="snapshot_virtual_machine"></span><span id="SNAPSHOT_VIRTUAL_MACHINE"></span>
 
-<span id="Snapshot_Virtual_Machine"></span><span id="snapshot_virtual_machine"></span><span id="SNAPSHOT_VIRTUAL_MACHINE"></span>**Máquina virtual de instantâneo** (70)
+<span id="Snapshot_Virtual_Machine"></span><span id="snapshot_virtual_machine"></span><span id="SNAPSHOT_VIRTUAL_MACHINE"></span>**Máquina Virtual de Instantâneo** (70)
 
 
 </dt> <dd></dd> <dt>
@@ -630,14 +630,14 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Delete_Virtual_Machine_Snapshot"></span><span id="delete_virtual_machine_snapshot"></span><span id="DELETE_VIRTUAL_MACHINE_SNAPSHOT"></span>
 
-<span id="Delete_Virtual_Machine_Snapshot"></span><span id="delete_virtual_machine_snapshot"></span><span id="DELETE_VIRTUAL_MACHINE_SNAPSHOT"></span>**Excluir instantâneo de máquina virtual** (72)
+<span id="Delete_Virtual_Machine_Snapshot"></span><span id="delete_virtual_machine_snapshot"></span><span id="DELETE_VIRTUAL_MACHINE_SNAPSHOT"></span>**Excluir instantâneo da máquina virtual** (72)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Clear_Virtual_Machine_Snapshot_State"></span><span id="clear_virtual_machine_snapshot_state"></span><span id="CLEAR_VIRTUAL_MACHINE_SNAPSHOT_STATE"></span>
 
-<span id="Clear_Virtual_Machine_Snapshot_State"></span><span id="clear_virtual_machine_snapshot_state"></span><span id="CLEAR_VIRTUAL_MACHINE_SNAPSHOT_STATE"></span>**Limpar o estado do instantâneo da máquina virtual** (73)
+<span id="Clear_Virtual_Machine_Snapshot_State"></span><span id="clear_virtual_machine_snapshot_state"></span><span id="CLEAR_VIRTUAL_MACHINE_SNAPSHOT_STATE"></span>**Limpar estado de instantâneo da máquina virtual** (73)
 
 
 </dt> <dd></dd> <dt>
@@ -658,7 +658,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Modify_Replication_Server_Settings"></span><span id="modify_replication_server_settings"></span><span id="MODIFY_REPLICATION_SERVER_SETTINGS"></span>
 
-<span id="Modify_Replication_Server_Settings"></span><span id="modify_replication_server_settings"></span><span id="MODIFY_REPLICATION_SERVER_SETTINGS"></span>**Modificar as configurações do servidor de replicação** (90)
+<span id="Modify_Replication_Server_Settings"></span><span id="modify_replication_server_settings"></span><span id="MODIFY_REPLICATION_SERVER_SETTINGS"></span>**Modificar o servidor de Configurações** de replicação (90)
 
 
 </dt> <dd></dd> <dt>
@@ -672,7 +672,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Modify_Replication_Relationship_Settings"></span><span id="modify_replication_relationship_settings"></span><span id="MODIFY_REPLICATION_RELATIONSHIP_SETTINGS"></span>
 
-<span id="Modify_Replication_Relationship_Settings"></span><span id="modify_replication_relationship_settings"></span><span id="MODIFY_REPLICATION_RELATIONSHIP_SETTINGS"></span>**Modificar as configurações de relação de replicação** (92)
+<span id="Modify_Replication_Relationship_Settings"></span><span id="modify_replication_relationship_settings"></span><span id="MODIFY_REPLICATION_RELATIONSHIP_SETTINGS"></span>**Modificar a relação Configurações** replicação (92)
 
 
 </dt> <dd></dd> <dt>
@@ -686,14 +686,14 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Start_Inband_Initial_Replication"></span><span id="start_inband_initial_replication"></span><span id="START_INBAND_INITIAL_REPLICATION"></span>
 
-<span id="Start_Inband_Initial_Replication"></span><span id="start_inband_initial_replication"></span><span id="START_INBAND_INITIAL_REPLICATION"></span>**Iniciar a replicação inicial da faixa** (94)
+<span id="Start_Inband_Initial_Replication"></span><span id="start_inband_initial_replication"></span><span id="START_INBAND_INITIAL_REPLICATION"></span>**Iniciar replicação inicial de inband** (94)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Import_Replication"></span><span id="import_replication"></span><span id="IMPORT_REPLICATION"></span>
 
-<span id="Import_Replication"></span><span id="import_replication"></span><span id="IMPORT_REPLICATION"></span>**Replicação de importação** (95)
+<span id="Import_Replication"></span><span id="import_replication"></span><span id="IMPORT_REPLICATION"></span>**Importar Replicação** (95)
 
 
 </dt> <dd></dd> <dt>
@@ -721,14 +721,14 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Commit_Failover"></span><span id="commit_failover"></span><span id="COMMIT_FAILOVER"></span>
 
-<span id="Commit_Failover"></span><span id="commit_failover"></span><span id="COMMIT_FAILOVER"></span>**Failover de confirmação** (99)
+<span id="Commit_Failover"></span><span id="commit_failover"></span><span id="COMMIT_FAILOVER"></span>**Failover de commit** (99)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inititate_Synced_Replication"></span><span id="inititate_synced_replication"></span><span id="INITITATE_SYNCED_REPLICATION"></span>
 
-<span id="Inititate_Synced_Replication"></span><span id="inititate_synced_replication"></span><span id="INITITATE_SYNCED_REPLICATION"></span>**Replicação sincronizada do Inititate** (100)
+<span id="Inititate_Synced_Replication"></span><span id="inititate_synced_replication"></span><span id="INITITATE_SYNCED_REPLICATION"></span>**Inititate Synced Replication** (100)
 
 
 </dt> <dd></dd> <dt>
@@ -909,7 +909,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -924,7 +924,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Modify_Ethernet_Switch_Settings"></span><span id="modify_ethernet_switch_settings"></span><span id="MODIFY_ETHERNET_SWITCH_SETTINGS"></span>
 
-<span id="Modify_Ethernet_Switch_Settings"></span><span id="modify_ethernet_switch_settings"></span><span id="MODIFY_ETHERNET_SWITCH_SETTINGS"></span>**Modificar as configurações do comutador Ethernet** (131)
+<span id="Modify_Ethernet_Switch_Settings"></span><span id="modify_ethernet_switch_settings"></span><span id="MODIFY_ETHERNET_SWITCH_SETTINGS"></span>**modificar Configurações do comutador Ethernet** (131)
 
 
 </dt> <dd></dd> <dt>
@@ -987,7 +987,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Changing_the_Non-alloction_Settings_of_a_Resource_Pool"></span><span id="changing_the_non-alloction_settings_of_a_resource_pool"></span><span id="CHANGING_THE_NON-ALLOCTION_SETTINGS_OF_A_RESOURCE_POOL"></span>
 
-<span id="Changing_the_Non-alloction_Settings_of_a_Resource_Pool"></span><span id="changing_the_non-alloction_settings_of_a_resource_pool"></span><span id="CHANGING_THE_NON-ALLOCTION_SETTINGS_OF_A_RESOURCE_POOL"></span>**Alterando as configurações não alloction de um pool de recursos** (152)
+<span id="Changing_the_Non-alloction_Settings_of_a_Resource_Pool"></span><span id="changing_the_non-alloction_settings_of_a_resource_pool"></span><span id="CHANGING_THE_NON-ALLOCTION_SETTINGS_OF_A_RESOURCE_POOL"></span>**alterando o Configurações não alloction de um Pool de recursos** (152)
 
 
 </dt> <dd></dd> <dt>
@@ -1015,13 +1015,13 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 
 <span id="Modify_3D_Service_Settings"></span><span id="modify_3d_service_settings"></span><span id="MODIFY_3D_SERVICE_SETTINGS"></span>
 
-<span id="Modify_3D_Service_Settings"></span><span id="modify_3d_service_settings"></span><span id="MODIFY_3D_SERVICE_SETTINGS"></span>**Modificar as configurações do serviço 3D** (162)
+<span id="Modify_3D_Service_Settings"></span><span id="modify_3d_service_settings"></span><span id="MODIFY_3D_SERVICE_SETTINGS"></span>**modificar Configurações de serviço 3d** (162)
 
 
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1042,7 +1042,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1056,7 +1056,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1070,7 +1070,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1084,7 +1084,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1098,7 +1098,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1112,7 +1112,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1126,7 +1126,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1140,7 +1140,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1154,7 +1154,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1168,7 +1168,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1182,7 +1182,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1196,7 +1196,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1210,7 +1210,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1224,7 +1224,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1238,7 +1238,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1252,7 +1252,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1266,7 +1266,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1280,7 +1280,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1294,7 +1294,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1308,7 +1308,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1322,7 +1322,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10 como **ponto de referência de limpeza**.
+> valor adicionado em Windows 10 como **ponto de referência de limpeza**.
 
  
 
@@ -1336,7 +1336,7 @@ Indica o tipo de trabalho que está sendo acompanhado por este objeto.
 </dt> <dd>
 
 > [!Note]  
-> Valor adicionado no Windows 10.
+> Valor adicionado em Windows 10.
 
  
 
@@ -1783,8 +1783,8 @@ O acesso à classe **Msvm \_ ConcreteJob** pode ser restringido pela filtragem d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

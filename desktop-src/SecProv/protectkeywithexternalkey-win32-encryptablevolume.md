@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: adcbdfdb9ea55139626bf3d1657b2e154c8d2b8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63ef4f998d576ecf2931af529a0ff6710a54513cc0d19027421c160bbdcd4cf5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004414"
 ---
 # <a name="protectkeywithexternalkey-method-of-the-win32_encryptablevolume-class"></a>Método ProtectKeyWithExternalKey da classe Win32 \_ EncryptableVolume
 
@@ -76,7 +76,7 @@ Se a unidade oferecer suporte à criptografia de hardware e o BitLocker não tiv
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -97,7 +97,7 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK do Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](../wmisdk/managed-object-format--mof-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Enterprise, Windows Vista Ultimate \[ Desktop apps somente\]<br/>                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows vista Enterprise, \[ somente aplicativos de área de trabalho do vista Ultimate Windows\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                    |
 | Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
 

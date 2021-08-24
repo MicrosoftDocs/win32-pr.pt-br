@@ -1,29 +1,29 @@
 ---
-title: Exemplos de trabalho
+title: Exemplos de trabalhos
 description: Os exemplos de trabalho estão disponíveis para download, mostrando o uso de vários recursos do Direct3D 12.
 ms.assetid: 4C4475D4-534F-484F-8D60-9ACEA09AC109
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb1b61ec374e21c9173797121ee90ec72e789de8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d6f8bad1d20729f4caa78952feda22378ad37526b33b668e79260ef9658da53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74103364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119631876"
 ---
-# <a name="working-samples"></a>Exemplos de trabalho
+# <a name="working-samples"></a>Exemplos de trabalhos
 
 Os exemplos de trabalho estão disponíveis para download, mostrando o uso de vários recursos do Direct3D 12.
 
 ## <a name="working-samples"></a>Exemplos de trabalho
 
-Exemplos de trabalho (na forma de projetos do Visual Studio 2015) podem ser baixados do [GitHub/Microsoft/DirectX-Graphics-Samples](https://github.com/Microsoft/DirectX-Graphics-Samples).
+os exemplos de trabalho (na forma de projetos Visual Studio 2015) podem ser baixados de [GitHub/Microsoft/DirectX-Graphics-Samples](https://github.com/Microsoft/DirectX-Graphics-Samples).
 
 > [!Note]  
 > A lista exata de exemplos disponíveis neste local varia conforme os exemplos são adicionados e atualizados.
 
- 
+ 
 
 
 
@@ -74,14 +74,14 @@ Demonstra como aplicar uma textura a um triângulo usando o Direct3D 12.<br />
 <td>Demonstra como o Multi-Engine pode ser usado para fazer o trabalho de computação assíncrona juntamente com o trabalho 3D na mesma GPU.</td>
 <td>Y</td>
 <td>Y</td>
-<td><a href="multi-engine-n-body-gravity-simulation.md">Simulação de gravidade n-Body de vários mecanismos</a></td>
+<td><a href="multi-engine-n-body-gravity-simulation.md">Simulação de gravidade de n-corpos de vários mecanismos</a></td>
 </tr>
 <tr class="odd">
 <td>D3D12PredicationQueries</td>
 <td>Demonstra a remoção de oclusão usando heaps de consulta e predicação.</td>
 <td>Y</td>
 <td>Y</td>
-<td><a href="predication-queries.md">Consultas do predicação</a></td>
+<td><a href="predication-queries.md">Consultas de predicação</a></td>
 </tr>
 <tr class="even">
 <td>D3D12DynamicIndexing</td>
@@ -95,14 +95,14 @@ Demonstra como aplicar uma textura a um triângulo usando o Direct3D 12.<br />
 <td>Demonstra o uso básico da camada 11on12. Este exemplo renderiza o texto usando D2D usando a API do Direct3D 11 em um dispositivo 11on12 do Direct3D 12.</td>
 <td>Y</td>
 <td>Y</td>
-<td><a href="d2d-using-d3d11on12.md">D2D usando D3D11on12</a></td>
+<td><a href="d2d-using-d3d11on12.md">O D2D usando o D3D11on12</a></td>
 </tr>
 <tr class="even">
 <td>D3D12ExecuteIndirect</td>
 <td>Demonstra a remoção do mecanismo de computação em conjunto com o recurso de execução indireta para processar somente objetos que passam no teste de remoção.</td>
 <td>Y</td>
 <td>Y</td>
-<td><a href="indirect-drawing-and-gpu-culling-.md">Remoção indireta de desenho e GPU</a></td>
+<td><a href="indirect-drawing-and-gpu-culling-.md">Seleção indireta de GPU e desenho</a></td>
 </tr>
 <tr class="odd">
 <td>D3D12PipelineStateCache</td>
@@ -151,7 +151,7 @@ Demonstra como aplicar uma textura a um triângulo usando o Direct3D 12.<br />
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -160,12 +160,12 @@ Demonstra como aplicar uma textura a um triângulo usando o Direct3D 12.<br />
 [Guia de programação do Direct3D 12](directx-12-programming-guide.md)
 </dt> <dt>
 
-[Instruções passo a passo de código do D3D12](d3d12-code-walk-throughs.md)
+[Guia detalhado do código D3D12](d3d12-code-walk-throughs.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

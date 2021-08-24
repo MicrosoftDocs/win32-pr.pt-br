@@ -1,11 +1,11 @@
 ---
-title: Propriedade AxWindowsMediaPlayer. openState
-description: A propriedade OpenState Obtém um valor de enumeração que indica o estado da fonte de conteúdo.
+title: Propriedade AxWindowsMediaPlayer.openState
+description: A propriedade openState obtém um valor de enumeração que indica o estado da fonte de conteúdo.
 ms.assetid: 7a76814a-649f-4516-a92a-5f536fb1b147
 keywords:
-- Windows Media Player da propriedade openState
-- propriedade openstate Windows Media Player, classe AxWindowsMediaPlayer
-- classe AxWindowsMediaPlayer Windows Media Player, propriedade openstate
+- propriedade openState Windows Media Player
+- propriedade openState Windows Media Player , classe AxWindowsMediaPlayer
+- Classe AxWindowsMediaPlayer Windows Media Player , propriedade openState
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119573566"
 ---
-# <a name="axwindowsmediaplayeropenstate-property"></a>Propriedade AxWindowsMediaPlayer. openState
+# <a name="axwindowsmediaplayeropenstate-property"></a>Propriedade AxWindowsMediaPlayer.openState
 
-A propriedade OpenState Obtém um valor de enumeração que indica o estado da fonte de conteúdo.
+A propriedade openState obtém um valor de enumeração que indica o estado da fonte de conteúdo.
 
 Esta propriedade é somente para leitura.
 
@@ -48,11 +48,11 @@ Public ReadOnly Property openState As WMPOpenState
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor de enumeração WMPLib. WMPOpenState.
+O valor de enumeração WMPLib.WMPOpenState.
 
 ## <a name="remarks"></a>Comentários
 
-não há garantia de que os estados de Windows Media Player ocorram em uma ordem específica. Além disso, nem todo estado ocorre necessariamente durante uma sequência de eventos. Você não deve escrever código que dependa da ordem de estado.
+Windows Media Player não há garantia de que ocorram em nenhuma ordem específica. Além disso, nem todos os estados ocorrem necessariamente durante uma sequência de eventos. Você não deve escrever código que depende da ordem de estado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ não há garantia de que os estados de Windows Media Player ocorram em uma ordem
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -73,7 +73,7 @@ não há garantia de que os estados de Windows Media Player ocorram em uma ordem
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Evento AxWindowsMediaPlayer. OpenStateChange**](axwmplib-axwindowsmediaplayer-openstatechange.md)
+[**Evento AxWindowsMediaPlayer.OpenStateChange**](axwmplib-axwindowsmediaplayer-openstatechange.md)
 </dt> <dt>
 
 [**WMPLib.WMPOpenState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpopenstate)

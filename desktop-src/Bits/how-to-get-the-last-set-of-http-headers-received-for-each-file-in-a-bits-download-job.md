@@ -6,16 +6,16 @@ keywords:
 - baixando BITS, cabeçalho HTTP
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 0b7858d5b2467f52681b325e2bfbe65b96889e0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 92e9fe2c1671d26854da119938b426bc662324fe701d7f24d1885ff7b88e2df1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528524"
 ---
 # <a name="how-to-get-the-last-set-of-http-headers-received-for-each-file-in-a-bits-download-job"></a>Como obter o último conjunto de cabeçalhos HTTP recebidos para cada arquivo em um trabalho de download do BITS
 
-Este exemplo mostra como usar o método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) da nova interface [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obter o último conjunto de cabeçalhos HTTP recebido para cada arquivo em um trabalho de download de serviço de transferência inteligente em segundo plano (bits). As informações no cabeçalho HTTP podem ser usadas, por exemplo, para determinar o tipo de arquivo ou quando ele foi alterado pela última vez no servidor. Antes do Windows 8 e do Windows Server 2012, o BITS não forneceu um meio pelo qual o aplicativo poderia recuperar e inspecionar os cabeçalhos de resposta HTTP de um download concluído. Este exemplo mostra como usar a API do BITS para criar um trabalho do BITS com várias URLs para baixar, listar as URLs em um trabalho e recuperar os cabeçalhos de resposta HTTP para cada URL.
+Este exemplo mostra como usar o método [**GetProperty**](/windows/desktop/api/Bits5_0/nf-bits5_0-ibackgroundcopyjob5-getproperty) da nova interface [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) para obter o último conjunto de cabeçalhos HTTP recebido para cada arquivo em um trabalho de download de serviço de transferência inteligente em segundo plano (bits). As informações no cabeçalho HTTP podem ser usadas, por exemplo, para determinar o tipo de arquivo ou quando ele foi alterado pela última vez no servidor. antes de Windows 8 e Windows Server 2012, o BITS não forneceu um meio pelo qual o aplicativo poderia recuperar e inspecionar os cabeçalhos de resposta HTTP de um download concluído. Este exemplo mostra como usar a API do BITS para criar um trabalho do BITS com várias URLs para baixar, listar as URLs em um trabalho e recuperar os cabeçalhos de resposta HTTP para cada URL.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
@@ -730,9 +730,9 @@ VOID DisplayError(__in IBackgroundCopyJob *Job)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

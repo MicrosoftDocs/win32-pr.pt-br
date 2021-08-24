@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ac0c9d6a643337c43a5cadd5bcfe0b090cd39a00
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 2565091213108c6dcc563d23df9cad50faed6b30d46af08cadfacb4fc60d3989
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564146"
 ---
 # <a name="id3dxanimationcontrollerunkeyevent-method"></a>Método ID3DXAnimationController:: UnkeyEvent
 
@@ -49,7 +49,7 @@ Identificador de evento para o evento a ser removido da faixa de animação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

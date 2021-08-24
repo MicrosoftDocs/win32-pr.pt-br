@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos SWbemRefresher
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65375555650af7b473b98cd9c8339225f1881a45
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 17f16782addfb5a6a83358fbd55cd82ec0e168e4900e9e3289265c1a77b327b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105762451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639696"
 ---
 # <a name="swbemrefresher-methods"></a>Métodos SWbemRefresher
 
-O objeto [**SWbemRefresher**](swbemrefresher.md) expõe os métodos a seguir.
+O [**objeto SWbemRefresher**](swbemrefresher.md) expõe os métodos a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
