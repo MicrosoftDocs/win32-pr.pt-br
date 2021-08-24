@@ -224,7 +224,7 @@
                       href: /windows/win32/api/P2P/ns-p2p-peer_node_info
                     - name: PEER_SECURITY_INTERFACE
                       href: /windows/win32/api/P2P/ns-p2p-peer_security_interface
-                - name: Constantes de API de gráfico
+                - name: Constantes de API de grafo
                   href: graphing-api-enumerations.md
                   items:
                     - name: PEER_GRAPH_EVENT_TYPE
@@ -237,33 +237,33 @@
                       href: /windows/win32/api/P2P/ne-p2p-peer_graph_status_flags
                     - name: PEER_NODE_CHANGE_TYPE
                       href: /windows/win32/api/P2P/ne-p2p-peer_node_change_type
-                - name: Links de referência de gráfico
+                - name: Links de referência de grafo
                   href: graphing-reference-links.md
-        - name: API de agrupamento
+        - name: Grouping API
           href: grouping-api.md
           items:
-            - name: Sobre a API de agrupamento
+            - name: Sobre a API de Agrupação
               href: about-the-grouping-api.md
               items:
                 - name: Como trabalhar com grupos
                   href: how-to-work-with-groups.md
                 - name: Como funciona a segurança de grupo
                   href: how-group-security-works.md
-                - name: Como se conectar a um grupo de pares
+                - name: Como Conexão para um grupo de pares
                   href: how-to-connect-to-a-peer-group.md
-                - name: Convidando um par a um grupo
+                - name: Convidando um par para um grupo
                   href: inviting-a-peer-to-a-group.md
                 - name: Gerenciando registros de grupo
                   href: managing-group-records.md
-            - name: Usando a API de agrupamento
+            - name: Usando a API de Agrupação
               href: using-the-grouping-api.md
               items:
-                - name: Criando um aplicativo de chat de grupo
+                - name: Criando um aplicativo de chat em grupo
                   href: creating-a-group-chat-application.md
-            - name: Referência de API de agrupamento
+            - name: Referência da API de Agrupação
               href: the-grouping-api-reference.md
               items:
-                - name: Agrupando funções de API
+                - name: Funções de API de agrupação
                   href: grouping-api-functions.md
                   items:
                     - name: PeerGroupAddRecord
@@ -276,7 +276,7 @@
                       href: /windows/desktop/api/P2P/nf-p2p-peergroupconnect
                     - name: PeerGroupConnectByAddress
                       href: /windows/desktop/api/P2P/nf-p2p-peergroupconnectbyaddress
-                    - name: PeerGroupCreate
+                    - name: PeerGroupCriar
                       href: /windows/desktop/api/P2P/nf-p2p-peergroupcreate
                     - name: PeerGroupCreateInvitation
                       href: /windows/desktop/api/P2P/nf-p2p-peergroupcreateinvitation
@@ -357,7 +357,7 @@
                       href: /windows/win32/api/P2P/ns-p2p-peer_invitation_info
                     - name: PEER_MEMBER
                       href: /windows/win32/api/P2P/ns-p2p-peer_member
-                - name: Agrupamento de enumerações de API
+                - name: Agrupando enumerações de API
                   href: grouping-api-enumerations.md
                   items:
                     - name: PEER_GROUP_AUTHENTICATION_SCHEME
@@ -374,7 +374,7 @@
                       href: /windows/win32/api/P2P/ne-p2p-peer_member_change_type
                     - name: PEER_MEMBER_FLAGS
                       href: /windows/win32/api/P2P/ne-p2p-peer_member_flags
-        - name: API do Identity Manager
+        - name: Identity Manager API
           href: identity-manager-api.md
           items:
             - name: Sobre o Identity Manager
@@ -394,7 +394,7 @@
                       href: /windows/desktop/api/P2P/nf-p2p-peercreatepeername
                     - name: PeerEnumGroups
                       href: /windows/desktop/api/P2P/nf-p2p-peerenumgroups
-                    - name: PeerEnumIdentities
+                    - name: Entidades PeerEnumId
                       href: /windows/desktop/api/P2P/nf-p2p-peerenumidentities
                     - name: PeerIdentityCreate
                       href: /windows/desktop/api/P2P/nf-p2p-peeridentitycreate
@@ -421,12 +421,12 @@
                       href: /windows/win32/api/P2P/ns-p2p-peer_name_pair
                 - name: Links de referência do Identity Manager
                   href: identity-manager-reference-links.md
-        - name: API de Tabela de roteamento distribuído
+        - name: Roteamento distribuído API de Tabela
           href: distributed-routing-table-api.md
           items:
             - name: Sobre tabelas de roteamento distribuído
               href: about-distributed-routing-tables.md
-            - name: Usando o API de Tabela de roteamento distribuído
+            - name: Usando o protocolo Distributed Routing API de Tabela
               href: using-the-distributed-routing-table-api.md
               items:
                 - name: Registrando e cancelando o registro de chaves
@@ -646,9 +646,9 @@
                   href: people-near-me-apis.md
                 - name: Lojas de pessoas ao meu redor
                   href: people-near-me-stores.md
-                - name: Componentes de ponto do Windows para pessoas ao meu redor
+                - name: Windows Componentes pares para pessoas ao meu redor
                   href: windows-peer-components-for-people-near-me.md
-                - name: Componentes do Windows Vista para pessoas ao meu redor
+                - name: Windows Componentes do vista para pessoas ao meu redor
                   href: windows-vista-components-for-people-near-me.md
         - name: Referência de API de colaboração
           href: collaboration-api-reference.md
@@ -887,7 +887,7 @@
                   href: /windows/desktop/api/PeerDist/nf-peerdist-peerdistserverclosecontentinformation
                 - name: PeerDistServerRetrieveContentInformation
                   href: /windows/desktop/api/PeerDist/nf-peerdist-peerdistserverretrievecontentinformation
-            - name: Constantes da API de distribuição de pares
+            - name: Constantes da API de Distribuição de Pares
               href: peer-distribution-api-constants.md
-            - name: Tipos de dados da API de distribuição de pares
+            - name: Tipos de dados da API de Distribuição par
               href: peer-distribution-api-data-types.md

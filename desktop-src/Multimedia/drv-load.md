@@ -3,7 +3,7 @@ title: Mensagem de DRV_LOAD (mmsystem. h)
 description: Notifica o driver de que ele foi carregado. O driver deve certificar-se de que qualquer hardware e drivers de suporte necessários para funcionar corretamente estão presentes.
 ms.assetid: f3642d91-cea8-499d-8d2e-bf01a59a7d72
 keywords:
-- Multimídia do Windows de mensagem DRV_LOAD
+- mensagem de DRV_LOAD Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca7dda950eaa84f924f4845d99d5740e37d6b354
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d74b8d0663e96f0dc700739c7b8b5f9304d478ed02bf9493f24d03a506c14a61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678706"
 ---
 # <a name="drv_load-message"></a>Mensagem de carregamento de DRV \_
 

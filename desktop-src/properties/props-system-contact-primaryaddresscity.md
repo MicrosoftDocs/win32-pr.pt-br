@@ -4,12 +4,12 @@ ms.assetid: 366e05d3-1d74-4ba2-a2b6-e3779320f4b0
 title: System. Contact. PrimaryAddressCity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aab499eddc67cec1eecf3f0e5b882f05860f2903
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4120c60b96128ba94f9efd3fd77e4d1cd3b6ba2c678c0750d0e92b7c1ef85e1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776106"
 ---
 # <a name="systemcontactprimaryaddresscity"></a>System. Contact. PrimaryAddressCity
 

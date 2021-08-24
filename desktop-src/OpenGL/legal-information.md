@@ -6,12 +6,12 @@ keywords:
 - OpenGL, informações legais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a41d5cfbe3d14b57d2d71312736f4006f08c7f8
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 64f80933231af06e1925bf888c5dcc18803de1d687320182480465bee19db97f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111988911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777376"
 ---
 # <a name="legal-information-opengl"></a>Informações legais (OpenGL)
 

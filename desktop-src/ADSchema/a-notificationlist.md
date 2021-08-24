@@ -1,11 +1,11 @@
 ---
 title: Notification-List atributo
-description: O atributo Notification-List não é usado no momento.
+description: O Notification-List atributo não é usado no momento.
 ms.assetid: 50def826-a4bb-4235-a2b6-ea7da2600d17
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Notification-List do atributo AD
-- atributo do AD da notificaçãolist
+- Notification-List atributo AD Schema
+- Esquema do AD do atributo notificationList
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 124da60f881621863afa41977d2e3991152c8243
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 62f760cd2a691633aa5b3fd1112480acb611d0794e3f6f5a44dac7c185dc9643
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119703076"
 ---
 # <a name="notification-list-attribute"></a>Notification-List atributo
 
-O atributo de **lista de notificações** não está sendo usado no momento.
+O **atributo Notification-List** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | Notification-List                       |
-| LDAP-Display-Name | notificação da                        |
+| Ldap-Display-Name | notificationList                        |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.303                  |
-| System-ID-GUID    | 19195a56-6da0-11d0-afd3-00c04fd930c9    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 19195a56-6da0-11d0-afd3-00c04fd930c9    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                         |
+| Tem valor único       | Verdadeiro                                                                                                                                                                         |
 | É indexado             | Falso                                                                                                                                                                        |
-| No catálogo global      | Falso                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                 |
+| No Catálogo Global      | Falso                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Aplicativo-Configurações do site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Aplicativos Configurações**](c-applicationsettings.md)<br/> [**Application-Site-Configurações**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                         |
+| Tem valor único       | Verdadeiro                                                                                                                                                                         |
 | É indexado             | Falso                                                                                                                                                                        |
-| No catálogo global      | Falso                                                                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                 |
+| No Catálogo Global      | Falso                                                                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                 |
 | Range-Lower            | \-                                                                                                                                                                           |
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Aplicativo-Configurações do site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Aplicativos Configurações**](c-applicationsettings.md)<br/> [**Application-Site-Configurações**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -122,7 +122,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                         |
 | É indexado             | Falso                                                                                                                                                                        |
 | No catálogo global      | Falso                                                                                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                 |
@@ -130,7 +130,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Aplicativo-Configurações do site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**aplicativo-Configurações de Site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -143,7 +143,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                         |
 | É indexado             | Falso                                                                                                                                                                        |
 | No catálogo global      | Falso                                                                                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                 |
@@ -151,7 +151,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Aplicativo-Configurações do site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**aplicativo-Configurações de Site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -164,7 +164,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                         |
 | É indexado             | Falso                                                                                                                                                                        |
 | No catálogo global      | Falso                                                                                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                 |
@@ -172,7 +172,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Aplicativo-Configurações do site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**aplicativo-Configurações de Site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -185,7 +185,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                                                                           |
 | System-Only            | Falso                                                                                                                                                                        |
-| É de valor único       | True                                                                                                                                                                         |
+| É de valor único       | Verdadeiro                                                                                                                                                                         |
 | É indexado             | Falso                                                                                                                                                                        |
 | No catálogo global      | Falso                                                                                                                                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                 |
@@ -193,7 +193,7 @@ O atributo de **lista de notificações** não está sendo usado no momento.
 | Range-Upper            | \-                                                                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                                                                   |
-| Classes usadas em        | [**Aplicativo-configurações**](c-applicationsettings.md)<br/> [**Aplicativo-Configurações do site**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**Configurações do aplicativo**](c-applicationsettings.md)<br/> [**Application-Site-Configurações**](c-applicationsitesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 

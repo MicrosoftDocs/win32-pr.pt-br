@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87be99b0937199b4467e12418761f21f1dbc4983
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 641b686fd1d96f12df973c75b297a85cdc83e0df4fc7c347ae7e28fb40502749
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803716"
 ---
 # <a name="ms-ds-phonetic-display-name-attribute"></a>atributo ms-DS-Phonetic-Display-Name
 
@@ -55,9 +55,9 @@ O nome de exibição fonético de um objeto. Na ausência de um nome de exibiç�
 | ID do link                | \-                                                                                                                      |
 | MAPI-Id                | 0x8C92                                                                                                                  |
 | System-Only            | Falso                                                                                                                   |
-| É de valor único       | True                                                                                                                    |
-| É indexado             | True                                                                                                                    |
-| No catálogo global      | True                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                    |
+| É indexado             | Verdadeiro                                                                                                                    |
+| No catálogo global      | Verdadeiro                                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                            |
 | Range-Lower            | 0                                                                                                                       |
 | Range-Upper            | 256                                                                                                                     |
@@ -76,9 +76,9 @@ O nome de exibição fonético de um objeto. Na ausência de um nome de exibiç�
 | ID do link                | \-                                                                                                                      |
 | MAPI-Id                | 0x8C92                                                                                                                  |
 | System-Only            | Falso                                                                                                                   |
-| É de valor único       | True                                                                                                                    |
-| É indexado             | True                                                                                                                    |
-| No catálogo global      | True                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                    |
+| É indexado             | Verdadeiro                                                                                                                    |
+| No catálogo global      | Verdadeiro                                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                            |
 | Range-Lower            | 0                                                                                                                       |
 | Range-Upper            | 256                                                                                                                     |
@@ -97,15 +97,15 @@ O nome de exibição fonético de um objeto. Na ausência de um nome de exibiç�
 | ID do link                | \-                                                                                                                      |
 | MAPI-Id                | 0x8C92                                                                                                                  |
 | System-Only            | Falso                                                                                                                   |
-| É de valor único       | True                                                                                                                    |
-| É indexado             | True                                                                                                                    |
-| No catálogo global      | True                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                    |
+| É indexado             | Verdadeiro                                                                                                                    |
+| No catálogo global      | Verdadeiro                                                                                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                            |
 | Range-Lower            | 0                                                                                                                       |
 | Range-Upper            | 256                                                                                                                     |
 | Search-Flags           | 0x00000005                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                              |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> |
 
 
 

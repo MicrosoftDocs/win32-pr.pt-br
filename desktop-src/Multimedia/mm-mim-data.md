@@ -1,9 +1,9 @@
 ---
 title: Mensagem de MM_MIM_DATA (mmsystem. h)
-description: A \_ mensagem de dados do mim mm \_ é enviada para uma janela quando uma mensagem MIDI completa é recebida por um dispositivo de entrada MIDI.
+description: a \_ mensagem MM MIM \_ dados é enviada para uma janela quando uma mensagem midi completa é recebida por um dispositivo de entrada midi.
 ms.assetid: 9c580e48-78f3-4914-bdea-393823fb8482
 keywords:
-- Multimídia do Windows de mensagem MM_MIM_DATA
+- mensagem de MM_MIM_DATA Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2a79a5a4ab6b0422705fe737ba3da4a6fd4f923
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 4309149c8b69fd4396de3a4e67ab18c49008dd7051ed52d4fe992867d1262fe4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807376"
 ---
-# <a name="mm_mim_data-message"></a>Mensagem de dados do \_ mim mm \_
+# <a name="mm_mim_data-message"></a>MM \_ MIM \_ mensagem de dados
 
-A mensagem de **\_ \_ dados do mim mm** é enviada para uma janela quando uma mensagem MIDI completa é recebida por um dispositivo de entrada MIDI.
+a mensagem **MM \_ MIM \_ dados** é enviada para uma janela quando uma mensagem midi completa é recebida por um dispositivo de entrada midi.
 
 
 ```C++

@@ -4,12 +4,12 @@ ms.assetid: ec52a61c-9d2c-4327-977b-fb13d042bc37
 title: Determinando se o MSN está no estado de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba2d7af3511035c997493f0439a8635c1a928a75
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5da0abffc1735d2bf7af6ee6f9a68bf0d71ca1a2fda44176a0905c3e8faec6d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654186"
 ---
 # <a name="determining-if-msn-is-in-the-sign-in-state"></a>Determinando se o MSN está no estado de entrada
 

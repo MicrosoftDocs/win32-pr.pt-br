@@ -1,9 +1,9 @@
 ---
-title: Elemento serviceInfo
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O elemento serviceInfo é o elemento principal para o ServiceInfo.xml documento.
+title: Elemento ServiceInfo
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O elemento ServiceInfo é o elemento principal para o ServiceInfo.xml documento.
 ms.assetid: d2f9e642-143e-405d-8588-c78e4355b9b9
 keywords:
-- Elemento serviceInfo do Windows Media Player
+- Elemento ServiceInfo Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7ac41edd4ae8548ecdb6d3ef6631fba5d6175762
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b3be774d019555daa75b78edf6a7ed76351e7523712313365dd6c80bfee7cd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763636"
 ---
-# <a name="serviceinfo-element"></a>Elemento serviceInfo
+# <a name="serviceinfo-element"></a>Elemento ServiceInfo
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-O elemento **serviceInfo** é o elemento principal para o ServiceInfo.xml documento.
+O **elemento ServiceInfo** é o elemento principal para o ServiceInfo.xml documento.
 
 ``` syntax
 <ServiceInfo
@@ -43,9 +43,9 @@ O elemento **serviceInfo** é o elemento principal para o ServiceInfo.xml docume
 
 | Termo                                                                                                                                             | Descrição                                                                                                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="Version__optional_"></span><span id="version__optional_"></span><span id="VERSION__OPTIONAL_"></span>**Versão** (opcional)<br/> | Versão do arquivo de ServiceInfo.xml. A versão 1, 0 tem suporte para o Windows Media Player.<br/>                                                                                                                                                            |
-| <span id="Key__required_"></span><span id="key__required_"></span><span id="KEY__REQUIRED_"></span>**Chave** (obrigatório)<br/>                 | A cadeia de caracteres da chave de serviço que identifica exclusivamente a loja online.<br/>                                                                                                                                                                                   |
-| <span id="ContentPartner"></span><span id="contentpartner"></span><span id="CONTENTPARTNER"></span>**ContentPartner**<br/>                 | Indica se o repositório online é um repositório do tipo 1. Um valor de "true" indica que o repositório é do tipo 1. Um valor de "false" indica que o repositório não é um repositório tipo 1; ou seja, é um repositório tipo 2. O valor padrão é "falso".<br/> |
+| <span id="Version__optional_"></span><span id="version__optional_"></span><span id="VERSION__OPTIONAL_"></span>**Versão** (opcional)<br/> | Versão do arquivo ServiceInfo.xml dados. A versão 1.00 tem suporte para Windows Media Player.<br/>                                                                                                                                                            |
+| <span id="Key__required_"></span><span id="key__required_"></span><span id="KEY__REQUIRED_"></span>**Chave** (obrigatório)<br/>                 | A cadeia de caracteres de chave de serviço que identifica exclusivamente o armazenamento online.<br/>                                                                                                                                                                                   |
+| <span id="ContentPartner"></span><span id="contentpartner"></span><span id="CONTENTPARTNER"></span>**ContentPartner**<br/>                 | Indica se a loja online é um armazenamento do tipo 1. Um valor "true" indica que o armazenamento é um armazenamento do tipo 1. Um valor de "false" indica que o armazenamento não é um armazenamento do tipo 1; ou seja, é um armazenamento de tipo 2. O valor padrão é "falso".<br/> |
 
 
 
@@ -58,7 +58,7 @@ O elemento **serviceInfo** é o elemento principal para o ServiceInfo.xml docume
 | Hierarquia       | Elemento                                                                                                                                                                            |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Elementos pai | Nenhum                                                                                                                                                                               |
-| Elementos filho  | **AlbumInfo**, **BuyCD**, **cor**, **Descrição**, **FriendlyName**, **HtmlView**, **imagem**, **InfoCenter**, **instalação**, **ServiceTask1**, **ServiceTask2**, **ServiceTask3** |
+| Elementos filho  | **AlbumInfo,** **BuyCD,** **Color**, **Description**, **FriendlyName**, **HTMLView**, **Image**, **InfoCenter**, **Install**, **ServiceTask1**, **ServiceTask2**, **ServiceTask3** |
 
 
 
@@ -66,16 +66,16 @@ O elemento **serviceInfo** é o elemento principal para o ServiceInfo.xml docume
 
 ## <a name="remarks"></a>Comentários
 
-A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Outros podem estar presentes para fins de compatibilidade herdada. A solicitação também incluirá todos os parâmetros que você especificou usando o parâmetro de linha de comando netextra da instalação do Windows Media Player.
+A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Outros podem estar presentes para fins de compatibilidade herdado. A solicitação também incluirá todos os parâmetros especificados usando o parâmetro de linha de comando ServiceExtra da Windows Media Player configuração.
 
 
 
 | Nome         | Valor                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *GeoId*      | ID da localização geográfica do Windows. A ID de local é especificada pelo usuário na área **local** das configurações de opções regionais e de idiomas no painel de controle. |
-| *locale*     | ID de localidade do Windows Media Player.                                                                                                                                     |
-| *UserLocale* | IDENTIFICAÇÃO de localidade do Windows. A localidade é especificada pelo usuário na área **padrões e formatos** das configurações de opções regionais e de idiomas no painel de controle.        |
-| *version*    | Número de versão do Windows Media Player usando o seguinte formato: 10.0. x. xxxx ou 11.0. x. xxxx.                                                                         |
+| *Geoid*      | Windows ID de localização geográfica. A ID de local é especificada pelo usuário na **área** Local das configurações De Opções Regionais e de Idioma Painel de Controle. |
+| *locale*     | Windows Media Player ID da localidade.                                                                                                                                     |
+| *userlocale* | Windows ID da localidade. A localidade é especificada pelo usuário na área Padrões e **Formatos** das configurações De opções Regionais e de Idioma Painel de Controle.        |
+| *version*    | Windows Media Player número de versão usando o seguinte formato: 10.0.x.xxxx ou 11.0.x.xxxx.                                                                         |
 
 
 
@@ -95,13 +95,13 @@ A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Ou
 
 <dl> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
-[**Documento do serviceInfo**](serviceinfo-document.md)
+[**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 77b80ffa-edb7-42bc-943a-5abfdbe5cf42
 title: Constantes do Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29d4efc70fda642ae9c0239d93edeed552b50d11
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: be0a0b84a4f0be7698ad14a699974011d5019814aae16da8bb6182cf44bfe5f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675586"
 ---
 # <a name="direct3d-constants"></a>Constantes do Direct3D
 

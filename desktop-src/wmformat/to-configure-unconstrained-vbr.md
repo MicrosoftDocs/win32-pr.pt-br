@@ -13,12 +13,12 @@ keywords:
 - perfis, configurando a VBR não restringida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b24c022c79bb38414ab201db11abd0cf260dfafe
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 5ff73a0aac8d13f015175080aac6eb580fc9686c67d892b14e4714746c8cea34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104084393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807756"
 ---
 # <a name="to-configure-unconstrained-vbr"></a>Para configurar a VBR não restringida
 
@@ -44,12 +44,12 @@ Para configurar um fluxo em um perfil a ser codificado com uma VBR não restring
 
 <dl> <dt>
 
-[**Configurando fluxos de VBR**](configuring-vbr-streams.md)
+[**configurando Fluxos de VBR**](configuring-vbr-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

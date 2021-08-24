@@ -4,12 +4,12 @@ description: A lista itens recentes é um painel no menu do aplicativo que exibe
 ms.assetid: fdead358-d303-46de-9f8e-6fc2832d8e94
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61f78c01fc4d6cc830eba644f7dcf22b6fb03e82
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4f1d67c38e1eb9014cfd3349881ed2849755ebc89489cc925052aa690f54adc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104557726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810868"
 ---
 # <a name="recent-items"></a>Itens recentes
 
@@ -22,7 +22,7 @@ A lista itens recentes é um painel no [menu do aplicativo](windowsribbon-contro
 
 ## <a name="details"></a>Detalhes
 
-A captura de tela a seguir ilustra uma lista de itens recentes do WordPad para o Windows 7.
+a captura de tela a seguir ilustra uma lista de itens recentes do WordPad para Windows 7).
 
 ![captura de tela da lista de itens recentes na faixa de faixas do Microsoft Paint.](images/controls/recentitems.png)
 
@@ -35,7 +35,7 @@ O elemento [**RecentItems**](windowsribbon-element-recentitems.md) tem um atribu
 > [!Note]  
 > A fixação será habilitada por padrão se o atributo *EnablePinning* não for especificado.
 
- 
+ 
 
 ![captura de tela de itens recentes fixando em um menu de aplicativo.](images/overviews/applicationmenu-menurecentitemspinned.png)
 
@@ -58,7 +58,7 @@ O método de retorno de chamada [**IUICommandHandler:: updateproperty**](/window
 > [!Note]  
 > Em alguns casos, uma propriedade pode ser recuperada por meio do método [**IUIFramework:: GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) e definida com o método [**IUIFramework:: SetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty) .
 
- 
+ 
 
 A tabela a seguir lista as chaves de propriedade que estão associadas ao controle itens recentes.
 
@@ -71,16 +71,16 @@ A tabela a seguir lista as chaves de propriedade que estão associadas ao contro
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
-O método [IApplicationDocumentLists:: GetList](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iapplicationdocumentlists-getlist) pode ser usado para recuperar a lista MRU do shell do Windows para o aplicativo da faixa de faixas. O objeto recuperado por esse método pode então ser usado pelo aplicativo para criar os dados exigidos pela estrutura da faixa de faixas para preencher a lista de **itens recentes** do [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
+o método [IApplicationDocumentLists:: getlist](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iapplicationdocumentlists-getlist) pode ser usado para recuperar a lista MRU Windows Shell para o aplicativo da faixa de faixas. O objeto recuperado por esse método pode então ser usado pelo aplicativo para criar os dados exigidos pela estrutura da faixa de faixas para preencher a lista de **itens recentes** do [menu do aplicativo](windowsribbon-controls-applicationmenu.md).
 
 > [!Note]  
 > Ao usar esse método, *ListType* deve ter o valor `ADLT_RECENT` .
 
- 
+ 
 
 Para obter um exemplo de como implementar uma lista de itens MRU em um aplicativo da estrutura da faixa de faixas, consulte o [exemplo HTMLEditRibbon](windowsribbon-htmleditribbonsample.md).
 
@@ -88,12 +88,12 @@ Para obter um exemplo de como implementar uma lista de itens MRU em um aplicativ
 
 <dl> <dt>
 
-[Biblioteca de controle do Windows Ribbon Framework](windowsribbon-controls-entry.md)
+[Windows Biblioteca de controle da estrutura de faixa](windowsribbon-controls-entry.md)
 </dt> <dt>
 
 [**Elemento de marcação de itens recentes**](windowsribbon-element-recentitems.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,29 +1,29 @@
 ---
-description: 'D3D10 \_ RECT é declarado da seguinte maneira:'
+description: 'D3D10 \_ RECT é declarado da seguinte forma:'
 ms.assetid: a0b27fb0-1e48-4e46-ad8c-99f197c31dc2
-title: D3D10_RECT (D3D10. h)
+title: D3D10_RECT (D3D10.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d978a3040e7dfd1cb916138991aa060f6663543f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 235a991942d2c6feba6070c4da3bb281692cbd6e0de69dc3cdfb9214ef60fb2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634996"
 ---
-# <a name="d3d10_rect"></a>D3D10 \_ Rect
+# <a name="d3d10_rect"></a>D3D10 \_ RECT
 
-D3D10 \_ RECT é declarado da seguinte maneira:
+D3D10 \_ RECT é declarado da seguinte forma:
 
 ``` syntax
 typedef RECT D3D10_RECT;
 ```
 
-Para obter mais informações sobre essa estrutura de retângulo GDI, consulte [Rect](/previous-versions//ms536136(v=vs.85)).
+Para obter mais informações sobre essa estrutura de retângulo GDI, consulte [RECT](/previous-versions//ms536136(v=vs.85)).
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada para retângulos de recorte por [**ID3D10Device:: RSGetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rsgetscissorrects) e [**ID3D10Device:: RSSetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rssetscissorrects).
+Essa estrutura é usada para retângulos de tesoura por [**ID3D10Device::RSGetScissorRects**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rsgetscissorrects) e [**ID3D10Device::RSSetScissorRects.**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-rssetscissorrects)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,8 +31,8 @@ Essa estrutura é usada para retângulos de recorte por [**ID3D10Device:: RSGetS
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3D10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3D10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3D10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3D10.lib</dt> </dl> |
 
 
 

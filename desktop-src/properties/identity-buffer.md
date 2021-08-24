@@ -4,16 +4,16 @@ ms.assetid: A125B444-2AD5-4DD6-B6EB-128052FF8EE4
 title: Identidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed6ac9ff62cfa8762ad7f8ecf738e76f22c1a5d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66c4fec62796fed2a37042966c97a533c36d526ee97e816f537845028d72b3a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119718196"
 ---
 # <a name="identity"></a>Identidade
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 ## <a name="in-this-section"></a>Nesta seção
 

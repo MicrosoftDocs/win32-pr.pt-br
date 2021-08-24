@@ -3,7 +3,7 @@ title: Estrutura de MCI_VD_PLAY_PARMS (Mciapi. h)
 description: A estrutura do MCI \_ \_ reproduzir \_ parâmetros de reprodução contém informações de posição e velocidade para o \_ comando MCI Play para dispositivos VIDEODISC.
 ms.assetid: 9fa8418f-3f69-4a9c-b23e-7d2e2c75c7af
 keywords:
-- Multimídia do Windows da estrutura de MCI_VD_PLAY_PARMS
+- estrutura de MCI_VD_PLAY_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3ab04ba5cf0a2b507370a4b777c19fd60a05c30
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 62c2aef6915d1e3cc325d5b9f8e1c7fe176a878c2d84080b5f8a77eaf034afc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783861"
 ---
 # <a name="mci_vd_play_parms-structure"></a>\_Estrutura de \_ parâmetros de reprodução de VD do MCI \_
 

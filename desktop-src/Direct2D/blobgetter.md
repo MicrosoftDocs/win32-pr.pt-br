@@ -3,7 +3,7 @@ title: BlobGetter (D2d1effecthelpers. h)
 description: Chama um retorno de chamada getter de propriedade da função de membro para uma propriedade do tipo BLOB.
 ms.assetid: 55A41BE4-2AAE-480B-A143-86E8E7533210
 keywords:
-- BlobGetter Direct2D
+- Direct2D BlobGetter
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9c638501c9c15abc2f895003fd79c481fd0e05b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91e7c918965fc2d7cdf8948806ffffea32f35cafc061ff0d81addd5499c37072
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653256"
 ---
 # <a name="blobgetter"></a>BlobGetter
 

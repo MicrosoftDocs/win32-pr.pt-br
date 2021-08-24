@@ -3,7 +3,7 @@ title: Elemento Group
 description: Representa um controle Group que funciona como um contêiner para um grupo de elementos.
 ms.assetid: b0d3fcda-7165-40f4-9e57-c7ab88b31711
 keywords:
-- Faixa de Opções do Windows do elemento group
+- Faixa de opções do Windows grupo
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1162055491f61ae6feffa385bbc5015e4f1b66f0
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 2ca9d138e18296bc801fd37931a3b8066761abd3dd697d360513983ad5288dfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442867"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119810606"
 ---
 # <a name="group-element"></a>Elemento Group
 
@@ -73,7 +73,7 @@ Representa um [controle](windowsribbon-controls-group.md) Group que funciona com
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>Quando especificado, o valor de <em>SizeDefinition</em> é restrito a um dos <a href="windowsribbon-templates.md">modelos de layout definidos</a> pela estrutura ribbon. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Qualquer sequência de zero ou mais caracteres.<br/> O comprimento máximo não ébounded.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Qualquer sequência de zero ou mais caracteres.<br/> O comprimento máximo não é desaconsudido.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +109,7 @@ Representa um [controle](windowsribbon-controls-group.md) Group que funciona com
 
 | Elemento                                             |
 |-----------------------------------------------------|
-| [**Guia**](windowsribbon-element-tab.md)<br/> |
+| [**Tab**](windowsribbon-element-tab.md)<br/> |
 
 
 

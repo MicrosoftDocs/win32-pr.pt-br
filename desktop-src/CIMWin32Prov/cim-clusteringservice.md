@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM ClusteringService representa a funcionalidade fornecida por um cluster. Por exemplo, a funcionalidade de failover pode ser modelada como um serviço de um cluster de failover.
+description: A classe CIM \_ ClusteringService representa a funcionalidade fornecida por um cluster. Por exemplo, a funcionalidade de failover pode ser modelada como um serviço de um cluster de failover.
 ms.assetid: 550e3be3-c1e2-4714-b702-49cb1213c65b
 ms.tgt_platform: multiple
-title: Classe CIM_ClusteringService
+title: CIM_ClusteringService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 40dc0ebd8daebb79c323d54591fc16126e0ef97a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dc31c760ea41761db06da5e1048d3ae1cc248c5fdde7f387e0cfeda209bb716a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700926"
 ---
-# <a name="cim_clusteringservice-class"></a>\_Classe CIM ClusteringService
+# <a name="cim_clusteringservice-class"></a>Classe CIM \_ ClusteringService
 
-A classe **CIM \_ ClusteringService** representa a funcionalidade fornecida por um cluster. Por exemplo, a funcionalidade de failover pode ser modelada como um serviço de um cluster de failover.
+A **classe CIM \_ ClusteringService** representa a funcionalidade fornecida por um cluster. Por exemplo, a funcionalidade de failover pode ser modelada como um serviço de um cluster de failover.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -63,22 +63,22 @@ class CIM_ClusteringService : CIM_Service
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ClusteringService** tem estes tipos de membros:
+A **classe CIM \_ ClusteringService** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ ClusteringService** tem esses métodos.
+A **classe CIM \_ ClusteringService** tem esses métodos.
 
 
 
 | Método                                                                     | Descrição                                                                                                |
 |:---------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| [**AddNode**](addnode-method-in-class-cim-clusteringservice.md)           | Método de classe que coloca um novo sistema de computador em um cluster. Não implementado pelo WMI.<br/>          |
+| [**AddNode**](addnode-method-in-class-cim-clusteringservice.md)           | Método de classe que traz um novo sistema de computador para um cluster. Não implementado pelo WMI.<br/>          |
 | [**EvictNode**](evictnode-method-in-class-cim-clusteringservice.md)       | Método de classe que remove um sistema de computador de um cluster. Não implementado pelo WMI.<br/>             |
-| [**StartService**](startservice-method-in-class-cim-clusteringservice.md) | Método de classe que tenta posicionar o serviço em seu estado de inicialização. Não implementado pelo WMI.<br/> |
+| [**Startservice**](startservice-method-in-class-cim-clusteringservice.md) | Método de classe que tenta colocar o serviço em seu estado de inicialização. Não implementado pelo WMI.<br/> |
 | [**StopService**](stopservice-method-in-class-cim-clusteringservice.md)   | Método de classe que coloca o serviço no estado parado. Não implementado pelo WMI.<br/>              |
 
 
@@ -87,7 +87,7 @@ A classe **CIM \_ ClusteringService** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ClusteringService** tem essas propriedades.
+A **classe CIM \_ ClusteringService** tem essas propriedades.
 
 <dl> <dt>
 
@@ -100,12 +100,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -118,12 +118,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("nome da classe")
+Qualificadores: [**\_ Chave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome da Classe")
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
@@ -139,27 +139,27 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto.
+Uma descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Indica quando o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -172,30 +172,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificadores: [ **Chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-A propriedade Name identifica exclusivamente o serviço e fornece uma indicação da funcionalidade que é gerenciada. Essa funcionalidade é descrita mais detalhadamente na propriedade Description do objeto.
+A propriedade Name identifica exclusivamente o serviço e fornece uma indicação da funcionalidade gerenciada. Essa funcionalidade é descrita em mais detalhes na propriedade Description do objeto.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
 **Iniciado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("iniciado")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Started")
 </dt> </dl>
 
-Se **for true**, o serviço foi iniciado.
+Se **TRUE**, o serviço foi iniciado.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
@@ -208,25 +208,25 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("modo de início")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Modo inicial")
 </dt> </dl>
 
 Indica se o serviço é iniciado automaticamente (por exemplo, por um sistema operacional) ou iniciado somente mediante solicitação.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 <dt>
 
 <span id="Automatic"></span><span id="automatic"></span><span id="AUTOMATIC"></span>
 
-**Automático** ("automático")
+**Automático** ("Automático")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Manual"></span><span id="manual"></span><span id="MANUAL"></span>
 
-**Manual** ("manual")
+**Manual** ("Manual")
 
 
 </dt> <dd></dd> </dl>
@@ -242,14 +242,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "degradado" e "Pred falha". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para inteligente).
+Cadeia de caracteres que indica o status atual do objeto. O status operacional e não operacional pode ser definido. O status operacional pode incluir "OK", "Degradado" e "Pred Fail". "Pred Fail" indica que um elemento está funcionando corretamente, mas está prevendo uma falha (por exemplo, uma unidade de disco rígido habilitada para SMART).
 
-O status não operacional pode incluir "erro", "Iniciando", "parando" e "serviço". O "serviço" pode ser aplicado durante o espelhamento de disco – reprateando, recarregando uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+O status não operacional pode incluir "Erro", "Iniciando", "Parando" e "Serviço". O "Serviço" pode ser aplicado durante a resilvering de espelhamento de disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores incluem o seguinte:
 
@@ -264,28 +264,28 @@ Os valores incluem o seguinte:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -299,7 +299,7 @@ Os valores incluem o seguinte:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>

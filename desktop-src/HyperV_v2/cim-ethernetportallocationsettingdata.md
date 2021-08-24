@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7e77b4387f77e88ceaff273b8be72a354c989e7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7546af167a6e13712119a081e7dbfaee118dc0c8a4912b8411d898a4ad90bc7b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695796"
 ---
 # <a name="cim_ethernetportallocationsettingdata-class"></a>\_Classe CIM EthernetPortAllocationSettingData
 
@@ -109,7 +109,7 @@ O modo de VLAN solicitado. Essa propriedade é usada para definir o valor da pro
 
 <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span>
 
-**Túnel Dot1Q** (6)
+**Tunnel Dot1Q** (6)
 
 
 </dt> <dd></dd> <dt>

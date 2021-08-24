@@ -3,7 +3,7 @@ title: Evento PositionChange do objeto AxWindowsMediaPlayer
 description: O evento PositionChange ocorre quando a posição de reprodução atual dentro do item de mídia foi alterada.
 ms.assetid: 92d469b9-813a-4148-be68-0fcef2e41491
 keywords:
-- Evento PositionChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento PositionChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 552b748121668e71ee4d2ffb54feed441620a1cb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 269d83c92687b5debda8b70fb4d6710b55eebd5476153759ebad36e5d17657d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764676"
 ---
 # <a name="positionchange-event-of-the-axwindowsmediaplayer-object"></a>Evento PositionChange do objeto AxWindowsMediaPlayer
 

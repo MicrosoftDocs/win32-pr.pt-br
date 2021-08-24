@@ -3,19 +3,19 @@ title: Macros multimídia
 description: Macros multimídia
 ms.assetid: 4b0d1f92-6e79-496b-ba35-7fc17a5127d4
 keywords:
-- Multimídia do Windows, macros
+- Windows multimídia, macros
 - multimídia, macros
 - referência de multimídia, macros
 - referência para multimídia, macros
 - macros multimídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aef29d18fc53d46e96de2a13d6e9e39e75e4dc6b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d9cdad8be1acfb92db2f58762fb5debe834dd52f7b5519f3ed4ed4d43d55cbd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105748750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806756"
 ---
 # <a name="multimedia-macros"></a>Macros multimídia
 
@@ -137,20 +137,20 @@ As macros a seguir são usadas com multimídia.
 -   [**ICQueryAbout**](/windows/desktop/api/Vfw/nf-vfw-icqueryabout)
 -   [**ICQueryConfigure**](/windows/desktop/api/Vfw/nf-vfw-icqueryconfigure)
 -   [**ICSetState**](/windows/desktop/api/Vfw/nf-vfw-icsetstate)
--   [**maximizar**](max.md)
--   [**\_hora de HMS MCI \_**](mci-hms-hour.md)
--   [**\_HMS \_ minutos MCI**](mci-hms-minute.md)
--   [**MCI \_ HMS \_ segundo**](mci-hms-second.md)
--   [**\_HMS de make MCI \_**](mci-make-hms.md)
--   [**\_criar \_ MSF do MCI**](mci-make-msf.md)
--   [**\_TMSF de make MCI \_**](mci-make-tmsf.md)
--   [**\_quadro do MSF do MCI \_**](/previous-versions//dd743438(v=vs.85))
--   [**\_minuto do MSF do MCI \_**](mci-msf-minute.md)
--   [**MSF do MCI \_ \_ segundo**](mci-msf-second.md)
--   [**\_quadro TMSF \_ MCI**](mci-tmsf-frame.md)
--   [**\_TMSF \_ minutos MCI**](mci-tmsf-minute.md)
--   [**MCI \_ TMSF \_ segundo**](mci-tmsf-second.md)
--   [**\_faixa de TMSF MCI \_**](mci-tmsf-track.md)
+-   [**Max**](max.md)
+-   [**MCI \_ HMS \_ HOUR**](mci-hms-hour.md)
+-   [**MCI \_ HMS \_ MINUTE**](mci-hms-minute.md)
+-   [**MCI \_ HMS \_ SECOND**](mci-hms-second.md)
+-   [**MCI \_ MAKE \_ HMS**](mci-make-hms.md)
+-   [**MCI \_ MAKE \_ MSF**](mci-make-msf.md)
+-   [**MCI \_ MAKE \_ TMSF**](mci-make-tmsf.md)
+-   [**MCI \_ MSF \_ FRAME**](/previous-versions//dd743438(v=vs.85))
+-   [**MCI \_ MSF \_ MINUTE**](mci-msf-minute.md)
+-   [**MCI \_ MSF \_ SECOND**](mci-msf-second.md)
+-   [**MCI \_ TMSF \_ FRAME**](mci-tmsf-frame.md)
+-   [**MCI \_ TMSF \_ MINUTE**](mci-tmsf-minute.md)
+-   [**MCI \_ TMSF \_ SECOND**](mci-tmsf-second.md)
+-   [**MCI \_ TMSF \_ TRACK**](mci-tmsf-track.md)
 -   [**MCIWndCanConfig**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanconfig)
 -   [**MCIWndCanEject**](/windows/desktop/api/Vfw/nf-vfw-mciwndcaneject)
 -   [**MCIWndCanPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay)
@@ -233,6 +233,6 @@ As macros a seguir são usadas com multimídia.
 [Referência de multimídia](multimedia-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

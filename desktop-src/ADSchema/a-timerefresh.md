@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87bc360686b1692d2dbda1ee23ad6351e69d3afe
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 27705c55e3d16003bc40bfb72c3bf9d0b06260e239aa0c83dbd4e05a484dbc1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704066"
 ---
 # <a name="time-refresh-attribute"></a>Time-Refresh atributo
 
@@ -58,7 +58,7 @@ Esse atributo tem o intervalo durante o qual um registro de recurso contido em u
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
@@ -79,7 +79,7 @@ Esse atributo tem o intervalo durante o qual um registro de recurso contido em u
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
@@ -100,7 +100,7 @@ Esse atributo tem o intervalo durante o qual um registro de recurso contido em u
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
@@ -121,7 +121,7 @@ Esse atributo tem o intervalo durante o qual um registro de recurso contido em u
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
@@ -142,7 +142,7 @@ Esse atributo tem o intervalo durante o qual um registro de recurso contido em u
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |
@@ -163,7 +163,7 @@ Esse atributo tem o intervalo durante o qual um registro de recurso contido em u
 | ID do link                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
 | System-Only            | Falso                                                                                                                         |
-| É de valor único       | True                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                          |
 | É indexado             | Falso                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                  |

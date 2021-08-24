@@ -3,7 +3,7 @@ title: Mensagem de MM_WIM_CLOSE (mmsystem. h)
 description: A \_ mensagem mm wim \_ Close é enviada para uma janela quando um dispositivo de entrada de forma de onda-áudio é fechado. O identificador do dispositivo não é mais válido depois que essa mensagem é enviada.
 ms.assetid: 4ea35b66-6bfa-41f0-9d52-a8cf2b0a69dd
 keywords:
-- Multimídia do Windows de mensagem MM_WIM_CLOSE
+- mensagem de MM_WIM_CLOSE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90d9934ef7045debbcac2f5baf1c2f750d22dad5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 506311f9938198e2ceb99646670c954eaa433825855e31c036241df6be1b2491
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807106"
 ---
 # <a name="mm_wim_close-message"></a>MM \_ \_ mensagem de fechamento wim
 

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e5fd76d038e743ba5148f4c82555d50f0a5dde5d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6e197123650bf31abd475e3c96f69835559780e7a55f2bbd673e643977593a8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700776"
 ---
 # <a name="reset-method-of-the-cim_tapedrive-class"></a>Método Reset da classe CIM \_ TapeDrive
 
@@ -38,7 +38,7 @@ uint32 Reset();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se a solicitação tiver sido executada com êxito, 1 (uma) se a solicitação não tiver suporte e algum outro valor se ocorrer um erro.
 

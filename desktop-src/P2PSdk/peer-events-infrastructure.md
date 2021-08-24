@@ -4,12 +4,12 @@ ms.assetid: a056da1c-b8f9-4dad-8df9-df24c6b359b7
 title: Infraestrutura de eventos de pares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6347ad6a7dd0cf2fae4a0aa623bfda48ab0aa9f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a889f59e4429e64258c047dfbf0249bb4dca125bfc3f9d659e6042dd40be9443
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119775946"
 ---
 # <a name="peer-events-infrastructure"></a>Infraestrutura de eventos de pares
 
@@ -49,7 +49,7 @@ Depois que um aplicativo recebe uma notificação de que ocorreu um evento de pa
 
 Depois que um aplicativo não requer uma notificação de evento de mesmo nível, o aplicativo chama [**PeerGraphUnregisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphunregisterevent)e passa o identificador de evento de par retornado pelo [**PeerGraphRegisterEvent**](/windows/desktop/api/P2P/nf-p2p-peergraphregisterevent) quando o aplicativo é registrado.
 
-## <a name="handling-graph-connection-referrals"></a>Manipulando referências de conexão do grafo
+## <a name="handling-graph-connection-referrals"></a>manipulando referências de conexão Graph
 
 Quando [**PeerGraphConnect**](/windows/desktop/api/P2P/nf-p2p-peergraphconnect) é chamado, o ponto de conexão é notificado sobre êxito ou falha por meio do evento de **conexão de vizinho de evento de grafo de pares \_ \_ \_ \_** assíncrono. Se a conexão falhou devido a problemas de rede específicos (como um firewall configurado incorretamente), o evento **de \_ \_ conexão de \_ vizinho \_ do evento de grafo par** é gerado, com o status da conexão definido como **par \_ conexão \_ falhou**.
 

@@ -4,20 +4,20 @@ ms.assetid: 8a0dc078-22ca-4bff-9cc0-46823912d3da
 title: createCNGCustomCMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 669a52901981ea910ee3d1704ba892fb96664470
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0494fdf2af9e4e96983ed1aff462b38e749516eafe87f645a3bf8ae1b342292d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119798266"
 ---
 # <a name="createcngcustomcmc"></a>createCNGCustomCMC
 
 O exemplo createCNGCustomCMC cria um objeto de solicitação CMC por meio de uma solicitação PKCS 10 aninhada interna \# . A solicitação interna é criada usando uma [*chave privada*](/windows/desktop/SecGloss/p-gly)assimétrica. A chave privada é criada usando o provedor criptográfico da API de criptografia: próxima geração (CNG) e o algoritmo especificado na linha de comando. Opções personalizadas, como política de exportação e nível de proteção de chave, também são definidas na chave privada.
 
-## <a name="location"></a>Local
+## <a name="location"></a>Localização
 
-Quando você instala o SDK (Software Development Kit) do Microsoft Windows, o exemplo é instalado, por padrão, na pasta *% ProgramFiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ Samples \\ Security \\ X509 Certificate registro \\ vc \\ createCNGCustomCMC.
+quando você instala o Microsoft Windows Software Development Kit (SDK), o exemplo é instalado, por padrão, na pasta *% programfiles%* \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ samples \\ Security \\ X509 Certificate registro \\ VC \\ createCNGCustomCMC.
 
 ## <a name="discussion"></a>Discussão
 
@@ -40,7 +40,7 @@ O exemplo de createCNGCustomCMC:
 5.  Cria um objeto [**IX509CertificateRequestCmc**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc) e o inicializa usando o objeto de \# solicitação PKCS 10 criado na etapa 4.
 6.  Define o sinalizador de algoritmo de assinatura alternativo como **Variant \_ true** ou **Variant \_ false** , dependendo se uma cadeia de caracteres de assinatura alternativa é especificada na linha de comando. Para obter mais informações, consulte [**AlternateSignatureAlgorithm**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_alternatesignaturealgorithm).
 7.  Cria um [](/windows/desktop/SecGloss/h-gly) [*identificador de objeto*](/windows/desktop/SecGloss/o-gly) de algoritmo de hash (OID) do nome do algoritmo especificado na linha de comando e define o OID no objeto de solicitação CMC.
-8.  Assina a solicitação de certificado e a codifica usando [*Distinguished Encoding Rules*](/windows/desktop/SecGloss/d-gly) (der).
+8.  assina a solicitação de certificado e a codifica usando [*Distinguished Encoding Rules*](/windows/desktop/SecGloss/d-gly) (DER).
 9.  Recupera uma cadeia de caracteres que contém a solicitação codificada de certificado CMC e salva-a em um arquivo. A função EncodeToFileW é definida em EnrollCommon. cpp.
 
 ## <a name="related-topics"></a>Tópicos relacionados

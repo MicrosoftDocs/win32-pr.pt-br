@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 968618af5c2bb5b32ec14b293225bc09c2997aa5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 9b8e2f4b86929954ad67c845cf546d46f5950698fce7c21d721613af3611a066
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103823334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811386"
 ---
 # <a name="ms_union-switch"></a>\_opção de União/MS
 
@@ -26,7 +26,7 @@ A **opção \_ Union/MS** controla o alinhamento de NDR de uniões não encapsul
 > [!Note]  
 > Esse atributo é fornecido para compatibilidade com versões anteriores. Não é recomendável para uso em uma nova interface.
 
- 
+ 
 
 ``` syntax
 midl /ms_union
@@ -56,9 +56,9 @@ O \_ recurso de União MS pode ser usado como uma opção de linha de comando (*
 [Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

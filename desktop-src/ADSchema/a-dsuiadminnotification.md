@@ -1,11 +1,11 @@
 ---
-title: DS-UI-admin-atributo de notificação
-description: Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de retorno de chamada que o DSAdmin chama quando ocorre uma ação em um objeto por meio da interface do usuário.
+title: Atributo DS-UI-Admin-Notification
+description: Esta é uma lista dos GUIDs de objetos COM que suportam uma interface de retorno de chamada que o DSAdmin chama quando uma ação ocorreu em um objeto por meio da interface do usuário.
 ms.assetid: 4845c221-087f-49f5-a95d-71f58a4e8819
 ms.tgt_platform: multiple
 keywords:
-- DS-UI-admin-atributo de notificação-esquema do AD
-- Esquema de AD do atributo dSUIAdminNotification
+- Esquema do AD do atributo DS-UI-Admin-Notification
+- Esquema do AD do atributo dSUIAdminNotification
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7082d7a8fd751fa001ac796d2a86b60a28463e8b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2465796ed1e0069206539a5d4b6b17080e5f751f5c9b79198c668316c6dec26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656556"
 ---
-# <a name="ds-ui-admin-notification-attribute"></a>DS-UI-admin-atributo de notificação
+# <a name="ds-ui-admin-notification-attribute"></a>Atributo DS-UI-Admin-Notification
 
-Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de retorno de chamada que o DSAdmin chama quando ocorre uma ação em um objeto por meio da interface do usuário.
+Esta é uma lista dos GUIDs de objetos COM que suportam uma interface de retorno de chamada que o DSAdmin chama quando uma ação ocorreu em um objeto por meio da interface do usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | DS-UI-admin-Notification                    |
-| LDAP-Display-Name | dSUIAdminNotification                       |
+| CN                | DS-UI-Admin-Notification                    |
+| Ldap-Display-Name | dSUIAdminNotification                       |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1343                     |
-| System-ID-GUID    | f6ea0a94-6f91-11d2-9905-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f6ea0a94-6f91-11d2-9905-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de r
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-UI-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de r
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-UI-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de r
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-UI-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de r
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de r
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -171,7 +171,7 @@ Esta é uma lista dos GUIDs de objetos COM que dão suporte a uma interface de r
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 

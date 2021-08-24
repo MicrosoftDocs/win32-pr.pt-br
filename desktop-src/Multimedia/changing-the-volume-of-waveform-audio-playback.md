@@ -10,16 +10,16 @@ keywords:
 - alterando a onda-volume de reprodução de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89f972b5bd8e6f0d4a0d7d5964f164429c5632b0
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e59bca6dbc168d2c327c46e4d934d4abb3afa73cc8ef2cae8b1a6c283bd92c81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103641103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807986"
 ---
 # <a name="changing-the-volume-of-waveform-audio-playback"></a>Alterando o volume de Waveform-Audio reprodução
 
-O Windows fornece as seguintes funções para consultar e definir o nível de volume de dispositivos de saída de wave-áudio.
+Windows fornece as seguintes funções para consultar e definir o nível de volume de dispositivos de saída de wave-áudio.
 
 
 
@@ -30,7 +30,7 @@ O Windows fornece as seguintes funções para consultar e definir o nível de vo
 
 
 
- 
+ 
 
 Nem todos os dispositivos de wave-áudio dão suporte a alterações de volume. Alguns dispositivos dão suporte ao controle de volume individual nos canais esquerdo e direito. Para obter informações sobre como determinar os recursos de controle de volume dos dispositivos de formato de onda-áudio, consulte [dispositivos e tipos de dados](devices-and-data-types.md).
 
@@ -40,6 +40,6 @@ O volume é especificado em um valor doubleword. Quando o formato de áudio é e
 
 Os valores de nível de volume variam de 0x0 (silêncio) a 0xFFFF (volume máximo) e são interpretados logaritmicamente. O aumento do volume percebido é o mesmo ao aumentar o nível de volume de 0x5000 para 0x6000, pois ele é de 0x4000 para 0x5000.
 
- 
+ 
 
- 
+ 

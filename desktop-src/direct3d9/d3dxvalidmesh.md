@@ -1,7 +1,7 @@
 ---
 description: Valida uma malha.
 ms.assetid: e5bec2f3-e914-4677-8114-77c71b8a586e
-title: Função D3DXValidMesh (D3DX9Mesh. h)
+title: Função D3DXValidMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 469b9b32072107885417266266f804a955301668
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 299092700b015840376f3e4b297d7825366b6083e1458155f5963e1b5b1f4d73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749666"
 ---
 # <a name="d3dxvalidmesh-function"></a>Função D3DXValidMesh
 
@@ -42,42 +42,42 @@ HRESULT D3DXValidMesh(
 
 <dl> <dt>
 
-*pMeshIn* \[ no\]
+*pMeshIn* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , representando a malha a ser testada.
+Ponteiro para uma [**interface ID3DXMesh,**](id3dxmesh.md) representando a malha a ser testada.
 
 </dd> <dt>
 
-*pAdjacency* \[ no\]
+*pAdjacency* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha a ser testada.
+Ponteiro para uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha a ser testado.
 
 </dd> <dt>
 
-*ppErrorsAndWarnings* \[ fora\]
+*ppErrorsAndWarnings* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Retorna um buffer que contém uma cadeia de caracteres de erros e avisos, que explicam os problemas encontrados na malha.
+Retorna um buffer que contém uma cadeia de caracteres de erros e avisos, que explica os problemas encontrados na malha.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DXERR \_ INVALIDMESH, D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método valida a malha verificando índices inválidos. As informações de erro estão disponíveis na saída do depurador.
+Esse método valida a malha verificando se há índices inválidos. As informações de erro estão disponíveis na saída do depurador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Esse método valida a malha verificando índices inválidos. As informações de
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

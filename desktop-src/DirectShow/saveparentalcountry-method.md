@@ -4,17 +4,17 @@ ms.assetid: 2185ad7d-c7c1-4d8b-82e7-5ed5fffaff26
 title: Método SaveParentalCountry (Segment. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9ca47a6ca10f25298b4eb10fdcf532c8d764b96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9d5391982129c799e6a565da362837a557765cf46604653f4f702ed38dcb910e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105767669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651206"
 ---
 # <a name="saveparentalcountry-method"></a>Método SaveParentalCountry
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
@@ -49,7 +49,7 @@ Especifica a senha como uma cadeia de caracteres.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 

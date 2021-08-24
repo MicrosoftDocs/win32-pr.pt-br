@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Result01_ApplicationManagement02
-description: A \_ classe Result01 ApplicationManagement02 do usuário da política de MDM \_ \_ \_ representa as políticas de início disponíveis que são definidas por usuário.
+title: MDM_Policy_User_Result01_ApplicationManagement02 classe
+description: A classe MDM \_ Policy \_ User \_ Result01 ApplicationManagement02 representa as políticas de início disponíveis que são definidas por \_ usuário.
 ms.assetid: 62545af1-9c26-481e-9668-cd253cf592e7
 keywords:
-- Classe MDM_Policy_User_Result01_ApplicationManagement02
-- Classe MDM_Policy_User_Result01_ApplicationManagement02, descrita
+- MDM_Policy_User_Result01_ApplicationManagement02 classe
+- MDM_Policy_User_Result01_ApplicationManagement02 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18177046691e5c9fe5ca8cb61ee0518a41533c59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7218e2f0c11c607d18bbcc35564bdd276ac4297d53a46ff9083093c9e0011237
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750416"
 ---
-# <a name="mdm_policy_user_result01_applicationmanagement02-class"></a>Result01 de usuário de política de MDM- \_ \_ \_ \_ classe ApplicationManagement02
+# <a name="mdm_policy_user_result01_applicationmanagement02-class"></a>Classe MDM \_ Policy \_ User \_ Result01 \_ ApplicationManagement02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe \_ \_ \_ Result01 \_ ApplicationManagement02 do usuário da política de MDM** representa as políticas de início disponíveis que são definidas por usuário.
+A **classe MDM \_ Policy User \_ \_ Result01 \_ ApplicationManagement02** representa as políticas de início disponíveis que são definidas por usuário.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_User_Result01_ApplicationManagement02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ \_ Result01 \_ ApplicationManagement02 do usuário da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy User \_ \_ Result01 \_ ApplicationManagement02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ \_ Result01 \_ ApplicationManagement02 do usuário da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy User \_ \_ Result01 \_ ApplicationManagement02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Appli
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -94,7 +94,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

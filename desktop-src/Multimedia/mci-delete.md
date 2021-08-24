@@ -3,7 +3,7 @@ title: MCI_DELETE comando (mmsystem. h)
 description: O \_ comando MCI Delete remove dados do arquivo. Os dispositivos digital-video e Wave-Audio reconhecem este comando.
 ms.assetid: cf7fae86-e81e-4006-9755-fd01f81aeb62
 keywords:
-- Multimídia do Windows de comando MCI_DELETE
+- MCI_DELETE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8c1b9f81712c842e06085c323ca2110c8e06784
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ada80894f9260d0c37323d645694e10b0bcef92e52ebd670764bb9a0c436f837
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784576"
 ---
 # <a name="mci_delete-command"></a>Comando de exclusão do MCI \_
 

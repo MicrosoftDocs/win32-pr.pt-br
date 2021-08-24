@@ -4,12 +4,12 @@ description: Depois de descobrir os dispositivos, você pode controlá-los.
 ms.assetid: 6d0efb80-d6f5-4b36-a184-19f06afeb2a7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ff91339c67b67de5d3e90eda0ce64ebcc68b9e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: be79d6e6993794a4af972af8538b9b1cd56902c34596197836990028b2761ffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656056"
 ---
 # <a name="controlling-a-device"></a>Controlando um dispositivo
 
@@ -23,7 +23,7 @@ Depois de descobrir os dispositivos, você pode controlá-los.
 > [!Note]  
 > A funcionalidade **Exibir apresentação** não está disponível no código de exemplo C++.
 
- 
+ 
 
 **Para exibir a página de apresentação de um dispositivo**
 
@@ -31,9 +31,9 @@ Depois de descobrir os dispositivos, você pode controlá-los.
 2.  Clique em **Exibir apresentação**. Uma janela do Internet Explorer é exibida com a página de apresentação solicitada.
 
 > [!Note]  
-> A funcionalidade do **serviço de exibição desc.** não está disponível no código de exemplo de C++.
+> O **serviço de exibição desc.** a funcionalidade não está disponível no código de exemplo C++.
 
- 
+ 
 
 **Para exibir uma descrição de serviço**
 
@@ -59,7 +59,7 @@ Depois de descobrir os dispositivos, você pode controlá-los.
 
 
 
- 
+ 
 
 **Para controlar um dispositivo**
 
@@ -71,7 +71,7 @@ Depois de descobrir os dispositivos, você pode controlá-los.
     > [!Note]  
     > O conteúdo da **lista de serviços** se baseia no dispositivo selecionado na lista **dispositivos encontrados** .
 
-     
+     
 
 3.  Se você quiser descobrir o valor de uma variável de estado para o serviço selecionado, insira o nome da variável no campo **variável de consulta** para serviço. Clique em **Consulta**. Os resultados são mostrados no campo **valor do estado da consulta/argumentos fora da ação** .
 4.  Se você quiser invocar uma ação para um serviço, insira o nome da ação no campo **ação de invocação** e todos os argumentos no campo **argumentos da ação** . Clique em **invocar**. Os resultados são mostrados no campo **valor do estado da consulta/argumentos fora da ação** , se houver.
@@ -81,13 +81,13 @@ Depois de descobrir os dispositivos, você pode controlá-los.
     > [!Note]  
     > Se houver vários argumentos para uma ação, separe-os com espaços.
 
-     
+     
 
 5.  Exiba informações de eventos no campo **eventos** para o serviço selecionado.
 
- 
+ 
 
- 
+ 
 
 
 

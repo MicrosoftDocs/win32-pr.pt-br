@@ -1,26 +1,26 @@
 ---
-title: Atributo de opacidade (sombra) (VML)
-description: Atributo de opacidade (sombra) (VML)
+title: Atributo Opacity (Sombra)(VML)
+description: Atributo Opacity (Sombra)(VML)
 ms.assetid: 394d755c-72cf-46f5-a258-1844b07a97bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d09ca038a187c4a4ed1f914f5d05bcfd63e4a4a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 43287a4bb6de9f2dd0d9d2b0af97d971314ab7e93ab2c4fae58b666ee1a94124
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119680616"
 ---
-# <a name="opacity-attribute-shadowvml"></a>Atributo de opacidade (sombra) (VML)
+# <a name="opacity-attribute-shadowvml"></a>Atributo Opacity (Sombra)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina a transparência de uma sombra. Leitura/gravação. [VgFraction](msdn-online-vml-vgfraction-data-type.md) .
+Determina a transparência de uma sombra. Leitura/gravação. [VgAção .](msdn-online-vml-vgfraction-data-type.md)
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Determina a transparência de uma sombra. Leitura/gravação. [VgFraction](msdn-
 
 **Sintaxe de marca**
 
-<v: *elemento* Opacity = " *expressão* " >
+<v: *elemento* opacity=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . Opacity = "*expressão*"
+*expressão* element .opacity=""
 
-*expressão* = de *elemento*. Opacity
+*expressão* = *elemento*.opacity
 
 **Comentários**
 
 O valor padrão é 1. Um valor de 0 fará uma sombra completamente transparente.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A forma tem uma sombra que é de 50% transparente.
+A forma tem uma sombra que é 50% transparente.
 
 
 ```HTML
@@ -59,6 +59,6 @@ A forma tem uma sombra que é de 50% transparente.
 
 
 
- 
+ 
 
- 
+ 

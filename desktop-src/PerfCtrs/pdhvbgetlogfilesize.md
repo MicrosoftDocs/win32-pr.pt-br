@@ -13,55 +13,55 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: 0b9f490477704086bd9aa8c53dd32456d486471e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd3925eee621ac205615f17b26767096151d459628ca7d331a7aaee3336b27ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119674786"
 ---
 # <a name="pdhvbgetlogfilesize-function"></a>Função PdhVbGetLogFileSize
 
-A função **PdhVbGetLogFileSize** retorna o tamanho do arquivo de log especificado. Essa função chama [**PdhGetLogFileSize**](/windows/desktop/api/Pdh/nf-pdh-pdhgetlogfilesize).
+A **função PdhVbGetLogFileSize** retorna o tamanho do arquivo de log especificado. Essa função chama [**PdhGetLogFileSize**](/windows/desktop/api/Pdh/nf-pdh-pdhgetlogfilesize).
 
 > [!IMPORTANT]
-> A função que este tópico descreve pode ser alterada ou indisponível no futuro. Em vez disso, a Microsoft recomenda que você use as funções descritas em [funções de contadores de desempenho](performance-counters-functions.md).
+> A função que este tópico descreve pode ser alterada ou não disponível no futuro. Em vez disso, a Microsoft recomenda que você use as funções descritas em [Funções de Contadores de Desempenho](performance-counters-functions.md).
 
-Função PdhVbGetLogFileSize ( \_ ByVal HLog como PDH \_ hLog, \_ ByRef llSize como Long \_ ) como DWORD
+Função PdhVbGetLogFileSize( \_ ByVal hLog As PDH \_ HLOG, \_ ByRef llSize As LONG \_ ) as DWORD
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-*hLog* \[ no\]
+*hLog* \[ Em\]
 </dt> <dd>
 
-Identificador para o arquivo de log. Esse identificador é retornado pela função [**PdhOpenLog**](/windows/desktop/api/Pdh/nf-pdh-pdhopenloga) .
+Lidar com o arquivo de log. Esse handle é retornado pela [**função PdhOpenLog.**](/windows/desktop/api/Pdh/nf-pdh-pdhopenloga)
 
 </dd> <dt>
 
-*llSize* \[ fora\]
+*llSize* \[ out\]
 </dt> <dd>
 
 Ponteiro para uma variável que recebe o tamanho do arquivo de log, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará 0.
+Se a função for bem-sucedida, ela retornará 0.
 
-Se a função falhar, o valor de retorno será um [código de erro do sistema](/windows/desktop/Debug/system-error-codes) ou um código de [erro PDH](pdh-error-codes.md). Os valores a seguir são possíveis.
+Se a função falhar, o valor de retorno será um código [de erro do sistema](/windows/desktop/Debug/system-error-codes) ou um código de erro [PDH](pdh-error-codes.md). A seguir estão os valores possíveis.
 
 
 
 | Código de retorno                                                                                                | Descrição                                                                                            |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_buffer insuficiente de PDH \_**</dt> </dl>   | Os dados solicitados são maiores que o buffer fornecido. Não é possível retornar os dados solicitados.<br/> |
-| <dl> <dt>**\_argumento inválido de PDH \_**</dt> </dl>      | Um ou mais dos buffers de cadeia de caracteres não tem o tamanho correto.<br/>                                  |
-| <dl> <dt>**\_identificador inválido de PDH \_**</dt> </dl>        | O identificador não é um objeto PDH válido.<br/>                                                       |
-| <dl> <dt>**\_ \_ \_ erro ao abrir arquivo de log PDH \_**</dt> </dl> | Não é possível abrir o arquivo de log especificado.<br/>                                                      |
-| <dl> <dt>**\_arquivo PDH \_ não \_ encontrado**</dt> </dl>       | Não é possível localizar o arquivo especificado.<br/>                                                          |
+| <dl> <dt>**BUFFER INSUFICIENTE DE PDH \_ \_**</dt> </dl>   | Os dados solicitados são maiores do que o buffer fornecido. Não é possível retornar os dados solicitados.<br/> |
+| <dl> <dt>**ARGUMENTO INVÁLIDO \_ PDH \_**</dt> </dl>      | Um ou mais buffers de cadeia de caracteres não tem o tamanho correto.<br/>                                  |
+| <dl> <dt>**PDH \_ INVALID \_ HANDLE**</dt> </dl>        | O identificador não é um objeto PDH válido.<br/>                                                       |
+| <dl> <dt>**ERRO DE ABERTURA DO \_ \_ ARQUIVO \_ DE LOG PDH \_**</dt> </dl> | Não é possível abrir o arquivo de log especificado.<br/>                                                      |
+| <dl> <dt>**ARQUIVO PDH \_ \_ NÃO \_ ENCONTRADO**</dt> </dl>       | Não é possível encontrar o arquivo especificado.<br/>                                                          |
 
 
 
@@ -73,9 +73,9 @@ Se a função falhar, o valor de retorno será um [código de erro do sistema](/
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                               |
+| Biblioteca<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

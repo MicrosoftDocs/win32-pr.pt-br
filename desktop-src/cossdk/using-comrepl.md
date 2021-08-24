@@ -4,12 +4,12 @@ ms.assetid: bf67b434-c082-472d-9eae-ae31969d9cb8
 title: Usando COMREPL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fb39640998b3b27ac25cbab2ae60948418d6cee
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 501cca8d32383e23fc636669e32a80cfdfe96dd658717e41c1618244fc5af81e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853876"
 ---
 # <a name="using-comrepl"></a>Usando COMREPL
 
@@ -23,7 +23,7 @@ Para iniciar o utilitário de linha de comando COMREPL, use as seguintes etapas:
 
     **COMREPL** *sourceComputer* *targetComputerList* **\[ \[ /n \] /v \]**
 
-    onde:
+    em que:
 
     -   *sourceComputer* é o nome do computador da origem
 

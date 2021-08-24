@@ -4,12 +4,12 @@ description: Declare a contagem de instâncias da fase de junção em uma fase d
 ms.assetid: 9951B849-0537-4D08-9ADE-8CF6FF51A193
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34c3acc7074170ab4561a54e67668698d58b7ac1
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 22747202b5ef0f165914567a5d3f5c6e1b31d26132365a4896a9959cc03b2d3e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726826"
 ---
 # <a name="dcl_hs_join_phase_instance_count-sm5---asm"></a>\_contagem de \_ instâncias da \_ fase de junção do DCL HS \_ \_ (SM5-ASM)
 
@@ -40,7 +40,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 

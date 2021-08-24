@@ -1,44 +1,44 @@
 ---
 title: Fluxos de pacotes TCP
-description: A ordem na qual as camadas do mecanismo de filtro da WFP (Windows Filtering Platform) são percorridas durante uma sessão TCP típica.
+description: a ordem na qual as camadas do mecanismo de filtro da Windows da plataforma de filtragem (WFP) são percorridas durante uma sessão TCP típica.
 ms.assetid: 75319c91-f77b-4dec-b94f-36772f1f1d53
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2203ccb4b2793983bd5b1052d53c2700d3033a4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 47d4836da7a1912a6e39358b54e2a3086dd80efe844d6a301d079014d4a5b209
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119746626"
 ---
 # <a name="tcp-packet-flows"></a>Fluxos de pacotes TCP
 
-Esta seção descreve a ordem na qual as camadas do mecanismo de filtro da WFP (Windows Filtering Platform) são percorridas durante uma sessão TCP típica.
+esta seção descreve a ordem na qual as camadas do mecanismo de filtro da Windows da plataforma de filtragem (WFP) são percorridas durante uma sessão TCP típica.
 
 > [!Note]  
 > Os fluxos de pacotes TCP para IPv6 seguem o mesmo padrão que para IPv4.
 
- 
+ 
 
 > [!Note]  
 > Os fluxos de pacotes não TCP seguem o mesmo padrão que os [fluxos de pacotes UDP](udp-packet-flows.md).
 
- 
+ 
 
 ## <a name="tcp-connection-establishment"></a>Estabelecimento de conexão TCP
 
 <dl> O servidor (receptor) executa a abertura passiva
 
--   bind: \_ \_ \_ \_ redirecionamento de associação Ale de camada FWPM \_ (somente windows 7/Windows Server 2008 R2)
+-   ligação: FWPM \_ \_ \_ \_ de redirecionamento \_ de associação ALE de camada de protocolo V4 (Windows 7/Windows Server 2008 R2 somente)
 -   Associação: \_ v4 de \_ \_ atribuição de \_ recursos \_ da camada FWPM
 -   escutar: FWPM \_ da \_ autenticação Ale de camada de conexão \_ \_ \_ v4
 
   
 Cliente (remetente) executa active open
 
--   bind: \_ \_ \_ \_ redirecionamento de associação Ale de camada FWPM \_ (somente windows 7/Windows Server 2008 R2)
+-   ligação: FWPM \_ \_ \_ \_ de redirecionamento \_ de associação ALE de camada de protocolo V4 (Windows 7/Windows Server 2008 R2 somente)
 -   Associação: \_ v4 de \_ \_ atribuição de \_ recursos \_ da camada FWPM
--   Connect: \_ \_ redirecionamento da camada Ale do FWPM layer para \_ \_ \_ V4 (somente windows 7/Windows Server 2008 R2)
+-   conectar: FWPM \_ da \_ camada \_ ALE \_ connect \_ V4 (somente Windows 7/Windows Server 2008 R2)
 -   conectar: \_ conexão de \_ autenticação Ale de camada FWPM \_ \_ Connect \_ v4
 -   SYN: transporte de saída da camada do FWPM \_ \_ \_ \_ v4
 -   SYN: \_ IPPACKET de saída da camada FWPM \_ \_ \_ v4
@@ -84,7 +84,7 @@ Servidor (receptor)
 > [!Note]  
 > O TCP SYN sem nenhum ponto de extremidade é indicado em descarte de transporte com uma condição de erro específica. Bloquear este pacote no descarte de transporte para fazer com que a pilha não envie o evento correspondente (RST). Para obter um exemplo de filtragem de modo furtivo, consulte [impedindo a verificação de porta](preventing-port-scanning.md).
 
- 
+ 
 
 ## <a name="data-transmitted-over-a-tcp-connection"></a>Dados transmitidos por uma conexão TCP
 
@@ -138,9 +138,9 @@ A terminação de conexão TCP não é indicada em nenhuma camada WFP.
 [**Filtrando identificadores de camada**](management-filtering-layer-identifiers-.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

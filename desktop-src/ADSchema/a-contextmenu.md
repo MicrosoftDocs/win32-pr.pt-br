@@ -1,11 +1,11 @@
 ---
 title: Context-Menu atributo
-description: O número do pedido e o GUID do menu de contexto a ser usado para um objeto.
+description: O número do pedido e o GUID do menu de contexto a ser usado para um objeto .
 ms.assetid: 7a62c900-4bd5-443a-8714-0fc6a2920e01
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Context-Menu do atributo AD
-- atributo contextMenu AD Schema
+- Context-Menu atributo AD Schema
+- Esquema do AD do atributo contextMenu
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01682881f142e6a764ab291822545728e8573293
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b3bc5c21a5a47932f78260589b2a37db51e4ec942608cc4d28417c860cdc8a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119805316"
 ---
 # <a name="context-menu-attribute"></a>Context-Menu atributo
 
-O número do pedido e o GUID do menu de contexto a ser usado para um objeto.
+O número do pedido e o GUID do menu de contexto a ser usado para um objeto .
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Context-Menu                                |
-| LDAP-Display-Name | contextMenu                                 |
+| Ldap-Display-Name | Contextmenu                                 |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de esquema                        |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.499                      |
-| System-ID-GUID    | 4d8601ee-ac85-11d0-afe3-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 4d8601ee-ac85-11d0-afe3-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O número do pedido e o GUID do menu de contexto a ser usado para um objeto.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -79,10 +79,10 @@ O número do pedido e o GUID do menu de contexto a ser usado para um objeto.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -100,10 +100,10 @@ O número do pedido e o GUID do menu de contexto a ser usado para um objeto.
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

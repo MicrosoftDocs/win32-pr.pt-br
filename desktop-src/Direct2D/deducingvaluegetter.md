@@ -3,7 +3,7 @@ title: DeducingValueGetter (D2d1effecthelpers. h)
 description: Deduz a classe e os argumentos e, em seguida, chama um retorno de chamada getter de propriedade de função de membro para uma propriedade de tipo de valor.
 ms.assetid: E2E5CCC3-B112-4D3C-8840-121A55C4F1A2
 keywords:
-- DeducingValueGetter Direct2D
+- Direct2D DeducingValueGetter
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6332dd6eac823457882513f97557939db884efcf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 743c4e457c9dc3f6e29c4bfc78e539256869a2d30a055168384d287911ca4d4c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652946"
 ---
 # <a name="deducingvaluegetter"></a>DeducingValueGetter
 
@@ -55,7 +55,7 @@ HRESULT DeducingValueGetter(
 
 <dl> <dt>
 
-[**Direct2D::D educingValueSetter**](deducingvaluesetter.md)
+[**Direct2D::D educingvaluesetter**](deducingvaluesetter.md)
 </dt> </dl>
 
  
