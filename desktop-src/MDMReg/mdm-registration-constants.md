@@ -68,12 +68,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb62977a48400866e9fa8829696c884e58e54325
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 2ff5c73941b0235788772522f5551f73faea30d06e91e582dcdbe97433ca85c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110548981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638456"
 ---
 # <a name="mdm-registration-error-values"></a>Valores de erro de registro do MDM
 
@@ -117,7 +117,7 @@ Esquema inválido, erro de formato de mensagem do servidor.
 
 Esquema inválido, erro de formato de mensagem do servidor.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -145,12 +145,12 @@ Falha do servidor ao autenticar o usuário.
 
 Falha do servidor ao autenticar o usuário.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_AUTHORIZATION_ERROR"></span><span id="mregister_e_device_authorization_error"></span>**ERRO DE AUTORIZAÇÃO DE DISPOSITIVO MREGISTER \_ E \_ \_ \_**
+<span id="MREGISTER_E_DEVICE_AUTHORIZATION_ERROR"></span><span id="mregister_e_device_authorization_error"></span>**\_erro de \_ autorização do dispositivo \_ \_ MREGISTER**
 </dt> <dd> <dl> <dt>
 
 0x80190003
@@ -163,7 +163,7 @@ O usuário não está autorizado a se registrar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_AUTHORIZATION_ERROR"></span><span id="menroll_e_device_authorization_error"></span>**ERRO DE \_ AUTORIZAÇÃO \_ DO DISPOSITIVO \_ MENROLL E \_**
+<span id="MENROLL_E_DEVICE_AUTHORIZATION_ERROR"></span><span id="menroll_e_device_authorization_error"></span>**\_erro de \_ autorização do dispositivo \_ \_ MENROLL**
 </dt> <dd> <dl> <dt>
 
 0x80180003
@@ -173,12 +173,12 @@ O usuário não está autorizado a se registrar.
 
 O usuário não está autorizado a se registrar.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_CERTIFCATEREQUEST_ERROR"></span><span id="mregister_e_device_certifcaterequest_error"></span>**ERRO MREGISTER \_ E \_ DEVICE \_ CERTIFCATEREQUEST \_**
+<span id="MREGISTER_E_DEVICE_CERTIFCATEREQUEST_ERROR"></span><span id="mregister_e_device_certifcaterequest_error"></span>**\_erro MREGISTER E \_ dispositivo \_ CERTIFCATEREQUEST \_**
 </dt> <dd> <dl> <dt>
 
 0x80190004
@@ -191,7 +191,7 @@ O usuário não tem permissão para o modelo de certificado ou a autoridade de c
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR"></span><span id="menroll_e_device_certifcaterequest_error"></span>**ERRO MENROLL \_ E \_ DEVICE \_ CERTIFCATEREQUEST \_**
+<span id="MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR"></span><span id="menroll_e_device_certifcaterequest_error"></span>**\_erro MENROLL E \_ dispositivo \_ CERTIFCATEREQUEST \_**
 </dt> <dd> <dl> <dt>
 
 0x80180004
@@ -201,12 +201,12 @@ O usuário não tem permissão para o modelo de certificado ou a autoridade de c
 
 O usuário não tem permissão para o modelo de certificado ou a autoridade de certificação está inacessível.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_CONFIGMGRSERVER_ERROR"></span><span id="mregister_e_device_configmgrserver_error"></span>**ERRO MREGISTER \_ E \_ DEVICE \_ CONFIGMGRSERVER \_**
+<span id="MREGISTER_E_DEVICE_CONFIGMGRSERVER_ERROR"></span><span id="mregister_e_device_configmgrserver_error"></span>**\_erro MREGISTER E \_ dispositivo \_ CONFIGMGRSERVER \_**
 </dt> <dd> <dl> <dt>
 
 0x80190005
@@ -219,7 +219,7 @@ Houve uma falha no servidor de gerenciamento, como um erro de acesso ao banco de
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR"></span><span id="menroll_e_device_configmgrserver_error"></span>**ERRO MENROLL \_ E \_ DEVICE \_ CONFIGMGRSERVER \_**
+<span id="MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR"></span><span id="menroll_e_device_configmgrserver_error"></span>**\_erro MENROLL E \_ dispositivo \_ CONFIGMGRSERVER \_**
 </dt> <dd> <dl> <dt>
 
 0x80180005
@@ -229,12 +229,12 @@ Houve uma falha no servidor de gerenciamento, como um erro de acesso ao banco de
 
 Houve uma falha no servidor de gerenciamento, como um erro de acesso ao banco de dados.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="mregister_e_device_internalservice_error"></span>**ERRO DE SERVIÇO INTERNO DO DISPOSITIVO MREGISTER \_ E \_ \_ \_**
+<span id="MREGISTER_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="mregister_e_device_internalservice_error"></span>**\_erro MREGISTER E \_ dispositivo \_ INTERNALSERVICE \_**
 </dt> <dd> <dl> <dt>
 
 0x80190006
@@ -242,12 +242,12 @@ Houve uma falha no servidor de gerenciamento, como um erro de acesso ao banco de
 
 
 
-Houve uma exceção sem assistência no servidor.
+Houve uma exceção sem tratamento no servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="menroll_e_device_internalservice_error"></span>**ERRO MENROLL \_ E \_ DEVICE \_ INTERNALSERVICE \_**
+<span id="MENROLL_E_DEVICE_INTERNALSERVICE_ERROR"></span><span id="menroll_e_device_internalservice_error"></span>**\_erro MENROLL E \_ dispositivo \_ INTERNALSERVICE \_**
 </dt> <dd> <dl> <dt>
 
 0x80180006
@@ -255,14 +255,14 @@ Houve uma exceção sem assistência no servidor.
 
 
 
-Houve uma exceção sem assistência no servidor.
+Houve uma exceção sem tratamento no servidor.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="mregister_e_device_invalidsecurity_error"></span>**ERRO DE \_ INVALIDSECURITY DO MREGISTER E \_ DEVICE \_ \_**
+<span id="MREGISTER_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="mregister_e_device_invalidsecurity_error"></span>**\_erro MREGISTER E \_ dispositivo \_ INVALIDSECURITY \_**
 </dt> <dd> <dl> <dt>
 
 0x80190007
@@ -270,12 +270,12 @@ Houve uma exceção sem assistência no servidor.
 
 
 
-Houve uma exceção sem assistência no servidor.
+Houve uma exceção sem tratamento no servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="menroll_e_device_invalidsecurity_error"></span>**MENROLL \_ E \_ DEVICE \_ INVALIDSECURITY \_ ERROR**
+<span id="MENROLL_E_DEVICE_INVALIDSECURITY_ERROR"></span><span id="menroll_e_device_invalidsecurity_error"></span>**\_erro MENROLL E \_ dispositivo \_ INVALIDSECURITY \_**
 </dt> <dd> <dl> <dt>
 
 0x80180007
@@ -283,14 +283,14 @@ Houve uma exceção sem assistência no servidor.
 
 
 
-Houve uma exceção sem assistência no servidor.
+Houve uma exceção sem tratamento no servidor.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_UNKNOWN_ERROR"></span><span id="mregister_e_device_unknown_error"></span>**ERRO DESCONHECIDO DO DISPOSITIVO MREGISTER \_ E \_ \_ \_**
+<span id="MREGISTER_E_DEVICE_UNKNOWN_ERROR"></span><span id="mregister_e_device_unknown_error"></span>**\_ \_ erro desconhecido de dispositivo MREGISTER E \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80190008
@@ -303,7 +303,7 @@ Erro de servidor desconhecido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DEVICE_UNKNOWN_ERROR"></span><span id="menroll_e_device_unknown_error"></span>**ERRO DESCONHECIDO DO DISPOSITIVO MENROLL \_ E \_ \_ \_**
+<span id="MENROLL_E_DEVICE_UNKNOWN_ERROR"></span><span id="menroll_e_device_unknown_error"></span>**\_ \_ erro desconhecido de dispositivo MENROLL E \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80180008
@@ -313,7 +313,7 @@ Erro de servidor desconhecido.
 
 Erro de servidor desconhecido.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -341,7 +341,7 @@ Outra operação de registro está em andamento.
 
 Outra operação de registro está em andamento.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -371,7 +371,7 @@ Não se usa mais.
 
 O dispositivo já está registrado.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -399,14 +399,14 @@ Não se usa mais.
 
 
 
-O dispositivo não está inscrito.
+O dispositivo não está registrado.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DISCOVERY_REDIRECTED"></span><span id="mregister_e_discovery_redirected"></span>**MREGISTER \_ E \_ DISCOVERY \_ REDIRECIONADO**
+<span id="MREGISTER_E_DISCOVERY_REDIRECTED"></span><span id="mregister_e_discovery_redirected"></span>**descoberta de MREGISTER \_ E \_ \_ redirecionada**
 </dt> <dd> <dl> <dt>
 
 0x8019000C
@@ -421,7 +421,7 @@ Não se usa mais.
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DEVICE_NOT_AD_REGISTERED_ERROR"></span><span id="mregister_e_device_not_ad_registered_error"></span>**ERRO DO DISPOSITIVO MREGISTER \_ E NÃO REGISTRADO NO \_ \_ \_ \_ \_ AD**
+<span id="MREGISTER_E_DEVICE_NOT_AD_REGISTERED_ERROR"></span><span id="mregister_e_device_not_ad_registered_error"></span>**\_erro MREGISTER E \_ dispositivo \_ não \_ registrado no AD \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8019000D
@@ -431,12 +431,12 @@ Não se usa mais.
 
 Não se usa mais.
 
-**Windows 8.1:** O dispositivo não está registrado no Active Directory.
+**Windows 8.1:** O dispositivo não está registrado com Active Directory.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_DISCOVERY_SEC_CERT_DATE_INVALID"></span><span id="menroll_e_discovery_sec_cert_date_invalid"></span>**DATA \_ DO CERTIFICADO MENROLL E \_ DISCOVERY SEC \_ \_ \_ \_ INVÁLIDA**
+<span id="MENROLL_E_DISCOVERY_SEC_CERT_DATE_INVALID"></span><span id="menroll_e_discovery_sec_cert_date_invalid"></span>**MENROLL \_ E \_ \_ data de CERT SEC de descoberta \_ \_ \_ inválida**
 </dt> <dd> <dl> <dt>
 
 0x8018000D
@@ -444,14 +444,14 @@ Não se usa mais.
 
 
 
-Durante a descoberta, a data do certificado s era inválida.
+Durante a descoberta, a data de CERT SEC era inválida.
 
-**Windows 8.1:** Essa constante não está disponível antes Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MREGISTER_E_DISCOVERY_FAILED"></span><span id="mregister_e_discovery_failed"></span>**FALHA NA DESCOBERTA DO MREGISTER \_ E \_ \_**
+<span id="MREGISTER_E_DISCOVERY_FAILED"></span><span id="mregister_e_discovery_failed"></span>**\_ \_ falha na descoberta do MREGISTER \_**
 </dt> <dd> <dl> <dt>
 
 0x8019000E
@@ -489,14 +489,14 @@ Uma senha é necessária, mas não foi fornecida.
 
 
 
-Ocorreu um erro durante o registro do WAB.
+Ocorreu um erro durante o registro de WAB.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_CONNECTIVITY"></span><span id="menroll_e_connectivity"></span>**\_conectividade MENROLL E \_**
+<span id="MENROLL_E_CONNECTIVITY"></span><span id="menroll_e_connectivity"></span>**MENROLL \_ E \_ CONNECTIVITY**
 </dt> <dd> <dl> <dt>
 
 0x80180010
@@ -504,14 +504,14 @@ Ocorreu um erro durante o registro do WAB.
 
 
 
-Ocorreu um erro de rede, como DNS ou um tempo limite de rede.
+Ocorreu um erro de rede, como DNS ou um tempo de vida de rede.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_S_ENROLLMENT_SUSPENDED"></span><span id="menroll_s_enrollment_suspended"></span>**registro de MENROLL \_ S \_ \_ suspenso**
+<span id="MENROLL_S_ENROLLMENT_SUSPENDED"></span><span id="menroll_s_enrollment_suspended"></span>**REGISTRO DO MENROLL \_ \_ \_ SUSPENSO**
 </dt> <dd> <dl> <dt>
 
 0x00180011
@@ -521,7 +521,7 @@ Ocorreu um erro de rede, como DNS ou um tempo limite de rede.
 
 O registro foi suspenso. Não tem mais suporte.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -536,7 +536,7 @@ O registro foi suspenso. Não tem mais suporte.
 
 O certificado SSL não era válido.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -549,7 +549,7 @@ O certificado SSL não era válido.
 
 
 
-O usuário já registrou muitos dispositivos. Exclua ou cancele o registro de antigos para corrigir esse erro. Observe que o usuário pode resolver esse erro sem assistência de administrador.
+O usuário já registrou muitos dispositivos. Exclua ou desinclua os antigos para corrigir esse erro. Observe que o usuário pode resolver esse erro sem assistência do administrador.
 
 **Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
@@ -611,12 +611,12 @@ O dispositivo está tentando renovar, mas o servidor rejeitou a solicitação. V
 
 A conta está em manutenção; tentar novamente mais tarde. O usuário pode tentar novamente mais tarde. No entanto, o usuário pode optar por chamar o administrador para determinar o agendamento de manutenção.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_USERLICENSE"></span><span id="menroll_e_userlicense"></span>**MENROLL \_ E \_ userlicense**
+<span id="MENROLL_E_USERLICENSE"></span><span id="menroll_e_userlicense"></span>**MENROLL \_ E \_ USERLICENSE**
 </dt> <dd> <dl> <dt>
 
 0x80180018
@@ -624,9 +624,9 @@ A conta está em manutenção; tentar novamente mais tarde. O usuário pode tent
 
 
 
-A licença do usuário está em um registro de bloqueio de estado inadequado; o usuário precisará chamar o administrador.
+A licença do usuário está em estado ruim bloqueando o registro; o usuário precisará chamar o administrador.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -639,9 +639,9 @@ A licença do usuário está em um registro de bloqueio de estado inadequado; o 
 
 
 
-O servidor rejeitou os dados de registro; o servidor pode não estar configurado corretamente.
+O servidor rejeitou os dados de registro; O servidor pode não estar configurado corretamente.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -656,12 +656,12 @@ O servidor rejeitou os dados de registro; o servidor pode não estar configurado
 
 O servidor solicitou HTTP em vez de HTTPS, mas não foi aceito.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PLATFORM_WRONG_STATE"></span><span id="menroll_e_platform_wrong_state"></span>**\_ \_ \_ estado incorreto da plataforma MENROLL E \_**
+<span id="MENROLL_E_PLATFORM_WRONG_STATE"></span><span id="menroll_e_platform_wrong_state"></span>**MENROLL \_ E \_ PLATFORM \_ WRONG \_ STATE**
 </dt> <dd> <dl> <dt>
 
 0x8018001B
@@ -669,14 +669,14 @@ O servidor solicitou HTTP em vez de HTTPS, mas não foi aceito.
 
 
 
-Uma operação inválida foi tentada, tentando registrar o mesmo dispositivo duas vezes ou cancelar o registro de um dispositivo desconhecido.
+Foi tentada uma operação inválida, como tentar registrar o mesmo dispositivo duas vezes ou não registrar um dispositivo desconhecido.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PLATFORM_LICENSE_ERROR"></span><span id="menroll_e_platform_license_error"></span>**MENROLL \_ E \_ \_ erro de licença de plataforma \_**
+<span id="MENROLL_E_PLATFORM_LICENSE_ERROR"></span><span id="menroll_e_platform_license_error"></span>**ERRO DE LICENÇA DA PLATAFORMA MENROLL \_ E \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8018001C
@@ -759,14 +759,14 @@ Falha no provisionamento em um CSP cliente DM.
 
 
 
-O provisionamento falhou em um CSP do Passport for Work.
+Falha no provisionamento em um CSP do Passport for Work.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PROV_CSP_MISC"></span><span id="menroll_e_prov_csp_misc"></span>**MENROLL \_ E \_ Prov \_ CSP \_ misc**
+<span id="MENROLL_E_PROV_CSP_MISC"></span><span id="menroll_e_prov_csp_misc"></span>**MENROLL \_ E \_ PROV \_ CSP \_ MISC**
 </dt> <dd> <dl> <dt>
 
 0x80180022
@@ -774,14 +774,14 @@ O provisionamento falhou em um CSP do Passport for Work.
 
 
 
-O provisionamento falhou em um CSP não listado acima.
+Falha no provisionamento em um CSP não listado acima.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PROV_UNKNOWN"></span><span id="menroll_e_prov_unknown"></span>**MENROLL \_ E \_ Prov \_ desconhecido**
+<span id="MENROLL_E_PROV_UNKNOWN"></span><span id="menroll_e_prov_unknown"></span>**MENROLL \_ E \_ PROV \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 0x80180023
@@ -789,14 +789,14 @@ O provisionamento falhou em um CSP não listado acima.
 
 
 
-Falha no provisionamento, mas um CSP específico não foi indicado.
+Falha no provisionamento, mas um CSP específico não é indicado.
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes Windows 10.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_PROV_SSLCERTNOTFOUND"></span><span id="menroll_e_prov_sslcertnotfound"></span>**MENROLL \_ E \_ Prov \_ SSLCERTNOTFOUND**
+<span id="MENROLL_E_PROV_SSLCERTNOTFOUND"></span><span id="menroll_e_prov_sslcertnotfound"></span>**MENROLL \_ E \_ PROV \_ SSLCERTNOTFOUND**
 </dt> <dd> <dl> <dt>
 
 0x80180024
@@ -806,7 +806,7 @@ Falha no provisionamento, mas um CSP específico não foi indicado.
 
 Ao tentar associar o certificado público/chave privada, o certificado público não foi encontrado: ao tentar associar a chave pública de certificado/privado, ou ao examinar a carga de provisionamento (talvez direcionando o repositório errado).
 
-**Windows 8.1:** Essa constante não está disponível antes do Windows 10.
+**Windows 8.1:** Essa constante não está disponível antes de Windows 10.
 
 
 </dt> </dl> </dd> <dt>
@@ -822,7 +822,7 @@ Ao tentar associar o certificado público/chave privada, o certificado público 
 O provisionamento falhou no CSP EnterpriseAppManagement.
 
 > [!Note]  
-> Essa constante não está disponível antes do Windows 10, versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 
@@ -837,17 +837,17 @@ O provisionamento falhou no CSP EnterpriseAppManagement.
 
 
 
-O Gerenciamento de Dispositivos (MDM) foi bloqueado, possivelmente por Política de Grupo ou pela [**função SetManagedExternally.**](/windows/desktop/api/MDMRegistration/nf-mdmregistration-setmanagedexternally)
+O MDM (gerenciamento de dispositivo móvel) foi bloqueado, possivelmente por Política de Grupo ou pela função [**SetManagedExternally**](/windows/desktop/api/MDMRegistration/nf-mdmregistration-setmanagedexternally) .
 
 > [!Note]  
-> Essa constante não está disponível antes Windows 10 versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_CERTPOLICY_PRIVATEKEYCREATION_FAILED"></span><span id="menroll_e_certpolicy_privatekeycreation_failed"></span>**FALHA NA \_ MENROLL E \_ CERTPOLICY \_ PRIVATEKEYCREATION \_**
+<span id="MENROLL_E_CERTPOLICY_PRIVATEKEYCREATION_FAILED"></span><span id="menroll_e_certpolicy_privatekeycreation_failed"></span>**falha de MENROLL \_ E \_ CERTPOLICY \_ PRIVATEKEYCREATION \_**
 </dt> <dd> <dl> <dt>
 
 0x80180027
@@ -858,14 +858,14 @@ O Gerenciamento de Dispositivos (MDM) foi bloqueado, possivelmente por Política
 Falha ao criar a chave privada.
 
 > [!Note]  
-> Essa constante não está disponível antes Windows 10 versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_CERTAUTH_FAILED_TO_FIND_CERT"></span><span id="menroll_e_certauth_failed_to_find_cert"></span>**MENROLL \_ E \_ CERTAUTH \_ NÃO CONSEGUIU ENCONTRAR O \_ \_ \_ CERTIFICADO**
+<span id="MENROLL_E_CERTAUTH_FAILED_TO_FIND_CERT"></span><span id="menroll_e_certauth_failed_to_find_cert"></span>**MENROLL \_ E \_ CERTAUTH \_ falhou \_ ao \_ localizar o \_ certificado**
 </dt> <dd> <dl> <dt>
 
 0x80180028
@@ -873,17 +873,17 @@ Falha ao criar a chave privada.
 
 
 
-A Autenticação de Certificado foi solicitada, mas não encontrou um certificado a ser usado.
+A autenticação do certificado foi solicitada, mas falhou ao localizar um certificado a ser usado.
 
 > [!Note]  
-> Essa constante não está disponível antes Windows 10 versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_EMPTY_MESSAGE"></span><span id="menroll_e_empty_message"></span>**MENROLL \_ E \_ EMPTY \_ MESSAGE**
+<span id="MENROLL_E_EMPTY_MESSAGE"></span><span id="menroll_e_empty_message"></span>**MENROLL \_ E \_ \_ mensagem vazia**
 </dt> <dd> <dl> <dt>
 
 0x80180029
@@ -894,14 +894,14 @@ A Autenticação de Certificado foi solicitada, mas não encontrou um certificad
 O servidor respondeu com HTTP 200, mas a mensagem estava vazia.
 
 > [!Note]  
-> Essa constante não está disponível antes Windows 10 versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_USER_CANCELED_"></span><span id="menroll_e_user_canceled_"></span>**MENROLL \_ E \_ USER \_ CANCELED** 
+<span id="MENROLL_E_USER_CANCELED_"></span><span id="menroll_e_user_canceled_"></span>**MENROLL \_ E \_ usuário \_ cancelado** 
 </dt> <dd> <dl> <dt>
 
 0x80180030
@@ -912,14 +912,14 @@ O servidor respondeu com HTTP 200, mas a mensagem estava vazia.
 O usuário cancelou a operação.
 
 > [!Note]  
-> Essa constante não está disponível antes Windows 10 versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="MENROLL_E_MDM_NOT_CONFIGURED"></span><span id="menroll_e_mdm_not_configured"></span>**MENROLL \_ E \_ MDM \_ NÃO \_ CONFIGURADO**
+<span id="MENROLL_E_MDM_NOT_CONFIGURED"></span><span id="menroll_e_mdm_not_configured"></span>**MENROLL \_ E \_ MDM \_ não \_ configurado**
 </dt> <dd> <dl> <dt>
 
 0x80180031
@@ -930,7 +930,7 @@ O usuário cancelou a operação.
 O MDM (gerenciamento de dispositivo móvel) não está configurado.
 
 > [!Note]  
-> Essa constante não está disponível antes do Windows 10, versão 1709.
+> essa constante não está disponível antes de Windows 10, versão 1709.
 
  
 

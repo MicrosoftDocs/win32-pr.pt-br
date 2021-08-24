@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Exemplos de aplicativos WMI C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 883b51bd00de5e3938fef8467c68d299ac60683a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 53160abc6b63e1a7c0b4122e1b068d8e13df6435da75fa9f54e72607ed441daa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757586"
 ---
 # <a name="wmi-c-application-examples"></a>Exemplos de aplicativos WMI C++
 
-Os exemplos de aplicativo WMI nesta seção são escritos em C++. Eles demonstram uma variedade de tarefas que podem ser concluídas usando componentes WMI e oferecem uma alternativa em relação ao uso de scripts Visual Basic. Cada aplicativo é separado em uma série de etapas de forma semelhante, para que as seções de código de exemplos diferentes possam ser facilmente combinadas para formar aplicativos personalizados.
+Os exemplos de aplicativo WMI nesta seção são escritos em C++. eles demonstram uma variedade de tarefas que podem ser concluídas usando componentes WMI e oferecem uma alternativa em relação ao uso de scripts Visual Basic. Cada aplicativo é separado em uma série de etapas de forma semelhante, para que as seções de código de exemplos diferentes possam ser facilmente combinadas para formar aplicativos personalizados.
 
 A tabela a seguir lista os exemplos de C++ nesta seção.
 

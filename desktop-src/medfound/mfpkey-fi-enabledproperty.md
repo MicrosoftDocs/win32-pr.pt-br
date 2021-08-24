@@ -1,17 +1,17 @@
 ---
 description: Especifica se o decodificador deve usar a interpolação de quadros.
 ms.assetid: e7e2d585-73eb-420d-b1db-2386449dd8a8
-title: Propriedade MFPKEY_FI_ENABLED (Wmcodecdsp. h)
+title: MFPKEY_FI_ENABLED PROPERTY (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7e310d55bc5c27d0c92086c2c7ddede56b50db1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b25f597d11359c823c12a2c8e72f97e515aa52ce2857bbb1135e21e18ff0061b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713936"
 ---
-# <a name="mfpkey_fi_enabled-property"></a>\_ \_ Propriedade habilitada para MFPKEY
+# <a name="mfpkey_fi_enabled-property"></a>PROPRIEDADE MFPKEY \_ FI \_ HABILITADA
 
 Especifica se o decodificador deve usar a interpolação de quadros.
 
@@ -21,11 +21,11 @@ Especifica se o decodificador deve usar a interpolação de quadros.
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**BOOL do VT \_**
+**BOOL da VT \_**
 
 ## <a name="default-value"></a>Valor padrão
 
-**VARIANTE \_ falso**
+**VARIANT \_ FALSE**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,7 +34,7 @@ Especifica se o decodificador deve usar a interpolação de quadros.
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows XP, Windows Vista ou Windows 7<br/>                                       |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -42,10 +42,10 @@ Especifica se o decodificador deve usar a interpolação de quadros.
 
 <dl> <dt>
 
-[**MFPKEY \_ Fi \_ com suporte**](mfpkey-fi-supportedproperty.md)
+[**MFPKEY \_ FI \_ COM SUPORTE**](mfpkey-fi-supportedproperty.md)
 </dt> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

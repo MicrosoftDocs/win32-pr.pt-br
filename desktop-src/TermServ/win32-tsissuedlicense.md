@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSIssuedLicense
-description: Descreve instâncias de Serviços de Área de Trabalho Remota licenças de acesso para cliente por dispositivo (RDS \ 160; CALs por dispositivo) emitidas de um servidor de licença Área de Trabalho Remota.
+title: Win32_TSIssuedLicense classe
+description: Descreve instâncias de licenças Serviços de Área de Trabalho Remota acesso de cliente por dispositivo (RDS \ 160; Por CALs de dispositivo) que são emitidas de um Área de Trabalho Remota de licença.
 ms.assetid: 15825dc5-9ada-4c11-ac77-beb681e9b33c
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSIssuedLicense Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSIssuedLicense classe, descrita
+- Win32_TSIssuedLicense classe Serviços de Área de Trabalho Remota
+- Win32_TSIssuedLicense classe Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,16 +24,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3d08a68ddcc15a912de4c674403928211a297e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b76127d41c6a571b6bc75bc74378b21f76f4b38c05f0a223d36e979dccf89a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105784056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656156"
 ---
-# <a name="win32_tsissuedlicense-class"></a>\_Classe Win32 TSIssuedLicense
+# <a name="win32_tsissuedlicense-class"></a>Classe Win32 \_ TSIssuedLicense
 
-Descreve instâncias de Serviços de Área de Trabalho Remota licenças de acesso para cliente por dispositivo (RDS CALs por dispositivo) emitidas de um servidor de licença Área de Trabalho Remota.
+Descreve as instâncias do Serviços de Área de Trabalho Remota por dispositivo de acesso ao cliente (CALs RDS por dispositivo) emitidas de um servidor de Área de Trabalho Remota licença.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,20 +54,20 @@ class Win32_TSIssuedLicense
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSIssuedLicense** tem estes tipos de membros:
+A **classe \_ Win32 TSIssuedLicense** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Win32 \_ TSIssuedLicense** tem esses métodos.
+A **classe \_ Win32 TSIssuedLicense** tem esses métodos.
 
 
 
 | Método                                         | Descrição                                                                                               |
 |:-----------------------------------------------|:----------------------------------------------------------------------------------------------------------|
-| [**Cancelar**](revoke-win32-tsissuedlicense.md) | Revoga as CALs de RDS por dispositivo que são representadas pelo **objeto \_ TSIssuedLicense do Win32** .<br/> |
+| [**Revogar**](revoke-win32-tsissuedlicense.md) | Revoga as CALs de RDS por dispositivo representadas pelo objeto **\_ Win32 TSIssuedLicense.**<br/> |
 
 
 
@@ -75,27 +75,27 @@ A classe **Win32 \_ TSIssuedLicense** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSIssuedLicense** tem essas propriedades.
+A **classe \_ Win32 TSIssuedLicense** tem essas propriedades.
 
 <dl> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identifica a data em que a licença irá expirar.
+Identifica a data em que a licença expirará.
 
 </dd> <dt>
 
-**Emitido**
+**Issuedate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -105,10 +105,10 @@ Identifica a data em que a licença foi emitida.
 
 </dd> <dt>
 
-**Pacote de chaves**
+**KeyPackId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -117,14 +117,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica o pacote de chaves de licença Serviços de Área de Trabalho Remota.
+Identifica o pacote Serviços de Área de Trabalho Remota chave de licença.
 
 </dd> <dt>
 
-**Licenseid**
+**LicenseId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -133,14 +133,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identificador exclusivo desta licença.
+Identificador exclusivo para esta licença.
 
 </dd> <dt>
 
 **StatusLicença**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -244,7 +244,7 @@ Nome de usuário para o qual a licença foi emitida.
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -255,7 +255,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -264,16 +264,16 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSLicenseReportEntry Win32**](win32-tslicensereportentry.md)
+[**Win32 \_ TSLicenseReportEntry**](win32-tslicensereportentry.md)
 </dt> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: A estrutura PROPERTYINST define uma instância de uma propriedade em uma parte dos dados reconhecidos. Monitor de Rede aloca e preenche uma estrutura PROPERTYINST quando uma propriedade é anexada à captura.
 ms.assetid: d8382a38-b634-4c65-b56b-44fee067a0fe
-title: Estrutura PROPERTYINST (Netmon. h)
+title: Estrutura PROPERTYINST (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 5ee4ba108b8231646a2c0749dee6b5cc9f0f21c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d1c338fb8b4e63f03bff422e25578132476f70d932e8f17d5b0c39a0f6416e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778496"
 ---
 # <a name="propertyinst-structure"></a>Estrutura PROPERTYINST
 
-A estrutura **PROPERTYINST** define uma instância de uma propriedade em uma parte dos dados reconhecidos. Monitor de Rede aloca e preenche uma estrutura **PROPERTYINST** quando uma propriedade é anexada à captura.
+A **estrutura PROPERTYINST** define uma instância de uma propriedade em uma parte dos dados reconhecidos. Monitor de Rede aloca e preenche uma estrutura **PROPERTYINST** quando uma propriedade é anexada à captura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,72 +56,72 @@ typedef struct _PROPERTYINST {
 **lpPropertyInfo**
 </dt> <dd>
 
-Ponteiro para a estrutura [PROPERTYINFO](propertyinfo.md) que define a propriedade.
+Ponteiro para a [estrutura PROPERTYINFO](propertyinfo.md) que define a propriedade .
 
 </dd> <dt>
 
 **szPropertyText**
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres que é exibida no painel de detalhes da interface do usuário do Monitor de Rede.
+Ponteiro para uma cadeia de caracteres que é exibida no painel de detalhes da Monitor de Rede interface do usuário.
 
 </dd> <dt>
 
-**lpData**
+**Lpdata**
 </dt> <dd>
 
-Ponteiro para o início dos dados da propriedade. O analisador determina onde os dados de propriedade são iniciados.
+Ponteiro para o início dos dados da propriedade. O analisador determina onde os dados da propriedade são iniciados.
 
 </dd> <dt>
 
 **lpByte**
 </dt> <dd>
 
-Ponteiro para os dados de **byte** .
+Ponteiro para os **dados BYTE.**
 
 </dd> <dt>
 
 **lpWord**
 </dt> <dd>
 
-Ponteiro para os dados do **Word** .
+Ponteiro para os **dados do WORD.**
 
 </dd> <dt>
 
 **lpDword**
 </dt> <dd>
 
-Ponteiro para os dados **DWORD** .
+Ponteiro para os **dados DWORD.**
 
 </dd> <dt>
 
 **lpLargeInt**
 </dt> <dd>
 
-Ponteiro para os dados de [**LARGEINT**](largeint.md) .
+Ponteiro para os [**dados LARGEINT.**](largeint.md)
 
 </dd> <dt>
 
 **lpSysTime**
 </dt> <dd>
 
-Ponteiro para os dados de [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) .
+Ponteiro para os [**dados SYSTEMTIME.**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
 
 </dd> <dt>
 
 **lpPropertyInstEx**
 </dt> <dd>
 
-Ponteiro para uma estrutura [PROPERTYINSTEX](propertyinstex.md) . O membro **lpPropertyInstEx** é usado somente quando você chama [AttachPropertyInstanceEx](attachpropertyinstanceex.md).
+Ponteiro para uma [estrutura PROPERTYINSTEX.](propertyinstex.md) O **membro lpPropertyInstEx** é usado somente quando você chama [AttachPropertyInstanceEx](attachpropertyinstanceex.md).
 
-Se **lpPropertyInstEx** for usado, você deverá definir o membro **DATALENGTH** como 0xFFFF.
+Se **lpPropertyInstEx** for usado, você deverá definir o membro **DataLength** como 0xFFFF.
 
 </dd> <dt>
 
-**DataLength**
+**Datalength**
 </dt> <dd>
 
-Comprimento dos dados desta instância da propriedade. Se o membro **lpPropertyInstEx** apontar para uma estrutura [**PROPERTYINSTEX**](propertyinstex.md) , você deverá definir o **comprimento** de dados como 0xFFFF.
+Comprimento dos dados para esta instância da propriedade . Se o **membro lpPropertyInstEx** aponta para uma estrutura [**PROPERTYINSTEX,**](propertyinstex.md) você deve definir **DataLength** como 0xFFFF.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Sinalizador de condição de erro.
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura **PROPERTYINST** define uma instância de uma propriedade anexada. O analisador acessa a estrutura **PROPERTYINST** por meio de várias funções auxiliares. Por exemplo, quando a função [**FormatPropertyInstance**](formatpropertyinstance.md) é chamada para formatar os dados de uma propriedade, ela modifica o membro **SzPropertyText** da estrutura **PROPERTYINST** .
+A **estrutura PROPERTYINST** define uma instância de uma propriedade anexada. O analisador acessa a estrutura **PROPERTYINST** por meio de várias funções auxiliares. Por exemplo, quando a [**função FormatPropertyInstance**](formatpropertyinstance.md) é chamada para formatar os dados de uma propriedade, ela modifica o membro **szPropertyText** da estrutura **PROPERTYINST.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -158,7 +158,7 @@ A estrutura **PROPERTYINST** define uma instância de uma propriedade anexada. O
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cf7f9d0931c2623d2e92010abfca96f391107b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 141c4f1f2483e1cbd725a70454b1df1be12c46ec1970c052938181fb511ed248
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105788970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778446"
 ---
 # <a name="wm_ncmouseleave-message"></a>Mensagem do WM \_ NCMOUSELEAVE
 
@@ -52,7 +52,7 @@ Esse parâmetro não é usado e deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -68,7 +68,7 @@ Todo o controle solicitado por [**TrackMouseEvent**](/windows/win32/api/winuser/
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

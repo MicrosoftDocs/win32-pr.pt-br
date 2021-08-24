@@ -4,12 +4,12 @@ ms.assetid: C9004A40-ECC9-45C3-BBDE-0A179B838AFE
 title: Propriedade CODECAPI_AVEncVideoMinQP (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 778371bf271a5efa1c3d302493b8e3f10254285e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7c54694552e41c45830e3f16b77d0d1b4d671c478409b651bdacaa396cd52ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105810721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606276"
 ---
 # <a name="codecapi_avencvideominqp-property"></a>\_Propriedade CODECAPI AVEncVideoMinQP
 
@@ -33,9 +33,9 @@ O valor é o máximo de QP que é usado na codificação de variável-QP.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

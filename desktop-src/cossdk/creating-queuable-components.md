@@ -1,42 +1,42 @@
 ---
-description: Um componente com pelo menos uma interface queuable é um componente queuable.
+description: Um componente com pelo menos uma interface envelhável é um componente que pode ser envelhável.
 ms.assetid: 8183f640-4bf3-4555-8837-90a26130c618
-title: Criando componentes do Queuable
+title: Criando componentes envelháveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03533168a24da1e1f7279a6f2108e25717054103
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9d8ca7b4717da44145121508ed3e8b208e8401a240f1a2ceb858be299bf2b32f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637836"
 ---
-# <a name="creating-queuable-components"></a>Criando componentes do Queuable
+# <a name="creating-queuable-components"></a>Criando componentes envelháveis
 
-Um componente com pelo menos uma interface queuable é um *componente queuable*. Para que um componente seja invocado por uma fila, as interfaces devem ser marcadas como queuable e o componente deve ser instalado em um aplicativo enfileirado. No entanto, um componente queuable pode ser um componente de um aplicativo não enfileirado.
+Um componente com pelo menos uma interface envelhável é *um componente que pode ser envelhável.* Para que um componente seja invocado por uma fila, as interfaces devem ser marcadas como na fila e o componente deve ser instalado em um aplicativo na fila. No entanto, um componente que pode ser envelhável pode ser um componente de um aplicativo que não está na fila.
 
-Uma interface queuable deve conter apenas em parâmetros, sem parâmetros de saída e nenhum valor de retorno. Essas características são verificadas analisando as informações de tipo durante a instalação do componente. Se a interface não for queuable, a fila do aplicativo que contém o componente não poderá ser ativada.
+Uma interface que pode ser envelhável deve conter somente em parâmetros – sem parâmetros de saída e sem valores de retorno. Essas características são verificadas analisando as informações de tipo durante a instalação do componente. Se a interface não for enfilável, a fila do aplicativo que contém o componente não poderá ser ativada.
 
-Para especificar uma interface COM+ como queuable, use as seguintes etapas:
+Para especificar uma interface COM+ como envelhável, use as seguintes etapas:
 
-1.  Na árvore de console da ferramenta administrativa serviços de componentes, em **serviços de componentes**, abra a pasta **aplicativos com+** associada ao computador que você deseja gerenciar.
+1.  Na árvore de console da ferramenta administrativa serviços de componentes, em Serviços de Componentes, abra a pasta Aplicativos **COM+** associada ao computador que você deseja gerenciar.
 
-2.  Abra a pasta **interfaces** do componente do aplicativo com+ que você deseja tornar queuable.
+2.  Abra a **pasta Interfaces** do componente do aplicativo COM+ que você deseja tornar na fila.
 
-3.  Clique com o botão direito do mouse na interface que você deseja marcar como queuable e clique em **Propriedades**.
+3.  Clique com o botão direito do mouse na interface que você deseja marcar como envelhável e clique em **Propriedades**.
 
-4.  Selecione a guia **enfileiramento** na caixa de diálogo Propriedades.
+4.  Selecione a **guia Ensuamento** na caixa de diálogo propriedades.
 
-5.  Ative a caixa de seleção rotulada **na fila**.
+5.  Ative a caixa de seleção rotulada **Como en fila.**
 
     > [!Note]  
-    > Se a caixa de seleção **na fila** estiver esmaecida, a interface não atenderá às restrições de queuable descritas acima.
+    > Se a **caixa de seleção Ensuada** estiver es cinza, a interface não atenderá às restrições que podem ser envelháveis descritas acima.
 
      
 
 6.  Clique em **OK**.
 
-    Um componente queuable pode ser identificado como tal adicionando a macro de atributo de fila à seção de interface do arquivo de origem IDL (Interface Definition Language) para todas as interfaces que são queuable.
+    Um componente que pode ser enfilhável pode ser identificado como tal adicionando a macro de atributo QUEUEABLE à seção Interface do arquivo de origem IDL (Linguagem de Definição de Interface) para todas as interfaces que podem ser enfiloadas.
 
     ``` syntax
 #include "mtxattr.h"
@@ -56,7 +56,7 @@ Para especificar uma interface COM+ como queuable, use as seguintes etapas:
 [Criando filas de componentes](creating-component-queues.md)
 </dt> <dt>
 
-[Desenvolvendo componentes em fila](developing-queued-components.md)
+[Desenvolvendo componentes na fila](developing-queued-components.md)
 </dt> </dl>
 
  

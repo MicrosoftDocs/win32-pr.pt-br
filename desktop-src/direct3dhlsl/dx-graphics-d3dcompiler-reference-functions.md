@@ -11,12 +11,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ee63fa17cc9216fdb92f69fed4d77bc65bb49048
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: 3e9bc933baa1df3fb6d916bd37e832f58dc385bae297a2267248c8e61954a05b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104968760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673666"
 ---
 # <a name="compiler-functions-hlsl-reference"></a>Funções de compilador (referência de HLSL)
 
@@ -54,7 +54,7 @@ Esta seção contém informações sobre as seguintes funções do compilador do
 <td><a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompilefromfile"><strong>D3DCompileFromFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas não pode usá-los em aplicativos que você envia para a Windows Store. Consulte a seção, &quot; compilando sombreadores para UWP &quot; , em comentários para <a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile2"><strong>D3DCompile2</strong></a>.
+você pode usar essa API para desenvolver seus aplicativos da Windows store, mas não pode usá-los em aplicativos que você envia para o repositório de Windows. Consulte a seção, &quot; compilando sombreadores para UWP &quot; , em comentários para <a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile2"><strong>D3DCompile2</strong></a>.
 </blockquote>
 <br/> Compila o código de HLSL em bytes para um determinado destino.<br/></td>
 </tr>
@@ -62,7 +62,7 @@ Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas
 <td><a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompressshaders"><strong>D3DCompressShaders</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas não pode usá-los em aplicativos que você envia para a Windows Store.
+você pode usar essa API para desenvolver seus aplicativos da Windows store, mas não pode usá-los em aplicativos que você envia para o repositório de Windows.
 </blockquote>
 <br/> Compacta um conjunto de sombreadores em uma forma mais compacta. <br/></td>
 </tr>
@@ -92,7 +92,7 @@ Essa função faz parte da tecnologia de vinculação do sombreador HLSL que voc
 <td><a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3ddecompressshaders"><strong>D3DDecompressShaders</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas não pode usá-los em aplicativos que você envia para a Windows Store.
+você pode usar essa API para desenvolver seus aplicativos da Windows store, mas não pode usá-los em aplicativos que você envia para o repositório de Windows.
 </blockquote>
 <br/> Descompacta um ou mais sombreadores de um conjunto compactado. <br/></td>
 </tr>
@@ -120,7 +120,7 @@ Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas
 <td><a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dgetdebuginfo"><strong>D3DGetDebugInfo</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas não pode usá-los em aplicativos que você envia para a Windows Store.
+você pode usar essa API para desenvolver seus aplicativos da Windows store, mas não pode usá-los em aplicativos que você envia para o repositório de Windows.
 </blockquote>
 <br/> Obtém informações de depuração do sombreador.<br/></td>
 </tr>
@@ -169,7 +169,7 @@ Essa função faz parte da tecnologia de vinculação do sombreador HLSL que voc
 <td><a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dreadfiletoblob"><strong>D3DReadFileToBlob</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas não pode usá-los em aplicativos que você envia para a Windows Store.
+você pode usar essa API para desenvolver seus aplicativos da Windows store, mas não pode usá-los em aplicativos que você envia para o repositório de Windows.
 </blockquote>
 <br/> Lê um arquivo que está no disco na memória.<br/></td>
 </tr>
@@ -198,7 +198,7 @@ Essa função faz parte da tecnologia de vinculação do sombreador HLSL que voc
 <td><a href="/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dwriteblobtofile"><strong>D3DWriteBlobToFile</strong></a><br/></td>
 <td><blockquote>
 [!Note]<br />
-Você pode usar essa API para desenvolver seus aplicativos da Windows Store, mas não pode usá-los em aplicativos que você envia para a Windows Store.
+você pode usar essa API para desenvolver seus aplicativos da Windows store, mas não pode usá-los em aplicativos que você envia para o repositório de Windows.
 </blockquote>
 <br/> Grava um blob de memória em um arquivo no disco.<br/></td>
 </tr>

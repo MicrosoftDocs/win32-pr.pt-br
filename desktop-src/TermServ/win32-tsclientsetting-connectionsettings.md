@@ -1,12 +1,12 @@
 ---
-title: Método ConnectionSettings da classe Win32_TSClientSetting
+title: Método ConnectionSettings da classe Win32_TSClientSetting classe
 description: O método ConnectionSettings define as configurações de sessão que se aplicam ao processo de conexão e logon.
 ms.assetid: 603807fe-f341-4358-a3b0-0300785cbdb1
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método ConnectionSettings
-- Método ConnectionSettings Serviços de Área de Trabalho Remota, classe Win32_TSClientSetting
-- Classe Win32_TSClientSetting Serviços de Área de Trabalho Remota, método ConnectionSettings
+- Método ConnectionSettings Serviços de Área de Trabalho Remota
+- Método ConnectionSettings Serviços de Área de Trabalho Remota , Win32_TSClientSetting classe
+- Win32_TSClientSetting classe Serviços de Área de Trabalho Remota , método ConnectionSettings
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec255f00656684751b750e92d7a3df8290e3573e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e3f48a93959b1e86eb77f6ab0fbfab444444ca1c077835e1c28330d34ed66c87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656166"
 ---
-# <a name="connectionsettings-method-of-the-win32_tsclientsetting-class"></a>Método ConnectionSettings da classe Win32 \_ TSClientSetting
+# <a name="connectionsettings-method-of-the-win32_tsclientsetting-class"></a>Método ConnectionSettings da classe \_ Win32 TSClientSetting
 
-O método **ConnectionSettings** define as configurações de sessão que se aplicam ao processo de conexão e logon.
+O **método ConnectionSettings** define as configurações de sessão que se aplicam ao processo de conexão e logon.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,10 +45,10 @@ uint32 ConnectionSettings(
 
 <dl> <dt>
 
-*ConnectClientDrivesAtLogon* \[ no\]
+*ConnectClientDrivesAtLogon* \[ Em\]
 </dt> <dd>
 
-Sinalizador habilitando ou desabilitando a propriedade **ConnectClientDrivesAtLogon** que especifica se as unidades do cliente são conectadas automaticamente durante o procedimento de logon.
+Sinalizar a habilitação ou desabilitação da propriedade **ConnectClientDrivesAtLogon,** que especifica se as unidades do cliente são conectadas automaticamente durante o procedimento de logon.
 
 <dt>
 
@@ -74,10 +74,10 @@ As unidades do cliente são conectadas automaticamente.
 
 </dd> </dl> </dd> <dt>
 
-*ConnectPrinterAtLogon* \[ no\]
+*ConnectPrinterAtLogon* \[ Em\]
 </dt> <dd>
 
-Sinalizador habilitando ou desabilitando a propriedade **ConnectPrinterAtLogon** , que especifica se todas as impressoras de cliente locais mapeadas são automaticamente conectadas durante o procedimento de logon.
+Sinalizar a habilitação ou desabilitação da propriedade **ConnectPrinterAtLogon,** que especifica se todas as impressoras cliente locais mapeadas são conectadas automaticamente durante o procedimento de logon.
 
 <dt>
 
@@ -103,10 +103,10 @@ Todas as impressoras locais mapeadas são conectadas automaticamente.
 
 </dd> </dl> </dd> <dt>
 
-*DefaultToClientPrinter* \[ no\]
+*DefaultToClientPrinter* \[ Em\]
 </dt> <dd>
 
-Sinalizador habilitando ou desabilitando a propriedade **DefaultToClientPrinter** que especifica se os trabalhos de impressão são enviados automaticamente para a impressora local do cliente.
+Sinalizar a habilitação ou desabilitação da propriedade **DefaultToClientPrinter,** que especifica se os trabalhos de impressão são enviados automaticamente para a impressora local do cliente.
 
 <dt>
 
@@ -132,13 +132,13 @@ Os trabalhos de impressão são enviados automaticamente.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md) para obter uma lista desses valores. O método retornará um erro se as configurações de conexão do usuário forem substituídas pelo servidor.
+Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI. Consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md) para ver uma lista desses valores. O método retornará um erro se as configurações de conexão do usuário são substituídos pelo servidor.
 
 ## <a name="remarks"></a>Comentários
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -148,8 +148,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -158,7 +158,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TSClientSetting Win32**](win32-tsclientsetting.md)
+[**Win32 \_ TSClientSetting**](win32-tsclientsetting.md)
 </dt> </dl>
 
  

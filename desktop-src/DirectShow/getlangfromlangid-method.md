@@ -4,17 +4,17 @@ ms.assetid: 73cff3df-bfcd-4e51-bd41-51545ed82f09
 title: Método GetLangFromLangID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23afddf746852028c26732eb658e786588f7e9ec
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6041f12c82f0e659928db9f5aa02fd916d3ff9907bf3114eb40c525b8b1d8d2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756746"
 ---
 # <a name="getlangfromlangid-method"></a>Método GetLangFromLangID
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

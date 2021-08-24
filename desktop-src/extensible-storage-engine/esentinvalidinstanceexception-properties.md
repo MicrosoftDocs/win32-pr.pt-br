@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101965
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 92fc66ff0197be99bdcbf207e765d58735d405f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef2489ac5f35f1b242771e5bee26eef1c524751b1bd984f4b69677faae86d8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104559577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119735126"
 ---
 # <a name="esentinvalidinstanceexception-properties"></a>Propriedades de EsentInvalidInstanceException
 
@@ -49,7 +49,7 @@ O tipo [EsentInvalidInstanceException](./esentinvalidinstanceexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentInvalidInstanceException](./esentinvalidinstanceexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">

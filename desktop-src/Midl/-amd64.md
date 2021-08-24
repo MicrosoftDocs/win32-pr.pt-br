@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa254e67a0d774c85160e4b6004d1f12c34e0072
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d5862c91af93a4ffce2602a7e49f06f74b458a4bbb3c15eec93837472862c6a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638326"
 ---
 # <a name="amd64-switch"></a>comutador/AMD64
 
@@ -32,7 +32,7 @@ midl /amd64
 > [!Note]  
 > A opção **/x64** descrita pela ajuda da linha de comando MIDL.exe foi preterida. **/AMD64** deve ser usado em seu lugar.
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -41,9 +41,9 @@ midl /amd64
 [**/ia64**](-ia64.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

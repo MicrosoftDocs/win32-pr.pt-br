@@ -3,7 +3,7 @@ title: Mensagem de EM_SETCARETINDEX (CommCtrl. h)
 description: Define o valor de índice baseado em zero da posição do cursor em um controle de edição.
 ms.assetid: 5cb7ff1e-18e8-49c8-8072-872cf32b18b0
 keywords:
-- Controles de EM_SETCARETINDEX de mensagens do Windows
+- controles de Windows de mensagem de EM_SETCARETINDEX
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: ea0c49ebad91532e82dc7e96facb62f38b2abfa1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8b80202ed5294828441abcfa66a914514e31944902e52926de7fa3af92794b46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119799956"
 ---
 # <a name="em_setcaretindex-message"></a>\_Mensagem em SETCARETINDEX
 
@@ -39,7 +39,7 @@ O novo valor de índice baseado em zero da posição do cursor.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -53,9 +53,9 @@ Se o índice estiver fora do intervalo do texto em um controle de edição, o í
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 10, 1809\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2019\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, 1809 \[ aplicativos de área de trabalho apenas\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2019\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
 
 
 

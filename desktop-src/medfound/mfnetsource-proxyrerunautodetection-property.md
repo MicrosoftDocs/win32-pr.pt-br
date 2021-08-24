@@ -1,17 +1,17 @@
 ---
 description: Especifica se o localizador de proxy padrão deve forçar a detecção automática de proxy.
 ms.assetid: ab547a92-94a2-482e-b7ac-aeb3fdfb6b91
-title: Propriedade MFNETSOURCE_PROXYRERUNAUTODETECTION (Mfidl. h)
+title: MFNETSOURCE_PROXYRERUNAUTODETECTION propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37021c7e96b135389f0dffa2f8c26b8067df2b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3351766302952390bbe67ea2d86cd76e93b9267328fe2c07e2656a38b3fd2906
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713986"
 ---
-# <a name="mfnetsource_proxyrerunautodetection-property"></a>\_Propriedade MFNETSOURCE PROXYRERUNAUTODETECTION
+# <a name="mfnetsource_proxyrerunautodetection-property"></a>Propriedade MFNETSOURCE \_ PROXYRERUNAUTODETECTION
 
 Especifica se o localizador de proxy padrão deve forçar a detecção automática de proxy.
 
@@ -19,13 +19,13 @@ Especifica se o localizador de proxy padrão deve forçar a detecção automáti
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
-Booliano (**longo**)
+Booliana (**LONG**)
 
-\_I4 VT
+VT \_ I4
 
 **lVal**
 
@@ -33,9 +33,9 @@ Booliano (**longo**)
 
 ## <a name="remarks"></a>Comentários
 
-A constante **MFNETSOURCE \_ PROXYSETTINGS** define o GUID para essa chave de propriedade. O identificador de propriedade (PID) é zero.
+A constante **MFNETSOURCE \_ PROXYSETTINGS** define o GUID para essa chave de propriedade. O PID (identificador de propriedade) é zero.
 
-Os aplicativos podem usar essa propriedade para configurar o localizador de proxy ao criar o objeto de localizador de proxy. Para definir a propriedade, passe um ponteiro **IPropertyStore** no parâmetro *PProxyConfig* da função [**MFCreateProxyLocator**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) . No modo de detecção automática, o localizador de proxy usa o mecanismo de detecção de proxy do WinInet. Para forçar a detecção automática, defina o valor como 0.
+Os aplicativos podem usar essa propriedade para configurar o localizador de proxy ao criar o objeto de localizador de proxy. Para definir a propriedade , passe um ponteiro **IPropertyStore** no parâmetro *pProxyConfig* da [**função MFCreateProxyLocator.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateproxylocator) No modo de detecção automática, o localizador de proxy usa o mecanismo de detecção de proxy WinInet. Para forçar a detecção automática, de definido o valor como 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Os aplicativos podem usar essa propriedade para configurar o localizador de prox
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,13 +53,13 @@ Os aplicativos podem usar essa propriedade para configurar o localizador de prox
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
-[Suporte de proxy para fontes de rede](proxy-support-for-network-sources.md)
+[Suporte a proxy para fontes de rede](proxy-support-for-network-sources.md)
 </dt> </dl>
 
  

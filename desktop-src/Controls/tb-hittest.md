@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_HITTEST (commctrl. h)
-description: Determina onde um ponto reside em um controle ToolBar.
+title: TB_HITTEST mensagem (Commctrl.h)
+description: Determina onde um ponto está em um controle de barra de ferramentas.
 ms.assetid: d08f3805-2042-470e-8f5a-8a6a681d1189
 keywords:
-- Controles de TB_HITTEST de mensagens do Windows
+- TB_HITTEST controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6264bc0191f091d3819081ddd67e428b64c84570
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8d89cecf1d1df5c370ab9a00ae1251df9df7ef919f9959b998407a9fb5881178
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696156"
 ---
-# <a name="tb_hittest-message"></a>\_Mensagem HITTEST TB
+# <a name="tb_hittest-message"></a>Mensagem \_ TB HITTEST
 
-Determina onde um ponto reside em um controle ToolBar.
+Determina onde um ponto está em um controle de barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,13 +35,13 @@ Determina onde um ponto reside em um controle ToolBar.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**ponto**](/previous-versions//dd162805(v=vs.85)) que contém a coordenada x do teste de clique no membro **x** e a coordenada y do teste de clique no membro **y** . As coordenadas são relativas à área do cliente da barra de ferramentas.
+Ponteiro para uma [**estrutura POINT**](/previous-versions//dd162805(v=vs.85)) que contém a coordenada x do teste de acerto no membro **x** e a coordenada y do teste de acerto no **membro** y. As coordenadas são relativas à área de cliente da barra de ferramentas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor inteiro. Se o valor de retorno for zero ou um valor positivo, ele será o índice de base zero do item não separador no qual o ponto está. Se o valor de retorno for negativo, o ponto não se situa em um botão. O valor absoluto do valor de retorno é o índice de um item separador ou o item não separador mais próximo.
+Retorna um valor inteiro. Se o valor de retorno for zero ou um valor positivo, ele será o índice baseado em zero do item nonseparator no qual o ponto está. Se o valor de retorno for negativo, o ponto não se enquadra em um botão. O valor absoluto do valor de retorno é o índice de um item separador ou o item nonseparator mais próximo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Retorna um valor inteiro. Se o valor de retorno for zero ou um valor positivo, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

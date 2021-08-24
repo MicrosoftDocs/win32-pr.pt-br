@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 9f78b38aa7db353d91fda278bafd177f4027d65f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f36e05f0f110a401b1edba83b005d902e8c6c1f86910b0135a6892fadf87cfbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297560"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736556"
 ---
 # <a name="esentcorruptionexception-constructor"></a>Construtor EsentCorruptionException
 

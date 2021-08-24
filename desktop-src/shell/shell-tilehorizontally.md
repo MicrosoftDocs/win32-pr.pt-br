@@ -1,7 +1,7 @@
 ---
-description: Organiza todas as janelas na área de trabalho horizontalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar janelas de bloco horizontalmente.
+description: Lado a lado todas as janelas na área de trabalho horizontalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar Windows Horizontalmente.
 ms.assetid: b0e06766-1bd4-4744-81f3-139b018aa72c
-title: Método Shell. TileHorizontally (shldisp. h)
+title: Método Shell.TileHorizontally (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e295d0a7847afc0cb405f3ab9141e54ae424e9e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da11496ca9993c87f78a9209a2c6d04bc0167349a6c0b955a3b2823335f30464
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709476"
 ---
-# <a name="shelltilehorizontally-method"></a>Método Shell. TileHorizontally
+# <a name="shelltilehorizontally-method"></a>Método Shell.TileHorizontally
 
-Organiza todas as janelas na área de trabalho horizontalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar **janelas de bloco horizontalmente**.
+Lado a lado todas as janelas na área de trabalho horizontalmente. Esse método tem o mesmo efeito que clicar com o botão direito do mouse na barra de tarefas e selecionar **Windows Horizontalmente.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,9 +47,9 @@ Esse método não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **TileHorizontally** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir **mostra TileHorizontally** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -65,7 +65,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -105,11 +105,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

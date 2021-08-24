@@ -3,18 +3,18 @@ title: Atributos por tipo
 description: Atributos por tipo
 ms.assetid: 52216e11-9369-4036-9c16-e3e9db63efcf
 keywords:
-- SDK do Windows Media Format, atributos
+- Windows SDK do formato de mídia, atributos
 - Formato de sistema avançado (ASF), atributos
 - ASF (formato de sistemas avançados), atributos
 - atributos, tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dfdcfeeb40b5404c453e4b80a0855893e86f1d02
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c15c2db016f35ca60b799c88eb4194af0f23a5bce4823e9cf6c7d9503298553d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709496"
 ---
 # <a name="attributes-by-type"></a>Atributos por tipo
 
@@ -31,7 +31,7 @@ Para sua conveniência, esta seção lista alguns dos atributos de metadados cla
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -40,9 +40,9 @@ Para sua conveniência, esta seção lista alguns dos atributos de metadados cla
 [**Atributos**](attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

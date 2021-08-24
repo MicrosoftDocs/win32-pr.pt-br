@@ -1,26 +1,26 @@
 ---
 title: Criando uma página da Web de apresentação
-description: O código de exemplo nesta seção usa a API do ponto de controle com tecnologia UPnP para criar uma página da Web simples para controlar um dispositivo de player de mídia fictício baseado em UPnP. A página da Web é mostrada na ilustração a seguir.
+description: O código de exemplo nesta seção usa a API do Ponto de Controle com a tecnologia UPnP para criar uma página da Web simples para controlar dispositivos fictícios de player de mídia baseados em UPnP. A página da Web é mostrada na ilustração a seguir.
 ms.assetid: 7eae71eb-9ec9-4c0f-b231-5d659f12b9f5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31133a6e92b31fa7ddeef94174cc29a4c07a1d9f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b3bfe5ffdb4781ed42f0bcab5d1a8c1bf172fe098906860bec5384311e403adb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119655956"
 ---
 # <a name="creating-a-presentation-web-page"></a>Criando uma página da Web de apresentação
 
-O código de exemplo nesta seção usa a API do ponto de controle com tecnologia UPnP para criar uma página da Web simples para controlar um dispositivo de player de mídia fictício baseado em UPnP. A página da Web é mostrada na ilustração a seguir.
+O código de exemplo nesta seção usa a API do Ponto de Controle com a tecnologia UPnP para criar uma página da Web simples para controlar dispositivos fictícios de player de mídia baseados em UPnP. A página da Web é mostrada na ilustração a seguir.
 
 > [!Note]  
-> Este código de exemplo só funciona para navegadores em execução no Windows; Ele não funciona em navegadores em execução em outros sistemas operacionais.
+> Este código de exemplo só funciona para navegadores em execução em Windows; ele não funciona em navegadores em execução em outros sistemas operacionais.
 
- 
+ 
 
-![exemplo de apresentação de uma página da Web](images/new-samp-media-player.png)
+![apresentação de exemplo de uma página da Web](images/new-samp-media-player.png)
 
 ``` syntax
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -200,9 +200,9 @@ end function
 </HTML>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

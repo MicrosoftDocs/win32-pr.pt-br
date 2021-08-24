@@ -4,12 +4,12 @@ ms.assetid: 9cffd9ae-710b-4d41-aa02-3ab1a065e544
 title: PKEY_AudioEndpoint_Supports_EventDriven_Mode (Mmdeviceapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2707de83721d546040ac878b337faea12f533bb6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 280be65d4ae8e0b557bd96320ea31f67ba75657ecb5b685608bd2c314e10836d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758916"
 ---
 # <a name="pkey_audioendpoint_supports_eventdriven_mode"></a>PKEY \_ AudioEndpoint \_ dá suporte ao \_ \_ modo EventDriven
 
@@ -29,9 +29,9 @@ Esse valor de propriedade é preenchido por um OEM de áudio em um arquivo. inf 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 6FEFFB5D-DD8B-4FEA-B273-D32FC30CAFEA
 title: Como usar eventos de reprodução automática em aplicativos em execução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51795a3992bdb40dde833bb3e352905efaa2be63
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab30fa020b5501f8832a5b350ad409934ecbb4258d75adf147e908c699516474
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714808"
 ---
 # <a name="how-to-use-autoplay-events-in-running-applications"></a>Como usar eventos de reprodução automática em aplicativos em execução
 
@@ -40,7 +40,7 @@ Use o parâmetro *ppmoniker* para registrar seu componente no corrompidos.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) pode representar riscos de segurança. Consulte a documentação de **LoadLibrary** para obter informações sobre como carregar DLLs corretamente com diferentes versões do Windows.
+> [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) pode representar riscos de segurança. Consulte a documentação **LoadLibrary** para obter informações sobre como carregar corretamente DLLs com versões diferentes do Windows.
 
 ```cpp
 typedef HRESULT (*CREATEHARDWAREEVENTMONIKER)(REFCLSID clsid, LPCWSTR pszEventHandler, IMoniker **ppmoniker);

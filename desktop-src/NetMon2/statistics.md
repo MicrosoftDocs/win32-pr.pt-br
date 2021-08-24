@@ -1,7 +1,7 @@
 ---
-description: A estrutura de estatísticas fornece estatísticas para a captura. Algumas dessas estatísticas são geradas por Monitor de Rede, enquanto outras são geradas pela NIC à qual o NPP está conectado.
+description: A estrutura STATISTICS fornece estatísticas para a captura. Algumas dessas estatísticas são geradas por Monitor de Rede, enquanto outras são geradas pela NIC à que o NPP está conectado.
 ms.assetid: 5e30ae30-d8ad-4336-9e4d-fa10ceefc966
-title: Estrutura de estatísticas (Netmon. h)
+title: Estrutura STATISTICS (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: a3798f32f7341722432441272eded7d7605cf8a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 273e6ba9e32337cc65b3dce979d2ff407b904595237b60025e42fc58e57d9823
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778276"
 ---
-# <a name="statistics-structure"></a>Estrutura de estatísticas
+# <a name="statistics-structure"></a>Estrutura STATISTICS
 
-A estrutura de **estatísticas** fornece estatísticas para a captura. Algumas dessas estatísticas são geradas por Monitor de Rede, enquanto outras são geradas pela NIC à qual o NPP está conectado.
+A **estrutura STATISTICS** fornece estatísticas para a captura. Algumas dessas estatísticas são geradas por Monitor de Rede, enquanto outras são geradas pela NIC à que o NPP está conectado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,7 +58,7 @@ typedef struct _STATISTICS {
 
 <dl> <dt>
 
-**Tempo decorrido**
+**Tempo Decorrido**
 </dt> <dd>
 
 Tempo decorrido, em microssegundos.
@@ -68,28 +68,28 @@ Tempo decorrido, em microssegundos.
 **TotalFramesCaptured**
 </dt> <dd>
 
-Número total de quadros armazenados no momento. Esse número é limitado pelo tamanho do arquivo ou buffer de captura usado para armazenar os quadros.
+Número total de quadros armazenados no momento. Esse número é limitado pelo tamanho do arquivo de captura ou buffer usado para armazenar os quadros.
 
 </dd> <dt>
 
 **TotalBytesCaptured**
 </dt> <dd>
 
-Número total de bytes armazenados no momento. Esse número é limitado pelo tamanho do arquivo ou buffer de captura usado para armazenar os quadros.
+Número total de bytes armazenados no momento. Esse número é limitado pelo tamanho do arquivo de captura ou buffer usado para armazenar os quadros.
 
 </dd> <dt>
 
 **TotalFramesFiltered**
 </dt> <dd>
 
-Número total de quadros que passaram pelo filtro de captura atual. Se um filtro não for usado, esse valor será o mesmo que **TotalFramesSeen**.
+Número total de quadros que passaram pelo filtro de captura atual. Se um filtro não for usado, esse valor será o mesmo que **TotalFramesSeen.**
 
 </dd> <dt>
 
 **TotalBytesFiltered**
 </dt> <dd>
 
-Número total de quadros que passaram pelo filtro de captura atual. Se um filtro não for usado, esse valor será o mesmo que **TotalBytesSeen**.
+Número total de quadros que passaram pelo filtro de captura atual. Se um filtro não for usado, esse valor será o mesmo que **TotalBytesSeen.**
 
 </dd> <dt>
 
@@ -145,14 +145,14 @@ Número total de quadros descartados (quadros que passaram pelo filtro, mas não
 **TotalFramesDroppedFromBuffer**
 </dt> <dd>
 
-Número de quadros descartados do arquivo ou buffer de captura. Quando o buffer estiver cheio, os quadros mais antigos serão removidos para liberar espaço para os novos.
+Número de quadros descartados do arquivo de captura ou do buffer. Quando o buffer está cheio, quadros mais antigos são removidos para dar espaço para novos.
 
 </dd> <dt>
 
 **MacFramesReceived**
 </dt> <dd>
 
-Número de quadros que a NIC relata que recebeu.
+Número de quadros que a NIC relata ter recebido.
 
 </dd> <dt>
 
@@ -166,43 +166,43 @@ Número de erros de CRC relatados pela NIC.
 **MacBytesReceivedEx**
 </dt> <dd>
 
-Número de bytes que a NIC relata que recebeu.
+Número de bytes que a NIC relata ter recebido.
 
 </dd> <dt>
 
-**MacFramesDropped \_ Nobuffers**
+**MacFramesDropped \_ NoBuffers**
 </dt> <dd>
 
-Número de quadros que a NIC relata descartada devido à falta de espaço no buffer.
+Número de quadros que a NIC relata ter descartado devido à falta de espaço em buffer.
 
 </dd> <dt>
 
 **MacMulticastsReceived**
 </dt> <dd>
 
-Número de difusões seletivas que os relatórios da NIC receberam.
+Número de multicasts que os relatórios NIC receberam.
 
 </dd> <dt>
 
 **MacBroadcastsReceived**
 </dt> <dd>
 
-Número de difusões que os relatórios da NIC receberam recebidos.
+Número de transmissões que os relatórios da NIC receberam.
 
 </dd> <dt>
 
 **MacFramesDropped \_ HwError**
 </dt> <dd>
 
-Número de quadros que a NIC relata como tendo sido descartada devido a erros de hardware.
+Número de quadros que a NIC relata como tendo sido descartado devido a erros de hardware.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada para recuperar [*estatísticas totais*](t.md)e para pausar ou parar a captura atual.
+Essa estrutura é usada para recuperar [*o total de estatísticas*](t.md)e para pausar ou parar a captura atual.
 
-O total de estatísticas não pode ser recuperado ao usar a interface [IESP](iesp.md) NPP.
+As estatísticas totais não podem ser recuperadas ao usar a interface [NPP I LTD.](iesp.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -212,7 +212,7 @@ O total de estatísticas não pode ser recuperado ao usar a interface [IESP](ies
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 
@@ -232,7 +232,7 @@ O total de estatísticas não pode ser recuperado ao usar a interface [IESP](ies
 [IDelaydC::P ause](idelaydc-pause.md)
 </dt> <dt>
 
-[IESP::P ause](iesp-pause.md)
+[I LTD::P ause](iesp-pause.md)
 </dt> <dt>
 
 [IRTC::P ause](irtc-pause.md)
@@ -241,16 +241,16 @@ O total de estatísticas não pode ser recuperado ao usar a interface [IESP](ies
 [IStats::P ause](istats-pause.md)
 </dt> <dt>
 
-[IDelaydC:: Stop](idelaydc-stop.md)
+[IDelaydC::Stop](idelaydc-stop.md)
 </dt> <dt>
 
-[IESP:: Stop](iesp-stop.md)
+[IRIA::Stop](iesp-stop.md)
 </dt> <dt>
 
-[IRTC:: Stop](irtc-stop.md)
+[IRTC::Stop](irtc-stop.md)
 </dt> <dt>
 
-[IStatsC:: Stop](istats-stop.md)
+[IStatsC::Stop](istats-stop.md)
 </dt> </dl>
 
  

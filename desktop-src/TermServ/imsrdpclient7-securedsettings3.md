@@ -4,15 +4,15 @@ description: Recupera um objeto que dá suporte à interface IMsRdpClientSecured
 ms.assetid: 500ce7ed-bd86-434c-baf8-f30dd667dca3
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade SecuredSettings3
-- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade SecuredSettings3
-- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade SecuredSettings3
-- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade SecuredSettings3
-- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade SecuredSettings3
+- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota
+- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade SecuredSettings3
+- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade SecuredSettings3
+- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade SecuredSettings3
+- Propriedade SecuredSettings3 Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade SecuredSettings3
 topic_type:
 - apiref
 api_name:
@@ -30,16 +30,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 219e3373a6ecb2f5b963a82800f4415f7de64534
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77bcdaae672ca59c65bea46d97a34046c7e48c6f0964c1a5b97cdcef77c14ffd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737166"
 ---
-# <a name="imsrdpclient7securedsettings3-property"></a>Propriedade IMsRdpClient7:: SecuredSettings3
+# <a name="imsrdpclient7securedsettings3-property"></a>Propriedade IMsRdpClient7::SecuredSettings3
 
-Recupera um objeto que dá suporte à interface [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) .
+Recupera um objeto que dá suporte à interface [**IMsRdpClientSecuredSettings2.**](imsrdpclientsecuredsettings2.md)
 
 Esta propriedade é somente para leitura.
 
@@ -56,7 +56,7 @@ HRESULT get_SecuredSettings3(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O endereço de um ponteiro de interface [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) que recebe o objeto.
+O endereço de um ponteiro de interface [**IMsRdpClientSecuredSettings2**](imsrdpclientsecuredsettings2.md) que recebe o objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ O endereço de um ponteiro de interface [**IMsRdpClientSecuredSettings2**](imsrd
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                      |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient7 é definido como b2a5b5ce-3461-444A-91D4-add26d070638<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient7 é definido como b2a5b5ce-3461-444a-91d4-add26d070638<br/>       |
 
 
 

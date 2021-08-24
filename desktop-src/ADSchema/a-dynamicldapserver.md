@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f86e0fbabab53f8ad783ad5b89c28ce0e7a164f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 11a91cc51305130050c65b7ff2c777a12562413d3fddc90e0f569169cdd36074
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656536"
 ---
 # <a name="dynamic-ldap-server-attribute"></a>Atributo Dynamic-LDAP-Server
 
@@ -58,7 +58,7 @@ Nome DNS do servidor que está passando por propriedades dinâmicas para esta co
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -79,7 +79,7 @@ Nome DNS do servidor que está passando por propriedades dinâmicas para esta co
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -100,7 +100,7 @@ Nome DNS do servidor que está passando por propriedades dinâmicas para esta co
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -121,10 +121,10 @@ Nome DNS do servidor que está passando por propriedades dinâmicas para esta co
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -142,10 +142,10 @@ Nome DNS do servidor que está passando por propriedades dinâmicas para esta co
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -163,10 +163,10 @@ Nome DNS do servidor que está passando por propriedades dinâmicas para esta co
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

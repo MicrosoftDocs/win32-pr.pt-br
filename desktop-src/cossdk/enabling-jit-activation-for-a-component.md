@@ -4,12 +4,12 @@ ms.assetid: ccf7c98b-8b1a-431d-b417-83f79734f691
 title: Habilitando a ativação JIT para um componente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f61cc5c79270a926bb50e3408766df63f4484c8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9beac51cd4f97a451b372d8eeee8ef419ead3140a672ca85dcdc3740d8c52de4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637696"
 ---
 # <a name="enabling-jit-activation-for-a-component"></a>Habilitando a ativação JIT para um componente
 

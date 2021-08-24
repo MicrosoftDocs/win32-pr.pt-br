@@ -1,19 +1,19 @@
 ---
-description: Especifica a categoria de fluxo de áudio para o processador de áudio de streaming (SAR).
+description: Especifica a categoria de fluxo de áudio para o SAR (Streaming Audio Renderer).
 ms.assetid: 88E79DE6-2062-4471-A939-D1D4DD2EC42D
-title: Atributo MF_AUDIO_RENDERER_ATTRIBUTE_STREAM_CATEGORY (Mfidl. h)
+title: MF_AUDIO_RENDERER_ATTRIBUTE_STREAM_CATEGORY atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd96c219e43f85c516a5f862e2a978724328a69f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c4acb6bd0f40d3c6fb3caa6b4dce8801f8fa60d31222265d5dca6ff5a132444e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714876"
 ---
-# <a name="mf_audio_renderer_attribute_stream_category-attribute"></a>\_Atributo de \_ \_ categoria de fluxo do atributo de processamento de \_ áudio MF \_
+# <a name="mf_audio_renderer_attribute_stream_category-attribute"></a>Atributo MF \_ AUDIO \_ RENDERER \_ ATTRIBUTE STREAM \_ \_ CATEGORY
 
-Especifica a categoria de fluxo de áudio para o [processador de áudio de streaming](streaming-audio-renderer.md) (SAR).
+Especifica a categoria de fluxo de áudio para o SAR [(Streaming Audio Renderer).](streaming-audio-renderer.md)
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,20 +21,20 @@ Especifica a categoria de fluxo de áudio para o [processador de áudio de strea
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar esse atributo para configurar o processador de áudio. O uso depende de qual função você chama para criar o processador de áudio.
+Você pode usar esse atributo para configurar o renderador de áudio. O uso depende de qual função você chama para criar o renderdor de áudio.
 
 
 
 | Função                                                               | Como definir o atributo                                                                                                                                                                       |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MFCreateAudioRenderer**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorenderer)                 | Use o ponteiro [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) especificado no parâmetro *pAudioAttributes* .                                                                                          |
-| [**MFCreateAudioRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorendereractivate) | Use o ponteiro [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) retornado no parâmetro *ppActivate* . Defina o atributo antes de chamar [**IMFActivate:: activateobject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject). |
+| [**MFCreateAudioRenderer**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorenderer)                 | Use o [**ponteiro IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) especificado no *parâmetro pAudioAttributes.*                                                                                          |
+| [**MFCreateAudioRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaudiorendereractivate) | Use o [**ponteiro IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) retornado no *parâmetro ppActivate.* De definir o atributo antes de [**chamar IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject). |
 
 
 
  
 
-O valor do atributo é um membro da enumeração de [**\_ \_ categoria de fluxo de áudio**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) . O serviço de áudio usa a categoria de fluxo para determinar as políticas de áudio quando vários aplicativos tocam áudio ao mesmo tempo.
+O valor do atributo é um membro da [**enumeração CATEGORIA \_ DE FLUXO \_ DE**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) ÁUDIO. O serviço de áudio usa a categoria de fluxo para determinar políticas de áudio quando vários aplicativos tocam áudio ao mesmo tempo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,9 +42,9 @@ O valor do atributo é um membro da enumeração de [**\_ \_ categoria de fluxo 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ O valor do atributo é um membro da enumeração de [**\_ \_ categoria de fluxo 
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

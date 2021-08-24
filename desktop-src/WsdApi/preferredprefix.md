@@ -1,19 +1,19 @@
 ---
-description: Define o prefixo ao qual o namespace deve ser mapeado para tornar o XML mais legível.
+description: Define o prefixo para o qual o namespace deve ser mapeado para tornar o XML mais acessível.
 ms.assetid: 955f4785-5657-4a89-9728-bce99a0a4234
-title: elemento preferredPrefix
+title: Elemento preferredPrefix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98fa0310872a43811ceb626ae0684fa45a2f6666
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 934e82caf0558ff3ffc1079d3773453673bcbe916a518f6196670f37744fdf8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756866"
 ---
-# <a name="preferredprefix-element"></a>elemento preferredPrefix
+# <a name="preferredprefix-element"></a>Elemento preferredPrefix
 
-Define o prefixo ao qual o namespace deve ser mapeado para tornar o XML mais legível.
+Define o prefixo para o qual o namespace deve ser mapeado para tornar o XML mais acessível.
 
 ## <a name="usage"></a>Uso
 
@@ -35,13 +35,13 @@ Não há elementos filho.
 
 | Elemento                                   | Descrição                                                        |
 |-------------------------------------------|--------------------------------------------------------------------|
-| [**nameSpace**](namespace.md)<br/> | Um namespace a ser usado para geração de código.<br/> <br/> |
+| [**Namespace**](namespace.md)<br/> | Um namespace a ser usado para geração de código.<br/> <br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento substitui o prefixo de URI padrão usado para o código gerado. Por exemplo, um namespace relacionado à mídia pode ter o prefixo preferencial "AV" (para áudio/visual).
+Esse elemento substitui o prefixo de URI padrão usado para o código gerado. Por exemplo, um namespace relacionado à mídia pode ter o prefixo preferencial "av" (para áudio/visual).
 
 Por padrão, o código gerado cria um prefixo preferencial do URI.
 
@@ -49,7 +49,7 @@ Por padrão, o código gerado cria um prefixo preferencial do URI.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_SharedPC
-description: A \_ classe MDM SharedPC é usada para definir configurações para uso compartilhado de computador.
+title: MDM_SharedPC classe
+description: A classe SharedPC do MDM \_ é usada para definir configurações para uso compartilhado do computador.
 ms.assetid: 90985c4d-601e-4827-aee0-13524a69f759
 keywords:
-- Classe MDM_SharedPC
-- Classe MDM_SharedPC, descrita
+- MDM_SharedPC classe
+- MDM_SharedPC classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c7b515e4b794e2048ab26c8e1a32bfe7d3c4b50
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31d4888e0d8129584e79124079e93459bc6d9f963fe026704f52b34de05b755e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693456"
 ---
-# <a name="mdm_sharedpc-class"></a>\_Classe SharedPC do MDM
+# <a name="mdm_sharedpc-class"></a>Classe SharedPC MDM \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe MDM SharedPC é usada para definir configurações para uso compartilhado de computador.
+A classe SharedPC do MDM \_ é usada para definir configurações para uso compartilhado do computador.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -61,13 +61,13 @@ class MDM_SharedPC
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ SharedPC** tem estes tipos de membros:
+A **classe \_ SharedPC MDM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ SharedPC** tem essas propriedades.
+A **classe \_ SharedPC MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -77,10 +77,10 @@ A classe **MDM \_ SharedPC** tem essas propriedades.
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -90,10 +90,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -103,10 +103,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -116,36 +116,36 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
 [EnableAccountManager](/windows/client-management/mdm/sharedpc-csp#enableaccountmanager)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
 [EnableSharedPCMode](/windows/client-management/mdm/sharedpc-csp#enablesharedpcmode)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -155,10 +155,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -182,10 +182,10 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -195,10 +195,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -208,10 +208,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -221,14 +221,14 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -245,52 +245,52 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 [RestrictLocalStorage](/windows/client-management/mdm/sharedpc-csp#restrictlocalstorage)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
 [SetEduPolicies](/windows/client-management/mdm/sharedpc-csp#setedupolicies)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
 [SetPowerPolicies](/windows/client-management/mdm/sharedpc-csp#setpowerpolicies)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
 [SignInOnResume](/windows/client-management/mdm/sharedpc-csp#signinonresume)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> <dt>
 
@@ -300,10 +300,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-management/mdm/sharedpc-csp).
+Para obter informações adicionais, consulte [SharedPC CSP](/windows/client-management/mdm/sharedpc-csp).
 
 </dd> </dl>
 
@@ -313,10 +313,10 @@ Para obter informações adicionais, consulte [CSP do SharedPC](/windows/client-
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 

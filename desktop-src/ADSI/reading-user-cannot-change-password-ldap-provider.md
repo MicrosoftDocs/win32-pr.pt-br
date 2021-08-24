@@ -9,12 +9,12 @@ keywords:
 - ADSI do provedor LDAP, exemplos de gerenciamento de usuário, o usuário deve alterar a senha no próximo logon, lendo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b26818ee02d3876aa209dcd4990288ea1cfe96fc
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 4ebbccc3147ffb1e29c0081d6e19ef1a615b7020cdc7e246fea294df7d2d38c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637576"
 ---
 # <a name="reading-user-cannot-change-password-ldap-provider"></a>A leitura do usuário não pode alterar a senha (provedor LDAP)
 
@@ -417,7 +417,7 @@ HRESULT UserCannotChangePassword(LPCWSTR pwszUserDN,
 O exemplo de código a seguir mostra como determinar se o usuário não pode alterar a permissão de senha usando o provedor LDAP.
 
 > [!Note]  
-> O exemplo de código a seguir só funciona para domínios em que o idioma principal é o inglês, porque as cadeias de caracteres "todos" e "auto-Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. Não há nenhuma maneira de Visual Basic obter os nomes de conta para uma entidade de segurança conhecida sem chamar a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . Se estiver usando Visual Basic, é recomendável que você use o provedor WinNT para determinar se a permissão usuário não pode alterar senha, conforme mostrado em [lendo o usuário não pode alterar a senha (provedor winnt)](reading-user-cannot-change-password-winnt-provider.md).
+> O exemplo de código a seguir só funciona para domínios em que o idioma principal é o inglês, porque as cadeias de caracteres "todos" e "auto-Autoridade NT \\ " são localizadas com base no idioma do primeiro controlador de domínio no domínio. não há nenhuma maneira de Visual Basic obter os nomes de conta para uma entidade de segurança conhecida sem chamar a função [**LookupAccountSid**](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida) . se estiver usando Visual Basic, é recomendável que você use o provedor WinNT para determinar se a permissão usuário não pode alterar senha, conforme mostrado em [lendo o usuário não pode alterar a senha (provedor WinNT)](reading-user-cannot-change-password-winnt-provider.md).
 
  
 

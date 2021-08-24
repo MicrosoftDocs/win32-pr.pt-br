@@ -5,12 +5,12 @@ ms.assetid: 26a72de1-24bc-41e6-8d41-61d45f581e51
 title: Glossário do COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b5a6cb30529cd8b97b8cf11316347d68003e32c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: eda1c62c8edee1e15df33b63a9d4894639dd9e5637ed3e87a747d724f9e9040e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119638716"
 ---
 # <a name="com-glossary"></a>Glossário do COM+
 
@@ -362,7 +362,7 @@ Um processo que tem um apartamento multithread e nenhum Apartments de thread ún
 <span id="cos.global_commit_coordinator_gloss"></span><span id="COS.GLOBAL_COMMIT_COORDINATOR_GLOSS"></span>**Coordenador de confirmação global**
 </dt> <dd>
 
-Em um sistema de transações distribuídas baseado no Microsoft Windows, o Gerenciador de transações raiz da árvore de confirmação. Esse coordenador toma a decisão de confirmar ou anular uma determinada transação e nunca é duvidoso.
+em um sistema de transações distribuídas baseado no Microsoft Windows, o gerenciador de transações raiz da árvore de confirmação. Esse coordenador toma a decisão de confirmar ou anular uma determinada transação e nunca é duvidoso.
 
 </dd> <dt>
 
@@ -499,10 +499,10 @@ Um nome que identifica exclusivamente um objeto COM. Da mesma forma que um camin
 
 </dd> <dt>
 
-<span id="cos.msi_file_gloss"></span><span id="COS.MSI_FILE_GLOSS"></span>**arquivo. msi**
+<span id="cos.msi_file_gloss"></span><span id="COS.MSI_FILE_GLOSS"></span>**Arquivo de.msi**
 </dt> <dd>
 
-Um arquivo criado pela ferramenta administrativa serviços de componentes quando você exporta um aplicativo COM+ ou proxy de aplicativo para instalação em outro computador. O arquivo. msi pode ser instalado em qualquer cliente baseado no Windows usando Windows Installer.
+Um arquivo criado pela ferramenta administrativa serviços de componentes quando você exporta um aplicativo COM+ ou proxy de aplicativo para instalação em outro computador. o arquivo de .msi pode ser instalado em qualquer cliente baseado em Windows usando Windows Installer.
 
 </dd> <dt>
 
@@ -663,7 +663,7 @@ Um objeto de kernel usado para arbitrar o acesso a um recurso compartilhado.
 <span id="cos.service_control_manager_gloss"></span><span id="COS.SERVICE_CONTROL_MANAGER_GLOSS"></span>**SCM (Gerenciador de controle de serviço)**
 </dt> <dd>
 
-Um processo do Microsoft Windows Server que gerencia todos os serviços no registro do Windows.
+um processo do Microsoft Windows server que gerencia todos os serviços no registro de Windows.
 
 </dd> <dt>
 
@@ -691,7 +691,7 @@ Um protocolo simples baseado em XML para a troca de informações estruturadas e
 <span id="cos.split_registration_gloss"></span><span id="COS.SPLIT_REGISTRATION_GLOSS"></span>**dividir registro**
 </dt> <dd>
 
-Para componentes que já são componentes COM e são usados no ambiente de serviços COM+, a disposição de registro na qual o aspecto básico de COM do registro é armazenado no registro do Windows e novos serviços e atributos COM+ (por exemplo, componentes na fila) são armazenados no banco de dados de registro do COM+. Cada atributo de componente é armazenado no registro do Windows ou no banco de dados de registro do COM+. Os novos componentes COM são registrados exclusivamente no banco de dados de registro do COM+, com alguma duplicação no registro do Windows para que as ferramentas existentes possam usá-los.
+para componentes que já são componentes COM e são usados no ambiente de serviços COM+, a disposição de registro na qual o aspecto básico de com do registro é armazenado no registro de Windows e novos serviços e atributos COM+ (por exemplo, componentes na fila) são armazenados no banco de dados de registro do com+. cada atributo de componente é armazenado no registro de Windows ou no banco de dados de registro do COM+. os novos componentes COM são registrados exclusivamente no banco de dados de registro do COM+, com alguma duplicação no registro de Windows para que as ferramentas existentes possam usá-los.
 
 </dd> <dt>
 
@@ -719,112 +719,112 @@ Uma forma de encobrir onde a identidade do cliente original pode ser apresentada
 <span id="cos.subscriber_gloss"></span><span id="COS.SUBSCRIBER_GLOSS"></span>**farão**
 </dt> <dd>
 
-O destinatário de um evento. Na arquitetura de eventos COM+, o assinante recebe as chamadas feitas pelo Publicador.
+O receptor de um evento. Na arquitetura de Eventos COM+, o assinante recebe as chamadas feitas pelo editor.
 
 </dd> <dt>
 
-<span id="cos.subscription_object_gloss"></span><span id="COS.SUBSCRIPTION_OBJECT_GLOSS"></span>**objeto de assinatura**
+<span id="cos.subscription_object_gloss"></span><span id="COS.SUBSCRIPTION_OBJECT_GLOSS"></span>**objeto subscription**
 </dt> <dd>
 
-No sistema de eventos COM+, um objeto criado por um assinante para solicitar e gerenciar a entrega de eventos.
+No sistema eventos COM+, um objeto criado por um assinante para solicitar e gerenciar a entrega de eventos.
 
 </dd> <dt>
 
-<span id="cos.synchronization_gloss"></span><span id="COS.SYNCHRONIZATION_GLOSS"></span>**sincronização**
+<span id="cos.synchronization_gloss"></span><span id="COS.SYNCHRONIZATION_GLOSS"></span>**Sincronização**
 </dt> <dd>
 
-No COM+, um serviço que flui de componente para componente e proíbe que mais de um chamador insira o componente em um determinado momento. A sincronização determina quando os threads podem distribuir chamadas para um objeto.
+No COM+, um serviço que flui do componente para o componente e proíbe que mais de um chamador entre no componente a qualquer momento. A sincronização determina quando os threads podem expedir chamadas para um objeto .
 
 </dd> <dt>
 
 <span id="cos.three_tier_architectural_model_gloss"></span><span id="COS.THREE_TIER_ARCHITECTURAL_MODEL_GLOSS"></span>**modelo de arquitetura de três camadas**
 </dt> <dd>
 
-A estrutura fundamental para o modelo de design lógico, segmenta os componentes de um aplicativo em três camadas de serviços da seguinte maneira: a camada de apresentação ou os serviços de usuário; a camada intermediária ou os serviços corporativos; e a camada de dados ou serviços de dados. Essas camadas não correspondem necessariamente a locais físicos em vários computadores em uma rede, mas sim a camadas lógicas do aplicativo.
+A estrutura fundamental para o modelo de design lógico segmenta os componentes de um aplicativo em três camadas de serviços da seguinte maneira: a camada de apresentação ou os serviços de usuário; a camada intermediária ou os serviços de negócios; e a camada de dados ou serviços de dados. Essas camadas não correspondem necessariamente a locais físicos em vários computadores em uma rede, mas sim a camadas lógicas do aplicativo.
 
 </dd> <dt>
 
-<span id="cos.tightly_couple_event_gloss"></span><span id="COS.TIGHTLY_COUPLE_EVENT_GLOSS"></span>**evento rigidamente acoplado**
+<span id="cos.tightly_couple_event_gloss"></span><span id="COS.TIGHTLY_COUPLE_EVENT_GLOSS"></span>**evento firmemente a coupleado**
 </dt> <dd>
 
-Um evento cujo remetente (Publicador) e destinatário (assinante) estão ligados de forma rigorosa. Em um sistema de eventos rigidamente acoplado, o Publicador é fornecido com uma interface na qual chamar um método quando ocorre uma alteração. O assinante sabe para qual editor solicitar notificação e as interfaces que são expostas. Um sistema de eventos firmemente acoplado requer que o Publicador e o assinante estejam em execução o tempo todo.
+Um evento cujo remetente (publicador) e receptor (assinante) estão intimamente vinculados. Em um sistema de eventos firmemente a coupleado, o editor é fornecido com uma interface na qual chamar um método quando ocorre uma alteração. O assinante sabe de qual editor solicitar notificação e as interfaces que são expostas. Um sistema de eventos firmemente a coupleado requer que o publicador e o assinante sejam executados em todos os momentos.
 
 </dd> <dt>
 
 <span id="cos.trace_log_gloss"></span><span id="COS.TRACE_LOG_GLOSS"></span>**log de rastreamento**
 </dt> <dd>
 
-Um arquivo de log gerado automaticamente pelo Microsoft Coordenador de Transações Distribuídas que mostra os dados relacionados a uma ou mais transações distribuídas. Exemplos de dados em um log de rastreamento são ID da transação, tempo da transação e mensagens que indicam o resultado da transação.
+Um arquivo de log gerado automaticamente pelo Coordenador de Transações Distribuídas da Microsoft que mostra dados relacionados a uma ou mais transações distribuídas. Exemplos de dados em um log de rastreamento são a ID da transação, o tempo de transação e as mensagens que indicam o resultado da transação.
 
 </dd> <dt>
 
-<span id="cos.transaction_gloss"></span><span id="COS.TRANSACTION_GLOSS"></span>**aciona**
+<span id="cos.transaction_gloss"></span><span id="COS.TRANSACTION_GLOSS"></span>**Transação**
 </dt> <dd>
 
-Uma unidade de trabalho na qual uma série de operações relacionadas ocorre durante um processo de aplicativo. Uma transação é executada exatamente uma vez e é atômica – qualquer trabalho é feito ou nenhum deles é.
+Uma unidade de trabalho na qual uma série de operações relacionadas ocorre durante um processo de aplicativo. Uma transação é executada exatamente uma vez e é atômica– todo o trabalho é feito ou nenhum deles é feito.
 
 </dd> <dt>
 
-<span id="cos.transaction_internet_protocol_gloss"></span><span id="COS.TRANSACTION_INTERNET_PROTOCOL_GLOSS"></span>**Protocolo TIP (Transaction Internet Protocol)**
+<span id="cos.transaction_internet_protocol_gloss"></span><span id="COS.TRANSACTION_INTERNET_PROTOCOL_GLOSS"></span>**TIP (Transaction Internet Protocol)**
 </dt> <dd>
 
-O protocolo de Internet de transação é um protocolo de confirmação padrão de duas fases que permite que os gerenciadores de transações heterogêneas coordenem transações distribuídas, especialmente pela Internet. O protocolo TIP de confirmação de duas fases é simples de implementar e é independente do protocolo de comunicação entre aplicativos, de modo que ele possa ser usado com qualquer protocolo de aplicativo, mas especialmente HTTP.
+O Transaction Internet Protocol é um protocolo de confirmação de duas fases padrão que permite que os gerenciadores de transações heterogêneas coordenem transações distribuídas, especialmente pela Internet. O protocolo de confirmação de duas fases TIP é simples de implementar e é independente do protocolo de comunicação de aplicativo para aplicativo, de forma que ele possa ser usado com qualquer protocolo de aplicativo, mas especialmente HTTP.
 
 </dd> <dt>
 
-<span id="cos.transaction_manager_gloss"></span><span id="COS.TRANSACTION_MANAGER_GLOSS"></span>**Gerenciador de transações**
+<span id="cos.transaction_manager_gloss"></span><span id="COS.TRANSACTION_MANAGER_GLOSS"></span>**gerenciador de transações**
 </dt> <dd>
 
-A parte do Microsoft Coordenador de Transações Distribuídas (DTC) que é executada em cada computador que participa de uma transação distribuída e gerencia as atividades relacionadas à confirmação ou anulação dessa parte da transação.
+A parte do DTC (Coordenador de Transações Distribuídas da Microsoft) que é executada em cada computador que participa de uma transação distribuída e gerencia as atividades relacionadas à confirmação ou anulação dessa parte da transação.
 
 </dd> <dt>
 
 <span id="cos.transaction_processing_application_gloss"></span><span id="COS.TRANSACTION_PROCESSING_APPLICATION_GLOSS"></span>**aplicativo de processamento de transações**
 </dt> <dd>
 
-Uma coleção de operações de transação que automatiza uma determinada tarefa de negócios.
+Uma coleção de operações de transação que automatizam uma determinada tarefa de negócios.
 
 </dd> <dt>
 
 <span id="cos.transaction_processing_system_gloss"></span><span id="COS.TRANSACTION_PROCESSING_SYSTEM_GLOSS"></span>**sistema de processamento de transações**
 </dt> <dd>
 
-Um sistema completo, composto por hardware e software do computador, que hospeda um aplicativo de processamento de transações para executar transações rotineiras necessárias para realizar negócios.
+Um sistema completo, composto por hardware e software do computador, que hospeda um aplicativo de processamento de transações para executar transações de rotina necessárias para realizar negócios.
 
 </dd> <dt>
 
-<span id="cos.two_phase_commit_protocol_gloss"></span><span id="COS.TWO_PHASE_COMMIT_PROTOCOL_GLOSS"></span>**Protocolo de confirmação de duas fases**
+<span id="cos.two_phase_commit_protocol_gloss"></span><span id="COS.TWO_PHASE_COMMIT_PROTOCOL_GLOSS"></span>**protocolo de commit em duas fases**
 </dt> <dd>
 
-Um protocolo usado somente em transações distribuídas, garante que o resultado de uma transação seja consistente em todos os gerenciadores de transações que participam da transação. O protocolo opera em duas fases distintas para, por fim, confirmar ou anular uma transação: a fase 1 avalia a condição de cada Gerenciador de recursos e a fase dois conclui a transação.
+Um protocolo usado somente em transações distribuídas garante que o resultado de uma transação seja consistente em todos os gerenciadores de transações que participam da transação. O protocolo opera em duas fases distintas para, em última análise, fazer commit ou anular uma transação: a fase um avalia a condição de cada gerenciador de recursos e a fase dois conclui a transação.
 
 </dd> <dt>
 
 <span id="cos.unconfigured_component_gloss"></span><span id="COS.UNCONFIGURED_COMPONENT_GLOSS"></span>**componente não configurado**
 </dt> <dd>
 
-Um componente COM que não foi configurado no catálogo COM+. Os componentes não configurados não podem fazer uso de serviços COM+.
+Um componente COM que não foi configurado no catálogo COM+. Componentes não configurados não podem usar serviços COM+.
 
 </dd> <dt>
 
-<span id="cos.whereabouts_gloss"></span><span id="COS.WHEREABOUTS_GLOSS"></span>**localização**
+<span id="cos.whereabouts_gloss"></span><span id="COS.WHEREABOUTS_GLOSS"></span>**Paradeiro**
 </dt> <dd>
 
-Para transações do DTC, uma estrutura de dados opaca que representa o endereço do Gerenciador de transações do Gerenciador de recursos.
+Para transações DTC, uma estrutura de dados opaca que representa o endereço do gerenciador de transações do gerenciador de recursos.
 
 </dd> <dt>
 
 <span id="cos.xa_interfaces_gloss"></span><span id="COS.XA_INTERFACES_GLOSS"></span>**Interfaces XA**
 </dt> <dd>
 
-Um conjunto padrão de interfaces de programação que permite que os desenvolvedores de aplicativos COM+ acessem bancos de dados compatíveis com XA e criem gerenciadores de recursos que operam com bancos de dados relacionais, Enfileiramento de mensagens, arquivos transacionais e bancos de dados orientados a objeto. Embora a Microsoft não ofereça suporte direto ao protocolo XA, a Microsoft oferece suporte a recursos de conversão entre transações OLE e XA.
+Um conjunto padrão de interfaces de programação que permitem que os desenvolvedores de aplicativos COM+ acessem bancos de dados compatíveis com XA e criem gerenciadores de recursos que operam com bancos de dados relacionais, enxuamento de mensagens, arquivos transacionais e bancos de dados orientados a objeto. Embora a Microsoft não dá suporte direto ao protocolo XA, a Microsoft dá suporte a recursos de tradução entre transações OLE e XA.
 
 </dd> <dt>
 
 <span id="cos.xml_web_services_gloss"></span><span id="COS.XML_WEB_SERVICES_GLOSS"></span>**Serviços Web XML**
 </dt> <dd>
 
-Unidades de lógica do aplicativo que fornecem dados e serviços para outros aplicativos. Os aplicativos acessam serviços Web XML por meio de protocolos Web padrão, como SOAP.
+Unidades de lógica do aplicativo que fornece dados e serviços para outros aplicativos. Os aplicativos acessam serviços Web XML por meio de protocolos Web padrão, como SOAP.
 
 </dd> </dl>
 

@@ -1,17 +1,17 @@
 ---
 description: Identifica se um local ou uma biblioteca é somente pesquisa.
 ms.assetid: a731ff53-65c2-4d31-adae-861e1fde26a2
-title: System. IsSearchOnlyItem
+title: System.IsSearchOnlyItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38e4aefe6002920565d980a0a7b36db9e8b49d5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df09ec69243592aa7170f4114bfc3119af1c1a7e0eeee55ba47d9e0c4fae81e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105793646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119716525"
 ---
-# <a name="systemissearchonlyitem"></a>System. IsSearchOnlyItem
+# <a name="systemissearchonlyitem"></a>System.IsSearchOnlyItem
 
 Identifica se um local ou uma biblioteca é somente pesquisa.
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

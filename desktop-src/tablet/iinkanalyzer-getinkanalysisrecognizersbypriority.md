@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: d596a8138f8ab16852ce99116eef66372ff2b074
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc663385006eedaca163f529af1f9f8a2da2eb5d3d41db823ffb53ee91775b93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713406"
 ---
 # <a name="iinkanalyzergetinkanalysisrecognizersbypriority-method"></a>Método IInkAnalyzer:: GetInkAnalysisRecognizersByPriority
 
@@ -46,7 +46,7 @@ Uma coleção ordenada de objetos [**IInkAnalysisRecognizer**](iinkanalysisrecog
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
 
@@ -67,9 +67,9 @@ Se mais de um [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md) der suport
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

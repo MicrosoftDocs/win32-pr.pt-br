@@ -21,12 +21,12 @@ keywords:
 - macro capSetCallbackOnYield
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9edf96a6ff5b359acb6ef6d6a302b798742ffb8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1ee000f03df5bb23ed46f3692ded692630c85a292dfe3dccfcd24a8867849d5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119691956"
 ---
 # <a name="avicap-callback-functions"></a>Funções de retorno de chamada AVICap
 
@@ -46,13 +46,13 @@ Seu aplicativo pode registrar funções de retorno de chamada com uma janela de 
 
 
 
- 
+ 
 
 Os tópicos a seguir descrevem as diferentes funções de retorno de chamada, as notificações enviadas para as funções e seus usos.
 
- 
+ 
 
- 
+ 
 
 
 

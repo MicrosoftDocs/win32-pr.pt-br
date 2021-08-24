@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfe5510221b738a81f428f9e982a2f9bb2c23588
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 52dcb6c34d0ce48f646ace1db8a5dc0f773b7eb386ac487534a57367e6e72da3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777736"
 ---
 # <a name="gltexsubimage1d-function"></a>função glTexSubImage1D
 
@@ -146,15 +146,15 @@ O texels referenciado por *pixels* substitui uma região da matriz de textura ex
 
 A especificação de uma subimagem com uma *largura* igual a zero não tem nenhum efeito e não gera um erro.
 
-Texturing não tem efeito no modo de índice de cor.
+A texturing não tem efeito no modo de índice de cores.
 
-Em geral, as imagens de textura podem ser representadas pelos mesmos formatos de dados que os pixels em um comando [**glDrawPixels**](gldrawpixels.md) , exceto que o \_ índice de estêncil GL e o componente de \_ \_ profundidade GL \_ não podem ser usados. Os modos [**glPixelStore**](glpixelstore-functions.md) e [**glPixelTransfer**](glpixeltransfer.md) afetam as imagens de textura exatamente como elas afetam o **glDrawPixels**.
+Em geral, as imagens de textura podem ser representadas pelos mesmos formatos de dados que os pixels em um [**comando glDrawPixels,**](gldrawpixels.md) exceto que GL STENCIL INDEX e GL DEPTH COMPONENT não podem \_ \_ ser \_ \_ usados. Os [**modos glPixelStore**](glpixelstore-functions.md) e [**glPixelTransfer**](glpixeltransfer.md) afetam as imagens de textura exatamente da maneira como afetam **glDrawPixels**.
 
-As funções a seguir recuperam informações relacionadas ao **glTexSubImage1D**:
+As seguintes funções recuperam informações relacionadas **a glTexSubImage1D:**
 
 [**glGetTexImage**](glgetteximage.md)
 
-[**glIsEnabled**](glisenabled.md) com a textura do argumento GL \_ \_ 1D
+[**glIsEnabled com**](glisenabled.md) o argumento GL \_ TEXTURE \_ 1D
 
 ## <a name="requirements"></a>Requisitos
 
@@ -164,8 +164,8 @@ As funções a seguir recuperam informações relacionadas ao **glTexSubImage1D*
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

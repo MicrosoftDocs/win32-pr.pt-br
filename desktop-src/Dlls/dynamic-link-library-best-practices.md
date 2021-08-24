@@ -4,12 +4,12 @@ ms.assetid: 44EFC4B5-7A2F-43A6-914E-D4EB7446AC35
 title: Práticas recomendadas da biblioteca de Dynamic-Link
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88aba0999f3d0825c6d2f4df3afe09d766a82232
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95d02314b15a13de7658c0b87ba7cd998f48a0a3d9f2f2682b36539bd9f5bde3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696568"
 ---
 # <a name="dynamic-link-library-best-practices"></a>Práticas recomendadas da biblioteca de Dynamic-Link
 
@@ -31,9 +31,9 @@ A sincronização incorreta no [**DllMain**](dllmain.md) pode fazer com que um a
 
 ## <a name="general-best-practices"></a>Melhores práticas gerais
 
-[**DllMain**](dllmain.md) é chamado enquanto o carregador de bloqueio é mantido. Portanto, as restrições significativas são impostas nas funções que podem ser chamadas dentro de **DllMain**. Assim, o **DllMain** foi projetado para executar tarefas de inicialização mínimas, usando um pequeno subconjunto da API do Microsoft® Windows®. Você não pode chamar nenhuma função em **DllMain** que tente adquirir o carregador de carregado direta ou indiretamente. Caso contrário, você apresentará a possibilidade de o aplicativo travar ou falhar. Um erro em uma implementação **DllMain** pode comprometer o processo inteiro e todos os seus threads.
+[**DllMain**](dllmain.md) é chamado enquanto o carregador de bloqueio é mantido. Portanto, as restrições significativas são impostas nas funções que podem ser chamadas dentro de **DllMain**. assim, o **DllMain** foi projetado para executar tarefas de inicialização mínimas, usando um pequeno subconjunto da API de® do Microsoft® Windows. Você não pode chamar nenhuma função em **DllMain** que tente adquirir o carregador de carregado direta ou indiretamente. Caso contrário, você apresentará a possibilidade de o aplicativo travar ou falhar. Um erro em uma implementação **DllMain** pode comprometer o processo inteiro e todos os seus threads.
 
-O [**DllMain**](dllmain.md) ideal seria apenas um stub vazio. No entanto, considerando a complexidade de muitos aplicativos, isso geralmente é muito restritivo. Uma boa regra geral para **DllMain** é adiar o máximo de inicialização possível. A inicialização lenta aumenta a robustez do aplicativo porque essa inicialização não é executada enquanto o bloqueio do carregador é mantido. Além disso, a inicialização lenta permite que você use com segurança muito mais da API do Windows.
+O [**DllMain**](dllmain.md) ideal seria apenas um stub vazio. No entanto, considerando a complexidade de muitos aplicativos, isso geralmente é muito restritivo. Uma boa regra geral para **DllMain** é adiar o máximo de inicialização possível. A inicialização lenta aumenta a robustez do aplicativo porque essa inicialização não é executada enquanto o bloqueio do carregador é mantido. além disso, a inicialização lenta permite que você use com segurança muito mais da API Windows.
 
 Algumas tarefas de inicialização não podem ser adiadas. Por exemplo, uma DLL que depende de um arquivo de configuração deve falhar ao ser carregada se o arquivo estiver malformado ou contiver lixo. Para esse tipo de inicialização, a DLL deve tentar a ação e falhar rapidamente, em vez de desperdiçar recursos, concluindo outro trabalho.
 
@@ -48,7 +48,7 @@ Você nunca deve executar as seguintes tarefas em [**DllMain**](dllmain.md):
 -   Chame [**CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa). A criação de um processo pode carregar outra DLL.
 -   Chame [**ExitThread**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibraryandexitthread). A saída de um thread durante a desanexação da DLL pode fazer com que o bloqueio do carregador seja adquirido novamente, causando um deadlock ou uma falha.
 -   Chame [**CreateThread**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread). Criar um thread pode funcionar se você não sincronizar com outros threads, mas for arriscado.
--   Crie um pipe nomeado ou outro objeto nomeado (somente Windows 2000). No Windows 2000, os objetos nomeados são fornecidos pela DLL de serviços de terminal. Se essa DLL não for inicializada, as chamadas para a DLL poderão fazer com que o processo falhe.
+-   crie um pipe nomeado ou outro objeto nomeado (somente Windows 2000). no Windows 2000, os objetos nomeados são fornecidos pela DLL de serviços de Terminal. Se essa DLL não for inicializada, as chamadas para a DLL poderão fazer com que o processo falhe.
 -   Use a função de gerenciamento de memória do C Run-Time dinâmico (CRT). Se a DLL do CRT não for inicializada, as chamadas para essas funções poderão causar falha no processo.
 -   Chame funções em User32.dll ou Gdi32.dll. Algumas funções carregam outra DLL, que pode não ser inicializada.
 -   Use código gerenciado.
@@ -61,7 +61,7 @@ As seguintes tarefas são seguras para serem executadas no **DllMain**:
 -   Configurar o armazenamento local de threads (TLS).
 -   Abra, leia de e grave em arquivos.
 -   Chame funções em Kernel32.dll (exceto as funções listadas acima).
--   Definir ponteiros globais como nulos, colocando a inicialização de membros dinâmicos. No Microsoft Windows Vista™, você pode usar as funções de inicialização única para garantir que um bloco de código seja executado apenas uma vez em um ambiente multithread.
+-   Definir ponteiros globais como nulos, colocando a inicialização de membros dinâmicos. no Microsoft Windows Vista™, você pode usar as funções de inicialização única para garantir que um bloco de código seja executado apenas uma vez em um ambiente multithread.
 
 ## <a name="deadlocks-caused-by-lock-order-inversion"></a>Deadlocks causados pela inversão da ordem de bloqueio
 
@@ -82,7 +82,7 @@ Considere uma DLL que cria threads de trabalho como parte de sua inicialização
 Sincronização de threads no [**DllMain**](dllmain.md) durante a saída do processo
 
 -   No momento em que [**DllMain**](dllmain.md) é chamado na saída do processo, todos os threads do processo foram limpos forçosamente e há uma chance de que o espaço de endereço seja inconsistente. A sincronização não é necessária nesse caso. Em outras palavras, o manipulador de \_ desanexação de processo dll ideal \_ está vazio.
--   O Windows Vista garante que as estruturas de dados principais (variáveis de ambiente, diretório atual, heap de processo e assim por diante) estejam em um estado consistente. No entanto, outras estruturas de dados podem ser corrompidas, portanto a memória de limpeza não é segura.
+-   Windows O vista garante que as estruturas de dados principais (variáveis de ambiente, diretório atual, heap de processo e assim por diante) estejam em um estado consistente. No entanto, outras estruturas de dados podem ser corrompidas, portanto a memória de limpeza não é segura.
 -   O estado persistente que precisa ser salvo deve ser liberado para o armazenamento permanente.
 
 Sincronização de threads em **DllMain** para \_ desanexar thread de dll \_ durante o descarregamento de dll

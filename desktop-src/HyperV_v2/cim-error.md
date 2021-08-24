@@ -1,7 +1,7 @@
 ---
-description: A \_ classe de erro CIM contém informações sobre a falha de uma operação CIM.
+description: A classe De erro CIM \_ contém informações sobre a falha de uma operação CIM.
 ms.assetid: 35acecbd-b972-45b4-9616-2047bba8fd41
-title: Classe CIM_Error
+title: CIM_Error classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -28,16 +28,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 59ae2527478235c14a8f856319178afe00c02a98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c7e7fba10cb507e1288344637c944bb56d62dc4c9eaaf909a980ceaf3250440
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695966"
 ---
-# <a name="cim_error-class"></a>\_Classe de erro CIM
+# <a name="cim_error-class"></a>Classe de erro CIM \_
 
-A classe de **\_ erro CIM** contém informações sobre a falha de uma operação CIM.
+A **classe De \_ erro CIM** contém informações sobre a falha de uma operação CIM.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,35 +65,35 @@ class CIM_Error
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ erro CIM** tem estes tipos de membros:
+A **classe De \_ erro CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ erro CIM** tem essas propriedades.
+A **classe \_ erro CIM** tem essas propriedades.
 
 <dl> <dt>
 
 **CIMStatusCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DSP0201. erro de DMTF \| . CÓDIGO \| 2,3 "," DSP0200. DMTF \| CIMError \| 1,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro CIM**.**CIMStatusCodeDescription**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DSP0201. ERRO DE \| DMTF. CODE \| 2.3", "DSP0200. DMTF \| CIMError \| 1.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**CIMStatusCodeDescription**")
 </dt> </dl>
 
-O código de status CIM que caracteriza essa instância. Essa propriedade define os códigos de status que podem ser retornados por um servidor CIM ou um ouvinte.
+O código de status CIM que caracteriza essa instância. Essa propriedade define os códigos de status que podem ser retornadas por um servidor CIM ou ouvinte.
 
 <dt>
 
 <span id="CIM_ERR_FAILED"></span><span id="cim_err_failed"></span>
 
-<span id="CIM_ERR_FAILED"></span><span id="cim_err_failed"></span>**CIM \_ \_Falha de erro** (1)
+<span id="CIM_ERR_FAILED"></span><span id="cim_err_failed"></span>**CIM \_ ERR \_ FAILED** (1)
 
 
 </dt> <dd>
@@ -104,7 +104,7 @@ Ocorreu um erro geral que não é coberto por um código de erro mais específic
 
 <span id="CIM_ERR_ACCESS_DENIED"></span><span id="cim_err_access_denied"></span>
 
-<span id="CIM_ERR_ACCESS_DENIED"></span><span id="cim_err_access_denied"></span>**CIM \_ ERRO de \_ acesso \_ negado** (2)
+<span id="CIM_ERR_ACCESS_DENIED"></span><span id="cim_err_access_denied"></span>**CIM \_ ERR \_ ACCESS \_ NEGADO** (2)
 
 
 </dt> <dd>
@@ -115,7 +115,7 @@ O acesso a um recurso CIM não estava disponível para o cliente.
 
 <span id="CIM_ERR_INVALID_NAMESPACE"></span><span id="cim_err_invalid_namespace"></span>
 
-<span id="CIM_ERR_INVALID_NAMESPACE"></span><span id="cim_err_invalid_namespace"></span>**CIM \_ ERRO \_ de \_ namespace inválido** (3)
+<span id="CIM_ERR_INVALID_NAMESPACE"></span><span id="cim_err_invalid_namespace"></span>**CIM \_ ERR \_ \_ NAMESPACE INVÁLIDO** (3)
 
 
 </dt> <dd>
@@ -126,7 +126,7 @@ O namespace de destino não existe.
 
 <span id="CIM_ERR_INVALID_PARAMETER"></span><span id="cim_err_invalid_parameter"></span>
 
-<span id="CIM_ERR_INVALID_PARAMETER"></span><span id="cim_err_invalid_parameter"></span>**CIM \_ ERRO \_ de \_ parâmetro inválido** (4)
+<span id="CIM_ERR_INVALID_PARAMETER"></span><span id="cim_err_invalid_parameter"></span>**CIM \_ PARÂMETRO \_ INVÁLIDO \_ ERR** (4)
 
 
 </dt> <dd>
@@ -137,29 +137,29 @@ Um ou mais valores de parâmetro passados para o método eram inválidos.
 
 <span id="CIM_ERR_INVALID_CLASS"></span><span id="cim_err_invalid_class"></span>
 
-<span id="CIM_ERR_INVALID_CLASS"></span><span id="cim_err_invalid_class"></span>**CIM \_ \_ \_ Classe inválida de Err** (5)
+<span id="CIM_ERR_INVALID_CLASS"></span><span id="cim_err_invalid_class"></span>**CIM \_ CLASSE \_ ERR \_ INVÁLIDA** (5)
 
 
 </dt> <dd>
 
-A classe especificada não existe.
+A Classe especificada não existe.
 
 </dd> <dt>
 
 <span id="CIM_ERR_NOT_FOUND"></span><span id="cim_err_not_found"></span>
 
-<span id="CIM_ERR_NOT_FOUND"></span><span id="cim_err_not_found"></span>**CIM \_ ERRO \_ não \_ encontrado** (6)
+<span id="CIM_ERR_NOT_FOUND"></span><span id="cim_err_not_found"></span>**CIM \_ ERR \_ NOT \_ FOUND** (6)
 
 
 </dt> <dd>
 
-O objeto solicitado não pôde ser encontrado.
+Não foi possível encontrar o objeto solicitado.
 
 </dd> <dt>
 
 <span id="CIM_ERR_NOT_SUPPORTED"></span><span id="cim_err_not_supported"></span>
 
-<span id="CIM_ERR_NOT_SUPPORTED"></span><span id="cim_err_not_supported"></span>**CIM \_ \_Não \_ há suporte para erro** (7)
+<span id="CIM_ERR_NOT_SUPPORTED"></span><span id="cim_err_not_supported"></span>**CIM \_ ERR \_ SEM \_ SUPORTE** (7)
 
 
 </dt> <dd>
@@ -170,84 +170,84 @@ Não há suporte para a operação solicitada.
 
 <span id="CIM_ERR_CLASS_HAS_CHILDREN"></span><span id="cim_err_class_has_children"></span>
 
-<span id="CIM_ERR_CLASS_HAS_CHILDREN"></span><span id="cim_err_class_has_children"></span>**CIM \_ A \_ classe Err \_ tem \_ filhos** (8)
+<span id="CIM_ERR_CLASS_HAS_CHILDREN"></span><span id="cim_err_class_has_children"></span>**CIM \_ A CLASSE ERR \_ \_ TEM \_ FILHOS** (8)
 
 
 </dt> <dd>
 
-A operação não pode ser executada nesta classe porque ela tem instâncias.
+A operação não pode ser executada nessa classe, pois ela tem instâncias.
 
 </dd> <dt>
 
 <span id="CIM_ERR_CLASS_HAS_INSTANCES"></span><span id="cim_err_class_has_instances"></span>
 
-<span id="CIM_ERR_CLASS_HAS_INSTANCES"></span><span id="cim_err_class_has_instances"></span>**CIM \_ \_Classe Err \_ tem \_ instâncias** (9)
+<span id="CIM_ERR_CLASS_HAS_INSTANCES"></span><span id="cim_err_class_has_instances"></span>**CIM \_ A CLASSE ERR \_ \_ TEM \_ INSTÂNCIAS** (9)
 
 
 </dt> <dd>
 
-A operação não pode ser executada nesta classe porque ela tem instâncias.
+A operação não pode ser executada nessa classe, pois ela tem instâncias.
 
 </dd> <dt>
 
 <span id="CIM_ERR_INVALID_SUPERCLASS"></span><span id="cim_err_invalid_superclass"></span>
 
-<span id="CIM_ERR_INVALID_SUPERCLASS"></span><span id="cim_err_invalid_superclass"></span>**CIM \_ Inclasse de erro \_ inválido \_** (10)
+<span id="CIM_ERR_INVALID_SUPERCLASS"></span><span id="cim_err_invalid_superclass"></span>**CIM \_ ERR \_ \_ INVALID SUPERCLASS** (10)
 
 
 </dt> <dd>
 
-A operação não pode ser executada porque a superclasse especificada não existe.
+A operação não pode ser executada, pois a superclasse especificada não existe.
 
 </dd> <dt>
 
 <span id="CIM_ERR_ALREADY_EXISTS"></span><span id="cim_err_already_exists"></span>
 
-<span id="CIM_ERR_ALREADY_EXISTS"></span><span id="cim_err_already_exists"></span>**CIM \_ O erro \_ já \_ existe** (11)
+<span id="CIM_ERR_ALREADY_EXISTS"></span><span id="cim_err_already_exists"></span>**CIM \_ ERR \_ JÁ \_ EXISTE** (11)
 
 
 </dt> <dd>
 
-A operação não pode ser executada porque já existe um objeto.
+A operação não pode ser executada porque um objeto já existe.
 
 </dd> <dt>
 
 <span id="CIM_ERR_NO_SUCH_PROPERTY"></span><span id="cim_err_no_such_property"></span>
 
-<span id="CIM_ERR_NO_SUCH_PROPERTY"></span><span id="cim_err_no_such_property"></span>**CIM \_ \_Não erro \_ de \_ Propriedade** (12)
+<span id="CIM_ERR_NO_SUCH_PROPERTY"></span><span id="cim_err_no_such_property"></span>**CIM \_ ERR \_ NO \_ SUCH \_ PROPERTY** (12)
 
 
 </dt> <dd>
 
-A propriedade especificada não existe.
+A Propriedade especificada não existe.
 
 </dd> <dt>
 
 <span id="CIM_ERR_TYPE_MISMATCH"></span><span id="cim_err_type_mismatch"></span>
 
-<span id="CIM_ERR_TYPE_MISMATCH"></span><span id="cim_err_type_mismatch"></span>**CIM \_ Tipo de erro \_ \_ incompatível** (13)
+<span id="CIM_ERR_TYPE_MISMATCH"></span><span id="cim_err_type_mismatch"></span>**CIM \_ ERR \_ TYPE \_ MISMATCH** (13)
 
 
 </dt> <dd>
 
-O valor fornecido é incompatível com o tipo.
+O valor fornecido é incompatível com o tipo .
 
 </dd> <dt>
 
 <span id="CIM_ERR_QUERY_LANGUAGE_NOT_SUPPORTED"></span><span id="cim_err_query_language_not_supported"></span>
 
-<span id="CIM_ERR_QUERY_LANGUAGE_NOT_SUPPORTED"></span><span id="cim_err_query_language_not_supported"></span>**CIM \_ Linguagem de consulta de erro \_ \_ \_ sem \_ suporte** (14)
+<span id="CIM_ERR_QUERY_LANGUAGE_NOT_SUPPORTED"></span><span id="cim_err_query_language_not_supported"></span>**CIM \_ ERR \_ QUERY \_ LANGUAGE NOT \_ \_ SUPPORTED** (14)
 
 
 </dt> <dd>
 
-A linguagem de consulta não é reconhecida nem tem suporte.
+Não há suporte para a linguagem de consulta.
 
 </dd> <dt>
 
 <span id="CIM_ERR_INVALID_QUERY"></span><span id="cim_err_invalid_query"></span>
 
-<span id="CIM_ERR_INVALID_QUERY"></span><span id="cim_err_invalid_query"></span>**CIM \_ ERRO \_ de \_ consulta inválida** (15)
+<span id="CIM_ERR_INVALID_QUERY"></span><span id="cim_err_invalid_query"></span>**CIM \_ CONSULTA \_ \_ INVÁLIDA ERR** (15)
 
 
 </dt> <dd>
@@ -258,40 +258,40 @@ A consulta não é válida para a linguagem de consulta especificada.
 
 <span id="CIM_ERR_METHOD_NOT_AVAILABLE"></span><span id="cim_err_method_not_available"></span>
 
-<span id="CIM_ERR_METHOD_NOT_AVAILABLE"></span><span id="cim_err_method_not_available"></span>**CIM \_ O \_ método Err \_ não \_ está disponível** (16)
+<span id="CIM_ERR_METHOD_NOT_AVAILABLE"></span><span id="cim_err_method_not_available"></span>**CIM \_ MÉTODO ERR \_ \_ NÃO \_ DISPONÍVEL** (16)
 
 
 </dt> <dd>
 
-Não foi possível executar o método extrínsecos.
+Não foi possível executar o método extrídico.
 
 </dd> <dt>
 
 <span id="CIM_ERR_METHOD_NOT_FOUND"></span><span id="cim_err_method_not_found"></span>
 
-<span id="CIM_ERR_METHOD_NOT_FOUND"></span><span id="cim_err_method_not_found"></span>**CIM \_ \_Método Err \_ não \_ encontrado** (17)
+<span id="CIM_ERR_METHOD_NOT_FOUND"></span><span id="cim_err_method_not_found"></span>**CIM \_ MÉTODO ERR \_ \_ NÃO \_ ENCONTRADO** (17)
 
 
 </dt> <dd>
 
-O método extrínsecos especificado não existe.
+O Método extrítico especificado não existe.
 
 </dd> <dt>
 
 <span id="CIM_ERR_UNEXPECTED_RESPONSE"></span><span id="cim_err_unexpected_response"></span>
 
-<span id="CIM_ERR_UNEXPECTED_RESPONSE"></span><span id="cim_err_unexpected_response"></span>**CIM \_ \_ \_ Resposta de erro inesperado** (18)
+<span id="CIM_ERR_UNEXPECTED_RESPONSE"></span><span id="cim_err_unexpected_response"></span>**CIM \_ RESPOSTA \_ INESPERADA \_ ERR** (18)
 
 
 </dt> <dd>
 
-A resposta retornada para a operação assíncrona não era esperada.
+A resposta retornada à operação assíncrona não era esperada.
 
 </dd> <dt>
 
 <span id="CIM_ERR_INVALID_RESPONSE_DESTINATION"></span><span id="cim_err_invalid_response_destination"></span>
 
-<span id="CIM_ERR_INVALID_RESPONSE_DESTINATION"></span><span id="cim_err_invalid_response_destination"></span>**CIM \_ ERRO \_ de \_ \_ destino de resposta inválido** (19)
+<span id="CIM_ERR_INVALID_RESPONSE_DESTINATION"></span><span id="cim_err_invalid_response_destination"></span>**CIM \_ ERR \_ INVALID \_ RESPONSE \_ DESTINATION** (19)
 
 
 </dt> <dd>
@@ -302,18 +302,18 @@ O destino especificado para a resposta assíncrona não é válido.
 
 <span id="CIM_ERR_NAMESPACE_NOT_EMPTY"></span><span id="cim_err_namespace_not_empty"></span>
 
-<span id="CIM_ERR_NAMESPACE_NOT_EMPTY"></span><span id="cim_err_namespace_not_empty"></span>**CIM \_ O \_ namespace de Err \_ não \_ está vazio** (20)
+<span id="CIM_ERR_NAMESPACE_NOT_EMPTY"></span><span id="cim_err_namespace_not_empty"></span>**CIM \_ NAMESPACE \_ ERR \_ NÃO \_ VAZIO** (20)
 
 
 </dt> <dd>
 
-O namespace especificado não está vazio.
+O Namespace especificado não está vazio.
 
 </dd> <dt>
 
 <span id="CIM_ERR_INVALID_ENUMERATION_CONTEXT"></span><span id="cim_err_invalid_enumeration_context"></span>
 
-<span id="CIM_ERR_INVALID_ENUMERATION_CONTEXT"></span><span id="cim_err_invalid_enumeration_context"></span>**CIM \_ ERRO \_ de \_ \_ contexto de enumeração inválido** (21)
+<span id="CIM_ERR_INVALID_ENUMERATION_CONTEXT"></span><span id="cim_err_invalid_enumeration_context"></span>**CIM \_ ERR \_ INVALID \_ ENUMERATION \_ CONTEXT** (21)
 
 
 </dt> <dd>
@@ -324,29 +324,29 @@ O contexto de enumeração fornecido não é válido.
 
 <span id="CIM_ERR_INVALID_OPERATION_TIMEOUT"></span><span id="cim_err_invalid_operation_timeout"></span>
 
-<span id="CIM_ERR_INVALID_OPERATION_TIMEOUT"></span><span id="cim_err_invalid_operation_timeout"></span>**CIM \_ ERRO \_ de \_ \_ tempo limite de operação inválido** (22)
+<span id="CIM_ERR_INVALID_OPERATION_TIMEOUT"></span><span id="cim_err_invalid_operation_timeout"></span>**CIM \_ ERR \_ INVALID \_ OPERATION \_ TIMEOUT** (22)
 
 
 </dt> <dd>
 
-O namespace especificado não está vazio.
+O Namespace especificado não está vazio.
 
 </dd> <dt>
 
 <span id="CIM_ERR_PULL_HAS_BEEN_ABANDONED"></span><span id="cim_err_pull_has_been_abandoned"></span>
 
-<span id="CIM_ERR_PULL_HAS_BEEN_ABANDONED"></span><span id="cim_err_pull_has_been_abandoned"></span>**CIM \_ A pull de ERR foi \_ \_ \_ \_ abandonada** (23)
+<span id="CIM_ERR_PULL_HAS_BEEN_ABANDONED"></span><span id="cim_err_pull_has_been_abandoned"></span>**CIM \_ ERR \_ PULL \_ FOI \_ \_ ABANDONADO** (23)
 
 
 </dt> <dd>
 
-O namespace especificado não está vazio.
+O Namespace especificado não está vazio.
 
 </dd> <dt>
 
 <span id="CIM_ERR_PULL_CANNOT_BE_ABANDONED"></span><span id="cim_err_pull_cannot_be_abandoned"></span>
 
-<span id="CIM_ERR_PULL_CANNOT_BE_ABANDONED"></span><span id="cim_err_pull_cannot_be_abandoned"></span>**CIM \_ A \_ pull de Err \_ não pode \_ ser \_ abandonada** (24)
+<span id="CIM_ERR_PULL_CANNOT_BE_ABANDONED"></span><span id="cim_err_pull_cannot_be_abandoned"></span>**CIM \_ ERR \_ PULL NÃO PODE SER \_ \_ \_ ABANDONADO** (24)
 
 
 </dt> <dd>
@@ -357,7 +357,7 @@ Falha na tentativa de abandonar uma operação de pull.
 
 <span id="CIM_ERR_FILTERED_ENUMERATION_NOT_SUPPORTED"></span><span id="cim_err_filtered_enumeration_not_supported"></span>
 
-<span id="CIM_ERR_FILTERED_ENUMERATION_NOT_SUPPORTED"></span><span id="cim_err_filtered_enumeration_not_supported"></span>**CIM \_ \_Enumeração filtrada de erro \_ \_ não \_ suportada** (25)
+<span id="CIM_ERR_FILTERED_ENUMERATION_NOT_SUPPORTED"></span><span id="cim_err_filtered_enumeration_not_supported"></span>**CIM \_ \_ENUMERAÇÃO \_ FILTRADA ERR \_ SEM \_ SUPORTE** (25)
 
 
 </dt> <dd>
@@ -368,29 +368,29 @@ Não há suporte para Enumeratrions filtrados.
 
 <span id="CIM_ERR_CONTINUATION_ON_ERROR_NOT_SUPPORTED"></span><span id="cim_err_continuation_on_error_not_supported"></span>
 
-<span id="CIM_ERR_CONTINUATION_ON_ERROR_NOT_SUPPORTED"></span><span id="cim_err_continuation_on_error_not_supported"></span>**CIM \_ \_ \_ \_ \_ Não \_ há suporte para a continuação de erro** (26)
+<span id="CIM_ERR_CONTINUATION_ON_ERROR_NOT_SUPPORTED"></span><span id="cim_err_continuation_on_error_not_supported"></span>**CIM \_ ERR \_ CONTINUATION \_ ON ERROR \_ NOT \_ \_ SUPPORTED** (26)
 
 
 </dt> <dd>
 
-Não há suporte para continuar em caso de erro.
+Não há suporte para continuar com o erro.
 
 </dd> <dt>
 
 <span id="CIM_ERR_SERVER_LIMITS_EXCEEDED"></span><span id="cim_err_server_limits_exceeded"></span>
 
-<span id="CIM_ERR_SERVER_LIMITS_EXCEEDED"></span><span id="cim_err_server_limits_exceeded"></span>**CIM \_ Limites de servidor de erro \_ \_ \_ excedido** (27)
+<span id="CIM_ERR_SERVER_LIMITS_EXCEEDED"></span><span id="cim_err_server_limits_exceeded"></span>**CIM \_ LIMITES \_ DE SERVIDOR ERR \_ \_ EXCEDIDO** (27)
 
 
 </dt> <dd>
 
-Os limites do servidor WBEM foram excedidos (por exemplo, memória, conexões,...).
+Os limites do servidor WBEM foram excedido (por exemplo, memória, conexões, ...).
 
 </dd> <dt>
 
 <span id="CIM_ERR_SERVER_IS_SHUTTING_DOWN"></span><span id="cim_err_server_is_shutting_down"></span>
 
-<span id="CIM_ERR_SERVER_IS_SHUTTING_DOWN"></span><span id="cim_err_server_is_shutting_down"></span>**CIM \_ O \_ servidor de erro \_ está \_ sendo desligado \_** (28)
+<span id="CIM_ERR_SERVER_IS_SHUTTING_DOWN"></span><span id="cim_err_server_is_shutting_down"></span>**CIM \_ O \_ SERVIDOR ERR ESTÁ \_ \_ \_ DESLIGANDO** (28)
 
 
 </dt> <dd>
@@ -401,18 +401,18 @@ O servidor WBEM está sendo desligado.
 
 <span id="CIM_ERR_QUERY_FEATURE_NOT_SUPPORTED"></span><span id="cim_err_query_feature_not_supported"></span>
 
-<span id="CIM_ERR_QUERY_FEATURE_NOT_SUPPORTED"></span><span id="cim_err_query_feature_not_supported"></span>**CIM \_ Recurso de consulta de erro \_ \_ \_ sem \_ suporte** (29)
+<span id="CIM_ERR_QUERY_FEATURE_NOT_SUPPORTED"></span><span id="cim_err_query_feature_not_supported"></span>**CIM \_ RECURSO \_ ERR \_ QUERY NÃO TEM \_ \_ SUPORTE** (29)
 
 
 </dt> <dd>
 
-Não há suporte para o recurso de consulta especificado.
+Não há suporte para o Recurso de Consulta especificado.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -428,19 +428,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DSP0201. erro de DMTF \| . Descrição \| 2,3 "," DSP0200. DMTF \| CIMError \| 1,3 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro CIM**.**CIMStatusCode**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DSP0201. ERRO DE \| DMTF. DESCRIPTION \| 2.3", "DSP0200. DMTF \| CIMError \| 1.3"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**CIMStatusCode**")
 </dt> </dl>
 
-Uma cadeia de caracteres de forma livre que contém uma descrição legível do valor da propriedade **CIMStatusCode** .
+Uma cadeia de caracteres de forma livre que contém uma descrição acessível por humanos do **valor da propriedade CIMStatusCode.**
 
 > [!Note]  
-> Essa descrição pode ser estendida, mas deve ser consistente com a definição de **CIMStatusCode**.
+> Essa descrição pode se estender, mas deve ser consistente com a definição de **CIMStatusCode**.
 
  
 
 </dd> <dt>
 
-**ErrorName**
+**ErrorSource**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -449,26 +449,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**ErrorSourceFormat**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**ErrorSourceFormat**")
 </dt> </dl>
 
-Informações que identificam a entidade que gerou o erro. Se a entidade for modelada pelo esquema CIM, essa propriedade conterá o caminho para a instância codificada como um parâmetro de cadeia de caracteres. Caso contrário, a propriedade conterá uma cadeia de caracteres que nomeia a entidade que gerou o erro. O formato dessa propriedade é especificado pela propriedade **ErrorSourceFormat** .
+Informações que identificam a entidade que gerou o erro. Se a entidade for modelada pelo esquema CIM, essa propriedade conterá o caminho para a instância codificada como um parâmetro de cadeia de caracteres. Caso contrário, a propriedade conterá uma cadeia de caracteres que nomeia a entidade que gerou o erro. O formato dessa propriedade é especificado pela **propriedade ErrorSourceFormat.**
 
 </dd> <dt>
 
 **ErrorSourceFormat**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**ErrorName**","**\_ erro CIM**.**OtherErrorSourceFormat**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**ErrorSource**", "**Erro CIM \_**.**OtherErrorSourceFormat**")
 </dt> </dl>
 
-O formato da propriedade **errorName** .
+O formato da **propriedade ErrorSource.**
 
 <dt>
 
@@ -479,18 +479,18 @@ O formato da propriedade **errorName** .
 
 </dt> <dd>
 
-O formato é desconhecido ou não é de forma significativa interpretado por um aplicativo cliente CIM.
+O formato é desconhecido ou não pode ser interpretado significativamente por um aplicativo cliente CIM.
 
 </dd> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd>
 
-O formato é definido pelo valor da propriedade **OtherErrorSourceFormat** .
+O formato é definido pelo valor da **propriedade OtherErrorSourceFormat.**
 
 </dd> <dt>
 
@@ -501,29 +501,29 @@ O formato é definido pelo valor da propriedade **OtherErrorSourceFormat** .
 
 </dt> <dd>
 
-Um caminho de objeto CIM, conforme definido na especificação de infraestrutura de CIM.
+Um Caminho do Objeto CIM conforme definido na especificação da Infraestrutura cim.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**Error**
+**ErrorType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**OtherErrorType**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**OtherErrorType**")
 </dt> </dl>
 
 O tipo de erro primário.
@@ -539,7 +539,7 @@ O tipo de erro primário.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -551,7 +551,7 @@ O tipo de erro primário.
 
 </dt> <dd>
 
-Os erros desse tipo estão associados principalmente aos procedimentos e/ou processos necessários para transmitir informações de um ponto para outro.
+Erros desse tipo são associados principalmente aos procedimentos e/ou processos necessários para transmitir informações de um ponto para outro.
 
 </dd> <dt>
 
@@ -562,7 +562,7 @@ Os erros desse tipo estão associados principalmente aos procedimentos e/ou proc
 
 </dt> <dd>
 
-Os erros desse tipo são associados principalmente a falhas que resultam em redução na funcionalidade ou no desempenho.
+Erros desse tipo são associados principalmente a falhas que resultam em funcionalidade ou desempenho reduzidos.
 
 </dd> <dt>
 
@@ -573,7 +573,7 @@ Os erros desse tipo são associados principalmente a falhas que resultam em redu
 
 </dt> <dd>
 
-O erro desse tipo está associado principalmente a um software ou a uma falha de processamento.
+O erro desse tipo está associado principalmente a um software ou falha de processamento.
 
 </dd> <dt>
 
@@ -584,7 +584,7 @@ O erro desse tipo está associado principalmente a um software ou a uma falha de
 
 </dt> <dd>
 
-Os erros desse tipo estão associados principalmente a um equipamento ou falha de hardware.
+Erros desse tipo são associados principalmente a uma falha de equipamento ou hardware.
 
 </dd> <dt>
 
@@ -595,7 +595,7 @@ Os erros desse tipo estão associados principalmente a um equipamento ou falha d
 
 </dt> <dd>
 
-outras considerações ambientais.
+outras considerações sobre o ambiente.
 
 </dd> <dt>
 
@@ -617,7 +617,7 @@ Erros desse tipo estão associados a violações de segurança, detecção de v�
 
 </dt> <dd>
 
-Os erros desse tipo estão associados principalmente à falha na alocação de recursos suficientes para concluir a operação.
+Os erros desse tipo estão principalmente associados à falha ao alocar recursos suficientes para concluir a operação.
 
 </dd> <dt>
 
@@ -628,7 +628,7 @@ Os erros desse tipo estão associados principalmente à falha na alocação de r
 
 </dt> <dd>
 
-Os erros desse tipo estão associados principalmente à falha ao acessar um recurso necessário.
+Erros desse tipo são associados principalmente à falha ao acessar um recurso necessário.
 
 </dd> <dt>
 
@@ -639,13 +639,13 @@ Os erros desse tipo estão associados principalmente à falha ao acessar um recu
 
 </dt> <dd>
 
-Os erros desse tipo estão associados principalmente às solicitações que não têm suporte.
+Erros desse tipo são associados principalmente a solicitações sem suporte.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -661,13 +661,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**MessageID**","**\_ erro de CIM**.**MessageArguments**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**MessageID**", "**Erro CIM \_**.**MessageArguments**")
 </dt> </dl>
 
 A mensagem formatada.
 
 > [!Note]  
-> Essa mensagem é criada combinando elementos dinâmicos da propriedade **MessageArguments** com os elementos estáticos da propriedade **MessageId** e, em seguida, adicionando-os a um registro de mensagem ou catálogo associado a **OwningEntity**.
+> Essa mensagem é criada combinando elementos dinâmicos da propriedade **MessageArguments** com os elementos estáticos da propriedade **MessageID** e, em seguida, adicionando-os a um registro ou catálogo de mensagens associado ao **OwningEntity**.
 
  
 
@@ -676,13 +676,13 @@ A mensagem formatada.
 **MessageArguments**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**MessageID**","**\_ erro de CIM**.**Mensagem**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**MessageID**", "**Erro CIM \_**.**Mensagem**")
 </dt> </dl>
 
 Uma matriz que contém o conteúdo dinâmico da mensagem.
@@ -698,10 +698,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Required**](/windows/desktop/WmiSdk/standard-qualifiers), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro CIM**.**Mensagem**","**\_ erro de CIM**.**MessageArguments**")
+Qualificadores: [**Obrigatório,**](/windows/desktop/WmiSdk/standard-qualifiers) [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**Mensagem**", "**Erro CIM \_**.**MessageArguments**")
 </dt> </dl>
 
-Uma cadeia de caracteres opaca que identifica exclusivamente, dentro do escopo de OwningEntity, o formato da mensagem.
+Uma cadeia de caracteres opaca que identifica exclusivamente, dentro do escopo de OwningEntity, o formato da Mensagem.
 
 </dd> <dt>
 
@@ -714,10 +714,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**ErrorSourceFormat**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**ErrorSourceFormat**")
 </dt> </dl>
 
-Uma cadeia de caracteres que define o valor de **errorsourceformat** quando **errorsourceformat** é definido como "1" (outro).
+Uma cadeia de caracteres que define **o valor ErrorSourceFormat** **quando ErrorSourceFormat** é definido como "1" (outro).
 
 </dd> <dt>
 
@@ -730,10 +730,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**ErrorType**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**ErrorType**")
 </dt> </dl>
 
-Uma cadeia de caracteres de forma livre que descreve o valor de **ErrorType** quando ele é definido como "1" (outro).
+Uma cadeia de caracteres de forma livre que descreve o **valor errorType** quando ele é definido como "1" (outro).
 
 </dd> <dt>
 
@@ -746,10 +746,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A ID exclusiva da entidade que possui o formato da mensagem descrita por essa instância.
+A ID exclusiva da entidade que possui o formato da mensagem descrita por esta instância.
 
 > [!Note]  
-> Essa propriedade deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios ou ao corpo de padrões que definiu o formato da mensagem.
+> Essa propriedade deve incluir um nome protegido por direitos autorais, marcas comerciais ou exclusivos pertencentes à entidade de negócios ou ao corpo de padrões que definiu o formato da mensagem.
 
  
 
@@ -758,13 +758,13 @@ A ID exclusiva da entidade que possui o formato da mensagem descrita por essa in
 **PerceivedSeverity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("recomendação. ITU \| X733. Severidade percebida ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Severidade percebida")
 </dt> </dl>
 
 Uma descrição da severidade do erro do ponto de vista do elemento que enviou a mensagem de erro.
@@ -778,18 +778,18 @@ Uma descrição da severidade do erro do ponto de vista do elemento que enviou a
 
 </dt> <dd>
 
-a severidade percebida da indicação é desconhecida ou indeterminada.
+A Gravidade Percebida da indicação é desconhecida ou indeterminada.
 
 </dd> <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 
 
 </dt> <dd>
 
-Indica que o valor da severidade pode ser encontrado na propriedade **OtherSeverity** .
+Indica que o valor da Gravidade pode ser encontrado na **propriedade OtherSeverity.**
 
 </dd> <dt>
 
@@ -806,7 +806,7 @@ As informações devem ser usadas ao fornecer uma resposta informativa.
 
 <span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>
 
-<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Degradado/aviso** (3)
+<span id="Degraded_Warning"></span><span id="degraded_warning"></span><span id="DEGRADED_WARNING"></span>**Degradado/Aviso** (3)
 
 
 </dt> <dd>
@@ -817,12 +817,12 @@ Deve ser usado quando apropriado para permitir que o usuário decida se a ação
 
 <span id="Minor"></span><span id="minor"></span><span id="MINOR"></span>
 
-<span id="Minor"></span><span id="minor"></span><span id="MINOR"></span>**Secundária** (4)
+<span id="Minor"></span><span id="minor"></span><span id="MINOR"></span>**Menor** (4)
 
 
 </dt> <dd>
 
-A ação é necessária, mas a situação não é séria no momento.
+A ação é necessária, mas a situação não é grave no momento.
 
 </dd> <dt>
 
@@ -833,7 +833,7 @@ A ação é necessária, mas a situação não é séria no momento.
 
 </dt> <dd>
 
-A ação é necessária agora.
+A ação é necessária AGORA.
 
 </dd> <dt>
 
@@ -844,40 +844,40 @@ A ação é necessária agora.
 
 </dt> <dd>
 
-A ação é necessária agora e o escopo é amplo (talvez uma interrupção iminente a um recurso crítico resulte).
+A ação é necessária agora e o escopo é amplo (talvez uma paralisação iminente para um recurso crítico resultará).
 
 </dd> <dt>
 
 <span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>
 
-<span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>**Fatal/não recuperável** (7)
+<span id="Fatal_NonRecoverable"></span><span id="fatal_nonrecoverable"></span><span id="FATAL_NONRECOVERABLE"></span>**Fatal/Não Recupeável** (7)
 
 
 </dt> <dd>
 
-ocorreu um erro, mas é tarde demais para realizar uma ação corretiva.
+ocorreu um erro, mas é tarde demais para tomar uma ação corretiva.
 
 </dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
 
 </dd> <dt>
 
-**ProbableCause**
+**ProvávelCause**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("recomendação. ITU \| X733. Causa provável "," recomendação. ITU \| M3100. probableCause "," ITU-IANA-Alarm-TC "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro CIM**.**ProbableCauseDescription**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Recommendation.ITU \| X733. Causa provável", "Recommendation.ITU \| M3100.probableCause", "ITU-IANA-ALARM-TC"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Cim \_ Error**.**ProbableCauseDescription**")
 </dt> </dl>
 
 Uma descrição da causa provável do erro.
@@ -893,49 +893,49 @@ Uma descrição da causa provável do erro.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Adapter_Card_Error"></span><span id="adapter_card_error"></span><span id="ADAPTER_CARD_ERROR"></span>
 
-**Erro de adaptador/placa** (2)
+**Erro de adaptador/cartão** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Application_Subsystem_Failure"></span><span id="application_subsystem_failure"></span><span id="APPLICATION_SUBSYSTEM_FAILURE"></span>
 
-**Falha no subsistema do aplicativo** (3)
+**Falha do subsistema do aplicativo** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Bandwidth_Reduced"></span><span id="bandwidth_reduced"></span><span id="BANDWIDTH_REDUCED"></span>
 
-**Largura de banda reduzida** (4)
+**Largura de banda** reduzida (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Connection_Establishment_Error"></span><span id="connection_establishment_error"></span><span id="CONNECTION_ESTABLISHMENT_ERROR"></span>
 
-**Erro de estabelecimento de conexão** (5)
+**Erro de estabelecimento de** conexão (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Communications_Protocol_Error"></span><span id="communications_protocol_error"></span><span id="COMMUNICATIONS_PROTOCOL_ERROR"></span>
 
-**Erro de protocolo de comunicação** (6)
+**Erro de protocolo de** comunicações (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Communications_Subsystem_Failure"></span><span id="communications_subsystem_failure"></span><span id="COMMUNICATIONS_SUBSYSTEM_FAILURE"></span>
 
-**Falha no subsistema de comunicações** (7)
+**Falha do subsistema de comunicações** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -970,7 +970,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Dataset_Modem_Error"></span><span id="dataset_modem_error"></span><span id="DATASET_MODEM_ERROR"></span>
 
-**Erro de conjunto de/DataSet** (12)
+**Erro de conjuntos de dados/modem** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -984,7 +984,7 @@ Uma descrição da causa provável do erro.
 
 <span id="DTE-DCE_Interface_Error"></span><span id="dte-dce_interface_error"></span><span id="DTE-DCE_INTERFACE_ERROR"></span>
 
-**DTE-erro de interface de DCE** (14)
+**Erro de interface DTE-DCE** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -998,7 +998,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Equipment_Malfunction"></span><span id="equipment_malfunction"></span><span id="EQUIPMENT_MALFUNCTION"></span>
 
-**Mau funcionamento do equipamento** (16)
+**Funcionamento do equipamento** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -1012,14 +1012,14 @@ Uma descrição da causa provável do erro.
 
 <span id="File_Format_Error"></span><span id="file_format_error"></span><span id="FILE_FORMAT_ERROR"></span>
 
-**Erro de formato de arquivo** (18)
+**Erro de formato de** arquivo (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Fire_Detected"></span><span id="fire_detected"></span><span id="FIRE_DETECTED"></span>
 
-**Incêndio detectado** (19)
+**Fire Detected** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -1054,14 +1054,14 @@ Uma descrição da causa provável do erro.
 
 <span id="I_O_Device_Error"></span><span id="i_o_device_error"></span><span id="I_O_DEVICE_ERROR"></span>
 
-**Erro de dispositivo de e/s** (24)
+**Erro de dispositivo de E/S** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Input_Device_Error"></span><span id="input_device_error"></span><span id="INPUT_DEVICE_ERROR"></span>
 
-**Erro de dispositivo de entrada** (25)
+**Erro de dispositivo de** entrada (25)
 
 
 </dt> <dd></dd> <dt>
@@ -1075,14 +1075,14 @@ Uma descrição da causa provável do erro.
 
 <span id="Non-Toxic_Leak_Detected"></span><span id="non-toxic_leak_detected"></span><span id="NON-TOXIC_LEAK_DETECTED"></span>
 
-**Vazamento não tóxicos detectado** (27)
+**Vazamento não detectado** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Local_Node_Transmission_Error"></span><span id="local_node_transmission_error"></span><span id="LOCAL_NODE_TRANSMISSION_ERROR"></span>
 
-**Erro de transmissão do nó local** (28)
+**Erro de transmissão de nó local** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -1110,21 +1110,21 @@ Uma descrição da causa provável do erro.
 
 <span id="Multiplexer_Problem"></span><span id="multiplexer_problem"></span><span id="MULTIPLEXER_PROBLEM"></span>
 
-**Problema do Multiplexador** (32)
+**Problema de multiplexador** (32)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Out_of_Memory"></span><span id="out_of_memory"></span><span id="OUT_OF_MEMORY"></span>
 
-**Memória insuficiente** (33)
+**Memória sem** memória (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Output_Device_Error"></span><span id="output_device_error"></span><span id="OUTPUT_DEVICE_ERROR"></span>
 
-**Erro do dispositivo de saída** (34)
+**Erro de dispositivo de saída** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -1152,7 +1152,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Processor_Problem__Internal_Machine_Error_"></span><span id="processor_problem__internal_machine_error_"></span><span id="PROCESSOR_PROBLEM__INTERNAL_MACHINE_ERROR_"></span>
 
-**Problema do processador (erro interno da máquina)** (38)
+**Problema do processador (erro interno do computador)** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -1194,7 +1194,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Resource_at_or_Nearing_Capacity"></span><span id="resource_at_or_nearing_capacity"></span><span id="RESOURCE_AT_OR_NEARING_CAPACITY"></span>
 
-**Recurso na capacidade ou perto** (44)
+**Recurso em ou capacidade de aproximação** (44)
 
 
 </dt> <dd></dd> <dt>
@@ -1222,7 +1222,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Software_Program_Abnormally_Terminated"></span><span id="software_program_abnormally_terminated"></span><span id="SOFTWARE_PROGRAM_ABNORMALLY_TERMINATED"></span>
 
-**Programa de software encerrado** de forma anormal (48)
+**Programa de Software encerrado de forma anormal** (48)
 
 
 </dt> <dd></dd> <dt>
@@ -1236,7 +1236,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Storage_Capacity_Problem"></span><span id="storage_capacity_problem"></span><span id="STORAGE_CAPACITY_PROBLEM"></span>
 
-**Problema de capacidade de armazenamento** (50)
+**Armazenamento de capacidade** (50)
 
 
 </dt> <dd></dd> <dt>
@@ -1250,7 +1250,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Threshold_Crossed"></span><span id="threshold_crossed"></span><span id="THRESHOLD_CROSSED"></span>
 
-**Limite ultrapassado** (52)
+**Limite cruzado** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -1264,7 +1264,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Toxic_Leak_Detected"></span><span id="toxic_leak_detected"></span><span id="TOXIC_LEAK_DETECTED"></span>
 
-**Vazamento de tóxicos detectado** (54)
+**Vazamento de resíduos detectado** (54)
 
 
 </dt> <dd></dd> <dt>
@@ -1285,7 +1285,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Underlying_Resource_Unavailable"></span><span id="underlying_resource_unavailable"></span><span id="UNDERLYING_RESOURCE_UNAVAILABLE"></span>
 
-**Recurso subjacente não disponível** (57)
+**Recurso subjacente indisponível** (57)
 
 
 </dt> <dd></dd> <dt>
@@ -1306,14 +1306,14 @@ Uma descrição da causa provável do erro.
 
 <span id="Login_Attempts_Failed"></span><span id="login_attempts_failed"></span><span id="LOGIN_ATTEMPTS_FAILED"></span>
 
-**Tentativas de logon com falha** (60)
+**Tentativas de logon com** falha (60)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Software_Virus_Detected"></span><span id="software_virus_detected"></span><span id="SOFTWARE_VIRUS_DETECTED"></span>
 
-**Vírus de software detectado** (61)
+**Vírus de software detectados** (61)
 
 
 </dt> <dd></dd> <dt>
@@ -1334,7 +1334,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Security_Credential_Mismatch"></span><span id="security_credential_mismatch"></span><span id="SECURITY_CREDENTIAL_MISMATCH"></span>
 
-**Incompatibilidade de credencial de segurança** (64)
+**Incompatibilidade de credenciais de segurança** (64)
 
 
 </dt> <dd></dd> <dt>
@@ -1369,14 +1369,14 @@ Uma descrição da causa provável do erro.
 
 <span id="Transmission_Error"></span><span id="transmission_error"></span><span id="TRANSMISSION_ERROR"></span>
 
-**Erro de transmissão** (69)
+**Erro de** transmissão (69)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Excessive_Error_Rate"></span><span id="excessive_error_rate"></span><span id="EXCESSIVE_ERROR_RATE"></span>
 
-**Taxa de erros excessivas** (70)
+**Taxa de erro excessiva** (70)
 
 
 </dt> <dd></dd> <dt>
@@ -1390,14 +1390,14 @@ Uma descrição da causa provável do erro.
 
 <span id="Element_Unavailable"></span><span id="element_unavailable"></span><span id="ELEMENT_UNAVAILABLE"></span>
 
-**Elemento não disponível** (72)
+**Elemento Indisponível** (72)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Element_Missing"></span><span id="element_missing"></span><span id="ELEMENT_MISSING"></span>
 
-**Elemento ausente** (73)
+**Elemento Missing** (73)
 
 
 </dt> <dd></dd> <dt>
@@ -1411,7 +1411,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Broadcast_Channel_Failure"></span><span id="broadcast_channel_failure"></span><span id="BROADCAST_CHANNEL_FAILURE"></span>
 
-**Falha no canal de difusão** (75)
+**Falha de canal de** difusão (75)
 
 
 </dt> <dd></dd> <dt>
@@ -1432,21 +1432,21 @@ Uma descrição da causa provável do erro.
 
 <span id="Backplane_Failure"></span><span id="backplane_failure"></span><span id="BACKPLANE_FAILURE"></span>
 
-**Falha no backplane** (78)
+**Falha de backplane** (78)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Identifier_Duplication"></span><span id="identifier_duplication"></span><span id="IDENTIFIER_DUPLICATION"></span>
 
-**Duplicação de identificador** (79)
+**Duplicação do identificador** (79)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Protection_Path_Failure"></span><span id="protection_path_failure"></span><span id="PROTECTION_PATH_FAILURE"></span>
 
-**Falha no caminho de proteção** (80)
+**Falha no caminho de** proteção (80)
 
 
 </dt> <dd></dd> <dt>
@@ -1481,14 +1481,14 @@ Uma descrição da causa provável do erro.
 
 <span id="Battery_Charging_Failure"></span><span id="battery_charging_failure"></span><span id="BATTERY_CHARGING_FAILURE"></span>
 
-**Falha no carregamento da bateria** (85)
+**Falha de carregamento da bateria** (85)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Disk_Failure"></span><span id="disk_failure"></span><span id="DISK_FAILURE"></span>
 
-**Falha de disco** (86)
+**Falha de** disco (86)
 
 
 </dt> <dd></dd> <dt>
@@ -1509,28 +1509,28 @@ Uma descrição da causa provável do erro.
 
 <span id="Power_Supply_Failure"></span><span id="power_supply_failure"></span><span id="POWER_SUPPLY_FAILURE"></span>
 
-**Falha da fonte de energia** (89)
+**Falha na fonte de** alimentação (89)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Signal_Quality_Problem"></span><span id="signal_quality_problem"></span><span id="SIGNAL_QUALITY_PROBLEM"></span>
 
-**Problema de qualidade de sinal** (90)
+**Problema de qualidade do sinal** (90)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Battery_Discharging"></span><span id="battery_discharging"></span><span id="BATTERY_DISCHARGING"></span>
 
-**Descarregamento da bateria** (91)
+**Descarregamento de bateria** (91)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Battery_Failure"></span><span id="battery_failure"></span><span id="BATTERY_FAILURE"></span>
 
-**Falha da bateria** (92)
+**Falha de bateria** (92)
 
 
 </dt> <dd></dd> <dt>
@@ -1551,7 +1551,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Engine_Failure"></span><span id="engine_failure"></span><span id="ENGINE_FAILURE"></span>
 
-**Falha do mecanismo** (95)
+**Falha do** mecanismo (95)
 
 
 </dt> <dd></dd> <dt>
@@ -1565,7 +1565,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Fuse_Failure"></span><span id="fuse_failure"></span><span id="FUSE_FAILURE"></span>
 
-**Falha de fusível** (97)
+**Falha de fuse** (97)
 
 
 </dt> <dd></dd> <dt>
@@ -1593,35 +1593,35 @@ Uma descrição da causa provável do erro.
 
 <span id="Low_Water"></span><span id="low_water"></span><span id="LOW_WATER"></span>
 
-**Água inferior** (101)
+**Baixa água** (101)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Explosive_Gas"></span><span id="explosive_gas"></span><span id="EXPLOSIVE_GAS"></span>
 
-**Gás explosivo** (102)
+**Gás de artefato** (102)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="High_Winds"></span><span id="high_winds"></span><span id="HIGH_WINDS"></span>
 
-**Altos ventos** (103)
+**Altos danos** (103)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Ice_Buildup"></span><span id="ice_buildup"></span><span id="ICE_BUILDUP"></span>
 
-**Acúmulo de gelo** (104)
+**Buildup ice** (104)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Smoke"></span><span id="smoke"></span><span id="SMOKE"></span>
 
-**Fumaça** (105)
+**Smoke** (105)
 
 
 </dt> <dd></dd> <dt>
@@ -1635,7 +1635,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Out_of_CPU_Cycles"></span><span id="out_of_cpu_cycles"></span><span id="OUT_OF_CPU_CYCLES"></span>
 
-**Ciclos de CPU insuficientes** (107)
+**Ciclos de CPU fora** (107)
 
 
 </dt> <dd></dd> <dt>
@@ -1656,21 +1656,21 @@ Uma descrição da causa provável do erro.
 
 <span id="Element_Reinitialized"></span><span id="element_reinitialized"></span><span id="ELEMENT_REINITIALIZED"></span>
 
-**Elemento reinicializado** (110)
+**Elemento Reinicializado** (110)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Timeout"></span><span id="timeout"></span><span id="TIMEOUT"></span>
 
-**Tempo limite** (111)
+**Tempoout** (111)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Logging_Problems"></span><span id="logging_problems"></span><span id="LOGGING_PROBLEMS"></span>
 
-**Problemas de log** (112)
+**Problemas de registro** em log (112)
 
 
 </dt> <dd></dd> <dt>
@@ -1684,21 +1684,21 @@ Uma descrição da causa provável do erro.
 
 <span id="Protection_Mechanism_Failure"></span><span id="protection_mechanism_failure"></span><span id="PROTECTION_MECHANISM_FAILURE"></span>
 
-**Falha no mecanismo de proteção** (114)
+**Falha do mecanismo de** proteção (114)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Protecting_Resource_Failure"></span><span id="protecting_resource_failure"></span><span id="PROTECTING_RESOURCE_FAILURE"></span>
 
-**Proteção de falha de recurso** (115)
+**Protegendo a falha de** recursos (115)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Database_Inconsistency"></span><span id="database_inconsistency"></span><span id="DATABASE_INCONSISTENCY"></span>
 
-**Inconsistência do banco de dados** (116)
+**Inconsistência** de banco de dados (116)
 
 
 </dt> <dd></dd> <dt>
@@ -1719,7 +1719,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Cable_Tamper"></span><span id="cable_tamper"></span><span id="CABLE_TAMPER"></span>
 
-**Adulteração de cabo** (119)
+**Adulteração de** cabo (119)
 
 
 </dt> <dd></dd> <dt>
@@ -1747,7 +1747,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Information_Modification"></span><span id="information_modification"></span><span id="INFORMATION_MODIFICATION"></span>
 
-**Modificação de informações** (123)
+**Modificação de** informações (123)
 
 
 </dt> <dd></dd> <dt>
@@ -1775,7 +1775,7 @@ Uma descrição da causa provável do erro.
 
 <span id="Out_of_Hours_Activity"></span><span id="out_of_hours_activity"></span><span id="OUT_OF_HOURS_ACTIVITY"></span>
 
-**Atividade fora de horas** (127)
+**Atividade fora do horário** comercial (127)
 
 
 </dt> <dd></dd> <dt>
@@ -1803,7 +1803,7 @@ Uma descrição da causa provável do erro.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -1819,23 +1819,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ erro de CIM**.**ProbableCause**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**Erro CIM \_**.**ProbableCause**")
 </dt> </dl>
 
-Uma cadeia de caracteres de forma livre que descreve a causa provável do erro, quando a propriedade **ProbableCause** é definida como "1" (outra).
+Uma cadeia de caracteres de forma livre que descreve a causa provável do erro, quando a propriedade **ProbableCause** é definida como "1" (outro).
 
 </dd> <dt>
 
 **RecommendedActions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres de forma livre que descrevem as ações recomendadas a serem executadas para resolver o erro.
+Uma matriz de cadeias de caracteres de forma livre que descrevem as ações recomendadas a ser tomadas para resolver o erro.
 
 </dd> </dl>
 
@@ -1847,8 +1847,8 @@ Uma matriz de cadeias de caracteres de forma livre que descrevem as ações reco
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

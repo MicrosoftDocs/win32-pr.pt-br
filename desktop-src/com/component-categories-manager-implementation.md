@@ -4,12 +4,12 @@ description: À medida que aumenta o número de componentes disponíveis, torna-
 ms.assetid: c2c67129-bf19-465b-8354-193922aeafaa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2414567beba159c05ea08b3561f0a97ddda1cb70
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 941ba5f422a4305a3bb6056d1d02648dde3bffc9c9f872fe7f7804ebb90a19ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119679206"
 ---
 # <a name="component-categories-manager-implementation"></a>Implementação do Gerenciador de categorias de componentes
 
@@ -28,7 +28,7 @@ Devido a essas considerações, as seguintes alterações foram feitas na catego
 
 Para facilitar o gerenciamento das categorias de componentes, as categorias são listadas em um local central no registro: **\_ categorias de \_ \\ componentes raiz de classes hKey**. Essa chave lista as categorias instaladas com seu CATID e com nomes localizados e legíveis.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Categorizando por recursos de componente](categorizing-by-component-capabilities.md)
 -   [Categorizando por recursos de contêiner](categorizing-by-container-capabilities.md)
@@ -37,9 +37,9 @@ Para mais informações, consulte os seguintes tópicos:
 -   [Definindo categorias de componentes](defining-component-categories.md)
 -   [Associando ícones a uma categoria](associating-icons-with-a-category.md)
 
- 
+ 
 
- 
+ 
 
 
 

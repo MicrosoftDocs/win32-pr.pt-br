@@ -1,5 +1,5 @@
 ---
-description: Subclasses de um controle individual, a menos que o controle seja exibido em uma caixa de diálogo.
+description: Subclasses de um controle individual, a menos que o controle apareça em uma caixa de diálogo.
 ms.assetid: 07a2bce1-4c69-4f8d-bb24-b17351f5e771
 title: Função Ctl3dSubclassCtl
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: 0ff6c6744c4ddda203149981218b8143fb78bce7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1d25bdc189ad80f1976ee76cc7f9909d099f34c8a88b83771ebf3f297c78934
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654476"
 ---
 # <a name="ctl3dsubclassctl-function"></a>Função Ctl3dSubclassCtl
 
-Subclasses de um controle individual, a menos que o controle seja exibido em uma caixa de diálogo.
+Subclasses de um controle individual, a menos que o controle apareça em uma caixa de diálogo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ BOOL Ctl3dSubclassCtl(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-Um identificador para a janela de controle.
+Um alça para a janela de controle.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se o controle tiver uma subclasse com êxito; caso contrário, retornará **false**.
+Retornará **TRUE** se o controle for subclasse com êxito; caso contrário, retornará **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

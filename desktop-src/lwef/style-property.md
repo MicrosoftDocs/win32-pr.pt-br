@@ -4,16 +4,16 @@ description: Propriedade de estilo
 ms.assetid: f01d7d51-8a16-4265-b9b7-93b64f4984e3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 024d46dd7f7ce0e2fdc16b8b17f9074b1eef30c0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 37196aead474c5364c7a94780686707b74bab0f4c4831381cf4c40e47e350e17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715876"
 ---
 # <a name="style-property"></a>Propriedade de estilo
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna ou define o estilo de saída do balão de palavras do caractere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do. ***Caracteres ("*** characterid * * *"). Estilo de balão. estilo* *  \[  =  \]
+*Caracteres Agent. ***("**_characterid_*_"). Estilo de balão. estilo_ *  \[  =  \]
 
 
 
@@ -37,7 +37,7 @@ Retorna ou define o estilo de saída do balão de palavras do caractere.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -96,9 +96,9 @@ Essa propriedade aplica-se somente ao uso do caractere do aplicativo cliente; a 
 
 Os padrões para esses bits de estilo se baseiam em suas configurações quando o caractere é compilado com o editor de caracteres do Microsoft Agent.
 
- 
+ 
 
- 
+ 
 
 
 

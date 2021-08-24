@@ -4,17 +4,17 @@ ms.assetid: 57ef75f6-411c-4b1f-b0dc-ac293ebc0b9c
 title: Filtro de decodificador de CC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d93995207e4f1a397db28f743d1f972b871b0553
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a5feab764883754407030f2b4f72f794d049f5a394efb107ac149b10125da8d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103919769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757396"
 ---
 # <a name="cc-decoder-filter"></a>Filtro de decodificador de CC
 
 > [!IMPORTANT]
-> Este componente foi removido do Windows Vista e de sistemas operacionais posteriores. Ele está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003.
+> este componente foi removido do Windows Vista e sistemas operacionais posteriores. ele está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003.
 
  
 
@@ -32,7 +32,7 @@ Como esse é um filtro de modo kernel, os aplicativos não podem criá-lo direta
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> <dt>
 
 [Exibindo legendas ocultas](viewing-closed-captions.md)

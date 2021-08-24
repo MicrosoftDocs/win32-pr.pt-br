@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Windows.ApplicationModel.h
-ms.openlocfilehash: 09a3c37216298fa672cdd676e835454b4e0f4bd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f17cd3d3b1eab67d0abfea200e657d8c4a17d8df9e3bb850e4ea361a760d19df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758626"
 ---
 # <a name="isuspendingoperation-interface"></a>Interface ISuspendingOperation
 
@@ -67,7 +67,7 @@ A interface **ISuspendingOperation** tem essas propriedades.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| parâmetro<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Windows. ApplicationModel. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Windows. ApplicationModel. idl</dt> </dl> |
 
 

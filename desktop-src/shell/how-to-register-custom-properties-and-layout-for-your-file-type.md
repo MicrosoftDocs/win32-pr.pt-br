@@ -4,12 +4,12 @@ ms.assetid: 29B863B3-E5FD-4E0A-B76B-4AFE5A6A76E3
 title: Como registrar Propriedades personalizadas e layout para o tipo de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da55d0a90d4dd0f3ca109a3ca9f628a3c0912520
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9388965a781d4104ae13de689b72208a8b69e213a758c9b34552c03bb938453
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988978"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714896"
 ---
 # <a name="how-to-register-custom-properties-and-layout-for-your-file-type"></a>Como registrar Propriedades personalizadas e layout para o tipo de arquivo
 

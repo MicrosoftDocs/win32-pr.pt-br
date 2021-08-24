@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4afb5448144867c799bd401bc2d7c180d3958f2a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e4a2ed93a264aa12d61291c3562a455a026e0dfd0d727648b7d13f6ffe360015
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636016"
 ---
 # <a name="ibackgroundcopyfile2setremotename-method"></a>Método IBackgroundCopyFile2:: setremotename
 
@@ -50,7 +50,7 @@ Cadeia de caracteres terminada em nulo que contém o nome do arquivo no servidor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna os seguintes valores de retorno, bem como outros.
 
@@ -58,7 +58,7 @@ Esse método retorna os seguintes valores de retorno, bem como outros.
 
 | Código de retorno                                                                                  | Descrição                                                                                                           |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl>     | Sucesso<br/>                                                                                                    |
+| <dl> <dt>S_OK * * * *</dt> </dl>     | Êxito<br/>                                                                                                    |
 | <dl> <dt>**E_INVALIDARG**</dt> </dl> | O novo nome remoto é uma URL inválida ou a nova URL é muito longa (a URL não pode exceder 2.200 caracteres).<br/> |
 
 
@@ -79,9 +79,9 @@ Se o carimbo de data/hora ou o tamanho de arquivo do novo nome remoto for difere
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |

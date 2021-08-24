@@ -1,17 +1,17 @@
 ---
 description: O nome DNS do dispositivo está hospedando o serviço.
 ms.assetid: 40b4f6a3-0972-4fe3-8216-ca8aaa129726
-title: System. Devices. dnssd. HostName
+title: System.Devices.Dnssd.HostName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa0e596650ec726edc501b333a0a3e45b082b12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d35a34d8a673dbccf6284158e9a2216b85cf52c626f53ebd4115b4925b7a731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119717326"
 ---
-# <a name="systemdevicesdnssdhostname"></a>System. Devices. dnssd. HostName
+# <a name="systemdevicesdnssdhostname"></a>System.Devices.Dnssd.HostName
 
 O nome DNS do dispositivo está hospedando o serviço.
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

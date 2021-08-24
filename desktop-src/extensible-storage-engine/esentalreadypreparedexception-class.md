@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentAlreadyPreparedException'
+description: 'Saiba mais sobre: Classe EsentAlreadyPreparedException'
 title: Classe EsentAlreadyPreparedException
 TOCTitle: EsentAlreadyPreparedException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentAlreadyPreparedException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 357220b36cbb25528cf99e524a6e0cf2eb4f97e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2f4b8d33ae0da7eba014ca70070c602f6873ae77f0aeb79e04c6aade589050b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737616"
 ---
 # <a name="esentalreadypreparedexception-class"></a>Classe EsentAlreadyPreparedException
 
-Classe base para JET_err. AlreadyPrepared exceções.
+Classe base para JET_err. Exceções já preparadas.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentAlreadyPreparedException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentAlreadyPreparedException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentAlreadyPreparedException](./esentalreadypreparedexception-members.md)
+[Membros EsentAlreadyPreparedException](./esentalreadypreparedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

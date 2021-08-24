@@ -6,7 +6,7 @@
       items:
         - name: Identificadores de recursos de comunicação
           href: communications-resource-handles.md
-        - name: Modificação das configurações de recursos de comunicação
+        - name: modificação do Configurações de recursos de comunicação
           href: modification-of-communications-resource-settings.md
         - name: Configuração de recursos de comunicação
           href: communications-resource-configuration.md

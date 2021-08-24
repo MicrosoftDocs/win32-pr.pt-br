@@ -1,6 +1,6 @@
 ---
-description: Representa um item em uma pasta do Shell. Este objeto contém propriedades e métodos que permitem que você recupere informações sobre o item.
-title: Objeto FolderItem (shldisp. h)
+description: Representa um item em uma pasta shell. Esse objeto contém propriedades e métodos que permitem recuperar informações sobre o item.
+title: Objeto FolderItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,34 +13,34 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 38c0e049-2f9f-43bc-8bf2-1b7becf16e66
-ms.openlocfilehash: a8b9309e7bd1c8cbcc05360c076db085d0f8b991
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: f6744441c051d65bd24f2db888f9bc8d71e66cedcf50c097094beee8ae5a96a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119715366"
 ---
 # <a name="folderitem-object"></a>Objeto FolderItem
 
-Representa um item em uma pasta do Shell. Este objeto contém propriedades e métodos que permitem que você recupere informações sobre o item.
+Representa um item em uma pasta shell. Esse objeto contém propriedades e métodos que permitem recuperar informações sobre o item.
 
 ## <a name="members"></a>Membros
 
-O objeto **FolderItem** tem estes tipos de membros:
+O **objeto FolderItem** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **FolderItem** tem esses métodos.
+O **objeto FolderItem** tem esses métodos.
 
 
 
 | Método                                      | Descrição                                                                                                                                                 |
 |:--------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**InvokeVerb**](folderitem-invokeverb.md) | Executa um verbo no item.<br/>                                                                                                                     |
-| [**Verbos**](folderitem-verbs.md)           | Recupera o objeto [**FolderItemVerbs**](folderitemverbs.md) do item. Esse objeto é a coleção de verbos que podem ser executados no item.<br/> |
+| [**Verbos**](folderitem-verbs.md)           | Recupera o objeto [**FolderItemVerbs do**](folderitemverbs.md) item. Esse objeto é a coleção de verbos que podem ser executados no item.<br/> |
 
 
 
@@ -48,16 +48,16 @@ O objeto **FolderItem** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **FolderItem** tem essas propriedades.
+O **objeto FolderItem** tem essas propriedades.
 
 
 
 | Propriedade                                                   | Tipo de acesso           | Descrição                                                                                                                                                                                                        |
 |:-----------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Aplicativo**](folderitem-application.md)<br/>   | Somente leitura<br/>  | Contém o objeto de [**aplicativo**](folderitem-application.md) do item de pasta.<br/>                                                                                                                   |
-| [**GetFolder**](folderitem-getfolder.md)<br/>       | Somente leitura<br/>  | Contém o objeto de [**pasta**](folder.md) do item, se o item for uma pasta.<br/>                                                                                                                           |
+| [**Aplicativo**](folderitem-application.md)<br/>   | Somente leitura<br/>  | Contém o [**objeto**](folderitem-application.md) Application do item de pasta.<br/>                                                                                                                   |
+| [**Getfolder**](folderitem-getfolder.md)<br/>       | Somente leitura<br/>  | Contém o objeto [**Pasta do**](folder.md) item, se o item for uma pasta.<br/>                                                                                                                           |
 | [**GetLink**](folderitem-getlink.md)<br/>           | Somente leitura<br/>  | Contém o objeto [**ShellLinkObject**](shelllinkobject-object.md) do item, se o item for um atalho.<br/>                                                                                                |
-| [**Isnavegável**](folderitem-isbrowsable.md)<br/>   | Somente leitura<br/>  | Indica se o item pode ser hospedado dentro de um navegador ou quadro do Windows Explorer.<br/>                                                                                                                         |
+| [**IsBrowsable**](folderitem-isbrowsable.md)<br/>   | Somente leitura<br/>  | Indica se o item pode ser hospedado dentro de um navegador ou Windows Explorer quadro.<br/>                                                                                                                         |
 | [**IsFileSystem**](folderitem-isfilesystem.md)<br/> | Somente leitura<br/>  | Indica se o item faz parte do sistema de arquivos.<br/>                                                                                                                                                       |
 | [**IsFolder**](folderitem-isfolder.md)<br/>         | Somente leitura<br/>  | Indica se o item é uma pasta.<br/>                                                                                                                                                                      |
 | [**Islink**](folderitem-islink.md)<br/>             | Somente leitura<br/>  | Indica se o item é um atalho.<br/>                                                                                                                                                               |

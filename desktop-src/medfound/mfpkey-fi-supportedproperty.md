@@ -4,12 +4,12 @@ ms.assetid: cc7fb83d-8423-4e0a-a520-b58d3345ef89
 title: Propriedade MFPKEY_FI_SUPPORTED (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bd056ec0895b63d315c5f3371ab7befff7ca85a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4504e3bf6b6010fb27c08750e521aaa740b05f78c434dfac5a11ffacbbd66327
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713946"
 ---
 # <a name="mfpkey_fi_supported-property"></a>\_ \_ Propriedade com suporte do MFPKEY Fi
 
@@ -34,7 +34,7 @@ Especifica se o decodificador dá suporte à interpolação de quadros.
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows XP, Windows Vista ou Windows 7<br/>                                       |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 
