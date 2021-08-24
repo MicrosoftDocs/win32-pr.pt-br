@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dadaa7eaa310c5b3a6a2730d316218bc2607d100
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3dd7faf1a28d6cafe7b33e4df49f32c631bb699e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764385"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122477522"
 ---
 # <a name="jetresizedatabase-function"></a>Função JetResizeDatabase
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 A função **JetResizeDatabase** estende ou reduz o tamanho de um banco de dados que está aberto no momento.
 
-A função **JetResizeDatabase** foi introduzida no sistema operacional Windows 8.
+a função **JetResizeDatabase** foi introduzida no sistema operacional Windows 8.
 
 ``` c++
 JET_ERR JET_API JetResizeDatabase(
@@ -67,56 +67,24 @@ Um ponteiro para um número que recebe o tamanho do banco de dados, em páginas,
 
 Um grupo de bits que especifica zero ou mais valores listados na tabela a seguir.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Valor</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitResizeDatabaseOnlyGrow</p></td>
-<td><p>Aumentar apenas o banco de dados. Se a chamada de redimensionamento reduzir o banco de dados, não faça nada.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitResizeDatabaseOnlyGrow</p> | <p>Aumentar apenas o banco de dados. Se a chamada de redimensionamento reduzir o banco de dados, não faça nada.</p> | 
 
 
-### <a name="return-value"></a>Retornar valor
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno listados na tabela a seguir. Para obter mais informações sobre os possíveis erros do ESE (mecanismo de armazenamento extensível), consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+### <a name="return-value"></a>Valor retornado
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Código de retorno</p></th>
-<th><p>Descrição</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_errSuccess</p></td>
-<td><p>A operação foi concluída com sucesso.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_errDiskFull</p></td>
-<td><p>Não há espaço livre suficiente no volume para executar a operação de crescimento.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_errDiskIO</p></td>
-<td><p>Um erro relacionado a arquivo foi retornado pela função <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a> . Para obter mais informações sobre outros erros relacionados a arquivos que podem ser retornados, consulte <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a>.</p></td>
-</tr>
-</tbody>
-</table>
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno listados na tabela a seguir. para obter mais informações sobre os possíveis erros do ESE (extensible Armazenamento engine), consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+
+
+| <p>Código de retorno</p> | <p>Descrição</p> | 
+|--------------------|--------------------|
+| <p>JET_errSuccess</p> | <p>A operação foi concluída com sucesso.</p> | 
+| <p>JET_errDiskFull</p> | <p>Não há espaço livre suficiente no volume para executar a operação de crescimento.</p> | 
+| <p>JET_errDiskIO</p> | <p>Um erro relacionado a arquivo foi retornado pela função <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a> . Para obter mais informações sobre outros erros relacionados a arquivos que podem ser retornados, consulte <a href="gg269242(v=exchg.10).md">JetSetDatabaseSize</a>.</p> | 
+
 
 
 #### <a name="remarks"></a>Comentários
@@ -129,34 +97,9 @@ O tamanho do arquivo pode não corresponder ao número de páginas retornadas no
 
 #### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows 8.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2012.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>DLL</strong></p></td>
-<td><p>Requer ESENT.dll.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows 8.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2012.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em ESENT. h.</p> | | <p><strong>Biblioteca</strong></p> | <p>Use ESENT. lib.</p> | | <p><strong>DLL</strong></p> | <p>Requer ESENT.dll.</p> | 
+
 
 
 #### <a name="see-also"></a>Confira também

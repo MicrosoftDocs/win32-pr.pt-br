@@ -1,5 +1,5 @@
 ---
-description: A função de função PdhVbUpdateLog atualiza a consulta atual e grava novos dados no arquivo de log. Essa função chama PdhUpdateLog.
+description: A função PdhVbUpdateLog atualiza a consulta atual e grava novos dados no arquivo de log. Essa função chama PdhUpdateLog.
 ms.assetid: a7a3ad18-2d61-448e-9764-ba363398e804
 title: Função PdhVbUpdateLog
 ms.topic: reference
@@ -13,55 +13,55 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: c02e533f57481004b0a7de9f779399b20bddc0af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7bf8af71d3a0f5cd20a84ef0f1532806e3d3e8d268bd2d322d617534b533cc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033606"
 ---
 # <a name="pdhvbupdatelog-function"></a>Função PdhVbUpdateLog
 
-A função de função **PdhVbUpdateLog** atualiza a consulta atual e grava novos dados no arquivo de log. Essa função chama [**PdhUpdateLog**](/windows/desktop/api/Pdh/nf-pdh-pdhupdateloga).
+A **função PdhVbUpdateLog** atualiza a consulta atual e grava novos dados no arquivo de log. Essa função chama [**PdhUpdateLog.**](/windows/desktop/api/Pdh/nf-pdh-pdhupdateloga)
 
 > [!IMPORTANT]
-> A função que este tópico descreve pode ser alterada ou indisponível no futuro. Em vez disso, a Microsoft recomenda que você use as funções descritas em [funções de contadores de desempenho](performance-counters-functions.md).
+> A função que este tópico descreve pode ser alterada ou não disponível no futuro. Em vez disso, a Microsoft recomenda que você use as funções descritas em [Funções de Contadores de Desempenho](performance-counters-functions.md).
 
-Função PdhVbUpdateLog ( \_ ByVal HLog as \_ hLog PDH, \_ ByVal szUserString as LPCTSTR \_ )
+Função PdhVbUpdateLog( \_ ByVal hLog As PDH \_ HLOG, \_ ByVal szUserString As LPCTSTR \_ )
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-*hLog* \[ no\]
+*hLog* \[ Em\]
 </dt> <dd>
 
-Identificador para o arquivo de log a ser atualizado. Esse identificador é retornado pela função [**PdhVbOpenLog**](pdhvbopenlog.md) .
+Lidar com o arquivo de log a ser atualizado. Esse handle é retornado pela [**função PdhVbOpenLog.**](pdhvbopenlog.md)
 
 </dd> <dt>
 
-*szUserString* \[ no\]
+*szUserString* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres que especifica os dados a serem adicionados ao arquivo de log. Isso geralmente é usado para comentários no arquivo de log.
+Ponteiro para uma cadeia de caracteres que especifica os dados a serem adicionados ao arquivo de log. Isso geralmente é usado para comentários dentro do arquivo de log.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará 0.
+Se a função for bem-sucedida, ela retornará 0.
 
-Se a função falhar, o valor de retorno será um [código de erro do sistema](/windows/desktop/Debug/system-error-codes) ou um código de [erro PDH](pdh-error-codes.md). Os valores a seguir são possíveis.
+Se a função falhar, o valor de retorno será um código [de erro do sistema](/windows/desktop/Debug/system-error-codes) ou um código de erro [PDH](pdh-error-codes.md). A seguir estão os valores possíveis.
 
 
 
 | Código de retorno                                                                                                | Descrição                                                                                            |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_buffer insuficiente de PDH \_**</dt> </dl>   | Os dados solicitados são maiores que o buffer fornecido. Não é possível retornar os dados solicitados.<br/> |
-| <dl> <dt>**\_argumento inválido de PDH \_**</dt> </dl>      | Um ou mais dos buffers de cadeia de caracteres não tem o tamanho correto.<br/>                                  |
-| <dl> <dt>**\_identificador inválido de PDH \_**</dt> </dl>        | O identificador não é um objeto PDH válido.<br/>                                                       |
-| <dl> <dt>**\_ \_ \_ erro ao abrir arquivo de log PDH \_**</dt> </dl> | Não é possível abrir o arquivo de log especificado.<br/>                                                      |
-| <dl> <dt>**\_arquivo PDH \_ não \_ encontrado**</dt> </dl>       | Não é possível localizar o arquivo especificado.<br/>                                                          |
+| <dl> <dt>**BUFFER INSUFICIENTE DE PDH \_ \_**</dt> </dl>   | Os dados solicitados são maiores do que o buffer fornecido. Não é possível retornar os dados solicitados.<br/> |
+| <dl> <dt>**ARGUMENTO INVÁLIDO \_ PDH \_**</dt> </dl>      | Um ou mais buffers de cadeia de caracteres não tem o tamanho correto.<br/>                                  |
+| <dl> <dt>**PDH \_ INVALID \_ HANDLE**</dt> </dl>        | O identificador não é um objeto PDH válido.<br/>                                                       |
+| <dl> <dt>**ERRO DE ABERTURA DO \_ \_ ARQUIVO \_ DE LOG PDH \_**</dt> </dl> | Não é possível abrir o arquivo de log especificado.<br/>                                                      |
+| <dl> <dt>**ARQUIVO PDH \_ \_ NÃO \_ ENCONTRADO**</dt> </dl>       | Não é possível encontrar o arquivo especificado.<br/>                                                          |
 
 
 
@@ -77,9 +77,9 @@ Deve haver uma consulta aberta no momento e os contadores desejados devem ser ad
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| Biblioteca<br/>                  | <dl> <dt>PDH. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                               |
+| Biblioteca<br/>                  | <dl> <dt>Pdh.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Pdh.dll</dt> </dl> |
 
 

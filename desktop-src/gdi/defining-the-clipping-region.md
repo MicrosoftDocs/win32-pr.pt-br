@@ -1,19 +1,19 @@
 ---
-description: Quando o usuário clica em definir a região do clipe, o sistema emite uma mensagem de comando do WM \_ .
+description: Quando o usuário clica em Definir Região de Clipe , o sistema emite uma mensagem WM \_ COMMAND.
 ms.assetid: 4b20f310-98c0-42c1-b3b3-eadf9bb2003c
 title: Definindo a região de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e49693c0e94ab9b43af817f80985af98ae2ede
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caa56c2eb036430b90e3c8f7b6fc0894abdc37306edef77438afae796cb1cc04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115306"
 ---
 # <a name="defining-the-clipping-region"></a>Definindo a região de recorte
 
-Quando o usuário clica em definir a região do clipe, o sistema emite uma mensagem de [**\_ comando do WM**](../menurc/wm-command.md) . O parâmetro *wParam* dessa mensagem contém uma constante definida pelo aplicativo, a IDM \_ define, que indica que o usuário selecionou essa opção no menu. O aplicativo processa essa entrada definindo um sinalizador booliano, fDefineRegion, conforme mostrado no exemplo de código a seguir.
+Quando o usuário clica em Definir Região de Clipe , o sistema emite uma mensagem [**WM \_ COMMAND.**](../menurc/wm-command.md) O *parâmetro wParam* dessa mensagem contém uma constante definida pelo aplicativo, IDM DEFINE, que indica que o usuário selecionou essa \_ opção no menu. O aplicativo processa essa entrada definindo um sinalizador booliana, fDefineRegion, conforme mostrado no exemplo de código a seguir.
 
 
 ```C++
@@ -28,9 +28,9 @@ case WM_COMMAND:
 
 
 
-Depois de clicar em **definir região de recorte** , o usuário pode começar a desenhar o retângulo clicando e arrastando o mouse enquanto o cursor estiver na área do cliente do aplicativo.
+Depois de clicar em **Definir** Região de Recorte , o usuário pode começar a desenhar o retângulo clicando e arrastando o mouse enquanto o cursor está na área de cliente do aplicativo.
 
-Quando o usuário pressiona o botão esquerdo, o sistema emite uma mensagem do [**WM \_ LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) . O parâmetro *lParam* desta mensagem contém as coordenadas do cursor, que correspondem ao canto superior esquerdo de um retângulo usado para definir a região de recorte. O aplicativo processa a mensagem do **WM \_ LBUTTONDOWN** , da seguinte maneira.
+Quando o usuário pressiona o botão esquerdo, o sistema emite uma mensagem [**WM \_ LBUTTONDOWN.**](../inputdev/wm-lbuttondown.md) O *parâmetro lParam* dessa mensagem contém as coordenadas do cursor, que correspondem ao canto superior esquerdo de um retângulo usado para definir a região de recorte. O aplicativo processa **a mensagem WM \_ LBUTTONDOWN,** da seguinte forma.
 
 
 ```C++
@@ -108,7 +108,7 @@ switch (message)
 
 
 
-À medida que o usuário arrasta o mouse, o sistema emite mensagens do [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md) e armazena as novas coordenadas do cursor no parâmetro *lParam* . Cada vez que o aplicativo recebe uma nova mensagem **\_ MOUSEMOVE do WM** , ele apaga o retângulo anterior (se houver) e desenha o novo retângulo chamando a função [**Polyline**](/windows/desktop/api/Wingdi/nf-wingdi-polyline) , passando-o para as coordenadas dos quatro cantos do retângulo. O aplicativo executa as seguintes tarefas.
+À medida que o usuário arrasta o mouse, o sistema emite mensagens [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md) e armazena as novas coordenadas de cursor no *parâmetro lParam.* Sempre que o aplicativo recebe uma nova mensagem **WM \_ MOUSEMOVE,** ele apaga o retângulo anterior (se houver) e desenha o novo retângulo chamando a função [**Polyline,**](/windows/desktop/api/Wingdi/nf-wingdi-polyline) passando-a pelas coordenadas dos quatro cantos do retângulo. O aplicativo executa as tarefas a seguir.
 
 
 ```C++

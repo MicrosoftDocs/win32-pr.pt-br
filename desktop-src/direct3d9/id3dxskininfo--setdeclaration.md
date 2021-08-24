@@ -1,7 +1,7 @@
 ---
 description: Define a declaração de vértice.
 ms.assetid: cbb802ac-f0ba-41e6-8c67-a787982f975f
-title: Método ID3DXSkinInfo::SetDeclaration (D3DX9Mesh.h)
+title: 'Método ID3DXSkinInfo:: setdeclaration (D3DX9Mesh. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119985256"
 ---
-# <a name="id3dxskininfosetdeclaration-method"></a>Método ID3DXSkinInfo::SetDeclaration
+# <a name="id3dxskininfosetdeclaration-method"></a>Método ID3DXSkinInfo:: setdeclaration
 
 Define a declaração de vértice.
 
@@ -40,12 +40,12 @@ HRESULT SetDeclaration(
 
 <dl> <dt>
 
-*pDeclaration* \[ Em\]
+*pDeclaration* \[ no\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Ponteiro para uma matriz de [**elementos D3DVERTEXELEMENT9.**](d3dvertexelement9.md)
+Ponteiro para uma matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) .
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Ponteiro para uma matriz de [**elementos D3DVERTEXELEMENT9.**](d3dvertexelement9
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
 
 
 
@@ -73,7 +73,7 @@ Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método 
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::GetDeclaration**](id3dxskininfo--getdeclaration.md)
+[**ID3DXSkinInfo:: getdeclaration**](id3dxskininfo--getdeclaration.md)
 </dt> </dl>
 
  

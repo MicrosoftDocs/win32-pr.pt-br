@@ -1,19 +1,19 @@
 ---
-description: Indica o número mínimo de amostras progressivas que a Microsoft Media Foundation transformação (MFT) deve permitir que seja pendentes em um determinado momento.
+description: Indica o número mínimo de amostras progressivas que o MFT (transformação Microsoft Media Foundation) deve permitir que seja ousado a qualquer momento.
 ms.assetid: C1F27F39-FADA-4644-ACD6-B02EAD9CFFE7
-title: Atributo MF_SA_MINIMUM_OUTPUT_SAMPLE_COUNT_PROGRESSIVE (Mftransform. h)
+title: MF_SA_MINIMUM_OUTPUT_SAMPLE_COUNT_PROGRESSIVE atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b452f9fa4016705ed90a7f5b07abcaa6ff11983
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 48df5262e225b8768d3251f9768cf2156ee2acacb19ca70752ae5bf989b682ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119955426"
 ---
-# <a name="mf_sa_minimum_output_sample_count_progressive-attribute"></a>\_ \_ \_ \_ \_ Atributo progressivo da contagem de amostras de saída mínima \_ de MF
+# <a name="mf_sa_minimum_output_sample_count_progressive-attribute"></a>Atributo PROGRESSIVO MF \_ SA MINIMUM OUTPUT SAMPLE \_ \_ \_ \_ COUNT \_
 
-Indica o número mínimo de amostras progressivas que a Microsoft Media Foundation transformação (MFT) deve permitir que seja pendentes em um determinado momento.
+Indica o número mínimo de amostras progressivas que o MFT (transformação Microsoft Media Foundation) deve permitir que seja ousado a qualquer momento.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,12 +21,12 @@ Indica o número mínimo de amostras progressivas que a Microsoft Media Foundati
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo aplica-se somente a MFTs que usam um buffer circular para alocar seus próprios exemplos de saída. Outros MFTs ignoram esse atributo.
+Esse atributo se aplica somente a MFTs que usam um buffer circular para alocar suas próprias amostras de saída. Outros MFTs ignoram esse atributo.
 
-Para definir este atributo:
+Para definir esse atributo:
 
-1.  Chame [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) no decodificador para obter um ponteiro [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
-2.  Chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32) para adicionar o atributo.
+1.  Chame [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) no decodificador para obter um [**ponteiro IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+2.  Chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32) para adicionar o atributo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,9 +34,9 @@ Para definir este atributo:
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -44,7 +44,7 @@ Para definir este atributo:
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

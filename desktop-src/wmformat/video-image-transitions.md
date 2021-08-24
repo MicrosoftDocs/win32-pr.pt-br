@@ -3,26 +3,26 @@ title: Transições de imagem de vídeo
 description: Transições de imagem de vídeo
 ms.assetid: 201ddbfb-567b-4893-b754-569f1e7d8466
 keywords:
-- SDK do Windows Media Format, transições de imagem de vídeo
+- Windows SDK do formato de mídia, transições de imagem de vídeo
 - ASF (Advanced Systems Format), transições de imagem de vídeo
 - ASF (formato de sistemas avançados), transições de imagem de vídeo
 - transições de imagem de vídeo
-- Codec do Windows Media Video 9 Image v2
-- codecs, imagem do Windows Media Video 9 Image v2
+- Windows Codec de imagem de vídeo de mídia 9 v2
+- codecs, Windows codec de imagem de vídeo de mídia 9 v2
 - fluxos de vídeo, Windows Media Video 9 Image v2 codec
 - fluxos de vídeo, transições de imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbfd02628a78196a73750c2c0ff6b9e9c3d6729c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3b0a915f34ac9a2dcc00f8bcec739d48051361c1744e8e455166d56238529d9c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771236"
 ---
 # <a name="video-image-transitions"></a>Transições de imagem de vídeo
 
-O codec Windows Media Video 9 Image v2 anima uma série de imagens, resultando em um fluxo de vídeo. O codec pode manipular duas imagens ao mesmo tempo, reuni-las e criar uma transição de uma para a outra de acordo com a configuração que você fornece. Esta seção descreve as transições com suporte e os parâmetros necessários.
+o codec Windows Media Video 9 Image v2 anima uma série de imagens, resultando em um fluxo de vídeo. O codec pode manipular duas imagens ao mesmo tempo, reuni-las e criar uma transição de uma para a outra de acordo com a configuração que você fornece. Esta seção descreve as transições com suporte e os parâmetros necessários.
 
 As transições são listadas na tabela a seguir por seus identificadores globais.
 
@@ -50,7 +50,7 @@ As transições são listadas na tabela a seguir por seus identificadores globai
 
 
 
- 
+ 
 
 Cada transição é totalmente descrita em seu próprio tópico.
 
@@ -64,9 +64,9 @@ Cada transição é totalmente descrita em seu próprio tópico.
 [**WMT \_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

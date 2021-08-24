@@ -3,9 +3,9 @@ title: Propriedade SAMIstyle IWMPClosedCaption
 description: A propriedade SAMIstyle Obtém ou define o estilo de legendagem oculta.
 ms.assetid: 0b1f92c6-b659-4ade-90c8-62a06e475f5c
 keywords:
-- Propriedade SAMIstyle Windows Media Player
-- Propriedade SAMIstyle Windows Media Player, interface IWMPClosedCaption
-- Interface IWMPClosedCaption Windows Media Player, Propriedade SAMIstyle
+- Windows Media Player da propriedade SAMIstyle
+- propriedade samistyle Windows Media Player, interface IWMPClosedCaption
+- interface IWMPClosedCaption Windows Media Player, propriedade samistyle
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bd0b48fc1807d6ca1854651c7f222183a845be3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2cede8964636073c393cb34bfa1be22855467f4cb243834bd1e11a4ffc492665
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031416"
 ---
 # <a name="iwmpclosedcaptionsamistyle-property"></a>Propriedade IWMPClosedCaption:: SAMIstyle
 

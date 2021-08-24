@@ -1,5 +1,5 @@
 ---
-description: Executa o aplicativo Painel de Controle ( \* .cpl) especificado.
+description: Executa o aplicativo Painel de Controle ( \*.cpl) especificado.
 title: Método Shell.ControlPanelItem (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 54979bbd-b36b-4b5b-a8a0-5f63e9526fa5
-ms.openlocfilehash: 04d2493f5d0ec5b86d19689cb8e7c2a02a82e536
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: d78cb161f8d89de53d491d113f141d63c28ae58ab359cc0198ff4aaa54e6062f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709796"
 ---
 # <a name="shellcontrolpanelitem-method"></a>Método Shell.ControlPanelItem
 
-Executa o aplicativo Painel de Controle ( \* .cpl) especificado. Se o aplicativo já estiver aberto, ele ativará a instância em execução.
+Executa o aplicativo Painel de Controle ( \*.cpl) especificado. Se o aplicativo já estiver aberto, ele ativará a instância em execução.
 
 > [!Note]  
-> A partir do Windows Vista, a maioria Painel de Controle aplicativos são itens do Shell e não podem ser abertos com essa função. Para abrir esses Painel de Controle aplicativos, passe o nome canônico para control.exe. Por exemplo:
+> A partir Windows Vista, a maioria Painel de Controle aplicativos são itens do Shell e não podem ser abertos com essa função. Para abrir esses Painel de Controle aplicativos, passe o nome canônico para control.exe. Por exemplo:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -63,11 +63,11 @@ Shell.ControlPanelItem( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-O Painel de Controle nome do arquivo do aplicativo. Todos Painel de Controle aplicativos têm a extensão .cpl.
+O Painel de Controle nome do arquivo do aplicativo. Todos Painel de Controle aplicativos têm a extensão .cpl aplicativo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -81,7 +81,7 @@ Esse método não retorna um valor.
 
 O exemplo a seguir **usa ControlPanelItem** para executar o Painel de Controle **do** Propriedades de Vídeo item. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -137,7 +137,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

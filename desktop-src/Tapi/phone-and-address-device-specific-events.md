@@ -1,17 +1,17 @@
 ---
 description: O exemplo de código a seguir ilustra um manipulador de eventos para eventos de endereço e dispositivo de telefone. O código para cada evento mostra como criar a interface de evento e como recuperar os dados do evento.
 ms.assetid: 236d4e7f-865f-4b26-8da6-c86476588c47
-title: Telefone e endereço de eventos específicos do dispositivo
+title: Telefone e tratar eventos específicos do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40cf4c45eb7c7b933a36814f8eba8cd5cc39d8cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c69a8dd5bd941946d6d4b904e8bc367b9949d6782f350a1e065eb672b2db57ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034536"
 ---
-# <a name="phone-and-address-device-specific-events"></a>Telefone e endereço de eventos específicos do dispositivo
+# <a name="phone-and-address-device-specific-events"></a>Telefone e tratar eventos específicos do dispositivo
 
 O exemplo de código a seguir ilustra um manipulador de eventos para eventos de endereço e dispositivo de telefone. O código para cada evento mostra como criar a interface de evento e como recuperar os dados do evento.
 

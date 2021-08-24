@@ -4,12 +4,12 @@ description: Esta seção contém informações gerais sobre a funcionalidade de
 ms.assetid: dd104661-1e0c-4569-9753-817bcded1894
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 121a4df5aa6fab222a5c4387ebdcfba51a7977b2
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 7f4961d80c04f8fa570286666511c04b1208c940369cd13b836095b8899505de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104454424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119922486"
 ---
 # <a name="about-custom-draw"></a>Sobre o desenho personalizado
 
@@ -26,7 +26,7 @@ Esta seção contém informações gerais sobre a funcionalidade de desenho Pers
 <!-- -->
 
 -   [Sobre as mensagens de notificação de desenho personalizado](#about-custom-draw-notification-messages)
--   [Ciclos de pintura, estágios de desenho e mensagens de notificação](#paint-cycles-drawing-stages-and-notification-messages)
+-   [Paint Ciclos, estágios de desenho e mensagens de notificação](#paint-cycles-drawing-stages-and-notification-messages)
 -   [Aproveitando os serviços personalizados de desenho](#taking-advantage-of-custom-draw-services)
     -   [Respondendo à notificação de prepintura](#responding-to-the-prepaint-notification)
     -   [Solicitando notificações específicas do item](#requesting-item-specific-notifications)
@@ -54,11 +54,11 @@ O parâmetro *lParam* de uma notificação de desenho Personalizada será o ende
 
 
 
- 
+ 
 
-## <a name="paint-cycles-drawing-stages-and-notification-messages"></a>Ciclos de pintura, estágios de desenho e mensagens de notificação
+## <a name="paint-cycles-drawing-stages-and-notification-messages"></a>Paint Ciclos, estágios de desenho e mensagens de notificação
 
-Como todos os aplicativos do Windows, os controles comuns pintam e apagam-se periodicamente com base nas mensagens recebidas do sistema ou de outros aplicativos. O processo de uma pintura de controle ou apagamento é chamado de *ciclo de pintura*. Controles que dão suporte a códigos de notificação [ \_ CUSTOMDRAW](nm-customdraw.md) de envio de nm para desenho personalizado periodicamente por meio de cada ciclo de pintura. Esse código de notificação é acompanhado por uma estrutura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) ou outra estrutura que contém uma estrutura **NMCUSTOMDRAW** como seu primeiro membro.
+assim como todos os aplicativos Windows, os controles comuns pintam e apagam-se periodicamente com base nas mensagens recebidas do sistema ou de outros aplicativos. O processo de uma pintura de controle ou apagamento é chamado de *ciclo de pintura*. Controles que dão suporte a códigos de notificação [ \_ CUSTOMDRAW](nm-customdraw.md) de envio de nm para desenho personalizado periodicamente por meio de cada ciclo de pintura. Esse código de notificação é acompanhado por uma estrutura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) ou outra estrutura que contém uma estrutura **NMCUSTOMDRAW** como seu primeiro membro.
 
 Uma informação que a estrutura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/ns-commctrl-nmcustomdraw) contém é o estágio atual do ciclo de pintura. Isso é chamado de estágio de *desenho* e é representado pelo valor no membro **dwDrawStage** da estrutura. Um controle informa seu pai sobre quatro estágios básicos de desenho. Esses estágios básico, ou global, de desenho são representados na estrutura pelos seguintes valores de sinalizador (definidos em commctrl. h).
 
@@ -73,7 +73,7 @@ Uma informação que a estrutura [**NMCUSTOMDRAW**](/windows/win32/api/commctrl/
 
 
 
- 
+ 
 
 Cada um dos valores anteriores pode ser combinado com o \_ sinalizador de item CDDs para especificar estágios de desenho específicos de itens. Para sua conveniência, commctrl. h contém os valores específicos de item a seguir.
 
@@ -89,7 +89,7 @@ Cada um dos valores anteriores pode ser combinado com o \_ sinalizador de item C
 
 
 
- 
+ 
 
 Seu aplicativo deve processar o código de notificação [nm \_ CUSTOMDRAW](nm-customdraw.md) e retornar um valor específico que informará ao controle o que ele deve fazer. Consulte as seções a seguir para obter mais informações sobre esses valores de retorno.
 
@@ -112,7 +112,7 @@ No início de cada ciclo de pintura, o controle envia o código de notificação
 
 
 
-| Retornar valor            | Efeito                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Valor retornado            | Efeito                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | dopadrão CDRF \_         | O controle será desenhado em si mesmo. Ele não enviará notificações [de \_ CUSTOMDRAW nm](nm-customdraw.md) adicionais para este ciclo de pintura. Esse sinalizador não pode ser usado com nenhum outro sinalizador.                                                                                                                                                                                                                                                                               |
 | doborracha CDRF \_           | O controle só desenhará o plano de fundo.                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -126,7 +126,7 @@ No início de cada ciclo de pintura, o controle envia o código de notificação
 
 
 
- 
+ 
 
 ### <a name="requesting-item-specific-notifications"></a>Solicitando notificações específicas do item
 
@@ -145,7 +145,7 @@ Para alterar as cores do texto de todos os controles que dão suporte a desenho 
 > [!Note]  
 > Antes da [versão 6,0](common-control-versions.md) dos controles comuns, as barras de ferramentas ignoram o sinalizador [**CDRF \_ NEWFONT**](cdrf-constants.md) . A versão 6,0 dá suporte ao sinalizador **CDRF \_ NEWFONT** e você pode usá-lo para selecionar uma fonte diferente para a barra de ferramentas. No entanto, você não pode alterar a cor de uma barra de ferramentas quando um estilo visual está ativo. Para alterar a cor de uma barra de ferramentas na versão 6,0, primeiro você deve desabilitar os estilos visuais chamando [**SetWindowTheme**](/windows/desktop/api/Uxtheme/nf-uxtheme-setwindowtheme) e especificando nenhum estilo visual:
 
- 
+ 
 
 
 ```
@@ -196,6 +196,6 @@ Para obter um exemplo de um manipulador de notificação de [ \_ CUSTOMDRAW nm](
 [EXEMPLO: CustDTv ilustra o desenho personalizado em um TreeView (Q248496)]( https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

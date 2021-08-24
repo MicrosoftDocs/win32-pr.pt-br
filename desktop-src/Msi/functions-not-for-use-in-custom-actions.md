@@ -4,12 +4,12 @@ ms.assetid: 55fdd82b-9f34-4c2c-a837-8a09f21f568a
 title: Funções não para uso em ações personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c77c4714ca65614200cf77d6b207b6eebcaf179
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aaddf6edae9636a599996a4ab8208537c1c673687337b65a9fcb74d1a8fc1f58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649616"
 ---
 # <a name="functions-not-for-use-in-custom-actions"></a>Funções não para uso em ações personalizadas
 
@@ -65,7 +65,7 @@ As [funções do instalador](installer-function-reference.md) a seguir nunca dev
 -   [**MsiProvideQualifiedComponent**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponenta)
 -   [**MsiProvideQualifiedComponentEx**](/windows/desktop/api/Msi/nf-msi-msiprovidequalifiedcomponentexa)
 
-Uma ação personalizada nunca deve gerar um novo thread que usa funções Windows Installer para alterar o estado do recurso, o estado do componente ou para enviar mensagens de um evento de controle. A tentativa de fazer isso faz com que a instalação falhe.
+uma ação personalizada nunca deve gerar um novo thread que usa funções Windows Installer para alterar o estado do recurso, o estado do componente ou para enviar mensagens de um evento de controle. A tentativa de fazer isso faz com que a instalação falhe.
 
  
 

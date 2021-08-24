@@ -1,8 +1,8 @@
 ---
-description: A classe de DataFile do CIM \_ representa uma coleção nomeada de dados ou código executável. Somente as instâncias de arquivos em discos fixos locais serão retornadas.
+description: A classe CIM \_ DataFile representa uma coleção nomeada de dados ou código executável. Somente as instâncias de arquivos em discos fixos locais serão retornadas.
 ms.assetid: e90e1216-e943-4f3a-9f6c-8a0b4568a11f
 ms.tgt_platform: multiple
-title: Classe CIM_DataFile
+title: CIM_DataFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -47,19 +47,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0badba05eafa5cba06e48b8494ca893936af360e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6bbc73534914f1b6dc1bfd9f620a436bbcea2056a70cb50757afccf60beea04c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924646"
 ---
-# <a name="cim_datafile-class"></a>Classe de DataFile do CIM \_
+# <a name="cim_datafile-class"></a>Classe CIM \_ DataFile
 
-A classe de **\_ DataFile do CIM** representa uma coleção nomeada de dados ou código executável. Somente as instâncias de arquivos em discos fixos locais serão retornadas.
+A **classe CIM \_ DataFile** representa uma coleção nomeada de dados ou código executável. Somente as instâncias de arquivos em discos fixos locais serão retornadas.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
@@ -109,14 +109,14 @@ class CIM_DataFile : CIM_LogicalFile
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ DataFile do CIM** tem estes tipos de membros:
+A **classe CIM \_ DataFile** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ DataFile de arquivo CIM** tem esses métodos.
+A **classe CIM \_ DataFile** tem esses métodos.
 
 
 
@@ -124,15 +124,15 @@ A classe de **\_ DataFile de arquivo CIM** tem esses métodos.
 |:------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**ChangeSecurityPermissions**](changesecuritypermissions-method-in-class-cim-datafile.md)     | Altera as permissões de segurança para o arquivo lógico especificado no caminho do objeto. Implementado pelo WMI.<br/>                                   |
 | [**ChangeSecurityPermissionsEx**](changesecuritypermissionsex-method-in-class-cim-datafile.md) | Altera as permissões de segurança para o arquivo lógico especificado no caminho do objeto. Implementado pelo WMI.<br/>                                   |
-| [**Compactar**](compress-method-in-class-cim-datafile.md)                                       | Usa a compactação NTFS para compactar o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                       |
+| [**Comprimir**](compress-method-in-class-cim-datafile.md)                                       | Usa a compactação NTFS para compactar o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                       |
 | [**CompressEx**](compressex-method-in-class-cim-datafile.md)                                   | Compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                              |
-| [**CopiarObjeto**](copy-method-in-class-cim-datafile.md)                                               | Copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada. Implementado pelo WMI.<br/> |
+| [**Copiar**](copy-method-in-class-cim-datafile.md)                                               | Copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada. Implementado pelo WMI.<br/> |
 | [**CopyEx**](copyex-method-in-class-cim-datafile.md)                                           | Copia o arquivo lógico (ou diretório) especificado no caminho do objeto para o local especificado pelo parâmetro de entrada. Implementado pelo WMI.<br/> |
-| [**Apagar**](delete-method-in-class-cim-datafile.md)                                           | Exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                 |
+| [**Excluir**](delete-method-in-class-cim-datafile.md)                                           | Exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                 |
 | [**DeleteEx**](deleteex-method-in-class-cim-datafile.md)                                       | Exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                 |
-| [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-datafile.md)           | Determina se o chamador tem as permissões agregadas especificadas pelo argumento de **permissão** . Implementado pelo WMI.<br/>                |
+| [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-datafile.md)           | Determina se o chamador tem as permissões agregadas especificadas pelo **argumento Permission.** Implementado pelo WMI.<br/>                |
 | [**Renomear**](rename-method-in-class-cim-datafile.md)                                           | Renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                 |
-| [**TakeOwnerShip**](takeownership-method-in-class-cim-datafile.md)                             | Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                   |
+| [**Takeownership**](takeownership-method-in-class-cim-datafile.md)                             | Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                   |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-datafile.md)                         | Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Implementado pelo WMI.<br/>                                                   |
 | [**Descompactar**](uncompress-method-in-class-cim-datafile.md)                                   | Descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                            |
 | [**UncompressEx**](uncompressex-method-in-class-cim-datafile.md)                               | Descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Implementado pelo WMI.<br/>                                            |
@@ -143,127 +143,127 @@ A classe de **\_ DataFile de arquivo CIM** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ DataFile de arquivo CIM** tem essas propriedades.
+A **classe CIM \_ DataFile** tem essas propriedades.
 
 <dl> <dt>
 
-**AccessMask**
+**Accessmask**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("direitos de acesso")
+Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Direitos de Acesso")
 </dt> </dl>
 
-Bitmask que representa os direitos de acesso necessários para acessar ou executar operações específicas no arquivo. Para valores de bit, consulte [**constantes de direitos de acesso de arquivo e diretório**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants).
+Bitmask que representa os direitos de acesso necessários para acessar ou executar operações específicas no arquivo. Para valores de bit, consulte [**Constantes de direitos**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)de acesso de arquivo e diretório .
 
 > [!Note]  
-> Em volumes FAT, o valor de **\_ acesso completo** é retornado, o que indica que nenhuma segurança foi definida no objeto.
+> Em volumes FAT, o **valor \_ FULL ACCESS** é retornado, o que indica que nenhuma segurança foi definida no objeto .
 
  
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 <dt>
 
 <span id="FILE_READ_DATA__file__or_FILE_LIST_DIRECTORY__directory_"></span><span id="file_read_data__file__or_file_list_directory__directory_"></span><span id="FILE_READ_DATA__FILE__OR_FILE_LIST_DIRECTORY__DIRECTORY_"></span>
 
-Do **arquivo \_ LER \_ os dados (arquivo) ou \_ \_ diretório de lista de arquivos (diretório)** (1)
+**ARQUIVO \_ READ \_ DATA (arquivo) ou FILE \_ LIST DIRECTORY \_ (diretório)** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_DATA__file__or_FILE_ADD_FILE__directory_"></span><span id="file_write_data__file__or_file_add_file__directory_"></span><span id="FILE_WRITE_DATA__FILE__OR_FILE_ADD_FILE__DIRECTORY_"></span>
 
-Do **arquivo \_ GRAVAR \_ dados (arquivo) ou arquivo \_ Adicionar \_ arquivo (diretório)** (2)
+**ARQUIVO \_ WRITE \_ DATA (arquivo) ou FILE \_ ADD FILE \_ (diretório)** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_APPEND_DATA__file__or_FILE_ADD_SUBDIRECTORY__directory_"></span><span id="file_append_data__file__or_file_add_subdirectory__directory_"></span><span id="FILE_APPEND_DATA__FILE__OR_FILE_ADD_SUBDIRECTORY__DIRECTORY_"></span>
 
-Do **arquivo \_ ACRESCENTAR \_ dados (arquivo) ou arquivo \_ Adicionar \_ subdiretório (diretório)** (4)
+**ARQUIVO \_ ACRESCENTAR \_ DADOS (arquivo) ou ADICIONAR \_ \_ ARQUIVO SUBDIRETÓRIO (diretório)** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_READ_EA"></span><span id="file_read_ea"></span>
 
-Do **arquivo \_ LER \_ ea** (8)
+**ARQUIVO \_ READ \_ EA** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_EA"></span><span id="file_write_ea"></span>
 
-Do **arquivo \_ GRAVAR \_ ea** (16)
+**ARQUIVO \_ WRITE \_ EA** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_EXECUTE__file__or_FILE_TRAVERSE__directory_"></span><span id="file_execute__file__or_file_traverse__directory_"></span><span id="FILE_EXECUTE__FILE__OR_FILE_TRAVERSE__DIRECTORY_"></span>
 
-Do **arquivo \_ EXECUTAR (arquivo) ou \_ atravessamento de arquivo (diretório)** (32)
+**ARQUIVO \_ EXECUTE (arquivo) ou \_ FILE TRAVERSE (diretório)** (32)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_DELETE_CHILD__directory_"></span><span id="file_delete_child__directory_"></span><span id="FILE_DELETE_CHILD__DIRECTORY_"></span>
 
-Do **arquivo \_ EXCLUIR \_ filho (diretório)** (64)
+**ARQUIVO \_ DELETE \_ CHILD (diretório)** (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_READ_ATTRIBUTES"></span><span id="file_read_attributes"></span>
 
-Do **arquivo \_ \_Atributos de leitura** (128)
+**ARQUIVO \_ ATRIBUTOS \_ DE LEITURA** (128)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FILE_WRITE_ATTRIBUTES"></span><span id="file_write_attributes"></span>
 
-Do **arquivo \_ \_Atributos de gravação** (256)
+**ARQUIVO \_ ATRIBUTOS \_ DE** GRAVAÇÃO (256)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DELETE"></span><span id="delete"></span>
 
-**Excluir** (65536)
+**DELETE** (65536)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-**Ler \_ CONTROLE** (131072)
+**LEITURA \_ CONTROL** (131072)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-**Gravar \_ DAC** (262144)
+**GRAVAÇÃO \_ DAC** (262144)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WRITE_OWNER"></span><span id="write_owner"></span>
 
-**Gravar \_ PROPRIETÁRIO** (524288)
+**GRAVAÇÃO \_ OWNER** (524288)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SYNCHRONIZE"></span><span id="synchronize"></span>
 
-**Sincronizar** (1048576)
+**SYNCHRONIZE** (1048576)
 
 
 </dt> <dd></dd> </dl>
@@ -273,18 +273,18 @@ Do **arquivo \_ \_Atributos de gravação** (256)
 **Arquivar**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("deve ser arquivado")
+Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Deve ser arquivado")
 </dt> </dl>
 
-Se **for true**, o arquivo deverá ser arquivado.
+Se **True**, o arquivo deverá ser arquivado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -297,30 +297,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Uma breve descrição textual do objeto.
+Uma breve descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Compactado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("compactado")
+Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Compactado")
 </dt> </dl>
 
-Se **for true**, o arquivo será compactado.
+Se **True**, o arquivo será compactado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -333,12 +333,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("método de compactação")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Método de Compactação")
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que indica o algoritmo ou a ferramenta usada para compactar o arquivo lógico. Se o esquema de compactação for desconhecido ou não estiver descrito, use "desconhecido". Se o arquivo lógico estiver compactado, mas o esquema de compactação for desconhecido ou não estiver descrito, use "compactado". Se o arquivo lógico não estiver compactado, use "não compactado".
+Cadeia de caracteres de forma livre que indica o algoritmo ou a ferramenta usada para compactar o arquivo lógico. Se o esquema de compactação for desconhecido ou não for descrito, use "Desconhecido". Se o arquivo lógico for compactado, mas o esquema de compactação for desconhecido ou não for descrito, use "Compactado". Se o arquivo lógico não for compactado, use "Não Compactado".
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -351,30 +351,30 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("nome da classe")
+Qualificadores: [**\_ Chave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome da Classe")
 </dt> </dl>
 
 Nome da classe.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **CreationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("data de criação")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de criação")
 </dt> </dl>
 
 Data e hora da criação do arquivo.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -387,12 +387,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema de arquivos CIM**](cim-filesystem.md).**CSCreationClassName**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" nome da classe do sistema de computador ")
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**Chave \_ CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome da Classe do Sistema de Computador")
 </dt> </dl>
 
 Classe do sistema de computador.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -405,12 +405,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ sistema de arquivos CIM**](cim-filesystem.md).**CSName**"), [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" nome do sistema de computador ")
+Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Cim \_ FileSystem**](cim-filesystem.md).**CSName**"), [**Chave CIM, \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome do Sistema de Computador")
 </dt> </dl>
 
 Nome do sistema de computador.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -426,9 +426,9 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Descrição")
 </dt> </dl>
 
-Uma descrição textual do objeto.
+Uma descrição textual do objeto .
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -441,14 +441,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("drive")
+Qualificadores: [**corrigido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Unidade")
 </dt> </dl>
 
-Letra da unidade (incluindo os dois-pontos que segue a letra da unidade) do arquivo.
+Letra da unidade (incluindo os dois-pontos que seguem a letra da unidade) do arquivo.
 
 Exemplo: "c:"
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -464,29 +464,29 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("oito pontos três nome de arquivo")
 </dt> </dl>
 
-Nome de arquivo compatível com o DOS.
+Nome de arquivo compatível com OS.
 
-Exemplo: "c: \\ progra ~ 1"
+Exemplo: "c: \\ progra~1"
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
 **Criptografado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Encrypted")
+Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Criptografado")
 </dt> </dl>
 
-Se **for true**, o arquivo será criptografado.
+Se **True**, o arquivo será criptografado.
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -499,12 +499,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("método de criptografia")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Método de Criptografia")
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que identifica o algoritmo ou a ferramenta usada para criptografar um arquivo lógico. Se o esquema de criptografia não for indulged (por motivos de segurança, por exemplo), use "desconhecido". Se o arquivo estiver criptografado, mas seu esquema de criptografia for desconhecido ou não for divulgado, use "Encrypted". Se o arquivo lógico não estiver criptografado, use "não criptografado".
+Cadeia de caracteres de forma livre que identifica o algoritmo ou a ferramenta usada para criptografar um arquivo lógico. Se o esquema de criptografia não for substituído (por motivos de segurança, por exemplo), use "Desconhecido". Se o arquivo for criptografado, mas seu esquema de criptografia for desconhecido ou não for divulgado, use "Criptografado". Se o arquivo lógico não estiver criptografado, use "Não Criptografado".
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -517,14 +517,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("extensão de arquivo")
+Qualificadores: [**corrigido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Extensão de Arquivo")
 </dt> </dl>
 
-Extensão de nome de arquivo sem o ponto anterior (ponto).
+Extensão de nome de arquivo sem o período anterior (ponto).
 
-Exemplo: "txt", "MOF", "mdb"
+Exemplo: "txt", "mof", "mdb"
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -537,36 +537,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("nome do arquivo")
+Qualificadores: [**corrigido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome do Arquivo")
 </dt> </dl>
 
-Nome do arquivo sem a extensão de nome de arquivo. Exemplo: "mydatafile"
+Nome do arquivo sem a extensão de nome de arquivo. Exemplo: "MyDataFile"
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
-**Tamanho**
+**FileSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("tamanho"), [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
+Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Size"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
 Tamanho do arquivo, em bytes.
 
-Para obter mais informações sobre como usar valores de **UInt64** em scripts, consulte [scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
+Para obter mais informações sobre como **usar valores uint64** em scripts, consulte [Scripts no WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
-**Talvez**
+**FileType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -575,12 +575,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("tipo de arquivo")
+Qualificadores: [**esquema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tipo de Arquivo")
 </dt> </dl>
 
-Descritor que representa o tipo de arquivo indicado pela propriedade de **extensão** .
+Descritor que representa o tipo de arquivo indicado pela **propriedade Extension.**
 
-Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+Essa propriedade é herdada de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 </dd> <dt>
 
@@ -742,7 +742,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 A propriedade Name é uma cadeia de caracteres que representa o nome herdado que serve como uma chave de uma instância de arquivo lógico em um sistema de arquivos. Devem ser fornecidos nomes de caminho completos.
 
-Exemplo: C: \\ \\ sistema Windows \\win.ini
+exemplo: C: \\ Windows \\ sistema \\win.ini
 
 Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 

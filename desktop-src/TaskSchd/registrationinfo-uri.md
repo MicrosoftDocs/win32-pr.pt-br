@@ -1,11 +1,11 @@
 ---
-title: Propriedade RegistrationInfo. URI
-description: Para scripts, Obtém ou define o URI da tarefa.
+title: Propriedade RegistrationInfo.URI
+description: Para scripts, obtém ou define o URI da tarefa.
 ms.assetid: 49085ee4-65e1-412c-ac1c-9c0f9efe5679
 keywords:
-- Agendador de Tarefas de propriedade URI
-- Propriedade URI Agendador de Tarefas, objeto RegistrationInfo
-- Agendador de Tarefas de objeto RegistrationInfo, Propriedade URI
+- Propriedades de URI Agendador de Tarefas
+- Propriedade URI Agendador de Tarefas objeto , RegistrationInfo
+- Objeto RegistrationInfo Agendador de Tarefas propriedade , URI
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77598d556fdec29f41004529471c8098314a6faf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94c34c5dee30115ee430ad072d26e4bd67879988a9f2633cf9da9304e31324b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120034076"
 ---
-# <a name="registrationinfouri-property"></a>Propriedade RegistrationInfo. URI
+# <a name="registrationinfouri-property"></a>Propriedade RegistrationInfo.URI
 
-Para scripts, Obtém ou define o URI da tarefa.
+Para scripts, obtém ou define o URI da tarefa.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,7 +44,7 @@ O URI da tarefa.
 
 ## <a name="remarks"></a>Comentários
 
-Ao ler ou gravar XML para uma tarefa, o URI da tarefa é especificado usando o elemento [**URI**](taskschedulerschema-uri-registrationinfotype-element.md) do esquema de Agendador de tarefas.
+Ao ler ou escrever XML para uma tarefa, o URI da tarefa é especificado usando o elemento [**URI**](taskschedulerschema-uri-registrationinfotype-element.md) do esquema Agendador de Tarefas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,9 +52,9 @@ Ao ler ou gravar XML para uma tarefa, o URI da tarefa é especificado usando o e
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

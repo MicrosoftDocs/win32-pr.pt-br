@@ -16,18 +16,18 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8db0243ecfecd47655f547d40390e602c04d5b88
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb57004935a85392057120c0ec369d19217148780079ab4be83088dd3de3ea8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872186"
 ---
 # <a name="ccritsec-class"></a>Classe CCritSec
 
 A classe **CCritSec** fornece um bloqueio de thread.
 
-Essa classe é um wrapper fino para um objeto **de \_ seção crítica** do Windows. Você pode bloquear e desbloquear o thread chamando os métodos [**CCritSec:: Lock**](ccritsec-lock.md) e [**CCritSec:: Unlock**](ccritsec-unlock.md) . No entanto, é mais seguro usar essa classe em conjunto com a classe [**CAutoLock**](cautolock.md) . Quando a classe **CAutoLock** sai do escopo, ela automaticamente desbloqueia o objeto **CCritSec** . Além disso, ele é compilado para um código embutido eficiente.
+essa classe é um wrapper fino para um Windows objeto de **\_ seção crítica** . Você pode bloquear e desbloquear o thread chamando os métodos [**CCritSec:: Lock**](ccritsec-lock.md) e [**CCritSec:: Unlock**](ccritsec-unlock.md) . No entanto, é mais seguro usar essa classe em conjunto com a classe [**CAutoLock**](cautolock.md) . Quando a classe **CAutoLock** sai do escopo, ela automaticamente desbloqueia o objeto **CCritSec** . Além disso, ele é compilado para um código embutido eficiente.
 
 
 
@@ -39,8 +39,8 @@ Essa classe é um wrapper fino para um objeto **de \_ seção crítica** do Wind
 | Métodos públicos                                     | Descrição                                              |
 | [**CCritSec**](ccritsec-ccritsec.md)              | Método de construtor.                                      |
 | [**~ CCritSec**](ccritsec--ccritsec.md)            | Método destruidor.                                       |
-| [**Bloquear**](ccritsec-lock.md)                      | Bloqueia o objeto de seção crítica.                       |
-| [**Unlock**](ccritsec-unlock.md)                  | Desbloqueia o objeto da seção crítica.                     |
+| [**Bloqueio**](ccritsec-lock.md)                      | Bloqueia o objeto de seção crítica.                       |
+| [**Automático**](ccritsec-unlock.md)                  | Desbloqueia o objeto da seção crítica.                     |
 
 
 
@@ -52,7 +52,7 @@ Essa classe é um wrapper fino para um objeto **de \_ seção crítica** do Wind
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ Essa classe é um wrapper fino para um objeto **de \_ seção crítica** do Wind
 [Objetos de seção crítica](/windows/desktop/Sync/critical-section-objects)
 </dt> <dt>
 
-[Referência de classe base do DirectShow](base-class-reference.md)
+[DirectShow Referência de classe base](base-class-reference.md)
 </dt> </dl>
 
  

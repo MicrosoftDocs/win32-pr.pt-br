@@ -13,7 +13,7 @@ ms.locfileid: "119601606"
 ---
 # <a name="document-conventions"></a>Convenções de documento
 
-\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Esta documentação usa as seguintes convenções tipográficas:
 
@@ -21,13 +21,13 @@ Esta documentação usa as seguintes convenções tipográficas:
 
 | Convenção                       | Descrição                                                                    |
 |----------------------------------|--------------------------------------------------------------------------------|
-| **Sub, visível, legenda**        | Palavras em negrito com letra inicial maiúsculas indicam palavras-chave.               |
-| *Agent, String, Now*             | As palavras em itálico indicam espaços reservados para as informações fornecidas.                 |
-| ENTER, F1                        | As palavras com todas as letras maiúsculas indicam nomes de File, nomes de chave e sequências de chave. |
+| **Sub, Visible, Caption**        | Palavras em negrito com letra inicial maiúscula indicam palavras-chave.               |
+| *agent, String, Now*             | Palavras itálico indicam os espaço reservados para as informações fornecidas.                 |
+| ENTER, F1                        | Palavras em todas as letras maiúsculas indicam nomes de arquivo, nomes de chave e sequências de chaves. |
 | `Agent1.Commands.Enabled = True` | O texto nesta fonte indica exemplos de código.                                       |
 | `' This is a comment`            | Um apóstrofo ( `'` ) indica um comentário de código.                                  |
-| `Agent1.Commands.Add "Test1", _` | Um espaço e um sublinhado ( \_ ) continua uma linha de código.                       |
-| `[words or expression]`          | Os itens dentro de colchetes são opcionais.                                     |
+| `Agent1.Commands.Add "Test1", _` | Um espaço e um sublinhado ( \_ ) continuam uma linha de código.                       |
+| `[words or expression]`          | Itens dentro de colchetes são opcionais.                                     |
 | `This | That`                    | Uma barra vertical indica uma opção entre dois ou mais itens.                   |
 | *Agente*                          | A palavra "agente" em itálico representa o nome do controle de agente que você usa.  |
 
@@ -35,7 +35,7 @@ Esta documentação usa as seguintes convenções tipográficas:
 
  
 
-As descrições das interfaces de programação deste documento seguem as convenções do Microsoft VBScript. No entanto, eles também devem ser aplicáveis a outras linguagens.
+As descrições das interfaces de programação neste documento seguem as convenções do Microsoft VBScript. No entanto, eles também devem ser geralmente aplicáveis a outros idiomas.
 
  
 

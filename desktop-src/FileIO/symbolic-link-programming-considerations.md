@@ -15,13 +15,13 @@ ms.locfileid: "119981876"
 
 Lembre-se das seguintes considerações de programação ao trabalhar com links simbólicos:
 
--   Links simbólicos podem apontar para um destino inexistente.
+-   Links simbólicos podem apontar para um destino não existente.
 -   Ao criar um link simbólico, o sistema operacional não verifica se o destino existe.
--   Se um aplicativo tentar abrir um destino inexistente, **ERROR \_ FILE NOT \_ \_ FOUND** será retornado.
--   Links simbólicos são pontos de reparse. Para obter mais informações, [consulte Determinando se um diretório é uma pasta montada.](determining-whether-a-directory-is-a-volume-mount-point.md)
--   Há um máximo de 63 pontos de novaparação (e, portanto, links simbólicos) permitidos em um caminho específico.
+-   Se um aplicativo tentar abrir um destino não existente, o **arquivo de \_ erro \_ não \_ encontrado** será retornado.
+-   Links simbólicos são pontos de nova análise. Para obter mais informações, consulte [determinando se um diretório é uma pasta montada](determining-whether-a-directory-is-a-volume-mount-point.md).
+-   Há um máximo de 63 pontos de nova análise (e, portanto, links simbólicos) permitidos em um caminho específico.
 
-    **Windows Server 2003 e Windows XP:** Há um limite de 31 pontos de nova esparsa em qualquer caminho determinado.
+    **Windows Server 2003 e Windows XP:** Há um limite de 31 pontos de nova análise em qualquer caminho especificado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -30,7 +30,7 @@ Lembre-se das seguintes considerações de programação ao trabalhar com links 
 
 </dt> <dt>
 
-[Links rígidos e junções](hard-links-and-junctions.md)
+[Links físicos e junções](hard-links-and-junctions.md)
 </dt> </dl>
 
  

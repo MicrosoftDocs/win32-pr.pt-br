@@ -4,16 +4,16 @@ description: Enumerando os itens de mídia
 ms.assetid: 1819b4c3-57ae-48fc-8a01-b699b5802b64
 keywords:
 - Windows Media Player, playlists de sincronização
-- modelo de objeto Windows Media Player, playlists de sincronização
+- Windows Media Player de objeto, listas de reprodução de sincronização
 - modelo de objeto, playlists de sincronização
-- Windows Media Player Listas de reprodução móveis e de sincronização
-- controle de ActiveX de Windows Media Player, listas de reprodução de sincronização
-- Windows Media Player controle de ActiveX móvel, playlists de sincronização
-- controle de ActiveX, listas de reprodução de sincronização
-- listas de reprodução, sincronização
-- listas de reprodução de metarquivo, sincronização
-- Windows Listas de reprodução de metarquivo de mídia, sincronização
-- listas de reprodução de sincronização, enumerando
+- Windows Media Player Mobile, synchronization playlists
+- Windows Media Player ActiveX controle, listas de reprodução de sincronização
+- Windows Media Player Controle de ActiveX móvel, listas de reprodução de sincronização
+- ActiveX controle, listas de reprodução de sincronização
+- playlists, sincronização
+- playlists de metafile, sincronização
+- Windows Playlists de metadados de mídia, sincronização
+- playlists de sincronização, enumerando
 - dispositivos portáteis, enumerando
 - enumerações, listas de reprodução de sincronização
 ms.topic: article
@@ -27,7 +27,7 @@ ms.locfileid: "119650906"
 ---
 # <a name="enumerating-the-media-items"></a>Enumerando os itens de mídia
 
-O código a seguir exibe os itens de mídia contidos em uma lista de reprodução individual. Esse código é executado quando o usuário clica em uma lista de reprodução no controle ListView identificado pelo IDC \_ PLVIEW.
+O código a seguir exibe os itens de mídia contidos em uma playlist individual. Esse código é executado quando o usuário clica em uma playlist no controle ListView identificado pelo IDC \_ PLVIEW.
 
 
 ```C++
@@ -147,16 +147,16 @@ STDMETHODIMP CSyncSettings::ShowMedia(long lIndex)
 
 
 
-Para a implementação da função GetPartnershipSyncState, consulte [determinando o estado de sincronização de playlist](determining-playlist-synchronization-state.md).
+Para a implementação da função GetPartnershipSyncState, consulte [Determinando o estado de sincronização da playlist](determining-playlist-synchronization-state.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Interface IWMPMedia**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
+[**IWMPMedia Interface**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpmedia)
 </dt> <dt>
 
-[**Interface IWMPPlaylist**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
+[**IWMPPlaylist Interface**](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist)
 </dt> <dt>
 
 [**Gerenciando listas de reprodução de sincronização**](managing-synchronization-playlists.md)

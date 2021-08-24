@@ -1,45 +1,45 @@
 ---
-title: Registrando para recuperação de aplicativo
+title: Registrando-se para a Recuperação de Aplicativo
 ms.assetid: 2940b1b2-a0ca-4f81-a576-ae6d53ffd4a8
-description: 'Saiba mais sobre: registro para recuperação de aplicativo'
+description: 'Saiba mais sobre: Registrando-se no Application Recovery'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 056232bc2a8a10857ff07900ce261d95ed719b81
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ce2a67a36b26895fdc16652dd271b3b244d0860c14c268144c1357fa3cf51c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024577"
 ---
-# <a name="registering-for-application-recovery"></a>Registrando para recuperação de aplicativo
+# <a name="registering-for-application-recovery"></a>Registrando-se para a Recuperação de Aplicativo
 
-Esta seção fornece detalhes sobre como implementar um recurso de recuperação em seu aplicativo. Você deve considerar a implementação desse recurso para lidar com os seguintes casos:
+Esta seção fornece detalhes sobre como implementar um recurso de recuperação em seu aplicativo. Você deve considerar implementar esse recurso para lidar com os seguintes casos:
 
--   [Recuperando quando um aplicativo passa por uma exceção sem tratamento ou para de responder](#recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding)
+-   [Recuperação quando um aplicativo passa por uma exceção sem resposta ou para de responder](#recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding)
 
-    Evita a perda de dados quando o aplicativo para de funcionar inesperadamente.
+    Impede a perda de dados quando o aplicativo para de funcionar inesperadamente.
 
--   [Salvando dados e estado do aplicativo quando o aplicativo está sendo fechado devido a uma atualização de software](#saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update)
+-   [Salvando dados e o estado do aplicativo quando o aplicativo está sendo fechado devido a uma atualização de software](#saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update)
 
-    Permite que um usuário obtenha diretamente os dados do aplicativo quando o aplicativo é fechado devido a uma instalação de atualização de software (que pode estar acontecendo sem dar ao usuário a oportunidade de salvar dados).
+    Permite que um usuário receba de volta os dados do aplicativo quando o aplicativo é fechado devido a uma instalação de atualização de software (o que pode estar acontecendo sem dar ao usuário a oportunidade de salvar dados).
 
-## <a name="recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding"></a>Recuperando quando um aplicativo passa por uma exceção sem tratamento ou para de responder
+## <a name="recovering-when-an-application-experiences-an-unhandled-exception-or-stops-responding"></a>Recuperação quando um aplicativo passa por uma exceção sem resposta ou para de responder
 
-Para registrar um retorno de chamada de recuperação, chame a função [**RegisterApplicationRecoveryCallback**](/windows/win32/api/winbase/nf-winbase-registerapplicationrecoverycallback) . [Relatório de erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting) chama o retorno de chamada de recuperação antes de o aplicativo ser encerrado devido a uma exceção sem tratamento ou o aplicativo não está respondendo.
+Para registrar um retorno de chamada de recuperação, chame [**a função RegisterApplicationRecoveryCallback.**](/windows/win32/api/winbase/nf-winbase-registerapplicationrecoverycallback) [Relatório de Erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting) chama o retorno de chamada de recuperação antes que o aplicativo saia devido a uma exceção sem-manuseio ou o aplicativo não está respondendo.
 
-Você usa o retorno de chamada de recuperação para tentar salvar dados e informações de estado antes de o aplicativo ser encerrado. Em seguida, você pode usar os dados salvos e as informações de estado quando o aplicativo for reiniciado.
+Use o retorno de chamada de recuperação para tentar salvar dados e informações de estado antes que o aplicativo seja encerrado. Em seguida, você pode usar os dados salvos e as informações de estado quando o aplicativo for reiniciado.
 
-Durante o processo de recuperação, você deve chamar a função [**ApplicationRecoveryInProgress**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryinprogress) dentro do intervalo de ping especificado; caso contrário, o processo de recuperação será encerrado. Chamar **ApplicationRecoveryInProgress** permite que o wer saiba que você ainda está recuperando ativamente os dados. Quando o processo de recuperação for concluído, chame a função [**ApplicationRecoveryFinished**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryfinished) . Observe que a função **ApplicationRecoveryFinished** deve ser a última chamada que você faz antes de sair porque a função encerra imediatamente o aplicativo.
+Durante o processo de recuperação, você deve chamar a [**função ApplicationRecoveryInProgress**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryinprogress) dentro do intervalo de ping especificado; caso contrário, o processo de recuperação será encerrado. Chamar **ApplicationRecoveryInProgress** permite que o WER saiba que você ainda está recuperando dados ativamente. Quando o processo de recuperação for concluído, chame a [**função ApplicationRecoveryFinished.**](/windows/win32/api/winbase/nf-winbase-applicationrecoveryfinished) Observe que a **função ApplicationRecoveryFinished** deve ser a última chamada que você faz antes de sair porque a função encerra imediatamente o aplicativo.
 
-Você deve considerar salvar periodicamente cópias temporárias das informações de dados e estado durante o curso normal do processo do aplicativo. Salvar periodicamente os dados pode economizar tempo no processo de recuperação.
+Você deve considerar salvar periodicamente cópias temporárias dos dados e informações de estado durante o curso normal do processo do aplicativo. Salvar periodicamente os dados pode economizar tempo no processo de recuperação.
 
-## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Salvando dados e estado do aplicativo quando o aplicativo está sendo fechado devido a uma atualização de software
+## <a name="saving-data-and-application-state-when-application-is-being-closed-due-to-a-software-update"></a>Salvando dados e o estado do aplicativo quando o aplicativo está sendo fechado devido a uma atualização de software
 
-Se um aplicativo do Windows puder ser atualizado, o aplicativo também deverá processar as mensagens do [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e do [**WM \_ EndSession**](/windows/desktop/Shutdown/wm-endsession) . O instalador envia essas mensagens quando o instalador precisa que o aplicativo seja desligado para concluir a instalação ou quando uma reinicialização é necessária para concluir a instalação. Observe que, nesse caso, o aplicativo tem menos tempo para executar a recuperação. Por exemplo, o aplicativo deve responder a cada mensagem dentro de cinco segundos.
+Se um Windows aplicativo puder ser atualizado, o aplicativo também deverá processar as mensagens [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e [**WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession) O instalador envia essas mensagens quando o instalador precisa que o aplicativo seja desligado para concluir a instalação ou quando uma reinicialização é necessária para concluir a instalação. Observe que, nesse caso, o aplicativo tem menos tempo para executar a recuperação. Por exemplo, o aplicativo deve responder a cada mensagem dentro de cinco segundos.
 
-Para aplicativos de console que podem ser atualizados, você deve considerar o tratamento de \_ notificações de evento CTRL C \_ . Para obter um exemplo, consulte [registrando para reinicialização do aplicativo](registering-for-application-restart.md). O instalador envia essa notificação quando precisa que o aplicativo seja desligado para concluir a atualização. O aplicativo tem 30 segundos para lidar com a notificação.
+Para aplicativos de console que podem ser atualizados, você deve considerar o tratamento de notificações CTRL \_ C \_ EVENT. Para ver um exemplo, consulte [Registrando para reinicialização do aplicativo.](registering-for-application-restart.md) O instalador envia essa notificação quando precisa que o aplicativo seja desligado para concluir a atualização. O aplicativo tem 30 segundos para lidar com a notificação.
 
-O exemplo a seguir mostra como registrar para recuperação, uma implementação de retorno de chamada de recuperação simples e como processar as mensagens [**de \_ EndSession**](/windows/desktop/Shutdown/wm-endsession) do WM [**\_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e do WM.
+O exemplo a seguir mostra como se registrar para recuperação, uma implementação de retorno de chamada de recuperação simples e como processar as mensagens [**WM \_ QUERYENDSESSION**](/windows/desktop/Shutdown/wm-queryendsession) e [**WM \_ ENDSESSION.**](/windows/desktop/Shutdown/wm-endsession)
 
 
 ```C++
@@ -556,7 +556,7 @@ BOOL IsRestartSelected()
 
 
 
-Este é o arquivo de inclusão Recover. h para o exemplo de recuperação.
+A seguir está o arquivo de inclusão recover.h para o exemplo de recuperação.
 
 
 ```C++
@@ -567,7 +567,7 @@ Este é o arquivo de inclusão Recover. h para o exemplo de recuperação.
 
 
 
-Este é o arquivo de recurso Recover. rc para o exemplo de recuperação.
+A seguir está o arquivo de recurso recover.rc para o exemplo de recuperação.
 
 
 ```C++
@@ -657,7 +657,7 @@ END
 
 
 
-Este é o arquivo de inclusão Resource. h para o exemplo de recuperação.
+A seguir está o arquivo de inclusão resource.h para o exemplo de recuperação.
 
 
 ```C++

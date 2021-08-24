@@ -1,21 +1,21 @@
 ---
 description: O filtro Microsoft MPEG-2 Video Encoder codifica o vídeo MPEG-2 e MPEG-1.
 ms.assetid: d52c1299-0641-405c-8960-edd738b56823
-title: Codificador de vídeo MPEG-2 da Microsoft (Wmcodecdsp. h)
+title: Codificador de Vídeo do Microsoft MPEG-2 (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02c96db605586c6abf0f51537689a9365df2842c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c7f7b70b9a754aefda3158ae355eb84c24b71b7e
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105759993"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122474712"
 ---
-# <a name="microsoft-mpeg-2-video-encoder"></a>Codificador de vídeo MPEG-2 da Microsoft
+# <a name="microsoft-mpeg-2-video-encoder"></a>Codificador de vídeo do Microsoft MPEG-2
 
 O filtro Microsoft MPEG-2 Video Encoder codifica o vídeo MPEG-2 e MPEG-1.
 
-Para codificar e multiplexar fluxos de áudio/vídeo, use o filtro de [**codificador MPEG-2 da Microsoft**](microsoft-mpeg-2-encoder.md) , que encapsula as funções desse filtro e do filtro de [**codificador de áudio Microsoft MPEG-2**](microsoft-mpeg-2-audio-encoder.md) .
+Para codificar e multiplexar fluxos de áudio/vídeo, use o filtro [**codificador Microsoft MPEG-2,**](microsoft-mpeg-2-encoder.md) que encapsula as funções desse filtro e do filtro do Codificador de Áudio [**Microsoft MPEG-2.**](microsoft-mpeg-2-audio-encoder.md)
 
 > [!Note]  
 > Não há suporte para esse filtro em plataformas baseadas em IA-64.
@@ -26,41 +26,41 @@ Para codificar e multiplexar fluxos de áudio/vídeo, use o filtro de [**codific
 
 Informações de filtro
 
-Filtrar interfaces
+Interfaces de filtro
 
-[**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/> [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)<br/> **IEncoderAPI**<br/> [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IVideoEncoder**](/windows/win32/api/strmif/nn-strmif-ivideoencoder)<br/>
+[**Ibasefilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/> [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)<br/> **IEncoderAPI**<br/> [**Imediaseeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IVideoEncoder**](/windows/win32/api/strmif/nn-strmif-ivideoencoder)<br/>
 
 Tipos de mídia de pino de entrada
 
-**MediaType \_ Vídeo**, **MEDIASUBTYPE \_ I420**<br/> **MediaType \_ Vídeo**, **MEDIASUBTYPE \_ IYUV**<br/> **MediaType \_ Vídeo**, **MEDIASUBTYPE \_ RGB24**<br/> **MediaType \_ Vídeo**, **MEDIASUBTYPE \_ UYVY**<br/> **MediaType \_ Vídeo**, **MEDIASUBTYPE \_ YUY2**<br/> **MediaType \_ Vídeo**, **MEDIASUBTYPE \_ YV12**<br/>
+**MEDIATYPE \_ Vídeo**, **MEDIASUBTYPE \_ I420**<br/> **MEDIATYPE \_ Vídeo**, **MEDIASUBTYPE \_ IYUV**<br/> **MEDIATYPE \_ Vídeo**, **MEDIASUBTYPE \_ RGB24**<br/> **MEDIATYPE \_ Vídeo**, **MEDIASUBTYPE \_ UYVY**<br/> **MEDIATYPE \_ Vídeo**, **MEDIASUBTYPE \_ YUY2**<br/> **MEDIATYPE \_ Vídeo**, **MEDIASUBTYPE \_ YV12**<br/>
 
 Interfaces de pino de entrada
 
-[**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
+[**Imeminputpin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**Iqualitycontrol**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-Tipos de mídia do pino de saída
+Tipos de mídia de pino de saída
 
-**MediaType \_** Vídeo de fluxo, **MEDIASUBTYPE \_ MPEG2 \_**<br/> **MediaType \_ Fluxo**, **\_ \_ programa MEDIASUBTYPE MPEG2**<br/> **MediaType \_ Fluxo**, **\_ \_ transporte MEDIASUBTYPE MPEG2**<br/> **MediaType \_ Vídeo**, **\_ \_ vídeo MEDIASUBTYPE MPEG2**<br/>
+**MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ VIDEO**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ PROGRAM**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ MPEG2 \_ TRANSPORT**<br/> **MEDIATYPE \_ Vídeo**, **VÍDEO MEDIASUBTYPE \_ MPEG2 \_**<br/>
 
 Interfaces de pino de saída
 
-[**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
+[**Imediaseeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**Iqualitycontrol**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-CLSID do filtro
+Filtrar CLSID
 
-**CLSID \_ do CMPEG2EncoderVideoDS** (declarado em wmcodecdsp. h)
+**CLSID \_ CMPEG2EncoderVideoDS** (declarado em wmcodecdsp.h)
 
 Executável
 
 msmpeg2enc.dll
 
-[Núcleo](merit.md)
+[Mérito](merit.md)
 
-**MÉRITO \_ \_ não \_ use**
+**NÃO USE O NÃO \_ \_ USO \_ DE LIMITED**
 
-[Categoria do filtro](filter-categories.md)
+[Categoria de filtro](filter-categories.md)
 
-**\_LEGACYAMFILTERCATEGORY CLSID**
+**CLSID \_ LegacyAmFilterCategory**
 
 
 
@@ -68,9 +68,9 @@ msmpeg2enc.dll
 
 ## <a name="remarks"></a>Comentários
 
-O codificador de vídeo MPEG-2 pode produzir os seguintes tipos de saída:
+O Codificador de Vídeo MPEG-2 pode produzir os seguintes tipos de saída:
 
--   Fluxo elementar vídeo
+-   Fluxo elementar de vídeo
 -   Vídeo em um fluxo de programa MPEG-2
 -   Vídeo em um fluxo de transporte MPEG-2
 
@@ -80,35 +80,35 @@ Ele dá suporte aos seguintes perfis e níveis MPEG-2:
 
 | Perfil        | Níveis                     | Comentários                                            |
 |----------------|----------------------------|----------------------------------------------------|
-| Perfil simples | Principal                       |                                                    |
-| Perfil Principal   | Baixo, principal, alto, alto-1440 |                                                    |
-| Alto Perfil   | Principal, alta, alta-1440      | Sem escalabilidade ou suporte a 4:2:2/4:4:4 (somente 4:2:0) |
-| Perfil 4:2:2  | Principal, alta                 | Sem escalabilidade ou suporte a 4:2:2 (somente 4:2:0)       |
+| Perfil Simples | Principal                       |                                                    |
+| Perfil Principal   | Baixo, Principal, Alto, Alto-1440 |                                                    |
+| Alto Perfil   | Main, High, High-1440      | Sem escalabilidade ou 4:2:2/4:4:4 (somente 4:2:0) |
+| Perfil 4:2:2  | Principal, Alto                 | Sem suporte para escalabilidade ou 4:2:2 (somente 4:2:0)       |
 
 
 
  
 
-### <a name="codec-properties"></a>Propriedades do codec
+### <a name="codec-properties"></a>Propriedades do Codec
 
-O filtro oferece suporte às seguintes propriedades por meio de [**ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi).
+O filtro dá suporte às propriedades a seguir por [**meio de ICodecAPI.**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 
 
 
 | Propriedade                                                                                      | Padrão                                                          | Valores com suporte                                                                                                                                                                                                     |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AVEncCodecType**](avenccodectype-property.md)                                             | Vídeo MPEG-2                                                     | **CODECAPI \_ GUID \_ AVEncMPEG1Video**<br/> **CODECAPI \_ GUID \_ AVEncMPEG2Video**<br/>                                                                                                                        |
+| [**AVEncCodecType**](avenccodectype-property.md)                                             | Vídeo do MPEG-2                                                     | **CODECAPI \_ GUID \_ AVEncMPEG1Video**<br/> **CODECAPI \_ GUID \_ AVEncMPEG2Video**<br/>                                                                                                                        |
 | [**AVEncCommonBufferInLevel**](avenccommonbufferinlevel-property.md)                         | 12222464 bits                                                    |                                                                                                                                                                                                                      |
 | [**AVEncCommonBufferOutLevel**](avenccommonbufferoutlevel-property.md)                       | 12222464 bits                                                    |                                                                                                                                                                                                                      |
 | [**AVEncCommonBufferSize**](avenccommonbuffersize-property.md)                               | 12222464 bits                                                    |                                                                                                                                                                                                                      |
 | [**AVEncCommonFormatConstraint**](avenccommonformatconstraint-property.md)                   | Não Especificado                                                      | **CODECAPI \_ GUID \_ AVEncCommonFormatUnSpecified** (sem restrição de formato)<br/> **CODECAPI \_ GUID \_ AVEncCommonFormatDVD \_ V** (DVD-Video)<br/> **CODECAPI \_ GUID \_ AVEncCommonFormatVCD** (CD de vídeo)<br/> |
-| [**AVEncCommonMaxBitRate**](avenccommonmaxbitrate-property.md)                               | 9,8 milhões (9,8 Mbits/segundo)                                       |                                                                                                                                                                                                                      |
-| [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md)                             | 7 milhões (7,0 Mbits/segundo)                                       |                                                                                                                                                                                                                      |
+| [**AVEncCommonMaxBitRate**](avenccommonmaxbitrate-property.md)                               | 9800000 (9,8 Mbits/segundo)                                       |                                                                                                                                                                                                                      |
+| [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md)                             | 7000000 (7,0 Mbits/segundo)                                       |                                                                                                                                                                                                                      |
 | [**AVEncCommonMinBitRate**](avenccommonminbitrate-property.md)                               | 128                                                              |                                                                                                                                                                                                                      |
 | [**AVEncCommonMultipassMode**](avenccommonmultipassmode-property.md)                         | 1                                                                | 1                                                                                                                                                                                                                    |
-| [**AVEncCommonQuality**](avenccommonquality-property.md)                                     | 100                                                              | 1 – 100                                                                                                                                                                                                              |
+| [**AVEncCommonQuality**](avenccommonquality-property.md)                                     | 100                                                              | 1 — 100                                                                                                                                                                                                              |
 | [**AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md)                       | 75                                                               | 0 — 100                                                                                                                                                                                                              |
-| [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md)                     | CBR                                                              | **eAVEncCommonRateControlMode \_ CBR**<br/> **eAVEncCommonRateControlMode \_ PeakConstrainedVBR**<br/> **qualidade de eAVEncCommonRateControlMode \_**<br/>                                                   |
+| [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md)                     | CBR                                                              | **CBR eAVEncCommonRateControlMode \_**<br/> **eAVEncCommonRateControlMode \_ PeakConstrainedVBR**<br/> **Qualidade de eAVEncCommonRateControlMode \_**<br/>                                                   |
 | [**AVEncInputVideoSystem**](avencinputvideosystem-property.md)                               | Não Especificado                                                      | eAVEncInputVideoSystem \_ não especificado<br/> \_PAL eAVEncInputVideoSystem<br/> \_NTSC eAVEncInputVideoSystem<br/>                                                                                        |
 | [**AVEncMPVDefaultBPictureCount**](avencmpvdefaultbpicturecount-property.md)                 | 2                                                                | 0 – 2                                                                                                                                                                                                                |
 | [**AVEncMPVFrameFieldMode**](avencmpvframefieldmode-property.md)                             | Modo de quadro                                                       |                                                                                                                                                                                                                      |
@@ -177,67 +177,43 @@ Para configurar o modo de codificação, defina as seguintes propriedades:
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Mode</th>
-<th>Propriedades</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CBR</td>
-<td><a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_CBR</strong><br/> <a href="avenccommonqualityvsspeed-property.md"><strong>AVEncCommonQualityVsSpeed</strong></a><br/> <a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a><br/></td>
-</tr>
-<tr class="even">
-<td>Taxa de bits baseada em qualidade</td>
-<td><a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_Quality</strong><br/> <a href="avenccommonquality-property.md"><strong>AVEncCommonQuality</strong></a><br/> <a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Nesse modo, as propriedades <a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a> e <a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate</strong></a> não são usadas. A taxa de bits mínima é considerada como zero.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td>TAXA de bits restrita de pico</td>
-<td><a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_PeakConstrainedVBR</strong><br/> <a href="avenccommonmultipassmode-property.md"><strong>AVEncCommonMultipassMode</strong></a> = 1<br/> <a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate</strong></a><br/> <a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br/> <a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a><br/></td>
-</tr>
-</tbody>
-</table>
+
+| Modo | Propriedades | 
+|------|------------|
+| CBR | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_CBR</strong><br /><a href="avenccommonqualityvsspeed-property.md"><strong>AVEncCommonQualityVsSpeed</strong></a><br /><a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a><br /> | 
+| VBR baseado em qualidade | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_Quality</strong><br /><a href="avenccommonquality-property.md"><strong>AVEncCommonQuality</strong></a><br /><a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br /><blockquote>[!Note]<br />Nesse modo, as <a href="avenccommonmeanbitrate-property.md"><strong>propriedades AVEncCommonMeanBitRate</strong></a> e <a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate</strong></a> não são usadas. Supõe-se que a taxa de bits mínima seja zero.</blockquote><br /> | 
+| VBR com restrição de pico | <a href="avenccommonratecontrolmode-property.md"><strong>AVEncCommonRateControlMode</strong></a>  =  <strong>eAVEncCommonRateControlMode_PeakConstrainedVBR</strong><br /><a href="avenccommonmultipassmode-property.md"><strong>AVEncCommonMultipassMode</strong></a> = 1<br /><a href="avenccommonminbitrate-property.md"><strong>AVEncCommonMinBitRate</strong></a><br /><a href="avenccommonmaxbitrate-property.md"><strong>AVEncCommonMaxBitRate</strong></a><br /><a href="avenccommonmeanbitrate-property.md"><strong>AVEncCommonMeanBitRate</strong></a><br /> | 
+
 
 
 
  
 
 > [!Note]  
-> Não há suporte para VBR de duas passagens.
+> Não há suporte para VBR de duas passs.
 
  
 
-### <a name="aspect-ratio"></a>Taxa de proporção
+### <a name="aspect-ratio"></a>Proporção
 
-A taxa de proporção de exibição e a taxa de proporção de pixel (PAR) estão relacionadas pela seguinte fórmula:
+A taxa de proporção de exibição e a PAR (taxa de proporção de pixel) estão relacionadas pela seguinte fórmula:
 
-<dl> Exibir taxa de proporção = PAR × (largura da imagem/altura da imagem)  
+<dl> Taxa de proporção de exibição = par × (largura da imagem/altura da imagem)  
 </dl>
 
-O codificador usa essa fórmula para calcular o valor da taxa de proporção do PEL \_ \_ para MPEG-1 fragmentado ou \_ \_ informações de taxa de proporção para fragmentado MPEG-2. (Consulte ISO/IEC 11172 e ISO/IEC 138181-2, respectivamente.)
+O codificador usa essa fórmula para calcular o valor da taxa de proporção de pel para fluxos de bits MPEG-1 ou informações de proporção para fluxos de \_ \_ bits \_ \_ MPEG-2. (Consulte ISO/IEC 11172 e ISO/IEC 138181-2, respectivamente.)
 
 O codificador tenta as seguintes configurações, na ordem:
 
-1.  Se o aplicativo definir a propriedade [**AVEncVideoPixelAspectRatio**](avencvideopixelaspectratio-property.md) a qualquer momento antes de o grafo de filtro ser executado, essa propriedade será usada para o par.
-2.  Caso contrário, se os membros **dwPictAspectRatioX** e **DwPictAspectRatioY** da estrutura [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) forem diferentes de zero, esses membros serão usados para a taxa de proporção de exibição e o par será calculado a partir da taxa de proporção de exibição.
+1.  Se o aplicativo define a [**propriedade AVEncVideoPixelAspectRatio**](avencvideopixelaspectratio-property.md) a qualquer momento antes que o grafo de filtro seja executado, essa propriedade será usada para o PAR.
+2.  Caso contrário, se os membros **dwPictAspectRatioX** e **dwPictAspectRatioY** da estrutura [**VIDEOINFOHEADER2**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-videoinfoheader2) não são zero, esses membros são usados para a taxa de proporção de exibição e o PAR é calculado com base na taxa de proporção de exibição.
 3.  Se nenhum desses valores estiver presente, o PAR será considerado 1,0 e a taxa de proporção de exibição será calculada de acordo.
 
-No modo de codificação dinâmica ([**AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md) igual a zero), a taxa de proporção de exibição deve ser 4:3 ou 16:9, com um valor padrão de 4:3. Se a taxa de proporção de exibição computada não for 4:3 ou 16:9, o codificador usará o valor 4:3.
+No modo de codificação ao vivo [**(AVEncCommonQualityVsSpeed**](avenccommonqualityvsspeed-property.md) igual a zero), a taxa de proporção de exibição deve ser 4:3 ou 16:9, com um valor padrão de 4:3. Se a taxa de proporção de exibição calculada não for 4:3 ou 16:9, o codificador usará o valor 4:3.
 
 ### <a name="gop-structure"></a>Estrutura GOP
 
-Para especificar a estrutura do grupo de imagens (GOP), defina as seguintes propriedades na ordem:
+Para especificar a estrutura gop (grupo de imagens), de definir as seguintes propriedades na ordem:
 
 1.  [**AVEncMPVGOPSize**](avencmpvgopsize-property.md)
 2.  [**AVEncVideoMaxKeyframeDistance**](avencvideomaxkeyframedistance-property.md)
@@ -250,60 +226,60 @@ Com base nessas configurações, o codificador produz uma das seguintes estrutur
 | [**AVEncVideoMaxKeyframeDistance**](avencvideomaxkeyframedistance-property.md) | [**AVEncMPVDefaultBPictureCount**](avencmpvdefaultbpicturecount-property.md) | Estrutura GOP |
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------|
 | 0                                                                               | 0                                                                             | IIII...       |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) -1                         | 0                                                                             | IPPP...       |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) -1                         | 1                                                                             | IBPBP...      |
-| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) -1                         | 2                                                                             | IBBPBBP...    |
+| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) – 1                         | 0                                                                             | IPPP...       |
+| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) – 1                         | 1                                                                             | IBPBP...      |
+| [**AVEncMPVGOPSize**](avencmpvgopsize-property.md) – 1                         | 2                                                                             | IBBBP...    |
 
 
 
  
 
-A estrutura GOP padrão é IBBPBBP... com um tamanho de GOP de 15 quadros.
+A estrutura padrão do GOP é IBBBPBP... com um tamanho GOP de 15 quadros.
 
-Se o aplicativo restringir o formato de destino ao DVD (por meio da propriedade [**AVEncCommonFormatConstraint**](avenccommonformatconstraint-property.md) ) e definir a propriedade [**AVEncInputVideoSystem**](avencinputvideosystem-property.md) como NTSC ou PAL, o codificador dará suporte aos seguintes tamanhos de GOP:
+Se o aplicativo restringir o formato de destino para DVD (por meio da propriedade [**AVEncCommonFormatConstraint)**](avenccommonformatconstraint-property.md) e define a propriedade [**AVEncInputVideoSystem**](avencinputvideosystem-property.md) como NTSC ou PAL, o codificador dá suporte aos seguintes tamanhos de GOP:
 
 
 
-| Sistema de vídeo | Tamanhos de GOP válidos | Tamanho de GOP padrão |
+| Sistema de vídeo | Tamanhos de GOP válidos | Tamanho padrão do GOP |
 |--------------|-----------------|------------------|
-| NTSC         | 1-18            | 18 (campos 36)   |
+| NTSC         | 1-18            | 18 (36 campos)   |
 | PAL          | 1-15            | 15 (30 campos)   |
 
 
 
  
 
-### <a name="codec-property-change-lists"></a>Lista de alterações de Propriedade do codec
+### <a name="codec-property-change-lists"></a>Listas de alterações de propriedade do Codec
 
-Definir o valor de uma propriedade de codec pode alterar o intervalo válido de outra propriedade. (Por exemplo, restringir o formato de destino restringe a taxa média de bits.) Sempre que o aplicativo definir uma propriedade, o codificador verificará se outras propriedades agora estão fora do intervalo válido. Nesse caso, o codificador redefine essa propriedade para o novo valor padrão. Para receber notificações quando isso ocorrer, faça o seguinte:
+Definir o valor de uma propriedade codec pode alterar o intervalo válido de outra propriedade. (Por exemplo, restringir o formato de destino restringe a taxa média de bits.) Sempre que o aplicativo define uma propriedade, o codificador verifica se outras propriedades agora estão fora do intervalo válido. Nesse caso, o codificador redefine essa propriedade para seu novo valor padrão. Para receber notificações quando isso ocorrer, faça o seguinte:
 
-1.  Chame [**ICodecAPI:: RegisterForEvent**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-registerforevent) com o valor **CODECAPI \_ CHANGELISTS**.
+1.  Chame [**ICodecAPI::RegisterForEvent**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-registerforevent) com o valor **CODECAPI \_ CHANGELISTS**.
 2.  Use a interface [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) para monitorar eventos do grafo de filtro.
-3.  Se o intervalo ou valor padrão de uma propriedade for alterado, o codificador enviará um evento de [**\_ \_ evento do EC CODECAPI**](ec-codecapi-event.md) com uma lista de propriedades alteradas.
+3.  Se o intervalo ou o valor padrão de uma propriedade for alterado, o codificador enviará um evento [**\_ EC CODECAPI \_ EVENT**](ec-codecapi-event.md) com uma lista de propriedades alteradas.
 
-### <a name="iencoderapi-support"></a>Suporte do IEncoderAPI
+### <a name="iencoderapi-support"></a>Suporte a IEncoderAPI
 
-Para compatibilidade com versões anteriores, o filtro oferece suporte às seguintes propriedades por meio da interface **IEncoderAPI** :
+Para compatibilidade com backward, o filtro dá suporte às seguintes propriedades por meio da interface **IEncoderAPI:**
 
 
 
 | Propriedade                       | Descrição                                                                              |
 |--------------------------------|------------------------------------------------------------------------------------------|
-| **\_taxa de bits ENCAPIPARAM**       | Equivalente a [**AVEncCommonMeanBitRate**](avenccommonmeanbitrate-property.md).         |
-| **taxa de bits de \_ pico ENCAPIPARAM \_** | Equivalente a [**AVEncCommonMaxBitRate**](avenccommonmaxbitrate-property.md).           |
-| **\_modo de taxa de bits ENCAPIPARAM \_** | Equivalente a [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md). |
+| **TAXA DE BITS ENCAPIPARAM \_**       | Equivalente a [**AVEncCommonMeanBitRate.**](avenccommonmeanbitrate-property.md)         |
+| **TAXA DE BITS DE PICO ENCAPIPARAM \_ \_** | Equivalente a [**AVEncCommonMaxBitRate.**](avenccommonmaxbitrate-property.md)           |
+| **MODO DE TAXA DE BITS ENCAPIPARAM \_ \_** | Equivalente a [**AVEncCommonRateControlMode.**](avenccommonratecontrolmode-property.md) |
 
 
 
  
 
-Ao definir a propriedade do **\_ \_ modo de taxa de bits ENCAPIPARAM** , os valores são mapeados da seguinte maneira:
+Ao definir a propriedade MODO DE TAXA DE **\_ BITS \_ ENCAPIPARAM,** os valores são mapeados da seguinte forma:
 
 
 
-| **\_modo de taxa de bits ENCAPIPARAM \_** | [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) |
+| **MODO DE TAXA DE BITS ENCAPIPARAM \_ \_** | [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) |
 |--------------------------------|---------------------------------------------------------------------------|
-| **ConstantBitRate**            | **eAVEncCommonRateControlMode \_ CBR**                                      |
+| **ConstantBitRate**            | **CBR eAVEncCommonRateControlMode \_**                                      |
 | **VariableBitRateAverage**     | Consulte a observação.                                                                 |
 | **VariableBitRatePeak**        | **eAVEncCommonRateControlMode \_ PeakConstrainedVBR**                       |
 
@@ -312,18 +288,18 @@ Ao definir a propriedade do **\_ \_ modo de taxa de bits ENCAPIPARAM** , os valo
  
 
 > [!Note]  
-> Atualmente, o codificador de vídeo MPEG-2 não oferece suporte ao modo de codificação **VariableBitRateAverage** . Se você definir esse valor, o codificador usa como padrão a codificação de CBR (**eAVEncCommonRateControlMode \_ CBR**).
+> Atualmente, o codificador de vídeo MPEG-2 não dá suporte ao modo de codificação **VariableBitRateAverage.** Se você definir esse valor, o codificador assume como padrão a codificação CBR (**eAVEncCommonRateControlMode \_ CBR**).
 
  
 
-Ao obter a propriedade do **\_ \_ modo de taxa de bits ENCAPIPARAM** , os valores são mapeados da seguinte maneira:
+Ao obter a propriedade MODO DE TAXA DE **\_ BITS \_ ENCAPIPARAM,** os valores são mapeados da seguinte forma:
 
 
 
-| [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) | **\_modo de taxa de bits ENCAPIPARAM \_** |
+| [**AVEncCommonRateControlMode**](avenccommonratecontrolmode-property.md) | **MODO DE TAXA DE BITS ENCAPIPARAM \_ \_** |
 |---------------------------------------------------------------------------|--------------------------------|
-| **eAVEncCommonRateControlMode \_ CBR**                                      | **ConstantBitRate**            |
-| **qualidade de eAVEncCommonRateControlMode \_**                                  | **VariableBitRatePeak**        |
+| **CBR eAVEncCommonRateControlMode \_**                                      | **ConstantBitRate**            |
+| **Qualidade de eAVEncCommonRateControlMode \_**                                  | **VariableBitRatePeak**        |
 | **eAVEncCommonRateControlMode \_ PeakConstrainedVBR**                       | **VariableBitRatePeak**        |
 
 
@@ -332,9 +308,9 @@ Ao obter a propriedade do **\_ \_ modo de taxa de bits ENCAPIPARAM** , os valore
 
 ### <a name="limitations"></a>Limitações
 
-Atualmente, o codificador não oferece suporte a nenhum dos seguintes recursos:
+Atualmente, o codificador não dá suporte a nenhum dos seguintes recursos:
 
--   Geração de pacotes de pacote de fluxo elementar (PES).
+-   Geração de pacotes PES (fluxo elementar) em pacotes.
 -   Conversão de taxa de quadros. O fluxo de entrada deve ter uma taxa de quadros válida para um fragmentado MPEG-2.
 -   Extensões de taxa de quadros para MPEG-2 **( \_ extensão de taxa de quadros \_ \_ n**, **extensão de taxa de quadros \_ \_ \_ d**).
 -   Posições do buffer de entrada/saída (VBV) para um clipe.
@@ -351,9 +327,9 @@ O codificador apresenta uma latência de codificação de pelo menos um GOP.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ Desktop apps\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows vista home Premium, Windows vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, \[ somente aplicativos de área de trabalho do Windows 7 Ultimate\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
 
 
 
@@ -361,7 +337,7 @@ O codificador apresenta uma latência de codificação de pelo menos um GOP.
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> <dt>
 
 [**Tipos de mídia de Desmultiplexador MPEG-2**](mpeg-2-demultiplexer-media-types.md)

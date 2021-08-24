@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentDatabaseInvalidNameException'
-title: Propriedades de EsentDatabaseInvalidNameException
+description: 'Saiba mais sobre: Propriedades EsentDatabaseInvalidNameException'
+title: Propriedades EsentDatabaseInvalidNameException
 TOCTitle: EsentDatabaseInvalidNameException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentDatabaseInvalidNameException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdatabaseinvalidnameexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55101387
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7649cdfac0606af9dc2956cc4531be0af7a9ab70
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6925dcf52552cf43672a02811d1944d3f414f1e84530390f7ea26d79670290c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104564576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120066056"
 ---
-# <a name="esentdatabaseinvalidnameexception-properties"></a>Propriedades de EsentDatabaseInvalidNameException
+# <a name="esentdatabaseinvalidnameexception-properties"></a>Propriedades EsentDatabaseInvalidNameException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentDatabaseInvalidNameException](./esentdatabaseinvalidnameexception-class.md) expõe os membros a seguir.
+O [tipo EsentDatabaseInvalidNameException](./esentdatabaseinvalidnameexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentDatabaseInvalidNameException](./esentdatabaseinvalidnameexception-c
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentDatabaseInvalidNameException](./esentdatabaseinvalidnameexception-c
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentDatabaseInvalidNameException](./esentdatabaseinvalidnameexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

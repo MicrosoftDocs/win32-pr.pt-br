@@ -4,12 +4,12 @@ description: Os provedores usam tarefas e opcodes para agrupar eventos logicamen
 ms.assetid: 6a872517-14de-423e-a7ff-7edb9a29b22d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3257166a34c167d076fec39ac6997d12dc785450
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 3cb576251edf4de14c564c6e468209ece93e5840da9e0d821c20b132794f48ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104499011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032466"
 ---
 # <a name="defining-tasks-and-opcodes"></a>Definindo tarefas e opcodes
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 12949997363fce8073c15f7ca6b7312c211fa0f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3beb67ccdd4a50cdbb52e41846f46fcb4f2545dd833d30098e29c4d5887f8fae
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926066"
 ---
 # <a name="productinstallproperty-method"></a>Método Product. InstallProperty
 
@@ -89,7 +89,7 @@ Para recuperar o tipo de instância do produto, defina a *Propriedade* como o va
 
 | Valor        | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| InstanceType | Um valor ausente ou um valor de 0 indica uma instalação normal do produto. Um valor de 1 indica um produto instalado usando uma transformação de várias instâncias e a propriedade [**MSINEWINSTANCE**](msinewinstance.md) . Disponível com o instalador que executa o Windows Server 2003 ou o Windows XP com SP1. Para obter mais informações, consulte [Instalando várias instâncias de produtos e patches](installing-multiple-instances-of-products-and-patches.md). |
+| InstanceType | Um valor ausente ou um valor de 0 indica uma instalação normal do produto. Um valor de 1 indica um produto instalado usando uma transformação de várias instâncias e a propriedade [**MSINEWINSTANCE**](msinewinstance.md) . disponível com o instalador que executa o Windows Server 2003 ou Windows XP com SP1. Para obter mais informações, consulte [Instalando várias instâncias de produtos e patches](installing-multiple-instances-of-products-and-patches.md). |
 
 
 
@@ -109,7 +109,7 @@ As propriedades na lista a seguir também podem ser recuperadas de aplicativos q
 | versão de INSTALLproperty \_              | Versão do produto derivada da propriedade [**ProductVersion**](productversion.md) .                                                                                                                                                                                                                  |
 | INSTALAR \_ PRODUCTICON          | Ícone principal do pacote. Para obter mais informações, consulte a propriedade [**ARPPRODUCTICON**](arpproducticon.md) .                                                                                                                                                                                       |
 | INSTALAR \_ PackageName          | Nome do pacote de instalação original.                                                                                                                                                                                                                                                           |
-| INSTALAR \_ \_ aplicativo lua autorizadoproperty \_ | Um valor de 1 indica um produto que pode ser atendido por não administradores usando a [aplicação de patch de UAC (controle de conta de usuário)](user-account-control--uac--patching.md). Um valor ausente ou um valor de 0 indica que a aplicação de patches com privilégios mínimos não está habilitada. Disponível com o Windows Installer 3,0 e posterior. |
+| INSTALAR \_ \_ aplicativo lua autorizadoproperty \_ | Um valor de 1 indica um produto que pode ser atendido por não administradores usando a [aplicação de patch de UAC (controle de conta de usuário)](user-account-control--uac--patching.md). Um valor ausente ou um valor de 0 indica que a aplicação de patches com privilégios mínimos não está habilitada. Disponível com o Windows 3.0 e posterior. |
 
 
 
@@ -117,13 +117,13 @@ As propriedades na lista a seguir também podem ser recuperadas de aplicativos q
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se a chamada for bem sucedido, a propriedade conterá o valor como uma cadeia de caracteres.
+Se a chamada for bem-sucedida, a propriedade conterá o valor como uma cadeia de caracteres.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -131,9 +131,9 @@ Se a chamada for bem sucedido, a propriedade conterá o valor como uma cadeia de
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer 3,0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador 3.0 ou posterior no Windows Server 2003, Windows XP e Windows 2000<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID \_ IProduct é definido como 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct é definido como \_ 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
 
 
 
@@ -141,10 +141,10 @@ Se a chamada for bem sucedido, a propriedade conterá o valor como uma cadeia de
 
 <dl> <dt>
 
-[**Remessa**](product-object.md)
+[**Produto**](product-object.md)
 </dt> <dt>
 
-[Sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[Sem suporte no Windows 2.0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

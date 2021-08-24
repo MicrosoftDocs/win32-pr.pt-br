@@ -1,9 +1,9 @@
 ---
-title: Mensagem de BCM_SETNOTE (commctrl. h)
-description: Define o texto da observação associada a um botão de link de comando. Você pode enviar essa mensagem explicitamente ou usar a \_ macro setnote do botão.
+title: BCM_SETNOTE mensagem (Commctrl.h)
+description: Define o texto da nota associada a um botão de link de comando. Você pode enviar essa mensagem explicitamente ou usar a \_ macro Button SetNote.
 ms.assetid: c167072a-8207-4744-ac66-247141d726ab
 keywords:
-- Controles de BCM_SETNOTE de mensagens do Windows
+- BCM_SETNOTE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f544a7fb9dd89346cc2aa9725d36122746a8f608
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82f0f049c1ad8a9837695a1f5d7327883e1dabfb7dd077bd6efce78fa6a0a708
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119921546"
 ---
-# <a name="bcm_setnote-message"></a>Mensagem do BCM \_ SETnote
+# <a name="bcm_setnote-message"></a>Mensagem BCM \_ SETNOTE
 
-Define o texto da observação associada a um botão de link de comando. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ setnote do botão**](/windows/desktop/api/Commctrl/nf-commctrl-button_setnote) .
+Define o texto da nota associada a um botão de link de comando. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ Button SetNote.**](/windows/desktop/api/Commctrl/nf-commctrl-button_setnote)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,15 +43,15 @@ Um ponteiro para uma cadeia de caracteres **WCHAR** terminada em nulo que conté
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Começando com o comctl32 DLL versão 6, 1, os botões de link de comando podem ter uma observação.
+A partir do comctl32 DLL versão 6.01, os botões de link de comando podem ter uma observação.
 
-A mensagem de **\_ Observação do BCM** funciona apenas com os estilos de botão [**BS \_ COMMANDLINK**](button-styles.md) e [**BS \_ DEFCOMMANDLINK**](button-styles.md) .
+A **mensagem BCM \_ SETNOTE** funciona apenas com os estilos de botão [**BS \_ COMMANDLINK**](button-styles.md) e [**BS \_ DEFCOMMANDLINK.**](button-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ A mensagem de **\_ Observação do BCM** funciona apenas com os estilos de botã
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ A mensagem de **\_ Observação do BCM** funciona apenas com os estilos de botã
 [Estilos de botão](button-styles.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Tipos de botão](button-types-and-styles.md)

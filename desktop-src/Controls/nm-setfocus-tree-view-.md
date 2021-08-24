@@ -1,5 +1,5 @@
 ---
-title: NM_SETFOCUS de notificação (exibição de árvore) (Commctrl.h)
+title: NM_SETFOCUS (exibição de árvore) de código de notificação (Commctrl.h)
 description: Notifica a janela pai de um controle de exibição de árvore de que o controle recebeu o foco de entrada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 4bdd6cd2-afd3-4c0b-914b-8fff55e474a9
 keywords:

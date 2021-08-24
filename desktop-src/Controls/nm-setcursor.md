@@ -1,9 +1,9 @@
 ---
-title: NM_SETCURSOR código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle que o controle está definindo o cursor em resposta a uma mensagem do WM \_ SetCursor. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_SETCURSOR de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de que o controle está definindo o cursor em resposta a uma mensagem WM \_ SETCURSOR. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 8d70563f-05a3-4116-b686-6d9063940fae
 keywords:
-- NM_SETCURSOR de código de notificação controles do Windows
+- NM_SETCURSOR de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e6cc3c48a0224efec0c8ab8844a3e7f234a9ba51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b41f8c0b713e48bfef3b4d447666d92ac87cd3180f3f0e02ee323d75ceececc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119834466"
 ---
-# <a name="nm_setcursor-notification-code"></a>Código de notificação para o NM \_ SETcursor
+# <a name="nm_setcursor-notification-code"></a>Código de \_ notificação SETCURSOR NM
 
-Notifica uma janela pai do controle que o controle está definindo o cursor em resposta a uma mensagem do [**WM \_ SetCursor**](/windows/desktop/menurc/wm-setcursor) . Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de que o controle está definindo o cursor em resposta a uma [**mensagem WM \_ SETCURSOR.**](/windows/desktop/menurc/wm-setcursor) Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_SETCURSOR
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contém informações adicionais sobre esta notificação.
+Um ponteiro para uma [**estrutura NMMOUSE**](/windows/win32/api/commctrl/ns-commctrl-nmmouse) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar zero para habilitar o controle para definir o cursor ou diferente de zero para impedir que o controle defina o cursor.
+Retorne zero para habilitar o controle para definir o cursor ou diferente de zero para impedir que o controle de configuração do cursor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Retornar zero para habilitar o controle para definir o cursor ou diferente de ze
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

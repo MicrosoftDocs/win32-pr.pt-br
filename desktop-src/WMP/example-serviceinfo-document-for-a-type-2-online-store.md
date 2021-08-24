@@ -3,25 +3,25 @@ title: Documento de informações de exemplo para uma loja online tipo 2
 description: Documento de informações de exemplo para uma loja online tipo 2
 ms.assetid: d9bbce89-15b4-495f-8995-24dda99a4f40
 keywords:
-- Repositórios online do Windows Media Player, documento de informações de exemplo
+- Windows Media Player lojas online, documento de informações de exemplo
 - repositórios online, documento de informações de exemplo
 - Digite 2 lojas online, documento de informações de exemplo
-- Repositórios online do Windows Media Player, documento do serviceInfo
+- Windows Media Player repositórios online, documento do serviceinfo
 - repositórios online, documento do serviceInfo
 - tipo 2 lojas online, documento do serviceInfo
-- Lojas online do Windows Media Player, exemplo de código
+- Windows Media Player lojas online, exemplo de código
 - lojas online, exemplo de código
 - tipo 2 lojas online, exemplo de código
 - documento de informações de exemplo
 - Documento do serviceInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02214b9d7180296fa11bb877f978c6bde85f3a4e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7962f7548f8c880e60320d3a7fb071e2a076ffafdac9a56b4cf6d8aa41b5d60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105759709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119650116"
 ---
 # <a name="example-serviceinfo-document-for-a-type-2-online-store"></a>Documento de informações de exemplo para uma loja online tipo 2
 
@@ -87,9 +87,9 @@ O exemplo de código a seguir mostra um documento de ServiceInfo.xml completo. V
 [**Documento do serviceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 70d6cdf79fdd91e819d54702682515aa3e4810b4
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e5c646fb9779ca923480487cb96f184c76eff9ea
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114454"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122473622"
 ---
 # <a name="d3dxgetvertexshaderprofile-function"></a>Função D3DXGetVertexShaderProfile
 
@@ -63,41 +63,14 @@ Um perfil de sombreador especifica a versão do sombreador de assembly a ser usa
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Perfil do sombreador</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>vs_1_1</td>
-<td>Compilar para vs_1_1 versão.</td>
-</tr>
-<tr class="even">
-<td>vs_2_0</td>
-<td>Compilar para vs_2_0 versão.</td>
-</tr>
-<tr class="odd">
-<td>vs_2_a</td>
-<td>O mesmo que o perfil de vs_2_0, com os seguintes recursos adicionais disponíveis para o compilador visar:
-<ul>
-<li>O número de registros temporários (r #) é maior ou igual a 13.</li>
-<li>Instrução de controle de fluxo dinâmico.</li>
-<li>Predicação.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>vs_3_0</td>
-<td>Compilar para vs_3_0 versão.</td>
-</tr>
-</tbody>
-</table>
+
+| Perfil do sombreador | Descrição | 
+|----------------|-------------|
+| vs_1_1 | Compilar para vs_1_1 versão. | 
+| vs_2_0 | Compilar para vs_2_0 versão. | 
+| vs_2_a | O mesmo que o perfil de vs_2_0, com os seguintes recursos adicionais disponíveis para o compilador visar:<ul><li>O número de registros temporários (r #) é maior ou igual a 13.</li><li>Instrução de controle de fluxo dinâmico.</li><li>Predicação.</li></ul> | 
+| vs_3_0 | Compilar para vs_3_0 versão. | 
+
 
 
 
@@ -116,7 +89,7 @@ Para obter mais informações sobre as diferenças entre versões de sombreador,
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

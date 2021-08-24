@@ -1,9 +1,9 @@
 ---
-title: métodos setangle idcompositionhuerotationeffect (DCOMP. h)
+title: Métodos idcompositionrotationeffect SetAngle (Dcomp.h)
 description: Define o ângulo para girar o matiz.
 ms.assetid: e4069c7a-c8a1-dadb-a1fc-1d0c4c58834f
 keywords:
-- Métodos setangle DirectComposition
+- Métodos SetAngle DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 1b0e78443ca0cd2e60cf851f74e9125d920bf9ed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dafec7ae3e325965df113e4aa5f901107ffb16d230baf23ada5fa939b94261cc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787846"
 ---
-# <a name="idcompositionhuerotationeffectsetangle-methods"></a>métodos idcompositionhuerotationeffect:: setangle
+# <a name="idcompositionhuerotationeffectsetangle-methods"></a>Métodos idcompositionrotationeffect::SetAngle
 
 Define o ângulo para girar o matiz.
 
@@ -29,8 +29,8 @@ Define o ângulo para girar o matiz.
 
 | Método                                                                                    | Descrição                                  |
 |:------------------------------------------------------------------------------------------|:---------------------------------------------|
-| [**Setangle (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionhuerotationeffect-setangle(idcompositionanimation)) | Define o ângulo para girar o matiz.<br/> |
-| [**Setangle**](/windows/win32/api/dcomp/nf-dcomp-idcompositionhuerotationeffect-setangle(float))                               | Define o ângulo para girar o matiz.<br/> |
+| [**SetAngle (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionhuerotationeffect-setangle(idcompositionanimation)) | Define o ângulo para girar o matiz.<br/> |
+| [**SetAngle**](/windows/win32/api/dcomp/nf-dcomp-idcompositionhuerotationeffect-setangle(float))                               | Define o ângulo para girar o matiz.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Define o ângulo para girar o matiz.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DCOMP. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ Define o ângulo para girar o matiz.
 
 <dl> <dt>
 
-[**IDCompositionHueRotationEffect**](/windows/win32/api/dcomp/nn-dcomp-idcompositionhuerotationeffect)
+[**IDCompositionRotationEffect**](/windows/win32/api/dcomp/nn-dcomp-idcompositionhuerotationeffect)
 </dt> </dl>
 
 �

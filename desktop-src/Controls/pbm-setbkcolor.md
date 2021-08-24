@@ -3,7 +3,7 @@ title: PBM_SETBKCOLOR mensagem (Commctrl.h)
 description: Define a cor da tela de fundo na barra de progresso.
 ms.assetid: e28af958-babb-4c2e-9202-89b608c22f8e
 keywords:
-- PBM_SETBKCOLOR controles de Windows mensagem
+- PBM_SETBKCOLOR controles Windows mensagem
 topic_type:
 - apiref
 api_name:

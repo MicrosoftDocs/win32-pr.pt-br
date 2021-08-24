@@ -1,9 +1,9 @@
 ---
-title: Str_GetPtr função
+title: Função Str_GetPtr
 description: Copia uma cadeia de caracteres de um buffer para outro.
 ms.assetid: a3dd55a0-3f8b-4d6c-9956-666bebc3ab8d
 keywords:
-- Str_GetPtr função Windows controles
+- controles de Windows de função Str_GetPtr
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119919446"
 ---
-# <a name="str_getptr-function"></a>Função \_ GetPtr Str
+# <a name="str_getptr-function"></a>\_Função GetPtr Str
 
-\[Essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
+\[essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
 
 Copia uma cadeia de caracteres de um buffer para outro.
 
@@ -46,7 +46,7 @@ int WINAPI Str_GetPtr(
 
 <dl> <dt>
 
-*pszSource* \[ Em\]
+*pszSource* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
@@ -55,16 +55,16 @@ Um ponteiro para uma cadeia de caracteres de origem.
 
 </dd> <dt>
 
-*pszDest* \[ in, out\]
+*pszDest* \[ entrada, saída\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Um ponteiro para o buffer de destino. Esse valor pode ser **NULL.**
+Um ponteiro para o buffer de destino. Esse valor pode ser **nulo**.
 
 </dd> <dt>
 
-*cchDest* \[ Em\]
+*cchDest* \[ no\]
 </dt> <dd>
 
 Tipo: **int**
@@ -77,15 +77,15 @@ O tamanho de *pszDest*, em caracteres.
 
 Tipo: **int**
 
-Se *pszDest* for **NULL** ou *cchDest* for zero, retornará o tamanho do buffer, em caracteres, necessário para conter uma cópia terminada em nulo da cadeia de caracteres apontada por *pszSource*.
+Se *pszDest* for **nulo** ou *cchDest* for zero, retornará o tamanho do buffer, em caracteres, necessário para conter uma cópia terminada em nulo da cadeia de caracteres apontada por *pszSource*.
 
-Se *pszDest* for não **NULL,** retornará o número de caracteres copiados com êxito, incluindo o caractere nulo de terminação.
+Se *pszDest* for não **nulo**, retornará o número de caracteres copiados com êxito, incluindo o caractere nulo de terminação.
 
-Se *pszDest* não puder conter toda a cadeia de caracteres apontada por *pszSource*, os caracteres (*cchDest*-1) serão copiados, a cadeia de caracteres terminada em nulo e *o cchDest* será retornado.
+Se *pszDest* não puder conter a cadeia de caracteres inteira apontada por *pszSource*, os caracteres (*cchDest*-1) serão copiados, a cadeia de caracteres com terminação nula e *cchDest* retornado.
 
 ## <a name="remarks"></a>Comentários
 
-**Str \_ GetPtr** está disponível como versões ANSI (**Str \_ GetPtrA**) e Unicode (**Str \_ GetPtrW**). Essas funções não são exportadas por nome ou declaradas em um arquivo de header público. Para usá-los, você deve usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) e solicitar ordinal 233 (**Str \_ GetPtrA**) ou 235 (**Str \_ GetPtrW**) do ComCtl32.dll para obter um ponteiro de função.
+**Str \_ GetPtr** está disponível como ANSI (**Str \_ GetPtrA**) e versões Unicode (**Str \_ GetPtrW**). Essas funções não são exportadas por nome ou declaradas em um arquivo de cabeçalho público. Para usá-los, você deve usar [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) e solicitar o ordinal 233 (**Str \_ GetPtrA**) ou 235 (**Str \_ GetPtrW**) de ComCtl32.dll para obter um ponteiro de função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,10 +93,10 @@ Se *pszDest* não puder conter toda a cadeia de caracteres apontada por *pszSour
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>ComCtl32.dll</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **Str \_ GetPtrW** (Unicode) e **Str \_ GetPtrA** (ANSI)<br/>                       |
+| Nomes Unicode e ANSI<br/>   | **Str \_ GetPtrW** (Unicode) e **\_ GetPtrA de Str** (ANSI)<br/>                       |
 
 
 

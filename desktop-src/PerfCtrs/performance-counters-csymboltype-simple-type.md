@@ -1,7 +1,7 @@
 ---
-description: Tipo simples de CSymbolType (contadores de desempenho) – define um nome de símbolo C/C++ válido.
+description: Tipo simples CSymbolType (contadores de desempenho) – define um nome de símbolo C/C++ válido.
 ms.assetid: 75f74a16-0be4-466b-a88d-247c8c94f4ce
-title: Tipo simples de CSymbolType (contadores de desempenho)
+title: Tipo simples CSymbolType (contadores de desempenho)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0771bb1dffc006abf8e02e6c391278f7d0b03f11
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4ebba4d72b7bc79f2aaefccfa2d71e57abd82aa06efb09abc2e83cebdb513f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120033526"
 ---
-# <a name="csymboltype-simple-type-performance-counters"></a>Tipo simples de CSymbolType (contadores de desempenho)
+# <a name="csymboltype-simple-type-performance-counters"></a>Tipo simples CSymbolType (contadores de desempenho)
 
-Define um nome de símbolo do C/C++ válido.
+Define um nome de símbolo C/C++ válido.
 
 ``` syntax
 <xs:simpleType name="CSymbolType">
@@ -34,11 +34,11 @@ Define um nome de símbolo do C/C++ válido.
 
 ## <a name="patterns"></a>Padrões
 
-O tipo simples **CSymbolType** é um **xs: String** que é restrito pelo seguinte padrão:
+O **tipo simples CSymbolType** é uma cadeia de **caracteres xs:restrita** pelo seguinte padrão:
 
 -   `()|([_a-zA-Z][_0-9a-zA-Z]*)`
 
-    O nome do símbolo pode ser vazio ou conter caracteres alfanuméricos e sublinhados. Se você especificar um nome, o nome deverá começar com um sublinhado ( \_ ) ou um caractere alfabético.
+    O nome do símbolo pode estar vazio ou conter caracteres alfanuméricos e sublinhados. Se você especificar um nome, o nome deverá começar com um sublinhado ( \_ ) ou um caractere alfabético.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ O tipo simples **CSymbolType** é um **xs: String** que é restrito pelo seguint
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

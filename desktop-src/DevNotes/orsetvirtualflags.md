@@ -1,7 +1,7 @@
 ---
-description: Define os sinalizadores de virtualização na chave do registro aberta especificada em um hive do registro offline.
+description: Define sinalizadores de virtualização na chave do Registro aberta especificada em um hive do Registro offline.
 ms.assetid: c625af35-8e14-4379-8d0a-6f5b65a1aebb
-title: Função ORSetVirtualFlags (Offreg. h)
+title: Função ORSetVirtualFlags (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: f694d69684a474cfa6d4f6c33c6d8cab7072f605
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56ca40b273447c8669c162b8c2dba597f2b2ce98282d40e7b482d04032a5f95a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119815436"
 ---
 # <a name="orsetvirtualflags-function"></a>Função ORSetVirtualFlags
 
-Define os sinalizadores de virtualização na chave do registro aberta especificada em um hive do registro offline.
+Define sinalizadores de virtualização na chave do Registro aberta especificada em um hive do Registro offline.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,25 +40,25 @@ DWORD ORSetVirtualFlags(
 
 <dl> <dt>
 
-*Identificador* \[ do no\]
+*Manipular* \[ Em\]
 </dt> <dd>
 
-Um identificador para uma chave do registro aberta em um hive do registro offline.
+Um handle para uma chave aberta do Registro em um hive de registro offline.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Esse parâmetro controla o comportamento do registro quando uma operação de criação ou abertura falha em uma chave em um Hive virtualizado. Esse parâmetro pode ser um ou mais dos valores a seguir.
+Esse parâmetro controla o comportamento do Registro quando uma operação Criar ou Abrir falha em uma chave em um hive virtualizado. Esse parâmetro pode ser um ou mais dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                                    | Significado                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="REG_KEY_DONT_SILENT_FAIL"></span><span id="reg_key_dont_silent_fail"></span><dl> <dt>**Reg \_ CHAVE \_ não \_ silenciosa com \_ falha**</dt> <dt>4</dt> </dl> | Se esse sinalizador for definido e uma operação de abertura falhar em uma chave para a qual a virtualização está habilitada, o registro não tentará reabrir a chave. Se esse sinalizador estiver claro, o registro tentará reabrir a chave com o máximo \_ permitido de acesso.<br/>                                                                                    |
-| <span id="REG_KEY_DONT_VIRTUALIZE"></span><span id="reg_key_dont_virtualize"></span><dl> <dt>**Reg \_ A chave não \_ \_ virtualiza**</dt> <dt>2</dt> </dl>     | Se esse sinalizador for definido e uma operação de criação de chave falhar porque o chamador não tem a chave \_ Create \_ sub \_ Key diretamente na chave pai, o registro falhará na operação de criação. Se esse sinalizador for claro, o registro tentará criar a chave no repositório virtual. O chamador deve ter o direito de leitura de chave \_ na chave pai.<br/> |
-| <span id="REG_KEY_RECURSE_FLAG"></span><span id="reg_key_recurse_flag"></span><dl> <dt>**Reg \_ \_ \_ Sinalizador de recursão de chave**</dt> <dt>8</dt> </dl>              | Se esse sinalizador for definido, os sinalizadores de virtualização do registro serão propagados da chave pai. Se esse sinalizador for claro, os sinalizadores de virtualização do registro não serão propagados.<br/>                                                                                                                                                                    |
+| <span id="REG_KEY_DONT_SILENT_FAIL"></span><span id="reg_key_dont_silent_fail"></span><dl> <dt>**REG \_ FALHA \_ SILENCIOSA DE \_ KEY \_ DONT**</dt> <dt>4</dt> </dl> | Se esse sinalizador for definido e uma operação Abrir falhar em uma chave para a qual a virtualização está habilitada, o Registro não tentará reabrir a chave. Se esse sinalizador estiver claro, o Registro tentará reabrir a chave com o acesso MÁXIMO \_ PERMITIDO.<br/>                                                                                    |
+| <span id="REG_KEY_DONT_VIRTUALIZE"></span><span id="reg_key_dont_virtualize"></span><dl> <dt>**REG \_ KEY \_ DONT \_ VIRTUALIZE**</dt> <dt>2</dt> </dl>     | Se esse sinalizador for definido e uma operação Criar Chave falhar porque o chamador não tem o direito KEY CREATE SUB KEY na chave pai, o Registro falhará na \_ \_ operação \_ Criar. Se esse sinalizador estiver claro, o Registro tentará criar a chave no armazenamento virtual. O chamador deve ter a tecla KEY \_ READ à direita na chave pai.<br/> |
+| <span id="REG_KEY_RECURSE_FLAG"></span><span id="reg_key_recurse_flag"></span><dl> <dt>**REG \_ SINALIZADOR \_ DE RECURSE \_ DE CHAVE**</dt> <dt>8</dt> </dl>              | Se esse sinalizador for definido, os sinalizadores de virtualização do Registro serão propagados da chave pai. Se esse sinalizador estiver claro, os sinalizadores de virtualização do Registro não serão propagados.<br/>                                                                                                                                                                    |
 
 
 
@@ -66,25 +66,25 @@ Esse parâmetro controla o comportamento do registro quando uma operação de cr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
+Se a função for bem-sucedida, o valor de retorno será ERROR \_ SUCCESS.
 
-Se a função falhar, o valor de retorno será um código de erro diferente de zero definido em Winerror. h. Você pode usar a função [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) com a \_ mensagem de formato \_ do \_ sinalizador do sistema para obter uma descrição genérica do erro.
+Se a função falhar, o valor de retorno será um código de erro não zero definido em Winerror.h. Você pode usar a [função FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) com o sinalizador FORMAT MESSAGE FROM SYSTEM para obter \_ uma \_ \_ descrição genérica do erro.
 
 ## <a name="remarks"></a>Comentários
 
-A virtualização do registro é uma tecnologia de compatibilidade de aplicativos provisória que permite que as operações de gravação do registro que têm impacto global sejam redirecionadas para locais por usuário. Esse redirecionamento é transparente para os aplicativos que lêem ou gravam no registro.
+A virtualização do Registro é uma tecnologia de compatibilidade de aplicativo provisório que permite que as operações de gravação do Registro que têm impacto global sejam redirecionadas para locais por usuário. Esse redirecionamento é transparente para aplicativos que lêem ou escrevem no Registro.
 
-A virtualização do registro tem suporte a partir do Windows Vista. No entanto, a Microsoft pretende removê-la de versões futuras do sistema operacional Windows à medida que mais aplicativos são tornados compatíveis com o Windows Vista. Portanto, os aplicativos não devem depender do comportamento da virtualização do registro no sistema.
+A virtualização do Registro tem suporte a partir do Windows Vista. No entanto, a Microsoft pretende removê-lo de versões futuras do sistema operacional Windows à medida que mais aplicativos são compatíveis com o Windows Vista. Portanto, os aplicativos não devem depender do comportamento da virtualização do Registro no sistema.
 
-A virtualização do registro é habilitada apenas para o seguinte:
+A virtualização do Registro está habilitada somente para o seguinte:
 
--   processos interativos de 32 bits
--   Chaves em **HKEY \_ local \_ Machine \\ software**
--   Chaves que um administrador pode gravar
+-   Processos interativos de 32 bits
+-   Chaves no **HKEY \_ LOCAL MACHINE \_ \\ Software**
+-   Chaves nas que um administrador pode gravar
 
-Para obter mais informações, consulte [virtualização de registro](../sysinfo/registry-virtualization.md).
+Para obter mais informações, consulte [Virtualização do Registro](../sysinfo/registry-virtualization.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,8 +92,8 @@ Para obter mais informações, consulte [virtualização de registro](../sysinfo
 
 | Requisito | Valor |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuível<br/> | Biblioteca de registro offline do Windows versão 1,0 ou posterior<br/>                      |
-| parâmetro<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuível<br/> | Windows Biblioteca de Registro offline versão 1.0 ou posterior<br/>                      |
+| Cabeçalho<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 
@@ -105,7 +105,7 @@ Para obter mais informações, consulte [virtualização de registro](../sysinfo
 [**ORGetVirtualFlags**](orgetvirtualflags.md)
 </dt> <dt>
 
-[Virtualização do registro](../sysinfo/registry-virtualization.md)
+[Virtualização do Registro](../sysinfo/registry-virtualization.md)
 </dt> </dl>
 
  

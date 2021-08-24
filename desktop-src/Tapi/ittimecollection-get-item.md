@@ -1,21 +1,21 @@
 ---
-description: O \_ método get item Obtém um item da coleção usando um índice.
+description: O método \_ get Item obtém um item da coleção usando um índice.
 ms.assetid: 7401ae21-190d-479c-aebc-51bf8a953b94
-title: 'Método ITTimeCollection:: get_Item (Sdpblb. h)'
+title: Método ITTimeCollection::get_Item (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68b9dec40070ff3abddce0e425300f6d805c1cc9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 422e558c01172d80e97113f84745f86e8d304fba5bf5761ff9135fc9ee59c41b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120012656"
 ---
-# <a name="ittimecollectionget_item-method"></a>Método ITTimeCollection:: get \_ Item
+# <a name="ittimecollectionget_item-method"></a>Método de item ITTimeCollection::get \_
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de Conferência de Telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **Get \_ Item** Obtém um item da coleção usando um índice.
+O **método \_ get Item** obtém um item da coleção usando um índice.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,21 +33,21 @@ HRESULT get_Item(
 
 <dl> <dt>
 
-*Índice* \[ do no\]
+*Índice* \[ Em\]
 </dt> <dd>
 
-Índice do item a ser obtido.
+Índice do item a ser obter.
 
 </dd> <dt>
 
-*PVal* \[ fora\]
+*pVal* \[ out\]
 </dt> <dd>
 
-Ponteiro para a interface desejada do [**ITTime**](ittime.md) .
+Ponteiro para a interface desejada [**de ITTime.**](ittime.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -56,10 +56,10 @@ Esse método pode retornar um desses valores.
 | Valor                                                                                         | Significado                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                    |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | O parâmetro *PVal* não é um ponteiro válido.<br/>         |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | O parâmetro de *índice* não é válido.<br/>                  |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | O *parâmetro pVal* não é um ponteiro válido.<br/>         |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | O *parâmetro Index* não é válido.<br/>                  |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl>        | Erro não especificado.<br/>                                   |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Erro não especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método ainda não foi implementado.<br/>                  |
 
 
@@ -68,7 +68,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-A TAPI chama o método **AddRef** na interface [**ITTime**](ittime.md) retornada por I **TTimeCollection:: get \_ Item**. O aplicativo deve chamar **Release** na interface **ITTime** para liberar recursos associados a ela.
+TAPI chama o **método AddRef** na interface [**ITTime**](ittime.md) retornada por I **TTimeCollection::get \_ Item**. O aplicativo deve chamar **Release** na interface **ITTime** para liberar recursos associados a ele.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,9 +76,9 @@ A TAPI chama o método **AddRef** na interface [**ITTime**](ittime.md) retornada
 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                 |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

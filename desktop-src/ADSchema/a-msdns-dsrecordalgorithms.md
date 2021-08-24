@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 58b721a616b5b1967449965ef2c7dc9ad9889ca6
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0a65ac7cde340cca7a07c5f4aedfd8f2e63babcc4c6f981a8efa6368b3b20968
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924466"
 ---
 # <a name="ms-dns-ds-record-algorithms-attribute"></a>atributo ms-DNS-DS-Record-Algorithms
 
@@ -53,7 +53,7 @@ Um atributo usado para definir os algoritmos usados ao gravar o arquivo dsset du
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| É de valor único       | True                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |

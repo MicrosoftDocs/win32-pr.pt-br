@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b08f3457fec55a0eb519419feddf4594a2cbfac0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91ec48743bf52d990c64ce1aecf30897a7ee2f51664e88695a181f9d4f758140
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031736"
 ---
 # <a name="iwmdrmdeviceappsynchronizelicenses-method"></a>Método IWMDRMDeviceApp:: SynchronizeLicenses
 
@@ -74,7 +74,7 @@ Mínimo opcional de horas restantes em uma licença de dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
@@ -90,8 +90,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 | <dl> <dt>**DRM \_ E \_ NOXMLOPENTAG**</dt> </dl>                 | O XML de licença foi formado incorretamente.<br/>                                                                                                           |
 | <dl> <dt>**o DRM \_ E a \_ OUTOFMEMORY**</dt> </dl>                  | Sem memória.<br/>                                                                                                                                   |
 | <dl> <dt>**DRM \_ E \_ XMLNOTFOUND**</dt> </dl>                  | Falha ao localizar uma marca XML necessária na licença.<br/>                                                                                                |
-| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl>    | O dispositivo especificado não é um dispositivo compatível com o Windows Media DRM.<br/>                                                                               |
-| <dl> <dt>**o NS \_ E \_ DRM precisa de \_ \_ individualização**</dt> </dl> | O DRM requer uma caixa preta individual para executar essa função. Em outras palavras, o SDK do Windows Media format requer uma atualização de segurança.<br/> |
+| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl>    | o dispositivo especificado não é um dispositivo compatível com DRM com mídia Windows.<br/>                                                                               |
+| <dl> <dt>**o NS \_ E \_ DRM precisa de \_ \_ individualização**</dt> </dl> | O DRM requer uma caixa preta individual para executar essa função. em outras palavras, o SDK do formato de mídia Windows requer uma atualização de segurança.<br/> |
 
 
 
@@ -99,7 +99,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Essa chamada só pode ser feita em um dispositivo que ofereça suporte ao Windows Media DRM 10 para dispositivos portáteis. Você deve especificar pelo menos um parâmetro de limite.
+essa chamada só pode ser feita em um dispositivo que ofereça suporte a Windows mídia DRM 10 para dispositivos portáteis. Você deve especificar pelo menos um parâmetro de limite.
 
 ## <a name="requirements"></a>Requisitos
 

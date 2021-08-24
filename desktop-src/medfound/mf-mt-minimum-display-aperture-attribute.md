@@ -1,7 +1,7 @@
 ---
 description: Define a abertura de exibição, que é a região de um quadro de vídeo que contém dados de imagem válidos.
 ms.assetid: 86a7509b-c690-49c2-bbe4-8b02d64c307c
-title: Atributo MF_MT_MINIMUM_DISPLAY_APERTURE (Mfapi. h)
+title: MF_MT_MINIMUM_DISPLAY_APERTURE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 97ff6dd226492c848bd2347ccc2bac17c2dd8824467e661e83be06d590f65c0e
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120012936"
 ---
-# <a name="mf_mt_minimum_display_aperture-attribute"></a>\_Atributo de \_ \_ abertura de exibição mínima \_ de MF MT
+# <a name="mf_mt_minimum_display_aperture-attribute"></a>Atributo \_ MF MT \_ MINIMUM \_ DISPLAY \_ APERTURE
 
 Define a abertura de exibição, que é a região de um quadro de vídeo que contém dados de imagem válidos.
 
@@ -21,11 +21,11 @@ Matriz de bytes
 
 ## <a name="remarks"></a>Comentários
 
-O valor do atributo é uma estrutura [**MFVideoArea**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea) .
+O valor do atributo é [**uma estrutura MFVideoArea.**](/windows/desktop/api/mfobjects/ns-mfobjects-mfvideoarea)
 
-A abertura de exibição mínima é a região que contém a parte válida do sinal. Os pixels fora da abertura contêm dados inválidos e não devem ser exibidos.
+A abertura mínima de exibição é a região que contém a parte válida do sinal. Os pixels fora da abertura contêm dados inválidos e não devem ser exibidos.
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                        |
-| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de tipo de mídia](media-type-attributes.md)
@@ -55,19 +55,19 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 [Tipos de mídia de vídeo](video-media-types.md)
 </dt> <dt>
 
-[**IMFAttributes:: getBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: setBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[**\_ \_ abertura geométrica do MF MT \_**](mf-mt-geometric-aperture-attribute.md)
+[**MF \_ MT \_ GEOMETRIC \_ APERTURE**](mf-mt-geometric-aperture-attribute.md)
 </dt> <dt>
 
-[**\_abertura de \_ digitalização de Pan MT \_ MF \_**](mf-mt-pan-scan-aperture-attribute.md)
+[**ABERTURA DO \_ MF MT \_ PAN \_ SCAN \_**](mf-mt-pan-scan-aperture-attribute.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: A API RTMv2 permite que os clientes trabalhem com a lista de próxi
 ms.assetid: ef474091-48fe-48e5-b476-73d77dbcbec5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d20a812fd272afafd2cd8eb1d6fb93d97530a2a7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f629bb5f43298c2cada3759ea3ab9c7bb71f0ca47a3c4158028d923646662c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120024706"
 ---
 # <a name="working-with-next-hops"></a>Trabalhando com próximos saltos
 
@@ -20,11 +20,11 @@ Os clientes também podem atualizar o próximo salto diretamente. Para fazer iss
 > [!Note]  
 > Os campos de endereço de próximo salto e índice de interface no próximo salto identificam exclusivamente o próximo salto e não devem ser modificados.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

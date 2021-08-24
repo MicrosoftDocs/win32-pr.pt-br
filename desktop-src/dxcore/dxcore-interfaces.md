@@ -4,12 +4,12 @@ description: As seguintes interfaces e seus métodos são declaradas em dxcore_i
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 170d7c0cc93614159da449bf0107f7f5ca458f84
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9881eaf577aeea65387632caa6e46b5e5560192567753760e06dc1b2a7504bf9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787116"
 ---
 # <a name="dxcore-interfaces"></a>Interfaces de DXCore
 
@@ -19,9 +19,9 @@ As seguintes interfaces e seus métodos são declaradas em dxcore_interface. h.
 
 | Tópico | Descrição |
 |-|-|
-| [**IDXCoreAdapter**](./dxcore_interface/nn-dxcore_interface-idxcoreadapter.md) | A interface **IDXCoreAdapter**   implementa métodos para recuperar detalhes sobre um item de adaptador. |
-| [**IDXCoreAdapterFactory**](./dxcore_interface/nn-dxcore_interface-idxcoreadapterfactory.md) | A interface **IDXCoreAdapterFactory**   implementa métodos para gerar objetos de enumeração do adaptador DXCore e para recuperar seus detalhes. |
-| [**IDXCoreAdapterList**](./dxcore_interface/nn-dxcore_interface-idxcoreadapterlist.md) | A interface **IDXCoreAdapterList**   implementa métodos para recuperar itens de adaptador de uma lista gerada, bem como detalhes sobre a lista. |
+| [**IDXCoreAdapter**](./dxcore_interface/nn-dxcore_interface-idxcoreadapter.md) | A interface **IDXCoreAdapter** implementa métodos para recuperar detalhes sobre um item de adaptador. |
+| [**IDXCoreAdapterFactory**](./dxcore_interface/nn-dxcore_interface-idxcoreadapterfactory.md) | A interface **IDXCoreAdapterFactory** implementa métodos para gerar objetos de enumeração do adaptador DXCore e para recuperar seus detalhes. |
+| [**IDXCoreAdapterList**](./dxcore_interface/nn-dxcore_interface-idxcoreadapterlist.md) | A interface **IDXCoreAdapterList** implementa métodos para recuperar itens de adaptador de uma lista gerada, bem como detalhes sobre a lista. |
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

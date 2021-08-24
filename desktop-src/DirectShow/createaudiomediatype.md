@@ -1,7 +1,7 @@
 ---
-description: A função CreateAudioMediaType Inicializa um tipo de mídia de uma estrutura WAVEFORMATEX.
+description: A função CreateAudioMediaType inicializa um tipo de mídia de uma estrutura WAVEFORMATEX.
 ms.assetid: 2571b7b4-86e9-443f-a99d-9ba48f469522
-title: Função CreateAudioMediaType (mtype. h)
+title: Função CreateAudioMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef4e525762d4b6928e6a9095fad34f3f4f2e96fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2eb9dc01a398a498252cca2f1f3af012608f8e0ca80c62800c56e4026c0b0a7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119908816"
 ---
 # <a name="createaudiomediatype-function"></a>Função CreateAudioMediaType
 
-A função **CreateAudioMediaType** Inicializa um tipo de mídia de uma estrutura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85)) .
+A **função CreateAudioMediaType** inicializa um tipo de mídia de uma [**estrutura WAVEFORMATEX.**](/previous-versions/dd757713(v=vs.85))
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,27 +51,27 @@ Ponteiro para a estrutura [**WAVEFORMATEX**](/previous-versions/dd757713(v=vs.85
 
 </dd> <dt>
 
-*PMT* 
+*Pgto* 
 </dt> <dd>
 
-Ponteiro para a estrutura do [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) a ser inicializada.
+Ponteiro para a [**estrutura AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) a ser inicializada.
 
 </dd> <dt>
 
 *bSetFormat* 
 </dt> <dd>
 
-Sinalizador que indica se o bloco de formato deve ser inicializado. Especifique **true** para inicializá-lo ou **false** caso contrário.
+Sinalizador que indica se o bloco de formato deve ser inicializado. **Especifique TRUE** para inicializá-lo ou **FALSE caso** contrário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna E \_ OUTOFMEMORY se não foi possível alocar a memória para os dados de formato; \_Caso contrário, ok.
+Retornará E \_ OUTOFMEMORY se a memória não puder ser alocada para os dados de formato; S \_ OK caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Se o parâmetro *bSetFormat* for **true**, o método alocará a memória para o bloco de formato. Se o parâmetro *PGTO* já contiver um bloco de formato alocado, ocorrerá um vazamento de memória. Para evitar um vazamento de memória, chame [**FreeMediaType**](freemediatype.md) antes de chamar essa função. Depois que o método retornar, chame **FreeMediaType** novamente para liberar o bloco de formato.
+Se o *parâmetro bSetFormat* for **TRUE,** o método alocará a memória para o bloco de formato. Se o *parâmetro pmt* já contiver um bloco de formato alocado, ocorrerá uma perda de memória. Para evitar uma perda de memória, [**chame FreeMediaType antes**](freemediatype.md) de chamar essa função. Depois que o método retornar, chame **FreeMediaType novamente** para liberar o bloco de formato.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Se o parâmetro *bSetFormat* for **true**, o método alocará a memória para o 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

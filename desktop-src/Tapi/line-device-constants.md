@@ -4,12 +4,12 @@ ms.assetid: 422643a6-90a5-4e95-b5aa-946b7fbf53bc
 title: Constantes de dispositivo de linha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cdd797da867ceb8eec9c8d6d98fe11b7d511e989
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd1987e0db8e19664b4c115f32f9c9e319ceabff61c0cd222f67eba09e1fbd72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873486"
 ---
 # <a name="line-device-constants"></a>Constantes de dispositivo de linha
 

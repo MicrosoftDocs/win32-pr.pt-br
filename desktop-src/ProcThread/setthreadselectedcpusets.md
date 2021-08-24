@@ -15,12 +15,12 @@ api_location:
 - Kernel32.dll
 - API-MS-Win-Core-ProcessThreads-L1-1-3.dll
 - KernelBase.dll
-ms.openlocfilehash: b8b1f7c382d034e804d4ac7e63d58b8ec5853620
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d627c3ae0499cf19ba533c30d1a3fabb05c2dbf5782d99b2f716579f50125b0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120031726"
 ---
 # <a name="setthreadselectedcpusets-function"></a>Função SetThreadSelectedCpuSets
 
@@ -64,7 +64,7 @@ Especifica o número de IDs na lista passada no argumento **CpuSetIds** . Se ess
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não pode falhar quando passaram parâmetros válidos.
 
@@ -74,9 +74,9 @@ Essa função não pode falhar quando passaram parâmetros válidos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows 10 \|\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2016 \[ Desktop aplicativos \| UWP\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Processthreadsapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Processthreadsapi. h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Windows. h</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>Kernel32.dll</dt> </dl>       |
 

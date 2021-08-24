@@ -4,12 +4,12 @@ ms.assetid: 884df249-977e-4e8e-8978-15331a7c1d8a
 title: Gerando MergeModule.CABarquivos de gabinete inet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a26eb9bb3daf92d81e21267b2f56706b74d9179
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 962cf46b95db1fe186878d23a7cc7fcd1b91d3b2d202a85741eee7ef1c2bc7e7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649640"
 ---
 # <a name="generating-mergemodulecabinet-cabinet-files"></a>Gerando MergeModule.CABarquivos de gabinete inet
 
@@ -21,7 +21,7 @@ O instalador ignora arquivos extras incluídos no MergeModule.CABinet que não e
 
 Isso significa que um único arquivo de gabinete pode conter todos os arquivos necessários para que um módulo de mesclagem ofereça suporte a vários idiomas. Todos os arquivos de idioma podem receber números de sequência exclusivos no gabinete e, em seguida, uma transformação de idioma pode ser usada para adicionar ou remover arquivos da tabela de arquivos para obter um módulo de mesclagem para um idioma específico. Para obter detalhes, consulte [criando módulos de mesclagem de vários idiomas](authoring-multiple-language-merge-modules.md).
 
-MergeModule.CABo inet pode ser adicionado ao módulo de mesclagem abrindo uma [ \_ tabela de fluxos](-streams-table.md)temporários. Por exemplo, a ferramenta Msidb.exe fornecida com o SDK do Windows Installer pode ser usada para adicionar o MergeModule.CABinet ao módulo de mesclagem. Para obter mais informações, consulte [incluindo um arquivo de gabinete em uma instalação](including-a-cabinet-file-in-an-installation.md).
+MergeModule.CABo inet pode ser adicionado ao módulo de mesclagem abrindo uma [ \_ tabela de Fluxos](-streams-table.md)temporária. por exemplo, a ferramenta Msidb.exe fornecida com o SDK do Windows Installer pode ser usada para adicionar o MergeModule.CABinet ao módulo de mesclagem. Para obter mais informações, consulte [incluindo um arquivo de gabinete em uma instalação](including-a-cabinet-file-in-an-installation.md).
 
  
 

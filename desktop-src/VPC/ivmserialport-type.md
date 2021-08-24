@@ -1,11 +1,11 @@
 ---
-title: Propriedade do tipo IVMSerialPort (VPCCOMInterfaces. h)
+title: Propriedade IvMSerialPort Type (VPCCOMInterfaces.h)
 description: Recupera o tipo da porta serial.
 ms.assetid: 0ec9c9d7-9387-458e-befe-42d58c38df35
 keywords:
-- Propriedade de tipo Virtual PC
-- Propriedade de tipo Virtual PC, interface IVMSerialPort
-- IVMSerialPort interface virtual PC, Propriedade Type
+- Propriedade de tipo PC virtual
+- Propriedade de tipo Pc Virtual, interface IVMSerialPort
+- INTERFACE IVMSerialPort pc virtual, propriedade Type
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119973846"
 ---
-# <a name="ivmserialporttype-property"></a>Propriedade IVMSerialPort:: Type
+# <a name="ivmserialporttype-property"></a>Propriedade IVMSerialPort::Type
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o tipo da porta serial.
 
@@ -45,7 +45,7 @@ HRESULT get_Type(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O tipo de porta serial. Para obter uma lista de valores, consulte [**VMSerialPortType**](vmserialporttype.md).
+O tipo de porta serial. Para ver uma lista de valores, [**consulte VMSerialPortType**](vmserialporttype.md).
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,9 +54,9 @@ O tipo de porta serial. Para obter uma lista de valores, consulte [**VMSerialPor
 | Nome/valor                                                                                                                                                    | Significado                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>                            |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é NULL.<br/>                                   |
-| <dl> <dt>VM \_ E 0xA0040207 de \_ VM \_ desconhecido</dt> <dt></dt> </dl> | A configuração desta máquina virtual não é válida.<br/> |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/>                        |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é NULL.<br/>                                   |
+| <dl> <dt>VM \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | A configuração dessa máquina virtual não é válida.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/>                        |
 
 
 
@@ -66,12 +66,12 @@ O tipo de porta serial. Para obter uma lista de valores, consulte [**VMSerialPor
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMSerialPort é definido como 2ce4460d-1d3f-4458-bf8b-44084b816815<br/>              |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMSerialPort é definido como \_ 2ce4460d-1d3f-4458-bf8b-44084b816815<br/>              |
 
 
 
