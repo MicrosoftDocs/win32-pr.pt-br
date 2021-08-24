@@ -1,7 +1,7 @@
 ---
-description: O método RemovePin remove um PIN especificado do filtro. O método não exclui o PIN.
+description: O método RemovePin remove um pino especificado do filtro. O método não exclui o pino.
 ms.assetid: 104eccfa-3fff-4f47-ba1b-3206eab9eef8
-title: Método CSource. RemovePin (Source. h)
+title: Método CSource.RemovePin (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b71ced14a6f92a3056ac4f42e55bc3858c578ff6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 376c2b292b0bdba9a79593c8264ecce17b916a88cfd49407638d637d1fbda6b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767836"
 ---
-# <a name="csourceremovepin-method"></a>Método CSource. RemovePin
+# <a name="csourceremovepin-method"></a>Método CSource.RemovePin
 
-O `RemovePin` método Remove um PIN especificado do filtro. O método não exclui o PIN.
+O `RemovePin` método remove um pin especificado do filtro. O método não exclui o pino.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,20 +45,20 @@ HRESULT RemovePin(
 *pStream* 
 </dt> <dd>
 
-Ponteiro para o objeto [**CSourceStream**](csourcestream.md) que implementa o PIN.
+Ponteiro para o [**objeto CSourceStream**](csourcestream.md) que implementa o pino.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
+Retorna um dos **valores HRESULT** mostrados na tabela a seguir.
 
 
 
 | Código de retorno                                                                             | Descrição                                      |
 |-----------------------------------------------------------------------------------------|--------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                              |
-| <dl> <dt>**\_falso**</dt> </dl> | O filtro não contém esse PIN.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | O filtro não contém esse pino.<br/> |
 
 
 
@@ -74,8 +74,8 @@ O método destruidor chama esse método para remover o pino de saída do filtro.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

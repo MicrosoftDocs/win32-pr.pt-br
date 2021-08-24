@@ -4,12 +4,12 @@ ms.assetid: DEB9C310-0AFF-463F-82C2-52CE1B7BB55C
 title: Propriedade MFNETSOURCE_FRIENDLYNAME (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3a47c7255f3cb6beceae5a3e361d788c6e45653
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50277ea93e38572002237385b351a81cca6a0d3bb987da10fa2a8fa8ee9be11c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119714316"
 ---
 # <a name="mfnetsource_friendlyname-property"></a>\_Propriedade FriendlyName MFNETSOURCE
 
@@ -37,9 +37,9 @@ LPWStr do VT \_
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

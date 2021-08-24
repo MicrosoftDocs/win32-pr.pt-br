@@ -4,17 +4,17 @@ ms.assetid: a55c7d83-2cac-4421-ac0e-880e1b97c0f8
 title: D3DX10CompileEffectFromFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40eb2b4c17c7309c3c06620103e5a9b395f10387
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: b4cd539c68b21e25a6b59abaf30aebe677a3139b18e7f6dce185a7845920cc19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753476"
 ---
 # <a name="d3dx10compileeffectfromfile"></a>D3DX10CompileEffectFromFile
 
 > [!Note]  
-> Em vez de usar essa função herdada, recomendamos que você compile offline usando o compilador de linha de comando Fxc.exe ou use a API [**D3DCompile**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile) .
+> Em vez de usar essa função herdada, recomendamos que você compile offline usando o compilador de linha de comando Fxc.exe ou use a API [**D3DCompile.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dcompile)
 
  
 
@@ -24,7 +24,7 @@ Preterido. Consulte [**D3DX10CompileFromFile**](d3dx10compilefromfile.md).
 
 <dl> <dt>
 
-[Funções de Uso Geral](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Uso Geral funções](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

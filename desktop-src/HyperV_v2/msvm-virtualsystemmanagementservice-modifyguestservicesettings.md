@@ -1,7 +1,7 @@
 ---
-description: Modifica as configurações do serviço convidado.
+description: Modifica as configurações de serviço convidado.
 ms.assetid: a308aa59-bd43-4dd5-a690-c435102e8043
-title: Método ModifyGuestServiceSettings da classe Msvm_VirtualSystemManagementService
+title: Método ModifyGuestServiceSettings da classe Msvm_VirtualSystemManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: bc0af24346c445022ba3f8725ea6102c61dc9c69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 514e24f49b2f0b1909e59514a86848dde2497b2f5228b2cfb7cac7fd141113ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789176"
 ---
-# <a name="modifyguestservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyGuestServiceSettings da \_ classe VirtualSystemManagementService Msvm
+# <a name="modifyguestservicesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ModifyGuestServiceSettings da classe Msvm \_ VirtualSystemManagementService
 
-Modifica as configurações do serviço convidado.
+Modifica as configurações de serviço convidado.
 
 Quando aplicado a partes de uma configuração de sistema virtual "atual", como um efeito colateral, os serviços convidados do sistema virtual ativo podem ser modificados.
 
@@ -43,28 +43,28 @@ uint32 ModifyGuestServiceSettings(
 
 <dl> <dt>
 
-*GuestServiceSettings* \[ no\]
+*GuestServiceSettings* \[ Em\]
 </dt> <dd>
 
-Uma matriz que contém as novas configurações do serviço de convidado.
+Uma matriz que contém as novas configurações de serviço convidado.
 
 </dd> <dt>
 
-*ResultingGuestServiceSettings* \[ fora\]
+*ResultingGuestServiceSettings* \[ out\]
 </dt> <dd>
 
-Em caso de sucesso, contiains uma matriz de [**CIM \_ SettingData**](cim-settingdata.md) que faz referência às configurações do serviço de convidado resultante.
+Em caso de sucesso, contia uma matriz de [**Cim \_ SettingData**](cim-settingdata.md) que faz referência às configurações de serviço convidado resultantes.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -79,7 +79,7 @@ Esse método retorna um dos seguintes valores:
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -91,16 +91,16 @@ Esse método retorna um dos seguintes valores:
 **Parâmetros incompatíveis** (6)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -109,10 +109,10 @@ Esse método retorna um dos seguintes valores:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

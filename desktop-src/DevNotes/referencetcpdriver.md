@@ -13,12 +13,12 @@ api_type:
 - LibDef
 api_location:
 - Drvref.lib
-ms.openlocfilehash: 4a9068739517cceedee72a675739b2d8b067b2ef
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36329ecb695c6fcc011f7e1fe4f44a149fbeac48b0125c34330b9bde51342f5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690836"
 ---
 # <a name="referencetcpdriver-function"></a>Função ReferenceTcpDriver
 
@@ -46,7 +46,7 @@ Um ponteiro para uma estrutura de **\_ objeto de driver** . Para obter mais info
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, ela retornará o **status \_ êxito**. Se falhar, ele retornará o código de status apropriado.
 
@@ -54,7 +54,7 @@ Se a função for bem-sucedida, ela retornará o **status \_ êxito**. Se falhar
 
 Essa função pode ser chamada somente do modo kernel. O chamador deve decrementar a contagem de referência chamando a função **ObDereferenceObject** quando terminar com o objeto.
 
-Essa função é implementada em Drvref. lib, que está disponível para download. Consulte [biblioteca de API de referência do driver de rede do Windows](https://www.microsoft.com/downloads/details.aspx?FamilyID=85037e05-f8f8-46b4-a013-3aa6248396c0).
+Essa função é implementada em Drvref. lib, que está disponível para download. consulte [Windows biblioteca de API de referência de Driver de rede](https://www.microsoft.com/downloads/details.aspx?FamilyID=85037e05-f8f8-46b4-a013-3aa6248396c0).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ ms.assetid: D3EAD386-E730-44E8-9E05-773E1E2175C5
 title: Atributo MFPROTECTION_CONSTRICTVIDEO_NOOPM (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 617bd629852a3aa03708d12dca7736b4f773094b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72d1d7cd858ec9cf254cca1dffc5fef4e24fbb5a3a288975a9f70c9ae118dde3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713736"
 ---
 # <a name="mfprotection_constrictvideo_noopm-attribute"></a>\_Atributo MFPROTECTION CONSTRICTVIDEO \_ NOOPM
 
@@ -29,9 +29,9 @@ Essa é uma proteção adicional oferecida por uma OTA (autoridade de confiança
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46c95652dc7c4273029fb6f05f00b82a636cb16d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9771b430852aa77ff9633c16e203842649493163e220539c98acaae6171ed394
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648539"
 ---
 # <a name="netboot-scp-bl-attribute"></a>atributo netboot-SCP-BL
 
@@ -57,8 +57,8 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 |------------------------|---------------------------------|
 | ID do link                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -78,7 +78,7 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 |------------------------|---------------------------------|
 | ID do link                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -99,7 +99,7 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 |------------------------|---------------------------------|
 | ID do link                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -120,7 +120,7 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 |------------------------|---------------------------------|
 | ID do link                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -141,7 +141,7 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 |------------------------|---------------------------------|
 | ID do link                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -162,7 +162,7 @@ Uma lista de pontos de conexão de serviço que fazem referência a este servido
 |------------------------|---------------------------------|
 | ID do link                | 101                             |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |

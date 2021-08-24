@@ -1,7 +1,7 @@
 ---
-description: Classe Msvm_AbstractResourcePoolSettingData – representa as configurações de uma \_ instância Msvm ResourcePool que não estão relacionadas à alocação.
+description: Msvm_AbstractResourcePoolSettingData classe - representa as configurações de uma instância do Msvm \_ ResourcePool que não estão relacionadas à alocação.
 ms.assetid: c5954a92-8942-4b45-aae2-6936328dab1a
-title: Classe Msvm_AbstractResourcePoolSettingData
+title: Msvm_AbstractResourcePoolSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,18 +25,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: dca3da14ac74a8d6fab1ba96db98f9e2eccd74ea
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 74e396da1135c481079e9fc20ce940774ef58dab983d36cabc131aa8bbe13f38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108112114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693645"
 ---
-# <a name="msvm_abstractresourcepoolsettingdata-class"></a>\_Classe Msvm AbstractResourcePoolSettingData
+# <a name="msvm_abstractresourcepoolsettingdata-class"></a>Classe Msvm \_ AbstractResourcePoolSettingData
 
-Representa as configurações de uma instância [**Msvm \_ ResourcePool**](msvm-resourcepool.md) que não estão relacionadas à alocação.
+Representa as configurações de uma [**instância do Msvm \_ ResourcePool**](msvm-resourcepool.md) que não estão relacionadas à alocação.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,13 +61,13 @@ class Msvm_AbstractResourcePoolSettingData : CIM_SettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ AbstractResourcePoolSettingData** tem estes tipos de membros:
+A **classe Msvm \_ AbstractResourcePoolSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ AbstractResourcePoolSettingData** tem essas propriedades.
+A **classe Msvm \_ AbstractResourcePoolSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -119,23 +119,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **LoadBalancingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica a estratégia de alocação a ser usada pelo pool de recursos para balancear o uso de recursos em seus recursos agregados.
+Especifica a estratégia de alocação a ser usada pelo pool de recursos para equilibrar o uso de recursos entre seus recursos agregados.
 
 <dt>
 
@@ -179,7 +179,7 @@ Especifica a estratégia de alocação a ser usada pelo pool de recursos para ba
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -188,7 +188,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourceAllocationSettingData**](cim-resourceallocationsettingdata.md).**MappingBehavior**")
 </dt> </dl>
 
-Especifica se o pool de recursos pode tentar usar outros recursos de host para satisfazer a solicitação de alocação se os recursos desejados não puderem ser alocados.
+Especifica se o pool de recursos pode tentar usar outros recursos de host para atender à solicitação de alocação se os recursos desejados não puderem ser alocados.
 
 <dt>
 
@@ -215,28 +215,28 @@ Especifica se o pool de recursos pode tentar usar outros recursos de host para s
 
 <span id="Soft_Affinity"></span><span id="soft_affinity"></span><span id="SOFT_AFFINITY"></span>
 
-**Afinidade flexível** (4)
+**Afinidade suave** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Hard_Affinity"></span><span id="hard_affinity"></span><span id="HARD_AFFINITY"></span>
 
-**Afinidade rígida** (5)
+**Afinidade difícil** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (32767.. 65535)
+**Fornecedor Reservado** (32767..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -246,7 +246,7 @@ Especifica se o pool de recursos pode tentar usar outros recursos de host para s
 **MappingOrder**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -255,7 +255,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Msvm \_ ResourcePoolSettingData**](msvm-resourcepoolsettingdata.md).**MappingBehavior**")
 </dt> </dl>
 
-Especifica a ordem na qual os recursos de host disponíveis por meio desse pool serão selecionados ao tentar atender a uma solicitação de alocação e o recurso de host solicitado não estiver disponível ou nenhum recurso de host for especificado.
+Especifica a ordem na qual os recursos de host disponíveis por meio desse pool serão selecionados ao tentar atender a uma solicitação de alocação e o recurso de host solicitado não está disponível ou nenhum recurso de host foi especificado.
 
 </dd> <dt>
 
@@ -268,7 +268,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Notas fornecidas pelo usuário final que estão relacionadas a esse pool de recursos.
+Notas fornecidas pelo usuário final relacionadas a esse pool de recursos.
 
 </dd> <dt>
 
@@ -284,11 +284,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**OtherResourceType**")
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e **ResourceType** é definido como 0 (outro).
+Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e **ResourceType** é definido como 0 (Outro).
 
 </dd> <dt>
 
-**Poolid**
+**PoolID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -297,7 +297,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**Poolid**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ ResourcePool**](cim-resourcepool.md).**PoolID**")
 </dt> </dl>
 
 Um identificador para o pool. Essa propriedade é usada para fornecer correlação entre salvar e restaurar dados de configuração para o armazenamento persistente subjacente.
@@ -323,7 +323,7 @@ Uma cadeia de caracteres que descreve um subtipo específico de implementação 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -338,14 +338,14 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Computer_System"></span><span id="computer_system"></span><span id="COMPUTER_SYSTEM"></span>
 
-**Sistema de computador** (2)
+**Sistema de Computador** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -373,21 +373,21 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>
 
-**HBA SCSI paralelo** (6)
+**SCSI HBA paralelo** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FC_HBA"></span><span id="fc_hba"></span>
 
-**HBA FC** (7)
+**FC HBA** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>
 
-**HBA iSCSI** (8)
+**iSCSI HBA** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -415,28 +415,28 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>
 
-**Slot de e/s** (12)
+**Slot de E/S** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>
 
-**Dispositivo de e/s** (13)
+**Dispositivo de E/S** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Floppy_Drive"></span><span id="floppy_drive"></span><span id="FLOPPY_DRIVE"></span>
 
-**Unidade de disquete** (14)
+**Disquete** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CD_Drive"></span><span id="cd_drive"></span><span id="CD_DRIVE"></span>
 
-**Unidade de CD** (15)
+**Unidade cd** (15)
 
 
 </dt> <dd></dd> <dt>
@@ -464,7 +464,7 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>
 
-**Extensão de armazenamento** (19)
+**Armazenamento extensão** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -499,14 +499,14 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>
 
-**Controlador de gráficos** (24)
+**Controlador gráfico** (24)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IEEE_1394_Controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>
 
-**Controlador IEEE 1394** (25)
+**IEEE 1394 controlador** (25)
 
 
 </dt> <dd></dd> <dt>
@@ -520,7 +520,7 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Base_Partitionable_Unit"></span><span id="base_partitionable_unit"></span><span id="BASE_PARTITIONABLE_UNIT"></span>
 
-**Unidade particionável de base** (27)
+**Unidade particionável base** (27)
 
 
 </dt> <dd></dd> <dt>
@@ -541,7 +541,7 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Ethernet_Switch_Port"></span><span id="ethernet_switch_port"></span><span id="ETHERNET_SWITCH_PORT"></span>
 
-**Porta do comutador Ethernet** (30)
+**Porta do comutamento Ethernet** (30)
 
 
 </dt> <dd></dd> <dt>
@@ -555,7 +555,7 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>
 
-**Volume de armazenamento** (32)
+**Armazenamento volume** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -576,7 +576,7 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (0x8000.. 0xFFFF
+**Fornecedor Reservado** (0x8000.. 0xFFFF)
 
 
 </dt> <dd></dd> </dl>
@@ -589,10 +589,10 @@ O tipo de recurso que esse pool de recursos pode alocar.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

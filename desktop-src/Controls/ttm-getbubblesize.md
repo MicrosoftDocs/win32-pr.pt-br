@@ -3,7 +3,7 @@ title: Mensagem de TTM_GETBUBBLESIZE (commctrl. h)
 description: Retorna a largura e a altura de um controle ToolTip.
 ms.assetid: 6afb971e-f05d-4b7a-b63d-3672bfcc32dc
 keywords:
-- Controles de TTM_GETBUBBLESIZE de mensagens do Windows
+- controles de Windows de mensagem de TTM_GETBUBBLESIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48b48bda0f795473cb48303e88bbf3c1c35df7cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8354a93521b6adac9306374f5bfbc99e84738ac87f0471a22f199b7b611f100b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769376"
 ---
 # <a name="ttm_getbubblesize-message"></a>TTM \_ GETbubbleize mensagem
 
@@ -39,7 +39,7 @@ Ponteiro para a estrutura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a largura da dica de ferramenta na palavra inferior e a altura da palavra alta se for bem-sucedida. Caso contrário, retornará **false**.
 
@@ -53,9 +53,9 @@ Se os sinalizadores de faixa de TTF \_ e de TTF \_ absoluto estiverem definidos 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

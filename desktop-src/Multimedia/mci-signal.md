@@ -3,7 +3,7 @@ title: MCI_SIGNAL comando (mmsystem. h)
 description: O \_ comando de sinal MCI define uma posição especificada no espaço de trabalho. Dispositivos de vídeo digital reconhecem este comando. O MCIAVI dá suporte a apenas um sinal ativo por vez.
 ms.assetid: 32ca21a0-e2df-47f1-8e13-67c9d8f149db
 keywords:
-- Multimídia do Windows de comando MCI_SIGNAL
+- MCI_SIGNAL comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 711238d73ee40f5809f15a2d6df93183fb17bf67
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fda7585ad63415f888f5971397df2b27c23710864ea21a8ed5e6ebce1a7c66f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689835"
 ---
 # <a name="mci_signal-command"></a>\_Comando de sinal MCI
 
@@ -100,14 +100,14 @@ Um valor de período de sinal é incluído no membro **dwPeriod** da estrutura i
 <span id="MCI_DGV_SIGNAL_POSITION"></span><span id="mci_dgv_signal_position"></span>\_posição do \_ sinal MCI DGV \_
 </dt> <dd>
 
-O dispositivo enviará o valor da posição com a mensagem do Windows em vez do valor especificado pelo usuário.
+o dispositivo enviará o valor de posição com a mensagem de Windows em vez do valor especificado pelo usuário.
 
 </dd> <dt>
 
 <span id="MCI_DGV_SIGNAL_USERVAL"></span><span id="mci_dgv_signal_userval"></span>\_USERVAL do \_ sinal MCI DGV \_
 </dt> <dd>
 
-Um valor de dados é incluído no membro **dwUserParm** da estrutura identificada por *lpSignal*. O valor de dados associado a essa solicitação é relatado de volta com a mensagem do Windows.
+Um valor de dados é incluído no membro **dwUserParm** da estrutura identificada por *lpSignal*. o valor de dados associado a essa solicitação é relatado de volta com a mensagem de Windows.
 
 </dd> </dl>
 

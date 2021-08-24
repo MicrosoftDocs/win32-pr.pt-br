@@ -1,10 +1,10 @@
 ---
-title: Telefone-celular-outro atributo
+title: Telefone-outro atributo de dispositivo móvel
 description: Uma lista de números de telefone celular alternativos.
 ms.assetid: c77e435c-e804-4730-ae8f-0365feeb153a
 ms.tgt_platform: multiple
 keywords:
-- Phone-Mobile-outro esquema do AD de atributos
+- Telefone-dispositivo móvel-outro esquema de AD do atributo
 - Esquema de AD do atributo otherMobile
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4961c44660e99f11ffe3860fd6810175f8602c15
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: af56ea1990e6a25653bfa356356744dec618b5df9411a1b7d1304aa75fe50065
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648136"
 ---
-# <a name="phone-mobile-other-attribute"></a>Telefone-celular-outro atributo
+# <a name="phone-mobile-other-attribute"></a>Telefone-outro atributo de dispositivo móvel
 
 Uma lista de números de telefone celular alternativos.
 
@@ -121,10 +121,10 @@ Uma lista de números de telefone celular alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -142,10 +142,10 @@ Uma lista de números de telefone celular alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -163,10 +163,10 @@ Uma lista de números de telefone celular alternativos.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Falso                                                              |
+| Tem valor único       | Falso                                                              |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |

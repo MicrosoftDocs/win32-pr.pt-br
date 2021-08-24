@@ -36,12 +36,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 15be9b176680e8abb259d3d011da9d6cec0c2fa8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b7533e5d1e842e6794a9f9c386103b781afa0404ee181354c420770358f7e8a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751216"
 ---
 # <a name="win32_systemdriver-class"></a>Classe de SystemDrive do Win32 \_
 
@@ -98,7 +98,7 @@ A **classe \_ systemdrive do Win32** tem esses métodos.
 | [**Alteração**](change-method-in-class-win32-systemdriver.md)                         | Método de classe que modifica um serviço.<br/>                                                |
 | [**ChangeStartMode**](changestartmode-method-in-class-win32-systemdriver.md)       | Método de classe que modifica o modo de início de um serviço.<br/>                              |
 | [**Criar**](create-method-in-class-win32-systemdriver.md)                         | Método de classe que cria um novo serviço.<br/>                                             |
-| [**Apagar**](delete-method-in-class-win32-systemdriver.md)                         | Método de classe que exclui um serviço existente.<br/>                                       |
+| [**Excluir**](delete-method-in-class-win32-systemdriver.md)                         | Método de classe que exclui um serviço existente.<br/>                                       |
 | [**InterrogateService**](interrogateservice-method-in-class-win32-systemdriver.md) | Método de classe que solicita que o serviço atualize seu estado para o Service Manager.<br/> |
 | [**PauseService**](pauseservice-method-in-class-win32-systemdriver.md)             | Método de classe que tenta colocar o serviço no estado pausado.<br/>                 |
 | [**ResumeService**](resumeservice-method-in-class-win32-systemdriver.md)           | Método de classe que tenta posicionar o serviço no estado retomado.<br/>                |
@@ -333,7 +333,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| Service structures \| [**Service \_ status**](/windows/win32/api/winsvc/ns-winsvc-service_status) \| dwWin32ExitCode"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("código de saída")
 </dt> </dl>
 
-Código de erro do Windows que define os problemas encontrados ao iniciar ou interromper o serviço. Essa propriedade é definida como **\_ \_ \_ erro específico do serviço de erro** (1066) quando o erro é exclusivo para o serviço representado por essa classe e as informações sobre o erro estão disponíveis na propriedade **ServiceSpecificExitCode** . O serviço define esse valor como **sem \_ erros** durante a execução e novamente após o término normal.
+Windows código de erro definindo quaisquer problemas encontrados na inicialização ou na interrupção do serviço. Essa propriedade é definida como **\_ \_ \_ erro específico do serviço de erro** (1066) quando o erro é exclusivo para o serviço representado por essa classe e as informações sobre o erro estão disponíveis na propriedade **ServiceSpecificExitCode** . O serviço define esse valor como **sem \_ erros** durante a execução e novamente após o término normal.
 
 Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
 
@@ -640,35 +640,35 @@ Os valores são:
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-**Em execução** ("em execução")
+**Executando** ("Em execução")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Continue_Pending"></span><span id="continue_pending"></span><span id="CONTINUE_PENDING"></span>
 
-**Continuação pendente** ("continuar pendente")
+**Continuar Pendente** ("Continuar Pendente")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pause_Pending"></span><span id="pause_pending"></span><span id="PAUSE_PENDING"></span>
 
-**Pausa pendente** ("pausa pendente")
+**Pausa pendente** ("Pausar Pendente")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-Em **pausa** ("pausado")
+**Pausado** ("Pausado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> </dl>
@@ -684,12 +684,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("status")
+Qualificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores são:
 
@@ -704,28 +704,28 @@ Os valores são:
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -739,42 +739,42 @@ Os valores são:
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -790,16 +790,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ sistema CIM**](cim-system.md).**CreationClassName**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" nome da classe do sistema ")
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**CreationClassName**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("System Class Name")
 </dt> </dl>
 
-Digite o nome do sistema que hospeda este serviço.
+Digite o nome do sistema que hospeda esse serviço.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -808,44 +808,44 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ([**" \_ sistema CIM**](cim-system.md).**Name**"), [**\_ chave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) (" nome do sistema ")
+Qualificadores: [**propagados**](../wmisdk/standard-qualifiers.md) ("[**Sistema CIM \_**](cim-system.md).**Name**"), [**CIM \_ Key**](../wmisdk/standard-wmi-qualifiers.md), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nome do Sistema")
 </dt> </dl>
 
-Nome do sistema que hospeda este serviço.
+Nome do sistema que hospeda esse serviço.
 
-Essa propriedade é herdada [**do \_ serviço CIM**](cim-service.md).
+Essa propriedade é herdada do [**Serviço CIM. \_**](cim-service.md)
 
 </dd> <dt>
 
 **TagId**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api do \| serviço de consulta de estruturas de serviços \| [**\_ \_**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| DwTagId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("ID da marca")
+Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| Service Structures \| [**QUERY SERVICE \_ \_ CONFIG**](/windows/win32/api/winsvc/ns-winsvc-query_service_configa) \| dwTagId"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Tag Id")
 </dt> </dl>
 
-Valor de marca exclusivo para este serviço no grupo. Um valor de 0 (zero) indica que não foi atribuída uma marca ao serviço. Uma marca pode ser usada para ordenar a inicialização do serviço dentro de um grupo de ordem de carregamento, especificando um vetor de ordem de marca no Registro localizado em:
+Valor de marca exclusivo para esse serviço no grupo. Um valor de 0 (zero) indica que o serviço não recebeu uma marca. Uma marca pode ser usada para ordenar a inicialização do serviço dentro de um grupo de pedidos de carga especificando um vetor de ordem de marca no registro localizado em:
 
-Esta propriedade é herdada do [**Win32 \_ BaseService**](win32-baseservice.md).
+Essa propriedade é herdada de [**Win32 \_ BaseService.**](win32-baseservice.md)
 
-**HKEY \_ O \_ sistema de computador local \\ \\ CurrentControlSet \\ Control \\ GroupOrderList**.
+**HKEY \_ Local \_ MACHINE \\ System \\ CurrentControlSet \\ Control \\ GroupOrderList**.
 
-As marcas são avaliadas somente para serviços de inicialização de driver de kernel e driver de sistema de arquivos que têm os modos inicializar ou iniciar sistema.
+As marcas são avaliadas apenas para serviços de tipo de inicialização do Driver do Kernel e do Driver do Sistema de Arquivos que têm modos de inicialização ou inicialização do sistema.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe do **\_ systemdrive do Win32** é derivada do [**Win32 \_ BaseService**](win32-baseservice.md).
+A **classe Win32 \_ SystemDriver** é derivada de [**Win32 \_ BaseService.**](win32-baseservice.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo [listar](https://Gallery.TechNet.Microsoft.Com/5629cc13-cefc-4e51-a24f-aac6db23d141) exemplos de VBScript de drivers do sistema exibe os drivers de sistema instalados em um arquivo HTML.
+O [exemplo Listar Drivers de](https://Gallery.TechNet.Microsoft.Com/5629cc13-cefc-4e51-a24f-aac6db23d141) Sistema VBScript Exibe drivers do sistema instalados em um arquivo HTML.
 
 O exemplo do PowerShell a seguir recupera várias propriedades dos drivers do sistema em execução em um computador.
 
@@ -864,8 +864,8 @@ Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -874,7 +874,7 @@ Get-WmiObject -Class Win32_SystemDriver | Where-Object -FilterScript {$_.State -
 
 <dl> <dt>
 
-[**\_BaseService Win32**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

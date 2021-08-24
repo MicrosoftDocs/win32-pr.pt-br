@@ -4,12 +4,12 @@ ms.assetid: 8c5d1050-a696-4a5d-be68-806420d0cd78
 title: Adicionando uma fonte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee583cd8971c183f2e03b92f68e2d6ba555c41db
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6ab2440ff50bbb4a3a610f9341405538a88dc6bf16ce2153a327f3b4578f3aec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105749647"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690526"
 ---
 # <a name="adding-a-source"></a>Adicionando uma fonte
 
@@ -19,7 +19,7 @@ Crie um objeto de origem da mesma maneira que cria outros objetos de linha do te
 
 -   Os horários de início e de término, em relação à linha do tempo. Chame o método [**IAMTimelineObj:: SetStartStop**](iamtimelineobj-setstartstop.md) .
 -   O arquivo de mídia a ser usado como origem. Chame o método [**IAMTimelineSrc:: Setmedianame**](iamtimelinesrc-setmedianame.md) com uma cadeia de caracteres largo representando o nome do arquivo.
--   Os horários de início e de término da mídia, que são relativos ao arquivo original. Chame o método [**IAMTimelineSrc:: SetMediaTimes**](iamtimelinesrc-setmediatimes.md) . Para obter mais informações sobre os tempos de mídia, consulte [tempo em serviços de edição do DirectShow](time-in-directshow-editing-services.md).
+-   Os horários de início e de término da mídia, que são relativos ao arquivo original. Chame o método [**IAMTimelineSrc:: SetMediaTimes**](iamtimelinesrc-setmediatimes.md) . para obter mais informações sobre os tempos de mídia, consulte [tempo em DirectShow serviços de edição](time-in-directshow-editing-services.md).
 
 No exemplo a seguir, o clipe de origem inicia quatro segundos no arquivo. A duração da mídia é de 10 segundos, duas vezes o comprimento da duração da linha do tempo, o que significa que a fonte será reproduzida em duas vezes a velocidade normal. As unidades de constante são definidas como 10 milhões (10 ^ 7) e são iguais a um segundo.
 

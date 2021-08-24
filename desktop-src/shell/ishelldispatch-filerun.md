@@ -1,7 +1,7 @@
 ---
 description: Exibe a caixa de diálogo Executar para o usuário.
 ms.assetid: BC7C4C26-593D-4467-A2AA-4F2DF835C989
-title: Método IShellDispatch. FileRun (shldisp. h)
+title: Método IShellDispatch.FileRun (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 56806edf06d334d90ad038886d955c00876f8f0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd7d56f0adb119a7afefb871b467f53c50db869160993baa00cc8ecd6cfb9337
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710406"
 ---
-# <a name="ishelldispatchfilerun-method"></a>Método IShellDispatch. FileRun
+# <a name="ishelldispatchfilerun-method"></a>Método IShellDispatch.FileRun
 
-Exibe a caixa de diálogo **executar** para o usuário.
+Exibe a **caixa de diálogo** Executar para o usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ IShellDispatch.FileRun()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -57,13 +57,13 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio do método [**shell. FileRun**](shell-filerun.md) .
+Esse método é implementado e acessado por meio do [**método Shell.FileRun.**](shell-filerun.md)
 
 ## <a name="examples"></a>Exemplos
 
 Os exemplos a seguir mostram o uso de **FileRun** em JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

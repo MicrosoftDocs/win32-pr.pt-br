@@ -1,11 +1,11 @@
 ---
-title: Atributo DS-Core-Propagation-data
-description: O atributo DS-Core-Propagation-data é somente para uso interno.
+title: Atributo DS-Core-Propagation-Data
+description: O atributo DS-Core-Propagation-Data é apenas para uso interno.
 ms.assetid: 6483890a-b1ef-4c8d-941d-8f25f722a305
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo DS-Core-retropropagação-data
-- Esquema de AD do atributo dSCorePropagationData
+- Esquema do AD do atributo DS-Core-Propagation-Data
+- Esquema do AD do atributo dSCorePropagationData
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 324e3db3c71d11f47cb0a7afec875b9d129fa2d9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1b727b33360db9dfea377d958b23a2377716f5167e86ff78debdd20c0d9b4131
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119706196"
 ---
-# <a name="ds-core-propagation-data-attribute"></a>Atributo DS-Core-Propagation-data
+# <a name="ds-core-propagation-data-attribute"></a>Atributo DS-Core-Propagation-Data
 
-O atributo **DS-Core-Propagation-data** é somente para uso interno.
+O **atributo DS-Core-Propagation-Data** é apenas para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
-| CN                | DS-Core-propagação-data                                      |
-| LDAP-Display-Name | dSCorePropagationData                                         |
+| CN                | DS-Core-Propagation-Data                                      |
+| Ldap-Display-Name | dSCorePropagationData                                         |
 | Tamanho              | \-                                                            |
 | Privilégio de atualização  | \-                                                            |
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1357                                       |
-| System-ID-GUID    | d167aa4b-8b08-11d2-9939-0000f87a57d4                          |
-| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| System-Id-Guid    | d167aa4b-8b08-11d2-9939-0000f87a57d4                          |
+| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
 
@@ -44,7 +44,7 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -79,11 +79,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -121,11 +121,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -142,11 +142,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -163,11 +163,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -184,11 +184,11 @@ O atributo **DS-Core-Propagation-data** é somente para uso interno.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | True                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

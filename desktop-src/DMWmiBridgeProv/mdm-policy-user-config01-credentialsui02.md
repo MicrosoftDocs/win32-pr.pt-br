@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_User_Config01_CredentialsUI02
-description: A \_ classe Config01 CredentialsUI02 do usuário da política de MDM \_ \_ \_ representa as políticas de credenciais disponíveis.
+title: MDM_Policy_User_Config01_CredentialsUI02 classe
+description: A classe MDM \_ Policy \_ User \_ Config01 \_ CredentialsUI02 representa as políticas de credenciais disponíveis.
 ms.assetid: b0a45070-c25b-4a4d-9fbc-cd107fd0fa2f
 keywords:
-- Classe MDM_Policy_User_Config01_CredentialsUI02
-- Classe MDM_Policy_User_Config01_CredentialsUI02, descrita
+- MDM_Policy_User_Config01_CredentialsUI02 classe
+- MDM_Policy_User_Config01_CredentialsUI02, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 230d0286ac36540b4d0b8506a72a9b4389d37e6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ac752d6564d0fa2d8c40403c148d6fc09bbc0db7785535ecf943cf1b7ad6940e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694156"
 ---
-# <a name="mdm_policy_user_config01_credentialsui02-class"></a>Config01 de usuário de política de MDM- \_ \_ \_ \_ classe CredentialsUI02
+# <a name="mdm_policy_user_config01_credentialsui02-class"></a>Classe MDM \_ Policy \_ User \_ Config01 \_ CredentialsUI02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe Config01 CredentialsUI02 do usuário da política de MDM \_ \_ \_ representa as políticas de credenciais disponíveis.
+A classe MDM \_ Policy \_ User \_ Config01 \_ CredentialsUI02 representa as políticas de credenciais disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_User_Config01_CredentialsUI02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ \_ Config01 \_ CredentialsUI02 do usuário da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy User \_ \_ Config01 \_ CredentialsUI02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ \_ Config01 \_ CredentialsUI02 do usuário da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy User \_ \_ Config01 \_ CredentialsUI02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ A **classe \_ \_ \_ Config01 \_ CredentialsUI02 do usuário da política MDM** t
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -81,7 +81,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -101,10 +101,10 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -4,17 +4,17 @@ description: Este tópico descreve como criar e animar um visual que usa o bitma
 ms.assetid: 8912CCF9-C343-45CB-AB31-55D26C118AF2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 038ae3d32fd49a8f795a35f35c6c87889e4c9406
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b882d1be2642f341e74a193605b217a9b7e2d0cc295370c7a5ec8bee4a844f03
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670966"
 ---
 # <a name="how-to-animate-the-bitmap-of-a-layered-child-window"></a>Como animar o bitmap de uma janela filho em camadas
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico descreve como criar e animar um visual que usa o bitmap de uma janela filho em camadas como o conteúdo do Visual. O exemplo descrito neste tópico usa uma transformação de escala animada para "aumentar" o bitmap de uma janela filho do tamanho de miniatura até o tamanho total. Para obter mais informações sobre janelas em camadas, consulte [bitmaps de janelas](bitmap-surfaces.md).
 
@@ -1287,6 +1287,6 @@ HRESULT DemoApp::LoadResourceD2DBitmap(
 [Exemplo da janela filho em camadas do DirectComposition](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/DirectCompositionLayeredChildWindow)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ description: Finaliza uma instrução switch.
 ms.assetid: ECAEECFD-B955-4356-B5C9-1D6A04C71D8F
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 523a4008ab976ee299758349d57c6e32a3f336b2
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 911c785f53286e95e89d1ce25156757a56bf104c489643ec556874434623f798
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673036"
 ---
 # <a name="endswitch-sm4---asm"></a>endswitch (sm4-ASM)
 
@@ -22,7 +22,7 @@ Finaliza uma instrução [switch](switch--sm4---asm-.md) .
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -38,7 +38,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -57,7 +57,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -66,9 +66,9 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 [Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

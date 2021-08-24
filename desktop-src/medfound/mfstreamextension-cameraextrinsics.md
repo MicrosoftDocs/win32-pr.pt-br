@@ -4,12 +4,12 @@ ms.assetid: 2236C135-BA3D-4C1B-8A39-5E23EF67425A
 title: Atributo MFStreamExtension_CameraExtrinsics (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a551aaaef48100d6104804e54f7e0ddfac3f5cb1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: acf76c829383d229df8039bfff5d75234d31e2625f758d1bca254217b6e138c8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119713536"
 ---
 # <a name="mfstreamextension_cameraextrinsics-attribute"></a>\_Atributo MFStreamExtension CameraExtrinsics
 
@@ -33,9 +33,9 @@ O valor do atributo é um [**MFCameraExtrinsics**](/windows/desktop/api/mfapi/ns
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 

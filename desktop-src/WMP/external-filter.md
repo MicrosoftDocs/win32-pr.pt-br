@@ -1,9 +1,9 @@
 ---
 title: Externo. Filter
-description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade Filter recupera o filtro de pesquisa em uso no momento pelo Windows Media Player.
+description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade Filter recupera o filtro de pesquisa em uso no momento por Windows Media Player.
 ms.assetid: 45084dd2-fe57-4ab1-86d8-c5f39c282573
 keywords:
-- Externo. Filtre o Windows Media Player
+- Windows Media Player. Filter externo
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18cf7961e91ad1976895e670d850a7514a94cf6a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: afa6c3e3074b9e94be8d5c35316adbf62620b722a0f40808b7b0689940dc56bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649136"
 ---
 # <a name="externalfilter"></a>Externo. Filter
 
@@ -28,7 +28,7 @@ ms.locfileid: "105760261"
 
  
 
-A propriedade **Filter** recupera o filtro de pesquisa em uso no momento pelo Windows Media Player.
+A propriedade **Filter** recupera o filtro de pesquisa em uso no momento por Windows Media Player.
 
 ``` syntax
 window.external.filter

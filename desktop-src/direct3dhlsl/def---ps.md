@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b4f035df97de2645983862dd68aa7ec80fc22d4b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ce5f842f44e915d3f3240618261b501f2240c3636227f930538e1bbcbe0d9367
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726556"
 ---
 # <a name="def---ps"></a>def-PS
 
@@ -29,7 +29,7 @@ Define constantes de ponto flutuante do sombreador de pixel.
 
 
 
- 
+ 
 
 Em que:
 
@@ -46,7 +46,7 @@ Em que:
 
 
 
- 
+ 
 
 Há duas maneiras de definir uma constante de ponto flutuante em um sombreador de pixel.
 
@@ -68,6 +68,6 @@ def define uma constante de sombreador cujo valor é carregado sempre que um som
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
