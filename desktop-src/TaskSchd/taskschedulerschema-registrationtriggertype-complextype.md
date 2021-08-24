@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2ddb55436a0a6980a8909da636a02ca59244ca85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2dab91ecc0eed065a4ce3eea9d64bebae2e10560a43ab57308ea68e82dc17dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119772276"
 ---
 # <a name="registrationtriggertype-complex-type"></a>Tipo complexo registrationTriggerType
 
@@ -48,7 +48,7 @@ Define elementos filho e informações de sequenciamento para o elemento [**Regi
 
 | Elemento                                                                    | Type     | Descrição                                                                                               |
 |----------------------------------------------------------------------------|----------|-----------------------------------------------------------------------------------------------------------|
-| [**Retardo**](taskschedulerschema-delay-registrationtriggertype-element.md) | duration | Especifica a quantidade de tempo entre quando a tarefa é registrada e quando a tarefa é iniciada.<br/> |
+| [**Atrasar**](taskschedulerschema-delay-registrationtriggertype-element.md) | duration | Especifica a quantidade de tempo entre quando a tarefa é registrada e quando a tarefa é iniciada.<br/> |
 
 
 
@@ -62,8 +62,8 @@ Além dos elementos filho definidos aqui, o elemento [**RegistrationTrigger**](t
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

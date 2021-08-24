@@ -1,7 +1,7 @@
 ---
-description: Libera a memória usada para dados de simulação de dispersão de luz temporárias de subsuperfície.
+description: Libera a memória usada para dados temporários de simulação de dispersão de luz de subsuficiência.
 ms.assetid: c85643bf-4a6d-452a-9cd8-17f919123307
-title: 'Método ID3DXPRTEngine:: FreeSSData (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::FreeSSData (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e3f21bf178bae4493f66eef4053f3b1892ff8224
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ffebcecd4c2e9476fa5232ddd3483e27a8738059eb9dae33223341c9353b921b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105790635"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847346"
 ---
-# <a name="id3dxprtenginefreessdata-method"></a>Método ID3DXPRTEngine:: FreeSSData
+# <a name="id3dxprtenginefreessdata-method"></a>Método ID3DXPRTEngine::FreeSSData
 
-Libera a memória usada para dados de simulação de dispersão de luz temporárias de subsuperfície.
+Libera a memória usada para dados temporários de simulação de dispersão de luz de subsuficiência.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ HRESULT FreeSSData();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -50,8 +50,8 @@ O valor de retorno é D3D \_ OK.
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

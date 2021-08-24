@@ -3,7 +3,7 @@ title: Mensagem de TTM_ADJUSTRECT (commctrl. h)
 description: Calcula o retângulo de exibição de texto de um controle de dica de ferramenta de seu retângulo de janela ou o retângulo da janela de dica de ferramenta necessário para exibir um retângulo de exibição de texto especificado.
 ms.assetid: b848c16f-9f41-4ed2-918a-9c03aebe535c
 keywords:
-- Controles de TTM_ADJUSTRECT de mensagens do Windows
+- controles de Windows de mensagem de TTM_ADJUSTRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af89374161d5e3f9d9ab6affc2b3b498a39cbf68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bba5a6719bcbd820d94b6d736a12644f8b2539cc81064f942616c62bce55823f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769526"
 ---
 # <a name="ttm_adjustrect-message"></a>\_Mensagem TTM ADJUSTRECT
 
@@ -43,7 +43,7 @@ Estrutura **Rect** para manter um retângulo de janela de dica de ferramenta ou 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará um valor diferente de zero se o retângulo for ajustado com êxito e retornará zero se ocorrer um erro.
 
@@ -82,9 +82,9 @@ if (MyStringIsTruncated) {
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

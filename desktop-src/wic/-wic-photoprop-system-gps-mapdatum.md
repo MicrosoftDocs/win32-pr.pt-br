@@ -4,12 +4,12 @@ ms.assetid: be31e98f-5114-4693-a9ef-37fea334875b
 title: Política de metadados de foto System. GPS. MapDatum
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb7a279c79da3d2b1dd20563af35bd34233a1a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8bbd3671ec9e025dd2c5ea98fc36f4937abab315b09a2227fb6249d74e577da
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882336"
 ---
 # <a name="systemgpsmapdatum-photo-metadata-policy"></a>Política de metadados de foto System. GPS. MapDatum
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
@@ -47,8 +47,8 @@ Se o arquivo estiver no formato JPEG, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                          | Formato de disco | Obrigatório |
 |-------|-------------------------------|-------------|----------|
-| 1     | /xmp/exif:GPSMapDatum         | Unicode     | Yes      |
-| 2     | /App1/IFD/GPS/ \\ {UShort = 18 \\ } | ASCII       | No       |
+| 1     | /xmp/exif:GPSMapDatum         | Unicode     | Sim      |
+| 2     | /App1/IFD/GPS/ \\ {UShort = 18 \\ } | ASCII       | Não       |
 
 
 
@@ -62,7 +62,7 @@ Se o arquivo estiver no formato TIFF, o manipulador lerá, gravará e removerá 
 
 | Ordem | Caminho                      | Formato de disco | Obrigatório |
 |-------|---------------------------|-------------|----------|
-| 1     | /ifd/xmp/exif:GPSMapDatum | Unicode     | Yes      |
+| 1     | /ifd/xmp/exif:GPSMapDatum | Unicode     | Sim      |
 | 2     | /IFD/GPS/ \\ {UShort = 18 \\ }  | ASCII       | Não       |
 
 

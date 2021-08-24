@@ -4,12 +4,12 @@ description: Os controles de calendário fornecem uma maneira simples e intuitiv
 ms.assetid: cfb1e420-bb8f-4100-9c83-304d11573c0e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63acb3ca83f6b7e71740acee4232e081e11594e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 02f41daf9e86f178f4b22a7908e4d9d10d1dab1a2f867ca2d09c62d111cbc806
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899547"
 ---
 # <a name="calendar-control-msaa-ui-element-reference"></a>Controle Calendar (referência de elemento de interface do usuário do MSAA)
 

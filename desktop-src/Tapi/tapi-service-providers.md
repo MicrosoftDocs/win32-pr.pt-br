@@ -4,12 +4,12 @@ ms.assetid: c1b0a790-884c-4e6b-bc01-ea2e85af4d4d
 title: Provedores de serviços TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd3052729336c455d673639928f934f4c3d6478a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 069da88e8e44b617f62f4b55dcbe5435b710f084a8f281056d88d2fbf29d2e22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773056"
 ---
 # <a name="tapi-service-providers"></a>Provedores de serviços TAPI
 

@@ -1,17 +1,17 @@
 ---
-description: Biblioteca de aux
+description: Biblioteca Aux
 ms.assetid: 38EE42D8-9487-4297-BE8F-F42EBD5D5D73
-title: Biblioteca de aux
+title: Biblioteca Aux
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88cf6e36d5c67bfe6c2ed76b782c7bc5601032df
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bebd44b15f79566d6dd68901c3848b62199089f1bade8ec3d51e9b5dea61be62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768766"
 ---
-# <a name="aux-library"></a>Biblioteca de aux
+# <a name="aux-library"></a>Biblioteca Aux
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -20,8 +20,8 @@ ms.locfileid: "104089012"
 -   [**AuxUlibInitialize**](/windows/desktop/api/Aux_ulib/nf-aux_ulib-auxulibinitialize)
 -   [**AuxUlibIsDLLSynchronizationHeld**](/windows/desktop/api/Aux_ulib/nf-aux_ulib-auxulibisdllsynchronizationheld)
 -   [**AuxUlibSetSystemFileCacheSize**](/windows/desktop/api/Aux_ulib/nf-aux_ulib-auxulibsetsystemfilecachesize)
--   [**\_ \_ informações básicas do módulo aux \_**](aux-module-basic-info-struct.md)
--   [**\_ \_ informações estendidas do módulo aux \_**](aux-module-extended-info-struct.md)
+-   [**INFORMAÇÕES \_ BÁSICAS DO MÓDULO AUX \_ \_**](aux-module-basic-info-struct.md)
+-   [**INFORMAÇÕES \_ ESTENDIDAS DO MÓDULO AUX \_ \_**](aux-module-extended-info-struct.md)
 
  
 

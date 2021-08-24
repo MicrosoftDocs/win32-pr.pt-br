@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3573bae8cbcb6858b04207f936545b7cf93959c2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd0d631a814b25e8ff99272a29af377941e2a6865bd41e6a2fb2c6bcc8fc59a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727816"
 ---
 # <a name="id3dxsaveuserdataaddtopleveldataobjectspost-method"></a>Método ID3DXSaveUserData:: AddTopLevelDataObjectsPost
 
@@ -49,7 +49,7 @@ Ponteiro para um arquivo. x salvar objeto. Use este ponteiro para chamar [**IDir
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

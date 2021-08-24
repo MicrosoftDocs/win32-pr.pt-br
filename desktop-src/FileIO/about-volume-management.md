@@ -4,12 +4,12 @@ ms.assetid: 424ddbd9-5692-45ef-95fb-7b00b09e3205
 title: Sobre o gerenciamento de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0767d137eeecaa4ded060382b689b5ea3780dcbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5446726b7caf448eef74884e8b6afc9d27dc4d4fdc6ffadd4572e667aaeb2cf5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766306"
 ---
 # <a name="about-volume-management"></a>Sobre o gerenciamento de volume
 
@@ -21,7 +21,7 @@ Os volumes são implementados por um driver de dispositivo chamado Gerenciador d
 
 | Tópico                                                                       | Descrição                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Reconhecimento do sistema de arquivos](file-system-recognition.md)<br/>           | A meta do reconhecimento do sistema de arquivos é permitir que o sistema operacional Windows tenha uma opção adicional para um sistema de arquivos válido, mas não reconhecido, diferente de "RAW".<br/>                                                                                                         |
+| [Reconhecimento do sistema de arquivos](file-system-recognition.md)<br/>           | a meta do reconhecimento do sistema de arquivos é permitir que o sistema operacional Windows tenha uma opção adicional para um sistema de arquivos válido, mas não reconhecido, diferente de "RAW".<br/>                                                                                                         |
 | [Nomeando um volume](naming-a-volume.md)<br/>                           | Um rótulo é um nome amigável que é atribuído a um volume, geralmente por um usuário final, para facilitar o reconhecimento. Um volume pode ter um rótulo, uma letra da unidade, ambos ou nenhum. Para definir o rótulo de um volume, use a função [**SetVolumeLabel**](/windows/desktop/api/WinBase/nf-winbase-setvolumelabela) .<br/> |
 | [Enumerando volumes](enumerating-volumes.md)<br/>                   | Para fazer uma lista completa dos volumes em um computador ou manipular cada volume por vez, você pode enumerar volumes.<br/>                                                                                                                                                       |
 | [Obtendo informações de volume](obtaining-volume-information.md)<br/> | Antes de acessar arquivos e diretórios em um determinado volume, você deve determinar os recursos do sistema de arquivos usando a função [**GetVolumeInformation**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumeinformationa) .<br/>                                                                              |

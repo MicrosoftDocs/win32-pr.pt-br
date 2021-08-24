@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e73de4d6d1762e87aa05e72b6cb6b3fbb228b80d
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: b44744d7ac7d158bd7d00423396681fef1499c94d61b5cb74a1dee48dad5c784
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "103824051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898666"
 ---
 # <a name="uri-prefixes"></a>Prefixos de URI
 
@@ -23,7 +23,7 @@ O prefixo do [*URI de recurso*](windows-remote-management-glossary.md) é difere
 
 ## <a name="prefixes"></a>Prefixos
 
-Se você acessar uma classe [*cim*](windows-remote-management-glossary.md) 2,1, como o [**\_ DataFile do CIM**](/windows/desktop/CIMWin32Prov/cim-datafile), o prefixo do URI será diferente do prefixo de uma classe CIM 2,9, como o **CIM \_ AdminDomain**. As classes CIM 2,1 são documentadas na seção [classes CIM](/windows/desktop/WmiSdk/cimclas) de instrumentação de gerenciamento do Windows (WMI).
+Se você acessar uma classe [*cim*](windows-remote-management-glossary.md) 2,1, como o [**\_ DataFile do CIM**](/windows/desktop/CIMWin32Prov/cim-datafile), o prefixo do URI será diferente do prefixo de uma classe CIM 2,9, como o **CIM \_ AdminDomain**. as classes cim 2,1 são documentadas na seção [classes cim](/windows/desktop/WmiSdk/cimclas) de Instrumentação de Gerenciamento do Windows (WMI).
 
 A maioria das [classes WMI](/windows/desktop/WmiSdk/wmi-classes) está no namespace WMI **\\ cimv2 raiz** . As classes para o provedor de [IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider)(interface de gerenciamento de plataforma inteligente) da Microsoft estão em **\\ hardware raiz**.
 
@@ -41,13 +41,13 @@ A lista a seguir contém os prefixos de URI de recurso para esses esquemas:
 
     "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/hardware/"
 
-Para obter mais informações, consulte [URIs de recurso](resource-uris.md) e [cadeias de caracteres URLPrefix](/windows/desktop/Http/urlprefix-strings). Para obter mais informações sobre como gerar um URI para uma classe ou um método WMI, consulte [gerenciamento remoto do Windows e WMI](windows-remote-management-and-wmi.md).
+Para obter mais informações, consulte [URIs de recurso](resource-uris.md) e [cadeias de caracteres URLPrefix](/windows/desktop/Http/urlprefix-strings). para obter mais informações sobre como gerar um URI para uma classe ou um método WMI, consulte [Gerenciamento Remoto do Windows e WMI](windows-remote-management-and-wmi.md).
 
 ## <a name="prefix-aliases"></a>Aliases de prefixo
 
 Um alias de prefixo é um atalho que representa o prefixo de URI de recurso longo. Você também pode usar aliases na linha de comando do **WinRM** . Para exibir uma lista de aliases disponíveis, digite **aliases de ajuda do WinRM**.
 
-Lembre-se de que um alias não pode ser usado dentro de uma referência de ponto de extremidade (EPR) ao especificar um URI de recurso. Gerenciamento Remoto do Windows não pode expandir o alias quando ele é inserido em XML.
+Lembre-se de que um alias não pode ser usado dentro de uma referência de ponto de extremidade (EPR) ao especificar um URI de recurso. Windows O gerenciamento remoto não pode expandir o alias quando ele é inserido em XML.
 
 No exemplo de código a seguir, o alias do WinRM é usado em um EPR em vez do URI de recurso completo, que é `http://schemas.microsoft.com/wbem/wsman/1/config/Listener` . Nesse caso, o WinRM retorna um erro que indica que o serviço não pode processar a solicitação.
 
@@ -113,10 +113,10 @@ As listas a seguir definem aliases e URIs de recursos para os quais substituem.
 
 <dl> <dt>
 
-[Sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
+[sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
 </dt> <dt>
 
-[Gerenciamento Remoto do Windows e WMI](windows-remote-management-and-wmi.md)
+[Windows Gerenciamento remoto e WMI](windows-remote-management-and-wmi.md)
 </dt> <dt>
 
 [URIs do Recurso](resource-uris.md)

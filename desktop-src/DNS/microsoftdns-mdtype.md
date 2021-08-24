@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_MDType
-description: A subclasse de MicrosoftDNS \_ ResourceRecord que representa um registro de agente de email para o domínio (MD).
+title: MicrosoftDNS_MDType classe
+description: A subclasse do MicrosoftDNS \_ ResourceRecord que representa um registro MD (Agente de Email para Domínio).
 ms.assetid: 11242372-65fe-44ee-845b-2430aec59127
 keywords:
-- MicrosoftDNS_MDType de classe de DNS
-- MicrosoftDNS_MDType de classe de DNS, descrita
+- dns MicrosoftDNS_MDType classe
+- MicrosoftDNS_MDType classe DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7641fda7a223fed7c2dc9229c5a3449c575e84ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de51a9d60b110f8b8305655e8ef9be7c656a8314c41a7b96c59d2c300405495d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119825086"
 ---
-# <a name="microsoftdns_mdtype-class"></a>\_Classe MicrosoftDNS MDType
+# <a name="microsoftdns_mdtype-class"></a>Classe MDType do MicrosoftDNS \_
 
-A subclasse de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa um registro de agente de email para o domínio (MD).
+A subclasse [**do MicrosoftDNS \_ ResourceRecord que**](microsoftdns-resourcerecord.md) representa um registro MD (Agente de Email para Domínio).
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -42,21 +42,21 @@ class MicrosoftDNS_MDType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Membros
 
-A classe **MicrosoftDNS \_ MDType** tem estes tipos de membros:
+A **classe \_ MDType do MicrosoftDNS** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **MicrosoftDNS \_ MDType** tem esses métodos.
+A **classe \_ MDType do MicrosoftDNS** tem esses métodos.
 
 
 
 | Método                             | Descrição                                                                                                                                                                                                                                                                                                                                                        |
 |:-----------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Instancia um registro de recurso de DNS MD com base nos dados nos parâmetros de entrada do método: o nome do servidor DNS do registro, o nome do contêiner, o nome do proprietário do domínio, a classe (padrão = IN), o valor de vida útil e o host do agente de email. Ele retorna uma referência ao novo objeto como um parâmetro de saída. <br/> Qualificadores: implementados, estáticos<br/> |
-| **Modificar**                         | Atualiza o TTL e o host MD para os valores especificados como os parâmetros de entrada deste método. Se um novo valor para um parâmetro não for especificado, o valor atual do parâmetro não será alterado. O método retorna uma referência ao objeto modificado como um parâmetro de saída. <br/> Qualificadores: implementados<br/>                                 |
+| **CreateInstanceFromPropertyData** | Instancie um Registro de Recurso dns MD com base nos dados nos parâmetros de entrada do método: o Nome do Servidor DNS do registro, o Nome do Contêiner, o Nome do Proprietário do domínio, a classe (padrão = IN), o valor de vida real e o host do agente de email. Ele retorna uma referência ao novo objeto como um parâmetro de saída. <br/> Qualificadores: implementados, estáticos<br/> |
+| **Modificar**                         | Atualiza o host TTL e MD para os valores especificados como os parâmetros de entrada desse método. Se um novo valor para um parâmetro não for especificado, o valor atual do parâmetro não será alterado. O método retorna uma referência ao objeto modificado como um parâmetro de saída. <br/> Qualificadores: implementados<br/>                                 |
 
 
 
@@ -64,7 +64,7 @@ A classe **MicrosoftDNS \_ MDType** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MicrosoftDNS \_ MDType** tem essas propriedades.
+A **classe \_ MDType do MicrosoftDNS** tem essas propriedades.
 
 <dl> <dt>
 
@@ -77,7 +77,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-FQDN que especifica um host com um agente de email capaz de entregar email para o domínio especificado.
+FQDN que especifica um host com um agente de email capaz de entregar emails para o domínio especificado.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ FQDN que especifica um host com um agente de email capaz de entregar email para 
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ FQDN que especifica um host com um agente de email capaz de entregar email para 
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe MDType MicrosoftDNS**](microsoftdns-mdtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe MDType do MicrosoftDNS \_**](microsoftdns-mdtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify da classe MicrosoftDNS \_ MDType**](microsoftdns-mdtype-modify.md)
+[**Método Modify da classe MDType do MicrosoftDNS \_**](microsoftdns-mdtype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

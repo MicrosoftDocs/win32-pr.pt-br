@@ -4,12 +4,12 @@ description: Funções de recurso (menus e outros recursos)
 ms.assetid: dfeaaf01-f947-453e-946e-65ad9ec40958
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee066a6a111c911dd704997eeb7ed1c89ae1f417
-ms.sourcegitcommit: b01ad017c152c6756f3638623fe335877644d414
+ms.openlocfilehash: e271b3d01f78f17d55e5f0b182bad52ac232d220fba21a787394f392e71a3b39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111549998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119846996"
 ---
 # <a name="resource-functions-menus-and-other-resources"></a>Funções de recurso (menus e outros recursos)
 
@@ -27,11 +27,11 @@ ms.locfileid: "111549998"
 -   [**EnumResourceTypes**](/windows/desktop/api/Winbase/nf-winbase-enumresourcetypesa)
 -   [**EnumResourceTypesEx**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcetypesexa)
 -   [*EnumResTypeProc*](/windows/win32/api/libloaderapi/nc-libloaderapi-enumrestypeproca)
--   [**FindResource**](/windows/desktop/api/Winbase/nf-winbase-findresourcea)
+-   [**Findresource**](/windows/desktop/api/Winbase/nf-winbase-findresourcea)
 -   [**FindResourceEx**](/windows/desktop/api/Winbase/nf-winbase-findresourceexa)
 -   [**FreeResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-freeresource)
--   [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea)
--   [**LoadResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadresource)
+-   [**Loadimage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea)
+-   [**Loadresource**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadresource)
 -   [**LockResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-lockresource)
 -   [**SizeofResource**](/windows/win32/api/libloaderapi/nf-libloaderapi-sizeofresource)
 -   [**UpdateResource**](/windows/desktop/api/Winbase/nf-winbase-updateresourcea)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 00824c6b418a3e6707ebfd588d8d32d4e38f173d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7dd6787ad8a81491e92af2a5ec1a16253af4cd0a0f8cb075dde01461b0010d45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790476"
 ---
 # <a name="id3dxrendertosurfacegetdesc-method"></a>Método ID3DXRenderToSurface:: GetDesc
 
@@ -49,7 +49,7 @@ Ponteiro para uma [**estrutura \_ desc de D3DXRTS**](d3dxrts-desc.md) , descreve
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

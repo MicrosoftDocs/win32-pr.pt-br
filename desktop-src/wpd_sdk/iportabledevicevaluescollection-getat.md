@@ -1,7 +1,7 @@
 ---
-description: 'Método IPortableDeviceValuesCollection:: GetAt – o método GetAt recupera um item da coleção por um índice baseado em zero.'
+description: Método IPortableDeviceValuesCollection::GetAt – o método GetAt recupera um item da coleção por um índice baseado em zero.
 ms.assetid: b219b052-a74b-466a-a2ee-d2e9c466f393
-title: 'Método IPortableDeviceValuesCollection:: GetAt (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValuesCollection::GetAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 2ad10a7b9cc3c252a0cee4cb71df05cb108e0a18
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 089c6c5c523b6f05f91efb5524904c942a539a7ebbb3cd863c1c07d413cdf1a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704626"
 ---
-# <a name="iportabledevicevaluescollectiongetat-method"></a>Método IPortableDeviceValuesCollection:: GetAt
+# <a name="iportabledevicevaluescollectiongetat-method"></a>Método IPortableDeviceValuesCollection::GetAt
 
-O método **GetAt** recupera um item da coleção por um índice baseado em zero.
+O **método GetAt** recupera um item da coleção por um índice baseado em zero.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,32 +41,32 @@ HRESULT GetAt(
 
 <dl> <dt>
 
-*dwIndex* \[ no\]
+*dwIndex* \[ Em\]
 </dt> <dd>
 
-**DWORD** que especifica um índice de base zero na coleção.
+**DWORD** que especifica um índice baseado em zero na coleção.
 
 </dd> <dt>
 
-*ppValues* \[ fora\]
+*ppValues* \[ out\]
 </dt> <dd>
 
-Endereço de uma variável que recebe um ponteiro para uma interface [**IPortableDeviceValues**](iportabledevicevalues.md) da coleção. O chamador é responsável por chamar o **lançamento** nessa interface quando feito com ele.
+Endereço de uma variável que recebe um ponteiro para uma interface [**IPortableDeviceValues**](iportabledevicevalues.md) da coleção. O chamador é responsável por chamar **Release** nessa interface quando terminar com ela.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                  | Descrição                                                                      |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | O método foi bem-sucedido.<br/>                                                 |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O índice de base zero que foi passado estava fora do intervalo.<br/>             |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>    | Um argumento de ponteiro necessário era **nulo**.<br/>                             |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | A coleção contém um ponteiro **IPortableDeviceValues** **nulo** .<br/> |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | O índice de base zero passado estava fora do intervalo.<br/>             |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>    | Um argumento de ponteiro necessário era **NULL.**<br/>                             |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | A coleção contém um **ponteiro NULL** **IPortableDeviceValues.**<br/> |
 
 
 
@@ -74,7 +74,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Quaisquer alterações feitas aos valores na interface recuperada serão feitas na versão armazenada na coleção.
+Todas as alterações feitas nos valores na interface recuperada serão feitas na versão armazenada na coleção.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,16 +82,16 @@ Quaisquer alterações feitas aos valores na interface recuperada serão feitas 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)
+[**IPortableDeviceValuesCollection Interface**](iportabledevicevaluescollection.md)
 </dt> </dl>
 
  

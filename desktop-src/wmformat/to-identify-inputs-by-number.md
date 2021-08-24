@@ -8,12 +8,12 @@ keywords:
 - perfis, identificando entradas por número
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0629776eaaff4252a690c0e31cd6002f5de42b31
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 36ff09a81cac98edc6f14ded98ba9852501bfdfef4c5e40affa908c0ff710e1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104007101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807526"
 ---
 # <a name="to-identify-inputs-by-number"></a>Para identificar entradas por número
 
@@ -98,9 +98,9 @@ Exit:
 [**Gravando arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de TVM_ENSUREVISIBLE (commctrl. h)
 description: Garante que um item de exibição de árvore esteja visível, expandindo o item pai ou rolando o controle de exibição de árvore, se necessário. Você pode enviar essa mensagem explicitamente ou usando a macro TreeView \_ EnsureVisible.
 ms.assetid: 7053438a-f9ca-4c4c-9da6-46b99fe1e4f8
 keywords:
-- Controles de TVM_ENSUREVISIBLE de mensagens do Windows
+- controles de Windows de mensagem de TVM_ENSUREVISIBLE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06100ee33106736076608aa216d2aebc03b76ebe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1072c7213eb2172896980662bcd7a22a3c41fccf34eea2f7a107ab7ff894b32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119797246"
 ---
 # <a name="tvm_ensurevisible-message"></a>\_Mensagem TVM ENSUREVISIBLE
 
@@ -39,7 +39,7 @@ Identificador para o item.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se o sistema tiver rolado os itens no controle de exibição em árvore e nenhum item tiver sido expandido. Caso contrário, a mensagem retornará zero.
 
@@ -53,9 +53,9 @@ Se a \_ mensagem TVM ENSUREVISIBLE expandir o item pai, a janela pai receberá o
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

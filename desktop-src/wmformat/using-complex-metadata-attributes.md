@@ -3,23 +3,23 @@ title: Usando atributos de metadados complexos
 description: Usando atributos de metadados complexos
 ms.assetid: 8269efe4-331f-4b4b-b888-66b45c638153
 keywords:
-- SDK do Windows Media Format, atributos de metadados complexos
+- Windows SDK do formato de mídia, atributos de metadados complexos
 - ASF (Advanced Systems Format), atributos de metadados complexos
 - ASF (formato de sistemas avançados), atributos de metadados complexos
 - metadados, atributos complexos
 - atributos de metadados complexos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cd03c656a8cba5342d21e41932365455daa8bfa
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 8245d2fbc07878a73e304cfc573e05e93b605185ece93655dae7a8bdeff0d9d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807246"
 ---
 # <a name="using-complex-metadata-attributes"></a>Usando atributos de metadados complexos
 
-O SDK do Windows Media Format dá suporte a atributos de metadados complexos, que são atributos que têm valores representados por uma estrutura. Como todos os atributos devem ter um tipo de dados definido na enumeração [**WMT \_ attr \_ DataType**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_attr_datatype) , todos os atributos de metadados complexos são tratados como **\_ \_ binários de tipo WMT**. Ao escrever um atributo complexo, converta o ponteiro para a estrutura como um ponteiro de byte. Quando você recupera um atributo complexo, converta a matriz de bytes definida por [**IWMHeaderInfo3:: GetAttributeByIndexEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-getattributebyindexex) como a estrutura apropriada.
+o SDK do formato de mídia Windows dá suporte a atributos de metadados complexos, que são atributos que têm valores representados por uma estrutura. Como todos os atributos devem ter um tipo de dados definido na enumeração [**WMT \_ attr \_ DataType**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_attr_datatype) , todos os atributos de metadados complexos são tratados como **\_ \_ binários de tipo WMT**. Ao escrever um atributo complexo, converta o ponteiro para a estrutura como um ponteiro de byte. Quando você recupera um atributo complexo, converta a matriz de bytes definida por [**IWMHeaderInfo3:: GetAttributeByIndexEx**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo3-getattributebyindexex) como a estrutura apropriada.
 
 Os exemplos de código a seguir mostram como definir e recuperar um atributo de metadados complexo. A primeira função adiciona um atributo de texto de usuário, a segunda função recupera um. Para obter mais informações sobre como usar esses exemplos, consulte [usando os exemplos de código](using-the-code-examples.md).
 
@@ -136,9 +136,9 @@ Exit:
 [**Trabalhando com metadados**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

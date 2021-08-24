@@ -1,30 +1,30 @@
 ---
-title: Propriedade IMsTscAx SecuredSettingsEnabled
-description: Indica se a interface IMsTscSecuredSettings está disponível. Ou seja, se a página da Web que contém o controle está atualmente em uma das zonas de segurança de URL permitidas do Internet Explorer.
+title: Propriedade SecuredSettingsEnabled IMsTscAx
+description: Indica se a interface IMsTscSecuredSettings está disponível. Ou seja, se a página da Web que contém o controle está atualmente em uma das zonas de segurança Internet Explorer URL permitidas.
 ms.assetid: 0747eab0-9d62-4c10-b02d-fc65ca2f752e
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsTscAx
-- Serviços de Área de Trabalho Remota de interface IMsTscAx, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade SecuredSettingsEnabled
-- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsTscAx
+- Interface IMsTscAx Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
+- Propriedade SecuredSettingsEnabled Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade SecuredSettingsEnabled
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de0601ac64ab0ca55f3d92ec460861a4347f70b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc03fb9cff3a99d77006989b7adade40a15ad4bb4d63e6f940092b765b1e250f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771056"
 ---
-# <a name="imstscaxsecuredsettingsenabled-property"></a>Propriedade IMsTscAx:: SecuredSettingsEnabled
+# <a name="imstscaxsecuredsettingsenabled-property"></a>Propriedade IMsTscAx::SecuredSettingsEnabled
 
-Indica se a interface [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponível. Ou seja, se a página da Web que contém o controle está atualmente em uma das zonas de segurança de URL permitidas do Internet Explorer.
+Indica se a interface [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponível. Ou seja, se a página da Web que contém o controle está atualmente em uma das zonas de segurança Internet Explorer URL permitidas.
 
 Esta propriedade é somente para leitura.
 
@@ -80,7 +80,7 @@ HRESULT get_SecuredSettingsEnabled(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor desse parâmetro será **true** se a interface estiver disponível e **false** caso contrário.
+O valor desse parâmetro será **TRUE se** a interface estiver disponível, caso contrário, **FALSE.**
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -88,11 +88,11 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Use este método para consultar se a interface [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponível antes de recuperar a propriedade [**SecuredSettings**](imstscax-securedsettings.md) .
+Use esse método para consultar se a interface [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponível antes de recuperar a [**propriedade SecuredSettings.**](imstscax-securedsettings.md)
 
-Consulte [fornecimento de segurança de cliente RDP](providing-for-rdp-client-security.md) para obter uma lista de zonas de segurança de URL restritas.
+Consulte [Fornecendo segurança de cliente RDP](providing-for-rdp-client-security.md) para uma lista de zonas de segurança de URL restritas.
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,7 +104,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx é definido como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx é definido como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 
@@ -112,7 +112,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)
@@ -139,10 +139,10 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClient9**](imsrdpclient9.md)
 </dt> <dt>
 
-[**IMsTscAx**](imstscax-interface.md)
+[**Imstscax**](imstscax-interface.md)
 </dt> <dt>
 
-[**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md)
+[**Imstscsecuredsettings**](imstscsecuredsettings-interface.md)
 </dt> </dl>
 
  

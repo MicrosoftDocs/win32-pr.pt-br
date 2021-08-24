@@ -70,16 +70,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc03f02028a331a3688152a1ce8c57ada7269d07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a4d7aefdd3f0a684c91fda3ab73d17de32327f34e8d20d5a7f844ea07e21906
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119769886"
 ---
 # <a name="win32_terminalservicesetting-class"></a>\_Classe Win32 TerminalServiceSetting
 
-A classe WMI **\_ TerminalServiceSetting do Win32** representa a configuração de um servidor de host da sessão da área de trabalho remota (host da Sessão RD). As configurações incluem recursos como Host da Sessão RD modo de servidor, licenciamento, Active Desktop, permissões, exclusão de pastas temporárias e diretórios temporários para sessões.
+A classe WMI **\_ TerminalServiceSetting do Win32** representa a configuração de um servidor de host da sessão da área de trabalho remota (host da Sessão RD). Configurações incluem recursos como Host da Sessão RD modo de servidor, licenciamento, Active Desktop, permissões, exclusão de pastas temporárias e diretórios temporários para sessões.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades definidas e herdadas, em ordem alfabética. Para obter informações de referência sobre métodos, consulte a tabela de métodos mais adiante neste tópico.
 
@@ -301,13 +301,13 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se os diretórios temporários são excluídos ao sair.
+Especifica se os diretórios temporários são excluídos na saída.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -318,7 +318,7 @@ A exclusão de diretórios temporários está desabilitada.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**Verdadeiro** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -340,7 +340,7 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -353,10 +353,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **preteridos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **PRETERIDO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Esta propriedade não está disponível.
+Essa propriedade não está disponível.
 
 **Windows Server 2008:** Enumera a lista de servidores de licença.
 
@@ -365,27 +365,27 @@ Esta propriedade não está disponível.
 **DisableForcibleLogoff**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Determina se um administrador que está conectado ao console pode ser forçado a desconectar.
+Determina se um administrador que está conectado ao console pode ser desconectado à força.
 
 <dt>
 
 0
 </dt> <dd>
 
-O administrador pode ser forçado a desconectar.
+O administrador pode ser desconectado à força.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-Não é possível efetuar logoff forçado do administrador.
+O administrador não pode ser desconectado à força.
 
 </dd> </dl>
 
@@ -394,13 +394,13 @@ Não é possível efetuar logoff forçado do administrador.
 **EnableAutomaticReconnection**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se os clientes de conexão Área de Trabalho Remota devem ser permitidos para se reconectarem automaticamente a sessões em um servidor Host da Sessão RD se o link de rede for perdido temporariamente.
+Especifica se os clientes de conexão Área de Trabalho Remota podem se reconectar automaticamente às sessões em um servidor Host da Sessão RD se o link de rede for temporariamente perdido.
 
 <dt>
 
@@ -418,36 +418,36 @@ A reconexão automática está habilitada.
 
 </dd> </dl>
 
-**Windows server 2008 R2 e Windows server 2008:** Esta propriedade não está disponível.
+**Windows Server 2008 R2 e Windows Server 2008:** Essa propriedade não está disponível.
 
 </dd> <dt>
 
 **EnableDFSS**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Indica se o agendamento de Fair-share dinâmico (DFSS) está habilitado ou desabilitado. Isso pode ser um dos valores a seguir.
+Indica se o DFSS (agendamento dinâmico de compartilhamento justo) está habilitado ou desabilitado. Esse pode ser um dos valores a seguir.
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** Essa propriedade não está disponível antes Windows Server 2008 R2.
 
 <dt>
 
 0
 </dt> <dd>
 
-DFSS está desabilitado.
+O DFSS está desabilitado.
 
 </dd> <dt>
 
 1
 </dt> <dd>
 
-DFSS está habilitado.
+O DFSS está habilitado.
 
 </dd> </dl>
 
@@ -456,72 +456,72 @@ DFSS está habilitado.
 **EnableDiskFSS**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se o agendamento de compartilhamento justa de disco está habilitado.
+Especifica se o agendamento de compartilhamento justo de disco está habilitado.
 
 <dt>
 
 0 (0x0)
 </dt> <dd>
 
-O agendamento do fair share do disco está desabilitado.
+O agendamento de compartilhamento justo de disco está desabilitado.
 
 </dd> <dt>
 
 1 (0x1)
 </dt> <dd>
 
-O agendamento do fair share de disco está habilitado.
+O agendamento de compartilhamento justo de disco está habilitado.
 
 </dd> </dl>
 
-**Windows server 2008 R2 e Windows server 2008:** Esta propriedade não está disponível.
+**Windows Server 2008 R2 e Windows Server 2008:** Essa propriedade não está disponível.
 
 </dd> <dt>
 
 **EnableNetworkFSS**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Especifica se o agendamento de compartilhamento justa de rede está habilitado.
+Especifica se o agendamento de compartilhamento justo de rede está habilitado.
 
 <dt>
 
 0 (0x0)
 </dt> <dd>
 
-O agendamento do fair share de rede está desabilitado.
+O agendamento de compartilhamento justo de rede está desabilitado.
 
 </dd> <dt>
 
 1 (0x1)
 </dt> <dd>
 
-O agendamento do fair share de rede está habilitado.
+O agendamento de compartilhamento justo de rede está habilitado.
 
 </dd> </dl>
 
-**Windows server 2008 R2 e Windows server 2008:** Esta propriedade não está disponível.
+**Windows Server 2008 R2 e Windows Server 2008:** Essa propriedade não está disponível.
 
 </dd> <dt>
 
 **EnableRemoteDesktopMSI**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Indica se a Área de Trabalho Remota MSI está habilitada ou desabilitada.
@@ -542,14 +542,14 @@ habilitado
 
 </dd> </dl>
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** Essa propriedade não está disponível antes Windows Server 2008 R2.
 
 </dd> <dt>
 
 **FallbackPrintDriverType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -561,71 +561,71 @@ Especifica para qual driver de impressora fazer fallback.
 
 <span id="No_fallback_dirvers_0"></span><span id="no_fallback_dirvers_0"></span><span id="NO_FALLBACK_DIRVERS_0"></span>
 
-<span id="No_fallback_dirvers_0"></span><span id="no_fallback_dirvers_0"></span><span id="NO_FALLBACK_DIRVERS_0"></span>**Sem dirvers de fallback = 0** (0)
+<span id="No_fallback_dirvers_0"></span><span id="no_fallback_dirvers_0"></span><span id="NO_FALLBACK_DIRVERS_0"></span>**Nenhum dirvers=0** de fallback (0)
 
 
 </dt> <dd>
 
-Nenhum driver de fallback.
+Nenhum drivers de fallback.
 
 </dd> <dt>
 
 <span id="Best_guess_1"></span><span id="best_guess_1"></span><span id="BEST_GUESS_1"></span>
 
-<span id="Best_guess_1"></span><span id="best_guess_1"></span><span id="BEST_GUESS_1"></span>**Melhor estimativa = 1** (1)
+<span id="Best_guess_1"></span><span id="best_guess_1"></span><span id="BEST_GUESS_1"></span>**Melhor suposição=1** (1)
 
 
 </dt> <dd>
 
-Melhor estimativa.
+Melhor suposição.
 
 </dd> <dt>
 
 <span id="Best_guess__if_no_match_is_found_fallback_to_PCL_2"></span><span id="best_guess__if_no_match_is_found_fallback_to_pcl_2"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_FALLBACK_TO_PCL_2"></span>
 
-<span id="Best_guess__if_no_match_is_found_fallback_to_PCL_2"></span><span id="best_guess__if_no_match_is_found_fallback_to_pcl_2"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_FALLBACK_TO_PCL_2"></span>**Melhor estimativa, se nenhuma correspondência for encontrada para fallback para PCL = 2** (2)
+<span id="Best_guess__if_no_match_is_found_fallback_to_PCL_2"></span><span id="best_guess__if_no_match_is_found_fallback_to_pcl_2"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_FALLBACK_TO_PCL_2"></span>**Melhor suposição: se nenhuma combinação for encontrada, fallback para PCL=2** (2)
 
 
 </dt> <dd>
 
-Melhor estimativa. Se nenhuma correspondência for encontrada, fallback para Hewlett-Packard PCL (linguagem de controle de impressora).
+Melhor suposição. Se nenhuma combinação for encontrada, fallback para Hewlett-Packard PCL (Printer Control Language).
 
 </dd> <dt>
 
 <span id="Best_guess__if_no_match_is_found_fallback_to_PS_3"></span><span id="best_guess__if_no_match_is_found_fallback_to_ps_3"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_FALLBACK_TO_PS_3"></span>
 
-<span id="Best_guess__if_no_match_is_found_fallback_to_PS_3"></span><span id="best_guess__if_no_match_is_found_fallback_to_ps_3"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_FALLBACK_TO_PS_3"></span>**Melhor estimativa, se nenhuma correspondência for encontrada para o PS = 3** (3)
+<span id="Best_guess__if_no_match_is_found_fallback_to_PS_3"></span><span id="best_guess__if_no_match_is_found_fallback_to_ps_3"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_FALLBACK_TO_PS_3"></span>**Melhor suposição: se nenhuma combinação for encontrada, fallback para PS=3** (3)
 
 
 </dt> <dd>
 
-Melhor estimativa. Se nenhuma correspondência for encontrada, fallback para o PostScript (PS).
+Melhor suposição. Se nenhuma corresponder for encontrada, fallback para Postscript (PS).
 
 </dd> <dt>
 
 <span id="Best_guess__if_no_match_is_found_show_both_PCL_and_PS_drivers_4"></span><span id="best_guess__if_no_match_is_found_show_both_pcl_and_ps_drivers_4"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_SHOW_BOTH_PCL_AND_PS_DRIVERS_4"></span>
 
-<span id="Best_guess__if_no_match_is_found_show_both_PCL_and_PS_drivers_4"></span><span id="best_guess__if_no_match_is_found_show_both_pcl_and_ps_drivers_4"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_SHOW_BOTH_PCL_AND_PS_DRIVERS_4"></span>**Melhor estimativa, se nenhuma correspondência for encontrada, mostrar drivers PCL e PS = 4** (4)
+<span id="Best_guess__if_no_match_is_found_show_both_PCL_and_PS_drivers_4"></span><span id="best_guess__if_no_match_is_found_show_both_pcl_and_ps_drivers_4"></span><span id="BEST_GUESS__IF_NO_MATCH_IS_FOUND_SHOW_BOTH_PCL_AND_PS_DRIVERS_4"></span>**Melhor suposição: se nenhuma combinação for encontrada, mostre os drivers PCL e PS=4** (4)
 
 
 </dt> <dd>
 
-Melhor estimativa. Se nenhuma correspondência for encontrada, mostre os drivers PS e PCL.
+Melhor suposição. Se nenhuma combinação for encontrada, mostre os drivers PS e PCL.
 
 </dd> </dl>
 
 </dd> <dt>
 
-**Getcapabilitiesid**
+**GetCapabilitiesID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-ID de recursos para o provedor.
+ID de funcionalidades para o provedor.
 
 </dd> <dt>
 
@@ -645,13 +645,13 @@ O diretório raiz do computador.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 ")
+Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 A data em que o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
@@ -978,18 +978,18 @@ Política de grupo
 **PolicySourceDirectConnectLicenseServers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **preteridos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **PRETERIDO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Esta propriedade não está disponível.
+Essa propriedade não está disponível.
 
-**Windows Server 2008:** Indica se a propriedade **DirectConnectLicenseServers** está configurada pelo servidor ou pela política de grupo.
+**Windows Server 2008:** Indica se a **propriedade DirectConnectLicenseServers** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1012,7 +1012,7 @@ Política de grupo
 **PolicySourceDisableForcibleLogoff**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1020,7 +1020,7 @@ Tipo de acesso: Somente leitura
 
 Não há suporte a esta propriedade.
 
-**Windows Server 2008:** Determina se a propriedade **DisableForcibleLogoff** é configurada pelo servidor ou pela política de grupo.
+**Windows Server 2008:** Determina se a **propriedade DisableForcibleLogoff** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1043,13 +1043,13 @@ Política de Grupo.
 **PolicySourceEnableAutomaticReconnection**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **EnableAutomaticReconnection** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade EnableAutomaticReconnection** está configurada pela política de servidor ou grupo.
 
 <dt>
 
@@ -1067,20 +1067,20 @@ Política de grupo
 
 </dd> </dl>
 
-**Windows server 2008 R2 e Windows server 2008:** Esta propriedade não está disponível.
+**Windows Server 2008 R2 e Windows Server 2008:** Essa propriedade não está disponível.
 
 </dd> <dt>
 
-**PolicySourceEnableDFSS**
+**PolicySourceEnableDFSSS**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **EnableDFSS** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade EnableDFSS** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1098,20 +1098,20 @@ Política de grupo
 
 </dd> </dl>
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** Essa propriedade não está disponível antes Windows Server 2008 R2.
 
 </dd> <dt>
 
 **PolicySourceEnableRemoteDesktopMSI**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **EnableRemoteDesktopMSI** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade EnableRemoteDesktopMSI** está configurada pela política de servidor ou grupo.
 
 <dt>
 
@@ -1129,20 +1129,20 @@ Política de grupo
 
 </dd> </dl>
 
-**Windows Server 2008:** Essa propriedade não está disponível antes do Windows Server 2008 R2.
+**Windows Server 2008:** Essa propriedade não está disponível antes Windows Server 2008 R2.
 
 </dd> <dt>
 
 **PolicySourceFallbackPrintDriverType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **FallbackPrintDriverType** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade FallbackPrintDriverType** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1165,13 +1165,13 @@ Política de grupo
 **PolicySourceHomeDirectory**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **HomeDirectory** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade HomeDirectory** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1194,13 +1194,13 @@ Política de grupo
 **PolicySourceLicensingType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **licensingtype** está configurada pelo servidor ou pela política de grupo.
+Indica se a propriedade **LicensingType** está configurada pelo servidor ou pela política de grupo.
 
 <dt>
 
@@ -1223,7 +1223,7 @@ Política de grupo
 **PolicySourceProfilePath**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1252,13 +1252,13 @@ Política de grupo
 **PolicySourceRedirectSmartCards**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a propriedade **RedirectSmartCards** está configurada pelo servidor ou pela política de grupo.
+Indica se a **propriedade RedirectSmartCards** está configurada pela política de servidor ou grupo.
 
 <dt>
 
@@ -1276,14 +1276,14 @@ Política de grupo
 
 </dd> </dl>
 
-**Windows server 2008 R2 e Windows server 2008:** Esta propriedade não está disponível.
+**Windows Server 2008 R2 e Windows Server 2008:** Essa propriedade não está disponível.
 
 </dd> <dt>
 
 **PolicySourceSingleSession**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1312,7 +1312,7 @@ Política de grupo
 **PolicySourceTimeZoneRedirection**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -1830,9 +1830,9 @@ Os diretórios temporários são criados e excluídos para cada sessão.
 
 [**Win32 \_ TerminalSetting**](win32-terminalsetting.md) é associado ao [**\_ terminal do Win32**](win32-terminal.md) como a propriedade de **configuração** da Associação [**Win32 \_ TerminalTerminalSetting**](win32-terminalterminalsetting.md) .
 
-Para se conectar ao \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. Para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de seis.
+Para se conectar ao \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de seis.
 
-O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+o exemplo a seguir Visual Basic scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -1843,7 +1843,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

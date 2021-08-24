@@ -3,7 +3,7 @@ title: Elemento smartPlaylist
 description: O elemento smartPlaylist contém a parte definida dinamicamente de uma playlist.
 ms.assetid: 05912849-7475-4eb9-a7bd-00f20b80b1cf
 keywords:
-- Windows Media Player do elemento smartPlaylist
+- Elemento smartPlaylist Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "119763466"
 ---
 # <a name="smartplaylist-element"></a>Elemento smartPlaylist
 
-O elemento **smartPlaylist** contém a parte definida dinamicamente de uma playlist.
+O **elemento smartPlaylist** contém a parte definida dinamicamente de uma playlist.
 
 ``` syntax
 <smartPlaylist
@@ -37,7 +37,7 @@ O elemento **smartPlaylist** contém a parte definida dinamicamente de uma playl
 
 | Termo                                                                                                                                   | Descrição                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| <span id="version__required______________"></span><span id="VERSION__REQUIRED______________"></span>**versão** (obrigatório) <br/> | O número decimal que representa o número de versão do esquema de playlist inteligente. Defina como 1.0.0.0.<br/> |
+| <span id="version__required______________"></span><span id="VERSION__REQUIRED______________"></span>**versão** (obrigatório) <br/> | O número decimal que representa o número de versão do esquema de playlist inteligente. Definido como 1.0.0.0.<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **smartPlaylist** contém a parte definida dinamicamente de uma playl
 | Hierarquia | Elementos                                                       |
 |-----------|----------------------------------------------------------------|
 | Pai    | [Seq](seq-element.md)                                         |
-| Filho     | [queryset](queryset-element.md), [filtro](filter-element.md) |
+| Filho     | [querySet](queryset-element.md), [filtro](filter-element.md) |
 
 
 
@@ -58,7 +58,7 @@ O elemento **smartPlaylist** contém a parte definida dinamicamente de uma playl
 
 ## <a name="remarks"></a>Comentários
 
-Um elemento **smartPlaylist** normalmente contém um elemento **queryset** e também pode conter um elemento **Filter** .
+Um **elemento smartPlaylist** normalmente contém um **elemento querySet** e também pode conter um **elemento de** filtro.
 
 ## <a name="examples"></a>Exemplos
 
@@ -93,7 +93,7 @@ Um elemento **smartPlaylist** normalmente contém um elemento **queryset** e tam
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/> |
 
 
 
@@ -101,22 +101,22 @@ Um elemento **smartPlaylist** normalmente contém um elemento **queryset** e tam
 
 <dl> <dt>
 
-[**Elemento Argument**](argument-element.md)
+[**Elemento argument**](argument-element.md)
 </dt> <dt>
 
-[**Elemento Filter**](filter-element.md)
+[**Elemento filter**](filter-element.md)
 </dt> <dt>
 
-[**Elemento Fragment**](fragment-element.md)
+[**Elemento fragment**](fragment-element.md)
 </dt> <dt>
 
-[**Elemento queryset**](queryset-element.md)
+[**Elemento querySet**](queryset-element.md)
 </dt> <dt>
 
 [**Elemento seq**](seq-element.md)
 </dt> <dt>
 
-[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

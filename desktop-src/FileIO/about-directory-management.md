@@ -4,12 +4,12 @@ ms.assetid: e8a7bf82-0f3c-4ad9-9d10-25c4d69733dc
 title: Sobre o gerenciamento de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02e3a90b6cc99a480f798e632512770c904291a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9cc59e465e1d97b28b1cfdff35c5f288e56b5eb0ee9800273873ffe6476868b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766406"
 ---
 # <a name="about-directory-management"></a>Sobre o gerenciamento de diretório
 

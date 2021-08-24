@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: afb93a0513bef7de1b0815b8b1f50179e2cba41d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0d7bfeddb5cb34bb9b5d0372f424c40248f06e55fa7263e1e884e71fb82dafcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105798162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727756"
 ---
 # <a name="id3dxskininfo-interface"></a>Interface ID3DXSkinInfo
 
@@ -39,7 +39,7 @@ A interface **ID3DXSkinInfo** tem esses métodos.
 
 | Método                                                                              | Descrição                                                                                                                                                                                    |
 |:------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**8i**](id3dxskininfo--clone.md)                                               | Clona um objeto de informações de capa.<br/>                                                                                                                                                          |
+| [**Clone**](id3dxskininfo--clone.md)                                               | Clona um objeto de informações de capa.<br/>                                                                                                                                                          |
 | [**ConvertToBlendedMesh**](id3dxskininfo--converttoblendedmesh.md)                 | Usa uma malha e retorna uma nova malha com pesos de mistura por vértice e uma tabela de combinação de Bone. A tabela descreve quais Bones afetam quais subconjuntos da malha.<br/>                   |
 | [**ConvertToIndexedBlendedMesh**](id3dxskininfo--converttoindexedblendedmesh.md)   | Usa uma malha e retorna uma nova malha com pesos de mistura por vértice, índices e uma tabela de combinação de Bone. A tabela descreve quais paletas de Bone afetam quais subconjuntos da malha.<br/> |
 | [**FindBoneVertexInfluenceIndex**](id3dxskininfo--findbonevertexinfluenceindex.md) | Recupera o índice da influência do Bone que afeta um único vértice.<br/>                                                                                                                |

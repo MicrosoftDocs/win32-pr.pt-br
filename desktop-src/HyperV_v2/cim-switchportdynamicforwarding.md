@@ -1,7 +1,7 @@
 ---
-description: Representa uma associação na qual uma entrada de um banco de dados de encaminhamento se aplica a uma porta de comutador.
+description: Representa uma associação na qual uma entrada de um banco de dados de encaminhamento se aplica a uma porta switch.
 ms.assetid: e63ac61d-ed0c-49e9-b056-4fcb6d1d5455
-title: Classe CIM_SwitchPortDynamicForwarding
+title: CIM_SwitchPortDynamicForwarding classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0e0d87e2ee5df6a7564d92fd1f8421dfa09abe20
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ccf3b6cd9ac1fcc97c8e409df792069c02652d5e0bf92ef8bbbec9f88e36cf3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899526"
 ---
-# <a name="cim_switchportdynamicforwarding-class"></a>\_Classe CIM SwitchPortDynamicForwarding
+# <a name="cim_switchportdynamicforwarding-class"></a>Classe CIM \_ SwitchPortDynamicForwarding
 
-Representa uma associação na qual uma entrada de um banco de dados de encaminhamento se aplica a uma porta de comutador.
+Representa uma associação na qual uma entrada de um banco de dados de encaminhamento se aplica a uma porta switch.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,33 +39,33 @@ class CIM_SwitchPortDynamicForwarding : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SwitchPortDynamicForwarding** tem estes tipos de membros:
+A **classe CIM \_ SwitchPortDynamicForwarding** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SwitchPortDynamicForwarding** tem essas propriedades.
+A **classe CIM \_ SwitchPortDynamicForwarding** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ switchport do CIM**
+Tipo de dados: **\_ SwitchPort CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecessor"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Uma referência de [**\_ switchport do CIM**](cim-switchport.md) para a porta do comutador.
+Uma [**referência de \_ SwitchPort cim**](cim-switchport.md) para a porta do comutar.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **CIM \_ DynamicForwardingEntry**
@@ -74,10 +74,10 @@ Tipo de dados: **CIM \_ DynamicForwardingEntry**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Uma referência do [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md) à entrada do banco de dados de encaminhamento.
+Uma [**referência cim \_ DynamicForwardingEntry**](cim-dynamicforwardingentry.md) à entrada do banco de dados de encaminhamento.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Uma referência do [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentr
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Uma referência do [**CIM \_ DynamicForwardingEntry**](cim-dynamicforwardingentr
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

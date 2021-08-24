@@ -1,7 +1,7 @@
 ---
 description: Retorna o número de elementos armazenados por este enumerador.
 ms.assetid: d374ec81-0bd5-4b5d-8002-e3b53476421a
-title: 'Método IEnumWiaItem2:: GetCount (WIA. h)'
+title: Método IEnumWiaItem2::GetCount (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 23c067b8e4da93d678f641890a85e2535b3ca50d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a64a7c015f7c21ff19a736570aa104f0b229bc1b6561001b612045824f9a31d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882416"
 ---
-# <a name="ienumwiaitem2getcount-method"></a>Método IEnumWiaItem2:: GetCount
+# <a name="ienumwiaitem2getcount-method"></a>Método IEnumWiaItem2::GetCount
 
 Retorna o número de elementos armazenados por este enumerador.
 
@@ -39,20 +39,20 @@ HRESULT GetCount(
 
 <dl> <dt>
 
-*cElt* \[ fora\]
+*cElt* \[ out\]
 </dt> <dd>
 
-Tipo: **ULONG \** _
+Tipo: **ULONG \***
 
-Recebe um ponteiro para um _ *ULONG** que recebe o número de elementos na enumeração.
+Recebe um ponteiro para um **ULONG** que recebe o número de elementos na enumeração .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,10 +60,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

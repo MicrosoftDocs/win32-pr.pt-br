@@ -1,9 +1,9 @@
 ---
-title: 'Função ByteAddressBuffer:: Load2 (UINT)'
-description: 'Obtém dois valores. | Função ByteAddressBuffer:: Load2 (UINT)'
+title: Função ByteAddressBuffer::Load2(uint)
+description: Obtém dois valores. | Função ByteAddressBuffer::Load2(uint)
 ms.assetid: 696ce310-4d65-4382-97ec-046160197c67
 keywords:
-- HLSL da função Load2
+- Função Load2 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 78204fc3d41daf07a54974fbf103685e718ab79d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fac3b1cd0fffca1a68089c3c21bfd5d6aea5f270493319b044a0bbe290d88a5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845726"
 ---
-# <a name="byteaddressbufferload2uint-function"></a>Função ByteAddressBuffer:: Load2 (UINT)
+# <a name="byteaddressbufferload2uint-function"></a>Função ByteAddressBuffer::Load2(uint)
 
 Obtém dois valores.
 
@@ -36,7 +36,7 @@ uint2 Load2(
 
 <dl> <dt>
 
-*endereço* \[ no\]
+*endereço* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,7 +45,7 @@ O endereço de entrada em bytes, que deve ser um múltiplo de 4.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **uint2**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

@@ -1,5 +1,5 @@
 ---
-title: Constantes Direct2D
+title: Direct2D constantes
 description: Direct2D define a lista de constantes a seguir.
 ms.assetid: 98a443af-4bb7-486d-bc87-ff34c3671bdd
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 09/19/2019
-ms.openlocfilehash: bc25bf1055b923a383fc580a622e96d787ed13e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd8adfa3d6fa3c59a05331c82ea12100918a4697d9478097a890eedff039d5e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768726"
 ---
-# <a name="direct2d-constants"></a>Constantes Direct2D
+# <a name="direct2d-constants"></a>Direct2D constantes
 
 As constantes a seguir são declaradas nos `d2d1effectauthor.h` arquivos de cabeçalho,, `d2d1.h` `d2d1_1.h` e `d2d1effects_2.h` .
 
@@ -51,7 +51,7 @@ O número de nits que o espaço de cores sRGB ou scRGB usa para o SDR branco ou 
 
 | Requisito | Valor |
 |-|-|
-| Cliente mínimo com suporte | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\] |
-| Servidor mínimo com suporte | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\] |
-| Número mínimo de telefone com suporte | Windows Phone 8,1 \[ Windows Phone silverlight 8,1 e aplicativos \] de Windows Runtime, Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\] |
-| parâmetro | d2d1effectauthor. h, d2d1. h, d2d1_1. h, d2d1effects_2. h |
+| Cliente mínimo com suporte | Windows 7, Windows vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ desktop apps \|\] |
+| Servidor mínimo com suporte | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos do Windows Server 2008 \[ desktop aplicativos \| UWP\] |
+| Número mínimo de telefone com suporte | Windows Phone 8,1 \[ Windows Phone silverlight 8,1 e aplicativos \] de Windows Runtime, Windows Phone 8,1 \[ Windows Phone silverlight 8,1 e aplicativos de Windows Runtime\] |
+| Cabeçalho | d2d1effectauthor. h, d2d1. h, d2d1_1. h, d2d1effects_2. h |

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: c6d94906fa8c0debfa1ee49d95f5acd47aea2526
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8d35f09a10cc88ae3873a507b6fa7000812503890240ce0b808ffecc84f23fd8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883946"
 ---
 # <a name="foldertype-element-library-schema"></a>Elemento FolderType (esquema de biblioteca)
 
@@ -50,7 +50,7 @@ O <folderType> elemento especifica um GUID para o tipo de pasta. Esse elemento s
 
 ## <a name="remarks"></a>Comentários
 
-A configuração de um tipo de pasta determina as colunas e os detalhes que aparecem no Windows Explorer por padrão. Os identificadores de tipo de pasta ([**FOLDERTYPEID**](foldertypeid.md)) são GUIDs definidos em Shlguid. h. A tabela a seguir lista os GUIDs de tipos de pasta comuns.
+a configuração de um tipo de pasta determina as colunas e os detalhes que aparecem no Windows Explorer por padrão. Os identificadores de tipo de pasta ([**FOLDERTYPEID**](foldertypeid.md)) são GUIDs definidos em Shlguid. h. A tabela a seguir lista os GUIDs de tipos de pasta comuns.
 
 
 

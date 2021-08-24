@@ -1,8 +1,8 @@
 ---
-description: Método TakeOwnerShip da classe CIM_DeviceFile – o método TakeOwnerShip Obtém a propriedade do arquivo lógico especificado no caminho do objeto.
+description: Método TakeOwnerShip da classe CIM_DeviceFile - O método TakeOwnerShip obtém a propriedade do arquivo lógico especificado no caminho do objeto.
 ms.assetid: ef7d5ce7-99fb-464f-9739-ec9189148f94
 ms.tgt_platform: multiple
-title: Método TakeOwnerShip da classe CIM_DeviceFile
+title: Método TakeOwnerShip da classe CIM_DeviceFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 4e7c745df18e1725199c4027d22882a00f6143a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 03d629a3b547074c6543635646a5335e6e5b13bddabc539be6918641e19dc536
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751846"
 ---
-# <a name="takeownership-method-of-the-cim_devicefile-class"></a>Método TakeOwnerShip da classe CIM \_ devicefile
+# <a name="takeownership-method-of-the-cim_devicefile-class"></a>Método TakeOwnerShip da classe \_ DeviceFile CIM
 
-O método **TakeOwnership** Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Se o arquivo lógico for um diretório, esse método agirá de forma recursiva, assumindo a propriedade de todos os arquivos e subdiretórios contidos no diretório. Esse método é herdado [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+O **método TakeOwnerShip** obtém a propriedade do arquivo lógico especificado no caminho do objeto. Se o arquivo lógico for um diretório, esse método atuará recursivamente, assumindo a propriedade de todos os arquivos e subdados que o diretório contém. Esse método é herdado de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,14 +54,14 @@ Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para ind
 **0**
 </dt> <dd>
 
-Sucesso.
+Êxito.
 
 </dd> <dt>
 
 **2**
 </dt> <dd>
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Privilégio não mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Parâmetro inválido.
@@ -144,9 +144,9 @@ Parâmetro inválido.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -156,20 +156,20 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[\_Dispositivo CIM](takeownership-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](takeownership-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_Dispositivo CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

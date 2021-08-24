@@ -1,7 +1,7 @@
 ---
 description: O método CoInitializeHelper chama a função CoInitializeEx no início do thread.
 ms.assetid: 1a981e1e-c059-4e51-81d8-33bcb39ee580
-title: Método CAMThread. CoInitializeHelper (Wxutil. h)
+title: Método CAMThread.CoInitializeHelper (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a6c3eb7fbcb9e4abada43098339a29d208ded0d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41a763a4b9151f22615aa0af3dae57af8281751209a016dc3135f3572e9d8ef3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768286"
 ---
-# <a name="camthreadcoinitializehelper-method"></a>Método CAMThread. CoInitializeHelper
+# <a name="camthreadcoinitializehelper-method"></a>Método CAMThread.CoInitializeHelper
 
 O `CoInitializeHelper` método chama a função CoInitializeEx no início do thread.
 
@@ -40,17 +40,17 @@ static HRESULT CoInitializeHelper();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os valores a seguir são possíveis.
+Retorna um **valor HRESULT.** A seguir estão os valores possíveis.
 
 
 
 | Código de retorno                                                                             | Descrição                                              |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**\_falso**</dt> </dl> | A função CoInitializeEx não está disponível.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | A função CoInitializeEx não está disponível.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>    | Êxito.<br/>                                      |
-| <dl> <dt>**E \_ falha**</dt> </dl>  | Falha.<br/>                                      |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>  | Falha.<br/>                                      |
 
 
 
@@ -58,7 +58,7 @@ Retorna um valor **HRESULT** . Os valores a seguir são possíveis.
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CAMThread:: InitialThreadProc**](camthread-initialthreadproc.md) chama esse método auxiliar, que chama a função CoInitializeEx. Ele usa o sinalizador de \_ desabilitar OLE1DDE do coinit \_ para desabilitar o troca dinâmica de dados (DDE). Para obter mais informações, consulte o SDK da plataforma.
+O [**método CAMThread::InitialThreadProc**](camthread-initialthreadproc.md) chama esse método auxiliar, que chama a função CoInitializeEx. Ele usa o sinalizador COINIT \_ DISABLE \_ OLE1DDE para desabilitar Dados Dinâmicos Exchange (DDE). Para obter mais informações, consulte o SDK da plataforma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,8 +66,8 @@ O método [**CAMThread:: InitialThreadProc**](camthread-initialthreadproc.md) ch
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

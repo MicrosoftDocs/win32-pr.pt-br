@@ -4,12 +4,12 @@ ms.assetid: 69e868bf-72ab-4c5e-8305-bb2b0a6ba088
 title: System. GPS. DestDistance
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ebd7b95c300dad46f6706cc3ad8e991233b28c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ff21d530e9d402503b7707724d4455ea6fbcb43815c1879d71ea7f474f910cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845006"
 ---
 # <a name="systemgpsdestdistance"></a>System. GPS. DestDistance
 

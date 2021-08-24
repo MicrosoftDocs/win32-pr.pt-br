@@ -1,38 +1,38 @@
 ---
 title: Registrando um retorno de chamada
-description: Se o aplicativo exigir notificação quando o valor de uma variável de estado for alterado ou a instância de serviço que ele representa se tornar indisponível, o aplicativo deverá registrar uma função de retorno de chamada.
+description: Se o aplicativo exigir notificação quando o valor de uma variável de estado mudar ou a instância de serviço que ele representa ficar indisponível, o aplicativo deverá registrar uma função de retorno de chamada.
 ms.assetid: 881e71f7-39e6-4847-bdf2-78e54d1750cb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b9095ab4b5b2d43a12f7e806eabc24b174a0311
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5a3dca603e6226d3171aed920311bafcf6844ec9fab5c7aa05deafee7a13fd8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768526"
 ---
 # <a name="registering-a-callback"></a>Registrando um retorno de chamada
 
-Se o aplicativo exigir notificação quando o valor de uma variável de estado for alterado ou a instância de serviço que ele representa se tornar indisponível, o aplicativo deverá registrar uma função de retorno de chamada. Para registrar uma função de retorno de chamada para o objeto de serviço a ser invocado, use o método [**IUPnPService:: AddCallback**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) . Esse método pode ser usado para registrar mais de um retorno de chamada.
+Se o aplicativo exigir notificação quando o valor de uma variável de estado mudar ou a instância de serviço que ele representa ficar indisponível, o aplicativo deverá registrar uma função de retorno de chamada. Para registrar uma função de retorno de chamada para o objeto de serviço a ser invocado, use o [**método IUPnPService::AddCallback.**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) Esse método pode ser usado para registrar mais de um retorno de chamada.
 
 Os desenvolvedores não devem cancelar uma operação assíncrona dentro de um retorno de chamada assíncrono.
 
 > [!Note]  
-> Adicionar um retorno de chamada no Visual Basic é diferente do método usado no VBScript. A função **GetRef** usada no VBScript não está disponível no Visual Basic. Portanto, um desenvolvedor deve criar um objeto [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que tenha a função de retorno de chamada como o método padrão. Consulte [registrando um retorno de chamada no Visual Basic](registering-a-callback-in-visual-basic.md).
+> Adicionar um retorno de chamada Visual Basic é diferente do método usado no VBScript. A **função GetRef** usada no VBScript não está disponível no Visual Basic. Portanto, um desenvolvedor deve criar um [**objeto IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que tenha a função de retorno de chamada como o método padrão. Consulte [Registrando um retorno de chamada no Visual Basic](registering-a-callback-in-visual-basic.md).
 
- 
+ 
 
 ## <a name="vbscript-example"></a>Exemplo de VBScript
 
-O código VBScript a seguir define a função de retorno de chamada **serviceChangeCallback**, a ser invocada quando os valores de variáveis de estado forem alterados ou quando a instância do serviço ficar indisponível. A função tem quatro argumentos.
+O código VBScript a seguir define a função de retorno de chamada **serviceChangeCallback**, a ser invocada quando os valores das variáveis de estado mudarem ou quando a instância de serviço ficar indisponível. A função tem quatro argumentos.
 
-O primeiro argumento para a função especifica o motivo pelo qual o retorno de chamada é invocado. Ele é invocado porque uma variável de estado foi alterada ou porque a instância do serviço tornou-se indisponível.
+O primeiro argumento para a função especifica o motivo pelo qual o retorno de chamada é invocado. Ele é invocado porque uma variável de estado foi alterada ou porque a instância de serviço ficou indisponível.
 
-O segundo argumento é o objeto de serviço para o qual o retorno de chamada é invocado. Se o retorno de chamada for invocado para uma alteração de variável de estado, a função será passada com dois argumentos adicionais: o nome da variável que foi alterada e seu novo valor.
+O segundo argumento é o objeto Service para o qual o retorno de chamada é invocado. Se o retorno de chamada for invocado para uma alteração de variável de estado, a função será passada dois argumentos adicionais: o nome da variável que foi alterada e seu novo valor.
 
-Neste exemplo, o retorno de chamada exibe apenas uma caixa de mensagem que mostra o nome da variável alterada e seu novo valor, e se o retorno de chamada foi invocado para uma alteração de variável de estado. Caso contrário, ele exibirá uma mensagem indicando que a instância do serviço não está mais disponível.
+Neste exemplo, o retorno de chamada simplesmente exibe uma caixa de mensagem que mostra o nome da variável alterada e seu novo valor e se o retorno de chamada foi invocado para uma alteração de variável de estado. Caso contrário, ele exibirá uma mensagem que indica que a instância de serviço não está mais disponível.
 
-A última parte do fragmento de código mostra como registrar a função de retorno de chamada usando o método [**AddCallback**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) . As variáveis de objeto de serviço, *appService* e *xportService* , devem ter sido inicializadas, conforme mostrado em [obtendo objetos de serviço](obtaining-service-objects.md).
+A última parte do fragmento de código mostra como registrar a função de retorno de chamada usando o [**método AddCallback.**](/windows/desktop/api/Upnp/nf-upnp-iupnpservice-addcallback) As variáveis de objeto de serviço, *appService* e *xportService* são consideradas inicializadas, conforme mostrado em [Obtendo objetos de serviço](obtaining-service-objects.md).
 
 
 ```VB
@@ -188,6 +188,6 @@ HRESULT AddCallbackToService(IUPnPService* pUPnPService)
 
 
 
- 
+ 
 
- 
+ 

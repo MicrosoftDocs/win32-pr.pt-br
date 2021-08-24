@@ -1,6 +1,6 @@
 ---
-title: RSQ-PS
-description: Computa a raiz quadrada recíproca (somente positivo) do escalar de origem. | RSQ-PS
+title: rsq - ps
+description: Calcula a raiz recíproca quadrada (somente positiva) do escalar de origem. | rsq - ps
 ms.assetid: deb1bd12-6347-4b1e-b21b-f3ef48da4c13
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 13777810c67ba38b2c8f47f0c0db0cf9b70771ad
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 48a36715113678e199b3da22be9cdf118f385c15397a16ddd39bdd83622f76f2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788696"
 ---
-# <a name="rsq---ps"></a>RSQ-PS
+# <a name="rsq---ps"></a>rsq - ps
 
-Computa a raiz quadrada recíproca (somente positivo) do escalar de origem.
+Calcula a raiz recíproca quadrada (somente positiva) do escalar de origem.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| RSQ DST, src |
+| rsq dst, src |
 |--------------|
 
 
@@ -33,14 +33,14 @@ Computa a raiz quadrada recíproca (somente positivo) do escalar de origem.
 
 onde
 
--   DST é o registro de destino.
--   src é um registro de origem. O registro de origem requer uso explícito de replicate swizzle, ou seja, exatamente um dos componentes. x,. y,. z,. w swizzle (ou. r,. g,. b,. equivalentes) devem ser especificados.
+-   dst é o registro de destino.
+-   src é um registro de origem. O registro de origem requer o uso explícito do swizzle de replicação, ou seja, exatamente um dos componentes .x, .y, .z, .w swizzle (ou os equivalentes .r, .g, .b, .a).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | rsq                   |      |      |      |      | x    | x    | x     | x    | x     |
 
@@ -48,11 +48,11 @@ onde
 
  
 
-O valor absoluto é obtido antes do processamento.
+O valor absoluto é tirado antes do processamento.
 
-A precisão deve ser pelo menos 1,0/(2 ²) erro absoluto durante o intervalo (1,0, 4,0) porque implementações comuns separam mantissa e expoente.
+A precisão deve ser pelo menos 1,0/(2 Vezes) erro absoluto no intervalo (1,0, 4,0) porque implementações comuns separarão mantissa e expoente.
 
-A saída deve ser exatamente 1,0 se a entrada for exatamente 1,0. Uma fonte de 0,0 gera infinitos.
+A saída deverá ser exatamente 1,0 se a entrada for exatamente 1,0. Uma fonte de 0,0 produz infinito.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

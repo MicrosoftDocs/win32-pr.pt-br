@@ -1,7 +1,7 @@
 ---
 description: Associa um sistema virtual a um instantâneo do sistema virtual.
 ms.assetid: f85f6914-dbb8-42c9-a732-11d48613c15c
-title: Classe CIM_SnapshotOfVirtualSystem
+title: CIM_SnapshotOfVirtualSystem classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6e8e0929f1198ececea5ea5ec144e2f7313ec35c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 598ee11064872653ec216cef5751312e02809fb1cc45e4831fa50e01b1af46a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899626"
 ---
-# <a name="cim_snapshotofvirtualsystem-class"></a>\_Classe CIM SnapshotOfVirtualSystem
+# <a name="cim_snapshotofvirtualsystem-class"></a>Classe CIM \_ SnapshotOfVirtualSystem
 
 Associa um sistema virtual a um instantâneo do sistema virtual.
 
@@ -39,33 +39,33 @@ class CIM_SnapshotOfVirtualSystem : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ SnapshotOfVirtualSystem** tem estes tipos de membros:
+A **classe CIM \_ SnapshotOfVirtualSystem** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ SnapshotOfVirtualSystem** tem essas propriedades.
+A **classe CIM \_ SnapshotOfVirtualSystem** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ sistema de ComputerSystem CIM**
+Tipo de dados: **Cim \_ ComputerSystem**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Uma referência ao sistema de computador que representa o sistema virtual.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **CIM \_ VirtualSystemSettingData**
@@ -74,7 +74,7 @@ Tipo de dados: **CIM \_ VirtualSystemSettingData**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
 Uma referência ao objeto de dados de configurações que representa o instantâneo do sistema virtual.
@@ -89,8 +89,8 @@ Uma referência ao objeto de dados de configurações que representa o instantâ
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Uma referência ao objeto de dados de configurações que representa o instantâ
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. Measuremode.
+description: A política de metadados de foto para a propriedade System.GPS.MeasureMode.
 ms.assetid: 911a0d81-bd12-4155-b45a-ae1a18f2dd07
-title: Política de metadados de foto System. GPS. Measuremode
+title: Política de metadados de foto System.GPS.MeasureMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a9449ca9a7d1ee5ef213c37562392be2842a09f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 827cd278a71b23934fb0475e78d98b25a9f2b72d413b70f9abc60ba3dbe2c3fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882316"
 ---
-# <a name="systemgpsmeasuremode-photo-metadata-policy"></a>Política de metadados de foto System. GPS. Measuremode
+# <a name="systemgpsmeasuremode-photo-metadata-policy"></a>Política de metadados de foto System.GPS.MeasureMode
 
-A política de metadados de foto para a propriedade [System. GPS. measuremode](../properties/props-system-gps-measuremode.md) .
+A política de metadados de foto para a [propriedade System.GPS.MeasureMode.](../properties/props-system-gps-measuremode.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ de \_ medida de GPS
+PKEY \_ GPS \_ MeasureMode
 
 ### <a name="containers"></a>Contêineres
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-VT \_ LPWSTR é preferível, mas VT \_ LPSTR também é aceito.
+O VT \_ LPWSTR é preferencial, mas o VT \_ LPSTR também é aceito.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policies"></a>Políticas JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 10} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=10} | ascii       |
 | 2     | /xmp/exif:GPSMeasureMode  | Unicode     |
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 10} | ascii       |
+| 1     | /app1/ifd/gps/{ushort=10} | ascii       |
 | 2     | /xmp/exif:GPSMeasureMode  | Unicode     |
 
 
@@ -73,7 +73,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                      |
 |-------|---------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 10} |
+| 1     | /app1/ifd/gps/{ushort=10} |
 | 2     | /xmp/exif:gpsmeasuremode  |
 
 
@@ -82,13 +82,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 10}         | ascii       |
+| 1     | /ifd/gps/{ushort=10}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSMeasureMode | Unicode     |
 
 
@@ -101,7 +101,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 10}         | ascii       |
+| 1     | /ifd/gps/{ushort=10}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSMeasureMode | Unicode     |
 
 
@@ -114,7 +114,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                         |
 |-------|------------------------------|
-| 1     | /IFD/GPS/{UShort = 10}         |
+| 1     | /ifd/gps/{ushort=10}         |
 | 2     | /ifd/xmp/exif:gpsmeasuremode |
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. GPS. Measuremode](../properties/props-system-gps-measuremode.md)
+[System.GPS.MeasureMode](../properties/props-system-gps-measuremode.md)
 </dt> </dl>
 
  

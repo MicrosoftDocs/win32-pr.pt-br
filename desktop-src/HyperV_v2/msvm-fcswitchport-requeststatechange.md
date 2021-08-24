@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 74ef1d921cac8d6dc5b5ac1db84c343f0ff4bd06
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 10b3b57c783dc57c1c08d9fae7c45689ca7da57dd7dba52f3fbc5d97f11af698
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789906"
 ---
 # <a name="requeststatechange-method-of-the-msvm_fcswitchport-class"></a>Método RequestStateChange da classe Msvm \_ FcSwitchPort
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

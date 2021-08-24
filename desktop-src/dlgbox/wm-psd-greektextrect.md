@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd0853720bea8cadc8df40d8fa649f644fd00694
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7c30e4873255a59a86da91b3145d0675f6940ce35081273696ce6c68b70a1560
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119726046"
 ---
 # <a name="wm_psd_greektextrect-message"></a>\_Mensagem GREEKTEXTRECT do PSD do WM \_
 
@@ -51,7 +51,7 @@ Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o procedimento de gancho retornar **true**, a caixa de diálogo não desenhará a parte do texto grego da página de exemplo.
 

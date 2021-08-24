@@ -1,21 +1,21 @@
 ---
-description: A partir do Microsoft Windows XP Tablet PC Edition Software Development Kit (SDK) versão 1,0, o painel de entrada do Tablet PC no nível do sistema fornece um mecanismo universal para realizar a entrada de texto na plataforma Windows, embora não forneça acesso programático. O objeto Tablet PC SDK versão 1,5 PenInputPanel integra as ferramentas de entrada de texto em aplicativos.
+description: a partir do Microsoft Windows XP Tablet pc Edition Software Development Kit (SDK) versão 1,0, o painel de entrada do Tablet pc no nível do sistema fornece um mecanismo universal para realizar a entrada de texto na plataforma Windows, embora não forneça acesso programático. O objeto Tablet PC SDK versão 1,5 PenInputPanel integra as ferramentas de entrada de texto em aplicativos.
 ms.assetid: 14fe4963-ab9b-4c78-9f17-791c68378ef0
 title: Sobre o painel de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7db733e49e49d428b5ff8072a1315787d9fafd25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 044e8c3a43127bd765fd5004329352956e4be8bb9f214f8dda8896fa318832a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844406"
 ---
 # <a name="about-the-input-panel"></a>Sobre o painel de entrada
 
 \[[**PenInputPanel**](peninputpanel-class.md) foi substituído por [**TextInput**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel). Para obter mais informações, consulte [programando o painel de entrada de texto](programming-the-text-input-panel.md).\]
 
-A partir do Microsoft Windows XP Tablet PC Edition Software Development Kit (SDK) versão 1,0, o painel de entrada do Tablet PC no nível do sistema fornece um mecanismo universal para realizar a entrada de texto na plataforma Windows, embora não forneça acesso programático. O objeto Tablet PC SDK versão 1,5 [**PenInputPanel**](peninputpanel-class.md) integra as ferramentas de entrada de texto em aplicativos.
+a partir do Microsoft Windows XP Tablet pc Edition Software Development Kit (SDK) versão 1,0, o painel de entrada do Tablet pc no nível do sistema fornece um mecanismo universal para realizar a entrada de texto na plataforma Windows, embora não forneça acesso programático. O objeto Tablet PC SDK versão 1,5 [**PenInputPanel**](peninputpanel-class.md) integra as ferramentas de entrada de texto em aplicativos.
 
 O gráfico a seguir mostra o painel de entrada da caneta exibido sobre a amostra de [exemplo de formulário de declarações automática](auto-claims-form-sample.md) .
 
@@ -73,7 +73,7 @@ O painel de entrada de caneta fornece um modo de teclado para situações em que
 
 ## <a name="recognizer-support"></a>Suporte do reconhecedor
 
-O objeto [**PenInputPanel**](peninputpanel-class.md) dá suporte a reconhecedores de envio para o Windows XP Tablet PC Edition versão 1,0 e para o SDK do tablet pc versão 1,5.
+o objeto [**PenInputPanel**](peninputpanel-class.md) dá suporte a reconhecedores de envio para Windows XP tablet pc Edition versão 1,0 e para o SDK do Tablet pc versão 1,5.
 
 ## <a name="automatic-positioning"></a>Posicionamento automático
 

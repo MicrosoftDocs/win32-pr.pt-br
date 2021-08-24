@@ -4,12 +4,12 @@ ms.assetid: a20f5b0a-9b99-4ebe-827b-6223788050f6
 title: Proxy System. Photo. Brightness
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62447f8b152eb31ee6769ac4585d942384aa4a55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0396657efa09c2c3ddbe83faab67701cc36e4629ced5319e6b634fb8d3e3285
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882076"
 ---
 # <a name="systemphotobrightness-proxy"></a>Proxy System. Photo. Brightness
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

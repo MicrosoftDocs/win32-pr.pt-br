@@ -11,12 +11,12 @@ keywords:
 - Gerenciando um esquema ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99d398f8eb056498977f886e836c0f97c95f0b9b
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 4ddb8fcc3d29dce27ac2b74c9c8e79d1cef2f9d2a23307e9b7626861ed3e7dd4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104567920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119770477"
 ---
 # <a name="schema-management"></a>Gerenciamento de esquema
 
@@ -35,12 +35,12 @@ Lembre-se de que, na figura anterior, a classe de esquema "Organizational Unit" 
 > [!Note]  
 > Os objetos de sintaxe não estão presentes na primeira versão do componente de provedor de exemplo. No entanto, na maioria das implementações de esquema ADSI da Microsoft, os objetos de sintaxe são incluídos no objeto de contêiner de esquema, assim como os objetos de classe de esquema e propriedade. Por esse motivo, eles são mostrados aqui.
 
- 
+ 
 
 Esse componente de provedor torna os dados de esquema acessíveis para o aplicativo cliente ADSI na forma de objetos de classe ADs, objetos de propriedade ADs e objetos de sintaxe ADs, tudo dentro de um objeto contêiner de classe de esquema, para que os dados de esquema possam ser recuperados em tempo de execução.
 
 O ADsPaths para os objetos de contêiner de classe de esquema definidos para o componente de provedor de exemplo são "Sample://Seattle/schema" e "Sample://Toronto/schema". Neste exemplo, o conteúdo dos esquemas é idêntico.
 
- 
+ 
 
- 
+ 

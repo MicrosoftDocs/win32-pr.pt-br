@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_Cryptography02
-description: A \_ classe MDM Policy \_ Result01 \_ Cryptography02 representa políticas relacionadas à criptografia.
+title: MDM_Policy_Result01_Cryptography02 classe
+description: A classe MDM \_ Policy \_ Result01 \_ Cryptography02 representa políticas relacionadas à criptografia.
 ms.assetid: 3ab41bb4-920d-4647-8f05-f6938f51c409
 keywords:
-- Classe MDM_Policy_Result01_Cryptography02
-- Classe MDM_Policy_Result01_Cryptography02, descrita
+- MDM_Policy_Result01_Cryptography02 classe
+- MDM_Policy_Result01_Cryptography02, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6beb62d7d9fdba320220c9bb4de5074fce416ac2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: db82a5a338762991a0222a20fad10f94bfa4784f70db09ac05d46277c57d91d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796366"
 ---
-# <a name="mdm_policy_result01_cryptography02-class"></a>\_Classe MDM \_ Result01 \_ Cryptography02
+# <a name="mdm_policy_result01_cryptography02-class"></a>Classe MDM \_ Policy \_ Result01 \_ Cryptography02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ Policy \_ Result01 \_ Cryptography02** representa políticas relacionadas à criptografia.
+A **classe MDM \_ Policy \_ Result01 \_ Cryptography02** representa políticas relacionadas à criptografia.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,13 +47,13 @@ class MDM_Policy_Result01_Cryptography02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy \_ Result01 \_ Cryptography02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy \_ Result01 \_ Cryptography02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ A **classe \_ \_ Result01 \_ Cryptography02 da política MDM** tem essas proprie
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -80,11 +80,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Cryptography"
+Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Criptografia"
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -106,7 +106,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

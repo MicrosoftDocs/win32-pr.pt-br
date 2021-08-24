@@ -1,47 +1,47 @@
 ---
-title: Enumerações de virtualização Área de Trabalho Remota
-description: A API de virtualização Área de Trabalho Remota dá suporte aos tipos de enumeração a seguir.
+title: Área de Trabalho Remota enumerações de virtualização
+description: A API Área de Trabalho Remota Virtualização do Área de Trabalho Remota dá suporte aos seguintes tipos de enumeração.
 ms.assetid: 9603edb9-22c6-4649-b82d-bc1421f10ff5
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 398e4f0e9cddd9c15f62cc67d466231711ce3ef0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 12c24d32ba25f76747a8d57819dba995c116bcbcc77adbcbd88f997df00a1396
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865926"
 ---
-# <a name="remote-desktop-virtualization-enumerations"></a>Enumerações de virtualização Área de Trabalho Remota
+# <a name="remote-desktop-virtualization-enumerations"></a>Área de Trabalho Remota enumerações de virtualização
 
-A API de virtualização Área de Trabalho Remota dá suporte aos tipos de enumeração a seguir.
+A API Área de Trabalho Remota Virtualização do Área de Trabalho Remota dá suporte aos seguintes tipos de enumeração.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 <dl> <dt>
 
-[**\_tipo de alteração de destino \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_change_type)
+[**TIPO \_ DE ALTERAÇÃO DE \_ DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_change_type)
 </dt> <dd>
 
 Especifica o tipo de alteração que ocorreu em um destino.
 
 </dd> <dt>
 
-[**Estado de destino \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_state)
+[**ESTADO DE \_ DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_state)
 </dt> <dd>
 
 Indica o estado de um destino.
 
 </dd> <dt>
 
-[**tipo de destino \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_type)
+[**TIPO DE \_ DESTINO**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-target_type)
 </dt> <dd>
 
 Indica se um destino pertence a um pool ou farm.
 
 </dd> <dt>
 
-[**\_estado TSSESSION**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-tssession_state)
+[**ESTADO DE TSSESSION \_**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-tssession_state)
 </dt> <dd>
 
 Indica o estado de uma sessão.
@@ -55,16 +55,16 @@ Indica o tipo de endereço IP.
 
 </dd> <dt>
 
-[**\_ \_ classificação de TS SB \_ por**](/windows/desktop/api/sbtsv/ne-sbtsv-ts_sb_sort_by)
+[**TS \_ SB \_ SORT \_ BY**](/windows/desktop/api/sbtsv/ne-sbtsv-ts_sb_sort_by)
 </dt> <dd>
 
-Especifica a ordem de classificação. Ele é usado como um parâmetro no método [**EnumerateTargets**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratetargets) .
+Especifica a ordem de classificação. Ele é usado como um parâmetro no [**método EnumerateTargets.**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratetargets)
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

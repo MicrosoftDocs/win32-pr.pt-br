@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6452305342fcebf802183c5de2d1992aa0bfbcde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f0354710d5857d8250419fe9c8f0f4b0154051f62dc31b1e2649ce800350c8a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119768696"
 ---
 # <a name="ui_animation_repeat_indefinitely_conclude_at_end"></a>repetição de animação da interface do usuário \_ \_ \_ indefinidamente \_ concluída \_ no \_ final
 
@@ -39,7 +39,7 @@ Indica que o intervalo entre dois quadros-chave em um storyboard deve repetir in
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8, Windows 7 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ somente\]<br/>    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
 
 

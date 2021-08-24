@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicense inclusionlist (wmdrmsdk. h)
-description: O método getinclusõeslist recupera toda a lista de inclusão para a licença ou cadeia de licença atual.
+title: Método GetInclusionList de IWMDRMLicense (Wmdrmsdk.h)
+description: O método GetInclusionList recupera toda a lista de inclusão para a cadeia de licenças ou licenças atual.
 ms.assetid: a3cb70c5-7d20-413c-aeb8-66c9233b384e
 keywords:
-- Método inclusionlist formato de mídia do Windows
-- Método getinclusõeslist Windows Media Format, interface IWMDRMLicense
-- IWMDRMLicense interface formato Windows Media, método getinclusõeslist
+- Formato de mídia do windows do método GetInclusionList
+- Formato de mídia do método GetInclusionList , interface IWMDRMLicense
+- Formato de mídia da interface IWMDRMLicense , método GetInclusionList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f0d2837a4bb84c07214cce3e4fbc3d4d96b9583
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6389ac30d5bffeb6ad354ec6c7e83f2834921fe8fb83c1abe2bca2d0c2f43bfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705236"
 ---
-# <a name="iwmdrmlicensegetinclusionlist-method"></a>Método IWMDRMLicense:: inclusionlist
+# <a name="iwmdrmlicensegetinclusionlist-method"></a>Método IWMDRMLicense::GetInclusionList
 
-O método **Getinclusõeslist** recupera toda a lista de inclusão para a licença ou cadeia de licença atual.
+O **método GetInclusionList** recupera toda a lista de inclusão para a cadeia de licenças ou licenças atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,23 +44,23 @@ HRESULT GetInclusionList(
 
 <dl> <dt>
 
-*ppGuids* \[ fora\]
+*ppGuids* \[ out\]
 </dt> <dd>
 
-Recebe uma matriz de GUIDs que identifica as tecnologias incluídas.
+Recebe uma matriz de GUIDs que identificam as tecnologias incluídas.
 
 </dd> <dt>
 
-*pcGuids* \[ fora\]
+*pcGuids* \[ out\]
 </dt> <dd>
 
-Recebe o número de elementos na matriz *ppGuids* . A matriz é alocada usando **CoTaskMemAlloc**. Quando terminar com a lista, libere a memória chamando **CoTaskMemFree**.
+Recebe o número de elementos na *matriz ppGuids.* A matriz é alocada usando **CoTaskMemAlloc.** Quando terminar a lista, libere a memória chamando **CoTaskMemFree.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -74,7 +74,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-O emissor da licença pode especificar outros sistemas de proteção para os quais o conteúdo criptografado pode ser convertido. A lista de GUIDs recuperados por esse método identifica os sistemas de proteção permitidos. Ao entrar em um contrato de licença com a Microsoft para obter a biblioteca de stub, você receberá uma lista de sistemas de proteção com suporte no momento e os GUIDs usados para identificá-los.
+O emissor da licença pode especificar outros sistemas de proteção nos quais o conteúdo criptografado pode ser convertido. A lista de GUIDs recuperados por esse método identifica os sistemas de proteção permitidos. Ao entrar em um contrato de licença com a Microsoft para obter a biblioteca de stub, você receberá uma lista de sistemas de proteção com suporte no momento e os GUIDs usados para identificá-los.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,8 +82,8 @@ O emissor da licença pode especificar outros sistemas de proteção para os qua
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -91,10 +91,10 @@ O emissor da licença pode especificar outros sistemas de proteção para os qua
 
 <dl> <dt>
 
-[**Autorização explícita e listas de inclusão**](explicit-authorization-and-inclusion-lists.md)
+[**Listas explícitas de autorização e inclusão**](explicit-authorization-and-inclusion-lists.md)
 </dt> <dt>
 
-[**Interface IWMDRMLicense**](iwmdrmlicense.md)
+[**IWMDRMLicense Interface**](iwmdrmlicense.md)
 </dt> </dl>
 
  

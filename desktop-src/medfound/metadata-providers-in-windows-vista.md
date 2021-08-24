@@ -1,19 +1,19 @@
 ---
-description: No Windows Vista, Microsoft Media Foundation expõe metadados por meio da interface IMFMetadata.
+description: no Windows Vista, Microsoft Media Foundation expõe os metadados por meio da interface IMFMetadata.
 ms.assetid: a26e40c2-1717-4a13-8bf0-e41376a8d317
-title: Provedores de metadados no Windows Vista
+title: provedores de metadados no Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1726e04058a7b15e387fca4f3faa94fce7c91c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1edf65b59e0f47e603b057f49a76d8721b8733849937cb29fd0afbe0b9b44920
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827066"
 ---
-# <a name="metadata-providers-in-windows-vista"></a>Provedores de metadados no Windows Vista
+# <a name="metadata-providers-in-windows-vista"></a>provedores de metadados no Windows Vista
 
-No Windows Vista, Microsoft Media Foundation expõe metadados por meio da interface [**IMFMetadata**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) .
+no Windows Vista, Microsoft Media Foundation expõe os metadados por meio da interface [**IMFMetadata**](/windows/desktop/api/mfidl/nn-mfidl-imfmetadata) .
 
 ## <a name="reading-metadata"></a>Lendo metadados
 

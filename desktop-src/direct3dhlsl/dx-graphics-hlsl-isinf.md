@@ -1,5 +1,5 @@
 ---
-title: isinf (Corecrt \_ Math. h)
+title: isinf (Corecrt \_ math.h)
 description: Determina se o valor especificado é infinito.
 ms.assetid: 2028dc5a-e48b-4081-a0ec-35901113aab6
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4df738438d62d5a66dd3b08ad769d475df562d5f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: 30384cb4463f5751394f45bf521529a1afc79d1b9262cf007ceeaa7d790c3f0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789646"
 ---
 # <a name="isinf"></a>isinf
 
@@ -27,7 +27,7 @@ Determina se o valor especificado é infinito.
 
 
 
-| *RET* isinf (*x*) |
+| *ret* isinf(*x*) |
 |------------------|
 
 
@@ -40,7 +40,7 @@ Determina se o valor especificado é infinito.
 
 | Item                                                   | Descrição                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado.<br/> |
 
 
 
@@ -48,31 +48,31 @@ Determina se o valor especificado é infinito.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor do mesmo tamanho que a entrada, com um valor definido como **true** se o parâmetro *x* for + INF ou-INF. Caso contrário, **false**.
+Retorna um valor do mesmo tamanho que a entrada, com um valor definido como **True** se o *parâmetro x* for +INF ou -INF. Caso contrário, **False.**
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho     |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho     |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|----------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any      |
-| *RET* | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**bool**](/windows/desktop/WinProg/windows-data-types)                         | como entrada |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any      |
+| *Ret* | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Bool**](/windows/desktop/WinProg/windows-data-types)                         | como entrada |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim                 |
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | Sim ( \_ apenas vs 1 \_ 1) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim                 |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sim (somente \_ versus \_ 1 1) |
 
 
 
@@ -84,7 +84,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 

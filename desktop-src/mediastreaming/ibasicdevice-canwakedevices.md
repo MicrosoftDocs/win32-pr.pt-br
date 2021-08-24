@@ -1,11 +1,11 @@
 ---
-title: Método IBasicDevice CanWakeDevices
-description: Recupera um valor que indica se o dispositivo pode ser ativado.
+title: Método CanWakeDevices de IBasicDevice
+description: Recupera um valor que indica se o dispositivo pode ser a wake.
 ms.assetid: AAD0597C-AD33-40EE-A5DA-27AC66375D38
 keywords:
-- API de streaming de mídia do método CanWakeDevices
-- API de streaming de mídia do método CanWakeDevices, interface IBasicDevice
-- API de streaming de mídia da interface IBasicDevice, método CanWakeDevices
+- API de Streaming de Mídia do método CanWakeDevices
+- API de Streaming de Mídia do método CanWakeDevices, interface IBasicDevice
+- API de Streaming de Mídia da interface IBasicDevice , método CanWakeDevices
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 08a893ac880a426f604f2dc1c73173585e507cc0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 3ebd0cfe9bf773d78297454d4a7643a74c3d6ea23aea01eeb54cd5c014ce73e0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006612"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847666"
 ---
-# <a name="ibasicdevicecanwakedevices-method"></a>Método IBasicDevice:: CanWakeDevices
+# <a name="ibasicdevicecanwakedevices-method"></a>Método IBasicDevice::CanWakeDevices
 
-Recupera um valor que indica se o dispositivo pode ser ativado.
+Recupera um valor que indica se o dispositivo pode ser a wake.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT CanWakeDevices(
 
 <dl> <dt>
 
-*valor* \[ do fora\]
+*value* \[ out\]
 </dt> <dd>
 
-Recebe um ponteiro para um valor booliano que é **verdadeiro** se o dispositivo puder ser ativado.
+Recebe um ponteiro para um valor booliana que é **True se** o dispositivo puder ser a wake.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

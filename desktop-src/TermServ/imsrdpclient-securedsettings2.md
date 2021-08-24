@@ -1,30 +1,30 @@
 ---
-title: Propriedade IMsRdpClient SecuredSettings2
-description: Recupera um ponteiro para a interface IMsRdpClientSecuredSettings. Essa interface pode ser usada para definir configurações protegidas para o controle de cliente.
+title: Propriedade SecuredSettings2 IMsRdpClient
+description: Recupera um ponteiro para a interface IMsRdpClientSecuredSettings. Essa interface pode ser usada para definir configurações seguras para o controle do cliente.
 ms.assetid: f570a3f6-70ae-45fd-ba20-75c9f4d2f5ca
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade SecuredSettings2
-- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- A propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- Propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
+- A propriedade SecuredSettings2 Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade SecuredSettings2
 topic_type:
 - apiref
 api_name:
@@ -54,16 +54,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39e26d9d7a7b2ac776166c251e5a2ab9923297f0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea0dff321eed8da198cafeb2fd58cf37661f100b08fbc52ac7c90be9c2575c7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771776"
 ---
-# <a name="imsrdpclientsecuredsettings2-property"></a>Propriedade IMsRdpClient:: SecuredSettings2
+# <a name="imsrdpclientsecuredsettings2-property"></a>Propriedade IMsRdpClient::SecuredSettings2
 
-Recupera um ponteiro para a interface [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) . Essa interface pode ser usada para definir configurações protegidas para o controle de cliente.
+Recupera um ponteiro para a interface [**IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md) Essa interface pode ser usada para definir configurações seguras para o controle do cliente.
 
 Esta propriedade é somente para leitura.
 
@@ -80,17 +80,17 @@ HRESULT get_SecuredSettings2(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro de interface [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) .
+Um ponteiro de interface [**IMsRdpClientSecuredSettings.**](imsrdpclientsecuredsettings-interface.md)
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor **HRESULT** indica que a chamada falhou.
+Se o método for bem-sucedido, **S \_ OK** será retornado. Qualquer outro **valor HRESULT** indica que a chamada falhou.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações, consulte a interface [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) e [fornecendo o RDP Client Security](providing-for-rdp-client-security.md).
+Para obter mais informações, consulte a interface [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) e Fornecendo para [segurança do cliente RDP.](providing-for-rdp-client-security.md)
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)

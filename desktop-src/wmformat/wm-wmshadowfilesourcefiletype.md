@@ -1,5 +1,5 @@
 ---
-title: WM/WMShadowFileSourceFileType (SDK do Windows Media Format 11)
+title: WM/WMShadowFileSourceFileType (Windows Media Format 11 SDK)
 description: O WM/WMShadowFileSourceFileType contém o tipo de arquivo do arquivo original do qual o arquivo ASF é derivado.
 ms.assetid: e6543f07-b1dd-4a3d-9472-ebedf42e9599
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b9d54fea57e6dbdf3d6a1fba618062ecf73fdae
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: faea00527377001d41a738485b135f37141f87c512dd649ad850dbe9f1495d93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119807126"
 ---
-# <a name="wmwmshadowfilesourcefiletype-windows-media-format-11-sdk"></a>WM/WMShadowFileSourceFileType (SDK do Windows Media Format 11)
+# <a name="wmwmshadowfilesourcefiletype-windows-media-format-11-sdk"></a>WM/WMShadowFileSourceFileType (Windows Media Format 11 SDK)
 
 O **WM/WMShadowFileSourceFileType** contém o tipo de arquivo do arquivo original do qual o arquivo ASF é derivado.
 
@@ -33,7 +33,7 @@ g \_ wszWMWMShadowFileSourceFileType
 
 ## <a name="remarks"></a>Comentários
 
-O conteúdo que existe em um formato de arquivo diferente de ASF e protegido com algum tipo de gerenciamento de direitos pode ser convertido em um arquivo de mídia do Windows protegido pelo Windows Media DRM por meio de um processo chamado de importação de licença. Esse arquivo ASF deve conter esse atributo, bem como o WM/WMShadowFileSourceDRMType para controlar a origem do conteúdo.
+o conteúdo que existe em um formato de arquivo diferente de ASF e protegido com algum tipo de gerenciamento de direitos pode ser convertido em um arquivo de mídia Windows protegido por Windows DRM de mídia por meio de um processo chamado importação de licença. Esse arquivo ASF deve conter esse atributo, bem como o WM/WMShadowFileSourceDRMType para controlar a origem do conteúdo.
 
 ## <a name="see-also"></a>Confira também
 

@@ -4,18 +4,18 @@ ms.assetid: 39260882-dc02-4f08-9d9b-f170c1e391df
 title: Adicionando usuários a um arquivo criptografado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e211b0b2052e9f170d1392773d65091a0625815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f697fbbc16c9f05516229120f8ed41c7e732b519ddfdeeab0ce192cd28a41cf8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119766286"
 ---
 # <a name="adding-users-to-an-encrypted-file"></a>Adicionando usuários a um arquivo criptografado
 
-O exemplo de código neste tópico adiciona um novo usuário a um arquivo criptografado existente usando a função [**AddUsersToEncryptedFile**](/windows/desktop/api/Winefs/nf-winefs-adduserstoencryptedfile) . Ele requer que o certificado de sistema de arquivos com criptografia (EFS) do usuário (do Active Directory) exista no repositório de certificados do usuário de pessoas confiáveis.
+O exemplo de código neste tópico adiciona um novo usuário a um arquivo criptografado existente usando a [**função AddUsersToEncryptedFile.**](/windows/desktop/api/Winefs/nf-winefs-adduserstoencryptedfile) Ele requer que o certificado Encrypting File System do usuário (EFS) (do Active Directory) exista no armazenamento de certificados de usuário pessoas confiáveis.
 
-Este exemplo adiciona um novo campo de recuperação de dados ao arquivo criptografado. Como resultado, o usuário recém-adicionado pode descriptografar o arquivo criptografado. O chamador já deve ter acesso ao arquivo criptografado, seja como o proprietário original, o agente de recuperação de dados ou como um usuário que foi adicionado anteriormente ao arquivo criptografado.
+Este exemplo adiciona um novo Campo de Recuperação de Dados ao arquivo criptografado. Como resultado, o usuário recém-adicionado pode descriptografar o arquivo criptografado. O chamador já deve ter acesso ao arquivo criptografado, como o proprietário original, o agente de recuperação de dados ou como um usuário que foi adicionado anteriormente ao arquivo criptografado.
 
 
 ```C++
@@ -235,13 +235,13 @@ VOID ErrorExit(LPWSTR wszErrorMessage, DWORD dwErrorCode)
 
 <dl> <dt>
 
-[**CertCloseStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certclosestore)
+[**Certclosestore**](/windows/desktop/api/wincrypt/nf-wincrypt-certclosestore)
 </dt> <dt>
 
 [**CertFindCertificateInStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certfindcertificateinstore)
 </dt> <dt>
 
-[**CertFreeCertificateContext**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext)
+[**Certfreecertificatecontext**](/windows/desktop/api/wincrypt/nf-wincrypt-certfreecertificatecontext)
 </dt> <dt>
 
 [**CertOpenSystemStore**](/windows/desktop/api/wincrypt/nf-wincrypt-certopensystemstorea)
@@ -250,7 +250,7 @@ VOID ErrorExit(LPWSTR wszErrorMessage, DWORD dwErrorCode)
 [Criptografia de Arquivo](file-encryption.md)
 </dt> <dt>
 
-[**LookupAccountName**](/windows/desktop/api/winbase/nf-winbase-lookupaccountnamea)
+[**Lookupaccountname**](/windows/desktop/api/winbase/nf-winbase-lookupaccountnamea)
 </dt> </dl>
 
  
