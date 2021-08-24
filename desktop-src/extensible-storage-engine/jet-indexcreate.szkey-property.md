@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_INDEXCREATE. szKey'
-title: Propriedade JET_INDEXCREATE. szKey
+description: 'Saiba mais sobre: JET_INDEXCREATE.szKey'
+title: JET_INDEXCREATE.szKey
 TOCTitle: 'szKey property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXCREATE.szKey
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexcreate.szkey(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86ade65ee28eef6314d31653772b0c22657476d1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 905bc6e72704121617a2fcc2b9b368bee9014f897ce157f473e3f9ced5a92c72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720566"
 ---
-# <a name="jet_indexcreateszkey-property"></a>Propriedade JET_INDEXCREATE. szKey
+# <a name="jet_indexcreateszkey-property"></a>JET_INDEXCREATE.szKey
 
-Obtém ou define a descrição da chave de índice. Essa é uma cadeia de caracteres dupla com terminação nula de tokens delimitados por nulo. Cada token tem o formato de \[ nome de coluna-especificador de direção \] \[ \] , em que a especificação de direção é "+" ou "-". por exemplo, um szKey de "+ ABC \\ 0-Def \\ 0 + GHI \\ 0" irá indexar as três colunas "ABC" (em ordem crescente), "def" (em ordem decrescente) e "GHI" (em ordem crescente).
+Obtém ou define a descrição da chave de índice. Essa é uma cadeia de caracteres terminada em nulo dupla de tokens delimitados por nulo. Cada token é do formato \[ nome-da-coluna do especificador de direção, em \] \[ \] que direction-specification é "+" ou "-". por exemplo, uma szKey de "+abc \\ 0-def 0+gee 0" será indexada sobre as três \\ \\ colunas "abc" (em ordem crescente), "def" (em ordem decrescente) e "gee" (em ordem crescente).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public string szKey { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INDEXCREATE](./jet-indexcreate-class.md)
+[JET_INDEXCREATE classe](./jet-indexcreate-class.md)
 
-[Membros do JET_INDEXCREATE](./jet-indexcreate-members.md)
+[JET_INDEXCREATE membros](./jet-indexcreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

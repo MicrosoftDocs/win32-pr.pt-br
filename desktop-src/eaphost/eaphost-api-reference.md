@@ -4,30 +4,30 @@ description: Saiba mais sobre as APIs do EAPHost e seus componentes. Consulte in
 ms.assetid: ac2f074f-b525-42a2-8637-c96a08d77714
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6c4d80c402f963a05bbcfb79ca451541603489e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 0c522698999bcb58b4e33b8e1cb0d1bb74ae64fc3b709ce672b35e7db81e85ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739096"
 ---
 # <a name="eaphost-api-reference"></a>Referência da API EAPHost
 
 As APIs do EAPHost são divididas em três componentes: as APIs do suplicante, que podem ser chamadas diretamente de um aplicativo habilitado para EAP; as APIs do método EAP peer, que gerenciam solicitações suplicantes para um tipo de autenticação EAP específico e geram elementos interativos no cliente; e as APIS do autenticador EAP, que executam a autenticação do lado do servidor de um suplicante.
 
-Os dois últimos componentes de API – o método EAP peer e as APIs do método de autenticador EAP – exigem implementação personalizada e compatível em DLLs que os expõem ao serviço EAPHost. Eles não podem ser chamados diretamente do código do aplicativo; em vez disso, eles são chamados pelo EAPHost (no lado do cliente para métodos de ponto EAP e no lado do servidor para métodos de autenticador EAP) se a implementação corresponder às assinaturas de API especificadas na documentação correspondente. Informações específicas de implementação de API são fornecidas em cada página de referência de função.
+os dois últimos componentes de API – o método eap Peer e as APIs do método eap Authenticator – exigem implementação personalizada e compatível em DLLs que os expõem ao serviço EAPHost. Eles não podem ser chamados diretamente do código do aplicativo; em vez disso, eles são chamados pelo EAPHost (no lado do cliente para métodos de ponto EAP e no lado do servidor para métodos de autenticador EAP) se a implementação corresponder às assinaturas de API especificadas na documentação correspondente. Informações específicas de implementação de API são fornecidas em cada página de referência de função.
 
-## <a name="eaphost-registry-settings"></a>Configurações do registro EAPHost
+## <a name="eaphost-registry-settings"></a>Configurações de registro do EAPHost
 
 
 
 | Tópico                                                      | Descrição                                      |
 |------------------------------------------------------------|--------------------------------------------------|
-| [Configurações do registro EAPHost](eaphost-registry-settings.md) | Descreve as chaves do registro consumidas pelo EAPHost. |
+| [Configurações de registro do EAPHost](eaphost-registry-settings.md) | Descreve as chaves do registro consumidas pelo EAPHost. |
 
 
 
- 
+ 
 
 ## <a name="eaphost-xml-schema"></a>Esquema XML do EAPHost
 
@@ -39,7 +39,7 @@ Os dois últimos componentes de API – o método EAP peer e as APIs do método 
 
 
 
- 
+ 
 
 ## <a name="common-eaphost-api-reference"></a>Referência de API do EAPHost comum
 
@@ -53,7 +53,7 @@ Os dois últimos componentes de API – o método EAP peer e as APIs do método 
 
 
 
- 
+ 
 
 ## <a name="eaphost-api-reference"></a>Referência da API EAPHost
 
@@ -63,11 +63,11 @@ Os dois últimos componentes de API – o método EAP peer e as APIs do método 
 |-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Referência de API do suplicante EAPHost](eap-host-supplicant-api-reference.md)   | Descreve os elementos de API disponíveis para habilitar chamadas de suplicante para EAPHost.                                                                      |
 | [Referência da API do método par do EAPHost](eap-host-peer-method-api-reference.md) | Descreve os elementos de API que devem ser implementados para criar uma DLL de método EAP peer que pode ser carregada e chamada por um cliente EAPHost.          |
-| [APIs do método de autenticador EAPHost](eaphost-authenticator-method-apis.md)  | Descreve os elementos de API que devem ser implementados para criar uma DLL de método de autenticador EAP que pode ser carregada e chamada por um servidor EAPHost. |
+| [Authenticator de APIs do método EAPHost](eaphost-authenticator-method-apis.md)  | Descreve os elementos de API que devem ser implementados para criar uma DLL de método de autenticador EAP que pode ser carregada e chamada por um servidor EAPHost. |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -79,9 +79,9 @@ Os dois últimos componentes de API – o método EAP peer e as APIs do método 
 [Usando o EAPHost](using-eap-host.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

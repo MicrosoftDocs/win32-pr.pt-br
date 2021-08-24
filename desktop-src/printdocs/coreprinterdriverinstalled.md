@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 2e4f7033e5ca15a892a208621049c2f500873d73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 014b9932046ab6d66b64794bbe042f43a390f9f6a4b6183d36a6338eca434526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719766"
 ---
 # <a name="coreprinterdriverinstalled-function"></a>Função CorePrinterDriverInstalled
 
@@ -56,7 +56,7 @@ Ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifi
 *pszEnvironment* \[ no\]
 </dt> <dd>
 
-Ponteiro para uma constante, Cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
+ponteiro para uma constante, cadeia de caracteres terminada em nulo que especifica a arquitetura do processador (por exemplo, Windows NT x86). Isso pode ser **nulo**.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Um ponteiro para **verdadeiro** se o driver ou uma versão mais recente estiver 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a operação for concluída com sucesso, o valor de retorno será S \_ OK, caso contrário, o **HRESULT** conterá um código de erro.
 
@@ -107,9 +107,9 @@ Para obter mais informações sobre códigos de erro COM, consulte [tratamento d
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
 | DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 | Nomes Unicode e ANSI<br/>   | **CorePrinterDriverInstalledW** (Unicode) e **CorePrinterDriverInstalledA** (ANSI)<br/>           |

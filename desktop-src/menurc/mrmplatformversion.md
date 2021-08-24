@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8127d3e6e99d974315327cf89ae9e82add7bc628
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c41eec2f3839de5a8de6bcfd2f3a12910d146a0c2327286024ba36a52526d0a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662976"
 ---
 # <a name="mrmplatformversion-enumeration"></a>Enumeração MrmPlatformVersion
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Define constantes que especificam uma versão de plataforma. Para obter mais informações e orientações baseadas em cenários de como usar essas APIs, consulte APIs de [Pri (indexação de recursos de pacote) e sistemas de compilação personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
 
@@ -54,14 +54,14 @@ Especifica que a versão da plataforma é o padrão.
 <span id="MrmPlatformVersion_Windows10_0_0_0"></span><span id="mrmplatformversion_windows10_0_0_0"></span><span id="MRMPLATFORMVERSION_WINDOWS10_0_0_0"></span>**MrmPlatformVersion \_ Windows10 \_ 0 \_ 0 \_ 0**
 </dt> <dd>
 
-Especifica uma versão de plataforma do Windows 10.0.0.0.
+especifica uma versão de plataforma de Windows 10.0.0.0.
 
 </dd> <dt>
 
 <span id="MrmPlatformVersion_Windows10_0_0_5"></span><span id="mrmplatformversion_windows10_0_0_5"></span><span id="MRMPLATFORMVERSION_WINDOWS10_0_0_5"></span>**MrmPlatformVersion \_ Windows10 \_ 0 \_ 0 \_ 5**
 </dt> <dd>
 
-Especifica uma versão de plataforma do Windows 10.0.0.5.
+especifica uma versão de plataforma de Windows 10.0.0.5.
 
 </dd> </dl>
 
@@ -71,9 +71,9 @@ Especifica uma versão de plataforma do Windows 10.0.0.5.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
 
 
 

@@ -6,12 +6,12 @@ keywords:
 - IPaper
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f84153c9fcec021d9084807d73d46198e3a56482
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 91a45322e35f07a6f136e76ecaad6ae237891a741dfb44a6b5db0702c87bda33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119662716"
 ---
 # <a name="ipaper-methods"></a>Métodos IPaper
 
@@ -37,7 +37,7 @@ A tabela a seguir lista os métodos **IPaper** de IPaper. H no diretório irmão
 
 
 
- 
+ 
 
 Os métodos de interesse deste exemplo de código em arquivos compostos são [**carregar**](ipaper--load.md), [**salvar**](ipaper--save.md)e [**redesenhar**](ipaper--redraw.md).
 
@@ -45,9 +45,9 @@ Os métodos de interesse deste exemplo de código em arquivos compostos são [**
 
 [**InkStart**](inkstart-method.md) informa ao copaper a posição inicial da sequência de desenho nas coordenadas da janela do cliente. Ele também passa a cor e a largura da tinta selecionada no momento. O cliente mantém essas seleções; O copaper apenas os registra quando a chamada **InkStart** é feita. [**InkDraw**](inkdraw-method.md) é chamado repetidamente para informar o sucesso das coordenadas da janela que representam o movimento de desenho do mouse ou da caneta. [**InkStop**](cguipaper-methods.md) instrui o copapel para marcar o final de uma sequência de desenho.
 
- 
+ 
 
- 
+ 
 
 
 

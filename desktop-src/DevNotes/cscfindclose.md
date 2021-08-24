@@ -1,5 +1,5 @@
 ---
-description: Fecha um identificador de pesquisa.
+description: Fecha um alça de pesquisa.
 ms.assetid: 2e6a547f-26a7-401a-b1e4-3f085ce82729
 title: Função CSCFindClose
 ms.topic: reference
@@ -22,9 +22,9 @@ ms.locfileid: "119758716"
 ---
 # <a name="cscfindclose-function"></a>Função CSCFindClose
 
-\[Essa função não tem suporte e não deve ser usada.\]
+\[Não há suporte para essa função e não deve ser usada.\]
 
-Fecha um identificador de pesquisa.
+Fecha um alça de pesquisa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,20 +41,20 @@ BOOL WINAPI CSCFindClose(
 
 <dl> <dt>
 
-*hFind* \[ no\]
+*hFind* \[ Em\]
 </dt> <dd>
 
-Um identificador de pesquisa retornado pela função [**CSCFindFirstFileW**](cscfindfirstfilew.md) .
+Um alça de pesquisa retornado pela [**função CSCFindFirstFileW.**](cscfindfirstfilew.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Essa função retornará **true** se tiver sucesso; caso contrário, retornará **false**.
+Essa função **retornará TRUE** se for bem-sucedida; caso contrário, retornará **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,7 +1,7 @@
 ---
 description: Representa um dispositivo de teclado.
 ms.assetid: 2a59fe90-12e2-471c-b49e-dfb4f4a31e0c
-title: Classe Msvm_Keyboard
+title: Msvm_Keyboard classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -62,18 +62,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 37c4faceb9072c1851868eb23c031e715cb6e1c4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 527b69d83c512f622c4c34b9bb1ea510e269e0d062cae3972170b5ad98deb8d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522196"
 ---
-# <a name="msvm_keyboard-class"></a>\_Classe de teclado Msvm
+# <a name="msvm_keyboard-class"></a>Classe de teclado Msvm \_
 
-Representa um dispositivo de teclado. Os teclados são dispositivos lógicos que estão sempre presentes em uma máquina virtual e, portanto, não são alocados por meio de um pool de recursos. Uma instância está sempre presente em um sistema de computador virtual.
+Representa um dispositivo de teclado. Teclados são dispositivos lógicos que estão sempre presentes em uma máquina virtual e, portanto, não são alocados por meio de um pool de recursos. Uma instância está sempre presente em um sistema de computador virtual.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -129,34 +129,34 @@ class Msvm_Keyboard : CIM_UserDevice
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ teclado Msvm** tem estes tipos de membros:
+A **classe Teclado \_ Msvm** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ teclado Msvm** tem esses métodos.
+A **classe Teclado \_ Msvm** tem esses métodos.
 
 
 
 | Método                                                         | Descrição                                                   |
 |:---------------------------------------------------------------|:--------------------------------------------------------------|
 | **EnableDevice**                                               | Não há suporte para o método.<br/>                      |
-| [**Iskeypressd**](iskeypressed-msvm-keyboard.md)             | Recupera o estado de chave de uma chave.<br/>                  |
+| [**IsKeyPressed**](iskeypressed-msvm-keyboard.md)             | Recupera o estado da chave de uma chave.<br/>                  |
 | **OnlineDevice**                                               | Não há suporte para o método.<br/>                      |
-| [**PressKey**](presskey-msvm-keyboard.md)                     | Simula um pressionamento de tecla.<br/>                             |
+| [**PressKey**](presskey-msvm-keyboard.md)                     | Simula uma tecla pressionada.<br/>                             |
 | **QuiesceDevice**                                              | Não há suporte para o método.<br/>                      |
 | [**ReleaseKey**](releasekey-msvm-keyboard.md)                 | Simula uma versão de chave.<br/>                           |
 | [**RequestStateChange**](msvm-keyboard-requeststatechange.md) | Solicita que o estado do elemento seja alterado.<br/> |
 | [**Redefinir**](msvm-keyboard-reset.md)                           | Redefine o teclado virtual.<br/>                       |
-| **Restaurarproperties**                                          | Não há suporte para o método.<br/>                      |
-| **Salvarproperties**                                             | Não há suporte para o método.<br/>                      |
+| **RestoreProperties**                                          | Não há suporte para o método.<br/>                      |
+| **SaveProperties**                                             | Não há suporte para o método.<br/>                      |
 | **SetPowerState**                                              | Não há suporte para o método.<br/>                      |
-| [**TypeCtrlAltDel**](typectrlaltdel-msvm-keyboard.md)         | Simula uma sequência de teclas Ctrl + Alt + Del.<br/>             |
-| [**TypeKey**](typekey-msvm-keyboard.md)                       | Simula uma sequência de teclas de liberação de prensa.<br/>            |
+| [**TypeCtrlAltDel**](typectrlaltdel-msvm-keyboard.md)         | Simula uma sequência de chaves Ctrl+Alt+Del.<br/>             |
+| [**Typekey**](typekey-msvm-keyboard.md)                       | Simula uma sequência de teclas de press-release.<br/>            |
 | [**TypeScancodes**](msvm-keyboard-typescancodes.md)           | Simula uma sequência de chaves usando códigos de verificação.<br/>         |
-| [**TypeText**](typetext-msvm-keyboard.md)                     | Simula uma série de caracteres digitados.<br/>            |
+| [**Typetext**](typetext-msvm-keyboard.md)                     | Simula uma série de caracteres digitados.<br/>            |
 
 
 
@@ -164,46 +164,46 @@ A classe de **\_ teclado Msvm** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ teclado Msvm** tem essas propriedades.
+A **classe Teclado \_ Msvm** tem essas propriedades.
 
 <dl> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Qualquer disponibilidade e status adicionais do dispositivo, além do especificado na propriedade de **disponibilidade** . A propriedade de **disponibilidade** denota o status primário e a disponibilidade do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Qualquer disponibilidade e status adicionais do dispositivo, além do especificado na **propriedade** Disponibilidade. A **propriedade** Disponibilidade indica o status primário e a disponibilidade do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A disponibilidade e o status principais do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+A disponibilidade e o status primários do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método **RequestStateChange** . Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Indica os valores possíveis para o *parâmetro RequestedState* do **método RequestStateChange.** Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
@@ -216,23 +216,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -242,19 +242,19 @@ Indica a capacidade da instrumentação de se comunicar com o elemento gerenciad
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**Não disponível** (1)
 </dt> <dt>
 
-<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação Ok** (2)
+<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação OK** (2)
 </dt> <dt>
 
 <span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Comunicação perdida** (3)
 </dt> <dt>
 
-<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Nenhum contato** (4)
+<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Sem contato** (4)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -268,10 +268,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
@@ -284,20 +284,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
 
 <dl> <dt>
 
@@ -770,10 +770,10 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Erro** (3)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -781,7 +781,7 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -810,33 +810,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de **OperationalStatus** . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como "OK".
+Cadeias de caracteres que descrevem os **vários valores de matriz OperationalStatus.** Essa propriedade é herdada [**de \_ ManagedSystemElement do CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e sempre é definida como "OK".
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado atual do dispositivo lógico. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O estado atual do dispositivo lógico. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -849,14 +849,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como "Msvm \_ ComputerSystem".
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como "Msvm \_ ComputerSystem".
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -865,69 +865,69 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O nome do sistema de escopo. Esse valor corresponde ao valor da propriedade **Name** da classe [**Msvm \_ ComputerSystem**](msvm-computersystem.md) para a máquina virtual de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome do sistema de scoping. Esse valor corresponde ao valor da propriedade **Name** da [**classe Msvm \_ ComputerSystem**](msvm-computersystem.md) para a máquina virtual de scoping. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que o estado habilitado do elemento foi alterado pela última vez. Se o estado do elemento não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo de 0. Se uma alteração de estado foi solicitada, mas rejeitada ou ainda não processada, a propriedade não deve ser atualizada. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+A data e a hora em que o estado habilitado do elemento foi alterado pela última vez. Se o estado do elemento não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo 0. Se uma alteração de estado tiver sido solicitada, mas rejeitada ou ainda não processada, a propriedade não deverá ser atualizada. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número total de horas em que este dispositivo foi ligado. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O número total de horas que esse dispositivo foi ligado. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **UnicodeSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o teclado virtual dá suporte a caracteres Unicode. Isso pode ser um dos valores a seguir.
+Indica se o teclado virtual dá suporte a caracteres Unicode. Esse pode ser um dos valores a seguir.
 
 
 
 | Valor                                                                            | Significado                                                              |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | <dl> <dt>True</dt> </dl>  | O teclado virtual dá suporte a caracteres Unicode.<br/>         |
-| <dl> <dt>Falso</dt> </dl> | O teclado virtual não oferece suporte a caracteres Unicode.<br/> |
+| <dl> <dt>Falso</dt> </dl> | O teclado virtual não dá suporte a caracteres Unicode.<br/> |
 
 
 
@@ -937,7 +937,7 @@ Indica se o teclado virtual dá suporte a caracteres Unicode. Isso pode ser um d
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe de **\_ teclado Msvm** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe \_ Teclado Msvm** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -945,10 +945,10 @@ O acesso à classe de **\_ teclado Msvm** pode ser restringido pela filtragem do
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -957,10 +957,10 @@ O acesso à classe de **\_ teclado Msvm** pode ser restringido pela filtragem do
 
 <dl> <dt>
 
-[**Userdevice do CIM \_**](cim-userdevice.md)
+[**CIM \_ UserDevice**](cim-userdevice.md)
 </dt> <dt>
 
-[**Userdevice do CIM \_**](/windows/desktop/CIMWin32Prov/cim-userdevice)
+[**CIM \_ UserDevice**](/windows/desktop/CIMWin32Prov/cim-userdevice)
 </dt> <dt>
 
 [Classes de entrada](input-classes.md)

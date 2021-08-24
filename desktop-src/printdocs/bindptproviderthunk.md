@@ -1,5 +1,5 @@
 ---
-description: Abre uma instância de um provedor de tíquete de impressão.
+description: Abre uma instância de um provedor de tíquetes de impressão.
 ms.assetid: 815cc360-8dcd-4c58-a64d-5d77436a8623
 title: Função BindPTProviderThunk
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: bf63fc6faf9d47993fafb97c8d3a1c18d6d6c985
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 460728eac742fb96ca122981a5874408e12e6c8eddd36fc901e70874e5e040c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119720226"
 ---
 # <a name="bindptproviderthunk-function"></a>Função BindPTProviderThunk
 
-\[Essa função não tem suporte e pode ser desabilitada ou excluída em versões futuras do Windows. O [**PTOpenProviderEx**](/windows/desktop/api/prntvpt/nf-prntvpt-ptopenproviderex) fornece funcionalidade equivalente e deve ser usado em vez disso.\]
+\[Essa função não tem suporte e pode ser desabilitada ou excluída em versões futuras do Windows. [**PTOpenProviderEx**](/windows/desktop/api/prntvpt/nf-prntvpt-ptopenproviderex) fornece funcionalidade equivalente e deve ser usado em vez disso.\]
 
-Abre uma instância de um provedor de tíquete de impressão.
+Abre uma instância de um provedor de tíquetes de impressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,44 +45,44 @@ HRESULT BindPTProviderThunk(
 
 <dl> <dt>
 
-*pszPrinterName* \[ no\]
+*pszPrinterName* \[ Em\]
 </dt> <dd>
 
 O nome completo de uma fila de impressão.
 
 </dd> <dt>
 
-*MaxVersion* \[ no\]
+*maxVersion* \[ Em\]
 </dt> <dd>
 
-A versão mais recente do [esquema de impressão](./printschema.md) que o chamador dá suporte.
+A versão mais recente do [Esquema de Impressão compatível](./printschema.md) com o chamador.
 
 </dd> <dt>
 
-*prefVersion* \[ no\]
+*prefVersion* \[ Em\]
 </dt> <dd>
 
-A versão do [esquema de impressão](./printschema.md) solicitado pelo chamador.
+A versão do [Esquema de Impressão](./printschema.md) solicitada pelo chamador.
 
 </dd> <dt>
 
-*phProvider* \[ fora\]
+*phProvider* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um identificador para o provedor de tíquete de impressão.
+Um ponteiro para um ponteiro para o provedor de tíquete de impressão.
 
 </dd> <dt>
 
-*usedVersion* \[ fora\]
+*usedVersion* \[ out\]
 </dt> <dd>
 
-A versão do [esquema de impressão](./printschema.md) que o provedor de tíquete de impressão usará.
+A versão do Esquema [de Impressão que](./printschema.md) o provedor de tíquete de impressão usará.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem sucedido, ele retornará **S \_ OK**; caso contrário, ele retornará um código de erro **HRESULT** . Para obter mais informações sobre códigos de erro COM, consulte [tratamento de erros](../com/error-handling-in-com.md).
+Se o método for bem-sucedido, ele **retornará S \_ OK;** caso contrário, retornará um **código de erro HRESULT.** Para obter mais informações sobre códigos de erro COM, consulte [Tratamento de erros](../com/error-handling-in-com.md).
 
 ## <a name="remarks"></a>Comentários
 
@@ -94,8 +94,8 @@ Antes de chamar essa função, o thread de chamada deve inicializar COM chamando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -104,7 +104,7 @@ Antes de chamar essa função, o thread de chamada deve inicializar COM chamando
 
 <dl> <dt>
 
-[Imprimir esquema](./printschema.md)
+[Esquema de impressão](./printschema.md)
 </dt> <dt>
 
 [**PTOpenProviderEx**](/windows/desktop/api/prntvpt/nf-prntvpt-ptopenproviderex)

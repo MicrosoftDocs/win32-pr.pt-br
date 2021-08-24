@@ -4,20 +4,20 @@ description: Este tópico destina-se a fornecer orientação genérica por meio 
 ms.assetid: f5dbd198-7d22-4e7e-830e-6753e9f4d6c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d91ff748d8139aad17fca3710b17e73b5e1eaa14
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 474a9f4ade01fe98a8db30568aa6a7c4978156d2c791747353071f020af27605
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802356"
 ---
 # <a name="designing-ndf-helper-class-extensions"></a>Criando extensões de classe auxiliar NDF
 
-Este tópico destina-se a fornecer orientação genérica por meio do processo de desenvolvimento de extensão de classe auxiliar. As diretrizes neste tópico se aplicam a todas as extensões de classe auxiliar. Para obter diretrizes mais específicas, consulte [classe auxiliar extensível da plataforma de filtragem do Windows](windows-filtering-platform-extensible-helper-class.md) e [classes auxiliares extensível de diagnóstico sem fio 802,11](802-11-wireless-diagnostics-extensible-helper-classes.md).
+Este tópico destina-se a fornecer orientação genérica por meio do processo de desenvolvimento de extensão de classe auxiliar. As diretrizes neste tópico se aplicam a todas as extensões de classe auxiliar. para obter diretrizes mais específicas, consulte [Windows classe de auxiliar extensível da plataforma de filtragem](windows-filtering-platform-extensible-helper-class.md) e [classes auxiliares extensível de diagnóstico sem fio 802,11](802-11-wireless-diagnostics-extensible-helper-classes.md).
 
 ## <a name="extending-ndf-functionality"></a>Estendendo a funcionalidade NDF
 
-O Windows Vista e versões posteriores são fornecidos com uma variedade de classes auxiliares já implementadas que podem diagnosticar e reparar uma ampla gama de problemas. Às vezes, no entanto, desenvolvedores de terceiros talvez queiram estender essas classes auxiliares para diagnosticar e resolver problemas específicos de seus produtos e implementações particulares.
+Windows O Vista e versões posteriores são fornecidos com uma variedade de classes auxiliares já implementadas que podem diagnosticar e reparar uma ampla gama de problemas. Às vezes, no entanto, desenvolvedores de terceiros talvez queiram estender essas classes auxiliares para diagnosticar e resolver problemas específicos de seus produtos e implementações particulares.
 
 As seguintes classes auxiliares do NDF da Microsoft são extensíveis.
 
@@ -85,7 +85,7 @@ Quando o diagnóstico ocorre usando NDF, a extensão da classe auxiliar é solic
 
 <dl> <dt>
 
-[Classe auxiliar extensível da plataforma de filtragem do Windows](windows-filtering-platform-extensible-helper-class.md)
+[Windows Classe auxiliar extensível da plataforma de filtragem](windows-filtering-platform-extensible-helper-class.md)
 </dt> <dt>
 
 [802,11 classes auxiliares extensíveis de diagnóstico sem fio](802-11-wireless-diagnostics-extensible-helper-classes.md)

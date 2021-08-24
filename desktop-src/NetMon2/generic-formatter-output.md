@@ -1,110 +1,110 @@
 ---
-description: As listas e tabelas nesta seção mostram a saída do formatador genérico. Lembre-se de que o formatador genérico usa os membros DataType e dataqualifier da estrutura PROPERTYINFO para determinar como formatar os dados exibidos.
+description: As listas e tabelas nesta seção mostram a saída do formatante genérico. Esteja ciente de que o formatante genérico usa os membros DataType e DataQualifier da estrutura PROPERTYINFO para determinar como formatar os dados exibidos.
 ms.assetid: cf3dc6cd-7b24-464a-9d2b-5e35c4e8825e
-title: Saída de formatador genérico
+title: Saída de formatação genérica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecf4b334dd717c7ff332c3b730afb57d4be611ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d76a67fadbed3bde5eb3e5534c8f104e918ac870df27c767b98575058a0a188
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119743966"
 ---
-# <a name="generic-formatter-output"></a>Saída de formatador genérico
+# <a name="generic-formatter-output"></a>Saída de formatação genérica
 
-As listas e tabelas nesta seção mostram a saída do [*formatador genérico*](g.md). Lembre-se de que o formatador genérico usa os membros **DataType** e **dataqualifier** da estrutura [**PROPERTYINFO**](propertyinfo.md) para determinar como formatar os dados exibidos.
+As listas e tabelas nesta seção mostram a saída do [*formatante genérico*](g.md). Esteja ciente de que o formatante genérico usa os membros **DataType** e **DataQualifier** da estrutura [**PROPERTYINFO**](propertyinfo.md) para determinar como formatar os dados exibidos.
 
 Para obter mais informações e um exemplo da saída para um tipo de dados de propriedade específico, consulte:
 
--   [tipo de PROP \_ \_ void](/windows)
--   [\_Resumo do tipo prop \_](/windows)
--   [\_byte do tipo prop \_](/windows)
--   [tipo de PROP \_ \_ Word](/windows)
--   [tipo de PROP \_ \_ DWORD](/windows)
--   \_Tipo \_ de prop LARGEINT (formatador genérico não suporta)
--   \_ \_ Endereço de tipo de prop (formatador genérico não suporta)
--   [\_hora do tipo de prop \_](/windows)
--   [Cadeia de caracteres do \_ tipo prop \_](/windows)
--   [\_ \_ endereço IP do tipo prop \_](/windows)
--   PROP \_ Type \_ BYTESWAPPED \_ Word (obsoleto. Para obter mais informações, consulte [prop \_ Type \_ Word](/windows))
--   PROP \_ Type \_ BYTESWAPPED \_ DWORD (obsoleto. Para obter mais informações, consulte [prop \_ Type \_ DWORD](/windows))
--   \_ \_ \_ Cadeia de caracteres tipada do tipo prop (obsoleto)
--   [\_ \_ dados brutos do tipo prop \_](/windows)
--   [\_Comentário do tipo prop \_](/windows)
--   \_Tipo \_ de prop SRCFRIENDLYNAME (formatador genérico não suporta)
--   \_Tipo \_ de prop DSTFRIENDLYNAME (formatador genérico não suporta)
--   \_ \_ Endereço TOKENRING do tipo prop \_ (formatador genérico não suporta)
--   \_Tipo \_ de prop \_ endereço FDDI (formatador genérico não suporta)
--   \_ \_ Endereço Ethernet do tipo prop \_ (formatador genérico não suporta)
--   \_ \_ \_ Identificador de objeto do tipo prop (formatador genérico não suporta)
--   \_ \_ \_ Endereço IP de Vines do tipo prop \_ (formatador genérico não suporta)
--   Tipo de PROP \_ \_ var \_ Len \_ pequeno \_ int (formatador genérico não suporta)
+-   [TIPO \_ DE PROP \_ VOID](/windows)
+-   [RESUMO DO \_ TIPO \_ PROP](/windows)
+-   [BYTE \_ DE TIPO \_ PROP](/windows)
+-   [PALAVRA DE \_ TIPO \_ PROP](/windows)
+-   [PROP \_ TYPE \_ DWORD](/windows)
+-   PROP \_ TYPE \_ LARGEINT (não há suporte para formatação genérica)
+-   ADDR \_ DE \_ TIPO PROP (o formatador genérico não dá suporte)
+-   [HORA DO \_ TIPO \_ PROP](/windows)
+-   [CADEIA DE \_ CARACTERES DE TIPO \_ PROP](/windows)
+-   [ENDEREÇO \_ IP DO TIPO \_ \_ PROP](/windows)
+-   PROP \_ TYPE \_ BYTESWAPPED \_ WORD (obsoleto. Para obter mais informações, consulte [PROP \_ TYPE \_ WORD](/windows))
+-   TIPO DE PROP \_ \_ BYTESWAPPED \_ DWORD (obsoleto. Para obter mais informações, consulte [PROP \_ TYPE \_ DWORD](/windows))
+-   PROP \_ TYPE \_ TYPED STRING \_ (obsoleto)
+-   [DADOS \_ BRUTOS \_ DO TIPO \_ PROP](/windows)
+-   [COMENTÁRIO \_ DE TIPO \_ PROP](/windows)
+-   PROP \_ TYPE \_ SRCFRIENDLYNAME (não há suporte para formatação genérica)
+-   PROP \_ TYPE \_ DSTFRIENDLYNAME (não há suporte para formatação genérica)
+-   PROP \_ TYPE \_ TOKENRING ADDRESS \_ (formattter genérico não dá suporte)
+-   PROP \_ TYPE \_ FDDI \_ ADDRESS (formattter genérico não dá suporte)
+-   PROP \_ TYPE ETHERNET ADDRESS \_ \_ (formattter genérico não dá suporte)
+-   IDENTIFICADOR DE OBJETO DE TIPO PROP (não há suporte \_ \_ para \_ formatador genérico)
+-   PROP \_ TYPE \_ VINES IP ADDRESS \_ \_ (formattter genérico não dá suporte)
+-   PROP \_ TYPE VAR LEN SMALL \_ \_ \_ \_ INT (formattter genérico não dá suporte)
 
-## <a name="prop_type_void-and-prop_type_comment"></a>\_Tipo \_ de prop comentário de \_ tipo nulo e prop \_
+## <a name="prop_type_void-and-prop_type_comment"></a>PROP \_ TYPE VOID e PROP TYPE \_ \_ \_ COMMENT
 
-A tabela a seguir lista a saída de formato genérico para propriedades do tipo de **prop \_ Type \_ void** e **prop \_ Type \_** de tipo de dados.
+A tabela a seguir lista a saída de formato genérico para propriedades de tipo de dados **PROP \_ TYPE \_ VOID** e **PROP TYPE \_ \_ COMMENT.**
 
-Na coluna saída do formatador, o valor dos dados na captura é XYZ.
+Na coluna de saída do formatante, o valor dos dados na captura é XYZ.
 
 
 
-| Qualificador de propriedade            | Saída do formatador                                      |
+| Qualificador de propriedade            | Saída do formatante                                      |
 |-------------------------------|-------------------------------------------------------|
-| PROP \_ igual \_ None              | XYZ                                                   |
-| \_intervalo de igual prop \_             | XYZ                                                   |
-| campo de igual de PROP \_ \_          | Obsoleto                                              |
-| PROP \_ igual \_ rotulado \_ conjunto      | XYZ                                                   |
-| PROP \_ igual \_ rotulado como campo de bits \_ | Obsoleto. Para obter mais informações, consulte PROP \_ igual \_ flags |
-| \_igual \_ const de prop             | XYZ                                                   |
-| \_sinalizadores de igual de prop \_             | XYZ                                                   |
-| \_matriz igual \_ prop             | XYZ                                                   |
+| PROP \_ QUAL \_ NONE              | XYZ                                                   |
+| INTERVALO DE \_ QUAL \_ PROP             | XYZ                                                   |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleto                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | XYZ                                                   |
+| PROP \_ QUAL \_ ROTULADO \_ BITFIELD | Obsoleto. Para obter mais informações, consulte PROP \_ QUAL \_ FLAGS |
+| PROP \_ QUAL \_ CONST             | XYZ                                                   |
+| SINALIZADORES \_ PROP QUAL \_             | XYZ                                                   |
+| PROP \_ QUAL \_ ARRAY             | XYZ                                                   |
 
 
 
  
 
-## <a name="prop_type_summary"></a>\_Resumo do tipo prop \_
+## <a name="prop_type_summary"></a>RESUMO DO \_ TIPO \_ PROP
 
-A tabela a seguir lista a saída de formato genérico para propriedades de tipo de dados de **\_ \_ Resumo do tipo prop** .
+A tabela a seguir lista a saída de formato genérico para **propriedades de tipo de dados PROP TYPE \_ \_ SUMMARY.**
 
-Na coluna saída de exemplo, o valor dos dados na captura é XYZ.
+Na coluna de saída de exemplo, o valor dos dados na captura é XYZ.
 
 
 
 | Qualificador de propriedade            | Saída de exemplo                                        |
 |-------------------------------|-------------------------------------------------------|
-| PROP \_ igual \_ None              | XYZ                                                   |
-| \_intervalo de igual prop \_             | XYZ                                                   |
-| campo de igual de PROP \_ \_          | Obsoleto                                              |
-| PROP \_ igual \_ rotulado \_ conjunto      | XYZ                                                   |
-| PROP \_ igual \_ rotulado como campo de bits \_ | Obsoleto. Para obter mais informações, consulte PROP \_ igual \_ flags |
-| \_igual \_ const de prop             | XYZ                                                   |
-| \_sinalizadores de igual de prop \_             | XYZ                                                   |
-| \_matriz igual \_ prop             | XYZ                                                   |
+| PROP \_ QUAL \_ NONE              | XYZ                                                   |
+| INTERVALO DE \_ QUAL \_ PROP             | XYZ                                                   |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleto                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | XYZ                                                   |
+| PROP \_ QUAL \_ ROTULADO \_ BITFIELD | Obsoleto. Para obter mais informações, consulte PROP \_ QUAL \_ FLAGS |
+| PROP \_ QUAL \_ CONST             | XYZ                                                   |
+| SINALIZADORES \_ PROP QUAL \_             | XYZ                                                   |
+| PROP \_ QUAL \_ ARRAY             | XYZ                                                   |
 
 
 
  
 
-## <a name="prop_type_byte"></a>\_byte do tipo prop \_
+## <a name="prop_type_byte"></a>BYTE \_ DE TIPO \_ PROP
 
-A tabela a seguir lista a saída de formato genérico para propriedades de tipo de dados de **\_ \_ tipo de prop** .
+A tabela a seguir lista a saída de formato genérico para propriedades de tipo de dados **\_ PROP TYPE \_ BYTE.**
 
-Na coluna saída de exemplo, o valor dos dados na captura é 10.
+Na coluna de saída de exemplo, o valor dos dados na captura é 10.
 
 
 
 | Qualificador de propriedade            | Saída de exemplo                                                                                                |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------|
-| PROP \_ igual \_ None              | 10 (0xA) "                                                                                                     |
-| \_intervalo de igual prop \_             | 10 (0xA) intervalo:(1 (0x1)-20 (0x14))                                                                          |
-| \_conjunto de igual prop \_               | 10 (0xA) corresponde ao valor definido ou<br/> 10 (0xA) valor de conjunto desconhecido<br/>                                |
-| campo de igual de PROP \_ \_          | Obsoleto.                                                                                                     |
-| PROP \_ igual \_ rotulado \_ conjunto      | Rótulo correspondente em um conjunto de rótulos ou número.                                                                 |
-| PROP \_ igual \_ rotulado como campo de bits \_ | Obsoleto. Para obter mais informações, consulte PROP \_ igual \_ flags.                                                        |
-| \_igual \_ const de prop             | Nenhuma saída. Nenhum dado é exibido no painel de detalhes.                                                           |
-| \_sinalizadores de igual de prop \_             | ....... 0 = rótulo off cadeia de caracteres...... uma. = Rótulo na cadeia de caracteres..... 0.. = Rótulo off cadeia de caracteres... 1... = rótulo na cadeia de caracteres |
+| PROP \_ QUAL \_ NONE              | 10 (0xa)"                                                                                                     |
+| INTERVALO DE \_ QUAL \_ PROP             | 10 (0xa) Intervalo:(1 (0x1) – 20 (0x14))                                                                          |
+| PROP \_ QUAL \_ SET               | 10 (0xa) Corresponde ao valor definido ou<br/> 10 (0xa) Valor de conjunto desconhecido<br/>                                |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleto.                                                                                                     |
+| PROP \_ QUAL \_ LABELED \_ SET      | Rótulo correspondente em um conjunto de rótulos ou número.                                                                 |
+| PROP \_ QUAL \_ ROTULADO \_ BITFIELD | Obsoleto. Para obter mais informações, consulte PROP \_ QUAL \_ FLAGS.                                                        |
+| PROP \_ QUAL \_ CONST             | Nenhuma saída. Nenhum dado é exibido no painel de detalhes.                                                           |
+| SINALIZADORES \_ PROP QUAL \_             | ....... 0 = Rotular a cadeia de caracteres ...... 1. = Rótulo na cadeia de caracteres..... 0.. = Rótulo off cadeia de caracteres... 1... = rótulo na cadeia de caracteres |
 | \_matriz igual \_ prop             | 0A FF...                                                                                                     |
 
 
@@ -202,56 +202,56 @@ O formatador genérico chama [**GetDateFormat**](/windows/desktop/api/datetimeap
 |-------------------------------|-------------------------------------------------------------|
 | PROP \_ igual \_ None              | Exibe a hora do sistema com base no relógio do computador local. |
 | \_intervalo de igual prop \_             | Exibe a hora do sistema com base no relógio do computador local. |
-| campo de igual de PROP \_ \_          | Obsoleto.                                                   |
-| PROP \_ igual \_ rotulado \_ conjunto      | Exibe a hora do sistema com base no relógio do computador local. |
-| PROP \_ igual \_ rotulado como campo de bits \_ | Obsoleto. Para obter mais informações, consulte PROP \_ igual \_ flags.      |
-| \_igual \_ const de prop             | Exibe a hora do sistema com base no relógio do computador local. |
-| \_sinalizadores de igual de prop \_             | Exibe a hora do sistema com base no relógio do computador local. |
-| \_matriz igual \_ prop             | Exibe a hora do sistema com base no relógio do computador local. |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleto.                                                   |
+| PROP \_ QUAL \_ LABELED \_ SET      | Exibe a hora do sistema com base no relógio do computador local. |
+| PROP \_ QUAL \_ ROTULADO \_ BITFIELD | Obsoleto. Para obter mais informações, consulte PROP \_ QUAL \_ FLAGS.      |
+| PROP \_ QUAL \_ CONST             | Exibe a hora do sistema com base no relógio do computador local. |
+| SINALIZADORES \_ PROP QUAL \_             | Exibe a hora do sistema com base no relógio do computador local. |
+| PROP \_ QUAL \_ ARRAY             | Exibe a hora do sistema com base no relógio do computador local. |
 
 
 
  
 
-## <a name="prop_type_string"></a>Cadeia de caracteres do \_ tipo prop \_
+## <a name="prop_type_string"></a>CADEIA DE \_ CARACTERES DE TIPO \_ PROP
 
-A tabela a seguir lista a saída de formato genérico para propriedades de tipo de dados de **\_ cadeia de \_ caracteres de tipo prop** . Lembre-se de que a saída do formatador pode variar dependendo do qualificador de dados da propriedade.
+A tabela a seguir lista a saída de formato genérico para propriedades **de tipo de dados PROP TYPE \_ \_ STRING.** Esteja ciente de que a saída do formatador pode variar dependendo do qualificador de dados da propriedade.
 
 
 
-| Qualificador de propriedade            | Saída do formatador                                       |
+| Qualificador de propriedade            | Saída do formatante                                       |
 |-------------------------------|--------------------------------------------------------|
-| PROP \_ igual \_ None              | Cadeia de caracteres anexada.                                       |
-| \_intervalo de igual prop \_             | Cadeia de caracteres anexada.                                       |
-| campo de igual de PROP \_ \_          | Obsoleto.                                              |
-| PROP \_ igual \_ rotulado \_ conjunto      | Cadeia de caracteres anexada.                                       |
-| PROP \_ igual \_ rotulado como campo de bits \_ | Obsoleto. Para obter mais informações, consulte PROP \_ igual \_ flags. |
-| \_igual \_ const de prop             | Cadeia de caracteres anexada.                                       |
-| \_sinalizadores de igual de prop \_             | Cadeia de caracteres anexada.                                       |
-| \_matriz igual \_ prop             | Cadeia de caracteres anexada.                                       |
+| PROP \_ QUAL \_ NONE              | Cadeia de caracteres anexada.                                       |
+| INTERVALO DE \_ QUAL \_ PROP             | Cadeia de caracteres anexada.                                       |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleto.                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | Cadeia de caracteres anexada.                                       |
+| PROP \_ QUAL \_ ROTULADO \_ BITFIELD | Obsoleto. Para obter mais informações, consulte PROP \_ QUAL \_ FLAGS. |
+| PROP \_ QUAL \_ CONST             | Cadeia de caracteres anexada.                                       |
+| SINALIZADORES \_ PROP QUAL \_             | Cadeia de caracteres anexada.                                       |
+| PROP \_ QUAL \_ ARRAY             | Cadeia de caracteres anexada.                                       |
 
 
 
  
 
-## <a name="prop_type_ip_address"></a>\_ \_ endereço IP do tipo prop \_
+## <a name="prop_type_ip_address"></a>ENDEREÇO \_ IP DO TIPO \_ \_ PROP
 
-A tabela a seguir lista a saída de formato genérico para o tipo de prop Propriedades de tipo de dados de **\_ \_ \_ endereço IP** . Lembre-se de que a saída formatada pode variar dependendo do qualificador de dados de propriedade da propriedade.
+A tabela a seguir lista a saída de formato genérico para propriedades de tipo de dados **\_ ENDEREÇO IP \_ \_ DO** TIPO PROP. Esteja ciente de que a saída formatada pode variar dependendo do qualificador de dados de propriedade da propriedade.
 
-Na coluna saída de exemplo, o valor dos dados na captura é "129.65.100.2".
+Na coluna de saída de exemplo, o valor dos dados na captura é "129.65.100.2".
 
 
 
 | Qualificador de propriedade            | Saída de exemplo                                         |
 |-------------------------------|--------------------------------------------------------|
-| PROP \_ igual \_ None              | 129.65.100.2                                           |
-| \_intervalo de igual prop \_             | 129.65.100.2                                           |
-| campo de igual de PROP \_ \_          | Obsoleto.                                              |
-| PROP \_ igual \_ rotulado \_ conjunto      | 129.65.100.2                                           |
-| PROP \_ igual \_ rotulado como campo de bits \_ | Obsoleto. Para obter mais informações, consulte PROP \_ igual \_ flags. |
-| \_igual \_ const de prop             | 129.65.100.2                                           |
-| \_sinalizadores de igual de prop \_             | 129.65.100.2                                           |
-| \_matriz igual \_ prop             | 129.65.100.2                                           |
+| PROP \_ QUAL \_ NONE              | 129.65.100.2                                           |
+| INTERVALO DE \_ QUAL \_ PROP             | 129.65.100.2                                           |
+| PROP \_ QUAL \_ BITFIELD          | Obsoleto.                                              |
+| PROP \_ QUAL \_ LABELED \_ SET      | 129.65.100.2                                           |
+| PROP \_ QUAL \_ ROTULADO \_ BITFIELD | Obsoleto. Para obter mais informações, consulte PROP \_ QUAL \_ FLAGS. |
+| PROP \_ QUAL \_ CONST             | 129.65.100.2                                           |
+| SINALIZADORES \_ PROP QUAL \_             | 129.65.100.2                                           |
+| PROP \_ QUAL \_ ARRAY             | 129.65.100.2                                           |
 
 
 

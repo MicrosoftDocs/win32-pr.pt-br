@@ -1,7 +1,7 @@
 ---
-description: Representa uma relação na qual um elemento gerenciado é um membro e é agregado por uma coleção.
+description: Representa uma relação na qual um elemento gerenciado é membro de e é agregado por uma coleção.
 ms.assetid: 324284fa-ece6-41df-9891-040a7561dce4
-title: Classe CIM_MemberOfCollection
+title: CIM_MemberOfCollection classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9bcebfb08cbbc0cb18e00f1b0e5e2646ca086faf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 431ce72e32974a8a09bfa9c67c110a713802b3ff239f3889c7fcf6430bdebdaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119695366"
 ---
-# <a name="cim_memberofcollection-class"></a>\_Classe CIM MemberOfCollection
+# <a name="cim_memberofcollection-class"></a>Classe Cim \_ MemberOfCollection
 
-Representa uma relação na qual um elemento gerenciado é um membro e é agregado por uma coleção.
+Representa uma relação na qual um elemento gerenciado é membro de e é agregado por uma coleção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,42 +39,42 @@ class CIM_MemberOfCollection
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ MemberOfCollection** tem estes tipos de membros:
+A **classe CIM \_ MemberOfCollection** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ MemberOfCollection** tem essas propriedades.
+A **classe \_ CIM MemberOfCollection** tem essas propriedades.
 
 <dl> <dt>
 
 **Coleção**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ coleção CIM**
+Tipo de dados: **Coleção CIM \_**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**agregação**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Agregação**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-A coleção que agrega os membros.
+A coleção que agrega membros.
 
 </dd> <dt>
 
 **Membro**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificadores: [ **Chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 O membro da coleção.
@@ -87,10 +87,10 @@ O membro da coleção.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

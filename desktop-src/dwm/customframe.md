@@ -20,12 +20,12 @@ keywords:
 - DWM (Gerenciador de Janelas da Área de Trabalho), teste de clique
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a27a9b71dd2dd91cb000a352ef039de2a71cd9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0b440f475dfacc610354ce151ab0be42dbbe3069390b1efa211195252f7a3914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741411"
 ---
 # <a name="custom-window-frame-using-dwm"></a>Quadro de janela personalizado usando DWM
 
@@ -43,13 +43,13 @@ Este tópico demonstra como usar as APIs de Gerenciador de Janelas da Área de T
 
 ## <a name="introduction"></a>Introdução
 
-No Windows Vista e posterior, a aparência das áreas que não são de cliente das janelas de aplicativos (a barra de título, o ícone, a borda da janela e os botões de legenda) é controlada pelo DWM. Usando as APIs DWM, você pode alterar a maneira como o DWM renderiza o quadro de uma janela.
+no Windows Vista e posteriores, a aparência das áreas que não são de cliente das janelas de aplicativos (a barra de título, o ícone, a borda da janela e os botões de legenda) é controlada pelo DWM. Usando as APIs DWM, você pode alterar a maneira como o DWM renderiza o quadro de uma janela.
 
-Um recurso das APIs do DWM é a capacidade de estender o quadro do aplicativo para a área do cliente. Isso permite que você integre um elemento de interface do usuário do cliente — como uma barra de ferramentas — ao quadro, dando à interface do usuário um lugar mais proeminente na interface do usuário do aplicativo. Por exemplo, o Windows Internet Explorer 7 no Windows Vista integra a barra de navegação no quadro da janela, estendendo a parte superior do quadro, conforme mostrado na captura de tela a seguir.
+Um recurso das APIs do DWM é a capacidade de estender o quadro do aplicativo para a área do cliente. Isso permite que você integre um elemento de interface do usuário do cliente — como uma barra de ferramentas — ao quadro, dando à interface do usuário um lugar mais proeminente na interface do usuário do aplicativo. por exemplo, Windows o Internet Explorer 7 no Windows Vista integra a barra de navegação no quadro da janela, estendendo a parte superior do quadro, conforme mostrado na captura de tela a seguir.
 
 ![barra de navegação integrada ao quadro da janela.](images/ie7-extendedborder-boxed.png)
 
-A capacidade de estender o quadro da janela também permite que você crie quadros personalizados mantendo a aparência da janela. Por exemplo, Microsoft Office o Word 2007 desenha o botão do Office e a barra de ferramentas de acesso rápido dentro do quadro personalizado, fornecendo os botões de legenda padrão de minimizar, maximizar e fechar, conforme mostrado na captura de tela a seguir.
+A capacidade de estender o quadro da janela também permite que você crie quadros personalizados mantendo a aparência da janela. por exemplo, Microsoft Office o Word 2007 desenha o botão de Office e a barra de ferramentas de acesso rápido dentro do quadro personalizado enquanto fornece os botões de legenda padrão minimizar, maximizar e fechar, conforme mostrado na captura de tela a seguir.
 
 ![botão do Office e barra de ferramentas de acesso rápido no Word 2007](images/word2007-customborder-boxed.png)
 
@@ -88,7 +88,7 @@ if (message == WM_ACTIVATE)
 
 Observe que a extensão de quadro é feita na mensagem de [**\_ ativação do WM**](/windows/desktop/inputdev/wm-activate) em vez da mensagem de [**\_ criação do WM**](/windows/desktop/winmsg/wm-create) . Isso garante que a extensão de quadro seja manipulada corretamente quando a janela estiver em seu tamanho padrão e quando for maximizada.
 
-A imagem a seguir mostra um quadro de janela padrão (à esquerda) e o mesmo quadro de janela estendido (à direita). O quadro é estendido usando o exemplo de código anterior e a tela de fundo padrão Microsoft Visual Studio [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) / [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) (janela de cores \_ + 1).
+A imagem a seguir mostra um quadro de janela padrão (à esquerda) e o mesmo quadro de janela estendido (à direita). o quadro é estendido usando o exemplo de código anterior e a tela de fundo padrão Microsoft Visual Studio [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) / [**WNDCLASSEX**](/windows/win32/api/winuser/ns-winuser-wndclassexa) (janela de cores \_ + 1).
 
 ![captura de tela de um padrão (à esquerda) e quadro estendido (à direita) com plano de fundo branco](images/white-sidebyside.png)
 
@@ -147,7 +147,7 @@ Como a janela inteira é a área do cliente, você pode simplesmente desenhar o 
 > [!Note]  
 > Ao desenhar em seu quadro personalizado, tenha cuidado ao colocar os controles da interface do usuário. Como a janela inteira é sua região de cliente, você deve ajustar o posicionamento do controle de interface do usuário para cada largura de quadro se não quiser que eles apareçam no quadro estendido ou no mesmo.
 
- 
+ 
 
 ## <a name="enabling-hit-testing-for-the-custom-frame"></a>Habilitando o teste de clique para o quadro personalizado
 
@@ -173,7 +173,7 @@ if ((message == WM_NCHITTEST) && (lRet == 0))
 
 
 
-## <a name="appendix-a-sample-window-procedure"></a>Apêndice A: procedimento de janela de exemplo
+## <a name="appendix-a-sample-window-procedure"></a>Apêndice A: Procedimento de janela de exemplo
 
 O exemplo de código a seguir demonstra um procedimento de janela e suas funções de trabalho de suporte usadas para criar um aplicativo de quadro personalizado.
 
@@ -350,9 +350,9 @@ LRESULT AppWinProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 
 
-## <a name="appendix-b-painting-the-caption-title"></a>Apêndice B: pintando o título da legenda
+## <a name="appendix-b-painting-the-caption-title"></a>Apêndice B: Pintar o título da legenda
 
-O código a seguir demonstra como pintar um título de legenda no quadro estendido. Essa função deve ser chamada de dentro das chamadas [**BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) e [**EndPaint**](/windows/desktop/api/winuser/nf-winuser-endpaint) .
+O código a seguir demonstra como pintar um título de legenda no quadro estendido. Essa função deve ser chamada de dentro das [**chamadas BeginPaint**](/windows/desktop/api/winuser/nf-winuser-beginpaint) [**e EndPaint.**](/windows/desktop/api/winuser/nf-winuser-endpaint)
 
 
 ```
@@ -436,9 +436,9 @@ void PaintCustomCaption(HWND hWnd, HDC hdc)
 
 
 
-## <a name="appendix-c-hittestnca-function"></a>Apêndice C: função HitTestNCA
+## <a name="appendix-c-hittestnca-function"></a>Apêndice C: Função HitTestNCA
 
-O código a seguir mostra a `HitTestNCA` função usada [para habilitar o teste de clique para o quadro personalizado](#enabling-hit-testing-for-the-custom-frame). Essa função manipula a lógica de teste de cliques para o [**WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) quando o [**DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) não manipula a mensagem.
+O código a seguir mostra `HitTestNCA` a função usada em [Habilitando testes de acerto para o quadro personalizado.](#enabling-hit-testing-for-the-custom-frame) Essa função lida com a lógica de teste de acerto para [**o WM \_ NCHITTEST**](/windows/desktop/inputdev/wm-nchittest) [**quando DwmDefWindowProc**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmdefwindowproc) não trata a mensagem.
 
 
 ```
@@ -503,6 +503,6 @@ LRESULT HitTestNCA(HWND hWnd, WPARAM wParam, LPARAM lParam)
 [Visão geral do Gerenciador de Janelas da Área de Trabalho](dwm-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: Por que o codificador de vídeo DMO rejeita um formato de saída que tento definir, quando recuperei o formato do mesmo DMO
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Por que o codificador de vídeo DMO rejeita um formato de saída que tento definir, quando recuperei o formato do mesmo DMO
+title: Por que o codificador de DMO rejeita um formato de saída que tento definir quando recuperei o formato da mesma DMO
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Por que o codificador de DMO rejeita um formato de saída que tento definir quando recuperei o formato da mesma DMO
 ms.assetid: 24a67941-6369-4945-af0d-a8c2a97f7604
 keywords:
-- Por que o codificador de vídeo DMO rejeita um formato de saída que tento definir, quando recuperei o formato do mesmo formato de mídia do Windows DMO
+- Por que o codificador de DMO rejeita um formato de saída que tento definir quando recuperei o formato do mesmo formato DMO de Mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db59773f2a37cc3cdecf6357ece24821513c48ca
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09f5a857c6d5e98f27db1b60ffedad7cd762c31de388be8ce81997979cadd9bf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658176"
 ---
-# <a name="why-does-the-video-encoder-dmo-reject-an-output-format-that-i-try-to-set-when-i-retrieved-the-format-from-the-same-dmo"></a>Por que o codificador de vídeo DMO rejeita um formato de saída que tento definir, quando recuperei o formato do mesmo DMO?
+# <a name="why-does-the-video-encoder-dmo-reject-an-output-format-that-i-try-to-set-when-i-retrieved-the-format-from-the-same-dmo"></a>Por que o codificador de DMO rejeita um formato de saída que tento definir quando recuperei o formato da mesma DMO?
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

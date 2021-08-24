@@ -1,137 +1,137 @@
 ---
-title: Tecnologias de interface do usuário
-description: Este tópico fornece uma breve pesquisa das tecnologias da Microsoft para o desenvolvimento de UIs para aplicativos baseados no Windows.
+title: Interface do Usuário tecnologias
+description: Este tópico fornece uma breve pesquisa das tecnologias da Microsoft para o desenvolvimento de UIs para Windows baseados em aplicativos.
 ms.assetid: 5ecbaaf0-704e-4c27-b3ce-b5436e577d62
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7d9343672d064cf073ea8018758b90083f440bd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8a36bbf73d5b319e04ba2b02570c6fce4124a9ec6d54fcec201e77c4c9487dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702316"
 ---
-# <a name="user-interface-technologies"></a>Tecnologias de interface do usuário
+# <a name="user-interface-technologies"></a>Interface do Usuário tecnologias
 
-Este tópico fornece uma breve pesquisa das tecnologias da Microsoft para o desenvolvimento de UIs para aplicativos baseados no Windows. Ele fornece as informações necessárias para ajudá-lo a determinar se deve usar uma tecnologia específica e identifica onde você pode encontrar mais informações sobre ela.
+Este tópico fornece uma breve pesquisa das tecnologias da Microsoft para o desenvolvimento de UIs para Windows baseados em aplicativos. Ele fornece as informações necessárias para ajudá-lo a determinar se deve usar uma tecnologia específica e identifica onde você pode encontrar mais informações sobre ela.
 
 Este tópico descreve as seguintes tecnologias:
 
--   [Tecnologias de interface do usuário para aplicativos não gerenciados](#user-interface-technologies-for-unmanaged-applications)
-    -   [Controles do Windows](#windows-controls)
+-   [Interface do Usuário tecnologias para aplicativos não planejados](#user-interface-technologies-for-unmanaged-applications)
+    -   [Windows Controles](#windows-controls)
     -   [Estilos visuais](#visual-styles)
-    -   [Estrutura da faixa de dasgem do Windows](#windows-ribbon-framework)
-    -   [Gerenciador de animação do Windows](#windows-animation-manager)
+    -   [Windows Estrutura da Faixa de Opções](#windows-ribbon-framework)
+    -   [Windows Gerenciador de Animação](#windows-animation-manager)
     -   [Gerenciador de Janelas da Área de Trabalho](#desktop-window-manager)
-    -   [API de automação do Windows](#windows-automation-api)
+    -   [Windows API de Automação](#windows-automation-api)
     -   [Speech API](#speech-api)
     -   [API de ampliação](#magnification-api)
     -   [Compilador de Recurso](#resource-compiler)
--   [Tecnologias de interface do usuário para aplicativos gerenciados](#user-interface-technologies-for-managed-applications)
+-   [Interface do Usuário tecnologias para aplicativos gerenciados](#user-interface-technologies-for-managed-applications)
     -   [Windows Forms](#windows-forms)
     -   [Windows Presentation Foundation](#windows-presentation-foundation)
     -   [Silverlight](#silverlight)
     -   [Expression Blend 3 + SketchFlow](/windows)
-    -   [Automação da interface do usuário para aplicativos gerenciados](#ui-automation-for-managed-applications)
+    -   [Automação da Interface do Usuário para aplicativos gerenciados](#ui-automation-for-managed-applications)
 
-## <a name="user-interface-technologies-for-unmanaged-applications"></a>Tecnologias de interface do usuário para aplicativos não gerenciados
+## <a name="user-interface-technologies-for-unmanaged-applications"></a>Interface do Usuário tecnologias para aplicativos não planejados
 
-Esta seção descreve as tecnologias da Microsoft para o desenvolvimento de UIs para aplicativos do Windows não gerenciados. Essas tecnologias destinam-se a desenvolvedores experientes do C/C++ que estão familiarizados com os conceitos de programação do WindowsAPI e que estão usando o SDK (Software Development Kit) do Microsoft Windows. Algumas tecnologias têm pré-requisitos adicionais, como o conhecimento de problemas de programação de gráficos ou familiaridade com as noções básicas da programação COM (Component Object Model).
+Esta seção descreve as tecnologias da Microsoft para desenvolvimento de UIs para aplicativos Windows não Windows. Essas tecnologias destinam-se a desenvolvedores experientes em C/C++ que estão familiarizados com os conceitos de programação do WindowsAPI e que estão usando o SDK (Software Development Kit) do Microsoft Windows. Algumas tecnologias têm pré-requisitos adicionais, como conhecimento de problemas de programação gráfica ou familiaridade com os conceitos básicos da programação com Component Object Model (COM).
 
-### <a name="windows-controls"></a>Controles do Windows
+### <a name="windows-controls"></a>Windows Controles
 
-Os controles do Windows são elementos de interface do usuário que são usados em conjunto com outra janela (normalmente uma janela de cliente ou caixa de diálogo) para permitir que o usuário interaja com um aplicativo. Muitos dos elementos que compõem a interface do usuário de um aplicativo tradicional baseado no Windows são controles do Windows, incluindo itens como menus, barras de rolagem, botões, caixas de listagem, exibições de árvore e assim por diante.
+Windows controles são elementos de interface do usuário que são usados em conjunto com outra janela (normalmente uma janela ou caixa de diálogo do cliente) para permitir que o usuário interaja com um aplicativo. Muitos dos elementos que comem a interface do usuário de um aplicativo tradicional baseado em Windows são controles Windows, incluindo itens como menus, barras de rolagem, botões, caixas de listagem, exibições de árvore e assim por diante.
 
-Os controles do Windows são compatíveis com todas as versões do Windows. No entanto, como os componentes de tempo de execução que oferecem suporte aos controles evoluíram ao longo do tempo, alguns controles e recursos introduzidos em versões posteriores não têm suporte em versões anteriores. Os aplicativos precisam detectar as versões e usar apenas os recursos disponíveis.
+Windows controles são suportados por todas as versões do Windows. No entanto, como os componentes de tempo de run time que suportam os controles evoluiram ao longo do tempo, alguns controles e recursos introduzidos em versões posteriores não têm suporte em versões anteriores. Os aplicativos precisam detectar as versões e usar apenas os recursos disponíveis.
 
-Você deve usar os controles do Windows se quiser criar uma interface do usuário tradicional para um aplicativo baseado no Windows não gerenciado que seja executado em uma ampla gama de versões do Windows.
+Você deve usar Windows controles se quiser criar uma interface do usuário tradicional para um aplicativo baseado em Windows não Windows executado em uma ampla variedade de Windows versões.
 
-Para obter mais informações, consulte [controles do Windows](../controls/window-controls.md).
+Para obter mais informações, consulte [Windows Controls](../controls/window-controls.md).
 
 ### <a name="visual-styles"></a>Estilos visuais
 
-Os estilos visuais são especificações para a aparência dos controles. Por exemplo, um estilo visual pode definir a aparência geral dos controles e permitir que os desenvolvedores de software configurem a interface visual desses controles para coordenar com a aparência de um aplicativo. Além disso, os estilos visuais fornecem um mecanismo para todos os aplicativos baseados no Windows para padronizar a aparência de um aplicativo.
+Estilos visuais são especificações para a aparência dos controles. Por exemplo, um Estilo Visual pode definir a aparência geral dos controles e permitir que os desenvolvedores de software configurem a interface visual desses controles para coordenar com a aparência de um aplicativo. Além disso, os Estilos Visuais fornecem um mecanismo para Windows aplicativos baseados em Windows para padronizar a aparência de um aplicativo.
 
-Os estilos visuais têm suporte no Windows XP e versões posteriores e afetam apenas a aparência dos controles padrão do Windows e os controles comuns do Microsoft Win32.
+Os estilos visuais têm suporte no Windows XP e posterior e afetam apenas a aparência dos controles Windows padrão e dos controles comuns do Microsoft Win32.
 
-Você deve usar estilos visuais se precisar alterar a aparência dos controles padrão do Windows e dos controles comuns para corresponder à aparência da interface do usuário do aplicativo.
+Você deverá usar Estilos Visuais se precisar alterar a aparência dos controles padrão Windows e controles comuns para corresponder à aparência da interface do usuário do aplicativo.
 
-Para obter mais informações, consulte [Visual Styles](../controls/themes-overview.md).
+Para obter mais informações, consulte [Estilos visuais.](../controls/themes-overview.md)
 
-### <a name="windows-ribbon-framework"></a>Estrutura da faixa de dasgem do Windows
+### <a name="windows-ribbon-framework"></a>Windows Estrutura da Faixa de Opções
 
-O Windows Ribbon Framework é um sistema de apresentação de comando avançado para aplicativos baseados no Windows. Ele consiste em uma barra de comandos da faixa de medida que expõe os principais recursos de um aplicativo por meio de uma série de guias na parte superior de uma janela de aplicativo e um sistema de menus de contexto. A estrutura da faixa de opções do Windows tem suporte nas seguintes versões do Windows:
+A Windows faixa de opções é um sistema de apresentação de comando rico para Windows baseados em aplicativos. Ele consiste em uma barra de comandos da faixa de opções que expõe os principais recursos de um aplicativo por meio de uma série de guias na parte superior de uma janela do aplicativo e um sistema de menu de contexto. A Windows faixa de opções tem suporte nas seguintes versões Windows:
 
--   Windows Vista com Service Pack 2 (SP2) e atualização de plataforma para Windows Vista
+-   Windows Vista com Service Pack 2 (SP2) e Atualização de plataforma para Windows Vista
 -   Windows 7 e posterior
--   Windows Server 2008 R2
--   Windows Server 2008 com Service Pack 2 (SP2) e atualização de plataforma para Windows Server 2008
+-   Windows Server 2008 R2
+-   Windows Server 2008 com Service Pack 2 (SP2) e Atualização de Plataforma para Windows Server 2008
 
-Você deve usar o Windows Ribbon Framework se quiser implementar uma interface do usuário de comando que seja uma alternativa para os menus, barras de ferramentas e painéis de tarefas em camadas de aplicativos tradicionais do Windows.
+Você deve usar Windows faixa de opções se quiser implementar uma interface do usuário de comando que seja uma alternativa aos menus em camadas, barras de ferramentas e painéis de tarefas de aplicativos Windows tradicionais.
 
-O Windows Ribbon Framework é destinado a desenvolvedores que são proficientes em programação COM.
+A Windows faixa de opções é destinada a desenvolvedores proficientes em programação COM.
 
 Para obter mais informações, consulte [Windows Ribbon Framework](../windowsribbon/-uiplat-windowsribbon-entry.md).
 
-### <a name="windows-animation-manager"></a>Gerenciador de animação do Windows
+### <a name="windows-animation-manager"></a>Windows Gerenciador de Animação
 
-O Gerenciador de animação do Windows dá suporte à animação de elementos de interface do usuário fornecendo um mecanismo de animação poderoso e uma interface programática padronizada. A plataforma simplifica o desenvolvimento e a manutenção de sequências de animação da interface do usuário e permite que os desenvolvedores implementem animações de interface do usuário que são consistentes e intuitivas. A animação do Windows pode ser usada com qualquer plataforma gráfica, incluindo Direct2D, Microsoft Direct3D ou Windows GDI+.
+O Windows Animation Manager dá suporte à animação de elementos da interface do usuário, fornecendo um mecanismo de animação poderoso e uma interface programática padronizada. A plataforma simplifica o desenvolvimento e a manutenção de sequências de animação da interface do usuário e permite que os desenvolvedores implementem animações de interface do usuário consistentes e intuitivas. Windows A animação pode ser usada com qualquer plataforma gráfica, incluindo Direct2D, Microsoft Direct3D ou Windows GDI+.
 
-A estrutura de animação do Windows tem suporte no Windows Vista com atualização de plataforma para Windows Vistakit vista com SP2 e atualização de plataforma para Windows Vista e Windows 7 e posterior.
+A estrutura de animação Windows tem suporte no Windows Vista com Atualização de Plataforma para Windows VistaWindows Vista com SP2 e Atualização de Plataforma para Windows Vista e Windows 7 e posterior.
 
-Você deve usar o Gerenciador de animação do Windows se quiser adicionar sequências de animação à interface do usuário de um aplicativo não gerenciado baseado no Windows.
+Você deverá usar Windows Animation Manager se quiser adicionar sequências de animação à interface do usuário de um aplicativo não Windows baseado em dados.
 
 Para obter mais informações, consulte [Windows Animation Manager](../uianimation/-main-portal.md).
 
 ### <a name="desktop-window-manager"></a>Gerenciador de Janelas da Área de Trabalho
 
-Gerenciador de Janelas da Área de Trabalho (DWM) é um componente de tempo de execução do Windows que dá suporte à composição de área de trabalho, um recurso introduzido no Windows Vista. Por meio da composição de área de trabalho, o DWM permite efeitos visuais na interface do usuário, como quadros de janela de vidro, animações de transição de janela 3D, Windows Flip e Windows Flip3D e suporte de alta resolução.
+Gerenciador de Janelas da Área de Trabalho (DWM) é um componente de tempo de Windows que dá suporte à composição da área de trabalho, um recurso introduzido no Windows Vista. Por meio da composição da área de trabalho, o DWM habilita efeitos visuais na interface do usuário, como quadros de janela de vidro, animações de transição de janela 3D, Windows Flip e Windows Flip3D e suporte de alta resolução.
 
-O DWM expõe uma API para controlar muitos dos efeitos visuais associados à composição da área de trabalho. Por exemplo, um aplicativo pode exibir miniaturas, aplicar um efeito translúcida e borrado à área do cliente de janelas de nível superior, controlar os efeitos de transparência e de transição usados na região não cliente do Windows e assim por diante.
+A DWM expõe uma API para controlar muitos dos efeitos visuais associados à composição da área de trabalho. Por exemplo, um aplicativo pode exibir miniaturas, aplicar um efeito translúcido e desfocado à área do cliente de janelas de nível superior, controlar os efeitos de transparência e transição usados na região não cliente das janelas e assim por diante.
 
-O DWM tem suporte no Windows Vista e no Windows Server 2008.
+O DWM tem suporte no Windows Vista e Windows Server 2008.
 
-Você deve usar o DWM se seu aplicativo precisar acessar e controlar os efeitos visuais associados à composição de área de trabalho.
+Você deverá usar o DWM se seu aplicativo precisar acessar e controlar os efeitos visuais associados à composição da área de trabalho.
 
-Para obter mais informações, consulte [Gerenciador de janelas da área de trabalho](../dwm/dwm-overview.md).
+Para obter mais informações, [consulte Gerenciador de Janelas da Área de Trabalho](../dwm/dwm-overview.md).
 
-### <a name="windows-automation-api"></a>API de automação do Windows
+### <a name="windows-automation-api"></a>Windows API de Automação
 
-A API de automação do Windows ajuda os desenvolvedores a criarem aplicativos acessíveis para o público mais amplo possível, incluindo pessoas com deficiências visuais, auditivas ou motoras. A API funciona expondo informações sobre os elementos que compõem uma interface do usuário do aplicativo. Aplicativos de tecnologia assistencial, como leitores de tela, podem usar as informações para apresentar a interface do usuário de uma maneira que pode ser usada por pessoas com deficiências.
+A API Windows Automação do Microsoft Agosto ajuda os desenvolvedores a criar aplicativos acessíveis ao público mais amplo possível, incluindo pessoas com deficiência visual, auditiva ou de movimento. A API funciona expondo informações sobre os elementos que comem uma interface do usuário do aplicativo. Aplicativos de tecnologia adaptativa, como leitores de tela, podem usar as informações para apresentar a interface do usuário de uma maneira que possa ser usada por pessoas com deficiências.
 
-A API de automação do Windows consiste em duas estruturas de API separadas, o Microsoft Acessibilidade Ativa e a automação da interface do usuário da Microsoft. O Microsoft Acessibilidade Ativa é uma API herdada que foi introduzida no Windows 95 como um suplemento de plataforma. A automação da interface do usuário é o sucessor do Microsoft Acessibilidade Ativa e é uma implementação do Windows da especificação de automação da interface do usuário.
+A API Windows Automação do Microsoft A0 consiste em duas estruturas de API separadas, Microsoft Active Accessibility e Microsoft Automação da Interface do Usuário. Microsoft Active Accessibility é uma API herdada que foi introduzida no Windows 95 como um complemento de plataforma. Automação da Interface do Usuário é o sucesso da Microsoft Active Accessibility e é uma implementação Windows da especificação Automação da Interface do Usuário dados.
 
-O suporte completo para o Microsoft Acessibilidade Ativa é integrado ao Windows XP e ao Windows Server 2003. O Microsoft Acessibilidade Ativa também tem suporte no Windows NT 4,0 com Service Pack 6 (SP6) e posterior e no Windows 98. A automação da interface do usuário tem suporte nos seguintes sistemas operacionais: Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows Vista, Windows 7, Windows Server 2008 e Windows Server 2008 R2.
+O suporte completo para Microsoft Active Accessibility é integrado Windows XP e Windows Server 2003. Microsoft Active Accessibility também tem suporte no Windows NT 4.0 com Service Pack 6 (SP6) e posterior e Windows 98. Automação da Interface do Usuário tem suporte nos seguintes sistemas operacionais: Windows XP, Windows Server 2003, Windows Server 2003 R2, Windows Vista, Windows 7, Windows Server 2008 e Windows Server 2008 R2.
 
-Se seu aplicativo contiver controles personalizados ou outros recursos de interface do usuário personalizados, você deverá usar a API de automação do Windows para garantir que os controles e recursos personalizados estejam totalmente acessíveis. Em geral, os desenvolvedores precisam de um nível moderado de compreensão sobre objetos COM e interfaces, Unicode e programação de API do Windows.
+Se seu aplicativo contiver controles personalizados ou outros recursos de interface do usuário personalizados, você deverá usar a API de Automação do Windows para garantir que os controles e recursos personalizados sejam totalmente acessíveis. Em geral, os desenvolvedores precisam de um nível moderado de compreensão sobre objetos e interfaces COM, Unicode e programação Windows API.
 
-Para obter mais informações, consulte [API de automação do Windows](../winauto/windows-automation-api-portal.md).
+Para obter mais informações, consulte [WINDOWS API de Automação.](../winauto/windows-automation-api-portal.md)
 
 ### <a name="speech-api"></a>Speech API
 
-O Microsoft Speech API (SAPI) fornece uma interface de alto nível entre um aplicativo e mecanismos de fala. O SAPI implementa todos os detalhes de baixo nível necessários para controlar e gerenciar as operações em tempo real de vários mecanismos de fala.
+O SAPI (Microsoft Speech API) fornece uma interface de alto nível entre um aplicativo e mecanismos de fala. A SAPI implementa todos os detalhes de baixo nível necessários para controlar e gerenciar as operações em tempo real de vários mecanismos de fala.
 
-Os dois tipos básicos de mecanismos SAPI são reconhecedores de fala e de conversão de texto em fala (TTS). Os sistemas TTS sintetizam cadeias de caracteres de texto e arquivos em áudio falado usando vozes sintéticas. Os reconhecedores de fala convertem áudio falado humano em arquivos e cadeias de caracteres de texto legíveis.
+Os dois tipos básicos de mecanismos SAPI são sistemas de TTS (texto em fala) e reconhecedores de fala. Os sistemas TTS sintetizam cadeias de caracteres de texto e arquivos em áudio falado usando vozes sintéticas. Os reconhecedores de fala convertem áudio falado humano em arquivos e cadeias de caracteres de texto leitura.
 
-Você deve usar SAPI se quiser implementar uma interface do usuário que permita que ele interaja com seu aplicativo por meio de TTS e reconhecimento de fala, além dos dispositivos de entrada padrão, como teclado, mouse e exibição.
+Você deve usar SAPI se quiser implementar uma interface do usuário que permita que o usuário interaja com seu aplicativo por meio do TTS e do reconhecimento de fala, além dos dispositivos de entrada padrão, como o teclado, o mouse e a exibição.
 
-Para obter mais informações, consulte [Microsoft Speech API (SAPI) 5,4](/previous-versions/windows/desktop/ee125663(v=vs.85)).
+Para obter mais informações, [consulte Microsoft Speech API (SAPI) 5.4](/previous-versions/windows/desktop/ee125663(v=vs.85)).
 
 ### <a name="magnification-api"></a>API de ampliação
 
-A API de ampliação (MAPI) é usada para ampliar partes da tela e para aplicar efeitos de cor e outras transformações. Essa API destina-se principalmente a aplicativos de tecnologia assistencial que ampliam partes da tela para facilitar a visualização.
+A API de ampliação (MAPI) é usada para ampliar partes da tela e para aplicar efeitos de cor e outras transformaçãos. Essa API destina-se principalmente a aplicativos de tecnologia adaptativa que ampliam partes da tela para torná-las mais fáceis de ver.
 
-O MAPI tem suporte no Windows Vista, Windows 7, Windows Server 2008 e Windows Server 2008 R2. Ele é destinado a desenvolvedores que estão familiarizados com conceitos de programação de elementos gráficos.
+O MAPI tem suporte no Windows Vista, Windows 7, Windows Server 2008 e Windows Server 2008 R2. Ele destina-se a desenvolvedores que estão familiarizados com conceitos de programação de gráficos.
 
-Para obter mais informações, consulte [ampliando a API](/previous-versions/windows/desktop/magapi/entry-magapi-sdk).
+Para obter mais informações, consulte [API de ampliação.](/previous-versions/windows/desktop/magapi/entry-magapi-sdk)
 
 ### <a name="resource-compiler"></a>Compilador de Recurso
 
-O compilador de recursos do Microsoft Windows é uma ferramenta de desenvolvimento de aplicativos usada para adicionar a interface do usuário e outros recursos a um aplicativo baseado no Windows. Um recurso é qualquer dado não executável usado por um aplicativo e inclui itens como caixas de diálogo, menus, cadeias de caracteres, cursores, ícones, bitmaps e assim por diante. O compilador de recurso está incluído no Microsoft Visual Studio e no SDK do Windows.
+O Microsoft Windows Resource Compiler é uma ferramenta de desenvolvimento de aplicativos usada para adicionar interface do usuário e outros recursos a um Windows baseado em aplicativo. Um recurso é qualquer dado não executável usado por um aplicativo e inclui itens como caixas de diálogo, menus, cadeias de caracteres, cursores, ícones, bitmaps e assim por diante. O compilador de recursos está incluído no Microsoft Visual Studio e no SDK do Windows.
 
 Para saber mais, confira [Compilador de recursos](../menurc/resource-compiler.md).
 
-## <a name="user-interface-technologies-for-managed-applications"></a>Tecnologias de interface do usuário para aplicativos gerenciados
+## <a name="user-interface-technologies-for-managed-applications"></a>Interface do Usuário tecnologias para aplicativos gerenciados
 
 Esta seção descreve as tecnologias da Microsoft para o desenvolvimento de UIs para aplicativos gerenciados do Windows que são executados no contexto do .NET Framework. Para obter mais informações, consulte [.NET Development](/previous-versions/ff361664(v=vs.100)).
 
@@ -173,6 +173,6 @@ A automação da interface do usuário fornece acesso programático à maioria d
 
 Para obter mais informações, consulte [automação da interface do usuário para aplicativos gerenciados](/dotnet/framework/ui-automation/).
 
- 
+ 
 
- 
+ 

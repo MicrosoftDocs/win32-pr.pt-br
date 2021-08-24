@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65922b580975ec05877ae33d213ff3a3675ec72f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3a5d501cd8b34a8d1c391a75d9caa8243db8e3a94088a898b0c2b7672b2d0aab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105811188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119656626"
 ---
 # <a name="ds-heuristics-attribute"></a>DS-Heuristics atributo
 
@@ -38,7 +38,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.212                      |
 | System-ID-GUID    | f0f8ff86-1191-11d0-a060-00aa006c33ed        |
-| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -61,7 +61,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -82,7 +82,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -103,7 +103,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -124,7 +124,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -145,7 +145,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -166,7 +166,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -187,7 +187,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | True                                             |
+| É de valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
 | No catálogo global      | Falso                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
@@ -201,7 +201,7 @@ Há informações sobre os bits de exclusão de adminSDholder disponíveis no si
 
 ## <a name="remarks"></a>Comentários
 
-Cada floresta Active Directory contém um atributo DS-Heuristics que contém configurações para toda a floresta. O atributo DS-Heuristics é um atributo do objeto "CN = serviço de diretório, CN = Windows NT, CN = Services, CN = Configuration <Domain> ".
+Cada floresta Active Directory contém um atributo DS-Heuristics que contém configurações para toda a floresta. o atributo DS-Heuristics é um atributo do objeto "CN = serviço de diretório, cn = Windows NT, cn = Services, cn = Configuration <Domain> ".
 
 DS-Heuristics é uma cadeia de caracteres Unicode na qual cada caractere contém um valor para uma única configuração de todo o domínio. A cadeia de caracteres de DS-Heuristics usa o formato a seguir.
 
@@ -211,21 +211,21 @@ DS-Heuristics é uma cadeia de caracteres Unicode na qual cada caractere contém
 
 Para fornecer validação de dados, cada décimo caractere é definido como o número de caractere dividido por dez. Por exemplo, o décimo caractere é ' 1 '; o caractere de vigésimo é ' 2 ' e assim por diante.
 
-Um caractere que não está definido é considerado um ' 0 '. Se o atributo DS-Heuristics não for definido, todos os valores serão considerados como ' 0 '. Atualmente, há 25 caracteres sendo usados e não é necessário preencher a cadeia de caracteres para completar todos os 25 caracteres. Por exemplo, se o caractere mais alto que está sendo usado for 7, a cadeia de caracteres "0000002" será aceitável.
+Um caractere que não está definido é considerado um ' 0 '. Se o atributo DS-Heuristics não for definido, todos os valores serão considerados como ' 0 '. Atualmente, há 25 caracteres sendo usados e não é necessário preencher a cadeia de caracteres para preencher todos os 25 caracteres. Por exemplo, se o caractere mais alto que está sendo usado for 7, a cadeia de caracteres "0000002" será aceitável.
 
-Para obter detalhes sobre cada caractere, confira [dSHeuristics em \[ MS-ADTS \] Active Directory especificação técnica](/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5).
+Para obter detalhes sobre cada caractere, consulte [dSHeuristics em Especificação Técnica do \[ \] Active Directory do MS-ADTS](/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5).
 
 ### <a name="anr-search-filters"></a>Filtros de pesquisa ANR
 
-Os caracteres 1, 2 e 4 são usados para modificar o comportamento dos filtros de pesquisa ANR. Se o caractere 1 estiver definido como ' 1 ', a expansão do filtro ANR para incluir o   -  **sobrenome** de especificado (quando o espaço for encontrado) será desabilitada. Se o caractere 2 estiver definido como ' 1 ', a expansão do filtro ANR para incluir o **sobrenome**  -  **especificado** será desabilitada. Se um espaço inserido estiver presente na cadeia de caracteres de pesquisa, a cadeia de caracteres de pesquisa será dividida normalmente em duas cadeias de caracteres, que são comparadas por pares com os atributos **especificado** e **sobrenome** . Definir os caracteres 1 e 2 para ' 1 ' impedirá que essas correspondências sejam tentadas. Essa correspondência poderá ser desabilitada se o administrador tiver certeza de que a pesquisa por "Jeff Smith" sempre seria fornecida como "Jeff Smith" e não "Smith, Jeff". Normalmente, apenas uma ou outra correspondência seria suprimida, de acordo com a Convenção local.
+Os caracteres 1, 2 e 4 são usados para modificar o comportamento dos filtros de pesquisa ANR. Se o caractere 1 for definido como '1', a expansão do filtro ANR para incluir **GivenName** Surname (quando o espaço  -   for encontrado) será desabilitada. Se o caractere 2 estiver definido como '1', a expansão do filtro ANR para incluir **o Sobrenome**  -  **GivenName** será desabilitada. Se um espaço inserido estiver presente na cadeia de caracteres de pesquisa, a cadeia de caracteres de pesquisa normalmente será dividida em duas cadeias de caracteres, que são comparadas em pares com os atributos **GivenName** e **Surname.** Definir os caracteres 1 e 2 como "1" impedirá a tentativa dessas correspondeções. Essa correspondência poderá ser desabilitada se o administrador tiver certeza de que as pesquisas por "Jeff Smith" sempre serão fornecidas como "jeff smith" e não "smith, jeff". Normalmente, apenas uma ou outra combinação seria suprimida, de acordo com a convenção local.
 
-Se o caractere 4 estiver definido como ' 1 ', Active Directory executará "resolução de apelido preventivo". Ou seja, se a cadeia de caracteres de pesquisa corresponder exatamente ao apelido de exatamente um objeto no escopo da pesquisa, esse objeto será retornado como resultado da pesquisa e o restante da ANR será ignorado. Observe que, embora o restante da pesquisa ANR esteja disponível por meio de LDAP, a resolução de apelidos preventivos (também conhecida como "ajuste de apelido") está disponível somente por meio de MAPI.
+Se o caractere 4 estiver definido como '1', o Active Directory executará a "resolução de apelido preemptivo". Ou seja, se a cadeia de caracteres de pesquisa corresponde exatamente ao apelido de exatamente um objeto no escopo de pesquisa, esse objeto será retornado como resultado da pesquisa e o restante de ANR será ignorado. Observe que, embora o restante da pesquisa de ANR fique disponível por meio do LDAP, a resolução de apelido preemptivo (também conhecida como "snap de apelido") está disponível apenas por meio do MAPI.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[dSHeuristics em \[ MS-ADTS \] Active Directory especificação técnica](/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5)
+[DSHeuristics na \[ Especificação Técnica do Active Directory do MS-ADTS \]](/openspecs/windows_protocols/ms-adts/e5899be4-862e-496f-9a38-33950617d2c5)
 </dt> </dl>
 
  

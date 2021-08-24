@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7533ee7fea7c522b6129bda06891630c3e5ad15
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8bae11edf7e6c603c534afb75fe5c90bcc868f1e359f1d78748dd94b18b5627e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657066"
 ---
 # <a name="iremotedesktopclientevents-interface"></a>Interface IRemoteDesktopClientEvents
 
@@ -79,7 +79,7 @@ A interface **IRemoteDesktopClientEvents** tem esses métodos.
 
 <dl> <dt>
 
-[Área de Trabalho Remota referência de controle ActiveX](remote-desktop-activex-control-reference.md)
+[referência de controle de ActiveX de Área de Trabalho Remota](remote-desktop-activex-control-reference.md)
 </dt> </dl>
 
  

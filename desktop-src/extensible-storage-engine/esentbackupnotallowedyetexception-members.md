@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do EsentBackupNotAllowedYetException'
-title: Membros do EsentBackupNotAllowedYetException
+description: 'Saiba mais sobre: Membros EsentBackupNotAllowedYetException'
+title: Membros EsentBackupNotAllowedYetException
 TOCTitle: EsentBackupNotAllowedYetException members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentBackupNotAllowedYetException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentbackupnotallowedyetexception_members(v=EXCHG.10)
 ms:contentKeyID: 55101041
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 9897a22beaa1ea4ccf1b32c37cb71f309e392d1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34bf54f5446ba883e437d031beed81ac168317af9dab64fef217248ca09eef2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104561074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669736"
 ---
-# <a name="esentbackupnotallowedyetexception-members"></a>Membros do EsentBackupNotAllowedYetException
+# <a name="esentbackupnotallowedyetexception-members"></a>Membros EsentBackupNotAllowedYetException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Classe base para JET_err. BackupNotAllowedYet exceções.
+Classe base para JET_err. Exceções BackupNotAllowedYet.
 
-O tipo [EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-class.md) expõe os membros a seguir.
+O [tipo EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-class.md) expõe os membros a seguir.
 
 ## <a name="constructors"></a>Construtores
 
@@ -64,16 +64,16 @@ Parte superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -93,7 +93,7 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -130,7 +130,7 @@ Parte superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -145,12 +145,12 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -170,4 +170,4 @@ Parte superior
 
 [Classe EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

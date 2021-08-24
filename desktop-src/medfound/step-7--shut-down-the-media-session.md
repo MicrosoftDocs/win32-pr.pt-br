@@ -1,28 +1,28 @@
 ---
-description: Este tópico é a etapa 7 do tutorial como reproduzir arquivos de mídia com Media Foundation.
+description: Este tópico é a etapa 7 do tutorial Como reproduzir arquivos de mídia com Media Foundation.
 ms.assetid: c31444df-8717-4ca8-a9ec-72cbb0ee4125
-title: 'Etapa 7: desligar a sessão de mídia'
+title: 'Etapa 7: Desligar sessão de mídia'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae9fd11cde51b06d932b212f4effabf315deecb7
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: aa1eec6e798ee260c83fc1532c2012aed8a53625b12195848ac00fcdcf8fae3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104091890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119721936"
 ---
-# <a name="step-7-shut-down-the-media-session"></a>Etapa 7: desligar a sessão de mídia
+# <a name="step-7-shut-down-the-media-session"></a>Etapa 7: Desligar sessão de mídia
 
-Este tópico é a etapa 7 do tutorial [como reproduzir arquivos de mídia com Media Foundation](how-to-play-unprotected-media-files.md). O código completo é mostrado no exemplo de [reprodução de sessão de mídia](media-session-playback-example.md)do tópico.
+Este tópico é a etapa 7 do tutorial Como reproduzir arquivos de [mídia com Media Foundation](how-to-play-unprotected-media-files.md). O código completo é mostrado no tópico Exemplo de reprodução [de sessão de mídia](media-session-playback-example.md).
 
-Para desligar a [sessão de mídia](media-session.md), execute as seguintes etapas:
+Para desligar a Sessão [de Mídia](media-session.md)do , execute as seguintes etapas:
 
-1.  Chame [**IMFMediaSession:: Close**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) para fechar a apresentação atual.
-2.  Aguarde o evento [MESessionClosed](mesessionclosed.md) . Esse evento é garantido como sendo o último evento da sessão de mídia.
-3.  Chame [**IMFMediaSession:: Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown). Esse método faz com que as sessões de mídia liberem recursos.
-4.  Chame [**IMFMediaSource:: Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) na fonte de mídia atual.
+1.  Chame [**IMFMediaSession::Close**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-close) para fechar a apresentação atual.
+2.  Aguarde o [evento MESessionClosed.](mesessionclosed.md) Esse evento tem a garantia de ser o último evento da Sessão de Mídia.
+3.  Chame [**IMFMediaSession::Shutdown.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-shutdown) Esse método faz com que as Sessões de Mídia liberem recursos.
+4.  Chame [**IMFMediaSource::Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) na fonte de mídia atual.
 
-O método a seguir desliga a sessão de mídia. Ele usa um identificador de evento (*m \_ hCloseEvent*) para aguardar o evento [MESessionClosed](mesessionclosed.md) . Consulte [Step 5: tratar eventos de sessão de mídia](step-5--handle-media-session-events.md).
+O método a seguir desliga a Sessão de Mídia. Ele usa um handle de evento (*m \_ hCloseEvent*) para aguardar o [evento MESessionClosed.](mesessionclosed.md) Consulte [Etapa 5: Manipular eventos de sessão de mídia.](step-5--handle-media-session-events.md)
 
 
 ```C++
@@ -83,7 +83,7 @@ HRESULT CPlayer::CloseSession()
 
 
 
-Antes de o aplicativo sair, desligue a sessão de mídia e, em seguida, chame [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) para desligar a plataforma de Microsoft Media Foundation.
+Antes de o aplicativo ser encerrado, desligue a Sessão de Mídia e, em seguida, chame [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) para desligar a Microsoft Media Foundation plataforma.
 
 
 ```C++
